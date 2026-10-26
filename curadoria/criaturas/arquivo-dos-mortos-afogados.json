@@ -227,5 +227,227 @@
       "status_movimentos_dw": "adaptacao_proposta"
     },
     "notas_editoriais": "A hipótese sobre como surgiu é mantida em aberto no texto original."
+  },
+  {
+    "id": "carcaca:criatura:akaname-espelho-fundo",
+    "schema_version": "0.1.0",
+    "nome": "Akaname do Espelho Fundo",
+    "categoria": "personagem_unico",
+    "estado": "rascunho",
+    "tipo_carcaca": "yokai",
+    "tipo_carcaca_status": "confirmado",
+    "tipo_dnd_referencia": {
+      "original": "Médio feérico (yokai)",
+      "tipo": "feérico",
+      "equivalente_padrao": "fey",
+      "fonte": "arquivo_mortos_afogados"
+    },
+    "ancestralidade": [],
+    "tradicoes": [
+      "yokai",
+      "memoria-ritual-da-foz"
+    ],
+    "faccoes": [
+      {
+        "id": "faccao:guardioes-yokai-da-foz",
+        "vinculo": "servidor_ritual",
+        "evidencia": "inferido"
+      }
+    ],
+    "ocorrencias": [
+      {
+        "regiao_id": "regiao:foz-rio-ancestral",
+        "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+        "situacao": "Presença ritual no Arquivo",
+        "status": "documentado"
+      }
+    ],
+    "ecologia": {
+      "habitat": "Câmaras úmidas e inundadas do Arquivo dos Mortos Afogados",
+      "habitos": [
+        "Induz leituras falsas, erros de percepção e insegurança em intrusos confiantes",
+        "Pune a profanação de inscrições e nomes rituais",
+        "Distingue intrusos respeitosos de saqueadores"
+      ],
+      "alimentacao": null,
+      "ciclo_atividade": null,
+      "organizacao": {
+        "estrutura": "Guardião singular do Espelho Fundo; remanescente de servos e escribas rituais.",
+        "tag_dw": "solitario",
+        "status_tag_dw": "proposto"
+      }
+    },
+    "relacoes": [
+      {
+        "alvo_id": "lugar:arquivo-dos-mortos-afogados",
+        "tipo": "protecao_ritual",
+        "descricao": "Preserva a função ritual das câmaras e tenta impedir acesso indigno à Lança.",
+        "status": "documentado"
+      }
+    ],
+    "dungeon_world": {
+      "estado": "adaptacao_narrativa_em_revisao",
+      "instinto": "Impedir que mãos indignas profanem os registros do Arquivo e alcancem a Lança.",
+      "movimentos": [
+        {
+          "nome": "Língua do Espelho",
+          "texto": "Misturar rosto, reflexo e duplicata até alguém desconfiar dos próprios olhos.",
+          "origem": "adaptado_da_ficcao"
+        },
+        {
+          "nome": "Passo pelas Superfícies",
+          "texto": "Cruzar paredes molhadas, espelhos e poças como passagens.",
+          "origem": "adaptado_da_ficcao"
+        },
+        {
+          "nome": "Prisão de Água Lisa",
+          "texto": "Prender um intruso numa película de água que aparenta profundidade impossível.",
+          "origem": "adaptado_da_ficcao"
+        }
+      ],
+      "qualidades": [
+        "Olhos espelhados",
+        "Etiqueta ritual deformada",
+        "Manipulação de reflexos"
+      ],
+      "tags_propostas": [
+        "solitario",
+        "magico",
+        "inteligente"
+      ],
+      "estatisticas": {
+        "estado": "nao_calculadas",
+        "pv": null,
+        "armadura": null,
+        "dano": null,
+        "observacao": "Ficha DW pendente do procedimento próprio de criação; sem converter ND."
+      }
+    },
+    "dnd5e": {
+      "origem": "ficha_autoral",
+      "nd": 10,
+      "ca": 17,
+      "pv": 168,
+      "observacao": "Estatísticas da ficha autoral; habilidades detalhadas preservadas na fonte."
+    },
+    "proveniencia": {
+      "fontes": [
+        "arquivo_mortos_afogados"
+      ],
+      "status_fatos": "documentado",
+      "status_movimentos_dw": "adaptacao_proposta"
+    },
+    "notas_editoriais": "A ligação a um grupo formal de guardiões é inferida; o nome de facção é proposta de indexação, não instituição comprovada."
+  },
+  {
+    "id": "carcaca:criatura:kappa-escribas-afogados",
+    "schema_version": "0.1.0",
+    "nome": "Kappa-Escribas Afogados",
+    "categoria": "grupo",
+    "estado": "rascunho",
+    "tipo_carcaca": "yokai",
+    "tipo_carcaca_status": "confirmado",
+    "tipo_dnd_referencia": {
+      "original": "Pequeno feérico (yokai)",
+      "tipo": "feérico",
+      "equivalente_padrao": "fey",
+      "fonte": "arquivo_mortos_afogados"
+    },
+    "ancestralidade": [],
+    "tradicoes": [
+      "yokai",
+      "memoria-ritual-da-foz"
+    ],
+    "faccoes": [
+      {
+        "id": "faccao:guardioes-yokai-da-foz",
+        "vinculo": "servidor_ritual",
+        "evidencia": "inferido"
+      }
+    ],
+    "ocorrencias": [
+      {
+        "regiao_id": "regiao:foz-rio-ancestral",
+        "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+        "situacao": "Presença ritual no Arquivo",
+        "status": "documentado"
+      }
+    ],
+    "ecologia": {
+      "habitat": "Câmaras úmidas e inundadas do Arquivo dos Mortos Afogados",
+      "habitos": [
+        "Operam em bando, cercando, marcando e distraindo antes de confronto direto",
+        "Preservam inscrições, registros e limites dos segredos da foz",
+        "Desenham kanji efêmeros sobre superfícies úmidas para moldar terreno e conflito"
+      ],
+      "alimentacao": null,
+      "ciclo_atividade": null,
+      "organizacao": {
+        "estrutura": "Bandos cooperativos que cercam, marcam e desorientam invasores.",
+        "tag_dw": "grupo",
+        "status_tag_dw": "proposto"
+      }
+    },
+    "relacoes": [
+      {
+        "alvo_id": "lugar:arquivo-dos-mortos-afogados",
+        "tipo": "protecao_ritual",
+        "descricao": "Protegem as bordas do segredo da Lança e os registros do Arquivo.",
+        "status": "documentado"
+      }
+    ],
+    "dungeon_world": {
+      "estado": "adaptacao_narrativa_em_revisao",
+      "instinto": "Registrar e corrigir tudo o que ameaça a ordem do Arquivo.",
+      "movimentos": [
+        {
+          "nome": "Escriba da Água",
+          "texto": "Inscrever um sinal úmido que modifica o terreno ou favorece aliados.",
+          "origem": "adaptado_da_ficcao"
+        },
+        {
+          "nome": "Carimbo de Inadequação",
+          "texto": "Assinalar um intruso e permitir que o bando o cerque.",
+          "origem": "adaptado_da_ficcao"
+        },
+        {
+          "nome": "Afogar Sentido",
+          "texto": "Retirar temporariamente do alvo uma percepção essencial.",
+          "origem": "adaptado_da_ficcao"
+        }
+      ],
+      "qualidades": [
+        "Kanji efêmeros",
+        "Cooperação em bando",
+        "Mobilidade aquática"
+      ],
+      "tags_propostas": [
+        "grupo",
+        "magico",
+        "inteligente"
+      ],
+      "estatisticas": {
+        "estado": "nao_calculadas",
+        "pv": null,
+        "armadura": null,
+        "dano": null,
+        "observacao": "Ficha DW pendente do procedimento próprio de criação; sem converter ND."
+      }
+    },
+    "dnd5e": {
+      "origem": "ficha_autoral",
+      "nd": 7,
+      "ca": 16,
+      "pv": 95,
+      "observacao": "Estatísticas da ficha autoral; habilidades detalhadas preservadas na fonte."
+    },
+    "proveniencia": {
+      "fontes": [
+        "arquivo_mortos_afogados"
+      ],
+      "status_fatos": "documentado",
+      "status_movimentos_dw": "adaptacao_proposta"
+    },
+    "notas_editoriais": "A fonte não esclarece se descendem dos auxiliares yokai ou se foram transformados; hipótese não fixada como fato."
   }
 ]
