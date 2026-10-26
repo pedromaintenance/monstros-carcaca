@@ -2,6 +2,7 @@
   "by_tipo_carcaca": {
     "demonio": [
       "carcaca:criatura:gharoz-sonho-podre",
+      "carcaca:criatura:lampreias-do-pavor-abissal",
       "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
       "carcaca:criatura:veren-mares-rubras"
     ],
@@ -14,6 +15,7 @@
   "by_tipo_dnd": {
     "corruptor": [
       "carcaca:criatura:gharoz-sonho-podre",
+      "carcaca:criatura:lampreias-do-pavor-abissal",
       "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
       "carcaca:criatura:veren-mares-rubras"
     ],
@@ -29,6 +31,7 @@
       "carcaca:criatura:gharoz-sonho-podre",
       "carcaca:criatura:joro-sonhos-afogados",
       "carcaca:criatura:kappa-escribas-afogados",
+      "carcaca:criatura:lampreias-do-pavor-abissal",
       "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
       "carcaca:criatura:veren-mares-rubras"
     ]
@@ -39,6 +42,7 @@
       "carcaca:criatura:gharoz-sonho-podre",
       "carcaca:criatura:joro-sonhos-afogados",
       "carcaca:criatura:kappa-escribas-afogados",
+      "carcaca:criatura:lampreias-do-pavor-abissal",
       "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
       "carcaca:criatura:veren-mares-rubras"
     ]
@@ -46,6 +50,7 @@
   "by_faccao": {
     "faccao:demonios-do-abismo": [
       "carcaca:criatura:gharoz-sonho-podre",
+      "carcaca:criatura:lampreias-do-pavor-abissal",
       "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
       "carcaca:criatura:veren-mares-rubras"
     ],
@@ -63,6 +68,7 @@
     "rascunho": [
       "carcaca:criatura:akaname-espelho-fundo",
       "carcaca:criatura:kappa-escribas-afogados",
+      "carcaca:criatura:lampreias-do-pavor-abissal",
       "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
       "carcaca:criatura:veren-mares-rubras"
     ]
@@ -79,6 +85,9 @@
     ],
     "kappa-escribas afogados": [
       "carcaca:criatura:kappa-escribas-afogados"
+    ],
+    "lampreias do pavor abissal": [
+      "carcaca:criatura:lampreias-do-pavor-abissal"
     ],
     "morgat, quebra-ancoras do vazio": [
       "carcaca:criatura:morgat-quebra-ancoras-do-vazio"

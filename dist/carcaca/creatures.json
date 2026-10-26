@@ -451,6 +451,128 @@
     "notas_editoriais": "A fonte não esclarece se descendem dos auxiliares yokai ou se foram transformados; hipótese não fixada como fato."
   },
   {
+    "id": "carcaca:criatura:lampreias-do-pavor-abissal",
+    "schema_version": "0.1.0",
+    "nome": "Lampreias do Pavor Abissal",
+    "categoria": "grupo",
+    "estado": "rascunho",
+    "tipo_carcaca": "demonio",
+    "tipo_carcaca_status": "confirmado",
+    "tipo_dnd_referencia": {
+      "original": "Médio corruptor (demônio)",
+      "tipo": "corruptor",
+      "equivalente_padrao": null,
+      "fonte": "arquivo_mortos_afogados"
+    },
+    "ancestralidade": [],
+    "tradicoes": [],
+    "faccoes": [
+      {
+        "id": "faccao:demonios-do-abismo",
+        "vinculo": "forca_de_caca_e_cerco",
+        "evidencia": "documentado"
+      }
+    ],
+    "ocorrencias": [
+      {
+        "regiao_id": "regiao:foz-rio-ancestral",
+        "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+        "situacao": "Predadores de infiltração e cerco nas águas e corredores alagados do Arquivo; não há evidência de presença genérica em todo o Mar de Sangue.",
+        "status": "documentado"
+      }
+    ],
+    "ecologia": {
+      "habitat": "Águas da foz e ambientes encharcados onde sonho, afogamento e a infiltração demoníaca se encontram; Arquivo dos Mortos Afogados como ocorrência documentada.",
+      "habitos": [
+        "Caçam em grupo: cercam, isolam e atacam alvos mentalmente vulneráveis.",
+        "Priorizam quem perdeu reação, se separou dos aliados ou está desorientado.",
+        "Mordem, desaparecem na água e reaparecem para saturar as defesas do grupo.",
+        "São oportunistas de cerco e não apresentam ambição individual sofisticada."
+      ],
+      "alimentacao": "Resíduos psíquicos de pânico, desorientação, arrependimento e vontade partida.",
+      "ciclo_atividade": null,
+      "organizacao": {
+        "estrutura": "Bandos de caça coordenados pela fome; funcionam como auxiliares de predadores e operadores demoníacos.",
+        "tag_dw": "grupo",
+        "status_tag_dw": "proposto"
+      }
+    },
+    "relacoes": [
+      {
+        "alvo_id": "carcaca:criatura:gharoz-sonho-podre",
+        "tipo": "instrumento_de_caca",
+        "descricao": "Na presença de Gharoz, funcionam como agentes de cerco e captura; não há vínculo hierárquico formal comprovado.",
+        "status": "documentado"
+      },
+      {
+        "alvo_id": "carcaca:criatura:veren-mares-rubras",
+        "tipo": "instrumento_de_caca",
+        "descricao": "Operam como auxiliares de caça em presença de agentes de infiltração como Veren.",
+        "status": "documentado"
+      },
+      {
+        "alvo_id": "lugar:arquivo-dos-mortos-afogados",
+        "tipo": "consome_residuos_psiquicos",
+        "descricao": "Exploram o sofrimento psíquico emanado do Arquivo e de locais semelhantes.",
+        "status": "documentado"
+      }
+    ],
+    "dungeon_world": {
+      "estado": "adaptacao_narrativa_em_revisao",
+      "instinto": "Isolar a vontade mais frágil do grupo e alimentarem-se de seu pavor.",
+      "movimentos": [
+        {
+          "nome": "Sugador de Vontade",
+          "texto": "Esvaziar por um instante a capacidade de reação de quem as enfrenta.",
+          "origem": "adaptado_da_ficcao"
+        },
+        {
+          "nome": "Nado de Sombra",
+          "texto": "Sumir na água escura e reaparecer junto de um alvo já isolado.",
+          "origem": "adaptado_da_ficcao"
+        },
+        {
+          "nome": "Chamado do Fundo",
+          "texto": "Fazer um aliado demoníaco avançar pela abertura criada pelo bando.",
+          "origem": "adaptado_da_ficcao"
+        }
+      ],
+      "qualidades": [
+        "Caça coordenada em água",
+        "Bocas circulares de múltiplos dentes",
+        "Percepção de fragilidade psíquica"
+      ],
+      "tags_propostas": [
+        "grupo",
+        "furtivo",
+        "aterrador",
+        "magico"
+      ],
+      "estatisticas": {
+        "estado": "nao_calculadas",
+        "pv": null,
+        "armadura": null,
+        "dano": null,
+        "observacao": "Criar ficha DW a partir de tamanho, organização, instinto, meios de ataque e qualidades; ND 7 de D&D não se converte automaticamente."
+      }
+    },
+    "dnd5e": {
+      "origem": "ficha_autoral",
+      "nd": 7,
+      "ca": 16,
+      "pv": 102,
+      "observacao": "Valores originais da ficha autoral, referentes a uma criatura desse tipo e não ao bando inteiro."
+    },
+    "proveniencia": {
+      "fontes": [
+        "arquivo_mortos_afogados"
+      ],
+      "status_fatos": "documentado",
+      "status_movimentos_dw": "adaptacao_proposta"
+    },
+    "notas_editoriais": "A denominação 'Pavor Abissal' e a infiltração 'abissal' não significam o tipo Carcaça 'abissal_marinho': a fonte as chama explicitamente de demônios. Sua origem foi descrita como 'moldadas ou atraídas', portanto não fixar nascimento, reprodução ou criação como fatos."
+  },
+  {
     "id": "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
     "schema_version": "0.1.0",
     "nome": "Morgat, Quebra-Âncoras do Vazio",

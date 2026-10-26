@@ -96,6 +96,30 @@
     ]
   },
   {
+    "id": "carcaca:criatura:lampreias-do-pavor-abissal",
+    "nome": "Lampreias do Pavor Abissal",
+    "nome_normalizado": "lampreias do pavor abissal",
+    "categoria": "grupo",
+    "estado": "rascunho",
+    "tipo_carcaca": "demonio",
+    "tipo_dnd": "corruptor",
+    "tipo_dnd_original": "Médio corruptor (demônio)",
+    "regioes": [
+      "regiao:foz-rio-ancestral"
+    ],
+    "lugares": [
+      "lugar:arquivo-dos-mortos-afogados"
+    ],
+    "faccoes": [
+      "faccao:demonios-do-abismo"
+    ],
+    "instinto_dw": "Isolar a vontade mais frágil do grupo e alimentarem-se de seu pavor.",
+    "nd_dnd": 7,
+    "fontes": [
+      "arquivo_mortos_afogados"
+    ]
+  },
+  {
     "id": "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
     "nome": "Morgat, Quebra-Âncoras do Vazio",
     "nome_normalizado": "morgat, quebra-ancoras do vazio",
