@@ -32,3 +32,27 @@ python scripts/validar.py
 ```
 
 As duas pipelines são separadas: a importação das fontes não deve apagar ou alterar a curadoria manual.
+
+## Atlas curado — acesso para jogos
+
+O conteúdo adaptado à Carcaça é publicado automaticamente em `dist/carcaca/`, com JSON independente das fontes D&D. O código consumidor é `src/carcaca-client.mjs`:
+
+```js
+import {createCarcacaAtlas} from "./src/carcaca-client.mjs";
+const atlas = createCarcacaAtlas({
+  baseUrl: "https://raw.githubusercontent.com/pedromaintenance/monstros-carcaca/main/dist/carcaca"
+});
+const habitantes = await atlas.search({tipoCarcaca:"yokai",regiaoId:"regiao:foz-rio-ancestral"});
+const ficha = await atlas.get(habitantes[0].id);
+console.log(ficha.dungeon_world.instinto);
+```
+
+Para reconstruir ou conferir os índices:
+
+```bash
+python scripts/gerar_indices_curadoria.py
+python scripts/gerar_indices_curadoria.py --check
+node --test tests/carcaca-client.test.mjs
+```
+
+Os movimentos de DW da curadoria são adaptações ficcionais; mecânicas de DW ainda não foram balanceadas. Veja [documentação de consulta](docs/CONSULTA_CURADORIA.md) e [diário de bordo](docs/DIARIO_DE_BORDO.md).

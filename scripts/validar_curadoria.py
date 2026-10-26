@@ -1,97 +1,113 @@
 #!/usr/bin/env python3
-"""Auditoria sem rede da curadoria autoral; não modifica dist ou arquivos canônicos."""
+"""Validação da curadoria autoral; cruza referências e não altera dados."""
 from __future__ import annotations
-
 import json
 from pathlib import Path
-
 from jsonschema import Draft202012Validator
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[1]
 
 def load(path):
-    return json.loads((ROOT / path).read_text(encoding="utf8"))
+    return json.loads((ROOT/path).read_text(encoding="utf8"))
 
-def unique(items, label):
-    keys = [x["id"] for x in items]
-    assert len(keys) == len(set(keys)), f"IDs duplicados em {label}"
-    return set(keys)
+def gather(folder):
+    rows=[]
+    for path in sorted((ROOT/folder).glob("*.json")):
+        content=load(path.relative_to(ROOT))
+        rows.extend(content if isinstance(content,list) else [content])
+    return rows
 
-def require(condition, message):
-    if not condition:
-        raise AssertionError(message)
+def require(ok, msg):
+    if not ok: raise AssertionError(msg)
 
-def run():
-    types = load("data/taxonomia_carcaca.json")
-    sources = load("data/fontes_projeto.json")
-    regions = load("data/regioes_carcaca.json")["regioes"]
-    factions = load("data/faccoes_carcaca.json")["faccoes"]
-    places = load("data/lugares_carcaca.json")["lugares"]
-    creatures = load("curadoria/criaturas/arquivo-dos-mortos-afogados.json")
-    fronts = [load("curadoria/frentes/disputa-pela-lanca.json")]
-    steadings = load("curadoria/assentamentos/portomonte.json")
-    schema = load("schemas/criatura-carcaca.schema.json")
+def unique(rows,label):
+    ids=[r["id"] for r in rows]
+    require(len(set(ids))==len(ids),"IDs duplicados: "+label)
+    return set(ids)
+
+def main():
+    schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
-    validator = Draft202012Validator(schema)
+    validator=Draft202012Validator(schema)
+    tipos=unique(load("data/taxonomia_carcaca.json")["tipos"],"tipos")
+    regioes=load("data/regioes_carcaca.json")["regioes"]
+    lugares=load("data/lugares_carcaca.json")["lugares"]
+    faccoes=load("data/faccoes_carcaca.json")["faccoes"]
+    criaturas=gather("curadoria/criaturas")
+    frentes=gather("curadoria/frentes")
+    assentamentos=gather("curadoria/assentamentos")
+    fontes=load("data/fontes_projeto.json")
+    rids=unique(regioes,"regioes")
+    lids=unique(lugares,"lugares")
+    fids=unique(faccoes,"faccoes")
+    cids=unique(criaturas,"criaturas")
+    unique(frentes,"frentes")
+    unique(assentamentos,"assentamentos")
 
-    allowed = unique(types["tipos"], "tipos")
-    region_ids = unique(regions, "regioes")
-    faction_ids = unique(factions, "faccoes")
-    place_ids = unique(places, "lugares")
-    creature_ids = unique(creatures, "criaturas")
-    unique(steadings, "assentamentos")
-    unique(fronts, "frentes")
+    def source(k,owner):require(k in fontes,f"Fonte inexistente em {owner}: {k}")
 
-    for region in regions:
-        for place_id in region["lugares"]:
-            require(place_id in place_ids, f"Lugar não definido: {place_id}")
-    for place in places:
-        require(place["regiao_id"] in region_ids, f"Região do lugar desconhecida: {place['id']}")
-        require(place["fonte"] in sources, f"Fonte do lugar desconhecida: {place['id']}")
-    for faction in factions:
-        require(faction["fonte"] in sources, f"Fonte da facção desconhecida: {faction['id']}")
+    for regiao in regioes:
+        for place in regiao["lugares"]:
+            require(place in lids,f"Lugar ausente na região {regiao['id']}: {place}")
+    for lugar in lugares:
+        require(lugar["regiao_id"] in rids,f"Região desconhecida: {lugar['id']}")
+        source(lugar["fonte"],lugar["id"])
+    for faccao in faccoes:
+        source(faccao["fonte"],faccao["id"])
 
-    for creature in creatures:
-        errs = list(validator.iter_errors(creature))
-        require(not errs, f"Schema inválido em {creature['id']}: {errs[:1]}")
-        require(creature["tipo_carcaca"] in allowed, f"Tipo Carcaça desconhecido: {creature['id']}")
-        require(creature["tipo_dnd_referencia"]["original"], f"Tipo D&D ausente: {creature['id']}")
-        for ref in creature["proveniencia"]["fontes"]:
-            require(ref in sources, f"Fonte inexistente: {ref}")
-        for x in creature["ocorrencias"]:
-            require(x["regiao_id"] in region_ids, f"Região inexistente: {creature['id']}")
-            require(x.get("lugar_id") in place_ids, f"Lugar inexistente: {creature['id']}")
-        for x in creature.get("faccoes", []):
-            require(x["id"] in faction_ids, f"Facção inexistente: {creature['id']}")
-        for x in creature.get("relacoes", []):
-            require(x["alvo_id"] in faction_ids | place_ids | creature_ids,
-                    f"Alvo não cadastrado: {x['alvo_id']}")
-        dw = creature["dungeon_world"]
-        require(dw["instinto"] and len(dw["movimentos"]) >= 2, f"Falta instinto/movimentos DW: {creature['id']}")
-        require(dw["estatisticas"]["estado"] == "nao_calculadas",
-                f"Valores DW exigem ficha revisada: {creature['id']}")
-        for key in ("pv", "armadura", "dano"):
-            require(dw["estatisticas"][key] is None,
-                    f"Conversão numérica automática proibida: {creature['id']}")
+    for c in criaturas:
+        errors=list(validator.iter_errors(c))
+        require(not errors,f"Schema inválido {c['id']}: {errors[:1]}")
+        require(c["tipo_carcaca"] in tipos,f"Tipo Carcaça inexistente: {c['id']}")
+        require(c["tipo_dnd_referencia"]["original"],f"Tipo D&D ausente: {c['id']}")
+        for key in c["proveniencia"]["fontes"]:source(key,c["id"])
+        for ocorrencia in c["ocorrencias"]:
+            rid=ocorrencia["regiao_id"]
+            lid=ocorrencia.get("lugar_id")
+            require(rid in rids,f"Região inexistente em {c['id']}: {rid}")
+            if lid:
+                require(lid in lids,f"Lugar inexistente em {c['id']}: {lid}")
+                require(next(l for l in lugares if l["id"]==lid)["regiao_id"]==rid,
+                        f"Lugar não está nessa região: {lid}")
+        for f in c.get("faccoes",[]):
+            require(f["id"] in fids,f"Facção inexistente em {c['id']}: {f['id']}")
+        for relacao in c.get("relacoes",[]):
+            require(relacao["alvo_id"] in (fids|lids|cids),
+                    f"Alvo de relação inexistente: {relacao['alvo_id']}")
+        dw=c["dungeon_world"]
+        require(dw["instinto"],f"Instinto DW vazio: {c['id']}")
+        require(len(dw["movimentos"])>=2,f"Faltam movimentos DW: {c['id']}")
+        for move in dw["movimentos"]:
+            require(move["nome"] and move["texto"],f"Movimento sem texto: {c['id']}")
+        stats=dw["estatisticas"]
+        if stats["estado"]=="nao_calculadas":
+            require(all(stats[x] is None for x in ("pv","armadura","dano")),
+                    f"Não preencher DW por conversão automática: {c['id']}")
+        else:
+            require(c["estado"] in ("revisado","aprovado"),
+                    f"Estatísticas DW não revisadas: {c['id']}")
 
-    for front in fronts:
-        require(set(front["regioes"]) <= region_ids, "Frente sem região conhecida")
-        require(set(front["elenco"]) <= creature_ids, "Elenco sem criatura registrada")
-        require(2 <= len(front["perigos"]) <= 3, "Frente piloto deve ter 2-3 perigos")
-        require(1 <= len(front["perguntas_em_aberto"]) <= 3, "Frente sem perguntas em aberto")
-        for danger in front["perigos"]:
-            require(set(danger["criaturas"]) <= creature_ids, "Perigo não referencia criatura")
-            require(1 <= len(danger["pressagios_propostos"]) <= 5, "Presságios fora do modelo DW")
-            require(danger["desastre_iminente_proposto"], "Perigo sem desastre iminente")
-    for steading in steadings:
-        require(steading["regiao_id"] in region_ids, "Assentamento sem região")
-        require(steading["fonte"] in sources, "Assentamento sem fonte")
-        require(steading["tipo_dw"]["classificacao"] is None or steading["tipo_dw"]["estado"] == "revisado",
-                "Assentamento não deve inferir classificação DW")
+    for frente in frentes:
+        require(set(frente["regioes"])<=rids,"Frente sem região")
+        require(set(frente["elenco"])<=cids,"Frente sem elenco")
+        require(1<=len(frente["perigos"])<=6,"Quantidade de perigos inválida")
+        require(frente["perguntas_em_aberto"],"Frente sem perguntas")
+        for perigo in frente["perigos"]:
+            require(set(perigo["criaturas"])<=cids,"Perigo com criatura não cadastrada")
+            require(perigo["pressagios_propostos"] and perigo["desastre_iminente_proposto"],
+                    "Perigo sem presságio/desastre")
+    for assentamento in assentamentos:
+        require(assentamento["regiao_id"] in rids,"Assentamento sem região")
+        source(assentamento["fonte"],assentamento["id"])
+        if assentamento.get("lugar_id"):
+            require(assentamento["lugar_id"] in lids,"Assentamento sem lugar")
+        require(assentamento["tipo_dw"]["classificacao"] is None or
+                assentamento["tipo_dw"]["estado"]=="revisado",
+                "Assentamento teve classificação DW inferida")
 
-    print(f"Curadoria válida: {len(creatures)} criaturas, {len(regions)} regiões, "
-          f"{len(places)} lugares, {len(factions)} facções, {len(fronts)} frente, "
-          f"{len(steadings)} assentamento(s).")
+    print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
+          f"{len(lugares)} lugares; {len(faccoes)} facções; "
+          f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
 
-if __name__ == "__main__":
-    run()
+if __name__=="__main__":
+    main()

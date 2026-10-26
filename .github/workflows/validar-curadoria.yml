@@ -1,4 +1,4 @@
-name: Validar curadoria da Carcaça
+name: Validar e publicar curadoria da Carcaça
 on:
   push:
     paths:
@@ -10,6 +10,9 @@ on:
       - 'data/fontes_projeto.json'
       - 'schemas/**'
       - 'scripts/validar_curadoria.py'
+      - 'scripts/gerar_indices_curadoria.py'
+      - 'src/carcaca-client.mjs'
+      - 'tests/carcaca-client.test.mjs'
       - '.github/workflows/validar-curadoria.yml'
   pull_request:
     paths:
@@ -21,21 +24,54 @@ on:
       - 'data/fontes_projeto.json'
       - 'schemas/**'
       - 'scripts/validar_curadoria.py'
+      - 'scripts/gerar_indices_curadoria.py'
+      - 'src/carcaca-client.mjs'
+      - 'tests/carcaca-client.test.mjs'
   workflow_dispatch:
 
 permissions:
-  contents: read
+  contents: write
+
+concurrency:
+  group: carcaca-curadoria-publish
+  cancel-in-progress: false
 
 jobs:
-  validate:
+  validate-and-publish:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - uses: actions/setup-python@v6
         with:
           python-version: '3.12'
-      - name: Dependências de validação
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Instalar validador JSON Schema
         run: pip install 'jsonschema>=4,<5'
-      - name: Validar taxonomia, referências e esquemas
+      - name: Validar curadoria e integridade
         run: python scripts/validar_curadoria.py
+      - name: Testar cliente de leitura
+        run: node --test tests/carcaca-client.test.mjs
+      - name: Gerar índices determinísticos
+        run: |
+          python scripts/gerar_indices_curadoria.py
+          python scripts/gerar_indices_curadoria.py --check
+      - name: Publicar snapshot sem sobrepor as fontes SRD
+        if: github.event_name != 'pull_request'
+        shell: bash
+        run: |
+          git add dist/carcaca
+          if git diff --cached --quiet; then
+            echo "Snapshot autoral já atualizado."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore(carcaca): atualizar snapshot da curadoria [skip ci]"
+          git fetch origin main
+          git rebase origin/main
+          git push origin HEAD:main

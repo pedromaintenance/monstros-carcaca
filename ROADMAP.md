@@ -17,9 +17,9 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 
 | Etapa | Escopo | Entrega e critério de aceite |
 |---|---|---|
-| **M0 — Fundamentos (iniciado)** | Tipo Carcaça, modelo de criatura/ecologia, IDs, regiões, frente e assentamento, roteiro de validação | 2 criaturas-piloto Jorō e Gharoz; uma frente-proposta e um assentamento incompleto, todos com fontes/status explícitos |
-| **M1 — Motor de curadoria** | Schemas completos, validador de referências, índices de tipos/regiões, compatibilidade com catálogo e CI | Testes passam; nenhuma classe/type externa é sobrescrita; nenhum campo canônico é inferido em lote |
-| **M2 — Arquivo dos Mortos Afogados** | Completar 7 fichas originais, com instintos/movimentos DW, vínculos e comportamento | Revisão de 7 criaturas; registrar decisões em changelog; números DW somente quando aprovados |
+| **M0 — Fundamentos (concluído)** | Tipo Carcaça, modelo de criatura/ecologia, IDs, regiões, frente e assentamento, roteiro de validação | 2 criaturas-piloto Jorō e Gharoz; uma frente-proposta e um assentamento incompleto, todos com fontes/status explícitos |
+| **M1 — Motor de curadoria (em validação)** | Schemas completos, validador de referências, índices de tipos/regiões, compatibilidade com catálogo e CI | Testes passam; nenhuma classe/type externa é sobrescrita; nenhum campo canônico é inferido em lote |
+| **M2 — Arquivo dos Mortos Afogados (4/7)** | Completar 7 fichas originais, com instintos/movimentos DW, vínculos e comportamento | Revisão de 7 criaturas; registrar decisões em changelog; números DW somente quando aprovados |
 | **M3 — Atlas de regiões, povos e assentamentos** | Foz, Costa Sul, Eldroth, depois demais regiões da lore; cidades, grupos e conflitos | Referências cruzadas, assentamentos DW com tags apenas quando suportadas/curadas |
 | **M4 — Frente viva e encontros** | Perigos, impulsos, presságios, desfechos; tabelas de encontros e habitats em pequenas regiões | 1 frente revisada por vez; propostas distintas de fatos; efeitos de campanha ficam fora do cânone |
 | **M5 — Lotes de importados** | Seleção de 10–25 monstros por ciclo orientada por jogos e por evidência da lore | Tipo Carcaça e ocorrência somente após curadoria; reportar cobertura e pendências |
@@ -56,3 +56,19 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - `Apêndice I - Trelohim, Uln-Shayr, Yokai, Kuo-Toa.txt`: tradições, cosmologia e status das informações.
 
 **Método:** um lote curado por vez; o volume de 2.021 fichas importadas não é meta de enriquecimento imediato.
+
+## Ciclo de trabalho 2 — 2026-10-26
+
+- [x] Extrair e curar **Akaname do Espelho Fundo** e **Kappa-Escribas Afogados**; fichas base documentadas, movimentos DW registrados como propostas.
+- [x] Gerador determinístico `scripts/gerar_indices_curadoria.py` sem conexão de rede.
+- [x] Pacotes de distribuição em `dist/carcaca/`: criaturas, catálogo, índices, regiões, facções, lugares, frentes, assentamentos e tipos.
+- [x] Cliente JS ESM `src/carcaca-client.mjs` para os jogos, sem misturar fichas D&D e fichas autorais.
+- [x] Testes de busca, combinação de filtros, cache, ND nulo e paginação no Node.
+- [x] Configuração de Actions para validar, regenerar e publicar snapshots autorais.
+- [ ] Revisão editorial e estatísticas específicas de DW; aguardam curadoria.
+- [ ] Concluir as **outras 3 fichas** do Arquivo, posteriormente.
+- [ ] Criar índices mais amplos de identidade entre espécies e variantes das fontes SRD, posteriormente.
+
+### Critério de conservação
+
+`scripts/gerar_indices_curadoria.py` lê somente `curadoria/` e os atlas `data/*_carcaca.json`; escreve exclusivamente `dist/carcaca/`. A importação SRD escreve `dist/creatures/`, `dist/catalog.json` e `dist/indexes.json` como antes. Nenhum consumidor deve confundir o pacote autoral com SRD.
