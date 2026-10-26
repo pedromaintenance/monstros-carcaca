@@ -40,3 +40,17 @@ Resultado observado: **success** em todas as etapas de checkout, Python, Node, J
 Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões, 7 lugares, 3 facções, 1 frente e 1 assentamento. `dist/carcaca/catalog.json` relaciona Jorō, Gharoz, Akaname e Kappa-Escribas.
 
 **Marco M1 (núcleo 0.1)** concluído: consultas por nome, tipos, região, lugar, facção e estado; indexação reproduzível e cliente consumível por jogos. Continuidade de M2: 3 fichas restantes do Arquivo.
+
+## 2026-10-26 · Ciclo 3 — Ofensiva demoníaca na foz
+
+**Fonte primária:** `Arquivo dos Mortos Afogados.docx`, fichas de Veren Marés-Rubras e Morgat, Quebra-Âncoras do Vazio.
+
+- **Veren:** tipo Carcaça `demonio`, ancestralidade `meio-demonio`, referência D&D literalmente `Médio corruptor (meio-demônio)` (ND 11 / CA 18 / PV 170). Infiltra-se politicamente, usa favores, disfarces e pactos; instinto DW proposto de obter a Lança por entrega voluntária.
+- **Morgat:** tipo Carcaça `demonio`, referência D&D literalmente `Grande corruptor (demônio)` (ND 11 / CA 19 / PV 195). Tenente de ruptura, não governante; instinto DW proposto de quebrar formações resistentes.
+- Três movimentos DW novos para cada ficha; todas as estatísticas DW (`pv`, `armadura`, `dano`) seguem `null`.
+- A frente da Lança continua como **proposta**. Operadores foram adicionados ao perigo de Gharoz, com dois presságios fictícios que não são fatos consumados.
+- Sem alterações no balanceamento de Peren ou nas 2.021 variantes importadas de D&D.
+
+**Ponto de atenção editorial:** `meio-demônio` não cria uma classe cosmológica própria; `corruptor` permanece no campo que registra a terminologia da ficha de origem. 
+
+**Próximo lote:** Lampreias do Pavor Abissal; depois, revisão de qualidade e curadoria por regiões.

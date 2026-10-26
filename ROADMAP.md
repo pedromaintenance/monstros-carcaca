@@ -19,7 +19,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 |---|---|---|
 | **M0 — Fundamentos (concluído)** | Tipo Carcaça, modelo de criatura/ecologia, IDs, regiões, frente e assentamento, roteiro de validação | 2 criaturas-piloto Jorō e Gharoz; uma frente-proposta e um assentamento incompleto, todos com fontes/status explícitos |
 | **M1 — Motor de curadoria (núcleo 0.1 concluído)** | Schemas completos, validador de referências, índices de tipos/regiões, compatibilidade com catálogo e CI | Testes passam; nenhuma classe/type externa é sobrescrita; nenhum campo canônico é inferido em lote |
-| **M2 — Arquivo dos Mortos Afogados (4/7)** | Completar 7 fichas originais, com instintos/movimentos DW, vínculos e comportamento | Revisão de 7 criaturas; registrar decisões em changelog; números DW somente quando aprovados |
+| **M2 — Arquivo dos Mortos Afogados (6/7; revisão pendente)** | Completar 7 fichas originais, com instintos/movimentos DW, vínculos e comportamento | Revisão de 7 criaturas; registrar decisões em changelog; números DW somente quando aprovados |
 | **M3 — Atlas de regiões, povos e assentamentos** | Foz, Costa Sul, Eldroth, depois demais regiões da lore; cidades, grupos e conflitos | Referências cruzadas, assentamentos DW com tags apenas quando suportadas/curadas |
 | **M4 — Frente viva e encontros** | Perigos, impulsos, presságios, desfechos; tabelas de encontros e habitats em pequenas regiões | 1 frente revisada por vez; propostas distintas de fatos; efeitos de campanha ficam fora do cânone |
 | **M5 — Lotes de importados** | Seleção de 10–25 monstros por ciclo orientada por jogos e por evidência da lore | Tipo Carcaça e ocorrência somente após curadoria; reportar cobertura e pendências |
@@ -80,3 +80,15 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] `dist/carcaca/indexes.json`: índices `by_tipo_carcaca`, `by_tipo_dnd`, `by_regiao`, `by_lugar`, `by_faccao`, `by_estado`, `by_nome`.
 - [x] Publicação automática isolada do catálogo de 2.021 variantes SRD. Nenhuma alteração no jogo Peren.
 - [ ] A seleção de identidade central de espécies entre variantes SRD continua para M5; M1 entregou apenas o motor do atlas autoral.
+
+## Ciclo 3 — Veren e Morgat (2026-10-26)
+
+- [x] Preservar os dados de referência de Veren (ND 11, CA 18, PV 170) e Morgat (ND 11, CA 19, PV 195) sem inventar ficha DW.
+- [x] Descrever instinto e três movimentos narrativos para cada um, todos marcados como adaptação proposta.
+- [x] Registrá-los na região da Foz do Rio Ancestral, vinculados ao Arquivo dos Mortos Afogados.
+- [x] Registrar meio-demônio de Veren como ancestralidade, sem novo tipo cosmológico.
+- [x] Relacionar os papéis na ofensiva de Gharoz sem presumir fatos além da fonte.
+- [x] Atualizar uma frente DW existente com operadores e presságios **propostos**, não novos acontecimentos canônicos.
+- [ ] Integrar as Lampreias do Pavor Abissal (ficha final do Arquivo).
+- [ ] Revisar o conteúdo com o autor e criar as fichas numéricas DW por procedimento próprio.
+- [ ] Verificar publicação gerada e testes automáticos após o commit.
