@@ -1,0 +1,168 @@
+{
+  "catalog": "catalog.json",
+  "consumption": "relative paths from dist/",
+  "files": {
+    "5ebits-srd-2014": "creatures/5ebits-srd-2014.json",
+    "5ebits-srd-2024": "creatures/5ebits-srd-2024.json",
+    "open5e-bfrd": "creatures/open5e-bfrd.json",
+    "open5e-srd-2014": "creatures/open5e-srd-2014.json",
+    "open5e-srd-2024": "creatures/open5e-srd-2024.json",
+    "your5e-2024": "creatures/your5e-2024.json"
+  },
+  "generated_at": "2026-10-26T22:36:37.647546+00:00",
+  "indexes": "indexes.json",
+  "schema_version": "1.0",
+  "sources": [
+    {
+      "attribution": "Wizards of the Coast",
+      "count": 334,
+      "edition": "2014",
+      "id": "5ebits-srd-2014",
+      "license": "CC-BY-4.0",
+      "name": "Wizards of the Coast SRD via 5e-bits",
+      "provider": "5e-bits/5e-database",
+      "status": "imported",
+      "url": "https://www.dndbeyond.com/srd"
+    },
+    {
+      "attribution": "Wizards of the Coast",
+      "count": 341,
+      "edition": "2024",
+      "id": "5ebits-srd-2024",
+      "license": "CC-BY-4.0",
+      "name": "Wizards of the Coast SRD via 5e-bits",
+      "provider": "5e-bits/5e-database",
+      "status": "imported",
+      "url": "https://www.dndbeyond.com/srd"
+    },
+    {
+      "count": 0,
+      "id": "a5e-mm",
+      "license": [
+        "ogl-10a"
+      ],
+      "name": "Monstrous Menagerie",
+      "reason": "Licença OGL: revisão de Section 15 e Product Identity pendente",
+      "status": "cataloged-only"
+    },
+    {
+      "count": 0,
+      "id": "tdcs",
+      "license": [
+        "ogl-10a"
+      ],
+      "name": "Tal'dorei Campaign Setting",
+      "reason": "Licença OGL: revisão de Section 15 e Product Identity pendente",
+      "status": "cataloged-only"
+    },
+    {
+      "attribution": "Open Design LLC d/b/a Kobold Press",
+      "count": 360,
+      "edition": "2014",
+      "id": "open5e-bfrd",
+      "license": "CC-BY-4.0",
+      "name": "Black Flag SRD",
+      "provider": "open5e/open5e-api",
+      "status": "imported",
+      "url": "https://koboldpress.com/black-flag-reference-document/"
+    },
+    {
+      "count": 0,
+      "id": "ccdx",
+      "license": [
+        "ogl-10a"
+      ],
+      "name": "Creature Codex",
+      "reason": "Licença OGL: revisão de Section 15 e Product Identity pendente",
+      "status": "cataloged-only"
+    },
+    {
+      "count": 0,
+      "id": "tob",
+      "license": [
+        "ogl-10a"
+      ],
+      "name": "Tome of Beasts",
+      "reason": "Licença OGL: revisão de Section 15 e Product Identity pendente",
+      "status": "cataloged-only"
+    },
+    {
+      "count": 0,
+      "id": "tob-2023",
+      "license": [
+        "ogl-10a"
+      ],
+      "name": "Tome of Beasts 1 (2023 Edition)",
+      "reason": "Licença OGL: revisão de Section 15 e Product Identity pendente",
+      "status": "cataloged-only"
+    },
+    {
+      "count": 0,
+      "id": "tob2",
+      "license": [
+        "ogl-10a"
+      ],
+      "name": "Tome of Beasts 2",
+      "reason": "Licença OGL: revisão de Section 15 e Product Identity pendente",
+      "status": "cataloged-only"
+    },
+    {
+      "count": 0,
+      "id": "tob3",
+      "license": [
+        "ogl-10a"
+      ],
+      "name": "Tome of Beasts 3",
+      "reason": "Licença OGL: revisão de Section 15 e Product Identity pendente",
+      "status": "cataloged-only"
+    },
+    {
+      "attribution": "Mike Mearls, Jeremy Crawford, Chris Perkins, Rodney Thompson, Peter Lee, James Wyatt, Robert J. Schwalb, Bruce R. Cordell, Chris Sims, and Steve Townshend, based on original material by E. Gary Gygax and Dave Arneson.",
+      "count": 325,
+      "edition": "2014",
+      "id": "open5e-srd-2014",
+      "license": "CC-BY-4.0",
+      "name": "System Reference Document 5.1",
+      "provider": "open5e/open5e-api",
+      "status": "imported",
+      "url": "https://dnd.wizards.com/resources/systems-reference-document"
+    },
+    {
+      "attribution": "Wizards of the Coast",
+      "count": 331,
+      "edition": "2024",
+      "id": "open5e-srd-2024",
+      "license": "CC-BY-4.0",
+      "name": "System Reference Document 5.2",
+      "provider": "open5e/open5e-api",
+      "status": "imported",
+      "url": "https://dnd.wizards.com/resources/systems-reference-document"
+    },
+    {
+      "attribution": "Mark Norman Francis (texto); Loupon (arte); Wizards of the Coast (SRD 5.2.1)",
+      "count": 330,
+      "edition": "2024",
+      "id": "your5e-2024",
+      "license": "CC-BY-4.0",
+      "name": "5th Edition Monsters by your5e",
+      "provider": "your5e/monsters",
+      "status": "imported",
+      "url": "https://github.com/your5e/monsters"
+    },
+    {
+      "id": "5etools",
+      "license": "not-cleared",
+      "reason": "Não espelhar livros proprietários",
+      "status": "reference-only",
+      "url": "https://5e.tools"
+    },
+    {
+      "id": "open5e-ogl",
+      "license": "OGL-1.0a",
+      "reason": "Aguardando auditoria OGC, avisos OGL e Product Identity",
+      "status": "cataloged-only",
+      "url": "https://open5e.com"
+    }
+  ],
+  "total": 2021
+}
