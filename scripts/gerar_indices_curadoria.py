@@ -1,0 +1,117 @@
+#!/usr/bin/env python3
+"""Gera dist/carcaca de forma determinística sem misturar fontes ou alterar curadoria.
+Uso: python scripts/gerar_indices_curadoria.py [--check]
+"""
+from __future__ import annotations
+import argparse
+import json
+import re
+import unicodedata
+from collections import defaultdict
+from pathlib import Path
+
+ROOT = Path(__file__).resolve().parents[1]
+OUT = ROOT / "dist" / "carcaca"
+
+def load(path):
+    return json.loads((ROOT / path).read_text(encoding="utf-8"))
+
+def collect(folder):
+    result = []
+    for path in sorted((ROOT / folder).glob("*.json")):
+        data = load(path.relative_to(ROOT))
+        if isinstance(data, list):
+            result.extend(data)
+        else:
+            result.append(data)
+    return sorted(result, key=lambda item: item["id"])
+
+def norm(value):
+    return re.sub(r"\s+", " ", unicodedata.normalize("NFKD", str(value or ""))
+                  .encode("ascii", "ignore").decode().lower()).strip()
+
+def add(index, key, value):
+    if key is not None and key != "":
+        index[str(key)].add(value)
+
+def build():
+    creatures = collect("curadoria/criaturas")
+    regions = sorted(load("data/regioes_carcaca.json")["regioes"], key=lambda x:x["id"])
+    places = sorted(load("data/lugares_carcaca.json")["lugares"], key=lambda x:x["id"])
+    factions = sorted(load("data/faccoes_carcaca.json")["faccoes"], key=lambda x:x["id"])
+    types = sorted(load("data/taxonomia_carcaca.json")["tipos"], key=lambda x:x["id"])
+    fronts = collect("curadoria/frentes")
+    settlements = collect("curadoria/assentamentos")
+    indexed = {k: defaultdict(set) for k in ("by_tipo_carcaca", "by_tipo_dnd",
+               "by_regiao", "by_lugar", "by_faccao", "by_estado", "by_nome")}
+    catalog = []
+    for c in creatures:
+        cid = c["id"]
+        ref = c["tipo_dnd_referencia"]
+        region_ids = sorted({o["regiao_id"] for o in c["ocorrencias"]})
+        place_ids = sorted({o["lugar_id"] for o in c["ocorrencias"] if o.get("lugar_id")})
+        faction_ids = sorted({f["id"] for f in c.get("faccoes", [])})
+        row = {"id":cid, "nome":c["nome"], "nome_normalizado":norm(c["nome"]),
+               "categoria":c["categoria"], "estado":c["estado"],
+               "tipo_carcaca":c["tipo_carcaca"],
+               "tipo_dnd":ref.get("equivalente_padrao") or ref.get("tipo") or ref.get("original"),
+               "tipo_dnd_original":ref["original"], "regioes":region_ids,
+               "lugares":place_ids, "faccoes":faction_ids,
+               "instinto_dw":c["dungeon_world"]["instinto"],
+               "nd_dnd":c.get("dnd5e", {}).get("nd"),
+               "fontes":c["proveniencia"]["fontes"]}
+        catalog.append(row)
+        for key, v in [("by_tipo_carcaca",row["tipo_carcaca"]),
+                       ("by_tipo_dnd",row["tipo_dnd"]),("by_estado",row["estado"]),
+                       ("by_nome",row["nome_normalizado"])]:
+            add(indexed[key],v,cid)
+        for key, values in [("by_regiao",region_ids),("by_lugar",place_ids),
+                            ("by_faccao",faction_ids)]:
+            for v in values:
+                add(indexed[key],v,cid)
+    indexes = {name:{key:sorted(ids) for key,ids in sorted(group.items())}
+               for name, group in indexed.items()}
+    files = {
+        "creatures":"creatures.json", "catalog":"catalog.json", "indexes":"indexes.json",
+        "regions":"regions.json", "places":"places.json", "factions":"factions.json",
+        "types":"types.json", "fronts":"fronts.json", "settlements":"settlements.json"
+    }
+    manifest = {
+        "schema_version":"0.1.0", "descricao":"Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
+        "total_criaturas":len(creatures), "total_regioes":len(regions),
+        "total_lugares":len(places), "total_faccoes":len(factions),
+        "total_frentes":len(fronts), "total_assentamentos":len(settlements),
+        "arquivos":files, "estado":"curadoria_em_andamento",
+        "nota":"Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."
+    }
+    return {
+        "manifest.json":manifest,files["creatures"]:creatures,files["catalog"]:catalog,
+        files["indexes"]:indexes,files["regions"]:regions,files["places"]:places,
+        files["factions"]:factions,files["types"]:types,files["fronts"]:fronts,
+        files["settlements"]:settlements
+    }
+
+def main():
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--check", action="store_true",
+                        help="Somente comparar os artefatos publicados aos dados curados.")
+    args = parser.parse_args()
+    output = build()
+    stale = []
+    if not args.check:
+        OUT.mkdir(parents=True, exist_ok=True)
+    for filename, content in output.items():
+        expected = json.dumps(content, indent=2, ensure_ascii=False) + "\n"
+        path = OUT / filename
+        if args.check:
+            if not path.exists() or path.read_text(encoding="utf-8") != expected:
+                stale.append(filename)
+        else:
+            path.write_text(expected, encoding="utf-8")
+    if stale:
+        raise SystemExit("Índices desatualizados/ausentes: " + ", ".join(stale))
+    print("Índices Carcaça", "verificados" if args.check else "gerados",
+          f"({len(output['creatures.json'])} criaturas, {len(output)} JSON).")
+
+if __name__ == "__main__":
+    main()
