@@ -9,7 +9,17 @@
     "open5e-srd-2024": "creatures/open5e-srd-2024.json",
     "your5e-2024": "creatures/your5e-2024.json"
   },
-  "generated_at": "2026-10-26T22:36:37.647546+00:00",
+  "games": {
+    "peren": {
+      "count": 222,
+      "links": "games/peren-links.json",
+      "matched": 31,
+      "note": "Regras de jogo próprias; não substitui data/monstros.json em Peren",
+      "records": "games/peren.json",
+      "source": "pedromaintenance/peren-o-bruxo/data/monstros.json"
+    }
+  },
+  "generated_at": "2026-10-26T22:41:47.541115+00:00",
   "indexes": "indexes.json",
   "schema_version": "1.0",
   "sources": [

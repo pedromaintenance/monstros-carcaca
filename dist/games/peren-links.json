@@ -1,0 +1,1746 @@
+[
+  {
+    "candidates": [],
+    "game_id": "mob-aarakocra",
+    "match": "unresolved",
+    "name": "Aarakocra",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-abocanhador-matraqueante",
+    "match": "unresolved",
+    "name": "Abocanhador Matraqueante",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:ankheg",
+      "5ebits-srd-2024:2024:ankheg",
+      "open5e-bfrd:2014:bfrd-ankheg",
+      "open5e-srd-2014:2014:srd-ankheg",
+      "open5e-srd-2024:2024:srd-2024-ankheg",
+      "your5e-2024:2024:monsters-ankheg-md"
+    ],
+    "game_id": "mob-ankheg",
+    "match": "exact-name-candidates",
+    "name": "Ankheg",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-anomalia-da-agua",
+    "match": "unresolved",
+    "name": "Anomalia Da Água",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-aparicao",
+    "match": "unresolved",
+    "name": "Aparição",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-arbusto-errante",
+    "match": "unresolved",
+    "name": "Arbusto Errante",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:azer",
+      "open5e-bfrd:2014:bfrd-azer",
+      "open5e-srd-2014:2014:srd-azer"
+    ],
+    "game_id": "mob-azer",
+    "match": "exact-name-candidates",
+    "name": "Azer",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-basilisco",
+    "match": "unresolved",
+    "name": "Basilisco",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:behir",
+      "5ebits-srd-2024:2024:behir",
+      "open5e-bfrd:2014:bfrd-behir",
+      "open5e-srd-2014:2014:srd-behir",
+      "open5e-srd-2024:2024:srd-2024-behir",
+      "your5e-2024:2024:monsters-behir-md"
+    ],
+    "game_id": "mob-behir",
+    "match": "exact-name-candidates",
+    "name": "Behir",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:bugbear",
+      "open5e-bfrd:2014:bfrd-bugbear",
+      "open5e-srd-2014:2014:srd-bugbear"
+    ],
+    "game_id": "mob-bugbear",
+    "match": "exact-name-candidates",
+    "name": "Bugbear",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-bugbear-comandante",
+    "match": "unresolved",
+    "name": "Bugbear Comandante",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:bulette",
+      "5ebits-srd-2024:2024:bulette",
+      "open5e-bfrd:2014:bfrd-bulette",
+      "open5e-srd-2014:2014:srd-bulette",
+      "open5e-srd-2024:2024:srd-2024-bulette",
+      "your5e-2024:2024:monsters-bulette-md"
+    ],
+    "game_id": "mob-bulette",
+    "match": "exact-name-candidates",
+    "name": "Bulette",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-bullywug",
+    "match": "unresolved",
+    "name": "Bullywug",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-cacador-invisivel",
+    "match": "unresolved",
+    "name": "Caçador Invisível",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-carnical",
+    "match": "unresolved",
+    "name": "Carniçal",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-livido",
+    "match": "unresolved",
+    "name": "Lívido",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-centauro",
+    "match": "unresolved",
+    "name": "Centauro",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:chuul",
+      "5ebits-srd-2024:2024:chuul",
+      "open5e-bfrd:2014:bfrd-chuul",
+      "open5e-srd-2014:2014:srd-chuul",
+      "open5e-srd-2024:2024:srd-2024-chuul",
+      "your5e-2024:2024:monsters-chuul-md"
+    ],
+    "game_id": "mob-chuul",
+    "match": "exact-name-candidates",
+    "name": "Chuul",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-ciclope",
+    "match": "unresolved",
+    "name": "Ciclope",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-cocatriz",
+    "match": "unresolved",
+    "name": "Cocatriz",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:couatl",
+      "5ebits-srd-2024:2024:couatl",
+      "open5e-bfrd:2014:bfrd-couatl",
+      "open5e-srd-2014:2014:srd-couatl",
+      "open5e-srd-2024:2024:srd-2024-couatl",
+      "your5e-2024:2024:monsters-couatl-md"
+    ],
+    "game_id": "mob-couatl",
+    "match": "exact-name-candidates",
+    "name": "Couatl",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-devorador-de-mentes",
+    "match": "unresolved",
+    "name": "Devorador De Mentes",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-alossauro",
+    "match": "unresolved",
+    "name": "Alossauro",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-anquilossauro",
+    "match": "unresolved",
+    "name": "Anquilossauro",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-plesiossauro",
+    "match": "unresolved",
+    "name": "Plesiossauro",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-tiranossauro",
+    "match": "unresolved",
+    "name": "Tiranossauro",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-pteranodonte",
+    "match": "unresolved",
+    "name": "Pteranodonte",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:triceratops",
+      "5ebits-srd-2024:2024:triceratops",
+      "open5e-bfrd:2014:bfrd-triceratops",
+      "open5e-srd-2014:2014:srd-triceratops",
+      "open5e-srd-2024:2024:srd-2024-triceratops",
+      "your5e-2024:2024:monsters-triceratops-md"
+    ],
+    "game_id": "mob-triceratops",
+    "match": "exact-name-candidates",
+    "name": "Tricerátops",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-vermelho-das-sombras-jovem",
+    "match": "unresolved",
+    "name": "Dragão Vermelho Das Sombras Jovem",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-azul-adulto",
+    "match": "unresolved",
+    "name": "Dragão Azul Adulto",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-azul-jovem",
+    "match": "unresolved",
+    "name": "Dragão Azul Jovem",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-azul-filhote",
+    "match": "unresolved",
+    "name": "Dragão Azul Filhote",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-branco-adulto",
+    "match": "unresolved",
+    "name": "Dragão Branco Adulto",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-branco-jovem",
+    "match": "unresolved",
+    "name": "Dragão Branco Jovem",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-branco-filhote",
+    "match": "unresolved",
+    "name": "Dragão Branco Filhote",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-negro-anciao",
+    "match": "unresolved",
+    "name": "Dragão Negro Ancião",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-negro-jovem",
+    "match": "unresolved",
+    "name": "Dragão Negro Jovem",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-negro-filhote",
+    "match": "unresolved",
+    "name": "Dragão Negro Filhote",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-verde-anciao",
+    "match": "unresolved",
+    "name": "Dragão Verde Ancião",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-verde-jovem",
+    "match": "unresolved",
+    "name": "Dragão Verde Jovem",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-verde-filhote",
+    "match": "unresolved",
+    "name": "Dragão Verde Filhote",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-vermelho-adulto",
+    "match": "unresolved",
+    "name": "Dragão Vermelho Adulto",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-vermelho-jovem",
+    "match": "unresolved",
+    "name": "Dragão Vermelho Jovem",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-vermelho-filhote",
+    "match": "unresolved",
+    "name": "Dragão Vermelho Filhote",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-de-bronze-filhote",
+    "match": "unresolved",
+    "name": "Dragão De Bronze Filhote",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-de-cobre-anciao",
+    "match": "unresolved",
+    "name": "Dragão De Cobre Ancião",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-de-cobre-filhote",
+    "match": "unresolved",
+    "name": "Dragão De Cobre Filhote",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-de-latao-filhote",
+    "match": "unresolved",
+    "name": "Dragão De Latão Filhote",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-de-ouro-anciao",
+    "match": "unresolved",
+    "name": "Dragão De Ouro Ancião",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-de-ouro-filhote",
+    "match": "unresolved",
+    "name": "Dragão De Ouro Filhote",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-de-prata-anciao",
+    "match": "unresolved",
+    "name": "Dragão De Prata Ancião",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-de-prata-jovem",
+    "match": "unresolved",
+    "name": "Dragão De Prata Jovem",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-dragao-de-prata-filhote",
+    "match": "unresolved",
+    "name": "Dragão De Prata Filhote",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:drider",
+      "5ebits-srd-2024:2024:drider",
+      "open5e-bfrd:2014:bfrd-drider",
+      "open5e-srd-2014:2014:srd-drider",
+      "open5e-srd-2024:2024:srd-2024-drider",
+      "your5e-2024:2024:monsters-drider-md"
+    ],
+    "game_id": "mob-drider",
+    "match": "exact-name-candidates",
+    "name": "Drider",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:duergar",
+      "open5e-bfrd:2014:bfrd-duergar",
+      "open5e-srd-2014:2014:srd-duergar"
+    ],
+    "game_id": "mob-duergar",
+    "match": "exact-name-candidates",
+    "name": "Duergar",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-elemental-da-agua",
+    "match": "unresolved",
+    "name": "Elemental Da Água",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-elemental-da-terra",
+    "match": "unresolved",
+    "name": "Elemental Da Terra",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-elemental-do-ar",
+    "match": "unresolved",
+    "name": "Elemental Do Ar",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-elemental-do-fogo",
+    "match": "unresolved",
+    "name": "Elemental Do Fogo",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:drow",
+      "open5e-bfrd:2014:bfrd-drow",
+      "open5e-srd-2014:2014:srd-drow"
+    ],
+    "game_id": "mob-drow",
+    "match": "exact-name-candidates",
+    "name": "Drow",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-drow-arcano",
+    "match": "unresolved",
+    "name": "Drow Arcano",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-drow-guerreiro-de-elite",
+    "match": "unresolved",
+    "name": "Drow Guerreiro De Elite",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-drow-sacerdotisa-de-lolth",
+    "match": "unresolved",
+    "name": "Drow Sacerdotisa De Lolth",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-ente",
+    "match": "unresolved",
+    "name": "Ente",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-espantalho",
+    "match": "unresolved",
+    "name": "Espantalho",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-espectro",
+    "match": "unresolved",
+    "name": "Espectro",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-esqueleto",
+    "match": "unresolved",
+    "name": "Esqueleto",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-esqueleto-de-minotauro",
+    "match": "unresolved",
+    "name": "Esqueleto De Minotauro",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-esqueleto-de-cavalo-de-guerra",
+    "match": "unresolved",
+    "name": "Esqueleto De Cavalo De Guerra",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:ettercap",
+      "5ebits-srd-2024:2024:ettercap",
+      "open5e-bfrd:2014:bfrd-ettercap",
+      "open5e-srd-2014:2014:srd-ettercap",
+      "open5e-srd-2024:2024:srd-2024-ettercap",
+      "your5e-2024:2024:monsters-ettercap-md"
+    ],
+    "game_id": "mob-ettercap",
+    "match": "exact-name-candidates",
+    "name": "Ettercap",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:ettin",
+      "5ebits-srd-2024:2024:ettin",
+      "open5e-bfrd:2014:bfrd-ettin",
+      "open5e-srd-2014:2014:srd-ettin",
+      "open5e-srd-2024:2024:srd-2024-ettin",
+      "your5e-2024:2024:monsters-ettin-md"
+    ],
+    "game_id": "mob-ettin",
+    "match": "exact-name-candidates",
+    "name": "Ettin",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-fogo-fatuo",
+    "match": "unresolved",
+    "name": "Fogo-Fátuo",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-fomori",
+    "match": "unresolved",
+    "name": "Fomori",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-esporo-de-gas",
+    "match": "unresolved",
+    "name": "Esporo De Gás",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-fungo-violeta",
+    "match": "unresolved",
+    "name": "Fungo Violeta",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-guinchador",
+    "match": "unresolved",
+    "name": "Guinchador",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-galeb-duhr",
+    "match": "unresolved",
+    "name": "Galeb Duhr",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-gargula",
+    "match": "unresolved",
+    "name": "Gárgula",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-garra-rastejante",
+    "match": "unresolved",
+    "name": "Garra Rastejante",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-gigante-da-colina",
+    "match": "unresolved",
+    "name": "Gigante Da Colina",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-gigante-da-tempestade",
+    "match": "unresolved",
+    "name": "Gigante Da Tempestade",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-gigante-das-nuvens",
+    "match": "unresolved",
+    "name": "Gigante Das Nuvens",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-gigante-de-pedra",
+    "match": "unresolved",
+    "name": "Gigante De Pedra",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-gigante-do-fogo",
+    "match": "unresolved",
+    "name": "Gigante Do Fogo",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-gigante-do-gelo",
+    "match": "unresolved",
+    "name": "Gigante Do Gelo",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-cavaleiro-githyanki",
+    "match": "unresolved",
+    "name": "Cavaleiro Githyanki",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-guerreiro-githyanki",
+    "match": "unresolved",
+    "name": "Guerreiro Githyanki",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-monge-githzerai",
+    "match": "unresolved",
+    "name": "Monge Githzerai",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-zerth-githzerai",
+    "match": "unresolved",
+    "name": "Zerth Githzerai",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:gnoll",
+      "open5e-bfrd:2014:bfrd-gnoll",
+      "open5e-srd-2014:2014:srd-gnoll"
+    ],
+    "game_id": "mob-gnoll",
+    "match": "exact-name-candidates",
+    "name": "Gnoll",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-gnoll-lider-de-matilha",
+    "match": "unresolved",
+    "name": "Gnoll Líder De Matilha",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-gnoll-presa-de-yeenoghu",
+    "match": "unresolved",
+    "name": "Gnoll Presa De Yeenoghu",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-gnomo-das-profundezas-svirfneblin",
+    "match": "unresolved",
+    "name": "Gnomo Das Profundezas (Svirfneblin)",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-chefe-goblin",
+    "match": "unresolved",
+    "name": "Chefe Goblin",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:goblin",
+      "open5e-bfrd:2014:bfrd-goblin",
+      "open5e-srd-2014:2014:srd-goblin"
+    ],
+    "game_id": "mob-goblin",
+    "match": "exact-name-candidates",
+    "name": "Goblin",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-golem-de-carne",
+    "match": "unresolved",
+    "name": "Golem De Carne",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-golem-de-ferro",
+    "match": "unresolved",
+    "name": "Golem De Ferro",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-golem-de-pedra",
+    "match": "unresolved",
+    "name": "Golem De Pedra",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:gorgon",
+      "5ebits-srd-2024:2024:gorgon",
+      "open5e-bfrd:2014:bfrd-gorgon",
+      "open5e-srd-2014:2014:srd-gorgon",
+      "open5e-srd-2024:2024:srd-2024-gorgon",
+      "your5e-2024:2024:monsters-gorgon-md"
+    ],
+    "game_id": "mob-gorgon",
+    "match": "exact-name-candidates",
+    "name": "Gorgon",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-grell",
+    "match": "unresolved",
+    "name": "Grell",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:grick",
+      "5ebits-srd-2024:2024:grick",
+      "open5e-bfrd:2014:bfrd-grick",
+      "open5e-srd-2014:2014:srd-grick",
+      "open5e-srd-2024:2024:srd-2024-grick",
+      "your5e-2024:2024:monsters-grick-md"
+    ],
+    "game_id": "mob-grick",
+    "match": "exact-name-candidates",
+    "name": "Grick",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-grick-alfa",
+    "match": "unresolved",
+    "name": "Grick Alfa",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-grifo",
+    "match": "unresolved",
+    "name": "Grifo",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:grimlock",
+      "5ebits-srd-2024:2024:grimlock",
+      "open5e-bfrd:2014:bfrd-grimlock",
+      "open5e-srd-2014:2014:srd-grimlock",
+      "open5e-srd-2024:2024:srd-2024-grimlock",
+      "your5e-2024:2024:monsters-grimlock-md"
+    ],
+    "game_id": "mob-grimlock",
+    "match": "exact-name-candidates",
+    "name": "Grimlock",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-harpia",
+    "match": "unresolved",
+    "name": "Harpia",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-hidra",
+    "match": "unresolved",
+    "name": "Hidra",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-hipogrifo",
+    "match": "unresolved",
+    "name": "Hipogrifo",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:hobgoblin",
+      "open5e-bfrd:2014:bfrd-hobgoblin",
+      "open5e-srd-2014:2014:srd-hobgoblin"
+    ],
+    "game_id": "mob-hobgoblin",
+    "match": "exact-name-candidates",
+    "name": "Hobgoblin",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-hobgoblin-capitao",
+    "match": "unresolved",
+    "name": "Hobgoblin Capitão",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-reacoes",
+    "match": "unresolved",
+    "name": "Reações",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-homunculo",
+    "match": "unresolved",
+    "name": "Homúnculo",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-horror-de-elmo",
+    "match": "unresolved",
+    "name": "Horror De Elmo",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-horror-de-gancho",
+    "match": "unresolved",
+    "name": "Horror De Gancho",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-espeto-infectado",
+    "match": "unresolved",
+    "name": "Espeto Infectado",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-galho-infectado",
+    "match": "unresolved",
+    "name": "Galho Infectado",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-vinha-infectada",
+    "match": "unresolved",
+    "name": "Vinha Infectada",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-inumano",
+    "match": "unresolved",
+    "name": "Inumano",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:kobold",
+      "open5e-bfrd:2014:bfrd-kobold",
+      "open5e-srd-2014:2014:srd-kobold"
+    ],
+    "game_id": "mob-kobold",
+    "match": "exact-name-candidates",
+    "name": "Kobold",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-kobold-alado",
+    "match": "unresolved",
+    "name": "Kobold Alado",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-acoitador-kuo-toa",
+    "match": "unresolved",
+    "name": "Açoitador Kuo-Toa",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-arcebispo-kuo-toa",
+    "match": "unresolved",
+    "name": "Arcebispo Kuo-Toa",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:lamia",
+      "5ebits-srd-2024:2024:lamia",
+      "open5e-bfrd:2014:bfrd-lamia",
+      "open5e-srd-2014:2014:srd-lamia",
+      "open5e-srd-2024:2024:srd-2024-lamia",
+      "your5e-2024:2024:monsters-lamia-md"
+    ],
+    "game_id": "mob-lamia",
+    "match": "exact-name-candidates",
+    "name": "Lâmia",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-homem-javali",
+    "match": "unresolved",
+    "name": "Homem-Javali",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-homem-rato",
+    "match": "unresolved",
+    "name": "Homem-Rato",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:lich",
+      "5ebits-srd-2024:2024:lich",
+      "open5e-bfrd:2014:bfrd-lich",
+      "open5e-srd-2014:2014:srd-lich",
+      "open5e-srd-2024:2024:srd-2024-lich",
+      "your5e-2024:2024:monsters-lich-md"
+    ],
+    "game_id": "mob-lich",
+    "match": "exact-name-candidates",
+    "name": "Lich",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-gosma-ocre",
+    "match": "unresolved",
+    "name": "Gosma Ocre",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-limo-cinzento",
+    "match": "unresolved",
+    "name": "Limo Cinzento",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:magmin",
+      "5ebits-srd-2024:2024:magmin",
+      "open5e-bfrd:2014:bfrd-magmin",
+      "open5e-srd-2014:2014:srd-magmin",
+      "open5e-srd-2024:2024:srd-2024-magmin",
+      "your5e-2024:2024:monsters-magmin-md"
+    ],
+    "game_id": "mob-magmin",
+    "match": "exact-name-candidates",
+    "name": "Magmin",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-manticora",
+    "match": "unresolved",
+    "name": "Manticora",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-mantor",
+    "match": "unresolved",
+    "name": "Mantor",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:medusa",
+      "5ebits-srd-2024:2024:medusa",
+      "open5e-bfrd:2014:bfrd-medusa",
+      "open5e-srd-2014:2014:srd-medusa",
+      "open5e-srd-2024:2024:srd-2024-medusa",
+      "your5e-2024:2024:monsters-medusa-md"
+    ],
+    "game_id": "mob-medusa",
+    "match": "exact-name-candidates",
+    "name": "Medusa",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-meio-dragao-vermelho-veterano",
+    "match": "unresolved",
+    "name": "Meio-Dragão Vermelho Veterano",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-mephit-da-poeira",
+    "match": "unresolved",
+    "name": "Mephit Da Poeira",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-mephit-do-gelo",
+    "match": "unresolved",
+    "name": "Mephit Do Gelo",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-mephit-do-magma",
+    "match": "unresolved",
+    "name": "Mephit Do Magma",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-mephit-da-lama",
+    "match": "unresolved",
+    "name": "Mephit Da Lama",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-mephit-da-fumaca",
+    "match": "unresolved",
+    "name": "Mephit Da Fumaça",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-mephit-do-vapor",
+    "match": "unresolved",
+    "name": "Mephit Do Vapor",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-miconide-broto",
+    "match": "unresolved",
+    "name": "Miconide Broto",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-servo-esporo-quaggoth",
+    "match": "unresolved",
+    "name": "Servo Esporo Quaggoth",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-miconide-adulto",
+    "match": "unresolved",
+    "name": "Miconide Adulto",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-miconide-soberano",
+    "match": "unresolved",
+    "name": "Miconide Soberano",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-mimico",
+    "match": "unresolved",
+    "name": "Mímico",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-minotauro",
+    "match": "unresolved",
+    "name": "Minotauro",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-monodrone",
+    "match": "unresolved",
+    "name": "Monodrone",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-bidrone",
+    "match": "unresolved",
+    "name": "Bidrone",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-tridrone",
+    "match": "unresolved",
+    "name": "Tridrone",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-quadrone",
+    "match": "unresolved",
+    "name": "Quadrone",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-pentadrone",
+    "match": "unresolved",
+    "name": "Pentadrone",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-monstro-da-ferrugem",
+    "match": "unresolved",
+    "name": "Monstro Da Ferrugem",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-mumia",
+    "match": "unresolved",
+    "name": "Múmia",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-naga-dos-ossos",
+    "match": "unresolved",
+    "name": "Naga Dos Ossos",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-naga-espiritual",
+    "match": "unresolved",
+    "name": "Naga Espiritual",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-naga-guardia",
+    "match": "unresolved",
+    "name": "Naga Guardiã",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-notico",
+    "match": "unresolved",
+    "name": "Nótico",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-armadura-animada",
+    "match": "unresolved",
+    "name": "Armadura Animada",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-espada-voadora",
+    "match": "unresolved",
+    "name": "Espada Voadora",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-tapete-sufocador",
+    "match": "unresolved",
+    "name": "Tapete Sufocador",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-observador",
+    "match": "unresolved",
+    "name": "Observador",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-tirano-da-morte",
+    "match": "unresolved",
+    "name": "Tirano Da Morte",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-ogro",
+    "match": "unresolved",
+    "name": "Ogro",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-meio-ogro",
+    "match": "unresolved",
+    "name": "Meio-Ogro",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-comandante-de-guerra-orc",
+    "match": "unresolved",
+    "name": "Comandante De Guerra Orc",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-orc-olho-de-gruumsh",
+    "match": "unresolved",
+    "name": "Orc Olho De Gruumsh",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:otyugh",
+      "5ebits-srd-2024:2024:otyugh",
+      "open5e-bfrd:2014:bfrd-otyugh",
+      "open5e-srd-2014:2014:srd-otyugh",
+      "open5e-srd-2024:2024:srd-2024-otyugh",
+      "your5e-2024:2024:monsters-otyugh-md"
+    ],
+    "game_id": "mob-otyugh",
+    "match": "exact-name-candidates",
+    "name": "Otyugh",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-pantera-deslocadora",
+    "match": "unresolved",
+    "name": "Pantera Deslocadora",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-pegaso",
+    "match": "unresolved",
+    "name": "Pégaso",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-perfurador",
+    "match": "unresolved",
+    "name": "Perfurador",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-peryton",
+    "match": "unresolved",
+    "name": "Peryton",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-povo-do-mar",
+    "match": "unresolved",
+    "name": "Povo Do Mar",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-povo-lagarto",
+    "match": "unresolved",
+    "name": "Povo Lagarto",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-xama-do-povo-lagarto",
+    "match": "unresolved",
+    "name": "Xamã Do Povo Lagarto",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-rei-rainha-do-povo-lagarto",
+    "match": "unresolved",
+    "name": "Rei/Rainha Do Povo Lagarto",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-pseudodragao",
+    "match": "unresolved",
+    "name": "Pseudodragão",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-quaggoth",
+    "match": "unresolved",
+    "name": "Quaggoth",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-quimera",
+    "match": "unresolved",
+    "name": "Quimera",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-remorhaz-jovem",
+    "match": "unresolved",
+    "name": "Remorhaz Jovem",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:remorhaz",
+      "5ebits-srd-2024:2024:remorhaz",
+      "open5e-bfrd:2014:bfrd-remorhaz",
+      "open5e-srd-2014:2014:srd-remorhaz",
+      "open5e-srd-2024:2024:srd-2024-remorhaz",
+      "your5e-2024:2024:monsters-remorhaz-md"
+    ],
+    "game_id": "mob-remorhaz",
+    "match": "exact-name-candidates",
+    "name": "Remorhaz",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-roca",
+    "match": "unresolved",
+    "name": "Roca",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:sahuagin",
+      "open5e-bfrd:2014:bfrd-sahuagin",
+      "open5e-srd-2014:2014:srd-sahuagin"
+    ],
+    "game_id": "mob-sahuagin",
+    "match": "exact-name-candidates",
+    "name": "Sahuagin",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-barao-sahuagin",
+    "match": "unresolved",
+    "name": "Barão Sahuagin",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-sacerdotisa-sahuagin",
+    "match": "unresolved",
+    "name": "Sacerdotisa Sahuagin",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-serpente-de-fogo",
+    "match": "unresolved",
+    "name": "Serpente De Fogo",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-sirenideo",
+    "match": "unresolved",
+    "name": "Sirenídeo",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-slaad-vermelho",
+    "match": "unresolved",
+    "name": "Slaad Vermelho",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-slaad-azul",
+    "match": "unresolved",
+    "name": "Slaad Azul",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-slaad-verde",
+    "match": "unresolved",
+    "name": "Slaad Verde",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-slaad-cinza",
+    "match": "unresolved",
+    "name": "Slaad Cinza",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-slaad-da-morte",
+    "match": "unresolved",
+    "name": "Slaad Da Morte",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-larva-slaad",
+    "match": "unresolved",
+    "name": "Larva Slaad",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-sombra",
+    "match": "unresolved",
+    "name": "Sombra",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:stirge",
+      "5ebits-srd-2024:2024:stirge",
+      "open5e-bfrd:2014:bfrd-stirge",
+      "open5e-srd-2014:2014:srd-stirge",
+      "open5e-srd-2024:2024:srd-2024-stirge",
+      "your5e-2024:2024:monsters-stirge-md"
+    ],
+    "game_id": "mob-stirge",
+    "match": "exact-name-candidates",
+    "name": "Stirge",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-tartaruga-dragao",
+    "match": "unresolved",
+    "name": "Tartaruga-Dragão",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-thri-kreen",
+    "match": "unresolved",
+    "name": "Thri-Kreen",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-troglodita",
+    "match": "unresolved",
+    "name": "Troglodita",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:troll",
+      "5ebits-srd-2024:2024:troll",
+      "open5e-bfrd:2014:bfrd-troll",
+      "open5e-srd-2014:2014:srd-troll",
+      "open5e-srd-2024:2024:srd-2024-troll",
+      "your5e-2024:2024:monsters-troll-md"
+    ],
+    "game_id": "mob-troll",
+    "match": "exact-name-candidates",
+    "name": "Troll",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-urso-coruja",
+    "match": "unresolved",
+    "name": "Urso-Coruja",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-verme-da-carnica",
+    "match": "unresolved",
+    "name": "Verme Da Carniça",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-verme-purpura",
+    "match": "unresolved",
+    "name": "Verme Púrpura",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:wyvern",
+      "5ebits-srd-2024:2024:wyvern",
+      "open5e-bfrd:2014:bfrd-wyvern",
+      "open5e-srd-2014:2014:srd-wyvern",
+      "open5e-srd-2024:2024:srd-2024-wyvern",
+      "your5e-2024:2024:monsters-wyvern-md"
+    ],
+    "game_id": "mob-wyvern",
+    "match": "exact-name-candidates",
+    "name": "Wyvern",
+    "review_required": true
+  },
+  {
+    "candidates": [
+      "5ebits-srd-2014:2014:xorn",
+      "5ebits-srd-2024:2024:xorn",
+      "open5e-bfrd:2014:bfrd-xorn",
+      "open5e-srd-2014:2014:srd-xorn",
+      "open5e-srd-2024:2024:srd-2024-xorn",
+      "your5e-2024:2024:monsters-xorn-md"
+    ],
+    "game_id": "mob-xorn",
+    "match": "exact-name-candidates",
+    "name": "Xorn",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-yeti-abominavel",
+    "match": "unresolved",
+    "name": "Yeti Abominável",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-yuan-ti-abominacao",
+    "match": "unresolved",
+    "name": "Yuan-Ti Abominação",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-yuan-ti-mestico",
+    "match": "unresolved",
+    "name": "Yuan-Ti Mestiço",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-yuan-ti-puro-sangue",
+    "match": "unresolved",
+    "name": "Yuan-Ti Puro-Sangue",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-zumbi",
+    "match": "unresolved",
+    "name": "Zumbi",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-ogro-zumbi",
+    "match": "unresolved",
+    "name": "Ogro Zumbi",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-observador-zumbi",
+    "match": "unresolved",
+    "name": "Observador Zumbi",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-cacador-de-escravos-da-corte",
+    "match": "unresolved",
+    "name": "Caçador de Escravos da Corte",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-kappa-escriba-desgarrado",
+    "match": "unresolved",
+    "name": "Kappa-Escriba Desgarrado",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-akaname-do-espelho-fundo",
+    "match": "unresolved",
+    "name": "Akaname do Espelho Fundo",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-guardiao-de-ossos-de-golzdov",
+    "match": "unresolved",
+    "name": "Guardião de Ossos de Golzdov",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-sirenide-da-costa-maldita",
+    "match": "unresolved",
+    "name": "Sirênide da Costa Maldita",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-sacerdote-kuo-toa-de-daegon",
+    "match": "unresolved",
+    "name": "Sacerdote Kuo-Toa de Daegon",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-druida-traidor-de-eldroth",
+    "match": "unresolved",
+    "name": "Druida Traidor de Eldroth",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-saqueador-da-caatinga",
+    "match": "unresolved",
+    "name": "Saqueador da Caatinga",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-aranha-dos-sonhos-afogados",
+    "match": "unresolved",
+    "name": "Aranha dos Sonhos Afogados",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-arauto-sombrio-da-corte",
+    "match": "unresolved",
+    "name": "Arauto Sombrio da Corte",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-sentinela-de-drakport",
+    "match": "unresolved",
+    "name": "Sentinela de Drakport",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-espirito-das-costelas",
+    "match": "unresolved",
+    "name": "Espírito das Costelas",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-verme-do-mar-de-sangue",
+    "match": "unresolved",
+    "name": "Verme do Mar de Sangue",
+    "review_required": true
+  },
+  {
+    "candidates": [],
+    "game_id": "mob-lobisomem-de-ironwood",
+    "match": "unresolved",
+    "name": "Lobisomem de Ironwood",
+    "review_required": true
+  }
+]
