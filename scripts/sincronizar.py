@@ -274,28 +274,57 @@ def write(path, value):
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf8")
 
+def translated_dragon_name(name):
+    """Tradução conservadora do padrão 'Dragão + cor + estágio'."""
+    tokens = slug(name).split("-")
+    if not tokens or tokens[0] != "dragao" or "sombras" in tokens:
+        return None
+    colors = {"azul": "blue", "branco": "white", "negro": "black",
+              "verde": "green", "vermelho": "red", "bronze": "bronze",
+              "cobre": "copper", "latao": "brass", "ouro": "gold", "prata": "silver"}
+    stages = {"filhote": "wyrmling", "jovem": "young", "adulto": "adult",
+              "anciao": "ancient"}
+    color = next((colors[t] for t in tokens if t in colors), None)
+    stage = next((stages[t] for t in tokens if t in stages), None)
+    if not color or not stage:
+        return None
+    return f"{color} dragon wyrmling" if stage == "wyrmling" else f"{stage} {color} dragon"
+
 def import_peren_game_data(index_by_name):
-    """Espelha somente os metadados e regras próprias já publicados no jogo Peren.
-    Não transforma fichas proprietárias em conteúdo licenciado do SRD.
-    """
+    """Preserva regras do jogo Peren; associa traduções com revisão obrigatória."""
     url = raw("pedromaintenance/peren-o-bruxo", "main", "data/monstros.json")
     rows = get_json(url)
     if not isinstance(rows, list) or len(rows) < 100:
         raise ValueError("Fonte Peren inesperada ou incompleta")
+    alias_data = json.loads((ROOT / "data/aliases_ptbr.json").read_text(encoding="utf8"))
+    aliases = alias_data["aliases"]
     write("games/peren.json", rows)
     links = []
     for row in rows:
-        keys = {slug(row.get("nome", "")), slug(row.get("referencia", ""))}
-        choices = sorted({c for key in keys if key for c in index_by_name.get(key, [])})
-        links.append({"game_id": row["id"], "name": row.get("nome"),
-                      "candidates": choices,
-                      "match": "exact-name-candidates" if choices else "unresolved",
-                      "review_required": True})
+        name = row.get("nome", "")
+        keys = {slug(name), slug(row.get("referencia", ""))}
+        exact = sorted({c for key in keys if key for c in index_by_name.get(key, [])})
+        mapped_names = [slug(aliases[k]) for k in keys if k in aliases]
+        dragon = translated_dragon_name(name)
+        if dragon:
+            mapped_names.append(slug(dragon))
+        translated = sorted({c for key in mapped_names for c in index_by_name.get(key, [])})
+        choices = exact or translated
+        status = ("exact-name-candidates" if exact
+                  else "ptbr-alias-candidates" if translated
+                  else "unresolved")
+        flags = ["possible-parsing-artifact"] if slug(name) in ("reacoes",) else []
+        links.append({"game_id": row["id"], "name": name,
+                      "candidates": choices, "match": status,
+                      "review_required": True, "flags": flags})
     write("games/peren-links.json", links)
-    return {"count": len(rows), "matched": sum(bool(x["candidates"]) for x in links),
+    return {"count": len(rows),
+            "matched": sum(bool(x["candidates"]) for x in links),
+            "exact": sum(x["match"] == "exact-name-candidates" for x in links),
+            "aliases": sum(x["match"] == "ptbr-alias-candidates" for x in links),
             "records": "games/peren.json", "links": "games/peren-links.json",
             "source": "pedromaintenance/peren-o-bruxo/data/monstros.json",
-            "note": "Regras de jogo próprias; não substitui data/monstros.json em Peren"}
+            "note": "Correspondências são candidatas, não reconciliações aprovadas; revisão humana obrigatória."}
 
 def build():
     source_sets = []
