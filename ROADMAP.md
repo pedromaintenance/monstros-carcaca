@@ -91,4 +91,11 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Atualizar uma frente DW existente com operadores e presságios **propostos**, não novos acontecimentos canônicos.
 - [ ] Integrar as Lampreias do Pavor Abissal (ficha final do Arquivo).
 - [ ] Revisar o conteúdo com o autor e criar as fichas numéricas DW por procedimento próprio.
-- [ ] Verificar publicação gerada e testes automáticos após o commit.
+- [x] Verificar publicação gerada e testes automáticos: GitHub Actions #40422431081 concluído com sucesso.
+
+### Verificação de publicação do Ciclo 3
+
+- [x] Workflow [Validar e publicar curadoria #40422431081](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40422431081): sucesso em validação JSON Schema, referências cruzadas, testes JavaScript, geração de índices e publicação.
+- [x] `dist/carcaca/manifest.json` confirmado: 6 criaturas, 3 regiões, 7 lugares, 3 facções, 1 frente, 1 assentamento.
+- [x] `dist/carcaca/indexes.json` confirmado: 3 yokai, 3 demônios, 6 criaturas vinculadas à foz.
+- [ ] Revisão editorial das adaptações de Dungeon World ainda pendente, apesar de tecnicamente validadas.

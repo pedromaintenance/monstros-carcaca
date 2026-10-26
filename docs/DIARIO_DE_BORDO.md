@@ -54,3 +54,12 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 **Ponto de atenção editorial:** `meio-demônio` não cria uma classe cosmológica própria; `corruptor` permanece no campo que registra a terminologia da ficha de origem. 
 
 **Próximo lote:** Lampreias do Pavor Abissal; depois, revisão de qualidade e curadoria por regiões.
+
+### Resultado verificado do Ciclo 3
+
+- Commit de conteúdo: `ebc4433d76ffe56639df62e1009ae3b7efd3acf0`.
+- Workflow: https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40422431081.
+- Status: **success** em todas as etapas, incluindo geração e publicação de `dist/carcaca/`.
+- Manifesto publicado: 6 criaturas curadas, 3 regiões, 7 lugares, 3 facções, 1 frente, 1 assentamento.
+- Índices: 3 yokai + 3 demônios; todas as 6 ocorrências da coleção vinculadas à região da foz.
+- Limitação preservada: os valores PV, armadura e dano de Dungeon World continuam `null` até construção específica do sistema e revisão editorial.
