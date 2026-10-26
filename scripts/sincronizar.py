@@ -274,6 +274,29 @@ def write(path, value):
     dest.parent.mkdir(parents=True, exist_ok=True)
     dest.write_text(json.dumps(value, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf8")
 
+def import_peren_game_data(index_by_name):
+    """Espelha somente os metadados e regras próprias já publicados no jogo Peren.
+    Não transforma fichas proprietárias em conteúdo licenciado do SRD.
+    """
+    url = raw("pedromaintenance/peren-o-bruxo", "main", "data/monstros.json")
+    rows = get_json(url)
+    if not isinstance(rows, list) or len(rows) < 100:
+        raise ValueError("Fonte Peren inesperada ou incompleta")
+    write("games/peren.json", rows)
+    links = []
+    for row in rows:
+        keys = {slug(row.get("nome", "")), slug(row.get("referencia", ""))}
+        choices = sorted({c for key in keys if key for c in index_by_name.get(key, [])})
+        links.append({"game_id": row["id"], "name": row.get("nome"),
+                      "candidates": choices,
+                      "match": "exact-name-candidates" if choices else "unresolved",
+                      "review_required": True})
+    write("games/peren-links.json", links)
+    return {"count": len(rows), "matched": sum(bool(x["candidates"]) for x in links),
+            "records": "games/peren.json", "links": "games/peren-links.json",
+            "source": "pedromaintenance/peren-o-bruxo/data/monstros.json",
+            "note": "Regras de jogo próprias; não substitui data/monstros.json em Peren"}
+
 def build():
     source_sets = []
     source_meta = []
@@ -299,7 +322,7 @@ def build():
         write(f"creatures/{source_id}.json", creatures)
         all_records.extend(creatures)
     validate(all_records)
-    by_type, by_cr, by_edition, by_source, by_name = (defaultdict(list) for _ in range(5))
+    by_type, by_cr, by_edition, by_source, by_name, by_environment, by_size = (defaultdict(list) for _ in range(7))
     minimal = []
     for m in sorted(all_records, key=lambda x: x["id"]):
         key = m["id"]
@@ -309,11 +332,16 @@ def build():
         by_edition[m["edition"]].append(key)
         by_source[m["source"]["id"]].append(key)
         by_name[m["key"]].append(key)
+        by_size[str(c["size"] or "unknown").lower()].append(key)
+        for environment in c["environments"]:
+            by_environment[str(environment).lower()].append(key)
         minimal.append({"id": key, "key": m["key"], "name": m["name"],
                         "edition": m["edition"], "source_id": m["source"]["id"],
                         "type": c["type"], "cr": m["challenge"]["value"],
                         "size": c["size"], "license": m["source"]["license"]})
+    peren = import_peren_game_data(by_name)
     manifest = {
+        "games": {"peren": peren},
         "schema_version": "1.0", "generated_at": datetime.now(timezone.utc).isoformat(),
         "total": len(minimal), "sources": source_meta,
         "files": {x["id"]: f"creatures/{x['id']}.json"
@@ -333,6 +361,7 @@ def build():
     write("indexes.json", {
         "by_type": by_type, "by_cr": by_cr,
         "by_edition": by_edition, "by_source": by_source, "by_name": by_name,
+        "by_environment": by_environment, "by_size": by_size,
     })
     print(f"Importação concluída: {len(all_records)} variantes, {len(source_meta)} fontes")
     if len(all_records) < 500:
