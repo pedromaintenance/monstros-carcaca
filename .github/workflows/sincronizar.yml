@@ -22,9 +22,11 @@ jobs:
     timeout-minutes: 25
     steps:
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
       - name: Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@v6
         with:
           python-version: "3.12"
       - name: Dependencias
@@ -42,5 +44,7 @@ jobs:
           git add dist
           if ! git diff --cached --quiet; then
             git commit -m "data: atualizar snapshot CC-BY de criaturas [skip ci]"
-            git push
+            git fetch origin main
+            git rebase origin/main
+            git push origin HEAD:main
           fi
