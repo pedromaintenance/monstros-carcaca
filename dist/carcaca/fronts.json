@@ -1,0 +1,56 @@
+[
+  {
+    "id": "carcaca:frente:disputa-pela-lanca-da-foz",
+    "schema_version": "0.1.0",
+    "nome": "Disputa pela Lança da Perdição na foz",
+    "escopo": "aventura",
+    "status": "proposta-de-frente",
+    "regioes": [
+      "regiao:foz-rio-ancestral"
+    ],
+    "fontes": [
+      "arquivo_mortos_afogados"
+    ],
+    "perigos": [
+      {
+        "id": "perigo:gharoz-foz",
+        "nome": "Gharoz e a destruição do legado da foz",
+        "categoria_dw": "forcas-planares",
+        "impulso": "Aniquilar qualquer futuro possível para Gualápolis",
+        "criaturas": [
+          "carcaca:criatura:gharoz-sonho-podre"
+        ],
+        "pressagios_propostos": [
+          "Agentes demoníacos sondam as rotas até a Lança.",
+          "Sinais da corrupção onírica alcançam as câmaras rituais.",
+          "Gharoz tenta converter o poder da Lança em ferramenta de afundamento."
+        ],
+        "desastre_iminente_proposto": "Destruição do legado da foz e impossibilidade de sua restauração"
+      },
+      {
+        "id": "perigo:ruptura-do-arquivo",
+        "nome": "O Arquivo perde sua função de preservar sonhos e nomes",
+        "categoria_dw": "local-amaldicoado",
+        "impulso": "Revelar e corromper memórias vulneráveis",
+        "criaturas": [
+          "carcaca:criatura:joro-sonhos-afogados"
+        ],
+        "pressagios_propostos": [
+          "Memórias submersas começam a reaparecer fora de seus lugares.",
+          "Reflexos e nomes deixam de apontar para seus portadores.",
+          "Um candidato indigno chega ao coração do Arquivo."
+        ],
+        "desastre_iminente_proposto": "Perda da memória ritual que protege a Lança"
+      }
+    ],
+    "perguntas_em_aberto": [
+      "Quem poderá portar a Lança sem reproduzir a dominação da Corte ou a destruição demoníaca?",
+      "A Jorō julgará os personagens dignos de recuperar o legado?"
+    ],
+    "elenco": [
+      "carcaca:criatura:joro-sonhos-afogados",
+      "carcaca:criatura:gharoz-sonho-podre"
+    ],
+    "observacao": "Os presságios e o segundo perigo são propostas para jogo, NÃO eventos canônicos já ocorridos. O andamento pertence ao save/campanha, nunca à referência comum."
+  }
+]

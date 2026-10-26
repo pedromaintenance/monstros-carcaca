@@ -1,0 +1,58 @@
+[
+  {
+    "id": "aberrante",
+    "descricao": "Ser de anatomia, mente ou origem excepcional que não cabe nas categorias conhecidas."
+  },
+  {
+    "id": "abissal_marinho",
+    "descricao": "Ser das profundezas e do vazio marítimo; não significa demônio do Abismo planar."
+  },
+  {
+    "id": "constructo",
+    "descricao": "Ser construído, animado ou artificial cuja origem central é uma manufatura."
+  },
+  {
+    "id": "demonio",
+    "descricao": "Entidade de natureza demoníaca da Carcaça; as linhagens mistas são registradas em ancestralidade, não como outro tipo cosmológico."
+  },
+  {
+    "id": "draconico",
+    "descricao": "Dragão ou criatura cuja natureza dominante é dracônica."
+  },
+  {
+    "id": "elemental",
+    "descricao": "Ser constituído primariamente por forças elementais ou fenômenos naturais personificados."
+  },
+  {
+    "id": "fauna",
+    "descricao": "Animal integrante da ecologia, inclusive fauna de ambientes fantásticos sem atributo sobrenatural predominante."
+  },
+  {
+    "id": "feerico",
+    "descricao": "Entidade feérica fora da tradição yokai específica; inclui criaturas de Shadowfade quando documentadas."
+  },
+  {
+    "id": "fera_sobrenatural",
+    "descricao": "Criatura bestial cujo comportamento e poderes escapam à fauna ordinária."
+  },
+  {
+    "id": "flora",
+    "descricao": "Planta ou fungo cuja identidade primária é vegetal/fúngica; pode ter inteligência."
+  },
+  {
+    "id": "indeterminado",
+    "descricao": "Natureza ainda não estabelecida na lore; não inventar classificação para preencher lacuna."
+  },
+  {
+    "id": "morto_vivo",
+    "descricao": "Ser morto animado ou vinculado à morte que persiste como criatura."
+  },
+  {
+    "id": "povo",
+    "descricao": "Povo ou ser sapiente com organização e agência social; não implica alinhamento nem filiação política."
+  },
+  {
+    "id": "yokai",
+    "descricao": "Ser da tradição espiritual e ritual yokai da Carcaça; não equiparar automaticamente a toda entidade feérica."
+  }
+]

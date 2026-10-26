@@ -1,0 +1,23 @@
+{
+  "schema_version": "0.1.0",
+  "descricao": "Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
+  "total_criaturas": 4,
+  "total_regioes": 3,
+  "total_lugares": 7,
+  "total_faccoes": 3,
+  "total_frentes": 1,
+  "total_assentamentos": 1,
+  "arquivos": {
+    "creatures": "creatures.json",
+    "catalog": "catalog.json",
+    "indexes": "indexes.json",
+    "regions": "regions.json",
+    "places": "places.json",
+    "factions": "factions.json",
+    "types": "types.json",
+    "fronts": "fronts.json",
+    "settlements": "settlements.json"
+  },
+  "estado": "curadoria_em_andamento",
+  "nota": "Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."
+}

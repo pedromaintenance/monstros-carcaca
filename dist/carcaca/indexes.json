@@ -1,0 +1,72 @@
+{
+  "by_tipo_carcaca": {
+    "demonio": [
+      "carcaca:criatura:gharoz-sonho-podre"
+    ],
+    "yokai": [
+      "carcaca:criatura:akaname-espelho-fundo",
+      "carcaca:criatura:joro-sonhos-afogados",
+      "carcaca:criatura:kappa-escribas-afogados"
+    ]
+  },
+  "by_tipo_dnd": {
+    "corruptor": [
+      "carcaca:criatura:gharoz-sonho-podre"
+    ],
+    "fey": [
+      "carcaca:criatura:akaname-espelho-fundo",
+      "carcaca:criatura:joro-sonhos-afogados",
+      "carcaca:criatura:kappa-escribas-afogados"
+    ]
+  },
+  "by_regiao": {
+    "regiao:foz-rio-ancestral": [
+      "carcaca:criatura:akaname-espelho-fundo",
+      "carcaca:criatura:gharoz-sonho-podre",
+      "carcaca:criatura:joro-sonhos-afogados",
+      "carcaca:criatura:kappa-escribas-afogados"
+    ]
+  },
+  "by_lugar": {
+    "lugar:arquivo-dos-mortos-afogados": [
+      "carcaca:criatura:akaname-espelho-fundo",
+      "carcaca:criatura:gharoz-sonho-podre",
+      "carcaca:criatura:joro-sonhos-afogados",
+      "carcaca:criatura:kappa-escribas-afogados"
+    ]
+  },
+  "by_faccao": {
+    "faccao:demonios-do-abismo": [
+      "carcaca:criatura:gharoz-sonho-podre"
+    ],
+    "faccao:guardioes-yokai-da-foz": [
+      "carcaca:criatura:akaname-espelho-fundo",
+      "carcaca:criatura:joro-sonhos-afogados",
+      "carcaca:criatura:kappa-escribas-afogados"
+    ]
+  },
+  "by_estado": {
+    "piloto": [
+      "carcaca:criatura:gharoz-sonho-podre",
+      "carcaca:criatura:joro-sonhos-afogados"
+    ],
+    "rascunho": [
+      "carcaca:criatura:akaname-espelho-fundo",
+      "carcaca:criatura:kappa-escribas-afogados"
+    ]
+  },
+  "by_nome": {
+    "akaname do espelho fundo": [
+      "carcaca:criatura:akaname-espelho-fundo"
+    ],
+    "gharoz, o crocodilo gordo do sonho podre": [
+      "carcaca:criatura:gharoz-sonho-podre"
+    ],
+    "joro aracne dos sonhos afogados": [
+      "carcaca:criatura:joro-sonhos-afogados"
+    ],
+    "kappa-escribas afogados": [
+      "carcaca:criatura:kappa-escribas-afogados"
+    ]
+  }
+}

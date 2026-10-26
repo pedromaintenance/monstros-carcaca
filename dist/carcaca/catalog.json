@@ -1,0 +1,98 @@
+[
+  {
+    "id": "carcaca:criatura:akaname-espelho-fundo",
+    "nome": "Akaname do Espelho Fundo",
+    "nome_normalizado": "akaname do espelho fundo",
+    "categoria": "personagem_unico",
+    "estado": "rascunho",
+    "tipo_carcaca": "yokai",
+    "tipo_dnd": "fey",
+    "tipo_dnd_original": "Médio feérico (yokai)",
+    "regioes": [
+      "regiao:foz-rio-ancestral"
+    ],
+    "lugares": [
+      "lugar:arquivo-dos-mortos-afogados"
+    ],
+    "faccoes": [
+      "faccao:guardioes-yokai-da-foz"
+    ],
+    "instinto_dw": "Impedir que mãos indignas profanem os registros do Arquivo e alcancem a Lança.",
+    "nd_dnd": 10,
+    "fontes": [
+      "arquivo_mortos_afogados"
+    ]
+  },
+  {
+    "id": "carcaca:criatura:gharoz-sonho-podre",
+    "nome": "Gharoz, o Crocodilo Gordo do Sonho Podre",
+    "nome_normalizado": "gharoz, o crocodilo gordo do sonho podre",
+    "categoria": "personagem_unico",
+    "estado": "piloto",
+    "tipo_carcaca": "demonio",
+    "tipo_dnd": "corruptor",
+    "tipo_dnd_original": "Enorme corruptor (demônio)",
+    "regioes": [
+      "regiao:foz-rio-ancestral"
+    ],
+    "lugares": [
+      "lugar:arquivo-dos-mortos-afogados"
+    ],
+    "faccoes": [
+      "faccao:demonios-do-abismo"
+    ],
+    "instinto_dw": "Consumir a esperança da foz e destruir a possibilidade de restaurá-la.",
+    "nd_dnd": 14,
+    "fontes": [
+      "arquivo_mortos_afogados"
+    ]
+  },
+  {
+    "id": "carcaca:criatura:joro-sonhos-afogados",
+    "nome": "Jorō Aracne dos Sonhos Afogados",
+    "nome_normalizado": "joro aracne dos sonhos afogados",
+    "categoria": "personagem_unico",
+    "estado": "piloto",
+    "tipo_carcaca": "yokai",
+    "tipo_dnd": "fey",
+    "tipo_dnd_original": "Grande feérica (yokai)",
+    "regioes": [
+      "regiao:foz-rio-ancestral"
+    ],
+    "lugares": [
+      "lugar:arquivo-dos-mortos-afogados"
+    ],
+    "faccoes": [
+      "faccao:guardioes-yokai-da-foz"
+    ],
+    "instinto_dw": "Encontrar e provar um portador digno da Lança, capaz de restaurar a possibilidade de Sonho.",
+    "nd_dnd": 14,
+    "fontes": [
+      "arquivo_mortos_afogados"
+    ]
+  },
+  {
+    "id": "carcaca:criatura:kappa-escribas-afogados",
+    "nome": "Kappa-Escribas Afogados",
+    "nome_normalizado": "kappa-escribas afogados",
+    "categoria": "grupo",
+    "estado": "rascunho",
+    "tipo_carcaca": "yokai",
+    "tipo_dnd": "fey",
+    "tipo_dnd_original": "Pequeno feérico (yokai)",
+    "regioes": [
+      "regiao:foz-rio-ancestral"
+    ],
+    "lugares": [
+      "lugar:arquivo-dos-mortos-afogados"
+    ],
+    "faccoes": [
+      "faccao:guardioes-yokai-da-foz"
+    ],
+    "instinto_dw": "Registrar e corrigir tudo o que ameaça a ordem do Arquivo.",
+    "nd_dnd": 7,
+    "fontes": [
+      "arquivo_mortos_afogados"
+    ]
+  }
+]
