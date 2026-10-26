@@ -30,3 +30,13 @@
 2. A ficha de Dungeon World usa instinto/movimentos derivados da ficção, não transformação de atributos D&D.
 3. Regiões exigem fonte; não criar habitats de fantasia genéricos como fatos estabelecidos.
 4. Fatos da campanha e presságios ainda não realizados pertencem a estados diferentes.
+
+### Verificação final do ciclo 2
+
+Workflow: https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40420863395
+
+Resultado observado: **success** em todas as etapas de checkout, Python, Node, JSON Schema, testes JavaScript, geração, conferência e publicação.
+
+Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões, 7 lugares, 3 facções, 1 frente e 1 assentamento. `dist/carcaca/catalog.json` relaciona Jorō, Gharoz, Akaname e Kappa-Escribas.
+
+**Marco M1 (núcleo 0.1)** concluído: consultas por nome, tipos, região, lugar, facção e estado; indexação reproduzível e cliente consumível por jogos. Continuidade de M2: 3 fichas restantes do Arquivo.
