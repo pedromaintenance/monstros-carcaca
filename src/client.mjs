@@ -29,6 +29,17 @@ export function createBestiary({ baseUrl, fetchImpl = fetch }) {
   async function getIndexes() {
     return indexes ??= await load("indexes.json");
   }
+  async function getGameData(game = "peren") {
+    const m = await getManifest();
+    const entry = m.games?.[game];
+    if (!entry) return null;
+    return load(entry.records);
+  }
+  async function getPerenLinks() {
+    const m = await getManifest();
+    return m.games?.peren ? load(m.games.peren.links) : [];
+  }
+
   async function get(id) {
     if (typeof id !== "string" || !id.includes(":")) return null;
     const source = id.split(":")[0];
@@ -52,7 +63,7 @@ export function createBestiary({ baseUrl, fetchImpl = fetch }) {
       (crMax == null || row.cr <= crMax)
     ).slice(offset, offset + limit);
   }
-  return { getManifest, getCatalog, getIndexes, get, search };
+  return { getManifest, getCatalog, getIndexes, getGameData, getPerenLinks, get, search };
 }
 
 /** Rascunho não-balanceado: valores próprios de Peren permanecem em branco. */
