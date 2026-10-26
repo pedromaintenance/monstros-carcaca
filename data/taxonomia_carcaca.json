@@ -1,0 +1,73 @@
+{
+  "schema_version": "0.1.0",
+  "descricao": "Tipo de Criatura da Carcaça: classificação autoral para jogos; independente do tipo de D&D, da facção e da função narrativa. Não implica hostilidade.",
+  "status_padrao": "nao_classificado",
+  "tipos": [
+    {
+      "id": "povo",
+      "descricao": "Povo ou ser sapiente com organização e agência social; não implica alinhamento nem filiação política."
+    },
+    {
+      "id": "fauna",
+      "descricao": "Animal integrante da ecologia, inclusive fauna de ambientes fantásticos sem atributo sobrenatural predominante."
+    },
+    {
+      "id": "flora",
+      "descricao": "Planta ou fungo cuja identidade primária é vegetal/fúngica; pode ter inteligência."
+    },
+    {
+      "id": "fera_sobrenatural",
+      "descricao": "Criatura bestial cujo comportamento e poderes escapam à fauna ordinária."
+    },
+    {
+      "id": "yokai",
+      "descricao": "Ser da tradição espiritual e ritual yokai da Carcaça; não equiparar automaticamente a toda entidade feérica."
+    },
+    {
+      "id": "feerico",
+      "descricao": "Entidade feérica fora da tradição yokai específica; inclui criaturas de Shadowfade quando documentadas."
+    },
+    {
+      "id": "demonio",
+      "descricao": "Entidade de natureza demoníaca da Carcaça; as linhagens mistas são registradas em ancestralidade, não como outro tipo cosmológico."
+    },
+    {
+      "id": "abissal_marinho",
+      "descricao": "Ser das profundezas e do vazio marítimo; não significa demônio do Abismo planar."
+    },
+    {
+      "id": "morto_vivo",
+      "descricao": "Ser morto animado ou vinculado à morte que persiste como criatura."
+    },
+    {
+      "id": "constructo",
+      "descricao": "Ser construído, animado ou artificial cuja origem central é uma manufatura."
+    },
+    {
+      "id": "elemental",
+      "descricao": "Ser constituído primariamente por forças elementais ou fenômenos naturais personificados."
+    },
+    {
+      "id": "draconico",
+      "descricao": "Dragão ou criatura cuja natureza dominante é dracônica."
+    },
+    {
+      "id": "aberrante",
+      "descricao": "Ser de anatomia, mente ou origem excepcional que não cabe nas categorias conhecidas."
+    },
+    {
+      "id": "indeterminado",
+      "descricao": "Natureza ainda não estabelecida na lore; não inventar classificação para preencher lacuna."
+    }
+  ],
+  "regras": [
+    "O tipo de D&D continua em campo separado e nunca é sobrescrito.",
+    "Tipo, ancestralidade, tradição cultural, facção política, papel e habitat são dimensões independentes.",
+    "Yokai pode ter tipo D&D feérico, mas mantém tipo Carcaça yokai.",
+    "Demônios, diabos e outros rótulos de D&D não constituem espécies cosmológicas distintas por padrão neste cenário.",
+    "Meio-demônio é ancestralidade/linhagem mista, não tipo primário obrigatório.",
+    "Abissais marinhos não são classificados como demônios só pela palavra abissal.",
+    "A ausência de fonte mantém o valor como indeterminado/pendente, nunca como inferência silenciosa.",
+    "Nomes de tipos não traduzem automaticamente tipos de D&D; classificação exige curadoria."
+  ]
+}

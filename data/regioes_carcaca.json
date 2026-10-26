@@ -1,0 +1,52 @@
+{
+  "schema_version": "0.1.0",
+  "regioes": [
+    {
+      "id": "regiao:foz-rio-ancestral",
+      "nome": "Foz do Rio Ancestral e Boca do Abismo",
+      "localizacao": "Extremo oeste da Carcaça, onde o Rio Ancestral se precipita no Abismo",
+      "lugares": [
+        "arquivo-dos-mortos-afogados",
+        "boca-do-abismo",
+        "gualapolis"
+      ],
+      "conflitos": [
+        "Interesses do Senhor do Rio e da Corte",
+        "Presença demoníaca e disputa pelo legado da foz"
+      ],
+      "status": "documentado",
+      "fonte": "Ambientação - A Carcaça - Visão Geral.txt; Arquivo dos Mortos Afogados.docx"
+    },
+    {
+      "id": "regiao:costa-sul",
+      "nome": "Costa Sul e Mar de Sangue",
+      "localizacao": "Além Sul, litoral e ilhas do Mar de Sangue",
+      "lugares": [
+        "portomonte",
+        "cavernas-kuo-toa"
+      ],
+      "conflitos": [
+        "Ataques sacrificiais de Kuo-Toa devotos de Daegon",
+        "Defesa de assentamentos e ilhas de humanos, tortles, tabaxis e orcs"
+      ],
+      "status": "documentado",
+      "fonte": "Ambientação - A Carcaça - Visão Geral.txt"
+    },
+    {
+      "id": "regiao:eldroth",
+      "nome": "Floresta de Eldroth e ruínas de Vandar",
+      "localizacao": "Asa direita de Golzdov",
+      "lugares": [
+        "eldroth",
+        "vandar"
+      ],
+      "conflitos": [
+        "Vigilância e perseguição pelas forças de Lady Sylara",
+        "Mortos-vivos associados a Lord Damaris em Vandar",
+        "Resistência e sobrevivência dos povos locais"
+      ],
+      "status": "documentado",
+      "fonte": "Ambientação - A Carcaça - Visão Geral.txt"
+    }
+  ]
+}

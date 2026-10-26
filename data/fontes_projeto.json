@@ -1,0 +1,28 @@
+{
+  "arquivo_mortos_afogados": {
+    "titulo": "Arquivo dos Mortos Afogados.docx",
+    "referencia": "Facções yokai e demoníaca; fichas de Jorō e Gharoz",
+    "tipo": "fonte_autoral_do_projeto"
+  },
+  "ambientacao": {
+    "titulo": "Ambientação - A Carcaça - Visão Geral.txt",
+    "referencia": "Geografia, política, ecologia de povoações",
+    "tipo": "fonte_autoral_do_projeto"
+  },
+  "apendice_trelohim": {
+    "titulo": "Apêndice I - Trelohim, Uln-Shayr, Yokai, Kuo-Toa.txt",
+    "referencia": "Distinção de povos, origens, tradições e conflitos",
+    "tipo": "fonte_autoral_do_projeto"
+  },
+  "dungeon_world_divisoria": {
+    "titulo": "dungeon-world-divisoria-do-mestre-biblioteca-elfica.pdf",
+    "referencia": "Objetivos e movimentos do MJ; tabelas de instintos",
+    "tipo": "regras_de_referencia"
+  },
+  "dungeon_world_srd": {
+    "titulo": "Dungeon World SRD",
+    "url": "https://www.dungeonworldsrd.com/",
+    "referencia": "Monstros, instintos, movimentos, frentes, perigos, presságios e assentamentos",
+    "tipo": "regras_de_referencia"
+  }
+}

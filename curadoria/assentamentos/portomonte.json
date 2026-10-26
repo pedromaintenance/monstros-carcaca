@@ -1,0 +1,35 @@
+[
+  {
+    "id": "assentamento:portomonte",
+    "schema_version": "0.1.0",
+    "nome": "Portomonte",
+    "regiao_id": "regiao:costa-sul",
+    "estado": "rascunho-factual",
+    "fonte": "ambientacao",
+    "tipo_dw": {
+      "classificacao": null,
+      "estado": "aguarda_curadoria"
+    },
+    "tags_dw": {
+      "prosperidade": null,
+      "populacao": null,
+      "defesas": null,
+      "recursos": [],
+      "comercio": [],
+      "necessidades": [],
+      "juramento": []
+    },
+    "fatos": {
+      "posicao": "Assentamento humano escondido por penhascos na Costa Sul",
+      "economia": [
+        "comércio costeiro",
+        "agricultura possibilitada pela purificação da água do Mar de Sangue"
+      ],
+      "defesa": "Desconhecida nos materiais revisados",
+      "conflitos": [
+        "Ameaça regional dos Kuo-Toa e abissais marinhos"
+      ]
+    },
+    "observacao": "A classificação DW e tags ficam nulas: grande assentamento não estabelece automaticamente tamanho, prosperidade, defesa ou contagem populacional."
+  }
+]

@@ -1,0 +1,228 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/criatura-carcaca.schema.json",
+  "title": "Criatura da Carcaça - curadoria v0.1",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "schema_version",
+    "nome",
+    "categoria",
+    "estado",
+    "tipo_carcaca",
+    "tipo_dnd_referencia",
+    "ocorrencias",
+    "ecologia",
+    "dungeon_world",
+    "proveniencia"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^carcaca:criatura:[a-z0-9-]+$"
+    },
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "nome": {
+      "type": "string",
+      "minLength": 2
+    },
+    "categoria": {
+      "enum": [
+        "especie",
+        "grupo",
+        "personagem_unico",
+        "variante"
+      ]
+    },
+    "estado": {
+      "enum": [
+        "piloto",
+        "rascunho",
+        "revisado",
+        "aprovado"
+      ]
+    },
+    "tipo_carcaca": {
+      "type": "string",
+      "minLength": 3
+    },
+    "tipo_carcaca_status": {
+      "type": "string"
+    },
+    "tipo_dnd_referencia": {
+      "type": "object",
+      "required": [
+        "original"
+      ],
+      "properties": {
+        "original": {
+          "type": "string"
+        },
+        "tipo": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "equivalente_padrao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "fonte": {
+          "type": "string"
+        }
+      }
+    },
+    "ancestralidade": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "tradicoes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "faccoes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "ocorrencias": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "regiao_id",
+          "status"
+        ],
+        "properties": {
+          "regiao_id": {
+            "type": "string"
+          },
+          "lugar_id": {
+            "type": "string"
+          },
+          "situacao": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "documentado",
+              "inferido",
+              "proposto",
+              "incerto"
+            ]
+          }
+        }
+      }
+    },
+    "ecologia": {
+      "type": "object",
+      "required": [
+        "habitat",
+        "habitos",
+        "organizacao"
+      ],
+      "properties": {
+        "habitat": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "habitos": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "alimentacao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "ciclo_atividade": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "organizacao": {
+          "type": "object"
+        }
+      }
+    },
+    "relacoes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "dungeon_world": {
+      "type": "object",
+      "required": [
+        "instinto",
+        "movimentos",
+        "estatisticas"
+      ],
+      "properties": {
+        "estado": {
+          "type": "string"
+        },
+        "instinto": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "movimentos": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "nome",
+              "texto"
+            ]
+          }
+        },
+        "qualidades": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "tags_propostas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "estatisticas": {
+          "type": "object"
+        }
+      }
+    },
+    "dnd5e": {
+      "type": "object"
+    },
+    "proveniencia": {
+      "type": "object",
+      "required": [
+        "fontes"
+      ]
+    },
+    "notas_editoriais": {
+      "type": "string"
+    }
+  }
+}
