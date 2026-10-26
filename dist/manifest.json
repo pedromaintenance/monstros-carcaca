@@ -11,15 +11,17 @@
   },
   "games": {
     "peren": {
+      "aliases": 104,
       "count": 222,
+      "exact": 31,
       "links": "games/peren-links.json",
-      "matched": 31,
-      "note": "Regras de jogo próprias; não substitui data/monstros.json em Peren",
+      "matched": 135,
+      "note": "Correspondências são candidatas, não reconciliações aprovadas; revisão humana obrigatória.",
       "records": "games/peren.json",
       "source": "pedromaintenance/peren-o-bruxo/data/monstros.json"
     }
   },
-  "generated_at": "2026-10-26T22:41:47.541115+00:00",
+  "generated_at": "2026-10-26T22:44:59.910306+00:00",
   "indexes": "indexes.json",
   "schema_version": "1.0",
   "sources": [
