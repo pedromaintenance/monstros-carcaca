@@ -1,7 +1,7 @@
 {
   "schema_version": "0.1.0",
   "descricao": "Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
-  "total_criaturas": 4,
+  "total_criaturas": 6,
   "total_regioes": 3,
   "total_lugares": 7,
   "total_faccoes": 3,

@@ -449,5 +449,241 @@
       "status_movimentos_dw": "adaptacao_proposta"
     },
     "notas_editoriais": "A fonte não esclarece se descendem dos auxiliares yokai ou se foram transformados; hipótese não fixada como fato."
+  },
+  {
+    "id": "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
+    "schema_version": "0.1.0",
+    "nome": "Morgat, Quebra-Âncoras do Vazio",
+    "categoria": "personagem_unico",
+    "estado": "rascunho",
+    "tipo_carcaca": "demonio",
+    "tipo_carcaca_status": "confirmado",
+    "tipo_dnd_referencia": {
+      "original": "Grande corruptor (demônio)",
+      "tipo": "corruptor",
+      "equivalente_padrao": null,
+      "fonte": "arquivo_mortos_afogados"
+    },
+    "ancestralidade": [],
+    "tradicoes": [],
+    "faccoes": [
+      {
+        "id": "faccao:demonios-do-abismo",
+        "vinculo": "tenente_de_ruptura",
+        "evidencia": "documentado"
+      }
+    ],
+    "ocorrencias": [
+      {
+        "regiao_id": "regiao:foz-rio-ancestral",
+        "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+        "situacao": "Executor militar que rompe as defesas do Arquivo para abrir passagem a Gharoz",
+        "status": "documentado"
+      }
+    ],
+    "ecologia": {
+      "habitat": "Estruturas inundadas do Arquivo dos Mortos Afogados; atua tanto na água quanto em solo alagado",
+      "habitos": [
+        "Pressiona linhas defensivas, rompe formações e separa combatentes",
+        "Interrompe conjuradores e desfaz a estabilidade de corredores e salas",
+        "Aproveita brechas abertas para preparar a entrada de outras forças demoníacas"
+      ],
+      "alimentacao": null,
+      "ciclo_atividade": null,
+      "organizacao": {
+        "estrutura": "Tenente de guerra anfíbio subordinado à ofensiva demoníaca; não ocupa papel de liderança política",
+        "tag_dw": "solitario",
+        "status_tag_dw": "proposto"
+      }
+    },
+    "relacoes": [
+      {
+        "alvo_id": "carcaca:criatura:gharoz-sonho-podre",
+        "tipo": "abre_caminho",
+        "descricao": "Quebra posições e dispersa defensores para que Gharoz avance.",
+        "status": "documentado"
+      },
+      {
+        "alvo_id": "lugar:arquivo-dos-mortos-afogados",
+        "tipo": "ameaça_estrutural",
+        "descricao": "Sua função é romper a arquitetura material e mental que protege o núcleo do Arquivo.",
+        "status": "documentado"
+      }
+    ],
+    "dungeon_world": {
+      "estado": "adaptacao_narrativa_em_revisao",
+      "instinto": "Desfazer toda formação que resista ao avanço das forças demoníacas.",
+      "movimentos": [
+        {
+          "nome": "Quebra-Linha",
+          "texto": "Atravessar uma formação e separar os que dependem uns dos outros.",
+          "origem": "adaptado_da_ficcao"
+        },
+        {
+          "nome": "Corrente do Pânico",
+          "texto": "Arrastar um defensor para longe da posição segura.",
+          "origem": "adaptado_da_ficcao"
+        },
+        {
+          "nome": "Maré de Ruído",
+          "texto": "Fazer o caos e o estrondo impedirem palavras de comando e conjuração.",
+          "origem": "adaptado_da_ficcao"
+        }
+      ],
+      "qualidades": [
+        "Âncora-mangual com corrente",
+        "Corpo anfíbio de guerra",
+        "Pressão de cerco e ruptura"
+      ],
+      "tags_propostas": [
+        "solitario",
+        "grande",
+        "forte"
+      ],
+      "estatisticas": {
+        "estado": "nao_calculadas",
+        "pv": null,
+        "armadura": null,
+        "dano": null,
+        "observacao": "Criar ficha mecânica DW pelas perguntas do jogo; nunca converter automaticamente o ND da fonte D&D."
+      }
+    },
+    "dnd5e": {
+      "origem": "ficha_autoral",
+      "nd": 11,
+      "ca": 19,
+      "pv": 195,
+      "observacao": "Números da ficha autoral de Arquivo dos Mortos Afogados; não representam ficha Dungeon World."
+    },
+    "proveniencia": {
+      "fontes": [
+        "arquivo_mortos_afogados"
+      ],
+      "status_fatos": "documentado",
+      "status_movimentos_dw": "adaptacao_proposta"
+    },
+    "notas_editoriais": "Embora apresente características de crustáceos e predadores marinhos, a ficha é explícita: Morgat é demônio do Abismo, não um abissal marinho. Tags Dungeon World propostas ainda carecem de revisão mecânica."
+  },
+  {
+    "id": "carcaca:criatura:veren-mares-rubras",
+    "schema_version": "0.1.0",
+    "nome": "Veren Marés-Rubras",
+    "categoria": "personagem_unico",
+    "estado": "rascunho",
+    "tipo_carcaca": "demonio",
+    "tipo_carcaca_status": "confirmado",
+    "tipo_dnd_referencia": {
+      "original": "Médio corruptor (meio-demônio)",
+      "tipo": "corruptor",
+      "equivalente_padrao": null,
+      "fonte": "arquivo_mortos_afogados"
+    },
+    "ancestralidade": [
+      "meio-demonio"
+    ],
+    "tradicoes": [],
+    "faccoes": [
+      {
+        "id": "faccao:demonios-do-abismo",
+        "vinculo": "emissario_infiltrador",
+        "evidencia": "documentado"
+      }
+    ],
+    "ocorrencias": [
+      {
+        "regiao_id": "regiao:foz-rio-ancestral",
+        "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+        "situacao": "Operador de infiltração e tentação; busca a Lança da Perdição",
+        "status": "documentado"
+      }
+    ],
+    "ecologia": {
+      "habitat": "Opera na órbita da Boca do Abismo e nas ruínas alagadas da foz; circulação por sombras, água e névoa",
+      "habitos": [
+        "Observa hierarquias, ressentimentos, cansaço e abandono antes de abordar possíveis aliados",
+        "Oferece salvação e pactos plausíveis, apoiando-se em verdades parciais",
+        "Prefere induzir alguém a entregar a Lança em vez de tomá-la abertamente"
+      ],
+      "alimentacao": null,
+      "ciclo_atividade": null,
+      "organizacao": {
+        "estrutura": "Emissário e agente de conversão das forças demoníacas; executa infiltração política sem comandar uma sociedade própria documentada",
+        "tag_dw": "solitario",
+        "status_tag_dw": "proposto"
+      }
+    },
+    "relacoes": [
+      {
+        "alvo_id": "faccao:demonios-do-abismo",
+        "tipo": "colaboracao_operacional",
+        "descricao": "Integra o esforço demoníaco para tomar a Lança; atua como mediador e tentador.",
+        "status": "documentado"
+      },
+      {
+        "alvo_id": "faccao:corte-shadow-fey",
+        "tipo": "explora_fragilidades_da_ocupacao",
+        "descricao": "Explora a arrogância e as contradições do domínio shadow fey; isso não implica aliança com a Corte.",
+        "status": "documentado"
+      },
+      {
+        "alvo_id": "carcaca:criatura:gharoz-sonho-podre",
+        "tipo": "convergencia_de_objetivos",
+        "descricao": "Opera na mesma ofensiva pela Lança em que Gharoz é a ameaça principal.",
+        "status": "documentado"
+      }
+    ],
+    "dungeon_world": {
+      "estado": "adaptacao_narrativa_em_revisao",
+      "instinto": "Levar os desesperados a entregar voluntariamente aquilo que a força não consegue tomar.",
+      "movimentos": [
+        {
+          "nome": "Salvar para endividar",
+          "texto": "Oferecer ajuda necessária e transformá-la em dependência ou compromisso.",
+          "origem": "adaptado_da_ficcao"
+        },
+        {
+          "nome": "Palavra de Desistência",
+          "texto": "Levar alguém a abandonar momentaneamente algo que jurou proteger.",
+          "origem": "adaptado_da_ficcao"
+        },
+        {
+          "nome": "Passo pelo Véu",
+          "texto": "Reaparecer entre água, névoa ou sombra após conquistar a confiança de um alvo.",
+          "origem": "adaptado_da_ficcao"
+        }
+      ],
+      "qualidades": [
+        "Disfarce sobrenatural",
+        "Compreensão da vulnerabilidade política",
+        "Pactos sedutores e verdades parciais"
+      ],
+      "tags_propostas": [
+        "solitario",
+        "magico",
+        "inteligente"
+      ],
+      "estatisticas": {
+        "estado": "nao_calculadas",
+        "pv": null,
+        "armadura": null,
+        "dano": null,
+        "observacao": "Criar ficha mecânica DW pelas perguntas do jogo; nunca converter automaticamente o ND da fonte D&D."
+      }
+    },
+    "dnd5e": {
+      "origem": "ficha_autoral",
+      "nd": 11,
+      "ca": 18,
+      "pv": 170,
+      "observacao": "Números da ficha autoral de Arquivo dos Mortos Afogados; não representam ficha Dungeon World."
+    },
+    "proveniencia": {
+      "fontes": [
+        "arquivo_mortos_afogados"
+      ],
+      "status_fatos": "documentado",
+      "status_movimentos_dw": "adaptacao_proposta"
+    },
+    "notas_editoriais": "A fonte nomeia Veren meio-demônio. Na Carcaça, 'meio-demônio' descreve ancestralidade misturada, não uma cosmologia distinta; seu tipo Carcaça é demônio. A estratégia descrita não significa hostilidade indistinta aos povos dominados nem vínculo com todos os shadow fey."
   }
 ]

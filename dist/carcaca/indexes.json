@@ -1,7 +1,9 @@
 {
   "by_tipo_carcaca": {
     "demonio": [
-      "carcaca:criatura:gharoz-sonho-podre"
+      "carcaca:criatura:gharoz-sonho-podre",
+      "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
+      "carcaca:criatura:veren-mares-rubras"
     ],
     "yokai": [
       "carcaca:criatura:akaname-espelho-fundo",
@@ -11,7 +13,9 @@
   },
   "by_tipo_dnd": {
     "corruptor": [
-      "carcaca:criatura:gharoz-sonho-podre"
+      "carcaca:criatura:gharoz-sonho-podre",
+      "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
+      "carcaca:criatura:veren-mares-rubras"
     ],
     "fey": [
       "carcaca:criatura:akaname-espelho-fundo",
@@ -24,7 +28,9 @@
       "carcaca:criatura:akaname-espelho-fundo",
       "carcaca:criatura:gharoz-sonho-podre",
       "carcaca:criatura:joro-sonhos-afogados",
-      "carcaca:criatura:kappa-escribas-afogados"
+      "carcaca:criatura:kappa-escribas-afogados",
+      "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
+      "carcaca:criatura:veren-mares-rubras"
     ]
   },
   "by_lugar": {
@@ -32,12 +38,16 @@
       "carcaca:criatura:akaname-espelho-fundo",
       "carcaca:criatura:gharoz-sonho-podre",
       "carcaca:criatura:joro-sonhos-afogados",
-      "carcaca:criatura:kappa-escribas-afogados"
+      "carcaca:criatura:kappa-escribas-afogados",
+      "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
+      "carcaca:criatura:veren-mares-rubras"
     ]
   },
   "by_faccao": {
     "faccao:demonios-do-abismo": [
-      "carcaca:criatura:gharoz-sonho-podre"
+      "carcaca:criatura:gharoz-sonho-podre",
+      "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
+      "carcaca:criatura:veren-mares-rubras"
     ],
     "faccao:guardioes-yokai-da-foz": [
       "carcaca:criatura:akaname-espelho-fundo",
@@ -52,7 +62,9 @@
     ],
     "rascunho": [
       "carcaca:criatura:akaname-espelho-fundo",
-      "carcaca:criatura:kappa-escribas-afogados"
+      "carcaca:criatura:kappa-escribas-afogados",
+      "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
+      "carcaca:criatura:veren-mares-rubras"
     ]
   },
   "by_nome": {
@@ -67,6 +79,12 @@
     ],
     "kappa-escribas afogados": [
       "carcaca:criatura:kappa-escribas-afogados"
+    ],
+    "morgat, quebra-ancoras do vazio": [
+      "carcaca:criatura:morgat-quebra-ancoras-do-vazio"
+    ],
+    "veren mares-rubras": [
+      "carcaca:criatura:veren-mares-rubras"
     ]
   }
 }

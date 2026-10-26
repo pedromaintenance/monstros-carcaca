@@ -18,14 +18,35 @@
         "categoria_dw": "forcas-planares",
         "impulso": "Aniquilar qualquer futuro possível para Gualápolis",
         "criaturas": [
-          "carcaca:criatura:gharoz-sonho-podre"
+          "carcaca:criatura:gharoz-sonho-podre",
+          "carcaca:criatura:veren-mares-rubras",
+          "carcaca:criatura:morgat-quebra-ancoras-do-vazio"
         ],
         "pressagios_propostos": [
+          "Veren oferece ajuda e pactos a quem foi abandonado pela Corte ou pela resistência.",
+          "Morgat rompe uma posição defensiva e desorganiza a proteção do Arquivo.",
           "Agentes demoníacos sondam as rotas até a Lança.",
           "Sinais da corrupção onírica alcançam as câmaras rituais.",
           "Gharoz tenta converter o poder da Lança em ferramenta de afundamento."
         ],
-        "desastre_iminente_proposto": "Destruição do legado da foz e impossibilidade de sua restauração"
+        "desastre_iminente_proposto": "Destruição do legado da foz e impossibilidade de sua restauração",
+        "operadores": [
+          {
+            "criatura_id": "carcaca:criatura:veren-mares-rubras",
+            "papel": "infiltracao_e_tentacao",
+            "status": "documentado"
+          },
+          {
+            "criatura_id": "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
+            "papel": "ruptura_militar",
+            "status": "documentado"
+          },
+          {
+            "criatura_id": "carcaca:criatura:gharoz-sonho-podre",
+            "papel": "ameaca_principal",
+            "status": "documentado"
+          }
+        ]
       },
       {
         "id": "perigo:ruptura-do-arquivo",
@@ -49,8 +70,10 @@
     ],
     "elenco": [
       "carcaca:criatura:joro-sonhos-afogados",
-      "carcaca:criatura:gharoz-sonho-podre"
+      "carcaca:criatura:gharoz-sonho-podre",
+      "carcaca:criatura:veren-mares-rubras",
+      "carcaca:criatura:morgat-quebra-ancoras-do-vazio"
     ],
-    "observacao": "Os presságios e o segundo perigo são propostas para jogo, NÃO eventos canônicos já ocorridos. O andamento pertence ao save/campanha, nunca à referência comum."
+    "observacao": "Os presságios e o segundo perigo são propostas para jogo, NÃO eventos canônicos já ocorridos. O andamento pertence ao save/campanha, nunca à referência comum. Veren e Morgat são operadores documentados da ameaça; a sequência de presságios permanece proposta, não história concluída."
   }
 ]

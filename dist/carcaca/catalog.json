@@ -94,5 +94,53 @@
     "fontes": [
       "arquivo_mortos_afogados"
     ]
+  },
+  {
+    "id": "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
+    "nome": "Morgat, Quebra-Âncoras do Vazio",
+    "nome_normalizado": "morgat, quebra-ancoras do vazio",
+    "categoria": "personagem_unico",
+    "estado": "rascunho",
+    "tipo_carcaca": "demonio",
+    "tipo_dnd": "corruptor",
+    "tipo_dnd_original": "Grande corruptor (demônio)",
+    "regioes": [
+      "regiao:foz-rio-ancestral"
+    ],
+    "lugares": [
+      "lugar:arquivo-dos-mortos-afogados"
+    ],
+    "faccoes": [
+      "faccao:demonios-do-abismo"
+    ],
+    "instinto_dw": "Desfazer toda formação que resista ao avanço das forças demoníacas.",
+    "nd_dnd": 11,
+    "fontes": [
+      "arquivo_mortos_afogados"
+    ]
+  },
+  {
+    "id": "carcaca:criatura:veren-mares-rubras",
+    "nome": "Veren Marés-Rubras",
+    "nome_normalizado": "veren mares-rubras",
+    "categoria": "personagem_unico",
+    "estado": "rascunho",
+    "tipo_carcaca": "demonio",
+    "tipo_dnd": "corruptor",
+    "tipo_dnd_original": "Médio corruptor (meio-demônio)",
+    "regioes": [
+      "regiao:foz-rio-ancestral"
+    ],
+    "lugares": [
+      "lugar:arquivo-dos-mortos-afogados"
+    ],
+    "faccoes": [
+      "faccao:demonios-do-abismo"
+    ],
+    "instinto_dw": "Levar os desesperados a entregar voluntariamente aquilo que a força não consegue tomar.",
+    "nd_dnd": 11,
+    "fontes": [
+      "arquivo_mortos_afogados"
+    ]
   }
 ]
