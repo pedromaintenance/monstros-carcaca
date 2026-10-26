@@ -19,7 +19,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 |---|---|---|
 | **M0 — Fundamentos (concluído)** | Tipo Carcaça, modelo de criatura/ecologia, IDs, regiões, frente e assentamento, roteiro de validação | 2 criaturas-piloto Jorō e Gharoz; uma frente-proposta e um assentamento incompleto, todos com fontes/status explícitos |
 | **M1 — Motor de curadoria (núcleo 0.1 concluído)** | Schemas completos, validador de referências, índices de tipos/regiões, compatibilidade com catálogo e CI | Testes passam; nenhuma classe/type externa é sobrescrita; nenhum campo canônico é inferido em lote |
-| **M2 — Arquivo dos Mortos Afogados (6/7; revisão pendente)** | Completar 7 fichas originais, com instintos/movimentos DW, vínculos e comportamento | Revisão de 7 criaturas; registrar decisões em changelog; números DW somente quando aprovados |
+| **M2 — Arquivo dos Mortos Afogados (7/7 cadastradas; revisão DW pendente)** | Completar 7 fichas originais, com instintos/movimentos DW, vínculos e comportamento | Revisão de 7 criaturas; registrar decisões em changelog; números DW somente quando aprovados |
 | **M3 — Atlas de regiões, povos e assentamentos** | Foz, Costa Sul, Eldroth, depois demais regiões da lore; cidades, grupos e conflitos | Referências cruzadas, assentamentos DW com tags apenas quando suportadas/curadas |
 | **M4 — Frente viva e encontros** | Perigos, impulsos, presságios, desfechos; tabelas de encontros e habitats em pequenas regiões | 1 frente revisada por vez; propostas distintas de fatos; efeitos de campanha ficam fora do cânone |
 | **M5 — Lotes de importados** | Seleção de 10–25 monstros por ciclo orientada por jogos e por evidência da lore | Tipo Carcaça e ocorrência somente após curadoria; reportar cobertura e pendências |
@@ -44,8 +44,8 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Registrar regiões piloto: foz do Rio Ancestral, Costa Sul e Eldroth.
 - [x] Criar frente DW experimental e assentamento de Portomonte com campos desconhecidos nulos.
 - [ ] Validar os campos mecânicos de DW em mesa e revisar instintos com o autor da Carcaça.
-- [ ] Expandir para as outras 5 fichas do Arquivo; isso é M2.
-- [ ] Publicar documentação de integração runtime e índices de região; isso é M1.
+- [x] Cadastrar as sete fichas originais do Arquivo nos ciclos 1–4 (revisão editorial e mecânica DW ainda pendente).
+- [x] Publicar documentação e índices do cliente ESM de curadoria (núcleo M1 em produção).
 
 ## Fontes de regras e lore
 
@@ -66,7 +66,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Testes de busca, combinação de filtros, cache, ND nulo e paginação no Node.
 - [x] Configuração de Actions para validar, regenerar e publicar snapshots autorais.
 - [ ] Revisão editorial e estatísticas específicas de DW; aguardam curadoria.
-- [ ] Concluir as **outras 3 fichas** do Arquivo, posteriormente.
+- [x] Concluir o cadastro das outras três fichas do Arquivo nos ciclos 3–4.
 - [ ] Criar índices mais amplos de identidade entre espécies e variantes das fontes SRD, posteriormente.
 
 ### Critério de conservação
@@ -89,7 +89,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Registrar meio-demônio de Veren como ancestralidade, sem novo tipo cosmológico.
 - [x] Relacionar os papéis na ofensiva de Gharoz sem presumir fatos além da fonte.
 - [x] Atualizar uma frente DW existente com operadores e presságios **propostos**, não novos acontecimentos canônicos.
-- [ ] Integrar as Lampreias do Pavor Abissal (ficha final do Arquivo).
+- [x] Integrar as Lampreias do Pavor Abissal (ficha final do Arquivo).
 - [ ] Revisar o conteúdo com o autor e criar as fichas numéricas DW por procedimento próprio.
 - [x] Verificar publicação gerada e testes automáticos: GitHub Actions #40422431081 concluído com sucesso.
 
@@ -99,3 +99,17 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] `dist/carcaca/manifest.json` confirmado: 6 criaturas, 3 regiões, 7 lugares, 3 facções, 1 frente, 1 assentamento.
 - [x] `dist/carcaca/indexes.json` confirmado: 3 yokai, 3 demônios, 6 criaturas vinculadas à foz.
 - [ ] Revisão editorial das adaptações de Dungeon World ainda pendente, apesar de tecnicamente validadas.
+
+## Ciclo 4 — Lampreias e revisão ecológica (2026-10-26)
+
+- [x] Registrar **Lampreias do Pavor Abissal**, documento primário com ND 7, CA 16, PV 102, origem demoníaca e dieta de resíduos psíquicos.
+- [x] Distinguir `demonio` de `abissal_marinho` mesmo quando o nome contém “abissal”.
+- [x] Curar hábitos de caça e organização grupal; elaborar instinto e três movimentos ficcionais DW como **propostas**, não regras numéricas.
+- [x] Relacionar lampreias a Gharoz, Veren e Arquivo com referências internas e status documentado.
+- [x] Integrar as lampreias à frente da Lança como agentes do perigo existente, sem criar novo perigo artificialmente.
+- [x] Ajustar a frente de aventura para três presságios ativos por perigo, mantendo propostas antigas em reserva.
+- [x] Publicar dossiê de ecologia e relações para as sete criaturas, distinguindo ocorrências confirmadas e propostas de encontros.
+- [x] Atualizar inventário da fonte autoral, ROADMAP e diário; manter o importador D&D e Peren intactos.
+- [ ] Validar índices e workflow no GitHub e registrar o resultado final.
+- [ ] Avaliar com o autor as sete adaptações e produzir fichas mecânicas específicas de DW.
+- [ ] Iniciar o Marco M3 com assentamentos e povos da Costa Sul em novo lote.

@@ -63,3 +63,18 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 - Manifesto publicado: 6 criaturas curadas, 3 regiões, 7 lugares, 3 facções, 1 frente, 1 assentamento.
 - Índices: 3 yokai + 3 demônios; todas as 6 ocorrências da coleção vinculadas à região da foz.
 - Limitação preservada: os valores PV, armadura e dano de Dungeon World continuam `null` até construção específica do sistema e revisão editorial.
+
+## 2026-10-26 · Ciclo 4 — Lampreias, conclusão cadastral de M2
+
+**Fonte primária**: `Arquivo dos Mortos Afogados.docx`, seção “Lampreias do Pavor Abissal”, comportamento, história, traços e ações. **Regras**: referências de Dungeon World para instintos, movimentos e frentes.
+
+- Ficha nova: `carcaca:criatura:lampreias-do-pavor-abissal`, `categoria: grupo`, `tipo_carcaca: demonio`, D&D original `Médio corruptor (demônio)`, ND 7, CA 16, PV 102.
+- O nome “Abissal” **não** as converte em abissais marinhos; a fonte confirma natureza demoníaca. O Mar de Sangue não foi adicionado como ocorrência.
+- Fonte caracteriza sua origem como “moldados ou atraídos”: essa ambiguidade permanece aberta. Há hábitos documentados de caça coordenada e alimentação por resíduos psíquicos.
+- Instinto e três movimentos DW foram formulados como **adaptações propostas**; PV/armadura/dano DW permanecem nulos.
+- A frente existente recebeu as lampreias como agentes auxiliares de Gharoz. Há três presságios ativos por perigo e outros preservados em reserva, não acontecimentos confirmados.
+- Dossiê `docs/ECOLOGIA_ARQUIVO_DOS_MORTOS_AFOGADOS.md` relaciona as sete criaturas, seus propósitos e conflitos, separando evidência, inferência e propostas.
+- O marco M2 atingiu **7/7 em cobertura cadastral**; status de aprovação narrativa/DW continua pendente.
+- Escopo protegido: nenhuma atualização no repositório do Peren, nem no catálogo geral de fichas importadas. `dist/carcaca/` é atualizado via Action dedicada.
+
+**Pendente até confirmar CI:** checar workflow e manifesto gerado com sete criaturas.
