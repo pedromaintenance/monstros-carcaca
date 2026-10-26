@@ -6,9 +6,9 @@
       "nome": "Foz do Rio Ancestral e Boca do Abismo",
       "localizacao": "Extremo oeste da Carcaça, onde o Rio Ancestral se precipita no Abismo",
       "lugares": [
-        "arquivo-dos-mortos-afogados",
-        "boca-do-abismo",
-        "gualapolis"
+        "lugar:arquivo-dos-mortos-afogados",
+        "lugar:boca-do-abismo",
+        "lugar:gualapolis"
       ],
       "conflitos": [
         "Interesses do Senhor do Rio e da Corte",
@@ -22,8 +22,8 @@
       "nome": "Costa Sul e Mar de Sangue",
       "localizacao": "Além Sul, litoral e ilhas do Mar de Sangue",
       "lugares": [
-        "portomonte",
-        "cavernas-kuo-toa"
+        "lugar:portomonte",
+        "lugar:cavernas-kuo-toa"
       ],
       "conflitos": [
         "Ataques sacrificiais de Kuo-Toa devotos de Daegon",
@@ -37,8 +37,8 @@
       "nome": "Floresta de Eldroth e ruínas de Vandar",
       "localizacao": "Asa direita de Golzdov",
       "lugares": [
-        "eldroth",
-        "vandar"
+        "lugar:eldroth",
+        "lugar:vandar"
       ],
       "conflitos": [
         "Vigilância e perseguição pelas forças de Lady Sylara",

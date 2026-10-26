@@ -28,7 +28,7 @@
     "ocorrencias": [
       {
         "regiao_id": "regiao:foz-rio-ancestral",
-        "lugar_id": "arquivo-dos-mortos-afogados",
+        "lugar_id": "lugar:arquivo-dos-mortos-afogados",
         "situacao": "guardia residente",
         "status": "documentado"
       }
@@ -141,7 +141,7 @@
     "ocorrencias": [
       {
         "regiao_id": "regiao:foz-rio-ancestral",
-        "lugar_id": "arquivo-dos-mortos-afogados",
+        "lugar_id": "lugar:arquivo-dos-mortos-afogados",
         "situacao": "disputa pela Lança da Perdição e pelo destino da foz",
         "status": "documentado"
       }

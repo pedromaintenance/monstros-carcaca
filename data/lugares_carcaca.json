@@ -1,0 +1,61 @@
+{
+  "schema_version": "0.1.0",
+  "lugares": [
+    {
+      "id": "lugar:arquivo-dos-mortos-afogados",
+      "nome": "Arquivo dos Mortos Afogados",
+      "regiao_id": "regiao:foz-rio-ancestral",
+      "tipo": "masmorra_submersa",
+      "fonte": "arquivo_mortos_afogados",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:boca-do-abismo",
+      "nome": "Boca do Abismo",
+      "regiao_id": "regiao:foz-rio-ancestral",
+      "tipo": "fortaleza",
+      "fonte": "ambientacao",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:gualapolis",
+      "nome": "Gualápoles / Gualápolis",
+      "regiao_id": "regiao:foz-rio-ancestral",
+      "tipo": "cidade_historica",
+      "fonte": "arquivo_mortos_afogados",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:portomonte",
+      "nome": "Portomonte",
+      "regiao_id": "regiao:costa-sul",
+      "tipo": "assentamento",
+      "fonte": "ambientacao",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:cavernas-kuo-toa",
+      "nome": "Cavernas kuo-toa da Costa Sul",
+      "regiao_id": "regiao:costa-sul",
+      "tipo": "conjunto_de_cavernas",
+      "fonte": "ambientacao",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:eldroth",
+      "nome": "Floresta de Eldroth",
+      "regiao_id": "regiao:eldroth",
+      "tipo": "floresta",
+      "fonte": "ambientacao",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:vandar",
+      "nome": "Ruínas de Vandar",
+      "regiao_id": "regiao:eldroth",
+      "tipo": "ruinas",
+      "fonte": "ambientacao",
+      "estado": "documentado"
+    }
+  ]
+}

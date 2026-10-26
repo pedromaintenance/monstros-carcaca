@@ -1,0 +1,32 @@
+{
+  "schema_version": "0.1.0",
+  "faccoes": [
+    {
+      "id": "faccao:guardioes-yokai-da-foz",
+      "nome": "Guardiões yokai da foz",
+      "tipo": "tradição e função ritual",
+      "status_nome": "proposta_de_indexacao",
+      "fonte": "arquivo_mortos_afogados",
+      "objetivo": "Preservar o legado da foz e sua possibilidade de restauração",
+      "observacao": "O título agregado é uma proposta de indexação, não uma ordem política formal confirmada."
+    },
+    {
+      "id": "faccao:demonios-do-abismo",
+      "nome": "Demônios invasores do Abismo",
+      "tipo": "natureza e coalizão de ameaça",
+      "status_nome": "documentado",
+      "fonte": "arquivo_mortos_afogados",
+      "objetivo": "Disputar o poder da Lança na foz",
+      "observacao": "Não confundir com abissais marinhos do Mar de Sangue."
+    },
+    {
+      "id": "faccao:corte-shadow-fey",
+      "nome": "Corte da Rainha da Noite",
+      "tipo": "instituição política colonial",
+      "status_nome": "documentado",
+      "fonte": "ambientacao",
+      "objetivo": "Manter domínio e influência na Carcaça",
+      "observacao": "Facção política não é uma categoria biológica."
+    }
+  ]
+}

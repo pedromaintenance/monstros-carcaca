@@ -1,0 +1,41 @@
+name: Validar curadoria da Carcaça
+on:
+  push:
+    paths:
+      - 'curadoria/**'
+      - 'data/taxonomia_carcaca.json'
+      - 'data/regioes_carcaca.json'
+      - 'data/faccoes_carcaca.json'
+      - 'data/lugares_carcaca.json'
+      - 'data/fontes_projeto.json'
+      - 'schemas/**'
+      - 'scripts/validar_curadoria.py'
+      - '.github/workflows/validar-curadoria.yml'
+  pull_request:
+    paths:
+      - 'curadoria/**'
+      - 'data/taxonomia_carcaca.json'
+      - 'data/regioes_carcaca.json'
+      - 'data/faccoes_carcaca.json'
+      - 'data/lugares_carcaca.json'
+      - 'data/fontes_projeto.json'
+      - 'schemas/**'
+      - 'scripts/validar_curadoria.py'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v5
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.12'
+      - name: Dependências de validação
+        run: pip install 'jsonschema>=4,<5'
+      - name: Validar taxonomia, referências e esquemas
+        run: python scripts/validar_curadoria.py
