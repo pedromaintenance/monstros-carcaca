@@ -1,0 +1,20 @@
+[
+  {
+    "id": "povo:humanos-costa-sul",
+    "nome": "Humanos da Costa Sul",
+    "escopo": "grupo_regional",
+    "tipo_referencia": "humano",
+    "fonte": "ambientacao",
+    "status": "documentado",
+    "observacao": "Grupo amplo; não pressupor organização política ou hábitos idênticos em todos os assentamentos."
+  },
+  {
+    "id": "povo:kuo-toa-costa-sul",
+    "nome": "Kuo-Toa da Costa Sul",
+    "escopo": "grupo_regional",
+    "tipo_referencia": "kuo-toa",
+    "fonte": "ambientacao",
+    "status": "documentado",
+    "observacao": "Fonte menciona culto a Daegon e ataques; não significa que todos os indivíduos do povo tenham conduta uniforme."
+  }
+]

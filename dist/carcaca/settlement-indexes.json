@@ -1,0 +1,55 @@
+{
+  "by_regiao": {
+    "regiao:costa-sul": [
+      "assentamento:portomonte",
+      "assentamento:rede-cavernas-kuo-toa-costa-sul"
+    ]
+  },
+  "by_lugar": {
+    "lugar:cavernas-kuo-toa": [
+      "assentamento:rede-cavernas-kuo-toa-costa-sul"
+    ],
+    "lugar:portomonte": [
+      "assentamento:portomonte"
+    ]
+  },
+  "by_natureza": {
+    "assentamento_civil": [
+      "assentamento:portomonte"
+    ],
+    "rede_de_abrigos": [
+      "assentamento:rede-cavernas-kuo-toa-costa-sul"
+    ]
+  },
+  "by_rotulo_carcaca": {
+    "rotulo:agua_sangrenta_purificada": [
+      "assentamento:portomonte"
+    ],
+    "rotulo:devocao_daegon": [
+      "assentamento:rede-cavernas-kuo-toa-costa-sul"
+    ],
+    "rotulo:enclave_dos_penhascos": [
+      "assentamento:portomonte"
+    ],
+    "rotulo:guerra_liturgica": [
+      "assentamento:rede-cavernas-kuo-toa-costa-sul"
+    ],
+    "rotulo:habitat_de_cavernas": [
+      "assentamento:rede-cavernas-kuo-toa-costa-sul"
+    ],
+    "rotulo:lavoura_sobre_pedra": [
+      "assentamento:portomonte"
+    ],
+    "rotulo:templo_purificador": [
+      "assentamento:portomonte"
+    ]
+  },
+  "by_povo": {
+    "povo:humanos-costa-sul": [
+      "assentamento:portomonte"
+    ],
+    "povo:kuo-toa-costa-sul": [
+      "assentamento:rede-cavernas-kuo-toa-costa-sul"
+    ]
+  }
+}

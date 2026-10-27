@@ -1,0 +1,86 @@
+[
+  {
+    "id": "rotulo:agua_sangrenta_purificada",
+    "nome": "Água Sangrenta Purificada",
+    "categoria": "subsistencia",
+    "descricao": "Água do Mar de Sangue transformada por uma fonte sobrenatural, com uso local documentado.",
+    "consequencia_narrativa_proposta": "Se o ritual cessar, examinar quais atividades dependiam dele."
+  },
+  {
+    "id": "rotulo:devocao_daegon",
+    "nome": "Devoção a Daegon",
+    "categoria": "sagrado",
+    "descricao": "Comunidade associada ao culto de Daegon e suas práticas locais.",
+    "consequencia_narrativa_proposta": "Mudanças no culto podem alterar alianças e perigos."
+  },
+  {
+    "id": "rotulo:enclave_dos_penhascos",
+    "nome": "Enclave dos Penhascos",
+    "categoria": "abrigo",
+    "descricao": "Povoação protegida ou escondida por penhascos e pelo relevo litoral.",
+    "consequencia_narrativa_proposta": "A abordagem por terra ou mar passa a depender da geografia."
+  },
+  {
+    "id": "rotulo:guerra_liturgica",
+    "nome": "Guerra Litúrgica",
+    "categoria": "conflito",
+    "descricao": "Ataques organizados para realizar capturas e rituais, não apenas obter pilhagem.",
+    "consequencia_narrativa_proposta": "As vítimas das incursões são parte dos objetivos religiosos dos atacantes."
+  },
+  {
+    "id": "rotulo:habitat_de_cavernas",
+    "nome": "Habitat de Cavernas",
+    "categoria": "abrigo",
+    "descricao": "Abrigos organizados em cavernas; não implica que todas constituam uma só cidade.",
+    "consequencia_narrativa_proposta": "Bloqueio de entradas e acesso à água devem ser questões de jogo."
+  },
+  {
+    "id": "rotulo:lavoura_sobre_pedra",
+    "nome": "Lavoura Sobre Pedra",
+    "categoria": "producao",
+    "descricao": "Agricultura realizada em substrato normalmente hostil, sustentada por uma condição excepcional.",
+    "consequencia_narrativa_proposta": "A interrupção da condição excepcional ameaça a produção."
+  },
+  {
+    "id": "rotulo:ocupacao_feerica",
+    "nome": "Ocupação Feérica",
+    "categoria": "poder",
+    "descricao": "Assentamento sob administração ou controle da aristocracia shadow fey.",
+    "consequencia_narrativa_proposta": "Tributos, rotas e repressão afetam capacidade material da população."
+  },
+  {
+    "id": "rotulo:ossario_habitavel",
+    "nome": "Ossário Habitável",
+    "categoria": "geografia",
+    "descricao": "Abrigo, via ou construção integrada aos ossos de Golzdov.",
+    "consequencia_narrativa_proposta": "O relevo ósseo torna-se parte da economia e dos riscos construtivos."
+  },
+  {
+    "id": "rotulo:refugio_de_deslocados",
+    "nome": "Refúgio de Deslocados",
+    "categoria": "populacao",
+    "descricao": "Assentamento acolhe pessoas forçadas a migrar por guerras ou ocupação.",
+    "consequencia_narrativa_proposta": "A capacidade de abrigo pode alterar necessidades e defesas."
+  },
+  {
+    "id": "rotulo:rotas_sazonais",
+    "nome": "Rotas Sazonais",
+    "categoria": "mobilidade",
+    "descricao": "Fluxo de viajantes e recursos concentrado em ciclos sazonais.",
+    "consequencia_narrativa_proposta": "A estação altera presença de viajantes e bens sem garantir comércio direto."
+  },
+  {
+    "id": "rotulo:ruina_habitada",
+    "nome": "Ruína Habitada",
+    "categoria": "abrigo",
+    "descricao": "Comunidade ou força estabelecida nas estruturas de povoação arruinada.",
+    "consequencia_narrativa_proposta": "Mudanças de ocupação alteram acesso a moradia e recursos."
+  },
+  {
+    "id": "rotulo:templo_purificador",
+    "nome": "Templo Purificador",
+    "categoria": "sagrado",
+    "descricao": "Instituição religiosa que altera materialmente um recurso perigoso.",
+    "consequencia_narrativa_proposta": "Alteração do templo pode produzir uma necessidade material."
+  }
+]
