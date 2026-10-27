@@ -203,3 +203,17 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 - Conferidos diretamente: `dist/carcaca/manifest.json` (`total_perfis_suporte=3`); `support-profiles.json` (Portomonte, conjunto insular, cavernas kuo-toa, todos com quatro dimensões e valores `null`); `support-indexes.json` (assentamento/natureza/mobilidade).
 - Confirmação editorial: a sazonalidade insular aparece como `deslocamentos_sazonais_documentados`, mas `residentes`, taxas migratórias, nascimentos e óbitos permanecem sem números. Nenhuma potabilidade foi atribuída à água purificada para a lavoura.
 - Todas as estimativas numéricas aparecem somente no simulador/testes, não em curadoria, snapshot canônico ou estado persistido de jogo. A documentação técnica fica em `docs/CAPACIDADE_DE_SUPORTE.md`.
+
+## 2026-10-26 · Ciclo 10 — Evidências de infraestrutura por setor
+
+**Fonte revisada:** `Ambientação - A Carcaça - Visão Geral.txt`, "O Além Sul". O material documenta os penhascos e o templo de Portomonte, as atividades agrícolas/comerciais, comunidades insulares com navegação sazonal e kuo-toa em cavernas e cidades subaquáticas. A fonte não descreve casas e seus materiais, depósitos, métodos de conservação, esgoto, água potável doméstica nem cais individuais.
+
+**Conteúdo publicado:** três perfis de infraestrutura (`infraestrutura:portomonte`, `infraestrutura:comunidades-insulares-costa-sul`, `infraestrutura:rede-cavernas-kuo-toa-costa-sul`) com quatro setores cada: construção/abrigo, armazenamento, saneamento e acessos/logística. O templo de Deméter consta como instalação nominal; nenhum material construtivo foi declarado conhecido.
+
+**Proveniência:** `evidencia_parcial` significa algum elemento associado documentado, não infraestrutura completa; `sem_documentacao` não equivale a ausência real. Tipos de âncora (`geografia`, `habitat_coletivo`, `instituicao_fisica`, `circulacao_regional` etc.) impedem confundir penhasco com parede de pedra ou marinheiros com cais.
+
+**Integração:** `schemas/infraestrutura-assentamento.schema.json`, validador referencial (assentamento, suporte, dependências), indexador determinístico e ESM `getInfrastructureProfile/searchInfrastructureProfiles`. `auditInfrastructure` permite inspeção sem alteração; `previewInfrastructureIssue` mantém toda interrupção como hipótese não ocorrida.
+
+**Escopo protegido:** nenhuma instalação fictícia, evento de campanha ou rótulo Dungeon World foi inserido no cânone, e os arquivos mecânicos de D&D/Peren não foram alterados.
+
+**Detalhes e lacunas:** `docs/INFRAESTRUTURA_DOS_ASSENTAMENTOS.md`.

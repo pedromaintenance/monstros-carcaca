@@ -108,3 +108,11 @@ Arquivos: `data/capacidade_suporte_costa_sul.json`, `schemas/capacidade-suporte.
 `src/carcaca-support-capacity.mjs` fornece `previewSupportCapacity` e `previewPopulationFlow`, ambos somente leitura e condicionados a premissas e medições fornecidas conscientemente pelo mestre. **Não inferir que água purificada para a lavoura seja potável nem confundir viagem sazonal com migração.**
 
 Leia [Capacidade de suporte e demografia](docs/CAPACIDADE_DE_SUPORTE.md).
+
+## Ciclo 10 — Infraestrutura material com evidência
+
+O atlas apresenta `data/infraestrutura_assentamentos_costa_sul.json` e distribui `infrastructure-profiles.json` e `infrastructure-indexes.json`. Os três perfis abrangem construção e abrigo, armazenamento, saneamento e acessos, com âncoras factuais e perguntas abertas. **Penhascos não são casas de pedra; comércio não é prova de celeiro; purificação para plantio não demonstra esgoto nem potabilidade.**
+
+O cliente `src/carcaca-client.mjs` inclui `getInfrastructureProfiles`, `getInfrastructureProfile`, `getInfrastructureIndexes` e `searchInfrastructureProfiles`. A biblioteca `src/carcaca-infrastructure.mjs` permite auditoria e prévias sem alterar dados.
+
+Leia `docs/INFRAESTRUTURA_DOS_ASSENTAMENTOS.md`.

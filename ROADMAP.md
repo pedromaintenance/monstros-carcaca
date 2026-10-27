@@ -228,3 +228,19 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] `support-profiles.json`: 12 limites distribuídos entre três registros; as medições canônicas permanecem `null`; deslocamentos sazonais documentados **apenas** no conjunto insular.
 - [x] `support-indexes.json`: índices válidos por assentamento, natureza e mobilidade; cada assentamento da Costa Sul aponta para exatamente um perfil.
 - [x] Resultados fictícios de testes **não foram incorporados** aos dados canônicos, rótulos DW ou saves.
+
+## Ciclo 10 — Infraestrutura física da Costa Sul (2026-10-26)
+
+- [x] Reexaminar a lore: penhascos de Portomonte, templo purificador, cavernas kuo-toa, viagens insulares e comércio regional.
+- [x] Separar **geografia e costumes** de prova de estruturas construídas; não inventar celeiros, cais, casas de pedra, fossas ou redes de esgoto.
+- [x] Criar `data/infraestrutura_assentamentos_costa_sul.json`: **3 perfis e 12 setores** de construção/abrigo, armazenamento, saneamento e acessos.
+- [x] Registrar o templo de Deméter como instalação explicitamente existente, sem atribuir material, reservatórios ou usos domésticos de água.
+- [x] Manter **zero materiais de construção confirmados** e explicitar lacunas com perguntas orientadas ao mestre.
+- [x] Integrar referências a processos materiais conhecidos, sem ligar automaticamente incursões regionais à rede de cavernas.
+- [x] Criar schema, validador de evidências e integridade entre assentamentos, suporte e dependências.
+- [x] Publicar `infrastructure-profiles.json` e índices invertidos em `dist/carcaca/`; oferecer consulta pelo cliente JS.
+- [x] Criar `auditInfrastructure` e `previewInfrastructureIssue` para auditoria e hipóteses sem efeitos automáticos.
+- [x] Adicionar testes sobre falta de evidências, cópias dos dados, setor ausente e hipótese explícita.
+- [x] Documentar decisões, lacunas e contratos em `docs/INFRAESTRUTURA_DOS_ASSENTAMENTOS.md`.
+- [ ] Mapear no próximo ciclo impactos geográficos e conflitos da Caatinga/Além Sul somente quando houver fonte individualizável.
+- [ ] Atribuir materiais, depósitos e saneamento apenas após o autor documentar ou aprovar tais características.

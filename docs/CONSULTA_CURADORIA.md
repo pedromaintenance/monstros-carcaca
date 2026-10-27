@@ -145,3 +145,16 @@ const indices=await atlas.getSupportIndexes();
 A distribuição `support-profiles.json` contém três registros, todos sem quantidade informada, e `support-indexes.json` expõe índices por assentamento, natureza editorial e mobilidade sazonal. A simulação só opera com `premissasExplicitas:true` e todas as dimensões medidas, confirmadas e comparáveis no mesmo período; **não aplica efeitos DW**. A dinâmica demográfica exige contagem de residentes e eventos populacionais, sem converter viagens sazonais em migração.
 
 Veja `docs/CAPACIDADE_DE_SUPORTE.md` para método e advertências de adequação nutricional, água potável, abrigo e tratamento de resíduos.
+
+## Infraestrutura material (ciclo 10)
+
+```js
+import {auditInfrastructure,previewInfrastructureIssue} from "./src/carcaca-infrastructure.mjs";
+const p=await atlas.getInfrastructureProfile("infraestrutura:portomonte");
+const setoresSemDados=await atlas.searchInfrastructureProfiles({
+ setorId:"saneamento",estadoSetor:"sem_documentacao"
+});
+const auditoria=auditInfrastructure(p,{sectorId:"construcao_abrigo"});
+```
+
+`auditInfrastructure` retorna **cópias** das âncoras de evidência, perguntas e lacunas; não cria instalações. `previewInfrastructureIssue(p,{sectorId,hipotese})` apenas produz lista de questões e relações potenciais, nunca um acontecimento de campanha ou atualização DW. Os índices permitem consultas por assentamento, natureza, setor documentado/não documentado e dependência.
