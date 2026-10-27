@@ -727,6 +727,43 @@ def validar_integracao_movimentos_gerais():
           "nenhuma promocao canonica.")
 
 
+def validar_regras_nucleo_hack():
+    """Conferência do núcleo de regras sem completar lacunas por inferência."""
+    regras=load("data/lore/hack-carcaca-dw-regras-nucleo.json")
+    require(regras["aplicacao_canonica"] is False, "Núcleo do Hack não altera saves.")
+    p=regras["personagens"]
+    require(p["atributos"]==["FOR","DES","CON","INT","SAB","CAR"] and
+            p["valores_iniciais_para_distribuir"]==[16,15,13,12,9,8],
+            "Atributos iniciais do Hack mudaram.")
+    require(p["movimentos_proprios_nivel_1"]==5 and
+            p["distribuicao_numerica_por_origem"] is None,
+            "Não inventar distribuição numérica de movimentos entre origens.")
+    tabelas=p["modificadores"]
+    lookup={n:r["valor"] for r in tabelas for n in range(r["min"],r["max"]+1)}
+    require(set(lookup)==set(range(3,19)) and
+            [lookup[n] for n in p["valores_iniciais_para_distribuir"]]==[2,1,1,0,0,-1],
+            "Modificadores iniciais inconsistentes.")
+    pv=p["pv_maximos"]
+    require(all(pv["constante"]+pv["multiplicador_mod_con"]*x["mod_con"]==x["pv"]
+                for x in pv["exemplos"]), "A tabela de PV contraria a fórmula.")
+    require(p["carga"]["constante"]==8 and p["carga"]["multiplicador_mod_for"]==1,
+            "Carga deve ser 8 + mod. FOR.")
+    d=regras["debilidades"]
+    require(d["penalidade_modificador"]==-1 and d["altera_valor_bruto"] is False and
+            d["acumula_mesma_debilidade"] is False and
+            {x["atributo"] for x in d["tipos"]}==set(p["atributos"]),
+            "Debilidades não correspondem ao Hack.")
+    require([item["dado"] for item in regras["combate"]["dano_por_periculosidade"]]==
+            ["1d4","1d6","1d8","1d10","1d12"],
+            "Escala de Periculosidade diferente da fonte.")
+    evo=regras["evolucao"]
+    require(evo["limiar_xp"]["constante"]==7 and
+            evo["ganho_pontos_atributo"]==1 and evo["atributo_maximo"]==18,
+            "Evolução inconsistente com o documento.")
+    print("Núcleo DW: seis atributos, cinco movimentos iniciais, PV, Carga, "
+          "Periculosidade, Debilidades e XP validados sem presumir lacunas.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -821,6 +858,7 @@ def main():
     validar_terceira_auditoria_manuscrito()
     validar_quarta_auditoria_manuscrito()
     validar_integracao_movimentos_gerais()
+    validar_regras_nucleo_hack()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
