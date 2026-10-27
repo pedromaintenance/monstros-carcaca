@@ -764,6 +764,98 @@ def validar_regras_nucleo_hack():
           "Periculosidade, Debilidades e XP validados sem presumir lacunas.")
 
 
+def validar_integracao_personagens_hack():
+    """Confere ancoragem DOCX e preserva os REQUER sem autorizar jogabilidade."""
+    from collections import Counter
+    from hack_movimentos_personagem import build_people_indexes,build_class_indexes
+    povos=load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")
+    classes=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    fonte="b53d1d5a057e8f6cba8a5d5ccd70747df3ce94d07ff2e2ffb9031368ea773b3d"
+    require(povos["fonte_sha256"]==classes["fonte_sha256"]==fonte,
+            "Catálogos devem usar o mesmo DOCX auditado.")
+    race=povos["movimentos"]
+    cls=classes["movimentos"]
+    edges=classes["dependencias_exatas_candidatas"]
+    pending=classes["dependencias_nao_resolvidas"]
+    require(len(race)==107 and len({m["grupo"] for m in race})==18,
+            "Cobertura de povos deve preservar 107 movimentos de 18 grupos.")
+    require(len(cls)==632 and len({m["grupo"] for m in cls})==18,
+            "Cobertura preliminar de classes deve preservar 632 títulos de 18 grupos.")
+    unique(race,"movimentos de povos do DOCX")
+    ids=unique(cls,"títulos de classe do DOCX")
+    require(sum(len(x["opcoes"]) for x in race)==70,
+            "As opções em parágrafos separados devem ser preservadas.")
+    race_paras=set()
+    for m in race:
+        require(m["id"]=="movimento-povo:paragrafo-"+str(m["paragrafo_docx"]),
+                "ID de movimento de povo divergente do parágrafo.")
+        require(m["categoria"]=="povo" and m["estado"]=="transcricao_integral_sem_revisao_mecanica" and
+                m["aplicacao_canonica"] is False and m["requisito_literal"] is None,
+                "Movimentos de povo não podem ser aplicados ou ganhar REQUER por inferência.")
+        require(m["texto_original"]=="\\n".join(p["texto"] for p in m["partes"]),
+                "O texto integral deve ser a concatenação literal das partes do DOCX.")
+        require(m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"] and
+                m["partes"][0]["tipo"]=="corpo",
+                "Um movimento precisa começar no próprio parágrafo de origem.")
+        require(m["opcoes"]==[{ "paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+                 for p in m["partes"] if p["tipo"]=="opcao"],
+                "Opções dos movimentos não coincidem com List Paragraph.")
+        for part in m["partes"]:
+            require(part["paragrafo_docx"] not in race_paras,
+                    "Parágrafo de raça foi atribuído mais de uma vez.")
+            race_paras.add(part["paragrafo_docx"])
+    piloto=load("data/lore/hack-carcaca-dw-movimentos-integrais-piloto.json")["movimentos"]
+    por_para={m["paragrafo_docx"]:m for m in race}
+    for old in piloto:
+        new=por_para[old["paragrafo_docx"]]
+        require(new["titulo"]==old["titulo"] and
+                new["marcador_original"]==old["marcador_original"] and
+                new["partes"][0]["texto"]==old["texto_original"] and
+                new["opcoes"]==old["opcoes"],
+                "O piloto de 12 movimentos não pode sofrer regressão.")
+    require(sum(bool(m["requisito_literal"]) for m in cls)==270 and
+            len(edges)==256 and len(pending)==14,
+            "Integridade do inventário REQUER (256 candidatos + 14 não resolvidos).")
+    require(all(m["id"]=="movimento-classe:paragrafo-"+str(m["paragrafo_docx"])
+                and m["aplicacao_canonica"] is False
+                and m["texto_integral_curado"] is False
+                for m in cls),
+            "Títulos extraídos não são movimentos semanticamente revisados.")
+    requeridos={m["id"] for m in cls if m["requisito_literal"]}
+    cobertos=[e["origem_movimento_id"] for e in edges]+
+             [e["origem_movimento_id"] for e in pending]
+    require(set(cobertos)==requeridos and len(cobertos)==len(set(cobertos)),
+            "Todo REQUER deve aparecer uma única vez como candidato ou pendência.")
+    para_id={m["id"]:m for m in cls}
+    for e in edges:
+        require(e["origem_movimento_id"] in ids and e["requisito_movimento_id"] in ids,
+                "Referência quebrada no grafo de REQUER.")
+        origem=para_id[e["origem_movimento_id"]]
+        destino=para_id[e["requisito_movimento_id"]]
+        require(origem["requisito_literal"]==e["requisito_literal"] and
+                e["status"]=="vinculo_exato_a_confirmar" and
+                e["aplicacao_canonica"] is False and origem["grupo"]==destino["grupo"],
+                "Vínculos candidatos não podem criar permissões automáticas.")
+    for p in pending:
+        require(p["origem_movimento_id"] in ids and
+                para_id[p["origem_movimento_id"]]["requisito_literal"]==p["requisito_literal"] and
+                p["status"]=="exige_analise_editorial" and p["aplicacao_canonica"] is False,
+                "Pendências REQUER não podem ser resolvidas por aproximação.")
+    selecionados=load("data/lore/hack-carcaca-dw-movimentos-selecionados.json")["movimentos"]
+    por_paragrafo_classe={m["paragrafo_docx"]:m for m in cls}
+    for original in selecionados:
+        if original["categoria"]=="classe":
+            curado=por_paragrafo_classe[original["paragrafo_docx"]]
+            require(original["titulo"]==curado["titulo"] and
+                    original["requisito_literal"]==curado["requisito_literal"],
+                    "O inventário de 632 títulos conflita com a terceira auditoria.")
+    require(len(build_people_indexes(race)["by_grupo"])==18 and
+            len(build_class_indexes(cls,edges,pending)["by_grupo"])==18,
+            "Índices de povo/classe incompletos.")
+    print("6o ciclo: 107 movimentos integrais de 18 povos; 632 títulos de classe; "
+          "270 REQUER, dos quais 256 candidatos e 14 pendentes. Sem promoção canônica.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -859,6 +951,7 @@ def main():
     validar_quarta_auditoria_manuscrito()
     validar_integracao_movimentos_gerais()
     validar_regras_nucleo_hack()
+    validar_integracao_personagens_hack()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
