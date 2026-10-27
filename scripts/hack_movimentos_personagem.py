@@ -161,3 +161,15 @@ def build_martial_artist_indexes(movements):
       "by_requisito_id":ordered_index(movements,required_ids),
       "by_titulo":ordered_index(movements,lambda m:[m["titulo"]]),
     }
+
+def build_paladin_indexes(moves):
+    """REQUER e concessoes sao relacoes distintas; nenhuma e aplicada."""
+    return {
+        "by_requisito_tipo":ordered_index(moves,lambda m:[(m["requisito_estruturado"] or {}).get("tipo","nenhum")]),
+        "by_tem_requer":ordered_index(moves,lambda m:["sim" if m["requisito_literal"] else "nao"]),
+        "by_tem_opcoes":ordered_index(moves,lambda m:["sim" if m["opcoes"] else "nao"]),
+        "by_paragrafo":ordered_index(moves,lambda m:[m["paragrafo_docx"]]),
+        "by_titulo":ordered_index(moves,lambda m:[m["titulo"]]),
+        "by_requisito_id":ordered_index(moves,lambda m:[(m["requisito_estruturado"] or {}).get("movimento_id")]),
+        "by_movimento_concedido":ordered_index(moves,lambda m:[g["movimento_id"] for g in m["concessoes_gratuitas_literais"]])
+    }

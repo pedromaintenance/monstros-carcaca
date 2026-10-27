@@ -303,3 +303,10 @@ As consultas `searchLoreRelations` e `searchSelectedMovements` permitem navegar 
 O repositório agora inclui **12 movimentos de povo com texto integral** (6 Humanos e 6 Orcs da Caatinga), incluindo quatro opções de *Saqueador da Caatinga* presentes em parágrafos separados. Um inventário adicional identifica **33 tabelas do DOCX**, das quais **21 são quadros gerais de movimentos e regras**, ainda sem transcrição integral.
 
 As buscas `searchCompletePilotMovements` e `searchDocxTables` acessam os novos JSON publicados em `dist/carcaca/`. Nenhuma habilidade altera automaticamente fichas ou cânone. [Relatório da quarta auditoria](docs/QUARTA_AUDITORIA_HACK_CARCACA_DW.md).
+
+
+## Classe Paladino — setimo grupo integral
+
+Integrados **28 movimentos** de PALADINO (47 opcoes, 83 trechos e 13 REQUER diretos). O atlas passa a cobrir **343 dos 632 movimentos de classe** (54,3%). MISSÃO SAGRADA concede livremente JURAMENTO QUEBRADO e PENITÊNCIA, mas **ambos continuam exigindo REQUER: Missão Sagrada**; nenhum efeito e atribuido automaticamente.
+
+Fonte versionada: `data/lore/hack-carcaca-dw-paladino-integrais.json.gz` (JSON comprimido, recuperavel por Python gzip). O JSON integral legivel e publicado em `dist/carcaca/hack-paladin-movements.json`, com indices em `dist/carcaca/hack-paladin-movement-indexes.json`.

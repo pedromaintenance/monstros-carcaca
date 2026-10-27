@@ -63,7 +63,9 @@ const fixtures={
     hack_bard_movements:"hack-bard-movements.json",
     hack_bard_movement_indexes:"hack-bard-movement-indexes.json",
     hack_martial_artist_movements:"hack-martial-artist-movements.json",
-    hack_martial_artist_movement_indexes:"hack-martial-artist-movement-indexes.json"}},
+    hack_martial_artist_movement_indexes:"hack-martial-artist-movement-indexes.json",
+    hack_paladin_movements:"hack-paladin-movements.json",
+    hack_paladin_movement_indexes:"hack-paladin-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -114,6 +116,28 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-paladin-movements.json":[
+    {id:"movimento-classe:paragrafo-1968",titulo:"MISSÃO SAGRADA",grupo:"PALADINO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],aplicacao_canonica:false,
+     texto_original:"Você também recebe livremente os movimentos Juramento Quebrado e Penitência.",
+     concessoes_gratuitas_literais:[
+       {movimento_id:"movimento-classe:paragrafo-1976",titulo:"JURAMENTO QUEBRADO",
+        requer_permanece_obrigatorio:true,aplicacao_automatica:false},
+       {movimento_id:"movimento-classe:paragrafo-1977",titulo:"PENITÊNCIA",
+        requer_permanece_obrigatorio:true,aplicacao_automatica:false}]},
+    {id:"movimento-classe:paragrafo-1976",titulo:"JURAMENTO QUEBRADO",grupo:"PALADINO",
+     requisito_literal:"Missão Sagrada",requisito_estruturado:{
+       tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1968"},
+     opcoes:[],concessoes_gratuitas_literais:[],texto_original:"Quando quebrar um juramento.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1977",titulo:"PENITÊNCIA",grupo:"PALADINO",
+     requisito_literal:"Missão Sagrada",requisito_estruturado:{
+       tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1968"},
+     opcoes:[],concessoes_gratuitas_literais:[],texto_original:"Quando reparar o juramento.",aplicacao_canonica:false}
+  ],
+  "hack-paladin-movement-indexes.json":{
+    by_tem_requer:{sim:["movimento-classe:paragrafo-1976","movimento-classe:paragrafo-1977"]},
+    by_movimento_concedido:{"movimento-classe:paragrafo-1976":["movimento-classe:paragrafo-1968"],
+      "movimento-classe:paragrafo-1977":["movimento-classe:paragrafo-1968"]}},
   "hack-martial-artist-movements.json":[
     {id:"movimento-classe:paragrafo-1862",titulo:"CORPO VAZIO",grupo:"ARTISTA MARCIAL",
      requisito_literal:null,requisito_estruturado:null,opcoes:[],
@@ -1502,4 +1526,32 @@ test("Artista Marcial exige Forma do Ar E Corpo Sem Peso para VOO sem aquisiçã
   assert.equal(await atlas.getMartialArtistRequirementPreview("nada"),null);
   await assert.rejects(()=>atlas.getMartialArtistRequirementPreview(id,{
     movimentosPossuidos:"não é array"}),TypeError);
+});
+
+
+
+test("Paladino concede dois movimentos gratuitamente sem dispensar REQUER",async()=>{
+  const all=await atlas.getPaladinMovements();
+  assert.equal(all.length,3);
+  const origem=await atlas.getPaladinMovement("movimento-classe:paragrafo-1968");
+  assert.equal(origem.concessoes_gratuitas_literais.length,2);
+  assert.equal((await atlas.searchPaladinMovements({comConcessoes:true})).length,1);
+  assert.equal((await atlas.searchPaladinMovements({comRequer:true})).length,2);
+  assert.equal((await atlas.searchPaladinMovements({query:"livremente"})).length,1);
+  assert.equal((await atlas.getPaladinMovementIndexes()).by_tem_requer.sim.length,2);
+  const juramento="movimento-classe:paragrafo-1976";
+  const ausente=await atlas.getPaladinRequirementPreview(juramento);
+  assert.equal(ausente.verificacao_estrutural,"componente_ausente");
+  assert.equal(ausente.habilitado_para_compra,null);
+  const presente=await atlas.getPaladinRequirementPreview(juramento,{
+    movimentosPossuidos:[origem.id]});
+  assert.equal(presente.verificacao_estrutural,"componente_identificado_presente");
+  assert.equal(presente.aplicacao_canonica,false);
+  const grants=await atlas.getPaladinGrantPreview(origem.id,{movimentosPossuidos:[origem.id]});
+  assert.equal(grants.concessoes.length,2);
+  assert.ok(grants.concessoes.every(x=>x.requer_permanece_obrigatorio&&
+    x.atribuicao_automatica===false&&x.habilitado_para_compra===null));
+  assert.equal(await atlas.getPaladinGrantPreview("movimento-classe:paragrafo-9999"),null);
+  await assert.rejects(()=>atlas.getPaladinRequirementPreview(juramento,{
+    movimentosPossuidos:"invalido"}),TypeError);
 });

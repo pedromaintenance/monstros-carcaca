@@ -2,6 +2,7 @@
 """Validação da curadoria autoral; cruza referências e não altera dados."""
 from __future__ import annotations
 import json
+import gzip
 from pathlib import Path
 from jsonschema import Draft202012Validator
 
@@ -1392,6 +1393,84 @@ def validar_artista_marcial_integral():
     print("Artista Marcial: 42 movimentos, 54 opções, 101 partes; "
           "18 REQUER diretos e VOO composto. Sem promoção canônica.")
 
+
+def validar_paladino_integral():
+    """Preserva movimentos, REQUER e concessoes gratuitas sem homologacao."""
+    from hack_movimentos_personagem import build_paladin_indexes
+    obj=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-paladino-integrais.json.gz").read_bytes()).decode("utf-8"))
+    inv=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(obj["fonte_sha256"]==inv["fonte_sha256"] and obj["grupo"]=="PALADINO",
+            "Fonte Paladino divergente.")
+    moves=obj["movimentos"]
+    listed={m["id"]:m for m in inv["movimentos"] if m["grupo"]=="PALADINO"}
+    require(len(moves)==len(listed)==28 and len(unique(moves,"paladino"))==28,"Faltam movimentos Paladino.")
+    require(moves[0]["paragrafo_docx"]==1968 and moves[-1]["paragrafo_docx"]==2048,
+            "Ancoras Paladino deslocadas.")
+    expected={"total_movimentos":28,"total_com_requer":13,
+              "total_vinculos_exatos":13,"total_opcoes":47,"total_partes":83,
+              "total_concessoes_gratuitas_literais":2}
+    require(obj["integridade"]==expected,"Contagens de Paladino alteradas.")
+    by_id={m["id"]:m for m in moves}
+    parts_seen=set();edges={}
+    for m in moves:
+        old=listed.get(m["id"])
+        require(old is not None and m["titulo"]==old["titulo"] and
+                m["requisito_literal"]==old["requisito_literal"] and
+                m["paragrafo_docx"]==old["paragrafo_docx"],
+                "Titulo/REQUER do Paladino divergente.")
+        require(m["texto_integral_conferido"] is True and
+                m["aplicacao_canonica"] is False and
+                m["estado"]=="transcricao_integral_sem_revisao_mecanica",
+                "Sem promocao canonica.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
+                "Texto original desconectado.")
+        require(m["opcoes"]==[
+          {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+          for p in m["partes"] if p["tipo"]=="opcao"],"Opcoes truncadas.")
+        require(m["partes"][0]["tipo"]=="corpo" and
+                m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"],
+                "Corpo sem origem.")
+        for part in m["partes"]:
+            require(part["paragrafo_docx"] not in parts_seen and part["texto"],
+                    "Parte repetida/vazia.")
+            parts_seen.add(part["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),"REQUER divergente.")
+        if req:
+            require(req["tipo"]=="movimento_exato" and req["movimento_id"] in listed
+                    and req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao"
+                    and req["titulo_requerido"]==by_id[req["movimento_id"]]["titulo"],
+                    "Alvo de REQUER invalido.")
+            edges[m["id"]]=req["movimento_id"]
+        grants=m["concessoes_gratuitas_literais"]
+        if m["titulo"]=="MISSÃO SAGRADA":
+            require([x["titulo"] for x in grants]==["JURAMENTO QUEBRADO","PENITÊNCIA"],
+                    "Concessoes livres ausentes.")
+            require("Você também recebe livremente os movimentos Juramento Quebrado e Penitência." in m["texto_original"],
+                    "Literal de concessao ausente.")
+            for x in grants:
+                require(x["requer_permanece_obrigatorio"] is True and
+                        x["aplicacao_automatica"] is False and
+                        by_id[x["movimento_id"]]["requisito_estruturado"]["movimento_id"]==m["id"],
+                        "Movimento gratuito nao pode dispensar REQUER.")
+        else:
+            require(not grants,"Concessao inventada.")
+    require(len(parts_seen)==83 and sum(len(m["opcoes"]) for m in moves)==47
+            and len(edges)==13,"Partes/opcoes/dependencias incompletas.")
+    for start in edges:
+        seen={start};at=start
+        while at in edges:
+            at=edges[at]
+            require(at not in seen,"Ciclo de REQUER.")
+            seen.add(at)
+    ix=build_paladin_indexes(moves)
+    require(len(ix["by_tem_requer"]["sim"])==13 and
+            ix["by_movimento_concedido"]["movimento-classe:paragrafo-1976"]==
+            ["movimento-classe:paragrafo-1968"] and
+            ix["by_movimento_concedido"]["movimento-classe:paragrafo-1977"]==
+            ["movimento-classe:paragrafo-1968"],"Indices de Paladino inconsistentes.")
+    print("Paladino: 28 movimentos, 47 opcoes, 83 partes, 13 REQUER, 2 concessoes livres.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1494,6 +1573,7 @@ def main():
     validar_ladino_integral()
     validar_bardo_integral()
     validar_artista_marcial_integral()
+    validar_paladino_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

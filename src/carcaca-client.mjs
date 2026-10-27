@@ -60,6 +60,44 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getPaladinMovements(){return byKey("hack_paladin_movements");}
+  async function getPaladinMovementIndexes(){return byKey("hack_paladin_movement_indexes");}
+  async function getPaladinMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    return (await getPaladinMovements()).find(m=>m.id===id)??null;
+  }
+  async function searchPaladinMovements({titulo,query,requer,comRequer,comOpcoes,comConcessoes}={}){
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase();
+    return (await getPaladinMovements()).filter(m=>
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (!requer||norm(m.requisito_literal).includes(norm(requer)))&&
+      (comRequer===undefined||Boolean(m.requisito_literal)===comRequer)&&
+      (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
+      (comConcessoes===undefined||(m.concessoes_gratuitas_literais.length>0)===comConcessoes));
+  }
+  async function getPaladinRequirementPreview(id,{movimentosPossuidos=[]}={}){
+    if(!Array.isArray(movimentosPossuidos))throw new TypeError("movimentosPossuidos deve ser array");
+    const m=await getPaladinMovement(id);if(!m)return null;
+    const req=m.requisito_estruturado;
+    const presente=req?movimentosPossuidos.includes(req.movimento_id):null;
+    return {movimento_id:id,requisito_literal:m.requisito_literal,
+      requisito_estruturado:req,componente_requerido:req?.movimento_id??null,
+      componente_identificado_presente:presente,
+      verificacao_estrutural:!req?"sem_requer_literal":
+        presente?"componente_identificado_presente":"componente_ausente",
+      habilitado_para_compra:null,necessita_avaliacao_do_mestre:true,aplicacao_canonica:false,
+      observacao:"REQUER permanece obrigatorio, mesmo em concessao gratuita."};
+  }
+  async function getPaladinGrantPreview(id,{movimentosPossuidos=[]}={}){
+    if(!Array.isArray(movimentosPossuidos))throw new TypeError("movimentosPossuidos deve ser array");
+    const origem=await getPaladinMovement(id);if(!origem)return null;
+    return {origem_movimento_id:id,origem_identificada_presente:movimentosPossuidos.includes(id),
+      concessoes:origem.concessoes_gratuitas_literais.map(g=>({
+        ...g,pre_requisito_identificado_presente:movimentosPossuidos.includes(id),
+        atribuicao_automatica:false,habilitado_para_compra:null})),
+      aplicacao_canonica:false,observacao:"Concessao literal nao remove REQUER nem aplica efeitos."};
+  }
   async function getMartialArtistMovements(){return byKey("hack_martial_artist_movements");}
   async function getMartialArtistMovementIndexes(){return byKey("hack_martial_artist_movement_indexes");}
   async function getMartialArtistMovement(id){
@@ -570,6 +608,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getRogueMovements,getRogueMovement,getRogueMovementIndexes,searchRogueMovements,
           getBardMovements,getBardMovement,getBardMovementIndexes,searchBardMovements,
           getMartialArtistMovements,getMartialArtistMovement,getMartialArtistMovementIndexes,searchMartialArtistMovements,
+          getPaladinMovements,getPaladinMovement,getPaladinMovementIndexes,searchPaladinMovements,
+          getPaladinRequirementPreview,getPaladinGrantPreview,
           getBardRequirementPreview,
           getMartialArtistRequirementPreview,
           getRogueRequirementPreview,
