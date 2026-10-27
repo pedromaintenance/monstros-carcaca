@@ -270,12 +270,13 @@ def build():
     guerreiro_docx=load("data/lore/hack-carcaca-dw-guerreiro-integrais.json")["movimentos"]
     barbaro_docx=load("data/lore/hack-carcaca-dw-barbaro-integrais.json")["movimentos"]
     cacador_docx=load("data/lore/hack-carcaca-dw-cacador-integrais.json")["movimentos"]
+    ladino_docx=load("data/lore/hack-carcaca-dw-ladino-integrais.json")["movimentos"]
     dependencias_classes=classes_docx["dependencias_exatas_candidatas"]
     dependencias_pendentes=classes_docx["dependencias_nao_resolvidas"]
     try:
-        from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes
+        from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes
     except ModuleNotFoundError:
-        from hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes
+        from hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes
     regras_nucleo=load("data/lore/hack-carcaca-dw-regras-nucleo.json")
     quadros_integrais=load("data/lore/hack-carcaca-dw-quadros-integrais.json")
     movimentos_gerais=compilar_movimentos_gerais(quadros_integrais,docx_tables)
@@ -296,7 +297,8 @@ def build():
     guerreiro_por_id={m["id"]:m for m in guerreiro_docx}
     barbaro_por_id={m["id"]:m for m in barbaro_docx}
     cacador_por_id={m["id"]:m for m in cacador_docx}
-    integral_por_id={**guerreiro_por_id,**barbaro_por_id,**cacador_por_id}
+    ladino_por_id={m["id"]:m for m in ladino_docx}
+    integral_por_id={**guerreiro_por_id,**barbaro_por_id,**cacador_por_id,**ladino_por_id}
     classes_docx_piloto=[{**x,"revisao_preliminar_id":reviewed_paragraphs.get(x["paragrafo_docx"]),
                          "texto_integral_id":x["id"] if x["id"] in integral_por_id else None,
                          "texto_integral_disponivel":x["id"] in integral_por_id}
@@ -304,6 +306,7 @@ def build():
     indice_guerreiro_docx=build_warrior_indexes(guerreiro_docx)
     indice_barbaro_docx=build_barbarian_indexes(barbaro_docx)
     indice_cacador_docx=build_hunter_indexes(cacador_docx)
+    indice_ladino_docx=build_rogue_indexes(ladino_docx)
     indice_povos_docx=build_people_indexes(povos_docx)
     indice_classes_docx=build_class_indexes(classes_docx_piloto,dependencias_classes,dependencias_pendentes)
     complete_move_indexes={k:defaultdict(set) for k in ("by_grupo","by_marcador","by_preliminar")}
@@ -476,6 +479,8 @@ def build():
         "hack_barbarian_movement_indexes":"hack-barbarian-movement-indexes.json",
         "hack_hunter_movements":"hack-hunter-movements.json",
         "hack_hunter_movement_indexes":"hack-hunter-movement-indexes.json",
+        "hack_rogue_movements":"hack-rogue-movements.json",
+        "hack_rogue_movement_indexes":"hack-rogue-movement-indexes.json",
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
@@ -533,6 +538,9 @@ def build():
         "total_movimentos_cacador_integrais":len(cacador_docx),
         "total_opcoes_cacador":sum(len(m["opcoes"]) for m in cacador_docx),
         "total_requer_cacador":sum(bool(m["requisito_literal"]) for m in cacador_docx),
+        "total_movimentos_ladino_integrais":len(ladino_docx),
+        "total_opcoes_ladino":sum(len(m["opcoes"]) for m in ladino_docx),
+        "total_requer_ladino":sum(bool(m["requisito_literal"]) for m in ladino_docx),
         "total_rotulos_mecanicas_detectados":sum(len(p["rotulos_detectados"]) for p in mechanics_index["paginas_indice"]),
         "total_paginas_lore_manuscrito":len(lore_source["paginas"]),
         "total_eventos_cronologia_manuscrito":len(lore_timeline["eventos"]),
@@ -587,6 +595,8 @@ def build():
           files["hack_barbarian_movement_indexes"]:indice_barbaro_docx,
            files["hack_hunter_movements"]:cacador_docx,
            files["hack_hunter_movement_indexes"]:indice_cacador_docx,
+           files["hack_rogue_movements"]:ladino_docx,
+           files["hack_rogue_movement_indexes"]:indice_ladino_docx,
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,
