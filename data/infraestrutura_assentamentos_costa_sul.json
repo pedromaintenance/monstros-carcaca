@@ -28,7 +28,12 @@
             }
           ],
           "materiais_construtivos_confirmados": [],
-          "instalacoes_especificas_confirmadas": [],
+          "instalacoes_especificas_confirmadas": [
+            {
+              "instalacao": "Templo de Deméter (a estrutura existe; material construtivo não informado)",
+              "fonte": "ambientacao"
+            }
+          ],
           "problemas_em_aberto": [
             "Materiais e técnicas construtivas das moradias",
             "Número, formato e conservação dos edifícios",

@@ -275,6 +275,57 @@ def validar_capacidade_suporte(fontes):
     print(f"Suporte ecológico validado: {len(perfis)} perfis, "
           f"{len(perfis)*4} limites, zero medidas presumidas.")
 
+
+def validar_infraestrutura_costa_sul(fontes):
+    """Validação de evidência e de lacunas em infraestrutura material."""
+    schema=load("schemas/infraestrutura-assentamento.schema.json")
+    Draft202012Validator.check_schema(schema)
+    check=Draft202012Validator(schema)
+    perfis=load("data/infraestrutura_assentamentos_costa_sul.json")["perfis"]
+    assentamentos={a["id"]:a for a in gather("curadoria/assentamentos")}
+    suporte={a["id"]:a for a in load("data/capacidade_suporte_costa_sul.json")["perfis"]}
+    deps={d["id"]:d for d in load("data/dependencias_materiais_costa_sul.json")["dependencias"]}
+    names=("construcao_abrigo","armazenamento","saneamento","acessos_logistica")
+    unique(perfis,"perfis de infraestrutura")
+    require(len(perfis)==len(assentamentos),
+            "Infraestrutura da Costa Sul: registrar todas as entidades de habitação")
+    for row in perfis:
+        problems=list(check.iter_errors(row))
+        require(not problems,f"Schema de infraestrutura inválido: {row['id']}: {problems[:1]}")
+        aid=row["assentamento_id"]
+        require(aid in assentamentos,f"Assentamento de infraestrutura desconhecido: {row['id']}")
+        require(row["suporte_id"] in suporte,f"Suporte de infraestrutura inexistente: {row['id']}")
+        require(suporte[row["suporte_id"]]["assentamento_id"]==aid,
+                f"Perfil de suporte não pertence ao assentamento: {row['id']}")
+        require(row["natureza"]==assentamentos[aid]["natureza"],
+                f"Natureza de habitat incoerente: {row['id']}")
+        require(row["fonte"] in fontes,f"Fonte de infraestrutura inexistente: {row['id']}")
+        require(sorted(sector["id"] for sector in row["setores"])==sorted(names),
+                f"Setores de infraestrutura faltantes ou duplicados: {row['id']}")
+        for sector in row["setores"]:
+            anchors=sector["ancoras_documentadas"]
+            require(bool(anchors)==(sector["estado"]=="evidencia_parcial"),
+                    f"Estado sem correspondência com evidências: {row['id']} {sector['id']}")
+            require(sector["efeitos_dw_automaticos"] is False and
+                    sector["risco_narrativo_proposto"] is None,
+                    f"Infraestrutura não causa eventos automaticamente: {row['id']}")
+            for anchor in anchors:
+                require(anchor["fonte"] in fontes,
+                        f"Fonte de âncora inexistente: {row['id']}")
+            for kind in ("materiais_construtivos_confirmados","instalacoes_especificas_confirmadas"):
+                for material in sector[kind]:
+                    require(material["fonte"] in fontes,
+                            f"Fonte de construção/instalação inexistente: {row['id']}")
+                    require(bool(anchors),
+                            f"Infraestrutura específica sem âncora documental: {row['id']}")
+            for did in sector["dependencias_relacionadas"]:
+                require(did in deps,f"Dependência de infraestrutura desconhecida: {did}")
+                require(deps[did]["assentamento_id"]==aid,
+                        f"Relação entre assentamentos sem fluxo específico: {row['id']}")
+    print(f"Infraestrutura validada: {len(perfis)} perfis, "
+          f"{sum(len(x['setores']) for x in perfis)} setores, "
+          f"{sum(len(s['materiais_construtivos_confirmados']) for p in perfis for s in p['setores'])} materiais de construção conhecidos.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -359,6 +410,7 @@ def main():
     validar_dependencias_e_exemplos(fontes)
     validar_balancos_e_pressoes(fontes)
     validar_capacidade_suporte(fontes)
+    validar_infraestrutura_costa_sul(fontes)
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
