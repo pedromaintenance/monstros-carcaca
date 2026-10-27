@@ -1,0 +1,299 @@
+[
+  {
+    "id": "tabela-docx:0",
+    "tabela_docx_indice": 0,
+    "titulo": "Quadro narrativo: visão geral da Carcaça",
+    "tipo": "quadro_narrativo",
+    "titulo_editorial": true,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:1",
+    "tabela_docx_indice": 1,
+    "titulo": "Quadro narrativo: história e conflitos continentais",
+    "tipo": "quadro_narrativo",
+    "titulo_editorial": true,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:2",
+    "tabela_docx_indice": 2,
+    "titulo": "Quadro narrativo: geografia da Garganta",
+    "tipo": "quadro_narrativo",
+    "titulo_editorial": true,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:3",
+    "tabela_docx_indice": 3,
+    "titulo": "O ANTIGO POVO YOKAI",
+    "tipo": "quadro_narrativo",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:4",
+    "tabela_docx_indice": 4,
+    "titulo": "Quadro narrativo: Rio Ancestral",
+    "tipo": "quadro_narrativo",
+    "titulo_editorial": true,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:5",
+    "tabela_docx_indice": 5,
+    "titulo": "Quadro narrativo: águas corrompidas",
+    "tipo": "quadro_narrativo",
+    "titulo_editorial": true,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:6",
+    "tabela_docx_indice": 6,
+    "titulo": "O TEMPLO DO CREPÚSCULO",
+    "tipo": "quadro_narrativo",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:7",
+    "tabela_docx_indice": 7,
+    "titulo": "A CASA SHAYR",
+    "tipo": "quadro_narrativo",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:8",
+    "tabela_docx_indice": 8,
+    "titulo": "SHADAR-RIVERIE",
+    "tipo": "quadro_narrativo",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:9",
+    "tabela_docx_indice": 9,
+    "titulo": "A RESISTÊNCIA",
+    "tipo": "quadro_narrativo",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:10",
+    "tabela_docx_indice": 10,
+    "titulo": "Valor / Modificador",
+    "tipo": "tabela_numerica",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:11",
+    "tabela_docx_indice": 11,
+    "titulo": "CON / PV",
+    "tipo": "tabela_numerica",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:12",
+    "tabela_docx_indice": 12,
+    "titulo": "MATAR E PILHAR",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:13",
+    "tabela_docx_indice": 13,
+    "titulo": "DISPARAR",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:14",
+    "tabela_docx_indice": 14,
+    "titulo": "DESAFIAR O PERIGO",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:15",
+    "tabela_docx_indice": 15,
+    "titulo": "DEFENDER",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:16",
+    "tabela_docx_indice": 16,
+    "titulo": "FALAR DIFÍCIL",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:17",
+    "tabela_docx_indice": 17,
+    "titulo": "DISCERNIR REALIDADES",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:18",
+    "tabela_docx_indice": 18,
+    "titulo": "NEGOCIAR",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:19",
+    "tabela_docx_indice": 19,
+    "titulo": "AJUDAR OU INTERFERIR",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:20",
+    "tabela_docx_indice": 20,
+    "titulo": "ÚLTIMO SUSPIRO",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:21",
+    "tabela_docx_indice": 21,
+    "titulo": "SOBRECARGA",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:22",
+    "tabela_docx_indice": 22,
+    "titulo": "PREPARAR ACAMPAMENTO",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:23",
+    "tabela_docx_indice": 23,
+    "titulo": "MONTAR GUARDA",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:24",
+    "tabela_docx_indice": 24,
+    "titulo": "EMPREENDER UMA JORNADA PERIGOSA",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:25",
+    "tabela_docx_indice": 25,
+    "titulo": "ENCERRAR SESSÃO",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:26",
+    "tabela_docx_indice": 26,
+    "titulo": "AVANÇAR DE NÍVEL",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:27",
+    "tabela_docx_indice": 27,
+    "titulo": "FARREAR",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:28",
+    "tabela_docx_indice": 28,
+    "titulo": "ABASTECER",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:29",
+    "tabela_docx_indice": 29,
+    "titulo": "RECUPERAR-SE",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:30",
+    "tabela_docx_indice": 30,
+    "titulo": "RECRUTAR",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:31",
+    "tabela_docx_indice": 31,
+    "titulo": "PREPARAR",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "tabela-docx:32",
+    "tabela_docx_indice": 32,
+    "titulo": "SERVOS",
+    "tipo": "quadro_movimento_geral",
+    "titulo_editorial": false,
+    "texto_integral_curado": false,
+    "aplicacao_canonica": false
+  }
+]

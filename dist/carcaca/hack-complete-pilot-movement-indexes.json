@@ -1,0 +1,53 @@
+{
+  "by_grupo": {
+    "HUMANOS": [
+      "movimento-integral:paragrafo-827",
+      "movimento-integral:paragrafo-828",
+      "movimento-integral:paragrafo-829",
+      "movimento-integral:paragrafo-830",
+      "movimento-integral:paragrafo-831",
+      "movimento-integral:paragrafo-832"
+    ],
+    "ORCS DA CAATINGA": [
+      "movimento-integral:paragrafo-834",
+      "movimento-integral:paragrafo-835",
+      "movimento-integral:paragrafo-836",
+      "movimento-integral:paragrafo-837",
+      "movimento-integral:paragrafo-842",
+      "movimento-integral:paragrafo-843"
+    ]
+  },
+  "by_marcador": {
+    "Corpo": [
+      "movimento-integral:paragrafo-836"
+    ],
+    "Corpo/Cultura": [
+      "movimento-integral:paragrafo-834"
+    ],
+    "Cultura": [
+      "movimento-integral:paragrafo-827",
+      "movimento-integral:paragrafo-828",
+      "movimento-integral:paragrafo-829",
+      "movimento-integral:paragrafo-830",
+      "movimento-integral:paragrafo-831",
+      "movimento-integral:paragrafo-832",
+      "movimento-integral:paragrafo-837",
+      "movimento-integral:paragrafo-842",
+      "movimento-integral:paragrafo-843"
+    ],
+    "Memória Cultural": [
+      "movimento-integral:paragrafo-835"
+    ]
+  },
+  "by_preliminar": {
+    "movimento-revisado:paragrafo-827": [
+      "movimento-integral:paragrafo-827"
+    ],
+    "movimento-revisado:paragrafo-829": [
+      "movimento-integral:paragrafo-829"
+    ],
+    "movimento-revisado:paragrafo-835": [
+      "movimento-integral:paragrafo-835"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "by_tipo": {
+    "quadro_movimento_geral": [
+      "tabela-docx:12",
+      "tabela-docx:13",
+      "tabela-docx:14",
+      "tabela-docx:15",
+      "tabela-docx:16",
+      "tabela-docx:17",
+      "tabela-docx:18",
+      "tabela-docx:19",
+      "tabela-docx:20",
+      "tabela-docx:21",
+      "tabela-docx:22",
+      "tabela-docx:23",
+      "tabela-docx:24",
+      "tabela-docx:25",
+      "tabela-docx:26",
+      "tabela-docx:27",
+      "tabela-docx:28",
+      "tabela-docx:29",
+      "tabela-docx:30",
+      "tabela-docx:31",
+      "tabela-docx:32"
+    ],
+    "quadro_narrativo": [
+      "tabela-docx:0",
+      "tabela-docx:1",
+      "tabela-docx:2",
+      "tabela-docx:3",
+      "tabela-docx:4",
+      "tabela-docx:5",
+      "tabela-docx:6",
+      "tabela-docx:7",
+      "tabela-docx:8",
+      "tabela-docx:9"
+    ],
+    "tabela_numerica": [
+      "tabela-docx:10",
+      "tabela-docx:11"
+    ]
+  }
+}
