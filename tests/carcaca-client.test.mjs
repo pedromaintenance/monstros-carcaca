@@ -3,6 +3,7 @@ import assert from "node:assert/strict";
 import {createCarcacaAtlas, previewSettlementScenario,previewMaterialInterruption} from "../src/carcaca-client.mjs";
 import {createCampaignLedger,recordCampaignEvent,getCampaignEvents} from "../src/carcaca-campaign-state.mjs";
 import {previewMaterialBalance,BALANCE_FIELDS} from "../src/carcaca-material-balance.mjs";
+import {previewSupportCapacity,previewPopulationFlow,SUPPORT_LIMITS} from "../src/carcaca-support-capacity.mjs";
 
 const fixtures={
   "manifest.json":{arquivos:{catalog:"catalog.json",creatures:"creatures.json",
@@ -13,7 +14,8 @@ const fixtures={
     material_dependencies:"material-dependencies.json",
     material_dependency_indexes:"material-dependency-indexes.json",
     material_balances:"material-balances.json",material_balance_indexes:"material-balance-indexes.json",
-    ecological_pressures:"ecological-pressures.json",ecological_pressure_indexes:"ecological-pressure-indexes.json"}},
+    ecological_pressures:"ecological-pressures.json",ecological_pressure_indexes:"ecological-pressure-indexes.json",
+    support_profiles:"support-profiles.json",support_indexes:"support-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -74,6 +76,19 @@ const fixtures={
      estado:"risco_hipotetico_nao_ocorrido",efeito_dw_automatico:false,evento_campanha_id:null}
   ],
   "ecological-pressure-indexes.json":{by_dependencia:{"dependencia:purificar":["pressao:falha"]}},
+  "support-profiles.json":[
+    {id:"suporte:portomonte",assentamento_id:"assentamento:portomonte",
+     natureza_territorial:"assentamento_civil",
+     limites:["agua_potavel","alimentacao","abrigo","residuos"].map(id=>({
+       id,disponibilidade:{valor:null,unidade:null,periodo:null,origem_medicao:null},
+       necessidade_por_habitante:{valor:null,unidade:null,periodo:null,origem_medicao:null}})),
+     demografia:{residentes:{valor:null,unidade:null,periodo:null,origem_medicao:null},
+                 nascimentos:{valor:null,unidade:null,periodo:null,origem_medicao:null},
+                 obitos:{valor:null,unidade:null,periodo:null,origem_medicao:null},
+                 migracao_entrada:{valor:null,unidade:null,periodo:null,origem_medicao:null},
+                 migracao_saida:{valor:null,unidade:null,periodo:null,origem_medicao:null}}}
+  ],
+  "support-indexes.json":{by_assentamento:{"assentamento:portomonte":["suporte:portomonte"]}},
   "settlement-scenarios.json":[
     {id:"cenario:teste",estado:"hipotese_nao_acontecida",mutacao_canonica:false,
      movimento_dw:"Want",assentamentos:["assentamento:portomonte"],
@@ -259,4 +274,100 @@ test("saldo recusa misturar unidades ou períodos e não equaciona recursos desc
   const missingOrigin={...valid,consumo:{...valid.consumo,origem_medicao:null}};
   assert.equal(previewMaterialBalance(water,{medidas:missingOrigin}).motivo,"dados_insuficientes");
   assert.throws(()=>previewMaterialBalance(water,{modo:"alterar_canon"}),TypeError);
+});
+
+test("perfis de suporte consultáveis preservam água potável e reprodução desconhecidas",async()=>{
+  const [p]=await atlas.searchSupportProfiles({assentamentoId:"assentamento:portomonte"});
+  assert.equal(p.id,"suporte:portomonte");
+  assert.equal(p.limites[0].disponibilidade.valor,null);
+  assert.equal(p.limites.length,4);
+  assert.equal((await atlas.getSupportProfile("suporte:portomonte")).id,p.id);
+  assert.equal(await atlas.getSupportProfile("suporte:ausente"),null);
+  assert.equal((await atlas.getSupportIndexes()).by_assentamento["assentamento:portomonte"].length,1);
+});
+test("não calcular capacidade de suporte a partir de vazios nem de premissas implícitas",async()=>{
+  const p=(await atlas.getSupportProfiles())[0];
+  const before=JSON.stringify(p);
+  const noPremise=previewSupportCapacity(p);
+  assert.equal(noPremise.calculavel,false);
+  assert.equal(noPremise.motivo,"premissas_nao_confirmadas");
+  const missing=previewSupportCapacity(p,{premissasExplicitas:true});
+  assert.equal(missing.calculavel,false);
+  assert.equal(missing.motivo,"dados_insuficientes");
+  assert.equal(missing.pendentes.length,4);
+  assert.equal(JSON.stringify(p),before);
+  assert.deepEqual(missing.efeitos_dw_aplicados,[]);
+});
+test("simulação explícita encontra limite restritivo sem reclassificar DW",async()=>{
+  const p=(await atlas.getSupportProfiles())[0];
+  const make=(v,u)=>({valor:v,unidade:u,periodo:"ciclo-ficticio-01",
+                         origem_medicao:"hipotese_de_teste"});
+  const limits={
+    agua_potavel:{disponibilidade:make(1000,"litro"),necessidade_por_habitante:make(2,"litro"),
+                  recurso_especificado:"água potável hipotética",adequacao_confirmada:true},
+    alimentacao:{disponibilidade:make(600,"racao"),necessidade_por_habitante:make(3,"racao"),
+                 recurso_especificado:"ração nutricional hipotética",adequacao_confirmada:true},
+    abrigo:{disponibilidade:make(250,"vaga"),necessidade_por_habitante:make(1,"vaga"),
+            recurso_especificado:"vaga habitável hipotética",adequacao_confirmada:true},
+    residuos:{disponibilidade:make(400,"kg"),necessidade_por_habitante:make(2,"kg"),
+              recurso_especificado:"tratamento hipotético de resíduos",adequacao_confirmada:true}
+  };
+  const original=JSON.stringify(p);
+  const result=previewSupportCapacity(p,{dimensoes:limits,premissasExplicitas:true,
+    populacao:make(190,"pessoa")});
+  assert.equal(result.calculavel,true);
+  assert.equal(result.capacidade_teorica,200);
+  assert.deepEqual(result.limites_restritivos,["alimentacao","residuos"]);
+  assert.equal(result.excede_capacidade,false);
+  assert.equal(result.mutacao_canonica,false);
+  assert.equal(JSON.stringify(p),original);
+  const overflow=previewSupportCapacity(p,{dimensoes:limits,premissasExplicitas:true,
+    populacao:make(205,"pessoa")});
+  assert.equal(overflow.excede_capacidade,true);
+  assert.equal(overflow.efeitos_dw_aplicados.length,0);
+  assert.equal(SUPPORT_LIMITS.length,4);
+});
+test("unidades, intervalos, adequação e fonte da simulação precisam coincidir",async()=>{
+  const p=(await atlas.getSupportProfiles())[0];
+  const measure=(n,u="kg",periodo="p1")=>({
+    valor:n,unidade:u,periodo,origem_medicao:"ficticio"});
+  const all=Object.fromEntries(SUPPORT_LIMITS.map(id=>[id,{
+    disponibilidade:measure(100),necessidade_por_habitante:measure(2),
+    adequacao_confirmada:true,recurso_especificado:"recurso fictício "+id
+  }]));
+  const f=(input)=>previewSupportCapacity(p,{dimensoes:input,premissasExplicitas:true});
+  const base=f(all);assert.equal(base.capacidade_teorica,50);
+  const units=structuredClone(all);units.alimentacao.necessidade_por_habitante.unidade="litro";
+  assert.equal(f(units).motivo,"unidade_ou_periodo_incompativel");
+  const periods=structuredClone(all);periods.residuos.disponibilidade.periodo="p2";
+  periods.residuos.necessidade_por_habitante.periodo="p2";
+  assert.equal(f(periods).motivo,"periodos_entre_dimensoes_incompativeis");
+  const source=structuredClone(all);source.agua_potavel.disponibilidade.origem_medicao=null;
+  assert.equal(f(source).motivo,"dados_insuficientes");
+  const qual=structuredClone(all);qual.agua_potavel.adequacao_confirmada=false;
+  assert.equal(f(qual).motivo,"dados_insuficientes");
+  const demand=structuredClone(all);demand.alimentacao.necessidade_por_habitante.valor=0;
+  assert.equal(f(demand).motivo,"dados_insuficientes");
+  assert.throws(()=>previewSupportCapacity(p,{modo:"alterar_canon"}),TypeError);
+});
+test("demografia não transforma viagem sazonal em migração sem números",async()=>{
+  const p=(await atlas.getSupportProfiles())[0];
+  const noData=previewPopulationFlow(p,{premissasExplicitas:true});
+  assert.equal(noData.calculavel,false);
+  assert.equal(noData.faltantes.length,5);
+  const make=n=>({valor:n,unidade:"pessoa",periodo:"p1",origem_medicao:"hipotese_ficticia"});
+  const med={
+    residentes:make(100),nascimentos:make(3),obitos:make(1),
+    migracao_entrada:make(5),migracao_saida:make(2)
+  };
+  const before=JSON.stringify(p);
+  const result=previewPopulationFlow(p,{medidas:med,premissasExplicitas:true});
+  assert.equal(result.calculavel,true);
+  assert.equal(result.populacao_final_hipotetica,105);
+  assert.equal(result.migracao_liquida,3);
+  assert.equal(JSON.stringify(p),before);
+  const period=structuredClone(med);period.migracao_entrada.periodo="p2";
+  assert.equal(previewPopulationFlow(p,{medidas:period,premissasExplicitas:true}).motivo,"periodos_incompativeis");
+  const gone=structuredClone(med);gone.residentes.valor=0;gone.obitos.valor=10;
+  assert.equal(previewPopulationFlow(p,{medidas:gone,premissasExplicitas:true}).motivo,"populacao_inviavel");
 });
