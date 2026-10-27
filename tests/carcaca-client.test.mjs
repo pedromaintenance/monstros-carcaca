@@ -59,7 +59,9 @@ const fixtures={
     hack_hunter_movements:"hack-hunter-movements.json",
     hack_hunter_movement_indexes:"hack-hunter-movement-indexes.json",
     hack_rogue_movements:"hack-rogue-movements.json",
-    hack_rogue_movement_indexes:"hack-rogue-movement-indexes.json"}},
+    hack_rogue_movement_indexes:"hack-rogue-movement-indexes.json",
+    hack_bard_movements:"hack-bard-movements.json",
+    hack_bard_movement_indexes:"hack-bard-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -110,6 +112,35 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-bard-movements.json":[
+    {id:"movimento-classe:paragrafo-1753",titulo:"ARTE ARCANA",grupo:"BARDO",
+     requisito_literal:null,requisito_estruturado:null,
+     texto_original:"Quando incorporar magia à sua performance, role+CAR.",
+     opcoes:[{paragrafo_docx:1754,texto:"curar ou aliviar;"}],aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1798",titulo:"INSPIRAÇÃO BÁRDICA",grupo:"BARDO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Quando dedicar uma performance a alguém.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1799",titulo:"INSPIRAÇÃO CONTAGIOSA",grupo:"BARDO",
+     requisito_literal:"Inspiração Bárdica",
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1798"},
+     opcoes:[],texto_original:"Uma vez por cena, quando alguém gastar Inspiração.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1816",titulo:"CANÇÃO DA CRIAÇÃO",grupo:"BARDO",
+     requisito_literal:null,requisito_estruturado:null,
+     texto_original:"Quando dar forma ao mundo por sua música.",opcoes:[],aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1843",titulo:"A CANÇÃO QUE FEZ O MUNDO",grupo:"BARDO",
+     requisito_literal:"Arte Arcana e dois outros Movimentos de Bardo",
+     requisito_estruturado:{tipo:"todos",operador_literal:"e",itens:[
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1753"},
+       {tipo:"quantidade_movimentos_grupo",grupo:"BARDO",quantidade_minima:2,
+        excluir_movimentos_ids:["movimento-classe:paragrafo-1753","movimento-classe:paragrafo-1843"]}
+     ]},opcoes:[],
+     texto_original:"Uma vez por sessão, quando concluir uma performance impossível.",aplicacao_canonica:false}
+  ],
+  "hack-bard-movement-indexes.json":{
+    by_requisito_tipo:{movimento_exato:["movimento-classe:paragrafo-1799"],
+                       todos:["movimento-classe:paragrafo-1843"]},
+    by_quantidade_minima_grupo:{"BARDO:2":["movimento-classe:paragrafo-1843"]}
+  },
   "hack-rogue-movements.json":[
     {id:"movimento-classe:paragrafo-1593",titulo:"TRUQUES DO OFÍCIO",grupo:"LADINO",
      requisito_literal:null,requisito_estruturado:null,opcoes:[],
@@ -1363,4 +1394,47 @@ test("Ladino preserva REQUER OU, referências sem alvo e impede aquisição auto
   assert.equal(await atlas.getRogueRequirementPreview("nao-existe"),null);
   await assert.rejects(()=>atlas.getRogueRequirementPreview("movimento-classe:paragrafo-1724",{
     movimentosPossuidos:"fora-de-formato"}),TypeError);
+});
+
+test("Bardo verifica Arte Arcana e dois OUTROS movimentos, sem contagem duplicada",async()=>{
+  const rows=await atlas.getBardMovements();
+  assert.equal(rows.length,5);
+  assert.equal((await atlas.searchBardMovements({tipoRequisito:"todos"}))[0].titulo,
+               "A CANÇÃO QUE FEZ O MUNDO");
+  assert.equal((await atlas.searchBardMovements({comOpcoes:true}))[0].titulo,"ARTE ARCANA");
+  assert.equal((await atlas.searchBardMovements({requer:"inspiração"}))[0].titulo,"INSPIRAÇÃO CONTAGIOSA");
+  assert.equal((await atlas.getBardMovement("movimento-classe:paragrafo-1753")).titulo,"ARTE ARCANA");
+  assert.equal(await atlas.getBardMovement("movimento-classe:paragrafo-8888"),null);
+  const ix=await atlas.getBardMovementIndexes();
+  assert.deepEqual(ix.by_quantidade_minima_grupo["BARDO:2"],["movimento-classe:paragrafo-1843"]);
+  const required="movimento-classe:paragrafo-1843";
+  let missing=await atlas.getBardRequirementPreview(required);
+  assert.equal(missing.verificacao_estrutural,"arte_arcana_ausente");
+  assert.equal(missing.habilitado_para_compra,null);
+  let arteOnly=await atlas.getBardRequirementPreview(required,{
+    movimentosPossuidos:["movimento-classe:paragrafo-1753","movimento-classe:paragrafo-1753",
+                         required,"movimento-classe:paragrafo-1047"]});
+  assert.equal(arteOnly.componentes[1].quantidade_presente,0);
+  assert.equal(arteOnly.verificacao_estrutural,"outros_movimentos_insuficientes");
+  let one=await atlas.getBardRequirementPreview(required,{movimentosPossuidos:[
+    "movimento-classe:paragrafo-1753","movimento-classe:paragrafo-1798",
+    "movimento-classe:paragrafo-1798"]});
+  assert.equal(one.componentes[1].quantidade_presente,1);
+  let twoNoArte=await atlas.getBardRequirementPreview(required,{movimentosPossuidos:[
+    "movimento-classe:paragrafo-1798","movimento-classe:paragrafo-1816"]});
+  assert.equal(twoNoArte.verificacao_estrutural,"arte_arcana_ausente");
+  let complete=await atlas.getBardRequirementPreview(required,{movimentosPossuidos:[
+    "movimento-classe:paragrafo-1753","movimento-classe:paragrafo-1798",
+    "movimento-classe:paragrafo-1816"]});
+  assert.equal(complete.verificacao_estrutural,"componentes_identificados_presentes");
+  assert.equal(complete.componentes[1].quantidade_presente,2);
+  assert.equal(complete.habilitado_para_compra,null);
+  assert.equal(complete.necessita_avaliacao_do_mestre,true);
+  assert.equal(complete.aplicacao_canonica,false);
+  let direto=await atlas.getBardRequirementPreview("movimento-classe:paragrafo-1799",{
+    movimentosPossuidos:["movimento-classe:paragrafo-1798"]});
+  assert.equal(direto.habilitado_para_compra,null);
+  assert.equal(await atlas.getBardRequirementPreview("movimento-classe:paragrafo-9999"),null);
+  await assert.rejects(()=>atlas.getBardRequirementPreview(required,{
+    movimentosPossuidos:"não é array"}),TypeError);
 });
