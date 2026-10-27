@@ -60,6 +60,63 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getHunterMovements(){return byKey("hack_hunter_movements");}
+  async function getHunterMovementIndexes(){return byKey("hack_hunter_movement_indexes");}
+  async function getHunterMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    return (await getHunterMovements()).find(m=>m.id===id)??null;
+  }
+  async function searchHunterMovements({titulo,query,requer,comRequer,comOpcoes,tipoRequisito,comCondicaoFiccional}={}){
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return (await getHunterMovements()).filter(m=>
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (!requer||norm(m.requisito_literal).includes(norm(requer)))&&
+      (comRequer===undefined||Boolean(m.requisito_literal)===comRequer)&&
+      (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
+      (!tipoRequisito||(m.requisito_estruturado?.tipo??"nenhum")===tipoRequisito)&&
+      (comCondicaoFiccional===undefined||m.requisito_estruturado?.itens?.some(
+        x=>x.tipo==="condicao_ficcional")===comCondicaoFiccional ||
+        (comCondicaoFiccional===false&&!m.requisito_estruturado?.itens?.some(
+        x=>x.tipo==="condicao_ficcional"))));
+  }
+  async function getHunterRequirementPreview(id,{movimentosPossuidos=[]}={}){
+    if(!Array.isArray(movimentosPossuidos)||!movimentosPossuidos.every(x=>typeof x==="string"))
+      throw new TypeError("movimentosPossuidos deve ser um array de identificadores");
+    const movimento=await getHunterMovement(id);
+    if(!movimento)return null;
+    const req=movimento.requisito_estruturado;
+    const itens=req?.tipo==="movimento_exato"?[req]:
+                ["todos","qualquer"].includes(req?.tipo)?req.itens:[];
+    const owned=new Set(movimentosPossuidos);
+    const verificacoes=itens.map(item=>item.tipo==="movimento_exato"?{
+      tipo:item.tipo,movimento_id:item.movimento_id,
+      presente_na_lista:owned.has(item.movimento_id),
+      comprovacao_ficcional:null
+    }:{
+      tipo:item.tipo,condicao_literal:item.texto_literal,
+      presente_na_lista:null,comprovacao_ficcional:"pendente_avaliacao"
+    });
+    const estados=verificacoes.filter(x=>x.tipo==="movimento_exato").map(x=>x.presente_na_lista);
+    let verificacaoEstrutural;
+    if(!req)verificacaoEstrutural="sem_requer_literal";
+    else if(req.tipo==="todos")verificacaoEstrutural=
+      estados.every(Boolean)&&verificacoes.every(x=>x.tipo==="movimento_exato")?
+      "componentes_identificados_presentes":"componentes_ausentes_ou_nao_comprovados";
+    else if(req.tipo==="qualquer")verificacaoEstrutural=
+      estados.some(Boolean)?"alternativa_de_movimento_presente":
+      verificacoes.some(x=>x.tipo==="condicao_ficcional")?
+      "alternativa_ficcional_pendente":"alternativas_identificadas_ausentes";
+    else verificacaoEstrutural=estados[0]?"componente_identificado_presente":"componente_ausente";
+    return {
+      movimento_id:id,requisito_literal:movimento.requisito_literal,
+      operador:req?.tipo??"nenhum",componentes:verificacoes,
+      verificacao_estrutural:verificacaoEstrutural,
+      habilitado_para_compra:null,necessita_avaliacao_do_mestre:true,
+      aplicacao_canonica:false,
+      observacao:"Prévia diagnóstica: REQUER nunca é dispensado; reconhecimento de títulos não equivale a homologação ou autorização de seleção."
+    };
+  }
   async function getBarbarianMovements(){return byKey("hack_barbarian_movements");}
   async function getBarbarianMovementIndexes(){return byKey("hack_barbarian_movement_indexes");}
   async function getBarbarianMovement(id){
@@ -378,6 +435,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getPeopleMovements,getPeopleMovement,getPeopleMovementIndexes,searchPeopleMovements,
           getClassMovementInventory,getClassMovement,getClassMovementIndexes,searchClassMovements,
           getWarriorMovements,getWarriorMovement,getWarriorMovementIndexes,searchWarriorMovements,
+          getHunterMovements,getHunterMovement,getHunterMovementIndexes,searchHunterMovements,
+          getHunterRequirementPreview,
           getBarbarianMovements,getBarbarianMovement,getBarbarianMovementIndexes,
           searchBarbarianMovements,getBarbarianRequirementPreview,
           getWarriorRequirementPreview,
