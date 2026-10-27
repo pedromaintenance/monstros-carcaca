@@ -57,6 +57,24 @@ node --test tests/carcaca-client.test.mjs
 
 Os movimentos de DW da curadoria são adaptações ficcionais; mecânicas de DW ainda não foram balanceadas. Veja [documentação de consulta](docs/CONSULTA_CURADORIA.md) e [diário de bordo](docs/DIARIO_DE_BORDO.md).
 
+## Hack Carcaça DW — movimentos gerais integrados
+
+A quinta auditoria forneceu a transcrição integral dos **21 quadros de regras gerais**, com **44 blocos originais**. O atlas agora distribui **22 unidades**: oito Movimentos Básicos, treze Avançados (incluindo **Mandados Pendentes**, preservado como movimento separado de **Recrutar**) e o subsistema de **Servos**.
+
+- Origem preservada: `data/lore/hack-carcaca-dw-quadros-integrais.json`.
+- Derivação: `scripts/hack_movimentos_gerais.py`.
+- Distribuição: `dist/carcaca/hack-general-movements.json` e `hack-general-movement-indexes.json`.
+- Cliente: `getGeneralMovements`, `getGeneralMovement`, `getGeneralMovementIndexes` e `searchGeneralMovements`.
+- Detalhes e contrato: [Integração das regras gerais](docs/INTEGRACAO_REGRAS_GERAIS_HACK_DW.md).
+
+```js
+const adv = await atlas.searchGeneralMovements({categoria:"avancado"});
+const recrutamento = await atlas.searchGeneralMovements({quadroId:"quadro-geral-docx:30"});
+const servos = await atlas.getGeneralMovement("movimento-geral:docx-32");
+```
+
+Os textos são fiéis ao arquivo enviado, mas **não foram homologados mecanicamente**: `aplicacao_canonica:false`. A extração não altera o cânone, saves ou as fichas importadas de D&D/Peren.
+
 ## Ecossistema de assentamentos (M3, ciclo 5)
 
 Além de monstros, há comunidades, redes de cavernas, refúgios e habitats de várias formas. **Nem todo covil é uma steading do Dungeon World:** a distinção é preservada.
