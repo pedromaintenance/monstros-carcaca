@@ -1,0 +1,33 @@
+{
+  "by_assentamento": {
+    "assentamento:comunidades-insulares-costa-sul": [
+      "suporte:comunidades-insulares-costa-sul"
+    ],
+    "assentamento:portomonte": [
+      "suporte:portomonte"
+    ],
+    "assentamento:rede-cavernas-kuo-toa-costa-sul": [
+      "suporte:rede-cavernas-kuo-toa-costa-sul"
+    ]
+  },
+  "by_natureza": {
+    "assentamento_civil": [
+      "suporte:portomonte"
+    ],
+    "conjunto_de_comunidades": [
+      "suporte:comunidades-insulares-costa-sul"
+    ],
+    "rede_de_abrigos": [
+      "suporte:rede-cavernas-kuo-toa-costa-sul"
+    ]
+  },
+  "by_mobilidade_sazonal": {
+    "deslocamentos_sazonais_documentados": [
+      "suporte:comunidades-insulares-costa-sul"
+    ],
+    "nao_documentada": [
+      "suporte:portomonte",
+      "suporte:rede-cavernas-kuo-toa-costa-sul"
+    ]
+  }
+}

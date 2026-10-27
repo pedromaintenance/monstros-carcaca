@@ -14,6 +14,7 @@
   "total_dependencias_materiais": 5,
   "total_balancos_materiais": 4,
   "total_pressoes_ecologicas": 4,
+  "total_perfis_suporte": 3,
   "arquivos": {
     "creatures": "creatures.json",
     "catalog": "catalog.json",
@@ -34,7 +35,9 @@
     "material_balances": "material-balances.json",
     "material_balance_indexes": "material-balance-indexes.json",
     "ecological_pressures": "ecological-pressures.json",
-    "ecological_pressure_indexes": "ecological-pressure-indexes.json"
+    "ecological_pressure_indexes": "ecological-pressure-indexes.json",
+    "support_profiles": "support-profiles.json",
+    "support_indexes": "support-indexes.json"
   },
   "estado": "curadoria_em_andamento",
   "nota": "Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."

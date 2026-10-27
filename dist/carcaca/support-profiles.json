@@ -1,0 +1,446 @@
+[
+  {
+    "id": "suporte:comunidades-insulares-costa-sul",
+    "assentamento_id": "assentamento:comunidades-insulares-costa-sul",
+    "natureza_territorial": "conjunto_de_comunidades",
+    "estado": "sem_capacidade_quantificavel",
+    "fonte": "ambientacao",
+    "descricao": "Modelo de investigação material; dados desconhecidos não equivalem a zero nem a provisão suficiente.",
+    "limites": [
+      {
+        "id": "agua_potavel",
+        "nome": "Água segura para consumo",
+        "identidade_recurso": null,
+        "base_documental": "A fonte confirma purificação de água para cultivo em Portomonte, não sua potabilidade; demais origens de água doméstica são desconhecidas.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      },
+      {
+        "id": "alimentacao",
+        "nome": "Alimentação utilizável por habitantes",
+        "identidade_recurso": null,
+        "base_documental": "A existência de lavouras em Portomonte não quantifica calorias, dieta nem disponibilidade individual; dietas dos demais povos não constam.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      },
+      {
+        "id": "abrigo",
+        "nome": "Vagas e capacidade de habitação",
+        "identidade_recurso": null,
+        "base_documental": "A presença de uma comunidade ou de cavernas não informa quantas pessoas podem ser abrigadas com segurança.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      },
+      {
+        "id": "residuos",
+        "nome": "Capacidade de destinação dos resíduos",
+        "identidade_recurso": null,
+        "base_documental": "Não há saneamento, volumes de resíduos, tratamento ou capacidade de descarte descritos na fonte.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      }
+    ],
+    "demografia": {
+      "residentes": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "nascimentos": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "obitos": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "migracao_entrada": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "migracao_saida": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "mobilidade_sazonal": "deslocamentos_sazonais_documentados",
+      "continuidade_reprodutiva": "nao_documentada",
+      "observacao": "Deslocamentos sazonais não demonstram mudança de residência; capacidade de suporte não implica população real."
+    },
+    "nao_inferir": [
+      "Conjunto de ilhas não constitui uma única população mensurável",
+      "Viagens sazonais em busca de histórias e recursos não provam migração permanente",
+      "O material não descreve pesca, culturas agrícolas, água potável nem saneamento",
+      "Não somar populações tortles e tabaxis sem delimitar cada ilha"
+    ],
+    "efeito_dw_automatico": false
+  },
+  {
+    "id": "suporte:portomonte",
+    "assentamento_id": "assentamento:portomonte",
+    "natureza_territorial": "assentamento_civil",
+    "estado": "sem_capacidade_quantificavel",
+    "fonte": "ambientacao",
+    "descricao": "Modelo de investigação material; dados desconhecidos não equivalem a zero nem a provisão suficiente.",
+    "limites": [
+      {
+        "id": "agua_potavel",
+        "nome": "Água segura para consumo",
+        "identidade_recurso": null,
+        "base_documental": "A fonte confirma purificação de água para cultivo em Portomonte, não sua potabilidade; demais origens de água doméstica são desconhecidas.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      },
+      {
+        "id": "alimentacao",
+        "nome": "Alimentação utilizável por habitantes",
+        "identidade_recurso": null,
+        "base_documental": "A existência de lavouras em Portomonte não quantifica calorias, dieta nem disponibilidade individual; dietas dos demais povos não constam.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      },
+      {
+        "id": "abrigo",
+        "nome": "Vagas e capacidade de habitação",
+        "identidade_recurso": null,
+        "base_documental": "A presença de uma comunidade ou de cavernas não informa quantas pessoas podem ser abrigadas com segurança.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      },
+      {
+        "id": "residuos",
+        "nome": "Capacidade de destinação dos resíduos",
+        "identidade_recurso": null,
+        "base_documental": "Não há saneamento, volumes de resíduos, tratamento ou capacidade de descarte descritos na fonte.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      }
+    ],
+    "demografia": {
+      "residentes": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "nascimentos": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "obitos": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "migracao_entrada": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "migracao_saida": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "mobilidade_sazonal": "nao_documentada",
+      "continuidade_reprodutiva": "nao_documentada",
+      "observacao": "Deslocamentos sazonais não demonstram mudança de residência; capacidade de suporte não implica população real."
+    },
+    "nao_inferir": [
+      "Água agrícola purificada não implica certificação de potabilidade ou oferta doméstica",
+      "Agricultura não prova dieta completa nem produção por pessoa",
+      "Povoação grande não autoriza quantificar residentes ou áreas construídas",
+      "Comércio desconhecido não prova suprimento alimentar substituto"
+    ],
+    "efeito_dw_automatico": false
+  },
+  {
+    "id": "suporte:rede-cavernas-kuo-toa-costa-sul",
+    "assentamento_id": "assentamento:rede-cavernas-kuo-toa-costa-sul",
+    "natureza_territorial": "rede_de_abrigos",
+    "estado": "sem_capacidade_quantificavel",
+    "fonte": "ambientacao",
+    "descricao": "Modelo de investigação material; dados desconhecidos não equivalem a zero nem a provisão suficiente.",
+    "limites": [
+      {
+        "id": "agua_potavel",
+        "nome": "Água segura para consumo",
+        "identidade_recurso": null,
+        "base_documental": "A fonte confirma purificação de água para cultivo em Portomonte, não sua potabilidade; demais origens de água doméstica são desconhecidas.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      },
+      {
+        "id": "alimentacao",
+        "nome": "Alimentação utilizável por habitantes",
+        "identidade_recurso": null,
+        "base_documental": "A existência de lavouras em Portomonte não quantifica calorias, dieta nem disponibilidade individual; dietas dos demais povos não constam.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      },
+      {
+        "id": "abrigo",
+        "nome": "Vagas e capacidade de habitação",
+        "identidade_recurso": null,
+        "base_documental": "A presença de uma comunidade ou de cavernas não informa quantas pessoas podem ser abrigadas com segurança.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      },
+      {
+        "id": "residuos",
+        "nome": "Capacidade de destinação dos resíduos",
+        "identidade_recurso": null,
+        "base_documental": "Não há saneamento, volumes de resíduos, tratamento ou capacidade de descarte descritos na fonte.",
+        "situacao": "medicoes_nao_disponiveis",
+        "disponibilidade": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "necessidade_por_habitante": {
+          "valor": null,
+          "unidade": null,
+          "periodo": null,
+          "origem_medicao": null
+        },
+        "lacunas": [
+          "Recurso concreto e qualidade apropriada para a dimensão não verificados",
+          "Disponibilidade mensurável por intervalo não informada",
+          "Necessidade por pessoa e intervalo não informada"
+        ]
+      }
+    ],
+    "demografia": {
+      "residentes": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "nascimentos": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "obitos": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "migracao_entrada": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "migracao_saida": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "mobilidade_sazonal": "nao_documentada",
+      "continuidade_reprodutiva": "nao_documentada",
+      "observacao": "Deslocamentos sazonais não demonstram mudança de residência; capacidade de suporte não implica população real."
+    },
+    "nao_inferir": [
+      "Cavernas e cidades subaquáticas não são um único assentamento",
+      "As incursões regionais não demonstram produção de alimento, dieta nem migração",
+      "Água do habitat não equivale a água potável",
+      "Ausência de informações sobre reprodução, tratamento de resíduos e segurança do abrigo"
+    ],
+    "efeito_dw_automatico": false
+  }
+]
