@@ -100,7 +100,7 @@ console.log(dependencia.habilitado_para_compra); // null: revisão obrigatória
 
 ## Classe Guerreiro — transcrição integral (ciclo seguinte)
 
-Os **77 movimentos de Guerreiro** agora possuem texto integral preservado, **137 opções** em parágrafos de lista e **235 partes** com proveniência. O catálogo de 632 movimentos continua indexado; Guerreiro e Bárbaro possuem agora o vínculo explícito `texto_integral_disponivel:true`.
+Os **77 movimentos de Guerreiro** agora possuem texto integral preservado, **137 opções** em parágrafos de lista e **235 partes** com proveniência. O catálogo de 632 movimentos continua indexado; Guerreiro, Bárbaro e Caçador possuem agora o vínculo explícito `texto_integral_disponivel:true`.
 
 ```js
 const guerreiro=await atlas.getWarriorMovements();
@@ -113,6 +113,25 @@ const requisito=await atlas.getWarriorRequirementPreview(
 ```
 
 São **30 REQUER**: 27 correspondências exatas candidatas e três condições especiais (*Magia de Guerra*, *Passo Arcano* e *Tiro Arcano*). A checagem de aquisição permanece deliberadamente **não automática**. Consulte [Integração do Guerreiro](docs/INTEGRACAO_GUERREIRO_HACK_DW.md).
+
+## Classe Caçador — terceiro grupo integral
+
+O Hack Carcaça agora possui **53 movimentos de Caçador** com texto original completo, **61 opções** e **125 partes** referenciadas ao DOCX. Com Guerreiro (77) e Bárbaro (59), isso representa **189 de 632 movimentos de classe** transcritos integralmente (**443** restantes no inventário).
+
+São **15 REQUER**: 12 diretos e três especiais. *Barriga de Smaug* admite **Caçador de Monstros OU um movimento que tenha revelado uma vulnerabilidade** (esta alternativa depende de comprovação ficcional); *Nenhum Mundo É Longe Demais* exige **Caminhante dos Horizontes E Marca do Caçador**; *Olho da Presa* exige **Flecha de Sangue OU Marca do Caçador**.
+
+```js
+const cacador=await atlas.getHunterMovements();
+const alternativos=await atlas.searchHunterMovements({tipoRequisito:"qualquer"});
+const narrativos=await atlas.searchHunterMovements({comCondicaoFiccional:true});
+const previa=await atlas.getHunterRequirementPreview(
+  "movimento-classe:paragrafo-1492",
+  {movimentosPossuidos:["movimento-classe:paragrafo-1484"]}
+);
+console.log(previa.habilitado_para_compra); // null; nunca libera automaticamente
+```
+
+Fonte: `data/lore/hack-carcaca-dw-cacador-integrais.json`. Distribuição: `dist/carcaca/hack-hunter-movements.json`; índices: `hack-hunter-movement-indexes.json`. Veja [Integração de Caçador](docs/INTEGRACAO_CACADOR_HACK_DW.md).
 
 ## Classe Bárbaro — segundo grupo integral
 
