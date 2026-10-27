@@ -1028,6 +1028,94 @@ def validar_barbaro_integral():
           "36 REQUER exatos e 1 composto. Sem promoção canônica.")
 
 
+def validar_cacador_integral():
+    """Preserva transcrição do Caçador, com REQUER de tipo direto, E, OU e ficcional."""
+    from hack_movimentos_personagem import build_hunter_indexes
+    raw=load("data/lore/hack-carcaca-dw-cacador-integrais.json")
+    inventory=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(raw["fonte_sha256"]==inventory["fonte_sha256"] and
+            raw["grupo"]=="CAÇADOR","Fonte/grupo do Caçador divergentes.")
+    moves=raw["movimentos"]
+    listed={m["id"]:m for m in inventory["movimentos"] if m["grupo"]=="CAÇADOR"}
+    all_ids={m["id"] for m in inventory["movimentos"]}
+    require(len(moves)==len(listed)==53 and len(unique(moves,"cacador"))==53,
+            "Devem existir 53 movimentos distintos de Caçador.")
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves)
+            and moves[0]["paragrafo_docx"]==1455 and moves[-1]["paragrafo_docx"]==1582,
+            "Âncoras DOCX do Caçador alteradas.")
+    require(raw["integridade"]=={
+      "total_movimentos":53,"total_com_requer":15,"total_vinculos_exatos":12,
+      "total_requer_composto_ou_condicional":3,"total_opcoes":61,"total_partes":125
+    },"Integridade documental do Caçador alterada.")
+    used=set()
+    direct={}
+    special={}
+    for m in moves:
+        origin=listed.get(m["id"])
+        require(origin is not None and m["titulo"]==origin["titulo"] and
+                m["paragrafo_docx"]==origin["paragrafo_docx"] and
+                m["requisito_literal"]==origin["requisito_literal"],
+                "Caçador contradiz inventário de títulos e REQUER.")
+        require(m["categoria"]=="classe" and
+                m["estado"]=="transcricao_integral_sem_revisao_mecanica" and
+                m["texto_integral_conferido"] is True and m["aplicacao_canonica"] is False,
+                "Transcrição não deve modificar cânone ou aplicar movimento.")
+        require(m["texto_original"]=="\\n".join(p["texto"] for p in m["partes"]),
+                "Texto do Caçador perdeu trecho original.")
+        require(m["opcoes"]==[
+            {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+            for p in m["partes"] if p["tipo"]=="opcao"],
+            "Opções de Caçador divergentes de seus parágrafos.")
+        require(m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"] and
+                m["partes"][0]["tipo"]=="corpo","Movimento sem âncora de corpo.")
+        for p in m["partes"]:
+            require(p["texto"] and p["paragrafo_docx"] not in used,
+                    "Parte vazia ou parágrafo duplicado de Caçador.")
+            used.add(p["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),
+                "Ausência de REQUER não autoriza inventá-lo.")
+        if req:
+            if req["tipo"]=="movimento_exato":
+                require(req["movimento_id"] in all_ids and
+                        req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                        "Vínculo literal não homologado do Caçador.")
+                direct[m["id"]]=req["movimento_id"]
+            else:
+                special[m["paragrafo_docx"]]=req["tipo"]
+                require(req["status"]=="interpretacao_literal_pendente_homologacao" and
+                        len(req["itens"])==2 and req["operador_literal"] in ("e","ou"),
+                        "Conjunção/disjunção especial não preservada.")
+                for item in req["itens"]:
+                    if item["tipo"]=="movimento_exato":
+                        require(item["movimento_id"] in all_ids,
+                                "Movimento exigido não existe no inventário.")
+                    else:
+                        require(item["tipo"]=="condicao_ficcional" and
+                                item["texto_literal"]=="Um movimento que tenha revelado uma vulnerabilidade"
+                                and m["paragrafo_docx"]==1492,
+                                "Não transformar condição narrativa em movimento fictício.")
+    require(len(used)==125 and len(direct)==12 and special==
+            {1492:"qualquer",1520:"todos",1535:"qualquer"},
+            "Relações ou partes de Caçador não estão completas.")
+    for source in direct:
+        seen={source}
+        target=source
+        while target in direct:
+            target=direct[target]
+            require(target not in seen,"Ciclo no grafo de REQUER do Caçador.")
+            seen.add(target)
+    idx=build_hunter_indexes(moves)
+    require(len(idx["by_tem_requer"]["sim"])==15 and
+            len(idx["by_requisito_tipo"]["movimento_exato"])==12 and
+            len(idx["by_requisito_tipo"]["qualquer"])==2 and
+            len(idx["by_requisito_tipo"]["todos"])==1 and
+            idx["by_condicao_ficcional"]["sim"]==["movimento-classe:paragrafo-1492"],
+            "Índices e condições ficcionais do Caçador inconsistentes.")
+    print("Caçador: 53 movimentos integrais, 61 opções, 125 partes, "
+          "12 requisitos diretos, 3 especiais, zero promoções.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1126,6 +1214,7 @@ def main():
     validar_integracao_personagens_hack()
     validar_guerreiro_integral()
     validar_barbaro_integral()
+    validar_cacador_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
