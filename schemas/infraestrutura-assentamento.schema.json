@@ -1,0 +1,187 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/infraestrutura-assentamento.schema.json",
+  "title": "Infraestrutura material de assentamentos da Carcaça",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "assentamento_id",
+    "suporte_id",
+    "natureza",
+    "fonte",
+    "setores"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^infraestrutura:[a-z0-9-]+$"
+    },
+    "assentamento_id": {
+      "type": "string",
+      "pattern": "^assentamento:[a-z0-9-]+$"
+    },
+    "suporte_id": {
+      "type": "string",
+      "pattern": "^suporte:[a-z0-9-]+$"
+    },
+    "natureza": {
+      "enum": [
+        "assentamento_civil",
+        "conjunto_de_comunidades",
+        "rede_de_abrigos"
+      ]
+    },
+    "fonte": {
+      "type": "string",
+      "minLength": 2
+    },
+    "setores": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "$ref": "#/$defs/setor"
+      }
+    }
+  },
+  "$defs": {
+    "ancora": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "descricao",
+        "classe",
+        "fonte",
+        "status"
+      ],
+      "properties": {
+        "descricao": {
+          "type": "string",
+          "minLength": 10
+        },
+        "classe": {
+          "enum": [
+            "geografia",
+            "habitat_coletivo",
+            "instituicao_fisica",
+            "atividade_economica",
+            "atividade_produtiva",
+            "transformacao_de_recurso",
+            "circulacao_regional"
+          ]
+        },
+        "fonte": {
+          "type": "string"
+        },
+        "status": {
+          "const": "documentado"
+        }
+      }
+    },
+    "setor": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "estado",
+        "ancoras_documentadas",
+        "materiais_construtivos_confirmados",
+        "instalacoes_especificas_confirmadas",
+        "problemas_em_aberto",
+        "perguntas_para_o_mestre",
+        "dependencias_relacionadas",
+        "risco_narrativo_proposto",
+        "efeitos_dw_automaticos"
+      ],
+      "properties": {
+        "id": {
+          "enum": [
+            "construcao_abrigo",
+            "armazenamento",
+            "saneamento",
+            "acessos_logistica"
+          ]
+        },
+        "estado": {
+          "enum": [
+            "evidencia_parcial",
+            "sem_documentacao"
+          ]
+        },
+        "ancoras_documentadas": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/ancora"
+          }
+        },
+        "materiais_construtivos_confirmados": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "material",
+              "fonte"
+            ],
+            "properties": {
+              "material": {
+                "type": "string"
+              },
+              "fonte": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "instalacoes_especificas_confirmadas": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "instalacao",
+              "fonte"
+            ],
+            "properties": {
+              "instalacao": {
+                "type": "string"
+              },
+              "fonte": {
+                "type": "string"
+              }
+            }
+          }
+        },
+        "problemas_em_aberto": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        },
+        "perguntas_para_o_mestre": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        },
+        "dependencias_relacionadas": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^dependencia:"
+          }
+        },
+        "risco_narrativo_proposto": {
+          "type": "null"
+        },
+        "efeitos_dw_automaticos": {
+          "const": false
+        }
+      }
+    }
+  }
+}
