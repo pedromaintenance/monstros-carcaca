@@ -671,6 +671,62 @@ def validar_quarta_auditoria_manuscrito():
     print("4a auditoria: 12 movimentos integrais (4 opções), 33 tabelas "
           "(21 quadros de movimentos gerais), zero aplicações automáticas.")
 
+def validar_integracao_movimentos_gerais():
+    """Garante integridade da quinta auditoria e separação entre transcrição e regra aprovada."""
+    from hack_movimentos_gerais import compilar_movimentos_gerais,indexar_movimentos_gerais
+
+    origem=load("data/lore/hack-carcaca-dw-quadros-integrais.json")
+    inventario=load("data/lore/hack-carcaca-dw-tabelas-docx.json")["tabelas"]
+    quadros=origem["quadros"]
+    require(origem["origem_sha256"] ==
+            "b53d1d5a057e8f6cba8a5d5ccd70747df3ce94d07ff2e2ffb9031368ea773b3d",
+            "Hash da fonte da 5a auditoria inesperado.")
+    require(origem["schema_version"]=="0.1.0" and len(quadros)==21,
+            "Fonte integral deve preservar as 21 tabelas de movimentos gerais.")
+    require(sum(len(q["blocos"]) for q in quadros)==44,
+            "Quinta auditoria deve preservar exatamente 44 blocos/células.")
+    require(all(q["aplicacao_canonica"] is False and
+                q["texto_integral_extraido"] is True for q in quadros),
+            "Texto extraído não pode ser tratado como regra aprovada.")
+    moves=compilar_movimentos_gerais(origem,inventario)
+    ids=unique(moves,"movimentos gerais integrais")
+    require(len(ids)==22 and
+            sum(m["categoria"]=="basico" for m in moves)==8 and
+            sum(m["categoria"]=="avancado" for m in moves)==13 and
+            sum(m["categoria"]=="subsistema_servos" for m in moves)==1,
+            "Foram identificadas 22 unidades distintas: 8 basicas, 13 avancadas e Servos.")
+    quados_por_id={q["id"]:q for q in quadros}
+    for move in moves:
+        base=quados_por_id[move["quadro_id"]]
+        cabecalho,corpo=(base["blocos"][i] for i in move["linhas_docx"])
+        require(cabecalho["texto"]==move["titulo"] and
+                corpo["texto"]==move["texto_original"],
+                "Texto derivado perdeu correspondencia com a celula DOCX: "+move["id"])
+        require(move["aplicacao_canonica"] is False and
+                move["requisito_explicito"] is None and
+                move["estado"]=="transcricao_integral_sem_revisao_semantica",
+                "Nunca inferir REQUER ou promover regras automaticamente.")
+        for marco in move["marcadores_resultado_literais"]:
+            require(move["texto_original"].splitlines()[marco["linha"]]==marco["literal"],
+                    "Marcador de faixa desconectado do texto original.")
+        for gatilho in move["gatilhos_literais"]:
+            require(move["texto_original"].splitlines()[gatilho["linha"]]==gatilho["literal"],
+                    "Gatilho desconectado do texto original.")
+    recrutamento=[m for m in moves if m["tabela_docx_indice"]==30]
+    require({m["titulo"] for m in recrutamento}=={"RECRUTAR","MANDADOS PENDENTES"},
+            "Mandados Pendentes nao pode ficar oculto dentro de Recrutar.")
+    servos=[m for m in moves if m["titulo"]=="SERVOS"]
+    require(len(servos)==1 and "LEALDADE DOS SERVOS" in servos[0]["texto_original"],
+            "Subsistema de Lealdade dos Servos deve permanecer integral.")
+    indices=indexar_movimentos_gerais(moves)
+    require(len(indices["by_categoria"]["basico"])==8 and
+            set(indices["by_quadro"]["quadro-geral-docx:30"])==
+              {m["id"] for m in recrutamento},
+            "Indice de movimentos gerais incompleto.")
+    print("5a auditoria integrada: 21 quadros, 44 blocos, 22 unidades de regras, "
+          "nenhuma promocao canonica.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -764,6 +820,7 @@ def main():
     validar_indice_mecanicas_manuscrito()
     validar_terceira_auditoria_manuscrito()
     validar_quarta_auditoria_manuscrito()
+    validar_integracao_movimentos_gerais()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
