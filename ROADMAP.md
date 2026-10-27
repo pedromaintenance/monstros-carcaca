@@ -398,3 +398,10 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Acrescentar artefatos `dist/carcaca/hack-complete-pilot-*.json` e `hack-docx-*.json`, API e testes.
 - [x] Documentar a revisão em `docs/QUARTA_AUDITORIA_HACK_CARCACA_DW.md`.
 - [ ] Revisar texto integral de 21 quadros gerais de movimentos em tabelas.
+
+### Conferência pós-publicação da quarta auditoria
+
+- [x] [GitHub Actions #40520057084](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40520057084): execução `success` em validador, testes JavaScript, testes Python reais, geração determinística e publicação.
+- [x] `manifest.json` conferido diretamente: **12 movimentos integrais**, **4 opções**, **33 tabelas**, das quais **21 quadros gerais**.
+- [x] Conferido vínculo das três entradas do piloto que já possuíam cabeçalho no índice parcial anterior; sem duplicação de regras completas.
+- [x] Preservadas **7 criaturas e 3 assentamentos**; nenhum movimento aplicado automaticamente ao jogo.

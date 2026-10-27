@@ -376,3 +376,10 @@ Documento: `docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md`.
 **Software:** gerador, validador de integridade e referências, métodos de consulta ESM, testes Node e Python. Sem alteração de fichas existentes.
 
 **Documento:** `docs/QUARTA_AUDITORIA_HACK_CARCACA_DW.md`.
+
+### Snapshot e validação final da quarta auditoria
+
+- [Execução #40520057084](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40520057084) aprovada nas cinco etapas: curadoria, Node, Python integrado, geração determinística e publicação.
+- Artefatos `dist/carcaca/hack-complete-pilot-movements.json`, `hack-complete-pilot-movement-indexes.json`, `hack-docx-tables.json`, `hack-docx-table-indexes.json` consultados diretamente após publicação.
+- 12 textos completos; Saqueador da Caatinga com 4 opções documentadas; 33 tabelas classificadas em 10 narrativas, 2 numéricas e 21 de movimentos/regras gerais.
+- Três cabeçalhos já existentes ligados por `revisao_preliminar_id`, sem inventar vínculos. Estados `aplicacao_canonica:false` mantidos. Cânone ecológico e fichas de campanhas preservados.
