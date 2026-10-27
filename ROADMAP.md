@@ -347,3 +347,16 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Índices invertidos: 644 tokens de pesquisa, filtros por tipo/página e por região/pergunta/parecer de ponte.
 - [x] Preservadas **7 criaturas e 3 assentamentos** existentes, sem alteração canônica por ingestão de manuscrito.
 - [x] Todas as 14 pontes conservam `aplicar_automaticamente:false` e `status:pendente_revisao_autoral`.
+
+## Segunda auditoria de indexação do manuscrito — 2026-10-27
+
+- [x] Ampliar glossário de 100 para **157 verbetes** de fonte autoral (38 divindades e 19 conceitos adicionais).
+- [x] Preservar como texto consultável as páginas de regras e movimentos **26–181**, com 155 páginas extraíveis e lacuna explícita na página 91.
+- [x] Indexar por página/categoria **653 rótulos visuais candidatos** (não certificados como movimentos) e detectar páginas com menções literais a `REQUER:`.
+- [x] Validar fontes, paginação, escopo não canônico, esquema de nomes curtos e geração determinística.
+- [x] Expor `getHackMechanicsIndex` e `searchHackMechanicsPages` na API ESM.
+- [x] Atualizar testes com 157 termos e novo índice mecânico, preservando as fichas do atlas.
+- [x] Documentar análise e limitações em `docs/REVISAO_AMPLIADA_HACK_CARCACA_DW.md`.
+- [ ] Verificar visualmente a página 91 no DOCX original e recuperar seu conteúdo, se houver.
+- [ ] Refinar candidatos a movimentos em blocos individuais e verificar `REQUER` sem confundimento entre colunas.
+- [ ] Integrar ao atlas canônico apenas evidência de ambientação aprovada individualmente.

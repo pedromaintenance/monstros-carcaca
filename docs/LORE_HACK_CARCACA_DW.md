@@ -1,3 +1,5 @@
+> **Atualização:** uma segunda auditoria ampliou o glossário de 100 para **157 verbetes** e extraiu a camada textual das páginas mecânicas restantes. O quadro original abaixo registra a primeira importação; consulte o [relatório de segunda auditoria](REVISAO_AMPLIADA_HACK_CARCACA_DW.md) para escopo, limitações e testes atualizados.
+
 # Manuscrito Dungeon World — A Carcaça: índice de lore e reconciliação com M3
 
 **Fonte:** `Hack Carcaça Dungeon World.docx`, manuscrito de Pedro Rodrigues.  
@@ -9,7 +11,7 @@
 
 O manuscrito combina **ambientação** (Capítulo I), **regras do hack** (Capítulo II) e **movimentos de personagem** (Capítulo III). Nesta importação, **todo o texto do Capítulo I foi preservado por página** em `fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json`. Os capítulos II e III continuam no documento original, mas não foram copiados para os registros do atlas de lore para evitar confundir descrição de mundo com efeitos de jogo. A publicação é uma **transcrição textual de consulta**, não uma republicação com a diagramação do DOCX.
 
-O índice reúne **100 entradas nomeadas** e referências às páginas: **22 lugares/geografias, 5 regiões, 1 plano, 26 povos, 4 facções, 16 personagens, 16 divindades e 10 conceitos**. O número de entradas é uma métrica da indexação; não é população nem quantidade de seres no mundo. Em `data/lore/hack-carcaca-dw-indice-tematico.json`, cada registro possui `nome`, `tipo`, `aliases`, `descricao`, `paginas`, `evidencia:afirmado_no_rascunho` e `integracao:referencia_sem_mutar_canonico`.
+O índice reúne **157 entradas nomeadas** e referências às páginas: **22 lugares/geografias, 5 regiões, 1 plano, 26 povos, 4 facções, 16 personagens, 54 divindades e 29 conceitos**. O número de entradas é uma métrica da indexação; não é população nem quantidade de seres no mundo. Em `data/lore/hack-carcaca-dw-indice-tematico.json`, cada registro possui `nome`, `tipo`, `aliases`, `descricao`, `paginas`, `evidencia:afirmado_no_rascunho` e `integracao:referencia_sem_mutar_canonico`.
 
 **Importante:** a inclusão de um termo neste índice não confirma que a versão mais recente da ambientação já adotou sua redação. Quando houver divergência, consultar os pontos de revisão antes de alterar registros canônicos. Os termos de personagens, povos e lugares permanecem independentes dos identificadores utilizados nos savegames.
 
@@ -93,7 +95,7 @@ Exemplo: as comunidades dispersas de orcs sustentam a afirmação de que há hab
 
 O indexador gera automaticamente:
 
-- `dist/carcaca/lore-index.json`: 100 entidades/temas.
+- `dist/carcaca/lore-index.json`: 157 entidades/temas.
 - `dist/carcaca/lore-indexes.json`: índices invertidos por tipo, página, palavra e estado.
 - `dist/carcaca/lore-chronology.json`: eventos e incógnitas.
 - `dist/carcaca/lore-review-notes.json`: dúvidas de reconciliação.

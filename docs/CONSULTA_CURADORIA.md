@@ -208,3 +208,14 @@ const indice=await atlas.getLoreIndexIndexes();
 ```
 
 `getLoreIndex`, `getLoreEntity(id)`, `searchLore({query,tipo,pagina})`, `getLoreChronology`, `getLoreReviewNotes`, `getLoreAtlasLinks`, `getLoreAtlasLinkIndexes` e `searchLoreAtlasLinks` consultam **afirmações de manuscrito em revisão**. O trecho de Portomonte é resposta parcial **para alguns druidas**, não para todos os refugiados. Os objetos do manuscrito não alteram tags DW ou mapas. Fonte por página em `fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json` e discussão em `docs/LORE_HACK_CARCACA_DW.md`.
+
+## Segunda auditoria do Hack DW — glossário e páginas mecânicas
+
+```js
+const divindades=await atlas.searchLore({tipo:"divindade"}); // 54 verbetes
+const movs=await atlas.searchHackMechanicsPages({query:"Portomontense"});
+const requer=await atlas.searchHackMechanicsPages({comRequer:true});
+const mec=await atlas.getHackMechanicsIndex();
+```
+
+**Atenção:** `hack-mechanics-index.json` é catálogo preliminar de títulos visuais e referências por página; **não** é o conjunto dos movimentos aprovados. Página 91 está explicitamente marcada como sem texto extraível. Veja `docs/REVISAO_AMPLIADA_HACK_CARCACA_DW.md`.

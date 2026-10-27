@@ -324,3 +324,15 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 - Fonte preservada em 24 páginas (Capítulo I), acesso a capítulos mecânicos mantido fora do atlas. Total de criaturas (7) e assentamentos (3) não foi alterado pela publicação.
 - Correção de integridade: uma ponte para Gualápolis referenciava a página 7, mas seu verbete enumerava a página 6; ajustada a ponte para a página 6 e revalidado o cruzamento. A ambiguidade topológica permanece **não resolvida**, como convém.
 - `pergunta:costa-sul-migracao`: uma evidência parcial sobre druidas em Portomonte foi indexada, não canonizada por inteiro ou transformada em contagem de refugiados.
+
+## 2026-10-27 · Segunda auditoria — aprofundamento da indexação do Hack DW
+
+O glossário de 100 verbetes passou a **157**: foram adicionadas **38 divindades** e **19 noções culturais, ecológicas e políticas**, com referências à fonte e páginas. Corrigido schema para permitir o nome legítimo de duas letras **Rá**.
+
+A fonte textual de mecânicas das páginas 26–181 foi extraída em quatro arquivos, preservando **155 páginas de texto**. **A página 91 não apresentou texto extraível**, devendo ser inspecionada visualmente; não a classificamos como vazia. Extração por páginas de duas colunas pode desordenar conteúdo. Um índice secundário tem **653 rótulos candidatos**, identificou menções a `REQUER:` em **86 páginas** e preserva explicitamente sua condição de instrumento preliminar — não movimentos verificados.
+
+`scripts/validar_curadoria.py` passou a validar paginação, pacotes de texto e separação canônica; `scripts/gerar_indices_curadoria.py` passou a distribuir `hack-mechanics-index.json` com contagens no manifesto; `src/carcaca-client.mjs` oferece busca mecânica por página, rótulo e categoria. Atualizados testes Python e JS.
+
+**Exemplo de cautela:** o movimento Portomontense concede uma capacidade ao personagem; isso não resolve automaticamente a questão ecológica da potabilidade de Portomonte. Outro cuidado é não emparelhar um `REQUER:` com o movimento na coluna adjacente.
+
+Documento: `docs/REVISAO_AMPLIADA_HACK_CARCACA_DW.md`.
