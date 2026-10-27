@@ -12,6 +12,7 @@ on:
       - 'data/infraestrutura_assentamentos_costa_sul.json'
       - 'data/dinamicas_territoriais_alem_sul.json'
       - 'data/rotulos_territoriais_carcaca.json'
+      - 'data/guias_dossies_regionais.json'
       - 'data/taxonomia_carcaca.json'
       - 'data/regioes_carcaca.json'
       - 'data/faccoes_carcaca.json'
@@ -38,6 +39,7 @@ on:
       - 'data/infraestrutura_assentamentos_costa_sul.json'
       - 'data/dinamicas_territoriais_alem_sul.json'
       - 'data/rotulos_territoriais_carcaca.json'
+      - 'data/guias_dossies_regionais.json'
       - 'data/taxonomia_carcaca.json'
       - 'data/regioes_carcaca.json'
       - 'data/faccoes_carcaca.json'
@@ -80,6 +82,8 @@ jobs:
         run: python scripts/validar_curadoria.py
       - name: Testar cliente de leitura
         run: node --test tests/carcaca-client.test.mjs
+      - name: Testar dossiês derivados contra curadoria real
+        run: python -m unittest discover -s tests -p 'test_*.py'
       - name: Gerar índices determinísticos
         run: |
           python scripts/gerar_indices_curadoria.py

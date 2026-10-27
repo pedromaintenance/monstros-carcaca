@@ -6,6 +6,7 @@ import {previewMaterialBalance,BALANCE_FIELDS} from "../src/carcaca-material-bal
 import {previewSupportCapacity,previewPopulationFlow,SUPPORT_LIMITS} from "../src/carcaca-support-capacity.mjs";
 import {auditInfrastructure,previewInfrastructureIssue} from "../src/carcaca-infrastructure.mjs";
 import {previewTerritorialImpact} from "../src/carcaca-territorial.mjs";
+import {reviewRegionalDossier} from "../src/carcaca-regional.mjs";
 
 const fixtures={
   "manifest.json":{arquivos:{catalog:"catalog.json",creatures:"creatures.json",
@@ -22,7 +23,9 @@ const fixtures={
     infrastructure_indexes:"infrastructure-indexes.json",
     territorial_labels:"territorial-labels.json",
     territorial_dynamics:"territorial-dynamics.json",
-    territorial_indexes:"territorial-indexes.json"}},
+    territorial_indexes:"territorial-indexes.json",
+    regional_dossiers:"regional-dossiers.json",
+    regional_dossier_indexes:"regional-dossier-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -35,6 +38,121 @@ const fixtures={
   ],
   "creatures.json":[{id:"carcaca:criatura:joro",dungeon_world:{instinto:"Testar visitantes"}}],
   "regions.json":[{id:"regiao:caatinga",lugares:[]},{id:"regiao:costa-sul",lugares:[]},{id:"regiao:eldroth",lugares:[]}],
+  "regional-dossiers.json":[
+    {
+      "id": "dossie-regional:caatinga",
+      "regiao_id": "regiao:caatinga",
+      "perguntas": [
+        {
+          "id": "pergunta:caatinga-agua",
+          "tema": "subsistencia",
+          "pergunta": "Onde conseguem água?"
+        }
+      ],
+      "lacunas": [
+        "Localidades não cadastradas"
+      ],
+      "inventario": {
+        "lugares": [],
+        "assentamentos": [],
+        "criaturas": [],
+        "frentes_propostas": [],
+        "povos_vinculados_a_assentamentos": [],
+        "faccoes_por_associacao_a_criaturas": [],
+        "fluxos": [],
+        "dependencias_materiais": [],
+        "balancos_nao_quantificados": [],
+        "pressoes_ecologicas_hipoteticas": [],
+        "perfis_suporte": [],
+        "perfis_infraestrutura": [],
+        "cenarios_dw_nao_executados": [],
+        "dinamicas_territoriais": [
+          {
+            "id": "dinamica:pilhagens",
+            "papeis_regionais": [
+              "origem"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "dossie-regional:costa-sul",
+      "regiao_id": "regiao:costa-sul",
+      "perguntas": [
+        {
+          "id": "pergunta:costa-refugiados",
+          "tema": "mobilidade",
+          "pergunta": "Quais destinos?"
+        }
+      ],
+      "lacunas": [
+        "Refúgio individual não identificado"
+      ],
+      "inventario": {
+        "lugares": [],
+        "assentamentos": [
+          "assentamento:portomonte"
+        ],
+        "criaturas": [],
+        "frentes_propostas": [],
+        "povos_vinculados_a_assentamentos": [],
+        "faccoes_por_associacao_a_criaturas": [],
+        "fluxos": [],
+        "dependencias_materiais": [],
+        "balancos_nao_quantificados": [],
+        "pressoes_ecologicas_hipoteticas": [],
+        "perfis_suporte": [],
+        "perfis_infraestrutura": [],
+        "cenarios_dw_nao_executados": [],
+        "dinamicas_territoriais": [
+          {
+            "id": "dinamica:pilhagens",
+            "papeis_regionais": [
+              "destino"
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "dossie-regional:foz-rio-ancestral",
+      "regiao_id": "regiao:foz-rio-ancestral",
+      "perguntas": [
+        {
+          "id": "pergunta:foz-defesas",
+          "tema": "conflito",
+          "pergunta": "Quais recursos?"
+        }
+      ],
+      "lacunas": [
+        "Sem assentamentos curados"
+      ],
+      "inventario": {
+        "lugares": [],
+        "assentamentos": [],
+        "criaturas": [
+          {
+            "id": "carcaca:criatura:joro",
+            "estado_curadoria": "piloto"
+          }
+        ],
+        "frentes_propostas": [],
+        "povos_vinculados_a_assentamentos": [],
+        "faccoes_por_associacao_a_criaturas": [],
+        "fluxos": [],
+        "dependencias_materiais": [],
+        "balancos_nao_quantificados": [],
+        "pressoes_ecologicas_hipoteticas": [],
+        "perfis_suporte": [],
+        "perfis_infraestrutura": [],
+        "cenarios_dw_nao_executados": [],
+        "dinamicas_territoriais": []
+      }
+    }
+  ],
+  "regional-dossier-indexes.json":{by_regiao:{"regiao:caatinga":["dossie-regional:caatinga"],"regiao:costa-sul":["dossie-regional:costa-sul"]},
+    by_ausencia_assentamento_curado:{"sim":["dossie-regional:caatinga","dossie-regional:foz-rio-ancestral"]}},
   "territorial-labels.json":[{id:"rotulo-territorial:fronteira_de_pilhagens"},{id:"rotulo-territorial:presenca_minoritaria_refugiada"}],
   "territorial-dynamics.json":[
     {id:"dinamica:pilhagens",escala:"regional",origem_regiao_id:"regiao:caatinga",
@@ -527,4 +645,38 @@ test("alvo explicitamente nomeado não confirma ocorrência de evento em campanh
   assert.equal(review.alvo_nomeado_no_registro,true);
   assert.equal(review.evento_especifico_confirmado,false);
   assert.equal(review.mutacao_canonica,false);
+});
+
+test("dossiês regionais consultam origem, tema e falta de assentamentos curados",async()=>{
+  const ds=await atlas.getRegionalDossiers();
+  assert.equal(ds.length,3);
+  assert.equal((await atlas.getRegionalDossier("dossie-regional:caatinga")).regiao_id,"regiao:caatinga");
+  assert.equal(await atlas.getRegionalDossier("dossie-regional:ausente"),null);
+  const without=await atlas.searchRegionalDossiers({semAssentamentosCurados:true});
+  assert.deepEqual(without.map(x=>x.regiao_id),["regiao:caatinga","regiao:foz-rio-ancestral"]);
+  assert.equal((await atlas.searchRegionalDossiers({temaPergunta:"mobilidade"})).length,1);
+  assert.equal((await atlas.searchRegionalDossiers({dinamicaId:"dinamica:pilhagens"})).length,2);
+  assert.equal((await atlas.getRegionalDossierIndexes()).by_ausencia_assentamento_curado.sim.length,2);
+});
+test("dossiê não interpreta região sem assentamento cadastrado como desabitada",async()=>{
+  const dossier=await atlas.getRegionalDossier("dossie-regional:caatinga");
+  const old=JSON.stringify(dossier);
+  const review=reviewRegionalDossier(dossier);
+  assert.equal(review.aviso_sem_assentamento_curado,true);
+  assert.equal(review.indicadores_de_cobertura.assentamentos,0);
+  assert.equal(review.nao_significa,"regiao_desabitada_ou_sem_recursos");
+  assert.equal(review.eventos_campanha_confirmados.length,0);
+  assert.deepEqual(review.regioes_das_dinamicas[0].papeis_regionais,["origem"]);
+  review.questoes[0].pergunta="Pergunta local modificada";
+  review.regioes_das_dinamicas[0].papeis_regionais.push("destino");
+  assert.equal(JSON.stringify(dossier),old);
+  assert.throws(()=>reviewRegionalDossier({id:"dossie-regional:falso",inventario:{},perguntas:[]}),TypeError);
+});
+test("cruzamento entre regiões preserva papéis origem/destino",async()=>{
+  const caatinga=reviewRegionalDossier(await atlas.getRegionalDossier("dossie-regional:caatinga"));
+  const coast=reviewRegionalDossier(await atlas.getRegionalDossier("dossie-regional:costa-sul"));
+  assert.deepEqual(caatinga.regioes_das_dinamicas[0].papeis_regionais,["origem"]);
+  assert.deepEqual(coast.regioes_das_dinamicas[0].papeis_regionais,["destino"]);
+  assert.equal(caatinga.mutacao_canonica,false);
+  assert.deepEqual(coast.efeitos_dw_aplicados,[]);
 });
