@@ -54,6 +54,22 @@ def build():
     material_balances=sorted(load("data/balancos_materiais_costa_sul.json")["balancos"],key=lambda r:r["id"])
     ecological_pressures=sorted(load("data/pressoes_ecologicas_costa_sul.json")["pressoes"],key=lambda r:r["id"])
     support_profiles=sorted(load("data/capacidade_suporte_costa_sul.json")["perfis"],key=lambda r:r["id"])
+    infrastructure_profiles=sorted(load("data/infraestrutura_assentamentos_costa_sul.json")["perfis"],key=lambda r:r["id"])
+    infrastructure_indexes={k:defaultdict(set) for k in
+                            ("by_assentamento","by_natureza","by_setor_documentado","by_setor_sem_dados","by_dependencia")}
+    for infrastructure in infrastructure_profiles:
+        item_id=infrastructure["id"]
+        add(infrastructure_indexes["by_assentamento"],infrastructure["assentamento_id"],item_id)
+        add(infrastructure_indexes["by_natureza"],infrastructure["natureza"],item_id)
+        for sector in infrastructure["setores"]:
+            field="by_setor_documentado" if sector["estado"]=="evidencia_parcial" else "by_setor_sem_dados"
+            add(infrastructure_indexes[field],sector["id"],item_id)
+            for did in sector["dependencias_relacionadas"]:
+                add(infrastructure_indexes["by_dependencia"],did,item_id)
+    infrastructure_indexes={
+        name:{key:sorted(ids) for key,ids in sorted(group.items())}
+        for name,group in infrastructure_indexes.items()
+    }
     support_index={k:defaultdict(set) for k in ("by_assentamento","by_natureza","by_mobilidade_sazonal")}
     for p in support_profiles:
         sid=p["id"]
@@ -150,7 +166,9 @@ def build():
         "ecological_pressures":"ecological-pressures.json",
         "ecological_pressure_indexes":"ecological-pressure-indexes.json",
         "support_profiles":"support-profiles.json",
-        "support_indexes":"support-indexes.json"
+        "support_indexes":"support-indexes.json",
+        "infrastructure_profiles":"infrastructure-profiles.json",
+        "infrastructure_indexes":"infrastructure-indexes.json"
     }
     manifest = {
         "schema_version":"0.1.0", "descricao":"Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
@@ -163,6 +181,8 @@ def build():
         "total_balancos_materiais":len(material_balances),
         "total_pressoes_ecologicas":len(ecological_pressures),
         "total_perfis_suporte":len(support_profiles),
+        "total_perfis_infraestrutura":len(infrastructure_profiles),
+        "total_setores_infraestrutura":sum(len(x["setores"]) for x in infrastructure_profiles),
         "arquivos":files, "estado":"curadoria_em_andamento",
         "nota":"Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."
     }
@@ -182,7 +202,9 @@ def build():
         files["ecological_pressures"]:ecological_pressures,
         files["ecological_pressure_indexes"]:pressure_index,
         files["support_profiles"]:support_profiles,
-        files["support_indexes"]:support_index
+        files["support_indexes"]:support_index,
+        files["infrastructure_profiles"]:infrastructure_profiles,
+        files["infrastructure_indexes"]:infrastructure_indexes
     }
 
 def main():

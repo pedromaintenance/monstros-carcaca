@@ -35,6 +35,20 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getMaterialDependencies(){return byKey("material_dependencies");}
   async function getMaterialBalances(){return byKey("material_balances");}
   async function getSupportProfiles(){return byKey("support_profiles");}
+  async function getInfrastructureProfiles(){return byKey("infrastructure_profiles");}
+  async function getInfrastructureIndexes(){return byKey("infrastructure_indexes");}
+  async function getInfrastructureProfile(id){
+    if(typeof id!=="string"||!id.startsWith("infraestrutura:"))return null;
+    return (await getInfrastructureProfiles()).find(p=>p.id===id)??null;
+  }
+  async function searchInfrastructureProfiles({assentamentoId,natureza,setorId,estadoSetor}={}){
+    return (await getInfrastructureProfiles()).filter(p=>
+      (!assentamentoId||p.assentamento_id===assentamentoId)&&
+      (!natureza||p.natureza===natureza)&&
+      (!setorId||p.setores.some(s=>s.id===setorId&&(!estadoSetor||s.estado===estadoSetor)))&&
+      (setorId||!estadoSetor||p.setores.some(s=>s.estado===estadoSetor))
+    );
+  }
   async function getSupportIndexes(){return byKey("support_indexes");}
   async function getSupportProfile(id){
     if(typeof id!=="string"||!id.startsWith("suporte:"))return null;
@@ -124,7 +138,9 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getFronts,getSettlements,getSettlementLabels,getSettlementIndexes,
           getPeoples,getFlows,getMaterialDependencies,getMaterialDependencyIndexes,
           getMaterialBalances,getMaterialBalanceIndexes,getSupportProfiles,
-          getSupportIndexes,getSupportProfile,searchSupportProfiles,getEcologicalPressures,
+          getSupportIndexes,getSupportProfile,searchSupportProfiles,
+          getInfrastructureProfiles,getInfrastructureIndexes,getInfrastructureProfile,
+          searchInfrastructureProfiles,getEcologicalPressures,
           getEcologicalPressureIndexes,searchMaterialBalances,searchEcologicalPressures,
           searchMaterialDependencies,getSettlement,searchSettlements,
           getSettlementScenarios,getSettlementScenario,searchSettlementScenarios,
