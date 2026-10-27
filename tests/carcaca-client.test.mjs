@@ -33,7 +33,11 @@ const fixtures={
     lore_chronology:"lore-chronology.json",lore_review_notes:"lore-review-notes.json",
     lore_atlas_links:"lore-atlas-links.json",
     lore_atlas_link_indexes:"lore-atlas-link-indexes.json",
-    hack_mechanics_index:"hack-mechanics-index.json"}},
+    hack_mechanics_index:"hack-mechanics-index.json",
+    lore_relations:"lore-relations.json",
+    lore_relation_indexes:"lore-relation-indexes.json",
+    hack_selected_movements:"hack-selected-movements.json",
+    hack_selected_movement_indexes:"hack-selected-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -46,6 +50,28 @@ const fixtures={
   ],
   "creatures.json":[{id:"carcaca:criatura:joro",dungeon_world:{instinto:"Testar visitantes"}}],
   "regions.json":[{id:"regiao:caatinga",lugares:[]},{id:"regiao:costa-sul",lugares:[]},{id:"regiao:eldroth",lugares:[]}],
+  "lore-relations.json":[
+    {id:"relacao-hack:kuotoa-daegon",origem_id:"lore-hack:kuo-toa",
+     destino_id:"lore-hack:daegon",tipo:"culto",pagina:5,
+     estado:"afirmado_no_manuscrito",aplicacao_canonica:false},
+    {id:"relacao-hack:tortles-ilhas",origem_id:"lore-hack:tortles",
+     destino_id:"lore-hack:ilhas-monasticas",tipo:"habitat_insular",pagina:14,
+     estado:"afirmado_no_manuscrito",aplicacao_canonica:false}
+  ],
+  "lore-relation-indexes.json":{by_tipo:{culto:["relacao-hack:kuotoa-daegon"]}},
+  "hack-selected-movements.json":[
+    {id:"movimento-revisado:paragrafo-829",categoria:"povo",grupo:"HUMANOS",
+     titulo:"PORTOMONTENSE",requisito_literal:null,paragrafo_docx:829,
+     estado:"titulo_e_requisito_conferidos_no_docx",efeito_revisado:false,aplicacao_canonica:false},
+    {id:"movimento-revisado:paragrafo-1131",categoria:"classe",grupo:"GUERREIRO",
+     titulo:"MAU OLHADO",requisito_literal:"Vendo Vermelho",paragrafo_docx:1131,
+     estado:"titulo_e_requisito_conferidos_no_docx",efeito_revisado:false,aplicacao_canonica:false},
+    {id:"movimento-revisado:paragrafo-1520",categoria:"classe",grupo:"CAÇADOR",
+     titulo:"NENHUM MUNDO É LONGE DEMAIS",requisito_literal:"Caminhante dos Horizontes e Marca do Caçador",
+     paragrafo_docx:1520,estado:"titulo_e_requisito_conferidos_no_docx",
+     efeito_revisado:false,aplicacao_canonica:false}
+  ],
+  "hack-selected-movement-indexes.json":{by_grupo:{"CAÇADOR":["movimento-revisado:paragrafo-1520"]}},
   "hack-mechanics-index.json":{
     paginas_com_texto:2,paginas_sem_texto_extraivel:[91],nao_usar_como_fato_de_ambientacao:true,
     paginas_indice:[
@@ -898,4 +924,24 @@ test("páginas mecânicas são pesquisáveis sem se tornarem fatos de ambientaç
   assert.equal((await atlas.searchHackMechanicsPages({categoria:"movimentos_de_classe"})).length,1);
   assert.equal((await atlas.searchHackMechanicsPages({pagina:49})).length,1);
   assert.equal((await atlas.searchHackMechanicsPages({query:"vendo vermelho"})).length,1);
+});
+
+test("terceira auditoria pesquisa relações com páginas e proíbe promoção automática",async()=>{
+ const a=await atlas.searchLoreRelations({entidadeId:"lore-hack:kuo-toa"});
+ assert.equal(a.length,1);
+ assert.equal(a[0].destino_id,"lore-hack:daegon");
+ assert.equal(a[0].aplicacao_canonica,false);
+ assert.equal((await atlas.searchLoreRelations({tipo:"habitat_insular",pagina:14})).length,1);
+ assert.equal((await atlas.getLoreRelationIndexes()).by_tipo.culto.length,1);
+});
+test("movimentos com REQUER literal não são aplicados ao jogo",async()=>{
+ const all=await atlas.getSelectedMovements();
+ assert.equal(all.length,3);
+ assert.equal((await atlas.searchSelectedMovements({grupo:"GUERREIRO",requisito:"Vendo Vermelho"})).length,1);
+ assert.equal((await atlas.searchSelectedMovements({categoria:"povo",texto:"portomontense"})).length,1);
+ const dependent=(await atlas.searchSelectedMovements({requisito:"Horizontes"}))[0];
+ assert.equal(dependent.titulo,"NENHUM MUNDO É LONGE DEMAIS");
+ assert.equal(dependent.efeito_revisado,false);
+ assert.equal(dependent.aplicacao_canonica,false);
+ assert.equal((await atlas.getSelectedMovementIndexes()).by_grupo["CAÇADOR"].length,1);
 });

@@ -127,6 +127,28 @@ class RegionalDossiers(unittest.TestCase):
         self.assertEqual(len(self.artifacts["creatures.json"]),7)
         self.assertEqual(len(self.artifacts["settlements.json"]),3)
 
+    def test_third_audit_relationships_and_movements(self):
+        out=self.artifacts
+        self.assertEqual(out["manifest.json"]["total_relacoes_lore_manuscrito"],26)
+        self.assertEqual(out["manifest.json"]["total_movimentos_titulos_verificados"],41)
+        self.assertEqual(out["manifest.json"]["total_movimentos_com_requisito_literal"],26)
+        rel=out["lore-relations.json"]
+        movs=out["hack-selected-movements.json"]
+        self.assertEqual(len(rel),26)
+        self.assertEqual(len(movs),41)
+        self.assertTrue(all(not x["aplicacao_canonica"] for x in rel+movs))
+        self.assertEqual(
+            [x for x in movs if x["titulo"]=="NENHUM MUNDO É LONGE DEMAIS"][0]["requisito_literal"],
+            "Caminhante dos Horizontes e Marca do Caçador")
+        self.assertEqual(
+            [x for x in movs if x["titulo"]=="A CANÇÃO QUE FEZ O MUNDO"][0]["requisito_literal"],
+            "Arte Arcana e dois outros Movimentos de Bardo")
+        self.assertTrue(all(x["efeito_revisado"] is False for x in movs))
+        self.assertTrue(out["hack-mechanics-index.json"]["conferencia_pagina_91"]["confirmada_em_renderizacao_docx"])
+        self.assertFalse(out["hack-mechanics-index.json"]["conferencia_pagina_91"]["possui_texto"])
+        self.assertEqual(len(out["creatures.json"]),7)
+        self.assertEqual(len(out["settlements.json"]),3)
+
     def test_manuscript_atlas_bridges_preserve_granularity(self):
         links=self.artifacts["lore-atlas-links.json"]
         self.assertEqual(len(links),14)
