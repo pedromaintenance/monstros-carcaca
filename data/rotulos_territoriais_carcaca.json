@@ -1,0 +1,34 @@
+{
+  "schema_version": "0.1.0",
+  "descricao": "Rótulos territoriais da Carcaça independentes dos rótulos de assentamentos e do sistema DW; não aplicar diretamente a uma steading sem curadoria específica.",
+  "rotulos": [
+    {
+      "id": "rotulo-territorial:fronteira_de_pilhagens",
+      "nome": "Fronteira de Pilhagens",
+      "categoria": "guerra",
+      "descricao": "Contato regional em que exilados de terras áridas realizam incursões para pilhar comunidades agrárias costeiras.",
+      "consequencia_narrativa_proposta": "Uma rota agrícola específica poderá estar exposta quando for individualizada, sem assumir ataque já ocorrido."
+    },
+    {
+      "id": "rotulo-territorial:liturgia_de_captura",
+      "nome": "Liturgia de Captura",
+      "categoria": "guerra_ritual",
+      "descricao": "Ameaça regional de incursões cujo objetivo documentado é capturar pessoas para sacrifício, não pilhar mercadorias.",
+      "consequencia_narrativa_proposta": "A seleção de alvos e a proteção de pessoas podem ser mais importantes que reservas materiais."
+    },
+    {
+      "id": "rotulo-territorial:acolhida_minoria_deslocada",
+      "nome": "Acolhida Minoritária de Deslocados",
+      "categoria": "demografia",
+      "descricao": "Presença minoritária de refugiados de Eldroth nos assentamentos maiores da Costa Sul, ainda não identificados nominalmente.",
+      "consequencia_narrativa_proposta": "Se um assentamento concreto for identificado, investigar abrigo, integração e abastecimento sem deduzir população."
+    },
+    {
+      "id": "rotulo-territorial:ausencia_de_ocupacao_feerica_direta",
+      "nome": "Sem Ocupação Feérica Direta",
+      "categoria": "politica",
+      "descricao": "No Além Sul, a aristocracia shadow fey não exerce colonização territorial direta equivalente à ocupação de Eldroth.",
+      "consequencia_narrativa_proposta": "A ausência de ocupação direta não equivale a paz, neutralidade ou inexistência de agentes feéricos."
+    }
+  ]
+}

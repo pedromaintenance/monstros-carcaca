@@ -48,6 +48,18 @@
       ],
       "status": "documentado",
       "fonte": "Ambientação - A Carcaça - Visão Geral.txt"
+    },
+    {
+      "id": "regiao:caatinga",
+      "nome": "Caatinga do Além Sul",
+      "localizacao": "Terras áridas do Além Sul; limite exato com as pradarias da Costa Sul não delimitado nas fontes",
+      "lugares": [],
+      "conflitos": [
+        "Guerras frequentes entre exilados das terras áridas e sobreviventes das pradarias costeiras",
+        "Incursões de pilhagem sobre áreas agrícolas da Costa Sul"
+      ],
+      "status": "documentado",
+      "fonte": "Ambientação - A Carcaça - Visão Geral.txt"
     }
   ]
 }

@@ -1,0 +1,139 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/dinamica-territorial.schema.json",
+  "title": "Dinâmica territorial e conflitos do Além Sul",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "tipo",
+    "fonte",
+    "estado_evidencia",
+    "escala",
+    "origem_regiao_id",
+    "destino_regiao_id",
+    "assentamento_origem_id",
+    "assentamento_alvo_id",
+    "rotulos_territoriais",
+    "atores_documentados",
+    "fato_documentado",
+    "alvos_genericos",
+    "lacunas",
+    "dimensoes_possivelmente_afetadas",
+    "perguntas",
+    "possibilidade_narrativa",
+    "evento_campanha_id",
+    "efeitos_dw_automaticos"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^dinamica:[a-z0-9-]+$"
+    },
+    "tipo": {
+      "type": "string",
+      "minLength": 4
+    },
+    "fonte": {
+      "const": "ambientacao"
+    },
+    "estado_evidencia": {
+      "enum": [
+        "documentado",
+        "inferido",
+        "proposto"
+      ]
+    },
+    "escala": {
+      "enum": [
+        "regional",
+        "entre_assentamentos"
+      ]
+    },
+    "origem_regiao_id": {
+      "type": "string",
+      "pattern": "^regiao:"
+    },
+    "destino_regiao_id": {
+      "type": "string",
+      "pattern": "^regiao:"
+    },
+    "assentamento_origem_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^assentamento:"
+    },
+    "assentamento_alvo_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^assentamento:"
+    },
+    "rotulos_territoriais": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^rotulo-territorial:"
+      }
+    },
+    "atores_documentados": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 4
+      }
+    },
+    "fato_documentado": {
+      "type": "string",
+      "minLength": 30
+    },
+    "alvos_genericos": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 3
+      }
+    },
+    "lacunas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 5
+      }
+    },
+    "dimensoes_possivelmente_afetadas": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string"
+      }
+    },
+    "perguntas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 10
+      }
+    },
+    "possibilidade_narrativa": {
+      "type": "string",
+      "minLength": 20
+    },
+    "evento_campanha_id": {
+      "type": "null"
+    },
+    "efeitos_dw_automaticos": {
+      "const": false
+    }
+  }
+}

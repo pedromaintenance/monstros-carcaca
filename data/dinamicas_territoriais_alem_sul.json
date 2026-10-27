@@ -1,0 +1,167 @@
+{
+  "schema_version": "0.1.0",
+  "escopo": "alem-sul",
+  "descricao": "Dinamicas regionais e suas consequencias hipoteticas; ataques, rotas e refugiados individuais não são atribuídos automaticamente a assentamentos nomeados.",
+  "dinamicas": [
+    {
+      "id": "dinamica:pilhagens-caatinga-pradarias",
+      "tipo": "incursao_de_pilhagem",
+      "fonte": "ambientacao",
+      "estado_evidencia": "documentado",
+      "escala": "regional",
+      "origem_regiao_id": "regiao:caatinga",
+      "destino_regiao_id": "regiao:costa-sul",
+      "assentamento_origem_id": null,
+      "assentamento_alvo_id": null,
+      "rotulos_territoriais": [
+        "rotulo-territorial:fronteira_de_pilhagens"
+      ],
+      "atores_documentados": [
+        "Exilados das terras áridas da Caatinga",
+        "Sobreviventes que plantam nas pradarias verdes próximas ao Mar de Sangue"
+      ],
+      "fato_documentado": "Há guerras constantes; habitantes das terras áridas invadem e pilham agricultores das pradarias da Costa Sul.",
+      "alvos_genericos": [
+        "Pradarias verdes cultivadas próximas ao Mar de Sangue"
+      ],
+      "lacunas": [
+        "Nenhum ataque específico a Portomonte é identificado.",
+        "Os grupos combatentes individuais, datas e números não são descritos.",
+        "A fonte não autoriza identificar todos os orcs como saqueadores."
+      ],
+      "dimensoes_possivelmente_afetadas": [
+        "agricultura",
+        "acesso_a_terra",
+        "seguranca",
+        "deslocamentos"
+      ],
+      "perguntas": [
+        "Quais pradarias são atacadas em cada campanha?",
+        "Que assentamentos concretos recebem ou perdem alimentos depois do conflito?"
+      ],
+      "possibilidade_narrativa": "Em uma campanha, a pilhagem poderá interromper a colheita de uma pradaria individualizada.",
+      "evento_campanha_id": null,
+      "efeitos_dw_automaticos": false
+    },
+    {
+      "id": "dinamica:ataques-liturgicos-costa-ilhas",
+      "tipo": "captura_sacrificial",
+      "fonte": "ambientacao",
+      "estado_evidencia": "documentado",
+      "escala": "regional",
+      "origem_regiao_id": "regiao:costa-sul",
+      "destino_regiao_id": "regiao:costa-sul",
+      "assentamento_origem_id": null,
+      "assentamento_alvo_id": null,
+      "rotulos_territoriais": [
+        "rotulo-territorial:liturgia_de_captura"
+      ],
+      "atores_documentados": [
+        "Kuo-Toa costeiros",
+        "Abissais marinhos"
+      ],
+      "fato_documentado": "Kuo-Toa e abissais marinhos atacam costas e ilhas para capturar pessoas e sacrificá-las ao Mar de Sangue.",
+      "alvos_genericos": [
+        "Litoral da Costa Sul",
+        "Ilhas da Costa Sul"
+      ],
+      "lacunas": [
+        "O local individual de cada ataque não é identificado.",
+        "A origem em cavernas específicas ou cidades subaquáticas não é conhecida.",
+        "O objetivo sacrificial não pode ser convertido em abastecimento alimentar."
+      ],
+      "dimensoes_possivelmente_afetadas": [
+        "seguranca",
+        "continuidade_populacional",
+        "mobilidade"
+      ],
+      "perguntas": [
+        "Que ilha ou núcleo costeiro se torna alvo nesta campanha?",
+        "Como a comunidade pode proteger habitantes sem pressupor uma defesa mecânica DW?"
+      ],
+      "possibilidade_narrativa": "Uma campanha pode apresentar medidas de proteção costeira depois de identificar um ataque ocorrido na mesa.",
+      "evento_campanha_id": null,
+      "efeitos_dw_automaticos": false
+    },
+    {
+      "id": "dinamica:refugiados-eldroth-maiores-assentamentos",
+      "tipo": "deslocamento_forcado_documentado",
+      "fonte": "ambientacao",
+      "estado_evidencia": "documentado",
+      "escala": "regional",
+      "origem_regiao_id": "regiao:eldroth",
+      "destino_regiao_id": "regiao:costa-sul",
+      "assentamento_origem_id": null,
+      "assentamento_alvo_id": null,
+      "rotulos_territoriais": [
+        "rotulo-territorial:acolhida_minoria_deslocada"
+      ],
+      "atores_documentados": [
+        "Refugiados provenientes de Eldroth"
+      ],
+      "fato_documentado": "Há alguns refugiados de Eldroth nos maiores assentamentos da Costa Sul e eles são minoria.",
+      "alvos_genericos": [
+        "Maiores assentamentos da Costa Sul não identificados nominalmente"
+      ],
+      "lacunas": [
+        "Não é afirmado que Portomonte os receba.",
+        "Não há contagem, percentual, cronologia nem trajetos individuais.",
+        "Não se sabe se um mesmo grupo permanece ou segue viagem."
+      ],
+      "dimensoes_possivelmente_afetadas": [
+        "abrigo",
+        "alimentacao",
+        "integracao_comunitaria",
+        "continuidade_populacional"
+      ],
+      "perguntas": [
+        "Qual assentamento específico acolhe um grupo após ser identificado em campanha?",
+        "Há abrigo e provisões suficientes para acolher pessoas sem reduzir sua segurança?"
+      ],
+      "possibilidade_narrativa": "Em um save, o mestre poderá registrar o acolhimento em uma cidade nomeada, sem reescrever o registro regional.",
+      "evento_campanha_id": null,
+      "efeitos_dw_automaticos": false
+    },
+    {
+      "id": "dinamica:nao-ocupacao-direta-alem-sul",
+      "tipo": "configuracao_politica",
+      "fonte": "ambientacao",
+      "estado_evidencia": "documentado",
+      "escala": "regional",
+      "origem_regiao_id": "regiao:caatinga",
+      "destino_regiao_id": "regiao:costa-sul",
+      "assentamento_origem_id": null,
+      "assentamento_alvo_id": null,
+      "rotulos_territoriais": [
+        "rotulo-territorial:ausencia_de_ocupacao_feerica_direta"
+      ],
+      "atores_documentados": [
+        "Povos do Além Sul",
+        "Aristocracia shadow fey em outras regiões"
+      ],
+      "fato_documentado": "As terras da Caatinga e a costa amaldiçoada seguem sem ocupação direta dos elfos sombrios, embora o Além Sul esteja imerso em conflitos próprios.",
+      "alvos_genericos": [
+        "Caatinga",
+        "Costa Sul"
+      ],
+      "lacunas": [
+        "A fonte não define fronteiras políticas exatas nem uma guarnição nominal no Além Sul.",
+        "A ausência de ocupação direta não prova ausência de influência indireta.",
+        "Não se deve atribuir domínio shadow fey direto a Portomonte sem nova evidência."
+      ],
+      "dimensoes_possivelmente_afetadas": [
+        "autonomia_local",
+        "defesa",
+        "politica",
+        "acesso_a_recursos"
+      ],
+      "perguntas": [
+        "Quais conflitos locais persistem independentemente de guarnições shadow fey?",
+        "Onde a influência feérica indireta pode ser comprovada ou permanece rumor?"
+      ],
+      "possibilidade_narrativa": "Um mestre pode investigar diplomacia ou exploração indireta sem alterar o status regional canônico.",
+      "evento_campanha_id": null,
+      "efeitos_dw_automaticos": false
+    }
+  ]
+}
