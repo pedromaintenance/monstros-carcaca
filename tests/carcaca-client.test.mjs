@@ -41,7 +41,9 @@ const fixtures={
     hack_complete_pilot_movements:"hack-complete-pilot-movements.json",
     hack_complete_pilot_movement_indexes:"hack-complete-pilot-movement-indexes.json",
     hack_docx_tables:"hack-docx-tables.json",
-    hack_docx_table_indexes:"hack-docx-table-indexes.json"}},
+    hack_docx_table_indexes:"hack-docx-table-indexes.json",
+    hack_general_movements:"hack-general-movements.json",
+    hack_general_movement_indexes:"hack-general-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -81,6 +83,23 @@ const fixtures={
   "hack-complete-pilot-movement-indexes.json":{by_grupo:{
      "HUMANOS":["movimento-integral:paragrafo-829"],
      "ORCS DA CAATINGA":["movimento-integral:paragrafo-837"]}},
+  "hack-general-movements.json":[
+    {id:"movimento-geral:docx-30",titulo:"RECRUTAR",categoria:"avancado",
+     quadro_id:"quadro-geral-docx:30",texto_original:"Quando espalhar que está procurando alguém para contratar, role.\nCom 10+: escolha candidatos.",
+     gatilhos_literais:[{literal:"Quando espalhar que está procurando alguém para contratar, role."}],
+     marcadores_resultado_literais:[{faixa:"10+",literal:"Com 10+: escolha candidatos."}],
+     aplicacao_canonica:false},
+    {id:"movimento-geral:docx-30-mandados-pendentes",titulo:"MANDADOS PENDENTES",categoria:"avancado",
+     quadro_id:"quadro-geral-docx:30",texto_original:"Quando retornar a um lugar civilizado, role+CAR.",
+     gatilhos_literais:[{literal:"Quando retornar a um lugar civilizado, role+CAR."}],
+     marcadores_resultado_literais:[],aplicacao_canonica:false},
+    {id:"movimento-geral:docx-32",titulo:"SERVOS",categoria:"subsistema_servos",
+     quadro_id:"quadro-geral-docx:32",texto_original:"Servos trabalham para você.\nLEALDADE DOS SERVOS",
+     gatilhos_literais:[],marcadores_resultado_literais:[],aplicacao_canonica:false}
+  ],
+  "hack-general-movement-indexes.json":{
+    by_categoria:{avancado:["movimento-geral:docx-30","movimento-geral:docx-30-mandados-pendentes"],
+                  subsistema_servos:["movimento-geral:docx-32"]}},
   "hack-docx-tables.json":[
     {id:"tabela-docx:10",titulo:"Valor / Modificador",tabela_docx_indice:10,
      tipo:"tabela_numerica",texto_integral_curado:false,aplicacao_canonica:false},
@@ -996,4 +1015,18 @@ test("inventário DOCX registra quadros básicos separadamente de tabelas numér
   assert.equal((await atlas.searchDocxTables({titulo:"desafiar o perigo"}))[0].tabela_docx_indice,14);
   assert.equal((await atlas.getDocxTableIndexes()).by_tipo.quadro_movimento_geral.length,2);
   assert.ok(all.every(x=>x.aplicacao_canonica===false));
+});
+
+test("movimentos gerais do Hack distinguem Recrutar de Mandados Pendentes",async()=>{
+  const ambos=await atlas.searchGeneralMovements({quadroId:"quadro-geral-docx:30"});
+  assert.equal(ambos.length,2);
+  assert.deepEqual(ambos.map(x=>x.titulo),["RECRUTAR","MANDADOS PENDENTES"]);
+  assert.equal(ambos.every(x=>x.aplicacao_canonica===false),true);
+  assert.equal((await atlas.searchGeneralMovements({faixa:"10+"})).length,1);
+  assert.equal((await atlas.searchGeneralMovements({query:"civilizado"}))[0].titulo,"MANDADOS PENDENTES");
+  assert.equal((await atlas.getGeneralMovement("movimento-geral:docx-32")).titulo,"SERVOS");
+  assert.equal((await atlas.searchGeneralMovements({comGatilho:false})).length,1);
+  assert.equal(await atlas.getGeneralMovement("movimento-geral:docx-99"),null);
+  const indices=await atlas.getGeneralMovementIndexes();
+  assert.equal(indices.by_categoria.avancado.length,2);
 });
