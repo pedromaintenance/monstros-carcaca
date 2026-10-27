@@ -1,0 +1,377 @@
+[
+  {
+    "id": "pendencia:caatinga-habitacao",
+    "pergunta_id": "pergunta:caatinga-habitacao",
+    "regiao_id": "regiao:caatinga",
+    "dossie_id": "dossie-regional:caatinga",
+    "tema": "abrigo",
+    "pergunta": "Onde vivem os exilados da Caatinga, e que abrigo e materiais utilizam?",
+    "estado": "aguarda_nova_fonte",
+    "ordem_editorial": 1,
+    "faixa_prioridade": "primeiro_lote",
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [
+      "Nome ou delimitação de comunidade na Caatinga",
+      "Descrição material de abrigo ou local de residência"
+    ],
+    "justificativa_editorial": "Identificar ao menos uma comunidade ou localidade por fonte primária, sem presumir que já seja uma steading.",
+    "artefatos_potenciais": [
+      "lugar",
+      "assentamento_rascunho"
+    ],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:costa-sul-agua",
+    "pergunta_id": "pergunta:costa-sul-agua",
+    "regiao_id": "regiao:costa-sul",
+    "dossie_id": "dossie-regional:costa-sul",
+    "tema": "subsistencia",
+    "pergunta": "A purificação realizada pelo templo sustenta outros usos além da lavoura?",
+    "estado": "aguarda_nova_fonte",
+    "ordem_editorial": 2,
+    "faixa_prioridade": "primeiro_lote",
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [
+      "Uso expressamente permitido da água purificada",
+      "Origem ou método de obtenção de água doméstica em Portomonte"
+    ],
+    "justificativa_editorial": "Verificar se o rito de Deméter é apropriado a consumo humano ou apenas ao cultivo; nenhuma potabilidade é pressuposta.",
+    "artefatos_potenciais": [
+      "revisao_suporte",
+      "infraestrutura"
+    ],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:foz-agua",
+    "pergunta_id": "pergunta:foz-agua",
+    "regiao_id": "regiao:foz-rio-ancestral",
+    "dossie_id": "dossie-regional:foz-rio-ancestral",
+    "tema": "subsistencia",
+    "pergunta": "Quais fontes de alimento e água sustentam habitantes e forças da Boca do Abismo?",
+    "estado": "aguarda_nova_fonte",
+    "ordem_editorial": 3,
+    "faixa_prioridade": "primeiro_lote",
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [
+      "Fonte identificável de água e alimento",
+      "Quem utiliza os recursos e em qual lugar da foz"
+    ],
+    "justificativa_editorial": "Reunir evidências de provisões para Gualápolis/Boca do Abismo antes de supor capacidade populacional.",
+    "artefatos_potenciais": [
+      "fluxo_material_proposto",
+      "assentamento_rascunho"
+    ],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:eldroth-abrigos",
+    "pergunta_id": "pergunta:eldroth-abrigos",
+    "regiao_id": "regiao:eldroth",
+    "dossie_id": "dossie-regional:eldroth",
+    "tema": "abrigo",
+    "pergunta": "Quais refúgios ou assentamentos civis de Eldroth podem ser nomeados com base em fontes futuras?",
+    "estado": "aguarda_nova_fonte",
+    "ordem_editorial": 4,
+    "faixa_prioridade": "primeiro_lote",
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [
+      "Refúgio ou comunidade civil com nome/localização documentados",
+      "Condição de ocupação, material e habitantes sem inferir alimentação"
+    ],
+    "justificativa_editorial": "Diferenciar abrigo civil, covil de mortos-vivos e simples lugar de mapa.",
+    "artefatos_potenciais": [
+      "lugar",
+      "assentamento_rascunho"
+    ],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:caatinga-abastecimento",
+    "pergunta_id": "pergunta:caatinga-abastecimento",
+    "regiao_id": "regiao:caatinga",
+    "dossie_id": "dossie-regional:caatinga",
+    "tema": "subsistencia",
+    "pergunta": "Quais alimentos e águas sustentam essas comunidades sem supor uma cultura agrícola específica?",
+    "estado": "aguarda_nova_fonte",
+    "ordem_editorial": 5,
+    "faixa_prioridade": "segundo_lote",
+    "depende_de_perguntas": [
+      "pergunta:caatinga-habitacao"
+    ],
+    "evidencias_necessarias": [
+      "Origem de água e alimentos para a comunidade identificada",
+      "Circuito de entrada, produção ou estocagem com fonte"
+    ],
+    "justificativa_editorial": "Depois de identificar ao menos uma comunidade, pesquisar sua subsistência sem criar dietas e poços imaginários.",
+    "artefatos_potenciais": [
+      "perfil_suporte_rascunho",
+      "balanco_nao_quantificado"
+    ],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:foz-reabastecimento",
+    "pergunta_id": "pergunta:foz-reabastecimento",
+    "regiao_id": "regiao:foz-rio-ancestral",
+    "dossie_id": "dossie-regional:foz-rio-ancestral",
+    "tema": "logistica",
+    "pergunta": "Como chegariam provisões a assentamentos próximos de uma queda colossal do rio?",
+    "estado": "aguarda_nova_fonte",
+    "ordem_editorial": 6,
+    "faixa_prioridade": "segundo_lote",
+    "depende_de_perguntas": [
+      "pergunta:foz-agua"
+    ],
+    "evidencias_necessarias": [
+      "Ponto de origem e destino concretos",
+      "Meio de transporte e restrição ligada à queda do rio"
+    ],
+    "justificativa_editorial": "Investigar trajetos de provisão depois de identificar a natureza dos recursos e seus usuários.",
+    "artefatos_potenciais": [
+      "fluxo_material_proposto",
+      "infraestrutura"
+    ],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:eldroth-deslocados",
+    "pergunta_id": "pergunta:eldroth-deslocados",
+    "regiao_id": "regiao:eldroth",
+    "dossie_id": "dossie-regional:eldroth",
+    "tema": "mobilidade",
+    "pergunta": "Que evidências detalham as saídas de Eldroth e os destinos específicos na Costa Sul?",
+    "estado": "aguarda_nova_fonte",
+    "ordem_editorial": 7,
+    "faixa_prioridade": "segundo_lote",
+    "depende_de_perguntas": [
+      "pergunta:eldroth-abrigos"
+    ],
+    "evidencias_necessarias": [
+      "Origem concreta de ao menos um grupo de deslocados",
+      "Trajeto e destino, explicitamente amparados por fonte"
+    ],
+    "justificativa_editorial": "Buscar origem e trajetos de deslocados sem deduzir quantidades, datas ou cidades de acolhimento.",
+    "artefatos_potenciais": [
+      "relacao_territorial_local_proposta"
+    ],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:costa-sul-migracao",
+    "pergunta_id": "pergunta:costa-sul-migracao",
+    "regiao_id": "regiao:costa-sul",
+    "dossie_id": "dossie-regional:costa-sul",
+    "tema": "mobilidade",
+    "pergunta": "Em quais assentamentos estão os refugiados de Eldroth, sem pressupor Portomonte?",
+    "estado": "aguarda_nova_fonte",
+    "ordem_editorial": 8,
+    "faixa_prioridade": "segundo_lote",
+    "depende_de_perguntas": [
+      "pergunta:eldroth-deslocados"
+    ],
+    "evidencias_necessarias": [
+      "Nome do assentamento receptor e vínculo a um grupo documentado",
+      "Evidência de presença local distinta de acolhimento institucional formal"
+    ],
+    "justificativa_editorial": "Identificar destinos costeiros dos refugiados sem equiparar os maiores centros exclusivamente a Portomonte.",
+    "artefatos_potenciais": [
+      "assentamento_rascunho",
+      "relacao_territorial_local_proposta"
+    ],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:caatinga-deslocamento",
+    "pergunta_id": "pergunta:caatinga-deslocamento",
+    "regiao_id": "regiao:caatinga",
+    "dossie_id": "dossie-regional:caatinga",
+    "tema": "mobilidade",
+    "pergunta": "Há deslocamentos entre localidades da Caatinga que possam ser comprovados em novas fontes?",
+    "estado": "aguarda_priorizacao",
+    "ordem_editorial": null,
+    "faixa_prioridade": null,
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [],
+    "justificativa_editorial": null,
+    "artefatos_potenciais": [],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:caatinga-guerras",
+    "pergunta_id": "pergunta:caatinga-guerras",
+    "regiao_id": "regiao:caatinga",
+    "dossie_id": "dossie-regional:caatinga",
+    "tema": "conflito",
+    "pergunta": "Quais grupos concretos participam das pilhagens, e quais rotas utilizam?",
+    "estado": "aguarda_priorizacao",
+    "ordem_editorial": null,
+    "faixa_prioridade": null,
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [],
+    "justificativa_editorial": null,
+    "artefatos_potenciais": [],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:costa-sul-ataques",
+    "pergunta_id": "pergunta:costa-sul-ataques",
+    "regiao_id": "regiao:costa-sul",
+    "dossie_id": "dossie-regional:costa-sul",
+    "tema": "conflito",
+    "pergunta": "Quais comunidades ou ilhas específicas sofreram ataques em acontecimentos confirmados?",
+    "estado": "aguarda_priorizacao",
+    "ordem_editorial": null,
+    "faixa_prioridade": null,
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [],
+    "justificativa_editorial": null,
+    "artefatos_potenciais": [],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:costa-sul-infraestrutura",
+    "pergunta_id": "pergunta:costa-sul-infraestrutura",
+    "regiao_id": "regiao:costa-sul",
+    "dossie_id": "dossie-regional:costa-sul",
+    "tema": "abrigo",
+    "pergunta": "Onde há depósitos, moradias e caminhos efetivamente documentados?",
+    "estado": "aguarda_priorizacao",
+    "ordem_editorial": null,
+    "faixa_prioridade": null,
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [],
+    "justificativa_editorial": null,
+    "artefatos_potenciais": [],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:eldroth-ocupacao",
+    "pergunta_id": "pergunta:eldroth-ocupacao",
+    "regiao_id": "regiao:eldroth",
+    "dossie_id": "dossie-regional:eldroth",
+    "tema": "conflito",
+    "pergunta": "Qual a extensão concreta dos controles de Sylara e Damaris sobre lugares individuais?",
+    "estado": "aguarda_priorizacao",
+    "ordem_editorial": null,
+    "faixa_prioridade": null,
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [],
+    "justificativa_editorial": null,
+    "artefatos_potenciais": [],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:eldroth-subsistencia",
+    "pergunta_id": "pergunta:eldroth-subsistencia",
+    "regiao_id": "regiao:eldroth",
+    "dossie_id": "dossie-regional:eldroth",
+    "tema": "subsistencia",
+    "pergunta": "Como sobrevivem os grupos não subjugados na floresta, com quais fontes documentadas de comida e água?",
+    "estado": "aguarda_priorizacao",
+    "ordem_editorial": null,
+    "faixa_prioridade": null,
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [],
+    "justificativa_editorial": null,
+    "artefatos_potenciais": [],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:foz-alianca",
+    "pergunta_id": "pergunta:foz-alianca",
+    "regiao_id": "regiao:foz-rio-ancestral",
+    "dossie_id": "dossie-regional:foz-rio-ancestral",
+    "tema": "conflito",
+    "pergunta": "Que compromissos materiais comprovados sustentam a aliança tensa entre nativos e Ulorian?",
+    "estado": "aguarda_priorizacao",
+    "ordem_editorial": null,
+    "faixa_prioridade": null,
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [],
+    "justificativa_editorial": null,
+    "artefatos_potenciais": [],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  },
+  {
+    "id": "pendencia:foz-resistencia",
+    "pergunta_id": "pergunta:foz-resistencia",
+    "regiao_id": "regiao:foz-rio-ancestral",
+    "dossie_id": "dossie-regional:foz-rio-ancestral",
+    "tema": "abrigo",
+    "pergunta": "Que lugares e estruturas oferecem abrigo sem presumir que todo ossário seja habitável?",
+    "estado": "aguarda_priorizacao",
+    "ordem_editorial": null,
+    "faixa_prioridade": null,
+    "depende_de_perguntas": [],
+    "evidencias_necessarias": [],
+    "justificativa_editorial": null,
+    "artefatos_potenciais": [],
+    "fonte_base": "ambientacao",
+    "resposta_confirmada": null,
+    "evidencia_nova": null,
+    "mutacao_canonica": false,
+    "efeitos_dw_automaticos": false
+  }
+]

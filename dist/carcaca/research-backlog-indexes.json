@@ -1,0 +1,165 @@
+{
+  "by_regiao": {
+    "regiao:caatinga": [
+      "pendencia:caatinga-abastecimento",
+      "pendencia:caatinga-deslocamento",
+      "pendencia:caatinga-guerras",
+      "pendencia:caatinga-habitacao"
+    ],
+    "regiao:costa-sul": [
+      "pendencia:costa-sul-agua",
+      "pendencia:costa-sul-ataques",
+      "pendencia:costa-sul-infraestrutura",
+      "pendencia:costa-sul-migracao"
+    ],
+    "regiao:eldroth": [
+      "pendencia:eldroth-abrigos",
+      "pendencia:eldroth-deslocados",
+      "pendencia:eldroth-ocupacao",
+      "pendencia:eldroth-subsistencia"
+    ],
+    "regiao:foz-rio-ancestral": [
+      "pendencia:foz-agua",
+      "pendencia:foz-alianca",
+      "pendencia:foz-reabastecimento",
+      "pendencia:foz-resistencia"
+    ]
+  },
+  "by_tema": {
+    "abrigo": [
+      "pendencia:caatinga-habitacao",
+      "pendencia:costa-sul-infraestrutura",
+      "pendencia:eldroth-abrigos",
+      "pendencia:foz-resistencia"
+    ],
+    "conflito": [
+      "pendencia:caatinga-guerras",
+      "pendencia:costa-sul-ataques",
+      "pendencia:eldroth-ocupacao",
+      "pendencia:foz-alianca"
+    ],
+    "logistica": [
+      "pendencia:foz-reabastecimento"
+    ],
+    "mobilidade": [
+      "pendencia:caatinga-deslocamento",
+      "pendencia:costa-sul-migracao",
+      "pendencia:eldroth-deslocados"
+    ],
+    "subsistencia": [
+      "pendencia:caatinga-abastecimento",
+      "pendencia:costa-sul-agua",
+      "pendencia:eldroth-subsistencia",
+      "pendencia:foz-agua"
+    ]
+  },
+  "by_estado": {
+    "aguarda_nova_fonte": [
+      "pendencia:caatinga-abastecimento",
+      "pendencia:caatinga-habitacao",
+      "pendencia:costa-sul-agua",
+      "pendencia:costa-sul-migracao",
+      "pendencia:eldroth-abrigos",
+      "pendencia:eldroth-deslocados",
+      "pendencia:foz-agua",
+      "pendencia:foz-reabastecimento"
+    ],
+    "aguarda_priorizacao": [
+      "pendencia:caatinga-deslocamento",
+      "pendencia:caatinga-guerras",
+      "pendencia:costa-sul-ataques",
+      "pendencia:costa-sul-infraestrutura",
+      "pendencia:eldroth-ocupacao",
+      "pendencia:eldroth-subsistencia",
+      "pendencia:foz-alianca",
+      "pendencia:foz-resistencia"
+    ]
+  },
+  "by_faixa_prioridade": {
+    "primeiro_lote": [
+      "pendencia:caatinga-habitacao",
+      "pendencia:costa-sul-agua",
+      "pendencia:eldroth-abrigos",
+      "pendencia:foz-agua"
+    ],
+    "segundo_lote": [
+      "pendencia:caatinga-abastecimento",
+      "pendencia:costa-sul-migracao",
+      "pendencia:eldroth-deslocados",
+      "pendencia:foz-reabastecimento"
+    ]
+  },
+  "by_dependencia": {
+    "pergunta:caatinga-habitacao": [
+      "pendencia:caatinga-abastecimento"
+    ],
+    "pergunta:eldroth-abrigos": [
+      "pendencia:eldroth-deslocados"
+    ],
+    "pergunta:eldroth-deslocados": [
+      "pendencia:costa-sul-migracao"
+    ],
+    "pergunta:foz-agua": [
+      "pendencia:foz-reabastecimento"
+    ]
+  },
+  "by_artefato_potencial": {
+    "assentamento_rascunho": [
+      "pendencia:caatinga-habitacao",
+      "pendencia:costa-sul-migracao",
+      "pendencia:eldroth-abrigos",
+      "pendencia:foz-agua"
+    ],
+    "balanco_nao_quantificado": [
+      "pendencia:caatinga-abastecimento"
+    ],
+    "fluxo_material_proposto": [
+      "pendencia:foz-agua",
+      "pendencia:foz-reabastecimento"
+    ],
+    "infraestrutura": [
+      "pendencia:costa-sul-agua",
+      "pendencia:foz-reabastecimento"
+    ],
+    "lugar": [
+      "pendencia:caatinga-habitacao",
+      "pendencia:eldroth-abrigos"
+    ],
+    "perfil_suporte_rascunho": [
+      "pendencia:caatinga-abastecimento"
+    ],
+    "relacao_territorial_local_proposta": [
+      "pendencia:costa-sul-migracao",
+      "pendencia:eldroth-deslocados"
+    ],
+    "revisao_suporte": [
+      "pendencia:costa-sul-agua"
+    ]
+  },
+  "by_dossie": {
+    "dossie-regional:caatinga": [
+      "pendencia:caatinga-abastecimento",
+      "pendencia:caatinga-deslocamento",
+      "pendencia:caatinga-guerras",
+      "pendencia:caatinga-habitacao"
+    ],
+    "dossie-regional:costa-sul": [
+      "pendencia:costa-sul-agua",
+      "pendencia:costa-sul-ataques",
+      "pendencia:costa-sul-infraestrutura",
+      "pendencia:costa-sul-migracao"
+    ],
+    "dossie-regional:eldroth": [
+      "pendencia:eldroth-abrigos",
+      "pendencia:eldroth-deslocados",
+      "pendencia:eldroth-ocupacao",
+      "pendencia:eldroth-subsistencia"
+    ],
+    "dossie-regional:foz-rio-ancestral": [
+      "pendencia:foz-agua",
+      "pendencia:foz-alianca",
+      "pendencia:foz-reabastecimento",
+      "pendencia:foz-resistencia"
+    ]
+  }
+}
