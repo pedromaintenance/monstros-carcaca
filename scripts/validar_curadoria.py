@@ -564,7 +564,11 @@ def validar_indice_mecanicas_manuscrito():
 
 def validar_terceira_auditoria_manuscrito():
     """Índices verificados de relações e movimentos, sem interpretar regras além do título e REQUER."""
-    from scripts.gerar_indices_curadoria import norm
+    import re
+    import unicodedata
+    def norm(value):
+        text=unicodedata.normalize("NFKD",str(value or "")).encode("ascii","ignore").decode().lower()
+        return re.sub(r"\\s+"," ",text).strip()
     source=load("fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")
     names={x["id"] for x in load("data/lore/hack-carcaca-dw-indice-tematico.json")["entradas"]}
     page_text={p["pagina"]:norm(p["texto"]) for p in source["paginas"]}
