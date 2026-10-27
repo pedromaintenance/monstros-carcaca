@@ -102,6 +102,77 @@ def validate_ecossistema(fontes, rids, lids, lugares):
     print(f"Ecossistema válido: {len(assentamentos)} registros, "
           f"{len(tags)} rótulos, {len(povos)} povos, {len(fluxos)} fluxos.")
 
+
+def validar_dependencias_e_exemplos(fontes):
+    """Graus de evidência, integridade do grafo e exemplos de campanhas; nada é executado."""
+    dependencias=load("data/dependencias_materiais_costa_sul.json")["dependencias"]
+    assentamentos=gather("curadoria/assentamentos")
+    fluxos=load("data/fluxos_costa_sul.json")["fluxos"]
+    cenarios=[]
+    for path in sorted((ROOT/"cenarios/assentamentos").glob("*.json")):
+        cenarios.extend(load(path.relative_to(ROOT))["cenarios"])
+    ids_assentamentos={x["id"] for x in assentamentos}
+    ids_fluxos={x["id"] for x in fluxos}
+    ids_cenarios={x["id"] for x in cenarios}
+    ids_dependencias=unique(dependencias,"dependencias materiais")
+    by_id={x["id"]:x for x in dependencias}
+    schema=load("schemas/dependencia-material.schema.json")
+    Draft202012Validator.check_schema(schema)
+    check=Draft202012Validator(schema)
+    for dep in dependencias:
+        errors=list(check.iter_errors(dep))
+        require(not errors,f"Dependência com schema inválido {dep['id']}: {errors[:1]}")
+        require(dep["assentamento_id"] in ids_assentamentos,
+                f"Assentamento de dependência inexistente: {dep['id']}")
+        require(dep["fluxo_id"] in ids_fluxos,
+                f"Fluxo de dependência inexistente: {dep['id']}")
+        require(dep["fonte"] in fontes,
+                f"Fonte de dependência inexistente: {dep['id']}")
+        upstream=dep["depende_de_id"]
+        if upstream is not None:
+            require(upstream in ids_dependencias,f"Dependência predecessora inexistente: {dep['id']}")
+            require(by_id[upstream]["assentamento_id"]==dep["assentamento_id"],
+                    f"Dependências entre assentamentos requerem fluxo explícito: {dep['id']}")
+        flow=next(f for f in fluxos if f["id"]==dep["fluxo_id"])
+        require(flow.get("origem_assentamento_id")==dep["assentamento_id"]
+                or flow.get("destino_assentamento_id")==dep["assentamento_id"],
+                f"Fluxo não toca o assentamento: {dep['id']}")
+        if dep["estado_evidencia"]=="documentado":
+            require(flow["status"]=="documentado",
+                    f"Dependência não pode ser mais confirmada que seu fluxo: {dep['id']}")
+    visiting=set()
+    visited=set()
+    def walk(node):
+        if node in visited:return
+        require(node not in visiting,f"Ciclo de dependências materiais: {node}")
+        visiting.add(node)
+        upstream=by_id[node]["depende_de_id"]
+        if upstream is not None:walk(upstream)
+        visiting.remove(node)
+        visited.add(node)
+    for node in ids_dependencias:walk(node)
+
+    ledger_schema=load("schemas/estado-campanha.schema.json")
+    Draft202012Validator.check_schema(ledger_schema)
+    ledger_check=Draft202012Validator(ledger_schema)
+    samples=sorted((ROOT/"exemplos/campanhas").glob("*.json"))
+    for p in samples:
+        example=load(p.relative_to(ROOT))
+        errors=list(ledger_check.iter_errors(example))
+        require(not errors,f"Exemplo de campanha inválido {p.name}: {errors[:1]}")
+        unique(example["eventos"],"eventos de "+example["id"])
+        require(example["revisao"]==len(example["eventos"]),
+                "Revisão não corresponde a eventos: "+example["id"])
+        for event in example["eventos"]:
+            require(event["assentamento_id"] in ids_assentamentos,
+                    "Evento de exemplo aponta para assentamento inexistente")
+            if event["fonte_cenario_id"] is not None:
+                require(event["fonte_cenario_id"] in ids_cenarios,
+                        "Evento aponta para cenário inexistente")
+    print(f"Grafo material validado: {len(dependencias)} dependências sem ciclos, "
+          f"{len(samples)} exemplos de campanha sem efeito canônico.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -183,6 +254,7 @@ def main():
                 "Assentamento teve classificação DW inferida")
 
     validate_ecossistema(fontes, rids, lids, lugares)
+    validar_dependencias_e_exemplos(fontes)
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
