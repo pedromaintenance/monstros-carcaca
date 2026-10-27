@@ -33,6 +33,23 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getPeoples(){return byKey("peoples");}
   async function getFlows(){return byKey("flows");}
   async function getMaterialDependencies(){return byKey("material_dependencies");}
+  async function getMaterialBalances(){return byKey("material_balances");}
+  async function getMaterialBalanceIndexes(){return byKey("material_balance_indexes");}
+  async function getEcologicalPressures(){return byKey("ecological_pressures");}
+  async function getEcologicalPressureIndexes(){return byKey("ecological_pressure_indexes");}
+  async function searchMaterialBalances({assentamentoId,tipoRecurso,recursoId,sazonalidade}={}){
+    return (await getMaterialBalances()).filter(b=>
+      (!assentamentoId||b.assentamento_id===assentamentoId)&&
+      (!tipoRecurso||b.tipo_recurso===tipoRecurso)&&
+      (!recursoId||b.recurso_id===recursoId)&&
+      (!sazonalidade||b.sazonalidade.tipo===sazonalidade));
+  }
+  async function searchEcologicalPressures({assentamentoId,dependenciaId,tipo}={}){
+    return (await getEcologicalPressures()).filter(p=>
+      (!assentamentoId||p.assentamento_id===assentamentoId)&&
+      (!dependenciaId||p.dependencias_ids.includes(dependenciaId))&&
+      (!tipo||p.tipo===tipo));
+  }
   async function getMaterialDependencyIndexes(){return byKey("material_dependency_indexes");}
   async function searchMaterialDependencies({assentamentoId,fluxoId,tipo,estadoEvidencia}={}){
     return (await getMaterialDependencies()).filter(item=>
@@ -93,6 +110,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   return {getManifest,getCatalog,getIndexes,getRegions,getPlaces,getFactions,
           getFronts,getSettlements,getSettlementLabels,getSettlementIndexes,
           getPeoples,getFlows,getMaterialDependencies,getMaterialDependencyIndexes,
+          getMaterialBalances,getMaterialBalanceIndexes,getEcologicalPressures,
+          getEcologicalPressureIndexes,searchMaterialBalances,searchEcologicalPressures,
           searchMaterialDependencies,getSettlement,searchSettlements,
           getSettlementScenarios,getSettlementScenario,searchSettlementScenarios,
           getTypes,get,search};
