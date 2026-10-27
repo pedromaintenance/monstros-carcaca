@@ -138,3 +138,26 @@ def build_bard_indexes(movements):
           if item["tipo"]=="quantidade_movimentos_grupo"]),
       "by_titulo":ordered_index(movements,lambda m:[m["titulo"]]),
     }
+
+
+def build_martial_artist_indexes(movements):
+    """Indexa todos os braços de REQUER (VOO exige os dois). Sem homologar seleção."""
+    def required_ids(m):
+        req=m["requisito_estruturado"]
+        if not req:return []
+        if req["tipo"]=="movimento_exato":return [req["movimento_id"]]
+        if req["tipo"]=="todos":
+            return [item["movimento_id"] for item in req["itens"]
+                    if item["tipo"]=="movimento_exato"]
+        return []
+    return {
+      "by_requisito_tipo":ordered_index(movements,lambda m:[
+          (m["requisito_estruturado"] or {}).get("tipo","nenhum")]),
+      "by_tem_requer":ordered_index(movements,lambda m:[
+          "sim" if m["requisito_literal"] else "nao"]),
+      "by_tem_opcoes":ordered_index(movements,lambda m:[
+          "sim" if m["opcoes"] else "nao"]),
+      "by_paragrafo":ordered_index(movements,lambda m:[m["paragrafo_docx"]]),
+      "by_requisito_id":ordered_index(movements,required_ids),
+      "by_titulo":ordered_index(movements,lambda m:[m["titulo"]]),
+    }
