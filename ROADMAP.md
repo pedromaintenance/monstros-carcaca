@@ -300,3 +300,18 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] `dist/carcaca/regional-dossiers.json`: Caatinga e Eldroth sem assentamento curado; foz com 7 criaturas e 1 frente; Costa Sul com 3 comunidades, 5 dependências, 4 fluxos e 4 pressões hipotéticas.
 - [x] `dist/carcaca/regional-dossier-indexes.json`: índices por região, dinâmica, local, assentamento, tema e ausência de assentamento curado publicados.
 - [x] Nenhum cenário hipotético ou frente foi convertido em evento confirmado e nenhum vetor vazio foi interpretado como ausência real de habitantes.
+
+## Ciclo 13 — Fila de lacunas priorizadas (2026-10-27)
+
+- [x] Usar as 16 perguntas **já presentes** nos quatro dossiês, sem duplicar ou substituir fontes.
+- [x] Priorizar oito questões em dois lotes de quatro, duas por região, com ordem editorial 1 a 8.
+- [x] Definir **4 precedências editoriais** entre questões; não transformar ordem de pesquisa em causalidade ficcional.
+- [x] Identificar a evidência que falta e os artefatos que poderão ser propostos depois de verificação humana.
+- [x] Manter as outras oito perguntas como `aguarda_priorizacao`, com ordem nula, não descartadas.
+- [x] Produzir saída indexada `dist/carcaca/research-backlog.json`, derivada dos dossiês + metadados prioritários, e `research-backlog-indexes.json`.
+- [x] Proteger integridade dos IDs, sequência de prioridades, precedência acíclica por ordem, existência de fonte e `autoriza_criacao_canonica:false`.
+- [x] Criar API de consulta da fila e função de revisão puramente editorial.
+- [x] Testar JavaScript e Python integrado com o atlas real, exigindo zero respostas inseridas artificialmente.
+- [x] Documentar método e ordem em `docs/FILA_CURADORIA_M3.md`.
+- [ ] Próximo: pesquisar profundamente um único item prioritário e marcar como lacuna persistente quando as fontes não forem suficientes.
+- [ ] Implementar fluxo de aprovação de novas respostas somente após revisão editorial específica; a fila por si não cria cânone ou salva eventos de campanha.

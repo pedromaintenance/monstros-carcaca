@@ -277,3 +277,17 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 - Inspecionados diretamente os arquivos em `dist/carcaca/`: `manifest.json` (4 dossiês, 16 perguntas), `regional-dossiers.json` (quatro regiões; Costa Sul com três comunidades e quatro dinâmicas; foz com sete criaturas e uma frente; Eldroth e Caatinga sem assentamentos curados), `regional-dossier-indexes.json` (seis grupos de índices).
 - Incidências duplicadas na mesma região possuem dois **papéis** em uma única relação, não dois eventos. As contagens são registros cadastrados, nunca métricas populacionais ou índices de perigo.
 - O dossiê e os testes passaram após correção do ID acentuado. Encerramento deste lote verificado.
+
+## 2026-10-27 · Ciclo 13 — Organizar pendências materiais por precedência
+
+**Objetivo:** não repetir aleatoriamente pesquisa sobre cada região. Das 16 perguntas derivadas dos dossiês do ciclo 12, oito foram colocadas em ordem de trabalho, com dois lotes de quatro questões (duas por região no conjunto) e quatro vínculos de precedência editorial.
+
+**Primeiro lote:** localizar uma comunidade da Caatinga; verificar usos da água de Deméter; investigar água/alimentos na foz; identificar abrigo civil documentável em Eldroth.
+
+**Segundo lote:** buscar abastecimento da comunidade da Caatinga previamente identificada; investigar rotas de reabastecimento da foz; identificar origens e itinerários dos deslocados de Eldroth; investigar quais cidades da Costa Sul receberam esses refugiados.
+
+**Cuidados de proveniência:** a localização de um povoado não define seu consumo; água purificada para agricultura não é automaticamente potável; ausência de assentamentos curados na foz ou na Caatinga não é ausência real de moradores. Nenhuma questão recebeu resposta de cânone, nem houve confirmação de evento DW.
+
+**Arquitetura:** prioridades curadas somente em `data/prioridades_curadoria_m3.json` com schema; gerador combina prioridades e `data/guias_dossies_regionais.json`, sem copiar manualmente 16 registros paralelos; índices de busca; consulta ESM e revisão sem mutações. Testes Python e JavaScript verificam contagens, ordem, fontes e isolamento.
+
+**Documento:** `docs/FILA_CURADORIA_M3.md`. Próxima unidade: uma pesquisa de fonte autoral por vez, baseada na fila e no que já está escrito.

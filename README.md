@@ -128,3 +128,9 @@ O atlas acrescenta `regiao:caatinga`, sem inventar assentamentos nem fronteiras 
 O atlas possui `dist/carcaca/regional-dossiers.json`, uma visão consolidada de **quatro regiões com 16 perguntas materiais e políticas**. Os dossiês incluem os registros curados por referência, sem duplicar novas fichas: localidades, assentamentos, criaturas, frentes propostas, fluxos, pressões hipotéticas e vínculos territoriais com origem/destino. **Uma região sem fichas de assentamento não está necessariamente desabitada.**
 
 Os guias autorais estão em `data/guias_dossies_regionais.json`; a consulta é feita por `getRegionalDossier` e `searchRegionalDossiers`; os índices são publicados em `regional-dossier-indexes.json`. Consulte [Dossiês Regionais do M3](docs/DOSSIES_REGIONAIS_M3.md).
+
+## Ciclo 13 — Fila de curadoria vinculada aos dossiês
+
+A pesquisa do M3 passa a ter uma **fila publicada de 16 perguntas regionais**. Oito possuem prioridade editorial; outras oito permanecem aguardando ordenação. Todas continuam sem respostas documentais conclusivas neste ciclo.
+
+`data/prioridades_curadoria_m3.json` armazena as prioridades sem duplicar os guias; os produtos publicados são `research-backlog.json` e `research-backlog-indexes.json`. O cliente permite `getResearchBacklog` e `searchResearchBacklog`; `reviewResearchBacklog` revisa a fila sem alterar a lore. [Consultar a fila de pesquisa](docs/FILA_CURADORIA_M3.md).

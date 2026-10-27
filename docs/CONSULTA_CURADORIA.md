@@ -183,3 +183,16 @@ const mobilidade=await atlas.searchRegionalDossiers({temaPergunta:"mobilidade"})
 ```
 
 A documentação agora possui **quatro dossiês** com referência às fichas existentes, indexáveis por região, local, assentamento, dinâmica e tema de pergunta. `reviewRegionalDossier` não afirma existência ou ausência física de população, não calcula perigo e não aplica DW. Ver `docs/DOSSIES_REGIONAIS_M3.md`.
+
+## Prioridades de pesquisa e lacunas (ciclo 13)
+
+```js
+import {reviewResearchBacklog} from "./src/carcaca-research.mjs";
+const fila=await atlas.getResearchBacklog();
+const criticas=await atlas.searchResearchBacklog({faixaPrioridade:"primeiro_lote"});
+const caatinga=await atlas.searchResearchBacklog({regiaoId:"regiao:caatinga"});
+const indice=await atlas.getResearchBacklogIndexes();
+const revisao=reviewResearchBacklog(fila);
+```
+
+**Todas as 16 questões permanecem sem resposta nova registrada**. Oito estão ordenadas; as demais aguardam prioridade. `reviewResearchBacklog` apresenta dependências editoriais e lacunas, não responde automaticamente às questões ou aprova qualquer mudança de cânone. Veja `docs/FILA_CURADORIA_M3.md`.
