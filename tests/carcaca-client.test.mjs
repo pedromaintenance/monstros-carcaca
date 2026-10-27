@@ -2,6 +2,7 @@ import test from "node:test";
 import assert from "node:assert/strict";
 import {createCarcacaAtlas, previewSettlementScenario,previewMaterialInterruption} from "../src/carcaca-client.mjs";
 import {createCampaignLedger,recordCampaignEvent,getCampaignEvents} from "../src/carcaca-campaign-state.mjs";
+import {previewMaterialBalance,BALANCE_FIELDS} from "../src/carcaca-material-balance.mjs";
 
 const fixtures={
   "manifest.json":{arquivos:{catalog:"catalog.json",creatures:"creatures.json",
@@ -10,7 +11,9 @@ const fixtures={
     settlement_indexes:"settlement-indexes.json",peoples:"peoples.json",
     flows:"flows.json",settlement_scenarios:"settlement-scenarios.json",
     material_dependencies:"material-dependencies.json",
-    material_dependency_indexes:"material-dependency-indexes.json"}},
+    material_dependency_indexes:"material-dependency-indexes.json",
+    material_balances:"material-balances.json",material_balance_indexes:"material-balance-indexes.json",
+    ecological_pressures:"ecological-pressures.json",ecological_pressure_indexes:"ecological-pressure-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -54,6 +57,23 @@ const fixtures={
      desconhecidos:["Rotas"]}
   ],
   "material-dependency-indexes.json":{by_assentamento:{"assentamento:portomonte":["dependencia:purificar","dependencia:lavoura"]}},
+  "material-balances.json":[
+    {id:"balanco:agua",assentamento_id:"assentamento:portomonte",
+     recurso_id:"recurso:agua_purificada",tipo_recurso:"agua_transformada",
+     sazonalidade:{tipo:"nao_documentada"},
+     medidas:Object.fromEntries(["estoque_inicial","producao","entradas","consumo","saidas","perdas","estoque_final"].map(k=>
+       [k,{valor:null,unidade:null,periodo:null,origem_medicao:null}]))},
+    {id:"balanco:mercadorias",assentamento_id:"assentamento:portomonte",
+     recurso_id:null,tipo_recurso:"mercadoria_nao_identificada",
+     sazonalidade:{tipo:"nao_documentada"},medidas:{}}
+  ],
+  "material-balance-indexes.json":{by_assentamento:{"assentamento:portomonte":["balanco:agua","balanco:mercadorias"]}},
+  "ecological-pressures.json":[
+    {id:"pressao:falha",assentamento_id:"assentamento:portomonte",
+     dependencias_ids:["dependencia:purificar"],tipo:"falha_ritual",
+     estado:"risco_hipotetico_nao_ocorrido",efeito_dw_automatico:false,evento_campanha_id:null}
+  ],
+  "ecological-pressure-indexes.json":{by_dependencia:{"dependencia:purificar":["pressao:falha"]}},
   "settlement-scenarios.json":[
     {id:"cenario:teste",estado:"hipotese_nao_acontecida",mutacao_canonica:false,
      movimento_dw:"Want",assentamentos:["assentamento:portomonte"],
@@ -185,4 +205,58 @@ test("cenário de DW precisa existir para virar referência de evento local",()=
     settlementIds:["assentamento:portomonte"],scenarioIds:["cenario:teste"]});
   assert.equal(next.eventos[0].fonte_cenario_id,"cenario:teste");
   assert.equal(next.eventos[0].efeitos_adjudicados.length,1);
+});
+
+test("consultas de balanço e pressão ecológica usam filtros e índices",async()=>{
+  const bs=await atlas.searchMaterialBalances({
+    assentamentoId:"assentamento:portomonte",tipoRecurso:"agua_transformada"});
+  assert.equal(bs.length,1);
+  assert.equal(bs[0].medidas.producao.valor,null);
+  assert.equal((await atlas.getMaterialBalances()).length,2);
+  assert.equal((await atlas.getMaterialBalanceIndexes()).by_assentamento["assentamento:portomonte"].length,2);
+  assert.equal((await atlas.searchEcologicalPressures({dependenciaId:"dependencia:purificar"})).length,1);
+  assert.equal((await atlas.getEcologicalPressureIndexes()).by_dependencia["dependencia:purificar"].length,1);
+});
+test("saldo recusa quantidades ausentes em vez de inventar zeros",async()=>{
+  const [agua]=await atlas.searchMaterialBalances({tipoRecurso:"agua_transformada"});
+  const before=JSON.stringify(agua);
+  const preview=previewMaterialBalance(agua);
+  assert.equal(preview.calculavel,false);
+  assert.equal(preview.motivo,"dados_insuficientes");
+  assert.equal(preview.faltantes.length,6);
+  assert.equal(preview.mutacao_canonica,false);
+  assert.deepEqual(preview.efeitos_dw_aplicados,[]);
+  assert.equal(JSON.stringify(agua),before);
+});
+test("saldo hipotético mantém unidade/período e calcula o déficit separadamente",async()=>{
+  const [agua]=await atlas.searchMaterialBalances({tipoRecurso:"agua_transformada"});
+  const make=(values)=>Object.fromEntries(BALANCE_FIELDS.map((k,i)=>[k,{
+    valor:values[i],unidade:"litro",periodo:"exemplo-p1",
+    origem_medicao:"dados_ficticios_de_teste"}]));
+  const values=make([100,30,0,70,10,5]);
+  const before=JSON.stringify(agua);
+  const result=previewMaterialBalance(agua,{medidas:values});
+  assert.equal(result.calculavel,true);
+  assert.equal(result.saldo_teorico,45);
+  assert.equal(result.estoque_final_nao_negativo,45);
+  assert.equal(result.deficit_teorico,0);
+  const deficit=previewMaterialBalance(agua,{medidas:make([10,0,0,50,0,0])});
+  assert.equal(deficit.saldo_teorico,-40);
+  assert.equal(deficit.estoque_final_nao_negativo,0);
+  assert.equal(deficit.deficit_teorico,40);
+  assert.equal(JSON.stringify(agua),before);
+});
+test("saldo recusa misturar unidades ou períodos e não equaciona recursos desconhecidos",async()=>{
+  const bs=await atlas.getMaterialBalances();
+  const water=bs[0],unidentified=bs[1];
+  const valid=Object.fromEntries(BALANCE_FIELDS.map(k=>[k,{
+    valor:0,unidade:"litro",periodo:"exemplo-p1",origem_medicao:"ficticio"}]));
+  const badUnit={...valid,consumo:{...valid.consumo,unidade:"quilograma"}};
+  const badPeriod={...valid,producao:{...valid.producao,periodo:"exemplo-p2"}};
+  assert.equal(previewMaterialBalance(water,{medidas:badUnit}).motivo,"unidade_ou_periodo_incompativel");
+  assert.equal(previewMaterialBalance(water,{medidas:badPeriod}).motivo,"unidade_ou_periodo_incompativel");
+  assert.equal(previewMaterialBalance(unidentified,{medidas:valid}).motivo,"recurso_nao_identificado");
+  const missingOrigin={...valid,consumo:{...valid.consumo,origem_medicao:null}};
+  assert.equal(previewMaterialBalance(water,{medidas:missingOrigin}).motivo,"dados_insuficientes");
+  assert.throws(()=>previewMaterialBalance(water,{modo:"alterar_canon"}),TypeError);
 });
