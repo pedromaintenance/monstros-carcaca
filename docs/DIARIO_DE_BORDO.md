@@ -269,3 +269,11 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 **Correção durante o ciclo:** um identificador de pergunta da foz continha acento e não passou no schema; foi normalizado para `pergunta:foz-alianca`. Os testes posteriores devem ser conferidos antes do encerramento.
 
 **Continuidade:** filas de lacunas de curadoria sem transformar perguntas em novos fatos ou resultados DW. Documento completo em `docs/DOSSIES_REGIONAIS_M3.md`.
+
+### Verificação final de distribuição — ciclo 12
+
+- Pipeline final conferido: https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40443128581, estado `completed`, conclusão `success`.
+- Todas as cinco etapas principais foram concluídas: validador Python, testes Node, novos testes Python de integração, geração determinística com `--check`, publicação automática.
+- Inspecionados diretamente os arquivos em `dist/carcaca/`: `manifest.json` (4 dossiês, 16 perguntas), `regional-dossiers.json` (quatro regiões; Costa Sul com três comunidades e quatro dinâmicas; foz com sete criaturas e uma frente; Eldroth e Caatinga sem assentamentos curados), `regional-dossier-indexes.json` (seis grupos de índices).
+- Incidências duplicadas na mesma região possuem dois **papéis** em uma única relação, não dois eventos. As contagens são registros cadastrados, nunca métricas populacionais ou índices de perigo.
+- O dossiê e os testes passaram após correção do ID acentuado. Encerramento deste lote verificado.

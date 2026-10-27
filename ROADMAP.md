@@ -292,3 +292,11 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Documentar resultados e questões em `docs/DOSSIES_REGIONAIS_M3.md`.
 - [ ] Próximo lote: fila prioritária de lacunas de fontes, com dependências entre questões materiais e políticas.
 - [ ] Não transformar povoações não individualizadas em steadings nem atribuir populações, consumo ou perdas territoriais por inferência.
+
+### Validação e publicação verificadas — ciclo 12
+
+- [x] [GitHub Actions #40443128581](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40443128581): `success` para validação de curadoria, testes ESM, testes de integração Python sobre dados reais, geração determinística e publicação.
+- [x] `dist/carcaca/manifest.json`: **4 dossiês regionais, 16 perguntas, 4 regiões, 7 criaturas, 3 assentamentos**.
+- [x] `dist/carcaca/regional-dossiers.json`: Caatinga e Eldroth sem assentamento curado; foz com 7 criaturas e 1 frente; Costa Sul com 3 comunidades, 5 dependências, 4 fluxos e 4 pressões hipotéticas.
+- [x] `dist/carcaca/regional-dossier-indexes.json`: índices por região, dinâmica, local, assentamento, tema e ausência de assentamento curado publicados.
+- [x] Nenhum cenário hipotético ou frente foi convertido em evento confirmado e nenhum vetor vazio foi interpretado como ausência real de habitantes.
