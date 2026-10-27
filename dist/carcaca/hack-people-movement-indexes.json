@@ -1,0 +1,752 @@
+{
+  "by_grupo": {
+    "ABISSAIS": [
+      "movimento-povo:paragrafo-924",
+      "movimento-povo:paragrafo-931",
+      "movimento-povo:paragrafo-932",
+      "movimento-povo:paragrafo-933",
+      "movimento-povo:paragrafo-934",
+      "movimento-povo:paragrafo-936"
+    ],
+    "ANÕES DE THARGRID": [
+      "movimento-povo:paragrafo-845",
+      "movimento-povo:paragrafo-846",
+      "movimento-povo:paragrafo-848",
+      "movimento-povo:paragrafo-849",
+      "movimento-povo:paragrafo-855",
+      "movimento-povo:paragrafo-856",
+      "movimento-povo:paragrafo-857"
+    ],
+    "DRACONATOS DE THARGRID": [
+      "movimento-povo:paragrafo-877",
+      "movimento-povo:paragrafo-884",
+      "movimento-povo:paragrafo-885",
+      "movimento-povo:paragrafo-886",
+      "movimento-povo:paragrafo-887",
+      "movimento-povo:paragrafo-892"
+    ],
+    "ELFOS DA FLORESTA": [
+      "movimento-povo:paragrafo-1002",
+      "movimento-povo:paragrafo-1003",
+      "movimento-povo:paragrafo-1004",
+      "movimento-povo:paragrafo-1005",
+      "movimento-povo:paragrafo-1006"
+    ],
+    "ELFOS YOKAI": [
+      "movimento-povo:paragrafo-1000",
+      "movimento-povo:paragrafo-992",
+      "movimento-povo:paragrafo-993",
+      "movimento-povo:paragrafo-998",
+      "movimento-povo:paragrafo-999"
+    ],
+    "FEÉRICOS E FADAS": [
+      "movimento-povo:paragrafo-968",
+      "movimento-povo:paragrafo-973",
+      "movimento-povo:paragrafo-978",
+      "movimento-povo:paragrafo-979",
+      "movimento-povo:paragrafo-988",
+      "movimento-povo:paragrafo-989",
+      "movimento-povo:paragrafo-990"
+    ],
+    "GIGANTES DE THARGRID": [
+      "movimento-povo:paragrafo-863",
+      "movimento-povo:paragrafo-869",
+      "movimento-povo:paragrafo-870",
+      "movimento-povo:paragrafo-871",
+      "movimento-povo:paragrafo-872",
+      "movimento-povo:paragrafo-873",
+      "movimento-povo:paragrafo-874"
+    ],
+    "GNOMOS": [
+      "movimento-povo:paragrafo-1016",
+      "movimento-povo:paragrafo-1017",
+      "movimento-povo:paragrafo-1018",
+      "movimento-povo:paragrafo-1023",
+      "movimento-povo:paragrafo-1024",
+      "movimento-povo:paragrafo-1025",
+      "movimento-povo:paragrafo-1026",
+      "movimento-povo:paragrafo-1027"
+    ],
+    "HOBBITS": [
+      "movimento-povo:paragrafo-1008",
+      "movimento-povo:paragrafo-1009",
+      "movimento-povo:paragrafo-1010",
+      "movimento-povo:paragrafo-1011",
+      "movimento-povo:paragrafo-1012",
+      "movimento-povo:paragrafo-1013",
+      "movimento-povo:paragrafo-1014"
+    ],
+    "HUMANOS": [
+      "movimento-povo:paragrafo-827",
+      "movimento-povo:paragrafo-828",
+      "movimento-povo:paragrafo-829",
+      "movimento-povo:paragrafo-830",
+      "movimento-povo:paragrafo-831",
+      "movimento-povo:paragrafo-832"
+    ],
+    "KUO-TOA": [
+      "movimento-povo:paragrafo-913",
+      "movimento-povo:paragrafo-919",
+      "movimento-povo:paragrafo-920",
+      "movimento-povo:paragrafo-921",
+      "movimento-povo:paragrafo-922"
+    ],
+    "MEIO-DEMÔNIOS": [
+      "movimento-povo:paragrafo-1029",
+      "movimento-povo:paragrafo-1030",
+      "movimento-povo:paragrafo-1032",
+      "movimento-povo:paragrafo-1037",
+      "movimento-povo:paragrafo-1038",
+      "movimento-povo:paragrafo-1039",
+      "movimento-povo:paragrafo-1040"
+    ],
+    "ORCS DA CAATINGA": [
+      "movimento-povo:paragrafo-834",
+      "movimento-povo:paragrafo-835",
+      "movimento-povo:paragrafo-836",
+      "movimento-povo:paragrafo-837",
+      "movimento-povo:paragrafo-842",
+      "movimento-povo:paragrafo-843"
+    ],
+    "SEREIAS": [
+      "movimento-povo:paragrafo-947",
+      "movimento-povo:paragrafo-948",
+      "movimento-povo:paragrafo-949",
+      "movimento-povo:paragrafo-950"
+    ],
+    "SHADOW FEY": [
+      "movimento-povo:paragrafo-952",
+      "movimento-povo:paragrafo-953",
+      "movimento-povo:paragrafo-954",
+      "movimento-povo:paragrafo-956",
+      "movimento-povo:paragrafo-965",
+      "movimento-povo:paragrafo-966"
+    ],
+    "TABAXIS DAS ILHAS": [
+      "movimento-povo:paragrafo-906",
+      "movimento-povo:paragrafo-908",
+      "movimento-povo:paragrafo-909",
+      "movimento-povo:paragrafo-910",
+      "movimento-povo:paragrafo-911"
+    ],
+    "TORTLES DAS ILHAS": [
+      "movimento-povo:paragrafo-896",
+      "movimento-povo:paragrafo-897",
+      "movimento-povo:paragrafo-898",
+      "movimento-povo:paragrafo-903",
+      "movimento-povo:paragrafo-904"
+    ],
+    "TRITÕES": [
+      "movimento-povo:paragrafo-941",
+      "movimento-povo:paragrafo-942",
+      "movimento-povo:paragrafo-943",
+      "movimento-povo:paragrafo-944",
+      "movimento-povo:paragrafo-945"
+    ]
+  },
+  "by_marcador": {
+    "Corpo": [
+      "movimento-povo:paragrafo-1029",
+      "movimento-povo:paragrafo-1030",
+      "movimento-povo:paragrafo-1037",
+      "movimento-povo:paragrafo-1038",
+      "movimento-povo:paragrafo-836",
+      "movimento-povo:paragrafo-863",
+      "movimento-povo:paragrafo-872",
+      "movimento-povo:paragrafo-877",
+      "movimento-povo:paragrafo-896",
+      "movimento-povo:paragrafo-909",
+      "movimento-povo:paragrafo-910",
+      "movimento-povo:paragrafo-919",
+      "movimento-povo:paragrafo-924",
+      "movimento-povo:paragrafo-988"
+    ],
+    "Corpo/Cultura": [
+      "movimento-povo:paragrafo-1003",
+      "movimento-povo:paragrafo-834",
+      "movimento-povo:paragrafo-855",
+      "movimento-povo:paragrafo-869",
+      "movimento-povo:paragrafo-873",
+      "movimento-povo:paragrafo-921",
+      "movimento-povo:paragrafo-934",
+      "movimento-povo:paragrafo-947"
+    ],
+    "Cultura": [
+      "movimento-povo:paragrafo-1002",
+      "movimento-povo:paragrafo-1004",
+      "movimento-povo:paragrafo-1005",
+      "movimento-povo:paragrafo-1006",
+      "movimento-povo:paragrafo-1008",
+      "movimento-povo:paragrafo-1009",
+      "movimento-povo:paragrafo-1010",
+      "movimento-povo:paragrafo-1011",
+      "movimento-povo:paragrafo-1012",
+      "movimento-povo:paragrafo-1013",
+      "movimento-povo:paragrafo-1014",
+      "movimento-povo:paragrafo-1016",
+      "movimento-povo:paragrafo-1017",
+      "movimento-povo:paragrafo-1018",
+      "movimento-povo:paragrafo-1023",
+      "movimento-povo:paragrafo-1025",
+      "movimento-povo:paragrafo-1026",
+      "movimento-povo:paragrafo-1027",
+      "movimento-povo:paragrafo-1040",
+      "movimento-povo:paragrafo-827",
+      "movimento-povo:paragrafo-828",
+      "movimento-povo:paragrafo-829",
+      "movimento-povo:paragrafo-830",
+      "movimento-povo:paragrafo-831",
+      "movimento-povo:paragrafo-832",
+      "movimento-povo:paragrafo-837",
+      "movimento-povo:paragrafo-842",
+      "movimento-povo:paragrafo-843",
+      "movimento-povo:paragrafo-845",
+      "movimento-povo:paragrafo-846",
+      "movimento-povo:paragrafo-848",
+      "movimento-povo:paragrafo-849",
+      "movimento-povo:paragrafo-856",
+      "movimento-povo:paragrafo-857",
+      "movimento-povo:paragrafo-870",
+      "movimento-povo:paragrafo-871",
+      "movimento-povo:paragrafo-874",
+      "movimento-povo:paragrafo-884",
+      "movimento-povo:paragrafo-885",
+      "movimento-povo:paragrafo-886",
+      "movimento-povo:paragrafo-887",
+      "movimento-povo:paragrafo-892",
+      "movimento-povo:paragrafo-897",
+      "movimento-povo:paragrafo-898",
+      "movimento-povo:paragrafo-903",
+      "movimento-povo:paragrafo-904",
+      "movimento-povo:paragrafo-906",
+      "movimento-povo:paragrafo-908",
+      "movimento-povo:paragrafo-911",
+      "movimento-povo:paragrafo-931",
+      "movimento-povo:paragrafo-932",
+      "movimento-povo:paragrafo-936",
+      "movimento-povo:paragrafo-941",
+      "movimento-povo:paragrafo-942",
+      "movimento-povo:paragrafo-943",
+      "movimento-povo:paragrafo-944",
+      "movimento-povo:paragrafo-945",
+      "movimento-povo:paragrafo-948",
+      "movimento-povo:paragrafo-949",
+      "movimento-povo:paragrafo-950",
+      "movimento-povo:paragrafo-953",
+      "movimento-povo:paragrafo-954",
+      "movimento-povo:paragrafo-966"
+    ],
+    "Cultura/Magia": [
+      "movimento-povo:paragrafo-1024",
+      "movimento-povo:paragrafo-992"
+    ],
+    "Fé": [
+      "movimento-povo:paragrafo-922"
+    ],
+    "Fé/Cultura": [
+      "movimento-povo:paragrafo-933"
+    ],
+    "Magia/Cultura": [
+      "movimento-povo:paragrafo-1000"
+    ],
+    "Memória Cultural": [
+      "movimento-povo:paragrafo-835"
+    ],
+    "Natureza": [
+      "movimento-povo:paragrafo-1032",
+      "movimento-povo:paragrafo-1039",
+      "movimento-povo:paragrafo-913",
+      "movimento-povo:paragrafo-952",
+      "movimento-povo:paragrafo-965",
+      "movimento-povo:paragrafo-968",
+      "movimento-povo:paragrafo-973",
+      "movimento-povo:paragrafo-978",
+      "movimento-povo:paragrafo-979",
+      "movimento-povo:paragrafo-989",
+      "movimento-povo:paragrafo-990"
+    ],
+    "Natureza/Cultura": [
+      "movimento-povo:paragrafo-920",
+      "movimento-povo:paragrafo-956"
+    ],
+    "Tradição": [
+      "movimento-povo:paragrafo-993",
+      "movimento-povo:paragrafo-998",
+      "movimento-povo:paragrafo-999"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-povo:paragrafo-1000",
+      "movimento-povo:paragrafo-1002",
+      "movimento-povo:paragrafo-1003",
+      "movimento-povo:paragrafo-1004",
+      "movimento-povo:paragrafo-1005",
+      "movimento-povo:paragrafo-1006",
+      "movimento-povo:paragrafo-1008",
+      "movimento-povo:paragrafo-1009",
+      "movimento-povo:paragrafo-1010",
+      "movimento-povo:paragrafo-1011",
+      "movimento-povo:paragrafo-1012",
+      "movimento-povo:paragrafo-1013",
+      "movimento-povo:paragrafo-1014",
+      "movimento-povo:paragrafo-1016",
+      "movimento-povo:paragrafo-1017",
+      "movimento-povo:paragrafo-1023",
+      "movimento-povo:paragrafo-1024",
+      "movimento-povo:paragrafo-1025",
+      "movimento-povo:paragrafo-1026",
+      "movimento-povo:paragrafo-1027",
+      "movimento-povo:paragrafo-1029",
+      "movimento-povo:paragrafo-1030",
+      "movimento-povo:paragrafo-1037",
+      "movimento-povo:paragrafo-1038",
+      "movimento-povo:paragrafo-1039",
+      "movimento-povo:paragrafo-1040",
+      "movimento-povo:paragrafo-827",
+      "movimento-povo:paragrafo-828",
+      "movimento-povo:paragrafo-829",
+      "movimento-povo:paragrafo-830",
+      "movimento-povo:paragrafo-831",
+      "movimento-povo:paragrafo-832",
+      "movimento-povo:paragrafo-834",
+      "movimento-povo:paragrafo-835",
+      "movimento-povo:paragrafo-836",
+      "movimento-povo:paragrafo-842",
+      "movimento-povo:paragrafo-843",
+      "movimento-povo:paragrafo-845",
+      "movimento-povo:paragrafo-846",
+      "movimento-povo:paragrafo-848",
+      "movimento-povo:paragrafo-855",
+      "movimento-povo:paragrafo-856",
+      "movimento-povo:paragrafo-869",
+      "movimento-povo:paragrafo-870",
+      "movimento-povo:paragrafo-871",
+      "movimento-povo:paragrafo-872",
+      "movimento-povo:paragrafo-873",
+      "movimento-povo:paragrafo-874",
+      "movimento-povo:paragrafo-884",
+      "movimento-povo:paragrafo-885",
+      "movimento-povo:paragrafo-886",
+      "movimento-povo:paragrafo-896",
+      "movimento-povo:paragrafo-897",
+      "movimento-povo:paragrafo-903",
+      "movimento-povo:paragrafo-904",
+      "movimento-povo:paragrafo-906",
+      "movimento-povo:paragrafo-908",
+      "movimento-povo:paragrafo-909",
+      "movimento-povo:paragrafo-910",
+      "movimento-povo:paragrafo-911",
+      "movimento-povo:paragrafo-919",
+      "movimento-povo:paragrafo-920",
+      "movimento-povo:paragrafo-921",
+      "movimento-povo:paragrafo-922",
+      "movimento-povo:paragrafo-931",
+      "movimento-povo:paragrafo-932",
+      "movimento-povo:paragrafo-933",
+      "movimento-povo:paragrafo-934",
+      "movimento-povo:paragrafo-941",
+      "movimento-povo:paragrafo-942",
+      "movimento-povo:paragrafo-943",
+      "movimento-povo:paragrafo-944",
+      "movimento-povo:paragrafo-945",
+      "movimento-povo:paragrafo-947",
+      "movimento-povo:paragrafo-948",
+      "movimento-povo:paragrafo-949",
+      "movimento-povo:paragrafo-950",
+      "movimento-povo:paragrafo-952",
+      "movimento-povo:paragrafo-953",
+      "movimento-povo:paragrafo-954",
+      "movimento-povo:paragrafo-965",
+      "movimento-povo:paragrafo-966",
+      "movimento-povo:paragrafo-978",
+      "movimento-povo:paragrafo-988",
+      "movimento-povo:paragrafo-989",
+      "movimento-povo:paragrafo-990",
+      "movimento-povo:paragrafo-992",
+      "movimento-povo:paragrafo-998",
+      "movimento-povo:paragrafo-999"
+    ],
+    "sim": [
+      "movimento-povo:paragrafo-1018",
+      "movimento-povo:paragrafo-1032",
+      "movimento-povo:paragrafo-837",
+      "movimento-povo:paragrafo-849",
+      "movimento-povo:paragrafo-857",
+      "movimento-povo:paragrafo-863",
+      "movimento-povo:paragrafo-877",
+      "movimento-povo:paragrafo-887",
+      "movimento-povo:paragrafo-892",
+      "movimento-povo:paragrafo-898",
+      "movimento-povo:paragrafo-913",
+      "movimento-povo:paragrafo-924",
+      "movimento-povo:paragrafo-936",
+      "movimento-povo:paragrafo-956",
+      "movimento-povo:paragrafo-968",
+      "movimento-povo:paragrafo-973",
+      "movimento-povo:paragrafo-979",
+      "movimento-povo:paragrafo-993"
+    ]
+  },
+  "by_paragrafo": {
+    "1000": [
+      "movimento-povo:paragrafo-1000"
+    ],
+    "1002": [
+      "movimento-povo:paragrafo-1002"
+    ],
+    "1003": [
+      "movimento-povo:paragrafo-1003"
+    ],
+    "1004": [
+      "movimento-povo:paragrafo-1004"
+    ],
+    "1005": [
+      "movimento-povo:paragrafo-1005"
+    ],
+    "1006": [
+      "movimento-povo:paragrafo-1006"
+    ],
+    "1008": [
+      "movimento-povo:paragrafo-1008"
+    ],
+    "1009": [
+      "movimento-povo:paragrafo-1009"
+    ],
+    "1010": [
+      "movimento-povo:paragrafo-1010"
+    ],
+    "1011": [
+      "movimento-povo:paragrafo-1011"
+    ],
+    "1012": [
+      "movimento-povo:paragrafo-1012"
+    ],
+    "1013": [
+      "movimento-povo:paragrafo-1013"
+    ],
+    "1014": [
+      "movimento-povo:paragrafo-1014"
+    ],
+    "1016": [
+      "movimento-povo:paragrafo-1016"
+    ],
+    "1017": [
+      "movimento-povo:paragrafo-1017"
+    ],
+    "1018": [
+      "movimento-povo:paragrafo-1018"
+    ],
+    "1023": [
+      "movimento-povo:paragrafo-1023"
+    ],
+    "1024": [
+      "movimento-povo:paragrafo-1024"
+    ],
+    "1025": [
+      "movimento-povo:paragrafo-1025"
+    ],
+    "1026": [
+      "movimento-povo:paragrafo-1026"
+    ],
+    "1027": [
+      "movimento-povo:paragrafo-1027"
+    ],
+    "1029": [
+      "movimento-povo:paragrafo-1029"
+    ],
+    "1030": [
+      "movimento-povo:paragrafo-1030"
+    ],
+    "1032": [
+      "movimento-povo:paragrafo-1032"
+    ],
+    "1037": [
+      "movimento-povo:paragrafo-1037"
+    ],
+    "1038": [
+      "movimento-povo:paragrafo-1038"
+    ],
+    "1039": [
+      "movimento-povo:paragrafo-1039"
+    ],
+    "1040": [
+      "movimento-povo:paragrafo-1040"
+    ],
+    "827": [
+      "movimento-povo:paragrafo-827"
+    ],
+    "828": [
+      "movimento-povo:paragrafo-828"
+    ],
+    "829": [
+      "movimento-povo:paragrafo-829"
+    ],
+    "830": [
+      "movimento-povo:paragrafo-830"
+    ],
+    "831": [
+      "movimento-povo:paragrafo-831"
+    ],
+    "832": [
+      "movimento-povo:paragrafo-832"
+    ],
+    "834": [
+      "movimento-povo:paragrafo-834"
+    ],
+    "835": [
+      "movimento-povo:paragrafo-835"
+    ],
+    "836": [
+      "movimento-povo:paragrafo-836"
+    ],
+    "837": [
+      "movimento-povo:paragrafo-837"
+    ],
+    "842": [
+      "movimento-povo:paragrafo-842"
+    ],
+    "843": [
+      "movimento-povo:paragrafo-843"
+    ],
+    "845": [
+      "movimento-povo:paragrafo-845"
+    ],
+    "846": [
+      "movimento-povo:paragrafo-846"
+    ],
+    "848": [
+      "movimento-povo:paragrafo-848"
+    ],
+    "849": [
+      "movimento-povo:paragrafo-849"
+    ],
+    "855": [
+      "movimento-povo:paragrafo-855"
+    ],
+    "856": [
+      "movimento-povo:paragrafo-856"
+    ],
+    "857": [
+      "movimento-povo:paragrafo-857"
+    ],
+    "863": [
+      "movimento-povo:paragrafo-863"
+    ],
+    "869": [
+      "movimento-povo:paragrafo-869"
+    ],
+    "870": [
+      "movimento-povo:paragrafo-870"
+    ],
+    "871": [
+      "movimento-povo:paragrafo-871"
+    ],
+    "872": [
+      "movimento-povo:paragrafo-872"
+    ],
+    "873": [
+      "movimento-povo:paragrafo-873"
+    ],
+    "874": [
+      "movimento-povo:paragrafo-874"
+    ],
+    "877": [
+      "movimento-povo:paragrafo-877"
+    ],
+    "884": [
+      "movimento-povo:paragrafo-884"
+    ],
+    "885": [
+      "movimento-povo:paragrafo-885"
+    ],
+    "886": [
+      "movimento-povo:paragrafo-886"
+    ],
+    "887": [
+      "movimento-povo:paragrafo-887"
+    ],
+    "892": [
+      "movimento-povo:paragrafo-892"
+    ],
+    "896": [
+      "movimento-povo:paragrafo-896"
+    ],
+    "897": [
+      "movimento-povo:paragrafo-897"
+    ],
+    "898": [
+      "movimento-povo:paragrafo-898"
+    ],
+    "903": [
+      "movimento-povo:paragrafo-903"
+    ],
+    "904": [
+      "movimento-povo:paragrafo-904"
+    ],
+    "906": [
+      "movimento-povo:paragrafo-906"
+    ],
+    "908": [
+      "movimento-povo:paragrafo-908"
+    ],
+    "909": [
+      "movimento-povo:paragrafo-909"
+    ],
+    "910": [
+      "movimento-povo:paragrafo-910"
+    ],
+    "911": [
+      "movimento-povo:paragrafo-911"
+    ],
+    "913": [
+      "movimento-povo:paragrafo-913"
+    ],
+    "919": [
+      "movimento-povo:paragrafo-919"
+    ],
+    "920": [
+      "movimento-povo:paragrafo-920"
+    ],
+    "921": [
+      "movimento-povo:paragrafo-921"
+    ],
+    "922": [
+      "movimento-povo:paragrafo-922"
+    ],
+    "924": [
+      "movimento-povo:paragrafo-924"
+    ],
+    "931": [
+      "movimento-povo:paragrafo-931"
+    ],
+    "932": [
+      "movimento-povo:paragrafo-932"
+    ],
+    "933": [
+      "movimento-povo:paragrafo-933"
+    ],
+    "934": [
+      "movimento-povo:paragrafo-934"
+    ],
+    "936": [
+      "movimento-povo:paragrafo-936"
+    ],
+    "941": [
+      "movimento-povo:paragrafo-941"
+    ],
+    "942": [
+      "movimento-povo:paragrafo-942"
+    ],
+    "943": [
+      "movimento-povo:paragrafo-943"
+    ],
+    "944": [
+      "movimento-povo:paragrafo-944"
+    ],
+    "945": [
+      "movimento-povo:paragrafo-945"
+    ],
+    "947": [
+      "movimento-povo:paragrafo-947"
+    ],
+    "948": [
+      "movimento-povo:paragrafo-948"
+    ],
+    "949": [
+      "movimento-povo:paragrafo-949"
+    ],
+    "950": [
+      "movimento-povo:paragrafo-950"
+    ],
+    "952": [
+      "movimento-povo:paragrafo-952"
+    ],
+    "953": [
+      "movimento-povo:paragrafo-953"
+    ],
+    "954": [
+      "movimento-povo:paragrafo-954"
+    ],
+    "956": [
+      "movimento-povo:paragrafo-956"
+    ],
+    "965": [
+      "movimento-povo:paragrafo-965"
+    ],
+    "966": [
+      "movimento-povo:paragrafo-966"
+    ],
+    "968": [
+      "movimento-povo:paragrafo-968"
+    ],
+    "973": [
+      "movimento-povo:paragrafo-973"
+    ],
+    "978": [
+      "movimento-povo:paragrafo-978"
+    ],
+    "979": [
+      "movimento-povo:paragrafo-979"
+    ],
+    "988": [
+      "movimento-povo:paragrafo-988"
+    ],
+    "989": [
+      "movimento-povo:paragrafo-989"
+    ],
+    "990": [
+      "movimento-povo:paragrafo-990"
+    ],
+    "992": [
+      "movimento-povo:paragrafo-992"
+    ],
+    "993": [
+      "movimento-povo:paragrafo-993"
+    ],
+    "998": [
+      "movimento-povo:paragrafo-998"
+    ],
+    "999": [
+      "movimento-povo:paragrafo-999"
+    ]
+  },
+  "by_piloto_integral": {
+    "movimento-integral:paragrafo-827": [
+      "movimento-povo:paragrafo-827"
+    ],
+    "movimento-integral:paragrafo-828": [
+      "movimento-povo:paragrafo-828"
+    ],
+    "movimento-integral:paragrafo-829": [
+      "movimento-povo:paragrafo-829"
+    ],
+    "movimento-integral:paragrafo-830": [
+      "movimento-povo:paragrafo-830"
+    ],
+    "movimento-integral:paragrafo-831": [
+      "movimento-povo:paragrafo-831"
+    ],
+    "movimento-integral:paragrafo-832": [
+      "movimento-povo:paragrafo-832"
+    ],
+    "movimento-integral:paragrafo-834": [
+      "movimento-povo:paragrafo-834"
+    ],
+    "movimento-integral:paragrafo-835": [
+      "movimento-povo:paragrafo-835"
+    ],
+    "movimento-integral:paragrafo-836": [
+      "movimento-povo:paragrafo-836"
+    ],
+    "movimento-integral:paragrafo-837": [
+      "movimento-povo:paragrafo-837"
+    ],
+    "movimento-integral:paragrafo-842": [
+      "movimento-povo:paragrafo-842"
+    ],
+    "movimento-integral:paragrafo-843": [
+      "movimento-povo:paragrafo-843"
+    ]
+  }
+}

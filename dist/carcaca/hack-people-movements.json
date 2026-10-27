@@ -1,0 +1,3176 @@
+[
+  {
+    "id": "movimento-povo:paragrafo-827",
+    "paragrafo_docx": 827,
+    "grupo": "HUMANOS",
+    "categoria": "povo",
+    "titulo": "FILHO DO RIO ANCESTRAL",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 827,
+        "tipo": "corpo",
+        "texto": "Quando procurar passagem, transporte, informação ou comércio numa comunidade do Rio Ancestral, diga que tipo de pessoa normalmente lidaria com isso. O Mestre lhe dirá onde encontrá-la ou por que não está disponível.\nQuando abordar essa pessoa utilizando os costumes e relações do Rio, receba +1 adiante para Negociar ou Abastecer com ela."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando procurar passagem, transporte, informação ou comércio numa comunidade do Rio Ancestral, diga que tipo de pessoa normalmente lidaria com isso. O Mestre lhe dirá onde encontrá-la ou por que não está disponível.\nQuando abordar essa pessoa utilizando os costumes e relações do Rio, receba +1 adiante para Negociar ou Abastecer com ela.",
+    "piloto_integral_id": "movimento-integral:paragrafo-827",
+    "revisao_preliminar_id": "movimento-revisado:paragrafo-827"
+  },
+  {
+    "id": "movimento-povo:paragrafo-828",
+    "paragrafo_docx": 828,
+    "grupo": "HUMANOS",
+    "categoria": "povo",
+    "titulo": "CRIA DE GARGANTA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 828,
+        "tipo": "corpo",
+        "texto": "Você cresceu entre fortificações, minas, ruínas e escavações. Quando examinar uma construção, túnel ou ruína, pergunte gratuitamente “Como posso entrar, sair, derrubar ou defender isto?” Se também Discernir Realidades, faça uma pergunta adicional da lista normal."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Você cresceu entre fortificações, minas, ruínas e escavações. Quando examinar uma construção, túnel ou ruína, pergunte gratuitamente “Como posso entrar, sair, derrubar ou defender isto?” Se também Discernir Realidades, faça uma pergunta adicional da lista normal.",
+    "piloto_integral_id": "movimento-integral:paragrafo-828",
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-829",
+    "paragrafo_docx": 829,
+    "grupo": "HUMANOS",
+    "categoria": "povo",
+    "titulo": "PORTOMONTENSE",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 829,
+        "tipo": "corpo",
+        "texto": "Você sabe sobreviver onde pedra, sal e mar deveriam tornar a vida impossível. Quando dispuser de algumas horas e recursos mínimos numa região costeira, sempre consegue produzir abrigo, água potável ou alimento suficiente para manter um pequeno grupo por um dia. Quando Empreender Uma Jornada Perigosa no Mar de Sangue, você sempre conta como 10+ na posição que ocupar."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Você sabe sobreviver onde pedra, sal e mar deveriam tornar a vida impossível. Quando dispuser de algumas horas e recursos mínimos numa região costeira, sempre consegue produzir abrigo, água potável ou alimento suficiente para manter um pequeno grupo por um dia. Quando Empreender Uma Jornada Perigosa no Mar de Sangue, você sempre conta como 10+ na posição que ocupar.",
+    "piloto_integral_id": "movimento-integral:paragrafo-829",
+    "revisao_preliminar_id": "movimento-revisado:paragrafo-829"
+  },
+  {
+    "id": "movimento-povo:paragrafo-830",
+    "paragrafo_docx": 830,
+    "grupo": "HUMANOS",
+    "categoria": "povo",
+    "titulo": "FILHO DE MUITOS DEUSES",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 830,
+        "tipo": "corpo",
+        "texto": "Você cresceu num lugar onde ninguém estranha um altar ao lado de outro. Quando encontrar um culto conhecido, pode reconhecer seus ritos básicos, tabus, símbolos e formas apropriadas de demonstrar respeito. Receba +1 adiante para Negociar com os locais se tiver participado de seus ritos recentemente."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Você cresceu num lugar onde ninguém estranha um altar ao lado de outro. Quando encontrar um culto conhecido, pode reconhecer seus ritos básicos, tabus, símbolos e formas apropriadas de demonstrar respeito. Receba +1 adiante para Negociar com os locais se tiver participado de seus ritos recentemente.",
+    "piloto_integral_id": "movimento-integral:paragrafo-830",
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-831",
+    "paragrafo_docx": 831,
+    "grupo": "HUMANOS",
+    "categoria": "povo",
+    "titulo": "POVO DE FRONTEIRA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 831,
+        "tipo": "corpo",
+        "texto": "Quando chegar pela primeira vez a uma comunidade ameaçada por guerra, monstros ou ocupação, pergunte: \n“O que essas pessoas aprenderam a fazer para continuar vivas?” \nO Mestre responderá com uma verdade útil. Quando agir segundo a resposta, receba 1 Preparo relacionado àquilo que aprendeu."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando chegar pela primeira vez a uma comunidade ameaçada por guerra, monstros ou ocupação, pergunte: \n“O que essas pessoas aprenderam a fazer para continuar vivas?” \nO Mestre responderá com uma verdade útil. Quando agir segundo a resposta, receba 1 Preparo relacionado àquilo que aprendeu.",
+    "piloto_integral_id": "movimento-integral:paragrafo-831",
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-832",
+    "paragrafo_docx": 832,
+    "grupo": "HUMANOS",
+    "categoria": "povo",
+    "titulo": "SOBREVIVENTE DA OCUPAÇÃO",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 832,
+        "tipo": "corpo",
+        "texto": "Quando precisar esconder sua verdadeira intenção diante de uma autoridade mais poderosa, diga que hábito de submissão aparente você aprendeu. Enquanto mantiver esse papel, ninguém perceberá sua hostilidade sem motivo concreto para suspeitar. Uma vez por sessão, quando essa falsa submissão permitir que você ou outra pessoa escape de uma consequência real da autoridade, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando precisar esconder sua verdadeira intenção diante de uma autoridade mais poderosa, diga que hábito de submissão aparente você aprendeu. Enquanto mantiver esse papel, ninguém perceberá sua hostilidade sem motivo concreto para suspeitar. Uma vez por sessão, quando essa falsa submissão permitir que você ou outra pessoa escape de uma consequência real da autoridade, marque 1 XP.",
+    "piloto_integral_id": "movimento-integral:paragrafo-832",
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-834",
+    "paragrafo_docx": 834,
+    "grupo": "ORCS DA CAATINGA",
+    "categoria": "povo",
+    "titulo": "FILHO DA CAATINGA",
+    "marcador_original": "Corpo/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 834,
+        "tipo": "corpo",
+        "texto": "Calor, sede e terreno árido contam como condições normais para você. Quando outros precisarem Desafiar o Perigo apenas para suportar o clima seco e quente da Caatinga, você não precisa rolar. Quando Empreender Uma Jornada Perigosa na Caatinga, você sempre conta como 10+ na posição que ocupar."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Calor, sede e terreno árido contam como condições normais para você. Quando outros precisarem Desafiar o Perigo apenas para suportar o clima seco e quente da Caatinga, você não precisa rolar. Quando Empreender Uma Jornada Perigosa na Caatinga, você sempre conta como 10+ na posição que ocupar.",
+    "piloto_integral_id": "movimento-integral:paragrafo-834",
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-835",
+    "paragrafo_docx": 835,
+    "grupo": "ORCS DA CAATINGA",
+    "categoria": "povo",
+    "titulo": "GUERRA DE NOVE ANOS",
+    "marcador_original": "Memória Cultural",
+    "partes": [
+      {
+        "paragrafo_docx": 835,
+        "tipo": "corpo",
+        "texto": "Seu povo ainda conta histórias da guerra contra os Kuo-Toa. Quando Falar Difícil sobre Kuo-Toa, ataques costeiros ou guerra no Além Sul, em um sucesso faça também uma pergunta ao Mestre sobre como os orcs já enfrentaram algo semelhante no passado. Uma vez por sessão, quando uma lição das antigas guerras de seu povo ajudar o grupo a superar uma ameaça do Além Sul, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Seu povo ainda conta histórias da guerra contra os Kuo-Toa. Quando Falar Difícil sobre Kuo-Toa, ataques costeiros ou guerra no Além Sul, em um sucesso faça também uma pergunta ao Mestre sobre como os orcs já enfrentaram algo semelhante no passado. Uma vez por sessão, quando uma lição das antigas guerras de seu povo ajudar o grupo a superar uma ameaça do Além Sul, marque 1 XP.",
+    "piloto_integral_id": "movimento-integral:paragrafo-835",
+    "revisao_preliminar_id": "movimento-revisado:paragrafo-835"
+  },
+  {
+    "id": "movimento-povo:paragrafo-836",
+    "paragrafo_docx": 836,
+    "grupo": "ORCS DA CAATINGA",
+    "categoria": "povo",
+    "titulo": "NÃO MORREMOS AQUI",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 836,
+        "tipo": "corpo",
+        "texto": "Quando continuar agindo apesar de exaustão, fome, sede ou dor física intensa, você pode escolher sofrer uma Debilidade apropriada para tratar um resultado 7–9 ao Desafiar o Perigo com CON, DES ou FOR, como 10+."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando continuar agindo apesar de exaustão, fome, sede ou dor física intensa, você pode escolher sofrer uma Debilidade apropriada para tratar um resultado 7–9 ao Desafiar o Perigo com CON, DES ou FOR, como 10+.",
+    "piloto_integral_id": "movimento-integral:paragrafo-836",
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-837",
+    "paragrafo_docx": 837,
+    "grupo": "ORCS DA CAATINGA",
+    "categoria": "povo",
+    "titulo": "SAQUEADOR DA CAATINGA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 837,
+        "tipo": "corpo",
+        "texto": "Quando entrar rapidamente num lugar para pegar aquilo que precisa e sair antes da resposta inimiga, role+DES.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 838,
+        "tipo": "opcao",
+        "texto": "Você encontra rapidamente algo realmente valioso ou útil."
+      },
+      {
+        "paragrafo_docx": 839,
+        "tipo": "opcao",
+        "texto": "Você identifica a rota mais rápida para sair."
+      },
+      {
+        "paragrafo_docx": 840,
+        "tipo": "opcao",
+        "texto": "Ninguém importante percebe quem fez isso."
+      },
+      {
+        "paragrafo_docx": 841,
+        "tipo": "opcao",
+        "texto": "Você não precisa abandonar nada para escapar."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 838,
+        "texto": "Você encontra rapidamente algo realmente valioso ou útil."
+      },
+      {
+        "paragrafo_docx": 839,
+        "texto": "Você identifica a rota mais rápida para sair."
+      },
+      {
+        "paragrafo_docx": 840,
+        "texto": "Ninguém importante percebe quem fez isso."
+      },
+      {
+        "paragrafo_docx": 841,
+        "texto": "Você não precisa abandonar nada para escapar."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando entrar rapidamente num lugar para pegar aquilo que precisa e sair antes da resposta inimiga, role+DES.\n10+: escolha 2.\n7–9: escolha 1.\nVocê encontra rapidamente algo realmente valioso ou útil.\nVocê identifica a rota mais rápida para sair.\nNinguém importante percebe quem fez isso.\nVocê não precisa abandonar nada para escapar.",
+    "piloto_integral_id": "movimento-integral:paragrafo-837",
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-842",
+    "paragrafo_docx": 842,
+    "grupo": "ORCS DA CAATINGA",
+    "categoria": "povo",
+    "titulo": "ALIADOS ANTIGOS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 842,
+        "tipo": "corpo",
+        "texto": "Quando lutar ao lado de um povo com quem seus clãs possuam longa história, ambos recebem +1 adiante na primeira vez em que protegerem deliberadamente um ao outro durante a batalha. Quando beberem e contarem uma história de uma antiga batalha juntos, receba +1 para Farrear."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando lutar ao lado de um povo com quem seus clãs possuam longa história, ambos recebem +1 adiante na primeira vez em que protegerem deliberadamente um ao outro durante a batalha. Quando beberem e contarem uma história de uma antiga batalha juntos, receba +1 para Farrear.",
+    "piloto_integral_id": "movimento-integral:paragrafo-842",
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-843",
+    "paragrafo_docx": 843,
+    "grupo": "ORCS DA CAATINGA",
+    "categoria": "povo",
+    "titulo": "NADA A PROVAR",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 843,
+        "tipo": "corpo",
+        "texto": "Quando alguém tentar intimidá-lo apenas demonstrando força, violência ou superioridade física, você pode perguntar: “O que ele realmente teme que eu faça?” O Mestre responderá honestamente. Receba +1 adiante para agir conforme a resposta."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando alguém tentar intimidá-lo apenas demonstrando força, violência ou superioridade física, você pode perguntar: “O que ele realmente teme que eu faça?” O Mestre responderá honestamente. Receba +1 adiante para agir conforme a resposta.",
+    "piloto_integral_id": "movimento-integral:paragrafo-843",
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-845",
+    "paragrafo_docx": 845,
+    "grupo": "ANÕES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "OLHOS DE PEDRA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 845,
+        "tipo": "corpo",
+        "texto": "Quando examinar pedra trabalhada ou uma estrutura subterrânea, você sempre reconhece sua origem aproximada, método de construção e sinais evidentes de instabilidade. \nSe Discernir Realidades, pode perguntar também: “O que esta pedra testemunhou?” \nUma vez por sessão, caso encontre uma gema de grande valor, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando examinar pedra trabalhada ou uma estrutura subterrânea, você sempre reconhece sua origem aproximada, método de construção e sinais evidentes de instabilidade. \nSe Discernir Realidades, pode perguntar também: “O que esta pedra testemunhou?” \nUma vez por sessão, caso encontre uma gema de grande valor, marque 1 XP.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": "movimento-revisado:paragrafo-845"
+  },
+  {
+    "id": "movimento-povo:paragrafo-846",
+    "paragrafo_docx": 846,
+    "grupo": "ANÕES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "CLÃ ACIMA DO INDIVÍDUO",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 846,
+        "tipo": "corpo",
+        "texto": "Declare o ofício pelo qual seu clã é conhecido. Quando essa tradição for diretamente relevante e você consultar aquilo que aprendeu com sua família, trate um 6- em Falar Difícil como 7–9, mas o Mestre lhe dirá também uma obrigação, rivalidade ou dívida de seu clã relacionada ao assunto. Você sempre recebe +1 para Negociar com aqueles que desejam os frutos do ofício do seu clã."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Declare o ofício pelo qual seu clã é conhecido. Quando essa tradição for diretamente relevante e você consultar aquilo que aprendeu com sua família, trate um 6- em Falar Difícil como 7–9, mas o Mestre lhe dirá também uma obrigação, rivalidade ou dívida de seu clã relacionada ao assunto. Você sempre recebe +1 para Negociar com aqueles que desejam os frutos do ofício do seu clã.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-848",
+    "paragrafo_docx": 848,
+    "grupo": "ANÕES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "JURAMENTO ANCESTRAL",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 848,
+        "tipo": "corpo",
+        "texto": "Quando fizer uma promessa formal invocando seu clã e declarar claramente aquilo que fará, receba Domínio 2. Gaste 1 Domínio para receber +1 numa rolagem realizada diretamente para cumprir esse juramento. Se abandoná-lo voluntariamente, perca todo Domínio restante e o Mestre dirá quem fica sabendo."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando fizer uma promessa formal invocando seu clã e declarar claramente aquilo que fará, receba Domínio 2. Gaste 1 Domínio para receber +1 numa rolagem realizada diretamente para cumprir esse juramento. Se abandoná-lo voluntariamente, perca todo Domínio restante e o Mestre dirá quem fica sabendo.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-849",
+    "paragrafo_docx": 849,
+    "grupo": "ANÕES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "ENGENHEIRO SOB A MONTANHA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 849,
+        "tipo": "corpo",
+        "texto": "Quando tiver tempo para estudar uma fortificação, ponte, túnel, máquina ou estrutura, pergunte ao Mestre uma das seguintes perguntas sem rolar:"
+      },
+      {
+        "paragrafo_docx": 850,
+        "tipo": "opcao",
+        "texto": "Onde está seu ponto de maior tensão?"
+      },
+      {
+        "paragrafo_docx": 851,
+        "tipo": "opcao",
+        "texto": "O que foi alterado depois de sua construção?"
+      },
+      {
+        "paragrafo_docx": 852,
+        "tipo": "opcao",
+        "texto": "O que preciso fazer para torná-la segura?"
+      },
+      {
+        "paragrafo_docx": 853,
+        "tipo": "opcao",
+        "texto": "O que preciso fazer para fazê-la falhar?"
+      },
+      {
+        "paragrafo_docx": 854,
+        "tipo": "continuacao",
+        "texto": "Quando Empreender Uma Jornada Perigosa sob a montanha, você sempre conta como 10+ na posição que ocupar."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 850,
+        "texto": "Onde está seu ponto de maior tensão?"
+      },
+      {
+        "paragrafo_docx": 851,
+        "texto": "O que foi alterado depois de sua construção?"
+      },
+      {
+        "paragrafo_docx": 852,
+        "texto": "O que preciso fazer para torná-la segura?"
+      },
+      {
+        "paragrafo_docx": 853,
+        "texto": "O que preciso fazer para fazê-la falhar?"
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando tiver tempo para estudar uma fortificação, ponte, túnel, máquina ou estrutura, pergunte ao Mestre uma das seguintes perguntas sem rolar:\nOnde está seu ponto de maior tensão?\nO que foi alterado depois de sua construção?\nO que preciso fazer para torná-la segura?\nO que preciso fazer para fazê-la falhar?\nQuando Empreender Uma Jornada Perigosa sob a montanha, você sempre conta como 10+ na posição que ocupar.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": "movimento-revisado:paragrafo-849"
+  },
+  {
+    "id": "movimento-povo:paragrafo-855",
+    "paragrafo_docx": 855,
+    "grupo": "ANÕES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "CARREGADOR DE THARGRID",
+    "marcador_original": "Corpo/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 855,
+        "tipo": "corpo",
+        "texto": "Considere sua Carga 4 pontos maior quando estiver transportando ferramentas, minério, provisões ou equipamento de trabalho."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Considere sua Carga 4 pontos maior quando estiver transportando ferramentas, minério, provisões ou equipamento de trabalho.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-856",
+    "paragrafo_docx": 856,
+    "grupo": "ANÕES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "SEGREDOS ENTERRADOS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 856,
+        "tipo": "corpo",
+        "texto": "Quando houver algo deliberadamente escondido sob terra ou pedra, você reconhece os sinais de que alguma coisa foi escondida, mesmo sem saber imediatamente o quê. \nReceba +1 constante enquanto agir diretamente para encontrar aquilo que foi escondido."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando houver algo deliberadamente escondido sob terra ou pedra, você reconhece os sinais de que alguma coisa foi escondida, mesmo sem saber imediatamente o quê. \nReceba +1 constante enquanto agir diretamente para encontrar aquilo que foi escondido.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-857",
+    "paragrafo_docx": 857,
+    "grupo": "ANÕES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "UMA OFENSA NÃO APODRECE",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 857,
+        "tipo": "corpo",
+        "texto": "Quando alguém cometer uma ofensa séria contra você ou seu clã e você declarar formalmente a injúria, receba Domínio 2 sobre a ofensa. Gaste 1 Domínio ao confrontar o responsável para:"
+      },
+      {
+        "paragrafo_docx": 858,
+        "tipo": "opcao",
+        "texto": "+1 numa rolagem contra ele;"
+      },
+      {
+        "paragrafo_docx": 859,
+        "tipo": "opcao",
+        "texto": "exigir que reconheça publicamente o que fez antes de Negociar;"
+      },
+      {
+        "paragrafo_docx": 860,
+        "tipo": "opcao",
+        "texto": "perguntar ao Mestre qual reparação seria considerada justa segundo a tradição."
+      },
+      {
+        "paragrafo_docx": 861,
+        "tipo": "continuacao",
+        "texto": "Quando aceitar uma reparação genuína, perca todo Domínio restante."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 858,
+        "texto": "+1 numa rolagem contra ele;"
+      },
+      {
+        "paragrafo_docx": 859,
+        "texto": "exigir que reconheça publicamente o que fez antes de Negociar;"
+      },
+      {
+        "paragrafo_docx": 860,
+        "texto": "perguntar ao Mestre qual reparação seria considerada justa segundo a tradição."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando alguém cometer uma ofensa séria contra você ou seu clã e você declarar formalmente a injúria, receba Domínio 2 sobre a ofensa. Gaste 1 Domínio ao confrontar o responsável para:\n+1 numa rolagem contra ele;\nexigir que reconheça publicamente o que fez antes de Negociar;\nperguntar ao Mestre qual reparação seria considerada justa segundo a tradição.\nQuando aceitar uma reparação genuína, perca todo Domínio restante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-863",
+    "paragrafo_docx": 863,
+    "grupo": "GIGANTES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "FORÇA MONUMENTAL",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 863,
+        "tipo": "corpo",
+        "texto": "Barreiras construídas para criaturas menores raramente conseguem impedir sua passagem. Se não houver perigo ou resistência extraordinária, você simplesmente as remove, atravessa ou destrói. Quando utilizar sua força monstruosa contra um objeto ou obstáculo realmente capaz de resistir a você, role+FOR.\n10+: escolha 3.\n7–9: escolha 2."
+      },
+      {
+        "paragrafo_docx": 864,
+        "tipo": "opcao",
+        "texto": "Não demora muito."
+      },
+      {
+        "paragrafo_docx": 865,
+        "tipo": "opcao",
+        "texto": "Nada valioso é destruído além do alvo."
+      },
+      {
+        "paragrafo_docx": 866,
+        "tipo": "opcao",
+        "texto": "Não produz barulho ou repercussão além do inevitável."
+      },
+      {
+        "paragrafo_docx": 867,
+        "tipo": "opcao",
+        "texto": "Você não termina numa posição vulnerável."
+      },
+      {
+        "paragrafo_docx": 868,
+        "tipo": "opcao",
+        "texto": "Aquilo ainda poderá ser consertado depois."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 864,
+        "texto": "Não demora muito."
+      },
+      {
+        "paragrafo_docx": 865,
+        "texto": "Nada valioso é destruído além do alvo."
+      },
+      {
+        "paragrafo_docx": 866,
+        "texto": "Não produz barulho ou repercussão além do inevitável."
+      },
+      {
+        "paragrafo_docx": 867,
+        "texto": "Você não termina numa posição vulnerável."
+      },
+      {
+        "paragrafo_docx": 868,
+        "texto": "Aquilo ainda poderá ser consertado depois."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Barreiras construídas para criaturas menores raramente conseguem impedir sua passagem. Se não houver perigo ou resistência extraordinária, você simplesmente as remove, atravessa ou destrói. Quando utilizar sua força monstruosa contra um objeto ou obstáculo realmente capaz de resistir a você, role+FOR.\n10+: escolha 3.\n7–9: escolha 2.\nNão demora muito.\nNada valioso é destruído além do alvo.\nNão produz barulho ou repercussão além do inevitável.\nVocê não termina numa posição vulnerável.\nAquilo ainda poderá ser consertado depois.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-869",
+    "paragrafo_docx": 869,
+    "grupo": "GIGANTES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "ARREMESSADOR DOS PICOS",
+    "marcador_original": "Corpo/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 869,
+        "tipo": "corpo",
+        "texto": "Objetos grandes o bastante para outras pessoas tratarem como obstáculos podem ser usados por você como armas arremessadas. Sua Periculosidade depende do tamanho, peso e situação."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Objetos grandes o bastante para outras pessoas tratarem como obstáculos podem ser usados por você como armas arremessadas. Sua Periculosidade depende do tamanho, peso e situação.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-870",
+    "paragrafo_docx": 870,
+    "grupo": "GIGANTES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "ORDENAMENTO",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 870,
+        "tipo": "corpo",
+        "texto": "Quando observar outro Gigante, você reconhece sua posição reivindicada no Ordenamento, aquilo que sustenta essa posição e o comportamento que ele espera de alguém de sua posição diante dele.\nQuando usar corretamente essa informação para Negociar, Ajudar, Interferir ou desafiá-lo publicamente, receba +1 adiante."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando observar outro Gigante, você reconhece sua posição reivindicada no Ordenamento, aquilo que sustenta essa posição e o comportamento que ele espera de alguém de sua posição diante dele.\nQuando usar corretamente essa informação para Negociar, Ajudar, Interferir ou desafiá-lo publicamente, receba +1 adiante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-871",
+    "paragrafo_docx": 871,
+    "grupo": "GIGANTES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "GIGANTE DE PEDRA — ESCULTOR DO MUNDO",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 871,
+        "tipo": "corpo",
+        "texto": "Quando trabalhar pedra com tempo e ferramentas apropriadas, pode criar em horas aquilo que trabalhadores menores levariam dias para concluir. Ao terminar, declare uma característica particularmente engenhosa da obra. Quando Defender uma posição que você mesmo preparou ou fortificou em pedra, receba +1 Domínio."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando trabalhar pedra com tempo e ferramentas apropriadas, pode criar em horas aquilo que trabalhadores menores levariam dias para concluir. Ao terminar, declare uma característica particularmente engenhosa da obra. Quando Defender uma posição que você mesmo preparou ou fortificou em pedra, receba +1 Domínio.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-872",
+    "paragrafo_docx": 872,
+    "grupo": "GIGANTES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "GIGANTE DO GELO — NASCIDO NOS PICOS",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 872,
+        "tipo": "corpo",
+        "texto": "Frio natural e altitude extrema não constituem perigo para você. Quando atravessar uma tempestade de neve ou região montanhosa para encontrar alguém, sua passagem deixa uma trilha apenas se você quiser. Quando Empreender uma Jornada Perigosa nas altas montanhas, você sempre conta como 10+ como Batedor ou Desbravador."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Frio natural e altitude extrema não constituem perigo para você. Quando atravessar uma tempestade de neve ou região montanhosa para encontrar alguém, sua passagem deixa uma trilha apenas se você quiser. Quando Empreender uma Jornada Perigosa nas altas montanhas, você sempre conta como 10+ como Batedor ou Desbravador.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-873",
+    "paragrafo_docx": 873,
+    "grupo": "GIGANTES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "GIGANTE DO FOGO — FORJA TITÂNICA",
+    "marcador_original": "Corpo/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 873,
+        "tipo": "corpo",
+        "texto": "Calor de forja e fogo comum não são perigos por si só. Quando trabalhar metal numa forja adequada à sua escala, pode produzir equipamentos grandes ou extraordinariamente resistentes que seriam impossíveis em oficinas comuns. Quando terminar uma obra importante, escolha uma qualidade excepcional apropriada àquilo que construiu: resistente, devastadora, precisa, imponente ou outra acordada com o Mestre."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Calor de forja e fogo comum não são perigos por si só. Quando trabalhar metal numa forja adequada à sua escala, pode produzir equipamentos grandes ou extraordinariamente resistentes que seriam impossíveis em oficinas comuns. Quando terminar uma obra importante, escolha uma qualidade excepcional apropriada àquilo que construiu: resistente, devastadora, precisa, imponente ou outra acordada com o Mestre.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-874",
+    "paragrafo_docx": 874,
+    "grupo": "GIGANTES DE THARGRID",
+    "categoria": "povo",
+    "titulo": "SENTINELA DAS ALTURAS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 874,
+        "tipo": "corpo",
+        "texto": "Quando observar uma região ampla a partir de uma posição elevada, Discernir Realidades pode ser utilizado sobre todo o vale, estrada ou campo abaixo, e não apenas sua vizinhança imediata."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando observar uma região ampla a partir de uma posição elevada, Discernir Realidades pode ser utilizado sobre todo o vale, estrada ou campo abaixo, e não apenas sua vizinhança imediata.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-877",
+    "paragrafo_docx": 877,
+    "grupo": "DRACONATOS DE THARGRID",
+    "categoria": "povo",
+    "titulo": "SOPRO DRACÔNICO",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 877,
+        "tipo": "corpo",
+        "texto": "Escolha a natureza de seu sopro. Quando liberá-lo de maneira perigosa, estabeleça sua área e Periculosidade conforme a ficção. \nSe o fizer sob pressão ou tentando atingir algo precisamente, Desafie o Perigo com CON. \nUm sopro dracônico normalmente é uma violência séria, causando 1d10 de dano a um único alvo em alcance curto. \nSua Periculosidade pode aumentar ou diminuir conforme alcance, concentração, vulnerabilidade dos alvos e circunstâncias."
+      },
+      {
+        "paragrafo_docx": 878,
+        "tipo": "opcao",
+        "texto": "Caso o alvo seja vulnerável à natureza do sopro, aumente o dano em um grau de periculosidade."
+      },
+      {
+        "paragrafo_docx": 879,
+        "tipo": "opcao",
+        "texto": "Caso o alvo esteja distraído ou em alcance de toque, aumente o dano em um grau de periculosidade."
+      },
+      {
+        "paragrafo_docx": 880,
+        "tipo": "opcao",
+        "texto": "Caso o sopro seja direcionado a vários alvos em uma linha, diminua a periculosidade em um grau."
+      },
+      {
+        "paragrafo_docx": 881,
+        "tipo": "opcao",
+        "texto": "Caso o sopro seja direcionado a vários alvos em uma área, diminua a periculosidade em dois graus."
+      },
+      {
+        "paragrafo_docx": 882,
+        "tipo": "opcao",
+        "texto": "Caso quaisquer dos alvos esteja em alcance distante, diminua a periculosidade para ele em dois graus."
+      },
+      {
+        "paragrafo_docx": 883,
+        "tipo": "opcao",
+        "texto": "Caso não haja proteção adequada à específica natureza do sopro, ele ignora Armadura."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 878,
+        "texto": "Caso o alvo seja vulnerável à natureza do sopro, aumente o dano em um grau de periculosidade."
+      },
+      {
+        "paragrafo_docx": 879,
+        "texto": "Caso o alvo esteja distraído ou em alcance de toque, aumente o dano em um grau de periculosidade."
+      },
+      {
+        "paragrafo_docx": 880,
+        "texto": "Caso o sopro seja direcionado a vários alvos em uma linha, diminua a periculosidade em um grau."
+      },
+      {
+        "paragrafo_docx": 881,
+        "texto": "Caso o sopro seja direcionado a vários alvos em uma área, diminua a periculosidade em dois graus."
+      },
+      {
+        "paragrafo_docx": 882,
+        "texto": "Caso quaisquer dos alvos esteja em alcance distante, diminua a periculosidade para ele em dois graus."
+      },
+      {
+        "paragrafo_docx": 883,
+        "texto": "Caso não haja proteção adequada à específica natureza do sopro, ele ignora Armadura."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Escolha a natureza de seu sopro. Quando liberá-lo de maneira perigosa, estabeleça sua área e Periculosidade conforme a ficção. \nSe o fizer sob pressão ou tentando atingir algo precisamente, Desafie o Perigo com CON. \nUm sopro dracônico normalmente é uma violência séria, causando 1d10 de dano a um único alvo em alcance curto. \nSua Periculosidade pode aumentar ou diminuir conforme alcance, concentração, vulnerabilidade dos alvos e circunstâncias.\nCaso o alvo seja vulnerável à natureza do sopro, aumente o dano em um grau de periculosidade.\nCaso o alvo esteja distraído ou em alcance de toque, aumente o dano em um grau de periculosidade.\nCaso o sopro seja direcionado a vários alvos em uma linha, diminua a periculosidade em um grau.\nCaso o sopro seja direcionado a vários alvos em uma área, diminua a periculosidade em dois graus.\nCaso quaisquer dos alvos esteja em alcance distante, diminua a periculosidade para ele em dois graus.\nCaso não haja proteção adequada à específica natureza do sopro, ele ignora Armadura.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-884",
+    "paragrafo_docx": 884,
+    "grupo": "DRACONATOS DE THARGRID",
+    "categoria": "povo",
+    "titulo": "O QUE FOI JURADO?",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 884,
+        "tipo": "corpo",
+        "texto": "Quando ouvir os termos completos de um acordo, promessa ou juramento, pode perguntar imediatamente: “Qual é a obrigação mais importante que cada lado acabou de assumir?” O Mestre responderá segundo aquilo que foi efetivamente dito. Receba +1 adiante quando agir de acordo com esta informação. Quando colocar deliberadamente sua própria reputação em risco para garantir a palavra de outra pessoa, ela recebe +1 adiante para cumprir aquilo que prometeu. Se ela quebrar a promessa, você saberá."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando ouvir os termos completos de um acordo, promessa ou juramento, pode perguntar imediatamente: “Qual é a obrigação mais importante que cada lado acabou de assumir?” O Mestre responderá segundo aquilo que foi efetivamente dito. Receba +1 adiante quando agir de acordo com esta informação. Quando colocar deliberadamente sua própria reputação em risco para garantir a palavra de outra pessoa, ela recebe +1 adiante para cumprir aquilo que prometeu. Se ela quebrar a promessa, você saberá.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": "movimento-revisado:paragrafo-884"
+  },
+  {
+    "id": "movimento-povo:paragrafo-885",
+    "paragrafo_docx": 885,
+    "grupo": "DRACONATOS DE THARGRID",
+    "categoria": "povo",
+    "titulo": "GUARDIÃO DAS PASSAGENS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 885,
+        "tipo": "corpo",
+        "texto": "Quando Defender uma passagem estreita, ponte, portão ou desfiladeiro, receba +1 Domínio. Uma vez por sessão, caso defenda uma passagem de forma bem-sucedida, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando Defender uma passagem estreita, ponte, portão ou desfiladeiro, receba +1 Domínio. Uma vez por sessão, caso defenda uma passagem de forma bem-sucedida, marque 1 XP.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-886",
+    "paragrafo_docx": 886,
+    "grupo": "DRACONATOS DE THARGRID",
+    "categoria": "povo",
+    "titulo": "NOME MERECIDO",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 886,
+        "tipo": "corpo",
+        "texto": "Quando realizar diante de testemunhas um feito que arrisque seriamente sua vida para cumprir uma obrigação, declare como deseja que aquele feito seja lembrado. Sempre que chegar a um lugar civilizado, receba +1 constante para Negociar ou Farrear enquanto sua reputação for reconhecida naquele lugar."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando realizar diante de testemunhas um feito que arrisque seriamente sua vida para cumprir uma obrigação, declare como deseja que aquele feito seja lembrado. Sempre que chegar a um lugar civilizado, receba +1 constante para Negociar ou Farrear enquanto sua reputação for reconhecida naquele lugar.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-887",
+    "paragrafo_docx": 887,
+    "grupo": "DRACONATOS DE THARGRID",
+    "categoria": "povo",
+    "titulo": "HERANÇA DE GOLZDOV",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 887,
+        "tipo": "corpo",
+        "texto": "Quando tocar os ossos expostos de Golzdov e permanecer em silêncio por alguns instantes, você pode utilizar aquele local como um Local de Poder improvisado. Além disso, pergunte ao Mestre uma:"
+      },
+      {
+        "paragrafo_docx": 888,
+        "tipo": "opcao",
+        "texto": "O que este osso ainda lembra deste lugar?"
+      },
+      {
+        "paragrafo_docx": 889,
+        "tipo": "opcao",
+        "texto": "O que aqui está perturbando os restos do Ancestral?"
+      },
+      {
+        "paragrafo_docx": 890,
+        "tipo": "opcao",
+        "texto": "Que presença tocou estes ossos recentemente?"
+      },
+      {
+        "paragrafo_docx": 891,
+        "tipo": "continuacao",
+        "texto": "A resposta chega como sensação, memória impossível, vibração, visão ou outro fenômeno apropriado."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 888,
+        "texto": "O que este osso ainda lembra deste lugar?"
+      },
+      {
+        "paragrafo_docx": 889,
+        "texto": "O que aqui está perturbando os restos do Ancestral?"
+      },
+      {
+        "paragrafo_docx": 890,
+        "texto": "Que presença tocou estes ossos recentemente?"
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando tocar os ossos expostos de Golzdov e permanecer em silêncio por alguns instantes, você pode utilizar aquele local como um Local de Poder improvisado. Além disso, pergunte ao Mestre uma:\nO que este osso ainda lembra deste lugar?\nO que aqui está perturbando os restos do Ancestral?\nQue presença tocou estes ossos recentemente?\nA resposta chega como sensação, memória impossível, vibração, visão ou outro fenômeno apropriado.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-892",
+    "paragrafo_docx": 892,
+    "grupo": "DRACONATOS DE THARGRID",
+    "categoria": "povo",
+    "titulo": "DESAFIO FORMAL",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 892,
+        "tipo": "corpo",
+        "texto": "Quando desafiar alguém publicamente segundo regras que ambos reconheçam, role+CAR.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 893,
+        "tipo": "opcao",
+        "texto": "Ele não pode recusar ou alterar os termos sem perder algo."
+      },
+      {
+        "paragrafo_docx": 894,
+        "tipo": "opcao",
+        "texto": "Ninguém interfere até que o desafio esteja decidido."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 893,
+        "texto": "Ele não pode recusar ou alterar os termos sem perder algo."
+      },
+      {
+        "paragrafo_docx": 894,
+        "texto": "Ninguém interfere até que o desafio esteja decidido."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando desafiar alguém publicamente segundo regras que ambos reconheçam, role+CAR.\n10+: escolha 2.\n7–9: escolha 1.\nEle não pode recusar ou alterar os termos sem perder algo.\nNinguém interfere até que o desafio esteja decidido.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-896",
+    "paragrafo_docx": 896,
+    "grupo": "TORTLES DAS ILHAS",
+    "categoria": "povo",
+    "titulo": "CARAPAÇA ANCESTRAL",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 896,
+        "tipo": "corpo",
+        "texto": "Sua carapaça conta como 2 Armadura natural onde puder proteger seu corpo. Quando abandonar mobilidade e se recolher completamente em sua carapaça, receba +2 Armadura até voltar a agir, mas não pode atacar, correr ou manipular objetos normalmente."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Sua carapaça conta como 2 Armadura natural onde puder proteger seu corpo. Quando abandonar mobilidade e se recolher completamente em sua carapaça, receba +2 Armadura até voltar a agir, mas não pode atacar, correr ou manipular objetos normalmente.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-897",
+    "paragrafo_docx": 897,
+    "grupo": "TORTLES DAS ILHAS",
+    "categoria": "povo",
+    "titulo": "MEMÓRIA DO MOSTEIRO",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 897,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando retornar de uma viagem e contar algo que realmente aprendeu a uma comunidade que lhe ofereça abrigo, marque 1 XP. Uma vez no futuro, quando essa experiência for relevante, declare algo útil que seu personagem aprendeu naquela jornada."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Uma vez por sessão, quando retornar de uma viagem e contar algo que realmente aprendeu a uma comunidade que lhe ofereça abrigo, marque 1 XP. Uma vez no futuro, quando essa experiência for relevante, declare algo útil que seu personagem aprendeu naquela jornada.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-898",
+    "paragrafo_docx": 898,
+    "grupo": "TORTLES DAS ILHAS",
+    "categoria": "povo",
+    "titulo": "HÓSPEDE É SAGRADO",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 898,
+        "tipo": "corpo",
+        "texto": "Quando oferecer ou aceitar formalmente hospitalidade, todos envolvidos sabem quais atos quebrariam o pacto."
+      },
+      {
+        "paragrafo_docx": 899,
+        "tipo": "continuacao",
+        "texto": "Enquanto o pacto permanecer:"
+      },
+      {
+        "paragrafo_docx": 900,
+        "tipo": "opcao",
+        "texto": "receba +1 para Ajudar aqueles protegidos por ele;"
+      },
+      {
+        "paragrafo_docx": 901,
+        "tipo": "opcao",
+        "texto": "todos os envolvidos contam como possuindo influência ao Negociar especificamente sobre os deveres da hospitalidade."
+      },
+      {
+        "paragrafo_docx": 902,
+        "tipo": "continuacao",
+        "texto": "Quebrar deliberadamente o pacto deixa uma marca social conhecida por quem compartilha essa tradição."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 900,
+        "texto": "receba +1 para Ajudar aqueles protegidos por ele;"
+      },
+      {
+        "paragrafo_docx": 901,
+        "texto": "todos os envolvidos contam como possuindo influência ao Negociar especificamente sobre os deveres da hospitalidade."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando oferecer ou aceitar formalmente hospitalidade, todos envolvidos sabem quais atos quebrariam o pacto.\nEnquanto o pacto permanecer:\nreceba +1 para Ajudar aqueles protegidos por ele;\ntodos os envolvidos contam como possuindo influência ao Negociar especificamente sobre os deveres da hospitalidade.\nQuebrar deliberadamente o pacto deixa uma marca social conhecida por quem compartilha essa tradição.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-903",
+    "paragrafo_docx": 903,
+    "grupo": "TORTLES DAS ILHAS",
+    "categoria": "povo",
+    "titulo": "PASSO PACIENTE",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 903,
+        "tipo": "corpo",
+        "texto": "Quando uma jornada exigir principalmente persistência e não velocidade, você nunca fica exausto ou incapaz de continuar. Quando Empreender Uma Jornada Perigosa como Desbravador, você sempre conta como 10+."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando uma jornada exigir principalmente persistência e não velocidade, você nunca fica exausto ou incapaz de continuar. Quando Empreender Uma Jornada Perigosa como Desbravador, você sempre conta como 10+.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-904",
+    "paragrafo_docx": 904,
+    "grupo": "TORTLES DAS ILHAS",
+    "categoria": "povo",
+    "titulo": "ESCOLA DE MUITAS ILHAS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 904,
+        "tipo": "corpo",
+        "texto": "Escolha dois campos de conhecimento preservados por seu mosteiro. Quando Falar Difícil sobre um deles, receba +1 constante. Quando você realizar um ritual ligado ao último conhecimento que declarou, receba +1 adiante."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Escolha dois campos de conhecimento preservados por seu mosteiro. Quando Falar Difícil sobre um deles, receba +1 constante. Quando você realizar um ritual ligado ao último conhecimento que declarou, receba +1 adiante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-906",
+    "paragrafo_docx": 906,
+    "grupo": "TABAXIS DAS ILHAS",
+    "categoria": "povo",
+    "titulo": "VIAGEM DE MAIORIDADE",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 906,
+        "tipo": "corpo",
+        "texto": "Declare uma coisa que você trouxe de sua grande viagem ritual: uma história, técnica, canção, mapa, receita, objeto ou verdade. Uma vez por sessão, quando ela se tornar inesperadamente útil, explique como e receba +1 adiante.\nQuando chegar a um porto ou assentamento costeiro, pode sempre encontrar alguém que já ouviu histórias sobre alguma ilha, rota ou comunidade marítima que você conhece."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Declare uma coisa que você trouxe de sua grande viagem ritual: uma história, técnica, canção, mapa, receita, objeto ou verdade. Uma vez por sessão, quando ela se tornar inesperadamente útil, explique como e receba +1 adiante.\nQuando chegar a um porto ou assentamento costeiro, pode sempre encontrar alguém que já ouviu histórias sobre alguma ilha, rota ou comunidade marítima que você conhece.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-908",
+    "paragrafo_docx": 908,
+    "grupo": "TABAXIS DAS ILHAS",
+    "categoria": "povo",
+    "titulo": "NÃO VOLTE DE MÃOS VAZIAS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 908,
+        "tipo": "corpo",
+        "texto": "Quando explorar um lugar onde nunca esteve, pergunte: “O que existe aqui que ninguém da minha ilha conhece?”\nO Mestre indicará algo que realmente possa ser descoberto. Quando você o encontrar, aprender ou compreender, receba 1 Preparo relacionado à descoberta. Uma vez por sessão, quando levar esse conhecimento de volta a uma comunidade de sua tradição, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando explorar um lugar onde nunca esteve, pergunte: “O que existe aqui que ninguém da minha ilha conhece?”\nO Mestre indicará algo que realmente possa ser descoberto. Quando você o encontrar, aprender ou compreender, receba 1 Preparo relacionado à descoberta. Uma vez por sessão, quando levar esse conhecimento de volta a uma comunidade de sua tradição, marque 1 XP.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-909",
+    "paragrafo_docx": 909,
+    "grupo": "TABAXIS DAS ILHAS",
+    "categoria": "povo",
+    "titulo": "IMPULSO FELINO",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 909,
+        "tipo": "corpo",
+        "texto": "Quando precisar atravessar rapidamente uma pequena distância antes que alguém consiga reagir, role+DES.\n10+: você chega primeiro.\n7–9: chega primeiro, mas escolha: deixa algo para trás, chama atenção ou termina numa posição ruim."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando precisar atravessar rapidamente uma pequena distância antes que alguém consiga reagir, role+DES.\n10+: você chega primeiro.\n7–9: chega primeiro, mas escolha: deixa algo para trás, chama atenção ou termina numa posição ruim.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-910",
+    "paragrafo_docx": 910,
+    "grupo": "TABAXIS DAS ILHAS",
+    "categoria": "povo",
+    "titulo": "CAMINHO PELO ALTO",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 910,
+        "tipo": "corpo",
+        "texto": "Escalar superfícies que ofereçam apoios razoáveis é movimento normal para você. Quando velocidade, perigo ou condições extraordinárias tornarem a escalada incerta, trate um 7-9 como 10+ e um 6- como 7-9."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Escalar superfícies que ofereçam apoios razoáveis é movimento normal para você. Quando velocidade, perigo ou condições extraordinárias tornarem a escalada incerta, trate um 7-9 como 10+ e um 6- como 7-9.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-911",
+    "paragrafo_docx": 911,
+    "grupo": "TABAXIS DAS ILHAS",
+    "categoria": "povo",
+    "titulo": "CURIOSIDADE IRRESISTÍVEL",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 911,
+        "tipo": "corpo",
+        "texto": "Quando voluntariamente se colocar em risco para investigar algo que ninguém do grupo compreende, marque 1 XP depois que descobrir algo realmente novo sobre aquilo. Apenas uma vez por sessão."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando voluntariamente se colocar em risco para investigar algo que ninguém do grupo compreende, marque 1 XP depois que descobrir algo realmente novo sobre aquilo. Apenas uma vez por sessão.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-913",
+    "paragrafo_docx": 913,
+    "grupo": "KUO-TOA",
+    "categoria": "povo",
+    "titulo": "FÉ QUE TOMA FORMA",
+    "marcador_original": "Natureza",
+    "partes": [
+      {
+        "paragrafo_docx": 913,
+        "tipo": "corpo",
+        "texto": "Quando plantar deliberadamente uma nova crença sobrenatural entre um grupo de Kuo-Toa e lhes der razão para repeti-la, role+CAR. Em um sucesso, a crença cria raízes e algo impossível começa a confirmá-la.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 914,
+        "tipo": "opcao",
+        "texto": "Um sinal físico impossível da crença começa a existir."
+      },
+      {
+        "paragrafo_docx": 915,
+        "tipo": "opcao",
+        "texto": "Os Kuo-Toa passam a agir segundo essa crença."
+      },
+      {
+        "paragrafo_docx": 916,
+        "tipo": "opcao",
+        "texto": "Você consegue influenciar inicialmente a forma que ela assume."
+      },
+      {
+        "paragrafo_docx": 917,
+        "tipo": "opcao",
+        "texto": "A crença não incorpora alguma interpretação terrível que você não pretendia."
+      },
+      {
+        "paragrafo_docx": 918,
+        "tipo": "continuacao",
+        "texto": "Você não controla sozinho aquilo que eventualmente nascer dessa fé. Pequenos sinais podem aparecer rapidamente; deuses, criaturas e transformações maiores exigem uma comunidade e tempo proporcionais."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 914,
+        "texto": "Um sinal físico impossível da crença começa a existir."
+      },
+      {
+        "paragrafo_docx": 915,
+        "texto": "Os Kuo-Toa passam a agir segundo essa crença."
+      },
+      {
+        "paragrafo_docx": 916,
+        "texto": "Você consegue influenciar inicialmente a forma que ela assume."
+      },
+      {
+        "paragrafo_docx": 917,
+        "texto": "A crença não incorpora alguma interpretação terrível que você não pretendia."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando plantar deliberadamente uma nova crença sobrenatural entre um grupo de Kuo-Toa e lhes der razão para repeti-la, role+CAR. Em um sucesso, a crença cria raízes e algo impossível começa a confirmá-la.\n10+: escolha 2.\n7–9: escolha 1.\nUm sinal físico impossível da crença começa a existir.\nOs Kuo-Toa passam a agir segundo essa crença.\nVocê consegue influenciar inicialmente a forma que ela assume.\nA crença não incorpora alguma interpretação terrível que você não pretendia.\nVocê não controla sozinho aquilo que eventualmente nascer dessa fé. Pequenos sinais podem aparecer rapidamente; deuses, criaturas e transformações maiores exigem uma comunidade e tempo proporcionais.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-919",
+    "paragrafo_docx": 919,
+    "grupo": "KUO-TOA",
+    "categoria": "povo",
+    "titulo": "OLHOS DAS PROFUNDEZAS",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 919,
+        "tipo": "corpo",
+        "texto": "Escuridão subaquática e baixa luminosidade não o impedem de enxergar aquilo que normalmente estaria visível ao sol fora da água. Uma vez por sessão, quando arrastar um alvo para as profundezas, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Escuridão subaquática e baixa luminosidade não o impedem de enxergar aquilo que normalmente estaria visível ao sol fora da água. Uma vez por sessão, quando arrastar um alvo para as profundezas, marque 1 XP.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-920",
+    "paragrafo_docx": 920,
+    "grupo": "KUO-TOA",
+    "categoria": "povo",
+    "titulo": "DELÍRIO COLETIVO",
+    "marcador_original": "Natureza/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 920,
+        "tipo": "corpo",
+        "texto": "Quando compartilhar uma convicção absurda com pelo menos dois outros Kuo-Toa e agir como se ela fosse absolutamente verdadeira, receba +1 adiante. Se a realidade contradizer brutalmente essa crença, todos envolvidos ficam Confusos até conseguirem reinterpretar o ocorrido."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando compartilhar uma convicção absurda com pelo menos dois outros Kuo-Toa e agir como se ela fosse absolutamente verdadeira, receba +1 adiante. Se a realidade contradizer brutalmente essa crença, todos envolvidos ficam Confusos até conseguirem reinterpretar o ocorrido.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-921",
+    "paragrafo_docx": 921,
+    "grupo": "KUO-TOA",
+    "categoria": "povo",
+    "titulo": "FILHO DOS SANTUÁRIOS SUBMERSOS",
+    "marcador_original": "Corpo/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 921,
+        "tipo": "corpo",
+        "texto": "Você se move, luta e realiza tarefas comuns debaixo d'água sem sofrer as dificuldades que afetam criaturas terrestres. Ao observar uma comunidade religiosa, você reconhece imediatamente quem exerce função religiosa, disciplinar e política e quem está com medo de quem."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Você se move, luta e realiza tarefas comuns debaixo d'água sem sofrer as dificuldades que afetam criaturas terrestres. Ao observar uma comunidade religiosa, você reconhece imediatamente quem exerce função religiosa, disciplinar e política e quem está com medo de quem.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-922",
+    "paragrafo_docx": 922,
+    "grupo": "KUO-TOA",
+    "categoria": "povo",
+    "titulo": "O DEUS ESTÁ OLHANDO",
+    "marcador_original": "Fé",
+    "partes": [
+      {
+        "paragrafo_docx": 922,
+        "tipo": "corpo",
+        "texto": "Quando usar a ameaça de julgamento divino contra alguém que teme sua crença, pode Negociar mesmo sem possuir influência material — a influência é aquilo que ele acredita que seu deus fará."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando usar a ameaça de julgamento divino contra alguém que teme sua crença, pode Negociar mesmo sem possuir influência material — a influência é aquilo que ele acredita que seu deus fará.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-924",
+    "paragrafo_docx": 924,
+    "grupo": "ABISSAIS",
+    "categoria": "povo",
+    "titulo": "MUDANÇA DO OCEANO",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 924,
+        "tipo": "corpo",
+        "texto": "Seu sangue ainda está mudando. No início de cada sessão, escolha uma manifestação de sua natureza oceânica:"
+      },
+      {
+        "paragrafo_docx": 925,
+        "tipo": "opcao",
+        "texto": "Mandíbulas: sua mordida torna-se uma arma perigosa."
+      },
+      {
+        "paragrafo_docx": 926,
+        "tipo": "opcao",
+        "texto": "Pele Abissal: escuridão e pressão extremas aguçam seus sentidos."
+      },
+      {
+        "paragrafo_docx": 927,
+        "tipo": "opcao",
+        "texto": "Membranas: mova-se pela água com velocidade extraordinária."
+      },
+      {
+        "paragrafo_docx": 928,
+        "tipo": "opcao",
+        "texto": "Órgãos Luminescentes: produza ou extinga bioluminescência à vontade."
+      },
+      {
+        "paragrafo_docx": 929,
+        "tipo": "opcao",
+        "texto": "Sentidos das Profundezas: perceba movimento próximo mesmo quando não consegue enxergar."
+      },
+      {
+        "paragrafo_docx": 930,
+        "tipo": "continuacao",
+        "texto": "A manifestação permanece até o fim da sessão. Quando uma transformação importante na história tornar uma dessas formas permanente, você pode substituir este Movimento por outro Movimento de Raça Abissal."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 925,
+        "texto": "Mandíbulas: sua mordida torna-se uma arma perigosa."
+      },
+      {
+        "paragrafo_docx": 926,
+        "texto": "Pele Abissal: escuridão e pressão extremas aguçam seus sentidos."
+      },
+      {
+        "paragrafo_docx": 927,
+        "texto": "Membranas: mova-se pela água com velocidade extraordinária."
+      },
+      {
+        "paragrafo_docx": 928,
+        "texto": "Órgãos Luminescentes: produza ou extinga bioluminescência à vontade."
+      },
+      {
+        "paragrafo_docx": 929,
+        "texto": "Sentidos das Profundezas: perceba movimento próximo mesmo quando não consegue enxergar."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Seu sangue ainda está mudando. No início de cada sessão, escolha uma manifestação de sua natureza oceânica:\nMandíbulas: sua mordida torna-se uma arma perigosa.\nPele Abissal: escuridão e pressão extremas aguçam seus sentidos.\nMembranas: mova-se pela água com velocidade extraordinária.\nÓrgãos Luminescentes: produza ou extinga bioluminescência à vontade.\nSentidos das Profundezas: perceba movimento próximo mesmo quando não consegue enxergar.\nA manifestação permanece até o fim da sessão. Quando uma transformação importante na história tornar uma dessas formas permanente, você pode substituir este Movimento por outro Movimento de Raça Abissal.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-931",
+    "paragrafo_docx": 931,
+    "grupo": "ABISSAIS",
+    "categoria": "povo",
+    "titulo": "LÍNGUA DO VAZIO",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 931,
+        "tipo": "corpo",
+        "texto": "Você conhece a linguagem ritual das profundezas. Quando Falar Difícil sobre um ritual, inscrição ou entidade associada ao oceano profundo, pode perguntar também: “O que aqui foi feito para ser ouvido por algo que não é mortal?”"
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Você conhece a linguagem ritual das profundezas. Quando Falar Difícil sobre um ritual, inscrição ou entidade associada ao oceano profundo, pode perguntar também: “O que aqui foi feito para ser ouvido por algo que não é mortal?”",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-932",
+    "paragrafo_docx": 932,
+    "grupo": "ABISSAIS",
+    "categoria": "povo",
+    "titulo": "PACIÊNCIA DAS PROFUNDEZAS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 932,
+        "tipo": "corpo",
+        "texto": "Quando elaborar um plano cujo sucesso dependa de criar dependência lentamente em vez de agir imediatamente, diga ao Mestre o que está oferecendo e a quem. Ele dirá qual primeira concessão essa pessoa aceitaria. Quando aceitar deliberadamente perder uma oportunidade imediata para conseguir uma posição melhor no futuro, receba 1 Preparo aplicável exclusivamente àquele objetivo."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando elaborar um plano cujo sucesso dependa de criar dependência lentamente em vez de agir imediatamente, diga ao Mestre o que está oferecendo e a quem. Ele dirá qual primeira concessão essa pessoa aceitaria. Quando aceitar deliberadamente perder uma oportunidade imediata para conseguir uma posição melhor no futuro, receba 1 Preparo aplicável exclusivamente àquele objetivo.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-933",
+    "paragrafo_docx": 933,
+    "grupo": "ABISSAIS",
+    "categoria": "povo",
+    "titulo": "SANGUE DE DAEGON",
+    "marcador_original": "Fé/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 933,
+        "tipo": "corpo",
+        "texto": "Quando invocar a autoridade religiosa diante de devotos, trate-os como se você possuísse influência para Negociar, desde que sua ordem possa ser apresentada como vontade divina."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando invocar a autoridade religiosa diante de devotos, trate-os como se você possuísse influência para Negociar, desde que sua ordem possa ser apresentada como vontade divina.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-934",
+    "paragrafo_docx": 934,
+    "grupo": "ABISSAIS",
+    "categoria": "povo",
+    "titulo": "SENTIR A MARÉ",
+    "marcador_original": "Corpo/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 934,
+        "tipo": "corpo",
+        "texto": "Quando estiver no mar ou próximo dele, sempre sabe a direção aproximada da costa, mudanças importantes na maré e se uma corrente está se comportando de forma anormal. Quando Empreender uma Jornada Perigosa no Mar de Sangue ou nas Profundezas, você sempre conta como 10+ como Desbravador ou Batedor."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando estiver no mar ou próximo dele, sempre sabe a direção aproximada da costa, mudanças importantes na maré e se uma corrente está se comportando de forma anormal. Quando Empreender uma Jornada Perigosa no Mar de Sangue ou nas Profundezas, você sempre conta como 10+ como Desbravador ou Batedor.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-936",
+    "paragrafo_docx": 936,
+    "grupo": "ABISSAIS",
+    "categoria": "povo",
+    "titulo": "TRIBUTO DAS PROFUNDEZAS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 936,
+        "tipo": "corpo",
+        "texto": "Quando oferecer a uma comunidade proteção, passagem ou outro benefício permanente em troca de tributo recorrente, diga exatamente o que oferece e exige. Se aceitarem, isso constitui um pacto reconhecido por ambas as partes. \nEnquanto ambos cumprirem seus termos:"
+      },
+      {
+        "paragrafo_docx": 937,
+        "tipo": "opcao",
+        "texto": "o tributo chega conforme prometido;"
+      },
+      {
+        "paragrafo_docx": 938,
+        "tipo": "opcao",
+        "texto": "você sabe quando alguma coisa ameaça seriamente aquilo que prometeu proteger;"
+      },
+      {
+        "paragrafo_docx": 939,
+        "tipo": "opcao",
+        "texto": "o pacto conta como influência quando qualquer lado Negociar sobre seus termos."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 937,
+        "texto": "o tributo chega conforme prometido;"
+      },
+      {
+        "paragrafo_docx": 938,
+        "texto": "você sabe quando alguma coisa ameaça seriamente aquilo que prometeu proteger;"
+      },
+      {
+        "paragrafo_docx": 939,
+        "texto": "o pacto conta como influência quando qualquer lado Negociar sobre seus termos."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando oferecer a uma comunidade proteção, passagem ou outro benefício permanente em troca de tributo recorrente, diga exatamente o que oferece e exige. Se aceitarem, isso constitui um pacto reconhecido por ambas as partes. \nEnquanto ambos cumprirem seus termos:\no tributo chega conforme prometido;\nvocê sabe quando alguma coisa ameaça seriamente aquilo que prometeu proteger;\no pacto conta como influência quando qualquer lado Negociar sobre seus termos.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-941",
+    "paragrafo_docx": 941,
+    "grupo": "TRITÕES",
+    "categoria": "povo",
+    "titulo": "PATRULHEIRO DA FRONTEIRA VERMELHA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 941,
+        "tipo": "corpo",
+        "texto": "Quando examinar água, animais marinhos ou recifes próximos à fronteira do Mar de Sangue, pode sempre perceber se existe sinal de corrupção sem rolar. Quando Defender algo que sua comunidade, juramento ou missão lhe encarregou explicitamente de proteger, receba +1 Domínio."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando examinar água, animais marinhos ou recifes próximos à fronteira do Mar de Sangue, pode sempre perceber se existe sinal de corrupção sem rolar. Quando Defender algo que sua comunidade, juramento ou missão lhe encarregou explicitamente de proteger, receba +1 Domínio.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-942",
+    "paragrafo_docx": 942,
+    "grupo": "TRITÕES",
+    "categoria": "povo",
+    "titulo": "CAMINHOS DAS CORRENTES",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 942,
+        "tipo": "corpo",
+        "texto": "Quando atuar como Desbravador numa Jornada Perigosa pelo mar, trate 7–9 como 10+. \nEm um 10+ natural, além dos benefícios normais, descubra uma corrente, passagem ou rota que pessoas menos experientes desconhecem. O Mestre dirá que vantagem ela oferece e por que não é utilizada por todos."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando atuar como Desbravador numa Jornada Perigosa pelo mar, trate 7–9 como 10+. \nEm um 10+ natural, além dos benefícios normais, descubra uma corrente, passagem ou rota que pessoas menos experientes desconhecem. O Mestre dirá que vantagem ela oferece e por que não é utilizada por todos.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-943",
+    "paragrafo_docx": 943,
+    "grupo": "TRITÕES",
+    "categoria": "povo",
+    "titulo": "FALANGE",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 943,
+        "tipo": "corpo",
+        "texto": "Quando você e pelo menos um aliado lutarem lado a lado mantendo uma formação, o primeiro que Defender recebe +2 Domínio."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando você e pelo menos um aliado lutarem lado a lado mantendo uma formação, o primeiro que Defender recebe +2 Domínio.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-944",
+    "paragrafo_docx": 944,
+    "grupo": "TRITÕES",
+    "categoria": "povo",
+    "titulo": "GUARDIÃO DAS ÁGUAS LIMPAS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 944,
+        "tipo": "corpo",
+        "texto": "Quando encontrar uma criatura ou fenômeno que ameace contaminar águas ainda puras, pergunte ao Mestre o que precisaria ser destruído, removido ou interrompido para impedir a propagação. Ao agir diretamente de acordo com a resposta para impedir a contaminação, receba +1 adiante."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando encontrar uma criatura ou fenômeno que ameace contaminar águas ainda puras, pergunte ao Mestre o que precisaria ser destruído, removido ou interrompido para impedir a propagação. Ao agir diretamente de acordo com a resposta para impedir a contaminação, receba +1 adiante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-945",
+    "paragrafo_docx": 945,
+    "grupo": "TRITÕES",
+    "categoria": "povo",
+    "titulo": "PACTO DAS ÁGUAS AZUIS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 945,
+        "tipo": "corpo",
+        "texto": "Quando pedir auxílio a Tritões, Sereias, Tortles ou Tabaxis contra uma ameaça que coloque as águas livres em risco, sua causa conta como influência para Negociar. Se eles concordarem em ajudar, pergunte ao Mestre: \n“O que essa comunidade colocará em risco para cumprir o pacto?” \nA resposta será verdadeira."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando pedir auxílio a Tritões, Sereias, Tortles ou Tabaxis contra uma ameaça que coloque as águas livres em risco, sua causa conta como influência para Negociar. Se eles concordarem em ajudar, pergunte ao Mestre: \n“O que essa comunidade colocará em risco para cumprir o pacto?” \nA resposta será verdadeira.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-947",
+    "paragrafo_docx": 947,
+    "grupo": "SEREIAS",
+    "categoria": "povo",
+    "titulo": "CANTO ATRAVÉS DAS ÁGUAS",
+    "marcador_original": "Corpo/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 947,
+        "tipo": "corpo",
+        "texto": "Sua voz percorre distâncias extraordinárias debaixo d'água. Quando cantar uma mensagem para alguém que conheça a melodia ou tradição correta, ela pode ser compreendida muito além do alcance de uma voz normal. \nQuando passar alguns minutos cantando nas águas abertas, declare quem ou que tipo de criatura marítima você espera que escute. O Mestre dirá quem realmente ouviu."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Sua voz percorre distâncias extraordinárias debaixo d'água. Quando cantar uma mensagem para alguém que conheça a melodia ou tradição correta, ela pode ser compreendida muito além do alcance de uma voz normal. \nQuando passar alguns minutos cantando nas águas abertas, declare quem ou que tipo de criatura marítima você espera que escute. O Mestre dirá quem realmente ouviu.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-948",
+    "paragrafo_docx": 948,
+    "grupo": "SEREIAS",
+    "categoria": "povo",
+    "titulo": "MEMÓRIA CANTADA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 948,
+        "tipo": "corpo",
+        "texto": "Escolha dois campos preservados pelas canções de seu povo: genealogias, rotas, acontecimentos, cidades, correntes, monstros marinhos, religião ou outro apropriado. Quando Falar Difícil sobre um deles, pode rolar +CAR em vez de +INT.\nEm 10+, faça também ao Mestre uma pergunta relacionada ao assunto. Ele responderá com uma verdade preservada na tradição oral. Uma vez por sessão, quando sua canção preservar uma verdade que estava prestes a desaparecer, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Escolha dois campos preservados pelas canções de seu povo: genealogias, rotas, acontecimentos, cidades, correntes, monstros marinhos, religião ou outro apropriado. Quando Falar Difícil sobre um deles, pode rolar +CAR em vez de +INT.\nEm 10+, faça também ao Mestre uma pergunta relacionada ao assunto. Ele responderá com uma verdade preservada na tradição oral. Uma vez por sessão, quando sua canção preservar uma verdade que estava prestes a desaparecer, marque 1 XP.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-949",
+    "paragrafo_docx": 949,
+    "grupo": "SEREIAS",
+    "categoria": "povo",
+    "titulo": "LER CORRENTES",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 949,
+        "tipo": "corpo",
+        "texto": "Quando observar cuidadosamente o movimento da água, pode perguntar ao Mestre sem rolar: “De onde veio alguma coisa que passou por aqui?” ou “Para onde esta corrente provavelmente levará?”\nQuando conduzir uma embarcação ou grupo através de águas perigosas que você conhece, quem seguir suas instruções recebe +1 adiante para enfrentar o primeiro perigo da travessia. Quando Empreender uma Jornada Perigosa no Mar de Sangue ou nas Profundezas, você sempre conta como 10+ na posição que ocupar."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando observar cuidadosamente o movimento da água, pode perguntar ao Mestre sem rolar: “De onde veio alguma coisa que passou por aqui?” ou “Para onde esta corrente provavelmente levará?”\nQuando conduzir uma embarcação ou grupo através de águas perigosas que você conhece, quem seguir suas instruções recebe +1 adiante para enfrentar o primeiro perigo da travessia. Quando Empreender uma Jornada Perigosa no Mar de Sangue ou nas Profundezas, você sempre conta como 10+ na posição que ocupar.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-950",
+    "paragrafo_docx": 950,
+    "grupo": "SEREIAS",
+    "categoria": "povo",
+    "titulo": "SIRENA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 950,
+        "tipo": "corpo",
+        "texto": "Quando usar sua música para atrair deliberadamente alguém que possa ouvi-la, role+CAR. \n10+: escolha: ele se aproxima de você ou revela sua posição sem perceber imediatamente que está sendo conduzido.\n7–9: escolha um dos dois, mas ele percebe que alguma coisa em sua música está tentando conduzi-lo."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando usar sua música para atrair deliberadamente alguém que possa ouvi-la, role+CAR. \n10+: escolha: ele se aproxima de você ou revela sua posição sem perceber imediatamente que está sendo conduzido.\n7–9: escolha um dos dois, mas ele percebe que alguma coisa em sua música está tentando conduzi-lo.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-952",
+    "paragrafo_docx": 952,
+    "grupo": "SHADOW FEY",
+    "categoria": "povo",
+    "titulo": "PASSO PELA SOMBRA",
+    "marcador_original": "Natureza",
+    "partes": [
+      {
+        "paragrafo_docx": 952,
+        "tipo": "corpo",
+        "texto": "Quando desaparecer de vista dentro de uma sombra profunda e houver outra sombra próxima que você possa alcançar, role+DES.\n10+: atravesse entre elas sem ser percebido.\n7–9: atravesse, mas escolha: alguém percebe o fenômeno; você deixa algo para trás; ou surge numa posição inconveniente."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando desaparecer de vista dentro de uma sombra profunda e houver outra sombra próxima que você possa alcançar, role+DES.\n10+: atravesse entre elas sem ser percebido.\n7–9: atravesse, mas escolha: alguém percebe o fenômeno; você deixa algo para trás; ou surge numa posição inconveniente.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-953",
+    "paragrafo_docx": 953,
+    "grupo": "SHADOW FEY",
+    "categoria": "povo",
+    "titulo": "ETIQUETA É UMA ARMA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 953,
+        "tipo": "corpo",
+        "texto": "Quando entrar num ambiente aristocrático e observar alguns minutos de interação, pergunte: “Quem aqui está fingindo possuir mais poder do que realmente tem?”\nQuando explorar essa diferença entre aparência e poder, receba +1 adiante."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando entrar num ambiente aristocrático e observar alguns minutos de interação, pergunte: “Quem aqui está fingindo possuir mais poder do que realmente tem?”\nQuando explorar essa diferença entre aparência e poder, receba +1 adiante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-954",
+    "paragrafo_docx": 954,
+    "grupo": "SHADOW FEY",
+    "categoria": "povo",
+    "titulo": "CASA, TÍTULO E DÍVIDA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 954,
+        "tipo": "corpo",
+        "texto": "Quando apresentar seu nome completo e Casa a outro Shadow Fey que reconheça essa estrutura social, ele precisa revelar ao menos como sua própria posição se relaciona com a sua antes que possa tratar você como um completo desconhecido. \nQuando esconder hostilidade atrás de perfeita cortesia feérica, ninguém pode saber apenas por suas maneiras que você pretende prejudicá-lo. Precisam de outra evidência. \nQuando sua Casa ou posição puder realisticamente oferecer acesso, proteção, prestígio ou punição, isso conta como influência para Negociar."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando apresentar seu nome completo e Casa a outro Shadow Fey que reconheça essa estrutura social, ele precisa revelar ao menos como sua própria posição se relaciona com a sua antes que possa tratar você como um completo desconhecido. \nQuando esconder hostilidade atrás de perfeita cortesia feérica, ninguém pode saber apenas por suas maneiras que você pretende prejudicá-lo. Precisam de outra evidência. \nQuando sua Casa ou posição puder realisticamente oferecer acesso, proteção, prestígio ou punição, isso conta como influência para Negociar.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-956",
+    "paragrafo_docx": 956,
+    "grupo": "SHADOW FEY",
+    "categoria": "povo",
+    "titulo": "PROMESSAS FEÉRICAS",
+    "marcador_original": "Natureza/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 956,
+        "tipo": "corpo",
+        "texto": "Quando alguém lhe fizer voluntariamente uma promessa clara e você a aceitar formalmente, ambos sabem que o pacto foi estabelecido. Se ela for quebrada, você imediatamente:"
+      },
+      {
+        "paragrafo_docx": 957,
+        "tipo": "opcao",
+        "texto": "sabe que foi quebrada;"
+      },
+      {
+        "paragrafo_docx": 958,
+        "tipo": "opcao",
+        "texto": "sabe quem a quebrou;"
+      },
+      {
+        "paragrafo_docx": 959,
+        "tipo": "opcao",
+        "texto": "recebe 2 Domínios sobre o transgressor."
+      },
+      {
+        "paragrafo_docx": 960,
+        "tipo": "continuacao",
+        "texto": "Gaste 1 Domínio quando confrontá-lo para:"
+      },
+      {
+        "paragrafo_docx": 961,
+        "tipo": "opcao",
+        "texto": "receber +1 numa rolagem;"
+      },
+      {
+        "paragrafo_docx": 962,
+        "tipo": "opcao",
+        "texto": "saber se está mentindo sobre a promessa;"
+      },
+      {
+        "paragrafo_docx": 963,
+        "tipo": "opcao",
+        "texto": "fazê-lo sentir fisicamente o peso da dívida;"
+      },
+      {
+        "paragrafo_docx": 964,
+        "tipo": "opcao",
+        "texto": "declarar uma consequência social feérica conhecida por ambos."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 957,
+        "texto": "sabe que foi quebrada;"
+      },
+      {
+        "paragrafo_docx": 958,
+        "texto": "sabe quem a quebrou;"
+      },
+      {
+        "paragrafo_docx": 959,
+        "texto": "recebe 2 Domínios sobre o transgressor."
+      },
+      {
+        "paragrafo_docx": 961,
+        "texto": "receber +1 numa rolagem;"
+      },
+      {
+        "paragrafo_docx": 962,
+        "texto": "saber se está mentindo sobre a promessa;"
+      },
+      {
+        "paragrafo_docx": 963,
+        "texto": "fazê-lo sentir fisicamente o peso da dívida;"
+      },
+      {
+        "paragrafo_docx": 964,
+        "texto": "declarar uma consequência social feérica conhecida por ambos."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando alguém lhe fizer voluntariamente uma promessa clara e você a aceitar formalmente, ambos sabem que o pacto foi estabelecido. Se ela for quebrada, você imediatamente:\nsabe que foi quebrada;\nsabe quem a quebrou;\nrecebe 2 Domínios sobre o transgressor.\nGaste 1 Domínio quando confrontá-lo para:\nreceber +1 numa rolagem;\nsaber se está mentindo sobre a promessa;\nfazê-lo sentir fisicamente o peso da dívida;\ndeclarar uma consequência social feérica conhecida por ambos.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-965",
+    "paragrafo_docx": 965,
+    "grupo": "SHADOW FEY",
+    "categoria": "povo",
+    "titulo": "GLAMOUR",
+    "marcador_original": "Natureza",
+    "partes": [
+      {
+        "paragrafo_docx": 965,
+        "tipo": "corpo",
+        "texto": "Você pode alterar livremente sua aparência aparente, vestimentas, voz, cor e pequenos traços, desde que não imite exatamente alguém específico nem altere significativamente seu tamanho ou forma. Quem não tiver razão para desconfiar aceita o glamour. Enganar alguém que o examine cuidadosamente exige a ação apropriada."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Você pode alterar livremente sua aparência aparente, vestimentas, voz, cor e pequenos traços, desde que não imite exatamente alguém específico nem altere significativamente seu tamanho ou forma. Quem não tiver razão para desconfiar aceita o glamour. Enganar alguém que o examine cuidadosamente exige a ação apropriada.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-966",
+    "paragrafo_docx": 966,
+    "grupo": "SHADOW FEY",
+    "categoria": "povo",
+    "titulo": "TEMPO É UMA ARMA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 966,
+        "tipo": "corpo",
+        "texto": "Quando deixar deliberadamente uma oportunidade passar porque está preparando uma posição melhor para o futuro, diga ao Mestre o que está esperando e receba 2 Preparos vinculados a esse objetivo. \nSe esperar meses ou anos dentro da ficção, receba 3.\nVocê não pode receber novos Preparos deste Movimento para o mesmo objetivo enquanto ainda possuir Preparos vinculados a ele."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando deixar deliberadamente uma oportunidade passar porque está preparando uma posição melhor para o futuro, diga ao Mestre o que está esperando e receba 2 Preparos vinculados a esse objetivo. \nSe esperar meses ou anos dentro da ficção, receba 3.\nVocê não pode receber novos Preparos deste Movimento para o mesmo objetivo enquanto ainda possuir Preparos vinculados a ele.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-968",
+    "paragrafo_docx": 968,
+    "grupo": "FEÉRICOS E FADAS",
+    "categoria": "povo",
+    "titulo": "NATUREZA ENCARNADA",
+    "marcador_original": "Natureza",
+    "partes": [
+      {
+        "paragrafo_docx": 968,
+        "tipo": "corpo",
+        "texto": "Escolha algo ao qual sua natureza feérica está ligada: um tipo de lugar, estação, fenômeno, emoção ou outra presença.\nVocê sempre percebe quando essa coisa está presente, foi violentamente alterada ou está dominando o ambiente.\nEnquanto estiver imerso nela, escolha uma:"
+      },
+      {
+        "paragrafo_docx": 969,
+        "tipo": "opcao",
+        "texto": "receba +1 para Discernir Realidades;"
+      },
+      {
+        "paragrafo_docx": 970,
+        "tipo": "opcao",
+        "texto": "sua presença se torna sobrenaturalmente difícil de ignorar ou perceber, conforme apropriado;"
+      },
+      {
+        "paragrafo_docx": 971,
+        "tipo": "opcao",
+        "texto": "você pode realizar uma pequena manifestação impossível relacionada à sua natureza sem rolar."
+      },
+      {
+        "paragrafo_docx": 972,
+        "tipo": "continuacao",
+        "texto": "Quando alguém destruir, profanar ou transformar aquilo a que você pertence, você percebe."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 969,
+        "texto": "receba +1 para Discernir Realidades;"
+      },
+      {
+        "paragrafo_docx": 970,
+        "texto": "sua presença se torna sobrenaturalmente difícil de ignorar ou perceber, conforme apropriado;"
+      },
+      {
+        "paragrafo_docx": 971,
+        "texto": "você pode realizar uma pequena manifestação impossível relacionada à sua natureza sem rolar."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Escolha algo ao qual sua natureza feérica está ligada: um tipo de lugar, estação, fenômeno, emoção ou outra presença.\nVocê sempre percebe quando essa coisa está presente, foi violentamente alterada ou está dominando o ambiente.\nEnquanto estiver imerso nela, escolha uma:\nreceba +1 para Discernir Realidades;\nsua presença se torna sobrenaturalmente difícil de ignorar ou perceber, conforme apropriado;\nvocê pode realizar uma pequena manifestação impossível relacionada à sua natureza sem rolar.\nQuando alguém destruir, profanar ou transformar aquilo a que você pertence, você percebe.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-973",
+    "paragrafo_docx": 973,
+    "grupo": "FEÉRICOS E FADAS",
+    "categoria": "povo",
+    "titulo": "NOME VERDADEIRO",
+    "marcador_original": "Natureza",
+    "partes": [
+      {
+        "paragrafo_docx": 973,
+        "tipo": "corpo",
+        "texto": "Seu verdadeiro nome possui poder. Quem o conhece pode chamá-lo através de grandes distâncias e possui influência sobrenatural sobre pactos feitos com você. Mas nomes são recíprocos.\nQuando alguém lhe entregar voluntariamente seu nome verdadeiro, receba 1 Domínio sobre ele. Gaste-o para:"
+      },
+      {
+        "paragrafo_docx": 974,
+        "tipo": "opcao",
+        "texto": "fazê-lo ouvir sua voz independentemente da distância;"
+      },
+      {
+        "paragrafo_docx": 975,
+        "tipo": "opcao",
+        "texto": "saber em que direção ele se encontra;"
+      },
+      {
+        "paragrafo_docx": 976,
+        "tipo": "opcao",
+        "texto": "receber +1 ao cumprir ou cobrar uma promessa entre vocês;"
+      },
+      {
+        "paragrafo_docx": 977,
+        "tipo": "opcao",
+        "texto": "perceber imediatamente quando algo sobrenatural altera sua identidade."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 974,
+        "texto": "fazê-lo ouvir sua voz independentemente da distância;"
+      },
+      {
+        "paragrafo_docx": 975,
+        "texto": "saber em que direção ele se encontra;"
+      },
+      {
+        "paragrafo_docx": 976,
+        "texto": "receber +1 ao cumprir ou cobrar uma promessa entre vocês;"
+      },
+      {
+        "paragrafo_docx": 977,
+        "texto": "perceber imediatamente quando algo sobrenatural altera sua identidade."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Seu verdadeiro nome possui poder. Quem o conhece pode chamá-lo através de grandes distâncias e possui influência sobrenatural sobre pactos feitos com você. Mas nomes são recíprocos.\nQuando alguém lhe entregar voluntariamente seu nome verdadeiro, receba 1 Domínio sobre ele. Gaste-o para:\nfazê-lo ouvir sua voz independentemente da distância;\nsaber em que direção ele se encontra;\nreceber +1 ao cumprir ou cobrar uma promessa entre vocês;\nperceber imediatamente quando algo sobrenatural altera sua identidade.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-978",
+    "paragrafo_docx": 978,
+    "grupo": "FEÉRICOS E FADAS",
+    "categoria": "povo",
+    "titulo": "PACTO DE HOSPITALIDADE",
+    "marcador_original": "Natureza",
+    "partes": [
+      {
+        "paragrafo_docx": 978,
+        "tipo": "corpo",
+        "texto": "Quando aceitar formalmente a hospitalidade de alguém, nem você nem seu anfitrião podem ferir deliberadamente o outro sem primeiro quebrar o pacto. Quem o quebrar imediatamente sofre uma consequência sobrenatural apropriada escolhida pelo Mestre."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando aceitar formalmente a hospitalidade de alguém, nem você nem seu anfitrião podem ferir deliberadamente o outro sem primeiro quebrar o pacto. Quem o quebrar imediatamente sofre uma consequência sobrenatural apropriada escolhida pelo Mestre.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-979",
+    "paragrafo_docx": 979,
+    "grupo": "FEÉRICOS E FADAS",
+    "categoria": "povo",
+    "titulo": "PRESENTE POR PRESENTE",
+    "marcador_original": "Natureza",
+    "partes": [
+      {
+        "paragrafo_docx": 979,
+        "tipo": "corpo",
+        "texto": "Quando aceitar voluntariamente um presente de valor verdadeiro ou quando alguém aceitar voluntariamente um presente de valor verdadeiro vindo de você, diga o que acredita ser devido em retorno e receba 1 Domínio sobre a dívida. \nEnquanto a dívida permanecer:"
+      },
+      {
+        "paragrafo_docx": 980,
+        "tipo": "opcao",
+        "texto": "você sabe quando chega o momento apropriado de cobrar ou quitar aquilo que é devido;"
+      },
+      {
+        "paragrafo_docx": 981,
+        "tipo": "opcao",
+        "texto": "o doador possui influência sobre o recebedor para Negociar quando exigir algo compatível com o valor do presente."
+      },
+      {
+        "paragrafo_docx": 982,
+        "tipo": "continuacao",
+        "texto": "Gaste seu Domínio para escolher 1:"
+      },
+      {
+        "paragrafo_docx": 983,
+        "tipo": "opcao",
+        "texto": "Pergunte o verdadeiro preço: pergunte ao Mestre o que poderia ser oferecido para quitar dignamente a dívida. Ele responderá honestamente."
+      },
+      {
+        "paragrafo_docx": 984,
+        "tipo": "opcao",
+        "texto": "Honre a troca: quando oferecer ou aceitar em retorno algo de valor equivalente, receba +1 adiante para Negociar os termos finais da quitação. Se a troca for aceita, encerre a dívida."
+      },
+      {
+        "paragrafo_docx": 985,
+        "tipo": "opcao",
+        "texto": "Transforme dívida em pacto: quando uma promessa formal substituir aquilo que seria devido em retorno, gaste o Domínio e transforme a dívida em um pacto feérico. Enquanto for o recebedor, receba +1 adiante quando agir diretamente para cumprir a promessa. Enquanto for o doador, receba +1 constante ao agir diretamente para cobrar, proteger ou fazer cumprir o pacto."
+      },
+      {
+        "paragrafo_docx": 986,
+        "tipo": "continuacao",
+        "texto": "Como recebedor, se você recusar deliberadamente uma cobrança justa sem quitar a dívida, perca o Domínio e o Mestre realizará uma consequência apropriada à natureza feérica da troca."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 980,
+        "texto": "você sabe quando chega o momento apropriado de cobrar ou quitar aquilo que é devido;"
+      },
+      {
+        "paragrafo_docx": 981,
+        "texto": "o doador possui influência sobre o recebedor para Negociar quando exigir algo compatível com o valor do presente."
+      },
+      {
+        "paragrafo_docx": 983,
+        "texto": "Pergunte o verdadeiro preço: pergunte ao Mestre o que poderia ser oferecido para quitar dignamente a dívida. Ele responderá honestamente."
+      },
+      {
+        "paragrafo_docx": 984,
+        "texto": "Honre a troca: quando oferecer ou aceitar em retorno algo de valor equivalente, receba +1 adiante para Negociar os termos finais da quitação. Se a troca for aceita, encerre a dívida."
+      },
+      {
+        "paragrafo_docx": 985,
+        "texto": "Transforme dívida em pacto: quando uma promessa formal substituir aquilo que seria devido em retorno, gaste o Domínio e transforme a dívida em um pacto feérico. Enquanto for o recebedor, receba +1 adiante quando agir diretamente para cumprir a promessa. Enquanto for o doador, receba +1 constante ao agir diretamente para cobrar, proteger ou fazer cumprir o pacto."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando aceitar voluntariamente um presente de valor verdadeiro ou quando alguém aceitar voluntariamente um presente de valor verdadeiro vindo de você, diga o que acredita ser devido em retorno e receba 1 Domínio sobre a dívida. \nEnquanto a dívida permanecer:\nvocê sabe quando chega o momento apropriado de cobrar ou quitar aquilo que é devido;\no doador possui influência sobre o recebedor para Negociar quando exigir algo compatível com o valor do presente.\nGaste seu Domínio para escolher 1:\nPergunte o verdadeiro preço: pergunte ao Mestre o que poderia ser oferecido para quitar dignamente a dívida. Ele responderá honestamente.\nHonre a troca: quando oferecer ou aceitar em retorno algo de valor equivalente, receba +1 adiante para Negociar os termos finais da quitação. Se a troca for aceita, encerre a dívida.\nTransforme dívida em pacto: quando uma promessa formal substituir aquilo que seria devido em retorno, gaste o Domínio e transforme a dívida em um pacto feérico. Enquanto for o recebedor, receba +1 adiante quando agir diretamente para cumprir a promessa. Enquanto for o doador, receba +1 constante ao agir diretamente para cobrar, proteger ou fazer cumprir o pacto.\nComo recebedor, se você recusar deliberadamente uma cobrança justa sem quitar a dívida, perca o Domínio e o Mestre realizará uma consequência apropriada à natureza feérica da troca.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-988",
+    "paragrafo_docx": 988,
+    "grupo": "FEÉRICOS E FADAS",
+    "categoria": "povo",
+    "titulo": "CRIATURA ALADA",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 988,
+        "tipo": "corpo",
+        "texto": "Quando usar voo natural para alcançar algo impossível a quem está no chão, você chega lá se houver espaço e tempo para voar. Se o voo ocorrer sob ataque ou tempestade, Desafie o Perigo; em 10+, além do sucesso, escolha uma posição vantajosa. Este Movimento permite manobrar em combate aéreo apertado como se estivesse em terreno comum."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando usar voo natural para alcançar algo impossível a quem está no chão, você chega lá se houver espaço e tempo para voar. Se o voo ocorrer sob ataque ou tempestade, Desafie o Perigo; em 10+, além do sucesso, escolha uma posição vantajosa. Este Movimento permite manobrar em combate aéreo apertado como se estivesse em terreno comum.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-989",
+    "paragrafo_docx": 989,
+    "grupo": "FEÉRICOS E FADAS",
+    "categoria": "povo",
+    "titulo": "NÃO SOU DAQUI",
+    "marcador_original": "Natureza",
+    "partes": [
+      {
+        "paragrafo_docx": 989,
+        "tipo": "corpo",
+        "texto": "Quando encontrar uma ruptura, portal ou fenômeno ligado a outro plano, pode sempre perceber que a realidade está fina ou deslocada naquele lugar, mesmo sem saber sua causa. Quando perceber uma ruptura ou afinamento da realidade, pergunte ao Mestre “O que existe do outro lado?” ou “O que atravessou por aqui?”. Ele responderá com aquilo que sua natureza consegue perceber."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando encontrar uma ruptura, portal ou fenômeno ligado a outro plano, pode sempre perceber que a realidade está fina ou deslocada naquele lugar, mesmo sem saber sua causa. Quando perceber uma ruptura ou afinamento da realidade, pergunte ao Mestre “O que existe do outro lado?” ou “O que atravessou por aqui?”. Ele responderá com aquilo que sua natureza consegue perceber.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-990",
+    "paragrafo_docx": 990,
+    "grupo": "FEÉRICOS E FADAS",
+    "categoria": "povo",
+    "titulo": "CAPRICHO FEÉRICO",
+    "marcador_original": "Natureza",
+    "partes": [
+      {
+        "paragrafo_docx": 990,
+        "tipo": "corpo",
+        "texto": "Escolha um tabu simples e estranho que sua natureza não consegue ignorar. Enquanto agir de acordo com ele, uma vez por sessão transforme um 6- em 7–9 num Movimento diretamente relacionado à sua natureza feérica. Se quebrar voluntariamente o tabu, perde esse benefício até reparar a transgressão."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Escolha um tabu simples e estranho que sua natureza não consegue ignorar. Enquanto agir de acordo com ele, uma vez por sessão transforme um 6- em 7–9 num Movimento diretamente relacionado à sua natureza feérica. Se quebrar voluntariamente o tabu, perde esse benefício até reparar a transgressão.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-992",
+    "paragrafo_docx": 992,
+    "grupo": "ELFOS YOKAI",
+    "categoria": "povo",
+    "titulo": "NOMEAR É RECONHECER",
+    "marcador_original": "Cultura/Magia",
+    "partes": [
+      {
+        "paragrafo_docx": 992,
+        "tipo": "corpo",
+        "texto": "Quando descobrir o nome verdadeiro ou legítimo de uma pessoa, lugar ou instituição e pronunciá-lo de forma ritual, pergunte ao Mestre que autoridade, obrigação ou relação este nome reconhece. Ele responderá com a verdade. Quando agir diretamente de acordo com a autoridade, obrigação ou relação revelada pelo nome, receba +1 adiante."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando descobrir o nome verdadeiro ou legítimo de uma pessoa, lugar ou instituição e pronunciá-lo de forma ritual, pergunte ao Mestre que autoridade, obrigação ou relação este nome reconhece. Ele responderá com a verdade. Quando agir diretamente de acordo com a autoridade, obrigação ou relação revelada pelo nome, receba +1 adiante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-993",
+    "paragrafo_docx": 993,
+    "grupo": "ELFOS YOKAI",
+    "categoria": "povo",
+    "titulo": "SONHO — 夢",
+    "marcador_original": "Tradição",
+    "partes": [
+      {
+        "paragrafo_docx": 993,
+        "tipo": "corpo",
+        "texto": "Quando utilizar a linguagem Yokai para formular claramente uma possibilidade que ainda não existe, receba Domínio 2 sobre essa possibilidade. Gaste 1 Domínio quando agir diretamente para torná-la real para:"
+      },
+      {
+        "paragrafo_docx": 994,
+        "tipo": "opcao",
+        "texto": "receber +1 na rolagem;"
+      },
+      {
+        "paragrafo_docx": 995,
+        "tipo": "opcao",
+        "texto": "declarar uma pequena preparação anterior que torna a possibilidade plausível;"
+      },
+      {
+        "paragrafo_docx": 996,
+        "tipo": "opcao",
+        "texto": "perguntar ao Mestre “o que ainda impede isso de existir?”"
+      },
+      {
+        "paragrafo_docx": 997,
+        "tipo": "continuacao",
+        "texto": "O Domínio desaparece quando a possibilidade se torna real, impossível ou é abandonada."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 994,
+        "texto": "receber +1 na rolagem;"
+      },
+      {
+        "paragrafo_docx": 995,
+        "texto": "declarar uma pequena preparação anterior que torna a possibilidade plausível;"
+      },
+      {
+        "paragrafo_docx": 996,
+        "texto": "perguntar ao Mestre “o que ainda impede isso de existir?”"
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando utilizar a linguagem Yokai para formular claramente uma possibilidade que ainda não existe, receba Domínio 2 sobre essa possibilidade. Gaste 1 Domínio quando agir diretamente para torná-la real para:\nreceber +1 na rolagem;\ndeclarar uma pequena preparação anterior que torna a possibilidade plausível;\nperguntar ao Mestre “o que ainda impede isso de existir?”\nO Domínio desaparece quando a possibilidade se torna real, impossível ou é abandonada.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-998",
+    "paragrafo_docx": 998,
+    "grupo": "ELFOS YOKAI",
+    "categoria": "povo",
+    "titulo": "RAIZ — 根",
+    "marcador_original": "Tradição",
+    "partes": [
+      {
+        "paragrafo_docx": 998,
+        "tipo": "corpo",
+        "texto": "Quando investigar quem realmente pertence a um território, linhagem ou instituição, pergunte ao Mestre uma pergunta adicional ao Discernir Realidades: “Quem possui aqui uma legitimidade que não pode ser simplesmente conquistada?”\nDepois que o Mestre disser quem possui legitimidade impossível de conquistar, receba +1 constante enquanto agir diretamente para defender, revelar ou contestar essa legitimidade durante a cena."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando investigar quem realmente pertence a um território, linhagem ou instituição, pergunte ao Mestre uma pergunta adicional ao Discernir Realidades: “Quem possui aqui uma legitimidade que não pode ser simplesmente conquistada?”\nDepois que o Mestre disser quem possui legitimidade impossível de conquistar, receba +1 constante enquanto agir diretamente para defender, revelar ou contestar essa legitimidade durante a cena.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-999",
+    "paragrafo_docx": 999,
+    "grupo": "ELFOS YOKAI",
+    "categoria": "povo",
+    "titulo": "LUZ — 光",
+    "marcador_original": "Tradição",
+    "partes": [
+      {
+        "paragrafo_docx": 999,
+        "tipo": "corpo",
+        "texto": "Quando revelar publicamente uma verdade que alguém poderoso tentou apagar, esconder ou falsificar, receba +1 constante contra qualquer tentativa imediata de silenciá-lo."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando revelar publicamente uma verdade que alguém poderoso tentou apagar, esconder ou falsificar, receba +1 constante contra qualquer tentativa imediata de silenciá-lo.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": "movimento-revisado:paragrafo-999"
+  },
+  {
+    "id": "movimento-povo:paragrafo-1000",
+    "paragrafo_docx": 1000,
+    "grupo": "ELFOS YOKAI",
+    "categoria": "povo",
+    "titulo": "ESCRITA SOBRE OSSO",
+    "marcador_original": "Magia/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1000,
+        "tipo": "corpo",
+        "texto": "Quando tiver tempo, instrumento apropriado e acesso ao osso de Golzdov, pode gravar uma inscrição Yokai simples destinada a marcar, lembrar ou delimitar alguma coisa. Alterações mais profundas da realidade exigem Movimentos de Classe apropriados. Quando encontrar lacuna deliberada em genealogia, arquivo, inscrição ou sucessão, você reconhece quando a ausência parece intencional e não simples perda de informação."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando tiver tempo, instrumento apropriado e acesso ao osso de Golzdov, pode gravar uma inscrição Yokai simples destinada a marcar, lembrar ou delimitar alguma coisa. Alterações mais profundas da realidade exigem Movimentos de Classe apropriados. Quando encontrar lacuna deliberada em genealogia, arquivo, inscrição ou sucessão, você reconhece quando a ausência parece intencional e não simples perda de informação.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1002",
+    "paragrafo_docx": 1002,
+    "grupo": "ELFOS DA FLORESTA",
+    "categoria": "povo",
+    "titulo": "PERTENCER À FLORESTA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1002,
+        "tipo": "corpo",
+        "texto": "Em uma floresta que você conhece como lar, você nunca se perde por meios naturais e sempre consegue encontrar água, abrigo e sinais das trilhas utilizadas por sua comunidade. Quando Empreender uma Jornada Perigosa por uma Floresta, você sempre conta como 10+ na posição que ocupar."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Em uma floresta que você conhece como lar, você nunca se perde por meios naturais e sempre consegue encontrar água, abrigo e sinais das trilhas utilizadas por sua comunidade. Quando Empreender uma Jornada Perigosa por uma Floresta, você sempre conta como 10+ na posição que ocupar.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1003",
+    "paragrafo_docx": 1003,
+    "grupo": "ELFOS DA FLORESTA",
+    "categoria": "povo",
+    "titulo": "PASSO SOB AS FOLHAS",
+    "marcador_original": "Corpo/Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1003,
+        "tipo": "corpo",
+        "texto": "Folhagem, chuva, neblina e vegetação natural são suficientes por si sós para ocultar sua posição quando tentar esgueirar-se."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Folhagem, chuva, neblina e vegetação natural são suficientes por si sós para ocultar sua posição quando tentar esgueirar-se.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1004",
+    "paragrafo_docx": 1004,
+    "grupo": "ELFOS DA FLORESTA",
+    "categoria": "povo",
+    "titulo": "MEMÓRIA DE ELDROTH",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1004,
+        "tipo": "corpo",
+        "texto": "Quando entrar numa floresta que conheceu antes, pergunte: “O que mudou aqui desde a última vez?”\nVocê reconhece automaticamente sinais de corrupção, vigilância ou manipulação da natureza por magia Shadow Fey.\nQuando agir diretamente contra aquilo que corrompeu a floresta, receba +1 adiante."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando entrar numa floresta que conheceu antes, pergunte: “O que mudou aqui desde a última vez?”\nVocê reconhece automaticamente sinais de corrupção, vigilância ou manipulação da natureza por magia Shadow Fey.\nQuando agir diretamente contra aquilo que corrompeu a floresta, receba +1 adiante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1005",
+    "paragrafo_docx": 1005,
+    "grupo": "ELFOS DA FLORESTA",
+    "categoria": "povo",
+    "titulo": "FILHO DE IRONWOOD",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1005,
+        "tipo": "corpo",
+        "texto": "Quando procurar um caminho discreto através de uma floresta, se uma trilha antiga, rota de caça ou passagem esquecida existir, você sabe encontrá-la. Quando observar uma estrada, patrulha ou acampamento através de cobertura natural, pergunte:\n“Qual é o momento mais seguro para passar sem ser visto?”\nUma vez por sessão, quando utilizar essa informação para atravessar território inimigo sem ser percebido, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando procurar um caminho discreto através de uma floresta, se uma trilha antiga, rota de caça ou passagem esquecida existir, você sabe encontrá-la. Quando observar uma estrada, patrulha ou acampamento através de cobertura natural, pergunte:\n“Qual é o momento mais seguro para passar sem ser visto?”\nUma vez por sessão, quando utilizar essa informação para atravessar território inimigo sem ser percebido, marque 1 XP.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1006",
+    "paragrafo_docx": 1006,
+    "grupo": "ELFOS DA FLORESTA",
+    "categoria": "povo",
+    "titulo": "UMA FLORESTA É UMA COMUNIDADE",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1006,
+        "tipo": "corpo",
+        "texto": "Quando alguém ameaçar deliberadamente uma parte da floresta que você considera comunidade, receba Domínio 2. Gaste 1 para receber +1 quando agir diretamente para protegê-la ou para Ajudar alguém que esteja fazendo isso. Perca o Domínio quando a ameaça terminar."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando alguém ameaçar deliberadamente uma parte da floresta que você considera comunidade, receba Domínio 2. Gaste 1 para receber +1 quando agir diretamente para protegê-la ou para Ajudar alguém que esteja fazendo isso. Perca o Domínio quando a ameaça terminar.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1008",
+    "paragrafo_docx": 1008,
+    "grupo": "HOBBITS",
+    "categoria": "povo",
+    "titulo": "DESPENSA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1008,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando o grupo perceber que lhe falta alguma pequena provisão mundana razoável — comida, corda, vela, tabaco, ferramenta simples — explique onde você guardou uma e produza o item."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Uma vez por sessão, quando o grupo perceber que lhe falta alguma pequena provisão mundana razoável — comida, corda, vela, tabaco, ferramenta simples — explique onde você guardou uma e produza o item.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1009",
+    "paragrafo_docx": 1009,
+    "grupo": "HOBBITS",
+    "categoria": "povo",
+    "titulo": "NINGUÉM VIU NADA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1009,
+        "tipo": "corpo",
+        "texto": "Você sempre sabe onde encontrar uma comunidade Hobbit. Quando esconder alguém numa comunidade Hobbit que confie em você, autoridades estrangeiras não o encontram apenas fazendo perguntas. Precisam descobrir uma pista real."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Você sempre sabe onde encontrar uma comunidade Hobbit. Quando esconder alguém numa comunidade Hobbit que confie em você, autoridades estrangeiras não o encontram apenas fazendo perguntas. Precisam descobrir uma pista real.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1010",
+    "paragrafo_docx": 1010,
+    "grupo": "HOBBITS",
+    "categoria": "povo",
+    "titulo": "TODO MUNDO CONHECE ALGUÉM",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1010,
+        "tipo": "corpo",
+        "texto": "Quando chegar a uma comunidade de Hobbit, diga o nome de uma família local. O Mestre dirá como você ou seus parentes conhecem essa família. Essa família sempre conhece alguém que pode ajudar com seu problema, embora isso não signifique que essa pessoa esteja disposta a ajudar gratuitamente."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando chegar a uma comunidade de Hobbit, diga o nome de uma família local. O Mestre dirá como você ou seus parentes conhecem essa família. Essa família sempre conhece alguém que pode ajudar com seu problema, embora isso não signifique que essa pessoa esteja disposta a ajudar gratuitamente.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1011",
+    "paragrafo_docx": 1011,
+    "grupo": "HOBBITS",
+    "categoria": "povo",
+    "titulo": "MEMÓRIA DEPOIS DO JANTAR",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1011,
+        "tipo": "corpo",
+        "texto": "Quando Falar Difícil sobre um acontecimento local antigo, pode usar CAR em vez de INT se explicar qual história, canção ou fofoca familiar preservou essa informação."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando Falar Difícil sobre um acontecimento local antigo, pode usar CAR em vez de INT se explicar qual história, canção ou fofoca familiar preservou essa informação.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1012",
+    "paragrafo_docx": 1012,
+    "grupo": "HOBBITS",
+    "categoria": "povo",
+    "titulo": "ERVA-DE-HOBBIT",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1012,
+        "tipo": "corpo",
+        "texto": "Quando compartilhar erva-de-hobbit num ambiente seguro com alguém disposto a conversar, faça uma pergunta pessoal sincera. Se a pessoa responder sinceramente, ela pode fazer uma pergunta a você também; se ambos responderem, cada um recebe +1 adiante para Ajudar o outro."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando compartilhar erva-de-hobbit num ambiente seguro com alguém disposto a conversar, faça uma pergunta pessoal sincera. Se a pessoa responder sinceramente, ela pode fazer uma pergunta a você também; se ambos responderem, cada um recebe +1 adiante para Ajudar o outro.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1013",
+    "paragrafo_docx": 1013,
+    "grupo": "HOBBITS",
+    "categoria": "povo",
+    "titulo": "PARECER IRRELEVANTE",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1013,
+        "tipo": "corpo",
+        "texto": "Quando permanecer quieto entre pessoas poderosas que não o consideram ameaça, elas tendem a falar diante de você como se não estivesse ali. Isso termina assim que você lhes der razão para tratá-lo como importante."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando permanecer quieto entre pessoas poderosas que não o consideram ameaça, elas tendem a falar diante de você como se não estivesse ali. Isso termina assim que você lhes der razão para tratá-lo como importante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1014",
+    "paragrafo_docx": 1014,
+    "grupo": "HOBBITS",
+    "categoria": "povo",
+    "titulo": "CAMINHOS DE CASA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1014,
+        "tipo": "corpo",
+        "texto": "Quando precisar transportar algo pequeno ou alguém vulnerável através de território civilizado sem chamar atenção, sempre conhece uma rota que evita as estradas principais."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando precisar transportar algo pequeno ou alguém vulnerável através de território civilizado sem chamar atenção, sempre conhece uma rota que evita as estradas principais.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1016",
+    "paragrafo_docx": 1016,
+    "grupo": "GNOMOS",
+    "categoria": "povo",
+    "titulo": "UM NOME NÃO BASTA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1016,
+        "tipo": "corpo",
+        "texto": "Você possui vários nomes. Escolha três grupos ou relações que conhecem você por nomes diferentes. Quando alguém procurar você usando apenas um deles, pessoas de outro círculo não necessariamente sabem de quem se trata. \nQuando alguém tentar encontrá-lo, identificá-lo ou relacionar seus atos utilizando apenas um de seus nomes, receba +1 adiante para manter separadas suas diferentes identidades."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Você possui vários nomes. Escolha três grupos ou relações que conhecem você por nomes diferentes. Quando alguém procurar você usando apenas um deles, pessoas de outro círculo não necessariamente sabem de quem se trata. \nQuando alguém tentar encontrá-lo, identificá-lo ou relacionar seus atos utilizando apenas um de seus nomes, receba +1 adiante para manter separadas suas diferentes identidades.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1017",
+    "paragrafo_docx": 1017,
+    "grupo": "GNOMOS",
+    "categoria": "povo",
+    "titulo": "CURIOSIDADE CARTOGRÁFICA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1017,
+        "tipo": "corpo",
+        "texto": "Quando encontrar uma máquina, ruína, mapa, mecanismo ou fenômeno que nunca tenha visto, pergunte: \n“Qual detalhe aqui não combina com o restante?”\nQuando explorar pessoalmente uma região, você pode registrar num mapa um detalhe que outros cartógrafos provavelmente ignorariam: perigo, rota alternativa, mudança histórica, pessoa, recurso ou comportamento local. \nQuem utilizar essa informação recebe +1 adiante quando ela se tornar relevante. \nE, quando você próprio agir segundo aquilo que descobriu que “não combina”, também recebe +1 adiante."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando encontrar uma máquina, ruína, mapa, mecanismo ou fenômeno que nunca tenha visto, pergunte: \n“Qual detalhe aqui não combina com o restante?”\nQuando explorar pessoalmente uma região, você pode registrar num mapa um detalhe que outros cartógrafos provavelmente ignorariam: perigo, rota alternativa, mudança histórica, pessoa, recurso ou comportamento local. \nQuem utilizar essa informação recebe +1 adiante quando ela se tornar relevante. \nE, quando você próprio agir segundo aquilo que descobriu que “não combina”, também recebe +1 adiante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1018",
+    "paragrafo_docx": 1018,
+    "grupo": "GNOMOS",
+    "categoria": "povo",
+    "titulo": "DESMONTA PRIMEIRO",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1018,
+        "tipo": "corpo",
+        "texto": "Quando desmontar cuidadosamente um mecanismo para descobrir como funciona, role+INT.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 1019,
+        "tipo": "opcao",
+        "texto": "Você entende seu princípio de funcionamento."
+      },
+      {
+        "paragrafo_docx": 1020,
+        "tipo": "opcao",
+        "texto": "Consegue remontá-lo."
+      },
+      {
+        "paragrafo_docx": 1021,
+        "tipo": "opcao",
+        "texto": "Descobre como modificá-lo."
+      },
+      {
+        "paragrafo_docx": 1022,
+        "tipo": "opcao",
+        "texto": "Não danifica nenhuma peça importante."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1019,
+        "texto": "Você entende seu princípio de funcionamento."
+      },
+      {
+        "paragrafo_docx": 1020,
+        "texto": "Consegue remontá-lo."
+      },
+      {
+        "paragrafo_docx": 1021,
+        "texto": "Descobre como modificá-lo."
+      },
+      {
+        "paragrafo_docx": 1022,
+        "texto": "Não danifica nenhuma peça importante."
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando desmontar cuidadosamente um mecanismo para descobrir como funciona, role+INT.\n10+: escolha 2.\n7–9: escolha 1.\nVocê entende seu princípio de funcionamento.\nConsegue remontá-lo.\nDescobre como modificá-lo.\nNão danifica nenhuma peça importante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1023",
+    "paragrafo_docx": 1023,
+    "grupo": "GNOMOS",
+    "categoria": "povo",
+    "titulo": "SOLUÇÃO QUE CRIOU OUTRO PROBLEMA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1023,
+        "tipo": "corpo",
+        "texto": "Quando improvisar rapidamente um dispositivo com materiais inadequados, diga o que pretende que ele faça e role+INT.\n10+: funciona.\n7–9: funciona, mas o Mestre escolhe: é temporário, instável ou produz um efeito colateral inconveniente."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando improvisar rapidamente um dispositivo com materiais inadequados, diga o que pretende que ele faça e role+INT.\n10+: funciona.\n7–9: funciona, mas o Mestre escolhe: é temporário, instável ou produz um efeito colateral inconveniente.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1024",
+    "paragrafo_docx": 1024,
+    "grupo": "GNOMOS",
+    "categoria": "povo",
+    "titulo": "ALDEIA QUE NÃO EXISTE",
+    "marcador_original": "Cultura/Magia",
+    "partes": [
+      {
+        "paragrafo_docx": 1024,
+        "tipo": "corpo",
+        "texto": "Quando tiver tempo para esconder um pequeno acampamento ou entrada usando vegetação, arquitetura e ilusões simples, ele não será encontrado por observação casual."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando tiver tempo para esconder um pequeno acampamento ou entrada usando vegetação, arquitetura e ilusões simples, ele não será encontrado por observação casual.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1025",
+    "paragrafo_docx": 1025,
+    "grupo": "GNOMOS",
+    "categoria": "povo",
+    "titulo": "PEQUENOS MENSAGEIROS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1025,
+        "tipo": "corpo",
+        "texto": "Quando possuir alimento e alguns minutos, pode convencer um pequeno animal local a levar um objeto leve ou mensagem simples para um lugar próximo que ele saiba alcançar. O animal pode retornar com uma impressão simples: perigo/não perigo, encontrou/não encontrou, caminho aberto/fechado."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando possuir alimento e alguns minutos, pode convencer um pequeno animal local a levar um objeto leve ou mensagem simples para um lugar próximo que ele saiba alcançar. O animal pode retornar com uma impressão simples: perigo/não perigo, encontrou/não encontrou, caminho aberto/fechado.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1026",
+    "paragrafo_docx": 1026,
+    "grupo": "GNOMOS",
+    "categoria": "povo",
+    "titulo": "TÚNEL DE FUGA",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1026,
+        "tipo": "corpo",
+        "texto": "Quando passar tempo suficiente num assentamento que pretende defender, declare onde você teria procurado ou preparado uma rota secundária. O Mestre dirá o que seria necessário para torná-la utilizável. Depois que a rota estiver utilizável, quem fugir seguindo você por ela recebe +1 adiante para escapar da ameaça que deixou para trás."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando passar tempo suficiente num assentamento que pretende defender, declare onde você teria procurado ou preparado uma rota secundária. O Mestre dirá o que seria necessário para torná-la utilizável. Depois que a rota estiver utilizável, quem fugir seguindo você por ela recebe +1 adiante para escapar da ameaça que deixou para trás.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1027",
+    "paragrafo_docx": 1027,
+    "grupo": "GNOMOS",
+    "categoria": "povo",
+    "titulo": "ABAIXO DAS CAVERNAS",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1027,
+        "tipo": "corpo",
+        "texto": "Quando explorar níveis subterrâneos muito profundos, pode distinguir se uma passagem foi formada naturalmente, escavada por povos conhecidos ou se pertence a algo mais antigo que as ocupações atuais. Quando Empreender uma Jornada Perigosa pelo Subterrâneo, você sempre conta como 10+ na posição que ocupar."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando explorar níveis subterrâneos muito profundos, pode distinguir se uma passagem foi formada naturalmente, escavada por povos conhecidos ou se pertence a algo mais antigo que as ocupações atuais. Quando Empreender uma Jornada Perigosa pelo Subterrâneo, você sempre conta como 10+ na posição que ocupar.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1029",
+    "paragrafo_docx": 1029,
+    "grupo": "MEIO-DEMÔNIOS",
+    "categoria": "povo",
+    "titulo": "SANGUE DE FOGO",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 1029,
+        "tipo": "corpo",
+        "texto": "Fogo comum não pode feri-lo de forma significativa. Quando atravessar chamas sobrenaturais ou calor monstruoso, receba +1 adiante para Desafiar o Perigo."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Fogo comum não pode feri-lo de forma significativa. Quando atravessar chamas sobrenaturais ou calor monstruoso, receba +1 adiante para Desafiar o Perigo.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1030",
+    "paragrafo_docx": 1030,
+    "grupo": "MEIO-DEMÔNIOS",
+    "categoria": "povo",
+    "titulo": "SANGUE DE SOMBRA",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 1030,
+        "tipo": "corpo",
+        "texto": "Quando permanecer imóvel em escuridão profunda, criaturas que dependam principalmente da visão não são capazes de vê-lo. Quando atacar ou se mover a partir dessa ocultação antes de ser descoberto, receba +1 adiante."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando permanecer imóvel em escuridão profunda, criaturas que dependam principalmente da visão não são capazes de vê-lo. Quando atacar ou se mover a partir dessa ocultação antes de ser descoberto, receba +1 adiante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1032",
+    "paragrafo_docx": 1032,
+    "grupo": "MEIO-DEMÔNIOS",
+    "categoria": "povo",
+    "titulo": "SANGUE DE SONHO",
+    "marcador_original": "Natureza",
+    "partes": [
+      {
+        "paragrafo_docx": 1032,
+        "tipo": "corpo",
+        "texto": "Quando dormir próximo de alguém com quem possua uma conexão emocional, atravesse fragmentos de seus sonhos. \nFaça ao Mestre uma pergunta:"
+      },
+      {
+        "paragrafo_docx": 1033,
+        "tipo": "opcao",
+        "texto": "O que essa pessoa deseja e não admite?"
+      },
+      {
+        "paragrafo_docx": 1034,
+        "tipo": "opcao",
+        "texto": "O que ela teme encontrar?"
+      },
+      {
+        "paragrafo_docx": 1035,
+        "tipo": "opcao",
+        "texto": "Que memória continua retornando a ela?"
+      },
+      {
+        "paragrafo_docx": 1036,
+        "tipo": "continuacao",
+        "texto": "A resposta aparecerá de forma simbólica, nunca como explicação objetiva. Quando agir segundo aquilo que compreendeu, receba +1 adiante."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1033,
+        "texto": "O que essa pessoa deseja e não admite?"
+      },
+      {
+        "paragrafo_docx": 1034,
+        "texto": "O que ela teme encontrar?"
+      },
+      {
+        "paragrafo_docx": 1035,
+        "texto": "Que memória continua retornando a ela?"
+      }
+    ],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando dormir próximo de alguém com quem possua uma conexão emocional, atravesse fragmentos de seus sonhos. \nFaça ao Mestre uma pergunta:\nO que essa pessoa deseja e não admite?\nO que ela teme encontrar?\nQue memória continua retornando a ela?\nA resposta aparecerá de forma simbólica, nunca como explicação objetiva. Quando agir segundo aquilo que compreendeu, receba +1 adiante.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1037",
+    "paragrafo_docx": 1037,
+    "grupo": "MEIO-DEMÔNIOS",
+    "categoria": "povo",
+    "titulo": "SANGUE DE VENENO",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 1037,
+        "tipo": "corpo",
+        "texto": "Veneno que normalmente causaria dano em você, ao invés de causar dano, restaura a mesma quantidade de PV. \nSim, isso significa que venenos podem ser utilizados deliberadamente para curá-lo."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Veneno que normalmente causaria dano em você, ao invés de causar dano, restaura a mesma quantidade de PV. \nSim, isso significa que venenos podem ser utilizados deliberadamente para curá-lo.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1038",
+    "paragrafo_docx": 1038,
+    "grupo": "MEIO-DEMÔNIOS",
+    "categoria": "povo",
+    "titulo": "MARCAS DO ABISMO",
+    "marcador_original": "Corpo",
+    "partes": [
+      {
+        "paragrafo_docx": 1038,
+        "tipo": "corpo",
+        "texto": "Escolha uma manifestação física demoníaca especialmente pronunciada — chifres, cauda, garras, cascos, escamas ou semelhante. Quando causar medo ou impuser respeito utilizando sua herança demoníaca, receba +1 adiante para Negociar como se tivesse influência. A influência é o medo do que você ou outros demônios irão fazer."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Escolha uma manifestação física demoníaca especialmente pronunciada — chifres, cauda, garras, cascos, escamas ou semelhante. Quando causar medo ou impuser respeito utilizando sua herança demoníaca, receba +1 adiante para Negociar como se tivesse influência. A influência é o medo do que você ou outros demônios irão fazer.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1039",
+    "paragrafo_docx": 1039,
+    "grupo": "MEIO-DEMÔNIOS",
+    "categoria": "povo",
+    "titulo": "SANGUE RECONHECE SANGUE",
+    "marcador_original": "Natureza",
+    "partes": [
+      {
+        "paragrafo_docx": 1039,
+        "tipo": "corpo",
+        "texto": "Quando encontrar uma criatura de natureza demoníaca, você sabe imediatamente que ela é demoníaca, embora não conheça necessariamente sua identidade, poder ou intenção.\nUma vez por nível, quando um acontecimento extremo despertar alguma característica que sua linhagem nunca manifestou antes, você pode substituir este Movimento por outro Movimento de Raça Meio-Demônio."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando encontrar uma criatura de natureza demoníaca, você sabe imediatamente que ela é demoníaca, embora não conheça necessariamente sua identidade, poder ou intenção.\nUma vez por nível, quando um acontecimento extremo despertar alguma característica que sua linhagem nunca manifestou antes, você pode substituir este Movimento por outro Movimento de Raça Meio-Demônio.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  },
+  {
+    "id": "movimento-povo:paragrafo-1040",
+    "paragrafo_docx": 1040,
+    "grupo": "MEIO-DEMÔNIOS",
+    "categoria": "povo",
+    "titulo": "NÃO SOU MEU ANCESTRAL",
+    "marcador_original": "Cultura",
+    "partes": [
+      {
+        "paragrafo_docx": 1040,
+        "tipo": "corpo",
+        "texto": "Quando alguém tentar controlá-lo, condená-lo ou definir suas intenções exclusivamente por causa de seu sangue demoníaco, receba +1 adiante na primeira ação que prove concretamente que a escolha é sua. Uma vez por sessão, quando sua escolha livre contrariar de maneira significativa aquilo que alguém esperava de você por causa de seu sangue demoníaco, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "requisito_literal": null,
+    "requisito_auditado": "sem_requer_no_cabecalho",
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "texto_original": "Quando alguém tentar controlá-lo, condená-lo ou definir suas intenções exclusivamente por causa de seu sangue demoníaco, receba +1 adiante na primeira ação que prove concretamente que a escolha é sua. Uma vez por sessão, quando sua escolha livre contrariar de maneira significativa aquilo que alguém esperava de você por causa de seu sangue demoníaco, marque 1 XP.",
+    "piloto_integral_id": null,
+    "revisao_preliminar_id": null
+  }
+]

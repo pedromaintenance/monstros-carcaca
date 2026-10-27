@@ -1,0 +1,142 @@
+[
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-1228",
+    "grupo": "GUERREIRO",
+    "titulo": "MAGIA DE GUERRA",
+    "requisito_literal": "qualquer Movimento de Magia",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-1229",
+    "grupo": "GUERREIRO",
+    "titulo": "PASSO ARCANO",
+    "requisito_literal": "Surto de Ação e qualquer Movimento de Magia",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-1231",
+    "grupo": "GUERREIRO",
+    "titulo": "TIRO ARCANO",
+    "requisito_literal": "Arma Favorita aplicada a um arco ou arma de projétil",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-1430",
+    "grupo": "BÁRBARO",
+    "titulo": "FÚRIA ALÉM DA MORTE",
+    "requisito_literal": "Fúria Divina e Demasiado Furioso Para Morrer",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-1492",
+    "grupo": "CAÇADOR",
+    "titulo": "BARRIGA DE SMAUG",
+    "requisito_literal": "Caçador de Monstros ou Um movimento que tenha revelado uma vulnerabilidade",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-1520",
+    "grupo": "CAÇADOR",
+    "titulo": "NENHUM MUNDO É LONGE DEMAIS",
+    "requisito_literal": "Caminhante dos Horizontes e Marca do Caçador",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-1535",
+    "grupo": "CAÇADOR",
+    "titulo": "OLHO DA PRESA",
+    "requisito_literal": "Flecha de Sangue ou Marca do Caçador",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-1619",
+    "grupo": "LADINO",
+    "titulo": "TUDO SEGUNDO O PLANO",
+    "requisito_literal": "Heist ou Plano B",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-1724",
+    "grupo": "LADINO",
+    "titulo": "CUTUCAR A FERIDA",
+    "requisito_literal": "Perfil",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-1843",
+    "grupo": "BARDO",
+    "titulo": "A CANÇÃO QUE FEZ O MUNDO",
+    "requisito_literal": "Arte Arcana e dois outros Movimentos de Bardo",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-1962",
+    "grupo": "ARTISTA MARCIAL",
+    "titulo": "VOO",
+    "requisito_literal": "Forma do Ar e Corpo Sem Peso",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-2146",
+    "grupo": "DRUIDA",
+    "titulo": "FORMA PRIMORDIAL",
+    "requisito_literal": "Metamorfose e Maestria Elemental",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-2616",
+    "grupo": "NECROMANTE",
+    "titulo": "LEVANTE-SE COMO VOCÊ MESMO",
+    "requisito_literal": "Animar os Mortos e Nome do Morto",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  },
+  {
+    "origem_movimento_id": "movimento-classe:paragrafo-2617",
+    "grupo": "NECROMANTE",
+    "titulo": "ABOMINAÇÃO COSTURADA",
+    "requisito_literal": "Animar os Mortos e Colheita de Ossos",
+    "candidatos_ids": [],
+    "motivo": "nao_corresponde_a_um_titulo_isolado",
+    "status": "exige_analise_editorial",
+    "aplicacao_canonica": false
+  }
+]

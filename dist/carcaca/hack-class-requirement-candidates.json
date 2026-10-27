@@ -1,0 +1,2306 @@
+[
+  {
+    "id": "requer:1120-1047",
+    "origem_movimento_id": "movimento-classe:paragrafo-1120",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1047",
+    "requisito_literal": "Arma Favorita",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1121-1047",
+    "origem_movimento_id": "movimento-classe:paragrafo-1121",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1047",
+    "requisito_literal": "Arma Favorita",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1129-1128",
+    "origem_movimento_id": "movimento-classe:paragrafo-1129",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1128",
+    "requisito_literal": "Mestria de Armadura",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1131-1077",
+    "origem_movimento_id": "movimento-classe:paragrafo-1131",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1077",
+    "requisito_literal": "Vendo Vermelho",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1132-1077",
+    "origem_movimento_id": "movimento-classe:paragrafo-1132",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1077",
+    "requisito_literal": "Vendo Vermelho",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1133-1048",
+    "origem_movimento_id": "movimento-classe:paragrafo-1133",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1048",
+    "requisito_literal": "Mestre de Batalha",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1140-1098",
+    "origem_movimento_id": "movimento-classe:paragrafo-1140",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1098",
+    "requisito_literal": "Segundo Fôlego",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1144-1054",
+    "origem_movimento_id": "movimento-classe:paragrafo-1144",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1054",
+    "requisito_literal": "Golpe de Controle",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1145-1048",
+    "origem_movimento_id": "movimento-classe:paragrafo-1145",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1048",
+    "requisito_literal": "Mestre de Batalha",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1162-1098",
+    "origem_movimento_id": "movimento-classe:paragrafo-1162",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1098",
+    "requisito_literal": "Segundo Fôlego",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1170-1099",
+    "origem_movimento_id": "movimento-classe:paragrafo-1170",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1099",
+    "requisito_literal": "Honrado",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1171-1163",
+    "origem_movimento_id": "movimento-classe:paragrafo-1171",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1163",
+    "requisito_literal": "Espírito de Combate",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1178-1086",
+    "origem_movimento_id": "movimento-classe:paragrafo-1178",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1086",
+    "requisito_literal": "Segure a Linha",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1179-1173",
+    "origem_movimento_id": "movimento-classe:paragrafo-1179",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1173",
+    "requisito_literal": "Marca Inabalável",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1198-1185",
+    "origem_movimento_id": "movimento-classe:paragrafo-1198",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1185",
+    "requisito_literal": "Gravador de Runas",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1199-1185",
+    "origem_movimento_id": "movimento-classe:paragrafo-1199",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1185",
+    "requisito_literal": "Gravador de Runas",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1206-1201",
+    "origem_movimento_id": "movimento-classe:paragrafo-1206",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1201",
+    "requisito_literal": "Disciplina Psiônica",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1212-1201",
+    "origem_movimento_id": "movimento-classe:paragrafo-1212",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1201",
+    "requisito_literal": "Disciplina Psiônica",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1213-1201",
+    "origem_movimento_id": "movimento-classe:paragrafo-1213",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1201",
+    "requisito_literal": "Disciplina Psiônica",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1220-1215",
+    "origem_movimento_id": "movimento-classe:paragrafo-1220",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1215",
+    "requisito_literal": "Manifestar Eco",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1221-1215",
+    "origem_movimento_id": "movimento-classe:paragrafo-1221",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1215",
+    "requisito_literal": "Manifestar Eco",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1222-1215",
+    "origem_movimento_id": "movimento-classe:paragrafo-1222",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1215",
+    "requisito_literal": "Manifestar Eco",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1247-1077",
+    "origem_movimento_id": "movimento-classe:paragrafo-1247",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1077",
+    "requisito_literal": "Vendo Vermelho",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1258-1061",
+    "origem_movimento_id": "movimento-classe:paragrafo-1258",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1061",
+    "requisito_literal": "Dobrar Barras, Erguer Portões",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1275-1273",
+    "origem_movimento_id": "movimento-classe:paragrafo-1275",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1273",
+    "requisito_literal": "Um Passo à Frente",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1286-1282",
+    "origem_movimento_id": "movimento-classe:paragrafo-1286",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1282",
+    "requisito_literal": "Finta",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1288-1287",
+    "origem_movimento_id": "movimento-classe:paragrafo-1288",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1287",
+    "requisito_literal": "Lâmina Arcana",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1319-1309",
+    "origem_movimento_id": "movimento-classe:paragrafo-1319",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1309",
+    "requisito_literal": "Apetites Hercúleos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1320-1309",
+    "origem_movimento_id": "movimento-classe:paragrafo-1320",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1309",
+    "requisito_literal": "Apetites Hercúleos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1330-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1330",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1334-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1334",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1335-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1335",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1337-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1337",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1342-1337",
+    "origem_movimento_id": "movimento-classe:paragrafo-1342",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1337",
+    "requisito_literal": "Golpe Brutal",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1343-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1343",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1354-1309",
+    "origem_movimento_id": "movimento-classe:paragrafo-1354",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1309",
+    "requisito_literal": "Apetites Hercúleos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1359-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1359",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1364-1359",
+    "origem_movimento_id": "movimento-classe:paragrafo-1364",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1359",
+    "requisito_literal": "Coração Selvagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1374-1359",
+    "origem_movimento_id": "movimento-classe:paragrafo-1374",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1359",
+    "requisito_literal": "Coração Selvagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1378-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1378",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1379-1378",
+    "origem_movimento_id": "movimento-classe:paragrafo-1379",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1378",
+    "requisito_literal": "Os Ancestrais Lutam Comigo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1380-1378",
+    "origem_movimento_id": "movimento-classe:paragrafo-1380",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1378",
+    "requisito_literal": "Os Ancestrais Lutam Comigo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1381-1379",
+    "origem_movimento_id": "movimento-classe:paragrafo-1381",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1379",
+    "requisito_literal": "Escudo dos Ancestrais",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1384-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1384",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1392-1384",
+    "origem_movimento_id": "movimento-classe:paragrafo-1392",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1384",
+    "requisito_literal": "Fera Interior",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1393-1384",
+    "origem_movimento_id": "movimento-classe:paragrafo-1393",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1384",
+    "requisito_literal": "Fera Interior",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1394-1384",
+    "origem_movimento_id": "movimento-classe:paragrafo-1394",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1384",
+    "requisito_literal": "Fera Interior",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1399-1384",
+    "origem_movimento_id": "movimento-classe:paragrafo-1399",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1384",
+    "requisito_literal": "Fera Interior",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1400-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1400",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1406-1400",
+    "origem_movimento_id": "movimento-classe:paragrafo-1406",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1400",
+    "requisito_literal": "Arauto da Tempestade",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1407-1400",
+    "origem_movimento_id": "movimento-classe:paragrafo-1407",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1400",
+    "requisito_literal": "Arauto da Tempestade",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1414-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1414",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1424-1414",
+    "origem_movimento_id": "movimento-classe:paragrafo-1424",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1414",
+    "requisito_literal": "Fúria Selvagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1425-1414",
+    "origem_movimento_id": "movimento-classe:paragrafo-1425",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1414",
+    "requisito_literal": "Fúria Selvagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1426-1414",
+    "origem_movimento_id": "movimento-classe:paragrafo-1426",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1414",
+    "requisito_literal": "Fúria Selvagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1427-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1427",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1428-1427",
+    "origem_movimento_id": "movimento-classe:paragrafo-1428",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1427",
+    "requisito_literal": "Fúria Divina",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1429-1427",
+    "origem_movimento_id": "movimento-classe:paragrafo-1429",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1427",
+    "requisito_literal": "Fúria Divina",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1434-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1434",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1439-1434",
+    "origem_movimento_id": "movimento-classe:paragrafo-1439",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1434",
+    "requisito_literal": "Raízes do Mundo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1444-1434",
+    "origem_movimento_id": "movimento-classe:paragrafo-1444",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1434",
+    "requisito_literal": "Raízes do Mundo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1446-1434",
+    "origem_movimento_id": "movimento-classe:paragrafo-1446",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1434",
+    "requisito_literal": "Raízes do Mundo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1447-1293",
+    "origem_movimento_id": "movimento-classe:paragrafo-1447",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1293",
+    "requisito_literal": "Fúria",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1473-1461",
+    "origem_movimento_id": "movimento-classe:paragrafo-1473",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1461",
+    "requisito_literal": "Marca do Caçador",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1480-1461",
+    "origem_movimento_id": "movimento-classe:paragrafo-1480",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1461",
+    "requisito_literal": "Marca do Caçador",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1481-1455",
+    "origem_movimento_id": "movimento-classe:paragrafo-1481",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1455",
+    "requisito_literal": "Caçar e Rastrear",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1494-1493",
+    "origem_movimento_id": "movimento-classe:paragrafo-1494",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1493",
+    "requisito_literal": "Camuflagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1507-1506",
+    "origem_movimento_id": "movimento-classe:paragrafo-1507",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1506",
+    "requisito_literal": "Companheiro Animal",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1512-1506",
+    "origem_movimento_id": "movimento-classe:paragrafo-1512",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1506",
+    "requisito_literal": "Companheiro Animal",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1514-1506",
+    "origem_movimento_id": "movimento-classe:paragrafo-1514",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1506",
+    "requisito_literal": "Companheiro Animal",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1515-1506",
+    "origem_movimento_id": "movimento-classe:paragrafo-1515",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1506",
+    "requisito_literal": "Companheiro Animal",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1517-1516",
+    "origem_movimento_id": "movimento-classe:paragrafo-1517",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1516",
+    "requisito_literal": "Caçador das Trevas",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1519-1518",
+    "origem_movimento_id": "movimento-classe:paragrafo-1519",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1518",
+    "requisito_literal": "Caminhante dos Horizontes",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1559-1553",
+    "origem_movimento_id": "movimento-classe:paragrafo-1559",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1553",
+    "requisito_literal": "Armar Uma Arapuca",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1572-1484",
+    "origem_movimento_id": "movimento-classe:paragrafo-1572",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1484",
+    "requisito_literal": "Caçador de Monstros",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1594-1593",
+    "origem_movimento_id": "movimento-classe:paragrafo-1594",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1593",
+    "requisito_literal": "Truques do Ofício",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1633-1632",
+    "origem_movimento_id": "movimento-classe:paragrafo-1633",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1632",
+    "requisito_literal": "Magia Roubada",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1634-1633",
+    "origem_movimento_id": "movimento-classe:paragrafo-1634",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1633",
+    "requisito_literal": "Ladrão de Feitiços",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1685-1604",
+    "origem_movimento_id": "movimento-classe:paragrafo-1685",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1604",
+    "requisito_literal": "Golpe pelas Costas",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1799-1798",
+    "origem_movimento_id": "movimento-classe:paragrafo-1799",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1798",
+    "requisito_literal": "Inspiração Bárdica",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1821-1816",
+    "origem_movimento_id": "movimento-classe:paragrafo-1821",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1816",
+    "requisito_literal": "Canção da Criação",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1842-1753",
+    "origem_movimento_id": "movimento-classe:paragrafo-1842",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1753",
+    "requisito_literal": "Arte Arcana",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1845-1753",
+    "origem_movimento_id": "movimento-classe:paragrafo-1845",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1753",
+    "requisito_literal": "Arte Arcana",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1870-1869",
+    "origem_movimento_id": "movimento-classe:paragrafo-1870",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1869",
+    "requisito_literal": "Kensei",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1872-1862",
+    "origem_movimento_id": "movimento-classe:paragrafo-1872",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1862",
+    "requisito_literal": "Corpo Vazio",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1879-1862",
+    "origem_movimento_id": "movimento-classe:paragrafo-1879",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1862",
+    "requisito_literal": "Corpo Vazio",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1889-1881",
+    "origem_movimento_id": "movimento-classe:paragrafo-1889",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1881",
+    "requisito_literal": "Apanhe a Flecha",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1891-1871",
+    "origem_movimento_id": "movimento-classe:paragrafo-1891",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1871",
+    "requisito_literal": "Passo Sobre a Água",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1892-1862",
+    "origem_movimento_id": "movimento-classe:paragrafo-1892",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1862",
+    "requisito_literal": "Corpo Vazio",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1904-1894",
+    "origem_movimento_id": "movimento-classe:paragrafo-1904",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1894",
+    "requisito_literal": "Clinch",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1923-1922",
+    "origem_movimento_id": "movimento-classe:paragrafo-1923",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1922",
+    "requisito_literal": "Forma da Água",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1927-1922",
+    "origem_movimento_id": "movimento-classe:paragrafo-1927",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1922",
+    "requisito_literal": "Forma da Água",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1928-1922",
+    "origem_movimento_id": "movimento-classe:paragrafo-1928",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1922",
+    "requisito_literal": "Forma da Água",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1935-1934",
+    "origem_movimento_id": "movimento-classe:paragrafo-1935",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1934",
+    "requisito_literal": "Forma da Terra",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1936-1934",
+    "origem_movimento_id": "movimento-classe:paragrafo-1936",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1934",
+    "requisito_literal": "Forma da Terra",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1937-1934",
+    "origem_movimento_id": "movimento-classe:paragrafo-1937",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1934",
+    "requisito_literal": "Forma da Terra",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1938-1934",
+    "origem_movimento_id": "movimento-classe:paragrafo-1938",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1934",
+    "requisito_literal": "Forma da Terra",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1940-1939",
+    "origem_movimento_id": "movimento-classe:paragrafo-1940",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1939",
+    "requisito_literal": "Forma do Fogo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1941-1939",
+    "origem_movimento_id": "movimento-classe:paragrafo-1941",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1939",
+    "requisito_literal": "Forma do Fogo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1950-1949",
+    "origem_movimento_id": "movimento-classe:paragrafo-1950",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1949",
+    "requisito_literal": "Forma do Ar",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1957-1949",
+    "origem_movimento_id": "movimento-classe:paragrafo-1957",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1949",
+    "requisito_literal": "Forma do Ar",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1976-1968",
+    "origem_movimento_id": "movimento-classe:paragrafo-1976",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1968",
+    "requisito_literal": "Missão Sagrada",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1977-1968",
+    "origem_movimento_id": "movimento-classe:paragrafo-1977",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1968",
+    "requisito_literal": "Missão Sagrada",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1983-1968",
+    "origem_movimento_id": "movimento-classe:paragrafo-1983",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1968",
+    "requisito_literal": "Missão Sagrada",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1984-1968",
+    "origem_movimento_id": "movimento-classe:paragrafo-1984",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1968",
+    "requisito_literal": "Missão Sagrada",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1996-1995",
+    "origem_movimento_id": "movimento-classe:paragrafo-1996",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1995",
+    "requisito_literal": "Aura de Proteção",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1998-1997",
+    "origem_movimento_id": "movimento-classe:paragrafo-1998",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1997",
+    "requisito_literal": "Eu Disse: Atrás de Mim",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:1999-1968",
+    "origem_movimento_id": "movimento-classe:paragrafo-1999",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1968",
+    "requisito_literal": "Missão Sagrada",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2005-1968",
+    "origem_movimento_id": "movimento-classe:paragrafo-2005",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1968",
+    "requisito_literal": "Missão Sagrada",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2011-1968",
+    "origem_movimento_id": "movimento-classe:paragrafo-2011",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1968",
+    "requisito_literal": "Missão Sagrada",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2018-1978",
+    "origem_movimento_id": "movimento-classe:paragrafo-2018",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1978",
+    "requisito_literal": "Imposição das Mãos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2024-1978",
+    "origem_movimento_id": "movimento-classe:paragrafo-2024",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1978",
+    "requisito_literal": "Imposição das Mãos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2032-1968",
+    "origem_movimento_id": "movimento-classe:paragrafo-2032",
+    "requisito_movimento_id": "movimento-classe:paragrafo-1968",
+    "requisito_literal": "Missão Sagrada",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2048-2042",
+    "origem_movimento_id": "movimento-classe:paragrafo-2048",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2042",
+    "requisito_literal": "Você Não Pertence a Este Mundo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2057-2056",
+    "origem_movimento_id": "movimento-classe:paragrafo-2057",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2056",
+    "requisito_literal": "Sacerdote",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2062-2056",
+    "origem_movimento_id": "movimento-classe:paragrafo-2062",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2056",
+    "requisito_literal": "Sacerdote",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2066-2056",
+    "origem_movimento_id": "movimento-classe:paragrafo-2066",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2056",
+    "requisito_literal": "Sacerdote",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2067-2056",
+    "origem_movimento_id": "movimento-classe:paragrafo-2067",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2056",
+    "requisito_literal": "Sacerdote",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2068-2056",
+    "origem_movimento_id": "movimento-classe:paragrafo-2068",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2056",
+    "requisito_literal": "Sacerdote",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2087-2084",
+    "origem_movimento_id": "movimento-classe:paragrafo-2087",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2084",
+    "requisito_literal": "Presságio",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2088-2084",
+    "origem_movimento_id": "movimento-classe:paragrafo-2088",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2084",
+    "requisito_literal": "Presságio",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2091-2089",
+    "origem_movimento_id": "movimento-classe:paragrafo-2091",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2089",
+    "requisito_literal": "Runa",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2092-2089",
+    "origem_movimento_id": "movimento-classe:paragrafo-2092",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2089",
+    "requisito_literal": "Runa",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2099-2089",
+    "origem_movimento_id": "movimento-classe:paragrafo-2099",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2089",
+    "requisito_literal": "Runa",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2100-2099",
+    "origem_movimento_id": "movimento-classe:paragrafo-2100",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2099",
+    "requisito_literal": "Runa Viva",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2101-2089",
+    "origem_movimento_id": "movimento-classe:paragrafo-2101",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2089",
+    "requisito_literal": "Runa",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2105-2102",
+    "origem_movimento_id": "movimento-classe:paragrafo-2105",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2102",
+    "requisito_literal": "Espíritos Estão por Toda Parte",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2106-2103",
+    "origem_movimento_id": "movimento-classe:paragrafo-2106",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2103",
+    "requisito_literal": "Empreste Seu Corpo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2117-2112",
+    "origem_movimento_id": "movimento-classe:paragrafo-2117",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2112",
+    "requisito_literal": "Círculo de Convocação",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2119-2112",
+    "origem_movimento_id": "movimento-classe:paragrafo-2119",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2112",
+    "requisito_literal": "Círculo de Convocação",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2120-2112",
+    "origem_movimento_id": "movimento-classe:paragrafo-2120",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2112",
+    "requisito_literal": "Círculo de Convocação",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2121-2112",
+    "origem_movimento_id": "movimento-classe:paragrafo-2121",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2112",
+    "requisito_literal": "Círculo de Convocação",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2126-2112",
+    "origem_movimento_id": "movimento-classe:paragrafo-2126",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2112",
+    "requisito_literal": "Círculo de Convocação",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2136-2130",
+    "origem_movimento_id": "movimento-classe:paragrafo-2136",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2130",
+    "requisito_literal": "Metamorfose",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2142-2130",
+    "origem_movimento_id": "movimento-classe:paragrafo-2142",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2130",
+    "requisito_literal": "Metamorfose",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2143-2130",
+    "origem_movimento_id": "movimento-classe:paragrafo-2143",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2130",
+    "requisito_literal": "Metamorfose",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2144-2130",
+    "origem_movimento_id": "movimento-classe:paragrafo-2144",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2130",
+    "requisito_literal": "Metamorfose",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2145-2130",
+    "origem_movimento_id": "movimento-classe:paragrafo-2145",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2130",
+    "requisito_literal": "Metamorfose",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2168-2137",
+    "origem_movimento_id": "movimento-classe:paragrafo-2168",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2137",
+    "requisito_literal": "Círculo dos Esporos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2175-2137",
+    "origem_movimento_id": "movimento-classe:paragrafo-2175",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2137",
+    "requisito_literal": "Círculo dos Esporos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2177-2137",
+    "origem_movimento_id": "movimento-classe:paragrafo-2177",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2137",
+    "requisito_literal": "Círculo dos Esporos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2184-2141",
+    "origem_movimento_id": "movimento-classe:paragrafo-2184",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2141",
+    "requisito_literal": "Fogo Selvagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2193-2141",
+    "origem_movimento_id": "movimento-classe:paragrafo-2193",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2141",
+    "requisito_literal": "Fogo Selvagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2198-2130",
+    "origem_movimento_id": "movimento-classe:paragrafo-2198",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2130",
+    "requisito_literal": "Metamorfose",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2199-2130",
+    "origem_movimento_id": "movimento-classe:paragrafo-2199",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2130",
+    "requisito_literal": "Metamorfose",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2252-2251",
+    "origem_movimento_id": "movimento-classe:paragrafo-2252",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2251",
+    "requisito_literal": "Grimório",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2268-2261",
+    "origem_movimento_id": "movimento-classe:paragrafo-2268",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2261",
+    "requisito_literal": "Estudo Rápido",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2277-2269",
+    "origem_movimento_id": "movimento-classe:paragrafo-2277",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2269",
+    "requisito_literal": "Alterar a Fórmula",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2284-2278",
+    "origem_movimento_id": "movimento-classe:paragrafo-2284",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2278",
+    "requisito_literal": "Assinatura Arcana",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2292-2219",
+    "origem_movimento_id": "movimento-classe:paragrafo-2292",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2219",
+    "requisito_literal": "Abjuração",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2294-2209",
+    "origem_movimento_id": "movimento-classe:paragrafo-2294",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2209",
+    "requisito_literal": "Ritual",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2299-2224",
+    "origem_movimento_id": "movimento-classe:paragrafo-2299",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2224",
+    "requisito_literal": "Conjuração",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2300-2224",
+    "origem_movimento_id": "movimento-classe:paragrafo-2300",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2224",
+    "requisito_literal": "Conjuração",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2301-2224",
+    "origem_movimento_id": "movimento-classe:paragrafo-2301",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2224",
+    "requisito_literal": "Conjuração",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2303-2229",
+    "origem_movimento_id": "movimento-classe:paragrafo-2303",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2229",
+    "requisito_literal": "Adivinhação",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2309-2235",
+    "origem_movimento_id": "movimento-classe:paragrafo-2309",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2235",
+    "requisito_literal": "Encantamento",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2310-2235",
+    "origem_movimento_id": "movimento-classe:paragrafo-2310",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2235",
+    "requisito_literal": "Encantamento",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2320-2244",
+    "origem_movimento_id": "movimento-classe:paragrafo-2320",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2244",
+    "requisito_literal": "Evocação",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2321-2241",
+    "origem_movimento_id": "movimento-classe:paragrafo-2321",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2241",
+    "requisito_literal": "Ilusão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2322-2241",
+    "origem_movimento_id": "movimento-classe:paragrafo-2322",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2241",
+    "requisito_literal": "Ilusão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2323-2241",
+    "origem_movimento_id": "movimento-classe:paragrafo-2323",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2241",
+    "requisito_literal": "Ilusão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2324-2242",
+    "origem_movimento_id": "movimento-classe:paragrafo-2324",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2242",
+    "requisito_literal": "Transmutação",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2328-2242",
+    "origem_movimento_id": "movimento-classe:paragrafo-2328",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2242",
+    "requisito_literal": "Transmutação",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2329-2243",
+    "origem_movimento_id": "movimento-classe:paragrafo-2329",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2243",
+    "requisito_literal": "Telecinese",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2330-2243",
+    "origem_movimento_id": "movimento-classe:paragrafo-2330",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2243",
+    "requisito_literal": "Telecinese",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2331-2250",
+    "origem_movimento_id": "movimento-classe:paragrafo-2331",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2250",
+    "requisito_literal": "Contramágica",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2369-2348",
+    "origem_movimento_id": "movimento-classe:paragrafo-2369",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2348",
+    "requisito_literal": "Magia no Sangue",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2370-2348",
+    "origem_movimento_id": "movimento-classe:paragrafo-2370",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2348",
+    "requisito_literal": "Magia no Sangue",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2371-2348",
+    "origem_movimento_id": "movimento-classe:paragrafo-2371",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2348",
+    "requisito_literal": "Magia no Sangue",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2372-2348",
+    "origem_movimento_id": "movimento-classe:paragrafo-2372",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2348",
+    "requisito_literal": "Magia no Sangue",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2373-2348",
+    "origem_movimento_id": "movimento-classe:paragrafo-2373",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2348",
+    "requisito_literal": "Magia no Sangue",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2374-2348",
+    "origem_movimento_id": "movimento-classe:paragrafo-2374",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2348",
+    "requisito_literal": "Magia no Sangue",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2380-2348",
+    "origem_movimento_id": "movimento-classe:paragrafo-2380",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2348",
+    "requisito_literal": "Magia no Sangue",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2382-2348",
+    "origem_movimento_id": "movimento-classe:paragrafo-2382",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2348",
+    "requisito_literal": "Magia no Sangue",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2383-2348",
+    "origem_movimento_id": "movimento-classe:paragrafo-2383",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2348",
+    "requisito_literal": "Magia no Sangue",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2384-2354",
+    "origem_movimento_id": "movimento-classe:paragrafo-2384",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2354",
+    "requisito_literal": "Magia Selvagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2385-2354",
+    "origem_movimento_id": "movimento-classe:paragrafo-2385",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2354",
+    "requisito_literal": "Magia Selvagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2386-2354",
+    "origem_movimento_id": "movimento-classe:paragrafo-2386",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2354",
+    "requisito_literal": "Magia Selvagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2387-2355",
+    "origem_movimento_id": "movimento-classe:paragrafo-2387",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2355",
+    "requisito_literal": "Herança Dracônica",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2392-2355",
+    "origem_movimento_id": "movimento-classe:paragrafo-2392",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2355",
+    "requisito_literal": "Herança Dracônica",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2398-2355",
+    "origem_movimento_id": "movimento-classe:paragrafo-2398",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2355",
+    "requisito_literal": "Herança Dracônica",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2412-2406",
+    "origem_movimento_id": "movimento-classe:paragrafo-2412",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2406",
+    "requisito_literal": "Manto da Fênix",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2429-2364",
+    "origem_movimento_id": "movimento-classe:paragrafo-2429",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2364",
+    "requisito_literal": "Invasão Mental",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2430-2364",
+    "origem_movimento_id": "movimento-classe:paragrafo-2430",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2364",
+    "requisito_literal": "Invasão Mental",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2436-2363",
+    "origem_movimento_id": "movimento-classe:paragrafo-2436",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2363",
+    "requisito_literal": "Telepatia",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2446-2440",
+    "origem_movimento_id": "movimento-classe:paragrafo-2446",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2440",
+    "requisito_literal": "Entre Sonhos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2460-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2460",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2465-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2465",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2466-2465",
+    "origem_movimento_id": "movimento-classe:paragrafo-2466",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2465",
+    "requisito_literal": "A Dívida Cresce",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2467-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2467",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2474-2467",
+    "origem_movimento_id": "movimento-classe:paragrafo-2474",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2467",
+    "requisito_literal": "Rajada Mística",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2475-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2475",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2476-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2476",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2477-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2477",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2482-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2482",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2506-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2506",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2508-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2508",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2513-2460",
+    "origem_movimento_id": "movimento-classe:paragrafo-2513",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2460",
+    "requisito_literal": "Favor do Patrono",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2514-2465",
+    "origem_movimento_id": "movimento-classe:paragrafo-2514",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2465",
+    "requisito_literal": "A Dívida Cresce",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2515-2465",
+    "origem_movimento_id": "movimento-classe:paragrafo-2515",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2465",
+    "requisito_literal": "A Dívida Cresce",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2516-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2516",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2517-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2517",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2518-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2518",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2519-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2519",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2525-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2525",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2527-2474",
+    "origem_movimento_id": "movimento-classe:paragrafo-2527",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2474",
+    "requisito_literal": "Invocador Místico",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2528-2474",
+    "origem_movimento_id": "movimento-classe:paragrafo-2528",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2474",
+    "requisito_literal": "Invocador Místico",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2529-2467",
+    "origem_movimento_id": "movimento-classe:paragrafo-2529",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2467",
+    "requisito_literal": "Rajada Mística",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2530-2482",
+    "origem_movimento_id": "movimento-classe:paragrafo-2530",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2482",
+    "requisito_literal": "Arma do Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2533-2482",
+    "origem_movimento_id": "movimento-classe:paragrafo-2533",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2482",
+    "requisito_literal": "Arma do Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2534-2482",
+    "origem_movimento_id": "movimento-classe:paragrafo-2534",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2482",
+    "requisito_literal": "Arma do Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2535-2488",
+    "origem_movimento_id": "movimento-classe:paragrafo-2535",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2488",
+    "requisito_literal": "Maldição",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2536-2488",
+    "origem_movimento_id": "movimento-classe:paragrafo-2536",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2488",
+    "requisito_literal": "Maldição",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2537-2488",
+    "origem_movimento_id": "movimento-classe:paragrafo-2537",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2488",
+    "requisito_literal": "Maldição",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2538-2488",
+    "origem_movimento_id": "movimento-classe:paragrafo-2538",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2488",
+    "requisito_literal": "Maldição",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2545-2488",
+    "origem_movimento_id": "movimento-classe:paragrafo-2545",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2488",
+    "requisito_literal": "Maldição",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2546-2492",
+    "origem_movimento_id": "movimento-classe:paragrafo-2546",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2492",
+    "requisito_literal": "Magia Simpática",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2547-2492",
+    "origem_movimento_id": "movimento-classe:paragrafo-2547",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2492",
+    "requisito_literal": "Magia Simpática",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2548-2492",
+    "origem_movimento_id": "movimento-classe:paragrafo-2548",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2492",
+    "requisito_literal": "Magia Simpática",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2553-2501",
+    "origem_movimento_id": "movimento-classe:paragrafo-2553",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2501",
+    "requisito_literal": "Caldeirão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2554-2501",
+    "origem_movimento_id": "movimento-classe:paragrafo-2554",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2501",
+    "requisito_literal": "Caldeirão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2555-2502",
+    "origem_movimento_id": "movimento-classe:paragrafo-2555",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2502",
+    "requisito_literal": "Olho Gordo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2556-2502",
+    "origem_movimento_id": "movimento-classe:paragrafo-2556",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2502",
+    "requisito_literal": "Olho Gordo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2557-2502",
+    "origem_movimento_id": "movimento-classe:paragrafo-2557",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2502",
+    "requisito_literal": "Olho Gordo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2558-2476",
+    "origem_movimento_id": "movimento-classe:paragrafo-2558",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2476",
+    "requisito_literal": "Arquifada",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2563-2476",
+    "origem_movimento_id": "movimento-classe:paragrafo-2563",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2476",
+    "requisito_literal": "Arquifada",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2565-2477",
+    "origem_movimento_id": "movimento-classe:paragrafo-2565",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2477",
+    "requisito_literal": "Grande Antigo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2570-2477",
+    "origem_movimento_id": "movimento-classe:paragrafo-2570",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2477",
+    "requisito_literal": "Grande Antigo",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2571-2454",
+    "origem_movimento_id": "movimento-classe:paragrafo-2571",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2454",
+    "requisito_literal": "Pacto",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2599-2582",
+    "origem_movimento_id": "movimento-classe:paragrafo-2599",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2582",
+    "requisito_literal": "Animar os Mortos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2600-2582",
+    "origem_movimento_id": "movimento-classe:paragrafo-2600",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2582",
+    "requisito_literal": "Animar os Mortos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2609-2582",
+    "origem_movimento_id": "movimento-classe:paragrafo-2609",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2582",
+    "requisito_literal": "Animar os Mortos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2615-2582",
+    "origem_movimento_id": "movimento-classe:paragrafo-2615",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2582",
+    "requisito_literal": "Animar os Mortos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2622-2590",
+    "origem_movimento_id": "movimento-classe:paragrafo-2622",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2590",
+    "requisito_literal": "A Morte Deixa Marcas",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2652-2649",
+    "origem_movimento_id": "movimento-classe:paragrafo-2652",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2649",
+    "requisito_literal": "Âncora da Alma",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2658-2598",
+    "origem_movimento_id": "movimento-classe:paragrafo-2658",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2598",
+    "requisito_literal": "Colheita de Ossos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2665-2582",
+    "origem_movimento_id": "movimento-classe:paragrafo-2665",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2582",
+    "requisito_literal": "Animar os Mortos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2666-2582",
+    "origem_movimento_id": "movimento-classe:paragrafo-2666",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2582",
+    "requisito_literal": "Animar os Mortos",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2689-2679",
+    "origem_movimento_id": "movimento-classe:paragrafo-2689",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2679",
+    "requisito_literal": "Artífice",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2701-2700",
+    "origem_movimento_id": "movimento-classe:paragrafo-2701",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2700",
+    "requisito_literal": "Transmutação Alquímica",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2702-2701",
+    "origem_movimento_id": "movimento-classe:paragrafo-2702",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2701",
+    "requisito_literal": "Troca Equivalente",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2703-2702",
+    "origem_movimento_id": "movimento-classe:paragrafo-2703",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2702",
+    "requisito_literal": "Arma Humana",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2705-2690",
+    "origem_movimento_id": "movimento-classe:paragrafo-2705",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2690",
+    "requisito_literal": "Alquimista",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2706-2690",
+    "origem_movimento_id": "movimento-classe:paragrafo-2706",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2690",
+    "requisito_literal": "Alquimista",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2713-2690",
+    "origem_movimento_id": "movimento-classe:paragrafo-2713",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2690",
+    "requisito_literal": "Alquimista",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2742-2736",
+    "origem_movimento_id": "movimento-classe:paragrafo-2742",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2736",
+    "requisito_literal": "Capitão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2743-2736",
+    "origem_movimento_id": "movimento-classe:paragrafo-2743",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2736",
+    "requisito_literal": "Capitão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2744-2736",
+    "origem_movimento_id": "movimento-classe:paragrafo-2744",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2736",
+    "requisito_literal": "Capitão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2748-2736",
+    "origem_movimento_id": "movimento-classe:paragrafo-2748",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2736",
+    "requisito_literal": "Capitão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2752-2736",
+    "origem_movimento_id": "movimento-classe:paragrafo-2752",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2736",
+    "requisito_literal": "Capitão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2753-2736",
+    "origem_movimento_id": "movimento-classe:paragrafo-2753",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2736",
+    "requisito_literal": "Capitão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2754-2736",
+    "origem_movimento_id": "movimento-classe:paragrafo-2754",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2736",
+    "requisito_literal": "Capitão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2767-2760",
+    "origem_movimento_id": "movimento-classe:paragrafo-2767",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2760",
+    "requisito_literal": "O Preço da Guerra",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2782-2760",
+    "origem_movimento_id": "movimento-classe:paragrafo-2782",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2760",
+    "requisito_literal": "O Preço da Guerra",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2801-2736",
+    "origem_movimento_id": "movimento-classe:paragrafo-2801",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2736",
+    "requisito_literal": "Capitão",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "requer:2802-2748",
+    "origem_movimento_id": "movimento-classe:paragrafo-2802",
+    "requisito_movimento_id": "movimento-classe:paragrafo-2748",
+    "requisito_literal": "Abordagem",
+    "escopo": "mesmo_grupo",
+    "status": "vinculo_exato_a_confirmar",
+    "aplicacao_canonica": false
+  }
+]
