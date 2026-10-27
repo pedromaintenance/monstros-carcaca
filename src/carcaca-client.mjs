@@ -34,6 +34,19 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getFlows(){return byKey("flows");}
   async function getMaterialDependencies(){return byKey("material_dependencies");}
   async function getMaterialBalances(){return byKey("material_balances");}
+  async function getSupportProfiles(){return byKey("support_profiles");}
+  async function getSupportIndexes(){return byKey("support_indexes");}
+  async function getSupportProfile(id){
+    if(typeof id!=="string"||!id.startsWith("suporte:"))return null;
+    return (await getSupportProfiles()).find(p=>p.id===id)??null;
+  }
+  async function searchSupportProfiles({assentamentoId,natureza,mobilidadeSazonal}={}){
+    return (await getSupportProfiles()).filter(p=>
+      (!assentamentoId||p.assentamento_id===assentamentoId)&&
+      (!natureza||p.natureza_territorial===natureza)&&
+      (!mobilidadeSazonal||p.demografia.mobilidade_sazonal===mobilidadeSazonal)
+    );
+  }
   async function getMaterialBalanceIndexes(){return byKey("material_balance_indexes");}
   async function getEcologicalPressures(){return byKey("ecological_pressures");}
   async function getEcologicalPressureIndexes(){return byKey("ecological_pressure_indexes");}
@@ -110,7 +123,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   return {getManifest,getCatalog,getIndexes,getRegions,getPlaces,getFactions,
           getFronts,getSettlements,getSettlementLabels,getSettlementIndexes,
           getPeoples,getFlows,getMaterialDependencies,getMaterialDependencyIndexes,
-          getMaterialBalances,getMaterialBalanceIndexes,getEcologicalPressures,
+          getMaterialBalances,getMaterialBalanceIndexes,getSupportProfiles,
+          getSupportIndexes,getSupportProfile,searchSupportProfiles,getEcologicalPressures,
           getEcologicalPressureIndexes,searchMaterialBalances,searchEcologicalPressures,
           searchMaterialDependencies,getSettlement,searchSettlements,
           getSettlementScenarios,getSettlementScenario,searchSettlementScenarios,

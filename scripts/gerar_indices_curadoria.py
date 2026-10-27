@@ -53,6 +53,16 @@ def build():
     dependencies=sorted(load("data/dependencias_materiais_costa_sul.json")["dependencias"],key=lambda r:r["id"])
     material_balances=sorted(load("data/balancos_materiais_costa_sul.json")["balancos"],key=lambda r:r["id"])
     ecological_pressures=sorted(load("data/pressoes_ecologicas_costa_sul.json")["pressoes"],key=lambda r:r["id"])
+    support_profiles=sorted(load("data/capacidade_suporte_costa_sul.json")["perfis"],key=lambda r:r["id"])
+    support_index={k:defaultdict(set) for k in ("by_assentamento","by_natureza","by_mobilidade_sazonal")}
+    for p in support_profiles:
+        sid=p["id"]
+        for name,key in (("by_assentamento",p["assentamento_id"]),
+                         ("by_natureza",p["natureza_territorial"]),
+                         ("by_mobilidade_sazonal",p["demografia"]["mobilidade_sazonal"])):
+            add(support_index[name],key,sid)
+    support_index={name:{key:sorted(ids) for key,ids in sorted(group.items())}
+                   for name,group in support_index.items()}
     balance_index={k:defaultdict(set) for k in ("by_assentamento","by_recurso","by_tipo","by_sazonalidade")}
     for b in material_balances:
         for key,value in (("by_assentamento",b["assentamento_id"]),
@@ -138,7 +148,9 @@ def build():
         "material_balances":"material-balances.json",
         "material_balance_indexes":"material-balance-indexes.json",
         "ecological_pressures":"ecological-pressures.json",
-        "ecological_pressure_indexes":"ecological-pressure-indexes.json"
+        "ecological_pressure_indexes":"ecological-pressure-indexes.json",
+        "support_profiles":"support-profiles.json",
+        "support_indexes":"support-indexes.json"
     }
     manifest = {
         "schema_version":"0.1.0", "descricao":"Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
@@ -150,6 +162,7 @@ def build():
         "total_dependencias_materiais":len(dependencies),
         "total_balancos_materiais":len(material_balances),
         "total_pressoes_ecologicas":len(ecological_pressures),
+        "total_perfis_suporte":len(support_profiles),
         "arquivos":files, "estado":"curadoria_em_andamento",
         "nota":"Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."
     }
@@ -167,7 +180,9 @@ def build():
         files["material_balances"]:material_balances,
         files["material_balance_indexes"]:balance_index,
         files["ecological_pressures"]:ecological_pressures,
-        files["ecological_pressure_indexes"]:pressure_index
+        files["ecological_pressure_indexes"]:pressure_index,
+        files["support_profiles"]:support_profiles,
+        files["support_indexes"]:support_index
     }
 
 def main():
