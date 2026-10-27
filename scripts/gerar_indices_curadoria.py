@@ -42,6 +42,24 @@ def build():
     types = sorted(load("data/taxonomia_carcaca.json")["tipos"], key=lambda x:x["id"])
     fronts = collect("curadoria/frentes")
     settlements = collect("curadoria/assentamentos")
+    settlement_labels = sorted(load("data/rotulos_assentamentos_carcaca.json")["rotulos"],key=lambda r:r["id"])
+    peoples = sorted(load("data/povos_carcaca.json")["povos"],key=lambda r:r["id"])
+    flows = sorted(load("data/fluxos_costa_sul.json")["fluxos"],key=lambda r:r["id"])
+    settlement_indexes = {k:defaultdict(set) for k in
+                          ("by_regiao","by_lugar","by_natureza","by_rotulo_carcaca","by_povo")}
+    for st in settlements:
+        sid=st["id"]
+        for idx,val in (("by_regiao",st["regiao_id"]),("by_lugar",st["lugar_id"]),
+                        ("by_natureza",st["natureza"])):
+            add(settlement_indexes[idx],val,sid)
+        for tag in st.get("rotulos_carcaca",[]):
+            add(settlement_indexes["by_rotulo_carcaca"],tag["id"],sid)
+        for inhabitant in st.get("habitantes",[]):
+            add(settlement_indexes["by_povo"],inhabitant["povo_id"],sid)
+    settlement_indexes = {
+        name:{key:sorted(ids) for key,ids in sorted(group.items())}
+        for name,group in settlement_indexes.items()
+    }
     indexed = {k: defaultdict(set) for k in ("by_tipo_carcaca", "by_tipo_dnd",
                "by_regiao", "by_lugar", "by_faccao", "by_estado", "by_nome")}
     catalog = []
@@ -74,13 +92,18 @@ def build():
     files = {
         "creatures":"creatures.json", "catalog":"catalog.json", "indexes":"indexes.json",
         "regions":"regions.json", "places":"places.json", "factions":"factions.json",
-        "types":"types.json", "fronts":"fronts.json", "settlements":"settlements.json"
+        "types":"types.json", "fronts":"fronts.json", "settlements":"settlements.json",
+        "settlement_labels":"settlement-labels.json",
+        "settlement_indexes":"settlement-indexes.json",
+        "peoples":"peoples.json", "flows":"flows.json"
     }
     manifest = {
         "schema_version":"0.1.0", "descricao":"Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
         "total_criaturas":len(creatures), "total_regioes":len(regions),
         "total_lugares":len(places), "total_faccoes":len(factions),
         "total_frentes":len(fronts), "total_assentamentos":len(settlements),
+        "total_rotulos_assentamentos":len(settlement_labels), "total_povos":len(peoples),
+        "total_fluxos":len(flows),
         "arquivos":files, "estado":"curadoria_em_andamento",
         "nota":"Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."
     }
@@ -88,7 +111,10 @@ def build():
         "manifest.json":manifest,files["creatures"]:creatures,files["catalog"]:catalog,
         files["indexes"]:indexes,files["regions"]:regions,files["places"]:places,
         files["factions"]:factions,files["types"]:types,files["fronts"]:fronts,
-        files["settlements"]:settlements
+        files["settlements"]:settlements,
+        files["settlement_labels"]:settlement_labels,
+        files["settlement_indexes"]:settlement_indexes,
+        files["peoples"]:peoples,files["flows"]:flows
     }
 
 def main():
