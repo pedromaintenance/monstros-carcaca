@@ -1,0 +1,446 @@
+{
+  "by_requisito_tipo": {
+    "movimento_exato": [
+      "movimento-classe:paragrafo-1870",
+      "movimento-classe:paragrafo-1872",
+      "movimento-classe:paragrafo-1879",
+      "movimento-classe:paragrafo-1889",
+      "movimento-classe:paragrafo-1891",
+      "movimento-classe:paragrafo-1892",
+      "movimento-classe:paragrafo-1904",
+      "movimento-classe:paragrafo-1923",
+      "movimento-classe:paragrafo-1927",
+      "movimento-classe:paragrafo-1928",
+      "movimento-classe:paragrafo-1935",
+      "movimento-classe:paragrafo-1936",
+      "movimento-classe:paragrafo-1937",
+      "movimento-classe:paragrafo-1938",
+      "movimento-classe:paragrafo-1940",
+      "movimento-classe:paragrafo-1941",
+      "movimento-classe:paragrafo-1950",
+      "movimento-classe:paragrafo-1957"
+    ],
+    "nenhum": [
+      "movimento-classe:paragrafo-1862",
+      "movimento-classe:paragrafo-1863",
+      "movimento-classe:paragrafo-1869",
+      "movimento-classe:paragrafo-1871",
+      "movimento-classe:paragrafo-1873",
+      "movimento-classe:paragrafo-1878",
+      "movimento-classe:paragrafo-1880",
+      "movimento-classe:paragrafo-1881",
+      "movimento-classe:paragrafo-1890",
+      "movimento-classe:paragrafo-1893",
+      "movimento-classe:paragrafo-1894",
+      "movimento-classe:paragrafo-1902",
+      "movimento-classe:paragrafo-1903",
+      "movimento-classe:paragrafo-1911",
+      "movimento-classe:paragrafo-1917",
+      "movimento-classe:paragrafo-1919",
+      "movimento-classe:paragrafo-1920",
+      "movimento-classe:paragrafo-1921",
+      "movimento-classe:paragrafo-1922",
+      "movimento-classe:paragrafo-1934",
+      "movimento-classe:paragrafo-1939",
+      "movimento-classe:paragrafo-1949",
+      "movimento-classe:paragrafo-1963"
+    ],
+    "todos": [
+      "movimento-classe:paragrafo-1962"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-1862",
+      "movimento-classe:paragrafo-1863",
+      "movimento-classe:paragrafo-1869",
+      "movimento-classe:paragrafo-1871",
+      "movimento-classe:paragrafo-1873",
+      "movimento-classe:paragrafo-1878",
+      "movimento-classe:paragrafo-1880",
+      "movimento-classe:paragrafo-1881",
+      "movimento-classe:paragrafo-1890",
+      "movimento-classe:paragrafo-1893",
+      "movimento-classe:paragrafo-1894",
+      "movimento-classe:paragrafo-1902",
+      "movimento-classe:paragrafo-1903",
+      "movimento-classe:paragrafo-1911",
+      "movimento-classe:paragrafo-1917",
+      "movimento-classe:paragrafo-1919",
+      "movimento-classe:paragrafo-1920",
+      "movimento-classe:paragrafo-1921",
+      "movimento-classe:paragrafo-1922",
+      "movimento-classe:paragrafo-1934",
+      "movimento-classe:paragrafo-1939",
+      "movimento-classe:paragrafo-1949",
+      "movimento-classe:paragrafo-1963"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-1870",
+      "movimento-classe:paragrafo-1872",
+      "movimento-classe:paragrafo-1879",
+      "movimento-classe:paragrafo-1889",
+      "movimento-classe:paragrafo-1891",
+      "movimento-classe:paragrafo-1892",
+      "movimento-classe:paragrafo-1904",
+      "movimento-classe:paragrafo-1923",
+      "movimento-classe:paragrafo-1927",
+      "movimento-classe:paragrafo-1928",
+      "movimento-classe:paragrafo-1935",
+      "movimento-classe:paragrafo-1936",
+      "movimento-classe:paragrafo-1937",
+      "movimento-classe:paragrafo-1938",
+      "movimento-classe:paragrafo-1940",
+      "movimento-classe:paragrafo-1941",
+      "movimento-classe:paragrafo-1950",
+      "movimento-classe:paragrafo-1957",
+      "movimento-classe:paragrafo-1962"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-1862",
+      "movimento-classe:paragrafo-1869",
+      "movimento-classe:paragrafo-1870",
+      "movimento-classe:paragrafo-1871",
+      "movimento-classe:paragrafo-1872",
+      "movimento-classe:paragrafo-1878",
+      "movimento-classe:paragrafo-1879",
+      "movimento-classe:paragrafo-1880",
+      "movimento-classe:paragrafo-1889",
+      "movimento-classe:paragrafo-1890",
+      "movimento-classe:paragrafo-1891",
+      "movimento-classe:paragrafo-1892",
+      "movimento-classe:paragrafo-1893",
+      "movimento-classe:paragrafo-1902",
+      "movimento-classe:paragrafo-1903",
+      "movimento-classe:paragrafo-1917",
+      "movimento-classe:paragrafo-1919",
+      "movimento-classe:paragrafo-1920",
+      "movimento-classe:paragrafo-1921",
+      "movimento-classe:paragrafo-1922",
+      "movimento-classe:paragrafo-1927",
+      "movimento-classe:paragrafo-1934",
+      "movimento-classe:paragrafo-1935",
+      "movimento-classe:paragrafo-1936",
+      "movimento-classe:paragrafo-1937",
+      "movimento-classe:paragrafo-1938",
+      "movimento-classe:paragrafo-1939",
+      "movimento-classe:paragrafo-1940",
+      "movimento-classe:paragrafo-1949",
+      "movimento-classe:paragrafo-1962",
+      "movimento-classe:paragrafo-1963"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-1863",
+      "movimento-classe:paragrafo-1873",
+      "movimento-classe:paragrafo-1881",
+      "movimento-classe:paragrafo-1894",
+      "movimento-classe:paragrafo-1904",
+      "movimento-classe:paragrafo-1911",
+      "movimento-classe:paragrafo-1923",
+      "movimento-classe:paragrafo-1928",
+      "movimento-classe:paragrafo-1941",
+      "movimento-classe:paragrafo-1950",
+      "movimento-classe:paragrafo-1957"
+    ]
+  },
+  "by_paragrafo": {
+    "1862": [
+      "movimento-classe:paragrafo-1862"
+    ],
+    "1863": [
+      "movimento-classe:paragrafo-1863"
+    ],
+    "1869": [
+      "movimento-classe:paragrafo-1869"
+    ],
+    "1870": [
+      "movimento-classe:paragrafo-1870"
+    ],
+    "1871": [
+      "movimento-classe:paragrafo-1871"
+    ],
+    "1872": [
+      "movimento-classe:paragrafo-1872"
+    ],
+    "1873": [
+      "movimento-classe:paragrafo-1873"
+    ],
+    "1878": [
+      "movimento-classe:paragrafo-1878"
+    ],
+    "1879": [
+      "movimento-classe:paragrafo-1879"
+    ],
+    "1880": [
+      "movimento-classe:paragrafo-1880"
+    ],
+    "1881": [
+      "movimento-classe:paragrafo-1881"
+    ],
+    "1889": [
+      "movimento-classe:paragrafo-1889"
+    ],
+    "1890": [
+      "movimento-classe:paragrafo-1890"
+    ],
+    "1891": [
+      "movimento-classe:paragrafo-1891"
+    ],
+    "1892": [
+      "movimento-classe:paragrafo-1892"
+    ],
+    "1893": [
+      "movimento-classe:paragrafo-1893"
+    ],
+    "1894": [
+      "movimento-classe:paragrafo-1894"
+    ],
+    "1902": [
+      "movimento-classe:paragrafo-1902"
+    ],
+    "1903": [
+      "movimento-classe:paragrafo-1903"
+    ],
+    "1904": [
+      "movimento-classe:paragrafo-1904"
+    ],
+    "1911": [
+      "movimento-classe:paragrafo-1911"
+    ],
+    "1917": [
+      "movimento-classe:paragrafo-1917"
+    ],
+    "1919": [
+      "movimento-classe:paragrafo-1919"
+    ],
+    "1920": [
+      "movimento-classe:paragrafo-1920"
+    ],
+    "1921": [
+      "movimento-classe:paragrafo-1921"
+    ],
+    "1922": [
+      "movimento-classe:paragrafo-1922"
+    ],
+    "1923": [
+      "movimento-classe:paragrafo-1923"
+    ],
+    "1927": [
+      "movimento-classe:paragrafo-1927"
+    ],
+    "1928": [
+      "movimento-classe:paragrafo-1928"
+    ],
+    "1934": [
+      "movimento-classe:paragrafo-1934"
+    ],
+    "1935": [
+      "movimento-classe:paragrafo-1935"
+    ],
+    "1936": [
+      "movimento-classe:paragrafo-1936"
+    ],
+    "1937": [
+      "movimento-classe:paragrafo-1937"
+    ],
+    "1938": [
+      "movimento-classe:paragrafo-1938"
+    ],
+    "1939": [
+      "movimento-classe:paragrafo-1939"
+    ],
+    "1940": [
+      "movimento-classe:paragrafo-1940"
+    ],
+    "1941": [
+      "movimento-classe:paragrafo-1941"
+    ],
+    "1949": [
+      "movimento-classe:paragrafo-1949"
+    ],
+    "1950": [
+      "movimento-classe:paragrafo-1950"
+    ],
+    "1957": [
+      "movimento-classe:paragrafo-1957"
+    ],
+    "1962": [
+      "movimento-classe:paragrafo-1962"
+    ],
+    "1963": [
+      "movimento-classe:paragrafo-1963"
+    ]
+  },
+  "by_requisito_id": {
+    "movimento-classe:paragrafo-1862": [
+      "movimento-classe:paragrafo-1872",
+      "movimento-classe:paragrafo-1879",
+      "movimento-classe:paragrafo-1892"
+    ],
+    "movimento-classe:paragrafo-1869": [
+      "movimento-classe:paragrafo-1870"
+    ],
+    "movimento-classe:paragrafo-1871": [
+      "movimento-classe:paragrafo-1891"
+    ],
+    "movimento-classe:paragrafo-1881": [
+      "movimento-classe:paragrafo-1889"
+    ],
+    "movimento-classe:paragrafo-1894": [
+      "movimento-classe:paragrafo-1904"
+    ],
+    "movimento-classe:paragrafo-1922": [
+      "movimento-classe:paragrafo-1923",
+      "movimento-classe:paragrafo-1927",
+      "movimento-classe:paragrafo-1928"
+    ],
+    "movimento-classe:paragrafo-1934": [
+      "movimento-classe:paragrafo-1935",
+      "movimento-classe:paragrafo-1936",
+      "movimento-classe:paragrafo-1937",
+      "movimento-classe:paragrafo-1938"
+    ],
+    "movimento-classe:paragrafo-1939": [
+      "movimento-classe:paragrafo-1940",
+      "movimento-classe:paragrafo-1941"
+    ],
+    "movimento-classe:paragrafo-1949": [
+      "movimento-classe:paragrafo-1950",
+      "movimento-classe:paragrafo-1957",
+      "movimento-classe:paragrafo-1962"
+    ],
+    "movimento-classe:paragrafo-1950": [
+      "movimento-classe:paragrafo-1962"
+    ]
+  },
+  "by_titulo": {
+    "A RESPIRAÇÃO ENTRE OS GOLPES": [
+      "movimento-classe:paragrafo-1921"
+    ],
+    "APANHE A FLECHA": [
+      "movimento-classe:paragrafo-1881"
+    ],
+    "CLINCH": [
+      "movimento-classe:paragrafo-1894"
+    ],
+    "CORPO SEM PESO": [
+      "movimento-classe:paragrafo-1950"
+    ],
+    "CORPO VAZIO": [
+      "movimento-classe:paragrafo-1862"
+    ],
+    "CORRA ONDE NÃO HÁ CHÃO": [
+      "movimento-classe:paragrafo-1891"
+    ],
+    "CÍRCULO DO VENTO": [
+      "movimento-classe:paragrafo-1957"
+    ],
+    "DEVOLVA AO REMETENTE": [
+      "movimento-classe:paragrafo-1889"
+    ],
+    "DISCIPLINA ABSOLUTA": [
+      "movimento-classe:paragrafo-1880"
+    ],
+    "ENTRAR NA GUARDA": [
+      "movimento-classe:paragrafo-1893"
+    ],
+    "FINALIZAÇÃO": [
+      "movimento-classe:paragrafo-1904"
+    ],
+    "FLUIR E REDIRECIONAR": [
+      "movimento-classe:paragrafo-1923"
+    ],
+    "FOLHA QUE CAI": [
+      "movimento-classe:paragrafo-1890"
+    ],
+    "FORMA DA TERRA": [
+      "movimento-classe:paragrafo-1934"
+    ],
+    "FORMA DA ÁGUA": [
+      "movimento-classe:paragrafo-1922"
+    ],
+    "FORMA DO AR": [
+      "movimento-classe:paragrafo-1949"
+    ],
+    "FORMA DO FOGO": [
+      "movimento-classe:paragrafo-1939"
+    ],
+    "GELO NUM SUSPIRO": [
+      "movimento-classe:paragrafo-1927"
+    ],
+    "KENSEI": [
+      "movimento-classe:paragrafo-1869"
+    ],
+    "MESTRE BÊBADO": [
+      "movimento-classe:paragrafo-1873"
+    ],
+    "METAL LEMBRA DA PEDRA": [
+      "movimento-classe:paragrafo-1937"
+    ],
+    "MÃO ABERTA": [
+      "movimento-classe:paragrafo-1863"
+    ],
+    "NINGUÉM ME TOCA": [
+      "movimento-classe:paragrafo-1872"
+    ],
+    "NINJA": [
+      "movimento-classe:paragrafo-1870"
+    ],
+    "NÃO EMPURRE UMA PORTA ABERTA": [
+      "movimento-classe:paragrafo-1903"
+    ],
+    "PASSO DA CHAMA": [
+      "movimento-classe:paragrafo-1940"
+    ],
+    "PASSO SOBRE A ÁGUA": [
+      "movimento-classe:paragrafo-1871"
+    ],
+    "PUNHO DISTANTE": [
+      "movimento-classe:paragrafo-1919"
+    ],
+    "RAIZ DE PEDRA": [
+      "movimento-classe:paragrafo-1935"
+    ],
+    "RELÂMPAGO ENTRE DOIS PULSOS": [
+      "movimento-classe:paragrafo-1941"
+    ],
+    "RESPIRAÇÃO PURIFICADORA": [
+      "movimento-classe:paragrafo-1920"
+    ],
+    "SANGUE É ÁGUA": [
+      "movimento-classe:paragrafo-1928"
+    ],
+    "SELAR OS MERIDIANOS": [
+      "movimento-classe:paragrafo-1917"
+    ],
+    "SEM FORMA": [
+      "movimento-classe:paragrafo-1902"
+    ],
+    "SENTIDO SÍSMICO": [
+      "movimento-classe:paragrafo-1936"
+    ],
+    "TERRA QUE SANGRA FOGO": [
+      "movimento-classe:paragrafo-1938"
+    ],
+    "TOQUE DA MISERICÓRDIA": [
+      "movimento-classe:paragrafo-1878"
+    ],
+    "TOQUE DA MORTE LONGA": [
+      "movimento-classe:paragrafo-1879"
+    ],
+    "TÉCNICA SECRETA": [
+      "movimento-classe:paragrafo-1963"
+    ],
+    "UM PALMO BASTA": [
+      "movimento-classe:paragrafo-1892"
+    ],
+    "USE A FORÇA DELE": [
+      "movimento-classe:paragrafo-1911"
+    ],
+    "VOO": [
+      "movimento-classe:paragrafo-1962"
+    ]
+  }
+}

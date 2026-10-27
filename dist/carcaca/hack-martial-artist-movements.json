@@ -1,0 +1,1572 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-1862",
+    "paragrafo_docx": 1862,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "CORPO VAZIO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1862,
+        "tipo": "corpo",
+        "texto": "Quando lutar desarmado, sem armadura e aceitar permanecer ao alcance do inimigo, seus ataques normalmente podem atingir Periculosidade Muito Perigosa (1d8) quando utilizar sua técnica marcial."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando lutar desarmado, sem armadura e aceitar permanecer ao alcance do inimigo, seus ataques normalmente podem atingir Periculosidade Muito Perigosa (1d8) quando utilizar sua técnica marcial.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1862"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1863",
+    "paragrafo_docx": 1863,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "MÃO ABERTA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1863,
+        "tipo": "corpo",
+        "texto": "Quando causar dano desarmado, pode reduzir a Periculosidade em um grau para:"
+      },
+      {
+        "paragrafo_docx": 1864,
+        "tipo": "opcao",
+        "texto": "derrubar;"
+      },
+      {
+        "paragrafo_docx": 1865,
+        "tipo": "opcao",
+        "texto": "empurrar;"
+      },
+      {
+        "paragrafo_docx": 1866,
+        "tipo": "opcao",
+        "texto": "desequilibrar;"
+      },
+      {
+        "paragrafo_docx": 1867,
+        "tipo": "opcao",
+        "texto": "desarmar;"
+      },
+      {
+        "paragrafo_docx": 1868,
+        "tipo": "opcao",
+        "texto": "interromper uma ação física."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1864,
+        "texto": "derrubar;"
+      },
+      {
+        "paragrafo_docx": 1865,
+        "texto": "empurrar;"
+      },
+      {
+        "paragrafo_docx": 1866,
+        "texto": "desequilibrar;"
+      },
+      {
+        "paragrafo_docx": 1867,
+        "texto": "desarmar;"
+      },
+      {
+        "paragrafo_docx": 1868,
+        "texto": "interromper uma ação física."
+      }
+    ],
+    "texto_original": "Quando causar dano desarmado, pode reduzir a Periculosidade em um grau para:\nderrubar;\nempurrar;\ndesequilibrar;\ndesarmar;\ninterromper uma ação física.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1863"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1869",
+    "paragrafo_docx": 1869,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "KENSEI",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1869,
+        "tipo": "corpo",
+        "texto": "Escolha uma arma corpo-a-corpo. Em suas mãos ela é uma extensão do corpo. Quando sua técnica depender de precisão, mobilidade e controle, pode usar DES mesmo em situações nas quais outro combatente dependeria apenas de força física. Você também pode usar qualquer movimento que requer luta desarmada enquanto empunha esta arma."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha uma arma corpo-a-corpo. Em suas mãos ela é uma extensão do corpo. Quando sua técnica depender de precisão, mobilidade e controle, pode usar DES mesmo em situações nas quais outro combatente dependeria apenas de força física. Você também pode usar qualquer movimento que requer luta desarmada enquanto empunha esta arma.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1869"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1870",
+    "paragrafo_docx": 1870,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "NINJA",
+    "requisito_literal": "Kensei",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1869",
+      "titulo_requerido": "KENSEI",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1870,
+        "tipo": "corpo",
+        "texto": "Você pode escolher uma arma de ataque à distância como uma arma Kensei adicional."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Você pode escolher uma arma de ataque à distância como uma arma Kensei adicional.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1870"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1871",
+    "paragrafo_docx": 1871,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "PASSO SOBRE A ÁGUA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1871,
+        "tipo": "corpo",
+        "texto": "Quando atravessar uma superfície estreita, instável ou incapaz de sustentar normalmente seu peso e puder manter movimento contínuo, você consegue fazê-lo. Parar no meio pode exigir enfrentar a ficção."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando atravessar uma superfície estreita, instável ou incapaz de sustentar normalmente seu peso e puder manter movimento contínuo, você consegue fazê-lo. Parar no meio pode exigir enfrentar a ficção.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1871"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1872",
+    "paragrafo_docx": 1872,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "NINGUÉM ME TOCA",
+    "requisito_literal": "Corpo Vazio",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1862",
+      "titulo_requerido": "CORPO VAZIO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1872,
+        "tipo": "corpo",
+        "texto": "Duas vezes por cena, quando rolar um 7-9 ao Desafiar o Perigo contra um ataque corpo a corpo, considere-o um 10+ e escolha uma posição vantajosa após evitá-lo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Duas vezes por cena, quando rolar um 7-9 ao Desafiar o Perigo contra um ataque corpo a corpo, considere-o um 10+ e escolha uma posição vantajosa após evitá-lo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1872"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1873",
+    "paragrafo_docx": 1873,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "MESTRE BÊBADO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1873,
+        "tipo": "corpo",
+        "texto": "Quando agir de maneira deliberadamente desajeitada para tornar seu movimento imprevisível, role+DES.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 1874,
+        "tipo": "opcao",
+        "texto": "o inimigo termina onde você queria;"
+      },
+      {
+        "paragrafo_docx": 1875,
+        "tipo": "opcao",
+        "texto": "ele atinge algo que não pretendia;"
+      },
+      {
+        "paragrafo_docx": 1876,
+        "tipo": "opcao",
+        "texto": "você parece mais vulnerável do que realmente está;"
+      },
+      {
+        "paragrafo_docx": 1877,
+        "tipo": "opcao",
+        "texto": "você não cai de verdade."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1874,
+        "texto": "o inimigo termina onde você queria;"
+      },
+      {
+        "paragrafo_docx": 1875,
+        "texto": "ele atinge algo que não pretendia;"
+      },
+      {
+        "paragrafo_docx": 1876,
+        "texto": "você parece mais vulnerável do que realmente está;"
+      },
+      {
+        "paragrafo_docx": 1877,
+        "texto": "você não cai de verdade."
+      }
+    ],
+    "texto_original": "Quando agir de maneira deliberadamente desajeitada para tornar seu movimento imprevisível, role+DES.\n10+: escolha 2.\n7–9: escolha 1.\no inimigo termina onde você queria;\nele atinge algo que não pretendia;\nvocê parece mais vulnerável do que realmente está;\nvocê não cai de verdade.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1873"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1878",
+    "paragrafo_docx": 1878,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "TOQUE DA MISERICÓRDIA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1878,
+        "tipo": "corpo",
+        "texto": "Quando tocar alguém e trabalhar pontos de pressão, respiração e energia corporal por alguns minutos, pode curar 1d6 PV ou aliviar temporariamente uma Debilidade física. Só a recuperação normal remove definitivamente a Debilidade."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando tocar alguém e trabalhar pontos de pressão, respiração e energia corporal por alguns minutos, pode curar 1d6 PV ou aliviar temporariamente uma Debilidade física. Só a recuperação normal remove definitivamente a Debilidade.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1878"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1879",
+    "paragrafo_docx": 1879,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "TOQUE DA MORTE LONGA",
+    "requisito_literal": "Corpo Vazio",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1862",
+      "titulo_requerido": "CORPO VAZIO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1879,
+        "tipo": "corpo",
+        "texto": "Quando atingir deliberadamente alguém em um ponto vital, pode causar dano mesmo sem usar força suficiente para atravessar sua proteção externa, desde que a anatomia da criatura permita."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando atingir deliberadamente alguém em um ponto vital, pode causar dano mesmo sem usar força suficiente para atravessar sua proteção externa, desde que a anatomia da criatura permita.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1879"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1880",
+    "paragrafo_docx": 1880,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "DISCIPLINA ABSOLUTA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1880,
+        "tipo": "corpo",
+        "texto": "Escolha uma disciplina ou voto monástico concreto. Enquanto o mantiver, uma vez por sessão transforme um 6- em 7–9 ao agir diretamente segundo essa disciplina. Quebrá-la exige reparação antes de reutilizar o Movimento."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha uma disciplina ou voto monástico concreto. Enquanto o mantiver, uma vez por sessão transforme um 6- em 7–9 ao agir diretamente segundo essa disciplina. Quebrá-la exige reparação antes de reutilizar o Movimento.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1880"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1881",
+    "paragrafo_docx": 1881,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "APANHE A FLECHA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1881,
+        "tipo": "corpo",
+        "texto": "Quando um projétil físico que consiga perceber estiver prestes a atingi-lo e você possuir mão, arma ou parte do corpo livre para interceptá-lo, Desafie o Perigo+DES.\n10+: você o apanha ou desvia completamente e escolha 1:"
+      },
+      {
+        "paragrafo_docx": 1882,
+        "tipo": "opcao",
+        "texto": "mantenha o projétil em suas mãos;"
+      },
+      {
+        "paragrafo_docx": 1883,
+        "tipo": "opcao",
+        "texto": "coloque-o deliberadamente em algum lugar próximo;"
+      },
+      {
+        "paragrafo_docx": 1884,
+        "tipo": "opcao",
+        "texto": "não abandone sua posição para interceptá-lo."
+      },
+      {
+        "paragrafo_docx": 1885,
+        "tipo": "continuacao",
+        "texto": "7–9: você impede o impacto pleno, mas escolha 1:"
+      },
+      {
+        "paragrafo_docx": 1886,
+        "tipo": "opcao",
+        "texto": "é arrancado de sua posição;"
+      },
+      {
+        "paragrafo_docx": 1887,
+        "tipo": "opcao",
+        "texto": "algo usado na interceptação é perdido ou danificado;"
+      },
+      {
+        "paragrafo_docx": 1888,
+        "tipo": "opcao",
+        "texto": "uma parte da força ainda alcança você com uma consequência reduzida."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1882,
+        "texto": "mantenha o projétil em suas mãos;"
+      },
+      {
+        "paragrafo_docx": 1883,
+        "texto": "coloque-o deliberadamente em algum lugar próximo;"
+      },
+      {
+        "paragrafo_docx": 1884,
+        "texto": "não abandone sua posição para interceptá-lo."
+      },
+      {
+        "paragrafo_docx": 1886,
+        "texto": "é arrancado de sua posição;"
+      },
+      {
+        "paragrafo_docx": 1887,
+        "texto": "algo usado na interceptação é perdido ou danificado;"
+      },
+      {
+        "paragrafo_docx": 1888,
+        "texto": "uma parte da força ainda alcança você com uma consequência reduzida."
+      }
+    ],
+    "texto_original": "Quando um projétil físico que consiga perceber estiver prestes a atingi-lo e você possuir mão, arma ou parte do corpo livre para interceptá-lo, Desafie o Perigo+DES.\n10+: você o apanha ou desvia completamente e escolha 1:\nmantenha o projétil em suas mãos;\ncoloque-o deliberadamente em algum lugar próximo;\nnão abandone sua posição para interceptá-lo.\n7–9: você impede o impacto pleno, mas escolha 1:\né arrancado de sua posição;\nalgo usado na interceptação é perdido ou danificado;\numa parte da força ainda alcança você com uma consequência reduzida.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1881"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1889",
+    "paragrafo_docx": 1889,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "DEVOLVA AO REMETENTE",
+    "requisito_literal": "Apanhe a Flecha",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1881",
+      "titulo_requerido": "APANHE A FLECHA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1889,
+        "tipo": "corpo",
+        "texto": "Quando obtiver 10+ em Apanhe a Flecha, você pode imediatamente lançar o projétil de volta ou contra outro alvo plausível.\nSe houver perigo ou alguém puder reagir ao retorno, Dispare. Normalmente, a primeira vez que um adversário vê esse movimento o pega de surpresa."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando obtiver 10+ em Apanhe a Flecha, você pode imediatamente lançar o projétil de volta ou contra outro alvo plausível.\nSe houver perigo ou alguém puder reagir ao retorno, Dispare. Normalmente, a primeira vez que um adversário vê esse movimento o pega de surpresa.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1889"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1890",
+    "paragrafo_docx": 1890,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "FOLHA QUE CAI",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1890,
+        "tipo": "corpo",
+        "texto": "Quando cair de uma grande altura estando consciente e livre para mover o corpo, você consegue transformar a queda em movimento. Se houver superfícies, estruturas, vegetação ou qualquer coisa que possa usar durante a descida, uma queda que normalmente o feriria não o fere. Uma queda que seria imediatamente fatal torna-se uma situação perigosa de aterrissagem, em vez de morte ou mutilação automática."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando cair de uma grande altura estando consciente e livre para mover o corpo, você consegue transformar a queda em movimento. Se houver superfícies, estruturas, vegetação ou qualquer coisa que possa usar durante a descida, uma queda que normalmente o feriria não o fere. Uma queda que seria imediatamente fatal torna-se uma situação perigosa de aterrissagem, em vez de morte ou mutilação automática.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1890"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1891",
+    "paragrafo_docx": 1891,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "CORRA ONDE NÃO HÁ CHÃO",
+    "requisito_literal": "Passo Sobre a Água",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1871",
+      "titulo_requerido": "PASSO SOBRE A ÁGUA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1891,
+        "tipo": "corpo",
+        "texto": "Enquanto mantiver movimento contínuo, paredes, troncos verticais, colunas, cordas, tetos inclinados e outras superfícies capazes de receber momentaneamente seu impulso contam como caminho para você. Você ainda precisa conseguir alcançar a superfície seguinte. Parar, ser interrompido ou tentar atravessar algo realmente impossível pode colocá-lo em perigo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Enquanto mantiver movimento contínuo, paredes, troncos verticais, colunas, cordas, tetos inclinados e outras superfícies capazes de receber momentaneamente seu impulso contam como caminho para você. Você ainda precisa conseguir alcançar a superfície seguinte. Parar, ser interrompido ou tentar atravessar algo realmente impossível pode colocá-lo em perigo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1891"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1892",
+    "paragrafo_docx": 1892,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "UM PALMO BASTA",
+    "requisito_literal": "Corpo Vazio",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1862",
+      "titulo_requerido": "CORPO VAZIO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1892,
+        "tipo": "corpo",
+        "texto": "Você não precisa de espaço para produzir força. Enquanto conseguir alinhar alguma parte suficiente do corpo, pode realizar um golpe desarmado com sua Periculosidade normal mesmo em espaço extremamente apertado, agarrado, encostado ao alvo ou sem possibilidade de preparar o movimento normalmente. Nem imobilização completa impede o golpe."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Você não precisa de espaço para produzir força. Enquanto conseguir alinhar alguma parte suficiente do corpo, pode realizar um golpe desarmado com sua Periculosidade normal mesmo em espaço extremamente apertado, agarrado, encostado ao alvo ou sem possibilidade de preparar o movimento normalmente. Nem imobilização completa impede o golpe.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1892"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1893",
+    "paragrafo_docx": 1893,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "ENTRAR NA GUARDA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1893,
+        "tipo": "corpo",
+        "texto": "Quando receber deliberadamente um ataque cuja principal vantagem seja alcance, distância ou espaço para desenvolver força, você pode aceitar o impacto com Periculosidade reduzida em um grau para terminar imediatamente dentro da guarda do atacante. Enquanto permanecer tão próximo, armas ou ataques que dependam daquele alcance não recuperam sua vantagem até que o adversário crie espaço novamente."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando receber deliberadamente um ataque cuja principal vantagem seja alcance, distância ou espaço para desenvolver força, você pode aceitar o impacto com Periculosidade reduzida em um grau para terminar imediatamente dentro da guarda do atacante. Enquanto permanecer tão próximo, armas ou ataques que dependam daquele alcance não recuperam sua vantagem até que o adversário crie espaço novamente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1893"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1894",
+    "paragrafo_docx": 1894,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "CLINCH",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1894,
+        "tipo": "corpo",
+        "texto": "Quando conseguir entrar no espaço de um adversário capaz de resistir e estabelecer controle corporal através de pegadas, braços, cabeça, tronco ou posição, role+FOR ou DES conforme sua técnica.\n10+: receba Domínio 3.\n7–9: receba Domínio 2, mas se exponha ao perigo.\nEnquanto mantiver contato, gaste 1 Domínio para:"
+      },
+      {
+        "paragrafo_docx": 1895,
+        "tipo": "opcao",
+        "texto": "quebrar a postura: impeça momentaneamente um ataque ou ação que dependa de amplitude, base ou alinhamento corporal;"
+      },
+      {
+        "paragrafo_docx": 1896,
+        "tipo": "opcao",
+        "texto": "dominar a posição: controle um braço, cabeça, cintura, arma ou outro ponto acessível de modo que ele precise primeiro lidar com seu controle para utilizá-lo livremente;"
+      },
+      {
+        "paragrafo_docx": 1897,
+        "tipo": "opcao",
+        "texto": "girar ou conduzir: coloque o adversário, você ou ambos numa posição próxima que sua técnica realmente permitir;"
+      },
+      {
+        "paragrafo_docx": 1898,
+        "tipo": "opcao",
+        "texto": "desequilibrar: leve-o ao chão, contra uma superfície ou deixe-o sem base, acompanhando-o se desejar;"
+      },
+      {
+        "paragrafo_docx": 1899,
+        "tipo": "opcao",
+        "texto": "colar: quando ele conseguir criar distância, acompanhe seu movimento e mantenha o Clinch;"
+      },
+      {
+        "paragrafo_docx": 1900,
+        "tipo": "opcao",
+        "texto": "isolar: exponha pescoço, membro ou outra estrutura adequada para uma Finalização."
+      },
+      {
+        "paragrafo_docx": 1901,
+        "tipo": "continuacao",
+        "texto": "Quando o Domínio acabar, o Clinch não desaparece automaticamente, mas você não possui mais vantagem posicional excepcional. Qualquer nova disputa pelo controle segue normalmente pela ficção."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1895,
+        "texto": "quebrar a postura: impeça momentaneamente um ataque ou ação que dependa de amplitude, base ou alinhamento corporal;"
+      },
+      {
+        "paragrafo_docx": 1896,
+        "texto": "dominar a posição: controle um braço, cabeça, cintura, arma ou outro ponto acessível de modo que ele precise primeiro lidar com seu controle para utilizá-lo livremente;"
+      },
+      {
+        "paragrafo_docx": 1897,
+        "texto": "girar ou conduzir: coloque o adversário, você ou ambos numa posição próxima que sua técnica realmente permitir;"
+      },
+      {
+        "paragrafo_docx": 1898,
+        "texto": "desequilibrar: leve-o ao chão, contra uma superfície ou deixe-o sem base, acompanhando-o se desejar;"
+      },
+      {
+        "paragrafo_docx": 1899,
+        "texto": "colar: quando ele conseguir criar distância, acompanhe seu movimento e mantenha o Clinch;"
+      },
+      {
+        "paragrafo_docx": 1900,
+        "texto": "isolar: exponha pescoço, membro ou outra estrutura adequada para uma Finalização."
+      }
+    ],
+    "texto_original": "Quando conseguir entrar no espaço de um adversário capaz de resistir e estabelecer controle corporal através de pegadas, braços, cabeça, tronco ou posição, role+FOR ou DES conforme sua técnica.\n10+: receba Domínio 3.\n7–9: receba Domínio 2, mas se exponha ao perigo.\nEnquanto mantiver contato, gaste 1 Domínio para:\nquebrar a postura: impeça momentaneamente um ataque ou ação que dependa de amplitude, base ou alinhamento corporal;\ndominar a posição: controle um braço, cabeça, cintura, arma ou outro ponto acessível de modo que ele precise primeiro lidar com seu controle para utilizá-lo livremente;\ngirar ou conduzir: coloque o adversário, você ou ambos numa posição próxima que sua técnica realmente permitir;\ndesequilibrar: leve-o ao chão, contra uma superfície ou deixe-o sem base, acompanhando-o se desejar;\ncolar: quando ele conseguir criar distância, acompanhe seu movimento e mantenha o Clinch;\nisolar: exponha pescoço, membro ou outra estrutura adequada para uma Finalização.\nQuando o Domínio acabar, o Clinch não desaparece automaticamente, mas você não possui mais vantagem posicional excepcional. Qualquer nova disputa pelo controle segue normalmente pela ficção.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1894"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1902",
+    "paragrafo_docx": 1902,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "SEM FORMA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1902,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando alguém demonstrar que compreendeu, estudou ou se adaptou especificamente à maneira como você está lutando, revele uma mudança real de postura, ritmo ou escola. A preparação que dependia da leitura do seu estilo deixa de funcionar contra sua próxima ação. Diga o que naquele novo movimento seu adversário não havia compreendido."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando alguém demonstrar que compreendeu, estudou ou se adaptou especificamente à maneira como você está lutando, revele uma mudança real de postura, ritmo ou escola. A preparação que dependia da leitura do seu estilo deixa de funcionar contra sua próxima ação. Diga o que naquele novo movimento seu adversário não havia compreendido.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1902"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1903",
+    "paragrafo_docx": 1903,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "NÃO EMPURRE UMA PORTA ABERTA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1903,
+        "tipo": "corpo",
+        "texto": "Quando um adversário perder claramente o equilíbrio por ação própria, terreno, erro ou efeito de outro personagem, você não precisa vencê-lo novamente em força para aproveitar aquilo. Se tiver posição para intervir, pode imediatamente derrubá-lo, fazê-lo continuar na direção da queda ou impedir que recupere a base, conforme a ficção permitir."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando um adversário perder claramente o equilíbrio por ação própria, terreno, erro ou efeito de outro personagem, você não precisa vencê-lo novamente em força para aproveitar aquilo. Se tiver posição para intervir, pode imediatamente derrubá-lo, fazê-lo continuar na direção da queda ou impedir que recupere a base, conforme a ficção permitir.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1903"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1904",
+    "paragrafo_docx": 1904,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "FINALIZAÇÃO",
+    "requisito_literal": "Clinch",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1894",
+      "titulo_requerido": "CLINCH",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1904,
+        "tipo": "corpo",
+        "texto": "Quando, através de seu controle, conseguir isolar uma estrutura vulnerável e estabelecer uma finalização adequada à anatomia da criatura — estrangulamento, chave articular, compressão, torção ou equivalente — converta qualquer Domínio restante de Clinch em Domínio de Finalização e receba +1, até o máximo de 3. \nEnquanto mantiver a posição, gaste 1 Domínio para:"
+      },
+      {
+        "paragrafo_docx": 1905,
+        "tipo": "opcao",
+        "texto": "fechar uma rota de fuga: uma maneira concreta pela qual o adversário poderia escapar deixa de estar disponível enquanto a posição permanecer;"
+      },
+      {
+        "paragrafo_docx": 1906,
+        "tipo": "opcao",
+        "texto": "acompanhar a defesa: quando ele tentar girar, levantar, empilhar, arrancar sua pegada ou reposicionar-se, ajuste seu controle e continue na finalização;"
+      },
+      {
+        "paragrafo_docx": 1907,
+        "tipo": "opcao",
+        "texto": "tomar aquilo que ele protege: obrigue-o a largar um objeto, abandonar uma ação ou expor outra parte do corpo para defender a estrutura ameaçada;"
+      },
+      {
+        "paragrafo_docx": 1908,
+        "tipo": "opcao",
+        "texto": "apertar: cause uma consequência física progressiva apropriada à técnica sem abandonar a posição;"
+      },
+      {
+        "paragrafo_docx": 1909,
+        "tipo": "opcao",
+        "texto": "terminar: gaste 2 Domínios. Se a finalização realmente estiver fechada e a anatomia permitir, o adversário deve escolher entre render-se, perder a consciência ou sofrer uma lesão séria na estrutura controlada."
+      },
+      {
+        "paragrafo_docx": 1910,
+        "tipo": "continuacao",
+        "texto": "Se você perder completamente a posição, perde o Domínio de Finalização restante."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1905,
+        "texto": "fechar uma rota de fuga: uma maneira concreta pela qual o adversário poderia escapar deixa de estar disponível enquanto a posição permanecer;"
+      },
+      {
+        "paragrafo_docx": 1906,
+        "texto": "acompanhar a defesa: quando ele tentar girar, levantar, empilhar, arrancar sua pegada ou reposicionar-se, ajuste seu controle e continue na finalização;"
+      },
+      {
+        "paragrafo_docx": 1907,
+        "texto": "tomar aquilo que ele protege: obrigue-o a largar um objeto, abandonar uma ação ou expor outra parte do corpo para defender a estrutura ameaçada;"
+      },
+      {
+        "paragrafo_docx": 1908,
+        "texto": "apertar: cause uma consequência física progressiva apropriada à técnica sem abandonar a posição;"
+      },
+      {
+        "paragrafo_docx": 1909,
+        "texto": "terminar: gaste 2 Domínios. Se a finalização realmente estiver fechada e a anatomia permitir, o adversário deve escolher entre render-se, perder a consciência ou sofrer uma lesão séria na estrutura controlada."
+      }
+    ],
+    "texto_original": "Quando, através de seu controle, conseguir isolar uma estrutura vulnerável e estabelecer uma finalização adequada à anatomia da criatura — estrangulamento, chave articular, compressão, torção ou equivalente — converta qualquer Domínio restante de Clinch em Domínio de Finalização e receba +1, até o máximo de 3. \nEnquanto mantiver a posição, gaste 1 Domínio para:\nfechar uma rota de fuga: uma maneira concreta pela qual o adversário poderia escapar deixa de estar disponível enquanto a posição permanecer;\nacompanhar a defesa: quando ele tentar girar, levantar, empilhar, arrancar sua pegada ou reposicionar-se, ajuste seu controle e continue na finalização;\ntomar aquilo que ele protege: obrigue-o a largar um objeto, abandonar uma ação ou expor outra parte do corpo para defender a estrutura ameaçada;\napertar: cause uma consequência física progressiva apropriada à técnica sem abandonar a posição;\nterminar: gaste 2 Domínios. Se a finalização realmente estiver fechada e a anatomia permitir, o adversário deve escolher entre render-se, perder a consciência ou sofrer uma lesão séria na estrutura controlada.\nSe você perder completamente a posição, perde o Domínio de Finalização restante.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1904"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1911",
+    "paragrafo_docx": 1911,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "USE A FORÇA DELE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1911,
+        "tipo": "corpo",
+        "texto": "Quando alguém comprometer o próprio corpo num empurrão, puxão, investida ou golpe e você ceder à força em vez de enfrentá-la diretamente, role+DES ou SAB conforme sua técnica. \n10+: escolha 2.\n7–9: escolha 1 e permaneça exposto à continuação do confronto."
+      },
+      {
+        "paragrafo_docx": 1912,
+        "tipo": "opcao",
+        "texto": "faça o adversário terminar onde você queria;"
+      },
+      {
+        "paragrafo_docx": 1913,
+        "tipo": "opcao",
+        "texto": "retire seu equilíbrio ou base;"
+      },
+      {
+        "paragrafo_docx": 1914,
+        "tipo": "opcao",
+        "texto": "troque de posição com ele;"
+      },
+      {
+        "paragrafo_docx": 1915,
+        "tipo": "opcao",
+        "texto": "faça sua própria movimentação acompanhar a força sem ser interrompida;"
+      },
+      {
+        "paragrafo_docx": 1916,
+        "tipo": "opcao",
+        "texto": "direcione parte da força para alguma coisa próxima que ela possa realmente atingir."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1912,
+        "texto": "faça o adversário terminar onde você queria;"
+      },
+      {
+        "paragrafo_docx": 1913,
+        "texto": "retire seu equilíbrio ou base;"
+      },
+      {
+        "paragrafo_docx": 1914,
+        "texto": "troque de posição com ele;"
+      },
+      {
+        "paragrafo_docx": 1915,
+        "texto": "faça sua própria movimentação acompanhar a força sem ser interrompida;"
+      },
+      {
+        "paragrafo_docx": 1916,
+        "texto": "direcione parte da força para alguma coisa próxima que ela possa realmente atingir."
+      }
+    ],
+    "texto_original": "Quando alguém comprometer o próprio corpo num empurrão, puxão, investida ou golpe e você ceder à força em vez de enfrentá-la diretamente, role+DES ou SAB conforme sua técnica. \n10+: escolha 2.\n7–9: escolha 1 e permaneça exposto à continuação do confronto.\nfaça o adversário terminar onde você queria;\nretire seu equilíbrio ou base;\ntroque de posição com ele;\nfaça sua própria movimentação acompanhar a força sem ser interrompida;\ndirecione parte da força para alguma coisa próxima que ela possa realmente atingir.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1911"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1917",
+    "paragrafo_docx": 1917,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "SELAR OS MERIDIANOS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1917,
+        "tipo": "corpo",
+        "texto": "Quando atingir precisamente um ponto corporal responsável por movimento, respiração, percepção ou circulação de energia, você pode abrir mão do dano para interromper temporariamente essa função. Diga o que está tentando bloquear. Enquanto o efeito durar, a criatura não consegue utilizar normalmente aquela parte do corpo ou capacidade que realmente dependa daquele fluxo. Tratamento, repouso, transformação corporal ou alguma técnica capaz de restaurar o fluxo pode desfazer o bloqueio."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando atingir precisamente um ponto corporal responsável por movimento, respiração, percepção ou circulação de energia, você pode abrir mão do dano para interromper temporariamente essa função. Diga o que está tentando bloquear. Enquanto o efeito durar, a criatura não consegue utilizar normalmente aquela parte do corpo ou capacidade que realmente dependa daquele fluxo. Tratamento, repouso, transformação corporal ou alguma técnica capaz de restaurar o fluxo pode desfazer o bloqueio.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1917"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1919",
+    "paragrafo_docx": 1919,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "PUNHO DISTANTE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1919,
+        "tipo": "corpo",
+        "texto": "Quando concentrar força interna num golpe desarmado dirigido a um alvo, sua violência pode atravessar uma curta distância sem contato físico, manifestando-se como pressão, impacto, chi, onda de força ou outra expressão definida ao escolher este Movimento.\nIsso engatilha Matar e Pilhar normalmente, mesmo sem contato físico. Em um 7–9, porém, em vez de o adversário necessariamente causar dano ou violência diretamente contra você, o Mestre realiza um Movimento leve apropriado à ficção."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando concentrar força interna num golpe desarmado dirigido a um alvo, sua violência pode atravessar uma curta distância sem contato físico, manifestando-se como pressão, impacto, chi, onda de força ou outra expressão definida ao escolher este Movimento.\nIsso engatilha Matar e Pilhar normalmente, mesmo sem contato físico. Em um 7–9, porém, em vez de o adversário necessariamente causar dano ou violência diretamente contra você, o Mestre realiza um Movimento leve apropriado à ficção.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1919"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1920",
+    "paragrafo_docx": 1920,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "RESPIRAÇÃO PURIFICADORA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1920,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando puder interromper o que está fazendo por alguns instantes e controlar completamente sua respiração e atenção, você pode expulsar de si um efeito temporário de medo, intoxicação, veneno comum, fascinação ou perturbação corporal semelhante. Isso não cura ferimentos, doenças estabelecidas, maldições ou transformações permanentes."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando puder interromper o que está fazendo por alguns instantes e controlar completamente sua respiração e atenção, você pode expulsar de si um efeito temporário de medo, intoxicação, veneno comum, fascinação ou perturbação corporal semelhante. Isso não cura ferimentos, doenças estabelecidas, maldições ou transformações permanentes.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1920"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1921",
+    "paragrafo_docx": 1921,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "A RESPIRAÇÃO ENTRE OS GOLPES",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1921,
+        "tipo": "corpo",
+        "texto": "Quando perceber o ritmo corporal de alguém durante um confronto próximo, pergunte ao Mestre:\n“O que esta criatura precisa fazer antes de conseguir produzir novamente sua maior força?”\nA resposta pode ser respirar, recuperar base, erguer uma arma, acumular energia, reorganizar postura ou outra coisa observável. Se impedir especificamente essa preparação, ela realmente não consegue utilizar aquela força até adaptar sua maneira de agir."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando perceber o ritmo corporal de alguém durante um confronto próximo, pergunte ao Mestre:\n“O que esta criatura precisa fazer antes de conseguir produzir novamente sua maior força?”\nA resposta pode ser respirar, recuperar base, erguer uma arma, acumular energia, reorganizar postura ou outra coisa observável. Se impedir especificamente essa preparação, ela realmente não consegue utilizar aquela força até adaptar sua maneira de agir.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1921"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1922",
+    "paragrafo_docx": 1922,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "FORMA DA ÁGUA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1922,
+        "tipo": "corpo",
+        "texto": "Escolha a água como extensão de sua arte marcial. Quando possuir água suficiente ao alcance e liberdade para executar suas formas, você pode puxá-la, empurrá-la, suspender, dividir, unir e moldar seu fluxo através do movimento corporal. Pequenas manipulações sem oposição simplesmente acontecem. Quando utilizar a água para ferir, proteger, conter, superar resistência ou realizar algo perigoso, use o Movimento apropriado à ação. Você não cria água do nada através desta técnica."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha a água como extensão de sua arte marcial. Quando possuir água suficiente ao alcance e liberdade para executar suas formas, você pode puxá-la, empurrá-la, suspender, dividir, unir e moldar seu fluxo através do movimento corporal. Pequenas manipulações sem oposição simplesmente acontecem. Quando utilizar a água para ferir, proteger, conter, superar resistência ou realizar algo perigoso, use o Movimento apropriado à ação. Você não cria água do nada através desta técnica.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1922"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1923",
+    "paragrafo_docx": 1923,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "FLUIR E REDIRECIONAR",
+    "requisito_literal": "Forma da Água",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1922",
+      "titulo_requerido": "FORMA DA ÁGUA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1923,
+        "tipo": "corpo",
+        "texto": "Quando uma força física atravessar água que você controla ou puder ser recebida através de sua forma fluida, você pode continuar seu movimento em vez de detê-la. Em um sucesso ao Desafiar o Perigo contra essa força, escolha também 1:"
+      },
+      {
+        "paragrafo_docx": 1924,
+        "tipo": "opcao",
+        "texto": "redirecione sua trajetória;"
+      },
+      {
+        "paragrafo_docx": 1925,
+        "tipo": "opcao",
+        "texto": "conduza outra pessoa próxima para fora do caminho;"
+      },
+      {
+        "paragrafo_docx": 1926,
+        "tipo": "opcao",
+        "texto": "devolva parte do impulso para aquilo que o produziu."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1924,
+        "texto": "redirecione sua trajetória;"
+      },
+      {
+        "paragrafo_docx": 1925,
+        "texto": "conduza outra pessoa próxima para fora do caminho;"
+      },
+      {
+        "paragrafo_docx": 1926,
+        "texto": "devolva parte do impulso para aquilo que o produziu."
+      }
+    ],
+    "texto_original": "Quando uma força física atravessar água que você controla ou puder ser recebida através de sua forma fluida, você pode continuar seu movimento em vez de detê-la. Em um sucesso ao Desafiar o Perigo contra essa força, escolha também 1:\nredirecione sua trajetória;\nconduza outra pessoa próxima para fora do caminho;\ndevolva parte do impulso para aquilo que o produziu.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1923"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1927",
+    "paragrafo_docx": 1927,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "GELO NUM SUSPIRO",
+    "requisito_literal": "Forma da Água",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1922",
+      "titulo_requerido": "FORMA DA ÁGUA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1927,
+        "tipo": "corpo",
+        "texto": "A água sob seu controle pode congelar ou voltar ao estado líquido durante o próprio movimento de sua forma. Você pode criar armas, apoios, superfícies, pequenas barreiras e prisões de gelo quando houver água suficiente. Congelar diretamente uma criatura resistente, uma massa enorme ou alguma coisa sobrenaturalmente protegida continua exigindo enfrentar a situação apropriada."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "A água sob seu controle pode congelar ou voltar ao estado líquido durante o próprio movimento de sua forma. Você pode criar armas, apoios, superfícies, pequenas barreiras e prisões de gelo quando houver água suficiente. Congelar diretamente uma criatura resistente, uma massa enorme ou alguma coisa sobrenaturalmente protegida continua exigindo enfrentar a situação apropriada.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1927"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1928",
+    "paragrafo_docx": 1928,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "SANGUE É ÁGUA",
+    "requisito_literal": "Forma da Água",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1922",
+      "titulo_requerido": "FORMA DA ÁGUA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1928,
+        "tipo": "corpo",
+        "texto": "Você aprendeu a perceber e manipular a água dentro de corpos vivos. \nQuando tentar impor movimento ao corpo de uma criatura que resiste, role+SAB. \n10+: escolha 2.\n7–9: escolha 1 e a intrusão também cobra algo de seu próprio corpo ou espírito."
+      },
+      {
+        "paragrafo_docx": 1929,
+        "tipo": "opcao",
+        "texto": "force um movimento simples de um membro;"
+      },
+      {
+        "paragrafo_docx": 1930,
+        "tipo": "opcao",
+        "texto": "faça-a soltar aquilo que segura;"
+      },
+      {
+        "paragrafo_docx": 1931,
+        "tipo": "opcao",
+        "texto": "impeça momentaneamente um movimento específico;"
+      },
+      {
+        "paragrafo_docx": 1932,
+        "tipo": "opcao",
+        "texto": "perceba claramente seu pulso, ferimentos e estado corporal;"
+      },
+      {
+        "paragrafo_docx": 1933,
+        "tipo": "opcao",
+        "texto": "mantenha-a imóvel enquanto dedicar completamente sua própria ação a isso."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1929,
+        "texto": "force um movimento simples de um membro;"
+      },
+      {
+        "paragrafo_docx": 1930,
+        "texto": "faça-a soltar aquilo que segura;"
+      },
+      {
+        "paragrafo_docx": 1931,
+        "texto": "impeça momentaneamente um movimento específico;"
+      },
+      {
+        "paragrafo_docx": 1932,
+        "texto": "perceba claramente seu pulso, ferimentos e estado corporal;"
+      },
+      {
+        "paragrafo_docx": 1933,
+        "texto": "mantenha-a imóvel enquanto dedicar completamente sua própria ação a isso."
+      }
+    ],
+    "texto_original": "Você aprendeu a perceber e manipular a água dentro de corpos vivos. \nQuando tentar impor movimento ao corpo de uma criatura que resiste, role+SAB. \n10+: escolha 2.\n7–9: escolha 1 e a intrusão também cobra algo de seu próprio corpo ou espírito.\nforce um movimento simples de um membro;\nfaça-a soltar aquilo que segura;\nimpeça momentaneamente um movimento específico;\nperceba claramente seu pulso, ferimentos e estado corporal;\nmantenha-a imóvel enquanto dedicar completamente sua própria ação a isso.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1928"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1934",
+    "paragrafo_docx": 1934,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "FORMA DA TERRA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1934,
+        "tipo": "corpo",
+        "texto": "Escolha terra e pedra como extensão de sua arte marcial. Enquanto possuir contato com solo, rocha ou outra massa mineral apropriada e puder estabelecer sua postura, você pode erguer, mover, partir, compactar e remodelar terra e pedra através de movimentos corporais firmes. Pequenas alterações sem resistência simplesmente acontecem. Escalas enormes, matéria protegida ou usos violentos exigem os Movimentos apropriados."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha terra e pedra como extensão de sua arte marcial. Enquanto possuir contato com solo, rocha ou outra massa mineral apropriada e puder estabelecer sua postura, você pode erguer, mover, partir, compactar e remodelar terra e pedra através de movimentos corporais firmes. Pequenas alterações sem resistência simplesmente acontecem. Escalas enormes, matéria protegida ou usos violentos exigem os Movimentos apropriados.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1934"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1935",
+    "paragrafo_docx": 1935,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "RAIZ DE PEDRA",
+    "requisito_literal": "Forma da Terra",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1934",
+      "titulo_requerido": "FORMA DA TERRA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1935,
+        "tipo": "corpo",
+        "texto": "Quando plantar deliberadamente os pés sobre terra ou pedra e escolher não abandonar sua posição, uma força que apenas empurraria, arrastaria ou derrubaria outra pessoa não consegue movê-lo sem primeiro destruir o terreno ou superar diretamente sua postura. Você abre mão dessa vantagem no instante em que decide se mover."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando plantar deliberadamente os pés sobre terra ou pedra e escolher não abandonar sua posição, uma força que apenas empurraria, arrastaria ou derrubaria outra pessoa não consegue movê-lo sem primeiro destruir o terreno ou superar diretamente sua postura. Você abre mão dessa vantagem no instante em que decide se mover.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1935"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1936",
+    "paragrafo_docx": 1936,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "SENTIDO SÍSMICO",
+    "requisito_literal": "Forma da Terra",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1934",
+      "titulo_requerido": "FORMA DA TERRA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1936,
+        "tipo": "corpo",
+        "texto": "Enquanto mantiver contato corporal com uma superfície sólida contínua, você percebe movimento, peso, direção e impacto através das vibrações que atravessam o terreno. Escuridão e invisibilidade não escondem aquilo que se move conectado à mesma superfície. Criaturas imóveis, suspensas no ar ou separadas do terreno podem escapar desse sentido."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Enquanto mantiver contato corporal com uma superfície sólida contínua, você percebe movimento, peso, direção e impacto através das vibrações que atravessam o terreno. Escuridão e invisibilidade não escondem aquilo que se move conectado à mesma superfície. Criaturas imóveis, suspensas no ar ou separadas do terreno podem escapar desse sentido.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1936"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1937",
+    "paragrafo_docx": 1937,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "METAL LEMBRA DA PEDRA",
+    "requisito_literal": "Forma da Terra",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1934",
+      "titulo_requerido": "FORMA DA TERRA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1937,
+        "tipo": "corpo",
+        "texto": "Você consegue perceber a matéria mineral que sobrevive dentro do metal refinado e movê-lo através das mesmas formas usadas para dobrar pedra. Metais extraordinariamente puros, mágicos, vivos ou cuja natureza tenha sido completamente transformada podem exigir outro método ou simplesmente não responder."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Você consegue perceber a matéria mineral que sobrevive dentro do metal refinado e movê-lo através das mesmas formas usadas para dobrar pedra. Metais extraordinariamente puros, mágicos, vivos ou cuja natureza tenha sido completamente transformada podem exigir outro método ou simplesmente não responder.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1937"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1938",
+    "paragrafo_docx": 1938,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "TERRA QUE SANGRA FOGO",
+    "requisito_literal": "Forma da Terra",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1934",
+      "titulo_requerido": "FORMA DA TERRA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1938,
+        "tipo": "corpo",
+        "texto": "Você consegue levar pedra ao estado de lava e conduzir esse fluxo através de suas formas. Uma pequena quantidade pode ser criada e movida com preparação. Transformar grandes extensões de terreno ou fazer isso durante perigo exige enfrentar a escala e a violência produzidas. A lava continua sendo lava: ela queima, destrói e permanece perigosa mesmo depois que você deixa de controlá-la."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Você consegue levar pedra ao estado de lava e conduzir esse fluxo através de suas formas. Uma pequena quantidade pode ser criada e movida com preparação. Transformar grandes extensões de terreno ou fazer isso durante perigo exige enfrentar a escala e a violência produzidas. A lava continua sendo lava: ela queima, destrói e permanece perigosa mesmo depois que você deixa de controlá-la.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1938"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1939",
+    "paragrafo_docx": 1939,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "FORMA DO FOGO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1939,
+        "tipo": "corpo",
+        "texto": "Escolha fogo como extensão de sua arte marcial. Sua chama nasce de respiração, chi e movimento, portanto você não precisa de uma fonte externa de fogo. Quando puder respirar e executar suas formas, seus socos, chutes, giros e outras técnicas podem produzir, lançar ou conduzir chamas. Pequenas manifestações acontecem livremente. Usá-las como violência, criar grandes incêndios ou controlar fogo sob circunstâncias perigosas exige os Movimentos apropriados."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha fogo como extensão de sua arte marcial. Sua chama nasce de respiração, chi e movimento, portanto você não precisa de uma fonte externa de fogo. Quando puder respirar e executar suas formas, seus socos, chutes, giros e outras técnicas podem produzir, lançar ou conduzir chamas. Pequenas manifestações acontecem livremente. Usá-las como violência, criar grandes incêndios ou controlar fogo sob circunstâncias perigosas exige os Movimentos apropriados.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1939"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1940",
+    "paragrafo_docx": 1940,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "PASSO DA CHAMA",
+    "requisito_literal": "Forma do Fogo",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1939",
+      "titulo_requerido": "FORMA DO FOGO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1940,
+        "tipo": "corpo",
+        "texto": "Quando liberar fogo na direção oposta ao próprio movimento, você pode usar a explosão para aumentar violentamente sua velocidade, salto ou mudança de direção. Pode atravessar uma distância que um salto comum não alcançaria ou ganhar altura impossível para uma pessoa normal. Manter voo prolongado, carregar peso excessivo ou fazer isso em local onde as chamas produzam consequências graves ainda cria perigo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando liberar fogo na direção oposta ao próprio movimento, você pode usar a explosão para aumentar violentamente sua velocidade, salto ou mudança de direção. Pode atravessar uma distância que um salto comum não alcançaria ou ganhar altura impossível para uma pessoa normal. Manter voo prolongado, carregar peso excessivo ou fazer isso em local onde as chamas produzam consequências graves ainda cria perigo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1940"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1941",
+    "paragrafo_docx": 1941,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "RELÂMPAGO ENTRE DOIS PULSOS",
+    "requisito_literal": "Forma do Fogo",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1939",
+      "titulo_requerido": "FORMA DO FOGO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1941,
+        "tipo": "corpo",
+        "texto": "Quando separar cuidadosamente suas energias internas através de respiração, calma e forma precisa, você consegue gerar relâmpago. Você não consegue fazê-lo enquanto estiver dominado por pânico, raiva descontrolada ou incapaz de completar a forma. Quando descarregar o relâmpago contra um alvo sob perigo, role+SAB. \n10+: cause violência Extrema (1d12) no ponto atingido. \n7–9: cause violência Devastadora (1d10) e escolha 1:"
+      },
+      {
+        "paragrafo_docx": 1942,
+        "tipo": "opcao",
+        "texto": "a descarga também alcança algo próximo;"
+      },
+      {
+        "paragrafo_docx": 1943,
+        "tipo": "opcao",
+        "texto": "parte da corrente atravessa seu próprio corpo;"
+      },
+      {
+        "paragrafo_docx": 1944,
+        "tipo": "opcao",
+        "texto": "sua postura fica completamente aberta depois do disparo."
+      },
+      {
+        "paragrafo_docx": 1945,
+        "tipo": "continuacao",
+        "texto": "Quando eletricidade ou relâmpago estiver prestes a atravessar seu corpo, você pode tentar recebê-lo por um ponto, conduzi-lo através de uma rota segura e expulsá-lo por outro. Desafie o Perigo+SAB.\n10+: redirecione a descarga para qualquer alvo ou superfície numa trajetória plausível.\n7–9: você consegue redirecioná-la, mas escolha 1:"
+      },
+      {
+        "paragrafo_docx": 1946,
+        "tipo": "opcao",
+        "texto": "parte dela o atinge;"
+      },
+      {
+        "paragrafo_docx": 1947,
+        "tipo": "opcao",
+        "texto": "ela sai por uma direção que você não escolheu perfeitamente;"
+      },
+      {
+        "paragrafo_docx": 1948,
+        "tipo": "opcao",
+        "texto": "alguma coisa importante entre você e a saída também recebe a descarga."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1942,
+        "texto": "a descarga também alcança algo próximo;"
+      },
+      {
+        "paragrafo_docx": 1943,
+        "texto": "parte da corrente atravessa seu próprio corpo;"
+      },
+      {
+        "paragrafo_docx": 1944,
+        "texto": "sua postura fica completamente aberta depois do disparo."
+      },
+      {
+        "paragrafo_docx": 1946,
+        "texto": "parte dela o atinge;"
+      },
+      {
+        "paragrafo_docx": 1947,
+        "texto": "ela sai por uma direção que você não escolheu perfeitamente;"
+      },
+      {
+        "paragrafo_docx": 1948,
+        "texto": "alguma coisa importante entre você e a saída também recebe a descarga."
+      }
+    ],
+    "texto_original": "Quando separar cuidadosamente suas energias internas através de respiração, calma e forma precisa, você consegue gerar relâmpago. Você não consegue fazê-lo enquanto estiver dominado por pânico, raiva descontrolada ou incapaz de completar a forma. Quando descarregar o relâmpago contra um alvo sob perigo, role+SAB. \n10+: cause violência Extrema (1d12) no ponto atingido. \n7–9: cause violência Devastadora (1d10) e escolha 1:\na descarga também alcança algo próximo;\nparte da corrente atravessa seu próprio corpo;\nsua postura fica completamente aberta depois do disparo.\nQuando eletricidade ou relâmpago estiver prestes a atravessar seu corpo, você pode tentar recebê-lo por um ponto, conduzi-lo através de uma rota segura e expulsá-lo por outro. Desafie o Perigo+SAB.\n10+: redirecione a descarga para qualquer alvo ou superfície numa trajetória plausível.\n7–9: você consegue redirecioná-la, mas escolha 1:\nparte dela o atinge;\nela sai por uma direção que você não escolheu perfeitamente;\nalguma coisa importante entre você e a saída também recebe a descarga.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1941"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1949",
+    "paragrafo_docx": 1949,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "FORMA DO AR",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1949,
+        "tipo": "corpo",
+        "texto": "Escolha o ar como extensão de sua arte marcial. Enquanto possuir liberdade para respirar e mover o corpo, você pode empurrar, puxar, girar, comprimir e redirecionar o ar próximo através de formas circulares e deslocamento. Pequenas rajadas e manipulações simples acontecem livremente. Usar o ar contra resistência significativa, mover massas enormes ou controlar uma situação perigosa exige o Movimento apropriado."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha o ar como extensão de sua arte marcial. Enquanto possuir liberdade para respirar e mover o corpo, você pode empurrar, puxar, girar, comprimir e redirecionar o ar próximo através de formas circulares e deslocamento. Pequenas rajadas e manipulações simples acontecem livremente. Usar o ar contra resistência significativa, mover massas enormes ou controlar uma situação perigosa exige o Movimento apropriado.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1949"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1950",
+    "paragrafo_docx": 1950,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "CORPO SEM PESO",
+    "requisito_literal": "Forma do Ar",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1949",
+      "titulo_requerido": "FORMA DO AR",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1950,
+        "tipo": "corpo",
+        "texto": "Quando conduzir correntes de ar ao redor do próprio corpo, você pode reduzir drasticamente seu peso aparente e sua resistência ao movimento. Você pode:"
+      },
+      {
+        "paragrafo_docx": 1951,
+        "tipo": "opcao",
+        "texto": "realizar saltos extraordinários;"
+      },
+      {
+        "paragrafo_docx": 1952,
+        "tipo": "opcao",
+        "texto": "desacelerar quedas;"
+      },
+      {
+        "paragrafo_docx": 1953,
+        "tipo": "opcao",
+        "texto": "deslizar por pequenas distâncias;"
+      },
+      {
+        "paragrafo_docx": 1954,
+        "tipo": "opcao",
+        "texto": "mover-se sobre uma almofada de ar rente ao chão;"
+      },
+      {
+        "paragrafo_docx": 1955,
+        "tipo": "opcao",
+        "texto": "mudar de direção no ar."
+      },
+      {
+        "paragrafo_docx": 1956,
+        "tipo": "continuacao",
+        "texto": "Isso não constitui voo sustentado."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1951,
+        "texto": "realizar saltos extraordinários;"
+      },
+      {
+        "paragrafo_docx": 1952,
+        "texto": "desacelerar quedas;"
+      },
+      {
+        "paragrafo_docx": 1953,
+        "texto": "deslizar por pequenas distâncias;"
+      },
+      {
+        "paragrafo_docx": 1954,
+        "texto": "mover-se sobre uma almofada de ar rente ao chão;"
+      },
+      {
+        "paragrafo_docx": 1955,
+        "texto": "mudar de direção no ar."
+      }
+    ],
+    "texto_original": "Quando conduzir correntes de ar ao redor do próprio corpo, você pode reduzir drasticamente seu peso aparente e sua resistência ao movimento. Você pode:\nrealizar saltos extraordinários;\ndesacelerar quedas;\ndeslizar por pequenas distâncias;\nmover-se sobre uma almofada de ar rente ao chão;\nmudar de direção no ar.\nIsso não constitui voo sustentado.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1950"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1957",
+    "paragrafo_docx": 1957,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "CÍRCULO DO VENTO",
+    "requisito_literal": "Forma do Ar",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1949",
+      "titulo_requerido": "FORMA DO AR",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1957,
+        "tipo": "corpo",
+        "texto": "Quando uma ameaça física em movimento entrar no alcance de suas formas — projétil, investida, queda ou objeto lançado — você pode usar o ar para desviar sua trajetória em vez de pará-la. \nQuando obtiver sucesso ao enfrentar aquela ameaça, escolha também 1:"
+      },
+      {
+        "paragrafo_docx": 1958,
+        "tipo": "opcao",
+        "texto": "faça-a passar completamente por você;"
+      },
+      {
+        "paragrafo_docx": 1959,
+        "tipo": "opcao",
+        "texto": "proteja outra pessoa próxima;"
+      },
+      {
+        "paragrafo_docx": 1960,
+        "tipo": "opcao",
+        "texto": "conduza-a para uma direção específica plausível;"
+      },
+      {
+        "paragrafo_docx": 1961,
+        "tipo": "opcao",
+        "texto": "utilize o deslocamento de ar para imediatamente mudar sua própria posição."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1958,
+        "texto": "faça-a passar completamente por você;"
+      },
+      {
+        "paragrafo_docx": 1959,
+        "texto": "proteja outra pessoa próxima;"
+      },
+      {
+        "paragrafo_docx": 1960,
+        "texto": "conduza-a para uma direção específica plausível;"
+      },
+      {
+        "paragrafo_docx": 1961,
+        "texto": "utilize o deslocamento de ar para imediatamente mudar sua própria posição."
+      }
+    ],
+    "texto_original": "Quando uma ameaça física em movimento entrar no alcance de suas formas — projétil, investida, queda ou objeto lançado — você pode usar o ar para desviar sua trajetória em vez de pará-la. \nQuando obtiver sucesso ao enfrentar aquela ameaça, escolha também 1:\nfaça-a passar completamente por você;\nproteja outra pessoa próxima;\nconduza-a para uma direção específica plausível;\nutilize o deslocamento de ar para imediatamente mudar sua própria posição.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1957"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1962",
+    "paragrafo_docx": 1962,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "VOO",
+    "requisito_literal": "Forma do Ar e Corpo Sem Peso",
+    "requisito_estruturado": {
+      "tipo": "todos",
+      "itens": [
+        {
+          "tipo": "movimento_exato",
+          "movimento_id": "movimento-classe:paragrafo-1949",
+          "titulo_requerido": "FORMA DO AR"
+        },
+        {
+          "tipo": "movimento_exato",
+          "movimento_id": "movimento-classe:paragrafo-1950",
+          "titulo_requerido": "CORPO SEM PESO"
+        }
+      ],
+      "operador_literal": "e",
+      "status": "interpretacao_literal_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1962,
+        "tipo": "corpo",
+        "texto": "Você aprendeu a sustentar seu corpo inteiramente através das correntes que produz. Enquanto puder respirar, mover-se livremente e manter sua forma, você pode voar. Carregar outra pessoa, atravessar uma tempestade, permanecer imóvel contra ventos violentos ou voar enquanto alguém tenta derrubá-lo ainda pode exigir enfrentar o perigo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Você aprendeu a sustentar seu corpo inteiramente através das correntes que produz. Enquanto puder respirar, mover-se livremente e manter sua forma, você pode voar. Carregar outra pessoa, atravessar uma tempestade, permanecer imóvel contra ventos violentos ou voar enquanto alguém tenta derrubá-lo ainda pode exigir enfrentar o perigo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1962"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1963",
+    "paragrafo_docx": 1963,
+    "grupo": "ARTISTA MARCIAL",
+    "categoria": "classe",
+    "titulo": "TÉCNICA SECRETA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1963,
+        "tipo": "corpo",
+        "texto": "Quando escolher este Movimento, dê um nome à sua Técnica Secreta, descreva como ela se manifesta e diga que preparação, abertura ou condição permite executá-la. Quando conseguir essa abertura e executar sua Técnica Secreta contra um adversário, role+DES, FOR ou SAB, conforme a sua abordagem.\n10+: o adversário sofre violência Extrema (1d12) e não compreende como a técnica funcionou. Para ele, seu segredo permanece intacto.\n7–9: o adversário sofre violência Devastadora (1d10), mas compreende o princípio da técnica e não cairá novamente no mesmo truque.\n6-: o Mestre realiza seu Movimento normalmente. O que o adversário consegue aprender sobre sua técnica depende da ficção e da consequência."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando escolher este Movimento, dê um nome à sua Técnica Secreta, descreva como ela se manifesta e diga que preparação, abertura ou condição permite executá-la. Quando conseguir essa abertura e executar sua Técnica Secreta contra um adversário, role+DES, FOR ou SAB, conforme a sua abordagem.\n10+: o adversário sofre violência Extrema (1d12) e não compreende como a técnica funcionou. Para ele, seu segredo permanece intacto.\n7–9: o adversário sofre violência Devastadora (1d10), mas compreende o princípio da técnica e não cairá novamente no mesmo truque.\n6-: o Mestre realiza seu Movimento normalmente. O que o adversário consegue aprender sobre sua técnica depende da ficção e da consequência.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1963"
+  }
+]
