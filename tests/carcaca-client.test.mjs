@@ -30,7 +30,9 @@ const fixtures={
     research_backlog:"research-backlog.json",
     research_backlog_indexes:"research-backlog-indexes.json",
     lore_index:"lore-index.json",lore_index_indexes:"lore-indexes.json",
-    lore_chronology:"lore-chronology.json",lore_review_notes:"lore-review-notes.json"}},
+    lore_chronology:"lore-chronology.json",lore_review_notes:"lore-review-notes.json",
+    lore_atlas_links:"lore-atlas-links.json",
+    lore_atlas_link_indexes:"lore-atlas-link-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -63,6 +65,15 @@ const fixtures={
     {id:"cronologia-hack:01",ano_ec:342,descricao:"Invasão kuo-toa",status:"afirmado_no_rascunho"},
     {id:"cronologia-hack:02",ano_ec:351,descricao:"Aliança caatinga e Garganta",status:"afirmado_no_rascunho"}],
     questoes_abertas:[{id:"incognita-hack:mar-de-sangue",estado:"explicitamente_em_aberto"}]},
+  "lore-atlas-links.json":[
+    {id:"ponte-lore:costa-sul-agua-demeter",entrada_lore_id:"lore-hack:demeter",
+     regiao_atlas_id:"regiao:costa-sul",pergunta_curadoria_id:"pergunta:costa-sul-agua",
+     parecer:"amplia",pagina:5,aplicar_automaticamente:false,status:"pendente_revisao_autoral"},
+    {id:"ponte-lore:costa-sul-abissais",entrada_lore_id:"lore-hack:abissais-marinhos",
+     regiao_atlas_id:"regiao:costa-sul",pergunta_curadoria_id:null,
+     parecer:"amplia",pagina:14,aplicar_automaticamente:false,status:"pendente_revisao_autoral"}],
+  "lore-atlas-link-indexes.json":{by_regiao:{"regiao:costa-sul":["ponte-lore:costa-sul-agua-demeter","ponte-lore:costa-sul-abissais"]},
+    by_pergunta:{"pergunta:costa-sul-agua":["ponte-lore:costa-sul-agua-demeter"]}},
   "lore-review-notes.json":{revisoes:[
     {id:"revisao-hack:abissal-homonimia",acao_autorizada:false},
     {id:"revisao-hack:yokai-homonimia",acao_autorizada:false}]},
@@ -854,4 +865,16 @@ test("cronologia, incógnitas e revisões não modificam cânone automaticamente
   assert.equal(chronology.questoes_abertas[0].estado,"explicitamente_em_aberto");
   assert.ok(reviews.revisoes.every(r=>r.acao_autorizada===false));
   assert.ok((await atlas.getLoreIndex()).every(e=>e.integracao==="referencia_sem_mutar_canonico"));
+});
+
+test("pontes entre manuscrito e atlas são referências editoriais sem mutação",async()=>{
+  const links=await atlas.getLoreAtlasLinks();
+  assert.equal(links.length,2);
+  assert.ok(links.every(x=>x.aplicar_automaticamente===false&&x.status==="pendente_revisao_autoral"));
+  const consult=await atlas.searchLoreAtlasLinks({regiaoId:"regiao:costa-sul",perguntaId:"pergunta:costa-sul-agua"});
+  assert.equal(consult.length,1);
+  assert.equal(consult[0].pagina,5);
+  assert.equal((await atlas.searchLoreAtlasLinks({entradaLoreId:"lore-hack:abissais-marinhos"})).length,1);
+  assert.equal((await atlas.getLoreAtlasLinkIndexes()).by_pergunta["pergunta:costa-sul-agua"].length,1);
+  assert.equal((await atlas.searchLoreAtlasLinks({parecer:"nao_encontrado"})).length,0);
 });

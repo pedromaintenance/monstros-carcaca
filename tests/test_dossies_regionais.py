@@ -112,5 +112,18 @@ class RegionalDossiers(unittest.TestCase):
         self.assertEqual(len(self.artifacts["settlements.json"]),3)
         self.assertEqual(len(self.artifacts["creatures.json"]),7)
 
+    def test_manuscript_atlas_bridges_preserve_granularity(self):
+        links=self.artifacts["lore-atlas-links.json"]
+        self.assertEqual(len(links),14)
+        self.assertEqual(self.artifacts["manifest.json"]["total_pontes_lore_atlas"],14)
+        self.assertTrue(all(not x["aplicar_automaticamente"]
+                            and x["status"]=="pendente_revisao_autoral" for x in links))
+        ids={e["id"]:e for e in self.artifacts["lore-index.json"]}
+        for bridge in links:
+            self.assertIn(bridge["pagina"],ids[bridge["entrada_lore_id"]]["paginas"])
+        partially=[x for x in links if x["pergunta_curadoria_id"]=="pergunta:costa-sul-migracao"]
+        self.assertEqual(len(partially),1)
+        self.assertEqual(partially[0]["parecer"],"resposta_parcial_para_grupo")
+
 if __name__=="__main__":
     unittest.main()
