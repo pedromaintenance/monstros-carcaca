@@ -28,7 +28,9 @@ const fixtures={
     regional_dossiers:"regional-dossiers.json",
     regional_dossier_indexes:"regional-dossier-indexes.json",
     research_backlog:"research-backlog.json",
-    research_backlog_indexes:"research-backlog-indexes.json"}},
+    research_backlog_indexes:"research-backlog-indexes.json",
+    lore_index:"lore-index.json",lore_index_indexes:"lore-indexes.json",
+    lore_chronology:"lore-chronology.json",lore_review_notes:"lore-review-notes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -41,6 +43,29 @@ const fixtures={
   ],
   "creatures.json":[{id:"carcaca:criatura:joro",dungeon_world:{instinto:"Testar visitantes"}}],
   "regions.json":[{id:"regiao:caatinga",lugares:[]},{id:"regiao:costa-sul",lugares:[]},{id:"regiao:eldroth",lugares:[]}],
+  "lore-index.json":[
+    {id:"lore-hack:kuo-toa",tipo:"povo",nome:"Kuo-Toa",
+     descricao:"Povo de cavernas e cidades marinhas, com ritos associados a Daegon",
+     aliases:["kuotoa"],paginas:[5,14],evidencia:"afirmado_no_rascunho",
+     integracao:"referencia_sem_mutar_canonico"},
+    {id:"lore-hack:abissais-marinhos",tipo:"povo",nome:"Abissais marinhos",
+     descricao:"Povo anfíbio, distinto dos demônios do Abismo",
+     aliases:["Abissais"],paginas:[14,15],evidencia:"afirmado_no_rascunho",
+     integracao:"referencia_sem_mutar_canonico"},
+    {id:"lore-hack:demeter",tipo:"divindade",nome:"Deméter",
+     descricao:"Deusa de Portomonte",aliases:["Demeter"],paginas:[5,23],
+     evidencia:"afirmado_no_rascunho",integracao:"referencia_sem_mutar_canonico"}
+  ],
+  "lore-indexes.json":{by_tipo:{povo:["lore-hack:abissais-marinhos","lore-hack:kuo-toa"]},
+    by_pagina:{"5":["lore-hack:kuo-toa","lore-hack:demeter"]},
+    by_token:{abissais:["lore-hack:abissais-marinhos"]}},
+  "lore-chronology.json":{eventos:[
+    {id:"cronologia-hack:01",ano_ec:342,descricao:"Invasão kuo-toa",status:"afirmado_no_rascunho"},
+    {id:"cronologia-hack:02",ano_ec:351,descricao:"Aliança caatinga e Garganta",status:"afirmado_no_rascunho"}],
+    questoes_abertas:[{id:"incognita-hack:mar-de-sangue",estado:"explicitamente_em_aberto"}]},
+  "lore-review-notes.json":{revisoes:[
+    {id:"revisao-hack:abissal-homonimia",acao_autorizada:false},
+    {id:"revisao-hack:yokai-homonimia",acao_autorizada:false}]},
   "regional-dossiers.json":[
     {
       "id": "dossie-regional:caatinga",
@@ -808,4 +833,25 @@ test("inspeção de pesquisa não resolve perguntas ou libera cânone por conta 
   assert.equal(local.total_na_visao,2);
   assert.throws(()=>reviewResearchBacklog([...rows,rows[0]]),TypeError);
   assert.throws(()=>reviewResearchBacklog([{...rows[0],depende_de_perguntas:["pergunta:inexistente"]}]),RangeError);
+});
+
+test("busca da lore do manuscrito preserva páginas e separa taxonomias",async()=>{
+  const material=await atlas.searchLore({query:"AbÍSSAIS",tipo:"povo"});
+  assert.equal(material.length,1);
+  assert.equal(material[0].id,"lore-hack:abissais-marinhos");
+  assert.deepEqual(material[0].paginas,[14,15]);
+  assert.equal((await atlas.searchLore({query:"kuotoa",pagina:14})).length,1);
+  assert.equal((await atlas.searchLore({tipo:"divindade",pagina:5})).length,1);
+  assert.equal((await atlas.getLoreIndex()).length,3);
+  assert.equal((await atlas.getLoreIndexIndexes()).by_tipo.povo.length,2);
+  assert.equal((await atlas.getLoreEntity("lore-hack:kuo-toa")).nome,"Kuo-Toa");
+  assert.equal(await atlas.getLoreEntity("lore-hack:nada"),null);
+});
+test("cronologia, incógnitas e revisões não modificam cânone automaticamente",async()=>{
+  const chronology=await atlas.getLoreChronology();
+  const reviews=await atlas.getLoreReviewNotes();
+  assert.deepEqual(chronology.eventos.map(x=>x.ano_ec),[342,351]);
+  assert.equal(chronology.questoes_abertas[0].estado,"explicitamente_em_aberto");
+  assert.ok(reviews.revisoes.every(r=>r.acao_autorizada===false));
+  assert.ok((await atlas.getLoreIndex()).every(e=>e.integracao==="referencia_sem_mutar_canonico"));
 });

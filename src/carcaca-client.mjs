@@ -24,6 +24,22 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getCatalog(){return byKey("catalog");}
   async function getIndexes(){return byKey("indexes");}
   async function getRegions(){return byKey("regions");}
+  async function getLoreIndex(){return byKey("lore_index");}
+  async function getLoreIndexIndexes(){return byKey("lore_index_indexes");}
+  async function getLoreChronology(){return byKey("lore_chronology");}
+  async function getLoreReviewNotes(){return byKey("lore_review_notes");}
+  async function getLoreEntity(id){
+    if(typeof id!=="string"||!id.startsWith("lore-hack:"))return null;
+    return (await getLoreIndex()).find(e=>e.id===id)??null;
+  }
+  async function searchLore({query,tipo,pagina}={}){
+    const norm=x=>String(x??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const text=norm(query).trim();
+    return (await getLoreIndex()).filter(entry=>
+      (!tipo||entry.tipo===tipo)&&
+      (pagina==null||entry.paginas.includes(Number(pagina)))&&
+      (!text||norm([entry.nome,entry.descricao,...entry.aliases].join(" ")).includes(text)));
+  }
   async function getRegionalDossiers(){return byKey("regional_dossiers");}
   async function getResearchBacklog(){return byKey("research_backlog");}
   async function getResearchBacklogIndexes(){return byKey("research_backlog_indexes");}
@@ -182,6 +198,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
     ).slice(offset,offset+limit);
   }
   return {getManifest,getCatalog,getIndexes,getRegions,
+          getLoreIndex,getLoreIndexIndexes,getLoreChronology,getLoreReviewNotes,
+          getLoreEntity,searchLore,
           getRegionalDossiers,getRegionalDossier,getRegionalDossierIndexes,
           getResearchBacklog,getResearchBacklogItem,getResearchBacklogIndexes,
           searchResearchBacklog,

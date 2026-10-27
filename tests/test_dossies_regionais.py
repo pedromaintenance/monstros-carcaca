@@ -85,5 +85,32 @@ class RegionalDossiers(unittest.TestCase):
              for reg in self.rows},
             {reg:2 for reg in self.rows})
 
+    def test_manuscript_is_indexed_without_promoting_canon(self):
+        compiled=self.artifacts
+        self.assertEqual(compiled["manifest.json"]["total_entradas_lore_manuscrito"],100)
+        self.assertEqual(compiled["manifest.json"]["total_paginas_lore_manuscrito"],24)
+        self.assertEqual(compiled["manifest.json"]["total_eventos_cronologia_manuscrito"],18)
+        self.assertEqual(compiled["manifest.json"]["total_incognitas_manuscrito"],7)
+        self.assertEqual(compiled["manifest.json"]["total_pontos_revisao_manuscrito"],7)
+        index=compiled["lore-index.json"]
+        self.assertEqual(len(index),100)
+        self.assertTrue(all(x["integracao"]=="referencia_sem_mutar_canonico"
+                            and x["paginas"] for x in index))
+        self.assertEqual({x["tipo"] for x in index},
+                         {"geografia","regiao","lugar","plano","povo","faccao","personagem","divindade","conceito"})
+        self.assertEqual(len(compiled["lore-review-notes.json"]["revisoes"]),7)
+
+    def test_manuscript_search_keys_and_history_are_distinct(self):
+        index=self.artifacts["lore-indexes.json"]
+        self.assertIn("povo",index["by_tipo"])
+        self.assertIn("14",index["by_pagina"])
+        self.assertIn("kuo",index["by_token"])
+        self.assertEqual(sorted(set(self.artifacts["lore-indexes.json"]["by_tipo"]["povo"])),
+                         self.artifacts["lore-indexes.json"]["by_tipo"]["povo"])
+        events=self.artifacts["lore-chronology.json"]["eventos"]
+        self.assertTrue(all(e["uso"]=="nao_promover_para_timeline_canonica_sem_revisao" for e in events))
+        self.assertEqual(len(self.artifacts["settlements.json"]),3)
+        self.assertEqual(len(self.artifacts["creatures.json"]),7)
+
 if __name__=="__main__":
     unittest.main()
