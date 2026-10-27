@@ -1,0 +1,237 @@
+{
+  "schema_version": "0.1.0",
+  "id": "regras-hack:carcaca-dw-nucleo",
+  "fonte": "Hack Carcaça Dungeon World(1).docx",
+  "fonte_sha256": "b53d1d5a057e8f6cba8a5d5ccd70747df3ce94d07ff2e2ffb9031368ea773b3d",
+  "estado": "extracao_estruturada_do_manuscrito_nao_homologada",
+  "aplicacao_canonica": false,
+  "motor": {
+    "pagina": 26,
+    "rolagem": "2d6 + modificador indicado",
+    "resultado_10_mais": {
+      "minimo": 10,
+      "descricao": "Consegue aquilo que pretendia nas melhores condições previstas pelo Movimento."
+    },
+    "resultado_7_9": {
+      "minimo": 7,
+      "maximo": 9,
+      "descricao": "Há custo, risco, escolha difícil, efeito reduzido ou consequência."
+    },
+    "resultado_6_menos": {
+      "maximo": 6,
+      "descricao": "O Mestre realiza um Movimento; não equivale necessariamente a incompetência."
+    },
+    "principio": "Comece e termine na ficção; role apenas se a situação aciona um Movimento ou se há incerteza, oposição, perigo ou consequência relevante."
+  },
+  "personagens": {
+    "paginas": [
+      27,
+      29
+    ],
+    "nivel_inicial": 1,
+    "atributos": [
+      "FOR",
+      "DES",
+      "CON",
+      "INT",
+      "SAB",
+      "CAR"
+    ],
+    "valores_iniciais_para_distribuir": [
+      16,
+      15,
+      13,
+      12,
+      9,
+      8
+    ],
+    "modificadores": [
+      {
+        "min": 3,
+        "max": 8,
+        "valor": -1
+      },
+      {
+        "min": 9,
+        "max": 12,
+        "valor": 0
+      },
+      {
+        "min": 13,
+        "max": 15,
+        "valor": 1
+      },
+      {
+        "min": 16,
+        "max": 17,
+        "valor": 2
+      },
+      {
+        "min": 18,
+        "max": 18,
+        "valor": 3
+      }
+    ],
+    "movimentos_proprios_nivel_1": 5,
+    "origens_movimentos": [
+      "raça",
+      "classe",
+      "antecedente"
+    ],
+    "distribuicao_numerica_por_origem": null,
+    "nota_distribuicao": "O trecho de criação estabelece cinco movimentos próprios no nível 1, mas não fixa explicitamente neste trecho quantos pertencem a cada origem.",
+    "pv_maximos": {
+      "pagina": 29,
+      "expressao_literal": "20 + (5 × modificador de CON)",
+      "constante": 20,
+      "multiplicador_mod_con": 5,
+      "exemplos": [
+        {
+          "mod_con": -1,
+          "pv": 15
+        },
+        {
+          "mod_con": 0,
+          "pv": 20
+        },
+        {
+          "mod_con": 1,
+          "pv": 25
+        },
+        {
+          "mod_con": 2,
+          "pv": 30
+        },
+        {
+          "mod_con": 3,
+          "pv": 35
+        }
+      ]
+    },
+    "carga": {
+      "pagina": 28,
+      "expressao_literal": "8 + seu modificador de FOR",
+      "constante": 8,
+      "multiplicador_mod_for": 1
+    }
+  },
+  "combate": {
+    "paginas": [
+      30,
+      31
+    ],
+    "dano_por_periculosidade": [
+      {
+        "dado": "1d4",
+        "categoria": "pouco perigoso"
+      },
+      {
+        "dado": "1d6",
+        "categoria": "violência comum de combate"
+      },
+      {
+        "dado": "1d8",
+        "categoria": "muito perigoso"
+      },
+      {
+        "dado": "1d10",
+        "categoria": "devastador"
+      },
+      {
+        "dado": "1d12",
+        "categoria": "periculosidade extrema"
+      }
+    ],
+    "dano_presupoe_possibilidade_ficcional": true,
+    "armaduras": [
+      {
+        "categoria": "couro",
+        "valor": 1
+      },
+      {
+        "categoria": "cota de malha",
+        "valor": 1
+      },
+      {
+        "categoria": "escamas",
+        "valor": 2
+      },
+      {
+        "categoria": "placas",
+        "valor": 3
+      },
+      {
+        "categoria": "escudo",
+        "valor": 1,
+        "adicional": true,
+        "condicao": "Enquanto puder ser utilizado contra o ataque."
+      }
+    ],
+    "armadura_dependente_da_ficcao": true
+  },
+  "debilidades": {
+    "pagina": 32,
+    "penalidade_modificador": -1,
+    "altera_valor_bruto": false,
+    "altera_pv_maximos_por_si_so": false,
+    "acumula_mesma_debilidade": false,
+    "tipos": [
+      {
+        "nome": "FRACO",
+        "atributo": "FOR"
+      },
+      {
+        "nome": "TRÊMULO",
+        "atributo": "DES"
+      },
+      {
+        "nome": "DOENTE",
+        "atributo": "CON"
+      },
+      {
+        "nome": "ATORDOADO",
+        "atributo": "INT"
+      },
+      {
+        "nome": "CONFUSO",
+        "atributo": "SAB"
+      },
+      {
+        "nome": "MARCADO",
+        "atributo": "CAR"
+      }
+    ]
+  },
+  "recuperacao": {
+    "paginas": [
+      32,
+      33,
+      39
+    ],
+    "acampamento_pv": "metade dos PV máximos após algumas horas de sono ininterrupto",
+    "repouso_confortavel_seguro": {
+      "dias_para_pv_todos": 1,
+      "dias_por_debilidade": 3,
+      "dias_por_debilidade_com_curandeiro": 2
+    },
+    "remove_automaticamente_consequencias_ficcionais_graves": false
+  },
+  "evolucao": {
+    "pagina": 33,
+    "nivel_inicial": 1,
+    "limiar_xp": {
+      "literal": "Nível atual + 7",
+      "constante": 7
+    },
+    "custo_xp_avancar": {
+      "literal": "Nível anterior + 7",
+      "constante": 7
+    },
+    "ganho_nivel": 1,
+    "ganho_pontos_atributo": 1,
+    "atributo_maximo": 18,
+    "novos_movimentos_classe_por_nivel": 1,
+    "recalcular_pv_ao_subir_con_se_mudar_modificador": true,
+    "arvores_de_classe_fixas": false
+  }
+}
