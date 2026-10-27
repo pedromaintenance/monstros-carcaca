@@ -55,7 +55,9 @@ const fixtures={
     hack_warrior_movements:"hack-warrior-movements.json",
     hack_warrior_movement_indexes:"hack-warrior-movement-indexes.json",
     hack_barbarian_movements:"hack-barbarian-movements.json",
-    hack_barbarian_movement_indexes:"hack-barbarian-movement-indexes.json"}},
+    hack_barbarian_movement_indexes:"hack-barbarian-movement-indexes.json",
+    hack_hunter_movements:"hack-hunter-movements.json",
+    hack_hunter_movement_indexes:"hack-hunter-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -106,6 +108,34 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-hunter-movements.json":[
+    {id:"movimento-classe:paragrafo-1484",titulo:"CAÇADOR DE MONSTROS",grupo:"CAÇADOR",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],texto_original:"Saiba reconhecer monstros.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1492",titulo:"BARRIGA DE SMAUG",grupo:"CAÇADOR",
+     requisito_literal:"Caçador de Monstros ou Um movimento que tenha revelado uma vulnerabilidade",
+     requisito_estruturado:{tipo:"qualquer",itens:[
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1484"},
+       {tipo:"condicao_ficcional",texto_literal:"Um movimento que tenha revelado uma vulnerabilidade"}]},
+     opcoes:[{paragrafo_docx:1493,texto:"Explora uma fraqueza."}],
+     texto_original:"Quando encontrar a vulnerabilidade.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1520",titulo:"NENHUM MUNDO É LONGE DEMAIS",grupo:"CAÇADOR",
+     requisito_literal:"Caminhante dos Horizontes e Marca do Caçador",
+     requisito_estruturado:{tipo:"todos",itens:[
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1518"},
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1461"}]},
+     opcoes:[],texto_original:"Siga qualquer trilha.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1535",titulo:"OLHO DA PRESA",grupo:"CAÇADOR",
+     requisito_literal:"Flecha de Sangue ou Marca do Caçador",
+     requisito_estruturado:{tipo:"qualquer",itens:[
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1534"},
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1461"}]},
+     opcoes:[],texto_original:"Rastreie sua presa.",aplicacao_canonica:false}
+  ],
+  "hack-hunter-movement-indexes.json":{
+    by_requisito_tipo:{qualquer:["movimento-classe:paragrafo-1492","movimento-classe:paragrafo-1535"],
+                       todos:["movimento-classe:paragrafo-1520"]},
+    by_condicao_ficcional:{sim:["movimento-classe:paragrafo-1492"]}
+  },
   "hack-barbarian-movements.json":[
     {id:"movimento-classe:paragrafo-1293",titulo:"FÚRIA",categoria:"classe",
      requisito_literal:null,requisito_estruturado:null,paragrafo_docx:1293,
@@ -1222,4 +1252,43 @@ test("Bárbaro integral preserva opções e dependência conjuntiva sem autoriza
     ()=>atlas.getBarbarianRequirementPreview(req,{movimentosPossuidos:"errado"}),
     TypeError
   );
+});
+
+test("Caçador distingue REQUER E, OU e alternativas ficcionais sem homologar aquisição",async()=>{
+  const todos=await atlas.getHunterMovements();
+  assert.equal(todos.length,4);
+  assert.equal((await atlas.searchHunterMovements({comRequer:true})).length,3);
+  assert.equal((await atlas.searchHunterMovements({tipoRequisito:"todos"}))[0].titulo,
+               "NENHUM MUNDO É LONGE DEMAIS");
+  assert.equal((await atlas.searchHunterMovements({tipoRequisito:"qualquer"})).length,2);
+  assert.equal((await atlas.searchHunterMovements({comCondicaoFiccional:true}))[0].titulo,"BARRIGA DE SMAUG");
+  assert.equal((await atlas.searchHunterMovements({comCondicaoFiccional:false})).length,3);
+  assert.equal((await atlas.searchHunterMovements({comOpcoes:true}))[0].titulo,"BARRIGA DE SMAUG");
+  assert.equal((await atlas.getHunterMovement("movimento-classe:paragrafo-1484")).titulo,"CAÇADOR DE MONSTROS");
+  assert.equal(await atlas.getHunterMovement("movimento-classe:paragrafo-9999"),null);
+  assert.equal((await atlas.getHunterMovementIndexes()).by_requisito_tipo.qualquer.length,2);
+  let p=await atlas.getHunterRequirementPreview("movimento-classe:paragrafo-1492");
+  assert.equal(p.operador,"qualquer");
+  assert.equal(p.verificacao_estrutural,"alternativa_ficcional_pendente");
+  assert.equal(p.componentes[1].comprovacao_ficcional,"pendente_avaliacao");
+  assert.equal(p.habilitado_para_compra,null);
+  let comMonstro=await atlas.getHunterRequirementPreview("movimento-classe:paragrafo-1492",{
+    movimentosPossuidos:["movimento-classe:paragrafo-1484"]});
+  assert.equal(comMonstro.verificacao_estrutural,"alternativa_de_movimento_presente");
+  assert.equal(comMonstro.habilitado_para_compra,null);
+  let parcial=await atlas.getHunterRequirementPreview("movimento-classe:paragrafo-1520",{
+    movimentosPossuidos:["movimento-classe:paragrafo-1518"]});
+  assert.equal(parcial.verificacao_estrutural,"componentes_ausentes_ou_nao_comprovados");
+  let completo=await atlas.getHunterRequirementPreview("movimento-classe:paragrafo-1520",{
+    movimentosPossuidos:["movimento-classe:paragrafo-1518","movimento-classe:paragrafo-1461"]});
+  assert.equal(completo.verificacao_estrutural,"componentes_identificados_presentes");
+  assert.equal(completo.habilitado_para_compra,null);
+  assert.equal(completo.necessita_avaliacao_do_mestre,true);
+  let alternativo=await atlas.getHunterRequirementPreview("movimento-classe:paragrafo-1535",{
+    movimentosPossuidos:["movimento-classe:paragrafo-1461"]});
+  assert.equal(alternativo.verificacao_estrutural,"alternativa_de_movimento_presente");
+  assert.equal(alternativo.aplicacao_canonica,false);
+  assert.equal(await atlas.getHunterRequirementPreview("ausente"),null);
+  await assert.rejects(()=>atlas.getHunterRequirementPreview("movimento-classe:paragrafo-1492",{
+    movimentosPossuidos: "não é um array"}),TypeError);
 });
