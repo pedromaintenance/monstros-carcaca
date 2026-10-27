@@ -1,0 +1,559 @@
+{
+  "schema_version": "0.1.0",
+  "fonte_id": "fonte:hack-carcaca-dungeon-world-rascunho",
+  "descricao": "Amostra estruturada e conferida diretamente nos parágrafos do DOCX original. O efeito completo não foi revisado; REQUER é dependência obrigatória, mesmo se movimento for concedido por outro. Número de parágrafo é índice zero-based, não página.",
+  "registro_tipo": "movimentos_conferidos_parcialmente",
+  "movimentos": [
+    {
+      "id": "movimento-revisado:paragrafo-827",
+      "paragrafo_docx": 827,
+      "grupo": "HUMANOS",
+      "categoria": "povo",
+      "titulo": "FILHO DO RIO ANCESTRAL",
+      "requisito_literal": null,
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-829",
+      "paragrafo_docx": 829,
+      "grupo": "HUMANOS",
+      "categoria": "povo",
+      "titulo": "PORTOMONTENSE",
+      "requisito_literal": null,
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-835",
+      "paragrafo_docx": 835,
+      "grupo": "ORCS DA CAATINGA",
+      "categoria": "povo",
+      "titulo": "GUERRA DE NOVE ANOS",
+      "requisito_literal": null,
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-845",
+      "paragrafo_docx": 845,
+      "grupo": "ANÕES DE THARGRID",
+      "categoria": "povo",
+      "titulo": "OLHOS DE PEDRA",
+      "requisito_literal": null,
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-849",
+      "paragrafo_docx": 849,
+      "grupo": "ANÕES DE THARGRID",
+      "categoria": "povo",
+      "titulo": "ENGENHEIRO SOB A MONTANHA",
+      "requisito_literal": null,
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-884",
+      "paragrafo_docx": 884,
+      "grupo": "DRACONATOS DE THARGRID",
+      "categoria": "povo",
+      "titulo": "O QUE FOI JURADO?",
+      "requisito_literal": null,
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-999",
+      "paragrafo_docx": 999,
+      "grupo": "ELFOS YOKAI",
+      "categoria": "povo",
+      "titulo": "LUZ",
+      "requisito_literal": null,
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1120",
+      "paragrafo_docx": 1120,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ARMA APERFEIÇOADA",
+      "requisito_literal": "Arma Favorita",
+      "paginas_candidatas": [
+        69
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1121",
+      "paragrafo_docx": 1121,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "FERREIRO DE GUERRA",
+      "requisito_literal": "Arma Favorita",
+      "paginas_candidatas": [
+        69
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1131",
+      "paragrafo_docx": 1131,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MAU OLHADO",
+      "requisito_literal": "Vendo Vermelho",
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1132",
+      "paragrafo_docx": 1132,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ATRAVÉS DOS OLHOS DA MORTE",
+      "requisito_literal": "Vendo Vermelho",
+      "paginas_candidatas": [
+        70
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1133",
+      "paragrafo_docx": 1133,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "GUERREIRO SUPERIOR",
+      "requisito_literal": "Mestre de Batalha",
+      "paginas_candidatas": [
+        70
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1140",
+      "paragrafo_docx": 1140,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MENTE TÁTICA",
+      "requisito_literal": "Segundo Fôlego",
+      "paginas_candidatas": [
+        70
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1144",
+      "paragrafo_docx": 1144,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MESTRIA TÁTICA",
+      "requisito_literal": "Golpe de Controle",
+      "paginas_candidatas": [
+        71
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1198",
+      "paragrafo_docx": 1198,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ESCUDO RÚNICO",
+      "requisito_literal": "Gravador de Runas",
+      "paginas_candidatas": [
+        73
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1221",
+      "paragrafo_docx": 1221,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "AVATAR DO ECO",
+      "requisito_literal": "Manifestar Eco",
+      "paginas_candidatas": [
+        76
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1320",
+      "paragrafo_docx": 1320,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FOME INDESTRUTÍVEL",
+      "requisito_literal": "Apetites Hercúleos",
+      "paginas_candidatas": [
+        81
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1330",
+      "paragrafo_docx": 1330,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FRENESI",
+      "requisito_literal": "Fúria",
+      "paginas_candidatas": [
+        82
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1342",
+      "paragrafo_docx": 1342,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "GOLPE BRUTAL APRIMORADO",
+      "requisito_literal": "Golpe Brutal",
+      "paginas_candidatas": [
+        83
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1359",
+      "paragrafo_docx": 1359,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "CORAÇÃO SELVAGEM",
+      "requisito_literal": "Fúria",
+      "paginas_candidatas": [
+        84
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1379",
+      "paragrafo_docx": 1379,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "ESCUDO DOS ANCESTRAIS",
+      "requisito_literal": "Os Ancestrais Lutam Comigo",
+      "paginas_candidatas": [
+        84
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1406",
+      "paragrafo_docx": 1406,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "ESCUDO DA TEMPESTADE",
+      "requisito_literal": "Arauto da Tempestade",
+      "paginas_candidatas": [
+        87
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1428",
+      "paragrafo_docx": 1428,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FOCO FANÁTICO",
+      "requisito_literal": "Fúria Divina",
+      "paginas_candidatas": [
+        88
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1473",
+      "paragrafo_docx": 1473,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "SUPERIORIDADE DO CAÇADOR",
+      "requisito_literal": "Marca do Caçador",
+      "paginas_candidatas": [
+        90
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1481",
+      "paragrafo_docx": 1481,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "OBSERVADOR",
+      "requisito_literal": "Caçar e Rastrear",
+      "paginas_candidatas": [
+        90
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1515",
+      "paragrafo_docx": 1515,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "ALIADO ANTINATURAL",
+      "requisito_literal": "Companheiro Animal",
+      "paginas_candidatas": [
+        94
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1520",
+      "paragrafo_docx": 1520,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "NENHUM MUNDO É LONGE DEMAIS",
+      "requisito_literal": "Caminhante dos Horizontes e Marca do Caçador",
+      "paginas_candidatas": [
+        94
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1633",
+      "paragrafo_docx": 1633,
+      "grupo": "LADINO",
+      "categoria": "classe",
+      "titulo": "LADRÃO DE FEITIÇOS",
+      "requisito_literal": "Magia Roubada",
+      "paginas_candidatas": [
+        101
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1634",
+      "paragrafo_docx": 1634,
+      "grupo": "LADINO",
+      "categoria": "classe",
+      "titulo": "LARÁPIO FANTASMAGÓRICO",
+      "requisito_literal": "Ladrão de Feitiços",
+      "paginas_candidatas": [
+        101
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1821",
+      "paragrafo_docx": 1821,
+      "grupo": "BARDO",
+      "categoria": "classe",
+      "titulo": "A DANÇA DAS COISAS",
+      "requisito_literal": "Canção da Criação",
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-1843",
+      "paragrafo_docx": 1843,
+      "grupo": "BARDO",
+      "categoria": "classe",
+      "titulo": "A CANÇÃO QUE FEZ O MUNDO",
+      "requisito_literal": "Arte Arcana e dois outros Movimentos de Bardo",
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-2736",
+      "paragrafo_docx": 2736,
+      "grupo": "MERCENÁRIO",
+      "categoria": "classe",
+      "titulo": "CAPITÃO",
+      "requisito_literal": null,
+      "paginas_candidatas": [
+        176
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-2801",
+      "paragrafo_docx": 2801,
+      "grupo": "MERCENÁRIO",
+      "categoria": "classe",
+      "titulo": "O NAVIO É O MAIS IMPORTANTE",
+      "requisito_literal": "Capitão",
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-2802",
+      "paragrafo_docx": 2802,
+      "grupo": "MERCENÁRIO",
+      "categoria": "classe",
+      "titulo": "SAQUE ORGANIZADO",
+      "requisito_literal": "Abordagem",
+      "paginas_candidatas": [
+        180
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-2812",
+      "paragrafo_docx": 2812,
+      "grupo": "ESCRIBA YOKAI",
+      "categoria": "classe",
+      "titulo": "PALAVRA QUE DELIMITA",
+      "requisito_literal": null,
+      "paginas_candidatas": [
+        180
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-2813",
+      "paragrafo_docx": 2813,
+      "grupo": "ESCRIBA YOKAI",
+      "categoria": "classe",
+      "titulo": "PALAVRA QUE PROÍBE",
+      "requisito_literal": null,
+      "paginas_candidatas": [
+        180
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-2814",
+      "paragrafo_docx": 2814,
+      "grupo": "ESCRIBA YOKAI",
+      "categoria": "classe",
+      "titulo": "PALAVRA QUE APAGA",
+      "requisito_literal": null,
+      "paginas_candidatas": [
+        180
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-2816",
+      "paragrafo_docx": 2816,
+      "grupo": "NOBRE",
+      "categoria": "classe",
+      "titulo": "MEU NOME ABRE PORTAS",
+      "requisito_literal": null,
+      "paginas_candidatas": [],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-2818",
+      "paragrafo_docx": 2818,
+      "grupo": "NOBRE",
+      "categoria": "classe",
+      "titulo": "FAVOR POLÍTICO",
+      "requisito_literal": null,
+      "paginas_candidatas": [
+        180
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-2820",
+      "paragrafo_docx": 2820,
+      "grupo": "ARQUEÓLOGO",
+      "categoria": "classe",
+      "titulo": "CAMADAS",
+      "requisito_literal": null,
+      "paginas_candidatas": [
+        180
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "movimento-revisado:paragrafo-2821",
+      "paragrafo_docx": 2821,
+      "grupo": "ARQUEÓLOGO",
+      "categoria": "classe",
+      "titulo": "NÃO TOQUE NISSO",
+      "requisito_literal": null,
+      "paginas_candidatas": [
+        162,
+        181
+      ],
+      "estado": "titulo_e_requisito_conferidos_no_docx",
+      "efeito_revisado": false,
+      "aplicacao_canonica": false
+    }
+  ]
+}
