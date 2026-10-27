@@ -1,32 +1,89 @@
 {
   "by_tipo": {
     "conceito": [
+      "lore-hack:agricultura-hobbit",
       "lore-hack:ateismo-arcano",
+      "lore-hack:cantos-sereias",
+      "lore-hack:conhecimento-gnomico",
+      "lore-hack:culto-golzdov",
+      "lore-hack:culto-rainha",
+      "lore-hack:diplomacia-abissal",
       "lore-hack:direito-de-nomear",
+      "lore-hack:divisao-druidas-rangers",
+      "lore-hack:ecologia-de-thargrid",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:fronteira-marinha",
+      "lore-hack:jornada-tabaxi",
+      "lore-hack:juramentos-feericos",
       "lore-hack:kanji-de-poder",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:linguagens-yokai",
       "lore-hack:manutencao-resistencia",
+      "lore-hack:mosteiros-tortles",
       "lore-hack:mudanca-oceano",
+      "lore-hack:nao-centralizacao-tritoes",
       "lore-hack:natureza-demoniaca",
       "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico",
+      "lore-hack:rede-clandestina-hobbit",
+      "lore-hack:rios-fronteiras-tritoes",
+      "lore-hack:sombra-em-eldroth",
+      "lore-hack:teocracia-kuotoa",
       "lore-hack:teologia-plural"
     ],
     "divindade": [
       "lore-hack:annam",
+      "lore-hack:anubis",
+      "lore-hack:apolo",
+      "lore-hack:artemis",
+      "lore-hack:atena",
       "lore-hack:bahamut",
       "lore-hack:bastet",
+      "lore-hack:berronar-truesilver",
+      "lore-hack:boccob",
+      "lore-hack:clangeddin-silverbeard",
+      "lore-hack:corellon-larethian",
       "lore-hack:daegon",
       "lore-hack:demeter",
+      "lore-hack:diancastra",
+      "lore-hack:dumathoin",
       "lore-hack:eadro",
+      "lore-hack:freya",
       "lore-hack:garl-glittergold",
+      "lore-hack:grolantor",
+      "lore-hack:hades",
+      "lore-hack:hecate",
+      "lore-hack:heimdall",
+      "lore-hack:hermes",
+      "lore-hack:hiatea",
+      "lore-hack:horus",
+      "lore-hack:iallanis",
+      "lore-hack:isis",
       "lore-hack:istus",
+      "lore-hack:memnor",
       "lore-hack:moradin",
+      "lore-hack:njord",
+      "lore-hack:odin",
+      "lore-hack:osiris",
       "lore-hack:pelor",
+      "lore-hack:poseidon",
+      "lore-hack:ptah",
+      "lore-hack:ra",
+      "lore-hack:rillifane-rallathil",
       "lore-hack:sashelas",
       "lore-hack:sehanine",
       "lore-hack:selene",
+      "lore-hack:set",
+      "lore-hack:skoraeus",
+      "lore-hack:sobek",
+      "lore-hack:stronmaus",
+      "lore-hack:surtur",
+      "lore-hack:thor",
+      "lore-hack:thoth",
+      "lore-hack:thrym",
       "lore-hack:tiamat",
+      "lore-hack:tyr",
+      "lore-hack:vergadain",
       "lore-hack:yolskaariin",
       "lore-hack:yondalla"
     ],
@@ -126,10 +183,14 @@
     ],
     "11": [
       "lore-hack:carcaca",
+      "lore-hack:culto-golzdov",
       "lore-hack:direito-de-nomear",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:drakport",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:golzdov",
       "lore-hack:ironwood",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:mar-de-sangue",
       "lore-hack:portomonte",
       "lore-hack:rangers-ironwood",
@@ -143,35 +204,48 @@
       "lore-hack:caatinga",
       "lore-hack:carcaca",
       "lore-hack:costa-sul",
+      "lore-hack:culto-golzdov",
       "lore-hack:demeter",
+      "lore-hack:diplomacia-abissal",
+      "lore-hack:divisao-druidas-rangers",
+      "lore-hack:ecologia-de-thargrid",
       "lore-hack:eldroth",
       "lore-hack:garganta",
       "lore-hack:gigantes-thargrid",
       "lore-hack:golzdov",
       "lore-hack:humanos",
+      "lore-hack:juramentos-feericos",
       "lore-hack:kuo-toa",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:manutencao-resistencia",
       "lore-hack:mar-de-sangue",
       "lore-hack:orcs-caatinga",
       "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico",
       "lore-hack:portomonte",
       "lore-hack:reino-sob-montanha",
       "lore-hack:resistencia",
       "lore-hack:rio-ancestral",
       "lore-hack:shadow-fey",
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:templo-demeter",
+      "lore-hack:teocracia-kuotoa",
       "lore-hack:thargrid"
     ],
     "13": [
       "lore-hack:anoes-thargrid",
+      "lore-hack:culto-golzdov",
       "lore-hack:draconatos-thargrid",
       "lore-hack:gigantes-fogo",
       "lore-hack:gigantes-gelo",
       "lore-hack:gigantes-pedra",
       "lore-hack:gigantes-thargrid",
       "lore-hack:golzdov",
+      "lore-hack:juramentos-feericos",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:manutencao-resistencia",
       "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico",
       "lore-hack:rayquaza",
       "lore-hack:resistencia",
       "lore-hack:shadow-fey",
@@ -184,100 +258,138 @@
       "lore-hack:carcaca",
       "lore-hack:costa-sul",
       "lore-hack:daegon",
+      "lore-hack:diplomacia-abissal",
       "lore-hack:garganta",
       "lore-hack:humanos",
       "lore-hack:ilhas-monasticas",
+      "lore-hack:jornada-tabaxi",
+      "lore-hack:juramentos-feericos",
       "lore-hack:kuo-toa",
+      "lore-hack:mosteiros-tortles",
       "lore-hack:mudanca-oceano",
       "lore-hack:orcs-caatinga",
       "lore-hack:tabaxis",
+      "lore-hack:teocracia-kuotoa",
       "lore-hack:tortles"
     ],
     "15": [
       "lore-hack:abissais-marinhos",
+      "lore-hack:cantos-sereias",
       "lore-hack:carcaca",
       "lore-hack:corte-feerica",
       "lore-hack:costa-sul",
       "lore-hack:daegon",
+      "lore-hack:diplomacia-abissal",
       "lore-hack:fronteira-marinha",
       "lore-hack:gnomos",
       "lore-hack:hobbits",
       "lore-hack:ilhas-monasticas",
+      "lore-hack:jornada-tabaxi",
       "lore-hack:kuo-toa",
       "lore-hack:mar-de-sangue",
+      "lore-hack:mosteiros-tortles",
+      "lore-hack:nao-centralizacao-tritoes",
       "lore-hack:oceanos-azuis",
+      "lore-hack:rios-fronteiras-tritoes",
       "lore-hack:sereias",
       "lore-hack:shadow-fey",
       "lore-hack:shadowfade",
       "lore-hack:tabaxis",
+      "lore-hack:teocracia-kuotoa",
       "lore-hack:tortles",
       "lore-hack:tritoes"
     ],
     "16": [
       "lore-hack:arquivo-mortos-afogados",
       "lore-hack:carcaca",
+      "lore-hack:culto-golzdov",
+      "lore-hack:culto-rainha",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:eldroth",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:feericos",
       "lore-hack:garganta",
       "lore-hack:golzdov",
       "lore-hack:gualapolis",
       "lore-hack:ironwood",
+      "lore-hack:juramentos-feericos",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:manutencao-resistencia",
       "lore-hack:resistencia",
       "lore-hack:sarastra-aestruum",
       "lore-hack:shadow-fey",
       "lore-hack:shadowfade",
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:sylara-nightwhisper",
       "lore-hack:trelohim-uln-shayr",
       "lore-hack:yokai-antigos"
     ],
     "17": [
       "lore-hack:carcaca",
+      "lore-hack:culto-golzdov",
+      "lore-hack:culto-rainha",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:druidas-eldroth",
       "lore-hack:eldroth",
       "lore-hack:elfos-floresta",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:feericos",
       "lore-hack:golzdov",
       "lore-hack:humanos",
       "lore-hack:ilhas-monasticas",
       "lore-hack:ironwood",
       "lore-hack:kanji-de-poder",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:portomonte",
       "lore-hack:rangers-ironwood",
       "lore-hack:sarastra-aestruum",
       "lore-hack:shadow-fey",
       "lore-hack:shadowfade",
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:sylara-nightwhisper",
       "lore-hack:thargrid",
       "lore-hack:yokai-antigos"
     ],
     "18": [
+      "lore-hack:agricultura-hobbit",
       "lore-hack:carcaca",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:druidas-eldroth",
       "lore-hack:elara-stormoak",
       "lore-hack:eldroth",
       "lore-hack:elfos-floresta",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:gnomos",
       "lore-hack:grama-cortada",
       "lore-hack:hobbits",
       "lore-hack:humanos",
       "lore-hack:ilhas-monasticas",
       "lore-hack:ironwood",
+      "lore-hack:juramentos-feericos",
       "lore-hack:manutencao-resistencia",
       "lore-hack:menelau-folha-seca",
       "lore-hack:rangers-ironwood",
+      "lore-hack:rede-clandestina-hobbit",
       "lore-hack:resistencia",
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:thargrid"
     ],
     "19": [
+      "lore-hack:agricultura-hobbit",
       "lore-hack:anoes-thargrid",
       "lore-hack:carcaca",
+      "lore-hack:conhecimento-gnomico",
+      "lore-hack:culto-golzdov",
+      "lore-hack:divisao-druidas-rangers",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:gnomos",
       "lore-hack:golzdov",
       "lore-hack:grama-cortada",
       "lore-hack:hobbits",
       "lore-hack:ironwood",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:manutencao-resistencia",
+      "lore-hack:rede-clandestina-hobbit",
       "lore-hack:resistencia",
       "lore-hack:shadar-riverie",
       "lore-hack:shadow-fey",
@@ -285,13 +397,18 @@
       "lore-hack:yokai-antigos"
     ],
     "2": [
+      "lore-hack:agricultura-hobbit",
       "lore-hack:carcaca",
+      "lore-hack:culto-golzdov",
+      "lore-hack:culto-rainha",
       "lore-hack:direito-de-nomear",
       "lore-hack:garganta",
       "lore-hack:golzdov",
       "lore-hack:grama-cortada",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:manutencao-resistencia",
       "lore-hack:menelau-folha-seca",
+      "lore-hack:rede-clandestina-hobbit",
       "lore-hack:resistencia",
       "lore-hack:sarastra-aestruum",
       "lore-hack:shadow-fey",
@@ -300,25 +417,32 @@
     "20": [
       "lore-hack:anoes-thargrid",
       "lore-hack:carcaca",
+      "lore-hack:culto-golzdov",
+      "lore-hack:divisao-druidas-rangers",
+      "lore-hack:ecologia-de-thargrid",
       "lore-hack:eldroth",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:feericos",
       "lore-hack:gnomos",
       "lore-hack:gnomos-floresta",
       "lore-hack:gnomos-rochas",
       "lore-hack:golzdov",
       "lore-hack:ironwood",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:manutencao-resistencia",
       "lore-hack:rangers-ironwood",
       "lore-hack:reino-sob-montanha",
       "lore-hack:resistencia",
       "lore-hack:rio-ancestral",
       "lore-hack:shadar-riverie",
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:svirfneblin",
       "lore-hack:thargrid"
     ],
     "21": [
       "lore-hack:abismo",
       "lore-hack:carcaca",
+      "lore-hack:culto-rainha",
       "lore-hack:gnomos",
       "lore-hack:hobbits",
       "lore-hack:humanos",
@@ -333,35 +457,64 @@
       "lore-hack:annam",
       "lore-hack:anoes-thargrid",
       "lore-hack:bahamut",
+      "lore-hack:berronar-truesilver",
       "lore-hack:carcaca",
+      "lore-hack:clangeddin-silverbeard",
+      "lore-hack:culto-golzdov",
       "lore-hack:draconatos-thargrid",
+      "lore-hack:dumathoin",
       "lore-hack:gigantes-fogo",
       "lore-hack:gigantes-pedra",
       "lore-hack:gigantes-thargrid",
       "lore-hack:golzdov",
+      "lore-hack:grolantor",
+      "lore-hack:hiatea",
+      "lore-hack:juramentos-feericos",
+      "lore-hack:ligacoes-sacras-ossos",
+      "lore-hack:memnor",
       "lore-hack:moradin",
       "lore-hack:reino-sob-montanha",
+      "lore-hack:skoraeus",
+      "lore-hack:stronmaus",
+      "lore-hack:surtur",
       "lore-hack:teologia-plural",
-      "lore-hack:thargrid"
+      "lore-hack:thargrid",
+      "lore-hack:thrym",
+      "lore-hack:vergadain"
     ],
     "23": [
+      "lore-hack:agricultura-hobbit",
+      "lore-hack:apolo",
+      "lore-hack:artemis",
+      "lore-hack:atena",
       "lore-hack:bahamut",
       "lore-hack:bastet",
       "lore-hack:carcaca",
+      "lore-hack:corellon-larethian",
       "lore-hack:costa-sul",
+      "lore-hack:culto-golzdov",
       "lore-hack:demeter",
+      "lore-hack:diancastra",
       "lore-hack:draconatos-thargrid",
       "lore-hack:garganta",
       "lore-hack:garl-glittergold",
       "lore-hack:gnomos",
       "lore-hack:golzdov",
       "lore-hack:grama-cortada",
+      "lore-hack:hades",
+      "lore-hack:hermes",
       "lore-hack:hobbits",
       "lore-hack:humanos",
+      "lore-hack:iallanis",
       "lore-hack:istus",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico",
       "lore-hack:pelor",
       "lore-hack:portomonte",
+      "lore-hack:poseidon",
+      "lore-hack:rede-clandestina-hobbit",
+      "lore-hack:rillifane-rallathil",
       "lore-hack:rio-ancestral",
       "lore-hack:sehanine",
       "lore-hack:selene",
@@ -375,44 +528,79 @@
     ],
     "24": [
       "lore-hack:abissais-marinhos",
+      "lore-hack:anubis",
       "lore-hack:ateismo-arcano",
       "lore-hack:bastet",
+      "lore-hack:cantos-sereias",
       "lore-hack:carcaca",
+      "lore-hack:corellon-larethian",
+      "lore-hack:culto-rainha",
       "lore-hack:daegon",
+      "lore-hack:diplomacia-abissal",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:eadro",
       "lore-hack:eldroth",
       "lore-hack:elfos-floresta",
+      "lore-hack:espionagem-ironwood",
+      "lore-hack:freya",
       "lore-hack:fronteira-marinha",
       "lore-hack:gigantes-thargrid",
+      "lore-hack:heimdall",
+      "lore-hack:horus",
       "lore-hack:humanos",
       "lore-hack:ilhas-monasticas",
       "lore-hack:ironwood",
+      "lore-hack:isis",
       "lore-hack:kuo-toa",
+      "lore-hack:nao-centralizacao-tritoes",
+      "lore-hack:njord",
       "lore-hack:oceanos-azuis",
+      "lore-hack:odin",
+      "lore-hack:osiris",
+      "lore-hack:poseidon",
+      "lore-hack:ptah",
+      "lore-hack:ra",
+      "lore-hack:rillifane-rallathil",
       "lore-hack:rio-ancestral",
+      "lore-hack:rios-fronteiras-tritoes",
       "lore-hack:sarastra-aestruum",
       "lore-hack:sashelas",
       "lore-hack:sehanine",
       "lore-hack:selene",
       "lore-hack:sereias",
+      "lore-hack:set",
       "lore-hack:shadow-fey",
       "lore-hack:shadowfade",
+      "lore-hack:sobek",
+      "lore-hack:sombra-em-eldroth",
+      "lore-hack:stronmaus",
       "lore-hack:templo-das-sombras",
+      "lore-hack:teocracia-kuotoa",
       "lore-hack:teologia-plural",
       "lore-hack:thargrid",
-      "lore-hack:tritoes"
+      "lore-hack:thor",
+      "lore-hack:thoth",
+      "lore-hack:tritoes",
+      "lore-hack:tyr"
     ],
     "25": [
       "lore-hack:ateismo-arcano",
+      "lore-hack:boccob",
       "lore-hack:carcaca",
+      "lore-hack:corellon-larethian",
+      "lore-hack:culto-golzdov",
       "lore-hack:demeter",
       "lore-hack:golzdov",
+      "lore-hack:hecate",
       "lore-hack:istus",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:pelor",
+      "lore-hack:thoth",
       "lore-hack:yondalla"
     ],
     "3": [
       "lore-hack:carcaca",
+      "lore-hack:culto-rainha",
       "lore-hack:garganta",
       "lore-hack:sarastra-aestruum",
       "lore-hack:templo-yolskaariin",
@@ -421,11 +609,14 @@
     "4": [
       "lore-hack:abissais-marinhos",
       "lore-hack:carcaca",
+      "lore-hack:culto-golzdov",
+      "lore-hack:diplomacia-abissal",
       "lore-hack:drakport",
       "lore-hack:garganta",
       "lore-hack:golzdov",
       "lore-hack:humanos",
       "lore-hack:kanji-de-poder",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:linguagens-yokai",
       "lore-hack:morwen-nightshade",
       "lore-hack:rio-ancestral",
@@ -440,28 +631,37 @@
       "lore-hack:caatinga",
       "lore-hack:carcaca",
       "lore-hack:costa-sul",
+      "lore-hack:culto-golzdov",
+      "lore-hack:culto-rainha",
       "lore-hack:daegon",
       "lore-hack:damaris-blackthorn",
       "lore-hack:demeter",
+      "lore-hack:diplomacia-abissal",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:eldroth",
       "lore-hack:fronteira-marinha",
       "lore-hack:golzdov",
       "lore-hack:humanos",
       "lore-hack:ilhas-monasticas",
+      "lore-hack:jornada-tabaxi",
       "lore-hack:kuo-toa",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:manutencao-resistencia",
       "lore-hack:mar-de-sangue",
+      "lore-hack:mosteiros-tortles",
       "lore-hack:orcs-caatinga",
       "lore-hack:portomonte",
       "lore-hack:resistencia",
       "lore-hack:rio-ancestral",
       "lore-hack:sarastra-aestruum",
       "lore-hack:shadowfade",
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:sylara-nightwhisper",
       "lore-hack:tabaxis",
       "lore-hack:templo-das-sombras",
       "lore-hack:templo-demeter",
       "lore-hack:templo-do-crepusculo",
+      "lore-hack:teocracia-kuotoa",
       "lore-hack:tortles",
       "lore-hack:ulorian-uln-shayr",
       "lore-hack:vandar",
@@ -475,13 +675,18 @@
       "lore-hack:boca-do-abismo",
       "lore-hack:carcaca",
       "lore-hack:casa-shayr",
+      "lore-hack:culto-golzdov",
+      "lore-hack:culto-rainha",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:elara-stormoak",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:gigantes-thargrid",
       "lore-hack:gnomos",
       "lore-hack:golzdov",
       "lore-hack:gualapolis",
       "lore-hack:hobbits",
       "lore-hack:ironwood",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:manutencao-resistencia",
       "lore-hack:reino-sob-montanha",
       "lore-hack:resistencia",
@@ -498,7 +703,10 @@
       "lore-hack:anoes-thargrid",
       "lore-hack:carcaca",
       "lore-hack:corte-feerica",
+      "lore-hack:culto-rainha",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:drakport",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:humanos",
       "lore-hack:ironwood",
       "lore-hack:manutencao-resistencia",
@@ -517,8 +725,11 @@
       "lore-hack:abismo",
       "lore-hack:alquam",
       "lore-hack:carcaca",
+      "lore-hack:culto-golzdov",
+      "lore-hack:culto-rainha",
       "lore-hack:fronteira-marinha",
       "lore-hack:golzdov",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:mammon",
       "lore-hack:rio-ancestral",
       "lore-hack:sarastra-aestruum",
@@ -536,8 +747,12 @@
       "lore-hack:confederacao-ossos",
       "lore-hack:corte-feerica",
       "lore-hack:costa-sul",
+      "lore-hack:culto-golzdov",
+      "lore-hack:culto-rainha",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:drakport",
       "lore-hack:eldroth",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:feericos",
       "lore-hack:garganta",
       "lore-hack:gigantes-thargrid",
@@ -545,6 +760,7 @@
       "lore-hack:humanos",
       "lore-hack:ironwood",
       "lore-hack:kuo-toa",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:manutencao-resistencia",
       "lore-hack:mar-de-sangue",
       "lore-hack:orcs-caatinga",
@@ -554,7 +770,9 @@
       "lore-hack:rio-ancestral",
       "lore-hack:sarastra-aestruum",
       "lore-hack:shadowfade",
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:templo-das-sombras",
+      "lore-hack:teocracia-kuotoa",
       "lore-hack:thargrid",
       "lore-hack:voragar"
     ]
@@ -581,10 +799,14 @@
     "abissais": [
       "lore-hack:abissais-marinhos",
       "lore-hack:daegon",
+      "lore-hack:diplomacia-abissal",
       "lore-hack:mudanca-oceano"
     ],
     "abriga": [
       "lore-hack:oceanos-azuis"
+    ],
+    "abrigos": [
+      "lore-hack:mosteiros-tortles"
     ],
     "acima": [
       "lore-hack:shadar-riverie"
@@ -594,6 +816,12 @@
     ],
     "acolhimento": [
       "lore-hack:grama-cortada"
+    ],
+    "acontecimentos": [
+      "lore-hack:cantos-sereias"
+    ],
+    "adivinhos": [
+      "lore-hack:apolo"
     ],
     "administracao": [
       "lore-hack:morwen-nightshade"
@@ -616,6 +844,7 @@
       "lore-hack:hobbits"
     ],
     "agricultura": [
+      "lore-hack:agricultura-hobbit",
       "lore-hack:manutencao-resistencia",
       "lore-hack:portomonte",
       "lore-hack:templo-demeter"
@@ -626,6 +855,8 @@
       "lore-hack:fronteira-marinha",
       "lore-hack:mar-de-sangue",
       "lore-hack:oceanos-azuis",
+      "lore-hack:rios-fronteiras-tritoes",
+      "lore-hack:sobek",
       "lore-hack:templo-da-lua",
       "lore-hack:templo-demeter",
       "lore-hack:tritoes"
@@ -642,6 +873,12 @@
       "lore-hack:confederacao-ossos",
       "lore-hack:orcs-caatinga",
       "lore-hack:ulorian-uln-shayr"
+    ],
+    "aliancas": [
+      "lore-hack:nao-centralizacao-tritoes"
+    ],
+    "alimentar": [
+      "lore-hack:rede-clandestina-hobbit"
     ],
     "alimentares": [
       "lore-hack:kuo-toa"
@@ -661,8 +898,15 @@
     "ameacas": [
       "lore-hack:confederacao-ossos"
     ],
+    "amor": [
+      "lore-hack:freya",
+      "lore-hack:iallanis"
+    ],
     "ana": [
-      "lore-hack:moradin"
+      "lore-hack:berronar-truesilver",
+      "lore-hack:dumathoin",
+      "lore-hack:moradin",
+      "lore-hack:vergadain"
     ],
     "ancestrais": [
       "lore-hack:elfos-floresta",
@@ -672,8 +916,14 @@
     "ancestral": [
       "lore-hack:abismo",
       "lore-hack:bastet",
+      "lore-hack:culto-golzdov",
       "lore-hack:golzdov",
+      "lore-hack:horus",
+      "lore-hack:isis",
+      "lore-hack:ligacoes-sacras-ossos",
+      "lore-hack:ra",
       "lore-hack:rio-ancestral",
+      "lore-hack:set",
       "lore-hack:severina-shadowbloom",
       "lore-hack:templo-da-lua",
       "lore-hack:yokai-antigos"
@@ -690,7 +940,12 @@
     ],
     "anoes": [
       "lore-hack:anoes-thargrid",
+      "lore-hack:clangeddin-silverbeard",
+      "lore-hack:ordenamento-multietnico",
       "lore-hack:thargrid"
+    ],
+    "antes": [
+      "lore-hack:diplomacia-abissal"
     ],
     "anti": [
       "lore-hack:orcs-caatinga"
@@ -708,8 +963,20 @@
       "lore-hack:linguagens-yokai",
       "lore-hack:yokai-antigos"
     ],
+    "anubis": [
+      "lore-hack:anubis"
+    ],
     "aos": [
+      "lore-hack:anubis",
+      "lore-hack:artemis",
+      "lore-hack:culto-golzdov",
       "lore-hack:gigantes-thargrid",
+      "lore-hack:grolantor",
+      "lore-hack:njord",
+      "lore-hack:ptah",
+      "lore-hack:stronmaus",
+      "lore-hack:surtur",
+      "lore-hack:thrym",
       "lore-hack:yondalla"
     ],
     "aplicacoes": [
@@ -720,6 +987,9 @@
     ],
     "apoio": [
       "lore-hack:hobbits"
+    ],
+    "apolo": [
+      "lore-hack:apolo"
     ],
     "apos": [
       "lore-hack:templo-das-sombras",
@@ -748,6 +1018,9 @@
       "lore-hack:corte-feerica",
       "lore-hack:shadar-riverie"
     ],
+    "armas": [
+      "lore-hack:teocracia-kuotoa"
+    ],
     "arquifada": [
       "lore-hack:sarastra-aestruum"
     ],
@@ -759,9 +1032,17 @@
       "lore-hack:gualapolis"
     ],
     "arquivos": [
+      "lore-hack:mosteiros-tortles",
       "lore-hack:tortles"
     ],
+    "artemis": [
+      "lore-hack:artemis"
+    ],
+    "artes": [
+      "lore-hack:corellon-larethian"
+    ],
     "artesaos": [
+      "lore-hack:atena",
       "lore-hack:gnomos"
     ],
     "articulou": [
@@ -775,13 +1056,29 @@
     ],
     "associada": [
       "lore-hack:abissais-marinhos",
+      "lore-hack:anubis",
       "lore-hack:arquivo-mortos-afogados",
+      "lore-hack:artemis",
+      "lore-hack:atena",
+      "lore-hack:boccob",
+      "lore-hack:diancastra",
+      "lore-hack:dumathoin",
+      "lore-hack:freya",
+      "lore-hack:grolantor",
+      "lore-hack:hecate",
+      "lore-hack:heimdall",
       "lore-hack:morwen-nightshade",
+      "lore-hack:njord",
+      "lore-hack:surtur",
+      "lore-hack:thoth",
+      "lore-hack:thrym",
+      "lore-hack:tyr",
       "lore-hack:yondalla"
     ],
     "associado": [
       "lore-hack:birka-uln-shayr",
       "lore-hack:direito-de-nomear",
+      "lore-hack:hermes",
       "lore-hack:istus",
       "lore-hack:shadar-riverie",
       "lore-hack:voragar"
@@ -792,6 +1089,9 @@
     "ateismo": [
       "lore-hack:ateismo-arcano"
     ],
+    "atena": [
+      "lore-hack:atena"
+    ],
     "atividades": [
       "lore-hack:mar-de-sangue"
     ],
@@ -799,19 +1099,29 @@
       "lore-hack:casa-shayr"
     ],
     "automatica": [
-      "lore-hack:ateismo-arcano"
+      "lore-hack:ateismo-arcano",
+      "lore-hack:ordenamento-multietnico"
     ],
     "automaticamente": [
       "lore-hack:yokai-antigos"
     ],
+    "autonomia": [
+      "lore-hack:nao-centralizacao-tritoes"
+    ],
     "autoridade": [
       "lore-hack:ateismo-arcano",
-      "lore-hack:ordenamento"
+      "lore-hack:diplomacia-abissal",
+      "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico"
+    ],
+    "avancados": [
+      "lore-hack:rios-fronteiras-tritoes"
     ],
     "azuis": [
       "lore-hack:eadro",
       "lore-hack:fronteira-marinha",
       "lore-hack:oceanos-azuis",
+      "lore-hack:rios-fronteiras-tritoes",
       "lore-hack:tritoes"
     ],
     "bahamut": [
@@ -824,6 +1134,7 @@
       "lore-hack:menelau-folha-seca"
     ],
     "base": [
+      "lore-hack:ecologia-de-thargrid",
       "lore-hack:ironwood"
     ],
     "bastet": [
@@ -831,6 +1142,9 @@
     ],
     "bastiao": [
       "lore-hack:reino-sob-montanha"
+    ],
+    "berronar": [
+      "lore-hack:berronar-truesilver"
     ],
     "bestiaria": [
       "lore-hack:yokai-antigos"
@@ -849,22 +1163,42 @@
       "lore-hack:gualapolis",
       "lore-hack:ulorian-uln-shayr"
     ],
+    "boccob": [
+      "lore-hack:boccob"
+    ],
     "bosques": [
       "lore-hack:gnomos-floresta"
+    ],
+    "bruxos": [
+      "lore-hack:hecate"
+    ],
+    "buscar": [
+      "lore-hack:diplomacia-abissal"
     ],
     "caatinga": [
       "lore-hack:caatinga",
       "lore-hack:humanos",
       "lore-hack:orcs-caatinga"
     ],
+    "caca": [
+      "lore-hack:hiatea",
+      "lore-hack:rios-fronteiras-tritoes"
+    ],
+    "cacadores": [
+      "lore-hack:artemis"
+    ],
     "cambions": [
       "lore-hack:natureza-demoniaca"
     ],
     "cantos": [
+      "lore-hack:cantos-sereias",
       "lore-hack:sereias"
     ],
     "capazes": [
       "lore-hack:kanji-de-poder"
+    ],
+    "captura": [
+      "lore-hack:teocracia-kuotoa"
     ],
     "capturas": [
       "lore-hack:kuo-toa"
@@ -873,9 +1207,14 @@
       "lore-hack:resistencia"
     ],
     "carcaca": [
-      "lore-hack:carcaca"
+      "lore-hack:carcaca",
+      "lore-hack:poseidon"
+    ],
+    "cartografia": [
+      "lore-hack:conhecimento-gnomico"
     ],
     "cartografos": [
+      "lore-hack:conhecimento-gnomico",
       "lore-hack:gnomos"
     ],
     "casa": [
@@ -899,6 +1238,9 @@
     "cenario": [
       "lore-hack:natureza-demoniaca"
     ],
+    "centralizado": [
+      "lore-hack:nao-centralizacao-tritoes"
+    ],
     "centro": [
       "lore-hack:drakport",
       "lore-hack:shadar-riverie",
@@ -906,6 +1248,9 @@
     ],
     "centros": [
       "lore-hack:gnomos-rochas"
+    ],
+    "cereais": [
+      "lore-hack:agricultura-hobbit"
     ],
     "ciclos": [
       "lore-hack:selene"
@@ -918,17 +1263,30 @@
     ],
     "cidades": [
       "lore-hack:kuo-toa",
+      "lore-hack:nao-centralizacao-tritoes",
       "lore-hack:oceanos-azuis"
     ],
     "circulacao": [
       "lore-hack:ilhas-monasticas"
     ],
+    "circular": [
+      "lore-hack:rede-clandestina-hobbit"
+    ],
     "circulos": [
-      "lore-hack:druidas-eldroth"
+      "lore-hack:divisao-druidas-rangers",
+      "lore-hack:druidas-eldroth",
+      "lore-hack:sombra-em-eldroth"
+    ],
+    "citada": [
+      "lore-hack:horus",
+      "lore-hack:isis"
     ],
     "civilizacao": [
       "lore-hack:abissais-marinhos",
       "lore-hack:yokai-antigos"
+    ],
+    "clandestina": [
+      "lore-hack:rede-clandestina-hobbit"
     ],
     "clandestinas": [
       "lore-hack:manutencao-resistencia"
@@ -939,6 +1297,9 @@
     "clandestinos": [
       "lore-hack:eldroth"
     ],
+    "clangeddin": [
+      "lore-hack:clangeddin-silverbeard"
+    ],
     "clas": [
       "lore-hack:anoes-thargrid",
       "lore-hack:draconatos-thargrid",
@@ -948,6 +1309,12 @@
     "coexistem": [
       "lore-hack:carcaca",
       "lore-hack:teologia-plural"
+    ],
+    "coletivo": [
+      "lore-hack:teocracia-kuotoa"
+    ],
+    "colinas": [
+      "lore-hack:grolantor"
     ],
     "colonial": [
       "lore-hack:carcaca",
@@ -983,22 +1350,34 @@
     "comerciais": [
       "lore-hack:gnomos-rochas"
     ],
+    "comercial": [
+      "lore-hack:diplomacia-abissal"
+    ],
     "comercio": [
       "lore-hack:portomonte",
-      "lore-hack:rio-ancestral"
+      "lore-hack:rio-ancestral",
+      "lore-hack:vergadain"
     ],
     "como": [
+      "lore-hack:culto-rainha",
       "lore-hack:drakport",
       "lore-hack:druidas-eldroth",
+      "lore-hack:mosteiros-tortles",
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:tiamat"
     ],
+    "compoem": [
+      "lore-hack:ecologia-de-thargrid"
+    ],
     "comunicacao": [
+      "lore-hack:cantos-sereias",
       "lore-hack:rangers-ironwood"
     ],
     "comunidade": [
       "lore-hack:druidas-eldroth"
     ],
     "comunidades": [
+      "lore-hack:agricultura-hobbit",
       "lore-hack:bastet",
       "lore-hack:caatinga",
       "lore-hack:eldroth",
@@ -1007,10 +1386,19 @@
       "lore-hack:gnomos-floresta",
       "lore-hack:grama-cortada",
       "lore-hack:hobbits",
-      "lore-hack:sereias"
+      "lore-hack:jornada-tabaxi",
+      "lore-hack:osiris",
+      "lore-hack:rede-clandestina-hobbit",
+      "lore-hack:sereias",
+      "lore-hack:sobek",
+      "lore-hack:sombra-em-eldroth"
+    ],
+    "concede": [
+      "lore-hack:ordenamento-multietnico"
     ],
     "condado": [
-      "lore-hack:grama-cortada"
+      "lore-hack:grama-cortada",
+      "lore-hack:rede-clandestina-hobbit"
     ],
     "condicao": [
       "lore-hack:golzdov"
@@ -1031,18 +1419,31 @@
       "lore-hack:yokai-antigos"
     ],
     "conhecimento": [
-      "lore-hack:tabaxis"
+      "lore-hack:boccob",
+      "lore-hack:odin",
+      "lore-hack:ptah",
+      "lore-hack:tabaxis",
+      "lore-hack:thoth"
+    ],
+    "conhecimentos": [
+      "lore-hack:jornada-tabaxi"
     ],
     "conquista": [
       "lore-hack:abissais-marinhos",
       "lore-hack:confederacao-ossos",
       "lore-hack:rio-ancestral"
     ],
+    "consenso": [
+      "lore-hack:culto-golzdov"
+    ],
     "conspiracoes": [
       "lore-hack:corte-feerica"
     ],
     "constitui": [
       "lore-hack:golzdov"
+    ],
+    "constituir": [
+      "lore-hack:nao-centralizacao-tritoes"
     ],
     "construtores": [
       "lore-hack:gigantes-pedra"
@@ -1060,12 +1461,18 @@
     "continente": [
       "lore-hack:carcaca"
     ],
+    "continuidade": [
+      "lore-hack:agricultura-hobbit"
+    ],
     "contra": [
       "lore-hack:confederacao-ossos",
       "lore-hack:tritoes"
     ],
     "contrabandistas": [
       "lore-hack:resistencia"
+    ],
+    "contribuem": [
+      "lore-hack:agricultura-hobbit"
     ],
     "controla": [
       "lore-hack:garganta"
@@ -1086,15 +1493,23 @@
     "coracao": [
       "lore-hack:thargrid"
     ],
+    "coragem": [
+      "lore-hack:tyr"
+    ],
+    "corellon": [
+      "lore-hack:corellon-larethian"
+    ],
     "corpo": [
-      "lore-hack:carcaca"
+      "lore-hack:carcaca",
+      "lore-hack:ligacoes-sacras-ossos"
     ],
     "correntes": [
       "lore-hack:fronteira-marinha"
     ],
     "corrompidas": [
       "lore-hack:mar-de-sangue",
-      "lore-hack:oceanos-azuis"
+      "lore-hack:oceanos-azuis",
+      "lore-hack:rios-fronteiras-tritoes"
     ],
     "corrompido": [
       "lore-hack:templo-yolskaariin"
@@ -1106,13 +1521,17 @@
       "lore-hack:voragar"
     ],
     "cortada": [
-      "lore-hack:grama-cortada"
+      "lore-hack:agricultura-hobbit",
+      "lore-hack:grama-cortada",
+      "lore-hack:rede-clandestina-hobbit"
     ],
     "corte": [
       "lore-hack:corte-feerica",
+      "lore-hack:culto-rainha",
       "lore-hack:feericos",
       "lore-hack:sarastra-aestruum",
       "lore-hack:shadowfade",
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:trelohim-uln-shayr"
     ],
     "cosmologicas": [
@@ -1135,25 +1554,40 @@
       "lore-hack:moradin"
     ],
     "criaturas": [
+      "lore-hack:rios-fronteiras-tritoes",
       "lore-hack:sylara-nightwhisper"
     ],
     "cuja": [
       "lore-hack:tabaxis"
     ],
     "culto": [
+      "lore-hack:culto-rainha",
       "lore-hack:eadro",
       "lore-hack:istus",
       "lore-hack:pelor",
       "lore-hack:tiamat"
     ],
     "cultos": [
+      "lore-hack:horus",
+      "lore-hack:isis",
       "lore-hack:sashelas",
+      "lore-hack:set",
       "lore-hack:teologia-plural",
       "lore-hack:tritoes",
       "lore-hack:xandros-gloomspire"
     ],
+    "cultuada": [
+      "lore-hack:ra",
+      "lore-hack:sobek"
+    ],
     "culturas": [
       "lore-hack:daegon"
+    ],
+    "cumprimento": [
+      "lore-hack:juramentos-feericos"
+    ],
+    "curandeiros": [
+      "lore-hack:apolo"
     ],
     "daegon": [
       "lore-hack:abissais-marinhos",
@@ -1166,13 +1600,20 @@
       "lore-hack:vandar"
     ],
     "das": [
+      "lore-hack:agricultura-hobbit",
+      "lore-hack:cantos-sereias",
       "lore-hack:confederacao-ossos",
       "lore-hack:daegon",
       "lore-hack:demeter",
       "lore-hack:gigantes-fogo",
       "lore-hack:gnomos-rochas",
+      "lore-hack:grolantor",
+      "lore-hack:memnor",
+      "lore-hack:nao-centralizacao-tritoes",
+      "lore-hack:rios-fronteiras-tritoes",
       "lore-hack:sashelas",
       "lore-hack:sehanine",
+      "lore-hack:sobek",
       "lore-hack:svirfneblin",
       "lore-hack:templo-da-lua",
       "lore-hack:templo-das-sombras",
@@ -1191,6 +1632,7 @@
     "defesa": [
       "lore-hack:boca-do-abismo",
       "lore-hack:draconatos-thargrid",
+      "lore-hack:nao-centralizacao-tritoes",
       "lore-hack:reino-sob-montanha"
     ],
     "definem": [
@@ -1200,7 +1642,8 @@
       "lore-hack:menelau-folha-seca"
     ],
     "demais": [
-      "lore-hack:gigantes-thargrid"
+      "lore-hack:gigantes-thargrid",
+      "lore-hack:ordenamento-multietnico"
     ],
     "demeter": [
       "lore-hack:demeter",
@@ -1226,7 +1669,14 @@
       "lore-hack:meio-demonios",
       "lore-hack:natureza-demoniaca"
     ],
+    "dependencia": [
+      "lore-hack:diplomacia-abissal"
+    ],
+    "dependentes": [
+      "lore-hack:sobek"
+    ],
     "depositos": [
+      "lore-hack:ecologia-de-thargrid",
       "lore-hack:manutencao-resistencia"
     ],
     "derrotou": [
@@ -1269,10 +1719,16 @@
     "determina": [
       "lore-hack:meio-demonios"
     ],
+    "determinadas": [
+      "lore-hack:hecate"
+    ],
     "deus": [
-      "lore-hack:daegon"
+      "lore-hack:daegon",
+      "lore-hack:hermes",
+      "lore-hack:poseidon"
     ],
     "deusa": [
+      "lore-hack:culto-rainha",
       "lore-hack:demeter",
       "lore-hack:sehanine",
       "lore-hack:templo-demeter"
@@ -1281,8 +1737,17 @@
       "lore-hack:ateismo-arcano",
       "lore-hack:teologia-plural"
     ],
+    "devocao": [
+      "lore-hack:culto-golzdov"
+    ],
+    "devocoes": [
+      "lore-hack:culto-golzdov"
+    ],
     "diabos": [
       "lore-hack:natureza-demoniaca"
+    ],
+    "diancastra": [
+      "lore-hack:diancastra"
     ],
     "diferentes": [
       "lore-hack:daegon"
@@ -1292,6 +1757,9 @@
     ],
     "direito": [
       "lore-hack:direito-de-nomear"
+    ],
+    "discretamente": [
+      "lore-hack:rede-clandestina-hobbit"
     ],
     "discretas": [
       "lore-hack:gnomos-floresta"
@@ -1314,6 +1782,9 @@
     "dissidentes": [
       "lore-hack:shadow-fey"
     ],
+    "distancia": [
+      "lore-hack:cantos-sereias"
+    ],
     "distantes": [
       "lore-hack:gigantes-gelo"
     ],
@@ -1323,22 +1794,69 @@
     "diversas": [
       "lore-hack:humanos"
     ],
+    "diversificada": [
+      "lore-hack:agricultura-hobbit"
+    ],
     "divididas": [
       "lore-hack:elfos-floresta"
     ],
     "divina": [
-      "lore-hack:golzdov"
+      "lore-hack:diancastra",
+      "lore-hack:golzdov",
+      "lore-hack:ligacoes-sacras-ossos"
     ],
     "divindade": [
+      "lore-hack:anubis",
+      "lore-hack:apolo",
+      "lore-hack:artemis",
+      "lore-hack:atena",
       "lore-hack:bahamut",
       "lore-hack:bastet",
+      "lore-hack:berronar-truesilver",
+      "lore-hack:boccob",
+      "lore-hack:clangeddin-silverbeard",
+      "lore-hack:corellon-larethian",
+      "lore-hack:culto-golzdov",
+      "lore-hack:dumathoin",
+      "lore-hack:freya",
       "lore-hack:garl-glittergold",
+      "lore-hack:grolantor",
+      "lore-hack:hades",
+      "lore-hack:hecate",
+      "lore-hack:heimdall",
+      "lore-hack:hiatea",
+      "lore-hack:horus",
+      "lore-hack:iallanis",
+      "lore-hack:isis",
+      "lore-hack:memnor",
       "lore-hack:moradin",
+      "lore-hack:njord",
+      "lore-hack:odin",
+      "lore-hack:osiris",
       "lore-hack:pelor",
+      "lore-hack:ptah",
+      "lore-hack:ra",
+      "lore-hack:rillifane-rallathil",
       "lore-hack:sashelas",
       "lore-hack:selene",
+      "lore-hack:set",
+      "lore-hack:skoraeus",
+      "lore-hack:sobek",
+      "lore-hack:stronmaus",
+      "lore-hack:surtur",
+      "lore-hack:thor",
+      "lore-hack:thoth",
+      "lore-hack:thrym",
+      "lore-hack:tyr",
+      "lore-hack:vergadain",
       "lore-hack:yolskaariin",
       "lore-hack:yondalla"
+    ],
+    "domesticas": [
+      "lore-hack:agricultura-hobbit"
+    ],
+    "dominada": [
+      "lore-hack:divisao-druidas-rangers"
     ],
     "dominante": [
       "lore-hack:shadow-fey"
@@ -1349,17 +1867,26 @@
     ],
     "dos": [
       "lore-hack:arquivo-mortos-afogados",
+      "lore-hack:clangeddin-silverbeard",
       "lore-hack:confederacao-ossos",
+      "lore-hack:diancastra",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:gigantes-gelo",
       "lore-hack:gualapolis",
       "lore-hack:ironwood",
       "lore-hack:kanji-de-poder",
+      "lore-hack:memnor",
       "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico",
+      "lore-hack:rios-fronteiras-tritoes",
       "lore-hack:shadowfade",
+      "lore-hack:skoraeus",
+      "lore-hack:teocracia-kuotoa",
       "lore-hack:voragar"
     ],
     "draconatos": [
       "lore-hack:draconatos-thargrid",
+      "lore-hack:ordenamento-multietnico",
       "lore-hack:thargrid"
     ],
     "draconica": [
@@ -1377,8 +1904,16 @@
       "lore-hack:morwen-nightshade"
     ],
     "druidas": [
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:druidas-eldroth",
-      "lore-hack:eldroth"
+      "lore-hack:eldroth",
+      "lore-hack:sombra-em-eldroth"
+    ],
+    "dumathoin": [
+      "lore-hack:dumathoin"
+    ],
+    "duracao": [
+      "lore-hack:conhecimento-gnomico"
     ],
     "duskveil": [
       "lore-hack:varys-duskveil"
@@ -1386,11 +1921,27 @@
     "eadro": [
       "lore-hack:eadro"
     ],
+    "ecologia": [
+      "lore-hack:sombra-em-eldroth"
+    ],
     "economia": [
       "lore-hack:manutencao-resistencia"
     ],
     "efeitos": [
       "lore-hack:linguagens-yokai"
+    ],
+    "egipcia": [
+      "lore-hack:anubis",
+      "lore-hack:horus",
+      "lore-hack:isis",
+      "lore-hack:osiris",
+      "lore-hack:ptah",
+      "lore-hack:set",
+      "lore-hack:sobek",
+      "lore-hack:thoth"
+    ],
+    "egipcio": [
+      "lore-hack:ra"
     ],
     "eixo": [
       "lore-hack:rio-ancestral"
@@ -1400,17 +1951,23 @@
       "lore-hack:ironwood"
     ],
     "eldroth": [
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:druidas-eldroth",
       "lore-hack:eldroth",
       "lore-hack:elfos-floresta",
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:sylara-nightwhisper"
     ],
     "elementos": [
       "lore-hack:kanji-de-poder"
     ],
     "elfica": [
+      "lore-hack:corellon-larethian",
       "lore-hack:sehanine",
       "lore-hack:yokai-antigos"
+    ],
+    "elficas": [
+      "lore-hack:rillifane-rallathil"
     ],
     "elfico": [
       "lore-hack:damaris-blackthorn"
@@ -1420,6 +1977,12 @@
       "lore-hack:linguagens-yokai",
       "lore-hack:sehanine",
       "lore-hack:yokai-antigos"
+    ],
+    "empregada": [
+      "lore-hack:sombra-em-eldroth"
+    ],
+    "emprego": [
+      "lore-hack:teocracia-kuotoa"
     ],
     "enclaves": [
       "lore-hack:gnomos",
@@ -1435,26 +1998,47 @@
       "lore-hack:gigantes-fogo",
       "lore-hack:gnomos"
     ],
+    "enterrados": [
+      "lore-hack:dumathoin"
+    ],
     "entidades": [
       "lore-hack:feericos"
     ],
     "entre": [
+      "lore-hack:horus",
       "lore-hack:humanos",
-      "lore-hack:mudanca-oceano"
+      "lore-hack:isis",
+      "lore-hack:mudanca-oceano",
+      "lore-hack:poseidon",
+      "lore-hack:set"
+    ],
+    "envolvem": [
+      "lore-hack:juramentos-feericos"
     ],
     "escavacoes": [
       "lore-hack:garganta"
     ],
     "escolas": [
+      "lore-hack:mosteiros-tortles",
       "lore-hack:tortles"
+    ],
+    "esconder": [
+      "lore-hack:rede-clandestina-hobbit"
     ],
     "escravidao": [
       "lore-hack:drakport",
       "lore-hack:mammon"
     ],
+    "escribas": [
+      "lore-hack:thoth"
+    ],
     "escrita": [
       "lore-hack:direito-de-nomear",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:yokai-antigos"
+    ],
+    "espirituais": [
+      "lore-hack:divisao-druidas-rangers"
     ],
     "estabeleceu": [
       "lore-hack:ulorian-uln-shayr"
@@ -1462,11 +2046,23 @@
     "estabelecida": [
       "lore-hack:boca-do-abismo"
     ],
+    "estatuto": [
+      "lore-hack:culto-golzdov"
+    ],
+    "estrategia": [
+      "lore-hack:tyr"
+    ],
     "estrategias": [
       "lore-hack:elfos-floresta"
     ],
+    "estrategistas": [
+      "lore-hack:atena"
+    ],
     "estruturas": [
       "lore-hack:gigantes-pedra"
+    ],
+    "estudos": [
+      "lore-hack:boccob"
     ],
     "exclusividade": [
       "lore-hack:teologia-plural"
@@ -1481,9 +2077,15 @@
     "exilados": [
       "lore-hack:caatinga"
     ],
+    "existem": [
+      "lore-hack:culto-golzdov"
+    ],
     "existencia": [
       "lore-hack:ateismo-arcano",
       "lore-hack:teologia-plural"
+    ],
+    "experiencias": [
+      "lore-hack:jornada-tabaxi"
     ],
     "exploracao": [
       "lore-hack:mammon"
@@ -1500,6 +2102,9 @@
     "faixa": [
       "lore-hack:costa-sul"
     ],
+    "familia": [
+      "lore-hack:berronar-truesilver"
+    ],
     "familiar": [
       "lore-hack:birka-uln-shayr"
     ],
@@ -1512,16 +2117,19 @@
     ],
     "feericas": [
       "lore-hack:confederacao-ossos",
-      "lore-hack:feericos"
+      "lore-hack:feericos",
+      "lore-hack:juramentos-feericos"
     ],
     "feerico": [
       "lore-hack:templo-yolskaariin"
     ],
     "feericos": [
       "lore-hack:feericos",
+      "lore-hack:juramentos-feericos",
       "lore-hack:shadowfade"
     ],
     "fertilidade": [
+      "lore-hack:freya",
       "lore-hack:yondalla"
     ],
     "fey": [
@@ -1539,14 +2147,17 @@
       "lore-hack:ateismo-arcano"
     ],
     "floresta": [
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:druidas-eldroth",
       "lore-hack:eldroth",
       "lore-hack:elfos-floresta",
       "lore-hack:gnomos-floresta",
       "lore-hack:ironwood",
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:sylara-nightwhisper"
     ],
     "florestas": [
+      "lore-hack:rillifane-rallathil",
       "lore-hack:sehanine"
     ],
     "fluviais": [
@@ -1556,7 +2167,8 @@
       "lore-hack:drakport"
     ],
     "fogo": [
-      "lore-hack:gigantes-fogo"
+      "lore-hack:gigantes-fogo",
+      "lore-hack:surtur"
     ],
     "folha": [
       "lore-hack:menelau-folha-seca"
@@ -1566,10 +2178,12 @@
     ],
     "forjas": [
       "lore-hack:anoes-thargrid",
+      "lore-hack:ecologia-de-thargrid",
       "lore-hack:manutencao-resistencia",
       "lore-hack:reino-sob-montanha"
     ],
     "formacao": [
+      "lore-hack:jornada-tabaxi",
       "lore-hack:tabaxis"
     ],
     "formado": [
@@ -1593,19 +2207,35 @@
       "lore-hack:boca-do-abismo",
       "lore-hack:templo-do-crepusculo"
     ],
+    "freya": [
+      "lore-hack:freya"
+    ],
     "fronteira": [
       "lore-hack:fronteira-marinha",
       "lore-hack:oceanos-azuis",
+      "lore-hack:rios-fronteiras-tritoes",
       "lore-hack:tritoes"
     ],
     "fuga": [
       "lore-hack:sarastra-aestruum"
     ],
+    "fugitivos": [
+      "lore-hack:rede-clandestina-hobbit"
+    ],
+    "funcionam": [
+      "lore-hack:mosteiros-tortles"
+    ],
     "fundamento": [
       "lore-hack:direito-de-nomear"
     ],
+    "funerarios": [
+      "lore-hack:anubis",
+      "lore-hack:hades",
+      "lore-hack:osiris"
+    ],
     "galerias": [
-      "lore-hack:anoes-thargrid"
+      "lore-hack:anoes-thargrid",
+      "lore-hack:ecologia-de-thargrid"
     ],
     "ganancia": [
       "lore-hack:mammon"
@@ -1623,7 +2253,8 @@
       "lore-hack:gigantes-gelo"
     ],
     "gelo": [
-      "lore-hack:gigantes-gelo"
+      "lore-hack:gigantes-gelo",
+      "lore-hack:thrym"
     ],
     "gemas": [
       "lore-hack:svirfneblin"
@@ -1631,20 +2262,34 @@
     "genealogia": [
       "lore-hack:sereias"
     ],
+    "genealogias": [
+      "lore-hack:cantos-sereias"
+    ],
     "geografia": [
       "lore-hack:golzdov"
     ],
     "gigante": [
       "lore-hack:annam",
-      "lore-hack:ordenamento"
+      "lore-hack:hiatea",
+      "lore-hack:iallanis",
+      "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico"
     ],
     "gigantes": [
+      "lore-hack:diancastra",
       "lore-hack:gigantes-fogo",
       "lore-hack:gigantes-gelo",
       "lore-hack:gigantes-pedra",
       "lore-hack:gigantes-thargrid",
+      "lore-hack:grolantor",
+      "lore-hack:memnor",
       "lore-hack:ordenamento",
-      "lore-hack:thargrid"
+      "lore-hack:ordenamento-multietnico",
+      "lore-hack:skoraeus",
+      "lore-hack:stronmaus",
+      "lore-hack:surtur",
+      "lore-hack:thargrid",
+      "lore-hack:thrym"
     ],
     "glittergold": [
       "lore-hack:garl-glittergold"
@@ -1653,9 +2298,11 @@
       "lore-hack:xandros-gloomspire"
     ],
     "gnomica": [
+      "lore-hack:conhecimento-gnomico",
       "lore-hack:garl-glittergold"
     ],
     "gnomos": [
+      "lore-hack:conhecimento-gnomico",
       "lore-hack:gnomos",
       "lore-hack:gnomos-floresta",
       "lore-hack:gnomos-rochas",
@@ -1663,9 +2310,11 @@
     ],
     "golzdov": [
       "lore-hack:carcaca",
+      "lore-hack:culto-golzdov",
       "lore-hack:garganta",
       "lore-hack:golzdov",
       "lore-hack:kanji-de-poder",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:svirfneblin",
       "lore-hack:templo-do-crepusculo",
       "lore-hack:yokai-antigos"
@@ -1674,7 +2323,18 @@
       "lore-hack:sylara-nightwhisper"
     ],
     "grama": [
-      "lore-hack:grama-cortada"
+      "lore-hack:agricultura-hobbit",
+      "lore-hack:grama-cortada",
+      "lore-hack:rede-clandestina-hobbit"
+    ],
+    "grega": [
+      "lore-hack:artemis"
+    ],
+    "grego": [
+      "lore-hack:poseidon"
+    ],
+    "grolantor": [
+      "lore-hack:grolantor"
     ],
     "grupos": [
       "lore-hack:kuo-toa"
@@ -1686,28 +2346,53 @@
       "lore-hack:shadar-riverie"
     ],
     "guerra": [
-      "lore-hack:caatinga"
+      "lore-hack:caatinga",
+      "lore-hack:odin"
     ],
     "guerras": [
       "lore-hack:confederacao-ossos"
     ],
+    "guerreira": [
+      "lore-hack:clangeddin-silverbeard"
+    ],
     "guerrilha": [
+      "lore-hack:divisao-druidas-rangers",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:rangers-ironwood"
     ],
     "habitantes": [
       "lore-hack:kuo-toa"
     ],
+    "hades": [
+      "lore-hack:hades"
+    ],
     "halflings": [
       "lore-hack:hobbits"
+    ],
+    "hecate": [
+      "lore-hack:hecate"
+    ],
+    "heimdall": [
+      "lore-hack:heimdall"
+    ],
+    "hermes": [
+      "lore-hack:hermes"
     ],
     "heroi": [
       "lore-hack:rayquaza"
     ],
+    "heroina": [
+      "lore-hack:diancastra"
+    ],
     "heterogeneos": [
       "lore-hack:feericos"
     ],
+    "hiatea": [
+      "lore-hack:hiatea"
+    ],
     "hierarquia": [
-      "lore-hack:ordenamento"
+      "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico"
     ],
     "historia": [
       "lore-hack:orcs-caatinga"
@@ -1717,12 +2402,15 @@
       "lore-hack:confederacao-ossos"
     ],
     "historicas": [
-      "lore-hack:caatinga"
+      "lore-hack:caatinga",
+      "lore-hack:conhecimento-gnomico"
     ],
     "hobbit": [
-      "lore-hack:menelau-folha-seca"
+      "lore-hack:menelau-folha-seca",
+      "lore-hack:rede-clandestina-hobbit"
     ],
     "hobbits": [
+      "lore-hack:agricultura-hobbit",
       "lore-hack:grama-cortada",
       "lore-hack:hobbits",
       "lore-hack:yondalla"
@@ -1730,7 +2418,14 @@
     "honra": [
       "lore-hack:draconatos-thargrid"
     ],
+    "hortas": [
+      "lore-hack:agricultura-hobbit"
+    ],
+    "horus": [
+      "lore-hack:horus"
+    ],
     "hospitalidade": [
+      "lore-hack:juramentos-feericos",
       "lore-hack:tortles"
     ],
     "humana": [
@@ -1740,8 +2435,12 @@
       "lore-hack:portomonte"
     ],
     "humanos": [
+      "lore-hack:hades",
       "lore-hack:humanos",
       "lore-hack:linguagens-yokai"
+    ],
+    "iallanis": [
+      "lore-hack:iallanis"
     ],
     "identidade": [
       "lore-hack:yolskaariin"
@@ -1757,18 +2456,23 @@
       "lore-hack:gnomos-floresta"
     ],
     "implica": [
+      "lore-hack:culto-rainha",
       "lore-hack:ordenamento",
       "lore-hack:teologia-plural"
     ],
     "impor": [
       "lore-hack:gigantes-thargrid"
     ],
+    "inclui": [
+      "lore-hack:rios-fronteiras-tritoes"
+    ],
     "inclusive": [
       "lore-hack:orcs-caatinga"
     ],
     "incursoes": [
       "lore-hack:abismo",
-      "lore-hack:costa-sul"
+      "lore-hack:costa-sul",
+      "lore-hack:diplomacia-abissal"
     ],
     "independente": [
       "lore-hack:reino-sob-montanha"
@@ -1778,14 +2482,20 @@
     ],
     "informacao": [
       "lore-hack:casa-shayr",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:grama-cortada",
       "lore-hack:manutencao-resistencia"
+    ],
+    "informacoes": [
+      "lore-hack:conhecimento-gnomico",
+      "lore-hack:rede-clandestina-hobbit"
     ],
     "informais": [
       "lore-hack:grama-cortada"
     ],
     "infraestrutura": [
-      "lore-hack:anoes-thargrid"
+      "lore-hack:anoes-thargrid",
+      "lore-hack:ecologia-de-thargrid"
     ],
     "inicio": [
       "lore-hack:confederacao-ossos"
@@ -1795,6 +2505,12 @@
     ],
     "instituicao": [
       "lore-hack:templo-demeter"
+    ],
+    "instituicoes": [
+      "lore-hack:mosteiros-tortles"
+    ],
+    "instrumento": [
+      "lore-hack:sombra-em-eldroth"
     ],
     "insulares": [
       "lore-hack:tabaxis",
@@ -1821,16 +2537,31 @@
       "lore-hack:gnomos-rochas"
     ],
     "ironwood": [
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:elara-stormoak",
       "lore-hack:elfos-floresta",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:ironwood",
       "lore-hack:rangers-ironwood"
+    ],
+    "isis": [
+      "lore-hack:isis"
     ],
     "istus": [
       "lore-hack:istus"
     ],
+    "jornadas": [
+      "lore-hack:conhecimento-gnomico"
+    ],
+    "jovens": [
+      "lore-hack:jornada-tabaxi"
+    ],
     "juramentos": [
-      "lore-hack:draconatos-thargrid"
+      "lore-hack:draconatos-thargrid",
+      "lore-hack:juramentos-feericos"
+    ],
+    "juridico": [
+      "lore-hack:ordenamento-multietnico"
     ],
     "justica": [
       "lore-hack:bahamut"
@@ -1841,10 +2572,24 @@
     "kuo": [
       "lore-hack:daegon",
       "lore-hack:kuo-toa",
-      "lore-hack:orcs-caatinga"
+      "lore-hack:orcs-caatinga",
+      "lore-hack:teocracia-kuotoa"
+    ],
+    "ladroes": [
+      "lore-hack:hermes"
     ],
     "lady": [
       "lore-hack:morwen-nightshade"
+    ],
+    "lar": [
+      "lore-hack:berronar-truesilver",
+      "lore-hack:hiatea"
+    ],
+    "larethian": [
+      "lore-hack:corellon-larethian"
+    ],
+    "lealdade": [
+      "lore-hack:heimdall"
     ],
     "legitimidade": [
       "lore-hack:direito-de-nomear"
@@ -1852,6 +2597,9 @@
     "leste": [
       "lore-hack:garganta",
       "lore-hack:linguagens-yokai"
+    ],
+    "levados": [
+      "lore-hack:jornada-tabaxi"
     ],
     "lhes": [
       "lore-hack:ateismo-arcano"
@@ -1862,6 +2610,8 @@
     "ligada": [
       "lore-hack:casa-shayr",
       "lore-hack:linguagens-yokai",
+      "lore-hack:ptah",
+      "lore-hack:rillifane-rallathil",
       "lore-hack:sarastra-aestruum",
       "lore-hack:selene",
       "lore-hack:yolskaariin"
@@ -1879,13 +2629,17 @@
       "lore-hack:mar-de-sangue"
     ],
     "limite": [
-      "lore-hack:fronteira-marinha"
+      "lore-hack:fronteira-marinha",
+      "lore-hack:ordenamento-multietnico"
     ],
     "lingua": [
       "lore-hack:linguagens-yokai"
     ],
     "linhagens": [
       "lore-hack:meio-demonios"
+    ],
+    "literal": [
+      "lore-hack:juramentos-feericos"
     ],
     "litoral": [
       "lore-hack:caatinga"
@@ -1915,6 +2669,13 @@
     "luz": [
       "lore-hack:alquam"
     ],
+    "magia": [
+      "lore-hack:boccob",
+      "lore-hack:corellon-larethian"
+    ],
+    "magica": [
+      "lore-hack:hecate"
+    ],
     "magicos": [
       "lore-hack:casa-shayr"
     ],
@@ -1930,9 +2691,16 @@
     "manifestacao": [
       "lore-hack:mudanca-oceano"
     ],
+    "mantem": [
+      "lore-hack:nao-centralizacao-tritoes"
+    ],
+    "mapas": [
+      "lore-hack:conhecimento-gnomico"
+    ],
     "mar": [
       "lore-hack:fronteira-marinha",
       "lore-hack:mar-de-sangue",
+      "lore-hack:njord",
       "lore-hack:oceanos-azuis"
     ],
     "marcado": [
@@ -1945,13 +2713,18 @@
       "lore-hack:templo-das-sombras"
     ],
     "marinhas": [
+      "lore-hack:nao-centralizacao-tritoes",
       "lore-hack:sereias"
+    ],
+    "marinheiros": [
+      "lore-hack:poseidon"
     ],
     "marinho": [
       "lore-hack:eadro"
     ],
     "marinhos": [
-      "lore-hack:abissais-marinhos"
+      "lore-hack:abissais-marinhos",
+      "lore-hack:diplomacia-abissal"
     ],
     "maritima": [
       "lore-hack:costa-sul",
@@ -1965,6 +2738,7 @@
     ],
     "material": [
       "lore-hack:anoes-thargrid",
+      "lore-hack:ecologia-de-thargrid",
       "lore-hack:moradin",
       "lore-hack:teologia-plural"
     ],
@@ -1974,12 +2748,19 @@
     "meio": [
       "lore-hack:meio-demonios"
     ],
+    "memnor": [
+      "lore-hack:memnor"
+    ],
     "memoria": [
+      "lore-hack:cantos-sereias",
       "lore-hack:hobbits",
       "lore-hack:sereias"
     ],
     "menelau": [
       "lore-hack:menelau-folha-seca"
+    ],
+    "mercadores": [
+      "lore-hack:hermes"
     ],
     "merece": [
       "lore-hack:gualapolis"
@@ -1991,10 +2772,12 @@
       "lore-hack:sarastra-aestruum"
     ],
     "minas": [
+      "lore-hack:ecologia-de-thargrid",
       "lore-hack:manutencao-resistencia",
       "lore-hack:reino-sob-montanha"
     ],
     "mineracao": [
+      "lore-hack:dumathoin",
       "lore-hack:garganta",
       "lore-hack:svirfneblin"
     ],
@@ -2021,7 +2804,8 @@
       "lore-hack:thargrid"
     ],
     "montanhosa": [
-      "lore-hack:draconatos-thargrid"
+      "lore-hack:draconatos-thargrid",
+      "lore-hack:ecologia-de-thargrid"
     ],
     "montanhosas": [
       "lore-hack:gigantes-thargrid"
@@ -2036,6 +2820,7 @@
       "lore-hack:meio-demonios"
     ],
     "morto": [
+      "lore-hack:culto-golzdov",
       "lore-hack:golzdov"
     ],
     "mortos": [
@@ -2047,6 +2832,9 @@
     "morwen": [
       "lore-hack:morwen-nightshade"
     ],
+    "mosteiros": [
+      "lore-hack:mosteiros-tortles"
+    ],
     "movel": [
       "lore-hack:fronteira-marinha",
       "lore-hack:oceanos-azuis"
@@ -2054,20 +2842,29 @@
     "mudanca": [
       "lore-hack:mudanca-oceano"
     ],
+    "mudancas": [
+      "lore-hack:conhecimento-gnomico"
+    ],
     "multicultural": [
       "lore-hack:thargrid"
     ],
     "mundo": [
       "lore-hack:shadowfade"
     ],
+    "musicos": [
+      "lore-hack:apolo"
+    ],
     "nao": [
       "lore-hack:abissais-marinhos",
+      "lore-hack:culto-rainha",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:kuo-toa",
       "lore-hack:meio-demonios",
       "lore-hack:menelau-folha-seca",
       "lore-hack:natureza-demoniaca",
       "lore-hack:orcs-caatinga",
       "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico",
       "lore-hack:templo-demeter",
       "lore-hack:teologia-plural",
       "lore-hack:tiamat",
@@ -2077,7 +2874,9 @@
       "lore-hack:menelau-folha-seca"
     ],
     "nas": [
-      "lore-hack:eadro"
+      "lore-hack:eadro",
+      "lore-hack:osiris",
+      "lore-hack:rillifane-rallathil"
     ],
     "nativa": [
       "lore-hack:gualapolis"
@@ -2086,7 +2885,9 @@
       "lore-hack:ulorian-uln-shayr"
     ],
     "natureza": [
-      "lore-hack:natureza-demoniaca"
+      "lore-hack:ligacoes-sacras-ossos",
+      "lore-hack:natureza-demoniaca",
+      "lore-hack:rillifane-rallathil"
     ],
     "naturezas": [
       "lore-hack:natureza-demoniaca"
@@ -2108,10 +2909,17 @@
     "nightwhisper": [
       "lore-hack:sylara-nightwhisper"
     ],
+    "njord": [
+      "lore-hack:njord"
+    ],
     "noite": [
       "lore-hack:alquam",
+      "lore-hack:culto-rainha",
       "lore-hack:sarastra-aestruum",
       "lore-hack:templo-do-crepusculo"
+    ],
+    "nome": [
+      "lore-hack:juramentos-feericos"
     ],
     "nomeacao": [
       "lore-hack:direito-de-nomear"
@@ -2122,13 +2930,28 @@
     "nomes": [
       "lore-hack:linguagens-yokai"
     ],
+    "nordica": [
+      "lore-hack:freya",
+      "lore-hack:heimdall",
+      "lore-hack:njord",
+      "lore-hack:odin",
+      "lore-hack:thor",
+      "lore-hack:tyr"
+    ],
     "norte": [
       "lore-hack:templo-das-sombras",
       "lore-hack:thargrid"
     ],
     "nos": [
+      "lore-hack:hades",
       "lore-hack:kanji-de-poder",
       "lore-hack:svirfneblin"
+    ],
+    "nuvens": [
+      "lore-hack:memnor"
+    ],
+    "observacao": [
+      "lore-hack:espionagem-ironwood"
     ],
     "oceanica": [
       "lore-hack:sashelas"
@@ -2145,10 +2968,13 @@
     ],
     "ocupacao": [
       "lore-hack:carcaca",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:eldroth",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:humanos"
     ],
     "ocupada": [
+      "lore-hack:sombra-em-eldroth",
       "lore-hack:vandar"
     ],
     "ocupado": [
@@ -2157,6 +2983,9 @@
     "ocupante": [
       "lore-hack:varys-duskveil"
     ],
+    "odin": [
+      "lore-hack:odin"
+    ],
     "oeste": [
       "lore-hack:abismo"
     ],
@@ -2164,10 +2993,18 @@
       "lore-hack:gnomos",
       "lore-hack:gnomos-rochas"
     ],
+    "oficios": [
+      "lore-hack:ptah"
+    ],
+    "operacoes": [
+      "lore-hack:espionagem-ironwood"
+    ],
     "orais": [
+      "lore-hack:mosteiros-tortles",
       "lore-hack:tortles"
     ],
     "oral": [
+      "lore-hack:cantos-sereias",
       "lore-hack:hobbits"
     ],
     "orcs": [
@@ -2176,20 +3013,34 @@
     ],
     "ordenamento": [
       "lore-hack:gigantes-thargrid",
-      "lore-hack:ordenamento"
+      "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico"
     ],
     "ordenar": [
       "lore-hack:kanji-de-poder"
     ],
+    "organizacao": [
+      "lore-hack:teocracia-kuotoa"
+    ],
+    "organizam": [
+      "lore-hack:espionagem-ironwood"
+    ],
     "origem": [
-      "lore-hack:golzdov"
+      "lore-hack:golzdov",
+      "lore-hack:jornada-tabaxi"
     ],
     "original": [
       "lore-hack:shadowfade"
     ],
+    "osiris": [
+      "lore-hack:osiris"
+    ],
     "ossos": [
       "lore-hack:confederacao-ossos",
+      "lore-hack:culto-golzdov",
       "lore-hack:kanji-de-poder",
+      "lore-hack:ligacoes-sacras-ossos",
+      "lore-hack:skoraeus",
       "lore-hack:svirfneblin",
       "lore-hack:yokai-antigos"
     ],
@@ -2202,7 +3053,10 @@
     ],
     "pactos": [
       "lore-hack:abissais-marinhos",
-      "lore-hack:mammon"
+      "lore-hack:diplomacia-abissal",
+      "lore-hack:juramentos-feericos",
+      "lore-hack:mammon",
+      "lore-hack:nao-centralizacao-tritoes"
     ],
     "palacio": [
       "lore-hack:templo-das-sombras",
@@ -2210,12 +3064,20 @@
     ],
     "panteao": [
       "lore-hack:annam",
+      "lore-hack:clangeddin-silverbeard",
+      "lore-hack:diancastra",
+      "lore-hack:hiatea",
+      "lore-hack:memnor",
+      "lore-hack:poseidon",
+      "lore-hack:ra",
+      "lore-hack:skoraeus",
       "lore-hack:teologia-plural"
     ],
     "panteoes": [
       "lore-hack:teologia-plural"
     ],
     "para": [
+      "lore-hack:agricultura-hobbit",
       "lore-hack:sylara-nightwhisper",
       "lore-hack:templo-demeter"
     ],
@@ -2223,6 +3085,7 @@
       "lore-hack:shadowfade"
     ],
     "passagens": [
+      "lore-hack:conhecimento-gnomico",
       "lore-hack:draconatos-thargrid",
       "lore-hack:garganta",
       "lore-hack:reino-sob-montanha",
@@ -2234,8 +3097,21 @@
     "patrulham": [
       "lore-hack:tritoes"
     ],
+    "patrulhas": [
+      "lore-hack:rios-fronteiras-tritoes"
+    ],
+    "paz": [
+      "lore-hack:iallanis"
+    ],
+    "pedagios": [
+      "lore-hack:conhecimento-gnomico"
+    ],
     "pedra": [
-      "lore-hack:gigantes-pedra"
+      "lore-hack:gigantes-pedra",
+      "lore-hack:skoraeus"
+    ],
+    "pela": [
+      "lore-hack:sombra-em-eldroth"
     ],
     "pelo": [
       "lore-hack:portomonte",
@@ -2247,6 +3123,9 @@
     ],
     "pelos": [
       "lore-hack:linguagens-yokai"
+    ],
+    "pequenas": [
+      "lore-hack:espionagem-ironwood"
     ],
     "perante": [
       "lore-hack:humanos"
@@ -2263,6 +3142,9 @@
     "pesquisador": [
       "lore-hack:trelohim-uln-shayr"
     ],
+    "pessoas": [
+      "lore-hack:rede-clandestina-hobbit"
+    ],
     "picos": [
       "lore-hack:gigantes-gelo"
     ],
@@ -2272,20 +3154,30 @@
     "pluralidade": [
       "lore-hack:teologia-plural"
     ],
+    "podem": [
+      "lore-hack:diplomacia-abissal",
+      "lore-hack:rede-clandestina-hobbit"
+    ],
     "poder": [
       "lore-hack:corte-feerica",
       "lore-hack:rio-ancestral",
+      "lore-hack:teocracia-kuotoa",
       "lore-hack:yokai-antigos"
     ],
     "politica": [
+      "lore-hack:culto-rainha",
       "lore-hack:draconatos-thargrid",
       "lore-hack:orcs-caatinga"
+    ],
+    "pomares": [
+      "lore-hack:agricultura-hobbit"
     ],
     "pontes": [
       "lore-hack:gigantes-pedra"
     ],
     "popular": [
-      "lore-hack:bastet"
+      "lore-hack:bastet",
+      "lore-hack:poseidon"
     ],
     "por": [
       "lore-hack:boca-do-abismo",
@@ -2293,6 +3185,8 @@
       "lore-hack:daegon",
       "lore-hack:severina-shadowbloom",
       "lore-hack:shadowfade",
+      "lore-hack:sobek",
+      "lore-hack:thoth",
       "lore-hack:vandar"
     ],
     "portoes": [
@@ -2305,17 +3199,26 @@
       "lore-hack:portomonte",
       "lore-hack:templo-demeter"
     ],
+    "poseidon": [
+      "lore-hack:poseidon"
+    ],
     "posicao": [
       "lore-hack:ateismo-arcano"
     ],
     "possibilidade": [
       "lore-hack:mar-de-sangue"
     ],
+    "possibilitando": [
+      "lore-hack:cantos-sereias"
+    ],
     "possuem": [
       "lore-hack:linguagens-yokai"
     ],
     "posterior": [
       "lore-hack:rayquaza"
+    ],
+    "postos": [
+      "lore-hack:rios-fronteiras-tritoes"
     ],
     "povo": [
       "lore-hack:humanos",
@@ -2328,12 +3231,26 @@
       "lore-hack:gigantes-thargrid",
       "lore-hack:mudanca-oceano",
       "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico",
       "lore-hack:tabaxis",
       "lore-hack:tortles",
       "lore-hack:tritoes"
     ],
+    "pratica": [
+      "lore-hack:conhecimento-gnomico",
+      "lore-hack:culto-rainha"
+    ],
+    "praticas": [
+      "lore-hack:ligacoes-sacras-ossos"
+    ],
     "presente": [
-      "lore-hack:sashelas"
+      "lore-hack:hades",
+      "lore-hack:osiris",
+      "lore-hack:sashelas",
+      "lore-hack:set"
+    ],
+    "preservam": [
+      "lore-hack:cantos-sereias"
     ],
     "presidia": [
       "lore-hack:xandros-gloomspire"
@@ -2341,8 +3258,17 @@
     "pressao": [
       "lore-hack:birka-uln-shayr"
     ],
+    "preventiva": [
+      "lore-hack:divisao-druidas-rangers"
+    ],
     "principe": [
       "lore-hack:rayquaza"
+    ],
+    "procuram": [
+      "lore-hack:jornada-tabaxi"
+    ],
+    "producao": [
+      "lore-hack:ecologia-de-thargrid"
     ],
     "profundezas": [
       "lore-hack:abissais-marinhos",
@@ -2353,20 +3279,34 @@
     "proibido": [
       "lore-hack:tiamat"
     ],
+    "promessas": [
+      "lore-hack:juramentos-feericos"
+    ],
     "propria": [
       "lore-hack:druidas-eldroth",
       "lore-hack:golzdov"
     ],
     "protecao": [
       "lore-hack:bahamut",
+      "lore-hack:berronar-truesilver",
+      "lore-hack:diplomacia-abissal",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:rangers-ironwood",
+      "lore-hack:rios-fronteiras-tritoes",
       "lore-hack:yondalla"
+    ],
+    "proteger": [
+      "lore-hack:sombra-em-eldroth"
     ],
     "provadas": [
       "lore-hack:templo-demeter"
     ],
     "provisoes": [
-      "lore-hack:anoes-thargrid"
+      "lore-hack:anoes-thargrid",
+      "lore-hack:ecologia-de-thargrid"
+    ],
+    "ptah": [
+      "lore-hack:ptah"
     ],
     "purifica": [
       "lore-hack:templo-demeter"
@@ -2380,10 +3320,13 @@
     ],
     "que": [
       "lore-hack:ateismo-arcano",
+      "lore-hack:culto-rainha",
       "lore-hack:damaris-blackthorn",
       "lore-hack:golzdov",
+      "lore-hack:juramentos-feericos",
       "lore-hack:kuo-toa",
       "lore-hack:mar-de-sangue",
+      "lore-hack:mosteiros-tortles",
       "lore-hack:oceanos-azuis",
       "lore-hack:ordenamento",
       "lore-hack:templo-demeter",
@@ -2397,15 +3340,24 @@
       "lore-hack:gigantes-fogo"
     ],
     "rainha": [
+      "lore-hack:culto-rainha",
       "lore-hack:sarastra-aestruum",
       "lore-hack:templo-das-sombras",
       "lore-hack:templo-do-crepusculo",
       "lore-hack:xandros-gloomspire"
     ],
+    "raizes": [
+      "lore-hack:agricultura-hobbit"
+    ],
+    "rallathil": [
+      "lore-hack:rillifane-rallathil"
+    ],
     "ranger": [
       "lore-hack:elara-stormoak"
     ],
     "rangers": [
+      "lore-hack:divisao-druidas-rangers",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:ironwood",
       "lore-hack:rangers-ironwood"
     ],
@@ -2422,6 +3374,9 @@
     "reconhecem": [
       "lore-hack:ateismo-arcano"
     ],
+    "reconhecimento": [
+      "lore-hack:culto-rainha"
+    ],
     "rede": [
       "lore-hack:resistencia"
     ],
@@ -2435,11 +3390,14 @@
       "lore-hack:bahamut"
     ],
     "refugiados": [
+      "lore-hack:espionagem-ironwood",
       "lore-hack:rangers-ironwood",
       "lore-hack:reino-sob-montanha"
     ],
     "regiao": [
-      "lore-hack:grama-cortada"
+      "lore-hack:grama-cortada",
+      "lore-hack:isis",
+      "lore-hack:ra"
     ],
     "regime": [
       "lore-hack:drakport"
@@ -2447,11 +3405,18 @@
     "regioes": [
       "lore-hack:gigantes-fogo"
     ],
+    "regionais": [
+      "lore-hack:culto-golzdov"
+    ],
+    "registram": [
+      "lore-hack:conhecimento-gnomico"
+    ],
     "regula": [
       "lore-hack:gigantes-thargrid"
     ],
     "reino": [
       "lore-hack:gigantes-thargrid",
+      "lore-hack:nao-centralizacao-tritoes",
       "lore-hack:reino-sob-montanha"
     ],
     "relacao": [
@@ -2459,31 +3424,53 @@
       "lore-hack:yolskaariin"
     ],
     "relacionada": [
-      "lore-hack:gualapolis"
+      "lore-hack:apolo",
+      "lore-hack:berronar-truesilver",
+      "lore-hack:corellon-larethian",
+      "lore-hack:gualapolis",
+      "lore-hack:hiatea",
+      "lore-hack:iallanis",
+      "lore-hack:odin",
+      "lore-hack:stronmaus",
+      "lore-hack:thor",
+      "lore-hack:vergadain"
     ],
     "relacoes": [
       "lore-hack:caatinga",
-      "lore-hack:gigantes-thargrid"
+      "lore-hack:gigantes-thargrid",
+      "lore-hack:juramentos-feericos"
     ],
     "religiosa": [
       "lore-hack:bahamut",
+      "lore-hack:culto-rainha",
+      "lore-hack:diplomacia-abissal",
       "lore-hack:templo-demeter",
       "lore-hack:teologia-plural"
     ],
     "religiosas": [
-      "lore-hack:daegon"
+      "lore-hack:daegon",
+      "lore-hack:ligacoes-sacras-ossos"
+    ],
+    "reservas": [
+      "lore-hack:agricultura-hobbit"
     ],
     "resistencia": [
       "lore-hack:anoes-thargrid",
       "lore-hack:carcaca",
+      "lore-hack:divisao-druidas-rangers",
+      "lore-hack:ecologia-de-thargrid",
       "lore-hack:elfos-floresta",
       "lore-hack:gnomos-floresta",
       "lore-hack:ironwood",
       "lore-hack:manutencao-resistencia",
       "lore-hack:rayquaza",
+      "lore-hack:rede-clandestina-hobbit",
       "lore-hack:resistencia",
       "lore-hack:sylara-nightwhisper",
       "lore-hack:thargrid"
+    ],
+    "resolver": [
+      "lore-hack:ligacoes-sacras-ossos"
     ],
     "responsavel": [
       "lore-hack:severina-shadowbloom"
@@ -2494,20 +3481,39 @@
     "retorno": [
       "lore-hack:tabaxis"
     ],
+    "reverenciada": [
+      "lore-hack:thoth"
+    ],
     "revisao": [
       "lore-hack:gualapolis"
     ],
     "ribeirinhas": [
       "lore-hack:bastet"
     ],
+    "rillifane": [
+      "lore-hack:rillifane-rallathil"
+    ],
     "rio": [
       "lore-hack:abismo",
       "lore-hack:bastet",
+      "lore-hack:horus",
       "lore-hack:humanos",
+      "lore-hack:isis",
+      "lore-hack:osiris",
+      "lore-hack:ra",
       "lore-hack:rio-ancestral",
+      "lore-hack:set",
       "lore-hack:severina-shadowbloom",
       "lore-hack:templo-da-lua",
       "lore-hack:ulorian-uln-shayr"
+    ],
+    "riquezas": [
+      "lore-hack:dumathoin"
+    ],
+    "ritos": [
+      "lore-hack:anubis",
+      "lore-hack:hades",
+      "lore-hack:osiris"
     ],
     "rituais": [
       "lore-hack:costa-sul",
@@ -2517,8 +3523,10 @@
     ],
     "ritual": [
       "lore-hack:direito-de-nomear",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:linguagens-yokai",
-      "lore-hack:templo-das-sombras"
+      "lore-hack:templo-das-sombras",
+      "lore-hack:teocracia-kuotoa"
     ],
     "ritualista": [
       "lore-hack:xandros-gloomspire"
@@ -2534,7 +3542,10 @@
       "lore-hack:gnomos-rochas"
     ],
     "rotas": [
+      "lore-hack:cantos-sereias",
       "lore-hack:casa-shayr",
+      "lore-hack:conhecimento-gnomico",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:gnomos-floresta",
       "lore-hack:istus",
       "lore-hack:manutencao-resistencia",
@@ -2543,8 +3554,15 @@
     "ruinas": [
       "lore-hack:vandar"
     ],
+    "sabedoria": [
+      "lore-hack:thoth"
+    ],
     "sabotagem": [
+      "lore-hack:espionagem-ironwood",
       "lore-hack:rangers-ironwood"
+    ],
+    "sacralidade": [
+      "lore-hack:ligacoes-sacras-ossos"
     ],
     "sacrificiais": [
       "lore-hack:kuo-toa"
@@ -2571,6 +3589,7 @@
       "lore-hack:sashelas"
     ],
     "sazonais": [
+      "lore-hack:jornada-tabaxi",
       "lore-hack:tortles"
     ],
     "sazonal": [
@@ -2582,6 +3601,10 @@
     "secretas": [
       "lore-hack:svirfneblin"
     ],
+    "segredos": [
+      "lore-hack:dumathoin",
+      "lore-hack:ptah"
+    ],
     "seguem": [
       "lore-hack:golzdov"
     ],
@@ -2592,8 +3615,11 @@
       "lore-hack:selene"
     ],
     "sem": [
+      "lore-hack:culto-golzdov",
       "lore-hack:gigantes-thargrid",
-      "lore-hack:manutencao-resistencia"
+      "lore-hack:ligacoes-sacras-ossos",
+      "lore-hack:manutencao-resistencia",
+      "lore-hack:nao-centralizacao-tritoes"
     ],
     "senhor": [
       "lore-hack:alquam",
@@ -2604,12 +3630,27 @@
       "lore-hack:gigantes-gelo"
     ],
     "sereias": [
+      "lore-hack:cantos-sereias",
       "lore-hack:fronteira-marinha",
+      "lore-hack:nao-centralizacao-tritoes",
       "lore-hack:oceanos-azuis",
       "lore-hack:sashelas",
       "lore-hack:sereias"
     ],
+    "serem": [
+      "lore-hack:jornada-tabaxi"
+    ],
+    "seres": [
+      "lore-hack:sombra-em-eldroth"
+    ],
+    "serve": [
+      "lore-hack:ligacoes-sacras-ossos"
+    ],
+    "set": [
+      "lore-hack:set"
+    ],
     "seu": [
+      "lore-hack:culto-golzdov",
       "lore-hack:rayquaza",
       "lore-hack:vandar"
     ],
@@ -2643,16 +3684,26 @@
       "lore-hack:trelohim-uln-shayr",
       "lore-hack:ulorian-uln-shayr"
     ],
+    "silverbeard": [
+      "lore-hack:clangeddin-silverbeard"
+    ],
     "simbolico": [
       "lore-hack:direito-de-nomear"
     ],
     "situacoes": [
       "lore-hack:humanos"
     ],
+    "skoraeus": [
+      "lore-hack:skoraeus"
+    ],
     "sob": [
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:eldroth",
       "lore-hack:ironwood",
       "lore-hack:reino-sob-montanha"
+    ],
+    "sobek": [
+      "lore-hack:sobek"
     ],
     "soberana": [
       "lore-hack:sarastra-aestruum"
@@ -2663,8 +3714,11 @@
     "sobre": [
       "lore-hack:birka-uln-shayr",
       "lore-hack:carcaca",
+      "lore-hack:culto-golzdov",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:linguagens-yokai",
       "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico",
       "lore-hack:yokai-antigos"
     ],
     "sobrevivencia": [
@@ -2675,6 +3729,9 @@
       "lore-hack:templo-yolskaariin",
       "lore-hack:yolskaariin"
     ],
+    "soldados": [
+      "lore-hack:atena"
+    ],
     "sombras": [
       "lore-hack:templo-das-sombras",
       "lore-hack:xandros-gloomspire"
@@ -2683,20 +3740,28 @@
       "lore-hack:damaris-blackthorn"
     ],
     "sorte": [
-      "lore-hack:istus"
+      "lore-hack:istus",
+      "lore-hack:vergadain"
     ],
     "stormoak": [
       "lore-hack:elara-stormoak",
       "lore-hack:ironwood"
     ],
+    "stronmaus": [
+      "lore-hack:stronmaus"
+    ],
     "sua": [
       "lore-hack:templo-do-crepusculo",
       "lore-hack:yolskaariin"
+    ],
+    "subaquatica": [
+      "lore-hack:cantos-sereias"
     ],
     "submarinas": [
       "lore-hack:kuo-toa"
     ],
     "subterraneas": [
+      "lore-hack:dumathoin",
       "lore-hack:gigantes-fogo",
       "lore-hack:reino-sob-montanha"
     ],
@@ -2710,6 +3775,9 @@
     "superficie": [
       "lore-hack:mudanca-oceano"
     ],
+    "surtur": [
+      "lore-hack:surtur"
+    ],
     "sustentam": [
       "lore-hack:manutencao-resistencia"
     ],
@@ -2720,8 +3788,12 @@
       "lore-hack:eldroth",
       "lore-hack:sylara-nightwhisper"
     ],
+    "tabaxi": [
+      "lore-hack:jornada-tabaxi"
+    ],
     "tabaxis": [
       "lore-hack:ilhas-monasticas",
+      "lore-hack:jornada-tabaxi",
       "lore-hack:tabaxis"
     ],
     "tardia": [
@@ -2729,6 +3801,12 @@
     ],
     "taxonomia": [
       "lore-hack:yokai-antigos"
+    ],
+    "tempestade": [
+      "lore-hack:stronmaus"
+    ],
+    "tempestades": [
+      "lore-hack:thor"
     ],
     "templo": [
       "lore-hack:demeter",
@@ -2744,6 +3822,15 @@
     "tensa": [
       "lore-hack:ulorian-uln-shayr"
     ],
+    "tentam": [
+      "lore-hack:sombra-em-eldroth"
+    ],
+    "teocracia": [
+      "lore-hack:teocracia-kuotoa"
+    ],
+    "teocratica": [
+      "lore-hack:teocracia-kuotoa"
+    ],
     "teologica": [
       "lore-hack:pelor"
     ],
@@ -2751,7 +3838,8 @@
       "lore-hack:caatinga"
     ],
     "territorial": [
-      "lore-hack:direito-de-nomear"
+      "lore-hack:direito-de-nomear",
+      "lore-hack:ligacoes-sacras-ossos"
     ],
     "territorio": [
       "lore-hack:linguagens-yokai"
@@ -2760,14 +3848,25 @@
       "lore-hack:anoes-thargrid",
       "lore-hack:bahamut",
       "lore-hack:draconatos-thargrid",
+      "lore-hack:ecologia-de-thargrid",
       "lore-hack:gigantes-fogo",
       "lore-hack:gigantes-gelo",
       "lore-hack:gigantes-pedra",
       "lore-hack:gigantes-thargrid",
       "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico",
       "lore-hack:rayquaza",
       "lore-hack:thargrid",
       "lore-hack:tiamat"
+    ],
+    "thor": [
+      "lore-hack:thor"
+    ],
+    "thoth": [
+      "lore-hack:thoth"
+    ],
+    "thrym": [
+      "lore-hack:thrym"
     ],
     "tiamat": [
       "lore-hack:tiamat"
@@ -2781,7 +3880,8 @@
     "toa": [
       "lore-hack:daegon",
       "lore-hack:kuo-toa",
-      "lore-hack:orcs-caatinga"
+      "lore-hack:orcs-caatinga",
+      "lore-hack:teocracia-kuotoa"
     ],
     "todo": [
       "lore-hack:orcs-caatinga"
@@ -2797,6 +3897,7 @@
     ],
     "tortles": [
       "lore-hack:ilhas-monasticas",
+      "lore-hack:mosteiros-tortles",
       "lore-hack:tortles"
     ],
     "trabalho": [
@@ -2806,10 +3907,13 @@
       "lore-hack:linguagens-yokai"
     ],
     "tradicional": [
+      "lore-hack:clangeddin-silverbeard",
       "lore-hack:ordenamento"
     ],
     "tradicoes": [
+      "lore-hack:hecate",
       "lore-hack:ilhas-monasticas",
+      "lore-hack:rillifane-rallathil",
       "lore-hack:sehanine"
     ],
     "traidor": [
@@ -2822,6 +3926,7 @@
       "lore-hack:bahamut"
     ],
     "trapaca": [
+      "lore-hack:diancastra",
       "lore-hack:garl-glittergold"
     ],
     "trechos": [
@@ -2831,17 +3936,30 @@
       "lore-hack:trelohim-uln-shayr"
     ],
     "tributacao": [
-      "lore-hack:corte-feerica"
+      "lore-hack:corte-feerica",
+      "lore-hack:diplomacia-abissal"
     ],
     "tributos": [
       "lore-hack:abissais-marinhos",
+      "lore-hack:diplomacia-abissal",
       "lore-hack:rio-ancestral"
     ],
     "tritoes": [
       "lore-hack:eadro",
       "lore-hack:fronteira-marinha",
+      "lore-hack:nao-centralizacao-tritoes",
       "lore-hack:oceanos-azuis",
+      "lore-hack:rios-fronteiras-tritoes",
       "lore-hack:tritoes"
+    ],
+    "trovoes": [
+      "lore-hack:thor"
+    ],
+    "truesilver": [
+      "lore-hack:berronar-truesilver"
+    ],
+    "tyr": [
+      "lore-hack:tyr"
     ],
     "uln": [
       "lore-hack:birka-uln-shayr",
@@ -2856,11 +3974,15 @@
       "lore-hack:oceanos-azuis",
       "lore-hack:shadar-riverie"
     ],
+    "unanime": [
+      "lore-hack:culto-rainha"
+    ],
     "unica": [
       "lore-hack:natureza-demoniaca"
     ],
     "unico": [
-      "lore-hack:manutencao-resistencia"
+      "lore-hack:manutencao-resistencia",
+      "lore-hack:nao-centralizacao-tritoes"
     ],
     "urbanos": [
       "lore-hack:gnomos"
@@ -2890,6 +4012,15 @@
     "veneram": [
       "lore-hack:kuo-toa"
     ],
+    "ventos": [
+      "lore-hack:njord"
+    ],
+    "verdadeiro": [
+      "lore-hack:juramentos-feericos"
+    ],
+    "vergadain": [
+      "lore-hack:vergadain"
+    ],
     "vermelhas": [
       "lore-hack:fronteira-marinha"
     ],
@@ -2897,13 +4028,21 @@
       "lore-hack:portomonte"
     ],
     "viagem": [
+      "lore-hack:jornada-tabaxi",
       "lore-hack:tabaxis"
     ],
     "viagens": [
+      "lore-hack:jornada-tabaxi",
       "lore-hack:tortles"
     ],
+    "viajantes": [
+      "lore-hack:hermes",
+      "lore-hack:mosteiros-tortles"
+    ],
     "vigilancia": [
-      "lore-hack:eldroth"
+      "lore-hack:eldroth",
+      "lore-hack:heimdall",
+      "lore-hack:sombra-em-eldroth"
     ],
     "vinculada": [
       "lore-hack:demeter"
@@ -2920,6 +4059,9 @@
     "vivos": [
       "lore-hack:damaris-blackthorn",
       "lore-hack:vandar"
+    ],
+    "voltadas": [
+      "lore-hack:teocracia-kuotoa"
     ],
     "voragar": [
       "lore-hack:rayquaza",
@@ -2954,33 +4096,53 @@
     "afirmado_no_rascunho": [
       "lore-hack:abismo",
       "lore-hack:abissais-marinhos",
+      "lore-hack:agricultura-hobbit",
       "lore-hack:alquam",
       "lore-hack:annam",
       "lore-hack:anoes-thargrid",
+      "lore-hack:anubis",
+      "lore-hack:apolo",
       "lore-hack:arquivo-mortos-afogados",
+      "lore-hack:artemis",
       "lore-hack:ateismo-arcano",
+      "lore-hack:atena",
       "lore-hack:bahamut",
       "lore-hack:bastet",
+      "lore-hack:berronar-truesilver",
       "lore-hack:birka-uln-shayr",
       "lore-hack:boca-do-abismo",
+      "lore-hack:boccob",
       "lore-hack:caatinga",
+      "lore-hack:cantos-sereias",
       "lore-hack:carcaca",
       "lore-hack:casa-shayr",
+      "lore-hack:clangeddin-silverbeard",
       "lore-hack:confederacao-ossos",
+      "lore-hack:conhecimento-gnomico",
+      "lore-hack:corellon-larethian",
       "lore-hack:corte-feerica",
       "lore-hack:costa-sul",
+      "lore-hack:culto-golzdov",
+      "lore-hack:culto-rainha",
       "lore-hack:daegon",
       "lore-hack:damaris-blackthorn",
       "lore-hack:demeter",
+      "lore-hack:diancastra",
+      "lore-hack:diplomacia-abissal",
       "lore-hack:direito-de-nomear",
+      "lore-hack:divisao-druidas-rangers",
       "lore-hack:draconatos-thargrid",
       "lore-hack:drakport",
       "lore-hack:druidas-eldroth",
+      "lore-hack:dumathoin",
       "lore-hack:eadro",
+      "lore-hack:ecologia-de-thargrid",
       "lore-hack:elara-stormoak",
       "lore-hack:eldroth",
       "lore-hack:elfos-floresta",
+      "lore-hack:espionagem-ironwood",
       "lore-hack:feericos",
+      "lore-hack:freya",
       "lore-hack:fronteira-marinha",
       "lore-hack:garganta",
       "lore-hack:garl-glittergold",
@@ -2993,43 +4155,74 @@
       "lore-hack:gnomos-rochas",
       "lore-hack:golzdov",
       "lore-hack:grama-cortada",
+      "lore-hack:grolantor",
       "lore-hack:gualapolis",
+      "lore-hack:hades",
+      "lore-hack:hecate",
+      "lore-hack:heimdall",
+      "lore-hack:hermes",
+      "lore-hack:hiatea",
       "lore-hack:hobbits",
+      "lore-hack:horus",
       "lore-hack:humanos",
+      "lore-hack:iallanis",
       "lore-hack:ilhas-monasticas",
       "lore-hack:ironwood",
+      "lore-hack:isis",
       "lore-hack:istus",
+      "lore-hack:jornada-tabaxi",
+      "lore-hack:juramentos-feericos",
       "lore-hack:kanji-de-poder",
       "lore-hack:kuo-toa",
+      "lore-hack:ligacoes-sacras-ossos",
       "lore-hack:linguagens-yokai",
       "lore-hack:mammon",
       "lore-hack:manutencao-resistencia",
       "lore-hack:mar-de-sangue",
       "lore-hack:meio-demonios",
+      "lore-hack:memnor",
       "lore-hack:menelau-folha-seca",
       "lore-hack:moradin",
       "lore-hack:morwen-nightshade",
+      "lore-hack:mosteiros-tortles",
       "lore-hack:mudanca-oceano",
+      "lore-hack:nao-centralizacao-tritoes",
       "lore-hack:natureza-demoniaca",
+      "lore-hack:njord",
       "lore-hack:oceanos-azuis",
+      "lore-hack:odin",
       "lore-hack:orcs-caatinga",
       "lore-hack:ordenamento",
+      "lore-hack:ordenamento-multietnico",
+      "lore-hack:osiris",
       "lore-hack:pelor",
       "lore-hack:portomonte",
+      "lore-hack:poseidon",
+      "lore-hack:ptah",
+      "lore-hack:ra",
       "lore-hack:rangers-ironwood",
       "lore-hack:rayquaza",
+      "lore-hack:rede-clandestina-hobbit",
       "lore-hack:reino-sob-montanha",
       "lore-hack:resistencia",
+      "lore-hack:rillifane-rallathil",
       "lore-hack:rio-ancestral",
+      "lore-hack:rios-fronteiras-tritoes",
       "lore-hack:sarastra-aestruum",
       "lore-hack:sashelas",
       "lore-hack:sehanine",
       "lore-hack:selene",
       "lore-hack:sereias",
+      "lore-hack:set",
       "lore-hack:severina-shadowbloom",
       "lore-hack:shadar-riverie",
       "lore-hack:shadow-fey",
       "lore-hack:shadowfade",
+      "lore-hack:skoraeus",
+      "lore-hack:sobek",
+      "lore-hack:sombra-em-eldroth",
+      "lore-hack:stronmaus",
+      "lore-hack:surtur",
       "lore-hack:svirfneblin",
       "lore-hack:sylara-nightwhisper",
       "lore-hack:tabaxis",
@@ -3038,15 +4231,21 @@
       "lore-hack:templo-demeter",
       "lore-hack:templo-do-crepusculo",
       "lore-hack:templo-yolskaariin",
+      "lore-hack:teocracia-kuotoa",
       "lore-hack:teologia-plural",
       "lore-hack:thargrid",
+      "lore-hack:thor",
+      "lore-hack:thoth",
+      "lore-hack:thrym",
       "lore-hack:tiamat",
       "lore-hack:tortles",
       "lore-hack:trelohim-uln-shayr",
       "lore-hack:tritoes",
+      "lore-hack:tyr",
       "lore-hack:ulorian-uln-shayr",
       "lore-hack:vandar",
       "lore-hack:varys-duskveil",
+      "lore-hack:vergadain",
       "lore-hack:voragar",
       "lore-hack:xandros-gloomspire",
       "lore-hack:yokai-antigos",

@@ -41,6 +41,24 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:agricultura-hobbit",
+    "tipo": "conceito",
+    "nome": "Agricultura diversificada de Grama-Cortada",
+    "descricao": "Pomares, hortas, cereais, raízes e reservas domésticas contribuem para a continuidade das comunidades hobbits.",
+    "aliases": [
+      "Grama-Cortada"
+    ],
+    "paginas": [
+      2,
+      18,
+      19,
+      23
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:alquam",
     "tipo": "personagem",
     "nome": "Alquam",
@@ -94,6 +112,32 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:anubis",
+    "tipo": "divindade",
+    "nome": "Anúbis",
+    "descricao": "Divindade egípcia associada aos ritos funerários.",
+    "aliases": [],
+    "paginas": [
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:apolo",
+    "tipo": "divindade",
+    "nome": "Apolo",
+    "descricao": "Divindade relacionada a curandeiros, músicos e adivinhos.",
+    "aliases": [],
+    "paginas": [
+      23
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:arquivo-mortos-afogados",
     "tipo": "lugar",
     "nome": "Arquivo dos Mortos Afogados",
@@ -110,6 +154,19 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:artemis",
+    "tipo": "divindade",
+    "nome": "Ártemis",
+    "descricao": "Divindade grega associada aos caçadores.",
+    "aliases": [],
+    "paginas": [
+      23
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:ateismo-arcano",
     "tipo": "conceito",
     "nome": "Ateísmo Arcano",
@@ -120,6 +177,19 @@
     "paginas": [
       24,
       25
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:atena",
+    "tipo": "divindade",
+    "nome": "Atena",
+    "descricao": "Divindade associada a soldados, estrategistas e artesãos.",
+    "aliases": [],
+    "paginas": [
+      23
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -158,6 +228,21 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:berronar-truesilver",
+    "tipo": "divindade",
+    "nome": "Berronar Truesilver",
+    "descricao": "Divindade anã relacionada ao lar, à família e à proteção.",
+    "aliases": [
+      "Berronar"
+    ],
+    "paginas": [
+      22
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:birka-uln-shayr",
     "tipo": "personagem",
     "nome": "Birka Uln-Shayr",
@@ -188,6 +273,19 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:boccob",
+    "tipo": "divindade",
+    "nome": "Boccob",
+    "descricao": "Divindade associada a estudos da magia e do conhecimento.",
+    "aliases": [],
+    "paginas": [
+      25
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:caatinga",
     "tipo": "regiao",
     "nome": "Caatinga",
@@ -199,6 +297,22 @@
       5,
       9,
       12
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:cantos-sereias",
+    "tipo": "conceito",
+    "nome": "Memória oral das sereias",
+    "descricao": "Cantos preservam rotas, genealogias e acontecimentos, possibilitando comunicação subaquática à distância.",
+    "aliases": [
+      "Sereias"
+    ],
+    "paginas": [
+      15,
+      24
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -256,6 +370,21 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:clangeddin-silverbeard",
+    "tipo": "divindade",
+    "nome": "Clangeddin Silverbeard",
+    "descricao": "Divindade guerreira do panteão tradicional dos anões.",
+    "aliases": [
+      "Clangeddin"
+    ],
+    "paginas": [
+      22
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:confederacao-ossos",
     "tipo": "faccao",
     "nome": "Confederação dos Ossos",
@@ -265,6 +394,38 @@
     ],
     "paginas": [
       9
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:conhecimento-gnomico",
+    "tipo": "conceito",
+    "nome": "Cartografia prática gnômica",
+    "descricao": "Mapas e informações gnomos registram passagens, duração de jornadas, pedágios e mudanças históricas de rotas.",
+    "aliases": [
+      "cartógrafos"
+    ],
+    "paginas": [
+      19
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:corellon-larethian",
+    "tipo": "divindade",
+    "nome": "Corellon Larethian",
+    "descricao": "Divindade élfica relacionada às artes e à magia.",
+    "aliases": [
+      "Corellon"
+    ],
+    "paginas": [
+      23,
+      24,
+      25
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -302,6 +463,61 @@
       14,
       15,
       23
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:culto-golzdov",
+    "tipo": "conceito",
+    "nome": "Devoção ao ancestral morto",
+    "descricao": "Existem devoções regionais aos ossos de Golzdov sem consenso sobre seu estatuto de divindade.",
+    "aliases": [
+      "Golzdov"
+    ],
+    "paginas": [
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      11,
+      12,
+      13,
+      16,
+      17,
+      19,
+      20,
+      22,
+      23,
+      25
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:culto-rainha",
+    "tipo": "conceito",
+    "nome": "Culto à Rainha da Noite",
+    "descricao": "Prática religiosa e política da Corte, que não implica reconhecimento unânime da Rainha como deusa.",
+    "aliases": [
+      "Rainha da Noite"
+    ],
+    "paginas": [
+      2,
+      3,
+      5,
+      6,
+      7,
+      8,
+      9,
+      16,
+      17,
+      21,
+      24
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -359,6 +575,39 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:diancastra",
+    "tipo": "divindade",
+    "nome": "Diancastra",
+    "descricao": "Heroína divina associada à trapaça no panteão dos gigantes.",
+    "aliases": [],
+    "paginas": [
+      23
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:diplomacia-abissal",
+    "tipo": "conceito",
+    "nome": "Tributação e pactos abissais marinhos",
+    "descricao": "Abissais marinhos podem buscar dependência comercial, tributos, proteção e autoridade religiosa antes de incursões.",
+    "aliases": [
+      "Abissais"
+    ],
+    "paginas": [
+      4,
+      5,
+      12,
+      14,
+      15,
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:direito-de-nomear",
     "tipo": "conceito",
     "nome": "Direito de Nomear",
@@ -370,6 +619,33 @@
     "paginas": [
       2,
       11
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:divisao-druidas-rangers",
+    "tipo": "conceito",
+    "nome": "Druidas de Eldroth e rangers de Ironwood",
+    "descricao": "Resistência dos círculos espirituais sob ocupação e guerrilha preventiva da floresta não dominada.",
+    "aliases": [
+      "Eldroth",
+      "Ironwood"
+    ],
+    "paginas": [
+      5,
+      6,
+      7,
+      9,
+      11,
+      12,
+      16,
+      17,
+      18,
+      19,
+      20,
+      24
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -428,6 +704,19 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:dumathoin",
+    "tipo": "divindade",
+    "nome": "Dumathoin",
+    "descricao": "Divindade anã associada a segredos enterrados, mineração e riquezas subterrâneas.",
+    "aliases": [],
+    "paginas": [
+      22
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:eadro",
     "tipo": "divindade",
     "nome": "Eadro",
@@ -437,6 +726,23 @@
     ],
     "paginas": [
       24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:ecologia-de-thargrid",
+    "tipo": "conceito",
+    "nome": "Produção e infraestrutura de Thargrid",
+    "descricao": "Minas, forjas, depósitos, provisões e galerias compõem a base material da resistência montanhosa.",
+    "aliases": [
+      "galerias",
+      "depósitos"
+    ],
+    "paginas": [
+      12,
+      20
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -498,6 +804,30 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:espionagem-ironwood",
+    "tipo": "conceito",
+    "nome": "Guerrilha e informação de Ironwood",
+    "descricao": "Rangers organizam operações pequenas, proteção a refugiados, observação e sabotagem sobre rotas da ocupação.",
+    "aliases": [
+      "Ironwood"
+    ],
+    "paginas": [
+      6,
+      7,
+      9,
+      11,
+      16,
+      17,
+      18,
+      19,
+      20,
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:feericos",
     "tipo": "povo",
     "nome": "Feéricos e fadas",
@@ -511,6 +841,19 @@
       16,
       17,
       20
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:freya",
+    "tipo": "divindade",
+    "nome": "Freya",
+    "descricao": "Divindade nórdica associada à fertilidade e ao amor.",
+    "aliases": [],
+    "paginas": [
+      24
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -740,6 +1083,19 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:grolantor",
+    "tipo": "divindade",
+    "nome": "Grolantor",
+    "descricao": "Divindade associada aos gigantes das colinas.",
+    "aliases": [],
+    "paginas": [
+      22
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:gualapolis",
     "tipo": "lugar",
     "nome": "Gualápolis",
@@ -751,6 +1107,71 @@
       6,
       10,
       16
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:hades",
+    "tipo": "divindade",
+    "nome": "Hades",
+    "descricao": "Divindade presente nos ritos funerários humanos.",
+    "aliases": [],
+    "paginas": [
+      23
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:hecate",
+    "tipo": "divindade",
+    "nome": "Hécate",
+    "descricao": "Divindade mágica associada a determinadas tradições de bruxos.",
+    "aliases": [],
+    "paginas": [
+      25
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:heimdall",
+    "tipo": "divindade",
+    "nome": "Heimdall",
+    "descricao": "Divindade nórdica associada à vigilância e à lealdade.",
+    "aliases": [],
+    "paginas": [
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:hermes",
+    "tipo": "divindade",
+    "nome": "Hermes",
+    "descricao": "Deus associado a mercadores, viajantes e ladrões.",
+    "aliases": [],
+    "paginas": [
+      23
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:hiatea",
+    "tipo": "divindade",
+    "nome": "Hiatea",
+    "descricao": "Divindade do panteão gigante, relacionada ao lar e à caça.",
+    "aliases": [],
+    "paginas": [
+      22
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -778,6 +1199,19 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:horus",
+    "tipo": "divindade",
+    "nome": "Hórus",
+    "descricao": "Divindade egípcia citada entre os cultos do Rio Ancestral.",
+    "aliases": [],
+    "paginas": [
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:humanos",
     "tipo": "povo",
     "nome": "Humanos",
@@ -797,6 +1231,19 @@
       21,
       23,
       24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:iallanis",
+    "tipo": "divindade",
+    "nome": "Iallanis",
+    "descricao": "Divindade gigante relacionada ao amor e à paz.",
+    "aliases": [],
+    "paginas": [
+      23
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -848,6 +1295,19 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:isis",
+    "tipo": "divindade",
+    "nome": "Ísis",
+    "descricao": "Divindade egípcia citada entre os cultos da região do Rio Ancestral.",
+    "aliases": [],
+    "paginas": [
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:istus",
     "tipo": "divindade",
     "nome": "Istus",
@@ -858,6 +1318,44 @@
     "paginas": [
       23,
       25
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:jornada-tabaxi",
+    "tipo": "conceito",
+    "nome": "Viagem de formação tabaxi",
+    "descricao": "Viagens sazonais de jovens tabaxis procuram experiências e conhecimentos a serem levados às comunidades de origem.",
+    "aliases": [
+      "Tabaxis"
+    ],
+    "paginas": [
+      5,
+      14,
+      15
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:juramentos-feericos",
+    "tipo": "conceito",
+    "nome": "Pactos e juramentos feéricos",
+    "descricao": "Relações feéricas que envolvem hospitalidade, nome verdadeiro e cumprimento literal de promessas.",
+    "aliases": [
+      "hospitalidade",
+      "juramentos"
+    ],
+    "paginas": [
+      12,
+      13,
+      14,
+      16,
+      18,
+      22
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -894,6 +1392,36 @@
       14,
       15,
       24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:ligacoes-sacras-ossos",
+    "tipo": "conceito",
+    "nome": "Ossos e sacralidade territorial",
+    "descricao": "O corpo de Golzdov serve a práticas religiosas e à escrita ritual sem resolver a natureza divina do ancestral.",
+    "aliases": [
+      "Golzdov"
+    ],
+    "paginas": [
+      2,
+      4,
+      5,
+      6,
+      8,
+      9,
+      11,
+      12,
+      13,
+      16,
+      17,
+      19,
+      20,
+      22,
+      23,
+      25
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -990,6 +1518,19 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:memnor",
+    "tipo": "divindade",
+    "nome": "Memnor",
+    "descricao": "Divindade do panteão dos gigantes das nuvens.",
+    "aliases": [],
+    "paginas": [
+      22
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:menelau-folha-seca",
     "tipo": "personagem",
     "nome": "Menelau Folha-Seca",
@@ -1036,6 +1577,23 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:mosteiros-tortles",
+    "tipo": "conceito",
+    "nome": "Mosteiros tortles",
+    "descricao": "Instituições tortles que funcionam como escolas, arquivos orais e abrigos de viajantes.",
+    "aliases": [
+      "Tortles"
+    ],
+    "paginas": [
+      5,
+      14,
+      15
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:mudanca-oceano",
     "tipo": "conceito",
     "nome": "Mudança do Oceano",
@@ -1045,6 +1603,23 @@
     ],
     "paginas": [
       14
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:nao-centralizacao-tritoes",
+    "tipo": "conceito",
+    "nome": "Autonomia das cidades marinhas",
+    "descricao": "Tritões e sereias mantêm alianças e pactos de defesa sem constituir um único reino centralizado.",
+    "aliases": [
+      "Tritões",
+      "Sereias"
+    ],
+    "paginas": [
+      15,
+      24
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -1067,6 +1642,19 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:njord",
+    "tipo": "divindade",
+    "nome": "Njord",
+    "descricao": "Divindade nórdica associada ao mar e aos ventos.",
+    "aliases": [],
+    "paginas": [
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:oceanos-azuis",
     "tipo": "regiao",
     "nome": "Águas azuis",
@@ -1077,6 +1665,19 @@
     ],
     "paginas": [
       15,
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:odin",
+    "tipo": "divindade",
+    "nome": "Odin",
+    "descricao": "Divindade nórdica relacionada ao conhecimento e à guerra.",
+    "aliases": [],
+    "paginas": [
       24
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
@@ -1122,6 +1723,36 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:ordenamento-multietnico",
+    "tipo": "conceito",
+    "nome": "Limite jurídico do Ordenamento gigante",
+    "descricao": "A hierarquia dos gigantes não concede autoridade automática sobre anões, draconatos ou demais povos de Thargrid.",
+    "aliases": [
+      "Ordenamento"
+    ],
+    "paginas": [
+      12,
+      13,
+      23
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:osiris",
+    "tipo": "divindade",
+    "nome": "Osíris",
+    "descricao": "Divindade egípcia presente em ritos funerários nas comunidades do rio.",
+    "aliases": [],
+    "paginas": [
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:pelor",
     "tipo": "divindade",
     "nome": "Pelor",
@@ -1151,6 +1782,46 @@
       12,
       17,
       23
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:poseidon",
+    "tipo": "divindade",
+    "nome": "Poseidon",
+    "descricao": "Deus do panteão grego popular entre marinheiros da Carcaça.",
+    "aliases": [],
+    "paginas": [
+      23,
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:ptah",
+    "tipo": "divindade",
+    "nome": "Ptah",
+    "descricao": "Divindade egípcia ligada aos ofícios, conhecimento e segredos.",
+    "aliases": [],
+    "paginas": [
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:ra",
+    "tipo": "divindade",
+    "nome": "Rá",
+    "descricao": "Divindade do panteão egípcio cultuada na região do Rio Ancestral.",
+    "aliases": [],
+    "paginas": [
+      24
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -1188,6 +1859,24 @@
       9,
       11,
       13
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:rede-clandestina-hobbit",
+    "tipo": "conceito",
+    "nome": "Resistência clandestina hobbit",
+    "descricao": "Comunidades do Condado podem alimentar fugitivos, esconder pessoas e circular informações discretamente.",
+    "aliases": [
+      "Grama-Cortada"
+    ],
+    "paginas": [
+      2,
+      18,
+      19,
+      23
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -1239,6 +1928,22 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:rillifane-rallathil",
+    "tipo": "divindade",
+    "nome": "Rillifane Rallathil",
+    "descricao": "Divindade ligada às florestas e à natureza nas tradições élficas.",
+    "aliases": [
+      "Rillifane"
+    ],
+    "paginas": [
+      23,
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:rio-ancestral",
     "tipo": "lugar",
     "nome": "Rio Ancestral",
@@ -1254,6 +1959,22 @@
       12,
       20,
       23,
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:rios-fronteiras-tritoes",
+    "tipo": "conceito",
+    "nome": "Patrulhas de fronteira dos tritões",
+    "descricao": "Proteção das águas azuis inclui patrulhas, caça a criaturas corrompidas e postos avançados.",
+    "aliases": [
+      "Tritões"
+    ],
+    "paginas": [
+      15,
       24
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
@@ -1350,6 +2071,19 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:set",
+    "tipo": "divindade",
+    "nome": "Set",
+    "descricao": "Divindade egípcia presente entre os cultos do Rio Ancestral.",
+    "aliases": [],
+    "paginas": [
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:severina-shadowbloom",
     "tipo": "personagem",
     "nome": "Severina Shadowbloom",
@@ -1426,6 +2160,83 @@
       16,
       17,
       24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:skoraeus",
+    "tipo": "divindade",
+    "nome": "Skoraeus Ossos de Pedra",
+    "descricao": "Divindade do panteão dos gigantes de pedra.",
+    "aliases": [
+      "Skoraeus"
+    ],
+    "paginas": [
+      22
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:sobek",
+    "tipo": "divindade",
+    "nome": "Sobek",
+    "descricao": "Divindade egípcia cultuada por comunidades dependentes das águas.",
+    "aliases": [],
+    "paginas": [
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:sombra-em-eldroth",
+    "tipo": "conceito",
+    "nome": "Ecologia ocupada de Eldroth",
+    "descricao": "A floresta é empregada como instrumento de vigilância pela Corte; círculos druidas tentam proteger seres e comunidades.",
+    "aliases": [
+      "Eldroth"
+    ],
+    "paginas": [
+      5,
+      9,
+      12,
+      16,
+      17,
+      18,
+      20,
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:stronmaus",
+    "tipo": "divindade",
+    "nome": "Stronmaus",
+    "descricao": "Divindade relacionada aos gigantes da tempestade.",
+    "aliases": [],
+    "paginas": [
+      22,
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:surtur",
+    "tipo": "divindade",
+    "nome": "Surtur",
+    "descricao": "Divindade associada aos gigantes do fogo.",
+    "aliases": [],
+    "paginas": [
+      22
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -1566,6 +2377,26 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:teocracia-kuotoa",
+    "tipo": "conceito",
+    "nome": "Teocracia kuo-toa",
+    "descricao": "Poder ritual coletivo dos kuo-toa, organização teocrática e emprego de armas voltadas à captura.",
+    "aliases": [
+      "Kuo-Toa"
+    ],
+    "paginas": [
+      5,
+      9,
+      12,
+      14,
+      15,
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:teologia-plural",
     "tipo": "conceito",
     "nome": "Pluralidade de panteões",
@@ -1605,6 +2436,46 @@
       22,
       23,
       24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:thor",
+    "tipo": "divindade",
+    "nome": "Thor",
+    "descricao": "Divindade nórdica relacionada a tempestades e trovões.",
+    "aliases": [],
+    "paginas": [
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:thoth",
+    "tipo": "divindade",
+    "nome": "Thoth",
+    "descricao": "Divindade egípcia associada a conhecimento e sabedoria, reverenciada por escribas.",
+    "aliases": [],
+    "paginas": [
+      24,
+      25
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:thrym",
+    "tipo": "divindade",
+    "nome": "Thrym",
+    "descricao": "Divindade associada aos gigantes do gelo.",
+    "aliases": [],
+    "paginas": [
+      22
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
@@ -1674,6 +2545,19 @@
     "integracao": "referencia_sem_mutar_canonico"
   },
   {
+    "id": "lore-hack:tyr",
+    "tipo": "divindade",
+    "nome": "Tyr",
+    "descricao": "Divindade nórdica associada à coragem e à estratégia.",
+    "aliases": [],
+    "paginas": [
+      24
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
     "id": "lore-hack:ulorian-uln-shayr",
     "tipo": "personagem",
     "nome": "Ulorian Uln-Shayr",
@@ -1715,6 +2599,19 @@
     ],
     "paginas": [
       2
+    ],
+    "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
+    "evidencia": "afirmado_no_rascunho",
+    "integracao": "referencia_sem_mutar_canonico"
+  },
+  {
+    "id": "lore-hack:vergadain",
+    "tipo": "divindade",
+    "nome": "Vergadain",
+    "descricao": "Divindade anã relacionada ao comércio e à sorte.",
+    "aliases": [],
+    "paginas": [
+      22
     ],
     "origem": "fonte:hack-carcaca-dungeon-world-rascunho",
     "evidencia": "afirmado_no_rascunho",
