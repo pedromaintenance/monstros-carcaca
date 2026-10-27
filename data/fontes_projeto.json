@@ -24,5 +24,12 @@
     "url": "https://www.dungeonworldsrd.com/",
     "referencia": "Monstros, instintos, movimentos, frentes, perigos, presságios e assentamentos",
     "tipo": "regras_de_referencia"
+  },
+  "hack_carcaca_dw_rascunho": {
+    "titulo": "Hack Carcaça Dungeon World.docx",
+    "referencia": "Capítulo I — Ambientação (páginas 2 a 25) do manuscrito original; índice temático, cronologia e pontos de revisão, sem promoção automática ao cânone.",
+    "tipo": "fonte_autoral_do_projeto",
+    "estado": "manuscrito_em_revisao",
+    "transcricao": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
   }
 }

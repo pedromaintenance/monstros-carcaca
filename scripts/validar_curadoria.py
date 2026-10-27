@@ -459,6 +459,8 @@ def validar_lore_manuscrito():
             "Fonte manuscrita incompleta: requer páginas 2 a 25 (somente ambiente).")
     require(all(p["texto"] and p["palavras"]>0 for p in source["paginas"]),
             "Página sem texto na fonte do manuscrito.")
+    require("hack_carcaca_dw_rascunho" in load("data/fontes_projeto.json"),
+            "Manuscrito ausente no cadastro de fontes do projeto.")
     require(idx["fonte_id"]==source["id"]==timeline["fonte_id"]==reviews["fonte_id"],
             "IDs de proveniência incompatíveis para o manuscrito.")
     ids=unique(idx["entradas"],"entradas de lore do manuscrito")
