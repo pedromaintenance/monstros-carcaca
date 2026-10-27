@@ -1,0 +1,346 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/assentamento-carcaca.schema.json",
+  "title": "Assentamento, rede de abrigos e ecologia material (Carcaça v0.1)",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "schema_version",
+    "nome",
+    "regiao_id",
+    "lugar_id",
+    "natureza",
+    "estado",
+    "fonte",
+    "tipo_dw",
+    "tags_dw",
+    "habitantes",
+    "rotulos_carcaca",
+    "ecologia_material",
+    "rotas_e_conflitos",
+    "fatos",
+    "observacao"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^assentamento:[a-z0-9-]+$"
+    },
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "nome": {
+      "type": "string",
+      "minLength": 3
+    },
+    "regiao_id": {
+      "type": "string",
+      "pattern": "^regiao:"
+    },
+    "lugar_id": {
+      "type": "string",
+      "pattern": "^lugar:"
+    },
+    "natureza": {
+      "enum": [
+        "assentamento_civil",
+        "rede_de_abrigos",
+        "covil",
+        "colonia",
+        "santuario",
+        "posto_militar",
+        "territorio_sazonal"
+      ]
+    },
+    "estado": {
+      "type": "string"
+    },
+    "fonte": {
+      "type": "string",
+      "minLength": 1
+    },
+    "tipo_dw": {
+      "type": "object",
+      "required": [
+        "classificacao",
+        "estado"
+      ],
+      "properties": {
+        "classificacao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "estado": {
+          "type": "string"
+        }
+      }
+    },
+    "tags_dw": {
+      "type": "object",
+      "required": [
+        "prosperidade",
+        "populacao",
+        "defesas"
+      ],
+      "properties": {
+        "prosperidade": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "populacao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "defesas": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "recursos": {
+          "type": "array"
+        },
+        "comercio": {
+          "type": "array"
+        },
+        "necessidades": {
+          "type": "array"
+        },
+        "juramento": {
+          "type": "array"
+        }
+      }
+    },
+    "habitantes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "povo_id",
+          "status",
+          "fonte"
+        ],
+        "properties": {
+          "povo_id": {
+            "type": "string"
+          },
+          "relacao": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "documentado",
+              "inferido",
+              "proposto",
+              "incerto"
+            ]
+          },
+          "fonte": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "rotulos_carcaca": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "status",
+          "fonte"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^rotulo:"
+          },
+          "status": {
+            "enum": [
+              "documentado",
+              "inferido",
+              "proposto",
+              "incerto"
+            ]
+          },
+          "fonte": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "ecologia_material": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "agua",
+        "alimento",
+        "abrigo",
+        "continuidade",
+        "materiais",
+        "residuos",
+        "dependencias",
+        "lacunas"
+      ],
+      "properties": {
+        "agua": {
+          "$ref": "#/$defs/evidencias"
+        },
+        "alimento": {
+          "$ref": "#/$defs/evidencias"
+        },
+        "abrigo": {
+          "$ref": "#/$defs/evidencias"
+        },
+        "materiais": {
+          "$ref": "#/$defs/evidencias"
+        },
+        "residuos": {
+          "$ref": "#/$defs/evidencias"
+        },
+        "dependencias": {
+          "$ref": "#/$defs/evidencias"
+        },
+        "continuidade": {
+          "type": "object",
+          "required": [
+            "situacao",
+            "descricao"
+          ],
+          "properties": {
+            "situacao": {
+              "enum": [
+                "nao_documentada",
+                "documentada",
+                "inferida",
+                "proposta"
+              ]
+            },
+            "descricao": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "fonte": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          }
+        },
+        "lacunas": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "rotas_e_conflitos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "tipo",
+          "status",
+          "fonte"
+        ],
+        "properties": {
+          "alvo_assentamento_id": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "alvo_texto": {
+            "type": "string"
+          },
+          "tipo": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "documentado",
+              "inferido",
+              "proposto",
+              "incerto"
+            ]
+          },
+          "fonte": {
+            "type": "string"
+          },
+          "nota": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "fatos": {
+      "type": "object",
+      "required": [
+        "posicao",
+        "economia",
+        "defesa",
+        "conflitos"
+      ],
+      "properties": {
+        "posicao": {
+          "type": "string"
+        },
+        "economia": {
+          "type": "array"
+        },
+        "defesa": {
+          "type": "string"
+        },
+        "conflitos": {
+          "type": "array"
+        }
+      }
+    },
+    "observacao": {
+      "type": "string"
+    }
+  },
+  "$defs": {
+    "evidencias": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "descricao",
+          "status",
+          "fonte"
+        ],
+        "properties": {
+          "descricao": {
+            "type": "string"
+          },
+          "uso": {
+            "type": "string"
+          },
+          "status": {
+            "enum": [
+              "documentado",
+              "inferido",
+              "proposto",
+              "incerto"
+            ]
+          },
+          "fonte": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

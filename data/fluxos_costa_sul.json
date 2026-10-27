@@ -1,0 +1,44 @@
+{
+  "schema_version": "0.1.0",
+  "descricao": "Relações materiais e rituais de assentamentos. Fluxos regionais sem origem ou destino nomeado preservam referência textual; não inventam comércio entre povos rivais.",
+  "fluxos": [
+    {
+      "id": "fluxo:purificacao-agua-portomonte",
+      "tipo": "transformacao_de_recurso",
+      "origem_assentamento_id": null,
+      "destino_assentamento_id": "assentamento:portomonte",
+      "recurso": "Água do Mar de Sangue",
+      "transformacao": "Purificação no templo de Deméter",
+      "finalidade": "Viabilizar agricultura em Portomonte",
+      "status": "documentado",
+      "fonte": "ambientacao",
+      "observacao": "Não inferir capacidade de purificação, água doméstica ou escala produtiva."
+    },
+    {
+      "id": "fluxo:comercio-costeiro-portomonte",
+      "tipo": "comercio_regional",
+      "origem_assentamento_id": "assentamento:portomonte",
+      "destino_assentamento_id": null,
+      "destino_descricao": "Assentamentos costeiros não nomeados",
+      "recurso": null,
+      "transformacao": null,
+      "finalidade": "Circulação mercantil costeira",
+      "status": "documentado",
+      "fonte": "ambientacao",
+      "observacao": "Bens, volumes e parceiros específicos são desconhecidos."
+    },
+    {
+      "id": "fluxo:incursoes-kuo-toa-costa-sul",
+      "tipo": "captura_ritual",
+      "origem_assentamento_id": "assentamento:rede-cavernas-kuo-toa-costa-sul",
+      "destino_assentamento_id": null,
+      "destino_descricao": "Assentamentos litorâneos e ilhas não nomeados",
+      "recurso": "Pessoas capturadas",
+      "transformacao": "Sacrifícios rituais a Daegon",
+      "finalidade": "Rito religioso, não abastecimento alimentar",
+      "status": "documentado",
+      "fonte": "ambientacao",
+      "observacao": "Origem atribuída ao conjunto de comunidades kuo-toa da Costa Sul; o lugar individual de cada incursão não está determinado."
+    }
+  ]
+}

@@ -30,7 +30,100 @@
         "Ameaça regional dos Kuo-Toa e abissais marinhos"
       ]
     },
-    "observacao": "A classificação DW e tags ficam nulas: grande assentamento não estabelece automaticamente tamanho, prosperidade, defesa ou contagem populacional.",
-    "lugar_id": "lugar:portomonte"
+    "observacao": "Portomonte é grande segundo a lore, mas prosperidade, população e defesas DW não são quantificados. Os novos rótulos Carcaça descrevem fatos, não atribuem bônus automáticos.",
+    "lugar_id": "lugar:portomonte",
+    "natureza": "assentamento_civil",
+    "habitantes": [
+      {
+        "povo_id": "povo:humanos-costa-sul",
+        "relacao": "populacao_local_documentada",
+        "status": "documentado",
+        "fonte": "ambientacao"
+      }
+    ],
+    "rotulos_carcaca": [
+      {
+        "id": "rotulo:agua_sangrenta_purificada",
+        "status": "documentado",
+        "fonte": "ambientacao"
+      },
+      {
+        "id": "rotulo:lavoura_sobre_pedra",
+        "status": "documentado",
+        "fonte": "ambientacao"
+      },
+      {
+        "id": "rotulo:enclave_dos_penhascos",
+        "status": "documentado",
+        "fonte": "ambientacao"
+      },
+      {
+        "id": "rotulo:templo_purificador",
+        "status": "documentado",
+        "fonte": "ambientacao"
+      }
+    ],
+    "ecologia_material": {
+      "agua": [
+        {
+          "descricao": "O templo de Deméter purifica a água do Mar de Sangue",
+          "uso": "sustento das lavouras",
+          "status": "documentado",
+          "fonte": "ambientacao"
+        }
+      ],
+      "alimento": [
+        {
+          "descricao": "Agricultura praticada inclusive sobre pedra mediante purificação da água",
+          "uso": "produção agrícola",
+          "status": "documentado",
+          "fonte": "ambientacao"
+        }
+      ],
+      "abrigo": [
+        {
+          "descricao": "Povoação escondida entre os penhascos litorâneos",
+          "uso": "moradia e proteção geográfica",
+          "status": "documentado",
+          "fonte": "ambientacao"
+        }
+      ],
+      "continuidade": {
+        "situacao": "nao_documentada",
+        "descricao": null,
+        "fonte": null
+      },
+      "materiais": [],
+      "residuos": [],
+      "dependencias": [
+        {
+          "descricao": "A lavoura depende da purificação da água do Mar de Sangue",
+          "status": "documentado",
+          "fonte": "ambientacao"
+        }
+      ],
+      "lacunas": [
+        "Água potável e abastecimento doméstico não descritos.",
+        "Quantidades de alimento e população não informadas.",
+        "Defesas, nascimentos e continuidade demográfica não quantificados."
+      ]
+    },
+    "rotas_e_conflitos": [
+      {
+        "alvo_assentamento_id": null,
+        "alvo_texto": "Outros assentamentos da Costa Sul não nomeados",
+        "tipo": "comercio_regional",
+        "status": "documentado",
+        "fonte": "ambientacao"
+      },
+      {
+        "alvo_assentamento_id": null,
+        "alvo_texto": "Ameaças kuo-toa e abissais marinhas à costa em geral",
+        "tipo": "risco_regional",
+        "status": "documentado",
+        "fonte": "ambientacao",
+        "nota": "Não comprova um ataque específico a Portomonte."
+      }
+    ]
   }
 ]
