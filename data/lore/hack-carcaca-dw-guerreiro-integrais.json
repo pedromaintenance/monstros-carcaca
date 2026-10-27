@@ -1,0 +1,3265 @@
+{
+  "schema_version": "0.1.0",
+  "fonte": "Hack Carcaça Dungeon World(1).docx",
+  "fonte_sha256": "b53d1d5a057e8f6cba8a5d5ccd70747df3ce94d07ff2e2ffb9031368ea773b3d",
+  "grupo": "GUERREIRO",
+  "posicao": "indices_paragrafo_docx_zero_based",
+  "descricao": "Transcrição integral dos 77 movimentos de Guerreiro, incluindo opções e continuações de células de parágrafos. Dependências são literais ou candidatas não homologadas.",
+  "movimentos": [
+    {
+      "id": "movimento-classe:paragrafo-1047",
+      "paragrafo_docx": 1047,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ARMA FAVORITA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1047,
+          "tipo": "corpo",
+          "texto": "Escolha uma arma com a qual seu treinamento seja extraordinário. Dê a ela uma característica que reflita sua técnica: precisa, brutal, defensiva, versátil, veloz, ameaçadora ou outra apropriada. Essa característica é sempre verdadeira na ficção.\nA primeira vez em cada cena que explorar essa característica para obter uma vantagem que não aumente diretamente a Periculosidade, receba +1 adiante."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Escolha uma arma com a qual seu treinamento seja extraordinário. Dê a ela uma característica que reflita sua técnica: precisa, brutal, defensiva, versátil, veloz, ameaçadora ou outra apropriada. Essa característica é sempre verdadeira na ficção.\nA primeira vez em cada cena que explorar essa característica para obter uma vantagem que não aumente diretamente a Periculosidade, receba +1 adiante.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1047"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1048",
+      "paragrafo_docx": 1048,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MESTRE DE BATALHA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1048,
+          "tipo": "corpo",
+          "texto": "Quando explorar conscientemente um destes elementos durante um combate:"
+        },
+        {
+          "paragrafo_docx": 1049,
+          "tipo": "opcao",
+          "texto": "alcance;"
+        },
+        {
+          "paragrafo_docx": 1050,
+          "tipo": "opcao",
+          "texto": "ritmo;"
+        },
+        {
+          "paragrafo_docx": 1051,
+          "tipo": "opcao",
+          "texto": "posição"
+        },
+        {
+          "paragrafo_docx": 1052,
+          "tipo": "opcao",
+          "texto": "ou terreno"
+        },
+        {
+          "paragrafo_docx": 1053,
+          "tipo": "continuacao",
+          "texto": "Receba +1 adiante em Matar e Pilhar. Você só pode receber esse benefício novamente alternando entre os 4."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1049,
+          "texto": "alcance;"
+        },
+        {
+          "paragrafo_docx": 1050,
+          "texto": "ritmo;"
+        },
+        {
+          "paragrafo_docx": 1051,
+          "texto": "posição"
+        },
+        {
+          "paragrafo_docx": 1052,
+          "texto": "ou terreno"
+        }
+      ],
+      "texto_original": "Quando explorar conscientemente um destes elementos durante um combate:\nalcance;\nritmo;\nposição\nou terreno\nReceba +1 adiante em Matar e Pilhar. Você só pode receber esse benefício novamente alternando entre os 4.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1048"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1054",
+      "paragrafo_docx": 1054,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "GOLPE DE CONTROLE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1054,
+          "tipo": "corpo",
+          "texto": "Quando causar dano em combate corpo a corpo, pode reduzir sua Periculosidade em um grau para, além do dano:"
+        },
+        {
+          "paragrafo_docx": 1055,
+          "tipo": "opcao",
+          "texto": "derrubar;"
+        },
+        {
+          "paragrafo_docx": 1056,
+          "tipo": "opcao",
+          "texto": "desarmar;"
+        },
+        {
+          "paragrafo_docx": 1057,
+          "tipo": "opcao",
+          "texto": "empurrar;"
+        },
+        {
+          "paragrafo_docx": 1058,
+          "tipo": "opcao",
+          "texto": "romper a formação;"
+        },
+        {
+          "paragrafo_docx": 1059,
+          "tipo": "opcao",
+          "texto": "prender a arma;"
+        },
+        {
+          "paragrafo_docx": 1060,
+          "tipo": "opcao",
+          "texto": "conduzir o adversário para uma posição próxima;"
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1055,
+          "texto": "derrubar;"
+        },
+        {
+          "paragrafo_docx": 1056,
+          "texto": "desarmar;"
+        },
+        {
+          "paragrafo_docx": 1057,
+          "texto": "empurrar;"
+        },
+        {
+          "paragrafo_docx": 1058,
+          "texto": "romper a formação;"
+        },
+        {
+          "paragrafo_docx": 1059,
+          "texto": "prender a arma;"
+        },
+        {
+          "paragrafo_docx": 1060,
+          "texto": "conduzir o adversário para uma posição próxima;"
+        }
+      ],
+      "texto_original": "Quando causar dano em combate corpo a corpo, pode reduzir sua Periculosidade em um grau para, além do dano:\nderrubar;\ndesarmar;\nempurrar;\nromper a formação;\nprender a arma;\nconduzir o adversário para uma posição próxima;",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1054"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1061",
+      "paragrafo_docx": 1061,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "DOBRAR BARRAS, ERGUER PORTÕES",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1061,
+          "tipo": "corpo",
+          "texto": "Quando aplicar pura força contra um obstáculo inanimado que realmente possa resistir a você, role+FOR.\n10+: escolha 3.\n7–9: escolha 2."
+        },
+        {
+          "paragrafo_docx": 1062,
+          "tipo": "opcao",
+          "texto": "Não demora."
+        },
+        {
+          "paragrafo_docx": 1063,
+          "tipo": "opcao",
+          "texto": "Nada importante além do alvo é destruído."
+        },
+        {
+          "paragrafo_docx": 1064,
+          "tipo": "opcao",
+          "texto": "Não produz barulho ou repercussão indesejada."
+        },
+        {
+          "paragrafo_docx": 1065,
+          "tipo": "opcao",
+          "texto": "Você não termina vulnerável."
+        },
+        {
+          "paragrafo_docx": 1066,
+          "tipo": "opcao",
+          "texto": "Aquilo poderá ser reparado posteriormente."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1062,
+          "texto": "Não demora."
+        },
+        {
+          "paragrafo_docx": 1063,
+          "texto": "Nada importante além do alvo é destruído."
+        },
+        {
+          "paragrafo_docx": 1064,
+          "texto": "Não produz barulho ou repercussão indesejada."
+        },
+        {
+          "paragrafo_docx": 1065,
+          "texto": "Você não termina vulnerável."
+        },
+        {
+          "paragrafo_docx": 1066,
+          "texto": "Aquilo poderá ser reparado posteriormente."
+        }
+      ],
+      "texto_original": "Quando aplicar pura força contra um obstáculo inanimado que realmente possa resistir a você, role+FOR.\n10+: escolha 3.\n7–9: escolha 2.\nNão demora.\nNada importante além do alvo é destruído.\nNão produz barulho ou repercussão indesejada.\nVocê não termina vulnerável.\nAquilo poderá ser reparado posteriormente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1061"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1067",
+      "paragrafo_docx": 1067,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MISERICORDIOSO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1067,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando tiver um inimigo verdadeiramente à sua mercê e escolher poupá-lo apesar de existir uma vantagem concreta em matá-lo, marque 1 XP. Então escolha 1:"
+        },
+        {
+          "paragrafo_docx": 1068,
+          "tipo": "opcao",
+          "texto": "Uma segunda chance: pergunte ao Mestre “O que precisaria acontecer para que esta pessoa abandonasse realmente este conflito?” Ele responderá honestamente."
+        },
+        {
+          "paragrafo_docx": 1069,
+          "tipo": "opcao",
+          "texto": "Uma dívida de vida: se o inimigo reconhecer que você poderia tê-lo matado, sua misericórdia conta como influência para Negociar com ele enquanto essa dívida ainda possuir significado."
+        },
+        {
+          "paragrafo_docx": 1070,
+          "tipo": "opcao",
+          "texto": "Todos viram: alguém que testemunhou sua escolha será afetado por ela. Pergunte ao Mestre “Quem aqui passa a me enxergar de maneira diferente?”"
+        },
+        {
+          "paragrafo_docx": 1071,
+          "tipo": "opcao",
+          "texto": "Baixe sua arma: se o inimigo ainda hesitar entre continuar lutando e aceitar sua misericórdia, ele precisa de uma razão concreta para escolher continuar a violência imediatamente."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1068,
+          "texto": "Uma segunda chance: pergunte ao Mestre “O que precisaria acontecer para que esta pessoa abandonasse realmente este conflito?” Ele responderá honestamente."
+        },
+        {
+          "paragrafo_docx": 1069,
+          "texto": "Uma dívida de vida: se o inimigo reconhecer que você poderia tê-lo matado, sua misericórdia conta como influência para Negociar com ele enquanto essa dívida ainda possuir significado."
+        },
+        {
+          "paragrafo_docx": 1070,
+          "texto": "Todos viram: alguém que testemunhou sua escolha será afetado por ela. Pergunte ao Mestre “Quem aqui passa a me enxergar de maneira diferente?”"
+        },
+        {
+          "paragrafo_docx": 1071,
+          "texto": "Baixe sua arma: se o inimigo ainda hesitar entre continuar lutando e aceitar sua misericórdia, ele precisa de uma razão concreta para escolher continuar a violência imediatamente."
+        }
+      ],
+      "texto_original": "Uma vez por sessão, quando tiver um inimigo verdadeiramente à sua mercê e escolher poupá-lo apesar de existir uma vantagem concreta em matá-lo, marque 1 XP. Então escolha 1:\nUma segunda chance: pergunte ao Mestre “O que precisaria acontecer para que esta pessoa abandonasse realmente este conflito?” Ele responderá honestamente.\nUma dívida de vida: se o inimigo reconhecer que você poderia tê-lo matado, sua misericórdia conta como influência para Negociar com ele enquanto essa dívida ainda possuir significado.\nTodos viram: alguém que testemunhou sua escolha será afetado por ela. Pergunte ao Mestre “Quem aqui passa a me enxergar de maneira diferente?”\nBaixe sua arma: se o inimigo ainda hesitar entre continuar lutando e aceitar sua misericórdia, ele precisa de uma razão concreta para escolher continuar a violência imediatamente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1067"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1072",
+      "paragrafo_docx": 1072,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "SEM MISERICÓRDIA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1072,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando tiver um inimigo à sua mercê, receber sua rendição ou vê-lo tentar escapar e escolher deliberadamente não conceder misericórdia, marque 1 XP. Então escolha 1:"
+        },
+        {
+          "paragrafo_docx": 1073,
+          "tipo": "opcao",
+          "texto": "Que sirva de exemplo: aqueles que testemunharem ou souberem claramente do que você fez passam a ter motivo concreto para temê-lo; isso pode contar como influência para Negociar através de intimidação."
+        },
+        {
+          "paragrafo_docx": 1074,
+          "tipo": "opcao",
+          "texto": "Não haverá segunda vez: pergunte ao Mestre “Que perigo futuro desaparece porque esta pessoa não saiu daqui viva ou livre?” A resposta será verdadeira."
+        },
+        {
+          "paragrafo_docx": 1075,
+          "tipo": "opcao",
+          "texto": "Agora sabem quem eu sou: diga que reputação você pretende criar com este ato. O Mestre dirá quem provavelmente ouvirá essa história primeiro."
+        },
+        {
+          "paragrafo_docx": 1076,
+          "tipo": "opcao",
+          "texto": "Corte a cabeça da cobra: se o alvo ocupava uma posição real numa organização, pergunte “Quem fica exposto, desorganizado ou vulnerável com sua remoção?”"
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1073,
+          "texto": "Que sirva de exemplo: aqueles que testemunharem ou souberem claramente do que você fez passam a ter motivo concreto para temê-lo; isso pode contar como influência para Negociar através de intimidação."
+        },
+        {
+          "paragrafo_docx": 1074,
+          "texto": "Não haverá segunda vez: pergunte ao Mestre “Que perigo futuro desaparece porque esta pessoa não saiu daqui viva ou livre?” A resposta será verdadeira."
+        },
+        {
+          "paragrafo_docx": 1075,
+          "texto": "Agora sabem quem eu sou: diga que reputação você pretende criar com este ato. O Mestre dirá quem provavelmente ouvirá essa história primeiro."
+        },
+        {
+          "paragrafo_docx": 1076,
+          "texto": "Corte a cabeça da cobra: se o alvo ocupava uma posição real numa organização, pergunte “Quem fica exposto, desorganizado ou vulnerável com sua remoção?”"
+        }
+      ],
+      "texto_original": "Uma vez por sessão, quando tiver um inimigo à sua mercê, receber sua rendição ou vê-lo tentar escapar e escolher deliberadamente não conceder misericórdia, marque 1 XP. Então escolha 1:\nQue sirva de exemplo: aqueles que testemunharem ou souberem claramente do que você fez passam a ter motivo concreto para temê-lo; isso pode contar como influência para Negociar através de intimidação.\nNão haverá segunda vez: pergunte ao Mestre “Que perigo futuro desaparece porque esta pessoa não saiu daqui viva ou livre?” A resposta será verdadeira.\nAgora sabem quem eu sou: diga que reputação você pretende criar com este ato. O Mestre dirá quem provavelmente ouvirá essa história primeiro.\nCorte a cabeça da cobra: se o alvo ocupava uma posição real numa organização, pergunte “Quem fica exposto, desorganizado ou vulnerável com sua remoção?”",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1072"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1077",
+      "paragrafo_docx": 1077,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "VENDO VERMELHO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1077,
+          "tipo": "corpo",
+          "texto": "Você pode Discernir Realidades durante uma luta. Quando o fizer, acrescente à lista:"
+        },
+        {
+          "paragrafo_docx": 1078,
+          "tipo": "opcao",
+          "texto": "Qual o alvo mais vulnerável neste momento?"
+        },
+        {
+          "paragrafo_docx": 1079,
+          "tipo": "opcao",
+          "texto": "De onde virá o próximo perigo?"
+        },
+        {
+          "paragrafo_docx": 1080,
+          "tipo": "continuacao",
+          "texto": "Quando agir segundo a resposta, o +1 adiante normal de Discernir Realidades continua se aplicando."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1078,
+          "texto": "Qual o alvo mais vulnerável neste momento?"
+        },
+        {
+          "paragrafo_docx": 1079,
+          "texto": "De onde virá o próximo perigo?"
+        }
+      ],
+      "texto_original": "Você pode Discernir Realidades durante uma luta. Quando o fizer, acrescente à lista:\nQual o alvo mais vulnerável neste momento?\nDe onde virá o próximo perigo?\nQuando agir segundo a resposta, o +1 adiante normal de Discernir Realidades continua se aplicando.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1077"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1082",
+      "paragrafo_docx": 1082,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "INTERROGADOR",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1082,
+          "tipo": "corpo",
+          "texto": "Quando alguém souber que você é capaz de feri-lo e o medo concreto dessa violência for aquilo que você está usando para obter sua cooperação, essa ameaça conta como influência para Negociar e você pode rolar+FOR em vez de +CAR.\nEm um 10+, pergunte também:\n“O que ele mais teme que eu faça?”"
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando alguém souber que você é capaz de feri-lo e o medo concreto dessa violência for aquilo que você está usando para obter sua cooperação, essa ameaça conta como influência para Negociar e você pode rolar+FOR em vez de +CAR.\nEm um 10+, pergunte também:\n“O que ele mais teme que eu faça?”",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1082"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1083",
+      "paragrafo_docx": 1083,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "HERANÇA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1083,
+          "tipo": "corpo",
+          "texto": "Quando examinar a arma, armadura ou símbolo marcial de alguém importante e consultar aquilo que seu portador teria ensinado, contado ou deixado registrado sobre a situação, pergunte ao Mestre uma questão relacionada. O Mestre responderá através de memória, inscrição, espírito, ensinamento ou outro vestígio apropriado."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando examinar a arma, armadura ou símbolo marcial de alguém importante e consultar aquilo que seu portador teria ensinado, contado ou deixado registrado sobre a situação, pergunte ao Mestre uma questão relacionada. O Mestre responderá através de memória, inscrição, espírito, ensinamento ou outro vestígio apropriado.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1083"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1084",
+      "paragrafo_docx": 1084,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ENTRE MIM E ELES",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1084,
+          "tipo": "corpo",
+          "texto": "Quando gastar Domínio de Defender para redirecionar um ataque para você, também reduza pela metade o dano ou efeito desse ataque, desde que sua posição permita interceptá-lo adequadamente."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando gastar Domínio de Defender para redirecionar um ataque para você, também reduza pela metade o dano ou efeito desse ataque, desde que sua posição permita interceptá-lo adequadamente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1084"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1085",
+      "paragrafo_docx": 1085,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "GUARDA-COSTAS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1085,
+          "tipo": "corpo",
+          "texto": "Quando Defender alguém claramente mais vulnerável que você, em um sucesso receba +1 Domínio adicional."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando Defender alguém claramente mais vulnerável que você, em um sucesso receba +1 Domínio adicional.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1085"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1086",
+      "paragrafo_docx": 1086,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "SEGURE A LINHA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1086,
+          "tipo": "corpo",
+          "texto": "Quando você e pelo menos dois aliados formarem deliberadamente uma linha defensiva e mantiverem suas posições, todos que fazem parte dela contam como protegendo uns aos outros. Enquanto a linha permanecer:"
+        },
+        {
+          "paragrafo_docx": 1087,
+          "tipo": "opcao",
+          "texto": "qualquer membro pode Ajudar outro membro da formação sem precisar se colocar em nova posição para isso;"
+        },
+        {
+          "paragrafo_docx": 1088,
+          "tipo": "opcao",
+          "texto": "quando você gastar Domínio de Defender para reduzir dano, redirecionar um ataque ou abrir uma defesa, pode fazê-lo em benefício de qualquer integrante da linha;"
+        },
+        {
+          "paragrafo_docx": 1089,
+          "tipo": "opcao",
+          "texto": "inimigos não conseguem simplesmente atravessar a formação sem primeiro romper sua defesa."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1087,
+          "texto": "qualquer membro pode Ajudar outro membro da formação sem precisar se colocar em nova posição para isso;"
+        },
+        {
+          "paragrafo_docx": 1088,
+          "texto": "quando você gastar Domínio de Defender para reduzir dano, redirecionar um ataque ou abrir uma defesa, pode fazê-lo em benefício de qualquer integrante da linha;"
+        },
+        {
+          "paragrafo_docx": 1089,
+          "texto": "inimigos não conseguem simplesmente atravessar a formação sem primeiro romper sua defesa."
+        }
+      ],
+      "texto_original": "Quando você e pelo menos dois aliados formarem deliberadamente uma linha defensiva e mantiverem suas posições, todos que fazem parte dela contam como protegendo uns aos outros. Enquanto a linha permanecer:\nqualquer membro pode Ajudar outro membro da formação sem precisar se colocar em nova posição para isso;\nquando você gastar Domínio de Defender para reduzir dano, redirecionar um ataque ou abrir uma defesa, pode fazê-lo em benefício de qualquer integrante da linha;\ninimigos não conseguem simplesmente atravessar a formação sem primeiro romper sua defesa.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1086"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1090",
+      "paragrafo_docx": 1090,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "UM POR TODOS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1090,
+          "tipo": "corpo",
+          "texto": "Quando vários adversários inferiores cercarem você e você deliberadamente mantiver todos ocupados, role+FOR ou DES.\n10+: escolha 3.\n7–9: escolha 2."
+        },
+        {
+          "paragrafo_docx": 1091,
+          "tipo": "opcao",
+          "texto": "Você não fica isolado dos aliados."
+        },
+        {
+          "paragrafo_docx": 1092,
+          "tipo": "opcao",
+          "texto": "Cause seu dano a um deles."
+        },
+        {
+          "paragrafo_docx": 1093,
+          "tipo": "opcao",
+          "texto": "Abra espaço para um aliado agir sem oposição."
+        },
+        {
+          "paragrafo_docx": 1094,
+          "tipo": "opcao",
+          "texto": "Você evita o pior da violência deles contra você."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1091,
+          "texto": "Você não fica isolado dos aliados."
+        },
+        {
+          "paragrafo_docx": 1092,
+          "texto": "Cause seu dano a um deles."
+        },
+        {
+          "paragrafo_docx": 1093,
+          "texto": "Abra espaço para um aliado agir sem oposição."
+        },
+        {
+          "paragrafo_docx": 1094,
+          "texto": "Você evita o pior da violência deles contra você."
+        }
+      ],
+      "texto_original": "Quando vários adversários inferiores cercarem você e você deliberadamente mantiver todos ocupados, role+FOR ou DES.\n10+: escolha 3.\n7–9: escolha 2.\nVocê não fica isolado dos aliados.\nCause seu dano a um deles.\nAbra espaço para um aliado agir sem oposição.\nVocê evita o pior da violência deles contra você.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1090"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1095",
+      "paragrafo_docx": 1095,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "CONTRA-ATAQUE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1095,
+          "tipo": "corpo",
+          "texto": "Quando evitar completamente um ataque corpo a corpo através de uma rolagem, escolha:"
+        },
+        {
+          "paragrafo_docx": 1096,
+          "tipo": "opcao",
+          "texto": "receba +1 adiante para atacar imediatamente esse adversário; ou"
+        },
+        {
+          "paragrafo_docx": 1097,
+          "tipo": "opcao",
+          "texto": "tome dele a posição, colocando-se onde ele não queria que você estivesse."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1096,
+          "texto": "receba +1 adiante para atacar imediatamente esse adversário; ou"
+        },
+        {
+          "paragrafo_docx": 1097,
+          "texto": "tome dele a posição, colocando-se onde ele não queria que você estivesse."
+        }
+      ],
+      "texto_original": "Quando evitar completamente um ataque corpo a corpo através de uma rolagem, escolha:\nreceba +1 adiante para atacar imediatamente esse adversário; ou\ntome dele a posição, colocando-se onde ele não queria que você estivesse.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1095"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1098",
+      "paragrafo_docx": 1098,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "SEGUNDO FÔLEGO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1098,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando parar por alguns instantes em meio ao perigo para recuperar o controle, cure 2d6 PV. \nAlém disso, escolha uma Debilidade física que esteja sofrendo: Fraco, Trêmulo ou Doente. Ignore sua penalidade até o fim da cena. Diga que ferimento, dor, veneno ou exaustão decidiu simplesmente empurrar para depois. \nAo fim da cena, a Debilidade retorna normalmente."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por sessão, quando parar por alguns instantes em meio ao perigo para recuperar o controle, cure 2d6 PV. \nAlém disso, escolha uma Debilidade física que esteja sofrendo: Fraco, Trêmulo ou Doente. Ignore sua penalidade até o fim da cena. Diga que ferimento, dor, veneno ou exaustão decidiu simplesmente empurrar para depois. \nAo fim da cena, a Debilidade retorna normalmente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1098"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1099",
+      "paragrafo_docx": 1099,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "HONRADO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1099,
+          "tipo": "corpo",
+          "texto": "Escolha dois princípios concretos do seu código de honra:"
+        },
+        {
+          "paragrafo_docx": 1100,
+          "tipo": "opcao",
+          "texto": "não atacar quem não pode reagir;"
+        },
+        {
+          "paragrafo_docx": 1101,
+          "tipo": "opcao",
+          "texto": "cumprir a palavra dada;"
+        },
+        {
+          "paragrafo_docx": 1102,
+          "tipo": "opcao",
+          "texto": "aceitar desafios justos;"
+        },
+        {
+          "paragrafo_docx": 1103,
+          "tipo": "opcao",
+          "texto": "não abandonar companheiros;"
+        },
+        {
+          "paragrafo_docx": 1104,
+          "tipo": "opcao",
+          "texto": "não utilizar determinada arma ou método"
+        },
+        {
+          "paragrafo_docx": 1105,
+          "tipo": "opcao",
+          "texto": "ou outros apropriados."
+        },
+        {
+          "paragrafo_docx": 1106,
+          "tipo": "continuacao",
+          "texto": "Uma vez por sessão, quando obedecer ao seu código apesar de possuir uma vantagem concreta em quebrá-lo, marque 1 XP e receba 1 Preparo para enfrentar as consequências dessa escolha. Quando alguém que reconheça seu código confiar explicitamente em sua honra, ela conta como influência para Negociar enquanto você não traí-la."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1100,
+          "texto": "não atacar quem não pode reagir;"
+        },
+        {
+          "paragrafo_docx": 1101,
+          "texto": "cumprir a palavra dada;"
+        },
+        {
+          "paragrafo_docx": 1102,
+          "texto": "aceitar desafios justos;"
+        },
+        {
+          "paragrafo_docx": 1103,
+          "texto": "não abandonar companheiros;"
+        },
+        {
+          "paragrafo_docx": 1104,
+          "texto": "não utilizar determinada arma ou método"
+        },
+        {
+          "paragrafo_docx": 1105,
+          "texto": "ou outros apropriados."
+        }
+      ],
+      "texto_original": "Escolha dois princípios concretos do seu código de honra:\nnão atacar quem não pode reagir;\ncumprir a palavra dada;\naceitar desafios justos;\nnão abandonar companheiros;\nnão utilizar determinada arma ou método\nou outros apropriados.\nUma vez por sessão, quando obedecer ao seu código apesar de possuir uma vantagem concreta em quebrá-lo, marque 1 XP e receba 1 Preparo para enfrentar as consequências dessa escolha. Quando alguém que reconheça seu código confiar explicitamente em sua honra, ela conta como influência para Negociar enquanto você não traí-la.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1099"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1107",
+      "paragrafo_docx": 1107,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "PROTETOR",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1107,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando aceitar voluntariamente uma consequência séria que atingiria outra pessoa, apesar de poder deixá-la sofrer, marque 1 XP. Se continuar capaz de agir, receba Domínio 2 sobre a proteção dessa pessoa durante a ameaça atual. Gaste 1 Domínio para:"
+        },
+        {
+          "paragrafo_docx": 1108,
+          "tipo": "opcao",
+          "texto": "receber +1 ao Defender ou Ajudá-la;"
+        },
+        {
+          "paragrafo_docx": 1109,
+          "tipo": "opcao",
+          "texto": "colocar-se imediatamente entre ela e uma ameaça que possa alcançar;"
+        },
+        {
+          "paragrafo_docx": 1110,
+          "tipo": "opcao",
+          "texto": "perceber antes dos demais que alguma coisa está prestes a colocá-la em perigo."
+        },
+        {
+          "paragrafo_docx": 1111,
+          "tipo": "continuacao",
+          "texto": "Perca o Domínio quando a ameaça terminar ou você decidir abandonar sua proteção."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1108,
+          "texto": "receber +1 ao Defender ou Ajudá-la;"
+        },
+        {
+          "paragrafo_docx": 1109,
+          "texto": "colocar-se imediatamente entre ela e uma ameaça que possa alcançar;"
+        },
+        {
+          "paragrafo_docx": 1110,
+          "texto": "perceber antes dos demais que alguma coisa está prestes a colocá-la em perigo."
+        }
+      ],
+      "texto_original": "Uma vez por sessão, quando aceitar voluntariamente uma consequência séria que atingiria outra pessoa, apesar de poder deixá-la sofrer, marque 1 XP. Se continuar capaz de agir, receba Domínio 2 sobre a proteção dessa pessoa durante a ameaça atual. Gaste 1 Domínio para:\nreceber +1 ao Defender ou Ajudá-la;\ncolocar-se imediatamente entre ela e uma ameaça que possa alcançar;\nperceber antes dos demais que alguma coisa está prestes a colocá-la em perigo.\nPerca o Domínio quando a ameaça terminar ou você decidir abandonar sua proteção.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1107"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1112",
+      "paragrafo_docx": 1112,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "VINGATIVO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1112,
+          "tipo": "corpo",
+          "texto": "Quando alguém provocar uma perda, traição ou ferida que você considere digna de vingança e declarar quem deverá responder por isso, receba Domínio 3 sobre sua vingança. Gaste 1 para:"
+        },
+        {
+          "paragrafo_docx": 1113,
+          "tipo": "opcao",
+          "texto": "receber +1 numa rolagem diretamente contra o responsável;"
+        },
+        {
+          "paragrafo_docx": 1114,
+          "tipo": "opcao",
+          "texto": "perguntar em que direção ele fugiu ou onde provavelmente poderá ser encontrado;"
+        },
+        {
+          "paragrafo_docx": 1115,
+          "tipo": "opcao",
+          "texto": "resistir a uma tentativa dele de comprar, intimidar ou desviar você;"
+        },
+        {
+          "paragrafo_docx": 1116,
+          "tipo": "opcao",
+          "texto": "perguntar ao Mestre “Quem ou o que ele realmente teme perder?”"
+        },
+        {
+          "paragrafo_docx": 1117,
+          "tipo": "continuacao",
+          "texto": "Uma vez por sessão, quando sacrificar uma vantagem real ou colocar-se em perigo porque se recusou a abandonar sua vingança, marque 1 XP. O Domínio desaparece quando a vingança for cumprida, perdoada ou abandonada."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1113,
+          "texto": "receber +1 numa rolagem diretamente contra o responsável;"
+        },
+        {
+          "paragrafo_docx": 1114,
+          "texto": "perguntar em que direção ele fugiu ou onde provavelmente poderá ser encontrado;"
+        },
+        {          "paragrafo_docx": 1115,
+          "texto": "resistir a uma tentativa dele de comprar, intimidar ou desviar você;"
+        },
+        {
+          "paragrafo_docx": 1116,
+          "texto": "perguntar ao Mestre “Quem ou o que ele realmente teme perder?”"
+        }
+      ],
+      "texto_original": "Quando alguém provocar uma perda, traição ou ferida que você considere digna de vingança e declarar quem deverá responder por isso, receba Domínio 3 sobre sua vingança. Gaste 1 para:\nreceber +1 numa rolagem diretamente contra o responsável;\nperguntar em que direção ele fugiu ou onde provavelmente poderá ser encontrado;\nresistir a uma tentativa dele de comprar, intimidar ou desviar você;\nperguntar ao Mestre “Quem ou o que ele realmente teme perder?”\nUma vez por sessão, quando sacrificar uma vantagem real ou colocar-se em perigo porque se recusou a abandonar sua vingança, marque 1 XP. O Domínio desaparece quando a vingança for cumprida, perdoada ou abandonada.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1112"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1119",
+      "paragrafo_docx": 1119,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "PRAGMÁTICO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1119,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando escolher conscientemente uma solução desagradável, custosa ou moralmente duvidosa porque acredita que ela preservará um objetivo mais importante, diga qual preço está aceitando e marque 1 XP.\nPergunte ao Mestre: “Qual o custo mais relevante desta decisão?” Ele responderá honestamente.\nReceba também 1 Preparo para lidar com as consequências da sua decisão."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por sessão, quando escolher conscientemente uma solução desagradável, custosa ou moralmente duvidosa porque acredita que ela preservará um objetivo mais importante, diga qual preço está aceitando e marque 1 XP.\nPergunte ao Mestre: “Qual o custo mais relevante desta decisão?” Ele responderá honestamente.\nReceba também 1 Preparo para lidar com as consequências da sua decisão.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1119"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1120",
+      "paragrafo_docx": 1120,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ARMA APERFEIÇOADA",
+      "requisito_literal": "Arma Favorita",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1047",
+        "titulo_requerido": "ARMA FAVORITA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1120,
+          "tipo": "corpo",
+          "texto": "Sua Arma Favorita recebe uma segunda característica: precisa, brutal, defensiva, versátil, veloz, ameaçadora ou outra apropriada. Cada uma das duas características pode acionar separadamente o benefício de Arma Favorita uma vez por cena. Além disso, diga que modificação física, técnica de fabricação ou treinamento permitiu essa evolução."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Sua Arma Favorita recebe uma segunda característica: precisa, brutal, defensiva, versátil, veloz, ameaçadora ou outra apropriada. Cada uma das duas características pode acionar separadamente o benefício de Arma Favorita uma vez por cena. Além disso, diga que modificação física, técnica de fabricação ou treinamento permitiu essa evolução.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1120"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1121",
+      "paragrafo_docx": 1121,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "FERREIRO DE GUERRA",
+      "requisito_literal": "Arma Favorita",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1047",
+        "titulo_requerido": "ARMA FAVORITA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1121,
+          "tipo": "corpo",
+          "texto": "Quando possuir acesso a uma forja adequada, pode destruir uma arma mágica para incorporar uma de suas propriedades mágicas à sua Arma Favorita. O Mestre dirá caso a transferência exija:"
+        },
+        {
+          "paragrafo_docx": 1122,
+          "tipo": "opcao",
+          "texto": "material adicional;"
+        },
+        {
+          "paragrafo_docx": 1123,
+          "tipo": "opcao",
+          "texto": "um ritual;"
+        },
+        {
+          "paragrafo_docx": 1124,
+          "tipo": "opcao",
+          "texto": "conhecimento específico;"
+        },
+        {
+          "paragrafo_docx": 1125,
+          "tipo": "opcao",
+          "texto": "ajuda especializada;"
+        },
+        {
+          "paragrafo_docx": 1126,
+          "tipo": "opcao",
+          "texto": "ou a remoção de alguma propriedade incompatível."
+        },
+        {
+          "paragrafo_docx": 1127,
+          "tipo": "continuacao",
+          "texto": "A arma sacrificada é destruída no processo."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1122,
+          "texto": "material adicional;"
+        },
+        {
+          "paragrafo_docx": 1123,
+          "texto": "um ritual;"
+        },
+        {
+          "paragrafo_docx": 1124,
+          "texto": "conhecimento específico;"
+        },
+        {
+          "paragrafo_docx": 1125,
+          "texto": "ajuda especializada;"
+        },
+        {
+          "paragrafo_docx": 1126,
+          "texto": "ou a remoção de alguma propriedade incompatível."
+        }
+      ],
+      "texto_original": "Quando possuir acesso a uma forja adequada, pode destruir uma arma mágica para incorporar uma de suas propriedades mágicas à sua Arma Favorita. O Mestre dirá caso a transferência exija:\nmaterial adicional;\num ritual;\nconhecimento específico;\najuda especializada;\nou a remoção de alguma propriedade incompatível.\nA arma sacrificada é destruída no processo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1121"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1128",
+      "paragrafo_docx": 1128,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MESTRIA DE ARMADURA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1128,
+          "tipo": "corpo",
+          "texto": "Quando sua Armadura puder fisicamente absorver um ataque que causaria dano a você, pode deixá-la receber todo o impacto.\nNegue completamente o dano e reduza permanentemente a Armadura da peça utilizada em 1 até que ela seja reparada.\nSe isso reduzir sua Armadura a 0, a peça é destruída."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando sua Armadura puder fisicamente absorver um ataque que causaria dano a você, pode deixá-la receber todo o impacto.\nNegue completamente o dano e reduza permanentemente a Armadura da peça utilizada em 1 até que ela seja reparada.\nSe isso reduzir sua Armadura a 0, a peça é destruída.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1128"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1129",
+      "paragrafo_docx": 1129,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "PERFEIÇÃO DA ARMADURA",
+      "requisito_literal": "Mestria de Armadura",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1128",
+        "titulo_requerido": "MESTRIA DE ARMADURA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1129,
+          "tipo": "corpo",
+          "texto": "Quando utilizar Mestria de Armadura, além de negar o dano receba +1 adiante contra a origem do ataque. Se sua armadura sobreviver, diga também como o impacto revelou alguma coisa sobre a maneira como aquele inimigo luta."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando utilizar Mestria de Armadura, além de negar o dano receba +1 adiante contra a origem do ataque. Se sua armadura sobreviver, diga também como o impacto revelou alguma coisa sobre a maneira como aquele inimigo luta.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1129"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1130",
+      "paragrafo_docx": 1130,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "OLHO PARA ARMAS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1130,
+          "tipo": "corpo",
+          "texto": "Quando observar cuidadosamente as armas e os equipamentos de um combatente, pergunte ao Mestre:\n“Que vantagem este equipamento está lhe dando?”\ne “Em que situação ele se torna inconveniente?”\nReceba +1 adiante quando criar deliberadamente essa situação."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando observar cuidadosamente as armas e os equipamentos de um combatente, pergunte ao Mestre:\n“Que vantagem este equipamento está lhe dando?”\ne “Em que situação ele se torna inconveniente?”\nReceba +1 adiante quando criar deliberadamente essa situação.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1130"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1131",
+      "paragrafo_docx": 1131,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MAU OLHADO",
+      "requisito_literal": "Vendo Vermelho",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1077",
+        "titulo_requerido": "VENDO VERMELHO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1131,
+          "tipo": "corpo",
+          "texto": "Quando entrar em combate e deixar seus inimigos perceberem que você está avaliando todos eles, role+CAR.\n10+: Domínio 2.\n7–9: Domínio 1.\nGaste 1 Domínio quando fizer contato visual com um personagem do Mestre capaz de compreender sua ameaça para fazê-lo hesitar, recuar ou congelar por tempo suficiente para que você ou um aliado aja.\nEm 6-, os inimigos percebem imediatamente que você é a maior ameaça presente."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando entrar em combate e deixar seus inimigos perceberem que você está avaliando todos eles, role+CAR.\n10+: Domínio 2.\n7–9: Domínio 1.\nGaste 1 Domínio quando fizer contato visual com um personagem do Mestre capaz de compreender sua ameaça para fazê-lo hesitar, recuar ou congelar por tempo suficiente para que você ou um aliado aja.\nEm 6-, os inimigos percebem imediatamente que você é a maior ameaça presente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1131"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1132",
+      "paragrafo_docx": 1132,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ATRAVÉS DOS OLHOS DA MORTE",
+      "requisito_literal": "Vendo Vermelho",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1077",
+        "titulo_requerido": "VENDO VERMELHO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1132,
+          "tipo": "corpo",
+          "texto": "Quando entrar numa batalha e permitir-se contemplar seriamente quem não sairá vivo dela, role+SAB.\n10+: nomeie um PNJ que viverá e um PNJ que morrerá.\n7–9: nomeie apenas um PNJ que viverá ou um que morrerá.\nO Mestre fará a visão se realizar se isso for remotamente possível dentro da ficção.\n6-: você vê sua própria morte. Receba −1 constante durante aquela batalha enquanto a visão permanecer em sua mente."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando entrar numa batalha e permitir-se contemplar seriamente quem não sairá vivo dela, role+SAB.\n10+: nomeie um PNJ que viverá e um PNJ que morrerá.\n7–9: nomeie apenas um PNJ que viverá ou um que morrerá.\nO Mestre fará a visão se realizar se isso for remotamente possível dentro da ficção.\n6-: você vê sua própria morte. Receba −1 constante durante aquela batalha enquanto a visão permanecer em sua mente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1132"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1133",
+      "paragrafo_docx": 1133,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "GUERREIRO SUPERIOR",
+      "requisito_literal": "Mestre de Batalha",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1048",
+        "titulo_requerido": "MESTRE DE BATALHA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1133,
+          "tipo": "corpo",
+          "texto": "Quando obtiver 12+ em Matar e Pilhar, cause seu dano e evite o ataque normalmente. Além disso, escolha 2:"
+        },
+        {
+          "paragrafo_docx": 1134,
+          "tipo": "opcao",
+          "texto": "aumente a Periculosidade em um grau;"
+        },
+        {
+          "paragrafo_docx": 1135,
+          "tipo": "opcao",
+          "texto": "realize uma opção de Golpe de Controle sem reduzir sua Periculosidade;"
+        },
+        {
+          "paragrafo_docx": 1136,
+          "tipo": "opcao",
+          "texto": "tome uma posição vantajosa;"
+        },
+        {
+          "paragrafo_docx": 1137,
+          "tipo": "opcao",
+          "texto": "impressione, desmoralize ou amedronte quem testemunhou o golpe."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1134,
+          "texto": "aumente a Periculosidade em um grau;"
+        },
+        {
+          "paragrafo_docx": 1135,
+          "texto": "realize uma opção de Golpe de Controle sem reduzir sua Periculosidade;"
+        },
+        {
+          "paragrafo_docx": 1136,
+          "texto": "tome uma posição vantajosa;"
+        },
+        {
+          "paragrafo_docx": 1137,
+          "texto": "impressione, desmoralize ou amedronte quem testemunhou o golpe."
+        }
+      ],
+      "texto_original": "Quando obtiver 12+ em Matar e Pilhar, cause seu dano e evite o ataque normalmente. Além disso, escolha 2:\naumente a Periculosidade em um grau;\nrealize uma opção de Golpe de Controle sem reduzir sua Periculosidade;\ntome uma posição vantajosa;\nimpressione, desmoralize ou amedronte quem testemunhou o golpe.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1133"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1138",
+      "paragrafo_docx": 1138,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "GOSTO DE SANGUE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1138,
+          "tipo": "corpo",
+          "texto": "A primeira vez em cada cena que causar dano a um adversário capaz de sobreviver ao golpe, pergunte:\n“O que a maneira como ele reagiu revelou sobre sua forma de lutar?”\nO Mestre responderá com uma fraqueza, hábito ou prioridade observável.\nReceba +1 adiante quando explorar essa resposta."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "A primeira vez em cada cena que causar dano a um adversário capaz de sobreviver ao golpe, pergunte:\n“O que a maneira como ele reagiu revelou sobre sua forma de lutar?”\nO Mestre responderá com uma fraqueza, hábito ou prioridade observável.\nReceba +1 adiante quando explorar essa resposta.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1138"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1139",
+      "paragrafo_docx": 1139,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "SURTO DE AÇÃO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1139,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, depois de resolver completamente um Movimento, diga como força seu corpo além do limite.\nVocê pode realizar imediatamente outra ação antes que o Mestre avance uma ameaça já presente, desde que a ficção permita aquilo que deseja fazer."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por sessão, depois de resolver completamente um Movimento, diga como força seu corpo além do limite.\nVocê pode realizar imediatamente outra ação antes que o Mestre avance uma ameaça já presente, desde que a ficção permita aquilo que deseja fazer.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1139"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1140",
+      "paragrafo_docx": 1140,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MENTE TÁTICA",
+      "requisito_literal": "Segundo Fôlego",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1098",
+        "titulo_requerido": "SEGUNDO FÔLEGO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1140,
+          "tipo": "corpo",
+          "texto": "Quando obtiver 6- num Movimento que não cause dano diretamente, você pode abrir mão do uso ainda disponível de Segundo Fôlego para tratar o resultado como 7–9. Você percebe alguma solução no último instante, mas ainda precisa lidar com o preço do sucesso parcial."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando obtiver 6- num Movimento que não cause dano diretamente, você pode abrir mão do uso ainda disponível de Segundo Fôlego para tratar o resultado como 7–9. Você percebe alguma solução no último instante, mas ainda precisa lidar com o preço do sucesso parcial.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1140"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1142",
+      "paragrafo_docx": 1142,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "INDOMÁVEL",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1142,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando uma consequência física ou mental fosse retirá-lo da luta sem reduzi-lo a 0 PV — medo irresistível, paralisia, controle mental, atordoamento, expulsão ou semelhante — sofra uma Debilidade apropriada e continue capaz de agir. Você não ignora aquilo que aconteceu. Você simplesmente se recusa a sair da luta por causa disso."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por sessão, quando uma consequência física ou mental fosse retirá-lo da luta sem reduzi-lo a 0 PV — medo irresistível, paralisia, controle mental, atordoamento, expulsão ou semelhante — sofra uma Debilidade apropriada e continue capaz de agir. Você não ignora aquilo que aconteceu. Você simplesmente se recusa a sair da luta por causa disso.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1142"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1143",
+      "paragrafo_docx": 1143,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ATAQUES ESTUDADOS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1143,
+          "tipo": "corpo",
+          "texto": "Quando obtiver 6- ao atacar um adversário e sobreviver à resposta do Mestre, pergunte:\n“O que minha tentativa revelou sobre a defesa dele?”\nReceba +1 adiante na próxima vez que atacar esse mesmo adversário explorando a resposta."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando obtiver 6- ao atacar um adversário e sobreviver à resposta do Mestre, pergunte:\n“O que minha tentativa revelou sobre a defesa dele?”\nReceba +1 adiante na próxima vez que atacar esse mesmo adversário explorando a resposta.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1143"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1144",
+      "paragrafo_docx": 1144,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MESTRIA TÁTICA",
+      "requisito_literal": "Golpe de Controle",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1054",
+        "titulo_requerido": "GOLPE DE CONTROLE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1144,
+          "tipo": "corpo",
+          "texto": "Uma vez por cena, quando a arma, posição e movimento do inimigo realmente permitirem uma opção de Golpe de Controle, você pode realizá-la sem reduzir sua Periculosidade. Depois disso, para utilizar este Movimento novamente na mesma cena, você precisa mudar significativamente arma, posição, terreno ou abordagem."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por cena, quando a arma, posição e movimento do inimigo realmente permitirem uma opção de Golpe de Controle, você pode realizá-la sem reduzir sua Periculosidade. Depois disso, para utilizar este Movimento novamente na mesma cena, você precisa mudar significativamente arma, posição, terreno ou abordagem.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1144"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1145",
+      "paragrafo_docx": 1145,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "SUPERIORIDADE DE COMBATE",
+      "requisito_literal": "Mestre de Batalha",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1048",
+        "titulo_requerido": "MESTRE DE BATALHA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1145,
+          "tipo": "corpo",
+          "texto": "No início de um combate significativo, receba Domínio Tático 2. Gaste 1 para realizar uma manobra apropriada:"
+        },
+        {
+          "paragrafo_docx": 1146,
+          "tipo": "opcao",
+          "texto": "Aparar: reduza pela metade o dano de um golpe que sua arma possa interceptar."
+        },
+        {
+          "paragrafo_docx": 1147,
+          "tipo": "opcao",
+          "texto": "Reposicionar: permita que você ou um aliado próximo mude de posição sem oferecer uma abertura apenas por se mover."
+        },
+        {
+          "paragrafo_docx": 1148,
+          "tipo": "opcao",
+          "texto": "Provocar: após atingir alguém, torne-se a ameaça imediata que ele precisa considerar antes de atacar outra pessoa."
+        },
+        {
+          "paragrafo_docx": 1149,
+          "tipo": "opcao",
+          "texto": "Distrair: após atingir alguém, dê +1 adiante ao próximo aliado que agir contra ele."
+        },
+        {
+          "paragrafo_docx": 1150,
+          "tipo": "opcao",
+          "texto": "Comandar: permita a um aliado que possa ouvi-lo aproveitar imediatamente uma abertura criada por você."
+        },
+        {
+          "paragrafo_docx": 1151,
+          "tipo": "continuacao",
+          "texto": "Recupere 1 Domínio, até o máximo de 2, quando Mestre de Batalha for acionado através de um elemento diferente do último utilizado e você conseguir explorar essa vantagem com sucesso."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1146,
+          "texto": "Aparar: reduza pela metade o dano de um golpe que sua arma possa interceptar."
+        },
+        {
+          "paragrafo_docx": 1147,
+          "texto": "Reposicionar: permita que você ou um aliado próximo mude de posição sem oferecer uma abertura apenas por se mover."
+        },
+        {
+          "paragrafo_docx": 1148,
+          "texto": "Provocar: após atingir alguém, torne-se a ameaça imediata que ele precisa considerar antes de atacar outra pessoa."
+        },
+        {
+          "paragrafo_docx": 1149,
+          "texto": "Distrair: após atingir alguém, dê +1 adiante ao próximo aliado que agir contra ele."
+        },
+        {
+          "paragrafo_docx": 1150,
+          "texto": "Comandar: permita a um aliado que possa ouvi-lo aproveitar imediatamente uma abertura criada por você."
+        }
+      ],
+      "texto_original": "No início de um combate significativo, receba Domínio Tático 2. Gaste 1 para realizar uma manobra apropriada:\nAparar: reduza pela metade o dano de um golpe que sua arma possa interceptar.\nReposicionar: permita que você ou um aliado próximo mude de posição sem oferecer uma abertura apenas por se mover.\nProvocar: após atingir alguém, torne-se a ameaça imediata que ele precisa considerar antes de atacar outra pessoa.\nDistrair: após atingir alguém, dê +1 adiante ao próximo aliado que agir contra ele.\nComandar: permita a um aliado que possa ouvi-lo aproveitar imediatamente uma abertura criada por você.\nRecupere 1 Domínio, até o máximo de 2, quando Mestre de Batalha for acionado através de um elemento diferente do último utilizado e você conseguir explorar essa vantagem com sucesso.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1145"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1152",
+      "paragrafo_docx": 1152,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "CONHEÇA SEU INIMIGO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1152,
+          "tipo": "corpo",
+          "texto": "Quando puder observar um combatente lutar, treinar ou se preparar durante alguns instantes, faça 2 perguntas:"
+        },
+        {
+          "paragrafo_docx": 1153,
+          "tipo": "opcao",
+          "texto": "Qual é a distância em que ele prefere lutar?"
+        },
+        {
+          "paragrafo_docx": 1154,
+          "tipo": "opcao",
+          "texto": "O que ele está protegendo mais cuidadosamente?"
+        },
+        {
+          "paragrafo_docx": 1155,
+          "tipo": "opcao",
+          "texto": "Qual erro ele repete?"
+        },
+        {
+          "paragrafo_docx": 1156,
+          "tipo": "opcao",
+          "texto": "O que o faria abandonar a luta?"
+        },
+        {
+          "paragrafo_docx": 1157,
+          "tipo": "opcao",
+          "texto": "De quem ele recebe ordens?"
+        },
+        {
+          "paragrafo_docx": 1158,
+          "tipo": "opcao",
+          "texto": "Que tipo de adversário ele claramente não está acostumado a enfrentar?"
+        },
+        {
+          "paragrafo_docx": 1159,
+          "tipo": "continuacao",
+          "texto": "As respostas precisam vir de coisas que sua experiência militar possa perceber."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1153,
+          "texto": "Qual é a distância em que ele prefere lutar?"
+        },
+        {
+          "paragrafo_docx": 1154,
+          "texto": "O que ele está protegendo mais cuidadosamente?"
+        },
+        {
+          "paragrafo_docx": 1155,
+          "texto": "Qual erro ele repete?"
+        },
+        {
+          "paragrafo_docx": 1156,
+          "texto": "O que o faria abandonar a luta?"
+        },
+        {
+          "paragrafo_docx": 1157,
+          "texto": "De quem ele recebe ordens?"
+        },
+        {
+          "paragrafo_docx": 1158,
+          "texto": "Que tipo de adversário ele claramente não está acostumado a enfrentar?"
+        }
+      ],
+      "texto_original": "Quando puder observar um combatente lutar, treinar ou se preparar durante alguns instantes, faça 2 perguntas:\nQual é a distância em que ele prefere lutar?\nO que ele está protegendo mais cuidadosamente?\nQual erro ele repete?\nO que o faria abandonar a luta?\nDe quem ele recebe ordens?\nQue tipo de adversário ele claramente não está acostumado a enfrentar?\nAs respostas precisam vir de coisas que sua experiência militar possa perceber.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1152"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1160",
+      "paragrafo_docx": 1160,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ORDEM DO COMANDANTE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1160,
+          "tipo": "corpo",
+          "texto": "Quando possuir uma oportunidade clara de atacar e abrir mão dela para indicar a um aliado exatamente como explorá-la, esse aliado pode agir imediatamente e recebe +1 adiante nessa ação. Se ele ignorar sua indicação, nada acontece."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando possuir uma oportunidade clara de atacar e abrir mão dela para indicar a um aliado exatamente como explorá-la, esse aliado pode agir imediatamente e recebe +1 adiante nessa ação. Se ele ignorar sua indicação, nada acontece.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1160"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1161",
+      "paragrafo_docx": 1161,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ATLETA EXTRAORDINÁRIO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1161,
+          "tipo": "corpo",
+          "texto": "Feitos atléticos dentro do limite extremo do corpo humano são rotina para você quando não houver perigo. \nAlém disso, uma vez por cena, quando obtiver 7–9 ao Desafiar o Perigo com FOR, DES ou CON realizando uma façanha puramente física, trate como 10+."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Feitos atléticos dentro do limite extremo do corpo humano são rotina para você quando não houver perigo. \nAlém disso, uma vez por cena, quando obtiver 7–9 ao Desafiar o Perigo com FOR, DES ou CON realizando uma façanha puramente física, trate como 10+.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1161"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1162",
+      "paragrafo_docx": 1162,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "SOBREVIVENTE",
+      "requisito_literal": "Segundo Fôlego",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1098",
+        "titulo_requerido": "SEGUNDO FÔLEGO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1162,
+          "tipo": "corpo",
+          "texto": "Enquanto estiver com metade ou menos de seus PV máximos, sempre que obtiver 12+ ao Desafiar o Perigo com FOR, DES ou CON, recupere 1d6 PV. A recuperação representa sua capacidade de continuar funcionando apesar da violência."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Enquanto estiver com metade ou menos de seus PV máximos, sempre que obtiver 12+ ao Desafiar o Perigo com FOR, DES ou CON, recupere 1d6 PV. A recuperação representa sua capacidade de continuar funcionando apesar da violência.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1162"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1163",
+      "paragrafo_docx": 1163,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ESPÍRITO DE COMBATE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1163,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando entrar numa luta carregando um dever que se recusa a abandonar, receba Domínio 3.\nGaste 1 para:"
+        },
+        {
+          "paragrafo_docx": 1164,
+          "tipo": "opcao",
+          "texto": "receber +1 numa rolagem diretamente ligada ao dever;"
+        },
+        {
+          "paragrafo_docx": 1165,
+          "tipo": "opcao",
+          "texto": "ignorar uma Debilidade física durante uma rolagem;"
+        },
+        {
+          "paragrafo_docx": 1166,
+          "tipo": "opcao",
+          "texto": "resistir ao medo sem precisar provar novamente sua determinação;"
+        },
+        {
+          "paragrafo_docx": 1167,
+          "tipo": "opcao",
+          "texto": "permanecer de pé quando a ficção permitir que pura vontade ainda faça diferença."
+        },
+        {
+          "paragrafo_docx": 1168,
+          "tipo": "continuacao",
+          "texto": "Perca todo Domínio se abandonar voluntariamente o dever."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1164,
+          "texto": "receber +1 numa rolagem diretamente ligada ao dever;"
+        },
+        {
+          "paragrafo_docx": 1165,
+          "texto": "ignorar uma Debilidade física durante uma rolagem;"
+        },
+        {
+          "paragrafo_docx": 1166,
+          "texto": "resistir ao medo sem precisar provar novamente sua determinação;"
+        },
+        {
+          "paragrafo_docx": 1167,
+          "texto": "permanecer de pé quando a ficção permitir que pura vontade ainda faça diferença."
+        }
+      ],
+      "texto_original": "Uma vez por sessão, quando entrar numa luta carregando um dever que se recusa a abandonar, receba Domínio 3.\nGaste 1 para:\nreceber +1 numa rolagem diretamente ligada ao dever;\nignorar uma Debilidade física durante uma rolagem;\nresistir ao medo sem precisar provar novamente sua determinação;\npermanecer de pé quando a ficção permitir que pura vontade ainda faça diferença.\nPerca todo Domínio se abandonar voluntariamente o dever.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1163"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1169",
+      "paragrafo_docx": 1169,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "CORTESÃO ELEGANTE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1169,
+          "tipo": "corpo",
+          "texto": "Quando participar de uma negociação, audiência ou confronto social no qual disciplina, autocontrole e leitura do protocolo sejam mais importantes que magnetismo pessoal, pode usar SAB em vez de CAR para Negociar.\nEm 10+, pergunte também: “Que resultado permitiria a esta pessoa ceder sem perder a própria dignidade?”"
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando participar de uma negociação, audiência ou confronto social no qual disciplina, autocontrole e leitura do protocolo sejam mais importantes que magnetismo pessoal, pode usar SAB em vez de CAR para Negociar.\nEm 10+, pergunte também: “Que resultado permitiria a esta pessoa ceder sem perder a própria dignidade?”",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1169"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1170",
+      "paragrafo_docx": 1170,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "DEVER ACIMA DE TUDO",
+      "requisito_literal": "Honrado",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1099",
+        "titulo_requerido": "HONRADO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1170,
+          "tipo": "corpo",
+          "texto": "Quando seu código de Honrado e um dever formal apontarem para a mesma ação, um resultado 7–9 ao Desafiar o Perigo por dor, medo ou exaustão pode ser tratado como 10+ se você aceitar imediatamente uma Debilidade apropriada."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando seu código de Honrado e um dever formal apontarem para a mesma ação, um resultado 7–9 ao Desafiar o Perigo por dor, medo ou exaustão pode ser tratado como 10+ se você aceitar imediatamente uma Debilidade apropriada.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1170"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1171",
+      "paragrafo_docx": 1171,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "FORÇA ANTES DA MORTE",
+      "requisito_literal": "Espírito de Combate",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1163",
+        "titulo_requerido": "ESPÍRITO DE COMBATE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1171,
+          "tipo": "corpo",
+          "texto": "Quando for reduzido a 0 PV, antes de realizar Último Suspiro, execute uma última ação significativa como se ainda estivesse de pé. Se essa ação cumprir ou concluir o dever que sustentava seu Espírito de Combate, receba +1 em seu Último Suspiro."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando for reduzido a 0 PV, antes de realizar Último Suspiro, execute uma última ação significativa como se ainda estivesse de pé. Se essa ação cumprir ou concluir o dever que sustentava seu Espírito de Combate, receba +1 em seu Último Suspiro.",      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1171"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1173",
+      "paragrafo_docx": 1173,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MARCA INABALÁVEL",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1173,
+          "tipo": "corpo",
+          "texto": "Quando ferir alguém em combate corpo a corpo e declarar que não permitirá que ele alcance outra pessoa, ele fica marcado por você enquanto ambos permanecerem capazes de se enfrentar. \nSe ele tentar ignorá-lo para atacar alguém que você poderia proteger, escolha imediatamente:"
+        },
+        {
+          "paragrafo_docx": 1174,
+          "tipo": "opcao",
+          "texto": "coloque-se no caminho;"
+        },
+        {
+          "paragrafo_docx": 1175,
+          "tipo": "opcao",
+          "texto": "receba +1 adiante para atacá-lo enquanto passa;"
+        },
+        {
+          "paragrafo_docx": 1176,
+          "tipo": "opcao",
+          "texto": "dê +1 adiante ao aliado que ele decidiu atacar."
+        },
+        {
+          "paragrafo_docx": 1177,
+          "tipo": "continuacao",
+          "texto": "A marca termina quando você abandona o confronto, marca outro adversário ou não possui mais qualquer maneira plausível de contê-lo."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1174,
+          "texto": "coloque-se no caminho;"
+        },
+        {
+          "paragrafo_docx": 1175,
+          "texto": "receba +1 adiante para atacá-lo enquanto passa;"
+        },
+        {
+          "paragrafo_docx": 1176,
+          "texto": "dê +1 adiante ao aliado que ele decidiu atacar."
+        }
+      ],
+      "texto_original": "Quando ferir alguém em combate corpo a corpo e declarar que não permitirá que ele alcance outra pessoa, ele fica marcado por você enquanto ambos permanecerem capazes de se enfrentar. \nSe ele tentar ignorá-lo para atacar alguém que você poderia proteger, escolha imediatamente:\ncoloque-se no caminho;\nreceba +1 adiante para atacá-lo enquanto passa;\ndê +1 adiante ao aliado que ele decidiu atacar.\nA marca termina quando você abandona o confronto, marca outro adversário ou não possui mais qualquer maneira plausível de contê-lo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1173"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1178",
+      "paragrafo_docx": 1178,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MANTER A LINHA",
+      "requisito_literal": "Segure a Linha",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1086",
+        "titulo_requerido": "SEGURE A LINHA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1178,
+          "tipo": "corpo",
+          "texto": "Quando um inimigo tentar entrar, sair ou atravessar a área que você está ativamente defendendo, você pode confrontá-lo antes que complete o movimento. Se causar dano ou conseguir controlá-lo, ele não atravessa sua posição sem primeiro superar você."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando um inimigo tentar entrar, sair ou atravessar a área que você está ativamente defendendo, você pode confrontá-lo antes que complete o movimento. Se causar dano ou conseguir controlá-lo, ele não atravessa sua posição sem primeiro superar você.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1178"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1179",
+      "paragrafo_docx": 1179,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "DEFENSOR VIGILANTE",
+      "requisito_literal": "Marca Inabalável",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1173",
+        "titulo_requerido": "MARCA INABALÁVEL",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1179,
+          "tipo": "corpo",
+          "texto": "Estar ocupado com um inimigo não cria automaticamente uma abertura para os demais. Qualquer adversário ao alcance que tente atravessar sua posição, atacar alguém que você protege ou abandonar o confronto precisa lidar com você, mesmo quando vários fazem isso quase simultaneamente."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Estar ocupado com um inimigo não cria automaticamente uma abertura para os demais. Qualquer adversário ao alcance que tente atravessar sua posição, atacar alguém que você protege ou abandonar o confronto precisa lidar com você, mesmo quando vários fazem isso quase simultaneamente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1179"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1180",
+      "paragrafo_docx": 1180,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "CAVALEIRO NATO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1180,
+          "tipo": "corpo",
+          "texto": "Quando lutar montado numa criatura treinada para combate, vocês funcionam como uma unidade para manobras comuns: mudar direção, atravessar obstáculos adequados, atacar em movimento, montar ou desmontar rapidamente. \nQuando possuir espaço suficiente para colocar sua montaria em velocidade antes do impacto, aumente a Periculosidade em um grau no primeiro golpe da carga. Em 10+ no ataque, escolha também:"
+        },
+        {
+          "paragrafo_docx": 1181,
+          "tipo": "opcao",
+          "texto": "atravesse a formação;"
+        },
+        {
+          "paragrafo_docx": 1182,
+          "tipo": "opcao",
+          "texto": "derrube o alvo;"
+        },
+        {
+          "paragrafo_docx": 1183,
+          "tipo": "opcao",
+          "texto": "leve-o consigo;"
+        },
+        {
+          "paragrafo_docx": 1184,
+          "tipo": "opcao",
+          "texto": "termine exatamente na posição desejada."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1181,
+          "texto": "atravesse a formação;"
+        },
+        {
+          "paragrafo_docx": 1182,
+          "texto": "derrube o alvo;"
+        },
+        {
+          "paragrafo_docx": 1183,
+          "texto": "leve-o consigo;"
+        },
+        {
+          "paragrafo_docx": 1184,
+          "texto": "termine exatamente na posição desejada."
+        }
+      ],
+      "texto_original": "Quando lutar montado numa criatura treinada para combate, vocês funcionam como uma unidade para manobras comuns: mudar direção, atravessar obstáculos adequados, atacar em movimento, montar ou desmontar rapidamente. \nQuando possuir espaço suficiente para colocar sua montaria em velocidade antes do impacto, aumente a Periculosidade em um grau no primeiro golpe da carga. Em 10+ no ataque, escolha também:\natravesse a formação;\nderrube o alvo;\nleve-o consigo;\ntermine exatamente na posição desejada.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1180"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1185",
+      "paragrafo_docx": 1185,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "GRAVADOR DE RUNAS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1185,
+          "tipo": "corpo",
+          "texto": "Você aprendeu a magia das runas gigantes. Escolha duas Runas:"
+        },
+        {
+          "paragrafo_docx": 1186,
+          "tipo": "opcao",
+          "texto": "Fogo: suas inscrições irradiam calor. Duas vezes por cena, quando ferir alguém com um objeto que carregue esta runa, envolva-o em correntes flamejantes; ele precisa romper a prisão ou enfrentar as chamas para agir livremente."
+        },
+        {
+          "paragrafo_docx": 1187,
+          "tipo": "opcao",
+          "texto": "Gelo: você resiste a frio sobrenatural. Duas vezes por cena, transforme um 7–9 em 10+ ao Desafiar o Perigo com FOR ou CON permanecendo firme."
+        },
+        {
+          "paragrafo_docx": 1188,
+          "tipo": "opcao",
+          "texto": "Pedra: perceba vibrações através de pedra próxima. Duas vezes por cena, quando alguém encontrar seu olhar, faça-o hesitar como se o peso da montanha estivesse sobre ele."
+        },
+        {
+          "paragrafo_docx": 1189,
+          "tipo": "opcao",
+          "texto": "Nuvem: sua percepção do espaço torna-se estranha. Duas vezes por cena, quando um ataque atingir você ou um aliado próximo, redirecione-o para outro alvo plausível ao alcance da ficção."
+        },
+        {
+          "paragrafo_docx": 1190,
+          "tipo": "opcao",
+          "texto": "Colina: sua resistência cresce. Duas vezes por cena, reduza pela metade uma fonte de dano físico."
+        },
+        {
+          "paragrafo_docx": 1191,
+          "tipo": "opcao",
+          "texto": "Tempestade: você percebe pequenas possibilidades antes que aconteçam. Duas vezes por cena, pergunte ao Mestre “O que está prestes a acontecer aqui?” e receba +1 adiante conforme a resposta."
+        },
+        {
+          "paragrafo_docx": 1192,
+          "tipo": "continuacao",
+          "texto": "As runas precisam ser inscritas em objetos apropriados para serem utilizadas."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1186,
+          "texto": "Fogo: suas inscrições irradiam calor. Duas vezes por cena, quando ferir alguém com um objeto que carregue esta runa, envolva-o em correntes flamejantes; ele precisa romper a prisão ou enfrentar as chamas para agir livremente."
+        },
+        {
+          "paragrafo_docx": 1187,
+          "texto": "Gelo: você resiste a frio sobrenatural. Duas vezes por cena, transforme um 7–9 em 10+ ao Desafiar o Perigo com FOR ou CON permanecendo firme."
+        },
+        {
+          "paragrafo_docx": 1188,
+          "texto": "Pedra: perceba vibrações através de pedra próxima. Duas vezes por cena, quando alguém encontrar seu olhar, faça-o hesitar como se o peso da montanha estivesse sobre ele."
+        },
+        {
+          "paragrafo_docx": 1189,
+          "texto": "Nuvem: sua percepção do espaço torna-se estranha. Duas vezes por cena, quando um ataque atingir você ou um aliado próximo, redirecione-o para outro alvo plausível ao alcance da ficção."
+        },
+        {
+          "paragrafo_docx": 1190,
+          "texto": "Colina: sua resistência cresce. Duas vezes por cena, reduza pela metade uma fonte de dano físico."
+        },
+        {
+          "paragrafo_docx": 1191,
+          "texto": "Tempestade: você percebe pequenas possibilidades antes que aconteçam. Duas vezes por cena, pergunte ao Mestre “O que está prestes a acontecer aqui?” e receba +1 adiante conforme a resposta."
+        }
+      ],
+      "texto_original": "Você aprendeu a magia das runas gigantes. Escolha duas Runas:\nFogo: suas inscrições irradiam calor. Duas vezes por cena, quando ferir alguém com um objeto que carregue esta runa, envolva-o em correntes flamejantes; ele precisa romper a prisão ou enfrentar as chamas para agir livremente.\nGelo: você resiste a frio sobrenatural. Duas vezes por cena, transforme um 7–9 em 10+ ao Desafiar o Perigo com FOR ou CON permanecendo firme.\nPedra: perceba vibrações através de pedra próxima. Duas vezes por cena, quando alguém encontrar seu olhar, faça-o hesitar como se o peso da montanha estivesse sobre ele.\nNuvem: sua percepção do espaço torna-se estranha. Duas vezes por cena, quando um ataque atingir você ou um aliado próximo, redirecione-o para outro alvo plausível ao alcance da ficção.\nColina: sua resistência cresce. Duas vezes por cena, reduza pela metade uma fonte de dano físico.\nTempestade: você percebe pequenas possibilidades antes que aconteçam. Duas vezes por cena, pergunte ao Mestre “O que está prestes a acontecer aqui?” e receba +1 adiante conforme a resposta.\nAs runas precisam ser inscritas em objetos apropriados para serem utilizadas.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1185"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1193",
+      "paragrafo_docx": 1193,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "PODER DOS GIGANTES",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1193,
+          "tipo": "corpo",
+          "texto": "Uma vez por cena, quando despertar a força gigante que aprendeu a canalizar, torne-se fisicamente muito maior até o fim da cena.\nEnquanto estiver assim:"
+        },
+        {
+          "paragrafo_docx": 1194,
+          "tipo": "opcao",
+          "texto": "sua escala permite feitos de força impossíveis ao seu tamanho normal;"
+        },
+        {
+          "paragrafo_docx": 1195,
+          "tipo": "opcao",
+          "texto": "seu alcance físico aumenta de maneira apropriada;"
+        },
+        {
+          "paragrafo_docx": 1196,
+          "tipo": "opcao",
+          "texto": "uma vez durante a transformação, aumente em um grau a Periculosidade de uma ação baseada em pura força."
+        },
+        {
+          "paragrafo_docx": 1197,
+          "tipo": "continuacao",
+          "texto": "O ambiente precisa conseguir acomodar sua nova dimensão."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1194,
+          "texto": "sua escala permite feitos de força impossíveis ao seu tamanho normal;"
+        },
+        {
+          "paragrafo_docx": 1195,
+          "texto": "seu alcance físico aumenta de maneira apropriada;"
+        },
+        {
+          "paragrafo_docx": 1196,
+          "texto": "uma vez durante a transformação, aumente em um grau a Periculosidade de uma ação baseada em pura força."
+        }
+      ],
+      "texto_original": "Uma vez por cena, quando despertar a força gigante que aprendeu a canalizar, torne-se fisicamente muito maior até o fim da cena.\nEnquanto estiver assim:\nsua escala permite feitos de força impossíveis ao seu tamanho normal;\nseu alcance físico aumenta de maneira apropriada;\numa vez durante a transformação, aumente em um grau a Periculosidade de uma ação baseada em pura força.\nO ambiente precisa conseguir acomodar sua nova dimensão.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1193"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1198",
+      "paragrafo_docx": 1198,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ESCUDO RÚNICO",
+      "requisito_literal": "Gravador de Runas",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1185",
+        "titulo_requerido": "GRAVADOR DE RUNAS",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1198,
+          "tipo": "corpo",
+          "texto": "Duas vezes por cena, quando um aliado que você possa perceber sofrer um ataque que suas runas possam alcançar, invoque uma delas para reduzir pela metade o dano ou efeito. Diga como aquela runa interfere."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Duas vezes por cena, quando um aliado que você possa perceber sofrer um ataque que suas runas possam alcançar, invoque uma delas para reduzir pela metade o dano ou efeito. Diga como aquela runa interfere.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1198"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1199",
+      "paragrafo_docx": 1199,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MESTRE DAS RUNAS",
+      "requisito_literal": "Gravador de Runas",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1185",
+        "titulo_requerido": "GRAVADOR DE RUNAS",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1199,
+          "tipo": "corpo",
+          "texto": "Aprenda duas Runas adicionais. Além disso, uma vez por cena, quando invocar uma de suas Runas, você pode intensificar sua manifestação além do efeito habitual. Diga o que deseja que ela faça; o Mestre dirá qual condição, risco ou custo precisa ser aceito para levá-la além de seus limites normais."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Aprenda duas Runas adicionais. Além disso, uma vez por cena, quando invocar uma de suas Runas, você pode intensificar sua manifestação além do efeito habitual. Diga o que deseja que ela faça; o Mestre dirá qual condição, risco ou custo precisa ser aceito para levá-la além de seus limites normais.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1199"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1201",
+      "paragrafo_docx": 1201,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "DISCIPLINA PSIÔNICA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1201,
+          "tipo": "corpo",
+          "texto": "No início de uma cena perigosa, receba Domínio Psiônico 2. Gaste 1 para:"
+        },
+        {
+          "paragrafo_docx": 1202,
+          "tipo": "opcao",
+          "texto": "Campo Protetor: reduza pela metade o dano sofrido por você ou um aliado próximo que consiga perceber."
+        },
+        {
+          "paragrafo_docx": 1203,
+          "tipo": "opcao",
+          "texto": "Movimento Telecinético: mova um objeto solto ou criatura voluntária próxima para outra posição que consiga enxergar."
+        },
+        {
+          "paragrafo_docx": 1204,
+          "tipo": "opcao",
+          "texto": "Golpe Psiônico: quando causar dano com uma arma, empurre o alvo, rompa sua posição ou transforme o impacto em força sobrenatural capaz de atingir algo que força comum não alcançaria."
+        },
+        {
+          "paragrafo_docx": 1205,
+          "tipo": "continuacao",
+          "texto": "Perca o Domínio restante quando a cena terminar."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1202,
+          "texto": "Campo Protetor: reduza pela metade o dano sofrido por você ou um aliado próximo que consiga perceber."
+        },
+        {
+          "paragrafo_docx": 1203,
+          "texto": "Movimento Telecinético: mova um objeto solto ou criatura voluntária próxima para outra posição que consiga enxergar."
+        },
+        {
+          "paragrafo_docx": 1204,
+          "texto": "Golpe Psiônico: quando causar dano com uma arma, empurre o alvo, rompa sua posição ou transforme o impacto em força sobrenatural capaz de atingir algo que força comum não alcançaria."
+        }
+      ],
+      "texto_original": "No início de uma cena perigosa, receba Domínio Psiônico 2. Gaste 1 para:\nCampo Protetor: reduza pela metade o dano sofrido por você ou um aliado próximo que consiga perceber.\nMovimento Telecinético: mova um objeto solto ou criatura voluntária próxima para outra posição que consiga enxergar.\nGolpe Psiônico: quando causar dano com uma arma, empurre o alvo, rompa sua posição ou transforme o impacto em força sobrenatural capaz de atingir algo que força comum não alcançaria.\nPerca o Domínio restante quando a cena terminar.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1201"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1206",
+      "paragrafo_docx": 1206,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "IMPULSO TELECINÉTICO",
+      "requisito_literal": "Disciplina Psiônica",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1201",
+        "titulo_requerido": "DISCIPLINA PSIÔNICA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1206,
+          "tipo": "corpo",
+          "texto": "Quando utilizar Golpe Psiônico, pode também:"
+        },
+        {
+          "paragrafo_docx": 1207,
+          "tipo": "opcao",
+          "texto": "derrubar;"
+        },
+        {
+          "paragrafo_docx": 1208,
+          "tipo": "opcao",
+          "texto": "lançar o alvo para longe;"
+        },
+        {
+          "paragrafo_docx": 1209,
+          "tipo": "opcao",
+          "texto": "suspendê-lo momentaneamente;"
+        },
+        {
+          "paragrafo_docx": 1210,
+          "tipo": "opcao",
+          "texto": "ou arrancá-lo de uma posição protegida,"
+        },
+        {
+          "paragrafo_docx": 1211,
+          "tipo": "continuacao",
+          "texto": "sem reduzir a Periculosidade do ataque."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1207,
+          "texto": "derrubar;"
+        },
+        {
+          "paragrafo_docx": 1208,
+          "texto": "lançar o alvo para longe;"
+        },
+        {
+          "paragrafo_docx": 1209,
+          "texto": "suspendê-lo momentaneamente;"
+        },
+        {
+          "paragrafo_docx": 1210,
+          "texto": "ou arrancá-lo de uma posição protegida,"
+        }
+      ],
+      "texto_original": "Quando utilizar Golpe Psiônico, pode também:\nderrubar;\nlançar o alvo para longe;\nsuspendê-lo momentaneamente;\nou arrancá-lo de uma posição protegida,\nsem reduzir a Periculosidade do ataque.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1206"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1212",
+      "paragrafo_docx": 1212,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "BALUARTE DE FORÇA",
+      "requisito_literal": "Disciplina Psiônica",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1201",
+        "titulo_requerido": "DISCIPLINA PSIÔNICA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1212,
+          "tipo": "corpo",
+          "texto": "Gaste 1 Domínio Psiônico para erguer uma barreira momentânea ao redor de você e aliados próximos.\nAté que alguém rompa, atravesse ou contorne a barreira, todos protegidos recebem +1 Armadura contra ataques físicos e mágicos capazes de serem interceptados por força."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Gaste 1 Domínio Psiônico para erguer uma barreira momentânea ao redor de você e aliados próximos.\nAté que alguém rompa, atravesse ou contorne a barreira, todos protegidos recebem +1 Armadura contra ataques físicos e mágicos capazes de serem interceptados por força.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1212"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1213",
+      "paragrafo_docx": 1213,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MENTE GUARDADA",
+      "requisito_literal": "Disciplina Psiônica",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1201",
+        "titulo_requerido": "DISCIPLINA PSIÔNICA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1213,
+          "tipo": "corpo",
+          "texto": "A primeira vez em cada cena que obtiver 7–9 ao Desafiar o Perigo contra controle mental, leitura de pensamentos ou manipulação psíquica, trate como 10+."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "A primeira vez em cada cena que obtiver 7–9 ao Desafiar o Perigo contra controle mental, leitura de pensamentos ou manipulação psíquica, trate como 10+.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1213"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1215",
+      "paragrafo_docx": 1215,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MANIFESTAR ECO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1215,
+          "tipo": "corpo",
+          "texto": "Uma vez por cena, você pode manifestar numa posição próxima uma imagem espectral de uma possibilidade de si mesmo.\nEnquanto o Eco existir:"
+        },
+        {
+          "paragrafo_docx": 1216,
+          "tipo": "opcao",
+          "texto": "pode realizar ataques corpo a corpo como se estivesse na posição dele;"
+        },
+        {
+          "paragrafo_docx": 1217,
+          "tipo": "opcao",
+          "texto": "pode trocar instantaneamente de lugar com ele quando puder agir;"
+        },
+        {
+          "paragrafo_docx": 1218,
+          "tipo": "opcao",
+          "texto": "percebe claramente aquilo que o Eco ocupa e ameaça."
+        },
+        {
+          "paragrafo_docx": 1219,
+          "tipo": "continuacao",
+          "texto": "O Eco é frágil: qualquer violência capaz de atingi-lo o desfaz. Você só pode manter um Eco por vez. Caso o Eco se desfaça, você pode manifestar um novo Eco na mesma cena sacrificando 2 PV através de um ritual rápido (mas não instantâneo)."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1216,
+          "texto": "pode realizar ataques corpo a corpo como se estivesse na posição dele;"
+        },
+        {
+          "paragrafo_docx": 1217,
+          "texto": "pode trocar instantaneamente de lugar com ele quando puder agir;"
+        },
+        {
+          "paragrafo_docx": 1218,
+          "texto": "percebe claramente aquilo que o Eco ocupa e ameaça."
+        }
+      ],
+      "texto_original": "Uma vez por cena, você pode manifestar numa posição próxima uma imagem espectral de uma possibilidade de si mesmo.\nEnquanto o Eco existir:\npode realizar ataques corpo a corpo como se estivesse na posição dele;\npode trocar instantaneamente de lugar com ele quando puder agir;\npercebe claramente aquilo que o Eco ocupa e ameaça.\nO Eco é frágil: qualquer violência capaz de atingi-lo o desfaz. Você só pode manter um Eco por vez. Caso o Eco se desfaça, você pode manifestar um novo Eco na mesma cena sacrificando 2 PV através de um ritual rápido (mas não instantâneo).",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1215"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1220",
+      "paragrafo_docx": 1220,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MÁRTIR DO ECO",
+      "requisito_literal": "Manifestar Eco",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1215",
+        "titulo_requerido": "MANIFESTAR ECO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1220,
+          "tipo": "corpo",
+          "texto": "Quando alguém próximo de seu Eco estiver prestes a sofrer um ataque, desfaça o Eco para receber o ataque em seu lugar.\nA violência atinge o Eco e ele se desfaz."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando alguém próximo de seu Eco estiver prestes a sofrer um ataque, desfaça o Eco para receber o ataque em seu lugar.\nA violência atinge o Eco e ele se desfaz.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1220"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1221",
+      "paragrafo_docx": 1221,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "AVATAR DO ECO",
+      "requisito_literal": "Manifestar Eco",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1215",
+        "titulo_requerido": "MANIFESTAR ECO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1221,
+          "tipo": "corpo",
+          "texto": "Quando fechar seus próprios sentidos e concentrar-se inteiramente no Eco, pode ver e ouvir através dele mesmo a grande distância. Seu corpo permanece imóvel e vulnerável enquanto fizer isso."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando fechar seus próprios sentidos e concentrar-se inteiramente no Eco, pode ver e ouvir através dele mesmo a grande distância. Seu corpo permanece imóvel e vulnerável enquanto fizer isso.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1221"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1222",
+      "paragrafo_docx": 1222,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "LEGIÃO DE UM",
+      "requisito_literal": "Manifestar Eco",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1215",
+        "titulo_requerido": "MANIFESTAR ECO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1222,
+          "tipo": "corpo",
+          "texto": "Você pode manter dois Ecos simultaneamente. Quando atacar, mover-se ou trocar de posição através deles em sucessão rápida, diga qual dos três corpos aparentes é realmente você apenas quando a ficção exigir que isso seja descoberto."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Você pode manter dois Ecos simultaneamente. Quando atacar, mover-se ou trocar de posição através deles em sucessão rápida, diga qual dos três corpos aparentes é realmente você apenas quando a ficção exigir que isso seja descoberto.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1222"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1223",
+      "paragrafo_docx": 1223,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "VÍNCULO ARCANO COM ARMA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1223,
+          "tipo": "corpo",
+          "texto": "Vincule-se magicamente a uma arma. Enquanto o vínculo existir:"
+        },
+        {
+          "paragrafo_docx": 1224,
+          "tipo": "opcao",
+          "texto": "você sempre sabe em que direção ela está;"
+        },
+        {
+          "paragrafo_docx": 1225,
+          "tipo": "opcao",
+          "texto": "pode chamá-la para sua mão quando não houver uma barreira mágica que impeça;"
+        },
+        {
+          "paragrafo_docx": 1226,
+          "tipo": "opcao",
+          "texto": "ela conta como mágica quando isso for relevante para aquilo que consegue ferir;"
+        },
+        {
+          "paragrafo_docx": 1227,
+          "tipo": "opcao",
+          "texto": "ninguém consegue tornar-se seu verdadeiro portador apenas roubando-a."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1224,
+          "texto": "você sempre sabe em que direção ela está;"
+        },
+        {
+          "paragrafo_docx": 1225,
+          "texto": "pode chamá-la para sua mão quando não houver uma barreira mágica que impeça;"
+        },
+        {
+          "paragrafo_docx": 1226,
+          "texto": "ela conta como mágica quando isso for relevante para aquilo que consegue ferir;"
+        },
+        {
+          "paragrafo_docx": 1227,
+          "texto": "ninguém consegue tornar-se seu verdadeiro portador apenas roubando-a."
+        }
+      ],
+      "texto_original": "Vincule-se magicamente a uma arma. Enquanto o vínculo existir:\nvocê sempre sabe em que direção ela está;\npode chamá-la para sua mão quando não houver uma barreira mágica que impeça;\nela conta como mágica quando isso for relevante para aquilo que consegue ferir;\nninguém consegue tornar-se seu verdadeiro portador apenas roubando-a.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1223"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1228",
+      "paragrafo_docx": 1228,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "MAGIA DE GUERRA",
+      "requisito_literal": "qualquer Movimento de Magia",
+      "requisito_estruturado": {
+        "tipo": "categoria",
+        "categoria": "movimento_de_magia",
+        "minimo": 1,
+        "status": "interpretacao_literal_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1228,
+          "tipo": "corpo",
+          "texto": "Quando utilizar sua magia para criar uma abertura física e imediatamente explorá-la com uma arma, receba +1 adiante no ataque. Quando utilizar sua arma para criar uma vulnerabilidade mágica, receba +1 adiante no próximo Movimento de Magia que afetar aquele alvo. Você precisa explicar qual abertura uma técnica criou para a outra."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando utilizar sua magia para criar uma abertura física e imediatamente explorá-la com uma arma, receba +1 adiante no ataque. Quando utilizar sua arma para criar uma vulnerabilidade mágica, receba +1 adiante no próximo Movimento de Magia que afetar aquele alvo. Você precisa explicar qual abertura uma técnica criou para a outra.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1228"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1229",
+      "paragrafo_docx": 1229,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "PASSO ARCANO",
+      "requisito_literal": "Surto de Ação e qualquer Movimento de Magia",
+      "requisito_estruturado": {
+        "tipo": "todos",
+        "itens": [
+          {
+            "tipo": "movimento_exato",
+            "movimento_id": "movimento-classe:paragrafo-1139"
+          },
+          {
+            "tipo": "categoria",
+            "categoria": "movimento_de_magia",
+            "minimo": 1
+          }
+        ],
+        "status": "interpretacao_literal_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1229,
+          "tipo": "corpo",
+          "texto": "Quando utilizar Surto de Ação, pode desaparecer e reaparecer imediatamente numa posição próxima que consiga perceber antes de realizar sua ação adicional."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando utilizar Surto de Ação, pode desaparecer e reaparecer imediatamente numa posição próxima que consiga perceber antes de realizar sua ação adicional.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1229"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1231",
+      "paragrafo_docx": 1231,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "TIRO ARCANO",
+      "requisito_literal": "Arma Favorita aplicada a um arco ou arma de projétil",
+      "requisito_estruturado": {
+        "tipo": "movimento_condicionado",
+        "movimento_id": "movimento-classe:paragrafo-1047",
+        "condicao_literal": "aplicada a um arco ou arma de projétil",
+        "status": "interpretacao_literal_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1231,
+          "tipo": "corpo",
+          "texto": "Escolha três técnicas arcanas e explique de onde vem sua magia:"
+        },
+        {
+          "paragrafo_docx": 1232,
+          "tipo": "opcao",
+          "texto": "Perfurante: atravesse obstáculos e alvos alinhados."
+        },
+        {
+          "paragrafo_docx": 1233,
+          "tipo": "opcao",
+          "texto": "Explosiva: o impacto afeta uma pequena área."
+        },
+        {
+          "paragrafo_docx": 1234,
+          "tipo": "opcao",
+          "texto": "Sombria: obscureça temporariamente a visão do alvo."
+        },
+        {
+          "paragrafo_docx": 1235,
+          "tipo": "opcao",
+          "texto": "Aprisionadora: raízes, correntes ou energia prendem o alvo ao impacto."
+        },
+        {          "paragrafo_docx": 1236,
+          "tipo": "opcao",
+          "texto": "Banidora: o impacto desestabiliza criaturas extraplanares."
+        },
+        {
+          "paragrafo_docx": 1237,
+          "tipo": "opcao",
+          "texto": "Perseguidora: a flecha contorna cobertura para alcançar alguém cuja posição conhece."
+        },
+        {
+          "paragrafo_docx": 1238,
+          "tipo": "continuacao",
+          "texto": "Uma vez por cena, quando Disparar, aplique uma dessas técnicas ao projétil. Efeitos que ultrapassem claramente a escala do disparo normal ainda podem exigir risco adicional."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1232,
+          "texto": "Perfurante: atravesse obstáculos e alvos alinhados."
+        },
+        {
+          "paragrafo_docx": 1233,
+          "texto": "Explosiva: o impacto afeta uma pequena área."
+        },
+        {
+          "paragrafo_docx": 1234,
+          "texto": "Sombria: obscureça temporariamente a visão do alvo."
+        },
+        {
+          "paragrafo_docx": 1235,
+          "texto": "Aprisionadora: raízes, correntes ou energia prendem o alvo ao impacto."
+        },
+        {
+          "paragrafo_docx": 1236,
+          "texto": "Banidora: o impacto desestabiliza criaturas extraplanares."
+        },
+        {
+          "paragrafo_docx": 1237,
+          "texto": "Perseguidora: a flecha contorna cobertura para alcançar alguém cuja posição conhece."
+        }
+      ],
+      "texto_original": "Escolha três técnicas arcanas e explique de onde vem sua magia:\nPerfurante: atravesse obstáculos e alvos alinhados.\nExplosiva: o impacto afeta uma pequena área.\nSombria: obscureça temporariamente a visão do alvo.\nAprisionadora: raízes, correntes ou energia prendem o alvo ao impacto.\nBanidora: o impacto desestabiliza criaturas extraplanares.\nPerseguidora: a flecha contorna cobertura para alcançar alguém cuja posição conhece.\nUma vez por cena, quando Disparar, aplique uma dessas técnicas ao projétil. Efeitos que ultrapassem claramente a escala do disparo normal ainda podem exigir risco adicional.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1231"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1239",
+      "paragrafo_docx": 1239,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "COMPANHEIROS DE GUERRA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1239,
+          "tipo": "corpo",
+          "texto": "Quando procurar alguém que conheceu numa batalha anterior — amigo ou inimigo — diga onde lutaram juntos. O Mestre dirá onde essa pessoa está ou por que não consegue encontrá-la. Quando finalmente se encontrarem, escolha 1; escolha 2 se você assumiu um risco importante por ela naquela batalha:"
+        },
+        {
+          "paragrafo_docx": 1240,
+          "tipo": "opcao",
+          "texto": "está disposta a ajudar num conflito atual;"
+        },
+        {
+          "paragrafo_docx": 1241,
+          "tipo": "opcao",
+          "texto": "oferece abrigo ou segurança temporária;"
+        },
+        {
+          "paragrafo_docx": 1242,
+          "tipo": "opcao",
+          "texto": "revela uma informação significativa;"
+        },
+        {
+          "paragrafo_docx": 1243,
+          "tipo": "opcao",
+          "texto": "apresenta alguém útil;"
+        },
+        {
+          "paragrafo_docx": 1244,
+          "tipo": "opcao",
+          "texto": "lembra uma dívida que outra pessoa possui com vocês."
+        },
+        {
+          "paragrafo_docx": 1245,
+          "tipo": "continuacao",
+          "texto": "Naturalmente, ela também lembra o que aconteceu entre vocês."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1240,
+          "texto": "está disposta a ajudar num conflito atual;"
+        },
+        {
+          "paragrafo_docx": 1241,
+          "texto": "oferece abrigo ou segurança temporária;"
+        },
+        {
+          "paragrafo_docx": 1242,
+          "texto": "revela uma informação significativa;"
+        },
+        {
+          "paragrafo_docx": 1243,
+          "texto": "apresenta alguém útil;"
+        },
+        {
+          "paragrafo_docx": 1244,
+          "texto": "lembra uma dívida que outra pessoa possui com vocês."
+        }
+      ],
+      "texto_original": "Quando procurar alguém que conheceu numa batalha anterior — amigo ou inimigo — diga onde lutaram juntos. O Mestre dirá onde essa pessoa está ou por que não consegue encontrá-la. Quando finalmente se encontrarem, escolha 1; escolha 2 se você assumiu um risco importante por ela naquela batalha:\nestá disposta a ajudar num conflito atual;\noferece abrigo ou segurança temporária;\nrevela uma informação significativa;\napresenta alguém útil;\nlembra uma dívida que outra pessoa possui com vocês.\nNaturalmente, ela também lembra o que aconteceu entre vocês.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1239"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1246",
+      "paragrafo_docx": 1246,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "INTUIÇÃO DE VETERANO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1246,
+          "tipo": "corpo",
+          "texto": "Quando olhar para uma situação futura e tiver aquele “isso vai dar merda” que só nasce depois de sobreviver a muitas batalhas, pergunte ao Mestre: “Qual é a coisa mais importante que podemos fazer agora para nos preparar?”\nEle responderá honestamente. Se seguir o conselho antes que a situação aconteça, receba 1 Preparo para ela."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando olhar para uma situação futura e tiver aquele “isso vai dar merda” que só nasce depois de sobreviver a muitas batalhas, pergunte ao Mestre: “Qual é a coisa mais importante que podemos fazer agora para nos preparar?”\nEle responderá honestamente. Se seguir o conselho antes que a situação aconteça, receba 1 Preparo para ela.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1246"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1247",
+      "paragrafo_docx": 1247,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "OLHO PARA FRAQUEZA",
+      "requisito_literal": "Vendo Vermelho",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1077",
+        "titulo_requerido": "VENDO VERMELHO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1247,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando estudar seriamente um inimigo, pergunte:\n“O que normalmente torna esta criatura tão difícil de enfrentar?” \ne “O que contorna essa vantagem?”\nQuando conseguir realmente criar a segunda condição na ficção, aquilo que protegia a criatura não se aplica contra sua ação."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por sessão, quando estudar seriamente um inimigo, pergunte:\n“O que normalmente torna esta criatura tão difícil de enfrentar?” \ne “O que contorna essa vantagem?”\nQuando conseguir realmente criar a segunda condição na ficção, aquilo que protegia a criatura não se aplica contra sua ação.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1247"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1248",
+      "paragrafo_docx": 1248,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "TREINAMENTO ANTIMAGIA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1248,
+          "tipo": "corpo",
+          "texto": "Quando enfrentar conscientemente um conjurador ou uma manifestação mágica ativa que você possa perceber, observe por alguns instantes como aquela magia se manifesta, se sustenta ou é conduzida e role+INT ou SAB, conforme sua abordagem. \n10+: receba Domínio 3.\n7–9: receba Domínio 2.\n6-: receba Domínio 1, mas o Mestre revelará imediatamente uma propriedade perigosa da magia que você não havia compreendido. Gaste 1 Domínio para:"
+        },
+        {
+          "paragrafo_docx": 1249,
+          "tipo": "opcao",
+          "texto": "APARAR O IMPOSSÍVEL: quando uma manifestação mágica atingir você ou alguém que possa proteger, enfrente-a fisicamente com arma, escudo, movimento ou posicionamento mesmo quando aquilo normalmente não poderia ser aparado, bloqueado ou interceptado. Se ainda houver perigo relevante, Desafie-o normalmente."
+        },
+        {
+          "paragrafo_docx": 1250,
+          "tipo": "opcao",
+          "texto": "ENTRAR PELA ABERTURA: quando evitar, romper ou sobreviver diretamente a uma magia do conjurador, atravesse imediatamente a abertura criada e alcance uma posição de onde possa ameaçá-lo, desde que exista algum caminho possível até ele. Barreiras ou distâncias realmente impossíveis continuam exigindo uma solução."
+        },
+        {
+          "paragrafo_docx": 1251,
+          "tipo": "opcao",
+          "texto": "QUEBRAR O RITMO: quando atingir o conjurador enquanto ele sustenta, prepara ou canaliza uma magia, faça-o escolher: interromper aquela magia ou ficar vulnerável enquanto força a conjuração a continuar."
+        },
+        {
+          "paragrafo_docx": 1252,
+          "tipo": "opcao",
+          "texto": "FURAR A DEFESA: quando compreender como uma proteção mágica está defendendo o conjurador — escudo arcano, imagens, campo de força, aura, runas ou semelhante — seu próximo ataque pode contornar aquela proteção específica, desde que você descreva como explora a falha que observou."
+        },
+        {
+          "paragrafo_docx": 1253,
+          "tipo": "opcao",
+          "texto": "CORTAR O FIO: quando puder alcançar fisicamente ou ameaçar aquilo que liga um efeito mágico à sua fonte — runa, foco, corrente de energia, círculo, objeto, criatura vinculada ou o próprio conjurador — tente romper esse vínculo como se fosse um alvo físico. Se conseguir, o efeito perde sua sustentação ou muda de maneira apropriada."
+        },
+        {
+          "paragrafo_docx": 1254,
+          "tipo": "opcao",
+          "texto": "LER A CONJURAÇÃO: pergunte ao Mestre “O que esta magia está prestes a fazer?”, “O que a mantém funcionando?” ou “Onde ela está mais vulnerável?”. Ele responderá honestamente segundo aquilo que seu treinamento possa perceber."
+        },
+        {
+          "paragrafo_docx": 1255,
+          "tipo": "opcao",
+          "texto": "DEVOLVER O GOLPE: quando uma magia dirigida possuir trajetória, força ou forma que realmente possa ser desviada, gaste 2 Domínio para fazê-la atingir outro alvo ou posição plausível em vez do destino original."
+        },
+        {
+          "paragrafo_docx": 1256,
+          "tipo": "continuacao",
+          "texto": "O Domínio permanece enquanto você continuar enfrentando aquele conjurador ou aquela mesma manifestação mágica. Quando a situação terminar ou você perder completamente contato com ela, perca o Domínio restante."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1249,
+          "texto": "APARAR O IMPOSSÍVEL: quando uma manifestação mágica atingir você ou alguém que possa proteger, enfrente-a fisicamente com arma, escudo, movimento ou posicionamento mesmo quando aquilo normalmente não poderia ser aparado, bloqueado ou interceptado. Se ainda houver perigo relevante, Desafie-o normalmente."
+        },
+        {
+          "paragrafo_docx": 1250,
+          "texto": "ENTRAR PELA ABERTURA: quando evitar, romper ou sobreviver diretamente a uma magia do conjurador, atravesse imediatamente a abertura criada e alcance uma posição de onde possa ameaçá-lo, desde que exista algum caminho possível até ele. Barreiras ou distâncias realmente impossíveis continuam exigindo uma solução."
+        },
+        {
+          "paragrafo_docx": 1251,
+          "texto": "QUEBRAR O RITMO: quando atingir o conjurador enquanto ele sustenta, prepara ou canaliza uma magia, faça-o escolher: interromper aquela magia ou ficar vulnerável enquanto força a conjuração a continuar."
+        },
+        {
+          "paragrafo_docx": 1252,
+          "texto": "FURAR A DEFESA: quando compreender como uma proteção mágica está defendendo o conjurador — escudo arcano, imagens, campo de força, aura, runas ou semelhante — seu próximo ataque pode contornar aquela proteção específica, desde que você descreva como explora a falha que observou."
+        },
+        {
+          "paragrafo_docx": 1253,
+          "texto": "CORTAR O FIO: quando puder alcançar fisicamente ou ameaçar aquilo que liga um efeito mágico à sua fonte — runa, foco, corrente de energia, círculo, objeto, criatura vinculada ou o próprio conjurador — tente romper esse vínculo como se fosse um alvo físico. Se conseguir, o efeito perde sua sustentação ou muda de maneira apropriada."
+        },
+        {
+          "paragrafo_docx": 1254,
+          "texto": "LER A CONJURAÇÃO: pergunte ao Mestre “O que esta magia está prestes a fazer?”, “O que a mantém funcionando?” ou “Onde ela está mais vulnerável?”. Ele responderá honestamente segundo aquilo que seu treinamento possa perceber."
+        },
+        {
+          "paragrafo_docx": 1255,
+          "texto": "DEVOLVER O GOLPE: quando uma magia dirigida possuir trajetória, força ou forma que realmente possa ser desviada, gaste 2 Domínio para fazê-la atingir outro alvo ou posição plausível em vez do destino original."
+        }
+      ],
+      "texto_original": "Quando enfrentar conscientemente um conjurador ou uma manifestação mágica ativa que você possa perceber, observe por alguns instantes como aquela magia se manifesta, se sustenta ou é conduzida e role+INT ou SAB, conforme sua abordagem. \n10+: receba Domínio 3.\n7–9: receba Domínio 2.\n6-: receba Domínio 1, mas o Mestre revelará imediatamente uma propriedade perigosa da magia que você não havia compreendido. Gaste 1 Domínio para:\nAPARAR O IMPOSSÍVEL: quando uma manifestação mágica atingir você ou alguém que possa proteger, enfrente-a fisicamente com arma, escudo, movimento ou posicionamento mesmo quando aquilo normalmente não poderia ser aparado, bloqueado ou interceptado. Se ainda houver perigo relevante, Desafie-o normalmente.\nENTRAR PELA ABERTURA: quando evitar, romper ou sobreviver diretamente a uma magia do conjurador, atravesse imediatamente a abertura criada e alcance uma posição de onde possa ameaçá-lo, desde que exista algum caminho possível até ele. Barreiras ou distâncias realmente impossíveis continuam exigindo uma solução.\nQUEBRAR O RITMO: quando atingir o conjurador enquanto ele sustenta, prepara ou canaliza uma magia, faça-o escolher: interromper aquela magia ou ficar vulnerável enquanto força a conjuração a continuar.\nFURAR A DEFESA: quando compreender como uma proteção mágica está defendendo o conjurador — escudo arcano, imagens, campo de força, aura, runas ou semelhante — seu próximo ataque pode contornar aquela proteção específica, desde que você descreva como explora a falha que observou.\nCORTAR O FIO: quando puder alcançar fisicamente ou ameaçar aquilo que liga um efeito mágico à sua fonte — runa, foco, corrente de energia, círculo, objeto, criatura vinculada ou o próprio conjurador — tente romper esse vínculo como se fosse um alvo físico. Se conseguir, o efeito perde sua sustentação ou muda de maneira apropriada.\nLER A CONJURAÇÃO: pergunte ao Mestre “O que esta magia está prestes a fazer?”, “O que a mantém funcionando?” ou “Onde ela está mais vulnerável?”. Ele responderá honestamente segundo aquilo que seu treinamento possa perceber.\nDEVOLVER O GOLPE: quando uma magia dirigida possuir trajetória, força ou forma que realmente possa ser desviada, gaste 2 Domínio para fazê-la atingir outro alvo ou posição plausível em vez do destino original.\nO Domínio permanece enquanto você continuar enfrentando aquele conjurador ou aquela mesma manifestação mágica. Quando a situação terminar ou você perder completamente contato com ela, perca o Domínio restante.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1248"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1258",
+      "paragrafo_docx": 1258,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "ARRUINAR",
+      "requisito_literal": "Dobrar Barras, Erguer Portões",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1061",
+        "titulo_requerido": "DOBRAR BARRAS, ERGUER PORTÕES",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1258,
+          "tipo": "corpo",
+          "texto": "Quando decidir destruir alguma coisa material que possa, em princípio, ser destruída — muralha, ponte, fortaleza, artefato, máquina, portão colossal — diga ao Mestre o que pretende fazer. O Mestre lhe dará de 1 a 4 condições:"
+        },
+        {
+          "paragrafo_docx": 1259,
+          "tipo": "opcao",
+          "texto": "levará horas, dias ou semanas;"
+        },
+        {
+          "paragrafo_docx": 1260,
+          "tipo": "opcao",
+          "texto": "primeiro será necessário fazer alguma coisa;"
+        },
+        {
+          "paragrafo_docx": 1261,
+          "tipo": "opcao",
+          "texto": "você precisará de ajuda;"
+        },
+        {
+          "paragrafo_docx": 1262,
+          "tipo": "opcao",
+          "texto": "precisará de uma ferramenta ou material específico;"
+        },
+        {
+          "paragrafo_docx": 1263,
+          "tipo": "opcao",
+          "texto": "será extremamente difícil reparar depois;"
+        },
+        {
+          "paragrafo_docx": 1264,
+          "tipo": "opcao",
+          "texto": "alguém correrá perigo;"
+        },
+        {
+          "paragrafo_docx": 1265,
+          "tipo": "opcao",
+          "texto": "alguma coisa será consumida ou destruída no processo."
+        },
+        {
+          "paragrafo_docx": 1266,
+          "tipo": "continuacao",
+          "texto": "Cumpra as condições e você destruirá aquilo."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1259,
+          "texto": "levará horas, dias ou semanas;"
+        },
+        {
+          "paragrafo_docx": 1260,
+          "texto": "primeiro será necessário fazer alguma coisa;"
+        },
+        {
+          "paragrafo_docx": 1261,
+          "texto": "você precisará de ajuda;"
+        },
+        {
+          "paragrafo_docx": 1262,
+          "texto": "precisará de uma ferramenta ou material específico;"
+        },
+        {
+          "paragrafo_docx": 1263,
+          "texto": "será extremamente difícil reparar depois;"
+        },
+        {
+          "paragrafo_docx": 1264,
+          "texto": "alguém correrá perigo;"
+        },
+        {
+          "paragrafo_docx": 1265,
+          "texto": "alguma coisa será consumida ou destruída no processo."
+        }
+      ],
+      "texto_original": "Quando decidir destruir alguma coisa material que possa, em princípio, ser destruída — muralha, ponte, fortaleza, artefato, máquina, portão colossal — diga ao Mestre o que pretende fazer. O Mestre lhe dará de 1 a 4 condições:\nlevará horas, dias ou semanas;\nprimeiro será necessário fazer alguma coisa;\nvocê precisará de ajuda;\nprecisará de uma ferramenta ou material específico;\nserá extremamente difícil reparar depois;\nalguém correrá perigo;\nalguma coisa será consumida ou destruída no processo.\nCumpra as condições e você destruirá aquilo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1258"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1267",
+      "paragrafo_docx": 1267,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "PREPARE-SE PARA MORRER",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1267,
+          "tipo": "corpo",
+          "texto": "Quando enfrentar sozinho um adversário que aceite seu duelo, receba Domínio 3. Gaste 1 para:"
+        },
+        {
+          "paragrafo_docx": 1268,
+          "tipo": "opcao",
+          "texto": "antecipar uma manobra dele;"
+        },
+        {
+          "paragrafo_docx": 1269,
+          "tipo": "opcao",
+          "texto": "negar uma tentativa de fugir do duelo;"
+        },
+        {
+          "paragrafo_docx": 1270,
+          "tipo": "opcao",
+          "texto": "mudar a posição entre vocês;"
+        },
+        {
+          "paragrafo_docx": 1271,
+          "tipo": "opcao",
+          "texto": "receber +1 numa rolagem contra ele."
+        },
+        {
+          "paragrafo_docx": 1272,
+          "tipo": "continuacao",
+          "texto": "Perca o Domínio se outro personagem interferir significativamente."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1268,
+          "texto": "antecipar uma manobra dele;"
+        },
+        {
+          "paragrafo_docx": 1269,
+          "texto": "negar uma tentativa de fugir do duelo;"
+        },
+        {
+          "paragrafo_docx": 1270,
+          "texto": "mudar a posição entre vocês;"
+        },
+        {
+          "paragrafo_docx": 1271,
+          "texto": "receber +1 numa rolagem contra ele."
+        }
+      ],
+      "texto_original": "Quando enfrentar sozinho um adversário que aceite seu duelo, receba Domínio 3. Gaste 1 para:\nantecipar uma manobra dele;\nnegar uma tentativa de fugir do duelo;\nmudar a posição entre vocês;\nreceber +1 numa rolagem contra ele.\nPerca o Domínio se outro personagem interferir significativamente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1267"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1273",
+      "paragrafo_docx": 1273,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "UM PASSO À FRENTE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1273,
+          "tipo": "corpo",
+          "texto": "Quando estudar os primeiros movimentos de um adversário em duelo, pergunte: \n“Qual hábito de luta ele repete sem perceber?”\nReceba +1 adiante quando explorar a resposta."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando estudar os primeiros movimentos de um adversário em duelo, pergunte: \n“Qual hábito de luta ele repete sem perceber?”\nReceba +1 adiante quando explorar a resposta.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1273"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1274",
+      "paragrafo_docx": 1274,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "PONTA CONTRA PONTA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1274,
+          "tipo": "corpo",
+          "texto": "Quando prender ou desviar a arma de outro combatente utilizando a sua, pode trocar seu dano por uma posição em que nenhum dos dois consegue atingir o outro sem primeiro romper o contato."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando prender ou desviar a arma de outro combatente utilizando a sua, pode trocar seu dano por uma posição em que nenhum dos dois consegue atingir o outro sem primeiro romper o contato.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1274"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1275",
+      "paragrafo_docx": 1275,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "SANGUE NA PONTA",
+      "requisito_literal": "Um Passo à Frente",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1273",
+        "titulo_requerido": "UM PASSO À FRENTE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1275,
+          "tipo": "corpo",
+          "texto": "Quando explorar deliberadamente um hábito que Um Passo à Frente revelou e conseguir atingir a abertura produzida por ele, escolha 1:"
+        },
+        {
+          "paragrafo_docx": 1276,
+          "tipo": "opcao",
+          "texto": "ignore 2 Armadura;"
+        },
+        {
+          "paragrafo_docx": 1277,
+          "tipo": "opcao",
+          "texto": "aumente a Periculosidade em um grau;"
+        },
+        {
+          "paragrafo_docx": 1278,
+          "tipo": "opcao",
+          "texto": "realize uma opção de Golpe de Controle sem reduzir a Periculosidade;"
+        },
+        {
+          "paragrafo_docx": 1279,
+          "tipo": "opcao",
+          "texto": "deixe uma ferida que altere concretamente a maneira como o adversário consegue lutar."
+        },
+        {
+          "paragrafo_docx": 1280,
+          "tipo": "continuacao",
+          "texto": "Depois disso, o adversário percebe o próprio hábito e não oferece automaticamente a mesma abertura novamente."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1276,
+          "texto": "ignore 2 Armadura;"
+        },
+        {
+          "paragrafo_docx": 1277,
+          "texto": "aumente a Periculosidade em um grau;"
+        },
+        {
+          "paragrafo_docx": 1278,
+          "texto": "realize uma opção de Golpe de Controle sem reduzir a Periculosidade;"
+        },
+        {
+          "paragrafo_docx": 1279,
+          "texto": "deixe uma ferida que altere concretamente a maneira como o adversário consegue lutar."
+        }
+      ],
+      "texto_original": "Quando explorar deliberadamente um hábito que Um Passo à Frente revelou e conseguir atingir a abertura produzida por ele, escolha 1:\nignore 2 Armadura;\naumente a Periculosidade em um grau;\nrealize uma opção de Golpe de Controle sem reduzir a Periculosidade;\ndeixe uma ferida que altere concretamente a maneira como o adversário consegue lutar.\nDepois disso, o adversário percebe o próprio hábito e não oferece automaticamente a mesma abertura novamente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1275"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1281",
+      "paragrafo_docx": 1281,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "O DUELO JÁ COMEÇOU",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1281,
+          "tipo": "corpo",
+          "texto": "Quando entrar numa conversa hostil com alguém que você pretende enfrentar fisicamente e ambos sabem disso, pode Discernir Realidades através da postura, mãos, olhos e posicionamento dele sem parecer que está investigando."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando entrar numa conversa hostil com alguém que você pretende enfrentar fisicamente e ambos sabem disso, pode Discernir Realidades através da postura, mãos, olhos e posicionamento dele sem parecer que está investigando.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1281"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1282",
+      "paragrafo_docx": 1282,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "FINTA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1282,
+          "tipo": "corpo",
+          "texto": "Quando mostrar deliberadamente a um adversário uma abertura falsa e ele tiver motivo para acreditar nela, diga que erro você deseja induzi-lo a cometer e role+DES ou CAR conforme sua abordagem.\n10+: ele morde a isca. Escolha 2.\n7–9: ele morde a isca. Escolha 1."
+        },
+        {
+          "paragrafo_docx": 1283,
+          "tipo": "opcao",
+          "texto": "Ele se compromete e cria uma abertura para você."
+        },
+        {
+          "paragrafo_docx": 1284,
+          "tipo": "opcao",
+          "texto": "Ele revela aquilo que estava protegendo."
+        },
+        {
+          "paragrafo_docx": 1285,
+          "tipo": "opcao",
+          "texto": "A abertura falsa não cria uma oportunidade real contra você."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1283,
+          "texto": "Ele se compromete e cria uma abertura para você."
+        },
+        {
+          "paragrafo_docx": 1284,
+          "texto": "Ele revela aquilo que estava protegendo."
+        },
+        {
+          "paragrafo_docx": 1285,
+          "texto": "A abertura falsa não cria uma oportunidade real contra você."
+        }
+      ],
+      "texto_original": "Quando mostrar deliberadamente a um adversário uma abertura falsa e ele tiver motivo para acreditar nela, diga que erro você deseja induzi-lo a cometer e role+DES ou CAR conforme sua abordagem.\n10+: ele morde a isca. Escolha 2.\n7–9: ele morde a isca. Escolha 1.\nEle se compromete e cria uma abertura para você.\nEle revela aquilo que estava protegendo.\nA abertura falsa não cria uma oportunidade real contra você.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1282"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1286",
+      "paragrafo_docx": 1286,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "SEGUNDA INTENÇÃO",
+      "requisito_literal": "Finta",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1282",
+        "titulo_requerido": "FINTA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1286,
+          "tipo": "corpo",
+          "texto": "Quando alguém perceber sua Finta e deliberadamente tentar fingir que caiu nela, você percebe.\nPergunte: “O que ele realmente está tentando me fazer acreditar?” \nReceba +1 adiante ao agir segundo a resposta."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando alguém perceber sua Finta e deliberadamente tentar fingir que caiu nela, você percebe.\nPergunte: “O que ele realmente está tentando me fazer acreditar?” \nReceba +1 adiante ao agir segundo a resposta.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1286"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1287",
+      "paragrafo_docx": 1287,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "LÂMINA ARCANA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1287,
+          "tipo": "corpo",
+          "texto": "Escolha uma força mágica definida. Quando revestir sua arma com ela, a arma adquire as propriedades ficcionais dessa força e pode atingir Periculosidade superior quando a situação justificar."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Escolha uma força mágica definida. Quando revestir sua arma com ela, a arma adquire as propriedades ficcionais dessa força e pode atingir Periculosidade superior quando a situação justificar.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1287"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1288",
+      "paragrafo_docx": 1288,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "GUARDA MÍSTICA",
+      "requisito_literal": "Lâmina Arcana",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1287",
+        "titulo_requerido": "LÂMINA ARCANA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1288,
+          "tipo": "corpo",
+          "texto": "Quando aparar com sua arma um efeito mágico que realmente possa ser interceptado pela força que a reveste, Desafie o Perigo.\nEm 10+, escolha para onde a energia desviada vai."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando aparar com sua arma um efeito mágico que realmente possa ser interceptado pela força que a reveste, Desafie o Perigo.\nEm 10+, escolha para onde a energia desviada vai.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1288"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1289",
+      "paragrafo_docx": 1289,
+      "grupo": "GUERREIRO",
+      "categoria": "classe",
+      "titulo": "CONHEÇO A ARENA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1289,
+          "tipo": "corpo",
+          "texto": "Quando entrar num espaço preparado para combate público, pergunte:\n“Que parte deste lugar alguém experiente usaria para virar a luta?”"
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando entrar num espaço preparado para combate público, pergunte:\n“Que parte deste lugar alguém experiente usaria para virar a luta?”",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1289"
+    }
+  ],
+  "integridade": {
+    "total_movimentos": 77,
+    "total_com_requer": 30,
+    "total_vinculos_exatos": 27,
+    "total_requer_composto_ou_condicional": 3,
+    "total_opcoes": 137,
+    "total_partes": 235
+  }
+}
