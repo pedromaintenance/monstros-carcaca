@@ -269,7 +269,10 @@ def build():
     movimentos_classes=classes_docx["movimentos"]
     dependencias_classes=classes_docx["dependencias_exatas_candidatas"]
     dependencias_pendentes=classes_docx["dependencias_nao_resolvidas"]
-    from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes
+    try:
+        from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes
+    except ModuleNotFoundError:
+        from hack_movimentos_personagem import build_people_indexes,build_class_indexes
     regras_nucleo=load("data/lore/hack-carcaca-dw-regras-nucleo.json")
     quadros_integrais=load("data/lore/hack-carcaca-dw-quadros-integrais.json")
     movimentos_gerais=compilar_movimentos_gerais(quadros_integrais,docx_tables)
