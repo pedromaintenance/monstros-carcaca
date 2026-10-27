@@ -5,6 +5,7 @@ import {createCampaignLedger,recordCampaignEvent,getCampaignEvents} from "../src
 import {previewMaterialBalance,BALANCE_FIELDS} from "../src/carcaca-material-balance.mjs";
 import {previewSupportCapacity,previewPopulationFlow,SUPPORT_LIMITS} from "../src/carcaca-support-capacity.mjs";
 import {auditInfrastructure,previewInfrastructureIssue} from "../src/carcaca-infrastructure.mjs";
+import {previewTerritorialImpact} from "../src/carcaca-territorial.mjs";
 
 const fixtures={
   "manifest.json":{arquivos:{catalog:"catalog.json",creatures:"creatures.json",
@@ -18,7 +19,10 @@ const fixtures={
     ecological_pressures:"ecological-pressures.json",ecological_pressure_indexes:"ecological-pressure-indexes.json",
     support_profiles:"support-profiles.json",support_indexes:"support-indexes.json",
     infrastructure_profiles:"infrastructure-profiles.json",
-    infrastructure_indexes:"infrastructure-indexes.json"}},
+    infrastructure_indexes:"infrastructure-indexes.json",
+    territorial_labels:"territorial-labels.json",
+    territorial_dynamics:"territorial-dynamics.json",
+    territorial_indexes:"territorial-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -30,7 +34,29 @@ const fixtures={
      regioes:["regiao:norte"],lugares:[],faccoes:[],estado:"rascunho",nd_dnd:2}
   ],
   "creatures.json":[{id:"carcaca:criatura:joro",dungeon_world:{instinto:"Testar visitantes"}}],
-  "regions.json":[],
+  "regions.json":[{id:"regiao:caatinga",lugares:[]},{id:"regiao:costa-sul",lugares:[]},{id:"regiao:eldroth",lugares:[]}],
+  "territorial-labels.json":[{id:"rotulo-territorial:fronteira_de_pilhagens"},{id:"rotulo-territorial:acolhida_minoria_deslocada"}],
+  "territorial-dynamics.json":[
+    {id:"dinamica:pilhagens",escala:"regional",origem_regiao_id:"regiao:caatinga",
+     destino_regiao_id:"regiao:costa-sul",assentamento_alvo_id:null,
+     tipo:"incursao_de_pilhagem",rotulos_territoriais:["rotulo-territorial:fronteira_de_pilhagens"],
+     dimensoes_possivelmente_afetadas:["agricultura","seguranca"],
+     fato_documentado:"Incursões regionais contra pradarias; nenhuma cidade específica foi confirmada",
+     lacunas:["Vítimas e datas específicas ainda não existem"],
+     perguntas:["Quais campos estão sob ameaça?"],
+     possibilidade_narrativa:"Perda possível de uma safra individualizada"},
+    {id:"dinamica:refugiados",escala:"regional",origem_regiao_id:"regiao:eldroth",
+     destino_regiao_id:"regiao:costa-sul",assentamento_alvo_id:null,
+     tipo:"deslocamento_forcado_documentado",
+     rotulos_territoriais:["rotulo-territorial:acolhida_minoria_deslocada"],
+     dimensoes_possivelmente_afetadas:["abrigo","integracao_comunitaria"],
+     fato_documentado:"Refugiados minoritários em assentamentos maiores não nomeados",
+     lacunas:["Destino não especificado"],perguntas:["Qual cidade os recebeu?"],
+     possibilidade_narrativa:"Acolhida futura decidida em campanha"}
+  ],
+  "territorial-indexes.json":{by_destino_regiao:{"regiao:costa-sul":["dinamica:pilhagens","dinamica:refugiados"]},
+    by_rotulo_territorial:{"rotulo-territorial:fronteira_de_pilhagens":["dinamica:pilhagens"]}},
+
   "fronts.json":[],
   "indexes.json":{},
   "settlements.json":[
@@ -455,4 +481,41 @@ test("prévia de problema não cria cais, depósitos nem eventos",async()=>{
   assert.equal(risk.mutacao_canonica,false);
   assert.throws(()=>previewInfrastructureIssue(port,{
     sectorId:"armazenamento",hipotese:""}),TypeError);
+});
+
+test("consulta dinâmica territorial por origem, destino, tipo e rótulo",async()=>{
+  const daCaatinga=await atlas.searchTerritorialDynamics({
+    origemRegiaoId:"regiao:caatinga",destinoRegiaoId:"regiao:costa-sul"});
+  assert.deepEqual(daCaatinga.map(x=>x.id),["dinamica:pilhagens"]);
+  const displaced=await atlas.searchTerritorialDynamics({tipo:"deslocamento_forcado_documentado"});
+  assert.equal(displaced.length,1);
+  assert.equal(displaced[0].assentamento_alvo_id,null);
+  assert.equal((await atlas.getTerritorialLabels()).length,2);
+  assert.equal((await atlas.getTerritorialIndexes()).by_destino_regiao["regiao:costa-sul"].length,2);
+  assert.equal((await atlas.getTerritorialDynamic("dinamica:refugiados")).id,"dinamica:refugiados");
+  assert.equal(await atlas.getTerritorialDynamic("dinamica:desconhecida"),null);
+});
+test("pressões territoriais regionais não causam ataques localizados em Portomonte",async()=>{
+  const raids=(await atlas.getTerritorialDynamic("dinamica:pilhagens"));
+  const before=JSON.stringify(raids);
+  const preview=previewTerritorialImpact(raids,{assentamentoId:"assentamento:portomonte"});
+  assert.equal(preview.somente_evidencia_regional,true);
+  assert.equal(preview.atribuicao_automatica_bloqueada,true);
+  assert.equal(preview.evento_especifico_confirmado,false);
+  assert.equal(preview.mutacao_canonica,false);
+  assert.deepEqual(preview.efeitos_dw_aplicados,[]);
+  preview.lacunas[0]="mudança de visualização";
+  assert.equal(JSON.stringify(raids),before);
+});
+test("refugiados de Eldroth não são atribuídos a uma cidade específica",async()=>{
+  const refugees=(await atlas.getTerritorialDynamic("dinamica:refugiados"));
+  const preview=previewTerritorialImpact(refugees,{assentamentoId:"assentamento:portomonte"});
+  assert.equal(preview.atribuicao_automatica_bloqueada,true);
+  assert.equal(preview.evento_especifico_confirmado,false);
+  assert.equal(preview.regioes.origem,"regiao:eldroth");
+  assert.equal(preview.regioes.destino,"regiao:costa-sul");
+  const regional=previewTerritorialImpact(refugees);
+  assert.equal(regional.foco_consultado,null);
+  assert.throws(()=>previewTerritorialImpact(null),TypeError);
+  assert.throws(()=>previewTerritorialImpact(refugees,{assentamentoId:"lugar:portomonte"}),TypeError);
 });
