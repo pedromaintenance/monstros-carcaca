@@ -291,3 +291,10 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 **Arquitetura:** prioridades curadas somente em `data/prioridades_curadoria_m3.json` com schema; gerador combina prioridades e `data/guias_dossies_regionais.json`, sem copiar manualmente 16 registros paralelos; índices de busca; consulta ESM e revisão sem mutações. Testes Python e JavaScript verificam contagens, ordem, fontes e isolamento.
 
 **Documento:** `docs/FILA_CURADORIA_M3.md`. Próxima unidade: uma pesquisa de fonte autoral por vez, baseada na fila e no que já está escrito.
+
+### Validação final da fila — ciclo 13
+
+- Pipeline confirmado como `completed/success`: https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40443990037. Verificadas cinco etapas: schema e integridade, testes Node, testes Python de integração real, gerador determinístico e publicação.
+- No snapshot público `dist/carcaca/`, `manifest.json` registra 16 pendências/8 prioridades. `research-backlog.json` conserva 8 pendências sem prioridade definida e 4 perguntas com precedência editorial; todos os fatos esperados seguem `null`.
+- `research-backlog-indexes.json` possui sete grupos de busca. Nenhum setor regional foi considerado desabitado por ausência de registros.
+- O backlog oferece roteiro de investigação, não conclusão canônica, ação de jogo ou medição real. Próximo ciclo: auditoria de fontes para uma única prioridade, com resultado verificável, inclusive quando só for possível documentar a insuficiência das fontes.

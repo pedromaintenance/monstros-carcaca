@@ -315,3 +315,11 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Documentar método e ordem em `docs/FILA_CURADORIA_M3.md`.
 - [ ] Próximo: pesquisar profundamente um único item prioritário e marcar como lacuna persistente quando as fontes não forem suficientes.
 - [ ] Implementar fluxo de aprovação de novas respostas somente após revisão editorial específica; a fila por si não cria cânone ou salva eventos de campanha.
+
+### Publicação verificada — ciclo 13
+
+- [x] [GitHub Actions #40443990037](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40443990037): `success` na validação, testes Node, integração Python, geração e publicação de JSON.
+- [x] `dist/carcaca/manifest.json`: **16 pendências de curadoria, 8 priorizadas**, ligadas aos 4 dossiês e às 16 perguntas do ciclo anterior.
+- [x] `dist/carcaca/research-backlog.json`: quatro pesquisas de primeiro lote, quatro do segundo, oito não priorizadas; quatro precedências; nenhuma resposta e nenhuma evidência nova atribuída.
+- [x] `dist/carcaca/research-backlog-indexes.json`: índices validados por região, tema, estado, faixa, pergunta anterior, artefato potencial e dossiê.
+- [x] Todos os registros continuam `resposta_confirmada:null`, `evidencia_nova:null` e `mutacao_canonica:false`.
