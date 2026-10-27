@@ -17,6 +17,8 @@ def slug(t):
 def extract(docx_path,inventory_path):
     docx_path=Path(docx_path);inventory_path=Path(inventory_path)
     doc=Document(docx_path)
+    if len(doc.tables)!=33 or doc.paragraphs[1045].text.strip()!="GUERREIRO" or doc.paragraphs[1291].text.strip()!="BÁRBARO":
+        raise ValueError("As fronteiras de classe ou o número de tabelas do DOCX mudou")
     inventory=json.loads(inventory_path.read_text(encoding='utf8'))
     source_hash=hashlib.sha256(docx_path.read_bytes()).hexdigest()
     if source_hash!=inventory['fonte_sha256']:
@@ -110,12 +112,15 @@ def extract(docx_path,inventory_path):
     }
 
 if __name__=='__main__':
-  d=sys.argv[1] if len(sys.argv)>1 else '/mnt/data/Hack Carcaça Dungeon World(1).docx'
-  inventory=sys.argv[2] if len(sys.argv)>2 else '/mnt/data/ciclo_movimentos/hack-carcaca-dw-inventario-classes-requer.json'
-  output=Path(sys.argv[3] if len(sys.argv)>3 else '/mnt/data/ciclo_guerreiro/hack-carcaca-dw-guerreiro-integrais.json')
+  if len(sys.argv)<2:
+      raise SystemExit('Uso: python scripts/extrair_guerreiro_docx.py <caminho_docx> [inventario_json] [saida_json]')
+  root=Path(__file__).resolve().parents[1]
+  d=sys.argv[1]
+  inventory=sys.argv[2] if len(sys.argv)>2 else root/'data/lore/hack-carcaca-dw-inventario-classes-requer.json'
+  output=Path(sys.argv[3]) if len(sys.argv)>3 else root/'data/lore/hack-carcaca-dw-guerreiro-integrais.json'
   result=extract(d,inventory)
   output.parent.mkdir(parents=True,exist_ok=True)
-  output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
+  output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\\n',encoding='utf8')
   print('TOTAL:',result['integridade'])
   print('SIZE:',output.stat().st_size)
   print('REQ especiais:',[(x['titulo'],x['requisito_literal']) for x in result['movimentos'] if x['requisito_estruturado'] and x['requisito_estruturado']['tipo']!='movimento_exato'])
