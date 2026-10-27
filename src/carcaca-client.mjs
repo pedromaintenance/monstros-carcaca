@@ -44,6 +44,7 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (!marcador||x.marcador_original===marcador)&&
       (comOpcoes===undefined||(x.opcoes.length>0)===comOpcoes));
   }
+  async function getHackCoreRules(){return byKey("hack_core_rules");}
   async function getGeneralMovements(){return byKey("hack_general_movements");}
   async function getGeneralMovementIndexes(){return byKey("hack_general_movement_indexes");}
   async function getGeneralMovement(id){
@@ -275,6 +276,7 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCompletePilotMovements,getCompletePilotMovementIndexes,searchCompletePilotMovements,
           getDocxTables,getDocxTableIndexes,searchDocxTables,
           getGeneralMovements,getGeneralMovement,getGeneralMovementIndexes,searchGeneralMovements,
+          getHackCoreRules,
           getLoreAtlasLinks,getLoreAtlasLinkIndexes,searchLoreAtlasLinks,
           getLoreEntity,searchLore,
           getRegionalDossiers,getRegionalDossier,getRegionalDossierIndexes,
