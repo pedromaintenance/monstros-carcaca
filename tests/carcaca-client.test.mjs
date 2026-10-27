@@ -61,7 +61,9 @@ const fixtures={
     hack_rogue_movements:"hack-rogue-movements.json",
     hack_rogue_movement_indexes:"hack-rogue-movement-indexes.json",
     hack_bard_movements:"hack-bard-movements.json",
-    hack_bard_movement_indexes:"hack-bard-movement-indexes.json"}},
+    hack_bard_movement_indexes:"hack-bard-movement-indexes.json",
+    hack_martial_artist_movements:"hack-martial-artist-movements.json",
+    hack_martial_artist_movement_indexes:"hack-martial-artist-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -112,6 +114,33 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-martial-artist-movements.json":[
+    {id:"movimento-classe:paragrafo-1862",titulo:"CORPO VAZIO",grupo:"ARTISTA MARCIAL",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Quando lutar desarmado, com postura própria.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1949",titulo:"FORMA DO AR",grupo:"ARTISTA MARCIAL",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Quando mover o ar.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1950",titulo:"CORPO SEM PESO",grupo:"ARTISTA MARCIAL",
+     requisito_literal:"Forma do Ar",
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1949"},
+     opcoes:[],texto_original:"Quando aliviar seu peso.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1863",titulo:"MÃO ABERTA",grupo:"ARTISTA MARCIAL",
+     requisito_literal:null,requisito_estruturado:null,
+     opcoes:[{paragrafo_docx:1864,texto:"derrubar;"}],
+     texto_original:"Quando causar dano desarmado.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1962",titulo:"VOO",grupo:"ARTISTA MARCIAL",
+     requisito_literal:"Forma do Ar e Corpo Sem Peso",
+     requisito_estruturado:{tipo:"todos",operador_literal:"e",itens:[
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1949",titulo_requerido:"FORMA DO AR"},
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1950",titulo_requerido:"CORPO SEM PESO"}
+     ]},opcoes:[],texto_original:"Quando voar, role.",aplicacao_canonica:false}
+  ],
+  "hack-martial-artist-movement-indexes.json":{
+    by_requisito_tipo:{todos:["movimento-classe:paragrafo-1962"]},
+    by_requisito_id:{"movimento-classe:paragrafo-1949":
+      ["movimento-classe:paragrafo-1950","movimento-classe:paragrafo-1962"],
+      "movimento-classe:paragrafo-1950":["movimento-classe:paragrafo-1962"]}},
   "hack-bard-movements.json":[
     {id:"movimento-classe:paragrafo-1753",titulo:"ARTE ARCANA",grupo:"BARDO",
      requisito_literal:null,requisito_estruturado:null,
@@ -1436,5 +1465,41 @@ test("Bardo verifica Arte Arcana e dois OUTROS movimentos, sem contagem duplicad
   assert.equal(direto.habilitado_para_compra,null);
   assert.equal(await atlas.getBardRequirementPreview("movimento-classe:paragrafo-9999"),null);
   await assert.rejects(()=>atlas.getBardRequirementPreview(required,{
+    movimentosPossuidos:"não é array"}),TypeError);
+});
+
+
+test("Artista Marcial exige Forma do Ar E Corpo Sem Peso para VOO sem aquisição automática",async()=>{
+  const all=await atlas.getMartialArtistMovements();
+  assert.equal(all.length,5);
+  assert.equal((await atlas.searchMartialArtistMovements({tipoRequisito:"todos"}))[0].titulo,"VOO");
+  assert.equal((await atlas.searchMartialArtistMovements({requer:"corpo vazio"})).length,0);
+  assert.equal((await atlas.searchMartialArtistMovements({comOpcoes:true}))[0].titulo,"MÃO ABERTA");
+  assert.equal((await atlas.getMartialArtistMovement("movimento-classe:paragrafo-1962")).titulo,"VOO");
+  assert.equal(await atlas.getMartialArtistMovement("movimento-classe:paragrafo-9999"),null);
+  const ix=await atlas.getMartialArtistMovementIndexes();
+  assert.deepEqual(ix.by_requisito_tipo.todos,["movimento-classe:paragrafo-1962"]);
+  const id="movimento-classe:paragrafo-1962";
+  const ausente=await atlas.getMartialArtistRequirementPreview(id);
+  assert.equal(ausente.verificacao_estrutural,"componentes_ausentes");
+  assert.deepEqual(ausente.componentes_requeridos.map(x=>x.presente_na_lista),[false,false]);
+  assert.equal(ausente.habilitado_para_compra,null);
+  const parcial=await atlas.getMartialArtistRequirementPreview(id,{
+    movimentosPossuidos:["movimento-classe:paragrafo-1949"]});
+  assert.deepEqual(parcial.componentes_requeridos.map(x=>x.presente_na_lista),[true,false]);
+  assert.equal(parcial.verificacao_estrutural,"componentes_ausentes");
+  const completo=await atlas.getMartialArtistRequirementPreview(id,{
+    movimentosPossuidos:["movimento-classe:paragrafo-1949","movimento-classe:paragrafo-1950"]});
+  assert.deepEqual(completo.componentes_requeridos.map(x=>x.presente_na_lista),[true,true]);
+  assert.equal(completo.verificacao_estrutural,"componentes_identificados_presentes");
+  assert.equal(completo.componentes_identificados_presentes,true);
+  assert.equal(completo.habilitado_para_compra,null);
+  assert.equal(completo.necessita_avaliacao_do_mestre,true);
+  assert.equal(completo.aplicacao_canonica,false);
+  const direto=await atlas.getMartialArtistRequirementPreview("movimento-classe:paragrafo-1950",{
+    movimentosPossuidos:["movimento-classe:paragrafo-1949"]});
+  assert.equal(direto.habilitado_para_compra,null);
+  assert.equal(await atlas.getMartialArtistRequirementPreview("nada"),null);
+  await assert.rejects(()=>atlas.getMartialArtistRequirementPreview(id,{
     movimentosPossuidos:"não é array"}),TypeError);
 });
