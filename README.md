@@ -65,6 +65,7 @@ A quinta auditoria forneceu a transcrição integral dos **21 quadros de regras 
 - Derivação: `scripts/hack_movimentos_gerais.py`.
 - Distribuição: `dist/carcaca/hack-general-movements.json` e `hack-general-movement-indexes.json`.
 - Cliente: `getGeneralMovements`, `getGeneralMovement`, `getGeneralMovementIndexes` e `searchGeneralMovements`.
+- Núcleo mecânico estruturado: `data/lore/hack-carcaca-dw-regras-nucleo.json` → `dist/carcaca/hack-core-rules.json`, acessível por `getHackCoreRules()`.
 - Detalhes e contrato: [Integração das regras gerais](docs/INTEGRACAO_REGRAS_GERAIS_HACK_DW.md).
 
 ```js
@@ -72,6 +73,8 @@ const adv = await atlas.searchGeneralMovements({categoria:"avancado"});
 const recrutamento = await atlas.searchGeneralMovements({quadroId:"quadro-geral-docx:30"});
 const servos = await atlas.getGeneralMovement("movimento-geral:docx-32");
 ```
+
+O núcleo reúne atributos, rolagens, PV, Carga, armadura, Debilidades, Periculosidade e XP. A distribuição dos **cinco movimentos iniciais** entre Raça, Classe e Antecedente permanece explicitamente indefinida na camada estruturada.
 
 Os textos são fiéis ao arquivo enviado, mas **não foram homologados mecanicamente**: `aplicacao_canonica:false`. A extração não altera o cânone, saves ou as fichas importadas de D&D/Peren.
 
