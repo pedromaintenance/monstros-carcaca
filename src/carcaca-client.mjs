@@ -60,6 +60,57 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getBardMovements(){return byKey("hack_bard_movements");}
+  async function getBardMovementIndexes(){return byKey("hack_bard_movement_indexes");}
+  async function getBardMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    return (await getBardMovements()).find(m=>m.id===id)??null;
+  }
+  async function searchBardMovements({titulo,query,requer,comRequer,comOpcoes,tipoRequisito}={}){
+    const norm=x=>String(x??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return (await getBardMovements()).filter(m=>
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (!requer||norm(m.requisito_literal).includes(norm(requer)))&&
+      (comRequer===undefined||Boolean(m.requisito_literal)===comRequer)&&
+      (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
+      (!tipoRequisito||(m.requisito_estruturado?.tipo??"nenhum")===tipoRequisito));
+  }
+  async function getBardRequirementPreview(id,{movimentosPossuidos=[]}={}){
+    if(!Array.isArray(movimentosPossuidos))throw new TypeError("movimentosPossuidos deve ser array");
+    const movimento=await getBardMovement(id);
+    if(!movimento)return null;
+    const requisito=movimento.requisito_estruturado;
+    if(requisito?.tipo!=="todos" || !requisito.itens.some(x=>x.tipo==="quantidade_movimentos_grupo")){
+      const base=await getClassRequirementPreview(id,{movimentosPossuidos});
+      return {...base,requisito_estruturado:requisito,
+        habilitado_para_compra:null,necessita_avaliacao_do_mestre:true,aplicacao_canonica:false};
+    }
+    const explicit=requisito.itens.find(x=>x.tipo==="movimento_exato");
+    const group=requisito.itens.find(x=>x.tipo==="quantidade_movimentos_grupo");
+    if(!explicit||!group)throw new TypeError("REQUER cardinal inválido");
+    const present=new Set(movimentosPossuidos);
+    const bardIds=new Set((await getBardMovements()).filter(m=>m.grupo===group.grupo).map(m=>m.id));
+    const excluded=new Set(group.excluir_movimentos_ids);
+    const outros=[...present].filter(x=>bardIds.has(x)&&!excluded.has(x));
+    const arte=present.has(explicit.movimento_id);
+    const quantidadeSuficiente=outros.length>=group.quantidade_minima;
+    return {movimento_id:id,requisito_literal:movimento.requisito_literal,
+      requisito_estruturado:requisito,operador:"todos",
+      componentes:[
+        {tipo:"movimento_exato",movimento_id:explicit.movimento_id,presente_na_lista:arte},
+        {tipo:"quantidade_movimentos_grupo",grupo:group.grupo,
+          quantidade_minima:group.quantidade_minima,
+          presentes_ids:outros,quantidade_presente:outros.length,
+          quantidade_suficiente:quantidadeSuficiente}
+      ],
+      verificacao_estrutural:arte&&quantidadeSuficiente
+        ?"componentes_identificados_presentes"
+        :!arte?"arte_arcana_ausente":"outros_movimentos_insuficientes",
+      habilitado_para_compra:null,necessita_avaliacao_do_mestre:true,
+      aplicacao_canonica:false,
+      observacao:"Prévia não homologa elegibilidade: Arte Arcana e dois OUTROS movimentos distintos de Bardo são obrigatórios, mesmo quando gratuitos."};
+  }
   async function getRogueMovements(){return byKey("hack_rogue_movements");}
   async function getRogueMovementIndexes(){return byKey("hack_rogue_movement_indexes");}
   async function getRogueMovement(id){
@@ -479,6 +530,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getWarriorMovements,getWarriorMovement,getWarriorMovementIndexes,searchWarriorMovements,
           getHunterMovements,getHunterMovement,getHunterMovementIndexes,searchHunterMovements,
           getRogueMovements,getRogueMovement,getRogueMovementIndexes,searchRogueMovements,
+          getBardMovements,getBardMovement,getBardMovementIndexes,searchBardMovements,
+          getBardRequirementPreview,
           getRogueRequirementPreview,
           getHunterRequirementPreview,
           getBarbarianMovements,getBarbarianMovement,getBarbarianMovementIndexes,
