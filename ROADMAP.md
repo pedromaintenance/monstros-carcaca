@@ -244,3 +244,11 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Documentar decisões, lacunas e contratos em `docs/INFRAESTRUTURA_DOS_ASSENTAMENTOS.md`.
 - [ ] Mapear no próximo ciclo impactos geográficos e conflitos da Caatinga/Além Sul somente quando houver fonte individualizável.
 - [ ] Atribuir materiais, depósitos e saneamento apenas após o autor documentar ou aprovar tais características.
+
+### Validação pós-publicação — ciclo 10
+
+- [x] [GitHub Actions #40440872683](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40440872683): quatro etapas principais concluídas com `success` (schema/referências, testes Node, geração determinística, publicação).
+- [x] `dist/carcaca/manifest.json`: **3 perfis e 12 setores de infraestrutura**, preservando 7 criaturas e 3 assentamentos/redes.
+- [x] `dist/carcaca/infrastructure-profiles.json`: 0 materiais construtivos confirmados; 1 instalação nominal — Templo de Deméter em Portomonte.
+- [x] `dist/carcaca/infrastructure-indexes.json`: índices por assentamento, natureza, setor com evidências, setor sem documentação e dependência material; cada assentamento aponta para exatamente um perfil.
+- [x] Nenhum dado material foi convertido em valor, instalação suposta, estatística DW ou acontecimento de campanha.

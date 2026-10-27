@@ -217,3 +217,11 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 **Escopo protegido:** nenhuma instalação fictícia, evento de campanha ou rótulo Dungeon World foi inserido no cânone, e os arquivos mecânicos de D&D/Peren não foram alterados.
 
 **Detalhes e lacunas:** `docs/INFRAESTRUTURA_DOS_ASSENTAMENTOS.md`.
+
+### Conferência técnica após a publicação — ciclo 10
+
+- Workflow executado: https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40440872683; todas as etapas finais em **success**.
+- Arquivos `dist/carcaca/manifest.json`, `infrastructure-profiles.json` e `infrastructure-indexes.json` conferidos: 3 perfis, 12 setores, 0 materiais construtivos confirmados e 1 instalação nominal documentada (Templo de Deméter).
+- Setores com âncoras documentais: 4 Portomonte, 2 conjunto insular, 2 cavernas kuo-toa. `evidencia_parcial` não valida uma instalação não citada; por exemplo, o setor de saneamento em Portomonte possui a âncora de purificação da água agrícola, mas **não** prova sistema de esgoto.
+- Índice por setor sem documentação inclui saneamento nas ilhas e nas cavernas, sem afirmar que tais comunidades não tenham saneamento de fato.
+- Próximo alvo: integrar geografia e pressão de guerras do Além Sul com cuidado para não transformar ameaças regionais em ataques a assentamentos particulares não mencionados.
