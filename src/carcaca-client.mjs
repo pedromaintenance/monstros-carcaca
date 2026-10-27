@@ -35,6 +35,22 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (pagina===undefined||x.pagina===Number(pagina)));
   }
   async function getSelectedMovements(){return byKey("hack_selected_movements");}
+  async function getCompletePilotMovements(){return byKey("hack_complete_pilot_movements");}
+  async function getCompletePilotMovementIndexes(){return byKey("hack_complete_pilot_movement_indexes");}
+  async function searchCompletePilotMovements({grupo,titulo,marcador,comOpcoes}={}){
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return (await getCompletePilotMovements()).filter(x=>
+      (!grupo||x.grupo===grupo)&&(!titulo||norm(x.titulo).includes(norm(titulo)))&&
+      (!marcador||x.marcador_original===marcador)&&
+      (comOpcoes===undefined||(x.opcoes.length>0)===comOpcoes));
+  }
+  async function getDocxTables(){return byKey("hack_docx_tables");}
+  async function getDocxTableIndexes(){return byKey("hack_docx_table_indexes");}
+  async function searchDocxTables({tipo,titulo}={}){
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return (await getDocxTables()).filter(x=>
+      (!tipo||x.tipo===tipo)&&(!titulo||norm(x.titulo).includes(norm(titulo))));
+  }
   async function getSelectedMovementIndexes(){return byKey("hack_selected_movement_indexes");}
   async function searchSelectedMovements({grupo,categoria,requisito,texto}={}){
     const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
@@ -240,6 +256,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getHackMechanicsIndex,searchHackMechanicsPages,
           getLoreRelations,getLoreRelationIndexes,searchLoreRelations,
           getSelectedMovements,getSelectedMovementIndexes,searchSelectedMovements,
+          getCompletePilotMovements,getCompletePilotMovementIndexes,searchCompletePilotMovements,
+          getDocxTables,getDocxTableIndexes,searchDocxTables,
           getLoreAtlasLinks,getLoreAtlasLinkIndexes,searchLoreAtlasLinks,
           getLoreEntity,searchLore,
           getRegionalDossiers,getRegionalDossier,getRegionalDossierIndexes,

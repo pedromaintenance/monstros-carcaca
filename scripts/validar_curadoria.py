@@ -609,6 +609,68 @@ def validar_terceira_auditoria_manuscrito():
           f"{sum(x['requisito_literal'] is not None for x in rows)} requisitos literais, "
           "página 91 confirmada em branco, zero promoções canônicas.")
 
+
+def validar_quarta_auditoria_manuscrito():
+    """Amostra integral DOCX + catálogo completo das tabelas, sem promover regras ao cânone."""
+    from collections import Counter
+    path="data/lore/hack-carcaca-dw-movimentos-integrais-piloto.json"
+    raw=load(path)
+    movements=raw["movimentos"]
+    require(raw["posicao"]=="indice_zero_based_de_paragrafo_docx",
+            "Âncoras de movimentos devem ser parágrafos zero-based.")
+    ids=unique(movements,"movimentos integrais do piloto")
+    found_paras={m["paragrafo_docx"] for m in movements}
+    expected=set(range(827,833))|{834,835,836,837,842,843}
+    require(found_paras==expected,
+            "Piloto incompleto: 6 Humanos e 6 Orcs da Caatinga, sem duplicações.")
+    require(Counter(m["grupo"] for m in movements)==
+            {"HUMANOS":6,"ORCS DA CAATINGA":6},
+            "Agrupamento de Movimentos de Povo difere do DOCX.")
+    preliminary={
+        x["paragrafo_docx"]:x for x in
+        load("data/lore/hack-carcaca-dw-movimentos-selecionados.json")["movimentos"]}
+    for m in movements:
+        require(m["id"]=="movimento-integral:paragrafo-"+str(m["paragrafo_docx"]),
+                f"ID e parágrafo não correspondem: {m['id']}")
+        require(m["categoria"]=="povo" and bool(m["marcador_original"]) and
+                len(m["texto_original"])>50,
+                f"Movimento integral sem categoria/texto: {m['id']}")
+        require(m["texto_integral_conferido"] is True and
+                m["aplicacao_canonica"] is False and
+                m["estado"]=="transcricao_integral_docx_em_revisao",
+                f"Regras não podem ser aplicadas automaticamente: {m['id']}")
+        require(m["requisito_verificado_no_cabecalho"] is True and
+                m["requisito_explicito_no_cabecalho"] is None,
+                "Não inventar REQUER em movimentos sem REQUER explícito.")
+        if m["paragrafo_docx"] in preliminary:
+            require(m["titulo"]==preliminary[m["paragrafo_docx"]]["titulo"],
+                    "Movimento integral conflita com título previamente curado.")
+        opts=m["opcoes"]
+        require(all(o["texto"] and isinstance(o["paragrafo_docx"],int)
+                    for o in opts), "Opção malformada.")
+        if m["paragrafo_docx"]==837:
+            require([o["paragrafo_docx"] for o in opts]==[838,839,840,841],
+                    "Saqueador da Caatinga deve preservar as 4 opções do DOCX.")
+            require("10+: escolha 2" in m["texto_original"]
+                    and "7–9: escolha 1" in m["texto_original"],
+                    "As faixas de resultado do saqueador devem permanecer intactas.")
+        else:
+            require(not opts,f"Opção ligada ao movimento incorreto: {m['id']}")
+    tables=load("data/lore/hack-carcaca-dw-tabelas-docx.json")
+    rows=tables["tabelas"]
+    require(len(rows)==33, "DOCX original contém 33 tabelas.")
+    require([x["tabela_docx_indice"] for x in rows]==list(range(33)),
+            "Tabela faltante, duplicada ou deslocada.")
+    require(Counter(x["tipo"] for x in rows)=={
+        "quadro_narrativo":10,"tabela_numerica":2,"quadro_movimento_geral":21},
+        "Inventário DOCX deve separar narrativa, números e movimentos gerais.")
+    require(all(x["id"]=="tabela-docx:"+str(x["tabela_docx_indice"])
+                and x["texto_integral_curado"] is False
+                and x["aplicacao_canonica"] is False for x in rows),
+            "Inventário de títulos não significa texto integral aprovado.")
+    print("4a auditoria: 12 movimentos integrais (4 opções), 33 tabelas "
+          "(21 quadros de movimentos gerais), zero aplicações automáticas.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -701,6 +763,7 @@ def main():
     validar_pontes_lore_manuscrito(rids)
     validar_indice_mecanicas_manuscrito()
     validar_terceira_auditoria_manuscrito()
+    validar_quarta_auditoria_manuscrito()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

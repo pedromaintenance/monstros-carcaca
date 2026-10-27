@@ -255,6 +255,29 @@ def build():
     mechanics_index=load("data/lore/hack-carcaca-dw-indice-mecanicas.json")
     lore_relations=sorted(load("data/lore/hack-carcaca-dw-relacoes.json")["relacoes"],key=lambda x:x["id"])
     selected_moves=sorted(load("data/lore/hack-carcaca-dw-movimentos-selecionados.json")["movimentos"],key=lambda x:x["paragrafo_docx"])
+    complete_pilot_moves=sorted(
+        load("data/lore/hack-carcaca-dw-movimentos-integrais-piloto.json")["movimentos"],
+        key=lambda x:x["paragrafo_docx"])
+    docx_tables=sorted(load("data/lore/hack-carcaca-dw-tabelas-docx.json")["tabelas"],
+                       key=lambda x:x["tabela_docx_indice"])
+    reviewed_paragraphs={x["paragrafo_docx"]:x["id"] for x in selected_moves}
+    complete_pilot_moves=[
+        {**x,"revisao_preliminar_id":reviewed_paragraphs.get(x["paragrafo_docx"])}
+        for x in complete_pilot_moves]
+    complete_move_indexes={k:defaultdict(set) for k in ("by_grupo","by_marcador","by_preliminar")}
+    for item in complete_pilot_moves:
+        for k,key in (("by_grupo",item["grupo"]),("by_marcador",item["marcador_original"]),
+                      ("by_preliminar",item["revisao_preliminar_id"])):
+            add(complete_move_indexes[k],key,item["id"])
+    complete_move_indexes={
+        k:{key:sorted(ids) for key,ids in sorted(v.items())}
+        for k,v in complete_move_indexes.items()}
+    docx_table_indexes={k:defaultdict(set) for k in ("by_tipo",)}
+    for item in docx_tables:
+        add(docx_table_indexes["by_tipo"],item["tipo"],item["id"])
+    docx_table_indexes={
+        k:{key:sorted(ids) for key,ids in sorted(v.items())}
+        for k,v in docx_table_indexes.items()}
     lore_relation_index={k:defaultdict(set) for k in ("by_entidade","by_tipo","by_pagina")}
     for relation in lore_relations:
         for k,key in (("by_entidade",relation["origem_id"]),
@@ -392,6 +415,10 @@ def build():
         "lore_relation_indexes":"lore-relation-indexes.json",
         "hack_selected_movements":"hack-selected-movements.json",
         "hack_selected_movement_indexes":"hack-selected-movement-indexes.json",
+        "hack_complete_pilot_movements":"hack-complete-pilot-movements.json",
+        "hack_complete_pilot_movement_indexes":"hack-complete-pilot-movement-indexes.json",
+        "hack_docx_tables":"hack-docx-tables.json",
+        "hack_docx_table_indexes":"hack-docx-table-indexes.json",
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
@@ -427,6 +454,10 @@ def build():
         "total_relacoes_lore_manuscrito":len(lore_relations),
         "total_movimentos_titulos_verificados":len(selected_moves),
         "total_movimentos_com_requisito_literal":sum(m["requisito_literal"] is not None for m in selected_moves),
+        "total_movimentos_integrais_piloto":len(complete_pilot_moves),
+        "total_opcoes_movimentos_piloto":sum(len(x["opcoes"]) for x in complete_pilot_moves),
+        "total_tabelas_docx_inventariadas":len(docx_tables),
+        "total_quadros_movimentos_gerais":sum(x["tipo"]=="quadro_movimento_geral" for x in docx_tables),
         "total_rotulos_mecanicas_detectados":sum(len(p["rotulos_detectados"]) for p in mechanics_index["paginas_indice"]),
         "total_paginas_lore_manuscrito":len(lore_source["paginas"]),
         "total_eventos_cronologia_manuscrito":len(lore_timeline["eventos"]),
@@ -462,6 +493,10 @@ def build():
         files["lore_relation_indexes"]:lore_relation_index,
         files["hack_selected_movements"]:selected_moves,
         files["hack_selected_movement_indexes"]:moves_index,
+        files["hack_complete_pilot_movements"]:complete_pilot_moves,
+        files["hack_complete_pilot_movement_indexes"]:complete_move_indexes,
+        files["hack_docx_tables"]:docx_tables,
+        files["hack_docx_table_indexes"]:docx_table_indexes,
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,
