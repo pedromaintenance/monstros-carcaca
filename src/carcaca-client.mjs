@@ -25,6 +25,18 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getIndexes(){return byKey("indexes");}
   async function getRegions(){return byKey("regions");}
   async function getLoreIndex(){return byKey("lore_index");}
+  async function getHackMechanicsIndex(){return byKey("hack_mechanics_index");}
+  async function searchHackMechanicsPages({query,categoria,pagina,comRequer}={}){
+    const ix=await getHackMechanicsIndex();
+    const normalize=x=>String(x??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const search=normalize(query).trim();
+    return ix.paginas_indice.filter(p=>
+      (!categoria||p.categoria===categoria)&&
+      (pagina===undefined||p.pagina===Number(pagina))&&
+      (comRequer===undefined||(p.mencoes_requer_na_pagina.length>0)===comRequer)&&
+      (!search||p.rotulos_detectados.some(title=>normalize(title).includes(search))||
+        p.mencoes_requer_na_pagina.some(req=>normalize(req).includes(search))));
+  }
   async function getLoreIndexIndexes(){return byKey("lore_index_indexes");}
   async function getLoreChronology(){return byKey("lore_chronology");}
   async function getLoreReviewNotes(){return byKey("lore_review_notes");}
@@ -208,6 +220,7 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   }
   return {getManifest,getCatalog,getIndexes,getRegions,
           getLoreIndex,getLoreIndexIndexes,getLoreChronology,getLoreReviewNotes,
+          getHackMechanicsIndex,searchHackMechanicsPages,
           getLoreAtlasLinks,getLoreAtlasLinkIndexes,searchLoreAtlasLinks,
           getLoreEntity,searchLore,
           getRegionalDossiers,getRegionalDossier,getRegionalDossierIndexes,

@@ -252,6 +252,7 @@ def build():
         for name,group in lore_crosswalk_index.items()
     }
     lore_indexes=build_lore_indexes(lore_entries)
+    mechanics_index=load("data/lore/hack-carcaca-dw-indice-mecanicas.json")
     research_priorities=load("data/prioridades_curadoria_m3.json")["prioridades"]
     dependencies=sorted(load("data/dependencias_materiais_costa_sul.json")["dependencias"],key=lambda r:r["id"])
     material_balances=sorted(load("data/balancos_materiais_costa_sul.json")["balancos"],key=lambda r:r["id"])
@@ -366,6 +367,7 @@ def build():
         "regional_dossiers":"regional-dossiers.json",
         "regional_dossier_indexes":"regional-dossier-indexes.json",
         "lore_index":"lore-index.json",
+        "hack_mechanics_index":"hack-mechanics-index.json",
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
@@ -397,6 +399,8 @@ def build():
         "total_criaturas":len(creatures), "total_regioes":len(regions),
         "total_dossies_regionais":len(regional_dossiers),
         "total_entradas_lore_manuscrito":len(lore_entries),
+        "total_paginas_mecanicas_extraidas":mechanics_index["paginas_com_texto"],
+        "total_rotulos_mecanicas_detectados":sum(len(p["rotulos_detectados"]) for p in mechanics_index["paginas_indice"]),
         "total_paginas_lore_manuscrito":len(lore_source["paginas"]),
         "total_eventos_cronologia_manuscrito":len(lore_timeline["eventos"]),
         "total_incognitas_manuscrito":len(lore_timeline["questoes_abertas"]),
@@ -426,6 +430,7 @@ def build():
         files["regional_dossiers"]:regional_dossiers,
         files["regional_dossier_indexes"]:regional_dossier_indexes,
         files["lore_index"]:lore_entries,
+        files["hack_mechanics_index"]:mechanics_index,
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,

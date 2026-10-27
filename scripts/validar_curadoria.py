@@ -518,6 +518,49 @@ def validar_pontes_lore_manuscrito(rids):
                 "Ponte não pode atualizar cânone por conta própria")
     print(f"Pontes manuscrito→atlas: {len(links['pontes'])} referências em revisão.")
 
+
+def validar_indice_mecanicas_manuscrito():
+    """Cobertura textual do hack; títulos são candidatos, não movimentos certificados."""
+    m=load("data/lore/hack-carcaca-dw-indice-mecanicas.json")
+    require(m["fonte_id"]=="fonte:hack-carcaca-dungeon-world-rascunho",
+            "Fonte do índice mecânico divergente")
+    require(m["estado"]=="candidatos_para_revisao_nao_canonicos" and
+            m["nao_usar_como_fato_de_ambientacao"] is True,
+            "Índice de mecânicas não deve produzir cânone")
+    rows=m["paginas_indice"]
+    ids=[r["pagina"] for r in rows]
+    require(ids==sorted(ids) and len(ids)==len(set(ids)), "Páginas mecânicas duplicadas/desordenadas")
+    expected=set(range(26,182))
+    missing=sorted(expected-set(ids))
+    require(missing==m["paginas_sem_texto_extraivel"],"Páginas sem texto não informadas")
+    require(len(rows)==m["paginas_com_texto"],"Total de páginas mecânicas incorreto")
+    bundles=[
+      "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json"
+    ]
+    for bundle in bundles:
+        b=load(bundle)
+        require(b["fonte_id"]==m["fonte_id"], "Pacote mecânico com fonte divergente")
+        page_ids=[p["pagina"] for p in b["paginas"]]
+        require(all(p in ids for p in page_ids),"Pacote de mecânicas com página não indexada")
+        require(all(p["texto"] for p in b["paginas"]),"Página mecânica sem texto")
+        for p in b["paginas"]:
+            entry=next(x for x in rows if x["pagina"]==p["pagina"])
+            require(entry["fonte_paginas"]==bundle,"Referência de origem incorreta")
+            require(entry["categoria"] in (
+                "regras_fundamentais","teoria_dos_movimentos",
+                "movimentos_de_povo","movimentos_de_classe"),
+                "Categoria mecânica não reconhecida")
+    require(sum(len(load(p)["paginas"]) for p in bundles)==len(rows),
+            "Pacotes mecânicos não correspondem ao número de páginas")
+    require(any(x["mencoes_requer_na_pagina"] for x in rows),
+            "Não encontrou menções a REQUER na fonte")
+    print(f"Índice secundário: {len(rows)} páginas de regras/movimentos; "
+          f"{sum(len(x['rotulos_detectados']) for x in rows)} rótulos candidatos, "
+          f"{len(missing)} páginas sem texto extraível, zero movimentos promovidos.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -608,6 +651,7 @@ def main():
     validar_prioridades_curadoria(fontes)
     validar_lore_manuscrito()
     validar_pontes_lore_manuscrito(rids)
+    validar_indice_mecanicas_manuscrito()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
