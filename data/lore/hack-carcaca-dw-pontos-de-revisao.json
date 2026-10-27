@@ -1,0 +1,98 @@
+{
+  "schema_version": "0.1.0",
+  "fonte_id": "fonte:hack-carcaca-dungeon-world-rascunho",
+  "descricao": "Diferenças de escala, terminologia e topologia que exigem confirmação do autor; nenhum ajuste automático de cânone.",
+  "revisoes": [
+    {
+      "id": "revisao-hack:shadar-gualapolis-boca",
+      "classe": "topologia_ambigua",
+      "severidade": "alta",
+      "paginas": [
+        6,
+        7
+      ],
+      "questao": "O manuscrito situa a fortaleza Boca do Abismo sobre Gualápolis e também declara que a antiga Gualápolis está sob Shadar-Riverie. Confirmar se nomes designam o mesmo complexo urbano em épocas diferentes ou lugares distintos.",
+      "decisao_atual": "preservar_os_tres_toponimos_e_nao_fundir_locais",
+      "acao_autorizada": false
+    },
+    {
+      "id": "revisao-hack:kuo-toa-expulsao-extremo-oeste",
+      "classe": "cronologia_geografia",
+      "severidade": "media",
+      "paginas": [
+        9,
+        12,
+        14
+      ],
+      "questao": "O evento 351 EC narra expulsão kuo-toa do Extremo Oeste, embora o avanço inimigo seja descrito da Costa Sul até Garganta (Extremo Leste). Verificar direção e local da expulsão.",
+      "decisao_atual": "registrar_evento_sem_validar_a_direcao_da_expulsao",
+      "acao_autorizada": false
+    },
+    {
+      "id": "revisao-hack:yokai-homonimia",
+      "classe": "terminologia_taxonomia",
+      "severidade": "alta",
+      "paginas": [
+        3,
+        4,
+        16,
+        17
+      ],
+      "questao": "A obra usa Yokai como nome de uma antiga civilização élfica e o bestiário também categoriza criaturas como yokai. Não assumir que todas são indivíduos do povo élfico ou da mesma ancestralidade.",
+      "decisao_atual": "manter_povo_yokai_e_tipo_de_criatura_yokai_separados",
+      "acao_autorizada": false
+    },
+    {
+      "id": "revisao-hack:abissal-homonimia",
+      "classe": "terminologia_cosmologia",
+      "severidade": "alta",
+      "paginas": [
+        8,
+        14,
+        15
+      ],
+      "questao": "Abissais marinhos anfíbios ligados a Daegon são distintos dos demônios que invadem pelo Abismo da foz.",
+      "decisao_atual": "manter_abissais_marinhos_e_demonios_infernais_distintos",
+      "acao_autorizada": false
+    },
+    {
+      "id": "revisao-hack:templo-demeter-potabilidade",
+      "classe": "escopo_de_evidencia",
+      "severidade": "media",
+      "paginas": [
+        5,
+        12,
+        23
+      ],
+      "questao": "Purificação da água do Mar de Sangue permite agricultura, mas não prova água potável para consumo nem produção ou demanda quantificada.",
+      "decisao_atual": "continuar_com_suporte_quantitativo_desconhecido",
+      "acao_autorizada": false
+    },
+    {
+      "id": "revisao-hack:refugiados-eldroth-portomonte",
+      "classe": "granularidade_regional",
+      "severidade": "media",
+      "paginas": [
+        5,
+        17
+      ],
+      "questao": "O texto regional coloca refugiados nos grandes assentamentos da Costa Sul; trecho sobre druidas de Eldroth cita expressamente Portomonte como destino de alguns. Revisar se o registro específico deve ser incorporado à curadoria de assentamentos, sem atribuir quantidade ou acolhimento institucional.",
+      "decisao_atual": "fonte_nova_individualiza_destino_para_algunos_druidas_nao_todos_refugiados",
+      "acao_autorizada": false
+    },
+    {
+      "id": "revisao-hack:origem-e-evocacao-deus-yokai",
+      "classe": "espaco_aberto_autoral",
+      "severidade": "baixa",
+      "paginas": [
+        3,
+        4,
+        11,
+        16
+      ],
+      "questao": "Direito de nomeação dos antigos elfos Yokai e seu destino são declarados incompletos; não criar explicação definitiva.",
+      "decisao_atual": "registrar_lacuna_aberta",
+      "acao_autorizada": false
+    }
+  ]
+}
