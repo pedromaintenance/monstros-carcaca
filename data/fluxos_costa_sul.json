@@ -36,9 +36,9 @@
       "recurso": "Pessoas capturadas",
       "transformacao": "Sacrifícios rituais a Daegon",
       "finalidade": "Rito religioso, não abastecimento alimentar",
-      "status": "documentado",
+      "status": "inferido",
       "fonte": "ambientacao",
-      "observacao": "Origem atribuída ao conjunto de comunidades kuo-toa da Costa Sul; o lugar individual de cada incursão não está determinado."
+      "observacao": "As incursões regionais kuo-toa são documentadas; atribuir uma partida específica à rede agregada de cavernas é inferência, pois a fonte também descreve cidades subaquáticas."
     }
   ]
 }
