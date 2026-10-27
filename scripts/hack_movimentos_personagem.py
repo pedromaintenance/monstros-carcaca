@@ -32,3 +32,17 @@ def build_class_indexes(movements,edges,pending):
           item["origem_movimento_id"]:item["requisito_literal"] for item in pending
       }
     }
+
+def build_warrior_indexes(movements):
+    """Índices de origem sem tratar elegibilidade como autorização de jogo."""
+    return {
+      "by_requisito_tipo":ordered_index(movements,lambda m:[
+        (m["requisito_estruturado"] or {}).get("tipo","nenhum")]),
+      "by_tem_requer":ordered_index(movements,lambda m:[
+        "sim" if m["requisito_literal"] else "nao"]),
+      "by_tem_opcoes":ordered_index(movements,lambda m:[
+        "sim" if m["opcoes"] else "nao"]),
+      "by_paragrafo":ordered_index(movements,lambda m:[m["paragrafo_docx"]]),
+      "by_requisito_id":ordered_index(movements,lambda m:[
+        (m["requisito_estruturado"] or {}).get("movimento_id")]),
+    }
