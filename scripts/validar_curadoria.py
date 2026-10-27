@@ -231,6 +231,50 @@ def validar_balancos_e_pressoes(fontes):
           f"{len(pressoes)} riscos hipotéticos.")
 
 
+
+def validar_capacidade_suporte(fontes):
+    """Não permite capacidade populacional sintética ou história material inventada."""
+    schema=load("schemas/capacidade-suporte.schema.json")
+    Draft202012Validator.check_schema(schema)
+    check=Draft202012Validator(schema)
+    perfis=load("data/capacidade_suporte_costa_sul.json")["perfis"]
+    assentamentos={s["id"]:s for s in gather("curadoria/assentamentos")}
+    ids=unique(perfis,"capacidade de suporte")
+    require(len(ids)==len(assentamentos),
+            "Ciclo 9 deve indexar as três entidades coletivas sem duplicar.")
+    unidades=("agua_potavel","alimentacao","abrigo","residuos")
+    campos_demograficos=("residentes","nascimentos","obitos","migracao_entrada","migracao_saida")
+    for perfil in perfis:
+        erros=list(check.iter_errors(perfil))
+        require(not erros,f"Perfil de suporte inválido {perfil['id']}: {erros[:1]}")
+        aid=perfil["assentamento_id"]
+        require(aid in assentamentos,f"Assentamento inexistente em suporte: {aid}")
+        require(perfil["natureza_territorial"]==assentamentos[aid]["natureza"],
+                f"Tipo de habitat distinto em suporte: {aid}")
+        require(perfil["fonte"] in fontes,f"Fonte desconhecida em suporte: {aid}")
+        require(perfil["efeito_dw_automatico"] is False,
+                f"Não converter capacidade ecológica em efeitos DW automáticos: {aid}")
+        names=[d["id"] for d in perfil["limites"]]
+        require(sorted(names)==sorted(unidades),f"Quatro limites obrigatórios distintos: {aid}")
+        medidas=[m for d in perfil["limites"]
+                  for m in (d["disponibilidade"],d["necessidade_por_habitante"])]
+        medidas.extend(perfil["demografia"][key] for key in campos_demograficos)
+        if perfil["estado"]=="sem_capacidade_quantificavel":
+            require(all(m["valor"] is None for m in medidas),
+                    f"Perfil sem suporte quantificado não pode conter valores: {aid}")
+            require(all(d["situacao"]=="medicoes_nao_disponiveis" for d in perfil["limites"]),
+                    f"Perfil pendente com limite quantitativo não revisado: {aid}")
+        if perfil["natureza_territorial"]!="assentamento_civil":
+            require(perfil["demografia"]["residentes"]["valor"] is None,
+                    f"Não somar comunidades ou redes num total inventado: {aid}")
+        if perfil["demografia"]["mobilidade_sazonal"]=="deslocamentos_sazonais_documentados":
+            require(aid=="assentamento:comunidades-insulares-costa-sul",
+                    "Não espalhar sazonalidade insular para assentamentos alheios")
+        require(perfil["demografia"]["continuidade_reprodutiva"]=="nao_documentada",
+                f"Não atribuir reprodução sem fonte explícita: {aid}")
+    print(f"Suporte ecológico validado: {len(perfis)} perfis, "
+          f"{len(perfis)*4} limites, zero medidas presumidas.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -314,6 +358,7 @@ def main():
     validate_ecossistema(fontes, rids, lids, lugares)
     validar_dependencias_e_exemplos(fontes)
     validar_balancos_e_pressoes(fontes)
+    validar_capacidade_suporte(fontes)
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
