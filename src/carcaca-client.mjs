@@ -32,6 +32,15 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getSettlementIndexes(){return byKey("settlement_indexes");}
   async function getPeoples(){return byKey("peoples");}
   async function getFlows(){return byKey("flows");}
+  async function getMaterialDependencies(){return byKey("material_dependencies");}
+  async function getMaterialDependencyIndexes(){return byKey("material_dependency_indexes");}
+  async function searchMaterialDependencies({assentamentoId,fluxoId,tipo,estadoEvidencia}={}){
+    return (await getMaterialDependencies()).filter(item=>
+      (!assentamentoId||item.assentamento_id===assentamentoId)&&
+      (!fluxoId||item.fluxo_id===fluxoId)&&
+      (!tipo||item.tipo===tipo)&&
+      (!estadoEvidencia||item.estado_evidencia===estadoEvidencia));
+  }
   async function getSettlementScenarios(){return byKey("settlement_scenarios");}
   async function getSettlementScenario(id){
     if(typeof id!=="string"||!id.startsWith("cenario:"))return null;
@@ -83,7 +92,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   }
   return {getManifest,getCatalog,getIndexes,getRegions,getPlaces,getFactions,
           getFronts,getSettlements,getSettlementLabels,getSettlementIndexes,
-          getPeoples,getFlows,getSettlement,searchSettlements,
+          getPeoples,getFlows,getMaterialDependencies,getMaterialDependencyIndexes,
+          searchMaterialDependencies,getSettlement,searchSettlements,
           getSettlementScenarios,getSettlementScenario,searchSettlementScenarios,
           getTypes,get,search};
 }
@@ -110,5 +120,45 @@ export function previewSettlementScenario(cenario,{condicoesConfirmadas=[]}={}){
     resultados_possiveis:[...cenario.resultados_possiveis],
     pergunta_ao_mestre:cenario.pergunta_ao_mestre,
     observacao:"Não altera tags DW, dados canônicos ou saves; decisões e efeitos ficam a cargo do mestre."
+  };
+}
+
+/**
+ * Prévia ficcional de interrupção de uma dependência material, sem transição DW.
+ * Percorre apenas relações explicitamente curadas como depende_de_id.
+ * NÃO deduz fome, mortes, prejuízo de Prosperidade ou eventos canônicos.
+ */
+export function previewMaterialInterruption(dependencias,id){
+  if(!Array.isArray(dependencias))throw new TypeError("dependencias deve ser array");
+  const byId=new Map(dependencias.map(item=>[item.id,item]));
+  const root=byId.get(id);
+  if(!root)throw new RangeError("Dependência não encontrada: "+id);
+  const found=[];
+  const visited=new Set([id]);
+  const queue=[id];
+  while(queue.length){
+    const current=queue.shift();
+    for(const child of dependencias.filter(dep=>dep.depende_de_id===current)){
+      if(visited.has(child.id))continue;
+      visited.add(child.id);
+      found.push({
+        dependencia_id:child.id,
+        assentamento_id:child.assentamento_id,
+        efeito_hipotetico:child.consequencia_hipotetica,
+        desconhecidos:[...child.desconhecidos],
+        status:"exposicao_potencial_nao_confirmada"
+      });
+      queue.push(child.id);
+    }
+  }
+  return {
+    estado:"simulacao_sem_mutacao",
+    mutacao_canonica:false,
+    processo_inicial:id,
+    assentamento_id:root.assentamento_id,
+    condicao_inicial_hipotetica:"Interrupção do processo: "+root.fato,
+    impactos_potenciais:found,
+    efeitos_dw_aplicados:[],
+    observacao:"Grafo apenas sugere exposição material. O mestre avalia eventos locais; nenhum dado canônico ou de campanha é alterado."
   };
 }
