@@ -71,3 +71,19 @@ const tipos = await atlas.getSettlementLabels();
 **Filtros:** `searchSettlements({regiaoId,rotuloId,povoId,natureza})`. O campo `natureza` distingue `assentamento_civil` de `rede_de_abrigos`. As distribuições de água, alimento e reprodução **não** são estimadas automaticamente; `status` indica `documentado`, `inferido`, `proposto` ou `incerto`.
 
 Novas referências: `docs/ECOLOGIA_DOS_ASSENTAMENTOS.md` e `schemas/assentamento-carcaca.schema.json`.
+
+## Cenários de Dungeon World: somente leitura
+
+O arquivo `dist/carcaca/settlement-scenarios.json` contém situações hipotéticas. O JS exige confirmação manual das pré-condições e **nunca aplica efeitos**:
+
+```js
+import {previewSettlementScenario} from "./src/carcaca-client.mjs";
+const cenarios = await atlas.searchSettlementScenarios({movimentoDw:"Want"});
+const cenario = await atlas.getSettlementScenario(cenarios[0].id);
+const previa = previewSettlementScenario(cenario);
+console.log(previa.condicoes_pendentes);
+```
+
+`previewSettlementScenario(cenario,{condicoesConfirmadas:[...strings]})` apenas verifica se as condições hipotéticas foram assinaladas pelo mestre e retorna possíveis opções narrativas. Não insere `Need`, não reduz Prosperidade/Defesas, não cria `Oath` e não modifica objetos em memória ou o repositório.
+
+Quatro regras de referência: `Want` (necessidade não atendida), `Trade` (comércio bloqueado), `Capture` (mudança de controle de recurso) e `Aid` (auxílio condicionado a juramento e ameaça). `Aid` está explicitamente **bloqueado** no caso das ilhas até haver comunidades DW individualizadas e juramento estabelecido em jogo.

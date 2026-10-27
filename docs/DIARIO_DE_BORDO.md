@@ -109,3 +109,21 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 **Execução:** https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40429102303. Etapas de validação, testes e publicação observadas com conclusão `success`.
 
 **Próximo lote:** aprofundar o ecossistema insular de tortles e tabaxis sem inventar nomes e ligações de comércio; explorar a dinâmica de rótulos e abastecimento em cenários hipotéticos.
+
+## 2026-10-26 · Ciclo 6 — Comunidades insulares e cenários DW
+
+**Fonte principal:** `Ambientação - A Carcaça - Visão Geral.txt`, parágrafo sobre as ilhas tortles/tabaxis; referência de regras: https://www.dungeonworldsrd.com/gamemastering/the-world/.
+
+**Curadoria:** criada a área regional `lugar:ilhas-costa-sul`, associada a `regiao:costa-sul`, e o objeto editorial `assentamento:comunidades-insulares-costa-sul` de natureza `conjunto_de_comunidades`. Este objeto não representa uma ilha única nem uma steading DW. Tortles e tabaxis são cadastrados como grupos regionais; a fonte não demonstra que cada ilha abriga os dois povos.
+
+**Dados materiais:** desconhecidos e explicitamente não preenchidos: água potável, alimentação, moradias específicas, nascimentos/reprodução, volume de comércio e forças de defesa. Documentados: comunidades insulares, tradições monásticas locais, defesa disciplinada, viagens sazonais por histórias/recursos, atuação marítima regional e hostilidade aos kuo-toa/abissais marinhos.
+
+**Rótulos e fluxos:** criados `tradicoes_monasticas_insulares` e `defesa_insular_disciplinada`; reutilizado `rotas_sazonais`. Criado `fluxo:viagens-sazonais-comunidades-insulares` com destino desconhecido. Não foi inventada rota comercial com Portomonte.
+
+**Cenários DW:** quatro cartões em `cenarios/assentamentos/costa-sul.json`, cada um explicitamente `hipotese_nao_acontecida`. Em `Aid`, a ausência de juramento confirmado e a necessidade de comunidade DW individualizada são precondições, não fatos. Outros movimentos `Want`, `Trade`, `Capture` igualmente não transformaram as condições de Portomonte.
+
+**Software:** schema dos cenários estabelece `mutacao_canonica: false`; cliente `previewSettlementScenario` gera proposta e mostra condições pendentes em modo somente leitura. Schema, validação cruzada, índices e publicação atualizados.
+
+**Verificação técnica:** [Actions #40430220238](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40430220238) com etapas de validação, testes e publicação `success`. `dist/carcaca/manifest.json` apresenta 7 criaturas, 3 assentamentos/redes, 14 rótulos, 4 povos regionais, 4 fluxos, 4 cenários. Arquivos de origem e dados mecânicos de Peren/D&D não alterados.
+
+**Próximo alvo de M3:** revisão da relação material entre comunidades e análise por região, mantendo indivíduos, nomes de ilhas, dieta e recursos desconhecidos enquanto a fonte não os especificar.

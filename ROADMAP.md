@@ -20,7 +20,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 | **M0 — Fundamentos (concluído)** | Tipo Carcaça, modelo de criatura/ecologia, IDs, regiões, frente e assentamento, roteiro de validação | 2 criaturas-piloto Jorō e Gharoz; uma frente-proposta e um assentamento incompleto, todos com fontes/status explícitos |
 | **M1 — Motor de curadoria (núcleo 0.1 concluído)** | Schemas completos, validador de referências, índices de tipos/regiões, compatibilidade com catálogo e CI | Testes passam; nenhuma classe/type externa é sobrescrita; nenhum campo canônico é inferido em lote |
 | **M2 — Arquivo dos Mortos Afogados (7/7 cadastradas; revisão DW pendente)** | Completar 7 fichas originais, com instintos/movimentos DW, vínculos e comportamento | Revisão de 7 criaturas; registrar decisões em changelog; números DW somente quando aprovados |
-| **M3 — Atlas ecológico de regiões, povos e assentamentos (iniciado)** | Foz, Costa Sul, Eldroth, depois demais regiões da lore; cidades, grupos e conflitos | Referências cruzadas, assentamentos DW com tags apenas quando suportadas/curadas |
+| **M3 — Atlas ecológico de regiões, povos e assentamentos (em expansão)** | Foz, Costa Sul, Eldroth, depois demais regiões da lore; cidades, grupos e conflitos | Referências cruzadas, assentamentos DW com tags apenas quando suportadas/curadas |
 | **M4 — Frente viva e encontros** | Perigos, impulsos, presságios, desfechos; tabelas de encontros e habitats em pequenas regiões | 1 frente revisada por vez; propostas distintas de fatos; efeitos de campanha ficam fora do cânone |
 | **M5 — Lotes de importados** | Seleção de 10–25 monstros por ciclo orientada por jogos e por evidência da lore | Tipo Carcaça e ocorrência somente após curadoria; reportar cobertura e pendências |
 | **M6 — Consumidores e assets** | Peren, Mar de Sangue e futuros jogos; pacotes JSON/ESM, índice de sprites/retratos | IDs versionados, adaptadores sem alterar o balanceamento dos jogos |
@@ -135,8 +135,24 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Distinguir fatos regionais de suposta origem de ataques numa caverna específica: origem marcada como `inferido`.
 - [x] Criar schema, validar IDs e referências, publicar índices invertidos de assentamento e estender API JavaScript.
 - [x] Integrar novos JSON e testes ao GitHub Actions; publicação do snapshot verificada ao fim do ciclo.
-- [ ] Ampliar com comunidades insulares tortles/tabaxis após estabelecer localidades concretas e fontes.
+- [x] Registrar comunidades insulares tortles/tabaxis como conjunto coletivo regional, sem inventar ilhas individuais nem fundar uma cidade não documentada.
 - [ ] Estudar sistemas de abastecimento, sazonalidade, nascimento/migração e conflitos de recursos sem dados fabricados.
-- [ ] Construir cenários de mudanças DW (`Want`, `Trade`, `Capture`, `Aid`) como simulações separadas de fatos canônicos.
+- [x] Publicar quatro cenários hipotéticos para `Want`, `Trade`, `Capture` e `Aid`, sem alteração de rótulos DW ou cânone; a adjudicação manual e os eventos de campanha continuam pendentes.
 
 **Método editorial adotado:** registro de habitat agregado não equivale a povoado singular; rótulos Carcaça explicam condições físicas, rótulos DW medem comunidade quando houver dados; incerteza é armazenada, não apagada. Veja `docs/ECOLOGIA_DOS_ASSENTAMENTOS.md`.
+
+## Ciclo 6 — Ilhas e movimentos DW sem mutação (2026-10-26)
+
+- [x] Consultar a ambientação para estabelecer fatos documentados: tortles e tabaxis habitam ilhas ao redor da Costa Sul, preservam tradições monásticas locais, defendem-se, viajam sazonalmente e trabalham como marinheiros.
+- [x] Criar `lugar:ilhas-costa-sul` como área coletiva; nenhuma ilha individual, rota marítima nem população foi inventada.
+- [x] Cadastrar tortles/tabaxis como **dois grupos regionais**, sem deduzir coabitação em cada ilha nem estruturas familiares.
+- [x] Criar `assentamento:comunidades-insulares-costa-sul` com natureza `conjunto_de_comunidades` (não é uma única steading DW).
+- [x] Aplicar os rótulos `rotas_sazonais`, `tradicoes_monasticas_insulares` e `defesa_insular_disciplinada`; prosperidade, população e defesas DW ficam nulas.
+- [x] Registrar fluxo de circulação sazonal sem destino/mercadorias específicos e sem vincular a Portomonte como parceiro comercial.
+- [x] Criar quatro hipóteses de campanha para atualizações DW `Want`, `Trade`, `Capture` e `Aid`, cada uma com condições ainda não confirmadas e decisões para o mestre.
+- [x] Impedir mutações do cânone por schema (const `false`) e por testes do cliente ESM; nenhuma simulação é executada por padrão.
+- [x] Integrar `settlement-scenarios.json` à distribuição e oferecer leitura, busca por movimento e prévia de condições faltantes.
+- [x] Verificar GitHub Actions [#40430220238](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40430220238): validação, testes JavaScript, geração e publicação **sucesso**.
+- [x] Verificar snapshot publicado: **7 criaturas, 3 registros de assentamentos, 14 rótulos, 4 povos regionais, 4 fluxos, 4 cenários hipotéticos**.
+- [ ] Identificar uma ilha e comunidade singular em fonte futura antes de atribuir Prosperidade/População/Defesas DW.
+- [ ] Próximos ciclos: simular abastecimento e mudanças de recursos somente em saves/campanhas, com revisão do autor; distinguir cânone e estado local.
