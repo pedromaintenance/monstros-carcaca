@@ -20,9 +20,6 @@
     ]
   },
   "by_rotulo_territorial": {
-    "rotulo-territorial:acolhida_minoria_deslocada": [
-      "dinamica:refugiados-eldroth-maiores-assentamentos"
-    ],
     "rotulo-territorial:ausencia_de_ocupacao_feerica_direta": [
       "dinamica:nao-ocupacao-direta-alem-sul"
     ],
@@ -31,6 +28,9 @@
     ],
     "rotulo-territorial:liturgia_de_captura": [
       "dinamica:ataques-liturgicos-costa-ilhas"
+    ],
+    "rotulo-territorial:presenca_minoritaria_refugiada": [
+      "dinamica:refugiados-eldroth-maiores-assentamentos"
     ]
   },
   "by_tipo": {
