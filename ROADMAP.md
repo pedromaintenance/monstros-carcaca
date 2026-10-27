@@ -110,6 +110,16 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Ajustar a frente de aventura para três presságios ativos por perigo, mantendo propostas antigas em reserva.
 - [x] Publicar dossiê de ecologia e relações para as sete criaturas, distinguindo ocorrências confirmadas e propostas de encontros.
 - [x] Atualizar inventário da fonte autoral, ROADMAP e diário; manter o importador D&D e Peren intactos.
-- [ ] Validar índices e workflow no GitHub e registrar o resultado final.
+- [x] Validar índices e workflow no GitHub: execução #40423407799 bem-sucedida; catálogo publicado com 7 criaturas.
 - [ ] Avaliar com o autor as sete adaptações e produzir fichas mecânicas específicas de DW.
 - [ ] Iniciar o Marco M3 com assentamentos e povos da Costa Sul em novo lote.
+
+### Fechamento técnico verificado — Ciclo 4
+
+- [x] GitHub Actions [#40423407799](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40423407799): sucesso em validação estrutural, testes Node, geração e publicação de `dist/carcaca/`.
+- [x] Manifesto publicado: **7 criaturas, 3 regiões, 7 lugares, 3 facções, 1 frente e 1 assentamento**.
+- [x] Índice `by_tipo_carcaca`: **3 yokai / 4 demônios**; lampreias corretamente em `demonio`, sem presença inferida no Mar de Sangue.
+- [x] Índice `by_regiao`: **7** criaturas do Arquivo associadas à Foz.
+- [x] Frente: dois perigos, três presságios ativos em cada; catálogo de frentes publicado.
+- [ ] Apresentar as adaptações para revisão narrativa do autor; nenhum monstro possui estatísticas numéricas DW.
+- [ ] Avançar M3 em lotes regionais pequenos, começando por povos e assentamentos da Costa Sul.

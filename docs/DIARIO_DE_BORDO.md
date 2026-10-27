@@ -78,3 +78,16 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 - Escopo protegido: nenhuma atualização no repositório do Peren, nem no catálogo geral de fichas importadas. `dist/carcaca/` é atualizado via Action dedicada.
 
 **Pendente até confirmar CI:** checar workflow e manifesto gerado com sete criaturas.
+
+### Verificação pós-publicação do Ciclo 4
+
+- Commit das fichas e dossiê: `84b1f07994b7febe8af84862a421aa1c1ae8d86d`.
+- Workflow: https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40423407799.
+- Todas as etapas da Action finalizaram em **success**.
+- Verificação independente dos JSON publicados:
+  - `dist/carcaca/manifest.json`: total_criaturas = **7**; 3 regiões, 7 lugares, 3 facções, 1 frente, 1 assentamento.
+  - `dist/carcaca/catalog.json`: as sete fichas estão listadas.
+  - `dist/carcaca/indexes.json`: 4 `demonio`, 3 `yokai`; todas as sete vinculadas à região da foz.
+  - `dist/carcaca/fronts.json`: 2 perigos, 3 presságios ativos em cada.
+- Portanto, **M2 está concluído no que diz respeito ao cadastro e à publicação**; aprovação editorial e mecânica de Dungeon World permanecem distintas e abertas.
+- Próximo foco: M3 — primeiras povoações/povos e conflitos da Costa Sul, com fonte local obrigatória.
