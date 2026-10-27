@@ -90,3 +90,25 @@ def build_hunter_indexes(movements):
       "by_condicao_ficcional":ordered_index(movements,lambda m:[has_fiction(m)]),
       "by_titulo":ordered_index(movements,lambda m:[m["titulo"]]),
     }
+
+def build_rogue_indexes(movements):
+    """Ladino: preserva REQUER direto, OU e referência sem alvo documentado."""
+    def candidate_ids(m):
+        req=m["requisito_estruturado"]
+        if not req:return []
+        if req["tipo"]=="movimento_exato":return [req["movimento_id"]]
+        if req["tipo"]=="qualquer":
+            return [x["movimento_id"] for x in req["itens"] if x["tipo"]=="movimento_exato"]
+        return []
+    return {
+      "by_requisito_tipo":ordered_index(movements,lambda m:[(m["requisito_estruturado"] or {}).get("tipo","nenhum")]),
+      "by_tem_requer":ordered_index(movements,lambda m:["sim" if m["requisito_literal"] else "nao"]),
+      "by_tem_opcoes":ordered_index(movements,lambda m:["sim" if m["opcoes"] else "nao"]),
+      "by_paragrafo":ordered_index(movements,lambda m:[m["paragrafo_docx"]]),
+      "by_requisito_id":ordered_index(movements,candidate_ids),
+      "by_referencia_sem_alvo":ordered_index(movements,lambda m:[
+          (m["requisito_estruturado"] or {}).get("texto_literal")
+          if (m["requisito_estruturado"] or {}).get("tipo")=="referencia_sem_alvo"
+          else None]),
+      "by_titulo":ordered_index(movements,lambda m:[m["titulo"]]),
+    }
