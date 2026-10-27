@@ -822,8 +822,8 @@ def validar_integracao_personagens_hack():
                 for m in cls),
             "Títulos extraídos não são movimentos semanticamente revisados.")
     requeridos={m["id"] for m in cls if m["requisito_literal"]}
-    cobertos=[e["origem_movimento_id"] for e in edges]+
-             [e["origem_movimento_id"] for e in pending]
+    cobertos=([e["origem_movimento_id"] for e in edges] +
+              [e["origem_movimento_id"] for e in pending])
     require(set(cobertos)==requeridos and len(cobertos)==len(set(cobertos)),
             "Todo REQUER deve aparecer uma única vez como candidato ou pendência.")
     para_id={m["id"]:m for m in cls}
