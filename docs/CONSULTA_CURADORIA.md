@@ -53,3 +53,21 @@ Filtros adicionais: `query`, `tipoDnd`, `lugarId`, `faccaoId`, `estado`, `ndMin`
 - O cliente usa consulta linear do catálogo autoral; suficiente para os lotes pequenos. Índices invertidos permitem implementação futura escalável.
 - Para jogar offline, empacotar os JSON num build local; não depender do endereço GitHub durante o jogo.
 - As fichas DW completas (PV, dano, armadura) só serão preenchidas depois de estudo e revisão, nunca convertidas mecanicamente do ND.
+
+## Consultar o ecossistema de assentamentos
+
+Os JSON autorais em `dist/carcaca/` agora incluem `settlement-labels.json`, `settlement-indexes.json`, `peoples.json` e `flows.json`. A lista `settlements.json` guarda os registros com `ecologia_material` e `rotulos_carcaca`.
+
+```js
+const locais = await atlas.searchSettlements({
+  regiaoId:"regiao:costa-sul",
+  rotuloId:"rotulo:lavoura_sobre_pedra"
+});
+const portomonte = await atlas.getSettlement("assentamento:portomonte");
+const fluxos = await atlas.getFlows();
+const tipos = await atlas.getSettlementLabels();
+```
+
+**Filtros:** `searchSettlements({regiaoId,rotuloId,povoId,natureza})`. O campo `natureza` distingue `assentamento_civil` de `rede_de_abrigos`. As distribuições de água, alimento e reprodução **não** são estimadas automaticamente; `status` indica `documentado`, `inferido`, `proposto` ou `incerto`.
+
+Novas referências: `docs/ECOLOGIA_DOS_ASSENTAMENTOS.md` e `schemas/assentamento-carcaca.schema.json`.

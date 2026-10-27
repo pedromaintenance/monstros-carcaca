@@ -91,3 +91,21 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
   - `dist/carcaca/fronts.json`: 2 perigos, 3 presságios ativos em cada.
 - Portanto, **M2 está concluído no que diz respeito ao cadastro e à publicação**; aprovação editorial e mecânica de Dungeon World permanecem distintas e abertas.
 - Próximo foco: M3 — primeiras povoações/povos e conflitos da Costa Sul, com fonte local obrigatória.
+
+## 2026-10-26 · Ciclo 5 — assentamentos como ecossistemas
+
+**Fontes examinadas:** `Ambientação - A Carcaça - Visão Geral.txt` (Portomonte, Costa Sul, Kuo-Toa, Tortles/Tabaxis); Dungeon World SRD, https://www.dungeonworldsrd.com/gamemastering/the-world/ (steadings, tags e regras de atualização).
+
+**Decisão de arquitetura:** a curadoria separa cidade/povoação DW de habitats coletivos e redes de abrigos. Existem 12 rótulos novos de Carcaça — p.ex. água sangrenta purificada, lavoura sobre pedra, templo purificador, habitat de cavernas e guerra litúrgica — que não produzem bônus mecânicos por si.
+
+**Pilotos:**
+- Portomonte: humano, água do Mar de Sangue purificada por templo de Deméter, lavoura sobre pedra, refúgio entre penhascos, comércio costeiro. Não atribuí Prosperidade, População nem Defesas DW.
+- Rede de cavernas kuo-toa: entidade **coletiva**; abrigo em cavernas, devoção a Daegon; relações de ataques da região são documentadas, mas origem específica em cavernas (versus cidades subaquáticas) é **inferida**. Dieta e reprodução desconhecidas.
+
+**Integração:** `data/rotulos_assentamentos_carcaca.json`, `data/povos_carcaca.json`, `data/fluxos_costa_sul.json`, schema, validador e índices em `dist/carcaca/`; API ESM de assentamentos com testes de filtros e conservação de `null`.
+
+**Escopo protegido:** nem os monstros de Peren nem as estatísticas D&D foram alterados. Dados em falta permanecem indeterminados; não se pressupõe que todas as criaturas tenham reprodução biológica.
+
+**Execução:** https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40429102303. Etapas de validação, testes e publicação observadas com conclusão `success`.
+
+**Próximo lote:** aprofundar o ecossistema insular de tortles e tabaxis sem inventar nomes e ligações de comércio; explorar a dinâmica de rótulos e abastecimento em cenários hipotéticos.

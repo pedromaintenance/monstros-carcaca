@@ -56,3 +56,18 @@ node --test tests/carcaca-client.test.mjs
 ```
 
 Os movimentos de DW da curadoria são adaptações ficcionais; mecânicas de DW ainda não foram balanceadas. Veja [documentação de consulta](docs/CONSULTA_CURADORIA.md) e [diário de bordo](docs/DIARIO_DE_BORDO.md).
+
+## Ecossistema de assentamentos (M3, ciclo 5)
+
+Além de monstros, há comunidades, redes de cavernas, refúgios e habitats de várias formas. **Nem todo covil é uma steading do Dungeon World:** a distinção é preservada.
+
+- `data/rotulos_assentamentos_carcaca.json`: 12 rótulos especiais da Carcaça, independentes das tags DW.
+- `data/povos_carcaca.json`: dois grupos regionais sem universalizar costumes.
+- `data/fluxos_costa_sul.json`: água, produção, trocas e incursões com proveniência.
+- `curadoria/assentamentos/`: Portomonte e a rede de cavernas habitadas por Kuo-Toa.
+- `schemas/assentamento-carcaca.schema.json`: esquema do assentamento ecológico.
+- `docs/ECOLOGIA_DOS_ASSENTAMENTOS.md`: conceito, exemplos e limitações.
+
+A camada distribuída em `dist/carcaca/` agora inclui `settlement-labels.json`, `settlement-indexes.json`, `peoples.json` e `flows.json`. O cliente ESM fornece `searchSettlements`, `getSettlement`, `getFlows` e outros métodos.
+
+Alimentação, água potável, população ou reprodução **não são presumidas** quando os textos não as descrevem.

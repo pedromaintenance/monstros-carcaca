@@ -20,7 +20,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 | **M0 — Fundamentos (concluído)** | Tipo Carcaça, modelo de criatura/ecologia, IDs, regiões, frente e assentamento, roteiro de validação | 2 criaturas-piloto Jorō e Gharoz; uma frente-proposta e um assentamento incompleto, todos com fontes/status explícitos |
 | **M1 — Motor de curadoria (núcleo 0.1 concluído)** | Schemas completos, validador de referências, índices de tipos/regiões, compatibilidade com catálogo e CI | Testes passam; nenhuma classe/type externa é sobrescrita; nenhum campo canônico é inferido em lote |
 | **M2 — Arquivo dos Mortos Afogados (7/7 cadastradas; revisão DW pendente)** | Completar 7 fichas originais, com instintos/movimentos DW, vínculos e comportamento | Revisão de 7 criaturas; registrar decisões em changelog; números DW somente quando aprovados |
-| **M3 — Atlas de regiões, povos e assentamentos** | Foz, Costa Sul, Eldroth, depois demais regiões da lore; cidades, grupos e conflitos | Referências cruzadas, assentamentos DW com tags apenas quando suportadas/curadas |
+| **M3 — Atlas ecológico de regiões, povos e assentamentos (iniciado)** | Foz, Costa Sul, Eldroth, depois demais regiões da lore; cidades, grupos e conflitos | Referências cruzadas, assentamentos DW com tags apenas quando suportadas/curadas |
 | **M4 — Frente viva e encontros** | Perigos, impulsos, presságios, desfechos; tabelas de encontros e habitats em pequenas regiões | 1 frente revisada por vez; propostas distintas de fatos; efeitos de campanha ficam fora do cânone |
 | **M5 — Lotes de importados** | Seleção de 10–25 monstros por ciclo orientada por jogos e por evidência da lore | Tipo Carcaça e ocorrência somente após curadoria; reportar cobertura e pendências |
 | **M6 — Consumidores e assets** | Peren, Mar de Sangue e futuros jogos; pacotes JSON/ESM, índice de sprites/retratos | IDs versionados, adaptadores sem alterar o balanceamento dos jogos |
@@ -123,3 +123,20 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Frente: dois perigos, três presságios ativos em cada; catálogo de frentes publicado.
 - [ ] Apresentar as adaptações para revisão narrativa do autor; nenhum monstro possui estatísticas numéricas DW.
 - [ ] Avançar M3 em lotes regionais pequenos, começando por povos e assentamentos da Costa Sul.
+
+## Ciclo 5 — Ecossistema material da Costa Sul (2026-10-26)
+
+- [x] Revisar Dungeon World SRD: Prosperidade, População, Defesas, Recursos, Necessidades, Comércio, Inimizade e atualização das *steadings*.
+- [x] Criar `data/rotulos_assentamentos_carcaca.json`: 12 rótulos próprios, todos separados das tags de DW e sem modificadores automáticos.
+- [x] Introduzir `ecologia_material`: água, alimento, abrigo, continuidade, materiais, resíduos, dependências e lacunas.
+- [x] Curar Portomonte: água do Mar de Sangue purificada no templo de Deméter; agricultura sobre pedra, penhascos e comércio litorâneo.
+- [x] Registrar a **rede coletiva** de cavernas kuo-toa; não inventar uma cidade única nem uma dieta ou política demográfica.
+- [x] Criar duas entradas de povos regionais e três fluxos materiais/rituais (inclusive diferenciação entre captura e alimentação).
+- [x] Distinguir fatos regionais de suposta origem de ataques numa caverna específica: origem marcada como `inferido`.
+- [x] Criar schema, validar IDs e referências, publicar índices invertidos de assentamento e estender API JavaScript.
+- [x] Integrar novos JSON e testes ao GitHub Actions; publicação do snapshot verificada ao fim do ciclo.
+- [ ] Ampliar com comunidades insulares tortles/tabaxis após estabelecer localidades concretas e fontes.
+- [ ] Estudar sistemas de abastecimento, sazonalidade, nascimento/migração e conflitos de recursos sem dados fabricados.
+- [ ] Construir cenários de mudanças DW (`Want`, `Trade`, `Capture`, `Aid`) como simulações separadas de fatos canônicos.
+
+**Método editorial adotado:** registro de habitat agregado não equivale a povoado singular; rótulos Carcaça explicam condições físicas, rótulos DW medem comunidade quando houver dados; incerteza é armazenada, não apagada. Veja `docs/ECOLOGIA_DOS_ASSENTAMENTOS.md`.
