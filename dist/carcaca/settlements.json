@@ -218,17 +218,17 @@
         "alvo_assentamento_id": null,
         "alvo_texto": "Assentamentos costeiros e ilhas, sem vítimas individuais especificadas",
         "tipo": "incursoes_sacrificiais",
-        "status": "documentado",
+        "status": "inferido",
         "fonte": "ambientacao",
-        "nota": "Pessoas capturadas são destinadas ao sacrifício, não se infere consumo alimentar."
+        "nota": "A atividade regional é documentada, mas não é possível atribuí-la exclusivamente à rede de cavernas (existem cidades subaquáticas)."
       },
       {
         "alvo_assentamento_id": null,
         "alvo_texto": "Abissais marinhos associados aos ataques regionais",
         "tipo": "atuacao_conjunta_regional",
-        "status": "documentado",
+        "status": "inferido",
         "fonte": "ambientacao",
-        "nota": "A aliança em incursões não transforma kuo-toa em demônios e não prova coabitação."
+        "nota": "A atividade regional é documentada, mas não é possível atribuí-la exclusivamente à rede de cavernas (existem cidades subaquáticas)."
       }
     ],
     "observacao": "Registro agregado de diversos abrigos, não um assentamento individual fictício. Tags DW de assentamentos devem ser escolhidas somente quando uma comunidade concreta for identificada."
