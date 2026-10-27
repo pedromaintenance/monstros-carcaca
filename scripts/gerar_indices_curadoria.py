@@ -65,9 +65,6 @@ def build_regional_dossiers(regions, guides, places, settlements, creatures, fro
                                   "evento_campanha_id":d["evento_campanha_id"]})
         relations=sorted(relations,key=lambda d:d["id"])
         creatures_index=sorted(
-          {"id":c["id"],"estado_curadoria":c["estado"]}
-          for c in creature_records
-        ) if False else sorted(
           [{"id":c["id"],"estado_curadoria":c["estado"]}
            for c in creature_records],key=lambda x:x["id"]
         )

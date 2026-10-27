@@ -24,6 +24,21 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getCatalog(){return byKey("catalog");}
   async function getIndexes(){return byKey("indexes");}
   async function getRegions(){return byKey("regions");}
+  async function getRegionalDossiers(){return byKey("regional_dossiers");}
+  async function getRegionalDossierIndexes(){return byKey("regional_dossier_indexes");}
+  async function getRegionalDossier(id){
+    if(typeof id!=="string"||!id.startsWith("dossie-regional:"))return null;
+    return (await getRegionalDossiers()).find(d=>d.id===id)??null;
+  }
+  async function searchRegionalDossiers({regiaoId,temaPergunta,semAssentamentosCurados,
+                                        dinamicaId}={}){
+    return (await getRegionalDossiers()).filter(d=>
+      (!regiaoId||d.regiao_id===regiaoId)&&
+      (!temaPergunta||d.perguntas.some(p=>p.tema===temaPergunta))&&
+      (semAssentamentosCurados===undefined||
+       (d.inventario.assentamentos.length===0)===semAssentamentosCurados)&&
+      (!dinamicaId||d.inventario.dinamicas_territoriais.some(x=>x.id===dinamicaId)));
+  }
   async function getTerritorialLabels(){return byKey("territorial_labels");}
   async function getTerritorialDynamics(){return byKey("territorial_dynamics");}
   async function getTerritorialIndexes(){return byKey("territorial_indexes");}
@@ -150,6 +165,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
     ).slice(offset,offset+limit);
   }
   return {getManifest,getCatalog,getIndexes,getRegions,
+          getRegionalDossiers,getRegionalDossier,getRegionalDossierIndexes,
+          searchRegionalDossiers,
           getTerritorialLabels,getTerritorialDynamics,getTerritorialIndexes,
           getTerritorialDynamic,searchTerritorialDynamics,
           getPlaces,getFactions,
