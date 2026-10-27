@@ -1,0 +1,554 @@
+{
+  "by_requisito_tipo": {
+    "categoria": [
+      "movimento-classe:paragrafo-1228"
+    ],
+    "movimento_condicionado": [
+      "movimento-classe:paragrafo-1231"
+    ],
+    "movimento_exato": [
+      "movimento-classe:paragrafo-1120",
+      "movimento-classe:paragrafo-1121",
+      "movimento-classe:paragrafo-1129",
+      "movimento-classe:paragrafo-1131",
+      "movimento-classe:paragrafo-1132",
+      "movimento-classe:paragrafo-1133",
+      "movimento-classe:paragrafo-1140",
+      "movimento-classe:paragrafo-1144",
+      "movimento-classe:paragrafo-1145",
+      "movimento-classe:paragrafo-1162",
+      "movimento-classe:paragrafo-1170",
+      "movimento-classe:paragrafo-1171",
+      "movimento-classe:paragrafo-1178",
+      "movimento-classe:paragrafo-1179",
+      "movimento-classe:paragrafo-1198",
+      "movimento-classe:paragrafo-1199",
+      "movimento-classe:paragrafo-1206",
+      "movimento-classe:paragrafo-1212",
+      "movimento-classe:paragrafo-1213",
+      "movimento-classe:paragrafo-1220",
+      "movimento-classe:paragrafo-1221",
+      "movimento-classe:paragrafo-1222",
+      "movimento-classe:paragrafo-1247",
+      "movimento-classe:paragrafo-1258",
+      "movimento-classe:paragrafo-1275",
+      "movimento-classe:paragrafo-1286",
+      "movimento-classe:paragrafo-1288"
+    ],
+    "nenhum": [
+      "movimento-classe:paragrafo-1047",
+      "movimento-classe:paragrafo-1048",
+      "movimento-classe:paragrafo-1054",
+      "movimento-classe:paragrafo-1061",
+      "movimento-classe:paragrafo-1067",
+      "movimento-classe:paragrafo-1072",
+      "movimento-classe:paragrafo-1077",
+      "movimento-classe:paragrafo-1082",
+      "movimento-classe:paragrafo-1083",
+      "movimento-classe:paragrafo-1084",
+      "movimento-classe:paragrafo-1085",
+      "movimento-classe:paragrafo-1086",
+      "movimento-classe:paragrafo-1090",
+      "movimento-classe:paragrafo-1095",
+      "movimento-classe:paragrafo-1098",
+      "movimento-classe:paragrafo-1099",
+      "movimento-classe:paragrafo-1107",
+      "movimento-classe:paragrafo-1112",
+      "movimento-classe:paragrafo-1119",
+      "movimento-classe:paragrafo-1128",
+      "movimento-classe:paragrafo-1130",
+      "movimento-classe:paragrafo-1138",
+      "movimento-classe:paragrafo-1139",
+      "movimento-classe:paragrafo-1142",
+      "movimento-classe:paragrafo-1143",
+      "movimento-classe:paragrafo-1152",
+      "movimento-classe:paragrafo-1160",
+      "movimento-classe:paragrafo-1161",
+      "movimento-classe:paragrafo-1163",
+      "movimento-classe:paragrafo-1169",
+      "movimento-classe:paragrafo-1173",
+      "movimento-classe:paragrafo-1180",
+      "movimento-classe:paragrafo-1185",
+      "movimento-classe:paragrafo-1193",
+      "movimento-classe:paragrafo-1201",
+      "movimento-classe:paragrafo-1215",
+      "movimento-classe:paragrafo-1223",
+      "movimento-classe:paragrafo-1239",
+      "movimento-classe:paragrafo-1246",
+      "movimento-classe:paragrafo-1248",
+      "movimento-classe:paragrafo-1267",
+      "movimento-classe:paragrafo-1273",
+      "movimento-classe:paragrafo-1274",
+      "movimento-classe:paragrafo-1281",
+      "movimento-classe:paragrafo-1282",
+      "movimento-classe:paragrafo-1287",
+      "movimento-classe:paragrafo-1289"
+    ],
+    "todos": [
+      "movimento-classe:paragrafo-1229"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-1047",
+      "movimento-classe:paragrafo-1048",
+      "movimento-classe:paragrafo-1054",
+      "movimento-classe:paragrafo-1061",
+      "movimento-classe:paragrafo-1067",
+      "movimento-classe:paragrafo-1072",
+      "movimento-classe:paragrafo-1077",
+      "movimento-classe:paragrafo-1082",
+      "movimento-classe:paragrafo-1083",
+      "movimento-classe:paragrafo-1084",
+      "movimento-classe:paragrafo-1085",
+      "movimento-classe:paragrafo-1086",
+      "movimento-classe:paragrafo-1090",
+      "movimento-classe:paragrafo-1095",
+      "movimento-classe:paragrafo-1098",
+      "movimento-classe:paragrafo-1099",
+      "movimento-classe:paragrafo-1107",
+      "movimento-classe:paragrafo-1112",
+      "movimento-classe:paragrafo-1119",
+      "movimento-classe:paragrafo-1128",
+      "movimento-classe:paragrafo-1130",
+      "movimento-classe:paragrafo-1138",
+      "movimento-classe:paragrafo-1139",
+      "movimento-classe:paragrafo-1142",
+      "movimento-classe:paragrafo-1143",
+      "movimento-classe:paragrafo-1152",
+      "movimento-classe:paragrafo-1160",
+      "movimento-classe:paragrafo-1161",
+      "movimento-classe:paragrafo-1163",
+      "movimento-classe:paragrafo-1169",
+      "movimento-classe:paragrafo-1173",
+      "movimento-classe:paragrafo-1180",
+      "movimento-classe:paragrafo-1185",
+      "movimento-classe:paragrafo-1193",
+      "movimento-classe:paragrafo-1201",
+      "movimento-classe:paragrafo-1215",
+      "movimento-classe:paragrafo-1223",
+      "movimento-classe:paragrafo-1239",
+      "movimento-classe:paragrafo-1246",
+      "movimento-classe:paragrafo-1248",
+      "movimento-classe:paragrafo-1267",
+      "movimento-classe:paragrafo-1273",
+      "movimento-classe:paragrafo-1274",
+      "movimento-classe:paragrafo-1281",
+      "movimento-classe:paragrafo-1282",
+      "movimento-classe:paragrafo-1287",
+      "movimento-classe:paragrafo-1289"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-1120",
+      "movimento-classe:paragrafo-1121",
+      "movimento-classe:paragrafo-1129",
+      "movimento-classe:paragrafo-1131",
+      "movimento-classe:paragrafo-1132",
+      "movimento-classe:paragrafo-1133",
+      "movimento-classe:paragrafo-1140",
+      "movimento-classe:paragrafo-1144",
+      "movimento-classe:paragrafo-1145",
+      "movimento-classe:paragrafo-1162",
+      "movimento-classe:paragrafo-1170",
+      "movimento-classe:paragrafo-1171",
+      "movimento-classe:paragrafo-1178",
+      "movimento-classe:paragrafo-1179",
+      "movimento-classe:paragrafo-1198",
+      "movimento-classe:paragrafo-1199",
+      "movimento-classe:paragrafo-1206",
+      "movimento-classe:paragrafo-1212",
+      "movimento-classe:paragrafo-1213",
+      "movimento-classe:paragrafo-1220",
+      "movimento-classe:paragrafo-1221",
+      "movimento-classe:paragrafo-1222",
+      "movimento-classe:paragrafo-1228",
+      "movimento-classe:paragrafo-1229",
+      "movimento-classe:paragrafo-1231",
+      "movimento-classe:paragrafo-1247",
+      "movimento-classe:paragrafo-1258",
+      "movimento-classe:paragrafo-1275",
+      "movimento-classe:paragrafo-1286",
+      "movimento-classe:paragrafo-1288"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-1047",
+      "movimento-classe:paragrafo-1082",
+      "movimento-classe:paragrafo-1083",
+      "movimento-classe:paragrafo-1084",
+      "movimento-classe:paragrafo-1085",
+      "movimento-classe:paragrafo-1098",
+      "movimento-classe:paragrafo-1119",
+      "movimento-classe:paragrafo-1120",
+      "movimento-classe:paragrafo-1128",
+      "movimento-classe:paragrafo-1129",
+      "movimento-classe:paragrafo-1130",
+      "movimento-classe:paragrafo-1131",
+      "movimento-classe:paragrafo-1132",
+      "movimento-classe:paragrafo-1138",
+      "movimento-classe:paragrafo-1139",
+      "movimento-classe:paragrafo-1140",
+      "movimento-classe:paragrafo-1142",
+      "movimento-classe:paragrafo-1143",
+      "movimento-classe:paragrafo-1144",
+      "movimento-classe:paragrafo-1160",
+      "movimento-classe:paragrafo-1161",
+      "movimento-classe:paragrafo-1162",
+      "movimento-classe:paragrafo-1169",
+      "movimento-classe:paragrafo-1170",
+      "movimento-classe:paragrafo-1171",
+      "movimento-classe:paragrafo-1178",
+      "movimento-classe:paragrafo-1179",
+      "movimento-classe:paragrafo-1198",
+      "movimento-classe:paragrafo-1199",
+      "movimento-classe:paragrafo-1212",
+      "movimento-classe:paragrafo-1213",
+      "movimento-classe:paragrafo-1220",
+      "movimento-classe:paragrafo-1221",
+      "movimento-classe:paragrafo-1222",
+      "movimento-classe:paragrafo-1228",
+      "movimento-classe:paragrafo-1229",
+      "movimento-classe:paragrafo-1246",
+      "movimento-classe:paragrafo-1247",
+      "movimento-classe:paragrafo-1273",
+      "movimento-classe:paragrafo-1274",
+      "movimento-classe:paragrafo-1281",
+      "movimento-classe:paragrafo-1286",
+      "movimento-classe:paragrafo-1287",
+      "movimento-classe:paragrafo-1288",
+      "movimento-classe:paragrafo-1289"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-1048",
+      "movimento-classe:paragrafo-1054",
+      "movimento-classe:paragrafo-1061",
+      "movimento-classe:paragrafo-1067",
+      "movimento-classe:paragrafo-1072",
+      "movimento-classe:paragrafo-1077",
+      "movimento-classe:paragrafo-1086",
+      "movimento-classe:paragrafo-1090",
+      "movimento-classe:paragrafo-1095",
+      "movimento-classe:paragrafo-1099",
+      "movimento-classe:paragrafo-1107",
+      "movimento-classe:paragrafo-1112",
+      "movimento-classe:paragrafo-1121",
+      "movimento-classe:paragrafo-1133",
+      "movimento-classe:paragrafo-1145",
+      "movimento-classe:paragrafo-1152",
+      "movimento-classe:paragrafo-1163",
+      "movimento-classe:paragrafo-1173",
+      "movimento-classe:paragrafo-1180",
+      "movimento-classe:paragrafo-1185",
+      "movimento-classe:paragrafo-1193",
+      "movimento-classe:paragrafo-1201",
+      "movimento-classe:paragrafo-1206",
+      "movimento-classe:paragrafo-1215",
+      "movimento-classe:paragrafo-1223",
+      "movimento-classe:paragrafo-1231",
+      "movimento-classe:paragrafo-1239",
+      "movimento-classe:paragrafo-1248",
+      "movimento-classe:paragrafo-1258",
+      "movimento-classe:paragrafo-1267",
+      "movimento-classe:paragrafo-1275",
+      "movimento-classe:paragrafo-1282"
+    ]
+  },
+  "by_paragrafo": {
+    "1047": [
+      "movimento-classe:paragrafo-1047"
+    ],
+    "1048": [
+      "movimento-classe:paragrafo-1048"
+    ],
+    "1054": [
+      "movimento-classe:paragrafo-1054"
+    ],
+    "1061": [
+      "movimento-classe:paragrafo-1061"
+    ],
+    "1067": [
+      "movimento-classe:paragrafo-1067"
+    ],
+    "1072": [
+      "movimento-classe:paragrafo-1072"
+    ],
+    "1077": [
+      "movimento-classe:paragrafo-1077"
+    ],
+    "1082": [
+      "movimento-classe:paragrafo-1082"
+    ],
+    "1083": [
+      "movimento-classe:paragrafo-1083"
+    ],
+    "1084": [
+      "movimento-classe:paragrafo-1084"
+    ],
+    "1085": [
+      "movimento-classe:paragrafo-1085"
+    ],
+    "1086": [
+      "movimento-classe:paragrafo-1086"
+    ],
+    "1090": [
+      "movimento-classe:paragrafo-1090"
+    ],
+    "1095": [
+      "movimento-classe:paragrafo-1095"
+    ],
+    "1098": [
+      "movimento-classe:paragrafo-1098"
+    ],
+    "1099": [
+      "movimento-classe:paragrafo-1099"
+    ],
+    "1107": [
+      "movimento-classe:paragrafo-1107"
+    ],
+    "1112": [
+      "movimento-classe:paragrafo-1112"
+    ],
+    "1119": [
+      "movimento-classe:paragrafo-1119"
+    ],
+    "1120": [
+      "movimento-classe:paragrafo-1120"
+    ],
+    "1121": [
+      "movimento-classe:paragrafo-1121"
+    ],
+    "1128": [
+      "movimento-classe:paragrafo-1128"
+    ],
+    "1129": [
+      "movimento-classe:paragrafo-1129"
+    ],
+    "1130": [
+      "movimento-classe:paragrafo-1130"
+    ],
+    "1131": [
+      "movimento-classe:paragrafo-1131"
+    ],
+    "1132": [
+      "movimento-classe:paragrafo-1132"
+    ],
+    "1133": [
+      "movimento-classe:paragrafo-1133"
+    ],
+    "1138": [
+      "movimento-classe:paragrafo-1138"
+    ],
+    "1139": [
+      "movimento-classe:paragrafo-1139"
+    ],
+    "1140": [
+      "movimento-classe:paragrafo-1140"
+    ],
+    "1142": [
+      "movimento-classe:paragrafo-1142"
+    ],
+    "1143": [
+      "movimento-classe:paragrafo-1143"
+    ],
+    "1144": [
+      "movimento-classe:paragrafo-1144"
+    ],
+    "1145": [
+      "movimento-classe:paragrafo-1145"
+    ],
+    "1152": [
+      "movimento-classe:paragrafo-1152"
+    ],
+    "1160": [
+      "movimento-classe:paragrafo-1160"
+    ],
+    "1161": [
+      "movimento-classe:paragrafo-1161"
+    ],
+    "1162": [
+      "movimento-classe:paragrafo-1162"
+    ],
+    "1163": [
+      "movimento-classe:paragrafo-1163"
+    ],
+    "1169": [
+      "movimento-classe:paragrafo-1169"
+    ],
+    "1170": [
+      "movimento-classe:paragrafo-1170"
+    ],
+    "1171": [
+      "movimento-classe:paragrafo-1171"
+    ],
+    "1173": [
+      "movimento-classe:paragrafo-1173"
+    ],
+    "1178": [
+      "movimento-classe:paragrafo-1178"
+    ],
+    "1179": [
+      "movimento-classe:paragrafo-1179"
+    ],
+    "1180": [
+      "movimento-classe:paragrafo-1180"
+    ],
+    "1185": [
+      "movimento-classe:paragrafo-1185"
+    ],
+    "1193": [
+      "movimento-classe:paragrafo-1193"
+    ],
+    "1198": [
+      "movimento-classe:paragrafo-1198"
+    ],
+    "1199": [
+      "movimento-classe:paragrafo-1199"
+    ],
+    "1201": [
+      "movimento-classe:paragrafo-1201"
+    ],
+    "1206": [
+      "movimento-classe:paragrafo-1206"
+    ],
+    "1212": [
+      "movimento-classe:paragrafo-1212"
+    ],
+    "1213": [
+      "movimento-classe:paragrafo-1213"
+    ],
+    "1215": [
+      "movimento-classe:paragrafo-1215"
+    ],
+    "1220": [
+      "movimento-classe:paragrafo-1220"
+    ],
+    "1221": [
+      "movimento-classe:paragrafo-1221"
+    ],
+    "1222": [
+      "movimento-classe:paragrafo-1222"
+    ],
+    "1223": [
+      "movimento-classe:paragrafo-1223"
+    ],
+    "1228": [
+      "movimento-classe:paragrafo-1228"
+    ],
+    "1229": [
+      "movimento-classe:paragrafo-1229"
+    ],
+    "1231": [
+      "movimento-classe:paragrafo-1231"
+    ],
+    "1239": [
+      "movimento-classe:paragrafo-1239"
+    ],
+    "1246": [
+      "movimento-classe:paragrafo-1246"
+    ],
+    "1247": [
+      "movimento-classe:paragrafo-1247"
+    ],
+    "1248": [
+      "movimento-classe:paragrafo-1248"
+    ],
+    "1258": [
+      "movimento-classe:paragrafo-1258"
+    ],
+    "1267": [
+      "movimento-classe:paragrafo-1267"
+    ],
+    "1273": [
+      "movimento-classe:paragrafo-1273"
+    ],
+    "1274": [
+      "movimento-classe:paragrafo-1274"
+    ],
+    "1275": [
+      "movimento-classe:paragrafo-1275"
+    ],
+    "1281": [
+      "movimento-classe:paragrafo-1281"
+    ],
+    "1282": [
+      "movimento-classe:paragrafo-1282"
+    ],
+    "1286": [
+      "movimento-classe:paragrafo-1286"
+    ],
+    "1287": [
+      "movimento-classe:paragrafo-1287"
+    ],
+    "1288": [
+      "movimento-classe:paragrafo-1288"
+    ],
+    "1289": [
+      "movimento-classe:paragrafo-1289"
+    ]
+  },
+  "by_requisito_id": {
+    "movimento-classe:paragrafo-1047": [
+      "movimento-classe:paragrafo-1120",
+      "movimento-classe:paragrafo-1121",
+      "movimento-classe:paragrafo-1231"
+    ],
+    "movimento-classe:paragrafo-1048": [
+      "movimento-classe:paragrafo-1133",
+      "movimento-classe:paragrafo-1145"
+    ],
+    "movimento-classe:paragrafo-1054": [
+      "movimento-classe:paragrafo-1144"
+    ],
+    "movimento-classe:paragrafo-1061": [
+      "movimento-classe:paragrafo-1258"
+    ],
+    "movimento-classe:paragrafo-1077": [
+      "movimento-classe:paragrafo-1131",
+      "movimento-classe:paragrafo-1132",
+      "movimento-classe:paragrafo-1247"
+    ],
+    "movimento-classe:paragrafo-1086": [
+      "movimento-classe:paragrafo-1178"
+    ],
+    "movimento-classe:paragrafo-1098": [
+      "movimento-classe:paragrafo-1140",
+      "movimento-classe:paragrafo-1162"
+    ],
+    "movimento-classe:paragrafo-1099": [
+      "movimento-classe:paragrafo-1170"
+    ],
+    "movimento-classe:paragrafo-1128": [
+      "movimento-classe:paragrafo-1129"
+    ],
+    "movimento-classe:paragrafo-1163": [
+      "movimento-classe:paragrafo-1171"
+    ],
+    "movimento-classe:paragrafo-1173": [
+      "movimento-classe:paragrafo-1179"
+    ],
+    "movimento-classe:paragrafo-1185": [
+      "movimento-classe:paragrafo-1198",
+      "movimento-classe:paragrafo-1199"
+    ],
+    "movimento-classe:paragrafo-1201": [
+      "movimento-classe:paragrafo-1206",
+      "movimento-classe:paragrafo-1212",
+      "movimento-classe:paragrafo-1213"
+    ],
+    "movimento-classe:paragrafo-1215": [
+      "movimento-classe:paragrafo-1220",
+      "movimento-classe:paragrafo-1221",
+      "movimento-classe:paragrafo-1222"
+    ],
+    "movimento-classe:paragrafo-1273": [
+      "movimento-classe:paragrafo-1275"
+    ],
+    "movimento-classe:paragrafo-1282": [
+      "movimento-classe:paragrafo-1286"
+    ],
+    "movimento-classe:paragrafo-1287": [
+      "movimento-classe:paragrafo-1288"
+    ]
+  }
+}
