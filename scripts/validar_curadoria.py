@@ -1209,6 +1209,100 @@ def validar_ladino_integral():
           " um OU e Perfil sem alvo. Sem aplicação automática.")
 
 
+def validar_bardo_integral():
+    """Verifica 32 movimentos de Bardo sem converter REQUER cardinal em vínculo único."""
+    from hack_movimentos_personagem import build_bard_indexes
+    raw=load("data/lore/hack-carcaca-dw-bardo-integrais.json")
+    inv=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(raw["grupo"]=="BARDO" and raw["fonte_sha256"]==inv["fonte_sha256"],
+            "A origem documental do Bardo não confere.")
+    moves=raw["movimentos"]
+    catalog={x["id"]:x for x in inv["movimentos"] if x["grupo"]=="BARDO"}
+    all_catalog={x["id"]:x for x in inv["movimentos"]}
+    require(len(moves)==len(catalog)==32 and len(unique(moves,"bardo"))==32,
+            "São esperados 32 movimentos únicos de Bardo.")
+    require(moves[0]["paragrafo_docx"]==1753 and moves[-1]["paragrafo_docx"]==1851
+            and [x["paragrafo_docx"] for x in moves]==
+                sorted(x["paragrafo_docx"] for x in moves),
+            "A posição documental dos movimentos mudou.")
+    expected={
+        "total_movimentos":32,"total_com_requer":5,"total_vinculos_exatos":4,
+        "total_requer_composto_ou_condicional":1,
+        "total_opcoes":34,"total_partes":103
+    }
+    require(raw["integridade"]==expected,"Contagens de Bardo não correspondem ao DOCX.")
+    occupied=set();direct={};special=[]
+    for m in moves:
+        origin=catalog.get(m["id"])
+        require(origin and m["titulo"]==origin["titulo"] and
+                m["paragrafo_docx"]==origin["paragrafo_docx"] and
+                m["requisito_literal"]==origin["requisito_literal"],
+                "Inventário e transcrição divergentes: "+m["id"])
+        require(m["estado"]=="transcricao_integral_sem_revisao_mecanica" and
+                m["texto_integral_conferido"] is True and
+                m["aplicacao_canonica"] is False,
+                "Transcrição não é homologação do movimento.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
+                "Texto original do movimento perdeu trechos.")
+        require(m["opcoes"]==[
+            {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+            for p in m["partes"] if p["tipo"]=="opcao"],
+                "As opções não conferem com o documento.")
+        require(m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"] and
+                m["partes"][0]["tipo"]=="corpo",
+                "Movimento sem parágrafo inicial de corpo.")
+        for part in m["partes"]:
+            require(part["paragrafo_docx"] not in occupied and part["texto"],
+                    "Parágrafo duplicado ou vazio na transcrição de Bardo.")
+            occupied.add(part["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),
+                "Não inventar requisito sem REQUER explícito.")
+        if not req:continue
+        if req["tipo"]=="movimento_exato":
+            require(req["movimento_id"] in all_catalog and
+                    req["titulo_requerido"]==all_catalog[req["movimento_id"]]["titulo"] and
+                    req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "Alvo direto não corresponde ao requisito literal.")
+            direct[m["id"]]=req["movimento_id"]
+        elif req["tipo"]=="todos":
+            require(m["paragrafo_docx"]==1843 and
+                    m["requisito_literal"]==
+                        "Arte Arcana e dois outros Movimentos de Bardo" and
+                    req["operador_literal"]=="e" and len(req["itens"])==2 and
+                    req["status"]=="interpretacao_literal_pendente_homologacao",
+                    "Canção que Fez o Mundo exige REQUER cumulativo.")
+            exact,quantity=req["itens"]
+            require(exact["tipo"]=="movimento_exato" and
+                    exact["movimento_id"]=="movimento-classe:paragrafo-1753" and
+                    quantity["tipo"]=="quantidade_movimentos_grupo" and
+                    quantity["grupo"]=="BARDO" and quantity["quantidade_minima"]==2 and
+                    set(quantity["excluir_movimentos_ids"])==
+                        {"movimento-classe:paragrafo-1753",m["id"]} and
+                    quantity["status"]=="quantidade_por_titulos_candidatos_pendente_homologacao",
+                    "Arte Arcana deve somar DOIS OUTROS movimentos distintos, sem dupla contagem.")
+            special.append(m["id"])
+        else:raise AssertionError("REQUER inesperado de Bardo: "+req["tipo"])
+    require(len(occupied)==103 and sum(len(m["opcoes"]) for m in moves)==34 and
+            len(direct)==4 and special==["movimento-classe:paragrafo-1843"],
+            "Trechos, opções ou requisitos perdidos no Bardo.")
+    for source in direct:
+        seen={source};node=source
+        while node in direct:
+            node=direct[node]
+            require(node not in seen,"Dependência cíclica nos REQUER de Bardo.")
+            seen.add(node)
+    ix=build_bard_indexes(moves)
+    require(len(ix["by_requisito_tipo"]["movimento_exato"])==4 and
+            ix["by_requisito_tipo"]["todos"]==special and
+            ix["by_quantidade_minima_grupo"]["BARDO:2"]==special and
+            "movimento-classe:paragrafo-1843" in
+               ix["by_requisito_id"]["movimento-classe:paragrafo-1753"],
+            "Índices de Bardo perderam a cardinalidade do requisito.")
+    print("Bardo: 32 movimentos integrais, 34 opções, 103 partes, "
+          "4 REQUER diretos e 1 cardinal, sem promoção ao cânone.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1309,6 +1403,7 @@ def main():
     validar_barbaro_integral()
     validar_cacador_integral()
     validar_ladino_integral()
+    validar_bardo_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
