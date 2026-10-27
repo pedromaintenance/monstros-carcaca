@@ -792,7 +792,7 @@ def validar_integracao_personagens_hack():
         require(m["categoria"]=="povo" and m["estado"]=="transcricao_integral_sem_revisao_mecanica" and
                 m["aplicacao_canonica"] is False and m["requisito_literal"] is None,
                 "Movimentos de povo não podem ser aplicados ou ganhar REQUER por inferência.")
-        require(m["texto_original"]=="\\n".join(p["texto"] for p in m["partes"]),
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
                 "O texto integral deve ser a concatenação literal das partes do DOCX.")
         require(m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"] and
                 m["partes"][0]["tipo"]=="corpo",
