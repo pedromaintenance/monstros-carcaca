@@ -199,3 +199,22 @@ def build_cleric_indexes(moves):
       "by_requisito_id":ordered_index(moves,req_ids),
       "by_raiz_dependencia":ordered_index(moves,raiz)
     }
+
+
+def build_druid_indexes(moves):
+    """Indexa todos os componentes de REQUER, sem simplificar a conjuncao E."""
+    def componentes(m):
+        req=m["requisito_estruturado"]
+        if not req:return []
+        if req["tipo"]=="movimento_exato":return [req["movimento_id"]]
+        if req["tipo"]=="todos":
+            return [x["movimento_id"] for x in req["itens"] if x["tipo"]=="movimento_exato"]
+        raise ValueError("Tipo inesperado de REQUER em Druida")
+    return {
+      "by_titulo":ordered_index(moves,lambda m:[m["titulo"]]),
+      "by_paragrafo":ordered_index(moves,lambda m:[m["paragrafo_docx"]]),
+      "by_tem_requer":ordered_index(moves,lambda m:["sim" if m["requisito_literal"] else "nao"]),
+      "by_tem_opcoes":ordered_index(moves,lambda m:["sim" if m["opcoes"] else "nao"]),
+      "by_requisito_tipo":ordered_index(moves,lambda m:[(m["requisito_estruturado"] or {}).get("tipo","nenhum")]),
+      "by_requisito_id":ordered_index(moves,componentes)
+    }

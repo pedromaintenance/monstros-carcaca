@@ -1548,6 +1548,97 @@ def validar_clerigo_integral():
             "PELE ESCRITA exige RUNA VIVA, não apenas RUNA.")
     print("Clérigo: 37 movimentos, 26 opções, 68 partes e 19 REQUER diretos; seis raízes, sem aplicação canônica.")
 
+
+def validar_druida_integral():
+    """Valida 27 movimentos, suas opções e conjunção de Forma Primordial."""
+    from hack_movimentos_personagem import build_druid_indexes
+    raw=load("data/lore/hack-carcaca-dw-druida-integrais.json")
+    inv=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(raw["fonte_sha256"]==inv["fonte_sha256"] and raw["grupo"]=="DRUIDA",
+            "Fonte ou grupo DRUIDA inconsistentes.")
+    moves=raw["movimentos"]
+    listed={m["id"]:m for m in inv["movimentos"] if m["grupo"]=="DRUIDA"}
+    require(len(moves)==len(listed)==27 and len(unique(moves,"druida"))==27,
+            "Druida precisa manter 27 movimentos únicos.")
+    require(moves[0]["paragrafo_docx"]==2130 and moves[-1]["paragrafo_docx"]==2199
+            and [m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves),
+            "Ordem documental Druida divergente.")
+    expected={"total_movimentos":27,"total_com_requer":13,"total_vinculos_exatos":12,
+              "total_requer_composto_ou_condicional":1,"total_opcoes":42,"total_partes":74}
+    require(raw["integridade"]==expected,"Contagens integrais de Druida divergentes.")
+    by_id={m["id"]:m for m in moves}
+    used=set();connections={};special=[]
+    for m in moves:
+        old=listed.get(m["id"])
+        require(old is not None and m["titulo"]==old["titulo"]
+                and m["paragrafo_docx"]==old["paragrafo_docx"]
+                and m["requisito_literal"]==old["requisito_literal"],
+                "Título ou REQUER divergente no Druida.")
+        require(m["texto_integral_conferido"] is True and
+                m["aplicacao_canonica"] is False and
+                m["estado"]=="transcricao_integral_sem_revisao_mecanica",
+                "Movimento de Druida não pode ser promovido automaticamente.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
+                "Texto Druida não corresponde às partes.")
+        require(m["opcoes"]==[
+                {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+                for p in m["partes"] if p["tipo"]=="opcao"],
+                "Opções de Druida não correspondem às listas.")
+        require(m["partes"][0]["tipo"]=="corpo"
+                and m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"],
+                "Corpo de Druida não corresponde à âncora.")
+        for p in m["partes"]:
+            require(p["paragrafo_docx"] not in used and bool(p["texto"]),
+                    "Parágrafo de Druida duplicado ou vazio.")
+            used.add(p["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]), "REQUER inferido ou perdido.")
+        if not req:continue
+        if req["tipo"]=="movimento_exato":
+            require(req["movimento_id"] in by_id
+                    and req["titulo_requerido"]==by_id[req["movimento_id"]]["titulo"]
+                    and req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "REQUER direto inconsistente ou homologado.")
+            connections[m["id"]]=[req["movimento_id"]]
+        elif req["tipo"]=="todos":
+            require(m["id"]=="movimento-classe:paragrafo-2146"
+                    and m["requisito_literal"]=="Metamorfose e Maestria Elemental"
+                    and req["operador_literal"]=="e"
+                    and req["status"]=="interpretacao_literal_pendente_homologacao",
+                    "FORMA PRIMORDIAL exige conjunção de dois movimentos.")
+            itens=req["itens"]
+            require([x["tipo"] for x in itens]==["movimento_exato","movimento_exato"]
+                    and [x["movimento_id"] for x in itens]==[
+                        "movimento-classe:paragrafo-2130","movimento-classe:paragrafo-2131"]
+                    and [x["titulo_requerido"] for x in itens]==["METAMORFOSE","MAESTRIA ELEMENTAL"],
+                    "Elementos de FORMA PRIMORDIAL perdidos.")
+            connections[m["id"]]=[x["movimento_id"] for x in itens]
+            special.append(m["id"])
+        else:
+            raise AssertionError("Tipo inesperado de REQUER em Druida.")
+    require(len(used)==74 and sum(len(m["opcoes"]) for m in moves)==42
+            and len(connections)==13 and special==["movimento-classe:paragrafo-2146"],
+            "Integridade de partes ou dependências Druida alterada.")
+    def visitar(node,active):
+        require(node not in active,"Ciclo em REQUER de Druida.")
+        for child in connections.get(node,[]):
+            require(child in by_id,"REQUER com alvo fora de Druida.")
+            visitar(child,active|{node})
+    for node in connections:
+        visitar(node,set())
+    ix=build_druid_indexes(moves)
+    require(len(ix["by_tem_requer"]["sim"])==13
+            and len(ix["by_requisito_tipo"]["movimento_exato"])==12
+            and ix["by_requisito_tipo"]["todos"]==["movimento-classe:paragrafo-2146"],
+            "Índices Druida não preservam REQUER composto.")
+    expected_refs={"movimento-classe:paragrafo-2130":8,
+                   "movimento-classe:paragrafo-2131":1,
+                   "movimento-classe:paragrafo-2137":3,
+                   "movimento-classe:paragrafo-2141":2}
+    require({k:len(v) for k,v in ix["by_requisito_id"].items()}==expected_refs,
+            "Ramos druídicos não correspondem ao manuscrito.")
+    print("Druida: 27 movimentos, 42 opções, 74 partes; 12 REQUER diretos e 1 conjunção. Zero promoção canônica.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1652,6 +1743,7 @@ def main():
     validar_artista_marcial_integral()
     validar_paladino_integral()
     validar_clerigo_integral()
+    validar_druida_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

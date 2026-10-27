@@ -60,6 +60,59 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getDruidMovements(){return byKey("hack_druid_movements");}
+  async function getDruidMovementIndexes(){return byKey("hack_druid_movement_indexes");}
+  async function getDruidMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    return (await getDruidMovements()).find(m=>m.id===id)??null;
+  }
+  async function searchDruidMovements({titulo,query,requer,comRequer,comOpcoes,tipoRequisito}={}){
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return (await getDruidMovements()).filter(m=>
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (!requer||norm(m.requisito_literal).includes(norm(requer)))&&
+      (comRequer===undefined||Boolean(m.requisito_literal)===comRequer)&&
+      (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
+      (!tipoRequisito||(m.requisito_estruturado?.tipo??"nenhum")===tipoRequisito));
+  }
+  async function getDruidRequirementPreview(id,{movimentosPossuidos=[]}={}){
+    if(!Array.isArray(movimentosPossuidos))throw new TypeError("movimentosPossuidos deve ser array");
+    const moves=await getDruidMovements(),byId=new Map(moves.map(m=>[m.id,m]));
+    const root=byId.get(id);if(!root)return null;
+    const held=new Set(movimentosPossuidos),seen=new Set();
+    const requisitos=[];
+    function check(m,stack){
+      if(stack.has(m.id))throw new Error("Ciclo em REQUER do Druida");
+      const req=m.requisito_estruturado;
+      if(!req)return;
+      const ids=req.tipo==="movimento_exato"?[req.movimento_id]:
+        req.tipo==="todos"?req.itens.map(i=>i.movimento_id):null;
+      if(!ids)throw new Error("Tipo de REQUER druídico não reconhecido");
+      for(const targetId of ids){
+        const target=byId.get(targetId);
+        if(!target)throw new Error("REQUER druídico sem alvo");
+        if(!seen.has(targetId)){
+          seen.add(targetId);
+          requisitos.push({movimento_id:targetId,titulo:target.titulo,
+            presente_na_lista:held.has(targetId)});
+          check(target,new Set([...stack,m.id]));
+        }
+      }
+    }
+    check(root,new Set());
+    return {movimento_id:id,requisito_literal:root.requisito_literal,
+      requisito_estruturado:root.requisito_estruturado,
+      operador_literal:root.requisito_estruturado?.operador_literal??null,
+      componentes_requeridos:requisitos,
+      componentes_identificados_presentes:requisitos.every(x=>x.presente_na_lista),
+      verificacao_estrutural:!root.requisito_estruturado?"sem_requer_literal":
+        requisitos.every(x=>x.presente_na_lista)?"componentes_identificados_presentes":
+        "componentes_ausentes",
+      habilitado_para_compra:null,necessita_avaliacao_do_mestre:true,
+      aplicacao_canonica:false,
+      observacao:"REQUER permanece obrigatório mesmo se recebido gratuitamente. A prévia não autoriza compra nem aplica efeitos."};
+  }
   async function getClericMovements(){return byKey("hack_cleric_movements");}
   async function getClericMovementIndexes(){return byKey("hack_cleric_movement_indexes");}
   async function getClericMovement(id){
@@ -651,6 +704,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getPaladinRequirementPreview,getPaladinGrantPreview,
           getClericMovements,getClericMovement,getClericMovementIndexes,
           searchClericMovements,getClericDependencyChain,
+          getDruidMovements,getDruidMovement,getDruidMovementIndexes,
+          searchDruidMovements,getDruidRequirementPreview,
           getBardRequirementPreview,
           getMartialArtistRequirementPreview,
           getRogueRequirementPreview,

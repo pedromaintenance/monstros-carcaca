@@ -67,7 +67,9 @@ const fixtures={
     hack_paladin_movements:"hack-paladin-movements.json",
     hack_paladin_movement_indexes:"hack-paladin-movement-indexes.json",
     hack_cleric_movements:"hack-cleric-movements.json",
-    hack_cleric_movement_indexes:"hack-cleric-movement-indexes.json"}},
+    hack_cleric_movement_indexes:"hack-cleric-movement-indexes.json",
+    hack_druid_movements:"hack-druid-movements.json",
+    hack_druid_movement_indexes:"hack-druid-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -118,7 +120,36 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-druid-movements.json":[
+    {id:"movimento-classe:paragrafo-2130",titulo:"METAMORFOSE",grupo:"DRUIDA",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Assuma uma forma animal de seu território.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2131",titulo:"MAESTRIA ELEMENTAL",grupo:"DRUIDA",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Comande um elemento natural.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2146",titulo:"FORMA PRIMORDIAL",grupo:"DRUIDA",
+     requisito_literal:"Metamorfose e Maestria Elemental",
+     requisito_estruturado:{tipo:"todos",operador_literal:"e",itens:[
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2130",titulo_requerido:"METAMORFOSE"},
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2131",titulo_requerido:"MAESTRIA ELEMENTAL"}]},
+     opcoes:[],texto_original:"Assuma uma forma primordial.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2137",titulo:"CÍRCULO DOS ESPOROS",grupo:"DRUIDA",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Quando liberar esporos de sua colônia.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2168",titulo:"CORPO SIMBIÓTICO",grupo:"DRUIDA",
+     requisito_literal:"Círculo dos Esporos",
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2137"},
+     opcoes:[{paragrafo_docx:2169,texto:"o fungo resiste ao dano;"}],
+     texto_original:"Sua colônia integra seu corpo.",aplicacao_canonica:false}
+  ],
+  "hack-druid-movement-indexes.json":{
+    by_requisito_tipo:{todos:["movimento-classe:paragrafo-2146"]},
+    by_requisito_id:{
+      "movimento-classe:paragrafo-2130":["movimento-classe:paragrafo-2146"],
+      "movimento-classe:paragrafo-2131":["movimento-classe:paragrafo-2146"],
+      "movimento-classe:paragrafo-2137":["movimento-classe:paragrafo-2168"]}},
   "hack-cleric-movements.json":[
+
     {id:"movimento-classe:paragrafo-2056",titulo:"SACERDOTE",grupo:"CLÉRIGO",
      requisito_literal:null,requisito_estruturado:null,opcoes:[],texto_original:"Escolha uma divindade.",aplicacao_canonica:false},
     {id:"movimento-classe:paragrafo-2057",titulo:"MILAGRES",grupo:"CLÉRIGO",
@@ -1613,4 +1644,33 @@ test("Clérigo preserva raízes distintas e REQUER transitivos sem liberar sele�
   assert.deepEqual(priest.cadeia_imediato_para_raiz,[]);
   assert.equal(await atlas.getClericDependencyChain("movimento-classe:paragrafo-9999"),null);
   await assert.rejects(()=>atlas.getClericDependencyChain(id,{movimentosPossuidos:"invalido"}),TypeError);
+});
+
+
+test("Druida exige Metamorfose E Maestria Elemental para Forma Primordial",async()=>{
+  const all=await atlas.getDruidMovements();
+  assert.equal(all.length,5);
+  assert.equal((await atlas.searchDruidMovements({tipoRequisito:"todos"}))[0].titulo,"FORMA PRIMORDIAL");
+  assert.equal((await atlas.searchDruidMovements({requer:"maestria elemental"})).length,1);
+  assert.equal((await atlas.searchDruidMovements({titulo:"circulo dos esporos"})).length,1);
+  assert.equal((await atlas.searchDruidMovements({comOpcoes:true}))[0].titulo,"CORPO SIMBIÓTICO");
+  assert.equal((await atlas.getDruidMovementIndexes()).by_requisito_id["movimento-classe:paragrafo-2131"].length,1);
+  const forma="movimento-classe:paragrafo-2146",meta="movimento-classe:paragrafo-2130";
+  const maestro="movimento-classe:paragrafo-2131";
+  const none=await atlas.getDruidRequirementPreview(forma);
+  assert.equal(none.operador_literal,"e");
+  assert.deepEqual(none.componentes_requeridos.map(x=>x.presente_na_lista),[false,false]);
+  const partial=await atlas.getDruidRequirementPreview(forma,{movimentosPossuidos:[meta]});
+  assert.deepEqual(partial.componentes_requeridos.map(x=>x.presente_na_lista),[true,false]);
+  assert.equal(partial.verificacao_estrutural,"componentes_ausentes");
+  const complete=await atlas.getDruidRequirementPreview(forma,{movimentosPossuidos:[meta,maestro]});
+  assert.equal(complete.verificacao_estrutural,"componentes_identificados_presentes");
+  assert.equal(complete.componentes_identificados_presentes,true);
+  assert.equal(complete.habilitado_para_compra,null);
+  assert.equal(complete.necessita_avaliacao_do_mestre,true);
+  assert.equal(complete.aplicacao_canonica,false);
+  const spores=await atlas.getDruidRequirementPreview("movimento-classe:paragrafo-2168");
+  assert.equal(spores.componentes_requeridos[0].movimento_id,"movimento-classe:paragrafo-2137");
+  assert.equal(await atlas.getDruidRequirementPreview("movimento-classe:paragrafo-9999"),null);
+  await assert.rejects(()=>atlas.getDruidRequirementPreview(forma,{movimentosPossuidos:"inválido"}),TypeError);
 });

@@ -1,0 +1,1112 @@
+{
+  "schema_version": "0.1.0",
+  "fonte": "Hack Carcaça Dungeon World(1).docx",
+  "fonte_sha256": "b53d1d5a057e8f6cba8a5d5ccd70747df3ce94d07ff2e2ffb9031368ea773b3d",
+  "grupo": "DRUIDA",
+  "posicao": "indices_paragrafo_docx_zero_based",
+  "descricao": "Transcrição integral de DRUIDA com REQUER diretos e conjunção de Forma Primordial; não homologa mecânicas.",
+  "movimentos": [
+    {
+      "id": "movimento-classe:paragrafo-2130",
+      "paragrafo_docx": 2130,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "METAMORFOSE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2130,
+          "tipo": "corpo",
+          "texto": "Escolha um território ou comunidade natural com a qual esteja profundamente sintonizado.\nQuando assumir a forma de uma criatura pertencente à sua tradição, role+SAB.\n10+: Domínio 3.\n7–9: Domínio 2.\nO Mestre dirá movimentos naturais daquela forma. Gaste Domínio para realizá-los com toda a excepcionalidade daquela criatura."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Escolha um território ou comunidade natural com a qual esteja profundamente sintonizado.\nQuando assumir a forma de uma criatura pertencente à sua tradição, role+SAB.\n10+: Domínio 3.\n7–9: Domínio 2.\nO Mestre dirá movimentos naturais daquela forma. Gaste Domínio para realizá-los com toda a excepcionalidade daquela criatura.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2130"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2131",
+      "paragrafo_docx": 2131,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "MAESTRIA ELEMENTAL",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2131,
+          "tipo": "corpo",
+          "texto": "Quando pedir a um elemento natural presente que realize algo impossível, role+SAB.\n12+: o efeito desejado acontece, escolha 3.\n10+: o efeito desejado acontece, escolha 2.\n7–9: o efeito desejado acontece, escolha 1."
+        },
+        {
+          "paragrafo_docx": 2132,
+          "tipo": "opcao",
+          "texto": "você não expõe seu corpo ao perigo;"
+        },
+        {
+          "paragrafo_docx": 2133,
+          "tipo": "opcao",
+          "texto": "você mantém controle sobre sua extensão;"
+        },
+        {
+          "paragrafo_docx": 2134,
+          "tipo": "opcao",
+          "texto": "a natureza não cobra preço significativo."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 2132,
+          "texto": "você não expõe seu corpo ao perigo;"
+        },
+        {
+          "paragrafo_docx": 2133,
+          "texto": "você mantém controle sobre sua extensão;"
+        },
+        {
+          "paragrafo_docx": 2134,
+          "texto": "a natureza não cobra preço significativo."
+        }
+      ],
+      "texto_original": "Quando pedir a um elemento natural presente que realize algo impossível, role+SAB.\n12+: o efeito desejado acontece, escolha 3.\n10+: o efeito desejado acontece, escolha 2.\n7–9: o efeito desejado acontece, escolha 1.\nvocê não expõe seu corpo ao perigo;\nvocê mantém controle sobre sua extensão;\na natureza não cobra preço significativo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2131"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2135",
+      "paragrafo_docx": 2135,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "COISA-FALANTE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2135,
+          "tipo": "corpo",
+          "texto": "Quando tocar algo natural e escutá-lo como parte da comunidade viva — pedra, rio, árvore, fungo, cadáver animal — você consegue comunicar-se com ele segundo sua própria forma de perceber o mundo."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando tocar algo natural e escutá-lo como parte da comunidade viva — pedra, rio, árvore, fungo, cadáver animal — você consegue comunicar-se com ele segundo sua própria forma de perceber o mundo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2135"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2136",
+      "paragrafo_docx": 2136,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "PELE NOVA",
+      "requisito_literal": "Metamorfose",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2130",
+        "titulo_requerido": "METAMORFOSE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2136,
+          "tipo": "corpo",
+          "texto": "Quando retornar à sua forma natural depois de Metamorfose, você pode deixar para trás uma consequência física menor sofrida enquanto transformado. Quando fizer isso, mantenha em seu corpo um sinal temporário daquela criatura até que tenha tempo de realmente descansar."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando retornar à sua forma natural depois de Metamorfose, você pode deixar para trás uma consequência física menor sofrida enquanto transformado. Quando fizer isso, mantenha em seu corpo um sinal temporário daquela criatura até que tenha tempo de realmente descansar.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2136"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2137",
+      "paragrafo_docx": 2137,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "CÍRCULO DOS ESPOROS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2137,
+          "tipo": "corpo",
+          "texto": "Quando liberar deliberadamente esporos de sua colônia simbiótica, escolha um efeito: decompor matéria morta, marcar criaturas para que sua colônia possa reconhecê-las posteriormente, produzir névoa ou comunicar-se através de fungos próximos. Sob perigo ou em grande escala, role+CON.\n10+: o efeito acontece como desejado.\n7–9: acontece, mas escolha 1:"
+        },
+        {
+          "paragrafo_docx": 2138,
+          "tipo": "opcao",
+          "texto": "a colônia se espalha além do que pretendia;"
+        },
+        {
+          "paragrafo_docx": 2139,
+          "tipo": "opcao",
+          "texto": "o efeito dura menos do que precisava;"
+        },
+        {
+          "paragrafo_docx": 2140,
+          "tipo": "opcao",
+          "texto": "alguma outra coisa presente reage aos esporos de maneira inesperada."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 2138,
+          "texto": "a colônia se espalha além do que pretendia;"
+        },
+        {
+          "paragrafo_docx": 2139,
+          "texto": "o efeito dura menos do que precisava;"
+        },
+        {
+          "paragrafo_docx": 2140,
+          "texto": "alguma outra coisa presente reage aos esporos de maneira inesperada."
+        }
+      ],
+      "texto_original": "Quando liberar deliberadamente esporos de sua colônia simbiótica, escolha um efeito: decompor matéria morta, marcar criaturas para que sua colônia possa reconhecê-las posteriormente, produzir névoa ou comunicar-se através de fungos próximos. Sob perigo ou em grande escala, role+CON.\n10+: o efeito acontece como desejado.\n7–9: acontece, mas escolha 1:\na colônia se espalha além do que pretendia;\no efeito dura menos do que precisava;\nalguma outra coisa presente reage aos esporos de maneira inesperada.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2137"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2141",
+      "paragrafo_docx": 2141,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "FOGO SELVAGEM",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2141,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando usar o fogo para destruir uma obra artificial e abrir espaço real para que a vida natural retorne, marque 1 XP."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por sessão, quando usar o fogo para destruir uma obra artificial e abrir espaço real para que a vida natural retorne, marque 1 XP.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2141"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2142",
+      "paragrafo_docx": 2142,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "SONO DO DRUIDA",
+      "requisito_literal": "Metamorfose",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2130",
+        "titulo_requerido": "METAMORFOSE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2142,
+          "tipo": "corpo",
+          "texto": "Quando passar uma noite inteira dormindo diretamente sobre uma terra à qual ainda não pertence e desejar sinceramente tornar-se parte dela, pergunte ao Mestre: “O que este lugar exige de mim antes de me reconhecer como seu?”\nO Mestre dará uma condição concreta relacionada à natureza, história ou habitantes daquele território. Quando cumpri-la sem subvertê-la, esse território ou comunidade natural também passa a fazer parte de sua tradição para Metamorfose e outros Movimentos que dependam dessa ligação."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando passar uma noite inteira dormindo diretamente sobre uma terra à qual ainda não pertence e desejar sinceramente tornar-se parte dela, pergunte ao Mestre: “O que este lugar exige de mim antes de me reconhecer como seu?”\nO Mestre dará uma condição concreta relacionada à natureza, história ou habitantes daquele território. Quando cumpri-la sem subvertê-la, esse território ou comunidade natural também passa a fazer parte de sua tradição para Metamorfose e outros Movimentos que dependam dessa ligação.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2142"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2143",
+      "paragrafo_docx": 2143,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "QUIMERA",
+      "requisito_literal": "Metamorfose",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2130",
+        "titulo_requerido": "METAMORFOSE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2143,
+          "tipo": "corpo",
+          "texto": "Quando utilizar Metamorfose, você pode assumir uma forma que combine até três criaturas pertencentes à sua tradição. Descreva quais características de cada criatura compõem seu novo corpo. O Mestre dirá um Movimento natural excepcional relacionado a cada criatura incorporada. Seu Domínio de Metamorfose pode ser gasto normalmente para realizá-los. \nA anatomia resultante é real na ficção."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando utilizar Metamorfose, você pode assumir uma forma que combine até três criaturas pertencentes à sua tradição. Descreva quais características de cada criatura compõem seu novo corpo. O Mestre dirá um Movimento natural excepcional relacionado a cada criatura incorporada. Seu Domínio de Metamorfose pode ser gasto normalmente para realizá-los. \nA anatomia resultante é real na ficção.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2143"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2144",
+      "paragrafo_docx": 2144,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "DANÇA DO DUPLO",
+      "requisito_literal": "Metamorfose",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2130",
+        "titulo_requerido": "METAMORFOSE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2144,
+          "tipo": "corpo",
+          "texto": "Quando passar tempo suficiente observando uma criatura inteligente específica para compreender sua forma, você pode incluí-la entre as formas que consegue assumir. Formas excepcionalmente grandes ou mágicas requerem um ritual; o Mestre dirá as condições necessárias. Sua aparência, voz, cheiro e anatomia podem ser reproduzidos perfeitamente. Você não recebe suas memórias, conhecimentos, relações ou habilidades aprendidas. \nQuando assumir aquela forma através de Metamorfose, o Mestre lhe dará Movimentos ligados àquilo que aquele corpo realmente é, não àquilo que aquela pessoa aprendeu a fazer."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando passar tempo suficiente observando uma criatura inteligente específica para compreender sua forma, você pode incluí-la entre as formas que consegue assumir. Formas excepcionalmente grandes ou mágicas requerem um ritual; o Mestre dirá as condições necessárias. Sua aparência, voz, cheiro e anatomia podem ser reproduzidos perfeitamente. Você não recebe suas memórias, conhecimentos, relações ou habilidades aprendidas. \nQuando assumir aquela forma através de Metamorfose, o Mestre lhe dará Movimentos ligados àquilo que aquele corpo realmente é, não àquilo que aquela pessoa aprendeu a fazer.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2144"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2145",
+      "paragrafo_docx": 2145,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "MIL FORMAS",
+      "requisito_literal": "Metamorfose",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2130",
+        "titulo_requerido": "METAMORFOSE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2145,
+          "tipo": "corpo",
+          "texto": "Quando precisar apenas de uma adaptação pertencente a uma criatura de sua tradição, faça parte de seu corpo assumir temporariamente aquela característica. Olhos noturnos, guelras, carapaça, membranas, patas aderentes, faro, pelagem, garras de escavação ou outra adaptação corporal concreta. Você recebe a propriedade física real daquela característica, mas não os Movimentos excepcionais da criatura. Você pode manter apenas uma adaptação deste Movimento por vez; assumir outra faz a anterior desaparecer."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando precisar apenas de uma adaptação pertencente a uma criatura de sua tradição, faça parte de seu corpo assumir temporariamente aquela característica. Olhos noturnos, guelras, carapaça, membranas, patas aderentes, faro, pelagem, garras de escavação ou outra adaptação corporal concreta. Você recebe a propriedade física real daquela característica, mas não os Movimentos excepcionais da criatura. Você pode manter apenas uma adaptação deste Movimento por vez; assumir outra faz a anterior desaparecer.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2145"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2146",
+      "paragrafo_docx": 2146,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "FORMA PRIMORDIAL",
+      "requisito_literal": "Metamorfose e Maestria Elemental",
+      "requisito_estruturado": {
+        "tipo": "todos",
+        "itens": [
+          {
+            "tipo": "movimento_exato",
+            "movimento_id": "movimento-classe:paragrafo-2130",
+            "titulo_requerido": "METAMORFOSE"
+          },
+          {
+            "tipo": "movimento_exato",
+            "movimento_id": "movimento-classe:paragrafo-2131",
+            "titulo_requerido": "MAESTRIA ELEMENTAL"
+          }
+        ],
+        "operador_literal": "e",
+        "status": "interpretacao_literal_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2146,
+          "tipo": "corpo",
+          "texto": "Quando houver quantidade significativa de um elemento natural ao seu redor, você pode utilizar Metamorfose para assumir um corpo vivo constituído por esse elemento. Água, fogo, pedra, lama, areia, gelo, vento, fumaça ou outra manifestação coerente com sua tradição. A forma possui realmente as propriedades daquele elemento. O Mestre dirá Movimentos naturais excepcionais apropriados e você gasta Domínio normalmente para realizá-los."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando houver quantidade significativa de um elemento natural ao seu redor, você pode utilizar Metamorfose para assumir um corpo vivo constituído por esse elemento. Água, fogo, pedra, lama, areia, gelo, vento, fumaça ou outra manifestação coerente com sua tradição. A forma possui realmente as propriedades daquele elemento. O Mestre dirá Movimentos naturais excepcionais apropriados e você gasta Domínio normalmente para realizá-los.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2146"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2147",
+      "paragrafo_docx": 2147,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "A TERRA ABRE CAMINHO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2147,
+          "tipo": "corpo",
+          "texto": "Quando atravessar um ambiente natural que não esteja deliberadamente tentando rejeitá-lo, a paisagem reconhece sua passagem. Vegetação comum não o prende ou fere, terreno natural não o faz se perder e você sempre reconhece uma rota realmente existente através daquele lugar. Se nenhum caminho possível existir, este Movimento não cria um."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando atravessar um ambiente natural que não esteja deliberadamente tentando rejeitá-lo, a paisagem reconhece sua passagem. Vegetação comum não o prende ou fere, terreno natural não o faz se perder e você sempre reconhece uma rota realmente existente através daquele lugar. Se nenhum caminho possível existir, este Movimento não cria um.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2147"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2148",
+      "paragrafo_docx": 2148,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "EU TAMBÉM SOU DAQUI",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2148,
+          "tipo": "corpo",
+          "texto": "Criaturas pertencentes naturalmente a um lugar reconhecem em você alguém da mesma comunidade viva. Animais, plantas e seres naturais não o atacam simplesmente por fome comum, territorialidade, medo ou hostilidade instintiva. Ainda podem fazê-lo quando:"
+        },
+        {
+          "paragrafo_docx": 2149,
+          "tipo": "opcao",
+          "texto": "você ameaça aquilo que protegem;"
+        },
+        {
+          "paragrafo_docx": 2150,
+          "tipo": "opcao",
+          "texto": "estão sob controle ou corrupção;"
+        },
+        {
+          "paragrafo_docx": 2151,
+          "tipo": "opcao",
+          "texto": "encontram-se em situação verdadeiramente desesperada;"
+        },
+        {
+          "paragrafo_docx": 2152,
+          "tipo": "opcao",
+          "texto": "ou você violou concretamente a relação que está invocando."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 2149,
+          "texto": "você ameaça aquilo que protegem;"
+        },
+        {
+          "paragrafo_docx": 2150,
+          "texto": "estão sob controle ou corrupção;"
+        },
+        {
+          "paragrafo_docx": 2151,
+          "texto": "encontram-se em situação verdadeiramente desesperada;"
+        },
+        {
+          "paragrafo_docx": 2152,
+          "texto": "ou você violou concretamente a relação que está invocando."
+        }
+      ],
+      "texto_original": "Criaturas pertencentes naturalmente a um lugar reconhecem em você alguém da mesma comunidade viva. Animais, plantas e seres naturais não o atacam simplesmente por fome comum, territorialidade, medo ou hostilidade instintiva. Ainda podem fazê-lo quando:\nvocê ameaça aquilo que protegem;\nestão sob controle ou corrupção;\nencontram-se em situação verdadeiramente desesperada;\nou você violou concretamente a relação que está invocando.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2148"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2153",
+      "paragrafo_docx": 2153,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "A NATUREZA SABE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2153,
+          "tipo": "corpo",
+          "texto": "Quando permanecer imóvel por alguns minutos, em contato direto com um ambiente natural, e permitir que seus sentidos se dissolvam nele, faça ao Mestre três perguntas:"
+        },
+        {
+          "paragrafo_docx": 2154,
+          "tipo": "opcao",
+          "texto": "Onde está a fonte natural de água, abrigo ou alimento mais significativa?"
+        },
+        {
+          "paragrafo_docx": 2155,
+          "tipo": "opcao",
+          "texto": "Que criatura ou comunidade domina esta região?"
+        },
+        {
+          "paragrafo_docx": 2156,
+          "tipo": "opcao",
+          "texto": "O que aqui não pertence naturalmente a este lugar?"
+        },
+        {
+          "paragrafo_docx": 2157,
+          "tipo": "opcao",
+          "texto": "Onde ocorreu a maior perturbação recente?"
+        },
+        {
+          "paragrafo_docx": 2158,
+          "tipo": "opcao",
+          "texto": "Que força sobrenatural está alterando esta região?"
+        },
+        {
+          "paragrafo_docx": 2159,
+          "tipo": "opcao",
+          "texto": "Qual caminho natural conecta este lugar ao que procuro?"
+        },
+        {
+          "paragrafo_docx": 2160,
+          "tipo": "opcao",
+          "texto": "Onde a natureza daqui está mais ferida?"
+        },
+        {
+          "paragrafo_docx": 2161,
+          "tipo": "opcao",
+          "texto": "Que ciclo natural domina este lugar neste momento?"
+        },
+        {
+          "paragrafo_docx": 2162,
+          "tipo": "opcao",
+          "texto": "O que este lugar precisa para se recuperar?"
+        },
+        {
+          "paragrafo_docx": 2163,
+          "tipo": "continuacao",
+          "texto": "As respostas vêm através daquilo que o próprio território poderia perceber."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 2154,
+          "texto": "Onde está a fonte natural de água, abrigo ou alimento mais significativa?"
+        },
+        {
+          "paragrafo_docx": 2155,
+          "texto": "Que criatura ou comunidade domina esta região?"
+        },
+        {
+          "paragrafo_docx": 2156,
+          "texto": "O que aqui não pertence naturalmente a este lugar?"
+        },
+        {
+          "paragrafo_docx": 2157,
+          "texto": "Onde ocorreu a maior perturbação recente?"
+        },
+        {
+          "paragrafo_docx": 2158,
+          "texto": "Que força sobrenatural está alterando esta região?"
+        },
+        {
+          "paragrafo_docx": 2159,
+          "texto": "Qual caminho natural conecta este lugar ao que procuro?"
+        },
+        {
+          "paragrafo_docx": 2160,
+          "texto": "Onde a natureza daqui está mais ferida?"
+        },
+        {
+          "paragrafo_docx": 2161,
+          "texto": "Que ciclo natural domina este lugar neste momento?"
+        },
+        {
+          "paragrafo_docx": 2162,
+          "texto": "O que este lugar precisa para se recuperar?"
+        }
+      ],
+      "texto_original": "Quando permanecer imóvel por alguns minutos, em contato direto com um ambiente natural, e permitir que seus sentidos se dissolvam nele, faça ao Mestre três perguntas:\nOnde está a fonte natural de água, abrigo ou alimento mais significativa?\nQue criatura ou comunidade domina esta região?\nO que aqui não pertence naturalmente a este lugar?\nOnde ocorreu a maior perturbação recente?\nQue força sobrenatural está alterando esta região?\nQual caminho natural conecta este lugar ao que procuro?\nOnde a natureza daqui está mais ferida?\nQue ciclo natural domina este lugar neste momento?\nO que este lugar precisa para se recuperar?\nAs respostas vêm através daquilo que o próprio território poderia perceber.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2153"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2164",
+      "paragrafo_docx": 2164,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "TECELÃO DO CLIMA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2164,
+          "tipo": "corpo",
+          "texto": "Quando estiver sob céu aberto durante o nascer do sol, diga como será o clima natural daquela região até o próximo amanhecer. Se aquilo estiver dentro das possibilidades daquela estação e território, acontece como você declarou. Produzir clima impossível para aquele lugar ou disputar o céu com outra força sobrenatural exige enfrentar aquilo que está impondo uma vontade diferente sobre o clima."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando estiver sob céu aberto durante o nascer do sol, diga como será o clima natural daquela região até o próximo amanhecer. Se aquilo estiver dentro das possibilidades daquela estação e território, acontece como você declarou. Produzir clima impossível para aquele lugar ou disputar o céu com outra força sobrenatural exige enfrentar aquilo que está impondo uma vontade diferente sobre o clima.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2164"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2165",
+      "paragrafo_docx": 2165,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "DESPERTAR",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2165,
+          "tipo": "corpo",
+          "texto": "Quando passar tempo suficiente tratando um animal, árvore, planta, fungo ou outra criatura natural comum como alguém e não como alguma coisa, pergunte ao Mestre: “O que ainda falta para que esta criatura desperte para si mesma?” \nO Mestre dará uma condição concreta. Quando ela for cumprida, aquela criatura desperta como um ser verdadeiramente consciente, capaz de memória, escolha e personalidade segundo sua própria natureza. Ela não se torna seu Servo e não lhe deve obediência."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando passar tempo suficiente tratando um animal, árvore, planta, fungo ou outra criatura natural comum como alguém e não como alguma coisa, pergunte ao Mestre: “O que ainda falta para que esta criatura desperte para si mesma?” \nO Mestre dará uma condição concreta. Quando ela for cumprida, aquela criatura desperta como um ser verdadeiramente consciente, capaz de memória, escolha e personalidade segundo sua própria natureza. Ela não se torna seu Servo e não lhe deve obediência.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2165"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2166",
+      "paragrafo_docx": 2166,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "PASSAGEM VERDE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2166,
+          "tipo": "corpo",
+          "texto": "Quando entrar completamente em uma planta viva grande o bastante para recebê-lo, você pode procurar outra planta ligada à mesma comunidade natural ou território ao qual esteja sintonizado. Se houver uma conexão viva plausível entre elas, você percebe onde ela emerge e pode atravessar por essa ligação. Levar outras pessoas ou atravessar distâncias extraordinárias pode exigir espaço, tempo, ajuda ou outra condição apropriada à ficção."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando entrar completamente em uma planta viva grande o bastante para recebê-lo, você pode procurar outra planta ligada à mesma comunidade natural ou território ao qual esteja sintonizado. Se houver uma conexão viva plausível entre elas, você percebe onde ela emerge e pode atravessar por essa ligação. Levar outras pessoas ou atravessar distâncias extraordinárias pode exigir espaço, tempo, ajuda ou outra condição apropriada à ficção.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2166"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2167",
+      "paragrafo_docx": 2167,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "CORPO VERDEJANTE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2167,
+          "tipo": "corpo",
+          "texto": "Quando escolher este Movimento, diga que planta ou comunidade vegetal passou a fazer parte permanentemente de seu corpo. Você continua sendo você, mas possui realmente as propriedades naturais daquela forma. Quando permanecer imóvel em condições que alimentariam essa parte de seu corpo durante algumas horas, você pode recuperar-se como se tivesse recebido alimento, água e repouso apropriados. \nDiga também uma necessidade ou vulnerabilidade real que veio com a transformação."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando escolher este Movimento, diga que planta ou comunidade vegetal passou a fazer parte permanentemente de seu corpo. Você continua sendo você, mas possui realmente as propriedades naturais daquela forma. Quando permanecer imóvel em condições que alimentariam essa parte de seu corpo durante algumas horas, você pode recuperar-se como se tivesse recebido alimento, água e repouso apropriados. \nDiga também uma necessidade ou vulnerabilidade real que veio com a transformação.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2167"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2168",
+      "paragrafo_docx": 2168,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "CORPO SIMBIÓTICO",
+      "requisito_literal": "Círculo dos Esporos",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2137",
+        "titulo_requerido": "CÍRCULO DOS ESPOROS",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2168,
+          "tipo": "corpo",
+          "texto": "Sua colônia deixou de viver apenas sobre você e passou a integrar permanentemente seu organismo. Escolha duas propriedades:"
+        },
+        {
+          "paragrafo_docx": 2169,
+          "tipo": "opcao",
+          "texto": "percebe fungos e matéria em decomposição próximos mesmo sem vê-los;"
+        },
+        {
+          "paragrafo_docx": 2170,
+          "tipo": "opcao",
+          "texto": "consegue obter sustento de matéria orgânica em decomposição que normalmente não alimentaria sua espécie;"
+        },
+        {
+          "paragrafo_docx": 2171,
+          "tipo": "opcao",
+          "texto": "ferimentos seus podem produzir estruturas fúngicas simples e úteis;"
+        },
+        {
+          "paragrafo_docx": 2172,
+          "tipo": "opcao",
+          "texto": "sua colônia reconhece imediatamente venenos, doenças ou contaminações biológicas presentes em algo que toque;"
+        },
+        {
+          "paragrafo_docx": 2173,
+          "tipo": "opcao",
+          "texto": "pode permanecer imóvel e compartilhar lentamente nutrientes com uma criatura viva em contato com você."
+        },
+        {
+          "paragrafo_docx": 2174,
+          "tipo": "continuacao",
+          "texto": "As propriedades são reais segundo a natureza de sua simbiose."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 2169,
+          "texto": "percebe fungos e matéria em decomposição próximos mesmo sem vê-los;"
+        },
+        {
+          "paragrafo_docx": 2170,
+          "texto": "consegue obter sustento de matéria orgânica em decomposição que normalmente não alimentaria sua espécie;"
+        },
+        {
+          "paragrafo_docx": 2171,
+          "texto": "ferimentos seus podem produzir estruturas fúngicas simples e úteis;"
+        },
+        {
+          "paragrafo_docx": 2172,
+          "texto": "sua colônia reconhece imediatamente venenos, doenças ou contaminações biológicas presentes em algo que toque;"
+        },
+        {
+          "paragrafo_docx": 2173,
+          "texto": "pode permanecer imóvel e compartilhar lentamente nutrientes com uma criatura viva em contato com você."
+        }
+      ],
+      "texto_original": "Sua colônia deixou de viver apenas sobre você e passou a integrar permanentemente seu organismo. Escolha duas propriedades:\npercebe fungos e matéria em decomposição próximos mesmo sem vê-los;\nconsegue obter sustento de matéria orgânica em decomposição que normalmente não alimentaria sua espécie;\nferimentos seus podem produzir estruturas fúngicas simples e úteis;\nsua colônia reconhece imediatamente venenos, doenças ou contaminações biológicas presentes em algo que toque;\npode permanecer imóvel e compartilhar lentamente nutrientes com uma criatura viva em contato com você.\nAs propriedades são reais segundo a natureza de sua simbiose.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2168"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2175",
+      "paragrafo_docx": 2175,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "FLORESCER NO CADÁVER",
+      "requisito_literal": "Círculo dos Esporos",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2137",
+        "titulo_requerido": "CÍRCULO DOS ESPOROS",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2175,
+          "tipo": "corpo",
+          "texto": "Quando inocular deliberadamente um cadáver ainda utilizável, sua colônia pode ocupar tecidos mortos e fazê-los mover-se novamente. Dê ao corpo um objetivo simples compatível com aquilo que os fungos conseguiriam realizar através dele. Ele o seguirá enquanto possuir estrutura física suficiente. A alma não retorna. Isso não é um morto-vivo. Você só pode manter um cadáver florescido dessa maneira por vez. Quando outro se erguer através deste Movimento, o anterior deixa de receber sua direção e retorna ao comportamento natural da colônia."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando inocular deliberadamente um cadáver ainda utilizável, sua colônia pode ocupar tecidos mortos e fazê-los mover-se novamente. Dê ao corpo um objetivo simples compatível com aquilo que os fungos conseguiriam realizar através dele. Ele o seguirá enquanto possuir estrutura física suficiente. A alma não retorna. Isso não é um morto-vivo. Você só pode manter um cadáver florescido dessa maneira por vez. Quando outro se erguer através deste Movimento, o anterior deixa de receber sua direção e retorna ao comportamento natural da colônia.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2175"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2177",
+      "paragrafo_docx": 2177,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "REDE MICELIAL",
+      "requisito_literal": "Círculo dos Esporos",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2137",
+        "titulo_requerido": "CÍRCULO DOS ESPOROS",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2177,
+          "tipo": "corpo",
+          "texto": "Quando tocar uma colônia conectada a uma rede fúngica maior, você pode estender seus sentidos através dela.\nPergunte: “Onde esta rede emerge de maneira significativa?”\nO Mestre mostrará seus principais pontos de presença. Enquanto permanecer conectado, escolha um desses pontos: você pode sentir movimento, temperatura, perturbações físicas e presença de matéria viva ou morta ao redor dele como se a colônia fosse um órgão sensorial. Você também pode transmitir mensagens simples através da rede."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando tocar uma colônia conectada a uma rede fúngica maior, você pode estender seus sentidos através dela.\nPergunte: “Onde esta rede emerge de maneira significativa?”\nO Mestre mostrará seus principais pontos de presença. Enquanto permanecer conectado, escolha um desses pontos: você pode sentir movimento, temperatura, perturbações físicas e presença de matéria viva ou morta ao redor dele como se a colônia fosse um órgão sensorial. Você também pode transmitir mensagens simples através da rede.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2177"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2178",
+      "paragrafo_docx": 2178,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "EQUILÍBRIO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2178,
+          "tipo": "corpo",
+          "texto": "Uma vez por cena, quando uma criatura viva significativa morrer em sua presença e você devolver deliberadamente alguma parte de seus restos ao ciclo natural, receba 1 Equilíbrio, máximo 3. Gaste 1 Equilíbrio ao tocar algo vivo para escolher:"
+        },
+        {
+          "paragrafo_docx": 2179,
+          "tipo": "opcao",
+          "texto": "cure 1d6 PV;"
+        },
+        {
+          "paragrafo_docx": 2180,
+          "tipo": "opcao",
+          "texto": "faça uma planta crescer imediatamente até sua maturidade natural;"
+        },
+        {
+          "paragrafo_docx": 2181,
+          "tipo": "opcao",
+          "texto": "purifique uma pequena área de veneno, doença ou corrupção puramente biológica;"
+        },
+        {
+          "paragrafo_docx": 2182,
+          "tipo": "opcao",
+          "texto": "sustente uma criatura sem água ou alimento até o próximo descanso."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 2179,
+          "texto": "cure 1d6 PV;"
+        },
+        {
+          "paragrafo_docx": 2180,
+          "texto": "faça uma planta crescer imediatamente até sua maturidade natural;"
+        },
+        {
+          "paragrafo_docx": 2181,
+          "texto": "purifique uma pequena área de veneno, doença ou corrupção puramente biológica;"
+        },
+        {
+          "paragrafo_docx": 2182,
+          "texto": "sustente uma criatura sem água ou alimento até o próximo descanso."
+        }
+      ],
+      "texto_original": "Uma vez por cena, quando uma criatura viva significativa morrer em sua presença e você devolver deliberadamente alguma parte de seus restos ao ciclo natural, receba 1 Equilíbrio, máximo 3. Gaste 1 Equilíbrio ao tocar algo vivo para escolher:\ncure 1d6 PV;\nfaça uma planta crescer imediatamente até sua maturidade natural;\npurifique uma pequena área de veneno, doença ou corrupção puramente biológica;\nsustente uma criatura sem água ou alimento até o próximo descanso.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2178"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2183",
+      "paragrafo_docx": 2183,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "REENCARNAÇÃO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2183,
+          "tipo": "corpo",
+          "texto": "Quando alguém morrer e sua alma ainda estiver alcançável, entregue seus restos ao ciclo natural e pergunte à alma:\n“Você aceita voltar mesmo que a natureza não devolva aquilo que você era?”\nSe aceitar, o Mestre dirá que rito, tempo ou condição natural será necessário. Quando cumprir, aquela pessoa retorna à vida em um novo corpo vivo apropriado àquilo que o ciclo ofereceu. Ela continua sendo ela mesma. O novo corpo não precisa possuir a mesma espécie, idade, sexo ou anatomia do anterior."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando alguém morrer e sua alma ainda estiver alcançável, entregue seus restos ao ciclo natural e pergunte à alma:\n“Você aceita voltar mesmo que a natureza não devolva aquilo que você era?”\nSe aceitar, o Mestre dirá que rito, tempo ou condição natural será necessário. Quando cumprir, aquela pessoa retorna à vida em um novo corpo vivo apropriado àquilo que o ciclo ofereceu. Ela continua sendo ela mesma. O novo corpo não precisa possuir a mesma espécie, idade, sexo ou anatomia do anterior.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2183"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2184",
+      "paragrafo_docx": 2184,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "DAS CINZAS",
+      "requisito_literal": "Fogo Selvagem",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2141",
+        "titulo_requerido": "FOGO SELVAGEM",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2184,
+          "tipo": "corpo",
+          "texto": "Quando um incêndio destruir algo e você aceitar verdadeiramente aquilo que foi perdido, escolha uma nova forma de vida que começará a ocupar aquele espaço:"
+        },
+        {
+          "paragrafo_docx": 2185,
+          "tipo": "opcao",
+          "texto": "vegetação;"
+        },
+        {
+          "paragrafo_docx": 2186,
+          "tipo": "opcao",
+          "texto": "solo fértil;"
+        },
+        {
+          "paragrafo_docx": 2187,
+          "tipo": "opcao",
+          "texto": "água limpa;"
+        },
+        {
+          "paragrafo_docx": 2188,
+          "tipo": "opcao",
+          "texto": "abrigo natural;"
+        },
+        {
+          "paragrafo_docx": 2189,
+          "tipo": "opcao",
+          "texto": "alimento;"
+        },
+        {
+          "paragrafo_docx": 2190,
+          "tipo": "opcao",
+          "texto": "uma espécie apropriada antes ausente dali;"
+        },
+        {
+          "paragrafo_docx": 2191,
+          "tipo": "opcao",
+          "texto": "outra manifestação plausível de renovação."
+        },
+        {
+          "paragrafo_docx": 2192,
+          "tipo": "continuacao",
+          "texto": "O Mestre dirá quanto tempo levará e o que poderá impedir esse renascimento. O fogo não reconstrói aquilo que destruiu. Ele abre espaço para outra coisa."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 2185,
+          "texto": "vegetação;"
+        },
+        {
+          "paragrafo_docx": 2186,
+          "texto": "solo fértil;"
+        },
+        {
+          "paragrafo_docx": 2187,
+          "texto": "água limpa;"
+        },
+        {
+          "paragrafo_docx": 2188,
+          "texto": "abrigo natural;"
+        },
+        {
+          "paragrafo_docx": 2189,
+          "texto": "alimento;"
+        },
+        {
+          "paragrafo_docx": 2190,
+          "texto": "uma espécie apropriada antes ausente dali;"
+        },
+        {
+          "paragrafo_docx": 2191,
+          "texto": "outra manifestação plausível de renovação."
+        }
+      ],
+      "texto_original": "Quando um incêndio destruir algo e você aceitar verdadeiramente aquilo que foi perdido, escolha uma nova forma de vida que começará a ocupar aquele espaço:\nvegetação;\nsolo fértil;\nágua limpa;\nabrigo natural;\nalimento;\numa espécie apropriada antes ausente dali;\noutra manifestação plausível de renovação.\nO Mestre dirá quanto tempo levará e o que poderá impedir esse renascimento. O fogo não reconstrói aquilo que destruiu. Ele abre espaço para outra coisa.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2184"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2193",
+      "paragrafo_docx": 2193,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "ESPÍRITO DO INCÊNDIO",
+      "requisito_literal": "Fogo Selvagem",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2141",
+        "titulo_requerido": "FOGO SELVAGEM",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2193,
+          "tipo": "corpo",
+          "texto": "Quando um incêndio verdadeiramente significativo destruir algo e permitir que outra vida tome seu lugar, você pode pedir que a vontade daquele fogo permaneça. Descreva o espírito que nasce das chamas e estabeleça:"
+        },
+        {
+          "paragrafo_docx": 2194,
+          "tipo": "opcao",
+          "texto": "o que ele deseja que cresça;"
+        },
+        {
+          "paragrafo_docx": 2195,
+          "tipo": "opcao",
+          "texto": "o que deseja que queime;"
+        },
+        {
+          "paragrafo_docx": 2196,
+          "tipo": "opcao",
+          "texto": "o que jamais queimará voluntariamente."
+        },
+        {
+          "paragrafo_docx": 2197,
+          "tipo": "continuacao",
+          "texto": "Ele é um espírito natural com vontade própria. Ele permanece ligado ao lugar onde nasceu enquanto o novo ciclo estiver se estabelecendo. Reconhece você, pode conversar com você e defenderá aquela renovação contra quem tentar deliberadamente destruí-la segundo sua própria natureza."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 2194,
+          "texto": "o que ele deseja que cresça;"
+        },
+        {
+          "paragrafo_docx": 2195,
+          "texto": "o que deseja que queime;"
+        },
+        {
+          "paragrafo_docx": 2196,
+          "texto": "o que jamais queimará voluntariamente."
+        }
+      ],
+      "texto_original": "Quando um incêndio verdadeiramente significativo destruir algo e permitir que outra vida tome seu lugar, você pode pedir que a vontade daquele fogo permaneça. Descreva o espírito que nasce das chamas e estabeleça:\no que ele deseja que cresça;\no que deseja que queime;\no que jamais queimará voluntariamente.\nEle é um espírito natural com vontade própria. Ele permanece ligado ao lugar onde nasceu enquanto o novo ciclo estiver se estabelecendo. Reconhece você, pode conversar com você e defenderá aquela renovação contra quem tentar deliberadamente destruí-la segundo sua própria natureza.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2193"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2198",
+      "paragrafo_docx": 2198,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "MARÉ DE FORMAS",
+      "requisito_literal": "Metamorfose",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2130",
+        "titulo_requerido": "METAMORFOSE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2198,
+          "tipo": "corpo",
+          "texto": "Quando lhe restar apenas 1 Domínio de Metamorfose, você pode abandonar imediatamente aquela forma e assumir outra criatura pertencente à mesma tradição, rolando Metamorfose novamente com +1. Diga qual característica da primeira forma permanece visivelmente presente na transição."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando lhe restar apenas 1 Domínio de Metamorfose, você pode abandonar imediatamente aquela forma e assumir outra criatura pertencente à mesma tradição, rolando Metamorfose novamente com +1. Diga qual característica da primeira forma permanece visivelmente presente na transição.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2198"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2199",
+      "paragrafo_docx": 2199,
+      "grupo": "DRUIDA",
+      "categoria": "classe",
+      "titulo": "A FORMA LEMBRA",
+      "requisito_literal": "Metamorfose",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-2130",
+        "titulo_requerido": "METAMORFOSE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 2199,
+          "tipo": "corpo",
+          "texto": "Quando permanecer por tempo significativo numa mesma forma e viver segundo os instintos e necessidades reais daquela criatura, enquanto permanecer nessa forma e a situação lhe oferecer algo novo para perceber, pergunte livremente:"
+        },
+        {
+          "paragrafo_docx": 2200,
+          "tipo": "opcao",
+          "texto": "O que este corpo percebe que o meu normalmente ignoraria?"
+        },
+        {
+          "paragrafo_docx": 2201,
+          "tipo": "opcao",
+          "texto": "O que este corpo considera uma ameaça aqui?"
+        },
+        {
+          "paragrafo_docx": 2202,
+          "tipo": "opcao",
+          "texto": "O que este corpo deseja neste lugar?"
+        },
+        {
+          "paragrafo_docx": 2203,
+          "tipo": "opcao",
+          "texto": "Que coisa neste ambiente parece profundamente errada para esta criatura?"
+        },
+        {
+          "paragrafo_docx": 2204,
+          "tipo": "continuacao",
+          "texto": "A resposta vem através dos instintos da forma, não de conhecimento humano."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 2200,
+          "texto": "O que este corpo percebe que o meu normalmente ignoraria?"
+        },
+        {
+          "paragrafo_docx": 2201,
+          "texto": "O que este corpo considera uma ameaça aqui?"
+        },
+        {
+          "paragrafo_docx": 2202,
+          "texto": "O que este corpo deseja neste lugar?"
+        },
+        {
+          "paragrafo_docx": 2203,
+          "texto": "Que coisa neste ambiente parece profundamente errada para esta criatura?"
+        }
+      ],
+      "texto_original": "Quando permanecer por tempo significativo numa mesma forma e viver segundo os instintos e necessidades reais daquela criatura, enquanto permanecer nessa forma e a situação lhe oferecer algo novo para perceber, pergunte livremente:\nO que este corpo percebe que o meu normalmente ignoraria?\nO que este corpo considera uma ameaça aqui?\nO que este corpo deseja neste lugar?\nQue coisa neste ambiente parece profundamente errada para esta criatura?\nA resposta vem através dos instintos da forma, não de conhecimento humano.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2199"
+    }
+  ],
+  "integridade": {
+    "total_movimentos": 27,
+    "total_com_requer": 13,
+    "total_vinculos_exatos": 12,
+    "total_requer_composto_ou_condicional": 1,
+    "total_opcoes": 42,
+    "total_partes": 74
+  }
+}

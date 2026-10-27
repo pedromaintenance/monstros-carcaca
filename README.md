@@ -317,3 +317,12 @@ Fonte versionada: `data/lore/hack-carcaca-dw-paladino-integrais.json.gz` (JSON c
 Integrados **37 movimentos** de CLÉRIGO (26 opções, 68 trechos rastreados e **19 REQUER diretos**), elevando a cobertura para **380 de 632 movimentos de classe** (60,1%). Os requisitos têm **seis raízes independentes**, incluindo Sacerdote, Presságio, Runa, Empreste Seu Corpo, Espíritos Estão por Toda Parte e Círculo de Convocação. O atlas não torna Sacerdote requisito universal para outros caminhos documentados.
 
 A cadeia RUNA → RUNA VIVA → PELE ESCRITA é preservada: possuir Runa isoladamente não dispensa Runa Viva. O cliente expõe `getClericDependencyChain` para diagnóstico somente, sem aquisição automática. Fonte compacta: `data/lore/hack-carcaca-dw-clerigo-integrais.json.gz`; catálogo JSON legível: `dist/carcaca/hack-cleric-movements.json`. Documentação: [Integração Clérigo](docs/INTEGRACAO_CLERIGO_HACK_DW.md).
+
+
+## Classe Druida — nono grupo integral
+
+O grupo DRUIDA possui agora **27 movimentos transcritos integralmente**, com **42 opções**, **74 partes** rastreáveis e **13 REQUER** (12 referências diretas, uma conjunção). O atlas alcança **407 de 632 movimentos de classe** (**64,4%**).
+
+**FORMA PRIMORDIAL** exige `Metamorfose e Maestria Elemental` ao mesmo tempo. A API `getDruidRequirementPreview` verifica ambos os componentes sem autorizar compra nem alterar a ficha. Outros ramos independentes preservados incluem **Círculo dos Esporos** e **Fogo Selvagem**.
+
+Fontes: `data/lore/hack-carcaca-dw-druida-integrais.json`, `scripts/extrair_druida_docx.py`. Distribuição: `dist/carcaca/hack-druid-movements.json` e `dist/carcaca/hack-druid-movement-indexes.json`. Consulte [Integração Druida](docs/INTEGRACAO_DRUIDA_HACK_DW.md).
