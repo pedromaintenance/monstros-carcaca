@@ -1,0 +1,347 @@
+[
+  {
+    "id": "infraestrutura:comunidades-insulares-costa-sul",
+    "assentamento_id": "assentamento:comunidades-insulares-costa-sul",
+    "suporte_id": "suporte:comunidades-insulares-costa-sul",
+    "natureza": "conjunto_de_comunidades",
+    "fonte": "ambientacao",
+    "setores": [
+      {
+        "id": "construcao_abrigo",
+        "estado": "evidencia_parcial",
+        "ancoras_documentadas": [
+          {
+            "descricao": "Tortles e tabaxis vivem em ilhas próximas à Costa Sul, cada uma com tradições monásticas próprias.",
+            "classe": "habitat_coletivo",
+            "fonte": "ambientacao",
+            "status": "documentado"
+          }
+        ],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [],
+        "problemas_em_aberto": [
+          "Quantidade e configuração das ilhas",
+          "Materiais de construção e tipo de moradia por ilha",
+          "Se há templos monásticos edificados ou práticas sem edifícios"
+        ],
+        "perguntas_para_o_mestre": [
+          "Quais abrigos existem em cada ilha individual?",
+          "Os costumes monásticos exigem espaços construídos?"
+        ],
+        "dependencias_relacionadas": [],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      },
+      {
+        "id": "armazenamento",
+        "estado": "sem_documentacao",
+        "ancoras_documentadas": [],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [],
+        "problemas_em_aberto": [
+          "Quais recursos materiais são trazidos das viagens sazonais",
+          "Se e como alimentos e outros recursos são armazenados",
+          "Se cada ilha possui estoques próprios ou redes de partilha"
+        ],
+        "perguntas_para_o_mestre": [
+          "Há recursos perecíveis que precisam de conservação?",
+          "Há troca entre ilhas documentada em jogo?"
+        ],
+        "dependencias_relacionadas": [
+          "dependencia:ilhas-circulacao-sazonal"
+        ],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      },
+      {
+        "id": "saneamento",
+        "estado": "sem_documentacao",
+        "ancoras_documentadas": [],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [],
+        "problemas_em_aberto": [
+          "Origem da água adequada ao consumo por ilha",
+          "Destinação de resíduos e dejetos",
+          "Impacto sobre áreas costeiras e eventual infraestrutura"
+        ],
+        "perguntas_para_o_mestre": [
+          "Como cada ilha obtém água para seus habitantes?",
+          "Existe sistema de tratamento ou descarte?"
+        ],
+        "dependencias_relacionadas": [],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      },
+      {
+        "id": "acessos_logistica",
+        "estado": "evidencia_parcial",
+        "ancoras_documentadas": [
+          {
+            "descricao": "Tortles e tabaxis viajam sazonalmente e muitos trabalham como marinheiros na região.",
+            "classe": "circulacao_regional",
+            "fonte": "ambientacao",
+            "status": "documentado"
+          }
+        ],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [],
+        "problemas_em_aberto": [
+          "Rotas exatas e épocas das viagens",
+          "Pontos de embarque ou portos e tipos de embarcação",
+          "Relações comerciais específicas com Portomonte"
+        ],
+        "perguntas_para_o_mestre": [
+          "Quais ilhas são acessíveis em cada época?",
+          "Que recursos motivam cada viagem?"
+        ],
+        "dependencias_relacionadas": [
+          "dependencia:ilhas-circulacao-sazonal"
+        ],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      }
+    ]
+  },
+  {
+    "id": "infraestrutura:portomonte",
+    "assentamento_id": "assentamento:portomonte",
+    "suporte_id": "suporte:portomonte",
+    "natureza": "assentamento_civil",
+    "fonte": "ambientacao",
+    "setores": [
+      {
+        "id": "construcao_abrigo",
+        "estado": "evidencia_parcial",
+        "ancoras_documentadas": [
+          {
+            "descricao": "A povoação de Portomonte fica escondida entre os penhascos da praia.",
+            "classe": "geografia",
+            "fonte": "ambientacao",
+            "status": "documentado"
+          },
+          {
+            "descricao": "Há um templo de Deméter que purifica água do Mar de Sangue.",
+            "classe": "instituicao_fisica",
+            "fonte": "ambientacao",
+            "status": "documentado"
+          }
+        ],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [
+          {
+            "instalacao": "Templo de Deméter (a estrutura existe; material construtivo não informado)",
+            "fonte": "ambientacao"
+          }
+        ],
+        "problemas_em_aberto": [
+          "Materiais e técnicas construtivas das moradias",
+          "Número, formato e conservação dos edifícios",
+          "Acessibilidade real nas encostas e penhascos"
+        ],
+        "perguntas_para_o_mestre": [
+          "As estruturas são talhadas na rocha, erguidas sobre ela ou de outro modo?",
+          "Quem realiza manutenção dos acessos às moradias?"
+        ],
+        "dependencias_relacionadas": [],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      },
+      {
+        "id": "armazenamento",
+        "estado": "evidencia_parcial",
+        "ancoras_documentadas": [
+          {
+            "descricao": "Portomonte é um centro de comércio entre assentamentos costeiros.",
+            "classe": "atividade_economica",
+            "fonte": "ambientacao",
+            "status": "documentado"
+          },
+          {
+            "descricao": "A agricultura local existe graças à purificação da água.",
+            "classe": "atividade_produtiva",
+            "fonte": "ambientacao",
+            "status": "documentado"
+          }
+        ],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [],
+        "problemas_em_aberto": [
+          "Existência e localização de celeiros ou depósitos",
+          "Produtos armazenados, técnicas de conservação e capacidade",
+          "Proteção de reservas em situações de cerco"
+        ],
+        "perguntas_para_o_mestre": [
+          "Onde a comunidade conserva suas safras?",
+          "Quem controla eventuais depósitos e sua distribuição?"
+        ],
+        "dependencias_relacionadas": [
+          "dependencia:portomonte-lavoura",
+          "dependencia:portomonte-comercio"
+        ],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      },
+      {
+        "id": "saneamento",
+        "estado": "evidencia_parcial",
+        "ancoras_documentadas": [
+          {
+            "descricao": "O templo de Deméter purifica água do Mar de Sangue para possibilitar o cultivo.",
+            "classe": "transformacao_de_recurso",
+            "fonte": "ambientacao",
+            "status": "documentado"
+          }
+        ],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [],
+        "problemas_em_aberto": [
+          "Tratamento de esgoto e destinação de resíduos",
+          "Água doméstica: origem, qualidade e distribuição",
+          "Possível separação entre água para irrigação e água potável"
+        ],
+        "perguntas_para_o_mestre": [
+          "A purificação serve somente à agricultura ou também a outros usos?",
+          "Como são tratados dejetos e resíduos da povoação?"
+        ],
+        "dependencias_relacionadas": [
+          "dependencia:portomonte-purificacao"
+        ],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      },
+      {
+        "id": "acessos_logistica",
+        "estado": "evidencia_parcial",
+        "ancoras_documentadas": [
+          {
+            "descricao": "Portomonte se situa entre penhascos da praia.",
+            "classe": "geografia",
+            "fonte": "ambientacao",
+            "status": "documentado"
+          },
+          {
+            "descricao": "É centro de comércio entre assentamentos da costa.",
+            "classe": "circulacao_regional",
+            "fonte": "ambientacao",
+            "status": "documentado"
+          }
+        ],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [],
+        "problemas_em_aberto": [
+          "Presença de cais, estradas, escadarias e locais de descarga",
+          "Modal de comércio predominante e rotas específicas",
+          "Rotas alternativas e pontos de estrangulamento"
+        ],
+        "perguntas_para_o_mestre": [
+          "Quais acessos são viáveis com mar agitado?",
+          "Quem controla as rotas de entrada?"
+        ],
+        "dependencias_relacionadas": [
+          "dependencia:portomonte-comercio"
+        ],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      }
+    ]
+  },
+  {
+    "id": "infraestrutura:rede-cavernas-kuo-toa-costa-sul",
+    "assentamento_id": "assentamento:rede-cavernas-kuo-toa-costa-sul",
+    "suporte_id": "suporte:rede-cavernas-kuo-toa-costa-sul",
+    "natureza": "rede_de_abrigos",
+    "fonte": "ambientacao",
+    "setores": [
+      {
+        "id": "construcao_abrigo",
+        "estado": "evidencia_parcial",
+        "ancoras_documentadas": [
+          {
+            "descricao": "Kuo-toa habitam cavernas da costa; a fonte também menciona cidades subaquáticas distintas.",
+            "classe": "habitat_coletivo",
+            "fonte": "ambientacao",
+            "status": "documentado"
+          }
+        ],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [],
+        "problemas_em_aberto": [
+          "Quais cavernas são usadas e como se conectam",
+          "Se há obras artificiais dentro das cavernas",
+          "Manutenção, ventilação e riscos do abrigo"
+        ],
+        "perguntas_para_o_mestre": [
+          "As cavernas são naturais ou foram transformadas?",
+          "Que entradas levam a habitações efetivamente documentadas?"
+        ],
+        "dependencias_relacionadas": [],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      },
+      {
+        "id": "armazenamento",
+        "estado": "sem_documentacao",
+        "ancoras_documentadas": [],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [],
+        "problemas_em_aberto": [
+          "Dieta, provisões e quaisquer locais de armazenamento",
+          "Existência de estoques ou cadeia de suprimento",
+          "Se incursões regionais se relacionam a abastecimento (não documentado)"
+        ],
+        "perguntas_para_o_mestre": [
+          "Como comunidades kuo-toa obtêm e conservam alimento?",
+          "Há circulação de provisões entre cavernas?"
+        ],
+        "dependencias_relacionadas": [],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      },
+      {
+        "id": "saneamento",
+        "estado": "sem_documentacao",
+        "ancoras_documentadas": [],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [],
+        "problemas_em_aberto": [
+          "Água adequada a eventuais necessidades fisiológicas",
+          "Destinação de resíduos e dejetos",
+          "Existência de estruturas de tratamento ou renovação das águas"
+        ],
+        "perguntas_para_o_mestre": [
+          "Como resíduos são tratados em cavernas ocupadas?",
+          "Qual a diferença material entre cavernas e cidades subaquáticas?"
+        ],
+        "dependencias_relacionadas": [],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      },
+      {
+        "id": "acessos_logistica",
+        "estado": "evidencia_parcial",
+        "ancoras_documentadas": [
+          {
+            "descricao": "A fonte situa comunidades kuo-toa em cavernas costeiras e também em cidades subaquáticas.",
+            "classe": "habitat_coletivo",
+            "fonte": "ambientacao",
+            "status": "documentado"
+          }
+        ],
+        "materiais_construtivos_confirmados": [],
+        "instalacoes_especificas_confirmadas": [],
+        "problemas_em_aberto": [
+          "Acessos individuais e conexões entre cavernas",
+          "Qual local originou cada incursão ritual",
+          "Rotas de comunicação entre cavernas e cidades subaquáticas"
+        ],
+        "perguntas_para_o_mestre": [
+          "Que passagem conecta cada abrigo à costa?",
+          "As incursões saem de quais comunidades concretas?"
+        ],
+        "dependencias_relacionadas": [],
+        "risco_narrativo_proposto": null,
+        "efeitos_dw_automaticos": false
+      }
+    ]
+  }
+]

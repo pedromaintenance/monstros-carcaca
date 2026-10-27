@@ -1,0 +1,66 @@
+{
+  "by_assentamento": {
+    "assentamento:comunidades-insulares-costa-sul": [
+      "infraestrutura:comunidades-insulares-costa-sul"
+    ],
+    "assentamento:portomonte": [
+      "infraestrutura:portomonte"
+    ],
+    "assentamento:rede-cavernas-kuo-toa-costa-sul": [
+      "infraestrutura:rede-cavernas-kuo-toa-costa-sul"
+    ]
+  },
+  "by_natureza": {
+    "assentamento_civil": [
+      "infraestrutura:portomonte"
+    ],
+    "conjunto_de_comunidades": [
+      "infraestrutura:comunidades-insulares-costa-sul"
+    ],
+    "rede_de_abrigos": [
+      "infraestrutura:rede-cavernas-kuo-toa-costa-sul"
+    ]
+  },
+  "by_setor_documentado": {
+    "acessos_logistica": [
+      "infraestrutura:comunidades-insulares-costa-sul",
+      "infraestrutura:portomonte",
+      "infraestrutura:rede-cavernas-kuo-toa-costa-sul"
+    ],
+    "armazenamento": [
+      "infraestrutura:portomonte"
+    ],
+    "construcao_abrigo": [
+      "infraestrutura:comunidades-insulares-costa-sul",
+      "infraestrutura:portomonte",
+      "infraestrutura:rede-cavernas-kuo-toa-costa-sul"
+    ],
+    "saneamento": [
+      "infraestrutura:portomonte"
+    ]
+  },
+  "by_setor_sem_dados": {
+    "armazenamento": [
+      "infraestrutura:comunidades-insulares-costa-sul",
+      "infraestrutura:rede-cavernas-kuo-toa-costa-sul"
+    ],
+    "saneamento": [
+      "infraestrutura:comunidades-insulares-costa-sul",
+      "infraestrutura:rede-cavernas-kuo-toa-costa-sul"
+    ]
+  },
+  "by_dependencia": {
+    "dependencia:ilhas-circulacao-sazonal": [
+      "infraestrutura:comunidades-insulares-costa-sul"
+    ],
+    "dependencia:portomonte-comercio": [
+      "infraestrutura:portomonte"
+    ],
+    "dependencia:portomonte-lavoura": [
+      "infraestrutura:portomonte"
+    ],
+    "dependencia:portomonte-purificacao": [
+      "infraestrutura:portomonte"
+    ]
+  }
+}

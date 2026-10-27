@@ -15,6 +15,8 @@
   "total_balancos_materiais": 4,
   "total_pressoes_ecologicas": 4,
   "total_perfis_suporte": 3,
+  "total_perfis_infraestrutura": 3,
+  "total_setores_infraestrutura": 12,
   "arquivos": {
     "creatures": "creatures.json",
     "catalog": "catalog.json",
@@ -37,7 +39,9 @@
     "ecological_pressures": "ecological-pressures.json",
     "ecological_pressure_indexes": "ecological-pressure-indexes.json",
     "support_profiles": "support-profiles.json",
-    "support_indexes": "support-indexes.json"
+    "support_indexes": "support-indexes.json",
+    "infrastructure_profiles": "infrastructure-profiles.json",
+    "infrastructure_indexes": "infrastructure-indexes.json"
   },
   "estado": "curadoria_em_andamento",
   "nota": "Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."
