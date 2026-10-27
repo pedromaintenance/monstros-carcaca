@@ -568,7 +568,7 @@ def validar_terceira_auditoria_manuscrito():
     import unicodedata
     def norm(value):
         text=unicodedata.normalize("NFKD",str(value or "")).encode("ascii","ignore").decode().lower()
-        return re.sub(r"\\s+"," ",text).strip()
+        return re.sub(r"\s+"," ",text).strip()
     source=load("fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")
     names={x["id"] for x in load("data/lore/hack-carcaca-dw-indice-tematico.json")["entradas"]}
     page_text={p["pagina"]:norm(p["texto"]) for p in source["paginas"]}
