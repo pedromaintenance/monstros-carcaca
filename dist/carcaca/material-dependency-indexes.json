@@ -1,0 +1,52 @@
+{
+  "by_assentamento": {
+    "assentamento:comunidades-insulares-costa-sul": [
+      "dependencia:ilhas-circulacao-sazonal"
+    ],
+    "assentamento:portomonte": [
+      "dependencia:portomonte-comercio",
+      "dependencia:portomonte-lavoura",
+      "dependencia:portomonte-purificacao"
+    ],
+    "assentamento:rede-cavernas-kuo-toa-costa-sul": [
+      "dependencia:kuo-toa-incursoes-regionais"
+    ]
+  },
+  "by_fluxo": {
+    "fluxo:comercio-costeiro-portomonte": [
+      "dependencia:portomonte-comercio"
+    ],
+    "fluxo:incursoes-kuo-toa-costa-sul": [
+      "dependencia:kuo-toa-incursoes-regionais"
+    ],
+    "fluxo:purificacao-agua-portomonte": [
+      "dependencia:portomonte-lavoura",
+      "dependencia:portomonte-purificacao"
+    ],
+    "fluxo:viagens-sazonais-comunidades-insulares": [
+      "dependencia:ilhas-circulacao-sazonal"
+    ]
+  },
+  "by_tipo": {
+    "circulacao": [
+      "dependencia:portomonte-comercio"
+    ],
+    "conflito_ritual": [
+      "dependencia:kuo-toa-incursoes-regionais"
+    ],
+    "mobilidade": [
+      "dependencia:ilhas-circulacao-sazonal"
+    ],
+    "producao_dependente": [
+      "dependencia:portomonte-lavoura"
+    ],
+    "transformacao": [
+      "dependencia:portomonte-purificacao"
+    ]
+  },
+  "by_dependencia_predecessora": {
+    "dependencia:portomonte-purificacao": [
+      "dependencia:portomonte-lavoura"
+    ]
+  }
+}

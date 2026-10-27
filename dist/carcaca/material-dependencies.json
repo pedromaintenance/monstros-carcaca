@@ -1,0 +1,91 @@
+[
+  {
+    "id": "dependencia:ilhas-circulacao-sazonal",
+    "assentamento_id": "assentamento:comunidades-insulares-costa-sul",
+    "tipo": "mobilidade",
+    "recurso_id": null,
+    "recurso_descricao": "Histórias e recursos não especificados coletados em viagens sazonais",
+    "fluxo_id": "fluxo:viagens-sazonais-comunidades-insulares",
+    "depende_de_id": null,
+    "estado_evidencia": "documentado",
+    "fonte": "ambientacao",
+    "fato": "Tortles e tabaxis viajam sazonalmente em busca de histórias e recursos.",
+    "consequencia_hipotetica": "Impedimentos às viagens podem afetar a circulação cultural e material; não se conclui escassez alimentar ou dependência de Portomonte.",
+    "desconhecidos": [
+      "Itens coletados, meses e rotas",
+      "Efeito das viagens na subsistência das ilhas",
+      "Assentamentos de destino"
+    ]
+  },
+  {
+    "id": "dependencia:kuo-toa-incursoes-regionais",
+    "assentamento_id": "assentamento:rede-cavernas-kuo-toa-costa-sul",
+    "tipo": "conflito_ritual",
+    "recurso_id": null,
+    "recurso_descricao": "Pessoas capturadas para sacrifício; nunca classificar como alimento por inferência",
+    "fluxo_id": "fluxo:incursoes-kuo-toa-costa-sul",
+    "depende_de_id": null,
+    "estado_evidencia": "inferido",
+    "fonte": "ambientacao",
+    "fato": "Incursões e sacrifícios são documentados na região; origem em uma rede de cavernas específica não foi estabelecida.",
+    "consequencia_hipotetica": "Interrupção de uma incursão pode modificar um conflito ritual de campanha, mas não prova crise de subsistência.",
+    "desconhecidos": [
+      "Origem de cada incursão: cavernas ou cidades subaquáticas",
+      "Organização das expedições",
+      "Métodos de subsistência kuo-toa"
+    ]
+  },
+  {
+    "id": "dependencia:portomonte-comercio",
+    "assentamento_id": "assentamento:portomonte",
+    "tipo": "circulacao",
+    "recurso_id": null,
+    "recurso_descricao": "Mercadorias não especificadas do comércio costeiro",
+    "fluxo_id": "fluxo:comercio-costeiro-portomonte",
+    "depende_de_id": null,
+    "estado_evidencia": "documentado",
+    "fonte": "ambientacao",
+    "fato": "Portomonte funciona como centro de comércio entre assentamentos da costa.",
+    "consequencia_hipotetica": "O bloqueio de uma rota identificada em mesa pode colocar alguma mercadoria em falta, se o mestre primeiro estabelecer qual é.",
+    "desconhecidos": [
+      "Itens comercializados",
+      "Parceiros específicos e trajetos",
+      "Capacidade de estoque e rotas de contingência"
+    ]
+  },
+  {
+    "id": "dependencia:portomonte-lavoura",
+    "assentamento_id": "assentamento:portomonte",
+    "tipo": "producao_dependente",
+    "recurso_id": "recurso:producao_agricola",
+    "recurso_descricao": "Cultivo sobre pedra possibilitado pela água purificada",
+    "fluxo_id": "fluxo:purificacao-agua-portomonte",
+    "depende_de_id": "dependencia:portomonte-purificacao",
+    "estado_evidencia": "documentado",
+    "fonte": "ambientacao",
+    "fato": "A purificação da água viabiliza o cultivo agrícola em Portomonte, inclusive sobre pedra.",
+    "consequencia_hipotetica": "O enfraquecimento da purificação pode pressionar a lavoura; não se pode concluir fome, colapso populacional ou perda de Prosperidade DW automaticamente.",
+    "desconhecidos": [
+      "Produção agrícola quantitativa",
+      "Culturas e métodos de conservação",
+      "Importações alimentares alternativas"
+    ]
+  },
+  {
+    "id": "dependencia:portomonte-purificacao",
+    "assentamento_id": "assentamento:portomonte",
+    "tipo": "transformacao",
+    "recurso_id": "recurso:agua_purificada",
+    "recurso_descricao": "Água do Mar de Sangue purificada no templo de Deméter",
+    "fluxo_id": "fluxo:purificacao-agua-portomonte",
+    "depende_de_id": null,
+    "estado_evidencia": "documentado",
+    "fonte": "ambientacao",
+    "fato": "O templo de Deméter purifica água do Mar de Sangue em Portomonte.",
+    "consequencia_hipotetica": "Uma falha no rito ameaça atividades que dependem da purificação, mas não demonstra falta de água potável para toda a população.",
+    "desconhecidos": [
+      "Volume, duração e alcance do processo de purificação",
+      "Uso doméstico da água purificada"
+    ]
+  }
+]
