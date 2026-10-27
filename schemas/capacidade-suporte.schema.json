@@ -1,0 +1,268 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/capacidade-suporte.schema.json",
+  "title": "Perfil de capacidade de suporte ecológico: Carcaça, sem fatos novos",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "assentamento_id",
+    "natureza_territorial",
+    "estado",
+    "fonte",
+    "descricao",
+    "limites",
+    "demografia",
+    "nao_inferir",
+    "efeito_dw_automatico"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^suporte:[a-z0-9-]+$"
+    },
+    "assentamento_id": {
+      "type": "string",
+      "pattern": "^assentamento:"
+    },
+    "natureza_territorial": {
+      "enum": [
+        "assentamento_civil",
+        "conjunto_de_comunidades",
+        "rede_de_abrigos"
+      ]
+    },
+    "estado": {
+      "enum": [
+        "sem_capacidade_quantificavel",
+        "revisado_com_medicoes"
+      ]
+    },
+    "fonte": {
+      "type": "string",
+      "minLength": 1
+    },
+    "descricao": {
+      "type": "string",
+      "minLength": 10
+    },
+    "limites": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "identidade_recurso",
+          "base_documental",
+          "situacao",
+          "disponibilidade",
+          "necessidade_por_habitante",
+          "lacunas"
+        ],
+        "properties": {
+          "id": {
+            "enum": [
+              "agua_potavel",
+              "alimentacao",
+              "abrigo",
+              "residuos"
+            ]
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 4
+          },
+          "identidade_recurso": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^recurso:"
+          },
+          "base_documental": {
+            "type": "string",
+            "minLength": 10
+          },
+          "situacao": {
+            "enum": [
+              "medicoes_nao_disponiveis",
+              "medicoes_revisadas"
+            ]
+          },
+          "disponibilidade": {
+            "$ref": "#/$defs/medicao"
+          },
+          "necessidade_por_habitante": {
+            "$ref": "#/$defs/medicao"
+          },
+          "lacunas": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          }
+        }
+      }
+    },
+    "demografia": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "residentes",
+        "nascimentos",
+        "obitos",
+        "migracao_entrada",
+        "migracao_saida",
+        "mobilidade_sazonal",
+        "continuidade_reprodutiva",
+        "observacao"
+      ],
+      "properties": {
+        "residentes": {
+          "$ref": "#/$defs/medicao"
+        },
+        "nascimentos": {
+          "$ref": "#/$defs/medicao"
+        },
+        "obitos": {
+          "$ref": "#/$defs/medicao"
+        },
+        "migracao_entrada": {
+          "$ref": "#/$defs/medicao"
+        },
+        "migracao_saida": {
+          "$ref": "#/$defs/medicao"
+        },
+        "mobilidade_sazonal": {
+          "enum": [
+            "nao_documentada",
+            "deslocamentos_sazonais_documentados"
+          ]
+        },
+        "continuidade_reprodutiva": {
+          "enum": [
+            "nao_documentada",
+            "documentada",
+            "inferida"
+          ]
+        },
+        "observacao": {
+          "type": "string",
+          "minLength": 10
+        }
+      }
+    },
+    "nao_inferir": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "efeito_dw_automatico": {
+      "const": false
+    }
+  },
+  "$defs": {
+    "medicao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "valor",
+        "unidade",
+        "periodo",
+        "origem_medicao"
+      ],
+      "properties": {
+        "valor": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unidade": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "periodo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "origem_medicao": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "valor": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "valor"
+            ]
+          },
+          "then": {
+            "properties": {
+              "unidade": {
+                "type": "null"
+              },
+              "periodo": {
+                "type": "null"
+              },
+              "origem_medicao": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "valor": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "valor"
+            ]
+          },
+          "then": {
+            "properties": {
+              "unidade": {
+                "type": "string",
+                "minLength": 1
+              },
+              "periodo": {
+                "type": "string",
+                "minLength": 1
+              },
+              "origem_medicao": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}
