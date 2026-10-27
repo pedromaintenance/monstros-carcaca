@@ -1639,6 +1639,81 @@ def validar_druida_integral():
             "Ramos druídicos não correspondem ao manuscrito.")
     print("Druida: 27 movimentos, 42 opções, 74 partes; 12 REQUER diretos e 1 conjunção. Zero promoção canônica.")
 
+
+def validar_mago_integral():
+    """Confere os 42 movimentos e 21 REQUER diretos preservando os 14 ramos."""
+    from hack_movimentos_personagem import build_mage_indexes
+    raw=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-mago-integrais.json.gz").read_bytes()).decode("utf-8"))
+    inv=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(raw["fonte_sha256"]==inv["fonte_sha256"] and raw["grupo"]=="MAGO",
+            "Fonte Mago divergente do inventario.")
+    moves=raw["movimentos"]
+    listed={m["id"]:m for m in inv["movimentos"] if m["grupo"]=="MAGO"}
+    require(len(moves)==len(listed)==42 and len(unique(moves,"mago"))==42,
+            "Movimentos Mago faltantes ou duplicados.")
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves)
+            and moves[0]["paragrafo_docx"]==2209 and moves[-1]["paragrafo_docx"]==2334,
+            "Ancoras documentais do Mago alteradas.")
+    expected={"total_movimentos":42,"total_com_requer":21,
+              "total_vinculos_exatos":21,"total_opcoes":77,"total_partes":131}
+    require(raw["integridade"]==expected,"Integridade do Mago alterada.")
+    occupied=set();edges={}
+    for m in moves:
+        original=listed.get(m["id"])
+        require(original is not None
+                and m["titulo"]==original["titulo"]
+                and m["requisito_literal"]==original["requisito_literal"]
+                and m["paragrafo_docx"]==original["paragrafo_docx"],
+                "Titulo, ancora ou REQUER de Mago divergente.")
+        require(m["texto_integral_conferido"] is True
+                and m["estado"]=="transcricao_integral_sem_revisao_mecanica"
+                and m["aplicacao_canonica"] is False,
+                "Nenhum Mago pode ser aplicado automaticamente.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
+                "Partes do Mago nao correspondem ao texto integral.")
+        require(m["opcoes"]==[
+            {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+            for p in m["partes"] if p["tipo"]=="opcao"],
+            "Opcoes do Mago incompletas ou divergentes.")
+        require(m["partes"][0]["tipo"]=="corpo"
+                and m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"],
+                "Corpo do Mago sem ancora DOCX.")
+        for p in m["partes"]:
+            require(p["texto"] and p["paragrafo_docx"] not in occupied,
+                    "Paragrafo de Mago vazio ou duplicado.")
+            occupied.add(p["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),
+                "REQUER nao deve ser inferido.")
+        if req:
+            require(req["tipo"]=="movimento_exato" and
+                    req["movimento_id"] in listed and
+                    req["titulo_requerido"]==listed[req["movimento_id"]]["titulo"]
+                    and req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "REQUER de Mago nao e correspondencia direta valida.")
+            edges[m["id"]]=req["movimento_id"]
+    require(len(occupied)==131
+            and sum(len(m["opcoes"]) for m in moves)==77
+            and len(edges)==21,"Perda de partes/opcoes/REQUER de Mago.")
+    for start in edges:
+        current=start;seen={start}
+        while current in edges:
+            current=edges[current]
+            require(current not in seen,"Ciclo de pre-requisitos do Mago.")
+            seen.add(current)
+    ix=build_mage_indexes(moves)
+    require(len(ix["by_raiz_dependencia"])==14
+            and sum(len(v) for v in ix["by_raiz_dependencia"].values())==21
+            and len(ix["by_requisito_tipo"]["movimento_exato"])==21,
+            "Indices de raizes ou REQUER do Mago divergentes.")
+    require(ix["by_requisito_id"]["movimento-classe:paragrafo-2251"]==
+            ["movimento-classe:paragrafo-2252"],
+            "Grimorio nao e REQUER universal da classe Mago.")
+    require(edges["movimento-classe:paragrafo-2329"]==
+            "movimento-classe:paragrafo-2243",
+            "Voo Arcano depende de Telecinese, nao de Grimorio.")
+    print("Mago: 42 movimentos, 77 opcoes, 131 partes e 21 REQUER em 14 raizes. Sem homologacao.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1744,6 +1819,7 @@ def main():
     validar_paladino_integral()
     validar_clerigo_integral()
     validar_druida_integral()
+    validar_mago_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

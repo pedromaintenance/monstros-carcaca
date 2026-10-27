@@ -277,12 +277,13 @@ def build():
     paladino_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-paladino-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
     clerigo_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-clerigo-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
     druida_docx=load("data/lore/hack-carcaca-dw-druida-integrais.json")["movimentos"]
+    mago_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-mago-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
     dependencias_classes=classes_docx["dependencias_exatas_candidatas"]
     dependencias_pendentes=classes_docx["dependencias_nao_resolvidas"]
     try:
-        from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes
+        from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes,build_mage_indexes
     except ModuleNotFoundError:
-        from hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes
+        from hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes,build_mage_indexes
     regras_nucleo=load("data/lore/hack-carcaca-dw-regras-nucleo.json")
     quadros_integrais=load("data/lore/hack-carcaca-dw-quadros-integrais.json")
     movimentos_gerais=compilar_movimentos_gerais(quadros_integrais,docx_tables)
@@ -309,7 +310,8 @@ def build():
     paladino_por_id={m["id"]:m for m in paladino_docx}
     clerigo_por_id={m["id"]:m for m in clerigo_docx}
     druida_por_id={m["id"]:m for m in druida_docx}
-    integral_por_id={**guerreiro_por_id,**barbaro_por_id,**cacador_por_id,**ladino_por_id,**bardo_por_id,**artista_marcial_por_id,**paladino_por_id,**clerigo_por_id,**druida_por_id}
+    mago_por_id={m["id"]:m for m in mago_docx}
+    integral_por_id={**guerreiro_por_id,**barbaro_por_id,**cacador_por_id,**ladino_por_id,**bardo_por_id,**artista_marcial_por_id,**paladino_por_id,**clerigo_por_id,**druida_por_id,**mago_por_id}
     classes_docx_piloto=[{**x,"revisao_preliminar_id":reviewed_paragraphs.get(x["paragrafo_docx"]),
                          "texto_integral_id":x["id"] if x["id"] in integral_por_id else None,
                          "texto_integral_disponivel":x["id"] in integral_por_id}
@@ -323,6 +325,7 @@ def build():
     indice_paladino_docx=build_paladin_indexes(paladino_docx)
     indice_clerigo_docx=build_cleric_indexes(clerigo_docx)
     indice_druida_docx=build_druid_indexes(druida_docx)
+    indice_mago_docx=build_mage_indexes(mago_docx)
     indice_povos_docx=build_people_indexes(povos_docx)
     indice_classes_docx=build_class_indexes(classes_docx_piloto,dependencias_classes,dependencias_pendentes)
     complete_move_indexes={k:defaultdict(set) for k in ("by_grupo","by_marcador","by_preliminar")}
@@ -507,6 +510,8 @@ def build():
         "hack_cleric_movement_indexes":"hack-cleric-movement-indexes.json",
         "hack_druid_movements":"hack-druid-movements.json",
         "hack_druid_movement_indexes":"hack-druid-movement-indexes.json",
+        "hack_mage_movements":"hack-mage-movements.json",
+        "hack_mage_movement_indexes":"hack-mage-movement-indexes.json",
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
@@ -574,6 +579,9 @@ def build():
         "total_movimentos_druida_integrais":len(druida_docx),
         "total_opcoes_druida":sum(len(m["opcoes"]) for m in druida_docx),
         "total_requer_druida":sum(bool(m["requisito_literal"]) for m in druida_docx),
+        "total_movimentos_mago_integrais":len(mago_docx),
+        "total_opcoes_mago":sum(len(m["opcoes"]) for m in mago_docx),
+        "total_requer_mago":sum(bool(m["requisito_literal"]) for m in mago_docx),
         "total_movimentos_ladino_integrais":len(ladino_docx),
         "total_opcoes_ladino":sum(len(m["opcoes"]) for m in ladino_docx),
         "total_requer_ladino":sum(bool(m["requisito_literal"]) for m in ladino_docx),
@@ -649,6 +657,8 @@ def build():
            files["hack_cleric_movement_indexes"]:indice_clerigo_docx,
            files["hack_druid_movements"]:druida_docx,
            files["hack_druid_movement_indexes"]:indice_druida_docx,
+           files["hack_mage_movements"]:mago_docx,
+           files["hack_mage_movement_indexes"]:indice_mago_docx,
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,

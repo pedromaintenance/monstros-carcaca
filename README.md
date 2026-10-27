@@ -326,3 +326,12 @@ O grupo DRUIDA possui agora **27 movimentos transcritos integralmente**, com **4
 **FORMA PRIMORDIAL** exige `Metamorfose e Maestria Elemental` ao mesmo tempo. A API `getDruidRequirementPreview` verifica ambos os componentes sem autorizar compra nem alterar a ficha. Outros ramos independentes preservados incluem **Círculo dos Esporos** e **Fogo Selvagem**.
 
 Fontes: `data/lore/hack-carcaca-dw-druida-integrais.json`, `scripts/extrair_druida_docx.py`. Distribuição: `dist/carcaca/hack-druid-movements.json` e `dist/carcaca/hack-druid-movement-indexes.json`. Consulte [Integração Druida](docs/INTEGRACAO_DRUIDA_HACK_DW.md).
+
+
+## Classe Mago — decimo grupo integral
+
+Os **42 movimentos de MAGO** foram transcritos integralmente (77 opcoes, 131 partes textuais e **21 REQUER de alvo direto**). A cobertura chega a **449 de 632 movimentos de classe** (71,0%); 183 movimentos ainda aguardam transcricao integral.
+
+O Mago possui **14 raizes documentais de pre-requisitos**. Por exemplo, PESQUISA ARCANA requer GRIMÓRIO, enquanto NÃO ERA EU requer ILUSÃO e VOO ARCANO requer TELECINESE. A catalogação não inventa GRIMÓRIO como condição universal das demais práticas. O método `getMageRequirementPreview` pesquisa a cadeia de dependências sem conceder movimentos nem autorizar compra.
+
+Fonte versionada: `data/lore/hack-carcaca-dw-mago-integrais.json.gz` (JSON gzip). JSON distribuido: `dist/carcaca/hack-mage-movements.json`; indices: `dist/carcaca/hack-mage-movement-indexes.json`. Consulte [documentacao da integracao](docs/INTEGRACAO_MAGO_HACK_DW.md).

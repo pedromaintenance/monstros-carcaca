@@ -69,7 +69,9 @@ const fixtures={
     hack_cleric_movements:"hack-cleric-movements.json",
     hack_cleric_movement_indexes:"hack-cleric-movement-indexes.json",
     hack_druid_movements:"hack-druid-movements.json",
-    hack_druid_movement_indexes:"hack-druid-movement-indexes.json"}},
+    hack_druid_movement_indexes:"hack-druid-movement-indexes.json",
+    hack_mage_movements:"hack-mage-movements.json",
+    hack_mage_movement_indexes:"hack-mage-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -120,6 +122,30 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-mage-movements.json":[
+    {id:"movimento-classe:paragrafo-2241",titulo:"ILUSÃO",grupo:"MAGO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Quando criar uma ilusão sensorial.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2322",titulo:"NÃO ERA EU",grupo:"MAGO",
+     requisito_literal:"Ilusão",
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2241"},
+     opcoes:[],texto_original:"Uma vez por cena, quando uma violência o atingir.",
+     aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2251",titulo:"GRIMÓRIO",grupo:"MAGO",
+     requisito_literal:null,requisito_estruturado:null,
+     opcoes:[],texto_original:"Escolha ou descreva um grimório.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2252",titulo:"PESQUISA ARCANA",grupo:"MAGO",
+     requisito_literal:"Grimório",
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2251"},
+     opcoes:[{paragrafo_docx:2253,texto:"um custo e uma exigência"}],
+     texto_original:"Quando inventar uma aplicação mágica.",
+     aplicacao_canonica:false}
+  ],
+  "hack-mage-movement-indexes.json":{
+    by_requisito_tipo:{movimento_exato:["movimento-classe:paragrafo-2322","movimento-classe:paragrafo-2252"]},
+    by_raiz_dependencia:{
+      "movimento-classe:paragrafo-2241":["movimento-classe:paragrafo-2322"],
+      "movimento-classe:paragrafo-2251":["movimento-classe:paragrafo-2252"]}},
   "hack-druid-movements.json":[
     {id:"movimento-classe:paragrafo-2130",titulo:"METAMORFOSE",grupo:"DRUIDA",
      requisito_literal:null,requisito_estruturado:null,opcoes:[],
@@ -1673,4 +1699,31 @@ test("Druida exige Metamorfose E Maestria Elemental para Forma Primordial",async
   assert.equal(spores.componentes_requeridos[0].movimento_id,"movimento-classe:paragrafo-2137");
   assert.equal(await atlas.getDruidRequirementPreview("movimento-classe:paragrafo-9999"),null);
   await assert.rejects(()=>atlas.getDruidRequirementPreview(forma,{movimentosPossuidos:"inválido"}),TypeError);
+});
+
+
+
+test("Mago preserva escolas independentes sem inventar Grimório universal",async()=>{
+  const all=await atlas.getMageMovements();
+  assert.equal(all.length,4);
+  assert.equal((await atlas.searchMageMovements({titulo:"NAO ERA EU"})).length,1);
+  assert.equal((await atlas.searchMageMovements({requer:"GRIMORIO"})).length,1);
+  assert.equal((await atlas.searchMageMovements({comOpcoes:true})).length,1);
+  const ilusionistas=await atlas.searchMageMovements({raizDependencia:"movimento-classe:paragrafo-2241"});
+  assert.deepEqual(ilusionistas.map(m=>m.titulo),["NÃO ERA EU"]);
+  assert.equal((await atlas.getMageMovementIndexes()).by_requisito_tipo.movimento_exato.length,2);
+  const no=await atlas.getMageRequirementPreview("movimento-classe:paragrafo-2322");
+  assert.deepEqual(no.cadeia_imediato_para_raiz.map(x=>x.presente_na_lista),[false]);
+  const yes=await atlas.getMageRequirementPreview("movimento-classe:paragrafo-2322",{
+    movimentosPossuidos:["movimento-classe:paragrafo-2241"]});
+  assert.equal(yes.componentes_identificados_presentes,true);
+  assert.equal(yes.raiz_movimento_id,"movimento-classe:paragrafo-2241");
+  assert.equal(yes.habilitado_para_compra,null);
+  assert.equal(yes.necessita_avaliacao_do_mestre,true);
+  assert.equal(yes.aplicacao_canonica,false);
+  const base=await atlas.getMageRequirementPreview("movimento-classe:paragrafo-2241");
+  assert.deepEqual(base.cadeia_imediato_para_raiz,[]);
+  assert.equal(await atlas.getMageMovement("movimento-classe:paragrafo-9999"),null);
+  await assert.rejects(()=>atlas.getMageRequirementPreview("movimento-classe:paragrafo-2322",{
+    movimentosPossuidos:"invalido"}),TypeError);
 });
