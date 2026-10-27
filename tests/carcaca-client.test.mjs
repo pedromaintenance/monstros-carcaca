@@ -1537,6 +1537,7 @@ test("Paladino concede dois movimentos gratuitamente sem dispensar REQUER",async
   assert.equal(origem.concessoes_gratuitas_literais.length,2);
   assert.equal((await atlas.searchPaladinMovements({comConcessoes:true})).length,1);
   assert.equal((await atlas.searchPaladinMovements({comRequer:true})).length,2);
+  assert.equal((await atlas.searchPaladinMovements({requer:"MISSAO SAGRADA"})).length,2);
   assert.equal((await atlas.searchPaladinMovements({query:"livremente"})).length,1);
   assert.equal((await atlas.getPaladinMovementIndexes()).by_tem_requer.sim.length,2);
   const juramento="movimento-classe:paragrafo-1976";

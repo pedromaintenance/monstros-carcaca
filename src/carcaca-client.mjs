@@ -67,7 +67,7 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
     return (await getPaladinMovements()).find(m=>m.id===id)??null;
   }
   async function searchPaladinMovements({titulo,query,requer,comRequer,comOpcoes,comConcessoes}={}){
-    const norm=s=>String(s??"").normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
     return (await getPaladinMovements()).filter(m=>
       (!titulo||norm(m.titulo).includes(norm(titulo)))&&
       (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
