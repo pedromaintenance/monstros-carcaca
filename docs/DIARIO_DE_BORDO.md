@@ -298,3 +298,21 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 - No snapshot público `dist/carcaca/`, `manifest.json` registra 16 pendências/8 prioridades. `research-backlog.json` conserva 8 pendências sem prioridade definida e 4 perguntas com precedência editorial; todos os fatos esperados seguem `null`.
 - `research-backlog-indexes.json` possui sete grupos de busca. Nenhum setor regional foi considerado desabitado por ausência de registros.
 - O backlog oferece roteiro de investigação, não conclusão canônica, ação de jogo ou medição real. Próximo ciclo: auditoria de fontes para uma única prioridade, com resultado verificável, inclusive quando só for possível documentar a insuficiência das fontes.
+
+## 2026-10-27 · Ingestão do manuscrito Hack Carcaça Dungeon World
+
+**Recebido:** `Hack Carcaça Dungeon World.docx` (181 páginas), manuscrito de Pedro Rodrigues. A fonte possui três camadas: ambientação, mecânicas do hack e catálogo de movimentos. A importação integrou **a ambientação (Capítulo I, páginas 2–25)**; não copiou regras DW ou movimentos para o catálogo de fatos do mundo.
+
+**Fonte preservada:** `fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json`, 24 páginas de texto, registrado sob `hack_carcaca_dw_rascunho` em `data/fontes_projeto.json`. A captura conserva quebras de página como referência, não afirma ser edição final do DOCX.
+
+**Índices e fatos em revisão:** 100 entradas de entidades/temas, 18 pontos de cronologia EC, 7 perguntas em aberto, 7 pontos de reconciliação editorial e 14 pontes com o Atlas M3. Os registros preservam `afirmado_no_rascunho` e `referencia_sem_mutar_canonico`, não estado `documentado` dos assentamentos.
+
+**Principal ganho de curadoria:** o texto individualiza **Portomonte como um dos destinos de alguns druidas exilados de Eldroth**, além de outros destinos como Thargrid e arquipélagos. A fila de M3 continua sem evento ou números de refugiados por assentamento; há nova evidência para avaliar manualmente e com escala restrita ao grupo de druidas.
+
+**Novas oportunidades:** reforço da sociedade material de Thargrid (minas, forjas, depósitos, galerias), distinção de Abissais marinhos e demônios do Abismo, cultura de tritões e sereias no oceano azul, religião plural, geografia colonial de Garganta/Drakport e tradições linguísticas da civilização Yokai.
+
+**Conflitos deliberadamente mantidos abertos:** relação espacial Gualápolis/Shadar-Riverie/Boca; referência a expulsão kuo-toa do Extremo Oeste; polissemia de Yokai; cosmologia de Abissais; limites do uso da água de Deméter; novos destinos de refugiados; direito de nomear. Nenhuma resolução inventada.
+
+**Dados e software:** `data/lore/`, `schemas/lore-hack-manuscrito.schema.json`, `scripts/validar_curadoria.py`, `scripts/gerar_indices_curadoria.py`, API `src/carcaca-client.mjs`; testes de correspondência de páginas, referência e separação canônica.
+
+**Documento:** `docs/LORE_HACK_CARCACA_DW.md`.

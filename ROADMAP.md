@@ -323,3 +323,19 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] `dist/carcaca/research-backlog.json`: quatro pesquisas de primeiro lote, quatro do segundo, oito não priorizadas; quatro precedências; nenhuma resposta e nenhuma evidência nova atribuída.
 - [x] `dist/carcaca/research-backlog-indexes.json`: índices validados por região, tema, estado, faixa, pergunta anterior, artefato potencial e dossiê.
 - [x] Todos os registros continuam `resposta_confirmada:null`, `evidencia_nova:null` e `mutacao_canonica:false`.
+
+## Ingestão do manuscrito Dungeon World — A Carcaça (2026-10-27)
+
+- [x] Examinar a estrutura de 181 páginas e separar **Capítulo I — Ambientação** dos Capítulos II/III de regras e movimentos.
+- [x] Arquivar as **24 páginas (2 a 25)** do capítulo autoral em `fontes/autoria/`, preservando referências para consulta.
+- [x] Indexar **100 entradas** de lugar, região, plano, povo, facção, pessoa, divindade e conceito, com aliases e páginas.
+- [x] Indexar **18 eventos de cronologia EC** e **7 incógnitas históricas** que o manuscrito deixa em aberto.
+- [x] Registrar **7 pontos de revisão** com decisão conservadora (não resolver divergência sem revisão autoral).
+- [x] Criar **14 pontes de lore→M3**, incluindo resposta parcial de Portomonte como destino de alguns druidas e não de todos os refugiados.
+- [x] Registrar `hack_carcaca_dw_rascunho` no cadastro de fontes sem alterar fatos consolidados.
+- [x] Schema e validação da integridade de páginas, campos, cronologia e vínculos de perguntas/regiões.
+- [x] Distribuir índices e dados via `dist/carcaca/lore-*.json`, com API de consulta ESM por texto, tema, página e dossiê.
+- [x] Adicionar testes Python sobre dados reais e testes Node com fixtures sem mutação.
+- [x] Documentar estrutura, descobertas, conflitos, rotas de acesso e limitação de capítulos em `docs/LORE_HACK_CARCACA_DW.md`.
+- [ ] Cotejar os sete pontos de revisão com a cartografia/cânone atualizado antes de promover informações ao atlas.
+- [ ] Considerar indexação específica dos movimentos do Capítulo III em módulo de **mecânicas**, separado da lore.

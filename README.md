@@ -134,3 +134,9 @@ Os guias autorais estão em `data/guias_dossies_regionais.json`; a consulta é f
 A pesquisa do M3 passa a ter uma **fila publicada de 16 perguntas regionais**. Oito possuem prioridade editorial; outras oito permanecem aguardando ordenação. Todas continuam sem respostas documentais conclusivas neste ciclo.
 
 `data/prioridades_curadoria_m3.json` armazena as prioridades sem duplicar os guias; os produtos publicados são `research-backlog.json` e `research-backlog-indexes.json`. O cliente permite `getResearchBacklog` e `searchResearchBacklog`; `reviewResearchBacklog` revisa a fila sem alterar a lore. [Consultar a fila de pesquisa](docs/FILA_CURADORIA_M3.md).
+
+## Manuscrito autoral do Hack Carcaça DW — lore indexada
+
+O **Capítulo I (páginas 2 a 25)** do manuscrito `Hack Carcaça Dungeon World.docx` foi incorporado à pesquisa como **fonte autoral em revisão**: 24 páginas de texto consultável, **100 entradas temáticas**, **18 marcos cronológicos**, **7 incógnitas**, **7 questões de reconciliação** e **14 pontes com as regiões e perguntas do M3**.
+
+A consulta fica nos artefatos `dist/carcaca/lore-*.json`, com `searchLore`, `getLoreChronology` e `searchLoreAtlasLinks`. **Nenhum dado foi promovido automaticamente a cânone, fichas D&D/DW ou eventos de campanha.** [Ler o índice completo e os conflitos editoriais](docs/LORE_HACK_CARCACA_DW.md).

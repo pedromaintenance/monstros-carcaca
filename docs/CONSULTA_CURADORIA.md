@@ -196,3 +196,15 @@ const revisao=reviewResearchBacklog(fila);
 ```
 
 **Todas as 16 questões permanecem sem resposta nova registrada**. Oito estão ordenadas; as demais aguardam prioridade. `reviewResearchBacklog` apresenta dependências editoriais e lacunas, não responde automaticamente às questões ou aprova qualquer mudança de cânone. Veja `docs/FILA_CURADORIA_M3.md`.
+
+## Consulta ao manuscrito Hack Carcaça DW (2026-10-27)
+
+```js
+const itens=await atlas.searchLore({query:"Yokai",tipo:"povo"});
+const cronologia=await atlas.getLoreChronology();
+const revisoes=await atlas.getLoreReviewNotes();
+const link=await atlas.searchLoreAtlasLinks({perguntaId:"pergunta:costa-sul-migracao"});
+const indice=await atlas.getLoreIndexIndexes();
+```
+
+`getLoreIndex`, `getLoreEntity(id)`, `searchLore({query,tipo,pagina})`, `getLoreChronology`, `getLoreReviewNotes`, `getLoreAtlasLinks`, `getLoreAtlasLinkIndexes` e `searchLoreAtlasLinks` consultam **afirmações de manuscrito em revisão**. O trecho de Portomonte é resposta parcial **para alguns druidas**, não para todos os refugiados. Os objetos do manuscrito não alteram tags DW ou mapas. Fonte por página em `fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json` e discussão em `docs/LORE_HACK_CARCACA_DW.md`.
