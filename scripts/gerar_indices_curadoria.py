@@ -9,7 +9,10 @@ import re
 import unicodedata
 from collections import defaultdict
 from pathlib import Path
-from hack_movimentos_gerais import compilar_movimentos_gerais, indexar_movimentos_gerais
+try:
+    from scripts.hack_movimentos_gerais import compilar_movimentos_gerais, indexar_movimentos_gerais
+except ModuleNotFoundError:
+    from hack_movimentos_gerais import compilar_movimentos_gerais, indexar_movimentos_gerais
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "dist" / "carcaca"
