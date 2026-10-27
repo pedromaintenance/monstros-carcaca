@@ -1714,6 +1714,81 @@ def validar_mago_integral():
             "Voo Arcano depende de Telecinese, nao de Grimorio.")
     print("Mago: 42 movimentos, 77 opcoes, 131 partes e 21 REQUER em 14 raizes. Sem homologacao.")
 
+
+def validar_feiticeiro_integral():
+    """Preserva os 42 movimentos e sete raizes REQUER independentes."""
+    from hack_movimentos_personagem import build_sorcerer_indexes
+    obj=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-feiticeiro-integrais.json.gz").read_bytes()).decode("utf-8"))
+    inv=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(obj["fonte_sha256"]==inv["fonte_sha256"] and obj["grupo"]=="FEITICEIRO",
+            "Fonte de Feiticeiro divergente.")
+    moves=obj["movimentos"]
+    originals={m["id"]:m for m in inv["movimentos"] if m["grupo"]=="FEITICEIRO"}
+    require(len(moves)==len(originals)==42 and len(unique(moves,"feiticeiro"))==42,
+            "Movimentos de Feiticeiro faltantes ou duplicados.")
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves)
+            and moves[0]["paragrafo_docx"]==2348 and moves[-1]["paragrafo_docx"]==2446,
+            "Ancoras Feiticeiro alteradas.")
+    require(obj["integridade"]=={"total_movimentos":42,"total_com_requer":20,
+            "total_vinculos_exatos":20,"total_opcoes":48,"total_partes":100},
+            "Integridade do Feiticeiro alterada.")
+    occupied=set();edges={}
+    for m in moves:
+        old=originals.get(m["id"])
+        require(old is not None and m["titulo"]==old["titulo"] and
+                m["paragrafo_docx"]==old["paragrafo_docx"] and
+                m["requisito_literal"]==old["requisito_literal"],
+                "Titulo, posicao ou REQUER divergentes.")
+        require(m["texto_integral_conferido"] is True and
+                m["estado"]=="transcricao_integral_sem_revisao_mecanica" and
+                m["aplicacao_canonica"] is False,
+                "Proibida promocao automatica ao canon.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"])
+                and m["partes"][0]["tipo"]=="corpo"
+                and m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"],
+                "Texto de Feiticeiro perdeu partes.")
+        require(m["opcoes"]==[
+                {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+                for p in m["partes"] if p["tipo"]=="opcao"],
+                "Opcoes textuais de Feiticeiro truncadas.")
+        for p in m["partes"]:
+            require(p["texto"] and p["paragrafo_docx"] not in occupied,
+                    "Paragrafo Feiticeiro duplicado/vazio.")
+            occupied.add(p["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),"REQUER inventado ou omitido.")
+        if req:
+            require(req["tipo"]=="movimento_exato" and
+                    req["movimento_id"] in originals and
+                    req["titulo_requerido"]==originals[req["movimento_id"]]["titulo"] and
+                    req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "REQUER Feiticeiro nao corresponde a um movimento exato.")
+            edges[m["id"]]=req["movimento_id"]
+    require(len(occupied)==100 and sum(len(m["opcoes"]) for m in moves)==48 and
+            len(edges)==20,"Opcoes, trechos ou requisitos Feiticeiro perdidos.")
+    for start in edges:
+        node=start;seen={start}
+        while node in edges:
+            node=edges[node]
+            require(node not in seen,"Ciclo REQUER Feiticeiro.")
+            seen.add(node)
+    ix=build_sorcerer_indexes(moves)
+    roots={"movimento-classe:paragrafo-2348":9,
+           "movimento-classe:paragrafo-2354":3,
+           "movimento-classe:paragrafo-2355":3,
+           "movimento-classe:paragrafo-2363":1,
+           "movimento-classe:paragrafo-2364":2,
+           "movimento-classe:paragrafo-2406":1,
+           "movimento-classe:paragrafo-2440":1}
+    require({k:len(v) for k,v in ix["by_raiz_dependencia"].items()}==roots
+            and {k:len(v) for k,v in ix["by_requisito_id"].items()}==roots
+            and len(ix["by_requisito_tipo"]["movimento_exato"])==20,
+            "Sete raizes de Feiticeiro nao conferem.")
+    require(edges["movimento-classe:paragrafo-2446"]=="movimento-classe:paragrafo-2440"
+            and edges["movimento-classe:paragrafo-2412"]=="movimento-classe:paragrafo-2406",
+            "Requisitos do Sonho ou Fenix divergentes.")
+    print("Feiticeiro: 42 movimentos, 48 opcoes, 100 partes e 20 REQUER em sete raizes.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1820,6 +1895,7 @@ def main():
     validar_clerigo_integral()
     validar_druida_integral()
     validar_mago_integral()
+    validar_feiticeiro_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

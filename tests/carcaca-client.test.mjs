@@ -71,7 +71,9 @@ const fixtures={
     hack_druid_movements:"hack-druid-movements.json",
     hack_druid_movement_indexes:"hack-druid-movement-indexes.json",
     hack_mage_movements:"hack-mage-movements.json",
-    hack_mage_movement_indexes:"hack-mage-movement-indexes.json"}},
+    hack_mage_movement_indexes:"hack-mage-movement-indexes.json",
+    hack_sorcerer_movements:"hack-sorcerer-movements.json",
+    hack_sorcerer_movement_indexes:"hack-sorcerer-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -122,6 +124,36 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-sorcerer-movements.json":[
+    {id:"movimento-classe:paragrafo-2348",titulo:"MAGIA NO SANGUE",grupo:"FEITICEIRO",
+     requisito_literal:null,requisito_estruturado:null,
+     opcoes:[{paragrafo_docx:2349,texto:"produz efeito;"}],
+     texto_original:"Quando liberar sua natureza mágica.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2369",titulo:"FONTE ABERTA",grupo:"FEITICEIRO",
+     requisito_literal:"Magia no Sangue",
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2348"},
+     opcoes:[],texto_original:"Quando liberar sua fonte.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2354",titulo:"MAGIA SELVAGEM",grupo:"FEITICEIRO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Magia caótica.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2384",titulo:"CAOS CONTROLADO",grupo:"FEITICEIRO",
+     requisito_literal:"Magia Selvagem",
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2354"},
+     opcoes:[],texto_original:"Controlar o caos.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2440",titulo:"ENTRE SONHOS",grupo:"FEITICEIRO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Encontro onírico.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2446",titulo:"TRAZER ALGO DO SONHO",grupo:"FEITICEIRO",
+     requisito_literal:"Entre Sonhos",
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2440"},
+     opcoes:[],texto_original:"Trazer algo do sonho.",aplicacao_canonica:false}
+  ],
+  "hack-sorcerer-movement-indexes.json":{
+    by_requisito_tipo:{movimento_exato:["movimento-classe:paragrafo-2369","movimento-classe:paragrafo-2384","movimento-classe:paragrafo-2446"]},
+    by_raiz_dependencia:{
+      "movimento-classe:paragrafo-2348":["movimento-classe:paragrafo-2369"],
+      "movimento-classe:paragrafo-2354":["movimento-classe:paragrafo-2384"],
+      "movimento-classe:paragrafo-2440":["movimento-classe:paragrafo-2446"]}},
   "hack-mage-movements.json":[
     {id:"movimento-classe:paragrafo-2241",titulo:"ILUSÃO",grupo:"MAGO",
      requisito_literal:null,requisito_estruturado:null,opcoes:[],
@@ -1726,4 +1758,26 @@ test("Mago preserva escolas independentes sem inventar Grimório universal",asyn
   assert.equal(await atlas.getMageMovement("movimento-classe:paragrafo-9999"),null);
   await assert.rejects(()=>atlas.getMageRequirementPreview("movimento-classe:paragrafo-2322",{
     movimentosPossuidos:"invalido"}),TypeError);
+});
+
+
+
+test("Feiticeiro: REQUER independentes, busca e prévia sem compra automática",async()=>{
+  const all=await atlas.getSorcererMovements();
+  assert.equal(all.length,6);
+  assert.equal((await atlas.searchSorcererMovements({titulo:"fonte aberta"})).length,1);
+  assert.equal((await atlas.searchSorcererMovements({requer:"MAGIA SELVAGEM"})).length,1);
+  assert.equal((await atlas.searchSorcererMovements({comOpcoes:true}))[0].titulo,"MAGIA NO SANGUE");
+  assert.equal((await atlas.searchSorcererMovements({raizDependencia:"movimento-classe:paragrafo-2354"}))[0].titulo,"CAOS CONTROLADO");
+  assert.equal((await atlas.getSorcererMovementIndexes()).by_requisito_tipo.movimento_exato.length,3);
+  const id="movimento-classe:paragrafo-2446",origem="movimento-classe:paragrafo-2440";
+  const none=await atlas.getSorcererRequirementPreview(id);
+  assert.deepEqual(none.cadeia_imediato_para_raiz.map(x=>x.movimento_id),[origem]);
+  assert.equal(none.componentes_identificados_presentes,false);
+  const complete=await atlas.getSorcererRequirementPreview(id,{movimentosPossuidos:[origem]});
+  assert.equal(complete.componentes_identificados_presentes,true);
+  assert.equal(complete.habilitado_para_compra,null);
+  assert.equal(complete.aplicacao_canonica,false);
+  assert.equal(await atlas.getSorcererRequirementPreview("movimento-classe:paragrafo-9999"),null);
+  await assert.rejects(()=>atlas.getSorcererRequirementPreview(id,{movimentosPossuidos:"inválido"}),TypeError);
 });

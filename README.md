@@ -335,3 +335,10 @@ Os **42 movimentos de MAGO** foram transcritos integralmente (77 opcoes, 131 par
 O Mago possui **14 raizes documentais de pre-requisitos**. Por exemplo, PESQUISA ARCANA requer GRIMÓRIO, enquanto NÃO ERA EU requer ILUSÃO e VOO ARCANO requer TELECINESE. A catalogação não inventa GRIMÓRIO como condição universal das demais práticas. O método `getMageRequirementPreview` pesquisa a cadeia de dependências sem conceder movimentos nem autorizar compra.
 
 Fonte versionada: `data/lore/hack-carcaca-dw-mago-integrais.json.gz` (JSON gzip). JSON distribuido: `dist/carcaca/hack-mage-movements.json`; indices: `dist/carcaca/hack-mage-movement-indexes.json`. Consulte [documentacao da integracao](docs/INTEGRACAO_MAGO_HACK_DW.md).
+
+
+## Classe Feiticeiro — décimo primeiro grupo integral
+
+Integrados **42 movimentos completos** (48 opções, 100 trechos e 20 REQUER literais) de FEITICEIRO. Com isso, o atlas cobre **491 de 632 movimentos de classe** (77,7%). As sete fontes de dependência são Magia no Sangue (9), Magia Selvagem (3), Herança Dracônica (3), Invasão Mental (2), Manto da Fênix (1), Telepatia (1) e Entre Sonhos (1).
+
+Consulta em `getSorcererMovements`, `searchSorcererMovements` e `getSorcererRequirementPreview`. Fonte: `data/lore/hack-carcaca-dw-feiticeiro-integrais.json.gz`; catálogo: `dist/carcaca/hack-sorcerer-movements.json`; índices: `dist/carcaca/hack-sorcerer-movement-indexes.json`. [Guia técnico](docs/INTEGRACAO_FEITICEIRO_HACK_DW.md). REQUER permanece obrigatório e não há aquisição automática.

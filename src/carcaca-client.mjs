@@ -60,6 +60,45 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getSorcererMovements(){return byKey("hack_sorcerer_movements");}
+  async function getSorcererMovementIndexes(){return byKey("hack_sorcerer_movement_indexes");}
+  async function getSorcererMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    return (await getSorcererMovements()).find(x=>x.id===id)??null;
+  }
+  async function searchSorcererMovements({titulo,query,requer,comRequer,comOpcoes,raizDependencia}={}){
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const movimentos=await getSorcererMovements();
+    const index=raizDependencia?await getSorcererMovementIndexes():null;
+    const branch=raizDependencia?new Set(index.by_raiz_dependencia[raizDependencia]??[]):null;
+    return movimentos.filter(m=>
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (!requer||norm(m.requisito_literal).includes(norm(requer)))&&
+      (comRequer===undefined||Boolean(m.requisito_literal)===comRequer)&&
+      (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
+      (!branch||branch.has(m.id)));
+  }
+  async function getSorcererRequirementPreview(id,{movimentosPossuidos=[]}={}){
+    if(!Array.isArray(movimentosPossuidos))throw new TypeError("movimentosPossuidos deve ser array");
+    const moves=await getSorcererMovements();
+    const byId=new Map(moves.map(m=>[m.id,m]));
+    const move=byId.get(id);if(!move)return null;
+    const held=new Set(movimentosPossuidos),seen=new Set([id]),chain=[];
+    let current=move;
+    while(current.requisito_estruturado){
+      const parent=current.requisito_estruturado.movimento_id;
+      if(seen.has(parent)||!byId.has(parent))throw new Error("Ciclo ou REQUER sem alvo em Feiticeiro");
+      seen.add(parent);current=byId.get(parent);
+      chain.push({movimento_id:parent,titulo:current.titulo,presente_na_lista:held.has(parent)});
+    }
+    return {movimento_id:id,requisito_literal:move.requisito_literal,
+      cadeia_imediato_para_raiz:chain,raiz_movimento_id:current.id,
+      componentes_identificados_presentes:chain.every(x=>x.presente_na_lista),
+      habilitado_para_compra:null,necessita_avaliacao_do_mestre:true,
+      aplicacao_canonica:false,
+      observacao:"Diagnostico de REQUER. A presenca de movimentos nao homologa nem autoriza a compra."};
+  }
   async function getMageMovements(){return byKey("hack_mage_movements");}
   async function getMageMovementIndexes(){return byKey("hack_mage_movement_indexes");}
   async function getMageMovement(id){
@@ -747,6 +786,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           searchDruidMovements,getDruidRequirementPreview,
           getMageMovements,getMageMovement,getMageMovementIndexes,
           searchMageMovements,getMageRequirementPreview,
+          getSorcererMovements,getSorcererMovement,getSorcererMovementIndexes,
+          searchSorcererMovements,getSorcererRequirementPreview,
           getBardRequirementPreview,
           getMartialArtistRequirementPreview,
           getRogueRequirementPreview,
