@@ -376,6 +376,30 @@ def validar_dinamicas_territoriais(fontes,rids):
     print(f"Dinâmicas territoriais válidas: {len(dynamics)} vínculos regionais, "
           f"{len(labels)} rótulos não aplicados automaticamente a assentamentos.")
 
+
+def validar_guias_dossies_regionais(fontes,rids):
+    """Exigir um guia por região, perguntas distintas e nenhuma localidade fabricada."""
+    schema=load("schemas/guia-dossie-regional.schema.json")
+    Draft202012Validator.check_schema(schema)
+    check=Draft202012Validator(schema)
+    guides=load("data/guias_dossies_regionais.json")["guias"]
+    unique(guides,"guias regionais")
+    seen_questions=set()
+    require({g["regiao_id"] for g in guides}==rids,
+            "Um guia de cobertura por região curada é obrigatório.")
+    for g in guides:
+        errors=list(check.iter_errors(g))
+        require(not errors,f"Guia regional inválido {g['id']}: {errors[:1]}")
+        require(g["id"]=="dossie-regional:"+g["regiao_id"].split(":",1)[1],
+                f"ID de guia regional não corresponde à região: {g['id']}")
+        require(g["fonte"] in fontes,f"Fonte de guia inexistente: {g['id']}")
+        for question in g["perguntas"]:
+            require(question["id"] not in seen_questions,
+                    "ID de pergunta repetido: "+question["id"])
+            seen_questions.add(question["id"])
+    print(f"Guias regionais validados: {len(guides)} regiões, "
+          f"{len(seen_questions)} perguntas, sem preencher números nem eventos.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -462,6 +486,7 @@ def main():
     validar_capacidade_suporte(fontes)
     validar_infraestrutura_costa_sul(fontes)
     validar_dinamicas_territoriais(fontes,rids)
+    validar_guias_dossies_regionais(fontes,rids)
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

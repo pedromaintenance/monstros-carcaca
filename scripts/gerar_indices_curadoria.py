@@ -34,6 +34,111 @@ def add(index, key, value):
     if key is not None and key != "":
         index[str(key)].add(value)
 
+
+def build_regional_dossiers(regions, guides, places, settlements, creatures, fronts,
+                            dynamics, flows, dependencies, material_balances,
+                            pressures, support_profiles, infrastructure_profiles,
+                            scenarios):
+    """Indexação factual. Referências vazias NÃO significam ausência de habitantes."""
+    dossiers=[]
+    settlement_region={s["id"]:s["regiao_id"] for s in settlements}
+    for guide in sorted(guides,key=lambda row:row["regiao_id"]):
+        rid=guide["regiao_id"]
+        local_settlements={sid for sid,region in settlement_region.items() if region==rid}
+        creature_records=[c for c in creatures
+                          if any(occ["regiao_id"]==rid for occ in c["ocorrencias"])]
+        def ids(collection,pred):
+            return sorted(x["id"] for x in collection if pred(x))
+        local_flows=[{"id":f["id"],"estado_evidencia":f["status"]}
+                     for f in flows if f.get("origem_assentamento_id") in local_settlements
+                     or f.get("destino_assentamento_id") in local_settlements]
+        relations=[]
+        for d in dynamics:
+            roles=[]
+            if d["origem_regiao_id"]==rid:roles.append("origem")
+            if d["destino_regiao_id"]==rid:roles.append("destino")
+            if roles:
+                relations.append({"id":d["id"],"tipo":d["tipo"],
+                                  "papeis_regionais":roles,
+                                  "escala":d["escala"],
+                                  "estado_evidencia":d["estado_evidencia"],
+                                  "evento_campanha_id":d["evento_campanha_id"]})
+        relations=sorted(relations,key=lambda d:d["id"])
+        creatures_index=sorted(
+          {"id":c["id"],"estado_curadoria":c["estado"]}
+          for c in creature_records
+        ) if False else sorted(
+          [{"id":c["id"],"estado_curadoria":c["estado"]}
+           for c in creature_records],key=lambda x:x["id"]
+        )
+        factions_related=sorted({
+            f["id"] for c in creature_records for f in c.get("faccoes",[])
+        })
+        dossier={
+          "id":guide["id"],"regiao_id":rid,
+          "nome_regiao":next(r["nome"] for r in regions if r["id"]==rid),
+          "estado":guide["estado"],"fonte_guia":guide["fonte"],
+          "contexto":guide["contexto"],
+          "fatos_documentados":guide["fatos_documentados"],
+          "lacunas":guide["lacunas"],
+          "perguntas":guide["perguntas"],
+          "inventario":{
+            "lugares":ids(places,lambda x:x["regiao_id"]==rid),
+            "assentamentos":sorted(local_settlements),
+            "criaturas":creatures_index,
+            "frentes_propostas":ids(fronts,lambda x:rid in x["regioes"]),
+            "povos_vinculados_a_assentamentos":sorted({
+              h["povo_id"] for st in settlements if st["id"] in local_settlements
+              for h in st["habitantes"]
+            }),
+            "faccoes_por_associacao_a_criaturas":factions_related,
+            "fluxos":sorted(local_flows,key=lambda f:f["id"]),
+            "dependencias_materiais":ids(
+               dependencies,lambda x:x["assentamento_id"] in local_settlements),
+            "balancos_nao_quantificados":ids(
+               material_balances,lambda x:x["assentamento_id"] in local_settlements),
+            "pressoes_ecologicas_hipoteticas":ids(
+               pressures,lambda x:x["assentamento_id"] in local_settlements),
+            "perfis_suporte":ids(
+               support_profiles,lambda x:x["assentamento_id"] in local_settlements),
+            "perfis_infraestrutura":ids(
+               infrastructure_profiles,lambda x:x["assentamento_id"] in local_settlements),
+            "cenarios_dw_nao_executados":ids(
+               scenarios,lambda x:bool(set(x["assentamentos"]) & local_settlements)),
+            "dinamicas_territoriais":relations
+          },
+          "politica_interpretacao":{
+            "vazios_significam":"nenhum_registro_curado_no_escopo",
+            "nao_significam":"ausencia_real_de_pessoas_ou_recursos",
+            "fluxos":"preservar_estado_de_evidencia",
+            "frentes":"pressagios_nao_acontecidos",
+            "pressoes":"riscos_hipoteticos",
+            "dinamicas":"papeis_regionais_nao_confirmam_alvos_individuais",
+            "faccoes":"associacao_a_criaturas_nao_comprova_dominio_territorial",
+            "mutacao_canonica":False,
+            "efeitos_dw_automaticos":False
+          }
+        }
+        dossiers.append(dossier)
+    indexes={k:defaultdict(set) for k in ("by_regiao","by_dinamica",
+             "by_lugar","by_assentamento","by_pergunta_tema","by_ausencia_assentamento_curado")}
+    for dossier in dossiers:
+        did=dossier["id"]
+        add(indexes["by_regiao"],dossier["regiao_id"],did)
+        inv=dossier["inventario"]
+        for key,inventory in (("by_lugar",inv["lugares"]),
+                              ("by_assentamento",inv["assentamentos"])):
+            for identifier in inventory:add(indexes[key],identifier,did)
+        for relation in inv["dinamicas_territoriais"]:
+            add(indexes["by_dinamica"],relation["id"],did)
+        for question in dossier["perguntas"]:
+            add(indexes["by_pergunta_tema"],question["tema"],did)
+        if not inv["assentamentos"]:
+            add(indexes["by_ausencia_assentamento_curado"],"sim",did)
+    indexes={key:{name:sorted(ids) for name,ids in sorted(index.items())}
+             for key,index in indexes.items()}
+    return dossiers,indexes
+
 def build():
     creatures = collect("curadoria/criaturas")
     regions = sorted(load("data/regioes_carcaca.json")["regioes"], key=lambda x:x["id"])
@@ -69,6 +174,7 @@ def build():
         pack=load(path.relative_to(ROOT))
         scenarios.extend(pack["cenarios"])
     scenarios=sorted(scenarios,key=lambda r:r["id"])
+    regional_guides=load("data/guias_dossies_regionais.json")["guias"]
     dependencies=sorted(load("data/dependencias_materiais_costa_sul.json")["dependencias"],key=lambda r:r["id"])
     material_balances=sorted(load("data/balancos_materiais_costa_sul.json")["balancos"],key=lambda r:r["id"])
     ecological_pressures=sorted(load("data/pressoes_ecologicas_costa_sul.json")["pressoes"],key=lambda r:r["id"])
@@ -170,9 +276,15 @@ def build():
                 add(indexed[key],v,cid)
     indexes = {name:{key:sorted(ids) for key,ids in sorted(group.items())}
                for name, group in indexed.items()}
+    regional_dossiers,regional_dossier_indexes=build_regional_dossiers(
+        regions, regional_guides, places, settlements, creatures, fronts,
+        territorial_dynamics, flows, dependencies, material_balances,
+        ecological_pressures, support_profiles, infrastructure_profiles, scenarios)
     files = {
         "creatures":"creatures.json", "catalog":"catalog.json", "indexes":"indexes.json",
         "regions":"regions.json", "places":"places.json", "factions":"factions.json",
+        "regional_dossiers":"regional-dossiers.json",
+        "regional_dossier_indexes":"regional-dossier-indexes.json",
         "types":"types.json", "fronts":"fronts.json", "settlements":"settlements.json",
         "settlement_labels":"settlement-labels.json",
         "settlement_indexes":"settlement-indexes.json",
@@ -195,6 +307,8 @@ def build():
     manifest = {
         "schema_version":"0.1.0", "descricao":"Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
         "total_criaturas":len(creatures), "total_regioes":len(regions),
+        "total_dossies_regionais":len(regional_dossiers),
+        "total_perguntas_regionais":sum(len(x["perguntas"]) for x in regional_dossiers),
         "total_lugares":len(places), "total_faccoes":len(factions),
         "total_frentes":len(fronts), "total_assentamentos":len(settlements),
         "total_rotulos_assentamentos":len(settlement_labels), "total_povos":len(peoples),
@@ -212,6 +326,8 @@ def build():
     }
     return {
         "manifest.json":manifest,files["creatures"]:creatures,files["catalog"]:catalog,
+        files["regional_dossiers"]:regional_dossiers,
+        files["regional_dossier_indexes"]:regional_dossier_indexes,
         files["indexes"]:indexes,files["regions"]:regions,files["places"]:places,
         files["factions"]:factions,files["types"]:types,files["fronts"]:fronts,
         files["settlements"]:settlements,
