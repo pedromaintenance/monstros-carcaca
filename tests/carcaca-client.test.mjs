@@ -4,6 +4,7 @@ import {createCarcacaAtlas, previewSettlementScenario,previewMaterialInterruptio
 import {createCampaignLedger,recordCampaignEvent,getCampaignEvents} from "../src/carcaca-campaign-state.mjs";
 import {previewMaterialBalance,BALANCE_FIELDS} from "../src/carcaca-material-balance.mjs";
 import {previewSupportCapacity,previewPopulationFlow,SUPPORT_LIMITS} from "../src/carcaca-support-capacity.mjs";
+import {auditInfrastructure,previewInfrastructureIssue} from "../src/carcaca-infrastructure.mjs";
 
 const fixtures={
   "manifest.json":{arquivos:{catalog:"catalog.json",creatures:"creatures.json",
@@ -15,7 +16,9 @@ const fixtures={
     material_dependency_indexes:"material-dependency-indexes.json",
     material_balances:"material-balances.json",material_balance_indexes:"material-balance-indexes.json",
     ecological_pressures:"ecological-pressures.json",ecological_pressure_indexes:"ecological-pressure-indexes.json",
-    support_profiles:"support-profiles.json",support_indexes:"support-indexes.json"}},
+    support_profiles:"support-profiles.json",support_indexes:"support-indexes.json",
+    infrastructure_profiles:"infrastructure-profiles.json",
+    infrastructure_indexes:"infrastructure-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -89,6 +92,48 @@ const fixtures={
                  migracao_saida:{valor:null,unidade:null,periodo:null,origem_medicao:null}}}
   ],
   "support-indexes.json":{by_assentamento:{"assentamento:portomonte":["suporte:portomonte"]}},
+  "infrastructure-profiles.json":[
+    {id:"infraestrutura:portomonte",assentamento_id:"assentamento:portomonte",
+     natureza:"assentamento_civil",setores:[
+       {id:"construcao_abrigo",estado:"evidencia_parcial",
+        ancoras_documentadas:[{descricao:"Povoação nos penhascos",classe:"geografia",fonte:"ambientacao",status:"documentado"}],
+        materiais_construtivos_confirmados:[],
+        instalacoes_especificas_confirmadas:[{instalacao:"Templo de Deméter",fonte:"ambientacao"}],
+        problemas_em_aberto:["Materiais desconhecidos"],perguntas_para_o_mestre:["Como são as casas?"],
+        dependencias_relacionadas:[]},
+       {id:"armazenamento",estado:"sem_documentacao",ancoras_documentadas:[],
+        materiais_construtivos_confirmados:[],instalacoes_especificas_confirmadas:[],
+        problemas_em_aberto:["Local de estoque não descrito"],
+        perguntas_para_o_mestre:["Onde a comida é guardada?"],
+        dependencias_relacionadas:["dependencia:lavoura"]},
+       {id:"saneamento",estado:"sem_documentacao",ancoras_documentadas:[],
+        materiais_construtivos_confirmados:[],instalacoes_especificas_confirmadas:[],
+        problemas_em_aberto:["Esgoto não mencionado"],perguntas_para_o_mestre:["Como são tratados dejetos?"],
+        dependencias_relacionadas:[]},
+       {id:"acessos_logistica",estado:"sem_documentacao",ancoras_documentadas:[],
+        materiais_construtivos_confirmados:[],instalacoes_especificas_confirmadas:[],
+        problemas_em_aberto:["Cais não descrito"],perguntas_para_o_mestre:["Existe um porto?"],
+        dependencias_relacionadas:[]}
+     ]},
+    {id:"infraestrutura:rede-cavernas",assentamento_id:"assentamento:rede-cavernas",
+     natureza:"rede_de_abrigos",setores:[
+       {id:"construcao_abrigo",estado:"evidencia_parcial",
+        ancoras_documentadas:[{descricao:"Habitações em cavernas",classe:"habitat_coletivo",fonte:"ambientacao",status:"documentado"}],
+        materiais_construtivos_confirmados:[],instalacoes_especificas_confirmadas:[],
+        problemas_em_aberto:["Estruturas artificiais não descritas"],
+        perguntas_para_o_mestre:["Há instalações construídas?"],dependencias_relacionadas:[]},
+       {id:"armazenamento",estado:"sem_documentacao",ancoras_documentadas:[],
+        materiais_construtivos_confirmados:[],instalacoes_especificas_confirmadas:[],
+        problemas_em_aberto:["Estoques desconhecidos"],perguntas_para_o_mestre:["Há provisões?"],dependencias_relacionadas:[]},
+       {id:"saneamento",estado:"sem_documentacao",ancoras_documentadas:[],
+        materiais_construtivos_confirmados:[],instalacoes_especificas_confirmadas:[],
+        problemas_em_aberto:["Esgoto desconhecido"],perguntas_para_o_mestre:["Como descartam resíduos?"],dependencias_relacionadas:[]},
+       {id:"acessos_logistica",estado:"sem_documentacao",ancoras_documentadas:[],
+        materiais_construtivos_confirmados:[],instalacoes_especificas_confirmadas:[],
+        problemas_em_aberto:["Entradas desconhecidas"],perguntas_para_o_mestre:["Quais acessos?"],dependencias_relacionadas:[]}
+     ]}
+  ],
+  "infrastructure-indexes.json":{by_setor_sem_dados:{"saneamento":["infraestrutura:portomonte","infraestrutura:rede-cavernas"]}},
   "settlement-scenarios.json":[
     {id:"cenario:teste",estado:"hipotese_nao_acontecida",mutacao_canonica:false,
      movimento_dw:"Want",assentamentos:["assentamento:portomonte"],
@@ -370,4 +415,44 @@ test("demografia não transforma viagem sazonal em migração sem números",asyn
   assert.equal(previewPopulationFlow(p,{medidas:period,premissasExplicitas:true}).motivo,"periodos_incompativeis");
   const gone=structuredClone(med);gone.residentes.valor=0;gone.obitos.valor=10;
   assert.equal(previewPopulationFlow(p,{medidas:gone,premissasExplicitas:true}).motivo,"populacao_inviavel");
+});
+
+test("perfis de infraestrutura filtram evidências documentais e lacunas",async()=>{
+  const port=await atlas.getInfrastructureProfile("infraestrutura:portomonte");
+  assert.equal(port.setores.length,4);
+  assert.equal(port.setores[0].materiais_construtivos_confirmados.length,0);
+  assert.equal(port.setores[0].instalacoes_especificas_confirmadas.length,1);
+  const missing=await atlas.searchInfrastructureProfiles({setorId:"saneamento",estadoSetor:"sem_documentacao"});
+  assert.equal(missing.length,2);
+  const specified=await atlas.searchInfrastructureProfiles({setorId:"construcao_abrigo",estadoSetor:"evidencia_parcial",
+                                                             natureza:"assentamento_civil"});
+  assert.equal(specified.length,1);
+  assert.equal((await atlas.getInfrastructureIndexes()).by_setor_sem_dados.saneamento.length,2);
+  assert.equal(await atlas.getInfrastructureProfile("infraestrutura:nao-existe"),null);
+});
+test("auditInfrastructure copia evidências e não confunde rocha com material",async()=>{
+  const port=await atlas.getInfrastructureProfile("infraestrutura:portomonte");
+  const before=JSON.stringify(port);
+  const res=auditInfrastructure(port,{sectorId:"construcao_abrigo"});
+  assert.equal(res.mutacao_canonica,false);
+  assert.equal(res.setores[0].materiais_confirmados.length,0);
+  assert.equal(res.setores[0].evidencias[0].classe,"geografia");
+  res.setores[0].evidencias[0].descricao="Alteração local";
+  assert.equal(JSON.stringify(port),before);
+  const all=auditInfrastructure(port);
+  assert.equal(all.setores.length,4);
+  assert.deepEqual(all.efeitos_dw_aplicados,[]);
+  assert.throws(()=>auditInfrastructure(port,{sectorId:"pesca"}),RangeError);
+});
+test("prévia de problema não cria cais, depósitos nem eventos",async()=>{
+  const [port]=await atlas.searchInfrastructureProfiles({assentamentoId:"assentamento:portomonte"});
+  const risk=previewInfrastructureIssue(port,{
+    sectorId:"armazenamento",hipotese:"Uma tempestade costeira fecha a entrada hipotética de provisões"});
+  assert.equal(risk.estado,"hipotese_nao_ocorrida");
+  assert.equal(risk.dependencias_potencialmente_relevantes[0],"dependencia:lavoura");
+  assert.deepEqual(risk.consequencias_confirmadas,[]);
+  assert.deepEqual(risk.efeitos_dw_aplicados,[]);
+  assert.equal(risk.mutacao_canonica,false);
+  assert.throws(()=>previewInfrastructureIssue(port,{
+    sectorId:"armazenamento",hipotese:""}),TypeError);
 });
