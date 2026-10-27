@@ -219,3 +219,14 @@ const mec=await atlas.getHackMechanicsIndex();
 ```
 
 **Atenção:** `hack-mechanics-index.json` é catálogo preliminar de títulos visuais e referências por página; **não** é o conjunto dos movimentos aprovados. Página 91 está explicitamente marcada como sem texto extraível. Veja `docs/REVISAO_AMPLIADA_HACK_CARCACA_DW.md`.
+
+## Relações entre entidades e movimentos conferidos (terceira auditoria)
+
+```js
+const relacoes=await atlas.searchLoreRelations({entidadeId:"lore-hack:kuo-toa"});
+const tecnicas=await atlas.searchSelectedMovements({grupo:"GUERREIRO"});
+const prereq=await atlas.searchSelectedMovements({requisito:"Vendo Vermelho"});
+const pagina=await atlas.getHackMechanicsIndex(); // pagina 91 confirmada vazia
+```
+
+`getLoreRelationIndexes` e `getSelectedMovementIndexes` retornam índices para navegação. `REQUER` é preservado **literalmente**, e `efeito_revisado:false` impede tratar títulos como movimentos completos prontos para adoção. Consulte `docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md`.

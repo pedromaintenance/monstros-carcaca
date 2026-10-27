@@ -366,3 +366,16 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] [GitHub Actions #40447368396](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40447368396): resultado `success` na validação de curadoria, testes JavaScript, testes Python de integração, geração determinística e publicação.
 - [x] Snapshot inspecionado diretamente: `manifest.json` com **157 verbetes**, **155 páginas de texto mecânico** e **653 rótulos candidatos**; `hack-mechanics-index.json` declara **página 91 sem texto extraível** e 86 páginas com `REQUER:`.
 - [x] Continuam sem alterações de cânone as **7 criaturas** e os **3 assentamentos** curados.
+
+## Terceira auditoria do Hack DW — relações e movimentos (2026-10-27)
+
+- [x] Indexar **26 relações** entre entidades do Capítulo I, com fonte, página, âncora literal e nenhuma modificação canônica.
+- [x] Conferir diretamente no DOCX original **41 títulos de movimentos**, distribuídos por seções de povo e classe.
+- [x] Registrar **26 expressões `REQUER:`** literais sem simplificar dependências compostas.
+- [x] Separar `efeito_revisado:false` de conferência de título/requisito, sem aplicar movimentos nem criar fichas.
+- [x] Converter e inspecionar visualmente a **página 91**, confirmada vazia (apenas pergaminho).
+- [x] Publicar dois índices invertidos e quatro arquivos de leitura em `dist/carcaca/`.
+- [x] Integrar API ESM e novos testes sobre relações e requisitos literais.
+- [x] Registrar método, cautelas e consultas em `docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md`.
+- [ ] Avançar por grupos pequenos para texto completo de movimentos, opções e pré-requisitos.
+- [ ] Conservar separadas consequências hipotéticas e aplicação real de movimentos em saves.

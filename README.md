@@ -146,3 +146,9 @@ A consulta fica nos artefatos `dist/carcaca/lore-*.json`, com `searchLore`, `get
 Ampliação de **100 para 157 verbetes de ambientação**, com 38 divindades e 19 conceitos adicionais. O restante do manuscrito foi transcrito por página: **155 páginas de texto mecânico**, com a página 91 marcada como **sem texto extraível**. O índice `dist/carcaca/hack-mechanics-index.json` permite encontrar **653 rótulos candidatos** e menções a `REQUER:` sem confundi-los com movimentos certificados ou novos fatos do cenário.
 
 Veja o [relatório da segunda auditoria](docs/REVISAO_AMPLIADA_HACK_CARCACA_DW.md) e [o índice mecânico](dist/carcaca/hack-mechanics-index.json).
+
+## Terceira auditoria do manuscrito (27/10/2026)
+
+A base agora também inclui **26 relações entre entidades da ambientação** e uma amostra de **41 movimentos de povo/classe** com título e `REQUER` confrontados contra os parágrafos originais do DOCX (**26 com requisito literal**). A [página 91 foi verificada como vazia](docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md).
+
+As consultas `searchLoreRelations` e `searchSelectedMovements` permitem navegar por entidades, páginas, classes e pré-requisitos. Os efeitos dos movimentos **não foram certificados**; nenhum registro aplica regras ou altera o cânone. [Relatório de terceira auditoria](docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md).

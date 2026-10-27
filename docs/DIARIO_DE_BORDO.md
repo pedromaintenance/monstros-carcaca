@@ -343,3 +343,17 @@ Documento: `docs/REVISAO_AMPLIADA_HACK_CARCACA_DW.md`.
 - Artefatos consultados diretamente no branch: `dist/carcaca/manifest.json` (**157 verbetes, 155 páginas, 653 rótulos**), `dist/carcaca/hack-mechanics-index.json` (página **91** ausente da extração, **86 páginas** com alguma menção a `REQUER:`), mais o relatório editorial publicado.
 - Durante a verificação foram corrigidas duas situações: o nome curto da divindade **Rá** necessitava aceitação pelo schema e a antiga suíte de testes esperava ainda **100** verbetes. Ambas foram ajustadas antes da execução aprovada.
 - O índice de movimentos não é catálogo de habilidades revisadas: 653 são **rótulos candidatos**, sujeitos a títulos gerais e interferências entre colunas.
+
+## 2026-10-27 · Terceira auditoria — rede de relações e estrutura de movimentos
+
+**Capítulo I:** 26 relações novas entre entidades já indexadas (poder territorial, religião, resistência, memória e produção), cada uma com página e âncora textual. O validador verifica endpoints e trechos literais na transcrição. `aplicacao_canonica:false` em todas.
+
+**DOCX original:** amostra de 41 movimentos com grupo, categoria, posição do parágrafo (zero-based), título em negrito e 26 requisitos `REQUER:` conferidos literalmente. `efeito_revisado:false` explicita que títulos/pré-requisitos foram auditados, mas efeitos, listas e árvore completa ainda não foram certificados.
+
+**Resolução da página 91:** DOCX convertido em PDF de 181 páginas; texto extraído da página 91 retornou vazio e a imagem mostrou somente o fundo. Registrado `conferencia_pagina_91`, mantendo o campo antigo de página sem texto por compatibilidade.
+
+**Ferramentas:** gerador determinístico, validador de referências e fontes, novos filtros ESM e testes Python/Node. Não houve alteração nos sete monstros nem nos três assentamentos existentes.
+
+**Próximo:** migrar movimentos em pequenos conjuntos, associando efeitos completos e combinando requisitos somente quando revistos; não usar este índice parcial em validação real de compras e concessões.
+
+Documento: `docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md`.

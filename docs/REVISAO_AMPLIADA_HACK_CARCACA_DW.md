@@ -39,7 +39,7 @@ A primeira indexação havia trabalhado apenas o **Capítulo I**. Nesta revisão
 - `fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json`: continuidade das classes;
 - `fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json`: últimas práticas, inclusive Escriba Yokai, Nobre e Arqueólogo.
 
-**A página 91 não foi devolvida pela extração textual disponível.** Não há evidência suficiente nesta rodada para classificá-la como página em branco; a lacuna permanece declarada em `paginas_sem_texto_extraivel:[91]` para posterior conferência visual contra o DOCX.
+**Atualização da terceira auditoria:** a página 91 foi conferida visualmente na renderização do DOCX e **está realmente vazia** (apenas o fundo de pergaminho). O campo `paginas_sem_texto_extraivel:[91]` foi conservado por compatibilidade, com `conferencia_pagina_91.confirmada_em_renderizacao_docx:true`.
 
 A transcrição pode conter **ordem de leitura imperfeita em páginas com duas colunas**. Por isso **não** foi transformada automaticamente em movimentos individuais, nem foram atribuídas dependências `REQUER` a um movimento sem validação humana.
 
