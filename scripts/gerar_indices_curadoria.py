@@ -264,6 +264,7 @@ def build():
         key=lambda x:x["paragrafo_docx"])
     docx_tables=sorted(load("data/lore/hack-carcaca-dw-tabelas-docx.json")["tabelas"],
                        key=lambda x:x["tabela_docx_indice"])
+    regras_nucleo=load("data/lore/hack-carcaca-dw-regras-nucleo.json")
     quadros_integrais=load("data/lore/hack-carcaca-dw-quadros-integrais.json")
     movimentos_gerais=compilar_movimentos_gerais(quadros_integrais,docx_tables)
     indices_movimentos_gerais=indexar_movimentos_gerais(movimentos_gerais)
@@ -433,6 +434,7 @@ def build():
         "hack_docx_table_indexes":"hack-docx-table-indexes.json",
         "hack_general_movements":"hack-general-movements.json",
         "hack_general_movement_indexes":"hack-general-movement-indexes.json",
+        "hack_core_rules":"hack-core-rules.json",
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
@@ -515,6 +517,7 @@ def build():
         files["hack_docx_table_indexes"]:docx_table_indexes,
          files["hack_general_movements"]:movimentos_gerais,
          files["hack_general_movement_indexes"]:indices_movimentos_gerais,
+         files["hack_core_rules"]:regras_nucleo,
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,
