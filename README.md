@@ -98,6 +98,22 @@ console.log(dependencia.habilitado_para_compra); // null: revisão obrigatória
 
 **REQUER continua obrigatório**, mesmo em movimentos gratuitos; a consulta não equivale a elegibilidade homologada. Veja a [documentação completa da integração](docs/INTEGRACAO_MOVIMENTOS_POVOS_CLASSES_REQUER.md) e o [extrator DOCX reproduzível](scripts/extrair_movimentos_personagem_docx.py).
 
+## Classe Guerreiro — transcrição integral (ciclo seguinte)
+
+Os **77 movimentos de Guerreiro** agora possuem texto integral preservado, **137 opções** em parágrafos de lista e **235 partes** com proveniência. O catálogo de 632 movimentos continua indexado; apenas Guerreiro recebeu o vínculo explícito `texto_integral_disponivel:true`.
+
+```js
+const guerreiro=await atlas.getWarriorMovements();
+const magias=await atlas.searchWarriorMovements({tipoRequisito:"todos"});
+const arma=await atlas.getWarriorMovement("movimento-classe:paragrafo-1047");
+const requisito=await atlas.getWarriorRequirementPreview(
+  "movimento-classe:paragrafo-1120",
+  {movimentosPossuidos:["movimento-classe:paragrafo-1047"]}
+);
+```
+
+São **30 REQUER**: 27 correspondências exatas candidatas e três condições especiais (*Magia de Guerra*, *Passo Arcano* e *Tiro Arcano*). A checagem de aquisição permanece deliberadamente **não automática**. Consulte [Integração do Guerreiro](docs/INTEGRACAO_GUERREIRO_HACK_DW.md).
+
 ## Ecossistema de assentamentos (M3, ciclo 5)
 
 Além de monstros, há comunidades, redes de cavernas, refúgios e habitats de várias formas. **Nem todo covil é uma steading do Dungeon World:** a distinção é preservada.
