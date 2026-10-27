@@ -379,3 +379,10 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Registrar método, cautelas e consultas em `docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md`.
 - [ ] Avançar por grupos pequenos para texto completo de movimentos, opções e pré-requisitos.
 - [ ] Conservar separadas consequências hipotéticas e aplicação real de movimentos em saves.
+
+### Validação pós-publicação — terceira auditoria
+
+- [x] [GitHub Actions #40449350728](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40449350728): **success** em validação, testes Node, testes Python de integração, geração determinística e publicação.
+- [x] Snapshot conferido em `dist/carcaca/`: **26 relações**, **41 cabeçalhos de movimentos**, **26 com REQUER literal**, índices de entidade/tipo/página e grupo/categoria/pré-requisito/página candidata.
+- [x] Metadado `conferencia_pagina_91` publicado: a página 91 está visualmente confirmada como vazia, no PDF renderizado do DOCX de 181 páginas.
+- [x] Preservadas **7 criaturas**, **3 assentamentos**, `efeito_revisado:false` e `aplicacao_canonica:false`.

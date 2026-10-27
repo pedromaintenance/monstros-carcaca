@@ -357,3 +357,10 @@ Documento: `docs/REVISAO_AMPLIADA_HACK_CARCACA_DW.md`.
 **Próximo:** migrar movimentos em pequenos conjuntos, associando efeitos completos e combinando requisitos somente quando revistos; não usar este índice parcial em validação real de compras e concessões.
 
 Documento: `docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md`.
+
+### Conferência do snapshot e da execução — terceira auditoria
+
+- Workflow final **success**: https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40449350728; passaram schema/referências, testes JS, testes Python e geração/publicação.
+- `manifest.json` observado: 26 relações de lore, 41 movimentos parcialmente conferidos, 26 requisitos literais. Correspondência confirmada entre manifestação e arquivos `lore-relations.json`/`hack-selected-movements.json`.
+- Índices publicados: `by_entidade`, `by_tipo`, `by_pagina`; `by_grupo`, `by_categoria`, `by_requisito` e `by_pagina_candidata`. Estas últimas páginas são *candidatas*, enquanto `paragrafo_docx` é a âncora verificada dos movimentos selecionados.
+- Metadado de página 91 verificado no snapshot; nenhuma intervenção em registros canônicos de criaturas, assentamentos ou saves.
