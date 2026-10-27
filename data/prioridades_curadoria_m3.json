@@ -1,0 +1,172 @@
+{
+  "schema_version": "0.1.0",
+  "estado": "plano_editorial_nao_executado",
+  "descricao": "Priorização de 8 das 16 perguntas regionais; todas permanecem sem resposta e nenhuma vira fato canônico automaticamente. Outras perguntas aparecem como não priorizadas na saída gerada.",
+  "criterios": [
+    "Acesso a água e alimentação antes de projetar população",
+    "Identificação de localidades antes de associar recursos e deslocamentos",
+    "Não deduzir alvo de guerra, refúgio ou ataque pela proximidade regional",
+    "Relações de precedência são apenas fluxo editorial de pesquisa"
+  ],
+  "prioridades": [
+    {
+      "pergunta_id": "pergunta:caatinga-habitacao",
+      "ordem_editorial": 1,
+      "faixa_prioridade": "primeiro_lote",
+      "depende_de_perguntas": [],
+      "justificativa_editorial": "Identificar ao menos uma comunidade ou localidade por fonte primária, sem presumir que já seja uma steading.",
+      "evidencias_necessarias": [
+        "Nome ou delimitação de comunidade na Caatinga",
+        "Descrição material de abrigo ou local de residência"
+      ],
+      "artefatos_potenciais": [
+        "lugar",
+        "assentamento_rascunho"
+      ],
+      "status": "aguarda_nova_fonte",
+      "fonte_base": "ambientacao",
+      "autoriza_criacao_canonica": false,
+      "observacao": "Dependência é de ordem editorial da investigação, nunca inferência sobre causalidade no mundo."
+    },
+    {
+      "pergunta_id": "pergunta:costa-sul-agua",
+      "ordem_editorial": 2,
+      "faixa_prioridade": "primeiro_lote",
+      "depende_de_perguntas": [],
+      "justificativa_editorial": "Verificar se o rito de Deméter é apropriado a consumo humano ou apenas ao cultivo; nenhuma potabilidade é pressuposta.",
+      "evidencias_necessarias": [
+        "Uso expressamente permitido da água purificada",
+        "Origem ou método de obtenção de água doméstica em Portomonte"
+      ],
+      "artefatos_potenciais": [
+        "revisao_suporte",
+        "infraestrutura"
+      ],
+      "status": "aguarda_nova_fonte",
+      "fonte_base": "ambientacao",
+      "autoriza_criacao_canonica": false,
+      "observacao": "Dependência é de ordem editorial da investigação, nunca inferência sobre causalidade no mundo."
+    },
+    {
+      "pergunta_id": "pergunta:foz-agua",
+      "ordem_editorial": 3,
+      "faixa_prioridade": "primeiro_lote",
+      "depende_de_perguntas": [],
+      "justificativa_editorial": "Reunir evidências de provisões para Gualápolis/Boca do Abismo antes de supor capacidade populacional.",
+      "evidencias_necessarias": [
+        "Fonte identificável de água e alimento",
+        "Quem utiliza os recursos e em qual lugar da foz"
+      ],
+      "artefatos_potenciais": [
+        "fluxo_material_proposto",
+        "assentamento_rascunho"
+      ],
+      "status": "aguarda_nova_fonte",
+      "fonte_base": "ambientacao",
+      "autoriza_criacao_canonica": false,
+      "observacao": "Dependência é de ordem editorial da investigação, nunca inferência sobre causalidade no mundo."
+    },
+    {
+      "pergunta_id": "pergunta:eldroth-abrigos",
+      "ordem_editorial": 4,
+      "faixa_prioridade": "primeiro_lote",
+      "depende_de_perguntas": [],
+      "justificativa_editorial": "Diferenciar abrigo civil, covil de mortos-vivos e simples lugar de mapa.",
+      "evidencias_necessarias": [
+        "Refúgio ou comunidade civil com nome/localização documentados",
+        "Condição de ocupação, material e habitantes sem inferir alimentação"
+      ],
+      "artefatos_potenciais": [
+        "lugar",
+        "assentamento_rascunho"
+      ],
+      "status": "aguarda_nova_fonte",
+      "fonte_base": "ambientacao",
+      "autoriza_criacao_canonica": false,
+      "observacao": "Dependência é de ordem editorial da investigação, nunca inferência sobre causalidade no mundo."
+    },
+    {
+      "pergunta_id": "pergunta:caatinga-abastecimento",
+      "ordem_editorial": 5,
+      "faixa_prioridade": "segundo_lote",
+      "depende_de_perguntas": [
+        "pergunta:caatinga-habitacao"
+      ],
+      "justificativa_editorial": "Depois de identificar ao menos uma comunidade, pesquisar sua subsistência sem criar dietas e poços imaginários.",
+      "evidencias_necessarias": [
+        "Origem de água e alimentos para a comunidade identificada",
+        "Circuito de entrada, produção ou estocagem com fonte"
+      ],
+      "artefatos_potenciais": [
+        "perfil_suporte_rascunho",
+        "balanco_nao_quantificado"
+      ],
+      "status": "aguarda_nova_fonte",
+      "fonte_base": "ambientacao",
+      "autoriza_criacao_canonica": false,
+      "observacao": "Dependência é de ordem editorial da investigação, nunca inferência sobre causalidade no mundo."
+    },
+    {
+      "pergunta_id": "pergunta:foz-reabastecimento",
+      "ordem_editorial": 6,
+      "faixa_prioridade": "segundo_lote",
+      "depende_de_perguntas": [
+        "pergunta:foz-agua"
+      ],
+      "justificativa_editorial": "Investigar trajetos de provisão depois de identificar a natureza dos recursos e seus usuários.",
+      "evidencias_necessarias": [
+        "Ponto de origem e destino concretos",
+        "Meio de transporte e restrição ligada à queda do rio"
+      ],
+      "artefatos_potenciais": [
+        "fluxo_material_proposto",
+        "infraestrutura"
+      ],
+      "status": "aguarda_nova_fonte",
+      "fonte_base": "ambientacao",
+      "autoriza_criacao_canonica": false,
+      "observacao": "Dependência é de ordem editorial da investigação, nunca inferência sobre causalidade no mundo."
+    },
+    {
+      "pergunta_id": "pergunta:eldroth-deslocados",
+      "ordem_editorial": 7,
+      "faixa_prioridade": "segundo_lote",
+      "depende_de_perguntas": [
+        "pergunta:eldroth-abrigos"
+      ],
+      "justificativa_editorial": "Buscar origem e trajetos de deslocados sem deduzir quantidades, datas ou cidades de acolhimento.",
+      "evidencias_necessarias": [
+        "Origem concreta de ao menos um grupo de deslocados",
+        "Trajeto e destino, explicitamente amparados por fonte"
+      ],
+      "artefatos_potenciais": [
+        "relacao_territorial_local_proposta"
+      ],
+      "status": "aguarda_nova_fonte",
+      "fonte_base": "ambientacao",
+      "autoriza_criacao_canonica": false,
+      "observacao": "Dependência é de ordem editorial da investigação, nunca inferência sobre causalidade no mundo."
+    },
+    {
+      "pergunta_id": "pergunta:costa-sul-migracao",
+      "ordem_editorial": 8,
+      "faixa_prioridade": "segundo_lote",
+      "depende_de_perguntas": [
+        "pergunta:eldroth-deslocados"
+      ],
+      "justificativa_editorial": "Identificar destinos costeiros dos refugiados sem equiparar os maiores centros exclusivamente a Portomonte.",
+      "evidencias_necessarias": [
+        "Nome do assentamento receptor e vínculo a um grupo documentado",
+        "Evidência de presença local distinta de acolhimento institucional formal"
+      ],
+      "artefatos_potenciais": [
+        "assentamento_rascunho",
+        "relacao_territorial_local_proposta"
+      ],
+      "status": "aguarda_nova_fonte",
+      "fonte_base": "ambientacao",
+      "autoriza_criacao_canonica": false,
+      "observacao": "Dependência é de ordem editorial da investigação, nunca inferência sobre causalidade no mundo."
+    }
+  ]
+}

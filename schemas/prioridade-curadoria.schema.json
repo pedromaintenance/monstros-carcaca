@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/prioridade-curadoria.schema.json",
+  "title": "Priorização editorial das perguntas regionais da Carcaça",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "pergunta_id",
+    "ordem_editorial",
+    "faixa_prioridade",
+    "depende_de_perguntas",
+    "justificativa_editorial",
+    "evidencias_necessarias",
+    "artefatos_potenciais",
+    "status",
+    "fonte_base",
+    "autoriza_criacao_canonica",
+    "observacao"
+  ],
+  "properties": {
+    "pergunta_id": {
+      "type": "string",
+      "pattern": "^pergunta:[a-z0-9-]+$"
+    },
+    "ordem_editorial": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "faixa_prioridade": {
+      "enum": [
+        "primeiro_lote",
+        "segundo_lote"
+      ]
+    },
+    "depende_de_perguntas": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^pergunta:[a-z0-9-]+$"
+      }
+    },
+    "justificativa_editorial": {
+      "type": "string",
+      "minLength": 25
+    },
+    "evidencias_necessarias": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string",
+        "minLength": 10
+      }
+    },
+    "artefatos_potenciais": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "lugar",
+          "assentamento_rascunho",
+          "revisao_suporte",
+          "infraestrutura",
+          "fluxo_material_proposto",
+          "perfil_suporte_rascunho",
+          "balanco_nao_quantificado",
+          "relacao_territorial_local_proposta"
+        ]
+      }
+    },
+    "status": {
+      "const": "aguarda_nova_fonte"
+    },
+    "fonte_base": {
+      "const": "ambientacao"
+    },
+    "autoriza_criacao_canonica": {
+      "const": false
+    },
+    "observacao": {
+      "type": "string",
+      "minLength": 20
+    }
+  }
+}
