@@ -90,6 +90,9 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
     return {...preview,especificacao_literal:movimento.requisito_literal,
       requisito_estruturado:req,componentes_requeridos:checks,
       componentes_identificados_presentes:checks.every(x=>x.presente_na_lista),
+      verificacao_estrutural:!req?"sem_requer_literal":
+        checks.every(x=>x.presente_na_lista)?"componentes_identificados_presentes":
+        "componentes_ausentes",
       operador_literal:req?.operador_literal??null,
       habilitado_para_compra:null,necessita_avaliacao_do_mestre:true,
       aplicacao_canonica:false,
