@@ -561,6 +561,50 @@ def validar_indice_mecanicas_manuscrito():
           f"{sum(len(x['rotulos_detectados']) for x in rows)} rótulos candidatos, "
           f"{len(missing)} páginas sem texto extraível, zero movimentos promovidos.")
 
+
+def validar_terceira_auditoria_manuscrito():
+    """Índices verificados de relações e movimentos, sem interpretar regras além do título e REQUER."""
+    from scripts.gerar_indices_curadoria import norm
+    source=load("fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")
+    names={x["id"] for x in load("data/lore/hack-carcaca-dw-indice-tematico.json")["entradas"]}
+    page_text={p["pagina"]:norm(p["texto"]) for p in source["paginas"]}
+    relations=load("data/lore/hack-carcaca-dw-relacoes.json")
+    require(relations["fonte_id"]==source["id"],"Relações com fonte diferente do manuscrito")
+    unique(relations["relacoes"],"relações de lore do manuscrito")
+    for rel in relations["relacoes"]:
+        require(rel["origem_id"] in names and rel["destino_id"] in names,
+                f"Referência de entidade ausente: {rel['id']}")
+        require(rel["pagina"] in page_text and norm(rel["ancora_textual"]) in page_text[rel["pagina"]],
+                f"Âncora de página não localizada: {rel['id']}")
+        require(rel["estado"]=="afirmado_no_manuscrito" and rel["aplicacao_canonica"] is False,
+                f"Relação editorial não pode alterar cânone: {rel['id']}")
+    data=load("data/lore/hack-carcaca-dw-movimentos-selecionados.json")
+    rows=data["movimentos"]
+    unique(rows,"movimentos extraídos do DOCX")
+    require(data["registro_tipo"]=="movimentos_conferidos_parcialmente",
+            "Movimentos selecionados não são revisões completas de regras.")
+    require(len({x["paragrafo_docx"] for x in rows})==len(rows),
+            "Um parágrafo DOCX não pode mapear para dois movimentos distintos.")
+    for move in rows:
+        require(move["id"]=="movimento-revisado:paragrafo-"+str(move["paragrafo_docx"]),
+                f"ID de movimento não acompanha parágrafo do DOCX: {move['id']}")
+        require(move["categoria"] in ("povo","classe") and bool(move["grupo"]) and bool(move["titulo"]),
+                "Movimento sem título ou grupo.")
+        require(move["estado"]=="titulo_e_requisito_conferidos_no_docx"
+                and move["efeito_revisado"] is False and move["aplicacao_canonica"] is False,
+                f"Movimento não pode ser aplicado sem revisão: {move['id']}")
+        require(move["requisito_literal"] is None or bool(move["requisito_literal"].strip()),
+                "REQUER não pode ser string vazia")
+    mechanics=load("data/lore/hack-carcaca-dw-indice-mecanicas.json")
+    check=mechanics.get("conferencia_pagina_91",{})
+    require(check.get("confirmada_em_renderizacao_docx") is True
+            and check.get("possui_texto") is False
+            and mechanics["paginas_sem_texto_extraivel"]==[91],
+            "O resultado confirmado da página 91 precisa estar documentado.")
+    print(f"3a auditoria: {len(relations['relacoes'])} relações, {len(rows)} títulos conferidos, "
+          f"{sum(x['requisito_literal'] is not None for x in rows)} requisitos literais, "
+          "página 91 confirmada em branco, zero promoções canônicas.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -652,6 +696,7 @@ def main():
     validar_lore_manuscrito()
     validar_pontes_lore_manuscrito(rids)
     validar_indice_mecanicas_manuscrito()
+    validar_terceira_auditoria_manuscrito()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

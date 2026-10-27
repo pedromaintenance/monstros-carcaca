@@ -253,6 +253,26 @@ def build():
     }
     lore_indexes=build_lore_indexes(lore_entries)
     mechanics_index=load("data/lore/hack-carcaca-dw-indice-mecanicas.json")
+    lore_relations=sorted(load("data/lore/hack-carcaca-dw-relacoes.json")["relacoes"],key=lambda x:x["id"])
+    selected_moves=sorted(load("data/lore/hack-carcaca-dw-movimentos-selecionados.json")["movimentos"],key=lambda x:x["paragrafo_docx"])
+    lore_relation_index={k:defaultdict(set) for k in ("by_entidade","by_tipo","by_pagina")}
+    for relation in lore_relations:
+        for k,key in (("by_entidade",relation["origem_id"]),
+                      ("by_entidade",relation["destino_id"]),
+                      ("by_tipo",relation["tipo"]),
+                      ("by_pagina",relation["pagina"])):
+            add(lore_relation_index[k],key,relation["id"])
+    lore_relation_index={k:{key:sorted(ids) for key,ids in sorted(v.items())}
+                         for k,v in lore_relation_index.items()}
+    moves_index={k:defaultdict(set) for k in ("by_grupo","by_categoria","by_requisito","by_pagina_candidata")}
+    for item in selected_moves:
+        for k,key in (("by_grupo",item["grupo"]),("by_categoria",item["categoria"]),
+                      ("by_requisito",item["requisito_literal"])):
+            add(moves_index[k],key,item["id"])
+        for page in item["paginas_candidatas"]:
+            add(moves_index["by_pagina_candidata"],page,item["id"])
+    moves_index={k:{key:sorted(ids) for key,ids in sorted(v.items())}
+                 for k,v in moves_index.items()}
     research_priorities=load("data/prioridades_curadoria_m3.json")["prioridades"]
     dependencies=sorted(load("data/dependencias_materiais_costa_sul.json")["dependencias"],key=lambda r:r["id"])
     material_balances=sorted(load("data/balancos_materiais_costa_sul.json")["balancos"],key=lambda r:r["id"])
@@ -368,6 +388,10 @@ def build():
         "regional_dossier_indexes":"regional-dossier-indexes.json",
         "lore_index":"lore-index.json",
         "hack_mechanics_index":"hack-mechanics-index.json",
+        "lore_relations":"lore-relations.json",
+        "lore_relation_indexes":"lore-relation-indexes.json",
+        "hack_selected_movements":"hack-selected-movements.json",
+        "hack_selected_movement_indexes":"hack-selected-movement-indexes.json",
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
@@ -400,6 +424,9 @@ def build():
         "total_dossies_regionais":len(regional_dossiers),
         "total_entradas_lore_manuscrito":len(lore_entries),
         "total_paginas_mecanicas_extraidas":mechanics_index["paginas_com_texto"],
+        "total_relacoes_lore_manuscrito":len(lore_relations),
+        "total_movimentos_titulos_verificados":len(selected_moves),
+        "total_movimentos_com_requisito_literal":sum(m["requisito_literal"] is not None for m in selected_moves),
         "total_rotulos_mecanicas_detectados":sum(len(p["rotulos_detectados"]) for p in mechanics_index["paginas_indice"]),
         "total_paginas_lore_manuscrito":len(lore_source["paginas"]),
         "total_eventos_cronologia_manuscrito":len(lore_timeline["eventos"]),
@@ -431,6 +458,10 @@ def build():
         files["regional_dossier_indexes"]:regional_dossier_indexes,
         files["lore_index"]:lore_entries,
         files["hack_mechanics_index"]:mechanics_index,
+        files["lore_relations"]:lore_relations,
+        files["lore_relation_indexes"]:lore_relation_index,
+        files["hack_selected_movements"]:selected_moves,
+        files["hack_selected_movement_indexes"]:moves_index,
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,

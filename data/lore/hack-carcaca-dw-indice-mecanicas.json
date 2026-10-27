@@ -2218,5 +2218,11 @@
       ],
       "mencoes_requer_na_pagina": []
     }
-  ]
+  ],
+  "conferencia_pagina_91": {
+    "confirmada_em_renderizacao_docx": true,
+    "possui_texto": false,
+    "observacao": "Página 91 vazia no PDF de 181 páginas gerado a partir do DOCX original: apenas fundo de pergaminho. Conferência visual independente da extração textual, 27/10/2026.",
+    "metodo": "Renderização do DOCX original com LibreOffice; inspeção da página 91 e extração textual apenas da página 91"
+  }
 }
