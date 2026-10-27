@@ -364,3 +364,15 @@ Documento: `docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md`.
 - `manifest.json` observado: 26 relações de lore, 41 movimentos parcialmente conferidos, 26 requisitos literais. Correspondência confirmada entre manifestação e arquivos `lore-relations.json`/`hack-selected-movements.json`.
 - Índices publicados: `by_entidade`, `by_tipo`, `by_pagina`; `by_grupo`, `by_categoria`, `by_requisito` e `by_pagina_candidata`. Estas últimas páginas são *candidatas*, enquanto `paragrafo_docx` é a âncora verificada dos movimentos selecionados.
 - Metadado de página 91 verificado no snapshot; nenhuma intervenção em registros canônicos de criaturas, assentamentos ou saves.
+
+## 2026-10-27 · Quarta auditoria — textos integrais e tabelas DOCX
+
+**Lacuna descoberta:** `Document.paragraphs` omite as **33 tabelas** do DOCX. Destas, 10 são quadros narrativos, duas tabelas numéricas e 21 contêm quadros gerais de regras/movimentos, antes indexados apenas parcialmente.
+
+**Transcrição integral:** publicados **12 Movimentos de Povo**, seis Humanos (parágrafos 827–832) e seis Orcs da Caatinga (834–837, 842–843), com campos para texto original, marcador, requisitos, opções, grupo e origem. As quatro opções de Saqueador da Caatinga estão preservadas com seus parágrafos 838–841.
+
+**Cautelas:** Portomontense é capacidade individual, não abastecimento municipal; Guerra de Nove Anos é nome mecânico, não calendário comprovado; Saqueador não define toda a cultura orc. Movimentos possuem `texto_integral_conferido:true`, mas `aplicacao_canonica:false`. Quadros de tabelas `texto_integral_curado:false`.
+
+**Software:** gerador, validador de integridade e referências, métodos de consulta ESM, testes Node e Python. Sem alteração de fichas existentes.
+
+**Documento:** `docs/QUARTA_AUDITORIA_HACK_CARCACA_DW.md`.

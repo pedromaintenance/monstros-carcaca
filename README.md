@@ -152,3 +152,9 @@ Veja o [relatório da segunda auditoria](docs/REVISAO_AMPLIADA_HACK_CARCACA_DW.m
 A base agora também inclui **26 relações entre entidades da ambientação** e uma amostra de **41 movimentos de povo/classe** com título e `REQUER` confrontados contra os parágrafos originais do DOCX (**26 com requisito literal**). A [página 91 foi verificada como vazia](docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md).
 
 As consultas `searchLoreRelations` e `searchSelectedMovements` permitem navegar por entidades, páginas, classes e pré-requisitos. Os efeitos dos movimentos **não foram certificados**; nenhum registro aplica regras ou altera o cânone. [Relatório de terceira auditoria](docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md).
+
+## Quarta auditoria do Hack Carcaça DW
+
+O repositório agora inclui **12 movimentos de povo com texto integral** (6 Humanos e 6 Orcs da Caatinga), incluindo quatro opções de *Saqueador da Caatinga* presentes em parágrafos separados. Um inventário adicional identifica **33 tabelas do DOCX**, das quais **21 são quadros gerais de movimentos e regras**, ainda sem transcrição integral.
+
+As buscas `searchCompletePilotMovements` e `searchDocxTables` acessam os novos JSON publicados em `dist/carcaca/`. Nenhuma habilidade altera automaticamente fichas ou cânone. [Relatório da quarta auditoria](docs/QUARTA_AUDITORIA_HACK_CARCACA_DW.md).

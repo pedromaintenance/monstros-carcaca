@@ -230,3 +230,13 @@ const pagina=await atlas.getHackMechanicsIndex(); // pagina 91 confirmada vazia
 ```
 
 `getLoreRelationIndexes` e `getSelectedMovementIndexes` retornam índices para navegação. `REQUER` é preservado **literalmente**, e `efeito_revisado:false` impede tratar títulos como movimentos completos prontos para adoção. Consulte `docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md`.
+
+## Quarta auditoria — Movimentos completos e tabelas DOCX
+
+```js
+const humanos=await atlas.searchCompletePilotMovements({grupo:"HUMANOS"});
+const comOpcoes=await atlas.searchCompletePilotMovements({comOpcoes:true});
+const tabelas=await atlas.searchDocxTables({tipo:"quadro_movimento_geral"});
+```
+
+Os 12 Movimentos de Povo têm `texto_original` integral, inclusive opções em parágrafos externos. As 33 tabelas estão apenas inventariadas — seus 21 quadros gerais ainda não possuem transcrição completa. [Relatório](docs/QUARTA_AUDITORIA_HACK_CARCACA_DW.md).

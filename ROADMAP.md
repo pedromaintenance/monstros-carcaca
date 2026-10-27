@@ -386,3 +386,15 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Snapshot conferido em `dist/carcaca/`: **26 relações**, **41 cabeçalhos de movimentos**, **26 com REQUER literal**, índices de entidade/tipo/página e grupo/categoria/pré-requisito/página candidata.
 - [x] Metadado `conferencia_pagina_91` publicado: a página 91 está visualmente confirmada como vazia, no PDF renderizado do DOCX de 181 páginas.
 - [x] Preservadas **7 criaturas**, **3 assentamentos**, `efeito_revisado:false` e `aplicacao_canonica:false`.
+
+## Quarta auditoria do manuscrito — 2026-10-27
+
+- [x] Identificar as tabelas do DOCX, fora de `doc.paragraphs`.
+- [x] Inventariar **33 tabelas**: 10 narrativas, 2 numéricas e 21 quadros de movimentos/regras gerais.
+- [x] Transcrever **12 movimentos de povo integralmente**: seis Humanos e seis Orcs da Caatinga.
+- [x] Preservar as **quatro opções** de `Saqueador da Caatinga` e os resultados 10+/7–9.
+- [x] Preservar ausência de `REQUER` explícito nos cabeçalhos dos 12 movimentos.
+- [x] Separar transcrição integral de promoção/aplicação canônica.
+- [x] Acrescentar artefatos `dist/carcaca/hack-complete-pilot-*.json` e `hack-docx-*.json`, API e testes.
+- [x] Documentar a revisão em `docs/QUARTA_AUDITORIA_HACK_CARCACA_DW.md`.
+- [ ] Revisar texto integral de 21 quadros gerais de movimentos em tabelas.
