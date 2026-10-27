@@ -1,0 +1,105 @@
+{
+  "by_regiao": {
+    "regiao:caatinga": [
+      "dossie-regional:caatinga"
+    ],
+    "regiao:costa-sul": [
+      "dossie-regional:costa-sul"
+    ],
+    "regiao:eldroth": [
+      "dossie-regional:eldroth"
+    ],
+    "regiao:foz-rio-ancestral": [
+      "dossie-regional:foz-rio-ancestral"
+    ]
+  },
+  "by_dinamica": {
+    "dinamica:ataques-liturgicos-costa-ilhas": [
+      "dossie-regional:costa-sul"
+    ],
+    "dinamica:nao-ocupacao-direta-alem-sul": [
+      "dossie-regional:caatinga",
+      "dossie-regional:costa-sul"
+    ],
+    "dinamica:pilhagens-caatinga-pradarias": [
+      "dossie-regional:caatinga",
+      "dossie-regional:costa-sul"
+    ],
+    "dinamica:refugiados-eldroth-maiores-assentamentos": [
+      "dossie-regional:costa-sul",
+      "dossie-regional:eldroth"
+    ]
+  },
+  "by_lugar": {
+    "lugar:arquivo-dos-mortos-afogados": [
+      "dossie-regional:foz-rio-ancestral"
+    ],
+    "lugar:boca-do-abismo": [
+      "dossie-regional:foz-rio-ancestral"
+    ],
+    "lugar:cavernas-kuo-toa": [
+      "dossie-regional:costa-sul"
+    ],
+    "lugar:eldroth": [
+      "dossie-regional:eldroth"
+    ],
+    "lugar:gualapolis": [
+      "dossie-regional:foz-rio-ancestral"
+    ],
+    "lugar:ilhas-costa-sul": [
+      "dossie-regional:costa-sul"
+    ],
+    "lugar:portomonte": [
+      "dossie-regional:costa-sul"
+    ],
+    "lugar:vandar": [
+      "dossie-regional:eldroth"
+    ]
+  },
+  "by_assentamento": {
+    "assentamento:comunidades-insulares-costa-sul": [
+      "dossie-regional:costa-sul"
+    ],
+    "assentamento:portomonte": [
+      "dossie-regional:costa-sul"
+    ],
+    "assentamento:rede-cavernas-kuo-toa-costa-sul": [
+      "dossie-regional:costa-sul"
+    ]
+  },
+  "by_pergunta_tema": {
+    "abrigo": [
+      "dossie-regional:caatinga",
+      "dossie-regional:costa-sul",
+      "dossie-regional:eldroth",
+      "dossie-regional:foz-rio-ancestral"
+    ],
+    "conflito": [
+      "dossie-regional:caatinga",
+      "dossie-regional:costa-sul",
+      "dossie-regional:eldroth",
+      "dossie-regional:foz-rio-ancestral"
+    ],
+    "logistica": [
+      "dossie-regional:foz-rio-ancestral"
+    ],
+    "mobilidade": [
+      "dossie-regional:caatinga",
+      "dossie-regional:costa-sul",
+      "dossie-regional:eldroth"
+    ],
+    "subsistencia": [
+      "dossie-regional:caatinga",
+      "dossie-regional:costa-sul",
+      "dossie-regional:eldroth",
+      "dossie-regional:foz-rio-ancestral"
+    ]
+  },
+  "by_ausencia_assentamento_curado": {
+    "sim": [
+      "dossie-regional:caatinga",
+      "dossie-regional:eldroth",
+      "dossie-regional:foz-rio-ancestral"
+    ]
+  }
+}
