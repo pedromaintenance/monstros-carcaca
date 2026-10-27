@@ -1198,7 +1198,7 @@ test("Bárbaro integral preserva opções e dependência conjuntiva sem autoriza
   assert.equal(todos.length,4);
   assert.equal((await atlas.searchBarbarianMovements({comRequer:true})).length,3);
   assert.equal((await atlas.searchBarbarianMovements({tipoRequisito:"todos"}))[0].titulo,"FÚRIA ALÉM DA MORTE");
-  assert.equal((await atlas.searchBarbarianMovements({query:"Periculosidade"}))[0].titulo,"FÚRIA");
+  assert.equal((await atlas.searchBarbarianMovements({query:"conscientemente"}))[0].titulo,"FÚRIA");
   assert.equal((await atlas.searchBarbarianMovements({comOpcoes:true})).length,2);
   assert.equal((await atlas.getBarbarianMovement("movimento-classe:paragrafo-1293")).titulo,"FÚRIA");
   assert.equal(await atlas.getBarbarianMovement("movimento-classe:paragrafo-9999"),null);
