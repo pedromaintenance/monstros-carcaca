@@ -316,3 +316,11 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 **Dados e software:** `data/lore/`, `schemas/lore-hack-manuscrito.schema.json`, `scripts/validar_curadoria.py`, `scripts/gerar_indices_curadoria.py`, API `src/carcaca-client.mjs`; testes de correspondência de páginas, referência e separação canônica.
 
 **Documento:** `docs/LORE_HACK_CARCACA_DW.md`.
+
+### Conferência após publicação — manuscrito Hack DW
+
+- Pipeline https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40446090125 completado com `success` em cinco etapas.
+- Indexação `dist/carcaca/` verificada diretamente: 100 entradas, 18 eventos EC, 7 perguntas históricas abertas, 7 pontos de revisão e 14 pontes regionais, com 644 termos no índice invertido.
+- Fonte preservada em 24 páginas (Capítulo I), acesso a capítulos mecânicos mantido fora do atlas. Total de criaturas (7) e assentamentos (3) não foi alterado pela publicação.
+- Correção de integridade: uma ponte para Gualápolis referenciava a página 7, mas seu verbete enumerava a página 6; ajustada a ponte para a página 6 e revalidado o cruzamento. A ambiguidade topológica permanece **não resolvida**, como convém.
+- `pergunta:costa-sul-migracao`: uma evidência parcial sobre druidas em Portomonte foi indexada, não canonizada por inteiro ou transformada em contagem de refugiados.

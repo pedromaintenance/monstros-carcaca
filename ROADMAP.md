@@ -339,3 +339,11 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Documentar estrutura, descobertas, conflitos, rotas de acesso e limitação de capítulos em `docs/LORE_HACK_CARCACA_DW.md`.
 - [ ] Cotejar os sete pontos de revisão com a cartografia/cânone atualizado antes de promover informações ao atlas.
 - [ ] Considerar indexação específica dos movimentos do Capítulo III em módulo de **mecânicas**, separado da lore.
+
+### Verificação de ingestão do manuscrito — publicada (2026-10-27)
+
+- [x] [GitHub Actions #40446090125](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40446090125): **success** em validação, testes Node, Python integrado, geração determinística e publicação.
+- [x] `dist/carcaca/manifest.json` conferido: **24 páginas, 100 verbetes, 18 eventos, 7 incógnitas, 7 revisões e 14 pontes**.
+- [x] Índices invertidos: 644 tokens de pesquisa, filtros por tipo/página e por região/pergunta/parecer de ponte.
+- [x] Preservadas **7 criaturas e 3 assentamentos** existentes, sem alteração canônica por ingestão de manuscrito.
+- [x] Todas as 14 pontes conservam `aplicar_automaticamente:false` e `status:pendente_revisao_autoral`.
