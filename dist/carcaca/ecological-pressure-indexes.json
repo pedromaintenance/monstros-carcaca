@@ -1,0 +1,45 @@
+{
+  "by_assentamento": {
+    "assentamento:comunidades-insulares-costa-sul": [
+      "pressao:quebra-viagem-sazonal"
+    ],
+    "assentamento:portomonte": [
+      "pressao:bloqueio-comercio-costeiro",
+      "pressao:interrupcao-purificacao"
+    ],
+    "assentamento:rede-cavernas-kuo-toa-costa-sul": [
+      "pressao:incursoes-rituais-regionais"
+    ]
+  },
+  "by_dependencia": {
+    "dependencia:ilhas-circulacao-sazonal": [
+      "pressao:quebra-viagem-sazonal"
+    ],
+    "dependencia:kuo-toa-incursoes-regionais": [
+      "pressao:incursoes-rituais-regionais"
+    ],
+    "dependencia:portomonte-comercio": [
+      "pressao:bloqueio-comercio-costeiro"
+    ],
+    "dependencia:portomonte-lavoura": [
+      "pressao:interrupcao-purificacao"
+    ],
+    "dependencia:portomonte-purificacao": [
+      "pressao:interrupcao-purificacao"
+    ]
+  },
+  "by_tipo": {
+    "exposicao_a_conflito_ritual": [
+      "pressao:incursoes-rituais-regionais"
+    ],
+    "falha_de_transformacao_ritual": [
+      "pressao:interrupcao-purificacao"
+    ],
+    "interrupcao_circulacao": [
+      "pressao:bloqueio-comercio-costeiro"
+    ],
+    "restricao_de_mobilidade": [
+      "pressao:quebra-viagem-sazonal"
+    ]
+  }
+}

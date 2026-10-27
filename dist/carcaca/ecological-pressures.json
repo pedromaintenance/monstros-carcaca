@@ -1,0 +1,83 @@
+[
+  {
+    "id": "pressao:bloqueio-comercio-costeiro",
+    "assentamento_id": "assentamento:portomonte",
+    "dependencias_ids": [
+      "dependencia:portomonte-comercio"
+    ],
+    "tipo": "interrupcao_circulacao",
+    "estado": "risco_hipotetico_nao_ocorrido",
+    "base_documental": "Portomonte é um centro comercial entre assentamentos costeiros.",
+    "fonte": "ambientacao",
+    "condicao_hipotetica": "Uma rota e uma mercadoria identificadas em mesa deixam de circular.",
+    "consequencia_possivel": "Uma necessidade pode surgir se a mercadoria for essencial e faltar substituto; não presumir quais mercadorias são trocadas.",
+    "lacunas": [
+      "Mercadoria",
+      "Rota concreta",
+      "Estoques substitutos"
+    ],
+    "efeito_dw_automatico": false,
+    "evento_campanha_id": null
+  },
+  {
+    "id": "pressao:incursoes-rituais-regionais",
+    "assentamento_id": "assentamento:rede-cavernas-kuo-toa-costa-sul",
+    "dependencias_ids": [
+      "dependencia:kuo-toa-incursoes-regionais"
+    ],
+    "tipo": "exposicao_a_conflito_ritual",
+    "estado": "risco_hipotetico_nao_ocorrido",
+    "base_documental": "Kuo-Toa e abissais marinhos fazem incursões sacrificiais na Costa Sul; origem exata dos grupos é desconhecida.",
+    "fonte": "ambientacao",
+    "condicao_hipotetica": "Uma comunidade ou rota específica é atacada na campanha.",
+    "consequencia_possivel": "Pode alterar segurança e deslocamento local, sem inferir que os cativos sejam alimento nem que a origem seja esta rede de cavernas.",
+    "lacunas": [
+      "Origem da força atacante",
+      "Local e vítima específicos",
+      "Consequências para recursos"
+    ],
+    "efeito_dw_automatico": false,
+    "evento_campanha_id": null
+  },
+  {
+    "id": "pressao:interrupcao-purificacao",
+    "assentamento_id": "assentamento:portomonte",
+    "dependencias_ids": [
+      "dependencia:portomonte-purificacao",
+      "dependencia:portomonte-lavoura"
+    ],
+    "tipo": "falha_de_transformacao_ritual",
+    "estado": "risco_hipotetico_nao_ocorrido",
+    "base_documental": "Templo de Deméter purifica a água utilizada para tornar possível a lavoura.",
+    "fonte": "ambientacao",
+    "condicao_hipotetica": "Purificação torna-se indisponível ou insuficiente nesta campanha.",
+    "consequencia_possivel": "Lavoura pode ficar exposta; nenhum colapso alimentar ou perda de Prosperidade é automático.",
+    "lacunas": [
+      "Capacidade do templo",
+      "Abastecimento alternativo",
+      "Duração da interrupção"
+    ],
+    "efeito_dw_automatico": false,
+    "evento_campanha_id": null
+  },
+  {
+    "id": "pressao:quebra-viagem-sazonal",
+    "assentamento_id": "assentamento:comunidades-insulares-costa-sul",
+    "dependencias_ids": [
+      "dependencia:ilhas-circulacao-sazonal"
+    ],
+    "tipo": "restricao_de_mobilidade",
+    "estado": "risco_hipotetico_nao_ocorrido",
+    "base_documental": "Tortles e tabaxis fazem viagens sazonais em busca de histórias e recursos.",
+    "fonte": "ambientacao",
+    "condicao_hipotetica": "Uma temporada de viagens é impedida em uma campanha específica.",
+    "consequencia_possivel": "A circulação cultural ou material pode mudar; não é prova de desabastecimento alimentar.",
+    "lacunas": [
+      "Estações e itinerários",
+      "Natureza dos recursos",
+      "Efeito sobre cada ilha"
+    ],
+    "efeito_dw_automatico": false,
+    "evento_campanha_id": null
+  }
+]

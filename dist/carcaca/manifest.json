@@ -12,6 +12,8 @@
   "total_fluxos": 4,
   "total_cenarios_assentamentos": 4,
   "total_dependencias_materiais": 5,
+  "total_balancos_materiais": 4,
+  "total_pressoes_ecologicas": 4,
   "arquivos": {
     "creatures": "creatures.json",
     "catalog": "catalog.json",
@@ -28,7 +30,11 @@
     "flows": "flows.json",
     "settlement_scenarios": "settlement-scenarios.json",
     "material_dependencies": "material-dependencies.json",
-    "material_dependency_indexes": "material-dependency-indexes.json"
+    "material_dependency_indexes": "material-dependency-indexes.json",
+    "material_balances": "material-balances.json",
+    "material_balance_indexes": "material-balance-indexes.json",
+    "ecological_pressures": "ecological-pressures.json",
+    "ecological_pressure_indexes": "ecological-pressure-indexes.json"
   },
   "estado": "curadoria_em_andamento",
   "nota": "Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."

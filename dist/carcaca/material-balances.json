@@ -1,0 +1,294 @@
+[
+  {
+    "id": "balanco:ilhas-recursos-coletados",
+    "assentamento_id": "assentamento:comunidades-insulares-costa-sul",
+    "dependencia_id": "dependencia:ilhas-circulacao-sazonal",
+    "fluxo_id": "fluxo:viagens-sazonais-comunidades-insulares",
+    "recurso_id": null,
+    "tipo_recurso": "coleta_nao_especificada",
+    "descricao": "Tortles e tabaxis viajam sazonalmente em busca de histórias e recursos; material coletado não identificado.",
+    "status": "nao_quantificado",
+    "fonte": "ambientacao",
+    "sazonalidade": {
+      "tipo": "sazonal_documentada",
+      "periodos_conhecidos": null,
+      "janela_duracao": null,
+      "observacao": "O movimento sazonal está confirmado, mas meses, estações locais e duração não constam da lore."
+    },
+    "medidas": {
+      "estoque_inicial": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "producao": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "entradas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "consumo": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "saidas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "perdas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "estoque_final": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      }
+    },
+    "unidades_possiveis": [
+      "litro",
+      "quilograma",
+      "unidade"
+    ],
+    "unidades_possiveis_status": "opcoes_tecnicas_nao_observadas",
+    "nao_inferir": [
+      "Quais recursos materiais são coletados",
+      "Que histórias seriam bens fungíveis",
+      "Meses e duração de viagem",
+      "Que ilhas trocam bens com Portomonte"
+    ]
+  },
+  {
+    "id": "balanco:portomonte-agua-purificada",
+    "assentamento_id": "assentamento:portomonte",
+    "dependencia_id": "dependencia:portomonte-purificacao",
+    "fluxo_id": "fluxo:purificacao-agua-portomonte",
+    "recurso_id": "recurso:agua_purificada",
+    "tipo_recurso": "agua_transformada",
+    "descricao": "Água do Mar de Sangue purificada por templo de Deméter para viabilizar agricultura.",
+    "status": "nao_quantificado",
+    "fonte": "ambientacao",
+    "sazonalidade": {
+      "tipo": "nao_documentada",
+      "periodos_conhecidos": null,
+      "janela_duracao": null,
+      "observacao": "Não há calendário produtivo ou comercial documentado."
+    },
+    "medidas": {
+      "estoque_inicial": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "producao": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "entradas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "consumo": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "saidas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "perdas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "estoque_final": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      }
+    },
+    "unidades_possiveis": [
+      "litro",
+      "quilograma",
+      "unidade"
+    ],
+    "unidades_possiveis_status": "opcoes_tecnicas_nao_observadas",
+    "nao_inferir": [
+      "Água potável e consumo por habitante",
+      "Capacidade do templo",
+      "Volumes de entradas e perdas",
+      "Distribuição gratuita ou tarifada"
+    ]
+  },
+  {
+    "id": "balanco:portomonte-mercadorias-nao-identificadas",
+    "assentamento_id": "assentamento:portomonte",
+    "dependencia_id": "dependencia:portomonte-comercio",
+    "fluxo_id": "fluxo:comercio-costeiro-portomonte",
+    "recurso_id": null,
+    "tipo_recurso": "mercadoria_nao_identificada",
+    "descricao": "Comércio costeiro existe, mas os bens não foram nomeados; não somar produtos diferentes em um único saldo.",
+    "status": "nao_quantificado",
+    "fonte": "ambientacao",
+    "sazonalidade": {
+      "tipo": "nao_documentada",
+      "periodos_conhecidos": null,
+      "janela_duracao": null,
+      "observacao": "Não há calendário produtivo ou comercial documentado."
+    },
+    "medidas": {
+      "estoque_inicial": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "producao": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "entradas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "consumo": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "saidas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "perdas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "estoque_final": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      }
+    },
+    "unidades_possiveis": [
+      "litro",
+      "quilograma",
+      "unidade"
+    ],
+    "unidades_possiveis_status": "opcoes_tecnicas_nao_observadas",
+    "nao_inferir": [
+      "Mercadoria homogênea",
+      "Parceiros conhecidos",
+      "Calendário e volumes",
+      "Estoque de itens definidos"
+    ]
+  },
+  {
+    "id": "balanco:portomonte-producao-agricola",
+    "assentamento_id": "assentamento:portomonte",
+    "dependencia_id": "dependencia:portomonte-lavoura",
+    "fluxo_id": "fluxo:purificacao-agua-portomonte",
+    "recurso_id": "recurso:producao_agricola",
+    "tipo_recurso": "produto_agricola",
+    "descricao": "Agricultura sobre pedra viabilizada pela água purificada; culturas e colheitas desconhecidas.",
+    "status": "nao_quantificado",
+    "fonte": "ambientacao",
+    "sazonalidade": {
+      "tipo": "nao_documentada",
+      "periodos_conhecidos": null,
+      "janela_duracao": null,
+      "observacao": "Não há calendário produtivo ou comercial documentado."
+    },
+    "medidas": {
+      "estoque_inicial": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "producao": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "entradas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "consumo": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "saidas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "perdas": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      },
+      "estoque_final": {
+        "valor": null,
+        "unidade": null,
+        "periodo": null,
+        "origem_medicao": null
+      }
+    },
+    "unidades_possiveis": [
+      "litro",
+      "quilograma",
+      "unidade"
+    ],
+    "unidades_possiveis_status": "opcoes_tecnicas_nao_observadas",
+    "nao_inferir": [
+      "Tipo de plantação",
+      "Rendimento por área",
+      "Safras e estocagem",
+      "Consumo por habitante"
+    ]
+  }
+]

@@ -1,0 +1,44 @@
+{
+  "by_assentamento": {
+    "assentamento:comunidades-insulares-costa-sul": [
+      "balanco:ilhas-recursos-coletados"
+    ],
+    "assentamento:portomonte": [
+      "balanco:portomonte-agua-purificada",
+      "balanco:portomonte-mercadorias-nao-identificadas",
+      "balanco:portomonte-producao-agricola"
+    ]
+  },
+  "by_recurso": {
+    "recurso:agua_purificada": [
+      "balanco:portomonte-agua-purificada"
+    ],
+    "recurso:producao_agricola": [
+      "balanco:portomonte-producao-agricola"
+    ]
+  },
+  "by_tipo": {
+    "agua_transformada": [
+      "balanco:portomonte-agua-purificada"
+    ],
+    "coleta_nao_especificada": [
+      "balanco:ilhas-recursos-coletados"
+    ],
+    "mercadoria_nao_identificada": [
+      "balanco:portomonte-mercadorias-nao-identificadas"
+    ],
+    "produto_agricola": [
+      "balanco:portomonte-producao-agricola"
+    ]
+  },
+  "by_sazonalidade": {
+    "nao_documentada": [
+      "balanco:portomonte-agua-purificada",
+      "balanco:portomonte-mercadorias-nao-identificadas",
+      "balanco:portomonte-producao-agricola"
+    ],
+    "sazonal_documentada": [
+      "balanco:ilhas-recursos-coletados"
+    ]
+  }
+}
