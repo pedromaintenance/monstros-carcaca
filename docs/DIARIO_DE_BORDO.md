@@ -182,3 +182,17 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 - Índice `by_assentamento` inclui 3 perfis em Portomonte. Viagens sazonais insulares não receberam meses inventados.
 - O resultado aritmético de teste (45 litros **fictícios**) foi utilizado apenas em testes automatizados e exemplo de documentação, **não** atribuído a quaisquer fichas canônicas.
 - O marco M3 prossegue para a análise de capacidade de suporte e incerteza; nenhum jogo, save ou ficha D&D sofreu alteração.
+
+## 2026-10-26 · Ciclo 9 — Capacidade ecológica sem população presumida
+
+**Base documental:** `Ambientação - A Carcaça - Visão Geral.txt` (Além Sul). A fonte sustenta agricultura com água purificada em Portomonte, comunidades insulares tortles/tabaxis com viagens sazonais e habitat costeiro/subaquático dos kuo-toa. **Não fornece** potabilidade, dietas, alimentação por residente, vagas, capacidade de descarte, residentes, nascimentos, mortes ou migração.
+
+**Registros:** um perfil para Portomonte, um conjunto de comunidades insulares e uma rede de cavernas kuo-toa. Cada perfil tem água potável, alimentação, abrigo e resíduos como perguntas materiais; doze limites em `medicoes_nao_disponiveis` com `valor:null`. A água para lavoura não recebeu indevidamente o status de água potável.
+
+**Continuidade:** dados de residentes, nascimentos, óbitos, migração de entrada e saída não foram inventados. O deslocamento sazonal insular é separado de mudança de residência e de reprodução.
+
+**Código:** schema novo, verificação de referências e cardinalidade dos quatro limites, índices gerados para assentamento/natureza/mobilidade e cliente JS. `previewSupportCapacity` e `previewPopulationFlow` permitem **apenas hipóteses explícitas** com todas as medidas, unidades, períodos, fonte e adequação, sem persistência nem modificação de DW. O limite aritmético é o menor entre quatro dimensões; isso não representa consenso ecológico nem capacidade real da Carcaça.
+
+**Testes e limites:** sem dados => indeterminado; recusa valores sem origem, unidade distinta, períodos diferentes, demanda zero e população negativa. Exemplo de 200 habitantes é fictício e só existe nos testes/documentação, não no atlas.
+
+**Próximo:** estudar material construtivo, saneamento, armazenamento e ecologia regional sem retroconverter simuladores em lore canônica.

@@ -98,3 +98,13 @@ A camada de economia material distribui `material-balances.json`, `material-bala
 Todos os perfis reais começam **não quantificados** (`valor:null`, `unidade:null`, `periodo:null`, `origem_medicao:null`). Há sazonalidade documentada para as viagens insulares, mas **não** meses especificados. Nenhum evento ambiental hipotético é aplicado à lore.
 
 O método `previewMaterialBalance` está em `src/carcaca-material-balance.mjs`; é somente leitura e exige entradas completas, produto homogêneo, mesma unidade e mesmo período. Veja [Balanços e pressões ecológicas](docs/BALANCOS_E_PRESSOES_ECOLOGICAS.md).
+
+## M3 — Ciclo 9: capacidade de suporte ecológico
+
+O atlas adiciona **três perfis regionais de suporte**, quatro limites por perfil (água potável, alimentação, abrigo e resíduos) e campos explícitos de continuidade demográfica. **Todos os números canônicos permanecem nulos.**
+
+Arquivos: `data/capacidade_suporte_costa_sul.json`, `schemas/capacidade-suporte.schema.json`, `dist/carcaca/support-profiles.json` e `support-indexes.json`.
+
+`src/carcaca-support-capacity.mjs` fornece `previewSupportCapacity` e `previewPopulationFlow`, ambos somente leitura e condicionados a premissas e medições fornecidas conscientemente pelo mestre. **Não inferir que água purificada para a lavoura seja potável nem confundir viagem sazonal com migração.**
+
+Leia [Capacidade de suporte e demografia](docs/CAPACIDADE_DE_SUPORTE.md).

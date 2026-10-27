@@ -131,3 +131,17 @@ console.log(indefinido.motivo); // dados_insuficientes
 ```
 
 Consulte `getMaterialBalances()`, `getMaterialBalanceIndexes()`, `getEcologicalPressures()` e `getEcologicalPressureIndexes()`. Pressões são **não ocorridas**. Balanço real carece de medidas com valor, unidade, período e origem explícitos; dados quantitativos não são completados automaticamente e a função somente simula.
+
+## Capacidade de suporte ecológico (ciclo 9)
+
+```js
+import {previewSupportCapacity,previewPopulationFlow} from "./src/carcaca-support-capacity.mjs";
+const p=await atlas.getSupportProfile("suporte:portomonte");
+const indisponivel=previewSupportCapacity(p);
+const outro=await atlas.searchSupportProfiles({natureza:"rede_de_abrigos"});
+const indices=await atlas.getSupportIndexes();
+```
+
+A distribuição `support-profiles.json` contém três registros, todos sem quantidade informada, e `support-indexes.json` expõe índices por assentamento, natureza editorial e mobilidade sazonal. A simulação só opera com `premissasExplicitas:true` e todas as dimensões medidas, confirmadas e comparáveis no mesmo período; **não aplica efeitos DW**. A dinâmica demográfica exige contagem de residentes e eventos populacionais, sem converter viagens sazonais em migração.
+
+Veja `docs/CAPACIDADE_DE_SUPORTE.md` para método e advertências de adequação nutricional, água potável, abrigo e tratamento de resíduos.

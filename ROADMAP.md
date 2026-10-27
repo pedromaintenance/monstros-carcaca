@@ -204,3 +204,19 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] `dist/carcaca/manifest.json`: **7 criaturas, 3 registros de assentamento, 5 dependências, 4 perfis materiais e 4 pressões ecológicas**.
 - [x] Todos os 4 perfis têm **zero medições numéricas preenchidas**; todas as pressões permanecem `risco_hipotetico_nao_ocorrido` e `efeito_dw_automatico=false`.
 - [x] Índices publicados: balanços por assentamento/recurso/tipo/sazonalidade e pressões por assentamento/dependência/tipo.
+
+## Ciclo 9 — Capacidade de suporte e continuidade demográfica (2026-10-26)
+
+- [x] Revisar a lore: Portomonte possui água purificada para agricultura, mas não há prova de potabilidade; comunidades insulares viajam sazonalmente, sem taxas de migração.
+- [x] Criar três perfis de suporte ecológico em `data/capacidade_suporte_costa_sul.json` sem números fabricados.
+- [x] Modelar quatro limites por perfil: água potável, alimentação, abrigo e destinação de resíduos; **12 limites em estado desconhecido**.
+- [x] Separar residentes, nascimentos, óbitos, migração de entrada e saída; todos os valores quantitativos e períodos permanecem `null`.
+- [x] Criar schema e validação cruzada com IDs de assentamentos, natureza editorial e status de documentação.
+- [x] Indexar e distribuir perfis de suporte em `dist/carcaca/`, com cliente ESM para busca por assentamento, natureza e mobilidade sazonal.
+- [x] Criar simulação pura da capacidade limitante que exige **quatro recursos especificados, adequação e medidas explícitas**, sem afetar rótulos DW.
+- [x] Criar simulação demográfica separada; impedir que viagens sazonais sejam migrantes permanentes inferidos.
+- [x] Acrescentar testes de não mutação, falta de fonte, unidade/período incompatíveis, demandas nulas e população hipotética inválida.
+- [x] Documentar método, limites, exemplos fictícios e incertezas em `docs/CAPACIDADE_DE_SUPORTE.md`.
+- [ ] Revisão editorial com o autor: fontes de água potável, dietas, armazenamento, saneamento e sustentação de povoações singulares.
+- [ ] Transformar grupos regionais em *steadings* concretas apenas quando a fonte permitir individualizar comunidade, população e defesas.
+- [ ] Integrar observações reais de cada campanha somente em saves, não ao catálogo canônico.
