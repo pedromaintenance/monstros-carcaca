@@ -310,3 +310,10 @@ As buscas `searchCompletePilotMovements` e `searchDocxTables` acessam os novos J
 Integrados **28 movimentos** de PALADINO (47 opcoes, 83 trechos e 13 REQUER diretos). O atlas passa a cobrir **343 dos 632 movimentos de classe** (54,3%). MISSÃO SAGRADA concede livremente JURAMENTO QUEBRADO e PENITÊNCIA, mas **ambos continuam exigindo REQUER: Missão Sagrada**; nenhum efeito e atribuido automaticamente.
 
 Fonte versionada: `data/lore/hack-carcaca-dw-paladino-integrais.json.gz` (JSON comprimido, recuperavel por Python gzip). O JSON integral legivel e publicado em `dist/carcaca/hack-paladin-movements.json`, com indices em `dist/carcaca/hack-paladin-movement-indexes.json`.
+
+
+## Classe Clérigo — oitavo grupo integral
+
+Integrados **37 movimentos** de CLÉRIGO (26 opções, 68 trechos rastreados e **19 REQUER diretos**), elevando a cobertura para **380 de 632 movimentos de classe** (60,1%). Os requisitos têm **seis raízes independentes**, incluindo Sacerdote, Presságio, Runa, Empreste Seu Corpo, Espíritos Estão por Toda Parte e Círculo de Convocação. O atlas não torna Sacerdote requisito universal para outros caminhos documentados.
+
+A cadeia RUNA → RUNA VIVA → PELE ESCRITA é preservada: possuir Runa isoladamente não dispensa Runa Viva. O cliente expõe `getClericDependencyChain` para diagnóstico somente, sem aquisição automática. Fonte compacta: `data/lore/hack-carcaca-dw-clerigo-integrais.json.gz`; catálogo JSON legível: `dist/carcaca/hack-cleric-movements.json`. Documentação: [Integração Clérigo](docs/INTEGRACAO_CLERIGO_HACK_DW.md).

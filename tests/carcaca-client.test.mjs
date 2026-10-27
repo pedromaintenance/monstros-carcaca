@@ -65,7 +65,9 @@ const fixtures={
     hack_martial_artist_movements:"hack-martial-artist-movements.json",
     hack_martial_artist_movement_indexes:"hack-martial-artist-movement-indexes.json",
     hack_paladin_movements:"hack-paladin-movements.json",
-    hack_paladin_movement_indexes:"hack-paladin-movement-indexes.json"}},
+    hack_paladin_movement_indexes:"hack-paladin-movement-indexes.json",
+    hack_cleric_movements:"hack-cleric-movements.json",
+    hack_cleric_movement_indexes:"hack-cleric-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -116,6 +118,31 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-cleric-movements.json":[
+    {id:"movimento-classe:paragrafo-2056",titulo:"SACERDOTE",grupo:"CLÉRIGO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],texto_original:"Escolha uma divindade.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2057",titulo:"MILAGRES",grupo:"CLÉRIGO",
+     requisito_literal:"Sacerdote",requisito_estruturado:{
+       tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2056"},
+     opcoes:[{paragrafo_docx:2058,texto:"acontece como pedido;"}],
+     texto_original:"Quando invocar sua divindade.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2089",titulo:"RUNA",grupo:"CLÉRIGO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Escolha três conceitos que sabe inscrever.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2099",titulo:"RUNA VIVA",grupo:"CLÉRIGO",
+     requisito_literal:"Runa",requisito_estruturado:{
+       tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2089"},
+     opcoes:[],texto_original:"Quando inscrever uma runa viva.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2100",titulo:"PELE ESCRITA",grupo:"CLÉRIGO",
+     requisito_literal:"Runa Viva",requisito_estruturado:{
+       tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2099"},
+     opcoes:[],texto_original:"Quando inscrever seu corpo.",aplicacao_canonica:false}
+  ],
+  "hack-cleric-movement-indexes.json":{
+    by_requisito_tipo:{movimento_exato:["movimento-classe:paragrafo-2057","movimento-classe:paragrafo-2099","movimento-classe:paragrafo-2100"]},
+    by_raiz_dependencia:{
+      "movimento-classe:paragrafo-2056":["movimento-classe:paragrafo-2057"],
+      "movimento-classe:paragrafo-2089":["movimento-classe:paragrafo-2099","movimento-classe:paragrafo-2100"]}},
   "hack-paladin-movements.json":[
     {id:"movimento-classe:paragrafo-1968",titulo:"MISSÃO SAGRADA",grupo:"PALADINO",
      requisito_literal:null,requisito_estruturado:null,opcoes:[],aplicacao_canonica:false,
@@ -1555,4 +1582,35 @@ test("Paladino concede dois movimentos gratuitamente sem dispensar REQUER",async
   assert.equal(await atlas.getPaladinGrantPreview("movimento-classe:paragrafo-9999"),null);
   await assert.rejects(()=>atlas.getPaladinRequirementPreview(juramento,{
     movimentosPossuidos:"invalido"}),TypeError);
+});
+
+
+
+test("Clérigo preserva raízes distintas e REQUER transitivos sem liberar seleção",async()=>{
+  const all=await atlas.getClericMovements();
+  assert.equal(all.length,5);
+  assert.equal((await atlas.searchClericMovements({requer:"SACERDOTE"})).length,1);
+  assert.equal((await atlas.searchClericMovements({titulo:"pele escrita"})).length,1);
+  assert.equal((await atlas.searchClericMovements({comOpcoes:true}))[0].titulo,"MILAGRES");
+  assert.equal((await atlas.searchClericMovements({
+    raizDependencia:"movimento-classe:paragrafo-2089"})).length,2);
+  assert.equal((await atlas.getClericMovementIndexes()).by_requisito_tipo.movimento_exato.length,3);
+  const id="movimento-classe:paragrafo-2100";
+  const none=await atlas.getClericDependencyChain(id);
+  assert.deepEqual(none.cadeia_imediato_para_raiz.map(x=>x.movimento_id),[
+    "movimento-classe:paragrafo-2099","movimento-classe:paragrafo-2089"]);
+  assert.equal(none.componentes_identificados_presentes,false);
+  const partial=await atlas.getClericDependencyChain(id,{
+    movimentosPossuidos:["movimento-classe:paragrafo-2089"]});
+  assert.deepEqual(partial.cadeia_imediato_para_raiz.map(x=>x.presente_na_lista),[false,true]);
+  const complete=await atlas.getClericDependencyChain(id,{
+    movimentosPossuidos:["movimento-classe:paragrafo-2089","movimento-classe:paragrafo-2099"]});
+  assert.equal(complete.componentes_identificados_presentes,true);
+  assert.equal(complete.habilitado_para_compra,null);
+  assert.equal(complete.necessita_avaliacao_do_mestre,true);
+  assert.equal(complete.aplicacao_canonica,false);
+  const priest=await atlas.getClericDependencyChain("movimento-classe:paragrafo-2056");
+  assert.deepEqual(priest.cadeia_imediato_para_raiz,[]);
+  assert.equal(await atlas.getClericDependencyChain("movimento-classe:paragrafo-9999"),null);
+  await assert.rejects(()=>atlas.getClericDependencyChain(id,{movimentosPossuidos:"invalido"}),TypeError);
 });

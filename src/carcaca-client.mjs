@@ -60,6 +60,45 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getClericMovements(){return byKey("hack_cleric_movements");}
+  async function getClericMovementIndexes(){return byKey("hack_cleric_movement_indexes");}
+  async function getClericMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    return (await getClericMovements()).find(m=>m.id===id)??null;
+  }
+  async function searchClericMovements({titulo,query,requer,comRequer,comOpcoes,raizDependencia}={}){
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const moves=await getClericMovements();
+    const ix=raizDependencia?await getClericMovementIndexes():null;
+    const subtree=raizDependencia?new Set(ix.by_raiz_dependencia[raizDependencia]??[]):null;
+    return moves.filter(m=>
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (!requer||norm(m.requisito_literal).includes(norm(requer)))&&
+      (comRequer===undefined||Boolean(m.requisito_literal)===comRequer)&&
+      (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
+      (!subtree||subtree.has(m.id)));
+  }
+  async function getClericDependencyChain(id,{movimentosPossuidos=[]}={}){
+    if(!Array.isArray(movimentosPossuidos))throw new TypeError("movimentosPossuidos deve ser array");
+    const moves=await getClericMovements();
+    const byId=new Map(moves.map(m=>[m.id,m]));
+    const start=byId.get(id);if(!start)return null;
+    const seen=new Set([id]), held=new Set(movimentosPossuidos), chain=[];
+    let current=start;
+    while(current.requisito_estruturado){
+      const required=current.requisito_estruturado.movimento_id;
+      if(seen.has(required)||!byId.has(required))throw new Error("Ciclo ou REQUER sem alvo em Clérigo");
+      seen.add(required);current=byId.get(required);
+      chain.push({movimento_id:required,titulo:current.titulo,presente_na_lista:held.has(required)});
+    }
+    return {movimento_id:id,requisito_literal:start.requisito_literal,
+      cadeia_imediato_para_raiz:chain,raiz_movimento_id:current.id,
+      componentes_identificados_presentes:chain.every(m=>m.presente_na_lista),
+      habilitado_para_compra:null,necessita_avaliacao_do_mestre:true,
+      aplicacao_canonica:false,
+      observacao:"REQUER continua obrigatório; a cadeia é apenas um diagnóstico, sem compra ou efeitos automáticos."};
+  }
   async function getPaladinMovements(){return byKey("hack_paladin_movements");}
   async function getPaladinMovementIndexes(){return byKey("hack_paladin_movement_indexes");}
   async function getPaladinMovement(id){
@@ -610,6 +649,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getMartialArtistMovements,getMartialArtistMovement,getMartialArtistMovementIndexes,searchMartialArtistMovements,
           getPaladinMovements,getPaladinMovement,getPaladinMovementIndexes,searchPaladinMovements,
           getPaladinRequirementPreview,getPaladinGrantPreview,
+          getClericMovements,getClericMovement,getClericMovementIndexes,
+          searchClericMovements,getClericDependencyChain,
           getBardRequirementPreview,
           getMartialArtistRequirementPreview,
           getRogueRequirementPreview,

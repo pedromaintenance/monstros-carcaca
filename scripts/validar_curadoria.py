@@ -1471,6 +1471,83 @@ def validar_paladino_integral():
             ["movimento-classe:paragrafo-1968"],"Indices de Paladino inconsistentes.")
     print("Paladino: 28 movimentos, 47 opcoes, 83 partes, 13 REQUER, 2 concessoes livres.")
 
+
+def validar_clerigo_integral():
+    """Confere 37 movimentos, 19 REQUER diretos e cadeias independentes do sacerdocio."""
+    from hack_movimentos_personagem import build_cleric_indexes
+    raw=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-clerigo-integrais.json.gz").read_bytes()).decode("utf-8"))
+    inv=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(raw["fonte_sha256"]==inv["fonte_sha256"] and raw["grupo"]=="CLÉRIGO",
+            "Fonte Clérigo divergente do inventário.")
+    moves=raw["movimentos"]
+    originals={m["id"]:m for m in inv["movimentos"] if m["grupo"]=="CLÉRIGO"}
+    require(len(moves)==len(originals)==37 and len(unique(moves,"clerigo"))==37,
+            "Faltam movimentos originais do Clérigo.")
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves)
+            and moves[0]["paragrafo_docx"]==2056 and moves[-1]["paragrafo_docx"]==2126,
+            "Âncoras do Clérigo alteradas.")
+    expected={"total_movimentos":37,"total_com_requer":19,"total_vinculos_exatos":19,
+              "total_opcoes":26,"total_partes":68,"total_concessoes_gratuitas_literais":0}
+    require(raw["integridade"]==expected,"Contagens integrais do Clérigo divergentes.")
+    by_id={m["id"]:m for m in moves}
+    parts=set();edges={}
+    for m in moves:
+        old=originals.get(m["id"])
+        require(old is not None and m["titulo"]==old["titulo"] and
+                m["paragrafo_docx"]==old["paragrafo_docx"] and
+                m["requisito_literal"]==old["requisito_literal"],
+                "Movimento ou REQUER divergente da fonte.")
+        require(m["texto_integral_conferido"] is True and
+                m["aplicacao_canonica"] is False and
+                m["estado"]=="transcricao_integral_sem_revisao_mecanica",
+                "Clérigo não pode ser aplicado automaticamente.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
+                "Texto Clérigo desconectado das partes originais.")
+        require(m["opcoes"]==[
+                  {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+                  for p in m["partes"] if p["tipo"]=="opcao"],
+                "Opções documentais Clérigo incompletas.")
+        require(m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"] and
+                m["partes"][0]["tipo"]=="corpo",
+                "Corpo sem origem documental Clérigo.")
+        for part in m["partes"]:
+            require(part["paragrafo_docx"] not in parts and part["texto"],
+                    "Parte duplicada/vazia Clérigo.")
+            parts.add(part["paragrafo_docx"])
+        require(not m.get("concessoes_gratuitas_literais"),
+                "Não há concessões gratuitas nos movimentos de Clérigo auditados.")
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]), "REQUER não deve ser inferido.")
+        if req:
+            require(req["tipo"]=="movimento_exato" and req["movimento_id"] in originals
+                    and req["titulo_requerido"]==by_id[req["movimento_id"]]["titulo"]
+                    and req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "Clérigo tem pré-requisito não homologado ou sem alvo literal.")
+            edges[m["id"]]=req["movimento_id"]
+    require(len(parts)==68 and sum(len(m["opcoes"]) for m in moves)==26
+            and len(edges)==19,"Contagem de opções/partes/REQUER inconsistente.")
+    for start in edges:
+        at=start;visited={start}
+        while at in edges:
+            at=edges[at]
+            require(at not in visited,"Ciclo de REQUER na classe Clérigo.")
+            visited.add(at)
+    ix=build_cleric_indexes(moves)
+    require(len(ix["by_tem_requer"]["sim"])==19
+            and len(ix["by_requisito_tipo"]["movimento_exato"])==19,
+            "Índice Clérigo perdeu dependências.")
+    groups={"movimento-classe:paragrafo-2056":5,
+            "movimento-classe:paragrafo-2084":2,
+            "movimento-classe:paragrafo-2089":5,
+            "movimento-classe:paragrafo-2102":1,
+            "movimento-classe:paragrafo-2103":1,
+            "movimento-classe:paragrafo-2112":5}
+    require({k:len(v) for k,v in ix["by_raiz_dependencia"].items()}==groups,
+            "Clérigo deve preservar seis raízes de dependência independentes.")
+    require(edges["movimento-classe:paragrafo-2100"]=="movimento-classe:paragrafo-2099",
+            "PELE ESCRITA exige RUNA VIVA, não apenas RUNA.")
+    print("Clérigo: 37 movimentos, 26 opções, 68 partes e 19 REQUER diretos; seis raízes, sem aplicação canônica.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1574,6 +1651,7 @@ def main():
     validar_bardo_integral()
     validar_artista_marcial_integral()
     validar_paladino_integral()
+    validar_clerigo_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

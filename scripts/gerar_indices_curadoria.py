@@ -275,12 +275,13 @@ def build():
     bardo_docx=load("data/lore/hack-carcaca-dw-bardo-integrais.json")["movimentos"]
     artista_marcial_docx=load("data/lore/hack-carcaca-dw-artista-marcial-integrais.json")["movimentos"]
     paladino_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-paladino-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
+    clerigo_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-clerigo-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
     dependencias_classes=classes_docx["dependencias_exatas_candidatas"]
     dependencias_pendentes=classes_docx["dependencias_nao_resolvidas"]
     try:
-        from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes
+        from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes
     except ModuleNotFoundError:
-        from hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes
+        from hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes
     regras_nucleo=load("data/lore/hack-carcaca-dw-regras-nucleo.json")
     quadros_integrais=load("data/lore/hack-carcaca-dw-quadros-integrais.json")
     movimentos_gerais=compilar_movimentos_gerais(quadros_integrais,docx_tables)
@@ -305,7 +306,8 @@ def build():
     bardo_por_id={m["id"]:m for m in bardo_docx}
     artista_marcial_por_id={m["id"]:m for m in artista_marcial_docx}
     paladino_por_id={m["id"]:m for m in paladino_docx}
-    integral_por_id={**guerreiro_por_id,**barbaro_por_id,**cacador_por_id,**ladino_por_id,**bardo_por_id,**artista_marcial_por_id,**paladino_por_id}
+    clerigo_por_id={m["id"]:m for m in clerigo_docx}
+    integral_por_id={**guerreiro_por_id,**barbaro_por_id,**cacador_por_id,**ladino_por_id,**bardo_por_id,**artista_marcial_por_id,**paladino_por_id,**clerigo_por_id}
     classes_docx_piloto=[{**x,"revisao_preliminar_id":reviewed_paragraphs.get(x["paragrafo_docx"]),
                          "texto_integral_id":x["id"] if x["id"] in integral_por_id else None,
                          "texto_integral_disponivel":x["id"] in integral_por_id}
@@ -317,6 +319,7 @@ def build():
     indice_bardo_docx=build_bard_indexes(bardo_docx)
     indice_artista_marcial_docx=build_martial_artist_indexes(artista_marcial_docx)
     indice_paladino_docx=build_paladin_indexes(paladino_docx)
+    indice_clerigo_docx=build_cleric_indexes(clerigo_docx)
     indice_povos_docx=build_people_indexes(povos_docx)
     indice_classes_docx=build_class_indexes(classes_docx_piloto,dependencias_classes,dependencias_pendentes)
     complete_move_indexes={k:defaultdict(set) for k in ("by_grupo","by_marcador","by_preliminar")}
@@ -497,6 +500,8 @@ def build():
         "hack_martial_artist_movement_indexes":"hack-martial-artist-movement-indexes.json",
         "hack_paladin_movements":"hack-paladin-movements.json",
         "hack_paladin_movement_indexes":"hack-paladin-movement-indexes.json",
+        "hack_cleric_movements":"hack-cleric-movements.json",
+        "hack_cleric_movement_indexes":"hack-cleric-movement-indexes.json",
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
@@ -558,6 +563,9 @@ def build():
         "total_opcoes_paladino":sum(len(m["opcoes"]) for m in paladino_docx),
         "total_requer_paladino":sum(bool(m["requisito_literal"]) for m in paladino_docx),
         "total_concessoes_livres_paladino":sum(len(m["concessoes_gratuitas_literais"]) for m in paladino_docx),
+        "total_movimentos_clerigo_integrais":len(clerigo_docx),
+        "total_opcoes_clerigo":sum(len(m["opcoes"]) for m in clerigo_docx),
+        "total_requer_clerigo":sum(bool(m["requisito_literal"]) for m in clerigo_docx),
         "total_movimentos_ladino_integrais":len(ladino_docx),
         "total_opcoes_ladino":sum(len(m["opcoes"]) for m in ladino_docx),
         "total_requer_ladino":sum(bool(m["requisito_literal"]) for m in ladino_docx),
@@ -629,6 +637,8 @@ def build():
            files["hack_martial_artist_movement_indexes"]:indice_artista_marcial_docx,
            files["hack_paladin_movements"]:paladino_docx,
            files["hack_paladin_movement_indexes"]:indice_paladino_docx,
+           files["hack_cleric_movements"]:clerigo_docx,
+           files["hack_cleric_movement_indexes"]:indice_clerigo_docx,
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,

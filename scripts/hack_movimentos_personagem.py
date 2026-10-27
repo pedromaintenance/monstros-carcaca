@@ -173,3 +173,29 @@ def build_paladin_indexes(moves):
         "by_requisito_id":ordered_index(moves,lambda m:[(m["requisito_estruturado"] or {}).get("movimento_id")]),
         "by_movimento_concedido":ordered_index(moves,lambda m:[g["movimento_id"] for g in m["concessoes_gratuitas_literais"]])
     }
+
+
+def build_cleric_indexes(moves):
+    """Indexa requisitos literais, inclusive cadeias transitivas, sem impor Sacerdote a todos."""
+    by_id={m["id"]:m for m in moves}
+    def req_ids(m):
+        req=m["requisito_estruturado"]
+        return [req["movimento_id"]] if req else []
+    def raiz(m):
+        if not m["requisito_estruturado"]:return []
+        seen={m["id"]};cur=m
+        while cur["requisito_estruturado"]:
+            target=cur["requisito_estruturado"]["movimento_id"]
+            if target in seen or target not in by_id:
+                raise ValueError("Ciclo ou REQUER externo inesperado em Clérigo")
+            seen.add(target);cur=by_id[target]
+        return [cur["id"]]
+    return {
+      "by_titulo":ordered_index(moves,lambda m:[m["titulo"]]),
+      "by_paragrafo":ordered_index(moves,lambda m:[m["paragrafo_docx"]]),
+      "by_tem_requer":ordered_index(moves,lambda m:["sim" if m["requisito_literal"] else "nao"]),
+      "by_tem_opcoes":ordered_index(moves,lambda m:["sim" if m["opcoes"] else "nao"]),
+      "by_requisito_tipo":ordered_index(moves,lambda m:[(m["requisito_estruturado"] or {}).get("tipo","nenhum")]),
+      "by_requisito_id":ordered_index(moves,req_ids),
+      "by_raiz_dependencia":ordered_index(moves,raiz)
+    }
