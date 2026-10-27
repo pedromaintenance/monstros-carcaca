@@ -50,6 +50,19 @@ def build():
         pack=load(path.relative_to(ROOT))
         scenarios.extend(pack["cenarios"])
     scenarios=sorted(scenarios,key=lambda r:r["id"])
+    dependencies=sorted(load("data/dependencias_materiais_costa_sul.json")["dependencias"],key=lambda r:r["id"])
+    dependency_indexes={k:defaultdict(set) for k in
+                        ("by_assentamento","by_fluxo","by_tipo","by_dependencia_predecessora")}
+    for dep in dependencies:
+        did=dep["id"]
+        for key,val in (("by_assentamento",dep["assentamento_id"]),
+                        ("by_fluxo",dep["fluxo_id"]),("by_tipo",dep["tipo"]),
+                        ("by_dependencia_predecessora",dep["depende_de_id"])):
+            add(dependency_indexes[key],val,did)
+    dependency_indexes={
+        name:{key:sorted(ids) for key,ids in sorted(group.items())}
+        for name,group in dependency_indexes.items()
+    }
     settlement_indexes = {k:defaultdict(set) for k in
                           ("by_regiao","by_lugar","by_natureza","by_rotulo_carcaca","by_povo")}
     for st in settlements:
@@ -101,7 +114,9 @@ def build():
         "settlement_labels":"settlement-labels.json",
         "settlement_indexes":"settlement-indexes.json",
         "peoples":"peoples.json", "flows":"flows.json",
-        "settlement_scenarios":"settlement-scenarios.json"
+        "settlement_scenarios":"settlement-scenarios.json",
+        "material_dependencies":"material-dependencies.json",
+        "material_dependency_indexes":"material-dependency-indexes.json"
     }
     manifest = {
         "schema_version":"0.1.0", "descricao":"Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
@@ -110,6 +125,7 @@ def build():
         "total_frentes":len(fronts), "total_assentamentos":len(settlements),
         "total_rotulos_assentamentos":len(settlement_labels), "total_povos":len(peoples),
         "total_fluxos":len(flows), "total_cenarios_assentamentos":len(scenarios),
+        "total_dependencias_materiais":len(dependencies),
         "arquivos":files, "estado":"curadoria_em_andamento",
         "nota":"Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."
     }
@@ -121,7 +137,9 @@ def build():
         files["settlement_labels"]:settlement_labels,
         files["settlement_indexes"]:settlement_indexes,
         files["peoples"]:peoples,files["flows"]:flows,
-        files["settlement_scenarios"]:scenarios
+        files["settlement_scenarios"]:scenarios,
+        files["material_dependencies"]:dependencies,
+        files["material_dependency_indexes"]:dependency_indexes
     }
 
 def main():
