@@ -114,7 +114,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:12",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:13",
@@ -123,7 +125,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:13",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:14",
@@ -132,7 +136,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:14",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:15",
@@ -141,7 +147,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:15",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:16",
@@ -150,7 +158,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:16",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:17",
@@ -159,7 +169,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:17",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:18",
@@ -168,7 +180,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:18",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:19",
@@ -177,7 +191,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:19",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:20",
@@ -186,7 +202,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:20",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:21",
@@ -195,7 +213,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:21",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:22",
@@ -204,7 +224,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:22",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:23",
@@ -213,7 +235,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:23",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:24",
@@ -222,7 +246,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:24",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:25",
@@ -231,7 +257,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:25",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:26",
@@ -240,7 +268,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:26",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:27",
@@ -249,7 +279,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:27",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:28",
@@ -258,7 +290,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:28",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:29",
@@ -267,7 +301,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:29",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:30",
@@ -276,7 +312,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:30",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:31",
@@ -285,7 +323,9 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:31",
+    "texto_integral_extraido": true
   },
   {
     "id": "tabela-docx:32",
@@ -294,6 +334,8 @@
     "tipo": "quadro_movimento_geral",
     "titulo_editorial": false,
     "texto_integral_curado": false,
-    "aplicacao_canonica": false
+    "aplicacao_canonica": false,
+    "quadro_integral_id": "quadro-geral-docx:32",
+    "texto_integral_extraido": true
   }
 ]

@@ -1,0 +1,237 @@
+{
+  "by_categoria": {
+    "avancado": [
+      "movimento-geral:docx-20",
+      "movimento-geral:docx-21",
+      "movimento-geral:docx-22",
+      "movimento-geral:docx-23",
+      "movimento-geral:docx-24",
+      "movimento-geral:docx-25",
+      "movimento-geral:docx-26",
+      "movimento-geral:docx-27",
+      "movimento-geral:docx-28",
+      "movimento-geral:docx-29",
+      "movimento-geral:docx-30",
+      "movimento-geral:docx-30-mandados-pendentes",
+      "movimento-geral:docx-31"
+    ],
+    "basico": [
+      "movimento-geral:docx-12",
+      "movimento-geral:docx-13",
+      "movimento-geral:docx-14",
+      "movimento-geral:docx-15",
+      "movimento-geral:docx-16",
+      "movimento-geral:docx-17",
+      "movimento-geral:docx-18",
+      "movimento-geral:docx-19"
+    ],
+    "subsistema_servos": [
+      "movimento-geral:docx-32"
+    ]
+  },
+  "by_quadro": {
+    "quadro-geral-docx:12": [
+      "movimento-geral:docx-12"
+    ],
+    "quadro-geral-docx:13": [
+      "movimento-geral:docx-13"
+    ],
+    "quadro-geral-docx:14": [
+      "movimento-geral:docx-14"
+    ],
+    "quadro-geral-docx:15": [
+      "movimento-geral:docx-15"
+    ],
+    "quadro-geral-docx:16": [
+      "movimento-geral:docx-16"
+    ],
+    "quadro-geral-docx:17": [
+      "movimento-geral:docx-17"
+    ],
+    "quadro-geral-docx:18": [
+      "movimento-geral:docx-18"
+    ],
+    "quadro-geral-docx:19": [
+      "movimento-geral:docx-19"
+    ],
+    "quadro-geral-docx:20": [
+      "movimento-geral:docx-20"
+    ],
+    "quadro-geral-docx:21": [
+      "movimento-geral:docx-21"
+    ],
+    "quadro-geral-docx:22": [
+      "movimento-geral:docx-22"
+    ],
+    "quadro-geral-docx:23": [
+      "movimento-geral:docx-23"
+    ],
+    "quadro-geral-docx:24": [
+      "movimento-geral:docx-24"
+    ],
+    "quadro-geral-docx:25": [
+      "movimento-geral:docx-25"
+    ],
+    "quadro-geral-docx:26": [
+      "movimento-geral:docx-26"
+    ],
+    "quadro-geral-docx:27": [
+      "movimento-geral:docx-27"
+    ],
+    "quadro-geral-docx:28": [
+      "movimento-geral:docx-28"
+    ],
+    "quadro-geral-docx:29": [
+      "movimento-geral:docx-29"
+    ],
+    "quadro-geral-docx:30": [
+      "movimento-geral:docx-30",
+      "movimento-geral:docx-30-mandados-pendentes"
+    ],
+    "quadro-geral-docx:31": [
+      "movimento-geral:docx-31"
+    ],
+    "quadro-geral-docx:32": [
+      "movimento-geral:docx-32"
+    ]
+  },
+  "by_titulo": {
+    "abastecer": [
+      "movimento-geral:docx-28"
+    ],
+    "ajudar ou interferir": [
+      "movimento-geral:docx-19"
+    ],
+    "avancar de nivel": [
+      "movimento-geral:docx-26"
+    ],
+    "defender": [
+      "movimento-geral:docx-15"
+    ],
+    "desafiar o perigo": [
+      "movimento-geral:docx-14"
+    ],
+    "discernir realidades": [
+      "movimento-geral:docx-17"
+    ],
+    "disparar": [
+      "movimento-geral:docx-13"
+    ],
+    "empreender uma jornada perigosa": [
+      "movimento-geral:docx-24"
+    ],
+    "encerrar sessao": [
+      "movimento-geral:docx-25"
+    ],
+    "falar dificil": [
+      "movimento-geral:docx-16"
+    ],
+    "farrear": [
+      "movimento-geral:docx-27"
+    ],
+    "mandados pendentes": [
+      "movimento-geral:docx-30-mandados-pendentes"
+    ],
+    "matar e pilhar": [
+      "movimento-geral:docx-12"
+    ],
+    "montar guarda": [
+      "movimento-geral:docx-23"
+    ],
+    "negociar": [
+      "movimento-geral:docx-18"
+    ],
+    "preparar": [
+      "movimento-geral:docx-31"
+    ],
+    "preparar acampamento": [
+      "movimento-geral:docx-22"
+    ],
+    "recrutar": [
+      "movimento-geral:docx-30"
+    ],
+    "recuperar-se": [
+      "movimento-geral:docx-29"
+    ],
+    "servos": [
+      "movimento-geral:docx-32"
+    ],
+    "sobrecarga": [
+      "movimento-geral:docx-21"
+    ],
+    "ultimo suspiro": [
+      "movimento-geral:docx-20"
+    ]
+  },
+  "by_faixa": {
+    "10+": [
+      "movimento-geral:docx-12",
+      "movimento-geral:docx-13",
+      "movimento-geral:docx-14",
+      "movimento-geral:docx-15",
+      "movimento-geral:docx-16",
+      "movimento-geral:docx-17",
+      "movimento-geral:docx-18",
+      "movimento-geral:docx-19",
+      "movimento-geral:docx-20",
+      "movimento-geral:docx-23",
+      "movimento-geral:docx-24",
+      "movimento-geral:docx-27",
+      "movimento-geral:docx-28",
+      "movimento-geral:docx-30",
+      "movimento-geral:docx-30-mandados-pendentes",
+      "movimento-geral:docx-32"
+    ],
+    "6-": [
+      "movimento-geral:docx-20",
+      "movimento-geral:docx-23",
+      "movimento-geral:docx-27",
+      "movimento-geral:docx-30",
+      "movimento-geral:docx-32"
+    ],
+    "7-9": [
+      "movimento-geral:docx-12",
+      "movimento-geral:docx-13",
+      "movimento-geral:docx-14",
+      "movimento-geral:docx-15",
+      "movimento-geral:docx-16",
+      "movimento-geral:docx-17",
+      "movimento-geral:docx-18",
+      "movimento-geral:docx-19",
+      "movimento-geral:docx-20",
+      "movimento-geral:docx-23",
+      "movimento-geral:docx-24",
+      "movimento-geral:docx-27",
+      "movimento-geral:docx-28",
+      "movimento-geral:docx-30",
+      "movimento-geral:docx-30-mandados-pendentes",
+      "movimento-geral:docx-32"
+    ]
+  },
+  "by_gatilho_literal": {
+    "sim": [
+      "movimento-geral:docx-12",
+      "movimento-geral:docx-13",
+      "movimento-geral:docx-14",
+      "movimento-geral:docx-15",
+      "movimento-geral:docx-16",
+      "movimento-geral:docx-17",
+      "movimento-geral:docx-18",
+      "movimento-geral:docx-19",
+      "movimento-geral:docx-20",
+      "movimento-geral:docx-21",
+      "movimento-geral:docx-22",
+      "movimento-geral:docx-23",
+      "movimento-geral:docx-24",
+      "movimento-geral:docx-25",
+      "movimento-geral:docx-26",
+      "movimento-geral:docx-27",
+      "movimento-geral:docx-28",
+      "movimento-geral:docx-29",
+      "movimento-geral:docx-30",
+      "movimento-geral:docx-30-mandados-pendentes",
+      "movimento-geral:docx-31",
+      "movimento-geral:docx-32"
+    ]
+  }
+}

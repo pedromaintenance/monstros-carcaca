@@ -1,0 +1,735 @@
+[
+  {
+    "id": "movimento-geral:docx-12",
+    "titulo": "MATAR E PILHAR",
+    "categoria": "basico",
+    "quadro_id": "quadro-geral-docx:12",
+    "tabela_inventario_id": "tabela-docx:12",
+    "tabela_docx_indice": 12,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando atacar um adversário em combate corpo a corpo, role+FOR ou DES.\nCom 10+: cause seu dano e evite o ataque do adversário. Opcionalmente, cause +1d6 de dano e exponha-se ao contra-ataque.\nCom 7–9: cause seu dano, e o adversário fará um ataque contra você.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando atacar um adversário em combate corpo a corpo, role+FOR ou DES."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 1,
+        "literal": "Com 10+: cause seu dano e evite o ataque do adversário. Opcionalmente, cause +1d6 de dano e exponha-se ao contra-ataque."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 2,
+        "literal": "Com 7–9: cause seu dano, e o adversário fará um ataque contra você."
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-13",
+    "titulo": "DISPARAR",
+    "categoria": "basico",
+    "quadro_id": "quadro-geral-docx:13",
+    "tabela_inventario_id": "tabela-docx:13",
+    "tabela_docx_indice": 13,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando mirar uma arma e dispará-la contra um adversário à distância, role+DES ou FOR.\nCom 10+: você consegue um tiro preciso: cause seu dano.\nCom 7–9: cause seu dano e escolha 1:\nMova-se para obter linha de tiro e se coloque em perigo; \nDispare de qualquer jeito e cause −1d6 de dano; \nGaste munição extra, reduzindo sua munição em 1.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando mirar uma arma e dispará-la contra um adversário à distância, role+DES ou FOR."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 1,
+        "literal": "Com 10+: você consegue um tiro preciso: cause seu dano."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 2,
+        "literal": "Com 7–9: cause seu dano e escolha 1:"
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-14",
+    "titulo": "DESAFIAR O PERIGO",
+    "categoria": "basico",
+    "quadro_id": "quadro-geral-docx:14",
+    "tabela_inventario_id": "tabela-docx:14",
+    "tabela_docx_indice": 14,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando agir apesar de um perigo iminente ou sofrer alguma calamidade, diga como lidará com a situação e role:\n+FOR à força;\n+DES agindo rápido;\n+CON resistindo;\n+INT com pensamento rápido;\n+SAB pela fortitude mental;\n+CAR usando charme e trato social.\nCom 10+: realize o que pretendia sem ser afetado pela ameaça.\nCom 7–9: você tropeça, hesita ou se contorce: o Mestre oferece um resultado pior, uma barganha difícil ou uma escolha desagradável.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando agir apesar de um perigo iminente ou sofrer alguma calamidade, diga como lidará com a situação e role:"
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 7,
+        "literal": "Com 10+: realize o que pretendia sem ser afetado pela ameaça."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 8,
+        "literal": "Com 7–9: você tropeça, hesita ou se contorce: o Mestre oferece um resultado pior, uma barganha difícil ou uma escolha desagradável."
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-15",
+    "titulo": "DEFENDER",
+    "categoria": "basico",
+    "quadro_id": "quadro-geral-docx:15",
+    "tabela_inventario_id": "tabela-docx:15",
+    "tabela_docx_indice": 15,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando se posicionar para defender uma pessoa, objeto ou lugar sob ataque, role+CON.\nCom 10+: receba Domínio 3.\nCom 7–9: receba Domínio 1.\nEnquanto permanecer na defensiva, gaste 1 Domínio para realizar um dos seguintes efeitos:\nRedirecionar um ataque para você; \nReduzir o efeito ou dano pela metade; \nAbrir as defesas do atacante e dar +1 adiante a um aliado; \nCausar ao atacante o seu dano com um grau de Periculosidade a menos. \nO Domínio permanece enquanto você continuar defendendo aquilo que declarou proteger. Se abandonar a posição, deixar de defender ou a situação que acionou o Movimento terminar, ele deixa de representar uma vantagem disponível.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando se posicionar para defender uma pessoa, objeto ou lugar sob ataque, role+CON."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 1,
+        "literal": "Com 10+: receba Domínio 3."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 2,
+        "literal": "Com 7–9: receba Domínio 1."
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-16",
+    "titulo": "FALAR DIFÍCIL",
+    "categoria": "basico",
+    "quadro_id": "quadro-geral-docx:16",
+    "tabela_inventario_id": "tabela-docx:16",
+    "tabela_docx_indice": 16,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando consultar seu conhecimento acumulado a respeito de alguma coisa, role+INT.\nCom 10+: o Mestre lhe dirá alguma coisa interessante e útil a respeito do assunto.\nCom 7–9: o Mestre lhe dirá alguma coisa interessante; cabe a você torná-la útil.\nSempre: o Mestre pode perguntar:\n“Como você sabia disso?”\nDiga a verdade. \nEsse Movimento é particularmente importante para diferenciar conhecimento de investigação: Falar Difícil revela algo que o personagem já poderia saber; Discernir Realidades revela aquilo que ele consegue perceber sobre a situação presente.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando consultar seu conhecimento acumulado a respeito de alguma coisa, role+INT."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 1,
+        "literal": "Com 10+: o Mestre lhe dirá alguma coisa interessante e útil a respeito do assunto."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 2,
+        "literal": "Com 7–9: o Mestre lhe dirá alguma coisa interessante; cabe a você torná-la útil."
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-17",
+    "titulo": "DISCERNIR REALIDADES",
+    "categoria": "basico",
+    "quadro_id": "quadro-geral-docx:17",
+    "tabela_inventario_id": "tabela-docx:17",
+    "tabela_docx_indice": 17,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando inspecionar cuidadosamente uma situação ou pessoa, role+SAB.\nCom 10+: faça 3 perguntas da lista.\nCom 7–9: faça 1 pergunta da lista.\nPergunte ao Mestre:\nO que aconteceu aqui recentemente? \nO que está para acontecer aqui agora? \nO que eu deveria procurar por aqui? \nO que eu considero útil ou valioso aqui? \nQuem realmente está no controle aqui? \nO que não é realmente o que parece aqui? \nBônus: receba +1 adiante quando agir de acordo com as respostas. \nAs respostas devem partir daquilo que o personagem poderia descobrir examinando a situação. O Movimento não transforma o personagem em onisciente: ele transforma detalhes da ficção em informação acionável.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando inspecionar cuidadosamente uma situação ou pessoa, role+SAB."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 1,
+        "literal": "Com 10+: faça 3 perguntas da lista."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 2,
+        "literal": "Com 7–9: faça 1 pergunta da lista."
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-18",
+    "titulo": "NEGOCIAR",
+    "categoria": "basico",
+    "quadro_id": "quadro-geral-docx:18",
+    "tabela_inventario_id": "tabela-docx:18",
+    "tabela_docx_indice": 18,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando possuir influência sobre personagens do Mestre e quiser manipulá-los, role+CAR.\nInfluência é algo de que eles precisem ou queiram.\nCom 10+: eles farão o que você pedir caso você primeiro garanta conceder o que eles pedirem.\nCom 7–9: eles farão o que você pede, mas exigirão uma garantia concreta e imediata de sua promessa. \nA existência da influência faz parte do gatilho. Se você não possui nada que aquela pessoa queira ou precise, não está acionando Negociar apenas porque fez um discurso convincente.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando possuir influência sobre personagens do Mestre e quiser manipulá-los, role+CAR."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 2,
+        "literal": "Com 10+: eles farão o que você pedir caso você primeiro garanta conceder o que eles pedirem."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 3,
+        "literal": "Com 7–9: eles farão o que você pede, mas exigirão uma garantia concreta e imediata de sua promessa. "
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-19",
+    "titulo": "AJUDAR OU INTERFERIR",
+    "categoria": "basico",
+    "quadro_id": "quadro-geral-docx:19",
+    "tabela_inventario_id": "tabela-docx:19",
+    "tabela_docx_indice": 19,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando agir diretamente para ajudar ou atrapalhar a ação de outro personagem em uma situação de perigo, diga como e role:\n+FOR usando força ou violência;\n+DES com velocidade, precisão ou coordenação;\n+CON suportando esforço, impacto ou perigo;\n+INT através de conhecimento, técnica ou raciocínio;\n+SAB com percepção, intuição ou atenção;\n+CAR com presença, incentivo, distração ou influência.\nCom 10+: o personagem recebe +1 ou −2 em sua rolagem, conforme você esteja ajudando ou interferindo.\nCom 7–9: o modificador ainda é aplicado, mas você também se expõe a perigo, retribuição ou custo.\nSe não houver perigo ou consequência relevante, não role. Se a ficção permitir que você ajude ou atrapalhe, sua intervenção simplesmente acontece.\nA ficção precisa permitir sua participação. Você não concede bônus apenas dizendo que está ajudando: descreva o que seu personagem faz e escolha o atributo a partir dessa ação.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando agir diretamente para ajudar ou atrapalhar a ação de outro personagem em uma situação de perigo, diga como e role:"
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 7,
+        "literal": "Com 10+: o personagem recebe +1 ou −2 em sua rolagem, conforme você esteja ajudando ou interferindo."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 8,
+        "literal": "Com 7–9: o modificador ainda é aplicado, mas você também se expõe a perigo, retribuição ou custo."
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-20",
+    "titulo": "ÚLTIMO SUSPIRO",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:20",
+    "tabela_inventario_id": "tabela-docx:20",
+    "tabela_docx_indice": 20,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando estiver morrendo, vislumbre o que existe além dos Portões Negros do Reino da Morte. O Mestre descreverá aquilo que você encontra. Depois, role 2d6 sem adicionar atributo algum.\nCom 10+: você engana a Morte. Continua vivo, embora ainda possa estar em uma situação difícil.\nCom 7–9: a própria Morte lhe oferece uma barganha. Aceite-a para se estabilizar ou recuse-a e atravesse os Portões Negros.\nCom 6 ou menos: seu destino está selado. Você foi marcado como propriedade da Morte e cruzará seus limites em breve. O Mestre dirá quando.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando estiver morrendo, vislumbre o que existe além dos Portões Negros do Reino da Morte. O Mestre descreverá aquilo que você encontra. Depois, role 2d6 sem adicionar atributo algum."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 1,
+        "literal": "Com 10+: você engana a Morte. Continua vivo, embora ainda possa estar em uma situação difícil."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 2,
+        "literal": "Com 7–9: a própria Morte lhe oferece uma barganha. Aceite-a para se estabilizar ou recuse-a e atravesse os Portões Negros."
+      },
+      {
+        "faixa": "6-",
+        "linha": 3,
+        "literal": "Com 6 ou menos: seu destino está selado. Você foi marcado como propriedade da Morte e cruzará seus limites em breve. O Mestre dirá quando."
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-21",
+    "titulo": "SOBRECARGA",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:21",
+    "tabela_inventario_id": "tabela-docx:21",
+    "tabela_docx_indice": 21,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando fizer um Movimento enquanto carrega peso, compare aquilo que está carregando com sua Carga.\nCarga ou menos: nenhuma penalidade. \nCarga +1 ou Carga +2: receba −1 constante enquanto continuar sobrecarregado. \nMais que Carga +2: escolha: \nabandone pelo menos 1 de peso e realize o Movimento com −1; ou \nfalhe automaticamente no Movimento. \nAliviar a carga remove a penalidade.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando fizer um Movimento enquanto carrega peso, compare aquilo que está carregando com sua Carga."
+      }
+    ],
+    "marcadores_resultado_literais": [],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-22",
+    "titulo": "PREPARAR ACAMPAMENTO",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:22",
+    "tabela_inventario_id": "tabela-docx:22",
+    "tabela_docx_indice": 22,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando parar para descansar, consuma uma Ração.\nSe estiver em algum lugar perigoso, determine a ordem dos turnos de guarda.\nSe possuir XP suficiente, pode Avançar de Nível.\nDepois de algumas horas de sono ininterrupto, recupere PV iguais à metade de seus PV máximos.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando parar para descansar, consuma uma Ração."
+      }
+    ],
+    "marcadores_resultado_literais": [],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-23",
+    "titulo": "MONTAR GUARDA",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:23",
+    "tabela_inventario_id": "tabela-docx:23",
+    "tabela_docx_indice": 23,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando estiver de guarda e alguma coisa se aproximar do acampamento, role+SAB.\nCom 10+: você percebe a ameaça a tempo de acordar e preparar seus companheiros. Todos no acampamento recebem +1 adiante.\nCom 7–9: você reage tarde demais para uma preparação completa. Seus companheiros acordam e conseguem pegar suas armas e armaduras, mas não terão tempo para preparar mais nada.\nCom 6 ou menos: aquilo que se aproxima obtém vantagem sobre o grupo.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando estiver de guarda e alguma coisa se aproximar do acampamento, role+SAB."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 1,
+        "literal": "Com 10+: você percebe a ameaça a tempo de acordar e preparar seus companheiros. Todos no acampamento recebem +1 adiante."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 2,
+        "literal": "Com 7–9: você reage tarde demais para uma preparação completa. Seus companheiros acordam e conseguem pegar suas armas e armaduras, mas não terão tempo para preparar mais nada."
+      },
+      {
+        "faixa": "6-",
+        "linha": 3,
+        "literal": "Com 6 ou menos: aquilo que se aproxima obtém vantagem sobre o grupo."
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-24",
+    "titulo": "EMPREENDER UMA JORNADA PERIGOSA",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:24",
+    "tabela_inventario_id": "tabela-docx:24",
+    "tabela_docx_indice": 24,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando viajar por território hostil, escolha três membros do grupo:\nDesbravador — encontra o caminho.\nBatedor — procura ameaças.\nContramestre — administra provisões.\nCada um rola +SAB.\nCom 10+, conforme sua função:\nContramestre: reduza em 1 a quantidade de Rações necessárias. \nDesbravador: reduza o tempo necessário para alcançar o destino. O Mestre dirá quanto. \nBatedor: perceba qualquer perigo cedo o bastante para que o grupo obtenha vantagem. \nCom 7–9: desempenhe normalmente seu papel.\no grupo consome a quantidade esperada de Rações; \na viagem leva o tempo esperado; \no batedor impede que o grupo seja surpreendido, mas também não concede vantagem sobre as ameaças encontradas.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando viajar por território hostil, escolha três membros do grupo:"
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 5,
+        "literal": "Com 10+, conforme sua função:"
+      },
+      {
+        "faixa": "7-9",
+        "linha": 9,
+        "literal": "Com 7–9: desempenhe normalmente seu papel."
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-25",
+    "titulo": "ENCERRAR SESSÃO",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:25",
+    "tabela_inventario_id": "tabela-docx:25",
+    "tabela_docx_indice": 25,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando chegar ao final da sessão, reveja aquilo que aconteceu.\nEscolha um de seus Vínculos que tenha sido completamente explorado, tornado irrelevante ou resolvido. Pergunte ao jogador do personagem envolvido se ele concorda.\nSe concordar:\nmarque 1 XP; \napague o Vínculo; \nescreva um novo Vínculo com quem quiser. \nPor fim, o grupo responde coletivamente:\nAprendemos algo novo e importante sobre o mundo? \nSobrepujamos algum monstro ou inimigo notável? \nSaqueamos algum tesouro memorável? \nPara cada resposta “sim”, todos os personagens marcam 1 XP.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando chegar ao final da sessão, reveja aquilo que aconteceu."
+      }
+    ],
+    "marcadores_resultado_literais": [],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-26",
+    "titulo": "AVANÇAR DE NÍVEL",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:26",
+    "tabela_inventario_id": "tabela-docx:26",
+    "tabela_docx_indice": 26,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando estiver em inatividade por algumas horas ou dias e possuir XP igual ou superior ao seu Nível atual + 7, você pode refletir sobre suas experiências e evoluir.\nSubtraia do XP uma quantidade igual ao seu Nível atual + 7. \nAumente seu Nível em 1. \nAumente um de seus Atributos em 1, até o máximo de 18. \nEscolha um novo Movimento de Classe coerente com aquilo que aprendeu, desenvolveu ou se tornou. \nO aumento ocorre no valor do Atributo, não diretamente no modificador.\nCaso seu modificador de CON aumente, recalcule seus PV máximos segundo as regras da Carcaça.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando estiver em inatividade por algumas horas ou dias e possuir XP igual ou superior ao seu Nível atual + 7, você pode refletir sobre suas experiências e evoluir."
+      }
+    ],
+    "marcadores_resultado_literais": [],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-27",
+    "titulo": "FARREAR",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:27",
+    "tabela_inventario_id": "tabela-docx:27",
+    "tabela_docx_indice": 27,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando retornar triunfante e realizar uma grande festa, gaste 100 moedas e role +1 para cada 100 moedas adicionais gastas.\nCom 10+: escolha 3.\nCom 7–9: escolha 1.\nCom 6 ou menos: ainda escolha 1, mas as coisas sairão completamente de controle. O Mestre dirá como.\nEscolha:\nTorne-se amigo de um PNJ útil. \nOuça rumores sobre uma boa oportunidade. \nAdquira informações úteis. \nNão seja preso, enfeitiçado ou enganado.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando retornar triunfante e realizar uma grande festa, gaste 100 moedas e role +1 para cada 100 moedas adicionais gastas."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 1,
+        "literal": "Com 10+: escolha 3."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 2,
+        "literal": "Com 7–9: escolha 1."
+      },
+      {
+        "faixa": "6-",
+        "linha": 3,
+        "literal": "Com 6 ou menos: ainda escolha 1, mas as coisas sairão completamente de controle. O Mestre dirá como."
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-28",
+    "titulo": "ABASTECER",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:28",
+    "tabela_inventario_id": "tabela-docx:28",
+    "tabela_docx_indice": 28,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando for comprar alguma coisa com ouro, se aquilo estiver facilmente disponível onde você está, compre pelo preço de mercado.\nSe procurar algo especial, incomum ou além daquilo que normalmente está disponível, role+CAR.\nCom 10+: encontre aquilo que procura por um preço justo.\nCom 7–9: escolha entre:\npagar mais do que normalmente seria necessário; ou \naceitar alguma coisa próxima daquilo que queria, mas não exatamente igual. \nO Mestre dirá quais opções estão disponíveis.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando for comprar alguma coisa com ouro, se aquilo estiver facilmente disponível onde você está, compre pelo preço de mercado."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 2,
+        "literal": "Com 10+: encontre aquilo que procura por um preço justo."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 3,
+        "literal": "Com 7–9: escolha entre:"
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-29",
+    "titulo": "RECUPERAR-SE",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:29",
+    "tabela_inventario_id": "tabela-docx:29",
+    "tabela_docx_indice": 29,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando não fizer nada além de descansar confortavelmente em segurança:\nDepois de 1 dia, recupere todos os seus PV.\nDepois de 3 dias, remova uma Debilidade à sua escolha.\nSe estiver sob cuidados constantes de um curandeiro, mágico ou mundano, remova uma Debilidade a cada 2 dias de descanso.\nRecuperar-se não desfaz automaticamente consequências ficcionais que ultrapassem PV e Debilidades. Um braço decepado, uma maldição ou uma transformação sobrenatural precisam ser resolvidos de acordo com a própria ficção.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando não fizer nada além de descansar confortavelmente em segurança:"
+      }
+    ],
+    "marcadores_resultado_literais": [],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-30",
+    "titulo": "RECRUTAR",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:30",
+    "tabela_inventario_id": "tabela-docx:30",
+    "tabela_docx_indice": 30,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando espalhar que está procurando alguém para contratar, role, recebendo:\n+1 se disser que o pagamento é generoso.\n+1 se disser exatamente o que pretende fazer.\n+1 se oferecer uma parte daquilo que for encontrado.\n+1 se sua reputação for boa naquela região.\nCom 10+: vários candidatos habilidosos aparecem. Escolha quem deseja contratar. Caso não queira nenhum deles, recuse sem consequências.\nCom 7–9: você encontra alguém próximo daquilo que procurava. Aceite-o ou mande-o embora.\nCom 6 ou menos: alguém influente, mas claramente inadequado, quer acompanhá-lo — um jovem imprudente, alguém instável, um incompetente importante ou até um inimigo secreto.\nAceite-o e lide com as consequências ou mande-o embora.\nSempre que dispensar um interessado nessas condições, receba −1 adiante para Recrutar.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando espalhar que está procurando alguém para contratar, role, recebendo:"
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 5,
+        "literal": "Com 10+: vários candidatos habilidosos aparecem. Escolha quem deseja contratar. Caso não queira nenhum deles, recuse sem consequências."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 6,
+        "literal": "Com 7–9: você encontra alguém próximo daquilo que procurava. Aceite-o ou mande-o embora."
+      },
+      {
+        "faixa": "6-",
+        "linha": 7,
+        "literal": "Com 6 ou menos: alguém influente, mas claramente inadequado, quer acompanhá-lo — um jovem imprudente, alguém instável, um incompetente importante ou até um inimigo secreto."
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-30-mandados-pendentes",
+    "titulo": "MANDADOS PENDENTES",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:30",
+    "tabela_inventario_id": "tabela-docx:30",
+    "tabela_docx_indice": 30,
+    "linhas_docx": [
+      2,
+      3
+    ],
+    "texto_original": "Quando retornar a um lugar civilizado onde tenha causado problemas anteriormente, role+CAR.\nCom 10+: todos ouviram falar do que você fez e você é facilmente reconhecido.\nCom 7–9: o mesmo acontece, mas o Mestre escolhe uma complicação:\no xerife local possui um mandado para sua prisão; \nalguém colocou um preço pela sua cabeça; \nalguém importante para você está em dificuldades por causa de suas ações. \nEsse Movimento é engraçadamente PbtA porque 10+ não significa que ninguém lembrou de você. Significa que sua reputação chegou antes. O que isso significa na ficção depende inteiramente do que você fez.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando retornar a um lugar civilizado onde tenha causado problemas anteriormente, role+CAR."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 1,
+        "literal": "Com 10+: todos ouviram falar do que você fez e você é facilmente reconhecido."
+      },
+      {
+        "faixa": "7-9",
+        "linha": 2,
+        "literal": "Com 7–9: o mesmo acontece, mas o Mestre escolhe uma complicação:"
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-31",
+    "titulo": "PREPARAR",
+    "categoria": "avancado",
+    "quadro_id": "quadro-geral-docx:31",
+    "tabela_inventario_id": "tabela-docx:31",
+    "tabela_docx_indice": 31,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Quando gastar tempo estudando, meditando ou praticando intensamente, receba Preparo.\nSe passar uma ou duas semanas se preparando, receba 1 Preparo.\nSe passar um mês ou mais, receba 3 Preparos.\nQuando sua preparação for relevante para aquilo que está fazendo, gaste 1 Preparo para receber +1 em uma rolagem.\nVocê pode gastar no máximo 1 Preparo por rolagem.",
+    "gatilhos_literais": [
+      {
+        "linha": 0,
+        "literal": "Quando gastar tempo estudando, meditando ou praticando intensamente, receba Preparo."
+      },
+      {
+        "linha": 3,
+        "literal": "Quando sua preparação for relevante para aquilo que está fazendo, gaste 1 Preparo para receber +1 em uma rolagem."
+      }
+    ],
+    "marcadores_resultado_literais": [],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  },
+  {
+    "id": "movimento-geral:docx-32",
+    "titulo": "SERVOS",
+    "categoria": "subsistema_servos",
+    "quadro_id": "quadro-geral-docx:32",
+    "tabela_inventario_id": "tabela-docx:32",
+    "tabela_docx_indice": 32,
+    "linhas_docx": [
+      0,
+      1
+    ],
+    "texto_original": "Servos trabalham para você enquanto:\nseus custos estiverem sendo pagos; \naquilo que você pede não for obviamente perigoso; \nnão for degradante; \nnão for absurdamente estúpido. \nEm situações comuns, eles simplesmente fazem aquilo que foram contratados para fazer.\nQuando suas ordens colocarem um Servo numa situação perigosa, degradante ou insana, role +Lealdade.\nCOM 10+\nO Servo permanece firme e cumpre aquilo que você ordenou.\nCOM 7–9\nEle cumpre a ordem por enquanto, mas posteriormente apresentará exigências mais sérias.\nCumpra essas exigências ou o Servo abandonará você nos piores termos possíveis.\nCOM 6 OU MENOS\nO Movimento não especifica um resultado próprio. O Mestre realiza um Movimento conforme a ficção. \n\nLEALDADE DOS SERVOS\nTodo Servo possui um valor de Lealdade, que representa até onde está disposto a seguir os personagens quando dinheiro e bom senso deixam de ser suficientes.\nAo criar um Servo, estabeleça uma quantidade de pontos conforme o lugar onde ele foi recrutado:\nVila: 2–5 pontos.\nCidade pequena: 4–6 pontos.\nFortaleza: 5–8 pontos.\nCidade grande: 6–10 pontos.\nDistribua esses pontos entre a Lealdade, sua principal Especialidade e quaisquer Especialidades secundárias que possua. Uma Lealdade inicial maior que +2 é incomum. \nA Lealdade pode mudar durante o jogo conforme a relação entre o Servo e seus empregadores.\nBom tratamento, recompensas inesperadas ou demonstrações de confiança: +1 adiante em Lealdade.\nDesrespeito ou tratamento injusto: −1 adiante em Lealdade.\nDeixar de pagar seu custo: −1 constante em Lealdade até que a dívida seja resolvida.\nGrandes feitos realizados juntos podem aumentar a Lealdade permanentemente; derrotas humilhantes, traições ou abusos podem diminuí-la permanentemente. \nO Custo de um Servo também faz parte de sua ficha. Nem todos trabalham apenas por moedas: um Servo pode exigir dinheiro, fama, conhecimento, prazeres, participação nas vitórias ou a realização de alguma causa que considere justa. Enquanto seu custo estiver sendo satisfeito e a ordem não for obviamente perigosa, degradante ou absurda, ele simplesmente cumpre suas funções.",
+    "gatilhos_literais": [
+      {
+        "linha": 6,
+        "literal": "Quando suas ordens colocarem um Servo numa situação perigosa, degradante ou insana, role +Lealdade."
+      }
+    ],
+    "marcadores_resultado_literais": [
+      {
+        "faixa": "10+",
+        "linha": 7,
+        "literal": "COM 10+"
+      },
+      {
+        "faixa": "7-9",
+        "linha": 9,
+        "literal": "COM 7–9"
+      },
+      {
+        "faixa": "6-",
+        "linha": 12,
+        "literal": "COM 6 OU MENOS"
+      }
+    ],
+    "requisito_explicito": null,
+    "requisito_auditoria": "nao_inferido",
+    "estado": "transcricao_integral_sem_revisao_semantica",
+    "aplicacao_canonica": false
+  }
+]
