@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/balanco-material.schema.json",
+  "title": "Balanço material opcional da Carcaça",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "assentamento_id",
+    "dependencia_id",
+    "fluxo_id",
+    "recurso_id",
+    "tipo_recurso",
+    "descricao",
+    "status",
+    "fonte",
+    "sazonalidade",
+    "medidas",
+    "unidades_possiveis",
+    "unidades_possiveis_status",
+    "nao_inferir"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^balanco:[a-z0-9-]+$"
+    },
+    "assentamento_id": {
+      "type": "string",
+      "pattern": "^assentamento:"
+    },
+    "dependencia_id": {
+      "type": "string",
+      "pattern": "^dependencia:"
+    },
+    "fluxo_id": {
+      "type": "string",
+      "pattern": "^fluxo:"
+    },
+    "recurso_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^recurso:"
+    },
+    "tipo_recurso": {
+      "enum": [
+        "agua_transformada",
+        "produto_agricola",
+        "mercadoria_nao_identificada",
+        "coleta_nao_especificada"
+      ]
+    },
+    "descricao": {
+      "type": "string",
+      "minLength": 10
+    },
+    "status": {
+      "enum": [
+        "nao_quantificado",
+        "revisado_com_medicoes"
+      ]
+    },
+    "fonte": {
+      "type": "string",
+      "minLength": 3
+    },
+    "sazonalidade": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "tipo",
+        "periodos_conhecidos",
+        "janela_duracao",
+        "observacao"
+      ],
+      "properties": {
+        "tipo": {
+          "enum": [
+            "nao_documentada",
+            "sazonal_documentada",
+            "periodos_curados"
+          ]
+        },
+        "periodos_conhecidos": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "janela_duracao": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "observacao": {
+          "type": "string"
+        }
+      }
+    },
+    "medidas": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "estoque_inicial",
+        "producao",
+        "entradas",
+        "consumo",
+        "saidas",
+        "perdas",
+        "estoque_final"
+      ],
+      "properties": {
+        "estoque_inicial": {
+          "$ref": "#/$defs/medida"
+        },
+        "producao": {
+          "$ref": "#/$defs/medida"
+        },
+        "entradas": {
+          "$ref": "#/$defs/medida"
+        },
+        "consumo": {
+          "$ref": "#/$defs/medida"
+        },
+        "saidas": {
+          "$ref": "#/$defs/medida"
+        },
+        "perdas": {
+          "$ref": "#/$defs/medida"
+        },
+        "estoque_final": {
+          "$ref": "#/$defs/medida"
+        }
+      }
+    },
+    "unidades_possiveis": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "unidades_possiveis_status": {
+      "const": "opcoes_tecnicas_nao_observadas"
+    },
+    "nao_inferir": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1
+    }
+  },
+  "$defs": {
+    "medida": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "valor",
+        "unidade",
+        "periodo",
+        "origem_medicao"
+      ],
+      "properties": {
+        "valor": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "unidade": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "periodo": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        },
+        "origem_medicao": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "minLength": 1
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "valor": {
+                "type": "null"
+              }
+            },
+            "required": [
+              "valor"
+            ]
+          },
+          "then": {
+            "properties": {
+              "unidade": {
+                "type": "null"
+              },
+              "periodo": {
+                "type": "null"
+              },
+              "origem_medicao": {
+                "type": "null"
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "valor": {
+                "type": "number"
+              }
+            },
+            "required": [
+              "valor"
+            ]
+          },
+          "then": {
+            "properties": {
+              "unidade": {
+                "type": "string",
+                "minLength": 1
+              },
+              "periodo": {
+                "type": "string",
+                "minLength": 1
+              },
+              "origem_medicao": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/pressao-ecologica.schema.json",
+  "title": "Pressão ecológica hipotética: nunca acontecimento canônico",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "assentamento_id",
+    "dependencias_ids",
+    "tipo",
+    "estado",
+    "base_documental",
+    "fonte",
+    "condicao_hipotetica",
+    "consequencia_possivel",
+    "lacunas",
+    "efeito_dw_automatico",
+    "evento_campanha_id"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^pressao:[a-z0-9-]+$"
+    },
+    "assentamento_id": {
+      "type": "string",
+      "pattern": "^assentamento:"
+    },
+    "dependencias_ids": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^dependencia:"
+      }
+    },
+    "tipo": {
+      "type": "string",
+      "minLength": 4
+    },
+    "estado": {
+      "const": "risco_hipotetico_nao_ocorrido"
+    },
+    "base_documental": {
+      "type": "string",
+      "minLength": 12
+    },
+    "fonte": {
+      "type": "string",
+      "minLength": 3
+    },
+    "condicao_hipotetica": {
+      "type": "string",
+      "minLength": 12
+    },
+    "consequencia_possivel": {
+      "type": "string",
+      "minLength": 12
+    },
+    "lacunas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 4
+      }
+    },
+    "efeito_dw_automatico": {
+      "const": false
+    },
+    "evento_campanha_id": {
+      "type": "null"
+    }
+  }
+}
