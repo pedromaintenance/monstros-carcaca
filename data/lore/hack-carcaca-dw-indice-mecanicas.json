@@ -1,0 +1,2222 @@
+{
+  "schema_version": "0.1.0",
+  "fonte_id": "fonte:hack-carcaca-dungeon-world-rascunho",
+  "descricao": "Índice secundário conservador do restante do manuscrito. Rótulos visuais podem incluir títulos de movimentos, seções e artefatos de duas colunas; requer revisão humana para classificar movimentos individuais.",
+  "estado": "candidatos_para_revisao_nao_canonicos",
+  "paginas_previstas": [
+    26,
+    181
+  ],
+  "paginas_com_texto": 155,
+  "paginas_sem_texto_extraivel": [
+    91
+  ],
+  "nao_usar_como_fato_de_ambientacao": true,
+  "divisao_editorial": [
+    {
+      "inicio": 26,
+      "fim": 33,
+      "tipo": "regras_fundamentais"
+    },
+    {
+      "inicio": 34,
+      "fim": 48,
+      "tipo": "teoria_dos_movimentos"
+    },
+    {
+      "inicio": 49,
+      "fim": 64,
+      "tipo": "movimentos_de_povo"
+    },
+    {
+      "inicio": 65,
+      "fim": 181,
+      "tipo": "movimentos_de_classe"
+    }
+  ],
+  "paginas_indice": [
+    {
+      "pagina": 26,
+      "categoria": "regras_fundamentais",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "COMECE E TERMINE NA FICÇÃO",
+        "MECÂNICAS PARA DUNGEON",
+        "WORLD"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 27,
+      "categoria": "regras_fundamentais",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "PERSONAGENS"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 28,
+      "categoria": "regras_fundamentais",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "CARGA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 29,
+      "categoria": "regras_fundamentais",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "ANTECEDENTE",
+        "CLASSE",
+        "CRIAÇÃO DE PERSONAGEM",
+        "PONTOS DE VIDA",
+        "RAÇA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 30,
+      "categoria": "regras_fundamentais",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "PERICULOSIDADE E DANO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 31,
+      "categoria": "regras_fundamentais",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "ARMADURA",
+        "COMBATE",
+        "DEBILIDADES",
+        "POSIÇÃO E ALCANCE"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 32,
+      "categoria": "regras_fundamentais",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "ATORDOADO — INT",
+        "CONFUSO — SAB",
+        "DOENTE — CON",
+        "FRACO — FOR",
+        "MARCADO — CAR",
+        "MORTE E ÚLTIMO SUSPIRO",
+        "RECUPERAÇÃO",
+        "TRÊMULO — DES"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 33,
+      "categoria": "regras_fundamentais",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "EXPERIÊNCIA E EVOLUÇÃO",
+        "NOVOS MOVIMENTOS"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 34,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "DISPARAR",
+        "MATAR E PILHAR",
+        "MOVIMENTOS"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 35,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "DEFENDER",
+        "DESAFIAR O PERIGO",
+        "DISCERNIR REALIDADES",
+        "FALAR DIFÍCIL",
+        "NEGOCIAR"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 36,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "AJUDAR OU INTERFERIR"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 37,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "PREPARAR ACAMPAMENTO",
+        "SOBRECARGA",
+        "ÚLTIMO SUSPIRO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 38,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "ABASTECER",
+        "AVANÇAR DE NÍVEL",
+        "EMPREENDER UMA JORNADA PERIGOSA",
+        "ENCERRAR SESSÃO",
+        "FARREAR",
+        "MONTAR GUARDA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 39,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "MANDADOS PENDENTES",
+        "PREPARAR",
+        "RECRUTAR",
+        "RECUPERAR-SE",
+        "SERVOS"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 40,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "LEALDADE DOS SERVOS",
+        "MOVIMENTO DE RAÇA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 41,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "MOVIMENTO DE ANTECEDENTE"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 42,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "FONTE, MÉTODO E LIMITES",
+        "MAGIA NÃO É UMA LISTA INFINITA DE SOLUÇÕES",
+        "NOME"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 43,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "EFEITO",
+        "ESTRUTURAS DE MOVIMENTOS",
+        "GATILHO",
+        "PERMISSÃO FICCIONAL"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 44,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "DOMÍNIO: GUARDE E GASTE",
+        "ESCOLHA O QUE IMPORTA",
+        "GATILHO + ROLAGEM + CONSEQUÊNCIA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 45,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "ESCOLHAS ANTES DA ROLAGEM",
+        "INFORMAÇÃO COMO PODER",
+        "JURAMENTOS, PACTOS E CONDIÇÕES",
+        "SUCESSO, CONTROLE E PREÇO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 46,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "MELHORAR OU TRANSFORMAR UM MOVIMENTO",
+        "MODIFICAR UM MOVIMENTO EXISTENTE",
+        "SUBSTITUIR A FORMA DE AGIR"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 47,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "COMO CRIAR UM MOVIMENTO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 48,
+      "categoria": "teoria_dos_movimentos",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 49,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "HUMANOS",
+        "LISTA DE MOVIMENTOS DE RAÇA",
+        "ORCS DA CAATINGA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 50,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "ANÕES DE THARGRID",
+        "GIGANTE DE PEDRA — ESCULTOR DO MUNDO —",
+        "GIGANTES DE THARGRID"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 51,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "GIGANTE DO FOGO — FORJA TITÂNICA —"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 52,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "DRACONATOS DE THARGRID",
+        "TORTLES DAS ILHAS"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 53,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "TABAXIS DAS ILHAS"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 54,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "ABISSAIS",
+        "FILHO DOS SANTUÁRIOS SUBMERSOS —",
+        "KUO-TOA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 55,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 56,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "SEREIAS",
+        "TRITÕES"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 57,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "SHADOW FEY"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 58,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "FEÉRICOS E FADAS"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 59,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 60,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "ELFOS YOKAI"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 61,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "ELFOS DA FLORESTA",
+        "HOBBITS"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 62,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [
+        "GNOMOS",
+        "MEIO-DEMÔNIOS"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 63,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 64,
+      "categoria": "movimentos_de_povo",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p26-64.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 65,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ARMA FAVORITA",
+        "DOBRAR BARRAS, ERGUER PORTÕES",
+        "GOLPE DE CONTROLE",
+        "GUERREIRO",
+        "LISTA DE MOVIMENTOS DE CLASSE",
+        "MESTRE DE BATALHA",
+        "MISERICORDIOSO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 66,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "VENDO VERMELHO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 67,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "CONTRA-ATAQUE",
+        "ENTRE MIM E ELES",
+        "GUARDA-COSTAS",
+        "HERANÇA",
+        "INTERROGADOR",
+        "SEGURE A LINHA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 68,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "HONRADO",
+        "PROTETOR",
+        "SEGUNDO FÔLEGO",
+        "VINGATIVO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 69,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ARMA APERFEIÇOADA",
+        "FERREIRO DE GUERRA",
+        "MESTRIA DE ARMADURA",
+        "OLHO PARA ARMAS",
+        "PERFEIÇÃO DA ARMADURA",
+        "PRAGMÁTICO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Arma Favorita",
+        "REQUER: Mestria de Armadura"
+      ]
+    },
+    {
+      "pagina": 70,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ATRAVÉS DOS OLHOS DA MORTE",
+        "GOSTO DE SANGUE",
+        "GUERREIRO SUPERIOR",
+        "MENTE TÁTICA",
+        "SURTO DE AÇÃO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Vendo Vermelho | REQUER: Segundo Fôlego",
+        "REQUER: Vendo Vermelho",
+        "REQUER: Mestre de Batalha"
+      ]
+    },
+    {
+      "pagina": 71,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ATAQUES ESTUDADOS",
+        "CONHEÇA SEU INIMIGO",
+        "INDOMÁVEL",
+        "MESTRIA TÁTICA",
+        "SUPERIORIDADE DE COMBATE"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Golpe de Controle",
+        "REQUER: Mestre de Batalha"
+      ]
+    },
+    {
+      "pagina": 72,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ATLETA EXTRAORDINÁRIO",
+        "CORTESÃO ELEGANTE",
+        "DEVER ACIMA DE TUDO",
+        "ESPÍRITO DE COMBATE",
+        "FORÇA ANTES DA MORTE",
+        "ORDEM DO COMANDANTE",
+        "SOBREVIVENTE"
+      ],
+      "mencoes_requer_na_pagina": [
+        "Quando possuir uma oportunidade clara de atacar e | REQUER: Espírito de Combate",
+        "REQUER: Segundo Fôlego",
+        "REQUER: Honrado"
+      ]
+    },
+    {
+      "pagina": 73,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "CAVALEIRO NATO",
+        "DEFENSOR VIGILANTE",
+        "ESCUDO RÚNICO",
+        "GRAVADOR DE RUNAS",
+        "MANTER A LINHA",
+        "MARCA INABALÁVEL",
+        "PODER DOS GIGANTES"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Segure a Linha | peso da montanha estivesse sobre ele.",
+        "REQUER: Marca Inabalável | físico.",
+        "REQUER: Gravador de Runas"
+      ]
+    },
+    {
+      "pagina": 74,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "MESTRE DAS RUNAS"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Gravador de Runas"
+      ]
+    },
+    {
+      "pagina": 75,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "BALUARTE DE FORÇA",
+        "DISCIPLINA PSIÔNICA",
+        "IMPULSO TELECINÉTICO",
+        "MANIFESTAR ECO",
+        "MENTE GUARDADA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Disciplina Psiônica"
+      ]
+    },
+    {
+      "pagina": 76,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "AVATAR DO ECO",
+        "LEGIÃO DE UM",
+        "MAGIA DE GUERRA",
+        "MÁRTIR DO ECO",
+        "PASSO ARCANO",
+        "VÍNCULO ARCANO COM ARMA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Manifestar Eco",
+        "REQUER: qualquer Movimento de Magia",
+        "REQUER: Surto de Ação e qualquer Movimento de Magia"
+      ]
+    },
+    {
+      "pagina": 77,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "COMPANHEIROS DE GUERRA",
+        "INTUIÇÃO DE VETERANO",
+        "OLHO PARA FRAQUEZA",
+        "TIRO ARCANO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Arma Favorita aplicada a um arco ou arma de | Quando conseguir realmente criar a segunda condição",
+        "REQUER: Vendo Vermelho"
+      ]
+    },
+    {
+      "pagina": 78,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ARRUINAR",
+        "PREPARE-SE PARA MORRER",
+        "TREINAMENTO ANTIMAGIA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "mesmo quando aquilo normalmente não | REQUER: Dobrar Barras, Erguer Portões"
+      ]
+    },
+    {
+      "pagina": 79,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "CONHEÇO A ARENA",
+        "FINTA",
+        "GUARDA MÍSTICA",
+        "LÂMINA ARCANA",
+        "PONTA CONTRA PONTA",
+        "SANGUE NA PONTA",
+        "SEGUNDA INTENÇÃO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Um Passo à Frente | FINTA",
+        "REQUER: Finta",
+        "REQUER: Lâmina Arcana"
+      ]
+    },
+    {
+      "pagina": 80,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "BÁRBARO",
+        "CHEIRO DE MEDO",
+        "FÚRIA",
+        "MINHA DOR É MINHA",
+        "QUEBRA-OSSOS"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 81,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "AINDA COM FOME",
+        "APETITES HERCÚLEOS",
+        "CICATRIZES CONTAM HISTÓRIAS",
+        "FOME INDESTRUTÍVEL"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Apetites Hercúleos"
+      ]
+    },
+    {
+      "pagina": 82,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "FRENESI",
+        "FÚRIA SEM MENTE",
+        "INSTINTO FERAL",
+        "RETALIAÇÃO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Fúria"
+      ]
+    },
+    {
+      "pagina": 83,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "DEMASIADO FURIOSO PARA MORRER",
+        "DURO NA QUEDA",
+        "ESMAGAR!",
+        "FALE COM OS MEUS BÍCEPS",
+        "FORÇA INDOMÁVEL",
+        "GOLPE BRUTAL",
+        "GOLPE BRUTAL APRIMORADO",
+        "GRITO DE GUERRA",
+        "KHAN DOS KHANS",
+        "MARCA DE PODER",
+        "SANSÃO",
+        "USURPADOR"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Fúria | semelhante.",
+        "REQUER: Golpe Brutal | liderança ou pura brutalidade.",
+        "REQUER: Fúria |  | inimigos capazes de sentir medo agem levando",
+        "“O que essa pessoa agora acredita que eu seria capaz | REQUER: Apetites Hercúleos"
+      ]
+    },
+    {
+      "pagina": 84,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ANCESTRAIS VINGATIVOS",
+        "ASPECTO DA FERA",
+        "CONSELHO DOS MORTOS",
+        "CORAÇÃO SELVAGEM",
+        "ESCUDO DOS ANCESTRAIS",
+        "FERA INTERIOR",
+        "OLHO DO PREDADOR",
+        "PODER DA SELVA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "Morte primeiro, em vez de esperar que ela dite os | REQUER: Coração Selvagem",
+        "REQUER: Fúria",
+        "REQUER: Fúria | cercada por eles. Enquanto ela continuar enfrentando",
+        " | Urso: a primeira vez na cena que sofrer | REQUER: Os Ancestrais Lutam Comigo",
+        "REQUER: Os Ancestrais Lutam Comigo",
+        "REQUER: Coração Selvagem | perigo que enfrentamos?”",
+        "REQUER: Escudo dos Ancestrais",
+        "A ficção define exatamente como se manifesta. | REQUER: Fúria"
+      ]
+    },
+    {
+      "pagina": 85,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ARAUTO DA TEMPESTADE",
+        "CHAMADO DA MATILHA",
+        "FÚRIA INFECCIOSA",
+        "NÃO VOLTO INTEIRO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "sua Fúria liberta. Diga de onde ela vem e estabeleça | REQUER: Fera Interior",
+        "REQUER: Fera Interior",
+        "fera. | REQUER: Fera Interior",
+        "REQUER: Fera Interior | por um de vocês pode ser imediatamente",
+        "REQUER: Fúria"
+      ]
+    },
+    {
+      "pagina": 86,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 87,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ESCUDO DA TEMPESTADE",
+        "FÚRIA SELVAGEM",
+        "REAÇÃO INSTÁVEL",
+        "TEMPESTADE VINGATIVA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Arauto da Tempestade | até a Fúria terminar.",
+        "REQUER: Fúria Selvagem",
+        "REQUER: Arauto da Tempestade | imediatamente.",
+        "REQUER: Fúria"
+      ]
+    },
+    {
+      "pagina": 88,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "BRAÇOS COMO RAÍZES",
+        "CAMINHAR PELOS RAMOS",
+        "FOCO FANÁTICO",
+        "FÚRIA ALÉM DA MORTE",
+        "FÚRIA DIVINA",
+        "LAMENTO",
+        "PRESENÇA ZELOSA",
+        "RAÍZES DO MUNDO",
+        "SENTIR O CAOS",
+        "SURTO CONTROLADO",
+        "VITALIDADE DA ÁRVORE"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Fúria Selvagem | redor.",
+        "REQUER: Fúria Selvagem | outra pessoa agir.",
+        "natureza. | REQUER: Raízes do Mundo",
+        "REQUER: Fúria",
+        "REQUER: Fúria Divina | Fúria acabar, a proteção se desfaz.",
+        "considera vontade sagrada, trate como 7–9. | REQUER: Raízes do Mundo",
+        "REQUER: Fúria Divina | sobrenaturalmente além do alcance normal de seu",
+        "naquela cena. | REQUER: Raízes do Mundo",
+        "REQUER: Fúria Divina e Demasiado Furioso Para Morrer | aliados que estejam tocando você podem desaparecer",
+        "produz um sinal impossível; | REQUER: Fúria",
+        "REQUER: Fúria |  | inimigos inferiores fogem ou congelam;"
+      ]
+    },
+    {
+      "pagina": 89,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 90,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "CAÇADOR",
+        "CAÇADOR IMPLACÁVEL",
+        "CAÇAR E RASTREAR",
+        "MARCA DO CAÇADOR",
+        "OBSERVADOR",
+        "PRESA FAMILIAR",
+        "SUPERIORIDADE DO CAÇADOR"
+      ],
+      "mencoes_requer_na_pagina": [
+        "Quando seguir sinais deixados por uma presa, role+SAB. | REQUER: Marca do Caçador",
+        "REQUER: Marca do Caçador",
+        "REQUER: Caçar e Rastrear"
+      ]
+    },
+    {
+      "pagina": 92,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "BARRIGA DE SMAUG",
+        "CAÇADOR DE MONSTROS",
+        "CAMUFLAGEM",
+        "COMPANHEIRO ANIMAL",
+        "MESTRE DAS FERAS",
+        "PELE DO PREDADOR",
+        "SENTIDOS FERAIS",
+        "SIGA-ME"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Caçador de Monstros ou Um movimento que | saber exatamente onde ela está. Mas sabe que há",
+        "REQUER: Camuflagem",
+        "cobertura suficiente para ocultá-lo normalmente, até | REQUER: Companheiro Animal"
+      ]
+    },
+    {
+      "pagina": 93,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "MELHOR AMIGO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Companheiro Animal"
+      ]
+    },
+    {
+      "pagina": 94,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ALIADO ANTINATURAL",
+        "CAÇADOR DAS TREVAS",
+        "CAMINHANTE DOS HORIZONTES",
+        "ESQUIVA SOMBRIA",
+        "NENHUM MUNDO É LONGE DEMAIS",
+        "PASSO ETÉREO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Companheiro Animal | REQUER: Caminhante dos Horizontes e Marca do",
+        "REQUER: Companheiro Animal",
+        "REQUER: Caçador das Trevas",
+        "REQUER: Caminhante dos Horizontes"
+      ]
+    },
+    {
+      "pagina": 95,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ATIRADOR FRIO",
+        "CHUVA DE FLECHAS",
+        "EMBOSCADA PREPARADA",
+        "FLECHA APRISIONADORA",
+        "FLECHA BANIDORA",
+        "FLECHA DE SANGUE",
+        "FLECHA DO SOL",
+        "FLECHA PERSEGUIDORA",
+        "FLECHA SOMBRIA",
+        "NÃO EXISTE LONGE DEMAIS",
+        "OLHO DA PRESA",
+        "TIRO CANTADO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Flecha de Sangue ou Marca do Caçador"
+      ]
+    },
+    {
+      "pagina": 96,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ARMAR UMA ARAPUCA",
+        "FLECHA ELEMENTAL",
+        "FLECHA EXPLOSIVA",
+        "FLECHA TRANSPASSANTE",
+        "LINGUAJAR SILVESTRE",
+        "PASSO SEM PEGADAS",
+        "TROCA DE LUGAR"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 97,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 98,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ANTÍDOTO DE CAMPO",
+        "ARMADILHA VIVA",
+        "BANIMENTO",
+        "É UMA ARMADILHA!",
+        "FERRO, SAL, NOME E SANGUE",
+        "NÃO OLHE PARA ELE",
+        "SABER O NOME DO INIMIGO",
+        "VENENO PERSONALIZADO",
+        "VIVO OU MORTO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Armar Uma Arapuca | REQUER: Caçador de Monstros"
+      ]
+    },
+    {
+      "pagina": 99,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ABRIR O IMPOSSÍVEL",
+        "ESPECIALISTA EM ARMADILHAS",
+        "LADINO",
+        "LADRÃO DE OPORTUNIDADES",
+        "OLHOS NAS COSTAS",
+        "TRUQUES DO OFÍCIO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Truques do Ofício"
+      ]
+    },
+    {
+      "pagina": 100,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "GOLPE PELAS COSTAS",
+        "HEIST",
+        "PLANO B",
+        "TROMBADINHA",
+        "TUDO SEGUNDO O PLANO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Heist ou Plano B"
+      ]
+    },
+    {
+      "pagina": 101,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ILUSÃO DE OPORTUNIDADE",
+        "LADRÃO DE FEITIÇOS",
+        "LARÁPIO FANTASMAGÓRICO",
+        "MAGIA ROUBADA",
+        "MÃO QUE NÃO ESTÁ LÁ",
+        "MARQUE O ALVO",
+        "ROSTO NA MULTIDÃO",
+        "VENENO É UMA FERRAMENTA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Magia Roubada | tempo para trabalhar, produza uma dose de qualquer",
+        "REQUER: Ladrão de Feitiços | dano, reduza sua Periculosidade em um grau."
+      ]
+    },
+    {
+      "pagina": 102,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "FULANO DA SILVA",
+        "MENSAGEM INOCENTE",
+        "REDE DE INFORMAÇÃO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 103,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "DESAPARECER",
+        "GATUNO",
+        "INVESTIGADOR",
+        "ROTA DE FUGA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 104,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "AÇÃO ARDILOSA",
+        "JOGO SUJO",
+        "OLHO PARA O SAQUE",
+        "RIQUEZA E BOM GOSTO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Golpe pelas Costas"
+      ]
+    },
+    {
+      "pagina": 105,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "FALSÁRIO",
+        "GÍRIA DO SUBMUNDO",
+        "NÃO PRECISO SABER COMO FUNCIONA",
+        "RECEPTADOR"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 106,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "CONTRABANDO",
+        "CUTUCAR A FERIDA",
+        "DEDUÇÃO",
+        "DUPLO JOGO",
+        "NÃO EXISTEM COINCIDÊNCIAS",
+        "PLANTAR A PROVA",
+        "ROUBAR UM ROSTO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Perfil"
+      ]
+    },
+    {
+      "pagina": 107,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "BOLSO IMPOSSÍVEL",
+        "CANAL FECHADO",
+        "DISFARCE ILUSÓRIO",
+        "IDEIA QUE NÃO É SUA",
+        "LÂMINA QUE NÃO EXISTE",
+        "MORTO NÃO GUARDA SEGREDO",
+        "OFÍCIO DOS MORTOS",
+        "SILÊNCIO ROUBADO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 108,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "ARTE ARCANA",
+        "BALADA DE GUERRA",
+        "BARDO",
+        "CHARMOSO E ABERTO",
+        "CONHECIMENTO DE BARDO",
+        "CONHEÇO UMA HISTÓRIA",
+        "ESTA CANÇÃO É SOBRE VOCÊ",
+        "FALE O QUE ELES JÁ SABEM",
+        "METAL ENSURDECEDOR",
+        "SATIRISTA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 109,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p65-109.json",
+      "rotulos_detectados": [
+        "REPUTAÇÃO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 110,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "INSPIRAÇÃO BÁRDICA",
+        "INSPIRAÇÃO CONTAGIOSA",
+        "PALAVRAS CORTANTES"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Inspiração Bárdica"
+      ]
+    },
+    {
+      "pagina": 111,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CONTRACANTO",
+        "GLAMOUR",
+        "LINGUAGEM UNIVERSAL",
+        "MANTO DE INSPIRAÇÃO",
+        "OUVIDO PARA MAGIA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 112,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CANÇÃO DA CRIAÇÃO",
+        "CONTOS DOS ESPÍRITOS",
+        "HARMONIA ARCANA",
+        "SUSSURROS DE TERROR"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Canção da Criação |  | O que ela gostaria que eu dissesse ou fizesse",
+        " | carregar alguma coisa; | REQUER: Arte Arcana",
+        "REQUER: Arte Arcana e dois outros Movimentos de Bardo"
+      ]
+    },
+    {
+      "pagina": 113,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 114,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "HOJE A FESTA É SUA, HOJE A FESTA É NOSSA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Arte Arcana | Quando conduzir uma performance e um grupo de"
+      ]
+    },
+    {
+      "pagina": 115,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "APANHE A FLECHA",
+        "ARTISTA MARCIAL",
+        "CORPO VAZIO",
+        "DEVOLVA AO REMETENTE",
+        "DISCIPLINA ABSOLUTA",
+        "FOLHA QUE CAI",
+        "KENSEI",
+        "MÃO ABERTA",
+        "MESTRE BÊBADO",
+        "NINGUÉM ME TOCA",
+        "NINJA",
+        "PASSO SOBRE A ÁGUA",
+        "TOQUE DA MISERICÓRDIA",
+        "TOQUE DA MORTE LONGA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "MÃO ABERTA | REQUER: Corpo Vazio",
+        "REQUER: Kensei |  | mantenha o projétil em suas mãos;",
+        "REQUER: Corpo Vazio | consequência reduzida.",
+        "REQUER: Apanhe a Flecha"
+      ]
+    },
+    {
+      "pagina": 116,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CLINCH",
+        "CORRA ONDE NÃO HÁ CHÃO",
+        "ENTRAR NA GUARDA",
+        "NÃO EMPURRE UMA PORTA ABERTA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Passo Sobre a Água",
+        "REQUER: Corpo Vazio | Uma vez por cena, quando alguém demonstrar que"
+      ]
+    },
+    {
+      "pagina": 117,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "FINALIZAÇÃO",
+        "SELAR OS MERIDIANOS"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Clinch | criatura não consegue utilizar normalmente aquela"
+      ]
+    },
+    {
+      "pagina": 118,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "FLUIR E REDIRECIONAR",
+        "FORMA DA ÁGUA",
+        "FORMA DA TERRA",
+        "GELO NUM SUSPIRO",
+        "PUNHO DISTANTE",
+        "RAIZ DE PEDRA",
+        "RESPIRAÇÃO PURIFICADORA",
+        "SANGUE É ÁGUA",
+        "SENTIDO SÍSMICO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Forma da Água",
+        "REQUER: Forma da Terra"
+      ]
+    },
+    {
+      "pagina": 119,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "FORMA DO FOGO",
+        "METAL LEMBRA DA PEDRA",
+        "PASSO DA CHAMA",
+        "RELÂMPAGO ENTRE DOIS PULSOS",
+        "TERRA QUE SANGRA FOGO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Forma da Terra |  | sua postura fica completamente aberta depois",
+        "REQUER: Forma da Terra",
+        "REQUER: Forma do Fogo"
+      ]
+    },
+    {
+      "pagina": 120,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CÍRCULO DO VENTO",
+        "CORPO SEM PESO",
+        "FORMA DO AR",
+        "JURAMENTO QUEBRADO",
+        "MISSÃO SAGRADA",
+        "PALADINO",
+        "TÉCNICA SECRETA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Forma do Ar e Corpo Sem Peso",
+        "REQUER: Forma do Ar | pode voar. Carregar outra pessoa, atravessar uma",
+        "REQUER: Forma do Ar | segredo permanece intacto.",
+        "ameaça; | REQUER: Missão Sagrada"
+      ]
+    },
+    {
+      "pagina": 121,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "ARMA SAGRADA",
+        "DEFENSOR INABALÁVEL",
+        "IMPOSIÇÃO DAS MÃOS",
+        "JULGAMENTO DIVINO",
+        "PENITÊNCIA",
+        "REDENÇÃO",
+        "SENTIDO DIVINO",
+        "VINGANÇA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Missão Sagrada",
+        "A proteção existe mesmo quando a situação piora. | REQUER: Missão Sagrada"
+      ]
+    },
+    {
+      "pagina": 122,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 123,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "AURA DA CORAGEM",
+        "AURA DE PROTEÇÃO",
+        "EXTERMINATUS",
+        "NÃO ENQUANTO EU ESTIVER DE PÉ"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Aura de Proteção",
+        "REQUER: Eu Disse: Atrás de Mim"
+      ]
+    },
+    {
+      "pagina": 124,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "ABJURAR OS INIMIGOS",
+        "ÉGIDE SANGRENTA",
+        "MONTARIA FIEL"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Missão Sagrada"
+      ]
+    },
+    {
+      "pagina": 125,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "AJOELHE-SE",
+        "BANIMENTO",
+        "CAVALEIRO PERFEITO",
+        "FAÇA ALGO DIGNO DE SER CONTADO",
+        "MÃOS DIVINAS",
+        "MINHA PALAVRA É MINHA ARMA",
+        "PESADA É A COROA",
+        "TOQUE PURIFICADOR",
+        "VOCÊ NÃO PERTENCE A ESTE MUNDO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Imposição das Mãos | Uma vez por sessão, quando voluntariamente escolher a",
+        "REQUER: Imposição das Mãos | PESADA É A COROA",
+        "REQUER: Missão Sagrada | governá-lo, ele realmente se submete enquanto você",
+        " | permanecer firme diante de uma tentativa de | REQUER: Você Não Pertence a Este Mundo"
+      ]
+    },
+    {
+      "pagina": 126,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CLÉRIGO",
+        "COMUNHÃO",
+        "EXORCISMO",
+        "MILAGRES",
+        "PALAVRA CONTRA O MAL",
+        "SACERDOTE",
+        "SANTUÁRIO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Sacerdote"
+      ]
+    },
+    {
+      "pagina": 127,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "APOTEOSE",
+        "INTERCESSÃO DIVINA",
+        "NÃO VÁ SOZINHO",
+        "PRECE DE ORIENTAÇÃO",
+        "PRESERVAR A VIDA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Sacerdote | Quando alguém realizar Último Suspiro em sua",
+        "REQUER: Sacerdote"
+      ]
+    },
+    {
+      "pagina": 128,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CONHECIMENTO DAS ERAS",
+        "PRESSÁGIO",
+        "VISÕES DO PASSADO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 129,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "ARMA RÚNICA",
+        "NÃO FOI ASSIM QUE EU VI",
+        "RUNA",
+        "RUNAS ENTRELAÇADAS",
+        "RUNAS PERDIDAS"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Presságio | aquilo que testemunhou.",
+        "REQUER: Presságio",
+        "REQUER: Runa"
+      ]
+    },
+    {
+      "pagina": 130,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "EMPRESTE SEU CORPO",
+        "ESPÍRITO GUIA",
+        "ESPÍRITOS ESTÃO POR TODA PARTE",
+        "PELE ESCRITA",
+        "RUNA DE APRISIONAMENTO",
+        "RUNA VIVA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Runa | Escolha um espírito nomeado que o acompanhe e",
+        "REQUER: Runa Viva",
+        "REQUER: Runa"
+      ]
+    },
+    {
+      "pagina": 131,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CÍRCULO DE CONVOCAÇÃO",
+        "ESPÍRITO ERRANTE",
+        "MANIFESTAÇÃO ESPIRITUAL",
+        "NÃO ERA ISSO QUE EU CHAMEI",
+        "PSICOPOMPO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Espíritos Estão por Toda Parte | REQUER: Círculo de Convocação",
+        "REQUER: Empreste Seu Corpo"
+      ]
+    },
+    {
+      "pagina": 132,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "ÂNCORA NO MUNDO",
+        "EIDOLON",
+        "NOME VERDADEIRO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Círculo de Convocação | REQUER: Círculo de Convocação",
+        "REQUER: Círculo de Convocação |  | nada mais atravessa com ela;",
+        "REQUER: Círculo de Convocação"
+      ]
+    },
+    {
+      "pagina": 133,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CÍRCULO DOS ESPOROS",
+        "COISA-FALANTE",
+        "DRUIDA",
+        "FOGO SELVAGEM",
+        "MAESTRIA ELEMENTAL",
+        "METAMORFOSE",
+        "PELE NOVA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Metamorfose"
+      ]
+    },
+    {
+      "pagina": 134,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "DANÇA DO DUPLO",
+        "FORMA PRIMORDIAL",
+        "QUIMERA",
+        "SONO DO DRUIDA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Metamorfose | REQUER: Metamorfose e Maestria Elemental",
+        "REQUER: Metamorfose | reconhece sua passagem. Vegetação comum não o",
+        "REQUER: Metamorfose | ou hostilidade instintiva. Ainda podem fazê-lo quando:",
+        "REQUER: Metamorfose |  | Que criatura ou comunidade domina esta"
+      ]
+    },
+    {
+      "pagina": 135,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CORPO SIMBIÓTICO",
+        "CORPO VERDEJANTE",
+        "DESPERTAR",
+        "FLORESCER NO CADÁVER",
+        "PASSAGEM VERDE",
+        "TECELÃO DO CLIMA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "como alguém e não como alguma coisa, pergunte ao | REQUER: Círculo dos Esporos",
+        "REQUER: Círculo dos Esporos"
+      ]
+    },
+    {
+      "pagina": 136,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "EQUILÍBRIO",
+        "REDE MICELIAL",
+        "REENCARNAÇÃO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Círculo dos Esporos",
+        "REQUER: Fogo Selvagem"
+      ]
+    },
+    {
+      "pagina": 137,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "ESPÍRITO DO INCÊNDIO",
+        "MARÉ DE FORMAS"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Fogo Selvagem | Diga qual característica da primeira forma permanece",
+        "REQUER: Metamorfose"
+      ]
+    },
+    {
+      "pagina": 138,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "+CON.",
+        "ABJURAÇÃO",
+        "ADIVINHAÇÃO",
+        "CONJURAÇÃO",
+        "FORTALEZA ARCANA",
+        "MAGO",
+        "RITUAL"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 139,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CONTRAMÁGICA",
+        "ENCANTAMENTO",
+        "ESTUDO RÁPIDO",
+        "EVOCAÇÃO",
+        "GRIMÓRIO",
+        "ILUSÃO",
+        "PESQUISA ARCANA",
+        "TELECINESE",
+        "TRANSMUTAÇÃO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Grimório"
+      ]
+    },
+    {
+      "pagina": 140,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "ALTERAR A FÓRMULA",
+        "ASSINATURA ARCANA",
+        "ESTA MAGIA TEM AUTOR",
+        "MAGIA DISCRETA",
+        "TEORIA UNIFICADA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Estudo Rápido",
+        "REQUER: Alterar a Fórmula",
+        "REQUER: Assinatura Arcana"
+      ]
+    },
+    {
+      "pagina": 141,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 142,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CONTINGÊNCIA",
+        "DESFAZER MAGIA",
+        "GUARDA PROJETADA",
+        "LUGAR DE PODER"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Abjuração",
+        "REQUER: Ritual"
+      ]
+    },
+    {
+      "pagina": 143,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "BOLSO IMPOSSÍVEL",
+        "ILUSÃO MALEÁVEL",
+        "MARCA DE RETORNO",
+        "MEMÓRIA MALEÁVEL",
+        "NÃO ERA EU",
+        "OLHAR HIPNÓTICO",
+        "OLHO ARCANO",
+        "TERCEIRO OLHO",
+        "TRANSPOSIÇÃO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Conjuração | sentidos estiverem assim ajustados.",
+        "REQUER: Encantamento",
+        "REQUER: Conjuração | Dor, ameaça imediata, violência ou algo profundamente",
+        "REQUER: Conjuração",
+        "sentidos através dele, descreva como sua magia | REQUER: Evocação",
+        "REQUER: Adivinhação | reduzir o efeito escolhido para evitar essa consequência.",
+        "uma: | REQUER: Ilusão",
+        "categoria como algo realmente presente. Outras coisas | REQUER: Ilusão"
+      ]
+    },
+    {
+      "pagina": 144,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "FORMA ESTÁVEL",
+        "MÃOS INVISÍVEIS",
+        "PEDRA DO TRANSMUTADOR",
+        "REALIDADE ILUSÓRIA",
+        "REFLETIR MAGIA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "houver espaço ficcional para que tivesse preparado o | REQUER: Transmutação",
+        "REQUER: Ilusão |  | e qual propriedade da matéria original não",
+        "pode causar diretamente violência por existir desta | REQUER: Transmutação",
+        "REQUER: Telecinese",
+        "REQUER: Contramágica"
+      ]
+    },
+    {
+      "pagina": 145,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "DISSIPAÇÃO DEFENSIVA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 146,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "FAMILIAR ARCANO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 147,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "FEITICEIRO",
+        "HERANÇA DRACÔNICA",
+        "MAGIA NO SANGUE",
+        "MAGIA SELVAGEM",
+        "PASSAGEM NEGRA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 148,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "ALIMENTE AS CHAMAS",
+        "ATRASAR CONSEQUÊNCIA",
+        "CONJURAÇÃO DOS CLONES OBSCUROS",
+        "CORRENTE DE SOMBRA",
+        "FONTE ABERTA",
+        "INVASÃO MENTAL",
+        "ROUBAR A SOMBRA",
+        "TELEPATIA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "grau alcance, duração, área ou Periculosidade sem | REQUER: Magia no Sangue"
+      ]
+    },
+    {
+      "pagina": 149,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "ACUMULAR PODER",
+        "EVOLUÇÃO ESPONTÂNEA",
+        "MAGIA GEMINADA",
+        "NÃO CABE DENTRO",
+        "SOBRECARGA INATA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "Até o fim da cena, quando obtiver 7+ em Magia no | REQUER: Magia no Sangue",
+        "REQUER: Magia no Sangue"
+      ]
+    },
+    {
+      "pagina": 150,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 151,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "CAOS CONTROLADO",
+        "COINCIDÊNCIA IMPOSSÍVEL",
+        "DOBRAR O ACASO",
+        "PRESENÇA DRACÔNICA",
+        "SANGUE HÍBRIDO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Magia no Sangue | REQUER: Herança Dracônica",
+        "REQUER: Magia no Sangue | sua presença desperta medo, respeito, cobiça",
+        "REQUER: Herança Dracônica",
+        "REQUER: Magia Selvagem | coleção concreta. Quando algo significativo que você",
+        "REQUER: Magia Selvagem | seu tesouro;",
+        "REQUER: Magia Selvagem"
+      ]
+    },
+    {
+      "pagina": 152,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "FORMA UMBRAL",
+        "MANTO DA FÊNIX",
+        "RENASCER DAS CINZAS",
+        "TEMPESTADE NO PEITO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Manto da Fênix"
+      ]
+    },
+    {
+      "pagina": 153,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "GRAVIDADE PARTICULAR",
+        "MEMÓRIA ABERTA",
+        "MENTE SEM PELE",
+        "OLHO DA TEMPESTADE",
+        "PENSAMENTO CONTAGIOSO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Invasão Mental",
+        "REQUER: Telepatia"
+      ]
+    },
+    {
+      "pagina": 154,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p110-154.json",
+      "rotulos_detectados": [
+        "ENTRE SONHOS",
+        "TRAZER ALGO DO SONHO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "precisa intervir concretamente. Você não controla | REQUER: Entre Sonhos"
+      ]
+    },
+    {
+      "pagina": 155,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "BRUXO",
+        "FAVOR DO PATRONO",
+        "PACTO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Pacto",
+        "REQUER: A Dívida Cresce"
+      ]
+    },
+    {
+      "pagina": 156,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ARQUIFADA",
+        "GRANDE ANTIGO",
+        "INVOCADOR MÍSTICO",
+        "OLHOS DO PATRONO",
+        "RAJADA MÍSTICA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Pacto | mais deixar de saber.",
+        "REQUER: Rajada Mística",
+        "REQUER: Pacto"
+      ]
+    },
+    {
+      "pagina": 157,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ARMA DO PACTO",
+        "MALDIÇÃO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Pacto | ligação pode alcançar você através dela."
+      ]
+    },
+    {
+      "pagina": 158,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "CALDEIRÃO",
+        "CLÁUSULA OCULTA",
+        "MAGIA SIMPÁTICA",
+        "OLHO GORDO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Pacto"
+      ]
+    },
+    {
+      "pagina": 159,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "AUDIÊNCIA",
+        "CRÉDITO SOBRENATURAL",
+        "FIADOR",
+        "PAGAMENTO ANTECIPADO",
+        "RENEGOCIAR OS TERMOS"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Pacto | alcance. Isso não obriga seu Patrono a ser sincero,",
+        "REQUER: Favor do Patrono",
+        "REQUER: A Dívida Cresce",
+        "REQUER: Pacto"
+      ]
+    },
+    {
+      "pagina": 160,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "EMISSÁRIO DO PATRONO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Pacto | REQUER: Pacto",
+        "REQUER: Pacto"
+      ]
+    },
+    {
+      "pagina": 161,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "DUAS PALAVRAS AO MESMO TEMPO",
+        "EXECUTAR A CLÁUSULA",
+        "MAIS UMA INVOCAÇÃO",
+        "MALDIÇÃO ADORMECIDA",
+        "MANDATO MAIOR",
+        "RAJADA INESCAPÁVEL",
+        "SELO DA PALAVRA",
+        "TRÊS VEZES SEU"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Invocador Místico | REQUER: Arma do Pacto",
+        "REQUER: Invocador Místico | MANDATO MAIOR",
+        "Uma vez por cena, quando utilizar Rajada Mística, você | REQUER: Arma do Pacto",
+        "REQUER: Rajada Mística",
+        "Enquanto essa marca permanecer relevante, ocultação, | REQUER: Maldição",
+        "REQUER: Arma do Pacto",
+        "transgressão que seu Mandato realmente possa exigir | REQUER: Maldição",
+        "REQUER: Maldição"
+      ]
+    },
+    {
+      "pagina": 162,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ESPELHO SIMPÁTICO",
+        "MALDIÇÃO CONTAGIOSA",
+        "NÃO TOQUE NISSO",
+        "POTE DE PROBLEMAS"
+      ],
+      "mencoes_requer_na_pagina": [
+        "destruída ou alterada de maneira irreversível. | REQUER: Magia Simpática",
+        "REQUER: Maldição",
+        "passa a sofrer. A condição de quebra permanece a | REQUER: Caldeirão",
+        "Você decide se a Maldição reage ou permanece quieta. | REQUER: Caldeirão",
+        "REQUER: Magia Simpática"
+      ]
+    },
+    {
+      "pagina": 163,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "INVEJA ALIMENTA A DESGRAÇA",
+        "NÃO ERA SOBRE VOCÊ",
+        "OLHAR DE FORA",
+        "PALAVRAS NÃO SÃO SÓ PALAVRAS"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Olho Gordo | REQUER: Grande Antigo",
+        "REQUER: Olho Gordo |  | ela fica Confusa;",
+        "REQUER: Olho Gordo",
+        "REQUER: Grande Antigo",
+        "REQUER: Arquifada | O Mestre responderá através da perspectiva",
+        "REQUER: Arquifada"
+      ]
+    },
+    {
+      "pagina": 164,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "SABÁ"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Pacto | contribuir para o rito mesmo que suas tradições"
+      ]
+    },
+    {
+      "pagina": 165,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ANIMAR OS MORTOS",
+        "FALAR COM OS MORTOS",
+        "NÃO ERA PARA VOCÊ ESTAR AQUI",
+        "NECROMANTE",
+        "NOME DO MORTO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 166,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "COLHEITA DE OSSOS",
+        "LEGIÃO DOS SEM NOME"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Animar os Mortos"
+      ]
+    },
+    {
+      "pagina": 167,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ABOMINAÇÃO COSTURADA",
+        "LEVANTE-SE COMO VOCÊ MESMO",
+        "OLHOS QUE NÃO PISCAM",
+        "ROUBAR A RÉDEA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Animar os Mortos | Quando uma dessas propriedades superar uma",
+        "REQUER: Animar os Mortos",
+        "REQUER: Animar os Mortos e Nome do Morto",
+        "REQUER: Animar os Mortos e Colheita de Ossos"
+      ]
+    },
+    {
+      "pagina": 168,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ASSOMBRAÇÃO ARTIFICIAL",
+        "CARNE QUE LEMBRA",
+        "NÃO PRECISO DO CORPO INTEIRO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: A Morte Deixa Marcas"
+      ]
+    },
+    {
+      "pagina": 169,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "CORPO EMPRESTADO",
+        "JÁ MORRI UM POUCO",
+        "MORRER É UM ESTADO"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 170,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ÂNCORA DA ALMA",
+        "CORPO DE RESERVA",
+        "JAULA DE ALMA"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 171,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ENXERTO CADAVÉRICO",
+        "FILACTÉRIO",
+        "VISAGEM DO NECROMANTE"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Âncora da Alma | REQUER: Colheita de Ossos",
+        "REQUER: Animar os Mortos"
+      ]
+    },
+    {
+      "pagina": 172,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ARTÍFICE",
+        "ENGENHEIRO",
+        "FEITO PARA ISSO",
+        "GAMBARRA DE CAMPO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Artífice"
+      ]
+    },
+    {
+      "pagina": 173,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ALQUIMISTA",
+        "AQUILO QUE VOCÊS CHAMAM DE MUNDO",
+        "ARMA HUMANA",
+        "TRANSMUTAÇÃO ALQUÍMICA",
+        "TROCA EQUIVALENTE"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Transmutação Alquímica",
+        "REQUER: Troca Equivalente",
+        "REQUER: Arma Humana"
+      ]
+    },
+    {
+      "pagina": 174,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "BEBA ISTO",
+        "BOMBA DE BOLSO",
+        "MÉDICO DE CAMPO",
+        "TUDO É VENENO OU REMÉDIO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Alquimista"
+      ]
+    },
+    {
+      "pagina": 175,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "CIRURGIÃO IMPROVÁVEL",
+        "DIAGNÓSTICO",
+        "GOSTO DE CASA",
+        "NADA SE PERDE",
+        "OBRA-PRIMA",
+        "PRIMEIRO, NÃO MORRA",
+        "REFEIÇÃO DE HERÓIS"
+      ],
+      "mencoes_requer_na_pagina": []
+    },
+    {
+      "pagina": 176,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ABORDAGEM",
+        "CADEIA DE COMANDO",
+        "CAPITÃO",
+        "MERCENÁRIO",
+        "ORDENS CLARAS",
+        "RETIRADA ORGANIZADA",
+        "SEGUREM A POSIÇÃO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Capitão"
+      ]
+    },
+    {
+      "pagina": 177,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ADIANTAMENTO",
+        "CONTRABANDISTA",
+        "FUMAÇA E TROVÃO",
+        "MAIS RÁPIDO QUE A SOMBRA",
+        "NINGUÉM FICA PARA TRÁS"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Capitão",
+        "REQUER: O Preço da Guerra"
+      ]
+    },
+    {
+      "pagina": 178,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "CONTRATO É CONTRATO",
+        "ISSO NÃO ESTAVA NO CONTRATO",
+        "JÁ VI ISSO ANTES",
+        "PRECISO DE PROFISSIONAIS",
+        "SOLDO ATRASADO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: O Preço da Guerra"
+      ]
+    },
+    {
+      "pagina": 179,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "BANDEIRA BRANCA",
+        "ESTIMATIVA DE BAIXAS",
+        "HOMEM AO MAR",
+        "MÁ REPUTAÇÃO",
+        "MARCHA FORÇADA",
+        "PONTO DE EXTRAÇÃO",
+        "TODO PORTO TEM UMA TAVERNA"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Capitão"
+      ]
+    },
+    {
+      "pagina": 180,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "ARQUEÓLOGO",
+        "CAMADAS",
+        "ESCRIBA YOKAI",
+        "FAVOR POLÍTICO",
+        "NOBRE",
+        "OLHOS DE CONTRAMESTRE",
+        "PALAVRA QUE APAGA",
+        "PALAVRA QUE DELIMITA",
+        "PALAVRA QUE PROÍBE",
+        "PROTOCOLO",
+        "SAQUE ORGANIZADO"
+      ],
+      "mencoes_requer_na_pagina": [
+        "REQUER: Abordagem"
+      ]
+    },
+    {
+      "pagina": 181,
+      "categoria": "movimentos_de_classe",
+      "fonte_paginas": "fontes/autoria/hack-carcaca-dw-mecanicas-p155-181.json",
+      "rotulos_detectados": [
+        "CONTEXTO É TUDO",
+        "NÃO TOQUE NISSO"
+      ],
+      "mencoes_requer_na_pagina": []
+    }
+  ]
+}
