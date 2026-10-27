@@ -1,0 +1,1945 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-2454",
+    "paragrafo_docx": 2454,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "PACTO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2454,
+        "tipo": "corpo",
+        "texto": "Escolha seu Patrono e estabeleça:"
+      },
+      {
+        "paragrafo_docx": 2455,
+        "tipo": "opcao",
+        "texto": "o que ele pode conceder;"
+      },
+      {
+        "paragrafo_docx": 2456,
+        "tipo": "opcao",
+        "texto": "o que ele deseja;"
+      },
+      {
+        "paragrafo_docx": 2457,
+        "tipo": "opcao",
+        "texto": "como se comunica;"
+      },
+      {
+        "paragrafo_docx": 2458,
+        "tipo": "opcao",
+        "texto": "uma coisa que nunca lhe concederá."
+      },
+      {
+        "paragrafo_docx": 2459,
+        "tipo": "continuacao",
+        "texto": "Quando pedir algo extraordinário dentro do poder dele, diga o que oferece, que Favor pretende gastar ou que obrigação está disposto a assumir. O Mestre dirá o preço. Se aceitar, o Patrono cumpre."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2455,
+        "texto": "o que ele pode conceder;"
+      },
+      {
+        "paragrafo_docx": 2456,
+        "texto": "o que ele deseja;"
+      },
+      {
+        "paragrafo_docx": 2457,
+        "texto": "como se comunica;"
+      },
+      {
+        "paragrafo_docx": 2458,
+        "texto": "uma coisa que nunca lhe concederá."
+      }
+    ],
+    "texto_original": "Escolha seu Patrono e estabeleça:\no que ele pode conceder;\no que ele deseja;\ncomo se comunica;\numa coisa que nunca lhe concederá.\nQuando pedir algo extraordinário dentro do poder dele, diga o que oferece, que Favor pretende gastar ou que obrigação está disposto a assumir. O Mestre dirá o preço. Se aceitar, o Patrono cumpre.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2454"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2460",
+    "paragrafo_docx": 2460,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "FAVOR DO PATRONO",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2460,
+        "tipo": "corpo",
+        "texto": "Quando cumprir voluntariamente um desejo importante de seu Patrono sem que ele precise cobrar, receba Favor 1. Até o máximo de 3. Gaste Favor para:"
+      },
+      {
+        "paragrafo_docx": 2461,
+        "tipo": "opcao",
+        "texto": "obter informação dentro do alcance do Patrono;"
+      },
+      {
+        "paragrafo_docx": 2462,
+        "tipo": "opcao",
+        "texto": "receber +1 adiante quando agir diretamente através de um poder, dom ou instrução concedida pelo Patrono;"
+      },
+      {
+        "paragrafo_docx": 2463,
+        "tipo": "opcao",
+        "texto": "pedir uma pequena intervenção sem novo preço;"
+      },
+      {
+        "paragrafo_docx": 2464,
+        "tipo": "opcao",
+        "texto": "reconhecer um agente ou sinal do Patrono."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2461,
+        "texto": "obter informação dentro do alcance do Patrono;"
+      },
+      {
+        "paragrafo_docx": 2462,
+        "texto": "receber +1 adiante quando agir diretamente através de um poder, dom ou instrução concedida pelo Patrono;"
+      },
+      {
+        "paragrafo_docx": 2463,
+        "texto": "pedir uma pequena intervenção sem novo preço;"
+      },
+      {
+        "paragrafo_docx": 2464,
+        "texto": "reconhecer um agente ou sinal do Patrono."
+      }
+    ],
+    "texto_original": "Quando cumprir voluntariamente um desejo importante de seu Patrono sem que ele precise cobrar, receba Favor 1. Até o máximo de 3. Gaste Favor para:\nobter informação dentro do alcance do Patrono;\nreceber +1 adiante quando agir diretamente através de um poder, dom ou instrução concedida pelo Patrono;\npedir uma pequena intervenção sem novo preço;\nreconhecer um agente ou sinal do Patrono.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2460"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2465",
+    "paragrafo_docx": 2465,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "A DÍVIDA CRESCE",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2465,
+        "tipo": "corpo",
+        "texto": "Quando pedir algo dentro do poder de seu Patrono sem gastar Favor nem oferecer pagamento imediato, você pode receber aquilo agora e pagar depois. Marque 1 Dívida.\nCada Dívida é uma permissão para o Mestre cobrar posteriormente alguma coisa que seu Patrono realmente valoriza.\nQuando o Patrono cobrar uma Dívida e você cumprir aquilo que ele exigiu, apague 1 Dívida.  Cada 1 Dívida aumenta o número máximo de Favores em 1. Favores já acumulados não são perdidos quando seu máximo diminui, mas você não pode receber novos Favores enquanto estiver acima do máximo atual. Você também recebe livremente o movimento A Dívida Não Morre Comigo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando pedir algo dentro do poder de seu Patrono sem gastar Favor nem oferecer pagamento imediato, você pode receber aquilo agora e pagar depois. Marque 1 Dívida.\nCada Dívida é uma permissão para o Mestre cobrar posteriormente alguma coisa que seu Patrono realmente valoriza.\nQuando o Patrono cobrar uma Dívida e você cumprir aquilo que ele exigiu, apague 1 Dívida.  Cada 1 Dívida aumenta o número máximo de Favores em 1. Favores já acumulados não são perdidos quando seu máximo diminui, mas você não pode receber novos Favores enquanto estiver acima do máximo atual. Você também recebe livremente o movimento A Dívida Não Morre Comigo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2465"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2466",
+    "paragrafo_docx": 2466,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "A DÍVIDA NÃO MORRE COMIGO",
+    "requisito_literal": "A Dívida Cresce",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2465",
+      "titulo_requerido": "A DÍVIDA CRESCE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2466,
+        "tipo": "corpo",
+        "texto": "Quando estiver prestes a morrer possuindo ao menos 1 Dívida, seu Patrono pode exigir que aquilo que lhe é devido sobreviva a você. Antes de Último Suspiro, pergunte ao Mestre:\n“Quem ou o que meu Patrono poderia legitimamente considerar herdeiro desta dívida?” \nO Mestre responderá com uma pessoa, objeto, linhagem, promessa ou legado que realmente possua ligação com você. Você pode aceitar essa transferência antes de enfrentar a Morte. Se morrer, a Dívida continua existindo através daquilo que foi nomeado."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando estiver prestes a morrer possuindo ao menos 1 Dívida, seu Patrono pode exigir que aquilo que lhe é devido sobreviva a você. Antes de Último Suspiro, pergunte ao Mestre:\n“Quem ou o que meu Patrono poderia legitimamente considerar herdeiro desta dívida?” \nO Mestre responderá com uma pessoa, objeto, linhagem, promessa ou legado que realmente possua ligação com você. Você pode aceitar essa transferência antes de enfrentar a Morte. Se morrer, a Dívida continua existindo através daquilo que foi nomeado.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2466"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2467",
+    "paragrafo_docx": 2467,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "RAJADA MÍSTICA",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2467,
+        "tipo": "corpo",
+        "texto": "Escolha a forma visível que o poder ofensivo de seu Patrono assume e duas Invocações para o poder que seu Patrono lhe concedeu:"
+      },
+      {
+        "paragrafo_docx": 2468,
+        "tipo": "opcao",
+        "texto": "Agonizante: antes de atacar, aumente a Periculosidade em dois graus e exponha-se imediatamente ao poder liberado."
+      },
+      {
+        "paragrafo_docx": 2469,
+        "tipo": "opcao",
+        "texto": "Distante: sua Rajada pode alcançar distâncias extraordinárias desde que consiga perceber ou localizar adequadamente o alvo; ao fazê-lo, alguma coisa perigosa percebe a descarga."
+      },
+      {
+        "paragrafo_docx": 2470,
+        "tipo": "opcao",
+        "texto": "Repulsiva: reduza a Periculosidade em um grau para empurrar, puxar ou derrubar o alvo quando acertá-lo."
+      },
+      {
+        "paragrafo_docx": 2471,
+        "tipo": "opcao",
+        "texto": "Maldita: quando ferir alguém, marque-o com um sinal reconhecível do Patrono. Diga o que esse sinal revela ou permite que agentes daquele poder reconheçam."
+      },
+      {
+        "paragrafo_docx": 2472,
+        "tipo": "opcao",
+        "texto": "Reveladora: quando acertar uma criatura sobrenatural, pergunte “O que nela meu Patrono reconhece imediatamente?”"
+      },
+      {
+        "paragrafo_docx": 2473,
+        "tipo": "continuacao",
+        "texto": "Quando utilizar sua Rajada, ataque com Disparar ou Matar e Pilhar conforme sua manifestação e ative uma Invocação."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2468,
+        "texto": "Agonizante: antes de atacar, aumente a Periculosidade em dois graus e exponha-se imediatamente ao poder liberado."
+      },
+      {
+        "paragrafo_docx": 2469,
+        "texto": "Distante: sua Rajada pode alcançar distâncias extraordinárias desde que consiga perceber ou localizar adequadamente o alvo; ao fazê-lo, alguma coisa perigosa percebe a descarga."
+      },
+      {
+        "paragrafo_docx": 2470,
+        "texto": "Repulsiva: reduza a Periculosidade em um grau para empurrar, puxar ou derrubar o alvo quando acertá-lo."
+      },
+      {
+        "paragrafo_docx": 2471,
+        "texto": "Maldita: quando ferir alguém, marque-o com um sinal reconhecível do Patrono. Diga o que esse sinal revela ou permite que agentes daquele poder reconheçam."
+      },
+      {
+        "paragrafo_docx": 2472,
+        "texto": "Reveladora: quando acertar uma criatura sobrenatural, pergunte “O que nela meu Patrono reconhece imediatamente?”"
+      }
+    ],
+    "texto_original": "Escolha a forma visível que o poder ofensivo de seu Patrono assume e duas Invocações para o poder que seu Patrono lhe concedeu:\nAgonizante: antes de atacar, aumente a Periculosidade em dois graus e exponha-se imediatamente ao poder liberado.\nDistante: sua Rajada pode alcançar distâncias extraordinárias desde que consiga perceber ou localizar adequadamente o alvo; ao fazê-lo, alguma coisa perigosa percebe a descarga.\nRepulsiva: reduza a Periculosidade em um grau para empurrar, puxar ou derrubar o alvo quando acertá-lo.\nMaldita: quando ferir alguém, marque-o com um sinal reconhecível do Patrono. Diga o que esse sinal revela ou permite que agentes daquele poder reconheçam.\nReveladora: quando acertar uma criatura sobrenatural, pergunte “O que nela meu Patrono reconhece imediatamente?”\nQuando utilizar sua Rajada, ataque com Disparar ou Matar e Pilhar conforme sua manifestação e ative uma Invocação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2467"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2474",
+    "paragrafo_docx": 2474,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "INVOCADOR MÍSTICO",
+    "requisito_literal": "Rajada Mística",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2467",
+      "titulo_requerido": "RAJADA MÍSTICA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2474,
+        "tipo": "corpo",
+        "texto": "Escolha mais duas Invocações."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha mais duas Invocações.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2474"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2475",
+    "paragrafo_docx": 2475,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "OLHOS DO PATRONO",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2475,
+        "tipo": "corpo",
+        "texto": "Quando observar algo que pertence claramente ao domínio de seu Patrono, pergunte: \n“O que meu Patrono veria aqui que eu normalmente não enxergaria?” \nO Mestre responderá."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando observar algo que pertence claramente ao domínio de seu Patrono, pergunte: \n“O que meu Patrono veria aqui que eu normalmente não enxergaria?” \nO Mestre responderá.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2475"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2476",
+    "paragrafo_docx": 2476,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "ARQUIFADA",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2476,
+        "tipo": "corpo",
+        "texto": "Seu Patrono é feérico. Quando oferecer a alguém uma barganha formal em nome dele, sua promessa conta como influência se essa pessoa souber o que significa aceitar uma dívida feérica."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Seu Patrono é feérico. Quando oferecer a alguém uma barganha formal em nome dele, sua promessa conta como influência se essa pessoa souber o que significa aceitar uma dívida feérica.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2476"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2477",
+    "paragrafo_docx": 2477,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "GRANDE ANTIGO",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2477,
+        "tipo": "corpo",
+        "texto": "Quando abrir deliberadamente sua mente para perguntar algo a uma consciência incompreensível, role+SAB.\n10+: receba uma verdade útil.\n7–9: receba a verdade e escolha:"
+      },
+      {
+        "paragrafo_docx": 2478,
+        "tipo": "opcao",
+        "texto": "fique Confuso;"
+      },
+      {
+        "paragrafo_docx": 2479,
+        "tipo": "opcao",
+        "texto": "algo percebe você;"
+      },
+      {
+        "paragrafo_docx": 2480,
+        "tipo": "opcao",
+        "texto": "você aprende uma verdade que não consegue mais deixar de saber."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2478,
+        "texto": "fique Confuso;"
+      },
+      {
+        "paragrafo_docx": 2479,
+        "texto": "algo percebe você;"
+      },
+      {
+        "paragrafo_docx": 2480,
+        "texto": "você aprende uma verdade que não consegue mais deixar de saber."
+      }
+    ],
+    "texto_original": "Quando abrir deliberadamente sua mente para perguntar algo a uma consciência incompreensível, role+SAB.\n10+: receba uma verdade útil.\n7–9: receba a verdade e escolha:\nfique Confuso;\nalgo percebe você;\nvocê aprende uma verdade que não consegue mais deixar de saber.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2477"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2482",
+    "paragrafo_docx": 2482,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "ARMA DO PACTO",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2482,
+        "tipo": "corpo",
+        "texto": "Seu Patrono lhe concedeu uma arma para fazer cumprir uma parte do acordo entre vocês. Diga que forma ela possui, como manifesta a natureza do Patrono e qual Mandato ela existe para executar: cobrar dívidas, punir infiéis, caçar traidores, proteger um domínio, colher dos derrotados ou outro propósito apropriado.\nVocê pode fazer a arma surgir em sua mão ou desaparecer quando tiver liberdade para invocá-la. Ela é sobrenatural e pode ferir o que armas comuns não alcançariam quando a natureza do Patrono ou de seu Mandato realmente permitir isso.\nUma vez por cena, quando empunhar a Arma do Pacto contra alguém que tenha se tornado diretamente sujeito ao seu Mandato, receba Domínio 2, até o máximo de 3. Gaste 1 Domínio quando agir contra esse alvo através da arma para:"
+      },
+      {
+        "paragrafo_docx": 2483,
+        "tipo": "opcao",
+        "texto": "Clamar: deixe sobre ele uma marca sobrenatural reconhecível por você, pelo Patrono e por agentes familiarizados com seu poder;"
+      },
+      {
+        "paragrafo_docx": 2484,
+        "tipo": "opcao",
+        "texto": "Colher: extraia uma representação verdadeira do alvo — sangue, sombra, essência, fragmento espiritual ou equivalente — que conta para Maldição e Magia Simpática;"
+      },
+      {
+        "paragrafo_docx": 2485,
+        "tipo": "opcao",
+        "texto": "Fazer Cumprir: obrigue o alvo a compreender exatamente que dívida, transgressão, proibição ou vontade do Patrono a arma está cobrando; isso conta como influência para Negociar;"
+      },
+      {
+        "paragrafo_docx": 2486,
+        "tipo": "opcao",
+        "texto": "Manifestar: atravesse uma proteção física convencional que esteja defendendo diretamente o alvo, como armadura, escudo ou cobertura."
+      },
+      {
+        "paragrafo_docx": 2487,
+        "tipo": "continuacao",
+        "texto": "Perca o Domínio restante quando o Mandato contra aquele alvo for cumprido, deixar de se aplicar ou você conscientemente abandonar sua cobrança."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2483,
+        "texto": "Clamar: deixe sobre ele uma marca sobrenatural reconhecível por você, pelo Patrono e por agentes familiarizados com seu poder;"
+      },
+      {
+        "paragrafo_docx": 2484,
+        "texto": "Colher: extraia uma representação verdadeira do alvo — sangue, sombra, essência, fragmento espiritual ou equivalente — que conta para Maldição e Magia Simpática;"
+      },
+      {
+        "paragrafo_docx": 2485,
+        "texto": "Fazer Cumprir: obrigue o alvo a compreender exatamente que dívida, transgressão, proibição ou vontade do Patrono a arma está cobrando; isso conta como influência para Negociar;"
+      },
+      {
+        "paragrafo_docx": 2486,
+        "texto": "Manifestar: atravesse uma proteção física convencional que esteja defendendo diretamente o alvo, como armadura, escudo ou cobertura."
+      }
+    ],
+    "texto_original": "Seu Patrono lhe concedeu uma arma para fazer cumprir uma parte do acordo entre vocês. Diga que forma ela possui, como manifesta a natureza do Patrono e qual Mandato ela existe para executar: cobrar dívidas, punir infiéis, caçar traidores, proteger um domínio, colher dos derrotados ou outro propósito apropriado.\nVocê pode fazer a arma surgir em sua mão ou desaparecer quando tiver liberdade para invocá-la. Ela é sobrenatural e pode ferir o que armas comuns não alcançariam quando a natureza do Patrono ou de seu Mandato realmente permitir isso.\nUma vez por cena, quando empunhar a Arma do Pacto contra alguém que tenha se tornado diretamente sujeito ao seu Mandato, receba Domínio 2, até o máximo de 3. Gaste 1 Domínio quando agir contra esse alvo através da arma para:\nClamar: deixe sobre ele uma marca sobrenatural reconhecível por você, pelo Patrono e por agentes familiarizados com seu poder;\nColher: extraia uma representação verdadeira do alvo — sangue, sombra, essência, fragmento espiritual ou equivalente — que conta para Maldição e Magia Simpática;\nFazer Cumprir: obrigue o alvo a compreender exatamente que dívida, transgressão, proibição ou vontade do Patrono a arma está cobrando; isso conta como influência para Negociar;\nManifestar: atravesse uma proteção física convencional que esteja defendendo diretamente o alvo, como armadura, escudo ou cobertura.\nPerca o Domínio restante quando o Mandato contra aquele alvo for cumprido, deixar de se aplicar ou você conscientemente abandonar sua cobrança.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2482"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2488",
+    "paragrafo_docx": 2488,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "MALDIÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2488,
+        "tipo": "corpo",
+        "texto": "Quando possuir algo que represente uma pessoa — sangue, nome, cabelo, objeto íntimo — diga a desgraça específica que deseja ligar a ela e role+CAR ou SAB. Em um 7+, a maldição encontra o alvo.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 2489,
+        "tipo": "opcao",
+        "texto": "dura até ser quebrada; sem escolher esta opção, a Maldição permanece até produzir plenamente a desgraça declarada ou até o fim da situação em que ela se manifestou."
+      },
+      {
+        "paragrafo_docx": 2490,
+        "tipo": "opcao",
+        "texto": "você não fica ligado ao destino dela; caso contrário, enquanto a Maldição persistir, magia capaz de rastrear, atingir ou compreender a ligação pode alcançar você através dela."
+      },
+      {
+        "paragrafo_docx": 2491,
+        "tipo": "continuacao",
+        "texto": "Quando uma Maldição for estabelecida, o Mestre dirá uma condição concreta capaz de quebrá-la, coerente com sua natureza."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2489,
+        "texto": "dura até ser quebrada; sem escolher esta opção, a Maldição permanece até produzir plenamente a desgraça declarada ou até o fim da situação em que ela se manifestou."
+      },
+      {
+        "paragrafo_docx": 2490,
+        "texto": "você não fica ligado ao destino dela; caso contrário, enquanto a Maldição persistir, magia capaz de rastrear, atingir ou compreender a ligação pode alcançar você através dela."
+      }
+    ],
+    "texto_original": "Quando possuir algo que represente uma pessoa — sangue, nome, cabelo, objeto íntimo — diga a desgraça específica que deseja ligar a ela e role+CAR ou SAB. Em um 7+, a maldição encontra o alvo.\n10+: escolha 2.\n7–9: escolha 1.\ndura até ser quebrada; sem escolher esta opção, a Maldição permanece até produzir plenamente a desgraça declarada ou até o fim da situação em que ela se manifestou.\nvocê não fica ligado ao destino dela; caso contrário, enquanto a Maldição persistir, magia capaz de rastrear, atingir ou compreender a ligação pode alcançar você através dela.\nQuando uma Maldição for estabelecida, o Mestre dirá uma condição concreta capaz de quebrá-la, coerente com sua natureza.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2488"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2492",
+    "paragrafo_docx": 2492,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "MAGIA SIMPÁTICA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2492,
+        "tipo": "corpo",
+        "texto": "Quando possuir uma representação verdadeira de algo, você pode afetá-lo à distância através de pequenas correspondências entre a representação e o original. Quando desejar uma consequência significativa, pergunte ao Mestre: \n“O que esta ligação exigirá para suportar algo desta escala?” \nO Mestre dará de 1 a 3 condições:"
+      },
+      {
+        "paragrafo_docx": 2493,
+        "tipo": "opcao",
+        "texto": "maior proximidade;"
+      },
+      {
+        "paragrafo_docx": 2494,
+        "tipo": "opcao",
+        "texto": "uma representação mais íntima;"
+      },
+      {
+        "paragrafo_docx": 2495,
+        "tipo": "opcao",
+        "texto": "tempo de preparação;"
+      },
+      {
+        "paragrafo_docx": 2496,
+        "tipo": "opcao",
+        "texto": "material simbolicamente apropriado;"
+      },
+      {
+        "paragrafo_docx": 2497,
+        "tipo": "opcao",
+        "texto": "risco de a ligação funcionar nos dois sentidos;"
+      },
+      {
+        "paragrafo_docx": 2498,
+        "tipo": "opcao",
+        "texto": "participação de outra pessoa;"
+      },
+      {
+        "paragrafo_docx": 2499,
+        "tipo": "opcao",
+        "texto": "algo ser consumido ou destruído."
+      },
+      {
+        "paragrafo_docx": 2500,
+        "tipo": "continuacao",
+        "texto": "Quando cumprir as condições, aquilo que fizer à representação produz uma correspondência apropriada no original."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2493,
+        "texto": "maior proximidade;"
+      },
+      {
+        "paragrafo_docx": 2494,
+        "texto": "uma representação mais íntima;"
+      },
+      {
+        "paragrafo_docx": 2495,
+        "texto": "tempo de preparação;"
+      },
+      {
+        "paragrafo_docx": 2496,
+        "texto": "material simbolicamente apropriado;"
+      },
+      {
+        "paragrafo_docx": 2497,
+        "texto": "risco de a ligação funcionar nos dois sentidos;"
+      },
+      {
+        "paragrafo_docx": 2498,
+        "texto": "participação de outra pessoa;"
+      },
+      {
+        "paragrafo_docx": 2499,
+        "texto": "algo ser consumido ou destruído."
+      }
+    ],
+    "texto_original": "Quando possuir uma representação verdadeira de algo, você pode afetá-lo à distância através de pequenas correspondências entre a representação e o original. Quando desejar uma consequência significativa, pergunte ao Mestre: \n“O que esta ligação exigirá para suportar algo desta escala?” \nO Mestre dará de 1 a 3 condições:\nmaior proximidade;\numa representação mais íntima;\ntempo de preparação;\nmaterial simbolicamente apropriado;\nrisco de a ligação funcionar nos dois sentidos;\nparticipação de outra pessoa;\nalgo ser consumido ou destruído.\nQuando cumprir as condições, aquilo que fizer à representação produz uma correspondência apropriada no original.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2492"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2501",
+    "paragrafo_docx": 2501,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "CALDEIRÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2501,
+        "tipo": "corpo",
+        "texto": "Quando preparar algo durante horas usando ingredientes simbolicamente apropriados, diga o efeito desejado.\nO efeito deve poder ser incorporado àquilo que está sendo preparado: bebida, comida, unguento, fumaça, banho, tinta, veneno ou semelhante. O Mestre dirá o ingrediente impossível, raro ou moralmente inconveniente que falta."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando preparar algo durante horas usando ingredientes simbolicamente apropriados, diga o efeito desejado.\nO efeito deve poder ser incorporado àquilo que está sendo preparado: bebida, comida, unguento, fumaça, banho, tinta, veneno ou semelhante. O Mestre dirá o ingrediente impossível, raro ou moralmente inconveniente que falta.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2501"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2502",
+    "paragrafo_docx": 2502,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "OLHO GORDO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2502,
+        "tipo": "corpo",
+        "texto": "Quando alguém se vangloriar diante de você de algo que teme perder, diga como sua inveja, mau agouro ou ressentimento se manifesta sobre aquilo. Receba +1 constante quando agir diretamente para fazê-lo perder exatamente aquilo.\nVocê só pode manter um Olho Gordo por vez. Ele termina quando:"
+      },
+      {
+        "paragrafo_docx": 2503,
+        "tipo": "opcao",
+        "texto": "a pessoa perder aquilo;"
+      },
+      {
+        "paragrafo_docx": 2504,
+        "tipo": "opcao",
+        "texto": "você abandonar conscientemente a desgraça;"
+      },
+      {
+        "paragrafo_docx": 2505,
+        "tipo": "opcao",
+        "texto": "ou lançar Olho Gordo sobre outra pessoa."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2503,
+        "texto": "a pessoa perder aquilo;"
+      },
+      {
+        "paragrafo_docx": 2504,
+        "texto": "você abandonar conscientemente a desgraça;"
+      },
+      {
+        "paragrafo_docx": 2505,
+        "texto": "ou lançar Olho Gordo sobre outra pessoa."
+      }
+    ],
+    "texto_original": "Quando alguém se vangloriar diante de você de algo que teme perder, diga como sua inveja, mau agouro ou ressentimento se manifesta sobre aquilo. Receba +1 constante quando agir diretamente para fazê-lo perder exatamente aquilo.\nVocê só pode manter um Olho Gordo por vez. Ele termina quando:\na pessoa perder aquilo;\nvocê abandonar conscientemente a desgraça;\nou lançar Olho Gordo sobre outra pessoa.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2502"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2506",
+    "paragrafo_docx": 2506,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "CLÁUSULA OCULTA",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2506,
+        "tipo": "corpo",
+        "texto": "Quando seu Patrono estabelecer um preço, proibição, obrigação ou condição em termos concretos, pergunte ao Mestre:\n“O que exatamente estas palavras exigem de mim — e o que elas não exigem?”\nO Mestre responderá honestamente. Se explorar deliberadamente uma brecha real nos termos, você não quebrou aquele acordo. Seu Patrono pode considerar isso insolência, traição ou uma excelente demonstração de competência. Mas os termos continuam sendo os termos."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando seu Patrono estabelecer um preço, proibição, obrigação ou condição em termos concretos, pergunte ao Mestre:\n“O que exatamente estas palavras exigem de mim — e o que elas não exigem?”\nO Mestre responderá honestamente. Se explorar deliberadamente uma brecha real nos termos, você não quebrou aquele acordo. Seu Patrono pode considerar isso insolência, traição ou uma excelente demonstração de competência. Mas os termos continuam sendo os termos.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2506"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2508",
+    "paragrafo_docx": 2508,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "RENEGOCIAR OS TERMOS",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2508,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando seu Patrono estiver prestes a cobrar um preço ou Dívida ainda não cumprido, ofereça imediatamente algo diferente que possua valor real para ele. O Mestre escolherá:"
+      },
+      {
+        "paragrafo_docx": 2509,
+        "tipo": "opcao",
+        "texto": "o Patrono aceita a substituição;"
+      },
+      {
+        "paragrafo_docx": 2510,
+        "tipo": "opcao",
+        "texto": "aceita, mas acrescenta uma condição;"
+      },
+      {
+        "paragrafo_docx": 2511,
+        "tipo": "opcao",
+        "texto": "diga o que falta para que sua oferta seja considerada equivalente."
+      },
+      {
+        "paragrafo_docx": 2512,
+        "tipo": "continuacao",
+        "texto": "Se cumprir os novos termos, eles substituem os anteriores."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2509,
+        "texto": "o Patrono aceita a substituição;"
+      },
+      {
+        "paragrafo_docx": 2510,
+        "texto": "aceita, mas acrescenta uma condição;"
+      },
+      {
+        "paragrafo_docx": 2511,
+        "texto": "diga o que falta para que sua oferta seja considerada equivalente."
+      }
+    ],
+    "texto_original": "Uma vez por sessão, quando seu Patrono estiver prestes a cobrar um preço ou Dívida ainda não cumprido, ofereça imediatamente algo diferente que possua valor real para ele. O Mestre escolherá:\no Patrono aceita a substituição;\naceita, mas acrescenta uma condição;\ndiga o que falta para que sua oferta seja considerada equivalente.\nSe cumprir os novos termos, eles substituem os anteriores.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2508"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2513",
+    "paragrafo_docx": 2513,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "PAGAMENTO ANTECIPADO",
+    "requisito_literal": "Favor do Patrono",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2460",
+      "titulo_requerido": "FAVOR DO PATRONO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2513,
+        "tipo": "corpo",
+        "texto": "Quando cumprir voluntariamente um desejo de seu Patrono aceitando perda, perigo ou sacrifício real antes que ele peça, receba Favor 2 em vez de Favor 1. Você não pode utilizar este Movimento novamente enquanto possuir Favor."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando cumprir voluntariamente um desejo de seu Patrono aceitando perda, perigo ou sacrifício real antes que ele peça, receba Favor 2 em vez de Favor 1. Você não pode utilizar este Movimento novamente enquanto possuir Favor.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2513"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2514",
+    "paragrafo_docx": 2514,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "CRÉDITO SOBRENATURAL",
+    "requisito_literal": "A Dívida Cresce",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2465",
+      "titulo_requerido": "A DÍVIDA CRESCE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2514,
+        "tipo": "corpo",
+        "texto": "Quando marcar uma nova Dívida, você pode receber imediatamente também 1 Favor, respeitando seu novo máximo. Se fizer isso, essa Dívida torna-se Urgente. O Mestre a cobrará na próxima oportunidade significativa em que o Patrono puder fazê-lo. Quando o Patrono finalmente cobrá-la, ele não aceitará pagamento que represente apenas inconveniência, dinheiro fácil ou algo que você já pretendia fazer. A cobrança precisa exigir risco, perda, sacrifício ou mudança real da situação."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando marcar uma nova Dívida, você pode receber imediatamente também 1 Favor, respeitando seu novo máximo. Se fizer isso, essa Dívida torna-se Urgente. O Mestre a cobrará na próxima oportunidade significativa em que o Patrono puder fazê-lo. Quando o Patrono finalmente cobrá-la, ele não aceitará pagamento que represente apenas inconveniência, dinheiro fácil ou algo que você já pretendia fazer. A cobrança precisa exigir risco, perda, sacrifício ou mudança real da situação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2514"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2515",
+    "paragrafo_docx": 2515,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "FIADOR",
+    "requisito_literal": "A Dívida Cresce",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2465",
+      "titulo_requerido": "A DÍVIDA CRESCE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2515,
+        "tipo": "corpo",
+        "texto": "Quando outra pessoa aceitar conscientemente responder junto com você por uma nova obrigação perante seu Patrono, marque a Dívida normalmente e diga quem se tornou seu Fiador. \nEnquanto essa Dívida existir, o Patrono pode cobrar qualquer um dos dois. Se o Fiador cumprir integralmente a cobrança, apague a Dívida. Naturalmente, ele agora sabe exatamente com quem você costuma fazer negócios."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando outra pessoa aceitar conscientemente responder junto com você por uma nova obrigação perante seu Patrono, marque a Dívida normalmente e diga quem se tornou seu Fiador. \nEnquanto essa Dívida existir, o Patrono pode cobrar qualquer um dos dois. Se o Fiador cumprir integralmente a cobrança, apague a Dívida. Naturalmente, ele agora sabe exatamente com quem você costuma fazer negócios.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2515"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2516",
+    "paragrafo_docx": 2516,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "AUDIÊNCIA",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2516,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, realize o rito, gesto, sacrifício ou procedimento pelo qual seu Patrono aceita falar diretamente com você. Ele responde através de sua presença, sonho, emissário, reflexo, cadáver, fogo, voz distante ou outro meio coerente com sua natureza. Durante a Audiência, você pode Negociar diretamente com seu Patrono como se ele estivesse presente, mesmo que normalmente exista muito além do seu alcance. Isso não obriga seu Patrono a ser sincero, razoável ou misericordioso."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, realize o rito, gesto, sacrifício ou procedimento pelo qual seu Patrono aceita falar diretamente com você. Ele responde através de sua presença, sonho, emissário, reflexo, cadáver, fogo, voz distante ou outro meio coerente com sua natureza. Durante a Audiência, você pode Negociar diretamente com seu Patrono como se ele estivesse presente, mesmo que normalmente exista muito além do seu alcance. Isso não obriga seu Patrono a ser sincero, razoável ou misericordioso.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2516"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2517",
+    "paragrafo_docx": 2517,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "EU SEI O QUE ELE QUER",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2517,
+        "tipo": "corpo",
+        "texto": "Quando encontrar uma situação que ofereça uma oportunidade excepcional de avançar os interesses de seu Patrono, você percebe imediatamente que ele teria interesse nela. Pergunte: \n“O que meu Patrono desejaria que acontecesse aqui?” O Mestre responderá honestamente. Se fizer exatamente aquilo sem precisar receber ordem ou cobrança, isso conta normalmente para Favor do Patrono, caso possua o Movimento."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando encontrar uma situação que ofereça uma oportunidade excepcional de avançar os interesses de seu Patrono, você percebe imediatamente que ele teria interesse nela. Pergunte: \n“O que meu Patrono desejaria que acontecesse aqui?” O Mestre responderá honestamente. Se fizer exatamente aquilo sem precisar receber ordem ou cobrança, isso conta normalmente para Favor do Patrono, caso possua o Movimento.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2517"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2518",
+    "paragrafo_docx": 2518,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "LIVRO DAS SOMBRAS",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2518,
+        "tipo": "corpo",
+        "texto": "Seu Patrono lhe concedeu um livro, códice, conjunto de folhas, pele escrita ou outro registro que também consegue escrever de volta. Quando consultar o Livro sobre algo relacionado ao domínio, planos ou conhecimento de seu Patrono, pergunte uma coisa ao Mestre. O Livro lhe oferece uma informação verdadeira que seu Patrono deseja que você conheça. \nDepois, ele também escreve: “E isto é o que ele espera que você faça com essa informação.”\nA informação é verdadeira. A expectativa é problema seu."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Seu Patrono lhe concedeu um livro, códice, conjunto de folhas, pele escrita ou outro registro que também consegue escrever de volta. Quando consultar o Livro sobre algo relacionado ao domínio, planos ou conhecimento de seu Patrono, pergunte uma coisa ao Mestre. O Livro lhe oferece uma informação verdadeira que seu Patrono deseja que você conheça. \nDepois, ele também escreve: “E isto é o que ele espera que você faça com essa informação.”\nA informação é verdadeira. A expectativa é problema seu.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2518"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2519",
+    "paragrafo_docx": 2519,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "EMISSÁRIO DO PATRONO",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2519,
+        "tipo": "corpo",
+        "texto": "Seu Patrono lhe enviou uma pequena criatura sobrenatural como mensageiro, observador e intermediário. Estabeleça:"
+      },
+      {
+        "paragrafo_docx": 2520,
+        "tipo": "opcao",
+        "texto": "que forma ela possui;"
+      },
+      {
+        "paragrafo_docx": 2521,
+        "tipo": "opcao",
+        "texto": "uma capacidade sobrenatural coerente com o Patrono;"
+      },
+      {
+        "paragrafo_docx": 2522,
+        "tipo": "opcao",
+        "texto": "o que ela regularmente reporta sobre você;"
+      },
+      {
+        "paragrafo_docx": 2523,
+        "tipo": "opcao",
+        "texto": "uma coisa que se recusa a fazer."
+      },
+      {
+        "paragrafo_docx": 2524,
+        "tipo": "continuacao",
+        "texto": "Você pode conversar normalmente com o Emissário e seu Patrono pode falar através dele quando desejar. \nUma vez por cena, pergunte: “O que meu Patrono gostaria que eu percebesse aqui?”\nO Mestre responderá segundo aquilo que o Emissário realmente possa perceber ou compreender."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2520,
+        "texto": "que forma ela possui;"
+      },
+      {
+        "paragrafo_docx": 2521,
+        "texto": "uma capacidade sobrenatural coerente com o Patrono;"
+      },
+      {
+        "paragrafo_docx": 2522,
+        "texto": "o que ela regularmente reporta sobre você;"
+      },
+      {
+        "paragrafo_docx": 2523,
+        "texto": "uma coisa que se recusa a fazer."
+      }
+    ],
+    "texto_original": "Seu Patrono lhe enviou uma pequena criatura sobrenatural como mensageiro, observador e intermediário. Estabeleça:\nque forma ela possui;\numa capacidade sobrenatural coerente com o Patrono;\no que ela regularmente reporta sobre você;\numa coisa que se recusa a fazer.\nVocê pode conversar normalmente com o Emissário e seu Patrono pode falar através dele quando desejar. \nUma vez por cena, pergunte: “O que meu Patrono gostaria que eu percebesse aqui?”\nO Mestre responderá segundo aquilo que o Emissário realmente possa perceber ou compreender.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2519"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2525",
+    "paragrafo_docx": 2525,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "O PRESENTE TEM DENTES",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2525,
+        "tipo": "corpo",
+        "texto": "Quando seu Patrono lhe conceder através de Pacto um poder, transformação, objeto ou privilégio extraordinário que deveria ser temporário, você pode perguntar:\n“O que precisaria aceitar para tornar este presente parte permanente de mim?”\nO Mestre dirá um preço permanente ou obrigação recorrente coerente com o Patrono. Se aceitar, o presente permanece. Não marque Dívida por isso. O preço já é a dívida paga para sempre."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando seu Patrono lhe conceder através de Pacto um poder, transformação, objeto ou privilégio extraordinário que deveria ser temporário, você pode perguntar:\n“O que precisaria aceitar para tornar este presente parte permanente de mim?”\nO Mestre dirá um preço permanente ou obrigação recorrente coerente com o Patrono. Se aceitar, o presente permanece. Não marque Dívida por isso. O preço já é a dívida paga para sempre.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2525"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2527",
+    "paragrafo_docx": 2527,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "MAIS UMA INVOCAÇÃO",
+    "requisito_literal": "Invocador Místico",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2474",
+      "titulo_requerido": "INVOCADOR MÍSTICO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2527,
+        "tipo": "corpo",
+        "texto": "Sua compreensão da Rajada deixou de depender apenas das primeiras formas que seu Patrono lhe ensinou. Crie com o Mestre uma nova Invocação para Rajada Mística. Ela deve alterar uma propriedade específica da Rajada, não conceder uma prática mágica inteira. Estabeleçam também uma limitação, custo ou condição apropriada se ela ultrapassar claramente a escala das Invocações existentes."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Sua compreensão da Rajada deixou de depender apenas das primeiras formas que seu Patrono lhe ensinou. Crie com o Mestre uma nova Invocação para Rajada Mística. Ela deve alterar uma propriedade específica da Rajada, não conceder uma prática mágica inteira. Estabeleçam também uma limitação, custo ou condição apropriada se ela ultrapassar claramente a escala das Invocações existentes.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2527"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2528",
+    "paragrafo_docx": 2528,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "DUAS PALAVRAS AO MESMO TEMPO",
+    "requisito_literal": "Invocador Místico",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2474",
+      "titulo_requerido": "INVOCADOR MÍSTICO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2528,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando utilizar Rajada Mística, você pode ativar duas Invocações diferentes no mesmo ataque. Se ambas adicionarem consequências ou riscos, todos eles se aplicam."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando utilizar Rajada Mística, você pode ativar duas Invocações diferentes no mesmo ataque. Se ambas adicionarem consequências ou riscos, todos eles se aplicam.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2528"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2529",
+    "paragrafo_docx": 2529,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "RAJADA INESCAPÁVEL",
+    "requisito_literal": "Rajada Mística",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2467",
+      "titulo_requerido": "RAJADA MÍSTICA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2529,
+        "tipo": "corpo",
+        "texto": "Quando uma Rajada utilizando a Invocação Maldita já tiver atingido uma criatura nesta cena e você utilizar a assinatura que seu Patrono deixou nela para persegui-la, aumente sua Periculosidade em um grau. Enquanto essa marca permanecer relevante, ocultação, disfarce ou invisibilidade comum não bastam para fazer você perder completamente sua posição. Você ainda pode precisar superar cobertura, distância, barreiras ou movimento. Mas sabe onde a marca está."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando uma Rajada utilizando a Invocação Maldita já tiver atingido uma criatura nesta cena e você utilizar a assinatura que seu Patrono deixou nela para persegui-la, aumente sua Periculosidade em um grau. Enquanto essa marca permanecer relevante, ocultação, disfarce ou invisibilidade comum não bastam para fazer você perder completamente sua posição. Você ainda pode precisar superar cobertura, distância, barreiras ou movimento. Mas sabe onde a marca está.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2529"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2530",
+    "paragrafo_docx": 2530,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "EXECUTAR A CLÁUSULA",
+    "requisito_literal": "Arma do Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2482",
+      "titulo_requerido": "ARMA DO PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2530,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando atingir com sua Arma do Pacto uma criatura diretamente sujeita ao seu Mandato, você pode gastar 2 Domínios para declarar: “A cobrança chegou.” \nEscolha uma obrigação, proibição, dívida ou transgressão que seu Mandato realmente possa exigir dela. A criatura precisa escolher:"
+      },
+      {
+        "paragrafo_docx": 2531,
+        "tipo": "opcao",
+        "texto": "render-se imediatamente à vontade do seu Patrono;"
+      },
+      {
+        "paragrafo_docx": 2532,
+        "tipo": "opcao",
+        "texto": "recusar conscientemente e sofrer uma consequência sobrenatural apropriada à autoridade do Patrono."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2531,
+        "texto": "render-se imediatamente à vontade do seu Patrono;"
+      },
+      {
+        "paragrafo_docx": 2532,
+        "texto": "recusar conscientemente e sofrer uma consequência sobrenatural apropriada à autoridade do Patrono."
+      }
+    ],
+    "texto_original": "Uma vez por cena, quando atingir com sua Arma do Pacto uma criatura diretamente sujeita ao seu Mandato, você pode gastar 2 Domínios para declarar: “A cobrança chegou.” \nEscolha uma obrigação, proibição, dívida ou transgressão que seu Mandato realmente possa exigir dela. A criatura precisa escolher:\nrender-se imediatamente à vontade do seu Patrono;\nrecusar conscientemente e sofrer uma consequência sobrenatural apropriada à autoridade do Patrono.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2530"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2533",
+    "paragrafo_docx": 2533,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "A ARMA SABE QUEM DEVE",
+    "requisito_literal": "Arma do Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2482",
+      "titulo_requerido": "ARMA DO PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2533,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando entrar num lugar carregando sua Arma do Pacto e houver alguém próximo realmente sujeito ao Mandato dela, a arma reage. Diga como: vibração, sangue, voz, calor, peso, fome, reflexo, runas ou outra manifestação. \nVocê sabe que alguém aqui pode ser legitimamente cobrado, mas não necessariamente quem. Quando descobrir quem é, receba +1 Domínio, até o máximo de 3."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando entrar num lugar carregando sua Arma do Pacto e houver alguém próximo realmente sujeito ao Mandato dela, a arma reage. Diga como: vibração, sangue, voz, calor, peso, fome, reflexo, runas ou outra manifestação. \nVocê sabe que alguém aqui pode ser legitimamente cobrado, mas não necessariamente quem. Quando descobrir quem é, receba +1 Domínio, até o máximo de 3.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2533"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2534",
+    "paragrafo_docx": 2534,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "MANDATO MAIOR",
+    "requisito_literal": "Arma do Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2482",
+      "titulo_requerido": "ARMA DO PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2534,
+        "tipo": "corpo",
+        "texto": "Escolha um segundo tipo de Mandato que seu Patrono reconheça como legítimo para sua arma. Além disso, quando um Mandato envolver diretamente uma organização, linhagem, ordem ou pacto coletivo, sua arma pode reconhecer indivíduos realmente sujeitos àquela obrigação sem exigir que cada um tenha cometido pessoalmente a transgressão original. \nA responsabilidade precisa existir de verdade na ficção."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha um segundo tipo de Mandato que seu Patrono reconheça como legítimo para sua arma. Além disso, quando um Mandato envolver diretamente uma organização, linhagem, ordem ou pacto coletivo, sua arma pode reconhecer indivíduos realmente sujeitos àquela obrigação sem exigir que cada um tenha cometido pessoalmente a transgressão original. \nA responsabilidade precisa existir de verdade na ficção.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2534"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2535",
+    "paragrafo_docx": 2535,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "MALDIÇÃO ADORMECIDA",
+    "requisito_literal": "Maldição",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2488",
+      "titulo_requerido": "MALDIÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2535,
+        "tipo": "corpo",
+        "texto": "Quando lançar uma Maldição, você pode fazê-la permanecer dormente até que uma condição futura concreta aconteça.\nDeclare a condição. A Maldição consegue reconhecer acontecimentos objetivos relacionados à sua própria natureza: alguém pronunciar um nome, atravessar uma porta, quebrar uma promessa, tocar determinado objeto, receber determinado título ou semelhante. Quando acontecer, a Maldição desperta sem exigir nova ação sua. Até lá, seus efeitos não se manifestam."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando lançar uma Maldição, você pode fazê-la permanecer dormente até que uma condição futura concreta aconteça.\nDeclare a condição. A Maldição consegue reconhecer acontecimentos objetivos relacionados à sua própria natureza: alguém pronunciar um nome, atravessar uma porta, quebrar uma promessa, tocar determinado objeto, receber determinado título ou semelhante. Quando acontecer, a Maldição desperta sem exigir nova ação sua. Até lá, seus efeitos não se manifestam.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2535"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2536",
+    "paragrafo_docx": 2536,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "SELO DA PALAVRA",
+    "requisito_literal": "Maldição",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2488",
+      "titulo_requerido": "MALDIÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2536,
+        "tipo": "corpo",
+        "texto": "Quando alguém fizer diante de você uma promessa voluntária cuja obrigação compreenda, você pode aceitar formalmente a palavra e declarar uma Maldição apropriada à quebra dela. Enquanto a promessa for mantida, a Maldição permanece dormente. \nSe a pessoa quebrá-la conscientemente, a Maldição encontra o alvo imediatamente sem rolagem. O Mestre ainda estabelece normalmente a condição capaz de quebrar a Maldição."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém fizer diante de você uma promessa voluntária cuja obrigação compreenda, você pode aceitar formalmente a palavra e declarar uma Maldição apropriada à quebra dela. Enquanto a promessa for mantida, a Maldição permanece dormente. \nSe a pessoa quebrá-la conscientemente, a Maldição encontra o alvo imediatamente sem rolagem. O Mestre ainda estabelece normalmente a condição capaz de quebrar a Maldição.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2536"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2537",
+    "paragrafo_docx": 2537,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "TRÊS VEZES SEU",
+    "requisito_literal": "Maldição",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2488",
+      "titulo_requerido": "MALDIÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2537,
+        "tipo": "corpo",
+        "texto": "Quando possuir três representações verdadeiras e diferentes do mesmo alvo — por exemplo nome, sangue e objeto íntimo — diga como as três formas de ligação se completam. Ao lançar Maldição sobre ele, em um 7–9 trate o resultado como se tivesse escolhido as duas opções do Movimento. Depois da Maldição ser estabelecida, uma das três representações é consumida, destruída ou alterada de maneira irreversível."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando possuir três representações verdadeiras e diferentes do mesmo alvo — por exemplo nome, sangue e objeto íntimo — diga como as três formas de ligação se completam. Ao lançar Maldição sobre ele, em um 7–9 trate o resultado como se tivesse escolhido as duas opções do Movimento. Depois da Maldição ser estabelecida, uma das três representações é consumida, destruída ou alterada de maneira irreversível.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2537"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2538",
+    "paragrafo_docx": 2538,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "MALDIÇÃO CONTAGIOSA",
+    "requisito_literal": "Maldição",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2488",
+      "titulo_requerido": "MALDIÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2538,
+        "tipo": "corpo",
+        "texto": "Quando alguém voluntariamente assumir aquilo que a Maldição reconhece como a posição, posse ou obrigação do alvo original, você pode permitir que a Maldição passe para essa pessoa. Exemplos:"
+      },
+      {
+        "paragrafo_docx": 2539,
+        "tipo": "opcao",
+        "texto": "aceitar a coroa amaldiçoada;"
+      },
+      {
+        "paragrafo_docx": 2540,
+        "tipo": "opcao",
+        "texto": "herdar conscientemente uma dívida;"
+      },
+      {
+        "paragrafo_docx": 2541,
+        "tipo": "opcao",
+        "texto": "tomar para si o nome proibido;"
+      },
+      {
+        "paragrafo_docx": 2542,
+        "tipo": "opcao",
+        "texto": "reivindicar a casa condenada;"
+      },
+      {
+        "paragrafo_docx": 2543,
+        "tipo": "opcao",
+        "texto": "assumir formalmente a função que a Maldição perseguia."
+      },
+      {
+        "paragrafo_docx": 2544,
+        "tipo": "continuacao",
+        "texto": "O alvo original deixa de sofrer a Maldição. O novo alvo passa a sofrer. A condição de quebra permanece a mesma, salvo se a própria transferência tornar isso impossível."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2539,
+        "texto": "aceitar a coroa amaldiçoada;"
+      },
+      {
+        "paragrafo_docx": 2540,
+        "texto": "herdar conscientemente uma dívida;"
+      },
+      {
+        "paragrafo_docx": 2541,
+        "texto": "tomar para si o nome proibido;"
+      },
+      {
+        "paragrafo_docx": 2542,
+        "texto": "reivindicar a casa condenada;"
+      },
+      {
+        "paragrafo_docx": 2543,
+        "texto": "assumir formalmente a função que a Maldição perseguia."
+      }
+    ],
+    "texto_original": "Quando alguém voluntariamente assumir aquilo que a Maldição reconhece como a posição, posse ou obrigação do alvo original, você pode permitir que a Maldição passe para essa pessoa. Exemplos:\naceitar a coroa amaldiçoada;\nherdar conscientemente uma dívida;\ntomar para si o nome proibido;\nreivindicar a casa condenada;\nassumir formalmente a função que a Maldição perseguia.\nO alvo original deixa de sofrer a Maldição. O novo alvo passa a sofrer. A condição de quebra permanece a mesma, salvo se a própria transferência tornar isso impossível.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2538"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2545",
+    "paragrafo_docx": 2545,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "NÃO TOQUE NISSO",
+    "requisito_literal": "Maldição",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2488",
+      "titulo_requerido": "MALDIÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2545,
+        "tipo": "corpo",
+        "texto": "Quando alguém que não seja o alvo tentar deliberadamente remover, quebrar ou manipular uma Maldição sua sem compreender sua condição de quebra, você percebe que alguém a está perturbando. Pergunte ao Mestre:\n“O que a Maldição pode alcançar nesta pessoa através do contato?” O Mestre dirá uma consequência possível. \nVocê decide se a Maldição reage ou permanece quieta. Ela não abandona o alvo original por isso."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém que não seja o alvo tentar deliberadamente remover, quebrar ou manipular uma Maldição sua sem compreender sua condição de quebra, você percebe que alguém a está perturbando. Pergunte ao Mestre:\n“O que a Maldição pode alcançar nesta pessoa através do contato?” O Mestre dirá uma consequência possível. \nVocê decide se a Maldição reage ou permanece quieta. Ela não abandona o alvo original por isso.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2545"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2546",
+    "paragrafo_docx": 2546,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "O FIO PUXA DOS DOIS LADOS",
+    "requisito_literal": "Magia Simpática",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2492",
+      "titulo_requerido": "MAGIA SIMPÁTICA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2546,
+        "tipo": "corpo",
+        "texto": "Quando alguém agir magicamente sobre você através de uma ligação, representação ou correspondência que também o conecte a essa pessoa, você percebe imediatamente que existe caminho de volta. Pergunte:\n“O que eu precisaria tocar, romper ou alterar para afetá-la através desta mesma ligação?”\nO Mestre responderá honestamente."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém agir magicamente sobre você através de uma ligação, representação ou correspondência que também o conecte a essa pessoa, você percebe imediatamente que existe caminho de volta. Pergunte:\n“O que eu precisaria tocar, romper ou alterar para afetá-la através desta mesma ligação?”\nO Mestre responderá honestamente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2546"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2547",
+    "paragrafo_docx": 2547,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "A CASA TAMBÉM TEM CORPO",
+    "requisito_literal": "Magia Simpática",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2492",
+      "titulo_requerido": "MAGIA SIMPÁTICA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2547,
+        "tipo": "corpo",
+        "texto": "Você pode construir uma representação verdadeira de um lugar quando possuir uma parte fisicamente ou simbolicamente ligada a ele: pedra da fundação, terra, chave, madeira, planta fiel, objeto estrutural ou semelhante. \nPara Magia Simpática, trate o lugar como um alvo representado. Você pode afetar propriedades do próprio lugar, não automaticamente todas as criaturas que estejam dentro dele."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Você pode construir uma representação verdadeira de um lugar quando possuir uma parte fisicamente ou simbolicamente ligada a ele: pedra da fundação, terra, chave, madeira, planta fiel, objeto estrutural ou semelhante. \nPara Magia Simpática, trate o lugar como um alvo representado. Você pode afetar propriedades do próprio lugar, não automaticamente todas as criaturas que estejam dentro dele.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2547"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2548",
+    "paragrafo_docx": 2548,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "ESPELHO SIMPÁTICO",
+    "requisito_literal": "Magia Simpática",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2492",
+      "titulo_requerido": "MAGIA SIMPÁTICA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2548,
+        "tipo": "corpo",
+        "texto": "Quando cumprir todas as condições exigidas para uma Magia Simpática significativa, você pode deliberadamente fazer a ligação permanecer aberta nos dois sentidos. Enquanto permanecer:"
+      },
+      {
+        "paragrafo_docx": 2549,
+        "tipo": "opcao",
+        "texto": "efeitos mágicos podem viajar de um lado para o outro à sua escolha;"
+      },
+      {
+        "paragrafo_docx": 2550,
+        "tipo": "opcao",
+        "texto": "você percebe quando alguma coisa importante atravessa a ligação;"
+      },
+      {
+        "paragrafo_docx": 2551,
+        "tipo": "opcao",
+        "texto": "alguém que descubra o vínculo pode tentar utilizá-lo contra você."
+      },
+      {
+        "paragrafo_docx": 2552,
+        "tipo": "continuacao",
+        "texto": "Você pode romper voluntariamente o Espelho se ainda tiver acesso à representação que o sustenta."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2549,
+        "texto": "efeitos mágicos podem viajar de um lado para o outro à sua escolha;"
+      },
+      {
+        "paragrafo_docx": 2550,
+        "texto": "você percebe quando alguma coisa importante atravessa a ligação;"
+      },
+      {
+        "paragrafo_docx": 2551,
+        "texto": "alguém que descubra o vínculo pode tentar utilizá-lo contra você."
+      }
+    ],
+    "texto_original": "Quando cumprir todas as condições exigidas para uma Magia Simpática significativa, você pode deliberadamente fazer a ligação permanecer aberta nos dois sentidos. Enquanto permanecer:\nefeitos mágicos podem viajar de um lado para o outro à sua escolha;\nvocê percebe quando alguma coisa importante atravessa a ligação;\nalguém que descubra o vínculo pode tentar utilizá-lo contra você.\nVocê pode romper voluntariamente o Espelho se ainda tiver acesso à representação que o sustenta.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2548"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2553",
+    "paragrafo_docx": 2553,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "POTE DE PROBLEMAS",
+    "requisito_literal": "Caldeirão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2501",
+      "titulo_requerido": "CALDEIRÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2553,
+        "tipo": "corpo",
+        "texto": "Quando conseguir através de sua bruxaria remover, suspender ou extrair temporariamente uma Maldição, mau agouro, influência espiritual ou outra condição sobrenatural, você pode colocá-la num recipiente preparado no Caldeirão.\nEnquanto permanecer fechado e íntegro, aquilo fica contido. Se o recipiente for aberto, quebrado ou deixar de sustentar o efeito, o problema procura imediatamente um lugar apropriado para existir. \nVocê não o destruiu. Você apenas descobriu onde guardar."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando conseguir através de sua bruxaria remover, suspender ou extrair temporariamente uma Maldição, mau agouro, influência espiritual ou outra condição sobrenatural, você pode colocá-la num recipiente preparado no Caldeirão.\nEnquanto permanecer fechado e íntegro, aquilo fica contido. Se o recipiente for aberto, quebrado ou deixar de sustentar o efeito, o problema procura imediatamente um lugar apropriado para existir. \nVocê não o destruiu. Você apenas descobriu onde guardar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2553"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2554",
+    "paragrafo_docx": 2554,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "O ÚLTIMO INGREDIENTE É VOCÊ",
+    "requisito_literal": "Caldeirão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2501",
+      "titulo_requerido": "CALDEIRÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2554,
+        "tipo": "corpo",
+        "texto": "Quando faltar à sua preparação um ingrediente que carregue determinada propriedade simbólica, você pode oferecer algo de si mesmo que realmente possua essa qualidade: sangue, memória, voz, sono, sombra, nome, beleza, força, sentimento ou outra parte significativa. O Mestre dirá como aquela coisa fica diminuída, ausente ou alterada em você enquanto fizer parte da preparação. Se aceitar, você conta como fornecendo o ingrediente. Quando o efeito terminar ou aquilo for recuperado de maneira apropriada, a parte sacrificada pode retornar."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando faltar à sua preparação um ingrediente que carregue determinada propriedade simbólica, você pode oferecer algo de si mesmo que realmente possua essa qualidade: sangue, memória, voz, sono, sombra, nome, beleza, força, sentimento ou outra parte significativa. O Mestre dirá como aquela coisa fica diminuída, ausente ou alterada em você enquanto fizer parte da preparação. Se aceitar, você conta como fornecendo o ingrediente. Quando o efeito terminar ou aquilo for recuperado de maneira apropriada, a parte sacrificada pode retornar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2554"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2555",
+    "paragrafo_docx": 2555,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "O MAU-OLHADO CRIA RAÍZES",
+    "requisito_literal": "Olho Gordo",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2502",
+      "titulo_requerido": "OLHO GORDO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2555,
+        "tipo": "corpo",
+        "texto": "Quando a pessoa sob seu Olho Gordo preservar aquilo que teme perder às custas de outra coisa importante, você percebe. Pergunte: “O que ela acabou de sacrificar para continuar segurando isso?” Receba +1 adiante quando explorar diretamente essa perda."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando a pessoa sob seu Olho Gordo preservar aquilo que teme perder às custas de outra coisa importante, você percebe. Pergunte: “O que ela acabou de sacrificar para continuar segurando isso?” Receba +1 adiante quando explorar diretamente essa perda.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2555"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2556",
+    "paragrafo_docx": 2556,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "NÃO ERA SOBRE VOCÊ",
+    "requisito_literal": "Olho Gordo",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2502",
+      "titulo_requerido": "OLHO GORDO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2556,
+        "tipo": "corpo",
+        "texto": "Quando seu Olho Gordo estiver ativo e outra pessoa tomar para si exatamente aquilo que o alvo temia perder, você pode transferir o Olho Gordo para o novo possuidor. Diga como a desgraça reconhece que a inveja acompanhava a coisa, não a pessoa. Seu +1 constante passa a valer contra o novo alvo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando seu Olho Gordo estiver ativo e outra pessoa tomar para si exatamente aquilo que o alvo temia perder, você pode transferir o Olho Gordo para o novo possuidor. Diga como a desgraça reconhece que a inveja acompanhava a coisa, não a pessoa. Seu +1 constante passa a valer contra o novo alvo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2556"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2557",
+    "paragrafo_docx": 2557,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "INVEJA ALIMENTA A DESGRAÇA",
+    "requisito_literal": "Olho Gordo",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2502",
+      "titulo_requerido": "OLHO GORDO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2557,
+        "tipo": "corpo",
+        "texto": "Quando você próprio abrir mão de uma oportunidade concreta de obter aquilo que inveja para continuar desejando que o alvo o perca, marque 1 XP. Além disso, receba 1 Preparo para agir diretamente sobre a queda daquilo que amaldiçoou. Uma vez por sessão."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando você próprio abrir mão de uma oportunidade concreta de obter aquilo que inveja para continuar desejando que o alvo o perca, marque 1 XP. Além disso, receba 1 Preparo para agir diretamente sobre a queda daquilo que amaldiçoou. Uma vez por sessão.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2557"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2558",
+    "paragrafo_docx": 2558,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "LEI DA HOSPITALIDADE",
+    "requisito_literal": "Arquifada",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2476",
+      "titulo_requerido": "ARQUIFADA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2558,
+        "tipo": "corpo",
+        "texto": "Quando você ou alguém que reconheça a autoridade feérica de seu Patrono oferecer e aceitar formalmente hospitalidade, declare os limites da casa e quem é anfitrião e hóspede. Enquanto nenhum deles quebrar primeiro:"
+      },
+      {
+        "paragrafo_docx": 2559,
+        "tipo": "opcao",
+        "texto": "o hóspede precisa superar a força do acordo para causar deliberadamente violência ao anfitrião dentro da casa;"
+      },
+      {
+        "paragrafo_docx": 2560,
+        "tipo": "opcao",
+        "texto": "o anfitrião precisa fazer o mesmo para entregar deliberadamente o hóspede aos inimigos;"
+      },
+      {
+        "paragrafo_docx": 2561,
+        "tipo": "opcao",
+        "texto": "ambos percebem imediatamente quando o outro viola a hospitalidade."
+      },
+      {
+        "paragrafo_docx": 2562,
+        "tipo": "continuacao",
+        "texto": "Poderes capazes de desafiar leis feéricas podem enfrentar essa autoridade normalmente."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2559,
+        "texto": "o hóspede precisa superar a força do acordo para causar deliberadamente violência ao anfitrião dentro da casa;"
+      },
+      {
+        "paragrafo_docx": 2560,
+        "texto": "o anfitrião precisa fazer o mesmo para entregar deliberadamente o hóspede aos inimigos;"
+      },
+      {
+        "paragrafo_docx": 2561,
+        "texto": "ambos percebem imediatamente quando o outro viola a hospitalidade."
+      }
+    ],
+    "texto_original": "Quando você ou alguém que reconheça a autoridade feérica de seu Patrono oferecer e aceitar formalmente hospitalidade, declare os limites da casa e quem é anfitrião e hóspede. Enquanto nenhum deles quebrar primeiro:\no hóspede precisa superar a força do acordo para causar deliberadamente violência ao anfitrião dentro da casa;\no anfitrião precisa fazer o mesmo para entregar deliberadamente o hóspede aos inimigos;\nambos percebem imediatamente quando o outro viola a hospitalidade.\nPoderes capazes de desafiar leis feéricas podem enfrentar essa autoridade normalmente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2558"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2563",
+    "paragrafo_docx": 2563,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "PALAVRAS NÃO SÃO SÓ PALAVRAS",
+    "requisito_literal": "Arquifada",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2476",
+      "titulo_requerido": "ARQUIFADA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2563,
+        "tipo": "corpo",
+        "texto": "Quando alguém lhe der agradecimento, convite, permissão, nome ou promessa de maneira voluntária e você aceitá-lo formalmente, aquilo passa a possuir peso feérico. Pergunte ao Mestre:\n“O que exatamente esta pessoa acabou de me conceder sem perceber completamente?”\nA resposta precisa nascer do significado real daquilo que foi dito. Você não inventa uma concessão sem relação com as palavras."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém lhe der agradecimento, convite, permissão, nome ou promessa de maneira voluntária e você aceitá-lo formalmente, aquilo passa a possuir peso feérico. Pergunte ao Mestre:\n“O que exatamente esta pessoa acabou de me conceder sem perceber completamente?”\nA resposta precisa nascer do significado real daquilo que foi dito. Você não inventa uma concessão sem relação com as palavras.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2563"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2565",
+    "paragrafo_docx": 2565,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "A VERDADE NÃO CABE AQUI",
+    "requisito_literal": "Grande Antigo",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2477",
+      "titulo_requerido": "GRANDE ANTIGO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2565,
+        "tipo": "corpo",
+        "texto": "Quando uma verdade recebida através de Grande Antigo for impossível de explicar adequadamente através de linguagem comum, você pode transmiti-la diretamente a outra criatura que aceite ouvir sua descrição. Ela compreende o suficiente para saber que aquilo é verdadeiro. Depois escolha:"
+      },
+      {
+        "paragrafo_docx": 2566,
+        "tipo": "opcao",
+        "texto": "ela fica Confusa;"
+      },
+      {
+        "paragrafo_docx": 2567,
+        "tipo": "opcao",
+        "texto": "ela percebe alguma coisa observando vocês através da mesma verdade;"
+      },
+      {
+        "paragrafo_docx": 2568,
+        "tipo": "opcao",
+        "texto": "você perde temporariamente a capacidade de explicar alguma coisa comum relacionada àquilo."
+      },
+      {
+        "paragrafo_docx": 2569,
+        "tipo": "continuacao",
+        "texto": "Conhecimento incompreensível continua custando alguma coisa."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2566,
+        "texto": "ela fica Confusa;"
+      },
+      {
+        "paragrafo_docx": 2567,
+        "texto": "ela percebe alguma coisa observando vocês através da mesma verdade;"
+      },
+      {
+        "paragrafo_docx": 2568,
+        "texto": "você perde temporariamente a capacidade de explicar alguma coisa comum relacionada àquilo."
+      }
+    ],
+    "texto_original": "Quando uma verdade recebida através de Grande Antigo for impossível de explicar adequadamente através de linguagem comum, você pode transmiti-la diretamente a outra criatura que aceite ouvir sua descrição. Ela compreende o suficiente para saber que aquilo é verdadeiro. Depois escolha:\nela fica Confusa;\nela percebe alguma coisa observando vocês através da mesma verdade;\nvocê perde temporariamente a capacidade de explicar alguma coisa comum relacionada àquilo.\nConhecimento incompreensível continua custando alguma coisa.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2565"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2570",
+    "paragrafo_docx": 2570,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "OLHAR DE FORA",
+    "requisito_literal": "Grande Antigo",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2477",
+      "titulo_requerido": "GRANDE ANTIGO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2570,
+        "tipo": "corpo",
+        "texto": "Quando confrontar uma realidade, criatura ou fenômeno que não deveria fazer sentido para uma mente mortal, pergunte:\n“Que parte disto só parece impossível porque estou olhando como uma pessoa?”\nO Mestre responderá através da perspectiva incompreensível à qual seu Patrono lhe deu acesso.\nReceba +1 adiante quando agir diretamente segundo essa resposta."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando confrontar uma realidade, criatura ou fenômeno que não deveria fazer sentido para uma mente mortal, pergunte:\n“Que parte disto só parece impossível porque estou olhando como uma pessoa?”\nO Mestre responderá através da perspectiva incompreensível à qual seu Patrono lhe deu acesso.\nReceba +1 adiante quando agir diretamente segundo essa resposta.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2570"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2571",
+    "paragrafo_docx": 2571,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "UM INSTANTE NA CASA DELE",
+    "requisito_literal": "Pacto",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2454",
+      "titulo_requerido": "PACTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2571,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando atingir diretamente uma criatura hostil através de um poder concedido por seu Patrono, você pode permitir que ele a arraste por alguns instantes para seu domínio, presença, sonho, prisão, reino ou equivalente.\nA criatura desaparece da cena. Quando retorna, pergunte: “O que meu Patrono fez questão de mostrar a ela?”\nO Mestre responderá. Aquilo que viu é real e a criatura não consegue simplesmente agir como se a experiência não tivesse significado nada. O efeito exato depende daquilo que encontrou."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando atingir diretamente uma criatura hostil através de um poder concedido por seu Patrono, você pode permitir que ele a arraste por alguns instantes para seu domínio, presença, sonho, prisão, reino ou equivalente.\nA criatura desaparece da cena. Quando retorna, pergunte: “O que meu Patrono fez questão de mostrar a ela?”\nO Mestre responderá. Aquilo que viu é real e a criatura não consegue simplesmente agir como se a experiência não tivesse significado nada. O efeito exato depende daquilo que encontrou.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2571"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2572",
+    "paragrafo_docx": 2572,
+    "grupo": "BRUXO",
+    "categoria": "classe",
+    "titulo": "SABÁ",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2572,
+        "tipo": "corpo",
+        "texto": "Quando três ou mais praticantes voluntários de magia, incluindo você, se reunirem para realizar um rito e cada um oferecer algo que represente sua própria tradição, diga qual Movimento, magia ou efeito um dos participantes está conduzindo. Todos podem contribuir para o rito mesmo que suas tradições normalmente não fossem compatíveis. \nDiga o que vocês colocam em risco coletivamente e escolha 1:"
+      },
+      {
+        "paragrafo_docx": 2573,
+        "tipo": "opcao",
+        "texto": "aumente em dois graus a escala, alcance ou duração do resultado;"
+      },
+      {
+        "paragrafo_docx": 2574,
+        "tipo": "opcao",
+        "texto": "considere, na quantidade de praticantes, cumprida uma condição mais exigente;"
+      },
+      {
+        "paragrafo_docx": 2575,
+        "tipo": "opcao",
+        "texto": "faça o efeito alcançar todos os participantes voluntários quando isso fizer sentido;"
+      },
+      {
+        "paragrafo_docx": 2576,
+        "tipo": "opcao",
+        "texto": "dívida entre os participantes dispostos uma consequência que normalmente atingiria apenas quem conduz o rito."
+      },
+      {
+        "paragrafo_docx": 2577,
+        "tipo": "continuacao",
+        "texto": "Qualquer Dívida, atenção sobrenatural, Maldição, obrigação ou consequência vinculante criada pelo rito pode reconhecer todos que participaram conscientemente."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2573,
+        "texto": "aumente em dois graus a escala, alcance ou duração do resultado;"
+      },
+      {
+        "paragrafo_docx": 2574,
+        "texto": "considere, na quantidade de praticantes, cumprida uma condição mais exigente;"
+      },
+      {
+        "paragrafo_docx": 2575,
+        "texto": "faça o efeito alcançar todos os participantes voluntários quando isso fizer sentido;"
+      },
+      {
+        "paragrafo_docx": 2576,
+        "texto": "dívida entre os participantes dispostos uma consequência que normalmente atingiria apenas quem conduz o rito."
+      }
+    ],
+    "texto_original": "Quando três ou mais praticantes voluntários de magia, incluindo você, se reunirem para realizar um rito e cada um oferecer algo que represente sua própria tradição, diga qual Movimento, magia ou efeito um dos participantes está conduzindo. Todos podem contribuir para o rito mesmo que suas tradições normalmente não fossem compatíveis. \nDiga o que vocês colocam em risco coletivamente e escolha 1:\naumente em dois graus a escala, alcance ou duração do resultado;\nconsidere, na quantidade de praticantes, cumprida uma condição mais exigente;\nfaça o efeito alcançar todos os participantes voluntários quando isso fizer sentido;\ndívida entre os participantes dispostos uma consequência que normalmente atingiria apenas quem conduz o rito.\nQualquer Dívida, atenção sobrenatural, Maldição, obrigação ou consequência vinculante criada pelo rito pode reconhecer todos que participaram conscientemente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2572"
+  }
+]

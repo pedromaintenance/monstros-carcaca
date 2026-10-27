@@ -1,0 +1,589 @@
+{
+  "by_titulo": {
+    "A ARMA SABE QUEM DEVE": [
+      "movimento-classe:paragrafo-2533"
+    ],
+    "A CASA TAMBÉM TEM CORPO": [
+      "movimento-classe:paragrafo-2547"
+    ],
+    "A DÍVIDA CRESCE": [
+      "movimento-classe:paragrafo-2465"
+    ],
+    "A DÍVIDA NÃO MORRE COMIGO": [
+      "movimento-classe:paragrafo-2466"
+    ],
+    "A VERDADE NÃO CABE AQUI": [
+      "movimento-classe:paragrafo-2565"
+    ],
+    "ARMA DO PACTO": [
+      "movimento-classe:paragrafo-2482"
+    ],
+    "ARQUIFADA": [
+      "movimento-classe:paragrafo-2476"
+    ],
+    "AUDIÊNCIA": [
+      "movimento-classe:paragrafo-2516"
+    ],
+    "CALDEIRÃO": [
+      "movimento-classe:paragrafo-2501"
+    ],
+    "CLÁUSULA OCULTA": [
+      "movimento-classe:paragrafo-2506"
+    ],
+    "CRÉDITO SOBRENATURAL": [
+      "movimento-classe:paragrafo-2514"
+    ],
+    "DUAS PALAVRAS AO MESMO TEMPO": [
+      "movimento-classe:paragrafo-2528"
+    ],
+    "EMISSÁRIO DO PATRONO": [
+      "movimento-classe:paragrafo-2519"
+    ],
+    "ESPELHO SIMPÁTICO": [
+      "movimento-classe:paragrafo-2548"
+    ],
+    "EU SEI O QUE ELE QUER": [
+      "movimento-classe:paragrafo-2517"
+    ],
+    "EXECUTAR A CLÁUSULA": [
+      "movimento-classe:paragrafo-2530"
+    ],
+    "FAVOR DO PATRONO": [
+      "movimento-classe:paragrafo-2460"
+    ],
+    "FIADOR": [
+      "movimento-classe:paragrafo-2515"
+    ],
+    "GRANDE ANTIGO": [
+      "movimento-classe:paragrafo-2477"
+    ],
+    "INVEJA ALIMENTA A DESGRAÇA": [
+      "movimento-classe:paragrafo-2557"
+    ],
+    "INVOCADOR MÍSTICO": [
+      "movimento-classe:paragrafo-2474"
+    ],
+    "LEI DA HOSPITALIDADE": [
+      "movimento-classe:paragrafo-2558"
+    ],
+    "LIVRO DAS SOMBRAS": [
+      "movimento-classe:paragrafo-2518"
+    ],
+    "MAGIA SIMPÁTICA": [
+      "movimento-classe:paragrafo-2492"
+    ],
+    "MAIS UMA INVOCAÇÃO": [
+      "movimento-classe:paragrafo-2527"
+    ],
+    "MALDIÇÃO": [
+      "movimento-classe:paragrafo-2488"
+    ],
+    "MALDIÇÃO ADORMECIDA": [
+      "movimento-classe:paragrafo-2535"
+    ],
+    "MALDIÇÃO CONTAGIOSA": [
+      "movimento-classe:paragrafo-2538"
+    ],
+    "MANDATO MAIOR": [
+      "movimento-classe:paragrafo-2534"
+    ],
+    "NÃO ERA SOBRE VOCÊ": [
+      "movimento-classe:paragrafo-2556"
+    ],
+    "NÃO TOQUE NISSO": [
+      "movimento-classe:paragrafo-2545"
+    ],
+    "O FIO PUXA DOS DOIS LADOS": [
+      "movimento-classe:paragrafo-2546"
+    ],
+    "O MAU-OLHADO CRIA RAÍZES": [
+      "movimento-classe:paragrafo-2555"
+    ],
+    "O PRESENTE TEM DENTES": [
+      "movimento-classe:paragrafo-2525"
+    ],
+    "O ÚLTIMO INGREDIENTE É VOCÊ": [
+      "movimento-classe:paragrafo-2554"
+    ],
+    "OLHAR DE FORA": [
+      "movimento-classe:paragrafo-2570"
+    ],
+    "OLHO GORDO": [
+      "movimento-classe:paragrafo-2502"
+    ],
+    "OLHOS DO PATRONO": [
+      "movimento-classe:paragrafo-2475"
+    ],
+    "PACTO": [
+      "movimento-classe:paragrafo-2454"
+    ],
+    "PAGAMENTO ANTECIPADO": [
+      "movimento-classe:paragrafo-2513"
+    ],
+    "PALAVRAS NÃO SÃO SÓ PALAVRAS": [
+      "movimento-classe:paragrafo-2563"
+    ],
+    "POTE DE PROBLEMAS": [
+      "movimento-classe:paragrafo-2553"
+    ],
+    "RAJADA INESCAPÁVEL": [
+      "movimento-classe:paragrafo-2529"
+    ],
+    "RAJADA MÍSTICA": [
+      "movimento-classe:paragrafo-2467"
+    ],
+    "RENEGOCIAR OS TERMOS": [
+      "movimento-classe:paragrafo-2508"
+    ],
+    "SABÁ": [
+      "movimento-classe:paragrafo-2572"
+    ],
+    "SELO DA PALAVRA": [
+      "movimento-classe:paragrafo-2536"
+    ],
+    "TRÊS VEZES SEU": [
+      "movimento-classe:paragrafo-2537"
+    ],
+    "UM INSTANTE NA CASA DELE": [
+      "movimento-classe:paragrafo-2571"
+    ]
+  },
+  "by_paragrafo": {
+    "2454": [
+      "movimento-classe:paragrafo-2454"
+    ],
+    "2460": [
+      "movimento-classe:paragrafo-2460"
+    ],
+    "2465": [
+      "movimento-classe:paragrafo-2465"
+    ],
+    "2466": [
+      "movimento-classe:paragrafo-2466"
+    ],
+    "2467": [
+      "movimento-classe:paragrafo-2467"
+    ],
+    "2474": [
+      "movimento-classe:paragrafo-2474"
+    ],
+    "2475": [
+      "movimento-classe:paragrafo-2475"
+    ],
+    "2476": [
+      "movimento-classe:paragrafo-2476"
+    ],
+    "2477": [
+      "movimento-classe:paragrafo-2477"
+    ],
+    "2482": [
+      "movimento-classe:paragrafo-2482"
+    ],
+    "2488": [
+      "movimento-classe:paragrafo-2488"
+    ],
+    "2492": [
+      "movimento-classe:paragrafo-2492"
+    ],
+    "2501": [
+      "movimento-classe:paragrafo-2501"
+    ],
+    "2502": [
+      "movimento-classe:paragrafo-2502"
+    ],
+    "2506": [
+      "movimento-classe:paragrafo-2506"
+    ],
+    "2508": [
+      "movimento-classe:paragrafo-2508"
+    ],
+    "2513": [
+      "movimento-classe:paragrafo-2513"
+    ],
+    "2514": [
+      "movimento-classe:paragrafo-2514"
+    ],
+    "2515": [
+      "movimento-classe:paragrafo-2515"
+    ],
+    "2516": [
+      "movimento-classe:paragrafo-2516"
+    ],
+    "2517": [
+      "movimento-classe:paragrafo-2517"
+    ],
+    "2518": [
+      "movimento-classe:paragrafo-2518"
+    ],
+    "2519": [
+      "movimento-classe:paragrafo-2519"
+    ],
+    "2525": [
+      "movimento-classe:paragrafo-2525"
+    ],
+    "2527": [
+      "movimento-classe:paragrafo-2527"
+    ],
+    "2528": [
+      "movimento-classe:paragrafo-2528"
+    ],
+    "2529": [
+      "movimento-classe:paragrafo-2529"
+    ],
+    "2530": [
+      "movimento-classe:paragrafo-2530"
+    ],
+    "2533": [
+      "movimento-classe:paragrafo-2533"
+    ],
+    "2534": [
+      "movimento-classe:paragrafo-2534"
+    ],
+    "2535": [
+      "movimento-classe:paragrafo-2535"
+    ],
+    "2536": [
+      "movimento-classe:paragrafo-2536"
+    ],
+    "2537": [
+      "movimento-classe:paragrafo-2537"
+    ],
+    "2538": [
+      "movimento-classe:paragrafo-2538"
+    ],
+    "2545": [
+      "movimento-classe:paragrafo-2545"
+    ],
+    "2546": [
+      "movimento-classe:paragrafo-2546"
+    ],
+    "2547": [
+      "movimento-classe:paragrafo-2547"
+    ],
+    "2548": [
+      "movimento-classe:paragrafo-2548"
+    ],
+    "2553": [
+      "movimento-classe:paragrafo-2553"
+    ],
+    "2554": [
+      "movimento-classe:paragrafo-2554"
+    ],
+    "2555": [
+      "movimento-classe:paragrafo-2555"
+    ],
+    "2556": [
+      "movimento-classe:paragrafo-2556"
+    ],
+    "2557": [
+      "movimento-classe:paragrafo-2557"
+    ],
+    "2558": [
+      "movimento-classe:paragrafo-2558"
+    ],
+    "2563": [
+      "movimento-classe:paragrafo-2563"
+    ],
+    "2565": [
+      "movimento-classe:paragrafo-2565"
+    ],
+    "2570": [
+      "movimento-classe:paragrafo-2570"
+    ],
+    "2571": [
+      "movimento-classe:paragrafo-2571"
+    ],
+    "2572": [
+      "movimento-classe:paragrafo-2572"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-2454",
+      "movimento-classe:paragrafo-2488",
+      "movimento-classe:paragrafo-2492",
+      "movimento-classe:paragrafo-2501",
+      "movimento-classe:paragrafo-2502",
+      "movimento-classe:paragrafo-2572"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-2460",
+      "movimento-classe:paragrafo-2465",
+      "movimento-classe:paragrafo-2466",
+      "movimento-classe:paragrafo-2467",
+      "movimento-classe:paragrafo-2474",
+      "movimento-classe:paragrafo-2475",
+      "movimento-classe:paragrafo-2476",
+      "movimento-classe:paragrafo-2477",
+      "movimento-classe:paragrafo-2482",
+      "movimento-classe:paragrafo-2506",
+      "movimento-classe:paragrafo-2508",
+      "movimento-classe:paragrafo-2513",
+      "movimento-classe:paragrafo-2514",
+      "movimento-classe:paragrafo-2515",
+      "movimento-classe:paragrafo-2516",
+      "movimento-classe:paragrafo-2517",
+      "movimento-classe:paragrafo-2518",
+      "movimento-classe:paragrafo-2519",
+      "movimento-classe:paragrafo-2525",
+      "movimento-classe:paragrafo-2527",
+      "movimento-classe:paragrafo-2528",
+      "movimento-classe:paragrafo-2529",
+      "movimento-classe:paragrafo-2530",
+      "movimento-classe:paragrafo-2533",
+      "movimento-classe:paragrafo-2534",
+      "movimento-classe:paragrafo-2535",
+      "movimento-classe:paragrafo-2536",
+      "movimento-classe:paragrafo-2537",
+      "movimento-classe:paragrafo-2538",
+      "movimento-classe:paragrafo-2545",
+      "movimento-classe:paragrafo-2546",
+      "movimento-classe:paragrafo-2547",
+      "movimento-classe:paragrafo-2548",
+      "movimento-classe:paragrafo-2553",
+      "movimento-classe:paragrafo-2554",
+      "movimento-classe:paragrafo-2555",
+      "movimento-classe:paragrafo-2556",
+      "movimento-classe:paragrafo-2557",
+      "movimento-classe:paragrafo-2558",
+      "movimento-classe:paragrafo-2563",
+      "movimento-classe:paragrafo-2565",
+      "movimento-classe:paragrafo-2570",
+      "movimento-classe:paragrafo-2571"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-2465",
+      "movimento-classe:paragrafo-2466",
+      "movimento-classe:paragrafo-2474",
+      "movimento-classe:paragrafo-2475",
+      "movimento-classe:paragrafo-2476",
+      "movimento-classe:paragrafo-2501",
+      "movimento-classe:paragrafo-2506",
+      "movimento-classe:paragrafo-2513",
+      "movimento-classe:paragrafo-2514",
+      "movimento-classe:paragrafo-2515",
+      "movimento-classe:paragrafo-2516",
+      "movimento-classe:paragrafo-2517",
+      "movimento-classe:paragrafo-2518",
+      "movimento-classe:paragrafo-2525",
+      "movimento-classe:paragrafo-2527",
+      "movimento-classe:paragrafo-2528",
+      "movimento-classe:paragrafo-2529",
+      "movimento-classe:paragrafo-2533",
+      "movimento-classe:paragrafo-2534",
+      "movimento-classe:paragrafo-2535",
+      "movimento-classe:paragrafo-2536",
+      "movimento-classe:paragrafo-2537",
+      "movimento-classe:paragrafo-2545",
+      "movimento-classe:paragrafo-2546",
+      "movimento-classe:paragrafo-2547",
+      "movimento-classe:paragrafo-2553",
+      "movimento-classe:paragrafo-2554",
+      "movimento-classe:paragrafo-2555",
+      "movimento-classe:paragrafo-2556",
+      "movimento-classe:paragrafo-2557",
+      "movimento-classe:paragrafo-2563",
+      "movimento-classe:paragrafo-2570",
+      "movimento-classe:paragrafo-2571"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-2454",
+      "movimento-classe:paragrafo-2460",
+      "movimento-classe:paragrafo-2467",
+      "movimento-classe:paragrafo-2477",
+      "movimento-classe:paragrafo-2482",
+      "movimento-classe:paragrafo-2488",
+      "movimento-classe:paragrafo-2492",
+      "movimento-classe:paragrafo-2502",
+      "movimento-classe:paragrafo-2508",
+      "movimento-classe:paragrafo-2519",
+      "movimento-classe:paragrafo-2530",
+      "movimento-classe:paragrafo-2538",
+      "movimento-classe:paragrafo-2548",
+      "movimento-classe:paragrafo-2558",
+      "movimento-classe:paragrafo-2565",
+      "movimento-classe:paragrafo-2572"
+    ]
+  },
+  "by_requisito_tipo": {
+    "movimento_exato": [
+      "movimento-classe:paragrafo-2460",
+      "movimento-classe:paragrafo-2465",
+      "movimento-classe:paragrafo-2466",
+      "movimento-classe:paragrafo-2467",
+      "movimento-classe:paragrafo-2474",
+      "movimento-classe:paragrafo-2475",
+      "movimento-classe:paragrafo-2476",
+      "movimento-classe:paragrafo-2477",
+      "movimento-classe:paragrafo-2482",
+      "movimento-classe:paragrafo-2506",
+      "movimento-classe:paragrafo-2508",
+      "movimento-classe:paragrafo-2513",
+      "movimento-classe:paragrafo-2514",
+      "movimento-classe:paragrafo-2515",
+      "movimento-classe:paragrafo-2516",
+      "movimento-classe:paragrafo-2517",
+      "movimento-classe:paragrafo-2518",
+      "movimento-classe:paragrafo-2519",
+      "movimento-classe:paragrafo-2525",
+      "movimento-classe:paragrafo-2527",
+      "movimento-classe:paragrafo-2528",
+      "movimento-classe:paragrafo-2529",
+      "movimento-classe:paragrafo-2530",
+      "movimento-classe:paragrafo-2533",
+      "movimento-classe:paragrafo-2534",
+      "movimento-classe:paragrafo-2535",
+      "movimento-classe:paragrafo-2536",
+      "movimento-classe:paragrafo-2537",
+      "movimento-classe:paragrafo-2538",
+      "movimento-classe:paragrafo-2545",
+      "movimento-classe:paragrafo-2546",
+      "movimento-classe:paragrafo-2547",
+      "movimento-classe:paragrafo-2548",
+      "movimento-classe:paragrafo-2553",
+      "movimento-classe:paragrafo-2554",
+      "movimento-classe:paragrafo-2555",
+      "movimento-classe:paragrafo-2556",
+      "movimento-classe:paragrafo-2557",
+      "movimento-classe:paragrafo-2558",
+      "movimento-classe:paragrafo-2563",
+      "movimento-classe:paragrafo-2565",
+      "movimento-classe:paragrafo-2570",
+      "movimento-classe:paragrafo-2571"
+    ],
+    "nenhum": [
+      "movimento-classe:paragrafo-2454",
+      "movimento-classe:paragrafo-2488",
+      "movimento-classe:paragrafo-2492",
+      "movimento-classe:paragrafo-2501",
+      "movimento-classe:paragrafo-2502",
+      "movimento-classe:paragrafo-2572"
+    ]
+  },
+  "by_requisito_id": {
+    "movimento-classe:paragrafo-2454": [
+      "movimento-classe:paragrafo-2460",
+      "movimento-classe:paragrafo-2465",
+      "movimento-classe:paragrafo-2467",
+      "movimento-classe:paragrafo-2475",
+      "movimento-classe:paragrafo-2476",
+      "movimento-classe:paragrafo-2477",
+      "movimento-classe:paragrafo-2482",
+      "movimento-classe:paragrafo-2506",
+      "movimento-classe:paragrafo-2508",
+      "movimento-classe:paragrafo-2516",
+      "movimento-classe:paragrafo-2517",
+      "movimento-classe:paragrafo-2518",
+      "movimento-classe:paragrafo-2519",
+      "movimento-classe:paragrafo-2525",
+      "movimento-classe:paragrafo-2571"
+    ],
+    "movimento-classe:paragrafo-2460": [
+      "movimento-classe:paragrafo-2513"
+    ],
+    "movimento-classe:paragrafo-2465": [
+      "movimento-classe:paragrafo-2466",
+      "movimento-classe:paragrafo-2514",
+      "movimento-classe:paragrafo-2515"
+    ],
+    "movimento-classe:paragrafo-2467": [
+      "movimento-classe:paragrafo-2474",
+      "movimento-classe:paragrafo-2529"
+    ],
+    "movimento-classe:paragrafo-2474": [
+      "movimento-classe:paragrafo-2527",
+      "movimento-classe:paragrafo-2528"
+    ],
+    "movimento-classe:paragrafo-2476": [
+      "movimento-classe:paragrafo-2558",
+      "movimento-classe:paragrafo-2563"
+    ],
+    "movimento-classe:paragrafo-2477": [
+      "movimento-classe:paragrafo-2565",
+      "movimento-classe:paragrafo-2570"
+    ],
+    "movimento-classe:paragrafo-2482": [
+      "movimento-classe:paragrafo-2530",
+      "movimento-classe:paragrafo-2533",
+      "movimento-classe:paragrafo-2534"
+    ],
+    "movimento-classe:paragrafo-2488": [
+      "movimento-classe:paragrafo-2535",
+      "movimento-classe:paragrafo-2536",
+      "movimento-classe:paragrafo-2537",
+      "movimento-classe:paragrafo-2538",
+      "movimento-classe:paragrafo-2545"
+    ],
+    "movimento-classe:paragrafo-2492": [
+      "movimento-classe:paragrafo-2546",
+      "movimento-classe:paragrafo-2547",
+      "movimento-classe:paragrafo-2548"
+    ],
+    "movimento-classe:paragrafo-2501": [
+      "movimento-classe:paragrafo-2553",
+      "movimento-classe:paragrafo-2554"
+    ],
+    "movimento-classe:paragrafo-2502": [
+      "movimento-classe:paragrafo-2555",
+      "movimento-classe:paragrafo-2556",
+      "movimento-classe:paragrafo-2557"
+    ]
+  },
+  "by_raiz_dependencia": {
+    "movimento-classe:paragrafo-2454": [
+      "movimento-classe:paragrafo-2460",
+      "movimento-classe:paragrafo-2465",
+      "movimento-classe:paragrafo-2466",
+      "movimento-classe:paragrafo-2467",
+      "movimento-classe:paragrafo-2474",
+      "movimento-classe:paragrafo-2475",
+      "movimento-classe:paragrafo-2476",
+      "movimento-classe:paragrafo-2477",
+      "movimento-classe:paragrafo-2482",
+      "movimento-classe:paragrafo-2506",
+      "movimento-classe:paragrafo-2508",
+      "movimento-classe:paragrafo-2513",
+      "movimento-classe:paragrafo-2514",
+      "movimento-classe:paragrafo-2515",
+      "movimento-classe:paragrafo-2516",
+      "movimento-classe:paragrafo-2517",
+      "movimento-classe:paragrafo-2518",
+      "movimento-classe:paragrafo-2519",
+      "movimento-classe:paragrafo-2525",
+      "movimento-classe:paragrafo-2527",
+      "movimento-classe:paragrafo-2528",
+      "movimento-classe:paragrafo-2529",
+      "movimento-classe:paragrafo-2530",
+      "movimento-classe:paragrafo-2533",
+      "movimento-classe:paragrafo-2534",
+      "movimento-classe:paragrafo-2558",
+      "movimento-classe:paragrafo-2563",
+      "movimento-classe:paragrafo-2565",
+      "movimento-classe:paragrafo-2570",
+      "movimento-classe:paragrafo-2571"
+    ],
+    "movimento-classe:paragrafo-2488": [
+      "movimento-classe:paragrafo-2535",
+      "movimento-classe:paragrafo-2536",
+      "movimento-classe:paragrafo-2537",
+      "movimento-classe:paragrafo-2538",
+      "movimento-classe:paragrafo-2545"
+    ],
+    "movimento-classe:paragrafo-2492": [
+      "movimento-classe:paragrafo-2546",
+      "movimento-classe:paragrafo-2547",
+      "movimento-classe:paragrafo-2548"
+    ],
+    "movimento-classe:paragrafo-2501": [
+      "movimento-classe:paragrafo-2553",
+      "movimento-classe:paragrafo-2554"
+    ],
+    "movimento-classe:paragrafo-2502": [
+      "movimento-classe:paragrafo-2555",
+      "movimento-classe:paragrafo-2556",
+      "movimento-classe:paragrafo-2557"
+    ]
+  }
+}
