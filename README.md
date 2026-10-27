@@ -78,6 +78,26 @@ O núcleo reúne atributos, rolagens, PV, Carga, armadura, Debilidades, Periculo
 
 Os textos são fiéis ao arquivo enviado, mas **não foram homologados mecanicamente**: `aplicacao_canonica:false`. A extração não altera o cânone, saves ou as fichas importadas de D&D/Peren.
 
+## Movimentos de povos, classes e REQUER — novo ciclo
+
+O manuscrito do **Hack Carcaça Dungeon World** foi incorporado à camada estruturada de personagens:
+
+- **107 movimentos de povos**, em 18 grupos, com texto integral, marcadores, parágrafos de origem, continuações e 70 opções de lista;
+- **632 movimentos de classe** inventariados por título e origem, distribuídos em 18 grupos; *seus efeitos ainda não foram integralmente revisados*;
+- **270 requisitos REQUER literais**, dos quais 256 vínculos candidatos por título exato e 14 expressões pendentes de interpretação;
+- cruzamento conservador com os 12 movimentos de povos transcritos na quarta auditoria, sem alterar os originais.
+
+Os dados são publicados em `dist/carcaca/hack-people-movements.json` e `dist/carcaca/hack-class-movement-inventory.json`, com índices e arquivos separados de dependências candidatas e pendentes. O cliente `src/carcaca-client.mjs` expõe `searchPeopleMovements`, `searchClassMovements` e `getClassRequirementPreview`.
+
+```js
+const raciais = await atlas.searchPeopleMovements({grupo:"ANÕES DE THARGRID"});
+const classe = await atlas.searchClassMovements({grupo:"GUERREIRO",comRequer:true});
+const dependencia = await atlas.getClassRequirementPreview("movimento-classe:paragrafo-1120");
+console.log(dependencia.habilitado_para_compra); // null: revisão obrigatória
+```
+
+**REQUER continua obrigatório**, mesmo em movimentos gratuitos; a consulta não equivale a elegibilidade homologada. Veja a [documentação completa da integração](docs/INTEGRACAO_MOVIMENTOS_POVOS_CLASSES_REQUER.md) e o [extrator DOCX reproduzível](scripts/extrair_movimentos_personagem_docx.py).
+
 ## Ecossistema de assentamentos (M3, ciclo 5)
 
 Além de monstros, há comunidades, redes de cavernas, refúgios e habitats de várias formas. **Nem todo covil é uma steading do Dungeon World:** a distinção é preservada.
