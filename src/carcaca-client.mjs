@@ -24,6 +24,21 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getCatalog(){return byKey("catalog");}
   async function getIndexes(){return byKey("indexes");}
   async function getRegions(){return byKey("regions");}
+  async function getTerritorialLabels(){return byKey("territorial_labels");}
+  async function getTerritorialDynamics(){return byKey("territorial_dynamics");}
+  async function getTerritorialIndexes(){return byKey("territorial_indexes");}
+  async function getTerritorialDynamic(id){
+    if(typeof id!=="string"||!id.startsWith("dinamica:"))return null;
+    return (await getTerritorialDynamics()).find(d=>d.id===id)??null;
+  }
+  async function searchTerritorialDynamics({origemRegiaoId,destinoRegiaoId,rotuloId,tipo,dimensao}={}){
+    return (await getTerritorialDynamics()).filter(d=>
+      (!origemRegiaoId||d.origem_regiao_id===origemRegiaoId)&&
+      (!destinoRegiaoId||d.destino_regiao_id===destinoRegiaoId)&&
+      (!rotuloId||d.rotulos_territoriais.includes(rotuloId))&&
+      (!tipo||d.tipo===tipo)&&
+      (!dimensao||d.dimensoes_possivelmente_afetadas.includes(dimensao)));
+  }
   async function getPlaces(){return byKey("places");}
   async function getFactions(){return byKey("factions");}
   async function getFronts(){return byKey("fronts");}
@@ -134,7 +149,10 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (ndMax==null||(row.nd_dnd!=null&&row.nd_dnd<=ndMax))
     ).slice(offset,offset+limit);
   }
-  return {getManifest,getCatalog,getIndexes,getRegions,getPlaces,getFactions,
+  return {getManifest,getCatalog,getIndexes,getRegions,
+          getTerritorialLabels,getTerritorialDynamics,getTerritorialIndexes,
+          getTerritorialDynamic,searchTerritorialDynamics,
+          getPlaces,getFactions,
           getFronts,getSettlements,getSettlementLabels,getSettlementIndexes,
           getPeoples,getFlows,getMaterialDependencies,getMaterialDependencyIndexes,
           getMaterialBalances,getMaterialBalanceIndexes,getSupportProfiles,

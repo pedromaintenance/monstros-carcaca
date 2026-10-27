@@ -37,6 +37,25 @@ def add(index, key, value):
 def build():
     creatures = collect("curadoria/criaturas")
     regions = sorted(load("data/regioes_carcaca.json")["regioes"], key=lambda x:x["id"])
+    territorial_labels=sorted(load("data/rotulos_territoriais_carcaca.json")["rotulos"],key=lambda x:x["id"])
+    territorial_dynamics=sorted(load("data/dinamicas_territoriais_alem_sul.json")["dinamicas"],key=lambda x:x["id"])
+    territorial_indexes={k:defaultdict(set) for k in (
+        "by_origem_regiao","by_destino_regiao","by_rotulo_territorial","by_tipo",
+        "by_dimensao_potencial","by_assentamento_alvo")}
+    for d in territorial_dynamics:
+        for key,v in (("by_origem_regiao",d["origem_regiao_id"]),
+                      ("by_destino_regiao",d["destino_regiao_id"]),
+                      ("by_tipo",d["tipo"]),
+                      ("by_assentamento_alvo",d["assentamento_alvo_id"])):
+            add(territorial_indexes[key],v,d["id"])
+        for tag in d["rotulos_territoriais"]:
+            add(territorial_indexes["by_rotulo_territorial"],tag,d["id"])
+        for dim in d["dimensoes_possivelmente_afetadas"]:
+            add(territorial_indexes["by_dimensao_potencial"],dim,d["id"])
+    territorial_indexes={
+        name:{key:sorted(ids) for key,ids in sorted(group.items())}
+        for name,group in territorial_indexes.items()
+    }
     places = sorted(load("data/lugares_carcaca.json")["lugares"], key=lambda x:x["id"])
     factions = sorted(load("data/faccoes_carcaca.json")["faccoes"], key=lambda x:x["id"])
     types = sorted(load("data/taxonomia_carcaca.json")["tipos"], key=lambda x:x["id"])
@@ -167,6 +186,9 @@ def build():
         "ecological_pressure_indexes":"ecological-pressure-indexes.json",
         "support_profiles":"support-profiles.json",
         "support_indexes":"support-indexes.json",
+        "territorial_labels":"territorial-labels.json",
+        "territorial_dynamics":"territorial-dynamics.json",
+        "territorial_indexes":"territorial-indexes.json",
         "infrastructure_profiles":"infrastructure-profiles.json",
         "infrastructure_indexes":"infrastructure-indexes.json"
     }
@@ -181,6 +203,8 @@ def build():
         "total_balancos_materiais":len(material_balances),
         "total_pressoes_ecologicas":len(ecological_pressures),
         "total_perfis_suporte":len(support_profiles),
+        "total_rotulos_territoriais":len(territorial_labels),
+        "total_dinamicas_territoriais":len(territorial_dynamics),
         "total_perfis_infraestrutura":len(infrastructure_profiles),
         "total_setores_infraestrutura":sum(len(x["setores"]) for x in infrastructure_profiles),
         "arquivos":files, "estado":"curadoria_em_andamento",
@@ -203,6 +227,9 @@ def build():
         files["ecological_pressure_indexes"]:pressure_index,
         files["support_profiles"]:support_profiles,
         files["support_indexes"]:support_index,
+        files["territorial_labels"]:territorial_labels,
+        files["territorial_dynamics"]:territorial_dynamics,
+        files["territorial_indexes"]:territorial_indexes,
         files["infrastructure_profiles"]:infrastructure_profiles,
         files["infrastructure_indexes"]:infrastructure_indexes
     }

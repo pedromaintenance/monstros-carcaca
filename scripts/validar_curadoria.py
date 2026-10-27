@@ -326,6 +326,56 @@ def validar_infraestrutura_costa_sul(fontes):
           f"{sum(len(x['setores']) for x in perfis)} setores, "
           f"{sum(len(s['materiais_construtivos_confirmados']) for p in perfis for s in p['setores'])} materiais de construção conhecidos.")
 
+
+def validar_dinamicas_territoriais(fontes,rids):
+    """Somente fatos regionais: não atribuir ataques ou refugiados a cidades desconhecidas."""
+    schema=load("schemas/dinamica-territorial.schema.json")
+    Draft202012Validator.check_schema(schema)
+    check=Draft202012Validator(schema)
+    payload=load("data/dinamicas_territoriais_alem_sul.json")
+    require(payload["escopo"]=="alem-sul","Escopo territorial inesperado")
+    dynamics=payload["dinamicas"]
+    label_doc=load("data/rotulos_territoriais_carcaca.json")
+    labels=label_doc["rotulos"]
+    label_ids=unique(labels,"rótulos territoriais")
+    unique(dynamics,"dinâmicas territoriais")
+    for label in labels:
+        require(label["id"].startswith("rotulo-territorial:"),
+                "Rótulo territorial com namespace incorreto")
+        require(label.get("consequencia_narrativa_proposta"),
+                "Rótulo territorial deve diferenciar hipótese e fato")
+    settlements={s["id"]:s for s in gather("curadoria/assentamentos")}
+    places=load("data/regioes_carcaca.json")["regioes"]
+    caatinga=next((r for r in places if r["id"]=="regiao:caatinga"),None)
+    require(caatinga is not None and caatinga["lugares"]==[],
+            "Caatinga sem assentamentos nomeados: não inventar localidades")
+    for d in dynamics:
+        errors=list(check.iter_errors(d))
+        require(not errors,f"Dinâmica territorial inválida: {d['id']} {errors[:1]}")
+        require(d["fonte"] in fontes,f"Fonte desconhecida: {d['id']}")
+        require(d["origem_regiao_id"] in rids and d["destino_regiao_id"] in rids,
+                f"Região desconhecida em dinâmica: {d['id']}")
+        require(set(d["rotulos_territoriais"])<=label_ids,
+                f"Rótulo territorial inexistente em {d['id']}")
+        for prop in ("assentamento_origem_id","assentamento_alvo_id"):
+            aid=d[prop]
+            if aid is not None:
+                require(aid in settlements,
+                        f"Assentamento sem referência em dinâmica: {d['id']} {aid}")
+        if d["escala"]=="regional":
+            require(d["assentamento_origem_id"] is None
+                    and d["assentamento_alvo_id"] is None,
+                    f"Dinâmica regional não pode nomear vítima/atacante individual: {d['id']}")
+        require(d["evento_campanha_id"] is None and d["efeitos_dw_automaticos"] is False,
+                f"Dinâmica não pode criar evento canônico/DW: {d['id']}")
+    refugiados=next((d for d in dynamics if d["id"]==
+       "dinamica:refugiados-eldroth-maiores-assentamentos"),None)
+    require(refugiados is not None
+            and refugiados["assentamento_alvo_id"] is None,
+            "Não atribuir refugiados de Eldroth a Portomonte sem fonte")
+    print(f"Dinâmicas territoriais válidas: {len(dynamics)} vínculos regionais, "
+          f"{len(labels)} rótulos não aplicados automaticamente a assentamentos.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -411,6 +461,7 @@ def main():
     validar_balancos_e_pressoes(fontes)
     validar_capacidade_suporte(fontes)
     validar_infraestrutura_costa_sul(fontes)
+    validar_dinamicas_territoriais(fontes,rids)
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
