@@ -938,6 +938,96 @@ def validar_guerreiro_integral():
           " 27 REQUER exatos e 3 condicionais/compostos; zero promoções.")
 
 
+def validar_barbaro_integral():
+    """Valida as 59 fichas literais de Bárbaro sem conceder aquisição automática."""
+    from hack_movimentos_personagem import build_barbarian_indexes
+    raw=load("data/lore/hack-carcaca-dw-barbaro-integrais.json")
+    inventory=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(raw["fonte_sha256"]==inventory["fonte_sha256"] and raw["grupo"]=="BÁRBARO",
+            "Fonte ou grupo do Bárbaro divergentes.")
+    moves=raw["movimentos"]
+    listed={m["id"]:m for m in inventory["movimentos"] if m["grupo"]=="BÁRBARO"}
+    all_by_id={m["id"]:m for m in inventory["movimentos"]}
+    require(len(moves)==len(listed)==59 and len(unique(moves,"barbaro"))==59,
+            "Bárbaro não contém todos os 59 movimentos.")
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves)
+            and moves[0]["paragrafo_docx"]==1293 and moves[-1]["paragrafo_docx"]==1447,
+            "Âncoras documentais do Bárbaro alteradas.")
+    require(raw["integridade"]=={
+      "total_movimentos":59,"total_com_requer":37,"total_vinculos_exatos":36,
+      "total_requer_composto_ou_condicional":1,"total_opcoes":84,"total_partes":156
+    }, "Integridade de transcrição do Bárbaro alterada.")
+    used=set()
+    exact={}
+    special=[]
+    for m in moves:
+        original=listed.get(m["id"])
+        require(original is not None and
+                m["titulo"]==original["titulo"] and
+                m["paragrafo_docx"]==original["paragrafo_docx"] and
+                m["requisito_literal"]==original["requisito_literal"],
+                "Título ou requisito do Bárbaro diverge do inventário.")
+        require(m["estado"]=="transcricao_integral_sem_revisao_mecanica" and
+                m["texto_integral_conferido"] is True and
+                m["aplicacao_canonica"] is False,
+                "Movimento do Bárbaro não pode alterar estado canônico.")
+        require(m["texto_original"]=="\\n".join(p["texto"] for p in m["partes"]),
+                "Texto original não corresponde aos parágrafos de origem.")
+        require(m["opcoes"]==[
+            {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+            for p in m["partes"] if p["tipo"]=="opcao"],
+            "Escolhas do Bárbaro truncadas.")
+        require(m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"] and
+                m["partes"][0]["tipo"]=="corpo",
+                "Primeiro parágrafo não contém o efeito do movimento.")
+        for part in m["partes"]:
+            require(part["paragrafo_docx"] not in used and bool(part["texto"]),
+                    "Parágrafo duplicado ou vazio em Bárbaro.")
+            used.add(part["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),"Requisito sem REQUER literal.")
+        if req is None:
+            continue
+        if req["tipo"]=="movimento_exato":
+            require(req["movimento_id"] in all_by_id and
+                    req["titulo_requerido"]==all_by_id[req["movimento_id"]]["titulo"] and
+                    req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "Vínculo exato não preservado.")
+            exact[m["id"]]=req["movimento_id"]
+        elif req["tipo"]=="todos":
+            require(m["paragrafo_docx"]==1430 and
+                    m["requisito_literal"]=="Fúria Divina e Demasiado Furioso Para Morrer" and
+                    req["operador_literal"]=="e" and
+                    req["status"]=="interpretacao_literal_pendente_homologacao",
+                    "Fúria Além da Morte exige dois Movimentos, não apenas um.")
+            nomes=[all_by_id[p["movimento_id"]]["titulo"] for p in req["itens"]]
+            require(nomes==["FÚRIA DIVINA","DEMASIADO FURIOSO PARA MORRER"],
+                    "Componentes do requisito composto do Bárbaro divergentes.")
+            special.append(m["id"])
+        else:
+            raise AssertionError("Tipo de REQUER não documentado: "+req["tipo"])
+    require(len(used)==156 and sum(len(m["opcoes"]) for m in moves)==84,
+            "Bárbaro perdeu opções ou continuações.")
+    require(len(exact)==36 and special==["movimento-classe:paragrafo-1430"],
+            "Contagem de REQUER não corresponde ao DOCX.")
+    for start in exact:
+        current=start
+        visited={start}
+        while current in exact:
+            current=exact[current]
+            require(current not in visited, "Ciclo de pré-requisitos em Bárbaro.")
+            visited.add(current)
+    ix=build_barbarian_indexes(moves)
+    require(len(ix["by_tem_requer"]["sim"])==37 and
+            len(ix["by_requisito_tipo"]["movimento_exato"])==36 and
+            ix["by_requisito_tipo"]["todos"]==["movimento-classe:paragrafo-1430"] and
+            set(ix["by_requisito_id"]["movimento-classe:paragrafo-1427"]) >=
+            {"movimento-classe:paragrafo-1430"},
+            "Índices dos requisitos compostos do Bárbaro inconsistentes.")
+    print("Bárbaro: 59 movimentos integrais, 84 opções, 156 partes; "
+          "36 REQUER exatos e 1 composto. Sem promoção canônica.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1035,6 +1125,7 @@ def main():
     validar_regras_nucleo_hack()
     validar_integracao_personagens_hack()
     validar_guerreiro_integral()
+    validar_barbaro_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
