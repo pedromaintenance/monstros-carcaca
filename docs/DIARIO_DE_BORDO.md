@@ -156,3 +156,21 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 - O grafo preserva: purificação → lavoura em Portomonte; comércio e viagens insulares **não foram interligados artificialmente**.
 - Registros totais: 7 criaturas, 3 conjuntos de assentamento, 5 dependências, 4 cenários; versões de campanha de exemplo continuam sem eventos.
 - A biblioteca de estado local não grava arquivos nem altera fatos históricos: eventos só são anexados à nova cópia quando `mestre_confirmou=true` é fornecido explicitamente. Esse sinalizador não autentica a identidade do mestre; o jogo consumidor deverá definir sua autorização.
+
+## 2026-10-26 · Ciclo 8 — Balanços quantitativos opcionais e pressões ambientais
+
+**Fonte primária revisada:** `Ambientação - A Carcaça - Visão Geral.txt`, seção Além Sul. Não fornece volumes, unidades reais de medição, calorias, estoques, calendários de safra, datas das viagens nem balanços populacionais. Esses dados permanecem desconhecidos.
+
+**Artefatos:** quatro perfis em `data/balancos_materiais_costa_sul.json`, quatro riscos hipotéticos em `data/pressoes_ecologicas_costa_sul.json`, schemas e validação de IDs cruzados com as cinco dependências e os quatro fluxos anteriores.
+
+**Decisões:**
+- Unidade potencial é mera sugestão de entrada, não valor encontrado na lore.
+- Se a fonte não quantifica o perfil, todas as sete medidas permanecem `null`; o código não assume zero.
+- Viagens insulares são sazonais, mas não há meses ou períodos específicos.
+- Comércio não especificado e histórias não são produtos fungíveis que possam ser somados num único estoque.
+- A equação é instrumento matemático auxiliar ao atlas, não regra oficial DW.
+- Pressões descritas são gatilhos hipotéticos que nunca acontecem automaticamente.
+
+**Software:** novas APIs de leitura/filtro e `previewMaterialBalance` com conferência de unidade, período e proveniência. Nada é persistido em jogos, muito menos balanceamento de Peren ou estatísticas D&D.
+
+**Próximo estudo:** capacidade de suporte e dinâmica de assentamentos dependente de medidas reais, com atenção a armazenamento, resíduos e mobilidade.

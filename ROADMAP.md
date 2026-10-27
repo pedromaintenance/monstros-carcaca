@@ -182,3 +182,18 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] `dist/carcaca/manifest.json`: **5 dependências materiais, 7 criaturas e 3 assentamentos/redes**; permanecem quatro cenários hipotéticos.
 - [x] Índice `by_assentamento` aponta 3 relações de Portomonte; `by_dependencia_predecessora` aponta a lavoura como dependente da purificação.
 - [x] O contrato de evento de campanha fica fora de `dist/carcaca/`; exemplos editoriais sem eventos não são estado canônico.
+
+## Ciclo 8 — Modelo de balanços, sazonalidade e pressões ecológicas (2026-10-26)
+
+- [x] Criar quatro **perfis materiais sem valores fabricados**, para água purificada, lavoura, comércio não especificado e circulação insular.
+- [x] Adotar `valor`, `unidade`, `periodo`, `origem_medicao` com nulos explícitos e separar ausência de dado de valor zero.
+- [x] Registrar sazonalidade das viagens insulares sem inventar meses, calendário agrícola ou ritmos de consumo.
+- [x] Criar quatro **pressões hipotéticas** com estado próprio, fonte e lacunas: purificação, comércio, viagens e conflito ritual.
+- [x] Criar schemas e validações cruzadas de perfis, fluxos, dependências, origem documental e pressões.
+- [x] Exportar índices específicos em `dist/carcaca/` e filtros do cliente por assentamento, recurso, tipo e sazonalidade.
+- [x] Criar função pura `previewMaterialBalance`: só aceita seis medidas com unidade, período, origem e valor; rejeita bens heterogêneos e unidades incompatíveis.
+- [x] Testar ausência de dados, zero explícito, déficit hipotético, incompatibilidade de períodos e integridade dos perfis originais.
+- [x] Garantir que cálculos fictícios não sejam publicados como medidas reais nem como eventos de campanha; nenhuma mecânica DW atualizada.
+- [x] Documentar lógica, contrato, exemplos e lacunas em `docs/BALANCOS_E_PRESSOES_ECOLOGICAS.md`.
+- [ ] Ampliar com indicadores opcionais de capacidade de suporte quando a lore ou campanha fornecer quantidades fundamentadas.
+- [ ] Introduzir observações autorizadas de campanha sem incorporá-las aos JSON canônicos.

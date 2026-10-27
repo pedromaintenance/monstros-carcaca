@@ -117,3 +117,17 @@ const novaVersao=recordCampaignEvent(estado,{
 O código acima **é apenas um exemplo**: não escreve no repositório, não cria evento real e não altera o atlas. Para eventos ligados a cenário DW, passe `scenarioIds` e um `fonte_cenario_id` existente.
 
 Leia `schemas/estado-campanha.schema.json` e `docs/REDE_MATERIAL_E_ESTADO_DE_CAMPANHA.md`.
+
+## Perfis quantitativos opcionais (ciclo 8)
+
+```js
+import {previewMaterialBalance} from "./src/carcaca-material-balance.mjs";
+const perfis=await atlas.searchMaterialBalances({assentamentoId:"assentamento:portomonte"});
+const riscos=await atlas.searchEcologicalPressures({
+  dependenciaId:"dependencia:portomonte-purificacao"
+});
+const indefinido=previewMaterialBalance(perfis[0]);
+console.log(indefinido.motivo); // dados_insuficientes
+```
+
+Consulte `getMaterialBalances()`, `getMaterialBalanceIndexes()`, `getEcologicalPressures()` e `getEcologicalPressureIndexes()`. Pressões são **não ocorridas**. Balanço real carece de medidas com valor, unidade, período e origem explícitos; dados quantitativos não são completados automaticamente e a função somente simula.

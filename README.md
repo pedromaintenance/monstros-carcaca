@@ -90,3 +90,11 @@ O atlas apresenta um grafo auditável de dependências materiais da Costa Sul em
 Um **estado de campanha é um documento diferente do cânone**: `src/carcaca-campaign-state.mjs` fornece `createCampaignLedger`, `recordCampaignEvent` e `getCampaignEvents`, sem I/O. O exemplo vazio em `exemplos/campanhas/` demonstra o contrato, não é uma campanha canônica.
 
 Veja [Grafo material e eventos de campanha](docs/REDE_MATERIAL_E_ESTADO_DE_CAMPANHA.md).
+
+## Ciclo 8 — Balanços materiais sem inventar valores
+
+A camada de economia material distribui `material-balances.json`, `material-balance-indexes.json`, `ecological-pressures.json` e `ecological-pressure-indexes.json` pelo manifesto do atlas.
+
+Todos os perfis reais começam **não quantificados** (`valor:null`, `unidade:null`, `periodo:null`, `origem_medicao:null`). Há sazonalidade documentada para as viagens insulares, mas **não** meses especificados. Nenhum evento ambiental hipotético é aplicado à lore.
+
+O método `previewMaterialBalance` está em `src/carcaca-material-balance.mjs`; é somente leitura e exige entradas completas, produto homogêneo, mesma unidade e mesmo período. Veja [Balanços e pressões ecológicas](docs/BALANCOS_E_PRESSOES_ECOLOGICAS.md).
