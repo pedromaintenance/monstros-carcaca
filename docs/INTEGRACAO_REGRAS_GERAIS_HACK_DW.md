@@ -59,6 +59,31 @@ const indice=await atlas.getGeneralMovementIndexes();
 - `estado:"transcricao_integral_sem_revisao_semantica"` indica que ainda há análise editorial pendente.
 - `aplicacao_canonica:false` impede considerar que a transcrição alterou automaticamente o mundo, os personagens ou o estado da campanha.
 
+## Núcleo estruturado de personagem e combate
+
+Além dos movimentos, o projeto agora contém `data/lore/hack-carcaca-dw-regras-nucleo.json`,
+distribuído como `dist/carcaca/hack-core-rules.json` e consultável por
+`await atlas.getHackCoreRules()`.
+
+Essa camada explicita as regras descritas nas páginas 26–33 e 39 do Hack:
+
+- Rolagem de 2d6, interpretação de 10+, 7–9 e 6 ou menos.
+- Os seis atributos e os valores iniciais `16, 15, 13, 12, 9, 8`, com a tabela de modificadores.
+- Nível inicial 1 e **cinco movimentos próprios**. As origens Raça, Classe e Antecedente estão documentadas; **a quantidade exata de cada origem permanece `null` porque o trecho não a fornece expressamente.**
+- PV máximos `20 + 5 × mod. CON`; Carga `8 + mod. FOR`.
+- Danos conforme Periculosidade (`1d4` a `1d12`), redução contextual de Armadura, seis Debilidades.
+- Descanso, recuperação e evolução mediante `Nível + 7` XP.
+
+Os valores são referências **do texto-fonte**, não estatísticas atribuídas automaticamente a monstros nem regras impostas a saves.
+
+```js
+const regras = await atlas.getHackCoreRules();
+const {personagens, evolucao} = regras;
+console.log(personagens.pv_maximos.expressao_literal);
+console.log(personagens.distribuicao_numerica_por_origem); // null: não inferido
+console.log(evolucao.limiar_xp.literal);
+```
+
 ## Próxima etapa de curadoria
 
 Fazer uma revisão mecânica especializada em faixas de resultado, escolhas e custos, definindo um **modelo semântico adicional**, sem substituir o texto original. Em paralelo, continuar a transcrição integral dos movimentos de povo e classe além do piloto de doze movimentos, preservando a semântica obrigatória de **REQUER: X**.
