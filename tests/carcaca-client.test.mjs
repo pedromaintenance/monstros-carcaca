@@ -53,7 +53,9 @@ const fixtures={
     hack_class_requirement_candidates:"hack-class-requirement-candidates.json",
     hack_class_requirement_pending:"hack-class-requirement-pending.json",
     hack_warrior_movements:"hack-warrior-movements.json",
-    hack_warrior_movement_indexes:"hack-warrior-movement-indexes.json"}},
+    hack_warrior_movement_indexes:"hack-warrior-movement-indexes.json",
+    hack_barbarian_movements:"hack-barbarian-movements.json",
+    hack_barbarian_movement_indexes:"hack-barbarian-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -104,6 +106,34 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-barbarian-movements.json":[
+    {id:"movimento-classe:paragrafo-1293",titulo:"FÚRIA",categoria:"classe",
+     requisito_literal:null,requisito_estruturado:null,paragrafo_docx:1293,
+     texto_original:"Quando entregar-se conscientemente à fúria.",
+     opcoes:[{paragrafo_docx:1294,texto:"seus ataques corpo a corpo aumentam a Periculosidade em um grau;"}],
+     aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1427",titulo:"FÚRIA DIVINA",categoria:"classe",
+     requisito_literal:"Fúria",paragrafo_docx:1427,
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1293"},
+     texto_original:"Escolha uma divindade, espírito ou causa sagrada.",opcoes:[],aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1343",titulo:"DEMASIADO FURIOSO PARA MORRER",categoria:"classe",
+     requisito_literal:"Fúria",paragrafo_docx:1343,
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1293"},
+     texto_original:"Quando estiver morrendo durante a Fúria.",opcoes:[],aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1430",titulo:"FÚRIA ALÉM DA MORTE",categoria:"classe",
+     requisito_literal:"Fúria Divina e Demasiado Furioso Para Morrer",paragrafo_docx:1430,
+     requisito_estruturado:{tipo:"todos",itens:[
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1427"},
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1343"}]},
+     texto_original:"Quando realizar Último Suspiro durante sua Fúria, escolha.",
+     opcoes:[{paragrafo_docx:1431,texto:"sua divindade ou causa reivindica sua morte;"}],
+     aplicacao_canonica:false}
+  ],
+  "hack-barbarian-movement-indexes.json":{
+    by_tem_requer:{sim:["movimento-classe:paragrafo-1343","movimento-classe:paragrafo-1427","movimento-classe:paragrafo-1430"],nao:["movimento-classe:paragrafo-1293"]},
+    by_requisito_tipo:{todos:["movimento-classe:paragrafo-1430"]},
+    by_requisito_id:{"movimento-classe:paragrafo-1427":["movimento-classe:paragrafo-1430"]}
+  },
   "hack-warrior-movements.json":[
     {id:"movimento-classe:paragrafo-1047",titulo:"ARMA FAVORITA",
      requisito_literal:null,requisito_estruturado:null,
@@ -1161,4 +1191,35 @@ test("Guerreiro integral busca texto e conserva REQUER composto sem autorizar co
   assert.equal(composto.requisito_estruturado.tipo,"todos");
   assert.equal(composto.expressoes_nao_resolvidas.length,1);
   assert.equal(composto.habilitado_para_compra,null);
+});
+
+test("Bárbaro integral preserva opções e dependência conjuntiva sem autorizar compra",async()=>{
+  const todos=await atlas.getBarbarianMovements();
+  assert.equal(todos.length,4);
+  assert.equal((await atlas.searchBarbarianMovements({comRequer:true})).length,3);
+  assert.equal((await atlas.searchBarbarianMovements({tipoRequisito:"todos"}))[0].titulo,"FÚRIA ALÉM DA MORTE");
+  assert.equal((await atlas.searchBarbarianMovements({query:"Periculosidade"}))[0].titulo,"FÚRIA");
+  assert.equal((await atlas.searchBarbarianMovements({comOpcoes:true})).length,2);
+  assert.equal((await atlas.getBarbarianMovement("movimento-classe:paragrafo-1293")).titulo,"FÚRIA");
+  assert.equal(await atlas.getBarbarianMovement("movimento-classe:paragrafo-9999"),null);
+  const indice=await atlas.getBarbarianMovementIndexes();
+  assert.equal(indice.by_requisito_tipo.todos.length,1);
+  const req="movimento-classe:paragrafo-1430";
+  const semi=await atlas.getBarbarianRequirementPreview(req,{movimentosPossuidos:["movimento-classe:paragrafo-1427"]});
+  assert.equal(semi.componentes_requeridos.length,2);
+  assert.deepEqual(semi.componentes_requeridos.map(x=>x.presente_na_lista),[true,false]);
+  assert.equal(semi.componentes_identificados_presentes,false);
+  assert.equal(semi.habilitado_para_compra,null);
+  assert.equal(semi.aplicacao_canonica,false);
+  const ambos=await atlas.getBarbarianRequirementPreview(req,{
+    movimentosPossuidos:["movimento-classe:paragrafo-1427","movimento-classe:paragrafo-1343"]
+  });
+  assert.equal(ambos.componentes_identificados_presentes,true);
+  assert.equal(ambos.habilitado_para_compra,null);
+  assert.equal(ambos.necessita_avaliacao_do_mestre,true);
+  assert.equal(await atlas.getBarbarianRequirementPreview("nao-existe"),null);
+  await assert.rejects(
+    ()=>atlas.getBarbarianRequirementPreview(req,{movimentosPossuidos:"errado"}),
+    TypeError
+  );
 });
