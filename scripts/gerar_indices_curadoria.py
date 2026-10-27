@@ -264,6 +264,12 @@ def build():
         key=lambda x:x["paragrafo_docx"])
     docx_tables=sorted(load("data/lore/hack-carcaca-dw-tabelas-docx.json")["tabelas"],
                        key=lambda x:x["tabela_docx_indice"])
+    povos_docx=load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]
+    classes_docx=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    movimentos_classes=classes_docx["movimentos"]
+    dependencias_classes=classes_docx["dependencias_exatas_candidatas"]
+    dependencias_pendentes=classes_docx["dependencias_nao_resolvidas"]
+    from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes
     regras_nucleo=load("data/lore/hack-carcaca-dw-regras-nucleo.json")
     quadros_integrais=load("data/lore/hack-carcaca-dw-quadros-integrais.json")
     movimentos_gerais=compilar_movimentos_gerais(quadros_integrais,docx_tables)
@@ -277,6 +283,14 @@ def build():
     complete_pilot_moves=[
         {**x,"revisao_preliminar_id":reviewed_paragraphs.get(x["paragrafo_docx"])}
         for x in complete_pilot_moves]
+    piloto_por_paragrafo={x["paragrafo_docx"]:x["id"] for x in complete_pilot_moves}
+    povos_docx=[{**x,"piloto_integral_id":piloto_por_paragrafo.get(x["paragrafo_docx"]),
+                 "revisao_preliminar_id":reviewed_paragraphs.get(x["paragrafo_docx"])}
+                for x in povos_docx]
+    classes_docx_piloto=[{**x,"revisao_preliminar_id":reviewed_paragraphs.get(x["paragrafo_docx"])}
+                        for x in movimentos_classes]
+    indice_povos_docx=build_people_indexes(povos_docx)
+    indice_classes_docx=build_class_indexes(classes_docx_piloto,dependencias_classes,dependencias_pendentes)
     complete_move_indexes={k:defaultdict(set) for k in ("by_grupo","by_marcador","by_preliminar")}
     for item in complete_pilot_moves:
         for k,key in (("by_grupo",item["grupo"]),("by_marcador",item["marcador_original"]),
@@ -435,6 +449,12 @@ def build():
         "hack_general_movements":"hack-general-movements.json",
         "hack_general_movement_indexes":"hack-general-movement-indexes.json",
         "hack_core_rules":"hack-core-rules.json",
+        "hack_people_movements":"hack-people-movements.json",
+        "hack_people_movement_indexes":"hack-people-movement-indexes.json",
+        "hack_class_movement_inventory":"hack-class-movement-inventory.json",
+        "hack_class_movement_indexes":"hack-class-movement-indexes.json",
+        "hack_class_requirement_candidates":"hack-class-requirement-candidates.json",
+        "hack_class_requirement_pending":"hack-class-requirement-pending.json",
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
@@ -476,6 +496,13 @@ def build():
         "total_quadros_movimentos_gerais":sum(x["tipo"]=="quadro_movimento_geral" for x in docx_tables),
         "total_unidades_regras_gerais_integrais":len(movimentos_gerais),
         "total_blocos_quadros_gerais":sum(len(q["blocos"]) for q in quadros_integrais["quadros"]),
+        "total_movimentos_povos_docx":len(povos_docx),
+        "total_grupos_povos_docx":len({x["grupo"] for x in povos_docx}),
+        "total_opcoes_movimentos_povos_docx":sum(len(x["opcoes"]) for x in povos_docx),
+        "total_titulos_movimentos_classes_docx":len(classes_docx_piloto),
+        "total_movimentos_classes_com_requer":sum(x["requisito_literal"] is not None for x in classes_docx_piloto),
+        "total_dependencias_candidatas":len(dependencias_classes),
+        "total_dependencias_pendentes":len(dependencias_pendentes),
         "total_rotulos_mecanicas_detectados":sum(len(p["rotulos_detectados"]) for p in mechanics_index["paginas_indice"]),
         "total_paginas_lore_manuscrito":len(lore_source["paginas"]),
         "total_eventos_cronologia_manuscrito":len(lore_timeline["eventos"]),
@@ -518,6 +545,12 @@ def build():
          files["hack_general_movements"]:movimentos_gerais,
          files["hack_general_movement_indexes"]:indices_movimentos_gerais,
          files["hack_core_rules"]:regras_nucleo,
+         files["hack_people_movements"]:povos_docx,
+         files["hack_people_movement_indexes"]:indice_povos_docx,
+         files["hack_class_movement_inventory"]:classes_docx_piloto,
+         files["hack_class_movement_indexes"]:indice_classes_docx,
+         files["hack_class_requirement_candidates"]:dependencias_classes,
+         files["hack_class_requirement_pending"]:dependencias_pendentes,
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,
