@@ -336,3 +336,10 @@ A fonte textual de mecânicas das páginas 26–181 foi extraída em quatro arqu
 **Exemplo de cautela:** o movimento Portomontense concede uma capacidade ao personagem; isso não resolve automaticamente a questão ecológica da potabilidade de Portomonte. Outro cuidado é não emparelhar um `REQUER:` com o movimento na coluna adjacente.
 
 Documento: `docs/REVISAO_AMPLIADA_HACK_CARCACA_DW.md`.
+
+### Validação de distribuição — segunda auditoria do manuscrito
+
+- Pipeline de integração confirmado concluído com sucesso: https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40447368396
+- Artefatos consultados diretamente no branch: `dist/carcaca/manifest.json` (**157 verbetes, 155 páginas, 653 rótulos**), `dist/carcaca/hack-mechanics-index.json` (página **91** ausente da extração, **86 páginas** com alguma menção a `REQUER:`), mais o relatório editorial publicado.
+- Durante a verificação foram corrigidas duas situações: o nome curto da divindade **Rá** necessitava aceitação pelo schema e a antiga suíte de testes esperava ainda **100** verbetes. Ambas foram ajustadas antes da execução aprovada.
+- O índice de movimentos não é catálogo de habilidades revisadas: 653 são **rótulos candidatos**, sujeitos a títulos gerais e interferências entre colunas.

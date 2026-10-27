@@ -360,3 +360,9 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [ ] Verificar visualmente a página 91 no DOCX original e recuperar seu conteúdo, se houver.
 - [ ] Refinar candidatos a movimentos em blocos individuais e verificar `REQUER` sem confundimento entre colunas.
 - [ ] Integrar ao atlas canônico apenas evidência de ambientação aprovada individualmente.
+
+### Conferência da segunda auditoria
+
+- [x] [GitHub Actions #40447368396](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40447368396): resultado `success` na validação de curadoria, testes JavaScript, testes Python de integração, geração determinística e publicação.
+- [x] Snapshot inspecionado diretamente: `manifest.json` com **157 verbetes**, **155 páginas de texto mecânico** e **653 rótulos candidatos**; `hack-mechanics-index.json` declara **página 91 sem texto extraível** e 86 páginas com `REQUER:`.
+- [x] Continuam sem alterações de cânone as **7 criaturas** e os **3 assentamentos** curados.

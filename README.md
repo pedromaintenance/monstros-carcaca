@@ -137,7 +137,7 @@ A pesquisa do M3 passa a ter uma **fila publicada de 16 perguntas regionais**. O
 
 ## Manuscrito autoral do Hack Carcaça DW — lore indexada
 
-O **Capítulo I (páginas 2 a 25)** do manuscrito `Hack Carcaça Dungeon World.docx` foi incorporado à pesquisa como **fonte autoral em revisão**: 24 páginas de texto consultável, **100 entradas temáticas**, **18 marcos cronológicos**, **7 incógnitas**, **7 questões de reconciliação** e **14 pontes com as regiões e perguntas do M3**.
+O **Capítulo I (páginas 2 a 25)** do manuscrito `Hack Carcaça Dungeon World.docx` foi incorporado à pesquisa como **fonte autoral em revisão**: 24 páginas de texto consultável, **157 entradas temáticas (após segunda auditoria)**, **18 marcos cronológicos**, **7 incógnitas**, **7 questões de reconciliação** e **14 pontes com as regiões e perguntas do M3**.
 
 A consulta fica nos artefatos `dist/carcaca/lore-*.json`, com `searchLore`, `getLoreChronology` e `searchLoreAtlasLinks`. **Nenhum dado foi promovido automaticamente a cânone, fichas D&D/DW ou eventos de campanha.** [Ler o índice completo e os conflitos editoriais](docs/LORE_HACK_CARCACA_DW.md).
 
