@@ -87,13 +87,13 @@ class RegionalDossiers(unittest.TestCase):
 
     def test_manuscript_is_indexed_without_promoting_canon(self):
         compiled=self.artifacts
-        self.assertEqual(compiled["manifest.json"]["total_entradas_lore_manuscrito"],100)
+        self.assertEqual(compiled["manifest.json"]["total_entradas_lore_manuscrito"],157)
         self.assertEqual(compiled["manifest.json"]["total_paginas_lore_manuscrito"],24)
         self.assertEqual(compiled["manifest.json"]["total_eventos_cronologia_manuscrito"],18)
         self.assertEqual(compiled["manifest.json"]["total_incognitas_manuscrito"],7)
         self.assertEqual(compiled["manifest.json"]["total_pontos_revisao_manuscrito"],7)
         index=compiled["lore-index.json"]
-        self.assertEqual(len(index),100)
+        self.assertEqual(len(index),157)
         self.assertTrue(all(x["integracao"]=="referencia_sem_mutar_canonico"
                             and x["paginas"] for x in index))
         self.assertEqual({x["tipo"] for x in index},
@@ -111,6 +111,21 @@ class RegionalDossiers(unittest.TestCase):
         self.assertTrue(all(e["uso"]=="nao_promover_para_timeline_canonica_sem_revisao" for e in events))
         self.assertEqual(len(self.artifacts["settlements.json"]),3)
         self.assertEqual(len(self.artifacts["creatures.json"]),7)
+
+    def test_second_pass_mechanics_remain_separate_from_lore(self):
+        ix=self.artifacts["hack-mechanics-index.json"]
+        self.assertEqual(len(ix["paginas_indice"]),155)
+        self.assertEqual(ix["paginas_sem_texto_extraivel"],[91])
+        self.assertTrue(ix["nao_usar_como_fato_de_ambientacao"])
+        self.assertEqual(self.artifacts["manifest.json"]["total_paginas_mecanicas_extraidas"],155)
+        self.assertEqual(self.artifacts["manifest.json"]["total_rotulos_mecanicas_detectados"],
+                         sum(len(p["rotulos_detectados"]) for p in ix["paginas_indice"]))
+        self.assertEqual(self.artifacts["manifest.json"]["total_entradas_lore_manuscrito"],157)
+        self.assertTrue(any("REQUER:" in line
+                            for page in ix["paginas_indice"]
+                            for line in page["mencoes_requer_na_pagina"]))
+        self.assertEqual(len(self.artifacts["creatures.json"]),7)
+        self.assertEqual(len(self.artifacts["settlements.json"]),3)
 
     def test_manuscript_atlas_bridges_preserve_granularity(self):
         links=self.artifacts["lore-atlas-links.json"]

@@ -32,7 +32,8 @@ const fixtures={
     lore_index:"lore-index.json",lore_index_indexes:"lore-indexes.json",
     lore_chronology:"lore-chronology.json",lore_review_notes:"lore-review-notes.json",
     lore_atlas_links:"lore-atlas-links.json",
-    lore_atlas_link_indexes:"lore-atlas-link-indexes.json"}},
+    lore_atlas_link_indexes:"lore-atlas-link-indexes.json",
+    hack_mechanics_index:"hack-mechanics-index.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -45,6 +46,15 @@ const fixtures={
   ],
   "creatures.json":[{id:"carcaca:criatura:joro",dungeon_world:{instinto:"Testar visitantes"}}],
   "regions.json":[{id:"regiao:caatinga",lugares:[]},{id:"regiao:costa-sul",lugares:[]},{id:"regiao:eldroth",lugares:[]}],
+  "hack-mechanics-index.json":{
+    paginas_com_texto:2,paginas_sem_texto_extraivel:[91],nao_usar_como_fato_de_ambientacao:true,
+    paginas_indice:[
+      {pagina:49,categoria:"movimentos_de_povo",
+       rotulos_detectados:["HUMANOS","PORTOMONTENSE"],mencoes_requer_na_pagina:[]},
+      {pagina:70,categoria:"movimentos_de_classe",
+       rotulos_detectados:["MAU OLHADO"],mencoes_requer_na_pagina:["REQUER: Vendo Vermelho"]}
+    ]
+  },
   "lore-index.json":[
     {id:"lore-hack:kuo-toa",tipo:"povo",nome:"Kuo-Toa",
      descricao:"Povo de cavernas e cidades marinhas, com ritos associados a Daegon",
@@ -877,4 +887,15 @@ test("pontes entre manuscrito e atlas são referências editoriais sem mutação
   assert.equal((await atlas.searchLoreAtlasLinks({entradaLoreId:"lore-hack:abissais-marinhos"})).length,1);
   assert.equal((await atlas.getLoreAtlasLinkIndexes()).by_pergunta["pergunta:costa-sul-agua"].length,1);
   assert.equal((await atlas.searchLoreAtlasLinks({parecer:"nao_encontrado"})).length,0);
+});
+
+test("páginas mecânicas são pesquisáveis sem se tornarem fatos de ambientação",async()=>{
+  const ix=await atlas.getHackMechanicsIndex();
+  assert.equal(ix.nao_usar_como_fato_de_ambientacao,true);
+  assert.deepEqual(ix.paginas_sem_texto_extraivel,[91]);
+  assert.deepEqual((await atlas.searchHackMechanicsPages({query:"portomontense"})).map(x=>x.pagina),[49]);
+  assert.deepEqual((await atlas.searchHackMechanicsPages({comRequer:true})).map(x=>x.pagina),[70]);
+  assert.equal((await atlas.searchHackMechanicsPages({categoria:"movimentos_de_classe"})).length,1);
+  assert.equal((await atlas.searchHackMechanicsPages({pagina:49})).length,1);
+  assert.equal((await atlas.searchHackMechanicsPages({query:"vendo vermelho"})).length,1);
 });
