@@ -268,3 +268,12 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Documentar decisões em `docs/DINAMICAS_TERRITORIAIS_ALEM_SUL.md`.
 - [ ] Investigar povoações individualizadas da Caatinga após novas fontes.
 - [ ] Integrar futuramente uma frente DW de guerra regional proposta, não acontecimento histórico.
+
+### Verificação do ciclo 11 — publicado
+
+- [x] [GitHub Actions #40441891327](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40441891327): **success** na validação de JSON/referências, testes JavaScript, geração determinística e publicação.
+- [x] `dist/carcaca/manifest.json`: **4 regiões, 7 criaturas, 3 assentamentos/redes, 4 rótulos territoriais e 4 dinâmicas regionais**.
+- [x] `dist/carcaca/territorial-dynamics.json`: 4 relações com `escala:regional`, `assentamento_alvo_id:null`, `evento_campanha_id:null`; nenhum ataque ou acolhimento formal foi inventado.
+- [x] `dist/carcaca/territorial-labels.json`: 4 rótulos, incluindo `presenca_minoritaria_refugiada` (sem pressupor acolhimento formal).
+- [x] `dist/carcaca/territorial-indexes.json`: filtros por origem/destino, rótulo, tipo e dimensões materiais potenciais publicados.
+- [x] `regiao:caatinga`: cadastrada sem povoações individuais (`lugares:[]`).

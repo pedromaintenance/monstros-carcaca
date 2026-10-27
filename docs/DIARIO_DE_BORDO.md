@@ -245,3 +245,11 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 - O rótulo territorial foi renomeado para `rotulo-territorial:presenca_minoritaria_refugiada`: a lore descreve **presença** de refugiados nos grandes assentamentos regionais, não acolhimento institucional formal.
 - Corrigida distinção de API: `alvo_nomeado_no_registro` verifica correspondência de assentamento, mas `evento_especifico_confirmado` permanece **false** em uma prévia; fatos de campanha exigem registro explícito no livro-razão.
 - Adicionado teste de não confirmação mesmo se uma ficha futura contiver nome de alvo.
+
+### Publicação conferida — ciclo 11
+
+- Workflow final https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40441891327 concluído em **success**; validação, testes, geração de dados e publicação confirmados.
+- Conferidos no snapshot `dist/carcaca/`: 4 regiões (nova Caatinga vazia de localidades individuais), 4 rótulos territoriais, 4 dinâmicas, 7 criaturas e 3 registros de comunidade.
+- Todas as quatro dinâmicas continuam com `escala:regional`, `assentamento_alvo_id:null` e `evento_campanha_id:null`; consulta a Portomonte não autoriza inventar saque, ataque ou acolhimento.
+- O rótulo `presenca_minoritaria_refugiada` reflete presença documentada sem assumir acolhimento institucional. Simulação com alvo nominal continua sem confirmar evento de campanha.
+- O Marco M3 permanece em expansão; próximo passo é reunir dossiês de pressão por região e procurar assentamentos concretos na Caatinga em fontes autorais.
