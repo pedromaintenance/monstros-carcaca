@@ -1,0 +1,86 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/guia-dossie-regional.schema.json",
+  "title": "Guia regional de curadoria, sem fatos simulados",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "regiao_id",
+    "fonte",
+    "estado",
+    "contexto",
+    "fatos_documentados",
+    "lacunas",
+    "perguntas"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^dossie-regional:[a-z0-9-]+$"
+    },
+    "regiao_id": {
+      "type": "string",
+      "pattern": "^regiao:[a-z0-9-]+$"
+    },
+    "fonte": {
+      "const": "ambientacao"
+    },
+    "estado": {
+      "const": "rascunho_factual"
+    },
+    "contexto": {
+      "type": "string",
+      "minLength": 35
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string",
+        "minLength": 15
+      }
+    },
+    "lacunas": {
+      "type": "array",
+      "minItems": 2,
+      "items": {
+        "type": "string",
+        "minLength": 15
+      }
+    },
+    "perguntas": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "tema",
+          "pergunta"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^pergunta:[a-z0-9-]+$"
+          },
+          "tema": {
+            "enum": [
+              "subsistencia",
+              "abrigo",
+              "mobilidade",
+              "conflito",
+              "logistica",
+              "infraestrutura"
+            ]
+          },
+          "pergunta": {
+            "type": "string",
+            "minLength": 15
+          }
+        }
+      }
+    }
+  }
+}

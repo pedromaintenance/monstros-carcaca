@@ -1,0 +1,166 @@
+{
+  "schema_version": "0.1.0",
+  "descricao": "Guias factuais por região, com perguntas e lacunas; dossiês finais são vistas geradas de referências já curadas, sem aprovar novos efeitos narrativos.",
+  "guias": [
+    {
+      "id": "dossie-regional:caatinga",
+      "regiao_id": "regiao:caatinga",
+      "fonte": "ambientacao",
+      "estado": "rascunho_factual",
+      "contexto": "Terras áridas do Além Sul, com exilados e conflitos constantes com os sobreviventes das pradarias costeiras; o território não está submetido a ocupação feérica direta.",
+      "fatos_documentados": [
+        "A Caatinga integra o Além Sul, descrito como território árido e de povoados dispersos.",
+        "Grupos das terras áridas invadem e pilham áreas de cultivo nas pradarias próximas ao Mar de Sangue.",
+        "A aristocracia shadow fey não colonizou diretamente a Caatinga como fez com outras regiões."
+      ],
+      "lacunas": [
+        "Não há assentamentos individuais da Caatinga nomeados no recorte disponível.",
+        "Fontes de água, alimentos, rotas e práticas de armazenamento não foram descritas.",
+        "Povos e grupos envolvidos em cada incursão não foram individualizados; não atribuir saques a todos os orcs."
+      ],
+      "perguntas": [
+        {
+          "id": "pergunta:caatinga-habitacao",
+          "tema": "abrigo",
+          "pergunta": "Onde vivem os exilados da Caatinga, e que abrigo e materiais utilizam?"
+        },
+        {
+          "id": "pergunta:caatinga-abastecimento",
+          "tema": "subsistencia",
+          "pergunta": "Quais alimentos e águas sustentam essas comunidades sem supor uma cultura agrícola específica?"
+        },
+        {
+          "id": "pergunta:caatinga-guerras",
+          "tema": "conflito",
+          "pergunta": "Quais grupos concretos participam das pilhagens, e quais rotas utilizam?"
+        },
+        {
+          "id": "pergunta:caatinga-deslocamento",
+          "tema": "mobilidade",
+          "pergunta": "Há deslocamentos entre localidades da Caatinga que possam ser comprovados em novas fontes?"
+        }
+      ]
+    },
+    {
+      "id": "dossie-regional:costa-sul",
+      "regiao_id": "regiao:costa-sul",
+      "fonte": "ambientacao",
+      "estado": "rascunho_factual",
+      "contexto": "Costa do Mar de Sangue onde Portomonte, cavernas kuo-toa e ilhas de tortles/tabaxis fazem parte de redes materiais diferentes, sujeitas a incursões regionais e circulação sazonal.",
+      "fatos_documentados": [
+        "Portomonte utiliza purificação ritual de água do Mar de Sangue para permitir a agricultura, inclusive sobre pedra.",
+        "Há comércio entre assentamentos da costa, sem bens e trajetos individuais especificados.",
+        "Kuo-toa e abissais marinhos realizam ataques sacrificiais ao litoral e às ilhas.",
+        "Tortles e tabaxis habitam ilhas e fazem viagens sazonais em busca de histórias e recursos.",
+        "Alguns refugiados de Eldroth estão nos maiores assentamentos da Costa Sul, como minoria, sem cidades receptoras identificadas."
+      ],
+      "lacunas": [
+        "A potabilidade doméstica da água purificada não foi confirmada.",
+        "Bens, quantidades e parceiros comerciais de Portomonte não são conhecidos.",
+        "A presença regional de refugiados não comprova acolhimento em Portomonte.",
+        "Cavernas costeiras e cidades subaquáticas kuo-toa não formam um só assentamento demográfico."
+      ],
+      "perguntas": [
+        {
+          "id": "pergunta:costa-sul-agua",
+          "tema": "subsistencia",
+          "pergunta": "A purificação realizada pelo templo sustenta outros usos além da lavoura?"
+        },
+        {
+          "id": "pergunta:costa-sul-infraestrutura",
+          "tema": "abrigo",
+          "pergunta": "Onde há depósitos, moradias e caminhos efetivamente documentados?"
+        },
+        {
+          "id": "pergunta:costa-sul-migracao",
+          "tema": "mobilidade",
+          "pergunta": "Em quais assentamentos estão os refugiados de Eldroth, sem pressupor Portomonte?"
+        },
+        {
+          "id": "pergunta:costa-sul-ataques",
+          "tema": "conflito",
+          "pergunta": "Quais comunidades ou ilhas específicas sofreram ataques em acontecimentos confirmados?"
+        }
+      ]
+    },
+    {
+      "id": "dossie-regional:eldroth",
+      "regiao_id": "regiao:eldroth",
+      "fonte": "ambientacao",
+      "estado": "rascunho_factual",
+      "contexto": "Floresta sob influência de Lady Sylara Nightwhisper e ruínas de Vandar utilizadas por Lord Damaris Blackthorn e mortos-vivos, em contexto de perseguição e resistência.",
+      "fatos_documentados": [
+        "A Floresta de Eldroth está sob uma escuridão viva e vigilância de forças ligadas a Lady Sylara Nightwhisper.",
+        "As ruínas de Vandar servem de base a forças de Lord Damaris Blackthorn e incursões sobre áreas ainda não subjugadas.",
+        "Refugiados provenientes de Eldroth estão presentes minoritariamente nos maiores assentamentos da Costa Sul."
+      ],
+      "lacunas": [
+        "Não foram cadastradas comunidades civis de Eldroth com economia material própria neste atlas.",
+        "Não se conhece a quantidade de refugiados, suas rotas nem os assentamentos individuais que os receberam.",
+        "A presença de forças mortas-vivas em Vandar não comprova produção agrícola, saneamento ou dieta dessas forças."
+      ],
+      "perguntas": [
+        {
+          "id": "pergunta:eldroth-subsistencia",
+          "tema": "subsistencia",
+          "pergunta": "Como sobrevivem os grupos não subjugados na floresta, com quais fontes documentadas de comida e água?"
+        },
+        {
+          "id": "pergunta:eldroth-abrigos",
+          "tema": "abrigo",
+          "pergunta": "Quais refúgios ou assentamentos civis de Eldroth podem ser nomeados com base em fontes futuras?"
+        },
+        {
+          "id": "pergunta:eldroth-deslocados",
+          "tema": "mobilidade",
+          "pergunta": "Que evidências detalham as saídas de Eldroth e os destinos específicos na Costa Sul?"
+        },
+        {
+          "id": "pergunta:eldroth-ocupacao",
+          "tema": "conflito",
+          "pergunta": "Qual a extensão concreta dos controles de Sylara e Damaris sobre lugares individuais?"
+        }
+      ]
+    },
+    {
+      "id": "dossie-regional:foz-rio-ancestral",
+      "regiao_id": "regiao:foz-rio-ancestral",
+      "fonte": "ambientacao",
+      "estado": "rascunho_factual",
+      "contexto": "Extremo oeste onde o Rio Ancestral termina no Abismo, entre a Boca do Abismo, Gualápolis e o Arquivo dos Mortos Afogados, associado a ameaças demoníacas e disputas de poderes.",
+      "fatos_documentados": [
+        "O Rio Ancestral deságua em O Abismo, região de ruínas, fortalezas e disputas de poder.",
+        "Após um ataque de demônios vindos do Abismo, a Rainha da Noite e Lord Xandros abandonaram o antigo templo.",
+        "Ulorian Uln-Shayr formou uma aliança tensa com habitantes nativos para enfrentar os demônios.",
+        "A curadoria do Arquivo dos Mortos Afogados reúne sete fichas de criaturas nesta região; a frente existente continua com presságios propostos, não acontecimentos automaticamente ocorridos."
+      ],
+      "lacunas": [
+        "A subsistência cotidiana de Gualápolis e da Boca do Abismo não foi quantificada.",
+        "Não foram curados assentamentos DW individualizados nem redes de abastecimento nesta região.",
+        "Uma frente com presságios não demonstra que tais acontecimentos já ocorreram em todas as campanhas."
+      ],
+      "perguntas": [
+        {
+          "id": "pergunta:foz-agua",
+          "tema": "subsistencia",
+          "pergunta": "Quais fontes de alimento e água sustentam habitantes e forças da Boca do Abismo?"
+        },
+        {
+          "id": "pergunta:foz-reabastecimento",
+          "tema": "logistica",
+          "pergunta": "Como chegariam provisões a assentamentos próximos de uma queda colossal do rio?"
+        },
+        {
+          "id": "pergunta:foz-aliança",
+          "tema": "conflito",
+          "pergunta": "Que compromissos materiais comprovados sustentam a aliança tensa entre nativos e Ulorian?"
+        },
+        {
+          "id": "pergunta:foz-resistencia",
+          "tema": "abrigo",
+          "pergunta": "Que lugares e estruturas oferecem abrigo sem presumir que todo ossário seja habitável?"
+        }
+      ]
+    }
+  ]
+}
