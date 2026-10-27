@@ -891,7 +891,7 @@ def validar_guerreiro_integral():
         require(m["estado"]=="transcricao_integral_sem_revisao_mecanica" and
                 m["texto_integral_conferido"] is True and m["aplicacao_canonica"] is False,
                 "Movimento de Guerreiro não pode ser aplicado automaticamente.")
-        require(m["texto_original"]=="\\n".join(p["texto"] for p in m["partes"]),
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
                 "Texto de Guerreiro não coincide com as partes do DOCX.")
         require(m["opcoes"]==[
             {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
