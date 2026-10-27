@@ -2656,8 +2656,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1588",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1593",
@@ -2670,8 +2670,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1593",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1594",
@@ -2684,8 +2684,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1594",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1602",
@@ -2698,8 +2698,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1602",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1603",
@@ -2712,8 +2712,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1603",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1604",
@@ -2726,8 +2726,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1604",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1612",
@@ -2740,8 +2740,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1612",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1618",
@@ -2754,8 +2754,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1618",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1619",
@@ -2768,8 +2768,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1619",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1628",
@@ -2782,8 +2782,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1628",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1630",
@@ -2796,8 +2796,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1630",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1631",
@@ -2810,8 +2810,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1631",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1632",
@@ -2824,8 +2824,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1632",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1633",
@@ -2838,8 +2838,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": "movimento-revisado:paragrafo-1633",
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1633",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1634",
@@ -2852,8 +2852,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": "movimento-revisado:paragrafo-1634",
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1634",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1641",
@@ -2866,8 +2866,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1641",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1646",
@@ -2880,8 +2880,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1646",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1656",
@@ -2894,8 +2894,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1656",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1657",
@@ -2908,8 +2908,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1657",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1658",
@@ -2922,8 +2922,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1658",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1659",
@@ -2936,8 +2936,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1659",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1660",
@@ -2950,8 +2950,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1660",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1662",
@@ -2964,8 +2964,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1662",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1663",
@@ -2978,8 +2978,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1663",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1664",
@@ -2992,8 +2992,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1664",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1665",
@@ -3006,8 +3006,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1665",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1670",
@@ -3020,8 +3020,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1670",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1671",
@@ -3034,8 +3034,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1671",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1678",
@@ -3048,8 +3048,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1678",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1684",
@@ -3062,8 +3062,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1684",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1685",
@@ -3076,8 +3076,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1685",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1686",
@@ -3090,8 +3090,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1686",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1690",
@@ -3104,8 +3104,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1690",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1692",
@@ -3118,8 +3118,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1692",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1697",
@@ -3132,8 +3132,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1697",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1704",
@@ -3146,8 +3146,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1704",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1709",
@@ -3160,8 +3160,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1709",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1718",
@@ -3174,8 +3174,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1718",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1719",
@@ -3188,8 +3188,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1719",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1720",
@@ -3202,8 +3202,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1720",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1721",
@@ -3216,8 +3216,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1721",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1722",
@@ -3230,8 +3230,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1722",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1723",
@@ -3244,8 +3244,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1723",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1724",
@@ -3258,8 +3258,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1724",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1726",
@@ -3272,8 +3272,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1726",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1727",
@@ -3286,8 +3286,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1727",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1728",
@@ -3300,8 +3300,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1728",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1733",
@@ -3314,8 +3314,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1733",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1734",
@@ -3328,8 +3328,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1734",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1740",
@@ -3342,8 +3342,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1740",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1741",
@@ -3356,8 +3356,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1741",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1742",
@@ -3370,8 +3370,8 @@
     "texto_integral_curado": false,
     "aplicacao_canonica": false,
     "revisao_preliminar_id": null,
-    "texto_integral_id": null,
-    "texto_integral_disponivel": false
+    "texto_integral_id": "movimento-classe:paragrafo-1742",
+    "texto_integral_disponivel": true
   },
   {
     "id": "movimento-classe:paragrafo-1753",

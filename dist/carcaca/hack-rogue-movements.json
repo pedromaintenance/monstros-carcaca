@@ -1,0 +1,2086 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-1588",
+    "paragrafo_docx": 1588,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "ESPECIALISTA EM ARMADILHAS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1588,
+        "tipo": "corpo",
+        "texto": "Quando estudar cuidadosamente uma área perigosa em busca de armadilhas, acrescente a Discernir Realidades:"
+      },
+      {
+        "paragrafo_docx": 1589,
+        "tipo": "opcao",
+        "texto": "Há uma armadilha aqui?"
+      },
+      {
+        "paragrafo_docx": 1590,
+        "tipo": "opcao",
+        "texto": "O que a aciona?"
+      },
+      {
+        "paragrafo_docx": 1591,
+        "tipo": "opcao",
+        "texto": "O que acontece quando dispara?"
+      },
+      {
+        "paragrafo_docx": 1592,
+        "tipo": "opcao",
+        "texto": "Como poderia ser contornada?"
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1589,
+        "texto": "Há uma armadilha aqui?"
+      },
+      {
+        "paragrafo_docx": 1590,
+        "texto": "O que a aciona?"
+      },
+      {
+        "paragrafo_docx": 1591,
+        "texto": "O que acontece quando dispara?"
+      },
+      {
+        "paragrafo_docx": 1592,
+        "texto": "Como poderia ser contornada?"
+      }
+    ],
+    "texto_original": "Quando estudar cuidadosamente uma área perigosa em busca de armadilhas, acrescente a Discernir Realidades:\nHá uma armadilha aqui?\nO que a aciona?\nO que acontece quando dispara?\nComo poderia ser contornada?",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1588"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1593",
+    "paragrafo_docx": 1593,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "TRUQUES DO OFÍCIO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1593,
+        "tipo": "corpo",
+        "texto": "Quando tiver acesso físico e ferramentas minimamente apropriadas, você consegue abrir, desmontar ou contornar qualquer fechadura, cofre ou mecanismo mundano, mesmo que não possua a chave, conheça sua construção ou ele tenha sido projetado especificamente para impedir arrombamento. Se nada estiver pressionando você, simplesmente faça.\nSe houver perigo, pressa ou alguém tentando impedi-lo, resolva apenas esse perigo através do Movimento apropriado. A fechadura ou mecanismo em si não constitui o perigo e será vencido se você conseguir agir."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando tiver acesso físico e ferramentas minimamente apropriadas, você consegue abrir, desmontar ou contornar qualquer fechadura, cofre ou mecanismo mundano, mesmo que não possua a chave, conheça sua construção ou ele tenha sido projetado especificamente para impedir arrombamento. Se nada estiver pressionando você, simplesmente faça.\nSe houver perigo, pressa ou alguém tentando impedi-lo, resolva apenas esse perigo através do Movimento apropriado. A fechadura ou mecanismo em si não constitui o perigo e será vencido se você conseguir agir.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1593"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1594",
+    "paragrafo_docx": 1594,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "ABRIR O IMPOSSÍVEL",
+    "requisito_literal": "Truques do Ofício",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1593",
+      "titulo_requerido": "TRUQUES DO OFÍCIO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1594,
+        "tipo": "corpo",
+        "texto": "Para você, qualquer coisa criada para impedir acesso pode ser tratada como uma fechadura, mesmo que não possua mecanismo convencional. Quando estudar algo que deveria ser impossível abrir, atravessar ou violar — uma porta selada por magia, um cofre sem abertura, uma passagem protegida por juramento, um mecanismo alienígena, uma barreira sobrenatural ou equivalente — pergunte ao Mestre: “O que eu precisaria para abrir isto?”\nO Mestre dará de 1 a 3 condições concretas, escolhidas de acordo com a natureza da proteção, como:"
+      },
+      {
+        "paragrafo_docx": 1595,
+        "tipo": "opcao",
+        "texto": "alcançar uma parte normalmente inacessível dela;"
+      },
+      {
+        "paragrafo_docx": 1596,
+        "tipo": "opcao",
+        "texto": "obter uma ferramenta, chave, símbolo ou material específico;"
+      },
+      {
+        "paragrafo_docx": 1597,
+        "tipo": "opcao",
+        "texto": "descobrir algo sobre quem a criou;"
+      },
+      {
+        "paragrafo_docx": 1598,
+        "tipo": "opcao",
+        "texto": "neutralizar primeiro uma de suas proteções;"
+      },
+      {
+        "paragrafo_docx": 1599,
+        "tipo": "opcao",
+        "texto": "sacrificar, quebrar ou comprometer alguma coisa importante;"
+      },
+      {
+        "paragrafo_docx": 1600,
+        "tipo": "opcao",
+        "texto": "possuir tempo suficiente para trabalhar sem interrupção."
+      },
+      {
+        "paragrafo_docx": 1601,
+        "tipo": "continuacao",
+        "texto": "Quando cumprir as condições e puder trabalhar sobre a proteção, você a abre."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1595,
+        "texto": "alcançar uma parte normalmente inacessível dela;"
+      },
+      {
+        "paragrafo_docx": 1596,
+        "texto": "obter uma ferramenta, chave, símbolo ou material específico;"
+      },
+      {
+        "paragrafo_docx": 1597,
+        "texto": "descobrir algo sobre quem a criou;"
+      },
+      {
+        "paragrafo_docx": 1598,
+        "texto": "neutralizar primeiro uma de suas proteções;"
+      },
+      {
+        "paragrafo_docx": 1599,
+        "texto": "sacrificar, quebrar ou comprometer alguma coisa importante;"
+      },
+      {
+        "paragrafo_docx": 1600,
+        "texto": "possuir tempo suficiente para trabalhar sem interrupção."
+      }
+    ],
+    "texto_original": "Para você, qualquer coisa criada para impedir acesso pode ser tratada como uma fechadura, mesmo que não possua mecanismo convencional. Quando estudar algo que deveria ser impossível abrir, atravessar ou violar — uma porta selada por magia, um cofre sem abertura, uma passagem protegida por juramento, um mecanismo alienígena, uma barreira sobrenatural ou equivalente — pergunte ao Mestre: “O que eu precisaria para abrir isto?”\nO Mestre dará de 1 a 3 condições concretas, escolhidas de acordo com a natureza da proteção, como:\nalcançar uma parte normalmente inacessível dela;\nobter uma ferramenta, chave, símbolo ou material específico;\ndescobrir algo sobre quem a criou;\nneutralizar primeiro uma de suas proteções;\nsacrificar, quebrar ou comprometer alguma coisa importante;\npossuir tempo suficiente para trabalhar sem interrupção.\nQuando cumprir as condições e puder trabalhar sobre a proteção, você a abre.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1594"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1602",
+    "paragrafo_docx": 1602,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "OLHOS NAS COSTAS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1602,
+        "tipo": "corpo",
+        "texto": "Quando alguém deveria surpreendê-lo, você ainda consegue realizar uma ação curta antes que a ameaça se concretize completamente."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém deveria surpreendê-lo, você ainda consegue realizar uma ação curta antes que a ameaça se concretize completamente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1602"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1603",
+    "paragrafo_docx": 1603,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "LADRÃO DE OPORTUNIDADES",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1603,
+        "tipo": "corpo",
+        "texto": "Quando alguém estiver inteiramente concentrado em outra coisa, você consegue realizar uma pequena ação furtiva antes que perceba. Se o alvo estiver protegido, vigiado ou a ação possuir consequência séria, ainda poderá haver perigo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém estiver inteiramente concentrado em outra coisa, você consegue realizar uma pequena ação furtiva antes que perceba. Se o alvo estiver protegido, vigiado ou a ação possuir consequência séria, ainda poderá haver perigo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1603"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1604",
+    "paragrafo_docx": 1604,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "GOLPE PELAS COSTAS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1604,
+        "tipo": "corpo",
+        "texto": "Quando atacar alguém a partir de uma posição em que ele não possa se defender adequadamente de você — porque não percebeu sua presença, está completamente distraído, imobilizado, indefeso ou você conseguiu alguma vantagem equivalente — cause seu dano e escolha 1:"
+      },
+      {
+        "paragrafo_docx": 1605,
+        "tipo": "opcao",
+        "texto": "aumente a Periculosidade em um grau;"
+      },
+      {
+        "paragrafo_docx": 1606,
+        "tipo": "opcao",
+        "texto": "não revele imediatamente sua posição;"
+      },
+      {
+        "paragrafo_docx": 1607,
+        "tipo": "opcao",
+        "texto": "crie uma abertura clara para um aliado;"
+      },
+      {
+        "paragrafo_docx": 1608,
+        "tipo": "opcao",
+        "texto": "tome ou coloque algo pequeno no alvo;"
+      },
+      {
+        "paragrafo_docx": 1609,
+        "tipo": "opcao",
+        "texto": "deixe-o momentaneamente incapaz de reagir diretamente a você;"
+      },
+      {
+        "paragrafo_docx": 1610,
+        "tipo": "opcao",
+        "texto": "afaste-se para uma posição próxima antes que consiga responder."
+      },
+      {
+        "paragrafo_docx": 1611,
+        "tipo": "continuacao",
+        "texto": "Se o alvo estiver completamente indefeso e à sua mercê, escolha 2 em vez de 1."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1605,
+        "texto": "aumente a Periculosidade em um grau;"
+      },
+      {
+        "paragrafo_docx": 1606,
+        "texto": "não revele imediatamente sua posição;"
+      },
+      {
+        "paragrafo_docx": 1607,
+        "texto": "crie uma abertura clara para um aliado;"
+      },
+      {
+        "paragrafo_docx": 1608,
+        "texto": "tome ou coloque algo pequeno no alvo;"
+      },
+      {
+        "paragrafo_docx": 1609,
+        "texto": "deixe-o momentaneamente incapaz de reagir diretamente a você;"
+      },
+      {
+        "paragrafo_docx": 1610,
+        "texto": "afaste-se para uma posição próxima antes que consiga responder."
+      }
+    ],
+    "texto_original": "Quando atacar alguém a partir de uma posição em que ele não possa se defender adequadamente de você — porque não percebeu sua presença, está completamente distraído, imobilizado, indefeso ou você conseguiu alguma vantagem equivalente — cause seu dano e escolha 1:\naumente a Periculosidade em um grau;\nnão revele imediatamente sua posição;\ncrie uma abertura clara para um aliado;\ntome ou coloque algo pequeno no alvo;\ndeixe-o momentaneamente incapaz de reagir diretamente a você;\nafaste-se para uma posição próxima antes que consiga responder.\nSe o alvo estiver completamente indefeso e à sua mercê, escolha 2 em vez de 1.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1604"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1612",
+    "paragrafo_docx": 1612,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "HEIST",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1612,
+        "tipo": "corpo",
+        "texto": "Quando estudar e planejar seriamente um roubo, faça três perguntas ao Mestre:"
+      },
+      {
+        "paragrafo_docx": 1613,
+        "tipo": "opcao",
+        "texto": "Quem perceberá primeiro se conseguirmos?"
+      },
+      {
+        "paragrafo_docx": 1614,
+        "tipo": "opcao",
+        "texto": "Qual é a defesa que o plano ainda não resolveu?"
+      },
+      {
+        "paragrafo_docx": 1615,
+        "tipo": "opcao",
+        "texto": "Quem mais deseja aquilo que vamos roubar?"
+      },
+      {
+        "paragrafo_docx": 1616,
+        "tipo": "opcao",
+        "texto": "Qual é nossa melhor rota de entrada?"
+      },
+      {
+        "paragrafo_docx": 1617,
+        "tipo": "opcao",
+        "texto": "Qual é nossa melhor rota de fuga?"
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1613,
+        "texto": "Quem perceberá primeiro se conseguirmos?"
+      },
+      {
+        "paragrafo_docx": 1614,
+        "texto": "Qual é a defesa que o plano ainda não resolveu?"
+      },
+      {
+        "paragrafo_docx": 1615,
+        "texto": "Quem mais deseja aquilo que vamos roubar?"
+      },
+      {
+        "paragrafo_docx": 1616,
+        "texto": "Qual é nossa melhor rota de entrada?"
+      },
+      {
+        "paragrafo_docx": 1617,
+        "texto": "Qual é nossa melhor rota de fuga?"
+      }
+    ],
+    "texto_original": "Quando estudar e planejar seriamente um roubo, faça três perguntas ao Mestre:\nQuem perceberá primeiro se conseguirmos?\nQual é a defesa que o plano ainda não resolveu?\nQuem mais deseja aquilo que vamos roubar?\nQual é nossa melhor rota de entrada?\nQual é nossa melhor rota de fuga?",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1612"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1618",
+    "paragrafo_docx": 1618,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "PLANO B",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1618,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando um plano errado, declare uma preparação pequena e plausível feita anteriormente. Ela não pode contradizer algo já estabelecido."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando um plano errado, declare uma preparação pequena e plausível feita anteriormente. Ela não pode contradizer algo já estabelecido.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1618"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1619",
+    "paragrafo_docx": 1619,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "TUDO SEGUNDO O PLANO",
+    "requisito_literal": "Heist ou Plano B",
+    "requisito_estruturado": {
+      "tipo": "qualquer",
+      "itens": [
+        {
+          "tipo": "movimento_exato",
+          "movimento_id": "movimento-classe:paragrafo-1612",
+          "titulo_requerido": "HEIST"
+        },
+        {
+          "tipo": "movimento_exato",
+          "movimento_id": "movimento-classe:paragrafo-1618",
+          "titulo_requerido": "PLANO B"
+        }
+      ],
+      "operador_literal": "ou",
+      "status": "interpretacao_literal_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1619,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando um plano no qual participou parecer ter falhado catastroficamente, declare que aquilo ainda estava, de alguma maneira, dentro das possibilidades previstas. Revele uma preparação significativa feita anteriormente que não contradiga nada já estabelecido:"
+      },
+      {
+        "paragrafo_docx": 1620,
+        "tipo": "opcao",
+        "texto": "alguém foi comprado;"
+      },
+      {
+        "paragrafo_docx": 1621,
+        "tipo": "opcao",
+        "texto": "equipamento foi escondido;"
+      },
+      {
+        "paragrafo_docx": 1622,
+        "tipo": "opcao",
+        "texto": "existe uma rota preparada;"
+      },
+      {
+        "paragrafo_docx": 1623,
+        "tipo": "opcao",
+        "texto": "uma pessoa aparentemente hostil trabalha para vocês;"
+      },
+      {
+        "paragrafo_docx": 1624,
+        "tipo": "opcao",
+        "texto": "o objeto verdadeiro está em outro lugar;"
+      },
+      {
+        "paragrafo_docx": 1625,
+        "tipo": "opcao",
+        "texto": "reforços ou uma distração foram preparados;"
+      },
+      {
+        "paragrafo_docx": 1626,
+        "tipo": "opcao",
+        "texto": "ou algo de escala semelhante."
+      },
+      {
+        "paragrafo_docx": 1627,
+        "tipo": "continuacao",
+        "texto": "A preparação é verdadeira. O Mestre dirá qual problema importante ela não resolveu."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1620,
+        "texto": "alguém foi comprado;"
+      },
+      {
+        "paragrafo_docx": 1621,
+        "texto": "equipamento foi escondido;"
+      },
+      {
+        "paragrafo_docx": 1622,
+        "texto": "existe uma rota preparada;"
+      },
+      {
+        "paragrafo_docx": 1623,
+        "texto": "uma pessoa aparentemente hostil trabalha para vocês;"
+      },
+      {
+        "paragrafo_docx": 1624,
+        "texto": "o objeto verdadeiro está em outro lugar;"
+      },
+      {
+        "paragrafo_docx": 1625,
+        "texto": "reforços ou uma distração foram preparados;"
+      },
+      {
+        "paragrafo_docx": 1626,
+        "texto": "ou algo de escala semelhante."
+      }
+    ],
+    "texto_original": "Uma vez por sessão, quando um plano no qual participou parecer ter falhado catastroficamente, declare que aquilo ainda estava, de alguma maneira, dentro das possibilidades previstas. Revele uma preparação significativa feita anteriormente que não contradiga nada já estabelecido:\nalguém foi comprado;\nequipamento foi escondido;\nexiste uma rota preparada;\numa pessoa aparentemente hostil trabalha para vocês;\no objeto verdadeiro está em outro lugar;\nreforços ou uma distração foram preparados;\nou algo de escala semelhante.\nA preparação é verdadeira. O Mestre dirá qual problema importante ela não resolveu.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1619"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1628",
+    "paragrafo_docx": 1628,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "TROMBADINHA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1628,
+        "tipo": "corpo",
+        "texto": "Quando sua mão estiver próxima o suficiente para alcançar um objeto pequeno e ninguém estiver especificamente observando-a, você pode pegá-lo ou colocá-lo sem ser percebido."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando sua mão estiver próxima o suficiente para alcançar um objeto pequeno e ninguém estiver especificamente observando-a, você pode pegá-lo ou colocá-lo sem ser percebido.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1628"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1630",
+    "paragrafo_docx": 1630,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "MÃO QUE NÃO ESTÁ LÁ",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1630,
+        "tipo": "corpo",
+        "texto": "Quando usar magia para manipular discretamente um objeto pequeno à distância, observadores não percebem automaticamente a origem da manipulação."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando usar magia para manipular discretamente um objeto pequeno à distância, observadores não percebem automaticamente a origem da manipulação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1630"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1631",
+    "paragrafo_docx": 1631,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "ILUSÃO DE OPORTUNIDADE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1631,
+        "tipo": "corpo",
+        "texto": "Quando criar uma distração mágica exatamente no momento em que alguém precisa decidir para onde olhar, receba +1 adiante para agir enquanto a atenção estiver desviada."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando criar uma distração mágica exatamente no momento em que alguém precisa decidir para onde olhar, receba +1 adiante para agir enquanto a atenção estiver desviada.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1631"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1632",
+    "paragrafo_docx": 1632,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "MAGIA ROUBADA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1632,
+        "tipo": "corpo",
+        "texto": "Quando observar uma técnica mágica simples sendo realizada e possuir algum meio de reproduzir seu princípio, receba 1 Preparo para imitá-la uma única vez de forma limitada."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando observar uma técnica mágica simples sendo realizada e possuir algum meio de reproduzir seu princípio, receba 1 Preparo para imitá-la uma única vez de forma limitada.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1632"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1633",
+    "paragrafo_docx": 1633,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "LADRÃO DE FEITIÇOS",
+    "requisito_literal": "Magia Roubada",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1632",
+      "titulo_requerido": "MAGIA ROUBADA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1633,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando uma magia for utilizada diretamente contra você e você sobreviver, resistir ou escapar de seu efeito, pode roubar um eco da técnica. Até o fim da sessão, pode reproduzir uma vez uma versão daquela magia cuja escala seja compatível com aquilo que testemunhou. Depois disso, o eco desaparece."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando uma magia for utilizada diretamente contra você e você sobreviver, resistir ou escapar de seu efeito, pode roubar um eco da técnica. Até o fim da sessão, pode reproduzir uma vez uma versão daquela magia cuja escala seja compatível com aquilo que testemunhou. Depois disso, o eco desaparece.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1633"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1634",
+    "paragrafo_docx": 1634,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "LARÁPIO FANTASMAGÓRICO",
+    "requisito_literal": "Ladrão de Feitiços",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1633",
+      "titulo_requerido": "LADRÃO DE FEITIÇOS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1634,
+        "tipo": "corpo",
+        "texto": "Escolha como suas magias roubadas permanecem registradas — livro, cartas, tatuagens, sombras, nomes gravados, frascos, relíquias ou outra forma apropriada.\nQuando uma criatura utilizar diretamente contra você uma magia que possua ou domine e você sobreviver ao efeito, pode tentar amaldiçoá-la. Diga qual magia pretende roubar e role+INT.\n10+: a maldição se estabelece.\n7–9: a maldição se estabelece, mas escolha 1:"
+      },
+      {
+        "paragrafo_docx": 1635,
+        "tipo": "opcao",
+        "texto": "a magia conserva uma condição, custo ou limitação importante que possuía nas mãos do antigo dono;"
+      },
+      {
+        "paragrafo_docx": 1636,
+        "tipo": "opcao",
+        "texto": "a maldição deixa uma ligação perceptível entre vocês que pode ser rastreada ou explorada;"
+      },
+      {
+        "paragrafo_docx": 1637,
+        "tipo": "continuacao",
+        "texto": "O Mestre dirá o que poderia quebrar especificamente esta maldição. \nEnquanto a maldição permanecer:"
+      },
+      {
+        "paragrafo_docx": 1638,
+        "tipo": "opcao",
+        "texto": "você pode utilizá-la como uma magia sua, respeitando suas propriedades, alcance, custos e consequências ficcionais;"
+      },
+      {
+        "paragrafo_docx": 1639,
+        "tipo": "opcao",
+        "texto": "a criatura não pode utilizar a magia roubada;"
+      },
+      {
+        "paragrafo_docx": 1640,
+        "tipo": "continuacao",
+        "texto": "A morte da criatura torna a maldição permanente."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1635,
+        "texto": "a magia conserva uma condição, custo ou limitação importante que possuía nas mãos do antigo dono;"
+      },
+      {
+        "paragrafo_docx": 1636,
+        "texto": "a maldição deixa uma ligação perceptível entre vocês que pode ser rastreada ou explorada;"
+      },
+      {
+        "paragrafo_docx": 1638,
+        "texto": "você pode utilizá-la como uma magia sua, respeitando suas propriedades, alcance, custos e consequências ficcionais;"
+      },
+      {
+        "paragrafo_docx": 1639,
+        "texto": "a criatura não pode utilizar a magia roubada;"
+      }
+    ],
+    "texto_original": "Escolha como suas magias roubadas permanecem registradas — livro, cartas, tatuagens, sombras, nomes gravados, frascos, relíquias ou outra forma apropriada.\nQuando uma criatura utilizar diretamente contra você uma magia que possua ou domine e você sobreviver ao efeito, pode tentar amaldiçoá-la. Diga qual magia pretende roubar e role+INT.\n10+: a maldição se estabelece.\n7–9: a maldição se estabelece, mas escolha 1:\na magia conserva uma condição, custo ou limitação importante que possuía nas mãos do antigo dono;\na maldição deixa uma ligação perceptível entre vocês que pode ser rastreada ou explorada;\nO Mestre dirá o que poderia quebrar especificamente esta maldição. \nEnquanto a maldição permanecer:\nvocê pode utilizá-la como uma magia sua, respeitando suas propriedades, alcance, custos e consequências ficcionais;\na criatura não pode utilizar a magia roubada;\nA morte da criatura torna a maldição permanente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1634"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1641",
+    "paragrafo_docx": 1641,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "MARQUE O ALVO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1641,
+        "tipo": "corpo",
+        "texto": "Quando estudar pessoalmente alguém que pretende matar, pergunte:"
+      },
+      {
+        "paragrafo_docx": 1642,
+        "tipo": "opcao",
+        "texto": "Quem consegue chegar perto dele sem levantar suspeita?"
+      },
+      {
+        "paragrafo_docx": 1643,
+        "tipo": "opcao",
+        "texto": "Quando ele fica mais vulnerável?"
+      },
+      {
+        "paragrafo_docx": 1644,
+        "tipo": "opcao",
+        "texto": "O que sua segurança considera impossível acontecer?"
+      },
+      {
+        "paragrafo_docx": 1645,
+        "tipo": "continuacao",
+        "texto": "Receba +1 adiante quando agir diretamente segundo uma resposta."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1642,
+        "texto": "Quem consegue chegar perto dele sem levantar suspeita?"
+      },
+      {
+        "paragrafo_docx": 1643,
+        "texto": "Quando ele fica mais vulnerável?"
+      },
+      {
+        "paragrafo_docx": 1644,
+        "texto": "O que sua segurança considera impossível acontecer?"
+      }
+    ],
+    "texto_original": "Quando estudar pessoalmente alguém que pretende matar, pergunte:\nQuem consegue chegar perto dele sem levantar suspeita?\nQuando ele fica mais vulnerável?\nO que sua segurança considera impossível acontecer?\nReceba +1 adiante quando agir diretamente segundo uma resposta.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1641"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1646",
+    "paragrafo_docx": 1646,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "VENENO É UMA FERRAMENTA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1646,
+        "tipo": "corpo",
+        "texto": "Escolha três venenos que sabe preparar e diga quais ingredientes são necessários para produzi-los. Você pode escolhê-los da lista abaixo ou criar outros com o Mestre. Quando possuir os ingredientes necessários e algum tempo para trabalhar, produza uma dose de qualquer veneno que conheça sem precisar rolar.\nVenenos conhecidos:"
+      },
+      {
+        "paragrafo_docx": 1647,
+        "tipo": "opcao",
+        "texto": "Óleo de Tagit — aplicado: quando ingerido ou introduzido no corpo, faz a vítima cair em um sono leve."
+      },
+      {
+        "paragrafo_docx": 1648,
+        "tipo": "opcao",
+        "texto": "Erva-Sangue — contato: enquanto o veneno permanecer ativo, quando a vítima causar dano, reduza sua Periculosidade em um grau."
+      },
+      {
+        "paragrafo_docx": 1649,
+        "tipo": "opcao",
+        "texto": "Raiz Dourada — aplicada: a vítima passa a tratar a próxima criatura que encontrar como alguém confiável, até que essa confiança seja claramente contrariada."
+      },
+      {
+        "paragrafo_docx": 1650,
+        "tipo": "opcao",
+        "texto": "Lágrimas de Serpente — contato: ataques contra a vítima tornam-se particularmente eficazes; ao rolar dano contra ela, role duas vezes e fique com o melhor resultado."
+      },
+      {
+        "paragrafo_docx": 1651,
+        "tipo": "continuacao",
+        "texto": "Você pode substituir qualquer escolha acima por um veneno próprio criado com o Mestre. Diga o efeito que deseja produzir e estabeleçam:"
+      },
+      {
+        "paragrafo_docx": 1652,
+        "tipo": "opcao",
+        "texto": "sua forma de aplicação — contato, ferimento, ingestão, inalação ou outra;"
+      },
+      {
+        "paragrafo_docx": 1653,
+        "tipo": "opcao",
+        "texto": "os ingredientes necessários;"
+      },
+      {
+        "paragrafo_docx": 1654,
+        "tipo": "opcao",
+        "texto": "quanto tempo leva para agir, se isso for relevante;"
+      },
+      {
+        "paragrafo_docx": 1655,
+        "tipo": "opcao",
+        "texto": "alguma condição ou limitação necessária para manter o efeito na mesma escala dos venenos acima."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1647,
+        "texto": "Óleo de Tagit — aplicado: quando ingerido ou introduzido no corpo, faz a vítima cair em um sono leve."
+      },
+      {
+        "paragrafo_docx": 1648,
+        "texto": "Erva-Sangue — contato: enquanto o veneno permanecer ativo, quando a vítima causar dano, reduza sua Periculosidade em um grau."
+      },
+      {
+        "paragrafo_docx": 1649,
+        "texto": "Raiz Dourada — aplicada: a vítima passa a tratar a próxima criatura que encontrar como alguém confiável, até que essa confiança seja claramente contrariada."
+      },
+      {
+        "paragrafo_docx": 1650,
+        "texto": "Lágrimas de Serpente — contato: ataques contra a vítima tornam-se particularmente eficazes; ao rolar dano contra ela, role duas vezes e fique com o melhor resultado."
+      },
+      {
+        "paragrafo_docx": 1652,
+        "texto": "sua forma de aplicação — contato, ferimento, ingestão, inalação ou outra;"
+      },
+      {
+        "paragrafo_docx": 1653,
+        "texto": "os ingredientes necessários;"
+      },
+      {
+        "paragrafo_docx": 1654,
+        "texto": "quanto tempo leva para agir, se isso for relevante;"
+      },
+      {
+        "paragrafo_docx": 1655,
+        "texto": "alguma condição ou limitação necessária para manter o efeito na mesma escala dos venenos acima."
+      }
+    ],
+    "texto_original": "Escolha três venenos que sabe preparar e diga quais ingredientes são necessários para produzi-los. Você pode escolhê-los da lista abaixo ou criar outros com o Mestre. Quando possuir os ingredientes necessários e algum tempo para trabalhar, produza uma dose de qualquer veneno que conheça sem precisar rolar.\nVenenos conhecidos:\nÓleo de Tagit — aplicado: quando ingerido ou introduzido no corpo, faz a vítima cair em um sono leve.\nErva-Sangue — contato: enquanto o veneno permanecer ativo, quando a vítima causar dano, reduza sua Periculosidade em um grau.\nRaiz Dourada — aplicada: a vítima passa a tratar a próxima criatura que encontrar como alguém confiável, até que essa confiança seja claramente contrariada.\nLágrimas de Serpente — contato: ataques contra a vítima tornam-se particularmente eficazes; ao rolar dano contra ela, role duas vezes e fique com o melhor resultado.\nVocê pode substituir qualquer escolha acima por um veneno próprio criado com o Mestre. Diga o efeito que deseja produzir e estabeleçam:\nsua forma de aplicação — contato, ferimento, ingestão, inalação ou outra;\nos ingredientes necessários;\nquanto tempo leva para agir, se isso for relevante;\nalguma condição ou limitação necessária para manter o efeito na mesma escala dos venenos acima.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1646"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1656",
+    "paragrafo_docx": 1656,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "ROSTO NA MULTIDÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1656,
+        "tipo": "corpo",
+        "texto": "Quando preparar um disfarce para assumir uma posição social genérica — criado, guarda, comerciante, sacerdote, mensageiro — alguém que não o conhece muito bem é incapaz de distingui-lo. Imitar uma pessoa específica continua muito mais difícil."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando preparar um disfarce para assumir uma posição social genérica — criado, guarda, comerciante, sacerdote, mensageiro — alguém que não o conhece muito bem é incapaz de distingui-lo. Imitar uma pessoa específica continua muito mais difícil.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1656"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1657",
+    "paragrafo_docx": 1657,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "EU JÁ ESTAVA AQUI",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1657,
+        "tipo": "corpo",
+        "texto": "Quando revelar que entrou previamente numa posição plausível usando furtividade, explique como chegou ali.\nSe isso exigiria atravessar algum perigo real, Desafie o Perigo retroativamente."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando revelar que entrou previamente numa posição plausível usando furtividade, explique como chegou ali.\nSe isso exigiria atravessar algum perigo real, Desafie o Perigo retroativamente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1657"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1658",
+    "paragrafo_docx": 1658,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "FULANO DA SILVA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1658,
+        "tipo": "corpo",
+        "texto": "Crie uma identidade falsa completa. Enquanto agir de modo coerente com ela, pessoas sem evidência específica não têm motivo para tratá-la como falsa."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Crie uma identidade falsa completa. Enquanto agir de modo coerente com ela, pessoas sem evidência específica não têm motivo para tratá-la como falsa.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1658"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1659",
+    "paragrafo_docx": 1659,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "REDE DE INFORMAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1659,
+        "tipo": "corpo",
+        "texto": "Quando chegar a um centro civilizado onde sua organização poderia atuar, diga que tipo de contato procura. O Mestre dirá quem existe e o que ele quer antes de ajudá-lo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando chegar a um centro civilizado onde sua organização poderia atuar, diga que tipo de contato procura. O Mestre dirá quem existe e o que ele quer antes de ajudá-lo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1659"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1660",
+    "paragrafo_docx": 1660,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "MENSAGEM INOCENTE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1660,
+        "tipo": "corpo",
+        "texto": "Quando esconder informação dentro de texto, gesto, objeto ou conversa comum usando um código conhecido, apenas quem conhece o código percebe que existe uma mensagem."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando esconder informação dentro de texto, gesto, objeto ou conversa comum usando um código conhecido, apenas quem conhece o código percebe que existe uma mensagem.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1660"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1662",
+    "paragrafo_docx": 1662,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "INVESTIGADOR",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1662,
+        "tipo": "corpo",
+        "texto": "Quando reconstruir um acontecimento através de pistas físicas, pode usar INT em vez de SAB para Discernir Realidades e acrescentar: “Qual detalhe aqui foi deliberadamente escondido?”"
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando reconstruir um acontecimento através de pistas físicas, pode usar INT em vez de SAB para Discernir Realidades e acrescentar: “Qual detalhe aqui foi deliberadamente escondido?”",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1662"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1663",
+    "paragrafo_docx": 1663,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "A MENTIRA NÃO ENCAIXA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1663,
+        "tipo": "corpo",
+        "texto": "Quando alguém lhe contar uma versão dos acontecimentos incompatível com evidência que você já possui, você percebe imediatamente onde está a contradição. Você não detecta automaticamente qual versão é verdadeira."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém lhe contar uma versão dos acontecimentos incompatível com evidência que você já possui, você percebe imediatamente onde está a contradição. Você não detecta automaticamente qual versão é verdadeira.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1663"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1664",
+    "paragrafo_docx": 1664,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "O DETALHE IMPOSSÍVEL",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1664,
+        "tipo": "corpo",
+        "texto": "Quando uma investigação parecer completamente fechada, você pode perguntar ao Mestre:\n“Que evidência existe aqui que não deveria existir?”\nO Mestre indicará algo verificável."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando uma investigação parecer completamente fechada, você pode perguntar ao Mestre:\n“Que evidência existe aqui que não deveria existir?”\nO Mestre indicará algo verificável.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1664"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1665",
+    "paragrafo_docx": 1665,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "ROTA DE FUGA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1665,
+        "tipo": "corpo",
+        "texto": "Quando decidir sair de uma situação agora e existir alguma rota plausível pela qual possa escapar, diga por onde vai e role+DES.\n10+: você escapa. Escolha 2.\n7–9: você escapa. Escolha 1."
+      },
+      {
+        "paragrafo_docx": 1666,
+        "tipo": "opcao",
+        "texto": "leve consigo outra pessoa voluntária ou algo difícil de carregar;"
+      },
+      {
+        "paragrafo_docx": 1667,
+        "tipo": "opcao",
+        "texto": "não deixe para trás nada importante;"
+      },
+      {
+        "paragrafo_docx": 1668,
+        "tipo": "opcao",
+        "texto": "seus perseguidores não descobrem imediatamente por onde você saiu;"
+      },
+      {
+        "paragrafo_docx": 1669,
+        "tipo": "opcao",
+        "texto": "termine numa posição próxima segura ou exatamente onde pretendia chegar."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1666,
+        "texto": "leve consigo outra pessoa voluntária ou algo difícil de carregar;"
+      },
+      {
+        "paragrafo_docx": 1667,
+        "texto": "não deixe para trás nada importante;"
+      },
+      {
+        "paragrafo_docx": 1668,
+        "texto": "seus perseguidores não descobrem imediatamente por onde você saiu;"
+      },
+      {
+        "paragrafo_docx": 1669,
+        "texto": "termine numa posição próxima segura ou exatamente onde pretendia chegar."
+      }
+    ],
+    "texto_original": "Quando decidir sair de uma situação agora e existir alguma rota plausível pela qual possa escapar, diga por onde vai e role+DES.\n10+: você escapa. Escolha 2.\n7–9: você escapa. Escolha 1.\nleve consigo outra pessoa voluntária ou algo difícil de carregar;\nnão deixe para trás nada importante;\nseus perseguidores não descobrem imediatamente por onde você saiu;\ntermine numa posição próxima segura ou exatamente onde pretendia chegar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1665"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1670",
+    "paragrafo_docx": 1670,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "GATUNO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1670,
+        "tipo": "corpo",
+        "texto": "Paredes, parapeitos, janelas, telhados, cordas, becos estreitos e outras estruturas urbanas que poderiam sustentar seu corpo são caminhos normais para você. Escalar, saltar entre eles ou atravessar espaços apertados não constitui perigo por si só. Algo acontecendo durante a travessia ainda pode obrigá-lo a Desafiar o Perigo, mas você recebe +1 constante."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Paredes, parapeitos, janelas, telhados, cordas, becos estreitos e outras estruturas urbanas que poderiam sustentar seu corpo são caminhos normais para você. Escalar, saltar entre eles ou atravessar espaços apertados não constitui perigo por si só. Algo acontecendo durante a travessia ainda pode obrigá-lo a Desafiar o Perigo, mas você recebe +1 constante.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1670"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1671",
+    "paragrafo_docx": 1671,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "DESAPARECER",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1671,
+        "tipo": "corpo",
+        "texto": "Quando tiver certeza de que ninguém está prestando atenção direta em você, pode sair completamente de uma cena sem ser automaticamente percebido.\nSe estiver cercado, contido, vigiado ou em outra situação que torne isso particularmente difícil, pergunte ao Mestre:\n“O que preciso fazer para desaparecer daqui?”\nEle lhe dará de 1 a 3 condições:"
+      },
+      {
+        "paragrafo_docx": 1672,
+        "tipo": "opcao",
+        "texto": "deixe algo importante para trás;"
+      },
+      {
+        "paragrafo_docx": 1673,
+        "tipo": "opcao",
+        "texto": "atravesse primeiro algum perigo;"
+      },
+      {
+        "paragrafo_docx": 1674,
+        "tipo": "opcao",
+        "texto": "leve um problema consigo;"
+      },
+      {
+        "paragrafo_docx": 1675,
+        "tipo": "opcao",
+        "texto": "espere por uma oportunidade específica;"
+      },
+      {
+        "paragrafo_docx": 1676,
+        "tipo": "opcao",
+        "texto": "quando reaparecer, alguma complicação estará esperando por você."
+      },
+      {
+        "paragrafo_docx": 1677,
+        "tipo": "continuacao",
+        "texto": "Cumpra as condições e você desaparece."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1672,
+        "texto": "deixe algo importante para trás;"
+      },
+      {
+        "paragrafo_docx": 1673,
+        "texto": "atravesse primeiro algum perigo;"
+      },
+      {
+        "paragrafo_docx": 1674,
+        "texto": "leve um problema consigo;"
+      },
+      {
+        "paragrafo_docx": 1675,
+        "texto": "espere por uma oportunidade específica;"
+      },
+      {
+        "paragrafo_docx": 1676,
+        "texto": "quando reaparecer, alguma complicação estará esperando por você."
+      }
+    ],
+    "texto_original": "Quando tiver certeza de que ninguém está prestando atenção direta em você, pode sair completamente de uma cena sem ser automaticamente percebido.\nSe estiver cercado, contido, vigiado ou em outra situação que torne isso particularmente difícil, pergunte ao Mestre:\n“O que preciso fazer para desaparecer daqui?”\nEle lhe dará de 1 a 3 condições:\ndeixe algo importante para trás;\natravesse primeiro algum perigo;\nleve um problema consigo;\nespere por uma oportunidade específica;\nquando reaparecer, alguma complicação estará esperando por você.\nCumpra as condições e você desaparece.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1671"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1678",
+    "paragrafo_docx": 1678,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "AÇÃO ARDILOSA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1678,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando uma ação sua criar uma abertura momentânea, aproveite-a antes que a situação consiga se reorganizar para:"
+      },
+      {
+        "paragrafo_docx": 1679,
+        "tipo": "opcao",
+        "texto": "alcançar cobertura próxima;"
+      },
+      {
+        "paragrafo_docx": 1680,
+        "tipo": "opcao",
+        "texto": "sair do alcance imediato de alguém;"
+      },
+      {
+        "paragrafo_docx": 1681,
+        "tipo": "opcao",
+        "texto": "atravessar uma passagem que estava prestes a se fechar;"
+      },
+      {
+        "paragrafo_docx": 1682,
+        "tipo": "opcao",
+        "texto": "alcançar, pegar ou soltar um pequeno objeto desprotegido."
+      },
+      {
+        "paragrafo_docx": 1683,
+        "tipo": "continuacao",
+        "texto": "Isso não permite atravessar uma ameaça que ainda esteja efetivamente restringindo seu movimento."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1679,
+        "texto": "alcançar cobertura próxima;"
+      },
+      {
+        "paragrafo_docx": 1680,
+        "texto": "sair do alcance imediato de alguém;"
+      },
+      {
+        "paragrafo_docx": 1681,
+        "texto": "atravessar uma passagem que estava prestes a se fechar;"
+      },
+      {
+        "paragrafo_docx": 1682,
+        "texto": "alcançar, pegar ou soltar um pequeno objeto desprotegido."
+      }
+    ],
+    "texto_original": "Uma vez por cena, quando uma ação sua criar uma abertura momentânea, aproveite-a antes que a situação consiga se reorganizar para:\nalcançar cobertura próxima;\nsair do alcance imediato de alguém;\natravessar uma passagem que estava prestes a se fechar;\nalcançar, pegar ou soltar um pequeno objeto desprotegido.\nIsso não permite atravessar uma ameaça que ainda esteja efetivamente restringindo seu movimento.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1678"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1684",
+    "paragrafo_docx": 1684,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "POR UM FIO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1684,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando uma violência que você possa perceber estiver prestes a atingi-lo e existir algum fragmento plausível de segurança ao seu alcance, abandone imediatamente sua posição, aquilo que estava segurando ou algum objetivo imediato para alcançá-lo. Reduza pela metade o dano ou efeito e diga onde terminou. \nVocê evitou o pior. Não necessariamente saiu da situação em vantagem."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando uma violência que você possa perceber estiver prestes a atingi-lo e existir algum fragmento plausível de segurança ao seu alcance, abandone imediatamente sua posição, aquilo que estava segurando ou algum objetivo imediato para alcançá-lo. Reduza pela metade o dano ou efeito e diga onde terminou. \nVocê evitou o pior. Não necessariamente saiu da situação em vantagem.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1684"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1685",
+    "paragrafo_docx": 1685,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "JOGO SUJO",
+    "requisito_literal": "Golpe pelas Costas",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1604",
+      "titulo_requerido": "GOLPE PELAS COSTAS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1685,
+        "tipo": "corpo",
+        "texto": "Quando um adversário estiver seriamente distraído, desequilibrado, contido, cegado, ocupado com outra ameaça ou de alguma outra maneira incapaz de dedicar toda a atenção a você, pode utilizar Golpe pelas Costas mesmo que ele ainda seja capaz de reagir. Em um 7–9, ele consegue reagir imediatamente depois do golpe, a menos que você escolha impedi-lo de reagir imediatamente entre suas opções."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando um adversário estiver seriamente distraído, desequilibrado, contido, cegado, ocupado com outra ameaça ou de alguma outra maneira incapaz de dedicar toda a atenção a você, pode utilizar Golpe pelas Costas mesmo que ele ainda seja capaz de reagir. Em um 7–9, ele consegue reagir imediatamente depois do golpe, a menos que você escolha impedi-lo de reagir imediatamente entre suas opções.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1685"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1686",
+    "paragrafo_docx": 1686,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "OLHO PARA O SAQUE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1686,
+        "tipo": "corpo",
+        "texto": "Quando Discernir Realidades num lugar onde riquezas, contrabando ou objetos valiosos possam estar escondidos, acrescente:"
+      },
+      {
+        "paragrafo_docx": 1687,
+        "tipo": "opcao",
+        "texto": "O que aqui vale muito mais do que parece?"
+      },
+      {
+        "paragrafo_docx": 1688,
+        "tipo": "opcao",
+        "texto": "Onde alguém esperaria que ninguém procurasse algo valioso?"
+      },
+      {
+        "paragrafo_docx": 1689,
+        "tipo": "continuacao",
+        "texto": "Quando agir segundo uma dessas respostas, o +1 adiante normal de Discernir Realidades continua se aplicando."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1687,
+        "texto": "O que aqui vale muito mais do que parece?"
+      },
+      {
+        "paragrafo_docx": 1688,
+        "texto": "Onde alguém esperaria que ninguém procurasse algo valioso?"
+      }
+    ],
+    "texto_original": "Quando Discernir Realidades num lugar onde riquezas, contrabando ou objetos valiosos possam estar escondidos, acrescente:\nO que aqui vale muito mais do que parece?\nOnde alguém esperaria que ninguém procurasse algo valioso?\nQuando agir segundo uma dessas respostas, o +1 adiante normal de Discernir Realidades continua se aplicando.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1686"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1690",
+    "paragrafo_docx": 1690,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "RIQUEZA E BOM GOSTO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1690,
+        "tipo": "corpo",
+        "texto": "Quando exibir deliberadamente diante de alguém algo que possua valor suficiente para despertar seu desejo, pergunte ao Mestre: “O que esta pessoa estaria disposta a fazer para possuir algo assim?”\nEle responderá honestamente. Se aquilo puder realmente servir como pagamento, promessa ou tentação, conta como influência para Negociar e você recebe +1 para tal."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando exibir deliberadamente diante de alguém algo que possua valor suficiente para despertar seu desejo, pergunte ao Mestre: “O que esta pessoa estaria disposta a fazer para possuir algo assim?”\nEle responderá honestamente. Se aquilo puder realmente servir como pagamento, promessa ou tentação, conta como influência para Negociar e você recebe +1 para tal.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1690"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1692",
+    "paragrafo_docx": 1692,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "RECEPTADOR",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1692,
+        "tipo": "corpo",
+        "texto": "Quando procurar alguém disposto a comprar algo roubado, proibido, comprometedor ou difícil de vender legalmente, você consegue encontrar um comprador se houver atividade criminosa plausível na região. Role+CAR.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 1693,
+        "tipo": "opcao",
+        "texto": "ele paga algo próximo do verdadeiro valor;"
+      },
+      {
+        "paragrafo_docx": 1694,
+        "tipo": "opcao",
+        "texto": "não exige saber de onde veio;"
+      },
+      {
+        "paragrafo_docx": 1695,
+        "tipo": "opcao",
+        "texto": "pode oferecer outra coisa útil em troca;"
+      },
+      {
+        "paragrafo_docx": 1696,
+        "tipo": "opcao",
+        "texto": "a transação não chega imediatamente aos ouvidos de quem você preferiria evitar."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1693,
+        "texto": "ele paga algo próximo do verdadeiro valor;"
+      },
+      {
+        "paragrafo_docx": 1694,
+        "texto": "não exige saber de onde veio;"
+      },
+      {
+        "paragrafo_docx": 1695,
+        "texto": "pode oferecer outra coisa útil em troca;"
+      },
+      {
+        "paragrafo_docx": 1696,
+        "texto": "a transação não chega imediatamente aos ouvidos de quem você preferiria evitar."
+      }
+    ],
+    "texto_original": "Quando procurar alguém disposto a comprar algo roubado, proibido, comprometedor ou difícil de vender legalmente, você consegue encontrar um comprador se houver atividade criminosa plausível na região. Role+CAR.\n10+: escolha 2.\n7–9: escolha 1.\nele paga algo próximo do verdadeiro valor;\nnão exige saber de onde veio;\npode oferecer outra coisa útil em troca;\na transação não chega imediatamente aos ouvidos de quem você preferiria evitar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1692"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1697",
+    "paragrafo_docx": 1697,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "GÍRIA DO SUBMUNDO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1697,
+        "tipo": "corpo",
+        "texto": "Você reconhece códigos, sinais, marcas, expressões e convenções usados pelo submundo. Quando chegar a um lugar onde exista atividade criminosa organizada, pergunte uma:"
+      },
+      {
+        "paragrafo_docx": 1698,
+        "tipo": "opcao",
+        "texto": "Quem controla este território?"
+      },
+      {
+        "paragrafo_docx": 1699,
+        "tipo": "opcao",
+        "texto": "Onde alguém como eu poderia se esconder?"
+      },
+      {
+        "paragrafo_docx": 1700,
+        "tipo": "opcao",
+        "texto": "Quem compra coisas que não deveria comprar?"
+      },
+      {
+        "paragrafo_docx": 1701,
+        "tipo": "opcao",
+        "texto": "Que crime recente deixou todo mundo nervoso?"
+      },
+      {
+        "paragrafo_docx": 1702,
+        "tipo": "opcao",
+        "texto": "Que sinal indicaria que estou falando com alguém do meio?"
+      },
+      {
+        "paragrafo_docx": 1703,
+        "tipo": "continuacao",
+        "texto": "O Mestre responderá através daquilo que os códigos locais poderiam revelar."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1698,
+        "texto": "Quem controla este território?"
+      },
+      {
+        "paragrafo_docx": 1699,
+        "texto": "Onde alguém como eu poderia se esconder?"
+      },
+      {
+        "paragrafo_docx": 1700,
+        "texto": "Quem compra coisas que não deveria comprar?"
+      },
+      {
+        "paragrafo_docx": 1701,
+        "texto": "Que crime recente deixou todo mundo nervoso?"
+      },
+      {
+        "paragrafo_docx": 1702,
+        "texto": "Que sinal indicaria que estou falando com alguém do meio?"
+      }
+    ],
+    "texto_original": "Você reconhece códigos, sinais, marcas, expressões e convenções usados pelo submundo. Quando chegar a um lugar onde exista atividade criminosa organizada, pergunte uma:\nQuem controla este território?\nOnde alguém como eu poderia se esconder?\nQuem compra coisas que não deveria comprar?\nQue crime recente deixou todo mundo nervoso?\nQue sinal indicaria que estou falando com alguém do meio?\nO Mestre responderá através daquilo que os códigos locais poderiam revelar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1697"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1704",
+    "paragrafo_docx": 1704,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "NÃO PRECISO SABER COMO FUNCIONA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1704,
+        "tipo": "corpo",
+        "texto": "Quando tentar utilizar um objeto mágico cujo funcionamento normalmente exigiria treinamento, tradição ou conhecimento que você não possui, diga o que observou sobre como ele é usado e role+INT.\n10+: faça-o funcionar como pretendia.\n7–9: funciona, mas escolha 1:"
+      },
+      {
+        "paragrafo_docx": 1705,
+        "tipo": "opcao",
+        "texto": "consome mais recursos do que deveria;"
+      },
+      {
+        "paragrafo_docx": 1706,
+        "tipo": "opcao",
+        "texto": "produz uma versão limitada ou instável do efeito;"
+      },
+      {
+        "paragrafo_docx": 1707,
+        "tipo": "opcao",
+        "texto": "o objeto percebe que você não é seu usuário legítimo;"
+      },
+      {
+        "paragrafo_docx": 1708,
+        "tipo": "opcao",
+        "texto": "você não conseguirá repetir o truque sem aprender alguma coisa nova."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1705,
+        "texto": "consome mais recursos do que deveria;"
+      },
+      {
+        "paragrafo_docx": 1706,
+        "texto": "produz uma versão limitada ou instável do efeito;"
+      },
+      {
+        "paragrafo_docx": 1707,
+        "texto": "o objeto percebe que você não é seu usuário legítimo;"
+      },
+      {
+        "paragrafo_docx": 1708,
+        "texto": "você não conseguirá repetir o truque sem aprender alguma coisa nova."
+      }
+    ],
+    "texto_original": "Quando tentar utilizar um objeto mágico cujo funcionamento normalmente exigiria treinamento, tradição ou conhecimento que você não possui, diga o que observou sobre como ele é usado e role+INT.\n10+: faça-o funcionar como pretendia.\n7–9: funciona, mas escolha 1:\nconsome mais recursos do que deveria;\nproduz uma versão limitada ou instável do efeito;\no objeto percebe que você não é seu usuário legítimo;\nvocê não conseguirá repetir o truque sem aprender alguma coisa nova.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1704"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1709",
+    "paragrafo_docx": 1709,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "FALSÁRIO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1709,
+        "tipo": "corpo",
+        "texto": "Quando possuir um exemplar legítimo ou material suficiente para estudar sua fabricação, pode produzir uma falsificação convincente de:"
+      },
+      {
+        "paragrafo_docx": 1710,
+        "tipo": "opcao",
+        "texto": "documento;"
+      },
+      {
+        "paragrafo_docx": 1711,
+        "tipo": "opcao",
+        "texto": "assinatura;"
+      },
+      {
+        "paragrafo_docx": 1712,
+        "tipo": "opcao",
+        "texto": "selo;"
+      },
+      {
+        "paragrafo_docx": 1713,
+        "tipo": "opcao",
+        "texto": "credencial;"
+      },
+      {
+        "paragrafo_docx": 1714,
+        "tipo": "opcao",
+        "texto": "moeda;"
+      },
+      {
+        "paragrafo_docx": 1715,
+        "tipo": "opcao",
+        "texto": "símbolo de autoridade;"
+      },
+      {
+        "paragrafo_docx": 1716,
+        "tipo": "opcao",
+        "texto": "ou algo semelhante."
+      },
+      {
+        "paragrafo_docx": 1717,
+        "tipo": "continuacao",
+        "texto": "Uma inspeção casual a aceita como legítima. Alguém que conheça exatamente o original ou investigue especificamente sua autenticidade ainda pode descobrir o engano."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1710,
+        "texto": "documento;"
+      },
+      {
+        "paragrafo_docx": 1711,
+        "texto": "assinatura;"
+      },
+      {
+        "paragrafo_docx": 1712,
+        "texto": "selo;"
+      },
+      {
+        "paragrafo_docx": 1713,
+        "texto": "credencial;"
+      },
+      {
+        "paragrafo_docx": 1714,
+        "texto": "moeda;"
+      },
+      {
+        "paragrafo_docx": 1715,
+        "texto": "símbolo de autoridade;"
+      },
+      {
+        "paragrafo_docx": 1716,
+        "texto": "ou algo semelhante."
+      }
+    ],
+    "texto_original": "Quando possuir um exemplar legítimo ou material suficiente para estudar sua fabricação, pode produzir uma falsificação convincente de:\ndocumento;\nassinatura;\nselo;\ncredencial;\nmoeda;\nsímbolo de autoridade;\nou algo semelhante.\nUma inspeção casual a aceita como legítima. Alguém que conheça exatamente o original ou investigue especificamente sua autenticidade ainda pode descobrir o engano.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1709"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1718",
+    "paragrafo_docx": 1718,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "ROUBAR UM ROSTO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1718,
+        "tipo": "corpo",
+        "texto": "Quando observar cuidadosamente uma pessoa durante tempo suficiente e preparar um disfarce especificamente para imitá-la, você consegue reproduzir aparência, voz, postura e maneirismos observáveis. Quem a conhece apenas superficialmente não percebe automaticamente a troca. Você não recebe suas memórias, conhecimentos, relações ou hábitos que não teve oportunidade de observar."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando observar cuidadosamente uma pessoa durante tempo suficiente e preparar um disfarce especificamente para imitá-la, você consegue reproduzir aparência, voz, postura e maneirismos observáveis. Quem a conhece apenas superficialmente não percebe automaticamente a troca. Você não recebe suas memórias, conhecimentos, relações ou hábitos que não teve oportunidade de observar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1718"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1719",
+    "paragrafo_docx": 1719,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "DUPLO JOGO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1719,
+        "tipo": "corpo",
+        "texto": "Quando fornecer deliberadamente versões diferentes da mesma informação a duas ou mais pessoas para descobrir quem está vazando informações, diga quem ouviu cada versão. Quando uma dessas versões reaparecer onde não deveria, você reconhece imediatamente por qual cadeia de informação ela provavelmente passou."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando fornecer deliberadamente versões diferentes da mesma informação a duas ou mais pessoas para descobrir quem está vazando informações, diga quem ouviu cada versão. Quando uma dessas versões reaparecer onde não deveria, você reconhece imediatamente por qual cadeia de informação ela provavelmente passou.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1719"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1720",
+    "paragrafo_docx": 1720,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "CONTRABANDO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1720,
+        "tipo": "corpo",
+        "texto": "Quando esconder antecipadamente um objeto pequeno num lugar que conhece bem ou em seu próprio equipamento, diga onde o colocou. Uma busca comum não o encontra. Alguém que saiba exatamente o que procura, possua uma pista concreta ou desmonte sistematicamente o esconderijo ainda pode encontrá-lo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando esconder antecipadamente um objeto pequeno num lugar que conhece bem ou em seu próprio equipamento, diga onde o colocou. Uma busca comum não o encontra. Alguém que saiba exatamente o que procura, possua uma pista concreta ou desmonte sistematicamente o esconderijo ainda pode encontrá-lo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1720"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1721",
+    "paragrafo_docx": 1721,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "PLANTAR A PROVA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1721,
+        "tipo": "corpo",
+        "texto": "Quando colocar evidência cuidadosamente preparada para apontar para uma pessoa, grupo ou versão dos acontecimentos, diga qual conclusão aquela prova pretende sugerir. Quem encontrá-la e já considerar essa conclusão plausível terá motivo concreto para acreditar nela. Uma investigação cuidadosa ainda pode revelar inconsistências."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando colocar evidência cuidadosamente preparada para apontar para uma pessoa, grupo ou versão dos acontecimentos, diga qual conclusão aquela prova pretende sugerir. Quem encontrá-la e já considerar essa conclusão plausível terá motivo concreto para acreditar nela. Uma investigação cuidadosa ainda pode revelar inconsistências.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1721"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1722",
+    "paragrafo_docx": 1722,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "DEDUÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1722,
+        "tipo": "corpo",
+        "texto": "Quando juntar duas ou mais pistas independentes e apresentar uma hipótese que explique todas elas, pergunte ao Mestre:\n“O que eu precisaria encontrar para provar ou refutar esta hipótese?” Ele responderá com algo verificável.\nVocê não descobre automaticamente se sua hipótese está correta."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando juntar duas ou mais pistas independentes e apresentar uma hipótese que explique todas elas, pergunte ao Mestre:\n“O que eu precisaria encontrar para provar ou refutar esta hipótese?” Ele responderá com algo verificável.\nVocê não descobre automaticamente se sua hipótese está correta.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1722"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1723",
+    "paragrafo_docx": 1723,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "NÃO EXISTEM COINCIDÊNCIAS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1723,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando duas pistas estabelecidas parecerem completamente desconectadas, pergunte:\n“Existe uma relação significativa entre estas duas coisas?” O Mestre responderá honestamente. \nSe existir, ele dirá a natureza geral da conexão, não toda a explicação."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando duas pistas estabelecidas parecerem completamente desconectadas, pergunte:\n“Existe uma relação significativa entre estas duas coisas?” O Mestre responderá honestamente. \nSe existir, ele dirá a natureza geral da conexão, não toda a explicação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1723"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1724",
+    "paragrafo_docx": 1724,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "CUTUCAR A FERIDA",
+    "requisito_literal": "Perfil",
+    "requisito_estruturado": {
+      "tipo": "referencia_sem_alvo",
+      "texto_literal": "Perfil",
+      "candidatos_confirmados": [],
+      "status": "exige_revisao_autoral_antes_de_qualquer_aquisicao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1724,
+        "tipo": "corpo",
+        "texto": "Quando souber qual comportamento alguém está tentando esconder e deliberadamente colocar essa pessoa numa situação que pressione exatamente esse comportamento, pergunte:\n“Que sinal involuntário denuncia o esforço dela para continuar escondendo isso?” \nO Mestre responderá honestamente. Se ela conseguir esconder completamente o sinal, terá que abrir mão de alguma outra coisa concreta na cena para manter o controle."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando souber qual comportamento alguém está tentando esconder e deliberadamente colocar essa pessoa numa situação que pressione exatamente esse comportamento, pergunte:\n“Que sinal involuntário denuncia o esforço dela para continuar escondendo isso?” \nO Mestre responderá honestamente. Se ela conseguir esconder completamente o sinal, terá que abrir mão de alguma outra coisa concreta na cena para manter o controle.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1724"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1726",
+    "paragrafo_docx": 1726,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "DISFARCE ILUSÓRIO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1726,
+        "tipo": "corpo",
+        "texto": "Quando envolver sua aparência numa ilusão, pode alterar instantaneamente rosto, roupas, voz aparente e pequenos detalhes visuais. A ilusão não altera seu corpo verdadeiro. Toque, medidas físicas incompatíveis ou sentidos que não dependam da aparência podem revelar o engano. Uma perturbação séria da sua concentração pode desfazer a ilusão."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando envolver sua aparência numa ilusão, pode alterar instantaneamente rosto, roupas, voz aparente e pequenos detalhes visuais. A ilusão não altera seu corpo verdadeiro. Toque, medidas físicas incompatíveis ou sentidos que não dependam da aparência podem revelar o engano. Uma perturbação séria da sua concentração pode desfazer a ilusão.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1726"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1727",
+    "paragrafo_docx": 1727,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "SILÊNCIO ROUBADO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1727,
+        "tipo": "corpo",
+        "texto": "Quando tocar uma superfície e roubar o som de uma pequena área ao redor dela, nenhum som produzido dentro atravessa seus limites e nenhum som externo entra normalmente. O silêncio dura enquanto você mantiver a magia ou até alguém romper aquilo que a sustenta. Você também não consegue ouvir através dela apenas por ser o conjurador."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando tocar uma superfície e roubar o som de uma pequena área ao redor dela, nenhum som produzido dentro atravessa seus limites e nenhum som externo entra normalmente. O silêncio dura enquanto você mantiver a magia ou até alguém romper aquilo que a sustenta. Você também não consegue ouvir através dela apenas por ser o conjurador.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1727"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1728",
+    "paragrafo_docx": 1728,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "IDEIA QUE NÃO É SUA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1728,
+        "tipo": "corpo",
+        "texto": "Quando inserir magicamente uma sugestão simples, plausível e imediata na mente de alguém durante uma interação em que ela possa acreditar que teve aquela ideia sozinha, role+INT ou CAR conforme sua técnica.\n10+: ela toma a ideia como própria e age segundo ela enquanto continuar parecendo razoável.\n7–9: ela considera a ideia seriamente, mas escolha 1:"
+      },
+      {
+        "paragrafo_docx": 1729,
+        "tipo": "opcao",
+        "texto": "alguma coisa nela percebe que aquele pensamento é estranho;"
+      },
+      {
+        "paragrafo_docx": 1730,
+        "tipo": "opcao",
+        "texto": "precisa de uma pequena confirmação externa antes de agir;"
+      },
+      {
+        "paragrafo_docx": 1731,
+        "tipo": "opcao",
+        "texto": "depois de agir, lembrará claramente do momento em que a ideia surgiu."
+      },
+      {
+        "paragrafo_docx": 1732,
+        "tipo": "continuacao",
+        "texto": "Você não pode obrigar alguém a agir diretamente contra aquilo que acredita ser sua própria sobrevivência ou identidade fundamental."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1729,
+        "texto": "alguma coisa nela percebe que aquele pensamento é estranho;"
+      },
+      {
+        "paragrafo_docx": 1730,
+        "texto": "precisa de uma pequena confirmação externa antes de agir;"
+      },
+      {
+        "paragrafo_docx": 1731,
+        "texto": "depois de agir, lembrará claramente do momento em que a ideia surgiu."
+      }
+    ],
+    "texto_original": "Quando inserir magicamente uma sugestão simples, plausível e imediata na mente de alguém durante uma interação em que ela possa acreditar que teve aquela ideia sozinha, role+INT ou CAR conforme sua técnica.\n10+: ela toma a ideia como própria e age segundo ela enquanto continuar parecendo razoável.\n7–9: ela considera a ideia seriamente, mas escolha 1:\nalguma coisa nela percebe que aquele pensamento é estranho;\nprecisa de uma pequena confirmação externa antes de agir;\ndepois de agir, lembrará claramente do momento em que a ideia surgiu.\nVocê não pode obrigar alguém a agir diretamente contra aquilo que acredita ser sua própria sobrevivência ou identidade fundamental.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1728"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1733",
+    "paragrafo_docx": 1733,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "BOLSO IMPOSSÍVEL",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1733,
+        "tipo": "corpo",
+        "texto": "Você possui ou sabe criar um pequeno esconderijo extradimensional acessível apenas por um gesto, objeto ou procedimento definido ao escolher este Movimento. Ele comporta apenas aquilo que uma pessoa poderia carregar facilmente nas mãos. Objetos dentro dele não podem ser encontrados por busca mundana enquanto o acesso permanecer fechado."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Você possui ou sabe criar um pequeno esconderijo extradimensional acessível apenas por um gesto, objeto ou procedimento definido ao escolher este Movimento. Ele comporta apenas aquilo que uma pessoa poderia carregar facilmente nas mãos. Objetos dentro dele não podem ser encontrados por busca mundana enquanto o acesso permanecer fechado.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1733"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1734",
+    "paragrafo_docx": 1734,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "LÂMINA QUE NÃO EXISTE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1734,
+        "tipo": "corpo",
+        "texto": "Você pode manifestar na mão uma arma formada exclusivamente por pensamento. Ela:"
+      },
+      {
+        "paragrafo_docx": 1735,
+        "tipo": "opcao",
+        "texto": "aparece apenas quando você deseja utilizá-la;"
+      },
+      {
+        "paragrafo_docx": 1736,
+        "tipo": "opcao",
+        "texto": "não pode ser encontrada numa revista ou desarmada enquanto não estiver manifestada;"
+      },
+      {
+        "paragrafo_docx": 1737,
+        "tipo": "opcao",
+        "texto": "pode ferir criaturas que possuam mente mesmo quando proteção puramente física normalmente impediria uma lâmina comum;"
+      },
+      {
+        "paragrafo_docx": 1738,
+        "tipo": "opcao",
+        "texto": "não supera automaticamente proteção psíquica, ausência de mente ou outras defesas apropriadas."
+      },
+      {
+        "paragrafo_docx": 1739,
+        "tipo": "continuacao",
+        "texto": "Quando deixa sua mão, desaparece depois de cumprir sua intenção imediata."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1735,
+        "texto": "aparece apenas quando você deseja utilizá-la;"
+      },
+      {
+        "paragrafo_docx": 1736,
+        "texto": "não pode ser encontrada numa revista ou desarmada enquanto não estiver manifestada;"
+      },
+      {
+        "paragrafo_docx": 1737,
+        "texto": "pode ferir criaturas que possuam mente mesmo quando proteção puramente física normalmente impediria uma lâmina comum;"
+      },
+      {
+        "paragrafo_docx": 1738,
+        "texto": "não supera automaticamente proteção psíquica, ausência de mente ou outras defesas apropriadas."
+      }
+    ],
+    "texto_original": "Você pode manifestar na mão uma arma formada exclusivamente por pensamento. Ela:\naparece apenas quando você deseja utilizá-la;\nnão pode ser encontrada numa revista ou desarmada enquanto não estiver manifestada;\npode ferir criaturas que possuam mente mesmo quando proteção puramente física normalmente impediria uma lâmina comum;\nnão supera automaticamente proteção psíquica, ausência de mente ou outras defesas apropriadas.\nQuando deixa sua mão, desaparece depois de cumprir sua intenção imediata.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1734"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1740",
+    "paragrafo_docx": 1740,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "CANAL FECHADO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1740,
+        "tipo": "corpo",
+        "texto": "Quando estabelecer contato mental com um pequeno número de aliados voluntários próximos, vocês podem transmitir entre si palavras, imagens simples e sinais sem produzir som. O vínculo dura enquanto permanecerem na mesma cena ou até você encerrá-lo. Isso não permite ler pensamentos que alguém não queira transmitir."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando estabelecer contato mental com um pequeno número de aliados voluntários próximos, vocês podem transmitir entre si palavras, imagens simples e sinais sem produzir som. O vínculo dura enquanto permanecerem na mesma cena ou até você encerrá-lo. Isso não permite ler pensamentos que alguém não queira transmitir.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1740"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1741",
+    "paragrafo_docx": 1741,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "OFÍCIO DOS MORTOS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1741,
+        "tipo": "corpo",
+        "texto": "Quando passar alguns instantes junto ao cadáver de alguém recentemente morto, você pode permitir que uma habilidade prática marcante daquela pessoa permaneça temporariamente em você. Diga qual ofício, técnica ou conhecimento mundano roubou de seus últimos ecos. Até Preparar Acampamento, você é capaz de agir como alguém treinado naquela prática. Situações perigosas continuam exigindo os Movimentos apropriados. Você só pode carregar um Ofício dos Mortos por vez."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando passar alguns instantes junto ao cadáver de alguém recentemente morto, você pode permitir que uma habilidade prática marcante daquela pessoa permaneça temporariamente em você. Diga qual ofício, técnica ou conhecimento mundano roubou de seus últimos ecos. Até Preparar Acampamento, você é capaz de agir como alguém treinado naquela prática. Situações perigosas continuam exigindo os Movimentos apropriados. Você só pode carregar um Ofício dos Mortos por vez.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1741"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1742",
+    "paragrafo_docx": 1742,
+    "grupo": "LADINO",
+    "categoria": "classe",
+    "titulo": "MORTO NÃO GUARDA SEGREDO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1742,
+        "tipo": "corpo",
+        "texto": "Quando tomar para si um objeto que uma pessoa morta carregava ou considerava importante, permita que as impressões deixadas nele respondam uma:"
+      },
+      {
+        "paragrafo_docx": 1743,
+        "tipo": "opcao",
+        "texto": "O que esta pessoa estava escondendo?"
+      },
+      {
+        "paragrafo_docx": 1744,
+        "tipo": "opcao",
+        "texto": "Quem ela temia pouco antes de morrer?"
+      },
+      {
+        "paragrafo_docx": 1745,
+        "tipo": "opcao",
+        "texto": "Para onde pretendia ir?"
+      },
+      {
+        "paragrafo_docx": 1746,
+        "tipo": "opcao",
+        "texto": "O que ela acreditava ser importante neste objeto?"
+      },
+      {
+        "paragrafo_docx": 1747,
+        "tipo": "continuacao",
+        "texto": "A resposta vem de emoções, lembranças fragmentadas ou imagens — não de uma conversa consciente com o morto."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1743,
+        "texto": "O que esta pessoa estava escondendo?"
+      },
+      {
+        "paragrafo_docx": 1744,
+        "texto": "Quem ela temia pouco antes de morrer?"
+      },
+      {
+        "paragrafo_docx": 1745,
+        "texto": "Para onde pretendia ir?"
+      },
+      {
+        "paragrafo_docx": 1746,
+        "texto": "O que ela acreditava ser importante neste objeto?"
+      }
+    ],
+    "texto_original": "Quando tomar para si um objeto que uma pessoa morta carregava ou considerava importante, permita que as impressões deixadas nele respondam uma:\nO que esta pessoa estava escondendo?\nQuem ela temia pouco antes de morrer?\nPara onde pretendia ir?\nO que ela acreditava ser importante neste objeto?\nA resposta vem de emoções, lembranças fragmentadas ou imagens — não de uma conversa consciente com o morto.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1742"
+  }
+]

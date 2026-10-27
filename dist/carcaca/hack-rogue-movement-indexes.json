@@ -1,0 +1,521 @@
+{
+  "by_requisito_tipo": {
+    "movimento_exato": [
+      "movimento-classe:paragrafo-1594",
+      "movimento-classe:paragrafo-1633",
+      "movimento-classe:paragrafo-1634",
+      "movimento-classe:paragrafo-1685"
+    ],
+    "nenhum": [
+      "movimento-classe:paragrafo-1588",
+      "movimento-classe:paragrafo-1593",
+      "movimento-classe:paragrafo-1602",
+      "movimento-classe:paragrafo-1603",
+      "movimento-classe:paragrafo-1604",
+      "movimento-classe:paragrafo-1612",
+      "movimento-classe:paragrafo-1618",
+      "movimento-classe:paragrafo-1628",
+      "movimento-classe:paragrafo-1630",
+      "movimento-classe:paragrafo-1631",
+      "movimento-classe:paragrafo-1632",
+      "movimento-classe:paragrafo-1641",
+      "movimento-classe:paragrafo-1646",
+      "movimento-classe:paragrafo-1656",
+      "movimento-classe:paragrafo-1657",
+      "movimento-classe:paragrafo-1658",
+      "movimento-classe:paragrafo-1659",
+      "movimento-classe:paragrafo-1660",
+      "movimento-classe:paragrafo-1662",
+      "movimento-classe:paragrafo-1663",
+      "movimento-classe:paragrafo-1664",
+      "movimento-classe:paragrafo-1665",
+      "movimento-classe:paragrafo-1670",
+      "movimento-classe:paragrafo-1671",
+      "movimento-classe:paragrafo-1678",
+      "movimento-classe:paragrafo-1684",
+      "movimento-classe:paragrafo-1686",
+      "movimento-classe:paragrafo-1690",
+      "movimento-classe:paragrafo-1692",
+      "movimento-classe:paragrafo-1697",
+      "movimento-classe:paragrafo-1704",
+      "movimento-classe:paragrafo-1709",
+      "movimento-classe:paragrafo-1718",
+      "movimento-classe:paragrafo-1719",
+      "movimento-classe:paragrafo-1720",
+      "movimento-classe:paragrafo-1721",
+      "movimento-classe:paragrafo-1722",
+      "movimento-classe:paragrafo-1723",
+      "movimento-classe:paragrafo-1726",
+      "movimento-classe:paragrafo-1727",
+      "movimento-classe:paragrafo-1728",
+      "movimento-classe:paragrafo-1733",
+      "movimento-classe:paragrafo-1734",
+      "movimento-classe:paragrafo-1740",
+      "movimento-classe:paragrafo-1741",
+      "movimento-classe:paragrafo-1742"
+    ],
+    "qualquer": [
+      "movimento-classe:paragrafo-1619"
+    ],
+    "referencia_sem_alvo": [
+      "movimento-classe:paragrafo-1724"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-1588",
+      "movimento-classe:paragrafo-1593",
+      "movimento-classe:paragrafo-1602",
+      "movimento-classe:paragrafo-1603",
+      "movimento-classe:paragrafo-1604",
+      "movimento-classe:paragrafo-1612",
+      "movimento-classe:paragrafo-1618",
+      "movimento-classe:paragrafo-1628",
+      "movimento-classe:paragrafo-1630",
+      "movimento-classe:paragrafo-1631",
+      "movimento-classe:paragrafo-1632",
+      "movimento-classe:paragrafo-1641",
+      "movimento-classe:paragrafo-1646",
+      "movimento-classe:paragrafo-1656",
+      "movimento-classe:paragrafo-1657",
+      "movimento-classe:paragrafo-1658",
+      "movimento-classe:paragrafo-1659",
+      "movimento-classe:paragrafo-1660",
+      "movimento-classe:paragrafo-1662",
+      "movimento-classe:paragrafo-1663",
+      "movimento-classe:paragrafo-1664",
+      "movimento-classe:paragrafo-1665",
+      "movimento-classe:paragrafo-1670",
+      "movimento-classe:paragrafo-1671",
+      "movimento-classe:paragrafo-1678",
+      "movimento-classe:paragrafo-1684",
+      "movimento-classe:paragrafo-1686",
+      "movimento-classe:paragrafo-1690",
+      "movimento-classe:paragrafo-1692",
+      "movimento-classe:paragrafo-1697",
+      "movimento-classe:paragrafo-1704",
+      "movimento-classe:paragrafo-1709",
+      "movimento-classe:paragrafo-1718",
+      "movimento-classe:paragrafo-1719",
+      "movimento-classe:paragrafo-1720",
+      "movimento-classe:paragrafo-1721",
+      "movimento-classe:paragrafo-1722",
+      "movimento-classe:paragrafo-1723",
+      "movimento-classe:paragrafo-1726",
+      "movimento-classe:paragrafo-1727",
+      "movimento-classe:paragrafo-1728",
+      "movimento-classe:paragrafo-1733",
+      "movimento-classe:paragrafo-1734",
+      "movimento-classe:paragrafo-1740",
+      "movimento-classe:paragrafo-1741",
+      "movimento-classe:paragrafo-1742"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-1594",
+      "movimento-classe:paragrafo-1619",
+      "movimento-classe:paragrafo-1633",
+      "movimento-classe:paragrafo-1634",
+      "movimento-classe:paragrafo-1685",
+      "movimento-classe:paragrafo-1724"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-1593",
+      "movimento-classe:paragrafo-1602",
+      "movimento-classe:paragrafo-1603",
+      "movimento-classe:paragrafo-1618",
+      "movimento-classe:paragrafo-1628",
+      "movimento-classe:paragrafo-1630",
+      "movimento-classe:paragrafo-1631",
+      "movimento-classe:paragrafo-1632",
+      "movimento-classe:paragrafo-1633",
+      "movimento-classe:paragrafo-1656",
+      "movimento-classe:paragrafo-1657",
+      "movimento-classe:paragrafo-1658",
+      "movimento-classe:paragrafo-1659",
+      "movimento-classe:paragrafo-1660",
+      "movimento-classe:paragrafo-1662",
+      "movimento-classe:paragrafo-1663",
+      "movimento-classe:paragrafo-1664",
+      "movimento-classe:paragrafo-1670",
+      "movimento-classe:paragrafo-1684",
+      "movimento-classe:paragrafo-1685",
+      "movimento-classe:paragrafo-1690",
+      "movimento-classe:paragrafo-1718",
+      "movimento-classe:paragrafo-1719",
+      "movimento-classe:paragrafo-1720",
+      "movimento-classe:paragrafo-1721",
+      "movimento-classe:paragrafo-1722",
+      "movimento-classe:paragrafo-1723",
+      "movimento-classe:paragrafo-1724",
+      "movimento-classe:paragrafo-1726",
+      "movimento-classe:paragrafo-1727",
+      "movimento-classe:paragrafo-1733",
+      "movimento-classe:paragrafo-1740",
+      "movimento-classe:paragrafo-1741"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-1588",
+      "movimento-classe:paragrafo-1594",
+      "movimento-classe:paragrafo-1604",
+      "movimento-classe:paragrafo-1612",
+      "movimento-classe:paragrafo-1619",
+      "movimento-classe:paragrafo-1634",
+      "movimento-classe:paragrafo-1641",
+      "movimento-classe:paragrafo-1646",
+      "movimento-classe:paragrafo-1665",
+      "movimento-classe:paragrafo-1671",
+      "movimento-classe:paragrafo-1678",
+      "movimento-classe:paragrafo-1686",
+      "movimento-classe:paragrafo-1692",
+      "movimento-classe:paragrafo-1697",
+      "movimento-classe:paragrafo-1704",
+      "movimento-classe:paragrafo-1709",
+      "movimento-classe:paragrafo-1728",
+      "movimento-classe:paragrafo-1734",
+      "movimento-classe:paragrafo-1742"
+    ]
+  },
+  "by_paragrafo": {
+    "1588": [
+      "movimento-classe:paragrafo-1588"
+    ],
+    "1593": [
+      "movimento-classe:paragrafo-1593"
+    ],
+    "1594": [
+      "movimento-classe:paragrafo-1594"
+    ],
+    "1602": [
+      "movimento-classe:paragrafo-1602"
+    ],
+    "1603": [
+      "movimento-classe:paragrafo-1603"
+    ],
+    "1604": [
+      "movimento-classe:paragrafo-1604"
+    ],
+    "1612": [
+      "movimento-classe:paragrafo-1612"
+    ],
+    "1618": [
+      "movimento-classe:paragrafo-1618"
+    ],
+    "1619": [
+      "movimento-classe:paragrafo-1619"
+    ],
+    "1628": [
+      "movimento-classe:paragrafo-1628"
+    ],
+    "1630": [
+      "movimento-classe:paragrafo-1630"
+    ],
+    "1631": [
+      "movimento-classe:paragrafo-1631"
+    ],
+    "1632": [
+      "movimento-classe:paragrafo-1632"
+    ],
+    "1633": [
+      "movimento-classe:paragrafo-1633"
+    ],
+    "1634": [
+      "movimento-classe:paragrafo-1634"
+    ],
+    "1641": [
+      "movimento-classe:paragrafo-1641"
+    ],
+    "1646": [
+      "movimento-classe:paragrafo-1646"
+    ],
+    "1656": [
+      "movimento-classe:paragrafo-1656"
+    ],
+    "1657": [
+      "movimento-classe:paragrafo-1657"
+    ],
+    "1658": [
+      "movimento-classe:paragrafo-1658"
+    ],
+    "1659": [
+      "movimento-classe:paragrafo-1659"
+    ],
+    "1660": [
+      "movimento-classe:paragrafo-1660"
+    ],
+    "1662": [
+      "movimento-classe:paragrafo-1662"
+    ],
+    "1663": [
+      "movimento-classe:paragrafo-1663"
+    ],
+    "1664": [
+      "movimento-classe:paragrafo-1664"
+    ],
+    "1665": [
+      "movimento-classe:paragrafo-1665"
+    ],
+    "1670": [
+      "movimento-classe:paragrafo-1670"
+    ],
+    "1671": [
+      "movimento-classe:paragrafo-1671"
+    ],
+    "1678": [
+      "movimento-classe:paragrafo-1678"
+    ],
+    "1684": [
+      "movimento-classe:paragrafo-1684"
+    ],
+    "1685": [
+      "movimento-classe:paragrafo-1685"
+    ],
+    "1686": [
+      "movimento-classe:paragrafo-1686"
+    ],
+    "1690": [
+      "movimento-classe:paragrafo-1690"
+    ],
+    "1692": [
+      "movimento-classe:paragrafo-1692"
+    ],
+    "1697": [
+      "movimento-classe:paragrafo-1697"
+    ],
+    "1704": [
+      "movimento-classe:paragrafo-1704"
+    ],
+    "1709": [
+      "movimento-classe:paragrafo-1709"
+    ],
+    "1718": [
+      "movimento-classe:paragrafo-1718"
+    ],
+    "1719": [
+      "movimento-classe:paragrafo-1719"
+    ],
+    "1720": [
+      "movimento-classe:paragrafo-1720"
+    ],
+    "1721": [
+      "movimento-classe:paragrafo-1721"
+    ],
+    "1722": [
+      "movimento-classe:paragrafo-1722"
+    ],
+    "1723": [
+      "movimento-classe:paragrafo-1723"
+    ],
+    "1724": [
+      "movimento-classe:paragrafo-1724"
+    ],
+    "1726": [
+      "movimento-classe:paragrafo-1726"
+    ],
+    "1727": [
+      "movimento-classe:paragrafo-1727"
+    ],
+    "1728": [
+      "movimento-classe:paragrafo-1728"
+    ],
+    "1733": [
+      "movimento-classe:paragrafo-1733"
+    ],
+    "1734": [
+      "movimento-classe:paragrafo-1734"
+    ],
+    "1740": [
+      "movimento-classe:paragrafo-1740"
+    ],
+    "1741": [
+      "movimento-classe:paragrafo-1741"
+    ],
+    "1742": [
+      "movimento-classe:paragrafo-1742"
+    ]
+  },
+  "by_requisito_id": {
+    "movimento-classe:paragrafo-1593": [
+      "movimento-classe:paragrafo-1594"
+    ],
+    "movimento-classe:paragrafo-1604": [
+      "movimento-classe:paragrafo-1685"
+    ],
+    "movimento-classe:paragrafo-1612": [
+      "movimento-classe:paragrafo-1619"
+    ],
+    "movimento-classe:paragrafo-1618": [
+      "movimento-classe:paragrafo-1619"
+    ],
+    "movimento-classe:paragrafo-1632": [
+      "movimento-classe:paragrafo-1633"
+    ],
+    "movimento-classe:paragrafo-1633": [
+      "movimento-classe:paragrafo-1634"
+    ]
+  },
+  "by_referencia_sem_alvo": {
+    "Perfil": [
+      "movimento-classe:paragrafo-1724"
+    ]
+  },
+  "by_titulo": {
+    "A MENTIRA NÃO ENCAIXA": [
+      "movimento-classe:paragrafo-1663"
+    ],
+    "ABRIR O IMPOSSÍVEL": [
+      "movimento-classe:paragrafo-1594"
+    ],
+    "AÇÃO ARDILOSA": [
+      "movimento-classe:paragrafo-1678"
+    ],
+    "BOLSO IMPOSSÍVEL": [
+      "movimento-classe:paragrafo-1733"
+    ],
+    "CANAL FECHADO": [
+      "movimento-classe:paragrafo-1740"
+    ],
+    "CONTRABANDO": [
+      "movimento-classe:paragrafo-1720"
+    ],
+    "CUTUCAR A FERIDA": [
+      "movimento-classe:paragrafo-1724"
+    ],
+    "DEDUÇÃO": [
+      "movimento-classe:paragrafo-1722"
+    ],
+    "DESAPARECER": [
+      "movimento-classe:paragrafo-1671"
+    ],
+    "DISFARCE ILUSÓRIO": [
+      "movimento-classe:paragrafo-1726"
+    ],
+    "DUPLO JOGO": [
+      "movimento-classe:paragrafo-1719"
+    ],
+    "ESPECIALISTA EM ARMADILHAS": [
+      "movimento-classe:paragrafo-1588"
+    ],
+    "EU JÁ ESTAVA AQUI": [
+      "movimento-classe:paragrafo-1657"
+    ],
+    "FALSÁRIO": [
+      "movimento-classe:paragrafo-1709"
+    ],
+    "FULANO DA SILVA": [
+      "movimento-classe:paragrafo-1658"
+    ],
+    "GATUNO": [
+      "movimento-classe:paragrafo-1670"
+    ],
+    "GOLPE PELAS COSTAS": [
+      "movimento-classe:paragrafo-1604"
+    ],
+    "GÍRIA DO SUBMUNDO": [
+      "movimento-classe:paragrafo-1697"
+    ],
+    "HEIST": [
+      "movimento-classe:paragrafo-1612"
+    ],
+    "IDEIA QUE NÃO É SUA": [
+      "movimento-classe:paragrafo-1728"
+    ],
+    "ILUSÃO DE OPORTUNIDADE": [
+      "movimento-classe:paragrafo-1631"
+    ],
+    "INVESTIGADOR": [
+      "movimento-classe:paragrafo-1662"
+    ],
+    "JOGO SUJO": [
+      "movimento-classe:paragrafo-1685"
+    ],
+    "LADRÃO DE FEITIÇOS": [
+      "movimento-classe:paragrafo-1633"
+    ],
+    "LADRÃO DE OPORTUNIDADES": [
+      "movimento-classe:paragrafo-1603"
+    ],
+    "LARÁPIO FANTASMAGÓRICO": [
+      "movimento-classe:paragrafo-1634"
+    ],
+    "LÂMINA QUE NÃO EXISTE": [
+      "movimento-classe:paragrafo-1734"
+    ],
+    "MAGIA ROUBADA": [
+      "movimento-classe:paragrafo-1632"
+    ],
+    "MARQUE O ALVO": [
+      "movimento-classe:paragrafo-1641"
+    ],
+    "MENSAGEM INOCENTE": [
+      "movimento-classe:paragrafo-1660"
+    ],
+    "MORTO NÃO GUARDA SEGREDO": [
+      "movimento-classe:paragrafo-1742"
+    ],
+    "MÃO QUE NÃO ESTÁ LÁ": [
+      "movimento-classe:paragrafo-1630"
+    ],
+    "NÃO EXISTEM COINCIDÊNCIAS": [
+      "movimento-classe:paragrafo-1723"
+    ],
+    "NÃO PRECISO SABER COMO FUNCIONA": [
+      "movimento-classe:paragrafo-1704"
+    ],
+    "O DETALHE IMPOSSÍVEL": [
+      "movimento-classe:paragrafo-1664"
+    ],
+    "OFÍCIO DOS MORTOS": [
+      "movimento-classe:paragrafo-1741"
+    ],
+    "OLHO PARA O SAQUE": [
+      "movimento-classe:paragrafo-1686"
+    ],
+    "OLHOS NAS COSTAS": [
+      "movimento-classe:paragrafo-1602"
+    ],
+    "PLANO B": [
+      "movimento-classe:paragrafo-1618"
+    ],
+    "PLANTAR A PROVA": [
+      "movimento-classe:paragrafo-1721"
+    ],
+    "POR UM FIO": [
+      "movimento-classe:paragrafo-1684"
+    ],
+    "RECEPTADOR": [
+      "movimento-classe:paragrafo-1692"
+    ],
+    "REDE DE INFORMAÇÃO": [
+      "movimento-classe:paragrafo-1659"
+    ],
+    "RIQUEZA E BOM GOSTO": [
+      "movimento-classe:paragrafo-1690"
+    ],
+    "ROSTO NA MULTIDÃO": [
+      "movimento-classe:paragrafo-1656"
+    ],
+    "ROTA DE FUGA": [
+      "movimento-classe:paragrafo-1665"
+    ],
+    "ROUBAR UM ROSTO": [
+      "movimento-classe:paragrafo-1718"
+    ],
+    "SILÊNCIO ROUBADO": [
+      "movimento-classe:paragrafo-1727"
+    ],
+    "TROMBADINHA": [
+      "movimento-classe:paragrafo-1628"
+    ],
+    "TRUQUES DO OFÍCIO": [
+      "movimento-classe:paragrafo-1593"
+    ],
+    "TUDO SEGUNDO O PLANO": [
+      "movimento-classe:paragrafo-1619"
+    ],
+    "VENENO É UMA FERRAMENTA": [
+      "movimento-classe:paragrafo-1646"
+    ]
+  }
+}
