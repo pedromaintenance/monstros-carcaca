@@ -342,3 +342,10 @@ Fonte versionada: `data/lore/hack-carcaca-dw-mago-integrais.json.gz` (JSON gzip)
 Integrados **42 movimentos completos** (48 opções, 100 trechos e 20 REQUER literais) de FEITICEIRO. Com isso, o atlas cobre **491 de 632 movimentos de classe** (77,7%). As sete fontes de dependência são Magia no Sangue (9), Magia Selvagem (3), Herança Dracônica (3), Invasão Mental (2), Manto da Fênix (1), Telepatia (1) e Entre Sonhos (1).
 
 Consulta em `getSorcererMovements`, `searchSorcererMovements` e `getSorcererRequirementPreview`. Fonte: `data/lore/hack-carcaca-dw-feiticeiro-integrais.json.gz`; catálogo: `dist/carcaca/hack-sorcerer-movements.json`; índices: `dist/carcaca/hack-sorcerer-movement-indexes.json`. [Guia técnico](docs/INTEGRACAO_FEITICEIRO_HACK_DW.md). REQUER permanece obrigatório e não há aquisição automática.
+
+
+## Classe Bruxo — décimo segundo grupo integral
+
+Transcritos integralmente **49 movimentos de BRUXO** (59 opções, 120 trechos e 43 REQUER literais diretos), elevando o Hack a **540 de 632 movimentos** (85,4%). A estrutura conserva cinco raízes com dependentes (**Pacto 30; Maldição 5; Magia Simpática 3; Caldeirão 2; Olho Gordo 3**) e **Sabá** como movimento independente. Não foi criado Pacto universal para caminhos autônomos.
+
+O atlas materializa a fonte compacta `data/lore/hack-carcaca-dw-bruxo-integrais.json.gz` em `dist/carcaca/hack-warlock-movements.json` e `dist/carcaca/hack-warlock-movement-indexes.json`. A API `getWarlockRequirementPreview` verifica a cadeia inteira, sempre com `habilitado_para_compra:null`. [Guia técnico](docs/INTEGRACAO_BRUXO_HACK_DW.md).

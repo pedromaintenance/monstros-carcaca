@@ -73,7 +73,9 @@ const fixtures={
     hack_mage_movements:"hack-mage-movements.json",
     hack_mage_movement_indexes:"hack-mage-movement-indexes.json",
     hack_sorcerer_movements:"hack-sorcerer-movements.json",
-    hack_sorcerer_movement_indexes:"hack-sorcerer-movement-indexes.json"}},
+    hack_sorcerer_movement_indexes:"hack-sorcerer-movement-indexes.json",
+    hack_warlock_movements:"hack-warlock-movements.json",
+    hack_warlock_movement_indexes:"hack-warlock-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -124,6 +126,45 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-warlock-movements.json":[
+    {id:"movimento-classe:paragrafo-2454",titulo:"PACTO",grupo:"BRUXO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Escolha seu Patrono.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2467",titulo:"RAJADA MÍSTICA",grupo:"BRUXO",
+     requisito_literal:"Pacto",requisito_estruturado:{tipo:"movimento_exato",
+       movimento_id:"movimento-classe:paragrafo-2454"},
+     opcoes:[],texto_original:"Quando conjurar uma rajada.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2474",titulo:"INVOCADOR MÍSTICO",grupo:"BRUXO",
+     requisito_literal:"Rajada Mística",requisito_estruturado:{tipo:"movimento_exato",
+       movimento_id:"movimento-classe:paragrafo-2467"},
+     opcoes:[],texto_original:"Quando aperfeiçoar sua rajada.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2527",titulo:"MAIS UMA INVOCAÇÃO",grupo:"BRUXO",
+     requisito_literal:"Invocador Místico",requisito_estruturado:{tipo:"movimento_exato",
+       movimento_id:"movimento-classe:paragrafo-2474"},
+     opcoes:[],texto_original:"Quando invocar mais.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2488",titulo:"MALDIÇÃO",grupo:"BRUXO",
+     requisito_literal:null,requisito_estruturado:null,
+     opcoes:[{paragrafo_docx:2489,texto:"Dura até ser quebrada."}],
+     texto_original:"Quando amaldiçoar com o nome de alguém.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2492",titulo:"MAGIA SIMPÁTICA",grupo:"BRUXO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Quando afetar a representação de algo.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2535",titulo:"MALDIÇÃO ADORMECIDA",grupo:"BRUXO",
+     requisito_literal:"Maldição",requisito_estruturado:{tipo:"movimento_exato",
+       movimento_id:"movimento-classe:paragrafo-2488"},
+     opcoes:[],texto_original:"Quando adormecer uma maldição.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2572",titulo:"SABÁ",grupo:"BRUXO",
+     requisito_literal:null,requisito_estruturado:null,
+     opcoes:[],texto_original:"Quando três ou mais praticantes se reunirem.",aplicacao_canonica:false}
+  ],
+  "hack-warlock-movement-indexes.json":{
+    by_requisito_tipo:{movimento_exato:[
+      "movimento-classe:paragrafo-2467","movimento-classe:paragrafo-2474",
+      "movimento-classe:paragrafo-2527","movimento-classe:paragrafo-2535"]},
+    by_raiz_dependencia:{
+      "movimento-classe:paragrafo-2454":[
+        "movimento-classe:paragrafo-2467","movimento-classe:paragrafo-2474","movimento-classe:paragrafo-2527"],
+      "movimento-classe:paragrafo-2488":["movimento-classe:paragrafo-2535"]}},
   "hack-sorcerer-movements.json":[
     {id:"movimento-classe:paragrafo-2348",titulo:"MAGIA NO SANGUE",grupo:"FEITICEIRO",
      requisito_literal:null,requisito_estruturado:null,
@@ -1780,4 +1821,37 @@ test("Feiticeiro: REQUER independentes, busca e prévia sem compra automática",
   assert.equal(complete.aplicacao_canonica,false);
   assert.equal(await atlas.getSorcererRequirementPreview("movimento-classe:paragrafo-9999"),null);
   await assert.rejects(()=>atlas.getSorcererRequirementPreview(id,{movimentosPossuidos:"inválido"}),TypeError);
+});
+
+
+
+test("Bruxo preserva cinco tradições, Sabá independente e REQUER em cadeia",async()=>{
+  const moves=await atlas.getWarlockMovements();
+  assert.equal(moves.length,8);
+  assert.equal((await atlas.searchWarlockMovements({comRequer:true})).length,4);
+  assert.equal((await atlas.searchWarlockMovements({requer:"MALDICAO"})).length,1);
+  assert.equal((await atlas.searchWarlockMovements({comOpcoes:true}))[0].titulo,"MALDIÇÃO");
+  assert.equal((await atlas.searchWarlockMovements({raizDependencia:"movimento-classe:paragrafo-2488"}))[0].titulo,
+    "MALDIÇÃO ADORMECIDA");
+  assert.equal((await atlas.getWarlockMovementIndexes()).by_raiz_dependencia["movimento-classe:paragrafo-2454"].length,3);
+  assert.equal((await atlas.getWarlockMovement("movimento-classe:paragrafo-2572")).requisito_literal,null);
+  const id="movimento-classe:paragrafo-2527";
+  const none=await atlas.getWarlockRequirementPreview(id);
+  assert.deepEqual(none.cadeia_imediato_para_raiz.map(x=>x.movimento_id),[
+    "movimento-classe:paragrafo-2474","movimento-classe:paragrafo-2467","movimento-classe:paragrafo-2454"]);
+  assert.equal(none.componentes_identificados_presentes,false);
+  const partial=await atlas.getWarlockRequirementPreview(id,{
+    movimentosPossuidos:["movimento-classe:paragrafo-2454","movimento-classe:paragrafo-2467"]});
+  assert.deepEqual(partial.cadeia_imediato_para_raiz.map(x=>x.presente_na_lista),[false,true,true]);
+  const complete=await atlas.getWarlockRequirementPreview(id,{
+    movimentosPossuidos:["movimento-classe:paragrafo-2454","movimento-classe:paragrafo-2467","movimento-classe:paragrafo-2474"]});
+  assert.equal(complete.componentes_identificados_presentes,true);
+  assert.equal(complete.habilitado_para_compra,null);
+  assert.equal(complete.aplicacao_canonica,false);
+  const independente=await atlas.getWarlockRequirementPreview("movimento-classe:paragrafo-2488");
+  assert.deepEqual(independente.cadeia_imediato_para_raiz,[]);
+  assert.equal(independente.raiz_movimento_id,"movimento-classe:paragrafo-2488");
+  assert.equal(await atlas.getWarlockRequirementPreview("movimento-classe:paragrafo-99999"),null);
+  await assert.rejects(()=>atlas.getWarlockRequirementPreview(id,{
+    movimentosPossuidos:"invalido"}),TypeError);
 });

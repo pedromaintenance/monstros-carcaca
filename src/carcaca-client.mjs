@@ -60,6 +60,45 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getWarlockMovements(){return byKey("hack_warlock_movements");}
+  async function getWarlockMovementIndexes(){return byKey("hack_warlock_movement_indexes");}
+  async function getWarlockMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    return (await getWarlockMovements()).find(m=>m.id===id)??null;
+  }
+  async function searchWarlockMovements({titulo,query,requer,comRequer,comOpcoes,raizDependencia}={}){
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const moves=await getWarlockMovements();
+    const idx=raizDependencia?await getWarlockMovementIndexes():null;
+    const branch=raizDependencia?new Set(idx.by_raiz_dependencia[raizDependencia]??[]):null;
+    return moves.filter(m=>
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (!requer||norm(m.requisito_literal).includes(norm(requer)))&&
+      (comRequer===undefined||Boolean(m.requisito_literal)===comRequer)&&
+      (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
+      (!branch||branch.has(m.id)));
+  }
+  async function getWarlockRequirementPreview(id,{movimentosPossuidos=[]}={}){
+    if(!Array.isArray(movimentosPossuidos))throw new TypeError("movimentosPossuidos deve ser array");
+    const moves=await getWarlockMovements();
+    const byId=new Map(moves.map(m=>[m.id,m]));
+    const start=byId.get(id);if(!start)return null;
+    const held=new Set(movimentosPossuidos),visited=new Set([id]),chain=[];
+    let at=start;
+    while(at.requisito_estruturado){
+      const target=at.requisito_estruturado.movimento_id;
+      if(visited.has(target)||!byId.has(target))throw new Error("Ciclo ou REQUER sem alvo em Bruxo");
+      visited.add(target);at=byId.get(target);
+      chain.push({movimento_id:target,titulo:at.titulo,presente_na_lista:held.has(target)});
+    }
+    return {movimento_id:id,requisito_literal:start.requisito_literal,
+      cadeia_imediato_para_raiz:chain,raiz_movimento_id:at.id,
+      componentes_identificados_presentes:chain.every(x=>x.presente_na_lista),
+      habilitado_para_compra:null,necessita_avaliacao_do_mestre:true,
+      aplicacao_canonica:false,
+      observacao:"REQUER permanece obrigatório, mesmo em movimentos gratuitos. A presença de movimentos não concede pactos nem autoriza compras."};
+  }
   async function getSorcererMovements(){return byKey("hack_sorcerer_movements");}
   async function getSorcererMovementIndexes(){return byKey("hack_sorcerer_movement_indexes");}
   async function getSorcererMovement(id){
@@ -788,6 +827,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           searchMageMovements,getMageRequirementPreview,
           getSorcererMovements,getSorcererMovement,getSorcererMovementIndexes,
           searchSorcererMovements,getSorcererRequirementPreview,
+          getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
+          searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,
           getMartialArtistRequirementPreview,
           getRogueRequirementPreview,

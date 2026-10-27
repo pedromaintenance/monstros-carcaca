@@ -1789,6 +1789,87 @@ def validar_feiticeiro_integral():
             "Requisitos do Sonho ou Fenix divergentes.")
     print("Feiticeiro: 42 movimentos, 48 opcoes, 100 partes e 20 REQUER em sete raizes.")
 
+
+def validar_bruxo_integral():
+    """Preserva 49 movimentos e cinco linhagens de Bruxo sem pacto universal."""
+    from hack_movimentos_personagem import build_warlock_indexes
+    obj=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-bruxo-integrais.json.gz").read_bytes()).decode("utf-8"))
+    inv=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(obj["grupo"]=="BRUXO" and obj["fonte_sha256"]==inv["fonte_sha256"],
+            "Fonte de Bruxo não corresponde ao inventário autoral.")
+    moves=obj["movimentos"]
+    originals={m["id"]:m for m in inv["movimentos"] if m["grupo"]=="BRUXO"}
+    require(len(moves)==len(originals)==49 and len(unique(moves,"bruxo"))==49,
+            "Bruxo com movimentos faltantes ou duplicados.")
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves)
+            and moves[0]["paragrafo_docx"]==2454 and moves[-1]["paragrafo_docx"]==2572,
+            "Limites documentais de Bruxo divergentes.")
+    expected={"total_movimentos":49,"total_com_requer":43,
+              "total_vinculos_exatos":43,"total_opcoes":59,"total_partes":120}
+    require(obj["integridade"]==expected,"Contagens documentais de Bruxo divergentes.")
+    by_id={m["id"]:m for m in moves}
+    parts=set();edges={}
+    for m in moves:
+        old=originals.get(m["id"])
+        require(old is not None and m["titulo"]==old["titulo"]
+                and m["requisito_literal"]==old["requisito_literal"]
+                and m["paragrafo_docx"]==old["paragrafo_docx"],
+                "Título ou REQUER divergente do inventário: "+m["id"])
+        require(m["texto_integral_conferido"] is True
+                and m["estado"]=="transcricao_integral_sem_revisao_mecanica"
+                and m["aplicacao_canonica"] is False,
+                "Nenhuma transcrição de Bruxo pode ser homologada automaticamente.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
+                "Partes textuais não recompõem o texto do movimento: "+m["id"])
+        require(m["opcoes"]==[
+                  {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+                  for p in m["partes"] if p["tipo"]=="opcao"],
+                "Opções do Bruxo desconectadas do DOCX.")
+        require(m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"]
+                and m["partes"][0]["tipo"]=="corpo",
+                "Corpo do Bruxo sem âncora documental.")
+        for p in m["partes"]:
+            require(p["texto"] and p["paragrafo_docx"] not in parts,
+                    "Parte de Bruxo duplicada ou vazia.")
+            parts.add(p["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),
+                "REQUER deve corresponder a literal do manuscrito.")
+        if req:
+            require(req["tipo"]=="movimento_exato"
+                    and req["movimento_id"] in by_id
+                    and req["titulo_requerido"]==by_id[req["movimento_id"]]["titulo"]
+                    and req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "Dependência de Bruxo não tem alvo exato, ou já foi homologada.")
+            edges[m["id"]]=req["movimento_id"]
+    require(len(parts)==120 and sum(len(m["opcoes"]) for m in moves)==59
+            and len(edges)==43,"Partes, opções ou dependências de Bruxo incompletas.")
+    for start in edges:
+        at=start;visited={start}
+        while at in edges:
+            at=edges[at]
+            require(at not in visited,"Ciclo de REQUER em Bruxo.")
+            visited.add(at)
+    roots={m["titulo"] for m in moves if m["requisito_estruturado"] is None}
+    require(roots=={"PACTO","MALDIÇÃO","MAGIA SIMPÁTICA","CALDEIRÃO","OLHO GORDO","SABÁ"},
+            "Não tornar Pacto pré-requisito universal para outras tradições.")
+    ix=build_warlock_indexes(moves)
+    groups={"movimento-classe:paragrafo-2454":30,
+            "movimento-classe:paragrafo-2488":5,
+            "movimento-classe:paragrafo-2492":3,
+            "movimento-classe:paragrafo-2501":2,
+            "movimento-classe:paragrafo-2502":3}
+    require({k:len(v) for k,v in ix["by_raiz_dependencia"].items()}==groups,
+            "As cinco raízes com dependentes precisam ser independentes.")
+    require(edges["movimento-classe:paragrafo-2527"]=="movimento-classe:paragrafo-2474"
+            and edges["movimento-classe:paragrafo-2474"]=="movimento-classe:paragrafo-2467"
+            and edges["movimento-classe:paragrafo-2467"]=="movimento-classe:paragrafo-2454",
+            "Cadeia de Invocador/Rajada/Pacto foi perdida.")
+    require(not by_id["movimento-classe:paragrafo-2572"]["requisito_literal"],
+            "SABÁ não possui REQUER literal.")
+    print("Bruxo: 49 movimentos, 59 opções, 120 trechos, 43 REQUER diretos; "
+          "cinco raízes com dependentes e Sabá independente.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1896,6 +1977,7 @@ def main():
     validar_druida_integral()
     validar_mago_integral()
     validar_feiticeiro_integral()
+    validar_bruxo_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
