@@ -1,0 +1,2389 @@
+{
+  "schema_version": "0.1.0",
+  "fonte": "Hack Carcaça Dungeon World(1).docx",
+  "fonte_sha256": "b53d1d5a057e8f6cba8a5d5ccd70747df3ce94d07ff2e2ffb9031368ea773b3d",
+  "grupo": "BÁRBARO",
+  "posicao": "indices_paragrafo_docx_zero_based",
+  "descricao": "Transcrição completa do Bárbaro. REQUER é obrigatório; correspondências automáticas não são homologação.",
+  "movimentos": [
+    {
+      "id": "movimento-classe:paragrafo-1293",
+      "paragrafo_docx": 1293,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FÚRIA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1293,
+          "tipo": "corpo",
+          "texto": "Quando entregar-se conscientemente à fúria, diga o que sua raiva não permitirá que você faça enquanto durar: recuar, demonstrar piedade, abandonar um aliado, ignorar uma provocação ou algo semelhante. Enquanto permanecer em Fúria:"
+        },
+        {
+          "paragrafo_docx": 1294,
+          "tipo": "opcao",
+          "texto": "seus ataques corpo a corpo aumentam a Periculosidade em um grau;"
+        },
+        {
+          "paragrafo_docx": 1295,
+          "tipo": "opcao",
+          "texto": "receba +1 adiante para resistir fisicamente a medo, dor ou contenção."
+        },
+        {
+          "paragrafo_docx": 1296,
+          "tipo": "continuacao",
+          "texto": "A Fúria termina quando você cair ou ter alguns minutos para recuperar deliberadamente o controle.\nSe agir voluntariamente contra aquilo que sua Fúria não permite, ela termina imediatamente. \nSempre que precisar entrar em Fúria novamente sem descansar antes, receba uma Debilidade."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1294,
+          "texto": "seus ataques corpo a corpo aumentam a Periculosidade em um grau;"
+        },
+        {
+          "paragrafo_docx": 1295,
+          "texto": "receba +1 adiante para resistir fisicamente a medo, dor ou contenção."
+        }
+      ],
+      "texto_original": "Quando entregar-se conscientemente à fúria, diga o que sua raiva não permitirá que você faça enquanto durar: recuar, demonstrar piedade, abandonar um aliado, ignorar uma provocação ou algo semelhante. Enquanto permanecer em Fúria:\nseus ataques corpo a corpo aumentam a Periculosidade em um grau;\nreceba +1 adiante para resistir fisicamente a medo, dor ou contenção.\nA Fúria termina quando você cair ou ter alguns minutos para recuperar deliberadamente o controle.\nSe agir voluntariamente contra aquilo que sua Fúria não permite, ela termina imediatamente. \nSempre que precisar entrar em Fúria novamente sem descansar antes, receba uma Debilidade.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1293"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1297",
+      "paragrafo_docx": 1297,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "O QUE NÃO ME MATA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1297,
+          "tipo": "corpo",
+          "texto": "Quando sobreviver a uma violência Devastadora ou Extrema e ainda permanecer capaz de agir, receba 1 Preparo relacionado àquilo que acabou de feri-lo e pergunte: “O que sobreviver a isso me ensinou sobre como enfrentar essa ameaça?”\nO Mestre responderá com algo verdadeiro que sua experiência poderia ter revelado."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando sobreviver a uma violência Devastadora ou Extrema e ainda permanecer capaz de agir, receba 1 Preparo relacionado àquilo que acabou de feri-lo e pergunte: “O que sobreviver a isso me ensinou sobre como enfrentar essa ameaça?”\nO Mestre responderá com algo verdadeiro que sua experiência poderia ter revelado.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1297"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1298",
+      "paragrafo_docx": 1298,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "MINHA DOR É MINHA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1298,
+          "tipo": "corpo",
+          "texto": "Quando uma consequência física impuser uma Debilidade, você pode adiar seus efeitos até o fim da cena.\nEla ainda existe. Você simplesmente se recusa a senti-la por enquanto."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando uma consequência física impuser uma Debilidade, você pode adiar seus efeitos até o fim da cena.\nEla ainda existe. Você simplesmente se recusa a senti-la por enquanto.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1298"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1299",
+      "paragrafo_docx": 1299,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "CHEIRO DE MEDO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1299,
+          "tipo": "corpo",
+          "texto": "Quando demonstrar diante de alguém que a violência dele não foi suficiente para fazê-lo parar, isso conta como influência para Negociar se ele tiver motivo para temer sua resistência."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando demonstrar diante de alguém que a violência dele não foi suficiente para fazê-lo parar, isso conta como influência para Negociar se ele tiver motivo para temer sua resistência.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1299"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1300",
+      "paragrafo_docx": 1300,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "QUE VENHAM TODOS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1300,
+          "tipo": "corpo",
+          "texto": "Quando voluntariamente chamar para si a atenção de vários inimigos capazes de ouvi-lo, eles precisam de motivo ficcional concreto para ignorá-lo e atacar outra pessoa."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando voluntariamente chamar para si a atenção de vários inimigos capazes de ouvi-lo, eles precisam de motivo ficcional concreto para ignorá-lo e atacar outra pessoa.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1300"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1301",
+      "paragrafo_docx": 1301,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "QUEBRA-OSSOS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1301,
+          "tipo": "corpo",
+          "texto": "Quando conseguir controle físico completo sobre alguém menor, mais fraco ou já vulnerável, sua força torna a contenção uma arma. Enquanto mantiver o controle, pode sem nova rolagem:"
+        },
+        {
+          "paragrafo_docx": 1302,
+          "tipo": "opcao",
+          "texto": "arrastá-lo junto com você;"
+        },
+        {
+          "paragrafo_docx": 1303,
+          "tipo": "opcao",
+          "texto": "mantê-lo incapaz de utilizar normalmente braços ou pernas;"
+        },
+        {
+          "paragrafo_docx": 1304,
+          "tipo": "opcao",
+          "texto": "colocá-lo entre você e uma ameaça;"
+        },
+        {
+          "paragrafo_docx": 1305,
+          "tipo": "opcao",
+          "texto": "arremessá-lo para uma posição próxima;"
+        },
+        {
+          "paragrafo_docx": 1306,
+          "tipo": "opcao",
+          "texto": "causar dano apropriado esmagando, torcendo ou golpeando seu corpo."
+        },
+        {
+          "paragrafo_docx": 1307,
+          "tipo": "continuacao",
+          "texto": "Algo capaz de realmente romper seu domínio ainda pode fazê-lo mudar de situação."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1302,
+          "texto": "arrastá-lo junto com você;"
+        },
+        {
+          "paragrafo_docx": 1303,
+          "texto": "mantê-lo incapaz de utilizar normalmente braços ou pernas;"
+        },
+        {
+          "paragrafo_docx": 1304,
+          "texto": "colocá-lo entre você e uma ameaça;"
+        },
+        {
+          "paragrafo_docx": 1305,
+          "texto": "arremessá-lo para uma posição próxima;"
+        },
+        {
+          "paragrafo_docx": 1306,
+          "texto": "causar dano apropriado esmagando, torcendo ou golpeando seu corpo."
+        }
+      ],
+      "texto_original": "Quando conseguir controle físico completo sobre alguém menor, mais fraco ou já vulnerável, sua força torna a contenção uma arma. Enquanto mantiver o controle, pode sem nova rolagem:\narrastá-lo junto com você;\nmantê-lo incapaz de utilizar normalmente braços ou pernas;\ncolocá-lo entre você e uma ameaça;\narremessá-lo para uma posição próxima;\ncausar dano apropriado esmagando, torcendo ou golpeando seu corpo.\nAlgo capaz de realmente romper seu domínio ainda pode fazê-lo mudar de situação.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1301"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1308",
+      "paragrafo_docx": 1308,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "CICATRIZES CONTAM HISTÓRIAS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1308,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando alguém perguntar sinceramente sobre uma de suas cicatrizes, diga o que conseguiu feri-lo daquela maneira e como você sobreviveu. Receba 1 Preparo relacionado àquele tipo de ameaça e pergunte ao Mestre:\n“O que eu jamais esqueceria sobre enfrentar algo assim novamente?” \nEle responderá honestamente."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por sessão, quando alguém perguntar sinceramente sobre uma de suas cicatrizes, diga o que conseguiu feri-lo daquela maneira e como você sobreviveu. Receba 1 Preparo relacionado àquele tipo de ameaça e pergunte ao Mestre:\n“O que eu jamais esqueceria sobre enfrentar algo assim novamente?” \nEle responderá honestamente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1308"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1309",
+      "paragrafo_docx": 1309,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "APETITES HERCÚLEOS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1309,
+          "tipo": "corpo",
+          "texto": "Escolha dois apetites que nunca parecem completamente satisfeitos:"
+        },
+        {
+          "paragrafo_docx": 1310,
+          "tipo": "opcao",
+          "texto": "Destruição;"
+        },
+        {
+          "paragrafo_docx": 1311,
+          "tipo": "opcao",
+          "texto": "Domínio;"
+        },
+        {
+          "paragrafo_docx": 1312,
+          "tipo": "opcao",
+          "texto": "Prazer;"
+        },
+        {
+          "paragrafo_docx": 1313,
+          "tipo": "opcao",
+          "texto": "Conquista;"
+        },
+        {
+          "paragrafo_docx": 1314,
+          "tipo": "opcao",
+          "texto": "Riqueza;"
+        },
+        {
+          "paragrafo_docx": 1315,
+          "tipo": "opcao",
+          "texto": "Fama;"
+        },
+        {
+          "paragrafo_docx": 1316,
+          "tipo": "opcao",
+          "texto": "Glória"
+        },
+        {
+          "paragrafo_docx": 1317,
+          "tipo": "opcao",
+          "texto": "ou outro igualmente excessivo."
+        },
+        {
+          "paragrafo_docx": 1318,
+          "tipo": "continuacao",
+          "texto": "Quando perseguir um de seus apetites apesar de risco ou consequência reais, em vez de rolar 2d6 role 1d6+1d8. \nResolva normalmente o resultado total. Se o d6 for maior que o d8, seu apetite também cria uma complicação, perigo ou excesso apropriado, mesmo que você tenha conseguido aquilo que queria.\nQuando satisfizer um Apetite numa escala extraordinária, você pode declarar que finalmente deixou de precisar dele. Marque 1 XP, substitua-o por outro e diga como essa experiência mudou sua relação com aquilo que desejava."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1310,
+          "texto": "Destruição;"
+        },
+        {
+          "paragrafo_docx": 1311,
+          "texto": "Domínio;"
+        },
+        {
+          "paragrafo_docx": 1312,
+          "texto": "Prazer;"
+        },
+        {
+          "paragrafo_docx": 1313,
+          "texto": "Conquista;"
+        },
+        {
+          "paragrafo_docx": 1314,
+          "texto": "Riqueza;"
+        },
+        {
+          "paragrafo_docx": 1315,
+          "texto": "Fama;"
+        },
+        {
+          "paragrafo_docx": 1316,
+          "texto": "Glória"
+        },
+        {
+          "paragrafo_docx": 1317,
+          "texto": "ou outro igualmente excessivo."
+        }
+      ],
+      "texto_original": "Escolha dois apetites que nunca parecem completamente satisfeitos:\nDestruição;\nDomínio;\nPrazer;\nConquista;\nRiqueza;\nFama;\nGlória\nou outro igualmente excessivo.\nQuando perseguir um de seus apetites apesar de risco ou consequência reais, em vez de rolar 2d6 role 1d6+1d8. \nResolva normalmente o resultado total. Se o d6 for maior que o d8, seu apetite também cria uma complicação, perigo ou excesso apropriado, mesmo que você tenha conseguido aquilo que queria.\nQuando satisfizer um Apetite numa escala extraordinária, você pode declarar que finalmente deixou de precisar dele. Marque 1 XP, substitua-o por outro e diga como essa experiência mudou sua relação com aquilo que desejava.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1309"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1319",
+      "paragrafo_docx": 1319,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "AINDA COM FOME",
+      "requisito_literal": "Apetites Hercúleos",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1309",
+        "titulo_requerido": "APETITES HERCÚLEOS",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1319,
+          "tipo": "corpo",
+          "texto": "Escolha mais um Apetite. Além disso, a primeira vez em cada sessão que um de seus apetites colocar diretamente outra pessoa em problemas, marque 1 XP quando decidir se vai ajudá-la ou continuar perseguindo aquilo que deseja."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Escolha mais um Apetite. Além disso, a primeira vez em cada sessão que um de seus apetites colocar diretamente outra pessoa em problemas, marque 1 XP quando decidir se vai ajudá-la ou continuar perseguindo aquilo que deseja.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1319"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1320",
+      "paragrafo_docx": 1320,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FOME INDESTRUTÍVEL",
+      "requisito_literal": "Apetites Hercúleos",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1309",
+        "titulo_requerido": "APETITES HERCÚLEOS",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1320,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando sofrer dano, você pode declarar que ainda deseja alguma coisa mais do que deseja parar. Ignore completamente esse dano e receba −1 constante até satisfazer significativamente um de seus Apetites. Você não pode utilizar este Movimento novamente enquanto a penalidade permanecer."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por sessão, quando sofrer dano, você pode declarar que ainda deseja alguma coisa mais do que deseja parar. Ignore completamente esse dano e receba −1 constante até satisfazer significativamente um de seus Apetites. Você não pode utilizar este Movimento novamente enquanto a penalidade permanecer.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1320"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1322",
+      "paragrafo_docx": 1322,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "O QUE HÁ DE MELHOR NA VIDA?",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1322,
+          "tipo": "corpo",
+          "texto": "Escolha uma expressão de vitória que realmente significa alguma coisa para você:"
+        },
+        {
+          "paragrafo_docx": 1323,
+          "tipo": "opcao",
+          "texto": "derrotar um rival;"
+        },
+        {
+          "paragrafo_docx": 1324,
+          "tipo": "opcao",
+          "texto": "conquistar território;"
+        },
+        {
+          "paragrafo_docx": 1325,
+          "tipo": "opcao",
+          "texto": "destruir aquilo que ninguém conseguiu destruir;"
+        },
+        {
+          "paragrafo_docx": 1326,
+          "tipo": "opcao",
+          "texto": "ouvir seu nome celebrado;"
+        },
+        {
+          "paragrafo_docx": 1327,
+          "tipo": "opcao",
+          "texto": "retornar carregado de troféus"
+        },
+        {
+          "paragrafo_docx": 1328,
+          "tipo": "opcao",
+          "texto": "ou outra."
+        },
+        {
+          "paragrafo_docx": 1329,
+          "tipo": "continuacao",
+          "texto": "Uma vez por sessão, quando conseguir isso de maneira memorável, marque 1 XP e diga o que agora você deseja ainda mais. Receba também 1 Preparo para perseguir aquilo que acabou de declarar."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1323,
+          "texto": "derrotar um rival;"
+        },
+        {
+          "paragrafo_docx": 1324,
+          "texto": "conquistar território;"
+        },
+        {
+          "paragrafo_docx": 1325,
+          "texto": "destruir aquilo que ninguém conseguiu destruir;"
+        },
+        {
+          "paragrafo_docx": 1326,
+          "texto": "ouvir seu nome celebrado;"
+        },
+        {
+          "paragrafo_docx": 1327,
+          "texto": "retornar carregado de troféus"
+        },
+        {
+          "paragrafo_docx": 1328,
+          "texto": "ou outra."
+        }
+      ],
+      "texto_original": "Escolha uma expressão de vitória que realmente significa alguma coisa para você:\nderrotar um rival;\nconquistar território;\ndestruir aquilo que ninguém conseguiu destruir;\nouvir seu nome celebrado;\nretornar carregado de troféus\nou outra.\nUma vez por sessão, quando conseguir isso de maneira memorável, marque 1 XP e diga o que agora você deseja ainda mais. Receba também 1 Preparo para perseguir aquilo que acabou de declarar.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1322"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1330",
+      "paragrafo_docx": 1330,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FRENESI",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1330,
+          "tipo": "corpo",
+          "texto": "Quando decidir abandonar qualquer cuidado defensivo durante sua Fúria, diga isso antes de atacar. Até recuperar o controle:"
+        },
+        {
+          "paragrafo_docx": 1331,
+          "tipo": "opcao",
+          "texto": "aumente em mais um grau a Periculosidade de seus ataques corpo a corpo;"
+        },
+        {
+          "paragrafo_docx": 1332,
+          "tipo": "opcao",
+          "texto": "ataques contra você encontram aberturas óbvias e não precisam justificar ficcionalmente como conseguem alcançá-lo."
+        },
+        {
+          "paragrafo_docx": 1333,
+          "tipo": "continuacao",
+          "texto": "Você escolheu trocar preservação por violência."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1331,
+          "texto": "aumente em mais um grau a Periculosidade de seus ataques corpo a corpo;"
+        },
+        {
+          "paragrafo_docx": 1332,
+          "texto": "ataques contra você encontram aberturas óbvias e não precisam justificar ficcionalmente como conseguem alcançá-lo."
+        }
+      ],
+      "texto_original": "Quando decidir abandonar qualquer cuidado defensivo durante sua Fúria, diga isso antes de atacar. Até recuperar o controle:\naumente em mais um grau a Periculosidade de seus ataques corpo a corpo;\nataques contra você encontram aberturas óbvias e não precisam justificar ficcionalmente como conseguem alcançá-lo.\nVocê escolheu trocar preservação por violência.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1330"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1334",
+      "paragrafo_docx": 1334,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FÚRIA SEM MENTE",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1334,
+          "tipo": "corpo",
+          "texto": "Enquanto estiver em Fúria, medo, encanto ou manipulação emocional não podem obrigá-lo a recuar, abandonar sua luta ou voltar-se contra aqueles que reconhece como seus aliados. \nMagia suficientemente poderosa ainda pode afetar você de outras maneiras."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Enquanto estiver em Fúria, medo, encanto ou manipulação emocional não podem obrigá-lo a recuar, abandonar sua luta ou voltar-se contra aqueles que reconhece como seus aliados. \nMagia suficientemente poderosa ainda pode afetar você de outras maneiras.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1334"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1335",
+      "paragrafo_docx": 1335,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "RETALIAÇÃO",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1335,
+          "tipo": "corpo",
+          "texto": "Quando alguém ao seu alcance feri-lo durante sua Fúria, ele não pode simplesmente atingir você e retirar-se em segurança. Antes que consiga abandonar sua posição, você pode agir diretamente contra ele se a ficção permitir.\nIsso aciona Matar e Pilhar normalmente, mas você pode escolher sofrer mais 1d6 de dano para causar seu dano, mesmo que falhe. Isto lhe permitiria atacar com o dobro de perigo caso tenha sucesso."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando alguém ao seu alcance feri-lo durante sua Fúria, ele não pode simplesmente atingir você e retirar-se em segurança. Antes que consiga abandonar sua posição, você pode agir diretamente contra ele se a ficção permitir.\nIsso aciona Matar e Pilhar normalmente, mas você pode escolher sofrer mais 1d6 de dano para causar seu dano, mesmo que falhe. Isto lhe permitiria atacar com o dobro de perigo caso tenha sucesso.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1335"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1336",
+      "paragrafo_docx": 1336,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "INSTINTO FERAL",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1336,
+          "tipo": "corpo",
+          "texto": "Quando uma ameaça inesperada deveria pegá-lo completamente desprevenido, você ainda percebe o instante em que ela se torna perigosa. Se existir alguma coisa plausível que possa fazer naquele instante, diga o que faz. \nVocê pode continuar em enorme desvantagem. Mas não fica simplesmente parado porque “foi surpreendido”."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando uma ameaça inesperada deveria pegá-lo completamente desprevenido, você ainda percebe o instante em que ela se torna perigosa. Se existir alguma coisa plausível que possa fazer naquele instante, diga o que faz. \nVocê pode continuar em enorme desvantagem. Mas não fica simplesmente parado porque “foi surpreendido”.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1336"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1337",
+      "paragrafo_docx": 1337,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "GOLPE BRUTAL",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1337,
+          "tipo": "corpo",
+          "texto": "Quando escolher a opção de Matar e Pilhar que concede +1d6 de dano em troca de se expor ao contra-ataque, escolha também 1:"
+        },
+        {
+          "paragrafo_docx": 1338,
+          "tipo": "opcao",
+          "texto": "Golpe Impetuoso: arremesse ou empurre o alvo para longe;"
+        },
+        {
+          "paragrafo_docx": 1339,
+          "tipo": "opcao",
+          "texto": "Golpe no Tendão: prejudique concretamente sua mobilidade;"
+        },
+        {
+          "paragrafo_docx": 1340,
+          "tipo": "opcao",
+          "texto": "Golpe Atordoante: ele fica incapaz de responder imediatamente a outra ameaça;"
+        },
+        {
+          "paragrafo_docx": 1341,
+          "tipo": "opcao",
+          "texto": "Golpe de Ruptura: abra violentamente sua defesa; um aliado recebe +1 adiante contra ele."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1338,
+          "texto": "Golpe Impetuoso: arremesse ou empurre o alvo para longe;"
+        },
+        {
+          "paragrafo_docx": 1339,
+          "texto": "Golpe no Tendão: prejudique concretamente sua mobilidade;"
+        },
+        {
+          "paragrafo_docx": 1340,
+          "texto": "Golpe Atordoante: ele fica incapaz de responder imediatamente a outra ameaça;"
+        },
+        {
+          "paragrafo_docx": 1341,
+          "texto": "Golpe de Ruptura: abra violentamente sua defesa; um aliado recebe +1 adiante contra ele."
+        }
+      ],
+      "texto_original": "Quando escolher a opção de Matar e Pilhar que concede +1d6 de dano em troca de se expor ao contra-ataque, escolha também 1:\nGolpe Impetuoso: arremesse ou empurre o alvo para longe;\nGolpe no Tendão: prejudique concretamente sua mobilidade;\nGolpe Atordoante: ele fica incapaz de responder imediatamente a outra ameaça;\nGolpe de Ruptura: abra violentamente sua defesa; um aliado recebe +1 adiante contra ele.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1337"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1342",
+      "paragrafo_docx": 1342,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "GOLPE BRUTAL APRIMORADO",
+      "requisito_literal": "Golpe Brutal",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1337",
+        "titulo_requerido": "GOLPE BRUTAL",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1342,
+          "tipo": "corpo",
+          "texto": "Quando utilizar Golpe Brutal, escolha duas opções diferentes."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando utilizar Golpe Brutal, escolha duas opções diferentes.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1342"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1343",
+      "paragrafo_docx": 1343,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "DEMASIADO FURIOSO PARA MORRER",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1343,
+          "tipo": "corpo",
+          "texto": "Quando chegar a 0 PV durante a Fúria, realize Último Suspiro normalmente.\nSe obtiver 7+, você pode permanecer consciente e agindo até sua Fúria terminar.\nQuando ela terminar, as consequências do Último Suspiro finalmente alcançam você."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando chegar a 0 PV durante a Fúria, realize Último Suspiro normalmente.\nSe obtiver 7+, você pode permanecer consciente e agindo até sua Fúria terminar.\nQuando ela terminar, as consequências do Último Suspiro finalmente alcançam você.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1343"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1344",
+      "paragrafo_docx": 1344,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "UM BOM DIA PARA MORRER",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1344,
+          "tipo": "corpo",
+          "texto": "Quando estiver com um quarto ou menos de seus PV máximos, receba +1 constante para Desafiar o Perigo com FOR ou CON enquanto avançar em direção ao perigo em vez de procurar segurança."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando estiver com um quarto ou menos de seus PV máximos, receba +1 constante para Desafiar o Perigo com FOR ou CON enquanto avançar em direção ao perigo em vez de procurar segurança.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1344"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1345",
+      "paragrafo_docx": 1345,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "SANSÃO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1345,
+          "tipo": "corpo",
+          "texto": "Quando estiver fisicamente ou mentalmente restringido contra sua vontade, você pode sofrer imediatamente uma Debilidade apropriada para romper a contenção. Correntes estouram. Magia pode quebrar. Uma criatura pode ser arrancada de você. \nO preço é aquilo que esse esforço faz com seu corpo ou mente."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando estiver fisicamente ou mentalmente restringido contra sua vontade, você pode sofrer imediatamente uma Debilidade apropriada para romper a contenção. Correntes estouram. Magia pode quebrar. Uma criatura pode ser arrancada de você. \nO preço é aquilo que esse esforço faz com seu corpo ou mente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1345"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1346",
+      "paragrafo_docx": 1346,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FALE COM OS MEUS BÍCEPS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1346,
+          "tipo": "corpo",
+          "texto": "Quando realizar diante de alguém uma demonstração extraordinária de força bruta, pergunte: \n“O que essa pessoa agora acredita que eu seria capaz de fazer?” \nSe essa impressão for relevante para aquilo que deseja dela, sua demonstração conta como influência para Negociar."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando realizar diante de alguém uma demonstração extraordinária de força bruta, pergunte: \n“O que essa pessoa agora acredita que eu seria capaz de fazer?” \nSe essa impressão for relevante para aquilo que deseja dela, sua demonstração conta como influência para Negociar.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1346"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1347",
+      "paragrafo_docx": 1347,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "ESMAGAR!",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1347,
+          "tipo": "corpo",
+          "texto": "Quando obtiver 12+ em Matar e Pilhar através de FOR, além dos efeitos normais escolha uma coisa física que seu alvo possua e que você realmente possa atingir: arma, escudo, posição, membro, cobertura ou semelhante. \nEle a perde, quebra ou fica incapaz de utilizá-la como antes."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando obtiver 12+ em Matar e Pilhar através de FOR, além dos efeitos normais escolha uma coisa física que seu alvo possua e que você realmente possa atingir: arma, escudo, posição, membro, cobertura ou semelhante. \nEle a perde, quebra ou fica incapaz de utilizá-la como antes.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1347"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1348",
+      "paragrafo_docx": 1348,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FORÇA INDOMÁVEL",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1348,
+          "tipo": "corpo",
+          "texto": "Quando algo depender exclusivamente de força bruta e estiver apenas no limite do que um corpo extraordinário poderia realizar, você consegue. Role apenas quando houver perigo, oposição extraordinária ou consequência interessante."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando algo depender exclusivamente de força bruta e estiver apenas no limite do que um corpo extraordinário poderia realizar, você consegue. Role apenas quando houver perigo, oposição extraordinária ou consequência interessante.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1348"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1349",
+      "paragrafo_docx": 1349,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "GRITO DE GUERRA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1349,
+          "tipo": "corpo",
+          "texto": "Quando entrar numa batalha com uma demonstração de força, voz ou ferocidade que todos possam perceber, role+CAR ou CON conforme sua presença venha de liderança ou pura brutalidade.\n10+: ambos.\n7–9: escolha 1."
+        },
+        {
+          "paragrafo_docx": 1350,
+          "tipo": "opcao",
+          "texto": "seus aliados se inflamam e recebem +1 adiante;"
+        },
+        {
+          "paragrafo_docx": 1351,
+          "tipo": "opcao",
+          "texto": "inimigos capazes de sentir medo agem levando sua presença em consideração: hesitam, recuam, atacam precipitadamente ou procuram proteção."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1350,
+          "texto": "seus aliados se inflamam e recebem +1 adiante;"
+        },
+        {
+          "paragrafo_docx": 1351,
+          "texto": "inimigos capazes de sentir medo agem levando sua presença em consideração: hesitam, recuam, atacam precipitadamente ou procuram proteção."
+        }
+      ],
+      "texto_original": "Quando entrar numa batalha com uma demonstração de força, voz ou ferocidade que todos possam perceber, role+CAR ou CON conforme sua presença venha de liderança ou pura brutalidade.\n10+: ambos.\n7–9: escolha 1.\nseus aliados se inflamam e recebem +1 adiante;\ninimigos capazes de sentir medo agem levando sua presença em consideração: hesitam, recuam, atacam precipitadamente ou procuram proteção.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1349"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1352",
+      "paragrafo_docx": 1352,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "MARCA DE PODER",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1352,
+          "tipo": "corpo",
+          "texto": "Escolha uma marca que represente suas vitórias: cicatrizes rituais, tatuagem, trança, dentes, sinos, troféus ou outra coisa visível.\nQuando alguém que conheça sua tradição vê essa marca, sabe sem precisar de apresentação que você conquistou o direito de carregá-la. Isso conta como influência quando seu poder ou reputação for realmente relevante."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Escolha uma marca que represente suas vitórias: cicatrizes rituais, tatuagem, trança, dentes, sinos, troféus ou outra coisa visível.\nQuando alguém que conheça sua tradição vê essa marca, sabe sem precisar de apresentação que você conquistou o direito de carregá-la. Isso conta como influência quando seu poder ou reputação for realmente relevante.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1352"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1353",
+      "paragrafo_docx": 1353,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "USURPADOR",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1353,
+          "tipo": "corpo",
+          "texto": "Quando derrotar, humilhar ou superar publicamente alguém cuja autoridade dependia de parecer superior aos demais, pergunte:\n“Quem entre seus seguidores começa agora a imaginar que deveria seguir a mim?”\nO Mestre responderá honestamente. Você conta como possuindo influência sobre essas pessoas enquanto sua demonstração permanecer relevante."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando derrotar, humilhar ou superar publicamente alguém cuja autoridade dependia de parecer superior aos demais, pergunte:\n“Quem entre seus seguidores começa agora a imaginar que deveria seguir a mim?”\nO Mestre responderá honestamente. Você conta como possuindo influência sobre essas pessoas enquanto sua demonstração permanecer relevante.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1353"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1354",
+      "paragrafo_docx": 1354,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "KHAN DOS KHANS",
+      "requisito_literal": "Apetites Hercúleos",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1309",
+        "titulo_requerido": "APETITES HERCÚLEOS",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1354,
+          "tipo": "corpo",
+          "texto": "Servos e guerreiros cuja motivação esteja alinhada a saque, prazer, glória ou conquista podem aceitar participação na satisfação de um de seus Apetites como seu Custo. Quando liderá-los diretamente naquilo que lhes prometeu, receba +1 adiante para uma rolagem de Lealdade."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Servos e guerreiros cuja motivação esteja alinhada a saque, prazer, glória ou conquista podem aceitar participação na satisfação de um de seus Apetites como seu Custo. Quando liderá-los diretamente naquilo que lhes prometeu, receba +1 adiante para uma rolagem de Lealdade.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1354"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1355",
+      "paragrafo_docx": 1355,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "DURO NA QUEDA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1355,
+          "tipo": "corpo",
+          "texto": "Receba +1 em Último Suspiro. Além disso, quando obtiver 7–9, você pode tentar oferecer uma barganha à Morte primeiro, em vez de esperar que ela dite os termos. A Morte não é obrigada a aceitar."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Receba +1 em Último Suspiro. Além disso, quando obtiver 7–9, você pode tentar oferecer uma barganha à Morte primeiro, em vez de esperar que ela dite os termos. A Morte não é obrigada a aceitar.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1355"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1356",
+      "paragrafo_docx": 1356,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "AQUELE QUE BATE À PORTA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1356,
+          "tipo": "corpo",
+          "texto": "Quando obtiver 12+ ao Desafiar o Perigo, você não apenas supera a ameaça: volte-a contra si mesma. \nO Mestre dirá como aquilo que ameaçava você acaba prejudicando a própria fonte, abrindo uma oportunidade ou mudando violentamente a situação."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando obtiver 12+ ao Desafiar o Perigo, você não apenas supera a ameaça: volte-a contra si mesma. \nO Mestre dirá como aquilo que ameaçava você acaba prejudicando a própria fonte, abrindo uma oportunidade ou mudando violentamente a situação.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1356"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1357",
+      "paragrafo_docx": 1357,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "EU NÃO ACREDITO EM MAGIA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1357,
+          "tipo": "corpo",
+          "texto": "Quando magia fizer você Desafiar o Perigo, trate um resultado 7-9 como 10+."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando magia fizer você Desafiar o Perigo, trate um resultado 7-9 como 10+.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1357"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1358",
+      "paragrafo_docx": 1358,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "OLHO DO PREDADOR",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1358,
+          "tipo": "corpo",
+          "texto": "Quando entrar num lugar perigoso e confiar no instinto antes da razão, pergunte:\n“O que aqui está agindo como predador?”\nou “O que aqui está agindo como presa?”\nO Mestre responderá segundo aquilo que seus sentidos e experiência poderiam perceber."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando entrar num lugar perigoso e confiar no instinto antes da razão, pergunte:\n“O que aqui está agindo como predador?”\nou “O que aqui está agindo como presa?”\nO Mestre responderá segundo aquilo que seus sentidos e experiência poderiam perceber.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1358"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1359",
+      "paragrafo_docx": 1359,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "CORAÇÃO SELVAGEM",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1359,
+          "tipo": "corpo",
+          "texto": "Escolha três espíritos animais apropriados à sua tradição. Quando entrar em Fúria, invoque um deles e receba sua característica até a Fúria terminar. Exemplos:"
+        },
+        {
+          "paragrafo_docx": 1360,
+          "tipo": "opcao",
+          "texto": "Urso: a primeira vez na cena que sofrer violência física, reduza seu dano pela metade."
+        },
+        {
+          "paragrafo_docx": 1361,
+          "tipo": "opcao",
+          "texto": "Águia: terreno e inimigos comuns não conseguem impedir sua movimentação apenas por estarem entre você e seu destino."
+        },
+        {
+          "paragrafo_docx": 1362,
+          "tipo": "opcao",
+          "texto": "Lobo: aliados que atacarem alguém que você estiver mantendo ocupado recebem +1 adiante na primeira vez que o fizerem naquela cena."
+        },
+        {
+          "paragrafo_docx": 1363,
+          "tipo": "continuacao",
+          "texto": "Outros animais podem ser criados com o Mestre."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1360,
+          "texto": "Urso: a primeira vez na cena que sofrer violência física, reduza seu dano pela metade."
+        },
+        {
+          "paragrafo_docx": 1361,
+          "texto": "Águia: terreno e inimigos comuns não conseguem impedir sua movimentação apenas por estarem entre você e seu destino."
+        },
+        {
+          "paragrafo_docx": 1362,
+          "texto": "Lobo: aliados que atacarem alguém que você estiver mantendo ocupado recebem +1 adiante na primeira vez que o fizerem naquela cena."
+        }
+      ],
+      "texto_original": "Escolha três espíritos animais apropriados à sua tradição. Quando entrar em Fúria, invoque um deles e receba sua característica até a Fúria terminar. Exemplos:\nUrso: a primeira vez na cena que sofrer violência física, reduza seu dano pela metade.\nÁguia: terreno e inimigos comuns não conseguem impedir sua movimentação apenas por estarem entre você e seu destino.\nLobo: aliados que atacarem alguém que você estiver mantendo ocupado recebem +1 adiante na primeira vez que o fizerem naquela cena.\nOutros animais podem ser criados com o Mestre.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1359"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1364",
+      "paragrafo_docx": 1364,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "ASPECTO DA FERA",
+      "requisito_literal": "Coração Selvagem",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1359",
+        "titulo_requerido": "CORAÇÃO SELVAGEM",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1364,
+          "tipo": "corpo",
+          "texto": "Depois de Preparar Acampamento, escolha um de seus espíritos conhecidos.\nAté o próximo acampamento, carregue uma capacidade não combativa apropriada:"
+        },
+        {
+          "paragrafo_docx": 1365,
+          "tipo": "opcao",
+          "texto": "sentidos;"
+        },
+        {
+          "paragrafo_docx": 1366,
+          "tipo": "opcao",
+          "texto": "natação;"
+        },
+        {
+          "paragrafo_docx": 1367,
+          "tipo": "opcao",
+          "texto": "escalada;"
+        },
+        {
+          "paragrafo_docx": 1368,
+          "tipo": "opcao",
+          "texto": "orientação;"
+        },
+        {
+          "paragrafo_docx": 1369,
+          "tipo": "opcao",
+          "texto": "resistência climática;"
+        },
+        {
+          "paragrafo_docx": 1370,
+          "tipo": "opcao",
+          "texto": "salto;"
+        },
+        {
+          "paragrafo_docx": 1371,
+          "tipo": "opcao",
+          "texto": "rastreamento;"
+        },
+        {
+          "paragrafo_docx": 1372,
+          "tipo": "opcao",
+          "texto": "comunicação limitada com animais semelhantes."
+        },
+        {
+          "paragrafo_docx": 1373,
+          "tipo": "continuacao",
+          "texto": "A ficção define exatamente como se manifesta."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1365,
+          "texto": "sentidos;"
+        },
+        {
+          "paragrafo_docx": 1366,
+          "texto": "natação;"
+        },
+        {
+          "paragrafo_docx": 1367,
+          "texto": "escalada;"
+        },
+        {
+          "paragrafo_docx": 1368,
+          "texto": "orientação;"
+        },
+        {
+          "paragrafo_docx": 1369,
+          "texto": "resistência climática;"
+        },
+        {
+          "paragrafo_docx": 1370,
+          "texto": "salto;"
+        },
+        {
+          "paragrafo_docx": 1371,
+          "texto": "rastreamento;"
+        },
+        {
+          "paragrafo_docx": 1372,
+          "texto": "comunicação limitada com animais semelhantes."
+        }
+      ],
+      "texto_original": "Depois de Preparar Acampamento, escolha um de seus espíritos conhecidos.\nAté o próximo acampamento, carregue uma capacidade não combativa apropriada:\nsentidos;\nnatação;\nescalada;\norientação;\nresistência climática;\nsalto;\nrastreamento;\ncomunicação limitada com animais semelhantes.\nA ficção define exatamente como se manifesta.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1364"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1374",
+      "paragrafo_docx": 1374,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "PODER DA SELVA",
+      "requisito_literal": "Coração Selvagem",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1359",
+        "titulo_requerido": "CORAÇÃO SELVAGEM",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1374,
+          "tipo": "corpo",
+          "texto": "Quando entrar em Fúria, além do espírito normal, manifeste um aspecto maior de um dos seus espíritos. Exemplos:"
+        },
+        {
+          "paragrafo_docx": 1375,
+          "tipo": "opcao",
+          "texto": "Falcão: adquira voo ou mobilidade aérea sobrenatural enquanto houver espaço."
+        },
+        {
+          "paragrafo_docx": 1376,
+          "tipo": "opcao",
+          "texto": "Leão: sua presença domina a batalha; adversários próximos capazes de perceber você precisam de uma razão concreta para ignorá-lo e voltar sua violência contra outra pessoa."
+        },
+        {
+          "paragrafo_docx": 1377,
+          "tipo": "opcao",
+          "texto": "Carneiro: enquanto tiver espaço para ganhar impulso, obstáculos e criaturas de escala semelhante não conseguem simplesmente deter sua carga. Ao atingi-los, escolha derrubar, arrastar ou romper sua posição."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1375,
+          "texto": "Falcão: adquira voo ou mobilidade aérea sobrenatural enquanto houver espaço."
+        },
+        {
+          "paragrafo_docx": 1376,
+          "texto": "Leão: sua presença domina a batalha; adversários próximos capazes de perceber você precisam de uma razão concreta para ignorá-lo e voltar sua violência contra outra pessoa."
+        },
+        {
+          "paragrafo_docx": 1377,
+          "texto": "Carneiro: enquanto tiver espaço para ganhar impulso, obstáculos e criaturas de escala semelhante não conseguem simplesmente deter sua carga. Ao atingi-los, escolha derrubar, arrastar ou romper sua posição."
+        }
+      ],
+      "texto_original": "Quando entrar em Fúria, além do espírito normal, manifeste um aspecto maior de um dos seus espíritos. Exemplos:\nFalcão: adquira voo ou mobilidade aérea sobrenatural enquanto houver espaço.\nLeão: sua presença domina a batalha; adversários próximos capazes de perceber você precisam de uma razão concreta para ignorá-lo e voltar sua violência contra outra pessoa.\nCarneiro: enquanto tiver espaço para ganhar impulso, obstáculos e criaturas de escala semelhante não conseguem simplesmente deter sua carga. Ao atingi-los, escolha derrubar, arrastar ou romper sua posição.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1374"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1378",
+      "paragrafo_docx": 1378,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "OS ANCESTRAIS LUTAM COMIGO",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1378,
+          "tipo": "corpo",
+          "texto": "Quando entrar em Fúria, espíritos de ancestrais, mestres ou antigos companheiros manifestam-se ao redor de você. A primeira criatura que você ferir passa a ser cercada por eles. Enquanto ela continuar enfrentando você, precisa de uma razão concreta para ignorá-lo e atacar qualquer aliado próximo."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando entrar em Fúria, espíritos de ancestrais, mestres ou antigos companheiros manifestam-se ao redor de você. A primeira criatura que você ferir passa a ser cercada por eles. Enquanto ela continuar enfrentando você, precisa de uma razão concreta para ignorá-lo e atacar qualquer aliado próximo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1378"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1379",
+      "paragrafo_docx": 1379,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "ESCUDO DOS ANCESTRAIS",
+      "requisito_literal": "Os Ancestrais Lutam Comigo",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1378",
+        "titulo_requerido": "OS ANCESTRAIS LUTAM COMIGO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1379,
+          "tipo": "corpo",
+          "texto": "Três vezes por Fúria, quando alguém próximo sofrer dano que seus ancestrais poderiam perceber, invoque-os para reduzir pela metade o dano ou efeito. Diga qual ancestral interveio e como."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Três vezes por Fúria, quando alguém próximo sofrer dano que seus ancestrais poderiam perceber, invoque-os para reduzir pela metade o dano ou efeito. Diga qual ancestral interveio e como.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1379"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1380",
+      "paragrafo_docx": 1380,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "CONSELHO DOS MORTOS",
+      "requisito_literal": "Os Ancestrais Lutam Comigo",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1378",
+        "titulo_requerido": "OS ANCESTRAIS LUTAM COMIGO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1380,
+          "tipo": "corpo",
+          "texto": "Quando passar algum tempo junto a fogo, túmulo, altar ou outro espaço de memória e pedir conselho aos seus ancestrais, pergunte:\n“O que aqueles que vieram antes sabem sobre o perigo que enfrentamos?”\nO Mestre responderá através daquilo que os mortos realmente poderiam saber."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando passar algum tempo junto a fogo, túmulo, altar ou outro espaço de memória e pedir conselho aos seus ancestrais, pergunte:\n“O que aqueles que vieram antes sabem sobre o perigo que enfrentamos?”\nO Mestre responderá através daquilo que os mortos realmente poderiam saber.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1380"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1381",
+      "paragrafo_docx": 1381,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "ANCESTRAIS VINGATIVOS",
+      "requisito_literal": "Escudo dos Ancestrais",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1379",
+        "titulo_requerido": "ESCUDO DOS ANCESTRAIS",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1381,
+          "tipo": "corpo",
+          "texto": "Quando seus espíritos reduzirem o dano causado por alguém, escolha:"
+        },
+        {
+          "paragrafo_docx": 1382,
+          "tipo": "opcao",
+          "texto": "exponha o agressor à próxima ação de um aliado; ou"
+        },
+        {
+          "paragrafo_docx": 1383,
+          "tipo": "opcao",
+          "texto": "faça-o sentir fisicamente a violência que tentou causar, sofrendo dano de Periculosidade apropriada à manifestação espiritual."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1382,
+          "texto": "exponha o agressor à próxima ação de um aliado; ou"
+        },
+        {
+          "paragrafo_docx": 1383,
+          "texto": "faça-o sentir fisicamente a violência que tentou causar, sofrendo dano de Periculosidade apropriada à manifestação espiritual."
+        }
+      ],
+      "texto_original": "Quando seus espíritos reduzirem o dano causado por alguém, escolha:\nexponha o agressor à próxima ação de um aliado; ou\nfaça-o sentir fisicamente a violência que tentou causar, sofrendo dano de Periculosidade apropriada à manifestação espiritual.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1381"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1384",
+      "paragrafo_docx": 1384,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FERA INTERIOR",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1384,
+          "tipo": "corpo",
+          "texto": "Existe em seu corpo alguma natureza monstruosa que sua Fúria liberta. Diga de onde ela vem e estabeleça alguns traços que normalmente fazem parte da transformação: dentes, garras, chifres, escamas, membros alterados, olhos incomuns ou outros apropriados. \nQuando entrar em Fúria, esses traços tornam-se plenamente manifestos. Sua anatomia é real e aquilo que naturalmente decorre dos traços já estabelecidos é verdadeiro na ficção. \nUma vez por sessão, quando precisar que sua transformação revele uma capacidade bestial nova, que ainda não havia sido estabelecida, diga o que seu corpo faz e pergunte ao Mestre: “O que esta transformação exige de mim?”\nO Mestre escolherá uma consequência apropriada:"
+        },
+        {
+          "paragrafo_docx": 1385,
+          "tipo": "opcao",
+          "texto": "a transformação ficará visível mesmo depois da Fúria;"
+        },
+        {
+          "paragrafo_docx": 1386,
+          "tipo": "opcao",
+          "texto": "você perderá temporariamente alguma capacidade humana;"
+        },
+        {
+          "paragrafo_docx": 1387,
+          "tipo": "opcao",
+          "texto": "um instinto bestial passará a exigir sua atenção;"
+        },
+        {
+          "paragrafo_docx": 1388,
+          "tipo": "opcao",
+          "texto": "seu corpo sofrerá uma Debilidade;"
+        },
+        {
+          "paragrafo_docx": 1389,
+          "tipo": "opcao",
+          "texto": "alguém ou alguma coisa reconhecerá aquilo que você está se tornando;"
+        },
+        {
+          "paragrafo_docx": 1390,
+          "tipo": "opcao",
+          "texto": "ou outra consequência adequada à natureza da fera."
+        },
+        {
+          "paragrafo_docx": 1391,
+          "tipo": "continuacao",
+          "texto": "Se aceitar o preço, seu corpo realmente consegue fazer aquilo."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1385,
+          "texto": "a transformação ficará visível mesmo depois da Fúria;"
+        },
+        {
+          "paragrafo_docx": 1386,
+          "texto": "você perderá temporariamente alguma capacidade humana;"
+        },
+        {
+          "paragrafo_docx": 1387,
+          "texto": "um instinto bestial passará a exigir sua atenção;"
+        },
+        {
+          "paragrafo_docx": 1388,
+          "texto": "seu corpo sofrerá uma Debilidade;"
+        },
+        {
+          "paragrafo_docx": 1389,
+          "texto": "alguém ou alguma coisa reconhecerá aquilo que você está se tornando;"
+        },
+        {
+          "paragrafo_docx": 1390,
+          "texto": "ou outra consequência adequada à natureza da fera."
+        }
+      ],
+      "texto_original": "Existe em seu corpo alguma natureza monstruosa que sua Fúria liberta. Diga de onde ela vem e estabeleça alguns traços que normalmente fazem parte da transformação: dentes, garras, chifres, escamas, membros alterados, olhos incomuns ou outros apropriados. \nQuando entrar em Fúria, esses traços tornam-se plenamente manifestos. Sua anatomia é real e aquilo que naturalmente decorre dos traços já estabelecidos é verdadeiro na ficção. \nUma vez por sessão, quando precisar que sua transformação revele uma capacidade bestial nova, que ainda não havia sido estabelecida, diga o que seu corpo faz e pergunte ao Mestre: “O que esta transformação exige de mim?”\nO Mestre escolherá uma consequência apropriada:\na transformação ficará visível mesmo depois da Fúria;\nvocê perderá temporariamente alguma capacidade humana;\num instinto bestial passará a exigir sua atenção;\nseu corpo sofrerá uma Debilidade;\nalguém ou alguma coisa reconhecerá aquilo que você está se tornando;\nou outra consequência adequada à natureza da fera.\nSe aceitar o preço, seu corpo realmente consegue fazer aquilo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1384"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1392",
+      "paragrafo_docx": 1392,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "A FERA APRENDE",
+      "requisito_literal": "Fera Interior",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1384",
+        "titulo_requerido": "FERA INTERIOR",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1392,
+          "tipo": "corpo",
+          "texto": "Quando uma capacidade descoberta através de Fera Interior aparecer novamente em três situações significativas diferentes, você pode declará-la parte estável de sua transformação. Ela deixa de exigir preço para aparecer durante a Fúria."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando uma capacidade descoberta através de Fera Interior aparecer novamente em três situações significativas diferentes, você pode declará-la parte estável de sua transformação. Ela deixa de exigir preço para aparecer durante a Fúria.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1392"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1393",
+      "paragrafo_docx": 1393,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "NÃO VOLTO INTEIRO",
+      "requisito_literal": "Fera Interior",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1384",
+        "titulo_requerido": "FERA INTERIOR",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1393,
+          "tipo": "corpo",
+          "texto": "Quando terminar uma Fúria depois de sobreviver a algo que deveria ter destruído seu corpo, escolha uma transformação ocorrida durante aquela cena. Ela não desaparece completamente. Diga como passa a fazer parte de você mesmo fora da Fúria. Aquilo que naturalmente decorrer dessa nova anatomia passa a ser verdadeiro também em sua forma normal."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando terminar uma Fúria depois de sobreviver a algo que deveria ter destruído seu corpo, escolha uma transformação ocorrida durante aquela cena. Ela não desaparece completamente. Diga como passa a fazer parte de você mesmo fora da Fúria. Aquilo que naturalmente decorrer dessa nova anatomia passa a ser verdadeiro também em sua forma normal.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1393"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1394",
+      "paragrafo_docx": 1394,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FÚRIA INFECCIOSA",
+      "requisito_literal": "Fera Interior",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1384",
+        "titulo_requerido": "FERA INTERIOR",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1394,
+          "tipo": "corpo",
+          "texto": "Uma vez por cena, quando ferir com sua transformação bestial uma criatura capaz de experimentar medo, raiva ou instinto, deixe parte da sua Fúria invadir sua mente. Role+CON.\n10+: escolha 2.\n7–9: escolha 1."
+        },
+        {
+          "paragrafo_docx": 1395,
+          "tipo": "opcao",
+          "texto": "ele ataca impulsivamente alguém próximo que considere ameaça;"
+        },
+        {
+          "paragrafo_docx": 1396,
+          "tipo": "opcao",
+          "texto": "ele foge ou recua de você;"
+        },
+        {
+          "paragrafo_docx": 1397,
+          "tipo": "opcao",
+          "texto": "perde momentaneamente o controle sobre aquilo que estava protegendo;"
+        },
+        {
+          "paragrafo_docx": 1398,
+          "tipo": "opcao",
+          "texto": "não percebe que a influência veio de você."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1395,
+          "texto": "ele ataca impulsivamente alguém próximo que considere ameaça;"
+        },
+        {
+          "paragrafo_docx": 1396,
+          "texto": "ele foge ou recua de você;"
+        },
+        {
+          "paragrafo_docx": 1397,
+          "texto": "perde momentaneamente o controle sobre aquilo que estava protegendo;"
+        },
+        {
+          "paragrafo_docx": 1398,
+          "texto": "não percebe que a influência veio de você."
+        }
+      ],
+      "texto_original": "Uma vez por cena, quando ferir com sua transformação bestial uma criatura capaz de experimentar medo, raiva ou instinto, deixe parte da sua Fúria invadir sua mente. Role+CON.\n10+: escolha 2.\n7–9: escolha 1.\nele ataca impulsivamente alguém próximo que considere ameaça;\nele foge ou recua de você;\nperde momentaneamente o controle sobre aquilo que estava protegendo;\nnão percebe que a influência veio de você.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1394"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1399",
+      "paragrafo_docx": 1399,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "CHAMADO DA MATILHA",
+      "requisito_literal": "Fera Interior",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1384",
+        "titulo_requerido": "FERA INTERIOR",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1399,
+          "tipo": "corpo",
+          "texto": "Quando soltar seu chamado e seus aliados responderem, escolha uma criatura que todos reconheçam como presa. Enquanto pelo menos dois membros da matilha continuarem caçando-a juntos, uma abertura criada por um de vocês pode ser imediatamente aproveitada pelos demais. A primeira vez em cada cena que cada membro da matilha agir diretamente sobre uma abertura criada por outro, recebe +1 adiante. \nA caça termina quando a presa escapar, for derrotada ou a matilha abandonar sua perseguição."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando soltar seu chamado e seus aliados responderem, escolha uma criatura que todos reconheçam como presa. Enquanto pelo menos dois membros da matilha continuarem caçando-a juntos, uma abertura criada por um de vocês pode ser imediatamente aproveitada pelos demais. A primeira vez em cada cena que cada membro da matilha agir diretamente sobre uma abertura criada por outro, recebe +1 adiante. \nA caça termina quando a presa escapar, for derrotada ou a matilha abandonar sua perseguição.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1399"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1400",
+      "paragrafo_docx": 1400,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "ARAUTO DA TEMPESTADE",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1400,
+          "tipo": "corpo",
+          "texto": "Escolha Deserto, Mar ou Tundra. \nQuando entrar em Fúria, uma tempestade correspondente ocupa sua presença até ela terminar:"
+        },
+        {
+          "paragrafo_docx": 1401,
+          "tipo": "opcao",
+          "texto": "Deserto: calor sufocante e brasas cercam você. Materiais vulneráveis podem incendiar-se e permanecer muito próximo de você sem proteção adequada é perigoso."
+        },
+        {
+          "paragrafo_docx": 1402,
+          "tipo": "opcao",
+          "texto": "Mar: eletricidade percorre seu corpo e o espaço ao redor. Água, metal e contato físico podem conduzir suas descargas; a primeira vez em cada cena que alguém atingir você diretamente, escolha fazê-lo recuar, perder a pegada ou sofrer 1d4 de dano."
+        },
+        {
+          "paragrafo_docx": 1403,
+          "tipo": "opcao",
+          "texto": "Tundra: gelo e geada cobrem aquilo que você atravessa. O terreno próximo torna-se escorregadio, congelado e difícil para todos menos você, e líquidos expostos começam a congelar."
+        },
+        {
+          "paragrafo_docx": 1404,
+          "tipo": "continuacao",
+          "texto": "Sua presença sobrenatural dura enquanto a Fúria durar."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1401,
+          "texto": "Deserto: calor sufocante e brasas cercam você. Materiais vulneráveis podem incendiar-se e permanecer muito próximo de você sem proteção adequada é perigoso."
+        },
+        {
+          "paragrafo_docx": 1402,
+          "texto": "Mar: eletricidade percorre seu corpo e o espaço ao redor. Água, metal e contato físico podem conduzir suas descargas; a primeira vez em cada cena que alguém atingir você diretamente, escolha fazê-lo recuar, perder a pegada ou sofrer 1d4 de dano."
+        },
+        {
+          "paragrafo_docx": 1403,
+          "texto": "Tundra: gelo e geada cobrem aquilo que você atravessa. O terreno próximo torna-se escorregadio, congelado e difícil para todos menos você, e líquidos expostos começam a congelar."
+        }
+      ],
+      "texto_original": "Escolha Deserto, Mar ou Tundra. \nQuando entrar em Fúria, uma tempestade correspondente ocupa sua presença até ela terminar:\nDeserto: calor sufocante e brasas cercam você. Materiais vulneráveis podem incendiar-se e permanecer muito próximo de você sem proteção adequada é perigoso.\nMar: eletricidade percorre seu corpo e o espaço ao redor. Água, metal e contato físico podem conduzir suas descargas; a primeira vez em cada cena que alguém atingir você diretamente, escolha fazê-lo recuar, perder a pegada ou sofrer 1d4 de dano.\nTundra: gelo e geada cobrem aquilo que você atravessa. O terreno próximo torna-se escorregadio, congelado e difícil para todos menos você, e líquidos expostos começam a congelar.\nSua presença sobrenatural dura enquanto a Fúria durar.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1400"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1406",
+      "paragrafo_docx": 1406,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "ESCUDO DA TEMPESTADE",
+      "requisito_literal": "Arauto da Tempestade",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1400",
+        "titulo_requerido": "ARAUTO DA TEMPESTADE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1406,
+          "tipo": "corpo",
+          "texto": "Você e aliados próximos recebem proteção contra a própria natureza da tempestade que invoca. Quando alguém protegido Desafiar o Perigo especificamente contra esse elemento, trate 7–9 como 10+."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Você e aliados próximos recebem proteção contra a própria natureza da tempestade que invoca. Quando alguém protegido Desafiar o Perigo especificamente contra esse elemento, trate 7–9 como 10+.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1406"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1407",
+      "paragrafo_docx": 1407,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "TEMPESTADE VINGATIVA",
+      "requisito_literal": "Arauto da Tempestade",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1400",
+        "titulo_requerido": "ARAUTO DA TEMPESTADE",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1407,
+          "tipo": "corpo",
+          "texto": "Quando sofrer violência durante sua Fúria, três vezes por Fúria faça sua tempestade responder imediatamente:"
+        },
+        {
+          "paragrafo_docx": 1408,
+          "tipo": "opcao",
+          "texto": "empurre;"
+        },
+        {
+          "paragrafo_docx": 1409,
+          "tipo": "opcao",
+          "texto": "derrube;"
+        },
+        {
+          "paragrafo_docx": 1410,
+          "tipo": "opcao",
+          "texto": "queime;"
+        },
+        {
+          "paragrafo_docx": 1411,
+          "tipo": "opcao",
+          "texto": "congele;"
+        },
+        {
+          "paragrafo_docx": 1412,
+          "tipo": "opcao",
+          "texto": "cegue por um instante;"
+        },
+        {
+          "paragrafo_docx": 1413,
+          "tipo": "continuacao",
+          "texto": "conforme sua natureza."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1408,
+          "texto": "empurre;"
+        },
+        {
+          "paragrafo_docx": 1409,
+          "texto": "derrube;"
+        },
+        {
+          "paragrafo_docx": 1410,
+          "texto": "queime;"
+        },
+        {
+          "paragrafo_docx": 1411,
+          "texto": "congele;"
+        },
+        {
+          "paragrafo_docx": 1412,
+          "texto": "cegue por um instante;"
+        }
+      ],
+      "texto_original": "Quando sofrer violência durante sua Fúria, três vezes por Fúria faça sua tempestade responder imediatamente:\nempurre;\nderrube;\nqueime;\ncongele;\ncegue por um instante;\nconforme sua natureza.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1407"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1414",
+      "paragrafo_docx": 1414,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FÚRIA SELVAGEM",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1414,
+          "tipo": "corpo",
+          "texto": "Quando entrar em Fúria, role 1d8:"
+        },
+        {
+          "paragrafo_docx": 1415,
+          "tipo": "opcao",
+          "texto": "Deslocamento impossível: desapareça e reapareça imediatamente numa posição próxima que consiga perceber."
+        },
+        {
+          "paragrafo_docx": 1416,
+          "tipo": "opcao",
+          "texto": "Terreno rebelde: raízes, tentáculos, sombras ou força mágica dominam uma área próxima. Seus inimigos precisam superar essa manifestação para atravessá-la livremente."
+        },
+        {
+          "paragrafo_docx": 1417,
+          "tipo": "opcao",
+          "texto": "Explosão instável: energia irrompe de você e causa violência Muito Perigosa a tudo muito próximo que não consiga escapar ou suportá-la — aliados inclusive."
+        },
+        {
+          "paragrafo_docx": 1418,
+          "tipo": "opcao",
+          "texto": "Corpo elemental: escolha ou determine aleatoriamente uma natureza elemental. Até a Fúria terminar, seu corpo e armas manifestam suas propriedades ficcionais."
+        },
+        {
+          "paragrafo_docx": 1419,
+          "tipo": "opcao",
+          "texto": "Luz impossível: criaturas, ilusões e presenças ocultas por invisibilidade ou magia próxima tornam-se perceptíveis enquanto a manifestação permanecer."
+        },
+        {
+          "paragrafo_docx": 1420,
+          "tipo": "opcao",
+          "texto": "Defesa aberrante: formas espectrais protegem você. Durante a cena, cada segundo dano é reduzido pela metade enquanto a manifestação permanecer."
+        },
+        {
+          "paragrafo_docx": 1421,
+          "tipo": "opcao",
+          "texto": "Força sem mãos: durante a Fúria, você pode mover à distância objetos e criaturas que uma pessoa muito forte poderia fisicamente empurrar, puxar ou lançar. Sob resistência significativa, enfrente o perigo normalmente."
+        },
+        {
+          "paragrafo_docx": 1422,
+          "tipo": "opcao",
+          "texto": "Caos generoso: role duas vezes novamente e escolha um dos resultados."
+        },
+        {
+          "paragrafo_docx": 1423,
+          "tipo": "continuacao",
+          "texto": "A manifestação permanece enquanto fizer sentido ou até a Fúria terminar."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1415,
+          "texto": "Deslocamento impossível: desapareça e reapareça imediatamente numa posição próxima que consiga perceber."
+        },
+        {
+          "paragrafo_docx": 1416,
+          "texto": "Terreno rebelde: raízes, tentáculos, sombras ou força mágica dominam uma área próxima. Seus inimigos precisam superar essa manifestação para atravessá-la livremente."
+        },
+        {
+          "paragrafo_docx": 1417,
+          "texto": "Explosão instável: energia irrompe de você e causa violência Muito Perigosa a tudo muito próximo que não consiga escapar ou suportá-la — aliados inclusive."
+        },
+        {
+          "paragrafo_docx": 1418,
+          "texto": "Corpo elemental: escolha ou determine aleatoriamente uma natureza elemental. Até a Fúria terminar, seu corpo e armas manifestam suas propriedades ficcionais."
+        },
+        {
+          "paragrafo_docx": 1419,
+          "texto": "Luz impossível: criaturas, ilusões e presenças ocultas por invisibilidade ou magia próxima tornam-se perceptíveis enquanto a manifestação permanecer."
+        },
+        {
+          "paragrafo_docx": 1420,
+          "texto": "Defesa aberrante: formas espectrais protegem você. Durante a cena, cada segundo dano é reduzido pela metade enquanto a manifestação permanecer."
+        },
+        {
+          "paragrafo_docx": 1421,
+          "texto": "Força sem mãos: durante a Fúria, você pode mover à distância objetos e criaturas que uma pessoa muito forte poderia fisicamente empurrar, puxar ou lançar. Sob resistência significativa, enfrente o perigo normalmente."
+        },
+        {
+          "paragrafo_docx": 1422,
+          "texto": "Caos generoso: role duas vezes novamente e escolha um dos resultados."
+        }
+      ],
+      "texto_original": "Quando entrar em Fúria, role 1d8:\nDeslocamento impossível: desapareça e reapareça imediatamente numa posição próxima que consiga perceber.\nTerreno rebelde: raízes, tentáculos, sombras ou força mágica dominam uma área próxima. Seus inimigos precisam superar essa manifestação para atravessá-la livremente.\nExplosão instável: energia irrompe de você e causa violência Muito Perigosa a tudo muito próximo que não consiga escapar ou suportá-la — aliados inclusive.\nCorpo elemental: escolha ou determine aleatoriamente uma natureza elemental. Até a Fúria terminar, seu corpo e armas manifestam suas propriedades ficcionais.\nLuz impossível: criaturas, ilusões e presenças ocultas por invisibilidade ou magia próxima tornam-se perceptíveis enquanto a manifestação permanecer.\nDefesa aberrante: formas espectrais protegem você. Durante a cena, cada segundo dano é reduzido pela metade enquanto a manifestação permanecer.\nForça sem mãos: durante a Fúria, você pode mover à distância objetos e criaturas que uma pessoa muito forte poderia fisicamente empurrar, puxar ou lançar. Sob resistência significativa, enfrente o perigo normalmente.\nCaos generoso: role duas vezes novamente e escolha um dos resultados.\nA manifestação permanece enquanto fizer sentido ou até a Fúria terminar.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1414"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1424",
+      "paragrafo_docx": 1424,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "REAÇÃO INSTÁVEL",
+      "requisito_literal": "Fúria Selvagem",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1414",
+        "titulo_requerido": "FÚRIA SELVAGEM",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1424,
+          "tipo": "corpo",
+          "texto": "Uma vez por cena, quando sofrer dano durante a Fúria, pode abandonar a manifestação atual e rolar novamente em Fúria Selvagem. O novo efeito acontece imediatamente."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por cena, quando sofrer dano durante a Fúria, pode abandonar a manifestação atual e rolar novamente em Fúria Selvagem. O novo efeito acontece imediatamente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1424"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1425",
+      "paragrafo_docx": 1425,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "SURTO CONTROLADO",
+      "requisito_literal": "Fúria Selvagem",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1414",
+        "titulo_requerido": "FÚRIA SELVAGEM",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1425,
+          "tipo": "corpo",
+          "texto": "Quando rolar em Fúria Selvagem, role duas vezes e escolha um resultado. Se ambos mostrarem o mesmo número, a manifestação ocorre em intensidade extraordinária e o Mestre dirá como."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando rolar em Fúria Selvagem, role duas vezes e escolha um resultado. Se ambos mostrarem o mesmo número, a manifestação ocorre em intensidade extraordinária e o Mestre dirá como.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1425"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1426",
+      "paragrafo_docx": 1426,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "SENTIR O CAOS",
+      "requisito_literal": "Fúria Selvagem",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1414",
+        "titulo_requerido": "FÚRIA SELVAGEM",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1426,
+          "tipo": "corpo",
+          "texto": "Quando parar e permitir que a magia instável dentro de você responda ao ambiente, você percebe a direção e intensidade aproximadas de fontes mágicas próximas. Não descobre automaticamente sua natureza."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando parar e permitir que a magia instável dentro de você responda ao ambiente, você percebe a direção e intensidade aproximadas de fontes mágicas próximas. Não descobre automaticamente sua natureza.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1426"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1427",
+      "paragrafo_docx": 1427,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FÚRIA DIVINA",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1427,
+          "tipo": "corpo",
+          "texto": "Escolha uma divindade, espírito ou causa sagrada que alimenta sua Fúria. Quando entrar nela, sua violência passa a poder ferir criaturas que uma arma comum não poderia atingir, desde que sejam inimigas reconhecidas por sua fé. \nQuando atingir diretamente aquilo que sua divindade considera profano, aumente sua Periculosidade em um grau."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Escolha uma divindade, espírito ou causa sagrada que alimenta sua Fúria. Quando entrar nela, sua violência passa a poder ferir criaturas que uma arma comum não poderia atingir, desde que sejam inimigas reconhecidas por sua fé. \nQuando atingir diretamente aquilo que sua divindade considera profano, aumente sua Periculosidade em um grau.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1427"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1428",
+      "paragrafo_docx": 1428,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FOCO FANÁTICO",
+      "requisito_literal": "Fúria Divina",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1427",
+        "titulo_requerido": "FÚRIA DIVINA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1428,
+          "tipo": "corpo",
+          "texto": "Uma vez por Fúria, quando obtiver 6- ao resistir a algo que tentaria impedir você de cumprir aquilo que considera vontade sagrada, trate como 7–9."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por Fúria, quando obtiver 6- ao resistir a algo que tentaria impedir você de cumprir aquilo que considera vontade sagrada, trate como 7–9.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1428"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1429",
+      "paragrafo_docx": 1429,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "PRESENÇA ZELOSA",
+      "requisito_literal": "Fúria Divina",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1427",
+        "titulo_requerido": "FÚRIA DIVINA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1429,
+          "tipo": "corpo",
+          "texto": "Uma vez por Fúria, quando erguer sua voz e convocar outros a lutar por sua causa, aliados que sinceramente compartilhem dela recebem +1 adiante e não precisam Desafiar o Perigo apenas para superar medo comum naquela cena."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por Fúria, quando erguer sua voz e convocar outros a lutar por sua causa, aliados que sinceramente compartilhem dela recebem +1 adiante e não precisam Desafiar o Perigo apenas para superar medo comum naquela cena.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1429"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1430",
+      "paragrafo_docx": 1430,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "FÚRIA ALÉM DA MORTE",
+      "requisito_literal": "Fúria Divina e Demasiado Furioso Para Morrer",
+      "requisito_estruturado": {
+        "tipo": "todos",
+        "itens": [
+          {
+            "tipo": "movimento_exato",
+            "movimento_id": "movimento-classe:paragrafo-1427",
+            "titulo_requerido": "Fúria Divina"
+          },
+          {
+            "tipo": "movimento_exato",
+            "movimento_id": "movimento-classe:paragrafo-1343",
+            "titulo_requerido": "Demasiado Furioso Para Morrer"
+          }
+        ],
+        "operador_literal": "e",
+        "status": "interpretacao_literal_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1430,
+          "tipo": "corpo",
+          "texto": "Quando realizar Último Suspiro durante sua Fúria, qualquer resultado permite que seu corpo continue lutando até a Fúria terminar. Além disso, se morrer definitivamente depois disso, escolha 1:"
+        },
+        {
+          "paragrafo_docx": 1431,
+          "tipo": "opcao",
+          "texto": "sua divindade ou causa reivindica sua morte e produz um sinal impossível;"
+        },
+        {
+          "paragrafo_docx": 1432,
+          "tipo": "opcao",
+          "texto": "sua morte inspira imediatamente aqueles que compartilham sua fé;"
+        },
+        {
+          "paragrafo_docx": 1433,
+          "tipo": "opcao",
+          "texto": "você realiza uma última ação antes de atravessar os Portões Negros."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1431,
+          "texto": "sua divindade ou causa reivindica sua morte e produz um sinal impossível;"
+        },
+        {
+          "paragrafo_docx": 1432,
+          "texto": "sua morte inspira imediatamente aqueles que compartilham sua fé;"
+        },
+        {
+          "paragrafo_docx": 1433,
+          "texto": "você realiza uma última ação antes de atravessar os Portões Negros."
+        }
+      ],
+      "texto_original": "Quando realizar Último Suspiro durante sua Fúria, qualquer resultado permite que seu corpo continue lutando até a Fúria terminar. Além disso, se morrer definitivamente depois disso, escolha 1:\nsua divindade ou causa reivindica sua morte e produz um sinal impossível;\nsua morte inspira imediatamente aqueles que compartilham sua fé;\nvocê realiza uma última ação antes de atravessar os Portões Negros.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1430"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1434",
+      "paragrafo_docx": 1434,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "RAÍZES DO MUNDO",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1434,
+          "tipo": "corpo",
+          "texto": "Quando entrar em Fúria, raízes, ramos ou formas espectrais de uma árvore cósmica aparecem ao seu redor.\nReceba 3 Domínio. Quando alguém próximo começar a afastar-se ou aproximar-se de você, gaste 1 Domínio e:"
+        },
+        {
+          "paragrafo_docx": 1435,
+          "tipo": "opcao",
+          "texto": "puxe-o para uma posição próxima de você;"
+        },
+        {
+          "paragrafo_docx": 1436,
+          "tipo": "opcao",
+          "texto": "afaste-o;"
+        },
+        {
+          "paragrafo_docx": 1437,
+          "tipo": "opcao",
+          "texto": "mantenha-o no lugar por tempo suficiente para outra pessoa agir."
+        },
+        {
+          "paragrafo_docx": 1438,
+          "tipo": "continuacao",
+          "texto": "Uma criatura poderosa ou preparada para resistir pode exigir confronto."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1435,
+          "texto": "puxe-o para uma posição próxima de você;"
+        },
+        {
+          "paragrafo_docx": 1436,
+          "texto": "afaste-o;"
+        },
+        {
+          "paragrafo_docx": 1437,
+          "texto": "mantenha-o no lugar por tempo suficiente para outra pessoa agir."
+        }
+      ],
+      "texto_original": "Quando entrar em Fúria, raízes, ramos ou formas espectrais de uma árvore cósmica aparecem ao seu redor.\nReceba 3 Domínio. Quando alguém próximo começar a afastar-se ou aproximar-se de você, gaste 1 Domínio e:\npuxe-o para uma posição próxima de você;\nafaste-o;\nmantenha-o no lugar por tempo suficiente para outra pessoa agir.\nUma criatura poderosa ou preparada para resistir pode exigir confronto.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1434"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1439",
+      "paragrafo_docx": 1439,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "VITALIDADE DA ÁRVORE",
+      "requisito_literal": "Raízes do Mundo",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1434",
+        "titulo_requerido": "RAÍZES DO MUNDO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1439,
+          "tipo": "corpo",
+          "texto": "Quando entrar em Fúria, escolha você ou um aliado próximo. Raízes, folhas ou energia vital envolvem essa criatura até a Fúria terminar. Receba 3 Domínio. Gaste 1 Domínio para:"
+        },
+        {
+          "paragrafo_docx": 1440,
+          "tipo": "opcao",
+          "texto": "quando o alvo sofrer dano, reduzi-lo pela metade;"
+        },
+        {
+          "paragrafo_docx": 1441,
+          "tipo": "opcao",
+          "texto": "se o alvo for derrubado, deslocado ou arrancado de uma posição contra sua vontade, as raízes manterem-no onde estava;"
+        },
+        {
+          "paragrafo_docx": 1442,
+          "tipo": "opcao",
+          "texto": "curar 1d6 PV."
+        },
+        {
+          "paragrafo_docx": 1443,
+          "tipo": "continuacao",
+          "texto": "Depois que todo o Domínio for utilizado ou quando a Fúria acabar, a proteção se desfaz."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1440,
+          "texto": "quando o alvo sofrer dano, reduzi-lo pela metade;"
+        },
+        {
+          "paragrafo_docx": 1441,
+          "texto": "se o alvo for derrubado, deslocado ou arrancado de uma posição contra sua vontade, as raízes manterem-no onde estava;"
+        },
+        {
+          "paragrafo_docx": 1442,
+          "texto": "curar 1d6 PV."
+        }
+      ],
+      "texto_original": "Quando entrar em Fúria, escolha você ou um aliado próximo. Raízes, folhas ou energia vital envolvem essa criatura até a Fúria terminar. Receba 3 Domínio. Gaste 1 Domínio para:\nquando o alvo sofrer dano, reduzi-lo pela metade;\nse o alvo for derrubado, deslocado ou arrancado de uma posição contra sua vontade, as raízes manterem-no onde estava;\ncurar 1d6 PV.\nDepois que todo o Domínio for utilizado ou quando a Fúria acabar, a proteção se desfaz.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1439"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1444",
+      "paragrafo_docx": 1444,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "BRAÇOS COMO RAÍZES",
+      "requisito_literal": "Raízes do Mundo",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1434",
+        "titulo_requerido": "RAÍZES DO MUNDO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1444,
+          "tipo": "corpo",
+          "texto": "Durante a Fúria, sua capacidade de alcançar, agarrar e ameaçar posições próximas estende-se sobrenaturalmente além do alcance normal de seu corpo. Diga como a Árvore manifesta esse alcance."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Durante a Fúria, sua capacidade de alcançar, agarrar e ameaçar posições próximas estende-se sobrenaturalmente além do alcance normal de seu corpo. Diga como a Árvore manifesta esse alcance.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1444"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1446",
+      "paragrafo_docx": 1446,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "CAMINHAR PELOS RAMOS",
+      "requisito_literal": "Raízes do Mundo",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1434",
+        "titulo_requerido": "RAÍZES DO MUNDO",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1446,
+          "tipo": "corpo",
+          "texto": "Três vezes por Fúria, você e até um pequeno grupo de aliados que estejam tocando você podem desaparecer entre raízes, árvores ou formas vegetais e reaparecer em outro ponto conhecido do mesmo ambiente. \nDistâncias absurdas ou viagens planares exigem condições adicionais do Mestre."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Três vezes por Fúria, você e até um pequeno grupo de aliados que estejam tocando você podem desaparecer entre raízes, árvores ou formas vegetais e reaparecer em outro ponto conhecido do mesmo ambiente. \nDistâncias absurdas ou viagens planares exigem condições adicionais do Mestre.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1446"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1447",
+      "paragrafo_docx": 1447,
+      "grupo": "BÁRBARO",
+      "categoria": "classe",
+      "titulo": "LAMENTO",
+      "requisito_literal": "Fúria",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1293",
+        "titulo_requerido": "FÚRIA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1447,
+          "tipo": "corpo",
+          "texto": "Diga qual perda, luto ou dor alimenta sua Fúria. Uma vez por Fúria, libere aquilo num grito que todos próximos possam ouvir e role+CON ou CAR.\n10+: escolha 2.\n7–9: escolha 1."
+        },
+        {
+          "paragrafo_docx": 1448,
+          "tipo": "opcao",
+          "texto": "inimigos inferiores fogem ou congelam;"
+        },
+        {
+          "paragrafo_docx": 1449,
+          "tipo": "opcao",
+          "texto": "um inimigo poderoso revela aquilo que teme perder;"
+        },
+        {
+          "paragrafo_docx": 1450,
+          "tipo": "opcao",
+          "texto": "aliados que compartilhem de sua dor recebem +1 adiante;"
+        },
+        {
+          "paragrafo_docx": 1451,
+          "tipo": "opcao",
+          "texto": "alguém já ferido ou abalado fica incapaz de continuar ignorando o terror que você representa."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1448,
+          "texto": "inimigos inferiores fogem ou congelam;"
+        },
+        {
+          "paragrafo_docx": 1449,
+          "texto": "um inimigo poderoso revela aquilo que teme perder;"
+        },
+        {
+          "paragrafo_docx": 1450,
+          "texto": "aliados que compartilhem de sua dor recebem +1 adiante;"
+        },
+        {
+          "paragrafo_docx": 1451,
+          "texto": "alguém já ferido ou abalado fica incapaz de continuar ignorando o terror que você representa."
+        }
+      ],
+      "texto_original": "Diga qual perda, luto ou dor alimenta sua Fúria. Uma vez por Fúria, libere aquilo num grito que todos próximos possam ouvir e role+CON ou CAR.\n10+: escolha 2.\n7–9: escolha 1.\ninimigos inferiores fogem ou congelam;\num inimigo poderoso revela aquilo que teme perder;\naliados que compartilhem de sua dor recebem +1 adiante;\nalguém já ferido ou abalado fica incapaz de continuar ignorando o terror que você representa.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1447"
+    }
+  ],
+  "integridade": {
+    "total_movimentos": 59,
+    "total_com_requer": 37,
+    "total_vinculos_exatos": 36,
+    "total_requer_composto_ou_condicional": 1,
+    "total_opcoes": 84,
+    "total_partes": 156
+  }
+}
