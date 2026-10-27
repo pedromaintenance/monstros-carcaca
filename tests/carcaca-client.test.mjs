@@ -57,7 +57,9 @@ const fixtures={
     hack_barbarian_movements:"hack-barbarian-movements.json",
     hack_barbarian_movement_indexes:"hack-barbarian-movement-indexes.json",
     hack_hunter_movements:"hack-hunter-movements.json",
-    hack_hunter_movement_indexes:"hack-hunter-movement-indexes.json"}},
+    hack_hunter_movement_indexes:"hack-hunter-movement-indexes.json",
+    hack_rogue_movements:"hack-rogue-movements.json",
+    hack_rogue_movement_indexes:"hack-rogue-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -108,6 +110,39 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-rogue-movements.json":[
+    {id:"movimento-classe:paragrafo-1593",titulo:"TRUQUES DO OFÍCIO",grupo:"LADINO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Quando tiver acesso físico e ferramentas minimamente apropriadas.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1594",titulo:"ABRIR O IMPOSSÍVEL",grupo:"LADINO",
+     requisito_literal:"Truques do Ofício",
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1593"},
+     opcoes:[],texto_original:"Quando alcançar um acesso impossível.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1612",titulo:"HEIST",grupo:"LADINO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Quando planejar um roubo.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1618",titulo:"PLANO B",grupo:"LADINO",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],
+     texto_original:"Uma vez por sessão, declare uma preparação.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1619",titulo:"TUDO SEGUNDO O PLANO",grupo:"LADINO",
+     requisito_literal:"Heist ou Plano B",
+     requisito_estruturado:{tipo:"qualquer",operador_literal:"ou",itens:[
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1612"},
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1618"}]},
+     opcoes:[{paragrafo_docx:1620,texto:"uma preparação significativa"}],
+     texto_original:"Quando o plano parecer ter falhado catastroficamente.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1724",titulo:"CUTUCAR A FERIDA",grupo:"LADINO",
+     requisito_literal:"Perfil",
+     requisito_estruturado:{tipo:"referencia_sem_alvo",texto_literal:"Perfil",
+       candidatos_confirmados:[],status:"exige_revisao_autoral_antes_de_qualquer_aquisicao"},
+     opcoes:[],texto_original:"Quando souber qual comportamento alguém está escondendo.",aplicacao_canonica:false}
+  ],
+  "hack-rogue-movement-indexes.json":{
+    by_requisito_tipo:{movimento_exato:["movimento-classe:paragrafo-1594"],
+      qualquer:["movimento-classe:paragrafo-1619"],
+      referencia_sem_alvo:["movimento-classe:paragrafo-1724"]},
+    by_referencia_sem_alvo:{Perfil:["movimento-classe:paragrafo-1724"]}
+  },
   "hack-hunter-movements.json":[
     {id:"movimento-classe:paragrafo-1484",titulo:"CAÇADOR DE MONSTROS",grupo:"CAÇADOR",
      requisito_literal:null,requisito_estruturado:null,opcoes:[],texto_original:"Saiba reconhecer monstros.",aplicacao_canonica:false},
@@ -1291,4 +1326,41 @@ test("Caçador distingue REQUER E, OU e alternativas ficcionais sem homologar aq
   assert.equal(await atlas.getHunterRequirementPreview("ausente"),null);
   await assert.rejects(()=>atlas.getHunterRequirementPreview("movimento-classe:paragrafo-1492",{
     movimentosPossuidos: "não é um array"}),TypeError);
+});
+
+test("Ladino preserva REQUER OU, referências sem alvo e impede aquisição automática",async()=>{
+  const todos=await atlas.getRogueMovements();
+  assert.equal(todos.length,6);
+  assert.equal((await atlas.searchRogueMovements({tipoRequisito:"qualquer"})).length,1);
+  assert.equal((await atlas.searchRogueMovements({tipoRequisito:"referencia_sem_alvo"}))[0].titulo,"CUTUCAR A FERIDA");
+  assert.equal((await atlas.searchRogueMovements({requer:"heist"}))[0].titulo,"TUDO SEGUNDO O PLANO");
+  assert.equal((await atlas.searchRogueMovements({comOpcoes:true})).length,1);
+  assert.equal((await atlas.getRogueMovement("movimento-classe:paragrafo-1594")).titulo,"ABRIR O IMPOSSÍVEL");
+  assert.equal(await atlas.getRogueMovement("movimento-classe:paragrafo-9999"),null);
+  const indices=await atlas.getRogueMovementIndexes();
+  assert.deepEqual(indices.by_referencia_sem_alvo.Perfil,["movimento-classe:paragrafo-1724"]);
+  let or=await atlas.getRogueRequirementPreview("movimento-classe:paragrafo-1619");
+  assert.equal(or.verificacao_estrutural,"nenhuma_alternativa_presente");
+  assert.deepEqual(or.componentes.map(x=>x.presente_na_lista),[false,false]);
+  assert.equal(or.habilitado_para_compra,null);
+  let heist=await atlas.getRogueRequirementPreview("movimento-classe:paragrafo-1619",{
+    movimentosPossuidos:["movimento-classe:paragrafo-1612"]});
+  assert.equal(heist.verificacao_estrutural,"uma_alternativa_presente");
+  assert.deepEqual(heist.componentes.map(x=>x.presente_na_lista),[true,false]);
+  assert.equal(heist.habilitado_para_compra,null);
+  let perfil=await atlas.getRogueRequirementPreview("movimento-classe:paragrafo-1724",{
+    movimentosPossuidos:["movimento-classe:paragrafo-1612"]});
+  assert.equal(perfil.verificacao_estrutural,"referencia_sem_alvo_documentado");
+  assert.equal(perfil.requisito_estruturado.texto_literal,"Perfil");
+  assert.deepEqual(perfil.componentes,[]);
+  assert.equal(perfil.habilitado_para_compra,null);
+  assert.equal(perfil.necessita_avaliacao_do_mestre,true);
+  assert.equal(perfil.aplicacao_canonica,false);
+  let direto=await atlas.getRogueRequirementPreview("movimento-classe:paragrafo-1594",{
+    movimentosPossuidos:["movimento-classe:paragrafo-1593"]});
+  assert.equal(direto.verificacao_estrutural,"movimento_requerido_presente");
+  assert.equal(direto.habilitado_para_compra,null);
+  assert.equal(await atlas.getRogueRequirementPreview("nao-existe"),null);
+  await assert.rejects(()=>atlas.getRogueRequirementPreview("movimento-classe:paragrafo-1724",{
+    movimentosPossuidos:"fora-de-formato"}),TypeError);
 });
