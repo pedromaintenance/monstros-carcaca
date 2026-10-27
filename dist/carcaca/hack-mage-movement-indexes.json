@@ -1,0 +1,504 @@
+{
+  "by_titulo": {
+    "ABJURAÇÃO": [
+      "movimento-classe:paragrafo-2219"
+    ],
+    "ADIVINHAÇÃO": [
+      "movimento-classe:paragrafo-2229"
+    ],
+    "ALTERAR A FÓRMULA": [
+      "movimento-classe:paragrafo-2269"
+    ],
+    "ASSINATURA ARCANA": [
+      "movimento-classe:paragrafo-2278"
+    ],
+    "BOLSO IMPOSSÍVEL": [
+      "movimento-classe:paragrafo-2301"
+    ],
+    "CONJURAÇÃO": [
+      "movimento-classe:paragrafo-2224"
+    ],
+    "CONTINGÊNCIA": [
+      "movimento-classe:paragrafo-2293"
+    ],
+    "CONTRAMÁGICA": [
+      "movimento-classe:paragrafo-2250"
+    ],
+    "DESFAZER MAGIA": [
+      "movimento-classe:paragrafo-2286"
+    ],
+    "DISSIPAÇÃO DEFENSIVA": [
+      "movimento-classe:paragrafo-2332"
+    ],
+    "ENCANTAMENTO": [
+      "movimento-classe:paragrafo-2235"
+    ],
+    "ESTA MAGIA TEM AUTOR": [
+      "movimento-classe:paragrafo-2284"
+    ],
+    "ESTUDO RÁPIDO": [
+      "movimento-classe:paragrafo-2261"
+    ],
+    "EU CALCULEI A ÁREA": [
+      "movimento-classe:paragrafo-2249"
+    ],
+    "EVOCAÇÃO": [
+      "movimento-classe:paragrafo-2244"
+    ],
+    "FAMILIAR ARCANO": [
+      "movimento-classe:paragrafo-2334"
+    ],
+    "FORMA ESTÁVEL": [
+      "movimento-classe:paragrafo-2324"
+    ],
+    "FORTALEZA ARCANA": [
+      "movimento-classe:paragrafo-2218"
+    ],
+    "GRIMÓRIO": [
+      "movimento-classe:paragrafo-2251"
+    ],
+    "GUARDA PROJETADA": [
+      "movimento-classe:paragrafo-2292"
+    ],
+    "ILUSÃO": [
+      "movimento-classe:paragrafo-2241"
+    ],
+    "ILUSÃO MALEÁVEL": [
+      "movimento-classe:paragrafo-2321"
+    ],
+    "LUGAR DE PODER": [
+      "movimento-classe:paragrafo-2294"
+    ],
+    "MAGIA DISCRETA": [
+      "movimento-classe:paragrafo-2277"
+    ],
+    "MARCA DE RETORNO": [
+      "movimento-classe:paragrafo-2300"
+    ],
+    "MEMÓRIA MALEÁVEL": [
+      "movimento-classe:paragrafo-2310"
+    ],
+    "MÃOS INVISÍVEIS": [
+      "movimento-classe:paragrafo-2330"
+    ],
+    "NÃO ERA EU": [
+      "movimento-classe:paragrafo-2322"
+    ],
+    "OLHAR HIPNÓTICO": [
+      "movimento-classe:paragrafo-2309"
+    ],
+    "OLHO ARCANO": [
+      "movimento-classe:paragrafo-2302"
+    ],
+    "PEDRA DO TRANSMUTADOR": [
+      "movimento-classe:paragrafo-2328"
+    ],
+    "PESQUISA ARCANA": [
+      "movimento-classe:paragrafo-2252"
+    ],
+    "REALIDADE ILUSÓRIA": [
+      "movimento-classe:paragrafo-2323"
+    ],
+    "REFLETIR MAGIA": [
+      "movimento-classe:paragrafo-2331"
+    ],
+    "RITUAL": [
+      "movimento-classe:paragrafo-2209"
+    ],
+    "SEM MARGEM DE SEGURANÇA": [
+      "movimento-classe:paragrafo-2320"
+    ],
+    "TELECINESE": [
+      "movimento-classe:paragrafo-2243"
+    ],
+    "TEORIA UNIFICADA": [
+      "movimento-classe:paragrafo-2268"
+    ],
+    "TERCEIRO OLHO": [
+      "movimento-classe:paragrafo-2303"
+    ],
+    "TRANSMUTAÇÃO": [
+      "movimento-classe:paragrafo-2242"
+    ],
+    "TRANSPOSIÇÃO": [
+      "movimento-classe:paragrafo-2299"
+    ],
+    "VOO ARCANO": [
+      "movimento-classe:paragrafo-2329"
+    ]
+  },
+  "by_paragrafo": {
+    "2209": [
+      "movimento-classe:paragrafo-2209"
+    ],
+    "2218": [
+      "movimento-classe:paragrafo-2218"
+    ],
+    "2219": [
+      "movimento-classe:paragrafo-2219"
+    ],
+    "2224": [
+      "movimento-classe:paragrafo-2224"
+    ],
+    "2229": [
+      "movimento-classe:paragrafo-2229"
+    ],
+    "2235": [
+      "movimento-classe:paragrafo-2235"
+    ],
+    "2241": [
+      "movimento-classe:paragrafo-2241"
+    ],
+    "2242": [
+      "movimento-classe:paragrafo-2242"
+    ],
+    "2243": [
+      "movimento-classe:paragrafo-2243"
+    ],
+    "2244": [
+      "movimento-classe:paragrafo-2244"
+    ],
+    "2249": [
+      "movimento-classe:paragrafo-2249"
+    ],
+    "2250": [
+      "movimento-classe:paragrafo-2250"
+    ],
+    "2251": [
+      "movimento-classe:paragrafo-2251"
+    ],
+    "2252": [
+      "movimento-classe:paragrafo-2252"
+    ],
+    "2261": [
+      "movimento-classe:paragrafo-2261"
+    ],
+    "2268": [
+      "movimento-classe:paragrafo-2268"
+    ],
+    "2269": [
+      "movimento-classe:paragrafo-2269"
+    ],
+    "2277": [
+      "movimento-classe:paragrafo-2277"
+    ],
+    "2278": [
+      "movimento-classe:paragrafo-2278"
+    ],
+    "2284": [
+      "movimento-classe:paragrafo-2284"
+    ],
+    "2286": [
+      "movimento-classe:paragrafo-2286"
+    ],
+    "2292": [
+      "movimento-classe:paragrafo-2292"
+    ],
+    "2293": [
+      "movimento-classe:paragrafo-2293"
+    ],
+    "2294": [
+      "movimento-classe:paragrafo-2294"
+    ],
+    "2299": [
+      "movimento-classe:paragrafo-2299"
+    ],
+    "2300": [
+      "movimento-classe:paragrafo-2300"
+    ],
+    "2301": [
+      "movimento-classe:paragrafo-2301"
+    ],
+    "2302": [
+      "movimento-classe:paragrafo-2302"
+    ],
+    "2303": [
+      "movimento-classe:paragrafo-2303"
+    ],
+    "2309": [
+      "movimento-classe:paragrafo-2309"
+    ],
+    "2310": [
+      "movimento-classe:paragrafo-2310"
+    ],
+    "2320": [
+      "movimento-classe:paragrafo-2320"
+    ],
+    "2321": [
+      "movimento-classe:paragrafo-2321"
+    ],
+    "2322": [
+      "movimento-classe:paragrafo-2322"
+    ],
+    "2323": [
+      "movimento-classe:paragrafo-2323"
+    ],
+    "2324": [
+      "movimento-classe:paragrafo-2324"
+    ],
+    "2328": [
+      "movimento-classe:paragrafo-2328"
+    ],
+    "2329": [
+      "movimento-classe:paragrafo-2329"
+    ],
+    "2330": [
+      "movimento-classe:paragrafo-2330"
+    ],
+    "2331": [
+      "movimento-classe:paragrafo-2331"
+    ],
+    "2332": [
+      "movimento-classe:paragrafo-2332"
+    ],
+    "2334": [
+      "movimento-classe:paragrafo-2334"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-2209",
+      "movimento-classe:paragrafo-2218",
+      "movimento-classe:paragrafo-2219",
+      "movimento-classe:paragrafo-2224",
+      "movimento-classe:paragrafo-2229",
+      "movimento-classe:paragrafo-2235",
+      "movimento-classe:paragrafo-2241",
+      "movimento-classe:paragrafo-2242",
+      "movimento-classe:paragrafo-2243",
+      "movimento-classe:paragrafo-2244",
+      "movimento-classe:paragrafo-2249",
+      "movimento-classe:paragrafo-2250",
+      "movimento-classe:paragrafo-2251",
+      "movimento-classe:paragrafo-2261",
+      "movimento-classe:paragrafo-2269",
+      "movimento-classe:paragrafo-2278",
+      "movimento-classe:paragrafo-2286",
+      "movimento-classe:paragrafo-2293",
+      "movimento-classe:paragrafo-2302",
+      "movimento-classe:paragrafo-2332",
+      "movimento-classe:paragrafo-2334"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-2252",
+      "movimento-classe:paragrafo-2268",
+      "movimento-classe:paragrafo-2277",
+      "movimento-classe:paragrafo-2284",
+      "movimento-classe:paragrafo-2292",
+      "movimento-classe:paragrafo-2294",
+      "movimento-classe:paragrafo-2299",
+      "movimento-classe:paragrafo-2300",
+      "movimento-classe:paragrafo-2301",
+      "movimento-classe:paragrafo-2303",
+      "movimento-classe:paragrafo-2309",
+      "movimento-classe:paragrafo-2310",
+      "movimento-classe:paragrafo-2320",
+      "movimento-classe:paragrafo-2321",
+      "movimento-classe:paragrafo-2322",
+      "movimento-classe:paragrafo-2323",
+      "movimento-classe:paragrafo-2324",
+      "movimento-classe:paragrafo-2328",
+      "movimento-classe:paragrafo-2329",
+      "movimento-classe:paragrafo-2330",
+      "movimento-classe:paragrafo-2331"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-2218",
+      "movimento-classe:paragrafo-2241",
+      "movimento-classe:paragrafo-2242",
+      "movimento-classe:paragrafo-2243",
+      "movimento-classe:paragrafo-2249",
+      "movimento-classe:paragrafo-2250",
+      "movimento-classe:paragrafo-2251",
+      "movimento-classe:paragrafo-2268",
+      "movimento-classe:paragrafo-2277",
+      "movimento-classe:paragrafo-2284",
+      "movimento-classe:paragrafo-2292",
+      "movimento-classe:paragrafo-2293",
+      "movimento-classe:paragrafo-2299",
+      "movimento-classe:paragrafo-2300",
+      "movimento-classe:paragrafo-2301",
+      "movimento-classe:paragrafo-2302",
+      "movimento-classe:paragrafo-2309",
+      "movimento-classe:paragrafo-2320",
+      "movimento-classe:paragrafo-2321",
+      "movimento-classe:paragrafo-2322",
+      "movimento-classe:paragrafo-2323",
+      "movimento-classe:paragrafo-2328",
+      "movimento-classe:paragrafo-2329",
+      "movimento-classe:paragrafo-2330",
+      "movimento-classe:paragrafo-2331",
+      "movimento-classe:paragrafo-2332"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-2209",
+      "movimento-classe:paragrafo-2219",
+      "movimento-classe:paragrafo-2224",
+      "movimento-classe:paragrafo-2229",
+      "movimento-classe:paragrafo-2235",
+      "movimento-classe:paragrafo-2244",
+      "movimento-classe:paragrafo-2252",
+      "movimento-classe:paragrafo-2261",
+      "movimento-classe:paragrafo-2269",
+      "movimento-classe:paragrafo-2278",
+      "movimento-classe:paragrafo-2286",
+      "movimento-classe:paragrafo-2294",
+      "movimento-classe:paragrafo-2303",
+      "movimento-classe:paragrafo-2310",
+      "movimento-classe:paragrafo-2324",
+      "movimento-classe:paragrafo-2334"
+    ]
+  },
+  "by_requisito_tipo": {
+    "movimento_exato": [
+      "movimento-classe:paragrafo-2252",
+      "movimento-classe:paragrafo-2268",
+      "movimento-classe:paragrafo-2277",
+      "movimento-classe:paragrafo-2284",
+      "movimento-classe:paragrafo-2292",
+      "movimento-classe:paragrafo-2294",
+      "movimento-classe:paragrafo-2299",
+      "movimento-classe:paragrafo-2300",
+      "movimento-classe:paragrafo-2301",
+      "movimento-classe:paragrafo-2303",
+      "movimento-classe:paragrafo-2309",
+      "movimento-classe:paragrafo-2310",
+      "movimento-classe:paragrafo-2320",
+      "movimento-classe:paragrafo-2321",
+      "movimento-classe:paragrafo-2322",
+      "movimento-classe:paragrafo-2323",
+      "movimento-classe:paragrafo-2324",
+      "movimento-classe:paragrafo-2328",
+      "movimento-classe:paragrafo-2329",
+      "movimento-classe:paragrafo-2330",
+      "movimento-classe:paragrafo-2331"
+    ],
+    "nenhum": [
+      "movimento-classe:paragrafo-2209",
+      "movimento-classe:paragrafo-2218",
+      "movimento-classe:paragrafo-2219",
+      "movimento-classe:paragrafo-2224",
+      "movimento-classe:paragrafo-2229",
+      "movimento-classe:paragrafo-2235",
+      "movimento-classe:paragrafo-2241",
+      "movimento-classe:paragrafo-2242",
+      "movimento-classe:paragrafo-2243",
+      "movimento-classe:paragrafo-2244",
+      "movimento-classe:paragrafo-2249",
+      "movimento-classe:paragrafo-2250",
+      "movimento-classe:paragrafo-2251",
+      "movimento-classe:paragrafo-2261",
+      "movimento-classe:paragrafo-2269",
+      "movimento-classe:paragrafo-2278",
+      "movimento-classe:paragrafo-2286",
+      "movimento-classe:paragrafo-2293",
+      "movimento-classe:paragrafo-2302",
+      "movimento-classe:paragrafo-2332",
+      "movimento-classe:paragrafo-2334"
+    ]
+  },
+  "by_requisito_id": {
+    "movimento-classe:paragrafo-2209": [
+      "movimento-classe:paragrafo-2294"
+    ],
+    "movimento-classe:paragrafo-2219": [
+      "movimento-classe:paragrafo-2292"
+    ],
+    "movimento-classe:paragrafo-2224": [
+      "movimento-classe:paragrafo-2299",
+      "movimento-classe:paragrafo-2300",
+      "movimento-classe:paragrafo-2301"
+    ],
+    "movimento-classe:paragrafo-2229": [
+      "movimento-classe:paragrafo-2303"
+    ],
+    "movimento-classe:paragrafo-2235": [
+      "movimento-classe:paragrafo-2309",
+      "movimento-classe:paragrafo-2310"
+    ],
+    "movimento-classe:paragrafo-2241": [
+      "movimento-classe:paragrafo-2321",
+      "movimento-classe:paragrafo-2322",
+      "movimento-classe:paragrafo-2323"
+    ],
+    "movimento-classe:paragrafo-2242": [
+      "movimento-classe:paragrafo-2324",
+      "movimento-classe:paragrafo-2328"
+    ],
+    "movimento-classe:paragrafo-2243": [
+      "movimento-classe:paragrafo-2329",
+      "movimento-classe:paragrafo-2330"
+    ],
+    "movimento-classe:paragrafo-2244": [
+      "movimento-classe:paragrafo-2320"
+    ],
+    "movimento-classe:paragrafo-2250": [
+      "movimento-classe:paragrafo-2331"
+    ],
+    "movimento-classe:paragrafo-2251": [
+      "movimento-classe:paragrafo-2252"
+    ],
+    "movimento-classe:paragrafo-2261": [
+      "movimento-classe:paragrafo-2268"
+    ],
+    "movimento-classe:paragrafo-2269": [
+      "movimento-classe:paragrafo-2277"
+    ],
+    "movimento-classe:paragrafo-2278": [
+      "movimento-classe:paragrafo-2284"
+    ]
+  },
+  "by_raiz_dependencia": {
+    "movimento-classe:paragrafo-2209": [
+      "movimento-classe:paragrafo-2294"
+    ],
+    "movimento-classe:paragrafo-2219": [
+      "movimento-classe:paragrafo-2292"
+    ],
+    "movimento-classe:paragrafo-2224": [
+      "movimento-classe:paragrafo-2299",
+      "movimento-classe:paragrafo-2300",
+      "movimento-classe:paragrafo-2301"
+    ],
+    "movimento-classe:paragrafo-2229": [
+      "movimento-classe:paragrafo-2303"
+    ],
+    "movimento-classe:paragrafo-2235": [
+      "movimento-classe:paragrafo-2309",
+      "movimento-classe:paragrafo-2310"
+    ],
+    "movimento-classe:paragrafo-2241": [
+      "movimento-classe:paragrafo-2321",
+      "movimento-classe:paragrafo-2322",
+      "movimento-classe:paragrafo-2323"
+    ],
+    "movimento-classe:paragrafo-2242": [
+      "movimento-classe:paragrafo-2324",
+      "movimento-classe:paragrafo-2328"
+    ],
+    "movimento-classe:paragrafo-2243": [
+      "movimento-classe:paragrafo-2329",
+      "movimento-classe:paragrafo-2330"
+    ],
+    "movimento-classe:paragrafo-2244": [
+      "movimento-classe:paragrafo-2320"
+    ],
+    "movimento-classe:paragrafo-2250": [
+      "movimento-classe:paragrafo-2331"
+    ],
+    "movimento-classe:paragrafo-2251": [
+      "movimento-classe:paragrafo-2252"
+    ],
+    "movimento-classe:paragrafo-2261": [
+      "movimento-classe:paragrafo-2268"
+    ],
+    "movimento-classe:paragrafo-2269": [
+      "movimento-classe:paragrafo-2277"
+    ],
+    "movimento-classe:paragrafo-2278": [
+      "movimento-classe:paragrafo-2284"
+    ]
+  }
+}

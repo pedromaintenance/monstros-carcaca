@@ -1,0 +1,1821 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-2209",
+    "paragrafo_docx": 2209,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "RITUAL",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2209,
+        "tipo": "corpo",
+        "texto": "Quando utilizar um lugar de poder para produzir um efeito mágico que caiba na sua tradição, diga o que pretende.\nO Mestre dirá de uma a quatro condições:"
+      },
+      {
+        "paragrafo_docx": 2210,
+        "tipo": "opcao",
+        "texto": "demorará;"
+      },
+      {
+        "paragrafo_docx": 2211,
+        "tipo": "opcao",
+        "texto": "exigirá ajuda;"
+      },
+      {
+        "paragrafo_docx": 2212,
+        "tipo": "opcao",
+        "texto": "exigirá material raro;"
+      },
+      {
+        "paragrafo_docx": 2213,
+        "tipo": "opcao",
+        "texto": "terá consequência indesejada;"
+      },
+      {
+        "paragrafo_docx": 2214,
+        "tipo": "opcao",
+        "texto": "precisará de conhecimento específico;"
+      },
+      {
+        "paragrafo_docx": 2215,
+        "tipo": "opcao",
+        "texto": "colocará algo em risco;"
+      },
+      {
+        "paragrafo_docx": 2216,
+        "tipo": "opcao",
+        "texto": "será apenas uma versão limitada do efeito."
+      },
+      {
+        "paragrafo_docx": 2217,
+        "tipo": "continuacao",
+        "texto": "Quando cumprir as condições, o ritual acontece."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2210,
+        "texto": "demorará;"
+      },
+      {
+        "paragrafo_docx": 2211,
+        "texto": "exigirá ajuda;"
+      },
+      {
+        "paragrafo_docx": 2212,
+        "texto": "exigirá material raro;"
+      },
+      {
+        "paragrafo_docx": 2213,
+        "texto": "terá consequência indesejada;"
+      },
+      {
+        "paragrafo_docx": 2214,
+        "texto": "precisará de conhecimento específico;"
+      },
+      {
+        "paragrafo_docx": 2215,
+        "texto": "colocará algo em risco;"
+      },
+      {
+        "paragrafo_docx": 2216,
+        "texto": "será apenas uma versão limitada do efeito."
+      }
+    ],
+    "texto_original": "Quando utilizar um lugar de poder para produzir um efeito mágico que caiba na sua tradição, diga o que pretende.\nO Mestre dirá de uma a quatro condições:\ndemorará;\nexigirá ajuda;\nexigirá material raro;\nterá consequência indesejada;\nprecisará de conhecimento específico;\ncolocará algo em risco;\nserá apenas uma versão limitada do efeito.\nQuando cumprir as condições, o ritual acontece.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2209"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2218",
+    "paragrafo_docx": 2218,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "FORTALEZA ARCANA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2218,
+        "tipo": "corpo",
+        "texto": "Quando houver tempo para estabelecer uma proteção mágica, você pode Defender uma pessoa, objeto ou área alcançada por essa proteção sem precisar ocupar fisicamente a posição entre ela e a ameaça. Descreva os limites da defesa e role+INT em vez de +CON."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando houver tempo para estabelecer uma proteção mágica, você pode Defender uma pessoa, objeto ou área alcançada por essa proteção sem precisar ocupar fisicamente a posição entre ela e a ameaça. Descreva os limites da defesa e role+INT em vez de +CON.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2218"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2219",
+    "paragrafo_docx": 2219,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "ABJURAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2219,
+        "tipo": "corpo",
+        "texto": "Quando erguer uma proteção mágica contra uma ameaça específica que compreenda, role+INT.\n10+: Domínio 3.\n7–9: Domínio 2.\nGaste 1 para:"
+      },
+      {
+        "paragrafo_docx": 2220,
+        "tipo": "opcao",
+        "texto": "impedir que a ameaça atravesse uma fronteira;"
+      },
+      {
+        "paragrafo_docx": 2221,
+        "tipo": "opcao",
+        "texto": "reduzir sua Periculosidade em um grau;"
+      },
+      {
+        "paragrafo_docx": 2222,
+        "tipo": "opcao",
+        "texto": "negar uma manifestação mágica menor;"
+      },
+      {
+        "paragrafo_docx": 2223,
+        "tipo": "opcao",
+        "texto": "perceber imediatamente quando a defesa é tocada."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2220,
+        "texto": "impedir que a ameaça atravesse uma fronteira;"
+      },
+      {
+        "paragrafo_docx": 2221,
+        "texto": "reduzir sua Periculosidade em um grau;"
+      },
+      {
+        "paragrafo_docx": 2222,
+        "texto": "negar uma manifestação mágica menor;"
+      },
+      {
+        "paragrafo_docx": 2223,
+        "texto": "perceber imediatamente quando a defesa é tocada."
+      }
+    ],
+    "texto_original": "Quando erguer uma proteção mágica contra uma ameaça específica que compreenda, role+INT.\n10+: Domínio 3.\n7–9: Domínio 2.\nGaste 1 para:\nimpedir que a ameaça atravesse uma fronteira;\nreduzir sua Periculosidade em um grau;\nnegar uma manifestação mágica menor;\nperceber imediatamente quando a defesa é tocada.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2219"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2224",
+    "paragrafo_docx": 2224,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "CONJURAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2224,
+        "tipo": "corpo",
+        "texto": "Quando utilizar magia para transportar, aproximar ou manifestar matéria através do espaço, diga de onde aquilo vem e role+INT quando distância, massa ou precisão forem significativas. Em um 7+, aquilo atravessa o espaço.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 2225,
+        "tipo": "opcao",
+        "texto": "chega exatamente onde pretendia;"
+      },
+      {
+        "paragrafo_docx": 2226,
+        "tipo": "opcao",
+        "texto": "chega intacto;"
+      },
+      {
+        "paragrafo_docx": 2227,
+        "tipo": "opcao",
+        "texto": "a passagem permanece estável tempo suficiente;"
+      },
+      {
+        "paragrafo_docx": 2228,
+        "tipo": "opcao",
+        "texto": "nada próximo é deslocado junto."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2225,
+        "texto": "chega exatamente onde pretendia;"
+      },
+      {
+        "paragrafo_docx": 2226,
+        "texto": "chega intacto;"
+      },
+      {
+        "paragrafo_docx": 2227,
+        "texto": "a passagem permanece estável tempo suficiente;"
+      },
+      {
+        "paragrafo_docx": 2228,
+        "texto": "nada próximo é deslocado junto."
+      }
+    ],
+    "texto_original": "Quando utilizar magia para transportar, aproximar ou manifestar matéria através do espaço, diga de onde aquilo vem e role+INT quando distância, massa ou precisão forem significativas. Em um 7+, aquilo atravessa o espaço.\n10+: escolha 2.\n7–9: escolha 1.\nchega exatamente onde pretendia;\nchega intacto;\na passagem permanece estável tempo suficiente;\nnada próximo é deslocado junto.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2224"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2229",
+    "paragrafo_docx": 2229,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "ADIVINHAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2229,
+        "tipo": "corpo",
+        "texto": "Quando utilizar um método preparado de adivinhação sobre uma hipótese específica, role+INT.\n10+: faça 2 perguntas.\n7–9: faça 1."
+      },
+      {
+        "paragrafo_docx": 2230,
+        "tipo": "opcao",
+        "texto": "O que acontecerá se nada mudar?"
+      },
+      {
+        "paragrafo_docx": 2231,
+        "tipo": "opcao",
+        "texto": "O que aqui pode ser alterado por uma magia que eu conheço?"
+      },
+      {
+        "paragrafo_docx": 2232,
+        "tipo": "opcao",
+        "texto": "Qual força arcana está interferindo nesta situação?"
+      },
+      {
+        "paragrafo_docx": 2233,
+        "tipo": "opcao",
+        "texto": "Que sinal devo procurar?"
+      },
+      {
+        "paragrafo_docx": 2234,
+        "tipo": "opcao",
+        "texto": "Qual possibilidade estou deixando de considerar?"
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2230,
+        "texto": "O que acontecerá se nada mudar?"
+      },
+      {
+        "paragrafo_docx": 2231,
+        "texto": "O que aqui pode ser alterado por uma magia que eu conheço?"
+      },
+      {
+        "paragrafo_docx": 2232,
+        "texto": "Qual força arcana está interferindo nesta situação?"
+      },
+      {
+        "paragrafo_docx": 2233,
+        "texto": "Que sinal devo procurar?"
+      },
+      {
+        "paragrafo_docx": 2234,
+        "texto": "Qual possibilidade estou deixando de considerar?"
+      }
+    ],
+    "texto_original": "Quando utilizar um método preparado de adivinhação sobre uma hipótese específica, role+INT.\n10+: faça 2 perguntas.\n7–9: faça 1.\nO que acontecerá se nada mudar?\nO que aqui pode ser alterado por uma magia que eu conheço?\nQual força arcana está interferindo nesta situação?\nQue sinal devo procurar?\nQual possibilidade estou deixando de considerar?",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2229"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2235",
+    "paragrafo_docx": 2235,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "ENCANTAMENTO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2235,
+        "tipo": "corpo",
+        "texto": "Quando inserir magicamente uma emoção ou impulso simples na mente de alguém capaz de compreender sua presença, role+INT.\nEm um 7+, a emoção ou impulso se instala.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 2236,
+        "tipo": "opcao",
+        "texto": "a emoção parece surgir naturalmente;"
+      },
+      {
+        "paragrafo_docx": 2237,
+        "tipo": "opcao",
+        "texto": "dura tempo suficiente;"
+      },
+      {
+        "paragrafo_docx": 2238,
+        "tipo": "opcao",
+        "texto": "o alvo não identifica você como origem;"
+      },
+      {
+        "paragrafo_docx": 2239,
+        "tipo": "opcao",
+        "texto": "não afeta outra emoção inesperada."
+      },
+      {
+        "paragrafo_docx": 2240,
+        "tipo": "continuacao",
+        "texto": "Você não cria memórias nem personalidade do nada."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2236,
+        "texto": "a emoção parece surgir naturalmente;"
+      },
+      {
+        "paragrafo_docx": 2237,
+        "texto": "dura tempo suficiente;"
+      },
+      {
+        "paragrafo_docx": 2238,
+        "texto": "o alvo não identifica você como origem;"
+      },
+      {
+        "paragrafo_docx": 2239,
+        "texto": "não afeta outra emoção inesperada."
+      }
+    ],
+    "texto_original": "Quando inserir magicamente uma emoção ou impulso simples na mente de alguém capaz de compreender sua presença, role+INT.\nEm um 7+, a emoção ou impulso se instala.\n10+: escolha 2.\n7–9: escolha 1.\na emoção parece surgir naturalmente;\ndura tempo suficiente;\no alvo não identifica você como origem;\nnão afeta outra emoção inesperada.\nVocê não cria memórias nem personalidade do nada.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2235"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2241",
+    "paragrafo_docx": 2241,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "ILUSÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2241,
+        "tipo": "corpo",
+        "texto": "Quando criar uma ilusão sensorial coerente, diga o que ela aparenta ser. Quem não tiver motivo para duvidar reage à aparência. Quando alguém investigar, tocar ou forçar a ilusão contra a realidade, sua fragilidade poderá ser revelada."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando criar uma ilusão sensorial coerente, diga o que ela aparenta ser. Quem não tiver motivo para duvidar reage à aparência. Quando alguém investigar, tocar ou forçar a ilusão contra a realidade, sua fragilidade poderá ser revelada.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2241"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2242",
+    "paragrafo_docx": 2242,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "TRANSMUTAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2242,
+        "tipo": "corpo",
+        "texto": "Quando alterar temporariamente uma propriedade física de matéria que possa tocar, diga o que muda e o que permanece e role+INT quando a alteração for importante ou perigosa.\n10+: a transformação permanece estável pelo tempo necessário àquela situação ou enquanto você a sustentar.\n7–9: escolha: curta duração, transformação incompleta ou efeito secundário."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alterar temporariamente uma propriedade física de matéria que possa tocar, diga o que muda e o que permanece e role+INT quando a alteração for importante ou perigosa.\n10+: a transformação permanece estável pelo tempo necessário àquela situação ou enquanto você a sustentar.\n7–9: escolha: curta duração, transformação incompleta ou efeito secundário.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2242"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2243",
+    "paragrafo_docx": 2243,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "TELECINESE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2243,
+        "tipo": "corpo",
+        "texto": "Quando mover à distância algo que poderia ser manipulado por força física, faça-o normalmente dentro de escala pequena.\nSob resistência, enorme peso ou necessidade de precisão, role+INT.\n10+: mova ou sustente.\n7–9: escolha: menor alcance, movimento brusco, concentração absoluta ou algo próximo é arrastado junto."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando mover à distância algo que poderia ser manipulado por força física, faça-o normalmente dentro de escala pequena.\nSob resistência, enorme peso ou necessidade de precisão, role+INT.\n10+: mova ou sustente.\n7–9: escolha: menor alcance, movimento brusco, concentração absoluta ou algo próximo é arrastado junto.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2243"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2244",
+    "paragrafo_docx": 2244,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "EVOCAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2244,
+        "tipo": "corpo",
+        "texto": "Quando descarregar uma magia criada exclusivamente para causar violência, role+INT.\n10+: cause dano apropriado à violência.\n7–9: cause o dano e escolha:"
+      },
+      {
+        "paragrafo_docx": 2245,
+        "tipo": "opcao",
+        "texto": "exponha-se;"
+      },
+      {
+        "paragrafo_docx": 2246,
+        "tipo": "opcao",
+        "texto": "atinja algo próximo;"
+      },
+      {
+        "paragrafo_docx": 2247,
+        "tipo": "opcao",
+        "texto": "fique incapaz de repetir imediatamente a descarga;"
+      },
+      {
+        "paragrafo_docx": 2248,
+        "tipo": "opcao",
+        "texto": "conceda uma abertura ao alvo."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2245,
+        "texto": "exponha-se;"
+      },
+      {
+        "paragrafo_docx": 2246,
+        "texto": "atinja algo próximo;"
+      },
+      {
+        "paragrafo_docx": 2247,
+        "texto": "fique incapaz de repetir imediatamente a descarga;"
+      },
+      {
+        "paragrafo_docx": 2248,
+        "texto": "conceda uma abertura ao alvo."
+      }
+    ],
+    "texto_original": "Quando descarregar uma magia criada exclusivamente para causar violência, role+INT.\n10+: cause dano apropriado à violência.\n7–9: cause o dano e escolha:\nexponha-se;\natinja algo próximo;\nfique incapaz de repetir imediatamente a descarga;\nconceda uma abertura ao alvo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2244"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2249",
+    "paragrafo_docx": 2249,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "EU CALCULEI A ÁREA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2249,
+        "tipo": "corpo",
+        "texto": "Quando lançar magia destrutiva em meio aos aliados, pode reduzir voluntariamente sua Periculosidade em um grau para excluir uma pessoa ou pequena área que seria atingida."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando lançar magia destrutiva em meio aos aliados, pode reduzir voluntariamente sua Periculosidade em um grau para excluir uma pessoa ou pequena área que seria atingida.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2249"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2250",
+    "paragrafo_docx": 2250,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "CONTRAMÁGICA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2250,
+        "tipo": "corpo",
+        "texto": "Quando perceber outra magia sendo formada e compreender suficientemente seu princípio, pode tentar interferir antes que termine. Role+INT.\n10+: escolha: desfaça-a ou redirecione parte do efeito.\n7–9: interrompa-a, mas a energia precisa ir para algum lugar."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando perceber outra magia sendo formada e compreender suficientemente seu princípio, pode tentar interferir antes que termine. Role+INT.\n10+: escolha: desfaça-a ou redirecione parte do efeito.\n7–9: interrompa-a, mas a energia precisa ir para algum lugar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2250"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2251",
+    "paragrafo_docx": 2251,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "GRIMÓRIO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2251,
+        "tipo": "corpo",
+        "texto": "Escolha ou descreva um grimório, conjunto de tábuas, diagramas, cartões perfurados, biblioteca mental, tatuagens mnemônicas ou outro meio no qual você registre sua pesquisa. Quando tiver tempo e acesso suficiente para estudar um efeito mágico reproduzível que ainda não compreenda, pergunte ao Mestre: “Que princípio torna esta magia possível?”\nO Mestre responderá e dirá o que ainda seria necessário para registrar sua fórmula de maneira utilizável. \nQuando cumprir essa condição, a fórmula passa a fazer parte de seu Grimório e conta como pertencente à sua tradição para Ritual."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha ou descreva um grimório, conjunto de tábuas, diagramas, cartões perfurados, biblioteca mental, tatuagens mnemônicas ou outro meio no qual você registre sua pesquisa. Quando tiver tempo e acesso suficiente para estudar um efeito mágico reproduzível que ainda não compreenda, pergunte ao Mestre: “Que princípio torna esta magia possível?”\nO Mestre responderá e dirá o que ainda seria necessário para registrar sua fórmula de maneira utilizável. \nQuando cumprir essa condição, a fórmula passa a fazer parte de seu Grimório e conta como pertencente à sua tradição para Ritual.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2251"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2252",
+    "paragrafo_docx": 2252,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "PESQUISA ARCANA",
+    "requisito_literal": "Grimório",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2251",
+      "titulo_requerido": "GRIMÓRIO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2252,
+        "tipo": "corpo",
+        "texto": "Quando decidir inventar uma nova aplicação reproduzível da magia que ainda não exista em sua tradição, diga claramente o que quer que ela faça. O Mestre estabelecerá de duas a quatro exigências de pesquisa, como:"
+      },
+      {
+        "paragrafo_docx": 2253,
+        "tipo": "opcao",
+        "texto": "encontrar um fenômeno mágico que demonstre parte do princípio;"
+      },
+      {
+        "paragrafo_docx": 2254,
+        "tipo": "opcao",
+        "texto": "obter literatura perdida;"
+      },
+      {
+        "paragrafo_docx": 2255,
+        "tipo": "opcao",
+        "texto": "realizar experimentos perigosos;"
+      },
+      {
+        "paragrafo_docx": 2256,
+        "tipo": "opcao",
+        "texto": "construir equipamento específico;"
+      },
+      {
+        "paragrafo_docx": 2257,
+        "tipo": "opcao",
+        "texto": "adquirir material excepcional;"
+      },
+      {
+        "paragrafo_docx": 2258,
+        "tipo": "opcao",
+        "texto": "provar uma hipótese em condições reais;"
+      },
+      {
+        "paragrafo_docx": 2259,
+        "tipo": "opcao",
+        "texto": "aceitar uma limitação estrutural da fórmula."
+      },
+      {
+        "paragrafo_docx": 2260,
+        "tipo": "continuacao",
+        "texto": "Quando satisfizer todas, você criou uma fórmula nova. Registre-a no seu Grimório. Ela passa a fazer parte de sua tradição para Ritual e para qualquer Movimento que realmente possa aplicá-la."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2253,
+        "texto": "encontrar um fenômeno mágico que demonstre parte do princípio;"
+      },
+      {
+        "paragrafo_docx": 2254,
+        "texto": "obter literatura perdida;"
+      },
+      {
+        "paragrafo_docx": 2255,
+        "texto": "realizar experimentos perigosos;"
+      },
+      {
+        "paragrafo_docx": 2256,
+        "texto": "construir equipamento específico;"
+      },
+      {
+        "paragrafo_docx": 2257,
+        "texto": "adquirir material excepcional;"
+      },
+      {
+        "paragrafo_docx": 2258,
+        "texto": "provar uma hipótese em condições reais;"
+      },
+      {
+        "paragrafo_docx": 2259,
+        "texto": "aceitar uma limitação estrutural da fórmula."
+      }
+    ],
+    "texto_original": "Quando decidir inventar uma nova aplicação reproduzível da magia que ainda não exista em sua tradição, diga claramente o que quer que ela faça. O Mestre estabelecerá de duas a quatro exigências de pesquisa, como:\nencontrar um fenômeno mágico que demonstre parte do princípio;\nobter literatura perdida;\nrealizar experimentos perigosos;\nconstruir equipamento específico;\nadquirir material excepcional;\nprovar uma hipótese em condições reais;\naceitar uma limitação estrutural da fórmula.\nQuando satisfizer todas, você criou uma fórmula nova. Registre-a no seu Grimório. Ela passa a fazer parte de sua tradição para Ritual e para qualquer Movimento que realmente possa aplicá-la.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2252"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2261",
+    "paragrafo_docx": 2261,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "ESTUDO RÁPIDO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2261,
+        "tipo": "corpo",
+        "texto": "Quando testemunhar diretamente uma manifestação mágica que não conhece, pergunte ao Mestre uma:"
+      },
+      {
+        "paragrafo_docx": 2262,
+        "tipo": "opcao",
+        "texto": "Que princípio mágico está sendo usado aqui?"
+      },
+      {
+        "paragrafo_docx": 2263,
+        "tipo": "opcao",
+        "texto": "O que sustenta este efeito?"
+      },
+      {
+        "paragrafo_docx": 2264,
+        "tipo": "opcao",
+        "texto": "Qual é sua principal limitação?"
+      },
+      {
+        "paragrafo_docx": 2265,
+        "tipo": "opcao",
+        "texto": "Como poderia ser interrompido?"
+      },
+      {
+        "paragrafo_docx": 2266,
+        "tipo": "opcao",
+        "texto": "Que parte deste fenômeno não pertence à magia que aparenta ser?"
+      },
+      {
+        "paragrafo_docx": 2267,
+        "tipo": "continuacao",
+        "texto": "A resposta será verdadeira. Receba +1 adiante quando agir diretamente sobre ela."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2262,
+        "texto": "Que princípio mágico está sendo usado aqui?"
+      },
+      {
+        "paragrafo_docx": 2263,
+        "texto": "O que sustenta este efeito?"
+      },
+      {
+        "paragrafo_docx": 2264,
+        "texto": "Qual é sua principal limitação?"
+      },
+      {
+        "paragrafo_docx": 2265,
+        "texto": "Como poderia ser interrompido?"
+      },
+      {
+        "paragrafo_docx": 2266,
+        "texto": "Que parte deste fenômeno não pertence à magia que aparenta ser?"
+      }
+    ],
+    "texto_original": "Quando testemunhar diretamente uma manifestação mágica que não conhece, pergunte ao Mestre uma:\nQue princípio mágico está sendo usado aqui?\nO que sustenta este efeito?\nQual é sua principal limitação?\nComo poderia ser interrompido?\nQue parte deste fenômeno não pertence à magia que aparenta ser?\nA resposta será verdadeira. Receba +1 adiante quando agir diretamente sobre ela.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2261"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2268",
+    "paragrafo_docx": 2268,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "TEORIA UNIFICADA",
+    "requisito_literal": "Estudo Rápido",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2261",
+      "titulo_requerido": "ESTUDO RÁPIDO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2268,
+        "tipo": "corpo",
+        "texto": "Quando encontrar duas manifestações mágicas aparentemente diferentes, você pode perguntar:\n“Que princípio fundamental estas duas coisas compartilham?” Se realmente houver um, o Mestre dirá. Enquanto trabalhar diretamente a partir dessa relação, trate conhecimento de uma delas como aplicável à compreensão da outra.\nIsso não a adiciona à sua tradição nem ao Grimório."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando encontrar duas manifestações mágicas aparentemente diferentes, você pode perguntar:\n“Que princípio fundamental estas duas coisas compartilham?” Se realmente houver um, o Mestre dirá. Enquanto trabalhar diretamente a partir dessa relação, trate conhecimento de uma delas como aplicável à compreensão da outra.\nIsso não a adiciona à sua tradição nem ao Grimório.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2268"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2269",
+    "paragrafo_docx": 2269,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "ALTERAR A FÓRMULA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2269,
+        "tipo": "corpo",
+        "texto": "Quando tiver tempo para estudar uma manifestação mágica que já domine, escolha uma variável que a fórmula realmente permita alterar:"
+      },
+      {
+        "paragrafo_docx": 2270,
+        "tipo": "opcao",
+        "texto": "alcance;"
+      },
+      {
+        "paragrafo_docx": 2271,
+        "tipo": "opcao",
+        "texto": "área;"
+      },
+      {
+        "paragrafo_docx": 2272,
+        "tipo": "opcao",
+        "texto": "duração;"
+      },
+      {
+        "paragrafo_docx": 2273,
+        "tipo": "opcao",
+        "texto": "ponto de origem;"
+      },
+      {
+        "paragrafo_docx": 2274,
+        "tipo": "opcao",
+        "texto": "assinatura sensorial;"
+      },
+      {
+        "paragrafo_docx": 2275,
+        "tipo": "opcao",
+        "texto": "meio pelo qual se manifesta."
+      },
+      {
+        "paragrafo_docx": 2276,
+        "tipo": "continuacao",
+        "texto": "Diga como pretende modificá-la. O Mestre dirá uma limitação ou custo técnico que a nova versão introduz. Enquanto aceitar essa limitação, você pode utilizar aquela versão modificada. Não cria poderes totalmente novos."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2270,
+        "texto": "alcance;"
+      },
+      {
+        "paragrafo_docx": 2271,
+        "texto": "área;"
+      },
+      {
+        "paragrafo_docx": 2272,
+        "texto": "duração;"
+      },
+      {
+        "paragrafo_docx": 2273,
+        "texto": "ponto de origem;"
+      },
+      {
+        "paragrafo_docx": 2274,
+        "texto": "assinatura sensorial;"
+      },
+      {
+        "paragrafo_docx": 2275,
+        "texto": "meio pelo qual se manifesta."
+      }
+    ],
+    "texto_original": "Quando tiver tempo para estudar uma manifestação mágica que já domine, escolha uma variável que a fórmula realmente permita alterar:\nalcance;\nárea;\nduração;\nponto de origem;\nassinatura sensorial;\nmeio pelo qual se manifesta.\nDiga como pretende modificá-la. O Mestre dirá uma limitação ou custo técnico que a nova versão introduz. Enquanto aceitar essa limitação, você pode utilizar aquela versão modificada. Não cria poderes totalmente novos.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2269"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2277",
+    "paragrafo_docx": 2277,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "MAGIA DISCRETA",
+    "requisito_literal": "Alterar a Fórmula",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2269",
+      "titulo_requerido": "ALTERAR A FÓRMULA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2277,
+        "tipo": "corpo",
+        "texto": "Quando modificar deliberadamente uma fórmula para ocultar o ato de conjuração, sua magia não precisa produzir palavras, gestos, brilhos, runas ou outros sinais externos comuns ao ser formada. Seus efeitos continuam visíveis quando sua natureza exigir. Uma bola de fogo ainda é uma bola de fogo. Mas ninguém necessariamente viu você lançá-la."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando modificar deliberadamente uma fórmula para ocultar o ato de conjuração, sua magia não precisa produzir palavras, gestos, brilhos, runas ou outros sinais externos comuns ao ser formada. Seus efeitos continuam visíveis quando sua natureza exigir. Uma bola de fogo ainda é uma bola de fogo. Mas ninguém necessariamente viu você lançá-la.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2277"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2278",
+    "paragrafo_docx": 2278,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "ASSINATURA ARCANA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2278,
+        "tipo": "corpo",
+        "texto": "Escolha uma fórmula ou manifestação mágica específica que domine especialmente bem e diga o que tornou sua versão reconhecidamente sua. Uma prática inteira como Evocação, Ilusão ou Telecinese não conta como uma única manifestação. Quando alguém que conheça seu trabalho encontrar essa magia, poderá reconhecer sua autoria. Uma vez por cena, quando utilizar essa manifestação exatamente segundo sua fórmula característica, escolha:"
+      },
+      {
+        "paragrafo_docx": 2279,
+        "tipo": "opcao",
+        "texto": "aumente alcance em um grau;"
+      },
+      {
+        "paragrafo_docx": 2280,
+        "tipo": "opcao",
+        "texto": "aumente duração em um grau;"
+      },
+      {
+        "paragrafo_docx": 2281,
+        "tipo": "opcao",
+        "texto": "aumente precisão ou controle;"
+      },
+      {
+        "paragrafo_docx": 2282,
+        "tipo": "opcao",
+        "texto": "ignore uma preparação menor ordinariamente necessária, mas não requisitos estruturais de um Ritual."
+      },
+      {
+        "paragrafo_docx": 2283,
+        "tipo": "continuacao",
+        "texto": "Você também recebe livremente o movimento Esta Magia Tem Autor."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2279,
+        "texto": "aumente alcance em um grau;"
+      },
+      {
+        "paragrafo_docx": 2280,
+        "texto": "aumente duração em um grau;"
+      },
+      {
+        "paragrafo_docx": 2281,
+        "texto": "aumente precisão ou controle;"
+      },
+      {
+        "paragrafo_docx": 2282,
+        "texto": "ignore uma preparação menor ordinariamente necessária, mas não requisitos estruturais de um Ritual."
+      }
+    ],
+    "texto_original": "Escolha uma fórmula ou manifestação mágica específica que domine especialmente bem e diga o que tornou sua versão reconhecidamente sua. Uma prática inteira como Evocação, Ilusão ou Telecinese não conta como uma única manifestação. Quando alguém que conheça seu trabalho encontrar essa magia, poderá reconhecer sua autoria. Uma vez por cena, quando utilizar essa manifestação exatamente segundo sua fórmula característica, escolha:\naumente alcance em um grau;\naumente duração em um grau;\naumente precisão ou controle;\nignore uma preparação menor ordinariamente necessária, mas não requisitos estruturais de um Ritual.\nVocê também recebe livremente o movimento Esta Magia Tem Autor.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2278"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2284",
+    "paragrafo_docx": 2284,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "ESTA MAGIA TEM AUTOR",
+    "requisito_literal": "Assinatura Arcana",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2278",
+      "titulo_requerido": "ASSINATURA ARCANA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2284,
+        "tipo": "corpo",
+        "texto": "Quando estudar uma manifestação arcana suficientemente complexa, pergunte ao Mestre: \n“Que escolha nesta fórmula revela algo sobre quem a criou?” O Mestre responderá honestamente.\nSe você já conhecer pessoalmente o estilo mágico de possíveis autores, o Mestre dirá também quem entre eles é compatível ou incompatível com aquela escolha."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando estudar uma manifestação arcana suficientemente complexa, pergunte ao Mestre: \n“Que escolha nesta fórmula revela algo sobre quem a criou?” O Mestre responderá honestamente.\nSe você já conhecer pessoalmente o estilo mágico de possíveis autores, o Mestre dirá também quem entre eles é compatível ou incompatível com aquela escolha.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2284"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2286",
+    "paragrafo_docx": 2286,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "DESFAZER MAGIA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2286,
+        "tipo": "corpo",
+        "texto": "Quando estudar uma magia que já esteja sustentando um efeito e identificar algo sobre seu princípio, diga como irá desmontá-la e role+INT.\n12+: desfaça-a completamente e compreenda algo útil sobre quem ou o que a criou.\n10+: desfaça-a.\n7–9: escolha 1:"
+      },
+      {
+        "paragrafo_docx": 2287,
+        "tipo": "opcao",
+        "texto": "apenas a suprima enquanto permanecer concentrado;"
+      },
+      {
+        "paragrafo_docx": 2288,
+        "tipo": "opcao",
+        "texto": "desfaça-a, mas libere a energia que sustentava o efeito;"
+      },
+      {
+        "paragrafo_docx": 2289,
+        "tipo": "opcao",
+        "texto": "desfaça apenas sua manifestação mais imediata;"
+      },
+      {
+        "paragrafo_docx": 2290,
+        "tipo": "opcao",
+        "texto": "ela se rompe, mas algo que a sustentava percebe sua interferência."
+      },
+      {
+        "paragrafo_docx": 2291,
+        "tipo": "continuacao",
+        "texto": "Magias de escala muito superior podem primeiro exigir que você descubra aquilo que as ancora."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2287,
+        "texto": "apenas a suprima enquanto permanecer concentrado;"
+      },
+      {
+        "paragrafo_docx": 2288,
+        "texto": "desfaça-a, mas libere a energia que sustentava o efeito;"
+      },
+      {
+        "paragrafo_docx": 2289,
+        "texto": "desfaça apenas sua manifestação mais imediata;"
+      },
+      {
+        "paragrafo_docx": 2290,
+        "texto": "ela se rompe, mas algo que a sustentava percebe sua interferência."
+      }
+    ],
+    "texto_original": "Quando estudar uma magia que já esteja sustentando um efeito e identificar algo sobre seu princípio, diga como irá desmontá-la e role+INT.\n12+: desfaça-a completamente e compreenda algo útil sobre quem ou o que a criou.\n10+: desfaça-a.\n7–9: escolha 1:\napenas a suprima enquanto permanecer concentrado;\ndesfaça-a, mas libere a energia que sustentava o efeito;\ndesfaça apenas sua manifestação mais imediata;\nela se rompe, mas algo que a sustentava percebe sua interferência.\nMagias de escala muito superior podem primeiro exigir que você descubra aquilo que as ancora.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2286"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2292",
+    "paragrafo_docx": 2292,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "GUARDA PROJETADA",
+    "requisito_literal": "Abjuração",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2219",
+      "titulo_requerido": "ABJURAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2292,
+        "tipo": "corpo",
+        "texto": "Quando alguém fora dos limites originais de uma proteção criada por sua Abjuração estiver prestes a sofrer diretamente a ameaça contra a qual ela foi construída, você pode gastar Domínio de Abjuração como se essa pessoa estivesse dentro dos limites da proteção, desde que possa percebê-la."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém fora dos limites originais de uma proteção criada por sua Abjuração estiver prestes a sofrer diretamente a ameaça contra a qual ela foi construída, você pode gastar Domínio de Abjuração como se essa pessoa estivesse dentro dos limites da proteção, desde que possa percebê-la.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2292"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2293",
+    "paragrafo_docx": 2293,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "CONTINGÊNCIA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2293,
+        "tipo": "corpo",
+        "texto": "Quando tiver tempo e materiais para preparar antecipadamente uma manifestação mágica que você realmente sabe produzir. Todos os requisitos que possam ser satisfeitos antecipadamente devem ser cumpridos durante a preparação da Contingência. Ela não permite ignorar condições estruturais necessárias para que aquela magia exista. \nDeclare: o efeito e uma condição concreta que irá dispará-lo. Quando essa condição ocorrer, a magia acontece imediatamente e sem uma nova ação sua, mesmo que você não estivesse esperando que aquilo ocorresse naquele momento. Se aquela manifestação normalmente exigiria uma rolagem, realize-a normalmente naquele momento. \nVocê pode manter uma Contingência preparada por vez. Preparar outra encerra a anterior."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando tiver tempo e materiais para preparar antecipadamente uma manifestação mágica que você realmente sabe produzir. Todos os requisitos que possam ser satisfeitos antecipadamente devem ser cumpridos durante a preparação da Contingência. Ela não permite ignorar condições estruturais necessárias para que aquela magia exista. \nDeclare: o efeito e uma condição concreta que irá dispará-lo. Quando essa condição ocorrer, a magia acontece imediatamente e sem uma nova ação sua, mesmo que você não estivesse esperando que aquilo ocorresse naquele momento. Se aquela manifestação normalmente exigiria uma rolagem, realize-a normalmente naquele momento. \nVocê pode manter uma Contingência preparada por vez. Preparar outra encerra a anterior.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2293"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2294",
+    "paragrafo_docx": 2294,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "LUGAR DE PODER",
+    "requisito_literal": "Ritual",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2209",
+      "titulo_requerido": "RITUAL",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2294,
+        "tipo": "corpo",
+        "texto": "Quando tiver tempo, materiais arcanos e segurança suficiente, você pode construir artificialmente um Lugar de Poder. Diga:"
+      },
+      {
+        "paragrafo_docx": 2295,
+        "tipo": "opcao",
+        "texto": "que princípio mágico ele concentra;"
+      },
+      {
+        "paragrafo_docx": 2296,
+        "tipo": "opcao",
+        "texto": "o que fisicamente o ancora ao lugar;"
+      },
+      {
+        "paragrafo_docx": 2297,
+        "tipo": "opcao",
+        "texto": "e como sua presença se manifesta."
+      },
+      {
+        "paragrafo_docx": 2298,
+        "tipo": "continuacao",
+        "texto": "O Mestre dirá que força, criatura ou organização terá interesse inevitável naquilo que você construiu. Enquanto permanecer íntegro, ele conta como Lugar de Poder para Ritual."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2295,
+        "texto": "que princípio mágico ele concentra;"
+      },
+      {
+        "paragrafo_docx": 2296,
+        "texto": "o que fisicamente o ancora ao lugar;"
+      },
+      {
+        "paragrafo_docx": 2297,
+        "texto": "e como sua presença se manifesta."
+      }
+    ],
+    "texto_original": "Quando tiver tempo, materiais arcanos e segurança suficiente, você pode construir artificialmente um Lugar de Poder. Diga:\nque princípio mágico ele concentra;\no que fisicamente o ancora ao lugar;\ne como sua presença se manifesta.\nO Mestre dirá que força, criatura ou organização terá interesse inevitável naquilo que você construiu. Enquanto permanecer íntegro, ele conta como Lugar de Poder para Ritual.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2294"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2299",
+    "paragrafo_docx": 2299,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "TRANSPOSIÇÃO",
+    "requisito_literal": "Conjuração",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2224",
+      "titulo_requerido": "CONJURAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2299,
+        "tipo": "corpo",
+        "texto": "Quando você e uma criatura voluntária ou objeto de tamanho compatível estiverem ao alcance de sua percepção mágica, pode trocar instantaneamente suas posições. Se houver resistência, distância extrema, interferência ou necessidade de fazer isso sob perigo, enfrente a situação normalmente. A troca em si é possível."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando você e uma criatura voluntária ou objeto de tamanho compatível estiverem ao alcance de sua percepção mágica, pode trocar instantaneamente suas posições. Se houver resistência, distância extrema, interferência ou necessidade de fazer isso sob perigo, enfrente a situação normalmente. A troca em si é possível.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2299"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2300",
+    "paragrafo_docx": 2300,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "MARCA DE RETORNO",
+    "requisito_literal": "Conjuração",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2224",
+      "titulo_requerido": "CONJURAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2300,
+        "tipo": "corpo",
+        "texto": "Quando passar algum tempo registrando precisamente a geometria arcana de um lugar, deixe ali uma Marca de Retorno. Você sempre sabe se aquela marca ainda existe. Quando realizar uma Conjuração para retornar especificamente a uma Marca intacta, uma falha de precisão não pode fazê-lo chegar a outro destino. Outras consequências ainda são possíveis. Pode manter apenas uma Marca de Retorno."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando passar algum tempo registrando precisamente a geometria arcana de um lugar, deixe ali uma Marca de Retorno. Você sempre sabe se aquela marca ainda existe. Quando realizar uma Conjuração para retornar especificamente a uma Marca intacta, uma falha de precisão não pode fazê-lo chegar a outro destino. Outras consequências ainda são possíveis. Pode manter apenas uma Marca de Retorno.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2300"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2301",
+    "paragrafo_docx": 2301,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "BOLSO IMPOSSÍVEL",
+    "requisito_literal": "Conjuração",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2224",
+      "titulo_requerido": "CONJURAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2301,
+        "tipo": "corpo",
+        "texto": "Quando preparar um recipiente para que seu interior exista deslocado do espaço que sua forma externa ocupa, determine o que o ancora ao mundo. Seu interior pode comportar muito mais do que seu volume exterior permitiria. Se a âncora for quebrada, destruída ou levada através de outra distorção espacial incompatível, o Mestre dirá onde aquilo que estava dentro tenta existir."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando preparar um recipiente para que seu interior exista deslocado do espaço que sua forma externa ocupa, determine o que o ancora ao mundo. Seu interior pode comportar muito mais do que seu volume exterior permitiria. Se a âncora for quebrada, destruída ou levada através de outra distorção espacial incompatível, o Mestre dirá onde aquilo que estava dentro tenta existir.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2301"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2302",
+    "paragrafo_docx": 2302,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "OLHO ARCANO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2302,
+        "tipo": "corpo",
+        "texto": "Quando preparar um foco de observação e projetar seus sentidos através dele, descreva como sua magia atravessa o espaço. Enquanto mantiver concentração, você pode mover esse ponto de percepção por lugares aos quais ele possua um caminho possível e perceber através dele como se estivesse presente. Barreiras destinadas especificamente a impedir observação mágica podem bloqueá-lo ou denunciá-lo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando preparar um foco de observação e projetar seus sentidos através dele, descreva como sua magia atravessa o espaço. Enquanto mantiver concentração, você pode mover esse ponto de percepção por lugares aos quais ele possua um caminho possível e perceber através dele como se estivesse presente. Barreiras destinadas especificamente a impedir observação mágica podem bloqueá-lo ou denunciá-lo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2302"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2303",
+    "paragrafo_docx": 2303,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "TERCEIRO OLHO",
+    "requisito_literal": "Adivinhação",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2229",
+      "titulo_requerido": "ADIVINHAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2303,
+        "tipo": "corpo",
+        "texto": "Quando deliberadamente ajustar seus sentidos para perceber aquilo que magia comum oculta, escolha uma:"
+      },
+      {
+        "paragrafo_docx": 2304,
+        "tipo": "opcao",
+        "texto": "criaturas invisíveis;"
+      },
+      {
+        "paragrafo_docx": 2305,
+        "tipo": "opcao",
+        "texto": "presença de passagens ou espaços extradimensionais;"
+      },
+      {
+        "paragrafo_docx": 2306,
+        "tipo": "opcao",
+        "texto": "ilusões sobrepostas à realidade;"
+      },
+      {
+        "paragrafo_docx": 2307,
+        "tipo": "opcao",
+        "texto": "manifestações adjacentes a outro plano."
+      },
+      {
+        "paragrafo_docx": 2308,
+        "tipo": "continuacao",
+        "texto": "Enquanto mantiver essa percepção, você enxerga essa categoria como algo realmente presente. Outras coisas podem ficar mais difíceis de perceber enquanto seus sentidos estiverem assim ajustados."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2304,
+        "texto": "criaturas invisíveis;"
+      },
+      {
+        "paragrafo_docx": 2305,
+        "texto": "presença de passagens ou espaços extradimensionais;"
+      },
+      {
+        "paragrafo_docx": 2306,
+        "texto": "ilusões sobrepostas à realidade;"
+      },
+      {
+        "paragrafo_docx": 2307,
+        "texto": "manifestações adjacentes a outro plano."
+      }
+    ],
+    "texto_original": "Quando deliberadamente ajustar seus sentidos para perceber aquilo que magia comum oculta, escolha uma:\ncriaturas invisíveis;\npresença de passagens ou espaços extradimensionais;\nilusões sobrepostas à realidade;\nmanifestações adjacentes a outro plano.\nEnquanto mantiver essa percepção, você enxerga essa categoria como algo realmente presente. Outras coisas podem ficar mais difíceis de perceber enquanto seus sentidos estiverem assim ajustados.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2303"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2309",
+    "paragrafo_docx": 2309,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "OLHAR HIPNÓTICO",
+    "requisito_literal": "Encantamento",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2235",
+      "titulo_requerido": "ENCANTAMENTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2309,
+        "tipo": "corpo",
+        "texto": "Quando conseguir manter a atenção direta de alguém que possa perceber você, pode prender sua mente num padrão mágico simples. Enquanto você continuar sustentando o contato e nada mais exigir verdadeiramente sua atenção, o alvo fica absorto em você e deixa de agir sobre outros estímulos comuns. Dor, ameaça imediata, violência ou algo profundamente significativo pode quebrar o fascínio."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando conseguir manter a atenção direta de alguém que possa perceber você, pode prender sua mente num padrão mágico simples. Enquanto você continuar sustentando o contato e nada mais exigir verdadeiramente sua atenção, o alvo fica absorto em você e deixa de agir sobre outros estímulos comuns. Dor, ameaça imediata, violência ou algo profundamente significativo pode quebrar o fascínio.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2309"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2310",
+    "paragrafo_docx": 2310,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "MEMÓRIA MALEÁVEL",
+    "requisito_literal": "Encantamento",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2235",
+      "titulo_requerido": "ENCANTAMENTO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2310,
+        "tipo": "corpo",
+        "texto": "Quando tiver tempo, proximidade e acesso desimpedido à mente de alguém, escolha uma memória específica. Diga o que deseja:"
+      },
+      {
+        "paragrafo_docx": 2311,
+        "tipo": "opcao",
+        "texto": "apagar;"
+      },
+      {
+        "paragrafo_docx": 2312,
+        "tipo": "opcao",
+        "texto": "obscurecer;"
+      },
+      {
+        "paragrafo_docx": 2313,
+        "tipo": "opcao",
+        "texto": "alterar;"
+      },
+      {
+        "paragrafo_docx": 2314,
+        "tipo": "opcao",
+        "texto": "ou associar a uma emoção diferente."
+      },
+      {
+        "paragrafo_docx": 2315,
+        "tipo": "continuacao",
+        "texto": "Role+INT. 10+: a memória muda como pretendia. \n7–9: ela muda, mas escolha 1:"
+      },
+      {
+        "paragrafo_docx": 2316,
+        "tipo": "opcao",
+        "texto": "fragmentos contraditórios permanecem;"
+      },
+      {
+        "paragrafo_docx": 2317,
+        "tipo": "opcao",
+        "texto": "o alvo sabe que algo foi alterado;"
+      },
+      {
+        "paragrafo_docx": 2318,
+        "tipo": "opcao",
+        "texto": "alguma memória relacionada muda junto;"
+      },
+      {
+        "paragrafo_docx": 2319,
+        "tipo": "opcao",
+        "texto": "a alteração poderá desmoronar diante de uma prova emocionalmente incontestável."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2311,
+        "texto": "apagar;"
+      },
+      {
+        "paragrafo_docx": 2312,
+        "texto": "obscurecer;"
+      },
+      {
+        "paragrafo_docx": 2313,
+        "texto": "alterar;"
+      },
+      {
+        "paragrafo_docx": 2314,
+        "texto": "ou associar a uma emoção diferente."
+      },
+      {
+        "paragrafo_docx": 2316,
+        "texto": "fragmentos contraditórios permanecem;"
+      },
+      {
+        "paragrafo_docx": 2317,
+        "texto": "o alvo sabe que algo foi alterado;"
+      },
+      {
+        "paragrafo_docx": 2318,
+        "texto": "alguma memória relacionada muda junto;"
+      },
+      {
+        "paragrafo_docx": 2319,
+        "texto": "a alteração poderá desmoronar diante de uma prova emocionalmente incontestável."
+      }
+    ],
+    "texto_original": "Quando tiver tempo, proximidade e acesso desimpedido à mente de alguém, escolha uma memória específica. Diga o que deseja:\napagar;\nobscurecer;\nalterar;\nou associar a uma emoção diferente.\nRole+INT. 10+: a memória muda como pretendia. \n7–9: ela muda, mas escolha 1:\nfragmentos contraditórios permanecem;\no alvo sabe que algo foi alterado;\nalguma memória relacionada muda junto;\na alteração poderá desmoronar diante de uma prova emocionalmente incontestável.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2310"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2320",
+    "paragrafo_docx": 2320,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "SEM MARGEM DE SEGURANÇA",
+    "requisito_literal": "Evocação",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2244",
+      "titulo_requerido": "EVOCAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2320,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, antes de rolar Evocação, declare que removeu todas as limitações de segurança da fórmula e escolha 2: Periculosidade, alcance, velocidade ou tamanho. Aumente essas dimensões em um grau. \nDepois que a Evocação for resolvida, você sofre uma consequência apropriada da sobrecarga, independentemente do resultado. O Mestre não pode reduzir o efeito escolhido para evitar essa consequência."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, antes de rolar Evocação, declare que removeu todas as limitações de segurança da fórmula e escolha 2: Periculosidade, alcance, velocidade ou tamanho. Aumente essas dimensões em um grau. \nDepois que a Evocação for resolvida, você sofre uma consequência apropriada da sobrecarga, independentemente do resultado. O Mestre não pode reduzir o efeito escolhido para evitar essa consequência.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2320"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2321",
+    "paragrafo_docx": 2321,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "ILUSÃO MALEÁVEL",
+    "requisito_literal": "Ilusão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2241",
+      "titulo_requerido": "ILUSÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2321,
+        "tipo": "corpo",
+        "texto": "Enquanto uma ilusão sua continuar existindo, você pode alterar seu conteúdo sem desfazê-la, desde que a nova versão respeite a mesma escala, sentidos e limites da manifestação original. Aquilo que já revelou a ilusão como falsa não esquece automaticamente o que descobriu."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Enquanto uma ilusão sua continuar existindo, você pode alterar seu conteúdo sem desfazê-la, desde que a nova versão respeite a mesma escala, sentidos e limites da manifestação original. Aquilo que já revelou a ilusão como falsa não esquece automaticamente o que descobriu.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2321"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2322",
+    "paragrafo_docx": 2322,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "NÃO ERA EU",
+    "requisito_literal": "Ilusão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2241",
+      "titulo_requerido": "ILUSÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2322,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando uma violência o atingir e houver espaço ficcional para que tivesse preparado o engano, revele que aquilo que foi atingido era uma duplicata ilusória sua. Você estava em outra posição próxima que poderia plausivelmente ter ocupado. A violência não o atinge. Diga qual detalhe da duplicata denuncia agora que ela nunca foi você."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando uma violência o atingir e houver espaço ficcional para que tivesse preparado o engano, revele que aquilo que foi atingido era uma duplicata ilusória sua. Você estava em outra posição próxima que poderia plausivelmente ter ocupado. A violência não o atinge. Diga qual detalhe da duplicata denuncia agora que ela nunca foi você.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2322"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2323",
+    "paragrafo_docx": 2323,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "REALIDADE ILUSÓRIA",
+    "requisito_literal": "Ilusão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2241",
+      "titulo_requerido": "ILUSÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2323,
+        "tipo": "corpo",
+        "texto": "Quando criar uma ilusão que contenha um objeto inanimado e não mágico, escolha um desses objetos. Enquanto a ilusão persistir, você pode fazer aquele objeto tornar-se fisicamente real. Ele possui as propriedades comuns daquilo que representa, mas não pode causar diretamente violência por existir desta maneira. Quando a ilusão termina, o objeto deixa de existir."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando criar uma ilusão que contenha um objeto inanimado e não mágico, escolha um desses objetos. Enquanto a ilusão persistir, você pode fazer aquele objeto tornar-se fisicamente real. Ele possui as propriedades comuns daquilo que representa, mas não pode causar diretamente violência por existir desta maneira. Quando a ilusão termina, o objeto deixa de existir.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2323"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2324",
+    "paragrafo_docx": 2324,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "FORMA ESTÁVEL",
+    "requisito_literal": "Transmutação",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2242",
+      "titulo_requerido": "TRANSMUTAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2324,
+        "tipo": "corpo",
+        "texto": "Quando possuir tempo, equipamento e um catalisador apropriado à transformação, você pode tornar permanente uma alteração que normalmente seria temporária através de Transmutação. O Mestre dirá:"
+      },
+      {
+        "paragrafo_docx": 2325,
+        "tipo": "opcao",
+        "texto": "qual material ou fenômeno servirá de catalisador;"
+      },
+      {
+        "paragrafo_docx": 2326,
+        "tipo": "opcao",
+        "texto": "e qual propriedade da matéria original não poderá ser apagada completamente."
+      },
+      {
+        "paragrafo_docx": 2327,
+        "tipo": "continuacao",
+        "texto": "Quando cumprir, a transformação passa a ser real e permanente."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2325,
+        "texto": "qual material ou fenômeno servirá de catalisador;"
+      },
+      {
+        "paragrafo_docx": 2326,
+        "texto": "e qual propriedade da matéria original não poderá ser apagada completamente."
+      }
+    ],
+    "texto_original": "Quando possuir tempo, equipamento e um catalisador apropriado à transformação, você pode tornar permanente uma alteração que normalmente seria temporária através de Transmutação. O Mestre dirá:\nqual material ou fenômeno servirá de catalisador;\ne qual propriedade da matéria original não poderá ser apagada completamente.\nQuando cumprir, a transformação passa a ser real e permanente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2324"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2328",
+    "paragrafo_docx": 2328,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "PEDRA DO TRANSMUTADOR",
+    "requisito_literal": "Transmutação",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2242",
+      "titulo_requerido": "TRANSMUTAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2328,
+        "tipo": "corpo",
+        "texto": "Crie um pequeno foco material no qual mantém uma propriedade física estabilizada. Escolha uma propriedade que sua Transmutação realmente consiga produzir: leveza, dureza, calor, flexibilidade, flutuabilidade, transparência ou semelhante. Enquanto alguém portar a pedra, um objeto pequeno que toque pode temporariamente assumir aquela propriedade. Você só pode manter uma Pedra do Transmutador por vez. A Pedra pode manter essa propriedade em apenas um objeto por vez; aplicá-la a outro encerra o efeito anterior."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Crie um pequeno foco material no qual mantém uma propriedade física estabilizada. Escolha uma propriedade que sua Transmutação realmente consiga produzir: leveza, dureza, calor, flexibilidade, flutuabilidade, transparência ou semelhante. Enquanto alguém portar a pedra, um objeto pequeno que toque pode temporariamente assumir aquela propriedade. Você só pode manter uma Pedra do Transmutador por vez. A Pedra pode manter essa propriedade em apenas um objeto por vez; aplicá-la a outro encerra o efeito anterior.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2328"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2329",
+    "paragrafo_docx": 2329,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "VOO ARCANO",
+    "requisito_literal": "Telecinese",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2243",
+      "titulo_requerido": "TELECINESE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2329,
+        "tipo": "corpo",
+        "texto": "Você aprendeu a tratar seu próprio corpo como objeto de sua Telecinese. Quando não houver interferência significativa, pode sustentar-se e mover-se livremente pelo ar. Voar contra tempestades violentas, carregar peso extremo, realizar manobras precisas sob perigo ou resistir a algo tentando derrubá-lo exige enfrentar a situação normalmente."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Você aprendeu a tratar seu próprio corpo como objeto de sua Telecinese. Quando não houver interferência significativa, pode sustentar-se e mover-se livremente pelo ar. Voar contra tempestades violentas, carregar peso extremo, realizar manobras precisas sob perigo ou resistir a algo tentando derrubá-lo exige enfrentar a situação normalmente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2329"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2330",
+    "paragrafo_docx": 2330,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "MÃOS INVISÍVEIS",
+    "requisito_literal": "Telecinese",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2243",
+      "titulo_requerido": "TELECINESE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2330,
+        "tipo": "corpo",
+        "texto": "Você pode dividir sua Telecinese entre vários objetos pequenos ao mesmo tempo, desde que consiga manter consciência clara de todos eles. Enquanto nenhuma força resistir, eles podem realizar simultaneamente tarefas simples e diferentes. \nQuando precisão coletiva, perigo ou resistência tornarem isso relevante, resolva Telecinese normalmente; seus resultados se aplicam ao conjunto de objetos que estiver manipulando."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Você pode dividir sua Telecinese entre vários objetos pequenos ao mesmo tempo, desde que consiga manter consciência clara de todos eles. Enquanto nenhuma força resistir, eles podem realizar simultaneamente tarefas simples e diferentes. \nQuando precisão coletiva, perigo ou resistência tornarem isso relevante, resolva Telecinese normalmente; seus resultados se aplicam ao conjunto de objetos que estiver manipulando.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2330"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2331",
+    "paragrafo_docx": 2331,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "REFLETIR MAGIA",
+    "requisito_literal": "Contramágica",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2250",
+      "titulo_requerido": "CONTRAMÁGICA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2331,
+        "tipo": "corpo",
+        "texto": "Quando obtiver 10+ em Contramágica, você pode escolher redirecionar completamente a manifestação em vez de apenas parte dela, desde que exista um novo alvo, direção ou destino que a própria magia poderia alcançar."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando obtiver 10+ em Contramágica, você pode escolher redirecionar completamente a manifestação em vez de apenas parte dela, desde que exista um novo alvo, direção ou destino que a própria magia poderia alcançar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2331"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2332",
+    "paragrafo_docx": 2332,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "DISSIPAÇÃO DEFENSIVA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2332,
+        "tipo": "corpo",
+        "texto": "Quando uma consequência estiver prestes a atingi-lo e você possuir uma manifestação mágica própria ainda ativa, pode encerrá-la imediatamente e usar a energia liberada para interferir na consequência. Diga como a magia se desfaz. Reduza em um grau a Periculosidade da violência ou a severidade do efeito imediato que o atingiria."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando uma consequência estiver prestes a atingi-lo e você possuir uma manifestação mágica própria ainda ativa, pode encerrá-la imediatamente e usar a energia liberada para interferir na consequência. Diga como a magia se desfaz. Reduza em um grau a Periculosidade da violência ou a severidade do efeito imediato que o atingiria.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2332"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2334",
+    "paragrafo_docx": 2334,
+    "grupo": "MAGO",
+    "categoria": "classe",
+    "titulo": "FAMILIAR ARCANO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2334,
+        "tipo": "corpo",
+        "texto": "Crie ou vincule uma pequena criatura para funcionar como extensão de sua prática mágica, não como combatente. Escolha duas funções:"
+      },
+      {
+        "paragrafo_docx": 2335,
+        "tipo": "opcao",
+        "texto": "carregar e manipular objetos pequenos;"
+      },
+      {
+        "paragrafo_docx": 2336,
+        "tipo": "opcao",
+        "texto": "perceber magia próxima;"
+      },
+      {
+        "paragrafo_docx": 2337,
+        "tipo": "opcao",
+        "texto": "compartilhar um de seus sentidos com você;"
+      },
+      {
+        "paragrafo_docx": 2338,
+        "tipo": "opcao",
+        "texto": "servir como ponto de origem para uma manifestação simples;"
+      },
+      {
+        "paragrafo_docx": 2339,
+        "tipo": "opcao",
+        "texto": "memorizar perfeitamente símbolos e textos que observe;"
+      },
+      {
+        "paragrafo_docx": 2340,
+        "tipo": "opcao",
+        "texto": "comunicar-se silenciosamente com você à distância razoável."
+      },
+      {
+        "paragrafo_docx": 2341,
+        "tipo": "continuacao",
+        "texto": "Quando passar algumas horas em segurança ajustando o vínculo, você pode substituir uma função por outra."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2335,
+        "texto": "carregar e manipular objetos pequenos;"
+      },
+      {
+        "paragrafo_docx": 2336,
+        "texto": "perceber magia próxima;"
+      },
+      {
+        "paragrafo_docx": 2337,
+        "texto": "compartilhar um de seus sentidos com você;"
+      },
+      {
+        "paragrafo_docx": 2338,
+        "texto": "servir como ponto de origem para uma manifestação simples;"
+      },
+      {
+        "paragrafo_docx": 2339,
+        "texto": "memorizar perfeitamente símbolos e textos que observe;"
+      },
+      {
+        "paragrafo_docx": 2340,
+        "texto": "comunicar-se silenciosamente com você à distância razoável."
+      }
+    ],
+    "texto_original": "Crie ou vincule uma pequena criatura para funcionar como extensão de sua prática mágica, não como combatente. Escolha duas funções:\ncarregar e manipular objetos pequenos;\nperceber magia próxima;\ncompartilhar um de seus sentidos com você;\nservir como ponto de origem para uma manifestação simples;\nmemorizar perfeitamente símbolos e textos que observe;\ncomunicar-se silenciosamente com você à distância razoável.\nQuando passar algumas horas em segurança ajustando o vínculo, você pode substituir uma função por outra.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2334"
+  }
+]
