@@ -1,0 +1,156 @@
+[
+  {
+    "id": "ponte-lore:caatinga-clas-orcs",
+    "entrada_lore_id": "lore-hack:orcs-caatinga",
+    "regiao_atlas_id": "regiao:caatinga",
+    "pergunta_curadoria_id": null,
+    "parecer": "amplia",
+    "justificativa": "Manuscrito confirma existência de comunidades orcs dispersas, mas não denomina um povoado específico.",
+    "pagina": 12,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:caatinga-pesquisa-abastecimento",
+    "entrada_lore_id": "lore-hack:orcs-caatinga",
+    "regiao_atlas_id": "regiao:caatinga",
+    "pergunta_curadoria_id": "pergunta:caatinga-abastecimento",
+    "parecer": "insuficiente_para_resolver",
+    "justificativa": "O texto não identifica fontes de água ou alimentos dos clãs da Caatinga.",
+    "pagina": 12,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:caatinga-pesquisa-abrigo",
+    "entrada_lore_id": "lore-hack:orcs-caatinga",
+    "regiao_atlas_id": "regiao:caatinga",
+    "pergunta_curadoria_id": "pergunta:caatinga-habitacao",
+    "parecer": "insuficiente_para_resolver",
+    "justificativa": "Distribuição regional das comunidades orcs não comprova moradias, localidades ou infraestrutura específica.",
+    "pagina": 12,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:costa-sul-abissais",
+    "entrada_lore_id": "lore-hack:abissais-marinhos",
+    "regiao_atlas_id": "regiao:costa-sul",
+    "pergunta_curadoria_id": null,
+    "parecer": "amplia",
+    "justificativa": "Religião, tributos, pactos e pressão territorial do povo abissal marinho ampliam a economia política regional.",
+    "pagina": 14,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:costa-sul-agua-demeter",
+    "entrada_lore_id": "lore-hack:templo-demeter",
+    "regiao_atlas_id": "regiao:costa-sul",
+    "pergunta_curadoria_id": "pergunta:costa-sul-agua",
+    "parecer": "amplia",
+    "justificativa": "Fonte reforça o uso da água purificada para agricultura, mas permanece sem evidência de potabilidade doméstica.",
+    "pagina": 5,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:costa-sul-aquaticos",
+    "entrada_lore_id": "lore-hack:tritoes",
+    "regiao_atlas_id": "regiao:costa-sul",
+    "pergunta_curadoria_id": null,
+    "parecer": "fronteira_nova",
+    "justificativa": "Tritões e sereias vivem no oceano azul além do Mar de Sangue; não inserir suas cidades nos assentamentos da Costa Sul sem região apropriada.",
+    "pagina": 15,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:costa-sul-destino-druidas",
+    "entrada_lore_id": "lore-hack:druidas-eldroth",
+    "regiao_atlas_id": "regiao:costa-sul",
+    "pergunta_curadoria_id": "pergunta:costa-sul-migracao",
+    "parecer": "resposta_parcial_para_grupo",
+    "justificativa": "Portomonte é citada expressamente como destino de alguns druidas de Eldroth, mas não de todos os refugiados; acolhimento formal e números não são estabelecidos.",
+    "pagina": 17,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:costa-sul-kuotoa",
+    "entrada_lore_id": "lore-hack:kuo-toa",
+    "regiao_atlas_id": "regiao:costa-sul",
+    "pergunta_curadoria_id": null,
+    "parecer": "amplia",
+    "justificativa": "Cavernas costeiras e cidades subaquáticas devem continuar distintas; não confundir incursão sacrificial com dieta.",
+    "pagina": 14,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:eldroth-abrigos",
+    "entrada_lore_id": "lore-hack:druidas-eldroth",
+    "regiao_atlas_id": "regiao:eldroth",
+    "pergunta_curadoria_id": "pergunta:eldroth-abrigos",
+    "parecer": "amplia_mas_nao_individualiza",
+    "justificativa": "O manuscrito descreve círculos escondidos, territórios livres e comunidades protegidas; não apresenta localização nominal de um refúgio civil.",
+    "pagina": 17,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:eldroth-destinos",
+    "entrada_lore_id": "lore-hack:druidas-eldroth",
+    "regiao_atlas_id": "regiao:eldroth",
+    "pergunta_curadoria_id": "pergunta:eldroth-deslocados",
+    "parecer": "resposta_parcial_para_grupo",
+    "justificativa": "O manuscrito menciona druidas refugiados em Portomonte, Thargrid e arquipélagos, sem rotas, datas e quantidades.",
+    "pagina": 17,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:foz-agua",
+    "entrada_lore_id": "lore-hack:boca-do-abismo",
+    "regiao_atlas_id": "regiao:foz-rio-ancestral",
+    "pergunta_curadoria_id": "pergunta:foz-agua",
+    "parecer": "insuficiente_para_resolver",
+    "justificativa": "O manuscrito fala em aliança e defesa da fortaleza, não esclarece águas potáveis, produção ou rações.",
+    "pagina": 6,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:foz-reabastecimento",
+    "entrada_lore_id": "lore-hack:rio-ancestral",
+    "regiao_atlas_id": "regiao:foz-rio-ancestral",
+    "pergunta_curadoria_id": "pergunta:foz-reabastecimento",
+    "parecer": "insuficiente_para_resolver",
+    "justificativa": "Rio Ancestral é rota continental ampla, mas isso não prova rota de provisões até Boca do Abismo.",
+    "pagina": 4,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:foz-topologia-gualapolis",
+    "entrada_lore_id": "lore-hack:gualapolis",
+    "regiao_atlas_id": "regiao:foz-rio-ancestral",
+    "pergunta_curadoria_id": null,
+    "parecer": "precisa_revisao",
+    "justificativa": "Ambiguidade Gualápolis/Boca do Abismo/Shadar-Riverie exige cotejar cartografia autoral.",
+    "pagina": 6,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  },
+  {
+    "id": "ponte-lore:foz-yokai-arquivo",
+    "entrada_lore_id": "lore-hack:arquivo-mortos-afogados",
+    "regiao_atlas_id": "regiao:foz-rio-ancestral",
+    "pergunta_curadoria_id": null,
+    "parecer": "amplia",
+    "justificativa": "Arquivo dos Mortos Afogados é reconhecido como vestígio da civilização Yokai antiga no Rio Ancestral.",
+    "pagina": 16,
+    "aplicar_automaticamente": false,
+    "status": "pendente_revisao_autoral"
+  }
+]

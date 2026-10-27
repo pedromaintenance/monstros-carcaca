@@ -1,0 +1,116 @@
+{
+  "by_regiao": {
+    "regiao:caatinga": [
+      "ponte-lore:caatinga-clas-orcs",
+      "ponte-lore:caatinga-pesquisa-abastecimento",
+      "ponte-lore:caatinga-pesquisa-abrigo"
+    ],
+    "regiao:costa-sul": [
+      "ponte-lore:costa-sul-abissais",
+      "ponte-lore:costa-sul-agua-demeter",
+      "ponte-lore:costa-sul-aquaticos",
+      "ponte-lore:costa-sul-destino-druidas",
+      "ponte-lore:costa-sul-kuotoa"
+    ],
+    "regiao:eldroth": [
+      "ponte-lore:eldroth-abrigos",
+      "ponte-lore:eldroth-destinos"
+    ],
+    "regiao:foz-rio-ancestral": [
+      "ponte-lore:foz-agua",
+      "ponte-lore:foz-reabastecimento",
+      "ponte-lore:foz-topologia-gualapolis",
+      "ponte-lore:foz-yokai-arquivo"
+    ]
+  },
+  "by_pergunta": {
+    "pergunta:caatinga-abastecimento": [
+      "ponte-lore:caatinga-pesquisa-abastecimento"
+    ],
+    "pergunta:caatinga-habitacao": [
+      "ponte-lore:caatinga-pesquisa-abrigo"
+    ],
+    "pergunta:costa-sul-agua": [
+      "ponte-lore:costa-sul-agua-demeter"
+    ],
+    "pergunta:costa-sul-migracao": [
+      "ponte-lore:costa-sul-destino-druidas"
+    ],
+    "pergunta:eldroth-abrigos": [
+      "ponte-lore:eldroth-abrigos"
+    ],
+    "pergunta:eldroth-deslocados": [
+      "ponte-lore:eldroth-destinos"
+    ],
+    "pergunta:foz-agua": [
+      "ponte-lore:foz-agua"
+    ],
+    "pergunta:foz-reabastecimento": [
+      "ponte-lore:foz-reabastecimento"
+    ]
+  },
+  "by_entrada": {
+    "lore-hack:abissais-marinhos": [
+      "ponte-lore:costa-sul-abissais"
+    ],
+    "lore-hack:arquivo-mortos-afogados": [
+      "ponte-lore:foz-yokai-arquivo"
+    ],
+    "lore-hack:boca-do-abismo": [
+      "ponte-lore:foz-agua"
+    ],
+    "lore-hack:druidas-eldroth": [
+      "ponte-lore:costa-sul-destino-druidas",
+      "ponte-lore:eldroth-abrigos",
+      "ponte-lore:eldroth-destinos"
+    ],
+    "lore-hack:gualapolis": [
+      "ponte-lore:foz-topologia-gualapolis"
+    ],
+    "lore-hack:kuo-toa": [
+      "ponte-lore:costa-sul-kuotoa"
+    ],
+    "lore-hack:orcs-caatinga": [
+      "ponte-lore:caatinga-clas-orcs",
+      "ponte-lore:caatinga-pesquisa-abastecimento",
+      "ponte-lore:caatinga-pesquisa-abrigo"
+    ],
+    "lore-hack:rio-ancestral": [
+      "ponte-lore:foz-reabastecimento"
+    ],
+    "lore-hack:templo-demeter": [
+      "ponte-lore:costa-sul-agua-demeter"
+    ],
+    "lore-hack:tritoes": [
+      "ponte-lore:costa-sul-aquaticos"
+    ]
+  },
+  "by_parecer": {
+    "amplia": [
+      "ponte-lore:caatinga-clas-orcs",
+      "ponte-lore:costa-sul-abissais",
+      "ponte-lore:costa-sul-agua-demeter",
+      "ponte-lore:costa-sul-kuotoa",
+      "ponte-lore:foz-yokai-arquivo"
+    ],
+    "amplia_mas_nao_individualiza": [
+      "ponte-lore:eldroth-abrigos"
+    ],
+    "fronteira_nova": [
+      "ponte-lore:costa-sul-aquaticos"
+    ],
+    "insuficiente_para_resolver": [
+      "ponte-lore:caatinga-pesquisa-abastecimento",
+      "ponte-lore:caatinga-pesquisa-abrigo",
+      "ponte-lore:foz-agua",
+      "ponte-lore:foz-reabastecimento"
+    ],
+    "precisa_revisao": [
+      "ponte-lore:foz-topologia-gualapolis"
+    ],
+    "resposta_parcial_para_grupo": [
+      "ponte-lore:costa-sul-destino-druidas",
+      "ponte-lore:eldroth-destinos"
+    ]
+  }
+}
