@@ -127,6 +127,29 @@ class RegionalDossiers(unittest.TestCase):
         self.assertEqual(len(self.artifacts["creatures.json"]),7)
         self.assertEqual(len(self.artifacts["settlements.json"]),3)
 
+    def test_fourth_audit_full_movements_and_docx_tables(self):
+        art=self.artifacts
+        self.assertEqual(art["manifest.json"]["total_movimentos_integrais_piloto"],12)
+        self.assertEqual(art["manifest.json"]["total_opcoes_movimentos_piloto"],4)
+        self.assertEqual(art["manifest.json"]["total_tabelas_docx_inventariadas"],33)
+        self.assertEqual(art["manifest.json"]["total_quadros_movimentos_gerais"],21)
+        moves=art["hack-complete-pilot-movements.json"]
+        tables=art["hack-docx-tables.json"]
+        self.assertEqual(len(moves),12)
+        self.assertEqual({m["grupo"] for m in moves},{"HUMANOS","ORCS DA CAATINGA"})
+        self.assertTrue(all(m["texto_integral_conferido"] and not m["aplicacao_canonica"]
+                            for m in moves))
+        loot=[m for m in moves if m["titulo"]=="SAQUEADOR DA CAATINGA"][0]
+        self.assertEqual([o["paragrafo_docx"] for o in loot["opcoes"]],[838,839,840,841])
+        self.assertEqual(len(tables),33)
+        self.assertEqual(sum(t["tipo"]=="quadro_movimento_geral" for t in tables),21)
+        self.assertIn("tabela-docx:14",art["hack-docx-table-indexes.json"]["by_tipo"]["quadro_movimento_geral"])
+        self.assertEqual(art["hack-complete-pilot-movement-indexes.json"]["by_grupo"]["HUMANOS"].__len__(),6)
+        preliminary=[m for m in moves if m["revisao_preliminar_id"]]
+        self.assertGreaterEqual(len(preliminary),2)
+        self.assertEqual(len(art["creatures.json"]),7)
+        self.assertEqual(len(art["settlements.json"]),3)
+
     def test_third_audit_relationships_and_movements(self):
         out=self.artifacts
         self.assertEqual(out["manifest.json"]["total_relacoes_lore_manuscrito"],26)

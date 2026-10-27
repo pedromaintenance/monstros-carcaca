@@ -37,7 +37,11 @@ const fixtures={
     lore_relations:"lore-relations.json",
     lore_relation_indexes:"lore-relation-indexes.json",
     hack_selected_movements:"hack-selected-movements.json",
-    hack_selected_movement_indexes:"hack-selected-movement-indexes.json"}},
+    hack_selected_movement_indexes:"hack-selected-movement-indexes.json",
+    hack_complete_pilot_movements:"hack-complete-pilot-movements.json",
+    hack_complete_pilot_movement_indexes:"hack-complete-pilot-movement-indexes.json",
+    hack_docx_tables:"hack-docx-tables.json",
+    hack_docx_table_indexes:"hack-docx-table-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -59,6 +63,33 @@ const fixtures={
      estado:"afirmado_no_manuscrito",aplicacao_canonica:false}
   ],
   "lore-relation-indexes.json":{by_tipo:{culto:["relacao-hack:kuotoa-daegon"]}},
+  "hack-complete-pilot-movements.json":[
+    {id:"movimento-integral:paragrafo-829",titulo:"PORTOMONTENSE",grupo:"HUMANOS",
+     categoria:"povo",marcador_original:"Cultura",paragrafo_docx:829,
+     texto_original:"Quando dispuser de algumas horas, consegue produzir água potável para um pequeno grupo",
+     opcoes:[],revisao_preliminar_id:"movimento-revisado:paragrafo-829",
+     texto_integral_conferido:true,aplicacao_canonica:false},
+    {id:"movimento-integral:paragrafo-837",titulo:"SAQUEADOR DA CAATINGA",grupo:"ORCS DA CAATINGA",
+     categoria:"povo",marcador_original:"Cultura",paragrafo_docx:837,
+     texto_original:"role+DES. 10+: escolha 2. 7–9: escolha 1.",
+     opcoes:[{paragrafo_docx:838,texto:"Você encontra algo útil."},
+             {paragrafo_docx:839,texto:"Você identifica a saída."},
+             {paragrafo_docx:840,texto:"Não é percebido."},
+             {paragrafo_docx:841,texto:"Não abandona nada."}],
+     revisao_preliminar_id:null,texto_integral_conferido:true,aplicacao_canonica:false}
+  ],
+  "hack-complete-pilot-movement-indexes.json":{by_grupo:{
+     "HUMANOS":["movimento-integral:paragrafo-829"],
+     "ORCS DA CAATINGA":["movimento-integral:paragrafo-837"]}},
+  "hack-docx-tables.json":[
+    {id:"tabela-docx:10",titulo:"Valor / Modificador",tabela_docx_indice:10,
+     tipo:"tabela_numerica",texto_integral_curado:false,aplicacao_canonica:false},
+    {id:"tabela-docx:14",titulo:"DESAFIAR O PERIGO",tabela_docx_indice:14,
+     tipo:"quadro_movimento_geral",texto_integral_curado:false,aplicacao_canonica:false},
+    {id:"tabela-docx:32",titulo:"SERVOS",tabela_docx_indice:32,
+     tipo:"quadro_movimento_geral",texto_integral_curado:false,aplicacao_canonica:false}
+  ],
+  "hack-docx-table-indexes.json":{by_tipo:{"quadro_movimento_geral":["tabela-docx:14","tabela-docx:32"]}},
   "hack-selected-movements.json":[
     {id:"movimento-revisado:paragrafo-829",categoria:"povo",grupo:"HUMANOS",
      titulo:"PORTOMONTENSE",requisito_literal:null,paragrafo_docx:829,
@@ -944,4 +975,25 @@ test("movimentos com REQUER literal não são aplicados ao jogo",async()=>{
  assert.equal(dependent.efeito_revisado,false);
  assert.equal(dependent.aplicacao_canonica,false);
  assert.equal((await atlas.getSelectedMovementIndexes()).by_grupo["CAÇADOR"].length,1);
+});
+
+test("quarta auditoria permite buscar os movimentos de povo completos e suas opções",async()=>{
+  const all=await atlas.getCompletePilotMovements();
+  assert.equal(all.length,2);
+  assert.equal((await atlas.searchCompletePilotMovements({grupo:"HUMANOS"})).length,1);
+  assert.equal((await atlas.searchCompletePilotMovements({titulo:"saqueador",comOpcoes:true})).length,1);
+  assert.equal((await atlas.searchCompletePilotMovements({marcador:"Cultura"})).length,2);
+  const saqueador=(await atlas.searchCompletePilotMovements({comOpcoes:true}))[0];
+  assert.equal(saqueador.opcoes.length,4);
+  assert.deepEqual(saqueador.opcoes.map(o=>o.paragrafo_docx),[838,839,840,841]);
+  assert.equal(saqueador.aplicacao_canonica,false);
+  assert.equal((await atlas.getCompletePilotMovementIndexes()).by_grupo.HUMANOS.length,1);
+});
+test("inventário DOCX registra quadros básicos separadamente de tabelas numéricas",async()=>{
+  const all=await atlas.getDocxTables();
+  assert.equal(all.length,3);
+  assert.equal((await atlas.searchDocxTables({tipo:"quadro_movimento_geral"})).length,2);
+  assert.equal((await atlas.searchDocxTables({titulo:"desafiar o perigo"}))[0].tabela_docx_indice,14);
+  assert.equal((await atlas.getDocxTableIndexes()).by_tipo.quadro_movimento_geral.length,2);
+  assert.ok(all.every(x=>x.aplicacao_canonica===false));
 });
