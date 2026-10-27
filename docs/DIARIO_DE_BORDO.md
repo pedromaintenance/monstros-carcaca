@@ -196,3 +196,10 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 **Testes e limites:** sem dados => indeterminado; recusa valores sem origem, unidade distinta, períodos diferentes, demanda zero e população negativa. Exemplo de 200 habitantes é fictício e só existe nos testes/documentação, não no atlas.
 
 **Próximo:** estudar material construtivo, saneamento, armazenamento e ecologia regional sem retroconverter simuladores em lore canônica.
+
+### Conferência após publicação — ciclo 9
+
+- Resultado observado: https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40439032942, status final **success**. As quatro etapas essenciais — validação, testes de leitura, geração determinística e publicação — passaram.
+- Conferidos diretamente: `dist/carcaca/manifest.json` (`total_perfis_suporte=3`); `support-profiles.json` (Portomonte, conjunto insular, cavernas kuo-toa, todos com quatro dimensões e valores `null`); `support-indexes.json` (assentamento/natureza/mobilidade).
+- Confirmação editorial: a sazonalidade insular aparece como `deslocamentos_sazonais_documentados`, mas `residentes`, taxas migratórias, nascimentos e óbitos permanecem sem números. Nenhuma potabilidade foi atribuída à água purificada para a lavoura.
+- Todas as estimativas numéricas aparecem somente no simulador/testes, não em curadoria, snapshot canônico ou estado persistido de jogo. A documentação técnica fica em `docs/CAPACIDADE_DE_SUPORTE.md`.

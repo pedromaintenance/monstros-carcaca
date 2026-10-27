@@ -220,3 +220,11 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [ ] Revisão editorial com o autor: fontes de água potável, dietas, armazenamento, saneamento e sustentação de povoações singulares.
 - [ ] Transformar grupos regionais em *steadings* concretas apenas quando a fonte permitir individualizar comunidade, população e defesas.
 - [ ] Integrar observações reais de cada campanha somente em saves, não ao catálogo canônico.
+
+### Validação verificada — ciclo 9
+
+- [x] GitHub Actions [#40439032942](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40439032942) concluído com **success** em JSON Schema, referências cruzadas, testes Node, geração e publicação.
+- [x] `dist/carcaca/manifest.json`: 7 criaturas, 3 assentamentos, **3 perfis de suporte** publicados.
+- [x] `support-profiles.json`: 12 limites distribuídos entre três registros; as medições canônicas permanecem `null`; deslocamentos sazonais documentados **apenas** no conjunto insular.
+- [x] `support-indexes.json`: índices válidos por assentamento, natureza e mobilidade; cada assentamento da Costa Sul aponta para exatamente um perfil.
+- [x] Resultados fictícios de testes **não foram incorporados** aos dados canônicos, rótulos DW ou saves.
