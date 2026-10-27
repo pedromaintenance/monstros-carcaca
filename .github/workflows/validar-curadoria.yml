@@ -3,6 +3,7 @@ on:
   push:
     paths:
       - 'curadoria/**'
+      - 'cenarios/**'
       - 'data/taxonomia_carcaca.json'
       - 'data/regioes_carcaca.json'
       - 'data/faccoes_carcaca.json'
@@ -20,6 +21,7 @@ on:
   pull_request:
     paths:
       - 'curadoria/**'
+      - 'cenarios/**'
       - 'data/taxonomia_carcaca.json'
       - 'data/regioes_carcaca.json'
       - 'data/faccoes_carcaca.json'

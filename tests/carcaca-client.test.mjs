@@ -1,13 +1,13 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {createCarcacaAtlas} from "../src/carcaca-client.mjs";
+import {createCarcacaAtlas, previewSettlementScenario} from "../src/carcaca-client.mjs";
 
 const fixtures={
   "manifest.json":{arquivos:{catalog:"catalog.json",creatures:"creatures.json",
     indexes:"indexes.json",regions:"regions.json",fronts:"fronts.json",
     settlements:"settlements.json",settlement_labels:"settlement-labels.json",
     settlement_indexes:"settlement-indexes.json",peoples:"peoples.json",
-    flows:"flows.json"}},
+    flows:"flows.json",settlement_scenarios:"settlement-scenarios.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -35,7 +35,14 @@ const fixtures={
   "settlement-labels.json":[{id:"rotulo:lavoura_sobre_pedra"}],
   "settlement-indexes.json":{by_rotulo_carcaca:{"rotulo:lavoura_sobre_pedra":["assentamento:portomonte"]}},
   "peoples.json":[{id:"povo:humanos-costa-sul"}],
-  "flows.json":[{id:"fluxo:agua-portomonte",destino_assentamento_id:"assentamento:portomonte"}]
+  "flows.json":[{id:"fluxo:agua-portomonte",destino_assentamento_id:"assentamento:portomonte"}],
+  "settlement-scenarios.json":[
+    {id:"cenario:teste",estado:"hipotese_nao_acontecida",mutacao_canonica:false,
+     movimento_dw:"Want",assentamentos:["assentamento:portomonte"],
+     condicoes_nao_confirmadas:["A água deixa de ser suficiente","Não há suprimento alternativo"],
+     resultados_possiveis:["Considerar consequência somente após fato confirmado"],
+     pergunta_ao_mestre:"Que alternativa existe?"}
+  ]
 };
 let requests=0;
 const atlas=createCarcacaAtlas({baseUrl:"https://localhost/snapshot",fetchImpl:async url=>{
@@ -85,4 +92,26 @@ test("camada material conserva continuidade desconhecida",async()=>{
   assert.equal((await atlas.getSettlementIndexes()).by_rotulo_carcaca["rotulo:lavoura_sobre_pedra"].length,1);
   assert.equal((await atlas.getPeoples()).length,1);
   assert.equal((await atlas.getFlows())[0].id,"fluxo:agua-portomonte");
+});
+
+test("pesquisar cenários por movimento DW e assentamento",async()=>{
+  const scenarios=await atlas.searchSettlementScenarios({
+    assentamentoId:"assentamento:portomonte",movimentoDw:"Want"});
+  assert.equal(scenarios.length,1);
+  assert.equal((await atlas.getSettlementScenario("cenario:teste")).estado,"hipotese_nao_acontecida");
+  assert.equal(await atlas.getSettlementScenario("cenario:inexistente"),null);
+});
+test("prévia preserva o estado, exige confirmação e jamais executa efeitos",async()=>{
+  const scenario=await atlas.getSettlementScenario("cenario:teste");
+  const before=JSON.stringify(scenario);
+  const pending=previewSettlementScenario(scenario);
+  assert.equal(pending.pronto_para_adjudicacao,false);
+  assert.equal(pending.condicoes_pendentes.length,2);
+  const after=previewSettlementScenario(scenario,{
+    condicoesConfirmadas:[...scenario.condicoes_nao_confirmadas]
+  });
+  assert.equal(after.pronto_para_adjudicacao,true);
+  assert.equal(after.estado,"simulacao_sem_mutacao");
+  assert.equal(JSON.stringify(scenario),before);
+  assert.throws(()=>previewSettlementScenario({...scenario,mutacao_canonica:true}),TypeError);
 });

@@ -77,6 +77,28 @@ def validate_ecossistema(fontes, rids, lids, lugares):
         for key in ("origem_assentamento_id","destino_assentamento_id"):
             if flow.get(key):
                 require(flow[key] in aids,"Assentamento inexistente no fluxo: "+flow["id"])
+    scenario_schema=load("schemas/cenario-assentamento.schema.json")
+    Draft202012Validator.check_schema(scenario_schema)
+    check_scenario=Draft202012Validator(scenario_schema)
+    scenario_rows=[]
+    for filepath in sorted((ROOT/"cenarios/assentamentos").glob("*.json")):
+        package=load(filepath.relative_to(ROOT))
+        require(package["estado"]=="material_para_mestre_nao_executado",
+                "Pacote de cenários precisa ser hipotético: "+str(filepath))
+        require(package["schema_version"]=="0.1.0",
+                "Versão de cenário desconhecida: "+str(filepath))
+        scenario_rows.extend(package["cenarios"])
+    unique(scenario_rows,"cenários hipotéticos")
+    for scenario in scenario_rows:
+        errors=list(check_scenario.iter_errors(scenario))
+        require(not errors, f"Schema de cenário inválido {scenario['id']}: {errors[:1]}")
+        require(set(scenario["assentamentos"])<=aids,
+                "Cenário referencia assentamento inexistente: "+scenario["id"])
+        require(scenario["fonte_regras"] in fontes and scenario["fonte_cenario"] in fontes,
+                "Cenário com fontes inexistentes: "+scenario["id"])
+        require(scenario["mutacao_canonica"] is False,
+                "Cenário jamais pode mutar o cânone: "+scenario["id"])
+    print(f"Cenários hipotéticos validados: {len(scenario_rows)} sem mutação canônica.")
     print(f"Ecossistema válido: {len(assentamentos)} registros, "
           f"{len(tags)} rótulos, {len(povos)} povos, {len(fluxos)} fluxos.")
 

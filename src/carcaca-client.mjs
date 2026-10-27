@@ -32,6 +32,17 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getSettlementIndexes(){return byKey("settlement_indexes");}
   async function getPeoples(){return byKey("peoples");}
   async function getFlows(){return byKey("flows");}
+  async function getSettlementScenarios(){return byKey("settlement_scenarios");}
+  async function getSettlementScenario(id){
+    if(typeof id!=="string"||!id.startsWith("cenario:"))return null;
+    return (await getSettlementScenarios()).find(item=>item.id===id)??null;
+  }
+  async function searchSettlementScenarios({assentamentoId,movimentoDw}={}){
+    return (await getSettlementScenarios()).filter(item=>
+      (!assentamentoId||item.assentamentos.includes(assentamentoId))&&
+      (!movimentoDw||item.movimento_dw===movimentoDw)
+    );
+  }
   async function getSettlement(id){
     if(typeof id!=="string"||!id.startsWith("assentamento:"))return null;
     return (await getSettlements()).find(item=>item.id===id)??null;
@@ -72,5 +83,32 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   }
   return {getManifest,getCatalog,getIndexes,getRegions,getPlaces,getFactions,
           getFronts,getSettlements,getSettlementLabels,getSettlementIndexes,
-          getPeoples,getFlows,getSettlement,searchSettlements,getTypes,get,search};
+          getPeoples,getFlows,getSettlement,searchSettlements,
+          getSettlementScenarios,getSettlementScenario,searchSettlementScenarios,
+          getTypes,get,search};
+}
+
+/**
+ * Prévia deliberadamente SEM EFEITOS de um cenário DW.
+ * O mestre confirma manualmente pré-condições; o método não aplica rótulos
+ * nem escreve dados do atlas ou estado de campanha.
+ */
+export function previewSettlementScenario(cenario,{condicoesConfirmadas=[]}={}){
+  if(!cenario||cenario.estado!=="hipotese_nao_acontecida"||cenario.mutacao_canonica!==false){
+    throw new TypeError("Somente cenários hipotéticos, sem mutação canônica");
+  }
+  if(!Array.isArray(condicoesConfirmadas)){
+    throw new TypeError("condicoesConfirmadas deve ser array de descrições");
+  }
+  const confirmadas=new Set(condicoesConfirmadas);
+  const pendentes=cenario.condicoes_nao_confirmadas.filter(item=>!confirmadas.has(item));
+  return {
+    id:cenario.id, movimento_dw:cenario.movimento_dw,
+    estado:"simulacao_sem_mutacao",
+    pronto_para_adjudicacao:pendentes.length===0,
+    condicoes_pendentes:pendentes,
+    resultados_possiveis:[...cenario.resultados_possiveis],
+    pergunta_ao_mestre:cenario.pergunta_ao_mestre,
+    observacao:"Não altera tags DW, dados canônicos ou saves; decisões e efeitos ficam a cargo do mestre."
+  };
 }

@@ -1,0 +1,85 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/cenario-assentamento.schema.json",
+  "title": "Cenário hipotético de assentamento DW, sem efeitos em fontes canônicas",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "nome",
+    "estado",
+    "movimento_dw",
+    "assentamentos",
+    "gatilho_hipotetico",
+    "condicoes_nao_confirmadas",
+    "resultados_possiveis",
+    "pergunta_ao_mestre",
+    "fonte_regras",
+    "fonte_cenario",
+    "mutacao_canonica"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^cenario:[a-z0-9-]+$"
+    },
+    "nome": {
+      "type": "string",
+      "minLength": 5
+    },
+    "estado": {
+      "const": "hipotese_nao_acontecida"
+    },
+    "movimento_dw": {
+      "enum": [
+        "Want",
+        "Trade",
+        "Capture",
+        "Aid"
+      ]
+    },
+    "assentamentos": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^assentamento:"
+      }
+    },
+    "gatilho_hipotetico": {
+      "type": "string",
+      "minLength": 10
+    },
+    "condicoes_nao_confirmadas": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 5
+      }
+    },
+    "resultados_possiveis": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string",
+        "minLength": 10
+      }
+    },
+    "pergunta_ao_mestre": {
+      "type": "string",
+      "minLength": 5
+    },
+    "fonte_regras": {
+      "const": "dungeon_world_srd"
+    },
+    "fonte_cenario": {
+      "type": "string",
+      "minLength": 1
+    },
+    "mutacao_canonica": {
+      "const": false
+    }
+  }
+}

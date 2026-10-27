@@ -45,6 +45,11 @@ def build():
     settlement_labels = sorted(load("data/rotulos_assentamentos_carcaca.json")["rotulos"],key=lambda r:r["id"])
     peoples = sorted(load("data/povos_carcaca.json")["povos"],key=lambda r:r["id"])
     flows = sorted(load("data/fluxos_costa_sul.json")["fluxos"],key=lambda r:r["id"])
+    scenarios = []
+    for path in sorted((ROOT / "cenarios/assentamentos").glob("*.json")):
+        pack=load(path.relative_to(ROOT))
+        scenarios.extend(pack["cenarios"])
+    scenarios=sorted(scenarios,key=lambda r:r["id"])
     settlement_indexes = {k:defaultdict(set) for k in
                           ("by_regiao","by_lugar","by_natureza","by_rotulo_carcaca","by_povo")}
     for st in settlements:
@@ -95,7 +100,8 @@ def build():
         "types":"types.json", "fronts":"fronts.json", "settlements":"settlements.json",
         "settlement_labels":"settlement-labels.json",
         "settlement_indexes":"settlement-indexes.json",
-        "peoples":"peoples.json", "flows":"flows.json"
+        "peoples":"peoples.json", "flows":"flows.json",
+        "settlement_scenarios":"settlement-scenarios.json"
     }
     manifest = {
         "schema_version":"0.1.0", "descricao":"Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
@@ -103,7 +109,7 @@ def build():
         "total_lugares":len(places), "total_faccoes":len(factions),
         "total_frentes":len(fronts), "total_assentamentos":len(settlements),
         "total_rotulos_assentamentos":len(settlement_labels), "total_povos":len(peoples),
-        "total_fluxos":len(flows),
+        "total_fluxos":len(flows), "total_cenarios_assentamentos":len(scenarios),
         "arquivos":files, "estado":"curadoria_em_andamento",
         "nota":"Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."
     }
@@ -114,7 +120,8 @@ def build():
         files["settlements"]:settlements,
         files["settlement_labels"]:settlement_labels,
         files["settlement_indexes"]:settlement_indexes,
-        files["peoples"]:peoples,files["flows"]:flows
+        files["peoples"]:peoples,files["flows"]:flows,
+        files["settlement_scenarios"]:scenarios
     }
 
 def main():
