@@ -7,6 +7,13 @@
     "consequencia_narrativa_proposta": "Se o ritual cessar, examinar quais atividades dependiam dele."
   },
   {
+    "id": "rotulo:defesa_insular_disciplinada",
+    "nome": "Defesa Insular Disciplinada",
+    "categoria": "defesa_cultural",
+    "descricao": "Os habitantes das ilhas se defendem com honra e disciplina, conforme o retrato regional.",
+    "consequencia_narrativa_proposta": "Em caso de ameaça, a comunidade pode mobilizar defesa organizada; isso não define tamanho de tropas nem rótulo DW de Defesas."
+  },
+  {
     "id": "rotulo:devocao_daegon",
     "nome": "Devoção a Daegon",
     "categoria": "sagrado",
@@ -82,5 +89,12 @@
     "categoria": "sagrado",
     "descricao": "Instituição religiosa que altera materialmente um recurso perigoso.",
     "consequencia_narrativa_proposta": "Alteração do templo pode produzir uma necessidade material."
+  },
+  {
+    "id": "rotulo:tradicoes_monasticas_insulares",
+    "nome": "Tradições Monásticas Insulares",
+    "categoria": "cultura",
+    "descricao": "Comunidades das ilhas da Costa Sul guardam tradições monásticas próprias, sem exigir uma ordem única entre ilhas.",
+    "consequencia_narrativa_proposta": "Uma disputa pode ser mediada por códigos e práticas particulares de cada comunidade, ainda não especificados na lore."
   }
 ]

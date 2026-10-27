@@ -16,5 +16,23 @@
     "fonte": "ambientacao",
     "status": "documentado",
     "observacao": "Fonte menciona culto a Daegon e ataques; não significa que todos os indivíduos do povo tenham conduta uniforme."
+  },
+  {
+    "id": "povo:tabaxis-ilhas-costa-sul",
+    "nome": "Tabaxis das ilhas da Costa Sul",
+    "escopo": "grupo_regional",
+    "tipo_referencia": "tabaxi",
+    "fonte": "ambientacao",
+    "status": "documentado",
+    "observacao": "Presença e hábitos relatados regionalmente; tradições individuais, comunidades específicas e coabitação com tortles não são estabelecidas."
+  },
+  {
+    "id": "povo:tortles-ilhas-costa-sul",
+    "nome": "Tortles das ilhas da Costa Sul",
+    "escopo": "grupo_regional",
+    "tipo_referencia": "tortle",
+    "fonte": "ambientacao",
+    "status": "documentado",
+    "observacao": "A presença regional, as viagens sazonais, as tradições monásticas insulares e a atividade marítima são documentadas coletivamente. Não presumir que ocupem toda ilha."
   }
 ]

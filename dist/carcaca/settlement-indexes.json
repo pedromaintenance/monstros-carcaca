@@ -1,6 +1,7 @@
 {
   "by_regiao": {
     "regiao:costa-sul": [
+      "assentamento:comunidades-insulares-costa-sul",
       "assentamento:portomonte",
       "assentamento:rede-cavernas-kuo-toa-costa-sul"
     ]
@@ -8,6 +9,9 @@
   "by_lugar": {
     "lugar:cavernas-kuo-toa": [
       "assentamento:rede-cavernas-kuo-toa-costa-sul"
+    ],
+    "lugar:ilhas-costa-sul": [
+      "assentamento:comunidades-insulares-costa-sul"
     ],
     "lugar:portomonte": [
       "assentamento:portomonte"
@@ -17,6 +21,9 @@
     "assentamento_civil": [
       "assentamento:portomonte"
     ],
+    "conjunto_de_comunidades": [
+      "assentamento:comunidades-insulares-costa-sul"
+    ],
     "rede_de_abrigos": [
       "assentamento:rede-cavernas-kuo-toa-costa-sul"
     ]
@@ -24,6 +31,9 @@
   "by_rotulo_carcaca": {
     "rotulo:agua_sangrenta_purificada": [
       "assentamento:portomonte"
+    ],
+    "rotulo:defesa_insular_disciplinada": [
+      "assentamento:comunidades-insulares-costa-sul"
     ],
     "rotulo:devocao_daegon": [
       "assentamento:rede-cavernas-kuo-toa-costa-sul"
@@ -40,8 +50,14 @@
     "rotulo:lavoura_sobre_pedra": [
       "assentamento:portomonte"
     ],
+    "rotulo:rotas_sazonais": [
+      "assentamento:comunidades-insulares-costa-sul"
+    ],
     "rotulo:templo_purificador": [
       "assentamento:portomonte"
+    ],
+    "rotulo:tradicoes_monasticas_insulares": [
+      "assentamento:comunidades-insulares-costa-sul"
     ]
   },
   "by_povo": {
@@ -50,6 +66,12 @@
     ],
     "povo:kuo-toa-costa-sul": [
       "assentamento:rede-cavernas-kuo-toa-costa-sul"
+    ],
+    "povo:tabaxis-ilhas-costa-sul": [
+      "assentamento:comunidades-insulares-costa-sul"
+    ],
+    "povo:tortles-ilhas-costa-sul": [
+      "assentamento:comunidades-insulares-costa-sul"
     ]
   }
 }

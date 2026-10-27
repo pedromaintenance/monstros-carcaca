@@ -5,7 +5,8 @@
     "localizacao": "Além Sul, litoral e ilhas do Mar de Sangue",
     "lugares": [
       "lugar:portomonte",
-      "lugar:cavernas-kuo-toa"
+      "lugar:cavernas-kuo-toa",
+      "lugar:ilhas-costa-sul"
     ],
     "conflitos": [
       "Ataques sacrificiais de Kuo-Toa devotos de Daegon",
