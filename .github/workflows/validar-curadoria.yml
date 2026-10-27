@@ -27,6 +27,7 @@ on:
       - 'schemas/**'
       - 'scripts/validar_curadoria.py'
       - 'scripts/gerar_indices_curadoria.py'
+      - 'scripts/hack_movimentos_gerais.py'
       - 'src/**'
       - 'tests/**'
       - '.github/workflows/validar-curadoria.yml'
@@ -57,6 +58,7 @@ on:
       - 'schemas/**'
       - 'scripts/validar_curadoria.py'
       - 'scripts/gerar_indices_curadoria.py'
+      - 'scripts/hack_movimentos_gerais.py'
       - 'src/**'
       - 'tests/**'
   workflow_dispatch:
