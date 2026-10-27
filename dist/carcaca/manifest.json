@@ -10,6 +10,7 @@
   "total_rotulos_assentamentos": 14,
   "total_povos": 4,
   "total_fluxos": 4,
+  "total_cenarios_assentamentos": 4,
   "arquivos": {
     "creatures": "creatures.json",
     "catalog": "catalog.json",
@@ -23,7 +24,8 @@
     "settlement_labels": "settlement-labels.json",
     "settlement_indexes": "settlement-indexes.json",
     "peoples": "peoples.json",
-    "flows": "flows.json"
+    "flows": "flows.json",
+    "settlement_scenarios": "settlement-scenarios.json"
   },
   "estado": "curadoria_em_andamento",
   "nota": "Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."

@@ -1,0 +1,90 @@
+[
+  {
+    "id": "cenario:ajuda-insular-condicional",
+    "nome": "Socorro entre comunidades da Costa Sul",
+    "estado": "hipotese_nao_acontecida",
+    "movimento_dw": "Aid",
+    "assentamentos": [
+      "assentamento:portomonte",
+      "assentamento:comunidades-insulares-costa-sul"
+    ],
+    "gatilho_hipotetico": "Duas comunidades individualizadas no futuro possuem juramento de auxílio comprovado em mesa e uma delas é atacada.",
+    "condicoes_nao_confirmadas": [
+      "Nenhum juramento entre Portomonte e ilhas consta da lore",
+      "O conjunto insular ainda não é uma steading DW individual",
+      "Defesas DW não foram atribuídas",
+      "Nenhum ataque individual foi definido"
+    ],
+    "resultados_possiveis": [
+      "Quando houver duas steadings DW definidas com Oath e ataque confirmado, a doadora pode sofrer -Defesas para dar +Defesas à atacada."
+    ],
+    "pergunta_ao_mestre": "Que juramento foi firmado em jogo, entre quais comunidades específicas e por qual motivo?",
+    "fonte_regras": "dungeon_world_srd",
+    "fonte_cenario": "ambientacao",
+    "mutacao_canonica": false
+  },
+  {
+    "id": "cenario:portomonte-agua-interrompida",
+    "nome": "Quando falha a purificação de Portomonte",
+    "estado": "hipotese_nao_acontecida",
+    "movimento_dw": "Want",
+    "assentamentos": [
+      "assentamento:portomonte"
+    ],
+    "gatilho_hipotetico": "A água purificada se torna insuficiente para sustentar a lavoura e essa necessidade não é atendida.",
+    "condicoes_nao_confirmadas": [
+      "Interrupção do rito da purificação",
+      "Surgimento de necessidade de água para lavoura não atendida"
+    ],
+    "resultados_possiveis": [
+      "Após condição Want confirmada em mesa, escolher -Prosperidade, -População ou perda de rótulo ligado ao recurso, conforme DW."
+    ],
+    "pergunta_ao_mestre": "Que fonte substituta seria possível sem pressupor que exista?",
+    "fonte_regras": "dungeon_world_srd",
+    "fonte_cenario": "ambientacao",
+    "mutacao_canonica": false
+  },
+  {
+    "id": "cenario:portomonte-comercio-bloqueado",
+    "nome": "Rota de comércio costeiro interrompida",
+    "estado": "hipotese_nao_acontecida",
+    "movimento_dw": "Trade",
+    "assentamentos": [
+      "assentamento:portomonte"
+    ],
+    "gatilho_hipotetico": "Uma rota comercial efetivamente utilizada por Portomonte fica bloqueada.",
+    "condicoes_nao_confirmadas": [
+      "Identidade da rota interrompida",
+      "Bens negociados na rota"
+    ],
+    "resultados_possiveis": [
+      "Pelas regras DW, escolher Necessidade do bem comercializado ou -Prosperidade; bem ainda desconhecido."
+    ],
+    "pergunta_ao_mestre": "Qual recurso Portomonte perde acesso quando a rota fecha?",
+    "fonte_regras": "dungeon_world_srd",
+    "fonte_cenario": "ambientacao",
+    "mutacao_canonica": false
+  },
+  {
+    "id": "cenario:portomonte-controle-da-agua",
+    "nome": "Controle ritual da água muda de mãos",
+    "estado": "hipotese_nao_acontecida",
+    "movimento_dw": "Capture",
+    "assentamentos": [
+      "assentamento:portomonte"
+    ],
+    "gatilho_hipotetico": "O controle de uma fonte de água purificada e de seu uso é transferido para outro agente, ainda não nomeado.",
+    "condicoes_nao_confirmadas": [
+      "Perda real de controle sobre recurso",
+      "Identidade do novo controlador",
+      "Relação entre controle ritual e posse de recurso como rótulo DW"
+    ],
+    "resultados_possiveis": [
+      "Somente se Resource DW existir e mudar de proprietário: remover do detentor anterior e atribuir ao novo; Need pode surgir ou desaparecer segundo as dependências verificadas."
+    ],
+    "pergunta_ao_mestre": "Quem controla o acesso ao rito e a quem as lavouras passam a dever o abastecimento?",
+    "fonte_regras": "dungeon_world_srd",
+    "fonte_cenario": "ambientacao",
+    "mutacao_canonica": false
+  }
+]
