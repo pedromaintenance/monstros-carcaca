@@ -1,0 +1,8 @@
+{
+  "schema_version": "0.1.0",
+  "id": "campanha:exemplo-em-branco",
+  "nome": "Exemplo em branco (nenhum acontecimento)",
+  "referencia_atlas": "carcaca",
+  "revisao": 0,
+  "eventos": []
+}

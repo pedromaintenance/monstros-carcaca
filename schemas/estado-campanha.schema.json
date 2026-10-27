@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/estado-campanha.schema.json",
+  "title": "Registro de eventos de campanha separado da curadoria canônica",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "id",
+    "nome",
+    "referencia_atlas",
+    "revisao",
+    "eventos"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^campanha:[a-z0-9-]+$"
+    },
+    "nome": {
+      "type": "string",
+      "minLength": 3
+    },
+    "referencia_atlas": {
+      "const": "carcaca"
+    },
+    "revisao": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "eventos": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/evento"
+      }
+    }
+  },
+  "$defs": {
+    "evento": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "tipo",
+        "assentamento_id",
+        "descricao",
+        "mestre_confirmou",
+        "fonte_cenario_id",
+        "efeitos_adjudicados"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "pattern": "^evento:[a-z0-9-]+$"
+        },
+        "tipo": {
+          "enum": [
+            "acontecimento",
+            "decisao_dw"
+          ]
+        },
+        "assentamento_id": {
+          "type": "string",
+          "pattern": "^assentamento:"
+        },
+        "descricao": {
+          "type": "string",
+          "minLength": 10
+        },
+        "mestre_confirmou": {
+          "const": true
+        },
+        "fonte_cenario_id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^cenario:"
+        },
+        "efeitos_adjudicados": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 5
+          }
+        }
+      }
+    }
+  }
+}

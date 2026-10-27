@@ -1,0 +1,90 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/dependencia-material.schema.json",
+  "title": "Dependência material da Carcaça, sem efeitos de campanha",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "assentamento_id",
+    "tipo",
+    "recurso_id",
+    "recurso_descricao",
+    "fluxo_id",
+    "depende_de_id",
+    "estado_evidencia",
+    "fonte",
+    "fato",
+    "consequencia_hipotetica",
+    "desconhecidos"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^dependencia:[a-z0-9-]+$"
+    },
+    "assentamento_id": {
+      "type": "string",
+      "pattern": "^assentamento:"
+    },
+    "tipo": {
+      "enum": [
+        "transformacao",
+        "producao_dependente",
+        "circulacao",
+        "mobilidade",
+        "conflito_ritual"
+      ]
+    },
+    "recurso_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^recurso:"
+    },
+    "recurso_descricao": {
+      "type": "string",
+      "minLength": 4
+    },
+    "fluxo_id": {
+      "type": "string",
+      "pattern": "^fluxo:"
+    },
+    "depende_de_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^dependencia:"
+    },
+    "estado_evidencia": {
+      "enum": [
+        "documentado",
+        "inferido",
+        "proposto",
+        "incerto"
+      ]
+    },
+    "fonte": {
+      "type": "string",
+      "minLength": 3
+    },
+    "fato": {
+      "type": "string",
+      "minLength": 15
+    },
+    "consequencia_hipotetica": {
+      "type": "string",
+      "minLength": 15
+    },
+    "desconhecidos": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 5
+      },
+      "minItems": 1
+    }
+  }
+}
