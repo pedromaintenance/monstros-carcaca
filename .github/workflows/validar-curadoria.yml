@@ -4,6 +4,8 @@ on:
     paths:
       - 'curadoria/**'
       - 'cenarios/**'
+      - 'exemplos/**'
+      - 'data/dependencias_materiais_costa_sul.json'
       - 'data/taxonomia_carcaca.json'
       - 'data/regioes_carcaca.json'
       - 'data/faccoes_carcaca.json'
@@ -15,13 +17,15 @@ on:
       - 'schemas/**'
       - 'scripts/validar_curadoria.py'
       - 'scripts/gerar_indices_curadoria.py'
-      - 'src/carcaca-client.mjs'
-      - 'tests/carcaca-client.test.mjs'
+      - 'src/**'
+      - 'tests/**'
       - '.github/workflows/validar-curadoria.yml'
   pull_request:
     paths:
       - 'curadoria/**'
       - 'cenarios/**'
+      - 'exemplos/**'
+      - 'data/dependencias_materiais_costa_sul.json'
       - 'data/taxonomia_carcaca.json'
       - 'data/regioes_carcaca.json'
       - 'data/faccoes_carcaca.json'
@@ -33,8 +37,8 @@ on:
       - 'schemas/**'
       - 'scripts/validar_curadoria.py'
       - 'scripts/gerar_indices_curadoria.py'
-      - 'src/carcaca-client.mjs'
-      - 'tests/carcaca-client.test.mjs'
+      - 'src/**'
+      - 'tests/**'
   workflow_dispatch:
 
 permissions:

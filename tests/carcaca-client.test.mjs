@@ -1,13 +1,16 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {createCarcacaAtlas, previewSettlementScenario} from "../src/carcaca-client.mjs";
+import {createCarcacaAtlas, previewSettlementScenario,previewMaterialInterruption} from "../src/carcaca-client.mjs";
+import {createCampaignLedger,recordCampaignEvent,getCampaignEvents} from "../src/carcaca-campaign-state.mjs";
 
 const fixtures={
   "manifest.json":{arquivos:{catalog:"catalog.json",creatures:"creatures.json",
     indexes:"indexes.json",regions:"regions.json",fronts:"fronts.json",
     settlements:"settlements.json",settlement_labels:"settlement-labels.json",
     settlement_indexes:"settlement-indexes.json",peoples:"peoples.json",
-    flows:"flows.json",settlement_scenarios:"settlement-scenarios.json"}},
+    flows:"flows.json",settlement_scenarios:"settlement-scenarios.json",
+    material_dependencies:"material-dependencies.json",
+    material_dependency_indexes:"material-dependency-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -36,6 +39,21 @@ const fixtures={
   "settlement-indexes.json":{by_rotulo_carcaca:{"rotulo:lavoura_sobre_pedra":["assentamento:portomonte"]}},
   "peoples.json":[{id:"povo:humanos-costa-sul"}],
   "flows.json":[{id:"fluxo:agua-portomonte",destino_assentamento_id:"assentamento:portomonte"}],
+  "material-dependencies.json":[
+    {id:"dependencia:purificar",assentamento_id:"assentamento:portomonte",
+     tipo:"transformacao",fluxo_id:"fluxo:agua-portomonte",depende_de_id:null,
+     fato:"A água é purificada",consequencia_hipotetica:"Suspensão do processo",
+     desconhecidos:["A escala de produção"]},
+    {id:"dependencia:lavoura",assentamento_id:"assentamento:portomonte",
+     tipo:"producao_dependente",fluxo_id:"fluxo:agua-portomonte",
+     depende_de_id:"dependencia:purificar",fato:"Lavoura depende da água",
+     consequencia_hipotetica:"Produção pode ser afetada",desconhecidos:["Safra"]},
+    {id:"dependencia:ilhas",assentamento_id:"assentamento:rede-cavernas",
+     tipo:"mobilidade",fluxo_id:"fluxo:nao-relacionado",depende_de_id:null,
+     fato:"Viagem sazonal",consequencia_hipotetica:"Circulação poderia mudar",
+     desconhecidos:["Rotas"]}
+  ],
+  "material-dependency-indexes.json":{by_assentamento:{"assentamento:portomonte":["dependencia:purificar","dependencia:lavoura"]}},
   "settlement-scenarios.json":[
     {id:"cenario:teste",estado:"hipotese_nao_acontecida",mutacao_canonica:false,
      movimento_dw:"Want",assentamentos:["assentamento:portomonte"],
@@ -114,4 +132,57 @@ test("prévia preserva o estado, exige confirmação e jamais executa efeitos",a
   assert.equal(after.estado,"simulacao_sem_mutacao");
   assert.equal(JSON.stringify(scenario),before);
   assert.throws(()=>previewSettlementScenario({...scenario,mutacao_canonica:true}),TypeError);
+});
+
+test("consulta dependências materiais por assentamento e tipo",async()=>{
+  const deps=await atlas.searchMaterialDependencies({
+    assentamentoId:"assentamento:portomonte",tipo:"transformacao"});
+  assert.deepEqual(deps.map(d=>d.id),["dependencia:purificar"]);
+  assert.equal((await atlas.getMaterialDependencies()).length,3);
+  assert.equal((await atlas.getMaterialDependencyIndexes()).by_assentamento["assentamento:portomonte"].length,2);
+});
+test("interrupção material percorre apenas relações curadas e não altera nada",async()=>{
+  const deps=await atlas.getMaterialDependencies();
+  const before=JSON.stringify(deps);
+  const preview=previewMaterialInterruption(deps,"dependencia:purificar");
+  assert.equal(preview.estado,"simulacao_sem_mutacao");
+  assert.equal(preview.mutacao_canonica,false);
+  assert.equal(preview.impactos_potenciais.length,1);
+  assert.equal(preview.impactos_potenciais[0].dependencia_id,"dependencia:lavoura");
+  assert.deepEqual(preview.efeitos_dw_aplicados,[]);
+  assert.equal(JSON.stringify(deps),before);
+  assert.throws(()=>previewMaterialInterruption(deps,"dependencia:desconhecida"),RangeError);
+});
+test("eventos locais exigem decisão do mestre, referências e ID único",()=>{
+  const state=createCampaignLedger({id:"campanha:teste",nome:"Campanha de teste"});
+  const event={id:"evento:primeiro",tipo:"acontecimento",
+    assentamento_id:"assentamento:portomonte",descricao:"A purificação falhou nesta campanha",
+    mestre_confirmou:true,fonte_cenario_id:null,efeitos_adjudicados:[]};
+  const original=JSON.stringify(state);
+  assert.throws(()=>recordCampaignEvent(state,{...event,mestre_confirmou:false},
+    {settlementIds:["assentamento:portomonte"]}),TypeError);
+  assert.throws(()=>recordCampaignEvent(state,event,
+    {settlementIds:["assentamento:ilha-inexistente"]}),RangeError);
+  const next=recordCampaignEvent(state,event,{settlementIds:["assentamento:portomonte"]});
+  assert.equal(state.revisao,0);
+  assert.equal(JSON.stringify(state),original);
+  assert.equal(next.revisao,1);
+  assert.equal(getCampaignEvents(next,{assentamentoId:"assentamento:portomonte"}).length,1);
+  assert.throws(()=>recordCampaignEvent(next,event,{settlementIds:["assentamento:portomonte"]}),RangeError);
+  const events=getCampaignEvents(next);
+  events[0].descricao="Edição local";
+  assert.notEqual(next.eventos[0].descricao,"Edição local");
+});
+test("cenário de DW precisa existir para virar referência de evento local",()=>{
+  const state=createCampaignLedger({id:"campanha:teste",nome:"Campanha de teste"});
+  const event={id:"evento:segundo",tipo:"decisao_dw",
+    assentamento_id:"assentamento:portomonte",descricao:"O mestre aplicou Want nesta campanha",
+    mestre_confirmou:true,fonte_cenario_id:"cenario:teste",
+    efeitos_adjudicados:["Adicionar necessidade conforme decisão do mestre"]};
+  assert.throws(()=>recordCampaignEvent(state,event,{
+    settlementIds:["assentamento:portomonte"],scenarioIds:[]}),RangeError);
+  const next=recordCampaignEvent(state,event,{
+    settlementIds:["assentamento:portomonte"],scenarioIds:["cenario:teste"]});
+  assert.equal(next.eventos[0].fonte_cenario_id,"cenario:teste");
+  assert.equal(next.eventos[0].efeitos_adjudicados.length,1);
 });
