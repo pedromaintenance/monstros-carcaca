@@ -1,0 +1,1922 @@
+{
+  "schema_version": "0.1.0",
+  "fonte": "Hack Carcaça Dungeon World(1).docx",
+  "fonte_sha256": "b53d1d5a057e8f6cba8a5d5ccd70747df3ce94d07ff2e2ffb9031368ea773b3d",
+  "grupo": "CAÇADOR",
+  "posicao": "indices_paragrafo_docx_zero_based",
+  "descricao": "Transcrição integral literal de Caçador, opções e continuações. Dependências exatas e compostas ainda não homologadas; requisitos ficcionais não são ignorados.",
+  "movimentos": [
+    {
+      "id": "movimento-classe:paragrafo-1455",
+      "paragrafo_docx": 1455,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "CAÇAR E RASTREAR",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1455,
+          "tipo": "corpo",
+          "texto": "Quando seguir sinais deixados por uma presa, role+SAB.\n10+: siga sua trilha até alcançá-la ou até algo tornar fisicamente impossível continuar e faça 2 perguntas.\n7–9: siga até uma mudança significativa na trilha e faça 1."
+        },
+        {
+          "paragrafo_docx": 1456,
+          "tipo": "opcao",
+          "texto": "Há quanto tempo ela passou por aqui?"
+        },
+        {
+          "paragrafo_docx": 1457,
+          "tipo": "opcao",
+          "texto": "Em que estado físico ou emocional está?"
+        },
+        {
+          "paragrafo_docx": 1458,
+          "tipo": "opcao",
+          "texto": "O que ela está tentando esconder sobre seus movimentos?"
+        },
+        {
+          "paragrafo_docx": 1459,
+          "tipo": "opcao",
+          "texto": "O que fez com que mudasse seu comportamento ou direção?"
+        },
+        {
+          "paragrafo_docx": 1460,
+          "tipo": "opcao",
+          "texto": "Como eu poderia chegar à frente dela?"
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1456,
+          "texto": "Há quanto tempo ela passou por aqui?"
+        },
+        {
+          "paragrafo_docx": 1457,
+          "texto": "Em que estado físico ou emocional está?"
+        },
+        {
+          "paragrafo_docx": 1458,
+          "texto": "O que ela está tentando esconder sobre seus movimentos?"
+        },
+        {
+          "paragrafo_docx": 1459,
+          "texto": "O que fez com que mudasse seu comportamento ou direção?"
+        },
+        {
+          "paragrafo_docx": 1460,
+          "texto": "Como eu poderia chegar à frente dela?"
+        }
+      ],
+      "texto_original": "Quando seguir sinais deixados por uma presa, role+SAB.\n10+: siga sua trilha até alcançá-la ou até algo tornar fisicamente impossível continuar e faça 2 perguntas.\n7–9: siga até uma mudança significativa na trilha e faça 1.\nHá quanto tempo ela passou por aqui?\nEm que estado físico ou emocional está?\nO que ela está tentando esconder sobre seus movimentos?\nO que fez com que mudasse seu comportamento ou direção?\nComo eu poderia chegar à frente dela?",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1455"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1461",
+      "paragrafo_docx": 1461,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "MARCA DO CAÇADOR",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1461,
+          "tipo": "corpo",
+          "texto": "Quando estudar cuidadosamente uma criatura ou sinais suficientemente recentes de sua passagem e declará-la sua presa, inicie uma Caçada contra ela. Sempre que resolver um Movimento e, através dele, avançar significativamente na Caçada, receba 1 Marca. Você pode receber uma Marca ao:"
+        },
+        {
+          "paragrafo_docx": 1462,
+          "tipo": "opcao",
+          "texto": "descobrir algo novo e útil sobre sua presa;"
+        },
+        {
+          "paragrafo_docx": 1463,
+          "tipo": "opcao",
+          "texto": "encontrar ou seguir seus rastros;"
+        },
+        {
+          "paragrafo_docx": 1464,
+          "tipo": "opcao",
+          "texto": "aproximar-se dela, encurralá-la ou impedir sua fuga;"
+        },
+        {
+          "paragrafo_docx": 1465,
+          "tipo": "opcao",
+          "texto": "superar um perigo criado diretamente por ela;"
+        },
+        {
+          "paragrafo_docx": 1466,
+          "tipo": "opcao",
+          "texto": "feri-la ou obter uma nova vantagem sobre ela durante um confronto;"
+        },
+        {
+          "paragrafo_docx": 1467,
+          "tipo": "opcao",
+          "texto": "sobreviver a algo que revele mais sobre como ela luta ou age."
+        },
+        {
+          "paragrafo_docx": 1468,
+          "tipo": "continuacao",
+          "texto": "A mesma pista, oportunidade ou obstáculo não concede novas Marcas apenas por ser explorado repetidamente. Um mesmo acontecimento concede no máximo 1 Marca. Enquanto enfrentar sua presa:"
+        },
+        {
+          "paragrafo_docx": 1469,
+          "tipo": "opcao",
+          "texto": "com 3 Marcas, você começou a entender como matá-la, aumente sua Periculosidade em um grau;"
+        },
+        {
+          "paragrafo_docx": 1470,
+          "tipo": "opcao",
+          "texto": "com 6 Marcas, você conhece seus hábitos, suas respostas, sua forma de lutar, aumente sua Periculosidade em dois graus;"
+        },
+        {
+          "paragrafo_docx": 1471,
+          "tipo": "opcao",
+          "texto": "com 9 Marcas, essa criatura cometeu o erro histórico de continuar viva tempo suficiente para você aprender tudo sobre ela, aumente a sua Periculosidade em três graus."
+        },
+        {
+          "paragrafo_docx": 1472,
+          "tipo": "continuacao",
+          "texto": "Sua Periculosidade nunca ultrapassa Extrema por este Movimento. Você só pode manter uma Caçada por vez. Suas Marcas desaparecem quando a presa for derrotada, você abandonar conscientemente a Caçada ou declarar outra criatura como sua presa."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1462,
+          "texto": "descobrir algo novo e útil sobre sua presa;"
+        },
+        {
+          "paragrafo_docx": 1463,
+          "texto": "encontrar ou seguir seus rastros;"
+        },
+        {
+          "paragrafo_docx": 1464,
+          "texto": "aproximar-se dela, encurralá-la ou impedir sua fuga;"
+        },
+        {
+          "paragrafo_docx": 1465,
+          "texto": "superar um perigo criado diretamente por ela;"
+        },
+        {
+          "paragrafo_docx": 1466,
+          "texto": "feri-la ou obter uma nova vantagem sobre ela durante um confronto;"
+        },
+        {
+          "paragrafo_docx": 1467,
+          "texto": "sobreviver a algo que revele mais sobre como ela luta ou age."
+        },
+        {
+          "paragrafo_docx": 1469,
+          "texto": "com 3 Marcas, você começou a entender como matá-la, aumente sua Periculosidade em um grau;"
+        },
+        {
+          "paragrafo_docx": 1470,
+          "texto": "com 6 Marcas, você conhece seus hábitos, suas respostas, sua forma de lutar, aumente sua Periculosidade em dois graus;"
+        },
+        {
+          "paragrafo_docx": 1471,
+          "texto": "com 9 Marcas, essa criatura cometeu o erro histórico de continuar viva tempo suficiente para você aprender tudo sobre ela, aumente a sua Periculosidade em três graus."
+        }
+      ],
+      "texto_original": "Quando estudar cuidadosamente uma criatura ou sinais suficientemente recentes de sua passagem e declará-la sua presa, inicie uma Caçada contra ela. Sempre que resolver um Movimento e, através dele, avançar significativamente na Caçada, receba 1 Marca. Você pode receber uma Marca ao:\ndescobrir algo novo e útil sobre sua presa;\nencontrar ou seguir seus rastros;\naproximar-se dela, encurralá-la ou impedir sua fuga;\nsuperar um perigo criado diretamente por ela;\nferi-la ou obter uma nova vantagem sobre ela durante um confronto;\nsobreviver a algo que revele mais sobre como ela luta ou age.\nA mesma pista, oportunidade ou obstáculo não concede novas Marcas apenas por ser explorado repetidamente. Um mesmo acontecimento concede no máximo 1 Marca. Enquanto enfrentar sua presa:\ncom 3 Marcas, você começou a entender como matá-la, aumente sua Periculosidade em um grau;\ncom 6 Marcas, você conhece seus hábitos, suas respostas, sua forma de lutar, aumente sua Periculosidade em dois graus;\ncom 9 Marcas, essa criatura cometeu o erro histórico de continuar viva tempo suficiente para você aprender tudo sobre ela, aumente a sua Periculosidade em três graus.\nSua Periculosidade nunca ultrapassa Extrema por este Movimento. Você só pode manter uma Caçada por vez. Suas Marcas desaparecem quando a presa for derrotada, você abandonar conscientemente a Caçada ou declarar outra criatura como sua presa.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1461"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1473",
+      "paragrafo_docx": 1473,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "SUPERIORIDADE DO CAÇADOR",
+      "requisito_literal": "Marca do Caçador",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1461",
+        "titulo_requerido": "MARCA DO CAÇADOR",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1473,
+          "tipo": "corpo",
+          "texto": "Quando declarar uma criatura como sua presa através de Marca do Caçador, receba Domínio de Caça 3. Gaste 1 Domínio para receber +1 adiante quando agir diretamente para:"
+        },
+        {
+          "paragrafo_docx": 1474,
+          "tipo": "opcao",
+          "texto": "descobrir em que direção sua presa seguiu;"
+        },
+        {
+          "paragrafo_docx": 1475,
+          "tipo": "opcao",
+          "texto": "perceber um sinal que ela deixou para trás;"
+        },
+        {
+          "paragrafo_docx": 1476,
+          "tipo": "opcao",
+          "texto": "antecipar a rota que usaria para fugir;"
+        },
+        {
+          "paragrafo_docx": 1477,
+          "tipo": "opcao",
+          "texto": "reconhecer uma armadilha, emboscada ou tentativa de despistá-lo preparada por ela;"
+        },
+        {
+          "paragrafo_docx": 1478,
+          "tipo": "opcao",
+          "texto": "encontrar, alcançar ou impedir a fuga da presa."
+        },
+        {
+          "paragrafo_docx": 1479,
+          "tipo": "continuacao",
+          "texto": "Sempre que alcançar um novo limiar de Marca do Caçador — 3, 6 ou 9 Marcas — recupere 1 Domínio de Caça, até o máximo de 3.\nO Domínio restante desaparece quando sua Caçada terminar."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1474,
+          "texto": "descobrir em que direção sua presa seguiu;"
+        },
+        {
+          "paragrafo_docx": 1475,
+          "texto": "perceber um sinal que ela deixou para trás;"
+        },
+        {
+          "paragrafo_docx": 1476,
+          "texto": "antecipar a rota que usaria para fugir;"
+        },
+        {
+          "paragrafo_docx": 1477,
+          "texto": "reconhecer uma armadilha, emboscada ou tentativa de despistá-lo preparada por ela;"
+        },
+        {
+          "paragrafo_docx": 1478,
+          "texto": "encontrar, alcançar ou impedir a fuga da presa."
+        }
+      ],
+      "texto_original": "Quando declarar uma criatura como sua presa através de Marca do Caçador, receba Domínio de Caça 3. Gaste 1 Domínio para receber +1 adiante quando agir diretamente para:\ndescobrir em que direção sua presa seguiu;\nperceber um sinal que ela deixou para trás;\nantecipar a rota que usaria para fugir;\nreconhecer uma armadilha, emboscada ou tentativa de despistá-lo preparada por ela;\nencontrar, alcançar ou impedir a fuga da presa.\nSempre que alcançar um novo limiar de Marca do Caçador — 3, 6 ou 9 Marcas — recupere 1 Domínio de Caça, até o máximo de 3.\nO Domínio restante desaparece quando sua Caçada terminar.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1473"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1480",
+      "paragrafo_docx": 1480,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "CAÇADOR IMPLACÁVEL",
+      "requisito_literal": "Marca do Caçador",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1461",
+        "titulo_requerido": "MARCA DO CAÇADOR",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1480,
+          "tipo": "corpo",
+          "texto": "Uma vez por sessão, quando obtiver 6- durante uma perseguição ou confronto direto com sua presa, antes que o Mestre resolva as consequências, você pode declarar: “Isso termina aqui.”\nPergunte ao Mestre: “O que de importante eu precisarei sacrificar para ter sucesso nesta Caçada?”\nO Mestre responderá com um preço real, imediato ou irrevogável que a situação permita. Se aceitar o sacrifício, trate seu resultado como 10+ em vez de 6-. O Movimento funciona plenamente como em um sucesso total, mas o preço ainda acontece.\nSe não aceitar, resolva o 6- normalmente."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por sessão, quando obtiver 6- durante uma perseguição ou confronto direto com sua presa, antes que o Mestre resolva as consequências, você pode declarar: “Isso termina aqui.”\nPergunte ao Mestre: “O que de importante eu precisarei sacrificar para ter sucesso nesta Caçada?”\nO Mestre responderá com um preço real, imediato ou irrevogável que a situação permita. Se aceitar o sacrifício, trate seu resultado como 10+ em vez de 6-. O Movimento funciona plenamente como em um sucesso total, mas o preço ainda acontece.\nSe não aceitar, resolva o 6- normalmente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1480"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1481",
+      "paragrafo_docx": 1481,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "OBSERVADOR",
+      "requisito_literal": "Caçar e Rastrear",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1455",
+        "titulo_requerido": "CAÇAR E RASTREAR",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1481,
+          "tipo": "corpo",
+          "texto": "Quando obtiver sucesso em Caçar e Rastrear, faça também gratuitamente uma pergunta de Discernir Realidades sobre sua presa ou sobre aquilo que aconteceu ao longo da trilha."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando obtiver sucesso em Caçar e Rastrear, faça também gratuitamente uma pergunta de Discernir Realidades sobre sua presa ou sobre aquilo que aconteceu ao longo da trilha.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1481"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1482",
+      "paragrafo_docx": 1482,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "PRESA FAMILIAR",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1482,
+          "tipo": "corpo",
+          "texto": "Escolha uma categoria de criatura que você já caçou extensivamente.\nQuando encontrar corpo, pegadas, toca, território, alimentação ou outra evidência significativa de uma criatura desse tipo, diga algo que caçadores experientes saberiam sobre ela e faça ao Mestre uma pergunta sobre seus hábitos.\nEle responderá honestamente, corrigindo sua suposição se necessário."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Escolha uma categoria de criatura que você já caçou extensivamente.\nQuando encontrar corpo, pegadas, toca, território, alimentação ou outra evidência significativa de uma criatura desse tipo, diga algo que caçadores experientes saberiam sobre ela e faça ao Mestre uma pergunta sobre seus hábitos.\nEle responderá honestamente, corrigindo sua suposição se necessário.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1482"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1484",
+      "paragrafo_docx": 1484,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "CAÇADOR DE MONSTROS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1484,
+          "tipo": "corpo",
+          "texto": "Quando tiver alguns instantes para estudar uma criatura monstruosa, suas ações ou os vestígios de sua passagem, escolha 2:"
+        },
+        {
+          "paragrafo_docx": 1485,
+          "tipo": "opcao",
+          "texto": "pergunte o que a protege dos ataques comuns;"
+        },
+        {
+          "paragrafo_docx": 1486,
+          "tipo": "opcao",
+          "texto": "pergunte o que seu corpo ou natureza não consegue proteger;"
+        },
+        {
+          "paragrafo_docx": 1487,
+          "tipo": "opcao",
+          "texto": "pergunte o que ela teme ou evita instintivamente;"
+        },
+        {
+          "paragrafo_docx": 1488,
+          "tipo": "opcao",
+          "texto": "pergunte como ela prefere caçar;"
+        },
+        {
+          "paragrafo_docx": 1489,
+          "tipo": "opcao",
+          "texto": "pergunte que sinal sempre denuncia sua presença;"
+        },
+        {
+          "paragrafo_docx": 1490,
+          "tipo": "opcao",
+          "texto": "pergunte o que acontece quando ela é encurralada."
+        },
+        {
+          "paragrafo_docx": 1491,
+          "tipo": "continuacao",
+          "texto": "O Mestre responderá através daquilo que sua experiência poderia reconhecer."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1485,
+          "texto": "pergunte o que a protege dos ataques comuns;"
+        },
+        {
+          "paragrafo_docx": 1486,
+          "texto": "pergunte o que seu corpo ou natureza não consegue proteger;"
+        },
+        {
+          "paragrafo_docx": 1487,
+          "texto": "pergunte o que ela teme ou evita instintivamente;"
+        },
+        {
+          "paragrafo_docx": 1488,
+          "texto": "pergunte como ela prefere caçar;"
+        },
+        {
+          "paragrafo_docx": 1489,
+          "texto": "pergunte que sinal sempre denuncia sua presença;"
+        },
+        {
+          "paragrafo_docx": 1490,
+          "texto": "pergunte o que acontece quando ela é encurralada."
+        }
+      ],
+      "texto_original": "Quando tiver alguns instantes para estudar uma criatura monstruosa, suas ações ou os vestígios de sua passagem, escolha 2:\npergunte o que a protege dos ataques comuns;\npergunte o que seu corpo ou natureza não consegue proteger;\npergunte o que ela teme ou evita instintivamente;\npergunte como ela prefere caçar;\npergunte que sinal sempre denuncia sua presença;\npergunte o que acontece quando ela é encurralada.\nO Mestre responderá através daquilo que sua experiência poderia reconhecer.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1484"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1492",
+      "paragrafo_docx": 1492,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "BARRIGA DE SMAUG",
+      "requisito_literal": "Caçador de Monstros ou Um movimento que tenha revelado uma vulnerabilidade",
+      "requisito_estruturado": {
+        "tipo": "qualquer",
+        "itens": [
+          {
+            "tipo": "movimento_exato",
+            "movimento_id": "movimento-classe:paragrafo-1484",
+            "titulo_requerido": "CAÇADOR DE MONSTROS"
+          },
+          {
+            "tipo": "condicao_ficcional",
+            "texto_literal": "Um movimento que tenha revelado uma vulnerabilidade",
+            "estado": "exige_comprovacao_pelo_mestre"
+          }
+        ],
+        "operador_literal": "ou",
+        "status": "interpretacao_literal_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1492,
+          "tipo": "corpo",
+          "texto": "Quando souber exatamente o que contorna uma defesa de sua presa e realmente conseguir criar essa condição, aquela defesa não protege a criatura de sua ação. Armadura, regeneração, carapaça, invisibilidade, resistência sobrenatural — depende da fraqueza descoberta."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando souber exatamente o que contorna uma defesa de sua presa e realmente conseguir criar essa condição, aquela defesa não protege a criatura de sua ação. Armadura, regeneração, carapaça, invisibilidade, resistência sobrenatural — depende da fraqueza descoberta.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1492"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1493",
+      "paragrafo_docx": 1493,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "CAMUFLAGEM",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1493,
+          "tipo": "corpo",
+          "texto": "Quando permanecer imóvel e oculto por um ambiente que realmente possa escondê-lo, não será percebido por observação comum até se mover, agir ou alguma coisa revelar sua posição."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando permanecer imóvel e oculto por um ambiente que realmente possa escondê-lo, não será percebido por observação comum até se mover, agir ou alguma coisa revelar sua posição.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1493"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1494",
+      "paragrafo_docx": 1494,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "PELE DO PREDADOR",
+      "requisito_literal": "Camuflagem",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1493",
+        "titulo_requerido": "CAMUFLAGEM",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1494,
+          "tipo": "corpo",
+          "texto": "Quando permanecer imóvel em um ambiente ao qual tenha se preparado para pertencer, sua aparência assume suas cores, formas e texturas. Observação comum não distingue você do ambiente mesmo sem cobertura suficiente para ocultá-lo normalmente, até que se mova ou aja. Quando não for percebido e agir saindo desta camuflagem, escolha 1:"
+        },
+        {
+          "paragrafo_docx": 1495,
+          "tipo": "opcao",
+          "texto": "receba +1 adiante para utilizar o elemento surpresa;"
+        },
+        {
+          "paragrafo_docx": 1496,
+          "tipo": "opcao",
+          "texto": "esconda-se novamente antes de ser percebido."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1495,
+          "texto": "receba +1 adiante para utilizar o elemento surpresa;"
+        },
+        {
+          "paragrafo_docx": 1496,
+          "texto": "esconda-se novamente antes de ser percebido."
+        }
+      ],
+      "texto_original": "Quando permanecer imóvel em um ambiente ao qual tenha se preparado para pertencer, sua aparência assume suas cores, formas e texturas. Observação comum não distingue você do ambiente mesmo sem cobertura suficiente para ocultá-lo normalmente, até que se mova ou aja. Quando não for percebido e agir saindo desta camuflagem, escolha 1:\nreceba +1 adiante para utilizar o elemento surpresa;\nesconda-se novamente antes de ser percebido.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1494"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1497",
+      "paragrafo_docx": 1497,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "SIGA-ME",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1497,
+          "tipo": "corpo",
+          "texto": "Quando liderar outros através de um ambiente perigoso que saiba como atravessar, escolha aquilo que está priorizando: velocidade, segurança, discrição ou conservação de recursos. Pergunte ao Mestre qual é o maior obstáculo para conseguir aquilo nesta rota. Enquanto seu grupo seguir sua orientação, receba 1 Preparo para superar esse obstáculo."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando liderar outros através de um ambiente perigoso que saiba como atravessar, escolha aquilo que está priorizando: velocidade, segurança, discrição ou conservação de recursos. Pergunte ao Mestre qual é o maior obstáculo para conseguir aquilo nesta rota. Enquanto seu grupo seguir sua orientação, receba 1 Preparo para superar esse obstáculo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1497"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1498",
+      "paragrafo_docx": 1498,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "UM LUGAR SEGURO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1498,
+          "tipo": "corpo",
+          "texto": "Quando tiver algum tempo para procurar e preparar acampamento em região perigosa, se houver algum lugar plausivelmente defensável, você o encontra. Escolha uma vantagem:"
+        },
+        {
+          "paragrafo_docx": 1499,
+          "tipo": "opcao",
+          "texto": "difícil de localizar;"
+        },
+        {
+          "paragrafo_docx": 1500,
+          "tipo": "opcao",
+          "texto": "boa visão dos arredores;"
+        },
+        {
+          "paragrafo_docx": 1501,
+          "tipo": "opcao",
+          "texto": "rota rápida de fuga;"
+        },
+        {
+          "paragrafo_docx": 1502,
+          "tipo": "opcao",
+          "texto": "proteção contra clima;"
+        },
+        {
+          "paragrafo_docx": 1503,
+          "tipo": "opcao",
+          "texto": "acesso a água ou recurso essencial."
+        },
+        {
+          "paragrafo_docx": 1504,
+          "tipo": "continuacao",
+          "texto": "O Mestre dirá qual inconveniente aquele lugar possui."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1499,
+          "texto": "difícil de localizar;"
+        },
+        {
+          "paragrafo_docx": 1500,
+          "texto": "boa visão dos arredores;"
+        },
+        {
+          "paragrafo_docx": 1501,
+          "texto": "rota rápida de fuga;"
+        },
+        {
+          "paragrafo_docx": 1502,
+          "texto": "proteção contra clima;"
+        },
+        {
+          "paragrafo_docx": 1503,
+          "texto": "acesso a água ou recurso essencial."
+        }
+      ],
+      "texto_original": "Quando tiver algum tempo para procurar e preparar acampamento em região perigosa, se houver algum lugar plausivelmente defensável, você o encontra. Escolha uma vantagem:\ndifícil de localizar;\nboa visão dos arredores;\nrota rápida de fuga;\nproteção contra clima;\nacesso a água ou recurso essencial.\nO Mestre dirá qual inconveniente aquele lugar possui.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1498"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1505",
+      "paragrafo_docx": 1505,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "SENTIDOS FERAIS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1505,
+          "tipo": "corpo",
+          "texto": "Fumaça, escuridão, folhagem, invisibilidade ou outro obscurecimento não torna uma criatura completamente indetectável para você se ela continuar deixando som, cheiro, pegadas, deslocamento de ar ou outros vestígios físicos. Você ainda pode não saber exatamente onde ela está. Mas sabe que há alguma coisa ali e aproximadamente como está se movendo."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Fumaça, escuridão, folhagem, invisibilidade ou outro obscurecimento não torna uma criatura completamente indetectável para você se ela continuar deixando som, cheiro, pegadas, deslocamento de ar ou outros vestígios físicos. Você ainda pode não saber exatamente onde ela está. Mas sabe que há alguma coisa ali e aproximadamente como está se movendo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1505"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1506",
+      "paragrafo_docx": 1506,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "COMPANHEIRO ANIMAL",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1506,
+          "tipo": "corpo",
+          "texto": "Você possui um vínculo excepcional com um animal. Diga quem ele é e escolha:\n3 forças: rápido, enorme, furtivo, feroz, sentidos aguçados, resistente, adaptável, inteligente ou outras.\n2 treinamentos: caçar, rastrear, procurar, vigiar, lutar, resgatar, transportar, viajar ou outro.\n1 instinto problemático: selvagem, assustadiço, teimoso, territorial, voraz, agressivo ou outro.\nQuando aquilo que pede estiver claramente dentro de um treinamento, seu companheiro sabe fazê-lo sozinho sem precisar de instrução detalhada. Quando enviá-lo para fazer algo perigoso, incerto ou que confronte seu instinto, enfrente a situação normalmente através da ficção."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Você possui um vínculo excepcional com um animal. Diga quem ele é e escolha:\n3 forças: rápido, enorme, furtivo, feroz, sentidos aguçados, resistente, adaptável, inteligente ou outras.\n2 treinamentos: caçar, rastrear, procurar, vigiar, lutar, resgatar, transportar, viajar ou outro.\n1 instinto problemático: selvagem, assustadiço, teimoso, territorial, voraz, agressivo ou outro.\nQuando aquilo que pede estiver claramente dentro de um treinamento, seu companheiro sabe fazê-lo sozinho sem precisar de instrução detalhada. Quando enviá-lo para fazer algo perigoso, incerto ou que confronte seu instinto, enfrente a situação normalmente através da ficção.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1506"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1507",
+      "paragrafo_docx": 1507,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "MESTRE DAS FERAS",
+      "requisito_literal": "Companheiro Animal",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1506",
+        "titulo_requerido": "COMPANHEIRO ANIMAL",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1507,
+          "tipo": "corpo",
+          "texto": "Defina também:"
+        },
+        {
+          "paragrafo_docx": 1508,
+          "tipo": "opcao",
+          "texto": "o que seu companheiro deseja profundamente;"
+        },
+        {
+          "paragrafo_docx": 1509,
+          "tipo": "opcao",
+          "texto": "o que ele teme;"
+        },
+        {
+          "paragrafo_docx": 1510,
+          "tipo": "opcao",
+          "texto": "uma coisa que ele jamais faria voluntariamente."
+        },
+        {
+          "paragrafo_docx": 1511,
+          "tipo": "continuacao",
+          "texto": "Quando vocês agirem juntos de acordo com um dos treinamentos dele, podem Ajudar um ao outro sem necessidade de linguagem ou instrução, e receba +1 adiante quando explorar uma abertura criada diretamente por seu companheiro."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1508,
+          "texto": "o que seu companheiro deseja profundamente;"
+        },
+        {
+          "paragrafo_docx": 1509,
+          "texto": "o que ele teme;"
+        },
+        {
+          "paragrafo_docx": 1510,
+          "texto": "uma coisa que ele jamais faria voluntariamente."
+        }
+      ],
+      "texto_original": "Defina também:\no que seu companheiro deseja profundamente;\no que ele teme;\numa coisa que ele jamais faria voluntariamente.\nQuando vocês agirem juntos de acordo com um dos treinamentos dele, podem Ajudar um ao outro sem necessidade de linguagem ou instrução, e receba +1 adiante quando explorar uma abertura criada diretamente por seu companheiro.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1507"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1512",
+      "paragrafo_docx": 1512,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "MELHOR AMIGO",
+      "requisito_literal": "Companheiro Animal",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1506",
+        "titulo_requerido": "COMPANHEIRO ANIMAL",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1512,
+          "tipo": "corpo",
+          "texto": "Quando seu companheiro puder fisicamente interceptar uma violência destinada a você ou a alguém que reconheça como parte de sua matilha, ele pode fazê-lo. Negue o dano ou efeito, mas seu companheiro fica ferido, incapacitado ou separado da ação conforme a violência sofrida."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando seu companheiro puder fisicamente interceptar uma violência destinada a você ou a alguém que reconheça como parte de sua matilha, ele pode fazê-lo. Negue o dano ou efeito, mas seu companheiro fica ferido, incapacitado ou separado da ação conforme a violência sofrida.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1512"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1514",
+      "paragrafo_docx": 1514,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "BEM TREINADO",
+      "requisito_literal": "Companheiro Animal",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1506",
+        "titulo_requerido": "COMPANHEIRO ANIMAL",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1514,
+          "tipo": "corpo",
+          "texto": "Escolha dois treinamentos adicionais. Além disso, quando seu companheiro utilizar um treinamento para criar uma abertura clara para você, receba +1 adiante ao explorá-la."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Escolha dois treinamentos adicionais. Além disso, quando seu companheiro utilizar um treinamento para criar uma abertura clara para você, receba +1 adiante ao explorá-la.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1514"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1515",
+      "paragrafo_docx": 1515,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "ALIADO ANTINATURAL",
+      "requisito_literal": "Companheiro Animal",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1506",
+        "titulo_requerido": "COMPANHEIRO ANIMAL",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1515,
+          "tipo": "corpo",
+          "texto": "Seu companheiro não precisa mais ser um animal comum. Transforme-o ou revele que sempre foi uma criatura monstruosa, sobrenatural ou extraplanar. Escolha uma capacidade impossível que sua natureza lhe concede e um novo instinto perigoso correspondente."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Seu companheiro não precisa mais ser um animal comum. Transforme-o ou revele que sempre foi uma criatura monstruosa, sobrenatural ou extraplanar. Escolha uma capacidade impossível que sua natureza lhe concede e um novo instinto perigoso correspondente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1515"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1516",
+      "paragrafo_docx": 1516,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "CAÇADOR DAS TREVAS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1516,
+          "tipo": "corpo",
+          "texto": "Quando permanecer numa escuridão que conheça melhor que sua presa, criaturas que dependam principalmente da visão não conseguem determinar sua posição exata apenas por enxergarem no escuro. Quando agir a partir dessa incerteza, receba +1 adiante na primeira ação que revele sua posição."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando permanecer numa escuridão que conheça melhor que sua presa, criaturas que dependam principalmente da visão não conseguem determinar sua posição exata apenas por enxergarem no escuro. Quando agir a partir dessa incerteza, receba +1 adiante na primeira ação que revele sua posição.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1516"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1517",
+      "paragrafo_docx": 1517,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "ESQUIVA SOMBRIA",
+      "requisito_literal": "Caçador das Trevas",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1516",
+        "titulo_requerido": "CAÇADOR DAS TREVAS",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1517,
+          "tipo": "corpo",
+          "texto": "Uma vez por cena, quando perceber um ataque chegando e houver sombra suficiente por perto, desapareça de sua linha imediata de ataque e reapareça numa posição próxima apropriada. Você não se teleporta. Você simplesmente estava onde o atacante não conseguiu acompanhar você."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Uma vez por cena, quando perceber um ataque chegando e houver sombra suficiente por perto, desapareça de sua linha imediata de ataque e reapareça numa posição próxima apropriada. Você não se teleporta. Você simplesmente estava onde o atacante não conseguiu acompanhar você.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1517"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1518",
+      "paragrafo_docx": 1518,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "CAMINHANTE DOS HORIZONTES",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1518,
+          "tipo": "corpo",
+          "texto": "Quando parar para sentir as fronteiras entre os lugares, saiba se existe portal, ruptura ou passagem planar significativa na região próxima. Se houver, o Mestre dirá a direção aproximada da mais próxima e alguma coisa sobre a natureza do lugar para onde ela conduz."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando parar para sentir as fronteiras entre os lugares, saiba se existe portal, ruptura ou passagem planar significativa na região próxima. Se houver, o Mestre dirá a direção aproximada da mais próxima e alguma coisa sobre a natureza do lugar para onde ela conduz.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1518"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1519",
+      "paragrafo_docx": 1519,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "PASSO ETÉREO",
+      "requisito_literal": "Caminhante dos Horizontes",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1518",
+        "titulo_requerido": "CAMINHANTE DOS HORIZONTES",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1519,
+          "tipo": "corpo",
+          "texto": "Duas vezes por cena, atravesse uma pequena extensão de matéria sólida, criatura ou barreira física como se durante alguns instantes você não pertencesse inteiramente a este plano. Você não pode terminar a travessia dentro de alguma coisa."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Duas vezes por cena, atravesse uma pequena extensão de matéria sólida, criatura ou barreira física como se durante alguns instantes você não pertencesse inteiramente a este plano. Você não pode terminar a travessia dentro de alguma coisa.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1519"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1520",
+      "paragrafo_docx": 1520,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "NENHUM MUNDO É LONGE DEMAIS",
+      "requisito_literal": "Caminhante dos Horizontes e Marca do Caçador",
+      "requisito_estruturado": {
+        "tipo": "todos",
+        "itens": [
+          {
+            "tipo": "movimento_exato",
+            "movimento_id": "movimento-classe:paragrafo-1518",
+            "titulo_requerido": "CAMINHANTE DOS HORIZONTES"
+          },
+          {
+            "tipo": "movimento_exato",
+            "movimento_id": "movimento-classe:paragrafo-1461",
+            "titulo_requerido": "MARCA DO CAÇADOR"
+          }
+        ],
+        "operador_literal": "e",
+        "status": "interpretacao_literal_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1520,
+          "tipo": "corpo",
+          "texto": "Quando sua presa atravessar uma fronteira planar, ela continua deixando uma trilha que você consegue reconhecer.\nO Mestre dirá o que precisa fazer para atravessar atrás dela. Isso para mim é um Movimento de nível alto maravilhoso."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando sua presa atravessar uma fronteira planar, ela continua deixando uma trilha que você consegue reconhecer.\nO Mestre dirá o que precisa fazer para atravessar atrás dela. Isso para mim é um Movimento de nível alto maravilhoso.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1520"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1521",
+      "paragrafo_docx": 1521,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "ATIRADOR FRIO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1521,
+          "tipo": "corpo",
+          "texto": "Quando puder observar um alvo sem ser percebido durante alguns instantes, você pode receber Domínio ao Disparar.\n12+: Receba Domínio 3.\n10+: Receba Domínio 2.\nGaste durante o disparo para:"
+        },
+        {
+          "paragrafo_docx": 1522,
+          "tipo": "opcao",
+          "texto": "não revelar sua posição;"
+        },
+        {
+          "paragrafo_docx": 1523,
+          "tipo": "opcao",
+          "texto": "encontrar um ponto vulnerável;"
+        },
+        {
+          "paragrafo_docx": 1524,
+          "tipo": "opcao",
+          "texto": "antecipar para onde ele tentará escapar depois de ser acertado;"
+        },
+        {
+          "paragrafo_docx": 1525,
+          "tipo": "opcao",
+          "texto": "acertar precisamente um pequeno alvo exposto."
+        },
+        {
+          "paragrafo_docx": 1526,
+          "tipo": "continuacao",
+          "texto": "7–9: além do resultado normal, você pode escolher uma das opções acima se aceitar imediatamente uma segunda consequência de Disparar."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1522,
+          "texto": "não revelar sua posição;"
+        },
+        {
+          "paragrafo_docx": 1523,
+          "texto": "encontrar um ponto vulnerável;"
+        },
+        {
+          "paragrafo_docx": 1524,
+          "texto": "antecipar para onde ele tentará escapar depois de ser acertado;"
+        },
+        {
+          "paragrafo_docx": 1525,
+          "texto": "acertar precisamente um pequeno alvo exposto."
+        }
+      ],
+      "texto_original": "Quando puder observar um alvo sem ser percebido durante alguns instantes, você pode receber Domínio ao Disparar.\n12+: Receba Domínio 3.\n10+: Receba Domínio 2.\nGaste durante o disparo para:\nnão revelar sua posição;\nencontrar um ponto vulnerável;\nantecipar para onde ele tentará escapar depois de ser acertado;\nacertar precisamente um pequeno alvo exposto.\n7–9: além do resultado normal, você pode escolher uma das opções acima se aceitar imediatamente uma segunda consequência de Disparar.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1521"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1527",
+      "paragrafo_docx": 1527,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "TIRO CANTADO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1527,
+          "tipo": "corpo",
+          "texto": "Quando tiver tempo para mirar especificamente numa parte do alvo, diga o que pretende conseguir além de feri-lo e Dispare.\nEm 10+, consiga também o efeito declarado se a flecha puder realisticamente produzi-lo.\nEm 7–9, escolha entre o dano ou o efeito."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando tiver tempo para mirar especificamente numa parte do alvo, diga o que pretende conseguir além de feri-lo e Dispare.\nEm 10+, consiga também o efeito declarado se a flecha puder realisticamente produzi-lo.\nEm 7–9, escolha entre o dano ou o efeito.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1527"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1528",
+      "paragrafo_docx": 1528,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "NÃO EXISTE LONGE DEMAIS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1528,
+          "tipo": "corpo",
+          "texto": "Quando tiver linha de visão e condições adequadas para preparar um disparo extraordinariamente distante, diga o que precisa compensar — vento, queda, movimento, visibilidade — e role+DES.\n10+: acerte.\n7–9: acerte, mas o Mestre escolherá uma condição que mudou enquanto a flecha estava no ar."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando tiver linha de visão e condições adequadas para preparar um disparo extraordinariamente distante, diga o que precisa compensar — vento, queda, movimento, visibilidade — e role+DES.\n10+: acerte.\n7–9: acerte, mas o Mestre escolherá uma condição que mudou enquanto a flecha estava no ar.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1528"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1529",
+      "paragrafo_docx": 1529,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "CHUVA DE FLECHAS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1529,
+          "tipo": "corpo",
+          "texto": "Quando disparar rapidamente para controlar uma área em vez de atingir um alvo específico, gaste 1 Munição e declare a área.\nInimigos que atravessem abertamente essa zona precisam se proteger, recuar ou enfrentar suas flechas."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando disparar rapidamente para controlar uma área em vez de atingir um alvo específico, gaste 1 Munição e declare a área.\nInimigos que atravessem abertamente essa zona precisam se proteger, recuar ou enfrentar suas flechas.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1529"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1530",
+      "paragrafo_docx": 1530,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "EMBOSCADA PREPARADA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1530,
+          "tipo": "corpo",
+          "texto": "Quando tiver tempo para escolher terreno e preparar uma emboscada, receba Preparo 2 vinculado exclusivamente àquela emboscada."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando tiver tempo para escolher terreno e preparar uma emboscada, receba Preparo 2 vinculado exclusivamente àquela emboscada.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1530"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1531",
+      "paragrafo_docx": 1531,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "FLECHA PERSEGUIDORA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1531,
+          "tipo": "corpo",
+          "texto": "Quando disparar contra uma presa cuja posição você conhece, sua flecha pode curvar-se, mudar de trajetória e contornar cobertura para persegui-la. Ela não descobre onde está alguém que você perdeu completamente e não atravessa obstáculos que sua magia não poderia superar. Se a presa tentar escapar da trajetória através de velocidade, magia ou manobra extraordinária, Dispare normalmente para descobrir qual dos dois vence."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando disparar contra uma presa cuja posição você conhece, sua flecha pode curvar-se, mudar de trajetória e contornar cobertura para persegui-la. Ela não descobre onde está alguém que você perdeu completamente e não atravessa obstáculos que sua magia não poderia superar. Se a presa tentar escapar da trajetória através de velocidade, magia ou manobra extraordinária, Dispare normalmente para descobrir qual dos dois vence.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1531"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1532",
+      "paragrafo_docx": 1532,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "FLECHA APRISIONADORA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1532,
+          "tipo": "corpo",
+          "texto": "Quando seu disparo atingir alguma coisa que possa ser presa ao ambiente, escolha uma manifestação — raízes, gelo, correntes espectrais, sombras, teias, espinhos ou outra definida quando escolher o Movimento, você pode abrir mão do dano para prender o alvo à posição atingida. \nEle permanece assim até romper, destruir, contornar ou escapar da prisão conforme a ficção permitir."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando seu disparo atingir alguma coisa que possa ser presa ao ambiente, escolha uma manifestação — raízes, gelo, correntes espectrais, sombras, teias, espinhos ou outra definida quando escolher o Movimento, você pode abrir mão do dano para prender o alvo à posição atingida. \nEle permanece assim até romper, destruir, contornar ou escapar da prisão conforme a ficção permitir.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1532"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1533",
+      "paragrafo_docx": 1533,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "FLECHA BANIDORA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1533,
+          "tipo": "corpo",
+          "texto": "Suas flechas podem atingir espíritos, criaturas extraplanares e outras existências que armas comuns não alcançariam. Quando atingir uma criatura que depende de algum vínculo para permanecer neste mundo, pergunte ao Mestre:\n“O que a mantém aqui?”\nSe conseguir atingir ou destruir esse vínculo com um disparo apropriado, você pode expulsá-la, enfraquecê-la ou separá-la de sua âncora conforme a natureza da criatura."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Suas flechas podem atingir espíritos, criaturas extraplanares e outras existências que armas comuns não alcançariam. Quando atingir uma criatura que depende de algum vínculo para permanecer neste mundo, pergunte ao Mestre:\n“O que a mantém aqui?”\nSe conseguir atingir ou destruir esse vínculo com um disparo apropriado, você pode expulsá-la, enfraquecê-la ou separá-la de sua âncora conforme a natureza da criatura.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1533"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1534",
+      "paragrafo_docx": 1534,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "FLECHA DE SANGUE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1534,
+          "tipo": "corpo",
+          "texto": "Quando ferir uma criatura com uma flecha preparada com seu sangue, símbolo, encantamento ou ritual de caça, você passa a perceber aproximadamente em que direção ela está enquanto permanecer no mesmo mundo e o vínculo não for rompido.\nQuando ela atravessar alguma fronteira significativa, você percebe que isso aconteceu."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando ferir uma criatura com uma flecha preparada com seu sangue, símbolo, encantamento ou ritual de caça, você passa a perceber aproximadamente em que direção ela está enquanto permanecer no mesmo mundo e o vínculo não for rompido.\nQuando ela atravessar alguma fronteira significativa, você percebe que isso aconteceu.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1534"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1535",
+      "paragrafo_docx": 1535,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "OLHO DA PRESA",
+      "requisito_literal": "Flecha de Sangue ou Marca do Caçador",
+      "requisito_estruturado": {
+        "tipo": "qualquer",
+        "itens": [
+          {
+            "tipo": "movimento_exato",
+            "movimento_id": "movimento-classe:paragrafo-1534",
+            "titulo_requerido": "FLECHA DE SANGUE"
+          },
+          {
+            "tipo": "movimento_exato",
+            "movimento_id": "movimento-classe:paragrafo-1461",
+            "titulo_requerido": "MARCA DO CAÇADOR"
+          }
+        ],
+        "operador_literal": "ou",
+        "status": "interpretacao_literal_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1535,
+          "tipo": "corpo",
+          "texto": "Quando fechar os olhos e concentrar-se numa presa marcada magicamente, veja durante alguns instantes aquilo que ela está vendo. Seu próprio corpo fica vulnerável enquanto fizer isso."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando fechar os olhos e concentrar-se numa presa marcada magicamente, veja durante alguns instantes aquilo que ela está vendo. Seu próprio corpo fica vulnerável enquanto fizer isso.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1535"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1536",
+      "paragrafo_docx": 1536,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "FLECHA SOMBRIA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1536,
+          "tipo": "corpo",
+          "texto": "Quando atingir uma criatura ou superfície com sua flecha, você pode fazer a sombra do projétil engolir a luz ao redor do impacto. A região torna-se escuridão sobrenatural até a flecha ser removida, destruída ou você dissipar o efeito. \nVocê consegue enxergar silhuetas e movimento dentro da escuridão que criou, mas não detalhes perfeitos."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando atingir uma criatura ou superfície com sua flecha, você pode fazer a sombra do projétil engolir a luz ao redor do impacto. A região torna-se escuridão sobrenatural até a flecha ser removida, destruída ou você dissipar o efeito. \nVocê consegue enxergar silhuetas e movimento dentro da escuridão que criou, mas não detalhes perfeitos.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1536"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1537",
+      "paragrafo_docx": 1537,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "FLECHA DO SOL",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1537,
+          "tipo": "corpo",
+          "texto": "Suas flechas podem carregar luz sagrada, solar ou outra luminosidade sobrenatural. Quando atingirem algo:"
+        },
+        {
+          "paragrafo_docx": 1538,
+          "tipo": "opcao",
+          "texto": "iluminam violentamente a região;"
+        },
+        {
+          "paragrafo_docx": 1539,
+          "tipo": "opcao",
+          "texto": "revelam coisas cuja ocultação depende de escuridão;"
+        },
+        {
+          "paragrafo_docx": 1540,
+          "tipo": "opcao",
+          "texto": "podem ferir criaturas especialmente vulneráveis àquela luz;"
+        },
+        {
+          "paragrafo_docx": 1541,
+          "tipo": "opcao",
+          "texto": "permanecem como fonte luminosa enquanto a flecha existir."
+        },
+        {
+          "paragrafo_docx": 1542,
+          "tipo": "continuacao",
+          "texto": "Contra uma criatura cuja fraqueza à luz você já descobriu, a manifestação pode contar como aquilo que contorna sua proteção."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1538,
+          "texto": "iluminam violentamente a região;"
+        },
+        {
+          "paragrafo_docx": 1539,
+          "texto": "revelam coisas cuja ocultação depende de escuridão;"
+        },
+        {
+          "paragrafo_docx": 1540,
+          "texto": "podem ferir criaturas especialmente vulneráveis àquela luz;"
+        },
+        {
+          "paragrafo_docx": 1541,
+          "texto": "permanecem como fonte luminosa enquanto a flecha existir."
+        }
+      ],
+      "texto_original": "Suas flechas podem carregar luz sagrada, solar ou outra luminosidade sobrenatural. Quando atingirem algo:\niluminam violentamente a região;\nrevelam coisas cuja ocultação depende de escuridão;\npodem ferir criaturas especialmente vulneráveis àquela luz;\npermanecem como fonte luminosa enquanto a flecha existir.\nContra uma criatura cuja fraqueza à luz você já descobriu, a manifestação pode contar como aquilo que contorna sua proteção.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1537"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1543",
+      "paragrafo_docx": 1543,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "FLECHA ELEMENTAL",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1543,
+          "tipo": "corpo",
+          "texto": "Escolha um único elemento e diga como aprendeu a vinculá-lo às suas flechas. Quando Disparar usando esse elemento, suas flechas carregam suas propriedades ficcionais reais: fogo incendeia, gelo congela, eletricidade choca, ácido corrói e assim por diante. Uma vez por cena, quando explorar especificamente uma propriedade do elemento em vez de simplesmente querer mais dano, receba +1 adiante."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Escolha um único elemento e diga como aprendeu a vinculá-lo às suas flechas. Quando Disparar usando esse elemento, suas flechas carregam suas propriedades ficcionais reais: fogo incendeia, gelo congela, eletricidade choca, ácido corrói e assim por diante. Uma vez por cena, quando explorar especificamente uma propriedade do elemento em vez de simplesmente querer mais dano, receba +1 adiante.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1543"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1544",
+      "paragrafo_docx": 1544,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "FLECHA EXPLOSIVA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1544,
+          "tipo": "corpo",
+          "texto": "Quando preparar uma flecha para liberar sua força sobre uma área e Disparar, declare onde pretende fazê-la detonar. Em um sucesso, o impacto produz violência apropriada contra tudo que não estiver protegido naquela pequena área, amigo ou inimigo. No 7–9 de Disparar, além das opções normais, o Mestre pode oferecer:\n“A explosão atingirá algo que você preferiria preservar.”"
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando preparar uma flecha para liberar sua força sobre uma área e Disparar, declare onde pretende fazê-la detonar. Em um sucesso, o impacto produz violência apropriada contra tudo que não estiver protegido naquela pequena área, amigo ou inimigo. No 7–9 de Disparar, além das opções normais, o Mestre pode oferecer:\n“A explosão atingirá algo que você preferiria preservar.”",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1544"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1545",
+      "paragrafo_docx": 1545,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "FLECHA TRANSPASSANTE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1545,
+          "tipo": "corpo",
+          "texto": "Quando disparar contra algo que você sabe a exata localização, sua flecha pode atravessar matéria não viva entre você e o alvo. Pedra, madeira, metal ou outra matéria comum. Por um breve momento após soltar a flecha, você enxerga através da matéria não viva através da magia. Para transpassar matéria viva ou de natureza mágica, diga como e Desafie o Perigo."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando disparar contra algo que você sabe a exata localização, sua flecha pode atravessar matéria não viva entre você e o alvo. Pedra, madeira, metal ou outra matéria comum. Por um breve momento após soltar a flecha, você enxerga através da matéria não viva através da magia. Para transpassar matéria viva ou de natureza mágica, diga como e Desafie o Perigo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1545"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1546",
+      "paragrafo_docx": 1546,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "TROCA DE LUGAR",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1546,
+          "tipo": "corpo",
+          "texto": "Duas vezes por cena, quando sua flecha atingir uma superfície capaz de sustentá-lo, você pode trocar instantaneamente de posição com ela. Se o destino estiver ocupado, perigoso ou instável, enfrente aquilo normalmente."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Duas vezes por cena, quando sua flecha atingir uma superfície capaz de sustentá-lo, você pode trocar instantaneamente de posição com ela. Se o destino estiver ocupado, perigoso ou instável, enfrente aquilo normalmente.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1546"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1547",
+      "paragrafo_docx": 1547,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "PASSO SEM PEGADAS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1547,
+          "tipo": "corpo",
+          "texto": "Quando atravessar um ambiente natural ou território de caça sem desejar deixar rastros, sua passagem não deixa sinais comuns suficientes para ser seguida. Alguém que possua meios sobrenaturais, conhecimento específico ou que consiga encontrar aquilo que você não pôde evitar ainda pode rastreá-lo."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando atravessar um ambiente natural ou território de caça sem desejar deixar rastros, sua passagem não deixa sinais comuns suficientes para ser seguida. Alguém que possua meios sobrenaturais, conhecimento específico ou que consiga encontrar aquilo que você não pôde evitar ainda pode rastreá-lo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1547"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1548",
+      "paragrafo_docx": 1548,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "LINGUAJAR SILVESTRE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1548,
+          "tipo": "corpo",
+          "texto": "Quando perguntar ao ambiente por uma criatura que tenha passado por ali, ele responde através de pássaros, plantas, pegadas que se movem, vento, insetos, água ou espíritos locais. Pergunte:"
+        },
+        {
+          "paragrafo_docx": 1549,
+          "tipo": "opcao",
+          "texto": "“Por onde minha presa passou?”"
+        },
+        {
+          "paragrafo_docx": 1550,
+          "tipo": "opcao",
+          "texto": "“O que ela fez aqui?”"
+        },
+        {
+          "paragrafo_docx": 1551,
+          "tipo": "opcao",
+          "texto": "“O que neste lugar a assustou?”"
+        },
+        {
+          "paragrafo_docx": 1552,
+          "tipo": "continuacao",
+          "texto": "O Mestre responde conforme aquilo que o ambiente poderia ter testemunhado."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1549,
+          "texto": "“Por onde minha presa passou?”"
+        },
+        {
+          "paragrafo_docx": 1550,
+          "texto": "“O que ela fez aqui?”"
+        },
+        {
+          "paragrafo_docx": 1551,
+          "texto": "“O que neste lugar a assustou?”"
+        }
+      ],
+      "texto_original": "Quando perguntar ao ambiente por uma criatura que tenha passado por ali, ele responde através de pássaros, plantas, pegadas que se movem, vento, insetos, água ou espíritos locais. Pergunte:\n“Por onde minha presa passou?”\n“O que ela fez aqui?”\n“O que neste lugar a assustou?”\nO Mestre responde conforme aquilo que o ambiente poderia ter testemunhado.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1548"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1553",
+      "paragrafo_docx": 1553,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "ARMAR UMA ARAPUCA",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1553,
+          "tipo": "corpo",
+          "texto": "Quando possuir tempo e material para preparar uma armadilha, role+INT e diga:"
+        },
+        {
+          "paragrafo_docx": 1554,
+          "tipo": "opcao",
+          "texto": "quem ou o que deveria ativá-la;"
+        },
+        {
+          "paragrafo_docx": 1555,
+          "tipo": "opcao",
+          "texto": "o efeito pretendido;"
+        },
+        {
+          "paragrafo_docx": 1556,
+          "tipo": "opcao",
+          "texto": "o sinal de que foi acionada."
+        },
+        {
+          "paragrafo_docx": 1557,
+          "tipo": "continuacao",
+          "texto": "12+: Todos estes aspectos funcionam conforme o planejado.\n10+: Receba Domínio 2.\n7–9: Receba Domínio 1. \nGaste 1 Domínio ao armar a armadilha para garantir que um desses aspectos funcione exatamente como planejado."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1554,
+          "texto": "quem ou o que deveria ativá-la;"
+        },
+        {
+          "paragrafo_docx": 1555,
+          "texto": "o efeito pretendido;"
+        },
+        {
+          "paragrafo_docx": 1556,
+          "texto": "o sinal de que foi acionada."
+        }
+      ],
+      "texto_original": "Quando possuir tempo e material para preparar uma armadilha, role+INT e diga:\nquem ou o que deveria ativá-la;\no efeito pretendido;\no sinal de que foi acionada.\n12+: Todos estes aspectos funcionam conforme o planejado.\n10+: Receba Domínio 2.\n7–9: Receba Domínio 1. \nGaste 1 Domínio ao armar a armadilha para garantir que um desses aspectos funcione exatamente como planejado.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1553"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1559",
+      "paragrafo_docx": 1559,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "ARMADILHA VIVA",
+      "requisito_literal": "Armar Uma Arapuca",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1553",
+        "titulo_requerido": "ARMAR UMA ARAPUCA",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1559,
+          "tipo": "corpo",
+          "texto": "Quando Armar Uma Arapuca através de magia natural, sua armadilha pode ser formada por raízes, espinhos, névoa, enxames, fungos, gelo, água, animais, terreno ou outra manifestação apropriada.\nEla não precisa possuir um mecanismo físico convencional e permanece adormecida até ser provocada pela condição que você estabeleceu. Além disso, escolha uma propriedade impossível para aquela armadilha:"
+        },
+        {
+          "paragrafo_docx": 1560,
+          "tipo": "opcao",
+          "texto": "Oculta: antes de despertar, meios mundanos não conseguem identificá-la como uma armadilha apenas por observação."
+        },
+        {
+          "paragrafo_docx": 1561,
+          "tipo": "opcao",
+          "texto": "Seletiva: ela reconhece uma característica concreta de sua presa e ignora criaturas que não a possuam."
+        },
+        {
+          "paragrafo_docx": 1562,
+          "tipo": "opcao",
+          "texto": "Paciente: permanece preparada enquanto aquele ambiente continuar capaz de sustentá-la, mesmo que você vá embora."
+        },
+        {
+          "paragrafo_docx": 1563,
+          "tipo": "opcao",
+          "texto": "Viva: depois de ativada, a manifestação pode perseguir ou continuar contendo sua presa enquanto ela permanecer na área."
+        },
+        {
+          "paragrafo_docx": 1564,
+          "tipo": "opcao",
+          "texto": "Vigilante: quando for ativada, você percebe isso mesmo estando distante, desde que ainda mantenha alguma ligação com aquele ambiente."
+        },
+        {
+          "paragrafo_docx": 1565,
+          "tipo": "continuacao",
+          "texto": "A armadilha ainda utiliza normalmente o resultado de Armar Uma Arapuca."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1560,
+          "texto": "Oculta: antes de despertar, meios mundanos não conseguem identificá-la como uma armadilha apenas por observação."
+        },
+        {
+          "paragrafo_docx": 1561,
+          "texto": "Seletiva: ela reconhece uma característica concreta de sua presa e ignora criaturas que não a possuam."
+        },
+        {
+          "paragrafo_docx": 1562,
+          "texto": "Paciente: permanece preparada enquanto aquele ambiente continuar capaz de sustentá-la, mesmo que você vá embora."
+        },
+        {
+          "paragrafo_docx": 1563,
+          "texto": "Viva: depois de ativada, a manifestação pode perseguir ou continuar contendo sua presa enquanto ela permanecer na área."
+        },
+        {
+          "paragrafo_docx": 1564,
+          "texto": "Vigilante: quando for ativada, você percebe isso mesmo estando distante, desde que ainda mantenha alguma ligação com aquele ambiente."
+        }
+      ],
+      "texto_original": "Quando Armar Uma Arapuca através de magia natural, sua armadilha pode ser formada por raízes, espinhos, névoa, enxames, fungos, gelo, água, animais, terreno ou outra manifestação apropriada.\nEla não precisa possuir um mecanismo físico convencional e permanece adormecida até ser provocada pela condição que você estabeleceu. Além disso, escolha uma propriedade impossível para aquela armadilha:\nOculta: antes de despertar, meios mundanos não conseguem identificá-la como uma armadilha apenas por observação.\nSeletiva: ela reconhece uma característica concreta de sua presa e ignora criaturas que não a possuam.\nPaciente: permanece preparada enquanto aquele ambiente continuar capaz de sustentá-la, mesmo que você vá embora.\nViva: depois de ativada, a manifestação pode perseguir ou continuar contendo sua presa enquanto ela permanecer na área.\nVigilante: quando for ativada, você percebe isso mesmo estando distante, desde que ainda mantenha alguma ligação com aquele ambiente.\nA armadilha ainda utiliza normalmente o resultado de Armar Uma Arapuca.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1559"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1566",
+      "paragrafo_docx": 1566,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "VIVO OU MORTO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1566,
+          "tipo": "corpo",
+          "texto": "Quando aceitar oficialmente a captura de alguém e estudar as informações disponíveis, pergunte:"
+        },
+        {
+          "paragrafo_docx": 1567,
+          "tipo": "opcao",
+          "texto": "Quem o está ajudando?"
+        },
+        {
+          "paragrafo_docx": 1568,
+          "tipo": "opcao",
+          "texto": "Para onde ele fugiria se descobrisse que estou atrás dele?"
+        },
+        {
+          "paragrafo_docx": 1569,
+          "tipo": "opcao",
+          "texto": "Quem mais o procura?"
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1567,
+          "texto": "Quem o está ajudando?"
+        },
+        {
+          "paragrafo_docx": 1568,
+          "texto": "Para onde ele fugiria se descobrisse que estou atrás dele?"
+        },
+        {
+          "paragrafo_docx": 1569,
+          "texto": "Quem mais o procura?"
+        }
+      ],
+      "texto_original": "Quando aceitar oficialmente a captura de alguém e estudar as informações disponíveis, pergunte:\nQuem o está ajudando?\nPara onde ele fugiria se descobrisse que estou atrás dele?\nQuem mais o procura?",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1566"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1570",
+      "paragrafo_docx": 1570,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "EU SEMPRE TERMINO O TRABALHO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1570,
+          "tipo": "corpo",
+          "texto": "Quando sua presa escapar diretamente de você, receba 1 Preparo para a próxima vez que encontrá-la.\nNão acumula mais de 2 por alvo."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando sua presa escapar diretamente de você, receba 1 Preparo para a próxima vez que encontrá-la.\nNão acumula mais de 2 por alvo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1570"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1571",
+      "paragrafo_docx": 1571,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "É UMA ARMADILHA!",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1571,
+          "tipo": "corpo",
+          "texto": "Quando observar uma armadilha construída por outra pessoa, pergunte:\n“Que pressuposto o construtor fez sobre quem cairia nela?”\nReceba +1 adiante para agir de acordo com a resposta."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando observar uma armadilha construída por outra pessoa, pergunte:\n“Que pressuposto o construtor fez sobre quem cairia nela?”\nReceba +1 adiante para agir de acordo com a resposta.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1571"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1572",
+      "paragrafo_docx": 1572,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "VENENO PERSONALIZADO",
+      "requisito_literal": "Caçador de Monstros",
+      "requisito_estruturado": {
+        "tipo": "movimento_exato",
+        "movimento_id": "movimento-classe:paragrafo-1484",
+        "titulo_requerido": "CAÇADOR DE MONSTROS",
+        "escopo": "mesmo_grupo",
+        "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+      },
+      "partes": [
+        {
+          "paragrafo_docx": 1572,
+          "tipo": "corpo",
+          "texto": "Quando estudar fisiologia, hábitos ou vulnerabilidades de um alvo específico e preparar um veneno para ele, aumente em um grau a Periculosidade ou severidade daquele veneno somente contra esse alvo ou espécie."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando estudar fisiologia, hábitos ou vulnerabilidades de um alvo específico e preparar um veneno para ele, aumente em um grau a Periculosidade ou severidade daquele veneno somente contra esse alvo ou espécie.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1572"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1573",
+      "paragrafo_docx": 1573,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "ANTÍDOTO DE CAMPO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1573,
+          "tipo": "corpo",
+          "texto": "Quando souber qual veneno está agindo e possuir acesso a ingredientes plausíveis, pode preparar algo que interrompa sua progressão mesmo sem conseguir remover os danos já sofridos."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando souber qual veneno está agindo e possuir acesso a ingredientes plausíveis, pode preparar algo que interrompa sua progressão mesmo sem conseguir remover os danos já sofridos.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1573"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1574",
+      "paragrafo_docx": 1574,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "SABER O NOME DO INIMIGO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1574,
+          "tipo": "corpo",
+          "texto": "Quando investigar um demônio específico e descobrir seu verdadeiro nome, receba Domínio 2 sobre ele.\nGaste ao confrontá-lo para:"
+        },
+        {
+          "paragrafo_docx": 1575,
+          "tipo": "opcao",
+          "texto": "resistir a uma de suas influências;"
+        },
+        {
+          "paragrafo_docx": 1576,
+          "tipo": "opcao",
+          "texto": "reconhecer uma mentira;"
+        },
+        {
+          "paragrafo_docx": 1577,
+          "tipo": "opcao",
+          "texto": "tornar sua arma capaz de feri-lo;"
+        },
+        {
+          "paragrafo_docx": 1578,
+          "tipo": "opcao",
+          "texto": "chamá-lo mesmo quando escondido."
+        }
+      ],
+      "opcoes": [
+        {
+          "paragrafo_docx": 1575,
+          "texto": "resistir a uma de suas influências;"
+        },
+        {
+          "paragrafo_docx": 1576,
+          "texto": "reconhecer uma mentira;"
+        },
+        {
+          "paragrafo_docx": 1577,
+          "texto": "tornar sua arma capaz de feri-lo;"
+        },
+        {
+          "paragrafo_docx": 1578,
+          "texto": "chamá-lo mesmo quando escondido."
+        }
+      ],
+      "texto_original": "Quando investigar um demônio específico e descobrir seu verdadeiro nome, receba Domínio 2 sobre ele.\nGaste ao confrontá-lo para:\nresistir a uma de suas influências;\nreconhecer uma mentira;\ntornar sua arma capaz de feri-lo;\nchamá-lo mesmo quando escondido.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1574"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1579",
+      "paragrafo_docx": 1579,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "FERRO, SAL, NOME E SANGUE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1579,
+          "tipo": "corpo",
+          "texto": "Quando preparar uma proteção contra uma entidade cuja natureza conhece, escolha dois componentes simbólicos que sua tradição considera eficazes. Enquanto permanecerem íntegros e apropriados, a entidade precisa lidar com eles antes de alcançar aquilo que protegem."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando preparar uma proteção contra uma entidade cuja natureza conhece, escolha dois componentes simbólicos que sua tradição considera eficazes. Enquanto permanecerem íntegros e apropriados, a entidade precisa lidar com eles antes de alcançar aquilo que protegem.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1579"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1580",
+      "paragrafo_docx": 1580,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "EU SEI O QUE VOCÊ É",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1580,
+          "tipo": "corpo",
+          "texto": "Quando presenciar uma manifestação sobrenatural, pergunte:\n“Que tipo de coisa deixa sinais como estes?”\nSe houver conhecimento disponível à sua tradição, o Mestre responderá."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando presenciar uma manifestação sobrenatural, pergunte:\n“Que tipo de coisa deixa sinais como estes?”\nSe houver conhecimento disponível à sua tradição, o Mestre responderá.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1580"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1581",
+      "paragrafo_docx": 1581,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "BANIMENTO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1581,
+          "tipo": "corpo",
+          "texto": "Quando conhecer o nome, natureza ou vínculo de uma criatura extraplanar e ordenar que retorne ao lugar de onde veio, role+CAR ou SAB.\n10+: ela é expulsa.\n7–9: escolha: ela parte lentamente; deixa algo; leva algo; ou marca você como inimigo."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando conhecer o nome, natureza ou vínculo de uma criatura extraplanar e ordenar que retorne ao lugar de onde veio, role+CAR ou SAB.\n10+: ela é expulsa.\n7–9: escolha: ela parte lentamente; deixa algo; leva algo; ou marca você como inimigo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1581"
+    },
+    {
+      "id": "movimento-classe:paragrafo-1582",
+      "paragrafo_docx": 1582,
+      "grupo": "CAÇADOR",
+      "categoria": "classe",
+      "titulo": "NÃO OLHE PARA ELE",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 1582,
+          "tipo": "corpo",
+          "texto": "Quando orientar aliados sobre uma ameaça sobrenatural cujo mecanismo você compreende, todos que seguirem exatamente suas instruções recebem +1 adiante contra a primeira manifestação daquele perigo."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando orientar aliados sobre uma ameaça sobrenatural cujo mecanismo você compreende, todos que seguirem exatamente suas instruções recebem +1 adiante contra a primeira manifestação daquele perigo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-1582"
+    }
+  ],
+  "integridade": {
+    "total_movimentos": 53,
+    "total_com_requer": 15,
+    "total_vinculos_exatos": 12,
+    "total_requer_composto_ou_condicional": 3,
+    "total_opcoes": 61,
+    "total_partes": 125
+  }
+}
