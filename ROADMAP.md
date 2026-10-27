@@ -197,3 +197,10 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Documentar lógica, contrato, exemplos e lacunas em `docs/BALANCOS_E_PRESSOES_ECOLOGICAS.md`.
 - [ ] Ampliar com indicadores opcionais de capacidade de suporte quando a lore ou campanha fornecer quantidades fundamentadas.
 - [ ] Introduzir observações autorizadas de campanha sem incorporá-las aos JSON canônicos.
+
+### Verificação pós-publicação do ciclo 8
+
+- [x] [GitHub Actions #40437639411](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40437639411): testes Node, validação estrutural e cruzada, geração de índices e publicação com conclusão `success`.
+- [x] `dist/carcaca/manifest.json`: **7 criaturas, 3 registros de assentamento, 5 dependências, 4 perfis materiais e 4 pressões ecológicas**.
+- [x] Todos os 4 perfis têm **zero medições numéricas preenchidas**; todas as pressões permanecem `risco_hipotetico_nao_ocorrido` e `efeito_dw_automatico=false`.
+- [x] Índices publicados: balanços por assentamento/recurso/tipo/sazonalidade e pressões por assentamento/dependência/tipo.

@@ -174,3 +174,11 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 **Software:** novas APIs de leitura/filtro e `previewMaterialBalance` com conferência de unidade, período e proveniência. Nada é persistido em jogos, muito menos balanceamento de Peren ou estatísticas D&D.
 
 **Próximo estudo:** capacidade de suporte e dinâmica de assentamentos dependente de medidas reais, com atenção a armazenamento, resíduos e mobilidade.
+
+### Conferência final do ciclo 8
+
+- Publicação validada: https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40437639411 — **success**.
+- Snapshot do atlas revisado na API GitHub: 4 perfis de balanço, todos `nao_quantificado` com **zero** valores preenchidos, 4 riscos `risco_hipotetico_nao_ocorrido` e 4 novos arquivos de distribuição (dados e índices).
+- Índice `by_assentamento` inclui 3 perfis em Portomonte. Viagens sazonais insulares não receberam meses inventados.
+- O resultado aritmético de teste (45 litros **fictícios**) foi utilizado apenas em testes automatizados e exemplo de documentação, **não** atribuído a quaisquer fichas canônicas.
+- O marco M3 prossegue para a análise de capacidade de suporte e incerteza; nenhum jogo, save ou ficha D&D sofreu alteração.
