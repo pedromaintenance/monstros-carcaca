@@ -225,3 +225,17 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 - Setores com âncoras documentais: 4 Portomonte, 2 conjunto insular, 2 cavernas kuo-toa. `evidencia_parcial` não valida uma instalação não citada; por exemplo, o setor de saneamento em Portomonte possui a âncora de purificação da água agrícola, mas **não** prova sistema de esgoto.
 - Índice por setor sem documentação inclui saneamento nas ilhas e nas cavernas, sem afirmar que tais comunidades não tenham saneamento de fato.
 - Próximo alvo: integrar geografia e pressão de guerras do Além Sul com cuidado para não transformar ameaças regionais em ataques a assentamentos particulares não mencionados.
+
+## 2026-10-26 · Ciclo 11 — Guerras regionais e refugiados
+
+**Fonte primária:** `Ambientação - A Carcaça - Visão Geral.txt`, seção "O ALÉM SUL". A obra diz que os exilados da Caatinga e os sobreviventes da Costa Sul travam guerras constantes, que grupos das terras áridas pilham lavouras de pradarias costeiras, que kuo-toa e abissais capturam pessoas para sacrifícios no litoral e nas ilhas, que alguns refugiados de Eldroth são minoria nos maiores assentamentos, e que o Além Sul não está diretamente ocupado pelos shadow fey.
+
+**Decisão de granularidade:** `regiao:caatinga` é um novo território sem localidades individuais identificadas. Quatro dinâmicas `escala:regional` foram registradas sem IDs de assentamento específico. **Não** se afirma que Portomonte foi saqueada ou recebeu refugiados; não se atribui a todos os orcs a prática de saque; o conflito ritual não é subsistência. A ausência de ocupação direta não significa independência política plena ou paz.
+
+**Rótulos:** quatro novos `rotulo-territorial:*` indexam condições regionais sem alterar os 14 rótulos de comunidades ou qualquer estatística DW.
+
+**Integração:** novo schema, validador para região, rótulos e escala, gerador com índices invertidos, API ESM de busca e `previewTerritorialImpact` em modo só leitura. Fonte confirmada é distinta de consequência possível; eventos não são disparados.
+
+**Próxima unidade:** consolidar um dossiê por região com pressões materiais e políticas e buscar lugares individualizados na Caatinga, mantendo perguntas abertas onde o autor não descreveu um povoado.
+
+**Documento de referência:** `docs/DINAMICAS_TERRITORIAIS_ALEM_SUL.md`.

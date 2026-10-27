@@ -116,3 +116,9 @@ O atlas apresenta `data/infraestrutura_assentamentos_costa_sul.json` e distribui
 O cliente `src/carcaca-client.mjs` inclui `getInfrastructureProfiles`, `getInfrastructureProfile`, `getInfrastructureIndexes` e `searchInfrastructureProfiles`. A biblioteca `src/carcaca-infrastructure.mjs` permite auditoria e prévias sem alterar dados.
 
 Leia `docs/INFRAESTRUTURA_DOS_ASSENTAMENTOS.md`.
+
+## M3, ciclo 11 — Caatinga e dinâmicas de guerra
+
+O atlas acrescenta `regiao:caatinga`, sem inventar assentamentos nem fronteiras precisas. `data/dinamicas_territoriais_alem_sul.json` descreve quatro fatos regionais: pilhagens entre Caatinga e pradarias costeiras, capturas sacrificiais no litoral e nas ilhas, presença minoritária de refugiados de Eldroth em grandes assentamentos ainda não nomeados e ausência de colonização feérica direta no Além Sul.
+
+`data/rotulos_territoriais_carcaca.json` contém quatro **rótulos regionais**, independentes dos 14 rótulos de assentamento. Os dados são publicados em `dist/carcaca/territorial-*.json`; `src/carcaca-territorial.mjs` não permite converter ameaça regional em ataque canônico a Portomonte. Consulte [Dinâmicas Territoriais do Além Sul](docs/DINAMICAS_TERRITORIAIS_ALEM_SUL.md).

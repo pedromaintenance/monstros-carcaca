@@ -158,3 +158,16 @@ const auditoria=auditInfrastructure(p,{sectorId:"construcao_abrigo"});
 ```
 
 `auditInfrastructure` retorna **cópias** das âncoras de evidência, perguntas e lacunas; não cria instalações. `previewInfrastructureIssue(p,{sectorId,hipotese})` apenas produz lista de questões e relações potenciais, nunca um acontecimento de campanha ou atualização DW. Os índices permitem consultas por assentamento, natureza, setor documentado/não documentado e dependência.
+
+## Guerra e fluxos territoriais (ciclo 11)
+
+```js
+import {previewTerritorialImpact} from "./src/carcaca-territorial.mjs";
+const raids=await atlas.searchTerritorialDynamics({
+ origemRegiaoId:"regiao:caatinga",destinoRegiaoId:"regiao:costa-sul"
+});
+const caso=previewTerritorialImpact(raids[0],{assentamentoId:"assentamento:portomonte"});
+console.log(caso.atribuicao_automatica_bloqueada); // true
+```
+
+`getTerritorialDynamics`, `getTerritorialLabels`, `getTerritorialIndexes` e `getTerritorialDynamic(id)` permitem navegação do atlas. Os rótulos territoriais **não** são rótulos de assentamento. Todos os fatos deste lote têm `escala:regional`, sem vítima ou destino específicos, e não são eventos de campanha. Documento de referência: `docs/DINAMICAS_TERRITORIAIS_ALEM_SUL.md`.

@@ -252,3 +252,19 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] `dist/carcaca/infrastructure-profiles.json`: 0 materiais construtivos confirmados; 1 instalação nominal — Templo de Deméter em Portomonte.
 - [x] `dist/carcaca/infrastructure-indexes.json`: índices por assentamento, natureza, setor com evidências, setor sem documentação e dependência material; cada assentamento aponta para exatamente um perfil.
 - [x] Nenhum dado material foi convertido em valor, instalação suposta, estatística DW ou acontecimento de campanha.
+
+## Ciclo 11 — Guerra, pilhagens e deslocamentos no Além Sul (2026-10-26)
+
+- [x] Revisar texto autoral do Além Sul e diferenciar **fatos regionais** de ataques a uma cidade ou ilha específica.
+- [x] Incluir `regiao:caatinga` na geografia, **sem lugares nomeados** nem limites cartográficos artificiais.
+- [x] Criar quatro dinâmicas territoriais documentadas: pilhagens da Caatinga, incursões sacrificiais na costa e ilhas, presença minoritária de refugiados de Eldroth nos maiores centros, ausência de ocupação feérica direta do Além Sul.
+- [x] Criar **quatro rótulos territoriais**, separados dos **14 rótulos Carcaça de assentamentos** e das tags DW.
+- [x] Conservar nulos os alvos de assentamentos concretos, os locais de origem de cada ataque e os acontecimentos por campanha não confirmados.
+- [x] Garantir que a presença de refugiados regional não seja atribuída automaticamente a Portomonte.
+- [x] Associar agricultura, terra, segurança, abrigo e integração como **dimensões possivelmente afetadas**, não prejuízos já ocorridos.
+- [x] Criar schema, validação cruzada e busca por região, rótulo, tipo e dimensão potencial.
+- [x] Criar `previewTerritorialImpact`, prévia de risco que bloqueia atribuição indevida a um assentamento e não altera tags DW.
+- [x] Adicionar testes de filtragem, diferenciação regional/local, cópia de informações e presença de refugiados sem destino nominal.
+- [x] Documentar decisões em `docs/DINAMICAS_TERRITORIAIS_ALEM_SUL.md`.
+- [ ] Investigar povoações individualizadas da Caatinga após novas fontes.
+- [ ] Integrar futuramente uma frente DW de guerra regional proposta, não acontecimento histórico.
