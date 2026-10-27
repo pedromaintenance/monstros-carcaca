@@ -51,7 +51,9 @@ const fixtures={
     hack_class_movement_inventory:"hack-class-movement-inventory.json",
     hack_class_movement_indexes:"hack-class-movement-indexes.json",
     hack_class_requirement_candidates:"hack-class-requirement-candidates.json",
-    hack_class_requirement_pending:"hack-class-requirement-pending.json"}},
+    hack_class_requirement_pending:"hack-class-requirement-pending.json",
+    hack_warrior_movements:"hack-warrior-movements.json",
+    hack_warrior_movement_indexes:"hack-warrior-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -102,6 +104,28 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-warrior-movements.json":[
+    {id:"movimento-classe:paragrafo-1047",titulo:"ARMA FAVORITA",
+     requisito_literal:null,requisito_estruturado:null,
+     texto_original:"Escolha uma arma com a qual seu treinamento seja extraordinário.",
+     paragrafo_docx:1047,opcoes:[],aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1120",titulo:"ARMA APERFEIÇOADA",
+     requisito_literal:"Arma Favorita",
+     requisito_estruturado:{tipo:"movimento_exato",
+       movimento_id:"movimento-classe:paragrafo-1047"},
+     texto_original:"Sua Arma Favorita recebe uma segunda característica.",
+     paragrafo_docx:1120,opcoes:[],aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1229",titulo:"PASSO ARCANO",
+     requisito_literal:"Surto de Ação e qualquer Movimento de Magia",
+     requisito_estruturado:{tipo:"todos",itens:[
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-1139"},
+       {tipo:"categoria",categoria:"movimento_de_magia",minimo:1}]},
+     texto_original:"Quando utilizar Surto de Ação, pode desaparecer.",
+     paragrafo_docx:1229,opcoes:[],aplicacao_canonica:false}
+  ],
+  "hack-warrior-movement-indexes.json":{by_tem_requer:{
+    sim:["movimento-classe:paragrafo-1120","movimento-classe:paragrafo-1229"],
+    nao:["movimento-classe:paragrafo-1047"]}},
   "hack-class-movement-inventory.json":[
     {id:"movimento-classe:paragrafo-1047",paragrafo_docx:1047,grupo:"GUERREIRO",
      titulo:"ARMA FAVORITA",requisito_literal:null,aplicacao_canonica:false},
@@ -1116,4 +1140,25 @@ test("REQUER identifica vínculos candidatos sem habilitar compras de movimentos
   assert.equal((await atlas.getClassRequirementPending()).length,1);
   assert.equal((await atlas.getClassMovementIndexes()).by_grupo.GUERREIRO.length,3);
   assert.throws(()=>previewClassRequirements("qualquer",null,[],[]),TypeError);
+});
+
+test("Guerreiro integral busca texto e conserva REQUER composto sem autorizar compra",async()=>{
+  const todos=await atlas.getWarriorMovements();
+  assert.equal(todos.length,3);
+  assert.equal((await atlas.searchWarriorMovements({comRequer:true})).length,2);
+  assert.equal((await atlas.searchWarriorMovements({tipoRequisito:"todos"}))[0].titulo,"PASSO ARCANO");
+  assert.equal((await atlas.searchWarriorMovements({query:"segunda característica"}))[0].titulo,"ARMA APERFEIÇOADA");
+  assert.equal((await atlas.getWarriorMovement("movimento-classe:paragrafo-1047")).titulo,"ARMA FAVORITA");
+  assert.equal(await atlas.getWarriorMovement("movimento-classe:paragrafo-9999"),null);
+  assert.equal((await atlas.getWarriorMovementIndexes()).by_tem_requer.sim.length,2);
+  const prev=await atlas.getWarriorRequirementPreview("movimento-classe:paragrafo-1120",
+    {movimentosPossuidos:["movimento-classe:paragrafo-1047"]});
+  assert.equal(prev.vinculos_candidatos[0].presente_na_lista,true);
+  assert.equal(prev.habilitado_para_compra,null);
+  assert.equal(prev.aplicacao_canonica,false);
+  const composto=await atlas.getWarriorRequirementPreview("movimento-classe:paragrafo-1229",
+    {movimentosPossuidos:["movimento-classe:paragrafo-1139"]});
+  assert.equal(composto.requisito_estruturado.tipo,"todos");
+  assert.equal(composto.expressoes_nao_resolvidas.length,1);
+  assert.equal(composto.habilitado_para_compra,null);
 });
