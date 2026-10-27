@@ -9,6 +9,7 @@ import re
 import unicodedata
 from collections import defaultdict
 from pathlib import Path
+from hack_movimentos_gerais import compilar_movimentos_gerais, indexar_movimentos_gerais
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / "dist" / "carcaca"
@@ -260,6 +261,14 @@ def build():
         key=lambda x:x["paragrafo_docx"])
     docx_tables=sorted(load("data/lore/hack-carcaca-dw-tabelas-docx.json")["tabelas"],
                        key=lambda x:x["tabela_docx_indice"])
+    quadros_integrais=load("data/lore/hack-carcaca-dw-quadros-integrais.json")
+    movimentos_gerais=compilar_movimentos_gerais(quadros_integrais,docx_tables)
+    indices_movimentos_gerais=indexar_movimentos_gerais(movimentos_gerais)
+    quadro_por_tabela={m["tabela_docx_indice"]:m["quadro_id"] for m in movimentos_gerais}
+    docx_tables=[{**t,**({"quadro_integral_id":quadro_por_tabela[t["tabela_docx_indice"]],
+                         "texto_integral_extraido":True}
+                        if t["tabela_docx_indice"] in quadro_por_tabela else {})}
+                 for t in docx_tables]
     reviewed_paragraphs={x["paragrafo_docx"]:x["id"] for x in selected_moves}
     complete_pilot_moves=[
         {**x,"revisao_preliminar_id":reviewed_paragraphs.get(x["paragrafo_docx"])}
@@ -419,6 +428,8 @@ def build():
         "hack_complete_pilot_movement_indexes":"hack-complete-pilot-movement-indexes.json",
         "hack_docx_tables":"hack-docx-tables.json",
         "hack_docx_table_indexes":"hack-docx-table-indexes.json",
+        "hack_general_movements":"hack-general-movements.json",
+        "hack_general_movement_indexes":"hack-general-movement-indexes.json",
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
@@ -458,6 +469,8 @@ def build():
         "total_opcoes_movimentos_piloto":sum(len(x["opcoes"]) for x in complete_pilot_moves),
         "total_tabelas_docx_inventariadas":len(docx_tables),
         "total_quadros_movimentos_gerais":sum(x["tipo"]=="quadro_movimento_geral" for x in docx_tables),
+        "total_unidades_regras_gerais_integrais":len(movimentos_gerais),
+        "total_blocos_quadros_gerais":sum(len(q["blocos"]) for q in quadros_integrais["quadros"]),
         "total_rotulos_mecanicas_detectados":sum(len(p["rotulos_detectados"]) for p in mechanics_index["paginas_indice"]),
         "total_paginas_lore_manuscrito":len(lore_source["paginas"]),
         "total_eventos_cronologia_manuscrito":len(lore_timeline["eventos"]),
@@ -497,6 +510,8 @@ def build():
         files["hack_complete_pilot_movement_indexes"]:complete_move_indexes,
         files["hack_docx_tables"]:docx_tables,
         files["hack_docx_table_indexes"]:docx_table_indexes,
+         files["hack_general_movements"]:movimentos_gerais,
+         files["hack_general_movement_indexes"]:indices_movimentos_gerais,
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,
