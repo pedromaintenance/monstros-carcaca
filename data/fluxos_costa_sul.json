@@ -39,6 +39,19 @@
       "status": "inferido",
       "fonte": "ambientacao",
       "observacao": "As incursões regionais kuo-toa são documentadas; atribuir uma partida específica à rede agregada de cavernas é inferência, pois a fonte também descreve cidades subaquáticas."
+    },
+    {
+      "id": "fluxo:viagens-sazonais-comunidades-insulares",
+      "tipo": "circulacao_sazonal",
+      "origem_assentamento_id": "assentamento:comunidades-insulares-costa-sul",
+      "destino_assentamento_id": null,
+      "destino_descricao": "Lugares da Carcaça não nomeados",
+      "recurso": "Histórias e recursos coletados ao viajar",
+      "transformacao": null,
+      "finalidade": "Viagens periódicas de tortles e tabaxis segundo a lore da Costa Sul",
+      "status": "documentado",
+      "fonte": "ambientacao",
+      "observacao": "O relato regional afirma viagens sazonais e coleta; não pressupõe mercadoria específica, volume, calendário, assentamento de destino nem rota comercial."
     }
   ]
 }

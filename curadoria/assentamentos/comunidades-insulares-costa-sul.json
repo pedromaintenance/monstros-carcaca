@@ -1,0 +1,112 @@
+[
+  {
+    "id": "assentamento:comunidades-insulares-costa-sul",
+    "schema_version": "0.1.0",
+    "nome": "Comunidades insulares tortles e tabaxis da Costa Sul",
+    "regiao_id": "regiao:costa-sul",
+    "lugar_id": "lugar:ilhas-costa-sul",
+    "natureza": "conjunto_de_comunidades",
+    "estado": "rascunho-factual",
+    "fonte": "ambientacao",
+    "tipo_dw": {
+      "classificacao": null,
+      "estado": "aguarda_individualizacao_das_comunidades"
+    },
+    "tags_dw": {
+      "prosperidade": null,
+      "populacao": null,
+      "defesas": null,
+      "recursos": [],
+      "comercio": [],
+      "necessidades": [],
+      "juramento": []
+    },
+    "habitantes": [
+      {
+        "povo_id": "povo:tortles-ilhas-costa-sul",
+        "relacao": "presenca_insular_regional",
+        "status": "documentado",
+        "fonte": "ambientacao"
+      },
+      {
+        "povo_id": "povo:tabaxis-ilhas-costa-sul",
+        "relacao": "presenca_insular_regional",
+        "status": "documentado",
+        "fonte": "ambientacao"
+      }
+    ],
+    "rotulos_carcaca": [
+      {
+        "id": "rotulo:tradicoes_monasticas_insulares",
+        "status": "documentado",
+        "fonte": "ambientacao"
+      },
+      {
+        "id": "rotulo:defesa_insular_disciplinada",
+        "status": "documentado",
+        "fonte": "ambientacao"
+      },
+      {
+        "id": "rotulo:rotas_sazonais",
+        "status": "documentado",
+        "fonte": "ambientacao"
+      }
+    ],
+    "ecologia_material": {
+      "agua": [],
+      "alimento": [],
+      "abrigo": [
+        {
+          "descricao": "Há comunidades habitando ilhas ao redor da Costa Sul; formas de moradia e estruturas construtivas não foram descritas.",
+          "uso": "habitação regional, sem atribuição a ilha individual",
+          "status": "documentado",
+          "fonte": "ambientacao"
+        }
+      ],
+      "continuidade": {
+        "situacao": "nao_documentada",
+        "descricao": null,
+        "fonte": null
+      },
+      "materiais": [],
+      "residuos": [],
+      "dependencias": [],
+      "lacunas": [
+        "Ilhas individuais, coordenadas, quantidade e nomes não documentados.",
+        "Habitação e partilha das ilhas entre tortles e tabaxis não especificadas.",
+        "Fontes de água e alimento não documentadas; não presumir pesca nem agricultura.",
+        "Reprodução, nascimentos, migração permanente, tamanho das comunidades e defesas DW desconhecidos.",
+        "Não há parceiro comercial nominal nem porto ou calendário sazonal identificado."
+      ]
+    },
+    "fatos": {
+      "posicao": "Ilhas ao redor da Costa Sul, sem geolocalização individual.",
+      "economia": [
+        "Viagens sazonais dos tortles e tabaxis em busca de histórias e recursos; muitos atuam como marinheiros na Costa Sul, segundo a lore regional."
+      ],
+      "defesa": "As ilhas preservam costumes monásticos próprios e se defendem com honra e disciplina; efetivo e equipamento não informados.",
+      "conflitos": [
+        "Tortles e tabaxis constam entre os inimigos dos kuo-toa e abissais marinhos na região."
+      ]
+    },
+    "rotas_e_conflitos": [
+      {
+        "alvo_assentamento_id": null,
+        "alvo_texto": "Outros territórios da Carcaça, itinerários não nomeados",
+        "tipo": "viagens_sazonais_de_coleta",
+        "status": "documentado",
+        "fonte": "ambientacao",
+        "nota": "Não inferir exportações comerciais de Portomonte ou itinerário concreto."
+      },
+      {
+        "alvo_assentamento_id": null,
+        "alvo_texto": "Kuo-Toa e abissais marinhos da Costa Sul",
+        "tipo": "hostilidade_regional",
+        "status": "documentado",
+        "fonte": "ambientacao",
+        "nota": "Conflito regional documentado, sem identificar ilha atacada ou uma batalha particular."
+      }
+    ],
+    "observacao": "Registro coletivo cartográfico, não um único assentamento nem prova de coabitação em cada ilha. Os números de DW ficam nulos até uma ilha e comunidade específica ser descrita."
+  }
+]

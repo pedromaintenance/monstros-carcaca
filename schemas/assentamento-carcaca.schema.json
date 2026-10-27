@@ -50,7 +50,8 @@
         "colonia",
         "santuario",
         "posto_militar",
-        "territorio_sazonal"
+        "territorio_sazonal",
+        "conjunto_de_comunidades"
       ]
     },
     "estado": {

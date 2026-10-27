@@ -56,6 +56,15 @@
       "tipo": "ruinas",
       "fonte": "ambientacao",
       "estado": "documentado"
+    },
+    {
+      "id": "lugar:ilhas-costa-sul",
+      "nome": "Ilhas habitadas ao redor da Costa Sul (conjunto regional)",
+      "regiao_id": "regiao:costa-sul",
+      "tipo": "conjunto_de_ilhas",
+      "fonte": "ambientacao",
+      "estado": "documentado",
+      "observacao": "Localidade regional coletiva; ilhas individuais não estão nomeadas nem localizadas na fonte."
     }
   ]
 }
