@@ -493,6 +493,29 @@ def validar_lore_manuscrito():
           f"{len(timeline['questoes_abertas'])} incógnitas e "
           f"{len(reviews['revisoes'])} revisões editoriais.")
 
+
+def validar_pontes_lore_manuscrito(rids):
+    links=load("data/lore/hack-carcaca-dw-pontes-atlas.json")
+    index=load("data/lore/hack-carcaca-dw-indice-tematico.json")
+    by_entry={row["id"]:row for row in index["entradas"]}
+    questions={q["id"] for g in load("data/guias_dossies_regionais.json")["guias"]
+               for q in g["perguntas"]}
+    require(links["fonte_id"]==index["fonte_id"],"Ponte com fonte divergente")
+    unique(links["pontes"],"pontes de manuscrito para atlas")
+    for link in links["pontes"]:
+        require(link["id"].startswith("ponte-lore:"),"Namespace de ponte incorreto")
+        require(link["entrada_lore_id"] in by_entry,"Entrada de lore desconhecida na ponte")
+        require(link["regiao_atlas_id"] in rids,"Região de ponte ausente no atlas")
+        require(link["pergunta_curadoria_id"] is None or
+                link["pergunta_curadoria_id"] in questions,
+                "Pergunta desconhecida na ponte")
+        require(link["pagina"] in by_entry[link["entrada_lore_id"]]["paginas"],
+                "Página da ponte não corresponde à página citada na entrada")
+        require(link["aplicar_automaticamente"] is False and
+                link["status"]=="pendente_revisao_autoral",
+                "Ponte não pode atualizar cânone por conta própria")
+    print(f"Pontes manuscrito→atlas: {len(links['pontes'])} referências em revisão.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -582,6 +605,7 @@ def main():
     validar_guias_dossies_regionais(fontes,rids)
     validar_prioridades_curadoria(fontes)
     validar_lore_manuscrito()
+    validar_pontes_lore_manuscrito(rids)
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

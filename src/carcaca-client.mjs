@@ -28,6 +28,15 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getLoreIndexIndexes(){return byKey("lore_index_indexes");}
   async function getLoreChronology(){return byKey("lore_chronology");}
   async function getLoreReviewNotes(){return byKey("lore_review_notes");}
+  async function getLoreAtlasLinks(){return byKey("lore_atlas_links");}
+  async function getLoreAtlasLinkIndexes(){return byKey("lore_atlas_link_indexes");}
+  async function searchLoreAtlasLinks({regiaoId,perguntaId,entradaLoreId,parecer}={}){
+    return (await getLoreAtlasLinks()).filter(p=>
+      (!regiaoId||p.regiao_atlas_id===regiaoId)&&
+      (!perguntaId||p.pergunta_curadoria_id===perguntaId)&&
+      (!entradaLoreId||p.entrada_lore_id===entradaLoreId)&&
+      (!parecer||p.parecer===parecer));
+  }
   async function getLoreEntity(id){
     if(typeof id!=="string"||!id.startsWith("lore-hack:"))return null;
     return (await getLoreIndex()).find(e=>e.id===id)??null;
@@ -199,6 +208,7 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   }
   return {getManifest,getCatalog,getIndexes,getRegions,
           getLoreIndex,getLoreIndexIndexes,getLoreChronology,getLoreReviewNotes,
+          getLoreAtlasLinks,getLoreAtlasLinkIndexes,searchLoreAtlasLinks,
           getLoreEntity,searchLore,
           getRegionalDossiers,getRegionalDossier,getRegionalDossierIndexes,
           getResearchBacklog,getResearchBacklogItem,getResearchBacklogIndexes,

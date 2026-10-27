@@ -239,6 +239,18 @@ def build():
     lore_entries=sorted(load("data/lore/hack-carcaca-dw-indice-tematico.json")["entradas"],key=lambda x:x["id"])
     lore_timeline=load("data/lore/hack-carcaca-dw-cronologia.json")
     lore_reviews=load("data/lore/hack-carcaca-dw-pontos-de-revisao.json")
+    lore_crosswalk=sorted(load("data/lore/hack-carcaca-dw-pontes-atlas.json")["pontes"],key=lambda x:x["id"])
+    lore_crosswalk_index={k:defaultdict(set) for k in ("by_regiao","by_pergunta","by_entrada","by_parecer")}
+    for link in lore_crosswalk:
+        for kind,value in (("by_regiao",link["regiao_atlas_id"]),
+                           ("by_pergunta",link["pergunta_curadoria_id"]),
+                           ("by_entrada",link["entrada_lore_id"]),
+                           ("by_parecer",link["parecer"])):
+            add(lore_crosswalk_index[kind],value,link["id"])
+    lore_crosswalk_index={
+        name:{value:sorted(ids) for value,ids in sorted(group.items())}
+        for name,group in lore_crosswalk_index.items()
+    }
     lore_indexes=build_lore_indexes(lore_entries)
     research_priorities=load("data/prioridades_curadoria_m3.json")["prioridades"]
     dependencies=sorted(load("data/dependencias_materiais_costa_sul.json")["dependencias"],key=lambda r:r["id"])
@@ -357,6 +369,8 @@ def build():
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
+        "lore_atlas_links":"lore-atlas-links.json",
+        "lore_atlas_link_indexes":"lore-atlas-link-indexes.json",
         "research_backlog":"research-backlog.json",
         "research_backlog_indexes":"research-backlog-indexes.json",
         "types":"types.json", "fronts":"fronts.json", "settlements":"settlements.json",
@@ -387,6 +401,7 @@ def build():
         "total_eventos_cronologia_manuscrito":len(lore_timeline["eventos"]),
         "total_incognitas_manuscrito":len(lore_timeline["questoes_abertas"]),
         "total_pontos_revisao_manuscrito":len(lore_reviews["revisoes"]),
+        "total_pontes_lore_atlas":len(lore_crosswalk),
         "total_pendencias_curadoria":len(research_backlog),
         "total_pendencias_priorizadas":sum(x["ordem_editorial"] is not None
                                            for x in research_backlog),
@@ -414,6 +429,8 @@ def build():
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,
+        files["lore_atlas_links"]:lore_crosswalk,
+        files["lore_atlas_link_indexes"]:lore_crosswalk_index,
         files["research_backlog"]:research_backlog,
         files["research_backlog_indexes"]:research_backlog_indexes,
         files["indexes"]:indexes,files["regions"]:regions,files["places"]:places,
