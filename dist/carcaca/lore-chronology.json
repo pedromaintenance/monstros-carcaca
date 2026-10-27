@@ -1,0 +1,305 @@
+{
+  "schema_version": "0.1.0",
+  "fonte_id": "fonte:hack-carcaca-dungeon-world-rascunho",
+  "convencao": "EC",
+  "eventos": [
+    {
+      "id": "cronologia-hack:01",
+      "ano_ec": 0,
+      "aproximado": false,
+      "era": "Era dos Dragões",
+      "descricao": "Morte de Golzdov; seu corpo passa a formar o continente.",
+      "pagina": 9,
+      "relacionados": [
+        "Golzdov",
+        "Carcaça"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:02",
+      "ano_ec": 100,
+      "aproximado": true,
+      "era": "Era dos Primeiros Reinos",
+      "descricao": "Emergência aproximada dos primeiros reinos e povoamento de Thargrid; Garganta se consolida como bastião humano.",
+      "pagina": 9,
+      "relacionados": [
+        "Thargrid",
+        "Garganta"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:03",
+      "ano_ec": 211,
+      "aproximado": false,
+      "era": "Era dos Primeiros Reinos",
+      "descricao": "Garganta é estabelecida como cidade-estado livre; Rio Ancestral consolida-se como rota central.",
+      "pagina": 9,
+      "relacionados": [
+        "Garganta",
+        "Rio Ancestral"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:04",
+      "ano_ec": 342,
+      "aproximado": false,
+      "era": "Era dos Primeiros Reinos",
+      "descricao": "Kuo-Toa invadem pelo Mar de Sangue, dominam Costa Sul e avançam até Garganta.",
+      "pagina": 9,
+      "relacionados": [
+        "Kuo-Toa",
+        "Mar de Sangue",
+        "Garganta"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:05",
+      "ano_ec": 351,
+      "aproximado": false,
+      "era": "Era dos Primeiros Reinos",
+      "descricao": "Clãs orcs da Caatinga e humanos de Garganta formam aliança contra os invasores Kuo-Toa.",
+      "pagina": 9,
+      "relacionados": [
+        "Orcs da Caatinga",
+        "Garganta",
+        "Kuo-Toa"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:06",
+      "ano_ec": 358,
+      "aproximado": false,
+      "era": "Era dos Primeiros Reinos",
+      "descricao": "Formação da Confederação dos Ossos perto de Garganta.",
+      "pagina": 9,
+      "relacionados": [
+        "Confederação dos Ossos",
+        "Garganta"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:07",
+      "ano_ec": 501,
+      "aproximado": false,
+      "era": "Era das Fadas",
+      "descricao": "Invasão demoníaca de Shadowfade e refúgio de fadas em Eldroth e Ironwood.",
+      "pagina": 9,
+      "relacionados": [
+        "Shadowfade",
+        "Eldroth",
+        "Ironwood"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:08",
+      "ano_ec": 666,
+      "aproximado": false,
+      "era": "Era das Fadas",
+      "descricao": "Transferência oficial de lordes da Corte para a Carcaça visando relações com nativos e magia.",
+      "pagina": 9,
+      "relacionados": [
+        "Corte Feérica"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:09",
+      "ano_ec": 711,
+      "aproximado": false,
+      "era": "Era das Fadas",
+      "descricao": "Rainha da Noite ergue o Templo das Sombras junto à margem norte do Abismo.",
+      "pagina": 9,
+      "relacionados": [
+        "Rainha da Noite",
+        "Templo das Sombras"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:10",
+      "ano_ec": 875,
+      "aproximado": false,
+      "era": "Era das Fadas",
+      "descricao": "Início das guerras abertas de conquista feérica; Confederação dos Ossos destruída e Dragões Ancestrais despertados.",
+      "pagina": 9,
+      "relacionados": [
+        "Corte Feérica",
+        "Confederação dos Ossos"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:11",
+      "ano_ec": 886,
+      "aproximado": false,
+      "era": "Era da Traição",
+      "descricao": "Voragar trai seu reino, apoia a Rainha e corrompe Dragões Ancestrais a partir de fortaleza na coluna de Golzdov.",
+      "pagina": 9,
+      "relacionados": [
+        "Voragar",
+        "Rainha da Noite"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:12",
+      "ano_ec": 888,
+      "aproximado": false,
+      "era": "Era da Traição",
+      "descricao": "Rayquaza escapa do golpe e se refugia no Reino Sob a Montanha, tornando-se combatente da resistência.",
+      "pagina": 9,
+      "relacionados": [
+        "Rayquaza",
+        "Reino Sob a Montanha"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:13",
+      "ano_ec": 910,
+      "aproximado": false,
+      "era": "Era da Dominação Sombria",
+      "descricao": "Rainha consolida controle continental; Drakport escravista contrasta com resistência de Thargrid e Ironwood.",
+      "pagina": 9,
+      "relacionados": [
+        "Rainha da Noite",
+        "Drakport",
+        "Ironwood"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:14",
+      "ano_ec": 912,
+      "aproximado": false,
+      "era": "Era da Dominação Sombria",
+      "descricao": "Reino Sob a Montanha firma posição como bastião de resistência enquanto regiões do rio, Eldroth e leste são dominadas.",
+      "pagina": 9,
+      "relacionados": [
+        "Reino Sob a Montanha",
+        "Eldroth"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:15",
+      "ano_ec": 921,
+      "aproximado": false,
+      "era": "Era da Dominação Sombria",
+      "descricao": "Voragar e os Dragões Ancestrais são mortos por Rayquaza e seus companheiros; destino posterior de Rayquaza permanece aberto.",
+      "pagina": 9,
+      "relacionados": [
+        "Rayquaza",
+        "Voragar"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:16",
+      "ano_ec": 983,
+      "aproximado": false,
+      "era": "Era da Dominação Sombria",
+      "descricao": "Invasão demoníaca do Abismo destrói o Templo das Sombras.",
+      "pagina": 9,
+      "relacionados": [
+        "Abismo",
+        "Templo das Sombras"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:17",
+      "ano_ec": 984,
+      "aproximado": false,
+      "era": "Era da Dominação Sombria",
+      "descricao": "Gualápolis é tomada no golpe atribuído ao Senhor do Rio.",
+      "pagina": 10,
+      "relacionados": [
+        "Gualápolis",
+        "Ulorian Uln-Shayr"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    },
+    {
+      "id": "cronologia-hack:18",
+      "ano_ec": 999,
+      "aproximado": false,
+      "era": "Era da Dominação Sombria",
+      "descricao": "Construção do Templo do Crepúsculo.",
+      "pagina": 10,
+      "relacionados": [
+        "Templo do Crepúsculo"
+      ],
+      "status": "afirmado_no_rascunho",
+      "uso": "nao_promover_para_timeline_canonica_sem_revisao"
+    }
+  ],
+  "questoes_abertas": [
+    {
+      "id": "incognita-hack:revolta-drakport",
+      "pergunta": "Quando e como os escravizados de Drakport se revoltarão; eventual papel dos rangers de Ironwood",
+      "pagina": 11,
+      "estado": "explicitamente_em_aberto"
+    },
+    {
+      "id": "incognita-hack:futuro-thargrid",
+      "pergunta": "Thargrid resistirá ou será conquistada?",
+      "pagina": 11,
+      "estado": "explicitamente_em_aberto"
+    },
+    {
+      "id": "incognita-hack:destino-yokai",
+      "pergunta": "Onde foram os Yokai antigos e o que significou suspender o direito de nomear?",
+      "pagina": 11,
+      "estado": "explicitamente_em_aberto"
+    },
+    {
+      "id": "incognita-hack:destino-rayquaza",
+      "pergunta": "Qual foi o destino de Rayquaza depois da derrota de Voragar?",
+      "pagina": 11,
+      "estado": "explicitamente_em_aberto"
+    },
+    {
+      "id": "incognita-hack:origem-golzdov",
+      "pergunta": "O que era Golzdov antes de morrer e quem o matou?",
+      "pagina": 11,
+      "estado": "explicitamente_em_aberto"
+    },
+    {
+      "id": "incognita-hack:destino-corte",
+      "pergunta": "A guerra demoníaca consolidará ou dissolverá a Corte?",
+      "pagina": 11,
+      "estado": "explicitamente_em_aberto"
+    },
+    {
+      "id": "incognita-hack:mar-de-sangue",
+      "pergunta": "A corrupção do Mar de Sangue pode ser revertida além de Portomonte?",
+      "pagina": 11,
+      "estado": "explicitamente_em_aberto"
+    }
+  ]
+}
