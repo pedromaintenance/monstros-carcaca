@@ -100,7 +100,7 @@ console.log(dependencia.habilitado_para_compra); // null: revisão obrigatória
 
 ## Classe Guerreiro — transcrição integral (ciclo seguinte)
 
-Os **77 movimentos de Guerreiro** agora possuem texto integral preservado, **137 opções** em parágrafos de lista e **235 partes** com proveniência. O catálogo de 632 movimentos continua indexado; Guerreiro, Bárbaro e Caçador possuem agora o vínculo explícito `texto_integral_disponivel:true`.
+Os **77 movimentos de Guerreiro** agora possuem texto integral preservado, **137 opções** em parágrafos de lista e **235 partes** com proveniência. O catálogo de 632 movimentos continua indexado; Guerreiro, Bárbaro, Caçador e Ladino possuem o vínculo explícito `texto_integral_disponivel:true`.
 
 ```js
 const guerreiro=await atlas.getWarriorMovements();
@@ -113,6 +113,24 @@ const requisito=await atlas.getWarriorRequirementPreview(
 ```
 
 São **30 REQUER**: 27 correspondências exatas candidatas e três condições especiais (*Magia de Guerra*, *Passo Arcano* e *Tiro Arcano*). A checagem de aquisição permanece deliberadamente **não automática**. Consulte [Integração do Guerreiro](docs/INTEGRACAO_GUERREIRO_HACK_DW.md).
+
+## Classe Ladino — quarto grupo integral
+
+O Hack Carcaça agora distribui os **52 movimentos de Ladino** com **89 opções** e **156 trechos** do DOCX, preservados sem reescrita. São **6 REQUER**: quatro referências diretas, uma alternativa **Heist OU Plano B** e uma referência **Perfil** ainda sem movimento correspondente no inventário.
+
+**Cutucar a Ferida** mantém `REQUER: Perfil` sem substituição ou dispensa automática: a lacuna exige revisão autoral. O catálogo totaliza **241 de 632 movimentos de classe transcritos integralmente** (391 ainda apenas inventariados).
+
+```js
+const ladino=await atlas.getRogueMovements();
+const pendentes=await atlas.searchRogueMovements({tipoRequisito:"referencia_sem_alvo"});
+const alternativa=await atlas.getRogueRequirementPreview(
+  "movimento-classe:paragrafo-1619",
+  {movimentosPossuidos:["movimento-classe:paragrafo-1612"]}
+);
+// A presença de Heist pode satisfazer a alternativa textual; habilitado_para_compra: null.
+```
+
+Arquivos: `dist/carcaca/hack-rogue-movements.json` e `hack-rogue-movement-indexes.json`. Consulte a [documentação da integração do Ladino](docs/INTEGRACAO_LADINO_HACK_DW.md).
 
 ## Classe Caçador — terceiro grupo integral
 
