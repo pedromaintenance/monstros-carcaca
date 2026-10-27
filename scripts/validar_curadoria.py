@@ -1303,6 +1303,95 @@ def validar_bardo_integral():
           "4 REQUER diretos e 1 cardinal, sem promoção ao cânone.")
 
 
+
+def validar_artista_marcial_integral():
+    """Confere 42 movimentos integrais do Artista Marcial e a conjunção de VOO."""
+    from hack_movimentos_personagem import build_martial_artist_indexes
+    raw=load("data/lore/hack-carcaca-dw-artista-marcial-integrais.json")
+    inv=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(raw["grupo"]=="ARTISTA MARCIAL" and raw["fonte_sha256"]==inv["fonte_sha256"],
+            "Fonte do Artista Marcial não corresponde ao inventário.")
+    moves=raw["movimentos"]
+    listed={m["id"]:m for m in inv["movimentos"] if m["grupo"]=="ARTISTA MARCIAL"}
+    all_by_id={m["id"]:m for m in inv["movimentos"]}
+    require(len(moves)==len(listed)==42 and len(unique(moves,"artista marcial"))==42,
+            "Todos os 42 movimentos do Artista Marcial precisam ser únicos.")
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves)
+            and moves[0]["paragrafo_docx"]==1862 and moves[-1]["paragrafo_docx"]==1963,
+            "Âncoras documentais Artista Marcial divergentes.")
+    require(raw["integridade"]=={
+        "total_movimentos":42,"total_com_requer":19,"total_vinculos_exatos":18,
+        "total_requer_composto_ou_condicional":1,"total_opcoes":54,"total_partes":101},
+        "Movimentos/partes/opções Artista Marcial não conferem.")
+    seen=set();direct={};special=[]
+    for m in moves:
+        old=listed.get(m["id"])
+        require(old is not None and m["paragrafo_docx"]==old["paragrafo_docx"]
+                and m["titulo"]==old["titulo"]
+                and m["requisito_literal"]==old["requisito_literal"],
+                "Título ou requisito divergente: "+m["id"])
+        require(m["texto_integral_conferido"] is True
+                and m["aplicacao_canonica"] is False
+                and m["estado"]=="transcricao_integral_sem_revisao_mecanica",
+                "Movimento não pode ser promovido ao cânone automaticamente.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
+                "Texto perde continuação na fonte: "+m["id"])
+        require(m["opcoes"]==[
+            {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+            for p in m["partes"] if p["tipo"]=="opcao"],
+            "Opções não correspondem aos parágrafos do manuscrito.")
+        require(m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"]
+                and m["partes"][0]["tipo"]=="corpo",
+                "Corpo inicial sem âncora do DOCX.")
+        for part in m["partes"]:
+            require(part["paragrafo_docx"] not in seen and bool(part["texto"]),
+                    "Parte textual repetida ou vazia.")
+            seen.add(part["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),
+                "Não criar ou dispensar REQUER sem literal.")
+        if not req: continue
+        if req["tipo"]=="movimento_exato":
+            require(req["movimento_id"] in all_by_id
+                    and req["titulo_requerido"]==all_by_id[req["movimento_id"]]["titulo"]
+                    and req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "Requisito direto não identificado literalmente.")
+            direct[m["id"]]=req["movimento_id"]
+        elif req["tipo"]=="todos":
+            require(m["id"]=="movimento-classe:paragrafo-1962"
+                    and m["requisito_literal"]=="Forma do Ar e Corpo Sem Peso"
+                    and req["operador_literal"]=="e"
+                    and req["status"]=="interpretacao_literal_pendente_homologacao",
+                    "VOO exige conjunção, não alternativa.")
+            itens=req["itens"]
+            require([x["tipo"] for x in itens]==["movimento_exato","movimento_exato"]
+                    and [all_by_id[x["movimento_id"]]["titulo"] for x in itens]
+                    ==["FORMA DO AR","CORPO SEM PESO"]
+                    and all(x["movimento_id"]!=m["id"] for x in itens),
+                    "VOO exige Forma do Ar E Corpo Sem Peso, sem auto-dependência.")
+            special.append(m["id"])
+        else:
+            raise AssertionError("Tipo de REQUER desconhecido em Artista Marcial.")
+    require(len(seen)==101 and sum(len(m["opcoes"]) for m in moves)==54
+            and len(direct)==18 and special==["movimento-classe:paragrafo-1962"],
+            "Integridade mecânica/estrutural dos movimentos divergente.")
+    for src in direct:
+        node=src; seen_reqs={src}
+        while node in direct:
+            node=direct[node]
+            require(node not in seen_reqs,"Ciclo de REQUER direto em Artista Marcial.")
+            seen_reqs.add(node)
+    ix=build_martial_artist_indexes(moves)
+    require(len(ix["by_requisito_tipo"]["movimento_exato"])==18
+            and ix["by_requisito_tipo"]["todos"]==special
+            and set(ix["by_requisito_id"]["movimento-classe:paragrafo-1949"])
+            >=set(special)
+            and set(ix["by_requisito_id"]["movimento-classe:paragrafo-1950"])
+            >=set(special),
+            "Índices de pré-requisitos Artista Marcial inconsistentes.")
+    print("Artista Marcial: 42 movimentos, 54 opções, 101 partes; "
+          "18 REQUER diretos e VOO composto. Sem promoção canônica.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1404,6 +1493,7 @@ def main():
     validar_cacador_integral()
     validar_ladino_integral()
     validar_bardo_integral()
+    validar_artista_marcial_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
