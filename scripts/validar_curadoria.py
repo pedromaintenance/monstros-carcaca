@@ -1116,6 +1116,99 @@ def validar_cacador_integral():
           "12 requisitos diretos, 3 especiais, zero promoções.")
 
 
+def validar_ladino_integral():
+    """Conserva os 52 movimentos de Ladino e bloqueia REQUER 'Perfil' sem alvo."""
+    from hack_movimentos_personagem import build_rogue_indexes
+    raw=load("data/lore/hack-carcaca-dw-ladino-integrais.json")
+    inv=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(raw["fonte_sha256"]==inv["fonte_sha256"] and raw["grupo"]=="LADINO",
+            "Fonte ou grupo Ladino incorretos.")
+    moves=raw["movimentos"]
+    listed={m["id"]:m for m in inv["movimentos"] if m["grupo"]=="LADINO"}
+    all_by_id={m["id"]:m for m in inv["movimentos"]}
+    require(len(moves)==len(listed)==52 and len(unique(moves,"ladino"))==52,
+            "O Ladino exige 52 movimentos distintos.")
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves)
+            and moves[0]["paragrafo_docx"]==1588 and moves[-1]["paragrafo_docx"]==1742,
+            "Âncoras dos movimentos Ladino mudaram.")
+    require(raw["integridade"]=={
+      "total_movimentos":52,"total_com_requer":6,"total_vinculos_exatos":4,
+      "total_requer_composto_ou_condicional":1,"total_requer_sem_alvo":1,
+      "total_opcoes":89,"total_partes":156},
+      "Contagem de blocos, opções ou requisitos mudou.")
+    occupied=set();edges={};special={}
+    for m in moves:
+        original=listed.get(m["id"])
+        require(original is not None and m["titulo"]==original["titulo"] and
+                m["paragrafo_docx"]==original["paragrafo_docx"] and
+                m["requisito_literal"]==original["requisito_literal"],
+                "Título ou REQUER diverge do inventário: "+m["id"])
+        require(m["estado"]=="transcricao_integral_sem_revisao_mecanica" and
+                m["texto_integral_conferido"] is True and
+                m["aplicacao_canonica"] is False,
+                "A transcrição não pode alterar o cânone nem aprovar movimento.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
+                "Perda de trecho de Ladino em "+m["id"])
+        require(m["opcoes"]==[
+            {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+            for p in m["partes"] if p["tipo"]=="opcao"],
+                "Opções de Ladino não acompanham as partes documentais.")
+        require(m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"] and
+                m["partes"][0]["tipo"]=="corpo", "Primeira parte do movimento incorreta.")
+        for part in m["partes"]:
+            require(part["paragrafo_docx"] not in occupied and part["texto"],
+                    "Índice documental duplicado ou vazio.")
+            occupied.add(part["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),
+                "Dependência só existe com REQUER literal.")
+        if not req:continue
+        if req["tipo"]=="movimento_exato":
+            require(req["movimento_id"] in all_by_id and
+                    req["titulo_requerido"]==all_by_id[req["movimento_id"]]["titulo"] and
+                    req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "Dependência direta não coincide com a fonte.")
+            edges[m["id"]]=req["movimento_id"]
+        elif req["tipo"]=="qualquer":
+            require(m["paragrafo_docx"]==1619 and
+                    m["requisito_literal"]=="Heist ou Plano B" and
+                    req["operador_literal"]=="ou" and
+                    req["status"]=="interpretacao_literal_pendente_homologacao",
+                    "Tudo Segundo o Plano requer Heist OU Plano B.")
+            require([all_by_id[item["movimento_id"]]["titulo"] for item in req["itens"]]==
+                    ["HEIST","PLANO B"],"Alternativas de Ladino alteradas.")
+            special[1619]="qualquer"
+        elif req["tipo"]=="referencia_sem_alvo":
+            require(m["paragrafo_docx"]==1724 and
+                    m["requisito_literal"]=="Perfil" and
+                    req["texto_literal"]=="Perfil" and
+                    req["candidatos_confirmados"]==[] and
+                    req["status"]=="exige_revisao_autoral_antes_de_qualquer_aquisicao" and
+                    not any(x["titulo"]=="PERFIL" for x in inv["movimentos"]),
+                    "Perfil não foi encontrado; não deve ser inventado ou ignorado.")
+            special[1724]="referencia_sem_alvo"
+        else:raise AssertionError("Tipo de requisito inesperado: "+req["tipo"])
+    require(len(occupied)==156 and sum(len(m["opcoes"]) for m in moves)==89,
+            "Ladino perdeu parágrafos ou opções.")
+    require(len(edges)==4 and special=={1619:"qualquer",1724:"referencia_sem_alvo"},
+            "Contagem de vínculos do Ladino mudou.")
+    for source in edges:
+        seen={source};node=source
+        while node in edges:
+            node=edges[node]
+            require(node not in seen,"Ciclo de pré-requisitos Ladino detectado.")
+            seen.add(node)
+    ix=build_rogue_indexes(moves)
+    require(len(ix["by_requisito_tipo"]["movimento_exato"])==4 and
+            ix["by_requisito_tipo"]["qualquer"]==["movimento-classe:paragrafo-1619"] and
+            ix["by_referencia_sem_alvo"]["Perfil"]==["movimento-classe:paragrafo-1724"] and
+            set(ix["by_requisito_id"]["movimento-classe:paragrafo-1612"]) >=
+                {"movimento-classe:paragrafo-1619"},
+            "Índices de Ladino perderam REQUER OU ou sem alvo.")
+    print("Ladino: 52 movimentos, 89 opções, 156 blocos; 4 requisitos exatos,"
+          " um OU e Perfil sem alvo. Sem aplicação automática.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1215,6 +1308,7 @@ def main():
     validar_guerreiro_integral()
     validar_barbaro_integral()
     validar_cacador_integral()
+    validar_ladino_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
