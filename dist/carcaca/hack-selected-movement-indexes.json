@@ -1,0 +1,262 @@
+{
+  "by_grupo": {
+    "ANÕES DE THARGRID": [
+      "movimento-revisado:paragrafo-845",
+      "movimento-revisado:paragrafo-849"
+    ],
+    "ARQUEÓLOGO": [
+      "movimento-revisado:paragrafo-2820",
+      "movimento-revisado:paragrafo-2821"
+    ],
+    "BARDO": [
+      "movimento-revisado:paragrafo-1821",
+      "movimento-revisado:paragrafo-1843"
+    ],
+    "BÁRBARO": [
+      "movimento-revisado:paragrafo-1320",
+      "movimento-revisado:paragrafo-1330",
+      "movimento-revisado:paragrafo-1342",
+      "movimento-revisado:paragrafo-1359",
+      "movimento-revisado:paragrafo-1379",
+      "movimento-revisado:paragrafo-1406",
+      "movimento-revisado:paragrafo-1428"
+    ],
+    "CAÇADOR": [
+      "movimento-revisado:paragrafo-1473",
+      "movimento-revisado:paragrafo-1481",
+      "movimento-revisado:paragrafo-1515",
+      "movimento-revisado:paragrafo-1520"
+    ],
+    "DRACONATOS DE THARGRID": [
+      "movimento-revisado:paragrafo-884"
+    ],
+    "ELFOS YOKAI": [
+      "movimento-revisado:paragrafo-999"
+    ],
+    "ESCRIBA YOKAI": [
+      "movimento-revisado:paragrafo-2812",
+      "movimento-revisado:paragrafo-2813",
+      "movimento-revisado:paragrafo-2814"
+    ],
+    "GUERREIRO": [
+      "movimento-revisado:paragrafo-1120",
+      "movimento-revisado:paragrafo-1121",
+      "movimento-revisado:paragrafo-1131",
+      "movimento-revisado:paragrafo-1132",
+      "movimento-revisado:paragrafo-1133",
+      "movimento-revisado:paragrafo-1140",
+      "movimento-revisado:paragrafo-1144",
+      "movimento-revisado:paragrafo-1198",
+      "movimento-revisado:paragrafo-1221"
+    ],
+    "HUMANOS": [
+      "movimento-revisado:paragrafo-827",
+      "movimento-revisado:paragrafo-829"
+    ],
+    "LADINO": [
+      "movimento-revisado:paragrafo-1633",
+      "movimento-revisado:paragrafo-1634"
+    ],
+    "MERCENÁRIO": [
+      "movimento-revisado:paragrafo-2736",
+      "movimento-revisado:paragrafo-2801",
+      "movimento-revisado:paragrafo-2802"
+    ],
+    "NOBRE": [
+      "movimento-revisado:paragrafo-2816",
+      "movimento-revisado:paragrafo-2818"
+    ],
+    "ORCS DA CAATINGA": [
+      "movimento-revisado:paragrafo-835"
+    ]
+  },
+  "by_categoria": {
+    "classe": [
+      "movimento-revisado:paragrafo-1120",
+      "movimento-revisado:paragrafo-1121",
+      "movimento-revisado:paragrafo-1131",
+      "movimento-revisado:paragrafo-1132",
+      "movimento-revisado:paragrafo-1133",
+      "movimento-revisado:paragrafo-1140",
+      "movimento-revisado:paragrafo-1144",
+      "movimento-revisado:paragrafo-1198",
+      "movimento-revisado:paragrafo-1221",
+      "movimento-revisado:paragrafo-1320",
+      "movimento-revisado:paragrafo-1330",
+      "movimento-revisado:paragrafo-1342",
+      "movimento-revisado:paragrafo-1359",
+      "movimento-revisado:paragrafo-1379",
+      "movimento-revisado:paragrafo-1406",
+      "movimento-revisado:paragrafo-1428",
+      "movimento-revisado:paragrafo-1473",
+      "movimento-revisado:paragrafo-1481",
+      "movimento-revisado:paragrafo-1515",
+      "movimento-revisado:paragrafo-1520",
+      "movimento-revisado:paragrafo-1633",
+      "movimento-revisado:paragrafo-1634",
+      "movimento-revisado:paragrafo-1821",
+      "movimento-revisado:paragrafo-1843",
+      "movimento-revisado:paragrafo-2736",
+      "movimento-revisado:paragrafo-2801",
+      "movimento-revisado:paragrafo-2802",
+      "movimento-revisado:paragrafo-2812",
+      "movimento-revisado:paragrafo-2813",
+      "movimento-revisado:paragrafo-2814",
+      "movimento-revisado:paragrafo-2816",
+      "movimento-revisado:paragrafo-2818",
+      "movimento-revisado:paragrafo-2820",
+      "movimento-revisado:paragrafo-2821"
+    ],
+    "povo": [
+      "movimento-revisado:paragrafo-827",
+      "movimento-revisado:paragrafo-829",
+      "movimento-revisado:paragrafo-835",
+      "movimento-revisado:paragrafo-845",
+      "movimento-revisado:paragrafo-849",
+      "movimento-revisado:paragrafo-884",
+      "movimento-revisado:paragrafo-999"
+    ]
+  },
+  "by_requisito": {
+    "Abordagem": [
+      "movimento-revisado:paragrafo-2802"
+    ],
+    "Apetites Hercúleos": [
+      "movimento-revisado:paragrafo-1320"
+    ],
+    "Arauto da Tempestade": [
+      "movimento-revisado:paragrafo-1406"
+    ],
+    "Arma Favorita": [
+      "movimento-revisado:paragrafo-1120",
+      "movimento-revisado:paragrafo-1121"
+    ],
+    "Arte Arcana e dois outros Movimentos de Bardo": [
+      "movimento-revisado:paragrafo-1843"
+    ],
+    "Caminhante dos Horizontes e Marca do Caçador": [
+      "movimento-revisado:paragrafo-1520"
+    ],
+    "Canção da Criação": [
+      "movimento-revisado:paragrafo-1821"
+    ],
+    "Capitão": [
+      "movimento-revisado:paragrafo-2801"
+    ],
+    "Caçar e Rastrear": [
+      "movimento-revisado:paragrafo-1481"
+    ],
+    "Companheiro Animal": [
+      "movimento-revisado:paragrafo-1515"
+    ],
+    "Fúria": [
+      "movimento-revisado:paragrafo-1330",
+      "movimento-revisado:paragrafo-1359"
+    ],
+    "Fúria Divina": [
+      "movimento-revisado:paragrafo-1428"
+    ],
+    "Golpe Brutal": [
+      "movimento-revisado:paragrafo-1342"
+    ],
+    "Golpe de Controle": [
+      "movimento-revisado:paragrafo-1144"
+    ],
+    "Gravador de Runas": [
+      "movimento-revisado:paragrafo-1198"
+    ],
+    "Ladrão de Feitiços": [
+      "movimento-revisado:paragrafo-1634"
+    ],
+    "Magia Roubada": [
+      "movimento-revisado:paragrafo-1633"
+    ],
+    "Manifestar Eco": [
+      "movimento-revisado:paragrafo-1221"
+    ],
+    "Marca do Caçador": [
+      "movimento-revisado:paragrafo-1473"
+    ],
+    "Mestre de Batalha": [
+      "movimento-revisado:paragrafo-1133"
+    ],
+    "Os Ancestrais Lutam Comigo": [
+      "movimento-revisado:paragrafo-1379"
+    ],
+    "Segundo Fôlego": [
+      "movimento-revisado:paragrafo-1140"
+    ],
+    "Vendo Vermelho": [
+      "movimento-revisado:paragrafo-1131",
+      "movimento-revisado:paragrafo-1132"
+    ]
+  },
+  "by_pagina_candidata": {
+    "101": [
+      "movimento-revisado:paragrafo-1633",
+      "movimento-revisado:paragrafo-1634"
+    ],
+    "162": [
+      "movimento-revisado:paragrafo-2821"
+    ],
+    "176": [
+      "movimento-revisado:paragrafo-2736"
+    ],
+    "180": [
+      "movimento-revisado:paragrafo-2802",
+      "movimento-revisado:paragrafo-2812",
+      "movimento-revisado:paragrafo-2813",
+      "movimento-revisado:paragrafo-2814",
+      "movimento-revisado:paragrafo-2818",
+      "movimento-revisado:paragrafo-2820"
+    ],
+    "181": [
+      "movimento-revisado:paragrafo-2821"
+    ],
+    "69": [
+      "movimento-revisado:paragrafo-1120",
+      "movimento-revisado:paragrafo-1121"
+    ],
+    "70": [
+      "movimento-revisado:paragrafo-1132",
+      "movimento-revisado:paragrafo-1133",
+      "movimento-revisado:paragrafo-1140"
+    ],
+    "71": [
+      "movimento-revisado:paragrafo-1144"
+    ],
+    "73": [
+      "movimento-revisado:paragrafo-1198"
+    ],
+    "76": [
+      "movimento-revisado:paragrafo-1221"
+    ],
+    "81": [
+      "movimento-revisado:paragrafo-1320"
+    ],
+    "82": [
+      "movimento-revisado:paragrafo-1330"
+    ],
+    "83": [
+      "movimento-revisado:paragrafo-1342"
+    ],
+    "84": [
+      "movimento-revisado:paragrafo-1359",
+      "movimento-revisado:paragrafo-1379"
+    ],
+    "87": [
+      "movimento-revisado:paragrafo-1406"
+    ],
+    "88": [
+      "movimento-revisado:paragrafo-1428"
+    ],
+    "90": [
+      "movimento-revisado:paragrafo-1473",
+      "movimento-revisado:paragrafo-1481"
+    ],
+    "94": [
+      "movimento-revisado:paragrafo-1515",
+      "movimento-revisado:paragrafo-1520"
+    ]
+  }
+}

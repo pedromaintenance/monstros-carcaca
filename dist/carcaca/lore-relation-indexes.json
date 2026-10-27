@@ -1,0 +1,268 @@
+{
+  "by_entidade": {
+    "lore-hack:abissais-marinhos": [
+      "relacao-hack:kuotoa-abissais"
+    ],
+    "lore-hack:annam": [
+      "relacao-hack:annam-gigantes"
+    ],
+    "lore-hack:anoes-thargrid": [
+      "relacao-hack:moradin-anoes"
+    ],
+    "lore-hack:boca-do-abismo": [
+      "relacao-hack:ulorian-boca"
+    ],
+    "lore-hack:carcaca": [
+      "relacao-hack:golzdov-forma-continente"
+    ],
+    "lore-hack:corte-feerica": [
+      "relacao-hack:sarastra-corte"
+    ],
+    "lore-hack:daegon": [
+      "relacao-hack:kuotoa-daegon"
+    ],
+    "lore-hack:damaris-blackthorn": [
+      "relacao-hack:damaris-vandar"
+    ],
+    "lore-hack:direito-de-nomear": [
+      "relacao-hack:yokai-nomeacao"
+    ],
+    "lore-hack:elara-stormoak": [
+      "relacao-hack:elara-ironwood"
+    ],
+    "lore-hack:eldroth": [
+      "relacao-hack:sylara-eldroth"
+    ],
+    "lore-hack:garganta": [
+      "relacao-hack:varys-controla-garganta",
+      "relacao-hack:yolskaariin-templo-garganta"
+    ],
+    "lore-hack:gigantes-thargrid": [
+      "relacao-hack:annam-gigantes"
+    ],
+    "lore-hack:golzdov": [
+      "relacao-hack:golzdov-forma-continente"
+    ],
+    "lore-hack:grama-cortada": [
+      "relacao-hack:hobbits-grama"
+    ],
+    "lore-hack:hobbits": [
+      "relacao-hack:hobbits-grama",
+      "relacao-hack:yondalla-hobbits"
+    ],
+    "lore-hack:ilhas-monasticas": [
+      "relacao-hack:tortles-ilhas"
+    ],
+    "lore-hack:ironwood": [
+      "relacao-hack:elara-ironwood",
+      "relacao-hack:rangers-ironwood",
+      "relacao-hack:resistencia-ironwood"
+    ],
+    "lore-hack:kuo-toa": [
+      "relacao-hack:kuotoa-abissais",
+      "relacao-hack:kuotoa-daegon"
+    ],
+    "lore-hack:moradin": [
+      "relacao-hack:moradin-anoes"
+    ],
+    "lore-hack:portomonte": [
+      "relacao-hack:portomonte-demeter"
+    ],
+    "lore-hack:rangers-ironwood": [
+      "relacao-hack:rangers-ironwood"
+    ],
+    "lore-hack:rayquaza": [
+      "relacao-hack:rayquaza-voragar"
+    ],
+    "lore-hack:reino-sob-montanha": [
+      "relacao-hack:resistencia-reino"
+    ],
+    "lore-hack:resistencia": [
+      "relacao-hack:resistencia-ironwood",
+      "relacao-hack:resistencia-reino"
+    ],
+    "lore-hack:rio-ancestral": [
+      "relacao-hack:templo-lua-rio"
+    ],
+    "lore-hack:sarastra-aestruum": [
+      "relacao-hack:sarastra-corte",
+      "relacao-hack:sarastra-crepusculo"
+    ],
+    "lore-hack:sereias": [
+      "relacao-hack:tritoes-sereias"
+    ],
+    "lore-hack:severina-shadowbloom": [
+      "relacao-hack:severina-templo-lua"
+    ],
+    "lore-hack:sylara-nightwhisper": [
+      "relacao-hack:sylara-eldroth"
+    ],
+    "lore-hack:templo-da-lua": [
+      "relacao-hack:severina-templo-lua",
+      "relacao-hack:templo-lua-rio"
+    ],
+    "lore-hack:templo-das-sombras": [
+      "relacao-hack:xandros-templo-sombras"
+    ],
+    "lore-hack:templo-demeter": [
+      "relacao-hack:portomonte-demeter"
+    ],
+    "lore-hack:templo-do-crepusculo": [
+      "relacao-hack:sarastra-crepusculo"
+    ],
+    "lore-hack:templo-yolskaariin": [
+      "relacao-hack:yolskaariin-templo-garganta"
+    ],
+    "lore-hack:tortles": [
+      "relacao-hack:tortles-ilhas"
+    ],
+    "lore-hack:tritoes": [
+      "relacao-hack:tritoes-sereias"
+    ],
+    "lore-hack:ulorian-uln-shayr": [
+      "relacao-hack:ulorian-boca"
+    ],
+    "lore-hack:vandar": [
+      "relacao-hack:damaris-vandar"
+    ],
+    "lore-hack:varys-duskveil": [
+      "relacao-hack:varys-controla-garganta"
+    ],
+    "lore-hack:voragar": [
+      "relacao-hack:rayquaza-voragar"
+    ],
+    "lore-hack:xandros-gloomspire": [
+      "relacao-hack:xandros-templo-sombras"
+    ],
+    "lore-hack:yokai-antigos": [
+      "relacao-hack:yokai-nomeacao"
+    ],
+    "lore-hack:yondalla": [
+      "relacao-hack:yondalla-hobbits"
+    ]
+  },
+  "by_tipo": {
+    "agricultura": [
+      "relacao-hack:hobbits-grama"
+    ],
+    "alianca_descentralizada": [
+      "relacao-hack:resistencia-ironwood",
+      "relacao-hack:resistencia-reino"
+    ],
+    "alianca_maritima": [
+      "relacao-hack:tritoes-sereias"
+    ],
+    "autoridade_ritual": [
+      "relacao-hack:severina-templo-lua",
+      "relacao-hack:xandros-templo-sombras"
+    ],
+    "base_resistencia": [
+      "relacao-hack:rangers-ironwood"
+    ],
+    "conflito_familiar": [
+      "relacao-hack:rayquaza-voragar"
+    ],
+    "cooperacao_ritual": [
+      "relacao-hack:kuotoa-abissais"
+    ],
+    "culto": [
+      "relacao-hack:annam-gigantes",
+      "relacao-hack:kuotoa-daegon",
+      "relacao-hack:moradin-anoes",
+      "relacao-hack:yondalla-hobbits"
+    ],
+    "dominio_politico": [
+      "relacao-hack:varys-controla-garganta"
+    ],
+    "fundacao_fortaleza": [
+      "relacao-hack:ulorian-boca"
+    ],
+    "fundacao_palacio": [
+      "relacao-hack:sarastra-crepusculo"
+    ],
+    "fundamento_geografico": [
+      "relacao-hack:golzdov-forma-continente"
+    ],
+    "habitat_insular": [
+      "relacao-hack:tortles-ilhas"
+    ],
+    "instituicao_religiosa": [
+      "relacao-hack:yolskaariin-templo-garganta"
+    ],
+    "lideranca": [
+      "relacao-hack:elara-ironwood"
+    ],
+    "localizacao": [
+      "relacao-hack:templo-lua-rio"
+    ],
+    "ocupacao_militar": [
+      "relacao-hack:damaris-vandar",
+      "relacao-hack:sylara-eldroth"
+    ],
+    "purificacao_para_lavoura": [
+      "relacao-hack:portomonte-demeter"
+    ],
+    "soberania": [
+      "relacao-hack:sarastra-corte"
+    ],
+    "tradicao_ritual": [
+      "relacao-hack:yokai-nomeacao"
+    ]
+  },
+  "by_pagina": {
+    "14": [
+      "relacao-hack:tortles-ilhas"
+    ],
+    "15": [
+      "relacao-hack:tritoes-sereias"
+    ],
+    "17": [
+      "relacao-hack:yokai-nomeacao"
+    ],
+    "18": [
+      "relacao-hack:rangers-ironwood"
+    ],
+    "19": [
+      "relacao-hack:hobbits-grama"
+    ],
+    "2": [
+      "relacao-hack:golzdov-forma-continente",
+      "relacao-hack:varys-controla-garganta"
+    ],
+    "22": [
+      "relacao-hack:annam-gigantes",
+      "relacao-hack:moradin-anoes"
+    ],
+    "23": [
+      "relacao-hack:yondalla-hobbits"
+    ],
+    "3": [
+      "relacao-hack:yolskaariin-templo-garganta"
+    ],
+    "4": [
+      "relacao-hack:severina-templo-lua",
+      "relacao-hack:templo-lua-rio"
+    ],
+    "5": [
+      "relacao-hack:damaris-vandar",
+      "relacao-hack:kuotoa-abissais",
+      "relacao-hack:kuotoa-daegon",
+      "relacao-hack:portomonte-demeter",
+      "relacao-hack:sylara-eldroth",
+      "relacao-hack:xandros-templo-sombras"
+    ],
+    "6": [
+      "relacao-hack:elara-ironwood",
+      "relacao-hack:sarastra-crepusculo",
+      "relacao-hack:ulorian-boca"
+    ],
+    "7": [
+      "relacao-hack:rayquaza-voragar",
+      "relacao-hack:resistencia-ironwood",
+      "relacao-hack:resistencia-reino"
+    ],
+    "8": [
+      "relacao-hack:sarastra-corte"
+    ]
+  }
+}
