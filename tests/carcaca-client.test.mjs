@@ -43,7 +43,8 @@ const fixtures={
     hack_docx_tables:"hack-docx-tables.json",
     hack_docx_table_indexes:"hack-docx-table-indexes.json",
     hack_general_movements:"hack-general-movements.json",
-    hack_general_movement_indexes:"hack-general-movement-indexes.json"}},
+    hack_general_movement_indexes:"hack-general-movement-indexes.json",
+    hack_core_rules:"hack-core-rules.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -83,6 +84,9 @@ const fixtures={
   "hack-complete-pilot-movement-indexes.json":{by_grupo:{
      "HUMANOS":["movimento-integral:paragrafo-829"],
      "ORCS DA CAATINGA":["movimento-integral:paragrafo-837"]}},
+  "hack-core-rules.json":{id:"regras-hack:carcaca-dw-nucleo",aplicacao_canonica:false,
+    personagens:{movimentos_proprios_nivel_1:5,distribuicao_numerica_por_origem:null,
+                 valores_iniciais_para_distribuir:[16,15,13,12,9,8]}},
   "hack-general-movements.json":[
     {id:"movimento-geral:docx-30",titulo:"RECRUTAR",categoria:"avancado",
      quadro_id:"quadro-geral-docx:30",texto_original:"Quando espalhar que está procurando alguém para contratar, role.\nCom 10+: escolha candidatos.",
@@ -1029,4 +1033,12 @@ test("movimentos gerais do Hack distinguem Recrutar de Mandados Pendentes",async
   assert.equal(await atlas.getGeneralMovement("movimento-geral:docx-99"),null);
   const indices=await atlas.getGeneralMovementIndexes();
   assert.equal(indices.by_categoria.avancado.length,2);
+});
+
+test("núcleo do Hack preserva cinco movimentos iniciais sem inventar distribuição",async()=>{
+  const regras=await atlas.getHackCoreRules();
+  assert.equal(regras.personagens.movimentos_proprios_nivel_1,5);
+  assert.equal(regras.personagens.distribuicao_numerica_por_origem,null);
+  assert.deepEqual(regras.personagens.valores_iniciais_para_distribuir,[16,15,13,12,9,8]);
+  assert.equal(regras.aplicacao_canonica,false);
 });
