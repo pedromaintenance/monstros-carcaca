@@ -1,0 +1,332 @@
+{
+  "by_requisito_tipo": {
+    "movimento_exato": [
+      "movimento-classe:paragrafo-1799",
+      "movimento-classe:paragrafo-1821",
+      "movimento-classe:paragrafo-1842",
+      "movimento-classe:paragrafo-1845"
+    ],
+    "nenhum": [
+      "movimento-classe:paragrafo-1753",
+      "movimento-classe:paragrafo-1760",
+      "movimento-classe:paragrafo-1761",
+      "movimento-classe:paragrafo-1762",
+      "movimento-classe:paragrafo-1763",
+      "movimento-classe:paragrafo-1764",
+      "movimento-classe:paragrafo-1765",
+      "movimento-classe:paragrafo-1771",
+      "movimento-classe:paragrafo-1772",
+      "movimento-classe:paragrafo-1773",
+      "movimento-classe:paragrafo-1774",
+      "movimento-classe:paragrafo-1780",
+      "movimento-classe:paragrafo-1787",
+      "movimento-classe:paragrafo-1789",
+      "movimento-classe:paragrafo-1793",
+      "movimento-classe:paragrafo-1798",
+      "movimento-classe:paragrafo-1800",
+      "movimento-classe:paragrafo-1801",
+      "movimento-classe:paragrafo-1802",
+      "movimento-classe:paragrafo-1808",
+      "movimento-classe:paragrafo-1809",
+      "movimento-classe:paragrafo-1810",
+      "movimento-classe:paragrafo-1812",
+      "movimento-classe:paragrafo-1816",
+      "movimento-classe:paragrafo-1829",
+      "movimento-classe:paragrafo-1836",
+      "movimento-classe:paragrafo-1851"
+    ],
+    "todos": [
+      "movimento-classe:paragrafo-1843"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-1753",
+      "movimento-classe:paragrafo-1760",
+      "movimento-classe:paragrafo-1761",
+      "movimento-classe:paragrafo-1762",
+      "movimento-classe:paragrafo-1763",
+      "movimento-classe:paragrafo-1764",
+      "movimento-classe:paragrafo-1765",
+      "movimento-classe:paragrafo-1771",
+      "movimento-classe:paragrafo-1772",
+      "movimento-classe:paragrafo-1773",
+      "movimento-classe:paragrafo-1774",
+      "movimento-classe:paragrafo-1780",
+      "movimento-classe:paragrafo-1787",
+      "movimento-classe:paragrafo-1789",
+      "movimento-classe:paragrafo-1793",
+      "movimento-classe:paragrafo-1798",
+      "movimento-classe:paragrafo-1800",
+      "movimento-classe:paragrafo-1801",
+      "movimento-classe:paragrafo-1802",
+      "movimento-classe:paragrafo-1808",
+      "movimento-classe:paragrafo-1809",
+      "movimento-classe:paragrafo-1810",
+      "movimento-classe:paragrafo-1812",
+      "movimento-classe:paragrafo-1816",
+      "movimento-classe:paragrafo-1829",
+      "movimento-classe:paragrafo-1836",
+      "movimento-classe:paragrafo-1851"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-1799",
+      "movimento-classe:paragrafo-1821",
+      "movimento-classe:paragrafo-1842",
+      "movimento-classe:paragrafo-1843",
+      "movimento-classe:paragrafo-1845"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-1760",
+      "movimento-classe:paragrafo-1761",
+      "movimento-classe:paragrafo-1762",
+      "movimento-classe:paragrafo-1763",
+      "movimento-classe:paragrafo-1764",
+      "movimento-classe:paragrafo-1771",
+      "movimento-classe:paragrafo-1772",
+      "movimento-classe:paragrafo-1773",
+      "movimento-classe:paragrafo-1780",
+      "movimento-classe:paragrafo-1787",
+      "movimento-classe:paragrafo-1793",
+      "movimento-classe:paragrafo-1798",
+      "movimento-classe:paragrafo-1799",
+      "movimento-classe:paragrafo-1800",
+      "movimento-classe:paragrafo-1801",
+      "movimento-classe:paragrafo-1808",
+      "movimento-classe:paragrafo-1809",
+      "movimento-classe:paragrafo-1810",
+      "movimento-classe:paragrafo-1816",
+      "movimento-classe:paragrafo-1821",
+      "movimento-classe:paragrafo-1829",
+      "movimento-classe:paragrafo-1836",
+      "movimento-classe:paragrafo-1842",
+      "movimento-classe:paragrafo-1843"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-1753",
+      "movimento-classe:paragrafo-1765",
+      "movimento-classe:paragrafo-1774",
+      "movimento-classe:paragrafo-1789",
+      "movimento-classe:paragrafo-1802",
+      "movimento-classe:paragrafo-1812",
+      "movimento-classe:paragrafo-1845",
+      "movimento-classe:paragrafo-1851"
+    ]
+  },
+  "by_paragrafo": {
+    "1753": [
+      "movimento-classe:paragrafo-1753"
+    ],
+    "1760": [
+      "movimento-classe:paragrafo-1760"
+    ],
+    "1761": [
+      "movimento-classe:paragrafo-1761"
+    ],
+    "1762": [
+      "movimento-classe:paragrafo-1762"
+    ],
+    "1763": [
+      "movimento-classe:paragrafo-1763"
+    ],
+    "1764": [
+      "movimento-classe:paragrafo-1764"
+    ],
+    "1765": [
+      "movimento-classe:paragrafo-1765"
+    ],
+    "1771": [
+      "movimento-classe:paragrafo-1771"
+    ],
+    "1772": [
+      "movimento-classe:paragrafo-1772"
+    ],
+    "1773": [
+      "movimento-classe:paragrafo-1773"
+    ],
+    "1774": [
+      "movimento-classe:paragrafo-1774"
+    ],
+    "1780": [
+      "movimento-classe:paragrafo-1780"
+    ],
+    "1787": [
+      "movimento-classe:paragrafo-1787"
+    ],
+    "1789": [
+      "movimento-classe:paragrafo-1789"
+    ],
+    "1793": [
+      "movimento-classe:paragrafo-1793"
+    ],
+    "1798": [
+      "movimento-classe:paragrafo-1798"
+    ],
+    "1799": [
+      "movimento-classe:paragrafo-1799"
+    ],
+    "1800": [
+      "movimento-classe:paragrafo-1800"
+    ],
+    "1801": [
+      "movimento-classe:paragrafo-1801"
+    ],
+    "1802": [
+      "movimento-classe:paragrafo-1802"
+    ],
+    "1808": [
+      "movimento-classe:paragrafo-1808"
+    ],
+    "1809": [
+      "movimento-classe:paragrafo-1809"
+    ],
+    "1810": [
+      "movimento-classe:paragrafo-1810"
+    ],
+    "1812": [
+      "movimento-classe:paragrafo-1812"
+    ],
+    "1816": [
+      "movimento-classe:paragrafo-1816"
+    ],
+    "1821": [
+      "movimento-classe:paragrafo-1821"
+    ],
+    "1829": [
+      "movimento-classe:paragrafo-1829"
+    ],
+    "1836": [
+      "movimento-classe:paragrafo-1836"
+    ],
+    "1842": [
+      "movimento-classe:paragrafo-1842"
+    ],
+    "1843": [
+      "movimento-classe:paragrafo-1843"
+    ],
+    "1845": [
+      "movimento-classe:paragrafo-1845"
+    ],
+    "1851": [
+      "movimento-classe:paragrafo-1851"
+    ]
+  },
+  "by_requisito_id": {
+    "movimento-classe:paragrafo-1753": [
+      "movimento-classe:paragrafo-1842",
+      "movimento-classe:paragrafo-1843",
+      "movimento-classe:paragrafo-1845"
+    ],
+    "movimento-classe:paragrafo-1798": [
+      "movimento-classe:paragrafo-1799"
+    ],
+    "movimento-classe:paragrafo-1816": [
+      "movimento-classe:paragrafo-1821"
+    ]
+  },
+  "by_quantidade_minima_grupo": {
+    "BARDO:2": [
+      "movimento-classe:paragrafo-1843"
+    ]
+  },
+  "by_titulo": {
+    "A ARTE REVELA": [
+      "movimento-classe:paragrafo-1836"
+    ],
+    "A CANÇÃO QUE FEZ O MUNDO": [
+      "movimento-classe:paragrafo-1843"
+    ],
+    "A DANÇA DAS COISAS": [
+      "movimento-classe:paragrafo-1821"
+    ],
+    "A INTERNACIONAL SOCIALISTA": [
+      "movimento-classe:paragrafo-1851"
+    ],
+    "A MULTIDÃO QUER SANGUE": [
+      "movimento-classe:paragrafo-1774"
+    ],
+    "ARTE ARCANA": [
+      "movimento-classe:paragrafo-1753"
+    ],
+    "BALADA DE GUERRA": [
+      "movimento-classe:paragrafo-1762"
+    ],
+    "CANÇÃO DA CRIAÇÃO": [
+      "movimento-classe:paragrafo-1816"
+    ],
+    "CHARMOSO E ABERTO": [
+      "movimento-classe:paragrafo-1780"
+    ],
+    "CONHECIMENTO DE BARDO": [
+      "movimento-classe:paragrafo-1760"
+    ],
+    "CONHEÇO UMA HISTÓRIA": [
+      "movimento-classe:paragrafo-1764"
+    ],
+    "CONTOS DOS ESPÍRITOS": [
+      "movimento-classe:paragrafo-1829"
+    ],
+    "CONTRACANTO": [
+      "movimento-classe:paragrafo-1802"
+    ],
+    "ESTA CANÇÃO É SOBRE VOCÊ": [
+      "movimento-classe:paragrafo-1761"
+    ],
+    "EU CONHEÇO ALGUÉM": [
+      "movimento-classe:paragrafo-1793"
+    ],
+    "FALE O QUE ELES JÁ SABEM": [
+      "movimento-classe:paragrafo-1771"
+    ],
+    "GLAMOUR": [
+      "movimento-classe:paragrafo-1810"
+    ],
+    "HARMONIA ARCANA": [
+      "movimento-classe:paragrafo-1842"
+    ],
+    "HOJE A FESTA É SUA, HOJE A FESTA É NOSSA": [
+      "movimento-classe:paragrafo-1845"
+    ],
+    "INSPIRAÇÃO BÁRDICA": [
+      "movimento-classe:paragrafo-1798"
+    ],
+    "INSPIRAÇÃO CONTAGIOSA": [
+      "movimento-classe:paragrafo-1799"
+    ],
+    "LINGUAGEM UNIVERSAL": [
+      "movimento-classe:paragrafo-1808"
+    ],
+    "MANTO DE INSPIRAÇÃO": [
+      "movimento-classe:paragrafo-1809"
+    ],
+    "METAL ENSURDECEDOR": [
+      "movimento-classe:paragrafo-1765"
+    ],
+    "MEU NOME NÃO IMPORTA": [
+      "movimento-classe:paragrafo-1773"
+    ],
+    "OUVIDO PARA MAGIA": [
+      "movimento-classe:paragrafo-1801"
+    ],
+    "PALAVRAS CORTANTES": [
+      "movimento-classe:paragrafo-1800"
+    ],
+    "REPUTAÇÃO": [
+      "movimento-classe:paragrafo-1787"
+    ],
+    "SATIRISTA": [
+      "movimento-classe:paragrafo-1763"
+    ],
+    "SUSSURROS DE TERROR": [
+      "movimento-classe:paragrafo-1812"
+    ],
+    "UM PORTO NA TEMPESTADE": [
+      "movimento-classe:paragrafo-1789"
+    ],
+    "UMA FAÍSCA": [
+      "movimento-classe:paragrafo-1772"
+    ]
+  }
+}

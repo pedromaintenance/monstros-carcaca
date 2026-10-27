@@ -1,0 +1,1251 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-1753",
+    "paragrafo_docx": 1753,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "ARTE ARCANA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1753,
+        "tipo": "corpo",
+        "texto": "Escolha uma forma de performance: canto, instrumento, dança, poesia, narrativa, oratória ou semelhante.\nQuando incorporar magia à sua performance diante de alguém capaz de percebê-la, escolha um efeito e role+CAR:"
+      },
+      {
+        "paragrafo_docx": 1754,
+        "tipo": "opcao",
+        "texto": "curar ou aliviar;"
+      },
+      {
+        "paragrafo_docx": 1755,
+        "tipo": "opcao",
+        "texto": "fortalecer coragem;"
+      },
+      {
+        "paragrafo_docx": 1756,
+        "tipo": "opcao",
+        "texto": "despertar emoção;"
+      },
+      {
+        "paragrafo_docx": 1757,
+        "tipo": "opcao",
+        "texto": "chamar atenção;"
+      },
+      {
+        "paragrafo_docx": 1758,
+        "tipo": "opcao",
+        "texto": "quebrar silêncio ou encantamento emocional."
+      },
+      {
+        "paragrafo_docx": 1759,
+        "tipo": "continuacao",
+        "texto": "10+: o efeito ocorre como desejado.\n7–9: ocorre, mas o Mestre escolhe: atrai atenção indesejada, afeta alguém além do pretendido ou exige que você continue a performance."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1754,
+        "texto": "curar ou aliviar;"
+      },
+      {
+        "paragrafo_docx": 1755,
+        "texto": "fortalecer coragem;"
+      },
+      {
+        "paragrafo_docx": 1756,
+        "texto": "despertar emoção;"
+      },
+      {
+        "paragrafo_docx": 1757,
+        "texto": "chamar atenção;"
+      },
+      {
+        "paragrafo_docx": 1758,
+        "texto": "quebrar silêncio ou encantamento emocional."
+      }
+    ],
+    "texto_original": "Escolha uma forma de performance: canto, instrumento, dança, poesia, narrativa, oratória ou semelhante.\nQuando incorporar magia à sua performance diante de alguém capaz de percebê-la, escolha um efeito e role+CAR:\ncurar ou aliviar;\nfortalecer coragem;\ndespertar emoção;\nchamar atenção;\nquebrar silêncio ou encantamento emocional.\n10+: o efeito ocorre como desejado.\n7–9: ocorre, mas o Mestre escolhe: atrai atenção indesejada, afeta alguém além do pretendido ou exige que você continue a performance.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1753"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1760",
+    "paragrafo_docx": 1760,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "CONHECIMENTO DE BARDO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1760,
+        "tipo": "corpo",
+        "texto": "Escolha uma área estranhamente específica de conhecimento. Quando encontrar algo importante relacionado a ela, pergunte ao Mestre uma coisa sobre aquilo. A resposta será verdadeira."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha uma área estranhamente específica de conhecimento. Quando encontrar algo importante relacionado a ela, pergunte ao Mestre uma coisa sobre aquilo. A resposta será verdadeira.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1760"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1761",
+    "paragrafo_docx": 1761,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "ESTA CANÇÃO É SOBRE VOCÊ",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1761,
+        "tipo": "corpo",
+        "texto": "Quando transformar diante de uma audiência os feitos de alguém em música, poesia ou história, sua reputação naquela comunidade passa a incluir aquilo que você contou — verdadeiro ou não. A mentira poderá cobrar seu preço depois."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando transformar diante de uma audiência os feitos de alguém em música, poesia ou história, sua reputação naquela comunidade passa a incluir aquilo que você contou — verdadeiro ou não. A mentira poderá cobrar seu preço depois.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1761"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1762",
+    "paragrafo_docx": 1762,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "BALADA DE GUERRA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1762,
+        "tipo": "corpo",
+        "texto": "Quando conduzir aliados em canto, ritmo ou discurso antes de uma batalha, cada participante recebe +1 adiante na primeira vez em que agir de acordo com o sentimento que você despertou."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando conduzir aliados em canto, ritmo ou discurso antes de uma batalha, cada participante recebe +1 adiante na primeira vez em que agir de acordo com o sentimento que você despertou.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1762"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1763",
+    "paragrafo_docx": 1763,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "SATIRISTA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1763,
+        "tipo": "corpo",
+        "texto": "Quando ridicularizar publicamente uma figura poderosa e sua audiência compreender exatamente o alvo, pergunte:\n“O que sobre essa pessoa todos pensam, mas ninguém ousava dizer?”"
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando ridicularizar publicamente uma figura poderosa e sua audiência compreender exatamente o alvo, pergunte:\n“O que sobre essa pessoa todos pensam, mas ninguém ousava dizer?”",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1763"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1764",
+    "paragrafo_docx": 1764,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "CONHEÇO UMA HISTÓRIA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1764,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando alguém perguntar “você conhece alguma coisa sobre isso?”, diga onde ouviu uma história relacionada e Fale Difícil com +CAR em vez de +INT. Se sua história criar um PNJ nomeado que se tornará relevante no futuro, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando alguém perguntar “você conhece alguma coisa sobre isso?”, diga onde ouviu uma história relacionada e Fale Difícil com +CAR em vez de +INT. Se sua história criar um PNJ nomeado que se tornará relevante no futuro, marque 1 XP.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1764"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1765",
+    "paragrafo_docx": 1765,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "METAL ENSURDECEDOR",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1765,
+        "tipo": "corpo",
+        "texto": "Quando executar uma performance deliberadamente agressiva para quebrar concentração, assustar ou desorientar, role+CAR. \nEm um sucesso, cause dano mental e também:\n10+: escolha 2.\n7–9: escolha 1 e se coloque em perigo."
+      },
+      {
+        "paragrafo_docx": 1766,
+        "tipo": "opcao",
+        "texto": "alguém perde a concentração;"
+      },
+      {
+        "paragrafo_docx": 1767,
+        "tipo": "opcao",
+        "texto": "criaturas hesitam;"
+      },
+      {
+        "paragrafo_docx": 1768,
+        "tipo": "opcao",
+        "texto": "algo vibra, quebra ou cai;"
+      },
+      {
+        "paragrafo_docx": 1769,
+        "tipo": "opcao",
+        "texto": "um demônio aparece para apreciar a música e age conforme o seu próprio instinto;"
+      },
+      {
+        "paragrafo_docx": 1770,
+        "tipo": "opcao",
+        "texto": "seus aliados ignoram medo imediato."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1766,
+        "texto": "alguém perde a concentração;"
+      },
+      {
+        "paragrafo_docx": 1767,
+        "texto": "criaturas hesitam;"
+      },
+      {
+        "paragrafo_docx": 1768,
+        "texto": "algo vibra, quebra ou cai;"
+      },
+      {
+        "paragrafo_docx": 1769,
+        "texto": "um demônio aparece para apreciar a música e age conforme o seu próprio instinto;"
+      },
+      {
+        "paragrafo_docx": 1770,
+        "texto": "seus aliados ignoram medo imediato."
+      }
+    ],
+    "texto_original": "Quando executar uma performance deliberadamente agressiva para quebrar concentração, assustar ou desorientar, role+CAR. \nEm um sucesso, cause dano mental e também:\n10+: escolha 2.\n7–9: escolha 1 e se coloque em perigo.\nalguém perde a concentração;\ncriaturas hesitam;\nalgo vibra, quebra ou cai;\num demônio aparece para apreciar a música e age conforme o seu próprio instinto;\nseus aliados ignoram medo imediato.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1765"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1771",
+    "paragrafo_docx": 1771,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "FALE O QUE ELES JÁ SABEM",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1771,
+        "tipo": "corpo",
+        "texto": "Quando falar diante de pessoas oprimidas e colocar em palavras uma injustiça que elas próprias vivem, pergunte:\n“O que elas já desejavam fazer antes mesmo de eu chegar?”"
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando falar diante de pessoas oprimidas e colocar em palavras uma injustiça que elas próprias vivem, pergunte:\n“O que elas já desejavam fazer antes mesmo de eu chegar?”",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1771"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1772",
+    "paragrafo_docx": 1772,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "UMA FAÍSCA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1772,
+        "tipo": "corpo",
+        "texto": "Quando transformar uma indignação coletiva existente em ação concreta, role+CAR.\n10+: a multidão age e mantém um objetivo comum.\n7–9: ela age, mas escolha: divide-se; exagera; exige que você lidere pessoalmente; ou alguém inocente corre perigo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando transformar uma indignação coletiva existente em ação concreta, role+CAR.\n10+: a multidão age e mantém um objetivo comum.\n7–9: ela age, mas escolha: divide-se; exagera; exige que você lidere pessoalmente; ou alguém inocente corre perigo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1772"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1773",
+    "paragrafo_docx": 1773,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "MEU NOME NÃO IMPORTA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1773,
+        "tipo": "corpo",
+        "texto": "Quando recusar deliberadamente crédito por uma vitória política e entregá-lo à comunidade, marque 1 XP e pergunte quem passa a ser reconhecido como liderança local."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando recusar deliberadamente crédito por uma vitória política e entregá-lo à comunidade, marque 1 XP e pergunte quem passa a ser reconhecido como liderança local.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1773"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1774",
+    "paragrafo_docx": 1774,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "A MULTIDÃO QUER SANGUE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1774,
+        "tipo": "corpo",
+        "texto": "Quando lutar diante de uma audiência e fizer deliberadamente algo espetacular em vez de eficiente, receba Domínio 1 sobre a multidão. Gaste para:"
+      },
+      {
+        "paragrafo_docx": 1775,
+        "tipo": "opcao",
+        "texto": "fazê-la exigir misericórdia;"
+      },
+      {
+        "paragrafo_docx": 1776,
+        "tipo": "opcao",
+        "texto": "fazê-la exigir sangue;"
+      },
+      {
+        "paragrafo_docx": 1777,
+        "tipo": "opcao",
+        "texto": "fazê-la vaiar uma interferência, e voltar-se violentamente contra ela se ignorada;"
+      },
+      {
+        "paragrafo_docx": 1778,
+        "tipo": "opcao",
+        "texto": "dar +1 a uma tentativa de Negociar com quem depende da aprovação dela."
+      },
+      {
+        "paragrafo_docx": 1779,
+        "tipo": "continuacao",
+        "texto": "Você não pode ganhar mais Domínio deste movimento antes de gastá-lo."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1775,
+        "texto": "fazê-la exigir misericórdia;"
+      },
+      {
+        "paragrafo_docx": 1776,
+        "texto": "fazê-la exigir sangue;"
+      },
+      {
+        "paragrafo_docx": 1777,
+        "texto": "fazê-la vaiar uma interferência, e voltar-se violentamente contra ela se ignorada;"
+      },
+      {
+        "paragrafo_docx": 1778,
+        "texto": "dar +1 a uma tentativa de Negociar com quem depende da aprovação dela."
+      }
+    ],
+    "texto_original": "Quando lutar diante de uma audiência e fizer deliberadamente algo espetacular em vez de eficiente, receba Domínio 1 sobre a multidão. Gaste para:\nfazê-la exigir misericórdia;\nfazê-la exigir sangue;\nfazê-la vaiar uma interferência, e voltar-se violentamente contra ela se ignorada;\ndar +1 a uma tentativa de Negociar com quem depende da aprovação dela.\nVocê não pode ganhar mais Domínio deste movimento antes de gastá-lo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1774"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1780",
+    "paragrafo_docx": 1780,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "CHARMOSO E ABERTO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1780,
+        "tipo": "corpo",
+        "texto": "Quando falar francamente com alguém num momento em que ambos realmente possam se ouvir e revelar algo verdadeiro sobre si mesmo, faça uma pergunta:"
+      },
+      {
+        "paragrafo_docx": 1781,
+        "tipo": "continuacao",
+        "texto": "A quem você realmente serve?"
+      },
+      {
+        "paragrafo_docx": 1782,
+        "tipo": "continuacao",
+        "texto": "O que gostaria que eu fizesse?"
+      },
+      {
+        "paragrafo_docx": 1783,
+        "tipo": "continuacao",
+        "texto": "O que está realmente sentindo agora?"
+      },
+      {
+        "paragrafo_docx": 1784,
+        "tipo": "continuacao",
+        "texto": "O que mais deseja?"
+      },
+      {
+        "paragrafo_docx": 1785,
+        "tipo": "continuacao",
+        "texto": "Como eu poderia fazer você ______?"
+      },
+      {
+        "paragrafo_docx": 1786,
+        "tipo": "continuacao",
+        "texto": "A pessoa responderá honestamente. Depois, ela pode fazer a você uma das mesmas perguntas. Se fizer, você também precisa responder honestamente para manter essa abertura entre vocês."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando falar francamente com alguém num momento em que ambos realmente possam se ouvir e revelar algo verdadeiro sobre si mesmo, faça uma pergunta:\nA quem você realmente serve?\nO que gostaria que eu fizesse?\nO que está realmente sentindo agora?\nO que mais deseja?\nComo eu poderia fazer você ______?\nA pessoa responderá honestamente. Depois, ela pode fazer a você uma das mesmas perguntas. Se fizer, você também precisa responder honestamente para manter essa abertura entre vocês.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1780"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1787",
+    "paragrafo_docx": 1787,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "REPUTAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1787,
+        "tipo": "corpo",
+        "texto": "Quando encontrar pela primeira vez alguém que já ouviu falar de você ou de sua obra, diga uma coisa que essa pessoa ouviu a seu respeito. O Mestre dirá outra. Verdadeiras ou não, ambas fazem parte da impressão inicial que ela possui sobre você até que alguma coisa as contradiga."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando encontrar pela primeira vez alguém que já ouviu falar de você ou de sua obra, diga uma coisa que essa pessoa ouviu a seu respeito. O Mestre dirá outra. Verdadeiras ou não, ambas fazem parte da impressão inicial que ela possui sobre você até que alguma coisa as contradiga.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1787"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1789",
+    "paragrafo_docx": 1789,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "UM PORTO NA TEMPESTADE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1789,
+        "tipo": "corpo",
+        "texto": "Quando retornar a um assentamento civilizado onde já tenha passado algum tempo, diga que apresentação, história, amizade, escândalo ou lembrança deixou ali. O Mestre dirá:"
+      },
+      {
+        "paragrafo_docx": 1790,
+        "tipo": "opcao",
+        "texto": "como o lugar mudou desde sua última visita;"
+      },
+      {
+        "paragrafo_docx": 1791,
+        "tipo": "opcao",
+        "texto": "quem ainda se lembra de você."
+      },
+      {
+        "paragrafo_docx": 1792,
+        "tipo": "continuacao",
+        "texto": "A menos que tenha deixado razões concretas para ser odiado, você sempre consegue encontrar alguma forma de hospitalidade entre aqueles que conhecem sua arte ou reputação."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1790,
+        "texto": "como o lugar mudou desde sua última visita;"
+      },
+      {
+        "paragrafo_docx": 1791,
+        "texto": "quem ainda se lembra de você."
+      }
+    ],
+    "texto_original": "Quando retornar a um assentamento civilizado onde já tenha passado algum tempo, diga que apresentação, história, amizade, escândalo ou lembrança deixou ali. O Mestre dirá:\ncomo o lugar mudou desde sua última visita;\nquem ainda se lembra de você.\nA menos que tenha deixado razões concretas para ser odiado, você sempre consegue encontrar alguma forma de hospitalidade entre aqueles que conhecem sua arte ou reputação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1789"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1793",
+    "paragrafo_docx": 1793,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "EU CONHEÇO ALGUÉM",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1793,
+        "tipo": "corpo",
+        "texto": "Quando declarar que já conheceu alguém que poderia plausivelmente ajudar no problema atual, diga onde vocês se conheceram e role+CAR.\n10+: escolha 1.\n7–9: escolha 2."
+      },
+      {
+        "paragrafo_docx": 1794,
+        "tipo": "continuacao",
+        "texto": "você lhe deve algo importante;"
+      },
+      {
+        "paragrafo_docx": 1795,
+        "tipo": "continuacao",
+        "texto": "essa pessoa está atualmente metida em problemas;"
+      },
+      {
+        "paragrafo_docx": 1796,
+        "tipo": "continuacao",
+        "texto": "ajudá-lo colocará essa pessoa — ou você — sob atenção indesejada."
+      },
+      {
+        "paragrafo_docx": 1797,
+        "tipo": "continuacao",
+        "texto": "Essa pessoa existe e possui pelo menos uma forma concreta de ajudar."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando declarar que já conheceu alguém que poderia plausivelmente ajudar no problema atual, diga onde vocês se conheceram e role+CAR.\n10+: escolha 1.\n7–9: escolha 2.\nvocê lhe deve algo importante;\nessa pessoa está atualmente metida em problemas;\najudá-lo colocará essa pessoa — ou você — sob atenção indesejada.\nEssa pessoa existe e possui pelo menos uma forma concreta de ajudar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1793"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1798",
+    "paragrafo_docx": 1798,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "INSPIRAÇÃO BÁRDICA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1798,
+        "tipo": "corpo",
+        "texto": "Quando dedicar uma breve performance a alguém capaz de percebê-la e disser o que naquela pessoa está tentando despertar, role+CAR. \n10+: ela recebe 1 Inspiração.\n7–9: ela recebe 1 Inspiração, mas sua performance também desperta uma emoção, expectativa ou lembrança relacionada que você não pretendia. O Mestre dirá qual.\nDepois de realizar uma rolagem, ela pode gastar a Inspiração para receber +1 naquele resultado. Você só pode manter 1 Inspiração sua por vez."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando dedicar uma breve performance a alguém capaz de percebê-la e disser o que naquela pessoa está tentando despertar, role+CAR. \n10+: ela recebe 1 Inspiração.\n7–9: ela recebe 1 Inspiração, mas sua performance também desperta uma emoção, expectativa ou lembrança relacionada que você não pretendia. O Mestre dirá qual.\nDepois de realizar uma rolagem, ela pode gastar a Inspiração para receber +1 naquele resultado. Você só pode manter 1 Inspiração sua por vez.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1798"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1799",
+    "paragrafo_docx": 1799,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "INSPIRAÇÃO CONTAGIOSA",
+    "requisito_literal": "Inspiração Bárdica",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1798",
+      "titulo_requerido": "INSPIRAÇÃO BÁRDICA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1799,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando alguém gastar sua Inspiração e sua ação mudar significativamente a situação, escolha outra pessoa que tenha testemunhado aquilo. Ela recebe 1 Inspiração."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando alguém gastar sua Inspiração e sua ação mudar significativamente a situação, escolha outra pessoa que tenha testemunhado aquilo. Ela recebe 1 Inspiração.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1799"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1800",
+    "paragrafo_docx": 1800,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "PALAVRAS CORTANTES",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1800,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando um aliado obtiver 6- agindo diretamente contra alguém capaz de ouvir sua voz e essa pessoa estiver prestes a explorar sua falha, diga imediatamente a provocação, verdade, insulto ou piada que quebra o momento.\nTrate o resultado do aliado como 7–9. A pessoa que você atingiu com suas palavras percebe exatamente quem interferiu e sua atenção, raiva ou interesse se volta para você."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando um aliado obtiver 6- agindo diretamente contra alguém capaz de ouvir sua voz e essa pessoa estiver prestes a explorar sua falha, diga imediatamente a provocação, verdade, insulto ou piada que quebra o momento.\nTrate o resultado do aliado como 7–9. A pessoa que você atingiu com suas palavras percebe exatamente quem interferiu e sua atenção, raiva ou interesse se volta para você.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1800"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1801",
+    "paragrafo_docx": 1801,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "OUVIDO PARA MAGIA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1801,
+        "tipo": "corpo",
+        "texto": "Quando testemunhar alguém realizando uma magia através de palavras, gestos, símbolos, música ou outra técnica perceptível, pergunte ao Mestre: “O que esta magia está fazendo e que parte de sua execução denuncia como funciona?”\nEle responderá honestamente. Receba +1 adiante quando agir diretamente sobre essa resposta."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando testemunhar alguém realizando uma magia através de palavras, gestos, símbolos, música ou outra técnica perceptível, pergunte ao Mestre: “O que esta magia está fazendo e que parte de sua execução denuncia como funciona?”\nEle responderá honestamente. Receba +1 adiante quando agir diretamente sobre essa resposta.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1801"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1802",
+    "paragrafo_docx": 1802,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "CONTRACANTO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1802,
+        "tipo": "corpo",
+        "texto": "Quando utilizar sua própria arte para interferir numa manifestação mágica ativa que consiga perceber, descreva como sua performance entra em conflito com ela e role+CAR.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 1803,
+        "tipo": "opcao",
+        "texto": "suspenda a manifestação enquanto continuar sua performance;"
+      },
+      {
+        "paragrafo_docx": 1804,
+        "tipo": "opcao",
+        "texto": "liberte uma criatura de sua influência;"
+      },
+      {
+        "paragrafo_docx": 1805,
+        "tipo": "opcao",
+        "texto": "impeça-a de alcançar uma criatura, objeto ou pequena área;"
+      },
+      {
+        "paragrafo_docx": 1806,
+        "tipo": "opcao",
+        "texto": "descubra imediatamente o que sustenta aquela magia;"
+      },
+      {
+        "paragrafo_docx": 1807,
+        "tipo": "opcao",
+        "texto": "crie uma abertura breve durante a qual alguém possa atravessá-la ou agir apesar dela."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1803,
+        "texto": "suspenda a manifestação enquanto continuar sua performance;"
+      },
+      {
+        "paragrafo_docx": 1804,
+        "texto": "liberte uma criatura de sua influência;"
+      },
+      {
+        "paragrafo_docx": 1805,
+        "texto": "impeça-a de alcançar uma criatura, objeto ou pequena área;"
+      },
+      {
+        "paragrafo_docx": 1806,
+        "texto": "descubra imediatamente o que sustenta aquela magia;"
+      },
+      {
+        "paragrafo_docx": 1807,
+        "texto": "crie uma abertura breve durante a qual alguém possa atravessá-la ou agir apesar dela."
+      }
+    ],
+    "texto_original": "Quando utilizar sua própria arte para interferir numa manifestação mágica ativa que consiga perceber, descreva como sua performance entra em conflito com ela e role+CAR.\n10+: escolha 2.\n7–9: escolha 1.\nsuspenda a manifestação enquanto continuar sua performance;\nliberte uma criatura de sua influência;\nimpeça-a de alcançar uma criatura, objeto ou pequena área;\ndescubra imediatamente o que sustenta aquela magia;\ncrie uma abertura breve durante a qual alguém possa atravessá-la ou agir apesar dela.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1802"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1808",
+    "paragrafo_docx": 1808,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "LINGUAGEM UNIVERSAL",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1808,
+        "tipo": "corpo",
+        "texto": "Quando utilizar sua arte para se comunicar com uma criatura sapiente capaz de percebê-la, diferenças de idioma deixam de impedir entendimento. De imediato vocês conseguem transmitir emoções, intenções e ideias concretas. Com algum tempo de interação, podem conversar normalmente mesmo sem compartilhar língua. Isso não concede conhecimento que nenhum dos dois possua nem torna a criatura cooperativa."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando utilizar sua arte para se comunicar com uma criatura sapiente capaz de percebê-la, diferenças de idioma deixam de impedir entendimento. De imediato vocês conseguem transmitir emoções, intenções e ideias concretas. Com algum tempo de interação, podem conversar normalmente mesmo sem compartilhar língua. Isso não concede conhecimento que nenhum dos dois possua nem torna a criatura cooperativa.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1808"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1809",
+    "paragrafo_docx": 1809,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "MANTO DE INSPIRAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1809,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando sua performance alcançar seus aliados no meio de um perigo imediato, escolha até três capazes de vê-lo ou ouvi-lo. Cada um pode imediatamente mover-se para uma posição próxima que conseguiria fisicamente alcançar, antes que os adversários reorganizem a situação.\nEsse movimento não permite atravessar barreiras ou alguém que esteja realmente impedindo a passagem."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando sua performance alcançar seus aliados no meio de um perigo imediato, escolha até três capazes de vê-lo ou ouvi-lo. Cada um pode imediatamente mover-se para uma posição próxima que conseguiria fisicamente alcançar, antes que os adversários reorganizem a situação.\nEsse movimento não permite atravessar barreiras ou alguém que esteja realmente impedindo a passagem.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1809"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1810",
+    "paragrafo_docx": 1810,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "GLAMOUR",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1810,
+        "tipo": "corpo",
+        "texto": "Quando sustentar uma performance diante de uma audiência, escolha uma emoção que deseja tornar dominante: \nadmiração, fascínio, desejo, esperança, temor, nostalgia ou semelhante. Quem permanecer voluntariamente envolvido na performance e não possuir razão urgente para resistir sente essa emoção genuinamente enquanto ela durar. Isso não determina o que alguém fará. Quando alguém agir diretamente contra a emoção apesar de continuar sob sua influência, o Mestre revelará que desejo, dever ou medo foi forte o suficiente para superá-la."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando sustentar uma performance diante de uma audiência, escolha uma emoção que deseja tornar dominante: \nadmiração, fascínio, desejo, esperança, temor, nostalgia ou semelhante. Quem permanecer voluntariamente envolvido na performance e não possuir razão urgente para resistir sente essa emoção genuinamente enquanto ela durar. Isso não determina o que alguém fará. Quando alguém agir diretamente contra a emoção apesar de continuar sob sua influência, o Mestre revelará que desejo, dever ou medo foi forte o suficiente para superá-la.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1810"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1812",
+    "paragrafo_docx": 1812,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "SUSSURROS DE TERROR",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1812,
+        "tipo": "corpo",
+        "texto": "Quando conseguir conversar a sós com alguém durante alguns minutos e tecer cuidadosamente uma história, insinuação ou aviso em torno de um medo específico, diga do que deseja fazê-lo ter medo e role+CAR.\n10+: o medo cria raízes. Enquanto nada o desmentir claramente, a pessoa se comporta como se aquela ameaça fosse real.\n7–9: o medo cria raízes, mas escolha 1:"
+      },
+      {
+        "paragrafo_docx": 1813,
+        "tipo": "opcao",
+        "texto": "ela percebe que você teve alguma coisa a ver com aquilo;"
+      },
+      {
+        "paragrafo_docx": 1814,
+        "tipo": "opcao",
+        "texto": "o medo se prende também a alguma coisa que você não pretendia;"
+      },
+      {
+        "paragrafo_docx": 1815,
+        "tipo": "opcao",
+        "texto": "ele permanecerá latente até uma situação concreta despertá-lo."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1813,
+        "texto": "ela percebe que você teve alguma coisa a ver com aquilo;"
+      },
+      {
+        "paragrafo_docx": 1814,
+        "texto": "o medo se prende também a alguma coisa que você não pretendia;"
+      },
+      {
+        "paragrafo_docx": 1815,
+        "texto": "ele permanecerá latente até uma situação concreta despertá-lo."
+      }
+    ],
+    "texto_original": "Quando conseguir conversar a sós com alguém durante alguns minutos e tecer cuidadosamente uma história, insinuação ou aviso em torno de um medo específico, diga do que deseja fazê-lo ter medo e role+CAR.\n10+: o medo cria raízes. Enquanto nada o desmentir claramente, a pessoa se comporta como se aquela ameaça fosse real.\n7–9: o medo cria raízes, mas escolha 1:\nela percebe que você teve alguma coisa a ver com aquilo;\no medo se prende também a alguma coisa que você não pretendia;\nele permanecerá latente até uma situação concreta despertá-lo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1812"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1816",
+    "paragrafo_docx": 1816,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "CANÇÃO DA CRIAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1816,
+        "tipo": "corpo",
+        "texto": "Quando executar uma performance que descreva ou represente claramente um objeto mundano, você pode fazer esse objeto surgir. Ele deve ser:"
+      },
+      {
+        "paragrafo_docx": 1817,
+        "tipo": "continuacao",
+        "texto": "não mágico;"
+      },
+      {
+        "paragrafo_docx": 1818,
+        "tipo": "continuacao",
+        "texto": "algo cuja forma e função você compreenda;"
+      },
+      {
+        "paragrafo_docx": 1819,
+        "tipo": "continuacao",
+        "texto": "pequeno o bastante para uma pessoa carregar normalmente."
+      },
+      {
+        "paragrafo_docx": 1820,
+        "tipo": "continuacao",
+        "texto": "Você só pode manter uma criação desse tipo por vez. Criar outra faz a anterior desaparecer. Se a criação sobreviver até o fim da cena, ela gradualmente retorna ao nada de onde sua arte a trouxe."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando executar uma performance que descreva ou represente claramente um objeto mundano, você pode fazer esse objeto surgir. Ele deve ser:\nnão mágico;\nalgo cuja forma e função você compreenda;\npequeno o bastante para uma pessoa carregar normalmente.\nVocê só pode manter uma criação desse tipo por vez. Criar outra faz a anterior desaparecer. Se a criação sobreviver até o fim da cena, ela gradualmente retorna ao nada de onde sua arte a trouxe.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1816"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1821",
+    "paragrafo_docx": 1821,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "A DANÇA DAS COISAS",
+    "requisito_literal": "Canção da Criação",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1816",
+      "titulo_requerido": "CANÇÃO DA CRIAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1821,
+        "tipo": "corpo",
+        "texto": "Quando executar uma performance para um objeto inanimado e desprotegido, você pode despertá-lo temporariamente como participante de sua obra. Receba 3 de Domínio, dê-lhe um propósito simples coerente com sua forma:"
+      },
+      {
+        "paragrafo_docx": 1822,
+        "tipo": "continuacao",
+        "texto": "seguir alguém;"
+      },
+      {
+        "paragrafo_docx": 1823,
+        "tipo": "continuacao",
+        "texto": "carregar alguma coisa;"
+      },
+      {
+        "paragrafo_docx": 1824,
+        "tipo": "continuacao",
+        "texto": "proteger um lugar;"
+      },
+      {
+        "paragrafo_docx": 1825,
+        "tipo": "continuacao",
+        "texto": "produzir um som ou movimento;"
+      },
+      {
+        "paragrafo_docx": 1826,
+        "tipo": "continuacao",
+        "texto": "atrapalhar alguém;"
+      },
+      {
+        "paragrafo_docx": 1827,
+        "tipo": "continuacao",
+        "texto": "executar repetidamente uma tarefa."
+      },
+      {
+        "paragrafo_docx": 1828,
+        "tipo": "continuacao",
+        "texto": "Ele permanece animado até o fim da cena, sua performance terminar de maneira significativa ou ser destruído. Quando tentar algo perigoso ou além daquilo que sua forma permitiria, ele Desafia o Perigo somando aos dados quanto Domínio você decidir gastar."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando executar uma performance para um objeto inanimado e desprotegido, você pode despertá-lo temporariamente como participante de sua obra. Receba 3 de Domínio, dê-lhe um propósito simples coerente com sua forma:\nseguir alguém;\ncarregar alguma coisa;\nproteger um lugar;\nproduzir um som ou movimento;\natrapalhar alguém;\nexecutar repetidamente uma tarefa.\nEle permanece animado até o fim da cena, sua performance terminar de maneira significativa ou ser destruído. Quando tentar algo perigoso ou além daquilo que sua forma permitiria, ele Desafia o Perigo somando aos dados quanto Domínio você decidir gastar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1821"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1829",
+    "paragrafo_docx": 1829,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "CONTOS DOS ESPÍRITOS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1829,
+        "tipo": "corpo",
+        "texto": "Quando narrar uma história através de um objeto, instrumento, cartas, relíquia ou outro foco ligado aos mortos e abrir espaço para que um espírito ocupe um papel nela, role+CAR.\n10+: escolha um Espírito. Ele manifesta seu papel e depois parte.\n7–9: escolha um Espírito, mas depois de cumprir seu papel ele deixa um desejo, aviso, dívida ou complicação para trás."
+      },
+      {
+        "paragrafo_docx": 1830,
+        "tipo": "continuacao",
+        "texto": "O Amado: cure 1d6 de alguém ou alivie uma dor profunda."
+      },
+      {
+        "paragrafo_docx": 1831,
+        "tipo": "continuacao",
+        "texto": "O Viajante: revele uma passagem, rota ou maneira de sair daquela situação."
+      },
+      {
+        "paragrafo_docx": 1832,
+        "tipo": "continuacao",
+        "texto": "O Vingador: faça com que a próxima violência sofrida por alguém cobre imediatamente alguma consequência do agressor."
+      },
+      {
+        "paragrafo_docx": 1833,
+        "tipo": "continuacao",
+        "texto": "O Trapaceiro: produza uma distração sobrenatural convincente."
+      },
+      {
+        "paragrafo_docx": 1834,
+        "tipo": "continuacao",
+        "texto": "O Oráculo: responda uma pergunta sobre algo que está prestes a acontecer."
+      },
+      {
+        "paragrafo_docx": 1835,
+        "tipo": "continuacao",
+        "texto": "A Sombra: oculte alguém da percepção comum até que se mova abertamente ou aja."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando narrar uma história através de um objeto, instrumento, cartas, relíquia ou outro foco ligado aos mortos e abrir espaço para que um espírito ocupe um papel nela, role+CAR.\n10+: escolha um Espírito. Ele manifesta seu papel e depois parte.\n7–9: escolha um Espírito, mas depois de cumprir seu papel ele deixa um desejo, aviso, dívida ou complicação para trás.\nO Amado: cure 1d6 de alguém ou alivie uma dor profunda.\nO Viajante: revele uma passagem, rota ou maneira de sair daquela situação.\nO Vingador: faça com que a próxima violência sofrida por alguém cobre imediatamente alguma consequência do agressor.\nO Trapaceiro: produza uma distração sobrenatural convincente.\nO Oráculo: responda uma pergunta sobre algo que está prestes a acontecer.\nA Sombra: oculte alguém da percepção comum até que se mova abertamente ou aja.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1829"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1836",
+    "paragrafo_docx": 1836,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "A ARTE REVELA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1836,
+        "tipo": "corpo",
+        "texto": "Quando realizar uma performance deliberadamente para uma pessoa e prestar tanta atenção nela quanto ela presta em você, pergunte uma:"
+      },
+      {
+        "paragrafo_docx": 1837,
+        "tipo": "continuacao",
+        "texto": "O que ela está tentando não sentir?"
+      },
+      {
+        "paragrafo_docx": 1838,
+        "tipo": "continuacao",
+        "texto": "Que parte da performance a atingiu mais profundamente?"
+      },
+      {
+        "paragrafo_docx": 1839,
+        "tipo": "continuacao",
+        "texto": "O que ela gostaria que eu dissesse ou fizesse agora?"
+      },
+      {
+        "paragrafo_docx": 1840,
+        "tipo": "continuacao",
+        "texto": "Que coisa ela está tentando esconder de si mesma?"
+      },
+      {
+        "paragrafo_docx": 1841,
+        "tipo": "continuacao",
+        "texto": "O Mestre responderá honestamente através da reação daquela pessoa."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando realizar uma performance deliberadamente para uma pessoa e prestar tanta atenção nela quanto ela presta em você, pergunte uma:\nO que ela está tentando não sentir?\nQue parte da performance a atingiu mais profundamente?\nO que ela gostaria que eu dissesse ou fizesse agora?\nQue coisa ela está tentando esconder de si mesma?\nO Mestre responderá honestamente através da reação daquela pessoa.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1836"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1842",
+    "paragrafo_docx": 1842,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "HARMONIA ARCANA",
+    "requisito_literal": "Arte Arcana",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1753",
+      "titulo_requerido": "ARTE ARCANA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1842,
+        "tipo": "corpo",
+        "texto": "Quando obtiver 10+ em Arte Arcana, você pode escolher dois efeitos diferentes em vez de um. Se ambos afetarem a mesma pessoa, descreva como fazem parte da mesma performance."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando obtiver 10+ em Arte Arcana, você pode escolher dois efeitos diferentes em vez de um. Se ambos afetarem a mesma pessoa, descreva como fazem parte da mesma performance.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1842"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1843",
+    "paragrafo_docx": 1843,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "A CANÇÃO QUE FEZ O MUNDO",
+    "requisito_literal": "Arte Arcana e dois outros Movimentos de Bardo",
+    "requisito_estruturado": {
+      "tipo": "todos",
+      "itens": [
+        {
+          "tipo": "movimento_exato",
+          "movimento_id": "movimento-classe:paragrafo-1753",
+          "titulo_requerido": "ARTE ARCANA"
+        },
+        {
+          "tipo": "quantidade_movimentos_grupo",
+          "grupo": "BARDO",
+          "quantidade_minima": 2,
+          "excluir_movimentos_ids": [
+            "movimento-classe:paragrafo-1753",
+            "movimento-classe:paragrafo-1843"
+          ],
+          "texto_literal": "dois outros Movimentos de Bardo",
+          "status": "quantidade_por_titulos_candidatos_pendente_homologacao"
+        }
+      ],
+      "operador_literal": "e",
+      "status": "interpretacao_literal_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1843,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando concluir uma performance construída em torno de uma única afirmação impossível sobre aquilo que existe diante de você, pergunte ao Mestre:\n“O que esta obra precisaria para tornar isso verdadeiro aqui?”\nO Mestre dará uma condição severa relacionada a escala, duração, sacrifício, audiência ou consequência. Se aceitar e cumprir a condição, uma parte concreta daquilo que sua arte descreveu torna-se literalmente verdadeira naquele lugar.\nEla não pode simplesmente apagar uma criatura, resolver uma Frente inteira ou contradizer algo cuja existência seja fundamental à própria situação."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando concluir uma performance construída em torno de uma única afirmação impossível sobre aquilo que existe diante de você, pergunte ao Mestre:\n“O que esta obra precisaria para tornar isso verdadeiro aqui?”\nO Mestre dará uma condição severa relacionada a escala, duração, sacrifício, audiência ou consequência. Se aceitar e cumprir a condição, uma parte concreta daquilo que sua arte descreveu torna-se literalmente verdadeira naquele lugar.\nEla não pode simplesmente apagar uma criatura, resolver uma Frente inteira ou contradizer algo cuja existência seja fundamental à própria situação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1843"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1845",
+    "paragrafo_docx": 1845,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "HOJE A FESTA É SUA, HOJE A FESTA É NOSSA",
+    "requisito_literal": "Arte Arcana",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1753",
+      "titulo_requerido": "ARTE ARCANA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 1845,
+        "tipo": "corpo",
+        "texto": "Quando sua performance fizer outras pessoas participarem voluntariamente dela — cantando, dançando, batendo palmas, respondendo, tocando ou contribuindo de outra maneira — sua arte passa a existir também através delas.\nEnquanto pelo menos três outras pessoas continuarem participando, quando utilizar Arte Arcana, escolha também 1:"
+      },
+      {
+        "paragrafo_docx": 1846,
+        "tipo": "opcao",
+        "texto": "faça o efeito alcançar todos os participantes capazes de percebê-lo;"
+      },
+      {
+        "paragrafo_docx": 1847,
+        "tipo": "opcao",
+        "texto": "aumente significativamente o alcance da performance;"
+      },
+      {
+        "paragrafo_docx": 1848,
+        "tipo": "opcao",
+        "texto": "sua performance continua produzindo seu efeito enquanto o grupo conseguir sustentá-la, mesmo que você precise parar momentaneamente;"
+      },
+      {
+        "paragrafo_docx": 1849,
+        "tipo": "opcao",
+        "texto": "transforme a participação coletiva em parte da magia e aumente em um grau a intensidade ficcional do efeito."
+      },
+      {
+        "paragrafo_docx": 1850,
+        "tipo": "continuacao",
+        "texto": "Quando a participação coletiva se desfizer, a amplificação termina."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1846,
+        "texto": "faça o efeito alcançar todos os participantes capazes de percebê-lo;"
+      },
+      {
+        "paragrafo_docx": 1847,
+        "texto": "aumente significativamente o alcance da performance;"
+      },
+      {
+        "paragrafo_docx": 1848,
+        "texto": "sua performance continua produzindo seu efeito enquanto o grupo conseguir sustentá-la, mesmo que você precise parar momentaneamente;"
+      },
+      {
+        "paragrafo_docx": 1849,
+        "texto": "transforme a participação coletiva em parte da magia e aumente em um grau a intensidade ficcional do efeito."
+      }
+    ],
+    "texto_original": "Quando sua performance fizer outras pessoas participarem voluntariamente dela — cantando, dançando, batendo palmas, respondendo, tocando ou contribuindo de outra maneira — sua arte passa a existir também através delas.\nEnquanto pelo menos três outras pessoas continuarem participando, quando utilizar Arte Arcana, escolha também 1:\nfaça o efeito alcançar todos os participantes capazes de percebê-lo;\naumente significativamente o alcance da performance;\nsua performance continua produzindo seu efeito enquanto o grupo conseguir sustentá-la, mesmo que você precise parar momentaneamente;\ntransforme a participação coletiva em parte da magia e aumente em um grau a intensidade ficcional do efeito.\nQuando a participação coletiva se desfizer, a amplificação termina.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1845"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1851",
+    "paragrafo_docx": 1851,
+    "grupo": "BARDO",
+    "categoria": "classe",
+    "titulo": "A INTERNACIONAL SOCIALISTA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 1851,
+        "tipo": "corpo",
+        "texto": "Quando conduzir uma performance e um grupo de pessoas aderir voluntariamente a ela, diga o que todos estão celebrando, lamentando, desejando ou rejeitando juntos e role+CAR.\n10+: receba Domínio 3 sobre a comunhão.\n7–9: receba Domínio 2, mas alguma outra emoção presente na multidão também encontra espaço para se manifestar. O Mestre dirá qual. Gaste 1 Domínio para:"
+      },
+      {
+        "paragrafo_docx": 1852,
+        "tipo": "opcao",
+        "texto": "fazer estranhos agirem por alguns instantes como parte da mesma comunidade;"
+      },
+      {
+        "paragrafo_docx": 1853,
+        "tipo": "opcao",
+        "texto": "fazer com que alguém isolado seja acolhido pela multidão;"
+      },
+      {
+        "paragrafo_docx": 1854,
+        "tipo": "opcao",
+        "texto": "espalhar instantaneamente uma frase, refrão, gesto ou mensagem entre todos os participantes;"
+      },
+      {
+        "paragrafo_docx": 1855,
+        "tipo": "opcao",
+        "texto": "permitir que os participantes realizem juntos algo que exigiria coordenação;"
+      },
+      {
+        "paragrafo_docx": 1856,
+        "tipo": "opcao",
+        "texto": "impedir que medo, vergonha ou autoridade comum disperse imediatamente a comunhão;"
+      },
+      {
+        "paragrafo_docx": 1857,
+        "tipo": "opcao",
+        "texto": "fazer a multidão direcionar sua atenção coletiva para algo que você indicar."
+      },
+      {
+        "paragrafo_docx": 1858,
+        "tipo": "continuacao",
+        "texto": "O Domínio desaparece quando a performance ou reunião se desfizer."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1852,
+        "texto": "fazer estranhos agirem por alguns instantes como parte da mesma comunidade;"
+      },
+      {
+        "paragrafo_docx": 1853,
+        "texto": "fazer com que alguém isolado seja acolhido pela multidão;"
+      },
+      {
+        "paragrafo_docx": 1854,
+        "texto": "espalhar instantaneamente uma frase, refrão, gesto ou mensagem entre todos os participantes;"
+      },
+      {
+        "paragrafo_docx": 1855,
+        "texto": "permitir que os participantes realizem juntos algo que exigiria coordenação;"
+      },
+      {
+        "paragrafo_docx": 1856,
+        "texto": "impedir que medo, vergonha ou autoridade comum disperse imediatamente a comunhão;"
+      },
+      {
+        "paragrafo_docx": 1857,
+        "texto": "fazer a multidão direcionar sua atenção coletiva para algo que você indicar."
+      }
+    ],
+    "texto_original": "Quando conduzir uma performance e um grupo de pessoas aderir voluntariamente a ela, diga o que todos estão celebrando, lamentando, desejando ou rejeitando juntos e role+CAR.\n10+: receba Domínio 3 sobre a comunhão.\n7–9: receba Domínio 2, mas alguma outra emoção presente na multidão também encontra espaço para se manifestar. O Mestre dirá qual. Gaste 1 Domínio para:\nfazer estranhos agirem por alguns instantes como parte da mesma comunidade;\nfazer com que alguém isolado seja acolhido pela multidão;\nespalhar instantaneamente uma frase, refrão, gesto ou mensagem entre todos os participantes;\npermitir que os participantes realizem juntos algo que exigiria coordenação;\nimpedir que medo, vergonha ou autoridade comum disperse imediatamente a comunhão;\nfazer a multidão direcionar sua atenção coletiva para algo que você indicar.\nO Domínio desaparece quando a performance ou reunião se desfizer.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1851"
+  }
+]
