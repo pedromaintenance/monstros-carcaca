@@ -17,11 +17,11 @@
       "consequencia_narrativa_proposta": "A seleção de alvos e a proteção de pessoas podem ser mais importantes que reservas materiais."
     },
     {
-      "id": "rotulo-territorial:acolhida_minoria_deslocada",
-      "nome": "Acolhida Minoritária de Deslocados",
+      "id": "rotulo-territorial:presenca_minoritaria_refugiada",
+      "nome": "Presença Minoritária de Refugiados",
       "categoria": "demografia",
-      "descricao": "Presença minoritária de refugiados de Eldroth nos assentamentos maiores da Costa Sul, ainda não identificados nominalmente.",
-      "consequencia_narrativa_proposta": "Se um assentamento concreto for identificado, investigar abrigo, integração e abastecimento sem deduzir população."
+      "descricao": "Há alguns refugiados de Eldroth nos maiores assentamentos da Costa Sul, mas a fonte não afirma acolhimento institucional nem identifica cidades receptoras.",
+      "consequencia_narrativa_proposta": "Investigar condições locais, abrigo e integração somente quando o assentamento ou a situação em campanha forem identificados."
     },
     {
       "id": "rotulo-territorial:ausencia_de_ocupacao_feerica_direta",

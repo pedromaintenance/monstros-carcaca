@@ -239,3 +239,9 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 **Próxima unidade:** consolidar um dossiê por região com pressões materiais e políticas e buscar lugares individualizados na Caatinga, mantendo perguntas abertas onde o autor não descreveu um povoado.
 
 **Documento de referência:** `docs/DINAMICAS_TERRITORIAIS_ALEM_SUL.md`.
+
+### Refinamento semântico — ciclo 11
+
+- O rótulo territorial foi renomeado para `rotulo-territorial:presenca_minoritaria_refugiada`: a lore descreve **presença** de refugiados nos grandes assentamentos regionais, não acolhimento institucional formal.
+- Corrigida distinção de API: `alvo_nomeado_no_registro` verifica correspondência de assentamento, mas `evento_especifico_confirmado` permanece **false** em uma prévia; fatos de campanha exigem registro explícito no livro-razão.
+- Adicionado teste de não confirmação mesmo se uma ficha futura contiver nome de alvo.

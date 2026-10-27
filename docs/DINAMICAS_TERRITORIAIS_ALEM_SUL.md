@@ -74,3 +74,5 @@ A função é **pura** e retorna perguntas, lacunas e consequências narrativas 
 4. Considerar uma frente de campanha sobre as guerras do Além Sul **como proposta editorial**, nunca como sequência de eventos que já ocorreram.
 
 Referências: fonte autoral `Ambientação - A Carcaça - Visão Geral.txt`; `docs/ECOLOGIA_DOS_ASSENTAMENTOS.md` e `docs/REDE_MATERIAL_E_ESTADO_DE_CAMPANHA.md`. Os movimentos de Dungeon World continuam mecânicas separadas e não foram disparados aqui.
+
+**Refinamento editorial:** a presença regional de refugiados não confirma acolhimento formal; mesmo quando um alvo passar a ser nomeado, a prévia territorial mantém `evento_especifico_confirmado:false` até que um save local registre explicitamente o acontecimento. O campo `alvo_nomeado_no_registro` não substitui a confirmação de sessão.

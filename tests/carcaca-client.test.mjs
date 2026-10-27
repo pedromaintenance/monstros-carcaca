@@ -35,7 +35,7 @@ const fixtures={
   ],
   "creatures.json":[{id:"carcaca:criatura:joro",dungeon_world:{instinto:"Testar visitantes"}}],
   "regions.json":[{id:"regiao:caatinga",lugares:[]},{id:"regiao:costa-sul",lugares:[]},{id:"regiao:eldroth",lugares:[]}],
-  "territorial-labels.json":[{id:"rotulo-territorial:fronteira_de_pilhagens"},{id:"rotulo-territorial:acolhida_minoria_deslocada"}],
+  "territorial-labels.json":[{id:"rotulo-territorial:fronteira_de_pilhagens"},{id:"rotulo-territorial:presenca_minoritaria_refugiada"}],
   "territorial-dynamics.json":[
     {id:"dinamica:pilhagens",escala:"regional",origem_regiao_id:"regiao:caatinga",
      destino_regiao_id:"regiao:costa-sul",assentamento_alvo_id:null,
@@ -48,7 +48,7 @@ const fixtures={
     {id:"dinamica:refugiados",escala:"regional",origem_regiao_id:"regiao:eldroth",
      destino_regiao_id:"regiao:costa-sul",assentamento_alvo_id:null,
      tipo:"deslocamento_forcado_documentado",
-     rotulos_territoriais:["rotulo-territorial:acolhida_minoria_deslocada"],
+     rotulos_territoriais:["rotulo-territorial:presenca_minoritaria_refugiada"],
      dimensoes_possivelmente_afetadas:["abrigo","integracao_comunitaria"],
      fato_documentado:"Refugiados minoritários em assentamentos maiores não nomeados",
      lacunas:["Destino não especificado"],perguntas:["Qual cidade os recebeu?"],
@@ -518,4 +518,13 @@ test("refugiados de Eldroth não são atribuídos a uma cidade específica",asyn
   assert.equal(regional.foco_consultado,null);
   assert.throws(()=>previewTerritorialImpact(null),TypeError);
   assert.throws(()=>previewTerritorialImpact(refugees,{assentamentoId:"lugar:portomonte"}),TypeError);
+});
+
+test("alvo explicitamente nomeado não confirma ocorrência de evento em campanha",async()=>{
+  const regional=await atlas.getTerritorialDynamic("dinamica:pilhagens");
+  const hypothetical={...regional,escala:"entre_assentamentos",assentamento_alvo_id:"assentamento:portomonte"};
+  const review=previewTerritorialImpact(hypothetical,{assentamentoId:"assentamento:portomonte"});
+  assert.equal(review.alvo_nomeado_no_registro,true);
+  assert.equal(review.evento_especifico_confirmado,false);
+  assert.equal(review.mutacao_canonica,false);
 });
