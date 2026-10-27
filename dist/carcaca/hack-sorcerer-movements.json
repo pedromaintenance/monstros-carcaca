@@ -1,0 +1,1540 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-2348",
+    "paragrafo_docx": 2348,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "MAGIA NO SANGUE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2348,
+        "tipo": "corpo",
+        "texto": "Escolha uma fonte mágica que exista em você: tempestade, sombra, fogo, gelo, dragão, caos, estrelas, divindade, sonho ou outra. Pequenas manifestações dessa natureza acontecem naturalmente ao seu redor. Quando liberar sua natureza muito além do seguro, role+CON ou CAR, conforme você a contenha ou imponha. Com 7+, a manifestação acontece.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 2349,
+        "tipo": "opcao",
+        "texto": "produz exatamente o efeito desejado;"
+      },
+      {
+        "paragrafo_docx": 2350,
+        "tipo": "opcao",
+        "texto": "você mantém controle;"
+      },
+      {
+        "paragrafo_docx": 2351,
+        "tipo": "opcao",
+        "texto": "seu corpo não sofre consequência;"
+      },
+      {
+        "paragrafo_docx": 2352,
+        "tipo": "opcao",
+        "texto": "a manifestação não deixa uma marca óbvia."
+      },
+      {
+        "paragrafo_docx": 2353,
+        "tipo": "continuacao",
+        "texto": "Quando alguém tentar analisar sua magia como se fosse uma técnica reproduzível, pergunte ao Mestre: \n“Que parte dela existe somente porque sou eu?”\nA resposta é verdadeira."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2349,
+        "texto": "produz exatamente o efeito desejado;"
+      },
+      {
+        "paragrafo_docx": 2350,
+        "texto": "você mantém controle;"
+      },
+      {
+        "paragrafo_docx": 2351,
+        "texto": "seu corpo não sofre consequência;"
+      },
+      {
+        "paragrafo_docx": 2352,
+        "texto": "a manifestação não deixa uma marca óbvia."
+      }
+    ],
+    "texto_original": "Escolha uma fonte mágica que exista em você: tempestade, sombra, fogo, gelo, dragão, caos, estrelas, divindade, sonho ou outra. Pequenas manifestações dessa natureza acontecem naturalmente ao seu redor. Quando liberar sua natureza muito além do seguro, role+CON ou CAR, conforme você a contenha ou imponha. Com 7+, a manifestação acontece.\n10+: escolha 2.\n7–9: escolha 1.\nproduz exatamente o efeito desejado;\nvocê mantém controle;\nseu corpo não sofre consequência;\na manifestação não deixa uma marca óbvia.\nQuando alguém tentar analisar sua magia como se fosse uma técnica reproduzível, pergunte ao Mestre: \n“Que parte dela existe somente porque sou eu?”\nA resposta é verdadeira.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2348"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2354",
+    "paragrafo_docx": 2354,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "MAGIA SELVAGEM",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2354,
+        "tipo": "corpo",
+        "texto": "Quando obtiver 6- ao utilizar uma magia que nasce de você, além do Movimento do Mestre, uma manifestação inesperada de sua fonte entra na cena. Ela não precisa ajudar nem prejudicar você; precisa apenas ser uma consequência verdadeira daquilo que existe dentro de você.\nUma vez por sessão, antes de uma rolagem relacionada à sua magia inata, você pode abrir voluntariamente espaço para o caos. Role 3d6 e fique com os dois maiores. \nDepois que a rolagem for completamente resolvida, uma manifestação selvagem também entra na cena, independentemente do resultado."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando obtiver 6- ao utilizar uma magia que nasce de você, além do Movimento do Mestre, uma manifestação inesperada de sua fonte entra na cena. Ela não precisa ajudar nem prejudicar você; precisa apenas ser uma consequência verdadeira daquilo que existe dentro de você.\nUma vez por sessão, antes de uma rolagem relacionada à sua magia inata, você pode abrir voluntariamente espaço para o caos. Role 3d6 e fique com os dois maiores. \nDepois que a rolagem for completamente resolvida, uma manifestação selvagem também entra na cena, independentemente do resultado.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2354"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2355",
+    "paragrafo_docx": 2355,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "HERANÇA DRACÔNICA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2355,
+        "tipo": "corpo",
+        "texto": "Diga que dragão, linhagem ou natureza dracônica existe em você. Escolha dois traços recorrentes: escamas, olhos, garras, presas, asas, voz, presença ou outro apropriado. Para cada traço, estabeleça uma propriedade física concreta que ele possui quando plenamente manifestado. Quando sua magia ultrapassar seus limites seguros ou sua natureza dracônica for diretamente provocada, você pode fazer um desses traços tornar-se plenamente real até o fim da cena. Aquilo que naturalmente decorre dessa anatomia é verdadeiro na ficção. Um traço não concede sozinho uma prática mágica inteira."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Diga que dragão, linhagem ou natureza dracônica existe em você. Escolha dois traços recorrentes: escamas, olhos, garras, presas, asas, voz, presença ou outro apropriado. Para cada traço, estabeleça uma propriedade física concreta que ele possui quando plenamente manifestado. Quando sua magia ultrapassar seus limites seguros ou sua natureza dracônica for diretamente provocada, você pode fazer um desses traços tornar-se plenamente real até o fim da cena. Aquilo que naturalmente decorre dessa anatomia é verdadeiro na ficção. Um traço não concede sozinho uma prática mágica inteira.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2355"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2356",
+    "paragrafo_docx": 2356,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "PASSAGEM NEGRA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2356,
+        "tipo": "corpo",
+        "texto": "Quando entrar completamente numa sombra suficientemente profunda, você pode emergir de outra sombra próxima que consiga perceber. Fazer isso sozinho e sem oposição simplesmente acontece.\nQuando tentar levar outra pessoa, atravessar distância excepcional, alcançar uma sombra que não consiga perceber diretamente ou forçar a passagem sob interferência, role+CON ou CAR.\n10+: a passagem se estabelece exatamente como pretendia.\n7–9: você atravessa, mas escolha: apenas você consegue passar; a passagem dura somente um instante; alguma coisa percebe sua travessia; ou a saída é imprecisa."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando entrar completamente numa sombra suficientemente profunda, você pode emergir de outra sombra próxima que consiga perceber. Fazer isso sozinho e sem oposição simplesmente acontece.\nQuando tentar levar outra pessoa, atravessar distância excepcional, alcançar uma sombra que não consiga perceber diretamente ou forçar a passagem sob interferência, role+CON ou CAR.\n10+: a passagem se estabelece exatamente como pretendia.\n7–9: você atravessa, mas escolha: apenas você consegue passar; a passagem dura somente um instante; alguma coisa percebe sua travessia; ou a saída é imprecisa.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2356"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2357",
+    "paragrafo_docx": 2357,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "CORRENTE DE SOMBRA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2357,
+        "tipo": "corpo",
+        "texto": "Quando conseguir prender a sombra de uma criatura à sombra de um objeto imóvel, ela não consegue simplesmente afastar-se dali. Para sair, precisa romper a ligação, remover aquilo que produz uma das sombras, mover o objeto ao qual foi presa ou superar diretamente sua magia. \nQuanto maior sua força, escala ou poder sobrenatural, maior será o conflito necessário para manter a Corrente."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando conseguir prender a sombra de uma criatura à sombra de um objeto imóvel, ela não consegue simplesmente afastar-se dali. Para sair, precisa romper a ligação, remover aquilo que produz uma das sombras, mover o objeto ao qual foi presa ou superar diretamente sua magia. \nQuanto maior sua força, escala ou poder sobrenatural, maior será o conflito necessário para manter a Corrente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2357"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2358",
+    "paragrafo_docx": 2358,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "CONJURAÇÃO DOS CLONES OBSCUROS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2358,
+        "tipo": "corpo",
+        "texto": "Quando desprender cópias de si mesmo das sombras e lhes der um objetivo simples, role+CAR.\n10+: Domínio 3.\n7–9: Domínio 2.\nOs clones conseguem mover-se, imitar você, manipular coisas simples e agir normalmente enquanto perseguirem o objetivo declarado. Eles não possuem automaticamente suas magias, poderes ou propriedades extraordinárias de equipamento.\nGaste 1 Domínio quando um clone precisar superar resistência ou perigo significativo, agir deliberadamente fora do objetivo, criar uma abertura real para outra pessoa ou continuar existindo depois de sofrer uma violência que deveria desfazê-lo.\nQuando o Domínio acabar, os clones se desfazem assim que sua ação atual terminar. Em escuridão intensa, receba +1 Domínio, até o máximo de 3."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando desprender cópias de si mesmo das sombras e lhes der um objetivo simples, role+CAR.\n10+: Domínio 3.\n7–9: Domínio 2.\nOs clones conseguem mover-se, imitar você, manipular coisas simples e agir normalmente enquanto perseguirem o objetivo declarado. Eles não possuem automaticamente suas magias, poderes ou propriedades extraordinárias de equipamento.\nGaste 1 Domínio quando um clone precisar superar resistência ou perigo significativo, agir deliberadamente fora do objetivo, criar uma abertura real para outra pessoa ou continuar existindo depois de sofrer uma violência que deveria desfazê-lo.\nQuando o Domínio acabar, os clones se desfazem assim que sua ação atual terminar. Em escuridão intensa, receba +1 Domínio, até o máximo de 3.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2358"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2359",
+    "paragrafo_docx": 2359,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "ROUBAR A SOMBRA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2359,
+        "tipo": "corpo",
+        "texto": "Quando conseguir tocar a sombra projetada de uma criatura e arrancá-la dela, receba Domínio 2 sobre a sombra roubada. Enquanto estiver sem ela, a presença da criatura parece sobrenaturalmente incompleta.\nGaste 1 para saber aproximadamente em que direção ela está; impedir que se esconda perfeitamente de você; fazer sua própria sombra resistir por um instante aos seus movimentos, obrigando-a a superar essa interferência antes de agir fisicamente como pretendia; ou projetar sua silhueta através de outra sombra que você toque.\nQuando o Domínio acabar, você devolver voluntariamente a sombra ou a criatura conseguir recuperá-la de você, a sombra retorna ao dono."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando conseguir tocar a sombra projetada de uma criatura e arrancá-la dela, receba Domínio 2 sobre a sombra roubada. Enquanto estiver sem ela, a presença da criatura parece sobrenaturalmente incompleta.\nGaste 1 para saber aproximadamente em que direção ela está; impedir que se esconda perfeitamente de você; fazer sua própria sombra resistir por um instante aos seus movimentos, obrigando-a a superar essa interferência antes de agir fisicamente como pretendia; ou projetar sua silhueta através de outra sombra que você toque.\nQuando o Domínio acabar, você devolver voluntariamente a sombra ou a criatura conseguir recuperá-la de você, a sombra retorna ao dono.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2359"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2360",
+    "paragrafo_docx": 2360,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "ALIMENTE AS CHAMAS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2360,
+        "tipo": "corpo",
+        "texto": "Quando oferecer ao fogo algo que ele realmente possa consumir e cuja perda tenha valor, receba 1 Domínio de Chama, máximo 3. Quando manifestar fogo através de sua magia, gaste 1 Domínio para aumentar em um grau alcance, duração, área ou Periculosidade sem que essa amplificação, por si só, acrescente novo risco à manifestação. \nDomínio não utilizado desaparece quando não existir mais nenhum fogo ligado à oferenda que você consiga perceber."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando oferecer ao fogo algo que ele realmente possa consumir e cuja perda tenha valor, receba 1 Domínio de Chama, máximo 3. Quando manifestar fogo através de sua magia, gaste 1 Domínio para aumentar em um grau alcance, duração, área ou Periculosidade sem que essa amplificação, por si só, acrescente novo risco à manifestação. \nDomínio não utilizado desaparece quando não existir mais nenhum fogo ligado à oferenda que você consiga perceber.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2360"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2361",
+    "paragrafo_docx": 2361,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "UM SEGUNDO ANTES",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2361,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando alguma coisa deveria pegá-lo completamente desprevenido, declare que percebeu seu início um instante antes de acontecer.\nVocê recebe tempo suficiente para realizar uma ação imediata plausível antes que aquilo se concretize completamente. Isso não garante que sua reação será suficiente; se houver perigo, enfrente-o normalmente."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando alguma coisa deveria pegá-lo completamente desprevenido, declare que percebeu seu início um instante antes de acontecer.\nVocê recebe tempo suficiente para realizar uma ação imediata plausível antes que aquilo se concretize completamente. Isso não garante que sua reação será suficiente; se houver perigo, enfrente-o normalmente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2361"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2362",
+    "paragrafo_docx": 2362,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "ATRASAR CONSEQUÊNCIA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2362,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando uma consequência física ou mágica imediata atingir você, pode suspender seus efeitos até o fim da cena. Aquilo que causou a consequência não é desfeito. No fim da cena, ela o alcança normalmente, salvo se alguma coisa na ficção realmente tiver conseguido impedir, remover ou resolver aquilo antes."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando uma consequência física ou mágica imediata atingir você, pode suspender seus efeitos até o fim da cena. Aquilo que causou a consequência não é desfeito. No fim da cena, ela o alcança normalmente, salvo se alguma coisa na ficção realmente tiver conseguido impedir, remover ou resolver aquilo antes.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2362"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2363",
+    "paragrafo_docx": 2363,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "TELEPATIA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2363,
+        "tipo": "corpo",
+        "texto": "Quando abrir sua mente para uma criatura cuja presença consiga perceber, você estabelece contato mental direto com ela. Pode transmitir palavras, imagens, emoções e sensações simples sem produzir som.\nSe ela aceitar o contato, pode responder da mesma maneira. Idioma não impede a transmissão de imagens, emoções e intenções, embora ideias complexas ainda possam exigir algum entendimento comum.\nDepois que o contato estiver estabelecido, silêncio, escuridão ou perda de contato visual não o interrompem por si só enquanto vocês permanecerem na mesma cena. \nTentar perceber pensamentos que a criatura não deseja transmitir exige enfrentar sua vontade."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando abrir sua mente para uma criatura cuja presença consiga perceber, você estabelece contato mental direto com ela. Pode transmitir palavras, imagens, emoções e sensações simples sem produzir som.\nSe ela aceitar o contato, pode responder da mesma maneira. Idioma não impede a transmissão de imagens, emoções e intenções, embora ideias complexas ainda possam exigir algum entendimento comum.\nDepois que o contato estiver estabelecido, silêncio, escuridão ou perda de contato visual não o interrompem por si só enquanto vocês permanecerem na mesma cena. \nTentar perceber pensamentos que a criatura não deseja transmitir exige enfrentar sua vontade.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2363"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2364",
+    "paragrafo_docx": 2364,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "INVASÃO MENTAL",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2364,
+        "tipo": "corpo",
+        "texto": "Quando penetrar deliberadamente a mente de alguém que resiste, role+CAR.\n10+: faça 2 perguntas.\n7–9: faça 1, mas ele percebe a invasão."
+      },
+      {
+        "paragrafo_docx": 2365,
+        "tipo": "opcao",
+        "texto": "O que ele mais teme agora?"
+      },
+      {
+        "paragrafo_docx": 2366,
+        "tipo": "opcao",
+        "texto": "O que está tentando esconder?"
+      },
+      {
+        "paragrafo_docx": 2367,
+        "tipo": "opcao",
+        "texto": "Que memória domina seus pensamentos?"
+      },
+      {
+        "paragrafo_docx": 2368,
+        "tipo": "opcao",
+        "texto": "Quem ou o que exerce maior influência sobre suas decisões neste momento?"
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2365,
+        "texto": "O que ele mais teme agora?"
+      },
+      {
+        "paragrafo_docx": 2366,
+        "texto": "O que está tentando esconder?"
+      },
+      {
+        "paragrafo_docx": 2367,
+        "texto": "Que memória domina seus pensamentos?"
+      },
+      {
+        "paragrafo_docx": 2368,
+        "texto": "Quem ou o que exerce maior influência sobre suas decisões neste momento?"
+      }
+    ],
+    "texto_original": "Quando penetrar deliberadamente a mente de alguém que resiste, role+CAR.\n10+: faça 2 perguntas.\n7–9: faça 1, mas ele percebe a invasão.\nO que ele mais teme agora?\nO que está tentando esconder?\nQue memória domina seus pensamentos?\nQuem ou o que exerce maior influência sobre suas decisões neste momento?",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2364"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2369",
+    "paragrafo_docx": 2369,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "FONTE ABERTA",
+    "requisito_literal": "Magia no Sangue",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2348",
+      "titulo_requerido": "MAGIA NO SANGUE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2369,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando parar deliberadamente de conter aquilo que existe dentro de você, diga como seu corpo e o ambiente deixam de conseguir esconder sua fonte. \nAté o fim da cena, quando obtiver 7+ em Magia no Sangue, escolha uma opção adicional. Enquanto a Fonte estiver Aberta, você não pode escolher que sua manifestação não deixe uma marca óbvia."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando parar deliberadamente de conter aquilo que existe dentro de você, diga como seu corpo e o ambiente deixam de conseguir esconder sua fonte. \nAté o fim da cena, quando obtiver 7+ em Magia no Sangue, escolha uma opção adicional. Enquanto a Fonte estiver Aberta, você não pode escolher que sua manifestação não deixe uma marca óbvia.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2369"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2370",
+    "paragrafo_docx": 2370,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "SOBRECARGA INATA",
+    "requisito_literal": "Magia no Sangue",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2348",
+      "titulo_requerido": "MAGIA NO SANGUE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2370,
+        "tipo": "corpo",
+        "texto": "Antes de rolar Magia no Sangue, aceite imediatamente uma Debilidade apropriada à maneira como sua fonte atravessa seu corpo. Se fizer isso, aumente em um grau alcance, duração, área ou Periculosidade da manifestação. A Debilidade acontece independentemente do resultado."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Antes de rolar Magia no Sangue, aceite imediatamente uma Debilidade apropriada à maneira como sua fonte atravessa seu corpo. Se fizer isso, aumente em um grau alcance, duração, área ou Periculosidade da manifestação. A Debilidade acontece independentemente do resultado.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2370"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2371",
+    "paragrafo_docx": 2371,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "NÃO CABE DENTRO",
+    "requisito_literal": "Magia no Sangue",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2348",
+      "titulo_requerido": "MAGIA NO SANGUE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2371,
+        "tipo": "corpo",
+        "texto": "Quando alguma força tentar suprimir completamente sua magia inata, você pode sofrer imediatamente uma Debilidade apropriada para forçar uma única manifestação através da supressão. Isso não destrói aquilo que está bloqueando sua magia nem permite ignorá-lo depois."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguma força tentar suprimir completamente sua magia inata, você pode sofrer imediatamente uma Debilidade apropriada para forçar uma única manifestação através da supressão. Isso não destrói aquilo que está bloqueando sua magia nem permite ignorá-lo depois.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2371"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2372",
+    "paragrafo_docx": 2372,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "ACUMULAR PODER",
+    "requisito_literal": "Magia no Sangue",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2348",
+      "titulo_requerido": "MAGIA NO SANGUE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2372,
+        "tipo": "corpo",
+        "texto": "Quando passar alguns instantes fazendo nada além de concentrar sua fonte dentro de si, diga como o poder acumulado se torna impossível de esconder. Enquanto mantiver o acúmulo, todos capazes de percebê-lo sabem que alguma manifestação poderosa está prestes a acontecer. Na próxima vez que utilizar Magia no Sangue nessa cena, antes da rolagem escolha alcance, duração, área ou Periculosidade e aumente essa dimensão em dois graus, até onde a ficção permitir. Depois disso, o acúmulo se desfaz. Se abandonar voluntariamente a preparação para realizar outra coisa incompatível, perde o poder acumulado."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando passar alguns instantes fazendo nada além de concentrar sua fonte dentro de si, diga como o poder acumulado se torna impossível de esconder. Enquanto mantiver o acúmulo, todos capazes de percebê-lo sabem que alguma manifestação poderosa está prestes a acontecer. Na próxima vez que utilizar Magia no Sangue nessa cena, antes da rolagem escolha alcance, duração, área ou Periculosidade e aumente essa dimensão em dois graus, até onde a ficção permitir. Depois disso, o acúmulo se desfaz. Se abandonar voluntariamente a preparação para realizar outra coisa incompatível, perde o poder acumulado.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2372"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2373",
+    "paragrafo_docx": 2373,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "MAGIA GEMINADA",
+    "requisito_literal": "Magia no Sangue",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2348",
+      "titulo_requerido": "MAGIA NO SANGUE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2373,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando obtiver sucesso em Magia no Sangue e a manifestação afetar diretamente uma única criatura ou objeto, escolha um segundo alvo plausível próximo. A mesma manifestação também o alcança. As escolhas, limitações e consequências da rolagem se aplicam ao efeito inteiro."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando obtiver sucesso em Magia no Sangue e a manifestação afetar diretamente uma única criatura ou objeto, escolha um segundo alvo plausível próximo. A mesma manifestação também o alcança. As escolhas, limitações e consequências da rolagem se aplicam ao efeito inteiro.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2373"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2374",
+    "paragrafo_docx": 2374,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "O SANGUE RECONHECE O SANGUE",
+    "requisito_literal": "Magia no Sangue",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2348",
+      "titulo_requerido": "MAGIA NO SANGUE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2374,
+        "tipo": "corpo",
+        "texto": "Quando entrar em contato direto com uma criatura, lugar, objeto ou fenômeno fundamentalmente tocado pela mesma fonte mágica que existe em você, seu corpo reconhece a afinidade. Pergunte uma:"
+      },
+      {
+        "paragrafo_docx": 2375,
+        "tipo": "opcao",
+        "texto": "O que aqui é verdadeiramente da mesma natureza que eu?"
+      },
+      {
+        "paragrafo_docx": 2376,
+        "tipo": "opcao",
+        "texto": "O que nesta coisa rejeita aquilo que existe em mim?"
+      },
+      {
+        "paragrafo_docx": 2377,
+        "tipo": "opcao",
+        "texto": "Que manifestação da nossa fonte está adormecida aqui?"
+      },
+      {
+        "paragrafo_docx": 2378,
+        "tipo": "opcao",
+        "texto": "O que aconteceria se nossas naturezas ressoassem diretamente?"
+      },
+      {
+        "paragrafo_docx": 2379,
+        "tipo": "continuacao",
+        "texto": "A resposta é verdadeira, mas vem como instinto, sensação corporal ou reação da própria fonte, não como conhecimento aprendido."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2375,
+        "texto": "O que aqui é verdadeiramente da mesma natureza que eu?"
+      },
+      {
+        "paragrafo_docx": 2376,
+        "texto": "O que nesta coisa rejeita aquilo que existe em mim?"
+      },
+      {
+        "paragrafo_docx": 2377,
+        "texto": "Que manifestação da nossa fonte está adormecida aqui?"
+      },
+      {
+        "paragrafo_docx": 2378,
+        "texto": "O que aconteceria se nossas naturezas ressoassem diretamente?"
+      }
+    ],
+    "texto_original": "Quando entrar em contato direto com uma criatura, lugar, objeto ou fenômeno fundamentalmente tocado pela mesma fonte mágica que existe em você, seu corpo reconhece a afinidade. Pergunte uma:\nO que aqui é verdadeiramente da mesma natureza que eu?\nO que nesta coisa rejeita aquilo que existe em mim?\nQue manifestação da nossa fonte está adormecida aqui?\nO que aconteceria se nossas naturezas ressoassem diretamente?\nA resposta é verdadeira, mas vem como instinto, sensação corporal ou reação da própria fonte, não como conhecimento aprendido.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2374"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2380",
+    "paragrafo_docx": 2380,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "EVOLUÇÃO ESPONTÂNEA",
+    "requisito_literal": "Magia no Sangue",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2348",
+      "titulo_requerido": "MAGIA NO SANGUE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2380,
+        "tipo": "corpo",
+        "texto": "Quando escolher este Movimento, diga que nova expressão sua fonte começou a produzir, mas você ainda não consegue controlar. Enquanto ela ainda não tiver se tornado estável, sempre que tentar manifestá-la numa situação significativa, o Mestre dirá que preço, perigo ou transformação ela exige de você. Se aceitar, a manifestação acontece.\nDepois de produzi-la dessa maneira em três situações significativas diferentes, ela se torna parte estável da sua natureza mágica. Pequenas manifestações seguras dessa capacidade passam a acontecer naturalmente. Utilizá-la além do seguro ainda pode acionar Magia no Sangue. Você só desenvolve uma Evolução Espontânea através deste Movimento."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando escolher este Movimento, diga que nova expressão sua fonte começou a produzir, mas você ainda não consegue controlar. Enquanto ela ainda não tiver se tornado estável, sempre que tentar manifestá-la numa situação significativa, o Mestre dirá que preço, perigo ou transformação ela exige de você. Se aceitar, a manifestação acontece.\nDepois de produzi-la dessa maneira em três situações significativas diferentes, ela se torna parte estável da sua natureza mágica. Pequenas manifestações seguras dessa capacidade passam a acontecer naturalmente. Utilizá-la além do seguro ainda pode acionar Magia no Sangue. Você só desenvolve uma Evolução Espontânea através deste Movimento.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2380"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2382",
+    "paragrafo_docx": 2382,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "A FONTE DEVORA A SI MESMA",
+    "requisito_literal": "Magia no Sangue",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2348",
+      "titulo_requerido": "MAGIA NO SANGUE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2382,
+        "tipo": "corpo",
+        "texto": "Quando uma manifestação sobrenatural fundamentalmente da mesma natureza que sua fonte atingir você, reduza em um grau sua Periculosidade ou severidade. Receba 1 Impulso. Gaste o Impulso na próxima vez que obtiver 7+ em Magia no Sangue para escolher uma opção adicional. O Impulso desaparece ao fim da cena."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando uma manifestação sobrenatural fundamentalmente da mesma natureza que sua fonte atingir você, reduza em um grau sua Periculosidade ou severidade. Receba 1 Impulso. Gaste o Impulso na próxima vez que obtiver 7+ em Magia no Sangue para escolher uma opção adicional. O Impulso desaparece ao fim da cena.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2382"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2383",
+    "paragrafo_docx": 2383,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "SANGUE HÍBRIDO",
+    "requisito_literal": "Magia no Sangue",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2348",
+      "titulo_requerido": "MAGIA NO SANGUE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2383,
+        "tipo": "corpo",
+        "texto": "Escolha uma segunda fonte mágica que também exista genuinamente em você e diga como as duas chegaram a coexistir. \nPequenas manifestações das duas fontes acontecem naturalmente e você pode utilizar Magia no Sangue através de qualquer uma delas. Diga também uma incompatibilidade real entre as duas naturezas. Quando tentar manifestá-las simultaneamente na mesma magia, essa incompatibilidade também entra na ficção e pode criar perigo, custo ou consequência."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha uma segunda fonte mágica que também exista genuinamente em você e diga como as duas chegaram a coexistir. \nPequenas manifestações das duas fontes acontecem naturalmente e você pode utilizar Magia no Sangue através de qualquer uma delas. Diga também uma incompatibilidade real entre as duas naturezas. Quando tentar manifestá-las simultaneamente na mesma magia, essa incompatibilidade também entra na ficção e pode criar perigo, custo ou consequência.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2383"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2384",
+    "paragrafo_docx": 2384,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "CAOS CONTROLADO",
+    "requisito_literal": "Magia Selvagem",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2354",
+      "titulo_requerido": "MAGIA SELVAGEM",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2384,
+        "tipo": "corpo",
+        "texto": "Quando uma manifestação selvagem estiver prestes a entrar na cena, o Mestre dirá duas formas diferentes pelas quais sua fonte poderia se manifestar. Escolha uma. Em um 6-, isso não substitui nem reduz o Movimento do Mestre."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando uma manifestação selvagem estiver prestes a entrar na cena, o Mestre dirá duas formas diferentes pelas quais sua fonte poderia se manifestar. Escolha uma. Em um 6-, isso não substitui nem reduz o Movimento do Mestre.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2384"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2385",
+    "paragrafo_docx": 2385,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "DOBRAR O ACASO",
+    "requisito_literal": "Magia Selvagem",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2354",
+      "titulo_requerido": "MAGIA SELVAGEM",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2385,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, depois que uma criatura próxima rolar 2d6, mas antes de o resultado ser resolvido, você pode forçar o acaso a se mover. Escolha um dos dados e role-o novamente. O novo resultado permanece. Depois que a rolagem for resolvida, uma manifestação selvagem entra na cena. Pode utilizar este Movimento sobre sua própria rolagem ou sobre a de outra criatura."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, depois que uma criatura próxima rolar 2d6, mas antes de o resultado ser resolvido, você pode forçar o acaso a se mover. Escolha um dos dados e role-o novamente. O novo resultado permanece. Depois que a rolagem for resolvida, uma manifestação selvagem entra na cena. Pode utilizar este Movimento sobre sua própria rolagem ou sobre a de outra criatura.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2385"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2386",
+    "paragrafo_docx": 2386,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "COINCIDÊNCIA IMPOSSÍVEL",
+    "requisito_literal": "Magia Selvagem",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2354",
+      "titulo_requerido": "MAGIA SELVAGEM",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2386,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, declare uma coincidência absurdamente improvável, mas fisicamente possível, que favoreça a situação presente. Ela acontece. Não pode contradizer algo já estabelecido nem produzir diretamente um acontecimento sobrenatural impossível. Antes do fim da sessão, o Mestre pode fazer uma coincidência igualmente improvável ocorrer de maneira inconveniente para você."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, declare uma coincidência absurdamente improvável, mas fisicamente possível, que favoreça a situação presente. Ela acontece. Não pode contradizer algo já estabelecido nem produzir diretamente um acontecimento sobrenatural impossível. Antes do fim da sessão, o Mestre pode fazer uma coincidência igualmente improvável ocorrer de maneira inconveniente para você.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2386"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2387",
+    "paragrafo_docx": 2387,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "PRESENÇA DRACÔNICA",
+    "requisito_literal": "Herança Dracônica",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2355",
+      "titulo_requerido": "HERANÇA DRACÔNICA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2387,
+        "tipo": "corpo",
+        "texto": "Quando manifestar plenamente um de seus traços dracônicos e reivindicar abertamente domínio, respeito ou passagem, role+CAR. \n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 2388,
+        "tipo": "opcao",
+        "texto": "Criaturas inferiores que consigam percebê-lo não conseguem tratá-lo como insignificante."
+      },
+      {
+        "paragrafo_docx": 2389,
+        "tipo": "opcao",
+        "texto": "Uma criatura poderosa revela imediatamente se sua presença desperta medo, respeito, cobiça ou desafio."
+      },
+      {
+        "paragrafo_docx": 2390,
+        "tipo": "opcao",
+        "texto": "Sua reivindicação conta como influência para Negociar com quem reconheça autoridade dracônica."
+      },
+      {
+        "paragrafo_docx": 2391,
+        "tipo": "opcao",
+        "texto": "Ninguém presente pode fingir posteriormente que não percebeu aquilo que existe em você."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2388,
+        "texto": "Criaturas inferiores que consigam percebê-lo não conseguem tratá-lo como insignificante."
+      },
+      {
+        "paragrafo_docx": 2389,
+        "texto": "Uma criatura poderosa revela imediatamente se sua presença desperta medo, respeito, cobiça ou desafio."
+      },
+      {
+        "paragrafo_docx": 2390,
+        "texto": "Sua reivindicação conta como influência para Negociar com quem reconheça autoridade dracônica."
+      },
+      {
+        "paragrafo_docx": 2391,
+        "texto": "Ninguém presente pode fingir posteriormente que não percebeu aquilo que existe em você."
+      }
+    ],
+    "texto_original": "Quando manifestar plenamente um de seus traços dracônicos e reivindicar abertamente domínio, respeito ou passagem, role+CAR. \n10+: escolha 2.\n7–9: escolha 1.\nCriaturas inferiores que consigam percebê-lo não conseguem tratá-lo como insignificante.\nUma criatura poderosa revela imediatamente se sua presença desperta medo, respeito, cobiça ou desafio.\nSua reivindicação conta como influência para Negociar com quem reconheça autoridade dracônica.\nNinguém presente pode fingir posteriormente que não percebeu aquilo que existe em você.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2387"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2392",
+    "paragrafo_docx": 2392,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "MEU TESOURO",
+    "requisito_literal": "Herança Dracônica",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2355",
+      "titulo_requerido": "HERANÇA DRACÔNICA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2392,
+        "tipo": "corpo",
+        "texto": "Diga o que sua natureza dracônica reconhece como tesouro: riqueza, livros, obras de arte, território, segredos, relíquias, pessoas sob sua proteção ou outra coleção concreta. Quando algo significativo que você reivindicou pessoalmente como parte desse tesouro for roubado, violado ou deliberadamente ameaçado, receba Domínio 2. Gaste 1 para:"
+      },
+      {
+        "paragrafo_docx": 2393,
+        "tipo": "opcao",
+        "texto": "perceber aproximadamente em que direção algo roubado foi levado;"
+      },
+      {
+        "paragrafo_docx": 2394,
+        "tipo": "opcao",
+        "texto": "receber +1 adiante para recuperar ou defender seu tesouro;"
+      },
+      {
+        "paragrafo_docx": 2395,
+        "tipo": "opcao",
+        "texto": "reconhecer quem presente está agindo por cobiça sobre ele;"
+      },
+      {
+        "paragrafo_docx": 2396,
+        "tipo": "opcao",
+        "texto": "fazer sua reivindicação contar como influência perante alguém que compreenda o que significa desafiar a posse de um dragão."
+      },
+      {
+        "paragrafo_docx": 2397,
+        "tipo": "continuacao",
+        "texto": "O Domínio desaparece quando o tesouro estiver seguro ou você abandonar conscientemente sua reivindicação."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2393,
+        "texto": "perceber aproximadamente em que direção algo roubado foi levado;"
+      },
+      {
+        "paragrafo_docx": 2394,
+        "texto": "receber +1 adiante para recuperar ou defender seu tesouro;"
+      },
+      {
+        "paragrafo_docx": 2395,
+        "texto": "reconhecer quem presente está agindo por cobiça sobre ele;"
+      },
+      {
+        "paragrafo_docx": 2396,
+        "texto": "fazer sua reivindicação contar como influência perante alguém que compreenda o que significa desafiar a posse de um dragão."
+      }
+    ],
+    "texto_original": "Diga o que sua natureza dracônica reconhece como tesouro: riqueza, livros, obras de arte, território, segredos, relíquias, pessoas sob sua proteção ou outra coleção concreta. Quando algo significativo que você reivindicou pessoalmente como parte desse tesouro for roubado, violado ou deliberadamente ameaçado, receba Domínio 2. Gaste 1 para:\nperceber aproximadamente em que direção algo roubado foi levado;\nreceber +1 adiante para recuperar ou defender seu tesouro;\nreconhecer quem presente está agindo por cobiça sobre ele;\nfazer sua reivindicação contar como influência perante alguém que compreenda o que significa desafiar a posse de um dragão.\nO Domínio desaparece quando o tesouro estiver seguro ou você abandonar conscientemente sua reivindicação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2392"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2398",
+    "paragrafo_docx": 2398,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "O DRAGÃO ESTÁ ACORDANDO",
+    "requisito_literal": "Herança Dracônica",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2355",
+      "titulo_requerido": "HERANÇA DRACÔNICA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2398,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, permita que sua natureza dracônica domine completamente sua forma até o fim da cena. Todos os traços escolhidos em Herança Dracônica tornam-se plenamente reais ao mesmo tempo. Escolha também um terceiro traço temporário apropriado à mesma natureza dracônica. Durante a transformação, nenhuma criatura capaz de percebê-lo consegue confundi-lo com alguém inteiramente mundano. Quando a transformação termina, uma marca física dela permanece até você realmente descansar."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, permita que sua natureza dracônica domine completamente sua forma até o fim da cena. Todos os traços escolhidos em Herança Dracônica tornam-se plenamente reais ao mesmo tempo. Escolha também um terceiro traço temporário apropriado à mesma natureza dracônica. Durante a transformação, nenhuma criatura capaz de percebê-lo consegue confundi-lo com alguém inteiramente mundano. Quando a transformação termina, uma marca física dela permanece até você realmente descansar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2398"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2400",
+    "paragrafo_docx": 2400,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "FORMA UMBRAL",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2400,
+        "tipo": "corpo",
+        "texto": "Quando entrar numa sombra profunda e abrir mão temporariamente da própria solidez, seu corpo e aquilo que veste ou carrega junto dele tornam-se uma sombra viva. Enquanto permanecer ligado a sombras suficientes e não tentar exercer força física direta, você pode:"
+      },
+      {
+        "paragrafo_docx": 2401,
+        "tipo": "opcao",
+        "texto": "deslizar por superfícies;"
+      },
+      {
+        "paragrafo_docx": 2402,
+        "tipo": "opcao",
+        "texto": "atravessar pequenas frestas;"
+      },
+      {
+        "paragrafo_docx": 2403,
+        "tipo": "opcao",
+        "texto": "passar sob portas;"
+      },
+      {
+        "paragrafo_docx": 2404,
+        "tipo": "opcao",
+        "texto": "escapar de contenções que dependam de segurar matéria sólida."
+      },
+      {
+        "paragrafo_docx": 2405,
+        "tipo": "continuacao",
+        "texto": "Luz intensa, magia apropriada ou ser forçado a permanecer onde nenhuma sombra consiga sustentar sua existência podem devolvê-lo à forma normal."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2401,
+        "texto": "deslizar por superfícies;"
+      },
+      {
+        "paragrafo_docx": 2402,
+        "texto": "atravessar pequenas frestas;"
+      },
+      {
+        "paragrafo_docx": 2403,
+        "texto": "passar sob portas;"
+      },
+      {
+        "paragrafo_docx": 2404,
+        "texto": "escapar de contenções que dependam de segurar matéria sólida."
+      }
+    ],
+    "texto_original": "Quando entrar numa sombra profunda e abrir mão temporariamente da própria solidez, seu corpo e aquilo que veste ou carrega junto dele tornam-se uma sombra viva. Enquanto permanecer ligado a sombras suficientes e não tentar exercer força física direta, você pode:\ndeslizar por superfícies;\natravessar pequenas frestas;\npassar sob portas;\nescapar de contenções que dependam de segurar matéria sólida.\nLuz intensa, magia apropriada ou ser forçado a permanecer onde nenhuma sombra consiga sustentar sua existência podem devolvê-lo à forma normal.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2400"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2406",
+    "paragrafo_docx": 2406,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "MANTO DA FÊNIX",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2406,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando permitir que o fogo dentro de você atravesse completamente sua pele, envolva-se em chamas até decidir contê-las novamente ou a cena terminar. Enquanto estiver assim:"
+      },
+      {
+        "paragrafo_docx": 2407,
+        "tipo": "opcao",
+        "texto": "seu próprio fogo não o fere simplesmente por existir sobre você;"
+      },
+      {
+        "paragrafo_docx": 2408,
+        "tipo": "opcao",
+        "texto": "seu corpo é uma fonte real de calor e chama;"
+      },
+      {
+        "paragrafo_docx": 2409,
+        "tipo": "opcao",
+        "texto": "objetos inflamáveis em contato prolongado podem incendiar-se;"
+      },
+      {
+        "paragrafo_docx": 2410,
+        "tipo": "opcao",
+        "texto": "uma criatura que tente agarrá-lo, contê-lo ou manter contato físico precisa lidar com o fato de estar tocando algo em chamas."
+      },
+      {
+        "paragrafo_docx": 2411,
+        "tipo": "continuacao",
+        "texto": "Consequências explícitas de sua própria magia ainda podem feri-lo normalmente."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2407,
+        "texto": "seu próprio fogo não o fere simplesmente por existir sobre você;"
+      },
+      {
+        "paragrafo_docx": 2408,
+        "texto": "seu corpo é uma fonte real de calor e chama;"
+      },
+      {
+        "paragrafo_docx": 2409,
+        "texto": "objetos inflamáveis em contato prolongado podem incendiar-se;"
+      },
+      {
+        "paragrafo_docx": 2410,
+        "texto": "uma criatura que tente agarrá-lo, contê-lo ou manter contato físico precisa lidar com o fato de estar tocando algo em chamas."
+      }
+    ],
+    "texto_original": "Uma vez por cena, quando permitir que o fogo dentro de você atravesse completamente sua pele, envolva-se em chamas até decidir contê-las novamente ou a cena terminar. Enquanto estiver assim:\nseu próprio fogo não o fere simplesmente por existir sobre você;\nseu corpo é uma fonte real de calor e chama;\nobjetos inflamáveis em contato prolongado podem incendiar-se;\numa criatura que tente agarrá-lo, contê-lo ou manter contato físico precisa lidar com o fato de estar tocando algo em chamas.\nConsequências explícitas de sua própria magia ainda podem feri-lo normalmente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2406"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2412",
+    "paragrafo_docx": 2412,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "RENASCER DAS CINZAS",
+    "requisito_literal": "Manto da Fênix",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2406",
+      "titulo_requerido": "MANTO DA FÊNIX",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2412,
+        "tipo": "corpo",
+        "texto": "Quando chegar a 0 PV, você pode deixar seu corpo ser completamente tomado pela chama antes de realizar Último Suspiro. Seu corpo físico se desfaz em fogo, brasa e cinza. Realize Último Suspiro normalmente. \nSe o resultado permitir que você retorne à vida, você se recompõe fisicamente a partir das cinzas ou de uma chama próxima ligada à sua fonte. Ferimentos puramente físicos que dependiam da destruição do antigo corpo não precisam permanecer, mas qualquer preço, marca, Debilidade ou consequência estabelecida pelo Último Suspiro continua real. Se a Morte levar você, as cinzas permanecem cinzas."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando chegar a 0 PV, você pode deixar seu corpo ser completamente tomado pela chama antes de realizar Último Suspiro. Seu corpo físico se desfaz em fogo, brasa e cinza. Realize Último Suspiro normalmente. \nSe o resultado permitir que você retorne à vida, você se recompõe fisicamente a partir das cinzas ou de uma chama próxima ligada à sua fonte. Ferimentos puramente físicos que dependiam da destruição do antigo corpo não precisam permanecer, mas qualquer preço, marca, Debilidade ou consequência estabelecida pelo Último Suspiro continua real. Se a Morte levar você, as cinzas permanecem cinzas.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2412"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2413",
+    "paragrafo_docx": 2413,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "TEMPESTADE NO PEITO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2413,
+        "tipo": "corpo",
+        "texto": "Quando obtiver sucesso numa manifestação inata de vento, trovão ou eletricidade, você pode deixar a própria descarga carregar seu corpo para uma posição próxima que o impulso realmente possa alcançar. Você não oferece uma abertura apenas por esse deslocamento. Durante uma tempestade natural significativa, pode levar consigo uma criatura voluntária próxima."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando obtiver sucesso numa manifestação inata de vento, trovão ou eletricidade, você pode deixar a própria descarga carregar seu corpo para uma posição próxima que o impulso realmente possa alcançar. Você não oferece uma abertura apenas por esse deslocamento. Durante uma tempestade natural significativa, pode levar consigo uma criatura voluntária próxima.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2413"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2414",
+    "paragrafo_docx": 2414,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "OLHO DA TEMPESTADE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2414,
+        "tipo": "corpo",
+        "texto": "Quando permanecer imóvel no centro de vento, chuva, granizo ou outra tempestade e deixar que ela reconheça aquilo que existe em você, uma pequena região imediatamente ao seu redor torna-se seu olho. Enquanto não se deslocar significativamente:"
+      },
+      {
+        "paragrafo_docx": 2415,
+        "tipo": "opcao",
+        "texto": "vento e chuva comuns não atrapalham quem estiver junto a você;"
+      },
+      {
+        "paragrafo_docx": 2416,
+        "tipo": "opcao",
+        "texto": "objetos e criaturas protegidos pelo olho não são arrastados apenas pela força ordinária daquela tempestade;"
+      },
+      {
+        "paragrafo_docx": 2417,
+        "tipo": "opcao",
+        "texto": "você percebe imediatamente qualquer mudança importante na direção, intensidade ou natureza sobrenatural da tempestade."
+      },
+      {
+        "paragrafo_docx": 2418,
+        "tipo": "continuacao",
+        "texto": "Você não controla o clima através deste Movimento."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2415,
+        "texto": "vento e chuva comuns não atrapalham quem estiver junto a você;"
+      },
+      {
+        "paragrafo_docx": 2416,
+        "texto": "objetos e criaturas protegidos pelo olho não são arrastados apenas pela força ordinária daquela tempestade;"
+      },
+      {
+        "paragrafo_docx": 2417,
+        "texto": "você percebe imediatamente qualquer mudança importante na direção, intensidade ou natureza sobrenatural da tempestade."
+      }
+    ],
+    "texto_original": "Quando permanecer imóvel no centro de vento, chuva, granizo ou outra tempestade e deixar que ela reconheça aquilo que existe em você, uma pequena região imediatamente ao seu redor torna-se seu olho. Enquanto não se deslocar significativamente:\nvento e chuva comuns não atrapalham quem estiver junto a você;\nobjetos e criaturas protegidos pelo olho não são arrastados apenas pela força ordinária daquela tempestade;\nvocê percebe imediatamente qualquer mudança importante na direção, intensidade ou natureza sobrenatural da tempestade.\nVocê não controla o clima através deste Movimento.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2414"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2419",
+    "paragrafo_docx": 2419,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "O FRIO CONSERVA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2419,
+        "tipo": "corpo",
+        "texto": "Quando envolver completamente alguma coisa em gelo criado pela sua própria fonte, escolha mantê-la preservada. Enquanto o gelo permanecer íntegro: decomposição, sangramento, progressão de venenos comuns, deterioração física e outros processos biológicos ou químicos ordinários não avançam. \nUma criatura viva preservada dessa maneira também não consegue agir normalmente enquanto permanecer congelada. Maldições, fenômenos sobrenaturais ou coisas cuja natureza não obedeça ao tempo biológico comum podem continuar agindo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando envolver completamente alguma coisa em gelo criado pela sua própria fonte, escolha mantê-la preservada. Enquanto o gelo permanecer íntegro: decomposição, sangramento, progressão de venenos comuns, deterioração física e outros processos biológicos ou químicos ordinários não avançam. \nUma criatura viva preservada dessa maneira também não consegue agir normalmente enquanto permanecer congelada. Maldições, fenômenos sobrenaturais ou coisas cuja natureza não obedeça ao tempo biológico comum podem continuar agindo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2419"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2420",
+    "paragrafo_docx": 2420,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "ECO DE UM INSTANTE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2420,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, depois que sua posição mudar, declare que seu corpo retorna exatamente ao lugar que ocupava alguns instantes antes. Somente sua posição retorna. Isso não desfaz:"
+      },
+      {
+        "paragrafo_docx": 2421,
+        "tipo": "opcao",
+        "texto": "dano sofrido;"
+      },
+      {
+        "paragrafo_docx": 2422,
+        "tipo": "opcao",
+        "texto": "ações realizadas;"
+      },
+      {
+        "paragrafo_docx": 2423,
+        "tipo": "opcao",
+        "texto": "objetos movidos;"
+      },
+      {
+        "paragrafo_docx": 2424,
+        "tipo": "opcao",
+        "texto": "recursos utilizados;"
+      },
+      {
+        "paragrafo_docx": 2425,
+        "tipo": "opcao",
+        "texto": "informação descoberta;"
+      },
+      {
+        "paragrafo_docx": 2426,
+        "tipo": "opcao",
+        "texto": "qualquer outra consequência que já tenha ocorrido."
+      },
+      {
+        "paragrafo_docx": 2427,
+        "tipo": "continuacao",
+        "texto": "O mundo continuou. Você voltou."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2421,
+        "texto": "dano sofrido;"
+      },
+      {
+        "paragrafo_docx": 2422,
+        "texto": "ações realizadas;"
+      },
+      {
+        "paragrafo_docx": 2423,
+        "texto": "objetos movidos;"
+      },
+      {
+        "paragrafo_docx": 2424,
+        "texto": "recursos utilizados;"
+      },
+      {
+        "paragrafo_docx": 2425,
+        "texto": "informação descoberta;"
+      },
+      {
+        "paragrafo_docx": 2426,
+        "texto": "qualquer outra consequência que já tenha ocorrido."
+      }
+    ],
+    "texto_original": "Uma vez por cena, depois que sua posição mudar, declare que seu corpo retorna exatamente ao lugar que ocupava alguns instantes antes. Somente sua posição retorna. Isso não desfaz:\ndano sofrido;\nações realizadas;\nobjetos movidos;\nrecursos utilizados;\ninformação descoberta;\nqualquer outra consequência que já tenha ocorrido.\nO mundo continuou. Você voltou.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2420"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2428",
+    "paragrafo_docx": 2428,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "O TEMPO COBRA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2428,
+        "tipo": "corpo",
+        "texto": "Quando tocar um objeto ou estrutura não viva e permitir que seu próprio tempo escorra para dentro dela, você pode fazê-la envelhecer rapidamente. Aquilo sofre somente as consequências naturais da passagem do tempo sobre sua própria matéria: madeira seca ou apodrece, metal oxida, tecido degrada, pedra racha, alimento estraga. \nVocê não cria acontecimentos que nunca ocorreriam apenas por esperar. Objetos mágicos, materiais eternos ou coisas protegidas contra decadência podem resistir ou exigir que você enfrente sua natureza."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando tocar um objeto ou estrutura não viva e permitir que seu próprio tempo escorra para dentro dela, você pode fazê-la envelhecer rapidamente. Aquilo sofre somente as consequências naturais da passagem do tempo sobre sua própria matéria: madeira seca ou apodrece, metal oxida, tecido degrada, pedra racha, alimento estraga. \nVocê não cria acontecimentos que nunca ocorreriam apenas por esperar. Objetos mágicos, materiais eternos ou coisas protegidas contra decadência podem resistir ou exigir que você enfrente sua natureza.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2428"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2429",
+    "paragrafo_docx": 2429,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "MENTE SEM PELE",
+    "requisito_literal": "Invasão Mental",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2364",
+      "titulo_requerido": "INVASÃO MENTAL",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2429,
+        "tipo": "corpo",
+        "texto": "Quando outra criatura entrar deliberadamente na sua mente, tentar lê-la, controlá-la ou tocar diretamente seus pensamentos, o caminho se abre nos dois sentidos. Faça imediatamente uma pergunta de Invasão Mental sobre ela sem rolar. Ela ainda pode fazer aquilo que conseguiu fazer com você."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando outra criatura entrar deliberadamente na sua mente, tentar lê-la, controlá-la ou tocar diretamente seus pensamentos, o caminho se abre nos dois sentidos. Faça imediatamente uma pergunta de Invasão Mental sobre ela sem rolar. Ela ainda pode fazer aquilo que conseguiu fazer com você.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2429"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2430",
+    "paragrafo_docx": 2430,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "MEMÓRIA ABERTA",
+    "requisito_literal": "Invasão Mental",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2364",
+      "titulo_requerido": "INVASÃO MENTAL",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2430,
+        "tipo": "corpo",
+        "texto": "Quando Invasão Mental revelar uma memória que domina os pensamentos de alguém, você pode mergulhar nela por alguns instantes. Experimente a memória a partir da percepção daquela pessoa e pergunte uma:"
+      },
+      {
+        "paragrafo_docx": 2431,
+        "tipo": "opcao",
+        "texto": "Que detalhe sensorial ela nunca conseguiria esquecer?"
+      },
+      {
+        "paragrafo_docx": 2432,
+        "tipo": "opcao",
+        "texto": "Quem aqui era mais importante para ela do que parecia?"
+      },
+      {
+        "paragrafo_docx": 2433,
+        "tipo": "opcao",
+        "texto": "O que ela acreditava naquele momento que agora sabe estar errado?"
+      },
+      {
+        "paragrafo_docx": 2434,
+        "tipo": "opcao",
+        "texto": "Que parte desta lembrança ela evita conscientemente encarar?"
+      },
+      {
+        "paragrafo_docx": 2435,
+        "tipo": "continuacao",
+        "texto": "A memória não é objetiva. Você está vendo como aquela mente a preservou."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2431,
+        "texto": "Que detalhe sensorial ela nunca conseguiria esquecer?"
+      },
+      {
+        "paragrafo_docx": 2432,
+        "texto": "Quem aqui era mais importante para ela do que parecia?"
+      },
+      {
+        "paragrafo_docx": 2433,
+        "texto": "O que ela acreditava naquele momento que agora sabe estar errado?"
+      },
+      {
+        "paragrafo_docx": 2434,
+        "texto": "Que parte desta lembrança ela evita conscientemente encarar?"
+      }
+    ],
+    "texto_original": "Quando Invasão Mental revelar uma memória que domina os pensamentos de alguém, você pode mergulhar nela por alguns instantes. Experimente a memória a partir da percepção daquela pessoa e pergunte uma:\nQue detalhe sensorial ela nunca conseguiria esquecer?\nQuem aqui era mais importante para ela do que parecia?\nO que ela acreditava naquele momento que agora sabe estar errado?\nQue parte desta lembrança ela evita conscientemente encarar?\nA memória não é objetiva. Você está vendo como aquela mente a preservou.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2430"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2436",
+    "paragrafo_docx": 2436,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "PENSAMENTO CONTAGIOSO",
+    "requisito_literal": "Telepatia",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2363",
+      "titulo_requerido": "TELEPATIA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2436,
+        "tipo": "corpo",
+        "texto": "Quando estiver em contato através de Telepatia e a outra criatura deliberadamente pensar em alguém que conhece, você pode usar a imagem mental dessa pessoa como ponte. Se essa segunda mente estiver suficientemente próxima para que sua presença psíquica consiga alcançá-la, você pode estabelecer contato mesmo sem conseguir percebê-la fisicamente. Ela percebe que alguma coisa acabou de tocá-la mentalmente."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando estiver em contato através de Telepatia e a outra criatura deliberadamente pensar em alguém que conhece, você pode usar a imagem mental dessa pessoa como ponte. Se essa segunda mente estiver suficientemente próxima para que sua presença psíquica consiga alcançá-la, você pode estabelecer contato mesmo sem conseguir percebê-la fisicamente. Ela percebe que alguma coisa acabou de tocá-la mentalmente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2436"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2437",
+    "paragrafo_docx": 2437,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "GRAVIDADE PARTICULAR",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2437,
+        "tipo": "corpo",
+        "texto": "Quando escolher um ponto ou superfície próxima que consiga perceber e impor sobre ela a gravidade da sua fonte, diga qual direção passa a significar “para baixo” numa pequena área ao redor. Objetos soltos e matéria sem resistência começam a cair naquela direção. Criaturas capazes de reagir ainda podem se agarrar, mover-se, resistir ou enfrentar o perigo normalmente. Você não aumenta automaticamente a força gravitacional nem esmaga coisas apenas com este Movimento. A direção permanece alterada enquanto mantiver concentração."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando escolher um ponto ou superfície próxima que consiga perceber e impor sobre ela a gravidade da sua fonte, diga qual direção passa a significar “para baixo” numa pequena área ao redor. Objetos soltos e matéria sem resistência começam a cair naquela direção. Criaturas capazes de reagir ainda podem se agarrar, mover-se, resistir ou enfrentar o perigo normalmente. Você não aumenta automaticamente a força gravitacional nem esmaga coisas apenas com este Movimento. A direção permanece alterada enquanto mantiver concentração.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2437"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2439",
+    "paragrafo_docx": 2439,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "O RESULTADO INEVITÁVEL",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2439,
+        "tipo": "corpo",
+        "texto": "Quando colocar em movimento um processo físico claro, não diretamente contestado por uma criatura, declare qual será seu resultado natural se ninguém interferir. Acaso ordinário não fará o processo desviar desse resultado. Para mudá-lo, alguém ou alguma coisa precisa intervir concretamente. Você não controla criaturas nem garante o resultado de ataques através deste Movimento"
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando colocar em movimento um processo físico claro, não diretamente contestado por uma criatura, declare qual será seu resultado natural se ninguém interferir. Acaso ordinário não fará o processo desviar desse resultado. Para mudá-lo, alguém ou alguma coisa precisa intervir concretamente. Você não controla criaturas nem garante o resultado de ataques através deste Movimento",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2439"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2440",
+    "paragrafo_docx": 2440,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "ENTRE SONHOS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2440,
+        "tipo": "corpo",
+        "texto": "Quando dormir possuindo um vínculo real com outra criatura adormecida — toque, objeto pessoal, relação significativa, nome verdadeiro ou outra conexão estabelecida — você pode encontrar o sonho dela. Dentro dele, você consegue:"
+      },
+      {
+        "paragrafo_docx": 2441,
+        "tipo": "opcao",
+        "texto": "conversar;"
+      },
+      {
+        "paragrafo_docx": 2442,
+        "tipo": "opcao",
+        "texto": "perceber como ela representa a si mesma;"
+      },
+      {
+        "paragrafo_docx": 2443,
+        "tipo": "opcao",
+        "texto": "alterar cenário e aparência segundo lógica onírica;"
+      },
+      {
+        "paragrafo_docx": 2444,
+        "tipo": "opcao",
+        "texto": "permitir que ela perceba você."
+      },
+      {
+        "paragrafo_docx": 2445,
+        "tipo": "continuacao",
+        "texto": "Isso não obriga ninguém a dizer a verdade, não causa automaticamente dano real e não concede controle sobre a pessoa quando acordar. Se alguma coisa dentro do sonho puder realmente aprisionar, expulsar ou ferir sua consciência, enfrente a situação normalmente."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2441,
+        "texto": "conversar;"
+      },
+      {
+        "paragrafo_docx": 2442,
+        "texto": "perceber como ela representa a si mesma;"
+      },
+      {
+        "paragrafo_docx": 2443,
+        "texto": "alterar cenário e aparência segundo lógica onírica;"
+      },
+      {
+        "paragrafo_docx": 2444,
+        "texto": "permitir que ela perceba você."
+      }
+    ],
+    "texto_original": "Quando dormir possuindo um vínculo real com outra criatura adormecida — toque, objeto pessoal, relação significativa, nome verdadeiro ou outra conexão estabelecida — você pode encontrar o sonho dela. Dentro dele, você consegue:\nconversar;\nperceber como ela representa a si mesma;\nalterar cenário e aparência segundo lógica onírica;\npermitir que ela perceba você.\nIsso não obriga ninguém a dizer a verdade, não causa automaticamente dano real e não concede controle sobre a pessoa quando acordar. Se alguma coisa dentro do sonho puder realmente aprisionar, expulsar ou ferir sua consciência, enfrente a situação normalmente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2440"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2446",
+    "paragrafo_docx": 2446,
+    "grupo": "FEITICEIRO",
+    "categoria": "classe",
+    "titulo": "TRAZER ALGO DO SONHO",
+    "requisito_literal": "Entre Sonhos",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2440",
+      "titulo_requerido": "ENTRE SONHOS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2446,
+        "tipo": "corpo",
+        "texto": "Quando abandonar um sonho carregando um objeto ou símbolo importante que só existia ali, pergunte ao Mestre:\n“Que parte desta coisa consegue sobreviver ao despertar?”\nO Mestre dará uma propriedade concreta e limitada relacionada ao papel daquele objeto no sonho. Ele torna-se fisicamente real em suas mãos até:"
+      },
+      {
+        "paragrafo_docx": 2447,
+        "tipo": "opcao",
+        "texto": "cumprir aquilo que simbolizava;"
+      },
+      {
+        "paragrafo_docx": 2448,
+        "tipo": "opcao",
+        "texto": "você dormir novamente;"
+      },
+      {
+        "paragrafo_docx": 2449,
+        "tipo": "opcao",
+        "texto": "alguma coisa na realidade demonstrar definitivamente que ele não pode existir."
+      },
+      {
+        "paragrafo_docx": 2450,
+        "tipo": "continuacao",
+        "texto": "."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2447,
+        "texto": "cumprir aquilo que simbolizava;"
+      },
+      {
+        "paragrafo_docx": 2448,
+        "texto": "você dormir novamente;"
+      },
+      {
+        "paragrafo_docx": 2449,
+        "texto": "alguma coisa na realidade demonstrar definitivamente que ele não pode existir."
+      }
+    ],
+    "texto_original": "Quando abandonar um sonho carregando um objeto ou símbolo importante que só existia ali, pergunte ao Mestre:\n“Que parte desta coisa consegue sobreviver ao despertar?”\nO Mestre dará uma propriedade concreta e limitada relacionada ao papel daquele objeto no sonho. Ele torna-se fisicamente real em suas mãos até:\ncumprir aquilo que simbolizava;\nvocê dormir novamente;\nalguma coisa na realidade demonstrar definitivamente que ele não pode existir.\n.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2446"
+  }
+]
