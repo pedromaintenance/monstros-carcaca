@@ -400,6 +400,50 @@ def validar_guias_dossies_regionais(fontes,rids):
     print(f"Guias regionais validados: {len(guides)} regiões, "
           f"{len(seen_questions)} perguntas, sem preencher números nem eventos.")
 
+
+def validar_prioridades_curadoria(fontes):
+    """Prioridades são editoriais. Nunca resolvem perguntas nem criam cânone."""
+    priorities=load("data/prioridades_curadoria_m3.json")
+    require(priorities["schema_version"]=="0.1.0" and
+            priorities["estado"]=="plano_editorial_nao_executado",
+            "Priorização não é um plano de execução automática.")
+    schema=load("schemas/prioridade-curadoria.schema.json")
+    Draft202012Validator.check_schema(schema)
+    validator=Draft202012Validator(schema)
+    guides=load("data/guias_dossies_regionais.json")["guias"]
+    questions={q["id"]:q for g in guides for q in g["perguntas"]}
+    require(len(questions)==sum(len(g["perguntas"]) for g in guides),
+            "Não aceitar IDs repetidos nos guias.")
+    picked=priorities["prioridades"]
+    ids=unique([{"id":x["pergunta_id"]} for x in picked],"prioridades de pesquisa")
+    order={x["pergunta_id"]:x for x in picked}
+    require(len(picked)<=len(questions),"Mais prioridades que perguntas disponíveis.")
+    ordinals=[x["ordem_editorial"] for x in picked]
+    require(sorted(ordinals)==list(range(1,len(picked)+1)),
+            "Ordem editorial deve iniciar em 1 sem lacunas ou duplicidade.")
+    for entry in picked:
+        errors=list(validator.iter_errors(entry))
+        require(not errors,
+                f"Prioridade inválida {entry['pergunta_id']}: {errors[:1]}")
+        qid=entry["pergunta_id"]
+        require(qid in questions,f"Pergunta inexistente na fila: {qid}")
+        require(entry["fonte_base"] in fontes,f"Fonte não reconhecida: {qid}")
+        require(entry["autoriza_criacao_canonica"] is False,
+                f"Prioridade não pode virar cânone automaticamente: {qid}")
+        if entry["faixa_prioridade"]=="primeiro_lote":
+            require(not entry["depende_de_perguntas"],
+                    f"Primeiro lote não pode depender de segundo lote: {qid}")
+        for dep in entry["depende_de_perguntas"]:
+            require(dep in order,
+                    f"Dependência editorial sem priorização: {qid} → {dep}")
+            require(dep!=qid and order[dep]["ordem_editorial"]<entry["ordem_editorial"],
+                    f"Pré-requisito editorial deve preceder a pergunta: {qid} → {dep}")
+            require(dep in questions,
+                    f"Dependência aponta para pergunta ausente: {dep}")
+    print(f"Fila editorial validada: {len(questions)} perguntas, "
+          f"{len(picked)} priorizadas, "
+          f"{sum(len(e['depende_de_perguntas']) for e in picked)} precedências, 0 respostas fabricadas.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -487,6 +531,7 @@ def main():
     validar_infraestrutura_costa_sul(fontes)
     validar_dinamicas_territoriais(fontes,rids)
     validar_guias_dossies_regionais(fontes,rids)
+    validar_prioridades_curadoria(fontes)
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

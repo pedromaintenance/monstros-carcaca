@@ -136,6 +136,54 @@ def build_regional_dossiers(regions, guides, places, settlements, creatures, fro
              for key,index in indexes.items()}
     return dossiers,indexes
 
+
+def build_research_backlog(regional_guides, priorities):
+    """16 perguntas de origem + metadados opcionais de 8 prioridades; sem resolver questões."""
+    priority_map={row["pergunta_id"]:row for row in priorities}
+    rows=[]
+    for guide in regional_guides:
+        for question in guide["perguntas"]:
+            qid=question["id"]
+            priority=priority_map.get(qid)
+            rows.append({
+                "id":"pendencia:"+qid.split(":",1)[1],
+                "pergunta_id":qid,
+                "regiao_id":guide["regiao_id"],
+                "dossie_id":guide["id"],
+                "tema":question["tema"],
+                "pergunta":question["pergunta"],
+                "estado":"aguarda_nova_fonte" if priority else "aguarda_priorizacao",
+                "ordem_editorial":priority["ordem_editorial"] if priority else None,
+                "faixa_prioridade":priority["faixa_prioridade"] if priority else None,
+                "depende_de_perguntas":list(priority["depende_de_perguntas"]) if priority else [],
+                "evidencias_necessarias":list(priority["evidencias_necessarias"]) if priority else [],
+                "justificativa_editorial":priority["justificativa_editorial"] if priority else None,
+                "artefatos_potenciais":list(priority["artefatos_potenciais"]) if priority else [],
+                "fonte_base":priority["fonte_base"] if priority else guide["fonte"],
+                "resposta_confirmada":None,
+                "evidencia_nova":None,
+                "mutacao_canonica":False,
+                "efeitos_dw_automaticos":False
+            })
+    rows.sort(key=lambda x:(x["ordem_editorial"] is None,
+                             x["ordem_editorial"] if x["ordem_editorial"] is not None else 999,
+                             x["id"]))
+    indexes={key:defaultdict(set) for key in
+             ("by_regiao","by_tema","by_estado","by_faixa_prioridade",
+              "by_dependencia","by_artefato_potencial","by_dossie")}
+    for row in rows:
+        for key,value in (("by_regiao",row["regiao_id"]),("by_tema",row["tema"]),
+                          ("by_estado",row["estado"]),("by_dossie",row["dossie_id"]),
+                          ("by_faixa_prioridade",row["faixa_prioridade"])):
+            add(indexes[key],value,row["id"])
+        for qid in row["depende_de_perguntas"]:
+            add(indexes["by_dependencia"],qid,row["id"])
+        for artifact in row["artefatos_potenciais"]:
+            add(indexes["by_artefato_potencial"],artifact,row["id"])
+    indexes={key:{name:sorted(ids) for name,ids in sorted(group.items())}
+             for key,group in indexes.items()}
+    return rows,indexes
+
 def build():
     creatures = collect("curadoria/criaturas")
     regions = sorted(load("data/regioes_carcaca.json")["regioes"], key=lambda x:x["id"])
@@ -172,6 +220,7 @@ def build():
         scenarios.extend(pack["cenarios"])
     scenarios=sorted(scenarios,key=lambda r:r["id"])
     regional_guides=load("data/guias_dossies_regionais.json")["guias"]
+    research_priorities=load("data/prioridades_curadoria_m3.json")["prioridades"]
     dependencies=sorted(load("data/dependencias_materiais_costa_sul.json")["dependencias"],key=lambda r:r["id"])
     material_balances=sorted(load("data/balancos_materiais_costa_sul.json")["balancos"],key=lambda r:r["id"])
     ecological_pressures=sorted(load("data/pressoes_ecologicas_costa_sul.json")["pressoes"],key=lambda r:r["id"])
@@ -277,11 +326,15 @@ def build():
         regions, regional_guides, places, settlements, creatures, fronts,
         territorial_dynamics, flows, dependencies, material_balances,
         ecological_pressures, support_profiles, infrastructure_profiles, scenarios)
+    research_backlog,research_backlog_indexes=build_research_backlog(
+        regional_guides,research_priorities)
     files = {
         "creatures":"creatures.json", "catalog":"catalog.json", "indexes":"indexes.json",
         "regions":"regions.json", "places":"places.json", "factions":"factions.json",
         "regional_dossiers":"regional-dossiers.json",
         "regional_dossier_indexes":"regional-dossier-indexes.json",
+        "research_backlog":"research-backlog.json",
+        "research_backlog_indexes":"research-backlog-indexes.json",
         "types":"types.json", "fronts":"fronts.json", "settlements":"settlements.json",
         "settlement_labels":"settlement-labels.json",
         "settlement_indexes":"settlement-indexes.json",
@@ -305,6 +358,9 @@ def build():
         "schema_version":"0.1.0", "descricao":"Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
         "total_criaturas":len(creatures), "total_regioes":len(regions),
         "total_dossies_regionais":len(regional_dossiers),
+        "total_pendencias_curadoria":len(research_backlog),
+        "total_pendencias_priorizadas":sum(x["ordem_editorial"] is not None
+                                           for x in research_backlog),
         "total_perguntas_regionais":sum(len(x["perguntas"]) for x in regional_dossiers),
         "total_lugares":len(places), "total_faccoes":len(factions),
         "total_frentes":len(fronts), "total_assentamentos":len(settlements),
@@ -325,6 +381,8 @@ def build():
         "manifest.json":manifest,files["creatures"]:creatures,files["catalog"]:catalog,
         files["regional_dossiers"]:regional_dossiers,
         files["regional_dossier_indexes"]:regional_dossier_indexes,
+        files["research_backlog"]:research_backlog,
+        files["research_backlog_indexes"]:research_backlog_indexes,
         files["indexes"]:indexes,files["regions"]:regions,files["places"]:places,
         files["factions"]:factions,files["types"]:types,files["fronts"]:fronts,
         files["settlements"]:settlements,
