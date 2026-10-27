@@ -51,6 +51,24 @@ def build():
         scenarios.extend(pack["cenarios"])
     scenarios=sorted(scenarios,key=lambda r:r["id"])
     dependencies=sorted(load("data/dependencias_materiais_costa_sul.json")["dependencias"],key=lambda r:r["id"])
+    material_balances=sorted(load("data/balancos_materiais_costa_sul.json")["balancos"],key=lambda r:r["id"])
+    ecological_pressures=sorted(load("data/pressoes_ecologicas_costa_sul.json")["pressoes"],key=lambda r:r["id"])
+    balance_index={k:defaultdict(set) for k in ("by_assentamento","by_recurso","by_tipo","by_sazonalidade")}
+    for b in material_balances:
+        for key,value in (("by_assentamento",b["assentamento_id"]),
+                          ("by_recurso",b["recurso_id"]),("by_tipo",b["tipo_recurso"]),
+                          ("by_sazonalidade",b["sazonalidade"]["tipo"])):
+            add(balance_index[key],value,b["id"])
+    balance_index={name:{key:sorted(ids) for key,ids in sorted(group.items())}
+                   for name,group in balance_index.items()}
+    pressure_index={k:defaultdict(set) for k in ("by_assentamento","by_dependencia","by_tipo")}
+    for p in ecological_pressures:
+        add(pressure_index["by_assentamento"],p["assentamento_id"],p["id"])
+        add(pressure_index["by_tipo"],p["tipo"],p["id"])
+        for did in p["dependencias_ids"]:
+            add(pressure_index["by_dependencia"],did,p["id"])
+    pressure_index={name:{key:sorted(ids) for key,ids in sorted(group.items())}
+                    for name,group in pressure_index.items()}
     dependency_indexes={k:defaultdict(set) for k in
                         ("by_assentamento","by_fluxo","by_tipo","by_dependencia_predecessora")}
     for dep in dependencies:
@@ -116,7 +134,11 @@ def build():
         "peoples":"peoples.json", "flows":"flows.json",
         "settlement_scenarios":"settlement-scenarios.json",
         "material_dependencies":"material-dependencies.json",
-        "material_dependency_indexes":"material-dependency-indexes.json"
+        "material_dependency_indexes":"material-dependency-indexes.json",
+        "material_balances":"material-balances.json",
+        "material_balance_indexes":"material-balance-indexes.json",
+        "ecological_pressures":"ecological-pressures.json",
+        "ecological_pressure_indexes":"ecological-pressure-indexes.json"
     }
     manifest = {
         "schema_version":"0.1.0", "descricao":"Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
@@ -126,6 +148,8 @@ def build():
         "total_rotulos_assentamentos":len(settlement_labels), "total_povos":len(peoples),
         "total_fluxos":len(flows), "total_cenarios_assentamentos":len(scenarios),
         "total_dependencias_materiais":len(dependencies),
+        "total_balancos_materiais":len(material_balances),
+        "total_pressoes_ecologicas":len(ecological_pressures),
         "arquivos":files, "estado":"curadoria_em_andamento",
         "nota":"Registros podem ser propostas. Não substituir estatísticas nem cânone de nenhum jogo automaticamente."
     }
@@ -139,7 +163,11 @@ def build():
         files["peoples"]:peoples,files["flows"]:flows,
         files["settlement_scenarios"]:scenarios,
         files["material_dependencies"]:dependencies,
-        files["material_dependency_indexes"]:dependency_indexes
+        files["material_dependency_indexes"]:dependency_indexes,
+        files["material_balances"]:material_balances,
+        files["material_balance_indexes"]:balance_index,
+        files["ecological_pressures"]:ecological_pressures,
+        files["ecological_pressure_indexes"]:pressure_index
     }
 
 def main():
