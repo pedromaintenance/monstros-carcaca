@@ -856,6 +856,88 @@ def validar_integracao_personagens_hack():
           "270 REQUER, dos quais 256 candidatos e 14 pendentes. Sem promoção canônica.")
 
 
+def validar_guerreiro_integral():
+    """Todos os 77 movimentos Guerreiro, opções e pré-requisitos são ancorados ao DOCX."""
+    from collections import Counter
+    from hack_movimentos_personagem import build_warrior_indexes
+    raw=load("data/lore/hack-carcaca-dw-guerreiro-integrais.json")
+    inventory=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(raw["fonte_sha256"]==inventory["fonte_sha256"] and
+            raw["grupo"]=="GUERREIRO", "Fonte ou grupo Guerreiro inconsistentes.")
+    moves=raw["movimentos"]
+    listed={x["id"]:x for x in inventory["movimentos"] if x["grupo"]=="GUERREIRO"}
+    all_ids={x["id"] for x in inventory["movimentos"]}
+    require(len(moves)==len(listed)==77 and len(unique(moves,"guerreiro"))==77,
+            "Todos os 77 títulos Guerreiro devem ter texto integral único.")
+    assert len(moves)==77
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves),
+            "Ordem documental Guerreiro deslocada.")
+    require(moves[0]["paragrafo_docx"]==1047 and moves[-1]["paragrafo_docx"]==1289,
+            "Âncoras da classe Guerreiro alteradas.")
+    require(raw["integridade"]=={
+        "total_movimentos":77,"total_com_requer":30,"total_vinculos_exatos":27,
+        "total_requer_composto_ou_condicional":3,"total_opcoes":137,
+        "total_partes":235}, "Contagens documentais do Guerreiro mudaram.")
+    occupied=set()
+    mapping={m["id"]:m for m in moves}
+    dependencies={}
+    pending_special={}
+    for m in moves:
+        original=listed.get(m["id"])
+        require(original is not None and m["paragrafo_docx"]==original["paragrafo_docx"]
+                and m["titulo"]==original["titulo"] and
+                m["requisito_literal"]==original["requisito_literal"],
+                "Título/requisito Guerreiro divergente do inventário.")
+        require(m["estado"]=="transcricao_integral_sem_revisao_mecanica" and
+                m["texto_integral_conferido"] is True and m["aplicacao_canonica"] is False,
+                "Movimento de Guerreiro não pode ser aplicado automaticamente.")
+        require(m["texto_original"]=="\\n".join(p["texto"] for p in m["partes"]),
+                "Texto de Guerreiro não coincide com as partes do DOCX.")
+        require(m["opcoes"]==[
+            {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+            for p in m["partes"] if p["tipo"]=="opcao"],
+            "Opções de Guerreiro não coincidem com seus parágrafos.")
+        require(m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"] and
+                m["partes"][0]["tipo"]=="corpo","Cabeçalho Guerreiro desconectado.")
+        for p in m["partes"]:
+            require(p["paragrafo_docx"] not in occupied and p["texto"],
+                    "Parte duplicada ou vazia no Guerreiro.")
+            occupied.add(p["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),
+                "Requisito não deve surgir sem REQUER literal.")
+        if req is not None:
+            if req["tipo"]=="movimento_exato":
+                require(req["movimento_id"] in all_ids and
+                        req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                        "Vínculo exato não deve ser presumido como homologado.")
+                dependencies[m["id"]]=req["movimento_id"]
+            else:
+                pending_special[m["paragrafo_docx"]]=req["tipo"]
+                require(req["status"]=="interpretacao_literal_pendente_homologacao",
+                        "Requisito composto e condicional requer análise.")
+    require(len(occupied)==235,"Perda de parágrafos do Guerreiro.")
+    require(len(dependencies)==27 and pending_special==
+            {1228:"categoria",1229:"todos",1231:"movimento_condicionado"},
+            "Interpretação de REQUER composto incompleta.")
+    require(sum(len(m["opcoes"]) for m in moves)==137,
+            "Listas de escolhas e opções do Guerreiro truncadas.")
+    for src in dependencies:
+        visited={src}
+        curr=src
+        while curr in dependencies:
+            curr=dependencies[curr]
+            require(curr not in visited, "Ciclo nas dependências Guerreiro.")
+            visited.add(curr)
+    index=build_warrior_indexes(moves)
+    require(len(index["by_tem_requer"]["sim"])==30 and
+            len(index["by_tem_opcoes"]["sim"])>0 and
+            len(index["by_requisito_tipo"]["movimento_exato"])==27,
+            "Índices de Guerreiro falharam na contagem.")
+    print("Guerreiro: 77 movimentos integrais, 137 opções, 235 blocos,"
+          " 27 REQUER exatos e 3 condicionais/compostos; zero promoções.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -952,6 +1034,7 @@ def main():
     validar_integracao_movimentos_gerais()
     validar_regras_nucleo_hack()
     validar_integracao_personagens_hack()
+    validar_guerreiro_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
