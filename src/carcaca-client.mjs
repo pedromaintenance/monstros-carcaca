@@ -44,6 +44,44 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (!marcador||x.marcador_original===marcador)&&
       (comOpcoes===undefined||(x.opcoes.length>0)===comOpcoes));
   }
+  async function getPeopleMovements(){return byKey("hack_people_movements");}
+  async function getPeopleMovementIndexes(){return byKey("hack_people_movement_indexes");}
+  async function getPeopleMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-povo:"))return null;
+    return (await getPeopleMovements()).find(x=>x.id===id)??null;
+  }
+  async function searchPeopleMovements({grupo,marcador,titulo,query,comOpcoes,paragrafo}={}){
+    const normalize=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return (await getPeopleMovements()).filter(m=>
+      (!grupo||m.grupo===grupo)&&
+      (!marcador||m.marcador_original===marcador)&&
+      (!titulo||normalize(m.titulo).includes(normalize(titulo)))&&
+      (!query||normalize(m.titulo+" "+m.texto_original).includes(normalize(query)))&&
+      (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
+      (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
+  }
+  async function getClassMovementInventory(){return byKey("hack_class_movement_inventory");}
+  async function getClassMovementIndexes(){return byKey("hack_class_movement_indexes");}
+  async function getClassRequirementCandidates(){return byKey("hack_class_requirement_candidates");}
+  async function getClassRequirementPending(){return byKey("hack_class_requirement_pending");}
+  async function getClassMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    return (await getClassMovementInventory()).find(x=>x.id===id)??null;
+  }
+  async function searchClassMovements({grupo,titulo,requer,comRequer,paragrafo}={}){
+    const normalize=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return (await getClassMovementInventory()).filter(m=>
+      (!grupo||m.grupo===grupo)&&
+      (!titulo||normalize(m.titulo).includes(normalize(titulo)))&&
+      (!requer||normalize(m.requisito_literal).includes(normalize(requer)))&&
+      (comRequer===undefined||Boolean(m.requisito_literal)===comRequer)&&
+      (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
+  }
+  async function getClassRequirementPreview(id,{movimentosPossuidos=[]}={}){
+    return previewClassRequirements(id,await getClassMovementInventory(),
+      await getClassRequirementCandidates(),await getClassRequirementPending(),
+      {movimentosPossuidos});
+  }
   async function getHackCoreRules(){return byKey("hack_core_rules");}
   async function getGeneralMovements(){return byKey("hack_general_movements");}
   async function getGeneralMovementIndexes(){return byKey("hack_general_movement_indexes");}
@@ -277,6 +315,9 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getDocxTables,getDocxTableIndexes,searchDocxTables,
           getGeneralMovements,getGeneralMovement,getGeneralMovementIndexes,searchGeneralMovements,
           getHackCoreRules,
+          getPeopleMovements,getPeopleMovement,getPeopleMovementIndexes,searchPeopleMovements,
+          getClassMovementInventory,getClassMovement,getClassMovementIndexes,searchClassMovements,
+          getClassRequirementCandidates,getClassRequirementPending,getClassRequirementPreview,
           getLoreAtlasLinks,getLoreAtlasLinkIndexes,searchLoreAtlasLinks,
           getLoreEntity,searchLore,
           getRegionalDossiers,getRegionalDossier,getRegionalDossierIndexes,
@@ -360,5 +401,43 @@ export function previewMaterialInterruption(dependencias,id){
     impactos_potenciais:found,
     efeitos_dw_aplicados:[],
     observacao:"Grafo apenas sugere exposição material. O mestre avalia eventos locais; nenhum dado canônico ou de campanha é alterado."
+  };
+}
+
+/**
+ * Checagem informativa: NUNCA libera compra de movimento.
+ * REQUER é obrigatório mecanicamente, mas 14 expressões compostas/sem título
+ * aguardam revisão semântica; links exatos também são candidatos, não homologações.
+ */
+export function previewClassRequirements(id,movimentos,candidatas,pendentes,
+                                         {movimentosPossuidos=[]}={}){
+  if(!Array.isArray(movimentos)||!Array.isArray(candidatas)||
+     !Array.isArray(pendentes)||!Array.isArray(movimentosPossuidos)){
+    throw new TypeError("Esperados quatro arrays de movimentos, relações e posse.");
+  }
+  const registro=movimentos.find(m=>m.id===id);
+  if(!registro)return null;
+  const possui=new Set(movimentosPossuidos);
+  const edges=candidatas.filter(e=>e.origem_movimento_id===id);
+  const naoResolvidas=pendentes.filter(e=>e.origem_movimento_id===id);
+  return {
+    movimento_id:id,
+    titulo:registro.titulo,
+    requisito_literal:registro.requisito_literal,
+    vinculos_candidatos:edges.map(e=>({
+      movimento_id:e.requisito_movimento_id,
+      requisito_literal:e.requisito_literal,
+      status:e.status,
+      presente_na_lista:possui.has(e.requisito_movimento_id)
+    })),
+    expressoes_nao_resolvidas:naoResolvidas.map(p=>({
+      requisito_literal:p.requisito_literal, motivo:p.motivo,
+      candidatos_ids:[...p.candidatos_ids]
+    })),
+    todos_candidatos_presentes:edges.every(e=>possui.has(e.requisito_movimento_id)),
+    habilitado_para_compra:null,
+    necessita_avaliacao_do_mestre:true,
+    aplicacao_canonica:false,
+    observacao:"Candidatos não validados; REQUER sempre obrigatório, mesmo quando o movimento é concedido gratuitamente."
   };
 }
