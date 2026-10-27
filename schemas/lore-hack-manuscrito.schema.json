@@ -1,0 +1,72 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/lore-hack-manuscrito.schema.json",
+  "title": "Entrada da lore do manuscrito DW em revisão, sem promoção de cânone",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "id",
+    "tipo",
+    "nome",
+    "descricao",
+    "aliases",
+    "paginas",
+    "origem",
+    "evidencia",
+    "integracao"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "pattern": "^lore-hack:[a-z0-9-]+$"
+    },
+    "tipo": {
+      "enum": [
+        "geografia",
+        "regiao",
+        "lugar",
+        "plano",
+        "povo",
+        "faccao",
+        "personagem",
+        "divindade",
+        "conceito"
+      ]
+    },
+    "nome": {
+      "type": "string",
+      "minLength": 3
+    },
+    "descricao": {
+      "type": "string",
+      "minLength": 20
+    },
+    "aliases": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "minLength": 2
+      }
+    },
+    "paginas": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "integer",
+        "minimum": 2,
+        "maximum": 25
+      }
+    },
+    "origem": {
+      "const": "fonte:hack-carcaca-dungeon-world-rascunho"
+    },
+    "evidencia": {
+      "const": "afirmado_no_rascunho"
+    },
+    "integracao": {
+      "const": "referencia_sem_mutar_canonico"
+    }
+  }
+}

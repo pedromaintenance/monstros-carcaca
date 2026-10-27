@@ -184,6 +184,21 @@ def build_research_backlog(regional_guides, priorities):
              for key,group in indexes.items()}
     return rows,indexes
 
+
+def build_lore_indexes(entries):
+    """Fonte em revisão: referências páginas/tokens, sem impacto no atlas canônico."""
+    groups={k:defaultdict(set) for k in ("by_tipo","by_pagina","by_token","by_estado")}
+    for e in entries:
+        for field,value in (("by_tipo",e["tipo"]),("by_estado",e["evidencia"])):
+            add(groups[field],value,e["id"])
+        for page in e["paginas"]:
+            add(groups["by_pagina"],str(page),e["id"])
+        searchable=" ".join([e["nome"],e["descricao"],*e["aliases"]])
+        for token in set(re.findall(r"[a-z0-9]+",norm(searchable))):
+            if len(token)>=3:add(groups["by_token"],token,e["id"])
+    return {name:{key:sorted(values) for key,values in sorted(group.items())}
+            for name,group in groups.items()}
+
 def build():
     creatures = collect("curadoria/criaturas")
     regions = sorted(load("data/regioes_carcaca.json")["regioes"], key=lambda x:x["id"])
@@ -220,6 +235,11 @@ def build():
         scenarios.extend(pack["cenarios"])
     scenarios=sorted(scenarios,key=lambda r:r["id"])
     regional_guides=load("data/guias_dossies_regionais.json")["guias"]
+    lore_source=load("fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")
+    lore_entries=sorted(load("data/lore/hack-carcaca-dw-indice-tematico.json")["entradas"],key=lambda x:x["id"])
+    lore_timeline=load("data/lore/hack-carcaca-dw-cronologia.json")
+    lore_reviews=load("data/lore/hack-carcaca-dw-pontos-de-revisao.json")
+    lore_indexes=build_lore_indexes(lore_entries)
     research_priorities=load("data/prioridades_curadoria_m3.json")["prioridades"]
     dependencies=sorted(load("data/dependencias_materiais_costa_sul.json")["dependencias"],key=lambda r:r["id"])
     material_balances=sorted(load("data/balancos_materiais_costa_sul.json")["balancos"],key=lambda r:r["id"])
@@ -333,6 +353,10 @@ def build():
         "regions":"regions.json", "places":"places.json", "factions":"factions.json",
         "regional_dossiers":"regional-dossiers.json",
         "regional_dossier_indexes":"regional-dossier-indexes.json",
+        "lore_index":"lore-index.json",
+        "lore_index_indexes":"lore-indexes.json",
+        "lore_chronology":"lore-chronology.json",
+        "lore_review_notes":"lore-review-notes.json",
         "research_backlog":"research-backlog.json",
         "research_backlog_indexes":"research-backlog-indexes.json",
         "types":"types.json", "fronts":"fronts.json", "settlements":"settlements.json",
@@ -358,6 +382,11 @@ def build():
         "schema_version":"0.1.0", "descricao":"Atlas autoral de criaturas; independente do acervo de fichas D&D em dist/creatures.",
         "total_criaturas":len(creatures), "total_regioes":len(regions),
         "total_dossies_regionais":len(regional_dossiers),
+        "total_entradas_lore_manuscrito":len(lore_entries),
+        "total_paginas_lore_manuscrito":len(lore_source["paginas"]),
+        "total_eventos_cronologia_manuscrito":len(lore_timeline["eventos"]),
+        "total_incognitas_manuscrito":len(lore_timeline["questoes_abertas"]),
+        "total_pontos_revisao_manuscrito":len(lore_reviews["revisoes"]),
         "total_pendencias_curadoria":len(research_backlog),
         "total_pendencias_priorizadas":sum(x["ordem_editorial"] is not None
                                            for x in research_backlog),
@@ -381,6 +410,10 @@ def build():
         "manifest.json":manifest,files["creatures"]:creatures,files["catalog"]:catalog,
         files["regional_dossiers"]:regional_dossiers,
         files["regional_dossier_indexes"]:regional_dossier_indexes,
+        files["lore_index"]:lore_entries,
+        files["lore_index_indexes"]:lore_indexes,
+        files["lore_chronology"]:lore_timeline,
+        files["lore_review_notes"]:lore_reviews,
         files["research_backlog"]:research_backlog,
         files["research_backlog_indexes"]:research_backlog_indexes,
         files["indexes"]:indexes,files["regions"]:regions,files["places"]:places,

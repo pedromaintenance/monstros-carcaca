@@ -444,6 +444,55 @@ def validar_prioridades_curadoria(fontes):
           f"{len(picked)} priorizadas, "
           f"{sum(len(e['depende_de_perguntas']) for e in picked)} precedências, 0 respostas fabricadas.")
 
+
+def validar_lore_manuscrito():
+    """Manuscrito de referência separado do cânone de criaturas/assentamentos."""
+    source=load("fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")
+    idx=load("data/lore/hack-carcaca-dw-indice-tematico.json")
+    timeline=load("data/lore/hack-carcaca-dw-cronologia.json")
+    reviews=load("data/lore/hack-carcaca-dw-pontos-de-revisao.json")
+    schema=load("schemas/lore-hack-manuscrito.schema.json")
+    Draft202012Validator.check_schema(schema)
+    check=Draft202012Validator(schema)
+    require(source["escopo"]=="capitulo_i_ambientacao" and
+            [p["pagina"] for p in source["paginas"]]==list(range(2,26)),
+            "Fonte manuscrita incompleta: requer páginas 2 a 25 (somente ambiente).")
+    require(all(p["texto"] and p["palavras"]>0 for p in source["paginas"]),
+            "Página sem texto na fonte do manuscrito.")
+    require(idx["fonte_id"]==source["id"]==timeline["fonte_id"]==reviews["fonte_id"],
+            "IDs de proveniência incompatíveis para o manuscrito.")
+    ids=unique(idx["entradas"],"entradas de lore do manuscrito")
+    require(all(not list(check.iter_errors(e)) for e in idx["entradas"]),
+            "Registro de lore inválido segundo schema.")
+    for row in idx["entradas"]:
+        require(row["paginas"] and all(p in range(2,26) for p in row["paginas"]),
+                "Página fora da ambientação: "+row["id"])
+        require(row["evidencia"]=="afirmado_no_rascunho" and
+                row["integracao"]=="referencia_sem_mutar_canonico",
+                "Manuscrito não pode consolidar cânone: "+row["id"])
+    unique(timeline["eventos"],"eventos da cronologia manuscrita")
+    unique(timeline["questoes_abertas"],"questões do manuscrito")
+    unique(reviews["revisoes"],"pontos de revisão")
+    years=[e["ano_ec"] for e in timeline["eventos"]]
+    require(years==sorted(years) and len(set(years))==len(years),
+            "Cronologia EC fora de ordem/duplicada.")
+    require(all(e["pagina"] in (9,10) and
+                e["status"]=="afirmado_no_rascunho" and
+                e["uso"]=="nao_promover_para_timeline_canonica_sem_revisao"
+                for e in timeline["eventos"]),
+            "Eventos do manuscrito não podem atualizar a linha do tempo automaticamente.")
+    require(all(x["pagina"]==11 and x["estado"]=="explicitamente_em_aberto"
+                for x in timeline["questoes_abertas"]),
+            "Uma incógnita não pode virar fato.")
+    require(all(not review["acao_autorizada"] and
+                all(p in range(2,26) for p in review["paginas"])
+                for review in reviews["revisoes"]),
+            "Revisão não pode promover automaticamente uma resolução.")
+    print(f"Manuscrito indexado: {len(source['paginas'])} páginas de ambientação, "
+          f"{len(ids)} entradas, {len(years)} datas, "
+          f"{len(timeline['questoes_abertas'])} incógnitas e "
+          f"{len(reviews['revisoes'])} revisões editoriais.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -532,6 +581,7 @@ def main():
     validar_dinamicas_territoriais(fontes,rids)
     validar_guias_dossies_regionais(fontes,rids)
     validar_prioridades_curadoria(fontes)
+    validar_lore_manuscrito()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
