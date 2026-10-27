@@ -7,6 +7,7 @@ import {previewSupportCapacity,previewPopulationFlow,SUPPORT_LIMITS} from "../sr
 import {auditInfrastructure,previewInfrastructureIssue} from "../src/carcaca-infrastructure.mjs";
 import {previewTerritorialImpact} from "../src/carcaca-territorial.mjs";
 import {reviewRegionalDossier} from "../src/carcaca-regional.mjs";
+import {reviewResearchBacklog} from "../src/carcaca-research.mjs";
 
 const fixtures={
   "manifest.json":{arquivos:{catalog:"catalog.json",creatures:"creatures.json",
@@ -25,7 +26,9 @@ const fixtures={
     territorial_dynamics:"territorial-dynamics.json",
     territorial_indexes:"territorial-indexes.json",
     regional_dossiers:"regional-dossiers.json",
-    regional_dossier_indexes:"regional-dossier-indexes.json"}},
+    regional_dossier_indexes:"regional-dossier-indexes.json",
+    research_backlog:"research-backlog.json",
+    research_backlog_indexes:"research-backlog-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -151,6 +154,99 @@ const fixtures={
       }
     }
   ],
+  "research-backlog.json":[
+    {
+      "id": "pendencia:caatinga-habitacao",
+      "pergunta_id": "pergunta:caatinga-habitacao",
+      "regiao_id": "regiao:caatinga",
+      "dossie_id": "dossie-regional:caatinga",
+      "tema": "abrigo",
+      "pergunta": "Onde moram?",
+      "estado": "aguarda_nova_fonte",
+      "ordem_editorial": 1,
+      "faixa_prioridade": "primeiro_lote",
+      "depende_de_perguntas": [],
+      "evidencias_necessarias": [
+        "Descrição da localidade"
+      ],
+      "justificativa_editorial": "Base da investigação",
+      "artefatos_potenciais": [
+        "lugar"
+      ],
+      "resposta_confirmada": null,
+      "evidencia_nova": null,
+      "mutacao_canonica": false,
+      "efeitos_dw_automaticos": false
+    },
+    {
+      "id": "pendencia:costa-sul-agua",
+      "pergunta_id": "pergunta:costa-sul-agua",
+      "regiao_id": "regiao:costa-sul",
+      "dossie_id": "dossie-regional:costa-sul",
+      "tema": "subsistencia",
+      "pergunta": "Água potável?",
+      "estado": "aguarda_nova_fonte",
+      "ordem_editorial": 2,
+      "faixa_prioridade": "primeiro_lote",
+      "depende_de_perguntas": [],
+      "evidencias_necessarias": [
+        "Uso conhecido"
+      ],
+      "justificativa_editorial": "Evitar água imaginada",
+      "artefatos_potenciais": [
+        "revisao_suporte"
+      ],
+      "resposta_confirmada": null,
+      "evidencia_nova": null,
+      "mutacao_canonica": false,
+      "efeitos_dw_automaticos": false
+    },
+    {
+      "id": "pendencia:caatinga-abastecimento",
+      "pergunta_id": "pergunta:caatinga-abastecimento",
+      "regiao_id": "regiao:caatinga",
+      "dossie_id": "dossie-regional:caatinga",
+      "tema": "subsistencia",
+      "pergunta": "Como se abastecem?",
+      "estado": "aguarda_nova_fonte",
+      "ordem_editorial": 3,
+      "faixa_prioridade": "segundo_lote",
+      "depende_de_perguntas": [
+        "pergunta:caatinga-habitacao"
+      ],
+      "evidencias_necessarias": [
+        "Proveniência de recursos"
+      ],
+      "justificativa_editorial": "Localização antes de atribuir recursos",
+      "artefatos_potenciais": [
+        "perfil_suporte_rascunho"
+      ],
+      "resposta_confirmada": null,
+      "evidencia_nova": null,
+      "mutacao_canonica": false,
+      "efeitos_dw_automaticos": false
+    },
+    {
+      "id": "pendencia:foz-resistencia",
+      "pergunta_id": "pergunta:foz-resistencia",
+      "regiao_id": "regiao:foz-rio-ancestral",
+      "dossie_id": "dossie-regional:foz-rio-ancestral",
+      "tema": "abrigo",
+      "pergunta": "Que abrigos existem?",
+      "estado": "aguarda_priorizacao",
+      "ordem_editorial": null,
+      "faixa_prioridade": null,
+      "depende_de_perguntas": [],
+      "evidencias_necessarias": [],
+      "justificativa_editorial": null,
+      "artefatos_potenciais": [],
+      "resposta_confirmada": null,
+      "evidencia_nova": null,
+      "mutacao_canonica": false,
+      "efeitos_dw_automaticos": false
+    }
+  ],
+  "research-backlog-indexes.json":{by_regiao:{"regiao:caatinga":["pendencia:caatinga-habitacao","pendencia:caatinga-abastecimento"]},by_estado:{"aguarda_nova_fonte":["pendencia:caatinga-habitacao","pendencia:caatinga-abastecimento","pendencia:costa-sul-agua"]}},
   "regional-dossier-indexes.json":{by_regiao:{"regiao:caatinga":["dossie-regional:caatinga"],"regiao:costa-sul":["dossie-regional:costa-sul"]},
     by_ausencia_assentamento_curado:{"sim":["dossie-regional:caatinga","dossie-regional:foz-rio-ancestral"]}},
   "territorial-labels.json":[{id:"rotulo-territorial:fronteira_de_pilhagens"},{id:"rotulo-territorial:presenca_minoritaria_refugiada"}],
@@ -679,4 +775,37 @@ test("cruzamento entre regiões preserva papéis origem/destino",async()=>{
   assert.deepEqual(coast.regioes_das_dinamicas[0].papeis_regionais,["destino"]);
   assert.equal(caatinga.mutacao_canonica,false);
   assert.deepEqual(coast.efeitos_dw_aplicados,[]);
+});
+
+test("fila de pesquisa filtra prioridades e conserva perguntas ainda não priorizadas",async()=>{
+  assert.equal((await atlas.getResearchBacklog()).length,4);
+  assert.equal((await atlas.searchResearchBacklog({priorizada:true})).length,3);
+  assert.equal((await atlas.searchResearchBacklog({priorizada:false})).length,1);
+  assert.equal((await atlas.searchResearchBacklog({regiaoId:"regiao:caatinga"})).length,2);
+  assert.equal((await atlas.searchResearchBacklog({faixaPrioridade:"segundo_lote"})).length,1);
+  assert.equal((await atlas.searchResearchBacklog({dependeDePergunta:"pergunta:caatinga-habitacao"})).length,1);
+  assert.equal((await atlas.searchResearchBacklog({artefatoPotencial:"lugar"})).length,1);
+  assert.equal((await atlas.getResearchBacklogItem("pendencia:caatinga-abastecimento")).ordem_editorial,3);
+  assert.equal(await atlas.getResearchBacklogItem("pendencia:desconhecida"),null);
+  assert.equal((await atlas.getResearchBacklogIndexes()).by_regiao["regiao:caatinga"].length,2);
+});
+test("inspeção de pesquisa não resolve perguntas ou libera cânone por conta própria",async()=>{
+  const rows=await atlas.getResearchBacklog();
+  const old=JSON.stringify(rows);
+  const review=reviewResearchBacklog(rows);
+  assert.equal(review.priorizadas,3);
+  assert.equal(review.nao_priorizadas,1);
+  assert.equal(review.perguntas_respondidas,0);
+  assert.equal(review.mutacao_canonica,false);
+  assert.deepEqual(review.efeitos_dw_aplicados,[]);
+  const dependent=review.registros.find(x=>x.id==="pendencia:caatinga-abastecimento");
+  assert.equal(dependent.depende_de_perguntas[0].pergunta_id,"pergunta:caatinga-habitacao");
+  assert.equal(dependent.depende_de_perguntas[0].respondido,false);
+  assert.equal(dependent.evidencia_pendente,true);
+  dependent.evidencias_necessarias.push("Fato inventado");
+  assert.equal(JSON.stringify(rows),old);
+  const local=reviewResearchBacklog(rows,{regiaoId:"regiao:caatinga"});
+  assert.equal(local.total_na_visao,2);
+  assert.throws(()=>reviewResearchBacklog([...rows,rows[0]]),TypeError);
+  assert.throws(()=>reviewResearchBacklog([{...rows[0],depende_de_perguntas:["pergunta:inexistente"]}]),RangeError);
 });

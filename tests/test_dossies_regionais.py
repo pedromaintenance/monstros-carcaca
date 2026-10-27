@@ -52,5 +52,38 @@ class RegionalDossiers(unittest.TestCase):
             len({x["id"] for x in coast["dinamicas_territoriais"]}),
             len(coast["dinamicas_territoriais"]))
 
+    def test_research_backlog_is_generated_from_all_guide_questions(self):
+        queue=self.artifacts["research-backlog.json"]
+        self.assertEqual(len(queue),16)
+        self.assertEqual(len({x["pergunta_id"] for x in queue}),16)
+        self.assertEqual(len([x for x in queue if x["ordem_editorial"] is not None]),8)
+        self.assertEqual(len([x for x in queue if x["ordem_editorial"] is None]),8)
+        self.assertEqual(sum(len(x["depende_de_perguntas"]) for x in queue),4)
+        self.assertTrue(all(x["resposta_confirmada"] is None and x["evidencia_nova"] is None
+                            and not x["mutacao_canonica"] and not x["efeitos_dw_automaticos"]
+                            for x in queue))
+        self.assertEqual(self.artifacts["manifest.json"]["total_pendencias_curadoria"],16)
+
+    def test_research_backlog_order_and_precedence_are_editorial(self):
+        rows=self.artifacts["research-backlog.json"]
+        order={x["pergunta_id"]:x["ordem_editorial"] for x in rows}
+        self.assertEqual(sorted(o for o in order.values() if o is not None),list(range(1,9)))
+        for x in rows:
+            for required in x["depende_de_perguntas"]:
+                self.assertLess(order[required],x["ordem_editorial"])
+        self.assertEqual(rows[0]["pergunta_id"],"pergunta:caatinga-habitacao")
+        self.assertEqual(rows[7]["pergunta_id"],"pergunta:costa-sul-migracao")
+
+    def test_research_backlog_has_all_four_regions(self):
+        queue=self.artifacts["research-backlog.json"]
+        self.assertEqual(
+            {reg:len([x for x in queue if x["regiao_id"]==reg])
+             for reg in self.rows},
+            {reg:4 for reg in self.rows})
+        self.assertEqual(
+            {reg:len([x for x in queue if x["regiao_id"]==reg and x["ordem_editorial"] is not None])
+             for reg in self.rows},
+            {reg:2 for reg in self.rows})
+
 if __name__=="__main__":
     unittest.main()

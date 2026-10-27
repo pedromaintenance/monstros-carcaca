@@ -25,6 +25,23 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getIndexes(){return byKey("indexes");}
   async function getRegions(){return byKey("regions");}
   async function getRegionalDossiers(){return byKey("regional_dossiers");}
+  async function getResearchBacklog(){return byKey("research_backlog");}
+  async function getResearchBacklogIndexes(){return byKey("research_backlog_indexes");}
+  async function getResearchBacklogItem(id){
+    if(typeof id!=="string"||!id.startsWith("pendencia:"))return null;
+    return (await getResearchBacklog()).find(p=>p.id===id)??null;
+  }
+  async function searchResearchBacklog({regiaoId,tema,estado,faixaPrioridade,
+                                      priorizada,dependeDePergunta,artefatoPotencial}={}){
+    return (await getResearchBacklog()).filter(p=>
+      (!regiaoId||p.regiao_id===regiaoId)&&
+      (!tema||p.tema===tema)&&
+      (!estado||p.estado===estado)&&
+      (!faixaPrioridade||p.faixa_prioridade===faixaPrioridade)&&
+      (priorizada===undefined||(p.ordem_editorial!==null)===priorizada)&&
+      (!dependeDePergunta||p.depende_de_perguntas.includes(dependeDePergunta))&&
+      (!artefatoPotencial||p.artefatos_potenciais.includes(artefatoPotencial)));
+  }
   async function getRegionalDossierIndexes(){return byKey("regional_dossier_indexes");}
   async function getRegionalDossier(id){
     if(typeof id!=="string"||!id.startsWith("dossie-regional:"))return null;
@@ -166,6 +183,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   }
   return {getManifest,getCatalog,getIndexes,getRegions,
           getRegionalDossiers,getRegionalDossier,getRegionalDossierIndexes,
+          getResearchBacklog,getResearchBacklogItem,getResearchBacklogIndexes,
+          searchResearchBacklog,
           searchRegionalDossiers,
           getTerritorialLabels,getTerritorialDynamics,getTerritorialIndexes,
           getTerritorialDynamic,searchTerritorialDynamics,
