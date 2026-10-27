@@ -87,3 +87,33 @@ console.log(previa.condicoes_pendentes);
 `previewSettlementScenario(cenario,{condicoesConfirmadas:[...strings]})` apenas verifica se as condições hipotéticas foram assinaladas pelo mestre e retorna possíveis opções narrativas. Não insere `Need`, não reduz Prosperidade/Defesas, não cria `Oath` e não modifica objetos em memória ou o repositório.
 
 Quatro regras de referência: `Want` (necessidade não atendida), `Trade` (comércio bloqueado), `Capture` (mudança de controle de recurso) e `Aid` (auxílio condicionado a juramento e ameaça). `Aid` está explicitamente **bloqueado** no caso das ilhas até haver comunidades DW individualizadas e juramento estabelecido em jogo.
+
+## Dependências materiais e histórico de campanha
+
+O manifesto autoral agora expõe `material_dependencies` e `material_dependency_indexes`, com ID de assentamento, fluxo, predecessor e evidência.
+
+```js
+import {previewMaterialInterruption} from "./src/carcaca-client.mjs";
+const deps=await atlas.searchMaterialDependencies({assentamentoId:"assentamento:portomonte"});
+const preview=previewMaterialInterruption(deps,"dependencia:portomonte-purificacao");
+console.log(preview.impactos_potenciais); // lavoura, sem aplicação de efeitos DW
+```
+
+**Atenção:** a prévia só percorre as dependências incluídas em `deps`. Para verificar todas as dependências possíveis da Costa Sul, passe `await atlas.getMaterialDependencies()` sem filtro.
+
+Um estado de campanha pode ser criado em memória e registrado **explicitamente**:
+
+```js
+import {createCampaignLedger,recordCampaignEvent} from "./src/carcaca-campaign-state.mjs";
+const estado=createCampaignLedger({id:"campanha:exemplo",nome:"Minha campanha"});
+const novaVersao=recordCampaignEvent(estado,{
+  id:"evento:exemplo-001",tipo:"acontecimento",
+  assentamento_id:"assentamento:portomonte",
+  descricao:"O mestre determinou que o ritual falhou nesta sessão.",
+  mestre_confirmou:true,fonte_cenario_id:null,efeitos_adjudicados:[]
+},{settlementIds:["assentamento:portomonte"]});
+```
+
+O código acima **é apenas um exemplo**: não escreve no repositório, não cria evento real e não altera o atlas. Para eventos ligados a cenário DW, passe `scenarioIds` e um `fonte_cenario_id` existente.
+
+Leia `schemas/estado-campanha.schema.json` e `docs/REDE_MATERIAL_E_ESTADO_DE_CAMPANHA.md`.

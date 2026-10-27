@@ -156,3 +156,22 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Verificar snapshot publicado: **7 criaturas, 3 registros de assentamentos, 14 rótulos, 4 povos regionais, 4 fluxos, 4 cenários hipotéticos**.
 - [ ] Identificar uma ilha e comunidade singular em fonte futura antes de atribuir Prosperidade/População/Defesas DW.
 - [ ] Próximos ciclos: simular abastecimento e mudanças de recursos somente em saves/campanhas, com revisão do autor; distinguir cânone e estado local.
+
+## Ciclo 7 — Dependências materiais e estado local de campanha (2026-10-26)
+
+- [x] Descrever **5 relações** da Costa Sul em `data/dependencias_materiais_costa_sul.json`, com fonte e estado de evidência por ligação.
+- [x] Representar Portomonte em duas etapas explícitas: purificação da água do Mar de Sangue → agricultura dependente dessa purificação.
+- [x] Preservar ligações sem destino específico: comércio costeiro e viagens sazonais não provam comércio direto entre Portomonte e as ilhas.
+- [x] Catalogar incursões rituais dos kuo-toa como **conflito**, sem confundi-las com alimentação; origem atribuída à rede de cavernas continua inferida.
+- [x] Validar IDs de assentamentos e fluxos, fontes, aciclicidade do grafo e coerência do estado de evidência.
+- [x] Gerar índices por assentamento, fluxo, tipo e predecessora em `dist/carcaca/material-dependency-indexes.json`.
+- [x] Criar prévia ficcional `previewMaterialInterruption`, que só percorre dependências documentadas no grafo e **não aplica efeitos de DW**.
+- [x] Criar contrato de save `schemas/estado-campanha.schema.json`, com exemplo **vazio** fora de `curadoria/`.
+- [x] Criar `src/carcaca-campaign-state.mjs`: livro-razão local e imutável, que exige mestre confirmar cada evento e rejeita IDs desconhecidos.
+- [x] Adicionar testes de não mutação, confirmação do mestre, duplicidade, referências e alcance de dependências.
+- [ ] Exigir aprovação e edição explícitas do mestre para efeitos mecânicos de Prosperidade, Defesas e População em cada campanha; o motor ainda não altera esses valores.
+- [ ] Dados de ingestão, resíduos, taxa de migração e reprodução ficam desconhecidos onde a fonte não os descreve.
+- [ ] Construir consumidor de save persistente no jogo futuramente: a biblioteca atual retorna objetos sem gravar em disco/rede.
+- [ ] Revisitar o modelo com o autor antes de transformar possíveis crises em histórias canônicas.
+
+**Resultado:** contrato autoral separado de `dist/catalog.json` e de saves de jogos. A programação continua por lotes auditáveis.

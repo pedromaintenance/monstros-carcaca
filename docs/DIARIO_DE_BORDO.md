@@ -127,3 +127,24 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 **Verificação técnica:** [Actions #40430220238](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40430220238) com etapas de validação, testes e publicação `success`. `dist/carcaca/manifest.json` apresenta 7 criaturas, 3 assentamentos/redes, 14 rótulos, 4 povos regionais, 4 fluxos, 4 cenários. Arquivos de origem e dados mecânicos de Peren/D&D não alterados.
 
 **Próximo alvo de M3:** revisão da relação material entre comunidades e análise por região, mantendo indivíduos, nomes de ilhas, dieta e recursos desconhecidos enquanto a fonte não os especificar.
+
+## 2026-10-26 · Ciclo 7 — Dependências, cadeia material e saves por campanha
+
+**Base consultada:** `Ambientação - A Carcaça - Visão Geral.txt`, seção Além Sul, e [Dungeon World SRD — The World](https://www.dungeonworldsrd.com/gamemastering/the-world/) para condições de mudança entre sessões.
+
+**Novos registros:** `data/dependencias_materiais_costa_sul.json` possui cinco dependências/fluxos:
+1. Purificação da água em Portomonte: documentado.
+2. Produção agrícola dependente da purificação: documentado e ligada à predecessora acima.
+3. Comércio costeiro com parceiros/itens desconhecidos: documentado.
+4. Viagens sazonais insulares, com recursos não especificados: documentado.
+5. Incursões quo-toa agrupadas em rede de cavernas: origem inferida, rito de captura documentado regionalmente; não constitui alimento.
+
+**Melhoria técnica:** schema dedicado para dependências, checagem de ciclos de dependência, referência a assentamento/fluxo existente, estado de evidência não superior ao fluxo; índices publicados e filtros JS.
+
+**Estado de campanha:** `schemas/estado-campanha.schema.json` e `exemplos/campanhas/exemplo-em-branco.json` definem um arquivo **local**, iniciado com zero eventos. `src/carcaca-campaign-state.mjs` cria o registro e anexa acontecimentos explicitamente aprovados pelo mestre a uma **nova cópia**, nunca altera o objeto original. Não há implementação de gravação em disco, upload, nem alteração numérica do atlas.
+
+**Teste de risco:** interromper hipoteticamente a purificação aponta apenas a lavoura como dependência subsequente explícita; não conclui fome, falta de água potável ou crise regional. Cenários de DW são apenas condições propostas, conforme M3.
+
+**Limitações intencionais:** desconhecidos permanecem nulos ou descritos como lacunas; nenhuma inferência sobre calendário, produção/consumo quantitativos, populações ou dietas. A campanha pode relatar um fato sem que ele altere a referência coletiva.
+
+**Arquivos de maior interesse:** `docs/REDE_MATERIAL_E_ESTADO_DE_CAMPANHA.md`, `dist/carcaca/material-dependencies.json` e `src/carcaca-campaign-state.mjs`. Testes de Actions serão registrados após conferência do snapshot gerado.

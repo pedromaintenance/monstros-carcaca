@@ -80,3 +80,13 @@ Alimentação, água potável, população ou reprodução **não são presumida
 - `src/carcaca-client.mjs`: `getSettlementScenarios`, `getSettlementScenario`, `searchSettlementScenarios` e `previewSettlementScenario`.
 
 Consulte [o guia das comunidades insulares e cenários](docs/COMUNIDADES_INSULARES_E_CENARIOS.md). O marco M3 permanece em expansão. Não há cidades individuais inventadas, juramentos confirmados ou atualização do estado de campanha.
+
+## Ciclo 7 — Cadeia material e história local de campanha
+
+O atlas apresenta um grafo auditável de dependências materiais da Costa Sul em `data/dependencias_materiais_costa_sul.json`, distribuído como `dist/carcaca/material-dependencies.json`, com índices invertidos próprios.
+
+`src/carcaca-client.mjs` oferece `getMaterialDependencies`, `searchMaterialDependencies`, `getMaterialDependencyIndexes` e a função pura `previewMaterialInterruption`.
+
+Um **estado de campanha é um documento diferente do cânone**: `src/carcaca-campaign-state.mjs` fornece `createCampaignLedger`, `recordCampaignEvent` e `getCampaignEvents`, sem I/O. O exemplo vazio em `exemplos/campanhas/` demonstra o contrato, não é uma campanha canônica.
+
+Veja [Grafo material e eventos de campanha](docs/REDE_MATERIAL_E_ESTADO_DE_CAMPANHA.md).
