@@ -98,9 +98,27 @@ console.log(dependencia.habilitado_para_compra); // null: revisão obrigatória
 
 **REQUER continua obrigatório**, mesmo em movimentos gratuitos; a consulta não equivale a elegibilidade homologada. Veja a [documentação completa da integração](docs/INTEGRACAO_MOVIMENTOS_POVOS_CLASSES_REQUER.md) e o [extrator DOCX reproduzível](scripts/extrair_movimentos_personagem_docx.py).
 
+## Classe Bardo — quinto grupo integral
+
+O **Bardo** agora tem **32 movimentos integrais**, **34 opções** e **103 trechos** rastreáveis, com cinco `REQUER` literais (quatro diretos e um cardinal). **A Canção que Fez o Mundo** exige **Arte Arcana E mais dois movimentos diferentes de Bardo**; não contam cópias do mesmo movimento, outro grupo, nem a própria Arte Arcana novamente.
+
+A cobertura completa das classes chega a **273 de 632 movimentos** (Guerreiro 77, Bárbaro 59, Caçador 53, Ladino 52 e Bardo 32). Os **359 restantes** permanecem apenas inventariados.
+
+```js
+const bardo=await atlas.getBardMovements(); // 32
+const preview=await atlas.getBardRequirementPreview("movimento-classe:paragrafo-1843",{
+  movimentosPossuidos:["movimento-classe:paragrafo-1753",
+                       "movimento-classe:paragrafo-1798",
+                       "movimento-classe:paragrafo-1816"]
+});
+// preview.habilitado_para_compra === null: avaliação do Mestre permanece necessária.
+```
+
+Catálogo: `dist/carcaca/hack-bard-movements.json`. Índices: `hack-bard-movement-indexes.json`. Consulte [Integração do Bardo](docs/INTEGRACAO_BARDO_HACK_DW.md). A publicação não altera personagens nem cânone.
+
 ## Classe Guerreiro — transcrição integral (ciclo seguinte)
 
-Os **77 movimentos de Guerreiro** agora possuem texto integral preservado, **137 opções** em parágrafos de lista e **235 partes** com proveniência. O catálogo de 632 movimentos continua indexado; Guerreiro, Bárbaro, Caçador e Ladino possuem o vínculo explícito `texto_integral_disponivel:true`.
+Os **77 movimentos de Guerreiro** agora possuem texto integral preservado, **137 opções** em parágrafos de lista e **235 partes** com proveniência. O catálogo de 632 movimentos continua indexado; Guerreiro, Bárbaro, Caçador, Ladino e Bardo possuem o vínculo explícito `texto_integral_disponivel:true`.
 
 ```js
 const guerreiro=await atlas.getWarriorMovements();
