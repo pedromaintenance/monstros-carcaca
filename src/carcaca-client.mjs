@@ -60,6 +60,31 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getWarriorMovements(){return byKey("hack_warrior_movements");}
+  async function getWarriorMovementIndexes(){return byKey("hack_warrior_movement_indexes");}
+  async function getWarriorMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    return (await getWarriorMovements()).find(m=>m.id===id)??null;
+  }
+  async function searchWarriorMovements({titulo,query,requer,comRequer,comOpcoes,tipoRequisito}={}){
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return (await getWarriorMovements()).filter(m=>
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (!requer||norm(m.requisito_literal).includes(norm(requer)))&&
+      (comRequer===undefined||Boolean(m.requisito_literal)===comRequer)&&
+      (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
+      (!tipoRequisito||(m.requisito_estruturado?.tipo??"nenhum")===tipoRequisito));
+  }
+  async function getWarriorRequirementPreview(id,{movimentosPossuidos=[]}={}){
+    const mov=await getWarriorMovement(id);
+    if(!mov)return null;
+    const preview=await getClassRequirementPreview(id,{movimentosPossuidos});
+    return {...preview,especificacao_literal:mov.requisito_literal,
+      requisito_estruturado:mov.requisito_estruturado,
+      aplicacao_canonica:false,
+      observacao:"Diagnóstico de dependências, não autorização automática de aquisição."};
+  }
   async function getClassMovementInventory(){return byKey("hack_class_movement_inventory");}
   async function getClassMovementIndexes(){return byKey("hack_class_movement_indexes");}
   async function getClassRequirementCandidates(){return byKey("hack_class_requirement_candidates");}
@@ -317,6 +342,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getHackCoreRules,
           getPeopleMovements,getPeopleMovement,getPeopleMovementIndexes,searchPeopleMovements,
           getClassMovementInventory,getClassMovement,getClassMovementIndexes,searchClassMovements,
+          getWarriorMovements,getWarriorMovement,getWarriorMovementIndexes,searchWarriorMovements,
+          getWarriorRequirementPreview,
           getClassRequirementCandidates,getClassRequirementPending,getClassRequirementPreview,
           getLoreAtlasLinks,getLoreAtlasLinkIndexes,searchLoreAtlasLinks,
           getLoreEntity,searchLore,
