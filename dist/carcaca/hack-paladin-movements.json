@@ -1,0 +1,1213 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-1968",
+    "paragrafo_docx": 1968,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "MISSÃO SAGRADA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [
+      {
+        "movimento_id": "movimento-classe:paragrafo-1976",
+        "titulo": "JURAMENTO QUEBRADO",
+        "concessao_literal": "recebe livremente",
+        "requer_permanece_obrigatorio": true,
+        "aplicacao_automatica": false
+      },
+      {
+        "movimento_id": "movimento-classe:paragrafo-1977",
+        "titulo": "PENITÊNCIA",
+        "concessao_literal": "recebe livremente",
+        "requer_permanece_obrigatorio": true,
+        "aplicacao_automatica": false
+      }
+    ],
+    "partes": [
+      {
+        "paragrafo_docx": 1968,
+        "tipo": "corpo",
+        "texto": "Quando declarar formalmente uma missão sagrada, diga o rito pelo qual isto acontece e escolha duas bênçãos:"
+      },
+      {
+        "paragrafo_docx": 1969,
+        "tipo": "opcao",
+        "texto": "sentido infalível da direção até o objetivo quando houver caminho;"
+      },
+      {
+        "paragrafo_docx": 1970,
+        "tipo": "opcao",
+        "texto": "resistência excepcional contra uma categoria de ameaça;"
+      },
+      {
+        "paragrafo_docx": 1971,
+        "tipo": "opcao",
+        "texto": "autoridade sagrada perante devotos de sua causa;"
+      },
+      {
+        "paragrafo_docx": 1972,
+        "tipo": "opcao",
+        "texto": "capacidade de reconhecer agentes daquilo que jurou combater;"
+      },
+      {
+        "paragrafo_docx": 1973,
+        "tipo": "opcao",
+        "texto": "proteção sobrenatural contra medo;"
+      },
+      {
+        "paragrafo_docx": 1974,
+        "tipo": "opcao",
+        "texto": "sua arma pode ferir aquilo que normalmente exigiria poder sagrado."
+      },
+      {
+        "paragrafo_docx": 1975,
+        "tipo": "continuacao",
+        "texto": "O Mestre escolhe um ou dois votos que você deverá manter enquanto a missão durar. Violar estes votos exigirá que você engatilhe o movimento Penitência para restaurar aquilo que sua promessa representava – e suas bençãos.\nVocê também recebe livremente os movimentos Juramento Quebrado e Penitência."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1969,
+        "texto": "sentido infalível da direção até o objetivo quando houver caminho;"
+      },
+      {
+        "paragrafo_docx": 1970,
+        "texto": "resistência excepcional contra uma categoria de ameaça;"
+      },
+      {
+        "paragrafo_docx": 1971,
+        "texto": "autoridade sagrada perante devotos de sua causa;"
+      },
+      {
+        "paragrafo_docx": 1972,
+        "texto": "capacidade de reconhecer agentes daquilo que jurou combater;"
+      },
+      {
+        "paragrafo_docx": 1973,
+        "texto": "proteção sobrenatural contra medo;"
+      },
+      {
+        "paragrafo_docx": 1974,
+        "texto": "sua arma pode ferir aquilo que normalmente exigiria poder sagrado."
+      }
+    ],
+    "texto_original": "Quando declarar formalmente uma missão sagrada, diga o rito pelo qual isto acontece e escolha duas bênçãos:\nsentido infalível da direção até o objetivo quando houver caminho;\nresistência excepcional contra uma categoria de ameaça;\nautoridade sagrada perante devotos de sua causa;\ncapacidade de reconhecer agentes daquilo que jurou combater;\nproteção sobrenatural contra medo;\nsua arma pode ferir aquilo que normalmente exigiria poder sagrado.\nO Mestre escolhe um ou dois votos que você deverá manter enquanto a missão durar. Violar estes votos exigirá que você engatilhe o movimento Penitência para restaurar aquilo que sua promessa representava – e suas bençãos.\nVocê também recebe livremente os movimentos Juramento Quebrado e Penitência.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1968"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1976",
+    "paragrafo_docx": 1976,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "JURAMENTO QUEBRADO",
+    "requisito_literal": "Missão Sagrada",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1968",
+      "titulo_requerido": "MISSÃO SAGRADA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1976,
+        "tipo": "corpo",
+        "texto": "Quando quebrar conscientemente um juramento que sustentava seu poder e recusar-se a buscar reparação, diga o que passou a considerar mais importante que sua antiga palavra. Escolha uma das bênçãos que recebeu através daquele juramento.\nEla permanece com você, mas se manifesta de maneira corrompida ou invertida. Diga como. As demais bênçãos daquele juramento deixam de protegê-lo.\nO Mestre dirá: “Que coisa agora reconhece você como um dos seus?”\nEnquanto continuar nesse caminho, manifestações sagradas ligadas ao juramento antigo reconhecem sua queda."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando quebrar conscientemente um juramento que sustentava seu poder e recusar-se a buscar reparação, diga o que passou a considerar mais importante que sua antiga palavra. Escolha uma das bênçãos que recebeu através daquele juramento.\nEla permanece com você, mas se manifesta de maneira corrompida ou invertida. Diga como. As demais bênçãos daquele juramento deixam de protegê-lo.\nO Mestre dirá: “Que coisa agora reconhece você como um dos seus?”\nEnquanto continuar nesse caminho, manifestações sagradas ligadas ao juramento antigo reconhecem sua queda.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1976"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1977",
+    "paragrafo_docx": 1977,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "PENITÊNCIA",
+    "requisito_literal": "Missão Sagrada",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1968",
+      "titulo_requerido": "MISSÃO SAGRADA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1977,
+        "tipo": "corpo",
+        "texto": "Quando desejar verdadeiramente restaurar uma palavra quebrada, pergunte ao Mestre: \n“Que ato provaria que eu compreendi aquilo que traí?” \nA resposta deve exigir risco, perda ou sacrifício real, não apenas pedir desculpas. Se realizar esse ato sem subvertê-lo, encerre os efeitos de Juramento Quebrado e restaure aquilo que sua antiga promessa representava."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando desejar verdadeiramente restaurar uma palavra quebrada, pergunte ao Mestre: \n“Que ato provaria que eu compreendi aquilo que traí?” \nA resposta deve exigir risco, perda ou sacrifício real, não apenas pedir desculpas. Se realizar esse ato sem subvertê-lo, encerre os efeitos de Juramento Quebrado e restaure aquilo que sua antiga promessa representava.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1977"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1978",
+    "paragrafo_docx": 1978,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "IMPOSIÇÃO DAS MÃOS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1978,
+        "tipo": "corpo",
+        "texto": "Quando tocar alguém ferido e pedir que seu poder o restaure, role+CAR ou SAB conforme sua fé.\n10+: cure 1d6 e estabilize uma consequência física comum.\n7–9: cure 1d6, mas escolha: tome parte da dor; atraia atenção sobrenatural; imponha repouso; deixe uma marca permanente da intervenção divina."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando tocar alguém ferido e pedir que seu poder o restaure, role+CAR ou SAB conforme sua fé.\n10+: cure 1d6 e estabilize uma consequência física comum.\n7–9: cure 1d6, mas escolha: tome parte da dor; atraia atenção sobrenatural; imponha repouso; deixe uma marca permanente da intervenção divina.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1978"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1979",
+    "paragrafo_docx": 1979,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "DEFENSOR INABALÁVEL",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1979,
+        "tipo": "corpo",
+        "texto": "Quando Defender, em um 6- ainda receba Domínio 1 para usar antes que o Mestre realize seu Movimento.\nA proteção existe mesmo quando a situação piora."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando Defender, em um 6- ainda receba Domínio 1 para usar antes que o Mestre realize seu Movimento.\nA proteção existe mesmo quando a situação piora.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1979"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1980",
+    "paragrafo_docx": 1980,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "VINGANÇA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1980,
+        "tipo": "corpo",
+        "texto": "Quando alguém cometer diante de você uma atrocidade contra inocentes e você jurar levá-lo à justiça, receba Domínio 2 sobre essa pessoa. Gaste 1 Domínio para receber +1 adiante ao rastreá-la, confrontá-la, enfrentá-la ou resistir diretamente a ela."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém cometer diante de você uma atrocidade contra inocentes e você jurar levá-lo à justiça, receba Domínio 2 sobre essa pessoa. Gaste 1 Domínio para receber +1 adiante ao rastreá-la, confrontá-la, enfrentá-la ou resistir diretamente a ela.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1980"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1981",
+    "paragrafo_docx": 1981,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "REDENÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1981,
+        "tipo": "corpo",
+        "texto": "Quando oferecer misericórdia verdadeira a um inimigo derrotado e ele puder entender sua oferta, pergunte:\n“O que seria necessário para que você realmente abandonasse este caminho?” O Mestre responderá honestamente."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando oferecer misericórdia verdadeira a um inimigo derrotado e ele puder entender sua oferta, pergunte:\n“O que seria necessário para que você realmente abandonasse este caminho?” O Mestre responderá honestamente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1981"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1982",
+    "paragrafo_docx": 1982,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "SENTIDO DIVINO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1982,
+        "tipo": "corpo",
+        "texto": "Quando parar por alguns instantes e permitir que seu juramento julgue o lugar ao seu redor, pergunte ao Mestre:\n“O que aqui meu juramento reconhece como sagrado, profanado ou contrário àquilo que prometi?”\nO Mestre responderá segundo aquilo que realmente exista ali. Você percebe através de um dos seus sentidos à sua escolha a presença e natureza geral, não identidade, história ou intenções secretas."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando parar por alguns instantes e permitir que seu juramento julgue o lugar ao seu redor, pergunte ao Mestre:\n“O que aqui meu juramento reconhece como sagrado, profanado ou contrário àquilo que prometi?”\nO Mestre responderá segundo aquilo que realmente exista ali. Você percebe através de um dos seus sentidos à sua escolha a presença e natureza geral, não identidade, história ou intenções secretas.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1982"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1983",
+    "paragrafo_docx": 1983,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "ARMA SAGRADA",
+    "requisito_literal": "Missão Sagrada",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1968",
+      "titulo_requerido": "MISSÃO SAGRADA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1983,
+        "tipo": "corpo",
+        "texto": "Escolha uma arma que carregue algum símbolo, memória ou sinal de seu juramento. Enquanto você permanecer fiel àquilo que ela representa, ela pode ferir criaturas que normalmente exigiriam poder sagrado, mágico ou consagrado para serem atingidas. Quando empunhá-la abertamente diante daqueles que reconheçam sua causa, eles sabem o que aquela arma representa e você tem influência para Negociar com eles."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha uma arma que carregue algum símbolo, memória ou sinal de seu juramento. Enquanto você permanecer fiel àquilo que ela representa, ela pode ferir criaturas que normalmente exigiriam poder sagrado, mágico ou consagrado para serem atingidas. Quando empunhá-la abertamente diante daqueles que reconheçam sua causa, eles sabem o que aquela arma representa e você tem influência para Negociar com eles.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1983"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1984",
+    "paragrafo_docx": 1984,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "JULGAMENTO DIVINO",
+    "requisito_literal": "Missão Sagrada",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1968",
+      "titulo_requerido": "MISSÃO SAGRADA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1984,
+        "tipo": "corpo",
+        "texto": "Quando causar dano corpo a corpo a alguém que tenha violado diretamente algo protegido por seu juramento, você pode declarar seu julgamento antes de rolar o dano. Aumente a Periculosidade em um grau e escolha também 1:"
+      },
+      {
+        "paragrafo_docx": 1985,
+        "tipo": "opcao",
+        "texto": "sua arma ou corpo fica marcado pela manifestação visível de seu poder;"
+      },
+      {
+        "paragrafo_docx": 1986,
+        "tipo": "opcao",
+        "texto": "o alvo entende exatamente por que está sendo julgado;"
+      },
+      {
+        "paragrafo_docx": 1987,
+        "tipo": "opcao",
+        "texto": "alguém próximo que compartilhe da culpa percebe que o julgamento também poderia alcançá-lo."
+      },
+      {
+        "paragrafo_docx": 1988,
+        "tipo": "continuacao",
+        "texto": "Esse poder não se aplica simplesmente porque alguém é seu inimigo. A violação precisa ser real e relevante ao juramento."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1985,
+        "texto": "sua arma ou corpo fica marcado pela manifestação visível de seu poder;"
+      },
+      {
+        "paragrafo_docx": 1986,
+        "texto": "o alvo entende exatamente por que está sendo julgado;"
+      },
+      {
+        "paragrafo_docx": 1987,
+        "texto": "alguém próximo que compartilhe da culpa percebe que o julgamento também poderia alcançá-lo."
+      }
+    ],
+    "texto_original": "Quando causar dano corpo a corpo a alguém que tenha violado diretamente algo protegido por seu juramento, você pode declarar seu julgamento antes de rolar o dano. Aumente a Periculosidade em um grau e escolha também 1:\nsua arma ou corpo fica marcado pela manifestação visível de seu poder;\no alvo entende exatamente por que está sendo julgado;\nalguém próximo que compartilhe da culpa percebe que o julgamento também poderia alcançá-lo.\nEsse poder não se aplica simplesmente porque alguém é seu inimigo. A violação precisa ser real e relevante ao juramento.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1984"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1990",
+    "paragrafo_docx": 1990,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "EXTERMINATUS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1990,
+        "tipo": "corpo",
+        "texto": "Quando olhar para um inimigo e declarar publicamente: “Eu não descansarei até que você seja derrotado.” diga por que sua existência tornou-se incompatível com seu juramento. Enquanto essa promessa permanecer:"
+      },
+      {
+        "paragrafo_docx": 1991,
+        "tipo": "opcao",
+        "texto": "sua violência contra ele aumenta um grau de Periculosidade;"
+      },
+      {
+        "paragrafo_docx": 1992,
+        "tipo": "opcao",
+        "texto": "sua violência deliberada contra qualquer outro alvo reduz um grau de Periculosidade;"
+      },
+      {
+        "paragrafo_docx": 1993,
+        "tipo": "opcao",
+        "texto": "você sempre reconhece quando está abandonando uma oportunidade real de continuar a perseguição."
+      },
+      {
+        "paragrafo_docx": 1994,
+        "tipo": "continuacao",
+        "texto": "A promessa termina quando ele for derrotado. Se você desistir conscientemente antes disso, a promessa permanece quebrada até que encontre uma maneira apropriada de reparar sua palavra."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 1991,
+        "texto": "sua violência contra ele aumenta um grau de Periculosidade;"
+      },
+      {
+        "paragrafo_docx": 1992,
+        "texto": "sua violência deliberada contra qualquer outro alvo reduz um grau de Periculosidade;"
+      },
+      {
+        "paragrafo_docx": 1993,
+        "texto": "você sempre reconhece quando está abandonando uma oportunidade real de continuar a perseguição."
+      }
+    ],
+    "texto_original": "Quando olhar para um inimigo e declarar publicamente: “Eu não descansarei até que você seja derrotado.” diga por que sua existência tornou-se incompatível com seu juramento. Enquanto essa promessa permanecer:\nsua violência contra ele aumenta um grau de Periculosidade;\nsua violência deliberada contra qualquer outro alvo reduz um grau de Periculosidade;\nvocê sempre reconhece quando está abandonando uma oportunidade real de continuar a perseguição.\nA promessa termina quando ele for derrotado. Se você desistir conscientemente antes disso, a promessa permanece quebrada até que encontre uma maneira apropriada de reparar sua palavra.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1990"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1995",
+    "paragrafo_docx": 1995,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "AURA DE PROTEÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1995,
+        "tipo": "corpo",
+        "texto": "Enquanto estiver consciente e mantendo ativamente sua palavra diante de um perigo, aliados próximos que consigam percebê-lo podem se apoiar na certeza que você representa. Uma vez por cena para cada aliado, quando ele obtiver 7–9 ao Desafiar o Perigo, ele pode tratá-lo como 10+.\nQuando alguém utilizar sua Aura dessa maneira, diga que palavra, gesto ou lembrança sua lhe devolveu a firmeza."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Enquanto estiver consciente e mantendo ativamente sua palavra diante de um perigo, aliados próximos que consigam percebê-lo podem se apoiar na certeza que você representa. Uma vez por cena para cada aliado, quando ele obtiver 7–9 ao Desafiar o Perigo, ele pode tratá-lo como 10+.\nQuando alguém utilizar sua Aura dessa maneira, diga que palavra, gesto ou lembrança sua lhe devolveu a firmeza.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1995"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1996",
+    "paragrafo_docx": 1996,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "AURA DA CORAGEM",
+    "requisito_literal": "Aura de Proteção",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1995",
+      "titulo_requerido": "AURA DE PROTEÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1996,
+        "tipo": "corpo",
+        "texto": "Aliados que permaneçam próximos e consigam perceber você não fogem apenas por medo. Diante de terror sobrenatural, esmagador ou verdadeiramente incompreensível, ainda podem precisar enfrentar outros perigos — mas o medo nunca lhes retira a possibilidade de agir."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Aliados que permaneçam próximos e consigam perceber você não fogem apenas por medo. Diante de terror sobrenatural, esmagador ou verdadeiramente incompreensível, ainda podem precisar enfrentar outros perigos — mas o medo nunca lhes retira a possibilidade de agir.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1996"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1997",
+    "paragrafo_docx": 1997,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "EU DISSE: ATRÁS DE MIM",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1997,
+        "tipo": "corpo",
+        "texto": "Quando alguém que você jurou proteger, na mesma cena, estiver prestes a sofrer uma consequência, você pode sobrenaturalmente se colocar entre essa pessoa e aquilo que a ameaça. A consequência passa a atingir você. Se isso desencadear algum Movimento, resolva-o já ocupando a posição de defensor."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém que você jurou proteger, na mesma cena, estiver prestes a sofrer uma consequência, você pode sobrenaturalmente se colocar entre essa pessoa e aquilo que a ameaça. A consequência passa a atingir você. Se isso desencadear algum Movimento, resolva-o já ocupando a posição de defensor.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1997"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1998",
+    "paragrafo_docx": 1998,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "NÃO ENQUANTO EU ESTIVER DE PÉ",
+    "requisito_literal": "Eu Disse: Atrás de Mim",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1997",
+      "titulo_requerido": "EU DISSE: ATRÁS DE MIM",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1998,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando uma consequência o retiraria da posição que está mantendo para proteger alguém — derrubando, afastando, arrastando ou deixando-o temporariamente incapaz — você pode permanecer onde está. A consequência ainda acontece de outra maneira apropriada: sofra a violência, perca algo, receba uma Debilidade, tenha equipamento destruído ou aceite outro preço estabelecido pela ficção. Mas você continua entre a ameaça e aquilo que jurou proteger."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por cena, quando uma consequência o retiraria da posição que está mantendo para proteger alguém — derrubando, afastando, arrastando ou deixando-o temporariamente incapaz — você pode permanecer onde está. A consequência ainda acontece de outra maneira apropriada: sofra a violência, perca algo, receba uma Debilidade, tenha equipamento destruído ou aceite outro preço estabelecido pela ficção. Mas você continua entre a ameaça e aquilo que jurou proteger.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1998"
+  },
+  {
+    "id": "movimento-classe:paragrafo-1999",
+    "paragrafo_docx": 1999,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "ÉGIDE SANGRENTA",
+    "requisito_literal": "Missão Sagrada",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1968",
+      "titulo_requerido": "MISSÃO SAGRADA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 1999,
+        "tipo": "corpo",
+        "texto": "Quando alguém ferir você enquanto você estiver se colocando entre essa pessoa e alguém sob sua proteção, o agressor fica Marcado pelo seu juramento até o fim da cena. \nQuando você causar violência contra uma criatura Marcada, escolha 1:"
+      },
+      {
+        "paragrafo_docx": 2000,
+        "tipo": "opcao",
+        "texto": "aumente a Periculosidade em um grau;"
+      },
+      {
+        "paragrafo_docx": 2001,
+        "tipo": "opcao",
+        "texto": "derrube-a ou afaste-a de quem você protege;"
+      },
+      {
+        "paragrafo_docx": 2002,
+        "tipo": "opcao",
+        "texto": "faça-a perceber sobrenaturalmente que continuar atacando aquilo que você protege terá um preço;"
+      },
+      {
+        "paragrafo_docx": 2003,
+        "tipo": "opcao",
+        "texto": "impeça-a momentaneamente de voltar sua violência contra a pessoa protegida."
+      },
+      {
+        "paragrafo_docx": 2004,
+        "tipo": "continuacao",
+        "texto": "Cada agressor só pode ser Marcado uma vez por cena."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2000,
+        "texto": "aumente a Periculosidade em um grau;"
+      },
+      {
+        "paragrafo_docx": 2001,
+        "texto": "derrube-a ou afaste-a de quem você protege;"
+      },
+      {
+        "paragrafo_docx": 2002,
+        "texto": "faça-a perceber sobrenaturalmente que continuar atacando aquilo que você protege terá um preço;"
+      },
+      {
+        "paragrafo_docx": 2003,
+        "texto": "impeça-a momentaneamente de voltar sua violência contra a pessoa protegida."
+      }
+    ],
+    "texto_original": "Quando alguém ferir você enquanto você estiver se colocando entre essa pessoa e alguém sob sua proteção, o agressor fica Marcado pelo seu juramento até o fim da cena. \nQuando você causar violência contra uma criatura Marcada, escolha 1:\naumente a Periculosidade em um grau;\nderrube-a ou afaste-a de quem você protege;\nfaça-a perceber sobrenaturalmente que continuar atacando aquilo que você protege terá um preço;\nimpeça-a momentaneamente de voltar sua violência contra a pessoa protegida.\nCada agressor só pode ser Marcado uma vez por cena.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-1999"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2005",
+    "paragrafo_docx": 2005,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "ABJURAR OS INIMIGOS",
+    "requisito_literal": "Missão Sagrada",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1968",
+      "titulo_requerido": "MISSÃO SAGRADA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2005,
+        "tipo": "corpo",
+        "texto": "Quando erguer sua arma, símbolo ou voz diante de criaturas que sejam diretamente condenadas pela natureza de seu juramento, declare por que elas não possuem direito de avançar e role+CAR.\n10+: escolha 2.\n7–9: escolha 1 e a manifestação de sua autoridade também chama atenção perigosa."
+      },
+      {
+        "paragrafo_docx": 2006,
+        "tipo": "opcao",
+        "texto": "criaturas inferiores recuam ou fogem;"
+      },
+      {
+        "paragrafo_docx": 2007,
+        "tipo": "opcao",
+        "texto": "uma criatura poderosa hesita e precisa primeiro desafiar sua autoridade para avançar;"
+      },
+      {
+        "paragrafo_docx": 2008,
+        "tipo": "opcao",
+        "texto": "elas não conseguem atravessar imediatamente uma fronteira que você esteja defendendo;"
+      },
+      {
+        "paragrafo_docx": 2009,
+        "tipo": "opcao",
+        "texto": "revele qual delas reconhece sua autoridade e qual não a reconhece de forma alguma;"
+      },
+      {
+        "paragrafo_docx": 2010,
+        "tipo": "opcao",
+        "texto": "uma criatura que estava atacando alguém sob sua proteção volta a atenção para você."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2006,
+        "texto": "criaturas inferiores recuam ou fogem;"
+      },
+      {
+        "paragrafo_docx": 2007,
+        "texto": "uma criatura poderosa hesita e precisa primeiro desafiar sua autoridade para avançar;"
+      },
+      {
+        "paragrafo_docx": 2008,
+        "texto": "elas não conseguem atravessar imediatamente uma fronteira que você esteja defendendo;"
+      },
+      {
+        "paragrafo_docx": 2009,
+        "texto": "revele qual delas reconhece sua autoridade e qual não a reconhece de forma alguma;"
+      },
+      {
+        "paragrafo_docx": 2010,
+        "texto": "uma criatura que estava atacando alguém sob sua proteção volta a atenção para você."
+      }
+    ],
+    "texto_original": "Quando erguer sua arma, símbolo ou voz diante de criaturas que sejam diretamente condenadas pela natureza de seu juramento, declare por que elas não possuem direito de avançar e role+CAR.\n10+: escolha 2.\n7–9: escolha 1 e a manifestação de sua autoridade também chama atenção perigosa.\ncriaturas inferiores recuam ou fogem;\numa criatura poderosa hesita e precisa primeiro desafiar sua autoridade para avançar;\nelas não conseguem atravessar imediatamente uma fronteira que você esteja defendendo;\nrevele qual delas reconhece sua autoridade e qual não a reconhece de forma alguma;\numa criatura que estava atacando alguém sob sua proteção volta a atenção para você.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2005"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2011",
+    "paragrafo_docx": 2011,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "MONTARIA FIEL",
+    "requisito_literal": "Missão Sagrada",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1968",
+      "titulo_requerido": "MISSÃO SAGRADA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2011,
+        "tipo": "corpo",
+        "texto": "Escolha ou descreva uma montaria ligada ao seu juramento. Ela pode ser um animal real abençoado, espírito encarnado, criatura celestial, montaria ancestral ou outra forma apropriada. Quando chamá-la num lugar onde exista algum caminho plausível ou sobrenatural pelo qual possa alcançá-lo, ela vem. Ela:"
+      },
+      {
+        "paragrafo_docx": 2012,
+        "tipo": "opcao",
+        "texto": "reconhece você e aqueles sob sua proteção;"
+      },
+      {
+        "paragrafo_docx": 2013,
+        "tipo": "opcao",
+        "texto": "não o abandona por medo comum;"
+      },
+      {
+        "paragrafo_docx": 2014,
+        "tipo": "opcao",
+        "texto": "compreende comandos e intenções simples;"
+      },
+      {
+        "paragrafo_docx": 2015,
+        "tipo": "opcao",
+        "texto": "sempre consegue encontrar você novamente enquanto seu juramento permanecer intacto."
+      },
+      {
+        "paragrafo_docx": 2016,
+        "tipo": "continuacao",
+        "texto": "Se for destruída ou perdida de modo definitivo, uma nova montaria só pode surgir depois de um novo ato que reafirme seu juramento."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2012,
+        "texto": "reconhece você e aqueles sob sua proteção;"
+      },
+      {
+        "paragrafo_docx": 2013,
+        "texto": "não o abandona por medo comum;"
+      },
+      {
+        "paragrafo_docx": 2014,
+        "texto": "compreende comandos e intenções simples;"
+      },
+      {
+        "paragrafo_docx": 2015,
+        "texto": "sempre consegue encontrar você novamente enquanto seu juramento permanecer intacto."
+      }
+    ],
+    "texto_original": "Escolha ou descreva uma montaria ligada ao seu juramento. Ela pode ser um animal real abençoado, espírito encarnado, criatura celestial, montaria ancestral ou outra forma apropriada. Quando chamá-la num lugar onde exista algum caminho plausível ou sobrenatural pelo qual possa alcançá-lo, ela vem. Ela:\nreconhece você e aqueles sob sua proteção;\nnão o abandona por medo comum;\ncompreende comandos e intenções simples;\nsempre consegue encontrar você novamente enquanto seu juramento permanecer intacto.\nSe for destruída ou perdida de modo definitivo, uma nova montaria só pode surgir depois de um novo ato que reafirme seu juramento.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2011"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2018",
+    "paragrafo_docx": 2018,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "MÃOS DIVINAS",
+    "requisito_literal": "Imposição das Mãos",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1978",
+      "titulo_requerido": "IMPOSIÇÃO DAS MÃOS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2018,
+        "tipo": "corpo",
+        "texto": "Quando utilizar Imposição das Mãos sobre alguém que foi ferido ao cumprir um juramento, proteger outra pessoa ou permanecer fiel a uma causa apesar do custo, em um sucesso escolha também 1:"
+      },
+      {
+        "paragrafo_docx": 2019,
+        "tipo": "opcao",
+        "texto": "cure 1d8 PV adicionais;"
+      },
+      {
+        "paragrafo_docx": 2020,
+        "tipo": "opcao",
+        "texto": "remova uma Debilidade física;"
+      },
+      {
+        "paragrafo_docx": 2021,
+        "tipo": "opcao",
+        "texto": "permita que ele volte imediatamente a ficar de pé e agir;"
+      },
+      {
+        "paragrafo_docx": 2022,
+        "tipo": "opcao",
+        "texto": "revele a natureza de uma maldição, possessão profunda ou transformação e diminua seus efeitos temporariamente;"
+      },
+      {
+        "paragrafo_docx": 2023,
+        "tipo": "opcao",
+        "texto": "a pessoa sente claramente que seu sacrifício foi reconhecido por alguma coisa maior."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2019,
+        "texto": "cure 1d8 PV adicionais;"
+      },
+      {
+        "paragrafo_docx": 2020,
+        "texto": "remova uma Debilidade física;"
+      },
+      {
+        "paragrafo_docx": 2021,
+        "texto": "permita que ele volte imediatamente a ficar de pé e agir;"
+      },
+      {
+        "paragrafo_docx": 2022,
+        "texto": "revele a natureza de uma maldição, possessão profunda ou transformação e diminua seus efeitos temporariamente;"
+      },
+      {
+        "paragrafo_docx": 2023,
+        "texto": "a pessoa sente claramente que seu sacrifício foi reconhecido por alguma coisa maior."
+      }
+    ],
+    "texto_original": "Quando utilizar Imposição das Mãos sobre alguém que foi ferido ao cumprir um juramento, proteger outra pessoa ou permanecer fiel a uma causa apesar do custo, em um sucesso escolha também 1:\ncure 1d8 PV adicionais;\nremova uma Debilidade física;\npermita que ele volte imediatamente a ficar de pé e agir;\nrevele a natureza de uma maldição, possessão profunda ou transformação e diminua seus efeitos temporariamente;\na pessoa sente claramente que seu sacrifício foi reconhecido por alguma coisa maior.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2018"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2024",
+    "paragrafo_docx": 2024,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "TOQUE PURIFICADOR",
+    "requisito_literal": "Imposição das Mãos",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1978",
+      "titulo_requerido": "IMPOSIÇÃO DAS MÃOS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2024,
+        "tipo": "corpo",
+        "texto": "Quando usar Imposição das Mãos, você pode escolher purificar em vez de curar PV. Em sucesso, remova ou suprima uma condição sobrenatural ou corporal compatível com seu poder, como:"
+      },
+      {
+        "paragrafo_docx": 2025,
+        "tipo": "opcao",
+        "texto": "veneno;"
+      },
+      {
+        "paragrafo_docx": 2026,
+        "tipo": "opcao",
+        "texto": "doença;"
+      },
+      {
+        "paragrafo_docx": 2027,
+        "tipo": "opcao",
+        "texto": "medo mágico;"
+      },
+      {
+        "paragrafo_docx": 2028,
+        "tipo": "opcao",
+        "texto": "encantamento;"
+      },
+      {
+        "paragrafo_docx": 2029,
+        "tipo": "opcao",
+        "texto": "possessão superficial;"
+      },
+      {
+        "paragrafo_docx": 2030,
+        "tipo": "opcao",
+        "texto": "corrupção espiritual menor."
+      },
+      {
+        "paragrafo_docx": 2031,
+        "tipo": "continuacao",
+        "texto": "Uma maldição, possessão profunda ou transformação que seja parte central da situação pode exigir primeiro que você descubra aquilo que a sustenta."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2025,
+        "texto": "veneno;"
+      },
+      {
+        "paragrafo_docx": 2026,
+        "texto": "doença;"
+      },
+      {
+        "paragrafo_docx": 2027,
+        "texto": "medo mágico;"
+      },
+      {
+        "paragrafo_docx": 2028,
+        "texto": "encantamento;"
+      },
+      {
+        "paragrafo_docx": 2029,
+        "texto": "possessão superficial;"
+      },
+      {
+        "paragrafo_docx": 2030,
+        "texto": "corrupção espiritual menor."
+      }
+    ],
+    "texto_original": "Quando usar Imposição das Mãos, você pode escolher purificar em vez de curar PV. Em sucesso, remova ou suprima uma condição sobrenatural ou corporal compatível com seu poder, como:\nveneno;\ndoença;\nmedo mágico;\nencantamento;\npossessão superficial;\ncorrupção espiritual menor.\nUma maldição, possessão profunda ou transformação que seja parte central da situação pode exigir primeiro que você descubra aquilo que a sustenta.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2024"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2032",
+    "paragrafo_docx": 2032,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "CAVALEIRO PERFEITO",
+    "requisito_literal": "Missão Sagrada",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-1968",
+      "titulo_requerido": "MISSÃO SAGRADA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2032,
+        "tipo": "corpo",
+        "texto": "Quando declarar uma Missão Sagrada, escolha três bênçãos em vez de duas. O Mestre ainda escolhe votos apropriados à escala daquilo que você está exigindo de si mesmo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando declarar uma Missão Sagrada, escolha três bênçãos em vez de duas. O Mestre ainda escolhe votos apropriados à escala daquilo que você está exigindo de si mesmo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2032"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2033",
+    "paragrafo_docx": 2033,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "MINHA PALAVRA É MINHA ARMA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2033,
+        "tipo": "corpo",
+        "texto": "Quando dizer a verdade sabendo que uma mentira resolveria imediatamente um problema importante para você, receba 1 Preparo. Gaste esse Preparo posteriormente para:"
+      },
+      {
+        "paragrafo_docx": 2034,
+        "tipo": "opcao",
+        "texto": "fazer alguém acreditar que você está falando sinceramente;"
+      },
+      {
+        "paragrafo_docx": 2035,
+        "tipo": "opcao",
+        "texto": "exigir que alguém responda à sua honestidade com uma posição clara;"
+      },
+      {
+        "paragrafo_docx": 2036,
+        "tipo": "opcao",
+        "texto": "permanecer firme diante de uma tentativa de fazê-lo renegar sua palavra."
+      },
+      {
+        "paragrafo_docx": 2037,
+        "tipo": "continuacao",
+        "texto": "Você pode manter no máximo 2 Preparos deste Movimento."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2034,
+        "texto": "fazer alguém acreditar que você está falando sinceramente;"
+      },
+      {
+        "paragrafo_docx": 2035,
+        "texto": "exigir que alguém responda à sua honestidade com uma posição clara;"
+      },
+      {
+        "paragrafo_docx": 2036,
+        "texto": "permanecer firme diante de uma tentativa de fazê-lo renegar sua palavra."
+      }
+    ],
+    "texto_original": "Quando dizer a verdade sabendo que uma mentira resolveria imediatamente um problema importante para você, receba 1 Preparo. Gaste esse Preparo posteriormente para:\nfazer alguém acreditar que você está falando sinceramente;\nexigir que alguém responda à sua honestidade com uma posição clara;\npermanecer firme diante de uma tentativa de fazê-lo renegar sua palavra.\nVocê pode manter no máximo 2 Preparos deste Movimento.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2033"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2038",
+    "paragrafo_docx": 2038,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "FAÇA ALGO DIGNO DE SER CONTADO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2038,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando voluntariamente escolher a maneira mais difícil, perigosa e espetacular de realizar algo porque acredita que é assim que um herói deveria agir, diga qual feito pretende realizar. \nSe conseguir, marque 1 XP e pergunte ao Mestre: “Quem passa a contar esta história?”"
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando voluntariamente escolher a maneira mais difícil, perigosa e espetacular de realizar algo porque acredita que é assim que um herói deveria agir, diga qual feito pretende realizar. \nSe conseguir, marque 1 XP e pergunte ao Mestre: “Quem passa a contar esta história?”",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2038"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2039",
+    "paragrafo_docx": 2039,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "A LUZ NÃO MORRERÁ AQUI",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2039,
+        "tipo": "corpo",
+        "texto": "Quando jurar proteger algo vivo, belo, alegre ou antigo contra uma força que deseja apenas destruí-lo ou corrompê-lo, essa coisa passa a estar sob sua proteção até o perigo terminar. Enquanto você permanecer entre ela e a ameaça, a destruição não pode simplesmente acontecer fora de cena ou como consequência incidental. A ameaça precisa passar por você ou encontrar outra maneira concreta de alcançá-la."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando jurar proteger algo vivo, belo, alegre ou antigo contra uma força que deseja apenas destruí-lo ou corrompê-lo, essa coisa passa a estar sob sua proteção até o perigo terminar. Enquanto você permanecer entre ela e a ameaça, a destruição não pode simplesmente acontecer fora de cena ou como consequência incidental. A ameaça precisa passar por você ou encontrar outra maneira concreta de alcançá-la.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2039"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2040",
+    "paragrafo_docx": 2040,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "PESADA É A COROA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2040,
+        "tipo": "corpo",
+        "texto": "Quando aceitar publicamente responsabilidade pela segurança de uma comunidade, fortaleza, caravana ou grupo definido, pergunte ao Mestre:\n“Qual é a ameaça que aqueles sob minha proteção não conseguem enfrentar sozinhos?” A resposta será verdadeira.\nEnquanto assumir pessoalmente esse perigo, você tem +1 constante para Desafiar o Perigo contra esta ameaça."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando aceitar publicamente responsabilidade pela segurança de uma comunidade, fortaleza, caravana ou grupo definido, pergunte ao Mestre:\n“Qual é a ameaça que aqueles sob minha proteção não conseguem enfrentar sozinhos?” A resposta será verdadeira.\nEnquanto assumir pessoalmente esse perigo, você tem +1 constante para Desafiar o Perigo contra esta ameaça.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2040"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2041",
+    "paragrafo_docx": 2041,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "AJOELHE-SE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2041,
+        "tipo": "corpo",
+        "texto": "Quando derrotar alguém de maneira inequívoca e exigir sua submissão em vez de sua morte, pergunte:\n“O que eu precisaria garantir para que você realmente se submetesse à minha autoridade?”\nO Mestre responderá honestamente. Se cumprir a condição e aceitar a responsabilidade que acompanha governá-lo, ele realmente se submete enquanto você demonstrar ser capaz de sustentar aquela autoridade."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando derrotar alguém de maneira inequívoca e exigir sua submissão em vez de sua morte, pergunte:\n“O que eu precisaria garantir para que você realmente se submetesse à minha autoridade?”\nO Mestre responderá honestamente. Se cumprir a condição e aceitar a responsabilidade que acompanha governá-lo, ele realmente se submete enquanto você demonstrar ser capaz de sustentar aquela autoridade.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2041"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2042",
+    "paragrafo_docx": 2042,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "VOCÊ NÃO PERTENCE A ESTE MUNDO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2042,
+        "tipo": "corpo",
+        "texto": "Quando encontrar uma criatura ou força proveniente de outro plano, realidade ou dimensão e conseguir observá-la, pergunte uma:"
+      },
+      {
+        "paragrafo_docx": 2043,
+        "tipo": "opcao",
+        "texto": "Por onde ela entrou neste mundo?"
+      },
+      {
+        "paragrafo_docx": 2044,
+        "tipo": "opcao",
+        "texto": "O que a mantém aqui?"
+      },
+      {
+        "paragrafo_docx": 2045,
+        "tipo": "opcao",
+        "texto": "Que regra deste mundo ela não compreende?"
+      },
+      {
+        "paragrafo_docx": 2046,
+        "tipo": "opcao",
+        "texto": "O que ela trouxe consigo que não deveria estar aqui?"
+      },
+      {
+        "paragrafo_docx": 2047,
+        "tipo": "continuacao",
+        "texto": "Receba +1 adiante ao agir diretamente sobre a resposta."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2043,
+        "texto": "Por onde ela entrou neste mundo?"
+      },
+      {
+        "paragrafo_docx": 2044,
+        "texto": "O que a mantém aqui?"
+      },
+      {
+        "paragrafo_docx": 2045,
+        "texto": "Que regra deste mundo ela não compreende?"
+      },
+      {
+        "paragrafo_docx": 2046,
+        "texto": "O que ela trouxe consigo que não deveria estar aqui?"
+      }
+    ],
+    "texto_original": "Quando encontrar uma criatura ou força proveniente de outro plano, realidade ou dimensão e conseguir observá-la, pergunte uma:\nPor onde ela entrou neste mundo?\nO que a mantém aqui?\nQue regra deste mundo ela não compreende?\nO que ela trouxe consigo que não deveria estar aqui?\nReceba +1 adiante ao agir diretamente sobre a resposta.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2042"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2048",
+    "paragrafo_docx": 2048,
+    "grupo": "PALADINO",
+    "categoria": "classe",
+    "titulo": "BANIMENTO",
+    "requisito_literal": "Você Não Pertence a Este Mundo",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2042",
+      "titulo_requerido": "VOCÊ NÃO PERTENCE A ESTE MUNDO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2048,
+        "tipo": "corpo",
+        "texto": "Quando enfrentar uma criatura extraplanar e utilizar aquilo que a mantém neste mundo contra ela, role+CAR ou SAB conforme sua prática.\n12+: escolha 3.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 2049,
+        "tipo": "opcao",
+        "texto": "ela é enviada de volta;"
+      },
+      {
+        "paragrafo_docx": 2050,
+        "tipo": "opcao",
+        "texto": "a passagem pela qual veio se fecha;"
+      },
+      {
+        "paragrafo_docx": 2051,
+        "tipo": "opcao",
+        "texto": "nada dela permanece para trás;"
+      },
+      {
+        "paragrafo_docx": 2052,
+        "tipo": "opcao",
+        "texto": "nada mais atravessa junto no processo."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2049,
+        "texto": "ela é enviada de volta;"
+      },
+      {
+        "paragrafo_docx": 2050,
+        "texto": "a passagem pela qual veio se fecha;"
+      },
+      {
+        "paragrafo_docx": 2051,
+        "texto": "nada dela permanece para trás;"
+      },
+      {
+        "paragrafo_docx": 2052,
+        "texto": "nada mais atravessa junto no processo."
+      }
+    ],
+    "texto_original": "Quando enfrentar uma criatura extraplanar e utilizar aquilo que a mantém neste mundo contra ela, role+CAR ou SAB conforme sua prática.\n12+: escolha 3.\n10+: escolha 2.\n7–9: escolha 1.\nela é enviada de volta;\na passagem pela qual veio se fecha;\nnada dela permanece para trás;\nnada mais atravessa junto no processo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2048"
+  }
+]
