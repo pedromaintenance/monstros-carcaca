@@ -100,7 +100,7 @@ console.log(dependencia.habilitado_para_compra); // null: revisão obrigatória
 
 ## Classe Guerreiro — transcrição integral (ciclo seguinte)
 
-Os **77 movimentos de Guerreiro** agora possuem texto integral preservado, **137 opções** em parágrafos de lista e **235 partes** com proveniência. O catálogo de 632 movimentos continua indexado; apenas Guerreiro recebeu o vínculo explícito `texto_integral_disponivel:true`.
+Os **77 movimentos de Guerreiro** agora possuem texto integral preservado, **137 opções** em parágrafos de lista e **235 partes** com proveniência. O catálogo de 632 movimentos continua indexado; Guerreiro e Bárbaro possuem agora o vínculo explícito `texto_integral_disponivel:true`.
 
 ```js
 const guerreiro=await atlas.getWarriorMovements();
@@ -113,6 +113,23 @@ const requisito=await atlas.getWarriorRequirementPreview(
 ```
 
 São **30 REQUER**: 27 correspondências exatas candidatas e três condições especiais (*Magia de Guerra*, *Passo Arcano* e *Tiro Arcano*). A checagem de aquisição permanece deliberadamente **não automática**. Consulte [Integração do Guerreiro](docs/INTEGRACAO_GUERREIRO_HACK_DW.md).
+
+## Classe Bárbaro — segundo grupo integral
+
+Foram integrados **59 movimentos de Bárbaro** (84 opções e 156 partes da fonte), elevando o catálogo de classes integralmente transcritas a **136 movimentos**: 77 de Guerreiro e 59 de Bárbaro. Os demais **496 títulos** continuam disponíveis no inventário, mas sem texto integral homologado.
+
+Os **37 REQUER** de Bárbaro incluem 36 correspondências nominais diretas e uma condição conjuntiva: **Fúria Além da Morte** exige **Fúria Divina e Demasiado Furioso Para Morrer**. O indexador registra os dois pré-requisitos; a API `getBarbarianRequirementPreview` nunca aprova a aquisição automaticamente.
+
+```js
+const movimentos = await atlas.getBarbarianMovements();
+const escolhiveis = await atlas.searchBarbarianMovements({comOpcoes:true});
+const duplaCondicao = await atlas.getBarbarianRequirementPreview(
+  "movimento-classe:paragrafo-1430",
+  {movimentosPossuidos:["movimento-classe:paragrafo-1427"]}
+);
+```
+
+Catálogo: `dist/carcaca/hack-barbarian-movements.json`; índices: `hack-barbarian-movement-indexes.json`. Consulte a [documentação integral de Bárbaro](docs/INTEGRACAO_BARBARO_HACK_DW.md).
 
 ## Ecossistema de assentamentos (M3, ciclo 5)
 
