@@ -120,7 +120,7 @@ if __name__=='__main__':
   output=Path(sys.argv[3]) if len(sys.argv)>3 else root/'data/lore/hack-carcaca-dw-guerreiro-integrais.json'
   result=extract(d,inventory)
   output.parent.mkdir(parents=True,exist_ok=True)
-  output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\\n',encoding='utf8')
+  output.write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
   print('TOTAL:',result['integridade'])
   print('SIZE:',output.stat().st_size)
   print('REQ especiais:',[(x['titulo'],x['requisito_literal']) for x in result['movimentos'] if x['requisito_estruturado'] and x['requisito_estruturado']['tipo']!='movimento_exato'])
