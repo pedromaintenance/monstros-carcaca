@@ -171,3 +171,15 @@ console.log(caso.atribuicao_automatica_bloqueada); // true
 ```
 
 `getTerritorialDynamics`, `getTerritorialLabels`, `getTerritorialIndexes` e `getTerritorialDynamic(id)` permitem navegação do atlas. Os rótulos territoriais **não** são rótulos de assentamento. Todos os fatos deste lote têm `escala:regional`, sem vítima ou destino específicos, e não são eventos de campanha. Documento de referência: `docs/DINAMICAS_TERRITORIAIS_ALEM_SUL.md`.
+
+## Dossiês regionais integrados (ciclo 12)
+
+```js
+import {reviewRegionalDossier} from "./src/carcaca-regional.mjs";
+const dossie=await atlas.getRegionalDossier("dossie-regional:costa-sul");
+const reuniao=reviewRegionalDossier(dossie);
+const semAssentamentos=await atlas.searchRegionalDossiers({semAssentamentosCurados:true});
+const mobilidade=await atlas.searchRegionalDossiers({temaPergunta:"mobilidade"});
+```
+
+A documentação agora possui **quatro dossiês** com referência às fichas existentes, indexáveis por região, local, assentamento, dinâmica e tema de pergunta. `reviewRegionalDossier` não afirma existência ou ausência física de população, não calcula perigo e não aplica DW. Ver `docs/DOSSIES_REGIONAIS_M3.md`.

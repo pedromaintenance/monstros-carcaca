@@ -277,3 +277,18 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] `dist/carcaca/territorial-labels.json`: 4 rótulos, incluindo `presenca_minoritaria_refugiada` (sem pressupor acolhimento formal).
 - [x] `dist/carcaca/territorial-indexes.json`: filtros por origem/destino, rótulo, tipo e dimensões materiais potenciais publicados.
 - [x] `regiao:caatinga`: cadastrada sem povoações individuais (`lugares:[]`).
+
+## Ciclo 12 — Dossiês regionais integrados do M3 (2026-10-27)
+
+- [x] Reler a ambientação como fonte primária, distinguindo fatos materiais e políticos de lacunas.
+- [x] Registrar **quatro guias factuais** (Caatinga, Costa Sul, Eldroth e foz) com **16 perguntas** sobre abrigo, subsistência, conflitos e mobilidade.
+- [x] Montar dossiês **derivados** por região a partir de lugares, assentamentos, criaturas, povos vinculados, frentes, fluxos, dependências, balanços, infraestrutura, cenários e dinâmicas territoriais já curados.
+- [x] Exibir `origem` e `destino` para cada vínculo regional, incluindo os dois papéis em dinâmicas internas à Costa Sul; não duplicar um evento nem presumir alvo individual.
+- [x] Diferenciar **zero fichas** de **zero habitantes** e evitar inferir que facções associadas a criaturas governem regiões.
+- [x] Separar explicitamente pressões hipotéticas, frentes com presságios propostos e dados documentados.
+- [x] Criar schema, validação referencial, gerador determinístico e índices de consulta.
+- [x] Acrescentar API ESM `getRegionalDossiers`, `getRegionalDossier`, `searchRegionalDossiers`, `getRegionalDossierIndexes` e revisor puro de cobertura.
+- [x] Adicionar testes em Node e **testes Python sobre a curadoria real**, não só sobre fixtures.
+- [x] Documentar resultados e questões em `docs/DOSSIES_REGIONAIS_M3.md`.
+- [ ] Próximo lote: fila prioritária de lacunas de fontes, com dependências entre questões materiais e políticas.
+- [ ] Não transformar povoações não individualizadas em steadings nem atribuir populações, consumo ou perdas territoriais por inferência.

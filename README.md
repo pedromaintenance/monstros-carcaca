@@ -122,3 +122,9 @@ Leia `docs/INFRAESTRUTURA_DOS_ASSENTAMENTOS.md`.
 O atlas acrescenta `regiao:caatinga`, sem inventar assentamentos nem fronteiras precisas. `data/dinamicas_territoriais_alem_sul.json` descreve quatro fatos regionais: pilhagens entre Caatinga e pradarias costeiras, capturas sacrificiais no litoral e nas ilhas, presença minoritária de refugiados de Eldroth em grandes assentamentos ainda não nomeados e ausência de colonização feérica direta no Além Sul.
 
 `data/rotulos_territoriais_carcaca.json` contém quatro **rótulos regionais**, independentes dos 14 rótulos de assentamento. Os dados são publicados em `dist/carcaca/territorial-*.json`; `src/carcaca-territorial.mjs` não permite converter ameaça regional em ataque canônico a Portomonte. Consulte [Dinâmicas Territoriais do Além Sul](docs/DINAMICAS_TERRITORIAIS_ALEM_SUL.md).
+
+## M3 — Ciclo 12: dossiês regionais
+
+O atlas possui `dist/carcaca/regional-dossiers.json`, uma visão consolidada de **quatro regiões com 16 perguntas materiais e políticas**. Os dossiês incluem os registros curados por referência, sem duplicar novas fichas: localidades, assentamentos, criaturas, frentes propostas, fluxos, pressões hipotéticas e vínculos territoriais com origem/destino. **Uma região sem fichas de assentamento não está necessariamente desabitada.**
+
+Os guias autorais estão em `data/guias_dossies_regionais.json`; a consulta é feita por `getRegionalDossier` e `searchRegionalDossiers`; os índices são publicados em `regional-dossier-indexes.json`. Consulte [Dossiês Regionais do M3](docs/DOSSIES_REGIONAIS_M3.md).

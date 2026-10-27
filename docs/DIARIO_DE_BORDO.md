@@ -253,3 +253,19 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 - Todas as quatro dinâmicas continuam com `escala:regional`, `assentamento_alvo_id:null` e `evento_campanha_id:null`; consulta a Portomonte não autoriza inventar saque, ataque ou acolhimento.
 - O rótulo `presenca_minoritaria_refugiada` reflete presença documentada sem assumir acolhimento institucional. Simulação com alvo nominal continua sem confirmar evento de campanha.
 - O Marco M3 permanece em expansão; próximo passo é reunir dossiês de pressão por região e procurar assentamentos concretos na Caatinga em fontes autorais.
+
+## 2026-10-27 · Ciclo 12 — Dossiês regionais de pressão material e política
+
+**Fonte autoral:** `Ambientação - A Carcaça - Visão Geral.txt` para fatos de Caatinga, Costa Sul, Eldroth e foz. Registros de criaturas e frentes da foz vêm de `curadoria/` e conservam suas próprias fontes; não se atribuem falsamente essas sete criaturas à ambientação original.
+
+**Curadoria:** quatro guias, quatro perguntas por região (16 no total). Incluem condições documentadas e lacunas, sem números inventados.
+
+**Composição determinística:** o gerador cruza registros reais: os lugares e assentamentos devem pertencer à região curada; povos são incluídos apenas por associação a assentamentos; facções vinculadas a criaturas não são tratadas como domínio; quatro dinâmicas regionais se refletem em ambos os extremos, com papel `origem` e/ou `destino`, sem duplicação dos dados originais. `pressoes_ecologicas_hipoteticas` e `frentes_propostas` permanecem classes separadas.
+
+**Resultado conferível:** 4 regiões, 16 perguntas; Caatinga 0 assentamentos curados, Eldroth 0, foz 0 (apesar de 7 criaturas, 1 frente e 3 lugares), Costa Sul 3 assentamentos, 5 dependências, 4 fluxos e 4 pressões hipotéticas. Vazios em listas não indicam regiões vazias de vida real.
+
+**Software:** `schemas/guia-dossie-regional.schema.json`, `scripts/gerar_indices_curadoria.py`, `src/carcaca-client.mjs`, `src/carcaca-regional.mjs`. Testes ESM de leitura e não mutação e nova suíte de integração Python que consulta os outputs do gerador.
+
+**Correção durante o ciclo:** um identificador de pergunta da foz continha acento e não passou no schema; foi normalizado para `pergunta:foz-alianca`. Os testes posteriores devem ser conferidos antes do encerramento.
+
+**Continuidade:** filas de lacunas de curadoria sem transformar perguntas em novos fatos ou resultados DW. Documento completo em `docs/DOSSIES_REGIONAIS_M3.md`.
