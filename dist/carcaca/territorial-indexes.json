@@ -1,0 +1,94 @@
+{
+  "by_origem_regiao": {
+    "regiao:caatinga": [
+      "dinamica:nao-ocupacao-direta-alem-sul",
+      "dinamica:pilhagens-caatinga-pradarias"
+    ],
+    "regiao:costa-sul": [
+      "dinamica:ataques-liturgicos-costa-ilhas"
+    ],
+    "regiao:eldroth": [
+      "dinamica:refugiados-eldroth-maiores-assentamentos"
+    ]
+  },
+  "by_destino_regiao": {
+    "regiao:costa-sul": [
+      "dinamica:ataques-liturgicos-costa-ilhas",
+      "dinamica:nao-ocupacao-direta-alem-sul",
+      "dinamica:pilhagens-caatinga-pradarias",
+      "dinamica:refugiados-eldroth-maiores-assentamentos"
+    ]
+  },
+  "by_rotulo_territorial": {
+    "rotulo-territorial:acolhida_minoria_deslocada": [
+      "dinamica:refugiados-eldroth-maiores-assentamentos"
+    ],
+    "rotulo-territorial:ausencia_de_ocupacao_feerica_direta": [
+      "dinamica:nao-ocupacao-direta-alem-sul"
+    ],
+    "rotulo-territorial:fronteira_de_pilhagens": [
+      "dinamica:pilhagens-caatinga-pradarias"
+    ],
+    "rotulo-territorial:liturgia_de_captura": [
+      "dinamica:ataques-liturgicos-costa-ilhas"
+    ]
+  },
+  "by_tipo": {
+    "captura_sacrificial": [
+      "dinamica:ataques-liturgicos-costa-ilhas"
+    ],
+    "configuracao_politica": [
+      "dinamica:nao-ocupacao-direta-alem-sul"
+    ],
+    "deslocamento_forcado_documentado": [
+      "dinamica:refugiados-eldroth-maiores-assentamentos"
+    ],
+    "incursao_de_pilhagem": [
+      "dinamica:pilhagens-caatinga-pradarias"
+    ]
+  },
+  "by_dimensao_potencial": {
+    "abrigo": [
+      "dinamica:refugiados-eldroth-maiores-assentamentos"
+    ],
+    "acesso_a_recursos": [
+      "dinamica:nao-ocupacao-direta-alem-sul"
+    ],
+    "acesso_a_terra": [
+      "dinamica:pilhagens-caatinga-pradarias"
+    ],
+    "agricultura": [
+      "dinamica:pilhagens-caatinga-pradarias"
+    ],
+    "alimentacao": [
+      "dinamica:refugiados-eldroth-maiores-assentamentos"
+    ],
+    "autonomia_local": [
+      "dinamica:nao-ocupacao-direta-alem-sul"
+    ],
+    "continuidade_populacional": [
+      "dinamica:ataques-liturgicos-costa-ilhas",
+      "dinamica:refugiados-eldroth-maiores-assentamentos"
+    ],
+    "defesa": [
+      "dinamica:nao-ocupacao-direta-alem-sul"
+    ],
+    "deslocamentos": [
+      "dinamica:pilhagens-caatinga-pradarias"
+    ],
+    "integracao_comunitaria": [
+      "dinamica:refugiados-eldroth-maiores-assentamentos"
+    ],
+    "mobilidade": [
+      "dinamica:ataques-liturgicos-costa-ilhas"
+    ],
+    "politica": [
+      "dinamica:nao-ocupacao-direta-alem-sul"
+    ],
+    "seguranca": [
+      "dinamica:ataques-liturgicos-costa-ilhas",
+      "dinamica:pilhagens-caatinga-pradarias"
+    ]
+  },
+  "by_assentamento_alvo": {}
+}

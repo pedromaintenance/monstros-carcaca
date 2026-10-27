@@ -15,6 +15,8 @@
   "total_balancos_materiais": 4,
   "total_pressoes_ecologicas": 4,
   "total_perfis_suporte": 3,
+  "total_rotulos_territoriais": 4,
+  "total_dinamicas_territoriais": 4,
   "total_perfis_infraestrutura": 3,
   "total_setores_infraestrutura": 12,
   "arquivos": {
@@ -40,6 +42,9 @@
     "ecological_pressure_indexes": "ecological-pressure-indexes.json",
     "support_profiles": "support-profiles.json",
     "support_indexes": "support-indexes.json",
+    "territorial_labels": "territorial-labels.json",
+    "territorial_dynamics": "territorial-dynamics.json",
+    "territorial_indexes": "territorial-indexes.json",
     "infrastructure_profiles": "infrastructure-profiles.json",
     "infrastructure_indexes": "infrastructure-indexes.json"
   },
