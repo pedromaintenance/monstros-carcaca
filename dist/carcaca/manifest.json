@@ -61,6 +61,7 @@
     "hack_docx_table_indexes": "hack-docx-table-indexes.json",
     "hack_general_movements": "hack-general-movements.json",
     "hack_general_movement_indexes": "hack-general-movement-indexes.json",
+    "hack_core_rules": "hack-core-rules.json",
     "lore_index_indexes": "lore-indexes.json",
     "lore_chronology": "lore-chronology.json",
     "lore_review_notes": "lore-review-notes.json",
