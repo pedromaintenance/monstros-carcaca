@@ -173,6 +173,64 @@ def validar_dependencias_e_exemplos(fontes):
           f"{len(samples)} exemplos de campanha sem efeito canônico.")
 
 
+
+def validar_balancos_e_pressoes(fontes):
+    """Valida fontes, evidência, medidas opcionais e pressões hipotéticas."""
+    b_schema=load("schemas/balanco-material.schema.json")
+    p_schema=load("schemas/pressao-ecologica.schema.json")
+    Draft202012Validator.check_schema(b_schema)
+    Draft202012Validator.check_schema(p_schema)
+    b_check=Draft202012Validator(b_schema)
+    p_check=Draft202012Validator(p_schema)
+    balancos=load("data/balancos_materiais_costa_sul.json")["balancos"]
+    pressoes=load("data/pressoes_ecologicas_costa_sul.json")["pressoes"]
+    deps=load("data/dependencias_materiais_costa_sul.json")["dependencias"]
+    flows=load("data/fluxos_costa_sul.json")["fluxos"]
+    settlements=gather("curadoria/assentamentos")
+    aids={s["id"] for s in settlements}
+    by_dep={d["id"]:d for d in deps}
+    by_fluxo={f["id"]:f for f in flows}
+    unique(balancos,"balancos materiais")
+    unique(pressoes,"pressões ecológicas")
+    medidas=("estoque_inicial","producao","entradas","consumo","saidas","perdas","estoque_final")
+    for b in balancos:
+        errors=list(b_check.iter_errors(b))
+        require(not errors,f"Balanço material com schema inválido {b['id']}: {errors[:1]}")
+        require(b["assentamento_id"] in aids, f"Assentamento de balanço inexistente: {b['id']}")
+        require(b["dependencia_id"] in by_dep,f"Dependência de balanço inexistente: {b['id']}")
+        require(b["fluxo_id"] in by_fluxo,f"Fluxo de balanço inexistente: {b['id']}")
+        dep=by_dep[b["dependencia_id"]]
+        require(dep["assentamento_id"]==b["assentamento_id"], f"Balanço fora da região do processo: {b['id']}")
+        require(dep["fluxo_id"]==b["fluxo_id"], f"Balanço diverge do fluxo material: {b['id']}")
+        require(b["fonte"] in fontes, f"Fonte de balanço desconhecida: {b['id']}")
+        medidas_reais=[b["medidas"][k] for k in medidas if b["medidas"][k]["valor"] is not None]
+        if b["status"]=="nao_quantificado":
+            require(not medidas_reais, f"Registro sem quantificação não pode ter números: {b['id']}")
+        else:
+            require(bool(medidas_reais), f"Balanço revisado sem uma medida: {b['id']}")
+        if b["recurso_id"] is None:
+            require(not medidas_reais, f"Não quantificar bens materiais não identificados: {b['id']}")
+        if b["sazonalidade"]["tipo"] in ("nao_documentada","sazonal_documentada"):
+            require(b["sazonalidade"]["periodos_conhecidos"] is None
+                    and b["sazonalidade"]["janela_duracao"] is None,
+                    f"Não inferir mês ou duração de sazonalidade: {b['id']}")
+    for p in pressoes:
+        errors=list(p_check.iter_errors(p))
+        require(not errors,f"Pressão ecológica com schema inválido {p['id']}: {errors[:1]}")
+        require(p["fonte"] in fontes, f"Fonte de pressão desconhecida: {p['id']}")
+        require(p["assentamento_id"] in aids, f"Assentamento de pressão inexistente: {p['id']}")
+        for did in p["dependencias_ids"]:
+            require(did in by_dep, f"Dependência de pressão inexistente: {did}")
+            require(by_dep[did]["assentamento_id"]==p["assentamento_id"],
+                    f"Pressão não pode presumir relação entre assentamentos: {p['id']}")
+        require(p["estado"]=="risco_hipotetico_nao_ocorrido"
+                and p["efeito_dw_automatico"] is False and p["evento_campanha_id"] is None,
+                f"Pressão não pode modificar cânone ou campanha: {p['id']}")
+    print(f"Balanços e pressões validados: {len(balancos)} perfis com "
+          f"{sum(1 for b in balancos for m in b['medidas'].values() if m['valor'] is not None)} medições, "
+          f"{len(pressoes)} riscos hipotéticos.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -255,6 +313,7 @@ def main():
 
     validate_ecossistema(fontes, rids, lids, lugares)
     validar_dependencias_e_exemplos(fontes)
+    validar_balancos_e_pressoes(fontes)
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
