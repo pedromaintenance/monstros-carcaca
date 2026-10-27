@@ -28,6 +28,23 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   async function getFactions(){return byKey("factions");}
   async function getFronts(){return byKey("fronts");}
   async function getSettlements(){return byKey("settlements");}
+  async function getSettlementLabels(){return byKey("settlement_labels");}
+  async function getSettlementIndexes(){return byKey("settlement_indexes");}
+  async function getPeoples(){return byKey("peoples");}
+  async function getFlows(){return byKey("flows");}
+  async function getSettlement(id){
+    if(typeof id!=="string"||!id.startsWith("assentamento:"))return null;
+    return (await getSettlements()).find(item=>item.id===id)??null;
+  }
+  async function searchSettlements({regiaoId,rotuloId,povoId,natureza}={}){
+    const all=await getSettlements();
+    return all.filter(item=>
+      (!regiaoId||item.regiao_id===regiaoId)&&
+      (!rotuloId||item.rotulos_carcaca.some(x=>x.id===rotuloId))&&
+      (!povoId||item.habitantes.some(x=>x.povo_id===povoId))&&
+      (!natureza||item.natureza===natureza)
+    );
+  }
   async function getTypes(){return byKey("types");}
   async function get(id) {
     if(typeof id!=="string"||!id.startsWith("carcaca:criatura:"))return null;
@@ -54,5 +71,6 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
     ).slice(offset,offset+limit);
   }
   return {getManifest,getCatalog,getIndexes,getRegions,getPlaces,getFactions,
-          getFronts,getSettlements,getTypes,get,search};
+          getFronts,getSettlements,getSettlementLabels,getSettlementIndexes,
+          getPeoples,getFlows,getSettlement,searchSettlements,getTypes,get,search};
 }
