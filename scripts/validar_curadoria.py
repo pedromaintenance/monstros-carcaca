@@ -1060,7 +1060,7 @@ def validar_cacador_integral():
                 m["estado"]=="transcricao_integral_sem_revisao_mecanica" and
                 m["texto_integral_conferido"] is True and m["aplicacao_canonica"] is False,
                 "Transcrição não deve modificar cânone ou aplicar movimento.")
-        require(m["texto_original"]=="\\n".join(p["texto"] for p in m["partes"]),
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
                 "Texto do Caçador perdeu trecho original.")
         require(m["opcoes"]==[
             {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
