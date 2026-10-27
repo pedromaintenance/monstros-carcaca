@@ -971,7 +971,7 @@ def validar_barbaro_integral():
                 m["texto_integral_conferido"] is True and
                 m["aplicacao_canonica"] is False,
                 "Movimento do Bárbaro não pode alterar estado canônico.")
-        require(m["texto_original"]=="\\n".join(p["texto"] for p in m["partes"]),
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
                 "Texto original não corresponde aos parágrafos de origem.")
         require(m["opcoes"]==[
             {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
