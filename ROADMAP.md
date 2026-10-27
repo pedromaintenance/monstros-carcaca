@@ -175,3 +175,10 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [ ] Revisitar o modelo com o autor antes de transformar possíveis crises em histórias canônicas.
 
 **Resultado:** contrato autoral separado de `dist/catalog.json` e de saves de jogos. A programação continua por lotes auditáveis.
+
+### Validação e publicação do ciclo 7 — conferidas
+
+- [x] [GitHub Actions #40431958511](https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40431958511): validação de referências/schemas, testes Node, geração e publicação concluídos com sucesso.
+- [x] `dist/carcaca/manifest.json`: **5 dependências materiais, 7 criaturas e 3 assentamentos/redes**; permanecem quatro cenários hipotéticos.
+- [x] Índice `by_assentamento` aponta 3 relações de Portomonte; `by_dependencia_predecessora` aponta a lavoura como dependente da purificação.
+- [x] O contrato de evento de campanha fica fora de `dist/carcaca/`; exemplos editoriais sem eventos não são estado canônico.

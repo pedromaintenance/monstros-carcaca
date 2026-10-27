@@ -148,3 +148,11 @@ Snapshot publicado: `dist/carcaca/manifest.json` indica 4 criaturas, 3 regiões,
 **Limitações intencionais:** desconhecidos permanecem nulos ou descritos como lacunas; nenhuma inferência sobre calendário, produção/consumo quantitativos, populações ou dietas. A campanha pode relatar um fato sem que ele altere a referência coletiva.
 
 **Arquivos de maior interesse:** `docs/REDE_MATERIAL_E_ESTADO_DE_CAMPANHA.md`, `dist/carcaca/material-dependencies.json` e `src/carcaca-campaign-state.mjs`. Testes de Actions serão registrados após conferência do snapshot gerado.
+
+### Conferência de distribuição — ciclo 7
+
+- Workflow verificado: https://github.com/pedromaintenance/monstros-carcaca/actions/runs/40431958511, resultado **success** em todas as quatro etapas principais.
+- Os JSON publicados em `dist/carcaca/` confirmam 5 dependências e índices separados (`by_assentamento`, `by_fluxo`, `by_tipo`, `by_dependencia_predecessora`).
+- O grafo preserva: purificação → lavoura em Portomonte; comércio e viagens insulares **não foram interligados artificialmente**.
+- Registros totais: 7 criaturas, 3 conjuntos de assentamento, 5 dependências, 4 cenários; versões de campanha de exemplo continuam sem eventos.
+- A biblioteca de estado local não grava arquivos nem altera fatos históricos: eventos só são anexados à nova cópia quando `mestre_confirmou=true` é fornecido explicitamente. Esse sinalizador não autentica a identidade do mestre; o jogo consumidor deverá definir sua autorização.
