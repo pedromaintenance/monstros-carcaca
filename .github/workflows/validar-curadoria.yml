@@ -28,6 +28,8 @@ on:
       - 'scripts/validar_curadoria.py'
       - 'scripts/gerar_indices_curadoria.py'
       - 'scripts/hack_movimentos_gerais.py'
+      - 'scripts/hack_movimentos_personagem.py'
+      - 'scripts/extrair_movimentos_personagem_docx.py'
       - 'src/**'
       - 'tests/**'
       - '.github/workflows/validar-curadoria.yml'
@@ -59,6 +61,8 @@ on:
       - 'scripts/validar_curadoria.py'
       - 'scripts/gerar_indices_curadoria.py'
       - 'scripts/hack_movimentos_gerais.py'
+      - 'scripts/hack_movimentos_personagem.py'
+      - 'scripts/extrair_movimentos_personagem_docx.py'
       - 'src/**'
       - 'tests/**'
   workflow_dispatch:
