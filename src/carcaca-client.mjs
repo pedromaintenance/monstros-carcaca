@@ -44,6 +44,22 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (!marcador||x.marcador_original===marcador)&&
       (comOpcoes===undefined||(x.opcoes.length>0)===comOpcoes));
   }
+  async function getGeneralMovements(){return byKey("hack_general_movements");}
+  async function getGeneralMovementIndexes(){return byKey("hack_general_movement_indexes");}
+  async function getGeneralMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-geral:docx-"))return null;
+    return (await getGeneralMovements()).find(x=>x.id===id)??null;
+  }
+  async function searchGeneralMovements({categoria,quadroId,titulo,query,faixa,comGatilho}={}){
+    const norm=x=>String(x??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return (await getGeneralMovements()).filter(m=>
+      (!categoria||m.categoria===categoria)&&
+      (!quadroId||m.quadro_id===quadroId)&&
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (!faixa||m.marcadores_resultado_literais.some(f=>f.faixa===faixa))&&
+      (comGatilho===undefined||(m.gatilhos_literais.length>0)===comGatilho));
+  }
   async function getDocxTables(){return byKey("hack_docx_tables");}
   async function getDocxTableIndexes(){return byKey("hack_docx_table_indexes");}
   async function searchDocxTables({tipo,titulo}={}){
@@ -258,6 +274,7 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getSelectedMovements,getSelectedMovementIndexes,searchSelectedMovements,
           getCompletePilotMovements,getCompletePilotMovementIndexes,searchCompletePilotMovements,
           getDocxTables,getDocxTableIndexes,searchDocxTables,
+          getGeneralMovements,getGeneralMovement,getGeneralMovementIndexes,searchGeneralMovements,
           getLoreAtlasLinks,getLoreAtlasLinkIndexes,searchLoreAtlasLinks,
           getLoreEntity,searchLore,
           getRegionalDossiers,getRegionalDossier,getRegionalDossierIndexes,
