@@ -1,0 +1,425 @@
+{
+  "by_titulo": {
+    "A VISÃO COBRA SEU PREÇO": [
+      "movimento-classe:paragrafo-2086"
+    ],
+    "APOTEOSE": [
+      "movimento-classe:paragrafo-2067"
+    ],
+    "ARMA RÚNICA": [
+      "movimento-classe:paragrafo-2090"
+    ],
+    "COMUNHÃO": [
+      "movimento-classe:paragrafo-2062"
+    ],
+    "CONHECIMENTO DAS ERAS": [
+      "movimento-classe:paragrafo-2076"
+    ],
+    "CONVOCAÇÃO ÀS PRESSAS": [
+      "movimento-classe:paragrafo-2121"
+    ],
+    "CÍRCULO DE CONVOCAÇÃO": [
+      "movimento-classe:paragrafo-2112"
+    ],
+    "EIDOLON": [
+      "movimento-classe:paragrafo-2126"
+    ],
+    "EMPRESTE SEU CORPO": [
+      "movimento-classe:paragrafo-2103"
+    ],
+    "ESPÍRITO ERRANTE": [
+      "movimento-classe:paragrafo-2105"
+    ],
+    "ESPÍRITO GUIA": [
+      "movimento-classe:paragrafo-2104"
+    ],
+    "ESPÍRITOS ESTÃO POR TODA PARTE": [
+      "movimento-classe:paragrafo-2102"
+    ],
+    "EU JÁ VI ESTA CENA": [
+      "movimento-classe:paragrafo-2087"
+    ],
+    "EXORCISMO": [
+      "movimento-classe:paragrafo-2063"
+    ],
+    "INTERCESSÃO DIVINA": [
+      "movimento-classe:paragrafo-2066"
+    ],
+    "MANIFESTAÇÃO ESPIRITUAL": [
+      "movimento-classe:paragrafo-2106"
+    ],
+    "MILAGRES": [
+      "movimento-classe:paragrafo-2057"
+    ],
+    "NOME VERDADEIRO": [
+      "movimento-classe:paragrafo-2119"
+    ],
+    "NÃO ERA ISSO QUE EU CHAMEI": [
+      "movimento-classe:paragrafo-2117"
+    ],
+    "NÃO FOI ASSIM QUE EU VI": [
+      "movimento-classe:paragrafo-2088"
+    ],
+    "NÃO VÁ SOZINHO": [
+      "movimento-classe:paragrafo-2074"
+    ],
+    "O DESTINO NÃO GOSTA DE SER ENGANADO": [
+      "movimento-classe:paragrafo-2085"
+    ],
+    "PALAVRA CONTRA O MAL": [
+      "movimento-classe:paragrafo-2065"
+    ],
+    "PELE ESCRITA": [
+      "movimento-classe:paragrafo-2100"
+    ],
+    "PRECE DE ORIENTAÇÃO": [
+      "movimento-classe:paragrafo-2068"
+    ],
+    "PRESERVAR A VIDA": [
+      "movimento-classe:paragrafo-2069"
+    ],
+    "PRESSÁGIO": [
+      "movimento-classe:paragrafo-2084"
+    ],
+    "PSICOPOMPO": [
+      "movimento-classe:paragrafo-2111"
+    ],
+    "RUNA": [
+      "movimento-classe:paragrafo-2089"
+    ],
+    "RUNA DE APRISIONAMENTO": [
+      "movimento-classe:paragrafo-2101"
+    ],
+    "RUNA VIVA": [
+      "movimento-classe:paragrafo-2099"
+    ],
+    "RUNAS ENTRELAÇADAS": [
+      "movimento-classe:paragrafo-2092"
+    ],
+    "RUNAS PERDIDAS": [
+      "movimento-classe:paragrafo-2091"
+    ],
+    "SACERDOTE": [
+      "movimento-classe:paragrafo-2056"
+    ],
+    "SANTUÁRIO": [
+      "movimento-classe:paragrafo-2064"
+    ],
+    "VISÕES DO PASSADO": [
+      "movimento-classe:paragrafo-2077"
+    ],
+    "ÂNCORA NO MUNDO": [
+      "movimento-classe:paragrafo-2120"
+    ]
+  },
+  "by_paragrafo": {
+    "2056": [
+      "movimento-classe:paragrafo-2056"
+    ],
+    "2057": [
+      "movimento-classe:paragrafo-2057"
+    ],
+    "2062": [
+      "movimento-classe:paragrafo-2062"
+    ],
+    "2063": [
+      "movimento-classe:paragrafo-2063"
+    ],
+    "2064": [
+      "movimento-classe:paragrafo-2064"
+    ],
+    "2065": [
+      "movimento-classe:paragrafo-2065"
+    ],
+    "2066": [
+      "movimento-classe:paragrafo-2066"
+    ],
+    "2067": [
+      "movimento-classe:paragrafo-2067"
+    ],
+    "2068": [
+      "movimento-classe:paragrafo-2068"
+    ],
+    "2069": [
+      "movimento-classe:paragrafo-2069"
+    ],
+    "2074": [
+      "movimento-classe:paragrafo-2074"
+    ],
+    "2076": [
+      "movimento-classe:paragrafo-2076"
+    ],
+    "2077": [
+      "movimento-classe:paragrafo-2077"
+    ],
+    "2084": [
+      "movimento-classe:paragrafo-2084"
+    ],
+    "2085": [
+      "movimento-classe:paragrafo-2085"
+    ],
+    "2086": [
+      "movimento-classe:paragrafo-2086"
+    ],
+    "2087": [
+      "movimento-classe:paragrafo-2087"
+    ],
+    "2088": [
+      "movimento-classe:paragrafo-2088"
+    ],
+    "2089": [
+      "movimento-classe:paragrafo-2089"
+    ],
+    "2090": [
+      "movimento-classe:paragrafo-2090"
+    ],
+    "2091": [
+      "movimento-classe:paragrafo-2091"
+    ],
+    "2092": [
+      "movimento-classe:paragrafo-2092"
+    ],
+    "2099": [
+      "movimento-classe:paragrafo-2099"
+    ],
+    "2100": [
+      "movimento-classe:paragrafo-2100"
+    ],
+    "2101": [
+      "movimento-classe:paragrafo-2101"
+    ],
+    "2102": [
+      "movimento-classe:paragrafo-2102"
+    ],
+    "2103": [
+      "movimento-classe:paragrafo-2103"
+    ],
+    "2104": [
+      "movimento-classe:paragrafo-2104"
+    ],
+    "2105": [
+      "movimento-classe:paragrafo-2105"
+    ],
+    "2106": [
+      "movimento-classe:paragrafo-2106"
+    ],
+    "2111": [
+      "movimento-classe:paragrafo-2111"
+    ],
+    "2112": [
+      "movimento-classe:paragrafo-2112"
+    ],
+    "2117": [
+      "movimento-classe:paragrafo-2117"
+    ],
+    "2119": [
+      "movimento-classe:paragrafo-2119"
+    ],
+    "2120": [
+      "movimento-classe:paragrafo-2120"
+    ],
+    "2121": [
+      "movimento-classe:paragrafo-2121"
+    ],
+    "2126": [
+      "movimento-classe:paragrafo-2126"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-2056",
+      "movimento-classe:paragrafo-2063",
+      "movimento-classe:paragrafo-2064",
+      "movimento-classe:paragrafo-2065",
+      "movimento-classe:paragrafo-2069",
+      "movimento-classe:paragrafo-2074",
+      "movimento-classe:paragrafo-2076",
+      "movimento-classe:paragrafo-2077",
+      "movimento-classe:paragrafo-2084",
+      "movimento-classe:paragrafo-2085",
+      "movimento-classe:paragrafo-2086",
+      "movimento-classe:paragrafo-2089",
+      "movimento-classe:paragrafo-2090",
+      "movimento-classe:paragrafo-2102",
+      "movimento-classe:paragrafo-2103",
+      "movimento-classe:paragrafo-2104",
+      "movimento-classe:paragrafo-2111",
+      "movimento-classe:paragrafo-2112"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-2057",
+      "movimento-classe:paragrafo-2062",
+      "movimento-classe:paragrafo-2066",
+      "movimento-classe:paragrafo-2067",
+      "movimento-classe:paragrafo-2068",
+      "movimento-classe:paragrafo-2087",
+      "movimento-classe:paragrafo-2088",
+      "movimento-classe:paragrafo-2091",
+      "movimento-classe:paragrafo-2092",
+      "movimento-classe:paragrafo-2099",
+      "movimento-classe:paragrafo-2100",
+      "movimento-classe:paragrafo-2101",
+      "movimento-classe:paragrafo-2105",
+      "movimento-classe:paragrafo-2106",
+      "movimento-classe:paragrafo-2117",
+      "movimento-classe:paragrafo-2119",
+      "movimento-classe:paragrafo-2120",
+      "movimento-classe:paragrafo-2121",
+      "movimento-classe:paragrafo-2126"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-2056",
+      "movimento-classe:paragrafo-2062",
+      "movimento-classe:paragrafo-2063",
+      "movimento-classe:paragrafo-2064",
+      "movimento-classe:paragrafo-2065",
+      "movimento-classe:paragrafo-2066",
+      "movimento-classe:paragrafo-2067",
+      "movimento-classe:paragrafo-2068",
+      "movimento-classe:paragrafo-2074",
+      "movimento-classe:paragrafo-2076",
+      "movimento-classe:paragrafo-2084",
+      "movimento-classe:paragrafo-2085",
+      "movimento-classe:paragrafo-2086",
+      "movimento-classe:paragrafo-2087",
+      "movimento-classe:paragrafo-2088",
+      "movimento-classe:paragrafo-2089",
+      "movimento-classe:paragrafo-2090",
+      "movimento-classe:paragrafo-2091",
+      "movimento-classe:paragrafo-2099",
+      "movimento-classe:paragrafo-2100",
+      "movimento-classe:paragrafo-2101",
+      "movimento-classe:paragrafo-2102",
+      "movimento-classe:paragrafo-2103",
+      "movimento-classe:paragrafo-2104",
+      "movimento-classe:paragrafo-2105",
+      "movimento-classe:paragrafo-2111",
+      "movimento-classe:paragrafo-2117",
+      "movimento-classe:paragrafo-2119",
+      "movimento-classe:paragrafo-2120",
+      "movimento-classe:paragrafo-2126"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-2057",
+      "movimento-classe:paragrafo-2069",
+      "movimento-classe:paragrafo-2077",
+      "movimento-classe:paragrafo-2092",
+      "movimento-classe:paragrafo-2106",
+      "movimento-classe:paragrafo-2112",
+      "movimento-classe:paragrafo-2121"
+    ]
+  },
+  "by_requisito_tipo": {
+    "movimento_exato": [
+      "movimento-classe:paragrafo-2057",
+      "movimento-classe:paragrafo-2062",
+      "movimento-classe:paragrafo-2066",
+      "movimento-classe:paragrafo-2067",
+      "movimento-classe:paragrafo-2068",
+      "movimento-classe:paragrafo-2087",
+      "movimento-classe:paragrafo-2088",
+      "movimento-classe:paragrafo-2091",
+      "movimento-classe:paragrafo-2092",
+      "movimento-classe:paragrafo-2099",
+      "movimento-classe:paragrafo-2100",
+      "movimento-classe:paragrafo-2101",
+      "movimento-classe:paragrafo-2105",
+      "movimento-classe:paragrafo-2106",
+      "movimento-classe:paragrafo-2117",
+      "movimento-classe:paragrafo-2119",
+      "movimento-classe:paragrafo-2120",
+      "movimento-classe:paragrafo-2121",
+      "movimento-classe:paragrafo-2126"
+    ],
+    "nenhum": [
+      "movimento-classe:paragrafo-2056",
+      "movimento-classe:paragrafo-2063",
+      "movimento-classe:paragrafo-2064",
+      "movimento-classe:paragrafo-2065",
+      "movimento-classe:paragrafo-2069",
+      "movimento-classe:paragrafo-2074",
+      "movimento-classe:paragrafo-2076",
+      "movimento-classe:paragrafo-2077",
+      "movimento-classe:paragrafo-2084",
+      "movimento-classe:paragrafo-2085",
+      "movimento-classe:paragrafo-2086",
+      "movimento-classe:paragrafo-2089",
+      "movimento-classe:paragrafo-2090",
+      "movimento-classe:paragrafo-2102",
+      "movimento-classe:paragrafo-2103",
+      "movimento-classe:paragrafo-2104",
+      "movimento-classe:paragrafo-2111",
+      "movimento-classe:paragrafo-2112"
+    ]
+  },
+  "by_requisito_id": {
+    "movimento-classe:paragrafo-2056": [
+      "movimento-classe:paragrafo-2057",
+      "movimento-classe:paragrafo-2062",
+      "movimento-classe:paragrafo-2066",
+      "movimento-classe:paragrafo-2067",
+      "movimento-classe:paragrafo-2068"
+    ],
+    "movimento-classe:paragrafo-2084": [
+      "movimento-classe:paragrafo-2087",
+      "movimento-classe:paragrafo-2088"
+    ],
+    "movimento-classe:paragrafo-2089": [
+      "movimento-classe:paragrafo-2091",
+      "movimento-classe:paragrafo-2092",
+      "movimento-classe:paragrafo-2099",
+      "movimento-classe:paragrafo-2101"
+    ],
+    "movimento-classe:paragrafo-2099": [
+      "movimento-classe:paragrafo-2100"
+    ],
+    "movimento-classe:paragrafo-2102": [
+      "movimento-classe:paragrafo-2105"
+    ],
+    "movimento-classe:paragrafo-2103": [
+      "movimento-classe:paragrafo-2106"
+    ],
+    "movimento-classe:paragrafo-2112": [
+      "movimento-classe:paragrafo-2117",
+      "movimento-classe:paragrafo-2119",
+      "movimento-classe:paragrafo-2120",
+      "movimento-classe:paragrafo-2121",
+      "movimento-classe:paragrafo-2126"
+    ]
+  },
+  "by_raiz_dependencia": {
+    "movimento-classe:paragrafo-2056": [
+      "movimento-classe:paragrafo-2057",
+      "movimento-classe:paragrafo-2062",
+      "movimento-classe:paragrafo-2066",
+      "movimento-classe:paragrafo-2067",
+      "movimento-classe:paragrafo-2068"
+    ],
+    "movimento-classe:paragrafo-2084": [
+      "movimento-classe:paragrafo-2087",
+      "movimento-classe:paragrafo-2088"
+    ],
+    "movimento-classe:paragrafo-2089": [
+      "movimento-classe:paragrafo-2091",
+      "movimento-classe:paragrafo-2092",
+      "movimento-classe:paragrafo-2099",
+      "movimento-classe:paragrafo-2100",
+      "movimento-classe:paragrafo-2101"
+    ],
+    "movimento-classe:paragrafo-2102": [
+      "movimento-classe:paragrafo-2105"
+    ],
+    "movimento-classe:paragrafo-2103": [
+      "movimento-classe:paragrafo-2106"
+    ],
+    "movimento-classe:paragrafo-2112": [
+      "movimento-classe:paragrafo-2117",
+      "movimento-classe:paragrafo-2119",
+      "movimento-classe:paragrafo-2120",
+      "movimento-classe:paragrafo-2121",
+      "movimento-classe:paragrafo-2126"
+    ]
+  }
+}

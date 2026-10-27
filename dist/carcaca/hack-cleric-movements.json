@@ -1,0 +1,1233 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-2056",
+    "paragrafo_docx": 2056,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "SACERDOTE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2056,
+        "tipo": "corpo",
+        "texto": "Escolha uma divindade e um domínio real de sua autoridade. Quando conduzir um rito para pedir orientação, proteção ou reconhecimento dentro desse domínio, role+SAB.\n10+: o sagrado responde claramente.\n7–9: responde, mas exige oferenda, dever, sacrifício ou interpretação difícil."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha uma divindade e um domínio real de sua autoridade. Quando conduzir um rito para pedir orientação, proteção ou reconhecimento dentro desse domínio, role+SAB.\n10+: o sagrado responde claramente.\n7–9: responde, mas exige oferenda, dever, sacrifício ou interpretação difícil.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2056"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2057",
+    "paragrafo_docx": 2057,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "MILAGRES",
+    "requisito_literal": "Sacerdote",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2056",
+      "titulo_requerido": "SACERDOTE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2057,
+        "tipo": "corpo",
+        "texto": "Defina três formas pelas quais sua divindade costuma agir no mundo. Pequenas manifestações coerentes podem ocorrer sem rolagem. Quando pedir uma intervenção poderosa, impossível ou perigosa, diga exatamente o que pede e role+SAB.\n10+: escolha 2.\n7–9: escolha 1."
+      },
+      {
+        "paragrafo_docx": 2058,
+        "tipo": "opcao",
+        "texto": "acontece como pedido;"
+      },
+      {
+        "paragrafo_docx": 2059,
+        "tipo": "opcao",
+        "texto": "acontece imediatamente;"
+      },
+      {
+        "paragrafo_docx": 2060,
+        "tipo": "opcao",
+        "texto": "não exige um preço;"
+      },
+      {
+        "paragrafo_docx": 2061,
+        "tipo": "opcao",
+        "texto": "não chama atenção de outra potência."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2058,
+        "texto": "acontece como pedido;"
+      },
+      {
+        "paragrafo_docx": 2059,
+        "texto": "acontece imediatamente;"
+      },
+      {
+        "paragrafo_docx": 2060,
+        "texto": "não exige um preço;"
+      },
+      {
+        "paragrafo_docx": 2061,
+        "texto": "não chama atenção de outra potência."
+      }
+    ],
+    "texto_original": "Defina três formas pelas quais sua divindade costuma agir no mundo. Pequenas manifestações coerentes podem ocorrer sem rolagem. Quando pedir uma intervenção poderosa, impossível ou perigosa, diga exatamente o que pede e role+SAB.\n10+: escolha 2.\n7–9: escolha 1.\nacontece como pedido;\nacontece imediatamente;\nnão exige um preço;\nnão chama atenção de outra potência.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2057"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2062",
+    "paragrafo_docx": 2062,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "COMUNHÃO",
+    "requisito_literal": "Sacerdote",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2056",
+      "titulo_requerido": "SACERDOTE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2062,
+        "tipo": "corpo",
+        "texto": "Quando passar tempo em oração, ritual ou contemplação num local apropriado, faça ao Mestre uma pergunta sobre os interesses de sua divindade naquela situação. A resposta pode vir como visão, sinal, escritura, sonho ou silêncio significativo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando passar tempo em oração, ritual ou contemplação num local apropriado, faça ao Mestre uma pergunta sobre os interesses de sua divindade naquela situação. A resposta pode vir como visão, sinal, escritura, sonho ou silêncio significativo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2062"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2063",
+    "paragrafo_docx": 2063,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "EXORCISMO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2063,
+        "tipo": "corpo",
+        "texto": "Quando confrontar uma entidade que possua, assombre ou esteja presa a alguém ou alguma coisa, descubra primeiro seu nome, desejo ou vínculo. Quando usar isso num rito de expulsão, role+SAB.\n10+: expulse-a.\n7–9: expulse-a, mas escolha: ela leva algo; deixa uma marca; exige preço; ou poderá retornar sob uma condição definida pelo Mestre."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando confrontar uma entidade que possua, assombre ou esteja presa a alguém ou alguma coisa, descubra primeiro seu nome, desejo ou vínculo. Quando usar isso num rito de expulsão, role+SAB.\n10+: expulse-a.\n7–9: expulse-a, mas escolha: ela leva algo; deixa uma marca; exige preço; ou poderá retornar sob uma condição definida pelo Mestre.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2063"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2064",
+    "paragrafo_docx": 2064,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "SANTUÁRIO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2064,
+        "tipo": "corpo",
+        "texto": "Quando consagrar durante algumas horas um lugar, declare aquilo que não será bem-vindo ali. Enquanto a consagração permanecer, você percebe quando algo dessa natureza atravessa seus limites e aquilo não poderá agir sem revelar sua presença."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando consagrar durante algumas horas um lugar, declare aquilo que não será bem-vindo ali. Enquanto a consagração permanecer, você percebe quando algo dessa natureza atravessa seus limites e aquilo não poderá agir sem revelar sua presença.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2064"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2065",
+    "paragrafo_docx": 2065,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "PALAVRA CONTRA O MAL",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2065,
+        "tipo": "corpo",
+        "texto": "Quando ordenar a mortos-vivos ou demônios que recuem invocando autoridade divina, role+CAR.\n10+: criaturas inferiores fogem ou se submetem; as poderosas hesitam.\n7–9: elas recuam, mas algo em sua autoridade chama atenção do poder que as sustenta."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando ordenar a mortos-vivos ou demônios que recuem invocando autoridade divina, role+CAR.\n10+: criaturas inferiores fogem ou se submetem; as poderosas hesitam.\n7–9: elas recuam, mas algo em sua autoridade chama atenção do poder que as sustenta.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2065"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2066",
+    "paragrafo_docx": 2066,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "INTERCESSÃO DIVINA",
+    "requisito_literal": "Sacerdote",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2056",
+      "titulo_requerido": "SACERDOTE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2066,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando você ou alguém na mesma cena estiver prestes a sofrer uma consequência imediata e aquilo realmente disser respeito à autoridade de sua divindade, invoque-a pelo nome, título ou rito apropriado.\nA consequência não acontece como anunciada. O Mestre dirá como a divindade interveio e qual manifestação inequívoca de sua presença ficou na cena. A intervenção pode criar uma nova situação, obrigação ou atenção sobrenatural, mas não pode simplesmente reaplicar imediatamente a mesma consequência por outro nome."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando você ou alguém na mesma cena estiver prestes a sofrer uma consequência imediata e aquilo realmente disser respeito à autoridade de sua divindade, invoque-a pelo nome, título ou rito apropriado.\nA consequência não acontece como anunciada. O Mestre dirá como a divindade interveio e qual manifestação inequívoca de sua presença ficou na cena. A intervenção pode criar uma nova situação, obrigação ou atenção sobrenatural, mas não pode simplesmente reaplicar imediatamente a mesma consequência por outro nome.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2066"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2067",
+    "paragrafo_docx": 2067,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "APOTEOSE",
+    "requisito_literal": "Sacerdote",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2056",
+      "titulo_requerido": "SACERDOTE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2067,
+        "tipo": "corpo",
+        "texto": "Quando escolher este Movimento, realize um rito apropriado à sua divindade e escolha uma característica física permanentemente associada a ela. Descreva como seu corpo muda. A característica concede uma capacidade concreta compatível com aquilo que ela realmente é: asas podem sustentar voo, guelras permitem respirar debaixo d’água, um terceiro olho pode perceber espíritos, pele pétrea pode resistir àquilo que pedra resistiria. Ela não concede por si só uma prática mágica inteira."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando escolher este Movimento, realize um rito apropriado à sua divindade e escolha uma característica física permanentemente associada a ela. Descreva como seu corpo muda. A característica concede uma capacidade concreta compatível com aquilo que ela realmente é: asas podem sustentar voo, guelras permitem respirar debaixo d’água, um terceiro olho pode perceber espíritos, pele pétrea pode resistir àquilo que pedra resistiria. Ela não concede por si só uma prática mágica inteira.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2067"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2068",
+    "paragrafo_docx": 2068,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "PRECE DE ORIENTAÇÃO",
+    "requisito_literal": "Sacerdote",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2056",
+      "titulo_requerido": "SACERDOTE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2068,
+        "tipo": "corpo",
+        "texto": "Quando sacrificar voluntariamente algo de valor real para você segundo os costumes de sua divindade e perguntar o que ela deseja que faça, o Mestre responderá claramente. Na primeira vez em cada sessão que seguir essa orientação apesar de um custo ou risco significativo, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando sacrificar voluntariamente algo de valor real para você segundo os costumes de sua divindade e perguntar o que ela deseja que faça, o Mestre responderá claramente. Na primeira vez em cada sessão que seguir essa orientação apesar de um custo ou risco significativo, marque 1 XP.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2068"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2069",
+    "paragrafo_docx": 2069,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "PRESERVAR A VIDA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2069,
+        "tipo": "corpo",
+        "texto": "Quando invocar uma potência, espírito ou princípio cuja natureza realmente inclua vida, cura, comunidade ou renovação diante de vários feridos, role+SAB.\n10+: distribua 2d6 PV como desejar entre criaturas vivas próximas.\n7–9: distribua 1d6 PV e escolha 1:"
+      },
+      {
+        "paragrafo_docx": 2070,
+        "tipo": "opcao",
+        "texto": "parte da exaustão passa para você;"
+      },
+      {
+        "paragrafo_docx": 2071,
+        "tipo": "opcao",
+        "texto": "alguma força ligada à morte percebe a intervenção;"
+      },
+      {
+        "paragrafo_docx": 2072,
+        "tipo": "opcao",
+        "texto": "a cura deixa em todos os beneficiados uma marca sobrenatural que outra potência ligada à vida ou à morte reconhecerá imediatamente."
+      },
+      {
+        "paragrafo_docx": 2073,
+        "tipo": "continuacao",
+        "texto": "Você não pode elevar alguém acima da metade de seus PV máximos através deste Movimento."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2070,
+        "texto": "parte da exaustão passa para você;"
+      },
+      {
+        "paragrafo_docx": 2071,
+        "texto": "alguma força ligada à morte percebe a intervenção;"
+      },
+      {
+        "paragrafo_docx": 2072,
+        "texto": "a cura deixa em todos os beneficiados uma marca sobrenatural que outra potência ligada à vida ou à morte reconhecerá imediatamente."
+      }
+    ],
+    "texto_original": "Quando invocar uma potência, espírito ou princípio cuja natureza realmente inclua vida, cura, comunidade ou renovação diante de vários feridos, role+SAB.\n10+: distribua 2d6 PV como desejar entre criaturas vivas próximas.\n7–9: distribua 1d6 PV e escolha 1:\nparte da exaustão passa para você;\nalguma força ligada à morte percebe a intervenção;\na cura deixa em todos os beneficiados uma marca sobrenatural que outra potência ligada à vida ou à morte reconhecerá imediatamente.\nVocê não pode elevar alguém acima da metade de seus PV máximos através deste Movimento.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2069"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2074",
+    "paragrafo_docx": 2074,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "NÃO VÁ SOZINHO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2074,
+        "tipo": "corpo",
+        "texto": "Quando alguém realizar Último Suspiro em sua presença, você pode acompanhá-lo espiritualmente até o limiar.\nVocê pode perceber e falar com aquilo que o espera ali e oferecer um sacrifício concreto seu em lugar de parte do preço que seria cobrado daquela pessoa. A Morte — ou aquilo que ocupe esse papel — dirá se aceita, recusa ou exige algo diferente. O Último Suspiro ainda é realizado normalmente, mas aquilo que você acordar ali é real e vinculante."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém realizar Último Suspiro em sua presença, você pode acompanhá-lo espiritualmente até o limiar.\nVocê pode perceber e falar com aquilo que o espera ali e oferecer um sacrifício concreto seu em lugar de parte do preço que seria cobrado daquela pessoa. A Morte — ou aquilo que ocupe esse papel — dirá se aceita, recusa ou exige algo diferente. O Último Suspiro ainda é realizado normalmente, mas aquilo que você acordar ali é real e vinculante.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2074"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2076",
+    "paragrafo_docx": 2076,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "CONHECIMENTO DAS ERAS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2076,
+        "tipo": "corpo",
+        "texto": "Quando enfrentar uma tarefa que algum sacerdote, ancestral, santo, espírito ou antigo membro de sua tradição realmente poderia ter dominado, pergunte: “Quem entre aqueles que vieram antes sabia fazer isto?” \nO Mestre lhe dirá quem e uma coisa sobre aquela tarefa que somente alguém com sua experiência saberia. \nEnquanto realizar aquela tarefa, você possui todo treinamento, linguagem técnica e conhecimento prático que essa pessoa possuía para executá-la e receba 1 Preparo para aplicar aquilo que herdou. Ferramentas, materiais e condições ainda importam. Sob perigo, use os Movimentos apropriados. O Preparo recebido só pode ser gasto naquela tarefa e se perde quando ela termina."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando enfrentar uma tarefa que algum sacerdote, ancestral, santo, espírito ou antigo membro de sua tradição realmente poderia ter dominado, pergunte: “Quem entre aqueles que vieram antes sabia fazer isto?” \nO Mestre lhe dirá quem e uma coisa sobre aquela tarefa que somente alguém com sua experiência saberia. \nEnquanto realizar aquela tarefa, você possui todo treinamento, linguagem técnica e conhecimento prático que essa pessoa possuía para executá-la e receba 1 Preparo para aplicar aquilo que herdou. Ferramentas, materiais e condições ainda importam. Sob perigo, use os Movimentos apropriados. O Preparo recebido só pode ser gasto naquela tarefa e se perde quando ela termina.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2076"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2077",
+    "paragrafo_docx": 2077,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "VISÕES DO PASSADO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2077,
+        "tipo": "corpo",
+        "texto": "Quando tocar um objeto ou permanecer num lugar enquanto abre seus sentidos para as marcas espirituais deixadas ali, escolha duas:"
+      },
+      {
+        "paragrafo_docx": 2078,
+        "tipo": "opcao",
+        "texto": "Quem deixou aqui a marca emocional mais forte?"
+      },
+      {
+        "paragrafo_docx": 2079,
+        "tipo": "opcao",
+        "texto": "Que violência significativa este lugar ou objeto testemunhou?"
+      },
+      {
+        "paragrafo_docx": 2080,
+        "tipo": "opcao",
+        "texto": "Que promessa, juramento ou traição ainda ecoa aqui?"
+      },
+      {
+        "paragrafo_docx": 2081,
+        "tipo": "opcao",
+        "texto": "Que presença sobrenatural o tocou?"
+      },
+      {
+        "paragrafo_docx": 2082,
+        "tipo": "opcao",
+        "texto": "O que aconteceu aqui que alguém tentou deliberadamente apagar?"
+      },
+      {
+        "paragrafo_docx": 2083,
+        "tipo": "continuacao",
+        "texto": "O Mestre responderá através de imagens, sensações, vozes ou memórias fragmentadas, mas verdadeiras."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2078,
+        "texto": "Quem deixou aqui a marca emocional mais forte?"
+      },
+      {
+        "paragrafo_docx": 2079,
+        "texto": "Que violência significativa este lugar ou objeto testemunhou?"
+      },
+      {
+        "paragrafo_docx": 2080,
+        "texto": "Que promessa, juramento ou traição ainda ecoa aqui?"
+      },
+      {
+        "paragrafo_docx": 2081,
+        "texto": "Que presença sobrenatural o tocou?"
+      },
+      {
+        "paragrafo_docx": 2082,
+        "texto": "O que aconteceu aqui que alguém tentou deliberadamente apagar?"
+      }
+    ],
+    "texto_original": "Quando tocar um objeto ou permanecer num lugar enquanto abre seus sentidos para as marcas espirituais deixadas ali, escolha duas:\nQuem deixou aqui a marca emocional mais forte?\nQue violência significativa este lugar ou objeto testemunhou?\nQue promessa, juramento ou traição ainda ecoa aqui?\nQue presença sobrenatural o tocou?\nO que aconteceu aqui que alguém tentou deliberadamente apagar?\nO Mestre responderá através de imagens, sensações, vozes ou memórias fragmentadas, mas verdadeiras.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2077"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2084",
+    "paragrafo_docx": 2084,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "PRESSÁGIO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2084,
+        "tipo": "corpo",
+        "texto": "No começo de uma sessão, descreva o método pelo qual lê o futuro e role+SAB.\n10+: receba 3 Presságios.\n7–9: receba 2.\nGaste um Presságio quando um evento significativo começar para perguntar:\n“Que sinal de que isto aconteceria eu já havia visto?”\nO Mestre responde; receba +1 adiante ao agir sobre isso.\nPresságios não gastos desaparecem ao fim da sessão."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "No começo de uma sessão, descreva o método pelo qual lê o futuro e role+SAB.\n10+: receba 3 Presságios.\n7–9: receba 2.\nGaste um Presságio quando um evento significativo começar para perguntar:\n“Que sinal de que isto aconteceria eu já havia visto?”\nO Mestre responde; receba +1 adiante ao agir sobre isso.\nPresságios não gastos desaparecem ao fim da sessão.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2084"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2085",
+    "paragrafo_docx": 2085,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "O DESTINO NÃO GOSTA DE SER ENGANADO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2085,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando usar conhecimento profético para impedir explicitamente um futuro que viu e as consequências dessa alteração finalmente aparecerem, marque 1 XP."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando usar conhecimento profético para impedir explicitamente um futuro que viu e as consequências dessa alteração finalmente aparecerem, marque 1 XP.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2085"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2086",
+    "paragrafo_docx": 2086,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "A VISÃO COBRA SEU PREÇO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2086,
+        "tipo": "corpo",
+        "texto": "Quando exigir do destino uma revelação que normalmente estaria além de seu alcance, diga como sua maldição oracular se manifesta e pergunte ao Mestre uma coisa sobre um futuro possível. O Mestre dirá que consequência concreta essa visão cobrará de você. Se aceitar o preço, ele responderá com uma visão verdadeira. Ela pode ser incompleta, simbólica ou depender de condições, mas não é uma mentira."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando exigir do destino uma revelação que normalmente estaria além de seu alcance, diga como sua maldição oracular se manifesta e pergunte ao Mestre uma coisa sobre um futuro possível. O Mestre dirá que consequência concreta essa visão cobrará de você. Se aceitar o preço, ele responderá com uma visão verdadeira. Ela pode ser incompleta, simbólica ou depender de condições, mas não é uma mentira.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2086"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2087",
+    "paragrafo_docx": 2087,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "EU JÁ VI ESTA CENA",
+    "requisito_literal": "Presságio",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2084",
+      "titulo_requerido": "PRESSÁGIO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2087,
+        "tipo": "corpo",
+        "texto": "Quando um acontecimento significativo começar, você pode gastar 1 Presságio para revelar uma preparação razoável que realizou anteriormente porque já havia visto um fragmento daquela situação.\nDiga o que preparou: trouxe algo, escondeu algo, avisou alguém, deixou uma mensagem, escolheu uma rota, posicionou um objeto ou tomou outra precaução concreta. Se a preparação exigisse conhecimento ou acesso que você realmente não poderia ter possuído, o Mestre dirá a coisa mais próxima que sua visão permitiu preparar."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando um acontecimento significativo começar, você pode gastar 1 Presságio para revelar uma preparação razoável que realizou anteriormente porque já havia visto um fragmento daquela situação.\nDiga o que preparou: trouxe algo, escondeu algo, avisou alguém, deixou uma mensagem, escolheu uma rota, posicionou um objeto ou tomou outra precaução concreta. Se a preparação exigisse conhecimento ou acesso que você realmente não poderia ter possuído, o Mestre dirá a coisa mais próxima que sua visão permitiu preparar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2087"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2088",
+    "paragrafo_docx": 2088,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "NÃO FOI ASSIM QUE EU VI",
+    "requisito_literal": "Presságio",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2084",
+      "titulo_requerido": "PRESSÁGIO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2088,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando um 6- tornaria impossível um futuro que você tenha explicitamente previsto nesta sessão, gaste 1 Presságio antes que o Mestre descreva a consequência. O Mestre ainda realiza um Movimento consequente, mas ele deve escolher algo que mantenha aquele futuro possível."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando um 6- tornaria impossível um futuro que você tenha explicitamente previsto nesta sessão, gaste 1 Presságio antes que o Mestre descreva a consequência. O Mestre ainda realiza um Movimento consequente, mas ele deve escolher algo que mantenha aquele futuro possível.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2088"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2089",
+    "paragrafo_docx": 2089,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "RUNA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2089,
+        "tipo": "corpo",
+        "texto": "Escolha três conceitos que sabe inscrever: proteção, força, passagem, fogo, memória, silêncio, vínculo etc.\nQuando gravar uma runa sobre algo apropriado e ativá-la, sua função acontece dentro dos limites estabelecidos pela tradição.\nEfeitos extremos exigem risco ou ritual."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha três conceitos que sabe inscrever: proteção, força, passagem, fogo, memória, silêncio, vínculo etc.\nQuando gravar uma runa sobre algo apropriado e ativá-la, sua função acontece dentro dos limites estabelecidos pela tradição.\nEfeitos extremos exigem risco ou ritual.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2089"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2090",
+    "paragrafo_docx": 2090,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "ARMA RÚNICA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2090,
+        "tipo": "corpo",
+        "texto": "Quando preparar uma arma com uma runa específica contra um tipo conhecido de ameaça, ela passa a poder ferir aquilo que sua natureza normalmente impediria."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando preparar uma arma com uma runa específica contra um tipo conhecido de ameaça, ela passa a poder ferir aquilo que sua natureza normalmente impediria.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2090"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2091",
+    "paragrafo_docx": 2091,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "RUNAS PERDIDAS",
+    "requisito_literal": "Runa",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2089",
+      "titulo_requerido": "RUNA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2091,
+        "tipo": "corpo",
+        "texto": "Quando encontrar uma inscrição rúnica autêntica cujo conceito ainda não conheça, estude-a e pergunte ao Mestre:\n“Que ideia esta runa obriga o mundo a reconhecer?”\nO Mestre dirá o conceito e uma condição necessária para compreendê-lo verdadeiramente. Quando cumprir a condição, adicione permanentemente aquele conceito aos que conhece através de Runa."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando encontrar uma inscrição rúnica autêntica cujo conceito ainda não conheça, estude-a e pergunte ao Mestre:\n“Que ideia esta runa obriga o mundo a reconhecer?”\nO Mestre dirá o conceito e uma condição necessária para compreendê-lo verdadeiramente. Quando cumprir a condição, adicione permanentemente aquele conceito aos que conhece através de Runa.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2091"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2092",
+    "paragrafo_docx": 2092,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "RUNAS ENTRELAÇADAS",
+    "requisito_literal": "Runa",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2089",
+      "titulo_requerido": "RUNA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2092,
+        "tipo": "corpo",
+        "texto": "Quando inscrever o mesmo conceito em dois objetos ou lugares como partes de um único rito, diga que relação aquela runa cria entre eles. Enquanto ambas permanecerem intactas, uma pode reconhecer ou transmitir uma manifestação simples do conceito à outra."
+      },
+      {
+        "paragrafo_docx": 2093,
+        "tipo": "opcao",
+        "texto": "Uma runa de memória pode compartilhar aquilo que testemunhou."
+      },
+      {
+        "paragrafo_docx": 2094,
+        "tipo": "opcao",
+        "texto": "Uma de passagem pode reconhecer quem atravessou a outra."
+      },
+      {
+        "paragrafo_docx": 2095,
+        "tipo": "opcao",
+        "texto": "Uma de vínculo pode revelar distância ou direção."
+      },
+      {
+        "paragrafo_docx": 2096,
+        "tipo": "opcao",
+        "texto": "Uma de silêncio pode fazer um ponto perceber quando o outro foi perturbado."
+      },
+      {
+        "paragrafo_docx": 2097,
+        "tipo": "continuacao",
+        "texto": "Duplicar matéria, criaturas ou violência exige algo muito maior que este Movimento."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2093,
+        "texto": "Uma runa de memória pode compartilhar aquilo que testemunhou."
+      },
+      {
+        "paragrafo_docx": 2094,
+        "texto": "Uma de passagem pode reconhecer quem atravessou a outra."
+      },
+      {
+        "paragrafo_docx": 2095,
+        "texto": "Uma de vínculo pode revelar distância ou direção."
+      },
+      {
+        "paragrafo_docx": 2096,
+        "texto": "Uma de silêncio pode fazer um ponto perceber quando o outro foi perturbado."
+      }
+    ],
+    "texto_original": "Quando inscrever o mesmo conceito em dois objetos ou lugares como partes de um único rito, diga que relação aquela runa cria entre eles. Enquanto ambas permanecerem intactas, uma pode reconhecer ou transmitir uma manifestação simples do conceito à outra.\nUma runa de memória pode compartilhar aquilo que testemunhou.\nUma de passagem pode reconhecer quem atravessou a outra.\nUma de vínculo pode revelar distância ou direção.\nUma de silêncio pode fazer um ponto perceber quando o outro foi perturbado.\nDuplicar matéria, criaturas ou violência exige algo muito maior que este Movimento.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2092"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2099",
+    "paragrafo_docx": 2099,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "RUNA VIVA",
+    "requisito_literal": "Runa",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2089",
+      "titulo_requerido": "RUNA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2099,
+        "tipo": "corpo",
+        "texto": "Quando inscrever um conceito conhecido sobre o corpo de uma criatura voluntária, diga também uma condição que deve permanecer verdadeira enquanto ela carregar a inscrição. Enquanto a runa estiver íntegra e a condição for respeitada, aquele conceito concede ao corpo uma propriedade extraordinária concreta. \nVocê só pode manter uma Runa Viva ativa por vez. Inscrever outra faz a anterior se apagar, romper ou perder seu poder. Quando sua condição é violada, a runa se rompe, queima ou abandona o corpo de alguma maneira apropriada."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando inscrever um conceito conhecido sobre o corpo de uma criatura voluntária, diga também uma condição que deve permanecer verdadeira enquanto ela carregar a inscrição. Enquanto a runa estiver íntegra e a condição for respeitada, aquele conceito concede ao corpo uma propriedade extraordinária concreta. \nVocê só pode manter uma Runa Viva ativa por vez. Inscrever outra faz a anterior se apagar, romper ou perder seu poder. Quando sua condição é violada, a runa se rompe, queima ou abandona o corpo de alguma maneira apropriada.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2099"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2100",
+    "paragrafo_docx": 2100,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "PELE ESCRITA",
+    "requisito_literal": "Runa Viva",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2099",
+      "titulo_requerido": "RUNA VIVA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2100,
+        "tipo": "corpo",
+        "texto": "Você pode manter Runas Vivas ativas em até três criaturas ao mesmo tempo e cada uma pode possuir um conceito diferente. Enquanto possuir três Runas Vivas ativas, você sabe imediatamente quando uma delas é rompida, violada ou destruída e em que direção ela está."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Você pode manter Runas Vivas ativas em até três criaturas ao mesmo tempo e cada uma pode possuir um conceito diferente. Enquanto possuir três Runas Vivas ativas, você sabe imediatamente quando uma delas é rompida, violada ou destruída e em que direção ela está.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2100"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2101",
+    "paragrafo_docx": 2101,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "RUNA DE APRISIONAMENTO",
+    "requisito_literal": "Runa",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2089",
+      "titulo_requerido": "RUNA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2101,
+        "tipo": "corpo",
+        "texto": "Quando preparar uma inscrição para conter uma criatura nomeada ou uma categoria espiritual específica e ela entrar na área ou tocar aquilo que foi marcado, role+SAB.\n10+: Domínio 3.\n7–9: Domínio 2, mas a criatura percebe imediatamente a natureza da prisão e encontra um ponto vulnerável nela.\nEnquanto a runa permanecer intacta, gaste 1 Domínio para impedir momentaneamente que o alvo: atravesse a fronteira; utilize uma capacidade sobrenatural específica; toque algo protegido; ou esconda sua presença dentro da prisão."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando preparar uma inscrição para conter uma criatura nomeada ou uma categoria espiritual específica e ela entrar na área ou tocar aquilo que foi marcado, role+SAB.\n10+: Domínio 3.\n7–9: Domínio 2, mas a criatura percebe imediatamente a natureza da prisão e encontra um ponto vulnerável nela.\nEnquanto a runa permanecer intacta, gaste 1 Domínio para impedir momentaneamente que o alvo: atravesse a fronteira; utilize uma capacidade sobrenatural específica; toque algo protegido; ou esconda sua presença dentro da prisão.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2101"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2102",
+    "paragrafo_docx": 2102,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "ESPÍRITOS ESTÃO POR TODA PARTE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2102,
+        "tipo": "corpo",
+        "texto": "Quando entrar num lugar onde mortos, ancestrais ou espíritos possuem interesse, você percebe sua presença mesmo sem vê-los.\nQuando oferecer algo apropriado a um espírito e pedir informação, pergunte ao Mestre:\n“O que este espírito quer antes de falar comigo?”\nSe pagar, ele conversa."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando entrar num lugar onde mortos, ancestrais ou espíritos possuem interesse, você percebe sua presença mesmo sem vê-los.\nQuando oferecer algo apropriado a um espírito e pedir informação, pergunte ao Mestre:\n“O que este espírito quer antes de falar comigo?”\nSe pagar, ele conversa.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2102"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2103",
+    "paragrafo_docx": 2103,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "EMPRESTE SEU CORPO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2103,
+        "tipo": "corpo",
+        "texto": "Quando permitir voluntariamente que um espírito conhecido utilize seu corpo, diga que capacidade dele deseja receber e role+SAB.\n10+: receba a capacidade e mantenha o controle.\n7–9: receba a capacidade, mas o espírito também poderá realizar uma ação coerente com seus próprios desejos."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando permitir voluntariamente que um espírito conhecido utilize seu corpo, diga que capacidade dele deseja receber e role+SAB.\n10+: receba a capacidade e mantenha o controle.\n7–9: receba a capacidade, mas o espírito também poderá realizar uma ação coerente com seus próprios desejos.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2103"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2104",
+    "paragrafo_docx": 2104,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "ESPÍRITO GUIA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2104,
+        "tipo": "corpo",
+        "texto": "Escolha um espírito nomeado que o acompanhe e estabeleça: o que ele protege; o que ele deseja; e uma coisa que ele se recusa a fazer. Ele normalmente permanece invisível ou perceptível apenas de forma espiritual. Você pode sempre conversar com ele quando nenhum poder estiver impedindo contato. Uma vez por cena, pergunte: \n“O que meu Espírito Guia reconhece aqui que eu não reconheceria?” \nO Mestre responderá segundo aquilo que o espírito realmente sabe ou percebe."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Escolha um espírito nomeado que o acompanhe e estabeleça: o que ele protege; o que ele deseja; e uma coisa que ele se recusa a fazer. Ele normalmente permanece invisível ou perceptível apenas de forma espiritual. Você pode sempre conversar com ele quando nenhum poder estiver impedindo contato. Uma vez por cena, pergunte: \n“O que meu Espírito Guia reconhece aqui que eu não reconheceria?” \nO Mestre responderá segundo aquilo que o espírito realmente sabe ou percebe.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2104"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2105",
+    "paragrafo_docx": 2105,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "ESPÍRITO ERRANTE",
+    "requisito_literal": "Espíritos Estão por Toda Parte",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2102",
+      "titulo_requerido": "ESPÍRITOS ESTÃO POR TODA PARTE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2105,
+        "tipo": "corpo",
+        "texto": "Uma vez por sessão, quando estiver num lugar habitado ou atravessado por espíritos e precisar de uma capacidade específica, pergunte: “Que espírito daqui poderia me ajudar com isto?” O Mestre dirá quem ele é e o que deseja.\nSe satisfizer sua exigência, ele lhe concede ou realiza uma capacidade concreta relacionada àquilo que era em vida ou representa agora até o fim daquela situação."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por sessão, quando estiver num lugar habitado ou atravessado por espíritos e precisar de uma capacidade específica, pergunte: “Que espírito daqui poderia me ajudar com isto?” O Mestre dirá quem ele é e o que deseja.\nSe satisfizer sua exigência, ele lhe concede ou realiza uma capacidade concreta relacionada àquilo que era em vida ou representa agora até o fim daquela situação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2105"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2106",
+    "paragrafo_docx": 2106,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "MANIFESTAÇÃO ESPIRITUAL",
+    "requisito_literal": "Empreste Seu Corpo",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2103",
+      "titulo_requerido": "EMPRESTE SEU CORPO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2106,
+        "tipo": "corpo",
+        "texto": "Quando obtiver sucesso em Empreste Seu Corpo, você pode permitir que o espírito se manifeste parcialmente através de sua carne. Escolha uma característica física ou sobrenatural real dele que seu corpo passa a possuir enquanto a possessão durar. Exemplos:"
+      },
+      {
+        "paragrafo_docx": 2107,
+        "tipo": "opcao",
+        "texto": "As garras de um ancestral caçador cortam."
+      },
+      {
+        "paragrafo_docx": 2108,
+        "tipo": "opcao",
+        "texto": "A pele de um espírito do fogo queima."
+      },
+      {
+        "paragrafo_docx": 2109,
+        "tipo": "opcao",
+        "texto": "As asas de uma entidade alada sustentam você."
+      },
+      {
+        "paragrafo_docx": 2110,
+        "tipo": "continuacao",
+        "texto": "Quando a possessão termina, a manifestação desaparece — salvo se alguma consequência disser o contrário."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2107,
+        "texto": "As garras de um ancestral caçador cortam."
+      },
+      {
+        "paragrafo_docx": 2108,
+        "texto": "A pele de um espírito do fogo queima."
+      },
+      {
+        "paragrafo_docx": 2109,
+        "texto": "As asas de uma entidade alada sustentam você."
+      }
+    ],
+    "texto_original": "Quando obtiver sucesso em Empreste Seu Corpo, você pode permitir que o espírito se manifeste parcialmente através de sua carne. Escolha uma característica física ou sobrenatural real dele que seu corpo passa a possuir enquanto a possessão durar. Exemplos:\nAs garras de um ancestral caçador cortam.\nA pele de um espírito do fogo queima.\nAs asas de uma entidade alada sustentam você.\nQuando a possessão termina, a manifestação desaparece — salvo se alguma consequência disser o contrário.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2106"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2111",
+    "paragrafo_docx": 2111,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "PSICOPOMPO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2111,
+        "tipo": "corpo",
+        "texto": "Quando realizar os ritos apropriados para alguém recém-morto, pergunte ao espírito:\n“O que ainda o impede de seguir seu caminho?” \nO Mestre responderá honestamente. Se você resolver aquilo, a alma parte segundo sua natureza e não pode ser aprisionada, possuída, convocada ou animada contra sua vontade sem que primeiro seja superada a proteção de seus ritos."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando realizar os ritos apropriados para alguém recém-morto, pergunte ao espírito:\n“O que ainda o impede de seguir seu caminho?” \nO Mestre responderá honestamente. Se você resolver aquilo, a alma parte segundo sua natureza e não pode ser aprisionada, possuída, convocada ou animada contra sua vontade sem que primeiro seja superada a proteção de seus ritos.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2111"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2112",
+    "paragrafo_docx": 2112,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "CÍRCULO DE CONVOCAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2112,
+        "tipo": "corpo",
+        "texto": "Quando preparar um espaço para chamar uma entidade cujo nome ou natureza conhece, estabeleça:"
+      },
+      {
+        "paragrafo_docx": 2113,
+        "tipo": "opcao",
+        "texto": "o que a chama;"
+      },
+      {
+        "paragrafo_docx": 2114,
+        "tipo": "opcao",
+        "texto": "o que a mantém;"
+      },
+      {
+        "paragrafo_docx": 2115,
+        "tipo": "opcao",
+        "texto": "o que a impede de tocar você."
+      },
+      {
+        "paragrafo_docx": 2116,
+        "tipo": "continuacao",
+        "texto": "Depois role+SAB. Em um 7+, alguma coisa responde ao chamado e a convocação acontece; as escolhas determinam quais partes do círculo funcionam exatamente como planejado.\n12+: os três funcionam.\n10+: escolha dois.\n7–9: escolha um. Os outros dois falham ou funcionam de maneira perigosa conforme a ficção.\nVocê também recebe livremente o movimento Não Era Isso Que Eu Chamei."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2113,
+        "texto": "o que a chama;"
+      },
+      {
+        "paragrafo_docx": 2114,
+        "texto": "o que a mantém;"
+      },
+      {
+        "paragrafo_docx": 2115,
+        "texto": "o que a impede de tocar você."
+      }
+    ],
+    "texto_original": "Quando preparar um espaço para chamar uma entidade cujo nome ou natureza conhece, estabeleça:\no que a chama;\no que a mantém;\no que a impede de tocar você.\nDepois role+SAB. Em um 7+, alguma coisa responde ao chamado e a convocação acontece; as escolhas determinam quais partes do círculo funcionam exatamente como planejado.\n12+: os três funcionam.\n10+: escolha dois.\n7–9: escolha um. Os outros dois falham ou funcionam de maneira perigosa conforme a ficção.\nVocê também recebe livremente o movimento Não Era Isso Que Eu Chamei.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2112"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2117",
+    "paragrafo_docx": 2117,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "NÃO ERA ISSO QUE EU CHAMEI",
+    "requisito_literal": "Círculo de Convocação",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2112",
+      "titulo_requerido": "CÍRCULO DE CONVOCAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2117,
+        "tipo": "corpo",
+        "texto": "Quando uma convocação trouxer algo inesperado, pergunte:\n“Por que isto conseguiu responder no lugar daquilo que eu queria?”\nO Mestre responderá honestamente."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando uma convocação trouxer algo inesperado, pergunte:\n“Por que isto conseguiu responder no lugar daquilo que eu queria?”\nO Mestre responderá honestamente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2117"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2119",
+    "paragrafo_docx": 2119,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "NOME VERDADEIRO",
+    "requisito_literal": "Círculo de Convocação",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2112",
+      "titulo_requerido": "CÍRCULO DE CONVOCAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2119,
+        "tipo": "corpo",
+        "texto": "Quando descobrir o nome verdadeiro de uma entidade, ela não consegue esconder de você aquilo que realmente é através de outro nome, forma ou título. Quando usar esse nome em Círculo de Convocação, escolha antes da rolagem uma das três condições do Movimento. Essa condição funciona automaticamente e não conta entre aquelas que você precisará escolher pelo resultado. Além disso, o nome verdadeiro conta como influência para Negociar com a entidade dentro do Círculo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando descobrir o nome verdadeiro de uma entidade, ela não consegue esconder de você aquilo que realmente é através de outro nome, forma ou título. Quando usar esse nome em Círculo de Convocação, escolha antes da rolagem uma das três condições do Movimento. Essa condição funciona automaticamente e não conta entre aquelas que você precisará escolher pelo resultado. Além disso, o nome verdadeiro conta como influência para Negociar com a entidade dentro do Círculo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2119"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2120",
+    "paragrafo_docx": 2120,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "ÂNCORA NO MUNDO",
+    "requisito_literal": "Círculo de Convocação",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2112",
+      "titulo_requerido": "CÍRCULO DE CONVOCAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2120,
+        "tipo": "corpo",
+        "texto": "Depois de convocar uma entidade com sucesso, você pode preparar um objeto, criatura voluntária ou lugar para servir como sua âncora. Enquanto a âncora existir, a entidade pode permanecer neste mundo mesmo depois que o círculo ou rito que a trouxe terminar. Ao mesmo tempo, enquanto a âncora existir, a entidade não é capaz de deixar este plano. Isso não lhe concede controle sobre ela. A entidade sabe qual é sua âncora."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Depois de convocar uma entidade com sucesso, você pode preparar um objeto, criatura voluntária ou lugar para servir como sua âncora. Enquanto a âncora existir, a entidade pode permanecer neste mundo mesmo depois que o círculo ou rito que a trouxe terminar. Ao mesmo tempo, enquanto a âncora existir, a entidade não é capaz de deixar este plano. Isso não lhe concede controle sobre ela. A entidade sabe qual é sua âncora.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2120"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2121",
+    "paragrafo_docx": 2121,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "CONVOCAÇÃO ÀS PRESSAS",
+    "requisito_literal": "Círculo de Convocação",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2112",
+      "titulo_requerido": "CÍRCULO DE CONVOCAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2121,
+        "tipo": "corpo",
+        "texto": "Quando não houver tempo para preparar corretamente um círculo, improvise um com sangue, sal, cinza, luz, palavras, cordas ou qualquer linguagem ritual apropriada e chame uma entidade que conheça. Role+SAB.\n10+: escolha 2.\n7–9: escolha 1:"
+      },
+      {
+        "paragrafo_docx": 2122,
+        "tipo": "opcao",
+        "texto": "a entidade correta responde;"
+      },
+      {
+        "paragrafo_docx": 2123,
+        "tipo": "opcao",
+        "texto": "ela aparece dentro de uma fronteira que reconhece;"
+      },
+      {
+        "paragrafo_docx": 2124,
+        "tipo": "opcao",
+        "texto": "nada mais atravessa com ela;"
+      },
+      {
+        "paragrafo_docx": 2125,
+        "tipo": "opcao",
+        "texto": "você conserva uma maneira conhecida de mandá-la de volta."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2122,
+        "texto": "a entidade correta responde;"
+      },
+      {
+        "paragrafo_docx": 2123,
+        "texto": "ela aparece dentro de uma fronteira que reconhece;"
+      },
+      {
+        "paragrafo_docx": 2124,
+        "texto": "nada mais atravessa com ela;"
+      },
+      {
+        "paragrafo_docx": 2125,
+        "texto": "você conserva uma maneira conhecida de mandá-la de volta."
+      }
+    ],
+    "texto_original": "Quando não houver tempo para preparar corretamente um círculo, improvise um com sangue, sal, cinza, luz, palavras, cordas ou qualquer linguagem ritual apropriada e chame uma entidade que conheça. Role+SAB.\n10+: escolha 2.\n7–9: escolha 1:\na entidade correta responde;\nela aparece dentro de uma fronteira que reconhece;\nnada mais atravessa com ela;\nvocê conserva uma maneira conhecida de mandá-la de volta.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2121"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2126",
+    "paragrafo_docx": 2126,
+    "grupo": "CLÉRIGO",
+    "categoria": "classe",
+    "titulo": "EIDOLON",
+    "requisito_literal": "Círculo de Convocação",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2112",
+      "titulo_requerido": "CÍRCULO DE CONVOCAÇÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "concessoes_gratuitas_literais": [],
+    "partes": [
+      {
+        "paragrafo_docx": 2126,
+        "tipo": "corpo",
+        "texto": "Depois de convocar repetidamente a mesma entidade e estabelecer com ela um vínculo voluntário e recíproco, dê um nome ao vínculo e diga por que nenhum dos dois deseja rompê-lo. Você pode chamar ou dispensar essa entidade sem preparar um Círculo quando não houver perigo ou interferência sobrenatural. \nEla permanece uma criatura com vontade própria, mas conta como um Servo ligado a você e começa com Lealdade 2. \nEscolha uma capacidade sobrenatural que faça parte de sua natureza; ela pode utilizá-la normalmente quando a ficção permitir. Quando você tratá-la como descartável, violar a natureza do vínculo ou exigir algo diretamente contrário àquilo que ela é, a Lealdade sofre normalmente. Você só pode possuir um Eidolon por vez. Estabelecer esse vínculo com outra entidade encerra o vínculo anterior como Eidolon, embora a relação entre vocês continue existindo normalmente na ficção."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Depois de convocar repetidamente a mesma entidade e estabelecer com ela um vínculo voluntário e recíproco, dê um nome ao vínculo e diga por que nenhum dos dois deseja rompê-lo. Você pode chamar ou dispensar essa entidade sem preparar um Círculo quando não houver perigo ou interferência sobrenatural. \nEla permanece uma criatura com vontade própria, mas conta como um Servo ligado a você e começa com Lealdade 2. \nEscolha uma capacidade sobrenatural que faça parte de sua natureza; ela pode utilizá-la normalmente quando a ficção permitir. Quando você tratá-la como descartável, violar a natureza do vínculo ou exigir algo diretamente contrário àquilo que ela é, a Lealdade sofre normalmente. Você só pode possuir um Eidolon por vez. Estabelecer esse vínculo com outra entidade encerra o vínculo anterior como Eidolon, embora a relação entre vocês continue existindo normalmente na ficção.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2126"
+  }
+]
