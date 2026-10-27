@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {createCarcacaAtlas, previewSettlementScenario,previewMaterialInterruption} from "../src/carcaca-client.mjs";
+import {createCarcacaAtlas, previewSettlementScenario,previewMaterialInterruption,
+        previewClassRequirements} from "../src/carcaca-client.mjs";
 import {createCampaignLedger,recordCampaignEvent,getCampaignEvents} from "../src/carcaca-campaign-state.mjs";
 import {previewMaterialBalance,BALANCE_FIELDS} from "../src/carcaca-material-balance.mjs";
 import {previewSupportCapacity,previewPopulationFlow,SUPPORT_LIMITS} from "../src/carcaca-support-capacity.mjs";
@@ -44,7 +45,13 @@ const fixtures={
     hack_docx_table_indexes:"hack-docx-table-indexes.json",
     hack_general_movements:"hack-general-movements.json",
     hack_general_movement_indexes:"hack-general-movement-indexes.json",
-    hack_core_rules:"hack-core-rules.json"}},
+    hack_core_rules:"hack-core-rules.json",
+    hack_people_movements:"hack-people-movements.json",
+    hack_people_movement_indexes:"hack-people-movement-indexes.json",
+    hack_class_movement_inventory:"hack-class-movement-inventory.json",
+    hack_class_movement_indexes:"hack-class-movement-indexes.json",
+    hack_class_requirement_candidates:"hack-class-requirement-candidates.json",
+    hack_class_requirement_pending:"hack-class-requirement-pending.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -84,6 +91,39 @@ const fixtures={
   "hack-complete-pilot-movement-indexes.json":{by_grupo:{
      "HUMANOS":["movimento-integral:paragrafo-829"],
      "ORCS DA CAATINGA":["movimento-integral:paragrafo-837"]}},
+  "hack-people-movements.json":[
+    {id:"movimento-povo:paragrafo-849",paragrafo_docx:849,grupo:"ANÕES DE THARGRID",
+     titulo:"ENGENHEIRO SOB A MONTANHA",marcador_original:"Cultura",aplicacao_canonica:false,
+     texto_original:"Quando estudar uma ponte, pergunte.\\nOnde está seu ponto de maior tensão?\\nQuando viajar, tenha vantagem.",
+     opcoes:[{paragrafo_docx:850,texto:"Onde está seu ponto de maior tensão?"}]},
+    {id:"movimento-povo:paragrafo-827",paragrafo_docx:827,grupo:"HUMANOS",
+     titulo:"FILHO DO RIO ANCESTRAL",marcador_original:"Cultura",aplicacao_canonica:false,
+     texto_original:"Quando negociar ao longo do Rio, encontre um comerciante.",opcoes:[]}
+  ],
+  "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
+     "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-class-movement-inventory.json":[
+    {id:"movimento-classe:paragrafo-1047",paragrafo_docx:1047,grupo:"GUERREIRO",
+     titulo:"ARMA FAVORITA",requisito_literal:null,aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1120",paragrafo_docx:1120,grupo:"GUERREIRO",
+     titulo:"ARMA APERFEIÇOADA",requisito_literal:"Arma Favorita",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-1229",paragrafo_docx:1229,grupo:"GUERREIRO",
+     titulo:"PASSO ARCANO",requisito_literal:"Surto de Ação e qualquer Movimento de Magia",
+     aplicacao_canonica:false}
+  ],
+  "hack-class-movement-indexes.json":{by_grupo:{"GUERREIRO":["movimento-classe:paragrafo-1047",
+     "movimento-classe:paragrafo-1120","movimento-classe:paragrafo-1229"]}},
+  "hack-class-requirement-candidates.json":[
+    {id:"requer:1120-1047",origem_movimento_id:"movimento-classe:paragrafo-1120",
+     requisito_movimento_id:"movimento-classe:paragrafo-1047",requisito_literal:"Arma Favorita",
+     status:"vinculo_exato_a_confirmar",aplicacao_canonica:false}
+  ],
+  "hack-class-requirement-pending.json":[
+    {origem_movimento_id:"movimento-classe:paragrafo-1229",
+     requisito_literal:"Surto de Ação e qualquer Movimento de Magia",
+     motivo:"nao_corresponde_a_um_titulo_isolado",candidatos_ids:[],
+     status:"exige_analise_editorial",aplicacao_canonica:false}
+  ],
   "hack-core-rules.json":{id:"regras-hack:carcaca-dw-nucleo",aplicacao_canonica:false,
     personagens:{movimentos_proprios_nivel_1:5,distribuicao_numerica_por_origem:null,
                  valores_iniciais_para_distribuir:[16,15,13,12,9,8]}},
@@ -1041,4 +1081,39 @@ test("núcleo do Hack preserva cinco movimentos iniciais sem inventar distribui�
   assert.equal(regras.personagens.distribuicao_numerica_por_origem,null);
   assert.deepEqual(regras.personagens.valores_iniciais_para_distribuir,[16,15,13,12,9,8]);
   assert.equal(regras.aplicacao_canonica,false);
+});
+
+test("movimentos dos povos preservam escolhas e permitem buscas por região cultural",async()=>{
+  const a=await atlas.searchPeopleMovements({grupo:"ANÕES DE THARGRID",comOpcoes:true});
+  assert.equal(a.length,1);
+  assert.equal(a[0].titulo,"ENGENHEIRO SOB A MONTANHA");
+  assert.equal(a[0].opcoes[0].paragrafo_docx,850);
+  assert.equal((await atlas.getPeopleMovement("movimento-povo:paragrafo-827")).grupo,"HUMANOS");
+  assert.equal((await atlas.searchPeopleMovements({query:"ponto de maior tensão"})).length,1);
+  assert.equal(await atlas.getPeopleMovement("nao-existe"),null);
+  assert.equal((await atlas.getPeopleMovementIndexes()).by_grupo.HUMANOS.length,1);
+});
+test("REQUER identifica vínculos candidatos sem habilitar compras de movimentos",async()=>{
+  const cls=await atlas.searchClassMovements({grupo:"GUERREIRO",comRequer:true});
+  assert.deepEqual(cls.map(x=>x.titulo),["ARMA APERFEIÇOADA","PASSO ARCANO"]);
+  const p=await atlas.getClassRequirementPreview("movimento-classe:paragrafo-1120");
+  assert.equal(p.vinculos_candidatos.length,1);
+  assert.equal(p.vinculos_candidatos[0].presente_na_lista,false);
+  assert.equal(p.habilitado_para_compra,null);
+  assert.equal(p.necessita_avaliacao_do_mestre,true);
+  const presente=await atlas.getClassRequirementPreview("movimento-classe:paragrafo-1120",
+     {movimentosPossuidos:["movimento-classe:paragrafo-1047"]});
+  assert.equal(presente.todos_candidatos_presentes,true);
+  assert.equal(presente.habilitado_para_compra,null);
+  const composto=await atlas.getClassRequirementPreview("movimento-classe:paragrafo-1229");
+  assert.equal(composto.expressoes_nao_resolvidas.length,1);
+  assert.equal(composto.habilitado_para_compra,null);
+  const livre=await atlas.getClassRequirementPreview("movimento-classe:paragrafo-1047");
+  assert.equal(livre.requisito_literal,null);
+  assert.equal(livre.habilitado_para_compra,null);
+  assert.equal(await atlas.getClassRequirementPreview("nao-existe"),null);
+  assert.equal((await atlas.getClassRequirementCandidates()).length,1);
+  assert.equal((await atlas.getClassRequirementPending()).length,1);
+  assert.equal((await atlas.getClassMovementIndexes()).by_grupo.GUERREIRO.length,3);
+  assert.throws(()=>previewClassRequirements("qualquer",null,[],[]),TypeError);
 });
