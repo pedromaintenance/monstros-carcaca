@@ -1,0 +1,267 @@
+{
+  "schema_version": "0.1.0",
+  "fonte_id": "fonte:hack-carcaca-dungeon-world-rascunho",
+  "observacao": "Grafo de relações textuais do Capítulo I. A âncora deve ser lida no contexto integral da página; nenhuma relação é promovida automaticamente ao cânone ou a campanhas.",
+  "relacoes": [
+    {
+      "id": "relacao-hack:golzdov-forma-continente",
+      "origem_id": "lore-hack:golzdov",
+      "destino_id": "lore-hack:carcaca",
+      "tipo": "fundamento_geografico",
+      "pagina": 2,
+      "ancora_textual": "continente formado sobre os restos mortais de Golzdov",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:varys-controla-garganta",
+      "origem_id": "lore-hack:varys-duskveil",
+      "destino_id": "lore-hack:garganta",
+      "tipo": "dominio_politico",
+      "pagina": 2,
+      "ancora_textual": "sob controle de Lorde Varys Duskveil",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:yolskaariin-templo-garganta",
+      "origem_id": "lore-hack:templo-yolskaariin",
+      "destino_id": "lore-hack:garganta",
+      "tipo": "instituicao_religiosa",
+      "pagina": 3,
+      "ancora_textual": "O Templo de Yolskaariin",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:severina-templo-lua",
+      "origem_id": "lore-hack:severina-shadowbloom",
+      "destino_id": "lore-hack:templo-da-lua",
+      "tipo": "autoridade_ritual",
+      "pagina": 4,
+      "ancora_textual": "Severina Shadowbloom",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:templo-lua-rio",
+      "origem_id": "lore-hack:templo-da-lua",
+      "destino_id": "lore-hack:rio-ancestral",
+      "tipo": "localizacao",
+      "pagina": 4,
+      "ancora_textual": "Em uma ilha do Rio Ancestral ergue-se o Templo da Lua",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:damaris-vandar",
+      "origem_id": "lore-hack:damaris-blackthorn",
+      "destino_id": "lore-hack:vandar",
+      "tipo": "ocupacao_militar",
+      "pagina": 5,
+      "ancora_textual": "Lorde Damaris Blackthorn",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:sylara-eldroth",
+      "origem_id": "lore-hack:sylara-nightwhisper",
+      "destino_id": "lore-hack:eldroth",
+      "tipo": "ocupacao_militar",
+      "pagina": 5,
+      "ancora_textual": "Lady Sylara Nightwhisper",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:portomonte-demeter",
+      "origem_id": "lore-hack:portomonte",
+      "destino_id": "lore-hack:templo-demeter",
+      "tipo": "purificacao_para_lavoura",
+      "pagina": 5,
+      "ancora_textual": "templo da Deusa Deméter",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:kuotoa-daegon",
+      "origem_id": "lore-hack:kuo-toa",
+      "destino_id": "lore-hack:daegon",
+      "tipo": "culto",
+      "pagina": 5,
+      "ancora_textual": "Veneram Daegon",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:kuotoa-abissais",
+      "origem_id": "lore-hack:kuo-toa",
+      "destino_id": "lore-hack:abissais-marinhos",
+      "tipo": "cooperacao_ritual",
+      "pagina": 5,
+      "ancora_textual": "marcham ao lado dos Abissais",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:xandros-templo-sombras",
+      "origem_id": "lore-hack:xandros-gloomspire",
+      "destino_id": "lore-hack:templo-das-sombras",
+      "tipo": "autoridade_ritual",
+      "pagina": 5,
+      "ancora_textual": "Lorde Xandros Gloomspire",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:ulorian-boca",
+      "origem_id": "lore-hack:ulorian-uln-shayr",
+      "destino_id": "lore-hack:boca-do-abismo",
+      "tipo": "fundacao_fortaleza",
+      "pagina": 6,
+      "ancora_textual": "fortaleza da Boca do Abismo",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:sarastra-crepusculo",
+      "origem_id": "lore-hack:sarastra-aestruum",
+      "destino_id": "lore-hack:templo-do-crepusculo",
+      "tipo": "fundacao_palacio",
+      "pagina": 6,
+      "ancora_textual": "Templo do Crepúsculo",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:elara-ironwood",
+      "origem_id": "lore-hack:elara-stormoak",
+      "destino_id": "lore-hack:ironwood",
+      "tipo": "lideranca",
+      "pagina": 6,
+      "ancora_textual": "Sob a liderança de Elara Stormoak",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:resistencia-reino",
+      "origem_id": "lore-hack:resistencia",
+      "destino_id": "lore-hack:reino-sob-montanha",
+      "tipo": "alianca_descentralizada",
+      "pagina": 7,
+      "ancora_textual": "O Reino Sob a Montanha é sua maior potência",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:resistencia-ironwood",
+      "origem_id": "lore-hack:resistencia",
+      "destino_id": "lore-hack:ironwood",
+      "tipo": "alianca_descentralizada",
+      "pagina": 7,
+      "ancora_textual": "Ironwood é sua principal força irregular",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:rayquaza-voragar",
+      "origem_id": "lore-hack:rayquaza",
+      "destino_id": "lore-hack:voragar",
+      "tipo": "conflito_familiar",
+      "pagina": 7,
+      "ancora_textual": "traição de seu tio Voragar",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:sarastra-corte",
+      "origem_id": "lore-hack:sarastra-aestruum",
+      "destino_id": "lore-hack:corte-feerica",
+      "tipo": "soberania",
+      "pagina": 8,
+      "ancora_textual": "Corte organiza sua autoridade",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:tortles-ilhas",
+      "origem_id": "lore-hack:tortles",
+      "destino_id": "lore-hack:ilhas-monasticas",
+      "tipo": "habitat_insular",
+      "pagina": 14,
+      "ancora_textual": "TORTLES DAS ILHAS",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:tritoes-sereias",
+      "origem_id": "lore-hack:tritoes",
+      "destino_id": "lore-hack:sereias",
+      "tipo": "alianca_maritima",
+      "pagina": 15,
+      "ancora_textual": "TRITÕES E SEREIAS",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:yokai-nomeacao",
+      "origem_id": "lore-hack:yokai-antigos",
+      "destino_id": "lore-hack:direito-de-nomear",
+      "tipo": "tradicao_ritual",
+      "pagina": 17,
+      "ancora_textual": "Os Yokai desenvolveram uma tradição",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:rangers-ironwood",
+      "origem_id": "lore-hack:rangers-ironwood",
+      "destino_id": "lore-hack:ironwood",
+      "tipo": "base_resistencia",
+      "pagina": 18,
+      "ancora_textual": "Ironwood tornou-se fortaleza da resistência",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:hobbits-grama",
+      "origem_id": "lore-hack:hobbits",
+      "destino_id": "lore-hack:grama-cortada",
+      "tipo": "agricultura",
+      "pagina": 19,
+      "ancora_textual": "Grama-Cortada também é conhecida",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:yondalla-hobbits",
+      "origem_id": "lore-hack:yondalla",
+      "destino_id": "lore-hack:hobbits",
+      "tipo": "culto",
+      "pagina": 23,
+      "ancora_textual": "Yondalla, deusa da fertilidade e proteção",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:moradin-anoes",
+      "origem_id": "lore-hack:moradin",
+      "destino_id": "lore-hack:anoes-thargrid",
+      "tipo": "culto",
+      "pagina": 22,
+      "ancora_textual": "Entre os anões, Moradin",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    },
+    {
+      "id": "relacao-hack:annam-gigantes",
+      "origem_id": "lore-hack:annam",
+      "destino_id": "lore-hack:gigantes-thargrid",
+      "tipo": "culto",
+      "pagina": 22,
+      "ancora_textual": "Annam é o pai",
+      "estado": "afirmado_no_manuscrito",
+      "aplicacao_canonica": false
+    }
+  ]
+}
