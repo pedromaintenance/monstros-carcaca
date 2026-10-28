@@ -1,0 +1,677 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ecologia política do Mar de Sangue",
+  "regiao_id": "regiao:costa-sul",
+  "estado": "propostas_narrativas_nao_canonicas",
+  "fatos_documentados": [
+    "Kuo-toa habitam cavernas e cidades subaquáticas; 342 EC marca sua invasão, derrotada nove anos depois por aliança de humanos e orcs. Sua fé pode criar sinais divinos e há autoridades religiosas, disciplinares e políticas.",
+    "Abissais são anfíbios antigos sem origem demoníaca; sua teocracia de Daegon usa proteção e tributos para criar dependência, podendo recorrer à violência e à escravidão.",
+    "A Mudança do Oceano ocorre em descendentes de abissais e povos da superfície; a resposta pessoal à transformação não é predeterminada.",
+    "Tritões e sereias mantêm cidades e alianças autônomas nas águas azuis. Tritões defendem recifes e rotas; sereias preservam história e comunicação cantada.",
+    "A fronteira entre águas vermelhas e azuis muda com correntes, tempestades e magia; há relatos de peixes mortos, recifes contaminados, desaparecimentos e templos submersos inesperados."
+  ],
+  "fontes": [
+    "Hack Carcaça Dungeon World(1).docx pp.14–15",
+    "data/lore/hack-carcaca-dw-movimentos-povos-integrais.json",
+    "data/propostas/fronteira-caatinga-costa-sul-hack.json",
+    "data/propostas/portomonte-ilhas-costa-sul-hack.json"
+  ],
+  "continuidade": [
+    "fronteira:pessoa:nilku",
+    "fronteira:trama:nove-ecos",
+    "costa-sul:rede:casco",
+    "costa-sul:rede:volta"
+  ],
+  "contagens": {
+    "zonas": 5,
+    "coletivos": 6,
+    "pessoas": 8,
+    "pactos": 4,
+    "fenomenos": 4,
+    "cenas": 6,
+    "tramas": 3
+  },
+  "zonas": [
+    {
+      "id": "mar-sangue:zona:santuario",
+      "nome": "Entremeios dos Santuários",
+      "rotina": "Criadores de ícones e intérpretes kuo-toa mantêm cerimônias e espaços comuns.",
+      "tensao": "A hierarquia procura controlar toda nova manifestação da fé coletiva.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-921"
+      ],
+      "ligacoes": [
+        "lugar:cavernas-kuo-toa"
+      ],
+      "estado": "proposta",
+      "aguas": "vermelhas",
+      "localizacao_confirmada": false
+    },
+    {
+      "id": "mar-sangue:zona:tributo",
+      "nome": "Pedras da Taxa de Maré",
+      "rotina": "Pactuantes abissais conferem obrigações de proteção marítima.",
+      "tensao": "Uma cláusula nova converte segurança temporária em dependência hereditária.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "aguas": "vermelhas",
+      "localizacao_confirmada": false
+    },
+    {
+      "id": "mar-sangue:zona:mudanca",
+      "nome": "Abrigo da Mudança do Oceano",
+      "rotina": "Famílias ajudam parentes cujo sangue abissal se manifesta mais tarde.",
+      "tensao": "Sacerdotes exigem retorno ao mar, independentemente da vontade individual.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-933"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "aguas": "vermelhas",
+      "localizacao_confirmada": false
+    },
+    {
+      "id": "mar-sangue:zona:correntes",
+      "nome": "Vigília da Fronteira Móvel",
+      "rotina": "Patrulheiros tritões avaliam sinais de contaminação em recifes.",
+      "tensao": "Salvar um recife significa deixar outra rota exposta.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-944"
+      ],
+      "ligacoes": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta",
+      "aguas": "transicao",
+      "localizacao_confirmada": false
+    },
+    {
+      "id": "mar-sangue:zona:cantos",
+      "nome": "Abrigo dos Cantos Cruzados",
+      "rotina": "Sereias transmitem memórias e informações pelas correntes.",
+      "tensao": "Uma canção de alerta também revela um refúgio.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "ligacoes": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta",
+      "aguas": "azuis",
+      "localizacao_confirmada": false
+    }
+  ],
+  "coletivos": [
+    {
+      "id": "mar-sangue:coletivo:vigia-da-fe",
+      "nome": "Monitores da Vigília de Daegon",
+      "rotina": "Autoridades disciplinares kuo-toa propostas vigiam a repetição de ritos.",
+      "tensao": "Uma fé viva vira ferramenta para punir quem discorda.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-922"
+      ],
+      "ligacoes": [
+        "lugar:cavernas-kuo-toa"
+      ],
+      "estado": "proposta",
+      "povo": "kuo-toa",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "mar-sangue:coletivo:sinal",
+      "nome": "Ofício do Sinal Impossível",
+      "rotina": "Artífices kuo-toa projetam símbolos em cerimônias coletivas.",
+      "tensao": "Um ícone que produz prodígio é reivindicado pela hierarquia.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920"
+      ],
+      "ligacoes": [
+        "lugar:cavernas-kuo-toa"
+      ],
+      "estado": "proposta",
+      "povo": "kuo-toa",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "mar-sangue:coletivo:contadores",
+      "nome": "Contadores da Maré Longa",
+      "rotina": "Negociadores abissais mantêm pactos e tributos durante gerações.",
+      "tensao": "Uma proteção legítima pode tornar-se uma forma de servidão.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "povo": "abissais",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "mar-sangue:coletivo:familias",
+      "nome": "Círculo das Mudanças Não Juradas",
+      "rotina": "Famílias de descendentes abissais oferecem ajuda sem impor filiação religiosa.",
+      "tensao": "O sacerdócio alega que a transformação obriga o retorno ao mar.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-933"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "povo": "abissais",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "mar-sangue:coletivo:patrulha",
+      "nome": "Guarda das Duas Marés",
+      "rotina": "Tritões de cidades autônomas coordenam patrulhas de fronteira.",
+      "tensao": "Nenhum capitão consegue defender todos os recifes.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-945"
+      ],
+      "ligacoes": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta",
+      "povo": "tritoes",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "mar-sangue:coletivo:cantoras",
+      "nome": "Tecedeiras das Correntes",
+      "rotina": "Sereias compartilham genealogias, mensagens e rotas cantadas.",
+      "tensao": "Uma cidade exige censurar uma memória desfavorável.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "ligacoes": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta",
+      "povo": "sereias",
+      "instituicao_confirmada": false
+    }
+  ],
+  "pessoas": [
+    {
+      "id": "mar-sangue:pessoa:nilku",
+      "nome": "Nilku das Marés Discutidas",
+      "rotina": "Kuo-toa dissidente da fronteira deseja questionar sacrifícios sem condenar todo o seu povo.",
+      "tensao": "Ser ouvido pode colocar os familiares em risco.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-921"
+      ],
+      "ligacoes": [
+        "fronteira:pessoa:nilku"
+      ],
+      "estado": "proposta",
+      "povo": "kuo-toa",
+      "reutiliza": "fronteira:pessoa:nilku"
+    },
+    {
+      "id": "mar-sangue:pessoa:shukk",
+      "nome": "Shukk da Imagem Vazia",
+      "rotina": "Artífice kuo-toa busca criar sinais rituais sem mentir sobre o que viu.",
+      "tensao": "Sua imagem começa a ser usada como justificativa para capturas.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920"
+      ],
+      "ligacoes": [
+        "lugar:cavernas-kuo-toa"
+      ],
+      "estado": "proposta",
+      "povo": "kuo-toa",
+      "reutiliza": null
+    },
+    {
+      "id": "mar-sangue:pessoa:maura",
+      "nome": "Maura da Última Cláusula",
+      "rotina": "Negociadora abissal prefere acordos a invasão imediata.",
+      "tensao": "A proteção que oferece pode escravizar descendentes dos pactuantes.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "povo": "abissal",
+      "reutiliza": null
+    },
+    {
+      "id": "mar-sangue:pessoa:serun",
+      "nome": "Serun da Mudança Lenta",
+      "rotina": "Descendente abissal procura ajuda para compreender o próprio corpo.",
+      "tensao": "Sacerdotes negam seu direito de recusar o retorno às profundezas.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-931"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "povo": "descendente_abissal",
+      "reutiliza": null
+    },
+    {
+      "id": "mar-sangue:pessoa:rhel",
+      "nome": "Rhel das Correntes Fundas",
+      "rotina": "Sacerdote abissal interpreta marés para sustentar autoridade.",
+      "tensao": "Teme manifestações da fé kuo-toa que não consegue controlar.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-933",
+        "movimento-povo:paragrafo-934"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "povo": "abissal",
+      "reutiliza": null
+    },
+    {
+      "id": "mar-sangue:pessoa:kalira",
+      "nome": "Kalira da Corrente Falha",
+      "rotina": "Patrulheira tritã tenta proteger moradores da fronteira contaminada.",
+      "tensao": "Seu comando deseja recuar sem resgatar a população.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-944"
+      ],
+      "ligacoes": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta",
+      "povo": "tritao",
+      "reutiliza": null
+    },
+    {
+      "id": "mar-sangue:pessoa:maelis",
+      "nome": "Maelis da Canção Interrompida",
+      "rotina": "Sereia preserva rotas e genealogias nas melodias.",
+      "tensao": "Um alerta verdadeiro revela o abrigo de inocentes.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "ligacoes": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta",
+      "povo": "sereia",
+      "reutiliza": null
+    },
+    {
+      "id": "mar-sangue:pessoa:leina",
+      "nome": "Leina da Nota Desviada",
+      "rotina": "Sereia ajuda marinheiros perdidos por meio de cantos.",
+      "tensao": "Um patrulheiro quer usar sua voz para atrair pessoas a uma armadilha.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-949",
+        "movimento-povo:paragrafo-950"
+      ],
+      "ligacoes": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta",
+      "povo": "sereia",
+      "reutiliza": null
+    }
+  ],
+  "pactos": [
+    {
+      "id": "mar-sangue:pacto:tributo",
+      "nome": "Tributo por Passagem Segura",
+      "rotina": "Uma comunidade poderia receber proteção marítima mediante pagamento periódico.",
+      "tensao": "Não pagar pode significar perder acesso a uma rota anteriormente comum.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-936",
+        "movimento-povo:paragrafo-932"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "vigente": false
+    },
+    {
+      "id": "mar-sangue:pacto:azuis",
+      "nome": "Juramento das Águas Livres",
+      "rotina": "Aliados tritões, sereias e insulares poderiam negociar defesa mútua.",
+      "tensao": "O juramento protege o mar limpo mas pode abandonar quem vive na água vermelha.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-945",
+        "movimento-povo:paragrafo-944"
+      ],
+      "ligacoes": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta",
+      "vigente": false
+    },
+    {
+      "id": "mar-sangue:pacto:canto",
+      "nome": "Direito de Calar uma Corrente",
+      "rotina": "Mensageiras poderiam concordar em não divulgar certos itinerários.",
+      "tensao": "O silêncio que protege um povoado pode impedir socorro.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "ligacoes": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta",
+      "vigente": false
+    },
+    {
+      "id": "mar-sangue:pacto:consentimento",
+      "nome": "Consentimento da Mudança",
+      "rotina": "Famílias poderiam cuidar de descendentes abissais sem exigir obediência sacerdotal.",
+      "tensao": "A teocracia classifica o cuidado como afronta a Daegon.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-933"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "vigente": false
+    }
+  ],
+  "fenomenos": [
+    {
+      "id": "mar-sangue:fenomeno:limite",
+      "nome": "A Linha que Não Dorme",
+      "rotina": "A fronteira vermelho/azul muda com correntes e tempestades.",
+      "tensao": "Um posto reivindica soberania sobre recife que mudou de condição.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-949"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "ocorrencia_individual_confirmada": false
+    },
+    {
+      "id": "mar-sangue:fenomeno:peixes",
+      "nome": "O Silêncio dos Peixes",
+      "rotina": "Peixes mortos podem surgir onde a água antes parecia segura.",
+      "tensao": "Um prodígio sem explicação vira pretexto para condenar um povo.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-944",
+        "movimento-povo:paragrafo-913"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "ocorrencia_individual_confirmada": false
+    },
+    {
+      "id": "mar-sangue:fenomeno:templo",
+      "nome": "O Templo que o Mapa Negava",
+      "rotina": "Templos podem aparecer onde mapas antes indicavam fundo oceânico.",
+      "tensao": "Um sacerdote exige tributo sobre ruína cuja origem é desconhecida.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-948",
+        "movimento-povo:paragrafo-931"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "ocorrencia_individual_confirmada": false
+    },
+    {
+      "id": "mar-sangue:fenomeno:voz",
+      "nome": "A Corrente que Leva Vozes",
+      "rotina": "Mensagens podem atravessar distâncias pelas melodias.",
+      "tensao": "O aviso pode ser interceptado e expor refúgio protegido.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-942"
+      ],
+      "ligacoes": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta",
+      "ocorrencia_individual_confirmada": false
+    }
+  ],
+  "cenas": [
+    {
+      "id": "mar-sangue:cena:decima-concha",
+      "nome": "A Décima Concha",
+      "rotina": "Maura apresenta tributo antigo; Rhel exige pagamento que não constava do pacto.",
+      "tensao": "Aceitar garante paz breve; negar pode desencadear violência.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-936",
+        "movimento-povo:paragrafo-933"
+      ],
+      "ligacoes": [
+        "mar-sangue:pessoa:maura",
+        "mar-sangue:pessoa:rhel"
+      ],
+      "estado": "proposta",
+      "elenco": [
+        "mar-sangue:pessoa:maura",
+        "mar-sangue:pessoa:rhel"
+      ],
+      "escolhas": [
+        "Conferir pacto",
+        "Negociar alternativa",
+        "Desafiar cobrança"
+      ]
+    },
+    {
+      "id": "mar-sangue:cena:icone",
+      "nome": "O Ícone que Aprendeu a Mentir",
+      "rotina": "Shukk cria uma imagem e um sinal impossível surge entre devotos.",
+      "tensao": "Monitores desejam usar o prodígio para justificar capturas.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920"
+      ],
+      "ligacoes": [
+        "mar-sangue:pessoa:shukk",
+        "mar-sangue:pessoa:nilku"
+      ],
+      "estado": "proposta",
+      "elenco": [
+        "mar-sangue:pessoa:shukk",
+        "mar-sangue:pessoa:nilku"
+      ],
+      "escolhas": [
+        "Investigar manifestação",
+        "Contestar interpretação",
+        "Proteger testemunhas"
+      ]
+    },
+    {
+      "id": "mar-sangue:cena:pele",
+      "nome": "A Pele que Não Vota",
+      "rotina": "Serun passa pela Mudança do Oceano diante da família.",
+      "tensao": "Um sacerdote exige seu retorno às profundezas sem consultar sua vontade.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-933"
+      ],
+      "ligacoes": [
+        "mar-sangue:pessoa:serun",
+        "mar-sangue:pessoa:maura"
+      ],
+      "estado": "proposta",
+      "elenco": [
+        "mar-sangue:pessoa:serun",
+        "mar-sangue:pessoa:maura"
+      ],
+      "escolhas": [
+        "Proteger escolha",
+        "Negociar acolhimento",
+        "Questionar rito"
+      ]
+    },
+    {
+      "id": "mar-sangue:cena:recife",
+      "nome": "O Recife que Mudou de Lado",
+      "rotina": "Kalira descobre sinais de contaminação na faixa móvel.",
+      "tensao": "A defesa de outros recifes se enfraquece se ela tentar salvar todos.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-944"
+      ],
+      "ligacoes": [
+        "mar-sangue:pessoa:kalira"
+      ],
+      "estado": "proposta",
+      "elenco": [
+        "mar-sangue:pessoa:kalira"
+      ],
+      "escolhas": [
+        "Evacuar",
+        "Investigar fonte",
+        "Redistribuir defesa"
+      ]
+    },
+    {
+      "id": "mar-sangue:cena:canto",
+      "nome": "A Canção que Revelou Dois Lugares",
+      "rotina": "Maelis envia mensagem verdadeira sobre patrulha em perigo.",
+      "tensao": "O canto também revela a localização de um refúgio.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "ligacoes": [
+        "mar-sangue:pessoa:maelis",
+        "mar-sangue:pessoa:leina"
+      ],
+      "estado": "proposta",
+      "elenco": [
+        "mar-sangue:pessoa:maelis",
+        "mar-sangue:pessoa:leina"
+      ],
+      "escolhas": [
+        "Mudar melodia",
+        "Transmitir parte",
+        "Arriscar busca silenciosa"
+      ]
+    },
+    {
+      "id": "mar-sangue:cena:testemunha",
+      "nome": "A Testemunha de Nove Anos",
+      "rotina": "Nilku pede hospitalidade para explicar um ritual atual.",
+      "tensao": "A memória da guerra antiga faz aliados exigirem sua prisão.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-921",
+        "movimento-povo:paragrafo-945"
+      ],
+      "ligacoes": [
+        "fronteira:pessoa:nilku",
+        "fronteira:trama:nove-ecos"
+      ],
+      "estado": "proposta",
+      "elenco": [
+        "mar-sangue:pessoa:nilku"
+      ],
+      "escolhas": [
+        "Ouvir relato",
+        "Investigar provas",
+        "Proteger testemunha"
+      ]
+    }
+  ],
+  "tramas": [
+    {
+      "id": "mar-sangue:trama:tarifa",
+      "nome": "Quando o Tributo Vira Fé",
+      "rotina": "Uma proteção negociada se transforma em dependência hereditária.",
+      "tensao": "Romper a cobrança pode salvar uma geração e colocar outra em perigo.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-936",
+        "movimento-povo:paragrafo-932"
+      ],
+      "ligacoes": [
+        "regiao:costa-sul"
+      ],
+      "estado": "proposta",
+      "cenas": [
+        "mar-sangue:cena:decima-concha",
+        "mar-sangue:cena:pele"
+      ]
+    },
+    {
+      "id": "mar-sangue:trama:deus",
+      "nome": "O Deus que Alguém Precisava Ver",
+      "rotina": "Uma crença kuo-toa produz sinais disputados pela hierarquia abissal.",
+      "tensao": "Destruir o símbolo pode intensificar a fé que o sustenta.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-933"
+      ],
+      "ligacoes": [
+        "lugar:cavernas-kuo-toa"
+      ],
+      "estado": "proposta",
+      "cenas": [
+        "mar-sangue:cena:icone",
+        "mar-sangue:cena:testemunha"
+      ]
+    },
+    {
+      "id": "mar-sangue:trama:fronteira",
+      "nome": "A Guerra sem Linha no Mapa",
+      "rotina": "Correntes móveis colocam pactos autônomos de defesa em crise.",
+      "tensao": "Salvar o recife ameaçado exige negociar quem ficará sem proteção.",
+      "referencias_hack": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-948"
+      ],
+      "ligacoes": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta",
+      "cenas": [
+        "mar-sangue:cena:recife",
+        "mar-sangue:cena:canto"
+      ]
+    }
+  ],
+  "limites": [
+    "Abissais marinhos não são demônios do Abismo no oeste.",
+    "Zonas e coletivos não são cidades, governos ou localizações canônicas.",
+    "Nenhum episódio individual aconteceu sem decisão do Mestre.",
+    "Não generalizar todos os kuo-toa como sacrificadores nem obrigar descendentes abissais a adotar teocracia.",
+    "Não transformar tritões e sereias em reino centralizado.",
+    "Movimentos do Hack servem de inspiração social, não atribuição mecânica."
+  ],
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false
+}
