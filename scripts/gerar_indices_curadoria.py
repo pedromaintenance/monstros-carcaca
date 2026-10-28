@@ -259,6 +259,33 @@ def build():
     atlas_cultural_xiv=load("data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json")
     preconquista_xv=load("data/worldbuilding/eldroth-preconquista-ciclo15.json")
     ocupacao_xvi=load("data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json")
+    vandar_xvii=load("data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json")
+    categorias_xvii=("fases","tecidos_urbanos","modalidades_de_prova","situacoes_de_morte",
+        "papeis_sociais","modelos_do_dominio","vinhetas")
+    registros_xvii=[{**entry,"categoria_indice":cat}
+        for cat in categorias_xvii for entry in vandar_xvii[cat]]
+    if len(registros_xvii)!=33:
+        raise ValueError("Ciclo XVII exige 33 registros de consulta de Vandar.")
+    def indexar_vandar(extract):
+        groups=defaultdict(set)
+        for entry in registros_xvii:
+            v=extract(entry)
+            for x in (v if isinstance(v,list) else [v]):
+                if x is not None and x!="":
+                    groups[str(x)].add(entry["id"])
+        return {k:sorted(v) for k,v in sorted(groups.items())}
+    indexes_vandar_xvii={
+        "by_categoria":indexar_vandar(lambda x:x["categoria_indice"]),
+        "by_dominio":indexar_vandar(lambda x:x.get("dominio",x.get("campo_de_interesse"))),
+        "by_modalidade":indexar_vandar(lambda x:x.get("modalidade")),
+        "by_distincao_juridica":indexar_vandar(lambda x:x.get("distincao_juridica_proposta")),
+        "by_tecido_urbano":indexar_vandar(lambda x:x.get("tecido_urbano_id")),
+        "by_pagina_manuscrito":indexar_vandar(lambda x:[
+            str(p["pagina"]) for p in ([x["fonte_contextual"]] if x.get("fonte_contextual")
+              else ([x["evidencia"]] if x.get("evidencia") else
+              ([x["evidencia_comum"]] if x.get("evidencia_comum") else [])))]),
+        "by_estado":indexar_vandar(lambda x:x.get("estado"))
+    }
     categorias_xvi=("mecanismos","posicoes_sociais","modelos_de_regime","dilemas","vinhetas")
     entidades_xvi=[{**entry,"categoria_indice":cat}
        for cat in categorias_xvi for entry in ocupacao_xvi[cat]]
@@ -932,6 +959,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "vandar_memory_and_dead":"vandar-memory-and-dead.json",
+        "vandar_memory_and_dead_indexes":"vandar-memory-and-dead-indexes.json",
         "eldroth_sylara_occupation":"eldroth-sylara-occupation.json",
         "eldroth_sylara_occupation_indexes":"eldroth-sylara-occupation-indexes.json",
         "eldroth_preconquest":"eldroth-preconquest.json",
@@ -1064,6 +1093,12 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_fases_vandar_xvii":len(vandar_xvii["fases"]),
+        "total_tecidos_urbanos_vandar_xvii_propostos":len(vandar_xvii["tecidos_urbanos"]),
+        "total_modalidades_prova_vandar_xvii":len(vandar_xvii["modalidades_de_prova"]),
+        "total_situacoes_morte_vandar_xvii":len(vandar_xvii["situacoes_de_morte"]),
+        "total_papeis_sociais_vandar_xvii":len(vandar_xvii["papeis_sociais"]),
+        "total_vinhetas_vandar_xvii":len(vandar_xvii["vinhetas"]),
         "total_mecanismos_worldbuilding_xvi_propostos":len(ocupacao_xvi["mecanismos"]),
         "total_posicoes_sociais_worldbuilding_xvi":len(ocupacao_xvi["posicoes_sociais"]),
         "total_modelos_regime_worldbuilding_xvi":len(ocupacao_xvi["modelos_de_regime"]),
@@ -1210,6 +1245,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["vandar_memory_and_dead"]:vandar_xvii,
+           files["vandar_memory_and_dead_indexes"]:indexes_vandar_xvii,
            files["eldroth_sylara_occupation"]:ocupacao_xvi,
            files["eldroth_sylara_occupation_indexes"]:indices_ocupacao_xvi,
            files["eldroth_preconquest"]:preconquista_xv,
