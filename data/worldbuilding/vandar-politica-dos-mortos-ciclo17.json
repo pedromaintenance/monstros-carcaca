@@ -1,0 +1,680 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XVII — Vandar, a cidade que deixou de poder provar seus mortos",
+  "estado": "dossie_de_worldbuilding_em_revisao",
+  "aprovacao_autoral": false,
+  "efeito_canonico_automatico": false,
+  "lugar_id": "lugar:vandar",
+  "regiao_id": "regiao:eldroth",
+  "governante_atual_documentado": "Lorde Damaris Blackthorn",
+  "fonte_autoral": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "atlas_anterior": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+  "linha_do_tempo": {
+    "fundacao_ec": null,
+    "queda_ec": null,
+    "comeco_dominio_damaris_ec": null,
+    "numero_de_mortos": null,
+    "numero_de_sobreviventes": null
+  },
+  "fatos_textuais": [
+    {
+      "id": "worldbuilding-xvii:fato:prosperidade",
+      "fonte": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Vandar outrora era uma cidade próspera.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "afirmacao": "Vandar foi descrita como cidade próspera antes de sua ruína."
+    },
+    {
+      "id": "worldbuilding-xvii:fato:ruina",
+      "fonte": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "A cidade foi reduzida a ruínas e se tornou covil de Lorde Damaris Blackthorn.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "afirmacao": "Vandar encontra-se arruinada e ocupada por Damaris."
+    },
+    {
+      "id": "worldbuilding-xvii:fato:necromancia",
+      "fonte": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Damaris comanda exército de mortos-vivos.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "afirmacao": "O governante das ruínas dispõe de exército de mortos-vivos."
+    },
+    {
+      "id": "worldbuilding-xvii:fato:incursoes",
+      "fonte": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "As ruínas servem como base de incursões contra regiões ainda não subjugadas.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "afirmacao": "Vandar tem função estratégica para incursões contra territórios ainda resistentes."
+    }
+  ],
+  "limites": [
+    "Não atribuir a Vandar data de fundação, data da ruína, população, área, planta de ruas ou tipo econômico.",
+    "Não decidir sem fonte se Damaris causou a destruição original ou tomou a cidade já arruinada.",
+    "A existência de mortos-vivos sob Damaris não demonstra que todos sejam ex-cidadãos, que conservem alma ou que possuam identidade.",
+    "Nenhum templo, cemitério, cartório, tribunal, arquivo, bairro, moeda, estrutura de governo ou profissão formal é confirmado.",
+    "Pessoas reivindicantes e testemunhas são papéis imaginados, não NPCs confirmados, nem residentes atuais de Vandar.",
+    "Categorizações de mortos/desaparecidos são instrumentos de debate, não leis existentes nem mecânicas de D&D.",
+    "Modelos de ocupação, vinhetas, provas e reconstruções sociais não foram aprovados ou ocorridos.",
+    "Não alterar a geografia: Vandar é lugar distinto de Eldroth, ambos pertencentes à região da asa direita; Ironwood não integra Vandar.",
+    "Não alterar Damaris ou atribuir o domínio de Vandar a Sylara.",
+    "Não alterar as sete criaturas canônicas ou inventar rituais necromânticos concretos."
+  ],
+  "resumo": {
+    "fases": 3,
+    "tecidos_urbanos": 8,
+    "modalidades_de_prova": 5,
+    "situacoes_de_morte": 4,
+    "papeis_sociais": 6,
+    "modelos_do_dominio": 3,
+    "vinhetas": 4,
+    "decisoes_pendentes": 8
+  },
+  "fases": [
+    {
+      "id": "worldbuilding-xvii:fase:anterior-a-ruina",
+      "nome": "Cidade próspera anterior à ruína",
+      "ano_inicial_ec": null,
+      "ano_final_ec": null,
+      "estatuto": "fase_documentada_sem_data",
+      "evidencia": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Vandar foi outrora cidade próspera.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "afirmacoes_permitidas": [
+        "Existência de uma cidade considerada próspera.",
+        "Houve vida urbana antes da ruína."
+      ],
+      "nao_deduzir": [
+        "Data de fundação.",
+        "Tamanho da população.",
+        "Forma de governo.",
+        "Natureza da prosperidade."
+      ]
+    },
+    {
+      "id": "worldbuilding-xvii:fase:ruptura-desconhecida",
+      "nome": "Processo não datado de destruição e tomada",
+      "ano_inicial_ec": null,
+      "ano_final_ec": null,
+      "estatuto": "lacuna_historica_explicitada",
+      "evidencia": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Vandar foi reduzida a ruína e transformada em covil por Damaris.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "afirmacoes_permitidas": [
+        "A cidade mudou da prosperidade para a condição de ruína.",
+        "Damaris ocupa as ruínas."
+      ],
+      "nao_deduzir": [
+        "Um cerco específico.",
+        "Uma peste.",
+        "A causa e a duração da destruição.",
+        "O autor do primeiro ataque."
+      ]
+    },
+    {
+      "id": "worldbuilding-xvii:fase:ruinas-ocupadas",
+      "nome": "Ruínas usadas por Damaris",
+      "ano_inicial_ec": null,
+      "ano_final_ec": null,
+      "estatuto": "fase_documentada_sem_data",
+      "evidencia": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Damaris comanda mortos-vivos e usa as ruínas como base de incursões.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "afirmacoes_permitidas": [
+        "Damaris controla as ruínas e um exército de mortos-vivos.",
+        "Há incursões contra terras não totalmente subjugadas."
+      ],
+      "nao_deduzir": [
+        "Origem de cada morto-vivo.",
+        "Existência de cidadãos vivos no interior das ruínas.",
+        "Estrutura de comando militar detalhada.",
+        "Condição atual de cada cadáver."
+      ]
+    }
+  ],
+  "tecidos_urbanos": [
+    {
+      "id": "worldbuilding-xvii:tecido:moradia-e-bairros",
+      "nome_editorial": "A cidade onde se morava",
+      "dominio": "habitação_e_vizinhança",
+      "estado": "pergunta_de_reconstrucao_nao_confirmada",
+      "afirmacao_minima_documentada": "Vandar era uma cidade próspera e hoje está em ruínas sob Damaris; a estrutura específica desta dimensão urbana não foi descrita.",
+      "pergunta_historica": "Quem possuía casas, quem alugava e quem vivia em espaços comuns?",
+      "desdobramento_possivel": "As famílias poderiam exigir reconhecimento do lar mesmo após a destruição do endereço.",
+      "risco_de_falsa_precisao": "A lembrança de um bairro pode ser disputada por quem nunca o viu.",
+      "limite_documental": "Uma cidade próspera pressupõe vida urbana, mas não confirma tamanho, muralha, bairros nem forma de residência.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Vandar descrita apenas como cidade outrora próspera, hoje arruinada.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "instituicao_urbana_confirmada": false,
+      "edificio_confirmado": null,
+      "nome_de_morador_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvii:tecido:trabalho-e-oficios",
+      "nome_editorial": "A prosperidade tinha mãos",
+      "dominio": "trabalho_e_producao",
+      "estado": "pergunta_de_reconstrucao_nao_confirmada",
+      "afirmacao_minima_documentada": "Vandar era uma cidade próspera e hoje está em ruínas sob Damaris; a estrutura específica desta dimensão urbana não foi descrita.",
+      "pergunta_historica": "Quem produzia alimento, fabricava objetos, mantinha ruas e executava trabalho pouco reconhecido?",
+      "desdobramento_possivel": "Ofícios poderiam transmitir memórias de ruas e ferramentas que mapas oficiais já não guardam.",
+      "risco_de_falsa_precisao": "Reconstituir riqueza sem trabalho criaria uma cidade aristocrática sem gente.",
+      "limite_documental": "Próspera não significa necessariamente mercantil, agrícola, mineira ou mágica; a base econômica de Vandar não é descrita.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Vandar descrita apenas como cidade outrora próspera, hoje arruinada.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "instituicao_urbana_confirmada": false,
+      "edificio_confirmado": null,
+      "nome_de_morador_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvii:tecido:abastecimento",
+      "nome_editorial": "Água, pão e circulação",
+      "dominio": "infraestrutura_e_subsistencia",
+      "estado": "pergunta_de_reconstrucao_nao_confirmada",
+      "afirmacao_minima_documentada": "Vandar era uma cidade próspera e hoje está em ruínas sob Damaris; a estrutura específica desta dimensão urbana não foi descrita.",
+      "pergunta_historica": "Quem distribuía água e comida; que trajetos eram usados e quem ficava de fora?",
+      "desdobramento_possivel": "Conhecimento de abastecimento pode revelar uma história social que a glória de Vandar oculta.",
+      "risco_de_falsa_precisao": "Não criar canal, ponte ou porto por inferência.",
+      "limite_documental": "A cidade tinha de sustentar seus habitantes, mas as fontes não identificam fonte de água, importações nem campos.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Vandar descrita apenas como cidade outrora próspera, hoje arruinada.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "instituicao_urbana_confirmada": false,
+      "edificio_confirmado": null,
+      "nome_de_morador_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvii:tecido:escrita-e-registros",
+      "nome_editorial": "A cidade que deixava provas",
+      "dominio": "arquivos_e_documentos",
+      "estado": "pergunta_de_reconstrucao_nao_confirmada",
+      "afirmacao_minima_documentada": "Vandar era uma cidade próspera e hoje está em ruínas sob Damaris; a estrutura específica desta dimensão urbana não foi descrita.",
+      "pergunta_historica": "Como moradores provavam nomes, dívidas, filiação e direitos sobre espaços?",
+      "desdobramento_possivel": "Registros, se existiram, poderiam ser contestados depois da ruína.",
+      "risco_de_falsa_precisao": "Um documento preservado pode ser tanto prova de direito quanto instrumento de expropriação.",
+      "limite_documental": "Documentos são hipótese de reconstrução, não um cartório ou biblioteca de Vandar historicamente atestado.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Vandar descrita apenas como cidade outrora próspera, hoje arruinada.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "instituicao_urbana_confirmada": false,
+      "edificio_confirmado": null,
+      "nome_de_morador_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvii:tecido:vida-politica",
+      "nome_editorial": "A autoridade antes de Damaris",
+      "dominio": "governo_e_instituicoes",
+      "estado": "pergunta_de_reconstrucao_nao_confirmada",
+      "afirmacao_minima_documentada": "Vandar era uma cidade próspera e hoje está em ruínas sob Damaris; a estrutura específica desta dimensão urbana não foi descrita.",
+      "pergunta_historica": "Quem arbitrava conflitos antes do domínio necromântico?",
+      "desdobramento_possivel": "Reconstruir divergências anteriores impede supor um passado harmonioso.",
+      "risco_de_falsa_precisao": "Nenhum conselho, prefeito, rei ou magistrado é documentado.",
+      "limite_documental": "Não sabemos se Vandar era município autônomo, cidade-templo, república, senhorio ou outra formação.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Vandar descrita apenas como cidade outrora próspera, hoje arruinada.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "instituicao_urbana_confirmada": false,
+      "edificio_confirmado": null,
+      "nome_de_morador_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvii:tecido:cultos-e-sepultamento",
+      "nome_editorial": "Os vivos diante dos mortos",
+      "dominio": "religiao_e_luto",
+      "estado": "pergunta_de_reconstrucao_nao_confirmada",
+      "afirmacao_minima_documentada": "Vandar era uma cidade próspera e hoje está em ruínas sob Damaris; a estrutura específica desta dimensão urbana não foi descrita.",
+      "pergunta_historica": "Quem podia ser sepultado, lembrado, transportado ou deixado sem nome?",
+      "desdobramento_possivel": "Diferentes tradições religiosas podem reclamar deveres incompatíveis com os mortos.",
+      "risco_de_falsa_precisao": "Não atribuir uma divindade única à cidade com base em religião regional.",
+      "limite_documental": "A Carcaça tem panteões distintos; nenhum templo, cemitério ou rito funerário de Vandar está especificado.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 24,
+        "sintese": "Diversidade religiosa do continente sem rito vandariano definido.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "instituicao_urbana_confirmada": false,
+      "edificio_confirmado": null,
+      "nome_de_morador_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvii:tecido:circulacao-e-protecao",
+      "nome_editorial": "Ruas para viver, caminhos para fugir",
+      "dominio": "circulacao_e_defesa",
+      "estado": "pergunta_de_reconstrucao_nao_confirmada",
+      "afirmacao_minima_documentada": "Vandar era uma cidade próspera e hoje está em ruínas sob Damaris; a estrutura específica desta dimensão urbana não foi descrita.",
+      "pergunta_historica": "Quem tinha liberdade de circular e quem precisava de proteção?",
+      "desdobramento_possivel": "Uma via comum pode virar corredor de incursão sem que saibamos o traçado.",
+      "risco_de_falsa_precisao": "Propor rotas operacionais ou distância real falsearia o mapa.",
+      "limite_documental": "O uso militar das ruínas hoje não confirma que a cidade antes era fortificada ou organizada por ruas militares.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Vandar descrita apenas como cidade outrora próspera, hoje arruinada.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "instituicao_urbana_confirmada": false,
+      "edificio_confirmado": null,
+      "nome_de_morador_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvii:tecido:parentesco-e-heranca",
+      "nome_editorial": "Casas que sobreviveram aos moradores",
+      "dominio": "parentesco_e_propriedade",
+      "estado": "pergunta_de_reconstrucao_nao_confirmada",
+      "afirmacao_minima_documentada": "Vandar era uma cidade próspera e hoje está em ruínas sob Damaris; a estrutura específica desta dimensão urbana não foi descrita.",
+      "pergunta_historica": "Quando morre alguém sem corpo identificável, quem reivindica sua casa ou seus bens?",
+      "desdobramento_possivel": "A propriedade pode ser lembrança, moradia, sustento e objeto de reivindicação concorrente.",
+      "risco_de_falsa_precisao": "Não presumir que todos os mortos-vivos eram antigos moradores.",
+      "limite_documental": "Ninguém documentou famílias, sobrenomes, linhagens ou sistema hereditário de Vandar.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Vandar descrita apenas como cidade outrora próspera, hoje arruinada.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "instituicao_urbana_confirmada": false,
+      "edificio_confirmado": null,
+      "nome_de_morador_confirmado": null,
+      "quantidade_confirmada": null
+    }
+  ],
+  "modalidades_de_prova": [
+    {
+      "id": "worldbuilding-xvii:prova:prova-por-testemunho",
+      "nome_editorial": "A voz de quem ainda lembra",
+      "modalidade": "testemunho_oral",
+      "estado": "hipotese_de_verificacao_nao_adotada",
+      "utilizacao_possivel": "Moradores ou descendentes poderiam reconstituir nomes e endereços por memória compartilhada.",
+      "risco_de_falsa_prova": "Duas lembranças incompatíveis podem coexistir sem que uma seja fraude.",
+      "cautela_etica": "Memória pode ser corrigida por outras vozes sem criar tribunal infalível.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Cidade arruinada e ocupação por exército de mortos-vivos.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "arquivo_ou_rito_efetivamente_descoberto": false,
+      "prova_conclusiva": false
+    },
+    {
+      "id": "worldbuilding-xvii:prova:prova-por-objeto",
+      "nome_editorial": "O objeto que guarda um nome",
+      "modalidade": "vestigio_material",
+      "estado": "hipotese_de_verificacao_nao_adotada",
+      "utilizacao_possivel": "Ferramentas, insígnias ou objetos comuns, se encontrados, poderiam orientar identificação.",
+      "risco_de_falsa_prova": "Um objeto pode trocar de dono, ser encontrado longe do corpo ou ter sido saqueado.",
+      "cautela_etica": "Associação entre objeto e morto não equivale a identidade comprovada.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Cidade arruinada e ocupação por exército de mortos-vivos.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "arquivo_ou_rito_efetivamente_descoberto": false,
+      "prova_conclusiva": false
+    },
+    {
+      "id": "worldbuilding-xvii:prova:prova-por-registro",
+      "nome_editorial": "A escrita que sobrevive ou mente",
+      "modalidade": "registro_hipotetico",
+      "estado": "hipotese_de_verificacao_nao_adotada",
+      "utilizacao_possivel": "Um documento antigo, se existir, poderia indicar heranças, contratos ou localização de casas.",
+      "risco_de_falsa_prova": "O documento pode ser falsificado, desatualizado ou produzido por uma autoridade ilegítima.",
+      "cautela_etica": "Nenhum arquivo de Vandar foi localizado nas fontes.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Cidade arruinada e ocupação por exército de mortos-vivos.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "arquivo_ou_rito_efetivamente_descoberto": false,
+      "prova_conclusiva": false
+    },
+    {
+      "id": "worldbuilding-xvii:prova:prova-por-rito",
+      "nome_editorial": "A memória guardada por um rito",
+      "modalidade": "rito_e_memoria",
+      "estado": "hipotese_de_verificacao_nao_adotada",
+      "utilizacao_possivel": "Cerimônias fúnebres possíveis poderiam sustentar reconhecimento comunitário.",
+      "risco_de_falsa_prova": "Uma comunidade pode não reconhecer o culto de outra; ausência de rito não prova ausência de pessoa.",
+      "cautela_etica": "Nenhum cemitério, sacerdote ou cerimônia vandariana foi confirmado.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 24,
+        "sintese": "Pluralidade de cultos no continente.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "arquivo_ou_rito_efetivamente_descoberto": false,
+      "prova_conclusiva": false
+    },
+    {
+      "id": "worldbuilding-xvii:prova:prova-por-necromancia",
+      "nome_editorial": "A palavra de um corpo reanimado",
+      "modalidade": "testemunho_sob_magia",
+      "estado": "hipotese_de_verificacao_nao_adotada",
+      "utilizacao_possivel": "A necromancia poderia suscitar alegações de identidade e memória, sem que o morto-vivo esteja apto a depor.",
+      "risco_de_falsa_prova": "Magia, compulsão ou imitação podem destruir a confiabilidade e a autonomia do testemunho.",
+      "cautela_etica": "O exército de Damaris não prova que os mortos conservam memória, consciência ou consentimento.",
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Cidade arruinada e ocupação por exército de mortos-vivos.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "arquivo_ou_rito_efetivamente_descoberto": false,
+      "prova_conclusiva": false
+    }
+  ],
+  "situacoes_de_morte": [
+    {
+      "id": "worldbuilding-xvii:situacao:ausencia",
+      "nome_editorial": "Desaparecido, sem morte comprovada",
+      "distincao_juridica_proposta": "sem_corpo_confirmado",
+      "estado": "categoria_de_debate_nao_vigente",
+      "cautela": "A ausência não deveria ser convertida automaticamente em óbito, deserção ou traição.",
+      "pergunta_aberta": "Quem pode administrar bens e proteger filhos enquanto a pessoa não retorna?",
+      "regimento_aprovado": false,
+      "caso_real_atestado": false,
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "A cidade está em ruínas; mortos-vivos são utilizados sob Damaris, sem informação sobre identidades individuais.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      }
+    },
+    {
+      "id": "worldbuilding-xvii:situacao:morte_identificada",
+      "nome_editorial": "Morto identificado por evidência",
+      "distincao_juridica_proposta": "morte_alegada_com_identificacao",
+      "estado": "categoria_de_debate_nao_vigente",
+      "cautela": "Identificar restos não estabelece religião, culpa, destino da alma ou direitos de terceiros.",
+      "pergunta_aberta": "Quem contesta a identificação e com que evidência?",
+      "regimento_aprovado": false,
+      "caso_real_atestado": false,
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "A cidade está em ruínas; mortos-vivos são utilizados sob Damaris, sem informação sobre identidades individuais.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      }
+    },
+    {
+      "id": "worldbuilding-xvii:situacao:animacao_sem_identidade",
+      "nome_editorial": "Corpo animado sem identidade demonstrada",
+      "distincao_juridica_proposta": "morto_vivo_sem_historia_confirmada",
+      "estado": "categoria_de_debate_nao_vigente",
+      "cautela": "Animação corporal não prova vontade do antigo dono, nem seu consentimento ou sua identidade.",
+      "pergunta_aberta": "Quem protege os interesses da pessoa original se o corpo é usado como arma?",
+      "regimento_aprovado": false,
+      "caso_real_atestado": false,
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "A cidade está em ruínas; mortos-vivos são utilizados sob Damaris, sem informação sobre identidades individuais.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      }
+    },
+    {
+      "id": "worldbuilding-xvii:situacao:identidade_contestada",
+      "nome_editorial": "Reanimado que parece reconhecer pessoas",
+      "distincao_juridica_proposta": "identidade_em_disputa",
+      "estado": "categoria_de_debate_nao_vigente",
+      "cautela": "Reconhecimento aparente não deve ser confundido com memória genuína ou plena capacidade de decidir.",
+      "pergunta_aberta": "Um ser reanimado pode ter interesses próprios diferentes dos do morto?",
+      "regimento_aprovado": false,
+      "caso_real_atestado": false,
+      "fonte_contextual": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "A cidade está em ruínas; mortos-vivos são utilizados sob Damaris, sem informação sobre identidades individuais.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      }
+    }
+  ],
+  "papeis_sociais": [
+    {
+      "id": "worldbuilding-xvii:papel:descendente",
+      "nome_editorial": "Herdeiro ou descendente possível",
+      "campo_de_interesse": "reivindicacao_familiar",
+      "estado": "papel_exploratorio_nao_personagem",
+      "motivacao_hipotetica": "Pode reclamar um lar, um túmulo ou a memória de alguém.",
+      "limite": "Herança não comprova que a pessoa desaparecida morreu.",
+      "personagem_confirmado": false,
+      "povo_de_origem_confirmado": null,
+      "onde_mora_confirmado": null
+    },
+    {
+      "id": "worldbuilding-xvii:papel:ex-morador",
+      "nome_editorial": "Sobrevivente de antiga moradia",
+      "campo_de_interesse": "memoria_urbana",
+      "estado": "papel_exploratorio_nao_personagem",
+      "motivacao_hipotetica": "Conhece usos de espaços e relações sociais de antes da ruína.",
+      "limite": "Não se sabe se pessoas vivas permanecem nas ruínas; não fixar residência.",
+      "personagem_confirmado": false,
+      "povo_de_origem_confirmado": null,
+      "onde_mora_confirmado": null
+    },
+    {
+      "id": "worldbuilding-xvii:papel:guardiao-de-memoria",
+      "nome_editorial": "Guardião de testemunhos",
+      "campo_de_interesse": "cuidado_com_registros",
+      "estado": "papel_exploratorio_nao_personagem",
+      "motivacao_hipotetica": "Poderia preservar relatos sobre desaparecidos e práticas funerárias.",
+      "limite": "Não existe arquivo de mortos de Vandar comprovado.",
+      "personagem_confirmado": false,
+      "povo_de_origem_confirmado": null,
+      "onde_mora_confirmado": null
+    },
+    {
+      "id": "worldbuilding-xvii:papel:reclamante-da-propriedade",
+      "nome_editorial": "Pessoa que reivindica um imóvel",
+      "campo_de_interesse": "propriedade_contestada",
+      "estado": "papel_exploratorio_nao_personagem",
+      "motivacao_hipotetica": "Pode ter perdido meios de provar posse ou residência.",
+      "limite": "Uma posse antiga pode também ter sido injusta.",
+      "personagem_confirmado": false,
+      "povo_de_origem_confirmado": null,
+      "onde_mora_confirmado": null
+    },
+    {
+      "id": "worldbuilding-xvii:papel:druida-vizinho",
+      "nome_editorial": "Druida de tradições da floresta",
+      "campo_de_interesse": "direitos_rituais",
+      "estado": "papel_exploratorio_nao_personagem",
+      "motivacao_hipotetica": "Poderia se preocupar com os mortos e espaços sagrados próximos.",
+      "limite": "Druidas de Eldroth não são sacerdotes únicos de Vandar.",
+      "personagem_confirmado": false,
+      "povo_de_origem_confirmado": null,
+      "onde_mora_confirmado": null
+    },
+    {
+      "id": "worldbuilding-xvii:papel:observador-da-ocupacao",
+      "nome_editorial": "Testemunha de incursões",
+      "campo_de_interesse": "seguranca_civil",
+      "estado": "papel_exploratorio_nao_personagem",
+      "motivacao_hipotetica": "Pode relatar ameaça de mortos-vivos a territórios próximos.",
+      "limite": "Não registrar rotas, cronologia nem forças efetivas.",
+      "personagem_confirmado": false,
+      "povo_de_origem_confirmado": null,
+      "onde_mora_confirmado": null
+    }
+  ],
+  "modelos_do_dominio": [
+    {
+      "id": "worldbuilding-xvii:modelo:quartel-de-ruinas",
+      "nome_editorial": "Ruínas militarizadas",
+      "estado": "alternativa_nao_adotada",
+      "hipotese_de_poder": "A função atual pode ser sobretudo logística e militar, sem sociedade civil estável nas ruínas.",
+      "implicacao_para_vivos": "Memórias e reivindicações seriam mantidas especialmente por sobreviventes fora da cidade.",
+      "evidencia_comum": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Damaris ocupa ruínas e comanda um exército de mortos-vivos.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "limite": "Não existem dados sobre bairros ativos, número de tropas, economia militar, cerimônias ou moradores atuais.",
+      "configuracao_confirmada": false
+    },
+    {
+      "id": "worldbuilding-xvii:modelo:camadas-ocupadas",
+      "nome_editorial": "Cidade parcialmente reutilizada",
+      "estado": "alternativa_nao_adotada",
+      "hipotese_de_poder": "Construções antigas poderiam ser apropriadas para funções militares e mágicas sem apagar todos os vestígios civis.",
+      "implicacao_para_vivos": "Uma arquitetura preservada não prova continuidade do governo ou dos moradores.",
+      "evidencia_comum": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Damaris ocupa ruínas e comanda um exército de mortos-vivos.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "limite": "Não existem dados sobre bairros ativos, número de tropas, economia militar, cerimônias ou moradores atuais.",
+      "configuracao_confirmada": false
+    },
+    {
+      "id": "worldbuilding-xvii:modelo:ruina-de-simbolos",
+      "nome_editorial": "Dominação por encenação funerária",
+      "estado": "alternativa_nao_adotada",
+      "hipotese_de_poder": "Damaris poderia usar ruínas e mortos-vivos para produzir medo e reivindicar legitimidade simbólica.",
+      "implicacao_para_vivos": "Esse modelo não autoriza afirmar culto obrigatório, procissão ou rito real sem fonte.",
+      "evidencia_comum": {
+        "documento": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5,
+        "sintese": "Damaris ocupa ruínas e comanda um exército de mortos-vivos.",
+        "estado": "fonte_manuscrita_sem_ampliacao"
+      },
+      "limite": "Não existem dados sobre bairros ativos, número de tropas, economia militar, cerimônias ou moradores atuais.",
+      "configuracao_confirmada": false
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "worldbuilding-xvii:vinheta:chave-sem-casa",
+      "nome_editorial": "A chave que não abre porta",
+      "estado": "vinheta_hipotetica_nao_ocorrida",
+      "abertura_condicional": "Uma pessoa encontra um metal que parece ter servido de chave, mas já não sabe a que moradia pertencia.",
+      "questao_humana": "A ruína não apaga a obrigação de perguntar quem viveu ali.",
+      "tecido_urbano_id": "worldbuilding-xvii:tecido:moradia-e-bairros",
+      "ocorreu": false,
+      "novo_objeto_historico_confirmado": false,
+      "novo_personagem_confirmado": false
+    },
+    {
+      "id": "worldbuilding-xvii:vinheta:nome-na-pedra",
+      "nome_editorial": "Dois nomes para a mesma parede",
+      "estado": "vinheta_hipotetica_nao_ocorrida",
+      "abertura_condicional": "Dois sobreviventes afirmam lembrar nomes diferentes para uma parede de Vandar.",
+      "questao_humana": "Pode haver duas memórias verdadeiras de épocas diferentes.",
+      "tecido_urbano_id": "worldbuilding-xvii:tecido:escrita-e-registros",
+      "ocorreu": false,
+      "novo_objeto_historico_confirmado": false,
+      "novo_personagem_confirmado": false
+    },
+    {
+      "id": "worldbuilding-xvii:vinheta:corpo-sem-resposta",
+      "nome_editorial": "A face na fileira de mortos",
+      "estado": "vinheta_hipotetica_nao_ocorrida",
+      "abertura_condicional": "Alguém vê um morto-vivo e acredita reconhecer um parente, mas ele não responde.",
+      "questao_humana": "Reconhecimento visual não prova identidade, consciência nem consentimento.",
+      "tecido_urbano_id": "worldbuilding-xvii:tecido:cultos-e-sepultamento",
+      "ocorreu": false,
+      "novo_objeto_historico_confirmado": false,
+      "novo_personagem_confirmado": false
+    },
+    {
+      "id": "worldbuilding-xvii:vinheta:heranca-do-desaparecido",
+      "nome_editorial": "A casa de quem ainda não morreu",
+      "estado": "vinheta_hipotetica_nao_ocorrida",
+      "abertura_condicional": "Uma família quer dividir bens de um desaparecido, enquanto outra insiste que ele pode voltar.",
+      "questao_humana": "O direito patrimonial pode avançar mais depressa que a prova de morte.",
+      "tecido_urbano_id": "worldbuilding-xvii:tecido:parentesco-e-heranca",
+      "ocorreu": false,
+      "novo_objeto_historico_confirmado": false,
+      "novo_personagem_confirmado": false
+    }
+  ],
+  "decisoes_para_autor": [
+    {
+      "id": "worldbuilding-xvii:decisao:fundacao",
+      "pergunta": "Quando Vandar foi fundada e por quais motivos históricos?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xvii:decisao:prosperidade",
+      "pergunta": "Em que se baseava a prosperidade: trabalho, ofício, comércio, magia, agricultura, recursos ou combinação?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xvii:decisao:governo",
+      "pergunta": "Como era distribuído o poder civil antes da ruína?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xvii:decisao:queda",
+      "pergunta": "O que destruiu Vandar, quando aconteceu e qual foi o papel de Damaris nesse processo?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xvii:decisao:mortos",
+      "pergunta": "De onde vem o exército de mortos-vivos de Damaris e o que resta de identidade e autonomia em seus membros?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xvii:decisao:sobreviventes",
+      "pergunta": "Há comunidades vivas nas ruínas ou apenas redes de memória no exterior?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xvii:decisao:ritos",
+      "pergunta": "Que tradições funerárias são realmente históricas em Vandar, e como conviviam?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xvii:decisao:direitos",
+      "pergunta": "Que autoridades, se houver, poderão julgar identidade, desaparecimento, herança e reparação?",
+      "estado": "pendente_de_aprovacao_autoral"
+    }
+  ]
+}
