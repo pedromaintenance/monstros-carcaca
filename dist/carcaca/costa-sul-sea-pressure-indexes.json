@@ -1,0 +1,480 @@
+{
+  "by_categoria": {
+    "acordos": [
+      "costa-mar:acordo:canto-sem-mapa",
+      "costa-mar:acordo:cobranca-com-prova",
+      "costa-mar:acordo:duvida-do-mar",
+      "costa-mar:acordo:primeiro-socorro",
+      "costa-mar:acordo:reparo-compartilhado"
+    ],
+    "arcos": [
+      "costa-mar:arco:direito-de-passar",
+      "costa-mar:arco:o-valor-do-refugio",
+      "costa-mar:arco:oficios-sem-correntes"
+    ],
+    "cenas": [
+      "costa-mar:cena:a-mesa-sem-agua",
+      "costa-mar:cena:a-taxa-sem-peixe",
+      "costa-mar:cena:as-cordas-que-faltam",
+      "costa-mar:cena:o-mapa-pedido",
+      "costa-mar:cena:o-sino-e-a-taxa",
+      "costa-mar:cena:um-prato-uma-assinatura"
+    ],
+    "fluxos": [
+      "costa-mar:fluxo:abrigo-sazonal",
+      "costa-mar:fluxo:agua-agricola",
+      "costa-mar:fluxo:noticias-correntes",
+      "costa-mar:fluxo:pedido-socorro",
+      "costa-mar:fluxo:sal-e-ferragens",
+      "costa-mar:fluxo:tributo-contestado"
+    ],
+    "impactos": [
+      "costa-mar:impacto:acolhimento-em-divida",
+      "costa-mar:impacto:boato-bloqueio",
+      "costa-mar:impacto:promessa-agua",
+      "costa-mar:impacto:reparos-retidos",
+      "costa-mar:impacto:rota-revelada",
+      "costa-mar:impacto:taxa-de-pescaria"
+    ],
+    "nucleos": [
+      "costa-mar:nucleo:casa-da-tigela",
+      "costa-mar:nucleo:cordame-de-dois-donos",
+      "costa-mar:nucleo:mesa-do-sal",
+      "costa-mar:nucleo:roda-dos-lacres",
+      "costa-mar:nucleo:varanda-das-mensagens"
+    ],
+    "oficios": [
+      "costa-mar:oficio:amparadores-de-viagem",
+      "costa-mar:oficio:contadores-da-lavoura",
+      "costa-mar:oficio:costureiros-da-travessia",
+      "costa-mar:oficio:mensageiros-de-retorno",
+      "costa-mar:oficio:testemunhas-das-cargas"
+    ],
+    "pessoas": [
+      "costa-mar:pessoa:antera",
+      "costa-mar:pessoa:corima",
+      "costa-mar:pessoa:ehru",
+      "costa-mar:pessoa:gema",
+      "costa-mar:pessoa:iara",
+      "costa-mar:pessoa:mara",
+      "costa-mar:pessoa:orun",
+      "costa-mar:pessoa:saha",
+      "costa-mar:pessoa:talia"
+    ]
+  },
+  "by_territorio": {
+    "costa_sul_itinerante": [
+      "costa-mar:nucleo:casa-da-tigela"
+    ],
+    "ilhas_nao_individualizadas": [
+      "costa-mar:nucleo:varanda-das-mensagens"
+    ],
+    "portomonte": [
+      "costa-mar:nucleo:cordame-de-dois-donos",
+      "costa-mar:nucleo:mesa-do-sal",
+      "costa-mar:nucleo:roda-dos-lacres"
+    ]
+  },
+  "by_setor": {
+    "acolhimento": [
+      "costa-mar:fluxo:abrigo-sazonal",
+      "costa-mar:oficio:amparadores-de-viagem"
+    ],
+    "agricultura": [
+      "costa-mar:fluxo:agua-agricola",
+      "costa-mar:oficio:contadores-da-lavoura"
+    ],
+    "contratos": [
+      "costa-mar:oficio:testemunhas-das-cargas"
+    ],
+    "informacao": [
+      "costa-mar:fluxo:noticias-correntes",
+      "costa-mar:oficio:mensageiros-de-retorno"
+    ],
+    "reparo": [
+      "costa-mar:fluxo:sal-e-ferragens",
+      "costa-mar:oficio:costureiros-da-travessia"
+    ],
+    "socorro": [
+      "costa-mar:fluxo:pedido-socorro"
+    ],
+    "tributo": [
+      "costa-mar:fluxo:tributo-contestado"
+    ]
+  },
+  "by_papel": {
+    "agricultora": [
+      "costa-mar:pessoa:gema"
+    ],
+    "cuidadora": [
+      "costa-mar:pessoa:mara"
+    ],
+    "marinheiro": [
+      "costa-mar:pessoa:orun"
+    ],
+    "mediadora": [
+      "costa-mar:pessoa:antera"
+    ],
+    "mensageiro_tortle": [
+      "costa-mar:pessoa:ehru"
+    ],
+    "reparadora": [
+      "costa-mar:pessoa:talia"
+    ],
+    "representante_familiar": [
+      "costa-mar:pessoa:iara"
+    ],
+    "viajante_tabaxi": [
+      "costa-mar:pessoa:saha"
+    ],
+    "viajante_tortle": [
+      "costa-mar:pessoa:corima"
+    ]
+  },
+  "by_movimento_hack": {
+    "movimento-povo:paragrafo-829": [
+      "costa-mar:arco:oficios-sem-correntes",
+      "costa-mar:cena:a-mesa-sem-agua",
+      "costa-mar:fluxo:agua-agricola",
+      "costa-mar:impacto:promessa-agua",
+      "costa-mar:nucleo:mesa-do-sal",
+      "costa-mar:oficio:contadores-da-lavoura",
+      "costa-mar:pessoa:gema"
+    ],
+    "movimento-povo:paragrafo-831": [
+      "costa-mar:acordo:cobranca-com-prova",
+      "costa-mar:acordo:duvida-do-mar",
+      "costa-mar:acordo:primeiro-socorro",
+      "costa-mar:arco:oficios-sem-correntes",
+      "costa-mar:cena:a-mesa-sem-agua",
+      "costa-mar:cena:o-sino-e-a-taxa",
+      "costa-mar:cena:um-prato-uma-assinatura",
+      "costa-mar:fluxo:agua-agricola",
+      "costa-mar:impacto:acolhimento-em-divida",
+      "costa-mar:impacto:boato-bloqueio",
+      "costa-mar:impacto:promessa-agua",
+      "costa-mar:nucleo:casa-da-tigela",
+      "costa-mar:nucleo:mesa-do-sal",
+      "costa-mar:nucleo:roda-dos-lacres",
+      "costa-mar:oficio:amparadores-de-viagem",
+      "costa-mar:oficio:contadores-da-lavoura",
+      "costa-mar:oficio:testemunhas-das-cargas",
+      "costa-mar:pessoa:antera",
+      "costa-mar:pessoa:gema",
+      "costa-mar:pessoa:iara",
+      "costa-mar:pessoa:mara",
+      "costa-mar:pessoa:orun"
+    ],
+    "movimento-povo:paragrafo-897": [
+      "costa-mar:acordo:reparo-compartilhado",
+      "costa-mar:arco:o-valor-do-refugio",
+      "costa-mar:cena:a-taxa-sem-peixe",
+      "costa-mar:cena:as-cordas-que-faltam",
+      "costa-mar:cena:o-mapa-pedido",
+      "costa-mar:fluxo:abrigo-sazonal",
+      "costa-mar:fluxo:pedido-socorro",
+      "costa-mar:fluxo:sal-e-ferragens",
+      "costa-mar:impacto:rota-revelada",
+      "costa-mar:nucleo:cordame-de-dois-donos",
+      "costa-mar:nucleo:varanda-das-mensagens",
+      "costa-mar:oficio:costureiros-da-travessia",
+      "costa-mar:oficio:mensageiros-de-retorno",
+      "costa-mar:pessoa:corima",
+      "costa-mar:pessoa:ehru",
+      "costa-mar:pessoa:talia"
+    ],
+    "movimento-povo:paragrafo-898": [
+      "costa-mar:acordo:primeiro-socorro",
+      "costa-mar:cena:um-prato-uma-assinatura",
+      "costa-mar:fluxo:abrigo-sazonal",
+      "costa-mar:impacto:acolhimento-em-divida",
+      "costa-mar:nucleo:casa-da-tigela",
+      "costa-mar:oficio:amparadores-de-viagem",
+      "costa-mar:pessoa:corima",
+      "costa-mar:pessoa:mara"
+    ],
+    "movimento-povo:paragrafo-904": [
+      "costa-mar:pessoa:ehru"
+    ],
+    "movimento-povo:paragrafo-906": [
+      "costa-mar:acordo:canto-sem-mapa",
+      "costa-mar:arco:o-valor-do-refugio",
+      "costa-mar:cena:o-mapa-pedido",
+      "costa-mar:fluxo:abrigo-sazonal",
+      "costa-mar:fluxo:noticias-correntes",
+      "costa-mar:impacto:rota-revelada",
+      "costa-mar:nucleo:varanda-das-mensagens",
+      "costa-mar:oficio:mensageiros-de-retorno",
+      "costa-mar:oficio:testemunhas-das-cargas",
+      "costa-mar:pessoa:saha"
+    ],
+    "movimento-povo:paragrafo-908": [
+      "costa-mar:pessoa:saha"
+    ],
+    "movimento-povo:paragrafo-932": [
+      "costa-mar:arco:direito-de-passar",
+      "costa-mar:cena:a-taxa-sem-peixe",
+      "costa-mar:fluxo:tributo-contestado",
+      "costa-mar:impacto:taxa-de-pescaria"
+    ],
+    "movimento-povo:paragrafo-936": [
+      "costa-mar:acordo:cobranca-com-prova",
+      "costa-mar:acordo:primeiro-socorro",
+      "costa-mar:arco:direito-de-passar",
+      "costa-mar:cena:a-taxa-sem-peixe",
+      "costa-mar:cena:um-prato-uma-assinatura",
+      "costa-mar:fluxo:tributo-contestado",
+      "costa-mar:impacto:acolhimento-em-divida",
+      "costa-mar:impacto:taxa-de-pescaria",
+      "costa-mar:nucleo:roda-dos-lacres",
+      "costa-mar:pessoa:antera",
+      "costa-mar:pessoa:iara"
+    ],
+    "movimento-povo:paragrafo-941": [
+      "costa-mar:impacto:reparos-retidos"
+    ],
+    "movimento-povo:paragrafo-945": [
+      "costa-mar:acordo:duvida-do-mar",
+      "costa-mar:acordo:reparo-compartilhado",
+      "costa-mar:arco:oficios-sem-correntes",
+      "costa-mar:cena:as-cordas-que-faltam",
+      "costa-mar:cena:o-sino-e-a-taxa",
+      "costa-mar:fluxo:pedido-socorro",
+      "costa-mar:fluxo:sal-e-ferragens",
+      "costa-mar:impacto:boato-bloqueio",
+      "costa-mar:impacto:reparos-retidos",
+      "costa-mar:nucleo:cordame-de-dois-donos",
+      "costa-mar:oficio:costureiros-da-travessia",
+      "costa-mar:pessoa:orun",
+      "costa-mar:pessoa:talia"
+    ],
+    "movimento-povo:paragrafo-947": [
+      "costa-mar:acordo:canto-sem-mapa",
+      "costa-mar:acordo:duvida-do-mar",
+      "costa-mar:arco:o-valor-do-refugio",
+      "costa-mar:cena:o-mapa-pedido",
+      "costa-mar:cena:o-sino-e-a-taxa",
+      "costa-mar:fluxo:noticias-correntes",
+      "costa-mar:fluxo:pedido-socorro",
+      "costa-mar:impacto:boato-bloqueio",
+      "costa-mar:impacto:rota-revelada",
+      "costa-mar:nucleo:varanda-das-mensagens"
+    ],
+    "movimento-povo:paragrafo-949": [
+      "costa-mar:fluxo:noticias-correntes"
+    ]
+  },
+  "by_referencia": {
+    "costa-sul:espaco:contas-agua": [
+      "costa-mar:cena:a-mesa-sem-agua",
+      "costa-mar:fluxo:agua-agricola",
+      "costa-mar:impacto:promessa-agua",
+      "costa-mar:nucleo:roda-dos-lacres",
+      "costa-mar:oficio:contadores-da-lavoura"
+    ],
+    "costa-sul:espaco:cordas": [
+      "costa-mar:acordo:reparo-compartilhado",
+      "costa-mar:cena:as-cordas-que-faltam",
+      "costa-mar:fluxo:sal-e-ferragens",
+      "costa-mar:impacto:reparos-retidos",
+      "costa-mar:nucleo:cordame-de-dois-donos",
+      "costa-mar:oficio:costureiros-da-travessia",
+      "costa-mar:pessoa:talia"
+    ],
+    "costa-sul:espaco:pedra-molhada": [
+      "costa-mar:arco:oficios-sem-correntes",
+      "costa-mar:nucleo:mesa-do-sal",
+      "costa-mar:pessoa:gema"
+    ],
+    "costa-sul:espaco:sino": [
+      "costa-mar:acordo:duvida-do-mar",
+      "costa-mar:cena:o-sino-e-a-taxa",
+      "costa-mar:impacto:boato-bloqueio",
+      "costa-mar:pessoa:orun"
+    ],
+    "costa-sul:espaco:varal": [
+      "costa-mar:nucleo:casa-da-tigela"
+    ],
+    "costa-sul:pessoa:antera": [
+      "costa-mar:acordo:cobranca-com-prova",
+      "costa-mar:cena:a-taxa-sem-peixe",
+      "costa-mar:nucleo:roda-dos-lacres",
+      "costa-mar:oficio:testemunhas-das-cargas",
+      "costa-mar:pessoa:antera"
+    ],
+    "costa-sul:pessoa:corima": [
+      "costa-mar:oficio:mensageiros-de-retorno",
+      "costa-mar:pessoa:corima"
+    ],
+    "costa-sul:pessoa:gema": [
+      "costa-mar:impacto:promessa-agua",
+      "costa-mar:nucleo:mesa-do-sal",
+      "costa-mar:oficio:contadores-da-lavoura",
+      "costa-mar:pessoa:gema"
+    ],
+    "costa-sul:pessoa:mara": [
+      "costa-mar:nucleo:casa-da-tigela",
+      "costa-mar:oficio:amparadores-de-viagem",
+      "costa-mar:pessoa:mara"
+    ],
+    "costa-sul:pessoa:orun": [
+      "costa-mar:pessoa:orun"
+    ],
+    "costa-sul:pessoa:saha": [
+      "costa-mar:oficio:mensageiros-de-retorno",
+      "costa-mar:pessoa:saha"
+    ],
+    "costa-sul:pessoa:salma": [
+      "costa-mar:nucleo:cordame-de-dois-donos",
+      "costa-mar:oficio:costureiros-da-travessia",
+      "costa-mar:pessoa:talia"
+    ],
+    "costa-sul:pratica:tigela": [
+      "costa-mar:cena:um-prato-uma-assinatura",
+      "costa-mar:fluxo:abrigo-sazonal",
+      "costa-mar:impacto:acolhimento-em-divida",
+      "costa-mar:oficio:amparadores-de-viagem"
+    ],
+    "costa-sul:rede:casco": [
+      "costa-mar:cena:o-mapa-pedido",
+      "costa-mar:nucleo:varanda-das-mensagens",
+      "costa-mar:pessoa:ehru"
+    ],
+    "costa-sul:rede:volta": [
+      "costa-mar:acordo:canto-sem-mapa",
+      "costa-mar:arco:o-valor-do-refugio",
+      "costa-mar:fluxo:noticias-correntes",
+      "costa-mar:nucleo:varanda-das-mensagens",
+      "costa-mar:pessoa:saha"
+    ],
+    "diplomacia-mar:tratado:corpo-livre": [
+      "costa-mar:acordo:primeiro-socorro",
+      "costa-mar:cena:um-prato-uma-assinatura",
+      "costa-mar:impacto:acolhimento-em-divida"
+    ],
+    "diplomacia-mar:tratado:livro-de-tributos": [
+      "costa-mar:acordo:cobranca-com-prova",
+      "costa-mar:arco:direito-de-passar",
+      "costa-mar:nucleo:roda-dos-lacres",
+      "costa-mar:pessoa:antera"
+    ],
+    "diplomacia-mar:tratado:recifes-autonomos": [
+      "costa-mar:acordo:reparo-compartilhado"
+    ],
+    "diplomacia-mar:tratado:voz-sem-mapa": [
+      "costa-mar:acordo:canto-sem-mapa",
+      "costa-mar:arco:o-valor-do-refugio",
+      "costa-mar:fluxo:pedido-socorro",
+      "costa-mar:impacto:rota-revelada"
+    ],
+    "economia-mar:arco:oficios": [
+      "costa-mar:arco:oficios-sem-correntes"
+    ],
+    "economia-mar:fluxo:avisos": [
+      "costa-mar:acordo:duvida-do-mar",
+      "costa-mar:cena:o-mapa-pedido",
+      "costa-mar:cena:o-sino-e-a-taxa",
+      "costa-mar:fluxo:noticias-correntes",
+      "costa-mar:impacto:boato-bloqueio",
+      "costa-mar:impacto:rota-revelada"
+    ],
+    "economia-mar:fluxo:ferragens": [
+      "costa-mar:cena:as-cordas-que-faltam",
+      "costa-mar:fluxo:sal-e-ferragens",
+      "costa-mar:impacto:reparos-retidos",
+      "costa-mar:nucleo:cordame-de-dois-donos"
+    ],
+    "economia-mar:fluxo:pesca": [
+      "costa-mar:arco:direito-de-passar",
+      "costa-mar:cena:a-taxa-sem-peixe",
+      "costa-mar:impacto:taxa-de-pescaria"
+    ],
+    "economia-mar:fluxo:socorro": [
+      "costa-mar:fluxo:pedido-socorro"
+    ],
+    "economia-mar:tributo:herdado": [
+      "costa-mar:fluxo:tributo-contestado"
+    ],
+    "fronteira:acordo:lacres-justos": [
+      "costa-mar:oficio:testemunhas-das-cargas"
+    ],
+    "fronteira:acordo:primeira-tigela": [
+      "costa-mar:acordo:primeiro-socorro",
+      "costa-mar:nucleo:casa-da-tigela",
+      "costa-mar:pessoa:iara",
+      "costa-mar:pessoa:mara"
+    ],
+    "lugar:ilhas-costa-sul": [
+      "costa-mar:fluxo:abrigo-sazonal",
+      "costa-mar:nucleo:varanda-das-mensagens",
+      "costa-mar:pessoa:corima",
+      "costa-mar:pessoa:ehru"
+    ],
+    "lugar:portomonte": [
+      "costa-mar:cena:a-mesa-sem-agua",
+      "costa-mar:fluxo:agua-agricola",
+      "costa-mar:nucleo:mesa-do-sal",
+      "costa-mar:pessoa:iara"
+    ],
+    "mar-sangue:pacto:tributo": [
+      "costa-mar:fluxo:tributo-contestado",
+      "costa-mar:impacto:taxa-de-pescaria"
+    ]
+  },
+  "by_personagem_reutilizado": {
+    "costa-sul:pessoa:antera": [
+      "costa-mar:pessoa:antera"
+    ],
+    "costa-sul:pessoa:corima": [
+      "costa-mar:pessoa:corima"
+    ],
+    "costa-sul:pessoa:gema": [
+      "costa-mar:pessoa:gema"
+    ],
+    "costa-sul:pessoa:mara": [
+      "costa-mar:pessoa:mara"
+    ],
+    "costa-sul:pessoa:orun": [
+      "costa-mar:pessoa:orun"
+    ],
+    "costa-sul:pessoa:saha": [
+      "costa-mar:pessoa:saha"
+    ]
+  },
+  "by_origem": {
+    "costa-sul:espaco:cordas": [
+      "costa-mar:fluxo:sal-e-ferragens"
+    ],
+    "costa-sul:espaco:pedra-molhada": [
+      "costa-mar:fluxo:agua-agricola"
+    ],
+    "costa-sul:rede:casco": [
+      "costa-mar:fluxo:abrigo-sazonal"
+    ],
+    "economia-mar:polo:conchas": [
+      "costa-mar:fluxo:tributo-contestado"
+    ],
+    "economia-mar:polo:passagem": [
+      "costa-mar:fluxo:noticias-correntes",
+      "costa-mar:fluxo:pedido-socorro"
+    ]
+  },
+  "by_destino": {
+    "costa-sul:espaco:contas-agua": [
+      "costa-mar:fluxo:agua-agricola"
+    ],
+    "costa-sul:espaco:cordas": [
+      "costa-mar:fluxo:tributo-contestado"
+    ],
+    "costa-sul:espaco:varal": [
+      "costa-mar:fluxo:abrigo-sazonal",
+      "costa-mar:fluxo:pedido-socorro"
+    ],
+    "costa-sul:rede:volta": [
+      "costa-mar:fluxo:noticias-correntes"
+    ],
+    "economia-mar:polo:lastro": [
+      "costa-mar:fluxo:sal-e-ferragens"
+    ]
+  }
+}
