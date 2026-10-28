@@ -11,6 +11,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - **XVI — concluído:** [Eldroth sob Sylara](docs/ELDROTH_SOB_SYLARA_CICLO16.md) — 8 mecanismos candidatos, 6 posições sociais, 3 modelos de regime não adotados, 4 dilemas, 4 vinhetas, 5 decisões pendentes. Zero políticas novas canonizadas.
 - **XVII — concluído:** [Vandar e a política dos mortos](docs/VANDAR_POLITICA_DOS_MORTOS_CICLO17.md): 3 fases sem datas, 8 temas urbanos, 5 formas propostas de prova, 4 estados não legais da morte, 6 papéis sociais, 3 modelos de ocupação não adotados, 4 vinhetas e 8 decisões autorais pendentes. Sem canonização.
 - **XVIII — concluído:** [Ironwood e a sociedade que resiste](docs/IRONWOOD_SOCIEDADE_RESISTENCIA_CICLO18.md) — 8 eixos sociais, 3 modelos de governo não adotados, 4 relações, 4 circuitos civis, 4 dilemas, 4 vinhetas e 8 perguntas editoriais.
+- **XIX — concluído como preparação editorial:** [Mesa de revisão autoral](docs/MESA_REVISAO_AUTORAL_CICLO19.md), com 103 candidatos, 20 decisões pendentes e zero canonizações. Nenhuma escolha tomada em nome do autor.
 
 **Método dos próximos ciclos:** (1) localizar afirmações da ambientação; (2) apontar o que o manuscrito do Hack efetivamente acrescenta; (3) distinguir interpretações e lacunas; (4) produzir alternativas de worldbuilding materialmente diferentes; (5) pedir revisão autoral para qualquer promoção canônica. Evitar novas rodadas de dezenas de NPCs sem uma necessidade histórica ou social identificável.
 
@@ -497,4 +498,14 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Elaborar 4 circuitos não quantificados de trabalho/cuidado, 4 dilemas não ocorridos e 4 vinhetas de cotidiano.
 - [x] Destacar lacuna de geografia normalizada: não atribuir `lugar:ironwood` nem `regiao:ironwood` sem registrar fontes e categoria adequada.
 - [x] Produzir 8 decisões pendentes, documento narrativo, JSON, schema, índices, consultas ESM e testes de integridade.
-- [ ] **Próxima etapa editorial:** revisar com o autor propostas dos ciclos XIV–XVIII; definir quais práticas, organizações, datas e relações merecem entrar no cânone, sem criar fatos pela integração técnica.
+- [x] **XIX — revisão editorial preparada:** 103 candidatos classificados, 20 decisões com dependências, dez guardas e cinco lacunas; todas as aprovações continuam pendentes.
+
+## Ciclo XIX — Concluído: organizar decisões, não aprová-las
+
+- [x] Reunir em uma única matriz rastreável **103 candidatos** dos ciclos XIV–XVIII, preservando a origem e o índice da opção.
+- [x] Priorizar **20 decisões autorais** sobre Eldroth, Sylara, Vandar, Ironwood e relação com Thargrid.
+- [x] Registrar dependências editoriais entre perguntas e dez enunciados de fonte que restringem inferências.
+- [x] Manter explicitamente desconhecidos cinco campos: Ironwood na geografia normalizada, ano da queda de Vandar, identidade dos mortos-vivos, burocracia de Sylara e poder civil de Elara.
+- [x] Criar política de aprovação que **requer autorização expressa do autor** e nova revisão de integração canônica, sem interpretar silêncio como aceite.
+- [x] Adicionar documentação, JSON, schema, validador, índices, API ESM e testes de integridade.
+- [ ] **XX — etapa futura, dependente de autorização:** deliberar, com o autor, as primeiras decisões da fila; ou ampliar pesquisa histórica e geográfica das regiões restantes. Nenhuma opção ainda aprovada.
