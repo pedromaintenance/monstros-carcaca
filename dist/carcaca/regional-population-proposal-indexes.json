@@ -1,0 +1,290 @@
+{
+  "by_area": {
+    "area-proposta:caatinga": [
+      "povoamento-proposto:mercado-das-ferragens",
+      "povoamento-proposto:poco-sem-bandeira"
+    ],
+    "area-proposta:costa": [
+      "povoamento-proposto:farol-das-memorias",
+      "povoamento-proposto:hortas-do-sal"
+    ],
+    "area-proposta:eldroth": [
+      "povoamento-proposto:correio-dos-esporos",
+      "povoamento-proposto:velorio-dos-insepultos"
+    ],
+    "area-proposta:foz": [
+      "povoamento-proposto:escrivania-da-foz",
+      "povoamento-proposto:feira-da-tregua"
+    ],
+    "area-proposta:garganta": [
+      "povoamento-proposto:cartorio-das-portas-raspadas",
+      "povoamento-proposto:turno-das-escavadoras"
+    ],
+    "area-proposta:rio": [
+      "povoamento-proposto:balsa-dos-nomes",
+      "povoamento-proposto:patio-do-soldo"
+    ],
+    "area-proposta:shadar": [
+      "povoamento-proposto:ateliê-das-mascaras",
+      "povoamento-proposto:salas-de-protocolo"
+    ],
+    "area-proposta:thargrid": [
+      "povoamento-proposto:conselho-dos-juramentos",
+      "povoamento-proposto:escola-do-caminho-verde"
+    ]
+  },
+  "by_tema": {
+    "agricultura": [
+      "povoamento-proposto:hortas-do-sal"
+    ],
+    "agua": [
+      "povoamento-proposto:hortas-do-sal",
+      "povoamento-proposto:poco-sem-bandeira"
+    ],
+    "aparencia": [
+      "povoamento-proposto:ateliê-das-mascaras"
+    ],
+    "arqueologia": [
+      "povoamento-proposto:turno-das-escavadoras"
+    ],
+    "arquivo": [
+      "povoamento-proposto:balsa-dos-nomes"
+    ],
+    "asilo": [
+      "povoamento-proposto:conselho-dos-juramentos"
+    ],
+    "colonialismo": [
+      "povoamento-proposto:salas-de-protocolo"
+    ],
+    "comercio": [
+      "povoamento-proposto:mercado-das-ferragens"
+    ],
+    "conflito": [
+      "povoamento-proposto:poco-sem-bandeira"
+    ],
+    "contrabando": [
+      "povoamento-proposto:balsa-dos-nomes"
+    ],
+    "contratos": [
+      "povoamento-proposto:patio-do-soldo"
+    ],
+    "cooperacao": [
+      "povoamento-proposto:poco-sem-bandeira"
+    ],
+    "corte": [
+      "povoamento-proposto:salas-de-protocolo"
+    ],
+    "diplomacia": [
+      "povoamento-proposto:feira-da-tregua"
+    ],
+    "direito": [
+      "povoamento-proposto:escrivania-da-foz"
+    ],
+    "divida": [
+      "povoamento-proposto:salas-de-protocolo"
+    ],
+    "educacao": [
+      "povoamento-proposto:escola-do-caminho-verde"
+    ],
+    "engenharia": [
+      "povoamento-proposto:conselho-dos-juramentos"
+    ],
+    "escravidao": [
+      "povoamento-proposto:balsa-dos-nomes",
+      "povoamento-proposto:patio-do-soldo"
+    ],
+    "etica": [
+      "povoamento-proposto:mercado-das-ferragens"
+    ],
+    "etiqueta": [
+      "povoamento-proposto:ateliê-das-mascaras"
+    ],
+    "guerra": [
+      "povoamento-proposto:feira-da-tregua",
+      "povoamento-proposto:mercado-das-ferragens"
+    ],
+    "guerrilha": [
+      "povoamento-proposto:escola-do-caminho-verde"
+    ],
+    "identidade": [
+      "povoamento-proposto:velorio-dos-insepultos"
+    ],
+    "informacao": [
+      "povoamento-proposto:correio-dos-esporos"
+    ],
+    "juramento": [
+      "povoamento-proposto:conselho-dos-juramentos"
+    ],
+    "luto": [
+      "povoamento-proposto:velorio-dos-insepultos"
+    ],
+    "magia-dos-nomes": [
+      "povoamento-proposto:cartorio-das-portas-raspadas"
+    ],
+    "memoria": [
+      "povoamento-proposto:farol-das-memorias"
+    ],
+    "natureza": [
+      "povoamento-proposto:correio-dos-esporos"
+    ],
+    "navegacao": [
+      "povoamento-proposto:farol-das-memorias"
+    ],
+    "necromancia": [
+      "povoamento-proposto:velorio-dos-insepultos"
+    ],
+    "nomes": [
+      "povoamento-proposto:escrivania-da-foz"
+    ],
+    "ocupacao": [
+      "povoamento-proposto:cartorio-das-portas-raspadas",
+      "povoamento-proposto:feira-da-tregua"
+    ],
+    "politica": [
+      "povoamento-proposto:escrivania-da-foz"
+    ],
+    "propriedade": [
+      "povoamento-proposto:cartorio-das-portas-raspadas"
+    ],
+    "refugiados": [
+      "povoamento-proposto:escola-do-caminho-verde"
+    ],
+    "refugio": [
+      "povoamento-proposto:hortas-do-sal"
+    ],
+    "religiao": [
+      "povoamento-proposto:farol-das-memorias",
+      "povoamento-proposto:turno-das-escavadoras"
+    ],
+    "resistencia": [
+      "povoamento-proposto:ateliê-das-mascaras",
+      "povoamento-proposto:correio-dos-esporos"
+    ],
+    "trabalho": [
+      "povoamento-proposto:patio-do-soldo",
+      "povoamento-proposto:turno-das-escavadoras"
+    ]
+  },
+  "by_movimento_hack": {
+    "movimento-classe:paragrafo-2137": [
+      "povoamento-proposto:correio-dos-esporos"
+    ],
+    "movimento-classe:paragrafo-2166": [
+      "povoamento-proposto:escola-do-caminho-verde"
+    ],
+    "movimento-classe:paragrafo-2177": [
+      "povoamento-proposto:correio-dos-esporos",
+      "povoamento-proposto:escola-do-caminho-verde"
+    ],
+    "movimento-classe:paragrafo-2616": [
+      "povoamento-proposto:velorio-dos-insepultos"
+    ],
+    "movimento-classe:paragrafo-2756": [
+      "povoamento-proposto:balsa-dos-nomes"
+    ],
+    "movimento-classe:paragrafo-2757": [
+      "povoamento-proposto:mercado-das-ferragens"
+    ],
+    "movimento-classe:paragrafo-2760": [
+      "povoamento-proposto:mercado-das-ferragens",
+      "povoamento-proposto:patio-do-soldo"
+    ],
+    "movimento-classe:paragrafo-2779": [
+      "povoamento-proposto:mercado-das-ferragens"
+    ],
+    "movimento-classe:paragrafo-2781": [
+      "povoamento-proposto:patio-do-soldo"
+    ],
+    "movimento-classe:paragrafo-2782": [
+      "povoamento-proposto:patio-do-soldo"
+    ],
+    "movimento-classe:paragrafo-2790": [
+      "povoamento-proposto:feira-da-tregua"
+    ],
+    "movimento-classe:paragrafo-2812": [
+      "povoamento-proposto:escrivania-da-foz"
+    ],
+    "movimento-classe:paragrafo-2814": [
+      "povoamento-proposto:cartorio-das-portas-raspadas"
+    ],
+    "movimento-classe:paragrafo-2816": [
+      "povoamento-proposto:escrivania-da-foz"
+    ],
+    "movimento-classe:paragrafo-2817": [
+      "povoamento-proposto:ateliê-das-mascaras"
+    ],
+    "movimento-classe:paragrafo-2818": [
+      "povoamento-proposto:feira-da-tregua",
+      "povoamento-proposto:hortas-do-sal",
+      "povoamento-proposto:salas-de-protocolo"
+    ],
+    "movimento-classe:paragrafo-2820": [
+      "povoamento-proposto:turno-das-escavadoras"
+    ],
+    "movimento-classe:paragrafo-2822": [
+      "povoamento-proposto:turno-das-escavadoras",
+      "povoamento-proposto:velorio-dos-insepultos"
+    ],
+    "movimento-povo:paragrafo-827": [
+      "povoamento-proposto:balsa-dos-nomes",
+      "povoamento-proposto:feira-da-tregua"
+    ],
+    "movimento-povo:paragrafo-828": [
+      "povoamento-proposto:cartorio-das-portas-raspadas",
+      "povoamento-proposto:turno-das-escavadoras"
+    ],
+    "movimento-povo:paragrafo-829": [
+      "povoamento-proposto:hortas-do-sal"
+    ],
+    "movimento-povo:paragrafo-831": [
+      "povoamento-proposto:correio-dos-esporos",
+      "povoamento-proposto:escola-do-caminho-verde",
+      "povoamento-proposto:hortas-do-sal"
+    ],
+    "movimento-povo:paragrafo-832": [
+      "povoamento-proposto:balsa-dos-nomes",
+      "povoamento-proposto:velorio-dos-insepultos"
+    ],
+    "movimento-povo:paragrafo-834": [
+      "povoamento-proposto:poco-sem-bandeira"
+    ],
+    "movimento-povo:paragrafo-835": [
+      "povoamento-proposto:poco-sem-bandeira"
+    ],
+    "movimento-povo:paragrafo-842": [
+      "povoamento-proposto:poco-sem-bandeira"
+    ],
+    "movimento-povo:paragrafo-848": [
+      "povoamento-proposto:conselho-dos-juramentos"
+    ],
+    "movimento-povo:paragrafo-849": [
+      "povoamento-proposto:conselho-dos-juramentos"
+    ],
+    "movimento-povo:paragrafo-870": [
+      "povoamento-proposto:conselho-dos-juramentos"
+    ],
+    "movimento-povo:paragrafo-897": [
+      "povoamento-proposto:farol-das-memorias"
+    ],
+    "movimento-povo:paragrafo-906": [
+      "povoamento-proposto:farol-das-memorias"
+    ],
+    "movimento-povo:paragrafo-934": [
+      "povoamento-proposto:farol-das-memorias"
+    ],
+    "movimento-povo:paragrafo-953": [
+      "povoamento-proposto:ateliê-das-mascaras",
+      "povoamento-proposto:salas-de-protocolo"
+    ],
+    "movimento-povo:paragrafo-954": [
+      "povoamento-proposto:salas-de-protocolo"
+    ],
+    "movimento-povo:paragrafo-965": [
+      "povoamento-proposto:ateliê-das-mascaras"
+    ],
+    "movimento-povo:paragrafo-992": [
+      "povoamento-proposto:cartorio-das-portas-raspadas",
+      "povoamento-proposto:escrivania-da-foz"
+    ]
+  }
+}

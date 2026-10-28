@@ -1,0 +1,601 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Povoamento da Carcaça inspirado no Hack Dungeon World — ciclo de sementes vivas",
+  "estado": "propostas_editoriais_nao_canonicas",
+  "politica_de_uso": "As âncoras documentadas indicam somente fatos das fontes; pessoas, microterritórios, atividades e ganchos são hipóteses narrativas. Não criar locais canônicos, populações quantitativas, movimentos de NPC ou eventos históricos automaticamente.",
+  "fontes": [
+    "Ambientação - A Carcaça - Visão Geral.txt",
+    "Apêndice I - Trelohim, Uln-Shayr, Yokai, Kuo-Toa.txt",
+    "Tabelas para NPCs Aleatórios — Carcaça.txt",
+    "Hack Carcaça Dungeon World(1).docx"
+  ],
+  "areas": [
+    {
+      "id": "area-proposta:garganta",
+      "nome": "Garganta e cabeça de Golzdov",
+      "regiao_atlas_id": null,
+      "macrorregiao": "extremo_leste",
+      "trama_predominante": "nome-e-propriedade",
+      "estado": "ancora_de_lore_para_propostas",
+      "cadastrada_como_regiao_oficial": false
+    },
+    {
+      "id": "area-proposta:rio",
+      "nome": "Rio Ancestral e Drakport",
+      "regiao_atlas_id": null,
+      "macrorregiao": "eixo_fluvial",
+      "trama_predominante": "nome-e-propriedade",
+      "estado": "ancora_de_lore_para_propostas",
+      "cadastrada_como_regiao_oficial": false
+    },
+    {
+      "id": "area-proposta:costa",
+      "nome": "Costa Sul e Mar de Sangue",
+      "regiao_atlas_id": "regiao:costa-sul",
+      "macrorregiao": "alem_sul",
+      "trama_predominante": "agua-e-sobrevivencia",
+      "estado": "ancora_de_lore_para_propostas",
+      "cadastrada_como_regiao_oficial": true
+    },
+    {
+      "id": "area-proposta:caatinga",
+      "nome": "Caatinga do Além Sul",
+      "regiao_atlas_id": "regiao:caatinga",
+      "macrorregiao": "alem_sul",
+      "trama_predominante": "agua-e-sobrevivencia",
+      "estado": "ancora_de_lore_para_propostas",
+      "cadastrada_como_regiao_oficial": true
+    },
+    {
+      "id": "area-proposta:eldroth",
+      "nome": "Eldroth e Vandar",
+      "regiao_atlas_id": "regiao:eldroth",
+      "macrorregiao": "asa_direita",
+      "trama_predominante": "memoria-e-resistencia",
+      "estado": "ancora_de_lore_para_propostas",
+      "cadastrada_como_regiao_oficial": true
+    },
+    {
+      "id": "area-proposta:thargrid",
+      "nome": "Thargrid e Ironwood",
+      "regiao_atlas_id": null,
+      "macrorregiao": "montanhas_norte",
+      "trama_predominante": "memoria-e-resistencia",
+      "estado": "ancora_de_lore_para_propostas",
+      "cadastrada_como_regiao_oficial": false
+    },
+    {
+      "id": "area-proposta:foz",
+      "nome": "Boca do Abismo e Gualápolis",
+      "regiao_atlas_id": "regiao:foz-rio-ancestral",
+      "macrorregiao": "extremo_oeste",
+      "trama_predominante": "nome-e-propriedade",
+      "estado": "ancora_de_lore_para_propostas",
+      "cadastrada_como_regiao_oficial": true
+    },
+    {
+      "id": "area-proposta:shadar",
+      "nome": "Shadar-Riverie",
+      "regiao_atlas_id": null,
+      "macrorregiao": "corte_shadow_fey",
+      "trama_predominante": "nome-e-propriedade",
+      "estado": "ancora_de_lore_para_propostas",
+      "cadastrada_como_regiao_oficial": false
+    }
+  ],
+  "sementes": [
+    {
+      "id": "povoamento-proposto:cartorio-das-portas-raspadas",
+      "area_id": "area-proposta:garganta",
+      "titulo": "O Cartório das Portas Raspadas",
+      "local_proposto": "Beco hipotético nos degraus de Garganta",
+      "habitantes_propostos": "Funcionários humanos das escavações, escribas yokai dissidentes e famílias cuja propriedade foi tomada",
+      "personagem_central": "Ichi de Duas Tintas, escrivã que cobra por cópias mas nunca por um nome de nascimento",
+      "vida_cotidiana": "O balcão funciona ao nascer do sol: pedreiros identificam soleiras, idosos testemunham divisas e crianças aprendem a distinguir as marcas antigas das falsificações",
+      "conflito_vivo": "A administração de Lord Varys quer converter registros antigos em títulos de propriedade válidos apenas para a Corte",
+      "gancho_de_aventura": "Uma escritura de ocupação parece ter sido gravada sobre um nome yokai legítimo; três famílias querem que alguém leia o osso antes que ele seja destruído",
+      "decisao_sem_resposta_certa": "Revelar o nome original protege as famílias ou permite à Corte localizar uma porta até então escondida?",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-992",
+        "movimento-classe:paragrafo-2814"
+      ],
+      "ancora_documentada": "Garganta é cidade-fortaleza ocupada no crânio de Golzdov, com escavações e inscrições yokai antigas",
+      "temas": [
+        "ocupacao",
+        "propriedade",
+        "magia-dos-nomes"
+      ],
+      "possivel_conexao": [
+        "shadar",
+        "foz"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:turno-das-escavadoras",
+      "area_id": "area-proposta:garganta",
+      "titulo": "O Turno das Escavadoras",
+      "local_proposto": "Canteiro hipotético sob o antigo Templo de Yolskaariin",
+      "habitantes_propostos": "Mineradores, arqueólogas, ex-devotos solares e supervisores da Corte",
+      "personagem_central": "Marta Espina-Sol, mineira que guarda num pote o pó de cada camada aberta",
+      "vida_cotidiana": "Após o trabalho, os escavadores compartilham pequenas reconstruções de objetos e discutem qual camada deve permanecer intocada",
+      "conflito_vivo": "O pagamento por profundidade incentiva a romper camadas perigosas e destrói o contexto dos achados",
+      "gancho_de_aventura": "Uma nova galeria revela um altar anterior à ocupação shadow fey; a equipe recebe ordem de separar o ouro das inscrições",
+      "decisao_sem_resposta_certa": "Preservar o sítio impede que as famílias recebam seu salário de sobrevivência?",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-classe:paragrafo-2820",
+        "movimento-classe:paragrafo-2822"
+      ],
+      "ancora_documentada": "O Templo de Yolskaariin foi corrompido; as escavações de Garganta são campo de disputa política",
+      "temas": [
+        "trabalho",
+        "arqueologia",
+        "religiao"
+      ],
+      "possivel_conexao": [
+        "thargrid",
+        "shadar"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:balsa-dos-nomes",
+      "area_id": "area-proposta:rio",
+      "titulo": "A Balsa dos Nomes Descartados",
+      "local_proposto": "Travessia hipotética do Rio Ancestral próxima à rota de Drakport",
+      "habitantes_propostos": "Barqueiros humanos, fugitivos da escravidão, contrabandistas e mercadores tributados",
+      "personagem_central": "Bela Sete-Nós, balseira que identifica os passageiros pela história da viagem, nunca pelo título",
+      "vida_cotidiana": "O preço da passagem varia com a correnteza; todas as noites um velho barqueiro ensina a nova tripulação a reconhecer os sinais de patrulha",
+      "conflito_vivo": "Os postos da Corte cobram tributo por pessoa e confiscam barcos que não mantêm registros nominais",
+      "gancho_de_aventura": "Um comboio de refugiados chega durante a inspeção, acompanhado de um oficial cuja filha desapareceu em Drakport",
+      "decisao_sem_resposta_certa": "Destruir a lista de passageiros protege fugitivos, mas apaga a prova de que uma família foi sequestrada?",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-832",
+        "movimento-classe:paragrafo-2756"
+      ],
+      "ancora_documentada": "O Rio Ancestral é eixo de tributos e transporte; Drakport concentra escravidão e degradação",
+      "temas": [
+        "escravidao",
+        "contrabando",
+        "arquivo"
+      ],
+      "possivel_conexao": [
+        "foz",
+        "garganta"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:patio-do-soldo",
+      "area_id": "area-proposta:rio",
+      "titulo": "O Pátio do Soldo Que Não Veio",
+      "local_proposto": "Pátio de contratação hipotético em Drakport",
+      "habitantes_propostos": "Mercenários desertores, estivadores, cobradores, cozinheiras e pessoas escravizadas em trabalhos forçados",
+      "personagem_central": "Cordão, antigo contramestre que guarda recibos de salários em um saco de anzóis",
+      "vida_cotidiana": "À noite os trabalhadores conferem contratos em voz alta; quem sabe ler ensina quem não sabe a reconhecer uma cláusula de servidão",
+      "conflito_vivo": "Uma companhia paga pelo regime acumula soldo atrasado e ameaça vender os parentes dos soldados como garantia",
+      "gancho_de_aventura": "Um grupo contratado para transportar prisioneiros pede ajuda para romper o contrato antes do amanhecer",
+      "decisao_sem_resposta_certa": "O motim liberta as pessoas transportadas, mas pode entregar o cais inteiro à retaliação de Lady Morwen?",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2781",
+        "movimento-classe:paragrafo-2782",
+        "movimento-classe:paragrafo-2760"
+      ],
+      "ancora_documentada": "Drakport é um centro do regime de escravidão sob Lady Morwen; o rio sustenta cadeias de abastecimento",
+      "temas": [
+        "trabalho",
+        "escravidao",
+        "contratos"
+      ],
+      "possivel_conexao": [
+        "shadar",
+        "costa"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:hortas-do-sal",
+      "area_id": "area-proposta:costa",
+      "titulo": "As Hortas do Sal Devolvido",
+      "local_proposto": "Encosta agrícola hipotética nas proximidades de Portomonte",
+      "habitantes_propostos": "Agricultores humanos, devotos de Deméter, carregadores de água e refugiados de Eldroth",
+      "personagem_central": "Dona Merina, horticultora que registra em pedras qual família cuidou de cada canteiro",
+      "vida_cotidiana": "A água destinada à agricultura é levada em turnos; crianças recolhem sal da terra e idosos repartem sementes resistentes",
+      "conflito_vivo": "Uma seca local põe vizinhos a disputar a distribuição de água ritualmente purificada para plantio",
+      "gancho_de_aventura": "A colheita de uma família cresce demais; outros acusam a família de desviar o turno da fonte do templo",
+      "decisao_sem_resposta_certa": "Um acordo coletivo é mais justo que priorizar os refugiados recém-chegados que perderam a última safra?",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-831",
+        "movimento-classe:paragrafo-2818"
+      ],
+      "ancora_documentada": "Portomonte depende da purificação de água do Mar de Sangue para agricultura, inclusive sobre pedra; não há comprovação de potabilidade doméstica",
+      "temas": [
+        "agricultura",
+        "refugio",
+        "agua"
+      ],
+      "possivel_conexao": [
+        "caatinga",
+        "rio"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:farol-das-memorias",
+      "area_id": "area-proposta:costa",
+      "titulo": "O Farol das Memórias Emprestadas",
+      "local_proposto": "Ilha monástica hipotética na rede insular da Costa Sul",
+      "habitantes_propostos": "Tortles visitantes, tabaxis em viagem de maioridade, marinheiros e um cantor de correntes",
+      "personagem_central": "Mestre Casco-Branco, tortle que aceita notícias como pagamento por abrigo",
+      "vida_cotidiana": "Cada embarcação aporta para contar algo que descobriu; os relatos são transformados em mapas, receitas, canções e alertas de navegação",
+      "conflito_vivo": "Uma patrulha marítima traz relatos conflitantes sobre uma cidade kuo-toa e um desaparecimento no Mar de Sangue",
+      "gancho_de_aventura": "Um tabaxi retorna com um mapa que pode salvar náufragos ou conduzir caçadores de escravos aos mosteiros",
+      "decisao_sem_resposta_certa": "O mosteiro deve tornar públicas suas rotas para salvar os perdidos, arriscando o refúgio das ilhas?",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-934"
+      ],
+      "ancora_documentada": "Tortles e tabaxis vivem em ilhas com tradições monásticas e viajam sazonalmente; os ataques kuo-toa e abissais marinhos têm finalidade sacrificial",
+      "temas": [
+        "memoria",
+        "navegacao",
+        "religiao"
+      ],
+      "possivel_conexao": [
+        "foz",
+        "caatinga"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:poco-sem-bandeira",
+      "area_id": "area-proposta:caatinga",
+      "titulo": "O Poço Sem Bandeira",
+      "local_proposto": "Ponto de água hipotético em rota de deslocamento da Caatinga",
+      "habitantes_propostos": "Famílias orcs de clãs rivais, humanos das pradarias e pessoas expulsas das guerras do sul",
+      "personagem_central": "Velha Aru, guardiã orc que mede o uso do poço pela quantidade de gente que depende dele",
+      "vida_cotidiana": "Os frequentadores revezam tarefas de reparar paredes de pedra, vigiar trilhas e contar a Guerra de Nove Anos às crianças",
+      "conflito_vivo": "Um grupo armado quer monopolizar a água como pagamento por proteger a rota de pilhadores",
+      "gancho_de_aventura": "Uma criança conhece uma passagem antiga até uma nascente, mas recusa mostrá-la aos adultos",
+      "decisao_sem_resposta_certa": "Acordar o acesso ao poço com combatentes armados garante segurança ou torna a água propriedade de quem ameaça?",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-834",
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "ancora_documentada": "A Caatinga contém exilados, orcs e histórias de guerra contra kuo-toa; não está colonizada diretamente pela Corte",
+      "temas": [
+        "agua",
+        "cooperacao",
+        "conflito"
+      ],
+      "possivel_conexao": [
+        "costa",
+        "thargrid"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:mercado-das-ferragens",
+      "area_id": "area-proposta:caatinga",
+      "titulo": "A Feira das Ferragens Trocadas",
+      "local_proposto": "Pátio de comércio itinerante hipotético nas bordas das pradarias",
+      "habitantes_propostos": "Ferreiros sem clã, mercenários, guias orcs, artesãos humanos e refugiados",
+      "personagem_central": "Nala Duas-Balas, armeira que só vende uma arma se souber quem ficará sem ela",
+      "vida_cotidiana": "Reparos, troca de tecido, cantorias de estradas e comida seca se misturam numa feira que muda de lugar para evitar cobradores",
+      "conflito_vivo": "Um contratante pede armas para uma campanha de pilhagem costeira e oferece provisões que poderiam alimentar duas caravanas",
+      "gancho_de_aventura": "Um grupo de agricultores oferece o dobro para impedir que as armas sejam vendidas",
+      "decisao_sem_resposta_certa": "Negar armas pode poupar a costa, mas também abandonar famílias da Caatinga à própria violência?",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2757",
+        "movimento-classe:paragrafo-2760",
+        "movimento-classe:paragrafo-2779"
+      ],
+      "ancora_documentada": "As guerras e incursões entre Caatinga e Costa Sul são documentadas; não se pode atribuí-las a todos os orcs",
+      "temas": [
+        "comercio",
+        "guerra",
+        "etica"
+      ],
+      "possivel_conexao": [
+        "costa",
+        "rio"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:correio-dos-esporos",
+      "area_id": "area-proposta:eldroth",
+      "titulo": "O Correio das Raízes Molhadas",
+      "local_proposto": "Abrigo hipotético em uma parte não dominada integralmente de Eldroth",
+      "habitantes_propostos": "Refugiados que não fugiram, druidas do sub-bosque, catadores e mensageiros",
+      "personagem_central": "Sava Pó-de-Musgo, curadora que escuta a floresta antes de transmitir uma notícia",
+      "vida_cotidiana": "Habitantes cultivam pequenos fungários sobre madeira morta e contam os dias pelos cogumelos que florescem",
+      "conflito_vivo": "Patrulheiros de Lady Sylara suspeitam que recados circulam por caminhos que não deixam pegadas",
+      "gancho_de_aventura": "Chega um pedido de socorro da família de alguém que denunciou o próprio abrigo",
+      "decisao_sem_resposta_certa": "Salvar a família implica revelar a rede clandestina que mantém dezenas de pessoas ocultas?",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2177",
+        "movimento-classe:paragrafo-2137",
+        "movimento-povo:paragrafo-831"
+      ],
+      "ancora_documentada": "Eldroth está sob vigilância de Lady Sylara e abriga resistência e refugiados; a rede fúngica é inspiração do movimento, não serviço canônico comprovado",
+      "temas": [
+        "resistencia",
+        "natureza",
+        "informacao"
+      ],
+      "possivel_conexao": [
+        "thargrid",
+        "costa"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:velorio-dos-insepultos",
+      "area_id": "area-proposta:eldroth",
+      "titulo": "O Velório dos Insepultos",
+      "local_proposto": "Porão hipotético nas ruínas periféricas de Vandar",
+      "habitantes_propostos": "Viúvas, escavadores, registradores de mortos e um necromante que afirma agir contra Damaris",
+      "personagem_central": "Eron Sem-Última-Palavra, cuidador dos nomes de quem morreu sem testemunha",
+      "vida_cotidiana": "Cada família recebe uma pedra pequena com o nome de um morto; nenhuma é vendida, mesmo quando falta comida",
+      "conflito_vivo": "Os mortos-vivos sob influência de Lord Damaris tornam perigoso reconhecer corpos e reivindicar sepulturas",
+      "gancho_de_aventura": "Um cadáver retorna conduzindo à ruína uma pessoa que ainda sabe o nome original de seu dono",
+      "decisao_sem_resposta_certa": "É justo impedir um ritual potencialmente libertador quando não se sabe se devolverá a pessoa ou fortalecerá Damaris?",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2616",
+        "movimento-classe:paragrafo-2822",
+        "movimento-povo:paragrafo-832"
+      ],
+      "ancora_documentada": "Vandar é ruína ocupada por Lord Damaris e mortos-vivos; nenhuma comunidade civil específica foi confirmada ali",
+      "temas": [
+        "luto",
+        "necromancia",
+        "identidade"
+      ],
+      "possivel_conexao": [
+        "garganta",
+        "foz"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:conselho-dos-juramentos",
+      "area_id": "area-proposta:thargrid",
+      "titulo": "O Conselho dos Juramentos Quebrados",
+      "local_proposto": "Oficina-comunidade hipotética no Reino Sob a Montanha",
+      "habitantes_propostos": "Anões de vários clãs, gigantes artesãos, draconatos e refugiados não pertencentes a clãs",
+      "personagem_central": "Hralda da Coluna Rachada, engenheira que escuta o depoimento dos dois lados antes de reparar uma ponte",
+      "vida_cotidiana": "A mesa do conselho alterna entre projetos de obras, alimentação dos recém-chegados e debates sobre dívidas entre clãs",
+      "conflito_vivo": "Uma ponte defensiva precisa ser fechada para reparo, isolando um grupo de refugiados que não consegue reivindicar proteção de clã",
+      "gancho_de_aventura": "Um gigante do Ordenamento oferece reparar tudo caso receba autoridade permanente sobre a passagem",
+      "decisao_sem_resposta_certa": "O que vale mais: cumprir um juramento antigo de defender as portas ou abrir caminho para quem nunca participou desse juramento?",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-870",
+        "movimento-povo:paragrafo-848"
+      ],
+      "ancora_documentada": "Thargrid abriga clãs de anões e gigantes, o Reino Sob a Montanha e refugiados, constituindo resistência organizada",
+      "temas": [
+        "engenharia",
+        "asilo",
+        "juramento"
+      ],
+      "possivel_conexao": [
+        "caatinga",
+        "eldroth"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:escola-do-caminho-verde",
+      "area_id": "area-proposta:thargrid",
+      "titulo": "A Escola das Trilhas que Somem",
+      "local_proposto": "Ponto de instrução hipotético próximo a Ironwood",
+      "habitantes_propostos": "Rangers, druidas, órfãos da ocupação, ex-caçadores e viajantes de outras florestas",
+      "personagem_central": "Elian Chuva-Fina, instrutor que reprova quem consegue seguir rastros mas não sabe escondê-los",
+      "vida_cotidiana": "De manhã ensinam cultivo e observação do clima; à noite alunos praticam levar mensagens sem comprometer os abrigos",
+      "conflito_vivo": "Uma rota de evasão usada pela resistência parece estar sendo aprendida por observadores de Lady Sylara",
+      "gancho_de_aventura": "Um mensageiro de Eldroth pede abertura imediata do caminho verde para evacuar crianças",
+      "decisao_sem_resposta_certa": "Abrir a passagem agora salvaria vidas, mas também poderia tornar a escola e seus vizinhos identificáveis?",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2166",
+        "movimento-classe:paragrafo-2177",
+        "movimento-povo:paragrafo-831"
+      ],
+      "ancora_documentada": "Ironwood é fortaleza de rangers e druidas sob Elara Stormoak que realiza sabotagem e abriga resistência",
+      "temas": [
+        "educacao",
+        "guerrilha",
+        "refugiados"
+      ],
+      "possivel_conexao": [
+        "eldroth",
+        "rio"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:escrivania-da-foz",
+      "area_id": "area-proposta:foz",
+      "titulo": "A Escrivania dos Limites da Foz",
+      "local_proposto": "Anexo documental hipotético próximo à Boca do Abismo",
+      "habitantes_propostos": "Escribas yokai dispersos, moradores de Gualápolis, funcionários da Casa Uln-Shayr e trabalhadores do rio",
+      "personagem_central": "Soi do Nono Traço, copista que insiste em registrar também os nomes locais anteriores ao golpe",
+      "vida_cotidiana": "Nascimentos, acordos de passagem e lembranças de casas demolidas são transcritos em folhas que ninguém pode levar sozinho",
+      "conflito_vivo": "A administração de Ulorian busca reconhecimento jurídico para sua fortaleza, mas um registro antigo contradiz suas reivindicações",
+      "gancho_de_aventura": "Um representante shadow fey oferece proteção aos escribas em troca da correção de um único nome em uma inscrição",
+      "decisao_sem_resposta_certa": "A proteção imediata vale o risco de tornar legítima uma ocupação que a população resiste em reconhecer?",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2812",
+        "movimento-povo:paragrafo-992",
+        "movimento-classe:paragrafo-2816"
+      ],
+      "ancora_documentada": "Ulorian tomou Gualápolis e ergueu a Boca do Abismo; o simbolismo yokai distingue domínio militar de autoridade para nomear",
+      "temas": [
+        "politica",
+        "nomes",
+        "direito"
+      ],
+      "possivel_conexao": [
+        "garganta",
+        "shadar"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:feira-da-tregua",
+      "area_id": "area-proposta:foz",
+      "titulo": "A Feira da Trégua Improvável",
+      "local_proposto": "Mercado temporário hipotético próximo aos postos de Gualápolis",
+      "habitantes_propostos": "Barqueiros nativos, soldados shadow fey, cozinheiras, mensageiros e familiares de combatentes",
+      "personagem_central": "Tiru das Cestas, mediadora que negocia primeiro a devolução dos mortos e só depois o preço da carga",
+      "vida_cotidiana": "Durante o armistício, pessoas trocam curativos, sal, notícias e histórias sobre quem voltou do Abismo",
+      "conflito_vivo": "A ameaça demoníaca cria trégua instrumental entre invasores e nativos, sem acabar com a ambição de Ulorian",
+      "gancho_de_aventura": "Um desertor da Corte chega com informações que podem salvar uma patrulha, mas quer que a feira o esconda",
+      "decisao_sem_resposta_certa": "Salvá-lo fortalece a colaboração contra os demônios ou oferece um espião a Ulorian?",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2790",
+        "movimento-povo:paragrafo-827",
+        "movimento-classe:paragrafo-2818"
+      ],
+      "ancora_documentada": "Gualápolis e a Boca do Abismo participam de aliança tensa contra demônios; Ulorian não é governante benevolente",
+      "temas": [
+        "guerra",
+        "diplomacia",
+        "ocupacao"
+      ],
+      "possivel_conexao": [
+        "rio",
+        "shadar"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:salas-de-protocolo",
+      "area_id": "area-proposta:shadar",
+      "titulo": "As Salas do Favor Não Pago",
+      "local_proposto": "Casa de audiência hipotética em Shadar-Riverie",
+      "habitantes_propostos": "Nobres shadow fey, oficiais de protocolo, servidores subjugados e demandantes de concessões",
+      "personagem_central": "Vessala de Luvas Claras, notária que não levanta a voz e nunca deixa uma dívida desaparecer",
+      "vida_cotidiana": "Os criados ensinam como entrar, silenciar e recuar; títulos são pronunciados na ordem correta antes de qualquer pedido",
+      "conflito_vivo": "Uma Casa menor aceita preservar uma comunidade do Rio Ancestral em troca de um favor impossível de quitar",
+      "gancho_de_aventura": "Uma mulher sem título apresenta uma antiga promessa feérica que contraria o protocolo de um visconde",
+      "decisao_sem_resposta_certa": "Reconhecer o valor da promessa pode libertar uma vila ou apenas mudar o nome de seu proprietário?",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-953",
+        "movimento-povo:paragrafo-954",
+        "movimento-classe:paragrafo-2818"
+      ],
+      "ancora_documentada": "Shadar-Riverie é centro aristocrático shadow fey associado à Casa Uln-Shayr; etiqueta e dívidas estruturam o poder",
+      "temas": [
+        "corte",
+        "divida",
+        "colonialismo"
+      ],
+      "possivel_conexao": [
+        "rio",
+        "garganta"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    },
+    {
+      "id": "povoamento-proposto:ateliê-das-mascaras",
+      "area_id": "area-proposta:shadar",
+      "titulo": "O Ateliê das Máscaras Legíveis",
+      "local_proposto": "Oficina hipotética nos corredores de serviço de Shadar-Riverie",
+      "habitantes_propostos": "Costureiras e figurinistas subjugados, falsificadores, especialistas em glamour e jovens da Corte",
+      "personagem_central": "Avel Névoa-Severa, costureiro que consegue identificar uma família pelo que ela proíbe que seus servos vistam",
+      "vida_cotidiana": "Trajes de gala são costurados com fios reaproveitados; as marcas do trabalho revelam discretamente qual Casa comprou o tecido",
+      "conflito_vivo": "A Corte usa aparência e prestígio para ocultar quem paga impostos, quem contrata espiões e quem manda desaparecer pessoas",
+      "gancho_de_aventura": "Um cliente quer fabricar uma máscara que faria um governador reconhecer publicamente uma dívida antiga",
+      "decisao_sem_resposta_certa": "Uma mentira usada contra uma Casa opressora ainda fortalece o sistema em que a palavra dos poderosos vale mais que a dos demais?",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-965",
+        "movimento-povo:paragrafo-953",
+        "movimento-classe:paragrafo-2817"
+      ],
+      "ancora_documentada": "A Corte é uma estrutura aristocrática de opressão, intriga e manipulação feérica; Shadar-Riverie é sede da Casa Uln-Shayr",
+      "temas": [
+        "aparencia",
+        "resistencia",
+        "etiqueta"
+      ],
+      "possivel_conexao": [
+        "foz",
+        "garganta"
+      ],
+      "estado": "proposta_de_povoamento",
+      "aprovacao_autoral": false,
+      "efeito_automatico_no_canon": false
+    }
+  ],
+  "tramas": [
+    {
+      "id": "nome-e-propriedade",
+      "titulo": "Quem tem direito de nomear a Carcaça?",
+      "pergunta": "Um regime que possui o território pode possuir seu nome?",
+      "pontos": [
+        "area-proposta:garganta",
+        "area-proposta:rio",
+        "area-proposta:foz",
+        "area-proposta:shadar"
+      ]
+    },
+    {
+      "id": "agua-e-sobrevivencia",
+      "titulo": "Quem define o preço da água e da proteção?",
+      "pergunta": "Abastecimento, hospitalidade e comércio podem sobreviver ao cerco?",
+      "pontos": [
+        "area-proposta:caatinga",
+        "area-proposta:costa",
+        "area-proposta:rio"
+      ]
+    },
+    {
+      "id": "memoria-e-resistencia",
+      "titulo": "Como preservar pessoas e histórias durante a ocupação?",
+      "pergunta": "Salvar a rede de resistência justifica deixar alguém para trás?",
+      "pontos": [
+        "area-proposta:eldroth",
+        "area-proposta:thargrid",
+        "area-proposta:foz"
+      ]
+    }
+  ]
+}
