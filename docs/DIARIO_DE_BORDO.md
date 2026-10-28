@@ -383,3 +383,13 @@ Documento: `docs/TERCEIRA_AUDITORIA_HACK_CARCACA_DW.md`.
 - Artefatos `dist/carcaca/hack-complete-pilot-movements.json`, `hack-complete-pilot-movement-indexes.json`, `hack-docx-tables.json`, `hack-docx-table-indexes.json` consultados diretamente após publicação.
 - 12 textos completos; Saqueador da Caatinga com 4 opções documentadas; 33 tabelas classificadas em 10 narrativas, 2 numéricas e 21 de movimentos/regras gerais.
 - Três cabeçalhos já existentes ligados por `revisao_preliminar_id`, sem inventar vínculos. Estados `aplicacao_canonica:false` mantidos. Cânone ecológico e fichas de campanhas preservados.
+
+## 2026-10-28 · Povoamento XI — Ironwood, Eldroth e Vandar
+
+Continuidade direta do Povoamento X: a mensageira Vaelis, anteriormente proposta em Thargrid, reaparece como hipótese editorial de comunicação com Ironwood, sem virar evento confirmado.
+
+Criadas 40 entradas — cinco microespaços, cinco coletivos, oito pessoas, quatro dilemas, cinco fluxos, quatro acordos, seis cenas e três arcos — em `data/propostas/ironwood-eldroth-resistencia-hack.json`. A produção cotidiana combina acolhimento, formação, preservação de testemunhos, pesquisa sobre a floresta corrompida e proteção da informação. Não há população, geocodificação, itinerários reais ou novos eventos confirmados.
+
+A fronteira canônica foi preservada: Eldroth continua sob Lady Sylara; Vandar, sob Lord Damaris; Ironwood é fortaleza de resistência liderada por Elara Stormoak, ao sul de Thargrid. Movimentos de elfos da floresta e shadow fey são apenas referências culturais. `REQUER` mantém seu sentido obrigatório em qualquer futura ficha.
+
+As saídas ficam em `dist/carcaca/ironwood-eldroth-resistance*.json`, com manifest/índices gerados, cliente somente leitura, integridade no validador e cobertura de testes Node. Dossiê editorial em `docs/IRONWOOD_ELDROTH_POVOAMENTO_CICLO11.md`.
