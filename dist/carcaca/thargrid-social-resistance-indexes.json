@@ -1,0 +1,439 @@
+{
+  "by_categoria": {
+    "acordos": [
+      "thargrid-social:acordo:aviso-sem-comando",
+      "thargrid-social:acordo:escuta-antes-do-posto",
+      "thargrid-social:acordo:ferragem-partilhada",
+      "thargrid-social:acordo:ordem-sem-trono",
+      "thargrid-social:acordo:passo-em-duas-escalas"
+    ],
+    "arcos": [
+      "thargrid-social:arco:fortaleza-abrigo",
+      "thargrid-social:arco:guerra-que-foge",
+      "thargrid-social:arco:politica-de-escala"
+    ],
+    "cenas": [
+      "thargrid-social:cena:forja-de-dois-mestres",
+      "thargrid-social:cena:heranca-que-nao-prende",
+      "thargrid-social:cena:mensagem-da-floresta",
+      "thargrid-social:cena:neve-sem-testemunha",
+      "thargrid-social:cena:porta-alta-demais",
+      "thargrid-social:cena:quem-manda-no-vale",
+      "thargrid-social:cena:sexta-tigela"
+    ],
+    "coletivos": [
+      "thargrid-social:coletivo:cartas-a-ironwood",
+      "thargrid-social:coletivo:mesa-do-abrigo",
+      "thargrid-social:coletivo:mestres-do-calor",
+      "thargrid-social:coletivo:peso-e-passagem",
+      "thargrid-social:coletivo:testemunhas-da-palavra",
+      "thargrid-social:coletivo:vigias-limiar"
+    ],
+    "dilemas": [
+      "thargrid-social:dilema:alimento-e-guarda",
+      "thargrid-social:dilema:honra-e-ancestral",
+      "thargrid-social:dilema:ordenamento-e-cidadania",
+      "thargrid-social:dilema:porta-ou-refugio"
+    ],
+    "fluxos": [
+      "thargrid-social:fluxo:alerta-e-trilha",
+      "thargrid-social:fluxo:alimento-e-abrigo",
+      "thargrid-social:fluxo:forjas-rivais",
+      "thargrid-social:fluxo:mineral-e-muralhas",
+      "thargrid-social:fluxo:obra-em-duas-escalas",
+      "thargrid-social:fluxo:socorro-para-fora"
+    ],
+    "lugares": [
+      "thargrid-social:lugar:escada-de-dois-passos",
+      "thargrid-social:lugar:lareira-de-tres-forjas",
+      "thargrid-social:lugar:mesa-da-sexta-tigela",
+      "thargrid-social:lugar:muralha-dos-juramentos",
+      "thargrid-social:lugar:patio-da-metade",
+      "thargrid-social:lugar:vigia-das-brumas"
+    ],
+    "pessoas": [
+      "thargrid-social:pessoa:brakar",
+      "thargrid-social:pessoa:dorrin",
+      "thargrid-social:pessoa:hryna",
+      "thargrid-social:pessoa:ithara",
+      "thargrid-social:pessoa:kelra",
+      "thargrid-social:pessoa:nemea",
+      "thargrid-social:pessoa:olgran",
+      "thargrid-social:pessoa:serak",
+      "thargrid-social:pessoa:vaelis"
+    ]
+  },
+  "by_povo": {
+    "ana": [
+      "thargrid-social:pessoa:kelra"
+    ],
+    "anao": [
+      "thargrid-social:pessoa:dorrin"
+    ],
+    "draconata": [
+      "thargrid-social:pessoa:ithara"
+    ],
+    "draconato": [
+      "thargrid-social:pessoa:serak"
+    ],
+    "elfa_floresta": [
+      "thargrid-social:pessoa:vaelis"
+    ],
+    "gigante_fogo": [
+      "thargrid-social:pessoa:brakar"
+    ],
+    "gigante_gelo": [
+      "thargrid-social:pessoa:hryna"
+    ],
+    "gigante_pedra": [
+      "thargrid-social:pessoa:olgran"
+    ],
+    "humana_refugiada": [
+      "thargrid-social:pessoa:nemea"
+    ]
+  },
+  "by_tradicao": {
+    "anões_e_gigantes_de_pedra": [
+      "thargrid-social:coletivo:peso-e-passagem"
+    ],
+    "defesa": [
+      "thargrid-social:coletivo:vigias-limiar"
+    ],
+    "forjas": [
+      "thargrid-social:coletivo:mestres-do-calor"
+    ],
+    "mediacao_draconata": [
+      "thargrid-social:coletivo:testemunhas-da-palavra"
+    ],
+    "mensageria": [
+      "thargrid-social:coletivo:cartas-a-ironwood"
+    ],
+    "multicomunitaria": [
+      "thargrid-social:coletivo:mesa-do-abrigo"
+    ]
+  },
+  "by_setor": {
+    "construcao": [
+      "thargrid-social:fluxo:mineral-e-muralhas"
+    ],
+    "infraestrutura": [
+      "thargrid-social:fluxo:obra-em-duas-escalas"
+    ],
+    "mensageria": [
+      "thargrid-social:fluxo:alerta-e-trilha"
+    ],
+    "metalurgia": [
+      "thargrid-social:fluxo:forjas-rivais"
+    ],
+    "socorro": [
+      "thargrid-social:fluxo:socorro-para-fora"
+    ],
+    "subsistencia": [
+      "thargrid-social:fluxo:alimento-e-abrigo"
+    ]
+  },
+  "by_ambiente": {
+    "altura": [
+      "thargrid-social:lugar:vigia-das-brumas"
+    ],
+    "assembleia": [
+      "thargrid-social:lugar:muralha-dos-juramentos"
+    ],
+    "forja": [
+      "thargrid-social:lugar:lareira-de-tres-forjas"
+    ],
+    "passagem": [
+      "thargrid-social:lugar:escada-de-dois-passos"
+    ],
+    "subterraneo": [
+      "thargrid-social:lugar:mesa-da-sexta-tigela",
+      "thargrid-social:lugar:patio-da-metade"
+    ]
+  },
+  "by_movimento_hack": {
+    "movimento-povo:paragrafo-1005": [
+      "thargrid-social:acordo:aviso-sem-comando",
+      "thargrid-social:arco:guerra-que-foge",
+      "thargrid-social:cena:mensagem-da-floresta",
+      "thargrid-social:coletivo:cartas-a-ironwood",
+      "thargrid-social:fluxo:alerta-e-trilha",
+      "thargrid-social:fluxo:socorro-para-fora",
+      "thargrid-social:pessoa:vaelis"
+    ],
+    "movimento-povo:paragrafo-1006": [
+      "thargrid-social:acordo:aviso-sem-comando",
+      "thargrid-social:cena:mensagem-da-floresta",
+      "thargrid-social:coletivo:cartas-a-ironwood",
+      "thargrid-social:fluxo:socorro-para-fora",
+      "thargrid-social:pessoa:vaelis"
+    ],
+    "movimento-povo:paragrafo-831": [
+      "thargrid-social:pessoa:nemea"
+    ],
+    "movimento-povo:paragrafo-832": [
+      "thargrid-social:acordo:escuta-antes-do-posto",
+      "thargrid-social:arco:fortaleza-abrigo",
+      "thargrid-social:cena:sexta-tigela",
+      "thargrid-social:coletivo:mesa-do-abrigo",
+      "thargrid-social:dilema:alimento-e-guarda",
+      "thargrid-social:dilema:porta-ou-refugio",
+      "thargrid-social:fluxo:alimento-e-abrigo",
+      "thargrid-social:lugar:mesa-da-sexta-tigela",
+      "thargrid-social:pessoa:nemea"
+    ],
+    "movimento-povo:paragrafo-845": [
+      "thargrid-social:fluxo:mineral-e-muralhas",
+      "thargrid-social:lugar:patio-da-metade",
+      "thargrid-social:pessoa:kelra"
+    ],
+    "movimento-povo:paragrafo-846": [
+      "thargrid-social:acordo:escuta-antes-do-posto",
+      "thargrid-social:arco:fortaleza-abrigo",
+      "thargrid-social:cena:quem-manda-no-vale",
+      "thargrid-social:cena:sexta-tigela",
+      "thargrid-social:coletivo:mesa-do-abrigo",
+      "thargrid-social:dilema:ordenamento-e-cidadania",
+      "thargrid-social:dilema:porta-ou-refugio",
+      "thargrid-social:fluxo:alimento-e-abrigo",
+      "thargrid-social:lugar:mesa-da-sexta-tigela",
+      "thargrid-social:lugar:muralha-dos-juramentos",
+      "thargrid-social:pessoa:dorrin"
+    ],
+    "movimento-povo:paragrafo-848": [
+      "thargrid-social:acordo:ferragem-partilhada",
+      "thargrid-social:acordo:ordem-sem-trono",
+      "thargrid-social:coletivo:mestres-do-calor",
+      "thargrid-social:coletivo:testemunhas-da-palavra",
+      "thargrid-social:fluxo:forjas-rivais",
+      "thargrid-social:pessoa:dorrin"
+    ],
+    "movimento-povo:paragrafo-849": [
+      "thargrid-social:acordo:ferragem-partilhada",
+      "thargrid-social:acordo:passo-em-duas-escalas",
+      "thargrid-social:arco:politica-de-escala",
+      "thargrid-social:cena:forja-de-dois-mestres",
+      "thargrid-social:cena:porta-alta-demais",
+      "thargrid-social:coletivo:mestres-do-calor",
+      "thargrid-social:coletivo:peso-e-passagem",
+      "thargrid-social:dilema:alimento-e-guarda",
+      "thargrid-social:fluxo:forjas-rivais",
+      "thargrid-social:fluxo:mineral-e-muralhas",
+      "thargrid-social:fluxo:obra-em-duas-escalas",
+      "thargrid-social:lugar:escada-de-dois-passos",
+      "thargrid-social:lugar:lareira-de-tres-forjas",
+      "thargrid-social:lugar:patio-da-metade",
+      "thargrid-social:pessoa:brakar",
+      "thargrid-social:pessoa:kelra",
+      "thargrid-social:pessoa:olgran"
+    ],
+    "movimento-povo:paragrafo-855": [
+      "thargrid-social:cena:sexta-tigela",
+      "thargrid-social:coletivo:mesa-do-abrigo",
+      "thargrid-social:dilema:alimento-e-guarda",
+      "thargrid-social:fluxo:alimento-e-abrigo",
+      "thargrid-social:fluxo:mineral-e-muralhas",
+      "thargrid-social:lugar:mesa-da-sexta-tigela",
+      "thargrid-social:pessoa:dorrin",
+      "thargrid-social:pessoa:nemea"
+    ],
+    "movimento-povo:paragrafo-856": [
+      "thargrid-social:pessoa:kelra"
+    ],
+    "movimento-povo:paragrafo-870": [
+      "thargrid-social:acordo:ordem-sem-trono",
+      "thargrid-social:arco:politica-de-escala",
+      "thargrid-social:cena:quem-manda-no-vale",
+      "thargrid-social:coletivo:testemunhas-da-palavra",
+      "thargrid-social:dilema:ordenamento-e-cidadania",
+      "thargrid-social:lugar:muralha-dos-juramentos",
+      "thargrid-social:pessoa:brakar",
+      "thargrid-social:pessoa:olgran"
+    ],
+    "movimento-povo:paragrafo-871": [
+      "thargrid-social:acordo:passo-em-duas-escalas",
+      "thargrid-social:cena:porta-alta-demais",
+      "thargrid-social:coletivo:peso-e-passagem",
+      "thargrid-social:fluxo:obra-em-duas-escalas",
+      "thargrid-social:lugar:escada-de-dois-passos",
+      "thargrid-social:lugar:patio-da-metade",
+      "thargrid-social:pessoa:olgran"
+    ],
+    "movimento-povo:paragrafo-872": [
+      "thargrid-social:cena:neve-sem-testemunha",
+      "thargrid-social:coletivo:vigias-limiar",
+      "thargrid-social:fluxo:alerta-e-trilha",
+      "thargrid-social:lugar:vigia-das-brumas",
+      "thargrid-social:pessoa:hryna"
+    ],
+    "movimento-povo:paragrafo-873": [
+      "thargrid-social:acordo:ferragem-partilhada",
+      "thargrid-social:cena:forja-de-dois-mestres",
+      "thargrid-social:coletivo:mestres-do-calor",
+      "thargrid-social:fluxo:forjas-rivais",
+      "thargrid-social:lugar:lareira-de-tres-forjas",
+      "thargrid-social:pessoa:brakar"
+    ],
+    "movimento-povo:paragrafo-874": [
+      "thargrid-social:arco:guerra-que-foge",
+      "thargrid-social:cena:neve-sem-testemunha",
+      "thargrid-social:coletivo:vigias-limiar",
+      "thargrid-social:fluxo:alerta-e-trilha",
+      "thargrid-social:lugar:vigia-das-brumas",
+      "thargrid-social:pessoa:hryna"
+    ],
+    "movimento-povo:paragrafo-884": [
+      "thargrid-social:acordo:ordem-sem-trono",
+      "thargrid-social:arco:politica-de-escala",
+      "thargrid-social:cena:heranca-que-nao-prende",
+      "thargrid-social:cena:quem-manda-no-vale",
+      "thargrid-social:coletivo:testemunhas-da-palavra",
+      "thargrid-social:dilema:honra-e-ancestral",
+      "thargrid-social:dilema:ordenamento-e-cidadania",
+      "thargrid-social:lugar:muralha-dos-juramentos",
+      "thargrid-social:pessoa:ithara",
+      "thargrid-social:pessoa:serak"
+    ],
+    "movimento-povo:paragrafo-885": [
+      "thargrid-social:acordo:aviso-sem-comando",
+      "thargrid-social:acordo:escuta-antes-do-posto",
+      "thargrid-social:acordo:passo-em-duas-escalas",
+      "thargrid-social:arco:fortaleza-abrigo",
+      "thargrid-social:arco:guerra-que-foge",
+      "thargrid-social:cena:mensagem-da-floresta",
+      "thargrid-social:cena:neve-sem-testemunha",
+      "thargrid-social:cena:porta-alta-demais",
+      "thargrid-social:coletivo:cartas-a-ironwood",
+      "thargrid-social:coletivo:peso-e-passagem",
+      "thargrid-social:coletivo:vigias-limiar",
+      "thargrid-social:dilema:porta-ou-refugio",
+      "thargrid-social:fluxo:obra-em-duas-escalas",
+      "thargrid-social:fluxo:socorro-para-fora",
+      "thargrid-social:lugar:escada-de-dois-passos",
+      "thargrid-social:lugar:vigia-das-brumas",
+      "thargrid-social:pessoa:hryna",
+      "thargrid-social:pessoa:ithara",
+      "thargrid-social:pessoa:serak",
+      "thargrid-social:pessoa:vaelis"
+    ],
+    "movimento-povo:paragrafo-886": [
+      "thargrid-social:cena:forja-de-dois-mestres",
+      "thargrid-social:cena:heranca-que-nao-prende",
+      "thargrid-social:dilema:honra-e-ancestral",
+      "thargrid-social:lugar:lareira-de-tres-forjas",
+      "thargrid-social:pessoa:serak"
+    ],
+    "movimento-povo:paragrafo-887": [
+      "thargrid-social:cena:heranca-que-nao-prende",
+      "thargrid-social:dilema:honra-e-ancestral"
+    ],
+    "movimento-povo:paragrafo-892": [
+      "thargrid-social:pessoa:ithara"
+    ]
+  },
+  "by_semente_anterior": {
+    "povoamento-proposto:conselho-dos-juramentos": [
+      "thargrid-social:acordo:escuta-antes-do-posto",
+      "thargrid-social:acordo:ferragem-partilhada",
+      "thargrid-social:acordo:ordem-sem-trono",
+      "thargrid-social:arco:fortaleza-abrigo",
+      "thargrid-social:arco:politica-de-escala",
+      "thargrid-social:cena:forja-de-dois-mestres",
+      "thargrid-social:cena:heranca-que-nao-prende",
+      "thargrid-social:cena:quem-manda-no-vale",
+      "thargrid-social:cena:sexta-tigela",
+      "thargrid-social:coletivo:mesa-do-abrigo",
+      "thargrid-social:coletivo:mestres-do-calor",
+      "thargrid-social:coletivo:testemunhas-da-palavra",
+      "thargrid-social:dilema:alimento-e-guarda",
+      "thargrid-social:dilema:ordenamento-e-cidadania",
+      "thargrid-social:dilema:porta-ou-refugio",
+      "thargrid-social:fluxo:alimento-e-abrigo",
+      "thargrid-social:fluxo:forjas-rivais",
+      "thargrid-social:fluxo:mineral-e-muralhas",
+      "thargrid-social:lugar:lareira-de-tres-forjas",
+      "thargrid-social:lugar:mesa-da-sexta-tigela",
+      "thargrid-social:lugar:muralha-dos-juramentos",
+      "thargrid-social:lugar:patio-da-metade",
+      "thargrid-social:pessoa:brakar",
+      "thargrid-social:pessoa:dorrin",
+      "thargrid-social:pessoa:nemea",
+      "thargrid-social:pessoa:serak"
+    ],
+    "povoamento-proposto:escola-do-caminho-verde": [
+      "thargrid-social:acordo:aviso-sem-comando",
+      "thargrid-social:acordo:passo-em-duas-escalas",
+      "thargrid-social:arco:guerra-que-foge",
+      "thargrid-social:arco:politica-de-escala",
+      "thargrid-social:cena:mensagem-da-floresta",
+      "thargrid-social:cena:neve-sem-testemunha",
+      "thargrid-social:cena:porta-alta-demais",
+      "thargrid-social:coletivo:cartas-a-ironwood",
+      "thargrid-social:coletivo:peso-e-passagem",
+      "thargrid-social:coletivo:vigias-limiar",
+      "thargrid-social:dilema:honra-e-ancestral",
+      "thargrid-social:fluxo:alerta-e-trilha",
+      "thargrid-social:fluxo:obra-em-duas-escalas",
+      "thargrid-social:fluxo:socorro-para-fora",
+      "thargrid-social:lugar:escada-de-dois-passos",
+      "thargrid-social:lugar:vigia-das-brumas",
+      "thargrid-social:pessoa:hryna",
+      "thargrid-social:pessoa:ithara",
+      "thargrid-social:pessoa:kelra",
+      "thargrid-social:pessoa:olgran",
+      "thargrid-social:pessoa:vaelis"
+    ]
+  },
+  "by_local_de_cena": {
+    "thargrid-social:lugar:escada-de-dois-passos": [
+      "thargrid-social:cena:porta-alta-demais"
+    ],
+    "thargrid-social:lugar:lareira-de-tres-forjas": [
+      "thargrid-social:cena:forja-de-dois-mestres"
+    ],
+    "thargrid-social:lugar:mesa-da-sexta-tigela": [
+      "thargrid-social:cena:sexta-tigela"
+    ],
+    "thargrid-social:lugar:muralha-dos-juramentos": [
+      "thargrid-social:cena:heranca-que-nao-prende",
+      "thargrid-social:cena:mensagem-da-floresta",
+      "thargrid-social:cena:quem-manda-no-vale"
+    ],
+    "thargrid-social:lugar:vigia-das-brumas": [
+      "thargrid-social:cena:neve-sem-testemunha"
+    ]
+  },
+  "by_origem": {
+    "thargrid-social:lugar:lareira-de-tres-forjas": [
+      "thargrid-social:fluxo:forjas-rivais",
+      "thargrid-social:fluxo:mineral-e-muralhas"
+    ],
+    "thargrid-social:lugar:mesa-da-sexta-tigela": [
+      "thargrid-social:fluxo:alimento-e-abrigo"
+    ],
+    "thargrid-social:lugar:muralha-dos-juramentos": [
+      "thargrid-social:fluxo:socorro-para-fora"
+    ],
+    "thargrid-social:lugar:patio-da-metade": [
+      "thargrid-social:fluxo:obra-em-duas-escalas"
+    ],
+    "thargrid-social:lugar:vigia-das-brumas": [
+      "thargrid-social:fluxo:alerta-e-trilha"
+    ]
+  },
+  "by_destino": {
+    "thargrid-social:lugar:escada-de-dois-passos": [
+      "thargrid-social:fluxo:mineral-e-muralhas",
+      "thargrid-social:fluxo:obra-em-duas-escalas"
+    ],
+    "thargrid-social:lugar:muralha-dos-juramentos": [
+      "thargrid-social:fluxo:alerta-e-trilha"
+    ],
+    "thargrid-social:lugar:patio-da-metade": [
+      "thargrid-social:fluxo:alimento-e-abrigo"
+    ],
+    "thargrid-social:lugar:vigia-das-brumas": [
+      "thargrid-social:fluxo:forjas-rivais",
+      "thargrid-social:fluxo:socorro-para-fora"
+    ]
+  }
+}
