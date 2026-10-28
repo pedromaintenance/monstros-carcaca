@@ -1,0 +1,228 @@
+{
+  "by_categoria": {
+    "dilemas": [
+      "worldbuilding-xvi:dilema:ave-culpada",
+      "worldbuilding-xvi:dilema:despensa-vazia",
+      "worldbuilding-xvi:dilema:druida-negocia",
+      "worldbuilding-xvi:dilema:hospede-marcado"
+    ],
+    "mecanismos": [
+      "worldbuilding-xvi:mecanismo:agua-licenciada",
+      "worldbuilding-xvi:mecanismo:caca-interditada",
+      "worldbuilding-xvi:mecanismo:criatura-informante",
+      "worldbuilding-xvi:mecanismo:despejo-sagrado",
+      "worldbuilding-xvi:mecanismo:familia-classificada",
+      "worldbuilding-xvi:mecanismo:hospitalidade-vigiada",
+      "worldbuilding-xvi:mecanismo:promessa-cobrada",
+      "worldbuilding-xvi:mecanismo:trilha-denunciada"
+    ],
+    "modelos_de_regime": [
+      "worldbuilding-xvi:modelo:intermediarios",
+      "worldbuilding-xvi:modelo:pactos",
+      "worldbuilding-xvi:modelo:patrulhas"
+    ],
+    "posicoes_sociais": [
+      "worldbuilding-xvi:posicao:aderente-convicto",
+      "worldbuilding-xvi:posicao:descendente-misto",
+      "worldbuilding-xvi:posicao:druida-coagido",
+      "worldbuilding-xvi:posicao:druida-que-ficou",
+      "worldbuilding-xvi:posicao:guarda-reservas",
+      "worldbuilding-xvi:posicao:resistente-civil"
+    ],
+    "vinhetas": [
+      "worldbuilding-xvi:vinheta:agua-da-manha",
+      "worldbuilding-xvi:vinheta:almoco-curto",
+      "worldbuilding-xvi:vinheta:palavra-da-avo",
+      "worldbuilding-xvi:vinheta:som-no-escuro"
+    ]
+  },
+  "by_dominio": {
+    "adesao_voluntaria_possivel": [
+      "worldbuilding-xvi:posicao:aderente-convicto"
+    ],
+    "agua_e_trabalho": [
+      "worldbuilding-xvi:mecanismo:agua-licenciada"
+    ],
+    "alimentacao": [
+      "worldbuilding-xvi:posicao:guarda-reservas"
+    ],
+    "alimento": [
+      "worldbuilding-xvi:mecanismo:caca-interditada"
+    ],
+    "asilo_e_pertencimento": [
+      "worldbuilding-xvi:dilema:hospede-marcado"
+    ],
+    "coacao_e_reparacao": [
+      "worldbuilding-xvi:dilema:druida-negocia"
+    ],
+    "coercao": [
+      "worldbuilding-xvi:posicao:druida-coagido"
+    ],
+    "ecologia": [
+      "worldbuilding-xvi:mecanismo:criatura-informante"
+    ],
+    "ecologia_e_testemunho": [
+      "worldbuilding-xvi:dilema:ave-culpada"
+    ],
+    "fome_e_solidariedade": [
+      "worldbuilding-xvi:dilema:despensa-vazia"
+    ],
+    "informacao": [
+      "worldbuilding-xvi:mecanismo:trilha-denunciada"
+    ],
+    "juramentos": [
+      "worldbuilding-xvi:mecanismo:promessa-cobrada"
+    ],
+    "mediacao": [
+      "worldbuilding-xvi:posicao:druida-que-ficou"
+    ],
+    "parentesco": [
+      "worldbuilding-xvi:mecanismo:familia-classificada",
+      "worldbuilding-xvi:posicao:descendente-misto"
+    ],
+    "refugio": [
+      "worldbuilding-xvi:mecanismo:hospitalidade-vigiada"
+    ],
+    "solidariedade": [
+      "worldbuilding-xvi:posicao:resistente-civil"
+    ],
+    "terra_e_moradia": [
+      "worldbuilding-xvi:mecanismo:despejo-sagrado"
+    ]
+  },
+  "by_pratica_xv": {
+    "worldbuilding-xv:pratica:acordos-com-os-silenciosos": [
+      "worldbuilding-xvi:mecanismo:criatura-informante"
+    ],
+    "worldbuilding-xv:pratica:lugar-que-nao-se-edifica": [
+      "worldbuilding-xvi:mecanismo:despejo-sagrado"
+    ],
+    "worldbuilding-xv:pratica:memoria-dos-caminhos": [
+      "worldbuilding-xvi:mecanismo:trilha-denunciada"
+    ],
+    "worldbuilding-xv:pratica:mesa-da-hospitalidade": [
+      "worldbuilding-xvi:mecanismo:hospitalidade-vigiada"
+    ],
+    "worldbuilding-xv:pratica:nomes-misturados": [
+      "worldbuilding-xvi:mecanismo:familia-classificada"
+    ],
+    "worldbuilding-xv:pratica:promessa-e-lugar": [
+      "worldbuilding-xvi:mecanismo:promessa-cobrada"
+    ],
+    "worldbuilding-xv:pratica:roda-das-nascentes": [
+      "worldbuilding-xvi:mecanismo:agua-licenciada"
+    ],
+    "worldbuilding-xv:pratica:tempo-da-caca": [
+      "worldbuilding-xvi:mecanismo:caca-interditada"
+    ]
+  },
+  "by_mecanismo": {
+    "worldbuilding-xvi:mecanismo:agua-licenciada": [
+      "worldbuilding-xvi:dilema:druida-negocia",
+      "worldbuilding-xvi:vinheta:agua-da-manha"
+    ],
+    "worldbuilding-xvi:mecanismo:caca-interditada": [
+      "worldbuilding-xvi:dilema:despensa-vazia",
+      "worldbuilding-xvi:vinheta:almoco-curto"
+    ],
+    "worldbuilding-xvi:mecanismo:criatura-informante": [
+      "worldbuilding-xvi:dilema:ave-culpada",
+      "worldbuilding-xvi:vinheta:som-no-escuro"
+    ],
+    "worldbuilding-xvi:mecanismo:hospitalidade-vigiada": [
+      "worldbuilding-xvi:dilema:hospede-marcado"
+    ],
+    "worldbuilding-xvi:mecanismo:promessa-cobrada": [
+      "worldbuilding-xvi:vinheta:palavra-da-avo"
+    ]
+  },
+  "by_posicao": {
+    "worldbuilding-xvi:posicao:descendente-misto": [
+      "worldbuilding-xvi:dilema:hospede-marcado"
+    ],
+    "worldbuilding-xvi:posicao:druida-coagido": [
+      "worldbuilding-xvi:dilema:druida-negocia"
+    ],
+    "worldbuilding-xvi:posicao:druida-que-ficou": [
+      "worldbuilding-xvi:dilema:ave-culpada"
+    ],
+    "worldbuilding-xvi:posicao:guarda-reservas": [
+      "worldbuilding-xvi:dilema:despensa-vazia"
+    ]
+  },
+  "by_pagina_manuscrito": {
+    "16": [
+      "worldbuilding-xvi:mecanismo:familia-classificada",
+      "worldbuilding-xvi:mecanismo:hospitalidade-vigiada",
+      "worldbuilding-xvi:mecanismo:promessa-cobrada",
+      "worldbuilding-xvi:posicao:aderente-convicto"
+    ],
+    "17": [
+      "worldbuilding-xvi:mecanismo:agua-licenciada",
+      "worldbuilding-xvi:mecanismo:caca-interditada",
+      "worldbuilding-xvi:mecanismo:criatura-informante",
+      "worldbuilding-xvi:mecanismo:despejo-sagrado",
+      "worldbuilding-xvi:mecanismo:familia-classificada",
+      "worldbuilding-xvi:mecanismo:hospitalidade-vigiada",
+      "worldbuilding-xvi:mecanismo:trilha-denunciada",
+      "worldbuilding-xvi:posicao:descendente-misto",
+      "worldbuilding-xvi:posicao:druida-coagido",
+      "worldbuilding-xvi:posicao:druida-que-ficou",
+      "worldbuilding-xvi:posicao:guarda-reservas"
+    ],
+    "5": [
+      "worldbuilding-xvi:mecanismo:agua-licenciada",
+      "worldbuilding-xvi:mecanismo:criatura-informante",
+      "worldbuilding-xvi:mecanismo:despejo-sagrado",
+      "worldbuilding-xvi:mecanismo:trilha-denunciada",
+      "worldbuilding-xvi:modelo:intermediarios",
+      "worldbuilding-xvi:modelo:pactos",
+      "worldbuilding-xvi:modelo:patrulhas"
+    ],
+    "7": [
+      "worldbuilding-xvi:mecanismo:caca-interditada",
+      "worldbuilding-xvi:mecanismo:promessa-cobrada",
+      "worldbuilding-xvi:modelo:intermediarios",
+      "worldbuilding-xvi:modelo:pactos",
+      "worldbuilding-xvi:modelo:patrulhas",
+      "worldbuilding-xvi:posicao:resistente-civil"
+    ]
+  },
+  "by_estado": {
+    "alternativa_nao_adotada": [
+      "worldbuilding-xvi:modelo:intermediarios",
+      "worldbuilding-xvi:modelo:pactos",
+      "worldbuilding-xvi:modelo:patrulhas"
+    ],
+    "dilema_ficcional_nao_ocorrido": [
+      "worldbuilding-xvi:dilema:ave-culpada",
+      "worldbuilding-xvi:dilema:despensa-vazia",
+      "worldbuilding-xvi:dilema:druida-negocia",
+      "worldbuilding-xvi:dilema:hospede-marcado"
+    ],
+    "hipotese_institucional_nao_confirmada": [
+      "worldbuilding-xvi:mecanismo:agua-licenciada",
+      "worldbuilding-xvi:mecanismo:caca-interditada",
+      "worldbuilding-xvi:mecanismo:criatura-informante",
+      "worldbuilding-xvi:mecanismo:despejo-sagrado",
+      "worldbuilding-xvi:mecanismo:familia-classificada",
+      "worldbuilding-xvi:mecanismo:hospitalidade-vigiada",
+      "worldbuilding-xvi:mecanismo:promessa-cobrada",
+      "worldbuilding-xvi:mecanismo:trilha-denunciada"
+    ],
+    "posicao_social_exploratoria": [
+      "worldbuilding-xvi:posicao:aderente-convicto",
+      "worldbuilding-xvi:posicao:descendente-misto",
+      "worldbuilding-xvi:posicao:druida-coagido",
+      "worldbuilding-xvi:posicao:druida-que-ficou",
+      "worldbuilding-xvi:posicao:guarda-reservas",
+      "worldbuilding-xvi:posicao:resistente-civil"
+    ],
+    "vinheta_literaria_hipotetica": [
+      "worldbuilding-xvi:vinheta:agua-da-manha",
+      "worldbuilding-xvi:vinheta:almoco-curto",
+      "worldbuilding-xvi:vinheta:palavra-da-avo",
+      "worldbuilding-xvi:vinheta:som-no-escuro"
+    ]
+  }
+}
