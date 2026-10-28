@@ -3347,6 +3347,78 @@ def validar_vandar_politica_mortos_xvii():
     print("Ciclo XVII: Vandar — 3 fases sem datas, 8 temas urbanos, 5 provas possíveis, 4 estados para debate; 0 promoções.")
 
 
+
+def validar_ironwood_civil_xviii():
+    """Exige separação entre resistência documentada e governo civil hipotético."""
+    d=load("data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json")
+    schema=load("schemas/ironwood-sociedade-resistencia-xviii.schema.json")
+    Draft202012Validator.check_schema(schema)
+    errors=list(Draft202012Validator(schema).iter_errors(d))
+    require(not errors, f"Ciclo XVIII: schema inválido {errors[:2]}")
+    require(d["aprovacao_autoral"] is False and d["efeito_canonico_automatico"] is False
+            and d["estado"]=="dossie_sociohistorico_proposto",
+            "Ciclo XVIII: aprovação indevida.")
+    require(d["contagens"]=={"eixos":8,"modelos_governanca":3,
+      "relacoes_diplomaticas":4,"circuitos_de_cuidado":4,"dilemas":4,
+      "vinhetas":4,"decisoes":8}, "Ciclo XVIII: contagens divergentes.")
+    require(d["lugar"]=="Ironwood" and
+            d["id_lugar_geografico"] is None and d["id_regiao_geografica"] is None
+            and d["lideranca_militar_documentada"]=="Elara Stormoak",
+            "Ciclo XVIII: identidade/geografia ou liderança indevidamente redefinida.")
+    ids_geo={x["id"] for x in load("data/lugares_carcaca.json")["lugares"]}
+    ids_reg={x["id"] for x in load("data/regioes_carcaca.json")["regioes"]}
+    require("lugar:ironwood" not in ids_geo and "regiao:ironwood" not in ids_reg,
+            "Ciclo XVIII: recadastrar Ironwood explicitamente antes de atribuir identificadores.")
+    pages={x["pagina"] for x in load(
+         "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")["paginas"]}
+    def valid_source(src):
+        return (src["pagina"] in pages and src["estado"]=="manuscrito_em_revisao"
+            and bool(src["afirmacao_contextual"]))
+    require(all(valid_source(x["fonte"]) for x in d["fatos_documentados"]),
+            "Ciclo XVIII: referência de fato sem página do manuscrito.")
+    categories=("eixos_sociais","modelos_de_governanca","relacoes_diplomaticas",
+                "circuitos_de_cuidado","dilemas","vinhetas","decisoes_para_autor")
+    entries=[x for cat in categories for x in d[cat]]
+    require(len(entries)==35 and len(set(x["id"] for x in entries))==35,
+            "Ciclo XVIII: quantidade ou ID duplicado.")
+    axes={x["id"] for x in d["eixos_sociais"]}
+    models={x["id"] for x in d["modelos_de_governanca"]}
+    require(all(x["instituicao_documentada"] is False
+             and x["recurso_quantificado"] is None
+             and valid_source(x["fonte_contextual"]) for x in d["eixos_sociais"]),
+            "Ciclo XVIII: prática civil aprovada ou medida inventada.")
+    require(all(x["instituicao_confirmada"] is False
+             and x["autoridade_civil_confirmada"] is None
+             and all(valid_source(z) for z in x["fontes_contextuais"])
+             for x in d["modelos_de_governanca"]),
+            "Ciclo XVIII: governo civil inventado.")
+    require(all(x["tratado_assinado"] is False
+             and x["subordinacao_confirmada"] is False
+             and x["fluxo_quantificado"] is None
+             and all(valid_source(z) for z in x["fontes_contextuais"])
+             for x in d["relacoes_diplomaticas"]),
+            "Ciclo XVIII: aliança tornada vassalagem ou tratado.")
+    require(all(x["eixo_id"] in axes
+             and x["volume_confirmado"] is None
+             and x["local_confirmado"] is None
+             and x["rota_operacional_confirmada"] is False
+             for x in d["circuitos_de_cuidado"]),
+            "Ciclo XVIII: rotas, quantidades ou locais fictícios.")
+    require(all(x["eixo_id"] in axes and x["modelo_id"] in models
+             and x["ocorreu"] is False and x["desfecho_aceito"] is False
+             for x in d["dilemas"]),
+            "Ciclo XVIII: dilemas foram tratados como eventos.")
+    require(all(x["eixo_id"] in axes and x["ocorreu"] is False
+             and x["personagem_canonico_criado"] is False
+             and x["lugar_canonico_criado"] is False
+             for x in d["vinhetas"]),
+            "Ciclo XVIII: cena recebeu ocorrência/nova localidade.")
+    require(all(x["estado"]=="pendente_de_aprovacao_autoral"
+                for x in d["decisoes_para_autor"]),
+            "Ciclo XVIII: o autor não aprovou as decisões.")
+    print("Ciclo XVIII: Ironwood, 8 temas civis, 3 governos opcionais, 4 relações, 4 circuitos, 4 dilemas e 4 vinhetas; 0 canonizações.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3476,6 +3548,7 @@ def main():
     validar_preconquista_eldroth_xv()
     validar_ocupacao_sylara_xvi()
     validar_vandar_politica_mortos_xvii()
+    validar_ironwood_civil_xviii()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
