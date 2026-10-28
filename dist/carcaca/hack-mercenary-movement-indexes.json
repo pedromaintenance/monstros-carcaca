@@ -1,0 +1,339 @@
+{
+  "by_titulo": {
+    "ABORDAGEM": [
+      "movimento-classe:paragrafo-2748"
+    ],
+    "ADIANTAMENTO": [
+      "movimento-classe:paragrafo-2767"
+    ],
+    "BANDEIRA BRANCA": [
+      "movimento-classe:paragrafo-2790"
+    ],
+    "CADEIA DE COMANDO": [
+      "movimento-classe:paragrafo-2753"
+    ],
+    "CAPITÃO": [
+      "movimento-classe:paragrafo-2736"
+    ],
+    "CONTRABANDISTA": [
+      "movimento-classe:paragrafo-2756"
+    ],
+    "CONTRATO É CONTRATO": [
+      "movimento-classe:paragrafo-2773"
+    ],
+    "ESTIMATIVA DE BAIXAS": [
+      "movimento-classe:paragrafo-2783"
+    ],
+    "EU VOU PRIMEIRO": [
+      "movimento-classe:paragrafo-2743"
+    ],
+    "FUMAÇA E TROVÃO": [
+      "movimento-classe:paragrafo-2759"
+    ],
+    "HOMEM AO MAR": [
+      "movimento-classe:paragrafo-2800"
+    ],
+    "ISSO NÃO ESTAVA NO CONTRATO": [
+      "movimento-classe:paragrafo-2782"
+    ],
+    "JÁ VI ISSO ANTES": [
+      "movimento-classe:paragrafo-2772"
+    ],
+    "MAIS RÁPIDO QUE A SOMBRA": [
+      "movimento-classe:paragrafo-2758"
+    ],
+    "MARCHA FORÇADA": [
+      "movimento-classe:paragrafo-2791"
+    ],
+    "MÁ REPUTAÇÃO": [
+      "movimento-classe:paragrafo-2798"
+    ],
+    "NINGUÉM FICA PARA TRÁS": [
+      "movimento-classe:paragrafo-2754"
+    ],
+    "O GATILHO MAIS RÁPIDO DA CAATINGA": [
+      "movimento-classe:paragrafo-2757"
+    ],
+    "O HOMEM CERTO PARA O TRABALHO": [
+      "movimento-classe:paragrafo-2780"
+    ],
+    "O MAR SEMPRE COBRA": [
+      "movimento-classe:paragrafo-2755"
+    ],
+    "O NAVIO É O MAIS IMPORTANTE": [
+      "movimento-classe:paragrafo-2801"
+    ],
+    "O PREÇO DA GUERRA": [
+      "movimento-classe:paragrafo-2760"
+    ],
+    "OLHOS DE CONTRAMESTRE": [
+      "movimento-classe:paragrafo-2810"
+    ],
+    "ORDENS CLARAS": [
+      "movimento-classe:paragrafo-2742"
+    ],
+    "PONTO DE EXTRAÇÃO": [
+      "movimento-classe:paragrafo-2797"
+    ],
+    "PRECISO DE PROFISSIONAIS": [
+      "movimento-classe:paragrafo-2779"
+    ],
+    "RETIRADA ORGANIZADA": [
+      "movimento-classe:paragrafo-2744"
+    ],
+    "SAQUE ORGANIZADO": [
+      "movimento-classe:paragrafo-2802"
+    ],
+    "SEGUREM A POSIÇÃO": [
+      "movimento-classe:paragrafo-2752"
+    ],
+    "SOLDO ATRASADO": [
+      "movimento-classe:paragrafo-2781"
+    ],
+    "TODO PORTO TEM UMA TAVERNA": [
+      "movimento-classe:paragrafo-2799"
+    ]
+  },
+  "by_paragrafo": {
+    "2736": [
+      "movimento-classe:paragrafo-2736"
+    ],
+    "2742": [
+      "movimento-classe:paragrafo-2742"
+    ],
+    "2743": [
+      "movimento-classe:paragrafo-2743"
+    ],
+    "2744": [
+      "movimento-classe:paragrafo-2744"
+    ],
+    "2748": [
+      "movimento-classe:paragrafo-2748"
+    ],
+    "2752": [
+      "movimento-classe:paragrafo-2752"
+    ],
+    "2753": [
+      "movimento-classe:paragrafo-2753"
+    ],
+    "2754": [
+      "movimento-classe:paragrafo-2754"
+    ],
+    "2755": [
+      "movimento-classe:paragrafo-2755"
+    ],
+    "2756": [
+      "movimento-classe:paragrafo-2756"
+    ],
+    "2757": [
+      "movimento-classe:paragrafo-2757"
+    ],
+    "2758": [
+      "movimento-classe:paragrafo-2758"
+    ],
+    "2759": [
+      "movimento-classe:paragrafo-2759"
+    ],
+    "2760": [
+      "movimento-classe:paragrafo-2760"
+    ],
+    "2767": [
+      "movimento-classe:paragrafo-2767"
+    ],
+    "2772": [
+      "movimento-classe:paragrafo-2772"
+    ],
+    "2773": [
+      "movimento-classe:paragrafo-2773"
+    ],
+    "2779": [
+      "movimento-classe:paragrafo-2779"
+    ],
+    "2780": [
+      "movimento-classe:paragrafo-2780"
+    ],
+    "2781": [
+      "movimento-classe:paragrafo-2781"
+    ],
+    "2782": [
+      "movimento-classe:paragrafo-2782"
+    ],
+    "2783": [
+      "movimento-classe:paragrafo-2783"
+    ],
+    "2790": [
+      "movimento-classe:paragrafo-2790"
+    ],
+    "2791": [
+      "movimento-classe:paragrafo-2791"
+    ],
+    "2797": [
+      "movimento-classe:paragrafo-2797"
+    ],
+    "2798": [
+      "movimento-classe:paragrafo-2798"
+    ],
+    "2799": [
+      "movimento-classe:paragrafo-2799"
+    ],
+    "2800": [
+      "movimento-classe:paragrafo-2800"
+    ],
+    "2801": [
+      "movimento-classe:paragrafo-2801"
+    ],
+    "2802": [
+      "movimento-classe:paragrafo-2802"
+    ],
+    "2810": [
+      "movimento-classe:paragrafo-2810"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-2736",
+      "movimento-classe:paragrafo-2755",
+      "movimento-classe:paragrafo-2756",
+      "movimento-classe:paragrafo-2757",
+      "movimento-classe:paragrafo-2758",
+      "movimento-classe:paragrafo-2759",
+      "movimento-classe:paragrafo-2760",
+      "movimento-classe:paragrafo-2772",
+      "movimento-classe:paragrafo-2773",
+      "movimento-classe:paragrafo-2779",
+      "movimento-classe:paragrafo-2780",
+      "movimento-classe:paragrafo-2781",
+      "movimento-classe:paragrafo-2783",
+      "movimento-classe:paragrafo-2790",
+      "movimento-classe:paragrafo-2791",
+      "movimento-classe:paragrafo-2797",
+      "movimento-classe:paragrafo-2798",
+      "movimento-classe:paragrafo-2799",
+      "movimento-classe:paragrafo-2800",
+      "movimento-classe:paragrafo-2810"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-2742",
+      "movimento-classe:paragrafo-2743",
+      "movimento-classe:paragrafo-2744",
+      "movimento-classe:paragrafo-2748",
+      "movimento-classe:paragrafo-2752",
+      "movimento-classe:paragrafo-2753",
+      "movimento-classe:paragrafo-2754",
+      "movimento-classe:paragrafo-2767",
+      "movimento-classe:paragrafo-2782",
+      "movimento-classe:paragrafo-2801",
+      "movimento-classe:paragrafo-2802"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-2742",
+      "movimento-classe:paragrafo-2743",
+      "movimento-classe:paragrafo-2752",
+      "movimento-classe:paragrafo-2753",
+      "movimento-classe:paragrafo-2754",
+      "movimento-classe:paragrafo-2755",
+      "movimento-classe:paragrafo-2756",
+      "movimento-classe:paragrafo-2757",
+      "movimento-classe:paragrafo-2758",
+      "movimento-classe:paragrafo-2759",
+      "movimento-classe:paragrafo-2772",
+      "movimento-classe:paragrafo-2779",
+      "movimento-classe:paragrafo-2780",
+      "movimento-classe:paragrafo-2781",
+      "movimento-classe:paragrafo-2782",
+      "movimento-classe:paragrafo-2790",
+      "movimento-classe:paragrafo-2797",
+      "movimento-classe:paragrafo-2798",
+      "movimento-classe:paragrafo-2799",
+      "movimento-classe:paragrafo-2800",
+      "movimento-classe:paragrafo-2801",
+      "movimento-classe:paragrafo-2810"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-2736",
+      "movimento-classe:paragrafo-2744",
+      "movimento-classe:paragrafo-2748",
+      "movimento-classe:paragrafo-2760",
+      "movimento-classe:paragrafo-2767",
+      "movimento-classe:paragrafo-2773",
+      "movimento-classe:paragrafo-2783",
+      "movimento-classe:paragrafo-2791",
+      "movimento-classe:paragrafo-2802"
+    ]
+  },
+  "by_requisito_tipo": {
+    "movimento_exato": [
+      "movimento-classe:paragrafo-2742",
+      "movimento-classe:paragrafo-2743",
+      "movimento-classe:paragrafo-2744",
+      "movimento-classe:paragrafo-2748",
+      "movimento-classe:paragrafo-2752",
+      "movimento-classe:paragrafo-2753",
+      "movimento-classe:paragrafo-2754",
+      "movimento-classe:paragrafo-2767",
+      "movimento-classe:paragrafo-2782",
+      "movimento-classe:paragrafo-2801",
+      "movimento-classe:paragrafo-2802"
+    ],
+    "nenhum": [
+      "movimento-classe:paragrafo-2736",
+      "movimento-classe:paragrafo-2755",
+      "movimento-classe:paragrafo-2756",
+      "movimento-classe:paragrafo-2757",
+      "movimento-classe:paragrafo-2758",
+      "movimento-classe:paragrafo-2759",
+      "movimento-classe:paragrafo-2760",
+      "movimento-classe:paragrafo-2772",
+      "movimento-classe:paragrafo-2773",
+      "movimento-classe:paragrafo-2779",
+      "movimento-classe:paragrafo-2780",
+      "movimento-classe:paragrafo-2781",
+      "movimento-classe:paragrafo-2783",
+      "movimento-classe:paragrafo-2790",
+      "movimento-classe:paragrafo-2791",
+      "movimento-classe:paragrafo-2797",
+      "movimento-classe:paragrafo-2798",
+      "movimento-classe:paragrafo-2799",
+      "movimento-classe:paragrafo-2800",
+      "movimento-classe:paragrafo-2810"
+    ]
+  },
+  "by_requisito_id": {
+    "movimento-classe:paragrafo-2736": [
+      "movimento-classe:paragrafo-2742",
+      "movimento-classe:paragrafo-2743",
+      "movimento-classe:paragrafo-2744",
+      "movimento-classe:paragrafo-2748",
+      "movimento-classe:paragrafo-2752",
+      "movimento-classe:paragrafo-2753",
+      "movimento-classe:paragrafo-2754",
+      "movimento-classe:paragrafo-2801"
+    ],
+    "movimento-classe:paragrafo-2748": [
+      "movimento-classe:paragrafo-2802"
+    ],
+    "movimento-classe:paragrafo-2760": [
+      "movimento-classe:paragrafo-2767",
+      "movimento-classe:paragrafo-2782"
+    ]
+  },
+  "by_raiz_dependencia": {
+    "movimento-classe:paragrafo-2736": [
+      "movimento-classe:paragrafo-2742",
+      "movimento-classe:paragrafo-2743",
+      "movimento-classe:paragrafo-2744",
+      "movimento-classe:paragrafo-2748",
+      "movimento-classe:paragrafo-2752",
+      "movimento-classe:paragrafo-2753",
+      "movimento-classe:paragrafo-2754",
+      "movimento-classe:paragrafo-2801",
+      "movimento-classe:paragrafo-2802"
+    ],
+    "movimento-classe:paragrafo-2760": [
+      "movimento-classe:paragrafo-2767",
+      "movimento-classe:paragrafo-2782"
+    ]
+  }
+}

@@ -1,0 +1,1127 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-2736",
+    "paragrafo_docx": 2736,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "CAPITÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2736,
+        "tipo": "corpo",
+        "texto": "Quando comandar uma equipe que reconheça sua autoridade durante o perigo, role+CAR.\n10+: Domínio 3.\n7–9: Domínio 2.\nGaste 1 Domínio para:"
+      },
+      {
+        "paragrafo_docx": 2737,
+        "tipo": "opcao",
+        "texto": "ordenar uma manobra coordenada;"
+      },
+      {
+        "paragrafo_docx": 2738,
+        "tipo": "opcao",
+        "texto": "manter a moral e a coesão da equipe;"
+      },
+      {
+        "paragrafo_docx": 2739,
+        "tipo": "opcao",
+        "texto": "reduzir uma perda de recursos quando a coordenação puder fazer diferença;"
+      },
+      {
+        "paragrafo_docx": 2740,
+        "tipo": "opcao",
+        "texto": "aproveitar imediatamente uma mudança de condição climática, geográfica ou tática."
+      },
+      {
+        "paragrafo_docx": 2741,
+        "tipo": "continuacao",
+        "texto": "Perca qualquer Domínio restante quando o perigo terminar, a equipe se dispersar ou sua autoridade deixar de ser reconhecida."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2737,
+        "texto": "ordenar uma manobra coordenada;"
+      },
+      {
+        "paragrafo_docx": 2738,
+        "texto": "manter a moral e a coesão da equipe;"
+      },
+      {
+        "paragrafo_docx": 2739,
+        "texto": "reduzir uma perda de recursos quando a coordenação puder fazer diferença;"
+      },
+      {
+        "paragrafo_docx": 2740,
+        "texto": "aproveitar imediatamente uma mudança de condição climática, geográfica ou tática."
+      }
+    ],
+    "texto_original": "Quando comandar uma equipe que reconheça sua autoridade durante o perigo, role+CAR.\n10+: Domínio 3.\n7–9: Domínio 2.\nGaste 1 Domínio para:\nordenar uma manobra coordenada;\nmanter a moral e a coesão da equipe;\nreduzir uma perda de recursos quando a coordenação puder fazer diferença;\naproveitar imediatamente uma mudança de condição climática, geográfica ou tática.\nPerca qualquer Domínio restante quando o perigo terminar, a equipe se dispersar ou sua autoridade deixar de ser reconhecida.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2736"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2742",
+    "paragrafo_docx": 2742,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "ORDENS CLARAS",
+    "requisito_literal": "Capitão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2736",
+      "titulo_requerido": "CAPITÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2742,
+        "tipo": "corpo",
+        "texto": "Uma vez por plano, quando explicá-lo rapidamente a pessoas que reconheçam sua liderança, receba Preparo 2 vinculado àquele plano. Gaste 1 Preparo para conceder +1 a alguém que esteja executando exatamente sua parte do plano.\nPerca qualquer Preparo restante quando o plano for concluído, abandonado ou deixar de ser aplicável."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por plano, quando explicá-lo rapidamente a pessoas que reconheçam sua liderança, receba Preparo 2 vinculado àquele plano. Gaste 1 Preparo para conceder +1 a alguém que esteja executando exatamente sua parte do plano.\nPerca qualquer Preparo restante quando o plano for concluído, abandonado ou deixar de ser aplicável.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2742"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2743",
+    "paragrafo_docx": 2743,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "EU VOU PRIMEIRO",
+    "requisito_literal": "Capitão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2736",
+      "titulo_requerido": "CAPITÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2743,
+        "tipo": "corpo",
+        "texto": "Quando assumir pessoalmente o risco que acabou de ordenar a outra pessoa que enfrente, receba +1 adiante e aumente em +1 a Lealdade dos Servos que testemunharem isso até o perigo atual terminar."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando assumir pessoalmente o risco que acabou de ordenar a outra pessoa que enfrente, receba +1 adiante e aumente em +1 a Lealdade dos Servos que testemunharem isso até o perigo atual terminar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2743"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2744",
+    "paragrafo_docx": 2744,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "RETIRADA ORGANIZADA",
+    "requisito_literal": "Capitão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2736",
+      "titulo_requerido": "CAPITÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2744,
+        "tipo": "corpo",
+        "texto": "Quando conduzir um grupo em retirada diante de uma força superior, role+INT ou CAR.\n10+: todos que seguirem suas ordens escapam em ordem.\n7–9: todos escapam, mas escolha 1:"
+      },
+      {
+        "paragrafo_docx": 2745,
+        "tipo": "opcao",
+        "texto": "alguém precisa ficar para trás;"
+      },
+      {
+        "paragrafo_docx": 2746,
+        "tipo": "opcao",
+        "texto": "vocês precisam abandonar equipamento ou recursos importantes;"
+      },
+      {
+        "paragrafo_docx": 2747,
+        "tipo": "opcao",
+        "texto": "o inimigo escolhe para onde vocês conseguem fugir."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2745,
+        "texto": "alguém precisa ficar para trás;"
+      },
+      {
+        "paragrafo_docx": 2746,
+        "texto": "vocês precisam abandonar equipamento ou recursos importantes;"
+      },
+      {
+        "paragrafo_docx": 2747,
+        "texto": "o inimigo escolhe para onde vocês conseguem fugir."
+      }
+    ],
+    "texto_original": "Quando conduzir um grupo em retirada diante de uma força superior, role+INT ou CAR.\n10+: todos que seguirem suas ordens escapam em ordem.\n7–9: todos escapam, mas escolha 1:\nalguém precisa ficar para trás;\nvocês precisam abandonar equipamento ou recursos importantes;\no inimigo escolhe para onde vocês conseguem fugir.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2744"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2748",
+    "paragrafo_docx": 2748,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "ABORDAGEM",
+    "requisito_literal": "Capitão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2736",
+      "titulo_requerido": "CAPITÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2748,
+        "tipo": "corpo",
+        "texto": "Quando liderar uma abordagem contra outro grupo e conseguir pegá-lo de surpresa, escolha 1:"
+      },
+      {
+        "paragrafo_docx": 2749,
+        "tipo": "opcao",
+        "texto": "sua gente chega agrupada e em posição;"
+      },
+      {
+        "paragrafo_docx": 2750,
+        "tipo": "opcao",
+        "texto": "vocês pegam alguém importante particularmente desprevenido;"
+      },
+      {
+        "paragrafo_docx": 2751,
+        "tipo": "opcao",
+        "texto": "garantem imediatamente uma rota segura de retorno."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2749,
+        "texto": "sua gente chega agrupada e em posição;"
+      },
+      {
+        "paragrafo_docx": 2750,
+        "texto": "vocês pegam alguém importante particularmente desprevenido;"
+      },
+      {
+        "paragrafo_docx": 2751,
+        "texto": "garantem imediatamente uma rota segura de retorno."
+      }
+    ],
+    "texto_original": "Quando liderar uma abordagem contra outro grupo e conseguir pegá-lo de surpresa, escolha 1:\nsua gente chega agrupada e em posição;\nvocês pegam alguém importante particularmente desprevenido;\ngarantem imediatamente uma rota segura de retorno.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2748"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2752",
+    "paragrafo_docx": 2752,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "SEGUREM A POSIÇÃO",
+    "requisito_literal": "Capitão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2736",
+      "titulo_requerido": "CAPITÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2752,
+        "tipo": "corpo",
+        "texto": "Quando ordenar que pessoas sob seu comando defendam uma posição e permanecer ali com elas, medo comum, confusão e as primeiras baixas não são suficientes para fazê-las debandar. Uma ameaça verdadeiramente devastadora, a percepção de que a posição se tornou impossível ou a quebra de sua autoridade ainda podem colocar a Lealdade em jogo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando ordenar que pessoas sob seu comando defendam uma posição e permanecer ali com elas, medo comum, confusão e as primeiras baixas não são suficientes para fazê-las debandar. Uma ameaça verdadeiramente devastadora, a percepção de que a posição se tornou impossível ou a quebra de sua autoridade ainda podem colocar a Lealdade em jogo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2752"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2753",
+    "paragrafo_docx": 2753,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "CADEIA DE COMANDO",
+    "requisito_literal": "Capitão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2736",
+      "titulo_requerido": "CAPITÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2753,
+        "tipo": "corpo",
+        "texto": "Quando nomear claramente um segundo em comando e todos envolvidos reconhecerem essa autoridade, sua cadeia de comando continua funcionando mesmo se você for separado, incapacitado ou perder comunicação com a equipe.\nEnquanto seguir as últimas ordens recebidas, seu segundo em comando pode gastar o Domínio restante de Capitão em seu lugar. Se vocês derem ordens contraditórias, a cadeia se rompe."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando nomear claramente um segundo em comando e todos envolvidos reconhecerem essa autoridade, sua cadeia de comando continua funcionando mesmo se você for separado, incapacitado ou perder comunicação com a equipe.\nEnquanto seguir as últimas ordens recebidas, seu segundo em comando pode gastar o Domínio restante de Capitão em seu lugar. Se vocês derem ordens contraditórias, a cadeia se rompe.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2753"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2754",
+    "paragrafo_docx": 2754,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "NINGUÉM FICA PARA TRÁS",
+    "requisito_literal": "Capitão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2736",
+      "titulo_requerido": "CAPITÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2754,
+        "tipo": "corpo",
+        "texto": "Quando alguém que estava cumprindo suas ordens ficar isolado, cercado ou abandonado durante uma operação e ainda existir alguma possibilidade real de trazê-lo de volta, pergunte ao Mestre:\n“Qual é nossa última chance de buscá-lo antes de perdê-lo?”\nO Mestre mostrará uma oportunidade real. Ela pode ser terrível. Pode exigir abandonar o objetivo. Pode custar homens, equipamento ou posição. Mas, se ainda houver uma chance, você sabe onde ela está."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém que estava cumprindo suas ordens ficar isolado, cercado ou abandonado durante uma operação e ainda existir alguma possibilidade real de trazê-lo de volta, pergunte ao Mestre:\n“Qual é nossa última chance de buscá-lo antes de perdê-lo?”\nO Mestre mostrará uma oportunidade real. Ela pode ser terrível. Pode exigir abandonar o objetivo. Pode custar homens, equipamento ou posição. Mas, se ainda houver uma chance, você sabe onde ela está.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2754"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2755",
+    "paragrafo_docx": 2755,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "O MAR SEMPRE COBRA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2755,
+        "tipo": "corpo",
+        "texto": "Quando uma viagem marítima terminar extraordinariamente bem, pergunte ao Mestre:\n“Que dívida com o mar ainda ficou para trás?”\nReceba 1 XP quando essa dívida retornar à história e você enfrentá-la."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando uma viagem marítima terminar extraordinariamente bem, pergunte ao Mestre:\n“Que dívida com o mar ainda ficou para trás?”\nReceba 1 XP quando essa dívida retornar à história e você enfrentá-la.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2755"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2756",
+    "paragrafo_docx": 2756,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "CONTRABANDISTA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2756,
+        "tipo": "corpo",
+        "texto": "Quando esconder carga numa embarcação que conheça bem, autoridades que façam apenas uma inspeção comum não a encontram. Para encontrá-la, precisam procurar especificamente por carga escondida e possuir alguma pista sobre onde ou o que procurar."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando esconder carga numa embarcação que conheça bem, autoridades que façam apenas uma inspeção comum não a encontram. Para encontrá-la, precisam procurar especificamente por carga escondida e possuir alguma pista sobre onde ou o que procurar.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2756"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2757",
+    "paragrafo_docx": 2757,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "O GATILHO MAIS RÁPIDO DA CAATINGA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2757,
+        "tipo": "corpo",
+        "texto": "Quando uma situação tensa se transformar subitamente em violência e sua arma já estiver acessível, você consegue disparar antes de qualquer pessoa que ainda precise sacar ou preparar a própria arma."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando uma situação tensa se transformar subitamente em violência e sua arma já estiver acessível, você consegue disparar antes de qualquer pessoa que ainda precise sacar ou preparar a própria arma.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2757"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2758",
+    "paragrafo_docx": 2758,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "MAIS RÁPIDO QUE A SOMBRA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2758,
+        "tipo": "corpo",
+        "texto": "Quando alguém próximo obtiver 6- e você conseguir imaginar uma maneira plausível de interferir na consequência atirando em alguma coisa, antes que a consequência seja resolvida diga imediatamente o que pretende atingir e role+DES.\n10+: seu disparo impede ou transforma a consequência exatamente como descreveu.\n7–9: você consegue, mas o Mestre oferece um preço, perigo ou efeito reduzido.\n6-: seu tiro entra na situação, mas o Mestre decide o que ele piora."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém próximo obtiver 6- e você conseguir imaginar uma maneira plausível de interferir na consequência atirando em alguma coisa, antes que a consequência seja resolvida diga imediatamente o que pretende atingir e role+DES.\n10+: seu disparo impede ou transforma a consequência exatamente como descreveu.\n7–9: você consegue, mas o Mestre oferece um preço, perigo ou efeito reduzido.\n6-: seu tiro entra na situação, mas o Mestre decide o que ele piora.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2758"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2759",
+    "paragrafo_docx": 2759,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "FUMAÇA E TROVÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2759,
+        "tipo": "corpo",
+        "texto": "Quando disparar para intimidar alguém que compreenda o que sua arma pode fazer, o disparo conta como influência para Negociar. A influência é o medo de que a próxima demonstração de violência não seja apenas uma demonstração."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando disparar para intimidar alguém que compreenda o que sua arma pode fazer, o disparo conta como influência para Negociar. A influência é o medo de que a próxima demonstração de violência não seja apenas uma demonstração.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2759"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2760",
+    "paragrafo_docx": 2760,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "O PREÇO DA GUERRA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2760,
+        "tipo": "corpo",
+        "texto": "Quando negociar os termos de um trabalho perigoso e expor profissionalmente os riscos envolvidos, faça duas perguntas:"
+      },
+      {
+        "paragrafo_docx": 2761,
+        "tipo": "opcao",
+        "texto": "O que estão escondendo sobre o trabalho?"
+      },
+      {
+        "paragrafo_docx": 2762,
+        "tipo": "opcao",
+        "texto": "Que perigo é maior do que estão admitindo?"
+      },
+      {
+        "paragrafo_docx": 2763,
+        "tipo": "opcao",
+        "texto": "Quem além do contratante tem interesse no resultado?"
+      },
+      {
+        "paragrafo_docx": 2764,
+        "tipo": "opcao",
+        "texto": "Quem ganha se nós fracassarmos?"
+      },
+      {
+        "paragrafo_docx": 2765,
+        "tipo": "opcao",
+        "texto": "O que faria este contratante aumentar a oferta?"
+      },
+      {
+        "paragrafo_docx": 2766,
+        "tipo": "continuacao",
+        "texto": "O Mestre responderá honestamente. Depois de ouvir as respostas, diga qual pagamento, recurso ou condição você considera necessário para aceitar o trabalho. O contratante precisa aceitar, recusar ou fazer uma contraproposta concreta; não pode continuar fingindo que o risco revelado não existe. \nSe fecharem o contrato, receba 1 Preparo para aquela operação."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2761,
+        "texto": "O que estão escondendo sobre o trabalho?"
+      },
+      {
+        "paragrafo_docx": 2762,
+        "texto": "Que perigo é maior do que estão admitindo?"
+      },
+      {
+        "paragrafo_docx": 2763,
+        "texto": "Quem além do contratante tem interesse no resultado?"
+      },
+      {
+        "paragrafo_docx": 2764,
+        "texto": "Quem ganha se nós fracassarmos?"
+      },
+      {
+        "paragrafo_docx": 2765,
+        "texto": "O que faria este contratante aumentar a oferta?"
+      }
+    ],
+    "texto_original": "Quando negociar os termos de um trabalho perigoso e expor profissionalmente os riscos envolvidos, faça duas perguntas:\nO que estão escondendo sobre o trabalho?\nQue perigo é maior do que estão admitindo?\nQuem além do contratante tem interesse no resultado?\nQuem ganha se nós fracassarmos?\nO que faria este contratante aumentar a oferta?\nO Mestre responderá honestamente. Depois de ouvir as respostas, diga qual pagamento, recurso ou condição você considera necessário para aceitar o trabalho. O contratante precisa aceitar, recusar ou fazer uma contraproposta concreta; não pode continuar fingindo que o risco revelado não existe. \nSe fecharem o contrato, receba 1 Preparo para aquela operação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2760"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2767",
+    "paragrafo_docx": 2767,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "ADIANTAMENTO",
+    "requisito_literal": "O Preço da Guerra",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2760",
+      "titulo_requerido": "O PREÇO DA GUERRA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2767,
+        "tipo": "corpo",
+        "texto": "Quando fechar um contrato perigoso, nomeie um recurso mundano concreto e razoavelmente necessário para realizar o serviço que esteja ao alcance do contratante. Ele precisa escolher:"
+      },
+      {
+        "paragrafo_docx": 2768,
+        "tipo": "opcao",
+        "texto": "fornecê-lo como adiantamento;"
+      },
+      {
+        "paragrafo_docx": 2769,
+        "tipo": "opcao",
+        "texto": "aumentar o pagamento o suficiente para que vocês o providenciem;"
+      },
+      {
+        "paragrafo_docx": 2770,
+        "tipo": "opcao",
+        "texto": "revelar honestamente por que não consegue fornecê-lo."
+      },
+      {
+        "paragrafo_docx": 2771,
+        "tipo": "continuacao",
+        "texto": "A terceira resposta precisa ser verdadeira."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2768,
+        "texto": "fornecê-lo como adiantamento;"
+      },
+      {
+        "paragrafo_docx": 2769,
+        "texto": "aumentar o pagamento o suficiente para que vocês o providenciem;"
+      },
+      {
+        "paragrafo_docx": 2770,
+        "texto": "revelar honestamente por que não consegue fornecê-lo."
+      }
+    ],
+    "texto_original": "Quando fechar um contrato perigoso, nomeie um recurso mundano concreto e razoavelmente necessário para realizar o serviço que esteja ao alcance do contratante. Ele precisa escolher:\nfornecê-lo como adiantamento;\naumentar o pagamento o suficiente para que vocês o providenciem;\nrevelar honestamente por que não consegue fornecê-lo.\nA terceira resposta precisa ser verdadeira.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2767"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2772",
+    "paragrafo_docx": 2772,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "JÁ VI ISSO ANTES",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2772,
+        "tipo": "corpo",
+        "texto": "Uma vez por batalha, quando reconhecer na situação presente um padrão de alguma guerra, emboscada, cerco, massacre ou operação de seu passado, diga onde viu aquilo antes e pergunte:\n“O que vai acontecer em seguida se ninguém fizer nada?”\nO Mestre responderá honestamente com uma ameaça, erro ou oportunidade que já esteja se formando na batalha.\nReceba Preparo 2 vinculado àquilo que reconheceu. Gaste esse Preparo apenas para impedir, explorar ou se preparar diretamente para o padrão identificado."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Uma vez por batalha, quando reconhecer na situação presente um padrão de alguma guerra, emboscada, cerco, massacre ou operação de seu passado, diga onde viu aquilo antes e pergunte:\n“O que vai acontecer em seguida se ninguém fizer nada?”\nO Mestre responderá honestamente com uma ameaça, erro ou oportunidade que já esteja se formando na batalha.\nReceba Preparo 2 vinculado àquilo que reconheceu. Gaste esse Preparo apenas para impedir, explorar ou se preparar diretamente para o padrão identificado.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2772"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2773",
+    "paragrafo_docx": 2773,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "CONTRATO É CONTRATO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2773,
+        "tipo": "corpo",
+        "texto": "Quando concluir um trabalho perigoso exatamente segundo os termos aceitos, apesar de ter encontrado uma oportunidade concreta de abandoná-lo, traí-lo ou lucrar mais quebrando sua palavra, escolha uma Reputação Profissional que a maneira como você cumpriu o trabalho realmente justifique: confiável, discreto, implacável, eficiente, impossível de comprar, não abandona os seus, ou outra apropriada. \nVocê pode manter até duas Reputações Profissionais. Ao receber uma terceira, abandone ou substitua uma anterior.\nQuando lidar com pessoas que conheçam sua reputação e realmente valorizem aquela qualidade, uma vez por sessão escolha uma de suas Reputações Profissionais e invoque-a para:"
+      },
+      {
+        "paragrafo_docx": 2774,
+        "tipo": "opcao",
+        "texto": "fazer seu nome contar como influência para Negociar;"
+      },
+      {
+        "paragrafo_docx": 2775,
+        "tipo": "opcao",
+        "texto": "encontrar rapidamente alguém disposto a contratar você ou seu grupo, ou apresentar um trabalho apropriado;"
+      },
+      {
+        "paragrafo_docx": 2776,
+        "tipo": "opcao",
+        "texto": "ao Recrutar, tratar um 7–9 como 10+;"
+      },
+      {
+        "paragrafo_docx": 2777,
+        "tipo": "opcao",
+        "texto": "conseguir que alguém aceite pagamento posterior ou participação no contrato por um recurso necessário à missão."
+      },
+      {
+        "paragrafo_docx": 2778,
+        "tipo": "continuacao",
+        "texto": "Uma Reputação permanece enquanto suas ações não a contradisserem publicamente."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2774,
+        "texto": "fazer seu nome contar como influência para Negociar;"
+      },
+      {
+        "paragrafo_docx": 2775,
+        "texto": "encontrar rapidamente alguém disposto a contratar você ou seu grupo, ou apresentar um trabalho apropriado;"
+      },
+      {
+        "paragrafo_docx": 2776,
+        "texto": "ao Recrutar, tratar um 7–9 como 10+;"
+      },
+      {
+        "paragrafo_docx": 2777,
+        "texto": "conseguir que alguém aceite pagamento posterior ou participação no contrato por um recurso necessário à missão."
+      }
+    ],
+    "texto_original": "Quando concluir um trabalho perigoso exatamente segundo os termos aceitos, apesar de ter encontrado uma oportunidade concreta de abandoná-lo, traí-lo ou lucrar mais quebrando sua palavra, escolha uma Reputação Profissional que a maneira como você cumpriu o trabalho realmente justifique: confiável, discreto, implacável, eficiente, impossível de comprar, não abandona os seus, ou outra apropriada. \nVocê pode manter até duas Reputações Profissionais. Ao receber uma terceira, abandone ou substitua uma anterior.\nQuando lidar com pessoas que conheçam sua reputação e realmente valorizem aquela qualidade, uma vez por sessão escolha uma de suas Reputações Profissionais e invoque-a para:\nfazer seu nome contar como influência para Negociar;\nencontrar rapidamente alguém disposto a contratar você ou seu grupo, ou apresentar um trabalho apropriado;\nao Recrutar, tratar um 7–9 como 10+;\nconseguir que alguém aceite pagamento posterior ou participação no contrato por um recurso necessário à missão.\nUma Reputação permanece enquanto suas ações não a contradisserem publicamente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2773"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2779",
+    "paragrafo_docx": 2779,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "PRECISO DE PROFISSIONAIS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2779,
+        "tipo": "corpo",
+        "texto": "Quando Recrutar especificamente para uma operação perigosa e houver dinheiro, participação no contrato ou saque suficiente para contratar uma força organizada, você pode procurar uma unidade inteira, em vez de um único Servo.\nResolva Recrutar normalmente, tratando cada candidato como uma unidade organizada, e não como um indivíduo.\nUma unidade contratada funciona como um único Servo na escala apropriada, com Custo, Lealdade e Especialidades que representem suas capacidades coletivas."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando Recrutar especificamente para uma operação perigosa e houver dinheiro, participação no contrato ou saque suficiente para contratar uma força organizada, você pode procurar uma unidade inteira, em vez de um único Servo.\nResolva Recrutar normalmente, tratando cada candidato como uma unidade organizada, e não como um indivíduo.\nUma unidade contratada funciona como um único Servo na escala apropriada, com Custo, Lealdade e Especialidades que representem suas capacidades coletivas.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2779"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2780",
+    "paragrafo_docx": 2780,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "O HOMEM CERTO PARA O TRABALHO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2780,
+        "tipo": "corpo",
+        "texto": "Quando Recrutar para uma missão e procurar uma especialidade profissional concreta — batedor, médico, navegador, artilheiro, cavaleiro, tradutor ou semelhante — se alguém assim puder plausivelmente existir na região, você encontra pelo menos um candidato adequado. A rolagem de Recrutar determina o Custo, a qualidade e as complicações da contratação, não se a especialidade existe."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando Recrutar para uma missão e procurar uma especialidade profissional concreta — batedor, médico, navegador, artilheiro, cavaleiro, tradutor ou semelhante — se alguém assim puder plausivelmente existir na região, você encontra pelo menos um candidato adequado. A rolagem de Recrutar determina o Custo, a qualidade e as complicações da contratação, não se a especialidade existe.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2780"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2781",
+    "paragrafo_docx": 2781,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "SOLDO ATRASADO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2781,
+        "tipo": "corpo",
+        "texto": "Quando conversar com soldados, marinheiros ou mercenários cuja remuneração, abastecimento ou parte prometida tenha sido realmente comprometida, você percebe os sinais profissionais disso. Pergunte ao Mestre:\n“O que eles acreditam que lhes é devido?” A resposta é verdadeira.\nEssa dívida conta como influência para Negociar especificamente para fazê-los atrasar, desertar, entregar informação, recusar uma ordem ou considerar outro contratante, conforme a ficção permitir."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando conversar com soldados, marinheiros ou mercenários cuja remuneração, abastecimento ou parte prometida tenha sido realmente comprometida, você percebe os sinais profissionais disso. Pergunte ao Mestre:\n“O que eles acreditam que lhes é devido?” A resposta é verdadeira.\nEssa dívida conta como influência para Negociar especificamente para fazê-los atrasar, desertar, entregar informação, recusar uma ordem ou considerar outro contratante, conforme a ficção permitir.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2781"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2782",
+    "paragrafo_docx": 2782,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "ISSO NÃO ESTAVA NO CONTRATO",
+    "requisito_literal": "O Preço da Guerra",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2760",
+      "titulo_requerido": "O PREÇO DA GUERRA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2782,
+        "tipo": "corpo",
+        "texto": "Quando o contratante tentar impor um novo objetivo, inimigo, destino ou obrigação materialmente diferente dos termos aceitos, você sabe exatamente onde o contrato acabou. A nova exigência não faz parte do acordo anterior.\nSe ele ainda quiser que você a cumpra, a necessidade dele conta como influência para uma nova Negociação."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando o contratante tentar impor um novo objetivo, inimigo, destino ou obrigação materialmente diferente dos termos aceitos, você sabe exatamente onde o contrato acabou. A nova exigência não faz parte do acordo anterior.\nSe ele ainda quiser que você a cumpra, a necessidade dele conta como influência para uma nova Negociação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2782"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2783",
+    "paragrafo_docx": 2783,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "ESTIMATIVA DE BAIXAS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2783,
+        "tipo": "corpo",
+        "texto": "Quando tiver informações suficientes sobre uma batalha, ataque ou defesa antes de comprometer sua força, faça duas perguntas:"
+      },
+      {
+        "paragrafo_docx": 2784,
+        "tipo": "opcao",
+        "texto": "O que neste plano provavelmente custará mais vidas?"
+      },
+      {
+        "paragrafo_docx": 2785,
+        "tipo": "opcao",
+        "texto": "Que parte do objetivo podemos abandonar com menor prejuízo?"
+      },
+      {
+        "paragrafo_docx": 2786,
+        "tipo": "opcao",
+        "texto": "O que reduziria nossas baixas mais do que qualquer outra mudança?"
+      },
+      {
+        "paragrafo_docx": 2787,
+        "tipo": "opcao",
+        "texto": "Que recurso ou posição vai quebrar primeiro se as coisas derem errado?"
+      },
+      {
+        "paragrafo_docx": 2788,
+        "tipo": "opcao",
+        "texto": "Qual risco estamos tratando como aceitável sem perceber seu verdadeiro custo?"
+      },
+      {
+        "paragrafo_docx": 2789,
+        "tipo": "continuacao",
+        "texto": "O Mestre responderá honestamente."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2784,
+        "texto": "O que neste plano provavelmente custará mais vidas?"
+      },
+      {
+        "paragrafo_docx": 2785,
+        "texto": "Que parte do objetivo podemos abandonar com menor prejuízo?"
+      },
+      {
+        "paragrafo_docx": 2786,
+        "texto": "O que reduziria nossas baixas mais do que qualquer outra mudança?"
+      },
+      {
+        "paragrafo_docx": 2787,
+        "texto": "Que recurso ou posição vai quebrar primeiro se as coisas derem errado?"
+      },
+      {
+        "paragrafo_docx": 2788,
+        "texto": "Qual risco estamos tratando como aceitável sem perceber seu verdadeiro custo?"
+      }
+    ],
+    "texto_original": "Quando tiver informações suficientes sobre uma batalha, ataque ou defesa antes de comprometer sua força, faça duas perguntas:\nO que neste plano provavelmente custará mais vidas?\nQue parte do objetivo podemos abandonar com menor prejuízo?\nO que reduziria nossas baixas mais do que qualquer outra mudança?\nQue recurso ou posição vai quebrar primeiro se as coisas derem errado?\nQual risco estamos tratando como aceitável sem perceber seu verdadeiro custo?\nO Mestre responderá honestamente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2783"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2790",
+    "paragrafo_docx": 2790,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "BANDEIRA BRANCA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2790,
+        "tipo": "corpo",
+        "texto": "Quando expuser claramente um sinal de parlamento diante de uma força que tenha alguma razão para preferir negociação a perdas desnecessárias, a violência não continua simplesmente por inércia.\nVocê consegue tempo suficiente para declarar seus termos ou ouvir os deles.\nOrdens explícitas de não fazer prisioneiros, fanatismo, criaturas incapazes de negociar ou uma ameaça que não possa esperar ainda podem tornar a bandeira inútil."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando expuser claramente um sinal de parlamento diante de uma força que tenha alguma razão para preferir negociação a perdas desnecessárias, a violência não continua simplesmente por inércia.\nVocê consegue tempo suficiente para declarar seus termos ou ouvir os deles.\nOrdens explícitas de não fazer prisioneiros, fanatismo, criaturas incapazes de negociar ou uma ameaça que não possa esperar ainda podem tornar a bandeira inútil.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2790"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2791",
+    "paragrafo_docx": 2791,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "MARCHA FORÇADA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2791,
+        "tipo": "corpo",
+        "texto": "Quando comandar um grupo a avançar mais rápido ou por mais tempo do que seria seguro, vocês podem chegar antes do tempo que uma marcha normal permitiria. Escolha duas consequências:"
+      },
+      {
+        "paragrafo_docx": 2792,
+        "tipo": "opcao",
+        "texto": "consumam o dobro dos mantimentos apropriados;"
+      },
+      {
+        "paragrafo_docx": 2793,
+        "tipo": "opcao",
+        "texto": "quem mantiver o ritmo sofre uma Debilidade apropriada ao esforço;"
+      },
+      {
+        "paragrafo_docx": 2794,
+        "tipo": "opcao",
+        "texto": "abandonem equipamento pesado ou não essencial no caminho;"
+      },
+      {
+        "paragrafo_docx": 2795,
+        "tipo": "opcao",
+        "texto": "cheguem sem tempo para descansar ou se preparar antes do que os espera."
+      },
+      {
+        "paragrafo_docx": 2796,
+        "tipo": "continuacao",
+        "texto": "Se a rota em si contiver perigos extraordinários, eles continuam existindo."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2792,
+        "texto": "consumam o dobro dos mantimentos apropriados;"
+      },
+      {
+        "paragrafo_docx": 2793,
+        "texto": "quem mantiver o ritmo sofre uma Debilidade apropriada ao esforço;"
+      },
+      {
+        "paragrafo_docx": 2794,
+        "texto": "abandonem equipamento pesado ou não essencial no caminho;"
+      },
+      {
+        "paragrafo_docx": 2795,
+        "texto": "cheguem sem tempo para descansar ou se preparar antes do que os espera."
+      }
+    ],
+    "texto_original": "Quando comandar um grupo a avançar mais rápido ou por mais tempo do que seria seguro, vocês podem chegar antes do tempo que uma marcha normal permitiria. Escolha duas consequências:\nconsumam o dobro dos mantimentos apropriados;\nquem mantiver o ritmo sofre uma Debilidade apropriada ao esforço;\nabandonem equipamento pesado ou não essencial no caminho;\ncheguem sem tempo para descansar ou se preparar antes do que os espera.\nSe a rota em si contiver perigos extraordinários, eles continuam existindo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2791"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2797",
+    "paragrafo_docx": 2797,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "PONTO DE EXTRAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2797,
+        "tipo": "corpo",
+        "texto": "Quando planejar uma incursão em território hostil e reservar tempo para definir onde e como vocês sairão, estabeleça um ponto de extração plausível. Pergunte ao Mestre: \n“O que precisa continuar verdadeiro para conseguirmos voltar por aqui?” \nEnquanto essa condição permanecer, chegar ao ponto significa que a rota de saída preparada ainda existe. Não significa que chegar até ele será fácil."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando planejar uma incursão em território hostil e reservar tempo para definir onde e como vocês sairão, estabeleça um ponto de extração plausível. Pergunte ao Mestre: \n“O que precisa continuar verdadeiro para conseguirmos voltar por aqui?” \nEnquanto essa condição permanecer, chegar ao ponto significa que a rota de saída preparada ainda existe. Não significa que chegar até ele será fácil.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2797"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2798",
+    "paragrafo_docx": 2798,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "MÁ REPUTAÇÃO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2798,
+        "tipo": "corpo",
+        "texto": "Quando sua reputação de pirata, saqueador ou mercenário perigoso for reconhecida num lugar civilizado, pessoas comuns e autoridades menores não se arriscam a confrontá-lo ou denunciá-lo por pequenas transgressões apenas por princípio. Elas ainda agirão se forem diretamente ameaçadas, possuírem proteção suficiente, tiverem dever extraordinário ou acreditarem que deixar você agir será pior."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando sua reputação de pirata, saqueador ou mercenário perigoso for reconhecida num lugar civilizado, pessoas comuns e autoridades menores não se arriscam a confrontá-lo ou denunciá-lo por pequenas transgressões apenas por princípio. Elas ainda agirão se forem diretamente ameaçadas, possuírem proteção suficiente, tiverem dever extraordinário ou acreditarem que deixar você agir será pior.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2798"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2799",
+    "paragrafo_docx": 2799,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "TODO PORTO TEM UMA TAVERNA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2799,
+        "tipo": "corpo",
+        "texto": "Quando chegar a um porto desconhecido, você sabe onde marinheiros, contrabandistas, capitães e soldados de aluguel realmente fazem negócios. Pergunte ao Mestre onde é. Ao chegar lá, pergunte também:\n“Quem aqui sabe mais do que deveria sobre o que está acontecendo neste porto?”"
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando chegar a um porto desconhecido, você sabe onde marinheiros, contrabandistas, capitães e soldados de aluguel realmente fazem negócios. Pergunte ao Mestre onde é. Ao chegar lá, pergunte também:\n“Quem aqui sabe mais do que deveria sobre o que está acontecendo neste porto?”",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2799"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2800",
+    "paragrafo_docx": 2800,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "HOMEM AO MAR",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2800,
+        "tipo": "corpo",
+        "texto": "Quando perceber alguém sendo lançado de uma embarcação, arrastado por correnteza ou separado da tripulação no mar, você sempre tem uma última oportunidade significativa de agir antes que ele desapareça de alcance. Diga o que faz.\nA ação ainda pode ser perigosa e acionar outro Movimento."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando perceber alguém sendo lançado de uma embarcação, arrastado por correnteza ou separado da tripulação no mar, você sempre tem uma última oportunidade significativa de agir antes que ele desapareça de alcance. Diga o que faz.\nA ação ainda pode ser perigosa e acionar outro Movimento.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2800"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2801",
+    "paragrafo_docx": 2801,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "O NAVIO É O MAIS IMPORTANTE",
+    "requisito_literal": "Capitão",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2736",
+      "titulo_requerido": "CAPITÃO",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2801,
+        "tipo": "corpo",
+        "texto": "Quando sua embarcação estiver em perigo mortal e você permanecer tentando salvá-la, a tripulação que reconheça sua autoridade não abandona o navio apenas por medo comum enquanto ainda existir uma possibilidade plausível de salvá-lo.\nOrdem direta de deserção, terror sobrenatural, motim, perda absoluta de confiança ou certeza de que o navio está condenado ainda podem quebrar isso."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando sua embarcação estiver em perigo mortal e você permanecer tentando salvá-la, a tripulação que reconheça sua autoridade não abandona o navio apenas por medo comum enquanto ainda existir uma possibilidade plausível de salvá-lo.\nOrdem direta de deserção, terror sobrenatural, motim, perda absoluta de confiança ou certeza de que o navio está condenado ainda podem quebrar isso.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2801"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2802",
+    "paragrafo_docx": 2802,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "SAQUE ORGANIZADO",
+    "requisito_literal": "Abordagem",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2748",
+      "titulo_requerido": "ABORDAGEM",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2802,
+        "tipo": "corpo",
+        "texto": "Quando uma abordagem bem-sucedida quebrar a resistência organizada do inimigo, escolha uma coisa que sua gente assegura antes que o caos do saque comece:"
+      },
+      {
+        "paragrafo_docx": 2803,
+        "tipo": "opcao",
+        "texto": "a carga mais valiosa acessível;"
+      },
+      {
+        "paragrafo_docx": 2804,
+        "tipo": "opcao",
+        "texto": "os oficiais ou prisioneiros importantes;"
+      },
+      {
+        "paragrafo_docx": 2805,
+        "tipo": "opcao",
+        "texto": "cartas, mapas, livros de bordo ou documentos;"
+      },
+      {
+        "paragrafo_docx": 2806,
+        "tipo": "opcao",
+        "texto": "armas e suprimentos;"
+      },
+      {
+        "paragrafo_docx": 2807,
+        "tipo": "opcao",
+        "texto": "o controle da embarcação ou posição tomada;"
+      },
+      {
+        "paragrafo_docx": 2808,
+        "tipo": "opcao",
+        "texto": "a rota de retorno."
+      },
+      {
+        "paragrafo_docx": 2809,
+        "tipo": "continuacao",
+        "texto": "Isso não significa que vocês ficam com tudo. Significa que essa coisa não desaparece no caos enquanto todo mundo está berrando, roubando rum e dando coronhada nos outros."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2803,
+        "texto": "a carga mais valiosa acessível;"
+      },
+      {
+        "paragrafo_docx": 2804,
+        "texto": "os oficiais ou prisioneiros importantes;"
+      },
+      {
+        "paragrafo_docx": 2805,
+        "texto": "cartas, mapas, livros de bordo ou documentos;"
+      },
+      {
+        "paragrafo_docx": 2806,
+        "texto": "armas e suprimentos;"
+      },
+      {
+        "paragrafo_docx": 2807,
+        "texto": "o controle da embarcação ou posição tomada;"
+      },
+      {
+        "paragrafo_docx": 2808,
+        "texto": "a rota de retorno."
+      }
+    ],
+    "texto_original": "Quando uma abordagem bem-sucedida quebrar a resistência organizada do inimigo, escolha uma coisa que sua gente assegura antes que o caos do saque comece:\na carga mais valiosa acessível;\nos oficiais ou prisioneiros importantes;\ncartas, mapas, livros de bordo ou documentos;\narmas e suprimentos;\no controle da embarcação ou posição tomada;\na rota de retorno.\nIsso não significa que vocês ficam com tudo. Significa que essa coisa não desaparece no caos enquanto todo mundo está berrando, roubando rum e dando coronhada nos outros.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2802"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2810",
+    "paragrafo_docx": 2810,
+    "grupo": "MERCENÁRIO",
+    "categoria": "classe",
+    "titulo": "OLHOS DE CONTRAMESTRE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2810,
+        "tipo": "corpo",
+        "texto": "Quando observar uma embarcação antes de uma tormenta, perseguição ou combate naval, pergunte: \n“O que neste navio vai falhar primeiro se as condições piorarem?” \nO Mestre responderá com uma parte concreta da embarcação, da tripulação ou da operação.\nIsso não precisa significar dano físico: pode ser velame inadequado, homens exaustos, pouca água, carga mal distribuída, remadores insuficientes, um timoneiro ruim."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando observar uma embarcação antes de uma tormenta, perseguição ou combate naval, pergunte: \n“O que neste navio vai falhar primeiro se as condições piorarem?” \nO Mestre responderá com uma parte concreta da embarcação, da tripulação ou da operação.\nIsso não precisa significar dano físico: pode ser velame inadequado, homens exaustos, pouca água, carga mal distribuída, remadores insuficientes, um timoneiro ruim.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2810"
+  }
+]
