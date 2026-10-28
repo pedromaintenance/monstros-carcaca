@@ -1,0 +1,1008 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Thargrid — A Vida Sob a Montanha Livre",
+  "area_id": "area-proposta:thargrid",
+  "estado": "propostas_narrativas_nao_canonicas",
+  "fatos_documentados": [
+    "Montanhas de Thargrid são núcleo da resistência e abrigam Reino Sob a Montanha, com defesas formidáveis e acolhimento de refugiados; os clãs de anões e gigantes governam o território.",
+    "Anões são população antiga e numerosa do subterrâneo; seus clãs praticam mineração, metalurgia, engenharia, produção de alimentos em cavernas, armazenamento e defesa. Há disputa entre isolamento e abertura aos povos ocupados.",
+    "Gigantes habitam cavernas monumentais, vales altos e picos. Gigantes de pedra constroem passagens, do gelo defendem picos, do fogo exercem metalurgia e engenharia.",
+    "O Ordenamento regula posições entre gigantes, mas não dá autoridade sobre anões, draconatos e outros cidadãos de Thargrid.",
+    "Draconatos ocupam cristas e desfiladeiros, com clãs de honra e juramentos; sua mediação entre gigantes e anões está na lore, assim como diferentes visões da relação com Golzdov.",
+    "Ironwood situa-se ao sul da cadeia e é fortaleza de rangers e druidas liderados por Elara Stormoak; coopera em resistência de caráter descentralizado, não subordinada a um comando único.",
+    "Rayquaza fugiu para o Reino Sob a Montanha em 888 EC; a vitória sobre Voragar e Dragões Ancestrais foi em 921 EC, mas seu paradeiro posterior não é confirmado.",
+    "Queda ou ascensão de Thargrid permanece questão em aberto no cenário; o Reino não foi declarado conquistado pela Rainha da Noite."
+  ],
+  "fontes": [
+    "Hack Carcaça Dungeon World(1).docx — Thargrid e movimentos culturais, páginas 7,12–14,50–52",
+    "Ambientação - A Carcaça - Visão Geral.txt",
+    "data/lore/hack-carcaca-dw-movimentos-povos-integrais.json",
+    "data/propostas/povoamento-regional-hack-carcaca.json"
+  ],
+  "continuidades": [
+    "povoamento-proposto:conselho-dos-juramentos",
+    "povoamento-proposto:escola-do-caminho-verde"
+  ],
+  "contagens": {
+    "lugares": 6,
+    "coletivos": 6,
+    "pessoas": 9,
+    "dilemas": 4,
+    "fluxos": 6,
+    "acordos": 5,
+    "cenas": 7,
+    "arcos": 3
+  },
+  "lugares": [
+    {
+      "id": "thargrid-social:lugar:patio-da-metade",
+      "nome": "Pátio da Metade de Pedra",
+      "rotina_cotidiana": "Pátio de encontro hipotético entre escavadores anões e construtores gigantes; a pedra é avaliada tanto pela função estrutural quanto pelo uso cotidiano.",
+      "tensao_social": "Uma passagem precisa servir a pedestres pequenos e a sentinelas enormes, mas cada comunidade prioriza uma escala diferente.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-845",
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-871"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ambiente": "subterraneo",
+      "ancora": "Reino Sob a Montanha",
+      "local_confirmado": false
+    },
+    {
+      "id": "thargrid-social:lugar:mesa-da-sexta-tigela",
+      "nome": "Mesa da Sexta Tigela",
+      "rotina_cotidiana": "Reunião possível de famílias, cozinheiros e refugiados para discutir partilha de provisões produzidas nas cavernas.",
+      "tensao_social": "Uma nova família chega quando a reserva já foi prometida a patrulhas, e a hospitalidade vira disputa sobre pertencimento.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-846",
+        "movimento-povo:paragrafo-855",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ambiente": "subterraneo",
+      "ancora": "Reino Sob a Montanha acolhe refugiados",
+      "local_confirmado": false
+    },
+    {
+      "id": "thargrid-social:lugar:escada-de-dois-passos",
+      "nome": "Escada dos Dois Passos",
+      "rotina_cotidiana": "Oficina social hipotética de passagens e degraus acessíveis para anões, gigantes, draconatos e visitantes.",
+      "tensao_social": "Um corredor seguro para gigantes pode ser impossível para crianças refugiadas; a reforma exige fechar passagem estratégica.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-871",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ambiente": "passagem",
+      "ancora": "Galerias e caminhos das montanhas",
+      "local_confirmado": false
+    },
+    {
+      "id": "thargrid-social:lugar:lareira-de-tres-forjas",
+      "nome": "Lareira das Três Forjas",
+      "rotina_cotidiana": "Área de negociação proposta entre mestres anões, familiares gigantes do fogo e aprendizes responsáveis pelo reparo de equipamentos.",
+      "tensao_social": "Cada mestre reivindica o mérito de uma ferramenta que sustentou a defesa; a rivalidade atrasa peças necessárias aos civis.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-873",
+        "movimento-povo:paragrafo-886"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ambiente": "forja",
+      "ancora": "Ofícios metalúrgicos de Thargrid",
+      "local_confirmado": false
+    },
+    {
+      "id": "thargrid-social:lugar:vigia-das-brumas",
+      "nome": "Vigia da Neve sem Bandeira",
+      "rotina_cotidiana": "Encontro provisório de sentinelas dos picos e mensageiros dos desfiladeiros, sem inventar fortaleza ou rota geográfica específica.",
+      "tensao_social": "Um aviso incompleto pode levar a fechar o passo e deixar refugiados do lado de fora.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-872",
+        "movimento-povo:paragrafo-874",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ambiente": "altura",
+      "ancora": "Picos e passagens guardados por gigantes e draconatos",
+      "local_confirmado": false
+    },
+    {
+      "id": "thargrid-social:lugar:muralha-dos-juramentos",
+      "nome": "Muralha dos Juramentos Inacabados",
+      "rotina_cotidiana": "Espaço de assembleia hipotético para registrar propostas entre clãs, sem substituir estruturas políticas existentes.",
+      "tensao_social": "Um gigante invoca posição no Ordenamento para falar em nome de todos os habitantes do Reino.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-846",
+        "movimento-povo:paragrafo-870",
+        "movimento-povo:paragrafo-884"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ambiente": "assembleia",
+      "ancora": "A aliança de anões, gigantes e draconatos",
+      "local_confirmado": false
+    }
+  ],
+  "coletivos": [
+    {
+      "id": "thargrid-social:coletivo:peso-e-passagem",
+      "nome": "Artífices do Peso Justo",
+      "rotina_cotidiana": "Coalizão hipotética de construtores preocupados com a circulação de corpos de diferentes tamanhos.",
+      "tensao_social": "Um projeto monumental privilegia os gigantes e exclui trabalhadores e hóspedes menores.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-871",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "tradicao": "anões_e_gigantes_de_pedra",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "thargrid-social:coletivo:mesa-do-abrigo",
+      "nome": "Famílias da Porta Entreaberta",
+      "rotina_cotidiana": "Rede de hospitalidade proposta que deseja acolher refugiados com responsabilidades explícitas, sem prometer provisões ilimitadas.",
+      "tensao_social": "Uma ala isolacionista acusa hóspedes de trazer espiões e pede sua expulsão coletiva.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-846",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-855"
+      ],
+      "estado": "proposta_nao_canonica",
+      "tradicao": "multicomunitaria",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "thargrid-social:coletivo:mestres-do-calor",
+      "nome": "Mestres das Brasas Rivais",
+      "rotina_cotidiana": "Ofício coletivo imaginado entre ferreiros anões e gigantes do fogo.",
+      "tensao_social": "Disputam autoria e controle de uma inovação que poderia beneficiar todo o Reino.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-873",
+        "movimento-povo:paragrafo-848"
+      ],
+      "estado": "proposta_nao_canonica",
+      "tradicao": "forjas",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "thargrid-social:coletivo:testemunhas-da-palavra",
+      "nome": "Testemunhas do Juramento Duplo",
+      "rotina_cotidiana": "Mediadores draconatos hipotéticos que tentam traduzir promessas entre leis de clã anãs e prestígios gigantes.",
+      "tensao_social": "Um compromisso firmado por um chefe não vincula automaticamente pessoas de outro povo.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-848",
+        "movimento-povo:paragrafo-870",
+        "movimento-povo:paragrafo-884"
+      ],
+      "estado": "proposta_nao_canonica",
+      "tradicao": "mediacao_draconata",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "thargrid-social:coletivo:vigias-limiar",
+      "nome": "Sentinelas do Limiar Comum",
+      "rotina_cotidiana": "Cooperação eventual entre gigantes dos picos e guardas draconatos das passagens.",
+      "tensao_social": "Escolher fechar um caminho protege as muralhas, mas pode abandonar quem busca refúgio.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-872",
+        "movimento-povo:paragrafo-874",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "tradicao": "defesa",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "thargrid-social:coletivo:cartas-a-ironwood",
+      "nome": "Cartas que Não Governam a Floresta",
+      "rotina_cotidiana": "Rede hipotética de mensageiros que troca notícias entre Thargrid e aliados de Ironwood, sem criar comando central da resistência.",
+      "tensao_social": "O Reino exige saber nomes de contatos florestais para avaliar um pedido de ajuda; isso pode comprometer a rede irregular.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-885",
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "tradicao": "mensageria",
+      "instituicao_confirmada": false
+    }
+  ],
+  "pessoas": [
+    {
+      "id": "thargrid-social:pessoa:dorrin",
+      "nome": "Dorrin do Último Pregão",
+      "rotina_cotidiana": "Anão mestre de depósitos proposto; considera toda ração prometida uma obrigação de clã e desconfia de promessas improvisadas.",
+      "tensao_social": "A quantidade de famílias acolhidas desafia o registro tradicional de quem tem direito aos estoques.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-846",
+        "movimento-povo:paragrafo-855",
+        "movimento-povo:paragrafo-848"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "anao",
+      "reutiliza": null,
+      "localizacao_atual_confirmada": false,
+      "papel": "gestor_de_provisoes"
+    },
+    {
+      "id": "thargrid-social:pessoa:kelra",
+      "nome": "Kelra Cinzel-Sincero",
+      "rotina_cotidiana": "Anã engenheira proposta, treinada para distinguir boa construção de proteção aparente.",
+      "tensao_social": "Um portão monumental satisfaz o prestígio de um clã, mas bloqueia saída de emergência para hóspedes menores.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-845",
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-856"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "ana",
+      "reutiliza": null,
+      "localizacao_atual_confirmada": false,
+      "papel": "engenheira"
+    },
+    {
+      "id": "thargrid-social:pessoa:olgran",
+      "nome": "Olgran do Arco que Cede",
+      "rotina_cotidiana": "Gigante de pedra escultor proposto, para quem passagem e escultura são o mesmo trabalho.",
+      "tensao_social": "Uma obra celebrada entre gigantes foi projetada sem ouvir anões e draconatos que a utilizam.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-870",
+        "movimento-povo:paragrafo-871",
+        "movimento-povo:paragrafo-849"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "gigante_pedra",
+      "reutiliza": null,
+      "localizacao_atual_confirmada": false,
+      "papel": "construtor"
+    },
+    {
+      "id": "thargrid-social:pessoa:hryna",
+      "nome": "Hryna da Neve Escutada",
+      "rotina_cotidiana": "Gigante do gelo sentinela proposta, acostumada a reconhecer sinais que os vales escondem.",
+      "tensao_social": "A ordem de não abrir passagem conflita com um relato de refugiados em risco.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-872",
+        "movimento-povo:paragrafo-874",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "gigante_gelo",
+      "reutiliza": null,
+      "localizacao_atual_confirmada": false,
+      "papel": "sentinela"
+    },
+    {
+      "id": "thargrid-social:pessoa:brakar",
+      "nome": "Brakar das Forjas Gêmeas",
+      "rotina_cotidiana": "Gigante do fogo ferreiro proposto, exige disciplina de produção e respeito às técnicas de sua família.",
+      "tensao_social": "Um mestre anão acusa sua forja de monopolizar reparos e enfraquecer os aprendizes menores.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-873",
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-870"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "gigante_fogo",
+      "reutiliza": null,
+      "localizacao_atual_confirmada": false,
+      "papel": "ferreiro"
+    },
+    {
+      "id": "thargrid-social:pessoa:serak",
+      "nome": "Serak do Juramento Verificável",
+      "rotina_cotidiana": "Draconato mediador proposto; registra precisamente o que foi prometido antes de chamar alguém de traidor.",
+      "tensao_social": "Um chefe gigante declara que posição no Ordenamento lhe dá poder sobre a comunidade inteira.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-884",
+        "movimento-povo:paragrafo-885",
+        "movimento-povo:paragrafo-886"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "draconato",
+      "reutiliza": null,
+      "localizacao_atual_confirmada": false,
+      "papel": "mediador"
+    },
+    {
+      "id": "thargrid-social:pessoa:ithara",
+      "nome": "Ithara da Passagem Não Fechada",
+      "rotina_cotidiana": "Draconata guardiã proposta que deseja conciliar defesa e acolhimento.",
+      "tensao_social": "Se permitir a entrada de viajantes sem prova, poderá ser culpada por toda ameaça posterior.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-884",
+        "movimento-povo:paragrafo-885",
+        "movimento-povo:paragrafo-892"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "draconata",
+      "reutiliza": null,
+      "localizacao_atual_confirmada": false,
+      "papel": "guardia"
+    },
+    {
+      "id": "thargrid-social:pessoa:nemea",
+      "nome": "Nemea da Porta de Fora",
+      "rotina_cotidiana": "Refugiada humana proposta, sem origem regional específica confirmada; conhece o custo de ser recebida sob suspeita.",
+      "tensao_social": "Sua família quer permanecer junta, mas um protocolo de entrada propõe separá-la para verificar relatos.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-855"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "humana_refugiada",
+      "reutiliza": null,
+      "localizacao_atual_confirmada": false,
+      "papel": "anfitria_de_outros_refugiados"
+    },
+    {
+      "id": "thargrid-social:pessoa:vaelis",
+      "nome": "Vaelis das Folhas Cifradas",
+      "rotina_cotidiana": "Mensageira elfa da floresta proposta que conhece acordos de auxílio, sem representar oficialmente Ironwood.",
+      "tensao_social": "Uma patrulha de Thargrid quer rotas e nomes completos antes de aceitar uma solicitação de socorro.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "elfa_floresta",
+      "reutiliza": null,
+      "localizacao_atual_confirmada": false,
+      "papel": "mensageira"
+    }
+  ],
+  "dilemas": [
+    {
+      "id": "thargrid-social:dilema:porta-ou-refugio",
+      "nome": "A Porta que Protege e Abandona",
+      "rotina_cotidiana": "Clãs isolacionistas querem restringir entradas enquanto famílias acolhedoras defendem a obrigação de ajudar.",
+      "tensao_social": "Manter todos fora protege informações da defesa, mas prolonga risco dos que escaparam da ocupação.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-846",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "Chega pedido de acolhimento cuja segurança não pode ser verificada imediatamente.",
+      "ocorreu": false,
+      "opcoes": [
+        "Admitir com condições justas",
+        "Criar acolhimento protegido temporário",
+        "Recusar coletivamente e assumir as consequências"
+      ]
+    },
+    {
+      "id": "thargrid-social:dilema:ordenamento-e-cidadania",
+      "nome": "Ordenamento Não É Constituição",
+      "rotina_cotidiana": "Uma posição elevada entre gigantes é apresentada como licença para decidir por anões e draconatos.",
+      "tensao_social": "O prestígio interno gigante não concede governo sobre os demais povos de Thargrid.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-870",
+        "movimento-povo:paragrafo-884",
+        "movimento-povo:paragrafo-846"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "Um chefe gigante exige obediência civil em nome do Ordenamento.",
+      "ocorreu": false,
+      "opcoes": [
+        "Distinguir sistemas de autoridade",
+        "Buscar mediação",
+        "Contestar a pretensão"
+      ]
+    },
+    {
+      "id": "thargrid-social:dilema:alimento-e-guarda",
+      "nome": "A Reserva entre Arado e Muralha",
+      "rotina_cotidiana": "Depósitos podem ter de escolher entre alimentação, ferragens e socorro, sem que se conheça volume da reserva.",
+      "tensao_social": "Contabilizar provisão duas vezes pode comprometer a defesa e os acolhidos.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-855",
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "A defesa requisita materiais já prometidos ao acolhimento.",
+      "ocorreu": false,
+      "opcoes": [
+        "Verificar disponibilidade",
+        "Negociar prioridade",
+        "Substituir a requisição"
+      ]
+    },
+    {
+      "id": "thargrid-social:dilema:honra-e-ancestral",
+      "nome": "O Nome que Não Pertence a um Dragão Morto",
+      "rotina_cotidiana": "Clãs draconatos discordam da importância simbólica de Golzdov na própria história.",
+      "tensao_social": "Exigir uma versão comum da ancestralidade confunde tradição com lealdade política.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-887",
+        "movimento-povo:paragrafo-886",
+        "movimento-povo:paragrafo-884"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "Um juramento exige reconhecer Golzdov como ancestral literal de todo draconato.",
+      "ocorreu": false,
+      "opcoes": [
+        "Reconhecer tradições diferentes",
+        "Reformular o texto",
+        "Recusar obrigação religiosa"
+      ]
+    }
+  ],
+  "fluxos": [
+    {
+      "id": "thargrid-social:fluxo:mineral-e-muralhas",
+      "nome": "Da Pedra à Muralha",
+      "rotina_cotidiana": "Minérios e obras de engenharia sustentam de modo geral as defesas do Reino, mas esta distribuição específica não foi registrada.",
+      "tensao_social": "Uma emergência militar compete com a manutenção de estruturas civis.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-845",
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-855"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "construcao",
+      "origem": "thargrid-social:lugar:lareira-de-tres-forjas",
+      "destino": "thargrid-social:lugar:escada-de-dois-passos",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "thargrid-social:fluxo:alimento-e-abrigo",
+      "nome": "Da Reserva ao Acolhimento",
+      "rotina_cotidiana": "Alimentos produzidos em cavernas e provisões sustentam comunidades, mas nenhum lote novo foi confirmado.",
+      "tensao_social": "A distribuição depende de decisões sobre acolhimento e manutenção dos estoques.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-846",
+        "movimento-povo:paragrafo-855",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "subsistencia",
+      "origem": "thargrid-social:lugar:mesa-da-sexta-tigela",
+      "destino": "thargrid-social:lugar:patio-da-metade",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "thargrid-social:fluxo:obra-em-duas-escalas",
+      "nome": "Engenharia para Povos de Escalas Diferentes",
+      "rotina_cotidiana": "Projetos de passagens poderiam compartilhar técnicas de anões e gigantes de pedra.",
+      "tensao_social": "O custo de adaptar uma estrutura é atribuído ao povo considerado menos importante.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-871",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "infraestrutura",
+      "origem": "thargrid-social:lugar:patio-da-metade",
+      "destino": "thargrid-social:lugar:escada-de-dois-passos",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "thargrid-social:fluxo:alerta-e-trilha",
+      "nome": "Aviso sem Entregar a Trilha",
+      "rotina_cotidiana": "Patrulhas de picos e mensageiros florestais poderiam trocar alertas sem estabelecer rota operacional.",
+      "tensao_social": "Demonstrar a autenticidade de um aviso pode expor aliados da resistência.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-872",
+        "movimento-povo:paragrafo-874",
+        "movimento-povo:paragrafo-1005"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "mensageria",
+      "origem": "thargrid-social:lugar:vigia-das-brumas",
+      "destino": "thargrid-social:lugar:muralha-dos-juramentos",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "thargrid-social:fluxo:forjas-rivais",
+      "nome": "Ferragem sem Dono Único",
+      "rotina_cotidiana": "Forjas anãs e gigantes do fogo poderiam compartilhar reparos em crise.",
+      "tensao_social": "Uma reivindicação de autoria paralisa o serviço no momento mais necessário.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-873",
+        "movimento-povo:paragrafo-848"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "metalurgia",
+      "origem": "thargrid-social:lugar:lareira-de-tres-forjas",
+      "destino": "thargrid-social:lugar:vigia-das-brumas",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "thargrid-social:fluxo:socorro-para-fora",
+      "nome": "Ajuda além da Muralha",
+      "rotina_cotidiana": "Pedido de apoio a comunidades fora do Reino poderia ser discutido com Ironwood sem criar cadeia de comando única.",
+      "tensao_social": "Aceitar toda missão externa pode comprometer proteção dos habitantes da montanha.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-885",
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "socorro",
+      "origem": "thargrid-social:lugar:muralha-dos-juramentos",
+      "destino": "thargrid-social:lugar:vigia-das-brumas",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    }
+  ],
+  "acordos": [
+    {
+      "id": "thargrid-social:acordo:escuta-antes-do-posto",
+      "nome": "Uma Escuta antes da Guarda",
+      "rotina_cotidiana": "Proposta de avaliar pedidos de refúgio com testemunhas e acolhimento inicial limitado.",
+      "tensao_social": "Exigências de segurança podem produzir discriminação e exposição de fugitivos.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-846",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "thargrid-social:pessoa:nemea",
+        "thargrid-social:pessoa:ithara"
+      ],
+      "vigente": false,
+      "custo": "Espaço e provisões compartilhados sem garantias ilimitadas.",
+      "ruptura": "Entregar automaticamente refugiados a perseguidores."
+    },
+    {
+      "id": "thargrid-social:acordo:ordem-sem-trono",
+      "nome": "Ordenamento sem Soberania Alheia",
+      "rotina_cotidiana": "Acordo proposto de reconhecer prestígio gigante apenas na esfera de sua tradição.",
+      "tensao_social": "Um chefe pode considerar a limitação um insulto ao clã.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-870",
+        "movimento-povo:paragrafo-884",
+        "movimento-povo:paragrafo-848"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "thargrid-social:pessoa:serak",
+        "thargrid-social:pessoa:olgran"
+      ],
+      "vigente": false,
+      "custo": "Aceitar mediação pública e distinção de competências.",
+      "ruptura": "Exigir obediência de anões ou draconatos por hierarquia gigante."
+    },
+    {
+      "id": "thargrid-social:acordo:ferragem-partilhada",
+      "nome": "Ferragem com Duas Assinaturas",
+      "rotina_cotidiana": "Oficinas de diferentes tradições poderiam definir prazo e reconhecimento de trabalho comum.",
+      "tensao_social": "A divisão de crédito pode atrasar peças necessárias aos demais.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-873",
+        "movimento-povo:paragrafo-848"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "thargrid-social:pessoa:kelra",
+        "thargrid-social:pessoa:brakar"
+      ],
+      "vigente": false,
+      "custo": "Compartilhar tempo, técnica e responsabilidade por falhas.",
+      "ruptura": "Reter manutenção vital para disputar prestígio."
+    },
+    {
+      "id": "thargrid-social:acordo:passo-em-duas-escalas",
+      "nome": "Passagem que Cabe a Todos",
+      "rotina_cotidiana": "Projeto de acessibilidade física em estruturas comuns do Reino.",
+      "tensao_social": "Alterar defesas demanda trabalho e pode abrir pontos vulneráveis.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-871",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "thargrid-social:pessoa:kelra",
+        "thargrid-social:pessoa:olgran"
+      ],
+      "vigente": false,
+      "custo": "Tempo de obra e comprometimento das equipes.",
+      "ruptura": "Usar tamanho ou clã para negar acesso a moradores."
+    },
+    {
+      "id": "thargrid-social:acordo:aviso-sem-comando",
+      "nome": "Mensagem sem Conselho Supremo",
+      "rotina_cotidiana": "Compromisso possível de compartilhar riscos com Ironwood sem subordinar seus rangers a Thargrid.",
+      "tensao_social": "Informação incompleta pode ser insuficiente para decidir envio de ajuda.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-885",
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "thargrid-social:pessoa:vaelis",
+        "thargrid-social:pessoa:ithara"
+      ],
+      "vigente": false,
+      "custo": "Tolerar autonomia dos aliados e risco de comunicação imperfeita.",
+      "ruptura": "Exigir lista integral de células, rotas e pessoas da floresta."
+    }
+  ],
+  "cenas": [
+    {
+      "id": "thargrid-social:cena:sexta-tigela",
+      "nome": "A Sexta Tigela",
+      "rotina_cotidiana": "Nemea tenta acolher recém-chegados; Dorrin informa que a reserva já tem outras obrigações.",
+      "tensao_social": "Sem quantidades confiáveis, uma promessa pode prejudicar tanto refugiados quanto moradores.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-855",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-846"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "thargrid-social:lugar:mesa-da-sexta-tigela",
+      "elenco": [
+        "thargrid-social:pessoa:nemea",
+        "thargrid-social:pessoa:dorrin"
+      ],
+      "escolhas": [
+        "Conferir disponibilidade",
+        "Organizar acolhimento por consentimento",
+        "Negociar trabalho sem coerção"
+      ],
+      "se_ignorarem": "Famílias podem ser expulsas com base em um estoque que ninguém verificou."
+    },
+    {
+      "id": "thargrid-social:cena:porta-alta-demais",
+      "nome": "A Porta Alta Demais",
+      "rotina_cotidiana": "Kelra e Olgran discutem reforçar um corredor que só permite trânsito seguro a gigantes.",
+      "tensao_social": "A defesa de uma entrada pode criar outra barreira para crianças e anões.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-871",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "thargrid-social:lugar:escada-de-dois-passos",
+      "elenco": [
+        "thargrid-social:pessoa:kelra",
+        "thargrid-social:pessoa:olgran"
+      ],
+      "escolhas": [
+        "Avaliar usos de todos",
+        "Redesenhar circulação",
+        "Negociar reforços temporários"
+      ],
+      "se_ignorarem": "A obra pode tornar uma via comum inacessível para parte dos moradores."
+    },
+    {
+      "id": "thargrid-social:cena:quem-manda-no-vale",
+      "nome": "Quem Manda no Vale?",
+      "rotina_cotidiana": "Um chefe gigante hipotético declara que o Ordenamento o autoriza a distribuir deveres civis de todos.",
+      "tensao_social": "Serak exige distinguir prestígio gigante e responsabilidade perante o Reino.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-870",
+        "movimento-povo:paragrafo-884",
+        "movimento-povo:paragrafo-846"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "thargrid-social:lugar:muralha-dos-juramentos",
+      "elenco": [
+        "thargrid-social:pessoa:olgran",
+        "thargrid-social:pessoa:serak"
+      ],
+      "escolhas": [
+        "Reconhecer autoridades específicas",
+        "Mediar limites do juramento",
+        "Recusar obediência automática"
+      ],
+      "se_ignorarem": "Uma interpretação errada pode tornar uma aliança em submissão política."
+    },
+    {
+      "id": "thargrid-social:cena:forja-de-dois-mestres",
+      "nome": "A Lâmina de Dois Mestres",
+      "rotina_cotidiana": "Brakar e Kelra discordam sobre o crédito e o uso de uma ferramenta de emergência.",
+      "tensao_social": "O atraso pode interromper reparos que sustentam a vida cotidiana.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-873",
+        "movimento-povo:paragrafo-886"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "thargrid-social:lugar:lareira-de-tres-forjas",
+      "elenco": [
+        "thargrid-social:pessoa:brakar",
+        "thargrid-social:pessoa:kelra"
+      ],
+      "escolhas": [
+        "Documentar trabalho conjunto",
+        "Priorizar reparo vital",
+        "Reconhecer tradições diferentes"
+      ],
+      "se_ignorarem": "A rivalidade pode fazer faltar uma peça sem necessidade de ataque inimigo."
+    },
+    {
+      "id": "thargrid-social:cena:neve-sem-testemunha",
+      "nome": "A Neve que Não Mostrou o Caminho",
+      "rotina_cotidiana": "Hryna relata viajantes além de um passo cuja situação não pôde confirmar; Ithara deve responder.",
+      "tensao_social": "Abrir passagem pode expor a defesa, mas fechá-la pode deixar pessoas vulneráveis do lado de fora.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-872",
+        "movimento-povo:paragrafo-874",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "thargrid-social:lugar:vigia-das-brumas",
+      "elenco": [
+        "thargrid-social:pessoa:hryna",
+        "thargrid-social:pessoa:ithara"
+      ],
+      "escolhas": [
+        "Investigar sem revelar defesas",
+        "Prever abrigo limitado",
+        "Manter vigilância e informar incertezas"
+      ],
+      "se_ignorarem": "A decisão será tomada por rumores em vez de informação suficiente."
+    },
+    {
+      "id": "thargrid-social:cena:mensagem-da-floresta",
+      "nome": "A Carta que Não Dá a Trilha",
+      "rotina_cotidiana": "Vaelis traz pedido hipotético de ajuda de aliados da floresta sem revelar nomes ou rotas.",
+      "tensao_social": "Conselheiros exigem identificação dos rangers antes de oferecer socorro.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "thargrid-social:lugar:muralha-dos-juramentos",
+      "elenco": [
+        "thargrid-social:pessoa:vaelis",
+        "thargrid-social:pessoa:serak"
+      ],
+      "escolhas": [
+        "Negociar prova de autenticidade",
+        "Respeitar autonomia de Ironwood",
+        "Recusar identificação compulsória"
+      ],
+      "se_ignorarem": "A tentativa de controle pode destruir confiança entre aliados independentes."
+    },
+    {
+      "id": "thargrid-social:cena:heranca-que-nao-prende",
+      "nome": "A Herança que Não Prende",
+      "rotina_cotidiana": "Uma criança draconata é pressionada a jurar que Golzdov é ancestral literal de todo seu povo.",
+      "tensao_social": "Uma leitura simbólica da tradição passa a ser imposta como verdade universal.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-887",
+        "movimento-povo:paragrafo-884",
+        "movimento-povo:paragrafo-886"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "thargrid-social:lugar:muralha-dos-juramentos",
+      "elenco": [
+        "thargrid-social:pessoa:serak",
+        "thargrid-social:pessoa:ithara"
+      ],
+      "escolhas": [
+        "Distinguir ancestralidade simbólica e literal",
+        "Ouvir as tradições dos clãs",
+        "Reformular juramento sem coerção"
+      ],
+      "se_ignorarem": "O orgulho familiar pode se tornar instrumento de exclusão religiosa."
+    }
+  ],
+  "arcos": [
+    {
+      "id": "thargrid-social:arco:fortaleza-abrigo",
+      "nome": "Fortaleza ou Refúgio?",
+      "rotina_cotidiana": "Disputa prolongada entre isolamento defensivo e dever de acolher quem escapou da ocupação.",
+      "tensao_social": "Nenhuma decisão de segurança é neutra quando o Reino é um dos poucos refúgios livres.",
+      "vinculos": [
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-846",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-885"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "thargrid-social:cena:sexta-tigela",
+        "thargrid-social:cena:neve-sem-testemunha"
+      ],
+      "decisao_central": "O Reino deve admitir pessoas desconhecidas, em quais condições e com quais responsabilidades?"
+    },
+    {
+      "id": "thargrid-social:arco:politica-de-escala",
+      "nome": "A Montanha Não Tem o Tamanho de Um Só Povo",
+      "rotina_cotidiana": "Convivência entre sociedades de tamanhos, hierarquias e tecnologias diferentes exige acordos constantemente renegociados.",
+      "tensao_social": "Uma passagem comum, uma forja e uma assembleia podem favorecer um povo e reduzir outro ao silêncio.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde",
+        "povoamento-proposto:conselho-dos-juramentos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-849",
+        "movimento-povo:paragrafo-870",
+        "movimento-povo:paragrafo-884"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "thargrid-social:cena:porta-alta-demais",
+        "thargrid-social:cena:quem-manda-no-vale",
+        "thargrid-social:cena:forja-de-dois-mestres"
+      ],
+      "decisao_central": "Como preservar a diversidade cultural sem permitir que prestígio de um grupo governe os demais?"
+    },
+    {
+      "id": "thargrid-social:arco:guerra-que-foge",
+      "nome": "A Guerra Que Está Além da Muralha",
+      "rotina_cotidiana": "Alianças entre Reino Sob a Montanha e forças livres, inclusive Ironwood, são redes e não comando único.",
+      "tensao_social": "Compartilhar informação e recursos para combater a Rainha pode comprometer proteção local.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-874",
+        "movimento-povo:paragrafo-885",
+        "movimento-povo:paragrafo-1005"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "thargrid-social:cena:mensagem-da-floresta",
+        "thargrid-social:cena:heranca-que-nao-prende"
+      ],
+      "decisao_central": "Quanto contribuir para a resistência sem impor governo central aos aliados?"
+    }
+  ],
+  "limites_editoriais": [
+    "Os microespaços, coalizões, pessoas e acordos individuais são propostos, sem localidades cartografadas, volumes ou titulares de governo confirmados.",
+    "Não declarar Thargrid conquistada nem restaurada após uma queda não registrada.",
+    "Não afirmar que Rayquaza ainda está presente no Reino após 921 EC.",
+    "Não projetar o Ordenamento gigante como soberania automática sobre anões e draconatos.",
+    "Não inventar número de refugiados, estoques, produtos específicos, capacidade defensiva ou rotas clandestinas confirmadas.",
+    "Todos os seis fluxos são hipotéticos e nenhum tratado novo está vigente.",
+    "Ironwood e Thargrid podem cooperar, mas a resistência da Carcaça não é um exército ou conselho centralizado.",
+    "A relação de cada clã draconato com Golzdov é plural; ancestralidade não é obrigatoriamente literal.",
+    "Movimentos do Hack são inspiração cultural, não habilidade mecânica automaticamente concedida a NPCs."
+  ],
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false
+}
