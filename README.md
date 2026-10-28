@@ -393,3 +393,10 @@ O Hack Carcaça Dungeon World agora fundamenta **16 núcleos sociais de povoamen
 As propostas não substituem `curadoria/assentamentos`, `data/regioes_carcaca.json` nem fatos canônicos: quatro áreas usam regiões do atlas existentes; Garganta, Rio/Drakport, Thargrid/Ironwood e Shadar-Riverie permanecem como âncoras de lore sem criar IDs oficiais prematuros.
 
 Consulta: `getRegionalPopulationProposals()`, `searchRegionalPopulationProposals({areaId,regiaoAtlasId,tema,movimentoHack,query})`. Fontes: `data/propostas/povoamento-regional-hack-carcaca.json`; documentação: [Povoamento regional](docs/POVOAMENTO_REGIONAL_HACK.md).
+
+
+## Caatinga — comunidades e tensões (povoamento 02)
+
+Desenvolvida como proposta narrativa em **38 entidades**: cinco comunidades, cinco coletivos, oito personagens, quatro pontos de água, seis conexões de circulação, quatro conflitos e seis cenas. Articula o Poço Sem Bandeira e a Feira das Ferragens Trocadas às novas comunidades do Pátio das Cabaças Lacradas, Pedra dos Nove Silêncios e Baixio das Sementes Guardadas.
+
+As regras do Hack orientam valores e práticas, não autorizam efeitos nem provam que todos os orcs compartilhem uma ideologia. A ligação com Portomonte é explicitamente condicional, sem coordenadas, volumes de água, população ou estrada comprovados. A fonte está em `data/propostas/caatinga-rede-social-hack.json`; detalhes em [Caatinga habitada](docs/CAATINGA_POVOAMENTO_CICLO2.md).

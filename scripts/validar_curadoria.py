@@ -2221,6 +2221,68 @@ def validar_povoamento_narrativo_hack():
             for x in obj["tramas"]),"Tramas cruzadas não podem ser forçadas.")
     print("Povoamento narrativo: 8 áreas, 16 núcleos, 3 tramas e referências Hack conferidas; sem promover cânone.")
 
+ 
+def validar_rede_social_caatinga():
+    """Valida coesão das comunidades e separação entre cânone e sugestões."""
+    data=load("data/propostas/caatinga-rede-social-hack.json")
+    require(data["regiao_id"]=="regiao:caatinga"
+            and data["estado"]=="propostas_narrativas_nao_canonicas"
+            and data["aprovacao_autoral"] is False
+            and data["efeito_automatico_no_canon"] is False,
+            "Rede da Caatinga não pode estabelecer cânone automaticamente.")
+    counts={"comunidades":5,"coletivos":5,"pessoas":8,"pontos_agua":4,
+            "rotas":6,"conflitos":4,"cenas":6}
+    require(data["totais_propostos"]==counts,"Contagens da Caatinga divergentes.")
+    entities=[e for k in counts for e in data[k]]
+    require(len(entities)==38 and len({e["id"] for e in entities})==38,
+            "Rede da Caatinga contém IDs repetidos.")
+    for k,n in counts.items():
+        require(len(data[k])==n and all(x["estado"]=="proposta" for x in data[k]),
+                "Tipo de entidade da Caatinga incompleto: "+k)
+    inventory=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")["movimentos"]
+    people=load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]
+    hack_ids={m["id"] for m in inventory+people}
+    ids={e["id"] for e in entities}
+    coms={e["id"] for e in data["comunidades"]}
+    collectives={e["id"] for e in data["coletivos"]}
+    existing_places={p["id"] for p in load("data/lugares_carcaca.json")["lugares"]}
+    for e in entities:
+        require(e["id"].startswith("caatinga:"),"ID da Caatinga fora do namespace.")
+        if e.get("movimentos_inspiradores"):
+            require(all(m in hack_ids for m in e["movimentos_inspiradores"]),
+                    "Movimento de inspiração não encontrado no Hack.")
+        for refkey in ("comunidade_id","coletivo_id"):
+            ref=e.get(refkey)
+            if ref is not None:
+                expected=coms if refkey=="comunidade_id" else collectives
+                require(ref in expected,"Referência comunitária inválida: "+str(ref))
+        if "comunidade_ids" in e:
+            require(all(r in coms for r in e["comunidade_ids"]),
+                    "Conflito referencia comunidade não catalogada.")
+        if "conexoes" in e:
+            require(all(r in coms for r in e["conexoes"]),"Ligação de comunidade desconhecida.")
+        if "ligacoes_propostas" in e:
+            require(all(r in coms for r in e["ligacoes_propostas"]),
+                    "Ligação de coletivo desconhecida.")
+        if "origem_id" in e:
+            require(e["origem_id"] in coms and
+                    (e["destino_id"] in coms or e["destino_id"] in existing_places),
+                    "Rota pressupõe lugar inexistente no atlas.")
+            require(e["tracado_confirmado"] is False and e["distancia_confirmada"] is False,
+                    "Rota proposta não pode declarar traçado ou distância verificados.")
+    refs=set(data["conexoes_com_sementes_anteriores"])
+    original=load("data/propostas/povoamento-regional-hack-carcaca.json")
+    require(refs=={"povoamento-proposto:poco-sem-bandeira","povoamento-proposto:mercado-das-ferragens"}
+            and refs<={x["id"] for x in original["sementes"]},
+            "A Caatinga deve continuar ligada às duas sementes anteriores.")
+    require(data["pontos_agua"] and all(p["estado_material"]=="hipotetico_sem_medicao"
+            for p in data["pontos_agua"]),
+            "Não inventar volume, potabilidade ou água disponível.")
+    require(all(isinstance(x.get("situacao_de_abertura"),str)
+            and isinstance(x.get("efeito_se_ignorarem_condicional"),str)
+            for x in data["cenas"]),"Cenas devem ter abertura e consequência condicional.")
+    print("Povoamento da Caatinga: 38 entidades propostas em sete categorias, sem novos fatos ou mapas canônicos.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2334,6 +2396,7 @@ def main():
     validar_mercenario_integral()
     validar_fechamento_classes_integrais()
     validar_povoamento_narrativo_hack()
+    validar_rede_social_caatinga()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

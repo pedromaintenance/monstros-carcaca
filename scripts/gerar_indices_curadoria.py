@@ -246,6 +246,26 @@ def build():
     lore_reviews=load("data/lore/hack-carcaca-dw-pontos-de-revisao.json")
     lore_crosswalk=sorted(load("data/lore/hack-carcaca-dw-pontes-atlas.json")["pontes"],key=lambda x:x["id"])
     povoamento_proposto=load("data/propostas/povoamento-regional-hack-carcaca.json")
+    caatinga_rede_social=load("data/propostas/caatinga-rede-social-hack.json")
+    caatinga_entidades=[
+        {"tipo":tipo,**elemento}
+        for tipo in ("comunidades","coletivos","pessoas","pontos_agua","rotas","conflitos","cenas")
+        for elemento in caatinga_rede_social[tipo]
+    ]
+    def indexar_rede_caat(chave):
+        mapping=defaultdict(set)
+        for entidade in caatinga_entidades:
+            val=entidade.get(chave,[])
+            vals=val if isinstance(val,list) else [val]
+            for v in vals:
+                if v: mapping[v].add(entidade["id"])
+        return {k:sorted(v) for k,v in sorted(mapping.items())}
+    caatinga_rede_indices={
+      "by_tipo":indexar_rede_caat("tipo"),
+      "by_tema":indexar_rede_caat("tags"),
+      "by_movimento_hack":indexar_rede_caat("movimentos_inspiradores"),
+      "by_comunidade":indexar_rede_caat("comunidade_id")
+    }
     sementes_povoamento=povoamento_proposto["sementes"]
     areas_povoamento=povoamento_proposto["areas"]
     def index_povoamento(rows,key):
@@ -567,6 +587,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "caatinga_social_network":"caatinga-social-network.json",
+        "caatinga_social_indexes":"caatinga-social-indexes.json",
         "regional_population_proposals":"regional-population-proposals.json",
         "regional_population_proposal_indexes":"regional-population-proposal-indexes.json",
         "hack_yokai_scribe_movements":"hack-yokai-scribe-movements.json",
@@ -669,6 +691,9 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_entidades_caatinga_propostas":len(caatinga_entidades),
+        "total_comunidades_caatinga_propostas":len(caatinga_rede_social["comunidades"]),
+        "total_npcs_caatinga_propostos":len(caatinga_rede_social["pessoas"]),
         "total_movimentos_ladino_integrais":len(ladino_docx),
         "total_opcoes_ladino":sum(len(m["opcoes"]) for m in ladino_docx),
         "total_requer_ladino":sum(bool(m["requisito_literal"]) for m in ladino_docx),
@@ -756,6 +781,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["caatinga_social_network"]:caatinga_rede_social,
+           files["caatinga_social_indexes"]:caatinga_rede_indices,
            files["regional_population_proposals"]:povoamento_proposto,
            files["regional_population_proposal_indexes"]:indices_povoamento,
            files["hack_yokai_scribe_movements"]:escriba_yokai_docx,

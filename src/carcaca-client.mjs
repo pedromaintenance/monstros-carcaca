@@ -60,6 +60,32 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getCaatingaSocialNetwork(){return byKey("caatinga_social_network");}
+  async function getCaatingaSocialIndexes(){return byKey("caatinga_social_indexes");}
+  async function getCaatingaEntity(id){
+    if(typeof id!=="string"||!id.startsWith("caatinga:"))return null;
+    const obj=await getCaatingaSocialNetwork();
+    for(const kind of ["comunidades","coletivos","pessoas","pontos_agua","rotas","conflitos","cenas"]){
+      const entity=obj[kind].find(x=>x.id===id);
+      if(entity)return {tipo:kind,...entity};
+    }
+    return null;
+  }
+  async function searchCaatingaEntities({tipo,tema,movimentoHack,comunidadeId,query}={}){
+    const obj=await getCaatingaSocialNetwork();
+    const kinds=["comunidades","coletivos","pessoas","pontos_agua","rotas","conflitos","cenas"];
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const flat=kinds.flatMap(k=>obj[k].map(x=>({tipo:k,...x})));
+    return flat.filter(e=>
+      (!tipo||e.tipo===tipo)&&
+      (!tema||(e.tags??[]).includes(tema))&&
+      (!movimentoHack||(e.movimentos_inspiradores??[]).includes(movimentoHack))&&
+      (!comunidadeId||e.comunidade_id===comunidadeId||
+        (e.comunidade_ids??[]).includes(comunidadeId)||e.origem_id===comunidadeId||
+        e.destino_id===comunidadeId||(e.conexoes??[]).includes(comunidadeId)||
+        (e.ligacoes_propostas??[]).includes(comunidadeId))&&
+      (!query||norm(Object.values(e).filter(x=>typeof x==="string").join(" ")).includes(norm(query))));
+  }
   async function getRegionalPopulationProposals(){return byKey("regional_population_proposals");}
   async function getRegionalPopulationProposalIndexes(){return byKey("regional_population_proposal_indexes");}
   async function getRegionalPopulationProposal(id){
@@ -1006,6 +1032,7 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getFinalClassMovement,
           getRegionalPopulationProposals,getRegionalPopulationProposalIndexes,
           getRegionalPopulationProposal,searchRegionalPopulationProposals,
+          getCaatingaSocialNetwork,getCaatingaSocialIndexes,getCaatingaEntity,searchCaatingaEntities,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,
