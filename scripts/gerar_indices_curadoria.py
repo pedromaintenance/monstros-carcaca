@@ -264,6 +264,28 @@ def build():
     revisao_xix=load("data/worldbuilding/revisao-autoral-atlas-ciclo19.json")
     grama_xx=load("data/worldbuilding/grama-cortada-cotidiano-ciclo20.json")
     gnomos_xxi=load("data/worldbuilding/culturas-gnomicas-ciclo21.json")
+    meio_demonios_xxii=load("data/worldbuilding/meio-demonios-sociedades-ciclo22.json")
+    categorias_xxii=("eixos_sociais","contextos_de_convivencia","circuitos_civis",
+                      "tensoes","costumes_candidatos","vinhetas")
+    registros_xxii=[{**entry,"categoria_indice":cat}
+        for cat in categorias_xxii for entry in meio_demonios_xxii[cat]]
+    if len(registros_xxii)!=37:
+        raise ValueError("Ciclo XXII: esperado 37 propostas socioculturais.")
+    def indexar_meio_demonios(extract):
+        groups=defaultdict(set)
+        for entry in registros_xxii:
+            vals=extract(entry)
+            for key in (vals if isinstance(vals,list) else [vals]):
+                if key is not None and key!="":
+                    groups[str(key)].add(entry["id"])
+        return {key:sorted(values) for key,values in sorted(groups.items())}
+    indices_meio_demonios_xxii={
+        "by_categoria":indexar_meio_demonios(lambda x:x["categoria_indice"]),
+        "by_estado":indexar_meio_demonios(lambda x:x["estado"]),
+        "by_nome":indexar_meio_demonios(lambda x:x["nome_editorial"]),
+        "by_slug":indexar_meio_demonios(lambda x:x["id"].rsplit(":",1)[-1]),
+        "by_inicial":indexar_meio_demonios(lambda x:x["nome_editorial"][0].upper())
+    }
     categorias_xxi=("tradicoes","eixos_sociais","eticas_do_conhecimento",
                     "redes_de_troca","conflitos_internos","costumes_possiveis","vinhetas")
     registros_xxi=[{**entry,"categoria_indice":cat}
@@ -1060,6 +1082,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "half_demon_societies":"half-demon-societies.json",
+        "half_demon_societies_indexes":"half-demon-societies-indexes.json",
         "gnomish_cultures":"gnomish-cultures.json",
         "gnomish_cultures_indexes":"gnomish-cultures-indexes.json",
         "grama_cortada_daily_life":"grama-cortada-daily-life.json",
@@ -1202,6 +1226,9 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_fatos_meio_demonios_xxii":len(meio_demonios_xxii["fatos_documentados"]),
+        "total_propostas_meio_demonios_xxii":len(registros_xxii),
+        "total_perguntas_meio_demonios_xxii":len(meio_demonios_xxii["perguntas_para_autor"]),
         "total_fatos_gnomos_xxi":len(gnomos_xxi["fatos_documentados"]),
         "total_registros_gnomos_xxi":len(registros_xxi),
         "total_decisoes_gnomos_xxi":len(gnomos_xxi["decisoes_para_autor"]),
@@ -1370,6 +1397,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["half_demon_societies"]:meio_demonios_xxii,
+           files["half_demon_societies_indexes"]:indices_meio_demonios_xxii,
            files["gnomish_cultures"]:gnomos_xxi,
            files["gnomish_cultures_indexes"]:indices_gnomos_xxi,
            files["grama_cortada_daily_life"]:grama_xx,
