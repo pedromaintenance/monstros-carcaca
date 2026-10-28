@@ -1,0 +1,1005 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Costa Sul sob Pressão — Mar de Sangue, Trabalho e Dependência",
+  "regiao_id": "regiao:costa-sul",
+  "estado": "propostas_narrativas_nao_canonicas",
+  "sinopse": "O Mar de Sangue afeta a Costa Sul não só por ataques: cobranças e rumores podem alterar trabalhos, hospitalidade e decisões sobre informações. As cadeias específicas abaixo são condicionais, não a história canônica de Portomonte.",
+  "fatos_documentados": [
+    "Portomonte é um grande assentamento humano protegido por penhascos e centro de comércio entre assentamentos costeiros.",
+    "O templo de Deméter purifica água do Mar de Sangue para agricultura e lavouras inclusive sobre pedra; não está comprovada potabilidade para beber.",
+    "Tortles e tabaxis habitam arquipélagos de tradições próprias; fazem viagens sazonais e muitos trabalham como marinheiros, mas trajetos e escalas individuais não estão descritos.",
+    "Abissais exigem tributos por pesca, navegação ou passagem segura e oferecem proteção; suas relações podem criar dependência por gerações.",
+    "Kuo-toa capturam pessoas para sacrifícios; abissais também recorrem à escravidão e à captura quando pactos não bastam; abissais marinhos não são demônios do Abismo.",
+    "Tritões defendem rotas e águas azuis, sereias preservam mensagens cantadas; a fronteira com as águas vermelhas muda com correntes e magia.",
+    "Alguns refugiados de Eldroth existem entre os grandes assentamentos da Costa Sul, mas não há confirmação específica de refugiados de Eldroth vivendo em Portomonte."
+  ],
+  "fontes": [
+    "Hack Carcaça Dungeon World(1).docx pp. 4,14–15",
+    "data/lore/hack-carcaca-dw-movimentos-povos-integrais.json",
+    "data/propostas/portomonte-ilhas-costa-sul-hack.json",
+    "data/propostas/mar-sangue-economia-hack.json",
+    "data/propostas/mar-sangue-diplomacia-hack.json",
+    "data/propostas/fronteira-caatinga-costa-sul-hack.json"
+  ],
+  "continuidades": [
+    "costa-sul:pessoa:gema",
+    "costa-sul:pessoa:antera",
+    "costa-sul:pessoa:mara",
+    "costa-sul:pessoa:corima",
+    "costa-sul:pessoa:saha",
+    "costa-sul:pessoa:orun"
+  ],
+  "contagens": {
+    "nucleos": 5,
+    "oficios": 5,
+    "pessoas": 9,
+    "impactos": 6,
+    "fluxos": 6,
+    "acordos": 5,
+    "cenas": 6,
+    "arcos": 3
+  },
+  "nucleos": [
+    {
+      "id": "costa-mar:nucleo:mesa-do-sal",
+      "nome": "Mesa do Sal que Não Sobra",
+      "rotina_cotidiana": "Espaço informal possível de discussão de trabalho e circulação de alimentos em Portomonte, sem criar um mercado oficial.",
+      "tensao_politica": "Quando uma travessia atrasa, alguns exigem distribuir primeiro a produção futura; Gema recusa contabilizar uma colheita que não ocorreu.",
+      "referencias": [
+        "lugar:portomonte",
+        "costa-sul:espaco:pedra-molhada",
+        "costa-sul:pessoa:gema"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta_nao_canonica",
+      "territorio": "portomonte",
+      "local_confirmado": false,
+      "estrutura_oficial": false
+    },
+    {
+      "id": "costa-mar:nucleo:cordame-de-dois-donos",
+      "nome": "Cordame de Dois Donos",
+      "rotina_cotidiana": "Ponto hipotético de cooperação entre reparadores costeiros e navegadores viajantes; não há cais específico confirmado.",
+      "tensao_politica": "Uma mesma ferramenta é prometida ao reparo de abrigo, a uma viagem de resgate e a quem pretende cobrar proteção marítima.",
+      "referencias": [
+        "costa-sul:espaco:cordas",
+        "costa-sul:pessoa:salma",
+        "economia-mar:fluxo:ferragens"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-945"
+      ],
+      "estado": "proposta_nao_canonica",
+      "territorio": "portomonte",
+      "local_confirmado": false,
+      "estrutura_oficial": false
+    },
+    {
+      "id": "costa-mar:nucleo:varanda-das-mensagens",
+      "nome": "Varanda das Mensagens Incompletas",
+      "rotina_cotidiana": "Reunião provisória para ouvir viajantes tortles e tabaxis sobre mudanças nas águas, sem mapa público de suas ilhas.",
+      "tensao_politica": "Um comerciante reivindica a rota completa para provar atraso; revelar o trajeto pode comprometer quem acolheu os marinheiros.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "costa-sul:rede:casco",
+        "costa-sul:rede:volta"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-947"
+      ],
+      "estado": "proposta_nao_canonica",
+      "territorio": "ilhas_nao_individualizadas",
+      "local_confirmado": false,
+      "estrutura_oficial": false
+    },
+    {
+      "id": "costa-mar:nucleo:casa-da-tigela",
+      "nome": "Casa da Tigela Emprestada",
+      "rotina_cotidiana": "Abrigo coletivo temporário possível perto de atividades costeiras, sem afirmar um novo edifício de Portomonte.",
+      "tensao_politica": "A hospitalidade concorre com o trabalho e as provisões das famílias anfitriãs; cobrar dívidas de hóspedes pode transformá-los em dependentes.",
+      "referencias": [
+        "costa-sul:espaco:varal",
+        "costa-sul:pessoa:mara",
+        "fronteira:acordo:primeira-tigela"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-898"
+      ],
+      "estado": "proposta_nao_canonica",
+      "territorio": "costa_sul_itinerante",
+      "local_confirmado": false,
+      "estrutura_oficial": false
+    },
+    {
+      "id": "costa-mar:nucleo:roda-dos-lacres",
+      "nome": "Roda dos Lacres Contestados",
+      "rotina_cotidiana": "Espaço hipotético para leitura de declarações de carga, perdas e obrigações de travessia.",
+      "tensao_politica": "Um cobrador tenta usar o medo dos abissais para impor à costa um acordo que nenhuma família assinou.",
+      "referencias": [
+        "costa-sul:espaco:contas-agua",
+        "costa-sul:pessoa:antera",
+        "diplomacia-mar:tratado:livro-de-tributos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-936"
+      ],
+      "estado": "proposta_nao_canonica",
+      "territorio": "portomonte",
+      "local_confirmado": false,
+      "estrutura_oficial": false
+    }
+  ],
+  "oficios": [
+    {
+      "id": "costa-mar:oficio:costureiros-da-travessia",
+      "nome": "Costureiros da Travessia",
+      "rotina_cotidiana": "Profissionais hipotéticos da manutenção de lonas, cabos e recipientes entre viagens costeiras possíveis.",
+      "tensao_politica": "Se um grupo requisita reparos para proteção armada, outros trabalhos e a segurança de pescadores podem ficar atrasados.",
+      "referencias": [
+        "costa-sul:espaco:cordas",
+        "costa-sul:pessoa:salma"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-945"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "reparo",
+      "oficio_confirmado": false
+    },
+    {
+      "id": "costa-mar:oficio:testemunhas-das-cargas",
+      "nome": "Testemunhas das Cargas Desiguais",
+      "rotina_cotidiana": "Leitores e declarantes eventuais que comparam estado de bens e promessas, sem inventar alfândega portomontense.",
+      "tensao_politica": "Quem não domina o idioma de um contrato pode acabar devendo por um produto que nunca recebeu.",
+      "referencias": [
+        "costa-sul:pessoa:antera",
+        "fronteira:acordo:lacres-justos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-906"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "contratos",
+      "oficio_confirmado": false
+    },
+    {
+      "id": "costa-mar:oficio:contadores-da-lavoura",
+      "nome": "Contadores do Trabalho na Pedra",
+      "rotina_cotidiana": "Trabalhadores de cultivo tentam compartilhar observações sobre água ritual e manutenção, não estimativas de safra.",
+      "tensao_politica": "Uma promessa de mantimentos futuros é convertida em dívida atual sem que ninguém saiba o resultado do plantio.",
+      "referencias": [
+        "costa-sul:pessoa:gema",
+        "costa-sul:espaco:contas-agua"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "agricultura",
+      "oficio_confirmado": false
+    },
+    {
+      "id": "costa-mar:oficio:mensageiros-de-retorno",
+      "nome": "Mensageiros do Retorno Não Marcado",
+      "rotina_cotidiana": "Viajantes tortles e tabaxis trazem notícias e experiências de suas jornadas sazonais.",
+      "tensao_politica": "Uma autoridade exige itinerários completos em troca de segurança, ameaçando ilhas que lhes ofereceram abrigo.",
+      "referencias": [
+        "costa-sul:pessoa:corima",
+        "costa-sul:pessoa:saha"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-906"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "informacao",
+      "oficio_confirmado": false
+    },
+    {
+      "id": "costa-mar:oficio:amparadores-de-viagem",
+      "nome": "Amparadores de Viagem",
+      "rotina_cotidiana": "Famílias ou moradores podem preparar acolhimento e primeiros cuidados aos que regressam do mar, sem estabelecer instituição permanente.",
+      "tensao_politica": "Sem alimento ou alojamento garantido, o acolhimento pode ser reduzido a uma dívida contra quem chegou sem recursos.",
+      "referencias": [
+        "costa-sul:pessoa:mara",
+        "costa-sul:pratica:tigela"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-898"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "acolhimento",
+      "oficio_confirmado": false
+    }
+  ],
+  "pessoas": [
+    {
+      "id": "costa-mar:pessoa:gema",
+      "nome": "Gema da Falésia",
+      "rotina_cotidiana": "Cultivadora já proposta, preocupada com o que o templo de Deméter efetivamente viabiliza nas lavouras.",
+      "tensao_politica": "Uma cobrança por travessia vira promessa de alimento que não foi produzido; Gema se recusa a confundir milagre agrícola com potabilidade doméstica.",
+      "referencias": [
+        "costa-sul:pessoa:gema",
+        "costa-sul:espaco:pedra-molhada"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta_nao_canonica",
+      "reutiliza": "costa-sul:pessoa:gema",
+      "papel": "agricultora"
+    },
+    {
+      "id": "costa-mar:pessoa:antera",
+      "nome": "Antera dos Lacres Claros",
+      "rotina_cotidiana": "Leitora de contratos já proposta, explica cláusulas a pessoas que não as escreveram.",
+      "tensao_politica": "Uma assinatura pode ser invocada para cobrar descendentes ou obrigar um viajante a entregar outra pessoa como garantia.",
+      "referencias": [
+        "costa-sul:pessoa:antera",
+        "diplomacia-mar:tratado:livro-de-tributos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-936"
+      ],
+      "estado": "proposta_nao_canonica",
+      "reutiliza": "costa-sul:pessoa:antera",
+      "papel": "mediadora"
+    },
+    {
+      "id": "costa-mar:pessoa:mara",
+      "nome": "Mara das Duas Tigelas",
+      "rotina_cotidiana": "Cuidadora já proposta, reparte alimentação e abrigo enquanto contabiliza os recursos reais.",
+      "tensao_politica": "Aceitar viajantes sem condições pode deixar famílias locais desassistidas, mas expulsá-los pode entregá-los à perseguição.",
+      "referencias": [
+        "costa-sul:pessoa:mara",
+        "fronteira:acordo:primeira-tigela"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-898"
+      ],
+      "estado": "proposta_nao_canonica",
+      "reutiliza": "costa-sul:pessoa:mara",
+      "papel": "cuidadora"
+    },
+    {
+      "id": "costa-mar:pessoa:corima",
+      "nome": "Mestre Córima do Casco Verde",
+      "rotina_cotidiana": "Tortle já proposto, partilha técnicas e histórias de viagens sem comprometer refúgios insulares.",
+      "tensao_politica": "O conhecimento que ajudaria a provar a injustiça de um pedágio também pode revelar um mosteiro.",
+      "referencias": [
+        "costa-sul:pessoa:corima",
+        "lugar:ilhas-costa-sul"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-898"
+      ],
+      "estado": "proposta_nao_canonica",
+      "reutiliza": "costa-sul:pessoa:corima",
+      "papel": "viajante_tortle"
+    },
+    {
+      "id": "costa-mar:pessoa:saha",
+      "nome": "Sahá de Rota Nenhuma",
+      "rotina_cotidiana": "Tabaxi já proposta, registra aprendizados de jornadas e informações deliberadamente incompletas.",
+      "tensao_politica": "É acusada de esconder um caminho por interesse próprio quando na verdade protege quem lhe deu abrigo.",
+      "referencias": [
+        "costa-sul:pessoa:saha",
+        "costa-sul:rede:volta"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-908"
+      ],
+      "estado": "proposta_nao_canonica",
+      "reutiliza": "costa-sul:pessoa:saha",
+      "papel": "viajante_tabaxi"
+    },
+    {
+      "id": "costa-mar:pessoa:orun",
+      "nome": "Orun de Vigia Curta",
+      "rotina_cotidiana": "Marinheiro já proposto, avalia alertas costeiros sem transformar suspeita em condenação.",
+      "tensao_politica": "Um rumor sobre bloqueio abissal pode servir para confiscar ferramentas e afastar famílias rivais.",
+      "referencias": [
+        "costa-sul:pessoa:orun",
+        "costa-sul:espaco:sino"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-945"
+      ],
+      "estado": "proposta_nao_canonica",
+      "reutiliza": "costa-sul:pessoa:orun",
+      "papel": "marinheiro"
+    },
+    {
+      "id": "costa-mar:pessoa:talia",
+      "nome": "Tália das Tábuas Secas",
+      "rotina_cotidiana": "Reparadora costeira proposta, registra serviços prometidos em vez de inventários de materiais que ainda não viu.",
+      "tensao_politica": "Pode salvar uma travessia priorizando cordas e deixar uma moradia sem reparo no mesmo dia.",
+      "referencias": [
+        "costa-sul:espaco:cordas",
+        "costa-sul:pessoa:salma"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-945"
+      ],
+      "estado": "proposta_nao_canonica",
+      "reutiliza": null,
+      "papel": "reparadora"
+    },
+    {
+      "id": "costa-mar:pessoa:ehru",
+      "nome": "Ehru do Casco Virado",
+      "rotina_cotidiana": "Tortle viajante novo, carrega notícias de uma possível cobrança em águas que não sabe localizar com segurança.",
+      "tensao_politica": "Se divulgar a origem exata do relato, pode expor a ilha que lhe deu abrigo e ser acusado de inventá-lo caso omita.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "costa-sul:rede:casco"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-904"
+      ],
+      "estado": "proposta_nao_canonica",
+      "reutiliza": null,
+      "papel": "mensageiro_tortle"
+    },
+    {
+      "id": "costa-mar:pessoa:iara",
+      "nome": "Iara das Promessas Recontadas",
+      "rotina_cotidiana": "Moradora costeira nova que negocia apoio familiar e recolhe versões contraditórias de uma taxa proposta.",
+      "tensao_politica": "A família quer que aceite proteção abissal, mas o texto pode comprometer pessoas ainda não nascidas.",
+      "referencias": [
+        "lugar:portomonte",
+        "fronteira:acordo:primeira-tigela"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-936"
+      ],
+      "estado": "proposta_nao_canonica",
+      "reutiliza": null,
+      "papel": "representante_familiar"
+    }
+  ],
+  "impactos": [
+    {
+      "id": "costa-mar:impacto:taxa-de-pescaria",
+      "nome": "A Taxa Sobre a Pesca Ainda Não Feita",
+      "rotina_cotidiana": "Familias podem temer que uma potência abissal controle acesso a certas águas; a pesca local afetada não está confirmada.",
+      "tensao_politica": "Se o pedágio for exigido, trabalho, alimento e legitimidade dos acordos costeiros entram em disputa.",
+      "referencias": [
+        "economia-mar:fluxo:pesca",
+        "mar-sangue:pacto:tributo"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho": "Um cobrador exige pagamento por direito de pescar onde antes ninguém comprovou seu domínio.",
+      "efeito_em_cadeia": [
+        "Dúvida sobre direito de uso",
+        "Pressão sobre sustento e travessias",
+        "Conflito sobre representação comunitária"
+      ],
+      "contrapeso": "Exigir prova de proteção prestada e negociar acesso sem presumir produção.",
+      "ocorreu": false
+    },
+    {
+      "id": "costa-mar:impacto:reparos-retidos",
+      "nome": "Reparos Retidos Pela Escolta",
+      "rotina_cotidiana": "A necessidade hipotética de proteção no mar concorre com serviços cotidianos de reparo na costa.",
+      "tensao_politica": "A pressão por defesa pode prejudicar abrigo ou transporte mesmo quando nenhuma cidade é atacada.",
+      "referencias": [
+        "economia-mar:fluxo:ferragens",
+        "costa-sul:espaco:cordas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-945"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho": "Um comandante solicita prioridade exclusiva para reparar equipamentos de escolta.",
+      "efeito_em_cadeia": [
+        "Fila de reparos concorrentes",
+        "Pressão de famílias e marinheiros",
+        "Acordo sobre prioridades e compensações"
+      ],
+      "contrapeso": "Criar rodízio de serviços com participação de trabalhadores.",
+      "ocorreu": false
+    },
+    {
+      "id": "costa-mar:impacto:promessa-agua",
+      "nome": "A Água Prometida que Não É Potável",
+      "rotina_cotidiana": "Dúvida sobre distribuição de recursos cresce quando viajantes pedem auxílio a famílias agricultoras.",
+      "tensao_politica": "A purificação conhecida para lavoura não justifica assegurar água própria para beber.",
+      "referencias": [
+        "costa-sul:espaco:contas-agua",
+        "costa-sul:pessoa:gema"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho": "Uma autoridade promete bebida usando a água ritualmente preparada para plantio.",
+      "efeito_em_cadeia": [
+        "Conflito sobre recursos agrícolas",
+        "Risco de consumo sem verificação",
+        "Desconfiança nas lideranças"
+      ],
+      "contrapeso": "Verificar segurança da água e organizar socorro sem promessas falsas.",
+      "ocorreu": false
+    },
+    {
+      "id": "costa-mar:impacto:rota-revelada",
+      "nome": "A Rota que Vale Uma Família",
+      "rotina_cotidiana": "Conhecimento de correntes e caminhos insulares pode ser utilizado para socorro ou coerção.",
+      "tensao_politica": "Publicar itinerário em troca de proteção pode aumentar risco de captura nas ilhas.",
+      "referencias": [
+        "economia-mar:fluxo:avisos",
+        "diplomacia-mar:tratado:voz-sem-mapa"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-947"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho": "Um negociador exige um mapa integral para aceitar uma carga ou liberar viajantes.",
+      "efeito_em_cadeia": [
+        "Pressão sobre mensageiros",
+        "Exposição de locais protegidos",
+        "Ruptura da confiança entre ilhas"
+      ],
+      "contrapeso": "Oferecer testemunhos limitados e orientações presenciais consentidas.",
+      "ocorreu": false
+    },
+    {
+      "id": "costa-mar:impacto:acolhimento-em-divida",
+      "nome": "Hospitalidade Transformada em Dívida",
+      "rotina_cotidiana": "Famílias de passagem podem depender de abrigo temporário na costa sem ter como remunerar tudo.",
+      "tensao_politica": "Converter cuidado em obrigação hereditária reproduziria a dependência cultivada pela teocracia.",
+      "referencias": [
+        "costa-sul:pratica:tigela",
+        "diplomacia-mar:tratado:corpo-livre"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-898",
+        "movimento-povo:paragrafo-936"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho": "Um intermediário oferece provisões exigindo assinatura que vincula familiares ausentes.",
+      "efeito_em_cadeia": [
+        "Acolhimento imediato",
+        "Dívida com cláusulas coercitivas",
+        "Disputa sobre consentimento"
+      ],
+      "contrapeso": "Priorizar socorro voluntário e contratos com limites explícitos.",
+      "ocorreu": false
+    },
+    {
+      "id": "costa-mar:impacto:boato-bloqueio",
+      "nome": "O Bloqueio que Talvez Não Exista",
+      "rotina_cotidiana": "A mera notícia de um pedágio ou risco marítimo pode alterar decisões locais sem ocorrência comprovada.",
+      "tensao_politica": "Uma liderança pode concentrar bens ou acusar visitantes com base em ameaça não verificada.",
+      "referencias": [
+        "costa-sul:espaco:sino",
+        "economia-mar:fluxo:avisos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-945",
+        "movimento-povo:paragrafo-947"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho": "Uma mensagem incompleta anuncia que nenhuma viagem poderá sair.",
+      "efeito_em_cadeia": [
+        "Cancelamento preventivo de atividade",
+        "Acusação de responsáveis sem provas",
+        "Conflito sobre avisos públicos"
+      ],
+      "contrapeso": "Separar relato, evidência e preparação proporcional.",
+      "ocorreu": false
+    }
+  ],
+  "fluxos": [
+    {
+      "id": "costa-mar:fluxo:sal-e-ferragens",
+      "nome": "Ferragens Entre Costa e Mar",
+      "rotina_cotidiana": "Possibilidade de necessidades de reparo influírem na negociação costeira, não um comércio comprovado com cidades submarinas.",
+      "tensao_politica": "Oficina pode preferir demanda mais bem remunerada e deixar sua comunidade sem ferramentas.",
+      "referencias": [
+        "economia-mar:fluxo:ferragens",
+        "costa-sul:espaco:cordas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-945"
+      ],
+      "estado": "proposta_nao_canonica",
+      "origem": "costa-sul:espaco:cordas",
+      "destino": "economia-mar:polo:lastro",
+      "efetivado": false,
+      "quantidade_confirmada": false,
+      "setor": "reparo"
+    },
+    {
+      "id": "costa-mar:fluxo:noticias-correntes",
+      "nome": "Notícias que Alteram a Partida",
+      "rotina_cotidiana": "Mensagens sobre águas em mudança poderiam chegar às ilhas por viajantes; rota individual não está documentada.",
+      "tensao_politica": "Saber que um recife está ameaçado não significa saber qual caminho é seguro.",
+      "referencias": [
+        "economia-mar:fluxo:avisos",
+        "costa-sul:rede:volta"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-949"
+      ],
+      "estado": "proposta_nao_canonica",
+      "origem": "economia-mar:polo:passagem",
+      "destino": "costa-sul:rede:volta",
+      "efetivado": false,
+      "quantidade_confirmada": false,
+      "setor": "informacao"
+    },
+    {
+      "id": "costa-mar:fluxo:agua-agricola",
+      "nome": "A Água que Sustenta a Lavoura",
+      "rotina_cotidiana": "Uso agrícola ritual documentado em Portomonte inspira reflexão sobre trabalho e distribuição, sem pressupor água para beber.",
+      "tensao_politica": "Promessas de abastecimento humano não podem ser deduzidas do milagre agrícola.",
+      "referencias": [
+        "lugar:portomonte",
+        "costa-sul:espaco:contas-agua"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta_nao_canonica",
+      "origem": "costa-sul:espaco:pedra-molhada",
+      "destino": "costa-sul:espaco:contas-agua",
+      "efetivado": false,
+      "quantidade_confirmada": false,
+      "setor": "agricultura"
+    },
+    {
+      "id": "costa-mar:fluxo:abrigo-sazonal",
+      "nome": "Viagens e Abrigos Temporários",
+      "rotina_cotidiana": "Uma viagem sazonal pode levar pessoas e histórias aos assentamentos costeiros, sem data, caminho ou grupo individual confirmado.",
+      "tensao_politica": "A exposição de abrigo a cobradores pode atingir inocentes.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "costa-sul:pratica:tigela"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-898",
+        "movimento-povo:paragrafo-906"
+      ],
+      "estado": "proposta_nao_canonica",
+      "origem": "costa-sul:rede:casco",
+      "destino": "costa-sul:espaco:varal",
+      "efetivado": false,
+      "quantidade_confirmada": false,
+      "setor": "acolhimento"
+    },
+    {
+      "id": "costa-mar:fluxo:tributo-contestado",
+      "nome": "Cobrança Contestada nas Duas Águas",
+      "rotina_cotidiana": "A reivindicação abissal de taxas por passagem poderia alcançar viajantes da costa, sem demonstrar contrato efetivo em Portomonte.",
+      "tensao_politica": "Um preço exigido sem consentimento não comprova serviço ou autoridade legítima.",
+      "referencias": [
+        "mar-sangue:pacto:tributo",
+        "economia-mar:tributo:herdado"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "estado": "proposta_nao_canonica",
+      "origem": "economia-mar:polo:conchas",
+      "destino": "costa-sul:espaco:cordas",
+      "efetivado": false,
+      "quantidade_confirmada": false,
+      "setor": "tributo"
+    },
+    {
+      "id": "costa-mar:fluxo:pedido-socorro",
+      "nome": "Pedido de Socorro Sem Mapa",
+      "rotina_cotidiana": "Alertas entre águas azuis e vilas costeiras poderiam apoiar resgates sem cartografar esconderijos.",
+      "tensao_politica": "Uma guarda exige saber nomes antes de ajudar, colocando vulneráveis sob risco.",
+      "referencias": [
+        "economia-mar:fluxo:socorro",
+        "diplomacia-mar:tratado:voz-sem-mapa"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-945",
+        "movimento-povo:paragrafo-947"
+      ],
+      "estado": "proposta_nao_canonica",
+      "origem": "economia-mar:polo:passagem",
+      "destino": "costa-sul:espaco:varal",
+      "efetivado": false,
+      "quantidade_confirmada": false,
+      "setor": "socorro"
+    }
+  ],
+  "acordos": [
+    {
+      "id": "costa-mar:acordo:cobranca-com-prova",
+      "nome": "Cobrança Só Após Serviço Comprovado",
+      "rotina_cotidiana": "Protocolo possível para exigir evidência de proteção e consentimento antes de reconhecer tributo marítimo.",
+      "tensao_politica": "Impedir cobrança abusiva pode deixar sem financiamento uma proteção de fato prestada.",
+      "referencias": [
+        "diplomacia-mar:tratado:livro-de-tributos",
+        "costa-sul:pessoa:antera"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-936"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "costa-mar:pessoa:antera",
+        "costa-mar:pessoa:iara"
+      ],
+      "custo": "Testemunhas, tempo e possibilidade de suspensão de passagem.",
+      "condicao_ruptura": "Cobrança hereditária sem aceite.",
+      "vigente": false
+    },
+    {
+      "id": "costa-mar:acordo:reparo-compartilhado",
+      "nome": "Turno de Reparo Compartilhado",
+      "rotina_cotidiana": "Protocolo hipotético de prioridades entre famílias, marinheiros e defesa em caso de necessidade.",
+      "tensao_politica": "Repartir trabalho não elimina escassez de habilidades e ferramentas.",
+      "referencias": [
+        "costa-sul:espaco:cordas",
+        "diplomacia-mar:tratado:recifes-autonomos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-945"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "costa-mar:pessoa:talia",
+        "costa-mar:pessoa:orun"
+      ],
+      "custo": "Renunciar a prioridade individual em uma crise.",
+      "condicao_ruptura": "Requisição sem prazo e sem prestação de contas.",
+      "vigente": false
+    },
+    {
+      "id": "costa-mar:acordo:canto-sem-mapa",
+      "nome": "Notícia Pública, Rota Protegida",
+      "rotina_cotidiana": "Acordo possível entre mensageiros para divulgar risco e proteger o caminho de um refúgio.",
+      "tensao_politica": "A omissão pode dificultar a avaliação de um comerciante ou o socorro de desaparecidos.",
+      "referencias": [
+        "diplomacia-mar:tratado:voz-sem-mapa",
+        "costa-sul:rede:volta"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-947"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "costa-mar:pessoa:saha",
+        "costa-mar:pessoa:corima"
+      ],
+      "custo": "Aceitar notícias incompletas e instruções verificadas em pessoa.",
+      "condicao_ruptura": "Divulgação não autorizada de refúgios.",
+      "vigente": false
+    },
+    {
+      "id": "costa-mar:acordo:primeiro-socorro",
+      "nome": "Socorro Sem Dívida de Sangue",
+      "rotina_cotidiana": "Compromisso possível de prestar acolhimento básico sem vincular parentes ou descendentes a dívida.",
+      "tensao_politica": "O amparo depende de recursos reais, que podem se esgotar.",
+      "referencias": [
+        "fronteira:acordo:primeira-tigela",
+        "diplomacia-mar:tratado:corpo-livre"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-898",
+        "movimento-povo:paragrafo-936"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "costa-mar:pessoa:mara",
+        "costa-mar:pessoa:iara"
+      ],
+      "custo": "Alimento e cuidado disponibilizados por quem acolhe.",
+      "condicao_ruptura": "Exigência de garantia humana ou obrigação hereditária.",
+      "vigente": false
+    },
+    {
+      "id": "costa-mar:acordo:duvida-do-mar",
+      "nome": "Aviso Com Grau de Confiança",
+      "rotina_cotidiana": "Protocolo de separar notícia observada, inferência e rumor sobre bloqueios marítimos.",
+      "tensao_politica": "Um aviso prudente pode chegar tarde demais; um aviso exagerado pode destruir confiança.",
+      "referencias": [
+        "costa-sul:espaco:sino",
+        "economia-mar:fluxo:avisos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-945",
+        "movimento-povo:paragrafo-947"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "costa-mar:pessoa:orun",
+        "costa-mar:pessoa:ehru"
+      ],
+      "custo": "Trabalho de verificação e reconhecimento explícito do desconhecido.",
+      "condicao_ruptura": "Acusar pessoas com base em rumor.",
+      "vigente": false
+    }
+  ],
+  "cenas": [
+    {
+      "id": "costa-mar:cena:a-taxa-sem-peixe",
+      "nome": "A Taxa Sobre o Peixe que Não Veio",
+      "rotina_cotidiana": "Ehru chega com notícia de um pedágio; nenhuma captura de peixe ou obrigação local foi comprovada.",
+      "tensao_politica": "Iara quer pagar para evitar risco, Antera exige ver o contrato; marinheiros temem perder oportunidade de trabalho.",
+      "referencias": [
+        "economia-mar:fluxo:pesca",
+        "costa-sul:pessoa:antera"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "costa-mar:pessoa:ehru",
+        "costa-mar:pessoa:iara",
+        "costa-mar:pessoa:antera"
+      ],
+      "nucleo": "costa-mar:nucleo:roda-dos-lacres",
+      "escolhas": [
+        "Verificar a origem da cobrança",
+        "Negociar proteção sem aceitar dívida hereditária",
+        "Recusar a taxa e planejar segurança coletiva"
+      ],
+      "se_ignorarem": "Um intermediário poderá declarar a dívida devida sem respaldo da comunidade."
+    },
+    {
+      "id": "costa-mar:cena:as-cordas-que-faltam",
+      "nome": "As Cordas que Faltam",
+      "rotina_cotidiana": "Tália reúne materiais para reparar instrumentos e recebe pedido urgente de proteção da travessia.",
+      "tensao_politica": "Orun defende preparação, mas famílias querem manter seus reparos cotidianos.",
+      "referencias": [
+        "costa-sul:espaco:cordas",
+        "economia-mar:fluxo:ferragens"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-945"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "costa-mar:pessoa:talia",
+        "costa-mar:pessoa:orun"
+      ],
+      "nucleo": "costa-mar:nucleo:cordame-de-dois-donos",
+      "escolhas": [
+        "Negociar escala de trabalhos",
+        "Exigir devolução de peças",
+        "Buscar ajuda sem ceder controle da oficina"
+      ],
+      "se_ignorarem": "O atraso pode fragilizar a comunidade ou a viagem, sem que se saiba qual risco prevalecerá."
+    },
+    {
+      "id": "costa-mar:cena:a-mesa-sem-agua",
+      "nome": "A Mesa da Água que Não se Bebe",
+      "rotina_cotidiana": "Uma viajante pede água para consumo e alguém oferece o recurso purificado para lavoura como se fosse potável.",
+      "tensao_politica": "Gema precisa separar solidariedade de promessa irresponsável; Mara teme faltar ajuda.",
+      "referencias": [
+        "lugar:portomonte",
+        "costa-sul:espaco:contas-agua"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "costa-mar:pessoa:gema",
+        "costa-mar:pessoa:mara"
+      ],
+      "nucleo": "costa-mar:nucleo:mesa-do-sal",
+      "escolhas": [
+        "Verificar a água antes de oferecer como bebida",
+        "Procurar alternativa de socorro",
+        "Explicar limites do milagre agrícola"
+      ],
+      "se_ignorarem": "A confiança no templo poderá ser abalada por dano evitável."
+    },
+    {
+      "id": "costa-mar:cena:o-mapa-pedido",
+      "nome": "O Mapa Exigido como Pedágio",
+      "rotina_cotidiana": "Sahá e Córima são pressionados a divulgar rota de uma ilha em troca de passagem segura para terceiros.",
+      "tensao_politica": "Proteger o esconderijo pode tornar um resgate mais difícil; revelar tudo expõe anfitriões.",
+      "referencias": [
+        "costa-sul:rede:casco",
+        "economia-mar:fluxo:avisos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-947"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "costa-mar:pessoa:saha",
+        "costa-mar:pessoa:corima"
+      ],
+      "nucleo": "costa-mar:nucleo:varanda-das-mensagens",
+      "escolhas": [
+        "Negociar testemunho parcial",
+        "Propor guia consentido",
+        "Recusar revelar a ilha e buscar outra mediação"
+      ],
+      "se_ignorarem": "A exigência pode converter conhecimento cultural em ferramenta de perseguição."
+    },
+    {
+      "id": "costa-mar:cena:um-prato-uma-assinatura",
+      "nome": "Um Prato, Uma Assinatura",
+      "rotina_cotidiana": "Mara acolhe uma pessoa deslocada e um intermediário oferece sustento em troca de uma dívida para parentes ausentes.",
+      "tensao_politica": "A família precisa de ajuda imediata e corre o risco de aceitar exploração futura.",
+      "referencias": [
+        "costa-sul:pratica:tigela",
+        "diplomacia-mar:tratado:corpo-livre"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-898",
+        "movimento-povo:paragrafo-936"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "costa-mar:pessoa:mara",
+        "costa-mar:pessoa:iara",
+        "costa-mar:pessoa:antera"
+      ],
+      "nucleo": "costa-mar:nucleo:casa-da-tigela",
+      "escolhas": [
+        "Garantir socorro sem assinatura coercitiva",
+        "Investigar cláusulas",
+        "Organizar apoio voluntário"
+      ],
+      "se_ignorarem": "O acolhimento poderá ser convertido em dívida que ninguém consentiu."
+    },
+    {
+      "id": "costa-mar:cena:o-sino-e-a-taxa",
+      "nome": "O Sino que Cobrou Tributo",
+      "rotina_cotidiana": "Orun recebe notícia de bloqueio não verificado e um comerciante exige recolher ferramentas para financiar proteção.",
+      "tensao_politica": "Uma decisão precipitada pode ferir famílias; ignorar uma ameaça real também pode ser grave.",
+      "referencias": [
+        "costa-sul:espaco:sino",
+        "economia-mar:fluxo:avisos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-945",
+        "movimento-povo:paragrafo-947"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "costa-mar:pessoa:orun",
+        "costa-mar:pessoa:ehru"
+      ],
+      "nucleo": "costa-mar:nucleo:roda-dos-lacres",
+      "escolhas": [
+        "Separar fato de rumor",
+        "Preparar resposta civil proporcional",
+        "Contestar apreensões sem prova"
+      ],
+      "se_ignorarem": "O medo pode concentrar recursos antes de qualquer perigo ser confirmado."
+    }
+  ],
+  "arcos": [
+    {
+      "id": "costa-mar:arco:direito-de-passar",
+      "nome": "Quem Pode Cobrar pelo Mar?",
+      "rotina_cotidiana": "Um rumor de tributo se transforma em demanda para que Portomonte aceite um acordo de proteção.",
+      "tensao_politica": "A cidade conhece comércio costeiro, mas não há contrato atual documentado com uma potência abissal.",
+      "referencias": [
+        "economia-mar:fluxo:pesca",
+        "diplomacia-mar:tratado:livro-de-tributos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "costa-mar:cena:a-taxa-sem-peixe",
+        "costa-mar:cena:o-sino-e-a-taxa"
+      ],
+      "decisao_central": "Se, quando e por quem uma comunidade pode aceitar obrigações de travessia."
+    },
+    {
+      "id": "costa-mar:arco:o-valor-do-refugio",
+      "nome": "O Preço de Uma Ilha que Não se Vende",
+      "rotina_cotidiana": "Viajantes insulares e anfitriões costeiros discutem quais informações podem circular como condição para proteção.",
+      "tensao_politica": "Mapas e cantos guardam a vida cultural das ilhas, não apenas valor comercial.",
+      "referencias": [
+        "costa-sul:rede:volta",
+        "diplomacia-mar:tratado:voz-sem-mapa"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-947"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "costa-mar:cena:o-mapa-pedido",
+        "costa-mar:cena:um-prato-uma-assinatura"
+      ],
+      "decisao_central": "Qual informação proteger, quem consultar e quem custear o acolhimento."
+    },
+    {
+      "id": "costa-mar:arco:oficios-sem-correntes",
+      "nome": "O Trabalho que Não Deve Correntes",
+      "rotina_cotidiana": "Reparadores, agricultores e cuidadores enfrentam demandas concorrentes de abastecimento e defesa.",
+      "tensao_politica": "A coerção pode parecer uma solução rápida e criar dependência duradoura.",
+      "referencias": [
+        "economia-mar:arco:oficios",
+        "costa-sul:espaco:pedra-molhada"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-945"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "costa-mar:cena:as-cordas-que-faltam",
+        "costa-mar:cena:a-mesa-sem-agua"
+      ],
+      "decisao_central": "Como proteger as comunidades sem impor trabalho compulsório ou inventar produção."
+    }
+  ],
+  "limites_editoriais": [
+    "Nenhuma taxa específica, bloqueio, tratado, ataque ou comércio direto com cidade submarina ocorreu em Portomonte por causa deste dossiê.",
+    "Os cinco núcleos são espaços de encontro propostos, não bairros ou edifícios que já existam no atlas factual.",
+    "Os fluxos são hipóteses não efetivadas, sem carga, preço, data, extensão, volume ou rota cartografada.",
+    "As seis pressões econômicas são gatilhos possíveis; suas consequências não são automáticas e dependem de ações na mesa.",
+    "Água purificada para agricultura não implica potabilidade doméstica nem excedentes alimentares.",
+    "Nenhuma ilha foi individualizada, e não se confirma presença de refugiados de Eldroth especificamente em Portomonte.",
+    "Escravidão, tráfico e captura de pessoas são abusos, nunca preço legítimo ou mercadoria contabilizada.",
+    "Abissais marinhos não são demônios do Abismo, nem toda pessoa de um povo concorda com seus líderes.",
+    "Os movimentos do Hack inspiram contextos socioculturais, sem conceder habilidades a NPCs automaticamente."
+  ],
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false
+}
