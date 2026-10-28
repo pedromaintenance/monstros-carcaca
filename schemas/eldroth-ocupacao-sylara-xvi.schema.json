@@ -1,0 +1,555 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XVI — Ocupação de Eldroth, hipóteses sem aprovação",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estado": {
+      "const": "hipoteses_de_worldbuilding_pendentes_de_revisao"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "aplicar_ao_canon_automaticamente": {
+      "const": false
+    },
+    "regiao_id": {
+      "const": "regiao:eldroth"
+    },
+    "lugar_id": {
+      "const": "lugar:eldroth"
+    },
+    "fonte_principal": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "passado_referenciado": {
+      "const": "data/worldbuilding/eldroth-preconquista-ciclo15.json"
+    },
+    "atlas_referenciado": {
+      "const": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json"
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "pagina": {
+            "type": "integer",
+            "enum": [
+              5,
+              7,
+              9,
+              16,
+              17
+            ]
+          },
+          "afirmacao_no_manuscrito": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estatuto": {
+            "const": "referencia_de_rascunho_nao_promovida"
+          }
+        },
+        "required": [
+          "pagina",
+          "afirmacao_no_manuscrito",
+          "estatuto"
+        ]
+      }
+    },
+    "limites_editoriais": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "resumo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "mecanismos": {
+          "const": 8
+        },
+        "posicoes_sociais": {
+          "const": 6
+        },
+        "modelos_de_regime": {
+          "const": 3
+        },
+        "dilemas": {
+          "const": 4
+        },
+        "vinhetas": {
+          "const": 4
+        },
+        "politicas_confirmadas": {
+          "const": 0
+        }
+      },
+      "required": [
+        "mecanismos",
+        "posicoes_sociais",
+        "modelos_de_regime",
+        "dilemas",
+        "vinhetas",
+        "politicas_confirmadas"
+      ]
+    },
+    "mecanismos": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvi:mecanismo:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pratica_xv_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xv:pratica:"
+          },
+          "dominio": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "hipotese_institucional_nao_confirmada"
+          },
+          "conversao_proposta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "consequencia_material_proposta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "discurso_legitimador_possivel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_conflitiva": {
+            "type": "string",
+            "minLength": 1
+          },
+          "agencia_local_possivel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fontes_contextuais": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "pagina": {
+                  "type": "integer",
+                  "enum": [
+                    5,
+                    7,
+                    9,
+                    16,
+                    17
+                  ]
+                },
+                "afirmacao_no_manuscrito": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "estatuto": {
+                  "const": "referencia_de_rascunho_nao_promovida"
+                }
+              },
+              "required": [
+                "pagina",
+                "afirmacao_no_manuscrito",
+                "estatuto"
+              ]
+            }
+          },
+          "politica_sylara_confirmada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "orgao_administrativo_confirmado": {
+            "type": "null"
+          },
+          "quantidade_confirmada": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "pratica_xv_id",
+          "dominio",
+          "estado",
+          "conversao_proposta",
+          "consequencia_material_proposta",
+          "discurso_legitimador_possivel",
+          "pergunta_conflitiva",
+          "agencia_local_possivel",
+          "fontes_contextuais",
+          "politica_sylara_confirmada",
+          "ocorreu",
+          "orgao_administrativo_confirmado",
+          "quantidade_confirmada"
+        ]
+      }
+    },
+    "posicoes_sociais": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvi:posicao:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "campo_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "rotina_possivel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dilema": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cautela_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte_contextual": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "pagina": {
+                "type": "integer",
+                "enum": [
+                  5,
+                  7,
+                  9,
+                  16,
+                  17
+                ]
+              },
+              "afirmacao_no_manuscrito": {
+                "type": "string",
+                "minLength": 1
+              },
+              "estatuto": {
+                "const": "referencia_de_rascunho_nao_promovida"
+              }
+            },
+            "required": [
+              "pagina",
+              "afirmacao_no_manuscrito",
+              "estatuto"
+            ]
+          },
+          "estado": {
+            "const": "posicao_social_exploratoria"
+          },
+          "pessoa_especifica_confirmada": {
+            "const": false
+          },
+          "quantidade_confirmada": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "campo_social",
+          "rotina_possivel",
+          "dilema",
+          "cautela_editorial",
+          "fonte_contextual",
+          "estado",
+          "pessoa_especifica_confirmada",
+          "quantidade_confirmada"
+        ]
+      }
+    },
+    "modelos_de_regime": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvi:modelo:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "alternativa_nao_adotada"
+          },
+          "hipotese_de_regime": {
+            "type": "string",
+            "minLength": 1
+          },
+          "implicacao_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limite_documental": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fontes_contextuais": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "pagina": {
+                  "type": "integer",
+                  "enum": [
+                    5,
+                    7,
+                    9,
+                    16,
+                    17
+                  ]
+                },
+                "afirmacao_no_manuscrito": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "estatuto": {
+                  "const": "referencia_de_rascunho_nao_promovida"
+                }
+              },
+              "required": [
+                "pagina",
+                "afirmacao_no_manuscrito",
+                "estatuto"
+              ]
+            }
+          },
+          "orgao_ou_politica_historica_confirmada": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "estado",
+          "hipotese_de_regime",
+          "implicacao_social",
+          "limite_documental",
+          "fontes_contextuais",
+          "orgao_ou_politica_historica_confirmada"
+        ]
+      }
+    },
+    "dilemas": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvi:dilema:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tema": {
+            "type": "string",
+            "minLength": 1
+          },
+          "situacao_hipotetica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "custos_potenciais": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_sem_resposta_certa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mecanismo_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvi:mecanismo:"
+          },
+          "posicao_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvi:posicao:"
+          },
+          "estado": {
+            "const": "dilema_ficcional_nao_ocorrido"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "efeito_na_cronologia": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "tema",
+          "situacao_hipotetica",
+          "custos_potenciais",
+          "pergunta_sem_resposta_certa",
+          "mecanismo_id",
+          "posicao_id",
+          "estado",
+          "ocorreu",
+          "efeito_na_cronologia"
+        ]
+      }
+    },
+    "vinhetas": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvi:vinheta:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cena_condicional": {
+            "type": "string",
+            "minLength": 1
+          },
+          "textura_cotidiana": {
+            "type": "string",
+            "minLength": 1
+          },
+          "mecanismo_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvi:mecanismo:"
+          },
+          "estado": {
+            "const": "vinheta_literaria_hipotetica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "novo_lugar_confirmado": {
+            "const": false
+          },
+          "personagem_canonico_novo": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "cena_condicional",
+          "textura_cotidiana",
+          "mecanismo_id",
+          "estado",
+          "ocorreu",
+          "novo_lugar_confirmado",
+          "personagem_canonico_novo"
+        ]
+      }
+    },
+    "decisoes_para_autor": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvi:questao:"
+          },
+          "pergunta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "pendente"
+          }
+        },
+        "required": [
+          "id",
+          "pergunta",
+          "estado"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "aplicar_ao_canon_automaticamente",
+    "regiao_id",
+    "lugar_id",
+    "fonte_principal",
+    "passado_referenciado",
+    "atlas_referenciado",
+    "fatos_documentados",
+    "limites_editoriais",
+    "resumo",
+    "mecanismos",
+    "posicoes_sociais",
+    "modelos_de_regime",
+    "dilemas",
+    "vinhetas",
+    "decisoes_para_autor"
+  ]
+}
