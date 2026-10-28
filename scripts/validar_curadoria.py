@@ -2353,6 +2353,80 @@ def validar_fronteira_caatinga_costa_sul():
             "Não suprimir ressalvas sobre água e comércio.")
     print("Fronteira Caatinga–Costa Sul: 34 propostas, 6 categorias, 0 eventos/rotas canonizados.")
 
+
+def validar_povoamento_costa_sul():
+    """Confere propostas sociais sem inventar fontes, rotas ou instituições canônicas."""
+    obj=load("data/propostas/portomonte-ilhas-costa-sul-hack.json")
+    expected={"espacos":6,"redes":3,"pessoas":8,"praticas":4,
+              "circulacoes":4,"cenas":5,"tramas":3}
+    require(obj["regiao_id"]=="regiao:costa-sul"
+            and obj["estado"]=="propostas_narrativas_nao_canonicas"
+            and obj["aprovacao_autoral"] is False
+            and obj["efeito_automatico_no_canon"] is False,
+            "Propostas da Costa Sul foram indevidamente canonizadas.")
+    require(obj["contagens"]==expected
+            and all(len(obj[k])==n for k,n in expected.items()),
+            "Contagens do povoamento da Costa Sul incompletas.")
+    all_rows=[r for k in expected for r in obj[k]]
+    ids={r["id"] for r in all_rows}
+    require(len(all_rows)==len(ids)==33 and
+            all(r["estado"]=="proposta" and r["id"].startswith("costa-sul:")
+                for r in all_rows),"IDs de povoamento ausentes ou duplicados.")
+    inv=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")["movimentos"]
+    povo=load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]
+    move_ids={m["id"] for m in inv+povo}
+    places={r["id"] for r in load("data/lugares_carcaca.json")["lugares"]}
+    seeds={r["id"] for r in load("data/propostas/povoamento-regional-hack-carcaca.json")["sementes"]}
+    frontier=load("data/propostas/fronteira-caatinga-costa-sul-hack.json")
+    front_ids={r["id"] for k in ("encontros","pessoas","acordos","fluxos","cenas","tramas")
+               for r in frontier[k]}
+    caat=load("data/propostas/caatinga-rede-social-hack.json")
+    caat_ids={r["id"] for k in ("comunidades","coletivos","pessoas","pontos_agua",
+                               "rotas","conflitos","cenas") for r in caat[k]}
+    allowed_refs=places|seeds|front_ids|caat_ids|{"regiao:caatinga","regiao:costa-sul"}
+    people_ids={p["id"] for p in obj["pessoas"]}
+    scenario_ids={x["id"] for x in obj["espacos"]+obj["redes"]}
+    for row in all_rows:
+        require(bool(row["nome"]) and bool(row["cotidiano"]) and bool(row["conflito"]),
+                "Povoamento requer identidade e tensão social.")
+        require(1<=len(row["movimentos_inspiradores"])<=4
+                and all(x in move_ids for x in row["movimentos_inspiradores"]),
+                "Inspiração fora do Hack.")
+        require(all(x in allowed_refs for x in row["referencias"]),
+                "Referência externa não encontrada: "+row["id"])
+    for p in obj["pessoas"]:
+        require(p["reutiliza"] is None or p["reutiliza"] in front_ids,
+                "Personagem recorrente sem vínculo com ficha anterior.")
+    require(sum(bool(p["reutiliza"]) for p in obj["pessoas"])==5,
+            "Cinco personagens anteriores devem ser reutilizados, não duplicados.")
+    for r in obj["espacos"]:
+        require(r["localizacao_confirmada"] is False,
+                "Espaço proposto não pode tornar-se bairro geolocalizado.")
+    for r in obj["redes"]:
+        require(r["ilha_confirmada"] is False
+                and r["rota_confirmada"] is False
+                and r["coabitacao_confirmada"] is False,
+                "Rede insular inventou ilha, rota ou comunidade comum.")
+    for r in obj["praticas"]:
+        require(all(x in people_ids for x in r["participantes"]),
+                "Prática remete a pessoa inexistente.")
+    for r in obj["circulacoes"]:
+        require(r["fluxo_confirmado"] is False,
+                "Comércio proposto virou fato sem homologação.")
+    for r in obj["cenas"]:
+        require(r["local_id"] in scenario_ids
+                and all(x in people_ids for x in r["pessoas_ids"])
+                and len(r["escolhas"])>=3,
+                "Cena sem local, personagens ou decisões.")
+    for r in obj["tramas"]:
+        require(all(x in ids for x in r["pontos"]),
+                "Trama sem elemento de origem no ciclo.")
+    facts=" ".join(obj["fatos_documentados"]+obj["limites_editoriais"]).lower()
+    require("potabilidade" in facts and "deméter" in facts
+            and "eldroth" in facts and "portomonte" in facts,
+            "Costa Sul perdeu limites factuais de água, culto ou refugiados.")
+    print("Costa Sul IV: 33 propostas, 7 categorias, 8 NPCs, ilhas não individualizadas; zero alterações canônicas.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2468,6 +2542,7 @@ def main():
     validar_povoamento_narrativo_hack()
     validar_rede_social_caatinga()
     validar_fronteira_caatinga_costa_sul()
+    validar_povoamento_costa_sul()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

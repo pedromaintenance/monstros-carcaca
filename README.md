@@ -407,3 +407,10 @@ As regras do Hack orientam valores e práticas, não autorizam efeitos nem prova
 Uma rede **não canônica** de **34 elementos propostos** conecta sociedades do interior e da Costa Sul: cinco encontros de passagem, nove personagens, cinco pactos negociáveis, seis fluxos condicionais, seis cenas e três tramas. As referências às classes e povos do Hack servem de inspiração para costumes e conflitos, não de autorização mecânica. A água do templo de Deméter é comprovadamente purificada para lavoura, não para beber; comércio direto com a Caatinga não está confirmado e ataques regionais não comprovam evento específico em Portomonte.
 
 Fonte `data/propostas/fronteira-caatinga-costa-sul-hack.json`, documentação [Fronteira Caatinga/Costa Sul](docs/FRONTEIRA_CAATINGA_COSTA_SUL.md), API `getFrontierCaatingaCostaSul` e `searchFrontierEntities`.
+
+
+## Costa Sul — Portomonte e tradições insulares (Povoamento IV)
+
+**33 elementos sociais propostos:** seis microespaços em Portomonte, três redes insulares não individualizadas, oito personagens (cinco de ciclos anteriores), quatro práticas sociais, quatro circulações hipotéticas, cinco cenas e três tramas de campanha. Dados em `data/propostas/portomonte-ilhas-costa-sul-hack.json`; publicação `dist/carcaca/costa-sul-social-fabric.json` e índices; API `getCostaSulSocialFabric` e `searchCostaSulEntities`. Dossiê: [Portomonte e as Ilhas](docs/PORTOMONTE_ILHAS_POVOAMENTO_CICLO4.md).
+
+A água de Deméter está documentada para lavouras e não implica potabilidade doméstica; ilhas, rotas, movimentos atribuídos a NPCs, comércio específico e acolhimento de refugiados em Portomonte não foram estabelecidos como cânone.

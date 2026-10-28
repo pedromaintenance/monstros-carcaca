@@ -60,6 +60,30 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getCostaSulSocialFabric(){return byKey("costa_sul_social_fabric");}
+  async function getCostaSulSocialFabricIndexes(){return byKey("costa_sul_social_fabric_indexes");}
+  async function getCostaSulEntity(id){
+    if(typeof id!=="string"||!id.startsWith("costa-sul:"))return null;
+    const d=await getCostaSulSocialFabric();
+    for(const categoria of ["espacos","redes","pessoas","praticas","circulacoes","cenas","tramas"]){
+      const found=d[categoria].find(x=>x.id===id);
+      if(found)return {...found,categoria};
+    }
+    return null;
+  }
+  async function searchCostaSulEntities({categoria,escopo,movimentoHack,referencia,localId,query}={}){
+    const d=await getCostaSulSocialFabric();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const all=["espacos","redes","pessoas","praticas","circulacoes","cenas","tramas"]
+      .flatMap(k=>d[k].map(x=>({...x,categoria:k})));
+    return all.filter(x=>
+      (!categoria||x.categoria===categoria)&&
+      (!escopo||x.escopo===escopo)&&
+      (!movimentoHack||(x.movimentos_inspiradores??[]).includes(movimentoHack))&&
+      (!referencia||(x.referencias??[]).includes(referencia))&&
+      (!localId||x.local_id===localId)&&
+      (!query||norm([x.nome,x.cotidiano,x.conflito].join(" ")).includes(norm(query))));
+  }
   async function getFrontierCaatingaCostaSul(){return byKey("frontier_caatinga_costa_sul");}
   async function getFrontierCaatingaCostaSulIndexes(){return byKey("frontier_caatinga_costa_sul_indexes");}
   async function getFrontierEntity(id){
@@ -1061,6 +1085,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCaatingaSocialNetwork,getCaatingaSocialIndexes,getCaatingaEntity,searchCaatingaEntities,
           getFrontierCaatingaCostaSul,getFrontierCaatingaCostaSulIndexes,
           getFrontierEntity,searchFrontierEntities,
+          getCostaSulSocialFabric,getCostaSulSocialFabricIndexes,
+          getCostaSulEntity,searchCostaSulEntities,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,

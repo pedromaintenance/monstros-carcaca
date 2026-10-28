@@ -248,6 +248,29 @@ def build():
     povoamento_proposto=load("data/propostas/povoamento-regional-hack-carcaca.json")
     caatinga_rede_social=load("data/propostas/caatinga-rede-social-hack.json")
     fronteira=load("data/propostas/fronteira-caatinga-costa-sul-hack.json")
+    costa_sul=load("data/propostas/portomonte-ilhas-costa-sul-hack.json")
+    categorias_costa=("espacos","redes","pessoas","praticas","circulacoes","cenas","tramas")
+    entidades_costa=[
+        {**entry,"categoria":categoria}
+        for categoria in categorias_costa for entry in costa_sul[categoria]
+    ]
+    def indexar_costa(campo):
+        mapping=defaultdict(set)
+        for item in entidades_costa:
+            vals=item.get(campo,[])
+            vals=vals if isinstance(vals,list) else [vals]
+            for val in vals:
+                if val: mapping[str(val)].add(item["id"])
+        return {key:sorted(value) for key,value in sorted(mapping.items())}
+    indices_costa={
+        "by_categoria":indexar_costa("categoria"),
+        "by_movimento_hack":indexar_costa("movimentos_inspiradores"),
+        "by_referencia":indexar_costa("referencias"),
+        "by_escopo":indexar_costa("escopo"),
+        "by_local_de_cena":indexar_costa("local_id")
+    }
+    if len(entidades_costa)!=33 or len(indices_costa["by_categoria"])!=7:
+        raise ValueError("Costa Sul: 33 entidades em sete categorias esperadas")
     tipos_fronteira=("encontros","pessoas","acordos","fluxos","cenas","tramas")
     elementos_fronteira=[
       {"tipo":tipo,**elemento}
@@ -611,6 +634,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "costa_sul_social_fabric":"costa-sul-social-fabric.json",
+        "costa_sul_social_fabric_indexes":"costa-sul-social-fabric-indexes.json",
         "frontier_caatinga_costa_sul":"frontier-caatinga-costa-sul.json",
         "frontier_caatinga_costa_sul_indexes":"frontier-caatinga-costa-sul-indexes.json",
         "caatinga_social_network":"caatinga-social-network.json",
@@ -717,6 +742,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_entidades_costa_sul_propostas":len(entidades_costa),
+        "total_espacos_costa_sul_propostos":len(costa_sul["espacos"]),
+        "total_redes_insulares_propostas":len(costa_sul["redes"]),
+        "total_pessoas_costa_sul_propostas":len(costa_sul["pessoas"]),
         "total_entidades_fronteira_propostas":len(elementos_fronteira),
         "total_encontros_fronteira_propostos":len(fronteira["encontros"]),
         "total_pessoas_fronteira_propostas":len(fronteira["pessoas"]),
@@ -810,6 +839,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["costa_sul_social_fabric"]:costa_sul,
+           files["costa_sul_social_fabric_indexes"]:indices_costa,
            files["frontier_caatinga_costa_sul"]:fronteira,
            files["frontier_caatinga_costa_sul_indexes"]:indice_fronteira,
            files["caatinga_social_network"]:caatinga_rede_social,
