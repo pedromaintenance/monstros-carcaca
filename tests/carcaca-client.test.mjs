@@ -75,7 +75,9 @@ const fixtures={
     hack_sorcerer_movements:"hack-sorcerer-movements.json",
     hack_sorcerer_movement_indexes:"hack-sorcerer-movement-indexes.json",
     hack_warlock_movements:"hack-warlock-movements.json",
-    hack_warlock_movement_indexes:"hack-warlock-movement-indexes.json"}},
+    hack_warlock_movement_indexes:"hack-warlock-movement-indexes.json",
+    hack_necromancer_movements:"hack-necromancer-movements.json",
+    hack_necromancer_movement_indexes:"hack-necromancer-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -126,6 +128,42 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-necromancer-movements.json":[
+    {id:"movimento-classe:paragrafo-2582",titulo:"ANIMAR OS MORTOS",grupo:"NECROMANTE",
+     requisito_literal:null,requisito_estruturado:null,
+     opcoes:[{paragrafo_docx:2583,texto:"executar uma tarefa;"}],
+     texto_original:"Quando devolver movimento a um cadáver.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2596",titulo:"NOME DO MORTO",grupo:"NECROMANTE",
+     requisito_literal:null,requisito_estruturado:null,
+     opcoes:[],texto_original:"Quando recordar o nome verdadeiro.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2598",titulo:"COLHEITA DE OSSOS",grupo:"NECROMANTE",
+     requisito_literal:null,requisito_estruturado:null,
+     opcoes:[],texto_original:"Quando recolher ossos.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2599",titulo:"LEGIÃO DOS SEM NOME",grupo:"NECROMANTE",
+     requisito_literal:"Animar os Mortos",
+     requisito_estruturado:{tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2582"},
+     opcoes:[],texto_original:"Quando controlar um grupo.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2616",titulo:"LEVANTE-SE COMO VOCÊ MESMO",grupo:"NECROMANTE",
+     requisito_literal:"Animar os Mortos e Nome do Morto",
+     requisito_estruturado:{tipo:"todos",operador_literal:"e",itens:[
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2582",titulo_requerido:"ANIMAR OS MORTOS"},
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2596",titulo_requerido:"NOME DO MORTO"}
+     ]},opcoes:[],texto_original:"Quando devolver movimento a alguém.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2617",titulo:"ABOMINAÇÃO COSTURADA",grupo:"NECROMANTE",
+     requisito_literal:"Animar os Mortos e Colheita de Ossos",
+     requisito_estruturado:{tipo:"todos",operador_literal:"e",itens:[
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2582",titulo_requerido:"ANIMAR OS MORTOS"},
+       {tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2598",titulo_requerido:"COLHEITA DE OSSOS"}
+     ]},opcoes:[],texto_original:"Quando construir um cadáver.",aplicacao_canonica:false}
+  ],
+  "hack-necromancer-movement-indexes.json":{
+    by_requisito_tipo:{movimento_exato:["movimento-classe:paragrafo-2599"],
+      todos:["movimento-classe:paragrafo-2616","movimento-classe:paragrafo-2617"]},
+    by_requisito_id:{
+      "movimento-classe:paragrafo-2582":[
+        "movimento-classe:paragrafo-2599","movimento-classe:paragrafo-2616","movimento-classe:paragrafo-2617"],
+      "movimento-classe:paragrafo-2596":["movimento-classe:paragrafo-2616"],
+      "movimento-classe:paragrafo-2598":["movimento-classe:paragrafo-2617"]}},
   "hack-warlock-movements.json":[
     {id:"movimento-classe:paragrafo-2454",titulo:"PACTO",grupo:"BRUXO",
      requisito_literal:null,requisito_estruturado:null,opcoes:[],
@@ -1854,4 +1892,40 @@ test("Bruxo preserva cinco tradições, Sabá independente e REQUER em cadeia",a
   assert.equal(await atlas.getWarlockRequirementPreview("movimento-classe:paragrafo-99999"),null);
   await assert.rejects(()=>atlas.getWarlockRequirementPreview(id,{
     movimentosPossuidos:"invalido"}),TypeError);
+});
+
+
+
+test("Necromante: dois REQUER cumulativos exigem ambos os movimentos",async()=>{
+  const all=await atlas.getNecromancerMovements();
+  assert.equal(all.length,6);
+  assert.equal((await atlas.searchNecromancerMovements({tipoRequisito:"todos"})).length,2);
+  assert.equal((await atlas.searchNecromancerMovements({requer:"animar os mortos"})).length,3);
+  assert.equal((await atlas.searchNecromancerMovements({comOpcoes:true})).length,1);
+  const ix=await atlas.getNecromancerMovementIndexes();
+  assert.equal(ix.by_requisito_tipo.todos.length,2);
+  const animar="movimento-classe:paragrafo-2582";
+  const nome="movimento-classe:paragrafo-2596";
+  const ossos="movimento-classe:paragrafo-2598";
+  const levantar="movimento-classe:paragrafo-2616";
+  const costurada="movimento-classe:paragrafo-2617";
+  const zero=await atlas.getNecromancerRequirementPreview(levantar);
+  assert.deepEqual(zero.componentes_requeridos.map(x=>x.presente_na_lista),[false,false]);
+  assert.equal(zero.verificacao_estrutural,"componentes_ausentes");
+  const partial=await atlas.getNecromancerRequirementPreview(levantar,{movimentosPossuidos:[animar]});
+  assert.deepEqual(partial.componentes_requeridos.map(x=>x.presente_na_lista),[true,false]);
+  assert.equal(partial.componentes_identificados_presentes,false);
+  const full=await atlas.getNecromancerRequirementPreview(levantar,{movimentosPossuidos:[animar,nome]});
+  assert.equal(full.operador_literal,"e");
+  assert.equal(full.componentes_identificados_presentes,true);
+  assert.equal(full.habilitado_para_compra,null);
+  assert.equal(full.aplicacao_canonica,false);
+  const second=await atlas.getNecromancerRequirementPreview(costurada,{movimentosPossuidos:[animar,ossos]});
+  assert.deepEqual(second.componentes_requeridos.map(x=>x.presente_na_lista),[true,true]);
+  assert.equal(second.habilitado_para_compra,null);
+  const direct=await atlas.getNecromancerRequirementPreview("movimento-classe:paragrafo-2599",{movimentosPossuidos:[animar]});
+  assert.equal(direct.componentes_identificados_presentes,true);
+  assert.equal(direct.habilitado_para_compra,null);
+  assert.equal(await atlas.getNecromancerRequirementPreview("movimento-classe:paragrafo-99999"),null);
+  await assert.rejects(()=>atlas.getNecromancerRequirementPreview(levantar,{movimentosPossuidos:"invalid"}),TypeError);
 });

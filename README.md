@@ -349,3 +349,13 @@ Consulta em `getSorcererMovements`, `searchSorcererMovements` e `getSorcererRequ
 Transcritos integralmente **49 movimentos de BRUXO** (59 opções, 120 trechos e 43 REQUER literais diretos), elevando o Hack a **540 de 632 movimentos** (85,4%). A estrutura conserva cinco raízes com dependentes (**Pacto 30; Maldição 5; Magia Simpática 3; Caldeirão 2; Olho Gordo 3**) e **Sabá** como movimento independente. Não foi criado Pacto universal para caminhos autônomos.
 
 O atlas materializa a fonte compacta `data/lore/hack-carcaca-dw-bruxo-integrais.json.gz` em `dist/carcaca/hack-warlock-movements.json` e `dist/carcaca/hack-warlock-movement-indexes.json`. A API `getWarlockRequirementPreview` verifica a cadeia inteira, sempre com `habilitado_para_compra:null`. [Guia técnico](docs/INTEGRACAO_BRUXO_HACK_DW.md).
+
+
+## Necromante — decimo terceiro grupo integral do Hack Carcaça DW
+
+Foram integrados **29 movimentos integrais de Necromante**, com 45 opções, 83 trechos documentais e **11 REQUER** (9 diretos e 2 compostos com operador E). A cobertura do inventário chega a **569 de 632 movimentos de classe (90,0%)**.
+
+- **LEVANTE-SE COMO VOCÊ MESMO** exige ANIMAR OS MORTOS **E** NOME DO MORTO;
+- **ABOMINAÇÃO COSTURADA** exige ANIMAR OS MORTOS **E** COLHEITA DE OSSOS.
+
+O cliente expõe `getNecromancerMovements`, `getNecromancerMovementIndexes`, `searchNecromancerMovements` e `getNecromancerRequirementPreview`. A prévia não autoriza compra, mesmo quando os dois movimentos são identificados. Fonte autoral compactada em `data/lore/hack-carcaca-dw-necromante-integrais.json.gz`, catálogo integral em `dist/carcaca/hack-necromancer-movements.json` e documentação em [INTEGRACAO_NECROMANTE_HACK_DW.md](docs/INTEGRACAO_NECROMANTE_HACK_DW.md).

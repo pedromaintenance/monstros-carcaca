@@ -1870,6 +1870,94 @@ def validar_bruxo_integral():
     print("Bruxo: 49 movimentos, 59 opções, 120 trechos, 43 REQUER diretos; "
           "cinco raízes com dependentes e Sabá independente.")
 
+
+def validar_necromante_integral():
+    """Confere 29 movimentos, nove REQUER diretos e duas conjuncoes E."""
+    from hack_movimentos_personagem import build_necromancer_indexes
+    raw=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-necromante-integrais.json.gz").read_bytes()).decode("utf-8"))
+    inv=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(raw["grupo"]=="NECROMANTE" and raw["fonte_sha256"]==inv["fonte_sha256"],
+            "Manuscrito e inventario do Necromante divergentes.")
+    moves=raw["movimentos"]
+    original={m["id"]:m for m in inv["movimentos"] if m["grupo"]=="NECROMANTE"}
+    require(len(moves)==len(original)==29 and len(unique(moves,"necromante"))==29,
+            "Movimentos do Necromante ausentes ou duplicados.")
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves)
+            and moves[0]["paragrafo_docx"]==2581 and moves[-1]["paragrafo_docx"]==2666,
+            "Fronteiras documentais do Necromante alteradas.")
+    expected={"total_movimentos":29,"total_com_requer":11,"total_vinculos_exatos":9,
+              "total_opcoes":45,"total_partes":83,"total_requer_composto":2}
+    require(raw["integridade"]==expected,"Contagens documentais do Necromante divergentes.")
+    by_id={m["id"]:m for m in moves}
+    direct={};compound={};parts=set()
+    for m in moves:
+        old=original.get(m["id"])
+        require(old is not None and m["titulo"]==old["titulo"] and
+                m["paragrafo_docx"]==old["paragrafo_docx"] and
+                m["requisito_literal"]==old["requisito_literal"],
+                "Movimento Necromante nao corresponde ao inventario.")
+        require(m["texto_integral_conferido"] is True
+                and m["estado"]=="transcricao_integral_sem_revisao_mecanica"
+                and m["aplicacao_canonica"] is False,
+                "Movimento nao pode ser aplicado automaticamente ao canone.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"])
+                and m["opcoes"]==[
+                 {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+                 for p in m["partes"] if p["tipo"]=="opcao"],
+                "Texto ou opcoes truncados.")
+        require(m["partes"][0]["tipo"]=="corpo"
+                and m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"],
+                "Corpo Necromante sem ancoragem.")
+        for p in m["partes"]:
+            require(p["texto"] and p["paragrafo_docx"] not in parts,"Parte vazia/duplicada.")
+            parts.add(p["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),"REQUER inferido ou omitido.")
+        if req is None:continue
+        if req["tipo"]=="movimento_exato":
+            target=req["movimento_id"]
+            require(target in by_id and req["titulo_requerido"]==by_id[target]["titulo"]
+                    and req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "REQUER simples sem correspondencia literal.")
+            direct[m["id"]]=target
+        elif req["tipo"]=="todos":
+            require(req["operador_literal"]=="e" and
+                    req["status"]=="interpretacao_literal_pendente_homologacao"
+                    and len(req["itens"])==2 and
+                    all(i["tipo"]=="movimento_exato" for i in req["itens"]),
+                    "REQUER composto deve ser conjuncao obrigatoria.")
+            targets=[i["movimento_id"] for i in req["itens"]]
+            require(len(set(targets))==2 and
+                    all(i["movimento_id"] in by_id and
+                        i["titulo_requerido"]==by_id[i["movimento_id"]]["titulo"]
+                        for i in req["itens"]),
+                    "Componentes cumulativos nao identificados.")
+            compound[m["id"]]=targets
+        else:raise AssertionError("Tipo de REQUER desconhecido.")
+    expected_compound={
+      "movimento-classe:paragrafo-2616":["movimento-classe:paragrafo-2582","movimento-classe:paragrafo-2596"],
+      "movimento-classe:paragrafo-2617":["movimento-classe:paragrafo-2582","movimento-classe:paragrafo-2598"]
+    }
+    require(compound==expected_compound and len(direct)==9
+            and len(parts)==83 and sum(len(m["opcoes"]) for m in moves)==45,
+            "Integridade de alternativas, conjuncoes e requisitos alterada.")
+    for start in direct:
+        visited={start};at=start
+        while at in direct:
+            at=direct[at]
+            require(at not in visited,"Ciclo de REQUER no Necromante.")
+            visited.add(at)
+    ix=build_necromancer_indexes(moves)
+    require(len(ix["by_requisito_tipo"]["movimento_exato"])==9
+            and ix["by_requisito_tipo"]["todos"]==sorted(expected_compound)
+            and set(expected_compound)<=set(ix["by_requisito_id"]["movimento-classe:paragrafo-2582"])
+            and "movimento-classe:paragrafo-2616" in
+                ix["by_requisito_id"]["movimento-classe:paragrafo-2596"]
+            and "movimento-classe:paragrafo-2617" in
+                ix["by_requisito_id"]["movimento-classe:paragrafo-2598"],
+            "Indices de REQUER composto incompletos.")
+    print("Necromante: 29 movimentos, 45 opcoes, 83 partes, 9 REQUER diretos e 2 conjuncoes.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -1978,6 +2066,7 @@ def main():
     validar_mago_integral()
     validar_feiticeiro_integral()
     validar_bruxo_integral()
+    validar_necromante_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

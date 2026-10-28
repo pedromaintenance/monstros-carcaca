@@ -60,6 +60,46 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getNecromancerMovements(){return byKey("hack_necromancer_movements");}
+  async function getNecromancerMovementIndexes(){return byKey("hack_necromancer_movement_indexes");}
+  async function getNecromancerMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    return (await getNecromancerMovements()).find(m=>m.id===id)??null;
+  }
+  async function searchNecromancerMovements({titulo,query,requer,comRequer,comOpcoes,tipoRequisito}={}){
+    const norm=x=>String(x??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return (await getNecromancerMovements()).filter(m=>
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (!requer||norm(m.requisito_literal).includes(norm(requer)))&&
+      (comRequer===undefined||Boolean(m.requisito_literal)===comRequer)&&
+      (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
+      (!tipoRequisito||(m.requisito_estruturado?.tipo??"nenhum")===tipoRequisito));
+  }
+  async function getNecromancerRequirementPreview(id,{movimentosPossuidos=[]}={}){
+    if(!Array.isArray(movimentosPossuidos))throw new TypeError("movimentosPossuidos deve ser array");
+    const moves=await getNecromancerMovements();
+    const byId=new Map(moves.map(m=>[m.id,m]));
+    const m=byId.get(id);if(!m)return null;
+    const req=m.requisito_estruturado;
+    const ids=req?.tipo==="movimento_exato"?[req.movimento_id]:
+      req?.tipo==="todos"?req.itens.map(x=>x.movimento_id):[];
+    const held=new Set(movimentosPossuidos);
+    const checks=ids.map(movimento_id=>{
+      const target=byId.get(movimento_id);
+      if(!target)throw new Error("REQUER sem alvo em Necromante");
+      return {movimento_id,titulo:target.titulo,presente_na_lista:held.has(movimento_id)};
+    });
+    return {movimento_id:id,requisito_literal:m.requisito_literal,
+      requisito_estruturado:req,operador_literal:req?.operador_literal??null,
+      componentes_requeridos:checks,
+      componentes_identificados_presentes:checks.every(x=>x.presente_na_lista),
+      verificacao_estrutural:!req?"sem_requer_literal":
+        checks.every(x=>x.presente_na_lista)?"componentes_identificados_presentes":"componentes_ausentes",
+      habilitado_para_compra:null,necessita_avaliacao_do_mestre:true,
+      aplicacao_canonica:false,
+      observacao:"REQUER continua obrigatorio inclusive em concessao gratuita; verificacao nao homologa compra."};
+  }
   async function getWarlockMovements(){return byKey("hack_warlock_movements");}
   async function getWarlockMovementIndexes(){return byKey("hack_warlock_movement_indexes");}
   async function getWarlockMovement(id){
@@ -827,6 +867,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           searchMageMovements,getMageRequirementPreview,
           getSorcererMovements,getSorcererMovement,getSorcererMovementIndexes,
           searchSorcererMovements,getSorcererRequirementPreview,
+          getNecromancerMovements,getNecromancerMovement,getNecromancerMovementIndexes,
+          searchNecromancerMovements,getNecromancerRequirementPreview,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,

@@ -303,3 +303,22 @@ def build_warlock_indexes(moves):
           (m["requisito_estruturado"] or {}).get("movimento_id")]),
       "by_raiz_dependencia":ordered_index(moves,root)
     }
+
+
+def build_necromancer_indexes(moves):
+    """Indexa 9 REQUER diretos e dois compostos E sem promover mecanicas."""
+    def needed(m):
+        r=m["requisito_estruturado"]
+        if r is None:return []
+        if r["tipo"]=="movimento_exato":return [r["movimento_id"]]
+        if r["tipo"]=="todos":
+            return [x["movimento_id"] for x in r["itens"] if x["tipo"]=="movimento_exato"]
+        raise ValueError("REQUER inesperado no Necromante")
+    return {
+      "by_titulo":ordered_index(moves,lambda m:[m["titulo"]]),
+      "by_paragrafo":ordered_index(moves,lambda m:[m["paragrafo_docx"]]),
+      "by_tem_requer":ordered_index(moves,lambda m:["sim" if m["requisito_literal"] else "nao"]),
+      "by_tem_opcoes":ordered_index(moves,lambda m:["sim" if m["opcoes"] else "nao"]),
+      "by_requisito_tipo":ordered_index(moves,lambda m:[(m["requisito_estruturado"] or {}).get("tipo","nenhum")]),
+      "by_requisito_id":ordered_index(moves,needed)
+    }
