@@ -12,6 +12,12 @@ O **Ciclo XIV — Atlas Histórico e Cultural de Eldroth, Vandar e Ironwood** se
 
 Leia [o dossiê narrativo](docs/ATLAS_HISTORICO_CULTURAL_ELDROTH_CICLO14.md) e consulte a [matriz estruturada de worldbuilding](data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json). Os dados são exportados também em `dist/carcaca/eldroth-cultural-atlas.json`, com índices próprios; consulta ESM via `getEldrothCulturalAtlas` e `searchEldrothCulturalAxes`. **Nenhum elemento do dossiê foi canonizado por código.**
 
+## Ciclo XV — Eldroth antes da conquista
+
+O novo aprofundamento de worldbuilding reconstrói Eldroth como **sociedade anterior à ocupação**, e não apenas território de monstros ou resistência. Diferencia a história dos elfos da floresta, **fadas refugiadas desde 501 EC**, a chegada oficial dos lordes em **666 EC** e as guerras da Corte a partir de **875 EC**.
+
+O [dossiê histórico-social](docs/ELDROTH_PRECONQUISTA_CICLO15.md) investiga **8 práticas culturais candidatas**, **4 pactos não assinados**, **4 ciclos materiais**, **4 vinhetas não ocorridas**, **24 alternativas não adotadas** e cinco decisões prioritárias para o autor. Não foram criadas novas cidades, famílias, clãs ou estatísticas de combate. A [matriz estruturada](data/worldbuilding/eldroth-preconquista-ciclo15.json) dispõe de buscas por fase, prática e proveniência via `getEldrothPreconquest` e `searchEldrothPreconquest`.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.

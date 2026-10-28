@@ -257,6 +257,32 @@ def build():
     thargrid=load("data/propostas/thargrid-resistencia-cotidiano-hack.json")
     floresta=load("data/propostas/ironwood-eldroth-resistencia-hack.json")
     atlas_cultural_xiv=load("data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json")
+    preconquista_xv=load("data/worldbuilding/eldroth-preconquista-ciclo15.json")
+    categorias_xv=("fases","praticas","pactos","ciclos_materiais","vinhetas")
+    entidades_xv=[{**item,"categoria_indice":categoria}
+        for categoria in categorias_xv for item in preconquista_xv[categoria]]
+    if len(entidades_xv)!=24:
+        raise ValueError("Ciclo XV exige 24 registros de mundo (4+8+4+4+4).")
+    def indexar_preconquista(extrair):
+        idx=defaultdict(set)
+        for item in entidades_xv:
+            val=extrair(item)
+            for key in (val if isinstance(val,list) else [val]):
+                if key is not None and key!="":
+                    idx[str(key)].add(item["id"])
+        return {key:sorted(ids) for key,ids in sorted(idx.items())}
+    indices_preconquista_xv={
+        "by_categoria":indexar_preconquista(lambda x:x["categoria_indice"]),
+        "by_fase":indexar_preconquista(lambda x:x.get("fase_de_inspiracao",x.get("chave"))),
+        "by_pagina_manuscrito":indexar_preconquista(lambda x:[
+            str(pg) for src in (x.get("fontes_ancora") or x.get("fonte_contextual") or [])
+            for pg in ([src["pagina"]] if "pagina" in src else src.get("paginas",[]))]),
+        "by_ambito_social":indexar_preconquista(lambda x:x.get("abrangencia_hipotetica")),
+        "by_pratica_referida":indexar_preconquista(lambda x:x.get("praticas_associadas",[])),
+        "by_eixo_xiv":indexar_preconquista(lambda x:x.get("eixos_xiv",[])),
+        "by_tarefa_material":indexar_preconquista(lambda x:x.get("tarefas_hipoteticas",[])),
+        "by_status":indexar_preconquista(lambda x:x.get("estado"))
+    }
     eixos_xiv=atlas_cultural_xiv["eixos"]
     if len(eixos_xiv)!=14:
         raise ValueError("Worldbuilding XIV exige 14 eixos históricos-culturais.")
@@ -881,6 +907,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "eldroth_preconquest":"eldroth-preconquest.json",
+        "eldroth_preconquest_indexes":"eldroth-preconquest-indexes.json",
         "eldroth_cultural_atlas":"eldroth-cultural-atlas.json",
         "eldroth_cultural_atlas_indexes":"eldroth-cultural-atlas-indexes.json",
         "eldroth_dw_statblocks":"eldroth-dw-statblocks.json",
@@ -1009,6 +1037,11 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_fases_worldbuilding_xv":len(preconquista_xv["fases"]),
+        "total_praticas_worldbuilding_xv_propostas":len(preconquista_xv["praticas"]),
+        "total_pactos_worldbuilding_xv_propostos":len(preconquista_xv["pactos"]),
+        "total_ciclos_materiais_worldbuilding_xv_propostos":len(preconquista_xv["ciclos_materiais"]),
+        "total_vinhetas_worldbuilding_xv_propostas":len(preconquista_xv["vinhetas"]),
         "total_areas_worldbuilding_xiv":len(atlas_cultural_xiv["areas"]),
         "total_marcos_worldbuilding_xiv":len(atlas_cultural_xiv["marcos"]),
         "total_eixos_worldbuilding_xiv":len(eixos_xiv),
@@ -1145,6 +1178,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["eldroth_preconquest"]:preconquista_xv,
+           files["eldroth_preconquest_indexes"]:indices_preconquista_xv,
            files["eldroth_cultural_atlas"]:atlas_cultural_xiv,
            files["eldroth_cultural_atlas_indexes"]:indices_culturais_xiv,
            files["eldroth_dw_statblocks"]:fichas_xiii,

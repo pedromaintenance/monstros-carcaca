@@ -1,0 +1,862 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XV — Eldroth antes da conquista: história social e convivência feérica",
+  "estado": "reconstrucao_historico_cultural_proposta",
+  "aprovacao_autoral": false,
+  "aplicar_ao_canon_automaticamente": false,
+  "referencia_regional": "regiao:eldroth",
+  "referencia_lugar": "lugar:eldroth",
+  "origem_historica": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "documentacao_previa": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+  "fontes_com_status": [
+    {
+      "id": "manuscrito_hack_capitulo_i",
+      "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "estado": "rascunho_autoral_transcrito",
+      "uso": "referencia_de_mundo_nao_confirmacao_de_propostas"
+    },
+    {
+      "id": "visao_geral",
+      "arquivo": "Ambientação - A Carcaça - Visão Geral.txt",
+      "estado": "visao_geral",
+      "uso": "cronologia_e_regioes"
+    },
+    {
+      "id": "atlas_xiv",
+      "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+      "estado": "agenda_editorial",
+      "uso": "eixos_e_limites_previamente_levantados"
+    }
+  ],
+  "tese": "Antes de haver ocupação de Sylara, Eldroth já abrigava comunidades élficas, círculos druidas mediadores, relação ritual com seres da mata e, depois de 501 EC, convivência com fadas refugiadas. Uma sociedade não idêntica a reino, templo ou sistema militar.",
+  "limites_editoriais": [
+    "Nomes de práticas e pactos são títulos editoriais inventados, não nomes de instituições históricas comprovadas.",
+    "Nenhuma aldeia, linhagem, tribunal, organização governante, fronteira, rota, população ou data de fundação individual foi inventada como cânone.",
+    "Períodos são intervalos para ordenar a análise, não datas de vigência de ritos e práticas propostos.",
+    "Refugiados feéricos de 501 EC não se confundem automaticamente com os lordes colonizadores de 666 EC.",
+    "A guerra começa em 875 EC; a data da queda de Eldroth e a da posse de Sylara não estão estabelecidas.",
+    "Direitos druidas anteriores não equivalem a soberania absoluta de sacerdotes sobre todos os habitantes da mata.",
+    "Nenhum pacto listado existiu ou foi assinado; nenhuma vinheta constitui evento de campanha.",
+    "Práticas e dados não alteram estatísticas Dungeon World, criaturas, assentamentos, frentes ou mapas canônicos."
+  ],
+  "contagens": {
+    "fases": 4,
+    "praticas": 8,
+    "pactos": 4,
+    "ciclos_materiais": 4,
+    "vinhetas": 4,
+    "alternativas_em_aberto": 24
+  },
+  "fases": [
+    {
+      "id": "worldbuilding-xv:fase:antes-501",
+      "chave": "antes_501",
+      "inicio_ec": null,
+      "fim_ec": 500,
+      "titulo": "Antes da chegada das primeiras fadas refugiadas",
+      "evidencia": "As comunidades dos elfos da floresta e as práticas druídicas antecedem o domínio shadow fey; a fonte não data a fundação das aldeias.",
+      "paginas": [
+        17
+      ],
+      "marco_acontecido": false,
+      "limite": "Não fixar a data do primeiro assentamento, dos círculos ou de Vandar."
+    },
+    {
+      "id": "worldbuilding-xv:fase:501-665",
+      "chave": "refugio_501_665",
+      "inicio_ec": 501,
+      "fim_ec": 665,
+      "titulo": "Refúgio feérico anterior à migração aristocrática",
+      "evidencia": "501 EC marca o início da fuga de fadas; o manuscrito descreve alianças, rivalidades, casamentos, pactos e novas tradições.",
+      "paginas": [
+        9,
+        16,
+        17
+      ],
+      "marco_acontecido": true,
+      "limite": "Não fixar que qualquer pacto ou família hipotética tenha sido fundada em 501."
+    },
+    {
+      "id": "worldbuilding-xv:fase:666-874",
+      "chave": "convivencia_666_874",
+      "inicio_ec": 666,
+      "fim_ec": 874,
+      "titulo": "Convivência sob a presença crescente da Corte",
+      "evidencia": "666 EC marca mudança oficial dos lordes à Carcaça, antes das guerras de conquista começarem em 875 EC.",
+      "paginas": [
+        9,
+        16,
+        17
+      ],
+      "marco_acontecido": true,
+      "limite": "Presença de nobres não comprova que Sylara já governava Eldroth antes de 875."
+    },
+    {
+      "id": "worldbuilding-xv:fase:875-transicao",
+      "chave": "ruptura_875",
+      "inicio_ec": 875,
+      "fim_ec": 875,
+      "titulo": "Ruptura: começam as guerras de conquista",
+      "evidencia": "875 EC é marco da guerra continental; não se presume a data local da queda completa de Eldroth.",
+      "paginas": [
+        9,
+        17
+      ],
+      "marco_acontecido": true,
+      "limite": "O desfecho local e cronologia detalhada da ocupação pertencem ao ciclo XVI."
+    }
+  ],
+  "praticas": [
+    {
+      "id": "worldbuilding-xv:pratica:roda-das-nascentes",
+      "nome_editorial": "Roda das Nascentes sem Dono",
+      "tipo": "pratica_social_candidata",
+      "estado": "proposta_nao_canonica",
+      "fase_de_inspiracao": "antes_501",
+      "abrangencia_hipotetica": "mediacao_de_recursos",
+      "fontes_ancora": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Círculos druidas mediavam disputas entre aldeias; a floresta é comunidade e não propriedade do druida.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        },
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 24,
+          "afirmacao_de_referencia": "Águas, árvores e estações possuem valor religioso próprio na tradição druídica.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "eixos_xiv": [
+        "worldbuilding-xiv:eixo:sagrado-druidico",
+        "worldbuilding-xiv:eixo:subsistencia"
+      ],
+      "mecanismo_social_proposto": "Decidir compartilhamento de água pelo uso e pela proteção do curso, sem que o círculo se declare proprietário.",
+      "vida_cotidiana": "Dois grupos disputam o acesso ao mesmo curso em tempo de necessidade. Alguém precisa permanecer junto da nascente para cuidar do leito enquanto outros transportam água.",
+      "costume_ou_rito_hipotetico": "Quem fala diante da nascente escuta primeiro quem chegou a pé de longe e quem mora à sua margem; trata-se de um possível protocolo, não cerimônia documentada.",
+      "tensao_interna": "Uma autoridade ritual experiente pode usar sua posição para favorecer o povoado que a alimenta.",
+      "pergunta_autoral": "Quem tem o poder de vetar uma decisão sobre uma nascente?",
+      "alternativas": [
+        {
+          "nome": "consentimento_das_comunidades",
+          "efeito": "As aldeias afetadas podem recusar uma proposta do círculo.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "veto_do_guardiao",
+          "efeito": "O guardião do lugar conserva o poder de impedir uso destrutivo.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "decisao_mista",
+          "efeito": "Uma decisão exige acordo dos moradores e observadores do curso d'água.",
+          "estado": "nao_escolhida"
+        }
+      ],
+      "existencia_historica_confirmada": false,
+      "ritual_observado": false
+    },
+    {
+      "id": "worldbuilding-xv:pratica:tempo-da-caca",
+      "nome_editorial": "Tempo dos Rastros Devolvidos",
+      "tipo": "pratica_social_candidata",
+      "estado": "proposta_nao_canonica",
+      "fase_de_inspiracao": "antes_501",
+      "abrangencia_hipotetica": "gestao_de_caca_e_coleta",
+      "fontes_ancora": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Druidas administravam períodos de caça e coleta e mantinham pactos com criaturas da floresta.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "eixos_xiv": [
+        "worldbuilding-xiv:eixo:subsistencia",
+        "worldbuilding-xiv:eixo:sagrado-druidico"
+      ],
+      "mecanismo_social_proposto": "Regular não somente a extração, mas a obrigação de deixar viver espécies, filhotes e habitats.",
+      "vida_cotidiana": "Caçadores retornam com informações sobre o terreno e encontram famílias cujas reservas não bastam; a data do fechamento da caça pode gerar oposição.",
+      "costume_ou_rito_hipotetico": "O último feixe de rastros é mostrado aos jovens para explicar por que certas presas não devem ser perseguidas naquele ciclo.",
+      "tensao_interna": "Uma norma necessária ao bosque pode impor fome a quem não possui reservas.",
+      "pergunta_autoral": "A escassez autoriza exceções a um período de interdição?",
+      "alternativas": [
+        {
+          "nome": "excecao_de_necessidade",
+          "efeito": "Caça limitada para sobrevivência, com dever de reposição.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "proibicao_estrita",
+          "efeito": "Habitat permanece protegido mesmo na crise.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "redistribuicao_coletiva",
+          "efeito": "Quem dispõe de reservas sustenta os afetados pela interdição.",
+          "estado": "nao_escolhida"
+        }
+      ],
+      "existencia_historica_confirmada": false,
+      "ritual_observado": false
+    },
+    {
+      "id": "worldbuilding-xv:pratica:lugar-que-nao-se-edifica",
+      "nome_editorial": "O Lugar onde Não se Edifica",
+      "tipo": "pratica_social_candidata",
+      "estado": "proposta_nao_canonica",
+      "fase_de_inspiracao": "antes_501",
+      "abrangencia_hipotetica": "jurisdicao_sagrada",
+      "fontes_ancora": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Druidas preservavam áreas onde nenhum povo deveria construir.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        },
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Uma clareira pode ser praça, árvore memorial e trilha estrada comunitária.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "eixos_xiv": [
+        "worldbuilding-xiv:eixo:sagrado-druidico",
+        "worldbuilding-xiv:eixo:nomeacao-e-mapas"
+      ],
+      "mecanismo_social_proposto": "Uma área sacralizada é tratada como compromisso coletivo de não a converter em assentamento ou propriedade.",
+      "vida_cotidiana": "Ao crescer uma comunidade, famílias precisam de casas e encontram a única encosta plana próxima a uma árvore antiga.",
+      "costume_ou_rito_hipotetico": "Antes de erguer uma parede, moradores escutam testemunhos sobre acontecimentos associados ao lugar; esse procedimento é invenção editorial.",
+      "tensao_interna": "A preservação do sagrado pode funcionar como privilégio de quem já possui terras em outros lugares.",
+      "pergunta_autoral": "Quem pode redefinir uma fronteira de construção proibida?",
+      "alternativas": [
+        {
+          "nome": "interdito_perpetuo",
+          "efeito": "Nenhuma urgência humana autoriza obra no lugar.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "revisao_intergeracional",
+          "efeito": "Novas gerações podem renegociar limites, mas não apagar a memória.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "refugio_temporario",
+          "efeito": "Uso emergencial sem título de propriedade nem direito de permanência.",
+          "estado": "nao_escolhida"
+        }
+      ],
+      "existencia_historica_confirmada": false,
+      "ritual_observado": false
+    },
+    {
+      "id": "worldbuilding-xv:pratica:memoria-dos-caminhos",
+      "nome_editorial": "Estradas que Só Existem quando São Lembradas",
+      "tipo": "pratica_social_candidata",
+      "estado": "proposta_nao_canonica",
+      "fase_de_inspiracao": "antes_501",
+      "abrangencia_hipotetica": "memoria_territorial",
+      "fontes_ancora": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Clareiras funcionam como praças, árvores como memoriais e trilhas invisíveis como estradas geracionais.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        },
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 20,
+          "afirmacao_de_referencia": "Mapas e rotas carregam informação social que pode ser perigosa em mãos de poderes externos.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "eixos_xiv": [
+        "worldbuilding-xiv:eixo:nomeacao-e-mapas",
+        "worldbuilding-xiv:eixo:sagrado-druidico"
+      ],
+      "mecanismo_social_proposto": "A memória oral organiza circulação e pertencimento sem exigir um mapa público que revele cada casa.",
+      "vida_cotidiana": "Uma jovem precisa conduzir parentes a uma comunidade vizinha; dois anciãos lembram trilhas que passam por locais diferentes.",
+      "costume_ou_rito_hipotetico": "A narração de um caminho inclui a história de quem o manteve, mais do que a sequência de curvas; é um costume proposto.",
+      "tensao_interna": "O conhecimento mantido em poucas famílias também pode excluir recém-chegados.",
+      "pergunta_autoral": "Os caminhos devem ser de conhecimento comum ou guardados por responsáveis?",
+      "alternativas": [
+        {
+          "nome": "ensinamento_aberto",
+          "efeito": "Qualquer morador pode aprender trajetos e nomes tradicionais.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "aprendizagem_sob_cuidado",
+          "efeito": "Conhecimento exige acompanhamento e compromisso de não expor terceiros.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "mapas_por_camadas",
+          "efeito": "Informação cotidiana é pública, mas refúgios e lugares frágeis são omitidos.",
+          "estado": "nao_escolhida"
+        }
+      ],
+      "existencia_historica_confirmada": false,
+      "ritual_observado": false
+    },
+    {
+      "id": "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+      "nome_editorial": "A Mesa Onde a Floresta Não Cobra Sangue",
+      "tipo": "pratica_social_candidata",
+      "estado": "proposta_nao_canonica",
+      "fase_de_inspiracao": "refugio_501_665",
+      "abrangencia_hipotetica": "convivencia_intercultural",
+      "fontes_ancora": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 16,
+          "afirmacao_de_referencia": "Nem todos os feéricos são Shadow Fey; fadas fugiram da invasão do Shadowfade e não partilham lealdade única à Corte.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        },
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "A chegada de refugiados feéricos desde 501 EC produziu alianças, rivalidades, casamentos e pactos.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "eixos_xiv": [
+        "worldbuilding-xiv:eixo:ondas-feericas",
+        "worldbuilding-xiv:eixo:pactos-feericos",
+        "worldbuilding-xiv:eixo:subsistencia"
+      ],
+      "mecanismo_social_proposto": "Pessoas que fogem e comunidades que recebem negociam moradia, alimento, uso dos bosques e obrigações sem confundir proteção com submissão.",
+      "vida_cotidiana": "Um grupo recém-chegado traz sementes, lembranças e uma necessidade imediata de abrigo; uma família local teme perder o local de coleta.",
+      "costume_ou_rito_hipotetico": "Convidados deixam uma lembrança simbólica à entrada e recebem uma parte da refeição; nenhuma lei universal ou rito confirmado é pressuposto.",
+      "tensao_interna": "Acolher pode exigir tempo, solo, cura e trabalho; recusar pode repetir a violência que produziu o refúgio.",
+      "pergunta_autoral": "A hospitalidade dá direito de ficar, ou somente protege quem está fugindo?",
+      "alternativas": [
+        {
+          "nome": "abrigo_condicional",
+          "efeito": "Protege-se o perseguido sem conceder posse permanente.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "pertencimento_negociado",
+          "efeito": "Deveres e direitos podem ser construídos por convivência.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "acolhimento_incondicional",
+          "efeito": "A proteção imediata não depende de juramento nem origem.",
+          "estado": "nao_escolhida"
+        }
+      ],
+      "existencia_historica_confirmada": false,
+      "ritual_observado": false
+    },
+    {
+      "id": "worldbuilding-xv:pratica:promessa-e-lugar",
+      "nome_editorial": "A Palavra que Não Pode Possuir uma Árvore",
+      "tipo": "pratica_social_candidata",
+      "estado": "proposta_nao_canonica",
+      "fase_de_inspiracao": "refugio_501_665",
+      "abrangencia_hipotetica": "direito_costumeiro_de_pactos",
+      "fontes_ancora": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 16,
+          "afirmacao_de_referencia": "Pactos feéricos antigos podem envolver nome verdadeiro, presentes, hospitalidade, proteção de bosques e literalidade das promessas.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        },
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Círculos antigos pactuavam com espíritos que não reconheciam reis nem fronteiras.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "eixos_xiv": [
+        "worldbuilding-xiv:eixo:pactos-feericos",
+        "worldbuilding-xiv:eixo:sagrado-druidico"
+      ],
+      "mecanismo_social_proposto": "Um compromisso com espírito ou fada pode vincular pessoas sem tornar a árvore uma propriedade transferível.",
+      "vida_cotidiana": "Ao restaurar um abrigo abandonado, alguém encontra promessa feita por pessoas que não vivem mais ali. Ninguém sabe quem a pode renovar.",
+      "costume_ou_rito_hipotetico": "A fórmula hipotética troca testemunhas antes de trocar nomes, evitando que uma pessoa fale por toda a comunidade.",
+      "tensao_interna": "Pactos assimétricos podem ser usados contra crianças, vizinhos e quem ignora sua linguagem ritual.",
+      "pergunta_autoral": "Um pacto feito por ancestrais obriga descendentes não consultados?",
+      "alternativas": [
+        {
+          "nome": "nao_herdavel",
+          "efeito": "Obrigações pessoais expiram com os signatários.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "heranca_limitada",
+          "efeito": "Deveres ambientais persistem, mas jamais renúncia de liberdade.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "renovacao_periodica",
+          "efeito": "Cada geração renegocia termos diante de interessados.",
+          "estado": "nao_escolhida"
+        }
+      ],
+      "existencia_historica_confirmada": false,
+      "ritual_observado": false
+    },
+    {
+      "id": "worldbuilding-xv:pratica:nomes-misturados",
+      "nome_editorial": "A Família que Pertence a Dois Bosques",
+      "tipo": "pratica_social_candidata",
+      "estado": "proposta_nao_canonica",
+      "fase_de_inspiracao": "refugio_501_665",
+      "abrangencia_hipotetica": "parentesco_e_pertencimento",
+      "fontes_ancora": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Convivência entre elfos da floresta e feéricos refugiados produziu casamentos e tradições novas, sem detalhar suas linhagens.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        },
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 16,
+          "afirmacao_de_referencia": "Fadas não formam um único povo com deveres políticos idênticos.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "eixos_xiv": [
+        "worldbuilding-xiv:eixo:ondas-feericas",
+        "worldbuilding-xiv:eixo:pactos-feericos"
+      ],
+      "mecanismo_social_proposto": "Unir parentes de origens distintas pode alterar costumes de sepultamento, transmissão de memória e direito de habitar.",
+      "vida_cotidiana": "Crianças ouvem histórias diferentes sobre a mesma clareira; um dos parentes a chama de lar e outro de abrigo provisório.",
+      "costume_ou_rito_hipotetico": "Uma reunião familiar compara nomes e memórias sem revelar nomes verdadeiros a todos os presentes.",
+      "tensao_interna": "Pertencimento baseado só em sangue pode excluir filhos adotados, não-feéricos e órfãos.",
+      "pergunta_autoral": "Que compromisso torna alguém integrante de uma comunidade?",
+      "alternativas": [
+        {
+          "nome": "residencia_e_cuidado",
+          "efeito": "Trabalho, relações e reciprocidade fundam pertencimento.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "parentesco_ancestral",
+          "efeito": "Vínculos de linhagem prevalecem, mas com dever de acolhimento.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "reconhecimento_comunitario",
+          "efeito": "O pertencimento depende de manifestação pública de aceitação.",
+          "estado": "nao_escolhida"
+        }
+      ],
+      "existencia_historica_confirmada": false,
+      "ritual_observado": false
+    },
+    {
+      "id": "worldbuilding-xv:pratica:acordos-com-os-silenciosos",
+      "nome_editorial": "Os Que Não Respondem a Reis",
+      "tipo": "pratica_social_candidata",
+      "estado": "proposta_nao_canonica",
+      "fase_de_inspiracao": "refugio_501_665",
+      "abrangencia_hipotetica": "diplomacia_ecologica",
+      "fontes_ancora": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Druidas mantinham pactos com criaturas e espíritos que não reconheciam reis nem fronteiras.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        },
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 24,
+          "afirmacao_de_referencia": "Florestas, animais e árvores têm valor sagrado mesmo sem tutela exclusiva de deuses.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "eixos_xiv": [
+        "worldbuilding-xiv:eixo:sagrado-druidico",
+        "worldbuilding-xiv:eixo:floresta-agente"
+      ],
+      "mecanismo_social_proposto": "Antes de transitar por um lugar partilhado com seres não humanos, moradores observam sinais de limite e retribuição.",
+      "vida_cotidiana": "Um trabalho de coleta é interrompido porque uma criatura utiliza uma árvore como abrigo. O grupo precisa decidir quem suporta o custo.",
+      "costume_ou_rito_hipotetico": "O consentimento é interpretado por sinais e relações repetidas, não por um decreto humano traduzido como autoridade universal.",
+      "tensao_interna": "Pessoas podem se declarar tradutoras exclusivas da vontade da floresta sem serem contestadas.",
+      "pergunta_autoral": "Como distinguir a voz de um espírito da interpretação interessada de um guardião?",
+      "alternativas": [
+        {
+          "nome": "pluralidade_de_testemunhas",
+          "efeito": "Ninguém decide com base em uma única interpretação.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "pacto_revisavel",
+          "efeito": "O compromisso se reexamina quando sinais mudam.",
+          "estado": "nao_escolhida"
+        },
+        {
+          "nome": "limite_inviolavel",
+          "efeito": "Certos territórios permanecem interditados independentemente da interpretação humana.",
+          "estado": "nao_escolhida"
+        }
+      ],
+      "existencia_historica_confirmada": false,
+      "ritual_observado": false
+    }
+  ],
+  "pactos": [
+    {
+      "id": "worldbuilding-xv:pacto:acolhimento-sem-vassalagem",
+      "nome_editorial": "Abrigo sem Vassalagem",
+      "estado": "modelo_hipotetico_nao_assinado",
+      "mecanismo": "arranjo_costumeiro_proposto",
+      "partes_possiveis": [
+        "comunidade_elfica_local",
+        "refugiados_feericos"
+      ],
+      "objeto_ou_interesse": "Abrigo em território partilhado",
+      "direito_reivindicado": "Proteção contra perseguição exterior sem juramento a uma Casa.",
+      "contrapartida_proposta": "Participar do cuidado do bosque sem reivindicar domínio sobre moradores.",
+      "risco_de_abuso": "Uma proteção pode virar trabalho coercitivo sem reconhecimento.",
+      "contestacao": "O que acontece quando o acolhido deseja permanecer definitivamente?",
+      "fonte_contextual": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 16,
+          "afirmacao_de_referencia": "Fadas não equivalem a membros da Corte.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        },
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Houve convivência, acordos e casamentos após 501 EC.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+        "worldbuilding-xv:pratica:nomes-misturados"
+      ],
+      "vigente": false,
+      "assinado": false,
+      "aplicado_a_lugar_especifico": false
+    },
+    {
+      "id": "worldbuilding-xv:pacto:passagem-e-cuidado",
+      "nome_editorial": "Passagem sem Posse",
+      "estado": "modelo_hipotetico_nao_assinado",
+      "mecanismo": "arranjo_costumeiro_proposto",
+      "partes_possiveis": [
+        "moradores_de_assentamentos",
+        "guardioes_druidicos",
+        "espiritos_ou_criaturas_possiveis"
+      ],
+      "objeto_ou_interesse": "Travessia e conservação de trilha sagrada",
+      "direito_reivindicado": "Poder cruzar sem converter trilha em estrada exclusiva.",
+      "contrapartida_proposta": "Reparar danos e respeitar períodos em que espécies usam a passagem.",
+      "risco_de_abuso": "Quem guarda o caminho pode excluir pessoas pobres ou estrangeiras.",
+      "contestacao": "Como aplicar o compromisso quando a interpretação de um espírito é disputada?",
+      "fonte_contextual": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Trilhas podem funcionar como estradas reconhecidas há gerações.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        },
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Druidas protegiam espaços e pactuavam com seres sem reis.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:memoria-dos-caminhos",
+        "worldbuilding-xv:pratica:acordos-com-os-silenciosos"
+      ],
+      "vigente": false,
+      "assinado": false,
+      "aplicado_a_lugar_especifico": false
+    },
+    {
+      "id": "worldbuilding-xv:pacto:semente-e-limite",
+      "nome_editorial": "Semente na Terra que Não se Compra",
+      "estado": "modelo_hipotetico_nao_assinado",
+      "mecanismo": "arranjo_costumeiro_proposto",
+      "partes_possiveis": [
+        "coletoras",
+        "familias_locais",
+        "mediadores_druidicos"
+      ],
+      "objeto_ou_interesse": "Colheita e recuperação de lugares de coleta",
+      "direito_reivindicado": "Colher e cultivar sem reivindicar propriedade absoluta do solo.",
+      "contrapartida_proposta": "Respeitar períodos e áreas de regeneração, oferecer alimento à comunidade.",
+      "risco_de_abuso": "Quem estabelece a quota pode cobrar mais de alguns grupos.",
+      "contestacao": "Um período de fome justificaria romper a interdição?",
+      "fonte_contextual": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Os druidas mediavam períodos de caça e coleta e espaços sem construção.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:tempo-da-caca",
+        "worldbuilding-xv:pratica:lugar-que-nao-se-edifica"
+      ],
+      "vigente": false,
+      "assinado": false,
+      "aplicado_a_lugar_especifico": false
+    },
+    {
+      "id": "worldbuilding-xv:pacto:promessa-sem-herdeiro",
+      "nome_editorial": "Palavra que Não Herda Pessoas",
+      "estado": "modelo_hipotetico_nao_assinado",
+      "mecanismo": "arranjo_costumeiro_proposto",
+      "partes_possiveis": [
+        "familias_mistas",
+        "feéricos_de_rituais_distintos",
+        "druidas_mediadores_possiveis"
+      ],
+      "objeto_ou_interesse": "Promessa ancestral com efeitos sobre descendentes",
+      "direito_reivindicado": "Preservação de memória e hospitalidade sem alienar a liberdade de filhos.",
+      "contrapartida_proposta": "Registrar testemunhas e prever contestação por quem não estava presente.",
+      "risco_de_abuso": "Um vínculo feérico pode usar a ambiguidade do nome para exigir servidão.",
+      "contestacao": "Quem pode renegociar a palavra de alguém que já morreu?",
+      "fonte_contextual": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 16,
+          "afirmacao_de_referencia": "Pactos feéricos dependem de palavra, nome verdadeiro e literalidade.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        },
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Casamentos e pactos entre culturas ocorreram antes da guerra.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:promessa-e-lugar",
+        "worldbuilding-xv:pratica:nomes-misturados"
+      ],
+      "vigente": false,
+      "assinado": false,
+      "aplicado_a_lugar_especifico": false
+    }
+  ],
+  "ciclos_materiais": [
+    {
+      "id": "worldbuilding-xv:ciclo-material:água-e-reparo",
+      "nome_editorial": "Cuidar da nascente antes de repartir água",
+      "estado": "proposta_material_nao_quantificada",
+      "tarefas_hipoteticas": [
+        "zelar_pelas_margens",
+        "transportar_agua",
+        "mediar_uso"
+      ],
+      "limite_fonte": "Volume, regime hídrico e sazonalidade não definidos.",
+      "tensao_social": "Quem perde horas de trabalho para conservar um recurso comum?",
+      "fonte_contextual": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Círculos antigos, trilhas, lugares sagrados e relações entre aldeias antecediam a conquista.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:roda-das-nascentes"
+      ],
+      "volume_confirmado": null,
+      "periodicidade_confirmada": null,
+      "localizacao_confirmada": null,
+      "fluxo_logistico_confirmado": false
+    },
+    {
+      "id": "worldbuilding-xv:ciclo-material:coleta-e-reserva",
+      "nome_editorial": "Coletar, preservar áreas e distribuir alimento",
+      "estado": "proposta_material_nao_quantificada",
+      "tarefas_hipoteticas": [
+        "colher",
+        "observar_animais",
+        "guardar_reservas",
+        "partilhar_alimento"
+      ],
+      "limite_fonte": "Sem cultivos, animais, técnicas de conservação ou safras específicos comprovados.",
+      "tensao_social": "Quem pode impor um fechamento de caça quando os depósitos já estão vazios?",
+      "fonte_contextual": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Círculos antigos, trilhas, lugares sagrados e relações entre aldeias antecediam a conquista.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:tempo-da-caca",
+        "worldbuilding-xv:pratica:lugar-que-nao-se-edifica"
+      ],
+      "volume_confirmado": null,
+      "periodicidade_confirmada": null,
+      "localizacao_confirmada": null,
+      "fluxo_logistico_confirmado": false
+    },
+    {
+      "id": "worldbuilding-xv:ciclo-material:casa-e-abrigo",
+      "nome_editorial": "Construir, reparar e acolher sem ocupar área sagrada",
+      "estado": "proposta_material_nao_quantificada",
+      "tarefas_hipoteticas": [
+        "erguer_abrigos",
+        "avaliar_lugares_interditados",
+        "acolher_familias"
+      ],
+      "limite_fonte": "Não há arquitetura, assentamentos ou tamanho de comunidades individualizados na fonte.",
+      "tensao_social": "Quem deve sair para que recém-chegados tenham teto sem violar o interdito?",
+      "fonte_contextual": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Círculos antigos, trilhas, lugares sagrados e relações entre aldeias antecediam a conquista.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:lugar-que-nao-se-edifica",
+        "worldbuilding-xv:pratica:mesa-da-hospitalidade"
+      ],
+      "volume_confirmado": null,
+      "periodicidade_confirmada": null,
+      "localizacao_confirmada": null,
+      "fluxo_logistico_confirmado": false
+    },
+    {
+      "id": "worldbuilding-xv:ciclo-material:historia-e-transmissao",
+      "nome_editorial": "Ensinar caminhos e preservar compromissos de geração em geração",
+      "estado": "proposta_material_nao_quantificada",
+      "tarefas_hipoteticas": [
+        "ouvir_testemunhas",
+        "ensinar_trilhas",
+        "rever_promessas"
+      ],
+      "limite_fonte": "Não assumir escola formal, escrita obrigatória ou genealogias nomeadas.",
+      "tensao_social": "Qual lembrança pode ser compartilhada sem tirar de outra família sua proteção?",
+      "fonte_contextual": [
+        {
+          "origem": "manuscrito_hack_capitulo_i",
+          "pagina": 17,
+          "afirmacao_de_referencia": "Círculos antigos, trilhas, lugares sagrados e relações entre aldeias antecediam a conquista.",
+          "estado": "registrado_no_rascunho_nao_promovido"
+        }
+      ],
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:memoria-dos-caminhos",
+        "worldbuilding-xv:pratica:promessa-e-lugar",
+        "worldbuilding-xv:pratica:nomes-misturados"
+      ],
+      "volume_confirmado": null,
+      "periodicidade_confirmada": null,
+      "localizacao_confirmada": null,
+      "fluxo_logistico_confirmado": false
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "worldbuilding-xv:vinheta:um-lugar-devido",
+      "nome": "Um lugar que não deveria ser habitado",
+      "estado": "vinheta_ficcional_nao_ocorrida",
+      "fase_de_inspiracao": "antes_501",
+      "abertura_condicional": "Uma família que perdeu seu teto precisa reconstruí-lo, mas a única área seca alcançável é considerada interdita.",
+      "textura_cotidiana": "Um mediador pede que se ouça a necessidade dos vivos antes de anunciar a vontade do bosque.",
+      "pergunta_dramatica": "Uma jovem contesta o direito do círculo de interditar solo que não possui.",
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:lugar-que-nao-se-edifica",
+        "worldbuilding-xv:pratica:roda-das-nascentes"
+      ],
+      "ocorreu": false,
+      "lugar_historico_confirmado": false,
+      "personagem_canonico_novo": false
+    },
+    {
+      "id": "worldbuilding-xv:vinheta:primeira-hospitalidade",
+      "nome": "A primeira tigela para alguém de outro mundo",
+      "estado": "vinheta_ficcional_nao_ocorrida",
+      "fase_de_inspiracao": "refugio_501_665",
+      "abertura_condicional": "Pessoas que fugiram de Shadowfade recebem alimento. Duas famílias locais disputam quem suportará a hospitalidade.",
+      "textura_cotidiana": "A pessoa acolhida não sabe se os nomes oferecidos são uma bênção ou uma armadilha.",
+      "pergunta_dramatica": "Não há uma Casa da Corte na cena; a decisão sobre o abrigo é dos envolvidos, não de um soberano feérico.",
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+        "worldbuilding-xv:pratica:nomes-misturados"
+      ],
+      "ocorreu": false,
+      "lugar_historico_confirmado": false,
+      "personagem_canonico_novo": false
+    },
+    {
+      "id": "worldbuilding-xv:vinheta:promessa-da-avo",
+      "nome": "Uma promessa que avó alguma pode explicar",
+      "estado": "vinheta_ficcional_nao_ocorrida",
+      "fase_de_inspiracao": "convivencia_666_874",
+      "abertura_condicional": "Descendentes de uma aliança antiga descobrem que um espírito espera algo em troca da preservação de uma nascente.",
+      "textura_cotidiana": "Os mais velhos lembram a hospitalidade, mas discordam dos termos.",
+      "pergunta_dramatica": "O conflito não tem a ver com aliança à Rainha: foi concebido antes de guerra aberta e não pressupõe a participação dela.",
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:promessa-e-lugar",
+        "worldbuilding-xv:pratica:acordos-com-os-silenciosos"
+      ],
+      "ocorreu": false,
+      "lugar_historico_confirmado": false,
+      "personagem_canonico_novo": false
+    },
+    {
+      "id": "worldbuilding-xv:vinheta:ultimo-dia-da-colheita",
+      "nome": "A última colheita antes do silêncio",
+      "estado": "vinheta_ficcional_nao_ocorrida",
+      "fase_de_inspiracao": "convivencia_666_874",
+      "abertura_condicional": "Moradores discutem se devem manter a interdição de caça quando as reservas diminuem.",
+      "textura_cotidiana": "Quem fala em defender os animais oferece também ceder alimento próprio?",
+      "pergunta_dramatica": "A divergência revela tensões entre renda, rito, conhecimento e necessidade; ninguém é retratado como moralmente puro.",
+      "praticas_associadas": [
+        "worldbuilding-xv:pratica:tempo-da-caca",
+        "worldbuilding-xv:pratica:roda-das-nascentes"
+      ],
+      "ocorreu": false,
+      "lugar_historico_confirmado": false,
+      "personagem_canonico_novo": false
+    }
+  ],
+  "questoes_de_revisao_autoral": [
+    {
+      "id": "worldbuilding-xv:revisao:autoridade-druidica",
+      "pergunta": "Os círculos de Eldroth tinham veto sobre obras ou apenas mediação reconhecida por costume?",
+      "prioridade": "alta",
+      "estado": "pendente"
+    },
+    {
+      "id": "worldbuilding-xv:revisao:refugio-feerico",
+      "pergunta": "Quais obrigações recíprocas deveriam governar o acolhimento de fadas refugiadas e a permanência de seus descendentes?",
+      "prioridade": "alta",
+      "estado": "pendente"
+    },
+    {
+      "id": "worldbuilding-xv:revisao:juramentos",
+      "pergunta": "Promessas feéricas poderiam vincular filhos ou apenas quem consentiu?",
+      "prioridade": "alta",
+      "estado": "pendente"
+    },
+    {
+      "id": "worldbuilding-xv:revisao:memoria-e-escrita",
+      "pergunta": "Como o povo transmitia memória e limites de terras sem atribuir um arquivo central não documentado?",
+      "prioridade": "media",
+      "estado": "pendente"
+    },
+    {
+      "id": "worldbuilding-xv:revisao:continuidades",
+      "pergunta": "Quais costumes sobreviveram à ocupação e quais foram distorcidos pela burocracia de Sylara?",
+      "prioridade": "alta",
+      "estado": "pendente"
+    }
+  ]
+}

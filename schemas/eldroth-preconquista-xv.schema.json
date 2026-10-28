@@ -1,0 +1,666 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Eldroth XV — Reconstrução pré-conquista, sem promoção canônica",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estado": {
+      "const": "reconstrucao_historico_cultural_proposta"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "aplicar_ao_canon_automaticamente": {
+      "const": false
+    },
+    "referencia_regional": {
+      "const": "regiao:eldroth"
+    },
+    "referencia_lugar": {
+      "const": "lugar:eldroth"
+    },
+    "origem_historica": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "documentacao_previa": {
+      "const": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json"
+    },
+    "fontes_com_status": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "arquivo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uso": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "arquivo",
+          "estado",
+          "uso"
+        ]
+      }
+    },
+    "tese": {
+      "type": "string",
+      "minLength": 1
+    },
+    "limites_editoriais": {
+      "type": "array",
+      "minItems": 7,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fases": {
+          "const": 4
+        },
+        "praticas": {
+          "const": 8
+        },
+        "pactos": {
+          "const": 4
+        },
+        "ciclos_materiais": {
+          "const": 4
+        },
+        "vinhetas": {
+          "const": 4
+        },
+        "alternativas_em_aberto": {
+          "const": 24
+        }
+      },
+      "required": [
+        "fases",
+        "praticas",
+        "pactos",
+        "ciclos_materiais",
+        "vinhetas",
+        "alternativas_em_aberto"
+      ]
+    },
+    "fases": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xv:fase:"
+          },
+          "chave": {
+            "enum": [
+              "antes_501",
+              "refugio_501_665",
+              "convivencia_666_874",
+              "ruptura_875"
+            ]
+          },
+          "inicio_ec": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "fim_ec": {
+            "type": "integer",
+            "maximum": 875
+          },
+          "titulo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidencia": {
+            "type": "string",
+            "minLength": 1
+          },
+          "paginas": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "integer"
+            }
+          },
+          "marco_acontecido": {
+            "type": "boolean"
+          },
+          "limite": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "chave",
+          "inicio_ec",
+          "fim_ec",
+          "titulo",
+          "evidencia",
+          "paginas",
+          "marco_acontecido",
+          "limite"
+        ]
+      }
+    },
+    "praticas": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xv:pratica:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tipo": {
+            "const": "pratica_social_candidata"
+          },
+          "estado": {
+            "const": "proposta_nao_canonica"
+          },
+          "fase_de_inspiracao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "abrangencia_hipotetica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fontes_ancora": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "origem": {
+                  "const": "manuscrito_hack_capitulo_i"
+                },
+                "pagina": {
+                  "type": "integer",
+                  "minimum": 2,
+                  "maximum": 25
+                },
+                "afirmacao_de_referencia": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "estado": {
+                  "const": "registrado_no_rascunho_nao_promovido"
+                }
+              },
+              "required": [
+                "origem",
+                "pagina",
+                "afirmacao_de_referencia",
+                "estado"
+              ]
+            }
+          },
+          "eixos_xiv": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "mecanismo_social_proposto": {
+            "type": "string",
+            "minLength": 1
+          },
+          "vida_cotidiana": {
+            "type": "string",
+            "minLength": 1
+          },
+          "costume_ou_rito_hipotetico": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tensao_interna": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_autoral": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alternativas": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "nome": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "efeito": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "estado": {
+                  "const": "nao_escolhida"
+                }
+              },
+              "required": [
+                "nome",
+                "efeito",
+                "estado"
+              ]
+            }
+          },
+          "existencia_historica_confirmada": {
+            "const": false
+          },
+          "ritual_observado": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "tipo",
+          "estado",
+          "fase_de_inspiracao",
+          "abrangencia_hipotetica",
+          "fontes_ancora",
+          "eixos_xiv",
+          "mecanismo_social_proposto",
+          "vida_cotidiana",
+          "costume_ou_rito_hipotetico",
+          "tensao_interna",
+          "pergunta_autoral",
+          "alternativas",
+          "existencia_historica_confirmada",
+          "ritual_observado"
+        ]
+      }
+    },
+    "pactos": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xv:pacto:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "modelo_hipotetico_nao_assinado"
+          },
+          "mecanismo": {
+            "const": "arranjo_costumeiro_proposto"
+          },
+          "partes_possiveis": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "objeto_ou_interesse": {
+            "type": "string",
+            "minLength": 1
+          },
+          "direito_reivindicado": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contrapartida_proposta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "risco_de_abuso": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contestacao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte_contextual": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "origem": {
+                  "const": "manuscrito_hack_capitulo_i"
+                },
+                "pagina": {
+                  "type": "integer",
+                  "minimum": 2,
+                  "maximum": 25
+                },
+                "afirmacao_de_referencia": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "estado": {
+                  "const": "registrado_no_rascunho_nao_promovido"
+                }
+              },
+              "required": [
+                "origem",
+                "pagina",
+                "afirmacao_de_referencia",
+                "estado"
+              ]
+            }
+          },
+          "praticas_associadas": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "vigente": {
+            "const": false
+          },
+          "assinado": {
+            "const": false
+          },
+          "aplicado_a_lugar_especifico": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "estado",
+          "mecanismo",
+          "partes_possiveis",
+          "objeto_ou_interesse",
+          "direito_reivindicado",
+          "contrapartida_proposta",
+          "risco_de_abuso",
+          "contestacao",
+          "fonte_contextual",
+          "praticas_associadas",
+          "vigente",
+          "assinado",
+          "aplicado_a_lugar_especifico"
+        ]
+      }
+    },
+    "ciclos_materiais": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xv:ciclo-material:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "proposta_material_nao_quantificada"
+          },
+          "tarefas_hipoteticas": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "limite_fonte": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tensao_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte_contextual": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "origem": {
+                  "const": "manuscrito_hack_capitulo_i"
+                },
+                "pagina": {
+                  "type": "integer",
+                  "minimum": 2,
+                  "maximum": 25
+                },
+                "afirmacao_de_referencia": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "estado": {
+                  "const": "registrado_no_rascunho_nao_promovido"
+                }
+              },
+              "required": [
+                "origem",
+                "pagina",
+                "afirmacao_de_referencia",
+                "estado"
+              ]
+            }
+          },
+          "praticas_associadas": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "volume_confirmado": {
+            "type": "null"
+          },
+          "periodicidade_confirmada": {
+            "type": "null"
+          },
+          "localizacao_confirmada": {
+            "type": "null"
+          },
+          "fluxo_logistico_confirmado": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "estado",
+          "tarefas_hipoteticas",
+          "limite_fonte",
+          "tensao_social",
+          "fonte_contextual",
+          "praticas_associadas",
+          "volume_confirmado",
+          "periodicidade_confirmada",
+          "localizacao_confirmada",
+          "fluxo_logistico_confirmado"
+        ]
+      }
+    },
+    "vinhetas": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xv:vinheta:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "vinheta_ficcional_nao_ocorrida"
+          },
+          "fase_de_inspiracao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "abertura_condicional": {
+            "type": "string",
+            "minLength": 1
+          },
+          "textura_cotidiana": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_dramatica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "praticas_associadas": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "lugar_historico_confirmado": {
+            "const": false
+          },
+          "personagem_canonico_novo": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome",
+          "estado",
+          "fase_de_inspiracao",
+          "abertura_condicional",
+          "textura_cotidiana",
+          "pergunta_dramatica",
+          "praticas_associadas",
+          "ocorreu",
+          "lugar_historico_confirmado",
+          "personagem_canonico_novo"
+        ]
+      }
+    },
+    "questoes_de_revisao_autoral": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xv:revisao:"
+          },
+          "pergunta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "prioridade": {
+            "enum": [
+              "alta",
+              "media"
+            ]
+          },
+          "estado": {
+            "const": "pendente"
+          }
+        },
+        "required": [
+          "id",
+          "pergunta",
+          "prioridade",
+          "estado"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "aplicar_ao_canon_automaticamente",
+    "referencia_regional",
+    "referencia_lugar",
+    "origem_historica",
+    "documentacao_previa",
+    "fontes_com_status",
+    "tese",
+    "limites_editoriais",
+    "contagens",
+    "fases",
+    "praticas",
+    "pactos",
+    "ciclos_materiais",
+    "vinhetas",
+    "questoes_de_revisao_autoral"
+  ]
+}

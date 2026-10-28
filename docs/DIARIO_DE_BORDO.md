@@ -417,3 +417,11 @@ A revisão das fontes cruzou `Ambientação - A Carcaça - Visão Geral.txt` com
 Entregas: `docs/ATLAS_HISTORICO_CULTURAL_ELDROTH_CICLO14.md` (dossiê narrativo) e `data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json` (3 áreas, 6 marcos, 14 eixos culturais, 42 alternativas não adotadas); integração no índice, exportação e leitura API, CI e testes de proveniência. Nenhuma nova espécie, facção, assentamento ou evento foi promovido a fato.
 
 Próximos temas: **XV** Eldroth pré-conquista, **XVI** sociedade sob a ocupação de Sylara, **XVII** a cidade arruinada de Vandar e **XVIII** a vida civil de Ironwood e a diplomacia da resistência.
+
+## 2026-10-28 · Ciclo XV — A Eldroth anterior à guerra da Rainha
+
+**Continuidade da prioridade de worldbuilding.** Revisamos o manuscrito nas páginas 9, 16, 17, 18, 20 e 24 e o atlas XIV para estudar a sociedade de Eldroth antes das guerras abertas em **875 EC**.
+
+O texto registra comunidades élficas antigas, círculos druidas que mediavam disputas, períodos de caça/coleta, lugares sagrados e pactos com espíritos; também registra fadas refugiadas desde **501 EC**, convivência com comunidades locais e lordes que chegaram oficialmente em **666 EC**. A fonte **não** dá nomes de aldeias, famílias ou tribunais precursores nem a data de ascensão de Sylara. A mediação entre comunidades demonstra que o passado não precisa ser idealizado como ausência de conflitos.
+
+Entregas: `docs/ELDROTH_PRECONQUISTA_CICLO15.md` e `data/worldbuilding/eldroth-preconquista-ciclo15.json`: 4 fases de estudo, 8 práticas candidatas, 4 pactos não assinados, 4 ciclos materiais não quantificados, 4 vinhetas ficcionais e 24 alternativas não adotadas. Cinco questões de revisão autoral permanecem pendentes. Integração técnica por schema, validador, gerador determinístico, API e testes. Próximo foco: ciclo XVI, a sociedade ocupada por Sylara.

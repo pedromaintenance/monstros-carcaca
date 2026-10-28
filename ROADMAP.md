@@ -7,7 +7,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 **Mudança de prioridade solicitada:** o próximo conjunto de ciclos privilegia **construção do mundo** acima de estatísticas de Dungeon World, encontros, fichas e ajustes de combate. O banco de monstros serve como parte do ecossistema de sociedades existentes e não como finalidade isolada.
 
 - **XIV — concluído:** atlas histórico-cultural de Eldroth, Vandar e Ironwood com 14 eixos, fontes nomeadas e 42 alternativas não adotadas. [Dossiê](docs/ATLAS_HISTORICO_CULTURAL_ELDROTH_CICLO14.md).
-- **XV — planejado:** Eldroth antes da dominação: povos, primeiras fadas refugiadas, costumes, direito druídico, paisagens sagradas e pactos; nenhuma família ou aldeia será criada como fato sem revisão.
+- **XV — concluído:** [Eldroth antes da conquista](docs/ELDROTH_PRECONQUISTA_CICLO15.md) — 4 fases, 8 práticas, 4 pactos, 4 ciclos materiais e 4 vinhetas; 24 alternativas ainda sem aprovação.
 - **XVI — planejado:** a ocupação no cotidiano: exploração, trabalho, alimento, poder jurídico de Sylara, colaboração e proteção civil.
 - **XVII — planejado:** Vandar antes e depois da destruição: história urbana, necromancia, memória, luto e propriedade.
 - **XVIII — planejado:** Ironwood e a resistência descentralizada: vida civil, autoridade de Elara, educação, economia e diplomacia com Thargrid.
@@ -455,3 +455,14 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Garantir que o número de fichas canônicas permanece 7, sem aparições ou presságios confirmados.
 - [ ] Ciclo XIV: testar cenários e encontros em variações ficcionais, sem forçar combate nem registrar um desfecho canônico.
 - [ ] Revisão autoral dos portes e ataques (sobretudo a magia de papel do Escrivão) antes de qualquer promoção.
+
+
+## Ciclo XV — Concluído: Eldroth anterior à conquista
+
+- [x] Estudar manuscrito e ambientação anterior a 875 EC: círculos druidas, povos da floresta, fadas refugiadas e lordes posteriores.
+- [x] Registrar quatro fases de estudo sem transformar os intervalos em datas de fundação ou datas da posse de Sylara.
+- [x] Desenvolver oito práticas sociais candidatas e 24 opções culturais não adotadas, com relações de trabalho e tensões internas.
+- [x] Formular quatro modelos de pacto não assinados e quatro ciclos materiais não quantificados.
+- [x] Escrever quatro vinhetas de cotidiano explicitamente ficcionais.
+- [x] Integrar narrativa, base JSON, schema, validações, índices, API ESM e testes.
+- [ ] **XVI — próximo:** Eldroth sob Sylara: governo, instituições de coerção, economia civil, trabalho, memória, colaboração e resistência. Nenhuma política tributária ou órgão oficial deve ser inventado como fato.

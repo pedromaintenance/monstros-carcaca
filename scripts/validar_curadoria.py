@@ -3123,6 +3123,82 @@ def validar_atlas_cultural_xiv():
     print("Atlas XIV: 3 áreas, 6 marcos, 14 eixos, 42 alternativas não adotadas; nenhum fato novo canonizado.")
 
 
+
+def validar_preconquista_eldroth_xv():
+    """Confere rastreabilidade das instituições propostas e ausência de canonização."""
+    data=load("data/worldbuilding/eldroth-preconquista-ciclo15.json")
+    schema=load("schemas/eldroth-preconquista-xv.schema.json")
+    Draft202012Validator.check_schema(schema)
+    errors=list(Draft202012Validator(schema).iter_errors(data))
+    require(not errors, f"Worldbuilding XV: schema inválido: {errors[:2]}")
+    require(data["estado"]=="reconstrucao_historico_cultural_proposta"
+            and data["aprovacao_autoral"] is False
+            and data["aplicar_ao_canon_automaticamente"] is False,
+            "Worldbuilding XV: estado/autoridade editorial indevidos.")
+    expect={"fases":4,"praticas":8,"pactos":4,"ciclos_materiais":4,
+            "vinhetas":4,"alternativas_em_aberto":24}
+    require(data["contagens"]==expect,
+            "Worldbuilding XV: contagens incorretas.")
+    cats=("fases","praticas","pactos","ciclos_materiais","vinhetas")
+    items=[x for cat in cats for x in data[cat]]+data["questoes_de_revisao_autoral"]
+    require(len(items)==29 and len({x["id"] for x in items})==29
+            and all(x["id"].startswith("worldbuilding-xv:") for x in items),
+            "Worldbuilding XV: IDs repetidos ou formatos inesperados.")
+    fases={x["chave"] for x in data["fases"]}
+    require(fases=={"antes_501","refugio_501_665","convivencia_666_874","ruptura_875"}
+            and [(p["inicio_ec"],p["fim_ec"]) for p in data["fases"]]
+             ==[(None,500),(501,665),(666,874),(875,875)],
+            "Worldbuilding XV: fase alterada ou data nova inventada.")
+    ids_praticas={x["id"] for x in data["praticas"]}
+    ids_xiv={x["id"] for x in load("data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json")["eixos"]}
+    paginas={p["pagina"] for p in
+             load("fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")["paginas"]}
+    require(data["referencia_regional"]=="regiao:eldroth" and
+            data["referencia_lugar"]=="lugar:eldroth",
+            "Worldbuilding XV: local associado não documentado.")
+    def anchors(registros):
+        return all(src["origem"]=="manuscrito_hack_capitulo_i"
+                   and src["estado"]=="registrado_no_rascunho_nao_promovido"
+                   and src["pagina"] in paginas and bool(src["afirmacao_de_referencia"])
+                   for src in registros)
+    for p in data["praticas"]:
+        require(p["fase_de_inspiracao"] in fases
+                and p["eixos_xiv"] and set(p["eixos_xiv"]).issubset(ids_xiv)
+                and p["fontes_ancora"] and anchors(p["fontes_ancora"])
+                and p["existencia_historica_confirmada"] is False
+                and p["ritual_observado"] is False
+                and len(p["alternativas"])==3
+                and all(x["estado"]=="nao_escolhida" for x in p["alternativas"])
+                and p["mecanismo_social_proposto"]
+                and p["vida_cotidiana"] and p["tensao_interna"],
+                "Worldbuilding XV: prática sem fonte, contradição ou liberdade editorial.")
+    require(sum(len(x["alternativas"]) for x in data["praticas"])==24,
+            "Worldbuilding XV: alternativas foram removidas ou adotadas.")
+    for p in data["pactos"]:
+        require(p["praticas_associadas"] and set(p["praticas_associadas"]).issubset(ids_praticas)
+                and p["fonte_contextual"] and anchors(p["fonte_contextual"])
+                and p["vigente"] is False and p["assinado"] is False
+                and p["aplicado_a_lugar_especifico"] is False,
+                "Worldbuilding XV: pacto assinado ou sem referência.")
+    for c in data["ciclos_materiais"]:
+        require(c["praticas_associadas"] and set(c["praticas_associadas"]).issubset(ids_praticas)
+                and c["fonte_contextual"] and anchors(c["fonte_contextual"])
+                and c["volume_confirmado"] is None
+                and c["periodicidade_confirmada"] is None
+                and c["localizacao_confirmada"] is None
+                and c["fluxo_logistico_confirmado"] is False,
+                "Worldbuilding XV: fluxo material quantificado ou local inventado.")
+    for v in data["vinhetas"]:
+        require(v["praticas_associadas"] and set(v["praticas_associadas"]).issubset(ids_praticas)
+                and v["fase_de_inspiracao"] in fases
+                and v["ocorreu"] is False and v["lugar_historico_confirmado"] is False
+                and v["personagem_canonico_novo"] is False,
+                "Worldbuilding XV: cena de ficção tratada como história realizada.")
+    require(all(q["estado"]=="pendente" for q in data["questoes_de_revisao_autoral"]),
+            "Worldbuilding XV: decisão histórica aprovada sem revisão.")
+    print("Worldbuilding XV: 4 fases, 8 práticas, 4 pactos não assinados, 4 ciclos materiais, 4 vinhetas; zero promoções.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3249,6 +3325,7 @@ def main():
     validar_ecologia_monstruosa_xii()
     validar_monstros_dw_ciclo_xiii()
     validar_atlas_cultural_xiv()
+    validar_preconquista_eldroth_xv()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
