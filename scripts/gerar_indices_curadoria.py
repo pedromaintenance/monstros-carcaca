@@ -282,7 +282,7 @@ def build():
         "by_categoria":indexar_gnomos(lambda x:x["categoria_indice"]),
         "by_tradicao":indexar_gnomos(lambda x:
             x.get("tradicao_id") or x.get("tradicoes_relacionadas",[])),
-        "by_estado":indexar_gnomos(lambda x:x["estado"]),
+        "by_estado":indexar_gnomos(lambda x:x.get("estado",x.get("estatuto"))),
         "by_pagina_manuscrito":indexar_gnomos(lambda x:
             [str(p) for p in (x.get("fonte_paginas") or [])]),
         "by_tema":indexar_gnomos(lambda x:x.get("nome_editorial") or x.get("nome")),
