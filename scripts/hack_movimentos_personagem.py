@@ -372,3 +372,18 @@ def build_mercenary_indexes(moves):
       "by_requisito_id":ordered_index(moves,lambda m:[m["requisito_estruturado"]["movimento_id"]] if m["requisito_estruturado"] else []),
       "by_raiz_dependencia":ordered_index(moves,raiz)
     }
+
+
+def build_final_class_indexes(moves):
+    """Índices uniformes dos três grupos finais, sem dependências inventadas."""
+    if any(m["requisito_literal"] or m["requisito_estruturado"] or m["opcoes"] for m in moves):
+        raise ValueError("Índices finais esperam REQUER e opções ausentes na fonte")
+    return {
+      "by_titulo":ordered_index(moves,lambda m:[m["titulo"]]),
+      "by_grupo":ordered_index(moves,lambda m:[m["grupo"]]),
+      "by_paragrafo":ordered_index(moves,lambda m:[m["paragrafo_docx"]]),
+      "by_tem_requer":ordered_index(moves,lambda m:["nao"]),
+      "by_tem_opcoes":ordered_index(moves,lambda m:["nao"]),
+      "by_requisito_tipo":ordered_index(moves,lambda m:["nenhum"]),
+      "by_requisito_id":{}
+    }

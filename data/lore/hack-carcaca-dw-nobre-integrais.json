@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1.0",
+  "fonte": "Hack Carcaça Dungeon World(1).docx",
+  "fonte_sha256": "b53d1d5a057e8f6cba8a5d5ccd70747df3ce94d07ff2e2ffb9031368ea773b3d",
+  "grupo": "NOBRE",
+  "posicao": "indices_paragrafo_docx_zero_based",
+  "descricao": "Transcrição completa de movimentos do grupo NOBRE; sem homologação mecânica.",
+  "movimentos": [
+    {
+      "id": "movimento-classe:paragrafo-2816",
+      "paragrafo_docx": 2816,
+      "grupo": "NOBRE",
+      "categoria": "classe",
+      "titulo": "MEU NOME ABRE PORTAS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2816,
+          "tipo": "corpo",
+          "texto": "Quando sua linhagem, título ou cargo for reconhecido, ele conta como influência para Negociar sempre que puder realisticamente conceder prestígio, acesso, proteção ou punição."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando sua linhagem, título ou cargo for reconhecido, ele conta como influência para Negociar sempre que puder realisticamente conceder prestígio, acesso, proteção ou punição.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2816"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2817",
+      "paragrafo_docx": 2817,
+      "grupo": "NOBRE",
+      "categoria": "classe",
+      "titulo": "PROTOCOLO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2817,
+          "tipo": "corpo",
+          "texto": "Quando entrar numa corte, conselho ou ambiente diplomático, pergunte:\n“Que regra não escrita ninguém aqui ousa quebrar?”"
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando entrar numa corte, conselho ou ambiente diplomático, pergunte:\n“Que regra não escrita ninguém aqui ousa quebrar?”",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2817"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2818",
+      "paragrafo_docx": 2818,
+      "grupo": "NOBRE",
+      "categoria": "classe",
+      "titulo": "FAVOR POLÍTICO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2818,
+          "tipo": "corpo",
+          "texto": "Quando prestar um serviço significativo a uma pessoa poderosa e ela reconhecer publicamente a dívida, receba Domínio 1 sobre o Favor. Gaste para solicitar acesso, proteção, informação ou apresentação plausível."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando prestar um serviço significativo a uma pessoa poderosa e ela reconhecer publicamente a dívida, receba Domínio 1 sobre o Favor. Gaste para solicitar acesso, proteção, informação ou apresentação plausível.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2818"
+    }
+  ],
+  "integridade": {
+    "total_movimentos": 3,
+    "total_com_requer": 0,
+    "total_vinculos_exatos": 0,
+    "total_opcoes": 0,
+    "total_partes": 3
+  }
+}

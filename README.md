@@ -377,3 +377,10 @@ Transcritos **31 movimentos** de MERCENÁRIO com **37 opções**, **75 trechos d
 Contrabando, Recrutar e navegação sem REQUER literal não foram subordinados a CAPITÃO por inferência. A API `getMercenaryRequirementPreview` verifica cadeias sem autorizar compras. Veja [Integração Mercenário](docs/INTEGRACAO_MERCENARIO_HACK_DW.md).
 
 Restam nove movimentos distribuídos entre ESCRIBA YOKAI (3), NOBRE (3) e ARQUEÓLOGO (3).
+
+
+## Hack Carcaça Dungeon World: 100% de cobertura documental das classes
+
+A transcrição integral dos **632 movimentos de classe, distribuídos por 18 grupos**, está publicada em catálogos legíveis, indexada e identificada por origem no manuscrito DOCX. Neste ciclo final entraram **Escriba Yokai (3)**, **Nobre (3)** e **Arqueólogo (3)**, sem opções ou REQUER literais. O índice global comprova os 632 IDs inventariados com texto integral disponível e nenhum movimento pendente.
+
+A conclusão é **documental**, não uma homologação de mecânicas: todos os novos movimentos mantêm `aplicacao_canonica:false`, como os movimentos de classe anteriores. O texto de CAMADAS contém uma aspa inicial isolada, preservada até revisão autoral. Consulte [Fechamento das Classes](docs/FECHAMENTO_CLASSES_HACK_DW.md).

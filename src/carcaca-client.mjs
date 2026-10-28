@@ -60,6 +60,36 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getFinalClassMovements(key){
+    return byKey(key);
+  }
+  async function getFinalClassIndexes(key){
+    return byKey(key);
+  }
+  async function searchFinalClassMoves(key,{titulo,query,paragrafo}={}){
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return (await byKey(key)).filter(m=>
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
+  }
+  async function getYokaiScribeMovements(){return getFinalClassMovements("hack_yokai_scribe_movements");}
+  async function getYokaiScribeMovementIndexes(){return getFinalClassIndexes("hack_yokai_scribe_movement_indexes");}
+  async function searchYokaiScribeMovements(filters={}){return searchFinalClassMoves("hack_yokai_scribe_movements",filters);}
+  async function getNobleMovements(){return getFinalClassMovements("hack_noble_movements");}
+  async function getNobleMovementIndexes(){return getFinalClassIndexes("hack_noble_movement_indexes");}
+  async function searchNobleMovements(filters={}){return searchFinalClassMoves("hack_noble_movements",filters);}
+  async function getArchaeologistMovements(){return getFinalClassMovements("hack_archaeologist_movements");}
+  async function getArchaeologistMovementIndexes(){return getFinalClassIndexes("hack_archaeologist_movement_indexes");}
+  async function searchArchaeologistMovements(filters={}){return searchFinalClassMoves("hack_archaeologist_movements",filters);}
+  async function getFinalClassMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    for(const key of ["hack_yokai_scribe_movements","hack_noble_movements","hack_archaeologist_movements"]){
+      const found=(await byKey(key)).find(m=>m.id===id);
+      if(found)return found;
+    }
+    return null;
+  }
   async function getMercenaryMovements(){return byKey("hack_mercenary_movements");}
   async function getMercenaryMovementIndexes(){return byKey("hack_mercenary_movement_indexes");}
   async function getMercenaryMovement(id){
@@ -952,6 +982,10 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           searchArtificerMovements,getArtificerRequirementPreview,
           getMercenaryMovements,getMercenaryMovement,getMercenaryMovementIndexes,
           searchMercenaryMovements,getMercenaryRequirementPreview,
+          getYokaiScribeMovements,getYokaiScribeMovementIndexes,searchYokaiScribeMovements,
+          getNobleMovements,getNobleMovementIndexes,searchNobleMovements,
+          getArchaeologistMovements,getArchaeologistMovementIndexes,searchArchaeologistMovements,
+          getFinalClassMovement,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,

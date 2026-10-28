@@ -2120,6 +2120,64 @@ def validar_mercenario_integral():
                 "Mercenário: Capitão não é requisito universal.")
     print("Mercenário: 31 movimentos, 37 opções, 75 partes, 11 REQUER, duas árvores.")
 
+
+def validar_fechamento_classes_integrais():
+    """Prova os nove textos finais e a cobertura 632/632 do inventário de 18 grupos."""
+    from hack_movimentos_personagem import build_final_class_indexes
+    inventory=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    rows=inventory["movimentos"]
+    require(len(rows)==632 and len({m["id"] for m in rows})==632
+            and len({m["grupo"] for m in rows})==18,
+            "Inventário de classes não possui 632 movimentos únicos em 18 grupos.")
+    expected=(("ESCRIBA YOKAI","escriba-yokai",2812,2814),
+              ("NOBRE","nobre",2816,2818),
+              ("ARQUEÓLOGO","arqueologo",2820,2822))
+    all_ids=set()
+    for grupo,slug,first,last in expected:
+        obj=load("data/lore/hack-carcaca-dw-"+slug+"-integrais.json")
+        moves=obj["movimentos"]
+        require(obj["fonte_sha256"]==inventory["fonte_sha256"]
+                and obj["grupo"]==grupo,
+                "Fonte ou classe divergente em "+grupo)
+        require(obj["integridade"]=={"total_movimentos":3,"total_com_requer":0,
+              "total_vinculos_exatos":0,"total_opcoes":0,"total_partes":3},
+              "Integridade do grupo final divergente: "+grupo)
+        originals={m["id"]:m for m in rows if m["grupo"]==grupo}
+        require(len(moves)==len(originals)==3
+                and [m["paragrafo_docx"] for m in moves]==list(range(first,last+1)),
+                "Nove movimentos finais incompletos ou fora da posição de origem.")
+        seen=set()
+        for move in moves:
+            source=originals.get(move["id"])
+            require(source and move["titulo"]==source["titulo"]
+                    and move["paragrafo_docx"]==source["paragrafo_docx"]
+                    and source["requisito_literal"] is None,
+                    "Inventário e transcrição final divergem.")
+            require(not move["requisito_literal"] and not move["requisito_estruturado"]
+                    and not move["opcoes"] and len(move["partes"])==1,
+                    "REQUER/opção foi inferido sem evidência documental.")
+            require(move["texto_original"]==move["partes"][0]["texto"]
+                    and move["partes"][0]["paragrafo_docx"]==move["paragrafo_docx"]
+                    and move["partes"][0]["tipo"]=="corpo" and bool(move["texto_original"]),
+                    "Corpo do movimento ausente ou sem proveniência.")
+            require(move["texto_integral_conferido"] is True
+                    and move["aplicacao_canonica"] is False
+                    and move["estado"]=="transcricao_integral_sem_revisao_mecanica",
+                    "Transcrição não é homologação mecânica.")
+            require(move["id"] not in all_ids and move["id"] not in seen,
+                    "ID duplicado entre grupos finais.")
+            all_ids.add(move["id"]);seen.add(move["id"])
+        idx=build_final_class_indexes(moves)
+        require(len(idx["by_tem_requer"]["nao"])==3
+                and len(idx["by_tem_opcoes"]["nao"])==3
+                and not idx["by_requisito_id"],
+                "Índices finais registraram pré-requisitos inexistentes.")
+    require(len(all_ids)==9,"Os nove movimentos não foram todos transcritos.")
+    archaeologist=load("data/lore/hack-carcaca-dw-arqueologo-integrais.json")["movimentos"]
+    require(archaeologist[0]["texto_original"].startswith("‘Quando"),
+            "O caractere de abertura editorial de CAMADAS deve ser preservado até revisão autoral.")
+    print("Fechamento documental: 9 movimentos, 0 opções, 0 REQUER; 18 grupos / 632 IDs inventariados.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2231,6 +2289,7 @@ def main():
     validar_necromante_integral()
     validar_artifice_integral()
     validar_mercenario_integral()
+    validar_fechamento_classes_integrais()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

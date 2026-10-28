@@ -1,0 +1,83 @@
+{
+  "schema_version": "0.1.0",
+  "fonte": "Hack Carcaça Dungeon World(1).docx",
+  "fonte_sha256": "b53d1d5a057e8f6cba8a5d5ccd70747df3ce94d07ff2e2ffb9031368ea773b3d",
+  "grupo": "ARQUEÓLOGO",
+  "posicao": "indices_paragrafo_docx_zero_based",
+  "descricao": "Transcrição completa de movimentos do grupo ARQUEÓLOGO; sem homologação mecânica.",
+  "movimentos": [
+    {
+      "id": "movimento-classe:paragrafo-2820",
+      "paragrafo_docx": 2820,
+      "grupo": "ARQUEÓLOGO",
+      "categoria": "classe",
+      "titulo": "CAMADAS",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2820,
+          "tipo": "corpo",
+          "texto": "‘Quando examinar uma ruína, pergunte: “O que aqui pertence a uma ocupação mais antiga do que parece?”"
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "‘Quando examinar uma ruína, pergunte: “O que aqui pertence a uma ocupação mais antiga do que parece?”",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2820"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2821",
+      "paragrafo_docx": 2821,
+      "grupo": "ARQUEÓLOGO",
+      "categoria": "classe",
+      "titulo": "NÃO TOQUE NISSO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2821,
+          "tipo": "corpo",
+          "texto": "Quando identificar uma estrutura, inscrição ou artefato antigo antes de alguém manipulá-lo, pergunte ao Mestre:\n“Qual é a maneira mais perigosa de interagir com isto?”"
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando identificar uma estrutura, inscrição ou artefato antigo antes de alguém manipulá-lo, pergunte ao Mestre:\n“Qual é a maneira mais perigosa de interagir com isto?”",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2821"
+    },
+    {
+      "id": "movimento-classe:paragrafo-2822",
+      "paragrafo_docx": 2822,
+      "grupo": "ARQUEÓLOGO",
+      "categoria": "classe",
+      "titulo": "CONTEXTO É TUDO",
+      "requisito_literal": null,
+      "requisito_estruturado": null,
+      "partes": [
+        {
+          "paragrafo_docx": 2822,
+          "tipo": "corpo",
+          "texto": "Quando preservar cuidadosamente o contexto de uma descoberta em vez de simplesmente retirar o objeto valioso, receba 1 Preparo relacionado ao povo que produziu aquilo."
+        }
+      ],
+      "opcoes": [],
+      "texto_original": "Quando preservar cuidadosamente o contexto de uma descoberta em vez de simplesmente retirar o objeto valioso, receba 1 Preparo relacionado ao povo que produziu aquilo.",
+      "texto_integral_conferido": true,
+      "estado": "transcricao_integral_sem_revisao_mecanica",
+      "aplicacao_canonica": false,
+      "origem_inventario_id": "movimento-classe:paragrafo-2822"
+    }
+  ],
+  "integridade": {
+    "total_movimentos": 3,
+    "total_com_requer": 0,
+    "total_vinculos_exatos": 0,
+    "total_opcoes": 0,
+    "total_partes": 3
+  }
+}

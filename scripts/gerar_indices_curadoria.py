@@ -283,12 +283,15 @@ def build():
     necromante_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-necromante-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
     artifice_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-artifice-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
     mercenario_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-mercenario-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
+    escriba_yokai_docx=load("data/lore/hack-carcaca-dw-escriba-yokai-integrais.json")["movimentos"]
+    nobre_docx=load("data/lore/hack-carcaca-dw-nobre-integrais.json")["movimentos"]
+    arqueologo_docx=load("data/lore/hack-carcaca-dw-arqueologo-integrais.json")["movimentos"]
     dependencias_classes=classes_docx["dependencias_exatas_candidatas"]
     dependencias_pendentes=classes_docx["dependencias_nao_resolvidas"]
     try:
-        from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes,build_mage_indexes,build_sorcerer_indexes,build_warlock_indexes,build_necromancer_indexes,build_artificer_indexes,build_mercenary_indexes
+        from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes,build_mage_indexes,build_sorcerer_indexes,build_warlock_indexes,build_necromancer_indexes,build_artificer_indexes,build_mercenary_indexes,build_final_class_indexes
     except ModuleNotFoundError:
-        from hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes,build_mage_indexes,build_sorcerer_indexes,build_warlock_indexes,build_necromancer_indexes,build_artificer_indexes,build_mercenary_indexes
+        from hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes,build_mage_indexes,build_sorcerer_indexes,build_warlock_indexes,build_necromancer_indexes,build_artificer_indexes,build_mercenary_indexes,build_final_class_indexes
     regras_nucleo=load("data/lore/hack-carcaca-dw-regras-nucleo.json")
     quadros_integrais=load("data/lore/hack-carcaca-dw-quadros-integrais.json")
     movimentos_gerais=compilar_movimentos_gerais(quadros_integrais,docx_tables)
@@ -321,7 +324,14 @@ def build():
     necromante_por_id={m["id"]:m for m in necromante_docx}
     artifice_por_id={m["id"]:m for m in artifice_docx}
     mercenario_por_id={m["id"]:m for m in mercenario_docx}
-    integral_por_id={**guerreiro_por_id,**barbaro_por_id,**cacador_por_id,**ladino_por_id,**bardo_por_id,**artista_marcial_por_id,**paladino_por_id,**clerigo_por_id,**druida_por_id,**mago_por_id,**feiticeiro_por_id,**bruxo_por_id,**necromante_por_id,**artifice_por_id,**mercenario_por_id}
+    escriba_yokai_por_id={m["id"]:m for m in escriba_yokai_docx}
+    nobre_por_id={m["id"]:m for m in nobre_docx}
+    arqueologo_por_id={m["id"]:m for m in arqueologo_docx}
+    integral_por_id={**guerreiro_por_id,**barbaro_por_id,**cacador_por_id,**ladino_por_id,**bardo_por_id,**artista_marcial_por_id,**paladino_por_id,**clerigo_por_id,**druida_por_id,**mago_por_id,**feiticeiro_por_id,**bruxo_por_id,**necromante_por_id,**artifice_por_id,**mercenario_por_id,**escriba_yokai_por_id,**nobre_por_id,**arqueologo_por_id}
+    if (len(integral_por_id)!=632 or len(movimentos_classes)!=632 or
+        set(integral_por_id)!={m["id"] for m in movimentos_classes} or
+        len({m["grupo"] for m in movimentos_classes})!=18):
+        raise ValueError("Cobertura integral das 18 classes falhou: IDs faltantes, duplicados ou não inventariados")
     classes_docx_piloto=[{**x,"revisao_preliminar_id":reviewed_paragraphs.get(x["paragrafo_docx"]),
                          "texto_integral_id":x["id"] if x["id"] in integral_por_id else None,
                          "texto_integral_disponivel":x["id"] in integral_por_id}
@@ -341,6 +351,9 @@ def build():
     indice_necromante_docx=build_necromancer_indexes(necromante_docx)
     indice_artifice_docx=build_artificer_indexes(artifice_docx)
     indice_mercenario_docx=build_mercenary_indexes(mercenario_docx)
+    indice_escriba_yokai_docx=build_final_class_indexes(escriba_yokai_docx)
+    indice_nobre_docx=build_final_class_indexes(nobre_docx)
+    indice_arqueologo_docx=build_final_class_indexes(arqueologo_docx)
     indice_povos_docx=build_people_indexes(povos_docx)
     indice_classes_docx=build_class_indexes(classes_docx_piloto,dependencias_classes,dependencias_pendentes)
     complete_move_indexes={k:defaultdict(set) for k in ("by_grupo","by_marcador","by_preliminar")}
@@ -537,6 +550,12 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "hack_yokai_scribe_movements":"hack-yokai-scribe-movements.json",
+        "hack_yokai_scribe_movement_indexes":"hack-yokai-scribe-movement-indexes.json",
+        "hack_noble_movements":"hack-noble-movements.json",
+        "hack_noble_movement_indexes":"hack-noble-movement-indexes.json",
+        "hack_archaeologist_movements":"hack-archaeologist-movements.json",
+        "hack_archaeologist_movement_indexes":"hack-archaeologist-movement-indexes.json",
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
@@ -623,6 +642,12 @@ def build():
         "total_movimentos_mercenario_integrais":len(mercenario_docx),
         "total_opcoes_mercenario":sum(len(m["opcoes"]) for m in mercenario_docx),
         "total_requer_mercenario":sum(bool(m["requisito_literal"]) for m in mercenario_docx),
+        "total_movimentos_escriba_yokai_integrais":len(escriba_yokai_docx),
+        "total_movimentos_nobre_integrais":len(nobre_docx),
+        "total_movimentos_arqueologo_integrais":len(arqueologo_docx),
+        "total_movimentos_classe_integrais":len(integral_por_id),
+        "total_grupos_classe_integrais":len({m["grupo"] for m in movimentos_classes}),
+        "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_movimentos_ladino_integrais":len(ladino_docx),
         "total_opcoes_ladino":sum(len(m["opcoes"]) for m in ladino_docx),
         "total_requer_ladino":sum(bool(m["requisito_literal"]) for m in ladino_docx),
@@ -710,6 +735,12 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["hack_yokai_scribe_movements"]:escriba_yokai_docx,
+           files["hack_yokai_scribe_movement_indexes"]:indice_escriba_yokai_docx,
+           files["hack_noble_movements"]:nobre_docx,
+           files["hack_noble_movement_indexes"]:indice_nobre_docx,
+           files["hack_archaeologist_movements"]:arqueologo_docx,
+           files["hack_archaeologist_movement_indexes"]:indice_arqueologo_docx,
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,
