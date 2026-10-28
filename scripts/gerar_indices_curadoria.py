@@ -260,6 +260,31 @@ def build():
     preconquista_xv=load("data/worldbuilding/eldroth-preconquista-ciclo15.json")
     ocupacao_xvi=load("data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json")
     vandar_xvii=load("data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json")
+    ironwood_xviii=load("data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json")
+    categorias_xviii=("eixos_sociais","modelos_de_governanca","relacoes_diplomaticas",
+                     "circuitos_de_cuidado","dilemas","vinhetas")
+    registros_xviii=[{**entry,"categoria_indice":cat}
+        for cat in categorias_xviii for entry in ironwood_xviii[cat]]
+    if len(registros_xviii)!=27:
+        raise ValueError("Ciclo XVIII exige 27 registros exploratórios.")
+    def indexar_ironwood(extract):
+        groups=defaultdict(set)
+        for entry in registros_xviii:
+            vals=extract(entry)
+            for val in (vals if isinstance(vals,list) else [vals]):
+                if val is not None and val!="":
+                    groups[str(val)].add(entry["id"])
+        return {k:sorted(v) for k,v in sorted(groups.items())}
+    indexes_ironwood_xviii={
+        "by_categoria":indexar_ironwood(lambda x:x["categoria_indice"]),
+        "by_tema":indexar_ironwood(lambda x:x.get("tema_social")),
+        "by_eixo":indexar_ironwood(lambda x:x.get("eixo_id")),
+        "by_modelo":indexar_ironwood(lambda x:x.get("modelo_id")),
+        "by_pagina_manuscrito":indexar_ironwood(lambda x:[
+            str(src["pagina"]) for src in (x.get("fontes_contextuais") or
+                ([x["fonte_contextual"]] if x.get("fonte_contextual") else []))]),
+        "by_estado":indexar_ironwood(lambda x:x.get("estado"))
+    }
     categorias_xvii=("fases","tecidos_urbanos","modalidades_de_prova","situacoes_de_morte",
         "papeis_sociais","modelos_do_dominio","vinhetas")
     registros_xvii=[{**entry,"categoria_indice":cat}
@@ -959,6 +984,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "ironwood_civil_society":"ironwood-civil-society.json",
+        "ironwood_civil_society_indexes":"ironwood-civil-society-indexes.json",
         "vandar_memory_and_dead":"vandar-memory-and-dead.json",
         "vandar_memory_and_dead_indexes":"vandar-memory-and-dead-indexes.json",
         "eldroth_sylara_occupation":"eldroth-sylara-occupation.json",
@@ -1093,6 +1120,12 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_eixos_ironwood_xviii":len(ironwood_xviii["eixos_sociais"]),
+        "total_modelos_ironwood_xviii":len(ironwood_xviii["modelos_de_governanca"]),
+        "total_relacoes_ironwood_xviii":len(ironwood_xviii["relacoes_diplomaticas"]),
+        "total_circuitos_ironwood_xviii":len(ironwood_xviii["circuitos_de_cuidado"]),
+        "total_dilemas_ironwood_xviii":len(ironwood_xviii["dilemas"]),
+        "total_vinhetas_ironwood_xviii":len(ironwood_xviii["vinhetas"]),
         "total_fases_vandar_xvii":len(vandar_xvii["fases"]),
         "total_tecidos_urbanos_vandar_xvii_propostos":len(vandar_xvii["tecidos_urbanos"]),
         "total_modalidades_prova_vandar_xvii":len(vandar_xvii["modalidades_de_prova"]),
@@ -1245,6 +1278,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["ironwood_civil_society"]:ironwood_xviii,
+           files["ironwood_civil_society_indexes"]:indexes_ironwood_xviii,
            files["vandar_memory_and_dead"]:vandar_xvii,
            files["vandar_memory_and_dead_indexes"]:indexes_vandar_xvii,
            files["eldroth_sylara_occupation"]:ocupacao_xvi,

@@ -1,0 +1,567 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XVIII — Ironwood, a sociedade que resiste",
+  "estado": "dossie_sociohistorico_proposto",
+  "aprovacao_autoral": false,
+  "efeito_canonico_automatico": false,
+  "lugar": "Ironwood",
+  "localizacao_documentada": "Fortaleza ranger ao sul das Montanhas de Thargrid",
+  "id_lugar_geografico": null,
+  "id_regiao_geografica": null,
+  "lideranca_militar_documentada": "Elara Stormoak",
+  "fonte_autoral": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "fatos_documentados": [
+    {
+      "fonte": {
+        "pagina": 6,
+        "afirmacao_contextual": "Fortaleza dos rangers ao sul de Thargrid.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "afirmacao": "Ironwood se situa ao sul das Montanhas de Thargrid."
+    },
+    {
+      "fonte": {
+        "pagina": 7,
+        "afirmacao_contextual": "Resistência descentralizada sem liderança universal.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "afirmacao": "Ironwood é um polo independente de resistência."
+    },
+    {
+      "fonte": {
+        "pagina": 18,
+        "afirmacao_contextual": "Elara lidera companhias ranger.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "afirmacao": "Elara Stormoak lidera Ironwood e sua atividade ranger."
+    },
+    {
+      "fonte": {
+        "pagina": 18,
+        "afirmacao_contextual": "Ações são ponderadas para não arriscar aldeias.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "afirmacao": "Os rangers consideram o risco a civis ao decidir atacar."
+    },
+    {
+      "fonte": {
+        "pagina": 18,
+        "afirmacao_contextual": "Apoio de humanos, meio-elfos, feéricos, gnomos e refugiados.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "afirmacao": "A resistência não é composta apenas de elfos da floresta."
+    },
+    {
+      "fonte": {
+        "pagina": 20,
+        "afirmacao_contextual": "Gnomos da floresta colaboram com rangers e usam ilusões.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "afirmacao": "Gnomos da floresta podem ser aliados em Ironwood."
+    },
+    {
+      "fonte": {
+        "pagina": 24,
+        "afirmacao_contextual": "Tradições élficas de Rillifane, Sehanine e Corellon.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "afirmacao": "Fé entre os elfos da floresta é plural."
+    }
+  ],
+  "limites": [
+    "Ironwood não possui ID próprio em data/regioes_carcaca.json ou data/lugares_carcaca.json; não inventar identificador canônico nem associar a Eldroth.",
+    "A liderança de Elara é ranger e militar; não prova poder civil total, título régio ou comando de Thargrid.",
+    "Não inventar escola, parlamento, conselho, guilda, imposto, quota, oficina, população ou orçamento como instituição existente.",
+    "Comandos, pactos e modelos de deliberação são alternativas, não legislação em vigor.",
+    "A origem de uma pessoa não determina lealdade e não estabelece direitos ou desvantagens por raça.",
+    "Ironwood não é subordinada a Thargrid; a relação militar não prova tratado ou comércio específico.",
+    "Gnomos, refugiados e elfos têm tradições e vontades próprias; não atribuir fidelidade universal nem localização de refúgios.",
+    "Aprender trilhas não comprova treinamento militar compulsório ou uso de crianças em missões.",
+    "Nenhuma rota, tempo de viagem, procedimento clandestino operacional, esconderijo ou ponto de apoio foi inventado.",
+    "Não impor culto religioso oficial nem rito idêntico entre culturas.",
+    "Vinhetas e dilemas não ocorreram, não têm desfecho, nomes ou efeito de campanha.",
+    "Não modificar nenhum monstro canônico ou regra de Dungeon World."
+  ],
+  "contagens": {
+    "eixos": 8,
+    "modelos_governanca": 3,
+    "relacoes_diplomaticas": 4,
+    "circuitos_de_cuidado": 4,
+    "dilemas": 4,
+    "vinhetas": 4,
+    "decisoes": 8
+  },
+  "eixos_sociais": [
+    {
+      "id": "worldbuilding-xviii:eixo:reservas",
+      "nome_editorial": "O alimento antes do arco",
+      "tema_social": "subsistencia",
+      "base_documental_e_limite": "A produção e os estoques não são descritos, mas uma fortaleza e seus protegidos precisam de sustento.",
+      "tensao_social": "O prestígio da guerrilha pode eclipsar quem produz, conserva e serve alimento.",
+      "pergunta_autoral": "Quem divide comida entre crianças, patrulheiros e refugiados?",
+      "exemplo_de_pratica_candidata": "Deliberar sobre a responsabilidade coletiva, permitir contestação civil e preservar a autonomia das pessoas afetadas sem criar instituição específica.",
+      "fonte_contextual": {
+        "pagina": 7,
+        "afirmacao_contextual": "A produção e os estoques não são descritos, mas uma fortaleza e seus protegidos precisam de sustento.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "estado": "proposta_de_historia_social",
+      "instituicao_documentada": false,
+      "recurso_quantificado": null
+    },
+    {
+      "id": "worldbuilding-xviii:eixo:oficios",
+      "nome_editorial": "Quem repara a vitória",
+      "tema_social": "trabalho",
+      "base_documental_e_limite": "Roupas, abrigos e objetos usados requerem cuidado, mas nenhuma oficina ou guilda é documentada.",
+      "tensao_social": "O trabalho civil pode ser imposto em nome da sobrevivência coletiva.",
+      "pergunta_autoral": "Quem responde pelos danos e reparos de uma missão?",
+      "exemplo_de_pratica_candidata": "Deliberar sobre a responsabilidade coletiva, permitir contestação civil e preservar a autonomia das pessoas afetadas sem criar instituição específica.",
+      "fonte_contextual": {
+        "pagina": 7,
+        "afirmacao_contextual": "Roupas, abrigos e objetos usados requerem cuidado, mas nenhuma oficina ou guilda é documentada.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "estado": "proposta_de_historia_social",
+      "instituicao_documentada": false,
+      "recurso_quantificado": null
+    },
+    {
+      "id": "worldbuilding-xviii:eixo:infancia",
+      "nome_editorial": "Aprender trilhas sem nascer soldado",
+      "tema_social": "educacao",
+      "base_documental_e_limite": "O manuscrito afirma que crianças aprendem trilhas antes de mapas; não descreve escolas nem recrutamento.",
+      "tensao_social": "A proteção do bosque pode ser confundida com treinamento militar obrigatório.",
+      "pergunta_autoral": "Ensinar caminhos é educar uma criança ou prepará-la compulsoriamente para guerrear?",
+      "exemplo_de_pratica_candidata": "Deliberar sobre a responsabilidade coletiva, permitir contestação civil e preservar a autonomia das pessoas afetadas sem criar instituição específica.",
+      "fonte_contextual": {
+        "pagina": 18,
+        "afirmacao_contextual": "O manuscrito afirma que crianças aprendem trilhas antes de mapas; não descreve escolas nem recrutamento.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "estado": "proposta_de_historia_social",
+      "instituicao_documentada": false,
+      "recurso_quantificado": null
+    },
+    {
+      "id": "worldbuilding-xviii:eixo:acolhimento",
+      "nome_editorial": "A casa de quem chegou ontem",
+      "tema_social": "refugio",
+      "base_documental_e_limite": "Refugiados de Eldroth mantêm vínculos com a resistência; nenhuma política de asilo é comprovada.",
+      "tensao_social": "A gratidão exigida por acolhimento pode se transformar em dependência.",
+      "pergunta_autoral": "Quando um refugiado deixa de ser hóspede para integrar a comunidade?",
+      "exemplo_de_pratica_candidata": "Deliberar sobre a responsabilidade coletiva, permitir contestação civil e preservar a autonomia das pessoas afetadas sem criar instituição específica.",
+      "fonte_contextual": {
+        "pagina": 17,
+        "afirmacao_contextual": "Refugiados de Eldroth mantêm vínculos com a resistência; nenhuma política de asilo é comprovada.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "estado": "proposta_de_historia_social",
+      "instituicao_documentada": false,
+      "recurso_quantificado": null
+    },
+    {
+      "id": "worldbuilding-xviii:eixo:governo",
+      "nome_editorial": "O comando de Elara e a voz dos demais",
+      "tema_social": "autoridade",
+      "base_documental_e_limite": "Elara lidera rangers, mas o governo civil formal não está descrito.",
+      "tensao_social": "A disciplina de combate pode conferir poderes demais ao comando.",
+      "pergunta_autoral": "Quem decide questões civis quando a decisão militar ameaça vidas e moradias?",
+      "exemplo_de_pratica_candidata": "Deliberar sobre a responsabilidade coletiva, permitir contestação civil e preservar a autonomia das pessoas afetadas sem criar instituição específica.",
+      "fonte_contextual": {
+        "pagina": 18,
+        "afirmacao_contextual": "Elara lidera rangers, mas o governo civil formal não está descrito.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "estado": "proposta_de_historia_social",
+      "instituicao_documentada": false,
+      "recurso_quantificado": null
+    },
+    {
+      "id": "worldbuilding-xviii:eixo:religiao",
+      "nome_editorial": "Fé que não precisa de um templo único",
+      "tema_social": "religiao",
+      "base_documental_e_limite": "Rillifane, Sehanine e Corellon integram tradições élficas; não há religião oficial de Ironwood.",
+      "tensao_social": "Ritos de diferentes povos podem ser apagados por uma identidade militar uniforme.",
+      "pergunta_autoral": "Quem pode impor limites religiosos a uma decisão de segurança?",
+      "exemplo_de_pratica_candidata": "Deliberar sobre a responsabilidade coletiva, permitir contestação civil e preservar a autonomia das pessoas afetadas sem criar instituição específica.",
+      "fonte_contextual": {
+        "pagina": 24,
+        "afirmacao_contextual": "Rillifane, Sehanine e Corellon integram tradições élficas; não há religião oficial de Ironwood.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "estado": "proposta_de_historia_social",
+      "instituicao_documentada": false,
+      "recurso_quantificado": null
+    },
+    {
+      "id": "worldbuilding-xviii:eixo:segredo",
+      "nome_editorial": "O silêncio que protege ou cala",
+      "tema_social": "informacao",
+      "base_documental_e_limite": "Patrulhas evitam padrões e fragmentam informações sensíveis.",
+      "tensao_social": "Sigilo pode ser ferramenta legítima de proteção ou pretexto para impunidade.",
+      "pergunta_autoral": "Como esconder operações sem ocultar abusos contra civis?",
+      "exemplo_de_pratica_candidata": "Deliberar sobre a responsabilidade coletiva, permitir contestação civil e preservar a autonomia das pessoas afetadas sem criar instituição específica.",
+      "fonte_contextual": {
+        "pagina": 18,
+        "afirmacao_contextual": "Patrulhas evitam padrões e fragmentam informações sensíveis.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "estado": "proposta_de_historia_social",
+      "instituicao_documentada": false,
+      "recurso_quantificado": null
+    },
+    {
+      "id": "worldbuilding-xviii:eixo:pertencimento",
+      "nome_editorial": "A resistência não é um povo só",
+      "tema_social": "pluralidade",
+      "base_documental_e_limite": "Humanos, meio-elfos, gnomos, refugiados e feéricos podem integrar a resistência.",
+      "tensao_social": "Lealdade não deve ser inferida por espécie, linhagem ou origem.",
+      "pergunta_autoral": "Quem tem voz quando as tradições ranger são élficas, mas os aliados têm muitas origens?",
+      "exemplo_de_pratica_candidata": "Deliberar sobre a responsabilidade coletiva, permitir contestação civil e preservar a autonomia das pessoas afetadas sem criar instituição específica.",
+      "fonte_contextual": {
+        "pagina": 18,
+        "afirmacao_contextual": "Humanos, meio-elfos, gnomos, refugiados e feéricos podem integrar a resistência.",
+        "estado": "manuscrito_em_revisao"
+      },
+      "estado": "proposta_de_historia_social",
+      "instituicao_documentada": false,
+      "recurso_quantificado": null
+    }
+  ],
+  "modelos_de_governanca": [
+    {
+      "id": "worldbuilding-xviii:modelo:comando-consultivo",
+      "nome_editorial": "Defesa liderada por Elara, abastecimento deliberado por moradores",
+      "modelo_hipotetico": "Os habitantes poderiam contestar custos da guerra sem receber segredos de operação.",
+      "tensao_institucional": "Militares podem ignorar a deliberação em nome da urgência.",
+      "estado": "modelo_alternativo_nao_adotado",
+      "fontes_contextuais": [
+        {
+          "pagina": 7,
+          "afirmacao_contextual": "Resistência sem comando universal.",
+          "estado": "manuscrito_em_revisao"
+        },
+        {
+          "pagina": 18,
+          "afirmacao_contextual": "Elara lidera Ironwood e companhias ranger.",
+          "estado": "manuscrito_em_revisao"
+        }
+      ],
+      "instituicao_confirmada": false,
+      "autoridade_civil_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xviii:modelo:autonomia-local",
+      "nome_editorial": "Comunidades protegidas negociam apoio e mantêm autonomia civil",
+      "modelo_hipotetico": "Permite recusar operações que exponham moradias e reservas.",
+      "tensao_institucional": "Comunidades pobres podem acabar arcando com custos que outras recusam.",
+      "estado": "modelo_alternativo_nao_adotado",
+      "fontes_contextuais": [
+        {
+          "pagina": 7,
+          "afirmacao_contextual": "Resistência sem comando universal.",
+          "estado": "manuscrito_em_revisao"
+        },
+        {
+          "pagina": 18,
+          "afirmacao_contextual": "Elara lidera Ironwood e companhias ranger.",
+          "estado": "manuscrito_em_revisao"
+        }
+      ],
+      "instituicao_confirmada": false,
+      "autoridade_civil_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xviii:modelo:assembleia-mista",
+      "nome_editorial": "Moradores, acolhidos e patrulheiros compartilham deliberação",
+      "modelo_hipotetico": "Ampliaria legitimidade e voz dos afetados.",
+      "tensao_institucional": "O processo seria lento e poderia expor informações militares.",
+      "estado": "modelo_alternativo_nao_adotado",
+      "fontes_contextuais": [
+        {
+          "pagina": 7,
+          "afirmacao_contextual": "Resistência sem comando universal.",
+          "estado": "manuscrito_em_revisao"
+        },
+        {
+          "pagina": 18,
+          "afirmacao_contextual": "Elara lidera Ironwood e companhias ranger.",
+          "estado": "manuscrito_em_revisao"
+        }
+      ],
+      "instituicao_confirmada": false,
+      "autoridade_civil_confirmada": null
+    }
+  ],
+  "relacoes_diplomaticas": [
+    {
+      "id": "worldbuilding-xviii:relacao:thargrid",
+      "nome_editorial": "Thargrid: reciprocidade sem subordinação",
+      "pergunta_politica": "Como dividir os custos da defesa entre potência territorial e guerrilha?",
+      "modelo_de_cooperacao_proposto": "Acordos bilaterais possíveis sem confundir cooperação com vassalagem.",
+      "fontes_contextuais": [
+        {
+          "pagina": 6,
+          "afirmacao_contextual": "Contexto no manuscrito.",
+          "estado": "manuscrito_em_revisao"
+        },
+        {
+          "pagina": 7,
+          "afirmacao_contextual": "Contexto complementar no manuscrito.",
+          "estado": "manuscrito_em_revisao"
+        }
+      ],
+      "estado": "relacao_interpretativa_nao_institucionalizada",
+      "tratado_assinado": false,
+      "subordinacao_confirmada": false,
+      "fluxo_quantificado": null
+    },
+    {
+      "id": "worldbuilding-xviii:relacao:eldroth",
+      "nome_editorial": "Eldroth: parentesco não é tutela",
+      "pergunta_politica": "Quem decide sobre retorno e proteção de refugiados?",
+      "modelo_de_cooperacao_proposto": "Respeitar escolha dos deslocados e autonomia de círculos de Eldroth.",
+      "fontes_contextuais": [
+        {
+          "pagina": 17,
+          "afirmacao_contextual": "Contexto no manuscrito.",
+          "estado": "manuscrito_em_revisao"
+        },
+        {
+          "pagina": 18,
+          "afirmacao_contextual": "Contexto complementar no manuscrito.",
+          "estado": "manuscrito_em_revisao"
+        }
+      ],
+      "estado": "relacao_interpretativa_nao_institucionalizada",
+      "tratado_assinado": false,
+      "subordinacao_confirmada": false,
+      "fluxo_quantificado": null
+    },
+    {
+      "id": "worldbuilding-xviii:relacao:gnomos",
+      "nome_editorial": "Gnomos: conhecimento que pode ser recusado",
+      "pergunta_politica": "Quem controla o uso político de mapas e ilusões?",
+      "modelo_de_cooperacao_proposto": "Colaboração técnica voluntária, sem exigir divulgação de comunidades ocultas.",
+      "fontes_contextuais": [
+        {
+          "pagina": 20,
+          "afirmacao_contextual": "Contexto no manuscrito.",
+          "estado": "manuscrito_em_revisao"
+        },
+        {
+          "pagina": 20,
+          "afirmacao_contextual": "Contexto complementar no manuscrito.",
+          "estado": "manuscrito_em_revisao"
+        }
+      ],
+      "estado": "relacao_interpretativa_nao_institucionalizada",
+      "tratado_assinado": false,
+      "subordinacao_confirmada": false,
+      "fluxo_quantificado": null
+    },
+    {
+      "id": "worldbuilding-xviii:relacao:feericos",
+      "nome_editorial": "Feéricos: origem não é fidelidade",
+      "pergunta_politica": "Como construir confiança sem perseguir descendentes de refugiados?",
+      "modelo_de_cooperacao_proposto": "Pertencimento por responsabilidade e convivência, sem prova racial de lealdade.",
+      "fontes_contextuais": [
+        {
+          "pagina": 16,
+          "afirmacao_contextual": "Contexto no manuscrito.",
+          "estado": "manuscrito_em_revisao"
+        },
+        {
+          "pagina": 17,
+          "afirmacao_contextual": "Contexto complementar no manuscrito.",
+          "estado": "manuscrito_em_revisao"
+        }
+      ],
+      "estado": "relacao_interpretativa_nao_institucionalizada",
+      "tratado_assinado": false,
+      "subordinacao_confirmada": false,
+      "fluxo_quantificado": null
+    }
+  ],
+  "circuitos_de_cuidado": [
+    {
+      "id": "worldbuilding-xviii:circuito:despensas",
+      "nome_editorial": "Cuidar das reservas",
+      "trabalho_possivel": "Reunir, conservar e repartir alimento sem presumir culturas ou quantidades.",
+      "dilema_de_distribuicao": "Quem passa fome quando a resistência pede prioridade?",
+      "eixo_id": "worldbuilding-xviii:eixo:reservas",
+      "estado": "circuito_nao_quantificado",
+      "volume_confirmado": null,
+      "local_confirmado": null,
+      "rota_operacional_confirmada": false
+    },
+    {
+      "id": "worldbuilding-xviii:circuito:reparos",
+      "nome_editorial": "Reparar para continuar vivendo",
+      "trabalho_possivel": "Cuidar de casas, roupas, ferramentas e objetos sem atribuir oficinas concretas.",
+      "dilema_de_distribuicao": "Quem repara os danos causados pelo comando?",
+      "eixo_id": "worldbuilding-xviii:eixo:oficios",
+      "estado": "circuito_nao_quantificado",
+      "volume_confirmado": null,
+      "local_confirmado": null,
+      "rota_operacional_confirmada": false
+    },
+    {
+      "id": "worldbuilding-xviii:circuito:educacao",
+      "nome_editorial": "Educar sem recrutar",
+      "trabalho_possivel": "Transmitir tradição, ecologia e orientação sem exigir missão militar.",
+      "dilema_de_distribuicao": "Quem garante que crianças possam recusar a guerra?",
+      "eixo_id": "worldbuilding-xviii:eixo:infancia",
+      "estado": "circuito_nao_quantificado",
+      "volume_confirmado": null,
+      "local_confirmado": null,
+      "rota_operacional_confirmada": false
+    },
+    {
+      "id": "worldbuilding-xviii:circuito:contas",
+      "nome_editorial": "Prestar contas sem revelar caminhos",
+      "trabalho_possivel": "Explicar custos civis e perdas sem expor operações secretas.",
+      "dilema_de_distribuicao": "Como distinguir segredo legítimo de irresponsabilidade?",
+      "eixo_id": "worldbuilding-xviii:eixo:segredo",
+      "estado": "circuito_nao_quantificado",
+      "volume_confirmado": null,
+      "local_confirmado": null,
+      "rota_operacional_confirmada": false
+    }
+  ],
+  "dilemas": [
+    {
+      "id": "worldbuilding-xviii:dilema:aldeia-ou-operacao",
+      "nome_editorial": "A missão que poderia condenar uma aldeia",
+      "cena_condicional": "Uma ação promissora ameaça expor moradores não consultados.",
+      "pergunta_etica": "Uma liderança tem direito de aceitar esse risco em nome de outras pessoas?",
+      "eixo_id": "worldbuilding-xviii:eixo:governo",
+      "modelo_id": "worldbuilding-xviii:modelo:comando-consultivo",
+      "estado": "dilema_nao_ocorrido",
+      "ocorreu": false,
+      "desfecho_aceito": false
+    },
+    {
+      "id": "worldbuilding-xviii:dilema:crianca-cartografa",
+      "nome_editorial": "A criança que conhece os caminhos",
+      "cena_condicional": "Uma criança entende sinais da floresta que os adultos desejam utilizar militarmente.",
+      "pergunta_etica": "Aprender é consentir em combater?",
+      "eixo_id": "worldbuilding-xviii:eixo:infancia",
+      "modelo_id": "worldbuilding-xviii:modelo:assembleia-mista",
+      "estado": "dilema_nao_ocorrido",
+      "ocorreu": false,
+      "desfecho_aceito": false
+    },
+    {
+      "id": "worldbuilding-xviii:dilema:reparo-invisivel",
+      "nome_editorial": "A vitória e o trabalho que sobra",
+      "cena_condicional": "Um grupo retorna celebrado enquanto moradores avaliam a perda de suprimentos.",
+      "pergunta_etica": "Quem decide sobre o esforço de quem não esteve na batalha?",
+      "eixo_id": "worldbuilding-xviii:eixo:oficios",
+      "modelo_id": "worldbuilding-xviii:modelo:autonomia-local",
+      "estado": "dilema_nao_ocorrido",
+      "ocorreu": false,
+      "desfecho_aceito": false
+    },
+    {
+      "id": "worldbuilding-xviii:dilema:refugio-sem-voz",
+      "nome_editorial": "O hóspede que já sustenta a casa",
+      "cena_condicional": "Uma pessoa acolhida ajuda toda a comunidade e segue sem voz nas decisões.",
+      "pergunta_etica": "O pertencimento deriva de sangue, residência ou cuidado?",
+      "eixo_id": "worldbuilding-xviii:eixo:acolhimento",
+      "modelo_id": "worldbuilding-xviii:modelo:assembleia-mista",
+      "estado": "dilema_nao_ocorrido",
+      "ocorreu": false,
+      "desfecho_aceito": false
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "worldbuilding-xviii:vinheta:tigela",
+      "nome_editorial": "A tigela antes do arco",
+      "cena_condicional": "Uma pessoa reserva comida para quem voltou exausto de um trabalho anônimo.",
+      "implicacao_cultural": "Uma comunidade precisa comer antes de vencer.",
+      "eixo_id": "worldbuilding-xviii:eixo:reservas",
+      "estado": "vinheta_nao_ocorrida",
+      "ocorreu": false,
+      "personagem_canonico_criado": false,
+      "lugar_canonico_criado": false
+    },
+    {
+      "id": "worldbuilding-xviii:vinheta:trilha",
+      "nome_editorial": "A aula sem mapa",
+      "cena_condicional": "Uma criança reconhece plantas e diz que não aprendeu a obedecer a ordens militares.",
+      "implicacao_cultural": "Conhecimento não é recrutamento.",
+      "eixo_id": "worldbuilding-xviii:eixo:infancia",
+      "estado": "vinheta_nao_ocorrida",
+      "ocorreu": false,
+      "personagem_canonico_criado": false,
+      "lugar_canonico_criado": false
+    },
+    {
+      "id": "worldbuilding-xviii:vinheta:mensagem",
+      "nome_editorial": "O pedido das montanhas",
+      "cena_condicional": "Uma solicitação de ajuda chega; alguém pergunta quem cuidará das famílias durante a ausência.",
+      "implicacao_cultural": "Aliança não dissolve autonomia.",
+      "eixo_id": "worldbuilding-xviii:eixo:governo",
+      "estado": "vinheta_nao_ocorrida",
+      "ocorreu": false,
+      "personagem_canonico_criado": false,
+      "lugar_canonico_criado": false
+    },
+    {
+      "id": "worldbuilding-xviii:vinheta:conserto",
+      "nome_editorial": "O último reparo",
+      "cena_condicional": "Uma ferramenta retorna quebrada; o usuário é desconhecido, mas quem deve consertá-la está ali.",
+      "implicacao_cultural": "Trabalho invisível também é política.",
+      "eixo_id": "worldbuilding-xviii:eixo:oficios",
+      "estado": "vinheta_nao_ocorrida",
+      "ocorreu": false,
+      "personagem_canonico_criado": false,
+      "lugar_canonico_criado": false
+    }
+  ],
+  "decisoes_para_autor": [
+    {
+      "id": "worldbuilding-xviii:decisao:governo",
+      "pergunta": "Onde termina a autoridade militar de Elara e começa a deliberação civil?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xviii:decisao:membros",
+      "pergunta": "Quem pertence a Ironwood e quem tem direito de participar de decisões?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xviii:decisao:abastecimento",
+      "pergunta": "Como funciona a subsistência de Ironwood, com que recursos e quem trabalha?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xviii:decisao:infancia",
+      "pergunta": "Quais direitos de aprendizagem e recusa de participar da guerra as crianças possuem?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xviii:decisao:thargrid",
+      "pergunta": "Quais compromissos recíprocos com Thargrid podem ser acordados sem subordinação?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xviii:decisao:cultos",
+      "pergunta": "Como diversas tradições religiosas compartilham espaços, ritos e direitos?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xviii:decisao:segredo",
+      "pergunta": "Como proteger informações de segurança e prestar contas dos custos sociais?",
+      "estado": "pendente_de_aprovacao_autoral"
+    },
+    {
+      "id": "worldbuilding-xviii:decisao:futuro",
+      "pergunta": "Que projeto de sociedade existiria em Ironwood após o fim da Rainha da Noite?",
+      "estado": "pendente_de_aprovacao_autoral"
+    }
+  ]
+}

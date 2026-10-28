@@ -10,7 +10,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - **XV — concluído:** [Eldroth antes da conquista](docs/ELDROTH_PRECONQUISTA_CICLO15.md) — 4 fases, 8 práticas, 4 pactos, 4 ciclos materiais e 4 vinhetas; 24 alternativas ainda sem aprovação.
 - **XVI — concluído:** [Eldroth sob Sylara](docs/ELDROTH_SOB_SYLARA_CICLO16.md) — 8 mecanismos candidatos, 6 posições sociais, 3 modelos de regime não adotados, 4 dilemas, 4 vinhetas, 5 decisões pendentes. Zero políticas novas canonizadas.
 - **XVII — concluído:** [Vandar e a política dos mortos](docs/VANDAR_POLITICA_DOS_MORTOS_CICLO17.md): 3 fases sem datas, 8 temas urbanos, 5 formas propostas de prova, 4 estados não legais da morte, 6 papéis sociais, 3 modelos de ocupação não adotados, 4 vinhetas e 8 decisões autorais pendentes. Sem canonização.
-- **XVIII — planejado:** Ironwood e a resistência descentralizada: vida civil, autoridade de Elara, educação, economia e diplomacia com Thargrid.
+- **XVIII — concluído:** [Ironwood e a sociedade que resiste](docs/IRONWOOD_SOCIEDADE_RESISTENCIA_CICLO18.md) — 8 eixos sociais, 3 modelos de governo não adotados, 4 relações, 4 circuitos civis, 4 dilemas, 4 vinhetas e 8 perguntas editoriais.
 
 **Método dos próximos ciclos:** (1) localizar afirmações da ambientação; (2) apontar o que o manuscrito do Hack efetivamente acrescenta; (3) distinguir interpretações e lacunas; (4) produzir alternativas de worldbuilding materialmente diferentes; (5) pedir revisão autoral para qualquer promoção canônica. Evitar novas rodadas de dezenas de NPCs sem uma necessidade histórica ou social identificável.
 
@@ -486,4 +486,15 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Desenvolver 5 tipos de prova cuja confiabilidade pode ser contestada e 4 situações para discutir desaparecimento, morte, reanimação e identidade — sem virar lei de Vandar.
 - [x] Definir 6 papéis sociais hipotéticos, 3 modelos do domínio de Damaris **não adotados** e 4 vinhetas **não ocorridas**.
 - [x] Registrar 8 questões de revisão autoral e integrar dossiê, JSON, schema, índices determinísticos, cliente ESM e testes.
-- [ ] **XVIII — próximo:** Ironwood: vida civil, educação, trabalho, relação com Thargrid e instituições de uma resistência descentralizada. Não presumir soberania continental de Elara Stormoak.
+- [x] **XVIII concluído:** vida civil de Ironwood, sustentação da guerrilha, direitos da infância e diplomacia sem submissão a Thargrid.
+
+## Ciclo XVIII — Concluído: Ironwood, a sociedade que resiste
+
+- [x] Confrontar as páginas 6–7, 16–18, 20 e 24 do manuscrito com o atlas XIV, preservando localização e a autonomia de Ironwood.
+- [x] Formular 8 eixos de vida civil (alimento, trabalho, infância, asilo, autoridade, religião, segredo e pertencimento), sem afirmar novas instituições.
+- [x] Preparar 3 modelos opcionais de governo que distinguem a liderança ranger de Elara do poder civil, sem escolher um automaticamente.
+- [x] Estudar 4 relações diplomáticas (Thargrid, Eldroth, gnomos da floresta e feéricos), sem tratados ou vassalagem presumidos.
+- [x] Elaborar 4 circuitos não quantificados de trabalho/cuidado, 4 dilemas não ocorridos e 4 vinhetas de cotidiano.
+- [x] Destacar lacuna de geografia normalizada: não atribuir `lugar:ironwood` nem `regiao:ironwood` sem registrar fontes e categoria adequada.
+- [x] Produzir 8 decisões pendentes, documento narrativo, JSON, schema, índices, consultas ESM e testes de integridade.
+- [ ] **Próxima etapa editorial:** revisar com o autor propostas dos ciclos XIV–XVIII; definir quais práticas, organizações, datas e relações merecem entrar no cânone, sem criar fatos pela integração técnica.

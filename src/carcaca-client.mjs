@@ -60,6 +60,37 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getIronwoodCivilSociety(){return byKey("ironwood_civil_society");}
+  async function getIronwoodCivilSocietyIndexes(){return byKey("ironwood_civil_society_indexes");}
+  async function getIronwoodCivilSocietyEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xviii:"))return null;
+    const data=await getIronwoodCivilSociety();
+    for(const cat of ["eixos_sociais","modelos_de_governanca","relacoes_diplomaticas",
+      "circuitos_de_cuidado","dilemas","vinhetas","decisoes_para_autor"]){
+      const entry=data[cat].find(x=>x.id===id);
+      if(entry)return {...entry,categoria:cat};
+    }
+    return null;
+  }
+  async function searchIronwoodCivilSociety({categoria,tema,eixoId,modeloId,pagina,query}={}){
+    const data=await getIronwoodCivilSociety();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return ["eixos_sociais","modelos_de_governanca","relacoes_diplomaticas",
+      "circuitos_de_cuidado","dilemas","vinhetas"].flatMap(cat=>
+       data[cat].map(x=>({...x,categoria:cat}))).filter(x=>{
+       const fontes=x.fontes_contextuais??(x.fonte_contextual?[x.fonte_contextual]:[]);
+       const terms=[x.nome_editorial,x.tema_social,x.base_documental_e_limite,
+         x.pergunta_autoral,x.tensao_social,x.modelo_hipotetico,x.pergunta_politica,
+         x.modelo_de_cooperacao_proposto,x.trabalho_possivel,
+         x.cena_condicional,x.pergunta_etica,x.implicacao_cultural];
+       return (!categoria||x.categoria===categoria)&&
+         (!tema||x.tema_social===tema)&&
+         (!eixoId||x.eixo_id===eixoId||x.id===eixoId)&&
+         (!modeloId||x.modelo_id===modeloId||x.id===modeloId)&&
+         (pagina===undefined||fontes.some(f=>f.pagina===Number(pagina)))&&
+         (!query||norm(terms.filter(Boolean).join(" ")).includes(norm(query)));
+    });
+  }
   async function getVandarMemoryAndDead(){return byKey("vandar_memory_and_dead");}
   async function getVandarMemoryAndDeadIndexes(){return byKey("vandar_memory_and_dead_indexes");}
   async function getVandarMemoryAndDeadEntry(id){
@@ -1418,6 +1449,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getIronwoodCivilSociety,getIronwoodCivilSocietyIndexes,
+          getIronwoodCivilSocietyEntry,searchIronwoodCivilSociety,
           getVandarMemoryAndDead,getVandarMemoryAndDeadIndexes,
           getVandarMemoryAndDeadEntry,searchVandarMemoryAndDead,
           getEldrothSylaraOccupation,getEldrothSylaraOccupationIndexes,

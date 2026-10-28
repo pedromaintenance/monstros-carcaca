@@ -32,6 +32,14 @@ O [dossiê da história urbana de Vandar](docs/VANDAR_POLITICA_DOS_MORTOS_CICLO1
 
 A [base estruturada](data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json) organiza **3 fases sem datas**, **8 dimensões da vida urbana**, **5 modalidades possíveis de prova**, **4 categorias não legais de situação da morte**, **6 papéis sociais hipotéticos**, **3 modelos de ocupação não adotados**, **4 vinhetas não ocorridas** e **8 decisões de revisão autoral**. O pacote publicado `dist/carcaca/vandar-memory-and-dead.json` tem índices próprios e é consultável por `getVandarMemoryAndDead` e `searchVandarMemoryAndDead`. Nada foi automaticamente canonizado.
 
+## Ciclo XVIII — Ironwood, sociedade e resistência
+
+O [dossiê de Ironwood](docs/IRONWOOD_SOCIEDADE_RESISTENCIA_CICLO18.md) aprofunda a **vida civil de uma fortaleza que resiste à Rainha da Noite**. O manuscrito confirma Elara Stormoak como liderança ranger, atuação de guerra irregular ao sul de Thargrid, pluralidade de povos e alianças descentralizadas; **não define** quem governa assuntos civis, como se distribuem recursos nem quais instituições civis existem.
+
+A [base estruturada](data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json) reúne **8 eixos de cultura e política**, **3 alternativas de governo não adotadas**, **4 relações diplomáticas a desenvolver**, **4 circuitos de cuidado sem volumes definidos**, **4 dilemas**, **4 vinhetas não ocorridas** e **8 decisões pendentes**. Exportação: `dist/carcaca/ironwood-civil-society.json` e índices, consultáveis em `getIronwoodCivilSociety` e `searchIronwoodCivilSociety`.
+
+Ironwood ainda **não tem ID próprio** nos vocabulários atuais de regiões/lugares; a base não o inventa nem o coloca indevidamente em Eldroth. Nenhum conselho, tratado, rito ou episódio foi canonizado.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
