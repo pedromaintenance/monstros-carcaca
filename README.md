@@ -460,3 +460,11 @@ Fonte: `data/propostas/garganta-rio-ancestral-social-hack.json`. Distribuição:
 **46 propostas**: seis microespaços, seis coletivos, nove pessoas, quatro dilemas contingentes, seis fluxos não confirmados, cinco acordos não assinados, sete cenas e três arcos. A vida entre anões, gigantes de pedra, gelo e fogo, draconatos e refugiados gira em torno de defesa, acolhimento, trabalho, memória e circulação. O Ordenamento tem validade interna entre gigantes; não é uma soberania sobre os demais habitantes. Ironwood não integra um comando único da resistência.
 
 Fonte `data/propostas/thargrid-resistencia-cotidiano-hack.json`, distribuição `dist/carcaca/thargrid-social-resistance.json`, índices `dist/carcaca/thargrid-social-resistance-indexes.json`. API: `getThargridSocialResistance`, `searchThargridSocialResistance`, `getThargridSocialEntity`. Veja [Dossiê de Thargrid](docs/THARGRID_RESISTENCIA_POVOAMENTO_CICLO10.md). A queda do Reino e a presença atual de Rayquaza não foram presumidas.
+
+## Povoamento XI — Ironwood e Eldroth
+
+O atlas inclui **40 propostas narrativas** sobre guerrilha florestal, acolhimento de fugitivos, trabalho ecológico sob ocupação e preservação da memória de Vandar: cinco microespaços, cinco coletivos, oito pessoas, quatro dilemas, cinco fluxos, quatro acordos, seis cenas e três arcos.
+
+A fonte é `data/propostas/ironwood-eldroth-resistencia-hack.json`, publicada em `dist/carcaca/ironwood-eldroth-resistance.json` e indexada em `ironwood-eldroth-resistance-indexes.json`. O cliente oferece `getIronwoodEldrothResistance`, `getIronwoodEldrothResistanceIndexes`, `getIronwoodEldrothEntity` e `searchIronwoodEldrothResistance`.
+
+**Preservação do cânone:** Sylara ainda ocupa Eldroth; Damaris controla Vandar; Ironwood é fortaleza autônoma de rangers e druidas sob Elara Stormoak, não a própria Eldroth. A mensageira Vaelis é reaproveitada somente como proposta anterior de Thargrid. Acordos, cenas e rotas não são reais na cronologia. Consulte [o dossiê do Povoamento XI](docs/IRONWOOD_ELDROTH_POVOAMENTO_CICLO11.md).
