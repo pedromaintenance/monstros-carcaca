@@ -261,6 +261,34 @@ def build():
     ocupacao_xvi=load("data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json")
     vandar_xvii=load("data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json")
     ironwood_xviii=load("data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json")
+    revisao_xix=load("data/worldbuilding/revisao-autoral-atlas-ciclo19.json")
+    review_entries=[{**e,"categoria_indice":cat}
+        for cat in ("dossies","candidatos","decisoes","guardas")
+        for e in revisao_xix[cat]]
+    if len(review_entries)!=138:
+        raise ValueError("Ciclo XIX precisa de 5 dossiês, 103 candidatos, 20 decisões e 10 guardas.")
+    def indexar_revisao(extract):
+        groups=defaultdict(set)
+        for entry in review_entries:
+            raw=extract(entry)
+            for x in (raw if isinstance(raw,list) else [raw]):
+                if x is not None and x!="":
+                    groups[str(x)].add(entry["id"])
+        return {key:sorted(values) for key,values in sorted(groups.items())}
+    indices_revisao_xix={
+        "by_categoria":indexar_revisao(lambda x:x["categoria_indice"]),
+        "by_ciclo":indexar_revisao(lambda x:x.get("ciclo")),
+        "by_classe":indexar_revisao(lambda x:x.get("tipo")),
+        "by_dominio":indexar_revisao(lambda x:x.get("dominio")),
+        "by_prioridade":indexar_revisao(lambda x:x.get("prioridade")),
+        "by_estado":indexar_revisao(lambda x:x.get("estado",x.get("status"))),
+        "by_origem_id":indexar_revisao(lambda x:(
+            [x["referencia"]["id"]] if x.get("referencia") else
+            [r["id"] for r in x.get("origens",[])])),
+        "by_pre_requisito":indexar_revisao(lambda x:x.get("pre_requisitos",[])),
+        "by_arquivo_fonte":indexar_revisao(lambda x:(
+            x.get("arquivo") or (x["referencia"]["arquivo"] if x.get("referencia") else None)))
+    }
     categorias_xviii=("eixos_sociais","modelos_de_governanca","relacoes_diplomaticas",
                      "circuitos_de_cuidado","dilemas","vinhetas")
     registros_xviii=[{**entry,"categoria_indice":cat}
@@ -984,6 +1012,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "atlas_authorial_review":"atlas-authorial-review.json",
+        "atlas_authorial_review_indexes":"atlas-authorial-review-indexes.json",
         "ironwood_civil_society":"ironwood-civil-society.json",
         "ironwood_civil_society_indexes":"ironwood-civil-society-indexes.json",
         "vandar_memory_and_dead":"vandar-memory-and-dead.json",
@@ -1120,6 +1150,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_candidatos_revisao_xix":len(revisao_xix["candidatos"]),
+        "total_decisoes_revisao_xix":len(revisao_xix["decisoes"]),
+        "total_guardas_revisao_xix":len(revisao_xix["guardas"]),
+        "total_canonizacoes_revisao_xix":revisao_xix["contagens"]["mudancas_canonicas"],
         "total_eixos_ironwood_xviii":len(ironwood_xviii["eixos_sociais"]),
         "total_modelos_ironwood_xviii":len(ironwood_xviii["modelos_de_governanca"]),
         "total_relacoes_ironwood_xviii":len(ironwood_xviii["relacoes_diplomaticas"]),
@@ -1278,6 +1312,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["atlas_authorial_review"]:revisao_xix,
+           files["atlas_authorial_review_indexes"]:indices_revisao_xix,
            files["ironwood_civil_society"]:ironwood_xviii,
            files["ironwood_civil_society_indexes"]:indexes_ironwood_xviii,
            files["vandar_memory_and_dead"]:vandar_xvii,
