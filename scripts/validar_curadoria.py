@@ -3512,6 +3512,55 @@ def validar_revisao_autoral_xix():
     print("Ciclo XIX: 103 candidatos, 20 decisões, 10 guardas, 5 lacunas; nenhuma aprovação e nenhum ciclo de precedência.")
 
 
+
+def validar_grama_cortada_cotidiano_xx():
+    """Expansão cultural sem fundar conselho, festa ou evento fictício."""
+    d=load("data/worldbuilding/grama-cortada-cotidiano-ciclo20.json")
+    schema=load("schemas/grama-cortada-cotidiano-xx.schema.json")
+    Draft202012Validator.check_schema(schema)
+    errors=list(Draft202012Validator(schema).iter_errors(d))
+    require(not errors, f"Ciclo XX: schema inválido {errors[:2]}")
+    require(d["aprovacao_autoral"] is False and
+            d["aplicar_ao_canon_automaticamente"] is False and
+            d["estado"]=="worldbuilding_exploratorio_sem_canonizacao",
+            "Ciclo XX: aprovação indevida.")
+    sizes={"fatos":12,"dominios_da_vida":9,"circuitos_economicos":5,
+           "formas_de_convivencia":4,"conflitos_internos":5,"celebracoes_possiveis":4,
+           "generos_da_memoria":4,"vinhetas":4,"decisoes":8}
+    require(d["contagens"]==sizes,"Ciclo XX: contagens inconsistentes.")
+    require(d["territorio"]=="Condado de Grama-Cortada" and
+            d["referencia_id_regiao"] is None and
+            d["referencia_id_lugar"] is None and
+            d["lat_long_confirmados"] is None and d["populacao_confirmada"] is None,
+            "Ciclo XX: geografia ou demografia inventada.")
+    geo=load("data/regioes_carcaca.json")["regioes"]
+    lugares=load("data/lugares_carcaca.json")["lugares"]
+    require(not any("grama-cortada" in x["id"] for x in geo+lugares),
+            "Ciclo XX: revisar geografia normalizada antes de atribuir IDs.")
+    manuscript=load("fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")
+    pages={p["pagina"] for p in manuscript["paginas"]}
+    require(all(x["pagina_manuscrito"] in (18,19) and
+          x["pagina_manuscrito"] in pages and x["reformulacao_aprovada"] is False
+          for x in d["fatos_documentados"]),
+          "Ciclo XX: fato não sustentado ou aprovado pela técnica.")
+    cats=("dominios_da_vida","circuitos_economicos","formas_de_convivencia",
+          "conflitos_internos","celebracoes_possiveis","generos_da_memoria","vinhetas")
+    entries=[row for cat in cats for row in d[cat]]
+    require(len(entries)==35 and len({x["id"] for x in entries})==35,
+            "Ciclo XX: registros duplicados.")
+    require(all(x["ocorreu"] is False and x["instituicao_confirmada"] is False
+        and x["estado"]=="exploracao_cultural_nao_canonica"
+        and all(p in (18,19) and p in pages for p in x["fonte_contexto_paginas"])
+        and x["nome_editorial"] and x["hipotese_social"] and x["contradicao"]
+        for x in entries),"Ciclo XX: costume, cena ou instituição foi canonizado.")
+    require(all(x["opcao_escolhida"] is None and x["estado"]=="pendente_de_autoria"
+        for x in d["decisoes_para_autor"]), "Ciclo XX: escolha autoral inventada.")
+    require(len(set(x["id"] for x in d["fatos_documentados"]+
+                   d["decisoes_para_autor"]+entries))==55,
+            "Ciclo XX: fatos, propostas e perguntas com IDs em conflito.")
+    print("Ciclo XX: 12 fatos de fonte, 35 propostas culturais e 8 perguntas; sem festivais, leis ou eventos aprovados.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3643,6 +3692,7 @@ def main():
     validar_vandar_politica_mortos_xvii()
     validar_ironwood_civil_xviii()
     validar_revisao_autoral_xix()
+    validar_grama_cortada_cotidiano_xx()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
