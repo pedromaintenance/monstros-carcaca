@@ -60,6 +60,30 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getGargantaRiverSocial(){return byKey("garganta_river_social");}
+  async function getGargantaRiverSocialIndexes(){return byKey("garganta_river_social_indexes");}
+  async function getGargantaRiverEntity(id){
+    if(typeof id!=="string"||!id.startsWith("rio-garganta:"))return null;
+    const d=await getGargantaRiverSocial();
+    for(const categoria of ["lugares","oficios","pessoas","circuitos","memorias","acordos","cenas","arcos"]){
+      const row=d[categoria].find(x=>x.id===id);
+      if(row)return {...row,categoria};
+    }
+    return null;
+  }
+  async function searchGargantaRiverSocial({categoria,area,setor,movimentoHack,referencia,query}={}){
+    const d=await getGargantaRiverSocial();
+    const normal=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const rows=["lugares","oficios","pessoas","circuitos","memorias","acordos","cenas","arcos"]
+      .flatMap(cat=>d[cat].map(item=>({...item,categoria:cat})));
+    return rows.filter(row=>
+      (!categoria||row.categoria===categoria)&&
+      (!area||row.area===area)&&
+      (!setor||row.setor===setor)&&
+      (!movimentoHack||(row.movimentos_inspiradores??[]).includes(movimentoHack))&&
+      (!referencia||(row.vinculos??[]).includes(referencia))&&
+      (!query||normal([row.nome,row.vida,row.conflito,row.ancora].filter(Boolean).join(" ")).includes(normal(query))));
+  }
   async function getCostaSulSeaPressure(){return byKey("costa_sul_sea_pressure");}
   async function getCostaSulSeaPressureIndexes(){return byKey("costa_sul_sea_pressure_indexes");}
   async function getCostaSulSeaPressureEntity(id){
@@ -1193,6 +1217,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getMarSangueEconomyEntity,searchMarSangueEconomy,
           getCostaSulSeaPressure,getCostaSulSeaPressureIndexes,
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
+          getGargantaRiverSocial,getGargantaRiverSocialIndexes,
+          getGargantaRiverEntity,searchGargantaRiverSocial,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,

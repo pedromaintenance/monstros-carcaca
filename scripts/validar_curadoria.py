@@ -2745,6 +2745,84 @@ def validar_pressao_mar_sangue_costa_sul():
             "A expansão perdeu ressalvas importantes da lore.")
     print("Costa Sul VIII: 45 propostas, 6 impactos condicionais, 6 fluxos não efetivados.")
 
+
+def validar_povoamento_garganta_rio_ancestral():
+    """Fatos de ocupação e história separados de 43 propostas cotidianas."""
+    d=load("data/propostas/garganta-rio-ancestral-social-hack.json")
+    expected={"lugares":6,"oficios":5,"pessoas":9,"circuitos":5,
+              "memorias":5,"acordos":4,"cenas":6,"arcos":3}
+    require(d["contagens"]==expected
+            and all(len(d[k])==v for k,v in expected.items()),
+            "Povoamento Garganta/Rio: contagens divergentes.")
+    require(d["estado"]=="propostas_narrativas_nao_canonicas"
+            and d["aprovacao_autoral"] is False
+            and d["efeito_automatico_no_canon"] is False,
+            "Garganta/Rio não pode alterar cânone automaticamente.")
+    require(set(d["escopos"])=={"area-proposta:garganta","area-proposta:rio"},
+            "Escopos ainda não individualizados do atlas foram alterados.")
+    rows=[r for categoria in expected for r in d[categoria]]
+    all_ids={r["id"] for r in rows}
+    require(len(rows)==len(all_ids)==43
+            and all(r["id"].startswith("rio-garganta:")
+                    and r["estado"]=="proposta_nao_canonica" for r in rows),
+            "IDs duplicados ou propostas canonizadas.")
+    sementes={s["id"] for s in load("data/propostas/povoamento-regional-hack-carcaca.json")["sementes"]}
+    moves={m["id"] for m in load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]}
+    for r in rows:
+        require(bool(r["nome"].strip()) and bool(r["vida"].strip())
+                and bool(r["conflito"].strip()),"Registro sem cotidiano e conflito.")
+        require(1<=len(r["movimentos_inspiradores"])<=4
+                and all(m in moves for m in r["movimentos_inspiradores"]),
+                "Referência cultural sem movimento original.")
+        require(all(ref in sementes for ref in r["vinculos"]),
+                "Semente de povoamento anterior não encontrada.")
+    require(all(r["local_confirmado"] is False
+                and r["area"] in d["escopos"]
+                and bool(r["ancora"]) for r in d["lugares"]),
+            "Lugar proposto virou bairro canônico ou perdeu sua referência.")
+    require(all(r["instituicao_confirmada"] is False for r in d["oficios"]),
+            "Ofício proposto foi tratado como instituição estabelecida.")
+    people={r["id"] for r in d["pessoas"]}
+    require(sum(p["personagem_canonico"] is True for p in d["pessoas"])==4
+            and all(p["local_atual_confirmado"] is False for p in d["pessoas"]),
+            "Marxinus, Maire, Jorvan e Kaelen não devem ser duplicados ou deslocados.")
+    require({p["nome"] for p in d["pessoas"] if p["personagem_canonico"]}
+            =={"Marxinus","Maire","Jorvan","Kaelen Branth"},
+            "Quatro personagens canônicos devem preservar nomes.")
+    places={r["id"] for r in d["lugares"]}
+    for r in d["circuitos"]:
+        require(r["efetivado"] is False
+                and r["quantidade_confirmada"] is False
+                and r["area"] in d["escopos"]
+                and r["origem"] in places and r["destino"] in places,
+                "Circuito proposto virou rota/comércio efetivo.")
+    require({r["ano_ec"] for r in d["memorias"]}=={None,211,351,358,875}
+            and all(r["fato_historico_documentado"] is True
+                    and r["episodio_novo_confirmado"] is False for r in d["memorias"]),
+            "Marcos históricos de Garganta foram transformados em novos eventos.")
+    require(all(r["vigente"] is False
+                and len(r["proponentes"])>=2
+                and all(p in people for p in r["proponentes"])
+                for r in d["acordos"]),
+            "Acordo proposto não pode ser reconhecido como assinado.")
+    scenes={r["id"] for r in d["cenas"]}
+    require(all(r["local_id"] in places
+                and all(p in people for p in r["elenco"])
+                and len(r["escolhas"])>=3
+                and len(r["consequencia_condicional"])>=25
+                for r in d["cenas"]),
+            "Cena não contém local, atores, escolhas ou efeito condicional.")
+    require(all(len(r["cenas"])>=2
+                and all(c in scenes for c in r["cenas"])
+                for r in d["arcos"]),
+            "Arco não vinculado a cenas.")
+    facts=" ".join(d["fatos_documentados"]+d["limites"]).lower()
+    require("varys" in facts and "drakport" in facts and
+            "lua" in facts and "yokai" in facts and
+            "confederação" in facts and "abismo" in facts,
+            "Foram perdidas âncoras factuais da Garganta/Rio.")
+    print("Garganta e Rio IX: 43 propostas, 4 NPCs canônicos não deslocados, 5 circuitos não efetivados.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2865,6 +2943,7 @@ def main():
     validar_diplomacia_mar_sangue()
     validar_economia_mar_sangue()
     validar_pressao_mar_sangue_costa_sul()
+    validar_povoamento_garganta_rio_ancestral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

@@ -444,3 +444,12 @@ Fonte `data/propostas/mar-sangue-economia-hack.json`. Distribuição `dist/carca
 **45 propostas narrativas** em oito categorias: cinco núcleos de encontro, cinco ofícios, nove pessoas (seis retomadas do ciclo IV), seis impactos econômicos condicionais, seis fluxos não efetivados, cinco acordos não assinados, seis cenas e três arcos. O módulo examina como tributos e ameaças marítimas *poderiam* afetar reparos, agricultura, hospedagem e navegação em Portomonte e nas ilhas, sem estabelecer contratos com cidades submarinas como fatos.
 
 Fonte: `data/propostas/costa-sul-pressao-mar-sangue-hack.json`. Saídas `dist/carcaca/costa-sul-sea-pressure.json` e `dist/carcaca/costa-sul-sea-pressure-indexes.json`. API: `getCostaSulSeaPressure`, `searchCostaSulSeaPressure`, `getCostaSulSeaPressureEntity`. Dossiê: [Costa Sul sob Pressão](docs/COSTA_SUL_PRESSAO_MAR_SANGUE_CICLO8.md). Todos os registros permanecem não canônicos, com preservação dos limites de potabilidade, refugiados, rotas e cosmologia.
+
+
+## Povoamento IX — Garganta e Rio Ancestral sob ocupação
+
+**43 propostas narrativas**: seis núcleos sociais, cinco ofícios, nove personagens (incluindo Marxinus, Maire, Jorvan e Kaelen Branth já canônicos), cinco circuitos hipotéticos, cinco memórias históricas, quatro acordos não vigentes, seis cenas e três arcos. Os vínculos usam movimentos de humanos, orcs, anões, shadow fey e yokai, sem atribuição mecânica automática.
+
+Fonte: `data/propostas/garganta-rio-ancestral-social-hack.json`. Distribuição: `dist/carcaca/garganta-river-social.json`, índices `dist/carcaca/garganta-river-social-indexes.json`. API: `getGargantaRiverSocial`, `searchGargantaRiverSocial`, `getGargantaRiverEntity`. Dossiê: [Garganta e Rio Ancestral — Ciclo IX](docs/GARGANTA_RIO_ANCESTRAL_POVOAMENTO_CICLO9.md).
+
+**Não apresenta Garganta como livre na atualidade** (Lord Varys Duskveil governa), não liberta Drakport nem determina a causa de novos fenômenos no rio. As áreas `area-proposta:garganta` e `area-proposta:rio` são escopos editoriais, não novas regiões geocodificadas canônicas.

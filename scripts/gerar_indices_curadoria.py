@@ -253,6 +253,34 @@ def build():
     diplomacia_mar=load("data/propostas/mar-sangue-diplomacia-hack.json")
     economia_mar=load("data/propostas/mar-sangue-economia-hack.json")
     costa_mar=load("data/propostas/costa-sul-pressao-mar-sangue-hack.json")
+    rio_garganta=load("data/propostas/garganta-rio-ancestral-social-hack.json")
+    categorias_rio=("lugares","oficios","pessoas","circuitos","memorias","acordos","cenas","arcos")
+    entidades_rio=[
+        {**elemento,"categoria":categoria}
+        for categoria in categorias_rio for elemento in rio_garganta[categoria]
+    ]
+    def indexar_rio(campo):
+        mapping=defaultdict(set)
+        for elemento in entidades_rio:
+            v=elemento.get(campo,[])
+            valores=v if isinstance(v,list) else [v]
+            for value in valores:
+                if value is not None and value!="":
+                    mapping[str(value)].add(elemento["id"])
+        return {k:sorted(v) for k,v in sorted(mapping.items())}
+    indices_rio={
+        "by_categoria":indexar_rio("categoria"),
+        "by_area_proposta":indexar_rio("area"),
+        "by_setor":indexar_rio("setor"),
+        "by_movimento_hack":indexar_rio("movimentos_inspiradores"),
+        "by_semente_anterior":indexar_rio("vinculos"),
+        "by_ancora_canonica":indexar_rio("ancora"),
+        "by_cena_local":indexar_rio("local_id"),
+        "by_origem":indexar_rio("origem"),
+        "by_destino":indexar_rio("destino")
+    }
+    if len(entidades_rio)!=43 or len(indices_rio["by_categoria"])!=8:
+        raise ValueError("Garganta e Rio IX: esperadas 43 propostas em 8 categorias")
     categorias_costa_mar=("nucleos","oficios","pessoas","impactos","fluxos","acordos","cenas","arcos")
     entidades_costa_mar=[
         {**elemento,"categoria":categoria}
@@ -736,6 +764,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "garganta_river_social":"garganta-river-social.json",
+        "garganta_river_social_indexes":"garganta-river-social-indexes.json",
         "costa_sul_sea_pressure":"costa-sul-sea-pressure.json",
         "costa_sul_sea_pressure_indexes":"costa-sul-sea-pressure-indexes.json",
         "mar_sangue_economy":"mar-sangue-economy.json",
@@ -852,6 +882,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_entidades_garganta_rio_propostas":len(entidades_rio),
+        "total_lugares_garganta_rio_propostos":len(rio_garganta["lugares"]),
+        "total_cenas_garganta_rio_propostas":len(rio_garganta["cenas"]),
+        "total_personagens_garganta_rio_propostos":len(rio_garganta["pessoas"]),
         "total_entidades_costa_sul_pressao_propostas":len(entidades_costa_mar),
         "total_impactos_costa_sul_propostos":len(costa_mar["impactos"]),
         "total_acordos_costa_sul_propostos":len(costa_mar["acordos"]),
@@ -964,6 +998,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["garganta_river_social"]:rio_garganta,
+           files["garganta_river_social_indexes"]:indices_rio,
            files["costa_sul_sea_pressure"]:costa_mar,
            files["costa_sul_sea_pressure_indexes"]:indices_costa_mar,
            files["mar_sangue_economy"]:economia_mar,
