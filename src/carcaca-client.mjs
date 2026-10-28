@@ -60,6 +60,31 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getEldrothMonsterEcology(){return byKey("eldroth_monster_ecology");}
+  async function getEldrothMonsterEcologyIndexes(){return byKey("eldroth_monster_ecology_indexes");}
+  async function getEldrothMonsterEcologyEntry(id){
+    if(typeof id!=="string"||!id.startsWith("ecologia-xii:"))return null;
+    const data=await getEldrothMonsterEcology();
+    for(const categoria of ["criaturas","encontros","pressoes","frentes"]){
+      const item=data[categoria].find(row=>row.id===id);
+      if(item)return {...item,categoria};
+    }
+    return null;
+  }
+  async function searchEldrothMonsterEcology({categoria,tipoCarcaca,escopo,criaturaId,cenaAnterior,query}={}){
+    const data=await getEldrothMonsterEcology();
+    const normal=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return ["criaturas","encontros","pressoes","frentes"]
+      .flatMap(cat=>data[cat].map(row=>({...row,categoria:cat})))
+      .filter(row=>
+        (!categoria||row.categoria===categoria)&&
+        (!tipoCarcaca||row.tipo_carcaca_proposto===tipoCarcaca)&&
+        (!escopo||(row.escopo??row.localizacao_proposta?.escopo)===escopo)&&
+        (!criaturaId||(row.criaturas_ids??[]).includes(criaturaId)||row.id===criaturaId)&&
+        (!cenaAnterior||(row.cena_anterior_id??row.vinculo_cena_anterior)===cenaAnterior)&&
+        (!query||normal([row.nome,row.dungeon_world?.instinto,row.abertura_condicional,
+          row.origem_possivel,row.impulso_dw_proposto].filter(Boolean).join(" ")).includes(normal(query))));
+  }
   async function getIronwoodEldrothResistance(){return byKey("ironwood_eldroth_resistance");}
   async function getIronwoodEldrothResistanceIndexes(){return byKey("ironwood_eldroth_resistance_indexes");}
   async function getIronwoodEldrothEntity(id){
@@ -1268,6 +1293,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getEldrothMonsterEcology,getEldrothMonsterEcologyIndexes,
+          getEldrothMonsterEcologyEntry,searchEldrothMonsterEcology,
           getIronwoodEldrothResistance,getIronwoodEldrothResistanceIndexes,
           getIronwoodEldrothEntity,searchIronwoodEldrothResistance,
           getThargridSocialResistance,getThargridSocialResistanceIndexes,
