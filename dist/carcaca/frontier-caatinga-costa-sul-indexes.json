@@ -1,0 +1,153 @@
+{
+  "by_tipo": {
+    "acordos": [
+      "fronteira:acordo:escuta-dos-nove",
+      "fronteira:acordo:hospedaria-sem-mapa",
+      "fronteira:acordo:lacres-justos",
+      "fronteira:acordo:peca-e-destino",
+      "fronteira:acordo:primeira-tigela"
+    ],
+    "cenas": [
+      "fronteira:cena:duas-medidas",
+      "fronteira:cena:hospede-sem-nome",
+      "fronteira:cena:lacre-rasgado",
+      "fronteira:cena:mapa-com-rasura",
+      "fronteira:cena:nove-teste",
+      "fronteira:cena:pedido-sem-destino"
+    ],
+    "encontros": [
+      "fronteira:encontro:boca-do-pano",
+      "fronteira:encontro:escada-de-corda",
+      "fronteira:encontro:roda-das-historias",
+      "fronteira:encontro:tres-pedras",
+      "fronteira:encontro:varanda-da-agua"
+    ],
+    "fluxos": [
+      "fronteira:fluxo:acolhimento",
+      "fronteira:fluxo:ferragens",
+      "fronteira:fluxo:marcas-rituais",
+      "fronteira:fluxo:noticias",
+      "fronteira:fluxo:recipientes",
+      "fronteira:fluxo:sementes"
+    ],
+    "pessoas": [
+      "fronteira:pessoa:antera",
+      "fronteira:pessoa:borr",
+      "fronteira:pessoa:gema",
+      "fronteira:pessoa:mara",
+      "fronteira:pessoa:mestre-casco",
+      "fronteira:pessoa:nala",
+      "fronteira:pessoa:nilku",
+      "fronteira:pessoa:saha",
+      "fronteira:pessoa:tiru"
+    ],
+    "tramas": [
+      "fronteira:trama:agua-em-dois-nomes",
+      "fronteira:trama:ferragem-que-volta",
+      "fronteira:trama:nove-ecos"
+    ]
+  },
+  "by_movimento_hack": {
+    "movimento-classe:paragrafo-2760": [
+      "fronteira:acordo:peca-e-destino",
+      "fronteira:fluxo:ferragens",
+      "fronteira:pessoa:nala"
+    ],
+    "movimento-classe:paragrafo-2773": [
+      "fronteira:acordo:lacres-justos"
+    ],
+    "movimento-classe:paragrafo-2782": [
+      "fronteira:acordo:lacres-justos",
+      "fronteira:acordo:peca-e-destino",
+      "fronteira:pessoa:antera",
+      "fronteira:pessoa:nala",
+      "fronteira:pessoa:tiru"
+    ],
+    "movimento-classe:paragrafo-2817": [
+      "fronteira:pessoa:antera"
+    ],
+    "movimento-povo:paragrafo-829": [
+      "fronteira:fluxo:sementes",
+      "fronteira:pessoa:gema"
+    ],
+    "movimento-povo:paragrafo-831": [
+      "fronteira:acordo:primeira-tigela",
+      "fronteira:fluxo:acolhimento",
+      "fronteira:fluxo:recipientes",
+      "fronteira:pessoa:gema",
+      "fronteira:pessoa:mara",
+      "fronteira:pessoa:tiru"
+    ],
+    "movimento-povo:paragrafo-834": [
+      "fronteira:fluxo:sementes"
+    ],
+    "movimento-povo:paragrafo-835": [
+      "fronteira:acordo:escuta-dos-nove",
+      "fronteira:fluxo:marcas-rituais"
+    ],
+    "movimento-povo:paragrafo-837": [
+      "fronteira:pessoa:borr"
+    ],
+    "movimento-povo:paragrafo-842": [
+      "fronteira:acordo:escuta-dos-nove"
+    ],
+    "movimento-povo:paragrafo-843": [
+      "fronteira:pessoa:borr"
+    ],
+    "movimento-povo:paragrafo-897": [
+      "fronteira:acordo:hospedaria-sem-mapa",
+      "fronteira:fluxo:noticias",
+      "fronteira:pessoa:mestre-casco"
+    ],
+    "movimento-povo:paragrafo-898": [
+      "fronteira:acordo:primeira-tigela",
+      "fronteira:fluxo:acolhimento",
+      "fronteira:pessoa:mara",
+      "fronteira:pessoa:mestre-casco"
+    ],
+    "movimento-povo:paragrafo-906": [
+      "fronteira:acordo:hospedaria-sem-mapa",
+      "fronteira:fluxo:noticias",
+      "fronteira:pessoa:saha"
+    ],
+    "movimento-povo:paragrafo-908": [
+      "fronteira:pessoa:saha"
+    ],
+    "movimento-povo:paragrafo-913": [
+      "fronteira:pessoa:nilku"
+    ],
+    "movimento-povo:paragrafo-921": [
+      "fronteira:fluxo:marcas-rituais",
+      "fronteira:pessoa:nilku"
+    ]
+  },
+  "by_ancora_regional": {
+    "regiao:caatinga": [
+      "fronteira:encontro:boca-do-pano",
+      "fronteira:encontro:tres-pedras"
+    ],
+    "regiao:costa-sul": [
+      "fronteira:encontro:escada-de-corda",
+      "fronteira:encontro:roda-das-historias",
+      "fronteira:encontro:varanda-da-agua"
+    ]
+  },
+  "by_encontro": {
+    "fronteira:encontro:boca-do-pano": [
+      "fronteira:cena:pedido-sem-destino"
+    ],
+    "fronteira:encontro:escada-de-corda": [
+      "fronteira:cena:lacre-rasgado"
+    ],
+    "fronteira:encontro:roda-das-historias": [
+      "fronteira:cena:mapa-com-rasura",
+      "fronteira:cena:nove-teste"
+    ],
+    "fronteira:encontro:tres-pedras": [
+      "fronteira:cena:hospede-sem-nome"
+    ],
+    "fronteira:encontro:varanda-da-agua": [
+      "fronteira:cena:duas-medidas"
+    ]
+  }
+}
