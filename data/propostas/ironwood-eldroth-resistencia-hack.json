@@ -55,7 +55,7 @@
   "efeito_automatico_no_canon": false,
   "lugares": [
     {
-      "id": "ironwood-eldroth:lugare:pouso-das-bainhas",
+      "id": "ironwood-eldroth:lugar:pouso-das-bainhas",
       "nome": "Pouso das Bainhas Viradas",
       "rotina_cotidiana": "Um abrigo hipotético de Ironwood recebe roupas, ferramentas e testemunhos de quem foge.",
       "tensao_social": "A triagem pode transformar roupas marcadas em denúncia involuntária.",
@@ -72,7 +72,7 @@
       "local_confirmado": false
     },
     {
-      "id": "ironwood-eldroth:lugare:clareira-das-testemunhas",
+      "id": "ironwood-eldroth:lugar:clareira-das-testemunhas",
       "nome": "Clareira das Testemunhas sem Nome",
       "rotina_cotidiana": "Sobreviventes registram traços das violências da ocupação antes que a floresta os apague.",
       "tensao_social": "Voltar para documentar um crime expõe quem escapou.",
@@ -89,7 +89,7 @@
       "local_confirmado": false
     },
     {
-      "id": "ironwood-eldroth:lugare:canteiro-da-lua-ferida",
+      "id": "ironwood-eldroth:lugar:canteiro-da-lua-ferida",
       "nome": "Canteiro da Lua Ferida",
       "rotina_cotidiana": "Cultivadores tentam tratar árvores e fungos afetados pela corrupção da floresta.",
       "tensao_social": "Uma planta sob suspeita de espionagem pode ser a última fonte de remédio.",
@@ -106,7 +106,7 @@
       "local_confirmado": false
     },
     {
-      "id": "ironwood-eldroth:lugare:sala-dos-nomes-frios",
+      "id": "ironwood-eldroth:lugar:sala-dos-nomes-frios",
       "nome": "Sala dos Nomes Frios",
       "rotina_cotidiana": "Familiares de desaparecidos reuniriam nomes e relatos perto das ruínas de Vandar.",
       "tensao_social": "A identificação precipitada de um morto pode custar a liberdade dos vivos.",
@@ -123,7 +123,7 @@
       "local_confirmado": false
     },
     {
-      "id": "ironwood-eldroth:lugare:patio-da-trilha-incompleta",
+      "id": "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
       "nome": "Pátio da Trilha Incompleta",
       "rotina_cotidiana": "Aprendizes de Ironwood treinam sinais e rotinas que protegem abrigos sem revelar mapas.",
       "tensao_social": "A aprendizagem vira risco se um aluno entregar as técnicas a uma patrulha.",
