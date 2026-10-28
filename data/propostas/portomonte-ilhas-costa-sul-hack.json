@@ -1,0 +1,649 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Portomonte e ilhas — a Costa Sul habitada",
+  "regiao_id": "regiao:costa-sul",
+  "estado": "propostas_narrativas_nao_canonicas",
+  "fatos_documentados": [
+    "Portomonte é assentamento humano escondido nos penhascos e centro de comércio entre assentamentos costeiros.",
+    "Água do Mar de Sangue é purificada por templo de Deméter para agricultura inclusive sobre pedra; potabilidade doméstica não comprovada.",
+    "Tortles e tabaxis vivem em ilhas e viajam sazonalmente; ilhas, moradias individuais e rotas não localizadas.",
+    "Há incursões sacrificiais kuo-toa e abissais marinhas na costa; não é documentado um ataque específico a Portomonte.",
+    "Há refugiados de Eldroth em grandes assentamentos costeiros, sem confirmação de que Portomonte seja um deles."
+  ],
+  "continuidades": [
+    "povoamento-proposto:hortas-do-sal",
+    "povoamento-proposto:farol-das-memorias",
+    "fronteira:encontro:varanda-da-agua",
+    "fronteira:encontro:roda-das-historias"
+  ],
+  "contagens": {
+    "espacos": 6,
+    "redes": 3,
+    "pessoas": 8,
+    "praticas": 4,
+    "circulacoes": 4,
+    "cenas": 5,
+    "tramas": 3
+  },
+  "espacos": [
+    {
+      "id": "costa-sul:espaco:pedra-molhada",
+      "nome": "Pátio da Pedra Molhada",
+      "cotidiano": "Famílias cuidam de lavouras sobre pedra e ensinam o trabalho às crianças.",
+      "conflito": "Uma família quer prioridade para o próximo turno de cuidados e água agrícola.",
+      "referencias": [
+        "lugar:portomonte",
+        "povoamento-proposto:hortas-do-sal"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-classe:paragrafo-2069"
+      ],
+      "estado": "proposta",
+      "escopo": "portomonte",
+      "localizacao_confirmada": false
+    },
+    {
+      "id": "costa-sul:espaco:contas-agua",
+      "nome": "Mesa das Contas da Água",
+      "cotidiano": "Moradores procuram compreender quais trabalhos dependem da purificação de Deméter.",
+      "conflito": "Alguém anuncia, sem prova, que a água destinada à lavoura também é segura para beber.",
+      "referencias": [
+        "lugar:portomonte",
+        "fronteira:encontro:varanda-da-agua"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-classe:paragrafo-2817"
+      ],
+      "estado": "proposta",
+      "escopo": "portomonte",
+      "localizacao_confirmada": false
+    },
+    {
+      "id": "costa-sul:espaco:cordas",
+      "nome": "Pátio das Cordas Desfiadas",
+      "cotidiano": "Artesãos reparam cordas, ferramentas e lonas de viajantes e marinheiros.",
+      "conflito": "Uma peça de uso ambíguo provoca acusação sem evidências contra visitantes da Caatinga.",
+      "referencias": [
+        "lugar:portomonte",
+        "fronteira:encontro:escada-de-corda"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2810",
+        "movimento-classe:paragrafo-2782"
+      ],
+      "estado": "proposta",
+      "escopo": "portomonte",
+      "localizacao_confirmada": false
+    },
+    {
+      "id": "costa-sul:espaco:altares",
+      "nome": "Mesa dos Altares Vizinhos",
+      "cotidiano": "Devotos de Deméter convivem com praticantes de outras tradições durante tarefas comuns.",
+      "conflito": "Um pregador quer transformar a bênção agrícola em autoridade sobre famílias.",
+      "referencias": [
+        "lugar:portomonte"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-830",
+        "movimento-classe:paragrafo-2056"
+      ],
+      "estado": "proposta",
+      "escopo": "portomonte",
+      "localizacao_confirmada": false
+    },
+    {
+      "id": "costa-sul:espaco:varal",
+      "nome": "Varal dos Nomes Lavados",
+      "cotidiano": "Pessoas podem trocar roupa, abrigo e informações sem proclamar publicamente o passado dos visitantes.",
+      "conflito": "Uma família quer denunciar um hóspede para conservar sua própria segurança.",
+      "referencias": [
+        "lugar:portomonte",
+        "fronteira:pessoa:mara"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta",
+      "escopo": "portomonte",
+      "localizacao_confirmada": false
+    },
+    {
+      "id": "costa-sul:espaco:sino",
+      "nome": "Círculo do Sino Sem Som",
+      "cotidiano": "Vigias informais comparam relatos do mar para organizar auxílio mútuo, sem presumir guarnição oficial.",
+      "conflito": "Um boato de ataque transforma novos moradores em suspeitos.",
+      "referencias": [
+        "lugar:portomonte",
+        "lugar:cavernas-kuo-toa"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2797",
+        "movimento-classe:paragrafo-2800"
+      ],
+      "estado": "proposta",
+      "escopo": "portomonte",
+      "localizacao_confirmada": false
+    }
+  ],
+  "redes": [
+    {
+      "id": "costa-sul:rede:casco",
+      "nome": "Caderno das Palavras de Casco",
+      "cotidiano": "Tortles de mosteiros diferentes poderiam compartilhar histórias sem revelar rotas de refúgio.",
+      "conflito": "Um viajante deseja publicar o caminho completo até a comunidade que o abrigou.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "povoamento-proposto:farol-das-memorias"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-904"
+      ],
+      "estado": "proposta",
+      "escopo": "ilhas_nao_individualizadas",
+      "ilha_confirmada": false,
+      "rota_confirmada": false,
+      "coabitacao_confirmada": false
+    },
+    {
+      "id": "costa-sul:rede:volta",
+      "nome": "Cadernos de Volta e Partida",
+      "cotidiano": "Tabaxis em viagens de maioridade podem trocar relatos, técnicas e erros cometidos.",
+      "conflito": "Uma descoberta só parece impressionante se o viajante revelar um segredo perigoso.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "fronteira:pessoa:saha"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-908"
+      ],
+      "estado": "proposta",
+      "escopo": "ilhas_nao_individualizadas",
+      "ilha_confirmada": false,
+      "rota_confirmada": false,
+      "coabitacao_confirmada": false
+    },
+    {
+      "id": "costa-sul:rede:terceira",
+      "nome": "Hospitalidade da Terceira História",
+      "cotidiano": "Viajantes de origens diversas poderiam trocar histórias em encontros temporários.",
+      "conflito": "Silenciar uma informação protege um abrigo e dificulta encontrar alguém desaparecido.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "fronteira:encontro:roda-das-historias"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-898",
+        "movimento-povo:paragrafo-906"
+      ],
+      "estado": "proposta",
+      "escopo": "ilhas_nao_individualizadas",
+      "ilha_confirmada": false,
+      "rota_confirmada": false,
+      "coabitacao_confirmada": false
+    }
+  ],
+  "pessoas": [
+    {
+      "id": "costa-sul:pessoa:gema",
+      "nome": "Gema da Falésia",
+      "cotidiano": "Cultivadora já proposta na fronteira; organiza tarefas e registra o que se sabe sobre a irrigação.",
+      "conflito": "Quer acolher visitantes, mas recusa afirmar potabilidade não comprovada.",
+      "referencias": [
+        "fronteira:pessoa:gema",
+        "lugar:portomonte"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta",
+      "reutiliza": "fronteira:pessoa:gema"
+    },
+    {
+      "id": "costa-sul:pessoa:antera",
+      "nome": "Antera dos Lacres Claros",
+      "cotidiano": "Intérprete já proposta; lê contratos e confere recipientes com os trabalhadores.",
+      "conflito": "Uma cláusula confunde suspeita de furto com direito de prender o transportador.",
+      "referencias": [
+        "fronteira:pessoa:antera"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2782",
+        "movimento-classe:paragrafo-2817"
+      ],
+      "estado": "proposta",
+      "reutiliza": "fronteira:pessoa:antera"
+    },
+    {
+      "id": "costa-sul:pessoa:mara",
+      "nome": "Mara das Duas Tigelas",
+      "cotidiano": "Cuidadora já proposta que oferece hospitalidade sem prometer provisões infinitas.",
+      "conflito": "Compartilhar o último alimento pode deixar outras famílias sem ajuda.",
+      "referencias": [
+        "fronteira:pessoa:mara"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-898"
+      ],
+      "estado": "proposta",
+      "reutiliza": "fronteira:pessoa:mara"
+    },
+    {
+      "id": "costa-sul:pessoa:corima",
+      "nome": "Mestre Córima do Casco Verde",
+      "cotidiano": "Tortle viajante já proposto; preserva histórias de lugares que o acolheram.",
+      "conflito": "Uma memória compartilhada pode entregar o refúgio de seu anfitrião.",
+      "referencias": [
+        "fronteira:pessoa:mestre-casco",
+        "lugar:ilhas-costa-sul"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-898"
+      ],
+      "estado": "proposta",
+      "reutiliza": "fronteira:pessoa:mestre-casco"
+    },
+    {
+      "id": "costa-sul:pessoa:saha",
+      "nome": "Sahá de Rota Nenhuma",
+      "cotidiano": "Tabaxi já proposta; guarda páginas de mapas deliberadamente incompletos.",
+      "conflito": "Uma rota que ela omitiu poderia ser necessária para encontrar desaparecidos.",
+      "referencias": [
+        "fronteira:pessoa:saha",
+        "lugar:ilhas-costa-sul"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-908"
+      ],
+      "estado": "proposta",
+      "reutiliza": "fronteira:pessoa:saha"
+    },
+    {
+      "id": "costa-sul:pessoa:dalia",
+      "nome": "Dália da Segunda Semente",
+      "cotidiano": "Aprendiz hipotética de práticas agrícolas ligadas à devoção de Deméter.",
+      "conflito": "Alguém atribuiu ao templo uma promessa de colheita que ninguém fez.",
+      "referencias": [
+        "lugar:portomonte",
+        "povoamento-proposto:hortas-do-sal"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-classe:paragrafo-2069"
+      ],
+      "estado": "proposta",
+      "reutiliza": null
+    },
+    {
+      "id": "costa-sul:pessoa:salma",
+      "nome": "Salma dos Sete Nós",
+      "cotidiano": "Trançadora e reparadora de cordas que reconhece marcas de desgaste.",
+      "conflito": "Uma avaria parece sabotagem, mas não identifica quem a praticou.",
+      "referencias": [
+        "lugar:portomonte",
+        "fronteira:encontro:escada-de-corda"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2810",
+        "movimento-classe:paragrafo-2782"
+      ],
+      "estado": "proposta",
+      "reutiliza": null
+    },
+    {
+      "id": "costa-sul:pessoa:orun",
+      "nome": "Orun de Vigia Curta",
+      "cotidiano": "Marinheiro costeiro que distingue sinais de perigo de rumores.",
+      "conflito": "Se agir cedo demais, perseguirá inocentes; se esperar demais, poderá perder vizinhos.",
+      "referencias": [
+        "lugar:portomonte",
+        "lugar:cavernas-kuo-toa"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2797",
+        "movimento-classe:paragrafo-2800"
+      ],
+      "estado": "proposta",
+      "reutiliza": null
+    }
+  ],
+  "praticas": [
+    {
+      "id": "costa-sul:pratica:turno",
+      "nome": "Turno do Cultivo na Pedra",
+      "cotidiano": "Reunião informal poderia organizar tarefas agrícolas sem criar uma autoridade canônica do templo.",
+      "conflito": "O mesmo trabalho é necessário a mais de uma família.",
+      "referencias": [
+        "lugar:portomonte"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-classe:paragrafo-2069"
+      ],
+      "estado": "proposta",
+      "participantes": [
+        "costa-sul:pessoa:gema",
+        "costa-sul:pessoa:dalia"
+      ]
+    },
+    {
+      "id": "costa-sul:pratica:lacre",
+      "nome": "Palavra Antes do Lacre",
+      "cotidiano": "Contratos e recipientes poderiam ser conferidos diante de testemunhas.",
+      "conflito": "Viajantes que desejam privacidade são tratados como suspeitos.",
+      "referencias": [
+        "fronteira:acordo:lacres-justos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2782",
+        "movimento-classe:paragrafo-2773"
+      ],
+      "estado": "proposta",
+      "participantes": [
+        "costa-sul:pessoa:antera",
+        "costa-sul:pessoa:salma"
+      ]
+    },
+    {
+      "id": "costa-sul:pratica:tigela",
+      "nome": "A Tigela Extra",
+      "cotidiano": "Vizinhos poderiam oferecer ajuda inicial mesmo sem conhecer o passado do hóspede.",
+      "conflito": "O estoque para cuidar dos hóspedes atuais pode não suportar recém-chegados.",
+      "referencias": [
+        "fronteira:acordo:primeira-tigela"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-898"
+      ],
+      "estado": "proposta",
+      "participantes": [
+        "costa-sul:pessoa:mara"
+      ]
+    },
+    {
+      "id": "costa-sul:pratica:historia",
+      "nome": "História sem Localização",
+      "cotidiano": "Viajantes insulares poderiam divulgar aprendizados sem revelar a posição de um abrigo.",
+      "conflito": "A omissão também pode impedir uma busca de resgate.",
+      "referencias": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-906"
+      ],
+      "estado": "proposta",
+      "participantes": [
+        "costa-sul:pessoa:corima",
+        "costa-sul:pessoa:saha"
+      ]
+    }
+  ],
+  "circulacoes": [
+    {
+      "id": "costa-sul:circulacao:ferragens",
+      "nome": "Ferragem de Duas Vidas",
+      "cotidiano": "Ferramentas e reparos poderiam circular entre artistas da Caatinga e da costa.",
+      "conflito": "Uma peça pode servir a lavoura ou a ataques, sem que sua venda prove intenção.",
+      "referencias": [
+        "caatinga:comunidade:feira-ferragens",
+        "lugar:portomonte"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-classe:paragrafo-2760"
+      ],
+      "estado": "proposta",
+      "fluxo_confirmado": false
+    },
+    {
+      "id": "costa-sul:circulacao:memorias",
+      "nome": "Memórias que Talvez Aportem",
+      "cotidiano": "Relatos de tortles e tabaxis poderiam alcançar comunidades costeiras.",
+      "conflito": "Divulgar uma história como mapa pode expor mosteiros.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "lugar:portomonte"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-906"
+      ],
+      "estado": "proposta",
+      "fluxo_confirmado": false
+    },
+    {
+      "id": "costa-sul:circulacao:sementes",
+      "nome": "Sementes e Falhas",
+      "cotidiano": "Técnicas agrícolas poderiam ser debatidas com comunidades do interior.",
+      "conflito": "Não há excedente de sementes confirmado nem irrigação produtiva comprovada na Caatinga.",
+      "referencias": [
+        "lugar:portomonte",
+        "caatinga:comunidade:baixio-sementes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-834"
+      ],
+      "estado": "proposta",
+      "fluxo_confirmado": false
+    },
+    {
+      "id": "costa-sul:circulacao:noticias-mar",
+      "nome": "Notícias do Mar Mau",
+      "cotidiano": "Avisos hipotéticos de ritos costeiros poderiam vir de dissidentes e testemunhas.",
+      "conflito": "Um boato pode se tornar pretexto para hostilidade contra todos os kuo-toa.",
+      "referencias": [
+        "lugar:cavernas-kuo-toa",
+        "regiao:costa-sul"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-921",
+        "movimento-classe:paragrafo-2797"
+      ],
+      "estado": "proposta",
+      "fluxo_confirmado": false
+    }
+  ],
+  "cenas": [
+    {
+      "id": "costa-sul:cena:contas",
+      "nome": "As Contas Não Bebem Água",
+      "cotidiano": "Famílias comparam trabalho agrícola quando uma pessoa necessita água para beber.",
+      "conflito": "Alguém oferece água purificada para cultivo como se fosse comprovadamente potável.",
+      "referencias": [
+        "lugar:portomonte"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-classe:paragrafo-2069"
+      ],
+      "estado": "proposta",
+      "local_id": "costa-sul:espaco:contas-agua",
+      "pessoas_ids": [
+        "costa-sul:pessoa:gema",
+        "costa-sul:pessoa:dalia"
+      ],
+      "escolhas": [
+        "Buscar fonte segura",
+        "Recusar promessa sem prova",
+        "Negociar hospitalidade viável"
+      ]
+    },
+    {
+      "id": "costa-sul:cena:reparo",
+      "nome": "O Reparo Que Parece Crime",
+      "cotidiano": "Salma examina uma peça com sinais de uso ambíguo.",
+      "conflito": "Viajantes da Caatinga são acusados sem provas de terem armado saqueadores.",
+      "referencias": [
+        "fronteira:acordo:peca-e-destino"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2782",
+        "movimento-classe:paragrafo-2773"
+      ],
+      "estado": "proposta",
+      "local_id": "costa-sul:espaco:cordas",
+      "pessoas_ids": [
+        "costa-sul:pessoa:salma",
+        "costa-sul:pessoa:antera"
+      ],
+      "escolhas": [
+        "Investigar marcas",
+        "Contestar a acusação",
+        "Renegociar responsabilidades"
+      ]
+    },
+    {
+      "id": "costa-sul:cena:bencao",
+      "nome": "A Bênção Não Dá Autoridade",
+      "cotidiano": "Vizinhos de crenças distintas partilham tarefas e oferendas.",
+      "conflito": "Um pregador pretende converter a bênção agrícola em poder político.",
+      "referencias": [
+        "lugar:portomonte"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-830",
+        "movimento-classe:paragrafo-2056"
+      ],
+      "estado": "proposta",
+      "local_id": "costa-sul:espaco:altares",
+      "pessoas_ids": [
+        "costa-sul:pessoa:dalia",
+        "costa-sul:pessoa:gema"
+      ],
+      "escolhas": [
+        "Pedir prova da autoridade",
+        "Mediar devoções",
+        "Defender liberdade de culto"
+      ]
+    },
+    {
+      "id": "costa-sul:cena:mapa",
+      "nome": "O Lugar Que o Mapa Não Diz",
+      "cotidiano": "Viajantes contam histórias e escolhem o que omitir.",
+      "conflito": "O caminho que salvaria alguém desaparecido também revelaria refúgio insular.",
+      "referencias": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-897"
+      ],
+      "estado": "proposta",
+      "local_id": "costa-sul:rede:volta",
+      "pessoas_ids": [
+        "costa-sul:pessoa:saha",
+        "costa-sul:pessoa:corima"
+      ],
+      "escolhas": [
+        "Guiar pessoalmente",
+        "Mostrar parte do mapa",
+        "Buscar consentimento dos moradores"
+      ]
+    },
+    {
+      "id": "costa-sul:cena:sino",
+      "nome": "O Sino Que Acusou Primeiro",
+      "cotidiano": "Vizinhos treinam uma resposta civil a perigos marítimos.",
+      "conflito": "Um aviso sem testemunho transforma recém-chegados em suspeitos.",
+      "referencias": [
+        "lugar:portomonte",
+        "lugar:cavernas-kuo-toa"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2797",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta",
+      "local_id": "costa-sul:espaco:sino",
+      "pessoas_ids": [
+        "costa-sul:pessoa:orun",
+        "costa-sul:pessoa:mara"
+      ],
+      "escolhas": [
+        "Investigar o sinal",
+        "Ajudar os vulneráveis",
+        "Impedir punição coletiva"
+      ]
+    }
+  ],
+  "tramas": [
+    {
+      "id": "costa-sul:trama:medida",
+      "nome": "O Milagre e a Medida",
+      "cotidiano": "Religião, lavoura e assistência se misturam na política cotidiana de Portomonte.",
+      "conflito": "Promessas de irrigação passam a ser tratadas como obrigações de fornecer água para beber.",
+      "referencias": [
+        "lugar:portomonte"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-classe:paragrafo-2069"
+      ],
+      "estado": "proposta",
+      "pontos": [
+        "costa-sul:espaco:pedra-molhada",
+        "costa-sul:espaco:contas-agua",
+        "costa-sul:cena:contas"
+      ]
+    },
+    {
+      "id": "costa-sul:trama:mapa",
+      "nome": "O Caminho que se Recusa a Ser Mapa",
+      "cotidiano": "Uma história de viagem insular pode ajudar a encontrar desaparecidos.",
+      "conflito": "Patrulhas e contrabandistas também desejam conhecer as rotas de refúgio.",
+      "referencias": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-906"
+      ],
+      "estado": "proposta",
+      "pontos": [
+        "costa-sul:rede:casco",
+        "costa-sul:rede:volta",
+        "costa-sul:cena:mapa"
+      ]
+    },
+    {
+      "id": "costa-sul:trama:boato",
+      "nome": "O Inimigo que um Sino Inventa",
+      "cotidiano": "O perigo real dos ataques sacrificiais é explorado por quem deseja expulsar visitantes.",
+      "conflito": "Um rumor se torna desculpa para confiscar ferramentas e exigir identidades.",
+      "referencias": [
+        "lugar:portomonte",
+        "lugar:cavernas-kuo-toa"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-921",
+        "movimento-classe:paragrafo-2797"
+      ],
+      "estado": "proposta",
+      "pontos": [
+        "costa-sul:espaco:sino",
+        "costa-sul:cena:sino",
+        "costa-sul:cena:reparo"
+      ]
+    }
+  ],
+  "limites_editoriais": [
+    "Espaços são sociais e hipotéticos, não bairros canônicos, edifícios ou instituições oficiais.",
+    "As redes insulares não estabelecem ilhas individuais, coabitação de povos ou rotas fixas.",
+    "Comércio com Caatinga, produção, potabilidade, habitantes, defesas e ataques específicos não são fatos adicionados.",
+    "Movimentos do Hack orientam costumes e funções, não são atribuídos automaticamente a NPCs.",
+    "Abissais marinhos e demônios do Abismo continuam sendo naturezas distintas."
+  ],
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false
+}
