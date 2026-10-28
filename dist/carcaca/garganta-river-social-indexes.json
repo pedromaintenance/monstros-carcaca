@@ -1,0 +1,360 @@
+{
+  "by_categoria": {
+    "acordos": [
+      "rio-garganta:acordo:achado",
+      "rio-garganta:acordo:aliados",
+      "rio-garganta:acordo:nome",
+      "rio-garganta:acordo:rio"
+    ],
+    "arcos": [
+      "rio-garganta:arco:alianca",
+      "rio-garganta:arco:nomes",
+      "rio-garganta:arco:osso"
+    ],
+    "cenas": [
+      "rio-garganta:cena:guerra",
+      "rio-garganta:cena:harlowe",
+      "rio-garganta:cena:lua",
+      "rio-garganta:cena:osso",
+      "rio-garganta:cena:porta",
+      "rio-garganta:cena:soldo"
+    ],
+    "circuitos": [
+      "rio-garganta:circuito:alianca",
+      "rio-garganta:circuito:barcas",
+      "rio-garganta:circuito:minas",
+      "rio-garganta:circuito:ossos",
+      "rio-garganta:circuito:soldo"
+    ],
+    "lugares": [
+      "rio-garganta:lugar:balsa",
+      "rio-garganta:lugar:cinzas",
+      "rio-garganta:lugar:estalagem",
+      "rio-garganta:lugar:lua",
+      "rio-garganta:lugar:portas",
+      "rio-garganta:lugar:turno"
+    ],
+    "memorias": [
+      "rio-garganta:memoria:211",
+      "rio-garganta:memoria:351",
+      "rio-garganta:memoria:358",
+      "rio-garganta:memoria:875",
+      "rio-garganta:memoria:yokai"
+    ],
+    "oficios": [
+      "rio-garganta:oficio:abrigo",
+      "rio-garganta:oficio:escava",
+      "rio-garganta:oficio:escrita",
+      "rio-garganta:oficio:soldo",
+      "rio-garganta:oficio:vozes"
+    ],
+    "pessoas": [
+      "rio-garganta:pessoa:eldan",
+      "rio-garganta:pessoa:jorvan",
+      "rio-garganta:pessoa:kaelen",
+      "rio-garganta:pessoa:maire",
+      "rio-garganta:pessoa:marxinus",
+      "rio-garganta:pessoa:nira",
+      "rio-garganta:pessoa:rugha",
+      "rio-garganta:pessoa:tavor",
+      "rio-garganta:pessoa:vessa"
+    ]
+  },
+  "by_area_proposta": {
+    "area-proposta:garganta": [
+      "rio-garganta:circuito:alianca",
+      "rio-garganta:circuito:minas",
+      "rio-garganta:circuito:ossos",
+      "rio-garganta:lugar:cinzas",
+      "rio-garganta:lugar:estalagem",
+      "rio-garganta:lugar:portas",
+      "rio-garganta:lugar:turno"
+    ],
+    "area-proposta:rio": [
+      "rio-garganta:circuito:barcas",
+      "rio-garganta:circuito:soldo",
+      "rio-garganta:lugar:balsa",
+      "rio-garganta:lugar:lua"
+    ]
+  },
+  "by_setor": {
+    "burocracia": [
+      "rio-garganta:oficio:escrita"
+    ],
+    "hospitalidade": [
+      "rio-garganta:oficio:abrigo"
+    ],
+    "minas": [
+      "rio-garganta:oficio:escava"
+    ],
+    "pesquisa": [
+      "rio-garganta:oficio:vozes"
+    ],
+    "trabalho": [
+      "rio-garganta:oficio:soldo"
+    ]
+  },
+  "by_movimento_hack": {
+    "movimento-povo:paragrafo-1000": [
+      "rio-garganta:acordo:achado",
+      "rio-garganta:arco:osso",
+      "rio-garganta:cena:osso",
+      "rio-garganta:circuito:ossos",
+      "rio-garganta:lugar:turno",
+      "rio-garganta:memoria:yokai",
+      "rio-garganta:oficio:escava",
+      "rio-garganta:oficio:vozes",
+      "rio-garganta:pessoa:eldan"
+    ],
+    "movimento-povo:paragrafo-827": [
+      "rio-garganta:acordo:rio",
+      "rio-garganta:arco:nomes",
+      "rio-garganta:cena:harlowe",
+      "rio-garganta:cena:lua",
+      "rio-garganta:cena:soldo",
+      "rio-garganta:circuito:barcas",
+      "rio-garganta:circuito:soldo",
+      "rio-garganta:lugar:balsa",
+      "rio-garganta:lugar:estalagem",
+      "rio-garganta:lugar:lua",
+      "rio-garganta:oficio:abrigo",
+      "rio-garganta:oficio:soldo",
+      "rio-garganta:pessoa:jorvan",
+      "rio-garganta:pessoa:nira",
+      "rio-garganta:pessoa:tavor"
+    ],
+    "movimento-povo:paragrafo-828": [
+      "rio-garganta:acordo:achado",
+      "rio-garganta:acordo:aliados",
+      "rio-garganta:acordo:nome",
+      "rio-garganta:arco:alianca",
+      "rio-garganta:arco:nomes",
+      "rio-garganta:arco:osso",
+      "rio-garganta:cena:guerra",
+      "rio-garganta:cena:harlowe",
+      "rio-garganta:cena:osso",
+      "rio-garganta:cena:porta",
+      "rio-garganta:circuito:alianca",
+      "rio-garganta:circuito:minas",
+      "rio-garganta:lugar:cinzas",
+      "rio-garganta:lugar:estalagem",
+      "rio-garganta:lugar:portas",
+      "rio-garganta:lugar:turno",
+      "rio-garganta:memoria:211",
+      "rio-garganta:memoria:358",
+      "rio-garganta:oficio:abrigo",
+      "rio-garganta:oficio:escava",
+      "rio-garganta:oficio:escrita",
+      "rio-garganta:pessoa:eldan",
+      "rio-garganta:pessoa:kaelen",
+      "rio-garganta:pessoa:marxinus",
+      "rio-garganta:pessoa:vessa"
+    ],
+    "movimento-povo:paragrafo-830": [
+      "rio-garganta:lugar:cinzas",
+      "rio-garganta:pessoa:maire"
+    ],
+    "movimento-povo:paragrafo-832": [
+      "rio-garganta:acordo:nome",
+      "rio-garganta:acordo:rio",
+      "rio-garganta:cena:harlowe",
+      "rio-garganta:cena:lua",
+      "rio-garganta:cena:porta",
+      "rio-garganta:cena:soldo",
+      "rio-garganta:circuito:barcas",
+      "rio-garganta:circuito:minas",
+      "rio-garganta:circuito:soldo",
+      "rio-garganta:lugar:balsa",
+      "rio-garganta:lugar:cinzas",
+      "rio-garganta:lugar:lua",
+      "rio-garganta:lugar:portas",
+      "rio-garganta:memoria:211",
+      "rio-garganta:memoria:875",
+      "rio-garganta:oficio:abrigo",
+      "rio-garganta:oficio:escrita",
+      "rio-garganta:oficio:soldo",
+      "rio-garganta:pessoa:jorvan",
+      "rio-garganta:pessoa:kaelen",
+      "rio-garganta:pessoa:marxinus",
+      "rio-garganta:pessoa:nira"
+    ],
+    "movimento-povo:paragrafo-835": [
+      "rio-garganta:acordo:aliados",
+      "rio-garganta:arco:alianca",
+      "rio-garganta:cena:guerra",
+      "rio-garganta:circuito:alianca",
+      "rio-garganta:memoria:351",
+      "rio-garganta:pessoa:rugha"
+    ],
+    "movimento-povo:paragrafo-842": [
+      "rio-garganta:acordo:aliados",
+      "rio-garganta:arco:alianca",
+      "rio-garganta:cena:guerra",
+      "rio-garganta:circuito:alianca",
+      "rio-garganta:memoria:351",
+      "rio-garganta:memoria:358",
+      "rio-garganta:pessoa:rugha"
+    ],
+    "movimento-povo:paragrafo-845": [
+      "rio-garganta:lugar:turno",
+      "rio-garganta:oficio:escava"
+    ],
+    "movimento-povo:paragrafo-954": [
+      "rio-garganta:acordo:nome",
+      "rio-garganta:acordo:rio",
+      "rio-garganta:arco:nomes",
+      "rio-garganta:cena:porta",
+      "rio-garganta:cena:soldo",
+      "rio-garganta:circuito:barcas",
+      "rio-garganta:circuito:minas",
+      "rio-garganta:lugar:balsa",
+      "rio-garganta:lugar:portas",
+      "rio-garganta:memoria:875",
+      "rio-garganta:oficio:escrita",
+      "rio-garganta:oficio:soldo",
+      "rio-garganta:pessoa:vessa"
+    ],
+    "movimento-povo:paragrafo-992": [
+      "rio-garganta:acordo:achado",
+      "rio-garganta:arco:osso",
+      "rio-garganta:cena:lua",
+      "rio-garganta:cena:osso",
+      "rio-garganta:circuito:ossos",
+      "rio-garganta:lugar:estalagem",
+      "rio-garganta:lugar:lua",
+      "rio-garganta:memoria:yokai",
+      "rio-garganta:oficio:vozes",
+      "rio-garganta:pessoa:tavor"
+    ],
+    "movimento-povo:paragrafo-999": [
+      "rio-garganta:oficio:vozes",
+      "rio-garganta:pessoa:maire"
+    ]
+  },
+  "by_semente_anterior": {
+    "povoamento-proposto:balsa-dos-nomes": [
+      "rio-garganta:acordo:aliados",
+      "rio-garganta:arco:alianca",
+      "rio-garganta:cena:guerra",
+      "rio-garganta:circuito:alianca",
+      "rio-garganta:circuito:barcas",
+      "rio-garganta:lugar:balsa",
+      "rio-garganta:memoria:351",
+      "rio-garganta:pessoa:jorvan",
+      "rio-garganta:pessoa:rugha",
+      "rio-garganta:pessoa:tavor"
+    ],
+    "povoamento-proposto:cartorio-das-portas-raspadas": [
+      "rio-garganta:acordo:nome",
+      "rio-garganta:arco:nomes",
+      "rio-garganta:cena:porta",
+      "rio-garganta:circuito:alianca",
+      "rio-garganta:circuito:minas",
+      "rio-garganta:lugar:cinzas",
+      "rio-garganta:lugar:portas",
+      "rio-garganta:memoria:211",
+      "rio-garganta:memoria:358",
+      "rio-garganta:memoria:875",
+      "rio-garganta:oficio:abrigo",
+      "rio-garganta:oficio:escrita",
+      "rio-garganta:pessoa:vessa"
+    ],
+    "povoamento-proposto:patio-do-soldo": [
+      "rio-garganta:acordo:rio",
+      "rio-garganta:cena:lua",
+      "rio-garganta:cena:soldo",
+      "rio-garganta:circuito:barcas",
+      "rio-garganta:circuito:soldo",
+      "rio-garganta:lugar:lua",
+      "rio-garganta:oficio:soldo",
+      "rio-garganta:pessoa:nira"
+    ],
+    "povoamento-proposto:turno-das-escavadoras": [
+      "rio-garganta:acordo:achado",
+      "rio-garganta:arco:osso",
+      "rio-garganta:cena:harlowe",
+      "rio-garganta:cena:osso",
+      "rio-garganta:circuito:minas",
+      "rio-garganta:circuito:ossos",
+      "rio-garganta:lugar:estalagem",
+      "rio-garganta:lugar:turno",
+      "rio-garganta:memoria:yokai",
+      "rio-garganta:oficio:escava",
+      "rio-garganta:oficio:vozes",
+      "rio-garganta:pessoa:eldan",
+      "rio-garganta:pessoa:kaelen",
+      "rio-garganta:pessoa:maire",
+      "rio-garganta:pessoa:marxinus"
+    ]
+  },
+  "by_ancora_canonica": {
+    "Dunhaven, mina fortificada e centro de escavação": [
+      "rio-garganta:lugar:turno"
+    ],
+    "Garganta, governada por Lord Varys Duskveil": [
+      "rio-garganta:lugar:portas"
+    ],
+    "Harlowe e proximidade da Biblioteca dos Ossos": [
+      "rio-garganta:lugar:estalagem"
+    ],
+    "Rio Ancestral e Drakport, sem balsa localizada": [
+      "rio-garganta:lugar:balsa"
+    ],
+    "Templo corrompido de Yolskaariin": [
+      "rio-garganta:lugar:cinzas"
+    ],
+    "Templo da Lua na ilha fluvial, sob Severina Shadowbloom": [
+      "rio-garganta:lugar:lua"
+    ]
+  },
+  "by_cena_local": {
+    "rio-garganta:lugar:balsa": [
+      "rio-garganta:cena:guerra",
+      "rio-garganta:cena:soldo"
+    ],
+    "rio-garganta:lugar:estalagem": [
+      "rio-garganta:cena:harlowe"
+    ],
+    "rio-garganta:lugar:lua": [
+      "rio-garganta:cena:lua"
+    ],
+    "rio-garganta:lugar:portas": [
+      "rio-garganta:cena:porta"
+    ],
+    "rio-garganta:lugar:turno": [
+      "rio-garganta:cena:osso"
+    ]
+  },
+  "by_origem": {
+    "rio-garganta:lugar:balsa": [
+      "rio-garganta:circuito:barcas"
+    ],
+    "rio-garganta:lugar:estalagem": [
+      "rio-garganta:circuito:ossos"
+    ],
+    "rio-garganta:lugar:lua": [
+      "rio-garganta:circuito:soldo"
+    ],
+    "rio-garganta:lugar:portas": [
+      "rio-garganta:circuito:alianca"
+    ],
+    "rio-garganta:lugar:turno": [
+      "rio-garganta:circuito:minas"
+    ]
+  },
+  "by_destino": {
+    "rio-garganta:lugar:balsa": [
+      "rio-garganta:circuito:alianca",
+      "rio-garganta:circuito:soldo"
+    ],
+    "rio-garganta:lugar:lua": [
+      "rio-garganta:circuito:barcas"
+    ],
+    "rio-garganta:lugar:portas": [
+      "rio-garganta:circuito:minas"
+    ],
+    "rio-garganta:lugar:turno": [
+      "rio-garganta:circuito:ossos"
+    ]
+  }
+}
