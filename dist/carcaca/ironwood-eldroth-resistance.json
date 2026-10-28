@@ -1,0 +1,867 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ironwood e Eldroth — resistência, abrigo e memória (Povoamento XI)",
+  "escopos": [
+    "area-proposta:eldroth",
+    "area-proposta:thargrid"
+  ],
+  "regiao_referencia": "regiao:eldroth",
+  "estado": "propostas_narrativas_nao_canonicas",
+  "fatos_documentados": [
+    "Eldroth, na asa direita de Golzdov, é floresta escurecida e ocupada pelas forças de Lady Sylara Nightwhisper.",
+    "Lady Sylara utiliza criaturas da floresta para vigiar e perseguir resistência.",
+    "As ruínas de Vandar são ocupadas por Lord Damaris Blackthorn e seu exército de mortos-vivos.",
+    "Ironwood é uma fortaleza de patrulheiros e druidas ao sul de Thargrid, liderada por Elara Stormoak.",
+    "Ironwood pratica guerrilha, sabotagem e proteção de espaços contra a ocupação.",
+    "Há sobreviventes e refugiados ligados a Eldroth, mas nenhuma contagem ou percurso universal comprovado.",
+    "Cooperação entre resistências de Ironwood e Thargrid não estabelece comando central único."
+  ],
+  "fontes": [
+    "Ambientação - A Carcaça - Visão Geral.txt",
+    "Apêndice I - Trelohim, Uln-Shayr, Yokai, Kuo-Toa.txt",
+    "data/propostas/povoamento-regional-hack-carcaca.json",
+    "data/lore/hack-carcaca-dw-movimentos-povos-integrais.json",
+    "data/propostas/thargrid-resistencia-cotidiano-hack.json"
+  ],
+  "continuidades": [
+    "povoamento-proposto:correio-dos-esporos",
+    "povoamento-proposto:velorio-dos-insepultos",
+    "povoamento-proposto:escola-do-caminho-verde",
+    "thargrid-social:pessoa:vaelis"
+  ],
+  "contagens": {
+    "lugares": 5,
+    "coletivos": 5,
+    "pessoas": 8,
+    "dilemas": 4,
+    "fluxos": 5,
+    "acordos": 4,
+    "cenas": 6,
+    "arcos": 3
+  },
+  "limites_editoriais": [
+    "Todos os microespaços, coletivos, pessoas, acordos, trajetos e encontros são propostas, não ocorrências canônicas.",
+    "Lady Sylara ainda ocupa Eldroth, que não deve ser descrita como libertada.",
+    "Vandar permanece dominada por Lord Damaris e mortos-vivos, não por qualquer novo coletivo civil.",
+    "Ironwood é distinta de Eldroth e não deve ser posicionada dentro da floresta ocupada por inferência.",
+    "Elara Stormoak lidera Ironwood, não todo o continente nem a resistência de Thargrid.",
+    "Vaelis é reaproveitada de proposta anterior, não tem localização canônica nova comprovada.",
+    "Refugiados existem, mas nem números nem destinos específicos de famílias foram confirmados.",
+    "O uso de criaturas da floresta por Sylara não transforma todos os animais em colaboradores.",
+    "Movimentos do Hack são inspiração, não aquisição automática: REQUER continua obrigatório.",
+    "Nenhum evento de campanha é aplicado, nenhuma rota operacional é revelada, nenhum acordo foi assinado."
+  ],
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false,
+  "lugares": [
+    {
+      "id": "ironwood-eldroth:lugar:pouso-das-bainhas",
+      "nome": "Pouso das Bainhas Viradas",
+      "rotina_cotidiana": "Um abrigo hipotético de Ironwood recebe roupas, ferramentas e testemunhos de quem foge.",
+      "tensao_social": "A triagem pode transformar roupas marcadas em denúncia involuntária.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ambiente": "fortaleza_florestal",
+      "ancora_canonica": "Ironwood",
+      "local_confirmado": false
+    },
+    {
+      "id": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+      "nome": "Clareira das Testemunhas sem Nome",
+      "rotina_cotidiana": "Sobreviventes registram traços das violências da ocupação antes que a floresta os apague.",
+      "tensao_social": "Voltar para documentar um crime expõe quem escapou.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1004",
+        "movimento-povo:paragrafo-1003"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ambiente": "floresta_ocupada",
+      "ancora_canonica": "Eldroth",
+      "local_confirmado": false
+    },
+    {
+      "id": "ironwood-eldroth:lugar:canteiro-da-lua-ferida",
+      "nome": "Canteiro da Lua Ferida",
+      "rotina_cotidiana": "Cultivadores tentam tratar árvores e fungos afetados pela corrupção da floresta.",
+      "tensao_social": "Uma planta sob suspeita de espionagem pode ser a última fonte de remédio.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1002",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ambiente": "floresta_corrompida",
+      "ancora_canonica": "Eldroth",
+      "local_confirmado": false
+    },
+    {
+      "id": "ironwood-eldroth:lugar:sala-dos-nomes-frios",
+      "nome": "Sala dos Nomes Frios",
+      "rotina_cotidiana": "Familiares de desaparecidos reuniriam nomes e relatos perto das ruínas de Vandar.",
+      "tensao_social": "A identificação precipitada de um morto pode custar a liberdade dos vivos.",
+      "vinculos": [
+        "povoamento-proposto:velorio-dos-insepultos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1004",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ambiente": "ruina_vigiada",
+      "ancora_canonica": "Vandar",
+      "local_confirmado": false
+    },
+    {
+      "id": "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+      "nome": "Pátio da Trilha Incompleta",
+      "rotina_cotidiana": "Aprendizes de Ironwood treinam sinais e rotinas que protegem abrigos sem revelar mapas.",
+      "tensao_social": "A aprendizagem vira risco se um aluno entregar as técnicas a uma patrulha.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1003"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ambiente": "fortaleza_florestal",
+      "ancora_canonica": "Ironwood",
+      "local_confirmado": false
+    }
+  ],
+  "coletivos": [
+    {
+      "id": "ironwood-eldroth:coletivo:guardioes-do-retorno",
+      "nome": "Guardiões do Retorno Consentido",
+      "rotina_cotidiana": "Famílias e sentinelas propõem acolher exilados sem juramento de servidão.",
+      "tensao_social": "O controle das portas pode aprisionar aqueles que deveriam ser libertados.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "funcao": "acolhimento",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "ironwood-eldroth:coletivo:remendadores-da-seiva",
+      "nome": "Remendadores da Seiva Negra",
+      "rotina_cotidiana": "Druidas e lenhadores investigariam danos ecológicos sob ocupação.",
+      "tensao_social": "Destruir toda árvore suspeita pode auxiliar a devastação causada pela própria Corte.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1002",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "funcao": "cura_ambiental",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "ironwood-eldroth:coletivo:copistas-do-ultimo-nome",
+      "nome": "Copistas do Último Nome",
+      "rotina_cotidiana": "Testemunhas registrariam mortos e desaparecidos sem reivindicar seus corpos como propriedade ritual.",
+      "tensao_social": "Os nomes podem ser usados para perseguição ou necromancia não consentida.",
+      "vinculos": [
+        "povoamento-proposto:velorio-dos-insepultos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1004",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "funcao": "memoria_funebre",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "ironwood-eldroth:coletivo:aprendizes-sem-mapa",
+      "nome": "Aprendizes sem Mapa",
+      "rotina_cotidiana": "Instrutores compartilham reconhecimento de riscos sem registrar rotas clandestinas.",
+      "tensao_social": "Uma escola precisa transmitir conhecimento sem criar um manual para perseguidores.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1003"
+      ],
+      "estado": "proposta_nao_canonica",
+      "funcao": "educacao_resistencia",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "ironwood-eldroth:coletivo:vigias-do-silencio",
+      "nome": "Vigílias do Silêncio Curto",
+      "rotina_cotidiana": "Vigias escutam animais e sinais da mata antes de alertar a comunidade.",
+      "tensao_social": "Rumores confundem fenômenos naturais e ações de Lady Sylara.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1002",
+        "movimento-povo:paragrafo-1003"
+      ],
+      "estado": "proposta_nao_canonica",
+      "funcao": "vigilancia",
+      "instituicao_confirmada": false
+    }
+  ],
+  "pessoas": [
+    {
+      "id": "ironwood-eldroth:pessoa:sava",
+      "nome": "Sava Pó-de-Musgo",
+      "rotina_cotidiana": "Curadora da semente proposta Correio das Raízes Molhadas; distingue notícia de hipótese.",
+      "tensao_social": "Uma mensagem de socorro pode ser uma armadilha que denuncia o abrigo.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1002",
+        "movimento-povo:paragrafo-1004"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "elfa_da_floresta",
+      "papel": "curadora",
+      "localizacao_atual_confirmada": false,
+      "reutiliza": null
+    },
+    {
+      "id": "ironwood-eldroth:pessoa:elaina",
+      "nome": "Elaina dos Botões Sem Brasão",
+      "rotina_cotidiana": "Acolhedora proposta que guarda insígnias removidas das roupas de fugitivos.",
+      "tensao_social": "Guardas afirmam que esconder brasões impede verificar quem entrou.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "humana",
+      "papel": "acolhimento",
+      "localizacao_atual_confirmada": false,
+      "reutiliza": null
+    },
+    {
+      "id": "ironwood-eldroth:pessoa:elian",
+      "nome": "Elian Chuva-Fina",
+      "rotina_cotidiana": "Instrutor da semente proposta Escola das Trilhas que Somem; prefere esconder rotas a vencer escaramuças.",
+      "tensao_social": "Uma lição de coragem leva um aluno a expor caminhos perigosos.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1003"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "elfo_da_floresta",
+      "papel": "instrutor",
+      "localizacao_atual_confirmada": false,
+      "reutiliza": null
+    },
+    {
+      "id": "ironwood-eldroth:pessoa:serevin",
+      "nome": "Serevin do Fungo Branco",
+      "rotina_cotidiana": "Druida proposto que recolhe evidências antes de condenar uma plantação.",
+      "tensao_social": "Uma autoridade pede destruição de alimentos antes de comprovar a ameaça.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1002",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "humano",
+      "papel": "druida",
+      "localizacao_atual_confirmada": false,
+      "reutiliza": null
+    },
+    {
+      "id": "ironwood-eldroth:pessoa:eron",
+      "nome": "Eron Sem-Última-Palavra",
+      "rotina_cotidiana": "Guarda os nomes dos mortos propostos em Vandar sem confundir desaparecimento com óbito.",
+      "tensao_social": "Um ritual de identificação pode ferir o desejo da família.",
+      "vinculos": [
+        "povoamento-proposto:velorio-dos-insepultos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1004",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "humano",
+      "papel": "guardador_de_memorias",
+      "localizacao_atual_confirmada": false,
+      "reutiliza": null
+    },
+    {
+      "id": "ironwood-eldroth:pessoa:maela",
+      "nome": "Maela da Raiz Quebrada",
+      "rotina_cotidiana": "Exilada élfica proposta que preserva cantigas de Eldroth em vez de mapas de refúgios.",
+      "tensao_social": "Sua história interessa tanto aos sobreviventes quanto aos interrogadores da Corte.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1004",
+        "movimento-povo:paragrafo-1002"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "elfa_da_floresta",
+      "papel": "testemunha",
+      "localizacao_atual_confirmada": false,
+      "reutiliza": null
+    },
+    {
+      "id": "ironwood-eldroth:pessoa:vaelis",
+      "nome": "Vaelis das Folhas Cifradas",
+      "rotina_cotidiana": "Mensageira já proposta no ciclo Thargrid, sem representar oficialmente Ironwood.",
+      "tensao_social": "Uma assembleia quer os nomes completos de contatos aliados antes de ajudar.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1003"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "elfa_da_floresta",
+      "papel": "mensageira_independente",
+      "localizacao_atual_confirmada": false,
+      "reutiliza": "thargrid-social:pessoa:vaelis"
+    },
+    {
+      "id": "ironwood-eldroth:pessoa:ioven",
+      "nome": "Ioven do Espelho Rachado",
+      "rotina_cotidiana": "Shadow fey desertor proposto, conhecedor de documentos e inspeções coloniais.",
+      "tensao_social": "A informação que oferece pode ajudar fugitivos, mas seu passado merece investigação.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-953",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "shadow_fey",
+      "papel": "desertor",
+      "localizacao_atual_confirmada": false,
+      "reutiliza": null
+    }
+  ],
+  "dilemas": [
+    {
+      "id": "ironwood-eldroth:dilema:resgatar-sem-entregar",
+      "nome": "Um Grito e Muitos Abrigos",
+      "rotina_cotidiana": "Uma família pede resgate; ninguém confirma a origem do aviso.",
+      "tensao_social": "Socorrer às cegas pode revelar outros perseguidos.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1004",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "Um aviso anônimo indica dois abrigos em risco.",
+      "opcoes": [
+        "Investigar sem divulgar endereços",
+        "Oferecer socorro indireto",
+        "Recuar preservando contato"
+      ],
+      "ocorreu": false
+    },
+    {
+      "id": "ironwood-eldroth:dilema:queimar-ou-curar",
+      "nome": "A Árvore que Pode Ouvir",
+      "rotina_cotidiana": "Um viveiro pode estar alterado por magia ou por doença natural.",
+      "tensao_social": "A fogueira elimina um possível sensor e também comida e remédio.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1002",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "Vigilantes encontram plantas com comportamento incomum.",
+      "opcoes": [
+        "Isolar o viveiro",
+        "Colher evidência",
+        "Suspender cultivo temporariamente"
+      ],
+      "ocorreu": false
+    },
+    {
+      "id": "ironwood-eldroth:dilema:nomear-os-mortos",
+      "nome": "O Nome e a Ossada",
+      "rotina_cotidiana": "Duas famílias discordam sobre o uso de um ritual de identificação.",
+      "tensao_social": "Preservar memória não autoriza usar restos mortais como instrumentos.",
+      "vinculos": [
+        "povoamento-proposto:velorio-dos-insepultos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1004",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "Uma testemunha oferece necromancia para reconhecer os desaparecidos.",
+      "opcoes": [
+        "Priorizar consentimento",
+        "Colher testemunhos materiais",
+        "Suspender rito"
+      ],
+      "ocorreu": false
+    },
+    {
+      "id": "ironwood-eldroth:dilema:desertor-e-justica",
+      "nome": "O Fugitivo com Selo da Corte",
+      "rotina_cotidiana": "Um ex-agente oferece informação em troca de abrigo.",
+      "tensao_social": "Punição sumária ou confiança ingênua podem reproduzir injustiça.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-953",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "Ioven alega ter desertado de um serviço de Sylara.",
+      "opcoes": [
+        "Escutar vítimas",
+        "Abrigar com garantias limitadas",
+        "Verificar documentos"
+      ],
+      "ocorreu": false
+    }
+  ],
+  "fluxos": [
+    {
+      "id": "ironwood-eldroth:fluxo:resgate-e-pouso",
+      "nome": "Aviso sem Rastro",
+      "rotina_cotidiana": "Alertas circulam hipoteticamente entre ensino e acolhimento.",
+      "tensao_social": "Divulgar a origem de uma notícia pode denunciar seus emissores.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1003"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "informacao",
+      "origem": "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+      "destino": "ironwood-eldroth:lugar:pouso-das-bainhas",
+      "efetivado": false,
+      "quantidade_confirmada": false,
+      "rota_operacional": false
+    },
+    {
+      "id": "ironwood-eldroth:fluxo:viveiro-e-testemunha",
+      "nome": "Seiva sob Suspeita",
+      "rotina_cotidiana": "Amostras do canteiro seriam discutidas com observadores locais.",
+      "tensao_social": "O diagnóstico pode ser usado para forçar uma queimada sem comprovação.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1002",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "cura_ambiental",
+      "origem": "ironwood-eldroth:lugar:canteiro-da-lua-ferida",
+      "destino": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+      "efetivado": false,
+      "quantidade_confirmada": false,
+      "rota_operacional": false
+    },
+    {
+      "id": "ironwood-eldroth:fluxo:testemunho-e-luto",
+      "nome": "Nome que Chega sem Corpo",
+      "rotina_cotidiana": "Relatos de Eldroth poderiam chegar a familiares junto de Vandar.",
+      "tensao_social": "Uma lista de nomes não demonstra a morte de quem desapareceu.",
+      "vinculos": [
+        "povoamento-proposto:velorio-dos-insepultos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1004",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "memoria",
+      "origem": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+      "destino": "ironwood-eldroth:lugar:sala-dos-nomes-frios",
+      "efetivado": false,
+      "quantidade_confirmada": false,
+      "rota_operacional": false
+    },
+    {
+      "id": "ironwood-eldroth:fluxo:sinal-e-escola",
+      "nome": "Trilha sem Documento",
+      "rotina_cotidiana": "Observações na floresta podem apoiar o treinamento de rangers.",
+      "tensao_social": "A padronização transforma sinais secretos em padrões rastreáveis.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1003"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "educacao",
+      "origem": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+      "destino": "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+      "efetivado": false,
+      "quantidade_confirmada": false,
+      "rota_operacional": false
+    },
+    {
+      "id": "ironwood-eldroth:fluxo:familia-e-retorno",
+      "nome": "Refúgio sem Posse",
+      "rotina_cotidiana": "Acolhidos poderiam relatar experiências para instrutores sem prestar juramento.",
+      "tensao_social": "Coletar depoimentos pode virar obrigação disfarçada de gratidão.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "acolhimento",
+      "origem": "ironwood-eldroth:lugar:pouso-das-bainhas",
+      "destino": "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+      "efetivado": false,
+      "quantidade_confirmada": false,
+      "rota_operacional": false
+    }
+  ],
+  "acordos": [
+    {
+      "id": "ironwood-eldroth:acordo:nenhuma-lista-completa",
+      "nome": "Nenhuma Lista Completa",
+      "rotina_cotidiana": "Proposta de não centralizar nomes e localizações de abrigados.",
+      "tensao_social": "A segurança compartilhada convive com informação incompleta.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "ironwood-eldroth:pessoa:elaina",
+        "ironwood-eldroth:pessoa:elian"
+      ],
+      "custo": "Auditoria por testemunhas sem lista única.",
+      "ruptura": "Entregar nomes ou caminhos sem consentimento.",
+      "vigente": false
+    },
+    {
+      "id": "ironwood-eldroth:acordo:prova-antes-da-pira",
+      "nome": "Prova antes da Pira",
+      "rotina_cotidiana": "Proposta de diagnosticar o viveiro antes de incendiá-lo.",
+      "tensao_social": "Proteger a comunidade exige observação durante a incerteza.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1002",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "ironwood-eldroth:pessoa:serevin",
+        "ironwood-eldroth:pessoa:sava"
+      ],
+      "custo": "Isolamento e vigilância temporários.",
+      "ruptura": "Queimar por boato ou negligenciar perigo comprovado.",
+      "vigente": false
+    },
+    {
+      "id": "ironwood-eldroth:acordo:morte-nao-e-tributo",
+      "nome": "Os Mortos não Pagam Tributo",
+      "rotina_cotidiana": "Proposta de preservar nomes sem apropriação de cadáveres.",
+      "tensao_social": "Nem toda família desejará identificação ou rito.",
+      "vinculos": [
+        "povoamento-proposto:velorio-dos-insepultos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1004",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "ironwood-eldroth:pessoa:eron",
+        "ironwood-eldroth:pessoa:maela"
+      ],
+      "custo": "Aceitar indeterminação.",
+      "ruptura": "Forçar uso mágico de restos mortais.",
+      "vigente": false
+    },
+    {
+      "id": "ironwood-eldroth:acordo:refugio-sem-obediencia",
+      "nome": "Abrigo não É Juramento",
+      "rotina_cotidiana": "Proposta de acolher sem obrigar serviço militar.",
+      "tensao_social": "Recursos são escassos, mas acolhimento não deve virar recrutamento forçado.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "ironwood-eldroth:pessoa:elaina",
+        "ironwood-eldroth:pessoa:vaelis"
+      ],
+      "custo": "Dividir provisões e tomar decisões caso a caso.",
+      "ruptura": "Exigir servidão como preço do abrigo.",
+      "vigente": false
+    }
+  ],
+  "cenas": [
+    {
+      "id": "ironwood-eldroth:cena:selo-na-capa",
+      "nome": "A Capa que Tinha um Selo",
+      "rotina_cotidiana": "Uma peça de vestuário apresenta marca de inspeção da Corte.",
+      "tensao_social": "O sinal pode ser velho resíduo ou marca ativa de rastreamento.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-953"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "ironwood-eldroth:lugar:pouso-das-bainhas",
+      "elenco": [
+        "ironwood-eldroth:pessoa:elaina",
+        "ironwood-eldroth:pessoa:ioven"
+      ],
+      "escolhas": [
+        "Examinar sem expor a família",
+        "Isolar apenas o objeto",
+        "Ouvir quem fugiu"
+      ],
+      "se_ignorarem": "Uma suspeita pode virar expulsão sem prova.",
+      "ocorreu": false
+    },
+    {
+      "id": "ironwood-eldroth:cena:passaro-sem-canto",
+      "nome": "O Pássaro que Não Cantou",
+      "rotina_cotidiana": "Sava nota silêncio anormal antes de um encontro.",
+      "tensao_social": "É incerto se o fenômeno é magia de Sylara ou reação natural.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1002",
+        "movimento-povo:paragrafo-1003"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+      "elenco": [
+        "ironwood-eldroth:pessoa:sava",
+        "ironwood-eldroth:pessoa:maela"
+      ],
+      "escolhas": [
+        "Adiar a reunião",
+        "Observar sinais independentes",
+        "Reunir testemunhas de outro modo"
+      ],
+      "se_ignorarem": "A reunião pode denunciar pessoas escondidas.",
+      "ocorreu": false
+    },
+    {
+      "id": "ironwood-eldroth:cena:viveiro-negro",
+      "nome": "A Seiva Escura",
+      "rotina_cotidiana": "Serevin exibe um ramo doente durante debate entre cultivadores.",
+      "tensao_social": "O ramo não prova a origem da corrupção.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1002",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "ironwood-eldroth:lugar:canteiro-da-lua-ferida",
+      "elenco": [
+        "ironwood-eldroth:pessoa:serevin",
+        "ironwood-eldroth:pessoa:sava"
+      ],
+      "escolhas": [
+        "Isolar amostra",
+        "Investigar outros sinais",
+        "Buscar provisões alternativas"
+      ],
+      "se_ignorarem": "Pode-se perder o alimento e também espalhar um perigo desconhecido.",
+      "ocorreu": false
+    },
+    {
+      "id": "ironwood-eldroth:cena:despedida-sem-cadaver",
+      "nome": "O Velório sem Corpo",
+      "rotina_cotidiana": "Eron recebe duas versões incompatíveis sobre um desaparecimento.",
+      "tensao_social": "Sem corpo, não há confirmação da morte nem licença automática para rituais.",
+      "vinculos": [
+        "povoamento-proposto:velorio-dos-insepultos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1004",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "ironwood-eldroth:lugar:sala-dos-nomes-frios",
+      "elenco": [
+        "ironwood-eldroth:pessoa:eron",
+        "ironwood-eldroth:pessoa:maela"
+      ],
+      "escolhas": [
+        "Registrar versões divergentes",
+        "Ouvir famílias",
+        "Recusar ritual imposto"
+      ],
+      "se_ignorarem": "Um desaparecido poderá ser registrado como morto por conveniência.",
+      "ocorreu": false
+    },
+    {
+      "id": "ironwood-eldroth:cena:aprendiz-do-mapa",
+      "nome": "O Menino que Decorou a Trilha",
+      "rotina_cotidiana": "Elian descobre que um aprendiz descreveu um sinal clandestino para impressionar outro.",
+      "tensao_social": "A formação ameaça revelar aquilo que protege.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1003"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+      "elenco": [
+        "ironwood-eldroth:pessoa:elian",
+        "ironwood-eldroth:pessoa:vaelis"
+      ],
+      "escolhas": [
+        "Conter exposição",
+        "Rever treinamento",
+        "Verificar se o sinal foi observado"
+      ],
+      "se_ignorarem": "A patrulha pode reconhecer padrões antes da correção.",
+      "ocorreu": false
+    },
+    {
+      "id": "ironwood-eldroth:cena:pedido-de-desercao",
+      "nome": "A Etiqueta do Desertor",
+      "rotina_cotidiana": "Ioven pede acolhimento oferecendo tradução de um documento colonial.",
+      "tensao_social": "O testemunho é útil, mas não substitui uma investigação.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-953",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "ironwood-eldroth:lugar:pouso-das-bainhas",
+      "elenco": [
+        "ironwood-eldroth:pessoa:ioven",
+        "ironwood-eldroth:pessoa:elaina",
+        "ironwood-eldroth:pessoa:sava"
+      ],
+      "escolhas": [
+        "Ouvir vítimas",
+        "Conferir evidências",
+        "Oferecer proteção limitada sem coação"
+      ],
+      "se_ignorarem": "Desconfiança coletiva ou ingenuidade podem expor inocentes.",
+      "ocorreu": false
+    }
+  ],
+  "arcos": [
+    {
+      "id": "ironwood-eldroth:arco:direito-ao-retorno",
+      "nome": "Voltar Não É Entregar",
+      "rotina_cotidiana": "A comunidade precisa conciliar proteção a fugitivos com liberdade de partir.",
+      "tensao_social": "A segurança não deve reproduzir uma prisão.",
+      "vinculos": [
+        "povoamento-proposto:escola-do-caminho-verde"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1005",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "ironwood-eldroth:cena:selo-na-capa",
+        "ironwood-eldroth:cena:aprendiz-do-mapa",
+        "ironwood-eldroth:cena:pedido-de-desercao"
+      ],
+      "decisao_central": "Como proteger sem cobrar obediência em troca?",
+      "resultado_confirmado": false
+    },
+    {
+      "id": "ironwood-eldroth:arco:memoria-antes-da-vinganca",
+      "nome": "A Floresta Guarda Testemunhas",
+      "rotina_cotidiana": "Sobreviventes discutem preservar vestígios e identidades em uma mata vigiada.",
+      "tensao_social": "Uma prova pode custar a vida de quem testemunha.",
+      "vinculos": [
+        "povoamento-proposto:velorio-dos-insepultos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1004",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "ironwood-eldroth:cena:passaro-sem-canto",
+        "ironwood-eldroth:cena:despedida-sem-cadaver"
+      ],
+      "decisao_central": "Quando o testemunho de alguém pode ser divulgado?",
+      "resultado_confirmado": false
+    },
+    {
+      "id": "ironwood-eldroth:arco:cura-e-defesa",
+      "nome": "Salvem as Árvores, Salvem as Pessoas",
+      "rotina_cotidiana": "Curadores tentam diferenciar degradação ambiental e uso feérico da floresta.",
+      "tensao_social": "Queimar indiscriminadamente também favorece ocupantes.",
+      "vinculos": [
+        "povoamento-proposto:correio-dos-esporos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-1002",
+        "movimento-povo:paragrafo-1006"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "ironwood-eldroth:cena:viveiro-negro",
+        "ironwood-eldroth:cena:passaro-sem-canto"
+      ],
+      "decisao_central": "Qual evidência autoriza destruir uma fonte de vida para evitar um perigo?",
+      "resultado_confirmado": false
+    }
+  ]
+}

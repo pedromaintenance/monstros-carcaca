@@ -1,0 +1,324 @@
+{
+  "by_categoria": {
+    "acordos": [
+      "ironwood-eldroth:acordo:morte-nao-e-tributo",
+      "ironwood-eldroth:acordo:nenhuma-lista-completa",
+      "ironwood-eldroth:acordo:prova-antes-da-pira",
+      "ironwood-eldroth:acordo:refugio-sem-obediencia"
+    ],
+    "arcos": [
+      "ironwood-eldroth:arco:cura-e-defesa",
+      "ironwood-eldroth:arco:direito-ao-retorno",
+      "ironwood-eldroth:arco:memoria-antes-da-vinganca"
+    ],
+    "cenas": [
+      "ironwood-eldroth:cena:aprendiz-do-mapa",
+      "ironwood-eldroth:cena:despedida-sem-cadaver",
+      "ironwood-eldroth:cena:passaro-sem-canto",
+      "ironwood-eldroth:cena:pedido-de-desercao",
+      "ironwood-eldroth:cena:selo-na-capa",
+      "ironwood-eldroth:cena:viveiro-negro"
+    ],
+    "coletivos": [
+      "ironwood-eldroth:coletivo:aprendizes-sem-mapa",
+      "ironwood-eldroth:coletivo:copistas-do-ultimo-nome",
+      "ironwood-eldroth:coletivo:guardioes-do-retorno",
+      "ironwood-eldroth:coletivo:remendadores-da-seiva",
+      "ironwood-eldroth:coletivo:vigias-do-silencio"
+    ],
+    "dilemas": [
+      "ironwood-eldroth:dilema:desertor-e-justica",
+      "ironwood-eldroth:dilema:nomear-os-mortos",
+      "ironwood-eldroth:dilema:queimar-ou-curar",
+      "ironwood-eldroth:dilema:resgatar-sem-entregar"
+    ],
+    "fluxos": [
+      "ironwood-eldroth:fluxo:familia-e-retorno",
+      "ironwood-eldroth:fluxo:resgate-e-pouso",
+      "ironwood-eldroth:fluxo:sinal-e-escola",
+      "ironwood-eldroth:fluxo:testemunho-e-luto",
+      "ironwood-eldroth:fluxo:viveiro-e-testemunha"
+    ],
+    "lugares": [
+      "ironwood-eldroth:lugar:canteiro-da-lua-ferida",
+      "ironwood-eldroth:lugar:clareira-das-testemunhas",
+      "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+      "ironwood-eldroth:lugar:pouso-das-bainhas",
+      "ironwood-eldroth:lugar:sala-dos-nomes-frios"
+    ],
+    "pessoas": [
+      "ironwood-eldroth:pessoa:elaina",
+      "ironwood-eldroth:pessoa:elian",
+      "ironwood-eldroth:pessoa:eron",
+      "ironwood-eldroth:pessoa:ioven",
+      "ironwood-eldroth:pessoa:maela",
+      "ironwood-eldroth:pessoa:sava",
+      "ironwood-eldroth:pessoa:serevin",
+      "ironwood-eldroth:pessoa:vaelis"
+    ]
+  },
+  "by_povo": {
+    "elfa_da_floresta": [
+      "ironwood-eldroth:pessoa:maela",
+      "ironwood-eldroth:pessoa:sava",
+      "ironwood-eldroth:pessoa:vaelis"
+    ],
+    "elfo_da_floresta": [
+      "ironwood-eldroth:pessoa:elian"
+    ],
+    "humana": [
+      "ironwood-eldroth:pessoa:elaina"
+    ],
+    "humano": [
+      "ironwood-eldroth:pessoa:eron",
+      "ironwood-eldroth:pessoa:serevin"
+    ],
+    "shadow_fey": [
+      "ironwood-eldroth:pessoa:ioven"
+    ]
+  },
+  "by_ambiente": {
+    "floresta_corrompida": [
+      "ironwood-eldroth:lugar:canteiro-da-lua-ferida"
+    ],
+    "floresta_ocupada": [
+      "ironwood-eldroth:lugar:clareira-das-testemunhas"
+    ],
+    "fortaleza_florestal": [
+      "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+      "ironwood-eldroth:lugar:pouso-das-bainhas"
+    ],
+    "ruina_vigiada": [
+      "ironwood-eldroth:lugar:sala-dos-nomes-frios"
+    ]
+  },
+  "by_funcao": {
+    "acolhimento": [
+      "ironwood-eldroth:coletivo:guardioes-do-retorno"
+    ],
+    "cura_ambiental": [
+      "ironwood-eldroth:coletivo:remendadores-da-seiva"
+    ],
+    "educacao_resistencia": [
+      "ironwood-eldroth:coletivo:aprendizes-sem-mapa"
+    ],
+    "memoria_funebre": [
+      "ironwood-eldroth:coletivo:copistas-do-ultimo-nome"
+    ],
+    "vigilancia": [
+      "ironwood-eldroth:coletivo:vigias-do-silencio"
+    ]
+  },
+  "by_setor": {
+    "acolhimento": [
+      "ironwood-eldroth:fluxo:familia-e-retorno"
+    ],
+    "cura_ambiental": [
+      "ironwood-eldroth:fluxo:viveiro-e-testemunha"
+    ],
+    "educacao": [
+      "ironwood-eldroth:fluxo:sinal-e-escola"
+    ],
+    "informacao": [
+      "ironwood-eldroth:fluxo:resgate-e-pouso"
+    ],
+    "memoria": [
+      "ironwood-eldroth:fluxo:testemunho-e-luto"
+    ]
+  },
+  "by_movimento_hack": {
+    "movimento-povo:paragrafo-1002": [
+      "ironwood-eldroth:acordo:prova-antes-da-pira",
+      "ironwood-eldroth:arco:cura-e-defesa",
+      "ironwood-eldroth:cena:passaro-sem-canto",
+      "ironwood-eldroth:cena:viveiro-negro",
+      "ironwood-eldroth:coletivo:remendadores-da-seiva",
+      "ironwood-eldroth:coletivo:vigias-do-silencio",
+      "ironwood-eldroth:dilema:queimar-ou-curar",
+      "ironwood-eldroth:fluxo:viveiro-e-testemunha",
+      "ironwood-eldroth:lugar:canteiro-da-lua-ferida",
+      "ironwood-eldroth:pessoa:maela",
+      "ironwood-eldroth:pessoa:sava",
+      "ironwood-eldroth:pessoa:serevin"
+    ],
+    "movimento-povo:paragrafo-1003": [
+      "ironwood-eldroth:cena:aprendiz-do-mapa",
+      "ironwood-eldroth:cena:passaro-sem-canto",
+      "ironwood-eldroth:coletivo:aprendizes-sem-mapa",
+      "ironwood-eldroth:coletivo:vigias-do-silencio",
+      "ironwood-eldroth:fluxo:resgate-e-pouso",
+      "ironwood-eldroth:fluxo:sinal-e-escola",
+      "ironwood-eldroth:lugar:clareira-das-testemunhas",
+      "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+      "ironwood-eldroth:pessoa:elian",
+      "ironwood-eldroth:pessoa:vaelis"
+    ],
+    "movimento-povo:paragrafo-1004": [
+      "ironwood-eldroth:acordo:morte-nao-e-tributo",
+      "ironwood-eldroth:arco:memoria-antes-da-vinganca",
+      "ironwood-eldroth:cena:despedida-sem-cadaver",
+      "ironwood-eldroth:coletivo:copistas-do-ultimo-nome",
+      "ironwood-eldroth:dilema:nomear-os-mortos",
+      "ironwood-eldroth:dilema:resgatar-sem-entregar",
+      "ironwood-eldroth:fluxo:testemunho-e-luto",
+      "ironwood-eldroth:lugar:clareira-das-testemunhas",
+      "ironwood-eldroth:lugar:sala-dos-nomes-frios",
+      "ironwood-eldroth:pessoa:eron",
+      "ironwood-eldroth:pessoa:maela",
+      "ironwood-eldroth:pessoa:sava"
+    ],
+    "movimento-povo:paragrafo-1005": [
+      "ironwood-eldroth:acordo:nenhuma-lista-completa",
+      "ironwood-eldroth:acordo:refugio-sem-obediencia",
+      "ironwood-eldroth:arco:direito-ao-retorno",
+      "ironwood-eldroth:cena:aprendiz-do-mapa",
+      "ironwood-eldroth:cena:selo-na-capa",
+      "ironwood-eldroth:coletivo:aprendizes-sem-mapa",
+      "ironwood-eldroth:coletivo:guardioes-do-retorno",
+      "ironwood-eldroth:fluxo:familia-e-retorno",
+      "ironwood-eldroth:fluxo:resgate-e-pouso",
+      "ironwood-eldroth:fluxo:sinal-e-escola",
+      "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+      "ironwood-eldroth:lugar:pouso-das-bainhas",
+      "ironwood-eldroth:pessoa:elaina",
+      "ironwood-eldroth:pessoa:elian",
+      "ironwood-eldroth:pessoa:vaelis"
+    ],
+    "movimento-povo:paragrafo-1006": [
+      "ironwood-eldroth:acordo:morte-nao-e-tributo",
+      "ironwood-eldroth:acordo:nenhuma-lista-completa",
+      "ironwood-eldroth:acordo:prova-antes-da-pira",
+      "ironwood-eldroth:acordo:refugio-sem-obediencia",
+      "ironwood-eldroth:arco:cura-e-defesa",
+      "ironwood-eldroth:arco:direito-ao-retorno",
+      "ironwood-eldroth:arco:memoria-antes-da-vinganca",
+      "ironwood-eldroth:cena:despedida-sem-cadaver",
+      "ironwood-eldroth:cena:pedido-de-desercao",
+      "ironwood-eldroth:cena:viveiro-negro",
+      "ironwood-eldroth:coletivo:copistas-do-ultimo-nome",
+      "ironwood-eldroth:coletivo:guardioes-do-retorno",
+      "ironwood-eldroth:coletivo:remendadores-da-seiva",
+      "ironwood-eldroth:dilema:desertor-e-justica",
+      "ironwood-eldroth:dilema:nomear-os-mortos",
+      "ironwood-eldroth:dilema:queimar-ou-curar",
+      "ironwood-eldroth:dilema:resgatar-sem-entregar",
+      "ironwood-eldroth:fluxo:familia-e-retorno",
+      "ironwood-eldroth:fluxo:testemunho-e-luto",
+      "ironwood-eldroth:fluxo:viveiro-e-testemunha",
+      "ironwood-eldroth:lugar:canteiro-da-lua-ferida",
+      "ironwood-eldroth:lugar:pouso-das-bainhas",
+      "ironwood-eldroth:lugar:sala-dos-nomes-frios",
+      "ironwood-eldroth:pessoa:elaina",
+      "ironwood-eldroth:pessoa:eron",
+      "ironwood-eldroth:pessoa:ioven",
+      "ironwood-eldroth:pessoa:serevin"
+    ],
+    "movimento-povo:paragrafo-953": [
+      "ironwood-eldroth:cena:pedido-de-desercao",
+      "ironwood-eldroth:cena:selo-na-capa",
+      "ironwood-eldroth:dilema:desertor-e-justica",
+      "ironwood-eldroth:pessoa:ioven"
+    ]
+  },
+  "by_semente_anterior": {
+    "povoamento-proposto:correio-dos-esporos": [
+      "ironwood-eldroth:acordo:prova-antes-da-pira",
+      "ironwood-eldroth:arco:cura-e-defesa",
+      "ironwood-eldroth:cena:passaro-sem-canto",
+      "ironwood-eldroth:cena:pedido-de-desercao",
+      "ironwood-eldroth:cena:viveiro-negro",
+      "ironwood-eldroth:coletivo:remendadores-da-seiva",
+      "ironwood-eldroth:coletivo:vigias-do-silencio",
+      "ironwood-eldroth:dilema:desertor-e-justica",
+      "ironwood-eldroth:dilema:queimar-ou-curar",
+      "ironwood-eldroth:dilema:resgatar-sem-entregar",
+      "ironwood-eldroth:fluxo:viveiro-e-testemunha",
+      "ironwood-eldroth:lugar:canteiro-da-lua-ferida",
+      "ironwood-eldroth:lugar:clareira-das-testemunhas",
+      "ironwood-eldroth:pessoa:ioven",
+      "ironwood-eldroth:pessoa:maela",
+      "ironwood-eldroth:pessoa:sava",
+      "ironwood-eldroth:pessoa:serevin"
+    ],
+    "povoamento-proposto:escola-do-caminho-verde": [
+      "ironwood-eldroth:acordo:nenhuma-lista-completa",
+      "ironwood-eldroth:acordo:refugio-sem-obediencia",
+      "ironwood-eldroth:arco:direito-ao-retorno",
+      "ironwood-eldroth:cena:aprendiz-do-mapa",
+      "ironwood-eldroth:cena:selo-na-capa",
+      "ironwood-eldroth:coletivo:aprendizes-sem-mapa",
+      "ironwood-eldroth:coletivo:guardioes-do-retorno",
+      "ironwood-eldroth:fluxo:familia-e-retorno",
+      "ironwood-eldroth:fluxo:resgate-e-pouso",
+      "ironwood-eldroth:fluxo:sinal-e-escola",
+      "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+      "ironwood-eldroth:lugar:pouso-das-bainhas",
+      "ironwood-eldroth:pessoa:elaina",
+      "ironwood-eldroth:pessoa:elian",
+      "ironwood-eldroth:pessoa:vaelis"
+    ],
+    "povoamento-proposto:velorio-dos-insepultos": [
+      "ironwood-eldroth:acordo:morte-nao-e-tributo",
+      "ironwood-eldroth:arco:memoria-antes-da-vinganca",
+      "ironwood-eldroth:cena:despedida-sem-cadaver",
+      "ironwood-eldroth:coletivo:copistas-do-ultimo-nome",
+      "ironwood-eldroth:dilema:nomear-os-mortos",
+      "ironwood-eldroth:fluxo:testemunho-e-luto",
+      "ironwood-eldroth:lugar:sala-dos-nomes-frios",
+      "ironwood-eldroth:pessoa:eron"
+    ]
+  },
+  "by_cena_local": {
+    "ironwood-eldroth:lugar:canteiro-da-lua-ferida": [
+      "ironwood-eldroth:cena:viveiro-negro"
+    ],
+    "ironwood-eldroth:lugar:clareira-das-testemunhas": [
+      "ironwood-eldroth:cena:passaro-sem-canto"
+    ],
+    "ironwood-eldroth:lugar:patio-da-trilha-incompleta": [
+      "ironwood-eldroth:cena:aprendiz-do-mapa"
+    ],
+    "ironwood-eldroth:lugar:pouso-das-bainhas": [
+      "ironwood-eldroth:cena:pedido-de-desercao",
+      "ironwood-eldroth:cena:selo-na-capa"
+    ],
+    "ironwood-eldroth:lugar:sala-dos-nomes-frios": [
+      "ironwood-eldroth:cena:despedida-sem-cadaver"
+    ]
+  },
+  "by_origem": {
+    "ironwood-eldroth:lugar:canteiro-da-lua-ferida": [
+      "ironwood-eldroth:fluxo:viveiro-e-testemunha"
+    ],
+    "ironwood-eldroth:lugar:clareira-das-testemunhas": [
+      "ironwood-eldroth:fluxo:sinal-e-escola",
+      "ironwood-eldroth:fluxo:testemunho-e-luto"
+    ],
+    "ironwood-eldroth:lugar:patio-da-trilha-incompleta": [
+      "ironwood-eldroth:fluxo:resgate-e-pouso"
+    ],
+    "ironwood-eldroth:lugar:pouso-das-bainhas": [
+      "ironwood-eldroth:fluxo:familia-e-retorno"
+    ]
+  },
+  "by_destino": {
+    "ironwood-eldroth:lugar:clareira-das-testemunhas": [
+      "ironwood-eldroth:fluxo:viveiro-e-testemunha"
+    ],
+    "ironwood-eldroth:lugar:patio-da-trilha-incompleta": [
+      "ironwood-eldroth:fluxo:familia-e-retorno",
+      "ironwood-eldroth:fluxo:sinal-e-escola"
+    ],
+    "ironwood-eldroth:lugar:pouso-das-bainhas": [
+      "ironwood-eldroth:fluxo:resgate-e-pouso"
+    ],
+    "ironwood-eldroth:lugar:sala-dos-nomes-frios": [
+      "ironwood-eldroth:fluxo:testemunho-e-luto"
+    ]
+  },
+  "by_personagem_reutilizado": {
+    "thargrid-social:pessoa:vaelis": [
+      "ironwood-eldroth:pessoa:vaelis"
+    ]
+  }
+}
