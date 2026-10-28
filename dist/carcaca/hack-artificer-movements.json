@@ -1,0 +1,864 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-2672",
+    "paragrafo_docx": 2672,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "ENGENHEIRO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2672,
+        "tipo": "corpo",
+        "texto": "Quando analisar uma máquina, estrutura ou sistema construído, pergunte uma:"
+      },
+      {
+        "paragrafo_docx": 2673,
+        "tipo": "opcao",
+        "texto": "Como funciona?"
+      },
+      {
+        "paragrafo_docx": 2674,
+        "tipo": "opcao",
+        "texto": "Onde falha primeiro?"
+      },
+      {
+        "paragrafo_docx": 2675,
+        "tipo": "opcao",
+        "texto": "O que preciso para reparar?"
+      },
+      {
+        "paragrafo_docx": 2676,
+        "tipo": "opcao",
+        "texto": "O que preciso para sabotar?"
+      },
+      {
+        "paragrafo_docx": 2677,
+        "tipo": "opcao",
+        "texto": "O que preciso para adaptá-lo?"
+      },
+      {
+        "paragrafo_docx": 2678,
+        "tipo": "continuacao",
+        "texto": "O Mestre responderá honestamente. Quando tiver tempo e acesso suficientes para desmontar, testar ou estudar cuidadosamente, pergunte até três."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2673,
+        "texto": "Como funciona?"
+      },
+      {
+        "paragrafo_docx": 2674,
+        "texto": "Onde falha primeiro?"
+      },
+      {
+        "paragrafo_docx": 2675,
+        "texto": "O que preciso para reparar?"
+      },
+      {
+        "paragrafo_docx": 2676,
+        "texto": "O que preciso para sabotar?"
+      },
+      {
+        "paragrafo_docx": 2677,
+        "texto": "O que preciso para adaptá-lo?"
+      }
+    ],
+    "texto_original": "Quando analisar uma máquina, estrutura ou sistema construído, pergunte uma:\nComo funciona?\nOnde falha primeiro?\nO que preciso para reparar?\nO que preciso para sabotar?\nO que preciso para adaptá-lo?\nO Mestre responderá honestamente. Quando tiver tempo e acesso suficientes para desmontar, testar ou estudar cuidadosamente, pergunte até três.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2672"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2679",
+    "paragrafo_docx": 2679,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "ARTÍFICE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2679,
+        "tipo": "corpo",
+        "texto": "Quando possuir oficina, materiais e tempo, você pode construir uma engenhoca original capaz de realizar uma função específica que normalmente exigiria equipamento, tecnologia ou solução que não está disponível. Explique o princípio pelo qual ela funciona e escolha uma limitação séria:"
+      },
+      {
+        "paragrafo_docx": 2680,
+        "tipo": "opcao",
+        "texto": "frágil;"
+      },
+      {
+        "paragrafo_docx": 2681,
+        "tipo": "opcao",
+        "texto": "pesada;"
+      },
+      {
+        "paragrafo_docx": 2682,
+        "tipo": "opcao",
+        "texto": "instável;"
+      },
+      {
+        "paragrafo_docx": 2683,
+        "tipo": "opcao",
+        "texto": "cara;"
+      },
+      {
+        "paragrafo_docx": 2684,
+        "tipo": "opcao",
+        "texto": "lenta;"
+      },
+      {
+        "paragrafo_docx": 2685,
+        "tipo": "opcao",
+        "texto": "uso único."
+      },
+      {
+        "paragrafo_docx": 2686,
+        "tipo": "continuacao",
+        "texto": "Projetos de escala, poder ou complexidade extraordinários podem exigir materiais, conhecimento ou condições igualmente extraordinários."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2680,
+        "texto": "frágil;"
+      },
+      {
+        "paragrafo_docx": 2681,
+        "texto": "pesada;"
+      },
+      {
+        "paragrafo_docx": 2682,
+        "texto": "instável;"
+      },
+      {
+        "paragrafo_docx": 2683,
+        "texto": "cara;"
+      },
+      {
+        "paragrafo_docx": 2684,
+        "texto": "lenta;"
+      },
+      {
+        "paragrafo_docx": 2685,
+        "texto": "uso único."
+      }
+    ],
+    "texto_original": "Quando possuir oficina, materiais e tempo, você pode construir uma engenhoca original capaz de realizar uma função específica que normalmente exigiria equipamento, tecnologia ou solução que não está disponível. Explique o princípio pelo qual ela funciona e escolha uma limitação séria:\nfrágil;\npesada;\ninstável;\ncara;\nlenta;\nuso único.\nProjetos de escala, poder ou complexidade extraordinários podem exigir materiais, conhecimento ou condições igualmente extraordinários.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2679"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2687",
+    "paragrafo_docx": 2687,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "GAMBARRA DE CAMPO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2687,
+        "tipo": "corpo",
+        "texto": "Quando precisar fazer uma máquina funcionar agora, sem possuir tudo que seria necessário, role+INT.\n10+: funciona até você ter oportunidade real de repará-la.\n7–9: funciona, mas escolha: dura poucos minutos; destrói outra peça; requer atenção constante; ou se torna perigosa."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando precisar fazer uma máquina funcionar agora, sem possuir tudo que seria necessário, role+INT.\n10+: funciona até você ter oportunidade real de repará-la.\n7–9: funciona, mas escolha: dura poucos minutos; destrói outra peça; requer atenção constante; ou se torna perigosa.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2687"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2688",
+    "paragrafo_docx": 2688,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "EU SEI ONDE BATER",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2688,
+        "tipo": "corpo",
+        "texto": "Quando causar dano deliberadamente a uma máquina ou estrutura cujo funcionamento você compreende, pode ignorar Armadura que represente apenas sua robustez externa ao atingir um ponto funcional acessível."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando causar dano deliberadamente a uma máquina ou estrutura cujo funcionamento você compreende, pode ignorar Armadura que represente apenas sua robustez externa ao atingir um ponto funcional acessível.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2688"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2689",
+    "paragrafo_docx": 2689,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "FEITO PARA ISSO",
+    "requisito_literal": "Artífice",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2679",
+      "titulo_requerido": "ARTÍFICE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2689,
+        "tipo": "corpo",
+        "texto": "Quando construir uma engenhoca original que funcione como ferramenta, diga como ela explora um único problema conhecido e concretamente definido. Enquanto utilizada exclusivamente contra ele, uma limitação, defesa ou dificuldade que normalmente impediria a solução deixa de impedi-la. Sua limitação tem menor grau para este problema."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando construir uma engenhoca original que funcione como ferramenta, diga como ela explora um único problema conhecido e concretamente definido. Enquanto utilizada exclusivamente contra ele, uma limitação, defesa ou dificuldade que normalmente impediria a solução deixa de impedi-la. Sua limitação tem menor grau para este problema.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2689"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2690",
+    "paragrafo_docx": 2690,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "ALQUIMISTA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2690,
+        "tipo": "corpo",
+        "texto": "Quando preparar uma substância com ingredientes apropriados, escolha um efeito:"
+      },
+      {
+        "paragrafo_docx": 2691,
+        "tipo": "opcao",
+        "texto": "corrosivo;"
+      },
+      {
+        "paragrafo_docx": 2692,
+        "tipo": "opcao",
+        "texto": "explosivo;"
+      },
+      {
+        "paragrafo_docx": 2693,
+        "tipo": "opcao",
+        "texto": "sedativo;"
+      },
+      {
+        "paragrafo_docx": 2694,
+        "tipo": "opcao",
+        "texto": "estimulante;"
+      },
+      {
+        "paragrafo_docx": 2695,
+        "tipo": "opcao",
+        "texto": "fumaça;"
+      },
+      {
+        "paragrafo_docx": 2696,
+        "tipo": "opcao",
+        "texto": "antídoto;"
+      },
+      {
+        "paragrafo_docx": 2697,
+        "tipo": "opcao",
+        "texto": "adesivo;"
+      },
+      {
+        "paragrafo_docx": 2698,
+        "tipo": "opcao",
+        "texto": "incendiário."
+      },
+      {
+        "paragrafo_docx": 2699,
+        "tipo": "continuacao",
+        "texto": "Role+INT.\n10+: produza 2 doses estáveis.\n7–9: produza 1 e escolha: instável, perigosa de transportar ou efeito colateral."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2691,
+        "texto": "corrosivo;"
+      },
+      {
+        "paragrafo_docx": 2692,
+        "texto": "explosivo;"
+      },
+      {
+        "paragrafo_docx": 2693,
+        "texto": "sedativo;"
+      },
+      {
+        "paragrafo_docx": 2694,
+        "texto": "estimulante;"
+      },
+      {
+        "paragrafo_docx": 2695,
+        "texto": "fumaça;"
+      },
+      {
+        "paragrafo_docx": 2696,
+        "texto": "antídoto;"
+      },
+      {
+        "paragrafo_docx": 2697,
+        "texto": "adesivo;"
+      },
+      {
+        "paragrafo_docx": 2698,
+        "texto": "incendiário."
+      }
+    ],
+    "texto_original": "Quando preparar uma substância com ingredientes apropriados, escolha um efeito:\ncorrosivo;\nexplosivo;\nsedativo;\nestimulante;\nfumaça;\nantídoto;\nadesivo;\nincendiário.\nRole+INT.\n10+: produza 2 doses estáveis.\n7–9: produza 1 e escolha: instável, perigosa de transportar ou efeito colateral.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2690"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2700",
+    "paragrafo_docx": 2700,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "TRANSMUTAÇÃO ALQUÍMICA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2700,
+        "tipo": "corpo",
+        "texto": "Quando possuir materiais e laboratório adequados, pode decompor uma substância e reorganizá-la em outra de natureza material comparável. Se a transformação exigir propriedades preciosas, sobrenaturais ou ausentes da matéria original, o Mestre dirá qual Ingrediente excepcional precisa ser incorporado."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando possuir materiais e laboratório adequados, pode decompor uma substância e reorganizá-la em outra de natureza material comparável. Se a transformação exigir propriedades preciosas, sobrenaturais ou ausentes da matéria original, o Mestre dirá qual Ingrediente excepcional precisa ser incorporado.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2700"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2701",
+    "paragrafo_docx": 2701,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "TROCA EQUIVALENTE",
+    "requisito_literal": "Transmutação Alquímica",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2700",
+      "titulo_requerido": "TRANSMUTAÇÃO ALQUÍMICA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2701,
+        "tipo": "corpo",
+        "texto": "Pode realizar transmutações alquímicas sem laboratório caso desenhe um círculo de transmutação relacionado à matéria alvo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Pode realizar transmutações alquímicas sem laboratório caso desenhe um círculo de transmutação relacionado à matéria alvo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2701"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2702",
+    "paragrafo_docx": 2702,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "ARMA HUMANA",
+    "requisito_literal": "Troca Equivalente",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2701",
+      "titulo_requerido": "TROCA EQUIVALENTE",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2702,
+        "tipo": "corpo",
+        "texto": "Quando utilizar Troca Equivalente para transformar violentamente matéria presente na cena em uma agressão contra alguém, diga o que está transmutando e role+INT.\nCom 10+, você causa violência de Periculosidade Extrema (1d12).\nCom 7-9, você causa violência de Periculosidade Devastadora (1d10), mas parte da sua alma é transmutada junto. Role 1d6 de dano.\nReceba livremente o movimento Aquilo Que Vocês Chamam De Mundo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando utilizar Troca Equivalente para transformar violentamente matéria presente na cena em uma agressão contra alguém, diga o que está transmutando e role+INT.\nCom 10+, você causa violência de Periculosidade Extrema (1d12).\nCom 7-9, você causa violência de Periculosidade Devastadora (1d10), mas parte da sua alma é transmutada junto. Role 1d6 de dano.\nReceba livremente o movimento Aquilo Que Vocês Chamam De Mundo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2702"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2703",
+    "paragrafo_docx": 2703,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "AQUILO QUE VOCÊS CHAMAM DE MUNDO",
+    "requisito_literal": "Arma Humana",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2702",
+      "titulo_requerido": "ARMA HUMANA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2703,
+        "tipo": "corpo",
+        "texto": "Quando a punição do movimento Alquimista Federal lhe levar a 0 Pontos de Vida, ao invés de engatilhar O Último Suspiro, você é transportado para dentro do Portão da Verdade. O Mestre tomará algo de você. \nCaso aquilo que lhe foi tomado lhe permita continuar vivo, você acorda com 1 Ponto de Vida. \nCaso tenha duas mãos (ou prótese equivalente) você é capaz de utilizar a Troca Equivalente sem um círculo de transmutação."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando a punição do movimento Alquimista Federal lhe levar a 0 Pontos de Vida, ao invés de engatilhar O Último Suspiro, você é transportado para dentro do Portão da Verdade. O Mestre tomará algo de você. \nCaso aquilo que lhe foi tomado lhe permita continuar vivo, você acorda com 1 Ponto de Vida. \nCaso tenha duas mãos (ou prótese equivalente) você é capaz de utilizar a Troca Equivalente sem um círculo de transmutação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2703"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2705",
+    "paragrafo_docx": 2705,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "BOM DEMAIS PARA DESPERDIÇAR",
+    "requisito_literal": "Alquimista",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2690",
+      "titulo_requerido": "ALQUIMISTA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2705,
+        "tipo": "corpo",
+        "texto": "Quando extrair cuidadosamente material de um monstro morto, pergunte:\n“Que propriedade extraordinária deste corpo ainda posso aproveitar?”\nReceba um Ingrediente, cuja propriedade pode ser utilizada em para produzir um efeito alquímico de grau superior."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando extrair cuidadosamente material de um monstro morto, pergunte:\n“Que propriedade extraordinária deste corpo ainda posso aproveitar?”\nReceba um Ingrediente, cuja propriedade pode ser utilizada em para produzir um efeito alquímico de grau superior.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2705"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2706",
+    "paragrafo_docx": 2706,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "BEBA ISTO",
+    "requisito_literal": "Alquimista",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2690",
+      "titulo_requerido": "ALQUIMISTA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2706,
+        "tipo": "corpo",
+        "texto": "Quando tentar produzir um efeito que não pertence às preparações que normalmente domina, diga o que pretende conseguir e que ingredientes justificam esse resultado. Role+INT.\n10+: funciona como pretendido.\n7–9: funciona, mas o Mestre escolhe um efeito colateral temporário apropriado.\nPara efeitos extraordinários, o Mestre pode exigir primeiro um Ingrediente capaz de justificar aquela propriedade."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando tentar produzir um efeito que não pertence às preparações que normalmente domina, diga o que pretende conseguir e que ingredientes justificam esse resultado. Role+INT.\n10+: funciona como pretendido.\n7–9: funciona, mas o Mestre escolhe um efeito colateral temporário apropriado.\nPara efeitos extraordinários, o Mestre pode exigir primeiro um Ingrediente capaz de justificar aquela propriedade.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2706"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2707",
+    "paragrafo_docx": 2707,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "TUDO É VENENO OU REMÉDIO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2707,
+        "tipo": "corpo",
+        "texto": "Quando estudar qualquer substância, mesmo desconhecida, sobrenatural ou produzida por criatura que jamais encontrou, pergunte até duas:"
+      },
+      {
+        "paragrafo_docx": 2708,
+        "tipo": "opcao",
+        "texto": "que efeito produz e em qual dose;"
+      },
+      {
+        "paragrafo_docx": 2709,
+        "tipo": "opcao",
+        "texto": "como entra no corpo;"
+      },
+      {
+        "paragrafo_docx": 2710,
+        "tipo": "opcao",
+        "texto": "quanto demora para agir ou se esvair;"
+      },
+      {
+        "paragrafo_docx": 2711,
+        "tipo": "opcao",
+        "texto": "qual órgão ou função afeta em cada forma de administração;"
+      },
+      {
+        "paragrafo_docx": 2712,
+        "tipo": "opcao",
+        "texto": "o que poderia neutralizá-la."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2708,
+        "texto": "que efeito produz e em qual dose;"
+      },
+      {
+        "paragrafo_docx": 2709,
+        "texto": "como entra no corpo;"
+      },
+      {
+        "paragrafo_docx": 2710,
+        "texto": "quanto demora para agir ou se esvair;"
+      },
+      {
+        "paragrafo_docx": 2711,
+        "texto": "qual órgão ou função afeta em cada forma de administração;"
+      },
+      {
+        "paragrafo_docx": 2712,
+        "texto": "o que poderia neutralizá-la."
+      }
+    ],
+    "texto_original": "Quando estudar qualquer substância, mesmo desconhecida, sobrenatural ou produzida por criatura que jamais encontrou, pergunte até duas:\nque efeito produz e em qual dose;\ncomo entra no corpo;\nquanto demora para agir ou se esvair;\nqual órgão ou função afeta em cada forma de administração;\no que poderia neutralizá-la.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2707"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2713",
+    "paragrafo_docx": 2713,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "BOMBA DE BOLSO",
+    "requisito_literal": "Alquimista",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2690",
+      "titulo_requerido": "ALQUIMISTA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2713,
+        "tipo": "corpo",
+        "texto": "Quando tiver alguns minutos e materiais minimamente explosivos, você consegue preparar uma carga compacta adequada a um alvo ou propósito específico. Escolha 1:"
+      },
+      {
+        "paragrafo_docx": 2714,
+        "tipo": "opcao",
+        "texto": "Demolição: extremamente eficiente contra estruturas e objetos;"
+      },
+      {
+        "paragrafo_docx": 2715,
+        "tipo": "opcao",
+        "texto": "Fragmentação: cobre uma área próxima;"
+      },
+      {
+        "paragrafo_docx": 2716,
+        "tipo": "opcao",
+        "texto": "Concussão: derruba, desorienta ou desloca sem depender de perfuração;"
+      },
+      {
+        "paragrafo_docx": 2717,
+        "tipo": "opcao",
+        "texto": "Incendiária: espalha fogo ou substância preparada."
+      },
+      {
+        "paragrafo_docx": 2718,
+        "tipo": "continuacao",
+        "texto": "O Mestre determina a Periculosidade pela carga e situação. Você pode aumentar a Periculosidade em um grau além do que os materiais justificariam se disser qual risco absurdo aceita ao carregar aquilo consigo."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2714,
+        "texto": "Demolição: extremamente eficiente contra estruturas e objetos;"
+      },
+      {
+        "paragrafo_docx": 2715,
+        "texto": "Fragmentação: cobre uma área próxima;"
+      },
+      {
+        "paragrafo_docx": 2716,
+        "texto": "Concussão: derruba, desorienta ou desloca sem depender de perfuração;"
+      },
+      {
+        "paragrafo_docx": 2717,
+        "texto": "Incendiária: espalha fogo ou substância preparada."
+      }
+    ],
+    "texto_original": "Quando tiver alguns minutos e materiais minimamente explosivos, você consegue preparar uma carga compacta adequada a um alvo ou propósito específico. Escolha 1:\nDemolição: extremamente eficiente contra estruturas e objetos;\nFragmentação: cobre uma área próxima;\nConcussão: derruba, desorienta ou desloca sem depender de perfuração;\nIncendiária: espalha fogo ou substância preparada.\nO Mestre determina a Periculosidade pela carga e situação. Você pode aumentar a Periculosidade em um grau além do que os materiais justificariam se disser qual risco absurdo aceita ao carregar aquilo consigo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2713"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2719",
+    "paragrafo_docx": 2719,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "MÉDICO DE CAMPO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2719,
+        "tipo": "corpo",
+        "texto": "Quando possuir alguns minutos, ferramentas e acesso a um ferido, role+INT.\n10+: cure 1d6 ou estabilize uma condição física simples.\n7–9: faça o mesmo, mas escolha: gaste suprimentos; cause dor e 1 de dano; imponha repouso imediato; ou deixe uma consequência temporária."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando possuir alguns minutos, ferramentas e acesso a um ferido, role+INT.\n10+: cure 1d6 ou estabilize uma condição física simples.\n7–9: faça o mesmo, mas escolha: gaste suprimentos; cause dor e 1 de dano; imponha repouso imediato; ou deixe uma consequência temporária.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2719"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2720",
+    "paragrafo_docx": 2720,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "CIRURGIÃO IMPROVÁVEL",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2720,
+        "tipo": "corpo",
+        "texto": "Quando tratar um ferimento que normalmente mataria ou mutilaria alguém, diga o procedimento desesperado e role+INT.\n10+: ele sobrevive sem a pior consequência.\n7–9: sobrevive, mas o Mestre escolhe uma sequela, necessidade de material raro ou condição severa de recuperação."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando tratar um ferimento que normalmente mataria ou mutilaria alguém, diga o procedimento desesperado e role+INT.\n10+: ele sobrevive sem a pior consequência.\n7–9: sobrevive, mas o Mestre escolhe uma sequela, necessidade de material raro ou condição severa de recuperação.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2720"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2721",
+    "paragrafo_docx": 2721,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "DIAGNÓSTICO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2721,
+        "tipo": "corpo",
+        "texto": "Quando examinar cuidadosamente alguém doente ou ferido, pergunte até duas:"
+      },
+      {
+        "paragrafo_docx": 2722,
+        "tipo": "opcao",
+        "texto": "O que está errado?"
+      },
+      {
+        "paragrafo_docx": 2723,
+        "tipo": "opcao",
+        "texto": "O que vai acontecer se ninguém intervier?"
+      },
+      {
+        "paragrafo_docx": 2724,
+        "tipo": "opcao",
+        "texto": "O que posso fazer agora?"
+      },
+      {
+        "paragrafo_docx": 2725,
+        "tipo": "opcao",
+        "texto": "O que seria necessário para curá-lo completamente?"
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2722,
+        "texto": "O que está errado?"
+      },
+      {
+        "paragrafo_docx": 2723,
+        "texto": "O que vai acontecer se ninguém intervier?"
+      },
+      {
+        "paragrafo_docx": 2724,
+        "texto": "O que posso fazer agora?"
+      },
+      {
+        "paragrafo_docx": 2725,
+        "texto": "O que seria necessário para curá-lo completamente?"
+      }
+    ],
+    "texto_original": "Quando examinar cuidadosamente alguém doente ou ferido, pergunte até duas:\nO que está errado?\nO que vai acontecer se ninguém intervier?\nO que posso fazer agora?\nO que seria necessário para curá-lo completamente?",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2721"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2726",
+    "paragrafo_docx": 2726,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "PRIMEIRO, NÃO MORRA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2726,
+        "tipo": "corpo",
+        "texto": "Quando alguém estiver morrendo e você conseguir alcançá-lo com ferramentas mínimas, pode impedir que realize Último Suspiro enquanto continuar trabalhando para estabilizá-lo. Se for interrompido ou falhar diante do perigo, a Morte continua esperando."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando alguém estiver morrendo e você conseguir alcançá-lo com ferramentas mínimas, pode impedir que realize Último Suspiro enquanto continuar trabalhando para estabilizá-lo. Se for interrompido ou falhar diante do perigo, a Morte continua esperando.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2726"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2727",
+    "paragrafo_docx": 2727,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "REFEIÇÃO DE HERÓIS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2727,
+        "tipo": "corpo",
+        "texto": "Quando preparar uma refeição utilizando um ingrediente excepcional obtido durante a aventura, diga o que aquele ingrediente representa. Quem compartilhar a refeição recebe 1 Preparo relacionado a essa qualidade."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando preparar uma refeição utilizando um ingrediente excepcional obtido durante a aventura, diga o que aquele ingrediente representa. Quem compartilhar a refeição recebe 1 Preparo relacionado a essa qualidade.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2727"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2728",
+    "paragrafo_docx": 2728,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "NADA SE PERDE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2728,
+        "tipo": "corpo",
+        "texto": "Quando possuir restos biologicamente impróprios, monstruosos, desagradáveis ou normalmente não comestíveis, você sabe quais partes podem ser processadas até se tornarem seguras e consegue produzir Rações, salvo se a ficção tornar isso verdadeiramente impossível."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando possuir restos biologicamente impróprios, monstruosos, desagradáveis ou normalmente não comestíveis, você sabe quais partes podem ser processadas até se tornarem seguras e consegue produzir Rações, salvo se a ficção tornar isso verdadeiramente impossível.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2728"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2729",
+    "paragrafo_docx": 2729,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "GOSTO DE CASA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2729,
+        "tipo": "corpo",
+        "texto": "Quando preparar para alguém uma comida ligada à sua memória ou cultura, faça-lhe uma pergunta pessoal. Se responder sinceramente, ambos recebem 1 Preparo para Ajudar ou proteger um ao outro, relacionado àquilo que foi compartilhado."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando preparar para alguém uma comida ligada à sua memória ou cultura, faça-lhe uma pergunta pessoal. Se responder sinceramente, ambos recebem 1 Preparo para Ajudar ou proteger um ao outro, relacionado àquilo que foi compartilhado.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2729"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2730",
+    "paragrafo_docx": 2730,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "OBRA-PRIMA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2730,
+        "tipo": "corpo",
+        "texto": "Quando passar tempo, material adequado e cuidado excepcional produzindo um objeto, escolha uma qualidade extraordinária apropriada: resistente, leve, precisa, imponente, discreta, confortável, brutal ou semelhante. Ela é real na ficção."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando passar tempo, material adequado e cuidado excepcional produzindo um objeto, escolha uma qualidade extraordinária apropriada: resistente, leve, precisa, imponente, discreta, confortável, brutal ou semelhante. Ela é real na ficção.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2730"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2731",
+    "paragrafo_docx": 2731,
+    "grupo": "ARTÍFICE",
+    "categoria": "classe",
+    "titulo": "EU POSSO CONSERTAR",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2731,
+        "tipo": "corpo",
+        "texto": "Quando examinar um objeto que seria normalmente considerado irreparável, pergunte:\n“O que seria necessário para devolver isto à função?”\nO Mestre sempre lhe dirá uma possibilidade concreta, embora possa exigir material raro, substituir partes importantes, sacrificar outra coisa ou alterar permanentemente o objeto."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando examinar um objeto que seria normalmente considerado irreparável, pergunte:\n“O que seria necessário para devolver isto à função?”\nO Mestre sempre lhe dirá uma possibilidade concreta, embora possa exigir material raro, substituir partes importantes, sacrificar outra coisa ou alterar permanentemente o objeto.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2731"
+  }
+]

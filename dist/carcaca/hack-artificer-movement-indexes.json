@@ -1,0 +1,265 @@
+{
+  "by_titulo": {
+    "ALQUIMISTA": [
+      "movimento-classe:paragrafo-2690"
+    ],
+    "AQUILO QUE VOCÊS CHAMAM DE MUNDO": [
+      "movimento-classe:paragrafo-2703"
+    ],
+    "ARMA HUMANA": [
+      "movimento-classe:paragrafo-2702"
+    ],
+    "ARTÍFICE": [
+      "movimento-classe:paragrafo-2679"
+    ],
+    "BEBA ISTO": [
+      "movimento-classe:paragrafo-2706"
+    ],
+    "BOM DEMAIS PARA DESPERDIÇAR": [
+      "movimento-classe:paragrafo-2705"
+    ],
+    "BOMBA DE BOLSO": [
+      "movimento-classe:paragrafo-2713"
+    ],
+    "CIRURGIÃO IMPROVÁVEL": [
+      "movimento-classe:paragrafo-2720"
+    ],
+    "DIAGNÓSTICO": [
+      "movimento-classe:paragrafo-2721"
+    ],
+    "ENGENHEIRO": [
+      "movimento-classe:paragrafo-2672"
+    ],
+    "EU POSSO CONSERTAR": [
+      "movimento-classe:paragrafo-2731"
+    ],
+    "EU SEI ONDE BATER": [
+      "movimento-classe:paragrafo-2688"
+    ],
+    "FEITO PARA ISSO": [
+      "movimento-classe:paragrafo-2689"
+    ],
+    "GAMBARRA DE CAMPO": [
+      "movimento-classe:paragrafo-2687"
+    ],
+    "GOSTO DE CASA": [
+      "movimento-classe:paragrafo-2729"
+    ],
+    "MÉDICO DE CAMPO": [
+      "movimento-classe:paragrafo-2719"
+    ],
+    "NADA SE PERDE": [
+      "movimento-classe:paragrafo-2728"
+    ],
+    "OBRA-PRIMA": [
+      "movimento-classe:paragrafo-2730"
+    ],
+    "PRIMEIRO, NÃO MORRA": [
+      "movimento-classe:paragrafo-2726"
+    ],
+    "REFEIÇÃO DE HERÓIS": [
+      "movimento-classe:paragrafo-2727"
+    ],
+    "TRANSMUTAÇÃO ALQUÍMICA": [
+      "movimento-classe:paragrafo-2700"
+    ],
+    "TROCA EQUIVALENTE": [
+      "movimento-classe:paragrafo-2701"
+    ],
+    "TUDO É VENENO OU REMÉDIO": [
+      "movimento-classe:paragrafo-2707"
+    ]
+  },
+  "by_paragrafo": {
+    "2672": [
+      "movimento-classe:paragrafo-2672"
+    ],
+    "2679": [
+      "movimento-classe:paragrafo-2679"
+    ],
+    "2687": [
+      "movimento-classe:paragrafo-2687"
+    ],
+    "2688": [
+      "movimento-classe:paragrafo-2688"
+    ],
+    "2689": [
+      "movimento-classe:paragrafo-2689"
+    ],
+    "2690": [
+      "movimento-classe:paragrafo-2690"
+    ],
+    "2700": [
+      "movimento-classe:paragrafo-2700"
+    ],
+    "2701": [
+      "movimento-classe:paragrafo-2701"
+    ],
+    "2702": [
+      "movimento-classe:paragrafo-2702"
+    ],
+    "2703": [
+      "movimento-classe:paragrafo-2703"
+    ],
+    "2705": [
+      "movimento-classe:paragrafo-2705"
+    ],
+    "2706": [
+      "movimento-classe:paragrafo-2706"
+    ],
+    "2707": [
+      "movimento-classe:paragrafo-2707"
+    ],
+    "2713": [
+      "movimento-classe:paragrafo-2713"
+    ],
+    "2719": [
+      "movimento-classe:paragrafo-2719"
+    ],
+    "2720": [
+      "movimento-classe:paragrafo-2720"
+    ],
+    "2721": [
+      "movimento-classe:paragrafo-2721"
+    ],
+    "2726": [
+      "movimento-classe:paragrafo-2726"
+    ],
+    "2727": [
+      "movimento-classe:paragrafo-2727"
+    ],
+    "2728": [
+      "movimento-classe:paragrafo-2728"
+    ],
+    "2729": [
+      "movimento-classe:paragrafo-2729"
+    ],
+    "2730": [
+      "movimento-classe:paragrafo-2730"
+    ],
+    "2731": [
+      "movimento-classe:paragrafo-2731"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-2672",
+      "movimento-classe:paragrafo-2679",
+      "movimento-classe:paragrafo-2687",
+      "movimento-classe:paragrafo-2688",
+      "movimento-classe:paragrafo-2690",
+      "movimento-classe:paragrafo-2700",
+      "movimento-classe:paragrafo-2707",
+      "movimento-classe:paragrafo-2719",
+      "movimento-classe:paragrafo-2720",
+      "movimento-classe:paragrafo-2721",
+      "movimento-classe:paragrafo-2726",
+      "movimento-classe:paragrafo-2727",
+      "movimento-classe:paragrafo-2728",
+      "movimento-classe:paragrafo-2729",
+      "movimento-classe:paragrafo-2730",
+      "movimento-classe:paragrafo-2731"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-2689",
+      "movimento-classe:paragrafo-2701",
+      "movimento-classe:paragrafo-2702",
+      "movimento-classe:paragrafo-2703",
+      "movimento-classe:paragrafo-2705",
+      "movimento-classe:paragrafo-2706",
+      "movimento-classe:paragrafo-2713"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-2687",
+      "movimento-classe:paragrafo-2688",
+      "movimento-classe:paragrafo-2689",
+      "movimento-classe:paragrafo-2700",
+      "movimento-classe:paragrafo-2701",
+      "movimento-classe:paragrafo-2702",
+      "movimento-classe:paragrafo-2703",
+      "movimento-classe:paragrafo-2705",
+      "movimento-classe:paragrafo-2706",
+      "movimento-classe:paragrafo-2719",
+      "movimento-classe:paragrafo-2720",
+      "movimento-classe:paragrafo-2726",
+      "movimento-classe:paragrafo-2727",
+      "movimento-classe:paragrafo-2728",
+      "movimento-classe:paragrafo-2729",
+      "movimento-classe:paragrafo-2730",
+      "movimento-classe:paragrafo-2731"
+    ],
+    "sim": [
+      "movimento-classe:paragrafo-2672",
+      "movimento-classe:paragrafo-2679",
+      "movimento-classe:paragrafo-2690",
+      "movimento-classe:paragrafo-2707",
+      "movimento-classe:paragrafo-2713",
+      "movimento-classe:paragrafo-2721"
+    ]
+  },
+  "by_requisito_tipo": {
+    "movimento_exato": [
+      "movimento-classe:paragrafo-2689",
+      "movimento-classe:paragrafo-2701",
+      "movimento-classe:paragrafo-2702",
+      "movimento-classe:paragrafo-2703",
+      "movimento-classe:paragrafo-2705",
+      "movimento-classe:paragrafo-2706",
+      "movimento-classe:paragrafo-2713"
+    ],
+    "nenhum": [
+      "movimento-classe:paragrafo-2672",
+      "movimento-classe:paragrafo-2679",
+      "movimento-classe:paragrafo-2687",
+      "movimento-classe:paragrafo-2688",
+      "movimento-classe:paragrafo-2690",
+      "movimento-classe:paragrafo-2700",
+      "movimento-classe:paragrafo-2707",
+      "movimento-classe:paragrafo-2719",
+      "movimento-classe:paragrafo-2720",
+      "movimento-classe:paragrafo-2721",
+      "movimento-classe:paragrafo-2726",
+      "movimento-classe:paragrafo-2727",
+      "movimento-classe:paragrafo-2728",
+      "movimento-classe:paragrafo-2729",
+      "movimento-classe:paragrafo-2730",
+      "movimento-classe:paragrafo-2731"
+    ]
+  },
+  "by_requisito_id": {
+    "movimento-classe:paragrafo-2679": [
+      "movimento-classe:paragrafo-2689"
+    ],
+    "movimento-classe:paragrafo-2690": [
+      "movimento-classe:paragrafo-2705",
+      "movimento-classe:paragrafo-2706",
+      "movimento-classe:paragrafo-2713"
+    ],
+    "movimento-classe:paragrafo-2700": [
+      "movimento-classe:paragrafo-2701"
+    ],
+    "movimento-classe:paragrafo-2701": [
+      "movimento-classe:paragrafo-2702"
+    ],
+    "movimento-classe:paragrafo-2702": [
+      "movimento-classe:paragrafo-2703"
+    ]
+  },
+  "by_raiz_dependencia": {
+    "movimento-classe:paragrafo-2679": [
+      "movimento-classe:paragrafo-2689"
+    ],
+    "movimento-classe:paragrafo-2690": [
+      "movimento-classe:paragrafo-2705",
+      "movimento-classe:paragrafo-2706",
+      "movimento-classe:paragrafo-2713"
+    ],
+    "movimento-classe:paragrafo-2700": [
+      "movimento-classe:paragrafo-2701",
+      "movimento-classe:paragrafo-2702",
+      "movimento-classe:paragrafo-2703"
+    ]
+  }
+}
