@@ -445,3 +445,13 @@ A prioridade segue em **worldbuilding histórico, cultural, jurídico e polític
 **Entregas:** `docs/VANDAR_POLITICA_DOS_MORTOS_CICLO17.md` e `data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json` com 3 fases sem datas, 8 questões de sociologia urbana, 5 modalidades de prova não conclusiva, 4 estados jurídico-filosóficos não vigentes da morte, 6 papéis sociais sem NPCs, 3 modelos políticos não adotados, 4 vinhetas nunca ocorridas e 8 perguntas autorais pendentes. JSON Schema, validador, API ESM, índices e testes mantêm as incógnitas explicitamente nulas. As sete criaturas canônicas e a autonomia de Ironwood permanecem intactas.
 
 **Próximo foco — Ciclo XVIII:** a vida civil de Ironwood e a diplomacia descentralizada da resistência.
+
+## 2026-10-28 · Ciclo XVIII — Ironwood, quem sustenta a resistência?
+
+Foco no **worldbuilding civil** de Ironwood. Fonte principal: manuscrito do Hack Carcaça pp. 6–7, 16–18, 20 e 24. Documentado: floresta/fortaleza ao sul de Thargrid, liderança ranger de Elara Stormoak, proteção de civis nas decisões de combate, descentralização da resistência e pluralidade de elfos, gnomos, humanos, meio-elfos, feéricos e refugiados; ritos florestais diversos e alianças com gnomos.
+
+**Lacuna exposta:** Ironwood existe na lore e está situada ao sul das montanhas de Thargrid, mas os registros geográficos normalizados ainda não trazem `regiao:ironwood` nem `lugar:ironwood`. Para evitar topologia artificial, ambos foram mantidos **nulos** no novo conjunto. A autoridade militar de Elara não se tornou automaticamente poder civil ou comando supremo da Carcaça.
+
+Entregas: `docs/IRONWOOD_SOCIEDADE_RESISTENCIA_CICLO18.md` e `data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json`. Oito eixos de vida civil, três modelos concorrentes e não adotados de governo, quatro relações diplomáticas sem tratados assinados, quatro circuitos materiais sem quantidades, quatro dilemas não ocorridos, quatro vinhetas literárias e oito decisões pendentes. JSON Schema, validador, API ESM, índices e testes preservam o cânone.
+
+Este incremento encerra o primeiro arco regional de worldbuilding XIV–XVIII. A prioridade seguinte é revisão autoral das hipóteses e planejamento de novos territórios ou povos, sem tratar todo o material proposto como história confirmada.
