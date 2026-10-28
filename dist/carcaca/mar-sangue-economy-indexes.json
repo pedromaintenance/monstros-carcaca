@@ -1,0 +1,425 @@
+{
+  "by_categoria": {
+    "arcos": [
+      "economia-mar:arco:oficios",
+      "economia-mar:arco:pacto",
+      "economia-mar:arco:resgate"
+    ],
+    "cenas": [
+      "economia-mar:cena:canto",
+      "economia-mar:cena:ferramentas",
+      "economia-mar:cena:oficina",
+      "economia-mar:cena:pessoas",
+      "economia-mar:cena:rede",
+      "economia-mar:cena:safra"
+    ],
+    "clandestinas": [
+      "economia-mar:circuito:canto",
+      "economia-mar:circuito:ferragens",
+      "economia-mar:circuito:lista",
+      "economia-mar:circuito:registro"
+    ],
+    "fluxos": [
+      "economia-mar:fluxo:artefatos",
+      "economia-mar:fluxo:avisos",
+      "economia-mar:fluxo:cultivo",
+      "economia-mar:fluxo:ferragens",
+      "economia-mar:fluxo:pesca",
+      "economia-mar:fluxo:refugio",
+      "economia-mar:fluxo:socorro"
+    ],
+    "oficios": [
+      "economia-mar:oficio:artifices",
+      "economia-mar:oficio:conferentes",
+      "economia-mar:oficio:guias",
+      "economia-mar:oficio:mensageiras",
+      "economia-mar:oficio:observadores",
+      "economia-mar:oficio:reparadores"
+    ],
+    "pessoas": [
+      "economia-mar:pessoa:kalira",
+      "economia-mar:pessoa:kuruk",
+      "economia-mar:pessoa:maelis",
+      "economia-mar:pessoa:maura",
+      "economia-mar:pessoa:nilku",
+      "economia-mar:pessoa:rhel",
+      "economia-mar:pessoa:serun",
+      "economia-mar:pessoa:ulma"
+    ],
+    "polos": [
+      "economia-mar:polo:conchas",
+      "economia-mar:polo:imagens",
+      "economia-mar:polo:jardins",
+      "economia-mar:polo:lastro",
+      "economia-mar:polo:passagem"
+    ],
+    "tributos": [
+      "economia-mar:tributo:herdado",
+      "economia-mar:tributo:milagre",
+      "economia-mar:tributo:nao-colhido",
+      "economia-mar:tributo:pessoa-como-garantia",
+      "economia-mar:tributo:requisicao"
+    ]
+  },
+  "by_setor": {
+    "artesanato": [
+      "economia-mar:fluxo:artefatos",
+      "economia-mar:oficio:artifices"
+    ],
+    "contratos": [
+      "economia-mar:oficio:conferentes"
+    ],
+    "informacao": [
+      "economia-mar:fluxo:avisos",
+      "economia-mar:oficio:mensageiras"
+    ],
+    "manutencao": [
+      "economia-mar:fluxo:ferragens",
+      "economia-mar:oficio:reparadores"
+    ],
+    "navegacao": [
+      "economia-mar:oficio:guias"
+    ],
+    "pesquisa_ambiental": [
+      "economia-mar:fluxo:cultivo"
+    ],
+    "protecção_humana": [
+      "economia-mar:fluxo:refugio"
+    ],
+    "socorro": [
+      "economia-mar:fluxo:socorro"
+    ],
+    "subsistencia": [
+      "economia-mar:fluxo:pesca",
+      "economia-mar:oficio:observadores"
+    ]
+  },
+  "by_povo": {
+    "abissais": [
+      "economia-mar:pessoa:maura",
+      "economia-mar:pessoa:rhel",
+      "economia-mar:pessoa:ulma"
+    ],
+    "descendentes_abissais": [
+      "economia-mar:pessoa:serun"
+    ],
+    "kuo-toa": [
+      "economia-mar:pessoa:kuruk",
+      "economia-mar:pessoa:nilku"
+    ],
+    "sereias": [
+      "economia-mar:pessoa:maelis"
+    ],
+    "tritoes": [
+      "economia-mar:pessoa:kalira"
+    ]
+  },
+  "by_aguas": {
+    "azuis": [
+      "economia-mar:polo:jardins",
+      "economia-mar:polo:lastro"
+    ],
+    "transicao": [
+      "economia-mar:polo:passagem"
+    ],
+    "vermelhas": [
+      "economia-mar:polo:conchas",
+      "economia-mar:polo:imagens"
+    ]
+  },
+  "by_abuso": {
+    "coercao_religiosa": [
+      "economia-mar:tributo:milagre"
+    ],
+    "dependencia_hereditaria": [
+      "economia-mar:tributo:herdado"
+    ],
+    "exploracao_laboral": [
+      "economia-mar:tributo:requisicao"
+    ],
+    "extorsao": [
+      "economia-mar:tributo:nao-colhido"
+    ],
+    "trafico_de_pessoas": [
+      "economia-mar:tributo:pessoa-como-garantia"
+    ]
+  },
+  "by_movimento_hack": {
+    "movimento-povo:paragrafo-897": [
+      "economia-mar:fluxo:socorro"
+    ],
+    "movimento-povo:paragrafo-913": [
+      "economia-mar:arco:oficios",
+      "economia-mar:cena:oficina",
+      "economia-mar:fluxo:artefatos",
+      "economia-mar:oficio:artifices",
+      "economia-mar:pessoa:kuruk",
+      "economia-mar:pessoa:nilku",
+      "economia-mar:polo:imagens",
+      "economia-mar:tributo:milagre"
+    ],
+    "movimento-povo:paragrafo-920": [
+      "economia-mar:cena:oficina",
+      "economia-mar:circuito:ferragens",
+      "economia-mar:fluxo:artefatos",
+      "economia-mar:oficio:artifices",
+      "economia-mar:pessoa:kuruk",
+      "economia-mar:polo:imagens"
+    ],
+    "movimento-povo:paragrafo-921": [
+      "economia-mar:arco:oficios",
+      "economia-mar:cena:oficina",
+      "economia-mar:fluxo:artefatos",
+      "economia-mar:oficio:artifices",
+      "economia-mar:pessoa:kuruk",
+      "economia-mar:pessoa:nilku",
+      "economia-mar:polo:imagens",
+      "economia-mar:tributo:milagre"
+    ],
+    "movimento-povo:paragrafo-924": [
+      "economia-mar:arco:resgate",
+      "economia-mar:cena:pessoas",
+      "economia-mar:circuito:lista",
+      "economia-mar:fluxo:refugio",
+      "economia-mar:pessoa:serun",
+      "economia-mar:tributo:pessoa-como-garantia"
+    ],
+    "movimento-povo:paragrafo-932": [
+      "economia-mar:arco:pacto",
+      "economia-mar:cena:rede",
+      "economia-mar:circuito:registro",
+      "economia-mar:fluxo:pesca",
+      "economia-mar:oficio:conferentes",
+      "economia-mar:pessoa:maura",
+      "economia-mar:pessoa:ulma",
+      "economia-mar:polo:conchas",
+      "economia-mar:tributo:herdado",
+      "economia-mar:tributo:nao-colhido"
+    ],
+    "movimento-povo:paragrafo-933": [
+      "economia-mar:pessoa:rhel"
+    ],
+    "movimento-povo:paragrafo-934": [
+      "economia-mar:oficio:guias"
+    ],
+    "movimento-povo:paragrafo-936": [
+      "economia-mar:arco:pacto",
+      "economia-mar:arco:resgate",
+      "economia-mar:cena:pessoas",
+      "economia-mar:cena:rede",
+      "economia-mar:circuito:registro",
+      "economia-mar:fluxo:pesca",
+      "economia-mar:oficio:conferentes",
+      "economia-mar:pessoa:maura",
+      "economia-mar:pessoa:rhel",
+      "economia-mar:pessoa:serun",
+      "economia-mar:pessoa:ulma",
+      "economia-mar:polo:conchas",
+      "economia-mar:tributo:herdado",
+      "economia-mar:tributo:nao-colhido",
+      "economia-mar:tributo:pessoa-como-garantia"
+    ],
+    "movimento-povo:paragrafo-941": [
+      "economia-mar:cena:ferramentas",
+      "economia-mar:fluxo:ferragens",
+      "economia-mar:oficio:reparadores",
+      "economia-mar:pessoa:kalira",
+      "economia-mar:polo:lastro",
+      "economia-mar:tributo:requisicao"
+    ],
+    "movimento-povo:paragrafo-942": [
+      "economia-mar:oficio:guias",
+      "economia-mar:polo:passagem"
+    ],
+    "movimento-povo:paragrafo-944": [
+      "economia-mar:cena:safra",
+      "economia-mar:fluxo:cultivo",
+      "economia-mar:oficio:observadores",
+      "economia-mar:polo:jardins"
+    ],
+    "movimento-povo:paragrafo-945": [
+      "economia-mar:arco:oficios",
+      "economia-mar:cena:ferramentas",
+      "economia-mar:circuito:ferragens",
+      "economia-mar:fluxo:ferragens",
+      "economia-mar:fluxo:refugio",
+      "economia-mar:fluxo:socorro",
+      "economia-mar:oficio:reparadores",
+      "economia-mar:pessoa:kalira",
+      "economia-mar:polo:lastro",
+      "economia-mar:tributo:requisicao"
+    ],
+    "movimento-povo:paragrafo-947": [
+      "economia-mar:arco:resgate",
+      "economia-mar:cena:canto",
+      "economia-mar:circuito:canto",
+      "economia-mar:circuito:lista",
+      "economia-mar:fluxo:avisos",
+      "economia-mar:fluxo:socorro",
+      "economia-mar:oficio:mensageiras",
+      "economia-mar:pessoa:maelis",
+      "economia-mar:polo:passagem"
+    ],
+    "movimento-povo:paragrafo-948": [
+      "economia-mar:cena:canto",
+      "economia-mar:circuito:canto",
+      "economia-mar:fluxo:avisos",
+      "economia-mar:oficio:mensageiras",
+      "economia-mar:pessoa:maelis"
+    ],
+    "movimento-povo:paragrafo-949": [
+      "economia-mar:cena:safra",
+      "economia-mar:fluxo:cultivo",
+      "economia-mar:oficio:observadores",
+      "economia-mar:polo:jardins",
+      "economia-mar:polo:passagem"
+    ]
+  },
+  "by_referencia": {
+    "costa-sul:pessoa:antera": [
+      "economia-mar:circuito:ferragens"
+    ],
+    "diplomacia-mar:pessoa:kalira": [
+      "economia-mar:pessoa:kalira"
+    ],
+    "diplomacia-mar:pessoa:maelis": [
+      "economia-mar:pessoa:maelis"
+    ],
+    "diplomacia-mar:pessoa:maura": [
+      "economia-mar:pessoa:maura"
+    ],
+    "diplomacia-mar:pessoa:nilku": [
+      "economia-mar:pessoa:nilku"
+    ],
+    "diplomacia-mar:pessoa:rhel": [
+      "economia-mar:pessoa:rhel"
+    ],
+    "diplomacia-mar:pessoa:serun": [
+      "economia-mar:pessoa:serun"
+    ],
+    "diplomacia-mar:polo:canto-de-lume": [
+      "economia-mar:polo:jardins"
+    ],
+    "diplomacia-mar:polo:cupula-dos-icones": [
+      "economia-mar:polo:imagens"
+    ],
+    "diplomacia-mar:polo:fenda-da-decima": [
+      "economia-mar:polo:conchas"
+    ],
+    "diplomacia-mar:polo:velarium": [
+      "economia-mar:oficio:reparadores",
+      "economia-mar:polo:lastro"
+    ],
+    "diplomacia-mar:tratado:corpo-livre": [
+      "economia-mar:arco:resgate",
+      "economia-mar:circuito:lista",
+      "economia-mar:fluxo:refugio",
+      "economia-mar:tributo:pessoa-como-garantia"
+    ],
+    "diplomacia-mar:tratado:livro-de-tributos": [
+      "economia-mar:arco:pacto",
+      "economia-mar:oficio:conferentes",
+      "economia-mar:tributo:herdado"
+    ],
+    "diplomacia-mar:tratado:prova-do-prodigio": [
+      "economia-mar:tributo:milagre"
+    ],
+    "diplomacia-mar:tratado:recifes-autonomos": [
+      "economia-mar:tributo:requisicao"
+    ],
+    "diplomacia-mar:tratado:voz-sem-mapa": [
+      "economia-mar:circuito:canto",
+      "economia-mar:oficio:mensageiras"
+    ],
+    "economia-mar:pessoa:kalira": [
+      "economia-mar:cena:ferramentas"
+    ],
+    "economia-mar:pessoa:kuruk": [
+      "economia-mar:cena:oficina"
+    ],
+    "economia-mar:pessoa:maelis": [
+      "economia-mar:cena:canto"
+    ],
+    "economia-mar:pessoa:maura": [
+      "economia-mar:cena:pessoas",
+      "economia-mar:cena:rede"
+    ],
+    "economia-mar:pessoa:nilku": [
+      "economia-mar:cena:oficina"
+    ],
+    "economia-mar:pessoa:serun": [
+      "economia-mar:cena:pessoas"
+    ],
+    "economia-mar:pessoa:ulma": [
+      "economia-mar:cena:rede",
+      "economia-mar:cena:safra"
+    ],
+    "lugar:ilhas-costa-sul": [
+      "economia-mar:fluxo:socorro"
+    ],
+    "mar-sangue:coletivo:cantoras": [
+      "economia-mar:fluxo:avisos"
+    ],
+    "mar-sangue:coletivo:contadores": [
+      "economia-mar:pessoa:ulma"
+    ],
+    "mar-sangue:coletivo:patrulha": [
+      "economia-mar:fluxo:ferragens",
+      "economia-mar:oficio:guias"
+    ],
+    "mar-sangue:coletivo:sinal": [
+      "economia-mar:arco:oficios",
+      "economia-mar:fluxo:artefatos",
+      "economia-mar:oficio:artifices",
+      "economia-mar:pessoa:kuruk"
+    ],
+    "mar-sangue:fenomeno:peixes": [
+      "economia-mar:fluxo:cultivo",
+      "economia-mar:oficio:observadores",
+      "economia-mar:tributo:nao-colhido"
+    ],
+    "mar-sangue:pacto:tributo": [
+      "economia-mar:fluxo:pesca"
+    ],
+    "mar-sangue:pessoa:maura": [
+      "economia-mar:circuito:registro"
+    ],
+    "mar-sangue:zona:correntes": [
+      "economia-mar:polo:passagem"
+    ]
+  },
+  "by_origem": {
+    "economia-mar:polo:conchas": [
+      "economia-mar:fluxo:pesca",
+      "economia-mar:fluxo:refugio"
+    ],
+    "economia-mar:polo:imagens": [
+      "economia-mar:fluxo:artefatos"
+    ],
+    "economia-mar:polo:jardins": [
+      "economia-mar:fluxo:cultivo"
+    ],
+    "economia-mar:polo:lastro": [
+      "economia-mar:fluxo:ferragens"
+    ],
+    "economia-mar:polo:passagem": [
+      "economia-mar:fluxo:avisos",
+      "economia-mar:fluxo:socorro"
+    ]
+  },
+  "by_destino": {
+    "economia-mar:polo:conchas": [
+      "economia-mar:fluxo:artefatos"
+    ],
+    "economia-mar:polo:lastro": [
+      "economia-mar:fluxo:avisos",
+      "economia-mar:fluxo:cultivo",
+      "economia-mar:fluxo:socorro"
+    ],
+    "economia-mar:polo:passagem": [
+      "economia-mar:fluxo:ferragens",
+      "economia-mar:fluxo:pesca",
+      "economia-mar:fluxo:refugio"
+    ]
+  }
+}
