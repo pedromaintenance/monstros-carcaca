@@ -407,3 +407,13 @@ Integração técnica: contrato JSON Schema, `scripts/validar_curadoria.py`, ín
 Oito fichas mecânicas propostas, com escolhas individuais e explicadas. Sete possuem PV, dano, armadura e alcances calculados pelo procedimento de `Making Monsters`; o Micélio das Vozes Partidas é uma exceção explícita por `Monsters Without Stats`, não lacuna na implementação. A origem de cada instinto e movimento continua sendo o ciclo XII.
 
 A implementação acrescenta `data/propostas/eldroth-fichas-dw-ciclo13.json`, schema, `scripts/calcular_monstros_dw.py`, testes de fórmula e integridade, exportação em `dist/carcaca`, índices e métodos ESM. Os números das propostas **não alteram** as sete fichas da curadoria nem promovem tipos, filiações ou ocorrências ficcionais a fatos canônicos. Registro de justificativas e futura revisão em `docs/FICHAS_DW_ELDROTH_CICLO13.md`.
+
+## 2026-10-28 · Ciclo XIV — Volta ao worldbuilding: Eldroth, Ironwood e Vandar
+
+**Nova prioridade editorial:** deixar mecânicas DW em segundo plano e construir história social, cultura, religião, geografia, política e vida cotidiana antes de novos monstros e encontros.
+
+A revisão das fontes cruzou `Ambientação - A Carcaça - Visão Geral.txt` com as páginas 5, 7, 9, 16–18, 20 e 24 de `fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json`, as fronteiras do atlas de regiões, o povoamento XI e a cronologia existente. A análise distingue claramente os refugiados feéricos de **501 EC**, a migração de lordes em **666 EC**, a guerra de conquista a partir de **875 EC** e a ordem colonial consolidada em **910/912 EC**; sem atribuir data à queda de Vandar nem anexar Ironwood à região de Eldroth.
+
+Entregas: `docs/ATLAS_HISTORICO_CULTURAL_ELDROTH_CICLO14.md` (dossiê narrativo) e `data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json` (3 áreas, 6 marcos, 14 eixos culturais, 42 alternativas não adotadas); integração no índice, exportação e leitura API, CI e testes de proveniência. Nenhuma nova espécie, facção, assentamento ou evento foi promovido a fato.
+
+Próximos temas: **XV** Eldroth pré-conquista, **XVI** sociedade sob a ocupação de Sylara, **XVII** a cidade arruinada de Vandar e **XVIII** a vida civil de Ironwood e a diplomacia da resistência.

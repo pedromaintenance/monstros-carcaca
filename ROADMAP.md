@@ -2,6 +2,20 @@
 
 Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatura da Carcaça** para jogos, enriquecendo cada criatura com ecologia, regiões, cultura, organização, conflitos e, quando apropriado, Dungeon World.
 
+## Reorientação — 2026-10-28: ciclo de worldbuilding
+
+**Mudança de prioridade solicitada:** o próximo conjunto de ciclos privilegia **construção do mundo** acima de estatísticas de Dungeon World, encontros, fichas e ajustes de combate. O banco de monstros serve como parte do ecossistema de sociedades existentes e não como finalidade isolada.
+
+- **XIV — concluído:** atlas histórico-cultural de Eldroth, Vandar e Ironwood com 14 eixos, fontes nomeadas e 42 alternativas não adotadas. [Dossiê](docs/ATLAS_HISTORICO_CULTURAL_ELDROTH_CICLO14.md).
+- **XV — planejado:** Eldroth antes da dominação: povos, primeiras fadas refugiadas, costumes, direito druídico, paisagens sagradas e pactos; nenhuma família ou aldeia será criada como fato sem revisão.
+- **XVI — planejado:** a ocupação no cotidiano: exploração, trabalho, alimento, poder jurídico de Sylara, colaboração e proteção civil.
+- **XVII — planejado:** Vandar antes e depois da destruição: história urbana, necromancia, memória, luto e propriedade.
+- **XVIII — planejado:** Ironwood e a resistência descentralizada: vida civil, autoridade de Elara, educação, economia e diplomacia com Thargrid.
+
+**Método dos próximos ciclos:** (1) localizar afirmações da ambientação; (2) apontar o que o manuscrito do Hack efetivamente acrescenta; (3) distinguir interpretações e lacunas; (4) produzir alternativas de worldbuilding materialmente diferentes; (5) pedir revisão autoral para qualquer promoção canônica. Evitar novas rodadas de dezenas de NPCs sem uma necessidade histórica ou social identificável.
+
+**Nota de continuidade:** o “Ciclo XIV” indicado no fechamento do Ciclo XIII como conjunto de encontros mecânicos foi substituído por este eixo histórico-cultural. Encontros e simulações ficam em espera, não são entregas pendentes deste ciclo.
+
 ## Princípios não negociáveis
 
 - **A ficha D&D não é a ficha DW.** Instinto, movimentos e tags surgem da ficção; PV/dano/armadura de DW exigem respostas às perguntas oficiais de criação de monstros, nunca fórmula de conversão de ND.

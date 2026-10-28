@@ -4,6 +4,14 @@ Banco de criaturas compartilhado pelos jogos ambientados na **Carcaça**.
 
 **O projeto tem duas camadas independentes:** um acervo importado de fichas licenciadas de D&D e similares (`dist/`) e uma **curadoria autoral** (`curadoria/`) que dá às criaturas identidade, ecologia, regiões e movimentos inspirados em Dungeon World.
 
+## Direção editorial atual — Worldbuilding primeiro
+
+A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
+
+O **Ciclo XIV — Atlas Histórico e Cultural de Eldroth, Vandar e Ironwood** separa fatos da visão geral, formulações do manuscrito Hack ainda em revisão e alternativas que só o autor pode aprovar. Reúne **3 territórios, 6 marcos cronológicos (uma lacuna datada como desconhecida), 14 eixos culturais e 42 escolhas ainda não adotadas**.
+
+Leia [o dossiê narrativo](docs/ATLAS_HISTORICO_CULTURAL_ELDROTH_CICLO14.md) e consulte a [matriz estruturada de worldbuilding](data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json). Os dados são exportados também em `dist/carcaca/eldroth-cultural-atlas.json`, com índices próprios; consulta ESM via `getEldrothCulturalAtlas` e `searchEldrothCulturalAxes`. **Nenhum elemento do dossiê foi canonizado por código.**
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
