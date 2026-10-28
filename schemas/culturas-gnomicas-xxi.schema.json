@@ -1,0 +1,601 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XXI — culturas gnômicas, propostas e salvaguardas",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estado": {
+      "const": "expansao_sociohistorica_proposta"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "aplicar_ao_canon_automaticamente": {
+      "const": false
+    },
+    "povo": {
+      "const": "Gnomos da Carcaça"
+    },
+    "geografia_geopolitica": {
+      "type": "string",
+      "minLength": 1
+    },
+    "capital_gnomica_confirmada": {
+      "type": "null"
+    },
+    "governo_comum_confirmado": {
+      "type": "null"
+    },
+    "populacao_total_confirmada": {
+      "type": "null"
+    },
+    "localizacao_de_enclave_especifico_confirmada": {
+      "type": "null"
+    },
+    "fonte_manuscrito": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:fato:"
+          },
+          "pagina": {
+            "type": "integer",
+            "enum": [
+              19,
+              20,
+              21,
+              23
+            ]
+          },
+          "afirmacao_de_fonte": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estatuto": {
+            "const": "manuscrito_autoral_em_revisao"
+          },
+          "novo_canon": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "pagina",
+          "afirmacao_de_fonte",
+          "estatuto",
+          "novo_canon"
+        ]
+      },
+      "minItems": 14,
+      "maxItems": 14
+    },
+    "limites": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 12,
+      "maxItems": 12
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fatos_documentados": {
+          "const": 14
+        },
+        "tradicoes": {
+          "const": 3
+        },
+        "eixos_sociais": {
+          "const": 12
+        },
+        "eticas_do_conhecimento": {
+          "const": 6
+        },
+        "redes_de_troca": {
+          "const": 5
+        },
+        "conflitos_internos": {
+          "const": 5
+        },
+        "costumes_possiveis": {
+          "const": 4
+        },
+        "vinhetas": {
+          "const": 4
+        },
+        "decisoes_para_autor": {
+          "const": 9
+        }
+      },
+      "required": [
+        "fatos_documentados",
+        "tradicoes",
+        "eixos_sociais",
+        "eticas_do_conhecimento",
+        "redes_de_troca",
+        "conflitos_internos",
+        "costumes_possiveis",
+        "vinhetas",
+        "decisoes_para_autor"
+      ]
+    },
+    "tradicoes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:tradicao:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ambiente_documentado": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contexto_do_manuscrito": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dilema_cultural": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limite_de_extrapolacao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estatuto": {
+            "const": "perfil_cultural_interpretativo_nao_homologado"
+          },
+          "fonte_paginas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "const": 20
+            },
+            "minItems": 1,
+            "maxItems": 1
+          },
+          "governo_unificado_confirmado": {
+            "const": false
+          },
+          "populacao_confirmada": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "nome",
+          "ambiente_documentado",
+          "contexto_do_manuscrito",
+          "dilema_cultural",
+          "limite_de_extrapolacao",
+          "estatuto",
+          "fonte_paginas",
+          "governo_unificado_confirmado",
+          "populacao_confirmada"
+        ]
+      },
+      "minItems": 3,
+      "maxItems": 3
+    },
+    "eixos_sociais": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:eixo:"
+          },
+          "tradicao_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:tradicao:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hipotese_cultural": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_politica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detalhe_cotidiano_hipotetico": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "eixo_social_proposto"
+          },
+          "localidade_especifica_documentada": {
+            "const": false
+          },
+          "norma_em_vigor": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "tradicao_id",
+          "nome_editorial",
+          "hipotese_cultural",
+          "pergunta_politica",
+          "detalhe_cotidiano_hipotetico",
+          "estado",
+          "localidade_especifica_documentada",
+          "norma_em_vigor",
+          "ocorreu"
+        ]
+      },
+      "minItems": 12,
+      "maxItems": 12
+    },
+    "eticas_do_conhecimento": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:etica:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hipotese_de_conhecimento": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dilema_de_responsabilidade": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte_paginas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                19,
+                20,
+                21
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2
+          },
+          "estado": {
+            "const": "etica_hipotetica_nao_codificada"
+          },
+          "instituicao_cientifica_confirmada": {
+            "const": false
+          },
+          "direito_codificado_confirmado": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_de_conhecimento",
+          "dilema_de_responsabilidade",
+          "fonte_paginas",
+          "estado",
+          "instituicao_cientifica_confirmada",
+          "direito_codificado_confirmado"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "redes_de_troca": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:troca:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tradicoes_relacionadas": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^worldbuilding-xxi:tradicao:"
+            },
+            "minItems": 2,
+            "maxItems": 2
+          },
+          "condicao_hipotetica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_etica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limite": {
+            "type": "string",
+            "minLength": 1
+          },
+          "relacao_concreta_confirmada": {
+            "const": false
+          },
+          "volume_comercial_confirmado": {
+            "type": "null"
+          },
+          "acordo_novo_assinado": {
+            "const": false
+          },
+          "estado": {
+            "const": "rede_cultural_para_explorar"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "tradicoes_relacionadas",
+          "condicao_hipotetica",
+          "pergunta_etica",
+          "limite",
+          "relacao_concreta_confirmada",
+          "volume_comercial_confirmado",
+          "acordo_novo_assinado",
+          "estado"
+        ]
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "conflitos_internos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:conflito:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tradicao_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:tradicao:"
+          },
+          "situacao_condicional": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_etica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "aconteceu": {
+            "const": false
+          },
+          "estado": {
+            "const": "conflito_hipotetico"
+          },
+          "desfecho_aprovado": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "tradicao_id",
+          "situacao_condicional",
+          "pergunta_etica",
+          "aconteceu",
+          "estado",
+          "desfecho_aprovado"
+        ]
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "costumes_possiveis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:costume:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tradicao_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:tradicao:"
+          },
+          "pratica_possivel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "risco_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "existe_historicamente": {
+            "const": false
+          },
+          "calendario_oficial": {
+            "const": false
+          },
+          "ritual_confirmado": {
+            "const": false
+          },
+          "estado": {
+            "const": "costume_candidato_nao_adotado"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "tradicao_id",
+          "pratica_possivel",
+          "risco_social",
+          "existe_historicamente",
+          "calendario_oficial",
+          "ritual_confirmado",
+          "estado"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "vinhetas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:vinheta:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tradicao_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:tradicao:"
+          },
+          "cena_condicional": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tema": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "localidade_inventada": {
+            "const": false
+          },
+          "personagem_canonico_introduzido": {
+            "const": false
+          },
+          "estado": {
+            "const": "vinheta_literaria_nao_ocorrida"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "tradicao_id",
+          "cena_condicional",
+          "tema",
+          "ocorreu",
+          "localidade_inventada",
+          "personagem_canonico_introduzido",
+          "estado"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "decisoes_para_autor": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxi:decisao:"
+          },
+          "pergunta_autoral": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "pendente_de_autoria"
+          },
+          "resposta_aprovada": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "pergunta_autoral",
+          "estado",
+          "resposta_aprovada"
+        ]
+      },
+      "minItems": 9,
+      "maxItems": 9
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "aplicar_ao_canon_automaticamente",
+    "povo",
+    "geografia_geopolitica",
+    "capital_gnomica_confirmada",
+    "governo_comum_confirmado",
+    "populacao_total_confirmada",
+    "localizacao_de_enclave_especifico_confirmada",
+    "fonte_manuscrito",
+    "fatos_documentados",
+    "limites",
+    "contagens",
+    "tradicoes",
+    "eixos_sociais",
+    "eticas_do_conhecimento",
+    "redes_de_troca",
+    "conflitos_internos",
+    "costumes_possiveis",
+    "vinhetas",
+    "decisoes_para_autor"
+  ]
+}

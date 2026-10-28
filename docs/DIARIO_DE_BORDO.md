@@ -473,3 +473,13 @@ Retomamos **worldbuilding expansivo**, após o ciclo de revisão XIX. O foco se 
 Foram construídos **9 domínios cotidianos, 5 circuitos econômicos, 4 modelos interpretativos de convivência, 5 tensões internas, 4 possíveis celebrações, 4 gêneros de transmissão da memória, 4 vinhetas e 8 perguntas autorais**, com **12 âncoras textuais** e limites rigorosos sobre o que a fonte não diz. Preservamos distribuição geográfica, população, arquitetura uniforme, rito oficial e política de propriedade como desconhecidos.
 
 Entregas: `docs/GRAMA_CORTADA_COTIDIANO_CICLO20.md`, `data/worldbuilding/grama-cortada-cotidiano-ciclo20.json`, schema, validador, cinco índices, API read-only e testes. Não criamos monstros, regras, festivais ocorridos ou localidades canônicas. Próximo horizonte indicado: culturas gnômicas — rocha, floresta e profundezas — e suas economias do conhecimento (Hack, pp. 19–21), sem nova rodada prematura de homologação.
+
+## 2026-10-28 · Ciclo XXI — Gnomos, conhecimento e a responsabilidade de revelar
+
+Worldbuilding expandido a partir das pp. **19–21 e 23** do manuscrito do Hack. Os gnomos são apresentados como povos **dispersos**, com expressões culturais distintas nas **rochas, florestas e profundezas**. O interesse pelo conhecimento, a cartografia, os nomes múltiplos, os registros Yokai e a presença de Garl Glittergold não autorizam concluir unidade política, culto exclusivo ou patrimônio acadêmico comum.
+
+O novo dossiê `docs/CULTURAS_GNOMICAS_CICLO21.md` trabalha o que significa **inventar, preservar, compartilhar e recusar conhecimento**. A base `data/worldbuilding/culturas-gnomicas-ciclo21.json` separa **14 afirmações de fonte** de **39 hipóteses socioculturais** (3 tradições, 12 eixos, 6 éticas, 5 redes, 5 conflitos, 4 costumes, 4 vinhetas) e **9 decisões em aberto**. É deliberadamente ampla em família, autonomia, produção e cotidiano, sem reduzir os gnomos a mecanismos, ardis ou militantes da resistência.
+
+O schema e a validação protegem as distinções: alguns pactos svirfneblin com anões não equivalem a vassalagem de todos; gnomos florestais não são súditos de Elara; habitantes de Shadar-Riverie não se tornam agentes da Corte por profissão; nenhum segredo cartográfico foi convertido em rota e nenhuma vinheta foi apresentada como episódio histórico. Exportados seis índices determinísticos e leituras ESM com testes.
+
+O **Ciclo XXII** pode expandir a vida e as culturas dos **meio-demônios** (manuscrito p. 21), sem moralizar a ascendência e sem antecipar a revisão canônica.

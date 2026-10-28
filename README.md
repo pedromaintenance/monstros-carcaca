@@ -56,6 +56,14 @@ O manuscrito do Hack (pp. 18–19) fundamenta **12 enunciados de referência**; 
 
 Os dados são exportados para `dist/carcaca/grama-cortada-daily-life.json` e seus índices. API read-only: `getGramaCortadaDailyLife`, `getGramaCortadaDailyLifeIndexes`, `getGramaCortadaDailyLifeEntry`, `searchGramaCortadaDailyLife`. A geografia exata e os IDs do Condado permanecem desconhecidos, sem acréscimos falsamente precisos.
 
+## Ciclo XXI — Os Gnomos da Carcaça
+
+O [dossiê das culturas gnômicas](docs/CULTURAS_GNOMICAS_CICLO21.md) amplia o worldbuilding dos **Gnomos das Rochas, Gnomos da Floresta e Svirfneblin** sem convertê-los em um povo com governo, ocupação ou lealdade única. Trata de **trabalho, invenção, autoria, mapas, nomes, religião, direitos de privacidade e relações de troca**, dando atenção aos custos sociais do conhecimento.
+
+O manuscrito do Hack (pp. 19–21 e 23) sustenta **14 afirmações de referência**. A [base estruturada](data/worldbuilding/culturas-gnomicas-ciclo21.json) oferece **39 propostas de expansão** — 3 perfis interpretativos, 12 eixos sociais, 6 problemas de ética do conhecimento, 5 redes de troca hipotéticas, 5 conflitos internos, 4 costumes possíveis e 4 vinhetas literárias não ocorridas — além de **9 perguntas autorais pendentes**. Nenhum reino gnômico, rito universal, tratado ou localidade secreta foi estabelecido.
+
+Exports: `dist/carcaca/gnomish-cultures.json`, `gnomish-cultures-indexes.json`; funções ESM `getGnomishCultures`, `getGnomishCulturesIndexes`, `getGnomishCultureEntry` e `searchGnomishCultures`. O ciclo mantém as revisões canônicas para depois e preserva as sete criaturas existentes.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.

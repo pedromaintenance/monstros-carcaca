@@ -13,6 +13,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - **XVIII — concluído:** [Ironwood e a sociedade que resiste](docs/IRONWOOD_SOCIEDADE_RESISTENCIA_CICLO18.md) — 8 eixos sociais, 3 modelos de governo não adotados, 4 relações, 4 circuitos civis, 4 dilemas, 4 vinhetas e 8 perguntas editoriais.
 - **XIX — concluído como preparação editorial:** [Mesa de revisão autoral](docs/MESA_REVISAO_AUTORAL_CICLO19.md), com 103 candidatos, 20 decisões pendentes e zero canonizações. Nenhuma escolha tomada em nome do autor.
 - **XX — concluído como expansão cultural:** [Grama-Cortada e a vida cotidiana](docs/GRAMA_CORTADA_COTIDIANO_CICLO20.md): 35 propostas culturais, 12 fatos de fonte e 8 perguntas, sem cronologia ou instituições inventadas.
+- **XXI — concluído como expansão cultural:** [Culturas gnômicas](docs/CULTURAS_GNOMICAS_CICLO21.md): ética do conhecimento, nomes, cartografia, oficinas e vida subterrânea, sem uniformização política ou nova canonização.
 
 **Método dos próximos ciclos:** (1) localizar afirmações da ambientação; (2) apontar o que o manuscrito do Hack efetivamente acrescenta; (3) distinguir interpretações e lacunas; (4) produzir alternativas de worldbuilding materialmente diferentes; (5) pedir revisão autoral para qualquer promoção canônica. Evitar novas rodadas de dezenas de NPCs sem uma necessidade histórica ou social identificável.
 
@@ -520,4 +521,15 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Apresentar quatro sementes de celebração, quatro gêneros de memória e quatro vinhetas que **não aconteceram**.
 - [x] Preservar como desconhecidos localização exata, população, governantes, culto oficial e calendário.
 - [x] Publicar dossiê, JSON, schema, índices determinísticos, API ESM e testes, sem mudar as sete criaturas canônicas.
-- [ ] **XXI — próximo horizonte proposto:** mundo gnômico (floresta, rochas e profundezas); trabalho, geografia, curiosidade, conhecimento, convivência e conflitos internos, sem retomar o ciclo de revisões canônicas.
+- [x] **XXI — concluído:** culturas gnômicas de rochas, florestas e profundezas; três perfis, 39 propostas socioculturais, 14 âncoras documentais e 9 perguntas abertas.
+
+## Ciclo XXI — Concluído: gnomos, sociedades e o conhecimento como responsabilidade
+
+- [x] Investigar manuscrito do Hack p. 19–21 e 23: dispersão política, cartografia, ofícios, três tradições, múltiplos nomes, registros Yokai e Garl Glittergold.
+- [x] Explorar 3 perfis culturais distintos (gnomos das rochas, da floresta e das profundezas), sem criar reino étnico unificado.
+- [x] Produzir 12 eixos de história social, 6 problemas éticos do conhecimento, 5 redes de intercâmbio hipotéticas, 5 conflitos civis e 4 costumes possíveis.
+- [x] Elaborar 4 vinhetas não ocorridas e 9 perguntas autorais a investigar em ciclos futuros.
+- [x] Preservar a autonomia de comunidades florestais e dos Svirfneblin; não converter pactos locais com anões em vassalagem universal.
+- [x] Evitar estabelecer mapas de aldeias ocultas, calendário religioso ou efeito mágico uniforme dos nomes.
+- [x] Integrar dados, JSON Schema, índices determinísticos, API ESM, testes, README e diário.
+- [ ] **XXII — próximo horizonte proposto:** expandir culturas e vida civil de meio-demônios, considerando linhagem, família, escolha, estigma e pluralidade sem reduzi-los a categoria moral única. Grandes revisões canônicas ficam para depois.

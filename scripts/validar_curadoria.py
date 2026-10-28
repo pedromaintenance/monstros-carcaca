@@ -3561,6 +3561,82 @@ def validar_grama_cortada_cotidiano_xx():
     print("Ciclo XX: 12 fatos de fonte, 35 propostas culturais e 8 perguntas; sem festivais, leis ou eventos aprovados.")
 
 
+
+def validar_culturas_gnomicas_xxi():
+    """Sem converter culturas gnômicas dispersas em monarquia, facção ou mapa único."""
+    d=load("data/worldbuilding/culturas-gnomicas-ciclo21.json")
+    schema=load("schemas/culturas-gnomicas-xxi.schema.json")
+    Draft202012Validator.check_schema(schema)
+    errors=list(Draft202012Validator(schema).iter_errors(d))
+    require(not errors, f"Ciclo XXI: schema inválido {errors[:2]}")
+    require(d["aprovacao_autoral"] is False and
+            d["aplicar_ao_canon_automaticamente"] is False and
+            d["estado"]=="expansao_sociohistorica_proposta",
+            "Ciclo XXI: homologação automática proibida.")
+    sizes={"fatos_documentados":14,"tradicoes":3,"eixos_sociais":12,
+           "eticas_do_conhecimento":6,"redes_de_troca":5,
+           "conflitos_internos":5,"costumes_possiveis":4,"vinhetas":4,
+           "decisoes_para_autor":9}
+    require(d["contagens"]==sizes,"Ciclo XXI: contagens divergentes.")
+    require(all(d[field] is None for field in (
+           "capital_gnomica_confirmada","governo_comum_confirmado",
+           "populacao_total_confirmada","localizacao_de_enclave_especifico_confirmada")),
+           "Ciclo XXI: falso reino, demografia ou posição de enclave.")
+    pages={x["pagina"] for x in load(
+       "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")["paginas"]}
+    require(all(x["pagina"] in (19,20,21,23) and x["pagina"] in pages and
+            x["novo_canon"] is False for x in d["fatos_documentados"]),
+            "Ciclo XXI: afirmação sem lastro no manuscrito.")
+    cats=("tradicoes","eixos_sociais","eticas_do_conhecimento",
+          "redes_de_troca","conflitos_internos","costumes_possiveis","vinhetas")
+    entries=[x for cat in cats for x in d[cat]]
+    all_entries=entries+d["fatos_documentados"]+d["decisoes_para_autor"]
+    require(len(entries)==39 and len(all_entries)==62
+            and len({x["id"] for x in all_entries})==62,
+            "Ciclo XXI: IDs duplicados ou quantidade divergente.")
+    traditions={x["id"] for x in d["tradicoes"]}
+    require(traditions=={"worldbuilding-xxi:tradicao:rochas",
+                        "worldbuilding-xxi:tradicao:florestas",
+                        "worldbuilding-xxi:tradicao:profundezas"},
+            "Ciclo XXI: perda de diversidade dos três contextos gnômicos.")
+    require(all(x["governo_unificado_confirmado"] is False and
+             x["populacao_confirmada"] is None and
+             all(p in pages for p in x["fonte_paginas"]) for x in d["tradicoes"]),
+            "Ciclo XXI: governo gnômico homogêneo ou assentamento inventado.")
+    require(all(x["tradicao_id"] in traditions and
+          x["norma_em_vigor"] is False and x["ocorreu"] is False and
+          x["localidade_especifica_documentada"] is False
+          for x in d["eixos_sociais"]),
+          "Ciclo XXI: hipótese social convertida em costume obrigatório.")
+    require(all(x["instituicao_cientifica_confirmada"] is False and
+          x["direito_codificado_confirmado"] is False and
+          all(p in pages for p in x["fonte_paginas"])
+          for x in d["eticas_do_conhecimento"]),
+          "Ciclo XXI: lei acadêmica ou profissão inventada.")
+    require(all(set(x["tradicoes_relacionadas"]).issubset(traditions) and
+         x["acordo_novo_assinado"] is False and
+         x["relacao_concreta_confirmada"] is False and
+         x["volume_comercial_confirmado"] is None
+         for x in d["redes_de_troca"]),
+         "Ciclo XXI: comércio ou pacto particular canonizado.")
+    require(all(x["tradicao_id"] in traditions and x["aconteceu"] is False and
+        x["desfecho_aprovado"] is False for x in d["conflitos_internos"]),
+        "Ciclo XXI: conflito hipotético tratado como acontecimento.")
+    require(all(x["tradicao_id"] in traditions and
+        x["existe_historicamente"] is False and
+        x["calendario_oficial"] is False and x["ritual_confirmado"] is False
+        for x in d["costumes_possiveis"]),
+        "Ciclo XXI: rito ou festa inventada.")
+    require(all(x["tradicao_id"] in traditions and
+        x["ocorreu"] is False and x["localidade_inventada"] is False and
+        x["personagem_canonico_introduzido"] is False
+        for x in d["vinhetas"]), "Ciclo XXI: ficção confundida com campanha.")
+    require(all(x["resposta_aprovada"] is None and
+        x["estado"]=="pendente_de_autoria" for x in d["decisoes_para_autor"]),
+        "Ciclo XXI: decisão de autoria antecipada.")
+    print("Ciclo XXI: três tradições, 14 afirmações textuais, 39 propostas, 9 perguntas; zero homologações.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3693,6 +3769,7 @@ def main():
     validar_ironwood_civil_xviii()
     validar_revisao_autoral_xix()
     validar_grama_cortada_cotidiano_xx()
+    validar_culturas_gnomicas_xxi()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

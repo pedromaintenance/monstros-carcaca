@@ -60,6 +60,39 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getGnomishCultures(){return byKey("gnomish_cultures");}
+  async function getGnomishCulturesIndexes(){return byKey("gnomish_cultures_indexes");}
+  async function getGnomishCultureEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xxi:"))return null;
+    const d=await getGnomishCultures();
+    for(const cat of ["tradicoes","eixos_sociais","eticas_do_conhecimento",
+      "redes_de_troca","conflitos_internos","costumes_possiveis",
+      "vinhetas","fatos_documentados","decisoes_para_autor"]){
+      const entry=d[cat].find(x=>x.id===id);
+      if(entry)return {...entry,categoria:cat};
+    }
+    return null;
+  }
+  async function searchGnomishCultures({categoria,tradicaoId,pagina,query}={}){
+    const d=await getGnomishCultures();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return ["tradicoes","eixos_sociais","eticas_do_conhecimento","redes_de_troca",
+      "conflitos_internos","costumes_possiveis","vinhetas"]
+       .flatMap(cat=>d[cat].map(x=>({...x,categoria:cat})))
+       .filter(x=>{
+         const pages=x.fonte_paginas??[];
+         const titles=[x.nome,x.nome_editorial,x.contexto_do_manuscrito,
+           x.dilema_cultural,x.hipotese_cultural,x.pergunta_politica,
+           x.hipotese_de_conhecimento,x.dilema_de_responsabilidade,
+           x.condicao_hipotetica,x.pergunta_etica,x.situacao_condicional,
+           x.pratica_possivel,x.cena_condicional,x.tema];
+         return (!categoria||x.categoria===categoria)&&
+           (!tradicaoId||x.id===tradicaoId||x.tradicao_id===tradicaoId||
+                (x.tradicoes_relacionadas??[]).includes(tradicaoId))&&
+           (pagina===undefined||pages.includes(Number(pagina)))&&
+           (!query||norm(titles.filter(Boolean).join(" ")).includes(norm(query)));
+       });
+  }
   async function getGramaCortadaDailyLife(){return byKey("grama_cortada_daily_life");}
   async function getGramaCortadaDailyLifeIndexes(){return byKey("grama_cortada_daily_life_indexes");}
   async function getGramaCortadaDailyLifeEntry(id){
@@ -1505,6 +1538,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getGnomishCultures,getGnomishCulturesIndexes,
+          getGnomishCultureEntry,searchGnomishCultures,
           getGramaCortadaDailyLife,getGramaCortadaDailyLifeIndexes,
           getGramaCortadaDailyLifeEntry,searchGramaCortadaDailyLife,
           getAtlasAuthorialReview,getAtlasAuthorialReviewIndexes,
