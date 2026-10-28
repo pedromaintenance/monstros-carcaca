@@ -1958,6 +1958,77 @@ def validar_necromante_integral():
             "Indices de REQUER composto incompletos.")
     print("Necromante: 29 movimentos, 45 opcoes, 83 partes, 9 REQUER diretos e 2 conjuncoes.")
 
+
+def validar_artifice_integral():
+    """Valida 23 movimentos, 32 opções, 59 partes e 7 REQUER sem inferir pré-requisitos."""
+    from hack_movimentos_personagem import build_artificer_indexes
+    obj=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-artifice-integrais.json.gz").read_bytes()).decode("utf-8"))
+    inventory=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(obj["grupo"]=="ARTÍFICE" and obj["fonte_sha256"]==inventory["fonte_sha256"],
+            "Fonte do ARTÍFICE diferente do inventário.")
+    moves=obj["movimentos"]
+    original={m["id"]:m for m in inventory["movimentos"] if m["grupo"]=="ARTÍFICE"}
+    require(len(moves)==len(original)==23 and len(unique(moves,"artifice"))==23,
+            "Movimentos de ARTÍFICE perdidos ou duplicados.")
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves)
+            and moves[0]["paragrafo_docx"]==2672 and moves[-1]["paragrafo_docx"]==2731,
+            "Âncoras de ARTÍFICE alteradas.")
+    expected={"total_movimentos":23,"total_com_requer":7,"total_vinculos_exatos":7,
+              "total_opcoes":32,"total_partes":59}
+    require(obj["integridade"]==expected,"Integridade do ARTÍFICE não coincide com o manuscrito.")
+    by_id={m["id"]:m for m in moves}
+    parts=set();edges={}
+    for m in moves:
+        old=original.get(m["id"])
+        require(old is not None and m["titulo"]==old["titulo"]
+                and m["paragrafo_docx"]==old["paragrafo_docx"]
+                and m["requisito_literal"]==old["requisito_literal"],
+                "Título, parágrafo ou REQUER divergente no ARTÍFICE.")
+        require(m["texto_integral_conferido"] is True and
+                m["estado"]=="transcricao_integral_sem_revisao_mecanica" and
+                m["aplicacao_canonica"] is False,
+                "ARTÍFICE não pode ser homologado automaticamente.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
+                "Trechos de ARTÍFICE foram truncados.")
+        require(m["opcoes"]==[
+                {"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+                for p in m["partes"] if p["tipo"]=="opcao"],
+                "Opções de ARTÍFICE fora da fonte.")
+        require(m["partes"][0]["tipo"]=="corpo" and
+                m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"],
+                "Movimento ARTÍFICE sem âncora.")
+        for p in m["partes"]:
+            require(bool(p["texto"]) and p["paragrafo_docx"] not in parts,
+                    "Parte duplicada/vazia em ARTÍFICE.")
+            parts.add(p["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),"REQUER não deve ser inferido ou eliminado.")
+        if req:
+            require(req["tipo"]=="movimento_exato"
+                    and req["movimento_id"] in original
+                    and req["titulo_requerido"]==by_id[req["movimento_id"]]["titulo"]
+                    and req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "REQUER ARTÍFICE sem correspondência literal.")
+            edges[m["id"]]=req["movimento_id"]
+    require(len(parts)==59 and sum(len(m["opcoes"]) for m in moves)==32 and len(edges)==7,
+            "Opções/partes/requisitos incompletos.")
+    for start in edges:
+        seen={start};current=start
+        while current in edges:
+            current=edges[current]
+            require(current not in seen,"Ciclo de REQUER em ARTÍFICE.")
+            seen.add(current)
+    expected_roots={"movimento-classe:paragrafo-2679":1,
+                    "movimento-classe:paragrafo-2690":3,
+                    "movimento-classe:paragrafo-2700":3}
+    index=build_artificer_indexes(moves)
+    require({k:len(v) for k,v in index["by_raiz_dependencia"].items()}==expected_roots,
+            "Raízes do ARTÍFICE não coincidem com as três linhagens da fonte.")
+    require(edges["movimento-classe:paragrafo-2703"]=="movimento-classe:paragrafo-2702"
+            and edges["movimento-classe:paragrafo-2702"]=="movimento-classe:paragrafo-2701",
+            "Cadeia de transmutação do ARTÍFICE interrompida.")
+    print("ARTÍFICE: 23 movimentos, 32 opções, 59 partes, 7 REQUER; 3 raízes. Sem alteração canônica.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2067,6 +2138,7 @@ def main():
     validar_feiticeiro_integral()
     validar_bruxo_integral()
     validar_necromante_integral()
+    validar_artifice_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

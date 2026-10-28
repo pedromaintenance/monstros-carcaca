@@ -359,3 +359,12 @@ Foram integrados **29 movimentos integrais de Necromante**, com 45 opções, 83 
 - **ABOMINAÇÃO COSTURADA** exige ANIMAR OS MORTOS **E** COLHEITA DE OSSOS.
 
 O cliente expõe `getNecromancerMovements`, `getNecromancerMovementIndexes`, `searchNecromancerMovements` e `getNecromancerRequirementPreview`. A prévia não autoriza compra, mesmo quando os dois movimentos são identificados. Fonte autoral compactada em `data/lore/hack-carcaca-dw-necromante-integrais.json.gz`, catálogo integral em `dist/carcaca/hack-necromancer-movements.json` e documentação em [INTEGRACAO_NECROMANTE_HACK_DW.md](docs/INTEGRACAO_NECROMANTE_HACK_DW.md).
+
+
+## Classe Artífice — décimo quarto grupo integral
+
+Integração de **23 movimentos integrais de ARTÍFICE**, com **32 opções**, **59 trechos documentais** e **7 REQUER diretos**. A cobertura passa para **592 de 632 movimentos de classe (93,7%)**. Três raízes documentais concentram os requisitos: ARTÍFICE (1), ALQUIMISTA (3) e TRANSMUTAÇÃO ALQUÍMICA (3). Engenharia, medicina e culinária não recebem requisitos que não constam no manuscrito.
+
+O movimento AQUILO QUE VOCÊS CHAMAM DE MUNDO exige ARMA HUMANA, que por sua vez exige TROCA EQUIVALENTE e, indiretamente, TRANSMUTAÇÃO ALQUÍMICA. A API `getArtificerRequirementPreview` percorre a cadeia completa sem liberar compras. A alusão no corpo do texto a "Alquimista Federal" foi preservada como redação original, não modelada como um REQUER adicional.
+
+Fonte versionada: `data/lore/hack-carcaca-dw-artifice-integrais.json.gz`; catálogo legível: `dist/carcaca/hack-artificer-movements.json`. Detalhes em [Integração do Artífice](docs/INTEGRACAO_ARTIFICE_HACK_DW.md).

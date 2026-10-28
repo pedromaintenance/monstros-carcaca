@@ -77,7 +77,9 @@ const fixtures={
     hack_warlock_movements:"hack-warlock-movements.json",
     hack_warlock_movement_indexes:"hack-warlock-movement-indexes.json",
     hack_necromancer_movements:"hack-necromancer-movements.json",
-    hack_necromancer_movement_indexes:"hack-necromancer-movement-indexes.json"}},
+    hack_necromancer_movement_indexes:"hack-necromancer-movement-indexes.json",
+    hack_artificer_movements:"hack-artificer-movements.json",
+    hack_artificer_movement_indexes:"hack-artificer-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -128,6 +130,33 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-artificer-movements.json":[
+    {id:"movimento-classe:paragrafo-2679",grupo:"ARTÍFICE",titulo:"ARTÍFICE",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],texto_original:"Quando possuir oficina.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2690",grupo:"ARTÍFICE",titulo:"ALQUIMISTA",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[{paragrafo_docx:2691,texto:"corrosivo;"}],
+     texto_original:"Quando preparar substâncias.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2700",grupo:"ARTÍFICE",titulo:"TRANSMUTAÇÃO ALQUÍMICA",
+     requisito_literal:null,requisito_estruturado:null,opcoes:[],texto_original:"Quando transmutar.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2701",grupo:"ARTÍFICE",titulo:"TROCA EQUIVALENTE",
+     requisito_literal:"Transmutação Alquímica",requisito_estruturado:{
+       tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2700"},
+     opcoes:[],texto_original:"Quando transmutar sem laboratório.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2702",grupo:"ARTÍFICE",titulo:"ARMA HUMANA",
+     requisito_literal:"Troca Equivalente",requisito_estruturado:{
+       tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2701"},
+     opcoes:[],texto_original:"Quando atacar com transmutação.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2703",grupo:"ARTÍFICE",titulo:"AQUILO QUE VOCÊS CHAMAM DE MUNDO",
+     requisito_literal:"Arma Humana",requisito_estruturado:{
+       tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2702"},
+     opcoes:[],texto_original:"Quando sofrer punição.",aplicacao_canonica:false}
+  ],
+  "hack-artificer-movement-indexes.json":{
+    by_requisito_tipo:{movimento_exato:["movimento-classe:paragrafo-2701",
+      "movimento-classe:paragrafo-2702","movimento-classe:paragrafo-2703"]},
+    by_raiz_dependencia:{"movimento-classe:paragrafo-2700":[
+      "movimento-classe:paragrafo-2701","movimento-classe:paragrafo-2702","movimento-classe:paragrafo-2703"]}
+  },
   "hack-necromancer-movements.json":[
     {id:"movimento-classe:paragrafo-2582",titulo:"ANIMAR OS MORTOS",grupo:"NECROMANTE",
      requisito_literal:null,requisito_estruturado:null,
@@ -1928,4 +1957,33 @@ test("Necromante: dois REQUER cumulativos exigem ambos os movimentos",async()=>{
   assert.equal(direct.habilitado_para_compra,null);
   assert.equal(await atlas.getNecromancerRequirementPreview("movimento-classe:paragrafo-99999"),null);
   await assert.rejects(()=>atlas.getNecromancerRequirementPreview(levantar,{movimentosPossuidos:"invalid"}),TypeError);
+});
+
+
+test("Artífice preserva cadeia alquímica transitiva, opções e REQUER obrigatório",async()=>{
+  const all=await atlas.getArtificerMovements();
+  assert.equal(all.length,6);
+  assert.equal((await atlas.searchArtificerMovements({titulo:"transmutacao"})).length,1);
+  assert.equal((await atlas.searchArtificerMovements({comOpcoes:true}))[0].titulo,"ALQUIMISTA");
+  assert.equal((await atlas.searchArtificerMovements({requer:"TROCA EQUIVALENTE"}))[0].titulo,"ARMA HUMANA");
+  assert.equal((await atlas.searchArtificerMovements({
+    raizDependencia:"movimento-classe:paragrafo-2700"})).length,3);
+  assert.equal((await atlas.getArtificerMovementIndexes()).by_requisito_tipo.movimento_exato.length,3);
+  const id="movimento-classe:paragrafo-2703";
+  const missing=await atlas.getArtificerRequirementPreview(id);
+  assert.deepEqual(missing.cadeia_imediato_para_raiz.map(x=>x.movimento_id),[
+    "movimento-classe:paragrafo-2702","movimento-classe:paragrafo-2701","movimento-classe:paragrafo-2700"]);
+  assert.equal(missing.componentes_identificados_presentes,false);
+  assert.equal(missing.habilitado_para_compra,null);
+  const partial=await atlas.getArtificerRequirementPreview(id,{movimentosPossuidos:[
+    "movimento-classe:paragrafo-2700","movimento-classe:paragrafo-2702"]});
+  assert.deepEqual(partial.cadeia_imediato_para_raiz.map(x=>x.presente_na_lista),[true,false,true]);
+  assert.equal(partial.verificacao_estrutural,"componentes_ausentes");
+  const allPresent=await atlas.getArtificerRequirementPreview(id,{movimentosPossuidos:[
+    "movimento-classe:paragrafo-2700","movimento-classe:paragrafo-2701","movimento-classe:paragrafo-2702"]});
+  assert.equal(allPresent.componentes_identificados_presentes,true);
+  assert.equal(allPresent.habilitado_para_compra,null);
+  assert.equal(allPresent.aplicacao_canonica,false);
+  assert.equal(await atlas.getArtificerRequirementPreview("movimento-classe:paragrafo-9999"),null);
+  await assert.rejects(()=>atlas.getArtificerRequirementPreview(id,{movimentosPossuidos:"invalido"}),TypeError);
 });

@@ -322,3 +322,28 @@ def build_necromancer_indexes(moves):
       "by_requisito_tipo":ordered_index(moves,lambda m:[(m["requisito_estruturado"] or {}).get("tipo","nenhum")]),
       "by_requisito_id":ordered_index(moves,needed)
     }
+
+
+def build_artificer_indexes(moves):
+    """Três linhagens de REQUER diretos e transitivos, sem avaliação mecânica automática."""
+    by_id={m["id"]:m for m in moves}
+    def root(m):
+        req=m["requisito_estruturado"]
+        if not req:return []
+        seen={m["id"]}
+        while req:
+            target=req["movimento_id"]
+            if target not in by_id or target in seen:
+                raise ValueError("REQUER ARTÍFICE sem alvo ou com ciclo")
+            seen.add(target)
+            req=by_id[target]["requisito_estruturado"]
+        return [target]
+    return {
+       "by_titulo":ordered_index(moves,lambda m:[m["titulo"]]),
+       "by_paragrafo":ordered_index(moves,lambda m:[m["paragrafo_docx"]]),
+       "by_tem_requer":ordered_index(moves,lambda m:["sim" if m["requisito_literal"] else "nao"]),
+       "by_tem_opcoes":ordered_index(moves,lambda m:["sim" if m["opcoes"] else "nao"]),
+       "by_requisito_tipo":ordered_index(moves,lambda m:[(m["requisito_estruturado"] or {}).get("tipo","nenhum")]),
+       "by_requisito_id":ordered_index(moves,lambda m:[m["requisito_estruturado"]["movimento_id"]] if m["requisito_estruturado"] else []),
+       "by_raiz_dependencia":ordered_index(moves,root)
+    }

@@ -60,6 +60,45 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getArtificerMovements(){return byKey("hack_artificer_movements");}
+  async function getArtificerMovementIndexes(){return byKey("hack_artificer_movement_indexes");}
+  async function getArtificerMovement(id){
+    if(typeof id!=="string"||!id.startsWith("movimento-classe:"))return null;
+    return (await getArtificerMovements()).find(m=>m.id===id)??null;
+  }
+  async function searchArtificerMovements({titulo,query,requer,comRequer,comOpcoes,raizDependencia}={}){
+    const norm=x=>String(x??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const ix=raizDependencia?await getArtificerMovementIndexes():null;
+    const subtree=raizDependencia?new Set(ix.by_raiz_dependencia[raizDependencia]??[]):null;
+    return (await getArtificerMovements()).filter(m=>
+      (!titulo||norm(m.titulo).includes(norm(titulo)))&&
+      (!query||norm(m.titulo+" "+m.texto_original).includes(norm(query)))&&
+      (!requer||norm(m.requisito_literal).includes(norm(requer)))&&
+      (comRequer===undefined||Boolean(m.requisito_literal)===comRequer)&&
+      (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
+      (!subtree||subtree.has(m.id)));
+  }
+  async function getArtificerRequirementPreview(id,{movimentosPossuidos=[]}={}){
+    if(!Array.isArray(movimentosPossuidos))throw new TypeError("movimentosPossuidos deve ser array");
+    const moves=await getArtificerMovements();
+    const byId=new Map(moves.map(m=>[m.id,m]));
+    const start=byId.get(id);if(!start)return null;
+    const held=new Set(movimentosPossuidos),seen=new Set([id]),chain=[];
+    let current=start;
+    while(current.requisito_estruturado){
+      const required=current.requisito_estruturado.movimento_id;
+      if(!byId.has(required)||seen.has(required))throw new Error("REQUER ARTÍFICE sem alvo ou com ciclo");
+      seen.add(required);current=byId.get(required);
+      chain.push({movimento_id:required,titulo:current.titulo,presente_na_lista:held.has(required)});
+    }
+    return {movimento_id:id,requisito_literal:start.requisito_literal,
+      cadeia_imediato_para_raiz:chain,raiz_movimento_id:current.id,
+      componentes_identificados_presentes:chain.every(x=>x.presente_na_lista),
+      verificacao_estrutural:!chain.length?"sem_requer_literal":
+        chain.every(x=>x.presente_na_lista)?"componentes_identificados_presentes":"componentes_ausentes",
+      habilitado_para_compra:null,necessita_avaliacao_do_mestre:true,aplicacao_canonica:false,
+      observacao:"REQUER obrigatório, inclusive em concessão gratuita; diagnóstico não autoriza compra nem aplica efeitos."};
+  }
   async function getNecromancerMovements(){return byKey("hack_necromancer_movements");}
   async function getNecromancerMovementIndexes(){return byKey("hack_necromancer_movement_indexes");}
   async function getNecromancerMovement(id){
@@ -869,6 +908,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           searchSorcererMovements,getSorcererRequirementPreview,
           getNecromancerMovements,getNecromancerMovement,getNecromancerMovementIndexes,
           searchNecromancerMovements,getNecromancerRequirementPreview,
+          getArtificerMovements,getArtificerMovement,getArtificerMovementIndexes,
+          searchArtificerMovements,getArtificerRequirementPreview,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,
