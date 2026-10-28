@@ -1,0 +1,268 @@
+{
+  "by_categoria": {
+    "ciclos_materiais": [
+      "worldbuilding-xv:ciclo-material:casa-e-abrigo",
+      "worldbuilding-xv:ciclo-material:coleta-e-reserva",
+      "worldbuilding-xv:ciclo-material:historia-e-transmissao",
+      "worldbuilding-xv:ciclo-material:água-e-reparo"
+    ],
+    "fases": [
+      "worldbuilding-xv:fase:501-665",
+      "worldbuilding-xv:fase:666-874",
+      "worldbuilding-xv:fase:875-transicao",
+      "worldbuilding-xv:fase:antes-501"
+    ],
+    "pactos": [
+      "worldbuilding-xv:pacto:acolhimento-sem-vassalagem",
+      "worldbuilding-xv:pacto:passagem-e-cuidado",
+      "worldbuilding-xv:pacto:promessa-sem-herdeiro",
+      "worldbuilding-xv:pacto:semente-e-limite"
+    ],
+    "praticas": [
+      "worldbuilding-xv:pratica:acordos-com-os-silenciosos",
+      "worldbuilding-xv:pratica:lugar-que-nao-se-edifica",
+      "worldbuilding-xv:pratica:memoria-dos-caminhos",
+      "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+      "worldbuilding-xv:pratica:nomes-misturados",
+      "worldbuilding-xv:pratica:promessa-e-lugar",
+      "worldbuilding-xv:pratica:roda-das-nascentes",
+      "worldbuilding-xv:pratica:tempo-da-caca"
+    ],
+    "vinhetas": [
+      "worldbuilding-xv:vinheta:primeira-hospitalidade",
+      "worldbuilding-xv:vinheta:promessa-da-avo",
+      "worldbuilding-xv:vinheta:ultimo-dia-da-colheita",
+      "worldbuilding-xv:vinheta:um-lugar-devido"
+    ]
+  },
+  "by_fase": {
+    "antes_501": [
+      "worldbuilding-xv:fase:antes-501",
+      "worldbuilding-xv:pratica:lugar-que-nao-se-edifica",
+      "worldbuilding-xv:pratica:memoria-dos-caminhos",
+      "worldbuilding-xv:pratica:roda-das-nascentes",
+      "worldbuilding-xv:pratica:tempo-da-caca",
+      "worldbuilding-xv:vinheta:um-lugar-devido"
+    ],
+    "convivencia_666_874": [
+      "worldbuilding-xv:fase:666-874",
+      "worldbuilding-xv:vinheta:promessa-da-avo",
+      "worldbuilding-xv:vinheta:ultimo-dia-da-colheita"
+    ],
+    "refugio_501_665": [
+      "worldbuilding-xv:fase:501-665",
+      "worldbuilding-xv:pratica:acordos-com-os-silenciosos",
+      "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+      "worldbuilding-xv:pratica:nomes-misturados",
+      "worldbuilding-xv:pratica:promessa-e-lugar",
+      "worldbuilding-xv:vinheta:primeira-hospitalidade"
+    ],
+    "ruptura_875": [
+      "worldbuilding-xv:fase:875-transicao"
+    ]
+  },
+  "by_pagina_manuscrito": {
+    "16": [
+      "worldbuilding-xv:pacto:acolhimento-sem-vassalagem",
+      "worldbuilding-xv:pacto:promessa-sem-herdeiro",
+      "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+      "worldbuilding-xv:pratica:nomes-misturados",
+      "worldbuilding-xv:pratica:promessa-e-lugar"
+    ],
+    "17": [
+      "worldbuilding-xv:ciclo-material:casa-e-abrigo",
+      "worldbuilding-xv:ciclo-material:coleta-e-reserva",
+      "worldbuilding-xv:ciclo-material:historia-e-transmissao",
+      "worldbuilding-xv:ciclo-material:água-e-reparo",
+      "worldbuilding-xv:pacto:acolhimento-sem-vassalagem",
+      "worldbuilding-xv:pacto:passagem-e-cuidado",
+      "worldbuilding-xv:pacto:promessa-sem-herdeiro",
+      "worldbuilding-xv:pacto:semente-e-limite",
+      "worldbuilding-xv:pratica:acordos-com-os-silenciosos",
+      "worldbuilding-xv:pratica:lugar-que-nao-se-edifica",
+      "worldbuilding-xv:pratica:memoria-dos-caminhos",
+      "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+      "worldbuilding-xv:pratica:nomes-misturados",
+      "worldbuilding-xv:pratica:promessa-e-lugar",
+      "worldbuilding-xv:pratica:roda-das-nascentes",
+      "worldbuilding-xv:pratica:tempo-da-caca"
+    ],
+    "20": [
+      "worldbuilding-xv:pratica:memoria-dos-caminhos"
+    ],
+    "24": [
+      "worldbuilding-xv:pratica:acordos-com-os-silenciosos",
+      "worldbuilding-xv:pratica:roda-das-nascentes"
+    ]
+  },
+  "by_ambito_social": {
+    "convivencia_intercultural": [
+      "worldbuilding-xv:pratica:mesa-da-hospitalidade"
+    ],
+    "diplomacia_ecologica": [
+      "worldbuilding-xv:pratica:acordos-com-os-silenciosos"
+    ],
+    "direito_costumeiro_de_pactos": [
+      "worldbuilding-xv:pratica:promessa-e-lugar"
+    ],
+    "gestao_de_caca_e_coleta": [
+      "worldbuilding-xv:pratica:tempo-da-caca"
+    ],
+    "jurisdicao_sagrada": [
+      "worldbuilding-xv:pratica:lugar-que-nao-se-edifica"
+    ],
+    "mediacao_de_recursos": [
+      "worldbuilding-xv:pratica:roda-das-nascentes"
+    ],
+    "memoria_territorial": [
+      "worldbuilding-xv:pratica:memoria-dos-caminhos"
+    ],
+    "parentesco_e_pertencimento": [
+      "worldbuilding-xv:pratica:nomes-misturados"
+    ]
+  },
+  "by_pratica_referida": {
+    "worldbuilding-xv:pratica:acordos-com-os-silenciosos": [
+      "worldbuilding-xv:pacto:passagem-e-cuidado",
+      "worldbuilding-xv:vinheta:promessa-da-avo"
+    ],
+    "worldbuilding-xv:pratica:lugar-que-nao-se-edifica": [
+      "worldbuilding-xv:ciclo-material:casa-e-abrigo",
+      "worldbuilding-xv:ciclo-material:coleta-e-reserva",
+      "worldbuilding-xv:pacto:semente-e-limite",
+      "worldbuilding-xv:vinheta:um-lugar-devido"
+    ],
+    "worldbuilding-xv:pratica:memoria-dos-caminhos": [
+      "worldbuilding-xv:ciclo-material:historia-e-transmissao",
+      "worldbuilding-xv:pacto:passagem-e-cuidado"
+    ],
+    "worldbuilding-xv:pratica:mesa-da-hospitalidade": [
+      "worldbuilding-xv:ciclo-material:casa-e-abrigo",
+      "worldbuilding-xv:pacto:acolhimento-sem-vassalagem",
+      "worldbuilding-xv:vinheta:primeira-hospitalidade"
+    ],
+    "worldbuilding-xv:pratica:nomes-misturados": [
+      "worldbuilding-xv:ciclo-material:historia-e-transmissao",
+      "worldbuilding-xv:pacto:acolhimento-sem-vassalagem",
+      "worldbuilding-xv:pacto:promessa-sem-herdeiro",
+      "worldbuilding-xv:vinheta:primeira-hospitalidade"
+    ],
+    "worldbuilding-xv:pratica:promessa-e-lugar": [
+      "worldbuilding-xv:ciclo-material:historia-e-transmissao",
+      "worldbuilding-xv:pacto:promessa-sem-herdeiro",
+      "worldbuilding-xv:vinheta:promessa-da-avo"
+    ],
+    "worldbuilding-xv:pratica:roda-das-nascentes": [
+      "worldbuilding-xv:ciclo-material:água-e-reparo",
+      "worldbuilding-xv:vinheta:ultimo-dia-da-colheita",
+      "worldbuilding-xv:vinheta:um-lugar-devido"
+    ],
+    "worldbuilding-xv:pratica:tempo-da-caca": [
+      "worldbuilding-xv:ciclo-material:coleta-e-reserva",
+      "worldbuilding-xv:pacto:semente-e-limite",
+      "worldbuilding-xv:vinheta:ultimo-dia-da-colheita"
+    ]
+  },
+  "by_eixo_xiv": {
+    "worldbuilding-xiv:eixo:floresta-agente": [
+      "worldbuilding-xv:pratica:acordos-com-os-silenciosos"
+    ],
+    "worldbuilding-xiv:eixo:nomeacao-e-mapas": [
+      "worldbuilding-xv:pratica:lugar-que-nao-se-edifica",
+      "worldbuilding-xv:pratica:memoria-dos-caminhos"
+    ],
+    "worldbuilding-xiv:eixo:ondas-feericas": [
+      "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+      "worldbuilding-xv:pratica:nomes-misturados"
+    ],
+    "worldbuilding-xiv:eixo:pactos-feericos": [
+      "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+      "worldbuilding-xv:pratica:nomes-misturados",
+      "worldbuilding-xv:pratica:promessa-e-lugar"
+    ],
+    "worldbuilding-xiv:eixo:sagrado-druidico": [
+      "worldbuilding-xv:pratica:acordos-com-os-silenciosos",
+      "worldbuilding-xv:pratica:lugar-que-nao-se-edifica",
+      "worldbuilding-xv:pratica:memoria-dos-caminhos",
+      "worldbuilding-xv:pratica:promessa-e-lugar",
+      "worldbuilding-xv:pratica:roda-das-nascentes",
+      "worldbuilding-xv:pratica:tempo-da-caca"
+    ],
+    "worldbuilding-xiv:eixo:subsistencia": [
+      "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+      "worldbuilding-xv:pratica:roda-das-nascentes",
+      "worldbuilding-xv:pratica:tempo-da-caca"
+    ]
+  },
+  "by_tarefa_material": {
+    "acolher_familias": [
+      "worldbuilding-xv:ciclo-material:casa-e-abrigo"
+    ],
+    "avaliar_lugares_interditados": [
+      "worldbuilding-xv:ciclo-material:casa-e-abrigo"
+    ],
+    "colher": [
+      "worldbuilding-xv:ciclo-material:coleta-e-reserva"
+    ],
+    "ensinar_trilhas": [
+      "worldbuilding-xv:ciclo-material:historia-e-transmissao"
+    ],
+    "erguer_abrigos": [
+      "worldbuilding-xv:ciclo-material:casa-e-abrigo"
+    ],
+    "guardar_reservas": [
+      "worldbuilding-xv:ciclo-material:coleta-e-reserva"
+    ],
+    "mediar_uso": [
+      "worldbuilding-xv:ciclo-material:água-e-reparo"
+    ],
+    "observar_animais": [
+      "worldbuilding-xv:ciclo-material:coleta-e-reserva"
+    ],
+    "ouvir_testemunhas": [
+      "worldbuilding-xv:ciclo-material:historia-e-transmissao"
+    ],
+    "partilhar_alimento": [
+      "worldbuilding-xv:ciclo-material:coleta-e-reserva"
+    ],
+    "rever_promessas": [
+      "worldbuilding-xv:ciclo-material:historia-e-transmissao"
+    ],
+    "transportar_agua": [
+      "worldbuilding-xv:ciclo-material:água-e-reparo"
+    ],
+    "zelar_pelas_margens": [
+      "worldbuilding-xv:ciclo-material:água-e-reparo"
+    ]
+  },
+  "by_status": {
+    "modelo_hipotetico_nao_assinado": [
+      "worldbuilding-xv:pacto:acolhimento-sem-vassalagem",
+      "worldbuilding-xv:pacto:passagem-e-cuidado",
+      "worldbuilding-xv:pacto:promessa-sem-herdeiro",
+      "worldbuilding-xv:pacto:semente-e-limite"
+    ],
+    "proposta_material_nao_quantificada": [
+      "worldbuilding-xv:ciclo-material:casa-e-abrigo",
+      "worldbuilding-xv:ciclo-material:coleta-e-reserva",
+      "worldbuilding-xv:ciclo-material:historia-e-transmissao",
+      "worldbuilding-xv:ciclo-material:água-e-reparo"
+    ],
+    "proposta_nao_canonica": [
+      "worldbuilding-xv:pratica:acordos-com-os-silenciosos",
+      "worldbuilding-xv:pratica:lugar-que-nao-se-edifica",
+      "worldbuilding-xv:pratica:memoria-dos-caminhos",
+      "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+      "worldbuilding-xv:pratica:nomes-misturados",
+      "worldbuilding-xv:pratica:promessa-e-lugar",
+      "worldbuilding-xv:pratica:roda-das-nascentes",
+      "worldbuilding-xv:pratica:tempo-da-caca"
+    ],
+    "vinheta_ficcional_nao_ocorrida": [
+      "worldbuilding-xv:vinheta:primeira-hospitalidade",
+      "worldbuilding-xv:vinheta:promessa-da-avo",
+      "worldbuilding-xv:vinheta:ultimo-dia-da-colheita",
+      "worldbuilding-xv:vinheta:um-lugar-devido"
+    ]
+  }
+}
