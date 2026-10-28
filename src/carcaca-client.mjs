@@ -60,6 +60,32 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getCostaSulSeaPressure(){return byKey("costa_sul_sea_pressure");}
+  async function getCostaSulSeaPressureIndexes(){return byKey("costa_sul_sea_pressure_indexes");}
+  async function getCostaSulSeaPressureEntity(id){
+    if(typeof id!=="string"||!id.startsWith("costa-mar:"))return null;
+    const d=await getCostaSulSeaPressure();
+    for(const categoria of ["nucleos","oficios","pessoas","impactos","fluxos","acordos","cenas","arcos"]){
+      const item=d[categoria].find(x=>x.id===id);
+      if(item)return {...item,categoria};
+    }
+    return null;
+  }
+  async function searchCostaSulSeaPressure({categoria,territorio,setor,papel,movimentoHack,referencia,query}={}){
+    const d=await getCostaSulSeaPressure();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const flat=["nucleos","oficios","pessoas","impactos","fluxos","acordos","cenas","arcos"]
+      .flatMap(k=>d[k].map(x=>({...x,categoria:k})));
+    return flat.filter(x=>
+      (!categoria||x.categoria===categoria)&&
+      (!territorio||x.territorio===territorio)&&
+      (!setor||x.setor===setor)&&
+      (!papel||x.papel===papel)&&
+      (!movimentoHack||(x.movimentos_inspiradores??[]).includes(movimentoHack))&&
+      (!referencia||(x.referencias??[]).includes(referencia))&&
+      (!query||norm([x.nome,x.rotina_cotidiana,x.tensao_politica,x.gatilho,x.decisao_central]
+        .filter(Boolean).join(" ")).includes(norm(query))));
+  }
   async function getMarSangueEconomy(){return byKey("mar_sangue_economy");}
   async function getMarSangueEconomyIndexes(){return byKey("mar_sangue_economy_indexes");}
   async function getMarSangueEconomyEntity(id){
@@ -1165,6 +1191,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getMarSangueDiplomacyEntity,searchMarSangueDiplomacy,
           getMarSangueEconomy,getMarSangueEconomyIndexes,
           getMarSangueEconomyEntity,searchMarSangueEconomy,
+          getCostaSulSeaPressure,getCostaSulSeaPressureIndexes,
+          getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,

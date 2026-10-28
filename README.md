@@ -437,3 +437,10 @@ Fonte: `data/propostas/mar-sangue-diplomacia-hack.json`. Distribuição: `dist/c
 **44 propostas sociais** em oito categorias: cinco polos de atividade, seis ofícios, oito NPCs (seis reaproveitados), sete fluxos hipotéticos, cinco tributos contestáveis, quatro circuitos clandestinos não operacionais, seis cenas e três arcos. O conjunto explora pesca e passagem tributadas, manutenção, trabalho coercitivo, sacrifício, comunicação e rotas de refúgio sem estabelecer volumes ou comércio de fato.
 
 Fonte `data/propostas/mar-sangue-economia-hack.json`. Distribuição `dist/carcaca/mar-sangue-economy.json`; índices `dist/carcaca/mar-sangue-economy-indexes.json`; API `getMarSangueEconomy`, `searchMarSangueEconomy`. Dossiê em [Economia do Mar de Sangue](docs/MAR_SANGUE_ECONOMIA_CICLO7.md). Todas as novas figuras, transações e ocorrências continuam propostas não canônicas.
+
+
+## Povoamento VIII — Costa Sul sob pressão do Mar de Sangue
+
+**45 propostas narrativas** em oito categorias: cinco núcleos de encontro, cinco ofícios, nove pessoas (seis retomadas do ciclo IV), seis impactos econômicos condicionais, seis fluxos não efetivados, cinco acordos não assinados, seis cenas e três arcos. O módulo examina como tributos e ameaças marítimas *poderiam* afetar reparos, agricultura, hospedagem e navegação em Portomonte e nas ilhas, sem estabelecer contratos com cidades submarinas como fatos.
+
+Fonte: `data/propostas/costa-sul-pressao-mar-sangue-hack.json`. Saídas `dist/carcaca/costa-sul-sea-pressure.json` e `dist/carcaca/costa-sul-sea-pressure-indexes.json`. API: `getCostaSulSeaPressure`, `searchCostaSulSeaPressure`, `getCostaSulSeaPressureEntity`. Dossiê: [Costa Sul sob Pressão](docs/COSTA_SUL_PRESSAO_MAR_SANGUE_CICLO8.md). Todos os registros permanecem não canônicos, com preservação dos limites de potabilidade, refugiados, rotas e cosmologia.

@@ -252,6 +252,33 @@ def build():
     mar_sangue=load("data/propostas/mar-sangue-ecologia-politica-hack.json")
     diplomacia_mar=load("data/propostas/mar-sangue-diplomacia-hack.json")
     economia_mar=load("data/propostas/mar-sangue-economia-hack.json")
+    costa_mar=load("data/propostas/costa-sul-pressao-mar-sangue-hack.json")
+    categorias_costa_mar=("nucleos","oficios","pessoas","impactos","fluxos","acordos","cenas","arcos")
+    entidades_costa_mar=[
+        {**elemento,"categoria":categoria}
+        for categoria in categorias_costa_mar for elemento in costa_mar[categoria]
+    ]
+    def indexar_costa_mar(chave):
+        mapping=defaultdict(set)
+        for x in entidades_costa_mar:
+            raw=x.get(chave,[])
+            values=raw if isinstance(raw,list) else [raw]
+            for value in values:
+                if value:mapping[str(value)].add(x["id"])
+        return {k:sorted(v) for k,v in sorted(mapping.items())}
+    indices_costa_mar={
+        "by_categoria":indexar_costa_mar("categoria"),
+        "by_territorio":indexar_costa_mar("territorio"),
+        "by_setor":indexar_costa_mar("setor"),
+        "by_papel":indexar_costa_mar("papel"),
+        "by_movimento_hack":indexar_costa_mar("movimentos_inspiradores"),
+        "by_referencia":indexar_costa_mar("referencias"),
+        "by_personagem_reutilizado":indexar_costa_mar("reutiliza"),
+        "by_origem":indexar_costa_mar("origem"),
+        "by_destino":indexar_costa_mar("destino")
+    }
+    if len(entidades_costa_mar)!=45 or len(indices_costa_mar["by_categoria"])!=8:
+        raise ValueError("Costa sob pressão: 45 entidades em oito categorias")
     categorias_economia=("polos","oficios","pessoas","fluxos","tributos","clandestinas","cenas","arcos")
     entidades_economia=[
         {**elemento,"categoria":categoria}
@@ -709,6 +736,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "costa_sul_sea_pressure":"costa-sul-sea-pressure.json",
+        "costa_sul_sea_pressure_indexes":"costa-sul-sea-pressure-indexes.json",
         "mar_sangue_economy":"mar-sangue-economy.json",
         "mar_sangue_economy_indexes":"mar-sangue-economy-indexes.json",
         "mar_sangue_diplomacy":"mar-sangue-diplomacy.json",
@@ -823,6 +852,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_entidades_costa_sul_pressao_propostas":len(entidades_costa_mar),
+        "total_impactos_costa_sul_propostos":len(costa_mar["impactos"]),
+        "total_acordos_costa_sul_propostos":len(costa_mar["acordos"]),
+        "total_fluxos_costa_sul_propostos":len(costa_mar["fluxos"]),
         "total_entidades_economia_mar_propostas":len(entidades_economia),
         "total_oficios_economia_mar_propostos":len(economia_mar["oficios"]),
         "total_fluxos_economia_mar_propostos":len(economia_mar["fluxos"]),
@@ -931,6 +964,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["costa_sul_sea_pressure"]:costa_mar,
+           files["costa_sul_sea_pressure_indexes"]:indices_costa_mar,
            files["mar_sangue_economy"]:economia_mar,
            files["mar_sangue_economy_indexes"]:indices_economia,
            files["mar_sangue_diplomacy"]:diplomacia_mar,

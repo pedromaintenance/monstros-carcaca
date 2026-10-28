@@ -2654,6 +2654,97 @@ def validar_economia_mar_sangue():
             "Economia marinha perdeu ressalvas factuais ou cosmológicas.")
     print("Economia do Mar de Sangue: 44 propostas, 8 categorias e 7 fluxos não efetivados.")
 
+
+def validar_pressao_mar_sangue_costa_sul():
+    """Custos sociais de travessias sem promover rumores e taxações a fatos."""
+    d=load("data/propostas/costa-sul-pressao-mar-sangue-hack.json")
+    expected={"nucleos":5,"oficios":5,"pessoas":9,"impactos":6,
+              "fluxos":6,"acordos":5,"cenas":6,"arcos":3}
+    require(d["regiao_id"]=="regiao:costa-sul"
+            and d["estado"]=="propostas_narrativas_nao_canonicas"
+            and d["aprovacao_autoral"] is False
+            and d["efeito_automatico_no_canon"] is False,
+            "Costa sob pressão não pode se tornar cânone automaticamente.")
+    require(d["contagens"]==expected and
+            all(len(d[k])==v for k,v in expected.items()),
+            "Categorias da pressão costeira inconsistentes.")
+    rows=[x for cat in expected for x in d[cat]]
+    ids={x["id"] for x in rows}
+    require(len(rows)==len(ids)==45 and
+            all(x["id"].startswith("costa-mar:")
+                and x["estado"]=="proposta_nao_canonica" for x in rows),
+            "IDs ausentes, duplicados ou canonizados.")
+    movimento_ids={x["id"] for x in load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]}
+    refs=set(ids)
+    refs.update(x["id"] for x in load("data/lugares_carcaca.json")["lugares"])
+    datasets=(
+       ("data/propostas/portomonte-ilhas-costa-sul-hack.json",
+        ("espacos","redes","pessoas","praticas","circulacoes","cenas","tramas")),
+       ("data/propostas/mar-sangue-economia-hack.json",
+        ("polos","oficios","pessoas","fluxos","tributos","clandestinas","cenas","arcos")),
+       ("data/propostas/mar-sangue-diplomacia-hack.json",
+        ("polos","casas","pessoas","disputas","tratados","cenas","missoes","arcos")),
+       ("data/propostas/mar-sangue-ecologia-politica-hack.json",
+        ("zonas","coletivos","pessoas","pactos","fenomenos","cenas","tramas")),
+       ("data/propostas/fronteira-caatinga-costa-sul-hack.json",
+        ("encontros","pessoas","acordos","fluxos","cenas","tramas")))
+    for filename,categories in datasets:
+        dataset=load(filename)
+        refs.update(x["id"] for cat in categories for x in dataset[cat])
+    refs.update(("regiao:costa-sul",))
+    require(set(d["continuidades"]) <= refs,
+            "Vínculos de continuidade costeira não resolvidos.")
+    for item in rows:
+        require(bool(item["nome"].strip())
+                and bool(item["rotina_cotidiana"].strip())
+                and bool(item["tensao_politica"].strip()),
+                "Proposta sem vida material e tensão social.")
+        require(1<=len(item["movimentos_inspiradores"])<=4
+                and all(mid in movimento_ids for mid in item["movimentos_inspiradores"]),
+                "Movimento cultural ausente do Hack.")
+        require(all(ref in refs for ref in item["referencias"]),
+                "Referência órfã na Costa Sul: "+item["id"])
+    require(all(x["local_confirmado"] is False
+                and x["estrutura_oficial"] is False for x in d["nucleos"]),
+            "Núcleo hipotético tornou-se bairro ou estrutura canônica.")
+    require(all(x["oficio_confirmado"] is False for x in d["oficios"]),
+            "Ofício hipotético declarado existente.")
+    old_people={x["id"] for x in load("data/propostas/portomonte-ilhas-costa-sul-hack.json")["pessoas"]}
+    require(sum(x["reutiliza"] is not None for x in d["pessoas"])==6
+            and {x["reutiliza"] for x in d["pessoas"] if x["reutiliza"]}<=old_people,
+            "Seis personagens devem ser reaproveitados da Costa Sul.")
+    require(all(x["ocorreu"] is False and
+                len(x["efeito_em_cadeia"])>=3 and x["contrapeso"]
+                for x in d["impactos"]),
+            "Impacto condicional não pode virar acontecimento histórico.")
+    for x in d["fluxos"]:
+        require(x["efetivado"] is False and
+                x["quantidade_confirmada"] is False and
+                x["origem"] in refs and x["destino"] in refs,
+                "Fluxo marítimo proposto tem ligação órfã ou comércio indevidamente confirmado.")
+    people={x["id"] for x in d["pessoas"]}
+    require(all(x["vigente"] is False and
+                len(x["proponentes"])>=2 and
+                all(p in people for p in x["proponentes"]) and
+                x["custo"] and x["condicao_ruptura"] for x in d["acordos"]),
+            "Acordo não assinado foi homologado ou perdeu custo.")
+    places={x["id"] for x in d["nucleos"]}
+    require(all(x["nucleo"] in places and
+                all(p in people for p in x["elenco"]) and
+                len(x["escolhas"])>=3 and len(x["se_ignorarem"])>=25
+                for x in d["cenas"]),
+            "Cena sem local, atores, opções ou consequências condicionais.")
+    scenes={x["id"] for x in d["cenas"]}
+    require(all(len(x["cenas"])>=2 and
+                all(k in scenes for k in x["cenas"]) and x["decisao_central"]
+                for x in d["arcos"]),
+            "Arco sem cenas ou decisão para os jogadores.")
+    facts=" ".join(d["fatos_documentados"]+d["limites_editoriais"]).lower()
+    require("potabilidade" in facts and "demônios" in facts
+            and "portomonte" in facts and "refugiados" in facts,
+            "A expansão perdeu ressalvas importantes da lore.")
+    print("Costa Sul VIII: 45 propostas, 6 impactos condicionais, 6 fluxos não efetivados.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2773,6 +2864,7 @@ def main():
     validar_ecologia_politica_mar_sangue()
     validar_diplomacia_mar_sangue()
     validar_economia_mar_sangue()
+    validar_pressao_mar_sangue_costa_sul()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
