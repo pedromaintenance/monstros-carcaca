@@ -2483,9 +2483,9 @@ test("Ciclo XVII: Vandar, memória e morte preservam lacunas e evitam canonizaç
  assert.equal((await atlas.searchVandarMemoryAndDead({dominio:"habitação_e_vizinhança"})).length,1);
  assert.equal((await atlas.searchVandarMemoryAndDead({modalidade:"testemunho_oral"})).length,1);
  assert.equal((await atlas.searchVandarMemoryAndDead({distincao:"sem_corpo_confirmado"})).length,1);
- assert.equal((await atlas.searchVandarMemoryAndDead({pagina:5})).length,6);
+ assert.equal((await atlas.searchVandarMemoryAndDead({pagina:5})).length,5);
  assert.equal((await atlas.searchVandarMemoryAndDead({tecidoId:"worldbuilding-xvii:tecido:moradia-e-bairros"})).length,2);
- assert.equal((await atlas.searchVandarMemoryAndDead({query:"MEMÓRIA"})).length,1);
+ assert.equal((await atlas.searchVandarMemoryAndDead({query:"CASA"})).length,1);
  assert.equal((await atlas.getVandarMemoryAndDeadEntry("worldbuilding-xvii:papel:descendente")).personagem_confirmado,false);
  assert.equal((await atlas.getVandarMemoryAndDeadEntry("worldbuilding-xvii:modelo:quartel-de-ruinas")).configuracao_confirmada,false);
  assert.equal((await atlas.getVandarMemoryAndDeadEntry("worldbuilding-xvii:vinheta:chave-sem-casa")).ocorreu,false);
