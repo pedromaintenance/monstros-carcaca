@@ -455,3 +455,13 @@ Foco no **worldbuilding civil** de Ironwood. Fonte principal: manuscrito do Hack
 Entregas: `docs/IRONWOOD_SOCIEDADE_RESISTENCIA_CICLO18.md` e `data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json`. Oito eixos de vida civil, três modelos concorrentes e não adotados de governo, quatro relações diplomáticas sem tratados assinados, quatro circuitos materiais sem quantidades, quatro dilemas não ocorridos, quatro vinhetas literárias e oito decisões pendentes. JSON Schema, validador, API ESM, índices e testes preservam o cânone.
 
 Este incremento encerra o primeiro arco regional de worldbuilding XIV–XVIII. A prioridade seguinte é revisão autoral das hipóteses e planejamento de novos territórios ou povos, sem tratar todo o material proposto como história confirmada.
+
+## 2026-10-28 · Ciclo XIX — Da proposta à decisão autoral
+
+Revisamos os cinco ciclos XIV–XVIII para construir uma **mesa de aprovação**, sem confundir produção de opções com fatos da ambientação. As fontes canônicas, os trechos do manuscrito do Hack e as hipóteses posteriores mantêm estatutos separados.
+
+O inventário estruturado contém **103 candidatos** ligados a registros existentes (42 alternativas de XIV, 24 alternativas mais quatro pactos de XV, 8 mecanismos e 3 modelos de XVI, 8 estudos urbanos e 3 modelos de XVII, 8 eixos civis e 3 modelos de XVIII). Existem **20 decisões autorais priorizadas**, com pré-requisitos editoriais, dez guardas de fonte e cinco campos cuja resposta continua nula: geografia normalizada de Ironwood, queda de Vandar, identidade dos mortos-vivos, instituições locais de Sylara e governo civil de Elara.
+
+Entregas: `docs/MESA_REVISAO_AUTORAL_CICLO19.md` e `data/worldbuilding/revisao-autoral-atlas-ciclo19.json`, com schema, validador, índices, consultas ESM e testes. **Nenhum status foi alterado para aprovado**, nenhuma opção foi adotada por silêncio e nenhum evento de campanha foi declarado ocorrido. A integração do roteiro de decisões preserva a autonomia autoral.
+
+Próxima direção: responder escolhas pontuais com fonte, redação e alcance explícitos, ou ampliar pesquisas geográficas e culturais enquanto decisões estiverem abertas.
