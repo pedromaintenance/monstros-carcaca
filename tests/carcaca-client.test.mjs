@@ -82,6 +82,8 @@ const fixtures={
     hack_artificer_movement_indexes:"hack-artificer-movement-indexes.json",
     hack_mercenary_movements:"hack-mercenary-movements.json",
     hack_mercenary_movement_indexes:"hack-mercenary-movement-indexes.json",
+    eldroth_cultural_atlas:"eldroth-cultural-atlas.json",
+    eldroth_cultural_atlas_indexes:"eldroth-cultural-atlas-indexes.json",
     eldroth_dw_statblocks:"eldroth-dw-statblocks.json",
     eldroth_dw_statblock_indexes:"eldroth-dw-statblock-indexes.json",
     eldroth_monster_ecology:"eldroth-monster-ecology.json",
@@ -164,6 +166,8 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "eldroth-cultural-atlas.json":{"estado":"dossie_de_worldbuilding_em_revisao","aprovacao_autoral":false,"efeito_automatico_no_canon":false,"resumo":{"areas":3,"marcos":6,"eixos":14,"alternativas":42},"areas":[{"id":"worldbuilding-xiv:area:eldroth","nome":"Eldroth","referencia_atlas":"regiao:eldroth"},{"id":"worldbuilding-xiv:area:ironwood","nome":"Ironwood","referencia_atlas":null}],"marcos":[{"ano_ec":501,"evento":"Feéricos refugiados"},{"ano_ec":null,"evento":"Queda de Vandar sem data"}],"eixos":[{"id":"worldbuilding-xiv:eixo:ondas-feericas","area_id":"worldbuilding-xiv:area:eldroth","tema":"Migração feérica e colonialismo","fatos_textuais":[{"fonte":"ambientacao","afirmacao":"Fadas chegam em 501 EC"}],"camada_manuscrito":[{"fonte":"hack-capitulo-i","paginas":[17],"afirmacao":"Refúgio anterior à conquista"}],"leitura_editorial":"O refúgio não é domínio","perguntas_abertas":["Quem acolhia?","Quem decide?"],"efeitos_na_ambientacao":["historia de familias"],"decisoes_autorais_pendentes":[{"opcao":"Alternativa sem aprovação","estado":"alternativa_nao_adotada"}]},{"id":"worldbuilding-xiv:eixo:ironwood-cultura","area_id":"worldbuilding-xiv:area:ironwood","tema":"Vida civil de Ironwood","fatos_textuais":[{"fonte":"ambientacao","afirmacao":"A fortaleza resiste"}],"camada_manuscrito":[{"fonte":"hack-capitulo-i","paginas":[18],"afirmacao":"Rangers organizam a informação"}],"leitura_editorial":"Segurança exige deveres","perguntas_abertas":["Quem controla?","Quem trabalha?"],"efeitos_na_ambientacao":["etica da guerrilha"],"decisoes_autorais_pendentes":[{"opcao":"Alternativa sem aprovação","estado":"alternativa_nao_adotada"}]}]},
+  "eldroth-cultural-atlas-indexes.json":{"by_area":{"worldbuilding-xiv:area:eldroth":["worldbuilding-xiv:eixo:ondas-feericas"],"worldbuilding-xiv:area:ironwood":["worldbuilding-xiv:eixo:ironwood-cultura"]},"by_pagina_manuscrito":{"17":["worldbuilding-xiv:eixo:ondas-feericas"],"18":["worldbuilding-xiv:eixo:ironwood-cultura"]}},
   "eldroth-dw-statblocks.json":{"aprovacao_autoral":false,"efetiva_canon":false,"resumo":{"fichas":8,"com_pv":7,"sem_pv_por_ficcao":1,"statblocks_aprovados":0},"fichas":[{"id":"ecologia-xiii:ficha:coruja-do-eco-emprestado","nome":"Coruja do Eco Emprestado","tipo_carcaca_proposto":"fera_sobrenatural","modo":"estatizado","instinto":"Conservar o último som ouvido.","criatura_origem_id":"ecologia-xii:criatura:coruja-do-eco-emprestado","organizacao":{"proposta_dw":"solitario"},"decisoes":{"porte":"miudo","justificativa":"Pequena ave."},"ficha_dw":{"pv":12,"dano":{"expressao":"d8-2"},"tags":["solitario","miudo","magico"]},"aprovacao_autoral":false,"ocorrencia_confirmada":false},{"id":"ecologia-xiii:ficha:micelio-das-vozes-partidas","nome":"Micélio das Vozes Partidas","tipo_carcaca_proposto":"flora","modo":"sem_estatisticas","instinto":"Distribuir sinais de perturbação.","criatura_origem_id":"ecologia-xii:criatura:micelio-das-vozes-partidas","organizacao":{"proposta_dw":"horda"},"decisoes":{"porte":null,"justificativa":"Sem corpo combatente."},"ficha_dw":{"pv":null,"dano":null,"tags":["horda","sem_estatisticas"]},"aprovacao_autoral":false,"ocorrencia_confirmada":false}]},
   "eldroth-dw-statblock-indexes.json":{"by_modo":{"estatizado":["ecologia-xiii:ficha:coruja-do-eco-emprestado"],"sem_estatisticas":["ecologia-xiii:ficha:micelio-das-vozes-partidas"]}},
   "eldroth-monster-ecology.json":{"estado":"propostas_narrativas_nao_canonicas","aprovacao_autoral":false,"efeito_automatico_no_canon":false,"criaturas":[{"id":"ecologia-xii:criatura:coruja-do-eco-emprestado","nome":"Coruja do Eco Emprestado","tipo_carcaca_proposto":"fera_sobrenatural","localizacao_proposta":{"escopo":"eldroth"},"dungeon_world":{"instinto":"Conservar para si o último som ouvido."},"vinculo_cena_anterior":"ironwood-eldroth:cena:passaro-sem-canto","ocorrencia_confirmada":false},{"id":"ecologia-xii:criatura:besouros-da-casca-riscada","nome":"Besouros da Casca Riscada","tipo_carcaca_proposto":"fauna","localizacao_proposta":{"escopo":"ironwood"},"dungeon_world":{"instinto":"Decompor madeira morta."},"vinculo_cena_anterior":"ironwood-eldroth:cena:aprendiz-do-mapa","ocorrencia_confirmada":false}],"encontros":[{"id":"ecologia-xii:encontro:canto-sem-ave","nome":"Um Canto sem Ave","escopo":"eldroth","criaturas_ids":["ecologia-xii:criatura:coruja-do-eco-emprestado"],"cena_anterior_id":"ironwood-eldroth:cena:passaro-sem-canto","abertura_condicional":"Quando o canto é ouvido sem aves.","ocorreu":false}],"pressoes":[{"id":"ecologia-xii:pressao:rastreio-pelo-medo","nome":"A Floresta que Parece Denunciar","escopo":"eldroth","criaturas_ids":["ecologia-xii:criatura:coruja-do-eco-emprestado"],"origem_possivel":"Sons sem fonte.","ocorreu":false,"medicao":null}],"frentes":[{"id":"ecologia-xii:frente:o-bosque-que-informa","nome":"O Bosque que Informa sem Consentimento","escopo":"eldroth","criaturas_ids":["ecologia-xii:criatura:coruja-do-eco-emprestado"],"encontros_ids":["ecologia-xii:encontro:canto-sem-ave"],"impulso_dw_proposto":"Transformar sinal em suspeita.","ocorreu":false,"pressagios_realizados":[]}]},
@@ -2398,4 +2402,20 @@ test("Ciclo XIII: API das fichas DW distingue perigo físico de ameaça sem comb
   assert.deepEqual(await atlas.searchEldrothDWStatblocks({query:"zzyy"}),[]);
   assert.equal(await atlas.getEldrothDWStatblock("ecologia-xiii:ficha:nao-existe"),null);
   assert.equal(await atlas.getEldrothDWStatblock("ecologia-xii:criatura:coruja-do-eco-emprestado"),null);
+});
+
+test("Ciclo XIV: atlas historico-cultural mantém rascunho separado do canone",async()=>{
+ const a=await atlas.getEldrothCulturalAtlas();
+ assert.equal(a.aprovacao_autoral,false);
+ assert.equal(a.efeito_automatico_no_canon,false);
+ assert.equal(a.marcos[1].ano_ec,null);
+ const ix=await atlas.getEldrothCulturalAtlasIndexes();
+ assert.equal(ix.by_pagina_manuscrito["17"].length,1);
+ assert.equal((await atlas.searchEldrothCulturalAxes({areaId:"worldbuilding-xiv:area:eldroth"})).length,1);
+ assert.equal((await atlas.searchEldrothCulturalAxes({pagina:18})).length,1);
+ assert.equal((await atlas.searchEldrothCulturalAxes({efeito:"etica da guerrilha"})).length,1);
+ assert.equal((await atlas.searchEldrothCulturalAxes({query:"MIGRAÇÃO"})).length,1);
+ assert.equal((await atlas.getEldrothCulturalAxis("worldbuilding-xiv:eixo:ondas-feericas")).decisoes_autorais_pendentes[0].estado,"alternativa_nao_adotada");
+ assert.equal(await atlas.getEldrothCulturalAxis("worldbuilding-xiv:eixo:nao-existe"),null);
+ assert.deepEqual(await atlas.searchEldrothCulturalAxes({query:"zzz-inexistente"}),[]);
 });
