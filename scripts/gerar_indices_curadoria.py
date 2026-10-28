@@ -245,6 +245,23 @@ def build():
     lore_timeline=load("data/lore/hack-carcaca-dw-cronologia.json")
     lore_reviews=load("data/lore/hack-carcaca-dw-pontos-de-revisao.json")
     lore_crosswalk=sorted(load("data/lore/hack-carcaca-dw-pontes-atlas.json")["pontes"],key=lambda x:x["id"])
+    povoamento_proposto=load("data/propostas/povoamento-regional-hack-carcaca.json")
+    sementes_povoamento=povoamento_proposto["sementes"]
+    areas_povoamento=povoamento_proposto["areas"]
+    def index_povoamento(rows,key):
+        mapping=defaultdict(set)
+        for row in rows:
+            values=row[key] if isinstance(row[key],list) else [row[key]]
+            for value in values:
+                if value: mapping[value].add(row["id"])
+        return {k:sorted(v) for k,v in sorted(mapping.items())}
+    indices_povoamento={
+       "by_area":index_povoamento(sementes_povoamento,"area_id"),
+       "by_tema":index_povoamento(sementes_povoamento,"temas"),
+       "by_movimento_hack":index_povoamento(sementes_povoamento,"movimentos_inspiradores")
+    }
+    if len(sementes_povoamento)!=16 or len(areas_povoamento)!=8:
+        raise ValueError("Povoamento exploratório: oito áreas e dezesseis núcleos esperados")
     lore_crosswalk_index={k:defaultdict(set) for k in ("by_regiao","by_pergunta","by_entrada","by_parecer")}
     for link in lore_crosswalk:
         for kind,value in (("by_regiao",link["regiao_atlas_id"]),
@@ -550,6 +567,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "regional_population_proposals":"regional-population-proposals.json",
+        "regional_population_proposal_indexes":"regional-population-proposal-indexes.json",
         "hack_yokai_scribe_movements":"hack-yokai-scribe-movements.json",
         "hack_yokai_scribe_movement_indexes":"hack-yokai-scribe-movement-indexes.json",
         "hack_noble_movements":"hack-noble-movements.json",
@@ -648,6 +667,8 @@ def build():
         "total_movimentos_classe_integrais":len(integral_por_id),
         "total_grupos_classe_integrais":len({m["grupo"] for m in movimentos_classes}),
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
+        "total_areas_povoamento_propostas":len(areas_povoamento),
+        "total_nucleos_povoamento_propostos":len(sementes_povoamento),
         "total_movimentos_ladino_integrais":len(ladino_docx),
         "total_opcoes_ladino":sum(len(m["opcoes"]) for m in ladino_docx),
         "total_requer_ladino":sum(bool(m["requisito_literal"]) for m in ladino_docx),
@@ -735,6 +756,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["regional_population_proposals"]:povoamento_proposto,
+           files["regional_population_proposal_indexes"]:indices_povoamento,
            files["hack_yokai_scribe_movements"]:escriba_yokai_docx,
            files["hack_yokai_scribe_movement_indexes"]:indice_escriba_yokai_docx,
            files["hack_noble_movements"]:nobre_docx,

@@ -60,6 +60,24 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getRegionalPopulationProposals(){return byKey("regional_population_proposals");}
+  async function getRegionalPopulationProposalIndexes(){return byKey("regional_population_proposal_indexes");}
+  async function getRegionalPopulationProposal(id){
+    if(typeof id!=="string")return null;
+    const obj=await getRegionalPopulationProposals();
+    return obj.sementes.find(x=>x.id===id)??null;
+  }
+  async function searchRegionalPopulationProposals({areaId,regiaoAtlasId,tema,movimentoHack,query}={}){
+    const obj=await getRegionalPopulationProposals();
+    const areas=new Map(obj.areas.map(a=>[a.id,a]));
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return obj.sementes.filter(s=>
+      (!areaId||s.area_id===areaId)&&
+      (!regiaoAtlasId||areas.get(s.area_id)?.regiao_atlas_id===regiaoAtlasId)&&
+      (!tema||s.temas.includes(tema))&&
+      (!movimentoHack||s.movimentos_inspiradores.includes(movimentoHack))&&
+      (!query||norm([s.titulo,s.habitantes_propostos,s.personagem_central,s.vida_cotidiana,s.conflito_vivo,s.gancho_de_aventura].join(" ")).includes(norm(query))));
+  }
   async function getFinalClassMovements(key){
     return byKey(key);
   }
@@ -986,6 +1004,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getNobleMovements,getNobleMovementIndexes,searchNobleMovements,
           getArchaeologistMovements,getArchaeologistMovementIndexes,searchArchaeologistMovements,
           getFinalClassMovement,
+          getRegionalPopulationProposals,getRegionalPopulationProposalIndexes,
+          getRegionalPopulationProposal,searchRegionalPopulationProposals,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,

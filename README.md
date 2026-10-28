@@ -384,3 +384,12 @@ Restam nove movimentos distribuídos entre ESCRIBA YOKAI (3), NOBRE (3) e ARQUE�
 A transcrição integral dos **632 movimentos de classe, distribuídos por 18 grupos**, está publicada em catálogos legíveis, indexada e identificada por origem no manuscrito DOCX. Neste ciclo final entraram **Escriba Yokai (3)**, **Nobre (3)** e **Arqueólogo (3)**, sem opções ou REQUER literais. O índice global comprova os 632 IDs inventariados com texto integral disponível e nenhum movimento pendente.
 
 A conclusão é **documental**, não uma homologação de mecânicas: todos os novos movimentos mantêm `aplicacao_canonica:false`, como os movimentos de classe anteriores. O texto de CAMADAS contém uma aspa inicial isolada, preservada até revisão autoral. Consulte [Fechamento das Classes](docs/FECHAMENTO_CLASSES_HACK_DW.md).
+
+
+## Povoamento regional orientado pelo Hack (propostas narrativas)
+
+O Hack Carcaça Dungeon World agora fundamenta **16 núcleos sociais de povoamento em oito áreas**, conectados por três tramas transregionais. Cada núcleo contém habitantes, rotina, personagem central, conflito, escolha difícil e IDs exatos dos movimentos de povo/classe que inspiram sua criação.
+
+As propostas não substituem `curadoria/assentamentos`, `data/regioes_carcaca.json` nem fatos canônicos: quatro áreas usam regiões do atlas existentes; Garganta, Rio/Drakport, Thargrid/Ironwood e Shadar-Riverie permanecem como âncoras de lore sem criar IDs oficiais prematuros.
+
+Consulta: `getRegionalPopulationProposals()`, `searchRegionalPopulationProposals({areaId,regiaoAtlasId,tema,movimentoHack,query})`. Fontes: `data/propostas/povoamento-regional-hack-carcaca.json`; documentação: [Povoamento regional](docs/POVOAMENTO_REGIONAL_HACK.md).

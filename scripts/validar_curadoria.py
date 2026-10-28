@@ -2178,6 +2178,49 @@ def validar_fechamento_classes_integrais():
             "O caractere de abertura editorial de CAMADAS deve ser preservado até revisão autoral.")
     print("Fechamento documental: 9 movimentos, 0 opções, 0 REQUER; 18 grupos / 632 IDs inventariados.")
 
+
+def validar_povoamento_narrativo_hack():
+    """Impede que a proposta de povoamento pareça um evento ou lugar canônico."""
+    obj=load("data/propostas/povoamento-regional-hack-carcaca.json")
+    require(obj["estado"]=="propostas_editoriais_nao_canonicas","Povoamento não pode ser homologado automaticamente.")
+    areas=obj["areas"];seeds=obj["sementes"]
+    require(len(areas)==8 and len(seeds)==16,"Povoamento perdeu áreas ou núcleos.")
+    area_ids={a["id"] for a in areas}
+    require(len(area_ids)==len(areas),"Área de proposta repetida.")
+    known_regions={r["id"] for r in load("data/regioes_carcaca.json")["regioes"]}
+    for area in areas:
+        require(area["regiao_atlas_id"] is None or area["regiao_atlas_id"] in known_regions,
+                "Proposta referenciou região não cadastrada.")
+        require(area["cadastrada_como_regiao_oficial"]==bool(area["regiao_atlas_id"]),
+                "Proposta declarou região oficial inexistente.")
+    inventory=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")["movimentos"]
+    people=load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]
+    move_ids={m["id"] for m in inventory}|{m["id"] for m in people}
+    ids=set();counts={a["id"]:0 for a in areas}
+    for s in seeds:
+        require(s["id"] not in ids and s["area_id"] in area_ids,
+                "Núcleo duplicado ou com área desconhecida.")
+        ids.add(s["id"]);counts[s["area_id"]]+=1
+        require(s["estado"]=="proposta_de_povoamento" and s["aprovacao_autoral"] is False
+                and s["efeito_automatico_no_canon"] is False,
+                "Ficção proposta não deve alterar o cânone.")
+        require(2<=len(s["movimentos_inspiradores"])<=4
+                and all(m in move_ids for m in s["movimentos_inspiradores"]),
+                "Movimentos inspiradores sem vínculo com Hack.")
+        for k in ("titulo","local_proposto","habitantes_propostos","personagem_central",
+                  "vida_cotidiana","conflito_vivo","gancho_de_aventura",
+                  "decisao_sem_resposta_certa","ancora_documentada"):
+            require(isinstance(s[k],str) and len(s[k].strip())>=20,
+                    "Proposta tem lacuna narrativa em "+k)
+        require(s["temas"] and s["possivel_conexao"]
+                and all(other!=s["area_id"].split(":")[-1]
+                        for other in s["possivel_conexao"]),
+                "Conexões temáticas do povoamento inválidas.")
+    require(all(v==2 for v in counts.values()),"Cada área deve conter dois núcleos.")
+    require(len(obj["tramas"])==3 and all(not x.get("efeito_automatico_no_canon",False)
+            for x in obj["tramas"]),"Tramas cruzadas não podem ser forçadas.")
+    print("Povoamento narrativo: 8 áreas, 16 núcleos, 3 tramas e referências Hack conferidas; sem promover cânone.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2290,6 +2333,7 @@ def main():
     validar_artifice_integral()
     validar_mercenario_integral()
     validar_fechamento_classes_integrais()
+    validar_povoamento_narrativo_hack()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
