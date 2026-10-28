@@ -2512,7 +2512,7 @@ test("Ciclo XVIII: Ironwood pertence à história civil sem receber governo ou g
  assert.equal((await atlas.searchIronwoodCivilSociety({eixoId:"worldbuilding-xviii:eixo:infancia"})).length,4);
  assert.equal((await atlas.searchIronwoodCivilSociety({modeloId:"worldbuilding-xviii:modelo:comando-consultivo"})).length,2);
  assert.equal((await atlas.searchIronwoodCivilSociety({pagina:18})).length,2);
- assert.equal((await atlas.searchIronwoodCivilSociety({query:"CRIANÇA"})).length,2);
+ assert.equal((await atlas.searchIronwoodCivilSociety({query:"CRIANÇA"})).length,3);
  assert.equal((await atlas.getIronwoodCivilSocietyEntry("worldbuilding-xviii:modelo:comando-consultivo")).instituicao_confirmada,false);
  assert.equal((await atlas.getIronwoodCivilSocietyEntry("worldbuilding-xviii:relacao:thargrid")).tratado_assinado,false);
  assert.equal((await atlas.getIronwoodCivilSocietyEntry("worldbuilding-xviii:vinheta:trilha")).ocorreu,false);
