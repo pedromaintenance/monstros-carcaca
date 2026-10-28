@@ -2131,6 +2131,9 @@ test("Caatinga aprofunda rede social proposta sem promover cânone",async()=>{
   assert.equal(net.efeito_automatico_no_canon,false);
   assert.equal((await atlas.getCaatingaSocialIndexes()).by_tipo.comunidades.length,2);
   assert.equal((await atlas.searchCaatingaEntities({tipo:"comunidades"})).length,2);
+  assert.equal((await atlas.searchCaatingaEntities({tipo:"coletivos"})).length,1);
+  assert.equal((await atlas.searchCaatingaEntities({tipo:"coletivos"}))[0].subtipo_social,"cla_orc");
+  assert.equal((await atlas.getCaatingaEntity("caatinga:coletivo:esteira-rachada")).tipo,"coletivos");
   assert.equal((await atlas.searchCaatingaEntities({tema:"agua",tipo:"pontos_agua"})).length,1);
   assert.equal((await atlas.searchCaatingaEntities({
     movimentoHack:"movimento-povo:paragrafo-834",tipo:"comunidades"})).length,1);

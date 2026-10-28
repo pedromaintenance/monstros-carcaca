@@ -67,7 +67,7 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
     const obj=await getCaatingaSocialNetwork();
     for(const kind of ["comunidades","coletivos","pessoas","pontos_agua","rotas","conflitos","cenas"]){
       const entity=obj[kind].find(x=>x.id===id);
-      if(entity)return {tipo:kind,...entity};
+      if(entity)return {...entity,tipo:kind,subtipo_social:entity.tipo??null};
     }
     return null;
   }
@@ -75,7 +75,7 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
     const obj=await getCaatingaSocialNetwork();
     const kinds=["comunidades","coletivos","pessoas","pontos_agua","rotas","conflitos","cenas"];
     const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
-    const flat=kinds.flatMap(k=>obj[k].map(x=>({tipo:k,...x})));
+    const flat=kinds.flatMap(k=>obj[k].map(x=>({...x,tipo:k,subtipo_social:x.tipo??null})));
     return flat.filter(e=>
       (!tipo||e.tipo===tipo)&&
       (!tema||(e.tags??[]).includes(tema))&&

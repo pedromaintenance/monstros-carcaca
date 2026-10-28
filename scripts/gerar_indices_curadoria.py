@@ -248,7 +248,7 @@ def build():
     povoamento_proposto=load("data/propostas/povoamento-regional-hack-carcaca.json")
     caatinga_rede_social=load("data/propostas/caatinga-rede-social-hack.json")
     caatinga_entidades=[
-        {"tipo":tipo,**elemento}
+        {**elemento,"tipo":tipo,"subtipo_social":elemento.get("tipo")}
         for tipo in ("comunidades","coletivos","pessoas","pontos_agua","rotas","conflitos","cenas")
         for elemento in caatinga_rede_social[tipo]
     ]
@@ -266,6 +266,8 @@ def build():
       "by_movimento_hack":indexar_rede_caat("movimentos_inspiradores"),
       "by_comunidade":indexar_rede_caat("comunidade_id")
     }
+    if len(caatinga_rede_indices["by_tipo"])!=7:
+        raise ValueError("Índice da Caatinga deve preservar sete categorias, mesmo quando um coletivo possui subtipo")
     sementes_povoamento=povoamento_proposto["sementes"]
     areas_povoamento=povoamento_proposto["areas"]
     def index_povoamento(rows,key):
