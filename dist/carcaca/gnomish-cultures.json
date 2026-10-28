@@ -1,0 +1,684 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XXI — Gnomos da Carcaça: trabalho, nomes, saber e autonomia",
+  "estado": "expansao_sociohistorica_proposta",
+  "aprovacao_autoral": false,
+  "aplicar_ao_canon_automaticamente": false,
+  "povo": "Gnomos da Carcaça",
+  "geografia_geopolitica": "Povo disperso por núcleos de superfície, florestas e profundezas, sem governo étnico universal.",
+  "capital_gnomica_confirmada": null,
+  "governo_comum_confirmado": null,
+  "populacao_total_confirmada": null,
+  "localizacao_de_enclave_especifico_confirmada": null,
+  "fonte_manuscrito": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "fatos_documentados": [
+    {
+      "id": "worldbuilding-xxi:fato:01",
+      "pagina": 19,
+      "afirmacao_de_fonte": "Gnomos são antigos, longevos e dispersos; não constituem necessariamente um reino, uma capital ou uma causa política comum.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:02",
+      "pagina": 19,
+      "afirmacao_de_fonte": "Comunidades, bairros urbanos, oficinas familiares e enclaves ocultos são formas de habitação citadas.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:03",
+      "pagina": 19,
+      "afirmacao_de_fonte": "Shadar-Riverie inclui gnomos em sua convivência política e comercial; artesanato e cartografia são ofícios recorrentes.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:04",
+      "pagina": 19,
+      "afirmacao_de_fonte": "A cartografia, arqueologia, engenharia e preservação de conhecimento gnômicas interessam à Carcaça formada sobre Golzdov.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:05",
+      "pagina": 20,
+      "afirmacao_de_fonte": "Cartografia gnômica pode registrar tempo, estado de caminhos, circulação e relações locais, além da posição geográfica.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:06",
+      "pagina": 20,
+      "afirmacao_de_fonte": "Gnomos das Rochas aparecem em cidades e centros de comércio, inclusive entre artesãos de Thargrid, Shadar-Riverie e cidades do Rio Ancestral.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:07",
+      "pagina": 20,
+      "afirmacao_de_fonte": "Oficinas gnômicas produzem ferramentas, óptica, próteses, fechaduras, mecanismos, equipamentos de escavação e objetos mágicos pequenos.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:08",
+      "pagina": 20,
+      "afirmacao_de_fonte": "Gnomos da Floresta vivem em comunidades discretas, especialmente na região de Ironwood, bordas menos corrompidas de Eldroth e bosques afastados.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:09",
+      "pagina": 20,
+      "afirmacao_de_fonte": "Comunidades florestais podem ocultar caminhos e assentamentos usando vegetação, arquitetura e ilusões, e algumas colaboram com rangers.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:10",
+      "pagina": 20,
+      "afirmacao_de_fonte": "Svirfneblin ocupam enclaves subterrâneos, incluindo partes profundas de Thargrid e sistemas sob os ossos fossilizados de Golzdov.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:11",
+      "pagina": 20,
+      "afirmacao_de_fonte": "Alguns enclaves svirfneblin pactuam trocas com clãs anões; outros permanecem independentes; mapas profundos são raros.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:12",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Gnomos podem ter múltiplos nomes recebidos de pais, familiares, anciãos e amigos; há interesse pelos registros Yokai.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:13",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Gnomos não possuem uma grande capital, fronteira clara ou causa política única em toda a Carcaça.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxi:fato:14",
+      "pagina": 23,
+      "afirmacao_de_fonte": "Garl Glittergold possui presença religiosa entre gnomos; seus cultos se associam a ardil, jogos, invenção e irreverência ao poder.",
+      "estatuto": "manuscrito_autoral_em_revisao",
+      "novo_canon": false
+    }
+  ],
+  "limites": [
+    "Gnomos não constituem uma entidade política homogênea: não criar reino, capital ou monarca comum.",
+    "As três tradições descrevem contextos de vida, não castas, determinismo biológico ou destinos profissionais universais.",
+    "As oficinas e os mercados documentados não provam guildas, patentes, currículos ou regulamentos profissionais de âmbito continental.",
+    "Gnomos florestais podem cooperar com rangers sem se tornar súditos de Elara ou moradores de Ironwood por definição.",
+    "Nenhuma comunidade ou passagem escondida foi localizada; não inventar mapa, rota, mina ou aldeia geocodificável.",
+    "Os enclaves svirfneblin não são todos vassalos de Thargrid; apenas alguns pactos com anões são documentados, sem cláusulas nem datas.",
+    "A presença de Garl Glittergold não prova religião única, calendário ritual, templo ou prática obrigatória.",
+    "Múltiplos nomes não estabelecem lei de identidade nem efeito mágico necessário.",
+    "O interesse pelos Yokai não comprova posse de relíquias, roubo, exploração ou projetos arqueológicos concretos.",
+    "Redes comerciais propostas não são contratos assinados e não possuem preços ou volumes conhecidos.",
+    "Costumes e vinhetas não são acontecimentos, nem trazem personagens ou locais canônicos novos.",
+    "O arquivo não altera as sete criaturas nem sistemas de Dungeon World, nem a fila de revisão do Ciclo XIX."
+  ],
+  "contagens": {
+    "fatos_documentados": 14,
+    "tradicoes": 3,
+    "eixos_sociais": 12,
+    "eticas_do_conhecimento": 6,
+    "redes_de_troca": 5,
+    "conflitos_internos": 5,
+    "costumes_possiveis": 4,
+    "vinhetas": 4,
+    "decisoes_para_autor": 9
+  },
+  "tradicoes": [
+    {
+      "id": "worldbuilding-xxi:tradicao:rochas",
+      "nome": "Gnomos das Rochas",
+      "ambiente_documentado": "cidades, oficinas e centros de comércio",
+      "contexto_do_manuscrito": "Associação frequente aos ofícios urbanos, ferramentas e artefatos, inclusive em Thargrid, Shadar-Riverie e núcleos do Rio Ancestral.",
+      "dilema_cultural": "A possibilidade de desmontar uma ideia e recriá-la pode produzir cooperação, mas também conflitos de autoria e trabalho.",
+      "limite_de_extrapolacao": "Não declarar que todos são inventores, profissionais urbanos, proprietários de oficina ou apoiadores da Corte.",
+      "estatuto": "perfil_cultural_interpretativo_nao_homologado",
+      "fonte_paginas": [
+        20
+      ],
+      "governo_unificado_confirmado": false,
+      "populacao_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xxi:tradicao:florestas",
+      "nome": "Gnomos da Floresta",
+      "ambiente_documentado": "bosques e comunidades deliberadamente discretas",
+      "contexto_do_manuscrito": "Comunidades pequenas entre Ironwood, bordas menos corrompidas de Eldroth e bosques distantes, associadas a ilusões, vegetação e pequenos animais.",
+      "dilema_cultural": "Esconder o assentamento pode protegê-lo, mas restringe a hospitalidade e a circulação de crianças, parentes e conhecimento.",
+      "limite_de_extrapolacao": "Não mapear uma vila, estabelecer cidadania em Ironwood nem forçar seus moradores a colaborar com rangers.",
+      "estatuto": "perfil_cultural_interpretativo_nao_homologado",
+      "fonte_paginas": [
+        20
+      ],
+      "governo_unificado_confirmado": false,
+      "populacao_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xxi:tradicao:profundezas",
+      "nome": "Gnomos das Profundezas — Svirfneblin",
+      "ambiente_documentado": "enclaves subterrâneos e ossatura de Golzdov",
+      "contexto_do_manuscrito": "Enclaves profundos de Thargrid e sistemas subterrâneos; alguns mantêm pactos antigos com clãs anões, outros querem independência.",
+      "dilema_cultural": "Conhecimento geológico e proteção de passagens podem ser recursos políticos, mas o segredo não equivale a submissão.",
+      "limite_de_extrapolacao": "Não inventar mina, rota subterrânea, tratado universal, reino svirfneblin nem localizar uma passagem exata.",
+      "estatuto": "perfil_cultural_interpretativo_nao_homologado",
+      "fonte_paginas": [
+        20
+      ],
+      "governo_unificado_confirmado": false,
+      "populacao_confirmada": null
+    }
+  ],
+  "eixos_sociais": [
+    {
+      "id": "worldbuilding-xxi:eixo:rochas:aprendizado",
+      "tradicao_id": "worldbuilding-xxi:tradicao:rochas",
+      "nome_editorial": "Aprender a desmontar",
+      "hipotese_cultural": "A oficina como lugar de transmissão prática e contestação de procedimentos: a precisão pode ser uma ética, não apenas destreza.",
+      "pergunta_politica": "Quem pode alterar uma criação recebida de outra geração sem ser acusado de desrespeito?",
+      "detalhe_cotidiano_hipotetico": "Uma aprendiz desmonta um mecanismo antigo para explicar por que ele falha; o antigo dono discorda.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxi:eixo:rochas:autoria",
+      "tradicao_id": "worldbuilding-xxi:tradicao:rochas",
+      "nome_editorial": "A assinatura na engrenagem",
+      "hipotese_cultural": "Atribuir mérito pode ser tão complexo quanto construir: peças, materiais e desenho dependem de várias pessoas.",
+      "pergunta_politica": "Quem recebe o prestígio quando muitos trabalharam e só um nome aparece na peça final?",
+      "detalhe_cotidiano_hipotetico": "O acabamento de uma fechadura denuncia a mão invisível de quem a ajustou.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxi:eixo:rochas:risco",
+      "tradicao_id": "worldbuilding-xxi:tradicao:rochas",
+      "nome_editorial": "O erro que afeta a rua",
+      "hipotese_cultural": "O fracasso de uma invenção pode repercutir sobre vizinhos, aprendizes e clientes, não apenas sobre o inventor.",
+      "pergunta_politica": "Quem custeia reparar um objeto experimental que foi vendido como confiável?",
+      "detalhe_cotidiano_hipotetico": "Um dispositivo de medir água falha e uma família perde mercadorias.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxi:eixo:rochas:familia",
+      "tradicao_id": "worldbuilding-xxi:tradicao:rochas",
+      "nome_editorial": "Família não é patente",
+      "hipotese_cultural": "Parentesco pode preservar técnicas e afetos, mas também limitar a liberdade de escolher ofícios e destinos.",
+      "pergunta_politica": "Uma filha de fabricantes de lentes pode preferir cuidar de plantas?",
+      "detalhe_cotidiano_hipotetico": "A mesa de jantar se transforma em debate sobre profissão.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxi:eixo:florestas:moradia",
+      "tradicao_id": "worldbuilding-xxi:tradicao:florestas",
+      "nome_editorial": "Casa que não aparece",
+      "hipotese_cultural": "Ocultação do assentamento é uma capacidade descrita; pode influenciar arquitetura, hospitalidade e o que se mostra a desconhecidos.",
+      "pergunta_politica": "Quem escolhe quando um visitante é convidado e quem tem direito de saber onde ficam crianças e idosos?",
+      "detalhe_cotidiano_hipotetico": "A entrada de uma casa parece um tronco a quem não foi convidado.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxi:eixo:florestas:educacao",
+      "tradicao_id": "worldbuilding-xxi:tradicao:florestas",
+      "nome_editorial": "Aprender a perceber",
+      "hipotese_cultural": "Trilhas, plantas, ilusões e pequenos animais podem oferecer modos de ensino social sem assumir escola uniforme.",
+      "pergunta_politica": "Uma criança pode aprender a esconder sua casa e ainda escolher viver fora dela?",
+      "detalhe_cotidiano_hipotetico": "Uma pessoa percebe que a melhor forma de orientar alguém é ensinar o que não observar.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxi:eixo:florestas:reciprocidade",
+      "tradicao_id": "worldbuilding-xxi:tradicao:florestas",
+      "nome_editorial": "O segredo que não se dá de presente",
+      "hipotese_cultural": "Um mapa ou ilusão pode proteger vários povos e também expor a comunidade que o conhece.",
+      "pergunta_politica": "Como colaborar com rangers sem transformar conhecimento em tributo obrigatório?",
+      "detalhe_cotidiano_hipotetico": "Um mapa parcialmente apagado é oferecido como auxílio suficiente.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxi:eixo:florestas:ecologia",
+      "tradicao_id": "worldbuilding-xxi:tradicao:florestas",
+      "nome_editorial": "Vizinho de penas e raízes",
+      "hipotese_cultural": "O vínculo com animais e vegetação pode significar observação, respeito e limites éticos, não domínio completo da fauna.",
+      "pergunta_politica": "É legítimo pedir a um animal que vigie uma casa quando isso o coloca em perigo?",
+      "detalhe_cotidiano_hipotetico": "Uma pessoa abandona uma tarefa para soltar um pássaro assustado.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxi:eixo:profundezas:trabalho",
+      "tradicao_id": "worldbuilding-xxi:tradicao:profundezas",
+      "nome_editorial": "Extrair sem destruir o abrigo",
+      "hipotese_cultural": "A mineração subterrânea também pode ameaçar habitação, circulação de ar e infraestrutura comunitária.",
+      "pergunta_politica": "Quem pode suspender uma escavação lucrativa que põe em risco as casas de outros?",
+      "detalhe_cotidiano_hipotetico": "Uma pedra preciosa permanece na parede porque removê-la enfraqueceria a passagem.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxi:eixo:profundezas:mapas",
+      "tradicao_id": "worldbuilding-xxi:tradicao:profundezas",
+      "nome_editorial": "A profundidade não cabe no papel",
+      "hipotese_cultural": "A fonte indica mapas raros e conhecimento de galerias. Sua circulação pode ser negociada, recusada ou limitada.",
+      "pergunta_politica": "Quem controla cópias de um mapa que revela acesso a assentamentos vulneráveis?",
+      "detalhe_cotidiano_hipotetico": "Duas pessoas discutem quanto de um mapa deve ser apagado antes de vendê-lo.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxi:eixo:profundezas:autonomia",
+      "tradicao_id": "worldbuilding-xxi:tradicao:profundezas",
+      "nome_editorial": "Ajuda sem tutela",
+      "hipotese_cultural": "Pactos com anões são documentados para alguns enclaves; a relação pode ser assimétrica sem anular a autonomia svirfneblin.",
+      "pergunta_politica": "A troca de alimento por gemas pode criar dependência política?",
+      "detalhe_cotidiano_hipotetico": "Uma pessoa devolve uma ferramenta emprestada antes de discutir novas condições de troca.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxi:eixo:profundezas:memoria",
+      "tradicao_id": "worldbuilding-xxi:tradicao:profundezas",
+      "nome_editorial": "O que deve permanecer soterrado",
+      "hipotese_cultural": "Conhecimento de ruínas e estruturas antigas pode ser tratado como objeto de estudo, perigo e responsabilidade intergeracional.",
+      "pergunta_politica": "Uma descoberta perigosa pertence ao descobridor, ao enclave ou a todos que podem sofrer com ela?",
+      "detalhe_cotidiano_hipotetico": "Uma inscrição antiga é coberta de novo depois de ser copiada apenas parcialmente.",
+      "estado": "eixo_social_proposto",
+      "localidade_especifica_documentada": false,
+      "norma_em_vigor": false,
+      "ocorreu": false
+    }
+  ],
+  "eticas_do_conhecimento": [
+    {
+      "id": "worldbuilding-xxi:etica:mapa-duplo",
+      "nome_editorial": "Cartografia de camadas",
+      "hipotese_de_conhecimento": "Um mapa pode registrar terreno, duração, memória e relações sociais; ocultar uma camada talvez seja tão importante quanto desenhá-la.",
+      "dilema_de_responsabilidade": "Que informação pode ser publicada sem consentimento das comunidades representadas?",
+      "fonte_paginas": [
+        19,
+        20
+      ],
+      "estado": "etica_hipotetica_nao_codificada",
+      "instituicao_cientifica_confirmada": false,
+      "direito_codificado_confirmado": false
+    },
+    {
+      "id": "worldbuilding-xxi:etica:nome-multiplo",
+      "nome_editorial": "Nomes que pertencem a relações",
+      "hipotese_de_conhecimento": "O manuscrito descreve vários nomes, inclusive dados por familiares e amigos; cada nome pode guardar uma relação, não um título legal.",
+      "dilema_de_responsabilidade": "Quem decide qual nome pode ser revelado a um estranho ou inscrito num documento?",
+      "fonte_paginas": [
+        20,
+        21
+      ],
+      "estado": "etica_hipotetica_nao_codificada",
+      "instituicao_cientifica_confirmada": false,
+      "direito_codificado_confirmado": false
+    },
+    {
+      "id": "worldbuilding-xxi:etica:autoria-compartilhada",
+      "nome_editorial": "A ideia não é de um só",
+      "hipotese_de_conhecimento": "Desmontar, discutir e reconstruir soluções pode criar redes de conhecimento abertas sem suprimir autoria de aprendizes.",
+      "dilema_de_responsabilidade": "Como reconhecer contribuições sem fundar guilda ou patente universal?",
+      "fonte_paginas": [
+        20
+      ],
+      "estado": "etica_hipotetica_nao_codificada",
+      "instituicao_cientifica_confirmada": false,
+      "direito_codificado_confirmado": false
+    },
+    {
+      "id": "worldbuilding-xxi:etica:registros-yokai",
+      "nome_editorial": "O passado escrito por outros",
+      "hipotese_de_conhecimento": "O interesse gnômico por registros Yokai é documentado. Estudar um arquivo alheio traz dilemas de tradução, posse e restituição.",
+      "dilema_de_responsabilidade": "É legítimo retirar um objeto para estudá-lo sem consentimento de seus guardiões?",
+      "fonte_paginas": [
+        21
+      ],
+      "estado": "etica_hipotetica_nao_codificada",
+      "instituicao_cientifica_confirmada": false,
+      "direito_codificado_confirmado": false
+    },
+    {
+      "id": "worldbuilding-xxi:etica:segredo-protetor",
+      "nome_editorial": "Não ensinar também é uma escolha",
+      "hipotese_de_conhecimento": "Um detalhe técnico pode permitir proteger uma vila ou localizá-la e violentá-la.",
+      "dilema_de_responsabilidade": "Quando o direito de guardar conhecimento vence a curiosidade de um pesquisador?",
+      "fonte_paginas": [
+        20,
+        21
+      ],
+      "estado": "etica_hipotetica_nao_codificada",
+      "instituicao_cientifica_confirmada": false,
+      "direito_codificado_confirmado": false
+    },
+    {
+      "id": "worldbuilding-xxi:etica:erro-e-correção",
+      "nome_editorial": "Um método para admitir erro",
+      "hipotese_de_conhecimento": "Uma cultura que investiga e constrói pode valorizar replicação, demonstração e confissão de falhas, mas não se comprova protocolo científico institucional.",
+      "dilema_de_responsabilidade": "Quem tem a responsabilidade de corrigir uma informação que todos passaram a copiar?",
+      "fonte_paginas": [
+        19,
+        20
+      ],
+      "estado": "etica_hipotetica_nao_codificada",
+      "instituicao_cientifica_confirmada": false,
+      "direito_codificado_confirmado": false
+    }
+  ],
+  "redes_de_troca": [
+    {
+      "id": "worldbuilding-xxi:troca:oficinas-e-minerios",
+      "nome_editorial": "Oficinas de superfície e minerais profundos",
+      "tradicoes_relacionadas": [
+        "worldbuilding-xxi:tradicao:rochas",
+        "worldbuilding-xxi:tradicao:profundezas"
+      ],
+      "condicao_hipotetica": "A técnica de superfície pode exigir materiais cuja extração conhece riscos que o comprador nunca vê.",
+      "pergunta_etica": "A negociação deve poder recusar material obtido com risco inaceitável.",
+      "limite": "Sem afirmar rota, cliente ou contrato concreto.",
+      "relacao_concreta_confirmada": false,
+      "volume_comercial_confirmado": null,
+      "acordo_novo_assinado": false,
+      "estado": "rede_cultural_para_explorar"
+    },
+    {
+      "id": "worldbuilding-xxi:troca:mapas-e-comunidades",
+      "nome_editorial": "Cartógrafos e comunidades escondidas",
+      "tradicoes_relacionadas": [
+        "worldbuilding-xxi:tradicao:rochas",
+        "worldbuilding-xxi:tradicao:florestas"
+      ],
+      "condicao_hipotetica": "A precisão de um mapa pode ser desastrosa para quem depende de não aparecer nele.",
+      "pergunta_etica": "É possível produzir cartografia útil sem revelar uma aldeia?",
+      "limite": "Sem publicar coordenadas e esconderijos.",
+      "relacao_concreta_confirmada": false,
+      "volume_comercial_confirmado": null,
+      "acordo_novo_assinado": false,
+      "estado": "rede_cultural_para_explorar"
+    },
+    {
+      "id": "worldbuilding-xxi:troca:thargrid-e-enclaves",
+      "nome_editorial": "Anões de Thargrid e Svirfneblin",
+      "tradicoes_relacionadas": [
+        "worldbuilding-xxi:tradicao:profundezas",
+        "worldbuilding-xxi:tradicao:rochas"
+      ],
+      "condicao_hipotetica": "Alguns pactos antigos são documentados com anões: trocam gemas e informações por bens ou proteção.",
+      "pergunta_etica": "Como evitar que relações de segurança se convertam em dependência hereditária?",
+      "limite": "Não generalizar tratado a todos enclaves nem confundir anões com gnomos das rochas.",
+      "relacao_concreta_confirmada": false,
+      "volume_comercial_confirmado": null,
+      "acordo_novo_assinado": false,
+      "estado": "rede_cultural_para_explorar"
+    },
+    {
+      "id": "worldbuilding-xxi:troca:ironwood-e-vizinhos",
+      "nome_editorial": "Gnomos florestais e vizinhos élficos",
+      "tradicoes_relacionadas": [
+        "worldbuilding-xxi:tradicao:florestas",
+        "worldbuilding-xxi:tradicao:rochas"
+      ],
+      "condicao_hipotetica": "O manuscrito registra gnomos florestais aliados de rangers e comunidades feéricas independentes.",
+      "pergunta_etica": "Quem controla conhecimento de trilhas e limites de hospitalidade?",
+      "limite": "Sem inserir comando ranger sobre aldeias gnômicas.",
+      "relacao_concreta_confirmada": false,
+      "volume_comercial_confirmado": null,
+      "acordo_novo_assinado": false,
+      "estado": "rede_cultural_para_explorar"
+    },
+    {
+      "id": "worldbuilding-xxi:troca:arquivo-e-mercado",
+      "nome_editorial": "Arquivo antigo e comércio de cópias",
+      "tradicoes_relacionadas": [
+        "worldbuilding-xxi:tradicao:rochas",
+        "worldbuilding-xxi:tradicao:profundezas"
+      ],
+      "condicao_hipotetica": "Um registro de origem antiga pode ter valor acadêmico, religioso, material e comercial ao mesmo tempo.",
+      "pergunta_etica": "Cópias de registros Yokai podem circular sem apagar sua procedência?",
+      "limite": "Não declarar comércio já existente de artefatos roubados.",
+      "relacao_concreta_confirmada": false,
+      "volume_comercial_confirmado": null,
+      "acordo_novo_assinado": false,
+      "estado": "rede_cultural_para_explorar"
+    }
+  ],
+  "conflitos_internos": [
+    {
+      "id": "worldbuilding-xxi:conflito:prestigio-oficina",
+      "nome_editorial": "Quem ganhou o crédito?",
+      "tradicao_id": "worldbuilding-xxi:tradicao:rochas",
+      "situacao_condicional": "Dois colaboradores discordam sobre a autoria de um artefato.",
+      "pergunta_etica": "O trabalho invisível merece a mesma recompensa da ideia inicial?",
+      "aconteceu": false,
+      "estado": "conflito_hipotetico",
+      "desfecho_aprovado": false
+    },
+    {
+      "id": "worldbuilding-xxi:conflito:estrangeiro-convidado",
+      "nome_editorial": "A porta que não pode ser desenhada",
+      "tradicao_id": "worldbuilding-xxi:tradicao:florestas",
+      "situacao_condicional": "Alguém acolhido deseja contar a parentes onde mora a comunidade.",
+      "pergunta_etica": "Quando hospitalidade se torna exposição indevida de pessoas que não consentiram?",
+      "aconteceu": false,
+      "estado": "conflito_hipotetico",
+      "desfecho_aprovado": false
+    },
+    {
+      "id": "worldbuilding-xxi:conflito:profundezas-inundadas",
+      "nome_editorial": "A pedra contra a casa",
+      "tradicao_id": "worldbuilding-xxi:tradicao:profundezas",
+      "situacao_condicional": "Uma escavação poderia ameaçar abrigo e passagem usados por outras famílias.",
+      "pergunta_etica": "Qual prioridade tem a segurança quando a descoberta é valiosa?",
+      "aconteceu": false,
+      "estado": "conflito_hipotetico",
+      "desfecho_aprovado": false
+    },
+    {
+      "id": "worldbuilding-xxi:conflito:nome-publico",
+      "nome_editorial": "Qual dos nomes é o verdadeiro?",
+      "tradicao_id": "worldbuilding-xxi:tradicao:rochas",
+      "situacao_condicional": "Um registro usa um dos muitos nomes de alguém e desagrada sua família.",
+      "pergunta_etica": "Uma pessoa deve controlar como será identificada em documentos alheios?",
+      "aconteceu": false,
+      "estado": "conflito_hipotetico",
+      "desfecho_aprovado": false
+    },
+    {
+      "id": "worldbuilding-xxi:conflito:pesquisa-vs-refugio",
+      "nome_editorial": "Ciência que revela o escondido",
+      "tradicao_id": "worldbuilding-xxi:tradicao:florestas",
+      "situacao_condicional": "O estudo de um enclave poderia expor sua posição a exploradores ou invasores.",
+      "pergunta_etica": "Até onde a curiosidade pode exigir que outros assumam riscos?",
+      "aconteceu": false,
+      "estado": "conflito_hipotetico",
+      "desfecho_aprovado": false
+    }
+  ],
+  "costumes_possiveis": [
+    {
+      "id": "worldbuilding-xxi:costume:reparar-em-publico",
+      "nome_editorial": "O dia em que se mostra o erro",
+      "tradicao_id": "worldbuilding-xxi:tradicao:rochas",
+      "pratica_possivel": "Uma reunião possível em que alguém demonstra o que aprendeu de uma falha.",
+      "risco_social": "Pode se tornar humilhação quando uma hierarquia escolhe quem é ridicularizado.",
+      "existe_historicamente": false,
+      "calendario_oficial": false,
+      "ritual_confirmado": false,
+      "estado": "costume_candidato_nao_adotado"
+    },
+    {
+      "id": "worldbuilding-xxi:costume:primeiro-nome",
+      "nome_editorial": "O nome que não se explica",
+      "tradicao_id": "worldbuilding-xxi:tradicao:florestas",
+      "pratica_possivel": "Uma conversa familiar possível sobre quais apelidos e nomes podem circular fora do lar.",
+      "risco_social": "Pode ser confundido com lei de segredo e controle sobre crianças.",
+      "existe_historicamente": false,
+      "calendario_oficial": false,
+      "ritual_confirmado": false,
+      "estado": "costume_candidato_nao_adotado"
+    },
+    {
+      "id": "worldbuilding-xxi:costume:sala-de-ecos",
+      "nome_editorial": "Escutar o que a pedra guardou",
+      "tradicao_id": "worldbuilding-xxi:tradicao:profundezas",
+      "pratica_possivel": "Uma visita possível a um espaço de memória para lembrar caminhos que não se percorrem.",
+      "risco_social": "Pode tornar um local importante acessível apenas a quem detém autoridade técnica.",
+      "existe_historicamente": false,
+      "calendario_oficial": false,
+      "ritual_confirmado": false,
+      "estado": "costume_candidato_nao_adotado"
+    },
+    {
+      "id": "worldbuilding-xxi:costume:jogo-do-ardil",
+      "nome_editorial": "Rir do poderoso",
+      "tradicao_id": "worldbuilding-xxi:tradicao:rochas",
+      "pratica_possivel": "Uma brincadeira possível ligada à imagem de Garl Glittergold e ao direito de zombar do poder.",
+      "risco_social": "Não é rito oficial do culto nem implica que todo gnomo seja trapaceiro.",
+      "existe_historicamente": false,
+      "calendario_oficial": false,
+      "ritual_confirmado": false,
+      "estado": "costume_candidato_nao_adotado"
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "worldbuilding-xxi:vinheta:a-lente",
+      "nome_editorial": "A lente que ninguém terminou",
+      "tradicao_id": "worldbuilding-xxi:tradicao:rochas",
+      "cena_condicional": "Uma lente é elogiada como obra de uma só pessoa; três aprendizes conhecem todas as correções feitas em segredo.",
+      "tema": "A invenção é trabalho coletivo mesmo quando possui assinatura.",
+      "ocorreu": false,
+      "localidade_inventada": false,
+      "personagem_canonico_introduzido": false,
+      "estado": "vinheta_literaria_nao_ocorrida"
+    },
+    {
+      "id": "worldbuilding-xxi:vinheta:o-caminho",
+      "nome_editorial": "O mapa que termina em branco",
+      "tradicao_id": "worldbuilding-xxi:tradicao:florestas",
+      "cena_condicional": "Um viajante recebe um mapa preciso até certo ponto e, depois, uma folha deliberadamente vazia.",
+      "tema": "Informação suficiente não é informação total.",
+      "ocorreu": false,
+      "localidade_inventada": false,
+      "personagem_canonico_introduzido": false,
+      "estado": "vinheta_literaria_nao_ocorrida"
+    },
+    {
+      "id": "worldbuilding-xxi:vinheta:a-pedra",
+      "nome_editorial": "O mineral que ninguém extraiu",
+      "tradicao_id": "worldbuilding-xxi:tradicao:profundezas",
+      "cena_condicional": "Uma gema rara permanece na rocha porque tirá-la alteraria a sustentação de um lar.",
+      "tema": "Recusar a riqueza também pode ser conhecimento técnico.",
+      "ocorreu": false,
+      "localidade_inventada": false,
+      "personagem_canonico_introduzido": false,
+      "estado": "vinheta_literaria_nao_ocorrida"
+    },
+    {
+      "id": "worldbuilding-xxi:vinheta:os-tres-nomes",
+      "nome_editorial": "Três nomes para a mesma pessoa",
+      "tradicao_id": "worldbuilding-xxi:tradicao:rochas",
+      "cena_condicional": "Uma gnoma é chamada por nomes diferentes no comércio, em família e na vizinhança; todos os nomes são seus.",
+      "tema": "Identidade é também relação e consentimento.",
+      "ocorreu": false,
+      "localidade_inventada": false,
+      "personagem_canonico_introduzido": false,
+      "estado": "vinheta_literaria_nao_ocorrida"
+    }
+  ],
+  "decisoes_para_autor": [
+    {
+      "id": "worldbuilding-xxi:decisao:dispersao",
+      "pergunta_autoral": "Como diferentes comunidades gnômicas percebem pertencer a um povo sem reino ou capital única?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxi:decisao:superficie",
+      "pergunta_autoral": "Que redes de trabalho, moradia e aprendizado os gnomos das rochas mantêm fora dos grandes centros?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxi:decisao:floresta",
+      "pergunta_autoral": "Quem decide compartilhar a localização de um povoado florestal e como se preserva a autonomia de seus habitantes?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxi:decisao:subterraneo",
+      "pergunta_autoral": "Quais são os limites políticos dos pactos entre enclaves svirfneblin e clãs anões de Thargrid?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxi:decisao:mapas",
+      "pergunta_autoral": "Em quais situações um mapa pode ser copiado, corrigido, ocultado ou deliberadamente incompleto?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxi:decisao:nomes",
+      "pergunta_autoral": "Como múltiplos nomes convivem com registro, herança e eventual magia vinculada à identidade?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxi:decisao:religiao",
+      "pergunta_autoral": "Como Garl Glittergold convive com cultos locais e perspectivas diversas entre as três tradições?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxi:decisao:arqueologia",
+      "pergunta_autoral": "Quem possui legitimidade para estudar e divulgar registros Yokai e estruturas antigas sob a Carcaça?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxi:decisao:inventores",
+      "pergunta_autoral": "Que formas de responsabilização e aprendizado são usadas diante de invenções que causam danos?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    }
+  ]
+}

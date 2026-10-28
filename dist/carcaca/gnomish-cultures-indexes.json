@@ -1,0 +1,414 @@
+{
+  "by_categoria": {
+    "conflitos_internos": [
+      "worldbuilding-xxi:conflito:estrangeiro-convidado",
+      "worldbuilding-xxi:conflito:nome-publico",
+      "worldbuilding-xxi:conflito:pesquisa-vs-refugio",
+      "worldbuilding-xxi:conflito:prestigio-oficina",
+      "worldbuilding-xxi:conflito:profundezas-inundadas"
+    ],
+    "costumes_possiveis": [
+      "worldbuilding-xxi:costume:jogo-do-ardil",
+      "worldbuilding-xxi:costume:primeiro-nome",
+      "worldbuilding-xxi:costume:reparar-em-publico",
+      "worldbuilding-xxi:costume:sala-de-ecos"
+    ],
+    "eixos_sociais": [
+      "worldbuilding-xxi:eixo:florestas:ecologia",
+      "worldbuilding-xxi:eixo:florestas:educacao",
+      "worldbuilding-xxi:eixo:florestas:moradia",
+      "worldbuilding-xxi:eixo:florestas:reciprocidade",
+      "worldbuilding-xxi:eixo:profundezas:autonomia",
+      "worldbuilding-xxi:eixo:profundezas:mapas",
+      "worldbuilding-xxi:eixo:profundezas:memoria",
+      "worldbuilding-xxi:eixo:profundezas:trabalho",
+      "worldbuilding-xxi:eixo:rochas:aprendizado",
+      "worldbuilding-xxi:eixo:rochas:autoria",
+      "worldbuilding-xxi:eixo:rochas:familia",
+      "worldbuilding-xxi:eixo:rochas:risco"
+    ],
+    "eticas_do_conhecimento": [
+      "worldbuilding-xxi:etica:autoria-compartilhada",
+      "worldbuilding-xxi:etica:erro-e-correção",
+      "worldbuilding-xxi:etica:mapa-duplo",
+      "worldbuilding-xxi:etica:nome-multiplo",
+      "worldbuilding-xxi:etica:registros-yokai",
+      "worldbuilding-xxi:etica:segredo-protetor"
+    ],
+    "redes_de_troca": [
+      "worldbuilding-xxi:troca:arquivo-e-mercado",
+      "worldbuilding-xxi:troca:ironwood-e-vizinhos",
+      "worldbuilding-xxi:troca:mapas-e-comunidades",
+      "worldbuilding-xxi:troca:oficinas-e-minerios",
+      "worldbuilding-xxi:troca:thargrid-e-enclaves"
+    ],
+    "tradicoes": [
+      "worldbuilding-xxi:tradicao:florestas",
+      "worldbuilding-xxi:tradicao:profundezas",
+      "worldbuilding-xxi:tradicao:rochas"
+    ],
+    "vinhetas": [
+      "worldbuilding-xxi:vinheta:a-lente",
+      "worldbuilding-xxi:vinheta:a-pedra",
+      "worldbuilding-xxi:vinheta:o-caminho",
+      "worldbuilding-xxi:vinheta:os-tres-nomes"
+    ]
+  },
+  "by_tradicao": {
+    "worldbuilding-xxi:tradicao:florestas": [
+      "worldbuilding-xxi:conflito:estrangeiro-convidado",
+      "worldbuilding-xxi:conflito:pesquisa-vs-refugio",
+      "worldbuilding-xxi:costume:primeiro-nome",
+      "worldbuilding-xxi:eixo:florestas:ecologia",
+      "worldbuilding-xxi:eixo:florestas:educacao",
+      "worldbuilding-xxi:eixo:florestas:moradia",
+      "worldbuilding-xxi:eixo:florestas:reciprocidade",
+      "worldbuilding-xxi:troca:ironwood-e-vizinhos",
+      "worldbuilding-xxi:troca:mapas-e-comunidades",
+      "worldbuilding-xxi:vinheta:o-caminho"
+    ],
+    "worldbuilding-xxi:tradicao:profundezas": [
+      "worldbuilding-xxi:conflito:profundezas-inundadas",
+      "worldbuilding-xxi:costume:sala-de-ecos",
+      "worldbuilding-xxi:eixo:profundezas:autonomia",
+      "worldbuilding-xxi:eixo:profundezas:mapas",
+      "worldbuilding-xxi:eixo:profundezas:memoria",
+      "worldbuilding-xxi:eixo:profundezas:trabalho",
+      "worldbuilding-xxi:troca:arquivo-e-mercado",
+      "worldbuilding-xxi:troca:oficinas-e-minerios",
+      "worldbuilding-xxi:troca:thargrid-e-enclaves",
+      "worldbuilding-xxi:vinheta:a-pedra"
+    ],
+    "worldbuilding-xxi:tradicao:rochas": [
+      "worldbuilding-xxi:conflito:nome-publico",
+      "worldbuilding-xxi:conflito:prestigio-oficina",
+      "worldbuilding-xxi:costume:jogo-do-ardil",
+      "worldbuilding-xxi:costume:reparar-em-publico",
+      "worldbuilding-xxi:eixo:rochas:aprendizado",
+      "worldbuilding-xxi:eixo:rochas:autoria",
+      "worldbuilding-xxi:eixo:rochas:familia",
+      "worldbuilding-xxi:eixo:rochas:risco",
+      "worldbuilding-xxi:troca:arquivo-e-mercado",
+      "worldbuilding-xxi:troca:ironwood-e-vizinhos",
+      "worldbuilding-xxi:troca:mapas-e-comunidades",
+      "worldbuilding-xxi:troca:oficinas-e-minerios",
+      "worldbuilding-xxi:troca:thargrid-e-enclaves",
+      "worldbuilding-xxi:vinheta:a-lente",
+      "worldbuilding-xxi:vinheta:os-tres-nomes"
+    ]
+  },
+  "by_estado": {
+    "conflito_hipotetico": [
+      "worldbuilding-xxi:conflito:estrangeiro-convidado",
+      "worldbuilding-xxi:conflito:nome-publico",
+      "worldbuilding-xxi:conflito:pesquisa-vs-refugio",
+      "worldbuilding-xxi:conflito:prestigio-oficina",
+      "worldbuilding-xxi:conflito:profundezas-inundadas"
+    ],
+    "costume_candidato_nao_adotado": [
+      "worldbuilding-xxi:costume:jogo-do-ardil",
+      "worldbuilding-xxi:costume:primeiro-nome",
+      "worldbuilding-xxi:costume:reparar-em-publico",
+      "worldbuilding-xxi:costume:sala-de-ecos"
+    ],
+    "eixo_social_proposto": [
+      "worldbuilding-xxi:eixo:florestas:ecologia",
+      "worldbuilding-xxi:eixo:florestas:educacao",
+      "worldbuilding-xxi:eixo:florestas:moradia",
+      "worldbuilding-xxi:eixo:florestas:reciprocidade",
+      "worldbuilding-xxi:eixo:profundezas:autonomia",
+      "worldbuilding-xxi:eixo:profundezas:mapas",
+      "worldbuilding-xxi:eixo:profundezas:memoria",
+      "worldbuilding-xxi:eixo:profundezas:trabalho",
+      "worldbuilding-xxi:eixo:rochas:aprendizado",
+      "worldbuilding-xxi:eixo:rochas:autoria",
+      "worldbuilding-xxi:eixo:rochas:familia",
+      "worldbuilding-xxi:eixo:rochas:risco"
+    ],
+    "etica_hipotetica_nao_codificada": [
+      "worldbuilding-xxi:etica:autoria-compartilhada",
+      "worldbuilding-xxi:etica:erro-e-correção",
+      "worldbuilding-xxi:etica:mapa-duplo",
+      "worldbuilding-xxi:etica:nome-multiplo",
+      "worldbuilding-xxi:etica:registros-yokai",
+      "worldbuilding-xxi:etica:segredo-protetor"
+    ],
+    "perfil_cultural_interpretativo_nao_homologado": [
+      "worldbuilding-xxi:tradicao:florestas",
+      "worldbuilding-xxi:tradicao:profundezas",
+      "worldbuilding-xxi:tradicao:rochas"
+    ],
+    "rede_cultural_para_explorar": [
+      "worldbuilding-xxi:troca:arquivo-e-mercado",
+      "worldbuilding-xxi:troca:ironwood-e-vizinhos",
+      "worldbuilding-xxi:troca:mapas-e-comunidades",
+      "worldbuilding-xxi:troca:oficinas-e-minerios",
+      "worldbuilding-xxi:troca:thargrid-e-enclaves"
+    ],
+    "vinheta_literaria_nao_ocorrida": [
+      "worldbuilding-xxi:vinheta:a-lente",
+      "worldbuilding-xxi:vinheta:a-pedra",
+      "worldbuilding-xxi:vinheta:o-caminho",
+      "worldbuilding-xxi:vinheta:os-tres-nomes"
+    ]
+  },
+  "by_pagina_manuscrito": {
+    "19": [
+      "worldbuilding-xxi:etica:erro-e-correção",
+      "worldbuilding-xxi:etica:mapa-duplo"
+    ],
+    "20": [
+      "worldbuilding-xxi:etica:autoria-compartilhada",
+      "worldbuilding-xxi:etica:erro-e-correção",
+      "worldbuilding-xxi:etica:mapa-duplo",
+      "worldbuilding-xxi:etica:nome-multiplo",
+      "worldbuilding-xxi:etica:segredo-protetor",
+      "worldbuilding-xxi:tradicao:florestas",
+      "worldbuilding-xxi:tradicao:profundezas",
+      "worldbuilding-xxi:tradicao:rochas"
+    ],
+    "21": [
+      "worldbuilding-xxi:etica:nome-multiplo",
+      "worldbuilding-xxi:etica:registros-yokai",
+      "worldbuilding-xxi:etica:segredo-protetor"
+    ]
+  },
+  "by_tema": {
+    "A assinatura na engrenagem": [
+      "worldbuilding-xxi:eixo:rochas:autoria"
+    ],
+    "A ideia não é de um só": [
+      "worldbuilding-xxi:etica:autoria-compartilhada"
+    ],
+    "A lente que ninguém terminou": [
+      "worldbuilding-xxi:vinheta:a-lente"
+    ],
+    "A pedra contra a casa": [
+      "worldbuilding-xxi:conflito:profundezas-inundadas"
+    ],
+    "A porta que não pode ser desenhada": [
+      "worldbuilding-xxi:conflito:estrangeiro-convidado"
+    ],
+    "A profundidade não cabe no papel": [
+      "worldbuilding-xxi:eixo:profundezas:mapas"
+    ],
+    "Ajuda sem tutela": [
+      "worldbuilding-xxi:eixo:profundezas:autonomia"
+    ],
+    "Anões de Thargrid e Svirfneblin": [
+      "worldbuilding-xxi:troca:thargrid-e-enclaves"
+    ],
+    "Aprender a desmontar": [
+      "worldbuilding-xxi:eixo:rochas:aprendizado"
+    ],
+    "Aprender a perceber": [
+      "worldbuilding-xxi:eixo:florestas:educacao"
+    ],
+    "Arquivo antigo e comércio de cópias": [
+      "worldbuilding-xxi:troca:arquivo-e-mercado"
+    ],
+    "Cartografia de camadas": [
+      "worldbuilding-xxi:etica:mapa-duplo"
+    ],
+    "Cartógrafos e comunidades escondidas": [
+      "worldbuilding-xxi:troca:mapas-e-comunidades"
+    ],
+    "Casa que não aparece": [
+      "worldbuilding-xxi:eixo:florestas:moradia"
+    ],
+    "Ciência que revela o escondido": [
+      "worldbuilding-xxi:conflito:pesquisa-vs-refugio"
+    ],
+    "Escutar o que a pedra guardou": [
+      "worldbuilding-xxi:costume:sala-de-ecos"
+    ],
+    "Extrair sem destruir o abrigo": [
+      "worldbuilding-xxi:eixo:profundezas:trabalho"
+    ],
+    "Família não é patente": [
+      "worldbuilding-xxi:eixo:rochas:familia"
+    ],
+    "Gnomos da Floresta": [
+      "worldbuilding-xxi:tradicao:florestas"
+    ],
+    "Gnomos das Profundezas — Svirfneblin": [
+      "worldbuilding-xxi:tradicao:profundezas"
+    ],
+    "Gnomos das Rochas": [
+      "worldbuilding-xxi:tradicao:rochas"
+    ],
+    "Gnomos florestais e vizinhos élficos": [
+      "worldbuilding-xxi:troca:ironwood-e-vizinhos"
+    ],
+    "Nomes que pertencem a relações": [
+      "worldbuilding-xxi:etica:nome-multiplo"
+    ],
+    "Não ensinar também é uma escolha": [
+      "worldbuilding-xxi:etica:segredo-protetor"
+    ],
+    "O dia em que se mostra o erro": [
+      "worldbuilding-xxi:costume:reparar-em-publico"
+    ],
+    "O erro que afeta a rua": [
+      "worldbuilding-xxi:eixo:rochas:risco"
+    ],
+    "O mapa que termina em branco": [
+      "worldbuilding-xxi:vinheta:o-caminho"
+    ],
+    "O mineral que ninguém extraiu": [
+      "worldbuilding-xxi:vinheta:a-pedra"
+    ],
+    "O nome que não se explica": [
+      "worldbuilding-xxi:costume:primeiro-nome"
+    ],
+    "O passado escrito por outros": [
+      "worldbuilding-xxi:etica:registros-yokai"
+    ],
+    "O que deve permanecer soterrado": [
+      "worldbuilding-xxi:eixo:profundezas:memoria"
+    ],
+    "O segredo que não se dá de presente": [
+      "worldbuilding-xxi:eixo:florestas:reciprocidade"
+    ],
+    "Oficinas de superfície e minerais profundos": [
+      "worldbuilding-xxi:troca:oficinas-e-minerios"
+    ],
+    "Qual dos nomes é o verdadeiro?": [
+      "worldbuilding-xxi:conflito:nome-publico"
+    ],
+    "Quem ganhou o crédito?": [
+      "worldbuilding-xxi:conflito:prestigio-oficina"
+    ],
+    "Rir do poderoso": [
+      "worldbuilding-xxi:costume:jogo-do-ardil"
+    ],
+    "Três nomes para a mesma pessoa": [
+      "worldbuilding-xxi:vinheta:os-tres-nomes"
+    ],
+    "Um método para admitir erro": [
+      "worldbuilding-xxi:etica:erro-e-correção"
+    ],
+    "Vizinho de penas e raízes": [
+      "worldbuilding-xxi:eixo:florestas:ecologia"
+    ]
+  },
+  "by_slug": {
+    "a-lente": [
+      "worldbuilding-xxi:vinheta:a-lente"
+    ],
+    "a-pedra": [
+      "worldbuilding-xxi:vinheta:a-pedra"
+    ],
+    "aprendizado": [
+      "worldbuilding-xxi:eixo:rochas:aprendizado"
+    ],
+    "arquivo-e-mercado": [
+      "worldbuilding-xxi:troca:arquivo-e-mercado"
+    ],
+    "autonomia": [
+      "worldbuilding-xxi:eixo:profundezas:autonomia"
+    ],
+    "autoria": [
+      "worldbuilding-xxi:eixo:rochas:autoria"
+    ],
+    "autoria-compartilhada": [
+      "worldbuilding-xxi:etica:autoria-compartilhada"
+    ],
+    "ecologia": [
+      "worldbuilding-xxi:eixo:florestas:ecologia"
+    ],
+    "educacao": [
+      "worldbuilding-xxi:eixo:florestas:educacao"
+    ],
+    "erro-e-correção": [
+      "worldbuilding-xxi:etica:erro-e-correção"
+    ],
+    "estrangeiro-convidado": [
+      "worldbuilding-xxi:conflito:estrangeiro-convidado"
+    ],
+    "familia": [
+      "worldbuilding-xxi:eixo:rochas:familia"
+    ],
+    "florestas": [
+      "worldbuilding-xxi:tradicao:florestas"
+    ],
+    "ironwood-e-vizinhos": [
+      "worldbuilding-xxi:troca:ironwood-e-vizinhos"
+    ],
+    "jogo-do-ardil": [
+      "worldbuilding-xxi:costume:jogo-do-ardil"
+    ],
+    "mapa-duplo": [
+      "worldbuilding-xxi:etica:mapa-duplo"
+    ],
+    "mapas": [
+      "worldbuilding-xxi:eixo:profundezas:mapas"
+    ],
+    "mapas-e-comunidades": [
+      "worldbuilding-xxi:troca:mapas-e-comunidades"
+    ],
+    "memoria": [
+      "worldbuilding-xxi:eixo:profundezas:memoria"
+    ],
+    "moradia": [
+      "worldbuilding-xxi:eixo:florestas:moradia"
+    ],
+    "nome-multiplo": [
+      "worldbuilding-xxi:etica:nome-multiplo"
+    ],
+    "nome-publico": [
+      "worldbuilding-xxi:conflito:nome-publico"
+    ],
+    "o-caminho": [
+      "worldbuilding-xxi:vinheta:o-caminho"
+    ],
+    "oficinas-e-minerios": [
+      "worldbuilding-xxi:troca:oficinas-e-minerios"
+    ],
+    "os-tres-nomes": [
+      "worldbuilding-xxi:vinheta:os-tres-nomes"
+    ],
+    "pesquisa-vs-refugio": [
+      "worldbuilding-xxi:conflito:pesquisa-vs-refugio"
+    ],
+    "prestigio-oficina": [
+      "worldbuilding-xxi:conflito:prestigio-oficina"
+    ],
+    "primeiro-nome": [
+      "worldbuilding-xxi:costume:primeiro-nome"
+    ],
+    "profundezas": [
+      "worldbuilding-xxi:tradicao:profundezas"
+    ],
+    "profundezas-inundadas": [
+      "worldbuilding-xxi:conflito:profundezas-inundadas"
+    ],
+    "reciprocidade": [
+      "worldbuilding-xxi:eixo:florestas:reciprocidade"
+    ],
+    "registros-yokai": [
+      "worldbuilding-xxi:etica:registros-yokai"
+    ],
+    "reparar-em-publico": [
+      "worldbuilding-xxi:costume:reparar-em-publico"
+    ],
+    "risco": [
+      "worldbuilding-xxi:eixo:rochas:risco"
+    ],
+    "rochas": [
+      "worldbuilding-xxi:tradicao:rochas"
+    ],
+    "sala-de-ecos": [
+      "worldbuilding-xxi:costume:sala-de-ecos"
+    ],
+    "segredo-protetor": [
+      "worldbuilding-xxi:etica:segredo-protetor"
+    ],
+    "thargrid-e-enclaves": [
+      "worldbuilding-xxi:troca:thargrid-e-enclaves"
+    ],
+    "trabalho": [
+      "worldbuilding-xxi:eixo:profundezas:trabalho"
+    ]
+  }
+}
