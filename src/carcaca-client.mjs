@@ -73,7 +73,7 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
   }
   async function searchIronwoodEldrothResistance({categoria,povo,ambiente,funcao,setor,movimentoHack,vinculo,query}={}){
     const data=await getIronwoodEldrothResistance();
-    const normal=s=>String(s??"").normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase();
+    const normal=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
     return ["lugares","coletivos","pessoas","dilemas","fluxos","acordos","cenas","arcos"]
       .flatMap(cat=>data[cat].map(item=>({...item,categoria:cat})))
       .filter(item=>
