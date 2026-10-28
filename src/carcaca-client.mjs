@@ -60,6 +60,35 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getEldrothSylaraOccupation(){return byKey("eldroth_sylara_occupation");}
+  async function getEldrothSylaraOccupationIndexes(){return byKey("eldroth_sylara_occupation_indexes");}
+  async function getEldrothSylaraOccupationEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xvi:"))return null;
+    const data=await getEldrothSylaraOccupation();
+    for(const categoria of ["mecanismos","posicoes_sociais","modelos_de_regime","dilemas","vinhetas","decisoes_para_autor"]){
+      const item=data[categoria].find(entry=>entry.id===id);
+      if(item)return {...item,categoria};
+    }
+    return null;
+  }
+  async function searchEldrothSylaraOccupation({categoria,dominio,praticaXvId,mecanismoId,posicaoId,pagina,query}={}){
+    const data=await getEldrothSylaraOccupation();
+    const normal=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const cats=["mecanismos","posicoes_sociais","modelos_de_regime","dilemas","vinhetas"];
+    return cats.flatMap(cat=>data[cat].map(x=>({...x,categoria:cat}))).filter(x=>{
+      const fontes=x.fontes_contextuais??(x.fonte_contextual?[x.fonte_contextual]:[]);
+      const fields=[x.nome_editorial,x.conversao_proposta,x.consequencia_material_proposta,
+        x.rotina_possivel,x.dilema,x.hipotese_de_regime,x.situacao_hipotetica,
+        x.cena_condicional,x.pergunta_conflitiva];
+      return (!categoria||x.categoria===categoria)&&
+        (!dominio||(x.dominio??x.campo_social??x.tema)===dominio)&&
+        (!praticaXvId||x.pratica_xv_id===praticaXvId)&&
+        (!mecanismoId||x.mecanismo_id===mecanismoId||x.id===mecanismoId)&&
+        (!posicaoId||x.posicao_id===posicaoId||x.id===posicaoId)&&
+        (pagina===undefined||fontes.some(z=>z.pagina===Number(pagina)))&&
+        (!query||normal(fields.filter(Boolean).join(" ")).includes(normal(query)));
+    });
+  }
   async function getEldrothPreconquest(){return byKey("eldroth_preconquest");}
   async function getEldrothPreconquestIndexes(){return byKey("eldroth_preconquest_indexes");}
   async function getEldrothPreconquestEntry(id){
@@ -1358,6 +1387,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getEldrothSylaraOccupation,getEldrothSylaraOccupationIndexes,
+          getEldrothSylaraOccupationEntry,searchEldrothSylaraOccupation,
           getEldrothPreconquest,getEldrothPreconquestIndexes,
           getEldrothPreconquestEntry,searchEldrothPreconquest,
           getEldrothCulturalAtlas,getEldrothCulturalAtlasIndexes,
