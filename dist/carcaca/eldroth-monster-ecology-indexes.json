@@ -1,0 +1,198 @@
+{
+  "by_categoria": {
+    "criaturas": [
+      "ecologia-xii:criatura:andarilho-de-sepultura-negada",
+      "ecologia-xii:criatura:besouros-da-casca-riscada",
+      "ecologia-xii:criatura:cao-de-esporos-do-limiar",
+      "ecologia-xii:criatura:cardos-que-bebem-cinza",
+      "ecologia-xii:criatura:cervo-de-galhos-invertidos",
+      "ecologia-xii:criatura:coruja-do-eco-emprestado",
+      "ecologia-xii:criatura:escrivao-da-folha-lacrada",
+      "ecologia-xii:criatura:micelio-das-vozes-partidas"
+    ],
+    "encontros": [
+      "ecologia-xii:encontro:a-capa-e-o-faro",
+      "ecologia-xii:encontro:a-casca-que-contou",
+      "ecologia-xii:encontro:a-pira-antes-da-prova",
+      "ecologia-xii:encontro:canto-sem-ave",
+      "ecologia-xii:encontro:nome-sem-corpo",
+      "ecologia-xii:encontro:o-juramento-que-cresce"
+    ],
+    "frentes": [
+      "ecologia-xii:frente:o-bosque-que-informa",
+      "ecologia-xii:frente:o-refugio-que-queima"
+    ],
+    "pressoes": [
+      "ecologia-xii:pressao:fauna-como-fronteira",
+      "ecologia-xii:pressao:luto-sem-registro",
+      "ecologia-xii:pressao:queima-sem-diagnostico",
+      "ecologia-xii:pressao:rastreio-pelo-medo"
+    ]
+  },
+  "by_tipo_carcaca_proposto": {
+    "fauna": [
+      "ecologia-xii:criatura:besouros-da-casca-riscada"
+    ],
+    "feerico": [
+      "ecologia-xii:criatura:escrivao-da-folha-lacrada"
+    ],
+    "fera_sobrenatural": [
+      "ecologia-xii:criatura:cao-de-esporos-do-limiar",
+      "ecologia-xii:criatura:cervo-de-galhos-invertidos",
+      "ecologia-xii:criatura:coruja-do-eco-emprestado"
+    ],
+    "flora": [
+      "ecologia-xii:criatura:cardos-que-bebem-cinza",
+      "ecologia-xii:criatura:micelio-das-vozes-partidas"
+    ],
+    "morto_vivo": [
+      "ecologia-xii:criatura:andarilho-de-sepultura-negada"
+    ]
+  },
+  "by_escopo": {
+    "eldroth": [
+      "ecologia-xii:criatura:cardos-que-bebem-cinza",
+      "ecologia-xii:criatura:cervo-de-galhos-invertidos",
+      "ecologia-xii:criatura:coruja-do-eco-emprestado",
+      "ecologia-xii:criatura:escrivao-da-folha-lacrada",
+      "ecologia-xii:criatura:micelio-das-vozes-partidas",
+      "ecologia-xii:encontro:a-pira-antes-da-prova",
+      "ecologia-xii:encontro:canto-sem-ave",
+      "ecologia-xii:encontro:o-juramento-que-cresce",
+      "ecologia-xii:frente:o-bosque-que-informa",
+      "ecologia-xii:pressao:queima-sem-diagnostico",
+      "ecologia-xii:pressao:rastreio-pelo-medo"
+    ],
+    "ironwood": [
+      "ecologia-xii:criatura:besouros-da-casca-riscada",
+      "ecologia-xii:criatura:cao-de-esporos-do-limiar",
+      "ecologia-xii:encontro:a-capa-e-o-faro",
+      "ecologia-xii:encontro:a-casca-que-contou",
+      "ecologia-xii:pressao:fauna-como-fronteira"
+    ],
+    "multirregional_sem_rota_confirmada": [
+      "ecologia-xii:frente:o-refugio-que-queima"
+    ],
+    "vandar": [
+      "ecologia-xii:criatura:andarilho-de-sepultura-negada",
+      "ecologia-xii:encontro:nome-sem-corpo",
+      "ecologia-xii:pressao:luto-sem-registro"
+    ]
+  },
+  "by_cena_anterior": {
+    "ironwood-eldroth:cena:aprendiz-do-mapa": [
+      "ecologia-xii:criatura:besouros-da-casca-riscada",
+      "ecologia-xii:encontro:a-casca-que-contou"
+    ],
+    "ironwood-eldroth:cena:despedida-sem-cadaver": [
+      "ecologia-xii:criatura:andarilho-de-sepultura-negada",
+      "ecologia-xii:encontro:nome-sem-corpo"
+    ],
+    "ironwood-eldroth:cena:passaro-sem-canto": [
+      "ecologia-xii:criatura:cervo-de-galhos-invertidos",
+      "ecologia-xii:criatura:coruja-do-eco-emprestado",
+      "ecologia-xii:criatura:micelio-das-vozes-partidas",
+      "ecologia-xii:encontro:canto-sem-ave"
+    ],
+    "ironwood-eldroth:cena:pedido-de-desercao": [
+      "ecologia-xii:criatura:escrivao-da-folha-lacrada",
+      "ecologia-xii:encontro:o-juramento-que-cresce"
+    ],
+    "ironwood-eldroth:cena:selo-na-capa": [
+      "ecologia-xii:criatura:cao-de-esporos-do-limiar",
+      "ecologia-xii:encontro:a-capa-e-o-faro"
+    ],
+    "ironwood-eldroth:cena:viveiro-negro": [
+      "ecologia-xii:criatura:cardos-que-bebem-cinza",
+      "ecologia-xii:encontro:a-pira-antes-da-prova"
+    ]
+  },
+  "by_criatura": {
+    "ecologia-xii:criatura:andarilho-de-sepultura-negada": [
+      "ecologia-xii:encontro:nome-sem-corpo",
+      "ecologia-xii:pressao:luto-sem-registro"
+    ],
+    "ecologia-xii:criatura:besouros-da-casca-riscada": [
+      "ecologia-xii:encontro:a-casca-que-contou",
+      "ecologia-xii:pressao:fauna-como-fronteira"
+    ],
+    "ecologia-xii:criatura:cao-de-esporos-do-limiar": [
+      "ecologia-xii:encontro:a-capa-e-o-faro",
+      "ecologia-xii:frente:o-refugio-que-queima",
+      "ecologia-xii:pressao:fauna-como-fronteira"
+    ],
+    "ecologia-xii:criatura:cardos-que-bebem-cinza": [
+      "ecologia-xii:encontro:a-pira-antes-da-prova",
+      "ecologia-xii:frente:o-refugio-que-queima",
+      "ecologia-xii:pressao:queima-sem-diagnostico"
+    ],
+    "ecologia-xii:criatura:cervo-de-galhos-invertidos": [
+      "ecologia-xii:encontro:o-juramento-que-cresce",
+      "ecologia-xii:frente:o-refugio-que-queima"
+    ],
+    "ecologia-xii:criatura:coruja-do-eco-emprestado": [
+      "ecologia-xii:encontro:canto-sem-ave",
+      "ecologia-xii:frente:o-bosque-que-informa",
+      "ecologia-xii:pressao:rastreio-pelo-medo"
+    ],
+    "ecologia-xii:criatura:escrivao-da-folha-lacrada": [
+      "ecologia-xii:encontro:o-juramento-que-cresce",
+      "ecologia-xii:frente:o-bosque-que-informa"
+    ],
+    "ecologia-xii:criatura:micelio-das-vozes-partidas": [
+      "ecologia-xii:encontro:canto-sem-ave",
+      "ecologia-xii:frente:o-bosque-que-informa",
+      "ecologia-xii:pressao:rastreio-pelo-medo"
+    ]
+  },
+  "by_encontro": {
+    "ecologia-xii:encontro:a-capa-e-o-faro": [
+      "ecologia-xii:frente:o-refugio-que-queima"
+    ],
+    "ecologia-xii:encontro:a-pira-antes-da-prova": [
+      "ecologia-xii:frente:o-refugio-que-queima"
+    ],
+    "ecologia-xii:encontro:canto-sem-ave": [
+      "ecologia-xii:frente:o-bosque-que-informa"
+    ],
+    "ecologia-xii:encontro:o-juramento-que-cresce": [
+      "ecologia-xii:frente:o-bosque-que-informa"
+    ]
+  },
+  "by_lugar_proposto": {
+    "ironwood-eldroth:lugar:canteiro-da-lua-ferida": [
+      "ecologia-xii:criatura:cardos-que-bebem-cinza"
+    ],
+    "ironwood-eldroth:lugar:clareira-das-testemunhas": [
+      "ecologia-xii:criatura:cervo-de-galhos-invertidos",
+      "ecologia-xii:criatura:coruja-do-eco-emprestado",
+      "ecologia-xii:criatura:escrivao-da-folha-lacrada",
+      "ecologia-xii:criatura:micelio-das-vozes-partidas"
+    ],
+    "ironwood-eldroth:lugar:patio-da-trilha-incompleta": [
+      "ecologia-xii:criatura:besouros-da-casca-riscada"
+    ],
+    "ironwood-eldroth:lugar:pouso-das-bainhas": [
+      "ecologia-xii:criatura:cao-de-esporos-do-limiar"
+    ],
+    "ironwood-eldroth:lugar:sala-dos-nomes-frios": [
+      "ecologia-xii:criatura:andarilho-de-sepultura-negada"
+    ]
+  },
+  "by_organizacao_dw": {
+    "grupo": [
+      "ecologia-xii:criatura:cao-de-esporos-do-limiar",
+      "ecologia-xii:criatura:cardos-que-bebem-cinza"
+    ],
+    "horda": [
+      "ecologia-xii:criatura:besouros-da-casca-riscada",
+      "ecologia-xii:criatura:micelio-das-vozes-partidas"
+    ],
+    "solitario": [
+      "ecologia-xii:criatura:andarilho-de-sepultura-negada",
+      "ecologia-xii:criatura:cervo-de-galhos-invertidos",
+      "ecologia-xii:criatura:coruja-do-eco-emprestado",
+      "ecologia-xii:criatura:escrivao-da-folha-lacrada"
+    ]
+  }
+}
