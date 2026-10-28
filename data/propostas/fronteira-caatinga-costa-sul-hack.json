@@ -1,0 +1,726 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Fronteira viva entre a Caatinga e a Costa Sul",
+  "estado": "propostas_narrativas_nao_canonicas",
+  "regioes_envolvidas": [
+    "regiao:caatinga",
+    "regiao:costa-sul"
+  ],
+  "descricao": "Relações sociais possíveis entre comunidades da Caatinga, litoral de Portomonte e viajantes insulares, sem impor comércio, estradas, episódios ou populações que o material autoral não confirmou.",
+  "fundamentacao": [
+    "data/regioes_carcaca.json",
+    "data/guias_dossies_regionais.json",
+    "curadoria/assentamentos/portomonte.json",
+    "curadoria/assentamentos/comunidades-insulares-costa-sul.json",
+    "data/propostas/caatinga-rede-social-hack.json",
+    "data/lore/hack-carcaca-dw-movimentos-povos-integrais.json"
+  ],
+  "ancoras_territoriais_confirmadas": [
+    "regiao:caatinga",
+    "regiao:costa-sul",
+    "lugar:portomonte",
+    "lugar:ilhas-costa-sul",
+    "lugar:cavernas-kuo-toa"
+  ],
+  "fatos_preservados": [
+    "Na Caatinga existem grupos dispersos, histórias da Guerra de Nove Anos contra os kuo-toa e conflitos com grupos da costa; não atribuir saque a todos os orcs.",
+    "A Costa Sul possui Portomonte entre penhascos e agricultura viabilizada por purificação ritual de água do Mar de Sangue; não pressupor potabilidade doméstica.",
+    "Há comércio entre assentamentos da Costa Sul, mas não se documentaram bens ou compradores individuais nem comércio direto entre Portomonte e a Caatinga.",
+    "Tortles e tabaxis das ilhas viajam sazonalmente e têm tradições próprias; não pressupor coabitação insular permanente ou trajeto específico ao interior.",
+    "Kuo-toa e abissais marinhos se associam a ataques sacrificiais regionais; não atribuir ataque individual a Portomonte ou confundir abissais marinhos com demônios do Abismo."
+  ],
+  "limites_editoriais": [
+    "Todo encontro, pessoa nova, acordo, fluxo, cena e trama é proposta, não registro de acontecimento histórico.",
+    "Todas as ligações entre a Caatinga e Portomonte são condicionais; sem rodovias, travessias ou periodicidades cartografadas.",
+    "Nenhuma quantidade, preço, potabilidade, carga de comércio, produção ou população é criada como fato.",
+    "As novas pessoas não recebem automaticamente movimentos do Hack; a referência indica inspiração temática.",
+    "Não tratar povos como facções homogêneas; guerra não define o comportamento de todo orc, kuo-toa, tortle ou tabaxi."
+  ],
+  "totais_propostos": {
+    "encontros": 5,
+    "pessoas": 9,
+    "acordos": 5,
+    "fluxos": 6,
+    "cenas": 6,
+    "tramas": 3
+  },
+  "encontros": [
+    {
+      "id": "fronteira:encontro:boca-do-pano",
+      "nome": "Boca do Pano Pardo",
+      "ancora_regional": "regiao:caatinga",
+      "territorio_hypotetico": true,
+      "localizacao_confirmada": false,
+      "conceito": "Ponto de encontro temporário junto a uma caravana que muda de lugar, sem estrada, posto ou fronteira territorial fixa.",
+      "vida_cotidiana": "O tecido estendido no chão indica que se pode conversar sem exibir armas; uma pessoa traduz termos dos contratos enquanto outras consertam recipientes, sandálias e ferramentas.",
+      "conflito": "Uma guarda tenta transformar o pano de negociação em posto permanente de cobrança.",
+      "conexoes_preexistentes": [
+        "caatinga:comunidade:feira-ferragens",
+        "caatinga:pessoa:tiru"
+      ],
+      "restricao_de_canon": "O encontro não comprova comércio direto entre Caatinga e Portomonte.",
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:encontro:varanda-da-agua",
+      "nome": "Varanda da Água Retornada",
+      "ancora_regional": "regiao:costa-sul",
+      "territorio_hypotetico": true,
+      "localizacao_confirmada": false,
+      "conceito": "Pátio comunitário proposto junto a lavouras da região de Portomonte, não um anexo conhecido do templo de Deméter.",
+      "vida_cotidiana": "Trabalhadores trocam conhecimento sobre plantio em pedra, restauração de ferramentas e formas de poupar água nas tarefas agrícolas.",
+      "conflito": "Um grupo de agricultores teme que um acordo com viajantes leve à distribuição indevida da água ritual reservada às lavouras.",
+      "conexoes_preexistentes": [
+        "lugar:portomonte",
+        "assentamento:portomonte",
+        "povoamento-proposto:hortas-do-sal"
+      ],
+      "restricao_de_canon": "Purificação para lavouras não comprova água potável nem volume excedente.",
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:encontro:tres-pedras",
+      "nome": "Três Pedras da Hospitalidade",
+      "ancora_regional": "regiao:caatinga",
+      "territorio_hypotetico": true,
+      "localizacao_confirmada": false,
+      "conceito": "Abrigo de passagem proposto em terreno não delimitado, marcado por três pedras que identificam um pacto temporário.",
+      "vida_cotidiana": "O anfitrião não pergunta primeiro a linhagem ou a bandeira: oferece sombra, espaço para reparar as correias e a oportunidade de contar de onde veio.",
+      "conflito": "Os hóspedes discutem se um aviso de saque planejado rompe a hospitalidade ou torna obrigatória uma denúncia.",
+      "conexoes_preexistentes": [
+        "caatinga:comunidade:poco-sem-bandeira",
+        "caatinga:comunidade:patio-cabacas"
+      ],
+      "restricao_de_canon": "Não é uma parada cartografada, nem a mesma tradição religiosa para todas as comunidades.",
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:encontro:escada-de-corda",
+      "nome": "Escada das Cordas Soltas",
+      "ancora_regional": "regiao:costa-sul",
+      "territorio_hypotetico": true,
+      "localizacao_confirmada": false,
+      "conceito": "Local de transbordo hipotético nos penhascos da Costa Sul, não uma entrada confirmada de Portomonte.",
+      "vida_cotidiana": "Os trabalhadores que cuidam de amarras e ferramentas se revezam em consertos; quem recebe carga registra seu estado antes de abrir o invólucro.",
+      "conflito": "Um pacote com marcas de saque aparece entre mercadorias apresentadas como ferramentas agrícolas.",
+      "conexoes_preexistentes": [
+        "lugar:portomonte",
+        "caatinga:comunidade:feira-ferragens"
+      ],
+      "restricao_de_canon": "Nenhum cais, escada, embarcação ou rota de transporte é declarado existente.",
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:encontro:roda-das-historias",
+      "nome": "Roda das Histórias que Não Cabem",
+      "ancora_regional": "regiao:costa-sul",
+      "territorio_hypotetico": true,
+      "localizacao_confirmada": false,
+      "conceito": "Encontro itinerante proposto onde viajantes tortles e tabaxis poderiam trocar memórias com pessoas da Caatinga, sem afirmar presença permanente dessas comunidades em Portomonte.",
+      "vida_cotidiana": "Um conto de viagem é pago com comida compartilhada ou outra narrativa; mapas só são mostrados a quem aceita proteger seus lugares de origem.",
+      "conflito": "A narrativa de uma guerra antiga, contada por uma visita insular, contradiz a memória de um veterano orc.",
+      "conexoes_preexistentes": [
+        "lugar:ilhas-costa-sul",
+        "povoamento-proposto:farol-das-memorias",
+        "caatinga:comunidade:pedra-nove-silencios"
+      ],
+      "restricao_de_canon": "Não pressupõe que tortles e tabaxis dividam uma ilha, nem que mantenham uma rota definida para o interior.",
+      "estado": "proposta"
+    }
+  ],
+  "pessoas": [
+    {
+      "id": "fronteira:pessoa:nala",
+      "nome": "Nala Duas-Balas",
+      "base_regional": "regiao:caatinga",
+      "relacao_com_personagem_existente": "caatinga:pessoa:nala",
+      "papel_social": "Armeira itinerante; personagem reaproveitada do ciclo anterior.",
+      "objetivo": "Negociar ferramentas sem incentivar ataques contra quem cultiva o litoral.",
+      "medo": "Que barrar uma venda deixe os aprendizes sem recursos.",
+      "dilema_pessoal": "Aceita reparar um arado pelo preço do metal, mas receberá uma grande encomenda de armas na mesma tarde.",
+      "primeira_aparicao": "Exige que o cliente escreva o destino da compra antes de negociar.",
+      "referencias": [
+        "caatinga:comunidade:feira-ferragens"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2760",
+        "movimento-classe:paragrafo-2782"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:pessoa:tiru",
+      "nome": "Tiru das Trilhas Curvas",
+      "base_regional": "regiao:caatinga",
+      "relacao_com_personagem_existente": "caatinga:pessoa:tiru",
+      "papel_social": "Mensageiro que evita assumir compromissos por todo um povo.",
+      "objetivo": "Proteger viajantes sem divulgar caminhos de refúgio.",
+      "medo": "Que sua informação seja transformada em rota de caça.",
+      "dilema_pessoal": "Sabe que omitir uma trilha pode deixar uma família esperando socorro.",
+      "primeira_aparicao": "Entrega um contrato onde as duas partes assinaram entendimentos diferentes.",
+      "referencias": [
+        "caatinga:comunidade:feira-ferragens",
+        "caatinga:rota:fronteira-sem-pontos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-classe:paragrafo-2782"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:pessoa:borr",
+      "nome": "Borr de Olho Seco",
+      "base_regional": "regiao:caatinga",
+      "relacao_com_personagem_existente": "caatinga:pessoa:borr",
+      "papel_social": "Antigo batedor que poderia atuar como guia, sem representar todos os clãs.",
+      "objetivo": "Separar trabalho de escolta da propriedade das passagens.",
+      "medo": "Que uma patrulha descubra os abrigos de sua gente.",
+      "dilema_pessoal": "Parte do trajeto que conhece foi usado antes por saqueadores; ele também o conhece por ter resgatado sobreviventes.",
+      "primeira_aparicao": "Oferece orientação parcial e pede que ninguém marque o caminho num mapa.",
+      "referencias": [
+        "caatinga:comunidade:poco-sem-bandeira"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-837",
+        "movimento-povo:paragrafo-843"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:pessoa:gema",
+      "nome": "Gema da Falésia",
+      "base_regional": "regiao:costa-sul",
+      "relacao_com_personagem_existente": null,
+      "papel_social": "Agricultora humana hipotética ligada aos debates sobre irrigação ritual na área de Portomonte.",
+      "objetivo": "Que os agricultores preservem sua água de cultivo e não neguem hospitalidade aos necessitados.",
+      "medo": "Que o templo seja acusado de favorecer uma família e provoque divisão entre cultivadores.",
+      "dilema_pessoal": "Defende acolher famílias do interior, mas se opõe a qualquer promessa de água para beber que ninguém verificou.",
+      "primeira_aparicao": "Aparece com as mãos cobertas de terra e oferece sementes, não água purificada, aos visitantes.",
+      "referencias": [
+        "lugar:portomonte",
+        "povoamento-proposto:hortas-do-sal"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:pessoa:antera",
+      "nome": "Antera dos Lacres Claros",
+      "base_regional": "regiao:costa-sul",
+      "relacao_com_personagem_existente": null,
+      "papel_social": "Intérprete de contratos e reparadora de recipientes, sem cargo oficial declarado em Portomonte.",
+      "objetivo": "Fazer acordos inteligíveis a quem não sabe ler ou nunca usou a linguagem de um contrato.",
+      "medo": "Que um acordo legítimo possa esconder escravidão ou punição contra uma família.",
+      "dilema_pessoal": "A mesma cláusula que protege compradores da costa autoriza apreender a mercadoria se houver suspeita de saque.",
+      "primeira_aparicao": "Lê em voz alta um contrato e pergunta quem gostaria que o texto fosse explicado outra vez.",
+      "referencias": [
+        "caatinga:comunidade:patio-cabacas",
+        "lugar:portomonte"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2782",
+        "movimento-classe:paragrafo-2817"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:pessoa:mestre-casco",
+      "nome": "Mestre Córima do Casco Verde",
+      "base_regional": "regiao:costa-sul",
+      "relacao_com_personagem_existente": null,
+      "papel_social": "Tortle viajante hipotético, portador de tradições de hospitalidade, sem localização insular individual atribuída.",
+      "objetivo": "Impedir que memórias de violência sejam usadas para punir descendentes de antigos inimigos.",
+      "medo": "Que abrir um relato de viagem revele a localização de um refúgio.",
+      "dilema_pessoal": "Conhece uma história de salvamento contada por duas comunidades rivais de maneira incompatível.",
+      "primeira_aparicao": "Pede que todos terminem de ouvir o relato do outro antes de aceitar refeições ou negociar.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "povoamento-proposto:farol-das-memorias"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-898"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:pessoa:saha",
+      "nome": "Sahá de Rota Nenhuma",
+      "base_regional": "regiao:costa-sul",
+      "relacao_com_personagem_existente": null,
+      "papel_social": "Tabaxi viajante hipotética interessada em registrar relatos e desenhos de caminhos sem vender o trajeto completo.",
+      "objetivo": "Registrar contatos culturais que sobrevivam à próxima guerra.",
+      "medo": "Que comerciantes ou militares usem seus esboços para capturar viajantes.",
+      "dilema_pessoal": "Desenha uma rota deliberadamente incompleta para preservar quem lhe deu hospitalidade.",
+      "primeira_aparicao": "Mostra um mapa com espaços vazios e pergunta aos personagens que lugares nunca deveriam ser escritos.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "povoamento-proposto:farol-das-memorias"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-906",
+        "movimento-povo:paragrafo-908"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:pessoa:mara",
+      "nome": "Mara das Duas Tigelas",
+      "base_regional": "regiao:costa-sul",
+      "relacao_com_personagem_existente": null,
+      "papel_social": "Cuidadora e cozinheira de uma hospedaria móvel hipotética, não uma instituição pública da Costa Sul.",
+      "objetivo": "Que pessoas deslocadas encontrem proteção enquanto procuram quem possa acolhê-las.",
+      "medo": "Que aceitar hóspedes sem planejamento esgote provisões para quem já depende dela.",
+      "dilema_pessoal": "Sua regra de hospitalidade exige comida para cada pessoa, mas não lhe dá capacidade ilimitada de alimentar famílias.",
+      "primeira_aparicao": "Divide a última refeição da panela e explica que amanhã alguém precisará trazer ingredientes.",
+      "referencias": [
+        "lugar:portomonte",
+        "caatinga:comunidade:patio-cabacas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-898"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:pessoa:nilku",
+      "nome": "Nilku das Marés Discutidas",
+      "base_regional": "regiao:costa-sul",
+      "relacao_com_personagem_existente": null,
+      "papel_social": "Kuo-toa hipotético que questiona uma exigência sacrificial e procura testemunhas; não representa um povo ou uma facção conhecida.",
+      "objetivo": "Questionar um sacrifício anunciado por líderes religiosos sem destruir a fé dos familiares que permanecem nas cavernas.",
+      "medo": "Ser confundido tanto com um espião quanto com uma vítima a ser silenciada.",
+      "dilema_pessoal": "Usa a linguagem ritual que muitos temem; sabe identificar a hierarquia de um santuário, mas não pode provar uma ameaça concreta à costa.",
+      "primeira_aparicao": "Surge pedindo que ninguém deduza, apenas por suas escamas, que ele participou de um ataque.",
+      "referencias": [
+        "lugar:cavernas-kuo-toa"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-921",
+        "movimento-povo:paragrafo-913"
+      ],
+      "estado": "proposta"
+    }
+  ],
+  "acordos": [
+    {
+      "id": "fronteira:acordo:primeira-tigela",
+      "nome": "Direito à Primeira Tigela",
+      "quem_tentaria_assinar": [
+        "fronteira:pessoa:gema",
+        "fronteira:pessoa:mara",
+        "fronteira:pessoa:borr"
+      ],
+      "protocolo_proposto": "Um visitante pode pedir socorro básico sem precisar entregar arma, título ou identidade; qualquer provisão extra depende de negociação e capacidade real.",
+      "beneficio_se_funcionar": "Reduz decisões desesperadas e cria linguagem comum de hospitalidade.",
+      "custo_da_confianca": "Alguém precisa fornecer alimento, abrigo e recursos que não são infinitos.",
+      "conflito_de_interpretacao": "A obrigação de acolher não comprova direito a retirar água do templo de Deméter.",
+      "modo_de_fracasso": "Anfitriões podem ser pressionados a negar entrada ou impor condições humilhantes.",
+      "referencias": [
+        "caatinga:comunidade:poco-sem-bandeira",
+        "lugar:portomonte"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-898"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:acordo:peca-e-destino",
+      "nome": "Ferragem com Destino Declarado",
+      "quem_tentaria_assinar": [
+        "fronteira:pessoa:nala",
+        "fronteira:pessoa:antera",
+        "fronteira:pessoa:gema"
+      ],
+      "protocolo_proposto": "Uma oficina escreve quem encomenda a peça e qual aplicação declara; não exige conhecer o futuro nem dá poder legal automático para confisco.",
+      "beneficio_se_funcionar": "Permite questionar encomendas suspeitas sem criminalizar todos os artesãos ou orcs.",
+      "custo_da_confianca": "Compradores podem recusar registrar informações sensíveis, e ferramentas comuns têm uso duplo.",
+      "conflito_de_interpretacao": "O que fazer quando a peça prometida como agrícola é levada para uma incursão?",
+      "modo_de_fracasso": "Falsificação do destino ou denúncia infundada podem romper o comércio.",
+      "referencias": [
+        "caatinga:comunidade:feira-ferragens",
+        "lugar:portomonte"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2760",
+        "movimento-classe:paragrafo-2782"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:acordo:lacres-justos",
+      "nome": "Lacres Conferidos em Voz Alta",
+      "quem_tentaria_assinar": [
+        "fronteira:pessoa:antera",
+        "fronteira:pessoa:tiru"
+      ],
+      "protocolo_proposto": "Os dois lados conferem conteúdo, condição, quem responde pelo transporte e o que acontece se parte da carga se perder.",
+      "beneficio_se_funcionar": "Reduz retenções arbitrárias e torna possível testemunhar abusos.",
+      "custo_da_confianca": "Exige tradutores, tempo de inspeção e algum grau de confiança.",
+      "conflito_de_interpretacao": "Quem define quando mercadoria é suspeita: o transportador, a aldeia que a recebe ou uma guarda?",
+      "modo_de_fracasso": "Um lacre adulterado permite acusações contra gente inocente e pode bloquear reparos vitais.",
+      "referencias": [
+        "caatinga:comunidade:patio-cabacas",
+        "caatinga:rota:fronteira-sem-pontos"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2782",
+        "movimento-classe:paragrafo-2773"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:acordo:hospedaria-sem-mapa",
+      "nome": "Hospitalidade sem Mapa",
+      "quem_tentaria_assinar": [
+        "fronteira:pessoa:mestre-casco",
+        "fronteira:pessoa:saha",
+        "fronteira:pessoa:tiru"
+      ],
+      "protocolo_proposto": "Um hóspede pode receber abrigo e instruções de segurança sem que alguém registre publicamente a rota ou os nomes de famílias protegidas.",
+      "beneficio_se_funcionar": "Permite contatos entre comunidades sem abrir seus refúgios a patrulhas e saqueadores.",
+      "custo_da_confianca": "Guias não conseguem comprovar todos os trajetos sem revelar informação sensível.",
+      "conflito_de_interpretacao": "Uma expedição de resgate pede um mapa que também poderia ser explorado por perseguidores.",
+      "modo_de_fracasso": "A recusa de fornecer orientação pode custar vidas; fornecê-la pode destruir um abrigo.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "caatinga:comunidade:poco-sem-bandeira"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-906"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:acordo:escuta-dos-nove",
+      "nome": "Testemunho Sem Vingança",
+      "quem_tentaria_assinar": [
+        "fronteira:pessoa:mestre-casco",
+        "fronteira:pessoa:nilku",
+        "caatinga:pessoa:rukhan"
+      ],
+      "protocolo_proposto": "Relatos da Guerra de Nove Anos podem ser ouvidos sem obrigação de aceitar um relato único ou acusar descendentes de combatentes.",
+      "beneficio_se_funcionar": "Abre espaço para antigas alianças e lembranças de quem protegeu o outro lado.",
+      "custo_da_confianca": "Quem sofreu perdas pode considerar o protocolo uma tentativa de relativizar atrocidades.",
+      "conflito_de_interpretacao": "Um testemunho kuo-toa discorda da memória de um clã orc sobre uma antiga negociação.",
+      "modo_de_fracasso": "A roda pode virar tribunal improvisado, excluir vítimas ou revelar nomes que colocam vivos em perigo.",
+      "referencias": [
+        "caatinga:comunidade:pedra-nove-silencios",
+        "lugar:cavernas-kuo-toa"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta"
+    }
+  ],
+  "fluxos": [
+    {
+      "id": "fronteira:fluxo:ferragens",
+      "nome": "Ferragens em Dois Sentidos",
+      "origem_proposta": "caatinga:comunidade:feira-ferragens",
+      "destino_proposto": "lugar:portomonte",
+      "conteudo_hipotetico": "Ferramentas reparadas e peças com uso civil ou militar, em um comércio apenas possível.",
+      "sem_confirmacao": "Não há parceiro, preço, volume, estrada ou compra em Portomonte comprovados.",
+      "friccao": "O mesmo metal serve tanto a instrumentos de lavoura quanto a armas.",
+      "referencias": [
+        "caatinga:comunidade:feira-ferragens"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2760"
+      ],
+      "transporte_registrado": false,
+      "quantidade_registrada": false,
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:fluxo:sementes",
+      "nome": "Sementes e Relatos de Plantio",
+      "origem_proposta": "lugar:portomonte",
+      "destino_proposto": "caatinga:comunidade:baixio-sementes",
+      "conteudo_hipotetico": "Trocas possíveis de amostras e conhecimentos de plantio, sem pressupor sementes disponíveis para exportação.",
+      "sem_confirmacao": "A produção costeira depende da água purificada para agricultura; o interior não tem solo ou irrigação produtiva confirmados.",
+      "friccao": "Enviar sementes não garante que possam ser cultivadas na Caatinga.",
+      "referencias": [
+        "povoamento-proposto:hortas-do-sal",
+        "caatinga:comunidade:baixio-sementes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-povo:paragrafo-834"
+      ],
+      "transporte_registrado": false,
+      "quantidade_registrada": false,
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:fluxo:recipientes",
+      "nome": "Recipientes, Lacres e Reparos",
+      "origem_proposta": "caatinga:comunidade:patio-cabacas",
+      "destino_proposto": "lugar:portomonte",
+      "conteudo_hipotetico": "Cerâmica, reparos e técnicas de vedação eventualmente trocadas entre artesãos.",
+      "sem_confirmacao": "Sem confirmação de comércio direto ou potabilidade da água que cada recipiente guardaria.",
+      "friccao": "Um recipiente etiquetado como cheio pode não ter recebido água.",
+      "referencias": [
+        "caatinga:comunidade:patio-cabacas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831"
+      ],
+      "transporte_registrado": false,
+      "quantidade_registrada": false,
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:fluxo:noticias",
+      "nome": "Notícias sem Rota Escrita",
+      "origem_proposta": "lugar:ilhas-costa-sul",
+      "destino_proposto": "caatinga:comunidade:pedra-nove-silencios",
+      "conteudo_hipotetico": "Relatos de viagem de tortles e tabaxis e memórias orcs da guerra antiga, se houver encontro entre viajantes.",
+      "sem_confirmacao": "Não se presume rota sazonal insular específica, presença permanente ou comércio direto com a Caatinga.",
+      "friccao": "Vender um relato como mapa pode comprometer comunidades de refúgio.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "caatinga:comunidade:pedra-nove-silencios"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-906"
+      ],
+      "transporte_registrado": false,
+      "quantidade_registrada": false,
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:fluxo:acolhimento",
+      "nome": "Pedidos de Acolhimento",
+      "origem_proposta": "caatinga:comunidade:patio-cabacas",
+      "destino_proposto": "regiao:costa-sul",
+      "conteudo_hipotetico": "Solicitações de hospitalidade e notícias sobre pessoas deslocadas em ambos os sentidos, de caráter eventual.",
+      "sem_confirmacao": "Não comprova que Portomonte acolheu refugiados de Eldroth nem estabelece número de abrigados.",
+      "friccao": "O dever de acolher entra em conflito com provisões limitadas.",
+      "referencias": [
+        "lugar:portomonte",
+        "caatinga:comunidade:patio-cabacas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-898"
+      ],
+      "transporte_registrado": false,
+      "quantidade_registrada": false,
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:fluxo:marcas-rituais",
+      "nome": "Marcas e Alertas do Mar",
+      "origem_proposta": "lugar:cavernas-kuo-toa",
+      "destino_proposto": "regiao:caatinga",
+      "conteudo_hipotetico": "Uma mensagem hipotética de dissidência ou um testemunho sobre ritos da costa, nunca um transporte material confirmado.",
+      "sem_confirmacao": "Não há origem individual da mensagem documentada; nem todo kuo-toa está envolvido em incursões, e o relato não demonstra que Portomonte foi atacada.",
+      "friccao": "Escutar um mensageiro pode ser lido como espionagem por uns e como tentativa de paz por outros.",
+      "referencias": [
+        "lugar:cavernas-kuo-toa",
+        "caatinga:comunidade:pedra-nove-silencios"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-921",
+        "movimento-povo:paragrafo-835"
+      ],
+      "transporte_registrado": false,
+      "quantidade_registrada": false,
+      "estado": "proposta"
+    }
+  ],
+  "cenas": [
+    {
+      "id": "fronteira:cena:duas-medidas",
+      "titulo": "Duas medidas, nenhuma resposta",
+      "encontro_id": "fronteira:encontro:varanda-da-agua",
+      "personagens_id": [
+        "fronteira:pessoa:gema",
+        "fronteira:pessoa:mara",
+        "fronteira:pessoa:tiru"
+      ],
+      "rotina_antes_da_crise": "Gema mostra canteiros e explica quais tarefas consomem a água ritualmente purificada.",
+      "acontecimento_inesperado": "Uma pessoa de passagem pede água para beber; outro visitante afirma que a água agrícola lhe faria bem.",
+      "acoes_possiveis": "Recusar afirmar potabilidade, buscar água de outra origem, negociar hospitalidade ou investigar uma fonte segura.",
+      "consequencia_condicional": "Prometer água como bebida sem evidência pode causar dano e comprometer a confiança de quem cultiva o litoral.",
+      "referencias": [
+        "lugar:portomonte",
+        "caatinga:comunidade:poco-sem-bandeira"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:cena:pedido-sem-destino",
+      "titulo": "A encomenda que não assina",
+      "encontro_id": "fronteira:encontro:boca-do-pano",
+      "personagens_id": [
+        "fronteira:pessoa:nala",
+        "fronteira:pessoa:antera",
+        "fronteira:pessoa:borr"
+      ],
+      "rotina_antes_da_crise": "Nala explica uma peça de reparo a compradores e Antera lê as condições de entrega.",
+      "acontecimento_inesperado": "Um contratante quer ocultar o destino de lâminas que serviriam tanto a ferramentas quanto a armas.",
+      "acoes_possiveis": "Aceitar por necessidade, recusar, exigir cláusula de destino, investigar o comprador.",
+      "consequencia_condicional": "A decisão pode preservar a feira ou alimentar uma futura incursão ainda hipotética.",
+      "referencias": [
+        "caatinga:comunidade:feira-ferragens"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:cena:mapa-com-rasura",
+      "titulo": "O caminho que não pode ser lembrado",
+      "encontro_id": "fronteira:encontro:roda-das-historias",
+      "personagens_id": [
+        "fronteira:pessoa:saha",
+        "fronteira:pessoa:mestre-casco",
+        "fronteira:pessoa:tiru"
+      ],
+      "rotina_antes_da_crise": "Viajantes compartilham relatos sem expor onde ficam seus refúgios.",
+      "acontecimento_inesperado": "Uma família pede um mapa completo para buscar alguém desaparecido; a mesma cópia poderia ser roubada por uma patrulha.",
+      "acoes_possiveis": "Organizar guia presencial, revelar trecho parcial, propor troca de reféns, negar orientação.",
+      "consequencia_condicional": "A busca pode falhar por falta de informação ou expor abrigos caso o mapa circule.",
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "caatinga:comunidade:poco-sem-bandeira"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:cena:hospede-sem-nome",
+      "titulo": "O hóspede que parece inimigo",
+      "encontro_id": "fronteira:encontro:tres-pedras",
+      "personagens_id": [
+        "fronteira:pessoa:nilku",
+        "fronteira:pessoa:mestre-casco",
+        "fronteira:pessoa:borr"
+      ],
+      "rotina_antes_da_crise": "O pacto local garante que cada hóspede possa apresentar sua razão para estar ali.",
+      "acontecimento_inesperado": "Nilku, um kuo-toa, pede abrigo e uma família exige que ele seja expulso por associação a ataques regionais.",
+      "acoes_possiveis": "Ouvir relato e provas, negociar restrições, oferecer proteção condicional ou recusar entrada.",
+      "consequencia_condicional": "Acolher pode ajudar a revelar ritos coercitivos; expulsar pode entregar o hóspede a perseguidores sem esclarecer nada.",
+      "referencias": [
+        "lugar:cavernas-kuo-toa",
+        "caatinga:comunidade:pedra-nove-silencios"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:cena:lacre-rasgado",
+      "titulo": "A carga de alguém que não chegou",
+      "encontro_id": "fronteira:encontro:escada-de-corda",
+      "personagens_id": [
+        "fronteira:pessoa:antera",
+        "fronteira:pessoa:tiru",
+        "fronteira:pessoa:gema"
+      ],
+      "rotina_antes_da_crise": "Antera confere recipientes e tenta identificar o responsável por cada lacre.",
+      "acontecimento_inesperado": "A carga está intacta, mas o transportador desapareceu e o contrato autoriza apreensão da pessoa em caso de suspeita.",
+      "acoes_possiveis": "Investigar o desaparecimento, contestar cláusula, depositar carga em guarda temporária, buscar testemunhas.",
+      "consequencia_condicional": "Confiscar sem apurar pode punir uma família; liberar tudo pode esconder um crime.",
+      "referencias": [
+        "caatinga:comunidade:patio-cabacas",
+        "lugar:portomonte"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:cena:nove-teste",
+      "titulo": "O nono testemunho",
+      "encontro_id": "fronteira:encontro:roda-das-historias",
+      "personagens_id": [
+        "fronteira:pessoa:mestre-casco",
+        "fronteira:pessoa:nilku",
+        "fronteira:pessoa:saha"
+      ],
+      "rotina_antes_da_crise": "Uma história de viagem é oferecida em troca de outra sobre a guerra antiga.",
+      "acontecimento_inesperado": "Uma versão do combate aos kuo-toa contradiz a memória recitada por quem veio da Caatinga.",
+      "acoes_possiveis": "Escutar versões separadas, procurar evidência, proteger testemunhas, deixar uma lacuna explícita.",
+      "consequencia_condicional": "Impor uma história única pode reabrir vinganças; calar todas as versões também apaga possíveis vítimas.",
+      "referencias": [
+        "caatinga:comunidade:pedra-nove-silencios",
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta"
+    }
+  ],
+  "tramas": [
+    {
+      "id": "fronteira:trama:agua-em-dois-nomes",
+      "titulo": "A água que tem dois nomes",
+      "pergunta_motriz": "Uma água usada para salvar uma lavoura também pode ser prometida para salvar uma família?",
+      "etapas_propostas": [
+        "O pedido de acolhimento chega à Boca do Pano Pardo.",
+        "Gema e Aru avaliam o que realmente sabem sobre a água disponível.",
+        "Um acordo provisório precisa ser cumprido diante de novas pessoas deslocadas."
+      ],
+      "decisoes_para_o_mestre": [
+        "A água disponível é apropriada ao consumo? Só o jogo poderá estabelecer com evidência.",
+        "Quem responde pelo custo da hospitalidade?",
+        "Quem pode suspender o acordo sem se tornar tirano?"
+      ],
+      "efeitos_de_mundo_condicionais": [
+        "Se surgir uma fonte segura, a cooperação pode substituir cobranças por serviços comuns.",
+        "Se a água for insuficiente, a comunidade poderá reagrupar abrigo ou negociar ajuda, sem garantia de sucesso."
+      ],
+      "limite_de_canon": "O templo de Deméter documentadamente purifica água para agricultura; não declarar potabilidade doméstica.",
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:trama:ferragem-que-volta",
+      "titulo": "A ferramenta que voltou como arma",
+      "pergunta_motriz": "Quem responde por um objeto que passa de mão em mão durante uma guerra?",
+      "etapas_propostas": [
+        "Nala recebe encomenda com destino opaco.",
+        "Uma peça semelhante surge após notícia de incursão, sem identidade do agressor confirmada.",
+        "Antera e Tiru encontram documentos incompatíveis."
+      ],
+      "decisoes_para_o_mestre": [
+        "Quando desconfiar vira acusação injusta?",
+        "A oficina deve rastrear compradores mesmo à custa de expor refugiados?",
+        "Reparar armas é sempre cumplicidade?"
+      ],
+      "efeitos_de_mundo_condicionais": [
+        "Um acordo sobre destino pode reduzir violência ou afastar compradores honestos.",
+        "A revelação de uma fraude pode dividir o Ofício da Ferrugem Andante."
+      ],
+      "limite_de_canon": "As incursões sobre a Costa Sul são regionais e documentadas, mas não há ataque individual a Portomonte confirmado.",
+      "estado": "proposta"
+    },
+    {
+      "id": "fronteira:trama:nove-ecos",
+      "titulo": "Nove ecos de uma guerra",
+      "pergunta_motriz": "Que lembranças podem aproximar antigos inimigos sem apagar violência?",
+      "etapas_propostas": [
+        "Rukhan procura testemunhos sobre a Guerra de Nove Anos.",
+        "Mestre Córima oferece memória insular incompleta.",
+        "Nilku pede para ser ouvido sem representar todos os kuo-toa."
+      ],
+      "decisoes_para_o_mestre": [
+        "Há quem ganhe poder político com uma versão única?",
+        "Quem testemunha sem colocar a família em perigo?",
+        "A hospitalidade deve abranger alguém associado ao povo adversário?"
+      ],
+      "efeitos_de_mundo_condicionais": [
+        "Uma reunião poderá produzir cooperação ou criar novas fraturas entre clãs.",
+        "Novas versões podem afetar futuras negociações sem reescrever a história estabelecida."
+      ],
+      "limite_de_canon": "A guerra contra os kuo-toa pertence ao Hack; os testemunhos e encontros concretos ainda são propostas.",
+      "estado": "proposta"
+    }
+  ],
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false
+}

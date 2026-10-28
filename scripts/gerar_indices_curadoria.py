@@ -247,6 +247,28 @@ def build():
     lore_crosswalk=sorted(load("data/lore/hack-carcaca-dw-pontes-atlas.json")["pontes"],key=lambda x:x["id"])
     povoamento_proposto=load("data/propostas/povoamento-regional-hack-carcaca.json")
     caatinga_rede_social=load("data/propostas/caatinga-rede-social-hack.json")
+    fronteira=load("data/propostas/fronteira-caatinga-costa-sul-hack.json")
+    tipos_fronteira=("encontros","pessoas","acordos","fluxos","cenas","tramas")
+    elementos_fronteira=[
+      {"tipo":tipo,**elemento}
+      for tipo in tipos_fronteira for elemento in fronteira[tipo]
+    ]
+    def indexar_fronteira(chave):
+        mapping=defaultdict(set)
+        for elemento in elementos_fronteira:
+            val=elemento.get(chave,[])
+            vals=val if isinstance(val,list) else [val]
+            for v in vals:
+                if v: mapping[v].add(elemento["id"])
+        return {k:sorted(v) for k,v in sorted(mapping.items())}
+    indice_fronteira={
+      "by_tipo":indexar_fronteira("tipo"),
+      "by_movimento_hack":indexar_fronteira("movimentos_inspiradores"),
+      "by_ancora_regional":indexar_fronteira("ancora_regional"),
+      "by_encontro":indexar_fronteira("encontro_id")
+    }
+    if len(elementos_fronteira)!=34 or len(indice_fronteira["by_tipo"])!=6:
+        raise ValueError("Fronteira: esperados 34 elementos em seis categorias")
     caatinga_entidades=[
         {**elemento,"tipo":tipo,"subtipo_social":elemento.get("tipo")}
         for tipo in ("comunidades","coletivos","pessoas","pontos_agua","rotas","conflitos","cenas")
@@ -589,6 +611,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "frontier_caatinga_costa_sul":"frontier-caatinga-costa-sul.json",
+        "frontier_caatinga_costa_sul_indexes":"frontier-caatinga-costa-sul-indexes.json",
         "caatinga_social_network":"caatinga-social-network.json",
         "caatinga_social_indexes":"caatinga-social-indexes.json",
         "regional_population_proposals":"regional-population-proposals.json",
@@ -693,6 +717,9 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_entidades_fronteira_propostas":len(elementos_fronteira),
+        "total_encontros_fronteira_propostos":len(fronteira["encontros"]),
+        "total_pessoas_fronteira_propostas":len(fronteira["pessoas"]),
         "total_entidades_caatinga_propostas":len(caatinga_entidades),
         "total_comunidades_caatinga_propostas":len(caatinga_rede_social["comunidades"]),
         "total_npcs_caatinga_propostos":len(caatinga_rede_social["pessoas"]),
@@ -783,6 +810,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["frontier_caatinga_costa_sul"]:fronteira,
+           files["frontier_caatinga_costa_sul_indexes"]:indice_fronteira,
            files["caatinga_social_network"]:caatinga_rede_social,
            files["caatinga_social_indexes"]:caatinga_rede_indices,
            files["regional_population_proposals"]:povoamento_proposto,

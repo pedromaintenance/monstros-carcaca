@@ -2283,6 +2283,76 @@ def validar_rede_social_caatinga():
             for x in data["cenas"]),"Cenas devem ter abertura e consequência condicional.")
     print("Povoamento da Caatinga: 38 entidades propostas em sete categorias, sem novos fatos ou mapas canônicos.")
 
+
+def validar_fronteira_caatinga_costa_sul():
+    """Valida povoamento propositivo sem transformar a hipótese de comércio em fato."""
+    data=load("data/propostas/fronteira-caatinga-costa-sul-hack.json")
+    sections={"encontros":5,"pessoas":9,"acordos":5,"fluxos":6,"cenas":6,"tramas":3}
+    require(data["estado"]=="propostas_narrativas_nao_canonicas"
+            and data["regioes_envolvidas"]==["regiao:caatinga","regiao:costa-sul"]
+            and data["aprovacao_autoral"] is False
+            and data["efeito_automatico_no_canon"] is False,
+            "Fronteira não pode homologar cânone ou forçar comércio.")
+    require(data["totais_propostos"]==sections and
+            all(len(data[k])==n for k,n in sections.items()),
+            "Fronteira perdeu elementos.")
+    all_entities=[x for k in sections for x in data[k]]
+    all_ids={x["id"] for x in all_entities}
+    require(len(all_entities)==34 and len(all_ids)==34,
+            "Elementos da fronteira duplicados ou perdidos.")
+    require(all(x["estado"]=="proposta" for x in all_entities),
+            "Evento da fronteira tornou-se canônico indevidamente.")
+    classes=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")["movimentos"]
+    povos=load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]
+    move_ids={x["id"] for x in classes+povos}
+    for section in ("pessoas","acordos","fluxos"):
+        for obj in data[section]:
+            require(1<=len(obj["movimentos_inspiradores"])<=4
+                    and all(x in move_ids for x in obj["movimentos_inspiradores"]),
+                    "Movimento do Hack sem origem válida.")
+    caatinga=load("data/propostas/caatinga-rede-social-hack.json")
+    ids_caatinga={x["id"] for k in ("comunidades","coletivos","pessoas","pontos_agua","rotas","conflitos","cenas")
+                  for x in caatinga[k]}
+    past=load("data/propostas/povoamento-regional-hack-carcaca.json")
+    ids_past={x["id"] for x in past["sementes"]}
+    places=load("data/lugares_carcaca.json")
+    ids_places={x["id"] for x in places["lugares"]}
+    settlements={"assentamento:portomonte"}
+    permitted=all_ids|ids_caatinga|ids_past|ids_places|settlements|{
+                "regiao:caatinga","regiao:costa-sul"}
+    for obj in all_entities:
+        require(obj["id"].startswith("fronteira:"),
+                "Namespace não separado da curadoria factual.")
+        ref_lists=["referencias","conexoes_preexistentes"]
+        for key in ref_lists:
+            require(all(x in permitted for x in obj.get(key,[])),
+                    "Referência inexistente no cenário/proposta: "+obj["id"])
+        for key in ("origem_proposta","destino_proposto","encontro_id"):
+            if key in obj:
+                require(obj[key] in permitted,
+                        "Fronteira cita local sem ficha ou identificador editorial.")
+        for key in ("personagens_id","quem_tentaria_assinar"):
+            if key in obj:
+                require(all(x in permitted for x in obj[key]),
+                        "Fronteira cita personagem sem ficha.")
+    for place in data["encontros"]:
+        require(place["localizacao_confirmada"] is False
+                and place["territorio_hypotetico"] is True,
+                "Ponto de encontro não deve ser mapeado como fato.")
+    for flow in data["fluxos"]:
+        require(flow["transporte_registrado"] is False
+                and flow["quantidade_registrada"] is False,
+                "Troca proposta não pode estabelecer produção, mercadoria ou rota documentada.")
+    for s in data["cenas"]:
+        require(s["encontro_id"] in {x["id"] for x in data["encontros"]}
+                and len(s["acoes_possiveis"])>=3
+                and len(s["acontecimento_inesperado"])>=25,
+                "Cena sem ponto de encontro ou escolha significativa.")
+    require(any("Portomonte" in t for t in data["limites_editoriais"])
+            and any("potabilidade" in x.lower() for x in data["fatos_preservados"]),
+            "Não suprimir ressalvas sobre água e comércio.")
+    print("Fronteira Caatinga–Costa Sul: 34 propostas, 6 categorias, 0 eventos/rotas canonizados.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2397,6 +2467,7 @@ def main():
     validar_fechamento_classes_integrais()
     validar_povoamento_narrativo_hack()
     validar_rede_social_caatinga()
+    validar_fronteira_caatinga_costa_sul()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

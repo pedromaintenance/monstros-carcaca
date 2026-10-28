@@ -60,6 +60,32 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getFrontierCaatingaCostaSul(){return byKey("frontier_caatinga_costa_sul");}
+  async function getFrontierCaatingaCostaSulIndexes(){return byKey("frontier_caatinga_costa_sul_indexes");}
+  async function getFrontierEntity(id){
+    if(typeof id!=="string"||!id.startsWith("fronteira:"))return null;
+    const d=await getFrontierCaatingaCostaSul();
+    for(const kind of ["encontros","pessoas","acordos","fluxos","cenas","tramas"]){
+      const obj=d[kind].find(e=>e.id===id);
+      if(obj)return {...obj,tipo:kind};
+    }
+    return null;
+  }
+  async function searchFrontierEntities({tipo,regiaoId,movimentoHack,encontroId,query}={}){
+    const d=await getFrontierCaatingaCostaSul();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const out=["encontros","pessoas","acordos","fluxos","cenas","tramas"]
+      .flatMap(k=>d[k].map(x=>({...x,tipo:k})));
+    return out.filter(x=>
+      (!tipo||x.tipo===tipo)&&
+      (!regiaoId||x.ancora_regional===regiaoId||x.base_regional===regiaoId||
+        x.origem_proposta===regiaoId||x.destino_proposto===regiaoId)&&
+      (!movimentoHack||(x.movimentos_inspiradores??[]).includes(movimentoHack))&&
+      (!encontroId||x.id===encontroId||x.encontro_id===encontroId)&&
+      (!query||norm([x.nome,x.titulo,x.conceito,x.vida_cotidiana,x.conflito,
+        x.objetivo,x.disputa,x.acontecimento_inesperado,x.pergunta_motriz]
+        .filter(Boolean).join(" ")).includes(norm(query))));
+  }
   async function getCaatingaSocialNetwork(){return byKey("caatinga_social_network");}
   async function getCaatingaSocialIndexes(){return byKey("caatinga_social_indexes");}
   async function getCaatingaEntity(id){
@@ -1033,6 +1059,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getRegionalPopulationProposals,getRegionalPopulationProposalIndexes,
           getRegionalPopulationProposal,searchRegionalPopulationProposals,
           getCaatingaSocialNetwork,getCaatingaSocialIndexes,getCaatingaEntity,searchCaatingaEntities,
+          getFrontierCaatingaCostaSul,getFrontierCaatingaCostaSulIndexes,
+          getFrontierEntity,searchFrontierEntities,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,

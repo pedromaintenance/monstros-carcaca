@@ -400,3 +400,10 @@ Consulta: `getRegionalPopulationProposals()`, `searchRegionalPopulationProposals
 Desenvolvida como proposta narrativa em **38 entidades**: cinco comunidades, cinco coletivos, oito personagens, quatro pontos de água, seis conexões de circulação, quatro conflitos e seis cenas. Articula o Poço Sem Bandeira e a Feira das Ferragens Trocadas às novas comunidades do Pátio das Cabaças Lacradas, Pedra dos Nove Silêncios e Baixio das Sementes Guardadas.
 
 As regras do Hack orientam valores e práticas, não autorizam efeitos nem provam que todos os orcs compartilhem uma ideologia. A ligação com Portomonte é explicitamente condicional, sem coordenadas, volumes de água, população ou estrada comprovados. A fonte está em `data/propostas/caatinga-rede-social-hack.json`; detalhes em [Caatinga habitada](docs/CAATINGA_POVOAMENTO_CICLO2.md).
+
+
+## Povoamento III — fronteira Caatinga/Costa Sul
+
+Uma rede **não canônica** de **34 elementos propostos** conecta sociedades do interior e da Costa Sul: cinco encontros de passagem, nove personagens, cinco pactos negociáveis, seis fluxos condicionais, seis cenas e três tramas. As referências às classes e povos do Hack servem de inspiração para costumes e conflitos, não de autorização mecânica. A água do templo de Deméter é comprovadamente purificada para lavoura, não para beber; comércio direto com a Caatinga não está confirmado e ataques regionais não comprovam evento específico em Portomonte.
+
+Fonte `data/propostas/fronteira-caatinga-costa-sul-hack.json`, documentação [Fronteira Caatinga/Costa Sul](docs/FRONTEIRA_CAATINGA_COSTA_SUL.md), API `getFrontierCaatingaCostaSul` e `searchFrontierEntities`.
