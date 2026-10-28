@@ -1,8 +1,5 @@
 {
   "by_tipo": {
-    "associacao_de_guardioes": [
-      "caatinga:coletivo:semente-oca"
-    ],
     "cenas": [
       "caatinga:cena:contrato-sem-nome",
       "caatinga:cena:cova-de-sementes",
@@ -11,12 +8,12 @@
       "caatinga:cena:lacres-vazios",
       "caatinga:cena:nicho-contestado"
     ],
-    "cla_orc": [
+    "coletivos": [
+      "caatinga:coletivo:cinza-lavada",
       "caatinga:coletivo:esteira-rachada",
-      "caatinga:coletivo:nove-nos"
-    ],
-    "coalizao_multietnica": [
-      "caatinga:coletivo:cinza-lavada"
+      "caatinga:coletivo:ferrugem-andante",
+      "caatinga:coletivo:nove-nos",
+      "caatinga:coletivo:semente-oca"
     ],
     "comunidades": [
       "caatinga:comunidade:baixio-sementes",
@@ -30,9 +27,6 @@
       "caatinga:conflito:nove-versoes",
       "caatinga:conflito:soldo-ou-pao",
       "caatinga:conflito:ultima-semente"
-    ],
-    "gremio_de_artesaos": [
-      "caatinga:coletivo:ferrugem-andante"
     ],
     "pessoas": [
       "caatinga:pessoa:aru",
