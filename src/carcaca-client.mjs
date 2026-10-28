@@ -60,6 +60,37 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getVandarMemoryAndDead(){return byKey("vandar_memory_and_dead");}
+  async function getVandarMemoryAndDeadIndexes(){return byKey("vandar_memory_and_dead_indexes");}
+  async function getVandarMemoryAndDeadEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xvii:"))return null;
+    const data=await getVandarMemoryAndDead();
+    for(const categoria of ["fases","tecidos_urbanos","modalidades_de_prova",
+      "situacoes_de_morte","papeis_sociais","modelos_do_dominio","vinhetas","decisoes_para_autor"]){
+      const item=data[categoria].find(x=>x.id===id);
+      if(item)return {...item,categoria};
+    }
+    return null;
+  }
+  async function searchVandarMemoryAndDead({categoria,dominio,modalidade,distincao,tecidoId,pagina,query}={}){
+    const data=await getVandarMemoryAndDead();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return ["fases","tecidos_urbanos","modalidades_de_prova","situacoes_de_morte",
+      "papeis_sociais","modelos_do_dominio","vinhetas"].flatMap(cat=>
+      data[cat].map(x=>({...x,categoria:cat}))).filter(x=>{
+        const f=x.fonte_contextual??x.evidencia??x.evidencia_comum;
+        return (!categoria||x.categoria===categoria)&&
+          (!dominio||(x.dominio??x.campo_de_interesse)===dominio)&&
+          (!modalidade||x.modalidade===modalidade)&&
+          (!distincao||x.distincao_juridica_proposta===distincao)&&
+          (!tecidoId||x.tecido_urbano_id===tecidoId||x.id===tecidoId)&&
+          (pagina===undefined||f?.pagina===Number(pagina))&&
+          (!query||norm([x.nome,x.nome_editorial,x.pergunta_historica,
+            x.desdobramento_possivel,x.utilizacao_possivel,x.cautela,
+            x.hipotese_de_poder,x.abertura_condicional,x.evidencia?.sintese]
+            .filter(Boolean).join(" ")).includes(norm(query)));
+      });
+  }
   async function getEldrothSylaraOccupation(){return byKey("eldroth_sylara_occupation");}
   async function getEldrothSylaraOccupationIndexes(){return byKey("eldroth_sylara_occupation_indexes");}
   async function getEldrothSylaraOccupationEntry(id){
@@ -1387,6 +1418,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getVandarMemoryAndDead,getVandarMemoryAndDeadIndexes,
+          getVandarMemoryAndDeadEntry,searchVandarMemoryAndDead,
           getEldrothSylaraOccupation,getEldrothSylaraOccupationIndexes,
           getEldrothSylaraOccupationEntry,searchEldrothSylaraOccupation,
           getEldrothPreconquest,getEldrothPreconquestIndexes,
