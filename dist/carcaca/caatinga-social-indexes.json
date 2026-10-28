@@ -1,0 +1,289 @@
+{
+  "by_tipo": {
+    "associacao_de_guardioes": [
+      "caatinga:coletivo:semente-oca"
+    ],
+    "cenas": [
+      "caatinga:cena:contrato-sem-nome",
+      "caatinga:cena:cova-de-sementes",
+      "caatinga:cena:ferragem-sem-dono",
+      "caatinga:cena:fila-entre-espadas",
+      "caatinga:cena:lacres-vazios",
+      "caatinga:cena:nicho-contestado"
+    ],
+    "cla_orc": [
+      "caatinga:coletivo:esteira-rachada",
+      "caatinga:coletivo:nove-nos"
+    ],
+    "coalizao_multietnica": [
+      "caatinga:coletivo:cinza-lavada"
+    ],
+    "comunidades": [
+      "caatinga:comunidade:baixio-sementes",
+      "caatinga:comunidade:feira-ferragens",
+      "caatinga:comunidade:patio-cabacas",
+      "caatinga:comunidade:pedra-nove-silencios",
+      "caatinga:comunidade:poco-sem-bandeira"
+    ],
+    "conflitos": [
+      "caatinga:conflito:agua-ou-tributo",
+      "caatinga:conflito:nove-versoes",
+      "caatinga:conflito:soldo-ou-pao",
+      "caatinga:conflito:ultima-semente"
+    ],
+    "gremio_de_artesaos": [
+      "caatinga:coletivo:ferrugem-andante"
+    ],
+    "pessoas": [
+      "caatinga:pessoa:aru",
+      "caatinga:pessoa:borr",
+      "caatinga:pessoa:iram",
+      "caatinga:pessoa:nala",
+      "caatinga:pessoa:paja",
+      "caatinga:pessoa:rukhan",
+      "caatinga:pessoa:satira",
+      "caatinga:pessoa:tiru"
+    ],
+    "pontos_agua": [
+      "caatinga:agua:cacos-ceramica",
+      "caatinga:agua:coleta-do-aguaceiro",
+      "caatinga:agua:fenda-sazonal",
+      "caatinga:agua:poco-partilhado"
+    ],
+    "rotas": [
+      "caatinga:rota:barro-e-ferragem",
+      "caatinga:rota:caminho-memoria",
+      "caatinga:rota:feira-plantio",
+      "caatinga:rota:fronteira-sem-pontos",
+      "caatinga:rota:lacre-e-cantaro",
+      "caatinga:rota:sementes-lacres"
+    ]
+  },
+  "by_tema": {
+    "abrigo": [
+      "caatinga:comunidade:patio-cabacas"
+    ],
+    "agua": [
+      "caatinga:agua:cacos-ceramica",
+      "caatinga:agua:coleta-do-aguaceiro",
+      "caatinga:agua:fenda-sazonal",
+      "caatinga:agua:poco-partilhado",
+      "caatinga:cena:fila-entre-espadas",
+      "caatinga:comunidade:patio-cabacas",
+      "caatinga:comunidade:poco-sem-bandeira",
+      "caatinga:rota:barro-e-ferragem",
+      "caatinga:rota:sementes-lacres"
+    ],
+    "armazenamento": [
+      "caatinga:agua:cacos-ceramica",
+      "caatinga:cena:lacres-vazios",
+      "caatinga:comunidade:patio-cabacas",
+      "caatinga:rota:lacre-e-cantaro"
+    ],
+    "comercio": [
+      "caatinga:cena:ferragem-sem-dono",
+      "caatinga:comunidade:feira-ferragens",
+      "caatinga:rota:barro-e-ferragem",
+      "caatinga:rota:fronteira-sem-pontos"
+    ],
+    "comida": [
+      "caatinga:agua:coleta-do-aguaceiro",
+      "caatinga:cena:cova-de-sementes",
+      "caatinga:comunidade:baixio-sementes",
+      "caatinga:rota:feira-plantio",
+      "caatinga:rota:sementes-lacres"
+    ],
+    "conflito": [
+      "caatinga:comunidade:poco-sem-bandeira"
+    ],
+    "contratos": [
+      "caatinga:cena:contrato-sem-nome"
+    ],
+    "costa": [
+      "caatinga:rota:fronteira-sem-pontos"
+    ],
+    "cuidado": [
+      "caatinga:comunidade:baixio-sementes"
+    ],
+    "direito": [
+      "caatinga:agua:poco-partilhado",
+      "caatinga:comunidade:poco-sem-bandeira"
+    ],
+    "ecologia": [
+      "caatinga:agua:coleta-do-aguaceiro",
+      "caatinga:cena:cova-de-sementes",
+      "caatinga:comunidade:baixio-sementes"
+    ],
+    "fronteira": [
+      "caatinga:cena:contrato-sem-nome"
+    ],
+    "guerra": [
+      "caatinga:cena:ferragem-sem-dono",
+      "caatinga:cena:nicho-contestado",
+      "caatinga:comunidade:feira-ferragens",
+      "caatinga:comunidade:pedra-nove-silencios",
+      "caatinga:rota:caminho-memoria",
+      "caatinga:rota:fronteira-sem-pontos"
+    ],
+    "hospitalidade": [
+      "caatinga:comunidade:poco-sem-bandeira"
+    ],
+    "justica": [
+      "caatinga:cena:lacres-vazios",
+      "caatinga:comunidade:pedra-nove-silencios"
+    ],
+    "memoria": [
+      "caatinga:agua:fenda-sazonal",
+      "caatinga:cena:nicho-contestado",
+      "caatinga:comunidade:pedra-nove-silencios",
+      "caatinga:rota:caminho-memoria"
+    ],
+    "mobilidade": [
+      "caatinga:comunidade:feira-ferragens"
+    ],
+    "negociacao": [
+      "caatinga:cena:fila-entre-espadas"
+    ],
+    "oficios": [
+      "caatinga:comunidade:feira-ferragens",
+      "caatinga:rota:feira-plantio"
+    ],
+    "refugiados": [
+      "caatinga:comunidade:baixio-sementes"
+    ],
+    "ritual": [
+      "caatinga:comunidade:pedra-nove-silencios"
+    ],
+    "trabalho": [
+      "caatinga:comunidade:patio-cabacas",
+      "caatinga:rota:lacre-e-cantaro"
+    ]
+  },
+  "by_movimento_hack": {
+    "movimento-classe:paragrafo-2757": [
+      "caatinga:comunidade:feira-ferragens",
+      "caatinga:pessoa:nala"
+    ],
+    "movimento-classe:paragrafo-2760": [
+      "caatinga:cena:ferragem-sem-dono",
+      "caatinga:coletivo:ferrugem-andante",
+      "caatinga:comunidade:feira-ferragens",
+      "caatinga:conflito:agua-ou-tributo",
+      "caatinga:conflito:soldo-ou-pao",
+      "caatinga:pessoa:iram",
+      "caatinga:pessoa:nala",
+      "caatinga:rota:feira-plantio"
+    ],
+    "movimento-classe:paragrafo-2773": [
+      "caatinga:coletivo:ferrugem-andante",
+      "caatinga:rota:fronteira-sem-pontos"
+    ],
+    "movimento-classe:paragrafo-2779": [
+      "caatinga:comunidade:feira-ferragens"
+    ],
+    "movimento-classe:paragrafo-2782": [
+      "caatinga:cena:contrato-sem-nome",
+      "caatinga:cena:ferragem-sem-dono",
+      "caatinga:conflito:soldo-ou-pao",
+      "caatinga:pessoa:tiru",
+      "caatinga:rota:barro-e-ferragem"
+    ],
+    "movimento-classe:paragrafo-2790": [
+      "caatinga:cena:fila-entre-espadas",
+      "caatinga:pessoa:iram"
+    ],
+    "movimento-povo:paragrafo-829": [
+      "caatinga:rota:fronteira-sem-pontos"
+    ],
+    "movimento-povo:paragrafo-831": [
+      "caatinga:cena:contrato-sem-nome",
+      "caatinga:cena:cova-de-sementes",
+      "caatinga:coletivo:cinza-lavada",
+      "caatinga:coletivo:semente-oca",
+      "caatinga:comunidade:baixio-sementes",
+      "caatinga:comunidade:patio-cabacas",
+      "caatinga:conflito:ultima-semente",
+      "caatinga:pessoa:paja",
+      "caatinga:pessoa:satira",
+      "caatinga:pessoa:tiru",
+      "caatinga:rota:lacre-e-cantaro"
+    ],
+    "movimento-povo:paragrafo-834": [
+      "caatinga:cena:cova-de-sementes",
+      "caatinga:coletivo:esteira-rachada",
+      "caatinga:coletivo:semente-oca",
+      "caatinga:comunidade:baixio-sementes",
+      "caatinga:comunidade:poco-sem-bandeira",
+      "caatinga:conflito:ultima-semente",
+      "caatinga:pessoa:aru",
+      "caatinga:pessoa:paja",
+      "caatinga:rota:barro-e-ferragem",
+      "caatinga:rota:sementes-lacres"
+    ],
+    "movimento-povo:paragrafo-835": [
+      "caatinga:cena:nicho-contestado",
+      "caatinga:coletivo:nove-nos",
+      "caatinga:comunidade:pedra-nove-silencios",
+      "caatinga:conflito:nove-versoes",
+      "caatinga:pessoa:rukhan",
+      "caatinga:rota:caminho-memoria"
+    ],
+    "movimento-povo:paragrafo-836": [
+      "caatinga:cena:lacres-vazios",
+      "caatinga:coletivo:cinza-lavada",
+      "caatinga:comunidade:patio-cabacas",
+      "caatinga:pessoa:satira"
+    ],
+    "movimento-povo:paragrafo-837": [
+      "caatinga:pessoa:borr"
+    ],
+    "movimento-povo:paragrafo-842": [
+      "caatinga:cena:nicho-contestado",
+      "caatinga:coletivo:nove-nos",
+      "caatinga:comunidade:pedra-nove-silencios",
+      "caatinga:comunidade:poco-sem-bandeira",
+      "caatinga:conflito:nove-versoes",
+      "caatinga:pessoa:rukhan",
+      "caatinga:rota:caminho-memoria"
+    ],
+    "movimento-povo:paragrafo-843": [
+      "caatinga:cena:fila-entre-espadas",
+      "caatinga:coletivo:esteira-rachada",
+      "caatinga:comunidade:pedra-nove-silencios",
+      "caatinga:comunidade:poco-sem-bandeira",
+      "caatinga:conflito:agua-ou-tributo",
+      "caatinga:pessoa:aru",
+      "caatinga:pessoa:borr"
+    ]
+  },
+  "by_comunidade": {
+    "caatinga:comunidade:baixio-sementes": [
+      "caatinga:agua:coleta-do-aguaceiro",
+      "caatinga:cena:cova-de-sementes",
+      "caatinga:pessoa:paja"
+    ],
+    "caatinga:comunidade:feira-ferragens": [
+      "caatinga:cena:contrato-sem-nome",
+      "caatinga:cena:ferragem-sem-dono",
+      "caatinga:pessoa:nala",
+      "caatinga:pessoa:tiru"
+    ],
+    "caatinga:comunidade:patio-cabacas": [
+      "caatinga:agua:cacos-ceramica",
+      "caatinga:cena:lacres-vazios",
+      "caatinga:pessoa:satira"
+    ],
+    "caatinga:comunidade:pedra-nove-silencios": [
+      "caatinga:agua:fenda-sazonal",
+      "caatinga:cena:nicho-contestado",
+      "caatinga:pessoa:iram",
+      "caatinga:pessoa:rukhan"
+    ],
+    "caatinga:comunidade:poco-sem-bandeira": [
+      "caatinga:agua:poco-partilhado",
+      "caatinga:cena:fila-entre-espadas",
+      "caatinga:pessoa:aru",
+      "caatinga:pessoa:borr"
+    ]
+  }
+}

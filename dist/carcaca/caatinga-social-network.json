@@ -1,0 +1,816 @@
+{
+  "schema_version": "0.2.0",
+  "regiao_id": "regiao:caatinga",
+  "titulo": "Caatinga: água, clãs, memória e rotas",
+  "estado": "propostas_narrativas_nao_canonicas",
+  "versao_criativa": "Ciclo Caatinga 02",
+  "recorte": "Povoados, coletivos, economia da sobrevivência e relações com a Costa Sul, sem geolocalização ou quantitativos não documentados.",
+  "fontes_documentais": [
+    "data/regioes_carcaca.json",
+    "data/guias_dossies_regionais.json",
+    "data/lore/hack-carcaca-dw-movimentos-povos-integrais.json",
+    "dist/carcaca/hack-mercenary-movements.json",
+    "data/propostas/povoamento-regional-hack-carcaca.json"
+  ],
+  "fatos_de_base": [
+    "A Caatinga pertence ao Além Sul, tem comunidades dispersas e não está colonizada diretamente pela aristocracia shadow fey.",
+    "Conflitos e pilhagens entre grupos das terras áridas e as pradarias da Costa Sul estão documentados, sem definir quem participa de cada ataque.",
+    "Os movimentos dos orcs registram memória da Guerra de Nove Anos contra os kuo-toa, resiliência ao clima, alianças ancestrais e também técnicas de saque.",
+    "Os registros existentes não especificam lugares individuais, fontes permanentes de água, dieta, população ou comércio direto com Portomonte."
+  ],
+  "conexoes_com_sementes_anteriores": [
+    "povoamento-proposto:poco-sem-bandeira",
+    "povoamento-proposto:mercado-das-ferragens"
+  ],
+  "trama_central": "A disputa não é entre orcs bons e maus, mas entre maneiras incompatíveis de garantir água, memória, autonomia e proteção.",
+  "nota_geografica": "Todos os pontos são lugares hipotéticos relativos entre si. Não há coordenadas, distâncias, limite político ou hidrografia comprovada.",
+  "totais_propostos": {
+    "comunidades": 5,
+    "coletivos": 5,
+    "pessoas": 8,
+    "pontos_agua": 4,
+    "rotas": 6,
+    "conflitos": 4,
+    "cenas": 6
+  },
+  "comunidades": [
+    {
+      "id": "caatinga:comunidade:poco-sem-bandeira",
+      "nome": "Poço Sem Bandeira",
+      "papel": "local_de_encontro",
+      "descricao_proposta": "Pátio de acesso compartilhado a um poço cujas regras são feitas por quem depende dele, não por um rei. É uma ampliação da semente anterior, não um novo lugar canônico.",
+      "rotina": "A água é distribuída por ordem de tarefas comunitárias; viajantes apresentam notícias, reparadores inspecionam a parede e famílias discutem exceções aos turnos.",
+      "dependencia_material_proposta": "Vasos limpos, manutenção do revestimento, vigias voluntárias e compromisso de não cobrar pela primeira medida de cada família.",
+      "problema_local": "Uma escolta armada exige controle sobre as filas como preço da segurança.",
+      "tags": [
+        "agua",
+        "hospitalidade",
+        "direito",
+        "conflito"
+      ],
+      "conexoes": [
+        "caatinga:comunidade:feira-ferragens",
+        "caatinga:comunidade:patio-cabacas",
+        "caatinga:comunidade:pedra-nove-silencios"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-834",
+        "movimento-povo:paragrafo-842",
+        "movimento-povo:paragrafo-843"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:comunidade:feira-ferragens",
+      "nome": "Feira das Ferragens Trocadas",
+      "papel": "mercado_itinerante",
+      "descricao_proposta": "Mercado de reparos e trocas que muda de lugar conforme segurança, água e disposição das comunidades de recebê-lo. Integra a semente anterior.",
+      "rotina": "A primeira banca oferece consertos em vez de vendas; ferramentas de campo dividem espaço com fivelas, panelas e contas de viagem.",
+      "dependencia_material_proposta": "Reaproveitamento de metal, pano, alimentação conservada e confiança nas condições da próxima parada.",
+      "problema_local": "Armas encomendadas para uma incursão costeira dariam recursos à feira, mas tornariam seus clientes cúmplices da guerra.",
+      "tags": [
+        "comercio",
+        "oficios",
+        "guerra",
+        "mobilidade"
+      ],
+      "conexoes": [
+        "caatinga:comunidade:poco-sem-bandeira",
+        "caatinga:comunidade:baixio-sementes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2757",
+        "movimento-classe:paragrafo-2760",
+        "movimento-classe:paragrafo-2779"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:comunidade:patio-cabacas",
+      "nome": "Pátio das Cabaças Lacradas",
+      "papel": "abrigo_e_reserva",
+      "descricao_proposta": "Povoado hipotético de jarreiros e famílias que não podem viajar durante a estação mais difícil. A autoridade local se mede pelo cuidado das reservas coletivas.",
+      "rotina": "Os jarros são numerados por família e dia de abertura; vizinhos trocam ferramentas e reparos em vez de moeda nas semanas de escassez.",
+      "dependencia_material_proposta": "Água recebida de fontes não comprovadas, recipientes duráveis e acordos de acesso negociados com caravanas.",
+      "problema_local": "Alguém começou a lacrar recipientes vazios para parecer que a reserva suporta mais gente do que realmente suporta.",
+      "tags": [
+        "armazenamento",
+        "abrigo",
+        "agua",
+        "trabalho"
+      ],
+      "conexoes": [
+        "caatinga:comunidade:poco-sem-bandeira",
+        "caatinga:comunidade:baixio-sementes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-836",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:comunidade:pedra-nove-silencios",
+      "nome": "Pedra dos Nove Silêncios",
+      "papel": "memorial_e_conselho",
+      "descricao_proposta": "Lugar hipotético de memória da Guerra de Nove Anos. Nove nichos preservam versões divergentes do conflito; nenhum deles pretende ser o relato oficial de todos os orcs.",
+      "rotina": "Representantes dos clãs recontam uma batalha e registram o nome de alguém que evitou outra; visitantes podem contradizer a narrativa sem serem obrigados a lutar.",
+      "dependencia_material_proposta": "Testemunhas, abrigo temporário para viajantes, material para inscrições e preservação ritual dos nomes.",
+      "problema_local": "Um veterano exige apagar o nicho dedicado a uma trégua que teria custado vidas de sua família.",
+      "tags": [
+        "memoria",
+        "guerra",
+        "justica",
+        "ritual"
+      ],
+      "conexoes": [
+        "caatinga:comunidade:poco-sem-bandeira",
+        "caatinga:comunidade:feira-ferragens"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842",
+        "movimento-povo:paragrafo-843"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:comunidade:baixio-sementes",
+      "nome": "Baixio das Sementes Guardadas",
+      "papel": "experimental_de_subsistencia",
+      "descricao_proposta": "Conjunto hipotético de abrigos e canteiros de teste; guardiões mantêm sementes dormentes durante longos períodos e só plantam com água e solo adequados, que não são garantidos.",
+      "rotina": "Uma roda escolhe quais sementes serão testadas, quais ficarão guardadas e quantas porções devem seguir com viajantes ameaçados.",
+      "dependencia_material_proposta": "Sementes, sombra, solo viável e água de disponibilidade ainda indeterminada; a proposta não afirma que existe agricultura produtiva.",
+      "problema_local": "Uma família pede a abertura de quase todo o banco de sementes para sobreviver à próxima viagem.",
+      "tags": [
+        "comida",
+        "ecologia",
+        "cuidado",
+        "refugiados"
+      ],
+      "conexoes": [
+        "caatinga:comunidade:patio-cabacas",
+        "caatinga:comunidade:feira-ferragens"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-834",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta"
+    }
+  ],
+  "coletivos": [
+    {
+      "id": "caatinga:coletivo:esteira-rachada",
+      "nome": "Clã da Esteira Rachada",
+      "tipo": "cla_orc",
+      "descricao_proposta": "Famílias que consideram o direito ao primeiro cântaro anterior a toda cobrança; incluem combatentes, mediadores e curadores.",
+      "principio_nao_negociavel": "Ninguém fica sem a primeira medida de água por não ter dinheiro.",
+      "ligacoes_propostas": [
+        "caatinga:comunidade:poco-sem-bandeira",
+        "caatinga:comunidade:patio-cabacas"
+      ],
+      "tensao_interna": "Parte dos jovens considera que armas e controle das filas protegeriam melhor a comunidade.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-834",
+        "movimento-povo:paragrafo-843"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:coletivo:nove-nos",
+      "nome": "Clã dos Nove Nós",
+      "tipo": "cla_orc",
+      "descricao_proposta": "Descendentes de combatentes e pessoas deslocadas na Guerra de Nove Anos. Há defensores de antigas alianças e famílias que mantêm rancores.",
+      "principio_nao_negociavel": "Nenhum morto deve ter seu nome apagado por conveniência política.",
+      "ligacoes_propostas": [
+        "caatinga:comunidade:pedra-nove-silencios",
+        "caatinga:comunidade:poco-sem-bandeira"
+      ],
+      "tensao_interna": "Uma ala pretende confundir memória de guerra com autorização permanente para incursões.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:coletivo:cinza-lavada",
+      "nome": "Casa das Cinzas Lavadas",
+      "tipo": "coalizao_multietnica",
+      "descricao_proposta": "Famílias deslocadas, algumas orcs e outras humanas, que se revezam em acolhimento e no reparo de recipientes e abrigos.",
+      "principio_nao_negociavel": "Pessoas que procuram proteção não devem ser interrogadas diante de quem as persegue.",
+      "ligacoes_propostas": [
+        "caatinga:comunidade:patio-cabacas",
+        "caatinga:comunidade:baixio-sementes"
+      ],
+      "tensao_interna": "O abrigo oferece mais vagas do que seus estoques podem garantir.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-836"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:coletivo:ferrugem-andante",
+      "nome": "Ofício da Ferrugem Andante",
+      "tipo": "gremio_de_artesaos",
+      "descricao_proposta": "Ferreiros, armeiros e consertadores itinerantes que aceitam trabalho de vários povos e não formam um clã de sangue.",
+      "principio_nao_negociavel": "Todo contrato de ferramenta deve declarar quem ficará responsável por seu uso.",
+      "ligacoes_propostas": [
+        "caatinga:comunidade:feira-ferragens",
+        "caatinga:comunidade:poco-sem-bandeira"
+      ],
+      "tensao_interna": "Alguns aprendizes propõem abandonar o escrutínio ético para conseguir provisões.",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2760",
+        "movimento-classe:paragrafo-2773"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:coletivo:semente-oca",
+      "nome": "Roda da Semente Oca",
+      "tipo": "associacao_de_guardioes",
+      "descricao_proposta": "Coletores, velhos e jovens de distintas famílias que mantêm um banco experimental de sementes e histórias sobre tentativas fracassadas.",
+      "principio_nao_negociavel": "Nenhuma última semente pode ser negociada sem reunião pública.",
+      "ligacoes_propostas": [
+        "caatinga:comunidade:baixio-sementes",
+        "caatinga:comunidade:patio-cabacas"
+      ],
+      "tensao_interna": "Em crise, guardar sementes para o futuro pode parecer crueldade para quem tem fome hoje.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-834"
+      ],
+      "estado": "proposta"
+    }
+  ],
+  "pessoas": [
+    {
+      "id": "caatinga:pessoa:aru",
+      "nome": "Velha Aru",
+      "comunidade_id": "caatinga:comunidade:poco-sem-bandeira",
+      "coletivo_id": "caatinga:coletivo:esteira-rachada",
+      "funcao": "Guardiã orc das medidas do poço",
+      "quer": "Manter o poço sem bandeira e fazer as famílias consertarem juntas o que usam.",
+      "teme": "Que uma defesa armada transforme a água em tributo.",
+      "segredo_possivel": "Aru conhece o responsável por uma cisterna lacrada, mas teme que divulgar o nome leve cobradores até lá.",
+      "primeira_aparicao": "Ao encontrar os aventureiros, oferece um cântaro e pergunta qual trabalho podem assumir, não quanto podem pagar.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-834",
+        "movimento-povo:paragrafo-843"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:pessoa:nala",
+      "nome": "Nala Duas-Balas",
+      "comunidade_id": "caatinga:comunidade:feira-ferragens",
+      "coletivo_id": "caatinga:coletivo:ferrugem-andante",
+      "funcao": "Armeira e intermediária de trocas",
+      "quer": "Garantir que cada arma vendida não condene um dos povoados vizinhos.",
+      "teme": "Ter de escolher entre alimentar os aprendizes e armar saqueadores.",
+      "segredo_possivel": "Uma encomenda para uma incursão tem assinatura de uma pessoa que antes defendeu a feira.",
+      "primeira_aparicao": "Conserta uma arma sem cobrar, mas se recusa a vender a segunda peça ao mesmo cliente.",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2757",
+        "movimento-classe:paragrafo-2760"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:pessoa:satira",
+      "nome": "Satira do Barro Frio",
+      "comunidade_id": "caatinga:comunidade:patio-cabacas",
+      "coletivo_id": "caatinga:coletivo:cinza-lavada",
+      "funcao": "Ceramista humana e auditora de reservas",
+      "quer": "Fazer a comunidade enxergar os estoques reais sem provocar um êxodo de pânico.",
+      "teme": "Que os registros revelem quem aceitou esconder água de uma família vizinha.",
+      "segredo_possivel": "Os potes foram marcados como cheios por ordem de alguém respeitado no abrigo.",
+      "primeira_aparicao": "Quebra um lacre diante dos personagens para mostrar que o recipiente está vazio.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-836"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:pessoa:rukhan",
+      "nome": "Rukhan do Nono Nome",
+      "comunidade_id": "caatinga:comunidade:pedra-nove-silencios",
+      "coletivo_id": "caatinga:coletivo:nove-nos",
+      "funcao": "Veterano orc e contador de campanhas",
+      "quer": "Registrar não só vitórias, mas treguas, resgates e derrotas da Guerra de Nove Anos.",
+      "teme": "Que um relato único transforme descendentes de vários povos em inimigos hereditários.",
+      "segredo_possivel": "Rukhan foi salvo por alguém ligado ao lado adversário; só uma testemunha falecida conhecia a história inteira.",
+      "primeira_aparicao": "Apresenta dois testemunhos incompatíveis e pergunta qual memória os aventureiros apagariam primeiro.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:pessoa:borr",
+      "nome": "Borr de Olho Seco",
+      "comunidade_id": "caatinga:comunidade:poco-sem-bandeira",
+      "coletivo_id": "caatinga:coletivo:nove-nos",
+      "funcao": "Guia orc e ex-batedor que conhece sinais de incursão",
+      "quer": "Organizar escoltas que respondam ao poço sem se tornarem suas donas.",
+      "teme": "Que um grupo armado não aceite ser fiscalizado por civis.",
+      "segredo_possivel": "Seu antigo companheiro lidera os que desejam privatizar a travessia.",
+      "primeira_aparicao": "Oferece guiar o grupo por uma passagem perigosa, desde que ninguém diga a uma patrulha onde Aru mora.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-837",
+        "movimento-povo:paragrafo-843"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:pessoa:paja",
+      "nome": "Paja das Sementes",
+      "comunidade_id": "caatinga:comunidade:baixio-sementes",
+      "coletivo_id": "caatinga:coletivo:semente-oca",
+      "funcao": "Guardiã de sementes e fracassos agrícolas",
+      "quer": "Guardar variedades suficientes para uma próxima tentativa, sem prometer colheitas milagrosas.",
+      "teme": "Que o pânico faça todos consumirem o que ainda poderia sustentar outro ano.",
+      "segredo_possivel": "Os cadernos revelam que duas variedades consideradas perdidas podem estar preservadas na Costa Sul.",
+      "primeira_aparicao": "Mostra um vaso vazio e pede aos aventureiros que decidam se ele guarda esperança ou apenas fome.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-834",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:pessoa:tiru",
+      "nome": "Tiru das Trilhas Curvas",
+      "comunidade_id": "caatinga:comunidade:feira-ferragens",
+      "coletivo_id": "caatinga:coletivo:cinza-lavada",
+      "funcao": "Mensageiro e corretor de rotas humanas e orcs",
+      "quer": "Manter aberta a conversa entre as pradarias e o interior apesar das hostilidades.",
+      "teme": "Que um pedido de escolta esconda um ataque contra pessoas que lhe deram abrigo.",
+      "segredo_possivel": "Uma rota anunciada como segura está sendo usada para rastrear refugiados.",
+      "primeira_aparicao": "Chega à feira sem a carga prometida, trazendo apenas os nomes das pessoas que deveriam tê-la acompanhado.",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2782",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:pessoa:iram",
+      "nome": "Iram Mão-de-Poeira",
+      "comunidade_id": "caatinga:comunidade:pedra-nove-silencios",
+      "coletivo_id": "caatinga:coletivo:nove-nos",
+      "funcao": "Chefe de um destacamento independente, não representante de todos os orcs",
+      "quer": "Conseguir provisões para sua gente e reconhecimento por patrulhas de defesa.",
+      "teme": "Que sua liderança deixe de existir quando as famílias não precisarem de escoltas.",
+      "segredo_possivel": "Recebeu pagamento para ameaçar a fila do poço, mas não sabe que o contratante quer deslocar os moradores.",
+      "primeira_aparicao": "Chega com guardas armados, manda baixar as armas e oferece um contrato cujos termos não aceita ler em voz alta.",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2760",
+        "movimento-classe:paragrafo-2790"
+      ],
+      "estado": "proposta"
+    }
+  ],
+  "pontos_agua": [
+    {
+      "id": "caatinga:agua:poco-partilhado",
+      "nome": "Poço Partilhado",
+      "comunidade_id": "caatinga:comunidade:poco-sem-bandeira",
+      "tipo_de_abastecimento_proposto": "Poço revestido mantido por trabalho e negociação entre grupos.",
+      "estado_material": "hipotetico_sem_medicao",
+      "fato_nao_comprovado": "Profundidade, vazão, segurança para consumo e duração não documentadas.",
+      "condicao_de_uso": "A primeira medida é comum; acesso posterior depende de trabalho e deliberação, sem quantidade fixa.",
+      "risco_e_politica": "O conselho pode instituir patrulhas ou cotas; nenhuma delas é consenso.",
+      "tags": [
+        "agua",
+        "direito"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:agua:cacos-ceramica",
+      "nome": "Cisternas de Barro Frio",
+      "comunidade_id": "caatinga:comunidade:patio-cabacas",
+      "tipo_de_abastecimento_proposto": "Recipientes e possíveis cisternas de armazenamento, sujeitos a perdas e quebra.",
+      "estado_material": "hipotetico_sem_medicao",
+      "fato_nao_comprovado": "Não se afirma origem da água, volume armazenado, impermeabilidade ou potabilidade.",
+      "condicao_de_uso": "Lacres são abertos diante de testemunhas escolhidas por famílias diferentes.",
+      "risco_e_politica": "Uma contagem falsa pode fazer a comunidade escolher um deslocamento mortal.",
+      "tags": [
+        "agua",
+        "armazenamento"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:agua:fenda-sazonal",
+      "nome": "Fenda da Pedra Escura",
+      "comunidade_id": "caatinga:comunidade:pedra-nove-silencios",
+      "tipo_de_abastecimento_proposto": "Afloramento sazonal ou retenção de chuva considerada apenas como hipótese de campo.",
+      "estado_material": "hipotetico_sem_medicao",
+      "fato_nao_comprovado": "Não há confirmação de que exista água acessível ou permanente nesta fenda proposta.",
+      "condicao_de_uso": "Serviria só quando houver água observável, e sua localização permanece indeterminada.",
+      "risco_e_politica": "Divulgar a descoberta permite proteção coletiva, mas atrai cobradores e grupos armados.",
+      "tags": [
+        "agua",
+        "memoria"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:agua:coleta-do-aguaceiro",
+      "nome": "Coletores das Sementes",
+      "comunidade_id": "caatinga:comunidade:baixio-sementes",
+      "tipo_de_abastecimento_proposto": "Tentativa proposta de captar água de episódios ocasionais, sem supor frequência de chuvas.",
+      "estado_material": "hipotetico_sem_medicao",
+      "fato_nao_comprovado": "Não há registros de chuva, área cultivável, irrigação estável ou capacidade de sustentar lavouras.",
+      "condicao_de_uso": "Toda água coletada seria priorizada para pessoas; plantio só quando restar recurso seguro.",
+      "risco_e_politica": "A tentativa de cultivar pode consumir reservas de sobrevivência sem produzir colheita.",
+      "tags": [
+        "agua",
+        "comida",
+        "ecologia"
+      ],
+      "estado": "proposta"
+    }
+  ],
+  "rotas": [
+    {
+      "id": "caatinga:rota:barro-e-ferragem",
+      "nome": "Caminho da Água e da Ferragem",
+      "origem_id": "caatinga:comunidade:poco-sem-bandeira",
+      "destino_id": "caatinga:comunidade:feira-ferragens",
+      "funcao_proposta": "Manutenção de ferramentas, mensagens sobre disponibilidade de água e troca de recipientes.",
+      "condicoes_de_existencia": "A feira é itinerante, então não existe trajeto fixo nem tempo comprovado.",
+      "tensao_da_rota": "Um escoltador tenta tributar as ferramentas como se fossem armas de guerra.",
+      "quem_conhece": "Aru, Nala e Tiru",
+      "tracado_confirmado": false,
+      "distancia_confirmada": false,
+      "tags": [
+        "agua",
+        "comercio"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-834",
+        "movimento-classe:paragrafo-2782"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:rota:lacre-e-cantaro",
+      "nome": "Trilha dos Lacres",
+      "origem_id": "caatinga:comunidade:poco-sem-bandeira",
+      "destino_id": "caatinga:comunidade:patio-cabacas",
+      "funcao_proposta": "Transporte eventual de água e materiais de reparo.",
+      "condicoes_de_existencia": "Depende de recipientes, pessoal e segurança; nem todo transporte é viável.",
+      "tensao_da_rota": "Lacres podem ocultar água desaparecida ou simplesmente material perdido.",
+      "quem_conhece": "Satira e Borr",
+      "tracado_confirmado": false,
+      "distancia_confirmada": false,
+      "tags": [
+        "armazenamento",
+        "trabalho"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:rota:caminho-memoria",
+      "nome": "Passagem dos Nove Nomes",
+      "origem_id": "caatinga:comunidade:poco-sem-bandeira",
+      "destino_id": "caatinga:comunidade:pedra-nove-silencios",
+      "funcao_proposta": "Peregrinação de testemunhos e possíveis encontros entre clãs.",
+      "condicoes_de_existencia": "A rota não é cartografada e pode ser inviável em períodos de ameaça.",
+      "tensao_da_rota": "Um grupo armado tenta proibir que um testemunho rival seja lido no memorial.",
+      "quem_conhece": "Rukhan e Borr",
+      "tracado_confirmado": false,
+      "distancia_confirmada": false,
+      "tags": [
+        "memoria",
+        "guerra"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:rota:sementes-lacres",
+      "nome": "Passo das Sementes Guardadas",
+      "origem_id": "caatinga:comunidade:patio-cabacas",
+      "destino_id": "caatinga:comunidade:baixio-sementes",
+      "funcao_proposta": "Troca hipotética de recipientes, sementes e relatos de experimentos de cultivo.",
+      "condicoes_de_existencia": "Não existe confirmação de infraestrutura agrícola ou estrada permanente.",
+      "tensao_da_rota": "Uma família quer entregar todos os recipientes ao banco de sementes durante uma crise de sede.",
+      "quem_conhece": "Paja e Satira",
+      "tracado_confirmado": false,
+      "distancia_confirmada": false,
+      "tags": [
+        "comida",
+        "agua"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-834"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:rota:feira-plantio",
+      "nome": "Estrada dos Reparos",
+      "origem_id": "caatinga:comunidade:feira-ferragens",
+      "destino_id": "caatinga:comunidade:baixio-sementes",
+      "funcao_proposta": "Consertos de instrumentos e possíveis sementes recebidas em permuta.",
+      "condicoes_de_existencia": "Rotas itinerantes, sem itinerário ou estoque documentado.",
+      "tensao_da_rota": "O reparo de um instrumento de plantio concorre com uma encomenda militar mais lucrativa.",
+      "quem_conhece": "Nala e Paja",
+      "tracado_confirmado": false,
+      "distancia_confirmada": false,
+      "tags": [
+        "oficios",
+        "comida"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2760"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:rota:fronteira-sem-pontos",
+      "nome": "Caminho Incerto da Costa",
+      "origem_id": "caatinga:comunidade:feira-ferragens",
+      "destino_id": "lugar:portomonte",
+      "funcao_proposta": "Possível diálogo comercial e político com localidades da Costa Sul, não uma estrada ou contrato já existentes.",
+      "condicoes_de_existencia": "Ligação explicitamente hipotética: localização, viabilidade, bens e rotas de comércio direto são desconhecidos.",
+      "tensao_da_rota": "Vender a alguém em Portomonte peças usadas por uma pilhagem pode levar a represálias contra toda a feira.",
+      "quem_conhece": "Tiru e negociantes costeiros ainda não nomeados",
+      "tracado_confirmado": false,
+      "distancia_confirmada": false,
+      "tags": [
+        "costa",
+        "comercio",
+        "guerra"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-829",
+        "movimento-classe:paragrafo-2773"
+      ],
+      "estado": "proposta"
+    }
+  ],
+  "conflitos": [
+    {
+      "id": "caatinga:conflito:agua-ou-tributo",
+      "titulo": "Quem é dono da primeira medida?",
+      "comunidade_ids": [
+        "caatinga:comunidade:poco-sem-bandeira",
+        "caatinga:comunidade:patio-cabacas"
+      ],
+      "participantes": [
+        "caatinga:coletivo:esteira-rachada",
+        "caatinga:pessoa:iram",
+        "caatinga:pessoa:aru"
+      ],
+      "disputa": "O clã reivindica água livre, a escolta reivindica compensação e as famílias precisam de proteção.",
+      "manifestacao_inicial": "Uma guarda exige criar uma fila separada para quem pode pagar escolta.",
+      "evolucoes_possiveis": [
+        "Aru convoca conselho aberto",
+        "A escolta condiciona vigias ao pagamento",
+        "Uma pessoa idosa desaparece na travessia"
+      ],
+      "solucao_nao_prescrita": "A presença de escoltas pode salvar gente e ainda assim produzir nova dominação.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-843",
+        "movimento-classe:paragrafo-2760"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:conflito:nove-versoes",
+      "titulo": "Quem pode contar a guerra?",
+      "comunidade_ids": [
+        "caatinga:comunidade:pedra-nove-silencios",
+        "caatinga:comunidade:poco-sem-bandeira"
+      ],
+      "participantes": [
+        "caatinga:coletivo:nove-nos",
+        "caatinga:pessoa:rukhan",
+        "caatinga:pessoa:borr"
+      ],
+      "disputa": "Uma memória única da Guerra de Nove Anos apagaria alianças e resgates entre antigos inimigos.",
+      "manifestacao_inicial": "Um veterano pede que um dos nichos seja destruído na noite da reunião.",
+      "evolucoes_possiveis": [
+        "Dois testemunhos são lidos",
+        "Um jovem recusa jurar vingança",
+        "Uma revelação pode revelar a posição de um refugiado"
+      ],
+      "solucao_nao_prescrita": "A comunidade pode preservar divergências ou escolher uma história para impedir outra guerra.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:conflito:soldo-ou-pao",
+      "titulo": "Ferragens para proteger ou saquear?",
+      "comunidade_ids": [
+        "caatinga:comunidade:feira-ferragens",
+        "caatinga:comunidade:baixio-sementes"
+      ],
+      "participantes": [
+        "caatinga:coletivo:ferrugem-andante",
+        "caatinga:pessoa:nala",
+        "caatinga:pessoa:tiru"
+      ],
+      "disputa": "Uma encomenda de armas permitiria comprar alimento e reparos, mas indica possível pilhagem na Costa Sul.",
+      "manifestacao_inicial": "Uma sacola de moedas chega com cláusula de entrega sem identificação do destinatário.",
+      "evolucoes_possiveis": [
+        "Ferramentas de plantio deixam de ser reparadas",
+        "Informações sobre destino da encomenda se contradizem",
+        "Uma comunidade costeira envia pedido de explicações"
+      ],
+      "solucao_nao_prescrita": "É possível recusar venda, negociar condições, redistribuir metal ou denunciar o contratante, com custos distintos.",
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2760",
+        "movimento-classe:paragrafo-2782"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:conflito:ultima-semente",
+      "titulo": "O que guardar para quem ainda não nasceu?",
+      "comunidade_ids": [
+        "caatinga:comunidade:baixio-sementes",
+        "caatinga:comunidade:patio-cabacas"
+      ],
+      "participantes": [
+        "caatinga:coletivo:semente-oca",
+        "caatinga:coletivo:cinza-lavada",
+        "caatinga:pessoa:paja"
+      ],
+      "disputa": "A fome presente concorre com a tentativa de manter sementes para colheitas futuras incertas.",
+      "manifestacao_inicial": "Uma família pede a última porção guardada e não aceita esperar o conselho.",
+      "evolucoes_possiveis": [
+        "O conselho exige abrir a reserva",
+        "Uma tentativa de cultivo falha",
+        "Chega uma notícia incerta de sementes em Portomonte"
+      ],
+      "solucao_nao_prescrita": "Não presumir que sementes garantam alimento, nem exigir que famintos sacrifiquem sua sobrevivência por uma promessa.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-834"
+      ],
+      "estado": "proposta"
+    }
+  ],
+  "cenas": [
+    {
+      "id": "caatinga:cena:fila-entre-espadas",
+      "titulo": "A primeira água não é de quem grita",
+      "comunidade_id": "caatinga:comunidade:poco-sem-bandeira",
+      "situacao_de_abertura": "Uma guarda tenta cobrar pela passagem quando uma família chega com cântaros vazios.",
+      "o_que_os_personagens_podem_fazer": [
+        "Mediar a segurança",
+        "Ajudar nos reparos",
+        "Expor o contrato da guarda"
+      ],
+      "informacao_que_muda_a_cena": "O chefe armado não sabia que o contratante pretendia expulsar os moradores.",
+      "efeito_se_ignorarem_condicional": "Se ninguém mediar, a fila pode se dividir e um confronto tornar o poço inutilizável.",
+      "tags": [
+        "agua",
+        "negociacao"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-843",
+        "movimento-classe:paragrafo-2790"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:cena:lacres-vazios",
+      "titulo": "O som dos cântaros cheios",
+      "comunidade_id": "caatinga:comunidade:patio-cabacas",
+      "situacao_de_abertura": "Satira quebra um lacre e encontra um recipiente vazio onde deveria haver uma reserva.",
+      "o_que_os_personagens_podem_fazer": [
+        "Investigar perda ou fraude",
+        "Anunciar a verdade",
+        "Criar nova distribuição provisória"
+      ],
+      "informacao_que_muda_a_cena": "Parte dos recipientes foi marcada sem nunca ter sido preenchida; não é possível atribuir culpa apenas pelo lacre.",
+      "efeito_se_ignorarem_condicional": "Um falso cálculo pode induzir uma caravana a viajar sem provisões suficientes.",
+      "tags": [
+        "armazenamento",
+        "justica"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-836"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:cena:nicho-contestado",
+      "titulo": "O nome que sobrou",
+      "comunidade_id": "caatinga:comunidade:pedra-nove-silencios",
+      "situacao_de_abertura": "Rukhan tenta ler a história de um resgate feito por alguém antes considerado inimigo.",
+      "o_que_os_personagens_podem_fazer": [
+        "Garantir espaço para o testemunho",
+        "Consultar parentes",
+        "Recusar uma versão oficial"
+      ],
+      "informacao_que_muda_a_cena": "Uma testemunha mudou de clã depois da guerra, e seu silêncio protege pessoas vivas.",
+      "efeito_se_ignorarem_condicional": "O memorial pode tornar-se símbolo de vingança caso uma versão seja imposta.",
+      "tags": [
+        "memoria",
+        "guerra"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:cena:ferragem-sem-dono",
+      "titulo": "O aço não conhece o destino",
+      "comunidade_id": "caatinga:comunidade:feira-ferragens",
+      "situacao_de_abertura": "Nala recebe metade do pagamento por lâminas cuja entrega será feita sem nome.",
+      "o_que_os_personagens_podem_fazer": [
+        "Pesquisar o contratante",
+        "Oferecer ferramentas alternativas",
+        "Renegociar prazo e destino"
+      ],
+      "informacao_que_muda_a_cena": "O comprador tem um compromisso de escolta na própria feira e pode perder seguidores se sua intenção aparecer.",
+      "efeito_se_ignorarem_condicional": "A entrega pode armar uma incursão contra um povoado costeiro ainda não definido.",
+      "tags": [
+        "comercio",
+        "guerra"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2760",
+        "movimento-classe:paragrafo-2782"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:cena:cova-de-sementes",
+      "titulo": "O peso da próxima estação",
+      "comunidade_id": "caatinga:comunidade:baixio-sementes",
+      "situacao_de_abertura": "Paja pede ajuda para separar sementes saudáveis e alimento realmente disponível.",
+      "o_que_os_personagens_podem_fazer": [
+        "Escolher prioridade com a comunidade",
+        "Buscar alternativas costeiras",
+        "Aceitar o risco de plantar"
+      ],
+      "informacao_que_muda_a_cena": "O caderno das colheitas registra mais fracassos que vitórias; não existe segurança alimentar garantida.",
+      "efeito_se_ignorarem_condicional": "Uma decisão imposta pode dissolver a confiança entre famílias.",
+      "tags": [
+        "comida",
+        "ecologia"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-831",
+        "movimento-povo:paragrafo-834"
+      ],
+      "estado": "proposta"
+    },
+    {
+      "id": "caatinga:cena:contrato-sem-nome",
+      "titulo": "A passagem que ninguém reconhece",
+      "comunidade_id": "caatinga:comunidade:feira-ferragens",
+      "situacao_de_abertura": "Um mensageiro aparece sem os companheiros de viagem e com um contrato marcado por duas mãos diferentes.",
+      "o_que_os_personagens_podem_fazer": [
+        "Refazer a rota",
+        "Recuperar pessoas",
+        "Consultar as partes do acordo"
+      ],
+      "informacao_que_muda_a_cena": "O texto usou uma palavra para escolta que o contratante interpreta como autorização para apreender viajantes.",
+      "efeito_se_ignorarem_condicional": "Se o contrato continuar em vigor, mais gente poderá desaparecer ao buscar refúgio.",
+      "tags": [
+        "contratos",
+        "fronteira"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-classe:paragrafo-2782",
+        "movimento-povo:paragrafo-831"
+      ],
+      "estado": "proposta"
+    }
+  ],
+  "restricoes": [
+    "Nenhuma comunidade ou clã possui população contada, coordenada ou governo canônico declarado.",
+    "Os fluxos de comida e água são hipóteses, não cálculo de abastecimento ou comprovação de água potável.",
+    "Comércio direto com Portomonte não foi confirmado, nem a ocorrência de qualquer incursão individual proposta.",
+    "A Guerra de Nove Anos é memória documentada do povo orc, mas os nove nichos e seus ritos são criação proposta.",
+    "Nenhum movimento mecânico do Hack é atribuído automaticamente a NPCs ou concedido como habilidade."
+  ],
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false
+}
