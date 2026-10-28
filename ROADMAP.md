@@ -405,3 +405,15 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] `manifest.json` conferido diretamente: **12 movimentos integrais**, **4 opções**, **33 tabelas**, das quais **21 quadros gerais**.
 - [x] Conferido vínculo das três entradas do piloto que já possuíam cabeçalho no índice parcial anterior; sem duplicação de regras completas.
 - [x] Preservadas **7 criaturas e 3 assentamentos**; nenhum movimento aplicado automaticamente ao jogo.
+
+## Povoamento XI — Ironwood e Eldroth (2026-10-28)
+
+- [x] Continuar o Povoamento X de Thargrid por suas tensões com Ironwood, sem inventar comando comum da resistência.
+- [x] Identificar cinco espaços possíveis, cinco coletivos, oito pessoas, quatro dilemas, cinco fluxos, quatro acordos, seis cenas e três arcos.
+- [x] Manter três sementes herdadas do primeiro povoamento, com IDs e movimentos do Hack rastreáveis.
+- [x] Reutilizar Vaelis como continuidade de proposta, não como confirmação de sua localização atual.
+- [x] Preservar a ocupação de Eldroth por Sylara, o domínio de Vandar por Damaris e o papel de Elara em Ironwood.
+- [x] Gerar catálogo/índices deterministas, métodos de busca no cliente e testes de API/validação editorial.
+- [x] Documentar limites de aprovação e distinguir movimentos inspiradores de mecânicas efetivamente adquiridas.
+- [ ] Verificar quantitativamente a cadeia de abastecimento da resistência somente com fontes ou premissas declaradas.
+- [ ] Desenvolver a próxima rodada de movimentos ficcionais de ameaças da floresta, sem promover NPCs hipotéticos a monstros canônicos.
