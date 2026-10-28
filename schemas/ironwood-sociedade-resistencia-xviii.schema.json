@@ -1,0 +1,606 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ironwood XVIII: worldbuilding civil sem canonização",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estado": {
+      "const": "dossie_sociohistorico_proposto"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "efeito_canonico_automatico": {
+      "const": false
+    },
+    "lugar": {
+      "const": "Ironwood"
+    },
+    "localizacao_documentada": {
+      "const": "Fortaleza ranger ao sul das Montanhas de Thargrid"
+    },
+    "id_lugar_geografico": {
+      "type": "null"
+    },
+    "id_regiao_geografica": {
+      "type": "null"
+    },
+    "lideranca_militar_documentada": {
+      "const": "Elara Stormoak"
+    },
+    "fonte_autoral": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "fonte": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "pagina": {
+                "type": "integer",
+                "enum": [
+                  6,
+                  7,
+                  16,
+                  17,
+                  18,
+                  20,
+                  24
+                ]
+              },
+              "afirmacao_contextual": {
+                "type": "string",
+                "minLength": 1
+              },
+              "estado": {
+                "const": "manuscrito_em_revisao"
+              }
+            },
+            "required": [
+              "pagina",
+              "afirmacao_contextual",
+              "estado"
+            ]
+          },
+          "afirmacao": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "fonte",
+          "afirmacao"
+        ]
+      }
+    },
+    "limites": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "eixos": {
+          "const": 8
+        },
+        "modelos_governanca": {
+          "const": 3
+        },
+        "relacoes_diplomaticas": {
+          "const": 4
+        },
+        "circuitos_de_cuidado": {
+          "const": 4
+        },
+        "dilemas": {
+          "const": 4
+        },
+        "vinhetas": {
+          "const": 4
+        },
+        "decisoes": {
+          "const": 8
+        }
+      },
+      "required": [
+        "eixos",
+        "modelos_governanca",
+        "relacoes_diplomaticas",
+        "circuitos_de_cuidado",
+        "dilemas",
+        "vinhetas",
+        "decisoes"
+      ]
+    },
+    "eixos_sociais": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xviii:eixo:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tema_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "base_documental_e_limite": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tensao_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_autoral": {
+            "type": "string",
+            "minLength": 1
+          },
+          "exemplo_de_pratica_candidata": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte_contextual": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "pagina": {
+                "type": "integer",
+                "enum": [
+                  6,
+                  7,
+                  16,
+                  17,
+                  18,
+                  20,
+                  24
+                ]
+              },
+              "afirmacao_contextual": {
+                "type": "string",
+                "minLength": 1
+              },
+              "estado": {
+                "const": "manuscrito_em_revisao"
+              }
+            },
+            "required": [
+              "pagina",
+              "afirmacao_contextual",
+              "estado"
+            ]
+          },
+          "estado": {
+            "const": "proposta_de_historia_social"
+          },
+          "instituicao_documentada": {
+            "const": false
+          },
+          "recurso_quantificado": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "tema_social",
+          "base_documental_e_limite",
+          "tensao_social",
+          "pergunta_autoral",
+          "exemplo_de_pratica_candidata",
+          "fonte_contextual",
+          "estado",
+          "instituicao_documentada",
+          "recurso_quantificado"
+        ]
+      }
+    },
+    "modelos_de_governanca": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xviii:modelo:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "modelo_hipotetico": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tensao_institucional": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "modelo_alternativo_nao_adotado"
+          },
+          "fontes_contextuais": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "pagina": {
+                  "type": "integer",
+                  "enum": [
+                    6,
+                    7,
+                    16,
+                    17,
+                    18,
+                    20,
+                    24
+                  ]
+                },
+                "afirmacao_contextual": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "estado": {
+                  "const": "manuscrito_em_revisao"
+                }
+              },
+              "required": [
+                "pagina",
+                "afirmacao_contextual",
+                "estado"
+              ]
+            }
+          },
+          "instituicao_confirmada": {
+            "const": false
+          },
+          "autoridade_civil_confirmada": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "modelo_hipotetico",
+          "tensao_institucional",
+          "estado",
+          "fontes_contextuais",
+          "instituicao_confirmada",
+          "autoridade_civil_confirmada"
+        ]
+      }
+    },
+    "relacoes_diplomaticas": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xviii:relacao:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_politica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "modelo_de_cooperacao_proposto": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fontes_contextuais": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "pagina": {
+                  "type": "integer",
+                  "enum": [
+                    6,
+                    7,
+                    16,
+                    17,
+                    18,
+                    20,
+                    24
+                  ]
+                },
+                "afirmacao_contextual": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "estado": {
+                  "const": "manuscrito_em_revisao"
+                }
+              },
+              "required": [
+                "pagina",
+                "afirmacao_contextual",
+                "estado"
+              ]
+            }
+          },
+          "estado": {
+            "const": "relacao_interpretativa_nao_institucionalizada"
+          },
+          "tratado_assinado": {
+            "const": false
+          },
+          "subordinacao_confirmada": {
+            "const": false
+          },
+          "fluxo_quantificado": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "pergunta_politica",
+          "modelo_de_cooperacao_proposto",
+          "fontes_contextuais",
+          "estado",
+          "tratado_assinado",
+          "subordinacao_confirmada",
+          "fluxo_quantificado"
+        ]
+      }
+    },
+    "circuitos_de_cuidado": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xviii:circuito:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "trabalho_possivel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dilema_de_distribuicao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "eixo_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xviii:eixo:"
+          },
+          "estado": {
+            "const": "circuito_nao_quantificado"
+          },
+          "volume_confirmado": {
+            "type": "null"
+          },
+          "local_confirmado": {
+            "type": "null"
+          },
+          "rota_operacional_confirmada": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "trabalho_possivel",
+          "dilema_de_distribuicao",
+          "eixo_id",
+          "estado",
+          "volume_confirmado",
+          "local_confirmado",
+          "rota_operacional_confirmada"
+        ]
+      }
+    },
+    "dilemas": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xviii:dilema:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cena_condicional": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_etica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "eixo_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xviii:eixo:"
+          },
+          "modelo_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xviii:modelo:"
+          },
+          "estado": {
+            "const": "dilema_nao_ocorrido"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "desfecho_aceito": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "cena_condicional",
+          "pergunta_etica",
+          "eixo_id",
+          "modelo_id",
+          "estado",
+          "ocorreu",
+          "desfecho_aceito"
+        ]
+      }
+    },
+    "vinhetas": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xviii:vinheta:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cena_condicional": {
+            "type": "string",
+            "minLength": 1
+          },
+          "implicacao_cultural": {
+            "type": "string",
+            "minLength": 1
+          },
+          "eixo_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xviii:eixo:"
+          },
+          "estado": {
+            "const": "vinheta_nao_ocorrida"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "personagem_canonico_criado": {
+            "const": false
+          },
+          "lugar_canonico_criado": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "cena_condicional",
+          "implicacao_cultural",
+          "eixo_id",
+          "estado",
+          "ocorreu",
+          "personagem_canonico_criado",
+          "lugar_canonico_criado"
+        ]
+      }
+    },
+    "decisoes_para_autor": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xviii:decisao:"
+          },
+          "pergunta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "pendente_de_aprovacao_autoral"
+          }
+        },
+        "required": [
+          "id",
+          "pergunta",
+          "estado"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "efeito_canonico_automatico",
+    "lugar",
+    "localizacao_documentada",
+    "id_lugar_geografico",
+    "id_regiao_geografica",
+    "lideranca_militar_documentada",
+    "fonte_autoral",
+    "fatos_documentados",
+    "limites",
+    "contagens",
+    "eixos_sociais",
+    "modelos_de_governanca",
+    "relacoes_diplomaticas",
+    "circuitos_de_cuidado",
+    "dilemas",
+    "vinhetas",
+    "decisoes_para_autor"
+  ]
+}
