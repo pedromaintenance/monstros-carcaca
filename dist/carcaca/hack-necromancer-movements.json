@@ -1,0 +1,1187 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-2581",
+    "paragrafo_docx": 2581,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "FALAR COM OS MORTOS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2581,
+        "tipo": "corpo",
+        "texto": "Quando possuir um cadáver suficientemente preservado e lhe fizer uma pergunta, você pode despertar aquilo que a morte ainda não apagou dele. O morto responde segundo o que sabia, acreditava ou percebeu em vida. \nEle não aprende nada que aconteceu depois de morrer e sua resposta não precisa ser objetiva se ele próprio estava enganado. Se alguma coisa tiver arrancado, bloqueado ou destruído aquilo que deveria ter permanecido no cadáver, você percebe."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando possuir um cadáver suficientemente preservado e lhe fizer uma pergunta, você pode despertar aquilo que a morte ainda não apagou dele. O morto responde segundo o que sabia, acreditava ou percebeu em vida. \nEle não aprende nada que aconteceu depois de morrer e sua resposta não precisa ser objetiva se ele próprio estava enganado. Se alguma coisa tiver arrancado, bloqueado ou destruído aquilo que deveria ter permanecido no cadáver, você percebe.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2581"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2582",
+    "paragrafo_docx": 2582,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "ANIMAR OS MORTOS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2582,
+        "tipo": "corpo",
+        "texto": "Quando devolver movimento a um cadáver através de sua tradição, diga o que o mantém obediente e role+INT ou CAR, conforme seu método.\n10+: Domínio 3.\n7–9: Domínio 2.\nO morto consegue seguir ordens simples relacionadas àquilo que o mantém obediente sem gastar Domínio.\nGaste 1 Domínio quando ele precisar:"
+      },
+      {
+        "paragrafo_docx": 2583,
+        "tipo": "opcao",
+        "texto": "executar uma tarefa complexa ou interpretar uma ordem;"
+      },
+      {
+        "paragrafo_docx": 2584,
+        "tipo": "opcao",
+        "texto": "superar um obstáculo, perigo ou resistência significativa sem sua intervenção direta;"
+      },
+      {
+        "paragrafo_docx": 2585,
+        "tipo": "opcao",
+        "texto": "agir contra um impulso, memória ou natureza que a morte deixou nele;"
+      },
+      {
+        "paragrafo_docx": 2586,
+        "tipo": "opcao",
+        "texto": "continuar obedecendo quando algo ameaça romper seu vínculo com você."
+      },
+      {
+        "paragrafo_docx": 2587,
+        "tipo": "continuacao",
+        "texto": "Quando o Domínio chegar a 0, escolha:"
+      },
+      {
+        "paragrafo_docx": 2588,
+        "tipo": "opcao",
+        "texto": "o morto cai novamente;"
+      },
+      {
+        "paragrafo_docx": 2589,
+        "tipo": "opcao",
+        "texto": "aquilo que o mantinha obediente deixa de ser suficiente, e o Mestre dirá o que agora o move."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2583,
+        "texto": "executar uma tarefa complexa ou interpretar uma ordem;"
+      },
+      {
+        "paragrafo_docx": 2584,
+        "texto": "superar um obstáculo, perigo ou resistência significativa sem sua intervenção direta;"
+      },
+      {
+        "paragrafo_docx": 2585,
+        "texto": "agir contra um impulso, memória ou natureza que a morte deixou nele;"
+      },
+      {
+        "paragrafo_docx": 2586,
+        "texto": "continuar obedecendo quando algo ameaça romper seu vínculo com você."
+      },
+      {
+        "paragrafo_docx": 2588,
+        "texto": "o morto cai novamente;"
+      },
+      {
+        "paragrafo_docx": 2589,
+        "texto": "aquilo que o mantinha obediente deixa de ser suficiente, e o Mestre dirá o que agora o move."
+      }
+    ],
+    "texto_original": "Quando devolver movimento a um cadáver através de sua tradição, diga o que o mantém obediente e role+INT ou CAR, conforme seu método.\n10+: Domínio 3.\n7–9: Domínio 2.\nO morto consegue seguir ordens simples relacionadas àquilo que o mantém obediente sem gastar Domínio.\nGaste 1 Domínio quando ele precisar:\nexecutar uma tarefa complexa ou interpretar uma ordem;\nsuperar um obstáculo, perigo ou resistência significativa sem sua intervenção direta;\nagir contra um impulso, memória ou natureza que a morte deixou nele;\ncontinuar obedecendo quando algo ameaça romper seu vínculo com você.\nQuando o Domínio chegar a 0, escolha:\no morto cai novamente;\naquilo que o mantinha obediente deixa de ser suficiente, e o Mestre dirá o que agora o move.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2582"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2590",
+    "paragrafo_docx": 2590,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "A MORTE DEIXA MARCAS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2590,
+        "tipo": "corpo",
+        "texto": "Quando examinar um cadáver, pergunte uma sem rolar:"
+      },
+      {
+        "paragrafo_docx": 2591,
+        "tipo": "opcao",
+        "texto": "Como morreu?"
+      },
+      {
+        "paragrafo_docx": 2592,
+        "tipo": "opcao",
+        "texto": "O que fez imediatamente antes de morrer?"
+      },
+      {
+        "paragrafo_docx": 2593,
+        "tipo": "opcao",
+        "texto": "Algo sobrenatural tocou este corpo?"
+      },
+      {
+        "paragrafo_docx": 2594,
+        "tipo": "opcao",
+        "texto": "O morto esperava morrer?"
+      },
+      {
+        "paragrafo_docx": 2595,
+        "tipo": "opcao",
+        "texto": "O que este corpo ainda se recusa a deixar partir?"
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2591,
+        "texto": "Como morreu?"
+      },
+      {
+        "paragrafo_docx": 2592,
+        "texto": "O que fez imediatamente antes de morrer?"
+      },
+      {
+        "paragrafo_docx": 2593,
+        "texto": "Algo sobrenatural tocou este corpo?"
+      },
+      {
+        "paragrafo_docx": 2594,
+        "texto": "O morto esperava morrer?"
+      },
+      {
+        "paragrafo_docx": 2595,
+        "texto": "O que este corpo ainda se recusa a deixar partir?"
+      }
+    ],
+    "texto_original": "Quando examinar um cadáver, pergunte uma sem rolar:\nComo morreu?\nO que fez imediatamente antes de morrer?\nAlgo sobrenatural tocou este corpo?\nO morto esperava morrer?\nO que este corpo ainda se recusa a deixar partir?",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2590"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2596",
+    "paragrafo_docx": 2596,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "NOME DO MORTO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2596,
+        "tipo": "corpo",
+        "texto": "Quando descobrir o nome pelo qual alguém morto verdadeiramente se reconhecia em vida, você possui influência sobre seu espírito para Negociar enquanto aquele nome ainda tiver significado para ele."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando descobrir o nome pelo qual alguém morto verdadeiramente se reconhecia em vida, você possui influência sobre seu espírito para Negociar enquanto aquele nome ainda tiver significado para ele.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2596"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2597",
+    "paragrafo_docx": 2597,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "NÃO ERA PARA VOCÊ ESTAR AQUI",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2597,
+        "tipo": "corpo",
+        "texto": "Quando encontrar uma criatura que morreu e verdadeiramente retornou, você reconhece imediatamente que a morte deixou de encaixar corretamente nela. Pergunte ao Mestre: “O que atravessou de volta junto com você?” \nA resposta pode ser literal, espiritual, emocional ou metafórica, mas será verdadeira. Além disso, enquanto estiver diante dela, você consegue distinguir o que nela pertence à vida atual e o que ainda pertence à morte que atravessou."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando encontrar uma criatura que morreu e verdadeiramente retornou, você reconhece imediatamente que a morte deixou de encaixar corretamente nela. Pergunte ao Mestre: “O que atravessou de volta junto com você?” \nA resposta pode ser literal, espiritual, emocional ou metafórica, mas será verdadeira. Além disso, enquanto estiver diante dela, você consegue distinguir o que nela pertence à vida atual e o que ainda pertence à morte que atravessou.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2597"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2598",
+    "paragrafo_docx": 2598,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "COLHEITA DE OSSOS",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2598,
+        "tipo": "corpo",
+        "texto": "Quando recolher cuidadosamente uma parte de uma criatura morta extraordinária, receba 1 Componente relacionado àquilo que ela era. Diga que propriedade extraordinária da criatura ainda permanece naquela parte.\nQuando incorporar o Componente à sua necromancia — queimando-o, enxertando-o, triturando-o, vestindo-o, ingerindo-o ou usando outro método apropriado — gaste-o para manifestar temporariamente essa propriedade de maneira coerente com aquilo que foi preservado. O Mestre dirá como a morte distorceu, limitou ou tornou macabra essa propriedade."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando recolher cuidadosamente uma parte de uma criatura morta extraordinária, receba 1 Componente relacionado àquilo que ela era. Diga que propriedade extraordinária da criatura ainda permanece naquela parte.\nQuando incorporar o Componente à sua necromancia — queimando-o, enxertando-o, triturando-o, vestindo-o, ingerindo-o ou usando outro método apropriado — gaste-o para manifestar temporariamente essa propriedade de maneira coerente com aquilo que foi preservado. O Mestre dirá como a morte distorceu, limitou ou tornou macabra essa propriedade.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2598"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2599",
+    "paragrafo_docx": 2599,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "LEGIÃO DOS SEM NOME",
+    "requisito_literal": "Animar os Mortos",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2582",
+      "titulo_requerido": "ANIMAR OS MORTOS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2599,
+        "tipo": "corpo",
+        "texto": "Quando possuir três ou mais cadáveres capazes de cumprir a mesma ordem e animá-los como um único grupo, role Animar os Mortos apenas uma vez. Todos compartilham o mesmo Domínio. \nEnquanto permanecerem reunidos e perseguindo a mesma ordem, trate a massa como uma única criatura cuja escala corresponde à quantidade e natureza dos cadáveres. Uma dificuldade que ameace o grupo inteiro consome Domínio apenas uma vez. Quando ordenar que partes da Legião executem tarefas independentes, cada tarefa adicional conta como agir além de uma ordem simples e consome 1 Domínio."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando possuir três ou mais cadáveres capazes de cumprir a mesma ordem e animá-los como um único grupo, role Animar os Mortos apenas uma vez. Todos compartilham o mesmo Domínio. \nEnquanto permanecerem reunidos e perseguindo a mesma ordem, trate a massa como uma única criatura cuja escala corresponde à quantidade e natureza dos cadáveres. Uma dificuldade que ameace o grupo inteiro consome Domínio apenas uma vez. Quando ordenar que partes da Legião executem tarefas independentes, cada tarefa adicional conta como agir além de uma ordem simples e consome 1 Domínio.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2599"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2600",
+    "paragrafo_docx": 2600,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "A MORTE TEM MUITAS FORMAS",
+    "requisito_literal": "Animar os Mortos",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2582",
+      "titulo_requerido": "ANIMAR OS MORTOS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2600,
+        "tipo": "corpo",
+        "texto": "Quando quiser transformar um cadáver em uma forma específica de morto-vivo, em vez de simplesmente devolver movimento a ele, diga que criatura pretende criar e quais propriedades definem aquela forma. O Mestre dará de 1 a 3 condições:"
+      },
+      {
+        "paragrafo_docx": 2601,
+        "tipo": "opcao",
+        "texto": "um tipo específico de cadáver;"
+      },
+      {
+        "paragrafo_docx": 2602,
+        "tipo": "opcao",
+        "texto": "uma forma particular de morte;"
+      },
+      {
+        "paragrafo_docx": 2603,
+        "tipo": "opcao",
+        "texto": "um lugar ou momento apropriado;"
+      },
+      {
+        "paragrafo_docx": 2604,
+        "tipo": "opcao",
+        "texto": "material necromântico excepcional;"
+      },
+      {
+        "paragrafo_docx": 2605,
+        "tipo": "opcao",
+        "texto": "um ato necessário durante a criação;"
+      },
+      {
+        "paragrafo_docx": 2606,
+        "tipo": "opcao",
+        "texto": "algo que precisa ser sacrificado ou incorporado."
+      },
+      {
+        "paragrafo_docx": 2607,
+        "tipo": "continuacao",
+        "texto": "Quando cumprir as condições, use Animar os Mortos normalmente. As propriedades, necessidades, fraquezas e impulsos daquela forma de morte-vida são reais na ficção."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2601,
+        "texto": "um tipo específico de cadáver;"
+      },
+      {
+        "paragrafo_docx": 2602,
+        "texto": "uma forma particular de morte;"
+      },
+      {
+        "paragrafo_docx": 2603,
+        "texto": "um lugar ou momento apropriado;"
+      },
+      {
+        "paragrafo_docx": 2604,
+        "texto": "material necromântico excepcional;"
+      },
+      {
+        "paragrafo_docx": 2605,
+        "texto": "um ato necessário durante a criação;"
+      },
+      {
+        "paragrafo_docx": 2606,
+        "texto": "algo que precisa ser sacrificado ou incorporado."
+      }
+    ],
+    "texto_original": "Quando quiser transformar um cadáver em uma forma específica de morto-vivo, em vez de simplesmente devolver movimento a ele, diga que criatura pretende criar e quais propriedades definem aquela forma. O Mestre dará de 1 a 3 condições:\num tipo específico de cadáver;\numa forma particular de morte;\num lugar ou momento apropriado;\nmaterial necromântico excepcional;\num ato necessário durante a criação;\nalgo que precisa ser sacrificado ou incorporado.\nQuando cumprir as condições, use Animar os Mortos normalmente. As propriedades, necessidades, fraquezas e impulsos daquela forma de morte-vida são reais na ficção.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2600"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2609",
+    "paragrafo_docx": 2609,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "ROUBAR A RÉDEA",
+    "requisito_literal": "Animar os Mortos",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2582",
+      "titulo_requerido": "ANIMAR OS MORTOS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2609,
+        "tipo": "corpo",
+        "texto": "Quando estudar um morto-vivo que esteja sob controle de outra criatura ou força, descubra primeiro o que sustenta sua obediência. Quando conseguir tocar, romper, imitar ou tomar esse vínculo, role+INT ou CAR. Com 7+ o controle passa para você. A partir daí, o morto funciona pelas regras normais de Animar os Mortos.\n10+: Receba Domínio 3. \n7–9: Receba Domínio 2, mas escolha 1:"
+      },
+      {
+        "paragrafo_docx": 2610,
+        "tipo": "opcao",
+        "texto": "o antigo mestre percebe imediatamente;"
+      },
+      {
+        "paragrafo_docx": 2611,
+        "tipo": "opcao",
+        "texto": "uma ordem anterior permanece profundamente gravada nele;"
+      },
+      {
+        "paragrafo_docx": 2612,
+        "tipo": "opcao",
+        "texto": "seu controle dura apenas até o fim da cena;"
+      },
+      {
+        "paragrafo_docx": 2613,
+        "tipo": "opcao",
+        "texto": "alguma coisa dentro do morto-vivo exige algo para aceitar a troca de mestre."
+      },
+      {
+        "paragrafo_docx": 2614,
+        "tipo": "continuacao",
+        "texto": "Mortos-vivos plenamente conscientes podem possuir relações, vontades ou pactos que tornem simples “controle” impossível."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2610,
+        "texto": "o antigo mestre percebe imediatamente;"
+      },
+      {
+        "paragrafo_docx": 2611,
+        "texto": "uma ordem anterior permanece profundamente gravada nele;"
+      },
+      {
+        "paragrafo_docx": 2612,
+        "texto": "seu controle dura apenas até o fim da cena;"
+      },
+      {
+        "paragrafo_docx": 2613,
+        "texto": "alguma coisa dentro do morto-vivo exige algo para aceitar a troca de mestre."
+      }
+    ],
+    "texto_original": "Quando estudar um morto-vivo que esteja sob controle de outra criatura ou força, descubra primeiro o que sustenta sua obediência. Quando conseguir tocar, romper, imitar ou tomar esse vínculo, role+INT ou CAR. Com 7+ o controle passa para você. A partir daí, o morto funciona pelas regras normais de Animar os Mortos.\n10+: Receba Domínio 3. \n7–9: Receba Domínio 2, mas escolha 1:\no antigo mestre percebe imediatamente;\numa ordem anterior permanece profundamente gravada nele;\nseu controle dura apenas até o fim da cena;\nalguma coisa dentro do morto-vivo exige algo para aceitar a troca de mestre.\nMortos-vivos plenamente conscientes podem possuir relações, vontades ou pactos que tornem simples “controle” impossível.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2609"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2615",
+    "paragrafo_docx": 2615,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "OLHOS QUE NÃO PISCAM",
+    "requisito_literal": "Animar os Mortos",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2582",
+      "titulo_requerido": "ANIMAR OS MORTOS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2615,
+        "tipo": "corpo",
+        "texto": "Quando permanecer imóvel e concentrar-se em um morto que você tenha animado, pode perceber através dos sentidos que ainda funcionem naquele corpo. Enquanto fizer isso, sua própria percepção do ambiente imediato fica extremamente reduzida. Você sabe imediatamente quando o morto sofre algo capaz de romper, deformar ou destruir o vínculo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando permanecer imóvel e concentrar-se em um morto que você tenha animado, pode perceber através dos sentidos que ainda funcionem naquele corpo. Enquanto fizer isso, sua própria percepção do ambiente imediato fica extremamente reduzida. Você sabe imediatamente quando o morto sofre algo capaz de romper, deformar ou destruir o vínculo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2615"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2616",
+    "paragrafo_docx": 2616,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "LEVANTE-SE COMO VOCÊ MESMO",
+    "requisito_literal": "Animar os Mortos e Nome do Morto",
+    "requisito_estruturado": {
+      "tipo": "todos",
+      "operador_literal": "e",
+      "itens": [
+        {
+          "tipo": "movimento_exato",
+          "movimento_id": "movimento-classe:paragrafo-2582",
+          "titulo_requerido": "ANIMAR OS MORTOS"
+        },
+        {
+          "tipo": "movimento_exato",
+          "movimento_id": "movimento-classe:paragrafo-2596",
+          "titulo_requerido": "NOME DO MORTO"
+        }
+      ],
+      "status": "interpretacao_literal_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2616,
+        "tipo": "corpo",
+        "texto": "Quando devolver movimento a alguém chamando-o pelo nome pelo qual verdadeiramente se reconhecia, você pode abrir mão de tentar controlá-lo. Não role Animar os Mortos. Ele se levanta com vontade própria, memórias e personalidade formadas por aquilo que a morte deixou disponível. \nPergunte ao Mestre: “Que parte dele não conseguiu voltar?”\ne “Que necessidade, impulso ou fome a morte colocou no lugar?” \nEle não é seu Servo. E talvez ninguém consiga responder facilmente se aquilo é a pessoa, a alma, uma memória perfeita ou uma nova criatura que acredita ser aquela pessoa."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando devolver movimento a alguém chamando-o pelo nome pelo qual verdadeiramente se reconhecia, você pode abrir mão de tentar controlá-lo. Não role Animar os Mortos. Ele se levanta com vontade própria, memórias e personalidade formadas por aquilo que a morte deixou disponível. \nPergunte ao Mestre: “Que parte dele não conseguiu voltar?”\ne “Que necessidade, impulso ou fome a morte colocou no lugar?” \nEle não é seu Servo. E talvez ninguém consiga responder facilmente se aquilo é a pessoa, a alma, uma memória perfeita ou uma nova criatura que acredita ser aquela pessoa.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2616"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2617",
+    "paragrafo_docx": 2617,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "ABOMINAÇÃO COSTURADA",
+    "requisito_literal": "Animar os Mortos e Colheita de Ossos",
+    "requisito_estruturado": {
+      "tipo": "todos",
+      "operador_literal": "e",
+      "itens": [
+        {
+          "tipo": "movimento_exato",
+          "movimento_id": "movimento-classe:paragrafo-2582",
+          "titulo_requerido": "ANIMAR OS MORTOS"
+        },
+        {
+          "tipo": "movimento_exato",
+          "movimento_id": "movimento-classe:paragrafo-2598",
+          "titulo_requerido": "COLHEITA DE OSSOS"
+        }
+      ],
+      "status": "interpretacao_literal_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2617,
+        "tipo": "corpo",
+        "texto": "Quando construir um único cadáver utilizando partes de criaturas diferentes, pode incorporar até dois Componentes de Colheita de Ossos sem gastá-los imediatamente. Anime a criatura normalmente. \nAs propriedades preservadas nesses Componentes tornam-se parte real da anatomia do morto-vivo. Quando uma dessas propriedades superar uma resistência ou perigo significativo, gaste 1 Domínio. Quando a criatura for definitivamente destruída, os Componentes incorporados são gastos."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando construir um único cadáver utilizando partes de criaturas diferentes, pode incorporar até dois Componentes de Colheita de Ossos sem gastá-los imediatamente. Anime a criatura normalmente. \nAs propriedades preservadas nesses Componentes tornam-se parte real da anatomia do morto-vivo. Quando uma dessas propriedades superar uma resistência ou perigo significativo, gaste 1 Domínio. Quando a criatura for definitivamente destruída, os Componentes incorporados são gastos.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2617"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2618",
+    "paragrafo_docx": 2618,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "A MORTE ALIMENTA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2618,
+        "tipo": "corpo",
+        "texto": "Uma vez por cena, quando uma criatura viva morrer como consequência direta de sua necromancia ou de um morto que esteja agindo sob seu controle, escolha 1:"
+      },
+      {
+        "paragrafo_docx": 2619,
+        "tipo": "opcao",
+        "texto": "recupere 1d6 PV;"
+      },
+      {
+        "paragrafo_docx": 2620,
+        "tipo": "opcao",
+        "texto": "restaure 1 Domínio, até o máximo de 3, de um morto que você animou;"
+      },
+      {
+        "paragrafo_docx": 2621,
+        "tipo": "opcao",
+        "texto": "receba +1 adiante ao utilizar imediatamente aquela morte ou cadáver em outro Movimento necromântico."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2619,
+        "texto": "recupere 1d6 PV;"
+      },
+      {
+        "paragrafo_docx": 2620,
+        "texto": "restaure 1 Domínio, até o máximo de 3, de um morto que você animou;"
+      },
+      {
+        "paragrafo_docx": 2621,
+        "texto": "receba +1 adiante ao utilizar imediatamente aquela morte ou cadáver em outro Movimento necromântico."
+      }
+    ],
+    "texto_original": "Uma vez por cena, quando uma criatura viva morrer como consequência direta de sua necromancia ou de um morto que esteja agindo sob seu controle, escolha 1:\nrecupere 1d6 PV;\nrestaure 1 Domínio, até o máximo de 3, de um morto que você animou;\nreceba +1 adiante ao utilizar imediatamente aquela morte ou cadáver em outro Movimento necromântico.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2618"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2622",
+    "paragrafo_docx": 2622,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "CARNE QUE LEMBRA",
+    "requisito_literal": "A Morte Deixa Marcas",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2590",
+      "titulo_requerido": "A MORTE DEIXA MARCAS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2622,
+        "tipo": "corpo",
+        "texto": "Quando reunir restos suficientes para representar significativamente um cadáver, você pode obrigar a carne morta a recordar por alguns instantes a forma que possuía. Partes ausentes aparecem como tecido pálido, ossos incompletos ou ecos necromânticos daquilo que não está mais ali. Enquanto essa forma permanecer, trate o corpo como suficientemente preservado para A Morte Deixa Marcas e Falar com os Mortos, caso possua esses Movimentos."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando reunir restos suficientes para representar significativamente um cadáver, você pode obrigar a carne morta a recordar por alguns instantes a forma que possuía. Partes ausentes aparecem como tecido pálido, ossos incompletos ou ecos necromânticos daquilo que não está mais ali. Enquanto essa forma permanecer, trate o corpo como suficientemente preservado para A Morte Deixa Marcas e Falar com os Mortos, caso possua esses Movimentos.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2622"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2623",
+    "paragrafo_docx": 2623,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "O CORPO SABIA COMO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2623,
+        "tipo": "corpo",
+        "texto": "Quando tocar uma parte suficientemente preservada de alguém morto e deixar a memória física daquela carne atravessar seus movimentos, pergunte ao Mestre: “O que este corpo fez tantas vezes que já não precisava pensar para fazer?”\nO Mestre responderá com uma prática física ou técnica mundana que o morto realmente dominava. Até o fim da cena, você pode reproduzir aquela técnica como alguém treinado nela, desde que possua corpo e ferramentas capazes de executá-la. Isso não concede fatos, idiomas, conhecimentos teóricos ou memórias conscientes. As mãos podem lembrar como arrombar uma fechadura. Elas não lembram por que o dono estava roubando o castelo."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando tocar uma parte suficientemente preservada de alguém morto e deixar a memória física daquela carne atravessar seus movimentos, pergunte ao Mestre: “O que este corpo fez tantas vezes que já não precisava pensar para fazer?”\nO Mestre responderá com uma prática física ou técnica mundana que o morto realmente dominava. Até o fim da cena, você pode reproduzir aquela técnica como alguém treinado nela, desde que possua corpo e ferramentas capazes de executá-la. Isso não concede fatos, idiomas, conhecimentos teóricos ou memórias conscientes. As mãos podem lembrar como arrombar uma fechadura. Elas não lembram por que o dono estava roubando o castelo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2623"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2624",
+    "paragrafo_docx": 2624,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "NÃO PRECISO DO CORPO INTEIRO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2624,
+        "tipo": "corpo",
+        "texto": "Quando der movimento necromântico a uma parte separada de um cadáver — mão, olho, língua, coração, cabeça, dedo ou equivalente — escolha uma função simples relacionada ao que aquela parte fazia ou representava em vida. Enquanto permanecer íntegra, ela consegue repetir essa função sem precisar de Domínio."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando der movimento necromântico a uma parte separada de um cadáver — mão, olho, língua, coração, cabeça, dedo ou equivalente — escolha uma função simples relacionada ao que aquela parte fazia ou representava em vida. Enquanto permanecer íntegra, ela consegue repetir essa função sem precisar de Domínio.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2624"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2625",
+    "paragrafo_docx": 2625,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "ASSOMBRAÇÃO ARTIFICIAL",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2625,
+        "tipo": "corpo",
+        "texto": "Quando vincular um resíduo de alguém morto a um lugar ou objeto significativo para sua morte, declare:"
+      },
+      {
+        "paragrafo_docx": 2626,
+        "tipo": "opcao",
+        "texto": "o que desperta a assombração;"
+      },
+      {
+        "paragrafo_docx": 2627,
+        "tipo": "opcao",
+        "texto": "o que ela faz quando desperta."
+      },
+      {
+        "paragrafo_docx": 2628,
+        "tipo": "continuacao",
+        "texto": "A assombração repete essa resposta sempre que o gatilho ocorrer. Ela pode produzir imagens, sons, movimentos ou fenômenos sobrenaturais coerentes com aquilo que o morto deixou para trás. Ela não aprende, improvisa nem desenvolve novos desejos. Se o fenômeno puder realmente ferir alguém, sua Periculosidade decorre da natureza da morte, do morto e do vínculo criado. A assombração termina quando o vínculo for quebrado ou aquilo que a sustenta deixar de existir."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2626,
+        "texto": "o que desperta a assombração;"
+      },
+      {
+        "paragrafo_docx": 2627,
+        "texto": "o que ela faz quando desperta."
+      }
+    ],
+    "texto_original": "Quando vincular um resíduo de alguém morto a um lugar ou objeto significativo para sua morte, declare:\no que desperta a assombração;\no que ela faz quando desperta.\nA assombração repete essa resposta sempre que o gatilho ocorrer. Ela pode produzir imagens, sons, movimentos ou fenômenos sobrenaturais coerentes com aquilo que o morto deixou para trás. Ela não aprende, improvisa nem desenvolve novos desejos. Se o fenômeno puder realmente ferir alguém, sua Periculosidade decorre da natureza da morte, do morto e do vínculo criado. A assombração termina quando o vínculo for quebrado ou aquilo que a sustenta deixar de existir.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2625"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2630",
+    "paragrafo_docx": 2630,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "CORPO EMPRESTADO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2630,
+        "tipo": "corpo",
+        "texto": "Quando abandonar temporariamente seu próprio corpo e introduzir sua consciência num cadáver vazio que esteja tocando, seu corpo verdadeiro cai inerte. Enquanto habitar o cadáver:"
+      },
+      {
+        "paragrafo_docx": 2631,
+        "tipo": "opcao",
+        "texto": "mantenha suas memórias;"
+      },
+      {
+        "paragrafo_docx": 2632,
+        "tipo": "opcao",
+        "texto": "utilize a anatomia, limitações e propriedades físicas daquele corpo;"
+      },
+      {
+        "paragrafo_docx": 2633,
+        "tipo": "opcao",
+        "texto": "perceba através dos sentidos que ele ainda possuir;"
+      },
+      {
+        "paragrafo_docx": 2634,
+        "tipo": "opcao",
+        "texto": "não pode utilizar capacidades que dependam especificamente de sua anatomia original."
+      },
+      {
+        "paragrafo_docx": 2635,
+        "tipo": "continuacao",
+        "texto": "Quando abandonar o cadáver, ele cai novamente. Se o cadáver for destruído enquanto você estiver nele, sua consciência retorna violentamente ao corpo original e você fica Atordoado. Se seu corpo original morrer enquanto você estiver fora dele, você percebe imediatamente. E agora aquele cadáver é o único corpo em que você está."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2631,
+        "texto": "mantenha suas memórias;"
+      },
+      {
+        "paragrafo_docx": 2632,
+        "texto": "utilize a anatomia, limitações e propriedades físicas daquele corpo;"
+      },
+      {
+        "paragrafo_docx": 2633,
+        "texto": "perceba através dos sentidos que ele ainda possuir;"
+      },
+      {
+        "paragrafo_docx": 2634,
+        "texto": "não pode utilizar capacidades que dependam especificamente de sua anatomia original."
+      }
+    ],
+    "texto_original": "Quando abandonar temporariamente seu próprio corpo e introduzir sua consciência num cadáver vazio que esteja tocando, seu corpo verdadeiro cai inerte. Enquanto habitar o cadáver:\nmantenha suas memórias;\nutilize a anatomia, limitações e propriedades físicas daquele corpo;\nperceba através dos sentidos que ele ainda possuir;\nnão pode utilizar capacidades que dependam especificamente de sua anatomia original.\nQuando abandonar o cadáver, ele cai novamente. Se o cadáver for destruído enquanto você estiver nele, sua consciência retorna violentamente ao corpo original e você fica Atordoado. Se seu corpo original morrer enquanto você estiver fora dele, você percebe imediatamente. E agora aquele cadáver é o único corpo em que você está.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2630"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2636",
+    "paragrafo_docx": 2636,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "MORRER É UM ESTADO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2636,
+        "tipo": "corpo",
+        "texto": "Quando deliberadamente reduzir seu corpo ao limiar absoluto entre vida e morte, você pode parar respiração, pulso, calor e outros sinais ordinários de vida. Para observação e medicina comuns, você está morto. Você permanece vagamente consciente e pode encerrar o estado quando quiser. Enquanto permanecer assim:"
+      },
+      {
+        "paragrafo_docx": 2637,
+        "tipo": "opcao",
+        "texto": "não precisa respirar;"
+      },
+      {
+        "paragrafo_docx": 2638,
+        "tipo": "opcao",
+        "texto": "seu corpo não reage normalmente a processos que dependam de metabolismo ativo;"
+      },
+      {
+        "paragrafo_docx": 2639,
+        "tipo": "opcao",
+        "texto": "magia ou fenômenos que dependam especificamente de encontrar um cadáver podem reconhecer você como um."
+      },
+      {
+        "paragrafo_docx": 2640,
+        "tipo": "continuacao",
+        "texto": "Enquanto permanecer nesse estado, você não consegue agir fisicamente sem encerrá-lo."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2637,
+        "texto": "não precisa respirar;"
+      },
+      {
+        "paragrafo_docx": 2638,
+        "texto": "seu corpo não reage normalmente a processos que dependam de metabolismo ativo;"
+      },
+      {
+        "paragrafo_docx": 2639,
+        "texto": "magia ou fenômenos que dependam especificamente de encontrar um cadáver podem reconhecer você como um."
+      }
+    ],
+    "texto_original": "Quando deliberadamente reduzir seu corpo ao limiar absoluto entre vida e morte, você pode parar respiração, pulso, calor e outros sinais ordinários de vida. Para observação e medicina comuns, você está morto. Você permanece vagamente consciente e pode encerrar o estado quando quiser. Enquanto permanecer assim:\nnão precisa respirar;\nseu corpo não reage normalmente a processos que dependam de metabolismo ativo;\nmagia ou fenômenos que dependam especificamente de encontrar um cadáver podem reconhecer você como um.\nEnquanto permanecer nesse estado, você não consegue agir fisicamente sem encerrá-lo.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2636"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2641",
+    "paragrafo_docx": 2641,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "JÁ MORRI UM POUCO",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2641,
+        "tipo": "corpo",
+        "texto": "Alguma parte fundamental de seu corpo já atravessou a morte e não voltou inteiramente. Você não precisa respirar, comer, beber ou dormir para continuar existindo. Processos comuns que dependam exclusivamente de metabolismo vivo — como sufocamento ou deteriorações biológicas ordinárias — não funcionam em você da maneira habitual. Você continua sendo uma criatura viva para cura e Último Suspiro. Mas efeitos, criaturas ou poderes capazes de reconhecer mortos-vivos também podem reconhecer a morte que existe dentro de você."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Alguma parte fundamental de seu corpo já atravessou a morte e não voltou inteiramente. Você não precisa respirar, comer, beber ou dormir para continuar existindo. Processos comuns que dependam exclusivamente de metabolismo vivo — como sufocamento ou deteriorações biológicas ordinárias — não funcionam em você da maneira habitual. Você continua sendo uma criatura viva para cura e Último Suspiro. Mas efeitos, criaturas ou poderes capazes de reconhecer mortos-vivos também podem reconhecer a morte que existe dentro de você.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2641"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2642",
+    "paragrafo_docx": 2642,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "A CARNE MORTA ACEITA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2642,
+        "tipo": "corpo",
+        "texto": "Quando tocar simultaneamente uma criatura viva e um cadáver adequado, você pode transferir da primeira para o segundo uma condição física concreta que possa existir em ambos os corpos. Diga como ela abandona a carne viva e aparece na morta. Veneno pode escurecer as veias do cadáver. Uma febre pode aquecê-lo. Uma fratura pode estalar no osso morto enquanto o vivo volta ao lugar. Condições sobrenaturais, transformações profundas ou coisas ligadas à identidade da criatura podem exigir um preço, preparação ou correspondência mais forte, a critério da ficção. \nVocê não destrói a condição. Você encontrou outro corpo para ela."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando tocar simultaneamente uma criatura viva e um cadáver adequado, você pode transferir da primeira para o segundo uma condição física concreta que possa existir em ambos os corpos. Diga como ela abandona a carne viva e aparece na morta. Veneno pode escurecer as veias do cadáver. Uma febre pode aquecê-lo. Uma fratura pode estalar no osso morto enquanto o vivo volta ao lugar. Condições sobrenaturais, transformações profundas ou coisas ligadas à identidade da criatura podem exigir um preço, preparação ou correspondência mais forte, a critério da ficção. \nVocê não destrói a condição. Você encontrou outro corpo para ela.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2642"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2643",
+    "paragrafo_docx": 2643,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "JAULA DE ALMA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2643,
+        "tipo": "corpo",
+        "texto": "Quando uma criatura morrer em sua presença e você possuir um recipiente preparado para receber aquilo que está partindo, pode tentar prender sua alma antes que ela siga adiante. Uma alma livre, desprotegida e voluntária pode simplesmente entrar. Uma alma resistente, poderosa, protegida ou já reivindicada exige que você enfrente aquilo que impede sua captura. Quando conseguir, receba Domínio 3 sobre a alma presa. Gaste 1 Domínio para:"
+      },
+      {
+        "paragrafo_docx": 2644,
+        "tipo": "opcao",
+        "texto": "obrigá-la a responder honestamente uma pergunta sobre aquilo que conhecia;"
+      },
+      {
+        "paragrafo_docx": 2645,
+        "tipo": "opcao",
+        "texto": "experimentar uma memória específica através dela;"
+      },
+      {
+        "paragrafo_docx": 2646,
+        "tipo": "opcao",
+        "texto": "utilizar sua identidade como uma representação verdadeira em uma necromancia;"
+      },
+      {
+        "paragrafo_docx": 2647,
+        "tipo": "opcao",
+        "texto": "se possuir Colheita de Ossos, gaste 1 Domínio para condensar parte da essência como 1 Componente apropriado."
+      },
+      {
+        "paragrafo_docx": 2648,
+        "tipo": "continuacao",
+        "texto": "Ao fim de cada sessão em que mantiver a alma aprisionada, gaste 1 Domínio ou liberte-a. Enquanto estiver presa, ela não pode seguir normalmente para a morte nem retornar ao corpo por meios que dependam de sua alma estar livre. \nQuando o Domínio chegar a 0, ela escapa ou é libertada."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2644,
+        "texto": "obrigá-la a responder honestamente uma pergunta sobre aquilo que conhecia;"
+      },
+      {
+        "paragrafo_docx": 2645,
+        "texto": "experimentar uma memória específica através dela;"
+      },
+      {
+        "paragrafo_docx": 2646,
+        "texto": "utilizar sua identidade como uma representação verdadeira em uma necromancia;"
+      },
+      {
+        "paragrafo_docx": 2647,
+        "texto": "se possuir Colheita de Ossos, gaste 1 Domínio para condensar parte da essência como 1 Componente apropriado."
+      }
+    ],
+    "texto_original": "Quando uma criatura morrer em sua presença e você possuir um recipiente preparado para receber aquilo que está partindo, pode tentar prender sua alma antes que ela siga adiante. Uma alma livre, desprotegida e voluntária pode simplesmente entrar. Uma alma resistente, poderosa, protegida ou já reivindicada exige que você enfrente aquilo que impede sua captura. Quando conseguir, receba Domínio 3 sobre a alma presa. Gaste 1 Domínio para:\nobrigá-la a responder honestamente uma pergunta sobre aquilo que conhecia;\nexperimentar uma memória específica através dela;\nutilizar sua identidade como uma representação verdadeira em uma necromancia;\nse possuir Colheita de Ossos, gaste 1 Domínio para condensar parte da essência como 1 Componente apropriado.\nAo fim de cada sessão em que mantiver a alma aprisionada, gaste 1 Domínio ou liberte-a. Enquanto estiver presa, ela não pode seguir normalmente para a morte nem retornar ao corpo por meios que dependam de sua alma estar livre. \nQuando o Domínio chegar a 0, ela escapa ou é libertada.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2643"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2649",
+    "paragrafo_docx": 2649,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "ÂNCORA DA ALMA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2649,
+        "tipo": "corpo",
+        "texto": "Quando realizar um rito prolongado para separar voluntariamente parte de sua própria alma e vinculá-la a um objeto, diga: “Que parte de mim coloquei aqui?” Escolha algo significativo: uma memória, emoção, vínculo, parte do nome, desejo, medo ou outra porção daquilo que constitui você. \nEnquanto a Âncora existir, essa parte de você fica ausente, enfraquecida ou alterada de maneira correspondente. Se seu corpo morrer e sua alma estiver livre para partir, ela é puxada para a Âncora em vez de seguir imediatamente adiante. Ali você consegue perceber vagamente aquilo que ocorre ao redor e comunicar-se de maneiras limitadas, mas não possui corpo nem pode agir fisicamente. Destruir a Âncora libera aquilo que estiver dentro dela. Observe que isso não ressuscita você. Só garante que, quando morrer, sabemos exatamente onde está o problema."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando realizar um rito prolongado para separar voluntariamente parte de sua própria alma e vinculá-la a um objeto, diga: “Que parte de mim coloquei aqui?” Escolha algo significativo: uma memória, emoção, vínculo, parte do nome, desejo, medo ou outra porção daquilo que constitui você. \nEnquanto a Âncora existir, essa parte de você fica ausente, enfraquecida ou alterada de maneira correspondente. Se seu corpo morrer e sua alma estiver livre para partir, ela é puxada para a Âncora em vez de seguir imediatamente adiante. Ali você consegue perceber vagamente aquilo que ocorre ao redor e comunicar-se de maneiras limitadas, mas não possui corpo nem pode agir fisicamente. Destruir a Âncora libera aquilo que estiver dentro dela. Observe que isso não ressuscita você. Só garante que, quando morrer, sabemos exatamente onde está o problema.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2649"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2650",
+    "paragrafo_docx": 2650,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "CORPO DE RESERVA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2650,
+        "tipo": "corpo",
+        "texto": "Quando tiver tempo e recursos necromânticos para preparar um corpo vazio para receber uma alma específica, diga de que ele é feito e em que se baseia. Ele permanece inerte até que a alma escolhida esteja desencarnada, livre e voluntária para ocupá-lo. Quando isso acontecer, ela pode entrar. O Mestre dirá uma diferença física, limitação ou consequência inevitável do corpo construído. Enquanto a alma estiver ali, nenhum outro corpo pode ser considerado seu corpo vivo verdadeiro."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando tiver tempo e recursos necromânticos para preparar um corpo vazio para receber uma alma específica, diga de que ele é feito e em que se baseia. Ele permanece inerte até que a alma escolhida esteja desencarnada, livre e voluntária para ocupá-lo. Quando isso acontecer, ela pode entrar. O Mestre dirá uma diferença física, limitação ou consequência inevitável do corpo construído. Enquanto a alma estiver ali, nenhum outro corpo pode ser considerado seu corpo vivo verdadeiro.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2650"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2652",
+    "paragrafo_docx": 2652,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "FILACTÉRIO",
+    "requisito_literal": "Âncora da Alma",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2649",
+      "titulo_requerido": "ÂNCORA DA ALMA",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2652,
+        "tipo": "corpo",
+        "texto": "Quando decidir que uma mera Âncora não é suficiente e realizar um rito para vincular permanentemente sua continuidade àquilo que ela contém, diga o que precisa morrer definitivamente em você para concluir o processo. Você deixa de possuir uma relação normal com vida e morte. Quando seu corpo for definitivamente destruído, sua consciência retorna à Âncora. Para voltar a agir fisicamente, ainda precisará conseguir, criar, roubar ou reconstruir um corpo capaz de recebê-lo. \nEnquanto o Filactério existir:"
+      },
+      {
+        "paragrafo_docx": 2653,
+        "tipo": "opcao",
+        "texto": "sua alma não segue normalmente para o além quando seu corpo morre;"
+      },
+      {
+        "paragrafo_docx": 2654,
+        "tipo": "opcao",
+        "texto": "qualquer criatura que descubra o que ele é possui uma ligação direta com sua existência;"
+      },
+      {
+        "paragrafo_docx": 2655,
+        "tipo": "opcao",
+        "texto": "destruir o Filactério enquanto você estiver dentro dele entrega sua alma imediatamente àquilo que a Morte tiver reservado para você."
+      },
+      {
+        "paragrafo_docx": 2656,
+        "tipo": "continuacao",
+        "texto": "O Mestre dirá também uma necessidade, compulsão ou vulnerabilidade permanente criada pelo ritual."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2653,
+        "texto": "sua alma não segue normalmente para o além quando seu corpo morre;"
+      },
+      {
+        "paragrafo_docx": 2654,
+        "texto": "qualquer criatura que descubra o que ele é possui uma ligação direta com sua existência;"
+      },
+      {
+        "paragrafo_docx": 2655,
+        "texto": "destruir o Filactério enquanto você estiver dentro dele entrega sua alma imediatamente àquilo que a Morte tiver reservado para você."
+      }
+    ],
+    "texto_original": "Quando decidir que uma mera Âncora não é suficiente e realizar um rito para vincular permanentemente sua continuidade àquilo que ela contém, diga o que precisa morrer definitivamente em você para concluir o processo. Você deixa de possuir uma relação normal com vida e morte. Quando seu corpo for definitivamente destruído, sua consciência retorna à Âncora. Para voltar a agir fisicamente, ainda precisará conseguir, criar, roubar ou reconstruir um corpo capaz de recebê-lo. \nEnquanto o Filactério existir:\nsua alma não segue normalmente para o além quando seu corpo morre;\nqualquer criatura que descubra o que ele é possui uma ligação direta com sua existência;\ndestruir o Filactério enquanto você estiver dentro dele entrega sua alma imediatamente àquilo que a Morte tiver reservado para você.\nO Mestre dirá também uma necessidade, compulsão ou vulnerabilidade permanente criada pelo ritual.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2652"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2657",
+    "paragrafo_docx": 2657,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "VISAGEM DO NECROMANTE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2657,
+        "tipo": "corpo",
+        "texto": "Quando um morto-vivo conseguir perceber claramente o que você é capaz de fazer com os mortos, ele reconhece imediatamente sua relação com a morte-vida. Mortos-vivos sem vontade própria hesitam antes de atacá-lo espontaneamente, a menos que uma ordem, fome ou impulso claro os obrigue. \nQuando um morto-vivo inteligente perceber você, pergunte:\n“Ele me vê primeiro como mestre, ameaça, presa, rival ou recurso?” O Mestre responderá honestamente.\nSe você puder realmente oferecer reparo, libertação, sustentação, transformação ou controle sobre sua condição, isso conta como influência para Negociar com ele."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando um morto-vivo conseguir perceber claramente o que você é capaz de fazer com os mortos, ele reconhece imediatamente sua relação com a morte-vida. Mortos-vivos sem vontade própria hesitam antes de atacá-lo espontaneamente, a menos que uma ordem, fome ou impulso claro os obrigue. \nQuando um morto-vivo inteligente perceber você, pergunte:\n“Ele me vê primeiro como mestre, ameaça, presa, rival ou recurso?” O Mestre responderá honestamente.\nSe você puder realmente oferecer reparo, libertação, sustentação, transformação ou controle sobre sua condição, isso conta como influência para Negociar com ele.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2657"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2658",
+    "paragrafo_docx": 2658,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "ENXERTO CADAVÉRICO",
+    "requisito_literal": "Colheita de Ossos",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2598",
+      "titulo_requerido": "COLHEITA DE OSSOS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2658,
+        "tipo": "corpo",
+        "texto": "Quando utilizar um Componente de Colheita de Ossos enxertando-o fisicamente em você ou em outra criatura em vez de consumi-lo numa manifestação temporária, a propriedade preservada pode tornar-se persistente enquanto o enxerto permanecer. O Mestre dirá uma consequência igualmente concreta:"
+      },
+      {
+        "paragrafo_docx": 2659,
+        "tipo": "opcao",
+        "texto": "uma necessidade nova;"
+      },
+      {
+        "paragrafo_docx": 2660,
+        "tipo": "opcao",
+        "texto": "uma vulnerabilidade;"
+      },
+      {
+        "paragrafo_docx": 2661,
+        "tipo": "opcao",
+        "texto": "uma alteração anatômica impossível de esconder;"
+      },
+      {
+        "paragrafo_docx": 2662,
+        "tipo": "opcao",
+        "texto": "um impulso herdado da criatura;"
+      },
+      {
+        "paragrafo_docx": 2663,
+        "tipo": "opcao",
+        "texto": "alguma função anterior do corpo que precisa ser sacrificada."
+      },
+      {
+        "paragrafo_docx": 2664,
+        "tipo": "continuacao",
+        "texto": "Uma criatura pode sustentar apenas um Enxerto Cadavérico por vez. Removê-lo destrói o Componente."
+      }
+    ],
+    "opcoes": [
+      {
+        "paragrafo_docx": 2659,
+        "texto": "uma necessidade nova;"
+      },
+      {
+        "paragrafo_docx": 2660,
+        "texto": "uma vulnerabilidade;"
+      },
+      {
+        "paragrafo_docx": 2661,
+        "texto": "uma alteração anatômica impossível de esconder;"
+      },
+      {
+        "paragrafo_docx": 2662,
+        "texto": "um impulso herdado da criatura;"
+      },
+      {
+        "paragrafo_docx": 2663,
+        "texto": "alguma função anterior do corpo que precisa ser sacrificada."
+      }
+    ],
+    "texto_original": "Quando utilizar um Componente de Colheita de Ossos enxertando-o fisicamente em você ou em outra criatura em vez de consumi-lo numa manifestação temporária, a propriedade preservada pode tornar-se persistente enquanto o enxerto permanecer. O Mestre dirá uma consequência igualmente concreta:\numa necessidade nova;\numa vulnerabilidade;\numa alteração anatômica impossível de esconder;\num impulso herdado da criatura;\nalguma função anterior do corpo que precisa ser sacrificada.\nUma criatura pode sustentar apenas um Enxerto Cadavérico por vez. Removê-lo destrói o Componente.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2658"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2665",
+    "paragrafo_docx": 2665,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "O MORTO NÃO CAI DUAS VEZES",
+    "requisito_literal": "Animar os Mortos",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2582",
+      "titulo_requerido": "ANIMAR OS MORTOS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2665,
+        "tipo": "corpo",
+        "texto": "Quando um morto que você animou deveria ser destruído por uma violência que não eliminou aquilo que sustenta sua animação, você pode gastar 1 Domínio para fazê-lo continuar funcionando apesar da destruição. Diga o que deixou de funcionar normalmente. Pode perder pernas e continuar rastejando. Pode perder cabeça e continuar seguindo a última ordem. Pode permanecer de pé sustentado apenas por tendões negros e ódio administrativo. Quando não houver mais nada no corpo capaz de cumprir a ordem, acabou."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando um morto que você animou deveria ser destruído por uma violência que não eliminou aquilo que sustenta sua animação, você pode gastar 1 Domínio para fazê-lo continuar funcionando apesar da destruição. Diga o que deixou de funcionar normalmente. Pode perder pernas e continuar rastejando. Pode perder cabeça e continuar seguindo a última ordem. Pode permanecer de pé sustentado apenas por tendões negros e ódio administrativo. Quando não houver mais nada no corpo capaz de cumprir a ordem, acabou.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2665"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2666",
+    "paragrafo_docx": 2666,
+    "grupo": "NECROMANTE",
+    "categoria": "classe",
+    "titulo": "UM MORTO PARA CADA SERVIÇO",
+    "requisito_literal": "Animar os Mortos",
+    "requisito_estruturado": {
+      "tipo": "movimento_exato",
+      "movimento_id": "movimento-classe:paragrafo-2582",
+      "titulo_requerido": "ANIMAR OS MORTOS",
+      "escopo": "mesmo_grupo",
+      "status": "correspondencia_exata_na_fonte_pendente_homologacao"
+    },
+    "partes": [
+      {
+        "paragrafo_docx": 2666,
+        "tipo": "corpo",
+        "texto": "Quando preparar deliberadamente um cadáver para uma função específica antes de animá-lo, diga o que alterou nele: mãos alongadas para escavar, cavidades para carregar objetos, mandíbulas costuradas para não falar, ossos ocos para escalar, pernas removidas para fazê-lo vigiar um lugar ou semelhante. Enquanto cumprir exclusivamente aquela função, não gaste Domínio apenas por ela normalmente exigir uma tarefa complexa. Se pedir ao morto algo fora da função para a qual foi preparado, volte às regras normais."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando preparar deliberadamente um cadáver para uma função específica antes de animá-lo, diga o que alterou nele: mãos alongadas para escavar, cavidades para carregar objetos, mandíbulas costuradas para não falar, ossos ocos para escalar, pernas removidas para fazê-lo vigiar um lugar ou semelhante. Enquanto cumprir exclusivamente aquela função, não gaste Domínio apenas por ela normalmente exigir uma tarefa complexa. Se pedir ao morto algo fora da função para a qual foi preparado, volte às regras normais.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2666"
+  }
+]
