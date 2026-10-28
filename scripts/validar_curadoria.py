@@ -2823,6 +2823,53 @@ def validar_povoamento_garganta_rio_ancestral():
             "Foram perdidas âncoras factuais da Garganta/Rio.")
     print("Garganta e Rio IX: 43 propostas, 4 NPCs canônicos não deslocados, 5 circuitos não efetivados.")
 
+
+def validar_povoamento_social_thargrid():
+    """Valida a integração editorial sem transformar propostas em fatos."""
+    data=load("data/propostas/thargrid-resistencia-cotidiano-hack.json")
+    expected={"lugares":6,"coletivos":6,"pessoas":9,"dilemas":4,"fluxos":6,
+              "acordos":5,"cenas":7,"arcos":3}
+    require(data["area_id"]=="area-proposta:thargrid"
+            and data["contagens"]==expected
+            and data["aprovacao_autoral"] is False
+            and data["efeito_automatico_no_canon"] is False,
+            "Thargrid: contagens ou estado editorial alterados.")
+    rows=[r for kind in expected for r in data[kind]]
+    ids={r["id"] for r in rows}
+    require(len(rows)==len(ids)==46 and
+            all(r["estado"]=="proposta_nao_canonica" for r in rows),
+            "Thargrid: registros duplicados ou indevidamente canônicos.")
+    seeds={x["id"] for x in load("data/propostas/povoamento-regional-hack-carcaca.json")["sementes"]}
+    moves={x["id"] for x in load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]}
+    for r in rows:
+        require(r["nome"] and r["rotina_cotidiana"] and r["tensao_social"]
+                and all(v in seeds for v in r["vinculos"])
+                and all(v in moves for v in r["movimentos_inspiradores"]),
+                "Thargrid: conteúdo ou referência cultural inválidos.")
+    require(all(x["local_confirmado"] is False for x in data["lugares"])
+            and all(x["instituicao_confirmada"] is False for x in data["coletivos"])
+            and all(x["ocorreu"] is False for x in data["dilemas"])
+            and all(x["vigente"] is False for x in data["acordos"]),
+            "Thargrid: evento, instituição ou tratado não confirmado.")
+    lugares={x["id"] for x in data["lugares"]}
+    pessoas={x["id"] for x in data["pessoas"]}
+    cenas={x["id"] for x in data["cenas"]}
+    require(all(x["efetivado"] is False and x["quantidade_confirmada"] is False
+                and x["origem"] in lugares and x["destino"] in lugares
+                for x in data["fluxos"]),
+            "Thargrid: fluxo hipotético indevidamente confirmado.")
+    require(all(x["local_id"] in lugares
+                and all(p in pessoas for p in x["elenco"])
+                and len(x["escolhas"])>=3 for x in data["cenas"]),
+            "Thargrid: cena sem lugar, atores ou escolhas.")
+    require(all(x["cenas"] and all(c in cenas for c in x["cenas"])
+                for x in data["arcos"]),
+            "Thargrid: arco sem cenas conectadas.")
+    limits=" ".join(data["fatos_documentados"]+data["limites_editoriais"]).lower()
+    require(all(word in limits for word in ("ordenamento","ironwood","rayquaza","921","refugiados")),
+            "Thargrid: faltam limites históricos essenciais.")
+    print("Thargrid X: 46 propostas válidas, fluxos e acordos não canonizados.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2944,6 +2991,7 @@ def main():
     validar_economia_mar_sangue()
     validar_pressao_mar_sangue_costa_sul()
     validar_povoamento_garganta_rio_ancestral()
+    validar_povoamento_social_thargrid()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
