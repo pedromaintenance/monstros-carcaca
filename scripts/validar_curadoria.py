@@ -3419,6 +3419,99 @@ def validar_ironwood_civil_xviii():
     print("Ciclo XVIII: Ironwood, 8 temas civis, 3 governos opcionais, 4 relações, 4 circuitos, 4 dilemas e 4 vinhetas; 0 canonizações.")
 
 
+
+def validar_revisao_autoral_xix():
+    """Garantia de que inventário não equivale a homologação de cânone."""
+    r=load("data/worldbuilding/revisao-autoral-atlas-ciclo19.json")
+    schema=load("schemas/revisao-autoral-atlas-xix.schema.json")
+    Draft202012Validator.check_schema(schema)
+    problems=list(Draft202012Validator(schema).iter_errors(r))
+    require(not problems,f"Ciclo XIX: schema inválido {problems[:2]}")
+    require(r["aprovacao_autoral"] is False and
+            r["mutacao_canonica_automatica"] is False and
+            r["estado"]=="sem_aprovacao_autoral",
+            "Ciclo XIX: aprovação indevida.")
+    expected={"XIV":42,"XV":28,"XVI":11,"XVII":11,"XVIII":11}
+    require(r["contagens"]["candidatos_por_ciclo"]==expected and
+            r["contagens"]["candidatos"]==103 and
+            r["contagens"]["decisoes"]==20 and
+            r["contagens"]["dossies"]==5 and
+            r["contagens"]["guardas"]==10 and
+            r["contagens"]["aprovados"]==0 and
+            r["contagens"]["mudancas_canonicas"]==0,
+            "Ciclo XIX: contagem ou autorização discordante.")
+    files={
+        "XIV":load("data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json"),
+        "XV":load("data/worldbuilding/eldroth-preconquista-ciclo15.json"),
+        "XVI":load("data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json"),
+        "XVII":load("data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json"),
+        "XVIII":load("data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json"),
+    }
+    roots={
+        "XIV":"data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "XV":"data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "XVI":"data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "XVII":"data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "XVIII":"data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+    }
+    def ref_valid(ref):
+        cycle=next((cy for cy,path in roots.items() if ref["arquivo"]==path),None)
+        return cycle is not None and any(
+            x["id"]==ref["id"] for x in files[cycle].get(ref["colecao"],[]))
+    for cy,record in zip(("XIV","XV","XVI","XVII","XVIII"),r["dossies"]):
+        require(record["ciclo"]==cy and record["arquivo"]==roots[cy],
+                "Ciclo XIX: dossiê de origem incorreto.")
+    indices=[x["id"] for x in r["candidatos"]+r["decisoes"]+
+             r["guardas"]+r["dossies"]]
+    require(len(indices)==138 and len(set(indices))==138,
+            "Ciclo XIX: identidade duplicada.")
+    require(all(x["estado"]=="nao_aprovado" and x["homologado"] is False
+             and ref_valid(x["referencia"]) for x in r["candidatos"]),
+            "Ciclo XIX: candidato aprovado ou sem fonte.")
+    source_ids={}
+    for cand in r["candidatos"]:
+        ref=cand["referencia"]
+        key=(ref["arquivo"],ref["colecao"],ref["id"])
+        source_ids.setdefault(key,[]).append(cand["indice_opcao"])
+        if cand["indice_opcao"] is not None:
+            cycle=next(x for x,path in roots.items() if path==ref["arquivo"])
+            obj=next(x for x in files[cycle][ref["colecao"]] if x["id"]==ref["id"])
+            require(0<=cand["indice_opcao"]<len(
+                obj["decisoes_autorais_pendentes"] if cycle=="XIV" else obj["alternativas"]),
+                "Ciclo XIX: índice de alternativa fora de faixa.")
+    require(len([x for x in r["candidatos"] if x["ciclo"]=="XIV"])==42 and
+            len([x for x in r["candidatos"] if x["ciclo"]=="XV"])==28,
+            "Ciclo XIX: alternativas antigas incompletas.")
+    ids={x["id"] for x in r["decisoes"]}
+    require(r["contagens"]["decisoes_por_dominio"]=={
+            "transversal":3,"eldroth":9,"vandar":5,"ironwood":3},
+            "Ciclo XIX: cobertura temática alterada.")
+    require(all(x["estado"]=="pendente" and
+            x["escolha_aprovada"] is None and
+            x["aprovacao_autoral"] is False and x["publicar_canon"] is False
+            and all(ref_valid(ref) for ref in x["origens"])
+            and all(dependency in ids and dependency!=x["id"]
+                    for dependency in x["pre_requisitos"])
+            for x in r["decisoes"]), "Ciclo XIX: decisão homologada ou referência inválida.")
+    deps={x["id"]:x["pre_requisitos"] for x in r["decisoes"]}
+    def visit(node,visiting,done):
+        require(node not in visiting,"Ciclo XIX: ciclo de dependências.")
+        if node in done: return
+        for other in deps[node]:visit(other,visiting|{node},done)
+        done.add(node)
+    seen=set()
+    for node in deps:visit(node,set(),seen)
+    paginas={p["pagina"] for p in load(
+        "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")["paginas"]}
+    require(all(g["fonte"]["pagina"] in paginas and g["nova_aprovacao"] is False
+            for g in r["guardas"]), "Ciclo XIX: guarda de fonte inválida.")
+    require(all(x["valor"] is None for x in r["lacunas"]) and
+        r["protocolo"]["aprovacao_explicita_necessaria"] is True and
+        r["protocolo"]["silencio_autoriza"] is False,
+        "Ciclo XIX: lacuna preenchida ou silêncio tratado como aceite.")
+    print("Ciclo XIX: 103 candidatos, 20 decisões, 10 guardas, 5 lacunas; nenhuma aprovação e nenhum ciclo de precedência.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3549,6 +3642,7 @@ def main():
     validar_ocupacao_sylara_xvi()
     validar_vandar_politica_mortos_xvii()
     validar_ironwood_civil_xviii()
+    validar_revisao_autoral_xix()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
