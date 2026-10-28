@@ -1,0 +1,311 @@
+{
+  "by_categoria": {
+    "celebracoes_possiveis": [
+      "worldbuilding-xx:celebracoes_possiveis:contos-da-colheita",
+      "worldbuilding-xx:celebracoes_possiveis:dia-sem-convites",
+      "worldbuilding-xx:celebracoes_possiveis:mesa-dos-ausentes",
+      "worldbuilding-xx:celebracoes_possiveis:primeira-semente"
+    ],
+    "circuitos_economicos": [
+      "worldbuilding-xx:circuitos_economicos:cerveja-e-fabricacao",
+      "worldbuilding-xx:circuitos_economicos:hortas-e-despensas",
+      "worldbuilding-xx:circuitos_economicos:mobilidade-e-servicos",
+      "worldbuilding-xx:circuitos_economicos:tabaco-e-erva",
+      "worldbuilding-xx:circuitos_economicos:trocas-e-contas"
+    ],
+    "conflitos_internos": [
+      "worldbuilding-xx:conflitos_internos:abundancia-desigual",
+      "worldbuilding-xx:conflitos_internos:herdeiro-e-partida",
+      "worldbuilding-xx:conflitos_internos:nome-e-vergonha",
+      "worldbuilding-xx:conflitos_internos:privacidade-e-informacao",
+      "worldbuilding-xx:conflitos_internos:saber-contra-costume"
+    ],
+    "dominios_da_vida": [
+      "worldbuilding-xx:dominios_da_vida:arquitetura-domestica",
+      "worldbuilding-xx:dominios_da_vida:fe-e-costumes",
+      "worldbuilding-xx:dominios_da_vida:hospitalidade-e-limites",
+      "worldbuilding-xx:dominios_da_vida:infancia-e-autonomia",
+      "worldbuilding-xx:dominios_da_vida:lazer-e-tempo",
+      "worldbuilding-xx:dominios_da_vida:memoria-e-verdade",
+      "worldbuilding-xx:dominios_da_vida:mesa-e-prestigio",
+      "worldbuilding-xx:dominios_da_vida:terra-e-heranca",
+      "worldbuilding-xx:dominios_da_vida:trabalho-interdependente"
+    ],
+    "formas_de_convivencia": [
+      "worldbuilding-xx:formas_de_convivencia:acordo-de-muitas-vilas",
+      "worldbuilding-xx:formas_de_convivencia:decisao-entre-vizinhos",
+      "worldbuilding-xx:formas_de_convivencia:recusa-com-respeito",
+      "worldbuilding-xx:formas_de_convivencia:reparacao-de-vizinhanca"
+    ],
+    "generos_da_memoria": [
+      "worldbuilding-xx:generos_da_memoria:alcunhas-e-identidade",
+      "worldbuilding-xx:generos_da_memoria:cantigas-de-estrada",
+      "worldbuilding-xx:generos_da_memoria:historia-de-familia",
+      "worldbuilding-xx:generos_da_memoria:receita-como-arquivo"
+    ],
+    "vinhetas": [
+      "worldbuilding-xx:vinhetas:a-casa-de-duas-portas",
+      "worldbuilding-xx:vinhetas:a-panela-e-a-divida",
+      "worldbuilding-xx:vinhetas:o-bardo-que-nao-chegou",
+      "worldbuilding-xx:vinhetas:o-nome-da-horta"
+    ]
+  },
+  "by_pagina_manuscrito": {
+    "18": [
+      "worldbuilding-xx:generos_da_memoria:alcunhas-e-identidade",
+      "worldbuilding-xx:generos_da_memoria:cantigas-de-estrada",
+      "worldbuilding-xx:generos_da_memoria:historia-de-familia",
+      "worldbuilding-xx:generos_da_memoria:receita-como-arquivo",
+      "worldbuilding-xx:vinhetas:a-casa-de-duas-portas",
+      "worldbuilding-xx:vinhetas:a-panela-e-a-divida",
+      "worldbuilding-xx:vinhetas:o-bardo-que-nao-chegou",
+      "worldbuilding-xx:vinhetas:o-nome-da-horta"
+    ],
+    "19": [
+      "worldbuilding-xx:celebracoes_possiveis:contos-da-colheita",
+      "worldbuilding-xx:celebracoes_possiveis:dia-sem-convites",
+      "worldbuilding-xx:celebracoes_possiveis:mesa-dos-ausentes",
+      "worldbuilding-xx:celebracoes_possiveis:primeira-semente",
+      "worldbuilding-xx:circuitos_economicos:cerveja-e-fabricacao",
+      "worldbuilding-xx:circuitos_economicos:hortas-e-despensas",
+      "worldbuilding-xx:circuitos_economicos:mobilidade-e-servicos",
+      "worldbuilding-xx:circuitos_economicos:tabaco-e-erva",
+      "worldbuilding-xx:circuitos_economicos:trocas-e-contas",
+      "worldbuilding-xx:conflitos_internos:abundancia-desigual",
+      "worldbuilding-xx:conflitos_internos:herdeiro-e-partida",
+      "worldbuilding-xx:conflitos_internos:nome-e-vergonha",
+      "worldbuilding-xx:conflitos_internos:privacidade-e-informacao",
+      "worldbuilding-xx:conflitos_internos:saber-contra-costume",
+      "worldbuilding-xx:dominios_da_vida:arquitetura-domestica",
+      "worldbuilding-xx:dominios_da_vida:fe-e-costumes",
+      "worldbuilding-xx:dominios_da_vida:hospitalidade-e-limites",
+      "worldbuilding-xx:dominios_da_vida:infancia-e-autonomia",
+      "worldbuilding-xx:dominios_da_vida:lazer-e-tempo",
+      "worldbuilding-xx:dominios_da_vida:memoria-e-verdade",
+      "worldbuilding-xx:dominios_da_vida:mesa-e-prestigio",
+      "worldbuilding-xx:dominios_da_vida:terra-e-heranca",
+      "worldbuilding-xx:dominios_da_vida:trabalho-interdependente",
+      "worldbuilding-xx:formas_de_convivencia:acordo-de-muitas-vilas",
+      "worldbuilding-xx:formas_de_convivencia:decisao-entre-vizinhos",
+      "worldbuilding-xx:formas_de_convivencia:recusa-com-respeito",
+      "worldbuilding-xx:formas_de_convivencia:reparacao-de-vizinhanca",
+      "worldbuilding-xx:generos_da_memoria:alcunhas-e-identidade",
+      "worldbuilding-xx:generos_da_memoria:cantigas-de-estrada",
+      "worldbuilding-xx:generos_da_memoria:historia-de-familia",
+      "worldbuilding-xx:generos_da_memoria:receita-como-arquivo",
+      "worldbuilding-xx:vinhetas:a-casa-de-duas-portas",
+      "worldbuilding-xx:vinhetas:a-panela-e-a-divida",
+      "worldbuilding-xx:vinhetas:o-bardo-que-nao-chegou",
+      "worldbuilding-xx:vinhetas:o-nome-da-horta"
+    ]
+  },
+  "by_estado": {
+    "exploracao_cultural_nao_canonica": [
+      "worldbuilding-xx:celebracoes_possiveis:contos-da-colheita",
+      "worldbuilding-xx:celebracoes_possiveis:dia-sem-convites",
+      "worldbuilding-xx:celebracoes_possiveis:mesa-dos-ausentes",
+      "worldbuilding-xx:celebracoes_possiveis:primeira-semente",
+      "worldbuilding-xx:circuitos_economicos:cerveja-e-fabricacao",
+      "worldbuilding-xx:circuitos_economicos:hortas-e-despensas",
+      "worldbuilding-xx:circuitos_economicos:mobilidade-e-servicos",
+      "worldbuilding-xx:circuitos_economicos:tabaco-e-erva",
+      "worldbuilding-xx:circuitos_economicos:trocas-e-contas",
+      "worldbuilding-xx:conflitos_internos:abundancia-desigual",
+      "worldbuilding-xx:conflitos_internos:herdeiro-e-partida",
+      "worldbuilding-xx:conflitos_internos:nome-e-vergonha",
+      "worldbuilding-xx:conflitos_internos:privacidade-e-informacao",
+      "worldbuilding-xx:conflitos_internos:saber-contra-costume",
+      "worldbuilding-xx:dominios_da_vida:arquitetura-domestica",
+      "worldbuilding-xx:dominios_da_vida:fe-e-costumes",
+      "worldbuilding-xx:dominios_da_vida:hospitalidade-e-limites",
+      "worldbuilding-xx:dominios_da_vida:infancia-e-autonomia",
+      "worldbuilding-xx:dominios_da_vida:lazer-e-tempo",
+      "worldbuilding-xx:dominios_da_vida:memoria-e-verdade",
+      "worldbuilding-xx:dominios_da_vida:mesa-e-prestigio",
+      "worldbuilding-xx:dominios_da_vida:terra-e-heranca",
+      "worldbuilding-xx:dominios_da_vida:trabalho-interdependente",
+      "worldbuilding-xx:formas_de_convivencia:acordo-de-muitas-vilas",
+      "worldbuilding-xx:formas_de_convivencia:decisao-entre-vizinhos",
+      "worldbuilding-xx:formas_de_convivencia:recusa-com-respeito",
+      "worldbuilding-xx:formas_de_convivencia:reparacao-de-vizinhanca",
+      "worldbuilding-xx:generos_da_memoria:alcunhas-e-identidade",
+      "worldbuilding-xx:generos_da_memoria:cantigas-de-estrada",
+      "worldbuilding-xx:generos_da_memoria:historia-de-familia",
+      "worldbuilding-xx:generos_da_memoria:receita-como-arquivo",
+      "worldbuilding-xx:vinhetas:a-casa-de-duas-portas",
+      "worldbuilding-xx:vinhetas:a-panela-e-a-divida",
+      "worldbuilding-xx:vinhetas:o-bardo-que-nao-chegou",
+      "worldbuilding-xx:vinhetas:o-nome-da-horta"
+    ]
+  },
+  "by_inicial_nome": {
+    "A": [
+      "worldbuilding-xx:celebracoes_possiveis:mesa-dos-ausentes",
+      "worldbuilding-xx:celebracoes_possiveis:primeira-semente",
+      "worldbuilding-xx:conflitos_internos:abundancia-desigual",
+      "worldbuilding-xx:conflitos_internos:privacidade-e-informacao",
+      "worldbuilding-xx:dominios_da_vida:arquitetura-domestica",
+      "worldbuilding-xx:formas_de_convivencia:acordo-de-muitas-vilas",
+      "worldbuilding-xx:formas_de_convivencia:decisao-entre-vizinhos",
+      "worldbuilding-xx:vinhetas:a-casa-de-duas-portas",
+      "worldbuilding-xx:vinhetas:a-panela-e-a-divida"
+    ],
+    "C": [
+      "worldbuilding-xx:dominios_da_vida:infancia-e-autonomia",
+      "worldbuilding-xx:generos_da_memoria:cantigas-de-estrada"
+    ],
+    "D": [
+      "worldbuilding-xx:circuitos_economicos:hortas-e-despensas",
+      "worldbuilding-xx:circuitos_economicos:trocas-e-contas"
+    ],
+    "E": [
+      "worldbuilding-xx:circuitos_economicos:mobilidade-e-servicos",
+      "worldbuilding-xx:circuitos_economicos:tabaco-e-erva"
+    ],
+    "H": [
+      "worldbuilding-xx:celebracoes_possiveis:contos-da-colheita",
+      "worldbuilding-xx:generos_da_memoria:historia-de-familia"
+    ],
+    "M": [
+      "worldbuilding-xx:conflitos_internos:nome-e-vergonha"
+    ],
+    "N": [
+      "worldbuilding-xx:formas_de_convivencia:reparacao-de-vizinhanca"
+    ],
+    "O": [
+      "worldbuilding-xx:circuitos_economicos:cerveja-e-fabricacao",
+      "worldbuilding-xx:conflitos_internos:saber-contra-costume",
+      "worldbuilding-xx:dominios_da_vida:fe-e-costumes",
+      "worldbuilding-xx:dominios_da_vida:hospitalidade-e-limites",
+      "worldbuilding-xx:dominios_da_vida:memoria-e-verdade",
+      "worldbuilding-xx:dominios_da_vida:trabalho-interdependente",
+      "worldbuilding-xx:formas_de_convivencia:recusa-com-respeito",
+      "worldbuilding-xx:vinhetas:o-bardo-que-nao-chegou",
+      "worldbuilding-xx:vinhetas:o-nome-da-horta"
+    ],
+    "Q": [
+      "worldbuilding-xx:conflitos_internos:herdeiro-e-partida",
+      "worldbuilding-xx:dominios_da_vida:mesa-e-prestigio"
+    ],
+    "R": [
+      "worldbuilding-xx:generos_da_memoria:receita-como-arquivo"
+    ],
+    "S": [
+      "worldbuilding-xx:generos_da_memoria:alcunhas-e-identidade"
+    ],
+    "T": [
+      "worldbuilding-xx:dominios_da_vida:lazer-e-tempo",
+      "worldbuilding-xx:dominios_da_vida:terra-e-heranca"
+    ],
+    "U": [
+      "worldbuilding-xx:celebracoes_possiveis:dia-sem-convites"
+    ]
+  },
+  "by_slug": {
+    "a-casa-de-duas-portas": [
+      "worldbuilding-xx:vinhetas:a-casa-de-duas-portas"
+    ],
+    "a-panela-e-a-divida": [
+      "worldbuilding-xx:vinhetas:a-panela-e-a-divida"
+    ],
+    "abundancia-desigual": [
+      "worldbuilding-xx:conflitos_internos:abundancia-desigual"
+    ],
+    "acordo-de-muitas-vilas": [
+      "worldbuilding-xx:formas_de_convivencia:acordo-de-muitas-vilas"
+    ],
+    "alcunhas-e-identidade": [
+      "worldbuilding-xx:generos_da_memoria:alcunhas-e-identidade"
+    ],
+    "arquitetura-domestica": [
+      "worldbuilding-xx:dominios_da_vida:arquitetura-domestica"
+    ],
+    "cantigas-de-estrada": [
+      "worldbuilding-xx:generos_da_memoria:cantigas-de-estrada"
+    ],
+    "cerveja-e-fabricacao": [
+      "worldbuilding-xx:circuitos_economicos:cerveja-e-fabricacao"
+    ],
+    "contos-da-colheita": [
+      "worldbuilding-xx:celebracoes_possiveis:contos-da-colheita"
+    ],
+    "decisao-entre-vizinhos": [
+      "worldbuilding-xx:formas_de_convivencia:decisao-entre-vizinhos"
+    ],
+    "dia-sem-convites": [
+      "worldbuilding-xx:celebracoes_possiveis:dia-sem-convites"
+    ],
+    "fe-e-costumes": [
+      "worldbuilding-xx:dominios_da_vida:fe-e-costumes"
+    ],
+    "herdeiro-e-partida": [
+      "worldbuilding-xx:conflitos_internos:herdeiro-e-partida"
+    ],
+    "historia-de-familia": [
+      "worldbuilding-xx:generos_da_memoria:historia-de-familia"
+    ],
+    "hortas-e-despensas": [
+      "worldbuilding-xx:circuitos_economicos:hortas-e-despensas"
+    ],
+    "hospitalidade-e-limites": [
+      "worldbuilding-xx:dominios_da_vida:hospitalidade-e-limites"
+    ],
+    "infancia-e-autonomia": [
+      "worldbuilding-xx:dominios_da_vida:infancia-e-autonomia"
+    ],
+    "lazer-e-tempo": [
+      "worldbuilding-xx:dominios_da_vida:lazer-e-tempo"
+    ],
+    "memoria-e-verdade": [
+      "worldbuilding-xx:dominios_da_vida:memoria-e-verdade"
+    ],
+    "mesa-dos-ausentes": [
+      "worldbuilding-xx:celebracoes_possiveis:mesa-dos-ausentes"
+    ],
+    "mesa-e-prestigio": [
+      "worldbuilding-xx:dominios_da_vida:mesa-e-prestigio"
+    ],
+    "mobilidade-e-servicos": [
+      "worldbuilding-xx:circuitos_economicos:mobilidade-e-servicos"
+    ],
+    "nome-e-vergonha": [
+      "worldbuilding-xx:conflitos_internos:nome-e-vergonha"
+    ],
+    "o-bardo-que-nao-chegou": [
+      "worldbuilding-xx:vinhetas:o-bardo-que-nao-chegou"
+    ],
+    "o-nome-da-horta": [
+      "worldbuilding-xx:vinhetas:o-nome-da-horta"
+    ],
+    "primeira-semente": [
+      "worldbuilding-xx:celebracoes_possiveis:primeira-semente"
+    ],
+    "privacidade-e-informacao": [
+      "worldbuilding-xx:conflitos_internos:privacidade-e-informacao"
+    ],
+    "receita-como-arquivo": [
+      "worldbuilding-xx:generos_da_memoria:receita-como-arquivo"
+    ],
+    "recusa-com-respeito": [
+      "worldbuilding-xx:formas_de_convivencia:recusa-com-respeito"
+    ],
+    "reparacao-de-vizinhanca": [
+      "worldbuilding-xx:formas_de_convivencia:reparacao-de-vizinhanca"
+    ],
+    "saber-contra-costume": [
+      "worldbuilding-xx:conflitos_internos:saber-contra-costume"
+    ],
+    "tabaco-e-erva": [
+      "worldbuilding-xx:circuitos_economicos:tabaco-e-erva"
+    ],
+    "terra-e-heranca": [
+      "worldbuilding-xx:dominios_da_vida:terra-e-heranca"
+    ],
+    "trabalho-interdependente": [
+      "worldbuilding-xx:dominios_da_vida:trabalho-interdependente"
+    ],
+    "trocas-e-contas": [
+      "worldbuilding-xx:circuitos_economicos:trocas-e-contas"
+    ]
+  }
+}
