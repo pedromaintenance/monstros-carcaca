@@ -60,6 +60,29 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getThargridSocialResistance(){return byKey("thargrid_social_resistance");}
+  async function getThargridSocialResistanceIndexes(){return byKey("thargrid_social_resistance_indexes");}
+  async function getThargridSocialEntity(id){
+    if(typeof id!=="string"||!id.startsWith("thargrid-social:"))return null;
+    const d=await getThargridSocialResistance();
+    for(const categoria of ["lugares","coletivos","pessoas","dilemas","fluxos","acordos","cenas","arcos"]){
+      const item=d[categoria].find(x=>x.id===id);
+      if(item)return {...item,categoria};
+    }
+    return null;
+  }
+  async function searchThargridSocialResistance({categoria,povo,tradicao,setor,ambiente,movimentoHack,vinculo,query}={}){
+    const d=await getThargridSocialResistance();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return ["lugares","coletivos","pessoas","dilemas","fluxos","acordos","cenas","arcos"]
+      .flatMap(cat=>d[cat].map(row=>({...row,categoria:cat}))).filter(x=>
+        (!categoria||x.categoria===categoria)&&(!povo||x.povo===povo)&&
+        (!tradicao||x.tradicao===tradicao)&&(!setor||x.setor===setor)&&
+        (!ambiente||x.ambiente===ambiente)&&
+        (!movimentoHack||(x.movimentos_inspiradores??[]).includes(movimentoHack))&&
+        (!vinculo||(x.vinculos??[]).includes(vinculo))&&
+        (!query||norm([x.nome,x.rotina_cotidiana,x.tensao_social].join(" ")).includes(norm(query))));
+  }
   async function getGargantaRiverSocial(){return byKey("garganta_river_social");}
   async function getGargantaRiverSocialIndexes(){return byKey("garganta_river_social_indexes");}
   async function getGargantaRiverEntity(id){
@@ -1219,6 +1242,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getThargridSocialResistance,getThargridSocialResistanceIndexes,
+          getThargridSocialEntity,searchThargridSocialResistance,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,

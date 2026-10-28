@@ -453,3 +453,10 @@ Fonte: `data/propostas/costa-sul-pressao-mar-sangue-hack.json`. Saídas `dist/ca
 Fonte: `data/propostas/garganta-rio-ancestral-social-hack.json`. Distribuição: `dist/carcaca/garganta-river-social.json`, índices `dist/carcaca/garganta-river-social-indexes.json`. API: `getGargantaRiverSocial`, `searchGargantaRiverSocial`, `getGargantaRiverEntity`. Dossiê: [Garganta e Rio Ancestral — Ciclo IX](docs/GARGANTA_RIO_ANCESTRAL_POVOAMENTO_CICLO9.md).
 
 **Não apresenta Garganta como livre na atualidade** (Lord Varys Duskveil governa), não liberta Drakport nem determina a causa de novos fenômenos no rio. As áreas `area-proposta:garganta` e `area-proposta:rio` são escopos editoriais, não novas regiões geocodificadas canônicas.
+
+
+## Povoamento X — Thargrid, uma sociedade livre sob ameaça
+
+**46 propostas**: seis microespaços, seis coletivos, nove pessoas, quatro dilemas contingentes, seis fluxos não confirmados, cinco acordos não assinados, sete cenas e três arcos. A vida entre anões, gigantes de pedra, gelo e fogo, draconatos e refugiados gira em torno de defesa, acolhimento, trabalho, memória e circulação. O Ordenamento tem validade interna entre gigantes; não é uma soberania sobre os demais habitantes. Ironwood não integra um comando único da resistência.
+
+Fonte `data/propostas/thargrid-resistencia-cotidiano-hack.json`, distribuição `dist/carcaca/thargrid-social-resistance.json`, índices `dist/carcaca/thargrid-social-resistance-indexes.json`. API: `getThargridSocialResistance`, `searchThargridSocialResistance`, `getThargridSocialEntity`. Veja [Dossiê de Thargrid](docs/THARGRID_RESISTENCIA_POVOAMENTO_CICLO10.md). A queda do Reino e a presença atual de Rayquaza não foram presumidas.
