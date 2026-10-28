@@ -18,6 +18,14 @@ O novo aprofundamento de worldbuilding reconstrói Eldroth como **sociedade ante
 
 O [dossiê histórico-social](docs/ELDROTH_PRECONQUISTA_CICLO15.md) investiga **8 práticas culturais candidatas**, **4 pactos não assinados**, **4 ciclos materiais**, **4 vinhetas não ocorridas**, **24 alternativas não adotadas** e cinco decisões prioritárias para o autor. Não foram criadas novas cidades, famílias, clãs ou estatísticas de combate. A [matriz estruturada](data/worldbuilding/eldroth-preconquista-ciclo15.json) dispõe de buscas por fase, prática e proveniência via `getEldrothPreconquest` e `searchEldrothPreconquest`.
 
+## Ciclo XVI — A ocupação de Eldroth por Sylara
+
+O [dossiê da ocupação](docs/ELDROTH_SOB_SYLARA_CICLO16.md) desenvolve **8 mecanismos hipotéticos de apropriação de práticas anteriores**, cada um conectado a uma prática do Ciclo XV. O foco são **trabalho, água, comida, moradia, hospitalidade, memória, pactos, parentesco e vigilância de criaturas**, não estatísticas de combate.
+
+A matriz de [worldbuilding sob Sylara](data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json) reúne ainda **6 posições sociais exploratórias**, **3 modelos de regime não adotados**, **4 dilemas**, **4 vinhetas não ocorridas** e **5 decisões pendentes**. O pacote é exportado em `dist/carcaca/eldroth-sylara-occupation.json`, com índices e consultas ESM `getEldrothSylaraOccupation` / `searchEldrothSylaraOccupation`.
+
+**Fato estabelecido:** Sylara governa a floresta e utiliza criaturas para vigilância. **Não estabelecido:** um decreto, imposto, cargo, órgão ou mecanismo exato de exploração. Nenhuma hipótese foi automaticamente canonizada.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
