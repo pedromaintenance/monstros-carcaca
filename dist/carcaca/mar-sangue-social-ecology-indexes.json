@@ -1,0 +1,278 @@
+{
+  "by_categoria": {
+    "cenas": [
+      "mar-sangue:cena:canto",
+      "mar-sangue:cena:decima-concha",
+      "mar-sangue:cena:icone",
+      "mar-sangue:cena:pele",
+      "mar-sangue:cena:recife",
+      "mar-sangue:cena:testemunha"
+    ],
+    "coletivos": [
+      "mar-sangue:coletivo:cantoras",
+      "mar-sangue:coletivo:contadores",
+      "mar-sangue:coletivo:familias",
+      "mar-sangue:coletivo:patrulha",
+      "mar-sangue:coletivo:sinal",
+      "mar-sangue:coletivo:vigia-da-fe"
+    ],
+    "fenomenos": [
+      "mar-sangue:fenomeno:limite",
+      "mar-sangue:fenomeno:peixes",
+      "mar-sangue:fenomeno:templo",
+      "mar-sangue:fenomeno:voz"
+    ],
+    "pactos": [
+      "mar-sangue:pacto:azuis",
+      "mar-sangue:pacto:canto",
+      "mar-sangue:pacto:consentimento",
+      "mar-sangue:pacto:tributo"
+    ],
+    "pessoas": [
+      "mar-sangue:pessoa:kalira",
+      "mar-sangue:pessoa:leina",
+      "mar-sangue:pessoa:maelis",
+      "mar-sangue:pessoa:maura",
+      "mar-sangue:pessoa:nilku",
+      "mar-sangue:pessoa:rhel",
+      "mar-sangue:pessoa:serun",
+      "mar-sangue:pessoa:shukk"
+    ],
+    "tramas": [
+      "mar-sangue:trama:deus",
+      "mar-sangue:trama:fronteira",
+      "mar-sangue:trama:tarifa"
+    ],
+    "zonas": [
+      "mar-sangue:zona:cantos",
+      "mar-sangue:zona:correntes",
+      "mar-sangue:zona:mudanca",
+      "mar-sangue:zona:santuario",
+      "mar-sangue:zona:tributo"
+    ]
+  },
+  "by_povo": {
+    "abissais": [
+      "mar-sangue:coletivo:contadores",
+      "mar-sangue:coletivo:familias"
+    ],
+    "abissal": [
+      "mar-sangue:pessoa:maura",
+      "mar-sangue:pessoa:rhel"
+    ],
+    "descendente_abissal": [
+      "mar-sangue:pessoa:serun"
+    ],
+    "kuo-toa": [
+      "mar-sangue:coletivo:sinal",
+      "mar-sangue:coletivo:vigia-da-fe",
+      "mar-sangue:pessoa:nilku",
+      "mar-sangue:pessoa:shukk"
+    ],
+    "sereia": [
+      "mar-sangue:pessoa:leina",
+      "mar-sangue:pessoa:maelis"
+    ],
+    "sereias": [
+      "mar-sangue:coletivo:cantoras"
+    ],
+    "tritao": [
+      "mar-sangue:pessoa:kalira"
+    ],
+    "tritoes": [
+      "mar-sangue:coletivo:patrulha"
+    ]
+  },
+  "by_aguas": {
+    "azuis": [
+      "mar-sangue:zona:cantos"
+    ],
+    "transicao": [
+      "mar-sangue:zona:correntes"
+    ],
+    "vermelhas": [
+      "mar-sangue:zona:mudanca",
+      "mar-sangue:zona:santuario",
+      "mar-sangue:zona:tributo"
+    ]
+  },
+  "by_movimento_hack": {
+    "movimento-povo:paragrafo-913": [
+      "mar-sangue:cena:icone",
+      "mar-sangue:coletivo:sinal",
+      "mar-sangue:coletivo:vigia-da-fe",
+      "mar-sangue:fenomeno:peixes",
+      "mar-sangue:pessoa:nilku",
+      "mar-sangue:pessoa:shukk",
+      "mar-sangue:trama:deus",
+      "mar-sangue:zona:santuario"
+    ],
+    "movimento-povo:paragrafo-920": [
+      "mar-sangue:cena:icone",
+      "mar-sangue:coletivo:sinal",
+      "mar-sangue:pessoa:shukk"
+    ],
+    "movimento-povo:paragrafo-921": [
+      "mar-sangue:cena:testemunha",
+      "mar-sangue:pessoa:nilku",
+      "mar-sangue:zona:santuario"
+    ],
+    "movimento-povo:paragrafo-922": [
+      "mar-sangue:coletivo:vigia-da-fe"
+    ],
+    "movimento-povo:paragrafo-924": [
+      "mar-sangue:cena:pele",
+      "mar-sangue:coletivo:familias",
+      "mar-sangue:pacto:consentimento",
+      "mar-sangue:pessoa:serun",
+      "mar-sangue:zona:mudanca"
+    ],
+    "movimento-povo:paragrafo-931": [
+      "mar-sangue:fenomeno:templo",
+      "mar-sangue:pessoa:serun"
+    ],
+    "movimento-povo:paragrafo-932": [
+      "mar-sangue:coletivo:contadores",
+      "mar-sangue:pacto:tributo",
+      "mar-sangue:pessoa:maura",
+      "mar-sangue:trama:tarifa",
+      "mar-sangue:zona:tributo"
+    ],
+    "movimento-povo:paragrafo-933": [
+      "mar-sangue:cena:decima-concha",
+      "mar-sangue:cena:pele",
+      "mar-sangue:coletivo:familias",
+      "mar-sangue:pacto:consentimento",
+      "mar-sangue:pessoa:rhel",
+      "mar-sangue:trama:deus",
+      "mar-sangue:zona:mudanca"
+    ],
+    "movimento-povo:paragrafo-934": [
+      "mar-sangue:pessoa:rhel"
+    ],
+    "movimento-povo:paragrafo-936": [
+      "mar-sangue:cena:decima-concha",
+      "mar-sangue:coletivo:contadores",
+      "mar-sangue:pacto:tributo",
+      "mar-sangue:pessoa:maura",
+      "mar-sangue:trama:tarifa",
+      "mar-sangue:zona:tributo"
+    ],
+    "movimento-povo:paragrafo-941": [
+      "mar-sangue:cena:recife",
+      "mar-sangue:coletivo:patrulha",
+      "mar-sangue:fenomeno:limite",
+      "mar-sangue:pessoa:kalira",
+      "mar-sangue:trama:fronteira",
+      "mar-sangue:zona:correntes"
+    ],
+    "movimento-povo:paragrafo-942": [
+      "mar-sangue:fenomeno:voz"
+    ],
+    "movimento-povo:paragrafo-944": [
+      "mar-sangue:cena:recife",
+      "mar-sangue:fenomeno:peixes",
+      "mar-sangue:pacto:azuis",
+      "mar-sangue:pessoa:kalira",
+      "mar-sangue:zona:correntes"
+    ],
+    "movimento-povo:paragrafo-945": [
+      "mar-sangue:cena:testemunha",
+      "mar-sangue:coletivo:patrulha",
+      "mar-sangue:pacto:azuis"
+    ],
+    "movimento-povo:paragrafo-947": [
+      "mar-sangue:cena:canto",
+      "mar-sangue:coletivo:cantoras",
+      "mar-sangue:fenomeno:voz",
+      "mar-sangue:pacto:canto",
+      "mar-sangue:pessoa:maelis",
+      "mar-sangue:zona:cantos"
+    ],
+    "movimento-povo:paragrafo-948": [
+      "mar-sangue:cena:canto",
+      "mar-sangue:coletivo:cantoras",
+      "mar-sangue:fenomeno:templo",
+      "mar-sangue:pacto:canto",
+      "mar-sangue:pessoa:maelis",
+      "mar-sangue:trama:fronteira",
+      "mar-sangue:zona:cantos"
+    ],
+    "movimento-povo:paragrafo-949": [
+      "mar-sangue:fenomeno:limite",
+      "mar-sangue:pessoa:leina"
+    ],
+    "movimento-povo:paragrafo-950": [
+      "mar-sangue:pessoa:leina"
+    ]
+  },
+  "by_ligacao": {
+    "fronteira:pessoa:nilku": [
+      "mar-sangue:cena:testemunha",
+      "mar-sangue:pessoa:nilku"
+    ],
+    "fronteira:trama:nove-ecos": [
+      "mar-sangue:cena:testemunha"
+    ],
+    "lugar:cavernas-kuo-toa": [
+      "mar-sangue:coletivo:sinal",
+      "mar-sangue:coletivo:vigia-da-fe",
+      "mar-sangue:pessoa:shukk",
+      "mar-sangue:trama:deus",
+      "mar-sangue:zona:santuario"
+    ],
+    "lugar:ilhas-costa-sul": [
+      "mar-sangue:coletivo:cantoras",
+      "mar-sangue:coletivo:patrulha",
+      "mar-sangue:fenomeno:voz",
+      "mar-sangue:pacto:azuis",
+      "mar-sangue:pacto:canto",
+      "mar-sangue:pessoa:kalira",
+      "mar-sangue:pessoa:leina",
+      "mar-sangue:pessoa:maelis",
+      "mar-sangue:trama:fronteira",
+      "mar-sangue:zona:cantos",
+      "mar-sangue:zona:correntes"
+    ],
+    "mar-sangue:pessoa:kalira": [
+      "mar-sangue:cena:recife"
+    ],
+    "mar-sangue:pessoa:leina": [
+      "mar-sangue:cena:canto"
+    ],
+    "mar-sangue:pessoa:maelis": [
+      "mar-sangue:cena:canto"
+    ],
+    "mar-sangue:pessoa:maura": [
+      "mar-sangue:cena:decima-concha",
+      "mar-sangue:cena:pele"
+    ],
+    "mar-sangue:pessoa:nilku": [
+      "mar-sangue:cena:icone"
+    ],
+    "mar-sangue:pessoa:rhel": [
+      "mar-sangue:cena:decima-concha"
+    ],
+    "mar-sangue:pessoa:serun": [
+      "mar-sangue:cena:pele"
+    ],
+    "mar-sangue:pessoa:shukk": [
+      "mar-sangue:cena:icone"
+    ],
+    "regiao:costa-sul": [
+      "mar-sangue:coletivo:contadores",
+      "mar-sangue:coletivo:familias",
+      "mar-sangue:fenomeno:limite",
+      "mar-sangue:fenomeno:peixes",
+      "mar-sangue:fenomeno:templo",
+      "mar-sangue:pacto:consentimento",
+      "mar-sangue:pacto:tributo",
+      "mar-sangue:pessoa:maura",
+      "mar-sangue:pessoa:rhel",
+      "mar-sangue:pessoa:serun",
+      "mar-sangue:trama:tarifa",
+      "mar-sangue:zona:mudanca",
+      "mar-sangue:zona:tributo"
+    ]
+  }
+}
