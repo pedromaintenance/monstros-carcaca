@@ -1,0 +1,458 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XIX — revisão autoral sem homologação",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estado": {
+      "const": "sem_aprovacao_autoral"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "mutacao_canonica_automatica": {
+      "const": false
+    },
+    "fonte_manuscrito": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "dossies": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xix:dossie:"
+          },
+          "ciclo": {
+            "enum": [
+              "XIV",
+              "XV",
+              "XVI",
+              "XVII",
+              "XVIII"
+            ]
+          },
+          "arquivo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "em_revisao"
+          }
+        },
+        "required": [
+          "id",
+          "ciclo",
+          "arquivo",
+          "estado"
+        ]
+      }
+    },
+    "candidatos": {
+      "type": "array",
+      "minItems": 103,
+      "maxItems": 103,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xix:candidato:"
+          },
+          "ciclo": {
+            "enum": [
+              "XIV",
+              "XV",
+              "XVI",
+              "XVII",
+              "XVIII"
+            ]
+          },
+          "referencia": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "arquivo": {
+                "type": "string",
+                "pattern": "^data/worldbuilding/"
+              },
+              "colecao": {
+                "type": "string",
+                "minLength": 1
+              },
+              "id": {
+                "type": "string",
+                "pattern": "^worldbuilding-x(iv|v|vi|vii|viii):"
+              }
+            },
+            "required": [
+              "arquivo",
+              "colecao",
+              "id"
+            ]
+          },
+          "indice_opcao": {
+            "type": [
+              "integer",
+              "null"
+            ],
+            "minimum": 0,
+            "maximum": 2
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tipo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "nao_aprovado"
+          },
+          "homologado": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "ciclo",
+          "referencia",
+          "indice_opcao",
+          "nome",
+          "tipo",
+          "estado",
+          "homologado"
+        ]
+      }
+    },
+    "decisoes": {
+      "type": "array",
+      "minItems": 20,
+      "maxItems": 20,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xix:decisao:"
+          },
+          "dominio": {
+            "enum": [
+              "transversal",
+              "eldroth",
+              "vandar",
+              "ironwood"
+            ]
+          },
+          "prioridade": {
+            "enum": [
+              "alta",
+              "media"
+            ]
+          },
+          "pergunta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "origens": {
+            "type": "array",
+            "minItems": 1,
+            "maxItems": 1,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "arquivo": {
+                  "type": "string",
+                  "pattern": "^data/worldbuilding/"
+                },
+                "colecao": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "id": {
+                  "type": "string",
+                  "pattern": "^worldbuilding-x(iv|v|vi|vii|viii):"
+                }
+              },
+              "required": [
+                "arquivo",
+                "colecao",
+                "id"
+              ]
+            }
+          },
+          "pre_requisitos": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "pattern": "^worldbuilding-xix:decisao:"
+            }
+          },
+          "caminhos": {
+            "type": "array",
+            "minItems": 4,
+            "maxItems": 4,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "risco_de_canonizacao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "pendente"
+          },
+          "escolha_aprovada": {
+            "type": "null"
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "publicar_canon": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "dominio",
+          "prioridade",
+          "pergunta",
+          "origens",
+          "pre_requisitos",
+          "caminhos",
+          "risco_de_canonizacao",
+          "estado",
+          "escolha_aprovada",
+          "aprovacao_autoral",
+          "publicar_canon"
+        ]
+      }
+    },
+    "guardas": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xix:guarda:"
+          },
+          "afirmacao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "arquivo": {
+                "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+              },
+              "pagina": {
+                "type": "integer",
+                "enum": [
+                  5,
+                  6,
+                  7,
+                  9,
+                  16,
+                  17,
+                  18,
+                  20,
+                  24
+                ]
+              }
+            },
+            "required": [
+              "arquivo",
+              "pagina"
+            ]
+          },
+          "status": {
+            "const": "fontes_revisaveis"
+          },
+          "nova_aprovacao": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "afirmacao",
+          "fonte",
+          "status",
+          "nova_aprovacao"
+        ]
+      }
+    },
+    "lacunas": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "valor": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "nome",
+          "valor"
+        ]
+      }
+    },
+    "protocolo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "aprovacao_explicita_necessaria": {
+          "const": true
+        },
+        "passos": {
+          "type": "array",
+          "minItems": 4,
+          "maxItems": 4,
+          "items": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "silencio_autoriza": {
+          "const": false
+        }
+      },
+      "required": [
+        "aprovacao_explicita_necessaria",
+        "passos",
+        "silencio_autoriza"
+      ]
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "dossies": {
+          "const": 5
+        },
+        "candidatos": {
+          "const": 103
+        },
+        "candidatos_por_ciclo": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "XIV": {
+              "const": 42
+            },
+            "XV": {
+              "const": 28
+            },
+            "XVI": {
+              "const": 11
+            },
+            "XVII": {
+              "const": 11
+            },
+            "XVIII": {
+              "const": 11
+            }
+          },
+          "required": [
+            "XIV",
+            "XV",
+            "XVI",
+            "XVII",
+            "XVIII"
+          ]
+        },
+        "decisoes": {
+          "const": 20
+        },
+        "decisoes_por_dominio": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "transversal": {
+              "const": 3
+            },
+            "eldroth": {
+              "const": 9
+            },
+            "vandar": {
+              "const": 5
+            },
+            "ironwood": {
+              "const": 3
+            }
+          },
+          "required": [
+            "transversal",
+            "eldroth",
+            "vandar",
+            "ironwood"
+          ]
+        },
+        "guardas": {
+          "const": 10
+        },
+        "aprovados": {
+          "const": 0
+        },
+        "mudancas_canonicas": {
+          "const": 0
+        }
+      },
+      "required": [
+        "dossies",
+        "candidatos",
+        "candidatos_por_ciclo",
+        "decisoes",
+        "decisoes_por_dominio",
+        "guardas",
+        "aprovados",
+        "mudancas_canonicas"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "mutacao_canonica_automatica",
+    "fonte_manuscrito",
+    "dossies",
+    "candidatos",
+    "decisoes",
+    "guardas",
+    "lacunas",
+    "protocolo",
+    "contagens"
+  ]
+}
