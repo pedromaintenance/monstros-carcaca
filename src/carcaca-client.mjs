@@ -60,6 +60,30 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getHalfDemonSocieties(){return byKey("half_demon_societies");}
+  async function getHalfDemonSocietiesIndexes(){return byKey("half_demon_societies_indexes");}
+  async function getHalfDemonSocietyEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xxii:"))return null;
+    const d=await getHalfDemonSocieties();
+    for(const cat of ["eixos_sociais","contextos_de_convivencia","circuitos_civis",
+       "tensoes","costumes_candidatos","vinhetas",
+       "fatos_documentados","perguntas_para_autor"]){
+      const x=d[cat].find(item=>item.id===id);
+      if(x)return {...x,categoria:cat};
+    }
+    return null;
+  }
+  async function searchHalfDemonSocieties({categoria,query}={}){
+    const d=await getHalfDemonSocieties();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return ["eixos_sociais","contextos_de_convivencia","circuitos_civis",
+       "tensoes","costumes_candidatos","vinhetas"]
+      .flatMap(cat=>d[cat].map(x=>({...x,categoria:cat})))
+      .filter(x=>(!categoria||categoria===x.categoria)&&
+        (!query||norm([x.id,x.nome_editorial,x.hipotese_social,x.detalhe_cotidiano,
+          x.pergunta_etica,x.configuracao_hipotetica,x.arranjo_possivel,
+          x.situacao_condicional,x.pratica_possivel,x.cena_condicional].filter(Boolean).join(" ")).includes(norm(query))));
+  }
   async function getGnomishCultures(){return byKey("gnomish_cultures");}
   async function getGnomishCulturesIndexes(){return byKey("gnomish_cultures_indexes");}
   async function getGnomishCultureEntry(id){
@@ -1538,6 +1562,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getHalfDemonSocieties,getHalfDemonSocietiesIndexes,
+          getHalfDemonSocietyEntry,searchHalfDemonSocieties,
           getGnomishCultures,getGnomishCulturesIndexes,
           getGnomishCultureEntry,searchGnomishCultures,
           getGramaCortadaDailyLife,getGramaCortadaDailyLifeIndexes,
