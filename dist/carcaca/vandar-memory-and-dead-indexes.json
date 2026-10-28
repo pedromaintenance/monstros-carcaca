@@ -1,0 +1,213 @@
+{
+  "by_categoria": {
+    "fases": [
+      "worldbuilding-xvii:fase:anterior-a-ruina",
+      "worldbuilding-xvii:fase:ruinas-ocupadas",
+      "worldbuilding-xvii:fase:ruptura-desconhecida"
+    ],
+    "modalidades_de_prova": [
+      "worldbuilding-xvii:prova:prova-por-necromancia",
+      "worldbuilding-xvii:prova:prova-por-objeto",
+      "worldbuilding-xvii:prova:prova-por-registro",
+      "worldbuilding-xvii:prova:prova-por-rito",
+      "worldbuilding-xvii:prova:prova-por-testemunho"
+    ],
+    "modelos_do_dominio": [
+      "worldbuilding-xvii:modelo:camadas-ocupadas",
+      "worldbuilding-xvii:modelo:quartel-de-ruinas",
+      "worldbuilding-xvii:modelo:ruina-de-simbolos"
+    ],
+    "papeis_sociais": [
+      "worldbuilding-xvii:papel:descendente",
+      "worldbuilding-xvii:papel:druida-vizinho",
+      "worldbuilding-xvii:papel:ex-morador",
+      "worldbuilding-xvii:papel:guardiao-de-memoria",
+      "worldbuilding-xvii:papel:observador-da-ocupacao",
+      "worldbuilding-xvii:papel:reclamante-da-propriedade"
+    ],
+    "situacoes_de_morte": [
+      "worldbuilding-xvii:situacao:animacao_sem_identidade",
+      "worldbuilding-xvii:situacao:ausencia",
+      "worldbuilding-xvii:situacao:identidade_contestada",
+      "worldbuilding-xvii:situacao:morte_identificada"
+    ],
+    "tecidos_urbanos": [
+      "worldbuilding-xvii:tecido:abastecimento",
+      "worldbuilding-xvii:tecido:circulacao-e-protecao",
+      "worldbuilding-xvii:tecido:cultos-e-sepultamento",
+      "worldbuilding-xvii:tecido:escrita-e-registros",
+      "worldbuilding-xvii:tecido:moradia-e-bairros",
+      "worldbuilding-xvii:tecido:parentesco-e-heranca",
+      "worldbuilding-xvii:tecido:trabalho-e-oficios",
+      "worldbuilding-xvii:tecido:vida-politica"
+    ],
+    "vinhetas": [
+      "worldbuilding-xvii:vinheta:chave-sem-casa",
+      "worldbuilding-xvii:vinheta:corpo-sem-resposta",
+      "worldbuilding-xvii:vinheta:heranca-do-desaparecido",
+      "worldbuilding-xvii:vinheta:nome-na-pedra"
+    ]
+  },
+  "by_dominio": {
+    "arquivos_e_documentos": [
+      "worldbuilding-xvii:tecido:escrita-e-registros"
+    ],
+    "circulacao_e_defesa": [
+      "worldbuilding-xvii:tecido:circulacao-e-protecao"
+    ],
+    "cuidado_com_registros": [
+      "worldbuilding-xvii:papel:guardiao-de-memoria"
+    ],
+    "direitos_rituais": [
+      "worldbuilding-xvii:papel:druida-vizinho"
+    ],
+    "governo_e_instituicoes": [
+      "worldbuilding-xvii:tecido:vida-politica"
+    ],
+    "habitação_e_vizinhança": [
+      "worldbuilding-xvii:tecido:moradia-e-bairros"
+    ],
+    "infraestrutura_e_subsistencia": [
+      "worldbuilding-xvii:tecido:abastecimento"
+    ],
+    "memoria_urbana": [
+      "worldbuilding-xvii:papel:ex-morador"
+    ],
+    "parentesco_e_propriedade": [
+      "worldbuilding-xvii:tecido:parentesco-e-heranca"
+    ],
+    "propriedade_contestada": [
+      "worldbuilding-xvii:papel:reclamante-da-propriedade"
+    ],
+    "reivindicacao_familiar": [
+      "worldbuilding-xvii:papel:descendente"
+    ],
+    "religiao_e_luto": [
+      "worldbuilding-xvii:tecido:cultos-e-sepultamento"
+    ],
+    "seguranca_civil": [
+      "worldbuilding-xvii:papel:observador-da-ocupacao"
+    ],
+    "trabalho_e_producao": [
+      "worldbuilding-xvii:tecido:trabalho-e-oficios"
+    ]
+  },
+  "by_modalidade": {
+    "registro_hipotetico": [
+      "worldbuilding-xvii:prova:prova-por-registro"
+    ],
+    "rito_e_memoria": [
+      "worldbuilding-xvii:prova:prova-por-rito"
+    ],
+    "testemunho_oral": [
+      "worldbuilding-xvii:prova:prova-por-testemunho"
+    ],
+    "testemunho_sob_magia": [
+      "worldbuilding-xvii:prova:prova-por-necromancia"
+    ],
+    "vestigio_material": [
+      "worldbuilding-xvii:prova:prova-por-objeto"
+    ]
+  },
+  "by_distincao_juridica": {
+    "identidade_em_disputa": [
+      "worldbuilding-xvii:situacao:identidade_contestada"
+    ],
+    "morte_alegada_com_identificacao": [
+      "worldbuilding-xvii:situacao:morte_identificada"
+    ],
+    "morto_vivo_sem_historia_confirmada": [
+      "worldbuilding-xvii:situacao:animacao_sem_identidade"
+    ],
+    "sem_corpo_confirmado": [
+      "worldbuilding-xvii:situacao:ausencia"
+    ]
+  },
+  "by_tecido_urbano": {
+    "worldbuilding-xvii:tecido:cultos-e-sepultamento": [
+      "worldbuilding-xvii:vinheta:corpo-sem-resposta"
+    ],
+    "worldbuilding-xvii:tecido:escrita-e-registros": [
+      "worldbuilding-xvii:vinheta:nome-na-pedra"
+    ],
+    "worldbuilding-xvii:tecido:moradia-e-bairros": [
+      "worldbuilding-xvii:vinheta:chave-sem-casa"
+    ],
+    "worldbuilding-xvii:tecido:parentesco-e-heranca": [
+      "worldbuilding-xvii:vinheta:heranca-do-desaparecido"
+    ]
+  },
+  "by_pagina_manuscrito": {
+    "24": [
+      "worldbuilding-xvii:prova:prova-por-rito",
+      "worldbuilding-xvii:tecido:cultos-e-sepultamento"
+    ],
+    "5": [
+      "worldbuilding-xvii:fase:anterior-a-ruina",
+      "worldbuilding-xvii:fase:ruinas-ocupadas",
+      "worldbuilding-xvii:fase:ruptura-desconhecida",
+      "worldbuilding-xvii:modelo:camadas-ocupadas",
+      "worldbuilding-xvii:modelo:quartel-de-ruinas",
+      "worldbuilding-xvii:modelo:ruina-de-simbolos",
+      "worldbuilding-xvii:prova:prova-por-necromancia",
+      "worldbuilding-xvii:prova:prova-por-objeto",
+      "worldbuilding-xvii:prova:prova-por-registro",
+      "worldbuilding-xvii:prova:prova-por-testemunho",
+      "worldbuilding-xvii:situacao:animacao_sem_identidade",
+      "worldbuilding-xvii:situacao:ausencia",
+      "worldbuilding-xvii:situacao:identidade_contestada",
+      "worldbuilding-xvii:situacao:morte_identificada",
+      "worldbuilding-xvii:tecido:abastecimento",
+      "worldbuilding-xvii:tecido:circulacao-e-protecao",
+      "worldbuilding-xvii:tecido:escrita-e-registros",
+      "worldbuilding-xvii:tecido:moradia-e-bairros",
+      "worldbuilding-xvii:tecido:parentesco-e-heranca",
+      "worldbuilding-xvii:tecido:trabalho-e-oficios",
+      "worldbuilding-xvii:tecido:vida-politica"
+    ]
+  },
+  "by_estado": {
+    "alternativa_nao_adotada": [
+      "worldbuilding-xvii:modelo:camadas-ocupadas",
+      "worldbuilding-xvii:modelo:quartel-de-ruinas",
+      "worldbuilding-xvii:modelo:ruina-de-simbolos"
+    ],
+    "categoria_de_debate_nao_vigente": [
+      "worldbuilding-xvii:situacao:animacao_sem_identidade",
+      "worldbuilding-xvii:situacao:ausencia",
+      "worldbuilding-xvii:situacao:identidade_contestada",
+      "worldbuilding-xvii:situacao:morte_identificada"
+    ],
+    "hipotese_de_verificacao_nao_adotada": [
+      "worldbuilding-xvii:prova:prova-por-necromancia",
+      "worldbuilding-xvii:prova:prova-por-objeto",
+      "worldbuilding-xvii:prova:prova-por-registro",
+      "worldbuilding-xvii:prova:prova-por-rito",
+      "worldbuilding-xvii:prova:prova-por-testemunho"
+    ],
+    "papel_exploratorio_nao_personagem": [
+      "worldbuilding-xvii:papel:descendente",
+      "worldbuilding-xvii:papel:druida-vizinho",
+      "worldbuilding-xvii:papel:ex-morador",
+      "worldbuilding-xvii:papel:guardiao-de-memoria",
+      "worldbuilding-xvii:papel:observador-da-ocupacao",
+      "worldbuilding-xvii:papel:reclamante-da-propriedade"
+    ],
+    "pergunta_de_reconstrucao_nao_confirmada": [
+      "worldbuilding-xvii:tecido:abastecimento",
+      "worldbuilding-xvii:tecido:circulacao-e-protecao",
+      "worldbuilding-xvii:tecido:cultos-e-sepultamento",
+      "worldbuilding-xvii:tecido:escrita-e-registros",
+      "worldbuilding-xvii:tecido:moradia-e-bairros",
+      "worldbuilding-xvii:tecido:parentesco-e-heranca",
+      "worldbuilding-xvii:tecido:trabalho-e-oficios",
+      "worldbuilding-xvii:tecido:vida-politica"
+    ],
+    "vinheta_hipotetica_nao_ocorrida": [
+      "worldbuilding-xvii:vinheta:chave-sem-casa",
+      "worldbuilding-xvii:vinheta:corpo-sem-resposta",
+      "worldbuilding-xvii:vinheta:heranca-do-desaparecido",
+      "worldbuilding-xvii:vinheta:nome-na-pedra"
+    ]
+  }
+}
