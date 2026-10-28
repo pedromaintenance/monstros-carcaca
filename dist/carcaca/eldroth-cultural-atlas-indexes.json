@@ -1,0 +1,225 @@
+{
+  "by_area": {
+    "worldbuilding-xiv:area:eldroth": [
+      "worldbuilding-xiv:eixo:cumplicidade-e-ruptura",
+      "worldbuilding-xiv:eixo:floresta-agente",
+      "worldbuilding-xiv:eixo:nomeacao-e-mapas",
+      "worldbuilding-xiv:eixo:ondas-feericas",
+      "worldbuilding-xiv:eixo:pactos-feericos",
+      "worldbuilding-xiv:eixo:refugiados",
+      "worldbuilding-xiv:eixo:regime-de-sylara",
+      "worldbuilding-xiv:eixo:sagrado-druidico",
+      "worldbuilding-xiv:eixo:subsistencia"
+    ],
+    "worldbuilding-xiv:area:ironwood": [
+      "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao",
+      "worldbuilding-xiv:eixo:ironwood-cultura",
+      "worldbuilding-xiv:eixo:ligacao-thargrid"
+    ],
+    "worldbuilding-xiv:area:vandar": [
+      "worldbuilding-xiv:eixo:memoria-e-ritos",
+      "worldbuilding-xiv:eixo:vandar-mortos"
+    ]
+  },
+  "by_efeito": {
+    "administracao de recursos": [
+      "worldbuilding-xiv:eixo:ironwood-cultura"
+    ],
+    "arqueologia urbana": [
+      "worldbuilding-xiv:eixo:vandar-mortos"
+    ],
+    "autonomia": [
+      "worldbuilding-xiv:eixo:ligacao-thargrid"
+    ],
+    "autonomia coletiva": [
+      "worldbuilding-xiv:eixo:sagrado-druidico"
+    ],
+    "autoridade de Elara": [
+      "worldbuilding-xiv:eixo:ironwood-cultura"
+    ],
+    "cartografia sem revelar rotas": [
+      "worldbuilding-xiv:eixo:nomeacao-e-mapas"
+    ],
+    "conflitos de legitimidade": [
+      "worldbuilding-xiv:eixo:regime-de-sylara"
+    ],
+    "conflitos de memoria": [
+      "worldbuilding-xiv:eixo:refugiados"
+    ],
+    "cultura oral": [
+      "worldbuilding-xiv:eixo:nomeacao-e-mapas"
+    ],
+    "diplomacia": [
+      "worldbuilding-xiv:eixo:pactos-feericos"
+    ],
+    "diplomacia da resistencia": [
+      "worldbuilding-xiv:eixo:ligacao-thargrid"
+    ],
+    "direito de residencia": [
+      "worldbuilding-xiv:eixo:ondas-feericas"
+    ],
+    "direito de retorno": [
+      "worldbuilding-xiv:eixo:memoria-e-ritos"
+    ],
+    "direitos de hospitalidade": [
+      "worldbuilding-xiv:eixo:pactos-feericos"
+    ],
+    "direitos de refugiados": [
+      "worldbuilding-xiv:eixo:refugiados"
+    ],
+    "disputa por uso da terra": [
+      "worldbuilding-xiv:eixo:sagrado-druidico"
+    ],
+    "ecologia material": [
+      "worldbuilding-xiv:eixo:subsistencia"
+    ],
+    "ecologia politica": [
+      "worldbuilding-xiv:eixo:floresta-agente"
+    ],
+    "economia de guerra": [
+      "worldbuilding-xiv:eixo:ligacao-thargrid"
+    ],
+    "economia dos dominados": [
+      "worldbuilding-xiv:eixo:regime-de-sylara"
+    ],
+    "epistemologia colonial": [
+      "worldbuilding-xiv:eixo:nomeacao-e-mapas"
+    ],
+    "escala cartografica": [
+      "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao"
+    ],
+    "etica ambiental": [
+      "worldbuilding-xiv:eixo:floresta-agente"
+    ],
+    "etica da guerrilha": [
+      "worldbuilding-xiv:eixo:ironwood-cultura"
+    ],
+    "familias divididas": [
+      "worldbuilding-xiv:eixo:cumplicidade-e-ruptura"
+    ],
+    "geografia politica": [
+      "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao"
+    ],
+    "historia de familias": [
+      "worldbuilding-xiv:eixo:ondas-feericas"
+    ],
+    "lealdades nao biologicas": [
+      "worldbuilding-xiv:eixo:ondas-feericas"
+    ],
+    "legitimidade": [
+      "worldbuilding-xiv:eixo:pactos-feericos"
+    ],
+    "logistica militar": [
+      "worldbuilding-xiv:eixo:vandar-mortos"
+    ],
+    "luto e direitos": [
+      "worldbuilding-xiv:eixo:vandar-mortos"
+    ],
+    "perseguicao e falsa acusacao": [
+      "worldbuilding-xiv:eixo:floresta-agente"
+    ],
+    "pluralismo politico": [
+      "worldbuilding-xiv:eixo:cumplicidade-e-ruptura"
+    ],
+    "politica dos mortos": [
+      "worldbuilding-xiv:eixo:memoria-e-ritos"
+    ],
+    "reconciliacao": [
+      "worldbuilding-xiv:eixo:cumplicidade-e-ruptura"
+    ],
+    "relacoes interregionais": [
+      "worldbuilding-xiv:eixo:refugiados"
+    ],
+    "religiosidade cotidiana": [
+      "worldbuilding-xiv:eixo:sagrado-druidico"
+    ],
+    "responsabilidade coletiva": [
+      "worldbuilding-xiv:eixo:memoria-e-ritos"
+    ],
+    "rotas nao confirmadas": [
+      "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao"
+    ],
+    "sobrevivencia civil": [
+      "worldbuilding-xiv:eixo:subsistencia"
+    ],
+    "trabalho invisivel": [
+      "worldbuilding-xiv:eixo:subsistencia"
+    ],
+    "vida civil sob ocupacao": [
+      "worldbuilding-xiv:eixo:regime-de-sylara"
+    ]
+  },
+  "by_fonte_factual": {
+    "ambientacao": [
+      "worldbuilding-xiv:eixo:cumplicidade-e-ruptura",
+      "worldbuilding-xiv:eixo:floresta-agente",
+      "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao",
+      "worldbuilding-xiv:eixo:ironwood-cultura",
+      "worldbuilding-xiv:eixo:ligacao-thargrid",
+      "worldbuilding-xiv:eixo:memoria-e-ritos",
+      "worldbuilding-xiv:eixo:nomeacao-e-mapas",
+      "worldbuilding-xiv:eixo:ondas-feericas",
+      "worldbuilding-xiv:eixo:pactos-feericos",
+      "worldbuilding-xiv:eixo:refugiados",
+      "worldbuilding-xiv:eixo:regime-de-sylara",
+      "worldbuilding-xiv:eixo:sagrado-druidico",
+      "worldbuilding-xiv:eixo:subsistencia",
+      "worldbuilding-xiv:eixo:vandar-mortos"
+    ]
+  },
+  "by_fonte_manuscrito": {
+    "hack-capitulo-i": [
+      "worldbuilding-xiv:eixo:cumplicidade-e-ruptura",
+      "worldbuilding-xiv:eixo:floresta-agente",
+      "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao",
+      "worldbuilding-xiv:eixo:ironwood-cultura",
+      "worldbuilding-xiv:eixo:ligacao-thargrid",
+      "worldbuilding-xiv:eixo:memoria-e-ritos",
+      "worldbuilding-xiv:eixo:nomeacao-e-mapas",
+      "worldbuilding-xiv:eixo:ondas-feericas",
+      "worldbuilding-xiv:eixo:pactos-feericos",
+      "worldbuilding-xiv:eixo:refugiados",
+      "worldbuilding-xiv:eixo:regime-de-sylara",
+      "worldbuilding-xiv:eixo:sagrado-druidico",
+      "worldbuilding-xiv:eixo:subsistencia",
+      "worldbuilding-xiv:eixo:vandar-mortos"
+    ]
+  },
+  "by_pagina_manuscrito": {
+    "16": [
+      "worldbuilding-xiv:eixo:cumplicidade-e-ruptura",
+      "worldbuilding-xiv:eixo:ondas-feericas",
+      "worldbuilding-xiv:eixo:pactos-feericos"
+    ],
+    "17": [
+      "worldbuilding-xiv:eixo:cumplicidade-e-ruptura",
+      "worldbuilding-xiv:eixo:floresta-agente",
+      "worldbuilding-xiv:eixo:memoria-e-ritos",
+      "worldbuilding-xiv:eixo:nomeacao-e-mapas",
+      "worldbuilding-xiv:eixo:ondas-feericas",
+      "worldbuilding-xiv:eixo:refugiados",
+      "worldbuilding-xiv:eixo:regime-de-sylara",
+      "worldbuilding-xiv:eixo:sagrado-druidico",
+      "worldbuilding-xiv:eixo:subsistencia"
+    ],
+    "18": [
+      "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao",
+      "worldbuilding-xiv:eixo:ironwood-cultura",
+      "worldbuilding-xiv:eixo:ligacao-thargrid"
+    ],
+    "20": [
+      "worldbuilding-xiv:eixo:nomeacao-e-mapas"
+    ],
+    "24": [
+      "worldbuilding-xiv:eixo:memoria-e-ritos",
+      "worldbuilding-xiv:eixo:sagrado-druidico"
+    ],
+    "5": [
+      "worldbuilding-xiv:eixo:vandar-mortos"
+    ],
+    "7": [
+      "worldbuilding-xiv:eixo:ligacao-thargrid",
+      "worldbuilding-xiv:eixo:regime-de-sylara"
+    ]
+  }
+}

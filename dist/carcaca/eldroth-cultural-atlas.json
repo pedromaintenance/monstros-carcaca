@@ -1,0 +1,897 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Atlas de Worldbuilding XIV — Eldroth, Ironwood e Vandar",
+  "natureza": "sintese_documentada_e_agenda_de_decisoes_autorais",
+  "estado": "dossie_de_worldbuilding_em_revisao",
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false,
+  "prioridade": "historia_cultura_politica_geografia_e_vida_cotidiana",
+  "politica_de_fonte": {
+    "ambientacao": "Ambientação - A Carcaça - Visão Geral.txt: cronologia e regiões descritas, preservadas como base textual de referência.",
+    "hack-capitulo-i": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json: formulações do manuscrito, identificadas por página, sem promover automaticamente ao cânone.",
+    "inferencia": "Leituras e tensões editoriais não são afirmações sobre eventos já ocorridos.",
+    "alternativa": "Hipóteses incompatíveis ou combináveis oferecidas à decisão do autor, sem escolha automática."
+  },
+  "limites": [
+    "Nenhuma localidade, organização, espécie, instituição, regra tributária ou rota nova foi elevada ao cânone.",
+    "Nenhuma data de queda de Vandar nem de ascensão de Sylara foi inferida.",
+    "Ironwood não é distrito automaticamente pertencente a Eldroth.",
+    "A origem feérica não implica lealdade política à Corte; sem determinismo racial.",
+    "Ocupação da floresta não obriga toda criatura e todo druida a ser colaborador.",
+    "Eventos de campanhas não fazem parte do atlas do mundo sem revisão autoral."
+  ],
+  "resumo": {
+    "areas": 3,
+    "marcos": 6,
+    "eixos": 14,
+    "alternativas": 42
+  },
+  "areas": [
+    {
+      "id": "worldbuilding-xiv:area:eldroth",
+      "nome": "Eldroth",
+      "referencia_atlas": "regiao:eldroth",
+      "lugar_atlas": "lugar:eldroth",
+      "estado": "ocupacao_documentada",
+      "governante": "Lady Sylara Nightwhisper",
+      "nota": "Floresta da asa direita de Golzdov; não presumir que todos os seus habitantes servem à Corte."
+    },
+    {
+      "id": "worldbuilding-xiv:area:vandar",
+      "nome": "Ruínas de Vandar",
+      "referencia_atlas": "regiao:eldroth",
+      "lugar_atlas": "lugar:vandar",
+      "estado": "ocupacao_documentada",
+      "governante": "Lord Damaris Blackthorn",
+      "nota": "Ruínas e base de mortos-vivos; não há assentamento civil específico confirmado."
+    },
+    {
+      "id": "worldbuilding-xiv:area:ironwood",
+      "nome": "Ironwood",
+      "referencia_atlas": null,
+      "lugar_atlas": null,
+      "estado": "resistencia_documentada",
+      "governante": "Elara Stormoak",
+      "nota": "Fortaleza ao sul de Thargrid; sem criar novo ponto canônico ou incluí-la em Eldroth."
+    }
+  ],
+  "marcos": [
+    {
+      "ano_ec": 501,
+      "evento": "Refúgio de feéricos vindos de Shadowfade nas florestas",
+      "fonte": "ambientacao",
+      "estado": "datado_no_texto"
+    },
+    {
+      "ano_ec": 666,
+      "evento": "Instalação oficial de lordes da Corte na Carcaça",
+      "fonte": "ambientacao",
+      "estado": "datado_no_texto"
+    },
+    {
+      "ano_ec": 875,
+      "evento": "Início das guerras abertas de conquista shadow fey",
+      "fonte": "ambientacao",
+      "estado": "datado_no_texto"
+    },
+    {
+      "ano_ec": 910,
+      "evento": "Consolidação do domínio sombrio; Ironwood mantém resistência",
+      "fonte": "ambientacao",
+      "estado": "datado_no_texto"
+    },
+    {
+      "ano_ec": 912,
+      "evento": "Eldroth está entre as regiões sob domínio da Rainha; resistência de Thargrid continua",
+      "fonte": "ambientacao",
+      "estado": "datado_no_texto"
+    },
+    {
+      "ano_ec": null,
+      "evento": "Fundação e queda de Vandar, nomeação de Sylara, limites entre Eldroth e Ironwood",
+      "fonte": "lacuna_explicita",
+      "estado": "sem_data_confirmada"
+    }
+  ],
+  "eixos": [
+    {
+      "id": "worldbuilding-xiv:eixo:ondas-feericas",
+      "area_id": "worldbuilding-xiv:area:eldroth",
+      "tema": "Migração, parentesco e colonialismo",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "501 EC: demônios invadem Shadowfade e fadas se refugiam em Eldroth e Ironwood."
+        },
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "666 EC: lordes da Corte se mudam oficialmente para a Carcaça buscando relações com os nativos em troca de magia."
+        },
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "875 EC: a Corte inicia guerras abertas de dominação dos povos nativos."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            17
+          ],
+          "afirmacao": "O contato anterior à conquista criou alianças, rivalidades, casamentos, pactos e tradições híbridas entre nativos e refugiados.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        },
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            16
+          ],
+          "afirmacao": "Fadas refugiadas não devem ser confundidas automaticamente com a aristocracia conquistadora.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "Dois movimentos históricos de migração feérica não podem ser confundidos: o refúgio precede a dominação aristocrática por séculos.",
+      "perguntas_abertas": [
+        "Quem podia acolher ou recusar o primeiro refúgio?",
+        "Que compromissos antigos sobreviveram ao golpe político da Corte?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Cidadania pelas antigas alianças",
+          "implicacao": "Descendentes de refugiados podem reivindicar pertencimento independente da Corte.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Pertencimento segundo comunidades locais",
+          "implicacao": "Cada comunidade reconhece vínculos e deveres próprios, sem direito automático por sangue.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Pertencimento contestado",
+          "implicacao": "Um mesmo parentesco sustenta direitos incompatíveis perante o ocupante e perante a resistência.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "historia de familias",
+        "direito de residencia",
+        "lealdades nao biologicas"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:regime-de-sylara",
+      "area_id": "worldbuilding-xiv:area:eldroth",
+      "tema": "Poder territorial de Sylara",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Eldroth é governada por Lady Sylara Nightwhisper, estrategista da Rainha da Noite."
+        },
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Ela usa criaturas da floresta para vigiar, perseguir e eliminar resistência."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            17
+          ],
+          "afirmacao": "A ocupação converte parte da floresta em instrumento de vigilância e rompe círculos druídicos.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        },
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            7
+          ],
+          "afirmacao": "A Corte exerce intensidade diferente de domínio segundo a utilidade territorial.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "A autoridade de Sylara é conhecida; os mecanismos cotidianos de governo, recrutamento, sanção e tributo florestal não foram especificados.",
+      "perguntas_abertas": [
+        "Qual instituição registra as ordens de Sylara?",
+        "A vigilância é administrada por nobres, servos, pactos com criaturas ou vários dispositivos?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Senhorios de exploração",
+          "implicacao": "A Corte governa recursos e trabalho por representantes locais.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Pactos de jurisdição",
+          "implicacao": "Alguns lugares obedecem à Corte por pactos antigos reinterpretados em seu favor.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Zonas de exceção móvel",
+          "implicacao": "A lei muda conforme a patrulha e a necessidade militar, sem administração estável.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "economia dos dominados",
+        "vida civil sob ocupacao",
+        "conflitos de legitimidade"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:floresta-agente",
+      "area_id": "worldbuilding-xiv:area:eldroth",
+      "tema": "Autonomia ecológica versus vigilância",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "A escuridão de Eldroth é densa e viva."
+        },
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Sylara utiliza criaturas da floresta em ações de vigilância e perseguição."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            17
+          ],
+          "afirmacao": "Para os druidas, ensinar a floresta a servir ao ocupante é violência contra uma comunidade maior que qualquer reino.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "Que a Corte use criaturas não prova que todas as espécies, espíritos e árvores estejam corrompidos ou subordinados.",
+      "perguntas_abertas": [
+        "Como distinguir um animal reagindo ao habitat de uma criatura constrangida por magia?",
+        "A vigilância deixa marcas ou exige testemunho?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Coação ritual reversível",
+          "implicacao": "Uma parte das criaturas age sob vínculos que podem ser desfeitos.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Ecossistemas desiguais",
+          "implicacao": "Áreas sob controle intenso coexistem com zonas indiferentes ou resistentes.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Alianças oportunistas",
+          "implicacao": "Algumas criaturas cooperam livremente com a Corte, sem representar toda a natureza.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "etica ambiental",
+        "ecologia politica",
+        "perseguicao e falsa acusacao"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:sagrado-druidico",
+      "area_id": "worldbuilding-xiv:area:eldroth",
+      "tema": "Religião, jurisdição e lugares sagrados",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Eldroth era uma floresta vibrante antes da ocupação; hoje enfrenta domínio feérico."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            17
+          ],
+          "afirmacao": "Círculos druídicos mediavam disputas, períodos de caça e coleta, locais sagrados e áreas onde não se construía.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        },
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            24
+          ],
+          "afirmacao": "A fé druídica considera floresta, rios, mortos e estações sagrados por si, independentemente de deuses específicos.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "A diferença entre proteger a floresta como comunidade e possuí-la como território é também uma diferença de direito.",
+      "perguntas_abertas": [
+        "Quem pode autorizar o corte de uma árvore antiga?",
+        "Como uma comunidade discorda de um círculo druídico sem ser acusada de profanação?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Conselhos de guardiões",
+          "implicacao": "Círculos atuam como mediadores sem monopólio sobre decisões civis.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Jurisdições sagradas",
+          "implicacao": "Determinados espaços são interditos por pactos comunitários duradouros.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Negociações locais variáveis",
+          "implicacao": "Direitos a caça, água e rito são renegociados sazonalmente entre moradores e guardiões.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "religiosidade cotidiana",
+        "disputa por uso da terra",
+        "autonomia coletiva"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:cumplicidade-e-ruptura",
+      "area_id": "worldbuilding-xiv:area:eldroth",
+      "tema": "Druidas sob colaboração, coerção e exílio",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Lady Sylara persegue resistência em Eldroth."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            17
+          ],
+          "afirmacao": "Há círculos dispersos, escondidos, refugiados, cooptados por medo ou convertidos pela corrupção.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        },
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            16
+          ],
+          "afirmacao": "Fadas sob a Corte podem obedecer por pacto, costume, temor ou convicção, e alguns dissidentes rejeitam a aristocracia.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "A divisão das comunidades é social e moral, não uma propriedade racial; sobreviver não equivale automaticamente a consentir.",
+      "perguntas_abertas": [
+        "Como distinguir coação de colaboração interessada?",
+        "Qual responsabilidade se impõe a quem preservou parte da mata sacrificando outra?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Justiça por testemunhos",
+          "implicacao": "A comunidade decide caso a caso, com risco de vinganças.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Anistia condicional",
+          "implicacao": "Desertores devem reparar danos e revelar vínculos antes de acolhimento.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Sem tribunal unificado",
+          "implicacao": "As comunidades estabelecem respostas diferentes e incompatíveis.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "reconciliacao",
+        "familias divididas",
+        "pluralismo politico"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:subsistencia",
+      "area_id": "worldbuilding-xiv:area:eldroth",
+      "tema": "Comida, madeira, cura e trabalho",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "A ocupação de Eldroth persegue comunidades sobreviventes, mas as fontes não descrevem volumes de alimento, água ou reservas."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            17
+          ],
+          "afirmacao": "Druidas antigos administravam períodos de caça e coleta e protegiam áreas interditadas.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        },
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            17
+          ],
+          "afirmacao": "Alguns grupos escondidos protegem comunidades e libertam criaturas corrompidas.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "Não pode existir refúgio sem reprodução material de sua vida, mas a fonte ainda não diz que atividades sustentam cada comunidade.",
+      "perguntas_abertas": [
+        "Quem coleta, planta, cura, transporta e decide racionamento?",
+        "Como a ocupação altera a possibilidade de caçar e colher?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Coleta sazonal comunitária",
+          "implicacao": "Abrigos dependem do conhecimento local; estações tornam-se decisivas.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Pequenos cultivos ocultos",
+          "implicacao": "Há disputa entre esconder canteiros e manter alimentação suficiente.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Trocas com territórios externos",
+          "implicacao": "A subsistência passa a depender de relações políticas, sem presumir rota já existente.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "trabalho invisivel",
+        "ecologia material",
+        "sobrevivencia civil"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:refugiados",
+      "area_id": "worldbuilding-xiv:area:eldroth",
+      "tema": "Deslocamento, pertença e perda do lar",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "A ocupação deslocou pessoas; a Costa Sul possui alguns refugiados de Eldroth, minoritários nos maiores assentamentos."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            17
+          ],
+          "afirmacao": "O manuscrito menciona druidas refugiados em Portomonte, Thargrid, arquipélagos e comunidades dispersas, sem trajetos nem números.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "Êxodo não é uma categoria social única: druidas, famílias, colaboradores arrependidos e órfãos podem possuir histórias e direitos diferentes.",
+      "perguntas_abertas": [
+        "Quem oferece abrigo e sob quais condições?",
+        "Quem decide quando um refugiado pode reivindicar o retorno?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Asilo por residência",
+          "implicacao": "Acolhimento depende do lugar que recebe a pessoa.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Asilo por afinidade de tradição",
+          "implicacao": "Círculos e clãs podem reclamar deveres distintos.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Asilo por necessidade",
+          "implicacao": "Prioridade ao risco imediato, sem exigir lealdade ou filiação.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "direitos de refugiados",
+        "conflitos de memoria",
+        "relacoes interregionais"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:ironwood-cultura",
+      "area_id": "worldbuilding-xiv:area:ironwood",
+      "tema": "Identidade ranger e vida civil",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Ironwood é fortaleza de rangers e druidas ao sul das montanhas de Thargrid."
+        },
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Elara Stormoak lidera ações de guerrilha, sabotagem e defesa de espaços não totalmente dominados."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            18
+          ],
+          "afirmacao": "Rangers alteram rotas para não criar padrões e transmitem informações de modo fragmentado.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        },
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            18
+          ],
+          "afirmacao": "Humanos, meio-elfos, gnomos, refugiados e feéricos podem atuar junto dos elfos da floresta, sem monopólio étnico.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "A cultura de segurança de Ironwood pode proteger a vida civil e, simultaneamente, dificultar prestação de contas aos próprios moradores.",
+      "perguntas_abertas": [
+        "Quem decide se uma operação vale o risco às aldeias vizinhas?",
+        "Como os rangers se relacionam com agricultores e comerciantes que não combatem?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Comando consultivo",
+          "implicacao": "Elara lidera o esforço militar; moradores decidem suprimentos e abrigos.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Autonomia das companhias",
+          "implicacao": "Rangers atuam com grande liberdade e conflitos internos de responsabilidade.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Pactos civis de proteção",
+          "implicacao": "A defesa depende de contrapartidas negociadas, não obediência automática.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "etica da guerrilha",
+        "administracao de recursos",
+        "autoridade de Elara"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:ligacao-thargrid",
+      "area_id": "worldbuilding-xiv:area:ironwood",
+      "tema": "Aliança sem comando central",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Thargrid é um dos principais refúgios de resistência de anões, gigantes e refugiados."
+        },
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Ironwood é outro polo de resistência, sob liderança própria."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            7
+          ],
+          "afirmacao": "A resistência é descentralizada, com acordos e objetivos divergentes e sem um rei secreto.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        },
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            18
+          ],
+          "afirmacao": "A articulação entre diferentes células existe, mas as companhias de Ironwood não são um exército convencional.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "Cooperação estratégica não implica anexação política, hierarquia única, nem valores ideológicos idênticos.",
+      "perguntas_abertas": [
+        "Que recursos podem circular sem expor as comunidades?",
+        "Que objetivo compartilham se discordam sobre o governo depois da libertação?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Cooperação pontual",
+          "implicacao": "Unidades trocam ajuda sem uma instituição suprarregional.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Assembleias entre territórios",
+          "implicacao": "Delegados discutem prioridades sem comando militar central.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Pactos assimétricos",
+          "implicacao": "A potência de Thargrid e a mobilidade de Ironwood criam tensões negociadas.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "economia de guerra",
+        "diplomacia da resistencia",
+        "autonomia"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:vandar-mortos",
+      "area_id": "worldbuilding-xiv:area:vandar",
+      "tema": "Ruína, necromancia e soberania de Damaris",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Vandar foi cidade próspera e se tornou ruína sob Lord Damaris Blackthorn."
+        },
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Damaris comanda exército de mortos-vivos e utiliza a região como base de incursões."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            5
+          ],
+          "afirmacao": "Vandar é descrita como base de incursões contra regiões ainda não totalmente subjugadas.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "A ocupação de Vandar como instalação militar é conhecida; pouco se sabe sobre a população anterior, como caiu ou quem ainda vive nos arredores.",
+      "perguntas_abertas": [
+        "Que cidade existia antes dos mortos-vivos?",
+        "Os mortos conservam identidade e vontade?",
+        "O que restou de arquivos e arquitetura civil?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Necrópole de guerra",
+          "implicacao": "A principal organização é militar; a memória urbana vive fora das ruínas.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Camadas civis subterrâneas",
+          "implicacao": "Restos da cidade permanecem sob a guarnição, sem comunidade atual confirmada.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Cidade fantasma disputada",
+          "implicacao": "Memoriais, registros e ruínas têm reclamantes vivos além de Damaris.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "arqueologia urbana",
+        "luto e direitos",
+        "logistica militar"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:memoria-e-ritos",
+      "area_id": "worldbuilding-xiv:area:vandar",
+      "tema": "Luto, identificação e direito aos nomes",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "A presença de mortos-vivos em Vandar é documentada, mas nenhum costume funerário civil específico foi confirmado."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            17
+          ],
+          "afirmacao": "Antes da ocupação, círculos druídicos reconheciam mortos e lugares como partes da comunidade maior da floresta.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        },
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            24
+          ],
+          "afirmacao": "Tradições religiosas do continente variam; não há rito funerário único aplicável a todos.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "Luto não é apenas sobrenatural: uma identificação errada pode destruir uma família ou justificar propriedade e herança.",
+      "perguntas_abertas": [
+        "Uma lembrança corresponde a um falecido ou a um desaparecido?",
+        "Quem tem autoridade para encerrar um luto e declarar alguém morto?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Memória oral",
+          "implicacao": "Ritos dependem de testemunhas familiares e da história dos lugares.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Registros dispersos",
+          "implicacao": "Comunidades guardam nomes em suportes diferentes por segurança.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Ritos suspensos",
+          "implicacao": "Sem prova, alguns mortos permanecem juridicamente desaparecidos.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "politica dos mortos",
+        "direito de retorno",
+        "responsabilidade coletiva"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:pactos-feericos",
+      "area_id": "worldbuilding-xiv:area:eldroth",
+      "tema": "Hospitalidade, pactos e autoridade da palavra",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "A chegada de feéricos às florestas é anterior à conquista da Corte."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            16
+          ],
+          "afirmacao": "Pactos antigos entre fadas e habitantes locais podem envolver hospitalidade, nomes verdadeiros, trocas e promessas.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        },
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            16
+          ],
+          "afirmacao": "Feéricos não têm lealdade uniforme à Corte; alguns pactos são muito mais antigos que o domínio colonial.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "Conquistar um território pode não conferir direito de reescrever os pactos que lhe davam forma antes da invasão.",
+      "perguntas_abertas": [
+        "O que acontece quando a lei imperial contradiz uma promessa anterior?",
+        "Quem pode representar uma família, árvore ou nascente em um pacto?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Direito consuetudinário",
+          "implicacao": "Pactos reconhecidos por moradores podem invalidar ordens locais.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Apropriação colonial",
+          "implicacao": "A Corte usa linguagem de pactos para justificar expropriação.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Jurisdições concorrentes",
+          "implicacao": "Um mesmo pacto é interpretado de formas incompatíveis.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "legitimidade",
+        "diplomacia",
+        "direitos de hospitalidade"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:nomeacao-e-mapas",
+      "area_id": "worldbuilding-xiv:area:eldroth",
+      "tema": "Memória territorial e disputa pelo conhecimento",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "A geografia da Carcaça está construída sobre o corpo de Golzdov; Eldroth é situada na asa direita."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            17
+          ],
+          "afirmacao": "Uma clareira pode ser praça, uma árvore memorial e uma trilha invisível estrada reconhecida por gerações.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        },
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            20
+          ],
+          "afirmacao": "Gnomos cartógrafos preservam informações sobre rotas, tempos e fronteiras, tornando mapas politicamente valiosos.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "Um mapa que melhora a compreensão da região também pode melhorar a capacidade de ocupação e extração.",
+      "perguntas_abertas": [
+        "Quem tem direito de registrar nomes tradicionais?",
+        "O que se perde quando a Corte substitui um lugar por um número administrativo?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Mapas parciais",
+          "implicacao": "Registros civis intencionalmente omitem espaços vulneráveis.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Cartografia pública contestada",
+          "implicacao": "Sobreviventes reivindicam os nomes originais sem revelar refúgios.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Mapas incompatíveis",
+          "implicacao": "Ocupantes e comunidades usam sistemas diferentes de limites e circulação.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "cultura oral",
+        "epistemologia colonial",
+        "cartografia sem revelar rotas"
+      ],
+      "relacoes_com_eixos": []
+    },
+    {
+      "id": "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao",
+      "area_id": "worldbuilding-xiv:area:ironwood",
+      "tema": "Escalas e fronteiras reais versus imaginadas",
+      "fatos_textuais": [
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Eldroth e Vandar situam-se na asa direita de Golzdov."
+        },
+        {
+          "fonte": "ambientacao",
+          "afirmacao": "Ironwood fica ao sul das montanhas de Thargrid; não há prova de que seja um distrito ou clareira dentro de Eldroth."
+        }
+      ],
+      "camada_manuscrito": [
+        {
+          "fonte": "hack-capitulo-i",
+          "paginas": [
+            18
+          ],
+          "afirmacao": "Ironwood permanece livre de ocupação total e tem contatos com círculos de Eldroth; aproximação não implica fusão cartográfica.",
+          "status": "afirmado_no_rascunho_sem_promocao"
+        }
+      ],
+      "leitura_editorial": "Há uma relação entre territórios, mas faltam distâncias, limites de fronteira e localização de assentamentos individuais.",
+      "perguntas_abertas": [
+        "O que os mapas existentes realmente autorizam situar?",
+        "Quais caminhos podem ser descritos literariamente sem se tornarem rotas operacionais?"
+      ],
+      "decisoes_autorais_pendentes": [
+        {
+          "opcao": "Fronteira ecológica",
+          "implicacao": "Os dois bosques exibem variação de solo e paisagem sem um limite político exato fixado.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Fronteira militar",
+          "implicacao": "Limites percebidos dependem da presença de patrulhas, não de marco cartográfico.",
+          "estado": "alternativa_nao_adotada"
+        },
+        {
+          "opcao": "Zona de contato disputada",
+          "implicacao": "Os nomes e alcances das duas matas mudam conforme o narrador, sem coordenadas canonizadas.",
+          "estado": "alternativa_nao_adotada"
+        }
+      ],
+      "efeitos_na_ambientacao": [
+        "geografia politica",
+        "escala cartografica",
+        "rotas nao confirmadas"
+      ],
+      "relacoes_com_eixos": []
+    }
+  ]
+}
