@@ -2433,7 +2433,7 @@ test("Ciclo XV: costumes históricos propostos e pactos sem canonização",async
  assert.equal((await atlas.searchEldrothPreconquest({categoria:"praticas",fase:"antes_501"})).length,1);
  assert.equal((await atlas.searchEldrothPreconquest({categoria:"praticas",pagina:16})).length,1);
  assert.equal((await atlas.searchEldrothPreconquest({eixoXiv:"worldbuilding-xiv:eixo:ondas-feericas"})).length,1);
- assert.equal((await atlas.searchEldrothPreconquest({query:"NASCENTES"})).length,1);
+ assert.equal((await atlas.searchEldrothPreconquest({query:"NASCENTES"})).length,2);
  assert.equal((await atlas.searchEldrothPreconquest({praticaId:"worldbuilding-xv:pratica:mesa-da-hospitalidade"})).length,3);
  assert.equal((await atlas.getEldrothPreconquestEntry("worldbuilding-xv:pacto:acolhimento-sem-vassalagem")).assinado,false);
  assert.equal((await atlas.getEldrothPreconquestEntry("worldbuilding-xv:vinheta:primeira-hospitalidade")).ocorreu,false);
