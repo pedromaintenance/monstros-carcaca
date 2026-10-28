@@ -3637,6 +3637,68 @@ def validar_culturas_gnomicas_xxi():
     print("Ciclo XXI: três tradições, 14 afirmações textuais, 39 propostas, 9 perguntas; zero homologações.")
 
 
+
+def validar_meio_demonios_sociedades_xxii():
+    """Meio-demônios não são etnia homogênea e nem têm destino moral hereditário."""
+    d=load("data/worldbuilding/meio-demonios-sociedades-ciclo22.json")
+    schema=load("schemas/meio-demonios-sociedades-xxii.schema.json")
+    Draft202012Validator.check_schema(schema)
+    errors=list(Draft202012Validator(schema).iter_errors(d))
+    require(not errors,f"Ciclo XXII: schema inválido {errors[:2]}")
+    expected={"fatos":14,"eixos_sociais":11,"contextos_de_convivencia":6,
+              "circuitos_civis":6,"tensoes":6,"costumes_candidatos":4,
+              "vinhetas":4,"perguntas":9}
+    require(d["contagens"]==expected,"Ciclo XXII: contagens inconsistentes.")
+    require(d["aprovacao_autoral"] is False and
+            d["efeito_canonico_automatico"] is False and
+            d["estado"]=="expansao_cultural_proposta",
+            "Ciclo XXII: aprovação ou mutação canônica não permitida.")
+    require(d["povo"]=="Meio-Demônios" and
+            all(d[key] is None for key in (
+               "patria_unica_documentada","governo_comum_documentado",
+               "aparencia_uniforme_documentada")),
+            "Ciclo XXII: reino ou fenótipo uniforme inventado.")
+    require(all(k in d["referencia_cosmologica"].lower() for k in
+            ("demônios","diabos","cambions","tieflings")),
+            "Ciclo XXII: cosmologia demoníaca separada indevidamente.")
+    require("983 EC" in d["marco_cronologico_documentado"] and
+            "não equivale" in d["marco_cronologico_documentado"],
+            "Ciclo XXII: invasão de 983 não pode ser origem universal.")
+    pages={p["pagina"] for p in load(
+       "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")["paginas"]}
+    require(all(x["pagina"] in (9,21) and x["pagina"] in pages
+         and x["novo_canon"] is False for x in d["fatos_documentados"]),
+         "Ciclo XXII: fonte incorreta ou afirmação promovida.")
+    cats=("eixos_sociais","contextos_de_convivencia","circuitos_civis",
+          "tensoes","costumes_candidatos","vinhetas")
+    entries=[x for cat in cats for x in d[cat]]
+    combined=entries+d["fatos_documentados"]+d["perguntas_para_autor"]
+    require(len(entries)==37 and len(combined)==60 and
+            len({x["id"] for x in combined})==60,
+            "Ciclo XXII: quantidades ou identidades inconsistentes.")
+    require(all(x["ocorreu"] is False and x["lei_confirmada"] is False and
+            x["estado"]=="proposta_nao_canonica" for x in d["eixos_sociais"]),
+            "Ciclo XXII: fato social hipotético virou lei.")
+    require(all(x["comunidade_canonica_nova"] is False and
+            x["geografia_exata"] is None for x in d["contextos_de_convivencia"]),
+            "Ciclo XXII: aldeia ou geografia inventada.")
+    require(all(x["instituicao_confirmada"] is False and
+            x["volume_conhecido"] is None for x in d["circuitos_civis"]),
+            "Ciclo XXII: economia sem fonte concretizada.")
+    require(all(x["aconteceu"] is False and x["desfecho_aprovado"] is False
+            for x in d["tensoes"]),
+            "Ciclo XXII: conflito imaginado virou evento.")
+    require(all(x["ritual_confirmado"] is False and x["aconteceu"] is False
+            for x in d["costumes_candidatos"]),
+            "Ciclo XXII: rito hipotético virou tradição oficial.")
+    require(all(x["ocorreu"] is False and x["npc_canonico_criado"] is False
+            for x in d["vinhetas"]), "Ciclo XXII: vinheta virou história canônica.")
+    require(all(x["resposta_aprovada"] is None and x["estado"]=="pendente"
+            for x in d["perguntas_para_autor"]),
+            "Ciclo XXII: aprovação autoral antecipada.")
+    print("Ciclo XXII: 14 fontes, 37 propostas, 9 perguntas; nenhum evento, lei ou cânone novo.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3770,6 +3832,7 @@ def main():
     validar_revisao_autoral_xix()
     validar_grama_cortada_cotidiano_xx()
     validar_culturas_gnomicas_xxi()
+    validar_meio_demonios_sociedades_xxii()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
