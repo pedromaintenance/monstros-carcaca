@@ -2580,6 +2580,80 @@ def validar_diplomacia_mar_sangue():
             "Foram removidas ressalvas de soberania e cosmologia.")
     print("Diplomacia marinha: 41 propostas, 4 polos, 5 sucessões contingentes, 5 tratados não assinados.")
 
+
+def validar_economia_mar_sangue():
+    """Vínculos e restrições das propostas de economia, trabalho e captura submarina."""
+    d=load("data/propostas/mar-sangue-economia-hack.json")
+    counts={"polos":5,"oficios":6,"pessoas":8,"fluxos":7,
+            "tributos":5,"clandestinas":4,"cenas":6,"arcos":3}
+    require(d["regiao_id"]=="regiao:costa-sul"
+            and d["estado"]=="propostas_narrativas_nao_canonicas"
+            and d["aprovacao_autoral"] is False
+            and d["efeito_automatico_no_canon"] is False,
+            "Economia marinha não deve canonizar fatos.")
+    require(d["contagens"]==counts
+            and all(len(d[k])==n for k,n in counts.items()),
+            "Contagens da economia marinha inconsistentes.")
+    all_rows=[x for k in counts for x in d[k]]
+    ids={x["id"] for x in all_rows}
+    require(len(all_rows)==len(ids)==44
+            and all(x["estado"]=="proposta_nao_canonica"
+                    and x["id"].startswith("economia-mar:") for x in all_rows),
+            "Entidades econômicas duplicadas ou homologadas.")
+    moves=load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]
+    move_ids={m["id"] for m in moves}
+    places={x["id"] for x in load("data/lugares_carcaca.json")["lugares"]}
+    diplomacy=load("data/propostas/mar-sangue-diplomacia-hack.json")
+    d_ids={x["id"] for k in ("polos","casas","pessoas","disputas","tratados",
+                             "cenas","missoes","arcos") for x in diplomacy[k]}
+    ocean=load("data/propostas/mar-sangue-ecologia-politica-hack.json")
+    ocean_ids={x["id"] for k in ("zonas","coletivos","pessoas","pactos",
+                                 "fenomenos","cenas","tramas") for x in ocean[k]}
+    coast=load("data/propostas/portomonte-ilhas-costa-sul-hack.json")
+    coast_ids={x["id"] for k in ("espacos","redes","pessoas","praticas",
+                                 "circulacoes","cenas","tramas") for x in coast[k]}
+    valid=ids|places|d_ids|ocean_ids|coast_ids|{"regiao:costa-sul"}
+    for x in all_rows:
+        require(bool(x["nome"]) and bool(x["rotina"]) and bool(x["conflito"]),
+                "Entidade econômica sem vida cotidiana e tensão.")
+        require(1<=len(x["movimentos_inspiradores"])<=4
+                and all(m in move_ids for m in x["movimentos_inspiradores"]),
+                "Movimento inspirador econômico sem origem no Hack.")
+        require(all(r in valid for r in x["referencias"]),
+                "Referência econômica não resolvida: "+x["id"])
+    require(all(p["local_confirmado"] is False for p in d["polos"]),
+            "Polo material não pode criar bairro ou cidade oficial.")
+    require(all(p["oficio_canonico"] is False for p in d["oficios"]),
+            "Ofício proposto não é instituição comprovada.")
+    require(sum(p["reutiliza"] is not None for p in d["pessoas"])==6
+            and {p["reutiliza"] for p in d["pessoas"] if p["reutiliza"]}<=d_ids,
+            "Seis personagens de continuidade necessários.")
+    for x in d["fluxos"]:
+        require(x["efetivado"] is False and x["quantidade_confirmada"] is False,
+                "Fluxo futuro foi registrado como produção/comércio verdadeiro.")
+        require(x["origem"] in ids and x["destino"] in ids,
+                "Fluxo sem polo de origem ou destino conhecido.")
+    require(all(x["vigente"] is False for x in d["tributos"]),
+            "Não criar dízimo ou cobrança em vigor.")
+    require(all(x["ocorrencia_confirmada"] is False and x["rota_operacional"] is False
+                for x in d["clandestinas"]),
+            "Circuito clandestino não pode afirmar crime ou rota real.")
+    people={x["id"] for x in d["pessoas"]}
+    for x in d["cenas"]:
+        require(len(x["escolhas"])>=3
+                and all(p in people for p in x["personagens"])
+                and len(x["consequencia_condicional"])>=20,
+                "Cena sem gente, escolha e consequência condicional.")
+    scenes={x["id"] for x in d["cenas"]}
+    require(all(len(a["cenas"])>=2 and all(c in scenes for c in a["cenas"])
+                for a in d["arcos"]),
+            "Arco não conectado às cenas.")
+    text=" ".join(d["fatos_documentados"]+d["limites_editoriais"]).lower()
+    require("escravidão" in text and "demônios" in text
+            and "captura" in text and "correntes" in text,
+            "Economia marinha perdeu ressalvas factuais ou cosmológicas.")
+    print("Economia do Mar de Sangue: 44 propostas, 8 categorias e 7 fluxos não efetivados.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2698,6 +2772,7 @@ def main():
     validar_povoamento_costa_sul()
     validar_ecologia_politica_mar_sangue()
     validar_diplomacia_mar_sangue()
+    validar_economia_mar_sangue()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

@@ -251,6 +251,33 @@ def build():
     costa_sul=load("data/propostas/portomonte-ilhas-costa-sul-hack.json")
     mar_sangue=load("data/propostas/mar-sangue-ecologia-politica-hack.json")
     diplomacia_mar=load("data/propostas/mar-sangue-diplomacia-hack.json")
+    economia_mar=load("data/propostas/mar-sangue-economia-hack.json")
+    categorias_economia=("polos","oficios","pessoas","fluxos","tributos","clandestinas","cenas","arcos")
+    entidades_economia=[
+        {**elemento,"categoria":categoria}
+        for categoria in categorias_economia for elemento in economia_mar[categoria]
+    ]
+    def indexar_economia(campo):
+        mapping=defaultdict(set)
+        for entidade in entidades_economia:
+            valor=entidade.get(campo,[])
+            valores=valor if isinstance(valor,list) else [valor]
+            for item in valores:
+                if item: mapping[str(item)].add(entidade["id"])
+        return {key:sorted(vals) for key,vals in sorted(mapping.items())}
+    indices_economia={
+        "by_categoria":indexar_economia("categoria"),
+        "by_setor":indexar_economia("setor"),
+        "by_povo":indexar_economia("povo"),
+        "by_aguas":indexar_economia("aguas"),
+        "by_abuso":indexar_economia("abuso"),
+        "by_movimento_hack":indexar_economia("movimentos_inspiradores"),
+        "by_referencia":indexar_economia("referencias"),
+        "by_origem":indexar_economia("origem"),
+        "by_destino":indexar_economia("destino")
+    }
+    if len(entidades_economia)!=44 or len(indices_economia["by_categoria"])!=8:
+        raise ValueError("Economia marinha exige 44 propostas em oito categorias")
     categorias_diplomacia=("polos","casas","pessoas","disputas","tratados","cenas","missoes","arcos")
     entidades_diplomacia=[
        {**item,"categoria":categoria}
@@ -682,6 +709,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "mar_sangue_economy":"mar-sangue-economy.json",
+        "mar_sangue_economy_indexes":"mar-sangue-economy-indexes.json",
         "mar_sangue_diplomacy":"mar-sangue-diplomacy.json",
         "mar_sangue_diplomacy_indexes":"mar-sangue-diplomacy-indexes.json",
         "mar_sangue_social_ecology":"mar-sangue-social-ecology.json",
@@ -794,6 +823,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_entidades_economia_mar_propostas":len(entidades_economia),
+        "total_oficios_economia_mar_propostos":len(economia_mar["oficios"]),
+        "total_fluxos_economia_mar_propostos":len(economia_mar["fluxos"]),
+        "total_tributos_economia_mar_propostos":len(economia_mar["tributos"]),
         "total_entidades_diplomacia_mar_propostas":len(entidades_diplomacia),
         "total_polos_diplomacia_mar_propostos":len(diplomacia_mar["polos"]),
         "total_tratados_diplomacia_mar_propostos":len(diplomacia_mar["tratados"]),
@@ -898,6 +931,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["mar_sangue_economy"]:economia_mar,
+           files["mar_sangue_economy_indexes"]:indices_economia,
            files["mar_sangue_diplomacy"]:diplomacia_mar,
            files["mar_sangue_diplomacy_indexes"]:indices_diplomacia,
            files["mar_sangue_social_ecology"]:mar_sangue,

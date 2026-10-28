@@ -60,6 +60,30 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getMarSangueEconomy(){return byKey("mar_sangue_economy");}
+  async function getMarSangueEconomyIndexes(){return byKey("mar_sangue_economy_indexes");}
+  async function getMarSangueEconomyEntity(id){
+    if(typeof id!=="string"||!id.startsWith("economia-mar:"))return null;
+    const d=await getMarSangueEconomy();
+    for(const categoria of ["polos","oficios","pessoas","fluxos","tributos","clandestinas","cenas","arcos"]){
+      const item=d[categoria].find(x=>x.id===id);
+      if(item)return {...item,categoria};
+    }
+    return null;
+  }
+  async function searchMarSangueEconomy({categoria,povo,setor,aguas,abuso,movimentoHack,referencia,query}={}){
+    const d=await getMarSangueEconomy();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const all=["polos","oficios","pessoas","fluxos","tributos","clandestinas","cenas","arcos"]
+      .flatMap(cat=>d[cat].map(x=>({...x,categoria:cat})));
+    return all.filter(x=>
+      (!categoria||x.categoria===categoria)&&(!povo||x.povo===povo)&&
+      (!setor||x.setor===setor)&&(!aguas||x.aguas===aguas)&&
+      (!abuso||x.abuso===abuso)&&
+      (!movimentoHack||(x.movimentos_inspiradores??[]).includes(movimentoHack))&&
+      (!referencia||(x.referencias??[]).includes(referencia))&&
+      (!query||norm([x.nome,x.rotina,x.conflito].join(" ")).includes(norm(query))));
+  }
   async function getMarSangueDiplomacy(){return byKey("mar_sangue_diplomacy");}
   async function getMarSangueDiplomacyIndexes(){return byKey("mar_sangue_diplomacy_indexes");}
   async function getMarSangueDiplomacyEntity(id){
@@ -1139,6 +1163,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getMarSangueEntity,searchMarSangueEntities,
           getMarSangueDiplomacy,getMarSangueDiplomacyIndexes,
           getMarSangueDiplomacyEntity,searchMarSangueDiplomacy,
+          getMarSangueEconomy,getMarSangueEconomyIndexes,
+          getMarSangueEconomyEntity,searchMarSangueEconomy,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,

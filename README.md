@@ -430,3 +430,10 @@ Todos os grupos e episódios individuais continuam como propostas: abissais não
 O Mar de Sangue ganhou **41 entidades narrativas propostas**: quatro modelos de polos diplomáticos (não cidades confirmadas), cinco casas/coalizões, nove representantes (seis reutilizados do ciclo anterior), cinco disputas de sucessão **condicionais**, cinco tratados **não assinados**, seis cenas, quatro missões e três arcos de campanha. A temática é quem pode assinar e cobrar em nome de uma comunidade quando cidades marinhas autônomas precisam cooperar.
 
 Fonte: `data/propostas/mar-sangue-diplomacia-hack.json`. Distribuição: `dist/carcaca/mar-sangue-diplomacy.json`; índices por categoria, águas, povo, bloco e movimento inspirador. API: `getMarSangueDiplomacy`, `getMarSangueDiplomacyEntity`, `searchMarSangueDiplomacy`. Ver [Dossiê de Diplomacia do Mar de Sangue](docs/MAR_SANGUE_DIPLOMACIA_CICLO6.md). Todas as propostas preservam a autonomia tritã/sereia, a natureza não demoníaca dos abissais e a cronologia das campanhas.
+
+
+## Povoamento VII — Economia material do Mar de Sangue
+
+**44 propostas sociais** em oito categorias: cinco polos de atividade, seis ofícios, oito NPCs (seis reaproveitados), sete fluxos hipotéticos, cinco tributos contestáveis, quatro circuitos clandestinos não operacionais, seis cenas e três arcos. O conjunto explora pesca e passagem tributadas, manutenção, trabalho coercitivo, sacrifício, comunicação e rotas de refúgio sem estabelecer volumes ou comércio de fato.
+
+Fonte `data/propostas/mar-sangue-economia-hack.json`. Distribuição `dist/carcaca/mar-sangue-economy.json`; índices `dist/carcaca/mar-sangue-economy-indexes.json`; API `getMarSangueEconomy`, `searchMarSangueEconomy`. Dossiê em [Economia do Mar de Sangue](docs/MAR_SANGUE_ECONOMIA_CICLO7.md). Todas as novas figuras, transações e ocorrências continuam propostas não canônicas.
