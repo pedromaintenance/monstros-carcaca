@@ -1,0 +1,573 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XVI — Eldroth sob Sylara: ocupação e vida cotidiana",
+  "estado": "hipoteses_de_worldbuilding_pendentes_de_revisao",
+  "aprovacao_autoral": false,
+  "aplicar_ao_canon_automaticamente": false,
+  "regiao_id": "regiao:eldroth",
+  "lugar_id": "lugar:eldroth",
+  "fonte_principal": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "passado_referenciado": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+  "atlas_referenciado": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+  "fatos_documentados": [
+    {
+      "pagina": 5,
+      "afirmacao_no_manuscrito": "Lady Sylara governa Eldroth como estrategista da Rainha da Noite e utiliza criaturas para vigiar e perseguir.",
+      "estatuto": "referencia_de_rascunho_nao_promovida"
+    },
+    {
+      "pagina": 17,
+      "afirmacao_no_manuscrito": "Círculos druidas foram rompidos, dispersos, ocultados ou cooptados; parte da população fugiu.",
+      "estatuto": "referencia_de_rascunho_nao_promovida"
+    },
+    {
+      "pagina": 16,
+      "afirmacao_no_manuscrito": "Feéricos não possuem lealdade uniforme à Corte; muitos são dissidentes.",
+      "estatuto": "referencia_de_rascunho_nao_promovida"
+    },
+    {
+      "pagina": 7,
+      "afirmacao_no_manuscrito": "O controle colonial de rotas, tributos e informações varia conforme a região.",
+      "estatuto": "referencia_de_rascunho_nao_promovida"
+    },
+    {
+      "pagina": 9,
+      "afirmacao_no_manuscrito": "As guerras de conquista iniciaram em 875 EC; a tomada específica de Eldroth não foi datada.",
+      "estatuto": "referencia_de_rascunho_nao_promovida"
+    }
+  ],
+  "limites_editoriais": [
+    "Não declarar decreto, imposto, fiscal, tribunal, censo ou órgão da administração de Sylara como fato sem fonte.",
+    "Não inventar data de ascensão de Sylara nem desfecho local da conquista.",
+    "O uso de criaturas na vigilância não torna toda fauna colaboradora voluntária.",
+    "Coação, adesão, sobrevivência e resistência não são posições determinadas por raça.",
+    "Não inventar povoado, rota, família, população ou evento de campanha como fato.",
+    "Ironwood não é parte de Eldroth; Vandar continua associada a Damaris.",
+    "Nenhuma hipótese, vinheta ou escolha autoral é incorporada à cronologia.",
+    "Não alterar fichas de criaturas ou regras Dungeon World."
+  ],
+  "resumo": {
+    "mecanismos": 8,
+    "posicoes_sociais": 6,
+    "modelos_de_regime": 3,
+    "dilemas": 4,
+    "vinhetas": 4,
+    "politicas_confirmadas": 0
+  },
+  "mecanismos": [
+    {
+      "id": "worldbuilding-xvi:mecanismo:agua-licenciada",
+      "nome_editorial": "A nascente que exige licença",
+      "pratica_xv_id": "worldbuilding-xv:pratica:roda-das-nascentes",
+      "dominio": "agua_e_trabalho",
+      "estado": "hipotese_institucional_nao_confirmada",
+      "conversao_proposta": "Mediar a água vira hipótese de autorização revogável por um ocupante.",
+      "consequencia_material_proposta": "Quem limpava a nascente poderia precisar de permissão para beber.",
+      "discurso_legitimador_possivel": "O controle se diz proteção da água.",
+      "pergunta_conflitiva": "Quem pode negar acesso a quem cuidava do recurso?",
+      "agencia_local_possivel": "Pessoas afetadas podem buscar testemunhos, avaliar a necessidade coletiva e contestar falsas pretensões de autoridade sem expor abrigos.",
+      "fontes_contextuais": [
+        {
+          "pagina": 17,
+          "afirmacao_no_manuscrito": "Prática e costumes das comunidades da floresta.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        },
+        {
+          "pagina": 5,
+          "afirmacao_no_manuscrito": "Poder feérico ou contexto de ocupação.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        }
+      ],
+      "politica_sylara_confirmada": false,
+      "ocorreu": false,
+      "orgao_administrativo_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:mecanismo:caca-interditada",
+      "nome_editorial": "A caça que vira delito",
+      "pratica_xv_id": "worldbuilding-xv:pratica:tempo-da-caca",
+      "dominio": "alimento",
+      "estado": "hipotese_institucional_nao_confirmada",
+      "conversao_proposta": "Fechamentos ecológicos podem ser reapresentados como embargos impostos.",
+      "consequencia_material_proposta": "Famílias enfrentariam escassez sem decidir sobre caça.",
+      "discurso_legitimador_possivel": "O embargo se diz conservação.",
+      "pergunta_conflitiva": "A interdição vale mesmo quando não deixa comida?",
+      "agencia_local_possivel": "Pessoas afetadas podem buscar testemunhos, avaliar a necessidade coletiva e contestar falsas pretensões de autoridade sem expor abrigos.",
+      "fontes_contextuais": [
+        {
+          "pagina": 17,
+          "afirmacao_no_manuscrito": "Prática e costumes das comunidades da floresta.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        },
+        {
+          "pagina": 7,
+          "afirmacao_no_manuscrito": "Poder feérico ou contexto de ocupação.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        }
+      ],
+      "politica_sylara_confirmada": false,
+      "ocorreu": false,
+      "orgao_administrativo_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:mecanismo:despejo-sagrado",
+      "nome_editorial": "O sagrado que despeja",
+      "pratica_xv_id": "worldbuilding-xv:pratica:lugar-que-nao-se-edifica",
+      "dominio": "terra_e_moradia",
+      "estado": "hipotese_institucional_nao_confirmada",
+      "conversao_proposta": "Uma proibição cultural de construir pode ser usada para deslocar moradores.",
+      "consequencia_material_proposta": "Pessoas perderiam casa sem assegurar a integridade do lugar.",
+      "discurso_legitimador_possivel": "O despejo se diz reverência antiga.",
+      "pergunta_conflitiva": "Quem comprova o motivo original de um interdito?",
+      "agencia_local_possivel": "Pessoas afetadas podem buscar testemunhos, avaliar a necessidade coletiva e contestar falsas pretensões de autoridade sem expor abrigos.",
+      "fontes_contextuais": [
+        {
+          "pagina": 17,
+          "afirmacao_no_manuscrito": "Prática e costumes das comunidades da floresta.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        },
+        {
+          "pagina": 5,
+          "afirmacao_no_manuscrito": "Poder feérico ou contexto de ocupação.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        }
+      ],
+      "politica_sylara_confirmada": false,
+      "ocorreu": false,
+      "orgao_administrativo_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:mecanismo:trilha-denunciada",
+      "nome_editorial": "A trilha usada como acusação",
+      "pratica_xv_id": "worldbuilding-xv:pratica:memoria-dos-caminhos",
+      "dominio": "informacao",
+      "estado": "hipotese_institucional_nao_confirmada",
+      "conversao_proposta": "Memórias locais de caminhos podem ser exigidas como informações militares.",
+      "consequencia_material_proposta": "Guias podem ser suspeitos apenas porque lembram uma estrada.",
+      "discurso_legitimador_possivel": "O registro se diz segurança.",
+      "pergunta_conflitiva": "A pessoa coagida a falar responde pela perseguição posterior?",
+      "agencia_local_possivel": "Pessoas afetadas podem buscar testemunhos, avaliar a necessidade coletiva e contestar falsas pretensões de autoridade sem expor abrigos.",
+      "fontes_contextuais": [
+        {
+          "pagina": 17,
+          "afirmacao_no_manuscrito": "Prática e costumes das comunidades da floresta.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        },
+        {
+          "pagina": 5,
+          "afirmacao_no_manuscrito": "Poder feérico ou contexto de ocupação.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        }
+      ],
+      "politica_sylara_confirmada": false,
+      "ocorreu": false,
+      "orgao_administrativo_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:mecanismo:hospitalidade-vigiada",
+      "nome_editorial": "O hóspede que precisa ser denunciado",
+      "pratica_xv_id": "worldbuilding-xv:pratica:mesa-da-hospitalidade",
+      "dominio": "refugio",
+      "estado": "hipotese_institucional_nao_confirmada",
+      "conversao_proposta": "Acolhimento tradicional pode ser tratado como dever de informar hóspedes.",
+      "consequencia_material_proposta": "Famílias poderiam recusar abrigo por temer revelar nomes.",
+      "discurso_legitimador_possivel": "A lista se diz proteção de quem mora ali.",
+      "pergunta_conflitiva": "Quem protege o hóspede quando toda hospitalidade é denunciável?",
+      "agencia_local_possivel": "Pessoas afetadas podem buscar testemunhos, avaliar a necessidade coletiva e contestar falsas pretensões de autoridade sem expor abrigos.",
+      "fontes_contextuais": [
+        {
+          "pagina": 16,
+          "afirmacao_no_manuscrito": "Prática e costumes das comunidades da floresta.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        },
+        {
+          "pagina": 17,
+          "afirmacao_no_manuscrito": "Poder feérico ou contexto de ocupação.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        }
+      ],
+      "politica_sylara_confirmada": false,
+      "ocorreu": false,
+      "orgao_administrativo_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:mecanismo:promessa-cobrada",
+      "nome_editorial": "O pacto que vira dívida",
+      "pratica_xv_id": "worldbuilding-xv:pratica:promessa-e-lugar",
+      "dominio": "juramentos",
+      "estado": "hipotese_institucional_nao_confirmada",
+      "conversao_proposta": "Ocupantes podem reclamar para si promessas antigas feitas ao bosque.",
+      "consequencia_material_proposta": "Descendentes seriam cobrados por termos que nunca aceitaram.",
+      "discurso_legitimador_possivel": "A exação se diz cumprimento da tradição.",
+      "pergunta_conflitiva": "Quem pode herdar direitos de um pacto que não assinou?",
+      "agencia_local_possivel": "Pessoas afetadas podem buscar testemunhos, avaliar a necessidade coletiva e contestar falsas pretensões de autoridade sem expor abrigos.",
+      "fontes_contextuais": [
+        {
+          "pagina": 16,
+          "afirmacao_no_manuscrito": "Prática e costumes das comunidades da floresta.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        },
+        {
+          "pagina": 7,
+          "afirmacao_no_manuscrito": "Poder feérico ou contexto de ocupação.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        }
+      ],
+      "politica_sylara_confirmada": false,
+      "ocorreu": false,
+      "orgao_administrativo_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:mecanismo:familia-classificada",
+      "nome_editorial": "O sobrenome como lealdade",
+      "pratica_xv_id": "worldbuilding-xv:pratica:nomes-misturados",
+      "dominio": "parentesco",
+      "estado": "hipotese_institucional_nao_confirmada",
+      "conversao_proposta": "A mistura élfico-feérica pode ser usada para classificar fidelidades.",
+      "consequencia_material_proposta": "Filhos de tradições compartilhadas seriam suspeitos por sua ascendência.",
+      "discurso_legitimador_possivel": "A classificação se diz ordem política.",
+      "pergunta_conflitiva": "Por que origem prova obediência quando escolha individual não foi examinada?",
+      "agencia_local_possivel": "Pessoas afetadas podem buscar testemunhos, avaliar a necessidade coletiva e contestar falsas pretensões de autoridade sem expor abrigos.",
+      "fontes_contextuais": [
+        {
+          "pagina": 17,
+          "afirmacao_no_manuscrito": "Prática e costumes das comunidades da floresta.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        },
+        {
+          "pagina": 16,
+          "afirmacao_no_manuscrito": "Poder feérico ou contexto de ocupação.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        }
+      ],
+      "politica_sylara_confirmada": false,
+      "ocorreu": false,
+      "orgao_administrativo_confirmado": null,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:mecanismo:criatura-informante",
+      "nome_editorial": "A floresta que fala sob coação",
+      "pratica_xv_id": "worldbuilding-xv:pratica:acordos-com-os-silenciosos",
+      "dominio": "ecologia",
+      "estado": "hipotese_institucional_nao_confirmada",
+      "conversao_proposta": "Animais usados para vigiar podem ser apresentados como porta-vozes de um poder.",
+      "consequencia_material_proposta": "Moradores podem confundir sinal ecológico, magia e delação.",
+      "discurso_legitimador_possivel": "A ordem se diz vontade da natureza.",
+      "pergunta_conflitiva": "Como saber se uma criatura consentiu ou foi obrigada?",
+      "agencia_local_possivel": "Pessoas afetadas podem buscar testemunhos, avaliar a necessidade coletiva e contestar falsas pretensões de autoridade sem expor abrigos.",
+      "fontes_contextuais": [
+        {
+          "pagina": 17,
+          "afirmacao_no_manuscrito": "Prática e costumes das comunidades da floresta.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        },
+        {
+          "pagina": 5,
+          "afirmacao_no_manuscrito": "Poder feérico ou contexto de ocupação.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        }
+      ],
+      "politica_sylara_confirmada": false,
+      "ocorreu": false,
+      "orgao_administrativo_confirmado": null,
+      "quantidade_confirmada": null
+    }
+  ],
+  "posicoes_sociais": [
+    {
+      "id": "worldbuilding-xvi:posicao:druida-que-ficou",
+      "nome_editorial": "Druida que permaneceu",
+      "campo_social": "mediacao",
+      "rotina_possivel": "Protege parte da mata mesmo sob vigilância.",
+      "dilema": "Pode negociar com ocupantes por necessidade e ser confundido com cúmplice.",
+      "cautela_editorial": "O registro é um papel social hipotético, não um indivíduo, cargo, etnia, assentamento ou estatística confirmados.",
+      "fonte_contextual": {
+        "pagina": 17,
+        "afirmacao_no_manuscrito": "Dissenso ou prática social de Eldroth e seus aliados.",
+        "estatuto": "referencia_de_rascunho_nao_promovida"
+      },
+      "estado": "posicao_social_exploratoria",
+      "pessoa_especifica_confirmada": false,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:posicao:druida-coagido",
+      "nome_editorial": "Druida sob coação",
+      "campo_social": "coercao",
+      "rotina_possivel": "Entrega conhecimento para tentar salvar parentes.",
+      "dilema": "A revelação pode colocar outras famílias em risco.",
+      "cautela_editorial": "O registro é um papel social hipotético, não um indivíduo, cargo, etnia, assentamento ou estatística confirmados.",
+      "fonte_contextual": {
+        "pagina": 17,
+        "afirmacao_no_manuscrito": "Dissenso ou prática social de Eldroth e seus aliados.",
+        "estatuto": "referencia_de_rascunho_nao_promovida"
+      },
+      "estado": "posicao_social_exploratoria",
+      "pessoa_especifica_confirmada": false,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:posicao:aderente-convicto",
+      "nome_editorial": "Aderente convicto à Corte",
+      "campo_social": "adesao_voluntaria_possivel",
+      "rotina_possivel": "Considera legítimo o poder nobre e espera vantagens.",
+      "dilema": "Sua ascensão pode implicar perda de direitos de outros moradores.",
+      "cautela_editorial": "O registro é um papel social hipotético, não um indivíduo, cargo, etnia, assentamento ou estatística confirmados.",
+      "fonte_contextual": {
+        "pagina": 16,
+        "afirmacao_no_manuscrito": "Dissenso ou prática social de Eldroth e seus aliados.",
+        "estatuto": "referencia_de_rascunho_nao_promovida"
+      },
+      "estado": "posicao_social_exploratoria",
+      "pessoa_especifica_confirmada": false,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:posicao:guarda-reservas",
+      "nome_editorial": "Cuidador de reservas",
+      "campo_social": "alimentacao",
+      "rotina_possivel": "Divide recursos sem saber quando chegará outro pedido.",
+      "dilema": "Uma reserva pode ser reivindicada por famílias e resistência.",
+      "cautela_editorial": "O registro é um papel social hipotético, não um indivíduo, cargo, etnia, assentamento ou estatística confirmados.",
+      "fonte_contextual": {
+        "pagina": 17,
+        "afirmacao_no_manuscrito": "Dissenso ou prática social de Eldroth e seus aliados.",
+        "estatuto": "referencia_de_rascunho_nao_promovida"
+      },
+      "estado": "posicao_social_exploratoria",
+      "pessoa_especifica_confirmada": false,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:posicao:descendente-misto",
+      "nome_editorial": "Descendente de culturas mistas",
+      "campo_social": "parentesco",
+      "rotina_possivel": "Cultiva tradições élficas e feéricas.",
+      "dilema": "Comunidades opostas podem exigir lealdades incompatíveis.",
+      "cautela_editorial": "O registro é um papel social hipotético, não um indivíduo, cargo, etnia, assentamento ou estatística confirmados.",
+      "fonte_contextual": {
+        "pagina": 17,
+        "afirmacao_no_manuscrito": "Dissenso ou prática social de Eldroth e seus aliados.",
+        "estatuto": "referencia_de_rascunho_nao_promovida"
+      },
+      "estado": "posicao_social_exploratoria",
+      "pessoa_especifica_confirmada": false,
+      "quantidade_confirmada": null
+    },
+    {
+      "id": "worldbuilding-xvi:posicao:resistente-civil",
+      "nome_editorial": "Resistente não combatente",
+      "campo_social": "solidariedade",
+      "rotina_possivel": "Guarda histórias, abriga e cura sem integrar emboscadas.",
+      "dilema": "O ocupante pode declarar a solidariedade uma ameaça.",
+      "cautela_editorial": "O registro é um papel social hipotético, não um indivíduo, cargo, etnia, assentamento ou estatística confirmados.",
+      "fonte_contextual": {
+        "pagina": 7,
+        "afirmacao_no_manuscrito": "Dissenso ou prática social de Eldroth e seus aliados.",
+        "estatuto": "referencia_de_rascunho_nao_promovida"
+      },
+      "estado": "posicao_social_exploratoria",
+      "pessoa_especifica_confirmada": false,
+      "quantidade_confirmada": null
+    }
+  ],
+  "modelos_de_regime": [
+    {
+      "id": "worldbuilding-xvi:modelo:intermediarios",
+      "nome_editorial": "Senhorios e intermediários",
+      "estado": "alternativa_nao_adotada",
+      "hipotese_de_regime": "Agentes locais hipotéticos disputam autoridade delegada.",
+      "implicacao_social": "Poder descentralizado permite barganhas e abusos específicos.",
+      "limite_documental": "O manuscrito não confirma órgão, posto, imposto, contrato de governo ou calendário territorial desta alternativa.",
+      "fontes_contextuais": [
+        {
+          "pagina": 5,
+          "afirmacao_no_manuscrito": "Sylara governa Eldroth e vigia por criaturas.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        },
+        {
+          "pagina": 7,
+          "afirmacao_no_manuscrito": "A autoridade da Corte varia conforme a região.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        }
+      ],
+      "orgao_ou_politica_historica_confirmada": false
+    },
+    {
+      "id": "worldbuilding-xvi:modelo:pactos",
+      "nome_editorial": "Pactos reinterpretados como domínio",
+      "estado": "alternativa_nao_adotada",
+      "hipotese_de_regime": "A Corte reclama direitos políticos sobre promessas anteriores à conquista.",
+      "implicacao_social": "Testemunhos e genealogias tornam-se instrumentos de disputa.",
+      "limite_documental": "O manuscrito não confirma órgão, posto, imposto, contrato de governo ou calendário territorial desta alternativa.",
+      "fontes_contextuais": [
+        {
+          "pagina": 5,
+          "afirmacao_no_manuscrito": "Sylara governa Eldroth e vigia por criaturas.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        },
+        {
+          "pagina": 7,
+          "afirmacao_no_manuscrito": "A autoridade da Corte varia conforme a região.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        }
+      ],
+      "orgao_ou_politica_historica_confirmada": false
+    },
+    {
+      "id": "worldbuilding-xvi:modelo:patrulhas",
+      "nome_editorial": "Coerção militar intermitente",
+      "estado": "alternativa_nao_adotada",
+      "hipotese_de_regime": "A presença de patrulhas e criaturas dita um poder sem administração estável.",
+      "implicacao_social": "A insegurança transforma práticas civis sem exigir um arquivo central.",
+      "limite_documental": "O manuscrito não confirma órgão, posto, imposto, contrato de governo ou calendário territorial desta alternativa.",
+      "fontes_contextuais": [
+        {
+          "pagina": 5,
+          "afirmacao_no_manuscrito": "Sylara governa Eldroth e vigia por criaturas.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        },
+        {
+          "pagina": 7,
+          "afirmacao_no_manuscrito": "A autoridade da Corte varia conforme a região.",
+          "estatuto": "referencia_de_rascunho_nao_promovida"
+        }
+      ],
+      "orgao_ou_politica_historica_confirmada": false
+    }
+  ],
+  "dilemas": [
+    {
+      "id": "worldbuilding-xvi:dilema:druida-negocia",
+      "nome_editorial": "Salvar um bosque, entregar uma família",
+      "tema": "coacao_e_reparacao",
+      "situacao_hipotetica": "Um druida aceita revelar uma nascente para impedir a destruição de outra área.",
+      "custos_potenciais": "Famílias não consultadas podem perder sua água.",
+      "pergunta_sem_resposta_certa": "Como julgar quem tomou decisão sob ameaça?",
+      "mecanismo_id": "worldbuilding-xvi:mecanismo:agua-licenciada",
+      "posicao_id": "worldbuilding-xvi:posicao:druida-coagido",
+      "estado": "dilema_ficcional_nao_ocorrido",
+      "ocorreu": false,
+      "efeito_na_cronologia": false
+    },
+    {
+      "id": "worldbuilding-xvi:dilema:despensa-vazia",
+      "nome_editorial": "A reserva não alimenta todos",
+      "tema": "fome_e_solidariedade",
+      "situacao_hipotetica": "Famílias e uma célula resistente pedem a mesma reserva.",
+      "custos_potenciais": "Uma distribuição possível deixa alguém sem comida.",
+      "pergunta_sem_resposta_certa": "A sobrevivência civil tem prioridade sobre a guerrilha?",
+      "mecanismo_id": "worldbuilding-xvi:mecanismo:caca-interditada",
+      "posicao_id": "worldbuilding-xvi:posicao:guarda-reservas",
+      "estado": "dilema_ficcional_nao_ocorrido",
+      "ocorreu": false,
+      "efeito_na_cronologia": false
+    },
+    {
+      "id": "worldbuilding-xvi:dilema:hospede-marcado",
+      "nome_editorial": "O nome que entrega a casa",
+      "tema": "asilo_e_pertencimento",
+      "situacao_hipotetica": "Uma casa abriga alguém cuja ascendência desperta desconfiança.",
+      "custos_potenciais": "Revelar o hóspede pode pôr outros parentes em risco.",
+      "pergunta_sem_resposta_certa": "O direito de receber pessoas exige identificação pública?",
+      "mecanismo_id": "worldbuilding-xvi:mecanismo:hospitalidade-vigiada",
+      "posicao_id": "worldbuilding-xvi:posicao:descendente-misto",
+      "estado": "dilema_ficcional_nao_ocorrido",
+      "ocorreu": false,
+      "efeito_na_cronologia": false
+    },
+    {
+      "id": "worldbuilding-xvi:dilema:ave-culpada",
+      "nome_editorial": "Quem falou pela floresta?",
+      "tema": "ecologia_e_testemunho",
+      "situacao_hipotetica": "Um sinal de ave é interpretado como ordem e como aviso ao mesmo tempo.",
+      "custos_potenciais": "O medo gera acusação contra pessoas e animais.",
+      "pergunta_sem_resposta_certa": "Que prova permite falar pela vontade de uma criatura?",
+      "mecanismo_id": "worldbuilding-xvi:mecanismo:criatura-informante",
+      "posicao_id": "worldbuilding-xvi:posicao:druida-que-ficou",
+      "estado": "dilema_ficcional_nao_ocorrido",
+      "ocorreu": false,
+      "efeito_na_cronologia": false
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "worldbuilding-xvi:vinheta:agua-da-manha",
+      "nome_editorial": "A água da manhã",
+      "cena_condicional": "Alguém chega à nascente e vê que agora lhe pedem o nome antes de encher o recipiente.",
+      "textura_cotidiana": "O trabalho cotidiano de cuidar do leito é atravessado pelo medo.",
+      "mecanismo_id": "worldbuilding-xvi:mecanismo:agua-licenciada",
+      "estado": "vinheta_literaria_hipotetica",
+      "ocorreu": false,
+      "novo_lugar_confirmado": false,
+      "personagem_canonico_novo": false
+    },
+    {
+      "id": "worldbuilding-xvi:vinheta:almoco-curto",
+      "nome_editorial": "O almoço breve",
+      "cena_condicional": "Uma pessoa divide a última porção entre familiares e gente que pede abrigo.",
+      "textura_cotidiana": "A disputa não precisa de batalha para revelar a política da fome.",
+      "mecanismo_id": "worldbuilding-xvi:mecanismo:caca-interditada",
+      "estado": "vinheta_literaria_hipotetica",
+      "ocorreu": false,
+      "novo_lugar_confirmado": false,
+      "personagem_canonico_novo": false
+    },
+    {
+      "id": "worldbuilding-xvi:vinheta:palavra-da-avo",
+      "nome_editorial": "A palavra da avó",
+      "cena_condicional": "Um nobre reivindica um juramento que parentes vivos não conseguem reconstituir.",
+      "textura_cotidiana": "Quem recorda as condições antigas não controla o poder de cobrá-las.",
+      "mecanismo_id": "worldbuilding-xvi:mecanismo:promessa-cobrada",
+      "estado": "vinheta_literaria_hipotetica",
+      "ocorreu": false,
+      "novo_lugar_confirmado": false,
+      "personagem_canonico_novo": false
+    },
+    {
+      "id": "worldbuilding-xvi:vinheta:som-no-escuro",
+      "nome_editorial": "Um som nas árvores",
+      "cena_condicional": "Vizinhos escutam uma ave e discordam sobre se foi aviso ou vigilância.",
+      "textura_cotidiana": "A interpretação diverge antes mesmo de alguém saber o que houve.",
+      "mecanismo_id": "worldbuilding-xvi:mecanismo:criatura-informante",
+      "estado": "vinheta_literaria_hipotetica",
+      "ocorreu": false,
+      "novo_lugar_confirmado": false,
+      "personagem_canonico_novo": false
+    }
+  ],
+  "decisoes_para_autor": [
+    {
+      "id": "worldbuilding-xvi:questao:governanca",
+      "pergunta": "Sylara governa por intermediários, pactos reinterpretados, patrulhas ou arranjos distintos?",
+      "estado": "pendente"
+    },
+    {
+      "id": "worldbuilding-xvi:questao:alimento",
+      "pergunta": "Qual processo material concreto de extração e distribuição a Corte realmente impõe em Eldroth?",
+      "estado": "pendente"
+    },
+    {
+      "id": "worldbuilding-xvi:questao:coacao",
+      "pergunta": "Que critérios diferenciam coação, sobrevivência, oportunismo e adesão voluntária?",
+      "estado": "pendente"
+    },
+    {
+      "id": "worldbuilding-xvi:questao:registro",
+      "pergunta": "A vigilância requer registros escritos ou se apoia principalmente no medo e na magia?",
+      "estado": "pendente"
+    },
+    {
+      "id": "worldbuilding-xvi:questao:floresta",
+      "pergunta": "Como distinguir criatura coagida, colaboradora e indiferente sem criminalizar a fauna?",
+      "estado": "pendente"
+    }
+  ]
+}
