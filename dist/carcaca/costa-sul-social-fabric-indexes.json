@@ -1,0 +1,284 @@
+{
+  "by_categoria": {
+    "cenas": [
+      "costa-sul:cena:bencao",
+      "costa-sul:cena:contas",
+      "costa-sul:cena:mapa",
+      "costa-sul:cena:reparo",
+      "costa-sul:cena:sino"
+    ],
+    "circulacoes": [
+      "costa-sul:circulacao:ferragens",
+      "costa-sul:circulacao:memorias",
+      "costa-sul:circulacao:noticias-mar",
+      "costa-sul:circulacao:sementes"
+    ],
+    "espacos": [
+      "costa-sul:espaco:altares",
+      "costa-sul:espaco:contas-agua",
+      "costa-sul:espaco:cordas",
+      "costa-sul:espaco:pedra-molhada",
+      "costa-sul:espaco:sino",
+      "costa-sul:espaco:varal"
+    ],
+    "pessoas": [
+      "costa-sul:pessoa:antera",
+      "costa-sul:pessoa:corima",
+      "costa-sul:pessoa:dalia",
+      "costa-sul:pessoa:gema",
+      "costa-sul:pessoa:mara",
+      "costa-sul:pessoa:orun",
+      "costa-sul:pessoa:saha",
+      "costa-sul:pessoa:salma"
+    ],
+    "praticas": [
+      "costa-sul:pratica:historia",
+      "costa-sul:pratica:lacre",
+      "costa-sul:pratica:tigela",
+      "costa-sul:pratica:turno"
+    ],
+    "redes": [
+      "costa-sul:rede:casco",
+      "costa-sul:rede:terceira",
+      "costa-sul:rede:volta"
+    ],
+    "tramas": [
+      "costa-sul:trama:boato",
+      "costa-sul:trama:mapa",
+      "costa-sul:trama:medida"
+    ]
+  },
+  "by_movimento_hack": {
+    "movimento-classe:paragrafo-2056": [
+      "costa-sul:cena:bencao",
+      "costa-sul:espaco:altares"
+    ],
+    "movimento-classe:paragrafo-2069": [
+      "costa-sul:cena:contas",
+      "costa-sul:espaco:pedra-molhada",
+      "costa-sul:pessoa:dalia",
+      "costa-sul:pratica:turno",
+      "costa-sul:trama:medida"
+    ],
+    "movimento-classe:paragrafo-2760": [
+      "costa-sul:circulacao:ferragens"
+    ],
+    "movimento-classe:paragrafo-2773": [
+      "costa-sul:cena:reparo",
+      "costa-sul:pratica:lacre"
+    ],
+    "movimento-classe:paragrafo-2782": [
+      "costa-sul:cena:reparo",
+      "costa-sul:espaco:cordas",
+      "costa-sul:pessoa:antera",
+      "costa-sul:pessoa:salma",
+      "costa-sul:pratica:lacre"
+    ],
+    "movimento-classe:paragrafo-2797": [
+      "costa-sul:cena:sino",
+      "costa-sul:circulacao:noticias-mar",
+      "costa-sul:espaco:sino",
+      "costa-sul:pessoa:orun",
+      "costa-sul:trama:boato"
+    ],
+    "movimento-classe:paragrafo-2800": [
+      "costa-sul:espaco:sino",
+      "costa-sul:pessoa:orun"
+    ],
+    "movimento-classe:paragrafo-2810": [
+      "costa-sul:espaco:cordas",
+      "costa-sul:pessoa:salma"
+    ],
+    "movimento-classe:paragrafo-2817": [
+      "costa-sul:espaco:contas-agua",
+      "costa-sul:pessoa:antera"
+    ],
+    "movimento-povo:paragrafo-829": [
+      "costa-sul:cena:contas",
+      "costa-sul:circulacao:ferragens",
+      "costa-sul:circulacao:sementes",
+      "costa-sul:espaco:contas-agua",
+      "costa-sul:espaco:pedra-molhada",
+      "costa-sul:pessoa:dalia",
+      "costa-sul:pessoa:gema",
+      "costa-sul:pratica:turno",
+      "costa-sul:trama:medida"
+    ],
+    "movimento-povo:paragrafo-830": [
+      "costa-sul:cena:bencao",
+      "costa-sul:espaco:altares"
+    ],
+    "movimento-povo:paragrafo-831": [
+      "costa-sul:cena:sino",
+      "costa-sul:espaco:varal",
+      "costa-sul:pessoa:gema",
+      "costa-sul:pessoa:mara",
+      "costa-sul:pratica:tigela"
+    ],
+    "movimento-povo:paragrafo-832": [
+      "costa-sul:espaco:varal"
+    ],
+    "movimento-povo:paragrafo-834": [
+      "costa-sul:circulacao:sementes"
+    ],
+    "movimento-povo:paragrafo-897": [
+      "costa-sul:cena:mapa",
+      "costa-sul:circulacao:memorias",
+      "costa-sul:pessoa:corima",
+      "costa-sul:pratica:historia",
+      "costa-sul:rede:casco",
+      "costa-sul:trama:mapa"
+    ],
+    "movimento-povo:paragrafo-898": [
+      "costa-sul:pessoa:corima",
+      "costa-sul:pessoa:mara",
+      "costa-sul:pratica:tigela",
+      "costa-sul:rede:terceira"
+    ],
+    "movimento-povo:paragrafo-904": [
+      "costa-sul:rede:casco"
+    ],
+    "movimento-povo:paragrafo-906": [
+      "costa-sul:cena:mapa",
+      "costa-sul:circulacao:memorias",
+      "costa-sul:pessoa:saha",
+      "costa-sul:pratica:historia",
+      "costa-sul:rede:terceira",
+      "costa-sul:rede:volta",
+      "costa-sul:trama:mapa"
+    ],
+    "movimento-povo:paragrafo-908": [
+      "costa-sul:pessoa:saha",
+      "costa-sul:rede:volta"
+    ],
+    "movimento-povo:paragrafo-921": [
+      "costa-sul:circulacao:noticias-mar",
+      "costa-sul:trama:boato"
+    ]
+  },
+  "by_referencia": {
+    "caatinga:comunidade:baixio-sementes": [
+      "costa-sul:circulacao:sementes"
+    ],
+    "caatinga:comunidade:feira-ferragens": [
+      "costa-sul:circulacao:ferragens"
+    ],
+    "fronteira:acordo:lacres-justos": [
+      "costa-sul:pratica:lacre"
+    ],
+    "fronteira:acordo:peca-e-destino": [
+      "costa-sul:cena:reparo"
+    ],
+    "fronteira:acordo:primeira-tigela": [
+      "costa-sul:pratica:tigela"
+    ],
+    "fronteira:encontro:escada-de-corda": [
+      "costa-sul:espaco:cordas",
+      "costa-sul:pessoa:salma"
+    ],
+    "fronteira:encontro:roda-das-historias": [
+      "costa-sul:rede:terceira"
+    ],
+    "fronteira:encontro:varanda-da-agua": [
+      "costa-sul:espaco:contas-agua"
+    ],
+    "fronteira:pessoa:antera": [
+      "costa-sul:pessoa:antera"
+    ],
+    "fronteira:pessoa:gema": [
+      "costa-sul:pessoa:gema"
+    ],
+    "fronteira:pessoa:mara": [
+      "costa-sul:espaco:varal",
+      "costa-sul:pessoa:mara"
+    ],
+    "fronteira:pessoa:mestre-casco": [
+      "costa-sul:pessoa:corima"
+    ],
+    "fronteira:pessoa:saha": [
+      "costa-sul:pessoa:saha",
+      "costa-sul:rede:volta"
+    ],
+    "lugar:cavernas-kuo-toa": [
+      "costa-sul:cena:sino",
+      "costa-sul:circulacao:noticias-mar",
+      "costa-sul:espaco:sino",
+      "costa-sul:pessoa:orun",
+      "costa-sul:trama:boato"
+    ],
+    "lugar:ilhas-costa-sul": [
+      "costa-sul:cena:mapa",
+      "costa-sul:circulacao:memorias",
+      "costa-sul:pessoa:corima",
+      "costa-sul:pessoa:saha",
+      "costa-sul:pratica:historia",
+      "costa-sul:rede:casco",
+      "costa-sul:rede:terceira",
+      "costa-sul:rede:volta",
+      "costa-sul:trama:mapa"
+    ],
+    "lugar:portomonte": [
+      "costa-sul:cena:bencao",
+      "costa-sul:cena:contas",
+      "costa-sul:cena:sino",
+      "costa-sul:circulacao:ferragens",
+      "costa-sul:circulacao:memorias",
+      "costa-sul:circulacao:sementes",
+      "costa-sul:espaco:altares",
+      "costa-sul:espaco:contas-agua",
+      "costa-sul:espaco:cordas",
+      "costa-sul:espaco:pedra-molhada",
+      "costa-sul:espaco:sino",
+      "costa-sul:espaco:varal",
+      "costa-sul:pessoa:dalia",
+      "costa-sul:pessoa:gema",
+      "costa-sul:pessoa:orun",
+      "costa-sul:pessoa:salma",
+      "costa-sul:pratica:turno",
+      "costa-sul:trama:boato",
+      "costa-sul:trama:medida"
+    ],
+    "povoamento-proposto:farol-das-memorias": [
+      "costa-sul:rede:casco"
+    ],
+    "povoamento-proposto:hortas-do-sal": [
+      "costa-sul:espaco:pedra-molhada",
+      "costa-sul:pessoa:dalia"
+    ],
+    "regiao:costa-sul": [
+      "costa-sul:circulacao:noticias-mar"
+    ]
+  },
+  "by_escopo": {
+    "ilhas_nao_individualizadas": [
+      "costa-sul:rede:casco",
+      "costa-sul:rede:terceira",
+      "costa-sul:rede:volta"
+    ],
+    "portomonte": [
+      "costa-sul:espaco:altares",
+      "costa-sul:espaco:contas-agua",
+      "costa-sul:espaco:cordas",
+      "costa-sul:espaco:pedra-molhada",
+      "costa-sul:espaco:sino",
+      "costa-sul:espaco:varal"
+    ]
+  },
+  "by_local_de_cena": {
+    "costa-sul:espaco:altares": [
+      "costa-sul:cena:bencao"
+    ],
+    "costa-sul:espaco:contas-agua": [
+      "costa-sul:cena:contas"
+    ],
+    "costa-sul:espaco:cordas": [
+      "costa-sul:cena:reparo"
+    ],
+    "costa-sul:espaco:sino": [
+      "costa-sul:cena:sino"
+    ],
+    "costa-sul:rede:volta": [
+      "costa-sul:cena:mapa"
+    ]
+  }
+}
