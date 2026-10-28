@@ -60,6 +60,30 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getMarSangueDiplomacy(){return byKey("mar_sangue_diplomacy");}
+  async function getMarSangueDiplomacyIndexes(){return byKey("mar_sangue_diplomacy_indexes");}
+  async function getMarSangueDiplomacyEntity(id){
+    if(typeof id!=="string"||!id.startsWith("diplomacia-mar:"))return null;
+    const d=await getMarSangueDiplomacy();
+    for(const categoria of ["polos","casas","pessoas","disputas","tratados","cenas","missoes","arcos"]){
+      const result=d[categoria].find(x=>x.id===id);
+      if(result)return {...result,categoria};
+    }
+    return null;
+  }
+  async function searchMarSangueDiplomacy({categoria,povo,bloco,aguas,movimentoHack,referencia,query}={}){
+    const d=await getMarSangueDiplomacy();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const list=["polos","casas","pessoas","disputas","tratados","cenas","missoes","arcos"]
+      .flatMap(k=>d[k].map(x=>({...x,categoria:k})));
+    return list.filter(x=>
+      (!categoria||x.categoria===categoria)&&
+      (!povo||x.povo===povo)&&(!bloco||x.bloco===bloco)&&
+      (!aguas||x.aguas===aguas)&&
+      (!movimentoHack||(x.movimentos_inspiradores??[]).includes(movimentoHack))&&
+      (!referencia||(x.referencias??[]).includes(referencia))&&
+      (!query||norm([x.nome,x.contexto_proposto,x.vida_ordinaria,x.questao_politica].join(" ")).includes(norm(query))));
+  }
   async function getMarSangueSocialEcology(){return byKey("mar_sangue_social_ecology");}
   async function getMarSangueSocialEcologyIndexes(){return byKey("mar_sangue_social_ecology_indexes");}
   async function getMarSangueEntity(id){
@@ -1113,6 +1137,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulEntity,searchCostaSulEntities,
           getMarSangueSocialEcology,getMarSangueSocialEcologyIndexes,
           getMarSangueEntity,searchMarSangueEntities,
+          getMarSangueDiplomacy,getMarSangueDiplomacyIndexes,
+          getMarSangueDiplomacyEntity,searchMarSangueDiplomacy,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,

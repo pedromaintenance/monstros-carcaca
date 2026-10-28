@@ -423,3 +423,10 @@ A água de Deméter está documentada para lavouras e não implica potabilidade 
 Distribuição: `dist/carcaca/mar-sangue-social-ecology.json` e `dist/carcaca/mar-sangue-social-ecology-indexes.json`. API `getMarSangueSocialEcology`, `getMarSangueEntity` e `searchMarSangueEntities`. Dossiê [Mar de Sangue — Ecologia Política](docs/MAR_SANGUE_ECOLOGIA_POLITICA_CICLO5.md).
 
 Todos os grupos e episódios individuais continuam como propostas: abissais não são demônios do Abismo, os povos marinhos não possuem governo unificado e o limite entre mares é móvel.
+
+
+## Povoamento VI — Diplomacia submersa e sucessões
+
+O Mar de Sangue ganhou **41 entidades narrativas propostas**: quatro modelos de polos diplomáticos (não cidades confirmadas), cinco casas/coalizões, nove representantes (seis reutilizados do ciclo anterior), cinco disputas de sucessão **condicionais**, cinco tratados **não assinados**, seis cenas, quatro missões e três arcos de campanha. A temática é quem pode assinar e cobrar em nome de uma comunidade quando cidades marinhas autônomas precisam cooperar.
+
+Fonte: `data/propostas/mar-sangue-diplomacia-hack.json`. Distribuição: `dist/carcaca/mar-sangue-diplomacy.json`; índices por categoria, águas, povo, bloco e movimento inspirador. API: `getMarSangueDiplomacy`, `getMarSangueDiplomacyEntity`, `searchMarSangueDiplomacy`. Ver [Dossiê de Diplomacia do Mar de Sangue](docs/MAR_SANGUE_DIPLOMACIA_CICLO6.md). Todas as propostas preservam a autonomia tritã/sereia, a natureza não demoníaca dos abissais e a cronologia das campanhas.

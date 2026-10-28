@@ -2491,6 +2491,95 @@ def validar_ecologia_politica_mar_sangue():
             "Guardas de lore de origem e política marinha ausentes.")
     print("Mar de Sangue: 36 propostas, 7 grupos, 8 NPCs; sem cidades inventadas nem alteração canônica.")
 
+ 
+def validar_diplomacia_mar_sangue():
+    """Diplomacia submarina jogável com continuidade e sucessões não ocorridas."""
+    d=load("data/propostas/mar-sangue-diplomacia-hack.json")
+    expected={"polos":4,"casas":5,"pessoas":9,"disputas":5,
+              "tratados":5,"cenas":6,"missoes":4,"arcos":3}
+    require(d["regiao_id"]=="regiao:costa-sul" and
+            d["estado"]=="propostas_narrativas_nao_canonicas" and
+            d["aprovacao_autoral"] is False and
+            d["efeito_automatico_no_canon"] is False,
+            "Diplomacia marinha foi homologada indevidamente.")
+    require(d["contagens"]==expected
+            and all(len(d[k])==n for k,n in expected.items()),
+            "Categorias da diplomacia submarina incompletas.")
+    all_rows=[row for category in expected for row in d[category]]
+    ids={row["id"] for row in all_rows}
+    require(len(all_rows)==len(ids)==41
+            and all(row["id"].startswith("diplomacia-mar:")
+                    and row["estado"]=="proposta_nao_canonica" for row in all_rows),
+            "IDs duplicados ou categoria canonizada na diplomacia.")
+    povo_moves=load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]
+    move_ids={x["id"] for x in povo_moves}
+    places={x["id"] for x in load("data/lugares_carcaca.json")["lugares"]}
+    coastal=load("data/propostas/portomonte-ilhas-costa-sul-hack.json")
+    coast_ids={x["id"] for category in ("espacos","redes","pessoas","praticas",
+                                        "circulacoes","cenas","tramas")
+              for x in coastal[category]}
+    frontier=load("data/propostas/fronteira-caatinga-costa-sul-hack.json")
+    frontier_ids={x["id"] for category in ("encontros","pessoas","acordos",
+                                           "fluxos","cenas","tramas")
+                  for x in frontier[category]}
+    marine=load("data/propostas/mar-sangue-ecologia-politica-hack.json")
+    marine_ids={x["id"] for category in ("zonas","coletivos","pessoas","pactos",
+                                         "fenomenos","cenas","tramas")
+                for x in marine[category]}
+    allowed=ids|places|coast_ids|frontier_ids|marine_ids|{"regiao:costa-sul"}
+    people={x["id"] for x in d["pessoas"]}
+    scenes={x["id"] for x in d["cenas"]}
+    require(set(d["continuidades"]) <= allowed,
+            "Pessoas de origem da diplomacia não existem no atlas proposto.")
+    for x in all_rows:
+        require(x["nome"].strip() and x["vida_ordinaria"].strip()
+                and x["questao_politica"].strip(),
+                "Dilema diplomático sem cotidiano e tensão.")
+        require(1<=len(x["movimentos_inspiradores"])<=4
+                and all(m in move_ids for m in x["movimentos_inspiradores"]),
+                "Movimento cultural fora do Hack.")
+        require(all(r in allowed for r in x["referencias"]),
+                "Referência sem registro em diplomacia: "+x["id"])
+    require(all(p["cidade_confirmada"] is False and
+                p["representacao"] and p["aguas"] in ("azuis","vermelhas")
+                for p in d["polos"]),
+            "Polo hipotético foi tratado como cidade real.")
+    require(all(c["entidade_reconhecida"] is False for c in d["casas"]),
+            "Casa política proposta foi promovida a instituição canônica.")
+    people_ref={p["reutiliza"] for p in d["pessoas"] if p["reutiliza"]}
+    require(len(people_ref)==6 and people_ref<=marine_ids
+            and sum(p["reutiliza"] is not None for p in d["pessoas"])==6,
+            "Diplomacia deve dar continuidade a seis NPCs já propostos.")
+    for claim in d["disputas"]:
+        require(claim["status_evento"]=="nao_ocorrido" and
+                len(claim["gatilho_hipotetico"])>=15
+                and all(p in people for p in claim["candidatos"]),
+                "Sucessão contingente foi declarada fato ou possui candidato órfão.")
+    for treaty in d["tratados"]:
+        require(treaty["vigente"] is False
+                and len(treaty["signatarios_propostos"])>=2
+                and all(p in people for p in treaty["signatarios_propostos"])
+                and treaty["custo_de_adesao"] and treaty["condicao_de_ruptura"],
+                "Tratado sem consentimento, custo, rompimento ou signatários.")
+    for scene in d["cenas"]:
+        require(len(scene["opcoes"])>=3
+                and all(p in people for p in scene["elenco"])
+                and scene["ligacao_crise"] in {s["id"] for s in d["disputas"]},
+                "Cena não está ligada à disputa ou não tem decisões significativas.")
+        if scene.get("convidado_preexistente"):
+            require(scene["convidado_preexistente"] in coast_ids,
+                    "Visitante costeiro não foi localizado em Portomonte.")
+    for mission in d["missoes"]:
+        require(len(mission["entregavel_narrativo"])>=18
+                and mission["escolha"],"Missão sem objetivo e dilema jogáveis.")
+    require(all(len(a["cenas"])>=2 and all(c in scenes for c in a["cenas"])
+                for a in d["arcos"]),"Arco diplomático não está apoiado em cenas.")
+    facts=" ".join(d["fatos_documentados"]+d["limites"]).lower()
+    require("centralizado" in facts and "demônios" in facts
+            and "descendentes" in facts,
+            "Foram removidas ressalvas de soberania e cosmologia.")
+    print("Diplomacia marinha: 41 propostas, 4 polos, 5 sucessões contingentes, 5 tratados não assinados.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2608,6 +2697,7 @@ def main():
     validar_fronteira_caatinga_costa_sul()
     validar_povoamento_costa_sul()
     validar_ecologia_politica_mar_sangue()
+    validar_diplomacia_mar_sangue()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

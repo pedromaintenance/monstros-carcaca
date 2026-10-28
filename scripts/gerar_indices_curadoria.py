@@ -250,6 +250,31 @@ def build():
     fronteira=load("data/propostas/fronteira-caatinga-costa-sul-hack.json")
     costa_sul=load("data/propostas/portomonte-ilhas-costa-sul-hack.json")
     mar_sangue=load("data/propostas/mar-sangue-ecologia-politica-hack.json")
+    diplomacia_mar=load("data/propostas/mar-sangue-diplomacia-hack.json")
+    categorias_diplomacia=("polos","casas","pessoas","disputas","tratados","cenas","missoes","arcos")
+    entidades_diplomacia=[
+       {**item,"categoria":categoria}
+       for categoria in categorias_diplomacia for item in diplomacia_mar[categoria]
+    ]
+    def indexar_diplomacia(chave):
+        mapping=defaultdict(set)
+        for item in entidades_diplomacia:
+            raw=item.get(chave,[])
+            items=raw if isinstance(raw,list) else [raw]
+            for key in items:
+                if key: mapping[str(key)].add(item["id"])
+        return {k:sorted(v) for k,v in sorted(mapping.items())}
+    indices_diplomacia={
+        "by_categoria":indexar_diplomacia("categoria"),
+        "by_aguas":indexar_diplomacia("aguas"),
+        "by_povo":indexar_diplomacia("povo"),
+        "by_bloco":indexar_diplomacia("bloco"),
+        "by_movimento_hack":indexar_diplomacia("movimentos_inspiradores"),
+        "by_referencia":indexar_diplomacia("referencias"),
+        "by_personagem_reutilizado":indexar_diplomacia("reutiliza")
+    }
+    if len(entidades_diplomacia)!=41 or len(indices_diplomacia["by_categoria"])!=8:
+        raise ValueError("Diplomacia marinha exige 41 propostas em oito categorias")
     tipos_mar=("zonas","coletivos","pessoas","pactos","fenomenos","cenas","tramas")
     entidades_mar=[
        {**entry,"categoria":tipo}
@@ -657,6 +682,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "mar_sangue_diplomacy":"mar-sangue-diplomacy.json",
+        "mar_sangue_diplomacy_indexes":"mar-sangue-diplomacy-indexes.json",
         "mar_sangue_social_ecology":"mar-sangue-social-ecology.json",
         "mar_sangue_social_ecology_indexes":"mar-sangue-social-ecology-indexes.json",
         "costa_sul_social_fabric":"costa-sul-social-fabric.json",
@@ -767,6 +794,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_entidades_diplomacia_mar_propostas":len(entidades_diplomacia),
+        "total_polos_diplomacia_mar_propostos":len(diplomacia_mar["polos"]),
+        "total_tratados_diplomacia_mar_propostos":len(diplomacia_mar["tratados"]),
+        "total_disputas_diplomacia_mar_propostas":len(diplomacia_mar["disputas"]),
         "total_entidades_mar_sangue_propostas":len(entidades_mar),
         "total_coletivos_mar_sangue_propostos":len(mar_sangue["coletivos"]),
         "total_pessoas_mar_sangue_propostas":len(mar_sangue["pessoas"]),
@@ -867,6 +898,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["mar_sangue_diplomacy"]:diplomacia_mar,
+           files["mar_sangue_diplomacy_indexes"]:indices_diplomacia,
            files["mar_sangue_social_ecology"]:mar_sangue,
            files["mar_sangue_social_ecology_indexes"]:indice_mar_sangue,
            files["costa_sul_social_fabric"]:costa_sul,
