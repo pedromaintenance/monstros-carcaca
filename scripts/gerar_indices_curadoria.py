@@ -256,6 +256,24 @@ def build():
     rio_garganta=load("data/propostas/garganta-rio-ancestral-social-hack.json")
     thargrid=load("data/propostas/thargrid-resistencia-cotidiano-hack.json")
     floresta=load("data/propostas/ironwood-eldroth-resistencia-hack.json")
+    atlas_cultural_xiv=load("data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json")
+    eixos_xiv=atlas_cultural_xiv["eixos"]
+    if len(eixos_xiv)!=14:
+        raise ValueError("Worldbuilding XIV exige 14 eixos históricos-culturais.")
+    def indexar_xiv(extrair):
+        grupos=defaultdict(set)
+        for eixo in eixos_xiv:
+            for item in extrair(eixo):
+                if item is not None and item!="":
+                    grupos[str(item)].add(eixo["id"])
+        return {k:sorted(v) for k,v in sorted(grupos.items())}
+    indices_culturais_xiv={
+        "by_area":indexar_xiv(lambda x:[x["area_id"]]),
+        "by_efeito":indexar_xiv(lambda x:x["efeitos_na_ambientacao"]),
+        "by_fonte_factual":indexar_xiv(lambda x:[y["fonte"] for y in x["fatos_textuais"]]),
+        "by_fonte_manuscrito":indexar_xiv(lambda x:[y["fonte"] for y in x["camada_manuscrito"]]),
+        "by_pagina_manuscrito":indexar_xiv(lambda x:[str(p) for y in x["camada_manuscrito"] for p in y["paginas"]])
+    }
     ecologia_xii=load("data/propostas/eldroth-ecologia-monstruosa-dw.json")
     fichas_xiii=load("data/propostas/eldroth-fichas-dw-ciclo13.json")
     registros_xiii=fichas_xiii["fichas"]
@@ -863,6 +881,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "eldroth_cultural_atlas":"eldroth-cultural-atlas.json",
+        "eldroth_cultural_atlas_indexes":"eldroth-cultural-atlas-indexes.json",
         "eldroth_dw_statblocks":"eldroth-dw-statblocks.json",
         "eldroth_dw_statblock_indexes":"eldroth-dw-statblock-indexes.json",
         "eldroth_monster_ecology":"eldroth-monster-ecology.json",
@@ -989,6 +1009,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_areas_worldbuilding_xiv":len(atlas_cultural_xiv["areas"]),
+        "total_marcos_worldbuilding_xiv":len(atlas_cultural_xiv["marcos"]),
+        "total_eixos_worldbuilding_xiv":len(eixos_xiv),
+        "total_alternativas_worldbuilding_xiv":sum(len(x["decisoes_autorais_pendentes"]) for x in eixos_xiv),
         "total_fichas_dw_eldroth_xiii_propostas":len(registros_xiii),
         "total_fichas_dw_eldroth_xiii_numericas":sum(f["modo"]=="estatizado" for f in registros_xiii),
         "total_fichas_dw_eldroth_xiii_sem_stats":sum(f["modo"]=="sem_estatisticas" for f in registros_xiii),
@@ -1121,6 +1145,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["eldroth_cultural_atlas"]:atlas_cultural_xiv,
+           files["eldroth_cultural_atlas_indexes"]:indices_culturais_xiv,
            files["eldroth_dw_statblocks"]:fichas_xiii,
            files["eldroth_dw_statblock_indexes"]:indexes_fichas_xiii,
            files["eldroth_monster_ecology"]:ecologia_xii,
