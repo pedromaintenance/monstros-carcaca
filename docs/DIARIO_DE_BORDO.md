@@ -425,3 +425,13 @@ Próximos temas: **XV** Eldroth pré-conquista, **XVI** sociedade sob a ocupaç�
 O texto registra comunidades élficas antigas, círculos druidas que mediavam disputas, períodos de caça/coleta, lugares sagrados e pactos com espíritos; também registra fadas refugiadas desde **501 EC**, convivência com comunidades locais e lordes que chegaram oficialmente em **666 EC**. A fonte **não** dá nomes de aldeias, famílias ou tribunais precursores nem a data de ascensão de Sylara. A mediação entre comunidades demonstra que o passado não precisa ser idealizado como ausência de conflitos.
 
 Entregas: `docs/ELDROTH_PRECONQUISTA_CICLO15.md` e `data/worldbuilding/eldroth-preconquista-ciclo15.json`: 4 fases de estudo, 8 práticas candidatas, 4 pactos não assinados, 4 ciclos materiais não quantificados, 4 vinhetas ficcionais e 24 alternativas não adotadas. Cinco questões de revisão autoral permanecem pendentes. Integração técnica por schema, validador, gerador determinístico, API e testes. Próximo foco: ciclo XVI, a sociedade ocupada por Sylara.
+
+## 2026-10-28 · Ciclo XVI — Eldroth sob o domínio de Sylara Nightwhisper
+
+Cruzamento do manuscrito do Hack (pp. 5, 7, 9, 16 e 17) com os ciclos XIV e XV, mantendo **worldbuilding social e institucional** como prioridade em lugar de novos monstros e combates.
+
+A ocupação da floresta e o uso de criaturas como vigilantes estão descritos. Os detalhes do governo, porém, não: não há documento de cobrança, cadastro, patrulha, tribunal ou decreto de Sylara. O dossiê `docs/ELDROTH_SOB_SYLARA_CICLO16.md` e a matriz `data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json` propõem **oito formas possíveis de apropriação colonial** das oito práticas sociais candidatas do XV, discutindo alimento, água, abrigo, terra, memória, pacto, parentesco e ecologia. Nenhuma recebe status de política realizada.
+
+O atlas inclui 6 posições sociais abstratas (não personagens), 3 modelos alternativos não adotados de administração, 4 dilemas e 4 vinhetas não ocorridas; cinco decisões de governo permanecem com o autor. Validações, índices e API de consulta preservam ausência de números, órgãos e fatos não documentados. A distinção entre coerção e colaboração voluntária e a autonomia das criaturas não-humanas são requisitos da continuidade.
+
+**Próximo ciclo XVII:** Vandar, cidade anterior à ruína e memória dos mortos sob Damaris — sempre separando história documentada das propostas.

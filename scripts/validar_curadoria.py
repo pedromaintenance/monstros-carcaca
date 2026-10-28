@@ -3199,6 +3199,76 @@ def validar_preconquista_eldroth_xv():
     print("Worldbuilding XV: 4 fases, 8 práticas, 4 pactos não assinados, 4 ciclos materiais, 4 vinhetas; zero promoções.")
 
 
+
+def validar_ocupacao_sylara_xvi():
+    """Separa fatos do manuscrito e propostas de ocupação sem fechar o cânone."""
+    d=load("data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json")
+    schema=load("schemas/eldroth-ocupacao-sylara-xvi.schema.json")
+    Draft202012Validator.check_schema(schema)
+    errors=list(Draft202012Validator(schema).iter_errors(d))
+    require(not errors,f"Ciclo XVI: contrato inválido {errors[:1]}")
+    require(d["aprovacao_autoral"] is False and
+            d["aplicar_ao_canon_automaticamente"] is False and
+            d["estado"]=="hipoteses_de_worldbuilding_pendentes_de_revisao",
+            "Ciclo XVI: promoção indevida.")
+    require(d["resumo"]=={"mecanismos":8,"posicoes_sociais":6,
+            "modelos_de_regime":3,"dilemas":4,"vinhetas":4,"politicas_confirmadas":0},
+            "Ciclo XVI: totais incompatíveis.")
+    prior=load("data/worldbuilding/eldroth-preconquista-ciclo15.json")
+    practices={x["id"] for x in prior["praticas"]}
+    mechanisms=d["mecanismos"]
+    referidas=[x["pratica_xv_id"] for x in mechanisms]
+    require(len(set(referidas))==8 and set(referidas)==practices,
+            "Ciclo XVI: cada prática de XV deve ser examinada exatamente uma vez.")
+    categories=("mecanismos","posicoes_sociais","modelos_de_regime","dilemas","vinhetas","decisoes_para_autor")
+    all_records=[x for cat in categories for x in d[cat]]
+    require(len(all_records)==30 and len({x["id"] for x in all_records})==30,
+            "Ciclo XVI: IDs repetidos ou número de registros incorreto.")
+    pages={x["pagina"] for x in load("fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")["paginas"]}
+    def valid_source(x):
+        return (x["pagina"] in pages and x["estatuto"]=="referencia_de_rascunho_nao_promovida"
+                and bool(x["afirmacao_no_manuscrito"]))
+    require(all(valid_source(x) for x in d["fatos_documentados"]),
+            "Ciclo XVI: base do manuscrito sem páginas verificáveis.")
+    mid={x["id"] for x in mechanisms}
+    roles={x["id"] for x in d["posicoes_sociais"]}
+    for item in mechanisms:
+        require(item["fontes_contextuais"] and all(valid_source(x) for x in item["fontes_contextuais"])
+                and item["politica_sylara_confirmada"] is False
+                and item["ocorreu"] is False
+                and item["orgao_administrativo_confirmado"] is None
+                and item["quantidade_confirmada"] is None,
+                "Ciclo XVI: órgão ou fato institucional afirmado sem fonte.")
+    for item in d["posicoes_sociais"]:
+        require(valid_source(item["fonte_contextual"])
+                and item["pessoa_especifica_confirmada"] is False
+                and item["quantidade_confirmada"] is None,
+                "Ciclo XVI: papel social indevidamente tratado como NPC concreto.")
+    for item in d["modelos_de_regime"]:
+        require(item["estado"]=="alternativa_nao_adotada"
+                and all(valid_source(x) for x in item["fontes_contextuais"])
+                and item["orgao_ou_politica_historica_confirmada"] is False,
+                "Ciclo XVI: modelo de regime aprovado automaticamente.")
+    for item in d["dilemas"]:
+        require(item["mecanismo_id"] in mid
+                and item["posicao_id"] in roles
+                and item["ocorreu"] is False and item["efeito_na_cronologia"] is False,
+                "Ciclo XVI: dilema não ligado a fonte ou transformado em episódio.")
+    for item in d["vinhetas"]:
+        require(item["mecanismo_id"] in mid and item["ocorreu"] is False
+                and item["novo_lugar_confirmado"] is False
+                and item["personagem_canonico_novo"] is False,
+                "Ciclo XVI: vinheta convertida em evento, local ou personagem.")
+    require(all(q["estado"]=="pendente" for q in d["decisoes_para_autor"]),
+            "Ciclo XVI: questão autoral encerrada sem aprovação.")
+    regions={x["id"] for x in load("data/regioes_carcaca.json")["regioes"]}
+    places={x["id"] for x in load("data/lugares_carcaca.json")["lugares"]}
+    require(d["regiao_id"]=="regiao:eldroth" and d["regiao_id"] in regions
+            and d["lugar_id"]=="lugar:eldroth" and d["lugar_id"] in places,
+            "Ciclo XVI: geografia histórica inválida.")
+    print("Ciclo XVI: 8 mecanismos, 6 posições, 3 modelos, 4 dilemas, 4 vinhetas; nenhuma política ou episódio canonizado.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3326,6 +3396,7 @@ def main():
     validar_monstros_dw_ciclo_xiii()
     validar_atlas_cultural_xiv()
     validar_preconquista_eldroth_xv()
+    validar_ocupacao_sylara_xvi()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

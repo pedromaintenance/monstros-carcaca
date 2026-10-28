@@ -8,7 +8,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 
 - **XIV — concluído:** atlas histórico-cultural de Eldroth, Vandar e Ironwood com 14 eixos, fontes nomeadas e 42 alternativas não adotadas. [Dossiê](docs/ATLAS_HISTORICO_CULTURAL_ELDROTH_CICLO14.md).
 - **XV — concluído:** [Eldroth antes da conquista](docs/ELDROTH_PRECONQUISTA_CICLO15.md) — 4 fases, 8 práticas, 4 pactos, 4 ciclos materiais e 4 vinhetas; 24 alternativas ainda sem aprovação.
-- **XVI — planejado:** a ocupação no cotidiano: exploração, trabalho, alimento, poder jurídico de Sylara, colaboração e proteção civil.
+- **XVI — concluído:** [Eldroth sob Sylara](docs/ELDROTH_SOB_SYLARA_CICLO16.md) — 8 mecanismos candidatos, 6 posições sociais, 3 modelos de regime não adotados, 4 dilemas, 4 vinhetas, 5 decisões pendentes. Zero políticas novas canonizadas.
 - **XVII — planejado:** Vandar antes e depois da destruição: história urbana, necromancia, memória, luto e propriedade.
 - **XVIII — planejado:** Ironwood e a resistência descentralizada: vida civil, autoridade de Elara, educação, economia e diplomacia com Thargrid.
 
@@ -453,7 +453,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Registrar cada decisão narrativa, o valor de ataque proposto, riscos e alternativas não violentas.
 - [x] Incluir calculadora independente, JSON Schema, testes Python e Node, validador de referências, exportação, 9 índices e API de busca.
 - [x] Garantir que o número de fichas canônicas permanece 7, sem aparições ou presságios confirmados.
-- [ ] Ciclo XIV: testar cenários e encontros em variações ficcionais, sem forçar combate nem registrar um desfecho canônico.
+- [ ] Testes de encontros DW permanecem adiados por prioridade explícita de worldbuilding (a antiga proposta de Ciclo XIV foi substituída pelo atlas histórico-cultural).
 - [ ] Revisão autoral dos portes e ataques (sobretudo a magia de papel do Escrivão) antes de qualquer promoção.
 
 
@@ -465,4 +465,15 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Formular quatro modelos de pacto não assinados e quatro ciclos materiais não quantificados.
 - [x] Escrever quatro vinhetas de cotidiano explicitamente ficcionais.
 - [x] Integrar narrativa, base JSON, schema, validações, índices, API ESM e testes.
-- [ ] **XVI — próximo:** Eldroth sob Sylara: governo, instituições de coerção, economia civil, trabalho, memória, colaboração e resistência. Nenhuma política tributária ou órgão oficial deve ser inventado como fato.
+- [x] **XVI concluído:** apropriação hipotética de 8 práticas do ciclo XV, sem institucionalizar uma cobrança ou burocracia sem fonte.
+
+## Ciclo XVI — Concluído: Eldroth sob Sylara
+
+- [x] Reler as páginas 5, 7, 9, 16 e 17 do manuscrito sobre governo, resistência, coexistência e vigilância.
+- [x] Relacionar **cada uma das 8 práticas sociais propostas no XV** a uma hipótese distinta de captura pelo ocupante, sem transformá-la em decreto histórico.
+- [x] Descrever o impacto material das hipóteses em água, caça, moradia, memória territorial, asilo, pactos, parentesco e autonomia da fauna.
+- [x] Elaborar 6 posições sociais abstratas sem criar NPCs; distinguir adesão voluntária, coerção, sobrevivência e resistência não combatente.
+- [x] Propor 3 modelos de governo **não escolhidos**, 4 dilemas e 4 vinhetas **não ocorridas**.
+- [x] Registrar 5 decisões autorais pendentes, schema JSON, testes Python e Node, índices e consultas ESM.
+- [x] Preservar os 7 monstros curados, a autonomia de Ironwood e o domínio de Damaris em Vandar.
+- [ ] **XVII — próximo:** Vandar antes/depois da ruína; sociedade urbana anterior, morte, propriedade, necromancia e direitos à memória, sem inventar a data da queda.
