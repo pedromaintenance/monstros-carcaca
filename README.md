@@ -40,6 +40,14 @@ A [base estruturada](data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.j
 
 Ironwood ainda **não tem ID próprio** nos vocabulários atuais de regiões/lugares; a base não o inventa nem o coloca indevidamente em Eldroth. Nenhum conselho, tratado, rito ou episódio foi canonizado.
 
+## Ciclo XIX — Mesa de revisão autoral do atlas
+
+Os ciclos XIV–XVIII geraram muito worldbuilding sem aprovação automática. O [dossiê de revisão](docs/MESA_REVISAO_AUTORAL_CICLO19.md) consolida um **inventário verificável de 103 candidatos** (42 do XIV, 28 do XV, 11 de cada um dos XVI, XVII e XVIII), uma fila de **20 decisões editoriais**, dez guardas de proveniência e cinco lacunas de conhecimento que ainda não podem ser preenchidas.
+
+A [matriz de revisão autoral](data/worldbuilding/revisao-autoral-atlas-ciclo19.json) preserva IDs de origem, índices das opções, dependências de decisões e seu estado **pendente**. A exportação `dist/carcaca/atlas-authorial-review.json`, com índices em arquivo próprio, oferece consultas `getAtlasAuthorialReview`, `searchAtlasReviewDecisions`, `searchAtlasReviewCandidates` e leitura individual por ID.
+
+**Este ciclo não homologou nenhuma alternativa e não alterou a lore canônica.** Qualquer alteração futura exigirá opção e redação expressamente aprovadas pelo autor, outra revisão de código e testes.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
