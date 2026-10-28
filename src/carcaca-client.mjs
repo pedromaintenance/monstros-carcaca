@@ -60,6 +60,34 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getEldrothPreconquest(){return byKey("eldroth_preconquest");}
+  async function getEldrothPreconquestIndexes(){return byKey("eldroth_preconquest_indexes");}
+  async function getEldrothPreconquestEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xv:"))return null;
+    const data=await getEldrothPreconquest();
+    for(const categoria of ["fases","praticas","pactos","ciclos_materiais","vinhetas","questoes_de_revisao_autoral"]){
+      const item=data[categoria].find(x=>x.id===id);
+      if(item)return {...item,categoria};
+    }
+    return null;
+  }
+  async function searchEldrothPreconquest({categoria,fase,praticaId,pagina,eixoXiv,query}={}){
+    const data=await getEldrothPreconquest();
+    const normalize=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const categories=["fases","praticas","pactos","ciclos_materiais","vinhetas"];
+    return categories.flatMap(cat=>data[cat].map(x=>({...x,categoria:cat}))).filter(x=>{
+      const srcs=x.fontes_ancora??x.fonte_contextual??[];
+      return (!categoria||x.categoria===categoria)&&
+        (!fase||(x.fase_de_inspiracao??x.chave)===fase)&&
+        (!praticaId||(x.praticas_associadas??[]).includes(praticaId)||x.id===praticaId)&&
+        (pagina===undefined||srcs.some(y=>y.pagina===Number(pagina))||
+          (x.paginas??[]).includes(Number(pagina)))&&
+        (!eixoXiv||(x.eixos_xiv??[]).includes(eixoXiv))&&
+        (!query||normalize([x.nome_editorial,x.titulo,x.nome,x.mecanismo_social_proposto,
+          x.vida_cotidiana,x.tensao_interna,x.objeto_ou_interesse,x.tensao_social,
+          x.abertura_condicional,x.evidencia].filter(Boolean).join(" ")).includes(normalize(query)));
+    });
+  }
   async function getEldrothCulturalAtlas(){return byKey("eldroth_cultural_atlas");}
   async function getEldrothCulturalAtlasIndexes(){return byKey("eldroth_cultural_atlas_indexes");}
   async function getEldrothCulturalAxis(id){
@@ -1330,6 +1358,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getEldrothPreconquest,getEldrothPreconquestIndexes,
+          getEldrothPreconquestEntry,searchEldrothPreconquest,
           getEldrothCulturalAtlas,getEldrothCulturalAtlasIndexes,
           getEldrothCulturalAxis,searchEldrothCulturalAxes,
           getEldrothDWStatblocks,getEldrothDWStatblockIndexes,
