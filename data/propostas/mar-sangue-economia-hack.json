@@ -1,0 +1,851 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "A Economia do Mar de Sangue — Trabalho, Tributo e Dependência",
+  "regiao_id": "regiao:costa-sul",
+  "estado": "propostas_narrativas_nao_canonicas",
+  "fatos_documentados": [
+    "Abissais cobram tributos por pesca, navegação e passagem segura, oferecem proteção e constroem dependência ao longo de gerações.",
+    "Abissais recorrem a escravidão e captura de pessoas quando pactos não bastam, mas não são demônios do Abismo.",
+    "Kuo-toa realizam incursões para captura sacrificial, e sua organização religiosa possui autoridades e instrumentos para capturar pessoas vivas.",
+    "Tritões defendem rotas e recifes, sereias transmitem memórias e alertas por canto; suas cidades têm alianças autônomas.",
+    "A fronteira de águas vermelhas e azuis muda com correntes e magia; há relatos de recifes contaminados e peixes mortos.",
+    "Viagens sazonais dos povos insulares e comércio de Portomonte existem, mas não há dados de volumes ou relações comerciais específicas com cidades submarinas."
+  ],
+  "continuidades": [
+    "diplomacia-mar:pessoa:maura",
+    "diplomacia-mar:pessoa:rhel",
+    "diplomacia-mar:pessoa:nilku",
+    "diplomacia-mar:pessoa:kalira",
+    "diplomacia-mar:pessoa:maelis",
+    "diplomacia-mar:pessoa:serun"
+  ],
+  "contagens": {
+    "polos": 5,
+    "oficios": 6,
+    "pessoas": 8,
+    "fluxos": 7,
+    "tributos": 5,
+    "clandestinas": 4,
+    "cenas": 6,
+    "arcos": 3
+  },
+  "polos": [
+    {
+      "id": "economia-mar:polo:lastro",
+      "nome": "Pátio do Lastro de Coral",
+      "rotina": "Reparadores poderiam manter amarras e instrumentos nas águas azuis.",
+      "conflito": "Defesa militar compete com manutenção cotidiana por mãos e ferramentas.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "diplomacia-mar:polo:velarium"
+      ],
+      "estado": "proposta_nao_canonica",
+      "aguas": "azuis",
+      "local_confirmado": false
+    },
+    {
+      "id": "economia-mar:polo:jardins",
+      "nome": "Jardins da Sombra Salgada",
+      "rotina": "Moradores poderiam experimentar cultivo submerso sem garantia de espécie aproveitável.",
+      "conflito": "A cobrança de tributo é exigida antes de haver qualquer colheita.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-944",
+        "movimento-povo:paragrafo-949"
+      ],
+      "referencias": [
+        "diplomacia-mar:polo:canto-de-lume"
+      ],
+      "estado": "proposta_nao_canonica",
+      "aguas": "azuis",
+      "local_confirmado": false
+    },
+    {
+      "id": "economia-mar:polo:conchas",
+      "nome": "Contadoria das Conchas Retidas",
+      "rotina": "Testemunhas conferem proteção e taxas exigidas por pactuantes abissais.",
+      "conflito": "Cobram pela travessia mesmo quando a maré já a tornou impossível.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:polo:fenda-da-decima"
+      ],
+      "estado": "proposta_nao_canonica",
+      "aguas": "vermelhas",
+      "local_confirmado": false
+    },
+    {
+      "id": "economia-mar:polo:imagens",
+      "nome": "Oficina das Imagens de Captura",
+      "rotina": "Artífices kuo-toa imaginados consertam símbolos e objetos rituais.",
+      "conflito": "Monitores pressionam trabalhadores a fornecer instrumentos para capturar pessoas vivas.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "diplomacia-mar:polo:cupula-dos-icones"
+      ],
+      "estado": "proposta_nao_canonica",
+      "aguas": "vermelhas",
+      "local_confirmado": false
+    },
+    {
+      "id": "economia-mar:polo:passagem",
+      "nome": "Passagem da Maré Sem Dono",
+      "rotina": "Guias e cantoras avaliam mudanças na fronteira entre correntes.",
+      "conflito": "Um conhecimento coletivo de navegação vira pretexto para monopólio e pedágio.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-942",
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-949"
+      ],
+      "referencias": [
+        "mar-sangue:zona:correntes"
+      ],
+      "estado": "proposta_nao_canonica",
+      "aguas": "transicao",
+      "local_confirmado": false
+    }
+  ],
+  "oficios": [
+    {
+      "id": "economia-mar:oficio:guias",
+      "nome": "Guias da Linha Errante",
+      "rotina": "Estudam correntes para orientar passagem sem presumir rotas fixas.",
+      "conflito": "Um patrão quer cobrar pelo conhecimento de uma mudança natural.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-934",
+        "movimento-povo:paragrafo-942"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:patrulha"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "navegacao",
+      "oficio_canonico": false
+    },
+    {
+      "id": "economia-mar:oficio:reparadores",
+      "nome": "Reparadores do Recife Partido",
+      "rotina": "Consertam objetos compartilhados e preparam ferramentas.",
+      "conflito": "A guarda pode requisitar trabalho civil sem prazo de devolução.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "diplomacia-mar:polo:velarium"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "manutencao",
+      "oficio_canonico": false
+    },
+    {
+      "id": "economia-mar:oficio:observadores",
+      "nome": "Observadores do Berçário Salgado",
+      "rotina": "Investigam ciclos marinhos sem pressupor espécies comestíveis ou produtividade.",
+      "conflito": "Autoridades exigem produtos que não se sabe se existirão.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-944",
+        "movimento-povo:paragrafo-949"
+      ],
+      "referencias": [
+        "mar-sangue:fenomeno:peixes"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "subsistencia",
+      "oficio_canonico": false
+    },
+    {
+      "id": "economia-mar:oficio:artifices",
+      "nome": "Gravadores da Imagem Não Prometida",
+      "rotina": "Distinguem objetos rituais de equipamentos de coerção.",
+      "conflito": "Um monitor manda produzir instrumentos de captura sob ameaça.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:sinal"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "artesanato",
+      "oficio_canonico": false
+    },
+    {
+      "id": "economia-mar:oficio:conferentes",
+      "nome": "Conferentes do Tributo Contestável",
+      "rotina": "Comparam serviço de proteção prestado e obrigações registradas.",
+      "conflito": "A família que contesta a dívida pode perder passagem.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:tratado:livro-de-tributos"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "contratos",
+      "oficio_canonico": false
+    },
+    {
+      "id": "economia-mar:oficio:mensageiras",
+      "nome": "Cantoras da Escuta de Carga",
+      "rotina": "Comunicam notícias das travessias sem publicar refúgios.",
+      "conflito": "Uma cidade quer transformar informação de socorro em mercadoria.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "diplomacia-mar:tratado:voz-sem-mapa"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "informacao",
+      "oficio_canonico": false
+    }
+  ],
+  "pessoas": [
+    {
+      "id": "economia-mar:pessoa:maura",
+      "nome": "Maura da Última Cláusula",
+      "rotina": "Revê taxas e serviços de proteção antes de renovar acordos.",
+      "conflito": "Pode colocar em risco comunidades que dependem de escolta.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:maura"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "abissais",
+      "reutiliza": "diplomacia-mar:pessoa:maura"
+    },
+    {
+      "id": "economia-mar:pessoa:rhel",
+      "nome": "Rhel das Correntes Fundas",
+      "rotina": "Sacerdote interpreta marés para justificar cobrança abissal.",
+      "conflito": "Uma passagem intransitável coloca sua autoridade em dúvida.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-933",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:rhel"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "abissais",
+      "reutiliza": "diplomacia-mar:pessoa:rhel"
+    },
+    {
+      "id": "economia-mar:pessoa:nilku",
+      "nome": "Nilku das Marés Discutidas",
+      "rotina": "Procura proteger artesãos kuo-toa de trabalhos sacrificiais coercitivos.",
+      "conflito": "Sua dissidência pode ser usada contra fiéis que não cometeram crime.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:nilku"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "kuo-toa",
+      "reutiliza": "diplomacia-mar:pessoa:nilku"
+    },
+    {
+      "id": "economia-mar:pessoa:kalira",
+      "nome": "Kalira da Corrente Falha",
+      "rotina": "Defende travessias e exige prestação de contas das requisições.",
+      "conflito": "Salvar um posto pode deixar comunidades sem reparadores.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:kalira"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "tritoes",
+      "reutiliza": "diplomacia-mar:pessoa:kalira"
+    },
+    {
+      "id": "economia-mar:pessoa:maelis",
+      "nome": "Maelis da Canção Interrompida",
+      "rotina": "Canta avisos de risco e se recusa a vender localização de abrigos.",
+      "conflito": "Uma mensagem incompleta pode atrasar um resgate.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:maelis"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "sereias",
+      "reutiliza": "diplomacia-mar:pessoa:maelis"
+    },
+    {
+      "id": "economia-mar:pessoa:serun",
+      "nome": "Serun da Mudança Lenta",
+      "rotina": "Reivindica consentimento em acordos assinados antes de seu nascimento.",
+      "conflito": "Uma dívida ancestral pretende transformar um parente em garantia.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:serun"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "descendentes_abissais",
+      "reutiliza": "diplomacia-mar:pessoa:serun"
+    },
+    {
+      "id": "economia-mar:pessoa:kuruk",
+      "nome": "Kuruk das Duas Ferramentas",
+      "rotina": "Artífice kuo-toa proposto recusa instrumentos destinados a capturas.",
+      "conflito": "Monitores podem negar recursos básicos à sua família.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:sinal"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "kuo-toa",
+      "reutiliza": null
+    },
+    {
+      "id": "economia-mar:pessoa:ulma",
+      "nome": "Ulma do Registro Rasurado",
+      "rotina": "Conferente abissal proposta compara promessa de segurança e tributo.",
+      "conflito": "Um supervisor tenta ocultar travessias que nunca foram protegidas.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:contadores"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "abissais",
+      "reutiliza": null
+    }
+  ],
+  "fluxos": [
+    {
+      "id": "economia-mar:fluxo:pesca",
+      "nome": "Direito de Pescar Não É Peixe",
+      "rotina": "Acesso à pesca pode ser tributado, mas alimento produzido em um lugar particular não foi comprovado.",
+      "conflito": "A corrente inviabiliza a pesca e o pacto continua exigindo pagamento.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "mar-sangue:pacto:tributo"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "subsistencia",
+      "origem": "economia-mar:polo:conchas",
+      "destino": "economia-mar:polo:passagem",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "economia-mar:fluxo:ferragens",
+      "nome": "Reparos Antes da Defesa",
+      "rotina": "Ferramentas e mão de obra poderiam circular entre reparo civil e patrulhas.",
+      "conflito": "Uma requisição emergencial vira obrigação permanente.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:patrulha"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "manutencao",
+      "origem": "economia-mar:polo:lastro",
+      "destino": "economia-mar:polo:passagem",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "economia-mar:fluxo:avisos",
+      "nome": "Informação Como Provisão",
+      "rotina": "Cantos podem avisar de riscos nas correntes sem publicar itinerários.",
+      "conflito": "Ocultar demais pode impedir abastecimento; revelar demais expõe refugiados.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:cantoras"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "informacao",
+      "origem": "economia-mar:polo:passagem",
+      "destino": "economia-mar:polo:lastro",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "economia-mar:fluxo:artefatos",
+      "nome": "Objetos de Ritual e Coerção",
+      "rotina": "Oficinas poderiam receber encomendas para culto ou captura, ambas sob contestação.",
+      "conflito": "O trabalho de sustento é usado para coagir a produção de instrumentos de captura.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:sinal"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "artesanato",
+      "origem": "economia-mar:polo:imagens",
+      "destino": "economia-mar:polo:conchas",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "economia-mar:fluxo:cultivo",
+      "nome": "Cultivo Sem Colheita Prometida",
+      "rotina": "Tentativas de cultivo submarino seriam experimentais e não garantem alimento.",
+      "conflito": "Uma autoridade cobra sobre uma safra que nem existe.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-944",
+        "movimento-povo:paragrafo-949"
+      ],
+      "referencias": [
+        "mar-sangue:fenomeno:peixes"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "pesquisa_ambiental",
+      "origem": "economia-mar:polo:jardins",
+      "destino": "economia-mar:polo:lastro",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "economia-mar:fluxo:socorro",
+      "nome": "Socorro Entre Mar e Ilhas",
+      "rotina": "Ajuda entre insulares e comunidades submarinas é possibilidade, não rota confirmada.",
+      "conflito": "Taxar uma travessia de resgate pode colocar vidas em risco.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-897",
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "lugar:ilhas-costa-sul"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "socorro",
+      "origem": "economia-mar:polo:passagem",
+      "destino": "economia-mar:polo:lastro",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "economia-mar:fluxo:refugio",
+      "nome": "Travessia de Refúgio",
+      "rotina": "Pessoas ameaçadas podem pedir passagem e proteção, sem se tornarem objetos de troca.",
+      "conflito": "Um cobrador exige um ser humano como garantia da passagem.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "diplomacia-mar:tratado:corpo-livre"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "protecção_humana",
+      "origem": "economia-mar:polo:conchas",
+      "destino": "economia-mar:polo:passagem",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    }
+  ],
+  "tributos": [
+    {
+      "id": "economia-mar:tributo:herdado",
+      "nome": "Tarifa Herdada por Gerações",
+      "rotina": "Descendentes seriam cobrados por pacto de proteção antigo.",
+      "conflito": "Não existe consentimento nem garantia de que a proteção continue.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:tratado:livro-de-tributos"
+      ],
+      "estado": "proposta_nao_canonica",
+      "vigente": false,
+      "abuso": "dependencia_hereditaria"
+    },
+    {
+      "id": "economia-mar:tributo:nao-colhido",
+      "nome": "Cota Sobre o Não Colhido",
+      "rotina": "Autoridade exige participação em alimento de cultivo experimental.",
+      "conflito": "Não há espécie comestível ou produção confirmada.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "mar-sangue:fenomeno:peixes"
+      ],
+      "estado": "proposta_nao_canonica",
+      "vigente": false,
+      "abuso": "extorsao"
+    },
+    {
+      "id": "economia-mar:tributo:pessoa-como-garantia",
+      "nome": "Pessoas Não São Garantias",
+      "rotina": "Uma autoridade pretende executar cobrança mediante captura de pessoas.",
+      "conflito": "Tráfico e escravidão são violência, nunca troca legítima.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:tratado:corpo-livre"
+      ],
+      "estado": "proposta_nao_canonica",
+      "vigente": false,
+      "abuso": "trafico_de_pessoas"
+    },
+    {
+      "id": "economia-mar:tributo:requisicao",
+      "nome": "Ofício Requisitado Para a Guerra",
+      "rotina": "Trabalhadores civis recebem ordem de abandonar sua própria comunidade.",
+      "conflito": "Poder militar tenta converter serviço temporário em servidão.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "diplomacia-mar:tratado:recifes-autonomos"
+      ],
+      "estado": "proposta_nao_canonica",
+      "vigente": false,
+      "abuso": "exploracao_laboral"
+    },
+    {
+      "id": "economia-mar:tributo:milagre",
+      "nome": "Dízimo do Prodígio",
+      "rotina": "Monitor demanda bens e trabalho em nome de um ícone manifestado.",
+      "conflito": "Milagre não implica autoridade automática para confisco.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "diplomacia-mar:tratado:prova-do-prodigio"
+      ],
+      "estado": "proposta_nao_canonica",
+      "vigente": false,
+      "abuso": "coercao_religiosa"
+    }
+  ],
+  "clandestinas": [
+    {
+      "id": "economia-mar:circuito:lista",
+      "nome": "Passagem Sem Lista Pública",
+      "rotina": "Acolhimento hipotético de vítimas de captura sem divulgar nomes ou refúgios.",
+      "conflito": "Proteção da privacidade dificulta identificar desaparecidos.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-947"
+      ],
+      "referencias": [
+        "diplomacia-mar:tratado:corpo-livre"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ocorrencia_confirmada": false,
+      "rota_operacional": false,
+      "carater": "resgate"
+    },
+    {
+      "id": "economia-mar:circuito:registro",
+      "nome": "Registro de Tributo Partido",
+      "rotina": "Testemunhas guardam versões divergentes de cobranças abusivas.",
+      "conflito": "A prova também pode expor a família que denunciou.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "mar-sangue:pessoa:maura"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ocorrencia_confirmada": false,
+      "rota_operacional": false,
+      "carater": "denuncia"
+    },
+    {
+      "id": "economia-mar:circuito:canto",
+      "nome": "Canto Que Não Revela a Rota",
+      "rotina": "Mensagens de socorro poderiam circular sem mapa completo.",
+      "conflito": "Um aliado exige informações que comprometeriam a segurança de outro.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "diplomacia-mar:tratado:voz-sem-mapa"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ocorrencia_confirmada": false,
+      "rota_operacional": false,
+      "carater": "informacao"
+    },
+    {
+      "id": "economia-mar:circuito:ferragens",
+      "nome": "Ferragens Com Duas Assinaturas",
+      "rotina": "Ferramentas seriam contrabandeadas com destinos contestados, sem rota definida.",
+      "conflito": "Uma falsificação incrimina artesãos que rejeitaram a captura ritual.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-920",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "costa-sul:pessoa:antera"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ocorrencia_confirmada": false,
+      "rota_operacional": false,
+      "carater": "contrabando"
+    }
+  ],
+  "cenas": [
+    {
+      "id": "economia-mar:cena:rede",
+      "nome": "A Rede Vazia Ainda Paga",
+      "rotina": "Família contesta tarifa de pesca durante uma mudança das correntes.",
+      "conflito": "A proteção não foi prestada, mas o cobrador insiste na cláusula.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "economia-mar:pessoa:maura",
+        "economia-mar:pessoa:ulma"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagens": [
+        "economia-mar:pessoa:maura",
+        "economia-mar:pessoa:ulma"
+      ],
+      "escolhas": [
+        "Ouvir pactuantes",
+        "Revisar taxas",
+        "Negociar proteção alternativa"
+      ],
+      "consequencia_condicional": "Cobranças poderiam acumular dívida sem atividade econômica."
+    },
+    {
+      "id": "economia-mar:cena:ferramentas",
+      "nome": "A Ferramenta Que Falta na Guerra",
+      "rotina": "Kalira pede ferramentas de uma oficina que precisa reparar moradias.",
+      "conflito": "Defesa coletiva compete com trabalho civil essencial.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "economia-mar:pessoa:kalira"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagens": [
+        "economia-mar:pessoa:kalira"
+      ],
+      "escolhas": [
+        "Repartir trabalho",
+        "Fixar prazo de devolução",
+        "Contestar requisição"
+      ],
+      "consequencia_condicional": "Abrigos civis poderiam permanecer danificados."
+    },
+    {
+      "id": "economia-mar:cena:pessoas",
+      "nome": "A Carga Que Respira",
+      "rotina": "Serun encontra contrato que pretende tratar pessoa capturada como garantia.",
+      "conflito": "A cobrança é uma tentativa de justificar escravidão, não uma transação válida.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "economia-mar:pessoa:serun",
+        "economia-mar:pessoa:maura"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagens": [
+        "economia-mar:pessoa:serun",
+        "economia-mar:pessoa:maura"
+      ],
+      "escolhas": [
+        "Proteger ameaçados",
+        "Contestar documento",
+        "Resguardar testemunhas"
+      ],
+      "consequencia_condicional": "Uma pessoa poderá ser capturada sob pretexto contratual."
+    },
+    {
+      "id": "economia-mar:cena:oficina",
+      "nome": "A Oficina Que Disse Não",
+      "rotina": "Kuruk recusa produzir instrumento para captura sacrificial.",
+      "conflito": "Monitores ameaçam excluir familiares dos recursos comuns.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "economia-mar:pessoa:kuruk",
+        "economia-mar:pessoa:nilku"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagens": [
+        "economia-mar:pessoa:kuruk",
+        "economia-mar:pessoa:nilku"
+      ],
+      "escolhas": [
+        "Proteger trabalhadores",
+        "Propor trabalho civil",
+        "Contestar autoridade religiosa"
+      ],
+      "consequencia_condicional": "A coerção pode atingir mais oficinas."
+    },
+    {
+      "id": "economia-mar:cena:canto",
+      "nome": "O Aviso Que Não Pode Ser Vendido",
+      "rotina": "Maelis recebe proposta de divulgar localização de um refúgio.",
+      "conflito": "A informação útil à defesa também pode facilitar captura.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "economia-mar:pessoa:maelis"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagens": [
+        "economia-mar:pessoa:maelis"
+      ],
+      "escolhas": [
+        "Consultar afetados",
+        "Resumir alerta",
+        "Recusar entrega de nomes"
+      ],
+      "consequencia_condicional": "O refúgio pode ser exposto."
+    },
+    {
+      "id": "economia-mar:cena:safra",
+      "nome": "A Colheita Que Ainda Não Existe",
+      "rotina": "Um cobrador exige parte de colheita experimental.",
+      "conflito": "Não existe garantia de produtividade ou de alimento comestível.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-944",
+        "movimento-povo:paragrafo-949"
+      ],
+      "referencias": [
+        "economia-mar:pessoa:ulma"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagens": [
+        "economia-mar:pessoa:ulma"
+      ],
+      "escolhas": [
+        "Registrar incerteza",
+        "Negociar alternativas",
+        "Rejeitar cobrança sem base"
+      ],
+      "consequencia_condicional": "Uma dívida pode nascer de alimento não produzido."
+    }
+  ],
+  "arcos": [
+    {
+      "id": "economia-mar:arco:pacto",
+      "nome": "O Tributo Que Não Protege",
+      "rotina": "Comunidades contestam cobranças enquanto a fronteira marítima muda.",
+      "conflito": "Romper um pacto de proteção pode criar vazio de segurança.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:tratado:livro-de-tributos"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "economia-mar:cena:rede",
+        "economia-mar:cena:safra"
+      ]
+    },
+    {
+      "id": "economia-mar:arco:oficios",
+      "nome": "Oficinas Sem Correntes",
+      "rotina": "Trabalhadores de águas rivais procuram recusar requisições coercitivas.",
+      "conflito": "A resistência pode desguarnecer postos defensivos necessários.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-921",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:sinal"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "economia-mar:cena:ferramentas",
+        "economia-mar:cena:oficina"
+      ]
+    },
+    {
+      "id": "economia-mar:arco:resgate",
+      "nome": "Ninguém Pode Ser Tributo",
+      "rotina": "Famílias, dissidentes e mensageiras enfrentam tentativas de tornar captura um direito econômico.",
+      "conflito": "A rede precisa proteger pessoas sem expor os abrigos.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-936",
+        "movimento-povo:paragrafo-947"
+      ],
+      "referencias": [
+        "diplomacia-mar:tratado:corpo-livre"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "economia-mar:cena:pessoas",
+        "economia-mar:cena:canto"
+      ]
+    }
+  ],
+  "limites_editoriais": [
+    "Nenhuma cidade, polo, oficina, rota ou cadeia produtiva particular está comprovada neste novo conjunto.",
+    "Sem números de captura, alimento, habitantes, taxas, preços, estoques, espécies comestíveis ou comércio confirmado.",
+    "Todos os fluxos têm efetivado:false e quantidade_confirmada:false; todos os tributos têm vigente:false.",
+    "Os circuitos clandestinos não registram ocorrência nem itinerário operacional; sua função é narrativa e crítica.",
+    "Captura, tráfico de pessoas, escravidão e sacrifícios são violência e não mercadoria legítima.",
+    "Os abissais marinhos não são demônios do Abismo e nenhuma sociedade é uniforme.",
+    "Movimentos do Hack inspiram ofícios e valores sem concessão mecânica ou alteração automática das campanhas."
+  ],
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false
+}
