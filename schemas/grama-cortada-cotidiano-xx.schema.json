@@ -1,0 +1,720 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XX — Grama-Cortada, cultura e economia sem canonização",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estado": {
+      "const": "worldbuilding_exploratorio_sem_canonizacao"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "aplicar_ao_canon_automaticamente": {
+      "const": false
+    },
+    "territorio": {
+      "const": "Condado de Grama-Cortada"
+    },
+    "grupo_cultural": {
+      "const": "Hobbits / Halflings"
+    },
+    "referencia_id_regiao": {
+      "type": "null"
+    },
+    "referencia_id_lugar": {
+      "type": "null"
+    },
+    "lat_long_confirmados": {
+      "type": "null"
+    },
+    "populacao_confirmada": {
+      "type": "null"
+    },
+    "fonte_manuscrito": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "protagonista_cultural_documentado": {
+      "const": "Menelau Folha-Seca"
+    },
+    "politica_editorial": {
+      "type": "string",
+      "minLength": 1
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xx:fato:"
+          },
+          "pagina_manuscrito": {
+            "type": "integer",
+            "enum": [
+              18,
+              19
+            ]
+          },
+          "afirmacao_de_fonte": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "manuscrito_em_revisao"
+          },
+          "reformulacao_aprovada": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "pagina_manuscrito",
+          "afirmacao_de_fonte",
+          "estado",
+          "reformulacao_aprovada"
+        ]
+      },
+      "minItems": 12,
+      "maxItems": 12
+    },
+    "limites": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 12,
+      "maxItems": 12
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fatos": {
+          "const": 12
+        },
+        "dominios_da_vida": {
+          "const": 9
+        },
+        "circuitos_economicos": {
+          "const": 5
+        },
+        "formas_de_convivencia": {
+          "const": 4
+        },
+        "conflitos_internos": {
+          "const": 5
+        },
+        "celebracoes_possiveis": {
+          "const": 4
+        },
+        "generos_da_memoria": {
+          "const": 4
+        },
+        "vinhetas": {
+          "const": 4
+        },
+        "decisoes": {
+          "const": 8
+        }
+      },
+      "required": [
+        "fatos",
+        "dominios_da_vida",
+        "circuitos_economicos",
+        "formas_de_convivencia",
+        "conflitos_internos",
+        "celebracoes_possiveis",
+        "generos_da_memoria",
+        "vinhetas",
+        "decisoes"
+      ]
+    },
+    "dominios_da_vida": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xx:dominios_da_vida:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hipotese_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detalhe_de_cotidiano": {
+            "type": "string",
+            "minLength": 1
+          },
+          "possibilidade_narrativa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "exploracao_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "instituicao_confirmada": {
+            "const": false
+          },
+          "fonte_contexto_paginas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                18,
+                19
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true
+          },
+          "nao_fixar": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_social",
+          "contradicao",
+          "detalhe_de_cotidiano",
+          "possibilidade_narrativa",
+          "estado",
+          "ocorreu",
+          "instituicao_confirmada",
+          "fonte_contexto_paginas",
+          "nao_fixar"
+        ]
+      },
+      "minItems": 9,
+      "maxItems": 9
+    },
+    "circuitos_economicos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xx:circuitos_economicos:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hipotese_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detalhe_de_cotidiano": {
+            "type": "string",
+            "minLength": 1
+          },
+          "possibilidade_narrativa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "exploracao_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "instituicao_confirmada": {
+            "const": false
+          },
+          "fonte_contexto_paginas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                18,
+                19
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true
+          },
+          "nao_fixar": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_social",
+          "contradicao",
+          "detalhe_de_cotidiano",
+          "possibilidade_narrativa",
+          "estado",
+          "ocorreu",
+          "instituicao_confirmada",
+          "fonte_contexto_paginas",
+          "nao_fixar"
+        ]
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "formas_de_convivencia": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xx:formas_de_convivencia:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hipotese_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detalhe_de_cotidiano": {
+            "type": "string",
+            "minLength": 1
+          },
+          "possibilidade_narrativa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "exploracao_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "instituicao_confirmada": {
+            "const": false
+          },
+          "fonte_contexto_paginas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                18,
+                19
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true
+          },
+          "nao_fixar": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_social",
+          "contradicao",
+          "detalhe_de_cotidiano",
+          "possibilidade_narrativa",
+          "estado",
+          "ocorreu",
+          "instituicao_confirmada",
+          "fonte_contexto_paginas",
+          "nao_fixar"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "conflitos_internos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xx:conflitos_internos:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hipotese_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detalhe_de_cotidiano": {
+            "type": "string",
+            "minLength": 1
+          },
+          "possibilidade_narrativa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "exploracao_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "instituicao_confirmada": {
+            "const": false
+          },
+          "fonte_contexto_paginas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                18,
+                19
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true
+          },
+          "nao_fixar": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_social",
+          "contradicao",
+          "detalhe_de_cotidiano",
+          "possibilidade_narrativa",
+          "estado",
+          "ocorreu",
+          "instituicao_confirmada",
+          "fonte_contexto_paginas",
+          "nao_fixar"
+        ]
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "celebracoes_possiveis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xx:celebracoes_possiveis:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hipotese_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detalhe_de_cotidiano": {
+            "type": "string",
+            "minLength": 1
+          },
+          "possibilidade_narrativa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "exploracao_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "instituicao_confirmada": {
+            "const": false
+          },
+          "fonte_contexto_paginas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                18,
+                19
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true
+          },
+          "nao_fixar": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_social",
+          "contradicao",
+          "detalhe_de_cotidiano",
+          "possibilidade_narrativa",
+          "estado",
+          "ocorreu",
+          "instituicao_confirmada",
+          "fonte_contexto_paginas",
+          "nao_fixar"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "generos_da_memoria": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xx:generos_da_memoria:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hipotese_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detalhe_de_cotidiano": {
+            "type": "string",
+            "minLength": 1
+          },
+          "possibilidade_narrativa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "exploracao_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "instituicao_confirmada": {
+            "const": false
+          },
+          "fonte_contexto_paginas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                18,
+                19
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true
+          },
+          "nao_fixar": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_social",
+          "contradicao",
+          "detalhe_de_cotidiano",
+          "possibilidade_narrativa",
+          "estado",
+          "ocorreu",
+          "instituicao_confirmada",
+          "fonte_contexto_paginas",
+          "nao_fixar"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "vinhetas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xx:vinhetas:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hipotese_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detalhe_de_cotidiano": {
+            "type": "string",
+            "minLength": 1
+          },
+          "possibilidade_narrativa": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "exploracao_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "instituicao_confirmada": {
+            "const": false
+          },
+          "fonte_contexto_paginas": {
+            "type": "array",
+            "items": {
+              "type": "integer",
+              "enum": [
+                18,
+                19
+              ]
+            },
+            "minItems": 1,
+            "maxItems": 2,
+            "uniqueItems": true
+          },
+          "nao_fixar": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_social",
+          "contradicao",
+          "detalhe_de_cotidiano",
+          "possibilidade_narrativa",
+          "estado",
+          "ocorreu",
+          "instituicao_confirmada",
+          "fonte_contexto_paginas",
+          "nao_fixar"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "decisoes_para_autor": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xx:decisao:"
+          },
+          "pergunta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "pendente_de_autoria"
+          },
+          "opcao_escolhida": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "pergunta",
+          "estado",
+          "opcao_escolhida"
+        ]
+      },
+      "minItems": 8,
+      "maxItems": 8
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "aplicar_ao_canon_automaticamente",
+    "territorio",
+    "grupo_cultural",
+    "referencia_id_regiao",
+    "referencia_id_lugar",
+    "lat_long_confirmados",
+    "populacao_confirmada",
+    "fonte_manuscrito",
+    "protagonista_cultural_documentado",
+    "politica_editorial",
+    "fatos_documentados",
+    "limites",
+    "contagens",
+    "dominios_da_vida",
+    "circuitos_economicos",
+    "formas_de_convivencia",
+    "conflitos_internos",
+    "celebracoes_possiveis",
+    "generos_da_memoria",
+    "vinhetas",
+    "decisoes_para_autor"
+  ]
+}
