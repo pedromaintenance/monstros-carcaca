@@ -131,7 +131,7 @@ jobs:
           python scripts/gerar_indices_curadoria.py
           python scripts/gerar_indices_curadoria.py --check
       - name: Publicar snapshot sem sobrepor as fontes SRD
-        if: github.event_name != 'pull_request'
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         shell: bash
         run: |
           git add dist/carcaca
