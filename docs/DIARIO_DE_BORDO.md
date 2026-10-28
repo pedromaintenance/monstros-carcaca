@@ -465,3 +465,11 @@ O inventário estruturado contém **103 candidatos** ligados a registros existen
 Entregas: `docs/MESA_REVISAO_AUTORAL_CICLO19.md` e `data/worldbuilding/revisao-autoral-atlas-ciclo19.json`, com schema, validador, índices, consultas ESM e testes. **Nenhum status foi alterado para aprovado**, nenhuma opção foi adotada por silêncio e nenhum evento de campanha foi declarado ocorrido. A integração do roteiro de decisões preserva a autonomia autoral.
 
 Próxima direção: responder escolhas pontuais com fonte, redação e alcance explícitos, ou ampliar pesquisas geográficas e culturais enquanto decisões estiverem abertas.
+
+## 2026-10-28 · Ciclo XX — Grama-Cortada e a independência da vida cotidiana
+
+Retomamos **worldbuilding expansivo**, após o ciclo de revisão XIX. O foco se afasta da guerra e desenvolve o Condado de Grama-Cortada como comunidade com vida própria. Manuscrito do Hack, pp. 18–19: hobbits/halflings, Menelau Folha-Seca, pequenas vilas e campos, influência informal de famílias e anciãos, agricultura diversificada, despensas, cervejas, tabacos, erva-de-hobbit, memórias orais e resistência principalmente discreta.
+
+Foram construídos **9 domínios cotidianos, 5 circuitos econômicos, 4 modelos interpretativos de convivência, 5 tensões internas, 4 possíveis celebrações, 4 gêneros de transmissão da memória, 4 vinhetas e 8 perguntas autorais**, com **12 âncoras textuais** e limites rigorosos sobre o que a fonte não diz. Preservamos distribuição geográfica, população, arquitetura uniforme, rito oficial e política de propriedade como desconhecidos.
+
+Entregas: `docs/GRAMA_CORTADA_COTIDIANO_CICLO20.md`, `data/worldbuilding/grama-cortada-cotidiano-ciclo20.json`, schema, validador, cinco índices, API read-only e testes. Não criamos monstros, regras, festivais ocorridos ou localidades canônicas. Próximo horizonte indicado: culturas gnômicas — rocha, floresta e profundezas — e suas economias do conhecimento (Hack, pp. 19–21), sem nova rodada prematura de homologação.
