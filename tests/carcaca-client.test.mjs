@@ -79,7 +79,9 @@ const fixtures={
     hack_necromancer_movements:"hack-necromancer-movements.json",
     hack_necromancer_movement_indexes:"hack-necromancer-movement-indexes.json",
     hack_artificer_movements:"hack-artificer-movements.json",
-    hack_artificer_movement_indexes:"hack-artificer-movement-indexes.json"}},
+    hack_artificer_movement_indexes:"hack-artificer-movement-indexes.json",
+    hack_mercenary_movements:"hack-mercenary-movements.json",
+    hack_mercenary_movement_indexes:"hack-mercenary-movement-indexes.json"}},
   "catalog.json":[
     {id:"carcaca:criatura:joro",nome:"Jorō",tipo_carcaca:"yokai",tipo_dnd:"fey",
      regioes:["regiao:foz"],lugares:["lugar:arquivo"],faccoes:["faccao:yokai"],
@@ -130,6 +132,40 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "hack-mercenary-movements.json":[
+    {id:"movimento-classe:paragrafo-2736",titulo:"CAPITÃO",grupo:"MERCENÁRIO",
+      requisito_literal:null,requisito_estruturado:null,
+      opcoes:[{paragrafo_docx:2737,texto:"ordenar uma manobra coordenada;"}],
+      texto_original:"Quando comandar uma equipe.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2748",titulo:"ABORDAGEM",grupo:"MERCENÁRIO",
+      requisito_literal:"Capitão",requisito_estruturado:{
+        tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2736"},
+      opcoes:[{paragrafo_docx:2749,texto:"sua gente chega agrupada e em posição;"}],
+      texto_original:"Quando liderar uma abordagem.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2802",titulo:"SAQUE ORGANIZADO",grupo:"MERCENÁRIO",
+      requisito_literal:"Abordagem",requisito_estruturado:{
+        tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2748"},
+      opcoes:[],texto_original:"Quando uma abordagem quebrar a resistência.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2760",titulo:"O PREÇO DA GUERRA",grupo:"MERCENÁRIO",
+      requisito_literal:null,requisito_estruturado:null,opcoes:[],
+      texto_original:"Quando negociar os termos de um trabalho perigoso.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2767",titulo:"ADIANTAMENTO",grupo:"MERCENÁRIO",
+      requisito_literal:"O Preço da Guerra",requisito_estruturado:{
+        tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2760"},
+      opcoes:[],texto_original:"Quando fechar um contrato.",aplicacao_canonica:false},
+    {id:"movimento-classe:paragrafo-2756",titulo:"CONTRABANDISTA",grupo:"MERCENÁRIO",
+      requisito_literal:null,requisito_estruturado:null,opcoes:[],
+      texto_original:"Quando esconder carga.",aplicacao_canonica:false}
+  ],
+  "hack-mercenary-movement-indexes.json":{
+    by_requisito_tipo:{movimento_exato:[
+      "movimento-classe:paragrafo-2748","movimento-classe:paragrafo-2802",
+      "movimento-classe:paragrafo-2767"]},
+    by_raiz_dependencia:{
+      "movimento-classe:paragrafo-2736":[
+        "movimento-classe:paragrafo-2748","movimento-classe:paragrafo-2802"],
+      "movimento-classe:paragrafo-2760":["movimento-classe:paragrafo-2767"]}
+  },
   "hack-artificer-movements.json":[
     {id:"movimento-classe:paragrafo-2679",grupo:"ARTÍFICE",titulo:"ARTÍFICE",
      requisito_literal:null,requisito_estruturado:null,opcoes:[],texto_original:"Quando possuir oficina.",aplicacao_canonica:false},
@@ -1991,4 +2027,33 @@ test("Artífice preserva cadeia alquímica transitiva, opções e REQUER obrigat
   assert.equal(allPresent.aplicacao_canonica,false);
   assert.equal(await atlas.getArtificerRequirementPreview("movimento-classe:paragrafo-9999"),null);
   await assert.rejects(()=>atlas.getArtificerRequirementPreview(id,{movimentosPossuidos:"invalido"}),TypeError);
+});
+
+
+test("Mercenário preserva dois ramos e Saque Organizado exige Abordagem e Capitão",async()=>{
+  const moves=await atlas.getMercenaryMovements();assert.equal(moves.length,6);
+  assert.equal((await atlas.searchMercenaryMovements({titulo:"capitao"}))[0].titulo,"CAPITÃO");
+  assert.equal((await atlas.searchMercenaryMovements({requer:"ABORDAGEM"}))[0].titulo,"SAQUE ORGANIZADO");
+  assert.equal((await atlas.searchMercenaryMovements({comRequer:true})).length,3);
+  assert.equal((await atlas.searchMercenaryMovements({
+     raizDependencia:"movimento-classe:paragrafo-2736"})).length,2);
+  assert.equal((await atlas.getMercenaryMovementIndexes()).by_requisito_tipo.movimento_exato.length,3);
+  const id="movimento-classe:paragrafo-2802";
+  const none=await atlas.getMercenaryRequirementPreview(id);
+  assert.deepEqual(none.cadeia_imediato_para_raiz.map(x=>x.movimento_id),
+    ["movimento-classe:paragrafo-2748","movimento-classe:paragrafo-2736"]);
+  assert.equal(none.componentes_identificados_presentes,false);
+  const partial=await atlas.getMercenaryRequirementPreview(id,{movimentosPossuidos:[
+    "movimento-classe:paragrafo-2736"]});
+  assert.deepEqual(partial.cadeia_imediato_para_raiz.map(x=>x.presente_na_lista),[false,true]);
+  const complete=await atlas.getMercenaryRequirementPreview(id,{movimentosPossuidos:[
+    "movimento-classe:paragrafo-2736","movimento-classe:paragrafo-2748"]});
+  assert.equal(complete.componentes_identificados_presentes,true);
+  assert.equal(complete.habilitado_para_compra,null);
+  assert.equal(complete.aplicacao_canonica,false);
+  const smuggler=await atlas.getMercenaryRequirementPreview("movimento-classe:paragrafo-2756");
+  assert.deepEqual(smuggler.cadeia_imediato_para_raiz,[]);
+  assert.equal(smuggler.verificacao_estrutural,"sem_requer_literal");
+  assert.equal(await atlas.getMercenaryMovement("movimento-classe:paragrafo-9999"),null);
+  await assert.rejects(()=>atlas.getMercenaryRequirementPreview(id,{movimentosPossuidos:"Capitão"}),TypeError);
 });

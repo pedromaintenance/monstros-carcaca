@@ -368,3 +368,12 @@ Integração de **23 movimentos integrais de ARTÍFICE**, com **32 opções**, *
 O movimento AQUILO QUE VOCÊS CHAMAM DE MUNDO exige ARMA HUMANA, que por sua vez exige TROCA EQUIVALENTE e, indiretamente, TRANSMUTAÇÃO ALQUÍMICA. A API `getArtificerRequirementPreview` percorre a cadeia completa sem liberar compras. A referência obsoleta a "Alquimista Federal" no corpo de AQUILO QUE VOCÊS CHAMAM DE MUNDO foi **corrigida para Arma Humana por confirmação autoral em 27/10/2026**, sem alterar o `REQUER` nem criar dependências. A emenda está registrada no pacote de origem e protegida pelos testes.
 
 Fonte versionada: `data/lore/hack-carcaca-dw-artifice-integrais.json.gz`; catálogo legível: `dist/carcaca/hack-artificer-movements.json`. Detalhes em [Integração do Artífice](docs/INTEGRACAO_ARTIFICE_HACK_DW.md).
+
+
+## Classe Mercenário — décimo quinto grupo integral
+
+Transcritos **31 movimentos** de MERCENÁRIO com **37 opções**, **75 trechos documentais** e **11 REQUER diretos**. A cobertura cumulativa passa a **623 de 632 movimentos (98,6%)**. A árvore de CAPITÃO contém nove dependentes, incluindo a cadeia SAQUE ORGANIZADO → ABORDAGEM → CAPITÃO. O PREÇO DA GUERRA tem dois dependentes independentes da liderança.
+
+Contrabando, Recrutar e navegação sem REQUER literal não foram subordinados a CAPITÃO por inferência. A API `getMercenaryRequirementPreview` verifica cadeias sem autorizar compras. Veja [Integração Mercenário](docs/INTEGRACAO_MERCENARIO_HACK_DW.md).
+
+Restam nove movimentos distribuídos entre ESCRIBA YOKAI (3), NOBRE (3) e ARQUEÓLOGO (3).

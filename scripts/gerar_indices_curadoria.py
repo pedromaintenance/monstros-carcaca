@@ -282,12 +282,13 @@ def build():
     bruxo_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-bruxo-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
     necromante_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-necromante-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
     artifice_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-artifice-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
+    mercenario_docx=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-mercenario-integrais.json.gz").read_bytes()).decode("utf-8"))["movimentos"]
     dependencias_classes=classes_docx["dependencias_exatas_candidatas"]
     dependencias_pendentes=classes_docx["dependencias_nao_resolvidas"]
     try:
-        from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes,build_mage_indexes,build_sorcerer_indexes,build_warlock_indexes,build_necromancer_indexes,build_artificer_indexes
+        from scripts.hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes,build_mage_indexes,build_sorcerer_indexes,build_warlock_indexes,build_necromancer_indexes,build_artificer_indexes,build_mercenary_indexes
     except ModuleNotFoundError:
-        from hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes,build_mage_indexes,build_sorcerer_indexes,build_warlock_indexes,build_necromancer_indexes,build_artificer_indexes
+        from hack_movimentos_personagem import build_people_indexes,build_class_indexes,build_warrior_indexes,build_barbarian_indexes,build_hunter_indexes,build_rogue_indexes,build_bard_indexes,build_martial_artist_indexes,build_paladin_indexes,build_cleric_indexes,build_druid_indexes,build_mage_indexes,build_sorcerer_indexes,build_warlock_indexes,build_necromancer_indexes,build_artificer_indexes,build_mercenary_indexes
     regras_nucleo=load("data/lore/hack-carcaca-dw-regras-nucleo.json")
     quadros_integrais=load("data/lore/hack-carcaca-dw-quadros-integrais.json")
     movimentos_gerais=compilar_movimentos_gerais(quadros_integrais,docx_tables)
@@ -319,7 +320,8 @@ def build():
     bruxo_por_id={m["id"]:m for m in bruxo_docx}
     necromante_por_id={m["id"]:m for m in necromante_docx}
     artifice_por_id={m["id"]:m for m in artifice_docx}
-    integral_por_id={**guerreiro_por_id,**barbaro_por_id,**cacador_por_id,**ladino_por_id,**bardo_por_id,**artista_marcial_por_id,**paladino_por_id,**clerigo_por_id,**druida_por_id,**mago_por_id,**feiticeiro_por_id,**bruxo_por_id,**necromante_por_id,**artifice_por_id}
+    mercenario_por_id={m["id"]:m for m in mercenario_docx}
+    integral_por_id={**guerreiro_por_id,**barbaro_por_id,**cacador_por_id,**ladino_por_id,**bardo_por_id,**artista_marcial_por_id,**paladino_por_id,**clerigo_por_id,**druida_por_id,**mago_por_id,**feiticeiro_por_id,**bruxo_por_id,**necromante_por_id,**artifice_por_id,**mercenario_por_id}
     classes_docx_piloto=[{**x,"revisao_preliminar_id":reviewed_paragraphs.get(x["paragrafo_docx"]),
                          "texto_integral_id":x["id"] if x["id"] in integral_por_id else None,
                          "texto_integral_disponivel":x["id"] in integral_por_id}
@@ -338,6 +340,7 @@ def build():
     indice_bruxo_docx=build_warlock_indexes(bruxo_docx)
     indice_necromante_docx=build_necromancer_indexes(necromante_docx)
     indice_artifice_docx=build_artificer_indexes(artifice_docx)
+    indice_mercenario_docx=build_mercenary_indexes(mercenario_docx)
     indice_povos_docx=build_people_indexes(povos_docx)
     indice_classes_docx=build_class_indexes(classes_docx_piloto,dependencias_classes,dependencias_pendentes)
     complete_move_indexes={k:defaultdict(set) for k in ("by_grupo","by_marcador","by_preliminar")}
@@ -532,6 +535,8 @@ def build():
         "hack_necromancer_movement_indexes":"hack-necromancer-movement-indexes.json",
         "hack_artificer_movements":"hack-artificer-movements.json",
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
+        "hack_mercenary_movements":"hack-mercenary-movements.json",
+        "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
         "lore_index_indexes":"lore-indexes.json",
         "lore_chronology":"lore-chronology.json",
         "lore_review_notes":"lore-review-notes.json",
@@ -615,6 +620,9 @@ def build():
         "total_movimentos_artifice_integrais":len(artifice_docx),
         "total_opcoes_artifice":sum(len(m["opcoes"]) for m in artifice_docx),
         "total_requer_artifice":sum(bool(m["requisito_literal"]) for m in artifice_docx),
+        "total_movimentos_mercenario_integrais":len(mercenario_docx),
+        "total_opcoes_mercenario":sum(len(m["opcoes"]) for m in mercenario_docx),
+        "total_requer_mercenario":sum(bool(m["requisito_literal"]) for m in mercenario_docx),
         "total_movimentos_ladino_integrais":len(ladino_docx),
         "total_opcoes_ladino":sum(len(m["opcoes"]) for m in ladino_docx),
         "total_requer_ladino":sum(bool(m["requisito_literal"]) for m in ladino_docx),
@@ -700,6 +708,8 @@ def build():
            files["hack_necromancer_movement_indexes"]:indice_necromante_docx,
            files["hack_artificer_movements"]:artifice_docx,
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
+           files["hack_mercenary_movements"]:mercenario_docx,
+           files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
         files["lore_index_indexes"]:lore_indexes,
         files["lore_chronology"]:lore_timeline,
         files["lore_review_notes"]:lore_reviews,

@@ -2049,6 +2049,77 @@ def validar_artifice_integral():
             "Cadeia de transmutação do ARTÍFICE interrompida.")
     print("ARTÍFICE: 23 movimentos, 32 opções, 59 partes, 7 REQUER; 3 raízes. Sem alteração canônica.")
 
+
+def validar_mercenario_integral():
+    """Confere 31 movimentos de Mercenário, opções, partes e requisitos transitivos."""
+    from hack_movimentos_personagem import build_mercenary_indexes
+    obj=json.loads(gzip.decompress((ROOT/"data/lore/hack-carcaca-dw-mercenario-integrais.json.gz").read_bytes()).decode("utf-8"))
+    inventory=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")
+    require(obj["grupo"]=="MERCENÁRIO" and obj["fonte_sha256"]==inventory["fonte_sha256"],
+            "Fonte do Mercenário não corresponde ao inventário.")
+    moves=obj["movimentos"]
+    originals={m["id"]:m for m in inventory["movimentos"] if m["grupo"]=="MERCENÁRIO"}
+    require(len(moves)==len(originals)==31 and len(unique(moves,"mercenario"))==31,
+            "Movimentos de Mercenário incompletos ou duplicados.")
+    require([m["paragrafo_docx"] for m in moves]==sorted(m["paragrafo_docx"] for m in moves)
+            and moves[0]["paragrafo_docx"]==2736 and moves[-1]["paragrafo_docx"]==2810,
+            "Âncoras de Mercenário modificadas.")
+    require(obj["integridade"]=={"total_movimentos":31,"total_com_requer":11,
+            "total_vinculos_exatos":11,"total_opcoes":37,"total_partes":75},
+            "Contagens do Mercenário divergentes.")
+    by_id={m["id"]:m for m in moves};used=set();edges={}
+    for m in moves:
+        old=originals.get(m["id"])
+        require(old is not None and m["titulo"]==old["titulo"]
+                and m["paragrafo_docx"]==old["paragrafo_docx"]
+                and m["requisito_literal"]==old["requisito_literal"],
+                "Mercenário: título, parágrafo ou REQUER divergiu do manuscrito.")
+        require(m["texto_integral_conferido"] is True
+                and m["estado"]=="transcricao_integral_sem_revisao_mecanica"
+                and m["aplicacao_canonica"] is False,
+                "Mercenário: movimento não pode ser homologado na extração.")
+        require(m["texto_original"]=="\n".join(p["texto"] for p in m["partes"]),
+                "Mercenário: texto original diverge dos trechos.")
+        require(m["opcoes"]==[{"paragrafo_docx":p["paragrafo_docx"],"texto":p["texto"]}
+                for p in m["partes"] if p["tipo"]=="opcao"],
+                "Mercenário: opções perdidas ou alteradas.")
+        require(m["partes"][0]["tipo"]=="corpo"
+                and m["partes"][0]["paragrafo_docx"]==m["paragrafo_docx"],
+                "Mercenário: corpo sem origem.")
+        for part in m["partes"]:
+            require(part["texto"] and part["paragrafo_docx"] not in used,
+                    "Mercenário: trecho vazio ou duplicado.")
+            used.add(part["paragrafo_docx"])
+        req=m["requisito_estruturado"]
+        require(bool(req)==bool(m["requisito_literal"]),"Mercenário: REQUER inferido ou omitido.")
+        if req:
+            require(req["tipo"]=="movimento_exato"
+                    and req["movimento_id"] in originals
+                    and req["titulo_requerido"]==by_id[req["movimento_id"]]["titulo"]
+                    and req["status"]=="correspondencia_exata_na_fonte_pendente_homologacao",
+                    "Mercenário: alvo de REQUER incorreto.")
+            edges[m["id"]]=req["movimento_id"]
+    require(len(used)==75 and sum(len(m["opcoes"]) for m in moves)==37
+            and len(edges)==11,"Mercenário: integridade de partes/requisitos divergente.")
+    for start in edges:
+        visited={start};current=start
+        while current in edges:
+            current=edges[current]
+            require(current not in visited,"Mercenário: ciclo de pré-requisitos.")
+            visited.add(current)
+    index=build_mercenary_indexes(moves)
+    require({k:len(x) for k,x in index["by_raiz_dependencia"].items()}=={
+        "movimento-classe:paragrafo-2736":9,
+        "movimento-classe:paragrafo-2760":2},
+        "Mercenário: dependências de Capitão e O Preço da Guerra indevidamente unificadas.")
+    require(edges["movimento-classe:paragrafo-2802"]=="movimento-classe:paragrafo-2748"
+            and edges["movimento-classe:paragrafo-2748"]=="movimento-classe:paragrafo-2736",
+            "Saque Organizado exige Abordagem, que exige Capitão.")
+    for index_id in (2755,2756,2779):
+        require(not by_id[f"movimento-classe:paragrafo-{index_id}"]["requisito_literal"],
+                "Mercenário: Capitão não é requisito universal.")
+    print("Mercenário: 31 movimentos, 37 opções, 75 partes, 11 REQUER, duas árvores.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2159,6 +2230,7 @@ def main():
     validar_bruxo_integral()
     validar_necromante_integral()
     validar_artifice_integral()
+    validar_mercenario_integral()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
