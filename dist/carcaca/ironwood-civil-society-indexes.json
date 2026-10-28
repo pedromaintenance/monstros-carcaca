@@ -1,0 +1,185 @@
+{
+  "by_categoria": {
+    "circuitos_de_cuidado": [
+      "worldbuilding-xviii:circuito:contas",
+      "worldbuilding-xviii:circuito:despensas",
+      "worldbuilding-xviii:circuito:educacao",
+      "worldbuilding-xviii:circuito:reparos"
+    ],
+    "dilemas": [
+      "worldbuilding-xviii:dilema:aldeia-ou-operacao",
+      "worldbuilding-xviii:dilema:crianca-cartografa",
+      "worldbuilding-xviii:dilema:refugio-sem-voz",
+      "worldbuilding-xviii:dilema:reparo-invisivel"
+    ],
+    "eixos_sociais": [
+      "worldbuilding-xviii:eixo:acolhimento",
+      "worldbuilding-xviii:eixo:governo",
+      "worldbuilding-xviii:eixo:infancia",
+      "worldbuilding-xviii:eixo:oficios",
+      "worldbuilding-xviii:eixo:pertencimento",
+      "worldbuilding-xviii:eixo:religiao",
+      "worldbuilding-xviii:eixo:reservas",
+      "worldbuilding-xviii:eixo:segredo"
+    ],
+    "modelos_de_governanca": [
+      "worldbuilding-xviii:modelo:assembleia-mista",
+      "worldbuilding-xviii:modelo:autonomia-local",
+      "worldbuilding-xviii:modelo:comando-consultivo"
+    ],
+    "relacoes_diplomaticas": [
+      "worldbuilding-xviii:relacao:eldroth",
+      "worldbuilding-xviii:relacao:feericos",
+      "worldbuilding-xviii:relacao:gnomos",
+      "worldbuilding-xviii:relacao:thargrid"
+    ],
+    "vinhetas": [
+      "worldbuilding-xviii:vinheta:conserto",
+      "worldbuilding-xviii:vinheta:mensagem",
+      "worldbuilding-xviii:vinheta:tigela",
+      "worldbuilding-xviii:vinheta:trilha"
+    ]
+  },
+  "by_tema": {
+    "autoridade": [
+      "worldbuilding-xviii:eixo:governo"
+    ],
+    "educacao": [
+      "worldbuilding-xviii:eixo:infancia"
+    ],
+    "informacao": [
+      "worldbuilding-xviii:eixo:segredo"
+    ],
+    "pluralidade": [
+      "worldbuilding-xviii:eixo:pertencimento"
+    ],
+    "refugio": [
+      "worldbuilding-xviii:eixo:acolhimento"
+    ],
+    "religiao": [
+      "worldbuilding-xviii:eixo:religiao"
+    ],
+    "subsistencia": [
+      "worldbuilding-xviii:eixo:reservas"
+    ],
+    "trabalho": [
+      "worldbuilding-xviii:eixo:oficios"
+    ]
+  },
+  "by_eixo": {
+    "worldbuilding-xviii:eixo:acolhimento": [
+      "worldbuilding-xviii:dilema:refugio-sem-voz"
+    ],
+    "worldbuilding-xviii:eixo:governo": [
+      "worldbuilding-xviii:dilema:aldeia-ou-operacao",
+      "worldbuilding-xviii:vinheta:mensagem"
+    ],
+    "worldbuilding-xviii:eixo:infancia": [
+      "worldbuilding-xviii:circuito:educacao",
+      "worldbuilding-xviii:dilema:crianca-cartografa",
+      "worldbuilding-xviii:vinheta:trilha"
+    ],
+    "worldbuilding-xviii:eixo:oficios": [
+      "worldbuilding-xviii:circuito:reparos",
+      "worldbuilding-xviii:dilema:reparo-invisivel",
+      "worldbuilding-xviii:vinheta:conserto"
+    ],
+    "worldbuilding-xviii:eixo:reservas": [
+      "worldbuilding-xviii:circuito:despensas",
+      "worldbuilding-xviii:vinheta:tigela"
+    ],
+    "worldbuilding-xviii:eixo:segredo": [
+      "worldbuilding-xviii:circuito:contas"
+    ]
+  },
+  "by_modelo": {
+    "worldbuilding-xviii:modelo:assembleia-mista": [
+      "worldbuilding-xviii:dilema:crianca-cartografa",
+      "worldbuilding-xviii:dilema:refugio-sem-voz"
+    ],
+    "worldbuilding-xviii:modelo:autonomia-local": [
+      "worldbuilding-xviii:dilema:reparo-invisivel"
+    ],
+    "worldbuilding-xviii:modelo:comando-consultivo": [
+      "worldbuilding-xviii:dilema:aldeia-ou-operacao"
+    ]
+  },
+  "by_pagina_manuscrito": {
+    "16": [
+      "worldbuilding-xviii:relacao:feericos"
+    ],
+    "17": [
+      "worldbuilding-xviii:eixo:acolhimento",
+      "worldbuilding-xviii:relacao:eldroth",
+      "worldbuilding-xviii:relacao:feericos"
+    ],
+    "18": [
+      "worldbuilding-xviii:eixo:governo",
+      "worldbuilding-xviii:eixo:infancia",
+      "worldbuilding-xviii:eixo:pertencimento",
+      "worldbuilding-xviii:eixo:segredo",
+      "worldbuilding-xviii:modelo:assembleia-mista",
+      "worldbuilding-xviii:modelo:autonomia-local",
+      "worldbuilding-xviii:modelo:comando-consultivo",
+      "worldbuilding-xviii:relacao:eldroth"
+    ],
+    "20": [
+      "worldbuilding-xviii:relacao:gnomos"
+    ],
+    "24": [
+      "worldbuilding-xviii:eixo:religiao"
+    ],
+    "6": [
+      "worldbuilding-xviii:relacao:thargrid"
+    ],
+    "7": [
+      "worldbuilding-xviii:eixo:oficios",
+      "worldbuilding-xviii:eixo:reservas",
+      "worldbuilding-xviii:modelo:assembleia-mista",
+      "worldbuilding-xviii:modelo:autonomia-local",
+      "worldbuilding-xviii:modelo:comando-consultivo",
+      "worldbuilding-xviii:relacao:thargrid"
+    ]
+  },
+  "by_estado": {
+    "circuito_nao_quantificado": [
+      "worldbuilding-xviii:circuito:contas",
+      "worldbuilding-xviii:circuito:despensas",
+      "worldbuilding-xviii:circuito:educacao",
+      "worldbuilding-xviii:circuito:reparos"
+    ],
+    "dilema_nao_ocorrido": [
+      "worldbuilding-xviii:dilema:aldeia-ou-operacao",
+      "worldbuilding-xviii:dilema:crianca-cartografa",
+      "worldbuilding-xviii:dilema:refugio-sem-voz",
+      "worldbuilding-xviii:dilema:reparo-invisivel"
+    ],
+    "modelo_alternativo_nao_adotado": [
+      "worldbuilding-xviii:modelo:assembleia-mista",
+      "worldbuilding-xviii:modelo:autonomia-local",
+      "worldbuilding-xviii:modelo:comando-consultivo"
+    ],
+    "proposta_de_historia_social": [
+      "worldbuilding-xviii:eixo:acolhimento",
+      "worldbuilding-xviii:eixo:governo",
+      "worldbuilding-xviii:eixo:infancia",
+      "worldbuilding-xviii:eixo:oficios",
+      "worldbuilding-xviii:eixo:pertencimento",
+      "worldbuilding-xviii:eixo:religiao",
+      "worldbuilding-xviii:eixo:reservas",
+      "worldbuilding-xviii:eixo:segredo"
+    ],
+    "relacao_interpretativa_nao_institucionalizada": [
+      "worldbuilding-xviii:relacao:eldroth",
+      "worldbuilding-xviii:relacao:feericos",
+      "worldbuilding-xviii:relacao:gnomos",
+      "worldbuilding-xviii:relacao:thargrid"
+    ],
+    "vinheta_nao_ocorrida": [
+      "worldbuilding-xviii:vinheta:conserto",
+      "worldbuilding-xviii:vinheta:mensagem",
+      "worldbuilding-xviii:vinheta:tigela",
+      "worldbuilding-xviii:vinheta:trilha"
+    ]
+  }
+}
