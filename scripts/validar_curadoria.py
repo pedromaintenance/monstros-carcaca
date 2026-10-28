@@ -2427,6 +2427,70 @@ def validar_povoamento_costa_sul():
             "Costa Sul perdeu limites factuais de água, culto ou refugiados.")
     print("Costa Sul IV: 33 propostas, 7 categorias, 8 NPCs, ilhas não individualizadas; zero alterações canônicas.")
 
+
+def validar_ecologia_politica_mar_sangue():
+    """Vínculos e autonomia dos povos marinhos sem promoção automática ao cânone."""
+    obj=load("data/propostas/mar-sangue-ecologia-politica-hack.json")
+    counts={"zonas":5,"coletivos":6,"pessoas":8,"pactos":4,
+            "fenomenos":4,"cenas":6,"tramas":3}
+    require(obj["regiao_id"]=="regiao:costa-sul" and
+            obj["estado"]=="propostas_narrativas_nao_canonicas" and
+            obj["aprovacao_autoral"] is False and
+            obj["efeito_automatico_no_canon"] is False,
+            "Ecologia marinha não pode alterar cânone sem aprovação.")
+    require(obj["contagens"]==counts and
+            all(len(obj[k])==v for k,v in counts.items()),
+            "Ecologia política do Mar de Sangue: contagens divergentes.")
+    all_rows=[r for k in counts for r in obj[k]]
+    ids={r["id"] for r in all_rows}
+    require(len(all_rows)==len(ids)==36 and
+            all(r["id"].startswith("mar-sangue:") and r["estado"]=="proposta"
+                for r in all_rows),"IDs da proposta marinha duplicados ou alterados.")
+    classes=load("data/lore/hack-carcaca-dw-inventario-classes-requer.json")["movimentos"]
+    povos=load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]
+    move_ids={x["id"] for x in classes+povos}
+    places={x["id"] for x in load("data/lugares_carcaca.json")["lugares"]}
+    past=load("data/propostas/fronteira-caatinga-costa-sul-hack.json")
+    past_ids={x["id"] for k in ("encontros","pessoas","acordos","fluxos","cenas","tramas")
+              for x in past[k]}
+    caat=load("data/propostas/caatinga-rede-social-hack.json")
+    caat_ids={x["id"] for k in ("comunidades","coletivos","pessoas","pontos_agua","rotas","conflitos","cenas")
+              for x in caat[k]}
+    coasts=load("data/propostas/portomonte-ilhas-costa-sul-hack.json")
+    coast_ids={x["id"] for k in ("espacos","redes","pessoas","praticas","circulacoes","cenas","tramas")
+               for x in coasts[k]}
+    refs=ids|places|past_ids|caat_ids|coast_ids|{"regiao:costa-sul"}
+    for row in all_rows:
+        require(bool(row["nome"]) and bool(row["rotina"]) and bool(row["tensao"]),
+                "Entidade marinha requer atividade e conflito.")
+        require(1<=len(row["referencias_hack"])<=4 and
+                all(x in move_ids for x in row["referencias_hack"]),
+                "Movimento do Hack sem ID de origem.")
+        require(all(x in refs for x in row["ligacoes"]),
+                "Entidade marinha tem ligação órfã: "+row["id"])
+    require(sum(p.get("reutiliza")=="fronteira:pessoa:nilku" for p in obj["pessoas"])==1,
+            "Nilku deve manter vínculo com a proposta anterior.")
+    require(all(z["localizacao_confirmada"] is False for z in obj["zonas"]),
+            "Zonas propostas não são novas cidades subaquáticas oficiais.")
+    require(all(x["instituicao_confirmada"] is False for x in obj["coletivos"]),
+            "Coletivos imaginados não são instituições canônicas.")
+    require(all(x["vigente"] is False for x in obj["pactos"]),
+            "Pactos individuais não são fatos consumados.")
+    require(all(x["ocorrencia_individual_confirmada"] is False for x in obj["fenomenos"]),
+            "Fenômenos regionais não provam episódios particulares.")
+    people={x["id"] for x in obj["pessoas"]}
+    for x in obj["cenas"]:
+        require(all(p in people for p in x["elenco"]) and len(x["escolhas"])>=3,
+                "Cena marinha sem NPCs ou decisões.")
+    scenes={x["id"] for x in obj["cenas"]}
+    require(all(all(y in scenes for y in x["cenas"]) for x in obj["tramas"]),
+            "Trama sem cenas de origem.")
+    fact=" ".join(obj["fatos_documentados"]+obj["limites"]).lower()
+    require("demônios" in fact and "abismo" in fact
+            and "centralizado" in fact and "fronteira" in fact,
+            "Guardas de lore de origem e política marinha ausentes.")
+    print("Mar de Sangue: 36 propostas, 7 grupos, 8 NPCs; sem cidades inventadas nem alteração canônica.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2543,6 +2607,7 @@ def main():
     validar_rede_social_caatinga()
     validar_fronteira_caatinga_costa_sul()
     validar_povoamento_costa_sul()
+    validar_ecologia_politica_mar_sangue()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

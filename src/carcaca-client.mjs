@@ -60,6 +60,30 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getMarSangueSocialEcology(){return byKey("mar_sangue_social_ecology");}
+  async function getMarSangueSocialEcologyIndexes(){return byKey("mar_sangue_social_ecology_indexes");}
+  async function getMarSangueEntity(id){
+    if(typeof id!=="string"||!id.startsWith("mar-sangue:"))return null;
+    const obj=await getMarSangueSocialEcology();
+    for(const categoria of ["zonas","coletivos","pessoas","pactos","fenomenos","cenas","tramas"]){
+      const item=obj[categoria].find(x=>x.id===id);
+      if(item)return {...item,categoria};
+    }
+    return null;
+  }
+  async function searchMarSangueEntities({categoria,povo,aguas,movimentoHack,ligacao,query}={}){
+    const d=await getMarSangueSocialEcology();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    const all=["zonas","coletivos","pessoas","pactos","fenomenos","cenas","tramas"]
+      .flatMap(cat=>d[cat].map(x=>({...x,categoria:cat})));
+    return all.filter(x=>
+      (!categoria||x.categoria===categoria)&&
+      (!povo||x.povo===povo)&&
+      (!aguas||x.aguas===aguas)&&
+      (!movimentoHack||(x.referencias_hack??[]).includes(movimentoHack))&&
+      (!ligacao||(x.ligacoes??[]).includes(ligacao))&&
+      (!query||norm([x.nome,x.rotina,x.tensao].join(" ")).includes(norm(query))));
+  }
   async function getCostaSulSocialFabric(){return byKey("costa_sul_social_fabric");}
   async function getCostaSulSocialFabricIndexes(){return byKey("costa_sul_social_fabric_indexes");}
   async function getCostaSulEntity(id){
@@ -1087,6 +1111,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getFrontierEntity,searchFrontierEntities,
           getCostaSulSocialFabric,getCostaSulSocialFabricIndexes,
           getCostaSulEntity,searchCostaSulEntities,
+          getMarSangueSocialEcology,getMarSangueSocialEcologyIndexes,
+          getMarSangueEntity,searchMarSangueEntities,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
           searchWarlockMovements,getWarlockRequirementPreview,
           getBardRequirementPreview,

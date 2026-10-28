@@ -249,6 +249,29 @@ def build():
     caatinga_rede_social=load("data/propostas/caatinga-rede-social-hack.json")
     fronteira=load("data/propostas/fronteira-caatinga-costa-sul-hack.json")
     costa_sul=load("data/propostas/portomonte-ilhas-costa-sul-hack.json")
+    mar_sangue=load("data/propostas/mar-sangue-ecologia-politica-hack.json")
+    tipos_mar=("zonas","coletivos","pessoas","pactos","fenomenos","cenas","tramas")
+    entidades_mar=[
+       {**entry,"categoria":tipo}
+       for tipo in tipos_mar for entry in mar_sangue[tipo]
+    ]
+    def indexar_mar(campo):
+        idx=defaultdict(set)
+        for x in entidades_mar:
+            val=x.get(campo,[])
+            values=val if isinstance(val,list) else [val]
+            for v in values:
+                if v:idx[str(v)].add(x["id"])
+        return {k:sorted(v) for k,v in sorted(idx.items())}
+    indice_mar_sangue={
+       "by_categoria":indexar_mar("categoria"),
+       "by_povo":indexar_mar("povo"),
+       "by_aguas":indexar_mar("aguas"),
+       "by_movimento_hack":indexar_mar("referencias_hack"),
+       "by_ligacao":indexar_mar("ligacoes")
+    }
+    if len(entidades_mar)!=36 or len(indice_mar_sangue["by_categoria"])!=7:
+        raise ValueError("Mar de Sangue deve possuir 36 propostas em sete categorias")
     categorias_costa=("espacos","redes","pessoas","praticas","circulacoes","cenas","tramas")
     entidades_costa=[
         {**entry,"categoria":categoria}
@@ -634,6 +657,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "mar_sangue_social_ecology":"mar-sangue-social-ecology.json",
+        "mar_sangue_social_ecology_indexes":"mar-sangue-social-ecology-indexes.json",
         "costa_sul_social_fabric":"costa-sul-social-fabric.json",
         "costa_sul_social_fabric_indexes":"costa-sul-social-fabric-indexes.json",
         "frontier_caatinga_costa_sul":"frontier-caatinga-costa-sul.json",
@@ -742,6 +767,9 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_entidades_mar_sangue_propostas":len(entidades_mar),
+        "total_coletivos_mar_sangue_propostos":len(mar_sangue["coletivos"]),
+        "total_pessoas_mar_sangue_propostas":len(mar_sangue["pessoas"]),
         "total_entidades_costa_sul_propostas":len(entidades_costa),
         "total_espacos_costa_sul_propostos":len(costa_sul["espacos"]),
         "total_redes_insulares_propostas":len(costa_sul["redes"]),
@@ -839,6 +867,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["mar_sangue_social_ecology"]:mar_sangue,
+           files["mar_sangue_social_ecology_indexes"]:indice_mar_sangue,
            files["costa_sul_social_fabric"]:costa_sul,
            files["costa_sul_social_fabric_indexes"]:indices_costa,
            files["frontier_caatinga_costa_sul"]:fronteira,

@@ -414,3 +414,12 @@ Fonte `data/propostas/fronteira-caatinga-costa-sul-hack.json`, documentação [F
 **33 elementos sociais propostos:** seis microespaços em Portomonte, três redes insulares não individualizadas, oito personagens (cinco de ciclos anteriores), quatro práticas sociais, quatro circulações hipotéticas, cinco cenas e três tramas de campanha. Dados em `data/propostas/portomonte-ilhas-costa-sul-hack.json`; publicação `dist/carcaca/costa-sul-social-fabric.json` e índices; API `getCostaSulSocialFabric` e `searchCostaSulEntities`. Dossiê: [Portomonte e as Ilhas](docs/PORTOMONTE_ILHAS_POVOAMENTO_CICLO4.md).
 
 A água de Deméter está documentada para lavouras e não implica potabilidade doméstica; ilhas, rotas, movimentos atribuídos a NPCs, comércio específico e acolhimento de refugiados em Portomonte não foram estabelecidos como cânone.
+
+
+## Povoamento V — Ecologia política do Mar de Sangue
+
+**36 propostas narrativas** em sete categorias: cinco zonas sociais hipotéticas, seis coletivos, oito personagens, quatro pactos, quatro fenômenos da fronteira marítima, seis cenas e três tramas. A fonte `data/propostas/mar-sangue-ecologia-politica-hack.json` usa movimentos dos povos marinhos do Hack e se liga às fichas da Costa Sul e da fronteira (inclusive Nilku).
+
+Distribuição: `dist/carcaca/mar-sangue-social-ecology.json` e `dist/carcaca/mar-sangue-social-ecology-indexes.json`. API `getMarSangueSocialEcology`, `getMarSangueEntity` e `searchMarSangueEntities`. Dossiê [Mar de Sangue — Ecologia Política](docs/MAR_SANGUE_ECOLOGIA_POLITICA_CICLO5.md).
+
+Todos os grupos e episódios individuais continuam como propostas: abissais não são demônios do Abismo, os povos marinhos não possuem governo unificado e o limite entre mares é móvel.
