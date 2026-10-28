@@ -60,6 +60,24 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getEldrothCulturalAtlas(){return byKey("eldroth_cultural_atlas");}
+  async function getEldrothCulturalAtlasIndexes(){return byKey("eldroth_cultural_atlas_indexes");}
+  async function getEldrothCulturalAxis(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xiv:eixo:"))return null;
+    const data=await getEldrothCulturalAtlas();
+    return data.eixos.find(e=>e.id===id)??null;
+  }
+  async function searchEldrothCulturalAxes({areaId,efeito,pagina,query}={}){
+    const data=await getEldrothCulturalAtlas();
+    const normal=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return data.eixos.filter(e=>
+      (!areaId||e.area_id===areaId)&&
+      (!efeito||e.efeitos_na_ambientacao.includes(efeito))&&
+      (pagina===undefined||e.camada_manuscrito.some(x=>x.paginas.includes(Number(pagina))))&&
+      (!query||normal([e.tema,e.leitura_editorial,...e.perguntas_abertas,
+        ...e.fatos_textuais.map(x=>x.afirmacao),...e.camada_manuscrito.map(x=>x.afirmacao)]
+        .join(" ")).includes(normal(query))));
+  }
   async function getEldrothDWStatblocks(){return byKey("eldroth_dw_statblocks");}
   async function getEldrothDWStatblockIndexes(){return byKey("eldroth_dw_statblock_indexes");}
   async function getEldrothDWStatblock(id){
@@ -1312,6 +1330,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getEldrothCulturalAtlas,getEldrothCulturalAtlasIndexes,
+          getEldrothCulturalAxis,searchEldrothCulturalAxes,
           getEldrothDWStatblocks,getEldrothDWStatblockIndexes,
           getEldrothDWStatblock,searchEldrothDWStatblocks,
           getEldrothMonsterEcology,getEldrothMonsterEcologyIndexes,
