@@ -1,0 +1,429 @@
+{
+  "by_categoria": {
+    "arcos": [
+      "diplomacia-mar:arco:cidade-que-paga",
+      "diplomacia-mar:arco:coroa-de-conchas",
+      "diplomacia-mar:arco:paz-sem-coroa"
+    ],
+    "casas": [
+      "diplomacia-mar:casa:decima",
+      "diplomacia-mar:casa:eco-fendido",
+      "diplomacia-mar:casa:escama-partida",
+      "diplomacia-mar:casa:nome-proprio",
+      "diplomacia-mar:casa:tres-recifes"
+    ],
+    "cenas": [
+      "diplomacia-mar:cena:heranca-das-escamas",
+      "diplomacia-mar:cena:mensagem-tres-vozes",
+      "diplomacia-mar:cena:parlamento-de-superficie",
+      "diplomacia-mar:cena:prodigio-em-voto",
+      "diplomacia-mar:cena:recife-sem-bandeira",
+      "diplomacia-mar:cena:substituto-do-sacerdote"
+    ],
+    "disputas": [
+      "diplomacia-mar:sucessao:capitao-do-recife",
+      "diplomacia-mar:sucessao:herdeiro-que-recusa",
+      "diplomacia-mar:sucessao:sinal-sem-dono",
+      "diplomacia-mar:sucessao:trono-vazio",
+      "diplomacia-mar:sucessao:voz-sem-testemunha"
+    ],
+    "missoes": [
+      "diplomacia-mar:missao:buscar-versoes",
+      "diplomacia-mar:missao:evacuar-recife",
+      "diplomacia-mar:missao:proteger-testemunhas",
+      "diplomacia-mar:missao:renegociar-tributo"
+    ],
+    "pessoas": [
+      "diplomacia-mar:pessoa:irena",
+      "diplomacia-mar:pessoa:kalira",
+      "diplomacia-mar:pessoa:maelis",
+      "diplomacia-mar:pessoa:maura",
+      "diplomacia-mar:pessoa:nilku",
+      "diplomacia-mar:pessoa:orvek",
+      "diplomacia-mar:pessoa:rhel",
+      "diplomacia-mar:pessoa:serun",
+      "diplomacia-mar:pessoa:tessuk"
+    ],
+    "polos": [
+      "diplomacia-mar:polo:canto-de-lume",
+      "diplomacia-mar:polo:cupula-dos-icones",
+      "diplomacia-mar:polo:fenda-da-decima",
+      "diplomacia-mar:polo:velarium"
+    ],
+    "tratados": [
+      "diplomacia-mar:tratado:corpo-livre",
+      "diplomacia-mar:tratado:livro-de-tributos",
+      "diplomacia-mar:tratado:prova-do-prodigio",
+      "diplomacia-mar:tratado:recifes-autonomos",
+      "diplomacia-mar:tratado:voz-sem-mapa"
+    ]
+  },
+  "by_aguas": {
+    "azuis": [
+      "diplomacia-mar:polo:canto-de-lume",
+      "diplomacia-mar:polo:velarium"
+    ],
+    "vermelhas": [
+      "diplomacia-mar:polo:cupula-dos-icones",
+      "diplomacia-mar:polo:fenda-da-decima"
+    ]
+  },
+  "by_povo": {
+    "abissal": [
+      "diplomacia-mar:pessoa:maura",
+      "diplomacia-mar:pessoa:rhel"
+    ],
+    "descendente_abissal": [
+      "diplomacia-mar:pessoa:serun"
+    ],
+    "kuo-toa": [
+      "diplomacia-mar:pessoa:nilku",
+      "diplomacia-mar:pessoa:tessuk"
+    ],
+    "sereia": [
+      "diplomacia-mar:pessoa:irena",
+      "diplomacia-mar:pessoa:maelis"
+    ],
+    "tritao": [
+      "diplomacia-mar:pessoa:kalira",
+      "diplomacia-mar:pessoa:orvek"
+    ]
+  },
+  "by_bloco": {
+    "autonomia": [
+      "diplomacia-mar:casa:nome-proprio"
+    ],
+    "defesa": [
+      "diplomacia-mar:casa:tres-recifes"
+    ],
+    "fe": [
+      "diplomacia-mar:casa:escama-partida"
+    ],
+    "memoria": [
+      "diplomacia-mar:casa:eco-fendido"
+    ],
+    "tributo": [
+      "diplomacia-mar:casa:decima"
+    ]
+  },
+  "by_movimento_hack": {
+    "movimento-povo:paragrafo-913": [
+      "diplomacia-mar:arco:coroa-de-conchas",
+      "diplomacia-mar:casa:escama-partida",
+      "diplomacia-mar:cena:prodigio-em-voto",
+      "diplomacia-mar:missao:proteger-testemunhas",
+      "diplomacia-mar:pessoa:nilku",
+      "diplomacia-mar:pessoa:tessuk",
+      "diplomacia-mar:polo:cupula-dos-icones",
+      "diplomacia-mar:sucessao:sinal-sem-dono",
+      "diplomacia-mar:tratado:prova-do-prodigio"
+    ],
+    "movimento-povo:paragrafo-920": [
+      "diplomacia-mar:cena:prodigio-em-voto",
+      "diplomacia-mar:pessoa:tessuk",
+      "diplomacia-mar:polo:cupula-dos-icones",
+      "diplomacia-mar:sucessao:sinal-sem-dono",
+      "diplomacia-mar:tratado:prova-do-prodigio"
+    ],
+    "movimento-povo:paragrafo-921": [
+      "diplomacia-mar:casa:escama-partida",
+      "diplomacia-mar:missao:proteger-testemunhas",
+      "diplomacia-mar:pessoa:nilku",
+      "diplomacia-mar:pessoa:tessuk",
+      "diplomacia-mar:polo:cupula-dos-icones",
+      "diplomacia-mar:tratado:prova-do-prodigio"
+    ],
+    "movimento-povo:paragrafo-922": [
+      "diplomacia-mar:casa:escama-partida",
+      "diplomacia-mar:cena:prodigio-em-voto",
+      "diplomacia-mar:sucessao:sinal-sem-dono"
+    ],
+    "movimento-povo:paragrafo-924": [
+      "diplomacia-mar:arco:cidade-que-paga",
+      "diplomacia-mar:casa:nome-proprio",
+      "diplomacia-mar:cena:heranca-das-escamas",
+      "diplomacia-mar:pessoa:serun",
+      "diplomacia-mar:sucessao:herdeiro-que-recusa",
+      "diplomacia-mar:tratado:corpo-livre"
+    ],
+    "movimento-povo:paragrafo-931": [
+      "diplomacia-mar:pessoa:serun",
+      "diplomacia-mar:tratado:corpo-livre"
+    ],
+    "movimento-povo:paragrafo-932": [
+      "diplomacia-mar:casa:decima",
+      "diplomacia-mar:cena:substituto-do-sacerdote",
+      "diplomacia-mar:missao:renegociar-tributo",
+      "diplomacia-mar:pessoa:maura",
+      "diplomacia-mar:polo:fenda-da-decima",
+      "diplomacia-mar:sucessao:trono-vazio",
+      "diplomacia-mar:tratado:livro-de-tributos"
+    ],
+    "movimento-povo:paragrafo-933": [
+      "diplomacia-mar:arco:coroa-de-conchas",
+      "diplomacia-mar:casa:nome-proprio",
+      "diplomacia-mar:cena:heranca-das-escamas",
+      "diplomacia-mar:cena:substituto-do-sacerdote",
+      "diplomacia-mar:pessoa:rhel",
+      "diplomacia-mar:polo:fenda-da-decima",
+      "diplomacia-mar:sucessao:herdeiro-que-recusa",
+      "diplomacia-mar:sucessao:trono-vazio",
+      "diplomacia-mar:tratado:corpo-livre",
+      "diplomacia-mar:tratado:livro-de-tributos"
+    ],
+    "movimento-povo:paragrafo-934": [
+      "diplomacia-mar:pessoa:rhel"
+    ],
+    "movimento-povo:paragrafo-936": [
+      "diplomacia-mar:arco:cidade-que-paga",
+      "diplomacia-mar:arco:coroa-de-conchas",
+      "diplomacia-mar:casa:decima",
+      "diplomacia-mar:cena:heranca-das-escamas",
+      "diplomacia-mar:cena:parlamento-de-superficie",
+      "diplomacia-mar:cena:substituto-do-sacerdote",
+      "diplomacia-mar:missao:renegociar-tributo",
+      "diplomacia-mar:pessoa:maura",
+      "diplomacia-mar:polo:fenda-da-decima",
+      "diplomacia-mar:sucessao:herdeiro-que-recusa",
+      "diplomacia-mar:sucessao:trono-vazio",
+      "diplomacia-mar:tratado:livro-de-tributos"
+    ],
+    "movimento-povo:paragrafo-941": [
+      "diplomacia-mar:arco:paz-sem-coroa",
+      "diplomacia-mar:casa:tres-recifes",
+      "diplomacia-mar:cena:recife-sem-bandeira",
+      "diplomacia-mar:missao:evacuar-recife",
+      "diplomacia-mar:pessoa:kalira",
+      "diplomacia-mar:pessoa:orvek",
+      "diplomacia-mar:polo:velarium",
+      "diplomacia-mar:sucessao:capitao-do-recife"
+    ],
+    "movimento-povo:paragrafo-942": [
+      "diplomacia-mar:pessoa:orvek",
+      "diplomacia-mar:polo:canto-de-lume",
+      "diplomacia-mar:tratado:recifes-autonomos"
+    ],
+    "movimento-povo:paragrafo-943": [
+      "diplomacia-mar:casa:tres-recifes",
+      "diplomacia-mar:sucessao:capitao-do-recife"
+    ],
+    "movimento-povo:paragrafo-944": [
+      "diplomacia-mar:cena:recife-sem-bandeira",
+      "diplomacia-mar:missao:evacuar-recife",
+      "diplomacia-mar:pessoa:kalira"
+    ],
+    "movimento-povo:paragrafo-945": [
+      "diplomacia-mar:arco:cidade-que-paga",
+      "diplomacia-mar:arco:paz-sem-coroa",
+      "diplomacia-mar:casa:tres-recifes",
+      "diplomacia-mar:cena:mensagem-tres-vozes",
+      "diplomacia-mar:cena:parlamento-de-superficie",
+      "diplomacia-mar:cena:recife-sem-bandeira",
+      "diplomacia-mar:missao:evacuar-recife",
+      "diplomacia-mar:pessoa:irena",
+      "diplomacia-mar:pessoa:orvek",
+      "diplomacia-mar:polo:velarium",
+      "diplomacia-mar:sucessao:capitao-do-recife",
+      "diplomacia-mar:tratado:recifes-autonomos"
+    ],
+    "movimento-povo:paragrafo-947": [
+      "diplomacia-mar:casa:eco-fendido",
+      "diplomacia-mar:cena:mensagem-tres-vozes",
+      "diplomacia-mar:missao:buscar-versoes",
+      "diplomacia-mar:pessoa:maelis",
+      "diplomacia-mar:polo:canto-de-lume",
+      "diplomacia-mar:sucessao:voz-sem-testemunha",
+      "diplomacia-mar:tratado:voz-sem-mapa"
+    ],
+    "movimento-povo:paragrafo-948": [
+      "diplomacia-mar:arco:paz-sem-coroa",
+      "diplomacia-mar:casa:eco-fendido",
+      "diplomacia-mar:cena:mensagem-tres-vozes",
+      "diplomacia-mar:cena:parlamento-de-superficie",
+      "diplomacia-mar:missao:buscar-versoes",
+      "diplomacia-mar:pessoa:irena",
+      "diplomacia-mar:pessoa:maelis",
+      "diplomacia-mar:polo:canto-de-lume",
+      "diplomacia-mar:polo:velarium",
+      "diplomacia-mar:sucessao:voz-sem-testemunha",
+      "diplomacia-mar:tratado:recifes-autonomos",
+      "diplomacia-mar:tratado:voz-sem-mapa"
+    ]
+  },
+  "by_referencia": {
+    "costa-sul:pessoa:antera": [
+      "diplomacia-mar:arco:cidade-que-paga",
+      "diplomacia-mar:cena:parlamento-de-superficie"
+    ],
+    "costa-sul:rede:casco": [
+      "diplomacia-mar:tratado:voz-sem-mapa"
+    ],
+    "diplomacia-mar:casa:decima": [
+      "diplomacia-mar:tratado:livro-de-tributos"
+    ],
+    "diplomacia-mar:casa:nome-proprio": [
+      "diplomacia-mar:sucessao:herdeiro-que-recusa",
+      "diplomacia-mar:tratado:corpo-livre"
+    ],
+    "diplomacia-mar:pessoa:irena": [
+      "diplomacia-mar:cena:mensagem-tres-vozes",
+      "diplomacia-mar:cena:parlamento-de-superficie",
+      "diplomacia-mar:sucessao:voz-sem-testemunha"
+    ],
+    "diplomacia-mar:pessoa:kalira": [
+      "diplomacia-mar:cena:recife-sem-bandeira",
+      "diplomacia-mar:missao:evacuar-recife",
+      "diplomacia-mar:sucessao:capitao-do-recife"
+    ],
+    "diplomacia-mar:pessoa:maelis": [
+      "diplomacia-mar:cena:mensagem-tres-vozes",
+      "diplomacia-mar:missao:buscar-versoes",
+      "diplomacia-mar:sucessao:voz-sem-testemunha",
+      "diplomacia-mar:tratado:voz-sem-mapa"
+    ],
+    "diplomacia-mar:pessoa:maura": [
+      "diplomacia-mar:cena:substituto-do-sacerdote",
+      "diplomacia-mar:missao:renegociar-tributo",
+      "diplomacia-mar:sucessao:trono-vazio"
+    ],
+    "diplomacia-mar:pessoa:nilku": [
+      "diplomacia-mar:cena:prodigio-em-voto",
+      "diplomacia-mar:missao:proteger-testemunhas",
+      "diplomacia-mar:sucessao:sinal-sem-dono",
+      "diplomacia-mar:tratado:prova-do-prodigio"
+    ],
+    "diplomacia-mar:pessoa:orvek": [
+      "diplomacia-mar:cena:mensagem-tres-vozes",
+      "diplomacia-mar:cena:recife-sem-bandeira",
+      "diplomacia-mar:missao:evacuar-recife",
+      "diplomacia-mar:sucessao:capitao-do-recife"
+    ],
+    "diplomacia-mar:pessoa:rhel": [
+      "diplomacia-mar:cena:heranca-das-escamas",
+      "diplomacia-mar:cena:substituto-do-sacerdote",
+      "diplomacia-mar:sucessao:herdeiro-que-recusa",
+      "diplomacia-mar:sucessao:trono-vazio"
+    ],
+    "diplomacia-mar:pessoa:serun": [
+      "diplomacia-mar:arco:cidade-que-paga",
+      "diplomacia-mar:cena:heranca-das-escamas",
+      "diplomacia-mar:sucessao:herdeiro-que-recusa",
+      "diplomacia-mar:tratado:corpo-livre"
+    ],
+    "diplomacia-mar:pessoa:tessuk": [
+      "diplomacia-mar:cena:prodigio-em-voto",
+      "diplomacia-mar:missao:proteger-testemunhas",
+      "diplomacia-mar:sucessao:sinal-sem-dono",
+      "diplomacia-mar:tratado:prova-do-prodigio"
+    ],
+    "diplomacia-mar:polo:canto-de-lume": [
+      "diplomacia-mar:arco:paz-sem-coroa",
+      "diplomacia-mar:sucessao:voz-sem-testemunha",
+      "diplomacia-mar:tratado:recifes-autonomos"
+    ],
+    "diplomacia-mar:polo:cupula-dos-icones": [
+      "diplomacia-mar:arco:coroa-de-conchas",
+      "diplomacia-mar:sucessao:sinal-sem-dono"
+    ],
+    "diplomacia-mar:polo:fenda-da-decima": [
+      "diplomacia-mar:arco:coroa-de-conchas",
+      "diplomacia-mar:sucessao:trono-vazio",
+      "diplomacia-mar:tratado:livro-de-tributos"
+    ],
+    "diplomacia-mar:polo:velarium": [
+      "diplomacia-mar:arco:paz-sem-coroa",
+      "diplomacia-mar:sucessao:capitao-do-recife",
+      "diplomacia-mar:tratado:recifes-autonomos"
+    ],
+    "diplomacia-mar:tratado:livro-de-tributos": [
+      "diplomacia-mar:missao:renegociar-tributo"
+    ],
+    "diplomacia-mar:tratado:voz-sem-mapa": [
+      "diplomacia-mar:missao:buscar-versoes"
+    ],
+    "fronteira:pessoa:nilku": [
+      "diplomacia-mar:pessoa:nilku"
+    ],
+    "lugar:cavernas-kuo-toa": [
+      "diplomacia-mar:pessoa:tessuk",
+      "diplomacia-mar:polo:cupula-dos-icones"
+    ],
+    "lugar:ilhas-costa-sul": [
+      "diplomacia-mar:pessoa:irena",
+      "diplomacia-mar:polo:canto-de-lume",
+      "diplomacia-mar:polo:velarium"
+    ],
+    "mar-sangue:coletivo:cantoras": [
+      "diplomacia-mar:casa:eco-fendido",
+      "diplomacia-mar:pessoa:irena",
+      "diplomacia-mar:polo:canto-de-lume"
+    ],
+    "mar-sangue:coletivo:contadores": [
+      "diplomacia-mar:casa:decima"
+    ],
+    "mar-sangue:coletivo:familias": [
+      "diplomacia-mar:casa:nome-proprio"
+    ],
+    "mar-sangue:coletivo:patrulha": [
+      "diplomacia-mar:casa:tres-recifes",
+      "diplomacia-mar:pessoa:orvek"
+    ],
+    "mar-sangue:coletivo:sinal": [
+      "diplomacia-mar:casa:escama-partida",
+      "diplomacia-mar:pessoa:tessuk"
+    ],
+    "mar-sangue:pessoa:kalira": [
+      "diplomacia-mar:casa:tres-recifes",
+      "diplomacia-mar:pessoa:kalira"
+    ],
+    "mar-sangue:pessoa:maelis": [
+      "diplomacia-mar:casa:eco-fendido",
+      "diplomacia-mar:pessoa:maelis"
+    ],
+    "mar-sangue:pessoa:maura": [
+      "diplomacia-mar:casa:decima",
+      "diplomacia-mar:pessoa:maura",
+      "diplomacia-mar:polo:fenda-da-decima"
+    ],
+    "mar-sangue:pessoa:nilku": [
+      "diplomacia-mar:casa:escama-partida",
+      "diplomacia-mar:pessoa:nilku"
+    ],
+    "mar-sangue:pessoa:rhel": [
+      "diplomacia-mar:pessoa:rhel"
+    ],
+    "mar-sangue:pessoa:serun": [
+      "diplomacia-mar:casa:nome-proprio",
+      "diplomacia-mar:pessoa:serun"
+    ],
+    "mar-sangue:zona:correntes": [
+      "diplomacia-mar:polo:velarium"
+    ],
+    "mar-sangue:zona:santuario": [
+      "diplomacia-mar:polo:cupula-dos-icones"
+    ],
+    "mar-sangue:zona:tributo": [
+      "diplomacia-mar:polo:fenda-da-decima"
+    ]
+  },
+  "by_personagem_reutilizado": {
+    "mar-sangue:pessoa:kalira": [
+      "diplomacia-mar:pessoa:kalira"
+    ],
+    "mar-sangue:pessoa:maelis": [
+      "diplomacia-mar:pessoa:maelis"
+    ],
+    "mar-sangue:pessoa:maura": [
+      "diplomacia-mar:pessoa:maura"
+    ],
+    "mar-sangue:pessoa:nilku": [
+      "diplomacia-mar:pessoa:nilku"
+    ],
+    "mar-sangue:pessoa:rhel": [
+      "diplomacia-mar:pessoa:rhel"
+    ],
+    "mar-sangue:pessoa:serun": [
+      "diplomacia-mar:pessoa:serun"
+    ]
+  }
+}

@@ -1,0 +1,945 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Diplomacia submersa, sucessões e tratados no Mar de Sangue",
+  "regiao_id": "regiao:costa-sul",
+  "estado": "propostas_narrativas_nao_canonicas",
+  "anotacao": "Nomes de polos, casas, crises, tratados e agentes novos são hipóteses criativas. Não são cidades ou instituições já cadastradas na lore canônica.",
+  "fatos_documentados": [
+    "Há cidades autônomas de tritões e sereias nas águas azuis, algumas relacionadas a comunidades insulares; não existe reino marinho centralizado.",
+    "Os tritões defendem recifes, rotas e a fronteira móvel; as sereias preservam genealogias, navegação e mensagens por cantos.",
+    "Abissais marinhos são anfíbios teocráticos, não demônios do Abismo; usam pactos e tributos de longo prazo para ganhar influência e podem capturar escravos.",
+    "Os kuo-toa possuem arcebispos, açoitadores e monitores; a fé coletiva pode produzir manifestações reais; sua cultura não exige que todos os indivíduos concordem com o sacerdócio.",
+    "A Mudança do Oceano pode manifestar-se em descendentes de abissais; a interpretação de um destino sacerdotal é atribuída às comunidades dominadas por Daegon.",
+    "A fronteira entre águas vermelhas e azuis muda por correntes, tempestades e magia; a soberania sobre recifes pode tornar-se instável."
+  ],
+  "fontes_documentais": [
+    "Hack Carcaça Dungeon World(1).docx (Capítulo I e movimentos de povos)",
+    "data/lore/hack-carcaca-dw-movimentos-povos-integrais.json",
+    "data/propostas/mar-sangue-ecologia-politica-hack.json",
+    "data/propostas/portomonte-ilhas-costa-sul-hack.json",
+    "data/propostas/fronteira-caatinga-costa-sul-hack.json"
+  ],
+  "continuidades": [
+    "mar-sangue:pessoa:nilku",
+    "mar-sangue:pessoa:maura",
+    "mar-sangue:pessoa:rhel",
+    "mar-sangue:pessoa:kalira",
+    "mar-sangue:pessoa:maelis",
+    "mar-sangue:pessoa:serun",
+    "costa-sul:pessoa:antera"
+  ],
+  "contagens": {
+    "polos": 4,
+    "casas": 5,
+    "pessoas": 9,
+    "disputas": 5,
+    "tratados": 5,
+    "cenas": 6,
+    "missoes": 4,
+    "arcos": 3
+  },
+  "polos": [
+    {
+      "id": "diplomacia-mar:polo:velarium",
+      "nome": "Velarium dos Corais Juramentados",
+      "contexto_proposto": "Modelo de cidade autônoma proposta entre recifes de águas azuis, com famílias tritãs e sereias e sem localização estabelecida.",
+      "vida_ordinaria": "Defensores reparam barreiras, mensageiras cantam genealogias e trabalhadores discutem proteção aos recifes vizinhos.",
+      "questao_politica": "Uma ala deseja um único comando militar; outras famílias temem perder o direito de se retirar de alianças.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-945",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "mar-sangue:zona:correntes"
+      ],
+      "estado": "proposta_nao_canonica",
+      "aguas": "azuis",
+      "representacao": "delegacoes_de_cidades_autonomas",
+      "cidade_confirmada": false
+    },
+    {
+      "id": "diplomacia-mar:polo:canto-de-lume",
+      "nome": "Canto de Lume Fundo",
+      "contexto_proposto": "Modelo de cidade-recife proposta em cânion de águas azuis, cuja administração depende de transmissão oral e pactos públicos.",
+      "vida_ordinaria": "Arquivistas sereias revisam canções de rotas; guardas tritões inspecionam risco de corrupção nas entradas.",
+      "questao_politica": "Uma canção reconhece direito de passagem que a patrulha considera perigoso.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948",
+        "movimento-povo:paragrafo-942"
+      ],
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "mar-sangue:coletivo:cantoras"
+      ],
+      "estado": "proposta_nao_canonica",
+      "aguas": "azuis",
+      "representacao": "conselhos_de_voz_e_defesa",
+      "cidade_confirmada": false
+    },
+    {
+      "id": "diplomacia-mar:polo:fenda-da-decima",
+      "nome": "Fenda da Décima Concha",
+      "contexto_proposto": "Modelo de polo cívico abissal proposto em águas profundas corrompidas, sem cidade canônica nomeada.",
+      "vida_ordinaria": "Escribas conferem tributos e testemunhas discutem privilégios concedidos a linhagens costeiras.",
+      "questao_politica": "Uma sucessão sacerdotal hipotética pode fazer toda dívida antiga mudar de significado.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-933",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "mar-sangue:zona:tributo",
+        "mar-sangue:pessoa:maura"
+      ],
+      "estado": "proposta_nao_canonica",
+      "aguas": "vermelhas",
+      "representacao": "sacerdocio_e_pactuantes",
+      "cidade_confirmada": false
+    },
+    {
+      "id": "diplomacia-mar:polo:cupula-dos-icones",
+      "nome": "Cúpula dos Ícones Discordantes",
+      "contexto_proposto": "Modelo de cidade santuário kuo-toa sob liturgia de Daegon, não comprovação de metrópole individual.",
+      "vida_ordinaria": "Artífices restauram imagens, monitores verificam cerimônias e famílias interpretam sinais sobrenaturais.",
+      "questao_politica": "Um prodígio público torna o controle de um ícone questão de governo.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "lugar:cavernas-kuo-toa",
+        "mar-sangue:zona:santuario"
+      ],
+      "estado": "proposta_nao_canonica",
+      "aguas": "vermelhas",
+      "representacao": "arcebispos_monitores_e_fieis",
+      "cidade_confirmada": false
+    }
+  ],
+  "casas": [
+    {
+      "id": "diplomacia-mar:casa:decima",
+      "nome": "Círculo da Décima Concha",
+      "contexto_proposto": "Famílias e negociadores abissais ligados a cobranças de passagem; não é casa hereditária formal estabelecida.",
+      "vida_ordinaria": "Guardam testemunhos de promessas e reconstroem genealogias de devedores.",
+      "questao_politica": "Querem que sucessores herdem créditos mesmo quando ninguém herdou proteção.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:contadores",
+        "mar-sangue:pessoa:maura"
+      ],
+      "estado": "proposta_nao_canonica",
+      "bloco": "tributo",
+      "entidade_reconhecida": false
+    },
+    {
+      "id": "diplomacia-mar:casa:eco-fendido",
+      "nome": "Casa do Eco Fendido",
+      "contexto_proposto": "Linhagem política proposta de sereias que preservam cantos históricos, sem soberania sobre outras cidades.",
+      "vida_ordinaria": "Cantoras aprendem versões distintas de uma mesma carta de navegação.",
+      "questao_politica": "Uma memória antiga contradiz o direito que um tritão reivindica para fechar uma passagem.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:cantoras",
+        "mar-sangue:pessoa:maelis"
+      ],
+      "estado": "proposta_nao_canonica",
+      "bloco": "memoria",
+      "entidade_reconhecida": false
+    },
+    {
+      "id": "diplomacia-mar:casa:escama-partida",
+      "nome": "Clã da Escama Partida",
+      "contexto_proposto": "Aliança provisória proposta entre devotos kuo-toa e artesãos que questionam quem interpreta prodígios.",
+      "vida_ordinaria": "Membros discutem quais símbolos precisam de testemunhas antes de virar autoridade.",
+      "questao_politica": "A contestação pode ser tratada como heresia mesmo quando ninguém renuncia à fé.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-921",
+        "movimento-povo:paragrafo-922"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:sinal",
+        "mar-sangue:pessoa:nilku"
+      ],
+      "estado": "proposta_nao_canonica",
+      "bloco": "fe",
+      "entidade_reconhecida": false
+    },
+    {
+      "id": "diplomacia-mar:casa:tres-recifes",
+      "nome": "Juramentados dos Três Recifes",
+      "contexto_proposto": "Rede defensiva tritã proposta entre cidades autônomas, sem generalato supracívico.",
+      "vida_ordinaria": "Enviam patrulhas por turnos e negociam quem pode requisitar embarcações.",
+      "questao_politica": "A defesa comum pode servir de pretexto para retirar autonomia de cidades menores.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-943",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:patrulha",
+        "mar-sangue:pessoa:kalira"
+      ],
+      "estado": "proposta_nao_canonica",
+      "bloco": "defesa",
+      "entidade_reconhecida": false
+    },
+    {
+      "id": "diplomacia-mar:casa:nome-proprio",
+      "nome": "Famílias do Nome Próprio",
+      "contexto_proposto": "Descendentes de abissais e pessoas da superfície que propõem proteção à autodeterminação.",
+      "vida_ordinaria": "Registam escolhas individuais na Mudança do Oceano, mas recusam promessas feitas em nome de crianças.",
+      "questao_politica": "Sacerdotes querem chamar a proteção familiar de sabotagem a Daegon.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-933"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:familias",
+        "mar-sangue:pessoa:serun"
+      ],
+      "estado": "proposta_nao_canonica",
+      "bloco": "autonomia",
+      "entidade_reconhecida": false
+    }
+  ],
+  "pessoas": [
+    {
+      "id": "diplomacia-mar:pessoa:nilku",
+      "nome": "Nilku das Marés Discutidas",
+      "contexto_proposto": "Kuo-toa dissidente já proposto na fronteira e na ecologia política do Mar de Sangue.",
+      "vida_ordinaria": "Tenta aprender o protocolo diplomático das águas azuis sem negar sua identidade.",
+      "questao_politica": "Seu depoimento contra um sacrifício pode ser usado para perseguir parentes fiéis.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "mar-sangue:pessoa:nilku",
+        "fronteira:pessoa:nilku"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "kuo-toa",
+      "reutiliza": "mar-sangue:pessoa:nilku",
+      "objetivo": "Ouvir e ser ouvido sem entregar outras pessoas."
+    },
+    {
+      "id": "diplomacia-mar:pessoa:maura",
+      "nome": "Maura da Última Cláusula",
+      "contexto_proposto": "Negociadora abissal dos pactos de tributo, já introduzida no ciclo anterior.",
+      "vida_ordinaria": "Compara promessas antigas com obrigações exigidas a novas famílias.",
+      "questao_politica": "Se corrigir uma cobrança, sua própria posição dentro do sacerdócio fica ameaçada.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "mar-sangue:pessoa:maura"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "abissal",
+      "reutiliza": "mar-sangue:pessoa:maura",
+      "objetivo": "Renegociar dívida sem tornar proteção uma prisão."
+    },
+    {
+      "id": "diplomacia-mar:pessoa:rhel",
+      "nome": "Rhel das Correntes Fundas",
+      "contexto_proposto": "Sacerdote abissal que disputa influência sobre pactos e interpretações de Daegon.",
+      "vida_ordinaria": "Consulta registros de marés e procura apoio de famílias tributárias.",
+      "questao_politica": "Um sucessor reconhecido por sinais kuo-toa poderia escapar a seu controle.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-933",
+        "movimento-povo:paragrafo-934"
+      ],
+      "referencias": [
+        "mar-sangue:pessoa:rhel"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "abissal",
+      "reutiliza": "mar-sangue:pessoa:rhel",
+      "objetivo": "Conservar autoridade sacerdotal."
+    },
+    {
+      "id": "diplomacia-mar:pessoa:kalira",
+      "nome": "Kalira da Corrente Falha",
+      "contexto_proposto": "Patrulheira tritã já estabelecida como proposta, atuando na defesa da fronteira mutável.",
+      "vida_ordinaria": "Ajuda civis a avaliar riscos sem prometer que toda água ainda é segura.",
+      "questao_politica": "Sua insistência em proteger zonas contaminadas a opõe a comandantes prudentes.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-944"
+      ],
+      "referencias": [
+        "mar-sangue:pessoa:kalira"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "tritao",
+      "reutiliza": "mar-sangue:pessoa:kalira",
+      "objetivo": "Evacuar gente antes de perder recifes."
+    },
+    {
+      "id": "diplomacia-mar:pessoa:maelis",
+      "nome": "Maelis da Canção Interrompida",
+      "contexto_proposto": "Sereia que conserva memória oral e cantos de rota.",
+      "vida_ordinaria": "Confronta versões divergentes de antigos pactos e prepara mensagens para aliados.",
+      "questao_politica": "Se cantar o registro inteiro, pode expor refugios na faixa vermelha.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "mar-sangue:pessoa:maelis"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "sereia",
+      "reutiliza": "mar-sangue:pessoa:maelis",
+      "objetivo": "Tornar a memória pública sem entregar rotas sensíveis."
+    },
+    {
+      "id": "diplomacia-mar:pessoa:serun",
+      "nome": "Serun da Mudança Lenta",
+      "contexto_proposto": "Descendente abissal em transformação que busca ser tratado como sujeito político.",
+      "vida_ordinaria": "Escuta pactos sobre descendência antes de permitir que representantes falem em seu nome.",
+      "questao_politica": "Um tratado de paz pretende entregar pessoas como garantia de passagem.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-931"
+      ],
+      "referencias": [
+        "mar-sangue:pessoa:serun"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "descendente_abissal",
+      "reutiliza": "mar-sangue:pessoa:serun",
+      "objetivo": "Recusar o retorno compulsório às profundezas."
+    },
+    {
+      "id": "diplomacia-mar:pessoa:irena",
+      "nome": "Irena do Coral Duplo",
+      "contexto_proposto": "Diplomata sereia proposta que tenta representar dois grupos com interesses diferentes.",
+      "vida_ordinaria": "Reúne depoimentos de marinheiros e famílias, recusando anunciar acordo sem consultá-los.",
+      "questao_politica": "Uma cidade aliada diz que sua assinatura deve valer por todas as outras.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-945",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "lugar:ilhas-costa-sul",
+        "mar-sangue:coletivo:cantoras"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "sereia",
+      "reutiliza": null,
+      "objetivo": "Criar pacto de ajuda sem reino único."
+    },
+    {
+      "id": "diplomacia-mar:pessoa:orvek",
+      "nome": "Orvek das Três Marés",
+      "contexto_proposto": "Tritão emissário proposto que defende a rotatividade das patrulhas de fronteira.",
+      "vida_ordinaria": "Conta turnos e pede justificativas para cada posto vazio.",
+      "questao_politica": "Seu próprio clã exige que a maior cidade escolha sempre o comandante.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-942",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:patrulha"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "tritao",
+      "reutiliza": null,
+      "objetivo": "Defender recifes menores sem concentração militar."
+    },
+    {
+      "id": "diplomacia-mar:pessoa:tessuk",
+      "nome": "Tessuk do Sinal Não Repetido",
+      "contexto_proposto": "Kuo-toa copista proposto, ainda fiel a Daegon, mas preocupado com coerção litúrgica.",
+      "vida_ordinaria": "Registra variações no modo como testemunhas descrevem um prodígio.",
+      "questao_politica": "Um arcebispo pede que apague o testemunho divergente de uma criança.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "mar-sangue:coletivo:sinal",
+        "lugar:cavernas-kuo-toa"
+      ],
+      "estado": "proposta_nao_canonica",
+      "povo": "kuo-toa",
+      "reutiliza": null,
+      "objetivo": "Separar prodígio observado de autoridade reivindicada."
+    }
+  ],
+  "disputas": [
+    {
+      "id": "diplomacia-mar:sucessao:trono-vazio",
+      "nome": "O Trono que Talvez Fique Vazio",
+      "contexto_proposto": "Cenário contingente de ausência de um alto sacerdote abissal; não se afirma que alguém morreu ou foi deposto.",
+      "vida_ordinaria": "Pactuantes procuram quem possa renovar cláusulas e proteger herdeiros.",
+      "questao_politica": "Rhel quer primazia litúrgica; Maura exige renovação por consentimento dos envolvidos.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-933",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:rhel",
+        "diplomacia-mar:pessoa:maura",
+        "diplomacia-mar:polo:fenda-da-decima"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "O titular desaparece ou fica incapacitado",
+      "status_evento": "nao_ocorrido",
+      "candidatos": [
+        "diplomacia-mar:pessoa:rhel",
+        "diplomacia-mar:pessoa:maura"
+      ]
+    },
+    {
+      "id": "diplomacia-mar:sucessao:sinal-sem-dono",
+      "nome": "O Ícone Sem Herdeiro",
+      "contexto_proposto": "Disputa hipotética sobre a custódia de uma imagem que manifesta crença coletiva.",
+      "vida_ordinaria": "Tessuk conserva relatos e Nilku insiste que a fé não autoriza coerção.",
+      "questao_politica": "O clero controla o templo; artesãos reivindicam o direito de contestar a interpretação.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920",
+        "movimento-povo:paragrafo-922"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:tessuk",
+        "diplomacia-mar:pessoa:nilku",
+        "diplomacia-mar:polo:cupula-dos-icones"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "O intérprete de um sinal perde credibilidade",
+      "status_evento": "nao_ocorrido",
+      "candidatos": [
+        "diplomacia-mar:pessoa:tessuk",
+        "diplomacia-mar:pessoa:nilku"
+      ]
+    },
+    {
+      "id": "diplomacia-mar:sucessao:capitao-do-recife",
+      "nome": "A Última Patrulha do Comandante",
+      "contexto_proposto": "Disputa hipotética de comando quando um recife se torna contaminado e a autoridade militar fica em questão.",
+      "vida_ordinaria": "Kalira negocia resgate; Orvek calcula defesas para outras cidades.",
+      "questao_politica": "Quem assume a patrulha pode converter um posto temporário em domínio permanente.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-943",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:kalira",
+        "diplomacia-mar:pessoa:orvek",
+        "diplomacia-mar:polo:velarium"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "A corrente desloca a fronteira militar",
+      "status_evento": "nao_ocorrido",
+      "candidatos": [
+        "diplomacia-mar:pessoa:kalira",
+        "diplomacia-mar:pessoa:orvek"
+      ]
+    },
+    {
+      "id": "diplomacia-mar:sucessao:voz-sem-testemunha",
+      "nome": "A Memória Que Não Escolhe Herdeira",
+      "contexto_proposto": "Questão de transmissão de uma genealogia cantada contestada por outra cidade.",
+      "vida_ordinaria": "Maelis preserva duas versões; Irena deseja acordo sem censura.",
+      "questao_politica": "Uma interpretação histórica pode legitimar direito sobre uma rota marítima.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:maelis",
+        "diplomacia-mar:pessoa:irena",
+        "diplomacia-mar:polo:canto-de-lume"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "A canção de sucessão recebe duas versões incompatíveis",
+      "status_evento": "nao_ocorrido",
+      "candidatos": [
+        "diplomacia-mar:pessoa:maelis",
+        "diplomacia-mar:pessoa:irena"
+      ]
+    },
+    {
+      "id": "diplomacia-mar:sucessao:herdeiro-que-recusa",
+      "nome": "O Herdeiro que Recusou o Mar",
+      "contexto_proposto": "Controvérsia hipotética sobre pessoas consideradas herdeiras de dívida ritual por descendência.",
+      "vida_ordinaria": "Serun pede que representantes ouçam sua vontade; Rhel invoca destino religioso.",
+      "questao_politica": "Se prevalecer o parentesco como garantia de tributo, novas gerações perdem autonomia.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-933",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:serun",
+        "diplomacia-mar:pessoa:rhel",
+        "diplomacia-mar:casa:nome-proprio"
+      ],
+      "estado": "proposta_nao_canonica",
+      "gatilho_hipotetico": "Um pacto antigo reivindica um descendente durante a Mudança",
+      "status_evento": "nao_ocorrido",
+      "candidatos": [
+        "diplomacia-mar:pessoa:serun",
+        "diplomacia-mar:pessoa:rhel"
+      ]
+    }
+  ],
+  "tratados": [
+    {
+      "id": "diplomacia-mar:tratado:recifes-autonomos",
+      "nome": "Pacto dos Recifes sem Coroa",
+      "contexto_proposto": "Projeto de tratado entre delegações tritãs e sereias, sem estabelecer reino central.",
+      "vida_ordinaria": "Representantes informam quais postos podem defender e quais rotas preferem manter públicas.",
+      "questao_politica": "Um aliado pode retirar ajuda quando sua própria cidade estiver ameaçada.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-942",
+        "movimento-povo:paragrafo-945",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "diplomacia-mar:polo:velarium",
+        "diplomacia-mar:polo:canto-de-lume"
+      ],
+      "estado": "proposta_nao_canonica",
+      "signatarios_propostos": [
+        "diplomacia-mar:pessoa:irena",
+        "diplomacia-mar:pessoa:orvek"
+      ],
+      "vigente": false,
+      "condicao_de_ruptura": "Comandante unilateraliza turnos de defesa",
+      "custo_de_adesao": "Cada cidade aceita exposição e sacrifícios próprios"
+    },
+    {
+      "id": "diplomacia-mar:tratado:livro-de-tributos",
+      "nome": "Acordo das Conchas Recontadas",
+      "contexto_proposto": "Projeto de renegociação de proteção abissal que exige revisão explícita das cláusulas a cada geração.",
+      "vida_ordinaria": "Famílias conferem taxas ao lado de mediadores e identificam o que foi realmente prestado.",
+      "questao_politica": "Rhel afirma que vontade de Daegon prevalece sobre o texto; Maura quer direito de retirada.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-933",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:casa:decima",
+        "diplomacia-mar:polo:fenda-da-decima"
+      ],
+      "estado": "proposta_nao_canonica",
+      "signatarios_propostos": [
+        "diplomacia-mar:pessoa:maura",
+        "diplomacia-mar:pessoa:rhel"
+      ],
+      "vigente": false,
+      "condicao_de_ruptura": "Cobrança sem proteção comprovada",
+      "custo_de_adesao": "Abrir documentos e renunciar a cobranças hereditárias"
+    },
+    {
+      "id": "diplomacia-mar:tratado:voz-sem-mapa",
+      "nome": "Protocolo da Voz sem Mapa",
+      "contexto_proposto": "Tratado proposto para compartilhar alertas cantados sem expor caminhos até refúgios.",
+      "vida_ordinaria": "Cantoras criam mensagens parciais e avisam quando não podem confirmar um sinal.",
+      "questao_politica": "Um aviso incompleto pode custar uma vida; aviso completo pode denunciar comunidade.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:maelis",
+        "costa-sul:rede:casco"
+      ],
+      "estado": "proposta_nao_canonica",
+      "signatarios_propostos": [
+        "diplomacia-mar:pessoa:maelis",
+        "diplomacia-mar:pessoa:irena"
+      ],
+      "vigente": false,
+      "condicao_de_ruptura": "Divulgação unilateral de rotas protegidas",
+      "custo_de_adesao": "Aceitar mensagens imperfeitas e limites de transparência"
+    },
+    {
+      "id": "diplomacia-mar:tratado:corpo-livre",
+      "nome": "Carta de Autonomia da Mudança",
+      "contexto_proposto": "Proposta de proteção a descendentes abissais em transformação que cruzem comunidades rivais.",
+      "vida_ordinaria": "Testemunhas registram consentimento, pedidos de abrigo e recusa de alistamento sacerdotal.",
+      "questao_politica": "Uma teocracia poderá considerar a carta uma tentativa de esvaziar Daegon de fiéis.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-931",
+        "movimento-povo:paragrafo-933"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:serun",
+        "diplomacia-mar:casa:nome-proprio"
+      ],
+      "estado": "proposta_nao_canonica",
+      "signatarios_propostos": [
+        "diplomacia-mar:pessoa:serun",
+        "diplomacia-mar:pessoa:irena"
+      ],
+      "vigente": false,
+      "condicao_de_ruptura": "Transferência de descendentes sem consentimento",
+      "custo_de_adesao": "Abrigar quem uma potência reivindica"
+    },
+    {
+      "id": "diplomacia-mar:tratado:prova-do-prodigio",
+      "nome": "Testemunhos do Milagre Contestável",
+      "contexto_proposto": "Protocolo proposto que distingue a ocorrência de um prodígio de sua interpretação política.",
+      "vida_ordinaria": "Escribas anotam variações de relatos e escutam dissidentes sob garantia de segurança.",
+      "questao_politica": "A hierarquia teme perder controle; testemunhas temem a retaliação.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:nilku",
+        "diplomacia-mar:pessoa:tessuk"
+      ],
+      "estado": "proposta_nao_canonica",
+      "signatarios_propostos": [
+        "diplomacia-mar:pessoa:nilku",
+        "diplomacia-mar:pessoa:tessuk"
+      ],
+      "vigente": false,
+      "condicao_de_ruptura": "Ameaça ou desaparecimento de testemunha",
+      "custo_de_adesao": "Reconhecer disputa de interpretação em plena teocracia"
+    }
+  ],
+  "cenas": [
+    {
+      "id": "diplomacia-mar:cena:mensagem-tres-vozes",
+      "nome": "A Mensagem em Três Vozes",
+      "contexto_proposto": "Em conferência hipotética, um canto de sereia chega com versões diferentes conforme a corrente.",
+      "vida_ordinaria": "Maelis tenta reconstruir original, Irena teme romper pacto e Orvek quer ordem militar simples.",
+      "questao_politica": "É possível negociar uma tradução pública, manter versões concorrentes ou recusar decisões sem provas.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:maelis",
+        "diplomacia-mar:pessoa:irena",
+        "diplomacia-mar:pessoa:orvek"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "diplomacia-mar:pessoa:maelis",
+        "diplomacia-mar:pessoa:irena",
+        "diplomacia-mar:pessoa:orvek"
+      ],
+      "opcoes": [
+        "Confrontar registros",
+        "Suspender voto",
+        "Proteger mensageiras"
+      ],
+      "ligacao_crise": "diplomacia-mar:sucessao:voz-sem-testemunha"
+    },
+    {
+      "id": "diplomacia-mar:cena:substituto-do-sacerdote",
+      "nome": "Quem Assina Pelo Ausente?",
+      "contexto_proposto": "Um titular sacerdotal está inacessível apenas nesta cena proposta; contratos aguardam autorização.",
+      "vida_ordinaria": "Rhel pede obediência provisória e Maura exige renovação dos termos com pactuantes.",
+      "questao_politica": "Um procurador pode impedir caos imediato e inaugurar tributo sem legitimidade.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-933",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:rhel",
+        "diplomacia-mar:pessoa:maura"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "diplomacia-mar:pessoa:rhel",
+        "diplomacia-mar:pessoa:maura"
+      ],
+      "opcoes": [
+        "Definir autoridade provisória",
+        "Revisar cláusulas",
+        "Recusar continuidade automática"
+      ],
+      "ligacao_crise": "diplomacia-mar:sucessao:trono-vazio"
+    },
+    {
+      "id": "diplomacia-mar:cena:heranca-das-escamas",
+      "nome": "O Nome que o Sangue Não Prometeu",
+      "contexto_proposto": "Serun é convocado a ratificar um pacto assinado antes de nascer.",
+      "vida_ordinaria": "A cerimônia tenta confundir Mudança do Oceano com consentimento político.",
+      "questao_politica": "Quebrar o pacto pode expor toda uma comunidade; cumpri-lo obriga uma pessoa contra sua vontade.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-933",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:serun",
+        "diplomacia-mar:pessoa:rhel"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "diplomacia-mar:pessoa:serun",
+        "diplomacia-mar:pessoa:rhel"
+      ],
+      "opcoes": [
+        "Ouvir Serun",
+        "Negociar proteção substituta",
+        "Contestar herança da obrigação"
+      ],
+      "ligacao_crise": "diplomacia-mar:sucessao:herdeiro-que-recusa"
+    },
+    {
+      "id": "diplomacia-mar:cena:prodigio-em-voto",
+      "nome": "Um Milagre Não Conta Votos",
+      "contexto_proposto": "Uma imagem kuo-toa passa a ser usada como prova de sucessão legítima.",
+      "vida_ordinaria": "Tessuk mostra testemunhos, Nilku exige segurança e monitores controlam a cerimônia.",
+      "questao_politica": "Contestar um prodígio pode ameaçar quem o presenciou sem negar a realidade do sinal.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-920",
+        "movimento-povo:paragrafo-922"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:nilku",
+        "diplomacia-mar:pessoa:tessuk"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "diplomacia-mar:pessoa:nilku",
+        "diplomacia-mar:pessoa:tessuk"
+      ],
+      "opcoes": [
+        "Separar fato de interpretação",
+        "Proteger testemunhas",
+        "Exigir consulta pública"
+      ],
+      "ligacao_crise": "diplomacia-mar:sucessao:sinal-sem-dono"
+    },
+    {
+      "id": "diplomacia-mar:cena:recife-sem-bandeira",
+      "nome": "O Recife Que Ficou Sem Bandeira",
+      "contexto_proposto": "A corrente vermelha torna um posto tritão vulnerável; três cidades alegam obrigações diferentes.",
+      "vida_ordinaria": "Kalira quer evacuar civis; Orvek teme abandonar rotas vitais.",
+      "questao_politica": "O pacto defensivo não explica como repartir perdas numa fronteira que se move.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-944",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:kalira",
+        "diplomacia-mar:pessoa:orvek"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "diplomacia-mar:pessoa:kalira",
+        "diplomacia-mar:pessoa:orvek"
+      ],
+      "opcoes": [
+        "Evacuar",
+        "Redistribuir forças",
+        "Renegociar responsabilidade"
+      ],
+      "ligacao_crise": "diplomacia-mar:sucessao:capitao-do-recife"
+    },
+    {
+      "id": "diplomacia-mar:cena:parlamento-de-superficie",
+      "nome": "O Assento que Ninguém Ofereceu",
+      "contexto_proposto": "Um encontro hipotético com enviados de Portomonte e representantes insulares não tem regras sobre participação da superfície.",
+      "vida_ordinaria": "Irena sustenta autonomia das cidades marinhas; Antera, já apresentada na fronteira, exige que comerciantes também sejam ouvidos.",
+      "questao_politica": "Uma mesa de paz pode reproduzir dependência se excluir quem paga tributos e sofre capturas.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-936",
+        "movimento-povo:paragrafo-945",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:irena",
+        "costa-sul:pessoa:antera"
+      ],
+      "estado": "proposta_nao_canonica",
+      "elenco": [
+        "diplomacia-mar:pessoa:irena"
+      ],
+      "convidado_preexistente": "costa-sul:pessoa:antera",
+      "opcoes": [
+        "Criar representação consultiva",
+        "Exigir testemunhas de Portomonte",
+        "Adiar acordo até incluir afetados"
+      ],
+      "ligacao_crise": "diplomacia-mar:sucessao:trono-vazio"
+    }
+  ],
+  "missoes": [
+    {
+      "id": "diplomacia-mar:missao:buscar-versoes",
+      "nome": "A Cópia que Não Cabe no Coral",
+      "contexto_proposto": "Missão de comparação de uma carta de navegação escrita e uma genealogia cantada.",
+      "vida_ordinaria": "A equipe precisa ouvir tradições rivais antes de escolher qual rota divulgar.",
+      "questao_politica": "Um documento correto pode ser politicamente perigoso.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-947",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:maelis",
+        "diplomacia-mar:tratado:voz-sem-mapa"
+      ],
+      "estado": "proposta_nao_canonica",
+      "entregavel_narrativo": "Relatório de divergências sem mapa público",
+      "escolha": "Publicar versão integral, resumo ou nada"
+    },
+    {
+      "id": "diplomacia-mar:missao:renegociar-tributo",
+      "nome": "O Último Tributo do Primeiro Contrato",
+      "contexto_proposto": "Missão para levantar promessas e serviços realmente prestados sob um acordo abissal.",
+      "vida_ordinaria": "Famílias recordam riscos, mas não possuem todos os comprovantes.",
+      "questao_politica": "Uma prova de cobrança abusiva pode interromper proteção legítima.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-932",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:maura",
+        "diplomacia-mar:tratado:livro-de-tributos"
+      ],
+      "estado": "proposta_nao_canonica",
+      "entregavel_narrativo": "Registro testemunhal e opções de rescisão",
+      "escolha": "Renovar, romper ou limitar prazo"
+    },
+    {
+      "id": "diplomacia-mar:missao:proteger-testemunhas",
+      "nome": "Três Testemunhas, Duas Águas",
+      "contexto_proposto": "Missão de acolhimento de pessoas quo-toa com relatos incompatíveis de um prodígio.",
+      "vida_ordinaria": "Monitores tentam identificar quem discorda da interpretação oficial.",
+      "questao_politica": "Defender testemunhas não equivale a negar a fé.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-921"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:nilku",
+        "diplomacia-mar:pessoa:tessuk"
+      ],
+      "estado": "proposta_nao_canonica",
+      "entregavel_narrativo": "Depoimentos protegidos e perguntas não resolvidas",
+      "escolha": "Expor, ocultar ou buscar mediação"
+    },
+    {
+      "id": "diplomacia-mar:missao:evacuar-recife",
+      "nome": "O Recenseamento Impossível",
+      "contexto_proposto": "Missão de pactuar quem deixa um recife ameaçado antes de conhecer todos os moradores.",
+      "vida_ordinaria": "A patrulha tem compromisso com outra cidade e não pode prometer capacidade infinita.",
+      "questao_politica": "Evacuar apenas famílias influentes pode arruinar legitimidade da defesa.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-944",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:kalira",
+        "diplomacia-mar:pessoa:orvek"
+      ],
+      "estado": "proposta_nao_canonica",
+      "entregavel_narrativo": "Acordo de prioridades e deveres verificáveis",
+      "escolha": "Proteger os vulneráveis ou priorizar posições defensáveis"
+    }
+  ],
+  "arcos": [
+    {
+      "id": "diplomacia-mar:arco:paz-sem-coroa",
+      "nome": "A Paz que Não Pode Ter Coroa",
+      "contexto_proposto": "Cidades autônomas tentam responder ao risco da fronteira móvel sem ceder soberania a um único governante.",
+      "vida_ordinaria": "A necessidade de comando unificado surge quando um recife desaparece da linha de defesa.",
+      "questao_politica": "A aliança pode sobreviver com consultas demoradas ou romper sob pressão militar.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-941",
+        "movimento-povo:paragrafo-945",
+        "movimento-povo:paragrafo-948"
+      ],
+      "referencias": [
+        "diplomacia-mar:polo:velarium",
+        "diplomacia-mar:polo:canto-de-lume"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "diplomacia-mar:cena:mensagem-tres-vozes",
+        "diplomacia-mar:cena:recife-sem-bandeira"
+      ]
+    },
+    {
+      "id": "diplomacia-mar:arco:coroa-de-conchas",
+      "nome": "A Coroa de Conchas que Ninguém Herdou",
+      "contexto_proposto": "Sucessão religiosa, tributos e crenças em conflito ameaçam produzir um governo novo sobre comunidades antigas.",
+      "vida_ordinaria": "Um sinal kuo-toa apoia candidato que não pertence ao mesmo sacerdócio de Daegon.",
+      "questao_politica": "A religião pode ser preservada sem aceitar que cada interpretação legitime captura ou servidão.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-913",
+        "movimento-povo:paragrafo-933",
+        "movimento-povo:paragrafo-936"
+      ],
+      "referencias": [
+        "diplomacia-mar:polo:fenda-da-decima",
+        "diplomacia-mar:polo:cupula-dos-icones"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "diplomacia-mar:cena:substituto-do-sacerdote",
+        "diplomacia-mar:cena:prodigio-em-voto"
+      ]
+    },
+    {
+      "id": "diplomacia-mar:arco:cidade-que-paga",
+      "nome": "A Cidade que Paga pela Paz",
+      "contexto_proposto": "Comunidades costeiras e descendentes abissais discutem quem deve assumir compromissos em diplomacia submarina.",
+      "vida_ordinaria": "Representantes fazem tratados em nome de pessoas que não foram consultadas.",
+      "questao_politica": "A paz pode existir à custa de renunciar ao direito de sair dela.",
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-924",
+        "movimento-povo:paragrafo-936",
+        "movimento-povo:paragrafo-945"
+      ],
+      "referencias": [
+        "diplomacia-mar:pessoa:serun",
+        "costa-sul:pessoa:antera"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "diplomacia-mar:cena:heranca-das-escamas",
+        "diplomacia-mar:cena:parlamento-de-superficie"
+      ]
+    }
+  ],
+  "limites": [
+    "Nenhum polo é uma cidade canônica reconhecida, identificada por coordenadas ou população.",
+    "Nenhuma casa, sucessão, tratado, evento ou missão aconteceu automaticamente na linha do tempo das campanhas.",
+    "Tritões e sereias não formam um reino unificado; cada cidade preserva autoridades e interesses.",
+    "Não confundir abissais marinhos com demônios do Abismo.",
+    "Não presumir que descendentes abissais desejam regressar ao mar nem que cada kuo-toa participa de sacrifícios.",
+    "Representações em nome de povos ou cidades são contestáveis e não significam unanimidade.",
+    "O Hack inspira instituições e dilemas, sem conceder movimentos mecanicamente a NPCs."
+  ],
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false
+}
