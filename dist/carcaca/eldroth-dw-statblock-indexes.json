@@ -1,0 +1,219 @@
+{
+  "by_tipo_carcaca_proposto": {
+    "fauna": [
+      "ecologia-xiii:ficha:besouros-da-casca-riscada"
+    ],
+    "feerico": [
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "fera_sobrenatural": [
+      "ecologia-xiii:ficha:cao-de-esporos-do-limiar",
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos",
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado"
+    ],
+    "flora": [
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza",
+      "ecologia-xiii:ficha:micelio-das-vozes-partidas"
+    ],
+    "morto_vivo": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada"
+    ]
+  },
+  "by_organizacao": {
+    "grupo": [
+      "ecologia-xiii:ficha:cao-de-esporos-do-limiar",
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza"
+    ],
+    "horda": [
+      "ecologia-xiii:ficha:besouros-da-casca-riscada",
+      "ecologia-xiii:ficha:micelio-das-vozes-partidas"
+    ],
+    "solitario": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada",
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos",
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ]
+  },
+  "by_modo": {
+    "estatizado": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada",
+      "ecologia-xiii:ficha:besouros-da-casca-riscada",
+      "ecologia-xiii:ficha:cao-de-esporos-do-limiar",
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza",
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos",
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "sem_estatisticas": [
+      "ecologia-xiii:ficha:micelio-das-vozes-partidas"
+    ]
+  },
+  "by_porte": {
+    "grande": [
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos"
+    ],
+    "medio": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada",
+      "ecologia-xiii:ficha:cao-de-esporos-do-limiar",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "miudo": [
+      "ecologia-xiii:ficha:besouros-da-casca-riscada",
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado"
+    ],
+    "pequeno": [
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza"
+    ]
+  },
+  "by_defesa": {
+    "carne": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada",
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza",
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "couro": [
+      "ecologia-xiii:ficha:besouros-da-casca-riscada",
+      "ecologia-xiii:ficha:cao-de-esporos-do-limiar",
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos"
+    ]
+  },
+  "by_alcance": {
+    "alcance": [
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos"
+    ],
+    "corpo_a_corpo": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada",
+      "ecologia-xiii:ficha:cao-de-esporos-do-limiar",
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza",
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "mao": [
+      "ecologia-xiii:ficha:besouros-da-casca-riscada",
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado"
+    ],
+    "perto": [
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ]
+  },
+  "by_tag_dw": {
+    "alcance": [
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos"
+    ],
+    "ardiloso": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada",
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza",
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "aterrador": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada"
+    ],
+    "corpo_a_corpo": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada",
+      "ecologia-xiii:ficha:cao-de-esporos-do-limiar",
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza",
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "furtivo": [
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "grande": [
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos"
+    ],
+    "grupo": [
+      "ecologia-xiii:ficha:cao-de-esporos-do-limiar",
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza"
+    ],
+    "horda": [
+      "ecologia-xiii:ficha:besouros-da-casca-riscada",
+      "ecologia-xiii:ficha:micelio-das-vozes-partidas"
+    ],
+    "impetuoso": [
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos"
+    ],
+    "inteligente": [
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "magico": [
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos",
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "mao": [
+      "ecologia-xiii:ficha:besouros-da-casca-riscada",
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado"
+    ],
+    "medio": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada",
+      "ecologia-xiii:ficha:cao-de-esporos-do-limiar",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "miudo": [
+      "ecologia-xiii:ficha:besouros-da-casca-riscada",
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado"
+    ],
+    "pequeno": [
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza"
+    ],
+    "perto": [
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "sem_estatisticas": [
+      "ecologia-xiii:ficha:micelio-das-vozes-partidas"
+    ],
+    "solitario": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada",
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos",
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ]
+  },
+  "by_origem_xii": {
+    "ecologia-xii:criatura:andarilho-de-sepultura-negada": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada"
+    ],
+    "ecologia-xii:criatura:besouros-da-casca-riscada": [
+      "ecologia-xiii:ficha:besouros-da-casca-riscada"
+    ],
+    "ecologia-xii:criatura:cao-de-esporos-do-limiar": [
+      "ecologia-xiii:ficha:cao-de-esporos-do-limiar"
+    ],
+    "ecologia-xii:criatura:cardos-que-bebem-cinza": [
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza"
+    ],
+    "ecologia-xii:criatura:cervo-de-galhos-invertidos": [
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos"
+    ],
+    "ecologia-xii:criatura:coruja-do-eco-emprestado": [
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado"
+    ],
+    "ecologia-xii:criatura:escrivao-da-folha-lacrada": [
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "ecologia-xii:criatura:micelio-das-vozes-partidas": [
+      "ecologia-xiii:ficha:micelio-das-vozes-partidas"
+    ]
+  },
+  "by_pv": {
+    "12": [
+      "ecologia-xiii:ficha:coruja-do-eco-emprestado",
+      "ecologia-xiii:ficha:escrivao-da-folha-lacrada"
+    ],
+    "16": [
+      "ecologia-xiii:ficha:andarilho-de-sepultura-negada",
+      "ecologia-xiii:ficha:cervo-de-galhos-invertidos"
+    ],
+    "3": [
+      "ecologia-xiii:ficha:besouros-da-casca-riscada"
+    ],
+    "6": [
+      "ecologia-xiii:ficha:cao-de-esporos-do-limiar",
+      "ecologia-xiii:ficha:cardos-que-bebem-cinza"
+    ]
+  }
+}

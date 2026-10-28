@@ -1,0 +1,707 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XIII — Fichas mecânicas propostas de Dungeon World",
+  "estado": "revisao_autoral_pendente",
+  "aprovacao_autoral": false,
+  "efetiva_canon": false,
+  "fonte_dos_monstros": "data/propostas/eldroth-ecologia-monstruosa-dw.json",
+  "regra_base": "https://www.dungeonworldsrd.com/monsters/",
+  "metodo": "Respostas explícitas às perguntas de criação de monstros. PV, dano e armadura do DW derivam da ficção, nunca de ND D&D.",
+  "resumo": {
+    "fichas": 8,
+    "com_pv": 7,
+    "sem_pv_por_ficcao": 1,
+    "statblocks_aprovados": 0
+  },
+  "fichas": [
+    {
+      "id": "ecologia-xiii:ficha:coruja-do-eco-emprestado",
+      "ordem_de_revisao": 1,
+      "criatura_origem_id": "ecologia-xii:criatura:coruja-do-eco-emprestado",
+      "nome": "Coruja do Eco Emprestado",
+      "tipo_carcaca_proposto": "fera_sobrenatural",
+      "status": "proposta_mecanica_para_revisao",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "modo": "estatizado",
+      "instinto": "Conservar para si o último som ouvido e devolvê-lo quando ninguém pode confiar nele.",
+      "movimentos": [
+        {
+          "nome": "Eco que Acusa",
+          "texto": "Repetir uma confissão no momento em que ela mais compromete um inocente.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Silêncio de Ninho",
+          "texto": "Subtrair os sons de aviso de uma pequena passagem.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Voo sem Testemunha",
+          "texto": "Sair do alcance visual quando uma vítima tenta provar que a viu.",
+          "origem_ciclo": "xii"
+        }
+      ],
+      "organizacao": {
+        "proposta_dw": "solitario",
+        "justificativa": "Escolha narrativa de organização herdada do ciclo XII; não confirma distribuição populacional."
+      },
+      "decisoes": {
+        "porte": "miudo",
+        "defesa": "carne",
+        "destaques": [
+          "trapaça",
+          "adaptacao",
+          "magia"
+        ],
+        "ataque": {
+          "nome": "Bicada ao distraído",
+          "opcoes": []
+        },
+        "tracos": [
+          "ardiloso"
+        ],
+        "justificativa": "Coruja pequena, solitária e ameaçadora principalmente pela desinformação."
+      },
+      "ficha_dw": {
+        "estado": "proposta_mecanica_nao_aprovada",
+        "pv": 12,
+        "armadura": 0,
+        "dano": {
+          "faces": 8,
+          "modificador": -2,
+          "expressao": "d8-2",
+          "minimo": 1
+        },
+        "ataque": {
+          "nome": "Bicada ao distraído",
+          "alcances": [
+            "mao"
+          ],
+          "opcoes": []
+        },
+        "tags": [
+          "solitario",
+          "miudo",
+          "furtivo",
+          "magico",
+          "ardiloso",
+          "mao"
+        ]
+      },
+      "resolucao_ficcional": {
+        "risco": "Imita sons sem revelar de onde vêm.",
+        "alternativas": [
+          "Verificar a voz com testemunhas independentes.",
+          "Conferir o som com outras testemunhas",
+          "Afastar-se sem perseguir a ave",
+          "Criar um sinal não vocal"
+        ]
+      },
+      "calculo_fonte": {
+        "regras": "Dungeon World SRD — Making Monsters",
+        "url": "https://www.dungeonworldsrd.com/monsters/",
+        "origem_dnd_ou_nd": false
+      }
+    },
+    {
+      "id": "ecologia-xiii:ficha:besouros-da-casca-riscada",
+      "ordem_de_revisao": 2,
+      "criatura_origem_id": "ecologia-xii:criatura:besouros-da-casca-riscada",
+      "nome": "Besouros da Casca Riscada",
+      "tipo_carcaca_proposto": "fauna",
+      "status": "proposta_mecanica_para_revisao",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "modo": "estatizado",
+      "instinto": "Decompor a madeira morta e proteger a própria postura de vibrações excessivas.",
+      "movimentos": [
+        {
+          "nome": "Cortina de Serragem",
+          "texto": "Encobrir uma marca no chão quando a madeira é sacudida.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Casca em Movimento",
+          "texto": "Fazer uma trilha parecer recém-usada por um animal maior.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Defesa do Ninho",
+          "texto": "Enxamear os pés de quem destrói a madeira habitada.",
+          "origem_ciclo": "xii"
+        }
+      ],
+      "organizacao": {
+        "proposta_dw": "horda",
+        "justificativa": "Escolha narrativa de organização herdada do ciclo XII; não confirma distribuição populacional."
+      },
+      "decisoes": {
+        "porte": "miudo",
+        "defesa": "couro",
+        "destaques": [
+          "adaptacao"
+        ],
+        "ataque": {
+          "nome": "Mandíbulas defensivas",
+          "opcoes": [
+            "armas_fracas"
+          ]
+        },
+        "tracos": [],
+        "justificativa": "Insetos minúsculos de exoesqueleto e mandíbula fraca, abundantes em madeira caída."
+      },
+      "ficha_dw": {
+        "estado": "proposta_mecanica_nao_aprovada",
+        "pv": 3,
+        "armadura": 1,
+        "dano": {
+          "faces": 4,
+          "modificador": -2,
+          "expressao": "d4-2",
+          "minimo": 1
+        },
+        "ataque": {
+          "nome": "Mandíbulas defensivas",
+          "alcances": [
+            "mao"
+          ],
+          "opcoes": [
+            "armas_fracas"
+          ]
+        },
+        "tags": [
+          "horda",
+          "miudo",
+          "mao"
+        ]
+      },
+      "resolucao_ficcional": {
+        "risco": "Confundir ranhuras de insetos com códigos pode causar perseguições injustas.",
+        "alternativas": [
+          "Examinar as cascas antes de declarar espionagem.",
+          "Evitar troncos com postura",
+          "Usar outro suporte estrutural",
+          "Observar os rastros antes de concluir perseguição"
+        ]
+      },
+      "calculo_fonte": {
+        "regras": "Dungeon World SRD — Making Monsters",
+        "url": "https://www.dungeonworldsrd.com/monsters/",
+        "origem_dnd_ou_nd": false
+      }
+    },
+    {
+      "id": "ecologia-xiii:ficha:cardos-que-bebem-cinza",
+      "ordem_de_revisao": 3,
+      "criatura_origem_id": "ecologia-xii:criatura:cardos-que-bebem-cinza",
+      "nome": "Cardos que Bebem Cinza",
+      "tipo_carcaca_proposto": "flora",
+      "status": "proposta_mecanica_para_revisao",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "modo": "estatizado",
+      "instinto": "Armazenar nutrientes da terra ferida e espalhar sementes após perturbações.",
+      "movimentos": [
+        {
+          "nome": "Poeira que Revela",
+          "texto": "Marcar de fuligem mãos que mexeram na planta.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Espinhos na Passagem",
+          "texto": "Fechar uma passagem estreita ao rebrotar sobre madeira podre.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Semente Retida",
+          "texto": "Espalhar sementes quando uma fogueira é apagada no solo.",
+          "origem_ciclo": "xii"
+        }
+      ],
+      "organizacao": {
+        "proposta_dw": "grupo",
+        "justificativa": "Escolha narrativa de organização herdada do ciclo XII; não confirma distribuição populacional."
+      },
+      "decisoes": {
+        "porte": "pequeno",
+        "defesa": "carne",
+        "destaques": [
+          "adaptacao"
+        ],
+        "ataque": {
+          "nome": "Espinhos de defesa",
+          "opcoes": [
+            "armas_fracas"
+          ]
+        },
+        "tracos": [
+          "ardiloso"
+        ],
+        "justificativa": "Plantas baixas em pequenos agrupamentos; espinhos rasos, ameaça principal ambiental."
+      },
+      "ficha_dw": {
+        "estado": "proposta_mecanica_nao_aprovada",
+        "pv": 6,
+        "armadura": 0,
+        "dano": {
+          "faces": 4,
+          "modificador": 0,
+          "expressao": "d4",
+          "minimo": 1
+        },
+        "ataque": {
+          "nome": "Espinhos de defesa",
+          "alcances": [
+            "corpo_a_corpo"
+          ],
+          "opcoes": [
+            "armas_fracas"
+          ]
+        },
+        "tags": [
+          "grupo",
+          "pequeno",
+          "ardiloso",
+          "corpo_a_corpo"
+        ]
+      },
+      "resolucao_ficcional": {
+        "risco": "A fuligem não prova corrupção mágica; queimar destrói recursos.",
+        "alternativas": [
+          "Isolar e analisar o solo sem destruir o plantio.",
+          "Isolar uma amostra",
+          "Observar solo e água",
+          "Evitar queimada sem diagnóstico"
+        ]
+      },
+      "calculo_fonte": {
+        "regras": "Dungeon World SRD — Making Monsters",
+        "url": "https://www.dungeonworldsrd.com/monsters/",
+        "origem_dnd_ou_nd": false
+      }
+    },
+    {
+      "id": "ecologia-xiii:ficha:micelio-das-vozes-partidas",
+      "ordem_de_revisao": 4,
+      "criatura_origem_id": "ecologia-xii:criatura:micelio-das-vozes-partidas",
+      "nome": "Micélio das Vozes Partidas",
+      "tipo_carcaca_proposto": "flora",
+      "status": "proposta_mecanica_para_revisao",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "modo": "sem_estatisticas",
+      "instinto": "Distribuir sinais de perturbação entre corpos de fungo e madeira.",
+      "movimentos": [
+        {
+          "nome": "Voz em Tronco Alheio",
+          "texto": "Devolver uma palavra incompleta como se tivesse sido dita por outra pessoa.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Raiz em Alerta",
+          "texto": "Fazer sinais se propagarem por uma zona de raízes sem indicar sua origem.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Colônia Rompida",
+          "texto": "Liberar partículas que obscurecem rastros quando o fungário é ferido.",
+          "origem_ciclo": "xii"
+        }
+      ],
+      "organizacao": {
+        "proposta_dw": "horda",
+        "justificativa": "Escolha narrativa de organização herdada do ciclo XII; não confirma distribuição populacional."
+      },
+      "decisoes": {
+        "porte": null,
+        "defesa": null,
+        "destaques": [],
+        "ataque": null,
+        "tracos": [],
+        "justificativa": "Rede fúngica sem indivíduo combatente ou ataque corporal significativo: sem estatísticas por regra explícita do DW."
+      },
+      "ficha_dw": {
+        "estado": "sem_estatisticas_por_escolha_ficcional",
+        "pv": null,
+        "armadura": null,
+        "dano": null,
+        "ataque": null,
+        "tags": [
+          "horda",
+          "sem_estatisticas"
+        ]
+      },
+      "resolucao_ficcional": {
+        "risco": "A percepção equivocada de mensagens ameaça mais que o fungo.",
+        "alternativas": [
+          "Preservar o fungário e conferir depoimentos em locais diferentes.",
+          "Comparar testemunhos separados",
+          "Interromper o pisoteio do fungário",
+          "Preservar amostras para análise"
+        ]
+      },
+      "calculo_fonte": {
+        "regras": "Dungeon World SRD — Making Monsters",
+        "url": "https://www.dungeonworldsrd.com/monsters/",
+        "origem_dnd_ou_nd": false
+      }
+    },
+    {
+      "id": "ecologia-xiii:ficha:cervo-de-galhos-invertidos",
+      "ordem_de_revisao": 5,
+      "criatura_origem_id": "ecologia-xii:criatura:cervo-de-galhos-invertidos",
+      "nome": "Cervo dos Galhos Invertidos",
+      "tipo_carcaca_proposto": "fera_sobrenatural",
+      "status": "proposta_mecanica_para_revisao",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "modo": "estatizado",
+      "instinto": "Afastar perseguidores de filhotes e levar intrusos a percursos circulares.",
+      "movimentos": [
+        {
+          "nome": "Galhada que Faz Retornar",
+          "texto": "Conduzir uma perseguição a um ponto já atravessado.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Corpo entre Árvores",
+          "texto": "Tornar impossível distinguir animal e troncos por um instante.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Defesa do Filhote",
+          "texto": "Forçar o perseguidor a escolher entre avançar e ferir uma criatura vulnerável.",
+          "origem_ciclo": "xii"
+        }
+      ],
+      "organizacao": {
+        "proposta_dw": "solitario",
+        "justificativa": "Escolha narrativa de organização herdada do ciclo XII; não confirma distribuição populacional."
+      },
+      "decisoes": {
+        "porte": "grande",
+        "defesa": "couro",
+        "destaques": [
+          "forca",
+          "adaptacao",
+          "magia"
+        ],
+        "ataque": {
+          "nome": "Investida de galhada",
+          "opcoes": []
+        },
+        "tracos": [],
+        "justificativa": "Animal sobrenatural do porte de uma carroça, com galhada de choque e pele resistente."
+      },
+      "ficha_dw": {
+        "estado": "proposta_mecanica_nao_aprovada",
+        "pv": 16,
+        "armadura": 1,
+        "dano": {
+          "faces": 10,
+          "modificador": 3,
+          "expressao": "d10+3",
+          "minimo": 1
+        },
+        "ataque": {
+          "nome": "Investida de galhada",
+          "alcances": [
+            "corpo_a_corpo",
+            "alcance"
+          ],
+          "opcoes": []
+        },
+        "tags": [
+          "solitario",
+          "grande",
+          "impetuoso",
+          "magico",
+          "corpo_a_corpo",
+          "alcance"
+        ]
+      },
+      "resolucao_ficcional": {
+        "risco": "A investida acontece para afastar intrusos, não para capturar fugitivos.",
+        "alternativas": [
+          "Recuar e deixar filhotes fora do cerco.",
+          "Cessar a perseguição",
+          "Oferecer recuo amplo",
+          "Observar o caminho sem capturar"
+        ]
+      },
+      "calculo_fonte": {
+        "regras": "Dungeon World SRD — Making Monsters",
+        "url": "https://www.dungeonworldsrd.com/monsters/",
+        "origem_dnd_ou_nd": false
+      }
+    },
+    {
+      "id": "ecologia-xiii:ficha:escrivao-da-folha-lacrada",
+      "ordem_de_revisao": 6,
+      "criatura_origem_id": "ecologia-xii:criatura:escrivao-da-folha-lacrada",
+      "nome": "Escrivão da Folha Lacrada",
+      "tipo_carcaca_proposto": "feerico",
+      "status": "proposta_mecanica_para_revisao",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "modo": "estatizado",
+      "instinto": "Transformar promessas vagas em compromissos dos quais possa cobrar lembranças.",
+      "movimentos": [
+        {
+          "nome": "Contrato de Orvalho",
+          "texto": "Pedir uma memória como garantia antes de entregar orientação.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Cláusula Invisível",
+          "texto": "Mostrar a segunda metade de uma promessa apenas depois da aceitação.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Nome Devolvido Torto",
+          "texto": "Repetir um nome verdadeiro com uma condição que não existia antes.",
+          "origem_ciclo": "xii"
+        }
+      ],
+      "organizacao": {
+        "proposta_dw": "solitario",
+        "justificativa": "Escolha narrativa de organização herdada do ciclo XII; não confirma distribuição populacional."
+      },
+      "decisoes": {
+        "porte": "medio",
+        "defesa": "carne",
+        "destaques": [
+          "trapaça",
+          "magia"
+        ],
+        "ataque": {
+          "nome": "Fio de selo rasgado",
+          "opcoes": [
+            "distancia"
+          ]
+        },
+        "tracos": [
+          "ardiloso",
+          "inteligente"
+        ],
+        "justificativa": "Feérico humanoide, cuja magia em papel corta à distância: proposta adicional, não ataque documentado."
+      },
+      "ficha_dw": {
+        "estado": "proposta_mecanica_nao_aprovada",
+        "pv": 12,
+        "armadura": 0,
+        "dano": {
+          "faces": 8,
+          "modificador": 0,
+          "expressao": "d8",
+          "minimo": 1
+        },
+        "ataque": {
+          "nome": "Fio de selo rasgado",
+          "alcances": [
+            "corpo_a_corpo",
+            "perto"
+          ],
+          "opcoes": [
+            "distancia"
+          ]
+        },
+        "tags": [
+          "solitario",
+          "medio",
+          "furtivo",
+          "magico",
+          "ardiloso",
+          "inteligente",
+          "corpo_a_corpo",
+          "perto"
+        ]
+      },
+      "resolucao_ficcional": {
+        "risco": "O dano secundário é menos importante que a armadilha contratual.",
+        "alternativas": [
+          "Recusar o pacto até ler as cláusulas em presença de testemunhas.",
+          "Recusar acordos obscuros",
+          "Exigir texto legível e testemunhas",
+          "Negociar troca sem nomes pessoais"
+        ]
+      },
+      "calculo_fonte": {
+        "regras": "Dungeon World SRD — Making Monsters",
+        "url": "https://www.dungeonworldsrd.com/monsters/",
+        "origem_dnd_ou_nd": false
+      }
+    },
+    {
+      "id": "ecologia-xiii:ficha:andarilho-de-sepultura-negada",
+      "ordem_de_revisao": 7,
+      "criatura_origem_id": "ecologia-xii:criatura:andarilho-de-sepultura-negada",
+      "nome": "Andarilho de Sepultura Negada",
+      "tipo_carcaca_proposto": "morto_vivo",
+      "status": "proposta_mecanica_para_revisao",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "modo": "estatizado",
+      "instinto": "Buscar testemunha de sua morte antes de aceitar o próprio repouso.",
+      "movimentos": [
+        {
+          "nome": "Nome sem Dono",
+          "texto": "Responder a perguntas apenas com nomes de outras pessoas.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Passo de Enterro",
+          "texto": "Surgir na extremidade de uma marcha fúnebre sem ter sido convidado.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Última Testemunha",
+          "texto": "Oferecer um objeto que obriga os vivos a questionar um registro de óbito.",
+          "origem_ciclo": "xii"
+        }
+      ],
+      "organizacao": {
+        "proposta_dw": "solitario",
+        "justificativa": "Escolha narrativa de organização herdada do ciclo XII; não confirma distribuição populacional."
+      },
+      "decisoes": {
+        "porte": "medio",
+        "defesa": "carne",
+        "destaques": [],
+        "ataque": {
+          "nome": "Mãos de terra fria",
+          "opcoes": []
+        },
+        "tracos": [
+          "ardiloso",
+          "nao_biologico",
+          "terrivel"
+        ],
+        "justificativa": "Morto-vivo humanoide sem proteção física descrita; subsiste por força não biológica."
+      },
+      "ficha_dw": {
+        "estado": "proposta_mecanica_nao_aprovada",
+        "pv": 16,
+        "armadura": 0,
+        "dano": {
+          "faces": 8,
+          "modificador": 0,
+          "expressao": "d8",
+          "minimo": 1
+        },
+        "ataque": {
+          "nome": "Mãos de terra fria",
+          "alcances": [
+            "corpo_a_corpo"
+          ],
+          "opcoes": []
+        },
+        "tags": [
+          "solitario",
+          "medio",
+          "ardiloso",
+          "aterrador",
+          "corpo_a_corpo"
+        ]
+      },
+      "resolucao_ficcional": {
+        "risco": "Seu nome não prova o óbito de outra pessoa nem controle pessoal por Damaris.",
+        "alternativas": [
+          "Conferir registros e permitir o rito com consentimento familiar.",
+          "Comparar registros sem declarar morte",
+          "Permitir retiro sem combate",
+          "Consultar famílias antes de ritos"
+        ]
+      },
+      "calculo_fonte": {
+        "regras": "Dungeon World SRD — Making Monsters",
+        "url": "https://www.dungeonworldsrd.com/monsters/",
+        "origem_dnd_ou_nd": false
+      }
+    },
+    {
+      "id": "ecologia-xiii:ficha:cao-de-esporos-do-limiar",
+      "ordem_de_revisao": 8,
+      "criatura_origem_id": "ecologia-xii:criatura:cao-de-esporos-do-limiar",
+      "nome": "Cão de Esporos do Limiar",
+      "tipo_carcaca_proposto": "fera_sobrenatural",
+      "status": "proposta_mecanica_para_revisao",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "modo": "estatizado",
+      "instinto": "Defender o lugar de descanso, mesmo quando não reconhece os recém-chegados.",
+      "movimentos": [
+        {
+          "nome": "Farejar a Marca",
+          "texto": "Identificar uma peça de roupa e impedir que atravesse a passagem.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Esporos de Defesa",
+          "texto": "Levantar nuvem que atrasa uma aproximação brusca.",
+          "origem_ciclo": "xii"
+        },
+        {
+          "nome": "Recusa do Mestre",
+          "texto": "Ignorar ordens de quem tenta convertê-lo em cão de caça.",
+          "origem_ciclo": "xii"
+        }
+      ],
+      "organizacao": {
+        "proposta_dw": "grupo",
+        "justificativa": "Escolha narrativa de organização herdada do ciclo XII; não confirma distribuição populacional."
+      },
+      "decisoes": {
+        "porte": "medio",
+        "defesa": "couro",
+        "destaques": [
+          "adaptacao"
+        ],
+        "ataque": {
+          "nome": "Mordida de contenção",
+          "opcoes": []
+        },
+        "tracos": [],
+        "justificativa": "Cão de porte comum, com pele espessa; os esporos são qualidade ficcional defensiva."
+      },
+      "ficha_dw": {
+        "estado": "proposta_mecanica_nao_aprovada",
+        "pv": 6,
+        "armadura": 1,
+        "dano": {
+          "faces": 8,
+          "modificador": 0,
+          "expressao": "d8",
+          "minimo": 1
+        },
+        "ataque": {
+          "nome": "Mordida de contenção",
+          "alcances": [
+            "corpo_a_corpo"
+          ],
+          "opcoes": []
+        },
+        "tags": [
+          "grupo",
+          "medio",
+          "corpo_a_corpo"
+        ]
+      },
+      "resolucao_ficcional": {
+        "risco": "Não é animal treinado por Ironwood, nem cão de caça da Corte.",
+        "alternativas": [
+          "Separar a roupa suspeita do refugiado e evitar a zona de descanso.",
+          "Separar objeto suspeito de seu portador",
+          "Não forçar obediência",
+          "Oferecer caminho alternativo"
+        ]
+      },
+      "calculo_fonte": {
+        "regras": "Dungeon World SRD — Making Monsters",
+        "url": "https://www.dungeonworldsrd.com/monsters/",
+        "origem_dnd_ou_nd": false
+      }
+    }
+  ]
+}
