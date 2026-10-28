@@ -60,6 +60,31 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getGramaCortadaDailyLife(){return byKey("grama_cortada_daily_life");}
+  async function getGramaCortadaDailyLifeIndexes(){return byKey("grama_cortada_daily_life_indexes");}
+  async function getGramaCortadaDailyLifeEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xx:"))return null;
+    const data=await getGramaCortadaDailyLife();
+    for(const cat of ["dominios_da_vida","circuitos_economicos","formas_de_convivencia",
+       "conflitos_internos","celebracoes_possiveis","generos_da_memoria","vinhetas",
+       "decisoes_para_autor","fatos_documentados"]){
+       const e=data[cat].find(x=>x.id===id);
+       if(e)return {...e,categoria:cat};
+    }
+    return null;
+  }
+  async function searchGramaCortadaDailyLife({categoria,pagina,query}={}){
+    const data=await getGramaCortadaDailyLife();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return ["dominios_da_vida","circuitos_economicos","formas_de_convivencia",
+       "conflitos_internos","celebracoes_possiveis","generos_da_memoria","vinhetas"]
+       .flatMap(cat=>data[cat].map(x=>({...x,categoria:cat})))
+       .filter(x=>
+         (!categoria||x.categoria===categoria)&&
+         (pagina===undefined||x.fonte_contexto_paginas.includes(Number(pagina)))&&
+         (!query||norm([x.nome_editorial,x.hipotese_social,
+                x.contradicao,x.detalhe_de_cotidiano,x.possibilidade_narrativa].join(" ")).includes(norm(query))));
+  }
   async function getAtlasAuthorialReview(){return byKey("atlas_authorial_review");}
   async function getAtlasAuthorialReviewIndexes(){return byKey("atlas_authorial_review_indexes");}
   async function getAtlasReviewDecision(id){
@@ -1480,6 +1505,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getGramaCortadaDailyLife,getGramaCortadaDailyLifeIndexes,
+          getGramaCortadaDailyLifeEntry,searchGramaCortadaDailyLife,
           getAtlasAuthorialReview,getAtlasAuthorialReviewIndexes,
           getAtlasReviewDecision,getAtlasReviewCandidate,
           searchAtlasReviewDecisions,searchAtlasReviewCandidates,
