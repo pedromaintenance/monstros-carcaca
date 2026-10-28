@@ -2928,6 +2928,78 @@ def validar_resistencia_florestal_xi():
     print("Povoamento XI: 40 propostas, 0 rotas/acontecimentos/acordos canonizados.")
 
 
+
+def validar_ecologia_monstruosa_xii():
+    """Valida o módulo hipotético sem incluir rascunhos nas criaturas do atlas."""
+    data=load("data/propostas/eldroth-ecologia-monstruosa-dw.json")
+    schema=load("schemas/ecologia-monstruosa-xii.schema.json")
+    Draft202012Validator.check_schema(schema)
+    errors=list(Draft202012Validator(schema).iter_errors(data))
+    require(not errors, f"Ecologia XII: schema inválido: {errors[:2]}")
+    categorias={"criaturas":8,"encontros":6,"pressoes":4,"frentes":2}
+    require(data["contagens"]==categorias and
+            data["aprovacao_autoral"] is False and
+            data["efeito_automatico_no_canon"] is False,
+            "Ecologia XII: contagens ou estado editorial alterados.")
+    registros=[item for cat in categorias for item in data[cat]]
+    ids=[item["id"] for item in registros]
+    require(len(ids)==len(set(ids))==20 and
+            all(item["id"].startswith("ecologia-xii:") for item in registros),
+            "Ecologia XII: IDs duplicados ou prefixo errado.")
+    taxonomia={x["id"] for x in load("data/taxonomia_carcaca.json")["tipos"]}
+    anteriores=load("data/propostas/ironwood-eldroth-resistencia-hack.json")
+    lugares_xi={x["id"] for x in anteriores["lugares"]}
+    cenas_xi={x["id"] for x in anteriores["cenas"]}
+    cid={x["id"] for x in data["criaturas"]}
+    eid={x["id"] for x in data["encontros"]}
+    for criatura in data["criaturas"]:
+        escopo=criatura["localizacao_proposta"]["escopo"]
+        rid=criatura["localizacao_proposta"]["regiao_canonica_de_referencia"]
+        require(criatura["tipo_carcaca_proposto"] in taxonomia
+                and criatura["vinculo_cena_anterior"] in cenas_xi
+                and criatura["dungeon_world"]["instinto"]
+                and len(criatura["dungeon_world"]["movimentos"])>=3
+                and criatura["ocorrencia_confirmada"] is False,
+                "Ecologia XII: tipo, instinto, proveniência ou ocorrência inválidos.")
+        require(criatura["localizacao_proposta"]["local_proposto_id"] in lugares_xi,
+                "Ecologia XII: habitat proposto sem ligação no ciclo XI.")
+        require((rid is None) if escopo=="ironwood" else (rid=="regiao:eldroth"),
+                "Ecologia XII: Ironwood foi confundida com Eldroth ou região errada.")
+        require(all(criatura["dungeon_world"]["estatisticas"][k] is None
+                    for k in ("pv","armadura","dano","nd_dnd")),
+                "Ecologia XII: estatística DW/D&D inventada ou convertida.")
+        require(criatura["ecologia"]["alimentacao_confirmada"] is None
+                and criatura["ecologia"]["reproducao_confirmada"] is None
+                and criatura["ecologia"]["densidade_confirmada"] is None,
+                "Ecologia XII: dados ecológicos não medidos preenchidos.")
+    for encontro in data["encontros"]:
+        require(encontro["cena_anterior_id"] in cenas_xi
+                and set(encontro["criaturas_ids"]).issubset(cid)
+                and len(encontro["escolhas_sem_combater"])>=3
+                and encontro["ocorreu"] is False
+                and encontro["resultado_canonico"] is None,
+                "Ecologia XII: encontro sem referência, escolhas ou fictício realizado.")
+    for pressao in data["pressoes"]:
+        require(set(pressao["criaturas_ids"]).issubset(cid)
+                and pressao["ocorreu"] is False
+                and pressao["medicao"] is None and pressao["periodo"] is None,
+                "Ecologia XII: pressão foi efetivada ou quantificada.")
+    for frente in data["frentes"]:
+        require(set(frente["criaturas_ids"]).issubset(cid)
+                and set(frente["encontros_ids"]).issubset(eid)
+                and len(frente["pressagios_sombrios_propostos"])==3
+                and frente["pressagios_realizados"]==[]
+                and frente["ocorreu"] is False
+                and frente["resultado_canonico"] is None,
+                "Ecologia XII: frente já consumada ou com ponte quebrada.")
+    # O bestiário canônico permanece distinto: nenhuma das oito espécies foi
+    # armazenada na árvore de fichas de monstros curados.
+    ids_canonicos={x["id"] for x in gather("curadoria/criaturas")}
+    require(not (ids_canonicos & cid),
+            "Ecologia XII: criatura em proposta colidiu com catálogo curado.")
+    print("Ecologia XII: 8 criaturas, 6 encontros, 4 pressões, 2 frentes propostos; zero promoção canônica.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3051,6 +3123,7 @@ def main():
     validar_povoamento_garganta_rio_ancestral()
     validar_povoamento_social_thargrid()
     validar_resistencia_florestal_xi()
+    validar_ecologia_monstruosa_xii()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
