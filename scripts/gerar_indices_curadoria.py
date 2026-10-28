@@ -255,6 +255,33 @@ def build():
     costa_mar=load("data/propostas/costa-sul-pressao-mar-sangue-hack.json")
     rio_garganta=load("data/propostas/garganta-rio-ancestral-social-hack.json")
     thargrid=load("data/propostas/thargrid-resistencia-cotidiano-hack.json")
+    floresta=load("data/propostas/ironwood-eldroth-resistencia-hack.json")
+    categorias_floresta=("lugares","coletivos","pessoas","dilemas","fluxos","acordos","cenas","arcos")
+    linhas_floresta=[{**entidade,"categoria":categoria}
+                     for categoria in categorias_floresta for entidade in floresta[categoria]]
+    if len(linhas_floresta)!=40:
+        raise ValueError("Povoamento XI exige 40 propostas.")
+    def indice_floresta(campo):
+        grupos=defaultdict(set)
+        for entidade in linhas_floresta:
+            valores=entidade.get(campo,[])
+            for valor in (valores if isinstance(valores,list) else [valores]):
+                if valor is not None and valor!="":
+                    grupos[str(valor)].add(entidade["id"])
+        return {k:sorted(v) for k,v in sorted(grupos.items())}
+    indices_floresta={
+        "by_categoria":indice_floresta("categoria"),
+        "by_povo":indice_floresta("povo"),
+        "by_ambiente":indice_floresta("ambiente"),
+        "by_funcao":indice_floresta("funcao"),
+        "by_setor":indice_floresta("setor"),
+        "by_movimento_hack":indice_floresta("movimentos_inspiradores"),
+        "by_semente_anterior":indice_floresta("vinculos"),
+        "by_cena_local":indice_floresta("local_id"),
+        "by_origem":indice_floresta("origem"),
+        "by_destino":indice_floresta("destino"),
+        "by_personagem_reutilizado":indice_floresta("reutiliza")
+    }
     cats_thargrid=("lugares","coletivos","pessoas","dilemas","fluxos","acordos","cenas","arcos")
     rows_thargrid=[{**x,"categoria":cat} for cat in cats_thargrid for x in thargrid[cat]]
     def idx_thargrid(field):
@@ -789,6 +816,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "ironwood_eldroth_resistance":"ironwood-eldroth-resistance.json",
+        "ironwood_eldroth_resistance_indexes":"ironwood-eldroth-resistance-indexes.json",
         "thargrid_social_resistance":"thargrid-social-resistance.json",
         "thargrid_social_resistance_indexes":"thargrid-social-resistance-indexes.json",
         "garganta_river_social":"garganta-river-social.json",
@@ -909,6 +938,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_entidades_ironwood_eldroth_propostas":len(linhas_floresta),
+        "total_lugares_ironwood_eldroth_propostos":len(floresta["lugares"]),
+        "total_pessoas_ironwood_eldroth_propostas":len(floresta["pessoas"]),
+        "total_cenas_ironwood_eldroth_propostas":len(floresta["cenas"]),
         "total_entidades_thargrid_propostas":len(rows_thargrid),
         "total_lugares_thargrid_propostos":len(thargrid["lugares"]),
         "total_pessoas_thargrid_propostas":len(thargrid["pessoas"]),
@@ -1029,6 +1062,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["ironwood_eldroth_resistance"]:floresta,
+           files["ironwood_eldroth_resistance_indexes"]:indices_floresta,
            files["thargrid_social_resistance"]:thargrid,
            files["thargrid_social_resistance_indexes"]:indexes_thargrid,
            files["garganta_river_social"]:rio_garganta,
