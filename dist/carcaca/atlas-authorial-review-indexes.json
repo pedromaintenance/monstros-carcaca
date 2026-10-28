@@ -1,0 +1,1040 @@
+{
+  "by_categoria": {
+    "candidatos": [
+      "worldbuilding-xix:candidato:001",
+      "worldbuilding-xix:candidato:002",
+      "worldbuilding-xix:candidato:003",
+      "worldbuilding-xix:candidato:004",
+      "worldbuilding-xix:candidato:005",
+      "worldbuilding-xix:candidato:006",
+      "worldbuilding-xix:candidato:007",
+      "worldbuilding-xix:candidato:008",
+      "worldbuilding-xix:candidato:009",
+      "worldbuilding-xix:candidato:010",
+      "worldbuilding-xix:candidato:011",
+      "worldbuilding-xix:candidato:012",
+      "worldbuilding-xix:candidato:013",
+      "worldbuilding-xix:candidato:014",
+      "worldbuilding-xix:candidato:015",
+      "worldbuilding-xix:candidato:016",
+      "worldbuilding-xix:candidato:017",
+      "worldbuilding-xix:candidato:018",
+      "worldbuilding-xix:candidato:019",
+      "worldbuilding-xix:candidato:020",
+      "worldbuilding-xix:candidato:021",
+      "worldbuilding-xix:candidato:022",
+      "worldbuilding-xix:candidato:023",
+      "worldbuilding-xix:candidato:024",
+      "worldbuilding-xix:candidato:025",
+      "worldbuilding-xix:candidato:026",
+      "worldbuilding-xix:candidato:027",
+      "worldbuilding-xix:candidato:028",
+      "worldbuilding-xix:candidato:029",
+      "worldbuilding-xix:candidato:030",
+      "worldbuilding-xix:candidato:031",
+      "worldbuilding-xix:candidato:032",
+      "worldbuilding-xix:candidato:033",
+      "worldbuilding-xix:candidato:034",
+      "worldbuilding-xix:candidato:035",
+      "worldbuilding-xix:candidato:036",
+      "worldbuilding-xix:candidato:037",
+      "worldbuilding-xix:candidato:038",
+      "worldbuilding-xix:candidato:039",
+      "worldbuilding-xix:candidato:040",
+      "worldbuilding-xix:candidato:041",
+      "worldbuilding-xix:candidato:042",
+      "worldbuilding-xix:candidato:043",
+      "worldbuilding-xix:candidato:044",
+      "worldbuilding-xix:candidato:045",
+      "worldbuilding-xix:candidato:046",
+      "worldbuilding-xix:candidato:047",
+      "worldbuilding-xix:candidato:048",
+      "worldbuilding-xix:candidato:049",
+      "worldbuilding-xix:candidato:050",
+      "worldbuilding-xix:candidato:051",
+      "worldbuilding-xix:candidato:052",
+      "worldbuilding-xix:candidato:053",
+      "worldbuilding-xix:candidato:054",
+      "worldbuilding-xix:candidato:055",
+      "worldbuilding-xix:candidato:056",
+      "worldbuilding-xix:candidato:057",
+      "worldbuilding-xix:candidato:058",
+      "worldbuilding-xix:candidato:059",
+      "worldbuilding-xix:candidato:060",
+      "worldbuilding-xix:candidato:061",
+      "worldbuilding-xix:candidato:062",
+      "worldbuilding-xix:candidato:063",
+      "worldbuilding-xix:candidato:064",
+      "worldbuilding-xix:candidato:065",
+      "worldbuilding-xix:candidato:066",
+      "worldbuilding-xix:candidato:067",
+      "worldbuilding-xix:candidato:068",
+      "worldbuilding-xix:candidato:069",
+      "worldbuilding-xix:candidato:070",
+      "worldbuilding-xix:candidato:071",
+      "worldbuilding-xix:candidato:072",
+      "worldbuilding-xix:candidato:073",
+      "worldbuilding-xix:candidato:074",
+      "worldbuilding-xix:candidato:075",
+      "worldbuilding-xix:candidato:076",
+      "worldbuilding-xix:candidato:077",
+      "worldbuilding-xix:candidato:078",
+      "worldbuilding-xix:candidato:079",
+      "worldbuilding-xix:candidato:080",
+      "worldbuilding-xix:candidato:081",
+      "worldbuilding-xix:candidato:082",
+      "worldbuilding-xix:candidato:083",
+      "worldbuilding-xix:candidato:084",
+      "worldbuilding-xix:candidato:085",
+      "worldbuilding-xix:candidato:086",
+      "worldbuilding-xix:candidato:087",
+      "worldbuilding-xix:candidato:088",
+      "worldbuilding-xix:candidato:089",
+      "worldbuilding-xix:candidato:090",
+      "worldbuilding-xix:candidato:091",
+      "worldbuilding-xix:candidato:092",
+      "worldbuilding-xix:candidato:093",
+      "worldbuilding-xix:candidato:094",
+      "worldbuilding-xix:candidato:095",
+      "worldbuilding-xix:candidato:096",
+      "worldbuilding-xix:candidato:097",
+      "worldbuilding-xix:candidato:098",
+      "worldbuilding-xix:candidato:099",
+      "worldbuilding-xix:candidato:100",
+      "worldbuilding-xix:candidato:101",
+      "worldbuilding-xix:candidato:102",
+      "worldbuilding-xix:candidato:103"
+    ],
+    "decisoes": [
+      "worldbuilding-xix:decisao:apos-rainha",
+      "worldbuilding-xix:decisao:autoridade-druida",
+      "worldbuilding-xix:decisao:autoridade-elara",
+      "worldbuilding-xix:decisao:civis-vandar",
+      "worldbuilding-xix:decisao:colaboracao",
+      "worldbuilding-xix:decisao:costumes",
+      "worldbuilding-xix:decisao:economia-vandar",
+      "worldbuilding-xix:decisao:extracao",
+      "worldbuilding-xix:decisao:fauna",
+      "worldbuilding-xix:decisao:governo-sylara",
+      "worldbuilding-xix:decisao:identidade-mortos",
+      "worldbuilding-xix:decisao:infancia-ironwood",
+      "worldbuilding-xix:decisao:ironwood-geografia",
+      "worldbuilding-xix:decisao:juramentos",
+      "worldbuilding-xix:decisao:membros-ironwood",
+      "worldbuilding-xix:decisao:memoria",
+      "worldbuilding-xix:decisao:pacto-thargrid",
+      "worldbuilding-xix:decisao:queda-vandar",
+      "worldbuilding-xix:decisao:refugio-feerico",
+      "worldbuilding-xix:decisao:ritos-vandar"
+    ],
+    "dossies": [
+      "worldbuilding-xix:dossie:xiv",
+      "worldbuilding-xix:dossie:xv",
+      "worldbuilding-xix:dossie:xvi",
+      "worldbuilding-xix:dossie:xvii",
+      "worldbuilding-xix:dossie:xviii"
+    ],
+    "guardas": [
+      "worldbuilding-xix:guarda:01",
+      "worldbuilding-xix:guarda:02",
+      "worldbuilding-xix:guarda:03",
+      "worldbuilding-xix:guarda:04",
+      "worldbuilding-xix:guarda:05",
+      "worldbuilding-xix:guarda:06",
+      "worldbuilding-xix:guarda:07",
+      "worldbuilding-xix:guarda:08",
+      "worldbuilding-xix:guarda:09",
+      "worldbuilding-xix:guarda:10"
+    ]
+  },
+  "by_ciclo": {
+    "XIV": [
+      "worldbuilding-xix:candidato:001",
+      "worldbuilding-xix:candidato:002",
+      "worldbuilding-xix:candidato:003",
+      "worldbuilding-xix:candidato:004",
+      "worldbuilding-xix:candidato:005",
+      "worldbuilding-xix:candidato:006",
+      "worldbuilding-xix:candidato:007",
+      "worldbuilding-xix:candidato:008",
+      "worldbuilding-xix:candidato:009",
+      "worldbuilding-xix:candidato:010",
+      "worldbuilding-xix:candidato:011",
+      "worldbuilding-xix:candidato:012",
+      "worldbuilding-xix:candidato:013",
+      "worldbuilding-xix:candidato:014",
+      "worldbuilding-xix:candidato:015",
+      "worldbuilding-xix:candidato:016",
+      "worldbuilding-xix:candidato:017",
+      "worldbuilding-xix:candidato:018",
+      "worldbuilding-xix:candidato:019",
+      "worldbuilding-xix:candidato:020",
+      "worldbuilding-xix:candidato:021",
+      "worldbuilding-xix:candidato:022",
+      "worldbuilding-xix:candidato:023",
+      "worldbuilding-xix:candidato:024",
+      "worldbuilding-xix:candidato:025",
+      "worldbuilding-xix:candidato:026",
+      "worldbuilding-xix:candidato:027",
+      "worldbuilding-xix:candidato:028",
+      "worldbuilding-xix:candidato:029",
+      "worldbuilding-xix:candidato:030",
+      "worldbuilding-xix:candidato:031",
+      "worldbuilding-xix:candidato:032",
+      "worldbuilding-xix:candidato:033",
+      "worldbuilding-xix:candidato:034",
+      "worldbuilding-xix:candidato:035",
+      "worldbuilding-xix:candidato:036",
+      "worldbuilding-xix:candidato:037",
+      "worldbuilding-xix:candidato:038",
+      "worldbuilding-xix:candidato:039",
+      "worldbuilding-xix:candidato:040",
+      "worldbuilding-xix:candidato:041",
+      "worldbuilding-xix:candidato:042",
+      "worldbuilding-xix:dossie:xiv"
+    ],
+    "XV": [
+      "worldbuilding-xix:candidato:043",
+      "worldbuilding-xix:candidato:044",
+      "worldbuilding-xix:candidato:045",
+      "worldbuilding-xix:candidato:046",
+      "worldbuilding-xix:candidato:047",
+      "worldbuilding-xix:candidato:048",
+      "worldbuilding-xix:candidato:049",
+      "worldbuilding-xix:candidato:050",
+      "worldbuilding-xix:candidato:051",
+      "worldbuilding-xix:candidato:052",
+      "worldbuilding-xix:candidato:053",
+      "worldbuilding-xix:candidato:054",
+      "worldbuilding-xix:candidato:055",
+      "worldbuilding-xix:candidato:056",
+      "worldbuilding-xix:candidato:057",
+      "worldbuilding-xix:candidato:058",
+      "worldbuilding-xix:candidato:059",
+      "worldbuilding-xix:candidato:060",
+      "worldbuilding-xix:candidato:061",
+      "worldbuilding-xix:candidato:062",
+      "worldbuilding-xix:candidato:063",
+      "worldbuilding-xix:candidato:064",
+      "worldbuilding-xix:candidato:065",
+      "worldbuilding-xix:candidato:066",
+      "worldbuilding-xix:candidato:067",
+      "worldbuilding-xix:candidato:068",
+      "worldbuilding-xix:candidato:069",
+      "worldbuilding-xix:candidato:070",
+      "worldbuilding-xix:dossie:xv"
+    ],
+    "XVI": [
+      "worldbuilding-xix:candidato:071",
+      "worldbuilding-xix:candidato:072",
+      "worldbuilding-xix:candidato:073",
+      "worldbuilding-xix:candidato:074",
+      "worldbuilding-xix:candidato:075",
+      "worldbuilding-xix:candidato:076",
+      "worldbuilding-xix:candidato:077",
+      "worldbuilding-xix:candidato:078",
+      "worldbuilding-xix:candidato:079",
+      "worldbuilding-xix:candidato:080",
+      "worldbuilding-xix:candidato:081",
+      "worldbuilding-xix:dossie:xvi"
+    ],
+    "XVII": [
+      "worldbuilding-xix:candidato:082",
+      "worldbuilding-xix:candidato:083",
+      "worldbuilding-xix:candidato:084",
+      "worldbuilding-xix:candidato:085",
+      "worldbuilding-xix:candidato:086",
+      "worldbuilding-xix:candidato:087",
+      "worldbuilding-xix:candidato:088",
+      "worldbuilding-xix:candidato:089",
+      "worldbuilding-xix:candidato:090",
+      "worldbuilding-xix:candidato:091",
+      "worldbuilding-xix:candidato:092",
+      "worldbuilding-xix:dossie:xvii"
+    ],
+    "XVIII": [
+      "worldbuilding-xix:candidato:093",
+      "worldbuilding-xix:candidato:094",
+      "worldbuilding-xix:candidato:095",
+      "worldbuilding-xix:candidato:096",
+      "worldbuilding-xix:candidato:097",
+      "worldbuilding-xix:candidato:098",
+      "worldbuilding-xix:candidato:099",
+      "worldbuilding-xix:candidato:100",
+      "worldbuilding-xix:candidato:101",
+      "worldbuilding-xix:candidato:102",
+      "worldbuilding-xix:candidato:103",
+      "worldbuilding-xix:dossie:xviii"
+    ]
+  },
+  "by_classe": {
+    "alternativa": [
+      "worldbuilding-xix:candidato:001",
+      "worldbuilding-xix:candidato:002",
+      "worldbuilding-xix:candidato:003",
+      "worldbuilding-xix:candidato:004",
+      "worldbuilding-xix:candidato:005",
+      "worldbuilding-xix:candidato:006",
+      "worldbuilding-xix:candidato:007",
+      "worldbuilding-xix:candidato:008",
+      "worldbuilding-xix:candidato:009",
+      "worldbuilding-xix:candidato:010",
+      "worldbuilding-xix:candidato:011",
+      "worldbuilding-xix:candidato:012",
+      "worldbuilding-xix:candidato:013",
+      "worldbuilding-xix:candidato:014",
+      "worldbuilding-xix:candidato:015",
+      "worldbuilding-xix:candidato:016",
+      "worldbuilding-xix:candidato:017",
+      "worldbuilding-xix:candidato:018",
+      "worldbuilding-xix:candidato:019",
+      "worldbuilding-xix:candidato:020",
+      "worldbuilding-xix:candidato:021",
+      "worldbuilding-xix:candidato:022",
+      "worldbuilding-xix:candidato:023",
+      "worldbuilding-xix:candidato:024",
+      "worldbuilding-xix:candidato:025",
+      "worldbuilding-xix:candidato:026",
+      "worldbuilding-xix:candidato:027",
+      "worldbuilding-xix:candidato:028",
+      "worldbuilding-xix:candidato:029",
+      "worldbuilding-xix:candidato:030",
+      "worldbuilding-xix:candidato:031",
+      "worldbuilding-xix:candidato:032",
+      "worldbuilding-xix:candidato:033",
+      "worldbuilding-xix:candidato:034",
+      "worldbuilding-xix:candidato:035",
+      "worldbuilding-xix:candidato:036",
+      "worldbuilding-xix:candidato:037",
+      "worldbuilding-xix:candidato:038",
+      "worldbuilding-xix:candidato:039",
+      "worldbuilding-xix:candidato:040",
+      "worldbuilding-xix:candidato:041",
+      "worldbuilding-xix:candidato:042",
+      "worldbuilding-xix:candidato:043",
+      "worldbuilding-xix:candidato:044",
+      "worldbuilding-xix:candidato:045",
+      "worldbuilding-xix:candidato:046",
+      "worldbuilding-xix:candidato:047",
+      "worldbuilding-xix:candidato:048",
+      "worldbuilding-xix:candidato:049",
+      "worldbuilding-xix:candidato:050",
+      "worldbuilding-xix:candidato:051",
+      "worldbuilding-xix:candidato:052",
+      "worldbuilding-xix:candidato:053",
+      "worldbuilding-xix:candidato:054",
+      "worldbuilding-xix:candidato:055",
+      "worldbuilding-xix:candidato:056",
+      "worldbuilding-xix:candidato:057",
+      "worldbuilding-xix:candidato:058",
+      "worldbuilding-xix:candidato:059",
+      "worldbuilding-xix:candidato:060",
+      "worldbuilding-xix:candidato:061",
+      "worldbuilding-xix:candidato:062",
+      "worldbuilding-xix:candidato:063",
+      "worldbuilding-xix:candidato:064",
+      "worldbuilding-xix:candidato:065",
+      "worldbuilding-xix:candidato:066"
+    ],
+    "controle": [
+      "worldbuilding-xix:candidato:071",
+      "worldbuilding-xix:candidato:072",
+      "worldbuilding-xix:candidato:073",
+      "worldbuilding-xix:candidato:074",
+      "worldbuilding-xix:candidato:075",
+      "worldbuilding-xix:candidato:076",
+      "worldbuilding-xix:candidato:077",
+      "worldbuilding-xix:candidato:078"
+    ],
+    "governo": [
+      "worldbuilding-xix:candidato:101",
+      "worldbuilding-xix:candidato:102",
+      "worldbuilding-xix:candidato:103"
+    ],
+    "historia_urbana": [
+      "worldbuilding-xix:candidato:082",
+      "worldbuilding-xix:candidato:083",
+      "worldbuilding-xix:candidato:084",
+      "worldbuilding-xix:candidato:085",
+      "worldbuilding-xix:candidato:086",
+      "worldbuilding-xix:candidato:087",
+      "worldbuilding-xix:candidato:088",
+      "worldbuilding-xix:candidato:089"
+    ],
+    "pacto": [
+      "worldbuilding-xix:candidato:067",
+      "worldbuilding-xix:candidato:068",
+      "worldbuilding-xix:candidato:069",
+      "worldbuilding-xix:candidato:070"
+    ],
+    "regime": [
+      "worldbuilding-xix:candidato:079",
+      "worldbuilding-xix:candidato:080",
+      "worldbuilding-xix:candidato:081",
+      "worldbuilding-xix:candidato:090",
+      "worldbuilding-xix:candidato:091",
+      "worldbuilding-xix:candidato:092"
+    ],
+    "vida_civil": [
+      "worldbuilding-xix:candidato:093",
+      "worldbuilding-xix:candidato:094",
+      "worldbuilding-xix:candidato:095",
+      "worldbuilding-xix:candidato:096",
+      "worldbuilding-xix:candidato:097",
+      "worldbuilding-xix:candidato:098",
+      "worldbuilding-xix:candidato:099",
+      "worldbuilding-xix:candidato:100"
+    ]
+  },
+  "by_dominio": {
+    "eldroth": [
+      "worldbuilding-xix:decisao:autoridade-druida",
+      "worldbuilding-xix:decisao:colaboracao",
+      "worldbuilding-xix:decisao:costumes",
+      "worldbuilding-xix:decisao:extracao",
+      "worldbuilding-xix:decisao:fauna",
+      "worldbuilding-xix:decisao:governo-sylara",
+      "worldbuilding-xix:decisao:juramentos",
+      "worldbuilding-xix:decisao:memoria",
+      "worldbuilding-xix:decisao:refugio-feerico"
+    ],
+    "ironwood": [
+      "worldbuilding-xix:decisao:autoridade-elara",
+      "worldbuilding-xix:decisao:infancia-ironwood",
+      "worldbuilding-xix:decisao:membros-ironwood"
+    ],
+    "transversal": [
+      "worldbuilding-xix:decisao:apos-rainha",
+      "worldbuilding-xix:decisao:ironwood-geografia",
+      "worldbuilding-xix:decisao:pacto-thargrid"
+    ],
+    "vandar": [
+      "worldbuilding-xix:decisao:civis-vandar",
+      "worldbuilding-xix:decisao:economia-vandar",
+      "worldbuilding-xix:decisao:identidade-mortos",
+      "worldbuilding-xix:decisao:queda-vandar",
+      "worldbuilding-xix:decisao:ritos-vandar"
+    ]
+  },
+  "by_prioridade": {
+    "alta": [
+      "worldbuilding-xix:decisao:apos-rainha",
+      "worldbuilding-xix:decisao:autoridade-druida",
+      "worldbuilding-xix:decisao:autoridade-elara",
+      "worldbuilding-xix:decisao:colaboracao",
+      "worldbuilding-xix:decisao:costumes",
+      "worldbuilding-xix:decisao:economia-vandar",
+      "worldbuilding-xix:decisao:fauna",
+      "worldbuilding-xix:decisao:governo-sylara",
+      "worldbuilding-xix:decisao:identidade-mortos",
+      "worldbuilding-xix:decisao:ironwood-geografia",
+      "worldbuilding-xix:decisao:juramentos",
+      "worldbuilding-xix:decisao:membros-ironwood",
+      "worldbuilding-xix:decisao:pacto-thargrid",
+      "worldbuilding-xix:decisao:queda-vandar",
+      "worldbuilding-xix:decisao:refugio-feerico"
+    ],
+    "media": [
+      "worldbuilding-xix:decisao:civis-vandar",
+      "worldbuilding-xix:decisao:extracao",
+      "worldbuilding-xix:decisao:infancia-ironwood",
+      "worldbuilding-xix:decisao:memoria",
+      "worldbuilding-xix:decisao:ritos-vandar"
+    ]
+  },
+  "by_estado": {
+    "em_revisao": [
+      "worldbuilding-xix:dossie:xiv",
+      "worldbuilding-xix:dossie:xv",
+      "worldbuilding-xix:dossie:xvi",
+      "worldbuilding-xix:dossie:xvii",
+      "worldbuilding-xix:dossie:xviii"
+    ],
+    "fontes_revisaveis": [
+      "worldbuilding-xix:guarda:01",
+      "worldbuilding-xix:guarda:02",
+      "worldbuilding-xix:guarda:03",
+      "worldbuilding-xix:guarda:04",
+      "worldbuilding-xix:guarda:05",
+      "worldbuilding-xix:guarda:06",
+      "worldbuilding-xix:guarda:07",
+      "worldbuilding-xix:guarda:08",
+      "worldbuilding-xix:guarda:09",
+      "worldbuilding-xix:guarda:10"
+    ],
+    "nao_aprovado": [
+      "worldbuilding-xix:candidato:001",
+      "worldbuilding-xix:candidato:002",
+      "worldbuilding-xix:candidato:003",
+      "worldbuilding-xix:candidato:004",
+      "worldbuilding-xix:candidato:005",
+      "worldbuilding-xix:candidato:006",
+      "worldbuilding-xix:candidato:007",
+      "worldbuilding-xix:candidato:008",
+      "worldbuilding-xix:candidato:009",
+      "worldbuilding-xix:candidato:010",
+      "worldbuilding-xix:candidato:011",
+      "worldbuilding-xix:candidato:012",
+      "worldbuilding-xix:candidato:013",
+      "worldbuilding-xix:candidato:014",
+      "worldbuilding-xix:candidato:015",
+      "worldbuilding-xix:candidato:016",
+      "worldbuilding-xix:candidato:017",
+      "worldbuilding-xix:candidato:018",
+      "worldbuilding-xix:candidato:019",
+      "worldbuilding-xix:candidato:020",
+      "worldbuilding-xix:candidato:021",
+      "worldbuilding-xix:candidato:022",
+      "worldbuilding-xix:candidato:023",
+      "worldbuilding-xix:candidato:024",
+      "worldbuilding-xix:candidato:025",
+      "worldbuilding-xix:candidato:026",
+      "worldbuilding-xix:candidato:027",
+      "worldbuilding-xix:candidato:028",
+      "worldbuilding-xix:candidato:029",
+      "worldbuilding-xix:candidato:030",
+      "worldbuilding-xix:candidato:031",
+      "worldbuilding-xix:candidato:032",
+      "worldbuilding-xix:candidato:033",
+      "worldbuilding-xix:candidato:034",
+      "worldbuilding-xix:candidato:035",
+      "worldbuilding-xix:candidato:036",
+      "worldbuilding-xix:candidato:037",
+      "worldbuilding-xix:candidato:038",
+      "worldbuilding-xix:candidato:039",
+      "worldbuilding-xix:candidato:040",
+      "worldbuilding-xix:candidato:041",
+      "worldbuilding-xix:candidato:042",
+      "worldbuilding-xix:candidato:043",
+      "worldbuilding-xix:candidato:044",
+      "worldbuilding-xix:candidato:045",
+      "worldbuilding-xix:candidato:046",
+      "worldbuilding-xix:candidato:047",
+      "worldbuilding-xix:candidato:048",
+      "worldbuilding-xix:candidato:049",
+      "worldbuilding-xix:candidato:050",
+      "worldbuilding-xix:candidato:051",
+      "worldbuilding-xix:candidato:052",
+      "worldbuilding-xix:candidato:053",
+      "worldbuilding-xix:candidato:054",
+      "worldbuilding-xix:candidato:055",
+      "worldbuilding-xix:candidato:056",
+      "worldbuilding-xix:candidato:057",
+      "worldbuilding-xix:candidato:058",
+      "worldbuilding-xix:candidato:059",
+      "worldbuilding-xix:candidato:060",
+      "worldbuilding-xix:candidato:061",
+      "worldbuilding-xix:candidato:062",
+      "worldbuilding-xix:candidato:063",
+      "worldbuilding-xix:candidato:064",
+      "worldbuilding-xix:candidato:065",
+      "worldbuilding-xix:candidato:066",
+      "worldbuilding-xix:candidato:067",
+      "worldbuilding-xix:candidato:068",
+      "worldbuilding-xix:candidato:069",
+      "worldbuilding-xix:candidato:070",
+      "worldbuilding-xix:candidato:071",
+      "worldbuilding-xix:candidato:072",
+      "worldbuilding-xix:candidato:073",
+      "worldbuilding-xix:candidato:074",
+      "worldbuilding-xix:candidato:075",
+      "worldbuilding-xix:candidato:076",
+      "worldbuilding-xix:candidato:077",
+      "worldbuilding-xix:candidato:078",
+      "worldbuilding-xix:candidato:079",
+      "worldbuilding-xix:candidato:080",
+      "worldbuilding-xix:candidato:081",
+      "worldbuilding-xix:candidato:082",
+      "worldbuilding-xix:candidato:083",
+      "worldbuilding-xix:candidato:084",
+      "worldbuilding-xix:candidato:085",
+      "worldbuilding-xix:candidato:086",
+      "worldbuilding-xix:candidato:087",
+      "worldbuilding-xix:candidato:088",
+      "worldbuilding-xix:candidato:089",
+      "worldbuilding-xix:candidato:090",
+      "worldbuilding-xix:candidato:091",
+      "worldbuilding-xix:candidato:092",
+      "worldbuilding-xix:candidato:093",
+      "worldbuilding-xix:candidato:094",
+      "worldbuilding-xix:candidato:095",
+      "worldbuilding-xix:candidato:096",
+      "worldbuilding-xix:candidato:097",
+      "worldbuilding-xix:candidato:098",
+      "worldbuilding-xix:candidato:099",
+      "worldbuilding-xix:candidato:100",
+      "worldbuilding-xix:candidato:101",
+      "worldbuilding-xix:candidato:102",
+      "worldbuilding-xix:candidato:103"
+    ],
+    "pendente": [
+      "worldbuilding-xix:decisao:apos-rainha",
+      "worldbuilding-xix:decisao:autoridade-druida",
+      "worldbuilding-xix:decisao:autoridade-elara",
+      "worldbuilding-xix:decisao:civis-vandar",
+      "worldbuilding-xix:decisao:colaboracao",
+      "worldbuilding-xix:decisao:costumes",
+      "worldbuilding-xix:decisao:economia-vandar",
+      "worldbuilding-xix:decisao:extracao",
+      "worldbuilding-xix:decisao:fauna",
+      "worldbuilding-xix:decisao:governo-sylara",
+      "worldbuilding-xix:decisao:identidade-mortos",
+      "worldbuilding-xix:decisao:infancia-ironwood",
+      "worldbuilding-xix:decisao:ironwood-geografia",
+      "worldbuilding-xix:decisao:juramentos",
+      "worldbuilding-xix:decisao:membros-ironwood",
+      "worldbuilding-xix:decisao:memoria",
+      "worldbuilding-xix:decisao:pacto-thargrid",
+      "worldbuilding-xix:decisao:queda-vandar",
+      "worldbuilding-xix:decisao:refugio-feerico",
+      "worldbuilding-xix:decisao:ritos-vandar"
+    ]
+  },
+  "by_origem_id": {
+    "worldbuilding-xiv:eixo:cumplicidade-e-ruptura": [
+      "worldbuilding-xix:candidato:013",
+      "worldbuilding-xix:candidato:014",
+      "worldbuilding-xix:candidato:015"
+    ],
+    "worldbuilding-xiv:eixo:floresta-agente": [
+      "worldbuilding-xix:candidato:007",
+      "worldbuilding-xix:candidato:008",
+      "worldbuilding-xix:candidato:009"
+    ],
+    "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao": [
+      "worldbuilding-xix:candidato:040",
+      "worldbuilding-xix:candidato:041",
+      "worldbuilding-xix:candidato:042",
+      "worldbuilding-xix:decisao:ironwood-geografia"
+    ],
+    "worldbuilding-xiv:eixo:ironwood-cultura": [
+      "worldbuilding-xix:candidato:022",
+      "worldbuilding-xix:candidato:023",
+      "worldbuilding-xix:candidato:024"
+    ],
+    "worldbuilding-xiv:eixo:ligacao-thargrid": [
+      "worldbuilding-xix:candidato:025",
+      "worldbuilding-xix:candidato:026",
+      "worldbuilding-xix:candidato:027"
+    ],
+    "worldbuilding-xiv:eixo:memoria-e-ritos": [
+      "worldbuilding-xix:candidato:031",
+      "worldbuilding-xix:candidato:032",
+      "worldbuilding-xix:candidato:033"
+    ],
+    "worldbuilding-xiv:eixo:nomeacao-e-mapas": [
+      "worldbuilding-xix:candidato:037",
+      "worldbuilding-xix:candidato:038",
+      "worldbuilding-xix:candidato:039"
+    ],
+    "worldbuilding-xiv:eixo:ondas-feericas": [
+      "worldbuilding-xix:candidato:001",
+      "worldbuilding-xix:candidato:002",
+      "worldbuilding-xix:candidato:003"
+    ],
+    "worldbuilding-xiv:eixo:pactos-feericos": [
+      "worldbuilding-xix:candidato:034",
+      "worldbuilding-xix:candidato:035",
+      "worldbuilding-xix:candidato:036"
+    ],
+    "worldbuilding-xiv:eixo:refugiados": [
+      "worldbuilding-xix:candidato:019",
+      "worldbuilding-xix:candidato:020",
+      "worldbuilding-xix:candidato:021"
+    ],
+    "worldbuilding-xiv:eixo:regime-de-sylara": [
+      "worldbuilding-xix:candidato:004",
+      "worldbuilding-xix:candidato:005",
+      "worldbuilding-xix:candidato:006"
+    ],
+    "worldbuilding-xiv:eixo:sagrado-druidico": [
+      "worldbuilding-xix:candidato:010",
+      "worldbuilding-xix:candidato:011",
+      "worldbuilding-xix:candidato:012"
+    ],
+    "worldbuilding-xiv:eixo:subsistencia": [
+      "worldbuilding-xix:candidato:016",
+      "worldbuilding-xix:candidato:017",
+      "worldbuilding-xix:candidato:018"
+    ],
+    "worldbuilding-xiv:eixo:vandar-mortos": [
+      "worldbuilding-xix:candidato:028",
+      "worldbuilding-xix:candidato:029",
+      "worldbuilding-xix:candidato:030"
+    ],
+    "worldbuilding-xv:pacto:acolhimento-sem-vassalagem": [
+      "worldbuilding-xix:candidato:067"
+    ],
+    "worldbuilding-xv:pacto:passagem-e-cuidado": [
+      "worldbuilding-xix:candidato:068"
+    ],
+    "worldbuilding-xv:pacto:promessa-sem-herdeiro": [
+      "worldbuilding-xix:candidato:070"
+    ],
+    "worldbuilding-xv:pacto:semente-e-limite": [
+      "worldbuilding-xix:candidato:069"
+    ],
+    "worldbuilding-xv:pratica:acordos-com-os-silenciosos": [
+      "worldbuilding-xix:candidato:064",
+      "worldbuilding-xix:candidato:065",
+      "worldbuilding-xix:candidato:066"
+    ],
+    "worldbuilding-xv:pratica:lugar-que-nao-se-edifica": [
+      "worldbuilding-xix:candidato:049",
+      "worldbuilding-xix:candidato:050",
+      "worldbuilding-xix:candidato:051"
+    ],
+    "worldbuilding-xv:pratica:memoria-dos-caminhos": [
+      "worldbuilding-xix:candidato:052",
+      "worldbuilding-xix:candidato:053",
+      "worldbuilding-xix:candidato:054"
+    ],
+    "worldbuilding-xv:pratica:mesa-da-hospitalidade": [
+      "worldbuilding-xix:candidato:055",
+      "worldbuilding-xix:candidato:056",
+      "worldbuilding-xix:candidato:057"
+    ],
+    "worldbuilding-xv:pratica:nomes-misturados": [
+      "worldbuilding-xix:candidato:061",
+      "worldbuilding-xix:candidato:062",
+      "worldbuilding-xix:candidato:063"
+    ],
+    "worldbuilding-xv:pratica:promessa-e-lugar": [
+      "worldbuilding-xix:candidato:058",
+      "worldbuilding-xix:candidato:059",
+      "worldbuilding-xix:candidato:060"
+    ],
+    "worldbuilding-xv:pratica:roda-das-nascentes": [
+      "worldbuilding-xix:candidato:043",
+      "worldbuilding-xix:candidato:044",
+      "worldbuilding-xix:candidato:045",
+      "worldbuilding-xix:decisao:costumes"
+    ],
+    "worldbuilding-xv:pratica:tempo-da-caca": [
+      "worldbuilding-xix:candidato:046",
+      "worldbuilding-xix:candidato:047",
+      "worldbuilding-xix:candidato:048"
+    ],
+    "worldbuilding-xv:revisao:autoridade-druidica": [
+      "worldbuilding-xix:decisao:autoridade-druida"
+    ],
+    "worldbuilding-xv:revisao:juramentos": [
+      "worldbuilding-xix:decisao:juramentos"
+    ],
+    "worldbuilding-xv:revisao:memoria-e-escrita": [
+      "worldbuilding-xix:decisao:memoria"
+    ],
+    "worldbuilding-xv:revisao:refugio-feerico": [
+      "worldbuilding-xix:decisao:refugio-feerico"
+    ],
+    "worldbuilding-xvi:mecanismo:agua-licenciada": [
+      "worldbuilding-xix:candidato:071"
+    ],
+    "worldbuilding-xvi:mecanismo:caca-interditada": [
+      "worldbuilding-xix:candidato:072"
+    ],
+    "worldbuilding-xvi:mecanismo:criatura-informante": [
+      "worldbuilding-xix:candidato:078"
+    ],
+    "worldbuilding-xvi:mecanismo:despejo-sagrado": [
+      "worldbuilding-xix:candidato:073"
+    ],
+    "worldbuilding-xvi:mecanismo:familia-classificada": [
+      "worldbuilding-xix:candidato:077"
+    ],
+    "worldbuilding-xvi:mecanismo:hospitalidade-vigiada": [
+      "worldbuilding-xix:candidato:075"
+    ],
+    "worldbuilding-xvi:mecanismo:promessa-cobrada": [
+      "worldbuilding-xix:candidato:076"
+    ],
+    "worldbuilding-xvi:mecanismo:trilha-denunciada": [
+      "worldbuilding-xix:candidato:074"
+    ],
+    "worldbuilding-xvi:modelo:intermediarios": [
+      "worldbuilding-xix:candidato:079"
+    ],
+    "worldbuilding-xvi:modelo:pactos": [
+      "worldbuilding-xix:candidato:080"
+    ],
+    "worldbuilding-xvi:modelo:patrulhas": [
+      "worldbuilding-xix:candidato:081"
+    ],
+    "worldbuilding-xvi:questao:alimento": [
+      "worldbuilding-xix:decisao:extracao"
+    ],
+    "worldbuilding-xvi:questao:coacao": [
+      "worldbuilding-xix:decisao:colaboracao"
+    ],
+    "worldbuilding-xvi:questao:floresta": [
+      "worldbuilding-xix:decisao:fauna"
+    ],
+    "worldbuilding-xvi:questao:governanca": [
+      "worldbuilding-xix:decisao:governo-sylara"
+    ],
+    "worldbuilding-xvii:decisao:mortos": [
+      "worldbuilding-xix:decisao:identidade-mortos"
+    ],
+    "worldbuilding-xvii:decisao:prosperidade": [
+      "worldbuilding-xix:decisao:economia-vandar"
+    ],
+    "worldbuilding-xvii:decisao:queda": [
+      "worldbuilding-xix:decisao:queda-vandar"
+    ],
+    "worldbuilding-xvii:decisao:ritos": [
+      "worldbuilding-xix:decisao:ritos-vandar"
+    ],
+    "worldbuilding-xvii:decisao:sobreviventes": [
+      "worldbuilding-xix:decisao:civis-vandar"
+    ],
+    "worldbuilding-xvii:modelo:camadas-ocupadas": [
+      "worldbuilding-xix:candidato:091"
+    ],
+    "worldbuilding-xvii:modelo:quartel-de-ruinas": [
+      "worldbuilding-xix:candidato:090"
+    ],
+    "worldbuilding-xvii:modelo:ruina-de-simbolos": [
+      "worldbuilding-xix:candidato:092"
+    ],
+    "worldbuilding-xvii:tecido:abastecimento": [
+      "worldbuilding-xix:candidato:084"
+    ],
+    "worldbuilding-xvii:tecido:circulacao-e-protecao": [
+      "worldbuilding-xix:candidato:088"
+    ],
+    "worldbuilding-xvii:tecido:cultos-e-sepultamento": [
+      "worldbuilding-xix:candidato:087"
+    ],
+    "worldbuilding-xvii:tecido:escrita-e-registros": [
+      "worldbuilding-xix:candidato:085"
+    ],
+    "worldbuilding-xvii:tecido:moradia-e-bairros": [
+      "worldbuilding-xix:candidato:082"
+    ],
+    "worldbuilding-xvii:tecido:parentesco-e-heranca": [
+      "worldbuilding-xix:candidato:089"
+    ],
+    "worldbuilding-xvii:tecido:trabalho-e-oficios": [
+      "worldbuilding-xix:candidato:083"
+    ],
+    "worldbuilding-xvii:tecido:vida-politica": [
+      "worldbuilding-xix:candidato:086"
+    ],
+    "worldbuilding-xviii:decisao:futuro": [
+      "worldbuilding-xix:decisao:apos-rainha"
+    ],
+    "worldbuilding-xviii:decisao:governo": [
+      "worldbuilding-xix:decisao:autoridade-elara"
+    ],
+    "worldbuilding-xviii:decisao:infancia": [
+      "worldbuilding-xix:decisao:infancia-ironwood"
+    ],
+    "worldbuilding-xviii:decisao:membros": [
+      "worldbuilding-xix:decisao:membros-ironwood"
+    ],
+    "worldbuilding-xviii:decisao:thargrid": [
+      "worldbuilding-xix:decisao:pacto-thargrid"
+    ],
+    "worldbuilding-xviii:eixo:acolhimento": [
+      "worldbuilding-xix:candidato:096"
+    ],
+    "worldbuilding-xviii:eixo:governo": [
+      "worldbuilding-xix:candidato:097"
+    ],
+    "worldbuilding-xviii:eixo:infancia": [
+      "worldbuilding-xix:candidato:095"
+    ],
+    "worldbuilding-xviii:eixo:oficios": [
+      "worldbuilding-xix:candidato:094"
+    ],
+    "worldbuilding-xviii:eixo:pertencimento": [
+      "worldbuilding-xix:candidato:100"
+    ],
+    "worldbuilding-xviii:eixo:religiao": [
+      "worldbuilding-xix:candidato:098"
+    ],
+    "worldbuilding-xviii:eixo:reservas": [
+      "worldbuilding-xix:candidato:093"
+    ],
+    "worldbuilding-xviii:eixo:segredo": [
+      "worldbuilding-xix:candidato:099"
+    ],
+    "worldbuilding-xviii:modelo:assembleia-mista": [
+      "worldbuilding-xix:candidato:103"
+    ],
+    "worldbuilding-xviii:modelo:autonomia-local": [
+      "worldbuilding-xix:candidato:102"
+    ],
+    "worldbuilding-xviii:modelo:comando-consultivo": [
+      "worldbuilding-xix:candidato:101"
+    ]
+  },
+  "by_pre_requisito": {
+    "worldbuilding-xix:decisao:autoridade-druida": [
+      "worldbuilding-xix:decisao:costumes",
+      "worldbuilding-xix:decisao:refugio-feerico"
+    ],
+    "worldbuilding-xix:decisao:autoridade-elara": [
+      "worldbuilding-xix:decisao:infancia-ironwood",
+      "worldbuilding-xix:decisao:membros-ironwood",
+      "worldbuilding-xix:decisao:pacto-thargrid"
+    ],
+    "worldbuilding-xix:decisao:civis-vandar": [
+      "worldbuilding-xix:decisao:ritos-vandar"
+    ],
+    "worldbuilding-xix:decisao:costumes": [
+      "worldbuilding-xix:decisao:governo-sylara"
+    ],
+    "worldbuilding-xix:decisao:economia-vandar": [
+      "worldbuilding-xix:decisao:queda-vandar"
+    ],
+    "worldbuilding-xix:decisao:governo-sylara": [
+      "worldbuilding-xix:decisao:colaboracao",
+      "worldbuilding-xix:decisao:extracao",
+      "worldbuilding-xix:decisao:fauna"
+    ],
+    "worldbuilding-xix:decisao:identidade-mortos": [
+      "worldbuilding-xix:decisao:ritos-vandar"
+    ],
+    "worldbuilding-xix:decisao:ironwood-geografia": [
+      "worldbuilding-xix:decisao:autoridade-elara"
+    ],
+    "worldbuilding-xix:decisao:membros-ironwood": [
+      "worldbuilding-xix:decisao:pacto-thargrid"
+    ],
+    "worldbuilding-xix:decisao:memoria": [
+      "worldbuilding-xix:decisao:costumes"
+    ],
+    "worldbuilding-xix:decisao:pacto-thargrid": [
+      "worldbuilding-xix:decisao:apos-rainha"
+    ],
+    "worldbuilding-xix:decisao:queda-vandar": [
+      "worldbuilding-xix:decisao:civis-vandar",
+      "worldbuilding-xix:decisao:identidade-mortos"
+    ],
+    "worldbuilding-xix:decisao:refugio-feerico": [
+      "worldbuilding-xix:decisao:apos-rainha",
+      "worldbuilding-xix:decisao:juramentos"
+    ]
+  },
+  "by_arquivo_fonte": {
+    "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json": [
+      "worldbuilding-xix:candidato:001",
+      "worldbuilding-xix:candidato:002",
+      "worldbuilding-xix:candidato:003",
+      "worldbuilding-xix:candidato:004",
+      "worldbuilding-xix:candidato:005",
+      "worldbuilding-xix:candidato:006",
+      "worldbuilding-xix:candidato:007",
+      "worldbuilding-xix:candidato:008",
+      "worldbuilding-xix:candidato:009",
+      "worldbuilding-xix:candidato:010",
+      "worldbuilding-xix:candidato:011",
+      "worldbuilding-xix:candidato:012",
+      "worldbuilding-xix:candidato:013",
+      "worldbuilding-xix:candidato:014",
+      "worldbuilding-xix:candidato:015",
+      "worldbuilding-xix:candidato:016",
+      "worldbuilding-xix:candidato:017",
+      "worldbuilding-xix:candidato:018",
+      "worldbuilding-xix:candidato:019",
+      "worldbuilding-xix:candidato:020",
+      "worldbuilding-xix:candidato:021",
+      "worldbuilding-xix:candidato:022",
+      "worldbuilding-xix:candidato:023",
+      "worldbuilding-xix:candidato:024",
+      "worldbuilding-xix:candidato:025",
+      "worldbuilding-xix:candidato:026",
+      "worldbuilding-xix:candidato:027",
+      "worldbuilding-xix:candidato:028",
+      "worldbuilding-xix:candidato:029",
+      "worldbuilding-xix:candidato:030",
+      "worldbuilding-xix:candidato:031",
+      "worldbuilding-xix:candidato:032",
+      "worldbuilding-xix:candidato:033",
+      "worldbuilding-xix:candidato:034",
+      "worldbuilding-xix:candidato:035",
+      "worldbuilding-xix:candidato:036",
+      "worldbuilding-xix:candidato:037",
+      "worldbuilding-xix:candidato:038",
+      "worldbuilding-xix:candidato:039",
+      "worldbuilding-xix:candidato:040",
+      "worldbuilding-xix:candidato:041",
+      "worldbuilding-xix:candidato:042",
+      "worldbuilding-xix:dossie:xiv"
+    ],
+    "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json": [
+      "worldbuilding-xix:candidato:071",
+      "worldbuilding-xix:candidato:072",
+      "worldbuilding-xix:candidato:073",
+      "worldbuilding-xix:candidato:074",
+      "worldbuilding-xix:candidato:075",
+      "worldbuilding-xix:candidato:076",
+      "worldbuilding-xix:candidato:077",
+      "worldbuilding-xix:candidato:078",
+      "worldbuilding-xix:candidato:079",
+      "worldbuilding-xix:candidato:080",
+      "worldbuilding-xix:candidato:081",
+      "worldbuilding-xix:dossie:xvi"
+    ],
+    "data/worldbuilding/eldroth-preconquista-ciclo15.json": [
+      "worldbuilding-xix:candidato:043",
+      "worldbuilding-xix:candidato:044",
+      "worldbuilding-xix:candidato:045",
+      "worldbuilding-xix:candidato:046",
+      "worldbuilding-xix:candidato:047",
+      "worldbuilding-xix:candidato:048",
+      "worldbuilding-xix:candidato:049",
+      "worldbuilding-xix:candidato:050",
+      "worldbuilding-xix:candidato:051",
+      "worldbuilding-xix:candidato:052",
+      "worldbuilding-xix:candidato:053",
+      "worldbuilding-xix:candidato:054",
+      "worldbuilding-xix:candidato:055",
+      "worldbuilding-xix:candidato:056",
+      "worldbuilding-xix:candidato:057",
+      "worldbuilding-xix:candidato:058",
+      "worldbuilding-xix:candidato:059",
+      "worldbuilding-xix:candidato:060",
+      "worldbuilding-xix:candidato:061",
+      "worldbuilding-xix:candidato:062",
+      "worldbuilding-xix:candidato:063",
+      "worldbuilding-xix:candidato:064",
+      "worldbuilding-xix:candidato:065",
+      "worldbuilding-xix:candidato:066",
+      "worldbuilding-xix:candidato:067",
+      "worldbuilding-xix:candidato:068",
+      "worldbuilding-xix:candidato:069",
+      "worldbuilding-xix:candidato:070",
+      "worldbuilding-xix:dossie:xv"
+    ],
+    "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json": [
+      "worldbuilding-xix:candidato:093",
+      "worldbuilding-xix:candidato:094",
+      "worldbuilding-xix:candidato:095",
+      "worldbuilding-xix:candidato:096",
+      "worldbuilding-xix:candidato:097",
+      "worldbuilding-xix:candidato:098",
+      "worldbuilding-xix:candidato:099",
+      "worldbuilding-xix:candidato:100",
+      "worldbuilding-xix:candidato:101",
+      "worldbuilding-xix:candidato:102",
+      "worldbuilding-xix:candidato:103",
+      "worldbuilding-xix:dossie:xviii"
+    ],
+    "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json": [
+      "worldbuilding-xix:candidato:082",
+      "worldbuilding-xix:candidato:083",
+      "worldbuilding-xix:candidato:084",
+      "worldbuilding-xix:candidato:085",
+      "worldbuilding-xix:candidato:086",
+      "worldbuilding-xix:candidato:087",
+      "worldbuilding-xix:candidato:088",
+      "worldbuilding-xix:candidato:089",
+      "worldbuilding-xix:candidato:090",
+      "worldbuilding-xix:candidato:091",
+      "worldbuilding-xix:candidato:092",
+      "worldbuilding-xix:dossie:xvii"
+    ]
+  }
+}

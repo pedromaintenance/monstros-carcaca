@@ -1,0 +1,2177 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XIX — Revisão autoral do atlas da Carcaça",
+  "estado": "sem_aprovacao_autoral",
+  "aprovacao_autoral": false,
+  "mutacao_canonica_automatica": false,
+  "fonte_manuscrito": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "dossies": [
+    {
+      "id": "worldbuilding-xix:dossie:xiv",
+      "ciclo": "XIV",
+      "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+      "estado": "em_revisao"
+    },
+    {
+      "id": "worldbuilding-xix:dossie:xv",
+      "ciclo": "XV",
+      "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+      "estado": "em_revisao"
+    },
+    {
+      "id": "worldbuilding-xix:dossie:xvi",
+      "ciclo": "XVI",
+      "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+      "estado": "em_revisao"
+    },
+    {
+      "id": "worldbuilding-xix:dossie:xvii",
+      "ciclo": "XVII",
+      "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+      "estado": "em_revisao"
+    },
+    {
+      "id": "worldbuilding-xix:dossie:xviii",
+      "ciclo": "XVIII",
+      "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+      "estado": "em_revisao"
+    }
+  ],
+  "candidatos": [
+    {
+      "id": "worldbuilding-xix:candidato:001",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:ondas-feericas"
+      },
+      "indice_opcao": 0,
+      "nome": "Cidadania pelas antigas alianças",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:002",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:ondas-feericas"
+      },
+      "indice_opcao": 1,
+      "nome": "Pertencimento segundo comunidades locais",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:003",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:ondas-feericas"
+      },
+      "indice_opcao": 2,
+      "nome": "Pertencimento contestado",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:004",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:regime-de-sylara"
+      },
+      "indice_opcao": 0,
+      "nome": "Senhorios de exploração",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:005",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:regime-de-sylara"
+      },
+      "indice_opcao": 1,
+      "nome": "Pactos de jurisdição",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:006",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:regime-de-sylara"
+      },
+      "indice_opcao": 2,
+      "nome": "Zonas de exceção móvel",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:007",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:floresta-agente"
+      },
+      "indice_opcao": 0,
+      "nome": "Coação ritual reversível",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:008",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:floresta-agente"
+      },
+      "indice_opcao": 1,
+      "nome": "Ecossistemas desiguais",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:009",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:floresta-agente"
+      },
+      "indice_opcao": 2,
+      "nome": "Alianças oportunistas",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:010",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:sagrado-druidico"
+      },
+      "indice_opcao": 0,
+      "nome": "Conselhos de guardiões",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:011",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:sagrado-druidico"
+      },
+      "indice_opcao": 1,
+      "nome": "Jurisdições sagradas",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:012",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:sagrado-druidico"
+      },
+      "indice_opcao": 2,
+      "nome": "Negociações locais variáveis",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:013",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:cumplicidade-e-ruptura"
+      },
+      "indice_opcao": 0,
+      "nome": "Justiça por testemunhos",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:014",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:cumplicidade-e-ruptura"
+      },
+      "indice_opcao": 1,
+      "nome": "Anistia condicional",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:015",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:cumplicidade-e-ruptura"
+      },
+      "indice_opcao": 2,
+      "nome": "Sem tribunal unificado",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:016",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:subsistencia"
+      },
+      "indice_opcao": 0,
+      "nome": "Coleta sazonal comunitária",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:017",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:subsistencia"
+      },
+      "indice_opcao": 1,
+      "nome": "Pequenos cultivos ocultos",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:018",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:subsistencia"
+      },
+      "indice_opcao": 2,
+      "nome": "Trocas com territórios externos",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:019",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:refugiados"
+      },
+      "indice_opcao": 0,
+      "nome": "Asilo por residência",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:020",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:refugiados"
+      },
+      "indice_opcao": 1,
+      "nome": "Asilo por afinidade de tradição",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:021",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:refugiados"
+      },
+      "indice_opcao": 2,
+      "nome": "Asilo por necessidade",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:022",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:ironwood-cultura"
+      },
+      "indice_opcao": 0,
+      "nome": "Comando consultivo",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:023",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:ironwood-cultura"
+      },
+      "indice_opcao": 1,
+      "nome": "Autonomia das companhias",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:024",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:ironwood-cultura"
+      },
+      "indice_opcao": 2,
+      "nome": "Pactos civis de proteção",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:025",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:ligacao-thargrid"
+      },
+      "indice_opcao": 0,
+      "nome": "Cooperação pontual",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:026",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:ligacao-thargrid"
+      },
+      "indice_opcao": 1,
+      "nome": "Assembleias entre territórios",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:027",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:ligacao-thargrid"
+      },
+      "indice_opcao": 2,
+      "nome": "Pactos assimétricos",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:028",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:vandar-mortos"
+      },
+      "indice_opcao": 0,
+      "nome": "Necrópole de guerra",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:029",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:vandar-mortos"
+      },
+      "indice_opcao": 1,
+      "nome": "Camadas civis subterrâneas",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:030",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:vandar-mortos"
+      },
+      "indice_opcao": 2,
+      "nome": "Cidade fantasma disputada",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:031",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:memoria-e-ritos"
+      },
+      "indice_opcao": 0,
+      "nome": "Memória oral",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:032",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:memoria-e-ritos"
+      },
+      "indice_opcao": 1,
+      "nome": "Registros dispersos",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:033",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:memoria-e-ritos"
+      },
+      "indice_opcao": 2,
+      "nome": "Ritos suspensos",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:034",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:pactos-feericos"
+      },
+      "indice_opcao": 0,
+      "nome": "Direito consuetudinário",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:035",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:pactos-feericos"
+      },
+      "indice_opcao": 1,
+      "nome": "Apropriação colonial",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:036",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:pactos-feericos"
+      },
+      "indice_opcao": 2,
+      "nome": "Jurisdições concorrentes",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:037",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:nomeacao-e-mapas"
+      },
+      "indice_opcao": 0,
+      "nome": "Mapas parciais",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:038",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:nomeacao-e-mapas"
+      },
+      "indice_opcao": 1,
+      "nome": "Cartografia pública contestada",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:039",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:nomeacao-e-mapas"
+      },
+      "indice_opcao": 2,
+      "nome": "Mapas incompatíveis",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:040",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao"
+      },
+      "indice_opcao": 0,
+      "nome": "Fronteira ecológica",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:041",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao"
+      },
+      "indice_opcao": 1,
+      "nome": "Fronteira militar",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:042",
+      "ciclo": "XIV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+        "colecao": "eixos",
+        "id": "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao"
+      },
+      "indice_opcao": 2,
+      "nome": "Zona de contato disputada",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:043",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:roda-das-nascentes"
+      },
+      "indice_opcao": 0,
+      "nome": "consentimento_das_comunidades",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:044",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:roda-das-nascentes"
+      },
+      "indice_opcao": 1,
+      "nome": "veto_do_guardiao",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:045",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:roda-das-nascentes"
+      },
+      "indice_opcao": 2,
+      "nome": "decisao_mista",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:046",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:tempo-da-caca"
+      },
+      "indice_opcao": 0,
+      "nome": "excecao_de_necessidade",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:047",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:tempo-da-caca"
+      },
+      "indice_opcao": 1,
+      "nome": "proibicao_estrita",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:048",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:tempo-da-caca"
+      },
+      "indice_opcao": 2,
+      "nome": "redistribuicao_coletiva",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:049",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:lugar-que-nao-se-edifica"
+      },
+      "indice_opcao": 0,
+      "nome": "interdito_perpetuo",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:050",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:lugar-que-nao-se-edifica"
+      },
+      "indice_opcao": 1,
+      "nome": "revisao_intergeracional",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:051",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:lugar-que-nao-se-edifica"
+      },
+      "indice_opcao": 2,
+      "nome": "refugio_temporario",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:052",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:memoria-dos-caminhos"
+      },
+      "indice_opcao": 0,
+      "nome": "ensinamento_aberto",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:053",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:memoria-dos-caminhos"
+      },
+      "indice_opcao": 1,
+      "nome": "aprendizagem_sob_cuidado",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:054",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:memoria-dos-caminhos"
+      },
+      "indice_opcao": 2,
+      "nome": "mapas_por_camadas",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:055",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:mesa-da-hospitalidade"
+      },
+      "indice_opcao": 0,
+      "nome": "abrigo_condicional",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:056",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:mesa-da-hospitalidade"
+      },
+      "indice_opcao": 1,
+      "nome": "pertencimento_negociado",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:057",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:mesa-da-hospitalidade"
+      },
+      "indice_opcao": 2,
+      "nome": "acolhimento_incondicional",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:058",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:promessa-e-lugar"
+      },
+      "indice_opcao": 0,
+      "nome": "nao_herdavel",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:059",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:promessa-e-lugar"
+      },
+      "indice_opcao": 1,
+      "nome": "heranca_limitada",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:060",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:promessa-e-lugar"
+      },
+      "indice_opcao": 2,
+      "nome": "renovacao_periodica",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:061",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:nomes-misturados"
+      },
+      "indice_opcao": 0,
+      "nome": "residencia_e_cuidado",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:062",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:nomes-misturados"
+      },
+      "indice_opcao": 1,
+      "nome": "parentesco_ancestral",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:063",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:nomes-misturados"
+      },
+      "indice_opcao": 2,
+      "nome": "reconhecimento_comunitario",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:064",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:acordos-com-os-silenciosos"
+      },
+      "indice_opcao": 0,
+      "nome": "pluralidade_de_testemunhas",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:065",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:acordos-com-os-silenciosos"
+      },
+      "indice_opcao": 1,
+      "nome": "pacto_revisavel",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:066",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "praticas",
+        "id": "worldbuilding-xv:pratica:acordos-com-os-silenciosos"
+      },
+      "indice_opcao": 2,
+      "nome": "limite_inviolavel",
+      "tipo": "alternativa",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:067",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "pactos",
+        "id": "worldbuilding-xv:pacto:acolhimento-sem-vassalagem"
+      },
+      "indice_opcao": null,
+      "nome": "Abrigo sem Vassalagem",
+      "tipo": "pacto",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:068",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "pactos",
+        "id": "worldbuilding-xv:pacto:passagem-e-cuidado"
+      },
+      "indice_opcao": null,
+      "nome": "Passagem sem Posse",
+      "tipo": "pacto",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:069",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "pactos",
+        "id": "worldbuilding-xv:pacto:semente-e-limite"
+      },
+      "indice_opcao": null,
+      "nome": "Semente na Terra que Não se Compra",
+      "tipo": "pacto",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:070",
+      "ciclo": "XV",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+        "colecao": "pactos",
+        "id": "worldbuilding-xv:pacto:promessa-sem-herdeiro"
+      },
+      "indice_opcao": null,
+      "nome": "Palavra que Não Herda Pessoas",
+      "tipo": "pacto",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:071",
+      "ciclo": "XVI",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "colecao": "mecanismos",
+        "id": "worldbuilding-xvi:mecanismo:agua-licenciada"
+      },
+      "indice_opcao": null,
+      "nome": "A nascente que exige licença",
+      "tipo": "controle",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:072",
+      "ciclo": "XVI",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "colecao": "mecanismos",
+        "id": "worldbuilding-xvi:mecanismo:caca-interditada"
+      },
+      "indice_opcao": null,
+      "nome": "A caça que vira delito",
+      "tipo": "controle",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:073",
+      "ciclo": "XVI",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "colecao": "mecanismos",
+        "id": "worldbuilding-xvi:mecanismo:despejo-sagrado"
+      },
+      "indice_opcao": null,
+      "nome": "O sagrado que despeja",
+      "tipo": "controle",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:074",
+      "ciclo": "XVI",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "colecao": "mecanismos",
+        "id": "worldbuilding-xvi:mecanismo:trilha-denunciada"
+      },
+      "indice_opcao": null,
+      "nome": "A trilha usada como acusação",
+      "tipo": "controle",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:075",
+      "ciclo": "XVI",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "colecao": "mecanismos",
+        "id": "worldbuilding-xvi:mecanismo:hospitalidade-vigiada"
+      },
+      "indice_opcao": null,
+      "nome": "O hóspede que precisa ser denunciado",
+      "tipo": "controle",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:076",
+      "ciclo": "XVI",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "colecao": "mecanismos",
+        "id": "worldbuilding-xvi:mecanismo:promessa-cobrada"
+      },
+      "indice_opcao": null,
+      "nome": "O pacto que vira dívida",
+      "tipo": "controle",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:077",
+      "ciclo": "XVI",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "colecao": "mecanismos",
+        "id": "worldbuilding-xvi:mecanismo:familia-classificada"
+      },
+      "indice_opcao": null,
+      "nome": "O sobrenome como lealdade",
+      "tipo": "controle",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:078",
+      "ciclo": "XVI",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "colecao": "mecanismos",
+        "id": "worldbuilding-xvi:mecanismo:criatura-informante"
+      },
+      "indice_opcao": null,
+      "nome": "A floresta que fala sob coação",
+      "tipo": "controle",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:079",
+      "ciclo": "XVI",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "colecao": "modelos_de_regime",
+        "id": "worldbuilding-xvi:modelo:intermediarios"
+      },
+      "indice_opcao": null,
+      "nome": "Senhorios e intermediários",
+      "tipo": "regime",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:080",
+      "ciclo": "XVI",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "colecao": "modelos_de_regime",
+        "id": "worldbuilding-xvi:modelo:pactos"
+      },
+      "indice_opcao": null,
+      "nome": "Pactos reinterpretados como domínio",
+      "tipo": "regime",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:081",
+      "ciclo": "XVI",
+      "referencia": {
+        "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+        "colecao": "modelos_de_regime",
+        "id": "worldbuilding-xvi:modelo:patrulhas"
+      },
+      "indice_opcao": null,
+      "nome": "Coerção militar intermitente",
+      "tipo": "regime",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:082",
+      "ciclo": "XVII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "colecao": "tecidos_urbanos",
+        "id": "worldbuilding-xvii:tecido:moradia-e-bairros"
+      },
+      "indice_opcao": null,
+      "nome": "A cidade onde se morava",
+      "tipo": "historia_urbana",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:083",
+      "ciclo": "XVII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "colecao": "tecidos_urbanos",
+        "id": "worldbuilding-xvii:tecido:trabalho-e-oficios"
+      },
+      "indice_opcao": null,
+      "nome": "A prosperidade tinha mãos",
+      "tipo": "historia_urbana",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:084",
+      "ciclo": "XVII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "colecao": "tecidos_urbanos",
+        "id": "worldbuilding-xvii:tecido:abastecimento"
+      },
+      "indice_opcao": null,
+      "nome": "Água, pão e circulação",
+      "tipo": "historia_urbana",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:085",
+      "ciclo": "XVII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "colecao": "tecidos_urbanos",
+        "id": "worldbuilding-xvii:tecido:escrita-e-registros"
+      },
+      "indice_opcao": null,
+      "nome": "A cidade que deixava provas",
+      "tipo": "historia_urbana",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:086",
+      "ciclo": "XVII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "colecao": "tecidos_urbanos",
+        "id": "worldbuilding-xvii:tecido:vida-politica"
+      },
+      "indice_opcao": null,
+      "nome": "A autoridade antes de Damaris",
+      "tipo": "historia_urbana",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:087",
+      "ciclo": "XVII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "colecao": "tecidos_urbanos",
+        "id": "worldbuilding-xvii:tecido:cultos-e-sepultamento"
+      },
+      "indice_opcao": null,
+      "nome": "Os vivos diante dos mortos",
+      "tipo": "historia_urbana",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:088",
+      "ciclo": "XVII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "colecao": "tecidos_urbanos",
+        "id": "worldbuilding-xvii:tecido:circulacao-e-protecao"
+      },
+      "indice_opcao": null,
+      "nome": "Ruas para viver, caminhos para fugir",
+      "tipo": "historia_urbana",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:089",
+      "ciclo": "XVII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "colecao": "tecidos_urbanos",
+        "id": "worldbuilding-xvii:tecido:parentesco-e-heranca"
+      },
+      "indice_opcao": null,
+      "nome": "Casas que sobreviveram aos moradores",
+      "tipo": "historia_urbana",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:090",
+      "ciclo": "XVII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "colecao": "modelos_do_dominio",
+        "id": "worldbuilding-xvii:modelo:quartel-de-ruinas"
+      },
+      "indice_opcao": null,
+      "nome": "Ruínas militarizadas",
+      "tipo": "regime",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:091",
+      "ciclo": "XVII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "colecao": "modelos_do_dominio",
+        "id": "worldbuilding-xvii:modelo:camadas-ocupadas"
+      },
+      "indice_opcao": null,
+      "nome": "Cidade parcialmente reutilizada",
+      "tipo": "regime",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:092",
+      "ciclo": "XVII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+        "colecao": "modelos_do_dominio",
+        "id": "worldbuilding-xvii:modelo:ruina-de-simbolos"
+      },
+      "indice_opcao": null,
+      "nome": "Dominação por encenação funerária",
+      "tipo": "regime",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:093",
+      "ciclo": "XVIII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+        "colecao": "eixos_sociais",
+        "id": "worldbuilding-xviii:eixo:reservas"
+      },
+      "indice_opcao": null,
+      "nome": "O alimento antes do arco",
+      "tipo": "vida_civil",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:094",
+      "ciclo": "XVIII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+        "colecao": "eixos_sociais",
+        "id": "worldbuilding-xviii:eixo:oficios"
+      },
+      "indice_opcao": null,
+      "nome": "Quem repara a vitória",
+      "tipo": "vida_civil",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:095",
+      "ciclo": "XVIII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+        "colecao": "eixos_sociais",
+        "id": "worldbuilding-xviii:eixo:infancia"
+      },
+      "indice_opcao": null,
+      "nome": "Aprender trilhas sem nascer soldado",
+      "tipo": "vida_civil",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:096",
+      "ciclo": "XVIII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+        "colecao": "eixos_sociais",
+        "id": "worldbuilding-xviii:eixo:acolhimento"
+      },
+      "indice_opcao": null,
+      "nome": "A casa de quem chegou ontem",
+      "tipo": "vida_civil",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:097",
+      "ciclo": "XVIII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+        "colecao": "eixos_sociais",
+        "id": "worldbuilding-xviii:eixo:governo"
+      },
+      "indice_opcao": null,
+      "nome": "O comando de Elara e a voz dos demais",
+      "tipo": "vida_civil",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:098",
+      "ciclo": "XVIII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+        "colecao": "eixos_sociais",
+        "id": "worldbuilding-xviii:eixo:religiao"
+      },
+      "indice_opcao": null,
+      "nome": "Fé que não precisa de um templo único",
+      "tipo": "vida_civil",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:099",
+      "ciclo": "XVIII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+        "colecao": "eixos_sociais",
+        "id": "worldbuilding-xviii:eixo:segredo"
+      },
+      "indice_opcao": null,
+      "nome": "O silêncio que protege ou cala",
+      "tipo": "vida_civil",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:100",
+      "ciclo": "XVIII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+        "colecao": "eixos_sociais",
+        "id": "worldbuilding-xviii:eixo:pertencimento"
+      },
+      "indice_opcao": null,
+      "nome": "A resistência não é um povo só",
+      "tipo": "vida_civil",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:101",
+      "ciclo": "XVIII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+        "colecao": "modelos_de_governanca",
+        "id": "worldbuilding-xviii:modelo:comando-consultivo"
+      },
+      "indice_opcao": null,
+      "nome": "Defesa liderada por Elara, abastecimento deliberado por moradores",
+      "tipo": "governo",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:102",
+      "ciclo": "XVIII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+        "colecao": "modelos_de_governanca",
+        "id": "worldbuilding-xviii:modelo:autonomia-local"
+      },
+      "indice_opcao": null,
+      "nome": "Comunidades protegidas negociam apoio e mantêm autonomia civil",
+      "tipo": "governo",
+      "estado": "nao_aprovado",
+      "homologado": false
+    },
+    {
+      "id": "worldbuilding-xix:candidato:103",
+      "ciclo": "XVIII",
+      "referencia": {
+        "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+        "colecao": "modelos_de_governanca",
+        "id": "worldbuilding-xviii:modelo:assembleia-mista"
+      },
+      "indice_opcao": null,
+      "nome": "Moradores, acolhidos e patrulheiros compartilham deliberação",
+      "tipo": "governo",
+      "estado": "nao_aprovado",
+      "homologado": false
+    }
+  ],
+  "decisoes": [
+    {
+      "id": "worldbuilding-xix:decisao:ironwood-geografia",
+      "dominio": "transversal",
+      "prioridade": "alta",
+      "pergunta": "Ironwood deve ganhar ID geográfico próprio?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json",
+          "colecao": "eixos",
+          "id": "worldbuilding-xiv:eixo:geografia-sem-falsa-precisao"
+        }
+      ],
+      "pre_requisitos": [],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Não inventar posição dentro de Eldroth.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:autoridade-druida",
+      "dominio": "eldroth",
+      "prioridade": "alta",
+      "pergunta": "Druidas de Eldroth mediavam ou vetavam decisões?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+          "colecao": "questoes_de_revisao_autoral",
+          "id": "worldbuilding-xv:revisao:autoridade-druidica"
+        }
+      ],
+      "pre_requisitos": [],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Costume não prova soberania.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:refugio-feerico",
+      "dominio": "eldroth",
+      "prioridade": "alta",
+      "pergunta": "Que direitos ligavam refugiados e comunidades locais?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+          "colecao": "questoes_de_revisao_autoral",
+          "id": "worldbuilding-xv:revisao:refugio-feerico"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:autoridade-druida"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Origem feérica não prova aliança colonial.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:juramentos",
+      "dominio": "eldroth",
+      "prioridade": "alta",
+      "pergunta": "Quais promessas vinculavam descendentes?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+          "colecao": "questoes_de_revisao_autoral",
+          "id": "worldbuilding-xv:revisao:juramentos"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:refugio-feerico"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "A herança de obrigações não está confirmada.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:memoria",
+      "dominio": "eldroth",
+      "prioridade": "media",
+      "pergunta": "Como registrar caminhos sem cartório presumido?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+          "colecao": "questoes_de_revisao_autoral",
+          "id": "worldbuilding-xv:revisao:memoria-e-escrita"
+        }
+      ],
+      "pre_requisitos": [],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Não inventar rotas.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:costumes",
+      "dominio": "eldroth",
+      "prioridade": "alta",
+      "pergunta": "Quais práticas pré-conquista do XV existiram?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/eldroth-preconquista-ciclo15.json",
+          "colecao": "praticas",
+          "id": "worldbuilding-xv:pratica:roda-das-nascentes"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:autoridade-druida",
+        "worldbuilding-xix:decisao:memoria"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Nomes editoriais não são fatos.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:governo-sylara",
+      "dominio": "eldroth",
+      "prioridade": "alta",
+      "pergunta": "Sylara governa por intermediários, pactos ou patrulhas?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xvi:questao:governanca"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:costumes"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Sem taxas ou cargos comprovados.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:fauna",
+      "dominio": "eldroth",
+      "prioridade": "alta",
+      "pergunta": "Como reconhecer coerção ou consentimento das criaturas?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xvi:questao:floresta"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:governo-sylara"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Não culpar todos os animais.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:colaboracao",
+      "dominio": "eldroth",
+      "prioridade": "alta",
+      "pergunta": "Como distinguir coação de adesão voluntária?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xvi:questao:coacao"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:governo-sylara"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Origem não determina lealdade.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:extracao",
+      "dominio": "eldroth",
+      "prioridade": "media",
+      "pergunta": "Que recursos a ocupação controla?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xvi:questao:alimento"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:governo-sylara"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Não criar imposto local.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:economia-vandar",
+      "dominio": "vandar",
+      "prioridade": "alta",
+      "pergunta": "O que sustentava a prosperidade urbana de Vandar?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xvii:decisao:prosperidade"
+        }
+      ],
+      "pre_requisitos": [],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Não criar porto ou mina.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:queda-vandar",
+      "dominio": "vandar",
+      "prioridade": "alta",
+      "pergunta": "Quando ocorreu a queda e qual foi o papel de Damaris?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xvii:decisao:queda"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:economia-vandar"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Ocupante não é necessariamente destruidor.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:identidade-mortos",
+      "dominio": "vandar",
+      "prioridade": "alta",
+      "pergunta": "Os mortos-vivos têm identidade e memória?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xvii:decisao:mortos"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:queda-vandar"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Corpo animado não prova consciência.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:civis-vandar",
+      "dominio": "vandar",
+      "prioridade": "media",
+      "pergunta": "Há sobreviventes dentro das ruínas?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xvii:decisao:sobreviventes"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:queda-vandar"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Nenhuma população confirmada.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:ritos-vandar",
+      "dominio": "vandar",
+      "prioridade": "media",
+      "pergunta": "Quais ritos permitem reconhecer mortos e desaparecidos?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xvii:decisao:ritos"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:identidade-mortos",
+        "worldbuilding-xix:decisao:civis-vandar"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Sem templo ou tribunal comprovado.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:autoridade-elara",
+      "dominio": "ironwood",
+      "prioridade": "alta",
+      "pergunta": "Elara governa civis ou só defesa?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xviii:decisao:governo"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:ironwood-geografia"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Liderança ranger não é monarquia.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:membros-ironwood",
+      "dominio": "ironwood",
+      "prioridade": "alta",
+      "pergunta": "Quem participa da política civil de Ironwood?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xviii:decisao:membros"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:autoridade-elara"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Não excluir por raça.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:infancia-ironwood",
+      "dominio": "ironwood",
+      "prioridade": "media",
+      "pergunta": "Como distinguir educação florestal de recrutamento?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xviii:decisao:infancia"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:autoridade-elara"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Aprender trilhas não implica missão infantil.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:pacto-thargrid",
+      "dominio": "transversal",
+      "prioridade": "alta",
+      "pergunta": "Que reciprocidade existe entre Thargrid e Ironwood?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xviii:decisao:thargrid"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:autoridade-elara",
+        "worldbuilding-xix:decisao:membros-ironwood"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "Cooperação não prova vassalagem.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    },
+    {
+      "id": "worldbuilding-xix:decisao:apos-rainha",
+      "dominio": "transversal",
+      "prioridade": "alta",
+      "pergunta": "Que sociedade a resistência deseja após a Rainha?",
+      "origens": [
+        {
+          "arquivo": "data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json",
+          "colecao": "decisoes_para_autor",
+          "id": "worldbuilding-xviii:decisao:futuro"
+        }
+      ],
+      "pre_requisitos": [
+        "worldbuilding-xix:decisao:pacto-thargrid",
+        "worldbuilding-xix:decisao:refugio-feerico"
+      ],
+      "caminhos": [
+        "aprovar_formulacao_especifica",
+        "rejeitar",
+        "manter_pendente",
+        "pesquisar"
+      ],
+      "risco_de_canonizacao": "A resistência não tem vontade política única.",
+      "estado": "pendente",
+      "escolha_aprovada": null,
+      "aprovacao_autoral": false,
+      "publicar_canon": false
+    }
+  ],
+  "guardas": [
+    {
+      "id": "worldbuilding-xix:guarda:01",
+      "afirmacao": "Refúgio feérico 501, lordes 666, guerras 875 são marcos distintos.",
+      "fonte": {
+        "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 9
+      },
+      "status": "fontes_revisaveis",
+      "nova_aprovacao": false
+    },
+    {
+      "id": "worldbuilding-xix:guarda:02",
+      "afirmacao": "Sylara governa Eldroth e utiliza criaturas para perseguir.",
+      "fonte": {
+        "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5
+      },
+      "status": "fontes_revisaveis",
+      "nova_aprovacao": false
+    },
+    {
+      "id": "worldbuilding-xix:guarda:03",
+      "afirmacao": "Há druidas resistentes, refugiados e colaboradores.",
+      "fonte": {
+        "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 17
+      },
+      "status": "fontes_revisaveis",
+      "nova_aprovacao": false
+    },
+    {
+      "id": "worldbuilding-xix:guarda:04",
+      "afirmacao": "Vandar próspera é hoje ruína militar de Damaris.",
+      "fonte": {
+        "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 5
+      },
+      "status": "fontes_revisaveis",
+      "nova_aprovacao": false
+    },
+    {
+      "id": "worldbuilding-xix:guarda:05",
+      "afirmacao": "Ironwood fica ao sul de Thargrid e Elara lidera rangers.",
+      "fonte": {
+        "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 6
+      },
+      "status": "fontes_revisaveis",
+      "nova_aprovacao": false
+    },
+    {
+      "id": "worldbuilding-xix:guarda:06",
+      "afirmacao": "A resistência é descentralizada.",
+      "fonte": {
+        "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 7
+      },
+      "status": "fontes_revisaveis",
+      "nova_aprovacao": false
+    },
+    {
+      "id": "worldbuilding-xix:guarda:07",
+      "afirmacao": "Feéricos não têm lealdade política uniforme.",
+      "fonte": {
+        "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 16
+      },
+      "status": "fontes_revisaveis",
+      "nova_aprovacao": false
+    },
+    {
+      "id": "worldbuilding-xix:guarda:08",
+      "afirmacao": "Rangers consideram a proteção das aldeias.",
+      "fonte": {
+        "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 18
+      },
+      "status": "fontes_revisaveis",
+      "nova_aprovacao": false
+    },
+    {
+      "id": "worldbuilding-xix:guarda:09",
+      "afirmacao": "Gnomos da floresta podem apoiar rangers.",
+      "fonte": {
+        "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 20
+      },
+      "status": "fontes_revisaveis",
+      "nova_aprovacao": false
+    },
+    {
+      "id": "worldbuilding-xix:guarda:10",
+      "afirmacao": "Rillifane, Sehanine e Corellon têm presença nas tradições dos elfos.",
+      "fonte": {
+        "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+        "pagina": 24
+      },
+      "status": "fontes_revisaveis",
+      "nova_aprovacao": false
+    }
+  ],
+  "lacunas": [
+    {
+      "nome": "ironwood_id",
+      "valor": null
+    },
+    {
+      "nome": "vandar_queda",
+      "valor": null
+    },
+    {
+      "nome": "identidade_dos_mortos",
+      "valor": null
+    },
+    {
+      "nome": "burocracia_sylara",
+      "valor": null
+    },
+    {
+      "nome": "governo_civil_ironwood",
+      "valor": null
+    }
+  ],
+  "protocolo": {
+    "aprovacao_explicita_necessaria": true,
+    "passos": [
+      "Autor escolhe ID, opção e redação.",
+      "Revisar fonte e pré-requisitos.",
+      "Alterar cânone em outro PR com testes.",
+      "Preservar histórico das opções rejeitadas."
+    ],
+    "silencio_autoriza": false
+  },
+  "contagens": {
+    "dossies": 5,
+    "candidatos": 103,
+    "candidatos_por_ciclo": {
+      "XIV": 42,
+      "XV": 28,
+      "XVI": 11,
+      "XVII": 11,
+      "XVIII": 11
+    },
+    "decisoes": 20,
+    "decisoes_por_dominio": {
+      "transversal": 3,
+      "eldroth": 9,
+      "vandar": 5,
+      "ironwood": 3
+    },
+    "guardas": 10,
+    "aprovados": 0,
+    "mudancas_canonicas": 0
+  }
+}
