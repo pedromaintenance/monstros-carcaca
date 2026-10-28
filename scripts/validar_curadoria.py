@@ -3000,6 +3000,64 @@ def validar_ecologia_monstruosa_xii():
     print("Ecologia XII: 8 criaturas, 6 encontros, 4 pressões, 2 frentes propostos; zero promoção canônica.")
 
 
+
+def validar_monstros_dw_ciclo_xiii():
+    """Calcula e compara oito fichas DW sem promover rascunhos ao cânone."""
+    try:
+        from scripts.calcular_monstros_dw import calcular_ficha
+    except ModuleNotFoundError:
+        from calcular_monstros_dw import calcular_ficha
+    data=load("data/propostas/eldroth-fichas-dw-ciclo13.json")
+    schema=load("schemas/eldroth-fichas-dw-ciclo13.schema.json")
+    Draft202012Validator.check_schema(schema)
+    errors=list(Draft202012Validator(schema).iter_errors(data))
+    require(not errors, f"Fichas DW XIII: schema inválido: {errors[:1]}")
+    require(not data["aprovacao_autoral"] and not data["efetiva_canon"],
+            "Fichas DW XIII: não é permitida promoção automática.")
+    fichas=data["fichas"]
+    require(len(fichas)==8 and len({f["id"] for f in fichas})==8
+            and {f["ordem_de_revisao"] for f in fichas}==set(range(1,9)),
+            "Fichas DW XIII: contagem, IDs ou ordem individual incorretos.")
+    origem={c["id"]:c for c in load("data/propostas/eldroth-ecologia-monstruosa-dw.json")["criaturas"]}
+    require({f["criatura_origem_id"] for f in fichas}==set(origem),
+            "Fichas DW XIII: não há cobertura exata das oito criaturas de XII.")
+    tipos={x["id"] for x in load("data/taxonomia_carcaca.json")["tipos"]}
+    for f in fichas:
+        c=origem[f["criatura_origem_id"]]
+        require(f["tipo_carcaca_proposto"] in tipos
+                and f["tipo_carcaca_proposto"]==c["tipo_carcaca_proposto"]
+                and f["nome"]==c["nome"]
+                and f["instinto"]==c["dungeon_world"]["instinto"]
+                and f["organizacao"]["proposta_dw"]==c["dungeon_world"]["organizacao_tag_proposta"]
+                and [(m["nome"],m["texto"]) for m in f["movimentos"]]==
+                    [(m["nome"],m["texto"]) for m in c["dungeon_world"]["movimentos"]],
+                "Fichas DW XIII: origem, instinto, movimentos ou identidade foram alterados.")
+        require(f["aprovacao_autoral"] is False
+                and f["ocorrencia_confirmada"] is False
+                and f["calculo_fonte"]["origem_dnd_ou_nd"] is False
+                and len(f["resolucao_ficcional"]["alternativas"])>=2,
+                "Fichas DW XIII: promoção indevida, origem ND ou falta de via não violenta.")
+        calculado=calcular_ficha(f["organizacao"]["proposta_dw"],f["modo"],f["decisoes"])
+        require(calculado==f["ficha_dw"],
+                f"Fichas DW XIII: números/tags não deriváveis do DW em {f['id']}.")
+        if f["modo"]=="sem_estatisticas":
+            require(f["ficha_dw"]["pv"] is None
+                    and f["ficha_dw"]["armadura"] is None
+                    and f["ficha_dw"]["dano"] is None,
+                    "Fichas DW XIII: ficha sem combate recebeu números indevidos.")
+        else:
+            require(f["ficha_dw"]["dano"]["faces"] in (4,6,8,10,12)
+                    and f["ficha_dw"]["dano"]["minimo"]==1,
+                    "Fichas DW XIII: dado não admitido ou dano mínimo errado.")
+    require(sum(f["modo"]=="estatizado" for f in fichas)==7
+            and sum(f["modo"]=="sem_estatisticas" for f in fichas)==1,
+            "Fichas DW XIII: sete combatentes e um sem estatísticas esperados.")
+    canon={c["id"] for c in gather("curadoria/criaturas")}
+    require(not (canon & {f["criatura_origem_id"] for f in fichas}),
+            "Fichas DW XIII: proposta inserida como criatura curada.")
+    print("Fichas DW XIII: 8 fichas verificadas pela calculadora (7 numéricas, 1 sem combate), 0 canônicas.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3124,6 +3182,7 @@ def main():
     validar_povoamento_social_thargrid()
     validar_resistencia_florestal_xi()
     validar_ecologia_monstruosa_xii()
+    validar_monstros_dw_ciclo_xiii()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
