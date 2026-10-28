@@ -1,0 +1,841 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XII — Ecologia Monstruosa de Eldroth, Vandar e Ironwood",
+  "estado": "propostas_narrativas_nao_canonicas",
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false,
+  "fonte_primaria": "data/propostas/ironwood-eldroth-resistencia-hack.json",
+  "fontes_referencia": [
+    "data/taxonomia_carcaca.json",
+    "docs/ONTOLOGIA_E_DUNGEON_WORLD.md",
+    "data/propostas/ironwood-eldroth-resistencia-hack.json",
+    "docs/ECOLOGIA_ARQUIVO_DOS_MORTOS_AFOGADOS.md",
+    "Ambientação - A Carcaça - Visão Geral.txt"
+  ],
+  "principios": [
+    "Sylara governa Eldroth e Damaris mantém os mortos-vivos em Vandar; as novas criaturas, suas espécies e aparições não são fatos da lore.",
+    "Ironwood é fortaleza distinta de Eldroth; não transformar microespaços propostos em pontos cartográficos canônicos.",
+    "Nenhuma criatura é inimiga, espiã ou serva da Corte por sua aparência, habitat ou natureza feérica.",
+    "Os tipos são taxonomia hipotética da Carcaça; não reutilizar fichas D&D importadas nem converter ND em estatísticas DW.",
+    "Conexões entre fauna, flora, sobreviventes e agentes da ocupação são conflitos de cenário, não medições naturais.",
+    "As frentes usam presságios, não acontecimentos anteriores; apenas uma campanha poderá registrar realizações."
+  ],
+  "contagens": {
+    "criaturas": 8,
+    "encontros": 6,
+    "pressoes": 4,
+    "frentes": 2
+  },
+  "criaturas": [
+    {
+      "id": "ecologia-xii:criatura:coruja-do-eco-emprestado",
+      "nome": "Coruja do Eco Emprestado",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "estado": "proposta_nao_canonica",
+      "tipo_carcaca_proposto": "fera_sobrenatural",
+      "classe_de_registro": "rascunho_ecologico",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "localizacao_proposta": {
+        "escopo": "eldroth",
+        "local_proposto_id": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+        "regiao_canonica_de_referencia": "regiao:eldroth",
+        "habitat_possivel": "Copas densas e clareiras úmidas imaginadas no interior de Eldroth."
+      },
+      "ecologia": {
+        "sinais": [
+          "Um canto de ave retorna com a voz de alguém ausente",
+          "Penas sem sombra repousam sobre casca úmida"
+        ],
+        "funcao_hipotetica": "Predadora ou imitadora acústica possível; a dieta não é comprovada.",
+        "alimentacao_confirmada": null,
+        "reproducao_confirmada": null,
+        "densidade_confirmada": null,
+        "relacao_com_ocupacao": "Relação com a vigilância de Sylara não comprovada: o uso político é uma hipótese de aventura.",
+        "hipoteses_abertas": [
+          "Imita vozes por magia própria ou por efeito do ambiente?",
+          "É explorada por patrulhas ou apenas tolerada?"
+        ]
+      },
+      "dungeon_world": {
+        "estado": "instinto_e_movimentos_propostos",
+        "instinto": "Conservar para si o último som ouvido e devolvê-lo quando ninguém pode confiar nele.",
+        "organizacao_tag_proposta": "solitario",
+        "movimentos": [
+          {
+            "nome": "Eco que Acusa",
+            "texto": "Repetir uma confissão no momento em que ela mais compromete um inocente.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Silêncio de Ninho",
+            "texto": "Subtrair os sons de aviso de uma pequena passagem.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Voo sem Testemunha",
+            "texto": "Sair do alcance visual quando uma vítima tenta provar que a viu.",
+            "origem": "criacao_autoral_ciclo_xii"
+          }
+        ],
+        "estatisticas": {
+          "estado": "pendente_do_procedimento_dw",
+          "pv": null,
+          "armadura": null,
+          "dano": null,
+          "nd_dnd": null
+        }
+      },
+      "solucoes_nao_violentas": [
+        "Conferir o som com outras testemunhas",
+        "Afastar-se sem perseguir a ave",
+        "Criar um sinal não vocal"
+      ],
+      "ancora_ficcional": {
+        "referencia": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+        "origem": "povoamento_xi_proposto",
+        "nota": "Relação temática sugerida: não confirma que o ser habita o lugar."
+      },
+      "vinculo_cena_anterior": "ironwood-eldroth:cena:passaro-sem-canto"
+    },
+    {
+      "id": "ecologia-xii:criatura:besouros-da-casca-riscada",
+      "nome": "Besouros da Casca Riscada",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "estado": "proposta_nao_canonica",
+      "tipo_carcaca_proposto": "fauna",
+      "classe_de_registro": "rascunho_ecologico",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "localizacao_proposta": {
+        "escopo": "ironwood",
+        "local_proposto_id": "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+        "regiao_canonica_de_referencia": null,
+        "habitat_possivel": "Madeira caída, cascas velhas e depósitos vegetais ao redor de uma fortaleza florestal proposta."
+      },
+      "ecologia": {
+        "sinais": [
+          "Ranhuras paralelas em galhos já mortos",
+          "Pequenos rastros de serragem junto à casca"
+        ],
+        "funcao_hipotetica": "Decompositores possíveis; tornam rastros legíveis a observadores, sem intenção política.",
+        "alimentacao_confirmada": null,
+        "reproducao_confirmada": null,
+        "densidade_confirmada": null,
+        "relacao_com_ocupacao": "Nenhuma filiação à Corte; não presumir que o comportamento animal seja espionagem.",
+        "hipoteses_abertas": [
+          "Alimentam-se apenas de madeira morta?",
+          "Apresentam comportamento sazonal?"
+        ]
+      },
+      "dungeon_world": {
+        "estado": "instinto_e_movimentos_propostos",
+        "instinto": "Decompor a madeira morta e proteger a própria postura de vibrações excessivas.",
+        "organizacao_tag_proposta": "horda",
+        "movimentos": [
+          {
+            "nome": "Cortina de Serragem",
+            "texto": "Encobrir uma marca no chão quando a madeira é sacudida.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Casca em Movimento",
+            "texto": "Fazer uma trilha parecer recém-usada por um animal maior.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Defesa do Ninho",
+            "texto": "Enxamear os pés de quem destrói a madeira habitada.",
+            "origem": "criacao_autoral_ciclo_xii"
+          }
+        ],
+        "estatisticas": {
+          "estado": "pendente_do_procedimento_dw",
+          "pv": null,
+          "armadura": null,
+          "dano": null,
+          "nd_dnd": null
+        }
+      },
+      "solucoes_nao_violentas": [
+        "Evitar troncos com postura",
+        "Usar outro suporte estrutural",
+        "Observar os rastros antes de concluir perseguição"
+      ],
+      "ancora_ficcional": {
+        "referencia": "ironwood-eldroth:lugar:patio-da-trilha-incompleta",
+        "origem": "povoamento_xi_proposto",
+        "nota": "Relação temática sugerida: não confirma que o ser habita o lugar."
+      },
+      "vinculo_cena_anterior": "ironwood-eldroth:cena:aprendiz-do-mapa"
+    },
+    {
+      "id": "ecologia-xii:criatura:cardos-que-bebem-cinza",
+      "nome": "Cardos que Bebem Cinza",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "estado": "proposta_nao_canonica",
+      "tipo_carcaca_proposto": "flora",
+      "classe_de_registro": "rascunho_ecologico",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "localizacao_proposta": {
+        "escopo": "eldroth",
+        "local_proposto_id": "ironwood-eldroth:lugar:canteiro-da-lua-ferida",
+        "regiao_canonica_de_referencia": "regiao:eldroth",
+        "habitat_possivel": "Solo queimado e pequenas clareiras em áreas com vegetação danificada."
+      },
+      "ecologia": {
+        "sinais": [
+          "Folhas finas com poeira cinza nas nervuras",
+          "Espinhos retêm fuligem mesmo depois de chuva"
+        ],
+        "funcao_hipotetica": "Planta oportunista proposta; pode indicar solo perturbado, sem comprovar corrupção sobrenatural.",
+        "alimentacao_confirmada": null,
+        "reproducao_confirmada": null,
+        "densidade_confirmada": null,
+        "relacao_com_ocupacao": "A vegetação pode ser afetada pela ocupação, mas não está a serviço de Sylara por definição.",
+        "hipoteses_abertas": [
+          "Suas sementes são tóxicas?",
+          "Podem participar de remédios locais?"
+        ]
+      },
+      "dungeon_world": {
+        "estado": "instinto_e_movimentos_propostos",
+        "instinto": "Armazenar nutrientes da terra ferida e espalhar sementes após perturbações.",
+        "organizacao_tag_proposta": "grupo",
+        "movimentos": [
+          {
+            "nome": "Poeira que Revela",
+            "texto": "Marcar de fuligem mãos que mexeram na planta.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Espinhos na Passagem",
+            "texto": "Fechar uma passagem estreita ao rebrotar sobre madeira podre.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Semente Retida",
+            "texto": "Espalhar sementes quando uma fogueira é apagada no solo.",
+            "origem": "criacao_autoral_ciclo_xii"
+          }
+        ],
+        "estatisticas": {
+          "estado": "pendente_do_procedimento_dw",
+          "pv": null,
+          "armadura": null,
+          "dano": null,
+          "nd_dnd": null
+        }
+      },
+      "solucoes_nao_violentas": [
+        "Isolar uma amostra",
+        "Observar solo e água",
+        "Evitar queimada sem diagnóstico"
+      ],
+      "ancora_ficcional": {
+        "referencia": "ironwood-eldroth:lugar:canteiro-da-lua-ferida",
+        "origem": "povoamento_xi_proposto",
+        "nota": "Relação temática sugerida: não confirma que o ser habita o lugar."
+      },
+      "vinculo_cena_anterior": "ironwood-eldroth:cena:viveiro-negro"
+    },
+    {
+      "id": "ecologia-xii:criatura:micelio-das-vozes-partidas",
+      "nome": "Micélio das Vozes Partidas",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "estado": "proposta_nao_canonica",
+      "tipo_carcaca_proposto": "flora",
+      "classe_de_registro": "rascunho_ecologico",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "localizacao_proposta": {
+        "escopo": "eldroth",
+        "local_proposto_id": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+        "regiao_canonica_de_referencia": "regiao:eldroth",
+        "habitat_possivel": "Raízes úmidas e troncos em decomposição, onde palavras podem ecoar sem fonte visível."
+      },
+      "ecologia": {
+        "sinais": [
+          "Um sussurro parece vir de vários troncos ao mesmo tempo",
+          "Pequenas lâminas brancas mudam de direção após pisadas"
+        ],
+        "funcao_hipotetica": "Rede fúngica fictícia que pode emitir falsos sinais ou alertas úteis; não constitui correio comprovado.",
+        "alimentacao_confirmada": null,
+        "reproducao_confirmada": null,
+        "densidade_confirmada": null,
+        "relacao_com_ocupacao": "Não comprova a existência do Correio das Raízes Molhadas nem o trabalho da Corte.",
+        "hipoteses_abertas": [
+          "Há consciência distribuída ou mera reação ao ambiente?",
+          "Quanto da mensagem é interpretação de quem escuta?"
+        ]
+      },
+      "dungeon_world": {
+        "estado": "instinto_e_movimentos_propostos",
+        "instinto": "Distribuir sinais de perturbação entre corpos de fungo e madeira.",
+        "organizacao_tag_proposta": "horda",
+        "movimentos": [
+          {
+            "nome": "Voz em Tronco Alheio",
+            "texto": "Devolver uma palavra incompleta como se tivesse sido dita por outra pessoa.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Raiz em Alerta",
+            "texto": "Fazer sinais se propagarem por uma zona de raízes sem indicar sua origem.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Colônia Rompida",
+            "texto": "Liberar partículas que obscurecem rastros quando o fungário é ferido.",
+            "origem": "criacao_autoral_ciclo_xii"
+          }
+        ],
+        "estatisticas": {
+          "estado": "pendente_do_procedimento_dw",
+          "pv": null,
+          "armadura": null,
+          "dano": null,
+          "nd_dnd": null
+        }
+      },
+      "solucoes_nao_violentas": [
+        "Comparar testemunhos separados",
+        "Interromper o pisoteio do fungário",
+        "Preservar amostras para análise"
+      ],
+      "ancora_ficcional": {
+        "referencia": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+        "origem": "povoamento_xi_proposto",
+        "nota": "Relação temática sugerida: não confirma que o ser habita o lugar."
+      },
+      "vinculo_cena_anterior": "ironwood-eldroth:cena:passaro-sem-canto"
+    },
+    {
+      "id": "ecologia-xii:criatura:cervo-de-galhos-invertidos",
+      "nome": "Cervo dos Galhos Invertidos",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "estado": "proposta_nao_canonica",
+      "tipo_carcaca_proposto": "fera_sobrenatural",
+      "classe_de_registro": "rascunho_ecologico",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "localizacao_proposta": {
+        "escopo": "eldroth",
+        "local_proposto_id": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+        "regiao_canonica_de_referencia": "regiao:eldroth",
+        "habitat_possivel": "Trilhas fechadas e bordas de mata onde o terreno muda rapidamente."
+      },
+      "ecologia": {
+        "sinais": [
+          "Marcas de galhos muito acima da altura de uma pessoa",
+          "Pegadas que parecem regressar à própria origem"
+        ],
+        "funcao_hipotetica": "Herbívoro protetor possível; a repetição de caminhos pode parecer maldição.",
+        "alimentacao_confirmada": null,
+        "reproducao_confirmada": null,
+        "densidade_confirmada": null,
+        "relacao_com_ocupacao": "Nunca classificar a espécie inteira como soldado de Sylara sem evidência.",
+        "hipoteses_abertas": [
+          "Suas rotas são naturais, mágicas ou aprendidas?",
+          "Há filhotes ou apenas uma manifestação singular?"
+        ]
+      },
+      "dungeon_world": {
+        "estado": "instinto_e_movimentos_propostos",
+        "instinto": "Afastar perseguidores de filhotes e levar intrusos a percursos circulares.",
+        "organizacao_tag_proposta": "solitario",
+        "movimentos": [
+          {
+            "nome": "Galhada que Faz Retornar",
+            "texto": "Conduzir uma perseguição a um ponto já atravessado.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Corpo entre Árvores",
+            "texto": "Tornar impossível distinguir animal e troncos por um instante.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Defesa do Filhote",
+            "texto": "Forçar o perseguidor a escolher entre avançar e ferir uma criatura vulnerável.",
+            "origem": "criacao_autoral_ciclo_xii"
+          }
+        ],
+        "estatisticas": {
+          "estado": "pendente_do_procedimento_dw",
+          "pv": null,
+          "armadura": null,
+          "dano": null,
+          "nd_dnd": null
+        }
+      },
+      "solucoes_nao_violentas": [
+        "Cessar a perseguição",
+        "Oferecer recuo amplo",
+        "Observar o caminho sem capturar"
+      ],
+      "ancora_ficcional": {
+        "referencia": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+        "origem": "povoamento_xi_proposto",
+        "nota": "Relação temática sugerida: não confirma que o ser habita o lugar."
+      },
+      "vinculo_cena_anterior": "ironwood-eldroth:cena:passaro-sem-canto"
+    },
+    {
+      "id": "ecologia-xii:criatura:escrivao-da-folha-lacrada",
+      "nome": "Escrivão da Folha Lacrada",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "estado": "proposta_nao_canonica",
+      "tipo_carcaca_proposto": "feerico",
+      "classe_de_registro": "rascunho_ecologico",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "localizacao_proposta": {
+        "escopo": "eldroth",
+        "local_proposto_id": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+        "regiao_canonica_de_referencia": "regiao:eldroth",
+        "habitat_possivel": "Áreas de fronteira simbólica, trilhas marcadas e árvores com inscrições imaginadas."
+      },
+      "ecologia": {
+        "sinais": [
+          "Folhas enroladas como pequenos selos",
+          "Assinaturas aparecem em nervuras depois de um juramento"
+        ],
+        "funcao_hipotetica": "Agente feérico possível que barganha nomes, sem submissão comprovada à Corte.",
+        "alimentacao_confirmada": null,
+        "reproducao_confirmada": null,
+        "densidade_confirmada": null,
+        "relacao_com_ocupacao": "Natureza feérica não equivale a membro da aristocracia shadow fey; relação com Sylara é incerta.",
+        "hipoteses_abertas": [
+          "É livre, exilado ou contratado?",
+          "Sua escrita registra fatos ou fabrica obrigações?"
+        ]
+      },
+      "dungeon_world": {
+        "estado": "instinto_e_movimentos_propostos",
+        "instinto": "Transformar promessas vagas em compromissos dos quais possa cobrar lembranças.",
+        "organizacao_tag_proposta": "solitario",
+        "movimentos": [
+          {
+            "nome": "Contrato de Orvalho",
+            "texto": "Pedir uma memória como garantia antes de entregar orientação.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Cláusula Invisível",
+            "texto": "Mostrar a segunda metade de uma promessa apenas depois da aceitação.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Nome Devolvido Torto",
+            "texto": "Repetir um nome verdadeiro com uma condição que não existia antes.",
+            "origem": "criacao_autoral_ciclo_xii"
+          }
+        ],
+        "estatisticas": {
+          "estado": "pendente_do_procedimento_dw",
+          "pv": null,
+          "armadura": null,
+          "dano": null,
+          "nd_dnd": null
+        }
+      },
+      "solucoes_nao_violentas": [
+        "Recusar acordos obscuros",
+        "Exigir texto legível e testemunhas",
+        "Negociar troca sem nomes pessoais"
+      ],
+      "ancora_ficcional": {
+        "referencia": "ironwood-eldroth:lugar:clareira-das-testemunhas",
+        "origem": "povoamento_xi_proposto",
+        "nota": "Relação temática sugerida: não confirma que o ser habita o lugar."
+      },
+      "vinculo_cena_anterior": "ironwood-eldroth:cena:pedido-de-desercao"
+    },
+    {
+      "id": "ecologia-xii:criatura:andarilho-de-sepultura-negada",
+      "nome": "Andarilho de Sepultura Negada",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "estado": "proposta_nao_canonica",
+      "tipo_carcaca_proposto": "morto_vivo",
+      "classe_de_registro": "rascunho_ecologico",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "localizacao_proposta": {
+        "escopo": "vandar",
+        "local_proposto_id": "ironwood-eldroth:lugar:sala-dos-nomes-frios",
+        "regiao_canonica_de_referencia": "regiao:eldroth",
+        "habitat_possivel": "Ruínas e antigas passagens funerárias hipotéticas nos arredores de Vandar."
+      },
+      "ecologia": {
+        "sinais": [
+          "Um morto deixa marcas de terra sem sapatos",
+          "Carrega um objeto com iniciais não reconhecidas"
+        ],
+        "funcao_hipotetica": "Mortos-vivos existem em Vandar; este indivíduo é construção autoral e sua relação com Damaris não está determinada.",
+        "alimentacao_confirmada": null,
+        "reproducao_confirmada": null,
+        "densidade_confirmada": null,
+        "relacao_com_ocupacao": "O controle de Damaris sobre Vandar não autoriza atribuir-lhe automaticamente cada morto-vivo hipotético.",
+        "hipoteses_abertas": [
+          "Sua identidade corresponde a algum desaparecido?",
+          "Age autonomamente ou sob compulsão?"
+        ]
+      },
+      "dungeon_world": {
+        "estado": "instinto_e_movimentos_propostos",
+        "instinto": "Buscar testemunha de sua morte antes de aceitar o próprio repouso.",
+        "organizacao_tag_proposta": "solitario",
+        "movimentos": [
+          {
+            "nome": "Nome sem Dono",
+            "texto": "Responder a perguntas apenas com nomes de outras pessoas.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Passo de Enterro",
+            "texto": "Surgir na extremidade de uma marcha fúnebre sem ter sido convidado.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Última Testemunha",
+            "texto": "Oferecer um objeto que obriga os vivos a questionar um registro de óbito.",
+            "origem": "criacao_autoral_ciclo_xii"
+          }
+        ],
+        "estatisticas": {
+          "estado": "pendente_do_procedimento_dw",
+          "pv": null,
+          "armadura": null,
+          "dano": null,
+          "nd_dnd": null
+        }
+      },
+      "solucoes_nao_violentas": [
+        "Comparar registros sem declarar morte",
+        "Permitir retiro sem combate",
+        "Consultar famílias antes de ritos"
+      ],
+      "ancora_ficcional": {
+        "referencia": "ironwood-eldroth:lugar:sala-dos-nomes-frios",
+        "origem": "povoamento_xi_proposto",
+        "nota": "Relação temática sugerida: não confirma que o ser habita o lugar."
+      },
+      "vinculo_cena_anterior": "ironwood-eldroth:cena:despedida-sem-cadaver"
+    },
+    {
+      "id": "ecologia-xii:criatura:cao-de-esporos-do-limiar",
+      "nome": "Cão de Esporos do Limiar",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "estado": "proposta_nao_canonica",
+      "tipo_carcaca_proposto": "fera_sobrenatural",
+      "classe_de_registro": "rascunho_ecologico",
+      "aprovacao_autoral": false,
+      "ocorrencia_confirmada": false,
+      "localizacao_proposta": {
+        "escopo": "ironwood",
+        "local_proposto_id": "ironwood-eldroth:lugar:pouso-das-bainhas",
+        "regiao_canonica_de_referencia": null,
+        "habitat_possivel": "Bordas da fortaleza e madeira apodrecida onde fugitivos poderiam se abrigar."
+      },
+      "ecologia": {
+        "sinais": [
+          "Pegadas cobertas por pontos claros",
+          "Um animal rosna para peças de roupa, não para pessoas"
+        ],
+        "funcao_hipotetica": "Animal fantástico defensivo possível; não é guardião oficialmente treinado de Ironwood.",
+        "alimentacao_confirmada": null,
+        "reproducao_confirmada": null,
+        "densidade_confirmada": null,
+        "relacao_com_ocupacao": "A proteção de Ironwood por rangers não pressupõe controle dessa criatura ou de toda a fauna.",
+        "hipoteses_abertas": [
+          "Reconhece magia em vestes ou apenas cheiros?",
+          "É uma espécie ou animal singular?"
+        ]
+      },
+      "dungeon_world": {
+        "estado": "instinto_e_movimentos_propostos",
+        "instinto": "Defender o lugar de descanso, mesmo quando não reconhece os recém-chegados.",
+        "organizacao_tag_proposta": "grupo",
+        "movimentos": [
+          {
+            "nome": "Farejar a Marca",
+            "texto": "Identificar uma peça de roupa e impedir que atravesse a passagem.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Esporos de Defesa",
+            "texto": "Levantar nuvem que atrasa uma aproximação brusca.",
+            "origem": "criacao_autoral_ciclo_xii"
+          },
+          {
+            "nome": "Recusa do Mestre",
+            "texto": "Ignorar ordens de quem tenta convertê-lo em cão de caça.",
+            "origem": "criacao_autoral_ciclo_xii"
+          }
+        ],
+        "estatisticas": {
+          "estado": "pendente_do_procedimento_dw",
+          "pv": null,
+          "armadura": null,
+          "dano": null,
+          "nd_dnd": null
+        }
+      },
+      "solucoes_nao_violentas": [
+        "Separar objeto suspeito de seu portador",
+        "Não forçar obediência",
+        "Oferecer caminho alternativo"
+      ],
+      "ancora_ficcional": {
+        "referencia": "ironwood-eldroth:lugar:pouso-das-bainhas",
+        "origem": "povoamento_xi_proposto",
+        "nota": "Relação temática sugerida: não confirma que o ser habita o lugar."
+      },
+      "vinculo_cena_anterior": "ironwood-eldroth:cena:selo-na-capa"
+    }
+  ],
+  "encontros": [
+    {
+      "id": "ecologia-xii:encontro:canto-sem-ave",
+      "nome": "Um Canto sem Ave",
+      "estado": "encontro_hipotetico",
+      "ocorreu": false,
+      "cena_anterior_id": "ironwood-eldroth:cena:passaro-sem-canto",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:coruja-do-eco-emprestado",
+        "ecologia-xii:criatura:micelio-das-vozes-partidas"
+      ],
+      "escopo": "eldroth",
+      "abertura_condicional": "Se Sava e Maela ouvirem a mesma voz vindo de lugares diferentes.",
+      "pergunta_em_aberto": "Quem produziu o som, e há alguém sendo denunciado?",
+      "escolhas_sem_combater": [
+        "Escutar separadamente testemunhas",
+        "Preservar o fungário e sair em silêncio",
+        "Investigar um possível manipulador sem acusar animais"
+      ],
+      "consequencia_se_ignorado_proposta": "Mensagens incongruentes podem fragmentar a confiança entre abrigos.",
+      "resultado_canonico": null
+    },
+    {
+      "id": "ecologia-xii:encontro:a-capa-e-o-faro",
+      "nome": "A Capa e o Faro",
+      "estado": "encontro_hipotetico",
+      "ocorreu": false,
+      "cena_anterior_id": "ironwood-eldroth:cena:selo-na-capa",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:cao-de-esporos-do-limiar"
+      ],
+      "escopo": "ironwood",
+      "abertura_condicional": "Se um cão estranho impedir a entrada de uma capa marcada.",
+      "pergunta_em_aberto": "A roupa é um sinal de rastreio ou o animal reagiu por outra razão?",
+      "escolhas_sem_combater": [
+        "Isolar a peça sem expulsar a família",
+        "Investigar o selo com Ioven sem confiar cegamente nele",
+        "Construir abrigo provisório fora do limiar"
+      ],
+      "consequencia_se_ignorado_proposta": "A acusação sem prova pode excluir fugitivos ou expor o pouso.",
+      "resultado_canonico": null
+    },
+    {
+      "id": "ecologia-xii:encontro:a-pira-antes-da-prova",
+      "nome": "A Pira Antes da Prova",
+      "estado": "encontro_hipotetico",
+      "ocorreu": false,
+      "cena_anterior_id": "ironwood-eldroth:cena:viveiro-negro",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:cardos-que-bebem-cinza"
+      ],
+      "escopo": "eldroth",
+      "abertura_condicional": "Se a fuligem aparecer num canteiro depois de uma noite sem fogo.",
+      "pergunta_em_aberto": "É ameaça viva ou marca de solo antigo queimado?",
+      "escolhas_sem_combater": [
+        "Coletar solo em diferentes pontos",
+        "Restringir a área sem incendiar",
+        "Dividir provisões enquanto investigam"
+      ],
+      "consequencia_se_ignorado_proposta": "Queimar por medo pode destruir recursos necessários ao refúgio.",
+      "resultado_canonico": null
+    },
+    {
+      "id": "ecologia-xii:encontro:a-casca-que-contou",
+      "nome": "A Casca que Contou",
+      "estado": "encontro_hipotetico",
+      "ocorreu": false,
+      "cena_anterior_id": "ironwood-eldroth:cena:aprendiz-do-mapa",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:besouros-da-casca-riscada"
+      ],
+      "escopo": "ironwood",
+      "abertura_condicional": "Se um aluno confundir ranhuras de insetos com a marca de uma patrulha.",
+      "pergunta_em_aberto": "Quem consegue distinguir pista ecológica de mensagem codificada?",
+      "escolhas_sem_combater": [
+        "Documentar padrões naturais",
+        "Rever a lição sem punir toda a turma",
+        "Examinar a madeira antes de seguir o rastro"
+      ],
+      "consequencia_se_ignorado_proposta": "Falsos alarmes podem ensinar aos guardas a desconfiar de qualquer testemunho.",
+      "resultado_canonico": null
+    },
+    {
+      "id": "ecologia-xii:encontro:nome-sem-corpo",
+      "nome": "O Nome que Anda",
+      "estado": "encontro_hipotetico",
+      "ocorreu": false,
+      "cena_anterior_id": "ironwood-eldroth:cena:despedida-sem-cadaver",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:andarilho-de-sepultura-negada"
+      ],
+      "escopo": "vandar",
+      "abertura_condicional": "Se um andarilho carregando iniciais aparecer durante um memorial proposto.",
+      "pergunta_em_aberto": "Seu nome é verdadeiro, imposto ou uma pista de alguém vivo?",
+      "escolhas_sem_combater": [
+        "Confrontar versões sem assumir óbito",
+        "Ouvir parentes antes de rituais",
+        "Permitir que o morto parta sem perseguição"
+      ],
+      "consequencia_se_ignorado_proposta": "Uma identificação precipitada pode converter desaparecimento em morte oficial.",
+      "resultado_canonico": null
+    },
+    {
+      "id": "ecologia-xii:encontro:o-juramento-que-cresce",
+      "nome": "A Folha com Cláusula",
+      "estado": "encontro_hipotetico",
+      "ocorreu": false,
+      "cena_anterior_id": "ironwood-eldroth:cena:pedido-de-desercao",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:escrivao-da-folha-lacrada",
+        "ecologia-xii:criatura:cervo-de-galhos-invertidos"
+      ],
+      "escopo": "eldroth",
+      "abertura_condicional": "Se Ioven oferecer uma rota e uma folha exigir nomes para reconhecê-la.",
+      "pergunta_em_aberto": "O caminho existe ou a barganha serve para colher identidades?",
+      "escolhas_sem_combater": [
+        "Recusar contrato sem exame",
+        "Testar alternativa sem registrar nomes",
+        "Deixar um animal seguir livre, sem captura"
+      ],
+      "consequencia_se_ignorado_proposta": "A tentativa de proteger a rede pode criar novas dívidas de servidão.",
+      "resultado_canonico": null
+    }
+  ],
+  "pressoes": [
+    {
+      "id": "ecologia-xii:pressao:rastreio-pelo-medo",
+      "nome": "A Floresta que Parece Denunciar",
+      "estado": "pressao_condicional_nao_observada",
+      "escopo": "eldroth",
+      "ocorreu": false,
+      "origem_possivel": "Sons incompreensíveis ou repetidos, percebidos como espionagem.",
+      "consequencia_social_possivel": "Comunidades podem interromper relações e abandonar abrigos por suspeita sem prova.",
+      "alternativa_a_investigar": "Comparar fontes naturais, mágicas e políticas antes de atribuir autoria à Corte.",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:coruja-do-eco-emprestado",
+        "ecologia-xii:criatura:micelio-das-vozes-partidas"
+      ],
+      "medicao": null,
+      "periodo": null
+    },
+    {
+      "id": "ecologia-xii:pressao:queima-sem-diagnostico",
+      "nome": "A Pira que Destrói o Remédio",
+      "estado": "pressao_condicional_nao_observada",
+      "escopo": "eldroth",
+      "ocorreu": false,
+      "origem_possivel": "Fuligem em flora ou doença não identificada.",
+      "consequencia_social_possivel": "Medidas preventivas precipitadas podem destruir cultivos e suprimentos.",
+      "alternativa_a_investigar": "Distinguir dano ecológico, queimadas e eventual interferência feérica.",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:cardos-que-bebem-cinza"
+      ],
+      "medicao": null,
+      "periodo": null
+    },
+    {
+      "id": "ecologia-xii:pressao:luto-sem-registro",
+      "nome": "Sepulturas e Direitos",
+      "estado": "pressao_condicional_nao_observada",
+      "escopo": "vandar",
+      "ocorreu": false,
+      "origem_possivel": "Aparecimento de mortos-vivos ou objetos com nomes.",
+      "consequencia_social_possivel": "A pressão para reconhecer rapidamente mortos pode apagar a situação de desaparecidos.",
+      "alternativa_a_investigar": "Proteger testemunhos e direitos das famílias antes de usar magia.",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:andarilho-de-sepultura-negada"
+      ],
+      "medicao": null,
+      "periodo": null
+    },
+    {
+      "id": "ecologia-xii:pressao:fauna-como-fronteira",
+      "nome": "O Abrigo que Acusa o Animal",
+      "estado": "pressao_condicional_nao_observada",
+      "escopo": "ironwood",
+      "ocorreu": false,
+      "origem_possivel": "Criaturas defensivas confundidas com vigias do regime.",
+      "consequencia_social_possivel": "Fugitivos e animais podem ser feridos, e a vigilância humana pode endurecer.",
+      "alternativa_a_investigar": "Observar padrões, não domesticar à força e verificar sinais independentemente.",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:cao-de-esporos-do-limiar",
+        "ecologia-xii:criatura:besouros-da-casca-riscada"
+      ],
+      "medicao": null,
+      "periodo": null
+    }
+  ],
+  "frentes": [
+    {
+      "id": "ecologia-xii:frente:o-bosque-que-informa",
+      "nome": "O Bosque que Informa sem Consentimento",
+      "estado": "frente_dw_proposta",
+      "escopo": "eldroth",
+      "ocorreu": false,
+      "impulso_dw_proposto": "Transformar cada sinal ambíguo em uma acusação contra os sobreviventes.",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:coruja-do-eco-emprestado",
+        "ecologia-xii:criatura:micelio-das-vozes-partidas",
+        "ecologia-xii:criatura:escrivao-da-folha-lacrada"
+      ],
+      "encontros_ids": [
+        "ecologia-xii:encontro:canto-sem-ave",
+        "ecologia-xii:encontro:o-juramento-que-cresce"
+      ],
+      "pressagios_sombrios_propostos": [
+        "Um boato sobre vozes repetidas interrompe a troca de notícias entre vizinhos.",
+        "As famílias começam a exigir listas completas de nomes antes de confiar umas nas outras.",
+        "Um agente oportunista propõe vender proteção em troca das listas."
+      ],
+      "desastre_iminente_proposto": "A própria rede de ajuda oferece os dados de que um perseguidor precisaria.",
+      "pergunta_em_aberto": "Como garantir proteção sem substituir cooperação por vigilância coletiva?",
+      "pressagios_realizados": [],
+      "resultado_canonico": null
+    },
+    {
+      "id": "ecologia-xii:frente:o-refugio-que-queima",
+      "nome": "O Refúgio que Queima suas Sementes",
+      "estado": "frente_dw_proposta",
+      "escopo": "multirregional_sem_rota_confirmada",
+      "ocorreu": false,
+      "impulso_dw_proposto": "Converter medidas de proteção em destruição dos meios de viver.",
+      "criaturas_ids": [
+        "ecologia-xii:criatura:cardos-que-bebem-cinza",
+        "ecologia-xii:criatura:cervo-de-galhos-invertidos",
+        "ecologia-xii:criatura:cao-de-esporos-do-limiar"
+      ],
+      "encontros_ids": [
+        "ecologia-xii:encontro:a-pira-antes-da-prova",
+        "ecologia-xii:encontro:a-capa-e-o-faro"
+      ],
+      "pressagios_sombrios_propostos": [
+        "Um sinal ecológico desconhecido é tratado como prova definitiva de corrupção.",
+        "Os responsáveis decidem queimar cultivos e negar passagem a fugitivos sem avaliação.",
+        "A perda de comida e abrigo abre conflito entre comunidades antes aliadas."
+      ],
+      "desastre_iminente_proposto": "A resistência sobrevive militarmente, mas perde capacidade de alimentar e acolher.",
+      "pergunta_em_aberto": "Qual evidência basta para destruir um recurso comum?",
+      "pressagios_realizados": [],
+      "resultado_canonico": null
+    }
+  ]
+}
