@@ -1,0 +1,556 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XXII — Meio-Demônios: famílias, corpo, memória e escolhas",
+  "estado": "expansao_cultural_proposta",
+  "aprovacao_autoral": false,
+  "efeito_canonico_automatico": false,
+  "povo": "Meio-Demônios",
+  "referencia_cosmologica": "Ascendência demoníaca em mistura com outros povos; demônios, diabos, cambions e tieflings não são espécies cosmológicas separadas.",
+  "marco_cronologico_documentado": "983 EC: invasão demoníaca; não equivale à data de origem de todas as linhagens.",
+  "patria_unica_documentada": null,
+  "governo_comum_documentado": null,
+  "aparencia_uniforme_documentada": null,
+  "fonte_manuscrito": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "fatos_documentados": [
+    {
+      "id": "worldbuilding-xxii:fato:01",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Meio-Demônio é termo amplo para descendentes de ascendência demoníaca misturada a humanos, elfos, orcs, hobbits e outros povos.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:02",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Demônios, diabos, cambions e tieflings não constituem naturezas cosmológicas separadas na Carcaça; diferem em origem, mistura, aparência, poder ou proximidade ancestral.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:03",
+      "pagina": 21,
+      "afirmacao_de_fonte": "A presença de linhagens mistas se tornou mais comum após grandes invasões demoníacas vindas do Abismo; nem toda linhagem começou numa única invasão.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:04",
+      "pagina": 21,
+      "afirmacao_de_fonte": "As origens incluem violência de guerra, pactos, cultos, alianças, relações consentidas e convivência de gerações; algumas origens se perderam no tempo.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:05",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Traços físicos podem incluir chifres, cauda, cascos, olhos incomuns, asas atrofiadas, escamas e marcas sobrenaturais; outros indivíduos podem parecer mortais sem tais traços.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:06",
+      "pagina": 21,
+      "afirmacao_de_fonte": "A intensidade dos traços físicos não define poder, moralidade nem proximidade genealógica.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:07",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Sangue demoníaco não determina caráter ou lealdade ao Abismo.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:08",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Medo e estigma levam alguns indivíduos a esconder traços e outros a exibi-los; há famílias em cidades cosmopolitas, comunidades refugiadas e proximidades do Abismo.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:09",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Em alguns assentamentos próximos do Abismo a ascendência demoníaca é socialmente comum e reconhecida sem espanto.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:10",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Algumas linhagens manifestam afinidade com fogo, sombras, sonhos, venenos ou magia, enquanto outras têm somente marcas físicas.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:11",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Características ancestrais podem desaparecer por gerações e reaparecer em crianças.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:12",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Indivíduos e famílias divergem entre vergonha, veneração, pesquisa de origem e recusa de definir a própria identidade por ancestrais.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:13",
+      "pagina": 21,
+      "afirmacao_de_fonte": "Alguns indivíduos buscam deliberadamente poderes do Abismo e podem reivindicar direitos ancestrais reais ou supostos; isso não representa todos os descendentes.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxii:fato:14",
+      "pagina": 9,
+      "afirmacao_de_fonte": "A cronologia do manuscrito registra uma invasão demoníaca em 983 EC, mas ela não data todas as linhagens meio-demoníacas.",
+      "estatuto": "manuscrito_em_revisao",
+      "novo_canon": false
+    }
+  ],
+  "limites": [
+    "Não separar demônios, diabos, cambions e tieflings em naturezas cosmológicas diferentes.",
+    "Não inferir caráter, alinhamento, poder, profissão, culto ou lealdade por ascendência, traço corporal ou intensidade de magia.",
+    "Não datar todas as linhagens em 983 EC: o manuscrito afirma que houve aumento após grandes invasões, não origem universal.",
+    "Não atribuir violência, culto, pacto ou relação consensual individual a famílias específicas sem evidência.",
+    "Não exigir que filhos respondam por pactos, crimes, guerras ou escolhas religiosas de ancestrais.",
+    "Não tratar a manifestação tardia de traços físicos como profecia, prova de maldição ou título nobiliárquico.",
+    "Não criar nação, capital, comando ou religião de meio-demônios com base numa categoria genealógica.",
+    "Não inventar aldeias ou coordenadas perto do Abismo; comunidades são descritas genericamente.",
+    "Não confundir temer discriminação com criminalidade ou com serviço ao Abismo.",
+    "Não tratar pessoas de culturas mortais distintas como um povo culturalmente idêntico só por terem ascendência semelhante.",
+    "Não homologar rito, lei, escola, evento de violência ou NPC a partir de vinhetas e exemplos condicionais.",
+    "Não alterar a ficha de sete criaturas canônicas, mapas, regras de DW ou a fila de decisões do Ciclo XIX."
+  ],
+  "contagens": {
+    "fatos": 14,
+    "eixos_sociais": 11,
+    "contextos_de_convivencia": 6,
+    "circuitos_civis": 6,
+    "tensoes": 6,
+    "costumes_candidatos": 4,
+    "vinhetas": 4,
+    "perguntas": 9
+  },
+  "eixos_sociais": [
+    {
+      "id": "worldbuilding-xxii:eixo:linhagem-e-pertencimento",
+      "nome_editorial": "De quem é uma história de família?",
+      "hipotese_social": "A genealogia pode registrar tanto cuidado quanto coerção; conhecer uma origem não significa dever satisfação pública a ninguém.",
+      "detalhe_cotidiano": "Uma pessoa só conhece sua avó não demoníaca; os vizinhos exigem genealogia do outro ramo.",
+      "pergunta_etica": "Quem pode exigir prova de ascendência e com qual finalidade?",
+      "estado": "proposta_nao_canonica",
+      "lei_confirmada": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxii:eixo:familias-plurais",
+      "nome_editorial": "O parentesco que não cabe em uma categoria",
+      "hipotese_social": "Uma casa com ascendências humanas, órquicas, feéricas e demoníacas não precisa escolher uma raça para ser considerada família.",
+      "detalhe_cotidiano": "Um sobrenome de origem mortal é tratado como menos autêntico que um chifre.",
+      "pergunta_etica": "Quem representa a família diante de costumes diferentes?",
+      "estado": "proposta_nao_canonica",
+      "lei_confirmada": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxii:eixo:infancia-e-tracos",
+      "nome_editorial": "Uma criança não é um presságio",
+      "hipotese_social": "Traços que reaparecem após gerações poderiam provocar medo, deslumbramento ou novas obrigações impostas ao bebê.",
+      "detalhe_cotidiano": "Um adulto deseja exibir publicamente os sinais de uma criança que não pode consentir.",
+      "pergunta_etica": "O interesse dos parentes na linhagem vale mais que a segurança da criança?",
+      "estado": "proposta_nao_canonica",
+      "lei_confirmada": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxii:eixo:nomes-e-identidade",
+      "nome_editorial": "O nome que a pessoa escolheu",
+      "hipotese_social": "Termos aplicados por estranhos e nomes herdados podem coexistir com a autoidentificação de cada pessoa.",
+      "detalhe_cotidiano": "Um vizinho insiste em chamar alguém de tiefling porque assim aprendeu noutro mundo.",
+      "pergunta_etica": "Quem pode determinar o nome social de um descendente?",
+      "estado": "proposta_nao_canonica",
+      "lei_confirmada": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxii:eixo:corpo-e-acessibilidade",
+      "nome_editorial": "A cidade não foi feita para esta cauda",
+      "hipotese_social": "Traços físicos diversos podem exigir adaptações de vestuário, mobiliário e ferramentas sem converter diferenças em deficiências universais.",
+      "detalhe_cotidiano": "Uma oficina só produz capacetes rígidos que não se ajustam aos chifres de um aprendiz.",
+      "pergunta_etica": "A adaptação é dever de quem usa, fabrica ou contrata?",
+      "estado": "proposta_nao_canonica",
+      "lei_confirmada": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxii:eixo:trabalho-e-estigma",
+      "nome_editorial": "O emprego antes do sobrenome",
+      "hipotese_social": "Habilidade profissional não deriva de herança demoníaca; preconceitos ou fetichização podem moldar acesso ao trabalho.",
+      "detalhe_cotidiano": "Um ferreiro é aceito apenas quando o patrão precisa de alguém supostamente resistente ao fogo.",
+      "pergunta_etica": "Quem responde quando um boato racial impede contratação?",
+      "estado": "proposta_nao_canonica",
+      "lei_confirmada": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxii:eixo:moradia-e-vizinhanca",
+      "nome_editorial": "Viver perto do Abismo sem servir ao Abismo",
+      "hipotese_social": "Assentamentos próximos ao Abismo podem possuir comunidades estáveis e interesses cotidianos, não apenas guerras e cultos.",
+      "detalhe_cotidiano": "Uma pessoa de outra região trata todo morador do entorno como sentinela de demônios.",
+      "pergunta_etica": "Como um povoado define pertencimento por convivência em vez de aparência?",
+      "estado": "proposta_nao_canonica",
+      "lei_confirmada": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxii:eixo:deslocamento-e-regresso",
+      "nome_editorial": "Ir embora não apaga uma origem",
+      "hipotese_social": "Migração, refúgio e retorno podem separar a comunidade de origem da identidade escolhida por alguém.",
+      "detalhe_cotidiano": "Uma viajante é recebida como estrangeira tanto fora quanto dentro da terra em que nasceu.",
+      "pergunta_etica": "Que laços continuam válidos depois de várias gerações de dispersão?",
+      "estado": "proposta_nao_canonica",
+      "lei_confirmada": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxii:eixo:religioes-e-ancestrais",
+      "nome_editorial": "Ancestral não é necessariamente divindade",
+      "hipotese_social": "O culto a demônios ancestrais pode coexistir com devoção a outros deuses, ausência de culto ou oposição espiritual.",
+      "detalhe_cotidiano": "Um templo acolhe fiéis de várias tradições, mas exige que o descendente renuncie ao nome de família.",
+      "pergunta_etica": "A fé pertence a cada pessoa ou é atribuída por seu sangue?",
+      "estado": "proposta_nao_canonica",
+      "lei_confirmada": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxii:eixo:direito-e-coercao",
+      "nome_editorial": "A dívida que ninguém assumiu",
+      "hipotese_social": "Um pacto de antepassado não demonstra contrato vigente com descendentes e não autoriza coerção de crianças.",
+      "detalhe_cotidiano": "Um estranho apresenta documento alegando que uma linhagem lhe deve serviço.",
+      "pergunta_etica": "Como demonstrar consentimento, duração e possibilidade de recusa?",
+      "estado": "proposta_nao_canonica",
+      "lei_confirmada": false,
+      "ocorreu": false
+    },
+    {
+      "id": "worldbuilding-xxii:eixo:arte-e-memoria",
+      "nome_editorial": "Retratos sem caricatura",
+      "hipotese_social": "A arte pode registrar traços, perdas e modos de vida variados sem transformar todo descendente em imagem infernal.",
+      "detalhe_cotidiano": "Um artista retrata uma família apenas pelas marcas demoníacas e apaga suas profissões.",
+      "pergunta_etica": "Quem controla como uma história familiar é representada?",
+      "estado": "proposta_nao_canonica",
+      "lei_confirmada": false,
+      "ocorreu": false
+    }
+  ],
+  "contextos_de_convivencia": [
+    {
+      "id": "worldbuilding-xxii:contexto:cidades-cosmopolitas",
+      "nome_editorial": "Cidades de muitos nomes",
+      "configuracao_hipotetica": "A convivência urbana pode fornecer anonimato e oportunidades, mas também burocracias que não compreendem nomes e aparências.",
+      "detalhe": "Uma pessoa é reconhecida por ofício e vizinhança, não por ascendência.",
+      "limite_de_inferencia": "Não nomear cidade específica, prefeito, censo ou bairro instituído.",
+      "comunidade_canonica_nova": false,
+      "geografia_exata": null,
+      "estado": "contexto_cultural_proposto"
+    },
+    {
+      "id": "worldbuilding-xxii:contexto:comunidades-refugiadas",
+      "nome_editorial": "Refúgios de origens misturadas",
+      "configuracao_hipotetica": "Uma comunidade de deslocados pode formar laços por perdas compartilhadas sem fazer da linhagem a única identidade.",
+      "detalhe": "Uma família discute se sua história é de fuga, escolha ou sobrevivência.",
+      "limite_de_inferencia": "Não localizar campos de refugiados ou atribuir composição étnica.",
+      "comunidade_canonica_nova": false,
+      "geografia_exata": null,
+      "estado": "contexto_cultural_proposto"
+    },
+    {
+      "id": "worldbuilding-xxii:contexto:assentamentos-do-abismo",
+      "nome_editorial": "Viver à sombra do limite",
+      "configuracao_hipotetica": "O convívio secular com traços demoníacos pode torná-los socialmente comuns enquanto a política local continua plural.",
+      "detalhe": "Uma criança com chifres é apenas mais uma criança que derrubou um jarro.",
+      "limite_de_inferencia": "Não inventar cidade, fronteira ou governo demoníaco.",
+      "comunidade_canonica_nova": false,
+      "geografia_exata": null,
+      "estado": "contexto_cultural_proposto"
+    },
+    {
+      "id": "worldbuilding-xxii:contexto:territorios-perifericos",
+      "nome_editorial": "A solidão de não ser exceção",
+      "configuracao_hipotetica": "Indivíduos isolados fora dos grandes núcleos podem enfrentar outra experiência de pertencimento.",
+      "detalhe": "Um viajante confunde o único descendente da aldeia com representante de um povo inteiro.",
+      "limite_de_inferencia": "Não pressupor perseguição ou apoio idênticos em todas regiões.",
+      "comunidade_canonica_nova": false,
+      "geografia_exata": null,
+      "estado": "contexto_cultural_proposto"
+    },
+    {
+      "id": "worldbuilding-xxii:contexto:familias-multiancestrais",
+      "nome_editorial": "Famílias não redutíveis ao sangue",
+      "configuracao_hipotetica": "Uma pessoa pode ser mais influenciada pela cultura de seus cuidadores que pela entidade distante da qual descende.",
+      "detalhe": "Uma jovem reproduz receitas de avós hobbits e desconhece símbolos abissais.",
+      "limite_de_inferencia": "Não estabelecer cidadania, classe, idioma ou profissão pela linhagem.",
+      "comunidade_canonica_nova": false,
+      "geografia_exata": null,
+      "estado": "contexto_cultural_proposto"
+    },
+    {
+      "id": "worldbuilding-xxii:contexto:linhagens-de-origem-obscura",
+      "nome_editorial": "O ancestral que ninguém sabe nomear",
+      "configuracao_hipotetica": "Quando a origem se perdeu, o desejo de investigar e o desejo de não investigar podem igualmente fazer sentido.",
+      "detalhe": "Uma marca reaparece, mas registros antigos não explicam sua genealogia.",
+      "limite_de_inferencia": "Não atribuir entidade demoníaca específica sem fonte.",
+      "comunidade_canonica_nova": false,
+      "geografia_exata": null,
+      "estado": "contexto_cultural_proposto"
+    }
+  ],
+  "circuitos_civis": [
+    {
+      "id": "worldbuilding-xxii:circuito:vestuario-adaptado",
+      "nome_editorial": "Tecidos que não transformam corpos em problemas",
+      "arranjo_possivel": "Uma oficina poderia adaptar roupas e armaduras a asas, caudas e cascos.",
+      "pergunta_social": "Como oferecer alternativas sem cobrar preço social por um corpo?",
+      "estado": "arranjo_material_hipotetico",
+      "instituicao_confirmada": false,
+      "volume_conhecido": null
+    },
+    {
+      "id": "worldbuilding-xxii:circuito:registro-de-familia",
+      "nome_editorial": "Memória escolhida, não extraída",
+      "arranjo_possivel": "Uma família poderia conservar genealogia privada, mesmo quando o mundo pede provas de origem.",
+      "pergunta_social": "Quem tem acesso à história quando uma criança não deseja divulgá-la?",
+      "estado": "arranjo_material_hipotetico",
+      "instituicao_confirmada": false,
+      "volume_conhecido": null
+    },
+    {
+      "id": "worldbuilding-xxii:circuito:cultivo-e-casa",
+      "nome_editorial": "Trabalho doméstico comum",
+      "arranjo_possivel": "Em comunidades abissais hipotéticas, agricultura, consertos, cuidado e abastecimento continuam tão importantes quanto defesa.",
+      "pergunta_social": "Por que a história oficial só registra incursões e não quem cozinha?",
+      "estado": "arranjo_material_hipotetico",
+      "instituicao_confirmada": false,
+      "volume_conhecido": null
+    },
+    {
+      "id": "worldbuilding-xxii:circuito:ensino-e-aprendizado",
+      "nome_editorial": "Aprender sem ser reduzido a magia",
+      "arranjo_possivel": "Uma pessoa poderia aprender ofício, poesia ou medicina apesar das expectativas de herdar poderes sobrenaturais.",
+      "pergunta_social": "Quem decide a vocação de uma criança com chifres?",
+      "estado": "arranjo_material_hipotetico",
+      "instituicao_confirmada": false,
+      "volume_conhecido": null
+    },
+    {
+      "id": "worldbuilding-xxii:circuito:hospedagem-e-transito",
+      "nome_editorial": "Um lugar para regressar",
+      "arranjo_possivel": "Redes familiares poderiam facilitar viagens de indivíduos estigmatizados, sem constituir organização secreta única.",
+      "pergunta_social": "Como hospedar sem pedir informações íntimas ou promessas de lealdade?",
+      "estado": "arranjo_material_hipotetico",
+      "instituicao_confirmada": false,
+      "volume_conhecido": null
+    },
+    {
+      "id": "worldbuilding-xxii:circuito:memoria-de-violencia",
+      "nome_editorial": "Preservar o testemunho sem repetir o dano",
+      "arranjo_possivel": "Famílias com origens marcadas por guerra podem escolher ritos de lembrança que não transformem descendentes em culpados.",
+      "pergunta_social": "Como nomear a violência histórica sem exigir confissão de quem nasceu depois?",
+      "estado": "arranjo_material_hipotetico",
+      "instituicao_confirmada": false,
+      "volume_conhecido": null
+    }
+  ],
+  "tensoes": [
+    {
+      "id": "worldbuilding-xxii:tensao:parentes-sem-divida",
+      "nome_editorial": "O pacto que não foi assinado",
+      "situacao_condicional": "Alguém reivindica obrigações de um herdeiro por um pacto ancestral.",
+      "questao_central": "Consentimento não é transmitido por aparência.",
+      "aconteceu": false,
+      "desfecho_aprovado": false,
+      "estado": "conflito_hipotetico"
+    },
+    {
+      "id": "worldbuilding-xxii:tensao:marcas-na-crianca",
+      "nome_editorial": "O corpo tornado profecia",
+      "situacao_condicional": "Uma marca ancestral reaparece numa criança e adultos projetam sobre ela o destino de uma família.",
+      "questao_central": "Proteção da criança não é prova de maldição.",
+      "aconteceu": false,
+      "desfecho_aprovado": false,
+      "estado": "conflito_hipotetico"
+    },
+    {
+      "id": "worldbuilding-xxii:tensao:ancestral-e-culto",
+      "nome_editorial": "Honrar não é obedecer",
+      "situacao_condicional": "Dois irmãos discordam sobre venerar uma entidade ancestral.",
+      "questao_central": "A fé de um parente não é contrato do outro.",
+      "aconteceu": false,
+      "desfecho_aprovado": false,
+      "estado": "conflito_hipotetico"
+    },
+    {
+      "id": "worldbuilding-xxii:tensao:prova-de-linhagem",
+      "nome_editorial": "Certidão de fogo",
+      "situacao_condicional": "Um contratante exige evidência de origem para decidir se aceita determinado trabalhador.",
+      "questao_central": "Um rumor biológico não é qualificação profissional.",
+      "aconteceu": false,
+      "desfecho_aprovado": false,
+      "estado": "conflito_hipotetico"
+    },
+    {
+      "id": "worldbuilding-xxii:tensao:reputacao-da-aldeia",
+      "nome_editorial": "A aldeia que não é culto",
+      "situacao_condicional": "Um povoado próximo ao Abismo deseja comércio, mas viajantes o tratam como fortaleza demoníaca.",
+      "questao_central": "Local de moradia não constitui lealdade.",
+      "aconteceu": false,
+      "desfecho_aprovado": false,
+      "estado": "conflito_hipotetico"
+    },
+    {
+      "id": "worldbuilding-xxii:tensao:aparencia-e-poder",
+      "nome_editorial": "A coroa dos chifres",
+      "situacao_condicional": "Uma pessoa é celebrada como líder só porque seus sinais físicos são impressionantes.",
+      "questao_central": "Traço visível não comprova ascendência próxima nem poder.",
+      "aconteceu": false,
+      "desfecho_aprovado": false,
+      "estado": "conflito_hipotetico"
+    }
+  ],
+  "costumes_candidatos": [
+    {
+      "id": "worldbuilding-xxii:costume:mesa-das-familias",
+      "nome_editorial": "Uma mesa para ramos distintos",
+      "pratica_possivel": "Uma refeição possível em que se contam histórias de muitos lados da família, sem determinar qual ancestral é mais verdadeiro.",
+      "risco_social": "Pode perpetuar a versão de quem tem mais influência.",
+      "ritual_confirmado": false,
+      "aconteceu": false,
+      "estado": "costume_candidato_nao_adotado"
+    },
+    {
+      "id": "worldbuilding-xxii:costume:nome-escolhido",
+      "nome_editorial": "O dia de dizer o próprio nome",
+      "pratica_possivel": "Um gesto familiar possível de reconhecer a autoidentificação, sem festa obrigatória nem rito mágico.",
+      "risco_social": "Pode pressionar alguém a revelar detalhes de sua origem.",
+      "ritual_confirmado": false,
+      "aconteceu": false,
+      "estado": "costume_candidato_nao_adotado"
+    },
+    {
+      "id": "worldbuilding-xxii:costume:cuidado-das-marcas",
+      "nome_editorial": "Cuidar do corpo sem profetizar",
+      "pratica_possivel": "Um costume possível de ajudar crianças e adultos a lidar com alterações corporais, roupas e adaptações.",
+      "risco_social": "Pode transformar um cuidado em espetáculo ou exame.",
+      "ritual_confirmado": false,
+      "aconteceu": false,
+      "estado": "costume_candidato_nao_adotado"
+    },
+    {
+      "id": "worldbuilding-xxii:costume:memoria-sem-cobrar",
+      "nome_editorial": "Lembrar sem herdar culpa",
+      "pratica_possivel": "Uma cerimônia doméstica possível de lembrar vítimas de invasões e experiências de violência sem responsabilizar descendentes.",
+      "risco_social": "Pode impor uma narrativa única a sobreviventes com memórias diferentes.",
+      "ritual_confirmado": false,
+      "aconteceu": false,
+      "estado": "costume_candidato_nao_adotado"
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "worldbuilding-xxii:vinheta:capacete-e-chifres",
+      "nome_editorial": "Um capacete para trabalhar",
+      "cena_condicional": "Uma pessoa chega à oficina; o capacete fornecido não serve por causa de seus chifres. A conversa passa do corpo para a qualidade do equipamento.",
+      "tema": "A solução não é provar que o trabalhador é excepcional, mas oferecer ferramenta adequada.",
+      "ocorreu": false,
+      "npc_canonico_criado": false,
+      "estado": "ficcao_experimental"
+    },
+    {
+      "id": "worldbuilding-xxii:vinheta:album-sem-nome",
+      "nome_editorial": "O álbum incompleto",
+      "cena_condicional": "Uma avó conserva retratos e recusa inventar a identidade do ancestral demoníaco que desapareceu das histórias.",
+      "tema": "Não preencher genealogias desconhecidas pode ser forma de respeito.",
+      "ocorreu": false,
+      "npc_canonico_criado": false,
+      "estado": "ficcao_experimental"
+    },
+    {
+      "id": "worldbuilding-xxii:vinheta:a-mercearia",
+      "nome_editorial": "A mercearia perto do Abismo",
+      "cena_condicional": "Uma comerciante de um povoado próximo ao Abismo discute preços de farinha com um viajante obcecado por perguntar sobre demônios.",
+      "tema": "A vida cotidiana pode resistir a ser convertida em ameaça ou exotismo.",
+      "ocorreu": false,
+      "npc_canonico_criado": false,
+      "estado": "ficcao_experimental"
+    },
+    {
+      "id": "worldbuilding-xxii:vinheta:filhos-de-escolhas",
+      "nome_editorial": "Filhos de decisões diferentes",
+      "cena_condicional": "Duas pessoas da mesma linhagem escolhem relações religiosas contrárias e mantêm afeto familiar.",
+      "tema": "A ancestralidade pode ser compartilhada sem projeto político ou fé comum.",
+      "ocorreu": false,
+      "npc_canonico_criado": false,
+      "estado": "ficcao_experimental"
+    }
+  ],
+  "perguntas_para_autor": [
+    {
+      "id": "worldbuilding-xxii:pergunta:geografia",
+      "pergunta_autoral": "Onde há comunidades específicas de meio-demônios, e quais referências geográficas documentam isso?",
+      "estado": "pendente",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxii:pergunta:parentesco",
+      "pergunta_autoral": "Como a multiplicidade de linhagens convive com regras de adoção, tutela e herança de diferentes povos?",
+      "estado": "pendente",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxii:pergunta:identidade",
+      "pergunta_autoral": "Qual terminologia os próprios descendentes usam em cada região, em contraste com rótulos externos?",
+      "estado": "pendente",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxii:pergunta:pacto",
+      "pergunta_autoral": "Quando um pacto demoníaco pode vincular terceiros, e que provas seriam necessárias?",
+      "estado": "pendente",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxii:pergunta:religiao",
+      "pergunta_autoral": "Quais religiões e tradições familiares existem além do culto a ancestrais, sem postular culto racial?",
+      "estado": "pendente",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxii:pergunta:memoria",
+      "pergunta_autoral": "Como se preserva a memória de origens violentas sem impor culpa a descendentes?",
+      "estado": "pendente",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxii:pergunta:economia",
+      "pergunta_autoral": "Que ofícios e redes civis predominam em comunidades próximas do Abismo?",
+      "estado": "pendente",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxii:pergunta:corpo",
+      "pergunta_autoral": "Como cada comunidade atende necessidades físicas diferentes sem classificá-las como sinais de poder?",
+      "estado": "pendente",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxii:pergunta:politica",
+      "pergunta_autoral": "Como enfrentar discriminação sem criar uma nação única ou frente política universal de meio-demônios?",
+      "estado": "pendente",
+      "resposta_aprovada": null
+    }
+  ]
+}
