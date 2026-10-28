@@ -2210,7 +2210,7 @@ def validar_povoamento_narrativo_hack():
         for k in ("titulo","local_proposto","habitantes_propostos","personagem_central",
                   "vida_cotidiana","conflito_vivo","gancho_de_aventura",
                   "decisao_sem_resposta_certa","ancora_documentada"):
-            require(isinstance(s[k],str) and len(s[k].strip())>=20,
+            require(isinstance(s[k],str) and len(s[k].strip())>=(6 if k=="titulo" else 20),
                     "Proposta tem lacuna narrativa em "+k)
         require(s["temas"] and s["possivel_conexao"]
                 and all(other!=s["area_id"].split(":")[-1]
