@@ -1,0 +1,885 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Garganta e Rio Ancestral — Povoamento sob Ocupação",
+  "estado": "propostas_narrativas_nao_canonicas",
+  "escopos": [
+    "area-proposta:garganta",
+    "area-proposta:rio"
+  ],
+  "fatos_documentados": [
+    "Garganta é cidade-fortaleza sobre crânio de Golzdov, atualmente ocupada por Lord Varys Duskveil; o Templo de Yolskaariin foi corrompido.",
+    "Dunhaven é cidade mineira fortificada com escavações ligadas à Casa Uln-Shayr; Harlowe é assentamento próximo da Biblioteca dos Ossos.",
+    "Garganta foi cidade-estado livre em 211 EC; humanos de Garganta e orcs da Caatinga venceram os kuo-toa em 351 EC após invasão de 342 EC.",
+    "A Confederação dos Ossos foi fundada em 358 EC e destruída em 875 EC.",
+    "Garganta e cabeça submersa de Golzdov abrigam vestígios yokai, inscrições em osso e legado de magia das palavras; o povo antigo partiu, não foi simplesmente exterminado.",
+    "Rio Ancestral é eixo de circulação, extração, postos militares e tributo colonial; Drakport é escravagista, sob Lady Morwen Nightshade.",
+    "O Templo da Lua em ilha fluvial tem ritos controlados por Severina Shadowbloom; o Rio Ancestral termina no Abismo no oeste.",
+    "Marxinus, Maire, Jorvan e Kaelen Branth são nomes canônicos do arco de Trelohim; sua participação atual em novos acontecimentos não foi confirmada."
+  ],
+  "fontes": [
+    "Ambientação - A Carcaça - Visão Geral.txt",
+    "Apêndice I - Trelohim, Uln-Shayr, Yokai, Kuo-Toa.txt",
+    "Hack Carcaça Dungeon World(1).docx",
+    "data/lore/hack-carcaca-dw-movimentos-povos-integrais.json",
+    "data/propostas/povoamento-regional-hack-carcaca.json"
+  ],
+  "contagens": {
+    "lugares": 6,
+    "oficios": 5,
+    "pessoas": 9,
+    "circuitos": 5,
+    "memorias": 5,
+    "acordos": 4,
+    "cenas": 6,
+    "arcos": 3
+  },
+  "lugares": [
+    {
+      "id": "rio-garganta:lugar:portas",
+      "nome": "Portas de Nome Raspado",
+      "vida": "Escreventes conferem autorizações de circulação na Garganta ocupada.",
+      "conflito": "Um trabalhador passa a constar como propriedade em vez de cidadão.",
+      "vinculos": [
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "area": "area-proposta:garganta",
+      "ancora": "Garganta, governada por Lord Varys Duskveil",
+      "local_confirmado": false
+    },
+    {
+      "id": "rio-garganta:lugar:turno",
+      "nome": "Turno das Lanternas de Dunhaven",
+      "vida": "Mineiros discutem pausas e tratamento de achados nas escavações.",
+      "conflito": "Uma inscrição em osso é reclamada pela Casa Uln-Shayr antes de ser compreendida.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-845",
+        "movimento-povo:paragrafo-1000"
+      ],
+      "estado": "proposta_nao_canonica",
+      "area": "area-proposta:garganta",
+      "ancora": "Dunhaven, mina fortificada e centro de escavação",
+      "local_confirmado": false
+    },
+    {
+      "id": "rio-garganta:lugar:estalagem",
+      "nome": "Mesa dos Viajantes de Harlowe",
+      "vida": "Moradores e hóspedes trocam relatos sem abrir a localização de arquivos antigos.",
+      "conflito": "O paradeiro da Biblioteca dos Ossos é oferecido em troca de proteção.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-992"
+      ],
+      "estado": "proposta_nao_canonica",
+      "area": "area-proposta:garganta",
+      "ancora": "Harlowe e proximidade da Biblioteca dos Ossos",
+      "local_confirmado": false
+    },
+    {
+      "id": "rio-garganta:lugar:cinzas",
+      "nome": "Vigília das Cinzas de Yolskaariin",
+      "vida": "Devotos lembram o antigo templo solar, sem fundar outro culto oficial.",
+      "conflito": "Um falso portador de relíquia solicita que fiéis se exponham à ocupação.",
+      "vinculos": [
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-830",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "area": "area-proposta:garganta",
+      "ancora": "Templo corrompido de Yolskaariin",
+      "local_confirmado": false
+    },
+    {
+      "id": "rio-garganta:lugar:balsa",
+      "nome": "Espera dos Nomes Descartados",
+      "vida": "Viajantes cotejam papéis antes de uma passagem fluvial apenas hipotética.",
+      "conflito": "Uma lista de Drakport aponta alguém como carga, sem comprovação do documento.",
+      "vinculos": [
+        "povoamento-proposto:balsa-dos-nomes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "area": "area-proposta:rio",
+      "ancora": "Rio Ancestral e Drakport, sem balsa localizada",
+      "local_confirmado": false
+    },
+    {
+      "id": "rio-garganta:lugar:lua",
+      "nome": "Margem do Reflexo Torto",
+      "vida": "Testemunhas observam mudanças nas águas do Rio Ancestral sem entrar no Templo da Lua.",
+      "conflito": "Uma autoridade invoca Severina para transformar um fenômeno incerto em direito de cobrança.",
+      "vinculos": [
+        "povoamento-proposto:patio-do-soldo"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-992"
+      ],
+      "estado": "proposta_nao_canonica",
+      "area": "area-proposta:rio",
+      "ancora": "Templo da Lua na ilha fluvial, sob Severina Shadowbloom",
+      "local_confirmado": false
+    }
+  ],
+  "oficios": [
+    {
+      "id": "rio-garganta:oficio:escrita",
+      "nome": "Intérpretes de Portas",
+      "vida": "Pessoas poderiam explicar registros e permissões coloniais a viajantes.",
+      "conflito": "A documentação útil também revela a quem a Corte deseja capturar.",
+      "vinculos": [
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "burocracia",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "rio-garganta:oficio:escava",
+      "nome": "Escavadores de Memórias",
+      "vida": "Mineiros poderiam distinguir mineral de vestígio sagrado.",
+      "conflito": "A ordem de extração compete com a preservação de inscrições yokai.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-845",
+        "movimento-povo:paragrafo-1000"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "minas",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "rio-garganta:oficio:soldo",
+      "nome": "Conferentes de Soldo",
+      "vida": "Trabalhadores poderiam conferir serviços prestados contra dívidas impostas.",
+      "conflito": "O regime pretende registrar salário devido como obrigação de trabalho.",
+      "vinculos": [
+        "povoamento-proposto:patio-do-soldo"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "trabalho",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "rio-garganta:oficio:vozes",
+      "nome": "Copistas de Ecos",
+      "vida": "Estudiosos poderiam preservar relatos sem afirmar que decifram magia yokai.",
+      "conflito": "Símbolos sem tradução viram mercadorias anunciadas como prodígios.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-992",
+        "movimento-povo:paragrafo-999",
+        "movimento-povo:paragrafo-1000"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "pesquisa",
+      "instituicao_confirmada": false
+    },
+    {
+      "id": "rio-garganta:oficio:abrigo",
+      "nome": "Hospedeiros da Passagem",
+      "vida": "Famílias poderiam acolher viajantes sob vigilância com recursos limitados.",
+      "conflito": "Acolher alguém perseguido pode expor todos os hóspedes.",
+      "vinculos": [
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "setor": "hospitalidade",
+      "instituicao_confirmada": false
+    }
+  ],
+  "pessoas": [
+    {
+      "id": "rio-garganta:pessoa:marxinus",
+      "nome": "Marxinus",
+      "vida": "Intelectual humano do arco de Trelohim, une espiritualidade e organização material.",
+      "conflito": "Organizar trabalhadores sob ocupação pode precipitar riscos para famílias ainda despreparadas.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagem_canonico": true,
+      "local_atual_confirmado": false
+    },
+    {
+      "id": "rio-garganta:pessoa:maire",
+      "nome": "Maire",
+      "vida": "Clériga exilada que exige freios éticos aos poderes de Trelohim.",
+      "conflito": "Um achado arcano pode repetir uma violência sob pretexto de libertação.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-830",
+        "movimento-povo:paragrafo-999"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagem_canonico": true,
+      "local_atual_confirmado": false
+    },
+    {
+      "id": "rio-garganta:pessoa:jorvan",
+      "nome": "Jorvan",
+      "vida": "Sapateiro-mercador do arco de Trelohim, conhece deslocamentos e coberturas sociais.",
+      "conflito": "Uma rota que proteja alguém pode expor quem fornece abrigo.",
+      "vinculos": [
+        "povoamento-proposto:balsa-dos-nomes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagem_canonico": true,
+      "local_atual_confirmado": false
+    },
+    {
+      "id": "rio-garganta:pessoa:kaelen",
+      "nome": "Kaelen Branth",
+      "vida": "Estalajadeiro de Harlowe e ex-soldado ligado ao arco de Trelohim.",
+      "conflito": "Uma hospedagem pode ser confundida com colaboração com insurgentes.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagem_canonico": true,
+      "local_atual_confirmado": false
+    },
+    {
+      "id": "rio-garganta:pessoa:vessa",
+      "nome": "Vessa do Cadastro Vazio",
+      "vida": "Escrevente humana proposta que conserva nomes apagados de listas oficiais.",
+      "conflito": "Um superior exige substituir a identidade de um trabalhador por uma dívida.",
+      "vinculos": [
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagem_canonico": false,
+      "local_atual_confirmado": false
+    },
+    {
+      "id": "rio-garganta:pessoa:rugha",
+      "nome": "Rugha das Nove Testemunhas",
+      "vida": "Orc proposta que carrega uma memória familiar da aliança de 351 EC.",
+      "conflito": "Humanos elogiam os aliados do passado, mas recusam ajudar seus descendentes.",
+      "vinculos": [
+        "povoamento-proposto:balsa-dos-nomes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagem_canonico": false,
+      "local_atual_confirmado": false
+    },
+    {
+      "id": "rio-garganta:pessoa:eldan",
+      "nome": "Eldan das Pedras Abertas",
+      "vida": "Escavador proposto de Dunhaven interessado em trabalho digno e vestígios antigos.",
+      "conflito": "Uma inscrição pode justificar interromper a extração, provocando punições.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-1000"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagem_canonico": false,
+      "local_atual_confirmado": false
+    },
+    {
+      "id": "rio-garganta:pessoa:nira",
+      "nome": "Nira dos Saldos Pendentes",
+      "vida": "Trabalhadora fluvial proposta que coteja pagamento e obrigação.",
+      "conflito": "Seus registros podem identificar famílias que reclamaram do regime.",
+      "vinculos": [
+        "povoamento-proposto:patio-do-soldo"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagem_canonico": false,
+      "local_atual_confirmado": false
+    },
+    {
+      "id": "rio-garganta:pessoa:tavor",
+      "nome": "Tavor dos Dois Reflexos",
+      "vida": "Barqueiro hipotético que observa as mudanças das correntes.",
+      "conflito": "Uma patrulha quer que endosse como milagre algo que não compreende.",
+      "vinculos": [
+        "povoamento-proposto:balsa-dos-nomes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-992"
+      ],
+      "estado": "proposta_nao_canonica",
+      "personagem_canonico": false,
+      "local_atual_confirmado": false
+    }
+  ],
+  "circuitos": [
+    {
+      "id": "rio-garganta:circuito:minas",
+      "nome": "Minério e Permissões",
+      "vida": "Cadeia possível de exigências entre escavações e administração da Garganta.",
+      "conflito": "O salário de mineiros pode ser convertido em dívida compulsória.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras",
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "area": "area-proposta:garganta",
+      "origem": "rio-garganta:lugar:turno",
+      "destino": "rio-garganta:lugar:portas",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "rio-garganta:circuito:ossos",
+      "nome": "Vestígios que Não São Carga",
+      "vida": "Circulação hipotética de relatos de inscrições entre Harlowe e escavações.",
+      "conflito": "Publicar detalhes da Biblioteca dos Ossos pode favorecer saque colonial.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-992",
+        "movimento-povo:paragrafo-1000"
+      ],
+      "estado": "proposta_nao_canonica",
+      "area": "area-proposta:garganta",
+      "origem": "rio-garganta:lugar:estalagem",
+      "destino": "rio-garganta:lugar:turno",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "rio-garganta:circuito:barcas",
+      "nome": "Travessia sem Identidade Segura",
+      "vida": "Passagens fluviais propostas com comparação de documentos e relatos.",
+      "conflito": "Um viajante sem papéis pode ser classificado como propriedade.",
+      "vinculos": [
+        "povoamento-proposto:balsa-dos-nomes",
+        "povoamento-proposto:patio-do-soldo"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "area": "area-proposta:rio",
+      "origem": "rio-garganta:lugar:balsa",
+      "destino": "rio-garganta:lugar:lua",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "rio-garganta:circuito:soldo",
+      "nome": "O Soldo que Some",
+      "vida": "Circulação hipotética de reivindicações trabalhistas ao longo do eixo colonial.",
+      "conflito": "Uma planilha de dívidas pode encobrir cativeiro em Drakport.",
+      "vinculos": [
+        "povoamento-proposto:patio-do-soldo"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "area": "area-proposta:rio",
+      "origem": "rio-garganta:lugar:lua",
+      "destino": "rio-garganta:lugar:balsa",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    },
+    {
+      "id": "rio-garganta:circuito:alianca",
+      "nome": "Ecos dos Aliados Antigos",
+      "vida": "Relatos humanos e orcs poderiam circular entre Garganta e as margens do rio.",
+      "conflito": "A história de aliança é usada para exigir submissão de descendentes.",
+      "vinculos": [
+        "povoamento-proposto:balsa-dos-nomes",
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta_nao_canonica",
+      "area": "area-proposta:garganta",
+      "origem": "rio-garganta:lugar:portas",
+      "destino": "rio-garganta:lugar:balsa",
+      "efetivado": false,
+      "quantidade_confirmada": false
+    }
+  ],
+  "memorias": [
+    {
+      "id": "rio-garganta:memoria:211",
+      "nome": "Garganta Livre, 211 EC",
+      "vida": "Fundação histórica da cidade-estado livre.",
+      "conflito": "A memória de liberdade passada pode ser usada para disfarçar sua ocupação atual.",
+      "vinculos": [
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ano_ec": 211,
+      "fato_historico_documentado": true,
+      "episodio_novo_confirmado": false
+    },
+    {
+      "id": "rio-garganta:memoria:351",
+      "nome": "A Vitória Compartilhada, 351 EC",
+      "vida": "Aliança humana-orc derrota invasores kuo-toa após guerra iniciada em 342 EC.",
+      "conflito": "Memoriais podem atribuir a vitória exclusivamente a uma das partes.",
+      "vinculos": [
+        "povoamento-proposto:balsa-dos-nomes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ano_ec": 351,
+      "fato_historico_documentado": true,
+      "episodio_novo_confirmado": false
+    },
+    {
+      "id": "rio-garganta:memoria:358",
+      "nome": "Confederação dos Ossos, 358 EC",
+      "vida": "Confederação de reinos menores em torno de Garganta.",
+      "conflito": "Um líder atual pode reivindicar poderes que os ancestrais não lhe delegaram.",
+      "vinculos": [
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ano_ec": 358,
+      "fato_historico_documentado": true,
+      "episodio_novo_confirmado": false
+    },
+    {
+      "id": "rio-garganta:memoria:875",
+      "nome": "A Confederação Destruída, 875 EC",
+      "vida": "Destruição da Confederação durante invasões shadow fey.",
+      "conflito": "O regime apresenta conquista como consenso histórico.",
+      "vinculos": [
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ano_ec": 875,
+      "fato_historico_documentado": true,
+      "episodio_novo_confirmado": false
+    },
+    {
+      "id": "rio-garganta:memoria:yokai",
+      "nome": "As Palavras no Osso",
+      "vida": "Vestígios yokai e magia das palavras na cabeça submersa de Golzdov.",
+      "conflito": "Possuir materialmente o achado não equivale a entender ou deter direito de nomeação.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-992",
+        "movimento-povo:paragrafo-1000"
+      ],
+      "estado": "proposta_nao_canonica",
+      "ano_ec": null,
+      "fato_historico_documentado": true,
+      "episodio_novo_confirmado": false
+    }
+  ],
+  "acordos": [
+    {
+      "id": "rio-garganta:acordo:nome",
+      "nome": "O Nome não é Mercadoria",
+      "vida": "Testemunhas poderiam proteger identidade civil contra sua conversão em dívida.",
+      "conflito": "Publicizar a lista pode ajudar o regime a localizar quem deve ser protegido.",
+      "vinculos": [
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "rio-garganta:pessoa:vessa",
+        "rio-garganta:pessoa:nira"
+      ],
+      "vigente": false,
+      "custo": "Trabalho documental e riscos aos testemunhos."
+    },
+    {
+      "id": "rio-garganta:acordo:achado",
+      "nome": "O Achado Tem Testemunhas",
+      "vida": "Escavadores poderiam documentar vestígios sem pronunciá-los ou vendê-los.",
+      "conflito": "Preservação de um objeto pode provocar sanção colonial.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-992",
+        "movimento-povo:paragrafo-1000"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "rio-garganta:pessoa:eldan",
+        "rio-garganta:pessoa:vessa"
+      ],
+      "vigente": false,
+      "custo": "Suspensão do trabalho e proteção de pesquisadores."
+    },
+    {
+      "id": "rio-garganta:acordo:rio",
+      "nome": "Soldo não é Tributo",
+      "vida": "Trabalhadores poderiam distinguir remuneração de dívida compulsória.",
+      "conflito": "Reclamar pagamento pode expor famílias ao aparato colonial.",
+      "vinculos": [
+        "povoamento-proposto:patio-do-soldo"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "rio-garganta:pessoa:nira",
+        "rio-garganta:pessoa:tavor"
+      ],
+      "vigente": false,
+      "custo": "Testemunhas e risco de retaliação."
+    },
+    {
+      "id": "rio-garganta:acordo:aliados",
+      "nome": "Lembrar sem Herdar Culpa",
+      "vida": "Humanos e orcs poderiam compartilhar histórias sem cobrar lealdade de descendentes.",
+      "conflito": "O processo pode reacender conflitos se uma versão for usada para acusar inocentes.",
+      "vinculos": [
+        "povoamento-proposto:balsa-dos-nomes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta_nao_canonica",
+      "proponentes": [
+        "rio-garganta:pessoa:rugha",
+        "rio-garganta:pessoa:vessa"
+      ],
+      "vigente": false,
+      "custo": "Escutar relatos contraditórios sem punição coletiva."
+    }
+  ],
+  "cenas": [
+    {
+      "id": "rio-garganta:cena:porta",
+      "nome": "A Porta sem Nome",
+      "vida": "Vessa recebe ordem para apagar uma identidade de trabalhador.",
+      "conflito": "Recusar pode expor a família; obedecer facilita cativeiro.",
+      "vinculos": [
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "rio-garganta:lugar:portas",
+      "elenco": [
+        "rio-garganta:pessoa:vessa",
+        "rio-garganta:pessoa:nira"
+      ],
+      "escolhas": [
+        "Conferir registros",
+        "Proteger família",
+        "Buscar testemunhas"
+      ],
+      "consequencia_condicional": "Uma pessoa pode perder toda prova de identidade se nada mudar."
+    },
+    {
+      "id": "rio-garganta:cena:osso",
+      "nome": "O Osso Não Lido",
+      "vida": "Eldan acha fragmento com sinal yokai que ninguém comprovou ser magia ativável.",
+      "conflito": "Casa Uln-Shayr deseja posse e alguém quer pronunciar símbolos não decifrados.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-992",
+        "movimento-povo:paragrafo-1000"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "rio-garganta:lugar:turno",
+      "elenco": [
+        "rio-garganta:pessoa:eldan",
+        "rio-garganta:pessoa:vessa"
+      ],
+      "escolhas": [
+        "Documentar sem ativar",
+        "Contestar posse",
+        "Proteger testemunhas"
+      ],
+      "consequencia_condicional": "O achado pode levar a repressão ou acidente apenas conforme evolução em mesa."
+    },
+    {
+      "id": "rio-garganta:cena:harlowe",
+      "nome": "Hóspede que Kaelen Não Conhecia",
+      "vida": "Em cena condicional, Kaelen acolhe viajante perseguido sem confirmar acusação.",
+      "conflito": "A ocupação considera hospitalidade prova de conspiração.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-832"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "rio-garganta:lugar:estalagem",
+      "elenco": [
+        "rio-garganta:pessoa:kaelen",
+        "rio-garganta:pessoa:eldan"
+      ],
+      "escolhas": [
+        "Verificar relatos",
+        "Acolher dentro dos meios",
+        "Buscar mediação"
+      ],
+      "consequencia_condicional": "A estalagem pode ser ameaçada sem prova de qualquer crime."
+    },
+    {
+      "id": "rio-garganta:cena:soldo",
+      "nome": "O Soldo que Virou Pessoa",
+      "vida": "Nira encontra número de transporte no lugar de salário devido.",
+      "conflito": "Documento pode representar cativeiro em Drakport ou falsificação.",
+      "vinculos": [
+        "povoamento-proposto:patio-do-soldo"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "rio-garganta:lugar:balsa",
+      "elenco": [
+        "rio-garganta:pessoa:nira",
+        "rio-garganta:pessoa:tavor"
+      ],
+      "escolhas": [
+        "Verificar origem",
+        "Proteger nomes",
+        "Ouvir testemunhas"
+      ],
+      "consequencia_condicional": "Uma declaração precipitada pode entregar inocentes a seus perseguidores."
+    },
+    {
+      "id": "rio-garganta:cena:guerra",
+      "nome": "Quem Venceu a Guerra de Nove Anos?",
+      "vida": "Rugha compara memória orc e narrativa humana da aliança de 351 EC.",
+      "conflito": "Memorial proposto glorifica Garganta e apaga os aliados orcs.",
+      "vinculos": [
+        "povoamento-proposto:balsa-dos-nomes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "rio-garganta:lugar:balsa",
+      "elenco": [
+        "rio-garganta:pessoa:rugha",
+        "rio-garganta:pessoa:vessa"
+      ],
+      "escolhas": [
+        "Reunir versões",
+        "Reconhecer aliados",
+        "Contestar exclusão"
+      ],
+      "consequencia_condicional": "A memória política pode dividir descendentes dos antigos aliados."
+    },
+    {
+      "id": "rio-garganta:cena:lua",
+      "nome": "O Reflexo que não Era Testemunho",
+      "vida": "Tavor nota alteração fluvial cuja causa permanece desconhecida.",
+      "conflito": "Um oficial quer atribuir o fenômeno ao Templo da Lua para justificar tributo.",
+      "vinculos": [
+        "povoamento-proposto:patio-do-soldo"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-832",
+        "movimento-povo:paragrafo-992"
+      ],
+      "estado": "proposta_nao_canonica",
+      "local_id": "rio-garganta:lugar:lua",
+      "elenco": [
+        "rio-garganta:pessoa:tavor",
+        "rio-garganta:pessoa:nira"
+      ],
+      "escolhas": [
+        "Registrar observação",
+        "Recusar afirmação sem prova",
+        "Preparar resposta proporcional"
+      ],
+      "consequencia_condicional": "Uma interpretação falsa pode legitimar mais controle da passagem."
+    }
+  ],
+  "arcos": [
+    {
+      "id": "rio-garganta:arco:nomes",
+      "nome": "Nomes Que a Corte Apagou",
+      "vida": "Documentos de trabalho transformam pessoas em números e dívidas.",
+      "conflito": "Salvar registros também pode expor seus donos.",
+      "vinculos": [
+        "povoamento-proposto:cartorio-das-portas-raspadas"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-827",
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-954"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "rio-garganta:cena:porta",
+        "rio-garganta:cena:soldo"
+      ]
+    },
+    {
+      "id": "rio-garganta:arco:osso",
+      "nome": "O Osso que Não Pertence ao Lorde",
+      "vida": "Escavações revelam inscrições yokai sob controle de forças coloniais.",
+      "conflito": "Poder material sobre a peça não prova direito de interpretar seu significado.",
+      "vinculos": [
+        "povoamento-proposto:turno-das-escavadoras"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-992",
+        "movimento-povo:paragrafo-1000"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "rio-garganta:cena:osso",
+        "rio-garganta:cena:harlowe"
+      ]
+    },
+    {
+      "id": "rio-garganta:arco:alianca",
+      "nome": "Os Ossos que Já Foram Aliados",
+      "vida": "Memórias da guerra e da Confederação disputam o presente ocupado.",
+      "conflito": "Invocar antigos heróis pode unir famílias ou impor lealdade não consentida.",
+      "vinculos": [
+        "povoamento-proposto:balsa-dos-nomes"
+      ],
+      "movimentos_inspiradores": [
+        "movimento-povo:paragrafo-828",
+        "movimento-povo:paragrafo-835",
+        "movimento-povo:paragrafo-842"
+      ],
+      "estado": "proposta_nao_canonica",
+      "cenas": [
+        "rio-garganta:cena:guerra",
+        "rio-garganta:cena:lua"
+      ]
+    }
+  ],
+  "limites": [
+    "Não apresentar Garganta como cidade livre hoje nem declarar Drakport libertada.",
+    "Usar area-proposta pois as áreas de Garganta e eixo médio do rio não estão individualizadas na taxonomia geográfica da distribuição atual.",
+    "Os seis lugares são microespaços propostos sem coordenadas nem estruturas canônicas adicionais.",
+    "Não inventar serviço fluvial confirmado, itinerário navegável contínuo até o Abismo, volumes ou comércio particular.",
+    "Cada circuito tem efetivado:false; cada acordo tem vigente:false.",
+    "Inscrições yokai são fato cultural, mas este ciclo não comprova eficácia arcana de um fragmento recém-achado.",
+    "Quatro pessoas são nomes canônicos do Apêndice I, porém participações nas novas cenas são condicionais.",
+    "Movimentos do Hack inspiram repertório social e não atribuem capacidades mecânicas automaticamente.",
+    "Nenhuma cena nova altera a cronologia de Trelohim nem a ocupação shadow fey."
+  ],
+  "aprovacao_autoral": false,
+  "efeito_automatico_no_canon": false
+}
