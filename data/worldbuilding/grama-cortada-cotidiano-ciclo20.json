@@ -1,0 +1,724 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XX — Grama-Cortada: economia, memória e vida cotidiana",
+  "estado": "worldbuilding_exploratorio_sem_canonizacao",
+  "aprovacao_autoral": false,
+  "aplicar_ao_canon_automaticamente": false,
+  "territorio": "Condado de Grama-Cortada",
+  "grupo_cultural": "Hobbits / Halflings",
+  "referencia_id_regiao": null,
+  "referencia_id_lugar": null,
+  "lat_long_confirmados": null,
+  "populacao_confirmada": null,
+  "fonte_manuscrito": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "protagonista_cultural_documentado": "Menelau Folha-Seca",
+  "politica_editorial": "Desenvolver a vida cultural e material do Condado por si mesma; não reduzi-la ao conflito da Corte ou homologar festividades, costumes e leis especulativos.",
+  "fatos_documentados": [
+    {
+      "id": "worldbuilding-xx:fato:01",
+      "pagina_manuscrito": 18,
+      "afirmacao_de_fonte": "O povo hobbit é chamado de halfling por muitos estrangeiros, e Grama-Cortada aparece como Condado.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    },
+    {
+      "id": "worldbuilding-xx:fato:02",
+      "pagina_manuscrito": 18,
+      "afirmacao_de_fonte": "Menelau Folha-Seca é citado como bardo autoproclamado de Grama-Cortada; o texto menciona seus 95 centímetros.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    },
+    {
+      "id": "worldbuilding-xx:fato:03",
+      "pagina_manuscrito": 18,
+      "afirmacao_de_fonte": "O território é descrito por vilas, campos, bosques, propriedades familiares e estradas locais.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    },
+    {
+      "id": "worldbuilding-xx:fato:04",
+      "pagina_manuscrito": 18,
+      "afirmacao_de_fonte": "Famílias e vizinhança são centrais e casas e terras tendem a manter associações com linhagens por gerações.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    },
+    {
+      "id": "worldbuilding-xx:fato:05",
+      "pagina_manuscrito": 18,
+      "afirmacao_de_fonte": "O Condado não é um reino centralizado; não possui dinastia grande, castelos dominantes ou exército permanente.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    },
+    {
+      "id": "worldbuilding-xx:fato:06",
+      "pagina_manuscrito": 18,
+      "afirmacao_de_fonte": "Anciãos, famílias e pessoas respeitadas podem influenciar sem títulos formais.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    },
+    {
+      "id": "worldbuilding-xx:fato:07",
+      "pagina_manuscrito": 19,
+      "afirmacao_de_fonte": "Questões locais são resolvidas localmente; questões maiores exigem conversa entre comunidades.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    },
+    {
+      "id": "worldbuilding-xx:fato:08",
+      "pagina_manuscrito": 19,
+      "afirmacao_de_fonte": "Comunidades usam agricultura variada, de raízes, cereais, ervas e frutas, e mantêm despensas.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    },
+    {
+      "id": "worldbuilding-xx:fato:09",
+      "pagina_manuscrito": 19,
+      "afirmacao_de_fonte": "O manuscrito menciona campos, hortas, cervejas, tabacos e erva-de-hobbit.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    },
+    {
+      "id": "worldbuilding-xx:fato:10",
+      "pagina_manuscrito": 19,
+      "afirmacao_de_fonte": "A transmissão oral de histórias, genealogias, receitas e acontecimentos é especialmente importante.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    },
+    {
+      "id": "worldbuilding-xx:fato:11",
+      "pagina_manuscrito": 19,
+      "afirmacao_de_fonte": "A resistência à opressão aparece em ajuda discreta e acolhimento, sem que todos os hobbits sejam combatentes.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    },
+    {
+      "id": "worldbuilding-xx:fato:12",
+      "pagina_manuscrito": 19,
+      "afirmacao_de_fonte": "A relativa autonomia de produção ajuda a resistir à interrupção de rotas de abastecimento.",
+      "estado": "manuscrito_em_revisao",
+      "reformulacao_aprovada": false
+    }
+  ],
+  "limites": [
+    "Grama-Cortada existe no manuscrito, mas não consta como região/lugar próprio no vocabulário geográfico atual; não inventar suas coordenadas.",
+    "O Condado não é um reino nem uma burocracia única; não inventar conselhos, impostos, tribunais e representantes oficiais.",
+    "Influência de anciãos e famílias não equivale a poder jurídico hereditário sem evidência.",
+    "Descrever agricultura diversificada não implica safras, clima, variedades exclusivas, moeda ou volumes de comércio confirmados.",
+    "Cultivo, cervejas, tabaco e erva-de-hobbit são citados; receitas, legislação, propriedade terapêutica e distribuição são desconhecidas.",
+    "Menelau Folha-Seca existe na fonte, mas as cenas não registram apresentações, viagens ou aparições históricas reais.",
+    "Oralidade é importante, mas não exclui a escrita nem torna todo relato verdadeiro.",
+    "Não estabelecer deus, culto, festival, calendário, ofício regulamentado ou arquitetura única como característica universal do povo.",
+    "O apoio a refugiados e o conflito com a Corte são aspectos da história, não a definição de toda a cultura hobbit.",
+    "Conflitos propostos entre famílias são abstratos; não criar NPCs e linhagens canônicas nem fatos de campanha.",
+    "Nenhuma vinheta ocorreu; todas são propostas ilustrativas.",
+    "Não alterar regras de Dungeon World, criaturas, mapas ou o inventário de revisão XIX."
+  ],
+  "contagens": {
+    "fatos": 12,
+    "dominios_da_vida": 9,
+    "circuitos_economicos": 5,
+    "formas_de_convivencia": 4,
+    "conflitos_internos": 5,
+    "celebracoes_possiveis": 4,
+    "generos_da_memoria": 4,
+    "vinhetas": 4,
+    "decisoes": 8
+  },
+  "dominios_da_vida": [
+    {
+      "id": "worldbuilding-xx:dominios_da_vida:terra-e-heranca",
+      "nome_editorial": "Terra que lembra nomes",
+      "hipotese_social": "A terra não precisa ser propriedade absoluta para ter raízes familiares; o cultivo e o uso por gerações podem gerar obrigações concorrentes.",
+      "contradicao": "Quem decide sobre uma horta quando parentes mudam de casa, divergem ou retornam de longe?",
+      "detalhe_de_cotidiano": "Uma criança aprende o nome antigo de cada canteiro; um parente não reconhece a divisão feita antes de seu nascimento.",
+      "possibilidade_narrativa": "Uma venda de terra provoca discussão sobre a quem pertencem árvores e caminhos.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:dominios_da_vida:arquitetura-domestica",
+      "nome_editorial": "A porta vista da rua",
+      "hipotese_social": "Casas podem refletir hospitalidade, privacidade, trabalho e espaço para parentes, sem impor a toca subterrânea como padrão universal.",
+      "contradicao": "A ideia de casa aberta pode servir de pressão sobre famílias pobres ou que precisem de privacidade.",
+      "detalhe_de_cotidiano": "Uma janela dá para uma horta; outra para onde os vizinhos sempre conversam.",
+      "possibilidade_narrativa": "A visita inesperada revela diferenças entre convite e obrigação.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:dominios_da_vida:mesa-e-prestigio",
+      "nome_editorial": "Quem senta à mesa",
+      "hipotese_social": "As refeições podem funcionar como lugares de mediação, memória e disputa, para além do prazer de comer.",
+      "contradicao": "A pessoa que cozinha e serve também tem voz quando decisões são tomadas à mesa?",
+      "detalhe_de_cotidiano": "Em uma conversa difícil, o pão acaba antes do assunto.",
+      "possibilidade_narrativa": "Uma refeição de família decide silenciosamente quem será ouvido.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:dominios_da_vida:trabalho-interdependente",
+      "nome_editorial": "O serviço que ninguém anuncia",
+      "hipotese_social": "Agricultura mista cria dependência entre quem planta, colhe, cozinha, fabrica recipientes e transporta mercadorias.",
+      "contradicao": "O valor social de um trabalho é medido pelo preço, pelo prestígio da família ou por sua utilidade?",
+      "detalhe_de_cotidiano": "Um pote rachado traz mais preocupação que um boato de rei distante.",
+      "possibilidade_narrativa": "Uma disputa pelo pagamento de reparos atravessa várias casas.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:dominios_da_vida:infancia-e-autonomia",
+      "nome_editorial": "Crianças, perguntas e caminhos",
+      "hipotese_social": "Uma criança pode aprender cantigas, histórias de famílias, cultivo e prudência comunitária, sem destino profissional imposto.",
+      "contradicao": "Quanto espaço há para quem não quer herdar a horta ou o negócio da família?",
+      "detalhe_de_cotidiano": "Uma criança decora o caminho das frutas pelo cheiro e pelos vizinhos.",
+      "possibilidade_narrativa": "A decisão de estudar com um viajante divide a família.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:dominios_da_vida:hospitalidade-e-limites",
+      "nome_editorial": "O hóspede e o lar",
+      "hipotese_social": "Hospitalidade é uma prática documentada; imaginar seus limites torna o Condado mais vivo e menos idealizado.",
+      "contradicao": "Quando acolher deixa de ser um gesto voluntário e passa a exigir retribuição ou lealdade?",
+      "detalhe_de_cotidiano": "Uma cama extra só existe porque duas famílias colaboraram.",
+      "possibilidade_narrativa": "Um anfitrião precisa dizer não sem deixar de ser considerado digno.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:dominios_da_vida:memoria-e-verdade",
+      "nome_editorial": "O que o avô disse",
+      "hipotese_social": "A tradição oral pode preservar informações, mas memória, reputação e versões familiares competem.",
+      "contradicao": "Quem pode contestar uma história repetida por pessoas mais velhas?",
+      "detalhe_de_cotidiano": "Duas famílias contam finais diferentes para o mesmo casamento antigo.",
+      "possibilidade_narrativa": "Uma canção é prova de propriedade ou apenas memória afetiva?",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:dominios_da_vida:fe-e-costumes",
+      "nome_editorial": "O sagrado da cozinha e do campo",
+      "hipotese_social": "Religião e práticas de gratidão poderiam coexistir com agricultura e vizinhança, sem impor divindade oficial ou rito documentado.",
+      "contradicao": "Uma comunidade pode recusar uma prática piedosa que outra considera essencial?",
+      "detalhe_de_cotidiano": "Alguém agradece antes de uma colheita sem dizer a quem.",
+      "possibilidade_narrativa": "Um visitante interpreta como rito aquilo que moradores consideram costume banal.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:dominios_da_vida:lazer-e-tempo",
+      "nome_editorial": "Tempo que não é vendido",
+      "hipotese_social": "Jogos, músicas, conversas e descanso podem ter função social além de diversão, sem calendário oficial.",
+      "contradicao": "Quem tem tempo livre e quem continua trabalhando enquanto outros festejam?",
+      "detalhe_de_cotidiano": "Uma história engraçada interrompe uma reunião irritada.",
+      "possibilidade_narrativa": "Um jovem prefere tocar música a cuidar da propriedade familiar.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    }
+  ],
+  "circuitos_economicos": [
+    {
+      "id": "worldbuilding-xx:circuitos_economicos:hortas-e-despensas",
+      "nome_editorial": "Da horta à despensa",
+      "hipotese_social": "Cultivos mistos e despensas são documentados; um circuito hipotético acompanha armazenamento, partilha e perdas.",
+      "contradicao": "A resistência a bloqueios não significa fartura universal: pragas e armazenamento ruim continuam possíveis.",
+      "detalhe_de_cotidiano": "Uma colheita irregular obriga um grupo a revisar a partilha.",
+      "possibilidade_narrativa": "A família que armazenou para anos difíceis recebe um pedido urgente.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:circuitos_economicos:cerveja-e-fabricacao",
+      "nome_editorial": "O líquido do trabalho",
+      "hipotese_social": "Cervejas aparecem no manuscrito; produzir, conservar e compartilhar exigiria conhecimentos e recursos.",
+      "contradicao": "Um produtor domina a técnica, outro controla a venda, e nenhum deles representa toda a região.",
+      "detalhe_de_cotidiano": "Um lote fica ácido; alguém decide se desperdiça ou reaproveita.",
+      "possibilidade_narrativa": "Uma divergência sobre qualidade ameaça a reputação de uma casa.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:circuitos_economicos:tabaco-e-erva",
+      "nome_editorial": "Ervas, fumo e reputação",
+      "hipotese_social": "Tabaco e erva-de-hobbit aparecem nas fontes; seus usos exatos, cultivo e regras de comércio não estão definidos.",
+      "contradicao": "Valor recreativo, medicinal, costumeiro e trocas podem conflitar sem uma lei comercial inventada.",
+      "detalhe_de_cotidiano": "Uma pessoa recusa um produto oferecido como símbolo de amizade.",
+      "possibilidade_narrativa": "Um viajante atribui propriedades exageradas à erva local.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:circuitos_economicos:trocas-e-contas",
+      "nome_editorial": "Débito não é inimizade",
+      "hipotese_social": "Trocas entre famílias e aldeias podem combinar dinheiro, favores e bens, sem moeda condal inventada.",
+      "contradicao": "Favores exigidos por gerações podem ser uma forma silenciosa de desigualdade.",
+      "detalhe_de_cotidiano": "Um pedido escrito contrasta com a memória que uma vizinha tem do acordo.",
+      "possibilidade_narrativa": "Uma dívida antiga é contestada porque seu credor morreu.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:circuitos_economicos:mobilidade-e-servicos",
+      "nome_editorial": "Estrada pequena, mundo grande",
+      "hipotese_social": "Estradas entre vilas são documentadas; deslocamento cotidiano permite imaginar entrega de recados, ofícios e vendas ambulantes sem traçar rotas.",
+      "contradicao": "Quem mantém a estrada e quem lucra com ela podem não ser as mesmas pessoas.",
+      "detalhe_de_cotidiano": "Uma carruagem vazia leva uma carta que ninguém quer ler em voz alta.",
+      "possibilidade_narrativa": "Uma passagem danificada cria um conflito sobre trabalho comunitário.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    }
+  ],
+  "formas_de_convivencia": [
+    {
+      "id": "worldbuilding-xx:formas_de_convivencia:decisao-entre-vizinhos",
+      "nome_editorial": "A conversa comprida",
+      "hipotese_social": "A deliberação local é documentada; uma forma proposta seria ouvir as partes e buscar acordo sem corte central.",
+      "contradicao": "Pessoas populares podem impor consenso sem título ou argumento melhor.",
+      "detalhe_de_cotidiano": "A conversa atravessa duas refeições e nenhuma sentença aparece.",
+      "possibilidade_narrativa": "Um desacordo por água se resolve para uns e fica aberto para outros.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:formas_de_convivencia:acordo-de-muitas-vilas",
+      "nome_editorial": "Assunto de várias mesas",
+      "hipotese_social": "O manuscrito confirma que temas maiores exigem coordenação entre comunidades; composição exata não é conhecida.",
+      "contradicao": "Quem representa uma vila pequena quando seu vizinho possui mais riqueza e parentes influentes?",
+      "detalhe_de_cotidiano": "Um mensageiro demora mais explicando a decisão que levando a notícia.",
+      "possibilidade_narrativa": "A solução de uma vila transfere o problema para outra.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:formas_de_convivencia:reparacao-de-vizinhanca",
+      "nome_editorial": "Não basta pedir desculpas",
+      "hipotese_social": "Uma possibilidade é priorizar compensação prática e restauração de confiança em danos cotidianos.",
+      "contradicao": "A vítima pode querer distância, não reconciliação pública.",
+      "detalhe_de_cotidiano": "Uma cerca é reconstruída, mas a amizade não retorna.",
+      "possibilidade_narrativa": "O conserto material termina; a reparação simbólica não.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:formas_de_convivencia:recusa-com-respeito",
+      "nome_editorial": "O direito de fechar a porta",
+      "hipotese_social": "Famílias podem defender autonomia e hospitalidade sem obrigação total de acolher ou participar.",
+      "contradicao": "Uma comunidade que se orgulha de generosidade pode punir moralmente quem recusa ajudar.",
+      "detalhe_de_cotidiano": "A porta fechada de uma casa torna-se assunto entre vizinhos.",
+      "possibilidade_narrativa": "Uma pessoa decide não participar de uma reunião social sem explicar seus motivos.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    }
+  ],
+  "conflitos_internos": [
+    {
+      "id": "worldbuilding-xx:conflitos_internos:herdeiro-e-partida",
+      "nome_editorial": "Quem herda o que não quer",
+      "hipotese_social": "Tradição familiar pode entrar em choque com vocação individual e migração voluntária.",
+      "contradicao": "Como garantir que quem permanece não seja obrigado a sustentar quem partiu?",
+      "detalhe_de_cotidiano": "Uma horta bem cuidada não interessa à filha que deseja estudar cartografia.",
+      "possibilidade_narrativa": "Um avô oferece ferramentas como se fossem uma promessa.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:conflitos_internos:abundancia-desigual",
+      "nome_editorial": "A despensa cheia e a vazia",
+      "hipotese_social": "A importância das reservas não significa igualdade material entre casas ou vilas.",
+      "contradicao": "Como a solidariedade convive com proprietários mais ricos e trabalhadores dependentes?",
+      "detalhe_de_cotidiano": "Duas despensas lado a lado envelhecem de modo diferente.",
+      "possibilidade_narrativa": "Uma comunidade discute se guardar recursos é prudência ou egoísmo.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:conflitos_internos:nome-e-vergonha",
+      "nome_editorial": "Memória como punição",
+      "hipotese_social": "A memória local pode transmitir saber, mas também marcar famílias e perpetuar reputações injustas.",
+      "contradicao": "Quem tem direito a redefinir sua própria história diante de vizinhos que o conhecem desde criança?",
+      "detalhe_de_cotidiano": "A alcunha de uma avó vira estigma dos netos.",
+      "possibilidade_narrativa": "Uma versão engraçada de um episódio antigo causa dor real.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:conflitos_internos:saber-contra-costume",
+      "nome_editorial": "O estranho que traz uma ideia",
+      "hipotese_social": "Uma inovação agrícola, medicinal ou de conservação pode contrariar métodos respeitados sem ser inferior por isso.",
+      "contradicao": "Quem precisa provar que uma novidade é segura, e quem decide quando a tradição falhou?",
+      "detalhe_de_cotidiano": "Uma ferramenta nova poupa esforço mas altera a divisão do trabalho.",
+      "possibilidade_narrativa": "Uma receita antiga perde a competição numa feira hipotética.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:conflitos_internos:privacidade-e-informacao",
+      "nome_editorial": "A vila que sabe demais",
+      "hipotese_social": "Redes informais de notícia protegem comunidades e podem também invadir a vida privada.",
+      "contradicao": "Em que ponto vigilância solidária se torna controle social?",
+      "detalhe_de_cotidiano": "A notícia de uma visita chega antes do visitante.",
+      "possibilidade_narrativa": "Uma família quer manter segredo sobre um problema que todos desejam discutir.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    }
+  ],
+  "celebracoes_possiveis": [
+    {
+      "id": "worldbuilding-xx:celebracoes_possiveis:primeira-semente",
+      "nome_editorial": "A primeira semente",
+      "hipotese_social": "Poderia ser uma reunião de ajuda entre casas para iniciar um plantio, e não feriado oficial.",
+      "contradicao": "Quem é convidado e quem permanece de fora da distribuição de sementes?",
+      "detalhe_de_cotidiano": "Uma vizinha oferece sementes sem cobrar e registra o gesto na memória.",
+      "possibilidade_narrativa": "Um visitante confunde mutirão com obrigação universal.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:celebracoes_possiveis:mesa-dos-ausentes",
+      "nome_editorial": "A mesa dos ausentes",
+      "hipotese_social": "Poderia ser uma prática doméstica de lembrar viajantes, mortos e parentes que partiram.",
+      "contradicao": "Uma lembrança pode acolher, mas também dificultar que uma pessoa seja esquecida por escolha.",
+      "detalhe_de_cotidiano": "Uma cadeira permanece vazia durante o jantar.",
+      "possibilidade_narrativa": "Um jovem pergunta por que ninguém diz o nome de um antepassado.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:celebracoes_possiveis:contos-da-colheita",
+      "nome_editorial": "Histórias da colheita",
+      "hipotese_social": "Poderia ser reunião de canções e narrativas sobre cultivo, família e acidentes engraçados.",
+      "contradicao": "Quem controla o relato público de um acontecimento?",
+      "detalhe_de_cotidiano": "Duas famílias disputam o direito de contar uma história antiga.",
+      "possibilidade_narrativa": "Menelau Folha-Seca poderia aparecer como referência cultural, sem que se afirme sua presença real.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:celebracoes_possiveis:dia-sem-convites",
+      "nome_editorial": "Um dia sem convites",
+      "hipotese_social": "Poderia ser costume local de descanso e privacidade, contraponto ao excesso de vida comunitária.",
+      "contradicao": "As pessoas que precisam cuidar de crianças e idosos conseguem realmente descansar?",
+      "detalhe_de_cotidiano": "Ninguém cobra a razão de uma porta fechada.",
+      "possibilidade_narrativa": "Uma família rompe o costume e provoca uma conversa inesperada.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    }
+  ],
+  "generos_da_memoria": [
+    {
+      "id": "worldbuilding-xx:generos_da_memoria:historia-de-familia",
+      "nome_editorial": "História que atravessa mesas",
+      "hipotese_social": "Uma mesma história pode ser contada em versões de famílias diferentes.",
+      "contradicao": "O que faz uma versão ser respeitada: antiguidade, beleza, verdade ou prestígio?",
+      "detalhe_de_cotidiano": "Um neto corrige a avó e ninguém sabe se deve rir.",
+      "possibilidade_narrativa": "Uma controvérsia sobre posse se esconde numa anedota.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        18,
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:generos_da_memoria:receita-como-arquivo",
+      "nome_editorial": "Receita como documento",
+      "hipotese_social": "Conhecimentos de comida e conserva podem registrar migrações e relações familiares sem crônica formal.",
+      "contradicao": "Quem recebe conhecimento que não foi escrito e quem pode vendê-lo?",
+      "detalhe_de_cotidiano": "Uma mudança mínima de tempero faz alguém lembrar um parente.",
+      "possibilidade_narrativa": "Uma receita guardada causa briga de herança.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        18,
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:generos_da_memoria:alcunhas-e-identidade",
+      "nome_editorial": "Sobrenome de lugar, apelido de pessoa",
+      "hipotese_social": "O manuscrito confirma nomes associados a lugares e histórias; estudar alcunhas mostra como memória molda identidade.",
+      "contradicao": "O apelido é herança respeitada ou imposição de vizinhos?",
+      "detalhe_de_cotidiano": "Uma pessoa se apresenta por nome que a comunidade resiste a usar.",
+      "possibilidade_narrativa": "A troca de uma alcunha torna-se acontecimento doméstico.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        18,
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:generos_da_memoria:cantigas-de-estrada",
+      "nome_editorial": "Canção que cabe no bolso",
+      "hipotese_social": "Viagens e transmissão oral permitem imaginar cantigas práticas para lembrar trajetos sem fixar itinerários.",
+      "contradicao": "A utilidade de uma canção pode desaparecer quando o caminho muda.",
+      "detalhe_de_cotidiano": "Uma criança sabe onde descansar mas nunca viu mapa.",
+      "possibilidade_narrativa": "Um erro na letra atrapalha uma viagem curta.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        18,
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "worldbuilding-xx:vinhetas:a-casa-de-duas-portas",
+      "nome_editorial": "A casa de duas portas",
+      "hipotese_social": "Uma casa tem entrada para o trabalho e entrada para receber; uma pessoa escolhe a porta errada.",
+      "contradicao": "A fronteira entre hospitalidade e privacidade é negociável.",
+      "detalhe_de_cotidiano": "Um visitante percebe que foi convidado a entrar no trabalho, não na intimidade.",
+      "possibilidade_narrativa": "Uma conversa termina sem briga e sem convite para voltar.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        18,
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:vinhetas:a-panela-e-a-divida",
+      "nome_editorial": "A panela e a dívida",
+      "hipotese_social": "Uma panela emprestada há anos reaparece num almoço e reabre a discussão sobre quem deve a quem.",
+      "contradicao": "A confiança pode ser mais frágil do que o objeto.",
+      "detalhe_de_cotidiano": "Duas pessoas lembram o mesmo empréstimo de maneiras incompatíveis.",
+      "possibilidade_narrativa": "Um objeto doméstico vira documento moral.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        18,
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:vinhetas:o-nome-da-horta",
+      "nome_editorial": "O nome da horta",
+      "hipotese_social": "Um terreno recebe o nome de alguém que o cultivou, embora hoje pertença a outro grupo familiar.",
+      "contradicao": "Terra, trabalho e identidade não são sempre equivalentes.",
+      "detalhe_de_cotidiano": "Uma criança pergunta por que todos dizem o nome antigo do lugar.",
+      "possibilidade_narrativa": "A história de uma pessoa continua viva através de plantas.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        18,
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    },
+    {
+      "id": "worldbuilding-xx:vinhetas:o-bardo-que-nao-chegou",
+      "nome_editorial": "O bardo que não chegou",
+      "hipotese_social": "Uma comunidade prepara um encontro musical supondo que Menelau aparecerá; ninguém confirma que ele viria.",
+      "contradicao": "Reputação artística pode organizar expectativas sem exigir ocorrência histórica.",
+      "detalhe_de_cotidiano": "As pessoas contam histórias diferentes sobre uma visita jamais confirmada.",
+      "possibilidade_narrativa": "A fama do bardo é recurso de cultura, não prova de seu deslocamento.",
+      "estado": "exploracao_cultural_nao_canonica",
+      "ocorreu": false,
+      "instituicao_confirmada": false,
+      "fonte_contexto_paginas": [
+        18,
+        19
+      ],
+      "nao_fixar": "Sem data, rito oficial, norma escrita, família inventada, rota, localidade ou economia quantificada."
+    }
+  ],
+  "decisoes_para_autor": [
+    {
+      "id": "worldbuilding-xx:decisao:territorio",
+      "pergunta": "Onde fica o Condado de Grama-Cortada no continente e qual a escala de suas vilas?",
+      "estado": "pendente_de_autoria",
+      "opcao_escolhida": null
+    },
+    {
+      "id": "worldbuilding-xx:decisao:tenencia",
+      "pergunta": "Como se reconhece o uso, a posse e a sucessão de campos, bosques e casas?",
+      "estado": "pendente_de_autoria",
+      "opcao_escolhida": null
+    },
+    {
+      "id": "worldbuilding-xx:decisao:economia",
+      "pergunta": "Qual a relação concreta entre produção doméstica, especialização, moeda e troca de favores?",
+      "estado": "pendente_de_autoria",
+      "opcao_escolhida": null
+    },
+    {
+      "id": "worldbuilding-xx:decisao:governo",
+      "pergunta": "Quando um conflito ultrapassa uma vila, quem representa seus habitantes e com que legitimidade?",
+      "estado": "pendente_de_autoria",
+      "opcao_escolhida": null
+    },
+    {
+      "id": "worldbuilding-xx:decisao:hospitalidade",
+      "pergunta": "Quem tem direito a acolhimento e o que acontece quando uma comunidade não pode hospedar alguém?",
+      "estado": "pendente_de_autoria",
+      "opcao_escolhida": null
+    },
+    {
+      "id": "worldbuilding-xx:decisao:religiao",
+      "pergunta": "Quais deuses, espíritos ou ritos são realmente cultuados pelos hobbits, sem impor religião única?",
+      "estado": "pendente_de_autoria",
+      "opcao_escolhida": null
+    },
+    {
+      "id": "worldbuilding-xx:decisao:memoria",
+      "pergunta": "Que formas de registrar decisões e corrigir uma história oral injusta os moradores aceitam?",
+      "estado": "pendente_de_autoria",
+      "opcao_escolhida": null
+    },
+    {
+      "id": "worldbuilding-xx:decisao:ritmo",
+      "pergunta": "Quais celebrações ou calendários existem de fato, e qual espaço há para descanso e divergência?",
+      "estado": "pendente_de_autoria",
+      "opcao_escolhida": null
+    }
+  ]
+}

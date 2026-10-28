@@ -262,6 +262,29 @@ def build():
     vandar_xvii=load("data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json")
     ironwood_xviii=load("data/worldbuilding/ironwood-sociedade-resistencia-ciclo18.json")
     revisao_xix=load("data/worldbuilding/revisao-autoral-atlas-ciclo19.json")
+    grama_xx=load("data/worldbuilding/grama-cortada-cotidiano-ciclo20.json")
+    categorias_xx=("dominios_da_vida","circuitos_economicos","formas_de_convivencia",
+                  "conflitos_internos","celebracoes_possiveis","generos_da_memoria","vinhetas")
+    registros_xx=[{**entry,"categoria_indice":cat}
+        for cat in categorias_xx for entry in grama_xx[cat]]
+    if len(registros_xx)!=35:
+        raise ValueError("Ciclo XX: esperado 35 propostas culturais.")
+    def indexar_grama(extract):
+        mapping=defaultdict(set)
+        for entry in registros_xx:
+            vals=extract(entry)
+            for key in (vals if isinstance(vals,list) else [vals]):
+                if key is not None and key!="":
+                    mapping[str(key)].add(entry["id"])
+        return {key:sorted(mapping[key]) for key in sorted(mapping)}
+    indices_grama_xx={
+        "by_categoria":indexar_grama(lambda x:x["categoria_indice"]),
+        "by_pagina_manuscrito":indexar_grama(
+           lambda x:[str(p) for p in x["fonte_contexto_paginas"]]),
+        "by_estado":indexar_grama(lambda x:x["estado"]),
+        "by_inicial_nome":indexar_grama(lambda x:x["nome_editorial"][0].upper()),
+        "by_slug":indexar_grama(lambda x:x["id"].rsplit(":",1)[-1])
+    }
     review_entries=[{**e,"categoria_indice":cat}
         for cat in ("dossies","candidatos","decisoes","guardas")
         for e in revisao_xix[cat]]
@@ -1012,6 +1035,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "grama_cortada_daily_life":"grama-cortada-daily-life.json",
+        "grama_cortada_daily_life_indexes":"grama-cortada-daily-life-indexes.json",
         "atlas_authorial_review":"atlas-authorial-review.json",
         "atlas_authorial_review_indexes":"atlas-authorial-review-indexes.json",
         "ironwood_civil_society":"ironwood-civil-society.json",
@@ -1150,6 +1175,9 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_fatos_grama_cortada_xx":len(grama_xx["fatos_documentados"]),
+        "total_propostas_grama_cortada_xx":len(registros_xx),
+        "total_decisoes_grama_cortada_xx":len(grama_xx["decisoes_para_autor"]),
         "total_candidatos_revisao_xix":len(revisao_xix["candidatos"]),
         "total_decisoes_revisao_xix":len(revisao_xix["decisoes"]),
         "total_guardas_revisao_xix":len(revisao_xix["guardas"]),
@@ -1312,6 +1340,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["grama_cortada_daily_life"]:grama_xx,
+           files["grama_cortada_daily_life_indexes"]:indices_grama_xx,
            files["atlas_authorial_review"]:revisao_xix,
            files["atlas_authorial_review_indexes"]:indices_revisao_xix,
            files["ironwood_civil_society"]:ironwood_xviii,

@@ -48,6 +48,14 @@ A [matriz de revisão autoral](data/worldbuilding/revisao-autoral-atlas-ciclo19.
 
 **Este ciclo não homologou nenhuma alternativa e não alterou a lore canônica.** Qualquer alteração futura exigirá opção e redação expressamente aprovadas pelo autor, outra revisão de código e testes.
 
+## Ciclo XX — Grama-Cortada: uma sociedade além da guerra
+
+O [dossiê cultural de Grama-Cortada](docs/GRAMA_CORTADA_COTIDIANO_CICLO20.md) aprofunda a vida de hobbits/halflings do Condado: **trabalho agrícola, despensas, trocas, família, herança, vizinhança, hospitalidade, música e memória oral**, sem reduzir o povo às ações de resistência contra a Corte.
+
+O manuscrito do Hack (pp. 18–19) fundamenta **12 enunciados de referência**; a [base estruturada](data/worldbuilding/grama-cortada-cotidiano-ciclo20.json) contém **35 propostas culturais** — 9 domínios cotidianos, 5 circuitos econômicos, 4 formas de convivência, 5 conflitos internos, 4 celebrações possíveis, 4 gêneros da memória e 4 vinhetas **não ocorridas** — além de 8 questões autorais pendentes. **Nenhuma festa, norma ou evento foi canonizado.**
+
+Os dados são exportados para `dist/carcaca/grama-cortada-daily-life.json` e seus índices. API read-only: `getGramaCortadaDailyLife`, `getGramaCortadaDailyLifeIndexes`, `getGramaCortadaDailyLifeEntry`, `searchGramaCortadaDailyLife`. A geografia exata e os IDs do Condado permanecem desconhecidos, sem acréscimos falsamente precisos.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
