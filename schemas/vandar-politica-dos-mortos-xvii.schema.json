@@ -704,8 +704,8 @@
     },
     "decisoes_para_autor": {
       "type": "array",
-      "minItems": 0,
-      "maxItems": 0,
+      "minItems": 8,
+      "maxItems": 8,
       "items": {
         "type": "object",
         "additionalProperties": false,
