@@ -258,6 +258,31 @@ def build():
     floresta=load("data/propostas/ironwood-eldroth-resistencia-hack.json")
     atlas_cultural_xiv=load("data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json")
     preconquista_xv=load("data/worldbuilding/eldroth-preconquista-ciclo15.json")
+    ocupacao_xvi=load("data/worldbuilding/eldroth-ocupacao-sylara-ciclo16.json")
+    categorias_xvi=("mecanismos","posicoes_sociais","modelos_de_regime","dilemas","vinhetas")
+    entidades_xvi=[{**entry,"categoria_indice":cat}
+       for cat in categorias_xvi for entry in ocupacao_xvi[cat]]
+    if len(entidades_xvi)!=25:
+        raise ValueError("Ciclo XVI exige 25 entidades narrativas (8+6+3+4+4).")
+    def indexar_xvi(extract):
+        terms=defaultdict(set)
+        for entry in entidades_xvi:
+            values=extract(entry)
+            for val in (values if isinstance(values,list) else [values]):
+                if val is not None and val!="":
+                    terms[str(val)].add(entry["id"])
+        return {k:sorted(v) for k,v in sorted(terms.items())}
+    indices_ocupacao_xvi={
+        "by_categoria":indexar_xvi(lambda e:e["categoria_indice"]),
+        "by_dominio":indexar_xvi(lambda e:e.get("dominio",e.get("campo_social",e.get("tema")))),
+        "by_pratica_xv":indexar_xvi(lambda e:e.get("pratica_xv_id")),
+        "by_mecanismo":indexar_xvi(lambda e:e.get("mecanismo_id")),
+        "by_posicao":indexar_xvi(lambda e:e.get("posicao_id")),
+        "by_pagina_manuscrito":indexar_xvi(lambda e:[
+           str(p["pagina"]) for p in (e.get("fontes_contextuais") or
+             ([e["fonte_contextual"]] if e.get("fonte_contextual") else []))]),
+        "by_estado":indexar_xvi(lambda e:e.get("estado"))
+    }
     categorias_xv=("fases","praticas","pactos","ciclos_materiais","vinhetas")
     entidades_xv=[{**item,"categoria_indice":categoria}
         for categoria in categorias_xv for item in preconquista_xv[categoria]]
@@ -907,6 +932,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "eldroth_sylara_occupation":"eldroth-sylara-occupation.json",
+        "eldroth_sylara_occupation_indexes":"eldroth-sylara-occupation-indexes.json",
         "eldroth_preconquest":"eldroth-preconquest.json",
         "eldroth_preconquest_indexes":"eldroth-preconquest-indexes.json",
         "eldroth_cultural_atlas":"eldroth-cultural-atlas.json",
@@ -1037,6 +1064,11 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_mecanismos_worldbuilding_xvi_propostos":len(ocupacao_xvi["mecanismos"]),
+        "total_posicoes_sociais_worldbuilding_xvi":len(ocupacao_xvi["posicoes_sociais"]),
+        "total_modelos_regime_worldbuilding_xvi":len(ocupacao_xvi["modelos_de_regime"]),
+        "total_dilemas_worldbuilding_xvi":len(ocupacao_xvi["dilemas"]),
+        "total_vinhetas_worldbuilding_xvi":len(ocupacao_xvi["vinhetas"]),
         "total_fases_worldbuilding_xv":len(preconquista_xv["fases"]),
         "total_praticas_worldbuilding_xv_propostas":len(preconquista_xv["praticas"]),
         "total_pactos_worldbuilding_xv_propostos":len(preconquista_xv["pactos"]),
@@ -1178,6 +1210,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["eldroth_sylara_occupation"]:ocupacao_xvi,
+           files["eldroth_sylara_occupation_indexes"]:indices_ocupacao_xvi,
            files["eldroth_preconquest"]:preconquista_xv,
            files["eldroth_preconquest_indexes"]:indices_preconquista_xv,
            files["eldroth_cultural_atlas"]:atlas_cultural_xiv,
