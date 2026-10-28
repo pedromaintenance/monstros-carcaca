@@ -254,6 +254,31 @@ def build():
     economia_mar=load("data/propostas/mar-sangue-economia-hack.json")
     costa_mar=load("data/propostas/costa-sul-pressao-mar-sangue-hack.json")
     rio_garganta=load("data/propostas/garganta-rio-ancestral-social-hack.json")
+    thargrid=load("data/propostas/thargrid-resistencia-cotidiano-hack.json")
+    cats_thargrid=("lugares","coletivos","pessoas","dilemas","fluxos","acordos","cenas","arcos")
+    rows_thargrid=[{**x,"categoria":cat} for cat in cats_thargrid for x in thargrid[cat]]
+    def idx_thargrid(field):
+        mapping=defaultdict(set)
+        for item in rows_thargrid:
+            val=item.get(field,[])
+            for entry in (val if isinstance(val,list) else [val]):
+                if entry is not None and entry!="":
+                    mapping[str(entry)].add(item["id"])
+        return {k:sorted(v) for k,v in sorted(mapping.items())}
+    indexes_thargrid={
+        "by_categoria":idx_thargrid("categoria"),
+        "by_povo":idx_thargrid("povo"),
+        "by_tradicao":idx_thargrid("tradicao"),
+        "by_setor":idx_thargrid("setor"),
+        "by_ambiente":idx_thargrid("ambiente"),
+        "by_movimento_hack":idx_thargrid("movimentos_inspiradores"),
+        "by_semente_anterior":idx_thargrid("vinculos"),
+        "by_local_de_cena":idx_thargrid("local_id"),
+        "by_origem":idx_thargrid("origem"),
+        "by_destino":idx_thargrid("destino")
+    }
+    if len(rows_thargrid)!=46:
+        raise ValueError("Thargrid precisa conter 46 elementos.")
     categorias_rio=("lugares","oficios","pessoas","circuitos","memorias","acordos","cenas","arcos")
     entidades_rio=[
         {**elemento,"categoria":categoria}
@@ -764,6 +789,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "thargrid_social_resistance":"thargrid-social-resistance.json",
+        "thargrid_social_resistance_indexes":"thargrid-social-resistance-indexes.json",
         "garganta_river_social":"garganta-river-social.json",
         "garganta_river_social_indexes":"garganta-river-social-indexes.json",
         "costa_sul_sea_pressure":"costa-sul-sea-pressure.json",
@@ -882,6 +909,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_entidades_thargrid_propostas":len(rows_thargrid),
+        "total_lugares_thargrid_propostos":len(thargrid["lugares"]),
+        "total_pessoas_thargrid_propostas":len(thargrid["pessoas"]),
+        "total_cenas_thargrid_propostas":len(thargrid["cenas"]),
         "total_entidades_garganta_rio_propostas":len(entidades_rio),
         "total_lugares_garganta_rio_propostos":len(rio_garganta["lugares"]),
         "total_cenas_garganta_rio_propostas":len(rio_garganta["cenas"]),
@@ -998,6 +1029,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["thargrid_social_resistance"]:thargrid,
+           files["thargrid_social_resistance_indexes"]:indexes_thargrid,
            files["garganta_river_social"]:rio_garganta,
            files["garganta_river_social_indexes"]:indices_rio,
            files["costa_sul_sea_pressure"]:costa_mar,
