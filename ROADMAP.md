@@ -9,7 +9,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - **XIV — concluído:** atlas histórico-cultural de Eldroth, Vandar e Ironwood com 14 eixos, fontes nomeadas e 42 alternativas não adotadas. [Dossiê](docs/ATLAS_HISTORICO_CULTURAL_ELDROTH_CICLO14.md).
 - **XV — concluído:** [Eldroth antes da conquista](docs/ELDROTH_PRECONQUISTA_CICLO15.md) — 4 fases, 8 práticas, 4 pactos, 4 ciclos materiais e 4 vinhetas; 24 alternativas ainda sem aprovação.
 - **XVI — concluído:** [Eldroth sob Sylara](docs/ELDROTH_SOB_SYLARA_CICLO16.md) — 8 mecanismos candidatos, 6 posições sociais, 3 modelos de regime não adotados, 4 dilemas, 4 vinhetas, 5 decisões pendentes. Zero políticas novas canonizadas.
-- **XVII — planejado:** Vandar antes e depois da destruição: história urbana, necromancia, memória, luto e propriedade.
+- **XVII — concluído:** [Vandar e a política dos mortos](docs/VANDAR_POLITICA_DOS_MORTOS_CICLO17.md): 3 fases sem datas, 8 temas urbanos, 5 formas propostas de prova, 4 estados não legais da morte, 6 papéis sociais, 3 modelos de ocupação não adotados, 4 vinhetas e 8 decisões autorais pendentes. Sem canonização.
 - **XVIII — planejado:** Ironwood e a resistência descentralizada: vida civil, autoridade de Elara, educação, economia e diplomacia com Thargrid.
 
 **Método dos próximos ciclos:** (1) localizar afirmações da ambientação; (2) apontar o que o manuscrito do Hack efetivamente acrescenta; (3) distinguir interpretações e lacunas; (4) produzir alternativas de worldbuilding materialmente diferentes; (5) pedir revisão autoral para qualquer promoção canônica. Evitar novas rodadas de dezenas de NPCs sem uma necessidade histórica ou social identificável.
@@ -476,4 +476,14 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Propor 3 modelos de governo **não escolhidos**, 4 dilemas e 4 vinhetas **não ocorridas**.
 - [x] Registrar 5 decisões autorais pendentes, schema JSON, testes Python e Node, índices e consultas ESM.
 - [x] Preservar os 7 monstros curados, a autonomia de Ironwood e o domínio de Damaris em Vandar.
-- [ ] **XVII — próximo:** Vandar antes/depois da ruína; sociedade urbana anterior, morte, propriedade, necromancia e direitos à memória, sem inventar a data da queda.
+- [x] **XVII concluído:** Vandar e a política dos mortos; todos os anos, populações e documentos urbanos permanecem indeterminados; próxima prioridade é Ironwood XVIII.
+
+## Ciclo XVII — Concluído: Vandar e a política dos mortos
+
+- [x] Auditar o manuscrito (p. 5 e enquadramento religioso da p. 24) e os registros do atlas XIV sem imputar a Damaris a causa não comprovada da queda.
+- [x] Registrar 3 fases históricas de Vandar com **datas e populações nulas**, inclusive origem incerta de seu exército de mortos-vivos.
+- [x] Examinar 8 temas de cidade viva (habitação, trabalho, abastecimento, registros, governo, religião, circulação e heranças), sem criar bairros, edifícios ou pessoas.
+- [x] Desenvolver 5 tipos de prova cuja confiabilidade pode ser contestada e 4 situações para discutir desaparecimento, morte, reanimação e identidade — sem virar lei de Vandar.
+- [x] Definir 6 papéis sociais hipotéticos, 3 modelos do domínio de Damaris **não adotados** e 4 vinhetas **não ocorridas**.
+- [x] Registrar 8 questões de revisão autoral e integrar dossiê, JSON, schema, índices determinísticos, cliente ESM e testes.
+- [ ] **XVIII — próximo:** Ironwood: vida civil, educação, trabalho, relação com Thargrid e instituições de uma resistência descentralizada. Não presumir soberania continental de Elara Stormoak.
