@@ -60,6 +60,32 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getIronwoodEldrothResistance(){return byKey("ironwood_eldroth_resistance");}
+  async function getIronwoodEldrothResistanceIndexes(){return byKey("ironwood_eldroth_resistance_indexes");}
+  async function getIronwoodEldrothEntity(id){
+    if(typeof id!=="string"||!id.startsWith("ironwood-eldroth:"))return null;
+    const data=await getIronwoodEldrothResistance();
+    for(const categoria of ["lugares","coletivos","pessoas","dilemas","fluxos","acordos","cenas","arcos"]){
+      const entidade=data[categoria].find(item=>item.id===id);
+      if(entidade)return {...entidade,categoria};
+    }
+    return null;
+  }
+  async function searchIronwoodEldrothResistance({categoria,povo,ambiente,funcao,setor,movimentoHack,vinculo,query}={}){
+    const data=await getIronwoodEldrothResistance();
+    const normal=s=>String(s??"").normalize("NFD").replace(/[\\u0300-\\u036f]/g,"").toLowerCase();
+    return ["lugares","coletivos","pessoas","dilemas","fluxos","acordos","cenas","arcos"]
+      .flatMap(cat=>data[cat].map(item=>({...item,categoria:cat})))
+      .filter(item=>
+        (!categoria||item.categoria===categoria)&&
+        (!povo||item.povo===povo)&&
+        (!ambiente||item.ambiente===ambiente)&&
+        (!funcao||item.funcao===funcao)&&
+        (!setor||item.setor===setor)&&
+        (!movimentoHack||(item.movimentos_inspiradores??[]).includes(movimentoHack))&&
+        (!vinculo||(item.vinculos??[]).includes(vinculo))&&
+        (!query||normal([item.nome,item.rotina_cotidiana,item.tensao_social].join(" ")).includes(normal(query))));
+  }
   async function getThargridSocialResistance(){return byKey("thargrid_social_resistance");}
   async function getThargridSocialResistanceIndexes(){return byKey("thargrid_social_resistance_indexes");}
   async function getThargridSocialEntity(id){
@@ -1242,6 +1268,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getIronwoodEldrothResistance,getIronwoodEldrothResistanceIndexes,
+          getIronwoodEldrothEntity,searchIronwoodEldrothResistance,
           getThargridSocialResistance,getThargridSocialResistanceIndexes,
           getThargridSocialEntity,searchThargridSocialResistance,
           getWarlockMovements,getWarlockMovement,getWarlockMovementIndexes,
