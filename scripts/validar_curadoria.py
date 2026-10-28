@@ -3058,6 +3058,71 @@ def validar_monstros_dw_ciclo_xiii():
     print("Fichas DW XIII: 8 fichas verificadas pela calculadora (7 numéricas, 1 sem combate), 0 canônicas.")
 
 
+
+def validar_atlas_cultural_xiv():
+    """Impede que a agenda de worldbuilding vire cânone, cronologia nova ou lugar fictício."""
+    d=load("data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json")
+    require(d["estado"]=="dossie_de_worldbuilding_em_revisao"
+            and d["natureza"]=="sintese_documentada_e_agenda_de_decisoes_autorais"
+            and d["aprovacao_autoral"] is False
+            and d["efeito_automatico_no_canon"] is False,
+            "Atlas XIV: estado editorial ou promoção indevida.")
+    require(d["resumo"]=={"areas":3,"marcos":6,"eixos":14,"alternativas":42},
+            "Atlas XIV: resumo quantitativo inconsistente.")
+    areas=d["areas"]
+    aid=unique(areas,"áreas worldbuilding XIV")
+    require(len(aid)==3 and aid=={
+        "worldbuilding-xiv:area:eldroth",
+        "worldbuilding-xiv:area:vandar",
+        "worldbuilding-xiv:area:ironwood"},
+        "Atlas XIV: áreas não correspondem à tríade analisada.")
+    regioes={r["id"] for r in load("data/regioes_carcaca.json")["regioes"]}
+    lugares={l["id"] for l in load("data/lugares_carcaca.json")["lugares"]}
+    for a in areas:
+        if a["id"].endswith(":ironwood"):
+            require(a["referencia_atlas"] is None and a["lugar_atlas"] is None,
+                    "Atlas XIV: Ironwood foi inserida por inferência em Eldroth.")
+        else:
+            require(a["referencia_atlas"] in regioes and
+                    a["referencia_atlas"]=="regiao:eldroth" and
+                    a["lugar_atlas"] in lugares,
+                    "Atlas XIV: geografia documentada incompatível.")
+    events=d["marcos"]
+    require(len(events)==6 and
+            [x["ano_ec"] for x in events]==[501,666,875,910,912,None] and
+            all(x["fonte"]=="ambientacao" and x["estado"]=="datado_no_texto"
+                for x in events[:-1]) and
+            events[-1]["estado"]=="sem_data_confirmada",
+            "Atlas XIV: cronologia datada ou lacuna foram alteradas.")
+    paginas={p["pagina"] for p in
+             load("fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")["paginas"]}
+    eixos=d["eixos"]
+    unique(eixos,"eixos worldbuilding XIV")
+    require(len(eixos)==14 and
+            sum(len(e["decisoes_autorais_pendentes"]) for e in eixos)==42,
+            "Atlas XIV: eixos ou alternativas inesperados.")
+    for e in eixos:
+        require(e["id"].startswith("worldbuilding-xiv:eixo:") and
+                e["area_id"] in aid and
+                isinstance(e["tema"],str) and bool(e["tema"]) and
+                bool(e["fatos_textuais"]) and bool(e["camada_manuscrito"]) and
+                all(f["fonte"]=="ambientacao" and f["afirmacao"]
+                    for f in e["fatos_textuais"]) and
+                all(m["fonte"]=="hack-capitulo-i" and m["paginas"] and
+                    all(p in paginas for p in m["paginas"]) and
+                    m["status"]=="afirmado_no_rascunho_sem_promocao"
+                    for m in e["camada_manuscrito"]),
+                "Atlas XIV: fonte ausente, página errada ou área não autorizada.")
+        require(len(e["perguntas_abertas"])>=2 and
+                len(e["decisoes_autorais_pendentes"])==3 and
+                all(a["estado"]=="alternativa_nao_adotada" and
+                    a["opcao"] and a["implicacao"]
+                    for a in e["decisoes_autorais_pendentes"]) and
+                e["efeitos_na_ambientacao"],
+                "Atlas XIV: alternativa foi aprovada automaticamente ou está vazia.")
+    print("Atlas XIV: 3 áreas, 6 marcos, 14 eixos, 42 alternativas não adotadas; nenhum fato novo canonizado.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3183,6 +3248,7 @@ def main():
     validar_resistencia_florestal_xi()
     validar_ecologia_monstruosa_xii()
     validar_monstros_dw_ciclo_xiii()
+    validar_atlas_cultural_xiv()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
