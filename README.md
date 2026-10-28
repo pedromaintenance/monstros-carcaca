@@ -468,3 +468,14 @@ O atlas inclui **40 propostas narrativas** sobre guerrilha florestal, acolhiment
 A fonte é `data/propostas/ironwood-eldroth-resistencia-hack.json`, publicada em `dist/carcaca/ironwood-eldroth-resistance.json` e indexada em `ironwood-eldroth-resistance-indexes.json`. O cliente oferece `getIronwoodEldrothResistance`, `getIronwoodEldrothResistanceIndexes`, `getIronwoodEldrothEntity` e `searchIronwoodEldrothResistance`.
 
 **Preservação do cânone:** Sylara ainda ocupa Eldroth; Damaris controla Vandar; Ironwood é fortaleza autônoma de rangers e druidas sob Elara Stormoak, não a própria Eldroth. A mensageira Vaelis é reaproveitada somente como proposta anterior de Thargrid. Acordos, cenas e rotas não são reais na cronologia. Consulte [o dossiê do Povoamento XI](docs/IRONWOOD_ELDROTH_POVOAMENTO_CICLO11.md).
+
+## Ciclo XII — Ecologia Monstruosa de Eldroth e Ironwood
+
+Criados **8 rascunhos de criaturas**, **6 encontros condicionais**, **4 pressões ecológico-políticas** e **2 frentes propostas de Dungeon World** (20 registros). O novo módulo conecta o povoamento XI às consequências materiais de vigilância, luto, cultivos e abrigo sem tratar toda a fauna como agente da Corte.
+
+- Fonte editorial: `data/propostas/eldroth-ecologia-monstruosa-dw.json` e schema próprio `schemas/ecologia-monstruosa-xii.schema.json`.
+- Distribuição: `dist/carcaca/eldroth-monster-ecology.json` e `eldroth-monster-ecology-indexes.json`.
+- API: `getEldrothMonsterEcology`, `getEldrothMonsterEcologyIndexes`, `getEldrothMonsterEcologyEntry`, `searchEldrothMonsterEcology`.
+- **Isolamento:** nenhum dos novos seres entrou no catálogo `creatures.json`; o total de **7 criaturas curadas** foi preservado. Todos os encontros, frentes, ocorrências e efeitos são hipotéticos, sem estatísticas DW/D&D inferidas.
+
+Veja [dossiê do Ciclo XII](docs/ECOLOGIA_MONSTRUOSA_ELDROTH_CICLO12.md).
