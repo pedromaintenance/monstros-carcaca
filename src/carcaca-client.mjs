@@ -60,6 +60,37 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getAtlasAuthorialReview(){return byKey("atlas_authorial_review");}
+  async function getAtlasAuthorialReviewIndexes(){return byKey("atlas_authorial_review_indexes");}
+  async function getAtlasReviewDecision(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xix:decisao:"))return null;
+    const data=await getAtlasAuthorialReview();
+    return data.decisoes.find(x=>x.id===id)??null;
+  }
+  async function getAtlasReviewCandidate(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xix:candidato:"))return null;
+    const data=await getAtlasAuthorialReview();
+    return data.candidatos.find(x=>x.id===id)??null;
+  }
+  async function searchAtlasReviewDecisions({dominio,prioridade,preRequisito,origemId,query}={}){
+    const data=await getAtlasAuthorialReview();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return data.decisoes.filter(x=>
+      (!dominio||x.dominio===dominio)&&
+      (!prioridade||x.prioridade===prioridade)&&
+      (!preRequisito||x.pre_requisitos.includes(preRequisito))&&
+      (!origemId||x.origens.some(v=>v.id===origemId))&&
+      (!query||norm([x.id,x.pergunta,x.risco_de_canonizacao].join(" ")).includes(norm(query))));
+  }
+  async function searchAtlasReviewCandidates({ciclo,tipo,origemId,query}={}){
+    const data=await getAtlasAuthorialReview();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return data.candidatos.filter(x=>
+      (!ciclo||x.ciclo===String(ciclo).toUpperCase())&&
+      (!tipo||x.tipo===tipo)&&
+      (!origemId||x.referencia.id===origemId)&&
+      (!query||norm([x.id,x.nome,x.tipo].join(" ")).includes(norm(query))));
+  }
   async function getIronwoodCivilSociety(){return byKey("ironwood_civil_society");}
   async function getIronwoodCivilSocietyIndexes(){return byKey("ironwood_civil_society_indexes");}
   async function getIronwoodCivilSocietyEntry(id){
@@ -1449,6 +1480,9 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getAtlasAuthorialReview,getAtlasAuthorialReviewIndexes,
+          getAtlasReviewDecision,getAtlasReviewCandidate,
+          searchAtlasReviewDecisions,searchAtlasReviewCandidates,
           getIronwoodCivilSociety,getIronwoodCivilSocietyIndexes,
           getIronwoodCivilSocietyEntry,searchIronwoodCivilSociety,
           getVandarMemoryAndDead,getVandarMemoryAndDeadIndexes,
