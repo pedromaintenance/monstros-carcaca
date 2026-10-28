@@ -26,6 +26,12 @@ A matriz de [worldbuilding sob Sylara](data/worldbuilding/eldroth-ocupacao-sylar
 
 **Fato estabelecido:** Sylara governa a floresta e utiliza criaturas para vigilância. **Não estabelecido:** um decreto, imposto, cargo, órgão ou mecanismo exato de exploração. Nenhuma hipótese foi automaticamente canonizada.
 
+## Ciclo XVII — Vandar e a política dos mortos
+
+O [dossiê da história urbana de Vandar](docs/VANDAR_POLITICA_DOS_MORTOS_CICLO17.md) trata a cidade como **sociedade desaparecida**, não apenas covil de mortos-vivos. O que sabemos: prosperidade passada, ruínas, ocupação por Lorde Damaris Blackthorn e incursões de seu exército. **Não sabemos** fundação, queda, população, governo anterior, causa do desastre ou identidade dos mortos-vivos.
+
+A [base estruturada](data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json) organiza **3 fases sem datas**, **8 dimensões da vida urbana**, **5 modalidades possíveis de prova**, **4 categorias não legais de situação da morte**, **6 papéis sociais hipotéticos**, **3 modelos de ocupação não adotados**, **4 vinhetas não ocorridas** e **8 decisões de revisão autoral**. O pacote publicado `dist/carcaca/vandar-memory-and-dead.json` tem índices próprios e é consultável por `getVandarMemoryAndDead` e `searchVandarMemoryAndDead`. Nada foi automaticamente canonizado.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.

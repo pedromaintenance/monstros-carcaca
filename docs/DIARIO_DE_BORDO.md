@@ -435,3 +435,13 @@ A ocupação da floresta e o uso de criaturas como vigilantes estão descritos. 
 O atlas inclui 6 posições sociais abstratas (não personagens), 3 modelos alternativos não adotados de administração, 4 dilemas e 4 vinhetas não ocorridas; cinco decisões de governo permanecem com o autor. Validações, índices e API de consulta preservam ausência de números, órgãos e fatos não documentados. A distinção entre coerção e colaboração voluntária e a autonomia das criaturas não-humanas são requisitos da continuidade.
 
 **Próximo ciclo XVII:** Vandar, cidade anterior à ruína e memória dos mortos sob Damaris — sempre separando história documentada das propostas.
+
+## 2026-10-28 · Ciclo XVII — Vandar e a política dos mortos
+
+A prioridade segue em **worldbuilding histórico, cultural, jurídico e político**. Cruzamos o manuscrito autoral do Hack (principalmente p. 5, com religião comparada contextual na p. 24), o atlas XIV e a geografia documentada (`regiao:eldroth`, `lugar:vandar`).
+
+**Fatos que a fonte sustenta:** Vandar foi uma cidade próspera; hoje é ruína ocupada por Lorde Damaris Blackthorn, que comanda um exército de mortos-vivos e utiliza as ruínas para incursões. **Lacunas importantes:** fundação, destruição, agente causador da ruína, população, vida urbana, localização/arquitetura de arquivos e templos, origem e consciência dos mortos-vivos. A narrativa não toma “Damaris ocupa as ruínas” como prova de que ele iniciou a destruição nem identifica os soldados mortos-vivos como ex-moradores.
+
+**Entregas:** `docs/VANDAR_POLITICA_DOS_MORTOS_CICLO17.md` e `data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json` com 3 fases sem datas, 8 questões de sociologia urbana, 5 modalidades de prova não conclusiva, 4 estados jurídico-filosóficos não vigentes da morte, 6 papéis sociais sem NPCs, 3 modelos políticos não adotados, 4 vinhetas nunca ocorridas e 8 perguntas autorais pendentes. JSON Schema, validador, API ESM, índices e testes mantêm as incógnitas explicitamente nulas. As sete criaturas canônicas e a autonomia de Ironwood permanecem intactas.
+
+**Próximo foco — Ciclo XVIII:** a vida civil de Ironwood e a diplomacia descentralizada da resistência.

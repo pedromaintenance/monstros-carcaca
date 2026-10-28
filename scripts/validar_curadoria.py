@@ -3269,6 +3269,84 @@ def validar_ocupacao_sylara_xvi():
     print("Ciclo XVI: 8 mecanismos, 6 posições, 3 modelos, 4 dilemas, 4 vinhetas; nenhuma política ou episódio canonizado.")
 
 
+
+def validar_vandar_politica_mortos_xvii():
+    """Preserva as lacunas de Vandar e proíbe que ficção conjectural vire história."""
+    d=load("data/worldbuilding/vandar-politica-dos-mortos-ciclo17.json")
+    schema=load("schemas/vandar-politica-dos-mortos-xvii.schema.json")
+    Draft202012Validator.check_schema(schema)
+    problems=list(Draft202012Validator(schema).iter_errors(d))
+    require(not problems,f"Ciclo XVII: schema inválido: {problems[:2]}")
+    require(d["aprovacao_autoral"] is False and d["efeito_canonico_automatico"] is False
+            and d["estado"]=="dossie_de_worldbuilding_em_revisao",
+            "Ciclo XVII: promoção canônica indevida.")
+    expected={"fases":3,"tecidos_urbanos":8,"modalidades_de_prova":5,
+        "situacoes_de_morte":4,"papeis_sociais":6,"modelos_do_dominio":3,
+        "vinhetas":4,"decisoes_pendentes":8}
+    require(d["resumo"]==expected,"Ciclo XVII: contagens inesperadas.")
+    require(all(value is None for value in d["linha_do_tempo"].values()),
+            "Ciclo XVII: data ou quantidade histórica inventada.")
+    cats=("fases","tecidos_urbanos","modalidades_de_prova","situacoes_de_morte",
+          "papeis_sociais","modelos_do_dominio","vinhetas","decisoes_para_autor")
+    entries=[item for cat in cats for item in d[cat]]
+    require(len(entries)==41 and len({item["id"] for item in entries})==41,
+            "Ciclo XVII: duplicidade de IDs narrativos.")
+    pagina_ids={p["pagina"] for p in
+        load("fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")["paginas"]}
+    def valid_source(x):
+        return (x["documento"]=="fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+            and x["pagina"] in pagina_ids and
+            x["estado"]=="fonte_manuscrita_sem_ampliacao" and bool(x["sintese"]))
+    require(all(valid_source(f["fonte"]) for f in d["fatos_textuais"]),
+            "Ciclo XVII: fato textual sem página comprovada.")
+    require([x["estatuto"] for x in d["fases"]]==[
+           "fase_documentada_sem_data","lacuna_historica_explicitada",
+           "fase_documentada_sem_data"] and
+           all(x["ano_inicial_ec"] is None and x["ano_final_ec"] is None
+               and valid_source(x["evidencia"]) for x in d["fases"]),
+            "Ciclo XVII: cronologia inventada ou marco de ruína não preservado.")
+    places={x["id"]:x for x in load("data/lugares_carcaca.json")["lugares"]}
+    require(d["lugar_id"]=="lugar:vandar" and d["regiao_id"]=="regiao:eldroth"
+            and places[d["lugar_id"]]["regiao_id"]=="regiao:eldroth",
+            "Ciclo XVII: geografia deslocada ou domínio trocado.")
+    require(d["governante_atual_documentado"]=="Lorde Damaris Blackthorn",
+            "Ciclo XVII: Damaris indevidamente substituído.")
+    for item in d["tecidos_urbanos"]:
+        require(item["instituicao_urbana_confirmada"] is False
+             and item["edificio_confirmado"] is None
+             and item["nome_de_morador_confirmado"] is None
+             and item["quantidade_confirmada"] is None
+             and valid_source(item["fonte_contextual"]),
+             "Ciclo XVII: bairro, instituição ou morador inventado.")
+    for item in d["modalidades_de_prova"]:
+        require(item["arquivo_ou_rito_efetivamente_descoberto"] is False
+            and item["prova_conclusiva"] is False and valid_source(item["fonte_contextual"]),
+            "Ciclo XVII: prova ou arquivo inventado.")
+    for item in d["situacoes_de_morte"]:
+        require(item["regimento_aprovado"] is False and item["caso_real_atestado"] is False
+            and valid_source(item["fonte_contextual"]),
+            "Ciclo XVII: situação jurídica transformada em lei ou caso real.")
+    for item in d["papeis_sociais"]:
+        require(item["personagem_confirmado"] is False
+            and item["povo_de_origem_confirmado"] is None
+            and item["onde_mora_confirmado"] is None,
+            "Ciclo XVII: habitante específico inventado.")
+    require(all(item["estado"]=="alternativa_nao_adotada" and
+                item["configuracao_confirmada"] is False and
+                valid_source(item["evidencia_comum"])
+                for item in d["modelos_do_dominio"]),
+            "Ciclo XVII: modelo de domínio autoralmente não aprovado.")
+    tissue_ids={x["id"] for x in d["tecidos_urbanos"]}
+    require(all(x["tecido_urbano_id"] in tissue_ids and
+                x["ocorreu"] is False and x["novo_objeto_historico_confirmado"] is False
+                and x["novo_personagem_confirmado"] is False for x in d["vinhetas"]),
+            "Ciclo XVII: vinheta virou evento, objeto ou personagem canônico.")
+    require(all(x["estado"]=="pendente_de_aprovacao_autoral"
+                for x in d["decisoes_para_autor"]),
+            "Ciclo XVII: decisões ainda pertencem ao autor.")
+    print("Ciclo XVII: Vandar — 3 fases sem datas, 8 temas urbanos, 5 provas possíveis, 4 estados para debate; 0 promoções.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3397,6 +3475,7 @@ def main():
     validar_atlas_cultural_xiv()
     validar_preconquista_eldroth_xv()
     validar_ocupacao_sylara_xvi()
+    validar_vandar_politica_mortos_xvii()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
