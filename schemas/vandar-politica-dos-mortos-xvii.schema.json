@@ -1,0 +1,757 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XVII — Vandar, política dos mortos, sem promoção automática",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estado": {
+      "const": "dossie_de_worldbuilding_em_revisao"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "efeito_canonico_automatico": {
+      "const": false
+    },
+    "lugar_id": {
+      "const": "lugar:vandar"
+    },
+    "regiao_id": {
+      "const": "regiao:eldroth"
+    },
+    "governante_atual_documentado": {
+      "const": "Lorde Damaris Blackthorn"
+    },
+    "fonte_autoral": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "atlas_anterior": {
+      "const": "data/worldbuilding/eldroth-ironwood-vandar-ciclo14.json"
+    },
+    "linha_do_tempo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fundacao_ec": {
+          "type": "null"
+        },
+        "queda_ec": {
+          "type": "null"
+        },
+        "comeco_dominio_damaris_ec": {
+          "type": "null"
+        },
+        "numero_de_mortos": {
+          "type": "null"
+        },
+        "numero_de_sobreviventes": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "fundacao_ec",
+        "queda_ec",
+        "comeco_dominio_damaris_ec",
+        "numero_de_mortos",
+        "numero_de_sobreviventes"
+      ]
+    },
+    "fatos_textuais": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvii:fato:"
+          },
+          "fonte": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "documento": {
+                "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+              },
+              "pagina": {
+                "type": "integer",
+                "enum": [
+                  5,
+                  24
+                ]
+              },
+              "sintese": {
+                "type": "string",
+                "minLength": 1
+              },
+              "estado": {
+                "const": "fonte_manuscrita_sem_ampliacao"
+              }
+            },
+            "required": [
+              "documento",
+              "pagina",
+              "sintese",
+              "estado"
+            ]
+          },
+          "afirmacao": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "fonte",
+          "afirmacao"
+        ]
+      }
+    },
+    "limites": {
+      "type": "array",
+      "minItems": 10,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "resumo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fases": {
+          "const": 3
+        },
+        "tecidos_urbanos": {
+          "const": 8
+        },
+        "modalidades_de_prova": {
+          "const": 5
+        },
+        "situacoes_de_morte": {
+          "const": 4
+        },
+        "papeis_sociais": {
+          "const": 6
+        },
+        "modelos_do_dominio": {
+          "const": 3
+        },
+        "vinhetas": {
+          "const": 4
+        },
+        "decisoes_pendentes": {
+          "const": 8
+        }
+      },
+      "required": [
+        "fases",
+        "tecidos_urbanos",
+        "modalidades_de_prova",
+        "situacoes_de_morte",
+        "papeis_sociais",
+        "modelos_do_dominio",
+        "vinhetas",
+        "decisoes_pendentes"
+      ]
+    },
+    "fases": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvii:fase:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ano_inicial_ec": {
+            "type": "null"
+          },
+          "ano_final_ec": {
+            "type": "null"
+          },
+          "estatuto": {
+            "enum": [
+              "fase_documentada_sem_data",
+              "lacuna_historica_explicitada"
+            ]
+          },
+          "evidencia": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "documento": {
+                "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+              },
+              "pagina": {
+                "type": "integer",
+                "enum": [
+                  5,
+                  24
+                ]
+              },
+              "sintese": {
+                "type": "string",
+                "minLength": 1
+              },
+              "estado": {
+                "const": "fonte_manuscrita_sem_ampliacao"
+              }
+            },
+            "required": [
+              "documento",
+              "pagina",
+              "sintese",
+              "estado"
+            ]
+          },
+          "afirmacoes_permitidas": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "nao_deduzir": {
+            "type": "array",
+            "minItems": 4,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          }
+        },
+        "required": [
+          "id",
+          "nome",
+          "ano_inicial_ec",
+          "ano_final_ec",
+          "estatuto",
+          "evidencia",
+          "afirmacoes_permitidas",
+          "nao_deduzir"
+        ]
+      }
+    },
+    "tecidos_urbanos": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvii:tecido:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "dominio": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "pergunta_de_reconstrucao_nao_confirmada"
+          },
+          "afirmacao_minima_documentada": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_historica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "desdobramento_possivel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "risco_de_falsa_precisao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limite_documental": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte_contextual": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "documento": {
+                "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+              },
+              "pagina": {
+                "type": "integer",
+                "enum": [
+                  5,
+                  24
+                ]
+              },
+              "sintese": {
+                "type": "string",
+                "minLength": 1
+              },
+              "estado": {
+                "const": "fonte_manuscrita_sem_ampliacao"
+              }
+            },
+            "required": [
+              "documento",
+              "pagina",
+              "sintese",
+              "estado"
+            ]
+          },
+          "instituicao_urbana_confirmada": {
+            "const": false
+          },
+          "edificio_confirmado": {
+            "type": "null"
+          },
+          "nome_de_morador_confirmado": {
+            "type": "null"
+          },
+          "quantidade_confirmada": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "dominio",
+          "estado",
+          "afirmacao_minima_documentada",
+          "pergunta_historica",
+          "desdobramento_possivel",
+          "risco_de_falsa_precisao",
+          "limite_documental",
+          "fonte_contextual",
+          "instituicao_urbana_confirmada",
+          "edificio_confirmado",
+          "nome_de_morador_confirmado",
+          "quantidade_confirmada"
+        ]
+      }
+    },
+    "modalidades_de_prova": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvii:prova:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "modalidade": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "hipotese_de_verificacao_nao_adotada"
+          },
+          "utilizacao_possivel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "risco_de_falsa_prova": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cautela_etica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "fonte_contextual": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "documento": {
+                "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+              },
+              "pagina": {
+                "type": "integer",
+                "enum": [
+                  5,
+                  24
+                ]
+              },
+              "sintese": {
+                "type": "string",
+                "minLength": 1
+              },
+              "estado": {
+                "const": "fonte_manuscrita_sem_ampliacao"
+              }
+            },
+            "required": [
+              "documento",
+              "pagina",
+              "sintese",
+              "estado"
+            ]
+          },
+          "arquivo_ou_rito_efetivamente_descoberto": {
+            "const": false
+          },
+          "prova_conclusiva": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "modalidade",
+          "estado",
+          "utilizacao_possivel",
+          "risco_de_falsa_prova",
+          "cautela_etica",
+          "fonte_contextual",
+          "arquivo_ou_rito_efetivamente_descoberto",
+          "prova_conclusiva"
+        ]
+      }
+    },
+    "situacoes_de_morte": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvii:situacao:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "distincao_juridica_proposta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "categoria_de_debate_nao_vigente"
+          },
+          "cautela": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_aberta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "regimento_aprovado": {
+            "const": false
+          },
+          "caso_real_atestado": {
+            "const": false
+          },
+          "fonte_contextual": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "documento": {
+                "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+              },
+              "pagina": {
+                "type": "integer",
+                "enum": [
+                  5,
+                  24
+                ]
+              },
+              "sintese": {
+                "type": "string",
+                "minLength": 1
+              },
+              "estado": {
+                "const": "fonte_manuscrita_sem_ampliacao"
+              }
+            },
+            "required": [
+              "documento",
+              "pagina",
+              "sintese",
+              "estado"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "distincao_juridica_proposta",
+          "estado",
+          "cautela",
+          "pergunta_aberta",
+          "regimento_aprovado",
+          "caso_real_atestado",
+          "fonte_contextual"
+        ]
+      }
+    },
+    "papeis_sociais": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvii:papel:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "campo_de_interesse": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "papel_exploratorio_nao_personagem"
+          },
+          "motivacao_hipotetica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limite": {
+            "type": "string",
+            "minLength": 1
+          },
+          "personagem_confirmado": {
+            "const": false
+          },
+          "povo_de_origem_confirmado": {
+            "type": "null"
+          },
+          "onde_mora_confirmado": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "campo_de_interesse",
+          "estado",
+          "motivacao_hipotetica",
+          "limite",
+          "personagem_confirmado",
+          "povo_de_origem_confirmado",
+          "onde_mora_confirmado"
+        ]
+      }
+    },
+    "modelos_do_dominio": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvii:modelo:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "alternativa_nao_adotada"
+          },
+          "hipotese_de_poder": {
+            "type": "string",
+            "minLength": 1
+          },
+          "implicacao_para_vivos": {
+            "type": "string",
+            "minLength": 1
+          },
+          "evidencia_comum": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "documento": {
+                "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+              },
+              "pagina": {
+                "type": "integer",
+                "enum": [
+                  5,
+                  24
+                ]
+              },
+              "sintese": {
+                "type": "string",
+                "minLength": 1
+              },
+              "estado": {
+                "const": "fonte_manuscrita_sem_ampliacao"
+              }
+            },
+            "required": [
+              "documento",
+              "pagina",
+              "sintese",
+              "estado"
+            ]
+          },
+          "limite": {
+            "type": "string",
+            "minLength": 1
+          },
+          "configuracao_confirmada": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "estado",
+          "hipotese_de_poder",
+          "implicacao_para_vivos",
+          "evidencia_comum",
+          "limite",
+          "configuracao_confirmada"
+        ]
+      }
+    },
+    "vinhetas": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvii:vinheta:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "vinheta_hipotetica_nao_ocorrida"
+          },
+          "abertura_condicional": {
+            "type": "string",
+            "minLength": 1
+          },
+          "questao_humana": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tecido_urbano_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvii:tecido:"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "novo_objeto_historico_confirmado": {
+            "const": false
+          },
+          "novo_personagem_confirmado": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "estado",
+          "abertura_condicional",
+          "questao_humana",
+          "tecido_urbano_id",
+          "ocorreu",
+          "novo_objeto_historico_confirmado",
+          "novo_personagem_confirmado"
+        ]
+      }
+    },
+    "decisoes_para_autor": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 0,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xvii:decisao:"
+          },
+          "pergunta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "pendente_de_aprovacao_autoral"
+          }
+        },
+        "required": [
+          "id",
+          "pergunta",
+          "estado"
+        ]
+      }
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "efeito_canonico_automatico",
+    "lugar_id",
+    "regiao_id",
+    "governante_atual_documentado",
+    "fonte_autoral",
+    "atlas_anterior",
+    "linha_do_tempo",
+    "fatos_textuais",
+    "limites",
+    "resumo",
+    "fases",
+    "tecidos_urbanos",
+    "modalidades_de_prova",
+    "situacoes_de_morte",
+    "papeis_sociais",
+    "modelos_do_dominio",
+    "vinhetas",
+    "decisoes_para_autor"
+  ]
+}
