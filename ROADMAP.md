@@ -417,3 +417,16 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Documentar limites de aprovação e distinguir movimentos inspiradores de mecânicas efetivamente adquiridas.
 - [ ] Verificar quantitativamente a cadeia de abastecimento da resistência somente com fontes ou premissas declaradas.
 - [ ] Desenvolver a próxima rodada de movimentos ficcionais de ameaças da floresta, sem promover NPCs hipotéticos a monstros canônicos.
+
+## Ciclo XII — Ecologia Monstruosa de Eldroth (2026-10-28)
+
+- [x] Conferir a ontologia, sete fichas existentes, povoamento XI e fronteiras entre Ironwood, Eldroth e Vandar.
+- [x] Propor oito criaturas originais com instinto, três movimentos DW, sinais, ecologia, perguntas em aberto e três alternativas ao combate.
+- [x] Relacionar seis encontros às cenas anteriores por ID sem confirmar que ocorreram.
+- [x] Construir quatro pressões ecológico-políticas sem medições e duas frentes com três presságios não realizados cada.
+- [x] Manter Tipo Carcaça **proposto**, ocorrências não confirmadas, dados reprodutivos/alimentares nulos e estatísticas DW pendentes.
+- [x] Criar schema estrito, validações de referências, índices deterministas, API e testes.
+- [x] Garantir que rascunhos não entrem em `curadoria/criaturas` nem alterem o catálogo de sete fichas anteriores.
+- [x] Ampliar CI para alterações em `data/propostas/**` sem permitir publicação automática de branches fora da `main`.
+- [ ] Ciclo XIII: criar fichas mecânicas DW **individualmente**, seguindo o procedimento e submetendo à aprovação autoral.
+- [ ] Revisar tipologia, função ecológica e alcance mágico antes de qualquer promoção canônica.

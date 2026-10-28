@@ -393,3 +393,11 @@ Criadas 40 entradas — cinco microespaços, cinco coletivos, oito pessoas, quat
 A fronteira canônica foi preservada: Eldroth continua sob Lady Sylara; Vandar, sob Lord Damaris; Ironwood é fortaleza de resistência liderada por Elara Stormoak, ao sul de Thargrid. Movimentos de elfos da floresta e shadow fey são apenas referências culturais. `REQUER` mantém seu sentido obrigatório em qualquer futura ficha.
 
 As saídas ficam em `dist/carcaca/ironwood-eldroth-resistance*.json`, com manifest/índices gerados, cliente somente leitura, integridade no validador e cobertura de testes Node. Dossiê editorial em `docs/IRONWOOD_ELDROTH_POVOAMENTO_CICLO11.md`.
+
+## 2026-10-28 · Ciclo XII — Ecologia Monstruosa sem canonização
+
+Retomada direta do Ciclo XI. Foram inventariadas oito criaturas **novas e propostas** para Eldroth, Vandar e Ironwood, seis encontros vinculados a cenas anteriores, quatro pressões e duas frentes Dungeon World não iniciadas. A arquitetura separa `data/propostas` (hipóteses jogáveis) de `curadoria/criaturas` (fichas de referência).
+
+As propostas incluem Coruja do Eco Emprestado, Micélio das Vozes Partidas, Cardos que Bebem Cinza, Cervo dos Galhos Invertidos, Besouros da Casca Riscada, Escrivão da Folha Lacrada, Andarilho de Sepultura Negada e Cão de Esporos do Limiar. Nenhuma ocorrência territorial, filiação à Corte, dieta ou biologia reprodutiva foi confirmada. Instinto e movimentos são ficcionais; números aguardam criação DW.
+
+Integração técnica: contrato JSON Schema, `scripts/validar_curadoria.py`, índice em `scripts/gerar_indices_curadoria.py`, métodos ESM e testes reais Python/Node. A automação passa a observar toda a pasta `data/propostas/**` mantendo a política de publicar apenas em `main`. Consulte `docs/ECOLOGIA_MONSTRUOSA_ELDROTH_CICLO12.md`.

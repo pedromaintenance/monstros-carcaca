@@ -256,6 +256,30 @@ def build():
     rio_garganta=load("data/propostas/garganta-rio-ancestral-social-hack.json")
     thargrid=load("data/propostas/thargrid-resistencia-cotidiano-hack.json")
     floresta=load("data/propostas/ironwood-eldroth-resistencia-hack.json")
+    ecologia_xii=load("data/propostas/eldroth-ecologia-monstruosa-dw.json")
+    cats_xii=("criaturas","encontros","pressoes","frentes")
+    entidades_xii=[{**item,"categoria_indice":categoria}
+                   for categoria in cats_xii for item in ecologia_xii[categoria]]
+    if len(entidades_xii)!=20:
+        raise ValueError("Ecologia Monstruosa XII deve conter 20 propostas.")
+    def indice_ecologia_xii(extrair):
+        grupos=defaultdict(set)
+        for item in entidades_xii:
+            valor=extrair(item)
+            for chave in (valor if isinstance(valor,list) else [valor]):
+                if chave is not None and chave!="":
+                    grupos[str(chave)].add(item["id"])
+        return {k:sorted(v) for k,v in sorted(grupos.items())}
+    indices_xii={
+        "by_categoria":indice_ecologia_xii(lambda r:r["categoria_indice"]),
+        "by_tipo_carcaca_proposto":indice_ecologia_xii(lambda r:r.get("tipo_carcaca_proposto")),
+        "by_escopo":indice_ecologia_xii(lambda r:r.get("escopo",r.get("localizacao_proposta",{}).get("escopo"))),
+        "by_cena_anterior":indice_ecologia_xii(lambda r:r.get("cena_anterior_id",r.get("vinculo_cena_anterior"))),
+        "by_criatura":indice_ecologia_xii(lambda r:r.get("criaturas_ids",[])),
+        "by_encontro":indice_ecologia_xii(lambda r:r.get("encontros_ids",[])),
+        "by_lugar_proposto":indice_ecologia_xii(lambda r:r.get("localizacao_proposta",{}).get("local_proposto_id")),
+        "by_organizacao_dw":indice_ecologia_xii(lambda r:r.get("dungeon_world",{}).get("organizacao_tag_proposta"))
+    }
     categorias_floresta=("lugares","coletivos","pessoas","dilemas","fluxos","acordos","cenas","arcos")
     linhas_floresta=[{**entidade,"categoria":categoria}
                      for categoria in categorias_floresta for entidade in floresta[categoria]]
@@ -816,6 +840,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "eldroth_monster_ecology":"eldroth-monster-ecology.json",
+        "eldroth_monster_ecology_indexes":"eldroth-monster-ecology-indexes.json",
         "ironwood_eldroth_resistance":"ironwood-eldroth-resistance.json",
         "ironwood_eldroth_resistance_indexes":"ironwood-eldroth-resistance-indexes.json",
         "thargrid_social_resistance":"thargrid-social-resistance.json",
@@ -938,6 +964,11 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_entidades_ecologia_monstruosa_xii_propostas":len(entidades_xii),
+        "total_criaturas_ecologia_monstruosa_xii_propostas":len(ecologia_xii["criaturas"]),
+        "total_encontros_ecologia_monstruosa_xii_propostos":len(ecologia_xii["encontros"]),
+        "total_pressoes_ecologia_monstruosa_xii_propostas":len(ecologia_xii["pressoes"]),
+        "total_frentes_ecologia_monstruosa_xii_propostas":len(ecologia_xii["frentes"]),
         "total_entidades_ironwood_eldroth_propostas":len(linhas_floresta),
         "total_lugares_ironwood_eldroth_propostos":len(floresta["lugares"]),
         "total_pessoas_ironwood_eldroth_propostas":len(floresta["pessoas"]),
@@ -1062,6 +1093,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["eldroth_monster_ecology"]:ecologia_xii,
+           files["eldroth_monster_ecology_indexes"]:indices_xii,
            files["ironwood_eldroth_resistance"]:floresta,
            files["ironwood_eldroth_resistance_indexes"]:indices_floresta,
            files["thargrid_social_resistance"]:thargrid,

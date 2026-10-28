@@ -1,0 +1,579 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/ecologia-monstruosa-xii.schema.json",
+  "title": "Ciclo XII — propostas ecológicas e movimentos DW (não canônico)",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "efeito_automatico_no_canon",
+    "fonte_primaria",
+    "fontes_referencia",
+    "principios",
+    "contagens",
+    "criaturas",
+    "encontros",
+    "pressoes",
+    "frentes"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estado": {
+      "const": "propostas_narrativas_nao_canonicas"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "efeito_automatico_no_canon": {
+      "const": false
+    },
+    "fonte_primaria": {
+      "const": "data/propostas/ironwood-eldroth-resistencia-hack.json"
+    },
+    "fontes_referencia": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "principios": {
+      "type": "array",
+      "minItems": 5,
+      "items": {
+        "type": "string",
+        "minLength": 1
+      }
+    },
+    "contagens": {
+      "type": "object",
+      "required": [
+        "criaturas",
+        "encontros",
+        "pressoes",
+        "frentes"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "criaturas": {
+          "const": 8
+        },
+        "encontros": {
+          "const": 6
+        },
+        "pressoes": {
+          "const": 4
+        },
+        "frentes": {
+          "const": 2
+        }
+      }
+    },
+    "criaturas": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "nome",
+          "categoria",
+          "estado",
+          "tipo_carcaca_proposto",
+          "classe_de_registro",
+          "aprovacao_autoral",
+          "ocorrencia_confirmada",
+          "localizacao_proposta",
+          "ecologia",
+          "dungeon_world",
+          "solucoes_nao_violentas",
+          "ancora_ficcional",
+          "vinculo_cena_anterior"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^ecologia-xii:criatura:[a-z0-9-]+$"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "categoria": {
+            "const": "especie_ou_manifestacao_proposta"
+          },
+          "estado": {
+            "const": "proposta_nao_canonica"
+          },
+          "tipo_carcaca_proposto": {
+            "type": "string",
+            "minLength": 1
+          },
+          "classe_de_registro": {
+            "const": "rascunho_ecologico"
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "ocorrencia_confirmada": {
+            "const": false
+          },
+          "localizacao_proposta": {
+            "type": "object",
+            "required": [
+              "escopo",
+              "local_proposto_id",
+              "regiao_canonica_de_referencia",
+              "habitat_possivel"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "escopo": {
+                "enum": [
+                  "eldroth",
+                  "ironwood",
+                  "vandar"
+                ]
+              },
+              "local_proposto_id": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "regiao_canonica_de_referencia": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "habitat_possivel": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "ecologia": {
+            "type": "object",
+            "required": [
+              "sinais",
+              "funcao_hipotetica",
+              "alimentacao_confirmada",
+              "reproducao_confirmada",
+              "densidade_confirmada",
+              "relacao_com_ocupacao",
+              "hipoteses_abertas"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "sinais": {
+                "type": "array",
+                "minItems": 2,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              },
+              "funcao_hipotetica": {
+                "type": "string",
+                "minLength": 1
+              },
+              "alimentacao_confirmada": {
+                "type": "null"
+              },
+              "reproducao_confirmada": {
+                "type": "null"
+              },
+              "densidade_confirmada": {
+                "type": "null"
+              },
+              "relacao_com_ocupacao": {
+                "type": "string",
+                "minLength": 1
+              },
+              "hipoteses_abertas": {
+                "type": "array",
+                "minItems": 1,
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                }
+              }
+            }
+          },
+          "dungeon_world": {
+            "type": "object",
+            "required": [
+              "estado",
+              "instinto",
+              "organizacao_tag_proposta",
+              "movimentos",
+              "estatisticas"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "estado": {
+                "const": "instinto_e_movimentos_propostos"
+              },
+              "instinto": {
+                "type": "string",
+                "minLength": 1
+              },
+              "organizacao_tag_proposta": {
+                "enum": [
+                  "solitario",
+                  "grupo",
+                  "horda"
+                ]
+              },
+              "movimentos": {
+                "type": "array",
+                "minItems": 3,
+                "items": {
+                  "type": "object",
+                  "required": [
+                    "nome",
+                    "texto",
+                    "origem"
+                  ],
+                  "additionalProperties": false,
+                  "properties": {
+                    "nome": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "texto": {
+                      "type": "string",
+                      "minLength": 1
+                    },
+                    "origem": {
+                      "const": "criacao_autoral_ciclo_xii"
+                    }
+                  }
+                }
+              },
+              "estatisticas": {
+                "type": "object",
+                "required": [
+                  "estado",
+                  "pv",
+                  "armadura",
+                  "dano",
+                  "nd_dnd"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "estado": {
+                    "const": "pendente_do_procedimento_dw"
+                  },
+                  "pv": {
+                    "type": "null"
+                  },
+                  "armadura": {
+                    "type": "null"
+                  },
+                  "dano": {
+                    "type": "null"
+                  },
+                  "nd_dnd": {
+                    "type": "null"
+                  }
+                }
+              }
+            }
+          },
+          "solucoes_nao_violentas": {
+            "type": "array",
+            "minItems": 2,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "ancora_ficcional": {
+            "type": "object",
+            "required": [
+              "referencia",
+              "origem",
+              "nota"
+            ],
+            "additionalProperties": false,
+            "properties": {
+              "referencia": {
+                "type": "string",
+                "minLength": 1
+              },
+              "origem": {
+                "const": "povoamento_xi_proposto"
+              },
+              "nota": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          },
+          "vinculo_cena_anterior": {
+            "type": "string",
+            "minLength": 1
+          }
+        }
+      }
+    },
+    "encontros": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "nome",
+          "estado",
+          "ocorreu",
+          "cena_anterior_id",
+          "criaturas_ids",
+          "escopo",
+          "abertura_condicional",
+          "pergunta_em_aberto",
+          "escolhas_sem_combater",
+          "consequencia_se_ignorado_proposta",
+          "resultado_canonico"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^ecologia-xii:encontro:[a-z0-9-]+$"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "encontro_hipotetico"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "cena_anterior_id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "criaturas_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^ecologia-xii:(criatura|encontro|pressao|frente):[a-z0-9-]+$"
+            }
+          },
+          "escopo": {
+            "enum": [
+              "eldroth",
+              "vandar",
+              "ironwood"
+            ]
+          },
+          "abertura_condicional": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_em_aberto": {
+            "type": "string",
+            "minLength": 1
+          },
+          "escolhas_sem_combater": {
+            "type": "array",
+            "minItems": 3,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "consequencia_se_ignorado_proposta": {
+            "type": "string",
+            "minLength": 1
+          },
+          "resultado_canonico": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    "pressoes": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "nome",
+          "estado",
+          "escopo",
+          "ocorreu",
+          "origem_possivel",
+          "consequencia_social_possivel",
+          "alternativa_a_investigar",
+          "criaturas_ids",
+          "medicao",
+          "periodo"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^ecologia-xii:pressao:[a-z0-9-]+$"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "pressao_condicional_nao_observada"
+          },
+          "escopo": {
+            "enum": [
+              "eldroth",
+              "vandar",
+              "ironwood"
+            ]
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "origem_possivel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "consequencia_social_possivel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "alternativa_a_investigar": {
+            "type": "string",
+            "minLength": 1
+          },
+          "criaturas_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^ecologia-xii:(criatura|encontro|pressao|frente):[a-z0-9-]+$"
+            }
+          },
+          "medicao": {
+            "type": "null"
+          },
+          "periodo": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    "frentes": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "nome",
+          "estado",
+          "escopo",
+          "ocorreu",
+          "impulso_dw_proposto",
+          "criaturas_ids",
+          "encontros_ids",
+          "pressagios_sombrios_propostos",
+          "desastre_iminente_proposto",
+          "pergunta_em_aberto",
+          "pressagios_realizados",
+          "resultado_canonico"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^ecologia-xii:frente:[a-z0-9-]+$"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "frente_dw_proposta"
+          },
+          "escopo": {
+            "enum": [
+              "eldroth",
+              "vandar",
+              "ironwood",
+              "multirregional_sem_rota_confirmada"
+            ]
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "impulso_dw_proposto": {
+            "type": "string",
+            "minLength": 1
+          },
+          "criaturas_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^ecologia-xii:(criatura|encontro|pressao|frente):[a-z0-9-]+$"
+            }
+          },
+          "encontros_ids": {
+            "type": "array",
+            "minItems": 1,
+            "items": {
+              "type": "string",
+              "pattern": "^ecologia-xii:(criatura|encontro|pressao|frente):[a-z0-9-]+$"
+            }
+          },
+          "pressagios_sombrios_propostos": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 3,
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "desastre_iminente_proposto": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_em_aberto": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pressagios_realizados": {
+            "type": "array",
+            "maxItems": 0
+          },
+          "resultado_canonico": {
+            "type": "null"
+          }
+        }
+      }
+    }
+  }
+}
