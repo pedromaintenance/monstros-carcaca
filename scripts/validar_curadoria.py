@@ -2012,6 +2012,26 @@ def validar_artifice_integral():
             edges[m["id"]]=req["movimento_id"]
     require(len(parts)==59 and sum(len(m["opcoes"]) for m in moves)==32 and len(edges)==7,
             "Opções/partes/requisitos incompletos.")
+    # A emenda autorizada muda somente uma referência no corpo de um movimento.
+    # O hash da fonte identifica o manuscrito anterior à correção informada.
+    emendas=obj.get("correcoes_autorais",[])
+    require(emendas==[{
+       "movimento_id":"movimento-classe:paragrafo-2703",
+       "paragrafo_docx":2703,
+       "tipo":"correcao_referencia_no_corpo",
+       "referencia_anterior":"Alquimista Federal",
+       "referencia_corrigida":"Arma Humana",
+       "confirmacao_autoral":"2026-10-27",
+       "observacao":"Emenda autoral posterior à versão do DOCX identificada em fonte_sha256; não modifica REQUER, opções ou efeitos."
+    }], "Emenda autoral de ARTÍFICE alterada ou ausente.")
+    corrigido=by_id["movimento-classe:paragrafo-2703"]
+    require("punição do movimento Arma Humana" in corrigido["texto_original"]
+            and "Alquimista Federal" not in corrigido["texto_original"]
+            and all("Alquimista Federal" not in p["texto"] for m in moves for p in m["partes"]),
+            "A referência obsoleta reapareceu no corpo do ARTÍFICE.")
+    require(corrigido["requisito_literal"]=="Arma Humana" and
+            corrigido["requisito_estruturado"]["movimento_id"]=="movimento-classe:paragrafo-2702",
+            "A emenda não pode alterar REQUER de AQUILO QUE VOCÊS CHAMAM DE MUNDO.")
     for start in edges:
         seen={start};current=start
         while current in edges:

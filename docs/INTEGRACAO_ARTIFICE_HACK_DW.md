@@ -14,7 +14,9 @@
 
 Todos os requisitos são literalmente documentados. As práticas de engenharia, medicina e culinária não são subordinadas a Artífice ou Alquimista sem `REQUER` no manuscrito.
 
-**Observação de curadoria:** *AQUILO QUE VOCÊS CHAMAM DE MUNDO* menciona em seu corpo o movimento *Alquimista Federal*, porém não há entrada desse título no inventário da classe, e ele não integra o `REQUER` literal. A referência foi preservada no texto como redigida, sem inferir um novo pré-requisito. É uma pendência de revisão autoral, não bloqueia a transcrição.
+**Correção autoral — resolvida em 27/10/2026:** o autor confirmou que *Alquimista Federal* era o nome anterior de **Arma Humana** e que havia permanecido por engano no corpo de **AQUILO QUE VOCÊS CHAMAM DE MUNDO**. A referência foi corrigida para **Arma Humana** no catálogo integral, sem alterar efeitos, opções, títulos ou a dependência mecânica já existente (`REQUER: Arma Humana`).
+
+A versão do DOCX anexada ao projeto ainda contém o nome antigo. Portanto, `fonte_sha256` mantém o checksum dessa versão documental original, enquanto `correcoes_autorais` registra expressamente a emenda feita por confirmação do autor. O extrator aplica a mesma substituição pontual ao reprocessar essa versão, impedindo que a grafia obsoleta retorne. Quando o DOCX corrigido for disponibilizado, o inventário e os checksums poderão ser atualizados contra a nova versão.
 
 ### Arquivos distribuídos
 

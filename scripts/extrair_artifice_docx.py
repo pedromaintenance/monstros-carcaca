@@ -31,6 +31,15 @@ def extract(source,inventory):
         if req!=m['requisito_literal']:raise ValueError(f'REQUER divergente {i}')
         body='\n'.join(lines).strip()
         if not body:raise ValueError('Corpo vazio')
+        # Emenda autoral confirmada em 27/10/2026. O DOCX original do inventário
+        # ainda trazia a referência antiga; ela não faz parte do REQUER.
+        if m['id']=='movimento-classe:paragrafo-2703':
+            antigo='Alquimista Federal'
+            if antigo in body:
+                if body.count(antigo)!=1:raise ValueError('Referência antiga repetida')
+                body=body.replace(antigo,'Arma Humana')
+            elif 'punição do movimento Arma Humana' not in body:
+                raise ValueError('Referência autoral corrigida não encontrada')
         parts=[{'paragrafo_docx':i,'tipo':'corpo','texto':body}];options=[]
         for j in range(i+1,end):
             p=doc.paragraphs[j];v=p.text.strip()
@@ -69,7 +78,15 @@ def extract(source,inventory):
     return {'schema_version':'0.1.0','fonte':inv['fonte'],'fonte_sha256':digest,
       'grupo':'ARTÍFICE','posicao':'indices_paragrafo_docx_zero_based',
       'descricao':'Transcrição integral dos movimentos de ARTÍFICE com engenharia, alquimia, cuidados, gastronomia e requisitos literais; não homologa mecânicas.',
-      'movimentos':moves,'integridade':counts}
+      'movimentos':moves,'integridade':counts,'correcoes_autorais':[{
+        'movimento_id':'movimento-classe:paragrafo-2703',
+        'paragrafo_docx':2703,
+        'tipo':'correcao_referencia_no_corpo',
+        'referencia_anterior':'Alquimista Federal',
+        'referencia_corrigida':'Arma Humana',
+        'confirmacao_autoral':'2026-10-27',
+        'observacao':'Emenda autoral posterior à versão do DOCX identificada em fonte_sha256; não modifica REQUER, opções ou efeitos.'
+      }]}
 if __name__=='__main__':
     if len(sys.argv)<3:raise SystemExit(__doc__)
     out=Path(sys.argv[3] if len(sys.argv)>3 else 'data/lore/hack-carcaca-dw-artifice-integrais.json.gz')

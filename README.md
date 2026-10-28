@@ -365,6 +365,6 @@ O cliente expõe `getNecromancerMovements`, `getNecromancerMovementIndexes`, `se
 
 Integração de **23 movimentos integrais de ARTÍFICE**, com **32 opções**, **59 trechos documentais** e **7 REQUER diretos**. A cobertura passa para **592 de 632 movimentos de classe (93,7%)**. Três raízes documentais concentram os requisitos: ARTÍFICE (1), ALQUIMISTA (3) e TRANSMUTAÇÃO ALQUÍMICA (3). Engenharia, medicina e culinária não recebem requisitos que não constam no manuscrito.
 
-O movimento AQUILO QUE VOCÊS CHAMAM DE MUNDO exige ARMA HUMANA, que por sua vez exige TROCA EQUIVALENTE e, indiretamente, TRANSMUTAÇÃO ALQUÍMICA. A API `getArtificerRequirementPreview` percorre a cadeia completa sem liberar compras. A alusão no corpo do texto a "Alquimista Federal" foi preservada como redação original, não modelada como um REQUER adicional.
+O movimento AQUILO QUE VOCÊS CHAMAM DE MUNDO exige ARMA HUMANA, que por sua vez exige TROCA EQUIVALENTE e, indiretamente, TRANSMUTAÇÃO ALQUÍMICA. A API `getArtificerRequirementPreview` percorre a cadeia completa sem liberar compras. A referência obsoleta a "Alquimista Federal" no corpo de AQUILO QUE VOCÊS CHAMAM DE MUNDO foi **corrigida para Arma Humana por confirmação autoral em 27/10/2026**, sem alterar o `REQUER` nem criar dependências. A emenda está registrada no pacote de origem e protegida pelos testes.
 
 Fonte versionada: `data/lore/hack-carcaca-dw-artifice-integrais.json.gz`; catálogo legível: `dist/carcaca/hack-artificer-movements.json`. Detalhes em [Integração do Artífice](docs/INTEGRACAO_ARTIFICE_HACK_DW.md).

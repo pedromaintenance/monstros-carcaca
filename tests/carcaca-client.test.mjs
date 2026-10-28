@@ -149,7 +149,7 @@ const fixtures={
     {id:"movimento-classe:paragrafo-2703",grupo:"ARTÍFICE",titulo:"AQUILO QUE VOCÊS CHAMAM DE MUNDO",
      requisito_literal:"Arma Humana",requisito_estruturado:{
        tipo:"movimento_exato",movimento_id:"movimento-classe:paragrafo-2702"},
-     opcoes:[],texto_original:"Quando sofrer punição.",aplicacao_canonica:false}
+     opcoes:[],texto_original:"Quando a punição do movimento Arma Humana lhe levar a 0 Pontos de Vida.",aplicacao_canonica:false}
   ],
   "hack-artificer-movement-indexes.json":{
     by_requisito_tipo:{movimento_exato:["movimento-classe:paragrafo-2701",
@@ -1970,6 +1970,11 @@ test("Artífice preserva cadeia alquímica transitiva, opções e REQUER obrigat
     raizDependencia:"movimento-classe:paragrafo-2700"})).length,3);
   assert.equal((await atlas.getArtificerMovementIndexes()).by_requisito_tipo.movimento_exato.length,3);
   const id="movimento-classe:paragrafo-2703";
+  const movimento=await atlas.getArtificerMovement(id);
+  assert.match(movimento.texto_original,/punição do movimento Arma Humana/);
+  assert.doesNotMatch(movimento.texto_original,/Alquimista Federal/);
+  assert.equal(movimento.requisito_literal,"Arma Humana");
+  assert.equal((await atlas.searchArtificerMovements({query:"punição do movimento Arma Humana"})).length,1);
   const missing=await atlas.getArtificerRequirementPreview(id);
   assert.deepEqual(missing.cadeia_imediato_para_raiz.map(x=>x.movimento_id),[
     "movimento-classe:paragrafo-2702","movimento-classe:paragrafo-2701","movimento-classe:paragrafo-2700"]);
