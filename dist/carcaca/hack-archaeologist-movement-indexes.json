@@ -1,0 +1,53 @@
+{
+  "by_titulo": {
+    "CAMADAS": [
+      "movimento-classe:paragrafo-2820"
+    ],
+    "CONTEXTO É TUDO": [
+      "movimento-classe:paragrafo-2822"
+    ],
+    "NÃO TOQUE NISSO": [
+      "movimento-classe:paragrafo-2821"
+    ]
+  },
+  "by_grupo": {
+    "ARQUEÓLOGO": [
+      "movimento-classe:paragrafo-2820",
+      "movimento-classe:paragrafo-2821",
+      "movimento-classe:paragrafo-2822"
+    ]
+  },
+  "by_paragrafo": {
+    "2820": [
+      "movimento-classe:paragrafo-2820"
+    ],
+    "2821": [
+      "movimento-classe:paragrafo-2821"
+    ],
+    "2822": [
+      "movimento-classe:paragrafo-2822"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-2820",
+      "movimento-classe:paragrafo-2821",
+      "movimento-classe:paragrafo-2822"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-2820",
+      "movimento-classe:paragrafo-2821",
+      "movimento-classe:paragrafo-2822"
+    ]
+  },
+  "by_requisito_tipo": {
+    "nenhum": [
+      "movimento-classe:paragrafo-2820",
+      "movimento-classe:paragrafo-2821",
+      "movimento-classe:paragrafo-2822"
+    ]
+  },
+  "by_requisito_id": {}
+}

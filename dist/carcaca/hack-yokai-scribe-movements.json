@@ -1,0 +1,68 @@
+[
+  {
+    "id": "movimento-classe:paragrafo-2812",
+    "paragrafo_docx": 2812,
+    "grupo": "ESCRIBA YOKAI",
+    "categoria": "classe",
+    "titulo": "PALAVRA QUE DELIMITA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2812,
+        "tipo": "corpo",
+        "texto": "Quando inscrever corretamente um kanji Yokai para declarar uma fronteira simples, diga o que está dentro, o que está fora e segundo que princípio. Enquanto a inscrição permanecer íntegra, a realidade reconhece essa distinção em pequena escala."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando inscrever corretamente um kanji Yokai para declarar uma fronteira simples, diga o que está dentro, o que está fora e segundo que princípio. Enquanto a inscrição permanecer íntegra, a realidade reconhece essa distinção em pequena escala.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2812"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2813",
+    "paragrafo_docx": 2813,
+    "grupo": "ESCRIBA YOKAI",
+    "categoria": "classe",
+    "titulo": "PALAVRA QUE PROÍBE",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2813,
+        "tipo": "corpo",
+        "texto": "Quando possuir autoridade legítima sobre um lugar e escrever uma proibição em seus ossos ou estrutura, aquilo que foi proibido sente resistência sobrenatural para atravessar. Poderes maiores podem contestar sua autoridade."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando possuir autoridade legítima sobre um lugar e escrever uma proibição em seus ossos ou estrutura, aquilo que foi proibido sente resistência sobrenatural para atravessar. Poderes maiores podem contestar sua autoridade.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2813"
+  },
+  {
+    "id": "movimento-classe:paragrafo-2814",
+    "paragrafo_docx": 2814,
+    "grupo": "ESCRIBA YOKAI",
+    "categoria": "classe",
+    "titulo": "PALAVRA QUE APAGA",
+    "requisito_literal": null,
+    "requisito_estruturado": null,
+    "partes": [
+      {
+        "paragrafo_docx": 2814,
+        "tipo": "corpo",
+        "texto": "Quando descobrir o nome legítimo de uma coisa e tentar removê-lo de uma estrutura simbólica, diga ao Mestre o que você está tentando fazer deixar de ser reconhecido. Ele dirá o preço, autoridade e ritual necessários."
+      }
+    ],
+    "opcoes": [],
+    "texto_original": "Quando descobrir o nome legítimo de uma coisa e tentar removê-lo de uma estrutura simbólica, diga ao Mestre o que você está tentando fazer deixar de ser reconhecido. Ele dirá o preço, autoridade e ritual necessários.",
+    "texto_integral_conferido": true,
+    "estado": "transcricao_integral_sem_revisao_mecanica",
+    "aplicacao_canonica": false,
+    "origem_inventario_id": "movimento-classe:paragrafo-2814"
+  }
+]

@@ -1,0 +1,53 @@
+{
+  "by_titulo": {
+    "PALAVRA QUE APAGA": [
+      "movimento-classe:paragrafo-2814"
+    ],
+    "PALAVRA QUE DELIMITA": [
+      "movimento-classe:paragrafo-2812"
+    ],
+    "PALAVRA QUE PROÍBE": [
+      "movimento-classe:paragrafo-2813"
+    ]
+  },
+  "by_grupo": {
+    "ESCRIBA YOKAI": [
+      "movimento-classe:paragrafo-2812",
+      "movimento-classe:paragrafo-2813",
+      "movimento-classe:paragrafo-2814"
+    ]
+  },
+  "by_paragrafo": {
+    "2812": [
+      "movimento-classe:paragrafo-2812"
+    ],
+    "2813": [
+      "movimento-classe:paragrafo-2813"
+    ],
+    "2814": [
+      "movimento-classe:paragrafo-2814"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-2812",
+      "movimento-classe:paragrafo-2813",
+      "movimento-classe:paragrafo-2814"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-2812",
+      "movimento-classe:paragrafo-2813",
+      "movimento-classe:paragrafo-2814"
+    ]
+  },
+  "by_requisito_tipo": {
+    "nenhum": [
+      "movimento-classe:paragrafo-2812",
+      "movimento-classe:paragrafo-2813",
+      "movimento-classe:paragrafo-2814"
+    ]
+  },
+  "by_requisito_id": {}
+}

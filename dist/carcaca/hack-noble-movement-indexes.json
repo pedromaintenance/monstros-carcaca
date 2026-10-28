@@ -1,0 +1,53 @@
+{
+  "by_titulo": {
+    "FAVOR POLÍTICO": [
+      "movimento-classe:paragrafo-2818"
+    ],
+    "MEU NOME ABRE PORTAS": [
+      "movimento-classe:paragrafo-2816"
+    ],
+    "PROTOCOLO": [
+      "movimento-classe:paragrafo-2817"
+    ]
+  },
+  "by_grupo": {
+    "NOBRE": [
+      "movimento-classe:paragrafo-2816",
+      "movimento-classe:paragrafo-2817",
+      "movimento-classe:paragrafo-2818"
+    ]
+  },
+  "by_paragrafo": {
+    "2816": [
+      "movimento-classe:paragrafo-2816"
+    ],
+    "2817": [
+      "movimento-classe:paragrafo-2817"
+    ],
+    "2818": [
+      "movimento-classe:paragrafo-2818"
+    ]
+  },
+  "by_tem_requer": {
+    "nao": [
+      "movimento-classe:paragrafo-2816",
+      "movimento-classe:paragrafo-2817",
+      "movimento-classe:paragrafo-2818"
+    ]
+  },
+  "by_tem_opcoes": {
+    "nao": [
+      "movimento-classe:paragrafo-2816",
+      "movimento-classe:paragrafo-2817",
+      "movimento-classe:paragrafo-2818"
+    ]
+  },
+  "by_requisito_tipo": {
+    "nenhum": [
+      "movimento-classe:paragrafo-2816",
+      "movimento-classe:paragrafo-2817",
+      "movimento-classe:paragrafo-2818"
+    ]
+  },
+  "by_requisito_id": {}
+}
