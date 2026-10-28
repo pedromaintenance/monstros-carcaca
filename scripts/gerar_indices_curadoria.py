@@ -257,6 +257,29 @@ def build():
     thargrid=load("data/propostas/thargrid-resistencia-cotidiano-hack.json")
     floresta=load("data/propostas/ironwood-eldroth-resistencia-hack.json")
     ecologia_xii=load("data/propostas/eldroth-ecologia-monstruosa-dw.json")
+    fichas_xiii=load("data/propostas/eldroth-fichas-dw-ciclo13.json")
+    registros_xiii=fichas_xiii["fichas"]
+    if len(registros_xiii)!=8:
+        raise ValueError("Ciclo XIII requer oito fichas DW.")
+    def indices_fichas(campo):
+        grupos=defaultdict(set)
+        for ficha in registros_xiii:
+            valor=campo(ficha)
+            for item in (valor if isinstance(valor,list) else [valor]):
+                if item is not None and item!="":
+                    grupos[str(item)].add(ficha["id"])
+        return {k:sorted(v) for k,v in sorted(grupos.items())}
+    indexes_fichas_xiii={
+        "by_tipo_carcaca_proposto":indices_fichas(lambda f:f["tipo_carcaca_proposto"]),
+        "by_organizacao":indices_fichas(lambda f:f["organizacao"]["proposta_dw"]),
+        "by_modo":indices_fichas(lambda f:f["modo"]),
+        "by_porte":indices_fichas(lambda f:f["decisoes"]["porte"]),
+        "by_defesa":indices_fichas(lambda f:f["decisoes"]["defesa"]),
+        "by_alcance":indices_fichas(lambda f:(f["ficha_dw"]["ataque"] or {}).get("alcances",[])),
+        "by_tag_dw":indices_fichas(lambda f:f["ficha_dw"]["tags"]),
+        "by_origem_xii":indices_fichas(lambda f:f["criatura_origem_id"]),
+        "by_pv":indices_fichas(lambda f:f["ficha_dw"]["pv"])
+    }
     cats_xii=("criaturas","encontros","pressoes","frentes")
     entidades_xii=[{**item,"categoria_indice":categoria}
                    for categoria in cats_xii for item in ecologia_xii[categoria]]
@@ -840,6 +863,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "eldroth_dw_statblocks":"eldroth-dw-statblocks.json",
+        "eldroth_dw_statblock_indexes":"eldroth-dw-statblock-indexes.json",
         "eldroth_monster_ecology":"eldroth-monster-ecology.json",
         "eldroth_monster_ecology_indexes":"eldroth-monster-ecology-indexes.json",
         "ironwood_eldroth_resistance":"ironwood-eldroth-resistance.json",
@@ -964,6 +989,9 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_fichas_dw_eldroth_xiii_propostas":len(registros_xiii),
+        "total_fichas_dw_eldroth_xiii_numericas":sum(f["modo"]=="estatizado" for f in registros_xiii),
+        "total_fichas_dw_eldroth_xiii_sem_stats":sum(f["modo"]=="sem_estatisticas" for f in registros_xiii),
         "total_entidades_ecologia_monstruosa_xii_propostas":len(entidades_xii),
         "total_criaturas_ecologia_monstruosa_xii_propostas":len(ecologia_xii["criaturas"]),
         "total_encontros_ecologia_monstruosa_xii_propostos":len(ecologia_xii["encontros"]),
@@ -1093,6 +1121,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["eldroth_dw_statblocks"]:fichas_xiii,
+           files["eldroth_dw_statblock_indexes"]:indexes_fichas_xiii,
            files["eldroth_monster_ecology"]:ecologia_xii,
            files["eldroth_monster_ecology_indexes"]:indices_xii,
            files["ironwood_eldroth_resistance"]:floresta,

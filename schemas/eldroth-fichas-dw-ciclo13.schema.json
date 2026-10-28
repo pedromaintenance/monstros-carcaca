@@ -1,0 +1,457 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/pedromaintenance/monstros-carcaca/blob/main/schemas/eldroth-fichas-dw-ciclo13.schema.json",
+  "title": "Ciclo XIII — fichas DW propostas e não canônicas",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estado": {
+      "const": "revisao_autoral_pendente"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "efetiva_canon": {
+      "const": false
+    },
+    "fonte_dos_monstros": {
+      "const": "data/propostas/eldroth-ecologia-monstruosa-dw.json"
+    },
+    "regra_base": {
+      "const": "https://www.dungeonworldsrd.com/monsters/"
+    },
+    "metodo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "resumo": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fichas": {
+          "const": 8
+        },
+        "com_pv": {
+          "const": 7
+        },
+        "sem_pv_por_ficcao": {
+          "const": 1
+        },
+        "statblocks_aprovados": {
+          "const": 0
+        }
+      },
+      "required": [
+        "fichas",
+        "com_pv",
+        "sem_pv_por_ficcao",
+        "statblocks_aprovados"
+      ]
+    },
+    "fichas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^ecologia-xiii:ficha:[a-z0-9-]+$"
+          },
+          "ordem_de_revisao": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 8
+          },
+          "criatura_origem_id": {
+            "type": "string",
+            "pattern": "^ecologia-xii:criatura:[a-z0-9-]+$"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tipo_carcaca_proposto": {
+            "type": "string",
+            "minLength": 1
+          },
+          "status": {
+            "const": "proposta_mecanica_para_revisao"
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "ocorrencia_confirmada": {
+            "const": false
+          },
+          "modo": {
+            "enum": [
+              "estatizado",
+              "sem_estatisticas"
+            ]
+          },
+          "instinto": {
+            "type": "string",
+            "minLength": 1
+          },
+          "movimentos": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "nome": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "texto": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "origem_ciclo": {
+                  "const": "xii"
+                }
+              },
+              "required": [
+                "nome",
+                "texto",
+                "origem_ciclo"
+              ]
+            },
+            "minItems": 3,
+            "maxItems": 3
+          },
+          "organizacao": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "proposta_dw": {
+                "enum": [
+                  "horda",
+                  "grupo",
+                  "solitario"
+                ]
+              },
+              "justificativa": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "proposta_dw",
+              "justificativa"
+            ]
+          },
+          "decisoes": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "porte": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "miudo",
+                  "pequeno",
+                  "medio",
+                  "grande",
+                  "enorme",
+                  null
+                ]
+              },
+              "defesa": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "carne",
+                  "couro",
+                  "escamas",
+                  "osso",
+                  "magica",
+                  null
+                ]
+              },
+              "destaques": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "trapaça",
+                    "adaptacao",
+                    "magia",
+                    "forca"
+                  ]
+                },
+                "minItems": 0
+              },
+              "ataque": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "nome": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "opcoes": {
+                        "type": "array",
+                        "items": {
+                          "enum": [
+                            "armas_fracas",
+                            "distancia"
+                          ]
+                        },
+                        "minItems": 0
+                      }
+                    },
+                    "required": [
+                      "nome",
+                      "opcoes"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "tracos": {
+                "type": "array",
+                "items": {
+                  "enum": [
+                    "ardiloso",
+                    "nao_biologico",
+                    "inteligente",
+                    "terrivel"
+                  ]
+                },
+                "minItems": 0
+              },
+              "justificativa": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "required": [
+              "porte",
+              "defesa",
+              "destaques",
+              "ataque",
+              "tracos",
+              "justificativa"
+            ]
+          },
+          "ficha_dw": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "estado": {
+                "enum": [
+                  "sem_estatisticas_por_escolha_ficcional",
+                  "proposta_mecanica_nao_aprovada"
+                ]
+              },
+              "pv": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 1
+              },
+              "armadura": {
+                "type": [
+                  "integer",
+                  "null"
+                ],
+                "minimum": 0,
+                "maximum": 5
+              },
+              "dano": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "faces": {
+                        "type": "integer",
+                        "enum": [
+                          4,
+                          6,
+                          8,
+                          10,
+                          12
+                        ]
+                      },
+                      "modificador": {
+                        "type": "integer"
+                      },
+                      "expressao": {
+                        "type": "string",
+                        "pattern": "^d(4|6|8|10|12)([+-][0-9]+)?$"
+                      },
+                      "minimo": {
+                        "const": 1
+                      }
+                    },
+                    "required": [
+                      "faces",
+                      "modificador",
+                      "expressao",
+                      "minimo"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "ataque": {
+                "anyOf": [
+                  {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "properties": {
+                      "nome": {
+                        "type": "string",
+                        "minLength": 1
+                      },
+                      "alcances": {
+                        "type": "array",
+                        "items": {
+                          "enum": [
+                            "mao",
+                            "corpo_a_corpo",
+                            "alcance",
+                            "perto"
+                          ]
+                        },
+                        "minItems": 1
+                      },
+                      "opcoes": {
+                        "type": "array",
+                        "items": {
+                          "enum": [
+                            "armas_fracas",
+                            "distancia"
+                          ]
+                        },
+                        "minItems": 0
+                      }
+                    },
+                    "required": [
+                      "nome",
+                      "alcances",
+                      "opcoes"
+                    ]
+                  },
+                  {
+                    "type": "null"
+                  }
+                ]
+              },
+              "tags": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 1
+              }
+            },
+            "required": [
+              "estado",
+              "pv",
+              "armadura",
+              "dano",
+              "ataque",
+              "tags"
+            ]
+          },
+          "resolucao_ficcional": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "risco": {
+                "type": "string",
+                "minLength": 1
+              },
+              "alternativas": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "minItems": 2
+              }
+            },
+            "required": [
+              "risco",
+              "alternativas"
+            ]
+          },
+          "calculo_fonte": {
+            "type": "object",
+            "additionalProperties": false,
+            "properties": {
+              "regras": {
+                "const": "Dungeon World SRD — Making Monsters"
+              },
+              "url": {
+                "const": "https://www.dungeonworldsrd.com/monsters/"
+              },
+              "origem_dnd_ou_nd": {
+                "const": false
+              }
+            },
+            "required": [
+              "regras",
+              "url",
+              "origem_dnd_ou_nd"
+            ]
+          }
+        },
+        "required": [
+          "id",
+          "ordem_de_revisao",
+          "criatura_origem_id",
+          "nome",
+          "tipo_carcaca_proposto",
+          "status",
+          "aprovacao_autoral",
+          "ocorrencia_confirmada",
+          "modo",
+          "instinto",
+          "movimentos",
+          "organizacao",
+          "decisoes",
+          "ficha_dw",
+          "resolucao_ficcional",
+          "calculo_fonte"
+        ]
+      },
+      "minItems": 8,
+      "maxItems": 8
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "efetiva_canon",
+    "fonte_dos_monstros",
+    "regra_base",
+    "metodo",
+    "resumo",
+    "fichas"
+  ]
+}

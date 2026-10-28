@@ -401,3 +401,9 @@ Retomada direta do Ciclo XI. Foram inventariadas oito criaturas **novas e propos
 As propostas incluem Coruja do Eco Emprestado, Micélio das Vozes Partidas, Cardos que Bebem Cinza, Cervo dos Galhos Invertidos, Besouros da Casca Riscada, Escrivão da Folha Lacrada, Andarilho de Sepultura Negada e Cão de Esporos do Limiar. Nenhuma ocorrência territorial, filiação à Corte, dieta ou biologia reprodutiva foi confirmada. Instinto e movimentos são ficcionais; números aguardam criação DW.
 
 Integração técnica: contrato JSON Schema, `scripts/validar_curadoria.py`, índice em `scripts/gerar_indices_curadoria.py`, métodos ESM e testes reais Python/Node. A automação passa a observar toda a pasta `data/propostas/**` mantendo a política de publicar apenas em `main`. Consulte `docs/ECOLOGIA_MONSTRUOSA_ELDROTH_CICLO12.md`.
+
+## 2026-10-28 · Ciclo XIII — Estatísticas DW pela ficção, não por ND
+
+Oito fichas mecânicas propostas, com escolhas individuais e explicadas. Sete possuem PV, dano, armadura e alcances calculados pelo procedimento de `Making Monsters`; o Micélio das Vozes Partidas é uma exceção explícita por `Monsters Without Stats`, não lacuna na implementação. A origem de cada instinto e movimento continua sendo o ciclo XII.
+
+A implementação acrescenta `data/propostas/eldroth-fichas-dw-ciclo13.json`, schema, `scripts/calcular_monstros_dw.py`, testes de fórmula e integridade, exportação em `dist/carcaca`, índices e métodos ESM. Os números das propostas **não alteram** as sete fichas da curadoria nem promovem tipos, filiações ou ocorrências ficcionais a fatos canônicos. Registro de justificativas e futura revisão em `docs/FICHAS_DW_ELDROTH_CICLO13.md`.

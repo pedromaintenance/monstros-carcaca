@@ -430,3 +430,14 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Ampliar CI para alterações em `data/propostas/**` sem permitir publicação automática de branches fora da `main`.
 - [ ] Ciclo XIII: criar fichas mecânicas DW **individualmente**, seguindo o procedimento e submetendo à aprovação autoral.
 - [ ] Revisar tipologia, função ecológica e alcance mágico antes de qualquer promoção canônica.
+
+## Ciclo XIII — Fichas mecânicas DW de Eldroth (2026-10-28)
+
+- [x] Reler as regras oficiais de `Making Monsters` e a possibilidade de `Monsters Without Stats`.
+- [x] Responder individualmente às perguntas DW de organização, porte, defesa, destaque, ataque e traços das 8 criaturas propostas no XII.
+- [x] Criar 7 fichas com números calculados e 1 ficha deliberadamente sem PV/dano/armadura (Micélio), preservando os 3 movimentos e instintos originais de cada monstro.
+- [x] Registrar cada decisão narrativa, o valor de ataque proposto, riscos e alternativas não violentas.
+- [x] Incluir calculadora independente, JSON Schema, testes Python e Node, validador de referências, exportação, 9 índices e API de busca.
+- [x] Garantir que o número de fichas canônicas permanece 7, sem aparições ou presságios confirmados.
+- [ ] Ciclo XIV: testar cenários e encontros em variações ficcionais, sem forçar combate nem registrar um desfecho canônico.
+- [ ] Revisão autoral dos portes e ataques (sobretudo a magia de papel do Escrivão) antes de qualquer promoção.

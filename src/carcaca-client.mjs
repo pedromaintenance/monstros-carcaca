@@ -60,6 +60,25 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getEldrothDWStatblocks(){return byKey("eldroth_dw_statblocks");}
+  async function getEldrothDWStatblockIndexes(){return byKey("eldroth_dw_statblock_indexes");}
+  async function getEldrothDWStatblock(id){
+    if(typeof id!=="string"||!id.startsWith("ecologia-xiii:ficha:"))return null;
+    const data=await getEldrothDWStatblocks();
+    return data.fichas.find(row=>row.id===id)??null;
+  }
+  async function searchEldrothDWStatblocks({tipoCarcaca,organizacao,modo,porte,tag,origemId,query}={}){
+    const data=await getEldrothDWStatblocks();
+    const normal=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return data.fichas.filter(row=>
+      (!tipoCarcaca||row.tipo_carcaca_proposto===tipoCarcaca)&&
+      (!organizacao||row.organizacao.proposta_dw===organizacao)&&
+      (!modo||row.modo===modo)&&
+      (!porte||row.decisoes.porte===porte)&&
+      (!tag||row.ficha_dw.tags.includes(tag))&&
+      (!origemId||row.criatura_origem_id===origemId)&&
+      (!query||normal([row.nome,row.instinto,row.decisoes.justificativa].join(" ")).includes(normal(query))));
+  }
   async function getEldrothMonsterEcology(){return byKey("eldroth_monster_ecology");}
   async function getEldrothMonsterEcologyIndexes(){return byKey("eldroth_monster_ecology_indexes");}
   async function getEldrothMonsterEcologyEntry(id){
@@ -1293,6 +1312,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getEldrothDWStatblocks,getEldrothDWStatblockIndexes,
+          getEldrothDWStatblock,searchEldrothDWStatblocks,
           getEldrothMonsterEcology,getEldrothMonsterEcologyIndexes,
           getEldrothMonsterEcologyEntry,searchEldrothMonsterEcology,
           getIronwoodEldrothResistance,getIronwoodEldrothResistanceIndexes,

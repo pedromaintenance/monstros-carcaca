@@ -479,3 +479,9 @@ Criados **8 rascunhos de criaturas**, **6 encontros condicionais**, **4 pressõe
 - **Isolamento:** nenhum dos novos seres entrou no catálogo `creatures.json`; o total de **7 criaturas curadas** foi preservado. Todos os encontros, frentes, ocorrências e efeitos são hipotéticos, sem estatísticas DW/D&D inferidas.
 
 Veja [dossiê do Ciclo XII](docs/ECOLOGIA_MONSTRUOSA_ELDROTH_CICLO12.md).
+
+## Ciclo XIII — Fichas mecânicas DW de Eldroth
+
+As **oito criaturas hipotéticas do ciclo XII** ganharam fichas de Dungeon World com decisões individuais verificáveis: **7 com PV/armadura/dano** e **1 sem estatísticas físicas**, porque o Micélio das Vozes Partidas não oferece um corpo combatente. A calculadora `scripts/calcular_monstros_dw.py` aplica o procedimento de *Making Monsters* sem qualquer conversão de ND de D&D. Todos os valores são **propostas não aprovadas**, e o catálogo de **7 criaturas curadas** permanece separado.
+
+Fontes: `data/propostas/eldroth-fichas-dw-ciclo13.json`, `schemas/eldroth-fichas-dw-ciclo13.schema.json`. Saídas: `dist/carcaca/eldroth-dw-statblocks.json`, `eldroth-dw-statblock-indexes.json`. Métodos ESM: `getEldrothDWStatblocks`, `getEldrothDWStatblockIndexes`, `getEldrothDWStatblock`, `searchEldrothDWStatblocks`. [Dossiê do XIII](docs/FICHAS_DW_ELDROTH_CICLO13.md).
