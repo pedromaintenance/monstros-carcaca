@@ -2870,6 +2870,64 @@ def validar_povoamento_social_thargrid():
             "Thargrid: faltam limites históricos essenciais.")
     print("Thargrid X: 46 propostas válidas, fluxos e acordos não canonizados.")
 
+def validar_resistencia_florestal_xi():
+    """Confere IDs, proveniência e a não canonização de Ironwood/Eldroth."""
+    data=load("data/propostas/ironwood-eldroth-resistencia-hack.json")
+    categorias={"lugares":5,"coletivos":5,"pessoas":8,"dilemas":4,
+                "fluxos":5,"acordos":4,"cenas":6,"arcos":3}
+    require(data["contagens"]==categorias
+            and data["estado"]=="propostas_narrativas_nao_canonicas"
+            and data["aprovacao_autoral"] is False
+            and data["efeito_automatico_no_canon"] is False,
+            "Ironwood/Eldroth XI: estado ou contagens incorretos.")
+    registros=[x for categoria in categorias for x in data[categoria]]
+    ids={x["id"] for x in registros}
+    require(len(registros)==len(ids)==40
+            and all(x["estado"]=="proposta_nao_canonica"
+                    and x["id"].startswith("ironwood-eldroth:") for x in registros),
+            "Ironwood/Eldroth XI: IDs duplicados ou registro canonizado.")
+    sementes={x["id"] for x in load("data/propostas/povoamento-regional-hack-carcaca.json")["sementes"]}
+    movimentos={x["id"] for x in load("data/lore/hack-carcaca-dw-movimentos-povos-integrais.json")["movimentos"]}
+    for item in registros:
+        require(bool(item.get("nome")) and bool(item.get("rotina_cotidiana"))
+                and bool(item.get("tensao_social"))
+                and item["vinculos"] and all(x in sementes for x in item["vinculos"])
+                and item["movimentos_inspiradores"]
+                and all(x in movimentos for x in item["movimentos_inspiradores"]),
+                "Ironwood/Eldroth XI: proposta sem origem, conteúdo ou movimentos rastreáveis.")
+    lugares={x["id"] for x in data["lugares"]}
+    pessoas={x["id"] for x in data["pessoas"]}
+    cenas={x["id"] for x in data["cenas"]}
+    require(all(x["local_confirmado"] is False for x in data["lugares"])
+            and all(x["instituicao_confirmada"] is False for x in data["coletivos"])
+            and all(x["localizacao_atual_confirmada"] is False for x in data["pessoas"])
+            and all(x["ocorreu"] is False and len(x["opcoes"])>=3 for x in data["dilemas"])
+            and all(x["vigente"] is False and set(x["proponentes"]).issubset(pessoas) for x in data["acordos"]),
+            "Ironwood/Eldroth XI: local, grupo, pessoa, dilema ou acordo indevidamente confirmado.")
+    require(all(x["efetivado"] is False
+                and x["quantidade_confirmada"] is False
+                and x["rota_operacional"] is False
+                and x["origem"] in lugares and x["destino"] in lugares
+                for x in data["fluxos"]),
+            "Ironwood/Eldroth XI: fluxo confirmado ou sem origem/destino proposto.")
+    require(all(x["ocorreu"] is False
+                and x["local_id"] in lugares
+                and x["elenco"] and set(x["elenco"]).issubset(pessoas)
+                and len(x["escolhas"])>=3 for x in data["cenas"]),
+            "Ironwood/Eldroth XI: cena mal referenciada ou efetivada.")
+    require(all(x["resultado_confirmado"] is False
+                and x["cenas"] and set(x["cenas"]).issubset(cenas)
+                for x in data["arcos"]),
+            "Ironwood/Eldroth XI: arco confirmado ou desconectado.")
+    anteriores={x["id"] for x in load("data/propostas/thargrid-resistencia-cotidiano-hack.json")["pessoas"]}
+    require(all(x["reutiliza"] is None or x["reutiliza"] in anteriores for x in data["pessoas"]),
+            "Ironwood/Eldroth XI: personagem reutilizado sem origem.")
+    limite=" ".join(data["fatos_documentados"]+data["limites_editoriais"]).lower()
+    require(all(x in limite for x in ("sylara","damaris","ironwood","thargrid","refugiados")),
+            "Ironwood/Eldroth XI: faltam limites de lore documentados.")
+    print("Povoamento XI: 40 propostas, 0 rotas/acontecimentos/acordos canonizados.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -2992,6 +3050,7 @@ def main():
     validar_pressao_mar_sangue_costa_sul()
     validar_povoamento_garganta_rio_ancestral()
     validar_povoamento_social_thargrid()
+    validar_resistencia_florestal_xi()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
