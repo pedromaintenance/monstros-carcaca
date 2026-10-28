@@ -12,6 +12,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - **XVII — concluído:** [Vandar e a política dos mortos](docs/VANDAR_POLITICA_DOS_MORTOS_CICLO17.md): 3 fases sem datas, 8 temas urbanos, 5 formas propostas de prova, 4 estados não legais da morte, 6 papéis sociais, 3 modelos de ocupação não adotados, 4 vinhetas e 8 decisões autorais pendentes. Sem canonização.
 - **XVIII — concluído:** [Ironwood e a sociedade que resiste](docs/IRONWOOD_SOCIEDADE_RESISTENCIA_CICLO18.md) — 8 eixos sociais, 3 modelos de governo não adotados, 4 relações, 4 circuitos civis, 4 dilemas, 4 vinhetas e 8 perguntas editoriais.
 - **XIX — concluído como preparação editorial:** [Mesa de revisão autoral](docs/MESA_REVISAO_AUTORAL_CICLO19.md), com 103 candidatos, 20 decisões pendentes e zero canonizações. Nenhuma escolha tomada em nome do autor.
+- **XX — concluído como expansão cultural:** [Grama-Cortada e a vida cotidiana](docs/GRAMA_CORTADA_COTIDIANO_CICLO20.md): 35 propostas culturais, 12 fatos de fonte e 8 perguntas, sem cronologia ou instituições inventadas.
 
 **Método dos próximos ciclos:** (1) localizar afirmações da ambientação; (2) apontar o que o manuscrito do Hack efetivamente acrescenta; (3) distinguir interpretações e lacunas; (4) produzir alternativas de worldbuilding materialmente diferentes; (5) pedir revisão autoral para qualquer promoção canônica. Evitar novas rodadas de dezenas de NPCs sem uma necessidade histórica ou social identificável.
 
@@ -508,4 +509,15 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Manter explicitamente desconhecidos cinco campos: Ironwood na geografia normalizada, ano da queda de Vandar, identidade dos mortos-vivos, burocracia de Sylara e poder civil de Elara.
 - [x] Criar política de aprovação que **requer autorização expressa do autor** e nova revisão de integração canônica, sem interpretar silêncio como aceite.
 - [x] Adicionar documentação, JSON, schema, validador, índices, API ESM e testes de integridade.
-- [ ] **XX — etapa futura, dependente de autorização:** deliberar, com o autor, as primeiras decisões da fila; ou ampliar pesquisa histórica e geográfica das regiões restantes. Nenhuma opção ainda aprovada.
+- [x] **XX — Grama-Cortada concluído:** expandir história social e cultura hobbit, sem antecipar a grande revisão autoral.
+
+## Ciclo XX — Concluído: Grama-Cortada, economia e cultura cotidiana
+
+- [x] Consultar manuscrito p. 18–19 sobre hobbits, Condado, tradição oral, economia diversificada e Menelau Folha-Seca.
+- [x] Explorar nove domínios de vida civil e doméstica além de guerras e política feérica.
+- [x] Analisar cinco circuitos econômicos cotidianos com tensões materiais, sem preços, moeda, safras ou profissão única inventadas.
+- [x] Desenvolver quatro modos possíveis de convivência e cinco conflitos sociais sem decretar governo ou legislação.
+- [x] Apresentar quatro sementes de celebração, quatro gêneros de memória e quatro vinhetas que **não aconteceram**.
+- [x] Preservar como desconhecidos localização exata, população, governantes, culto oficial e calendário.
+- [x] Publicar dossiê, JSON, schema, índices determinísticos, API ESM e testes, sem mudar as sete criaturas canônicas.
+- [ ] **XXI — próximo horizonte proposto:** mundo gnômico (floresta, rochas e profundezas); trabalho, geografia, curiosidade, conhecimento, convivência e conflitos internos, sem retomar o ciclo de revisões canônicas.
