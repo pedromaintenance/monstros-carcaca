@@ -46,7 +46,7 @@ const placeDefs={
  "boca-do-abismo":["foz","fortaleza"],"drakport":["rio","assentamento"],
  "garganta":["garganta","assentamento"],"grama-cortada":["grama","assentamento"],
  "gualapolis":["foz","ruina"],"ilhas-monasticas":["costa","assentamento"],
- "ironwood":["thargrid","fortaleza"],"mar-de-sangue":["costa","bioma"],
+ "ironwood":["thargrid","bioma"],"mar-de-sangue":["costa","bioma"],
  "portomonte":["costa","assentamento"],"reino-sob-montanha":["thargrid","fortaleza"],
  "rio-ancestral":["rio","rota"],"shadar-riverie":["shadar","assentamento"],
  "templo-da-lua":["rio","poder"],"templo-das-sombras":["foz","ruina"],
@@ -102,7 +102,7 @@ const peopleAssignments={
  "kuo-toa":["cavernas-kuo-toa"],
  "meio-demonios":["povos-globais"],
  "orcs-caatinga":["povos-da-caatinga"],
- "rangers-ironwood":["ironwood"],
+ "rangers-ironwood":["fortaleza-ranger-ironwood"],
  "sereias":["aguas-azuis"],
  "shadow-fey":["shadar-riverie"],
  "svirfneblin":["povos-globais"],
@@ -113,7 +113,7 @@ const peopleAssignments={
 };
 const actors={
  "alquam":"povos-de-foz","birka-uln-shayr":"shadar-riverie",
- "damaris-blackthorn":"vandar","elara-stormoak":"ironwood",
+ "damaris-blackthorn":"vandar","elara-stormoak":"fortaleza-ranger-ironwood",
  "mammon":"povos-de-foz","menelau-folha-seca":"grama-cortada",
  "morwen-nightshade":"drakport","rayquaza":"povos-de-thargrid",
  "sarastra-aestruum":"templo-do-crepusculo","severina-shadowbloom":"templo-da-lua",
@@ -199,6 +199,34 @@ export function buildAtlasTree(d){
     make({id,parentId:bucket,kind:"lugar",label:name,status,summary,source,sourceId,pages,regionKey:region,placeType:type,...extra});
     placeByKey.set(key,id);placeNames.add(key);return id;
   };
+  // Uma localidade pode pertencer a outro lugar — e pode conter localidades por sua vez.
+  // O parentesco espacial é explícito; nenhum vínculo narrativo implica hierarquia geográfica.
+  const addNestedPlace=(key,parentKey,type,name,status,summary,source,sourceId,pages=[],extra={})=>{
+    if(placeByKey.has(key))throw new Error("Localidade duplicada: "+key);
+    const parentId=placeByKey.get(parentKey);
+    const parent=list.find(n=>n.id===parentId);
+    if(!parent)throw new Error("Lugar pai inexistente: "+parentKey);
+    const id="lugar-visual:"+key;
+    make({id,parentId,kind:"localidade",label:name,status,summary,source,sourceId,pages,
+      regionKey:parent.regionKey,placeType:type,localidadeInterna:true,...extra});
+    placeByKey.set(key,id);placeNames.add(key);return id;
+  };
+  const reparentTo=(key,parentKey)=>{
+    const child=list.find(n=>n.id===placeByKey.get(key));
+    const parent=list.find(n=>n.id===placeByKey.get(parentKey));
+    if(!child||!parent)throw new Error("Subordinação territorial impossível: "+key+" → "+parentKey);
+    if(child.regionKey!==parent.regionKey)throw new Error("Vínculo espacial cruza setor: "+key);
+    child.parentId=parent.id;
+    child.kind="localidade";
+    child.localidadeInterna=true;
+  };
+  const markUnspecifiedSettlements=(parentKey)=>{
+    const parentId=placeByKey.get(parentKey);
+    make({id:"lacuna-localidades:"+parentKey,parentId,kind:"lacuna_localidades",
+      label:"Outras vilas e cidades — ainda não individualizadas",status:"organizador",
+      summary:"Reserva de estrutura para assentamentos futuros. As fontes atuais não confirmam nomes, quantidade, posição ou existência de vilas adicionais nesta área.",
+      regionKey:list.find(n=>n.id===parentId)?.regionKey,empty:true});
+  };
   const getBucket=(key,contentType)=>{
     const pid=placeByKey.get(key);
     if(!pid)throw new Error("Lugar ausente para categoria: "+key);
@@ -232,6 +260,33 @@ export function buildAtlasTree(d){
   for(const [key,region,type,label,sourceId,source,description] of extraPlaces)
     addPlace(key,region,type,label,key.startsWith("povos-")||key==="sede-eldroth"?"organizador":"manuscrito",
       description,source,sourceId);
+  // Exemplos comprováveis de profundidade cinco: um lugar abrange outro.
+  // A forte posição ranger é um núcleo de Ironwood, NÃO uma nova cidade inventada.
+  addNestedPlace("fortaleza-ranger-ironwood","ironwood","assentamento",
+    "Fortaleza ranger — núcleo de Ironwood","manuscrito",
+    "Núcleo defensivo documentado da resistência de Ironwood; não é um segundo município nem atesta outras aldeias.",
+    "data/lore/hack-carcaca-dw-indice-tematico.json","lore-hack:ironwood",[],{derivadoDe:"lore-hack:ironwood"});
+  // Estes vínculos são explícitos no manuscrito; não se inferem rotas ou distâncias.
+  for(const [child,parent] of [
+    ["reino-sob-montanha","montanhas-thargrid"],
+    ["templo-demeter","portomonte"],
+    ["templo-yolskaariin","garganta"],
+    ["arquivo-mortos-afogados","gualapolis"],
+    ["templo-da-lua","rio-ancestral"]
+  ])reparentTo(child,parent);
+  // Microespaços anteriores de Ironwood, expressamente NÃO confirmados.
+  // Se vierem a ser aprovados, podem tornar-se refúgios, bairros ou vilas sem mudar o modelo.
+  for(const loc of req(d.ironwoodLocales,"lugares")
+       .filter(x=>x.ancora_canonica==="Ironwood"&&x.local_confirmado===false)){
+    const key="ironwood-proposta-"+loc.id.split(":").at(-1);
+    addNestedPlace(key,"ironwood","nucleo",loc.nome,"proposta",
+      loc.rotina_cotidiana+" Tensão possível: "+loc.tensao_social,
+      "data/propostas/ironwood-eldroth-resistencia-hack.json",loc.id,[],
+      {approval:false,precisao:"microespaco_nao_confirmado"});
+  }
+  // Posição na árvore é reserva de expansão; não confirma outras cidades.
+  for(const key of ["ironwood","reino-sob-montanha","grama-cortada","ilhas-monasticas","drakport"])
+    markUnspecifiedSettlements(key);
   for(const p of req(d.places,"lugares")){
     const key=curatedPlaces[p.id];
     if(key){
@@ -289,6 +344,13 @@ export function buildAtlasTree(d){
       (x.local_proposto||"")+". "+(x.vida_cotidiana||""),
       "data/propostas/povoamento-regional-hack-carcaca.json",x.id,[],
       {precisao:"microespaco_nao_canonico",approval:false});
+    // Só localizar abaixo de outro lugar quando o próprio enunciado indicar interioridade.
+    if(x.id==="povoamento-proposto:conselho-dos-juramentos")
+      reparentTo(key,"reino-sob-montanha");
+    if(x.id==="povoamento-proposto:turno-das-escavadoras")
+      reparentTo(key,"templo-yolskaariin");
+    if(x.id==="povoamento-proposto:cartorio-das-portas-raspadas")
+      reparentTo(key,"garganta");
     addEntry(key,"personagens",{sourceId:x.id+":personagem",name:x.personagem_central||"Figura proposta",
       status:"proposta",description:"Personagem e cena não canônicos vinculados à proposta.",
       source:"data/propostas/povoamento-regional-hack-carcaca.json"});
@@ -298,6 +360,17 @@ export function buildAtlasTree(d){
     addEntry(key,"conceitos",{sourceId:x.id+":conflito",name:"Tensão local proposta",
       status:"proposta",description:x.conflito_vivo||"Sem detalhes.",
       source:"data/propostas/povoamento-regional-hack-carcaca.json"});
+  }
+  // Conteúdos das localidades hipotéticas: não transmitem estatuto factual ao seu lugar-pai.
+  for(const loc of req(d.ironwoodLocales,"lugares")
+       .filter(x=>x.ancora_canonica==="Ironwood"&&x.local_confirmado===false)){
+    const key="ironwood-proposta-"+loc.id.split(":").at(-1);
+    addEntry(key,"culturas",{sourceId:loc.id+":rotina",name:"Prática cotidiana hipotética",
+      status:"proposta",description:loc.rotina_cotidiana,
+      source:"data/propostas/ironwood-eldroth-resistencia-hack.json"});
+    addEntry(key,"conceitos",{sourceId:loc.id+":tensao",name:"Tensão social hipotética",
+      status:"proposta",description:loc.tensao_social,
+      source:"data/propostas/ironwood-eldroth-resistencia-hack.json"});
   }
   // Dados de assentamentos coletivos: nunca calcular população, riqueza ou defesa.
   for(const x of Array.isArray(d.settlements)?d.settlements:[]){
@@ -341,7 +414,7 @@ export function buildAtlasTree(d){
   const children=new Map();
   for(const n of list){if(n.parentId){const a=children.get(n.parentId)||[];a.push(n.id);children.set(n.parentId,a)}}
   const byId=new Map(list.map(n=>[n.id,n]));
-  const weight={mundo:0,regiao:1,tipo:2,lugar:3,categoria:4,registro:5};
+  const weight={mundo:0,regiao:1,tipo:2,lugar:3,localidade:4,lacuna_localidades:5,categoria:6,registro:7};
   const collator=new Intl.Collator("pt-BR",{sensitivity:"base"});
   for(const arr of children.values())arr.sort((a,b)=>(weight[byId.get(a).kind]-weight[byId.get(b).kind])||collator.compare(byId.get(a).label,byId.get(b).label));
   function descendants(id){
@@ -365,10 +438,11 @@ export function buildAtlasTree(d){
     criaturasCatalogadas:(d.creatures||[]).length,
     ecologiaProposta:req(d.ecology,"criaturas").length,
     microespacosPropostos:req(d.seeds,"sementes").length,
+    localidadesInternas:list.filter(x=>x.kind==="localidade").length,
     folhas:list.filter(x=>x.kind==="registro").length,
     categoriasVazias:list.filter(x=>x.kind==="categoria"&&x.empty).length
   };
-  return {schema_version:"1.0",titulo:"Árvore da Carcaça",nodes:list,stats,
+  return {schema_version:"1.1",titulo:"Árvore da Carcaça",nodes:list,stats,
     aviso:"Setores de navegação não são novos territórios canônicos. Referências ao manuscrito, catálogo estruturado e propostas são estados diferentes.",
     links:{repositorio:"https://github.com/pedromaintenance/monstros-carcaca",
       leituraDoHack:"data/lore/hack-carcaca-dw-indice-tematico.json"}};

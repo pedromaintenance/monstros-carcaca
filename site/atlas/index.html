@@ -101,7 +101,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 <header class="topline"><div class="brand"><span class="brandglyph">✧</span><span>CARCAÇA <span style="color:#6c8f80">/</span> ATLAS AUTORAL</span></div><div>V1 · HIERARQUIA EXPLORATÓRIA &nbsp; <a href="https://github.com/pedromaintenance/monstros-carcaca" target="_blank" rel="noopener">REPOSITÓRIO ↗</a></div></header>
 <section class="hero">
 <div><div class="eyebrow">Cartografia de um mundo morto</div><h1>O Atlas da Carcaça</h1>
-<p>Um continente erguido sobre os ossos de Golzdov. Explore a hierarquia entre regiões, lugares, povos, culturas, criaturas, relíquias e memória — sem confundir o que a fonte afirma com aquilo que ainda estamos criando.</p></div>
+<p>Um continente erguido sobre os ossos de Golzdov. Explore a hierarquia entre regiões, territórios, assentamentos internos, povos, culturas, criaturas, relíquias e memória — sem confundir o que a fonte afirma com aquilo que ainda estamos criando.</p></div>
 <div class="symbol" aria-hidden="true">☽</div>
 </section>
 <section id="metrics" class="counters" aria-label="Resumo do atlas">
@@ -146,7 +146,8 @@ const paths={
   creatures:"dist/carcaca/creatures.json",
   seeds:"data/propostas/povoamento-regional-hack-carcaca.json",
   ecology:"data/propostas/eldroth-ecologia-monstruosa-dw.json",
-  statblocks:"data/propostas/eldroth-fichas-dw-ciclo13.json"
+  statblocks:"data/propostas/eldroth-fichas-dw-ciclo13.json",
+  ironwoodLocales:"data/propostas/ironwood-eldroth-resistencia-hack.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -154,7 +155,7 @@ const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[x]));
 const norm=v=>String(v??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
-const icon={mundo:"✧",regiao:"◈",tipo:"▤",lugar:"⌂",categoria:"◇",registro:"✦"};
+const icon={mundo:"✧",regiao:"◈",tipo:"▤",lugar:"⌂",localidade:"⌂",lacuna_localidades:"⋯",categoria:"◇",registro:"✦"};
 const statusLabel={manuscrito:"Fonte / manuscrito",catalogado:"Catálogo formal",proposta:"Proposta não canonizada",organizador:"Pasta editorial"};
 const docLink=v=>v&&v.indexOf("data/")===0||v&&v.indexOf("curadoria/")===0?
  "https://github.com/pedromaintenance/monstros-carcaca/blob/main/"+v:null;
@@ -176,6 +177,7 @@ function chain(id){
 }
 function isAllowed(n){
   if(n.kind==="registro")return state.filters.has(n.status)&&(!state.query||norm([n.label,n.summary,n.sourceId].join(" ")).includes(norm(state.query)));
+  if(n.kind==="lacuna_localidades")return !state.query||norm([n.label,n.summary].join(" ")).includes(norm(state.query));
   if(n.kind==="categoria"&&n.empty&&state.showGaps&&!state.query)return true;
   if(n.kind==="categoria"&&n.empty&&!state.showGaps)return false;
   return false;
@@ -193,6 +195,7 @@ function visible(id){
 function hasStatus(n){
   if(n.kind==="registro")return state.filters.has(n.status);
   if(n.empty&&n.kind==="categoria")return state.showGaps;
+  if(n.kind==="lacuna_localidades")return true;
   return (state.children.get(n.id)||[]).some(hasStatus);
 }
 function renderItem(n,depth=0){
@@ -202,7 +205,7 @@ function renderItem(n,depth=0){
   const shown=kids.filter(k=>visible(k.id));
   const isOpen=state.query?true:state.expanded.has(n.id);
   const branch=kids.length>0;
-  const count=n.kind==="categoria"||n.kind==="lugar"||n.kind==="tipo"||n.kind==="regiao"?n.leafCount:0;
+  const count=["categoria","lugar","localidade","tipo","regiao"].includes(n.kind)?n.leafCount:0;
   let result='<li><div class="tree-row'+(state.selected===n.id?' selected':'')+'" data-kind="'+esc(n.kind)+'">';
   result+='<button type="button" class="tree-expand'+(!branch?" empty":"")+'" data-exp="'+esc(n.id)+'" aria-label="'+(isOpen?"Recolher":"Expandir")+'">'+(branch?(isOpen?"▾":"▸"):"·")+'</button>';
   result+='<button type="button" class="tree-select" data-id="'+esc(n.id)+'"><span class="tree-symbol">'+(icon[n.kind]||"◇")+'</span>';
@@ -210,6 +213,7 @@ function renderItem(n,depth=0){
   result+='<span class="tree-text">'+esc(n.label)+'</span></button>';
   if(count>0)result+='<span class="tree-count">'+count+'</span>';
   if(n.kind==="categoria"&&n.empty)result+='<span class="tree-count">vazio</span>';
+  if(n.kind==="lacuna_localidades")result+='<span class="tree-count">a mapear</span>';
   result+='</div>';
   if(isOpen&&shown.length)result+='<ul>'+shown.map(k=>renderItem(k,depth+1)).join("")+'</ul>';
   return result+'</li>';
@@ -234,7 +238,7 @@ function detail(){
   const n=state.byId.get(state.selected)||state.byId.get("carcaca");
   const path=chain(n.id);
   const bc=path.map((p,i)=>'<button type="button" data-jump="'+esc(p.id)+'">'+esc(p.label)+'</button>'+(i<path.length-1?'<span class="slash">›</span>':"")).join("");
-  const label=({mundo:"Continente",regiao:"Setor de navegação",tipo:"Classe de lugar",lugar:"Lugar ou núcleo",categoria:"Classe de conteúdo",registro:"Registro"}[n.kind]||"Registro");
+  const label=({mundo:"Continente",regiao:"Setor de navegação",tipo:"Classe de lugar",lugar:"Lugar ou território",localidade:"Localidade ou assentamento interno",lacuna_localidades:"Espaço reservado para localidades futuras",categoria:"Classe de conteúdo",registro:"Registro"}[n.kind]||"Registro");
   let html='<div class="crumbs">'+bc+'</div><div class="kicker">'+esc(label)+'</div>';
   html+='<h2 class="detail-title">'+esc(n.label)+'</h2>';
   html+='<p class="desc">'+esc(n.summary||"Registro ainda sem descrição específica.")+'</p>';
@@ -243,11 +247,12 @@ function detail(){
   if(n.canonicalRegionId)html+='<span class="label cur">ID oficial: '+esc(n.canonicalRegionId)+'</span>';
   if(n.curatedPlaceId)html+='<span class="label cur">Lugar catalogado: '+esc(n.curatedPlaceId)+'</span>';
   if(n.empty)html+='<span class="label gap">Lacuna editorial</span>';
+  if(n.localidadeInterna)html+='<span class="label">Lugar dentro de outro lugar</span>';
   html+='</div>';
   const records=descendRecords(n);
   if(n.kind!=="registro"){
     const countKinds=(kind)=>records.filter(x=>x.recordType===kind).length;
-    const places=state.atlas.nodes.filter(x=>x.kind==="lugar"&&chain(x.id).some(a=>a.id===n.id)).length;
+    const places=state.atlas.nodes.filter(x=>["lugar","localidade"].includes(x.kind)&&chain(x.id).some(a=>a.id===n.id)).length;
     html+='<section class="detail-section"><h3>Conteúdo mapeado neste ramo</h3><div class="detail-cards">';
     html+=metric("Lugares e microespaços",places)+metric("Povos e culturas",countKinds("povos")+countKinds("culturas"));
     html+=metric("Criaturas, fauna e flora",countKinds("criaturas")+countKinds("fauna")+countKinds("flora"));
@@ -255,15 +260,15 @@ function detail(){
     html+='</div></section>';
   }
   if(n.kind==="regiao"){
-    const places=(state.children.get(n.id)||[]).flatMap(t=>state.children.get(t.id)||[]);
-    const catalog=places.filter(p=>p.kind==="lugar"&&p.status!=="proposta"&&p.placeType!=="ambito").length;
-    const drafts=places.filter(p=>p.kind==="lugar"&&p.status==="proposta").length;
+    const places=state.atlas.nodes.filter(x=>["lugar","localidade"].includes(x.kind)&&chain(x.id).some(a=>a.id===n.id));
+    const catalog=places.filter(p=>p.status!=="proposta"&&p.placeType!=="ambito").length;
+    const drafts=places.filter(p=>p.status==="proposta").length;
     html+='<section class="detail-section"><h3>Território e cobertura</h3><p class="tiny">'+catalog+' lugares referenciados, '+drafts+' microespaços em proposta. Setores editoriais não confirmam fronteiras, posse nem localização exata.</p></section>';
   }
-  if(n.kind==="categoria"&&n.empty){
+  if(["categoria","lacuna_localidades"].includes(n.kind)&&n.empty){
     html+='<section class="detail-section"><h3>Área para pesquisa</h3><p class="tiny">Nenhum registro individualizado nesta categoria e neste lugar. Isso não prova ausência de '+esc(n.label.toLowerCase())+' no cenário — apenas que os arquivos consultados ainda não trazem dados suficientes para afirmar uma ocorrência.</p></section>';
   }
-  if(n.kind==="registro"||n.kind==="lugar"){
+  if(n.kind==="registro"||n.kind==="lugar"||n.kind==="localidade"){
     const source=n.source; const url=docLink(source);
     html+='<section class="detail-section"><h3>Rastreabilidade</h3><dl class="meta-list">';
     html+='<dt>ID de referência</dt><dd>'+esc(n.sourceId||n.id)+'</dd>';
@@ -283,11 +288,14 @@ function detail(){
     }}html+='</div><p class="tiny">As relações são anotações editoriais; não estabelecem distâncias ou conexões cartográficas.</p></section>';
   }
   if(n.kind==="mundo"){
-    html+='<section class="detail-section"><h3>Sete níveis previstos</h3>';
-    html+='<p class="tiny"><b>1.</b> Continente → <b>2.</b> região ou setor → <b>3.</b> classe de lugar → <b>4.</b> local → <b>5.</b> categoria de conteúdo → <b>6.</b> registro individual → <b>7.</b> atributos, vínculos e proveniência (painel de detalhes).</p>';
+    html+='<section class="detail-section"><h3>Hierarquia territorial recursiva</h3>';
+    html+='<p class="tiny"><b>1.</b> Continente → <b>2.</b> região ou setor → <b>3.</b> classe de lugar → <b>4.</b> território ou lugar abrangente → <b>5.</b> assentamentos/localidades internos (vilas, cidades, fortalezas, refúgios) → <b>6+.</b> sublugares quantas vezes forem necessários → depois categorias, registros individuais e atributos. Se o lugar já for um assentamento, as categorias podem aparecer diretamente nele, sem criar um nível artificial.</p>';
     html+='<p class="tiny">Povos não são automaticamente monstros. Culturas podem cruzar vários lugares, por isso o mesmo registro pode aparecer como referência mais de uma vez. O nó transversal não representa um território físico.</p></section>';
   }
   html+='<section class="detail-section"><h3>Estrutura e continuidade</h3><p class="tiny">A exploração aqui não altera nenhum dado do projeto. Para homologar propostas, revisar a autoria separadamente. Todo dado sem geografia comprovada é identificado como referência regional ou transversal.</p></section>';
+  if(n.id==="lugar-visual:ironwood"){
+    html+='<section class="detail-section"><h3>Dentro de Ironwood</h3><p class="tiny">O núcleo fortificado dos rangers é documentado. Duas propostas anteriores aparecem como microespaços NÃO confirmados. Ainda não há vilas ou cidades individualizadas; novas localidades poderão entrar como filhas de Ironwood sem alterar o modelo.</p></section>';
+  }
   $("details").innerHTML=html;
   $("details").querySelectorAll("[data-jump]").forEach(b=>b.addEventListener("click",()=>select(b.dataset.jump)));
 }
@@ -322,7 +330,7 @@ document.querySelectorAll("[data-filter]").forEach(el=>el.addEventListener("clic
   const pressed=f==="lacunas"?state.showGaps:state.filters.has(f);
   el.classList.toggle("active",pressed);el.setAttribute("aria-pressed",String(pressed));renderTree()
 }));
-$("expand").addEventListener("click",()=>{for(const n of state.atlas.nodes)if(["mundo","regiao","tipo"].includes(n.kind))state.expanded.add(n.id);renderTree()});
+$("expand").addEventListener("click",()=>{for(const n of state.atlas.nodes)if(["mundo","regiao","tipo","lugar"].includes(n.kind))state.expanded.add(n.id);renderTree()});
 $("collapse").addEventListener("click",()=>{state.expanded=new Set(["carcaca"]);state.query="";$("query").value="";renderTree()});
 $("reset").addEventListener("click",()=>{
   state.query="";$("query").value="";state.filters=new Set(["manuscrito","catalogado","proposta"]);state.showGaps=false;
