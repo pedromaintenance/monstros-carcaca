@@ -100,6 +100,10 @@ A [documentação hidrográfica](docs/ATLAS_HIDROGRAFIA_CONTINENTAL_CICLO39.md) 
 
 A [cronocartografia continental](docs/ATLAS_CRONOCARTOGRAFIA_CICLO40.md) conecta **17 marcos históricos**, **14 esferas políticas** e **7 futuros em aberto** a seis recortes de consulta (0–999 EC). O [JSON](data/atlas/cronocartografia-ciclo40.json) preserva as datas do manuscrito e os vínculos do Ciclo XXXIII, distinguindo ocupação, resistência, refúgio, invasão e sede de poder — **sem criar fronteiras, rotas militares ou datas de fundação de instituições não documentadas**. O [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/) possui um painel temporal com filtros de período e setor, inspetor documental e centros de poder sem retroprojeções.
 
+## Ciclo XLI — Circulação material e dependências continentais
+
+O [dossiê de circulação material](docs/ATLAS_CIRCULACAO_MATERIAL_CICLO41.md) organiza **24 nós de atividades sociais**, **15 vínculos documentais** e **12 questões em aberto**. O [JSON](data/atlas/circulacao-material-ciclo41.json) cruza comércio e tributação do Rio Ancestral, trabalho forçado em Drakport, extração e forjas de Thargrid, refúgio, agricultura, circulação costeira, trocas subterrâneas e transmissão clandestina de informações. A [visão macro do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/) oferece filtros e inspetor de evidências. **Nenhuma rota, frequência, capacidade, volume de carga ou custo logístico foi inventado**; exigências e cobranças são distinguidas de transferências comprovadas.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
