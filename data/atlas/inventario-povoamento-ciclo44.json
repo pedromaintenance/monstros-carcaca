@@ -1,0 +1,704 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Inventário cruzado do povoamento — primeiro recenseamento editorial",
+  "estado": "inventario_de_referencias_sem_censo_total",
+  "altera_canon": false,
+  "aprovacao_autoral": false,
+  "criterio": "Contagens refletem documentos e estruturas do repositório, não o total de povoados já existentes em toda a lore. Um registro de conjunto coletivo não equivale ao número de vilas que ele contém.",
+  "fontes": [
+    "data/atlas/macrorregioes-carcaca.json",
+    "data/lugares_carcaca.json",
+    "dist/carcaca/settlements.json",
+    "data/propostas/povoamento-regional-hack-carcaca.json",
+    "data/propostas/eldroth-ecologia-monstruosa-dw.json",
+    "data/propostas/povoamento-criaturas-lote01.json"
+  ],
+  "totais": {
+    "ancoras_macro": 26,
+    "lugares_catalogados": 8,
+    "registros_formais_assentamento": 3,
+    "redacoes_sementes": 16,
+    "propostas_de_criaturas_ecologicas": 8,
+    "novos_assentamentos_propostos": 14,
+    "novos_assentamentos_aprovados": 0,
+    "grupos_equivalencia_revisados": 7
+  },
+  "ancoras_macro": [
+    {
+      "lugar_id": "lugar-visual:garganta",
+      "funcao": "Cidade-fortaleza e centro de extração",
+      "estado": "documentado",
+      "setor": "garganta",
+      "categoria_inventario": "nucleo_habitado"
+    },
+    {
+      "lugar_id": "lugar-visual:templo-yolskaariin",
+      "funcao": "Templo solar corrompido",
+      "estado": "documentado",
+      "setor": "garganta",
+      "categoria_inventario": "instituicao_ritual"
+    },
+    {
+      "lugar_id": "lugar-visual:rio-ancestral",
+      "funcao": "Eixo navegável continental",
+      "estado": "documentado",
+      "setor": "rio",
+      "categoria_inventario": "macroambiente"
+    },
+    {
+      "lugar_id": "lugar-visual:drakport",
+      "funcao": "Cidade de escravidão e controle",
+      "estado": "documentado",
+      "setor": "rio",
+      "categoria_inventario": "nucleo_habitado"
+    },
+    {
+      "lugar_id": "lugar-visual:templo-da-lua",
+      "funcao": "Local de poder insular, posição precisa desconhecida",
+      "estado": "documentado",
+      "setor": "rio",
+      "categoria_inventario": "instituicao_ritual"
+    },
+    {
+      "lugar_id": "lugar-visual:portomonte",
+      "funcao": "Assentamento costeiro e centro comercial",
+      "estado": "documentado",
+      "setor": "costa",
+      "categoria_inventario": "nucleo_habitado"
+    },
+    {
+      "lugar_id": "lugar-visual:templo-demeter",
+      "funcao": "Purificação ritual da água para agricultura",
+      "estado": "documentado",
+      "setor": "costa",
+      "categoria_inventario": "instituicao_ritual"
+    },
+    {
+      "lugar_id": "lugar-visual:ilhas-monasticas",
+      "funcao": "Conjunto insular de comunidades tortles e tabaxis",
+      "estado": "documentado",
+      "setor": "costa",
+      "categoria_inventario": "conjunto_comunidades_nao_individualizadas"
+    },
+    {
+      "lugar_id": "lugar-visual:cavernas-kuo-toa",
+      "funcao": "Conjunto de cavernas habitadas pelos kuo-toa",
+      "estado": "documentado",
+      "setor": "costa",
+      "categoria_inventario": "conjunto_comunidades_nao_individualizadas"
+    },
+    {
+      "lugar_id": "lugar-visual:mar-de-sangue",
+      "funcao": "Mar corrompido e frente marítima",
+      "estado": "documentado",
+      "setor": "costa",
+      "categoria_inventario": "macroambiente"
+    },
+    {
+      "lugar_id": "lugar-visual:caatinga-bioma",
+      "funcao": "Terras áridas e zonas de deslocamento",
+      "estado": "documentado",
+      "setor": "caatinga",
+      "categoria_inventario": "macroambiente"
+    },
+    {
+      "lugar_id": "lugar-visual:floresta-eldroth",
+      "funcao": "Bioma ocupado, com resistência clandestina",
+      "estado": "documentado",
+      "setor": "eldroth",
+      "categoria_inventario": "macroambiente"
+    },
+    {
+      "lugar_id": "lugar-visual:vandar",
+      "funcao": "Cidade antiga em ruínas e base de mortos-vivos",
+      "estado": "documentado",
+      "setor": "eldroth",
+      "categoria_inventario": "ruinas_ocupadas"
+    },
+    {
+      "lugar_id": "lugar-visual:montanhas-thargrid",
+      "funcao": "Bioma montanhoso e passagens",
+      "estado": "documentado",
+      "setor": "thargrid",
+      "categoria_inventario": "macroambiente"
+    },
+    {
+      "lugar_id": "lugar-visual:reino-sob-montanha",
+      "funcao": "Reino-refúgio e principal polo militar da resistência",
+      "estado": "documentado",
+      "setor": "thargrid",
+      "categoria_inventario": "nucleo_habitado_coletivo"
+    },
+    {
+      "lugar_id": "lugar-visual:ironwood",
+      "funcao": "Território florestal da resistência",
+      "estado": "documentado",
+      "setor": "thargrid",
+      "categoria_inventario": "macroambiente"
+    },
+    {
+      "lugar_id": "lugar-visual:fortaleza-ranger-ironwood",
+      "funcao": "Fortaleza ranger dentro de Ironwood",
+      "estado": "documentado",
+      "setor": "thargrid",
+      "categoria_inventario": "fortaleza_habitada_sem_contagem_individual"
+    },
+    {
+      "lugar_id": "lugar-visual:abismo",
+      "funcao": "Queda do rio e passagem de forças demoníacas",
+      "estado": "documentado",
+      "setor": "foz",
+      "categoria_inventario": "marco_fisico"
+    },
+    {
+      "lugar_id": "lugar-visual:gualapolis",
+      "funcao": "Antiga capital nativa, hoje sob estruturas posteriores",
+      "estado": "documentado",
+      "setor": "foz",
+      "categoria_inventario": "cidade_historica"
+    },
+    {
+      "lugar_id": "lugar-visual:boca-do-abismo",
+      "funcao": "Fortaleza e aliança militar tensa",
+      "estado": "documentado",
+      "setor": "foz",
+      "categoria_inventario": "fortaleza_habitada_sem_contagem_individual"
+    },
+    {
+      "lugar_id": "lugar-visual:arquivo-mortos-afogados",
+      "funcao": "Biblioteca Yokai submersa",
+      "estado": "documentado",
+      "setor": "foz",
+      "categoria_inventario": "biblioteca_submersa"
+    },
+    {
+      "lugar_id": "lugar-visual:templo-das-sombras",
+      "funcao": "Antigo palácio ritual arruinado",
+      "estado": "documentado",
+      "setor": "foz",
+      "categoria_inventario": "ruina_ritual"
+    },
+    {
+      "lugar_id": "lugar-visual:shadar-riverie",
+      "funcao": "Centro de poder colonial e diplomático",
+      "estado": "documentado",
+      "setor": "shadar",
+      "categoria_inventario": "nucleo_habitado"
+    },
+    {
+      "lugar_id": "lugar-visual:grama-cortada",
+      "funcao": "Condado agrícola e conjunto de comunidades",
+      "estado": "documentado",
+      "setor": "grama",
+      "categoria_inventario": "condado_conjunto_nao_individualizado"
+    },
+    {
+      "lugar_id": "lugar-visual:templo-do-crepusculo",
+      "funcao": "Palácio da Rainha da Noite",
+      "estado": "documentado",
+      "setor": "cauda",
+      "categoria_inventario": "sede_ritual"
+    },
+    {
+      "lugar_id": "lugar-visual:aguas-azuis",
+      "funcao": "Zona marítima além do Mar de Sangue",
+      "estado": "documentado",
+      "setor": "azuis",
+      "categoria_inventario": "macroambiente"
+    }
+  ],
+  "lugares_catalogados": [
+    {
+      "id": "lugar:arquivo-dos-mortos-afogados",
+      "nome": "Arquivo dos Mortos Afogados",
+      "regiao_id": "regiao:foz-rio-ancestral",
+      "tipo": "masmorra_submersa",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:boca-do-abismo",
+      "nome": "Boca do Abismo",
+      "regiao_id": "regiao:foz-rio-ancestral",
+      "tipo": "fortaleza",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:gualapolis",
+      "nome": "Gualápoles / Gualápolis",
+      "regiao_id": "regiao:foz-rio-ancestral",
+      "tipo": "cidade_historica",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:portomonte",
+      "nome": "Portomonte",
+      "regiao_id": "regiao:costa-sul",
+      "tipo": "assentamento",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:cavernas-kuo-toa",
+      "nome": "Cavernas kuo-toa da Costa Sul",
+      "regiao_id": "regiao:costa-sul",
+      "tipo": "conjunto_de_cavernas",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:eldroth",
+      "nome": "Floresta de Eldroth",
+      "regiao_id": "regiao:eldroth",
+      "tipo": "floresta",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:vandar",
+      "nome": "Ruínas de Vandar",
+      "regiao_id": "regiao:eldroth",
+      "tipo": "ruinas",
+      "estado": "documentado"
+    },
+    {
+      "id": "lugar:ilhas-costa-sul",
+      "nome": "Ilhas habitadas ao redor da Costa Sul (conjunto regional)",
+      "regiao_id": "regiao:costa-sul",
+      "tipo": "conjunto_de_ilhas",
+      "estado": "documentado"
+    }
+  ],
+  "registros_formais": [
+    {
+      "id": "assentamento:comunidades-insulares-costa-sul",
+      "nome": "Comunidades insulares tortles e tabaxis da Costa Sul",
+      "natureza": "conjunto_de_comunidades",
+      "regiao_id": "regiao:costa-sul",
+      "referencia": "lugar:ilhas-costa-sul",
+      "precisa_individualizacao": true,
+      "status": "rascunho-factual",
+      "novo_assentamento_gerado": false
+    },
+    {
+      "id": "assentamento:portomonte",
+      "nome": "Portomonte",
+      "natureza": "assentamento_civil",
+      "regiao_id": "regiao:costa-sul",
+      "referencia": "lugar:portomonte",
+      "precisa_individualizacao": false,
+      "status": "rascunho-factual",
+      "novo_assentamento_gerado": false
+    },
+    {
+      "id": "assentamento:rede-cavernas-kuo-toa-costa-sul",
+      "nome": "Redes de cavernas habitadas pelos Kuo-Toa da Costa Sul",
+      "natureza": "rede_de_abrigos",
+      "regiao_id": "regiao:costa-sul",
+      "referencia": "lugar:cavernas-kuo-toa",
+      "precisa_individualizacao": true,
+      "status": "rascunho-factual",
+      "novo_assentamento_gerado": false
+    }
+  ],
+  "sementes_narrativas": [
+    {
+      "id": "povoamento-proposto:cartorio-das-portas-raspadas",
+      "titulo": "O Cartório das Portas Raspadas",
+      "area_id": "area-proposta:garganta",
+      "local_proposto": "Beco hipotético nos degraus de Garganta",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:turno-das-escavadoras",
+      "titulo": "O Turno das Escavadoras",
+      "area_id": "area-proposta:garganta",
+      "local_proposto": "Canteiro hipotético sob o antigo Templo de Yolskaariin",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:balsa-dos-nomes",
+      "titulo": "A Balsa dos Nomes Descartados",
+      "area_id": "area-proposta:rio",
+      "local_proposto": "Travessia hipotética do Rio Ancestral próxima à rota de Drakport",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:patio-do-soldo",
+      "titulo": "O Pátio do Soldo Que Não Veio",
+      "area_id": "area-proposta:rio",
+      "local_proposto": "Pátio de contratação hipotético em Drakport",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:hortas-do-sal",
+      "titulo": "As Hortas do Sal Devolvido",
+      "area_id": "area-proposta:costa",
+      "local_proposto": "Encosta agrícola hipotética nas proximidades de Portomonte",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:farol-das-memorias",
+      "titulo": "O Farol das Memórias Emprestadas",
+      "area_id": "area-proposta:costa",
+      "local_proposto": "Ilha monástica hipotética na rede insular da Costa Sul",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:poco-sem-bandeira",
+      "titulo": "O Poço Sem Bandeira",
+      "area_id": "area-proposta:caatinga",
+      "local_proposto": "Ponto de água hipotético em rota de deslocamento da Caatinga",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:mercado-das-ferragens",
+      "titulo": "A Feira das Ferragens Trocadas",
+      "area_id": "area-proposta:caatinga",
+      "local_proposto": "Pátio de comércio itinerante hipotético nas bordas das pradarias",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:correio-dos-esporos",
+      "titulo": "O Correio das Raízes Molhadas",
+      "area_id": "area-proposta:eldroth",
+      "local_proposto": "Abrigo hipotético em uma parte não dominada integralmente de Eldroth",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:velorio-dos-insepultos",
+      "titulo": "O Velório dos Insepultos",
+      "area_id": "area-proposta:eldroth",
+      "local_proposto": "Porão hipotético nas ruínas periféricas de Vandar",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:conselho-dos-juramentos",
+      "titulo": "O Conselho dos Juramentos Quebrados",
+      "area_id": "area-proposta:thargrid",
+      "local_proposto": "Oficina-comunidade hipotética no Reino Sob a Montanha",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:escola-do-caminho-verde",
+      "titulo": "A Escola das Trilhas que Somem",
+      "area_id": "area-proposta:thargrid",
+      "local_proposto": "Ponto de instrução hipotético próximo a Ironwood",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:escrivania-da-foz",
+      "titulo": "A Escrivania dos Limites da Foz",
+      "area_id": "area-proposta:foz",
+      "local_proposto": "Anexo documental hipotético próximo à Boca do Abismo",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:feira-da-tregua",
+      "titulo": "A Feira da Trégua Improvável",
+      "area_id": "area-proposta:foz",
+      "local_proposto": "Mercado temporário hipotético próximo aos postos de Gualápolis",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:salas-de-protocolo",
+      "titulo": "As Salas do Favor Não Pago",
+      "area_id": "area-proposta:shadar",
+      "local_proposto": "Casa de audiência hipotética em Shadar-Riverie",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "povoamento-proposto:ateliê-das-mascaras",
+      "titulo": "O Ateliê das Máscaras Legíveis",
+      "area_id": "area-proposta:shadar",
+      "local_proposto": "Oficina hipotética nos corredores de serviço de Shadar-Riverie",
+      "status": "proposta_de_povoamento",
+      "categoria": "semente_de_cena_ou_microespaco",
+      "conta_como_assentamento": false
+    }
+  ],
+  "criaturas_ecologicas_propostas": [
+    {
+      "id": "ecologia-xii:criatura:coruja-do-eco-emprestado",
+      "nome": "Coruja do Eco Emprestado",
+      "estado": "proposta_nao_canonica",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "ecologia-xii:criatura:besouros-da-casca-riscada",
+      "nome": "Besouros da Casca Riscada",
+      "estado": "proposta_nao_canonica",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "ecologia-xii:criatura:cardos-que-bebem-cinza",
+      "nome": "Cardos que Bebem Cinza",
+      "estado": "proposta_nao_canonica",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "ecologia-xii:criatura:micelio-das-vozes-partidas",
+      "nome": "Micélio das Vozes Partidas",
+      "estado": "proposta_nao_canonica",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "ecologia-xii:criatura:cervo-de-galhos-invertidos",
+      "nome": "Cervo dos Galhos Invertidos",
+      "estado": "proposta_nao_canonica",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "ecologia-xii:criatura:escrivao-da-folha-lacrada",
+      "nome": "Escrivão da Folha Lacrada",
+      "estado": "proposta_nao_canonica",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "ecologia-xii:criatura:andarilho-de-sepultura-negada",
+      "nome": "Andarilho de Sepultura Negada",
+      "estado": "proposta_nao_canonica",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "conta_como_assentamento": false
+    },
+    {
+      "id": "ecologia-xii:criatura:cao-de-esporos-do-limiar",
+      "nome": "Cão de Esporos do Limiar",
+      "estado": "proposta_nao_canonica",
+      "categoria": "especie_ou_manifestacao_proposta",
+      "conta_como_assentamento": false
+    }
+  ],
+  "comunidades_novas_propostas": [
+    {
+      "id": "povoamento:xlv:01",
+      "nome": "A Maré dos Rostos de Sal",
+      "frente_id": "frente:macro:costa",
+      "setor": "costa",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:02",
+      "nome": "O Mosteiro das Tartarugas de Vidro",
+      "frente_id": "frente:macro:costa",
+      "setor": "ilhas",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:03",
+      "nome": "A Orla das Cestas Sussurrantes",
+      "frente_id": "frente:macro:rio",
+      "setor": "rio",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:04",
+      "nome": "Círculo das Lanternas D'Água",
+      "frente_id": "frente:macro:rio",
+      "setor": "rio",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:05",
+      "nome": "Bolsa da Folha Gravada",
+      "frente_id": "frente:macro:eldroth",
+      "setor": "eldroth",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:06",
+      "nome": "Jardim das Vozes Desatadas",
+      "frente_id": "frente:macro:eldroth",
+      "setor": "eldroth",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:07",
+      "nome": "O Coral dos Troncos Acordados",
+      "frente_id": "frente:macro:ironwood",
+      "setor": "ironwood",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:08",
+      "nome": "O Ninho das Cinquenta Cordas",
+      "frente_id": "frente:macro:ironwood",
+      "setor": "ironwood",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:09",
+      "nome": "A Aldeia das Jarras Refeitas",
+      "frente_id": "frente:macro:caatinga",
+      "setor": "caatinga",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:10",
+      "nome": "A Vigília do Barro que Anda",
+      "frente_id": "frente:macro:caatinga",
+      "setor": "caatinga",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:11",
+      "nome": "O Condado das Sementes de Quartzo",
+      "frente_id": "frente:macro:thargrid-montanhas",
+      "setor": "thargrid",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:12",
+      "nome": "Os Degraus da Escama Rachada",
+      "frente_id": "frente:macro:garganta-entorno",
+      "setor": "garganta",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:13",
+      "nome": "A Sinfonia das Fendas Claras",
+      "frente_id": "frente:macro:submersos",
+      "setor": "azuis",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    },
+    {
+      "id": "povoamento:xlv:14",
+      "nome": "O Claustro das Marés Feridas",
+      "frente_id": "frente:macro:submersos",
+      "setor": "costa",
+      "categoria": "comunidade_coletiva_proposta",
+      "status": "proposta_nao_canonica",
+      "conta_como_aprovado": false
+    }
+  ],
+  "equivalencias_para_deduplicacao": [
+    {
+      "grupo": "portomonte",
+      "refs": [
+        "lugar-visual:portomonte",
+        "lugar:portomonte",
+        "assentamento:portomonte"
+      ],
+      "nota": "Três representações catalográficas da mesma cidade; não são três povoamentos."
+    },
+    {
+      "grupo": "ilhas-costa-sul-coletivo",
+      "refs": [
+        "lugar-visual:ilhas-monasticas",
+        "lugar:ilhas-costa-sul",
+        "assentamento:comunidades-insulares-costa-sul"
+      ],
+      "nota": "Três registros de um conjunto regional ainda sem ilhas individualizadas."
+    },
+    {
+      "grupo": "cavernas-kuotoa-coletivo",
+      "refs": [
+        "lugar-visual:cavernas-kuo-toa",
+        "lugar:cavernas-kuo-toa",
+        "assentamento:rede-cavernas-kuo-toa-costa-sul"
+      ],
+      "nota": "Três referências à rede costeira de cavernas, não três aldeias."
+    },
+    {
+      "grupo": "vandar",
+      "refs": [
+        "lugar-visual:vandar",
+        "lugar:vandar"
+      ],
+      "nota": "Ruínas com ocupação de mortos-vivos; não equivalem automaticamente a comunidade civil."
+    },
+    {
+      "grupo": "gualapolis",
+      "refs": [
+        "lugar-visual:gualapolis",
+        "lugar:gualapolis"
+      ],
+      "nota": "Capital histórica e sítio sobreposto à Boca e Shadar; não multiplicar pela diferença ortográfica."
+    },
+    {
+      "grupo": "boca-do-abismo",
+      "refs": [
+        "lugar-visual:boca-do-abismo",
+        "lugar:boca-do-abismo"
+      ],
+      "nota": "Fortaleza única em documentos diferentes; relação com Shadar permanece pendente."
+    },
+    {
+      "grupo": "eldroth",
+      "refs": [
+        "lugar-visual:floresta-eldroth",
+        "lugar:eldroth"
+      ],
+      "nota": "Macrorregião florestal, não um único assentamento."
+    }
+  ],
+  "advertencias": [
+    "22 ou mais âncoras documentadas podem representar rios, regiões, palácios e ruínas; não converter o total de âncoras em assentamentos.",
+    "Os três registros formais incluem uma cidade e dois conjuntos coletivos; não são um censo do continente.",
+    "Oito lugares catalogados também incluem ruínas, a floresta e conjuntos físicos.",
+    "As dezesseis sementes são propostas de cenas ou microespaços; não se deve contá-las como vilas.",
+    "As oito criaturas propostas na ecologia de Eldroth são espécies ou manifestações, não núcleos habitados.",
+    "Os quatorze assentamentos fantásticos novos permanecem propostas sem aprovação.",
+    "Evidências duplicadas de Portomonte, cavernas Kuo-Toa e ilhas da Costa Sul não autorizam tripla contagem.",
+    "Nenhuma correção de grafia, vínculo regional ou conexão da topologia é homologada aqui."
+  ],
+  "proxima_fase": "Revisão individual de unidades efetivamente habitadas versus entidades físicas, produção de lotes de assentamentos e posterior auditoria quantitativa de diversidade e cobertura."
+}
