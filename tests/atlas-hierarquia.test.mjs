@@ -14,7 +14,11 @@ const d={
   seeds:read("data/propostas/povoamento-regional-hack-carcaca.json"),
   ecology:read("data/propostas/eldroth-ecologia-monstruosa-dw.json"),
   statblocks:read("data/propostas/eldroth-fichas-dw-ciclo13.json"),
-  ironwoodLocales:read("data/propostas/ironwood-eldroth-resistencia-hack.json")
+  ironwoodLocales:read("data/propostas/ironwood-eldroth-resistencia-hack.json"),
+  thargridSocial:read("data/propostas/thargrid-resistencia-cotidiano-hack.json"),
+  gargantaSocial:read("data/propostas/garganta-rio-ancestral-social-hack.json"),
+  caatingaSocial:read("data/propostas/caatinga-rede-social-hack.json"),
+  hierarchy:read("data/atlas/aninhamento-territorial.json")
 };
 const t=buildAtlasTree(d);
 const lookup=new Map(t.nodes.map(n=>[n.id,n]));
@@ -122,7 +126,8 @@ test("atlas: locais documentados podem estar dentro de lugares maiores",()=>{
     ["templo-demeter","portomonte"],
     ["templo-yolskaariin","garganta"],
     ["arquivo-mortos-afogados","gualapolis"],
-    ["templo-da-lua","rio-ancestral"]
+    ["templo-da-lua","rio-ancestral"],
+    ["boca-do-abismo","gualapolis"]
   ];
   for(const [child,parent] of cases){
     const n=lookup.get("lugar-visual:"+child);
@@ -143,4 +148,68 @@ test("atlas: hierarquia recursiva aceita microespaços mais profundos sem falsif
   const noVillages=t.nodes.filter(n=>n.parentId==="lugar-visual:ironwood"
     &&n.kind==="localidade"&&/vila|cidade/i.test(n.label));
   assert.equal(noVillages.length,0,"Não inventar cidades ou vilas de Ironwood");
+});
+
+test("atlas: todo lugar geográfico inclui reserva de localização própria",()=>{
+  const places=t.nodes.filter(n=>["lugar","localidade"].includes(n.kind)&&n.placeType!=="ambito");
+  assert.ok(places.length>40, "Os núcleos sociais devem compor localidades em todas as regiões");
+  const marks=t.nodes.filter(n=>n.kind==="lacuna_localidades");
+  assert.equal(marks.length,places.length);
+  const byParent=new Map(marks.map(n=>[n.parentId,n]));
+  assert.equal(byParent.size,marks.length);
+  for(const place of places){
+    const mark=byParent.get(place.id);
+    assert.ok(mark,"Sem lacuna de subdivisões para "+place.label);
+    assert.equal(mark.aprovacao_autoral,false);
+    assert.equal(mark.empty,true);
+    assert.notEqual(mark.label,"Outras vilas e cidades — ainda não individualizadas",
+       "A lacuna deve respeitar o tipo do lugar");
+    for(const type of CONTENT_TYPES){
+      assert.ok(lookup.has(place.id+"::"+type[0]),"Categoria "+type[0]+" ausente em "+place.id);
+    }
+  }
+});
+test("atlas: nenhuma proximidade pode virar contenção espacial",()=>{
+  const unplaced=d.hierarchy.ancoras_sementes.filter(a=>a.pai===null);
+  assert.ok(unplaced.length>=4);
+  for(const anchor of unplaced){
+    const slug=anchor.id.slice("povoamento-proposto:".length);
+    const n=lookup.get("lugar-visual:semente-"+slug);
+    assert.equal(n.kind,"lugar","Vizinhança não significa assentamento interno: "+n.label);
+    assert.equal(n.status,"proposta");
+  }
+  const site=t.nodes.find(n=>n.sourceId==="ironwood-eldroth:lugar:sala-dos-nomes-frios"&&
+    n.kind==="lugar");
+  assert.ok(site);
+  assert.notEqual(site.parentId,"lugar-visual:vandar");
+});
+test("atlas: propostas de Thargrid, Garganta, Eldroth e Caatinga ficam aninhadas ou regionais",()=>{
+  const proposedLocations=t.nodes.filter(n=>["lugar","localidade"].includes(n.kind)&&n.status==="proposta");
+  assert.ok(proposedLocations.length>=32);
+  assert.equal(t.nodes.filter(n=>n.kind==="localidade"&&
+    n.sourceId?.startsWith("thargrid-social:lugar:")).length,6);
+  assert.equal(t.nodes.filter(n=>n.kind==="localidade"&&
+    n.sourceId?.startsWith("rio-garganta:lugar:")).length,4);
+  assert.equal(t.nodes.filter(n=>n.kind==="lugar"&&
+    n.sourceId?.startsWith("rio-garganta:lugar:")).length,2);
+  assert.equal(t.nodes.filter(n=>n.kind==="localidade"&&
+    n.sourceId?.startsWith("caatinga:comunidade:")).length,3);
+  assert.equal(t.nodes.filter(n=>["lugar","localidade"].includes(n.kind)&&
+    n.sourceId?.startsWith("caatinga:comunidade:")).length,3,
+    "As duas comunidades já cobertas por sementes não devem se duplicar");
+  const caatingaSeed=lookup.get("lugar-visual:semente-poco-sem-bandeira");
+  assert.equal(caatingaSeed.parentId,"lugar-visual:caatinga-bioma");
+  assert.ok(t.nodes.some(n=>n.sourceId==="caatinga:comunidade:poco-sem-bandeira:cotidiano"
+    &&n.parentId===caatingaSeed.id+"::culturas"));
+});
+test("atlas: relação documentada é citada, proposta não aplica o cânone",()=>{
+  const r=lookup.get("lugar-visual:templo-demeter");
+  assert.equal(r.containmentEvidence.pagina,5);
+  assert.equal(r.containmentEvidence.estatuto,"referencia_de_manuscrito");
+  const s=lookup.get("lugar-visual:semente-patio-do-soldo");
+  assert.equal(s.parentId,"lugar-visual:drakport");
+  assert.equal(s.containmentEvidence.estatuto,"proposta_nao_canonica");
+  assert.equal(s.approval,false);
+  assert.equal(d.hierarchy.altera_canon,false);
+  assert.equal(d.hierarchy.revisao_autoral_aplicada,false);
 });
