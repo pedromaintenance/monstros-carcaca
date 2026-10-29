@@ -839,3 +839,19 @@ A faixa flexível de **145–205 assentamentos e ilhas** não é reservada a hum
 **A soma de 26 + 8 + 3 + 16 + 8 + 14 não é um censo**, e a faixa autoral de 145–205 assentamentos e ilhas continua sendo referência de densidade, não percentual de conclusão.
 
 [Documentação](docs/ATLAS_INVENTARIO_POVOAMENTO_CICLO44.md) · [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#settlementInventory).
+
+## Ciclo XLV — Expansão do Rio Ancestral e Eldroth (2026-10-29)
+
+- [x] Produzir nove propostas de comunidades habitadas no Rio Ancestral e nove em Eldroth, com habitantes, arquitetura, subsistência, organização e tensões diferenciadas.
+- [x] Construir dez lugares ecológicos independentes (cinco por região): covis, locais de reprodução, habitats de decompositores, predação e fenômenos mágicos.
+- [x] Cruzar o segundo lote com as comunidades anteriores e impedir duplicações de ID/nome.
+- [x] Manter a distinção **32 propostas acumuladas = 14 + 18**, **22 propostas do Rio e Eldroth = 11 + 11**, **zero assentamentos aprovados**.
+- [x] Apontar páginas documentais do Hack somente como âncoras de ambiente, não como prova da existência das comunidades inventadas.
+- [x] Não incluir coordenadas, população, estradas, rios adicionais nem relações de viagem como fatos.
+- [x] Introduzir painel de comunidades/habitats e filtros regionais no Atlas, com validação e regressões.
+- [x] Distribuir apenas índice numérico das páginas do Hack no Pages, **sem publicar o texto completo do manuscrito autoral**.
+- [ ] Revisar qualitativamente este lote com a autoria antes de promover algum registro a cânone.
+- [ ] Alternar as próximas rodadas com regiões menos povoadas (Caatinga, Garganta, Thargrid, Ironwood, ilhas, Mar e Cauda).
+- [ ] Auditar biologia e relações materiais de cada assentamento aprovado antes de construir uma mesogeografia.
+
+[Documento XLV](docs/ATLAS_POVOAMENTO_RIO_ELDROTH_CICLO45.md) · [Atlas XLV](https://pedromaintenance.github.io/monstros-carcaca/atlas/#settlementExpansion).
