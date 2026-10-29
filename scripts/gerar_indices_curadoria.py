@@ -265,6 +265,31 @@ def build():
     grama_xx=load("data/worldbuilding/grama-cortada-cotidiano-ciclo20.json")
     gnomos_xxi=load("data/worldbuilding/culturas-gnomicas-ciclo21.json")
     meio_demonios_xxii=load("data/worldbuilding/meio-demonios-sociedades-ciclo22.json")
+    caatinga_xxiii=load("data/worldbuilding/caatinga-vida-civil-ciclo23.json")
+    cats_caatinga_xxiii=("dominios_sociais","circuitos_materiais","etica_da_agua",
+                         "mobilidades","relacoes_regionais","vinhetas")
+    registros_caatinga_xxiii=[{**e,"categoria_indice":cat}
+        for cat in cats_caatinga_xxiii for e in caatinga_xxiii[cat]]
+    if len(registros_caatinga_xxiii)!=40:
+        raise ValueError("Ciclo XXIII: 40 propostas culturais são requeridas.")
+    def indexar_caatinga_civil(extract):
+        result=defaultdict(set)
+        for entry in registros_caatinga_xxiii:
+            value=extract(entry)
+            for item in (value if isinstance(value,list) else [value]):
+                if item is not None and item!="":
+                    result[str(item)].add(entry["id"])
+        return {key:sorted(values) for key,values in sorted(result.items())}
+    indices_caatinga_xxiii={
+        "by_categoria":indexar_caatinga_civil(lambda x:x["categoria_indice"]),
+        "by_estado":indexar_caatinga_civil(lambda x:x["estado"]),
+        "by_referencia_preexistente":indexar_caatinga_civil(
+            lambda x:x.get("referencia_preexistente")),
+        "by_pagina_contextual":indexar_caatinga_civil(
+            lambda x:str(x["pagina_contextual"])),
+        "by_nome":indexar_caatinga_civil(lambda x:x["nome_editorial"]),
+        "by_slug":indexar_caatinga_civil(lambda x:x["id"].rsplit(":",1)[-1])
+    }
     categorias_xxii=("eixos_sociais","contextos_de_convivencia","circuitos_civis",
                       "tensoes","costumes_candidatos","vinhetas")
     registros_xxii=[{**entry,"categoria_indice":cat}
@@ -1082,6 +1107,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "caatinga_civil_life":"caatinga-civil-life.json",
+        "caatinga_civil_life_indexes":"caatinga-civil-life-indexes.json",
         "half_demon_societies":"half-demon-societies.json",
         "half_demon_societies_indexes":"half-demon-societies-indexes.json",
         "gnomish_cultures":"gnomish-cultures.json",
@@ -1226,6 +1253,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_fatos_caatinga_xxiii":len(caatinga_xxiii["fatos_documentados"]),
+        "total_propostas_caatinga_xxiii":len(registros_caatinga_xxiii),
+        "total_referencias_caatinga_xxiii":len(caatinga_xxiii["referencias_a_propostas_e_dados_existentes"]),
+        "total_perguntas_caatinga_xxiii":len(caatinga_xxiii["perguntas_para_autor"]),
         "total_fatos_meio_demonios_xxii":len(meio_demonios_xxii["fatos_documentados"]),
         "total_propostas_meio_demonios_xxii":len(registros_xxii),
         "total_perguntas_meio_demonios_xxii":len(meio_demonios_xxii["perguntas_para_autor"]),
@@ -1397,6 +1428,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["caatinga_civil_life"]:caatinga_xxiii,
+           files["caatinga_civil_life_indexes"]:indices_caatinga_xxiii,
            files["half_demon_societies"]:meio_demonios_xxii,
            files["half_demon_societies_indexes"]:indices_meio_demonios_xxii,
            files["gnomish_cultures"]:gnomos_xxi,
