@@ -96,6 +96,10 @@ A [Carta Cartográfica Continental](docs/ATLAS_CARTA_CARTOGRAFICA_CICLO38.md) tr
 
 A [documentação hidrográfica](docs/ATLAS_HIDROGRAFIA_CONTINENTAL_CICLO39.md) reúne **13 domínios de estudo, 6 vínculos documentados e 12 questões ainda abertas** sobre Rio Ancestral, Abismo, ilha lunar, Caatinga, purificação de Deméter em Portomonte, cultivo costeiro, Mar de Sangue, fronteira móvel das águas azuis, relevo nevado, cavernas e Grama-Cortada. O [JSON](data/atlas/hidrografia-continental-ciclo39.json) cruza marcos e ambientes existentes e não canoniza bacias, nascentes, aquíferos, vazões ou potabilidade não comprovada. O [Atlas Pages](https://pedromaintenance.github.io/monstros-carcaca/atlas/) inclui o novo painel **Águas de Golzdov**, com evidências paginadas, relações, lacunas e limites de inferência.
 
+## Ciclo XL — Cronocartografia do poder
+
+A [cronocartografia continental](docs/ATLAS_CRONOCARTOGRAFIA_CICLO40.md) conecta **17 marcos históricos**, **14 esferas políticas** e **7 futuros em aberto** a seis recortes de consulta (0–999 EC). O [JSON](data/atlas/cronocartografia-ciclo40.json) preserva as datas do manuscrito e os vínculos do Ciclo XXXIII, distinguindo ocupação, resistência, refúgio, invasão e sede de poder — **sem criar fronteiras, rotas militares ou datas de fundação de instituições não documentadas**. O [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/) possui um painel temporal com filtros de período e setor, inspetor documental e centros de poder sem retroprojeções.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
