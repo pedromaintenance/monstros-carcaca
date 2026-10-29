@@ -543,3 +543,10 @@ Foram produzidos 12 fatos com ressalvas, 40 propostas culturais não ocorridas, 
 Foi investigado o papel do Templo da Lua e de Severina Shadowbloom no Rio Ancestral. O Hack documenta o templo insular transformado em centro sombrio e ritos de Severina ligados ao controle das águas e à influência das trevas (p. 4). A religião plural do cenário (p. 22) **não identifica automaticamente** a divindade titular nem prova fases lunares necessárias, calendário, alcance e autoridade fiscal.
 
 O Ciclo XXIX incluiu doze fatos delimitados, catorze referências a propostas preexistentes, trinta e seis hipóteses editoriais não adotadas e doze questões de autoria em aberto. Quatro modelos de rito concorrentes foram preservados sem seleção, com prévia de leitura imutável e observações epistemicamente cuidadosas. O gerador publica seis índices, o validador protege a proveniência e os testes mantêm a Revolta de Drakport futura e as sete criaturas intactas.
+
+
+## 2026-10-28 · Ciclo XXX — O mestre investiga, o atlas não decreta
+
+Após três ciclos de expansão sociocultural do Rio Ancestral e de suas margens, o Ciclo XXX introduziu um instrumento prático de preparação de sessões. Foram mapeados seis fatos documentados do Hack pp. 4, 7, 11 e 22; dezesseis referências a propostas preexistentes; seis procedimentos; doze cartões classificados por grau de evidência; oito cenas possíveis; seis consequências não executadas; quatro salvaguardas; e oito perguntas em aberto.
+
+A interface ESM monta pacotes imutáveis de trabalho para o mestre, sem assumir existência de cobranças individuais, mudanças de corrente, organização da resistência ou divindade lunar. Rumores de libertação não realizam a Revolta de Drakport e pessoas não se tornam unidades de estoque. O atlas factual, as sete criaturas do Arquivo, o save de campanha e as regras Dungeon World permanecem separados do kit editorial. Índices determinísticos, JSON Schema, testes de referências e guia de mesa acompanham a entrega.
