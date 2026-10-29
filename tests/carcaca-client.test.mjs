@@ -82,6 +82,8 @@ const fixtures={
     hack_artificer_movement_indexes:"hack-artificer-movement-indexes.json",
     hack_mercenary_movements:"hack-mercenary-movements.json",
     hack_mercenary_movement_indexes:"hack-mercenary-movement-indexes.json",
+    portomonte_temple_civic:"portomonte-temple-civic.json",
+    portomonte_temple_civic_indexes:"portomonte-temple-civic-indexes.json",
     costa_sul_civil_life:"costa-sul-civil-life.json",
     costa_sul_civil_life_indexes:"costa-sul-civil-life-indexes.json",
     caatinga_civil_life:"caatinga-civil-life.json",
@@ -186,6 +188,8 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "portomonte-temple-civic.json":{"regiao_id":"regiao:costa-sul","assentamento_id":"assentamento:portomonte","modelo_de_governo_adotado":null,"agua_domestica_potavel_confirmada":null,"aprovacao_autoral":false,"efeito_canonico_automatico":false,"contagens":{"fatos":8,"referencias":12,"perguntas":12,"modelos_de_governo":4,"etapas_de_trabalho":8,"relacoes_sociais":8,"garantias_civis":6,"dilemas":6,"vinhetas":4},"modelos_de_governo":[{"id":"worldbuilding-xxv:modelos_de_governo:templo-consultivo","nome_editorial":"Templo com voz, não trono","hipotese_condicional":"Um conselho civil consulta o templo sem delegar governo","contradicao_material":"Poder religioso e poder civil não são equivalentes","pergunta_critica":"Quem tem direito ao voto?","referencia_id":"xxiv:trabalhos:templo","pagina_contextual":5,"estatuto":"alternativa_nao_adotada","aprovacao_autoral":false,"ocorreu":false,"efeito_mecanico":false}],"etapas_de_trabalho":[{"id":"worldbuilding-xxv:etapas_de_trabalho:destinacao","nome_editorial":"Água agrícola não é água de beber","hipotese_condicional":"Separar usos","contradicao_material":"Risco público","pergunta_critica":"Potável?","referencia_id":"balanco:portomonte-agua-purificada","pagina_contextual":5}],"relacoes_sociais":[],"garantias_civis":[],"dilemas":[],"vinhetas":[],"fatos_documentados":[{"id":"worldbuilding-xxv:fato:02","novo_canon":false}],"perguntas_para_autor":[{"id":"worldbuilding-xxv:pergunta:autoridade","resposta_aprovada":null}]},
+  "portomonte-temple-civic-indexes.json":{"by_categoria":{"modelos_de_governo":["worldbuilding-xxv:modelos_de_governo:templo-consultivo"]},"by_referencia":{"xxiv:trabalhos:templo":["worldbuilding-xxv:modelos_de_governo:templo-consultivo"]},"by_pagina":{"5":["worldbuilding-xxv:modelos_de_governo:templo-consultivo"]}},
   "costa-sul-civil-life.json":{"aprovacao_autoral":false,"efeito_canonico_automatico":false,"regiao_id":"regiao:costa-sul","contagens":{"propostas":36},"vida_domestica":[{"id":"xxiv:vida_domestica:cozinha","nome":"A cozinha que sustenta o porto","hipotese":"Tarefas domésticas compartilhadas","contradicao":"Trabalho invisível","pagina_contextual":5,"escopo":"portomonte","referencia_preexistente":"costa-sul:espaco:varal","ocorreu":false}],"trabalhos":[],"saberes":[],"circulacao":[],"tensoes_civis":[],"vinhetas":[],"fatos_documentados":[{"id":"xxiv:fato:1","canon_novo":false}],"perguntas_para_autor":[{"id":"xxiv:pergunta:1","resposta_aprovada":null}]},
   "costa-sul-civil-life-indexes.json":{"by_categoria":{"vida_domestica":["xxiv:vida_domestica:cozinha"]},"by_referencia":{"costa-sul:espaco:varal":["xxiv:vida_domestica:cozinha"]}},
   "caatinga-civil-life.json":{"aprovacao_autoral":false,"efeito_canonico_automatico":false,"regiao_id":"regiao:caatinga","lugares_canonicos_adicionados":0,"fronteira_exata_documentada":null,"agua_potavel_confirmada":null,"contagens":{"fatos":12,"dominios_sociais":12,"circuitos_materiais":6,"etica_da_agua":6,"mobilidades":6,"relacoes_regionais":5,"vinhetas":5,"referencias_existentes":12,"perguntas":10},"dominios_sociais":[{"id":"worldbuilding-xxiii:dominios_sociais:familias-e-clas","nome_editorial":"Clã e convivência","situacao_documentada":false,"ocorreu":false,"aprovacao_autoral":false,"estado":"proposta_cultural_sem_canon","pagina_contextual":12,"hipotese_social":"Famílias plurais","situacao_experimental":"Trabalho comunitário","contradicao":"Prestígio informal"}],"circuitos_materiais":[{"id":"worldbuilding-xxiii:circuitos_materiais:reparo","nome_editorial":"A oficina da água","situacao_documentada":false,"ocorreu":false,"aprovacao_autoral":false,"estado":"proposta_cultural_sem_canon","pagina_contextual":5,"producao_ou_troca_hipotetica":"Reparo de recipiente","situacao_experimental":"Trabalho invisível","referencia_preexistente":"caatinga:comunidade:poco-sem-bandeira"}],"etica_da_agua":[{"id":"worldbuilding-xxiii:etica_da_agua:necessidade","nome_editorial":"Água de todos","situacao_documentada":false,"ocorreu":false,"aprovacao_autoral":false,"estado":"proposta_cultural_sem_canon","pagina_contextual":5,"regra_para_investigar":"Primeira medida","pergunta_de_justica":"Quem bebe?","referencia_preexistente":"caatinga:comunidade:poco-sem-bandeira"}],"mobilidades":[{"id":"worldbuilding-xxiii:mobilidades:exilio","nome_editorial":"Migrar sem expulsão","situacao_documentada":false,"ocorreu":false,"aprovacao_autoral":false,"estado":"proposta_cultural_sem_canon","pagina_contextual":12,"contexto_hipotetico":"Diferentes motivos de saída","situacao_experimental":"Voltar ao lar","referencia_preexistente":"regiao:caatinga"}],"relacoes_regionais":[{"id":"worldbuilding-xxiii:relacoes_regionais:orcs-humanos","nome_editorial":"Aliança histórica","situacao_documentada":false,"ocorreu":false,"aprovacao_autoral":false,"estado":"proposta_cultural_sem_canon","pagina_contextual":5,"interpretacao_social":"Orcs e humanos se aliaram em 351 EC","tensao":"Aliança não equivale a tratado","referencia_preexistente":"regiao:caatinga"}],"vinhetas":[{"id":"worldbuilding-xxiii:vinhetas:cantaro","nome_editorial":"A sombra do cântaro","situacao_documentada":false,"ocorreu":false,"aprovacao_autoral":false,"estado":"proposta_cultural_sem_canon","pagina_contextual":5,"cena_hipotetica":"O cantaro não chega com água","tema":"Justiça da partilha","referencia_preexistente":"caatinga:comunidade:poco-sem-bandeira"}],"fatos_documentados":[{"id":"worldbuilding-xxiii:fato:antiga-alianca","pagina_manuscrito":9,"afirmacao_de_fonte":"Aliança de 351 EC","estado":"fonte_autoral_em_revisao","canon_novo":false}],"perguntas_para_autor":[{"id":"worldbuilding-xxiii:pergunta:agua","pergunta_autoral":"Quais fontes de água?","estado":"pendente_de_autoria","resposta_aprovada":null}]},
@@ -2666,4 +2670,31 @@ test("Ciclo XXIV: Costa Sul civil expõe estudos sem promover fatos",async()=>{
   assert.equal((await atlas.getCostaSulCivilLifeEntry("xxiv:fato:1")).canon_novo,false);
   assert.equal((await atlas.getCostaSulCivilLifeEntry("xxiv:pergunta:1")).resposta_aprovada,null);
   assert.equal(await atlas.getCostaSulCivilLifeEntry("xxiv:inexistente"),null);
+});
+
+test("Ciclo XXV: modelos alternativos não são governo adotado",async()=>{
+  const d=await atlas.getPortomonteTempleCivic();
+  assert.equal(d.assentamento_id,"assentamento:portomonte");
+  assert.equal(d.modelo_de_governo_adotado,null);
+  assert.equal(d.agua_domestica_potavel_confirmada,null);
+  assert.equal(d.efeito_canonico_automatico,false);
+  const ix=await atlas.getPortomonteTempleCivicIndexes();
+  assert.equal(ix.by_referencia["xxiv:trabalhos:templo"].length,1);
+  assert.equal((await atlas.searchPortomonteTempleCivic({categoria:"modelos_de_governo"})).length,1);
+  assert.equal((await atlas.searchPortomonteTempleCivic({referenciaId:"xxiv:trabalhos:templo"})).length,1);
+  assert.equal((await atlas.searchPortomonteTempleCivic({query:"agrícola",pagina:5})).length,1);
+  assert.equal((await atlas.searchPortomonteTempleCivic({query:"zx-nenhum"})).length,0);
+  assert.equal((await atlas.getPortomonteTempleCivicEntry("worldbuilding-xxv:fato:02")).novo_canon,false);
+  assert.equal((await atlas.getPortomonteTempleCivicEntry("worldbuilding-xxv:pergunta:autoridade")).resposta_aprovada,null);
+  assert.equal(await atlas.getPortomonteTempleCivicEntry("worldbuilding-xxv:inexistente"),null);
+  const modelId="worldbuilding-xxv:modelos_de_governo:templo-consultivo";
+  const preview=await atlas.previewPortomonteCivicModel(modelId,{observacoesDeMesa:["Personagens conversaram com sacerdote"]});
+  assert.equal(preview.modelo_adotado,false);
+  assert.equal(preview.aprovacao_autoral,false);
+  assert.equal(preview.efeito_canonico,false);
+  assert.equal(preview.efeito_mecanico,false);
+  assert.equal(preview.observacoes_nao_verificadas.length,1);
+  assert.equal((await atlas.getPortomonteTempleCivic()).modelo_de_governo_adotado,null);
+  assert.equal(await atlas.previewPortomonteCivicModel("worldbuilding-xxv:modelos_de_governo:fake"),null);
+  await assert.rejects(()=>atlas.previewPortomonteCivicModel(modelId,{observacoesDeMesa:"texto"}),TypeError);
 });
