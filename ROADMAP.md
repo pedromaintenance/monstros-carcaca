@@ -566,4 +566,17 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Preservar 10 fatos do manuscrito com limites de inferência, 13 vínculos a propostas antigas e 10 perguntas pendentes.
 - [x] Integrar esquema, validador, gerador de índices, API ESM, testes Python/Node e dossiê completo.
 - [x] Manter os fatos materiais: purificação agrícola não equivale a água potável; importância comercial não equivale a soberania sobre a Costa Sul.
-- [ ] **XXV — próximo ciclo:** investigação da organização civil de Portomonte e do trabalho que sustenta os ritos do templo de Deméter, preservando aprovação autoral explícita.
+- [x] **XXV — realizado:** organização civil de Portomonte e trabalho ritual explorados sem adoção canônica.
+
+
+## Ciclo XXV — Concluído: o milagre e a organização civil de Portomonte
+
+- [x] Conferir o Hack pp. 5 e 12, as dependências e os balanços materiais de Portomonte e a vida civil do ciclo XXIV.
+- [x] Distinguir poder mágico, execução do trabalho, domínio sobre recursos e legitimidade das decisões políticas.
+- [x] Elaborar **4 modelos civis alternativos não adotados**, sem afirmar teocracia, democracia, conselho existente ou soberania insular.
+- [x] Analisar **8 interfaces possíveis do trabalho de purificação**, sem inventar tecnologia ritual, sacerdotes, vazão, insumos ou potabilidade doméstica.
+- [x] Propor **8 posições sociais**, **6 garantias de controle público**, **6 dilemas materiais** e **4 vinhetas que não ocorreram**.
+- [x] Preservar 8 fatos com limites de inferência, 12 âncoras rastreáveis e 12 questões de autoria com respostas nulas.
+- [x] Incluir JSON, schema, validação de referências, seis índices, API ESM com prévia sem mutação, testes, README e diário.
+- [x] Proteger as 7 criaturas, as fichas DW, os balanços materiais desconhecidos e o atlas factual.
+- [ ] **XXVI — próximo horizonte:** revisar decisões autorais prioritárias sobre Portomonte; manter modelos em hipótese até homologação explícita e registrar consequências somente após escolha.
