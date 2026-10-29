@@ -820,3 +820,22 @@ Documentação: [ATLAS_CIRCULACAO_MATERIAL_CICLO41.md](docs/ATLAS_CIRCULACAO_MAT
 - [ ] Criar, nas próximas frentes de povoamento, comunidades fantásticas diferenciadas e seus lugares ecológicos, garantindo diversidade sem cotas raciais.
 
 A faixa flexível de **145–205 assentamentos e ilhas** não é reservada a humanoides e **não deve ser aumentada artificialmente** contando como aldeias covis solitários ou habitats de fauna. Detalhamento: [horizonte-povoamento-macro.json](data/atlas/horizonte-povoamento-macro.json).
+
+## Ciclo XLIV — Inventário e lote inicial de assentamentos fantásticos (2026-10-29)
+
+- [x] Cruzar **26 âncoras macrorregionais**, **8 lugares catalogados**, **3 registros formais de assentamento**, **16 sementes** e **8 propostas ecológicas**.
+- [x] Registrar **7 grupos explícitos de equivalência**; não contar três vezes Portomonte, cavernas Kuo-Toa ou o conjunto de ilhas da Costa Sul.
+- [x] Identificar a limitação do corpus: os 3 registros formais incluem 2 conjuntos regionais que ainda devem ser individualizados.
+- [x] Propor 14 novas **comunidades coletivas fantásticas** em 8 frentes, incluindo goblins, fadas, seres vegetais, elementais e marinhos.
+- [x] Distinguir **Ironwood** da frente montanhosa de Thargrid; distinguir **ilhas geográficas** de vilas insulares; admitir comunidades submersas nos setores **costa** e **azuis** sem fundir os ambientes.
+- [x] Preservar propostas não canônicas, sem coordenadas, populações, rotas ou relações comerciais inventadas.
+- [x] Publicar inventário, filtros por frente, inspetor social/ecológico e equivalências no HTML do Atlas.
+- [x] Incluir testes de contagem, diversidade, deduplicação, ausência de canonização e verificação do Pages na CI.
+- [ ] Inventariar demais fontes de campanhas e compêndios de monstros quando disponíveis, para localizar comunidades já existentes antes de criar novas.
+- [ ] Individualizar assentamentos dentro de conjuntos documentados, mediante fontes ou decisões autorais.
+- [ ] Expandir as frentes sem propostas neste lote (ilhamento como unidade própria e cauda) sem promover lugares a cânone.
+- [ ] Continuar povoamento macro em novos lotes coerentes por ecologia, história, povo e poder.
+
+**A soma de 26 + 8 + 3 + 16 + 8 + 14 não é um censo**, e a faixa autoral de 145–205 assentamentos e ilhas continua sendo referência de densidade, não percentual de conclusão.
+
+[Documentação](docs/ATLAS_INVENTARIO_POVOAMENTO_CICLO44.md) · [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#settlementInventory).
