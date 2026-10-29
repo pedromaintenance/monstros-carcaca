@@ -265,6 +265,42 @@ def build():
     grama_xx=load("data/worldbuilding/grama-cortada-cotidiano-ciclo20.json")
     gnomos_xxi=load("data/worldbuilding/culturas-gnomicas-ciclo21.json")
     meio_demonios_xxii=load("data/worldbuilding/meio-demonios-sociedades-ciclo22.json")
+    portomonte_xxvi=load("data/worldbuilding/revisao-autoral-portomonte-ciclo26.json")
+    decisoes_portomonte_xxvi=portomonte_xxvi["decisoes"]
+    def index_xxvi(key,values):
+        return {str(k):sorted(set(v)) for k,v in sorted(values.items())}
+    idx_prio_xxvi=defaultdict(list)
+    idx_dom_xxvi=defaultdict(list)
+    idx_q_xxvi=defaultdict(list)
+    idx_state_xxvi=defaultdict(list)
+    idx_dep_xxvi=defaultdict(list)
+    idx_impact_xxvi=defaultdict(list)
+    idx_opt_xxvi={}
+    idx_dec_xxvi={}
+    for dec in decisoes_portomonte_xxvi:
+        did=dec["id"]
+        idx_prio_xxvi[dec["prioridade"]].append(did)
+        idx_dom_xxvi[dec["dominio"]].append(did)
+        idx_q_xxvi[dec["origem_pergunta_id"]].append(did)
+        idx_state_xxvi[dec["estado"]].append(did)
+        for parent in dec["depende_de"]:
+            idx_dep_xxvi[parent].append(did)
+        idx_dec_xxvi[did]=sorted(o["id"] for o in dec["opcoes"])
+        for opt in dec["opcoes"]:
+            idx_opt_xxvi[opt["id"]]=did
+    for impact in portomonte_xxvi["impactos_condicionais"]:
+        for dep in impact["depende_de"]:
+            idx_impact_xxvi[dep].append(impact["id"])
+    indices_portomonte_xxvi={
+        "by_prioridade":index_xxvi("by_prioridade",idx_prio_xxvi),
+        "by_dominio":index_xxvi("by_dominio",idx_dom_xxvi),
+        "by_pergunta":index_xxvi("by_pergunta",idx_q_xxvi),
+        "by_estado":index_xxvi("by_estado",idx_state_xxvi),
+        "by_depende_de":index_xxvi("by_depende_de",idx_dep_xxvi),
+        "by_decisao":{k:v for k,v in sorted(idx_dec_xxvi.items())},
+        "by_opcao":{k:v for k,v in sorted(idx_opt_xxvi.items())},
+        "by_impacto":index_xxvi("by_impacto",idx_impact_xxvi),
+    }
     portomonte_xxv=load("data/worldbuilding/portomonte-templo-governo-ciclo25.json")
     cats_portomonte_xxv=("modelos_de_governo","etapas_de_trabalho","relacoes_sociais",
                         "garantias_civis","dilemas","vinhetas")
@@ -1150,6 +1186,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "portomonte_authorial_review":"portomonte-authorial-review.json",
+        "portomonte_authorial_review_indexes":"portomonte-authorial-review-indexes.json",
         "portomonte_temple_civic":"portomonte-temple-civic.json",
         "portomonte_temple_civic_indexes":"portomonte-temple-civic-indexes.json",
         "costa_sul_civil_life":"costa-sul-civil-life.json",
@@ -1300,6 +1338,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_decisoes_portomonte_xxvi":len(portomonte_xxvi["decisoes"]),
+        "total_opcoes_portomonte_xxvi":sum(len(r["opcoes"]) for r in decisoes_portomonte_xxvi),
+        "total_guardas_portomonte_xxvi":len(portomonte_xxvi["guardas"]),
+        "total_impactos_portomonte_xxvi":len(portomonte_xxvi["impactos_condicionais"]),
         "total_fatos_portomonte_xxv":len(portomonte_xxv["fatos_documentados"]),
         "total_propostas_portomonte_xxv":len(rows_portomonte_xxv),
         "total_referencias_portomonte_xxv":len(portomonte_xxv["referencias_rastreaveis"]),
@@ -1483,6 +1525,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["portomonte_authorial_review"]:portomonte_xxvi,
+           files["portomonte_authorial_review_indexes"]:indices_portomonte_xxvi,
            files["portomonte_temple_civic"]:portomonte_xxv,
            files["portomonte_temple_civic_indexes"]:indices_portomonte_xxv,
            files["costa_sul_civil_life"]:costa_sul_xxiv,
