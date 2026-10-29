@@ -44,7 +44,7 @@ jobs:
         with:
           node-version: '22'
       - name: Testar hierarquia contra os dados reais
-        run: node --test tests/atlas-hierarquia.test.mjs
+        run: node --test tests/atlas-hierarquia.test.mjs tests/atlas-macro.test.mjs
       - name: Montar publicação estática
         shell: bash
         run: |
@@ -67,7 +67,8 @@ jobs:
             data/propostas/thargrid-resistencia-cotidiano-hack.json \
             data/propostas/garganta-rio-ancestral-social-hack.json \
             data/propostas/caatinga-rede-social-hack.json \
-            data/atlas/aninhamento-territorial.json
+            data/atlas/aninhamento-territorial.json \
+            data/atlas/macrorregioes-carcaca.json
           do
             mkdir -p ".public-pages/atlas/dados/$(dirname "$file")"
             cp "$file" ".public-pages/atlas/dados/$file"

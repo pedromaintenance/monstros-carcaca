@@ -601,3 +601,8 @@ O [manual de mesa do Rio Ancestral](docs/KIT_MESTRE_RIO_ANCESTRAL_CICLO30.md) tr
 ### Atlas Hierárquico da Carcaça (protótipo Pages)
 
 Navegação visual de **Carcaça → setor → classe de lugar → território → assentamentos e sublugares recursivos → categoria → registro → vínculos** em [site/atlas/index.html](site/atlas/index.html), com [regras e fontes do atlas](docs/ATLAS_HIERARQUICO_PAGES.md). O site separa referências ao Hack, dados estruturados, propostas não homologadas e lacunas; a publicação no Pages usa o workflow [publicar-atlas-pages.yml](.github/workflows/publicar-atlas-pages.yml). Endereço previsto, quando habilitado: **https://pedromaintenance.github.io/monstros-carcaca/atlas/**.
+
+
+### Atlas macrorregional — explorar o continente antes dos detalhes (Ciclo XXXII)
+
+O [Atlas Hierárquico no GitHub Pages](https://pedromaintenance.github.io/monstros-carcaca/atlas/) abre agora em **Visão geral do continente**: 11 setores, 26 âncoras documentais, 7 relações entre regiões e 33 lacunas/questões macro para decisão autoral. A árvore recursiva permanece acessível na segunda aba, sem alterações do cânone. Veja a [metodologia de expansão macro → meso → micro](docs/ATLAS_MACROREGIONAL_CICLO32.md) e as [fontes estruturadas](data/atlas/macrorregioes-carcaca.json).

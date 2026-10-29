@@ -649,3 +649,13 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Expor `buildRiverGMSessionPacket` com cenário e evidências ligados por IDs, sem mutação do catálogo, sem log de campanha persistido e sem execução automática de consequência.
 - [x] Preservar sete criaturas, regras Dungeon World, Portomonte, o rito lunar desconhecido e a Revolta de Drakport ainda em aberto.
 - [ ] **XXXI — próximo horizonte:** construir interface interativa de mestre para usar o kit com filtros e registro de sessão **isolado do cânone**, ou expandir um território ainda pouco desenvolvido quando o kit estiver funcionalmente suficiente.
+
+
+## Ciclo XXXII — Atlas continental macro antes dos detalhes
+
+- **Concluído na implementação:** criar camada de 11 setores macrorregionais, 26 lugares de referência, 7 relações com estatuto de fonte e 33 questões de geografia ainda abertas; alternância Pages entre visão macro e árvore existente.
+- **Próxima etapa territorial:** revisar com o autor os limites de Thargrid/Ironwood/Eldroth, a localização de Grama-Cortada e a topologia Shadar-Riverie / Gualápolis / Boca do Abismo.
+- **Depois:** cartografar rotas e a malha de assentamentos da escala meso; só então abrir perfis micro de aldeias, covis, criaturas, itens e estatísticas DW.
+- **Regra:** nenhuma ideia é canonizada, e relação política, histórica ou migratória não prova uma estrada ou coordenada.
+
+Documentação: [ATLAS_MACROREGIONAL_CICLO32.md](docs/ATLAS_MACROREGIONAL_CICLO32.md).
