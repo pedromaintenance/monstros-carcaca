@@ -108,6 +108,10 @@ O [dossiê de circulação material](docs/ATLAS_CIRCULACAO_MATERIAL_CICLO41.md) 
 
 O [laboratório de vulnerabilidades](docs/ATLAS_DEPENDENCIAS_VULNERABILIDADES_CICLO42.md) apresenta **11 cenários hipotéticos**, reunidos em cinco sistemas e ancorados em **13 vínculos documentados** do Ciclo XLI. O painel do [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/) permite filtrar, inspecionar e **comparar duas hipóteses** sobre tributação, escravidão colonial, minas e forjas, depósitos, refúgio, comunicação clandestina, agricultura, comércio marítimo e autonomia local. O [JSON](data/atlas/dependencias-vulnerabilidades-ciclo42.json) mantém `ocorreu: false`, `adotado: false`, efeitos apenas condicionais e ausência de perda, probabilidade, duração ou geometria calculada. **Nenhum cenário altera o cânone.**
 
+## Ciclo XLIII — Auditoria regional para decisão de aprofundamento
+
+O **[parecer editorial diretamente no HTML do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#continentalAudit)** apresenta **um parágrafo para cada uma das 11 macrorregiões**, fundamentado no manuscrito e nas camadas XXXIV–XLII. A leitura distingue **4 regiões com base suficiente para aprofundamento local** (Garganta, Costa Sul, Eldroth e Thargrid), **5 com aprofundamento condicionado** (Rio Ancestral, Caatinga, Foz, Cauda e Águas Azuis) e **2 que exigem decisão espacial prioritária** (Shadar-Riverie e Grama-Cortada). A recomendação é editorial, não canônica: **aprofundar seletivamente sem homologar geometria ou fechar automaticamente as oito decisões topológicas**. O conteúdo fica visível mesmo quando os dados interativos falham. [Versão em Markdown](docs/ATLAS_AUDITORIA_PRONTIDAO_CICLO43.md).
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
