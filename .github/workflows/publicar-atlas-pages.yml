@@ -78,7 +78,10 @@ jobs:
             data/atlas/hidrografia-continental-ciclo39.json \
             data/atlas/cronocartografia-ciclo40.json \
             data/atlas/circulacao-material-ciclo41.json \
-            data/atlas/dependencias-vulnerabilidades-ciclo42.json
+            data/atlas/dependencias-vulnerabilidades-ciclo42.json \
+            data/atlas/horizonte-povoamento-macro.json \
+            data/atlas/inventario-povoamento-ciclo44.json \
+            data/propostas/povoamento-criaturas-lote01.json
           do
             mkdir -p ".public-pages/atlas/dados/$(dirname "$file")"
             cp "$file" ".public-pages/atlas/dados/$file"
