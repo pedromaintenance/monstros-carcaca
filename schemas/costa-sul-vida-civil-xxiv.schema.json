@@ -1,0 +1,642 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XXIV — Costa Sul civil, propostas não canônicas",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string"
+    },
+    "estado": {
+      "const": "proposta_sem_canonizacao"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "efeito_canonico_automatico": {
+      "const": false
+    },
+    "regiao_id": {
+      "const": "regiao:costa-sul"
+    },
+    "lugar_focal_id": {
+      "const": "lugar:portomonte"
+    },
+    "lugares_canonicos_adicionados": {
+      "const": 0
+    },
+    "agua_potavel_domestica_confirmada": {
+      "type": "null"
+    },
+    "governo_confirmado": {
+      "type": "null"
+    },
+    "populacao_confirmada": {
+      "type": "null"
+    },
+    "comercio_direto_com_caatinga_confirmado": {
+      "type": "null"
+    },
+    "fonte_manuscrito": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "pagina": {
+            "enum": [
+              5,
+              12,
+              14,
+              15
+            ]
+          },
+          "afirmacao": {
+            "type": "string"
+          },
+          "limite": {
+            "type": "string"
+          },
+          "canon_novo": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "pagina",
+          "afirmacao",
+          "limite",
+          "canon_novo"
+        ]
+      }
+    },
+    "referencias_existentes": {
+      "type": "array",
+      "minItems": 13,
+      "maxItems": 13,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "arquivo": {
+            "type": "string"
+          },
+          "colecao": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "estado": {
+            "const": "proposta_preexistente_nao_canonica"
+          }
+        },
+        "required": [
+          "arquivo",
+          "colecao",
+          "id",
+          "estado"
+        ]
+      }
+    },
+    "perguntas_para_autor": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "pergunta": {
+            "type": "string"
+          },
+          "resposta_aprovada": {
+            "type": "null"
+          },
+          "estado": {
+            "const": "pendente"
+          }
+        },
+        "required": [
+          "id",
+          "pergunta",
+          "resposta_aprovada",
+          "estado"
+        ]
+      }
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fatos": {
+          "const": 10
+        },
+        "referencias": {
+          "const": 13
+        },
+        "propostas": {
+          "const": 36
+        },
+        "perguntas": {
+          "const": 10
+        },
+        "vida_domestica": {
+          "const": 10
+        },
+        "trabalhos": {
+          "const": 6
+        },
+        "saberes": {
+          "const": 6
+        },
+        "circulacao": {
+          "const": 6
+        },
+        "tensoes_civis": {
+          "const": 4
+        },
+        "vinhetas": {
+          "const": 4
+        }
+      },
+      "required": [
+        "fatos",
+        "referencias",
+        "propostas",
+        "perguntas",
+        "vida_domestica",
+        "trabalhos",
+        "saberes",
+        "circulacao",
+        "tensoes_civis",
+        "vinhetas"
+      ]
+    },
+    "vida_domestica": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^xxiv:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "hipotese": {
+            "type": "string",
+            "minLength": 20
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_preexistente": {
+            "type": "string",
+            "minLength": 8
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12,
+              14,
+              15
+            ]
+          },
+          "escopo": {
+            "enum": [
+              "portomonte",
+              "litoral_regional",
+              "ilhas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome",
+          "hipotese",
+          "contradicao",
+          "referencia_preexistente",
+          "pagina_contextual",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "aprovacao_autoral",
+          "situacao_documentada"
+        ]
+      },
+      "minItems": 10,
+      "maxItems": 10
+    },
+    "trabalhos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^xxiv:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "hipotese": {
+            "type": "string",
+            "minLength": 20
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_preexistente": {
+            "type": "string",
+            "minLength": 8
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12,
+              14,
+              15
+            ]
+          },
+          "escopo": {
+            "enum": [
+              "portomonte",
+              "litoral_regional",
+              "ilhas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome",
+          "hipotese",
+          "contradicao",
+          "referencia_preexistente",
+          "pagina_contextual",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "aprovacao_autoral",
+          "situacao_documentada"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "saberes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^xxiv:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "hipotese": {
+            "type": "string",
+            "minLength": 20
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_preexistente": {
+            "type": "string",
+            "minLength": 8
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12,
+              14,
+              15
+            ]
+          },
+          "escopo": {
+            "enum": [
+              "portomonte",
+              "litoral_regional",
+              "ilhas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome",
+          "hipotese",
+          "contradicao",
+          "referencia_preexistente",
+          "pagina_contextual",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "aprovacao_autoral",
+          "situacao_documentada"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "circulacao": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^xxiv:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "hipotese": {
+            "type": "string",
+            "minLength": 20
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_preexistente": {
+            "type": "string",
+            "minLength": 8
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12,
+              14,
+              15
+            ]
+          },
+          "escopo": {
+            "enum": [
+              "portomonte",
+              "litoral_regional",
+              "ilhas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome",
+          "hipotese",
+          "contradicao",
+          "referencia_preexistente",
+          "pagina_contextual",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "aprovacao_autoral",
+          "situacao_documentada"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "tensoes_civis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^xxiv:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "hipotese": {
+            "type": "string",
+            "minLength": 20
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_preexistente": {
+            "type": "string",
+            "minLength": 8
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12,
+              14,
+              15
+            ]
+          },
+          "escopo": {
+            "enum": [
+              "portomonte",
+              "litoral_regional",
+              "ilhas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome",
+          "hipotese",
+          "contradicao",
+          "referencia_preexistente",
+          "pagina_contextual",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "aprovacao_autoral",
+          "situacao_documentada"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "vinhetas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^xxiv:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "hipotese": {
+            "type": "string",
+            "minLength": 20
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_preexistente": {
+            "type": "string",
+            "minLength": 8
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12,
+              14,
+              15
+            ]
+          },
+          "escopo": {
+            "enum": [
+              "portomonte",
+              "litoral_regional",
+              "ilhas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome",
+          "hipotese",
+          "contradicao",
+          "referencia_preexistente",
+          "pagina_contextual",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "aprovacao_autoral",
+          "situacao_documentada"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "efeito_canonico_automatico",
+    "regiao_id",
+    "lugar_focal_id",
+    "lugares_canonicos_adicionados",
+    "agua_potavel_domestica_confirmada",
+    "governo_confirmado",
+    "populacao_confirmada",
+    "comercio_direto_com_caatinga_confirmado",
+    "fonte_manuscrito",
+    "fatos_documentados",
+    "referencias_existentes",
+    "vida_domestica",
+    "trabalhos",
+    "saberes",
+    "circulacao",
+    "tensoes_civis",
+    "vinhetas",
+    "perguntas_para_autor",
+    "contagens"
+  ]
+}
