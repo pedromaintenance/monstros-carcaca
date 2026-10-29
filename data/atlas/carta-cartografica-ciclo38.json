@@ -1,0 +1,392 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Carta de restrições cartográficas de Golzdov — Ciclo XXXVIII",
+  "estado": "guia_editorial_de_desenho",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "sistema": "orientacao_qualitativa_sem_projecao",
+  "legenda": [
+    {
+      "id": "leste",
+      "titulo": "Âncora oriental",
+      "modo": "rotulo_qualitativo_sem_coordenadas"
+    },
+    {
+      "id": "oeste",
+      "titulo": "Âncora ocidental",
+      "modo": "rotulo_qualitativo_sem_coordenadas"
+    },
+    {
+      "id": "norte",
+      "titulo": "Âncora setentrional",
+      "modo": "rotulo_qualitativo_sem_coordenadas"
+    },
+    {
+      "id": "sul",
+      "titulo": "Âncora meridional",
+      "modo": "rotulo_qualitativo_sem_coordenadas"
+    },
+    {
+      "id": "relativo",
+      "titulo": "Posição relativa",
+      "modo": "rotulo_qualitativo_sem_coordenadas"
+    },
+    {
+      "id": "transversal",
+      "titulo": "Eixo atravessante",
+      "modo": "rotulo_qualitativo_sem_coordenadas"
+    },
+    {
+      "id": "indeterminado",
+      "titulo": "Sem orientação cardeal",
+      "modo": "rotulo_qualitativo_sem_coordenadas"
+    },
+    {
+      "id": "contestado",
+      "titulo": "Topologia contestada",
+      "modo": "rotulo_qualitativo_sem_coordenadas"
+    }
+  ],
+  "marcos": [
+    {
+      "id": "carta:xxxviii:cranio",
+      "referencia_fisica": "geo-xxxiv:cranio",
+      "classe": "leste",
+      "rotulo": "Crânio / Garganta",
+      "desenho_permitido": "Colocar a referência de Garganta no extremo leste; não determinar largura ou altitude.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:asa-direita",
+      "referencia_fisica": "geo-xxxiv:asa-direita",
+      "classe": "indeterminado",
+      "rotulo": "Asa direita / Eldroth",
+      "desenho_permitido": "Assinalar Eldroth na asa direita de Golzdov, sem converter direita anatômica em leste.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:coluna-dorsal",
+      "referencia_fisica": "geo-xxxiv:coluna-dorsal",
+      "classe": "indeterminado",
+      "rotulo": "Coluna dorsal",
+      "desenho_permitido": "Manter referência de ossatura central sem marcar coordenada, setor ou fortaleza atual.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:costelas",
+      "referencia_fisica": "geo-xxxiv:costelas",
+      "classe": "indeterminado",
+      "rotulo": "Costelas fósseis",
+      "desenho_permitido": "Reservar referências de reinos antigos sem espalhar assentamentos pelos ossos.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:cauda",
+      "referencia_fisica": "geo-xxxiv:cauda",
+      "classe": "relativo",
+      "rotulo": "Cauda / Templo do Crepúsculo",
+      "desenho_permitido": "Mostrar apenas que a cauda fica além do Abismo; travessia não documentada.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:montanhas-thargrid",
+      "referencia_fisica": "geo-xxxiv:montanhas-thargrid",
+      "classe": "norte",
+      "rotulo": "Thargrid",
+      "desenho_permitido": "Orientação setentrional conhecida, sem delimitar a cadeia montanhosa.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:ironwood",
+      "referencia_fisica": "geo-xxxiv:ironwood",
+      "classe": "relativo",
+      "rotulo": "Ironwood",
+      "desenho_permitido": "Situar somente ao sul das montanhas de Thargrid; sem borda compartilhada com Eldroth.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:caatinga",
+      "referencia_fisica": "geo-xxxiv:caatinga",
+      "classe": "sul",
+      "rotulo": "Caatinga",
+      "desenho_permitido": "Reconhecer terras áridas no Além Sul, sem desenhar domínio ou limite com a Costa.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:costa-sul",
+      "referencia_fisica": "geo-xxxiv:costa-sul",
+      "classe": "sul",
+      "rotulo": "Costa Sul / Portomonte",
+      "desenho_permitido": "Representar litoral do Além Sul, sem fixar extensão de praia e penhascos.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:rio",
+      "referencia_fisica": "geo-xxxiv:rio",
+      "classe": "transversal",
+      "rotulo": "Rio Ancestral",
+      "desenho_permitido": "Representar eixo fluvial que atravessa o continente e termina no Abismo; sem traçado.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:foz",
+      "referencia_fisica": "geo-xxxiv:foz",
+      "classe": "oeste",
+      "rotulo": "O Abismo",
+      "desenho_permitido": "A queda do Rio Ancestral está no extremo oeste; sem diâmetro ou ponte.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:margem-norte",
+      "referencia_fisica": "geo-xxxiv:margem-norte",
+      "classe": "relativo",
+      "rotulo": "Margem norte / Templo das Sombras",
+      "desenho_permitido": "Margem norte do Abismo é relação local, não faixa ao norte do continente.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:margem-sul",
+      "referencia_fisica": "geo-xxxiv:margem-sul",
+      "classe": "contestado",
+      "rotulo": "Margem sul do Abismo",
+      "desenho_permitido": "Margem sul é referenciada; a sobreposição de Gualápolis, Boca e Shadar requer revisão.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:gualapolis",
+      "referencia_fisica": "geo-xxxiv:gualapolis",
+      "classe": "contestado",
+      "rotulo": "Gualápolis",
+      "desenho_permitido": "Antiga capital da margem sul; relação com Shadar e Boca ainda contestada.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:boca-do-abismo",
+      "referencia_fisica": "geo-xxxiv:boca-do-abismo",
+      "classe": "contestado",
+      "rotulo": "Boca do Abismo",
+      "desenho_permitido": "Fundada sobre Gualápolis; não resolver automaticamente a relação com Shadar.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:ilha-lunar",
+      "referencia_fisica": "geo-xxxiv:ilha-lunar",
+      "classe": "indeterminado",
+      "rotulo": "Ilha do Templo da Lua",
+      "desenho_permitido": "O templo fica numa ilha do Rio Ancestral; trecho e margens indeterminados.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:mar-sangue",
+      "referencia_fisica": "geo-xxxiv:mar-sangue",
+      "classe": "sul",
+      "rotulo": "Mar de Sangue",
+      "desenho_permitido": "Águas rubras ao redor da costa; não desenhar fronteira estática com o oceano azul.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:aguas-azuis",
+      "referencia_fisica": "geo-xxxiv:aguas-azuis",
+      "classe": "relativo",
+      "rotulo": "Águas azuis",
+      "desenho_permitido": "Situadas além do mar corrompido; sem orientação cardeal fixa ou contorno da transição.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:grama",
+      "referencia_fisica": "geo-xxxiv:grama",
+      "classe": "indeterminado",
+      "rotulo": "Grama-Cortada",
+      "desenho_permitido": "Condado conhecido, localização continental desconhecida.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    },
+    {
+      "id": "carta:xxxviii:shadar",
+      "referencia_fisica": "geo-xxxiv:shadar",
+      "classe": "contestado",
+      "rotulo": "Shadar-Riverie",
+      "desenho_permitido": "Centro aristocrático documentado, posição relativa à Gualápolis em conflito.",
+      "geometria": null,
+      "coordenadas": null,
+      "aprovado_para_pino": false
+    }
+  ],
+  "relacoes": [
+    {
+      "referencia": "rel-xxxiv:garganta-abismo",
+      "simbolo": "oposicao_cardeal",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    },
+    {
+      "referencia": "rel-xxxiv:rio-ancestral-abismo",
+      "simbolo": "seta_conceitual",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    },
+    {
+      "referencia": "rel-xxxiv:templo-das-sombras-abismo",
+      "simbolo": "relacao_sem_tracado",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    },
+    {
+      "referencia": "rel-xxxiv:gualapolis-abismo",
+      "simbolo": "relacao_sem_tracado",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    },
+    {
+      "referencia": "rel-xxxiv:boca-do-abismo-gualapolis",
+      "simbolo": "relacao_sem_tracado",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    },
+    {
+      "referencia": "rel-xxxiv:ironwood-montanhas-thargrid",
+      "simbolo": "relacao_sem_tracado",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    },
+    {
+      "referencia": "rel-xxxiv:templo-do-crepusculo-abismo",
+      "simbolo": "relacao_sem_tracado",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    },
+    {
+      "referencia": "rel-xxxiv:templo-da-lua-rio-ancestral",
+      "simbolo": "relacao_sem_tracado",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    },
+    {
+      "referencia": "rel-xxxiv:mar-de-sangue-costa-sul",
+      "simbolo": "relacao_sem_tracado",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    },
+    {
+      "referencia": "rel-xxxiv:aguas-azuis-mar-de-sangue",
+      "simbolo": "limite_movel",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    },
+    {
+      "referencia": "rel-xxxiv:shadar-riverie-gualapolis",
+      "simbolo": "relacao_contestada",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    },
+    {
+      "referencia": "rel-xxxiv:costelas-coluna-dorsal",
+      "simbolo": "relacao_sem_tracado",
+      "desenhar_linha": false,
+      "estado": "documental_nao_cartografado"
+    }
+  ],
+  "decisoes_pendentes": [
+    {
+      "referencia_decisao": "decisao:xxxvii:shadar",
+      "requer_decisao_autoral": true,
+      "aprovada": false
+    },
+    {
+      "referencia_decisao": "decisao:xxxvii:abismo",
+      "requer_decisao_autoral": true,
+      "aprovada": false
+    },
+    {
+      "referencia_decisao": "decisao:xxxvii:shadar-bioma",
+      "requer_decisao_autoral": true,
+      "aprovada": false
+    },
+    {
+      "referencia_decisao": "decisao:xxxvii:florestas",
+      "requer_decisao_autoral": true,
+      "aprovada": false
+    },
+    {
+      "referencia_decisao": "decisao:xxxvii:subsolo",
+      "requer_decisao_autoral": true,
+      "aprovada": false
+    },
+    {
+      "referencia_decisao": "decisao:xxxvii:mar",
+      "requer_decisao_autoral": true,
+      "aprovada": false
+    },
+    {
+      "referencia_decisao": "decisao:xxxvii:grama",
+      "requer_decisao_autoral": true,
+      "aprovada": false
+    },
+    {
+      "referencia_decisao": "decisao:xxxvii:rio",
+      "requer_decisao_autoral": true,
+      "aprovada": false
+    }
+  ],
+  "fenomenos_dinamicos": [
+    {
+      "id": "fen:xxxviii:fronteira-maritima",
+      "referencia_interface": "inter:xxxvi:sangue-azul",
+      "tipo": "transicao_movel",
+      "descricao": "A mudança entre águas rubras e azuis admite hachura ou faixa variável, mas nenhuma linha fixa.",
+      "linha_fixa": false,
+      "poligono_fixo": false,
+      "geometria": null
+    }
+  ],
+  "guia_de_uso": [
+    "A carta é uma legenda espacial e uma bússola qualitativa; não é um mapa em escala.",
+    "Os setores são categorias de consulta e não polígonos de soberania.",
+    "Marcos com orientação cardeal podem ocupar apenas grupos direcionais, nunca pontos precisos.",
+    "Relações de margem, anatomia, história ou cooperação não autorizam rotas.",
+    "Conflitos documentais e alternativas da oficina XXXVII continuam explicitamente pendentes."
+  ],
+  "fontes": [
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+    "data/atlas/geografia-fisica-ciclo34.json",
+    "data/atlas/interfaces-continentais-ciclo36.json",
+    "data/atlas/matriz-topologica-ciclo37.json"
+  ]
+}
