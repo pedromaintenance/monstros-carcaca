@@ -522,3 +522,10 @@ O novo dossiê registrou **8 fatos com fronteiras inferenciais, 12 referências 
 A revisão do ciclo XXV foi estruturada como **pauta de decisões**, não votação nem confirmação de hipóteses. As doze perguntas originais agora possuem 38 alternativas documentadas com prós, limites, IDs e dependências editoriais testadas contra ciclos; quatro modelos de governo continuam apenas opções. Doze guardas impedem que silêncio, consulta, simulação, dado desconhecido ou prioridade editorial se convertam em aprovação.
 
 Dez mapas de impacto apontam os arquivos passíveis de revisão futura, mas nenhum impacto foi executado e nenhuma entrada factual foi alterada. O cliente ESM permite filtrar decisões, buscar opções e visualizar cenários de escolha sem gravar alterações. Os campos de homologação, texto autoral, proveniência e data permanecem nulos. Continuam sem confirmação: governo de Portomonte, poderes do templo, potabilidade doméstica, processo ritual, continuidade da purificação, produção agrícola e contratos comerciais. As sete criaturas e as regras DW permanecem intocadas.
+
+
+## 2026-10-28 · Ciclo XXVII — A cidade sobre a memória afogada
+
+Como o Ciclo XXVI manteve pendentes todas as doze decisões autorais de Portomonte, prosseguimos sem canonizá-las e deslocamos a expansão sociocultural para a foz e **Shadar-Riverie/Gualápolis**. O Hack pp. 4–6, 9 e 10 documenta a tomada de Gualápolis pelo Senhor do Rio, a fundação da Boca do Abismo, a posição aristocrática da Casa Shayr e a biblioteca Yokai submersa sob Shadar-Riverie. A narrativa não prova coordenadas, planta, acesso público ou cronologia individual do afogamento.
+
+O dossiê oferece 12 fatos com limites inferenciais, 36 propostas de vida civil e memória, doze IDs rastreados a atlas e propostas anteriores, dez perguntas sem resposta e proibições explícitas contra povoamento inventado. O gerador acrescenta seis índices determinísticos; a API ESM distingue buscas em fatos do manuscrito de buscas em propostas socioculturais. Nenhuma criatura, regra DW, lugar ou governo foi alterado automaticamente.
