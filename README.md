@@ -138,6 +138,10 @@ O [painel de expansão do Atlas](https://pedromaintenance.github.io/monstros-car
 
 O Atlas recebeu o [painel de quatro frentes de povoamento](https://pedromaintenance.github.io/monstros-carcaca/atlas/#fourFrontSettlements), com **24 comunidades coletivas propostas** (seis por frente) e **12 habitats não contáveis como assentamentos**. O povoamento acumulado nos três lotes é de **56 propostas**, todas sem aprovação canônica, mais **22 habitats ecológicos propostos** desde o Ciclo XLV. A expansão diferencia **Caatinga**, **comunidades exteriores à cidade de Garganta**, **montanhas de Thargrid** e **Ironwood**, preservando a autonomia de seus grupos e não inventando coordenadas nem estradas. O conteúdo inclui orcs, goblins, kobolds, gnomos, gigantes, draconatos, fadas, svirfneblin e espécies fantásticas inventadas, sem atribuir automaticamente hostilidade ou governo central a qualquer povo. [Dossiê editorial](docs/ATLAS_POVOAMENTO_QUATRO_FRENTES_CICLO46.md) · [Dados JSON](data/propostas/povoamento-quatro-frentes-ciclo46.json).
 
+## Ciclo XLVII — Arquipélagos, cidades submarinas e Cauda
+
+A [camada XLVII do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#marineTailSettlements) distingue **10 ilhas geográficas propostas** (das quais quatro não possuem comunidade associada), **6 comunidades insulares**, **12 comunidades submersas** divididas entre o Mar de Sangue e as águas azuis, **8 comunidades da Cauda** e **12 novos habitats ecológicos**. A contagem de comunidades propostas chega a **82 nos quatro lotes**, com **34 habitats adicionais desde o XLV e zero novas aprovações canônicas**. Tortles, Tabaxis, Kuo-Toa, Abissais marinhos, Tritões, Sereias, feéricos e outros seres recebem formas de habitar distintas. Nenhuma proposta fixa a fronteira móvel dos mares ou inventa uma travessia pelo Abismo. [Dossiê XLVII](docs/ATLAS_ARQUIPELAGOS_MARES_CAUDA_CICLO47.md) · [JSON de propostas](data/propostas/povoamento-insular-submerso-cauda-ciclo47.json).
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
