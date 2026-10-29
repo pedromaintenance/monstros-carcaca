@@ -265,6 +265,27 @@ def build():
     grama_xx=load("data/worldbuilding/grama-cortada-cotidiano-ciclo20.json")
     gnomos_xxi=load("data/worldbuilding/culturas-gnomicas-ciclo21.json")
     meio_demonios_xxii=load("data/worldbuilding/meio-demonios-sociedades-ciclo22.json")
+    kit_rio_xxx=load("data/mesa/rio-ancestral-kit-mestre-ciclo30.json")
+    index_tipo_evidencia=defaultdict(set)
+    index_referencia_kit=defaultdict(set)
+    index_pagina_kit=defaultdict(set)
+    for evidencia in kit_rio_xxx["evidencias"]:
+        index_tipo_evidencia[evidencia["tipo"]].add(evidencia["id"])
+    for classe in ("procedimentos","evidencias","consequencias","guardas"):
+        for row in kit_rio_xxx[classe]:
+            index_referencia_kit[row["referencia_id"]].add(row["id"])
+    for f in kit_rio_xxx["fatos_base"]:
+        index_pagina_kit[str(f["pagina"])].add(f["id"])
+    indices_kit_rio_xxx={
+        "by_tipo_evidencia":{k:sorted(v) for k,v in sorted(index_tipo_evidencia.items())},
+        "by_referencia":{k:sorted(v) for k,v in sorted(index_referencia_kit.items())},
+        "by_pagina":{k:sorted(v) for k,v in sorted(index_pagina_kit.items())},
+        "by_cena":{s["id"]:{
+            "evidencias":s["evidencias_sugeridas"],
+            "procedimento_id":s["procedimento_id"],
+            "consequencia_id":s["consequencia_id"]
+          } for s in kit_rio_xxx["cenas"]}
+    }
     lua_xxix=load("data/worldbuilding/templo-lua-severina-ciclo29.json")
     cats_lua_xxix=("modelos_do_rito","interfaces_civis","provas_e_incerteza",
                    "economia_e_movimento","tensoes_de_poder","vinhetas")
@@ -1255,6 +1276,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "river_gm_toolkit":"river-gm-toolkit.json",
+        "river_gm_toolkit_indexes":"river-gm-toolkit-indexes.json",
         "moon_temple_severina":"moon-temple-severina.json",
         "moon_temple_severina_indexes":"moon-temple-severina-indexes.json",
         "river_drakport_social":"river-drakport-social.json",
@@ -1413,6 +1436,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_procedimentos_mesa_xxx":len(kit_rio_xxx["procedimentos"]),
+        "total_evidencias_mesa_xxx":len(kit_rio_xxx["evidencias"]),
+        "total_cenas_mesa_xxx":len(kit_rio_xxx["cenas"]),
+        "total_consequencias_mesa_xxx":len(kit_rio_xxx["consequencias"]),
         "total_fatos_lua_xxix":len(lua_xxix["fatos_documentados"]),
         "total_propostas_lua_xxix":len(rows_lua_xxix),
         "total_referencias_lua_xxix":len(lua_xxix["referencias_rastreaveis"]),
@@ -1612,6 +1639,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["river_gm_toolkit"]:kit_rio_xxx,
+           files["river_gm_toolkit_indexes"]:indices_kit_rio_xxx,
            files["moon_temple_severina"]:lua_xxix,
            files["moon_temple_severina_indexes"]:indices_lua_xxix,
            files["river_drakport_social"]:rio_xxviii,
