@@ -38,14 +38,14 @@ test("Atlas XLIII: categorias editoriais são 4 locais, 5 condicionadas, 2 macro
  assert.equal(rows.filter(x=>x==="condicionado").length,5);
  assert.equal(rows.filter(x=>x==="macro").length,2);
  assert.deepEqual(rows.filter(x=>!["local","condicionado","macro"].includes(x)),[]);
- assert.match(audit,/Aprofundar seletivamente, sem encerrar a etapa macro/);
+ assert.match(audit,/O macro ainda está em construção: povoar antes de aprofundar amplamente/);
  assert.match(audit,/Shadar-Riverie e Grama-Cortada/);
 });
 test("Atlas XLIII: nenhuma das oito decisões topológicas foi aprovada silenciosamente",()=>{
  assert.equal(topological.decisoes.length,8);
  assert.ok(topological.decisoes.every(d=>d.estado==="pendente"&&d.opcao_aprovada===null));
- assert.match(audit,/oito questões da oficina topológica permanecem abertas/);
- assert.match(audit,/Este parecer não aprova nenhuma dessas alternativas/);
+ assert.match(audit,/As oito questões da oficina topológica continuam pendentes/);
+ assert.match(audit,/prioridade passa a ser ampliar e articular o povoamento na escala macro/);
  assert.match(audit,/href="#topologyChoices"/);
  assert.match(audit,/não equivale automaticamente ao leste cartográfico/);
  assert.match(audit,/não comprova potabilidade/);
@@ -58,6 +58,24 @@ test("Atlas XLIII: documento espelha o texto HTML sem mudar a redação dos pare
   assert.ok(p,id);
   assert.ok(md.includes(p.replace(/<strong>/g,"**").replace(/<\/strong>/g,"**")),id);
  }
+});
+test("Revisão autoral: ancoragem temática não equivale a macro povoado",()=>{
+ const horizon=JSON.parse(read("data/atlas/horizonte-povoamento-macro.json"));
+ assert.equal(horizon.altera_canon,false);
+ assert.equal(horizon.aprovacao_autoral,false);
+ assert.equal(horizon.frentes.length,10);
+ assert.ok(horizon.frentes.every(x=>x.alvo_flexivel===true&&x.contagem_aprovada===null&&x.criar_automaticamente===false));
+ assert.equal(horizon.frentes.reduce((v,x)=>v+x.referencia_inferior,0),145);
+ assert.equal(horizon.frentes.reduce((v,x)=>v+x.referencia_superior,0),205);
+ assert.ok(horizon.frentes.some(x=>x.id==="frente:macro:ironwood"&&x.macro_id==="thargrid"));
+ assert.ok(horizon.frentes.some(x=>x.id==="frente:macro:ilhas"&&x.unidade==="ilhas"));
+ assert.ok(horizon.frentes.some(x=>x.id==="frente:macro:submersos"&&x.unidade==="assentamentos"));
+ assert.match(audit,/id="audit-density"/);
+ assert.match(audit,/145–205 localidades e ilhas a estruturar/);
+ assert.match(audit,/nenhuma macrorregião pode ser declarada concluída em densidade de povoamento/);
+ assert.match(audit,/não uma contagem de localidades existentes/);
+ assert.equal((audit.match(/class="audit-density-grid"/g)||[]).length,1);
+ assert.equal((audit.match(/class="audit-region" data-readiness=/g)||[]).length,11);
 });
 test("Atlas XLIII: responsividade e integridade da página preservadas",()=>{
  assert.match(html,/\.audit-region\{display:grid/);
