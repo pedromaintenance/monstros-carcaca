@@ -508,3 +508,10 @@ O próximo horizonte sugerido é a **vida civil na Costa Sul e Portomonte**, com
 O ciclo foi iniciado a partir da orientação do XXIII para explorar as condições civis da Costa Sul. Foram integrados dez fatos das páginas 5, 12, 14 e 15 do Hack e trinta e seis propostas sociais sobre famílias, cuidado, infância, trabalho, educação, circulação e crenças. A cada hipótese corresponde uma referência preexistente dentre treze IDs de propostas do litoral, da pressão do Mar de Sangue e da fronteira com a Caatinga. As dez perguntas do autor continuam sem respostas presumidas.
 
 A investigação evita equiparar o milagre agrícola de Deméter a potabilidade doméstica, bem como o comércio de Portomonte a poder administrativo sobre as ilhas. Os personagens, portos, estruturas civis e encontros anteriores continuam propostas. O ciclo insere JSON Schema, validador sem mutação, exportações/indexação determinísticas, cliente ESM e testes. Nenhuma ficha de monstro nem regra DW foi alterada.
+
+
+## 2026-10-28 · Ciclo XXV — O milagre e a cidade
+
+A partir do Ciclo XXIV foi feita uma investigação concentrada em **Portomonte e no templo de Deméter**. O manuscrito do Hack (pp. 5, 12) afirma a purificação do Mar de Sangue para cultivar até sobre pedra e a autonomia relativa da cidade; não fornece forma de governo, processo litúrgico, trabalhadores, capacidade, potabilidade doméstica ou produção quantitativa. Os balanços do repositório preservam medidas nulas e a dependência lavoura–purificação, sem projetar colapso automático.
+
+O novo dossiê registrou **8 fatos com fronteiras inferenciais, 12 referências cruzadas a IDs existentes e 36 alternativas não canônicas**: 4 modelos políticos, 8 etapas hipotéticas de trabalho, 8 posições sociais, 6 formas possíveis de contestação, 6 dilemas de distribuição e 4 vinhetas não ocorridas. As 12 perguntas autorais permanecem sem escolha. O cliente ESM oferece consultas e prévia de modelo sem alterar o mundo ou saves. Nenhuma instituição, ato político, pessoa, edifício, tarifa, número material, movimento DW ou criatura foi canonizado.

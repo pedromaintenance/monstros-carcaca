@@ -60,6 +60,49 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getPortomonteTempleCivic(){return byKey("portomonte_temple_civic");}
+  async function getPortomonteTempleCivicIndexes(){return byKey("portomonte_temple_civic_indexes");}
+  async function getPortomonteTempleCivicEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xxv:"))return null;
+    const data=await getPortomonteTempleCivic();
+    for(const cat of ["modelos_de_governo","etapas_de_trabalho","relacoes_sociais",
+       "garantias_civis","dilemas","vinhetas","fatos_documentados","perguntas_para_autor"]){
+      const entry=data[cat].find(e=>e.id===id);
+      if(entry)return {...entry,categoria:cat};
+    }
+    return null;
+  }
+  async function searchPortomonteTempleCivic({categoria,pagina,referenciaId,query}={}){
+    const data=await getPortomonteTempleCivic();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return ["modelos_de_governo","etapas_de_trabalho","relacoes_sociais",
+        "garantias_civis","dilemas","vinhetas"]
+      .flatMap(cat=>data[cat].map(e=>({...e,categoria:cat})))
+      .filter(e=>(!categoria||e.categoria===categoria)&&
+        (pagina===undefined||e.pagina_contextual===Number(pagina))&&
+        (!referenciaId||e.referencia_id===referenciaId)&&
+        (!query||norm([e.id,e.nome_editorial,e.hipotese_condicional,
+          e.contradicao_material,e.pergunta_critica].join(" ")).includes(norm(query))));
+  }
+  async function previewPortomonteCivicModel(id,{observacoesDeMesa=[]}={}){
+    if(!Array.isArray(observacoesDeMesa)||observacoesDeMesa.some(e=>typeof e!=="string")){
+      throw new TypeError("observacoesDeMesa deve ser um array de textos");
+    }
+    const data=await getPortomonteTempleCivic();
+    const model=data.modelos_de_governo.find(e=>e.id===id);
+    if(!model)return null;
+    return {
+      estado:"simulacao_editorial_sem_mutacao",modelo_id:model.id,
+      proposta:model.hipotese_condicional,
+      contradicao_material:model.contradicao_material,
+      pergunta_critica:model.pergunta_critica,
+      observacoes_nao_verificadas:[...observacoesDeMesa],
+      evidencias_documentais_adicionadas:[],
+      modelo_adotado:false,aprovacao_autoral:false,
+      efeito_canonico:false,efeito_mecanico:false,
+      observacao:"Um ensaio não aprova modelo de governo nem atribui efeito a campanhas."
+    };
+  }
   async function getCostaSulCivilLife(){return byKey("costa_sul_civil_life");}
   async function getCostaSulCivilLifeIndexes(){return byKey("costa_sul_civil_life_indexes");}
   async function getCostaSulCivilLifeEntry(id){
@@ -1614,6 +1657,9 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getPortomonteTempleCivic,getPortomonteTempleCivicIndexes,
+          getPortomonteTempleCivicEntry,searchPortomonteTempleCivic,
+          previewPortomonteCivicModel,
           getCostaSulCivilLife,getCostaSulCivilLifeIndexes,
           getCostaSulCivilLifeEntry,searchCostaSulCivilLife,
           getCaatingaCivilLife,getCaatingaCivilLifeIndexes,

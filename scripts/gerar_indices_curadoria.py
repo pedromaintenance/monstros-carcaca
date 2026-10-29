@@ -265,6 +265,31 @@ def build():
     grama_xx=load("data/worldbuilding/grama-cortada-cotidiano-ciclo20.json")
     gnomos_xxi=load("data/worldbuilding/culturas-gnomicas-ciclo21.json")
     meio_demonios_xxii=load("data/worldbuilding/meio-demonios-sociedades-ciclo22.json")
+    portomonte_xxv=load("data/worldbuilding/portomonte-templo-governo-ciclo25.json")
+    cats_portomonte_xxv=("modelos_de_governo","etapas_de_trabalho","relacoes_sociais",
+                        "garantias_civis","dilemas","vinhetas")
+    rows_portomonte_xxv=[{**p,"categoria_indice":cat}
+        for cat in cats_portomonte_xxv for p in portomonte_xxv[cat]]
+    if len(rows_portomonte_xxv)!=36:
+        raise ValueError("Ciclo XXV: 36 alternativas sociopolíticas são necessárias.")
+    def indexar_portomonte_xxv(field):
+        result=defaultdict(set)
+        for row in rows_portomonte_xxv:
+            val=row[field]
+            if val is not None:
+                result[str(val)].add(row["id"])
+        return {key:sorted(v) for key,v in sorted(result.items())}
+    indices_portomonte_xxv={
+        "by_categoria":indexar_portomonte_xxv("categoria_indice"),
+        "by_referencia":indexar_portomonte_xxv("referencia_id"),
+        "by_pagina":indexar_portomonte_xxv("pagina_contextual"),
+        "by_estado":indexar_portomonte_xxv("estatuto"),
+        "by_nome":indexar_portomonte_xxv("nome_editorial"),
+        "by_slug":{k:sorted(row["id"] for row in rows_portomonte_xxv
+                 if row["id"].endswith(":"+k))
+                 for k in sorted({row["id"].rsplit(":",1)[-1]
+                                   for row in rows_portomonte_xxv})}
+    }
     costa_sul_xxiv=load("data/worldbuilding/costa-sul-vida-civil-ciclo24.json")
     cats_xxiv=("vida_domestica","trabalhos","saberes","circulacao","tensoes_civis","vinhetas")
     rows_xxiv=[{**e,"categoria_indice":cat} for cat in cats_xxiv for e in costa_sul_xxiv[cat]]
@@ -1125,6 +1150,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "portomonte_temple_civic":"portomonte-temple-civic.json",
+        "portomonte_temple_civic_indexes":"portomonte-temple-civic-indexes.json",
         "costa_sul_civil_life":"costa-sul-civil-life.json",
         "costa_sul_civil_life_indexes":"costa-sul-civil-life-indexes.json",
         "caatinga_civil_life":"caatinga-civil-life.json",
@@ -1273,6 +1300,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_fatos_portomonte_xxv":len(portomonte_xxv["fatos_documentados"]),
+        "total_propostas_portomonte_xxv":len(rows_portomonte_xxv),
+        "total_referencias_portomonte_xxv":len(portomonte_xxv["referencias_rastreaveis"]),
+        "total_perguntas_portomonte_xxv":len(portomonte_xxv["perguntas_para_autor"]),
         "total_fatos_costa_sul_xxiv":len(costa_sul_xxiv["fatos_documentados"]),
         "total_propostas_costa_sul_xxiv":len(rows_xxiv),
         "total_referencias_costa_sul_xxiv":len(costa_sul_xxiv["referencias_existentes"]),
@@ -1452,6 +1483,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["portomonte_temple_civic"]:portomonte_xxv,
+           files["portomonte_temple_civic_indexes"]:indices_portomonte_xxv,
            files["costa_sul_civil_life"]:costa_sul_xxiv,
            files["costa_sul_civil_life_indexes"]:indices_costa_sul_xxiv,
            files["caatinga_civil_life"]:caatinga_xxiii,
