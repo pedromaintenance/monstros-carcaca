@@ -54,11 +54,6 @@ export function buildMaterialCirculation(data,macro,networks,chrono){
    if(e.geometria!==null||e.rota_confirmada!==false||e.volume!==null||
       e.custo!==null||e.frequencia!==null)
      throw new Error("Vínculo material convertido em rota ou métrica: "+e.id);
-   if(e.ref_rede!==null){
-     const n=net.get(e.ref_rede);
-     if(!n||![nodes.get(e.de).setor,nodes.get(e.para).setor].every(s=>n.setores.includes(s)))
-       throw new Error("Rede macro não sustenta vínculo material: "+e.id);
-   }
    if(e.tipo==="trabalho_forcado"&&
       (e.de!=="fluxo:xli:drakport"||e.para!=="fluxo:xli:corte-rio"))
      throw new Error("Trabalho forçado registrado fora da referência de Drakport");
@@ -69,6 +64,11 @@ export function buildMaterialCirculation(data,macro,networks,chrono){
      throw new Error("Exigência de tributo confundida com pagamento realizado");
    if(e.tipo==="refugio"&&e.modalidade!=="deslocamento_documentado")
      throw new Error("Refúgio convertido em rota precisa");
+   if(e.ref_rede!==null){
+     const n=net.get(e.ref_rede);
+     if(!n||![nodes.get(e.de).setor,nodes.get(e.para).setor].every(s=>n.setores.includes(s)))
+       throw new Error("Rede macro não sustenta vínculo material: "+e.id);
+   }
    links.set(e.id,e);
  }
  if(links.size!==15)throw new Error("Os 15 vínculos documentais não foram preservados");
