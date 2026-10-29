@@ -83,7 +83,7 @@ jobs:
             data/atlas/inventario-povoamento-ciclo44.json \
             data/propostas/povoamento-criaturas-lote01.json \
             data/propostas/povoamento-regional-lote02-ciclo45.json \
-            fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json
+            data/atlas/indice-paginas-fonte-ciclo45.json
           do
             mkdir -p ".public-pages/atlas/dados/$(dirname "$file")"
             cp "$file" ".public-pages/atlas/dados/$file"
