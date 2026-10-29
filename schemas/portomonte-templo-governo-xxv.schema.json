@@ -1,0 +1,668 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XXV — Portomonte e Deméter sem canonização automática",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 5
+    },
+    "estado": {
+      "const": "investigacao_de_modelos_nao_canonicos"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "efeito_canonico_automatico": {
+      "const": false
+    },
+    "regiao_id": {
+      "const": "regiao:costa-sul"
+    },
+    "assentamento_id": {
+      "const": "assentamento:portomonte"
+    },
+    "modelo_de_governo_adotado": {
+      "type": "null"
+    },
+    "estrutura_do_templo_confirmada": {
+      "type": "null"
+    },
+    "agua_domestica_potavel_confirmada": {
+      "type": "null"
+    },
+    "capacidade_de_purificacao_confirmada": {
+      "type": "null"
+    },
+    "producao_agricola_quantificada": {
+      "type": "null"
+    },
+    "nova_instituicao_canonica": {
+      "const": false
+    },
+    "alteracao_mecanicas_dw": {
+      "const": false
+    },
+    "criaturas_afetadas": {
+      "const": 0
+    },
+    "fonte_manuscrito": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "limites_de_inferencia": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "string",
+        "minLength": 10
+      }
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxv:fato:"
+          },
+          "fonte_tipo": {
+            "enum": [
+              "manuscrito",
+              "curadoria"
+            ]
+          },
+          "pagina_manuscrito": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "afirmacao_de_fonte": {
+            "type": "string",
+            "minLength": 15
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 15
+          },
+          "novo_canon": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "fonte_tipo",
+          "pagina_manuscrito",
+          "afirmacao_de_fonte",
+          "limite_de_inferencia",
+          "novo_canon"
+        ]
+      }
+    },
+    "referencias_rastreaveis": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "arquivo": {
+            "type": "string"
+          },
+          "colecao": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "estado": {
+            "type": "string"
+          },
+          "precaucao": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "arquivo",
+          "colecao",
+          "id",
+          "estado",
+          "precaucao"
+        ]
+      }
+    },
+    "perguntas_para_autor": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxv:pergunta:"
+          },
+          "pergunta_autoral": {
+            "type": "string"
+          },
+          "resposta_aprovada": {
+            "type": "null"
+          },
+          "estado": {
+            "const": "pendente_de_autoria"
+          }
+        },
+        "required": [
+          "id",
+          "pergunta_autoral",
+          "resposta_aprovada",
+          "estado"
+        ]
+      }
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fatos": {
+          "const": 8
+        },
+        "referencias": {
+          "const": 12
+        },
+        "perguntas": {
+          "const": 12
+        },
+        "modelos_de_governo": {
+          "const": 4
+        },
+        "etapas_de_trabalho": {
+          "const": 8
+        },
+        "relacoes_sociais": {
+          "const": 8
+        },
+        "garantias_civis": {
+          "const": 6
+        },
+        "dilemas": {
+          "const": 6
+        },
+        "vinhetas": {
+          "const": 4
+        }
+      },
+      "required": [
+        "fatos",
+        "referencias",
+        "perguntas",
+        "modelos_de_governo",
+        "etapas_de_trabalho",
+        "relacoes_sociais",
+        "garantias_civis",
+        "dilemas",
+        "vinhetas"
+      ]
+    },
+    "modelos_de_governo": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxv:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 30
+          },
+          "contradicao_material": {
+            "type": "string",
+            "minLength": 30
+          },
+          "pergunta_critica": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string",
+            "minLength": 5
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_condicional",
+          "contradicao_material",
+          "pergunta_critica",
+          "referencia_id",
+          "pagina_contextual",
+          "estatuto",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "efeito_mecanico"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "etapas_de_trabalho": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxv:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 30
+          },
+          "contradicao_material": {
+            "type": "string",
+            "minLength": 30
+          },
+          "pergunta_critica": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string",
+            "minLength": 5
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_condicional",
+          "contradicao_material",
+          "pergunta_critica",
+          "referencia_id",
+          "pagina_contextual",
+          "estatuto",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "efeito_mecanico"
+        ]
+      },
+      "minItems": 8,
+      "maxItems": 8
+    },
+    "relacoes_sociais": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxv:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 30
+          },
+          "contradicao_material": {
+            "type": "string",
+            "minLength": 30
+          },
+          "pergunta_critica": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string",
+            "minLength": 5
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_condicional",
+          "contradicao_material",
+          "pergunta_critica",
+          "referencia_id",
+          "pagina_contextual",
+          "estatuto",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "efeito_mecanico"
+        ]
+      },
+      "minItems": 8,
+      "maxItems": 8
+    },
+    "garantias_civis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxv:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 30
+          },
+          "contradicao_material": {
+            "type": "string",
+            "minLength": 30
+          },
+          "pergunta_critica": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string",
+            "minLength": 5
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_condicional",
+          "contradicao_material",
+          "pergunta_critica",
+          "referencia_id",
+          "pagina_contextual",
+          "estatuto",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "efeito_mecanico"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "dilemas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxv:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 30
+          },
+          "contradicao_material": {
+            "type": "string",
+            "minLength": 30
+          },
+          "pergunta_critica": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string",
+            "minLength": 5
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_condicional",
+          "contradicao_material",
+          "pergunta_critica",
+          "referencia_id",
+          "pagina_contextual",
+          "estatuto",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "efeito_mecanico"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "vinhetas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxv:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 30
+          },
+          "contradicao_material": {
+            "type": "string",
+            "minLength": 30
+          },
+          "pergunta_critica": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string",
+            "minLength": 5
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_condicional",
+          "contradicao_material",
+          "pergunta_critica",
+          "referencia_id",
+          "pagina_contextual",
+          "estatuto",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "efeito_mecanico"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "efeito_canonico_automatico",
+    "regiao_id",
+    "assentamento_id",
+    "modelo_de_governo_adotado",
+    "estrutura_do_templo_confirmada",
+    "agua_domestica_potavel_confirmada",
+    "capacidade_de_purificacao_confirmada",
+    "producao_agricola_quantificada",
+    "nova_instituicao_canonica",
+    "alteracao_mecanicas_dw",
+    "criaturas_afetadas",
+    "fonte_manuscrito",
+    "limites_de_inferencia",
+    "fatos_documentados",
+    "referencias_rastreaveis",
+    "modelos_de_governo",
+    "etapas_de_trabalho",
+    "relacoes_sociais",
+    "garantias_civis",
+    "dilemas",
+    "vinhetas",
+    "perguntas_para_autor",
+    "contagens"
+  ]
+}
