@@ -1,0 +1,885 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XXVIII — O rio que alimenta a tirania",
+  "estado": "expansao_social_nao_canonica",
+  "escopos": [
+    "drakport",
+    "rio-medio",
+    "corte-interface",
+    "interfaces-nao-localizadas"
+  ],
+  "regiao_normalizada_drakport": null,
+  "regiao_normalizada_rio_medio": null,
+  "revolta_drakport_ocorreu": false,
+  "participacao_ironwood_na_revolta_confirmada": null,
+  "trajetos_e_postos_individualizados_confirmados": null,
+  "populacao_escravizada_quantificada": null,
+  "balanco_de_pessoas_como_recurso": false,
+  "ritual_templo_lua_mecanismo_confirmado": null,
+  "aprovacao_autoral": false,
+  "efeito_canonico_automatico": false,
+  "alteracao_criaturas": false,
+  "alteracao_atlas_factual": false,
+  "alteracao_regras_dw": false,
+  "fonte_manuscrito": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "limites_editoriais": [
+    "Não declarar a Revolta de Drakport ocorrida: o manuscrito a mantém como pergunta futura.",
+    "Não determinar papel obrigatório de Ironwood nem retirar agência das pessoas escravizadas.",
+    "Não apresentar escravização como contrato moralmente válido por ser legalizada pelo regime.",
+    "Não representar pessoas em balanços como itens de estoque, matéria-prima ou produto.",
+    "Não confundir trabalho forçado, soldo, salário, tributo e acolhimento como equivalentes.",
+    "Não inventar número de pessoas, rotas, postos, alíquotas, rendimento, moedas ou cronologia fina.",
+    "Não assumir que todos os fugitivos de Drakport integrem uma única organização resistente.",
+    "Não fixar Drakport em região normalizada ausente na taxonomia existente.",
+    "Não transformar o Templo da Lua em mapa de técnicas mágicas, nem presumir alcance, custo ou horário.",
+    "Não atribuir diretamente Ulorian, Birka ou Casa Shayr à gestão de Drakport sem prova; Morwen é a autoridade documentada.",
+    "Não afirmar que trocas tensas com a Corte equivalham a liberdade em Drakport.",
+    "Não criar leis, bairros, guardas nomeados, caravanas permanentes ou pontos de balsa comprovados.",
+    "Não converter as propostas anteriores da balsa, pátio e registros em locais ou profissões oficiais.",
+    "Não alterar os sete monstros do Arquivo, regras DW, assentamentos, frentes ou fatos canônicos."
+  ],
+  "fatos_documentados": [
+    {
+      "id": "worldbuilding-xxviii:fato:01",
+      "pagina": 4,
+      "afirmacao_documentada": "O Rio Ancestral é eixo fundamental de circulação, comércio, poder e conquista do continente.",
+      "limite_de_inferencia": "Não revela mapa exato de cada rota, distância ou sazonalidade.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxviii:fato:02",
+      "pagina": 4,
+      "afirmacao_documentada": "Nas margens do rio há cidades, tributos, postos militares, rotas de extração e centros administrativos shadow fey.",
+      "limite_de_inferencia": "Não identifica todos os postos, órgãos de cobrança nem alíquotas.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxviii:fato:03",
+      "pagina": 4,
+      "afirmacao_documentada": "Drakport fica no meio do eixo fluvial e é apresentada como cidade de escravidão, medo e degradação.",
+      "limite_de_inferencia": "Não documenta todos os moradores, profissões ou bairros da cidade.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxviii:fato:04",
+      "pagina": 4,
+      "afirmacao_documentada": "Lady Morwen Nightshade exerce domínio sobre Drakport, ligada ao abastecimento humano e espiritual do regime.",
+      "limite_de_inferencia": "Não descreve um organograma ou contrato individual de escravização.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxviii:fato:05",
+      "pagina": 4,
+      "afirmacao_documentada": "O Templo da Lua fica numa ilha do Rio Ancestral e foi convertido em centro de poder sombrio.",
+      "limite_de_inferencia": "A ilha não possui coordenada, porto ou travessia nomeada.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxviii:fato:06",
+      "pagina": 4,
+      "afirmacao_documentada": "Severina Shadowbloom conduz rituais de controle das águas do rio e influência sombria.",
+      "limite_de_inferencia": "Não define funcionamento, alcance, custo, permanência ou limite da magia.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxviii:fato:07",
+      "pagina": 7,
+      "afirmacao_documentada": "A resistência à Rainha não tem rei secreto, conselho supremo ou comando unificado.",
+      "limite_de_inferencia": "Não concluir que seja incapaz de cooperar pontualmente.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxviii:fato:08",
+      "pagina": 7,
+      "afirmacao_documentada": "Fugitivos de Drakport integram uma pluralidade de correntes da resistência, com projetos políticos distintos.",
+      "limite_de_inferencia": "Fugir não comprova participação em uma revolta coordenada já ocorrida.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxviii:fato:09",
+      "pagina": 7,
+      "afirmacao_documentada": "A aristocracia shadow fey mantém controle sobre rotas, cidades, minas, tributos e informação.",
+      "limite_de_inferencia": "A forma de controle varia por região e não pode ser universalizada.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxviii:fato:10",
+      "pagina": 7,
+      "afirmacao_documentada": "Perto de centros de negociação associados a Ulorian podem existir formas tensas de convivência e comércio.",
+      "limite_de_inferencia": "Não implica liberdade em Drakport nem aliança específica entre Morwen e Ulorian.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxviii:fato:11",
+      "pagina": 9,
+      "afirmacao_documentada": "Em 910 EC, o regime consolida domínio militar e político; Drakport é centro de tráfico de escravos.",
+      "limite_de_inferencia": "Não fornece número de pessoas, fluxos, taxas ou data de cada prática.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxviii:fato:12",
+      "pagina": 11,
+      "afirmacao_documentada": "A Revolta de Drakport é explicitamente uma pergunta histórica em aberto, inclusive a atuação dos rangers de Ironwood.",
+      "limite_de_inferencia": "Não tratar a revolta como evento ocorrido nem fixar desfecho ou data.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    }
+  ],
+  "referencias_rastreaveis": [
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "areas",
+      "id": "area-proposta:rio",
+      "estatuto": "ancora_de_escopo",
+      "precaucao": "Rio/Drakport é área editorial, não região normalizada."
+    },
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "sementes",
+      "id": "povoamento-proposto:balsa-dos-nomes",
+      "estatuto": "povoamento_nao_canonico",
+      "precaucao": "A balsa e seu pessoal são propostas; não fixar porto e rota."
+    },
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "sementes",
+      "id": "povoamento-proposto:patio-do-soldo",
+      "estatuto": "povoamento_nao_canonico",
+      "precaucao": "Pátio não é instituição canônica de Drakport."
+    },
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "sementes",
+      "id": "povoamento-proposto:escrivania-da-foz",
+      "estatuto": "povoamento_nao_canonico",
+      "precaucao": "Escrivania é ideia da foz, não documento oficial."
+    },
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "sementes",
+      "id": "povoamento-proposto:salas-de-protocolo",
+      "estatuto": "povoamento_nao_canonico",
+      "precaucao": "Salas da Corte são propostas, não prédio comprovado."
+    },
+    {
+      "arquivo": "data/propostas/garganta-rio-ancestral-social-hack.json",
+      "colecao": "lugares",
+      "id": "rio-garganta:lugar:balsa",
+      "estatuto": "lugar_nao_canonico",
+      "precaucao": "Uma espera de balsa hipotética não estabelece ponto de embarque."
+    },
+    {
+      "arquivo": "data/propostas/garganta-rio-ancestral-social-hack.json",
+      "colecao": "oficios",
+      "id": "rio-garganta:oficio:soldo",
+      "estatuto": "oficio_nao_canonico",
+      "precaucao": "Conferentes não estão oficialmente documentados."
+    },
+    {
+      "arquivo": "data/propostas/garganta-rio-ancestral-social-hack.json",
+      "colecao": "circuitos",
+      "id": "rio-garganta:circuito:barcas",
+      "estatuto": "circuito_nao_canonico",
+      "precaucao": "Travessia sem identidade segura é proposta, não uma rota comprovada."
+    },
+    {
+      "arquivo": "data/propostas/garganta-rio-ancestral-social-hack.json",
+      "colecao": "circuitos",
+      "id": "rio-garganta:circuito:soldo",
+      "estatuto": "circuito_nao_canonico",
+      "precaucao": "Soldo perdido não pode ser contabilizado como fato histórico."
+    },
+    {
+      "arquivo": "data/propostas/garganta-rio-ancestral-social-hack.json",
+      "colecao": "acordos",
+      "id": "rio-garganta:acordo:rio",
+      "estatuto": "acordo_nao_canonico",
+      "precaucao": "Soldo não é tributo é proposta ética, não lei em vigor."
+    },
+    {
+      "arquivo": "data/worldbuilding/foz-shadar-memoria-ciclo27.json",
+      "colecao": "rio_e_trabalho",
+      "id": "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "estatuto": "proposta_nao_canonica",
+      "precaucao": "Não transportar a cobrança hipotética da foz para Drakport como fato."
+    },
+    {
+      "arquivo": "data/worldbuilding/foz-shadar-memoria-ciclo27.json",
+      "colecao": "pactos_de_frente",
+      "id": "worldbuilding-xxvii:pactos_de_frente:informante",
+      "estatuto": "proposta_nao_canonica",
+      "precaucao": "Informante não é personagem comprovado."
+    },
+    {
+      "arquivo": "data/worldbuilding/foz-shadar-memoria-ciclo27.json",
+      "colecao": "pactos_de_frente",
+      "id": "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "estatuto": "proposta_nao_canonica",
+      "precaucao": "Acordos militares não equivalem a libertação."
+    },
+    {
+      "arquivo": "data/worldbuilding/foz-shadar-memoria-ciclo27.json",
+      "colecao": "dilemas_civis",
+      "id": "worldbuilding-xxvii:dilemas_civis:emprestar-nome",
+      "estatuto": "proposta_nao_canonica",
+      "precaucao": "Falso nome e cobrança por passagem são possibilidade de cena."
+    }
+  ],
+  "trabalho_cotidiano": [
+    {
+      "id": "worldbuilding-xxviii:trabalho_cotidiano:conta",
+      "nome": "Quem confere o esforço?",
+      "possibilidade_cotidiana": "A contagem hipotética de tarefas pode ser disputada por trabalhadores sem presumir controle justo.",
+      "tensao_material": "O registro feito por um dominador pode apagar tanto o serviço quanto a pessoa.",
+      "pergunta_de_mesa": "Quem pode contestar um lançamento?",
+      "referencia_id": "rio-garganta:oficio:soldo",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:trabalho_cotidiano:repouso",
+      "nome": "Descansar não é prêmio",
+      "possibilidade_cotidiana": "O cuidado mútuo pode acontecer apesar da escravidão e da vigilância.",
+      "tensao_material": "Tratar descanso como privilégio controlado amplia a coerção.",
+      "pergunta_de_mesa": "Quem protege os mais exaustos quando não existe garantia?",
+      "referencia_id": "povoamento-proposto:patio-do-soldo",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:trabalho_cotidiano:remendo",
+      "nome": "Ferramenta reparada, dívida mantida",
+      "possibilidade_cotidiana": "Reparadores imaginados tentam prolongar utensílios de trabalho sob restrições.",
+      "tensao_material": "O responsável pelo reparo pode ser culpado pela falta de material.",
+      "pergunta_de_mesa": "A quem pertence uma ferramenta reparada?",
+      "referencia_id": "rio-garganta:circuito:soldo",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:trabalho_cotidiano:transporte",
+      "nome": "O corpo não é carga",
+      "possibilidade_cotidiana": "Pessoas submetidas à escravidão poderiam ser deslocadas contra sua vontade, mas não devem ser modeladas como mercadorias num balanço.",
+      "tensao_material": "A linguagem logística esconde a violência contra pessoas reais.",
+      "pergunta_de_mesa": "Como documentar vítimas sem reproduzir a ótica do captor?",
+      "referencia_id": "rio-garganta:circuito:barcas",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:trabalho_cotidiano:aprendizagem",
+      "nome": "Saber fazer é forma de autonomia",
+      "possibilidade_cotidiana": "Aprendizagem entre trabalhadores poderia preservar capacidades sem criar uma guilda comprovada.",
+      "tensao_material": "A dependência do ofício pode prender alguém ao dominador.",
+      "pergunta_de_mesa": "Que saber pode ser ensinado sem expor o aprendiz?",
+      "referencia_id": "rio-garganta:oficio:soldo",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:trabalho_cotidiano:cuidado",
+      "nome": "Quem cuida quando o sino chama?",
+      "possibilidade_cotidiana": "Redes informais de cuidado poderiam proteger feridos e crianças.",
+      "tensao_material": "O trabalho de cuidado desaparece das contagens de produção.",
+      "pergunta_de_mesa": "Que compromisso não pode ser cobrado como dívida?",
+      "referencia_id": "povoamento-proposto:patio-do-soldo",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:trabalho_cotidiano:comida",
+      "nome": "A refeição sem contrato",
+      "possibilidade_cotidiana": "A divisão hipotética de alimento exige observar escassez sem inventar produção.",
+      "tensao_material": "O controlador de provisões pode convertê-las em mecanismo disciplinar.",
+      "pergunta_de_mesa": "Como socorrer sem reforçar uma obrigação de servidão?",
+      "referencia_id": "povoamento-proposto:patio-do-soldo",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:trabalho_cotidiano:navegantes",
+      "nome": "Remar não implica aceitar o regime",
+      "possibilidade_cotidiana": "Pessoas contratadas ou coagidas poderiam dividir uma travessia sem compartilhar lealdade.",
+      "tensao_material": "O poder de determinar a rota pode esconder a origem da coerção.",
+      "pergunta_de_mesa": "Quem escolhe desembarcar e quem é impedido?",
+      "referencia_id": "povoamento-proposto:balsa-dos-nomes",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:trabalho_cotidiano:revisao",
+      "nome": "O erro que vira dívida",
+      "possibilidade_cotidiana": "Um registro equivocado de serviço poderia gerar exigência injusta de compensação.",
+      "tensao_material": "Quem não tem acesso à escrita fica vulnerável à falsificação.",
+      "pergunta_de_mesa": "Qual testemunho conta quando os livros divergem?",
+      "referencia_id": "rio-garganta:circuito:soldo",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:trabalho_cotidiano:noite",
+      "nome": "A vigília e o medo",
+      "possibilidade_cotidiana": "Pessoas podem estabelecer códigos cotidianos de proteção sem constituir uma organização secreta canônica.",
+      "tensao_material": "Vigilância armada pode ser apresentada como segurança coletiva.",
+      "pergunta_de_mesa": "Quando um aviso protege e quando delata?",
+      "referencia_id": "povoamento-proposto:patio-do-soldo",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "servidao_e_agencia": [
+    {
+      "id": "worldbuilding-xxviii:servidao_e_agencia:corpo",
+      "nome": "A pessoa que o contrato pretende possuir",
+      "possibilidade_cotidiana": "Uma controvérsia hipotética sobre servidão pode revelar divergência entre norma colonial e autonomia humana.",
+      "tensao_material": "Uma cláusula não torna a escravização legítima.",
+      "pergunta_de_mesa": "Que testemunho expõe a violência de uma obrigação?",
+      "referencia_id": "rio-garganta:acordo:rio",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:servidao_e_agencia:familia",
+      "nome": "Famílias contra registros",
+      "possibilidade_cotidiana": "Parentes podem tentar manter contato sob deslocamento coercitivo.",
+      "tensao_material": "Nomes e vínculos tornam-se instrumentos de perseguição quando expostos.",
+      "pergunta_de_mesa": "Como proteger um vínculo sem fornecer um mapa de vítimas?",
+      "referencia_id": "rio-garganta:circuito:barcas",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:servidao_e_agencia:testemunho",
+      "nome": "A prova sem testemunha pública",
+      "possibilidade_cotidiana": "Relatos pessoais podem ser compartilhados sem exigir exposição de quem sofreu coerção.",
+      "tensao_material": "A busca por prova pode reproduzir violência e risco.",
+      "pergunta_de_mesa": "Quem pode negar publicidade à própria história?",
+      "referencia_id": "worldbuilding-xxvii:pactos_de_frente:informante",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:servidao_e_agencia:evasao",
+      "nome": "Fugir não é a revolta",
+      "possibilidade_cotidiana": "Fuga individual ou coletiva pode ocorrer sem declarar que a revolta histórica já aconteceu.",
+      "tensao_material": "Confundir sobrevivência com insurreição apaga escolhas e consequências.",
+      "pergunta_de_mesa": "Qual o objetivo da pessoa que foge, segundo ela própria?",
+      "referencia_id": "povoamento-proposto:balsa-dos-nomes",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:servidao_e_agencia:renuncia",
+      "nome": "A recusa de um pacto injusto",
+      "possibilidade_cotidiana": "A pessoa coagida pode tentar romper exigências sem que exista lei protetiva comprovada.",
+      "tensao_material": "O regime chama resistência ao abuso de quebra de acordo.",
+      "pergunta_de_mesa": "Que custo concreto recai sobre quem diz não?",
+      "referencia_id": "rio-garganta:acordo:rio",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:servidao_e_agencia:solidariedade",
+      "nome": "A aliança sem quartel-general",
+      "possibilidade_cotidiana": "A ajuda mútua pode ser descentralizada, assim como a resistência descrita no manuscrito.",
+      "tensao_material": "A suspeita de conspiração pode punir um ato de cuidado.",
+      "pergunta_de_mesa": "Como cooperar sem exigir que todos desejem o mesmo futuro?",
+      "referencia_id": "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:servidao_e_agencia:representacao",
+      "nome": "Quem fala pelo fugitivo?",
+      "possibilidade_cotidiana": "Um intermediário poderia oferecer mediação sem poder substituir a vontade do protegido.",
+      "tensao_material": "A aparente representação pode servir para obter controle sobre rotas.",
+      "pergunta_de_mesa": "Quem autorizou divulgar informação pessoal?",
+      "referencia_id": "worldbuilding-xxvii:dilemas_civis:emprestar-nome",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:servidao_e_agencia:futuro",
+      "nome": "O que viria depois da libertação?",
+      "possibilidade_cotidiana": "Sobreviventes da opressão podem divergir sobre restauração, autonomia e alianças.",
+      "tensao_material": "A narrativa de libertação única apaga projetos políticos distintos.",
+      "pergunta_de_mesa": "Quem pode decidir o próprio futuro sem novo senhor?",
+      "referencia_id": "area-proposta:rio",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "tributos_e_passagens": [
+    {
+      "id": "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "nome": "Quem cobra do rio?",
+      "possibilidade_cotidiana": "Um cobrador hipotético poderia disputar reconhecimento de uma passagem sem fixar posto oficial.",
+      "tensao_material": "O tributo regional documentado não especifica serviço individual prestado.",
+      "pergunta_de_mesa": "Que prova distingue serviço de extorsão?",
+      "referencia_id": "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:tributos_e_passagens:duplo",
+      "nome": "O imposto de duas sombras",
+      "possibilidade_cotidiana": "Autoridades concorrentes poderiam tentar cobrar o mesmo trajeto, sem estabelecer taxa real.",
+      "tensao_material": "Pagar para sobreviver não demonstra consentimento.",
+      "pergunta_de_mesa": "Quem comprovou a primeira cobrança?",
+      "referencia_id": "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "nome": "O nome na lista",
+      "possibilidade_cotidiana": "Um controle de passagem imaginado tenta vincular nome e autorização.",
+      "tensao_material": "Uma lista pode virar instrumento de perseguição.",
+      "pergunta_de_mesa": "Como contestar um registro que compromete segurança?",
+      "referencia_id": "worldbuilding-xxvii:dilemas_civis:emprestar-nome",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:tributos_e_passagens:abastecimento",
+      "nome": "A provisão requisitada",
+      "possibilidade_cotidiana": "Uma requisição hipotética de mantimentos pode competir com necessidades domésticas.",
+      "tensao_material": "A emergência permite apresentar expropriação como dever.",
+      "pergunta_de_mesa": "Quem recebeu o que foi retirado?",
+      "referencia_id": "povoamento-proposto:patio-do-soldo",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:tributos_e_passagens:isencao",
+      "nome": "A exceção que cobra lealdade",
+      "possibilidade_cotidiana": "Uma eventual dispensa de tributo poderia ser condicionada a favor aristocrático.",
+      "tensao_material": "Uma isenção personalizada aumenta desigualdade.",
+      "pergunta_de_mesa": "Quem pode recusar a proteção oferecida?",
+      "referencia_id": "povoamento-proposto:salas-de-protocolo",
+      "escopo": "corte-interface",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:tributos_e_passagens:medida",
+      "nome": "Peso que não foi medido",
+      "possibilidade_cotidiana": "Contadores imaginários divergem sobre uma carga não identificada.",
+      "tensao_material": "Sem mercadoria e unidade, não existe saldo quantificável.",
+      "pergunta_de_mesa": "Como impedir que a conta se torne coerção?",
+      "referencia_id": "rio-garganta:circuito:soldo",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:tributos_e_passagens:tributo-ou-soldo",
+      "nome": "Pagamento pelo trabalho não é tributo",
+      "possibilidade_cotidiana": "A proposta anterior de distinguir soldo e tributo pode inspirar uma disputa civil.",
+      "tensao_material": "Trabalho retido e taxa imposta são categorias distintas.",
+      "pergunta_de_mesa": "Quem assumiu a obrigação e quem a impôs?",
+      "referencia_id": "rio-garganta:acordo:rio",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "informacao_e_ritos": [
+    {
+      "id": "worldbuilding-xxviii:informacao_e_ritos:cartas",
+      "nome": "Carta sem destino revelado",
+      "possibilidade_cotidiana": "Mensagens poderiam circular por intermediários que não conhecem todo o itinerário.",
+      "tensao_material": "Quem intercepta uma carta pode expor várias pessoas.",
+      "pergunta_de_mesa": "Qual fragmento é seguro transmitir?",
+      "referencia_id": "worldbuilding-xxvii:pactos_de_frente:informante",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:informacao_e_ritos:selo",
+      "nome": "O selo que não é prova",
+      "possibilidade_cotidiana": "Documentos poderiam ser autenticados de modo desigual em ambientes controlados.",
+      "tensao_material": "Reconhecimento burocrático não atesta justiça de conteúdo.",
+      "pergunta_de_mesa": "Quem pode impugnar o selo?",
+      "referencia_id": "povoamento-proposto:salas-de-protocolo",
+      "escopo": "corte-interface",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:informacao_e_ritos:ritual",
+      "nome": "A água sob Severina",
+      "possibilidade_cotidiana": "O Templo da Lua controla ritualisticamente águas do rio no manuscrito; efeitos locais específicos requerem decisão posterior.",
+      "tensao_material": "Poder ritual pode servir de justificativa para controle administrativo sem ser equivalente.",
+      "pergunta_de_mesa": "Que limite da magia foi observado, em vez de presumido?",
+      "referencia_id": "rio-garganta:lugar:balsa",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "nome": "O boato de uma revolta que não ocorreu",
+      "possibilidade_cotidiana": "Rumores podem antecipar a Revolta de Drakport como medo ou desejo, sem realizá-la na cronologia.",
+      "tensao_material": "Confundir rumor com fato retira dos personagens sua agência futura.",
+      "pergunta_de_mesa": "Quem se beneficia da história antes de ela acontecer?",
+      "referencia_id": "worldbuilding-xxvii:pactos_de_frente:informante",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:informacao_e_ritos:memoria",
+      "nome": "Quem guarda os nomes apagados?",
+      "possibilidade_cotidiana": "Registros fragmentários podem preservar lembranças sem formar arquivo oficial de fugitivos.",
+      "tensao_material": "Uma lista centralizada pode aumentar o risco de captura.",
+      "pergunta_de_mesa": "Quem tem direito de destruir uma cópia?",
+      "referencia_id": "povoamento-proposto:balsa-dos-nomes",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:informacao_e_ritos:corrente",
+      "nome": "O que as águas deixam saber",
+      "possibilidade_cotidiana": "Uma mensagem hipotética pode se perder por condições desconhecidas do rio.",
+      "tensao_material": "A ausência de resposta pode ser deliberadamente interpretada como traição.",
+      "pergunta_de_mesa": "Como distinguir falha de transmissão e silêncio?",
+      "referencia_id": "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "redes_de_resistencia": [
+    {
+      "id": "worldbuilding-xxviii:redes_de_resistencia:abrigo",
+      "nome": "Casa aberta, saída preservada",
+      "possibilidade_cotidiana": "Uma rede de acolhimento poderia existir sem calendário ou local fixo documentado.",
+      "tensao_material": "Abrigo condicionado a fidelidade reproduz controle.",
+      "pergunta_de_mesa": "Quando uma pessoa acolhida pode partir?",
+      "referencia_id": "povoamento-proposto:balsa-dos-nomes",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:redes_de_resistencia:divergencia",
+      "nome": "Discordar do libertador",
+      "possibilidade_cotidiana": "Aliados poderiam divergir sobre objetivos da resistência sem que isso prove traição.",
+      "tensao_material": "Concentrar comando contradiz a pluralidade descrita no manuscrito.",
+      "pergunta_de_mesa": "Que negociação mantém autonomia de cada grupo?",
+      "referencia_id": "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:redes_de_resistencia:ironwood",
+      "nome": "Rangers não são roteiro obrigatório",
+      "possibilidade_cotidiana": "A participação de Ironwood na futura revolta é pergunta, não compromisso de enredo.",
+      "tensao_material": "Forçar um salvador externo tira o protagonismo dos escravizados.",
+      "pergunta_de_mesa": "Que auxílio, se houver, foi solicitado por quem?",
+      "referencia_id": "area-proposta:rio",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:redes_de_resistencia:travessia",
+      "nome": "A rota que não foi traçada",
+      "possibilidade_cotidiana": "Fugitivos podem buscar passagem sem que o mestre defina rota oficial por decreto.",
+      "tensao_material": "Fixar um caminho público tornaria abrigo vulnerável.",
+      "pergunta_de_mesa": "Como preparar uma cena sem declarar mapa secreto canônico?",
+      "referencia_id": "rio-garganta:circuito:barcas",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:redes_de_resistencia:custo",
+      "nome": "O cuidado não pode virar dívida",
+      "possibilidade_cotidiana": "Ajuda entre viajantes poderia ser partilhada sem obrigação hereditária.",
+      "tensao_material": "Uma rede protetiva pode degenerar em mecanismo de dependência.",
+      "pergunta_de_mesa": "Como tornar um auxílio revogável e voluntário?",
+      "referencia_id": "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "worldbuilding-xxviii:vinhetas:soldo",
+      "nome": "O saldo que não é salário",
+      "possibilidade_cotidiana": "Uma pessoa imaginada encontra num registro de Drakport um serviço não pago.",
+      "tensao_material": "O papel converte uma dívida do regime em culpa do trabalhador.",
+      "pergunta_de_mesa": "Quem lê a página em voz alta?",
+      "referencia_id": "povoamento-proposto:patio-do-soldo",
+      "escopo": "drakport",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:vinhetas:balsa",
+      "nome": "A embarcação e o nome",
+      "possibilidade_cotidiana": "Um barqueiro hipotético deve escolher entre exigir identificação e oferecer socorro.",
+      "tensao_material": "O registro pode revelar a identidade de quem fugiu.",
+      "pergunta_de_mesa": "O que se pode anotar sem denunciar?",
+      "referencia_id": "povoamento-proposto:balsa-dos-nomes",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:vinhetas:lua",
+      "nome": "A água não assinou o decreto",
+      "possibilidade_cotidiana": "Uma cerimônia imaginada de controle da corrente é usada para justificar nova cobrança.",
+      "tensao_material": "Domínio mágico declarado não comprova legitimidade política.",
+      "pergunta_de_mesa": "Que observação permitiria questionar a exigência?",
+      "referencia_id": "rio-garganta:lugar:balsa",
+      "escopo": "rio-medio",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxviii:vinhetas:mensagem",
+      "nome": "A notícia de uma revolta futura",
+      "possibilidade_cotidiana": "Uma mensagem hipotética afirma que Drakport caiu; ninguém tem evidência.",
+      "tensao_material": "A informação pode inspirar coragem e causar mortes se for falsa.",
+      "pergunta_de_mesa": "Quem deve confirmar antes de agir?",
+      "referencia_id": "worldbuilding-xxvii:pactos_de_frente:informante",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "perguntas_para_autor": [
+    {
+      "id": "worldbuilding-xxviii:pergunta:revolta",
+      "pergunta_autoral": "Quando e como poderá ocorrer a Revolta de Drakport?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxviii:pergunta:ironwood",
+      "pergunta_autoral": "Que papel os rangers de Ironwood poderão assumir, se forem chamados?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxviii:pergunta:agencia",
+      "pergunta_autoral": "Que grupos de pessoas escravizadas ou libertas tomam decisões sobre sua própria resistência?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxviii:pergunta:leis",
+      "pergunta_autoral": "Que mecanismos concretos a Corte utiliza para registrar e impor a servidão em Drakport?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxviii:pergunta:tributos",
+      "pergunta_autoral": "Quais cobranças e quais postos existem individualmente no trecho médio do rio?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxviii:pergunta:comercio",
+      "pergunta_autoral": "Quais bens trafegam pelo eixo Drakport–Corte–foz e em quais trajetos confirmados?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxviii:pergunta:templo-lua",
+      "pergunta_autoral": "Quais condições e limites regem o controle ritual do Templo da Lua sobre as águas?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxviii:pergunta:trabalho",
+      "pergunta_autoral": "Como diferem as relações de trabalho forçado, contratado e livre nas sociedades ribeirinhas?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxviii:pergunta:geografia",
+      "pergunta_autoral": "O rio médio e Drakport terão IDs geográficos próprios após revisão autoral?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxviii:pergunta:protecao",
+      "pergunta_autoral": "Que relações materiais podem existir entre famílias, fugitivos, viajantes e redes descentralizadas de resistência?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    }
+  ],
+  "contagens": {
+    "fatos": 12,
+    "referencias": 14,
+    "propostas": 40,
+    "perguntas": 10,
+    "trabalho_cotidiano": 10,
+    "servidao_e_agencia": 8,
+    "tributos_e_passagens": 7,
+    "informacao_e_ritos": 6,
+    "redes_de_resistencia": 5,
+    "vinhetas": 4
+  }
+}
