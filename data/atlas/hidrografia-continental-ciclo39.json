@@ -1,0 +1,542 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Atlas hidrográfico continental — Ciclo XXXIX",
+  "estado": "inventario_hidrico_macro",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "representacao": "qualitativa_sem_geometria",
+  "fontes": [
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+    "data/atlas/geografia-fisica-ciclo34.json",
+    "data/atlas/macroambientes-ciclo35.json",
+    "data/atlas/interfaces-continentais-ciclo36.json",
+    "data/atlas/matriz-topologica-ciclo37.json"
+  ],
+  "principio": "Bacia, divisor, nascente, afluente e aquífero somente poderão ser desenhados após fonte ou decisão autoral. A água de Portomonte não é declarada potável. Mar, rio e Abismo não são um único sistema por inferência.",
+  "unidades": [
+    {
+      "id": "hidro:xxxix:rio-ancestral",
+      "nome": "Eixo fluvial do Rio Ancestral",
+      "tipo": "fluvial",
+      "estado": "documentado",
+      "setores": [
+        "rio"
+      ],
+      "ref_fisica": "geo-xxxiv:rio",
+      "ref_ambiente": "amb:rio",
+      "paginas": [
+        4,
+        5,
+        9
+      ],
+      "documentado": "O Rio Ancestral atravessa o continente, articula circulação, comércio, tributos e se precipita no Abismo.",
+      "desconhecido": "Sua nascente, afluentes, largura, vazão e traçado preciso não estão individualizados.",
+      "nao_inferir": "Não afirmar que todo o seu percurso é igualmente navegável nem que o rio é a nascente de outras águas.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:abismo",
+      "nome": "Terminação do rio no Abismo",
+      "tipo": "queda",
+      "estado": "documentado",
+      "setores": [
+        "foz"
+      ],
+      "ref_fisica": "geo-xxxiv:foz",
+      "ref_ambiente": "amb:abismo",
+      "paginas": [
+        5,
+        8
+      ],
+      "documentado": "No extremo oeste, a queda colossal do Rio Ancestral é conhecida como Abismo.",
+      "desconhecido": "A hidrologia abaixo da queda, a continuidade da água e uma possível saída permanecem desconhecidas.",
+      "nao_inferir": "Não inferir oceano receptor, descarga ou canal subterrâneo após a queda.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:ilha-lunar",
+      "nome": "Ilha fluvial do Templo da Lua",
+      "tipo": "insular_fluvial",
+      "estado": "documentado",
+      "setores": [
+        "rio"
+      ],
+      "ref_fisica": "geo-xxxiv:ilha-lunar",
+      "ref_ambiente": "amb:ilha-lunar",
+      "paginas": [
+        4
+      ],
+      "documentado": "O Templo da Lua está em uma ilha do Rio Ancestral; Severina realiza rituais associados ao controle das águas.",
+      "desconhecido": "O trecho longitudinal, a margem mais próxima e o mecanismo físico dos rituais não são conhecidos.",
+      "nao_inferir": "Não posicionar a ilha em trecho específico nem inferir controle mágico uniforme de toda a bacia.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:caatinga",
+      "nome": "Terras áridas da Caatinga",
+      "tipo": "territorio_hidrico",
+      "estado": "regime_indeterminado",
+      "setores": [
+        "caatinga"
+      ],
+      "ref_fisica": "geo-xxxiv:caatinga",
+      "ref_ambiente": "amb:caatinga",
+      "paginas": [
+        5,
+        12
+      ],
+      "documentado": "O Além Sul possui terras áridas, onde comunidades dispersas enfrentam disputas territoriais.",
+      "desconhecido": "Não foram individualizados poços, nascentes, reservatórios, regimes sazonais ou rotas de água.",
+      "nao_inferir": "Aridez não demonstra ausência total de água nem autoriza criar um rio permanente.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:portomonte",
+      "nome": "Purificação hídrica de Portomonte",
+      "tipo": "agua_ritual",
+      "estado": "documentado_com_limite",
+      "setores": [
+        "costa"
+      ],
+      "ref_fisica": "geo-xxxiv:costa-sul",
+      "ref_ambiente": "amb:penhascos",
+      "paginas": [
+        5,
+        12,
+        23
+      ],
+      "documentado": "O templo de Deméter purifica águas próximas a Portomonte e permite a agricultura sobre a costa pedregosa.",
+      "desconhecido": "A extensão do efeito, volumes, tecnologia ritual, qualidade para consumo humano e regime de distribuição não estão determinados.",
+      "nao_inferir": "Não converter a purificação agrícola em abastecimento potável universal nem em controle de toda a Costa Sul.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:pradarias",
+      "nome": "Pradarias cultivadas da Costa Sul",
+      "tipo": "territorio_hidrico",
+      "estado": "regime_indeterminado",
+      "setores": [
+        "costa"
+      ],
+      "ref_fisica": "geo-xxxiv:costa-sul",
+      "ref_ambiente": "amb:pradarias",
+      "paginas": [
+        5
+      ],
+      "documentado": "Há terras verdes cultivadas próximas ao Mar de Sangue, sujeitas a incursões vindas da Caatinga.",
+      "desconhecido": "Não foram descritas as fontes de irrigação, drenagem, aquíferos ou limites agrícolas.",
+      "nao_inferir": "Não atribuir automaticamente às pradarias o milagre localizado de Portomonte.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:mar-sangue",
+      "nome": "Águas corrompidas do Mar de Sangue",
+      "tipo": "marinho",
+      "estado": "documentado",
+      "setores": [
+        "costa"
+      ],
+      "ref_fisica": "geo-xxxiv:mar-sangue",
+      "ref_ambiente": "amb:mar-rubro",
+      "paginas": [
+        5,
+        14,
+        15
+      ],
+      "documentado": "As águas costeiras são vermelhas, turvas, violentas e corrompidas, com correntes perigosas.",
+      "desconhecido": "Não há salinidade, profundidade, composição ou extensão de contaminação cartografadas.",
+      "nao_inferir": "Não equiparar o Mar de Sangue a uma bacia fluvial ou provar ligação direta com o Abismo.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:limite-azul",
+      "nome": "Transição móvel entre águas rubras e azuis",
+      "tipo": "fronteira_movel",
+      "estado": "documentado_variavel",
+      "setores": [
+        "azuis"
+      ],
+      "ref_fisica": "geo-xxxiv:aguas-azuis",
+      "ref_ambiente": "amb:azuis",
+      "paginas": [
+        15
+      ],
+      "documentado": "O limite com o oceano azul oscila por correntes, tempestades e efeitos mágicos; recifes podem ser temporariamente afetados.",
+      "desconhecido": "Não existe linha permanente nem mapa de frequência, direção ou amplitude dessas mudanças.",
+      "nao_inferir": "A área da faixa de transição não pode ser convertida em polígono definitivo.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:oceanos-azuis",
+      "nome": "Oceano aberto de águas azuis",
+      "tipo": "marinho",
+      "estado": "documentado",
+      "setores": [
+        "azuis"
+      ],
+      "ref_fisica": "geo-xxxiv:aguas-azuis",
+      "ref_ambiente": "amb:azuis",
+      "paginas": [
+        15,
+        24
+      ],
+      "documentado": "Além do mar corrompido vivem tritões e sereias, com cidades, rotas e cultos próprios ligados às águas oceânicas.",
+      "desconhecido": "Correntes específicas, limites territoriais e padrão de circulação não foram cartografados.",
+      "nao_inferir": "Não tratar os domínios dos povos marinhos como fronteira estática da pureza da água.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:recifes",
+      "nome": "Recifes e cânions do oceano azul",
+      "tipo": "marinho",
+      "estado": "documentado",
+      "setores": [
+        "azuis"
+      ],
+      "ref_fisica": "geo-xxxiv:aguas-azuis",
+      "ref_ambiente": "amb:recifes",
+      "paginas": [
+        15
+      ],
+      "documentado": "Cidades e rotas submarinas ocupam recifes, cânions e formações de coral nas águas azuis.",
+      "desconhecido": "Não há batimetria, localização individual das cidades ou rede conhecida de correntes.",
+      "nao_inferir": "Não desenhar um arquipélago ou um corredor contínuo de recifes sem fontes.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:thargrid",
+      "nome": "Picos nevados de Thargrid",
+      "tipo": "relevo_potencial",
+      "estado": "regime_indeterminado",
+      "setores": [
+        "thargrid"
+      ],
+      "ref_fisica": "geo-xxxiv:montanhas-thargrid",
+      "ref_ambiente": "amb:picos-nevados",
+      "paginas": [
+        13
+      ],
+      "documentado": "Alguns dos picos mais altos de Thargrid permanecem nevados durante quase todo o ano.",
+      "desconhecido": "O manuscrito não estabelece degelo, geleiras, nascentes ou conexão hídrica com o Rio Ancestral.",
+      "nao_inferir": "Neve documentada não comprova contribuição de água à bacia continental.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:grama",
+      "nome": "Campos agrícolas de Grama-Cortada",
+      "tipo": "territorio_hidrico",
+      "estado": "regime_indeterminado",
+      "setores": [
+        "grama"
+      ],
+      "ref_fisica": "geo-xxxiv:grama",
+      "ref_ambiente": "amb:grama",
+      "paginas": [
+        18,
+        19
+      ],
+      "documentado": "O Condado possui produção agrícola variada e capacidade de armazenagem comunitária.",
+      "desconhecido": "Clima, localização, rios próximos, irrigação e origem da água agrícola são desconhecidos.",
+      "nao_inferir": "Não posicionar o condado junto ao rio nem inferir clima a partir dos alimentos cultivados.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    },
+    {
+      "id": "hidro:xxxix:cavernas",
+      "nome": "Cavernas fossilizadas e subterrâneos de Thargrid",
+      "tipo": "subsolo_potencial",
+      "estado": "regime_indeterminado",
+      "setores": [
+        "thargrid"
+      ],
+      "ref_fisica": "geo-xxxiv:montanhas-thargrid",
+      "ref_ambiente": "amb:anões-subsolo",
+      "paginas": [
+        12,
+        13,
+        20
+      ],
+      "documentado": "Thargrid abriga cidades anãs em cavernas e ossos fossilizados, com enclaves gnômicos mais profundos.",
+      "desconhecido": "Não estão descritos aquíferos, rios subterrâneos, lençóis freáticos ou conexões hidráulicas entre galerias.",
+      "nao_inferir": "A existência de cavernas não prova fluxo de água contínuo ou reservas subterrâneas.",
+      "geometria": null,
+      "volume": null,
+      "regime_sazonal": null
+    }
+  ],
+  "vinculos": [
+    {
+      "id": "hidrorel:xxxix:rio-abismo",
+      "de": "hidro:xxxix:rio-ancestral",
+      "para": "hidro:xxxix:abismo",
+      "tipo": "desagua",
+      "ref_ambiental": "ambr:rio-abismo",
+      "ref_interface": null,
+      "paginas": [
+        4,
+        5
+      ],
+      "documentado": "O rio termina na queda do Abismo; seu destino posterior permanece desconhecido.",
+      "geometria": null,
+      "roteiro_de_agua_confirmado": false
+    },
+    {
+      "id": "hidrorel:xxxix:rio-ilha",
+      "de": "hidro:xxxix:rio-ancestral",
+      "para": "hidro:xxxix:ilha-lunar",
+      "tipo": "contem_ilha",
+      "ref_ambiental": "ambr:rio-ilha-lunar",
+      "ref_interface": null,
+      "paginas": [
+        4
+      ],
+      "documentado": "A ilha do Templo da Lua existe dentro do rio, sem trecho identificado.",
+      "geometria": null,
+      "roteiro_de_agua_confirmado": false
+    },
+    {
+      "id": "hidrorel:xxxix:mar-limite",
+      "de": "hidro:xxxix:mar-sangue",
+      "para": "hidro:xxxix:limite-azul",
+      "tipo": "transicao_movel",
+      "ref_ambiental": "ambr:mar-rubro-azuis",
+      "ref_interface": "inter:xxxvi:sangue-azul",
+      "paginas": [
+        15
+      ],
+      "documentado": "Transição oceânica variável; não constitui divisa cartográfica estática.",
+      "geometria": null,
+      "roteiro_de_agua_confirmado": false
+    },
+    {
+      "id": "hidrorel:xxxix:limite-azuis",
+      "de": "hidro:xxxix:limite-azul",
+      "para": "hidro:xxxix:oceanos-azuis",
+      "tipo": "zona_de_transicao",
+      "ref_ambiental": null,
+      "ref_interface": "inter:xxxvi:sangue-azul",
+      "paginas": [
+        15
+      ],
+      "documentado": "O limite variável relaciona o mar corrompido às águas azuis; não é trecho de rio.",
+      "geometria": null,
+      "roteiro_de_agua_confirmado": false
+    },
+    {
+      "id": "hidrorel:xxxix:oceanos-recifes",
+      "de": "hidro:xxxix:oceanos-azuis",
+      "para": "hidro:xxxix:recifes",
+      "tipo": "ambiente_contido",
+      "ref_ambiental": "ambr:azuis-recifes",
+      "ref_interface": null,
+      "paginas": [
+        15
+      ],
+      "documentado": "Recifes e cânions marinhos são mencionados nas águas azuis.",
+      "geometria": null,
+      "roteiro_de_agua_confirmado": false
+    },
+    {
+      "id": "hidrorel:xxxix:mar-portomonte",
+      "de": "hidro:xxxix:mar-sangue",
+      "para": "hidro:xxxix:portomonte",
+      "tipo": "purificacao_local",
+      "ref_ambiental": null,
+      "ref_interface": null,
+      "paginas": [
+        5,
+        23
+      ],
+      "documentado": "Em Portomonte, água do Mar de Sangue é purificada por intervenção do templo de Deméter para viabilizar agricultura.",
+      "geometria": null,
+      "roteiro_de_agua_confirmado": false
+    }
+  ],
+  "lacunas": [
+    {
+      "id": "hidrogap:xxxix:nascentes",
+      "pergunta": "Onde se originam as águas do Rio Ancestral e qual a(s) cabeceira(s)?",
+      "ref_dominio": "hidro:xxxix:rio-ancestral",
+      "ref_decisao": "decisao:xxxvii:rio",
+      "paginas": [
+        4,
+        5
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    },
+    {
+      "id": "hidrogap:xxxix:afluentes",
+      "pergunta": "Quais afluentes e sub-bacias existem, se existem?",
+      "ref_dominio": "hidro:xxxix:rio-ancestral",
+      "ref_decisao": null,
+      "paginas": [
+        4,
+        5
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    },
+    {
+      "id": "hidrogap:xxxix:vazao",
+      "pergunta": "Qual o regime de cheias, vazões, navegabilidade sazonal e variações do curso?",
+      "ref_dominio": "hidro:xxxix:rio-ancestral",
+      "ref_decisao": null,
+      "paginas": [
+        4,
+        9
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    },
+    {
+      "id": "hidrogap:xxxix:apos-abismo",
+      "pergunta": "Para onde vai a água depois da queda do Abismo?",
+      "ref_dominio": "hidro:xxxix:abismo",
+      "ref_decisao": null,
+      "paginas": [
+        5,
+        8
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    },
+    {
+      "id": "hidrogap:xxxix:ilha-templo",
+      "pergunta": "Em qual trecho do rio está a ilha do Templo da Lua e qual a extensão dos rituais?",
+      "ref_dominio": "hidro:xxxix:ilha-lunar",
+      "ref_decisao": null,
+      "paginas": [
+        4
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    },
+    {
+      "id": "hidrogap:xxxix:agua-caatinga",
+      "pergunta": "Quais fontes, armazenamento e rotas de água existem na Caatinga?",
+      "ref_dominio": "hidro:xxxix:caatinga",
+      "ref_decisao": null,
+      "paginas": [
+        5,
+        12
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    },
+    {
+      "id": "hidrogap:xxxix:portomonte-qualidade",
+      "pergunta": "Qual o alcance da purificação de Deméter e quais usos da água são possíveis?",
+      "ref_dominio": "hidro:xxxix:portomonte",
+      "ref_decisao": null,
+      "paginas": [
+        5,
+        23
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    },
+    {
+      "id": "hidrogap:xxxix:pradarias-agua",
+      "pergunta": "As pradarias costeiras utilizam qual fonte de água, sem presumir que seja Portomonte?",
+      "ref_dominio": "hidro:xxxix:pradarias",
+      "ref_decisao": null,
+      "paginas": [
+        5
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    },
+    {
+      "id": "hidrogap:xxxix:grama-agua",
+      "pergunta": "Qual regime hídrico sustenta os cultivos de Grama-Cortada?",
+      "ref_dominio": "hidro:xxxix:grama",
+      "ref_decisao": "decisao:xxxvii:grama",
+      "paginas": [
+        18,
+        19
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    },
+    {
+      "id": "hidrogap:xxxix:neve-drenagem",
+      "pergunta": "Os picos nevados de Thargrid alimentam algum sistema hídrico?",
+      "ref_dominio": "hidro:xxxix:thargrid",
+      "ref_decisao": null,
+      "paginas": [
+        13
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    },
+    {
+      "id": "hidrogap:xxxix:subsolo-agua",
+      "pergunta": "Existem reservas ou cursos d'água subterrâneos e onde são independentes?",
+      "ref_dominio": "hidro:xxxix:cavernas",
+      "ref_decisao": null,
+      "paginas": [
+        12,
+        13,
+        20
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    },
+    {
+      "id": "hidrogap:xxxix:limite-dinamico",
+      "pergunta": "Como registrar temporalidade, amplitude e intensidade da transição rubra/azul sem fixar fronteira?",
+      "ref_dominio": "hidro:xxxix:limite-azul",
+      "ref_decisao": "decisao:xxxvii:mar",
+      "paginas": [
+        15
+      ],
+      "resolvida": false,
+      "estado": "pendente",
+      "promove_bacia": false
+    }
+  ],
+  "invariantes": [
+    "O Rio Ancestral termina no Abismo no extremo oeste.",
+    "O Templo da Lua fica em uma ilha do Rio Ancestral, com trecho desconhecido.",
+    "A purificação de águas para agricultura em Portomonte é local e não comprova potabilidade humana.",
+    "O limite entre mares permanece variável, sem polígono fixo.",
+    "Picos nevados não demonstram nascentes; cavernas não demonstram aquíferos.",
+    "Nenhuma conexão entre Rio Ancestral, Mar de Sangue e Abismo demoníaco é deduzida.",
+    "Abissais marinhos não são demônios do Abismo ocidental."
+  ]
+}
