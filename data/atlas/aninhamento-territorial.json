@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.2",
+  "titulo": "Aninhamento territorial verificável do Atlas da Carcaça",
+  "politica": "Todo lugar cadastrado tem um ponto de inserção para sublugares; só os vínculos ancorados em fonte viram relações pai-filho. Proximidade não é interioridade; pastas de lacuna não afirmam existência de assentamentos.",
+  "revisao_autoral_aplicada": false,
+  "altera_canon": false,
+  "vinculos_documentados": [
+    {
+      "filho": "reino-sob-montanha",
+      "pai": "montanhas-thargrid",
+      "fundamento": "O Reino Sob a Montanha está nas Montanhas de Thargrid.",
+      "pagina": 6,
+      "estatuto": "referencia_de_manuscrito"
+    },
+    {
+      "filho": "templo-demeter",
+      "pai": "portomonte",
+      "fundamento": "O Templo de Deméter é instituição de Portomonte.",
+      "pagina": 5,
+      "estatuto": "referencia_de_manuscrito"
+    },
+    {
+      "filho": "templo-yolskaariin",
+      "pai": "garganta",
+      "fundamento": "O Templo de Yolskaariin encontra-se em Garganta.",
+      "pagina": 3,
+      "estatuto": "referencia_de_manuscrito"
+    },
+    {
+      "filho": "arquivo-mortos-afogados",
+      "pai": "gualapolis",
+      "fundamento": "Arquivo vinculado às ruínas da antiga Gualápolis; relação topológica com Shadar exige revisão.",
+      "pagina": 6,
+      "estatuto": "referencia_de_manuscrito"
+    },
+    {
+      "filho": "templo-da-lua",
+      "pai": "rio-ancestral",
+      "fundamento": "O templo é insular no Rio Ancestral; nenhuma posição longitudinal definida.",
+      "pagina": 4,
+      "estatuto": "referencia_de_manuscrito"
+    },
+    {
+      "filho": "boca-do-abismo",
+      "pai": "gualapolis",
+      "fundamento": "Ulorian fundou a fortaleza sobre a área da antiga Gualápolis; não pressupõe mesma organização urbana.",
+      "pagina": 6,
+      "estatuto": "referencia_de_manuscrito"
+    }
+  ],
+  "ancoras_sementes": [
+    {
+      "id": "povoamento-proposto:cartorio-das-portas-raspadas",
+      "pai": "garganta",
+      "justificativa": "Beco hipotético nos degraus da cidade",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:turno-das-escavadoras",
+      "pai": "templo-yolskaariin",
+      "justificativa": "Canteiro hipotético sob o templo",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:balsa-dos-nomes",
+      "pai": "rio-ancestral",
+      "justificativa": "Travessia hipotética do rio; não corresponde a uma margem fixada",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:patio-do-soldo",
+      "pai": "drakport",
+      "justificativa": "Pátio hipotético em Drakport",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:hortas-do-sal",
+      "pai": null,
+      "justificativa": "Proximidade de Portomonte, sem estar dentro da cidade",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:farol-das-memorias",
+      "pai": "ilhas-monasticas",
+      "justificativa": "Ilha monástica hipotética na rede insular",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:poco-sem-bandeira",
+      "pai": "caatinga-bioma",
+      "justificativa": "Ponto de água hipotético na Caatinga",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:mercado-das-ferragens",
+      "pai": null,
+      "justificativa": "Bordas das pradarias, não contidas inequivocamente na Caatinga",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:correio-dos-esporos",
+      "pai": "floresta-eldroth",
+      "justificativa": "Abrigo hipotético numa parte de Eldroth",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:velorio-dos-insepultos",
+      "pai": "vandar",
+      "justificativa": "Porão hipotético nas ruínas periféricas de Vandar",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:conselho-dos-juramentos",
+      "pai": "reino-sob-montanha",
+      "justificativa": "Oficina hipotética no Reino Sob a Montanha",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:escola-do-caminho-verde",
+      "pai": null,
+      "justificativa": "Próximo a Ironwood, sem comprovação de pertencer ao território",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:escrivania-da-foz",
+      "pai": null,
+      "justificativa": "Próximo à Boca do Abismo, sem afirmar interioridade",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:feira-da-tregua",
+      "pai": null,
+      "justificativa": "Próximo aos postos de Gualápolis, sem afirmar interioridade",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:salas-de-protocolo",
+      "pai": "shadar-riverie",
+      "justificativa": "Casa de audiência hipotética em Shadar-Riverie",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento-proposto:ateliê-das-mascaras",
+      "pai": "shadar-riverie",
+      "justificativa": "Oficina hipotética em corredores de serviço da cidade",
+      "estatuto": "proposta_nao_canonica",
+      "aprovacao_autoral": false
+    }
+  ],
+  "rotulos_lacuna": {
+    "assentamento": "Bairros, construções e comunidades — a individualizar",
+    "bioma": "Vilas, aldeias, habitats e sítios — a individualizar",
+    "fortaleza": "Dependências, postos e núcleos habitados — a individualizar",
+    "poder": "Recintos, anexos e locais de culto — a individualizar",
+    "masmorra": "Câmaras, covis e passagens — a individualizar",
+    "ruina": "Setores, estruturas e escavações — a individualizar",
+    "rota": "Travessias, margens e comunidades — a individualizar",
+    "nucleo": "Edificações, moradores e sublugares — a individualizar",
+    "ambito": "Localizações específicas ainda não estabelecidas"
+  }
+}

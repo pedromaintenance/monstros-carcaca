@@ -222,10 +222,14 @@ export function buildAtlasTree(d){
   };
   const markUnspecifiedSettlements=(parentKey)=>{
     const parentId=placeByKey.get(parentKey);
+    const parent=list.find(n=>n.id===parentId);
+    if(!parent||parent.placeType==="ambito")return; // Referências abstratas não são territórios habitáveis.
+    const label=d.hierarchy?.rotulos_lacuna?.[parent.placeType];
+    if(!label)throw new Error("Tipo de lugar sem modelo de subdivisão: "+parent.placeType);
     make({id:"lacuna-localidades:"+parentKey,parentId,kind:"lacuna_localidades",
-      label:"Outras vilas e cidades — ainda não individualizadas",status:"organizador",
-      summary:"Reserva de estrutura para assentamentos futuros. As fontes atuais não confirmam nomes, quantidade, posição ou existência de vilas adicionais nesta área.",
-      regionKey:list.find(n=>n.id===parentId)?.regionKey,empty:true});
+      label,status:"organizador",
+      summary:"Possibilidade de cadastrar subdivisões deste lugar. Nenhum nome, quantidade, ocupação ou existência de novas localidades é presumido.",
+      regionKey:parent.regionKey,placeType:parent.placeType,empty:true,aprovacao_autoral:false});
   };
   const getBucket=(key,contentType)=>{
     const pid=placeByKey.get(key);
@@ -266,27 +270,70 @@ export function buildAtlasTree(d){
     "Fortaleza ranger — núcleo de Ironwood","manuscrito",
     "Núcleo defensivo documentado da resistência de Ironwood; não é um segundo município nem atesta outras aldeias.",
     "data/lore/hack-carcaca-dw-indice-tematico.json","lore-hack:ironwood",[],{derivadoDe:"lore-hack:ironwood"});
-  // Estes vínculos são explícitos no manuscrito; não se inferem rotas ou distâncias.
-  for(const [child,parent] of [
-    ["reino-sob-montanha","montanhas-thargrid"],
-    ["templo-demeter","portomonte"],
-    ["templo-yolskaariin","garganta"],
-    ["arquivo-mortos-afogados","gualapolis"],
-    ["templo-da-lua","rio-ancestral"]
-  ])reparentTo(child,parent);
-  // Microespaços anteriores de Ironwood, expressamente NÃO confirmados.
-  // Se vierem a ser aprovados, podem tornar-se refúgios, bairros ou vilas sem mudar o modelo.
-  for(const loc of req(d.ironwoodLocales,"lugares")
-       .filter(x=>x.ancora_canonica==="Ironwood"&&x.local_confirmado===false)){
+  // Interioridade curada por fonte e página; não derive do simples nome parecido.
+  for(const rel of req(d.hierarchy,"vinculos_documentados")){
+    if(rel.estatuto!=="referencia_de_manuscrito")throw new Error("Vínculo sem estatuto autoral");
+    reparentTo(rel.filho,rel.pai);
+    const n=list.find(x=>x.id===placeByKey.get(rel.filho));
+    n.containmentEvidence={fonte:"data/atlas/aninhamento-territorial.json",pagina:rel.pagina,
+      fundamento:rel.fundamento,estatuto:rel.estatuto};
+  }
+  // Todas as propostas de microterritórios de Ironwood/Eldroth têm âncora editorial.
+  // "Perto de Vandar" não é "dentro de Vandar".
+  for(const loc of req(d.ironwoodLocales,"lugares").filter(x=>x.local_confirmado===false)){
+    const anchor={Ironwood:"ironwood",Eldroth:"floresta-eldroth",Vandar:null};
+    const parent=anchor[loc.ancora_canonica];
+    if(parent===undefined)throw new Error("Âncora local ainda não revisada: "+loc.ancora_canonica);
     const key="ironwood-proposta-"+loc.id.split(":").at(-1);
-    addNestedPlace(key,"ironwood","nucleo",loc.nome,"proposta",
+    const args=[key,parent||"eldroth","nucleo",loc.nome,"proposta",
       loc.rotina_cotidiana+" Tensão possível: "+loc.tensao_social,
       "data/propostas/ironwood-eldroth-resistencia-hack.json",loc.id,[],
-      {approval:false,precisao:"microespaco_nao_confirmado"});
+      {approval:false,precisao:"microespaco_nao_confirmado"}];
+    if(parent)addNestedPlace(...args);
+    else addPlace(key,"eldroth","nucleo",loc.nome,"proposta",args[5],args[6],args[7],[],args[9]);
   }
-  // Posição na árvore é reserva de expansão; não confirma outras cidades.
-  for(const key of ["ironwood","reino-sob-montanha","grama-cortada","ilhas-monasticas","drakport"])
-    markUnspecifiedSettlements(key);
+  // Microespaços de Thargrid: o texto distingue locais do Reino e espaços das montanhas.
+  for(const loc of req(d.thargridSocial,"lugares").filter(x=>x.local_confirmado===false)){
+    const parent=["patio-da-metade","mesa-da-sexta-tigela"].includes(loc.id.split(":").at(-1))
+      ?"reino-sob-montanha":"montanhas-thargrid";
+    const key="thargrid-social-"+loc.id.split(":").at(-1);
+    addNestedPlace(key,parent,"nucleo",loc.nome,"proposta",
+      loc.rotina_cotidiana+" Tensão possível: "+loc.tensao_social,
+      "data/propostas/thargrid-resistencia-cotidiano-hack.json",loc.id,[],
+      {approval:false,precisao:"proposta_sem_localizacao_especifica",ancoraTextual:loc.ancora});
+  }
+  // Garganta e Rio: várias âncoras são regionais, mas nem todas pertencem a uma cidade concreta.
+  const gParents={
+    "portas":"garganta","cinzas":"templo-yolskaariin",
+    "balsa":"rio-ancestral","lua":"rio-ancestral",
+    "turno":null,"estalagem":null
+  };
+  for(const loc of req(d.gargantaSocial,"lugares").filter(x=>x.local_confirmado===false)){
+    const slug=loc.id.split(":").at(-1),parent=gParents[slug];
+    if(parent===undefined)throw new Error("Local social sem classificação: "+slug);
+    const key="garganta-social-"+slug;
+    const region=loc.area==="area-proposta:rio"?"rio":"garganta";
+    const args=[key,region,"nucleo",loc.nome,"proposta",
+      (loc.vida||"")+" Tensão possível: "+(loc.conflito||""),
+      "data/propostas/garganta-rio-ancestral-social-hack.json",loc.id,[],
+      {approval:false,precisao:parent?"proposta_interna":"localizacao_regional_nao_confirmada",ancoraTextual:loc.ancora}];
+    if(parent)addNestedPlace(key,parent,"nucleo",loc.nome,"proposta",
+      args[5],args[6],args[7],[],args[9]);
+    else addPlace(...args);
+  }
+  // As duas primeiras comunidades da Caatinga já aparecem como sementes; não duplicar localidade.
+  const caatingaCounterparts={
+    "poco-sem-bandeira":"poco-sem-bandeira",
+    "feira-ferragens":"mercado-das-ferragens"
+  };
+  for(const loc of req(d.caatingaSocial,"comunidades")){
+    const slug=loc.id.split(":").at(-1);
+    if(caatingaCounterparts[slug])continue;
+    addNestedPlace("caatinga-social-"+slug,"caatinga-bioma","nucleo",loc.nome,"proposta",
+      (loc.descricao_proposta||"")+" "+(loc.rotina||""),
+      "data/propostas/caatinga-rede-social-hack.json",loc.id,[],
+      {approval:false,precisao:"proposta_de_comunidade_nao_geolocalizada"});
+  }
   for(const p of req(d.places,"lugares")){
     const key=curatedPlaces[p.id];
     if(key){
@@ -294,8 +341,7 @@ export function buildAtlasTree(d){
       if(n){n.curatedPlaceId=p.id;n.curatedStatus=p.estado||"documentado";}
     }
   }
-  // Sempre mostre todas as categorias dentro de cada lugar. Pastas vazias são lacunas, não dados inventados.
-  for(const key of placeNames)for(const [ct] of CONTENT_TYPES)getBucket(key,ct);
+  // Categorias serão criadas após TODOS os locais propostos e documentados.
   for(const x of lore){
     if(x.tipo==="povo")for(const key of peopleAssignments[x.id.slice(10)]||["povos-globais"])
       addEntry(key,"povos",fromLore(x));
@@ -344,13 +390,15 @@ export function buildAtlasTree(d){
       (x.local_proposto||"")+". "+(x.vida_cotidiana||""),
       "data/propostas/povoamento-regional-hack-carcaca.json",x.id,[],
       {precisao:"microespaco_nao_canonico",approval:false});
-    // Só localizar abaixo de outro lugar quando o próprio enunciado indicar interioridade.
-    if(x.id==="povoamento-proposto:conselho-dos-juramentos")
-      reparentTo(key,"reino-sob-montanha");
-    if(x.id==="povoamento-proposto:turno-das-escavadoras")
-      reparentTo(key,"templo-yolskaariin");
-    if(x.id==="povoamento-proposto:cartorio-das-portas-raspadas")
-      reparentTo(key,"garganta");
+    // Todos os 16 núcleos foram auditados quanto à interioridade; `null` preserva proximidade.
+    const anchor=req(d.hierarchy,"ancoras_sementes").find(a=>a.id===x.id);
+    if(!anchor)throw new Error("Semente sem avaliação territorial: "+x.id);
+    if(anchor.pai){
+      reparentTo(key,anchor.pai);
+      const n=list.find(a=>a.id===placeByKey.get(key));
+      n.containmentEvidence={fonte:"data/atlas/aninhamento-territorial.json",
+        fundamento:anchor.justificativa,estatuto:"proposta_nao_canonica"};
+    }
     addEntry(key,"personagens",{sourceId:x.id+":personagem",name:x.personagem_central||"Figura proposta",
       status:"proposta",description:"Personagem e cena não canônicos vinculados à proposta.",
       source:"data/propostas/povoamento-regional-hack-carcaca.json"});
@@ -362,8 +410,7 @@ export function buildAtlasTree(d){
       source:"data/propostas/povoamento-regional-hack-carcaca.json"});
   }
   // Conteúdos das localidades hipotéticas: não transmitem estatuto factual ao seu lugar-pai.
-  for(const loc of req(d.ironwoodLocales,"lugares")
-       .filter(x=>x.ancora_canonica==="Ironwood"&&x.local_confirmado===false)){
+  for(const loc of req(d.ironwoodLocales,"lugares").filter(x=>x.local_confirmado===false)){
     const key="ironwood-proposta-"+loc.id.split(":").at(-1);
     addEntry(key,"culturas",{sourceId:loc.id+":rotina",name:"Prática cotidiana hipotética",
       status:"proposta",description:loc.rotina_cotidiana,
@@ -371,6 +418,22 @@ export function buildAtlasTree(d){
     addEntry(key,"conceitos",{sourceId:loc.id+":tensao",name:"Tensão social hipotética",
       status:"proposta",description:loc.tensao_social,
       source:"data/propostas/ironwood-eldroth-resistencia-hack.json"});
+  }
+  // Acrescentar as lacunas a TODOS os lugares concretos depois de montar as sublocalidades.
+  for(const key of placeNames)markUnspecifiedSettlements(key);
+  for(const loc of req(d.thargridSocial,"lugares")){
+    const key="thargrid-social-"+loc.id.split(":").at(-1);
+    addEntry(key,"culturas",{sourceId:loc.id+":rotina",name:"Prática coletiva hipotética",
+      status:"proposta",description:loc.rotina_cotidiana,
+      source:"data/propostas/thargrid-resistencia-cotidiano-hack.json"});
+  }
+  for(const loc of req(d.caatingaSocial,"comunidades")){
+    const slug=loc.id.split(":").at(-1);
+    const key=({"poco-sem-bandeira":"semente-poco-sem-bandeira",
+      "feira-ferragens":"semente-mercado-das-ferragens"})[slug]||"caatinga-social-"+slug;
+    addEntry(key,"culturas",{sourceId:loc.id+":cotidiano",name:"Rotina comunitária hipotética",
+      status:"proposta",description:loc.rotina,
+      source:"data/propostas/caatinga-rede-social-hack.json"});
   }
   // Dados de assentamentos coletivos: nunca calcular população, riqueza ou defesa.
   for(const x of Array.isArray(d.settlements)?d.settlements:[]){
@@ -410,6 +473,8 @@ export function buildAtlasTree(d){
       (nodeA.relations||=[]).push({to:nodeB.id,label});
     }
   }
+  // Uniformizar o mesmo esquema de conteúdo para TODOS os lugares, inclusive propostas.
+  for(const key of placeNames)for(const [ct] of CONTENT_TYPES)getBucket(key,ct);
   // Reordena filhos sem trocar IDs e prepara estatísticas e visibilidade dos vazios.
   const children=new Map();
   for(const n of list){if(n.parentId){const a=children.get(n.parentId)||[];a.push(n.id);children.set(n.parentId,a)}}
@@ -439,10 +504,14 @@ export function buildAtlasTree(d){
     ecologiaProposta:req(d.ecology,"criaturas").length,
     microespacosPropostos:req(d.seeds,"sementes").length,
     localidadesInternas:list.filter(x=>x.kind==="localidade").length,
+    localidadesTotais:list.filter(x=>["lugar","localidade"].includes(x.kind)&&x.placeType!=="ambito").length,
+    localidadesPendentes:list.filter(x=>x.kind==="lacuna_localidades").length,
+    propostasSociais:(req(d.ironwoodLocales,"lugares").length+req(d.thargridSocial,"lugares").length+
+      req(d.gargantaSocial,"lugares").length+req(d.caatingaSocial,"comunidades").length-2),
     folhas:list.filter(x=>x.kind==="registro").length,
     categoriasVazias:list.filter(x=>x.kind==="categoria"&&x.empty).length
   };
-  return {schema_version:"1.1",titulo:"Árvore da Carcaça",nodes:list,stats,
+  return {schema_version:"1.2",titulo:"Árvore da Carcaça",nodes:list,stats,
     aviso:"Setores de navegação não são novos territórios canônicos. Referências ao manuscrito, catálogo estruturado e propostas são estados diferentes.",
     links:{repositorio:"https://github.com/pedromaintenance/monstros-carcaca",
       leituraDoHack:"data/lore/hack-carcaca-dw-indice-tematico.json"}};
