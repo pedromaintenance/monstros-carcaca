@@ -7,6 +7,7 @@ import {tmpdir} from "node:os";
 import {buildAtlasTree} from "../site/atlas/atlas-tree.mjs";
 import {buildMacroIndex} from "../site/atlas/macro-atlas.mjs";
 import {buildMacroNetworks} from "../site/atlas/macro-networks.mjs";
+import {buildPhysicalGeography} from "../site/atlas/physical-geography.mjs";
 const file=p=>JSON.parse(readFileSync(new URL("../"+p,import.meta.url),"utf8"));
 const source={
   lore:file("data/lore/hack-carcaca-dw-indice-tematico.json"),
@@ -170,4 +171,72 @@ test("Atlas XXXIII: UI e artefato Pages carregam camadas e cronologia com JS vá
   const workflow=readFileSync(new URL("../.github/workflows/publicar-atlas-pages.yml",import.meta.url),"utf8");
   assert.match(workflow,/data\/atlas\/redes-historicas-ciclo33\.json/);
   assert.doesNotMatch(JSON.stringify(networksFile),/"latitude"\s*:|"longitude"\s*:/);
+});
+
+const physicalFile=file("data/atlas/geografia-fisica-ciclo34.json");
+const physical=buildPhysicalGeography(physicalFile,macro,atlas);
+test("Atlas XXXIV: geografia de Golzdov possui marcos, relações e perguntas rastreadas",()=>{
+  assert.deepEqual(physical.totais,{marcos:20,relacoes:12,questoes:9,semDirecao:5,semSetor:2});
+  assert.equal(physical.altera_canon,false);
+  assert.equal(physicalFile.aprovacao_autoral,false);
+  assert.ok(physical.pontos.every(p=>p.paginas.length>0));
+  assert.ok(physical.relacoes.every(r=>r.paginas.length>0));
+  assert.ok(physical.questoes.every(q=>q.resolvida===false));
+});
+test("Atlas XXXIV: direções documentadas não se tornam geometrias inventadas",()=>{
+  const find=id=>physical.pontos.find(x=>x.id==="geo-xxxiv:"+id);
+  assert.equal(find("cranio").orientacao,"leste");
+  assert.equal(find("foz").orientacao,"oeste");
+  assert.equal(find("montanhas-thargrid").orientacao,"norte");
+  assert.equal(find("ironwood").orientacao,"sul-relativo");
+  assert.equal(find("asa-direita").orientacao,"nao_fixado");
+  assert.equal(find("cauda").orientacao,"alem_abismo");
+  assert.equal(find("grama").orientacao,"nao_fixado");
+  assert.ok(!find("coluna-dorsal").lugar_id);
+  assert.equal(find("coluna-dorsal").setores.length,0);
+  assert.doesNotMatch(JSON.stringify(physicalFile),/"latitude"\s*:|"longitude"\s*:|"coordinates"\s*:/);
+});
+test("Atlas XXXIV: Gualápolis e Boca são referências distintas; topologia Shadar aberta",()=>{
+  const g=physical.pontos.find(x=>x.id==="geo-xxxiv:gualapolis");
+  const b=physical.pontos.find(x=>x.id==="geo-xxxiv:boca-do-abismo");
+  assert.ok(g&&b);
+  assert.notEqual(g.lugar_id,b.lugar_id);
+  assert.equal(g.orientacao,"sul-relativo");
+  assert.equal(b.orientacao,"sul-relativo");
+  const conflict=physical.relacoes.find(x=>x.tipo==="topologia_contestada");
+  assert.equal(conflict.estado,"revisao_autoral");
+  assert.equal(conflict.de,"geo-xxxiv:shadar");
+  assert.equal(conflict.para,"geo-xxxiv:gualapolis");
+  assert.ok(physical.questoes.some(x=>x.id==="questao-xxxiv:shadar-guala"&&!x.resolvida));
+});
+test("Atlas XXXIV: o validador recusa invenções geográficas",()=>{
+  const bad=structuredClone(physicalFile);
+  bad.pontos[0].lugar_id="lugar-visual:inexistente";
+  assert.throws(()=>buildPhysicalGeography(bad,macro,atlas),/Lugar ausente/);
+  const bad2=structuredClone(physicalFile);
+  bad2.relacoes[0].para="geo-xxxiv:inexistente";
+  assert.throws(()=>buildPhysicalGeography(bad2,macro,atlas),/marco inexistente/);
+  const bad3=structuredClone(physicalFile);
+  bad3.questoes[0].resolvida=true;
+  assert.throws(()=>buildPhysicalGeography(bad3,macro,atlas),/Pergunta resolvida/);
+  const bad4=structuredClone(physicalFile);
+  bad4.pontos[0].orientacao="leste_inferido_por_asa";
+  assert.throws(()=>buildPhysicalGeography(bad4,macro,atlas),/Classificação física desconhecida/);
+});
+test("Atlas XXXIV: interface física do Pages é carregada e tem sintaxe de módulo válida",()=>{
+  const html=readFileSync(new URL("../site/atlas/index.html",import.meta.url),"utf8");
+  assert.match(html,/id="physicalGeo"/);
+  assert.match(html,/physical-geography-ui\.mjs/);
+  assert.match(html,/buildPhysicalGeography\(loaded\.physical,state\.macro,state\.atlas\)/);
+  assert.match(html,/initPhysicalGeography\(\$\("physicalGeo"\),state\.physical,macroDiveInto\)/);
+  const frontend=readFileSync(new URL("../site/atlas/physical-geography-ui.mjs",import.meta.url),"utf8");
+  assert.match(frontend,/data-phys-tab/);
+  assert.match(frontend,/Questões abertas/);
+  const workflow=readFileSync(new URL("../.github/workflows/publicar-atlas-pages.yml",import.meta.url),"utf8");
+  assert.match(workflow,/data\/atlas\/geografia-fisica-ciclo34\.json/);
+  const dir=mkdtempSync(join(tmpdir(),"phys-carcaca-"));
+  try{
+    const path=join(dir,"interface.mjs");writeFileSync(path,frontend,"utf8");
+    execFileSync(process.execPath,["--check",path],{stdio:"pipe"});
+  }finally{rmSync(dir,{recursive:true,force:true})}
 });
