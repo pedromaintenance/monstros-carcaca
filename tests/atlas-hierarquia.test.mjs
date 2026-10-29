@@ -13,7 +13,8 @@ const d={
   creatures:read("dist/carcaca/creatures.json"),
   seeds:read("data/propostas/povoamento-regional-hack-carcaca.json"),
   ecology:read("data/propostas/eldroth-ecologia-monstruosa-dw.json"),
-  statblocks:read("data/propostas/eldroth-fichas-dw-ciclo13.json")
+  statblocks:read("data/propostas/eldroth-fichas-dw-ciclo13.json"),
+  ironwoodLocales:read("data/propostas/ironwood-eldroth-resistencia-hack.json")
 };
 const t=buildAtlasTree(d);
 const lookup=new Map(t.nodes.map(n=>[n.id,n]));
@@ -33,7 +34,7 @@ test("atlas: contém todas as menções de lugares e os quatro IDs regionais ofi
   assert.equal(t.stats.ecologiaProposta,8);
   assert.equal(t.stats.microespacosPropostos,16);
   assert.equal(t.nodes.filter(n=>n.kind==="regiao").length,12);
-  assert.equal(t.nodes.filter(n=>n.kind==="lugar"&&n.sourceId?.startsWith("lore-hack:")&&n.pages?.length>0).length,20);
+  assert.equal(t.nodes.filter(n=>["lugar","localidade"].includes(n.kind)&&n.sourceId?.startsWith("lore-hack:")&&n.pages?.length>0).length,20);
   assert.equal(lookup.get("lugar-visual:shadar-riverie").regionKey,"shadar");
   assert.equal(lookup.get("lugar-visual:templo-do-crepusculo").regionKey,"cauda");
 });
@@ -81,10 +82,11 @@ test("atlas: povos marinhos não são demonizados pelo tipo de criatura",()=>{
   assert.ok(anc(kuo[0]).some(n=>n.contentType==="povos"));
 });
 test("atlas: núcleos são todos propostas, sem governos ou sítios fixos novos",()=>{
-  const seeds=t.nodes.filter(n=>n.kind==="lugar"&&n.sourceId?.startsWith("povoamento-proposto:"));
+  const seeds=t.nodes.filter(n=>["lugar","localidade"].includes(n.kind)&&n.sourceId?.startsWith("povoamento-proposto:"));
   assert.equal(seeds.length,16);
   assert.ok(seeds.every(n=>n.status==="proposta"&&n.approval===false));
-  assert.ok(seeds.every(n=>anc(n).some(x=>x.kind==="tipo"&&x.type==="nucleo")));
+  assert.ok(seeds.every(n=>n.placeType==="nucleo"));
+  assert.ok(seeds.some(n=>anc(n).some(x=>x.id==="lugar-visual:reino-sob-montanha")));
 });
 test("atlas: o item da foz permanece uma menção sem estatísticas inventadas",()=>{
   const item=t.nodes.find(n=>n.sourceId==="item:lanca-da-perdicao:referencia");
@@ -92,4 +94,52 @@ test("atlas: o item da foz permanece uma menção sem estatísticas inventadas",
   assert.ok(anc(item).some(n=>n.contentType==="itens"));
   assert.equal(item.itemCompleto,false);
   assert.equal(item.status,"manuscrito");
+});
+
+test("atlas: Ironwood agora contém o quinto nível de assentamento documentado",()=>{
+  const fort=lookup.get("lugar-visual:fortaleza-ranger-ironwood");
+  assert.ok(fort);
+  assert.equal(fort.kind,"localidade");
+  assert.equal(fort.placeType,"assentamento");
+  assert.equal(fort.parentId,"lugar-visual:ironwood");
+  assert.equal(fort.status,"manuscrito");
+  assert.equal(fort.derivadoDe,"lore-hack:ironwood");
+  const elara=t.nodes.find(n=>n.sourceId==="lore-hack:elara-stormoak");
+  assert.ok(elara);
+  assert.ok(anc(elara).some(n=>n.id===fort.id));
+  const rangers=t.nodes.find(n=>n.sourceId==="lore-hack:rangers-ironwood");
+  assert.ok(anc(rangers).some(n=>n.id===fort.id));
+  const micro=t.nodes.filter(n=>n.sourceId?.startsWith("ironwood-eldroth:lugar:")
+    &&anc(n).some(p=>p.id==="lugar-visual:ironwood"));
+  assert.equal(micro.length,2);
+  assert.ok(micro.every(n=>n.kind==="localidade"&&n.status==="proposta"&&n.approval===false));
+  assert.ok(t.nodes.some(n=>n.kind==="lacuna_localidades"&&n.parentId==="lugar-visual:ironwood"));
+});
+test("atlas: locais documentados podem estar dentro de lugares maiores",()=>{
+  const cases=[
+    ["reino-sob-montanha","montanhas-thargrid"],
+    ["templo-demeter","portomonte"],
+    ["templo-yolskaariin","garganta"],
+    ["arquivo-mortos-afogados","gualapolis"],
+    ["templo-da-lua","rio-ancestral"]
+  ];
+  for(const [child,parent] of cases){
+    const n=lookup.get("lugar-visual:"+child);
+    assert.equal(n?.parentId,"lugar-visual:"+parent);
+    assert.equal(n.status,"manuscrito");
+  }
+});
+test("atlas: hierarquia recursiva aceita microespaços mais profundos sem falsificar localização",()=>{
+  assert.equal(lookup.get("lugar-visual:semente-turno-das-escavadoras").parentId,
+    "lugar-visual:templo-yolskaariin");
+  assert.equal(lookup.get("lugar-visual:semente-conselho-dos-juramentos").parentId,
+    "lugar-visual:reino-sob-montanha");
+  const school=lookup.get("lugar-visual:semente-escola-do-caminho-verde");
+  assert.ok(school);
+  assert.ok(!anc(school).some(n=>n.id==="lugar-visual:ironwood"),
+    "A escola é PRÓXIMA a Ironwood, não um assentamento comprovadamente interno");
+  assert.ok(t.stats.localidadesInternas>=8);
+  const noVillages=t.nodes.filter(n=>n.parentId==="lugar-visual:ironwood"
+    &&n.kind==="localidade"&&/vila|cidade/i.test(n.label));
+  assert.equal(noVillages.length,0,"Não inventar cidades ou vilas de Ironwood");
 });
