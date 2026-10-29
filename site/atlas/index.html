@@ -134,6 +134,49 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .macro-scope{font-size:11px;color:#aeb7a8;border-left:2px solid #906f5f;padding-left:10px;margin:14px 0}
 @media(max-width:1050px){.macro-layout{grid-template-columns:1fr}.macro-detail{position:static;max-height:none}.macro-grid{grid-template-columns:repeat(2,1fr)}.macro-axes{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:650px){.macro-grid{grid-template-columns:1fr}.macro-card{min-height:0}.macro-axes{grid-template-columns:1fr}.macro-intro{display:block}}
+
+/* As redes são relações temáticas; este painel NÃO desenha fronteiras cartográficas. */
+.layer-wrap{border:1px solid #344339;border-radius:16px;background:#131b19;margin:18px 0 0;padding:20px}
+.layer-top{display:flex;justify-content:space-between;align-items:start;gap:12px}
+.layer-top h3,.time-head h3{font:500 21px Cinzel,serif;color:#e7e3d8;margin:4px 0 8px}
+.layer-top p,.time-head p{font-size:12px;color:var(--muted);margin:0;max-width:670px;line-height:1.7}
+.layer-tag{color:#bfa781;border:1px solid #605447;padding:6px 10px;border-radius:7px;font-size:10px;white-space:nowrap}
+.layer-tabs{display:flex;flex-wrap:wrap;gap:7px;margin:20px 0}
+.layer-chip{border:1px solid #3c4b3f;background:#202822;border-radius:8px;padding:9px 11px;text-align:left;font-size:11px}
+.layer-chip:hover,.layer-chip.on{border-color:#b8a077;background:#3c3428;color:#f0e1bd}
+.layer-layout{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:14px}
+.layer-main,.layer-secondary{border:1px solid #304037;border-radius:12px;padding:18px;background:#18201d}
+.layer-main h4{font:500 17px Cinzel,serif;margin:0 0 10px}
+.layer-main>p{color:#b6bdb1;font-size:12px;line-height:1.7}
+.layer-small{display:flex;gap:8px;flex-wrap:wrap;color:#a1b29f;font-size:10px;margin:15px 0 20px}
+.layer-small span{border:1px solid #425147;border-radius:6px;padding:4px 7px}
+.layer-subheading{text-transform:uppercase;letter-spacing:1.2px;color:#cdbb92;font-weight:700;font-size:10px;margin:16px 0 10px}
+.layer-regions{display:flex;flex-wrap:wrap;gap:6px}
+.layer-region{border:1px solid #45594b;background:#243029;padding:7px 10px;border-radius:7px;color:#cee1d0;font-size:11px}
+.layer-relation{border-left:2px solid #746c50;padding:8px 13px;background:#202720;margin:7px 0;border-radius:0 8px 8px 0}
+.layer-relation strong,.sphere strong,.question strong{font-size:12px;display:block;font-weight:600}
+.layer-relation small,.sphere small,.question small{display:block;color:#98aa9c;font-size:10px;margin-top:3px}
+.layer-relation p,.sphere p,.question p{font-size:11px;line-height:1.6;color:#a9b7a9;margin:6px 0 0}
+.layer-warning{border-left:3px solid #a16c61;color:#dcc4b5!important;background:#3228215c;padding:9px 12px;margin-top:16px!important}
+.layer-scroll{max-height:340px;overflow-y:auto;scrollbar-color:#536552 transparent}
+.sphere,.question{padding:11px;border:1px solid #34443a;background:#202a24;border-radius:9px;margin-bottom:7px}
+.sphere span{display:block;color:#dbc093;font-size:11px;margin-top:4px}
+.question{background:#272420}
+.layer-muted{color:#9daa9c;font-size:11px;line-height:1.6}
+.time-rail{border-top:1px solid #394940;margin-top:20px;padding-top:20px}
+.time-head{display:flex;justify-content:space-between;gap:22px;align-items:start}
+.time-lim{min-width:210px;color:#d1c1a1;font-size:11px}
+.time-lim label{display:block;margin-bottom:10px}
+.time-lim output{color:#e5d7b9;font-weight:700}
+.time-lim input{width:100%;accent-color:#b49969;cursor:pointer}
+.time-events{margin:18px 0 0;max-height:385px;overflow-y:auto;scrollbar-color:#536552 transparent;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.time-event{display:grid;grid-template-columns:74px 1fr;gap:11px;border:1px solid #334139;background:#1c2520;border-radius:9px;padding:12px}
+.time-year{color:#d9c093;font:500 13px Cinzel,serif}
+.time-event strong{font-size:11px;display:block}
+.time-event small{font-size:10px;color:#899d90;display:block;margin-top:5px}
+.time-event p{font-size:10px;color:#b6a992;margin:5px 0 0}
+@media(max-width:880px){.layer-layout{grid-template-columns:1fr}.layer-tag{display:none}}
+@media(max-width:650px){.layer-wrap{padding:13px}.time-head{display:block}.time-lim{margin-top:18px}.time-events{grid-template-columns:1fr}}
 @media(max-width:1100px){.site{padding:0 18px 35px}.counters{grid-template-columns:repeat(3,1fr)}.workspace{grid-template-columns:minmax(290px,43%) minmax(300px,1fr)}.details{padding:19px 20px}}
 @media(max-width:760px){.hero{padding:25px 0}.hero .symbol{display:none}h1{font-size:34px}.counters{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.counter{padding:10px}.counter strong{font-size:20px}.counter span{font-size:9px}.workspace{grid-template-columns:1fr}.panel{min-height:0}.tree-scroll{height:390px;min-height:0}.details{max-height:none;min-height:360px}.topline{font-size:9px;gap:10px;letter-spacing:1px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
@@ -166,6 +209,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   </div>
   <div class="macro-group"><h3 style="font-size:18px;margin-bottom:12px">Eixos que atravessam o continente</h3>
   <div id="macroAxes" class="macro-axes"></div></div>
+  <section id="macroLayers" class="layer-wrap" aria-label="Redes territoriais, esferas de poder e cronologia"><p class="layer-muted">Carregando as redes continentais e o registro histórico...</p></section>
   <div class="macro-scope">A posição dos cartões não constitui um mapa geográfico nem indica distância. Cada âncora é uma referência rastreável. A falta de assentamentos individualizados é uma lacuna, não a prova de que não existem.</div>
 </section>
 <main class="workspace hidden" id="treeWorkspace">
@@ -197,6 +241,8 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 <script type="module">
 import {buildAtlasTree,CONTENT_TYPES,PLACE_TYPES} from "./atlas-tree.mjs";
 import {buildMacroIndex} from "./macro-atlas.mjs";
+import {buildMacroNetworks} from "./macro-networks.mjs";
+import {initMacroLayers} from "./macro-layers-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -213,7 +259,8 @@ const paths={
   gargantaSocial:"data/propostas/garganta-rio-ancestral-social-hack.json",
   caatingaSocial:"data/propostas/caatinga-rede-social-hack.json",
   hierarchy:"data/atlas/aninhamento-territorial.json",
-  macro:"data/atlas/macrorregioes-carcaca.json"
+  macro:"data/atlas/macrorregioes-carcaca.json",
+  networks:"data/atlas/redes-historicas-ciclo33.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -523,9 +570,11 @@ $("export").addEventListener("click",()=>{
     const loaded=Object.fromEntries(entries);
     state.atlas=buildAtlasTree(loaded);
     state.macro=buildMacroIndex(loaded.macro,state.atlas);
+    state.networks=buildMacroNetworks(loaded.networks,state.macro);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
+    initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
     $("export").disabled=false;
     const hash=decodeURIComponent(location.hash.slice(1));
@@ -536,6 +585,7 @@ $("export").addEventListener("click",()=>{
     $("tree").innerHTML='<div class="loader"><strong>Falha ao carregar o atlas.</strong><p>'+esc(e.message)+'</p><p>O arquivo HTML precisa ser servido pelo Pages com as fontes em <code>dados/</code>.</p></div>';
     $("macroCards").innerHTML='<div class="loader">Não foi possível montar a visão macro. Consulte a execução do Pages.</div>';
     $("macroDetails").innerHTML='<div class="loader">'+esc(e.message)+'</div>';
+    $("macroLayers").textContent="As redes históricas não puderam ser carregadas.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
