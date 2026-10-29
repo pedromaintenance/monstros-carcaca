@@ -1,0 +1,579 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Atlas macrorregional da Carcaça — camada de orientação",
+  "estado": "sintese_editorial_de_fontes",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "nao_inferir": [
+    "coordenadas",
+    "distancias",
+    "fronteiras politicas",
+    "cidades nao nomeadas",
+    "soberanias",
+    "rotas praticaveis",
+    "ocorrencias de monstros"
+  ],
+  "fontes": [
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+    "data/regioes_carcaca.json",
+    "data/lugares_carcaca.json",
+    "data/lore/hack-carcaca-dw-indice-tematico.json",
+    "data/atlas/aninhamento-territorial.json"
+  ],
+  "eixos": [
+    {
+      "id": "anatomia",
+      "titulo": "Golzdov é o continente",
+      "descricao": "Crânio, asa direita, montanhas e cauda são referências anatômicas; não estabelecem distâncias nem projeção cartográfica.",
+      "paginas": [
+        2,
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "rio",
+      "titulo": "O rio como veia material",
+      "descricao": "Circulação, tributo e controle político estruturam o Rio Ancestral e a foz.",
+      "paginas": [
+        4,
+        5,
+        6
+      ]
+    },
+    {
+      "id": "corte",
+      "titulo": "Corte e ocupação",
+      "descricao": "Poder descentralizado dos Lordes sobre lugares e rotas, com conflitos e rivalidades; não existe uma administração uniforme em todo território.",
+      "paginas": [
+        2,
+        5,
+        6,
+        7
+      ]
+    },
+    {
+      "id": "resistencia",
+      "titulo": "Resistência sem centro único",
+      "descricao": "Montanhas, florestas, aldeias e redes autônomas cooperam sem governo supremo.",
+      "paginas": [
+        6,
+        7
+      ]
+    },
+    {
+      "id": "mar",
+      "titulo": "Além Sul e fronteira marítima",
+      "descricao": "Caatinga, costa e águas se influenciam, embora não estejam sob uma única ordem política.",
+      "paginas": [
+        5,
+        14,
+        15
+      ]
+    },
+    {
+      "id": "abismo",
+      "titulo": "O Abismo como ruptura entre mundos",
+      "descricao": "Guerra demoníaca reorientou palácios, alianças e a defesa da foz.",
+      "paginas": [
+        5,
+        6,
+        8,
+        9
+      ]
+    }
+  ],
+  "setores": [
+    {
+      "id": "garganta",
+      "titulo": "O Crânio e a Garganta",
+      "anatomia": "Crânio de Golzdov, no extremo leste",
+      "perfil": "Fortificações, minas, escavações Yokai e controle de passagens",
+      "poder": "Ocupação shadow fey comandada por Varys Duskveil",
+      "paginas": [
+        2,
+        3,
+        4
+      ],
+      "ancoras": [
+        {
+          "lugar_id": "lugar-visual:garganta",
+          "funcao": "Cidade-fortaleza e centro de extração",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:templo-yolskaariin",
+          "funcao": "Templo solar corrompido",
+          "estado": "documentado"
+        }
+      ],
+      "povos": [
+        "Humanos da Garganta",
+        "Vestígios históricos Yokai",
+        "Shadow fey ocupantes"
+      ],
+      "macro_pendencias": [
+        "Identificar outras cidades e minas do extremo leste sem presumir que façam parte de Garganta.",
+        "Situar Dunhaven e Harlowe em uma hierarquia territorial verificável, sem inferir coordenadas.",
+        "Determinar áreas de vestígios Yokai e suas relações com as escavações existentes."
+      ],
+      "estado_cobertura": "intermediaria"
+    },
+    {
+      "id": "rio",
+      "titulo": "O Eixo do Rio Ancestral",
+      "anatomia": "Veia fluvial do continente",
+      "perfil": "Navegação, comércio, tributos, travessias e controle colonial",
+      "poder": "Cidades sob domínio da Corte; Drakport associada a Lady Morwen Nightshade",
+      "paginas": [
+        4,
+        5,
+        11
+      ],
+      "ancoras": [
+        {
+          "lugar_id": "lugar-visual:rio-ancestral",
+          "funcao": "Eixo navegável continental",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:drakport",
+          "funcao": "Cidade de escravidão e controle",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:templo-da-lua",
+          "funcao": "Local de poder insular, posição precisa desconhecida",
+          "estado": "documentado"
+        }
+      ],
+      "povos": [
+        "Povos ribeirinhos não individualizados",
+        "Shadow fey ocupantes"
+      ],
+      "macro_pendencias": [
+        "Localizar comunidades fluviais e seus limites de jurisdição.",
+        "Não posicionar a ilha do Templo da Lua em um trecho específico sem fonte.",
+        "Distinguir rotas de comércio comprovadas de cobranças e travessias hipotéticas."
+      ],
+      "estado_cobertura": "intermediaria"
+    },
+    {
+      "id": "costa",
+      "titulo": "Costa Sul e Mar de Sangue",
+      "anatomia": "Costa e arquipélagos do Além Sul",
+      "perfil": "Agricultura costeira, assentamentos insulares e confronto com forças submarinas",
+      "poder": "Fora da ocupação feérica direta; conflitos terrestres e ataques sacrificiais marítimos",
+      "paginas": [
+        5,
+        12,
+        14,
+        15
+      ],
+      "ancoras": [
+        {
+          "lugar_id": "lugar-visual:portomonte",
+          "funcao": "Assentamento costeiro e centro comercial",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:templo-demeter",
+          "funcao": "Purificação ritual da água para agricultura",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:ilhas-monasticas",
+          "funcao": "Conjunto insular de comunidades tortles e tabaxis",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:cavernas-kuo-toa",
+          "funcao": "Conjunto de cavernas habitadas pelos kuo-toa",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:mar-de-sangue",
+          "funcao": "Mar corrompido e frente marítima",
+          "estado": "documentado"
+        }
+      ],
+      "povos": [
+        "Humanos costeiros",
+        "Tortles e tabaxis das ilhas",
+        "Kuo-Toa",
+        "Abissais marinhos"
+      ],
+      "macro_pendencias": [
+        "Individualizar ilhas e cidades submarinas, sem tratá-las como um único assentamento.",
+        "Nomear assentamentos menores, cultivos e portos somente após revisão de fonte.",
+        "Não inferir água potável para consumo humano a partir de purificação agrícola."
+      ],
+      "estado_cobertura": "densa"
+    },
+    {
+      "id": "caatinga",
+      "titulo": "Caatinga do Além Sul",
+      "anatomia": "Terras áridas do Além Sul",
+      "perfil": "Comunidades dispersas, recursos hídricos disputados, memória orc e incursões regionais",
+      "poder": "Sem colonização feérica direta documentada; conflitos próprios entre comunidades",
+      "paginas": [
+        5,
+        12,
+        13
+      ],
+      "ancoras": [
+        {
+          "lugar_id": "lugar-visual:caatinga-bioma",
+          "funcao": "Terras áridas e zonas de deslocamento",
+          "estado": "documentado"
+        }
+      ],
+      "povos": [
+        "Orcs da Caatinga",
+        "Humanos e outros exilados"
+      ],
+      "macro_pendencias": [
+        "Nenhuma cidade individual consta no recorte canônico do catálogo.",
+        "Distinguir os grupos envolvidos em conflitos das culturas orcs em geral.",
+        "Definir, mediante aprovação, posição das fontes de água e passagens propostas."
+      ],
+      "estado_cobertura": "inicial"
+    },
+    {
+      "id": "eldroth",
+      "titulo": "Eldroth e Vandar",
+      "anatomia": "Asa direita de Golzdov",
+      "perfil": "Floresta escurecida, vigilância feérica e ruínas ocupadas por mortos-vivos",
+      "poder": "Lady Sylara Nightwhisper vigia Eldroth; Lord Damaris Blackthorn ocupa Vandar",
+      "paginas": [
+        5
+      ],
+      "ancoras": [
+        {
+          "lugar_id": "lugar-visual:floresta-eldroth",
+          "funcao": "Bioma ocupado, com resistência clandestina",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:vandar",
+          "funcao": "Cidade antiga em ruínas e base de mortos-vivos",
+          "estado": "documentado"
+        }
+      ],
+      "povos": [
+        "Elfos da Floresta",
+        "Druidas clandestinos",
+        "Ocupantes shadow fey"
+      ],
+      "macro_pendencias": [
+        "Não equiparar todo microespaço hipotético de Eldroth a assentamento existente.",
+        "Separar o território de Eldroth de Ironwood e da autoridade de Thargrid.",
+        "Individualizar refúgios e rotas de resistência sem revelar um sistema imaginado de coordenadas."
+      ],
+      "estado_cobertura": "intermediaria"
+    },
+    {
+      "id": "thargrid",
+      "titulo": "Montanhas de Thargrid e Ironwood",
+      "anatomia": "Montanhas do norte e fortaleza florestal ao sul delas",
+      "perfil": "Fortalezas da resistência, clãs montanheses e redes clandestinas",
+      "poder": "Reino Sob a Montanha independente; Ironwood é principal força irregular sob Elara Stormoak",
+      "paginas": [
+        6,
+        7
+      ],
+      "ancoras": [
+        {
+          "lugar_id": "lugar-visual:montanhas-thargrid",
+          "funcao": "Bioma montanhoso e passagens",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:reino-sob-montanha",
+          "funcao": "Reino-refúgio e principal polo militar da resistência",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:ironwood",
+          "funcao": "Território florestal da resistência",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:fortaleza-ranger-ironwood",
+          "funcao": "Fortaleza ranger dentro de Ironwood",
+          "estado": "documentado"
+        }
+      ],
+      "povos": [
+        "Anões de Thargrid",
+        "Gigantes e draconatos montanheses",
+        "Rangers de Ironwood"
+      ],
+      "macro_pendencias": [
+        "Não confundir aliança militar com unificação de jurisdição entre Ironwood e Thargrid.",
+        "Individualizar aldeias livres, sem pressupor quantidades ou locais definidos.",
+        "Distinguir os assentamentos da montanha dos postos rangers na floresta."
+      ],
+      "estado_cobertura": "intermediaria"
+    },
+    {
+      "id": "foz",
+      "titulo": "A Foz e o Abismo",
+      "anatomia": "Extremo oeste; queda colossal do Rio Ancestral",
+      "perfil": "Ruptura entre mundos, defesa contra demônios e memória submersa",
+      "poder": "Ulorian Uln-Shayr ocupa a Boca do Abismo; antiga sede da Rainha destruída/abandonada",
+      "paginas": [
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "ancoras": [
+        {
+          "lugar_id": "lugar-visual:abismo",
+          "funcao": "Queda do rio e passagem de forças demoníacas",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:gualapolis",
+          "funcao": "Antiga capital nativa, hoje sob estruturas posteriores",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:boca-do-abismo",
+          "funcao": "Fortaleza e aliança militar tensa",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:arquivo-mortos-afogados",
+          "funcao": "Biblioteca Yokai submersa",
+          "estado": "documentado"
+        },
+        {
+          "lugar_id": "lugar-visual:templo-das-sombras",
+          "funcao": "Antigo palácio ritual arruinado",
+          "estado": "documentado"
+        }
+      ],
+      "povos": [
+        "Comunidades nativas ligadas à foz",
+        "Shadow fey do domínio de Ulorian",
+        "Ameaça demoníaca do Abismo"
+      ],
+      "macro_pendencias": [
+        "Revisar a relação espacial contraditória entre Gualápolis, Boca do Abismo e Shadar-Riverie.",
+        "Não confundir incursões demoníacas com povos abissais marinhos.",
+        "Individualizar assentamentos civis e pontos defensivos sem antecipar desfechos da guerra."
+      ],
+      "estado_cobertura": "densa"
+    },
+    {
+      "id": "shadar",
+      "titulo": "Shadar-Riverie e a aristocracia",
+      "anatomia": "Geografia precisa sob revisão, com vínculos à foz",
+      "perfil": "Centro aristocrático, diplomacia, informação e controle de rotas",
+      "poder": "Casa Shayr e aristocracia shadow fey",
+      "paginas": [
+        6,
+        19,
+        20
+      ],
+      "ancoras": [
+        {
+          "lugar_id": "lugar-visual:shadar-riverie",
+          "funcao": "Centro de poder colonial e diplomático",
+          "estado": "documentado"
+        }
+      ],
+      "povos": [
+        "Shadow fey",
+        "Casas nobres e agentes da Corte",
+        "Comunidades mediadas por relações diplomáticas"
+      ],
+      "macro_pendencias": [
+        "Resolver a topologia que sobrepõe Shadar-Riverie à antiga Gualápolis em trecho do manuscrito.",
+        "Separar autoridade da Casa Shayr de instituições não demonstradas.",
+        "Registrar bairros e assentamentos associados somente após evidência ou aprovação."
+      ],
+      "estado_cobertura": "inicial"
+    },
+    {
+      "id": "grama",
+      "titulo": "Condado de Grama-Cortada",
+      "anatomia": "Localização continental ainda não fixada em mapa",
+      "perfil": "Comunidades hobbits, agricultura, acolhimento e memória oral",
+      "poder": "Autonomia comunitária descrita, sem governo territorial único confirmado",
+      "paginas": [
+        2,
+        18,
+        19,
+        23
+      ],
+      "ancoras": [
+        {
+          "lugar_id": "lugar-visual:grama-cortada",
+          "funcao": "Condado agrícola e conjunto de comunidades",
+          "estado": "documentado"
+        }
+      ],
+      "povos": [
+        "Hobbits e comunidades rurais"
+      ],
+      "macro_pendencias": [
+        "Definir posição do condado no continente sem inferência cartográfica.",
+        "Individualizar aldeias e redes agrícolas sem inventar cidades canônicas.",
+        "Distinguir estruturas tradicionais de governos formais não estabelecidos."
+      ],
+      "estado_cobertura": "inicial"
+    },
+    {
+      "id": "cauda",
+      "titulo": "Cauda e Templo do Crepúsculo",
+      "anatomia": "Cauda de Golzdov, além do Abismo",
+      "perfil": "Palácio central de Sarastra, rituais e corte refugiada",
+      "poder": "Sarastra Aestruum, Rainha da Noite",
+      "paginas": [
+        5,
+        6,
+        8,
+        10
+      ],
+      "ancoras": [
+        {
+          "lugar_id": "lugar-visual:templo-do-crepusculo",
+          "funcao": "Palácio da Rainha da Noite",
+          "estado": "documentado"
+        }
+      ],
+      "povos": [
+        "Corte shadow fey e seus séquitos"
+      ],
+      "macro_pendencias": [
+        "Não inventar uma cidade ou economia ao redor do Templo do Crepúsculo.",
+        "Individualizar estruturas adjacentes e corredores de acesso com futura autoria.",
+        "Registrar a passagem a partir da foz sem inferir a existência de ponte ou rota aberta."
+      ],
+      "estado_cobertura": "inicial"
+    },
+    {
+      "id": "azuis",
+      "titulo": "Águas azuis e fronteira marítima",
+      "anatomia": "Mar aberto além das águas corrompidas",
+      "perfil": "Cidades submarinas referidas e fronteira dinâmica com o Mar de Sangue",
+      "poder": "Autonomias dos povos do mar; distribuição de governos desconhecida",
+      "paginas": [
+        14,
+        15
+      ],
+      "ancoras": [
+        {
+          "lugar_id": "lugar-visual:aguas-azuis",
+          "funcao": "Zona marítima além do Mar de Sangue",
+          "estado": "documentado"
+        }
+      ],
+      "povos": [
+        "Tritões",
+        "Sereias"
+      ],
+      "macro_pendencias": [
+        "Nenhuma cidade azul individual está localizada ou nomeada nesta versão.",
+        "Definir alcance variável da fronteira sem coordenadas ou uma linha cartográfica inventada.",
+        "Diferenciar presença de povos marinhos de governos únicos ou alianças universais."
+      ],
+      "estado_cobertura": "inicial"
+    }
+  ],
+  "conexoes": [
+    {
+      "id": "macro-eixo:rio-foz-hidrografia",
+      "de": "rio",
+      "para": "foz",
+      "tipo": "hidrografia",
+      "descricao": "O Rio Ancestral termina na queda do Abismo.",
+      "paginas": [
+        5
+      ],
+      "estado": "manuscrito"
+    },
+    {
+      "id": "macro-eixo:caatinga-costa-conflito_regional",
+      "de": "caatinga",
+      "para": "costa",
+      "tipo": "conflito_regional",
+      "descricao": "Incursões das terras áridas sobre as pradarias agrícolas costeiras.",
+      "paginas": [
+        5
+      ],
+      "estado": "manuscrito"
+    },
+    {
+      "id": "macro-eixo:eldroth-costa-deslocamento_humano",
+      "de": "eldroth",
+      "para": "costa",
+      "tipo": "deslocamento_humano",
+      "descricao": "Refugiados de Eldroth estão presentes em alguns grandes assentamentos costeiros; locais receptores não são especificados.",
+      "paginas": [
+        5
+      ],
+      "estado": "manuscrito"
+    },
+    {
+      "id": "macro-eixo:costa-azuis-fronteira_maritima",
+      "de": "costa",
+      "para": "azuis",
+      "tipo": "fronteira_maritima",
+      "descricao": "Fronteira entre o Mar de Sangue e águas não corrompidas, sem linha fixa estabelecida.",
+      "paginas": [
+        14,
+        15
+      ],
+      "estado": "manuscrito"
+    },
+    {
+      "id": "macro-eixo:foz-cauda-mudanca_historica",
+      "de": "foz",
+      "para": "cauda",
+      "tipo": "mudanca_historica",
+      "descricao": "Após invasão demoníaca, a Rainha abandona o antigo templo e estabelece seu palácio na cauda.",
+      "paginas": [
+        5,
+        6,
+        8
+      ],
+      "estado": "manuscrito"
+    },
+    {
+      "id": "macro-eixo:thargrid-eldroth-cooperacao_resistencia",
+      "de": "thargrid",
+      "para": "eldroth",
+      "tipo": "cooperacao_resistencia",
+      "descricao": "Redes de resistência, refúgio e guerrilha dialogam entre montanhas e florestas; não implica estrada ou fronteira comum.",
+      "paginas": [
+        6,
+        7
+      ],
+      "estado": "referencia_politica"
+    },
+    {
+      "id": "macro-eixo:foz-shadar-topologia_em_revisao",
+      "de": "foz",
+      "para": "shadar",
+      "tipo": "topologia_em_revisao",
+      "descricao": "Manuscrito associa Shadar-Riverie à antiga Gualápolis e também descreve Ulorian erguendo a Boca do Abismo sobre a capital nativa. Não reconciliar automaticamente.",
+      "paginas": [
+        6
+      ],
+      "estado": "indeterminado"
+    }
+  ],
+  "observacoes": [
+    "Camada macro usa os 11 setores geográficos atuais de navegação e não confere novos IDs oficiais a eles.",
+    "A pasta transversal do atlas não é uma região física e não entra nesta lista.",
+    "O vínculo entre Shadar-Riverie e Gualápolis permanece inconsistente no manuscrito; a interface exibirá a divergência.",
+    "Local de poder descrito não equivale a cidade ou assentamento.",
+    "Relatos de forças demoníacas no Abismo não são a mesma categoria dos abissais marinhos."
+  ]
+}
