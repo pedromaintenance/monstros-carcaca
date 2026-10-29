@@ -1,0 +1,295 @@
+{
+  "by_prioridade": {
+    "alta": [
+      "worldbuilding-xxvi:decisao:continuidade",
+      "worldbuilding-xxvi:decisao:distribuicao",
+      "worldbuilding-xxvi:decisao:mecanismo",
+      "worldbuilding-xxvi:decisao:responsabilidade",
+      "worldbuilding-xxvi:decisao:responsaveis-rito"
+    ],
+    "baixa": [
+      "worldbuilding-xxvi:decisao:comercio"
+    ],
+    "critica": [
+      "worldbuilding-xxvi:decisao:agua-domestica",
+      "worldbuilding-xxvi:decisao:autoridade",
+      "worldbuilding-xxvi:decisao:templo"
+    ],
+    "media": [
+      "worldbuilding-xxvi:decisao:auxiliares",
+      "worldbuilding-xxvi:decisao:cultivo",
+      "worldbuilding-xxvi:decisao:instrumentos"
+    ]
+  },
+  "by_dominio": {
+    "agua-domestica": [
+      "worldbuilding-xxvi:decisao:agua-domestica"
+    ],
+    "autoridade": [
+      "worldbuilding-xxvi:decisao:autoridade"
+    ],
+    "auxiliares": [
+      "worldbuilding-xxvi:decisao:auxiliares"
+    ],
+    "comercio": [
+      "worldbuilding-xxvi:decisao:comercio"
+    ],
+    "continuidade": [
+      "worldbuilding-xxvi:decisao:continuidade"
+    ],
+    "cultivo": [
+      "worldbuilding-xxvi:decisao:cultivo"
+    ],
+    "distribuicao": [
+      "worldbuilding-xxvi:decisao:distribuicao"
+    ],
+    "instrumentos": [
+      "worldbuilding-xxvi:decisao:instrumentos"
+    ],
+    "mecanismo": [
+      "worldbuilding-xxvi:decisao:mecanismo"
+    ],
+    "responsabilidade": [
+      "worldbuilding-xxvi:decisao:responsabilidade"
+    ],
+    "responsaveis-rito": [
+      "worldbuilding-xxvi:decisao:responsaveis-rito"
+    ],
+    "templo": [
+      "worldbuilding-xxvi:decisao:templo"
+    ]
+  },
+  "by_pergunta": {
+    "worldbuilding-xxv:pergunta:agua-domestica": [
+      "worldbuilding-xxvi:decisao:agua-domestica"
+    ],
+    "worldbuilding-xxv:pergunta:autoridade": [
+      "worldbuilding-xxvi:decisao:autoridade"
+    ],
+    "worldbuilding-xxv:pergunta:auxiliares": [
+      "worldbuilding-xxvi:decisao:auxiliares"
+    ],
+    "worldbuilding-xxv:pergunta:comercio": [
+      "worldbuilding-xxvi:decisao:comercio"
+    ],
+    "worldbuilding-xxv:pergunta:continuidade": [
+      "worldbuilding-xxvi:decisao:continuidade"
+    ],
+    "worldbuilding-xxv:pergunta:cultivo": [
+      "worldbuilding-xxvi:decisao:cultivo"
+    ],
+    "worldbuilding-xxv:pergunta:distribuicao": [
+      "worldbuilding-xxvi:decisao:distribuicao"
+    ],
+    "worldbuilding-xxv:pergunta:manutencao": [
+      "worldbuilding-xxvi:decisao:instrumentos"
+    ],
+    "worldbuilding-xxv:pergunta:processo": [
+      "worldbuilding-xxvi:decisao:mecanismo"
+    ],
+    "worldbuilding-xxv:pergunta:responsabilidade": [
+      "worldbuilding-xxvi:decisao:responsabilidade"
+    ],
+    "worldbuilding-xxv:pergunta:sacerdotes": [
+      "worldbuilding-xxvi:decisao:responsaveis-rito"
+    ],
+    "worldbuilding-xxv:pergunta:templo": [
+      "worldbuilding-xxvi:decisao:templo"
+    ]
+  },
+  "by_estado": {
+    "aguarda_decisao_expressa": [
+      "worldbuilding-xxvi:decisao:agua-domestica",
+      "worldbuilding-xxvi:decisao:autoridade",
+      "worldbuilding-xxvi:decisao:auxiliares",
+      "worldbuilding-xxvi:decisao:comercio",
+      "worldbuilding-xxvi:decisao:continuidade",
+      "worldbuilding-xxvi:decisao:cultivo",
+      "worldbuilding-xxvi:decisao:distribuicao",
+      "worldbuilding-xxvi:decisao:instrumentos",
+      "worldbuilding-xxvi:decisao:mecanismo",
+      "worldbuilding-xxvi:decisao:responsabilidade",
+      "worldbuilding-xxvi:decisao:responsaveis-rito",
+      "worldbuilding-xxvi:decisao:templo"
+    ]
+  },
+  "by_depende_de": {
+    "worldbuilding-xxvi:decisao:autoridade": [
+      "worldbuilding-xxvi:decisao:distribuicao",
+      "worldbuilding-xxvi:decisao:responsabilidade",
+      "worldbuilding-xxvi:decisao:templo"
+    ],
+    "worldbuilding-xxvi:decisao:continuidade": [
+      "worldbuilding-xxvi:decisao:responsabilidade"
+    ],
+    "worldbuilding-xxvi:decisao:cultivo": [
+      "worldbuilding-xxvi:decisao:comercio"
+    ],
+    "worldbuilding-xxvi:decisao:distribuicao": [
+      "worldbuilding-xxvi:decisao:comercio"
+    ],
+    "worldbuilding-xxvi:decisao:mecanismo": [
+      "worldbuilding-xxvi:decisao:auxiliares",
+      "worldbuilding-xxvi:decisao:continuidade",
+      "worldbuilding-xxvi:decisao:instrumentos"
+    ],
+    "worldbuilding-xxvi:decisao:responsaveis-rito": [
+      "worldbuilding-xxvi:decisao:auxiliares",
+      "worldbuilding-xxvi:decisao:mecanismo"
+    ],
+    "worldbuilding-xxvi:decisao:templo": [
+      "worldbuilding-xxvi:decisao:responsabilidade",
+      "worldbuilding-xxvi:decisao:responsaveis-rito"
+    ]
+  },
+  "by_decisao": {
+    "worldbuilding-xxvi:decisao:agua-domestica": [
+      "worldbuilding-xxvi:opcao:agua-domestica:apenas-agricola",
+      "worldbuilding-xxvi:opcao:agua-domestica:indecidido",
+      "worldbuilding-xxvi:opcao:agua-domestica:potabilidade-a-definir"
+    ],
+    "worldbuilding-xxvi:decisao:autoridade": [
+      "worldbuilding-xxvi:opcao:autoridade:casas",
+      "worldbuilding-xxvi:opcao:autoridade:conselho",
+      "worldbuilding-xxvi:opcao:autoridade:outro",
+      "worldbuilding-xxvi:opcao:autoridade:pactos",
+      "worldbuilding-xxvi:opcao:autoridade:templo-consultivo"
+    ],
+    "worldbuilding-xxvi:decisao:auxiliares": [
+      "worldbuilding-xxvi:opcao:auxiliares:em-aberto",
+      "worldbuilding-xxvi:opcao:auxiliares:reconhecido",
+      "worldbuilding-xxvi:opcao:auxiliares:rotativo"
+    ],
+    "worldbuilding-xxvi:decisao:comercio": [
+      "worldbuilding-xxvi:opcao:comercio:consumo-local",
+      "worldbuilding-xxvi:opcao:comercio:em-aberto",
+      "worldbuilding-xxvi:opcao:comercio:excedente"
+    ],
+    "worldbuilding-xxvi:decisao:continuidade": [
+      "worldbuilding-xxvi:opcao:continuidade:condicionada",
+      "worldbuilding-xxvi:opcao:continuidade:estavel",
+      "worldbuilding-xxvi:opcao:continuidade:indeterminada"
+    ],
+    "worldbuilding-xxvi:decisao:cultivo": [
+      "worldbuilding-xxvi:opcao:cultivo:catalogar",
+      "worldbuilding-xxvi:opcao:cultivo:diverso",
+      "worldbuilding-xxvi:opcao:cultivo:lacuna"
+    ],
+    "worldbuilding-xxvi:decisao:distribuicao": [
+      "worldbuilding-xxvi:opcao:distribuicao:deliberacao",
+      "worldbuilding-xxvi:opcao:distribuicao:familias",
+      "worldbuilding-xxvi:opcao:distribuicao:templo"
+    ],
+    "worldbuilding-xxvi:decisao:instrumentos": [
+      "worldbuilding-xxvi:opcao:instrumentos:dependencias",
+      "worldbuilding-xxvi:opcao:instrumentos:em-aberto",
+      "worldbuilding-xxvi:opcao:instrumentos:minimo"
+    ],
+    "worldbuilding-xxvi:decisao:mecanismo": [
+      "worldbuilding-xxvi:opcao:mecanismo:intervencao-singular",
+      "worldbuilding-xxvi:opcao:mecanismo:magia-recorrente",
+      "worldbuilding-xxvi:opcao:mecanismo:nao-descrever"
+    ],
+    "worldbuilding-xxvi:decisao:responsabilidade": [
+      "worldbuilding-xxvi:opcao:responsabilidade:autoridade-ritual",
+      "worldbuilding-xxvi:opcao:responsabilidade:caso-a-caso",
+      "worldbuilding-xxvi:opcao:responsabilidade:prestacao-civil"
+    ],
+    "worldbuilding-xxvi:decisao:responsaveis-rito": [
+      "worldbuilding-xxvi:opcao:responsaveis-rito:coletivo",
+      "worldbuilding-xxvi:opcao:responsaveis-rito:especialistas",
+      "worldbuilding-xxvi:opcao:responsaveis-rito:nao-definir"
+    ],
+    "worldbuilding-xxvi:decisao:templo": [
+      "worldbuilding-xxvi:opcao:templo:autonomia-ritual",
+      "worldbuilding-xxvi:opcao:templo:poder-informal",
+      "worldbuilding-xxvi:opcao:templo:vinculo-civil"
+    ]
+  },
+  "by_opcao": {
+    "worldbuilding-xxvi:opcao:agua-domestica:apenas-agricola": "worldbuilding-xxvi:decisao:agua-domestica",
+    "worldbuilding-xxvi:opcao:agua-domestica:indecidido": "worldbuilding-xxvi:decisao:agua-domestica",
+    "worldbuilding-xxvi:opcao:agua-domestica:potabilidade-a-definir": "worldbuilding-xxvi:decisao:agua-domestica",
+    "worldbuilding-xxvi:opcao:autoridade:casas": "worldbuilding-xxvi:decisao:autoridade",
+    "worldbuilding-xxvi:opcao:autoridade:conselho": "worldbuilding-xxvi:decisao:autoridade",
+    "worldbuilding-xxvi:opcao:autoridade:outro": "worldbuilding-xxvi:decisao:autoridade",
+    "worldbuilding-xxvi:opcao:autoridade:pactos": "worldbuilding-xxvi:decisao:autoridade",
+    "worldbuilding-xxvi:opcao:autoridade:templo-consultivo": "worldbuilding-xxvi:decisao:autoridade",
+    "worldbuilding-xxvi:opcao:auxiliares:em-aberto": "worldbuilding-xxvi:decisao:auxiliares",
+    "worldbuilding-xxvi:opcao:auxiliares:reconhecido": "worldbuilding-xxvi:decisao:auxiliares",
+    "worldbuilding-xxvi:opcao:auxiliares:rotativo": "worldbuilding-xxvi:decisao:auxiliares",
+    "worldbuilding-xxvi:opcao:comercio:consumo-local": "worldbuilding-xxvi:decisao:comercio",
+    "worldbuilding-xxvi:opcao:comercio:em-aberto": "worldbuilding-xxvi:decisao:comercio",
+    "worldbuilding-xxvi:opcao:comercio:excedente": "worldbuilding-xxvi:decisao:comercio",
+    "worldbuilding-xxvi:opcao:continuidade:condicionada": "worldbuilding-xxvi:decisao:continuidade",
+    "worldbuilding-xxvi:opcao:continuidade:estavel": "worldbuilding-xxvi:decisao:continuidade",
+    "worldbuilding-xxvi:opcao:continuidade:indeterminada": "worldbuilding-xxvi:decisao:continuidade",
+    "worldbuilding-xxvi:opcao:cultivo:catalogar": "worldbuilding-xxvi:decisao:cultivo",
+    "worldbuilding-xxvi:opcao:cultivo:diverso": "worldbuilding-xxvi:decisao:cultivo",
+    "worldbuilding-xxvi:opcao:cultivo:lacuna": "worldbuilding-xxvi:decisao:cultivo",
+    "worldbuilding-xxvi:opcao:distribuicao:deliberacao": "worldbuilding-xxvi:decisao:distribuicao",
+    "worldbuilding-xxvi:opcao:distribuicao:familias": "worldbuilding-xxvi:decisao:distribuicao",
+    "worldbuilding-xxvi:opcao:distribuicao:templo": "worldbuilding-xxvi:decisao:distribuicao",
+    "worldbuilding-xxvi:opcao:instrumentos:dependencias": "worldbuilding-xxvi:decisao:instrumentos",
+    "worldbuilding-xxvi:opcao:instrumentos:em-aberto": "worldbuilding-xxvi:decisao:instrumentos",
+    "worldbuilding-xxvi:opcao:instrumentos:minimo": "worldbuilding-xxvi:decisao:instrumentos",
+    "worldbuilding-xxvi:opcao:mecanismo:intervencao-singular": "worldbuilding-xxvi:decisao:mecanismo",
+    "worldbuilding-xxvi:opcao:mecanismo:magia-recorrente": "worldbuilding-xxvi:decisao:mecanismo",
+    "worldbuilding-xxvi:opcao:mecanismo:nao-descrever": "worldbuilding-xxvi:decisao:mecanismo",
+    "worldbuilding-xxvi:opcao:responsabilidade:autoridade-ritual": "worldbuilding-xxvi:decisao:responsabilidade",
+    "worldbuilding-xxvi:opcao:responsabilidade:caso-a-caso": "worldbuilding-xxvi:decisao:responsabilidade",
+    "worldbuilding-xxvi:opcao:responsabilidade:prestacao-civil": "worldbuilding-xxvi:decisao:responsabilidade",
+    "worldbuilding-xxvi:opcao:responsaveis-rito:coletivo": "worldbuilding-xxvi:decisao:responsaveis-rito",
+    "worldbuilding-xxvi:opcao:responsaveis-rito:especialistas": "worldbuilding-xxvi:decisao:responsaveis-rito",
+    "worldbuilding-xxvi:opcao:responsaveis-rito:nao-definir": "worldbuilding-xxvi:decisao:responsaveis-rito",
+    "worldbuilding-xxvi:opcao:templo:autonomia-ritual": "worldbuilding-xxvi:decisao:templo",
+    "worldbuilding-xxvi:opcao:templo:poder-informal": "worldbuilding-xxvi:decisao:templo",
+    "worldbuilding-xxvi:opcao:templo:vinculo-civil": "worldbuilding-xxvi:decisao:templo"
+  },
+  "by_impacto": {
+    "worldbuilding-xxvi:decisao:agua-domestica": [
+      "worldbuilding-xxvi:impacto:agua-domestica"
+    ],
+    "worldbuilding-xxvi:decisao:autoridade": [
+      "worldbuilding-xxvi:impacto:distribuicao",
+      "worldbuilding-xxvi:impacto:governo",
+      "worldbuilding-xxvi:impacto:responsabilizacao"
+    ],
+    "worldbuilding-xxvi:decisao:auxiliares": [
+      "worldbuilding-xxvi:impacto:trabalho"
+    ],
+    "worldbuilding-xxvi:decisao:comercio": [
+      "worldbuilding-xxvi:impacto:comercio"
+    ],
+    "worldbuilding-xxvi:decisao:continuidade": [
+      "worldbuilding-xxvi:impacto:continuidade"
+    ],
+    "worldbuilding-xxvi:decisao:cultivo": [
+      "worldbuilding-xxvi:impacto:agricultura",
+      "worldbuilding-xxvi:impacto:comercio"
+    ],
+    "worldbuilding-xxvi:decisao:distribuicao": [
+      "worldbuilding-xxvi:impacto:comercio",
+      "worldbuilding-xxvi:impacto:distribuicao"
+    ],
+    "worldbuilding-xxvi:decisao:instrumentos": [
+      "worldbuilding-xxvi:impacto:infraestrutura"
+    ],
+    "worldbuilding-xxvi:decisao:mecanismo": [
+      "worldbuilding-xxvi:impacto:continuidade",
+      "worldbuilding-xxvi:impacto:infraestrutura",
+      "worldbuilding-xxvi:impacto:ritos"
+    ],
+    "worldbuilding-xxvi:decisao:responsabilidade": [
+      "worldbuilding-xxvi:impacto:responsabilizacao"
+    ],
+    "worldbuilding-xxvi:decisao:responsaveis-rito": [
+      "worldbuilding-xxvi:impacto:ritos",
+      "worldbuilding-xxvi:impacto:trabalho"
+    ],
+    "worldbuilding-xxvi:decisao:templo": [
+      "worldbuilding-xxvi:impacto:governo",
+      "worldbuilding-xxvi:impacto:responsabilizacao"
+    ]
+  }
+}

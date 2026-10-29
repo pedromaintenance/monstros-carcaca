@@ -1,0 +1,979 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XXVI — Portomonte sob revisão: escolhas sem coroação",
+  "estado": "pauta_editorial_pendente",
+  "regiao_id": "regiao:costa-sul",
+  "assentamento_id": "assentamento:portomonte",
+  "fonte_matriz": "data/worldbuilding/portomonte-templo-governo-ciclo25.json",
+  "aprovacao_autoral": false,
+  "mutacao_canonica_automatica": false,
+  "modelo_governo_aprovado": null,
+  "agua_potavel_aprovada": null,
+  "operacao_ritual_aprovada": null,
+  "alterou_atlas": false,
+  "alterou_criaturas": false,
+  "alterou_regras_dw": false,
+  "politica_de_aprovacao": {
+    "condicao": "Somente uma manifestação explícita do autor sobre decisão específica, com formulação aprovada, pode abrir um ciclo posterior de integração no atlas.",
+    "proveniencia_exigida": [
+      "id_da_decisao",
+      "texto_da_decisao_autoral",
+      "identificacao_da_fonte_autoral",
+      "revisao_das_dependencias",
+      "revisao_dos_impactos",
+      "novos_testes_de_regressao"
+    ],
+    "silencio_significa_aprovacao": false,
+    "consulta_aplica_alteracao": false,
+    "simulacao_aplica_alteracao": false
+  },
+  "etapas_de_revisao": [
+    {
+      "id": "worldbuilding-xxvi:etapa:fonte",
+      "nome": "Revisão de fonte e lacuna",
+      "escopo": "Confirmar fatos já estabelecidos e lacunas de água, governo e quantidades.",
+      "decisoes": [],
+      "concluida": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:etapa:autoridade",
+      "nome": "Arquitetura de poder",
+      "escopo": "Discutir autoridade, templo, distribuição e responsabilidade sem votar automaticamente.",
+      "decisoes": [
+        "worldbuilding-xxvi:decisao:autoridade",
+        "worldbuilding-xxvi:decisao:templo",
+        "worldbuilding-xxvi:decisao:distribuicao",
+        "worldbuilding-xxvi:decisao:responsabilidade"
+      ],
+      "concluida": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:etapa:ritual",
+      "nome": "Vida material e trabalho",
+      "escopo": "Discutir potabilidade, executantes, mecanismo, continuidade, auxiliares, cultivo e meios.",
+      "decisoes": [
+        "worldbuilding-xxvi:decisao:agua-domestica",
+        "worldbuilding-xxvi:decisao:responsaveis-rito",
+        "worldbuilding-xxvi:decisao:mecanismo",
+        "worldbuilding-xxvi:decisao:continuidade",
+        "worldbuilding-xxvi:decisao:auxiliares",
+        "worldbuilding-xxvi:decisao:cultivo",
+        "worldbuilding-xxvi:decisao:instrumentos"
+      ],
+      "concluida": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:etapa:integracao",
+      "nome": "Integração futura, não nesta revisão",
+      "escopo": "Revisar comércio, dependências de decisão e impactos antes de eventual nova proposta de alteração canônica.",
+      "decisoes": [
+        "worldbuilding-xxvi:decisao:comercio"
+      ],
+      "concluida": false,
+      "aprovacao_autoral": false
+    }
+  ],
+  "decisoes": [
+    {
+      "id": "worldbuilding-xxvi:decisao:autoridade",
+      "ordem_editorial": 1,
+      "dominio": "autoridade",
+      "prioridade": "critica",
+      "pergunta": "Quem toma decisões civis em Portomonte, e como são contestadas?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:autoridade",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:modelos_de_governo:casas-e-oficios",
+        "worldbuilding-xxv:modelos_de_governo:conselho-revogavel",
+        "worldbuilding-xxv:modelos_de_governo:templo-consultivo",
+        "worldbuilding-xxv:modelos_de_governo:pactos-entre-vizinhos"
+      ],
+      "depende_de": [],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:autoridade:casas",
+          "rotulo": "Assembleia de casas e ofícios",
+          "formulacao_autoral_possivel": "Poder civil distribuído entre representantes de moradores e trabalhadores, sujeitos a contestação.",
+          "risco_da_escolha": "Representatividade pode excluir quem não possui oficina ou casa.",
+          "modelo_xxv_id": "worldbuilding-xxv:modelos_de_governo:casas-e-oficios",
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:autoridade:conselho",
+          "rotulo": "Conselho temporário revogável",
+          "formulacao_autoral_possivel": "Coordenação civil restrita a necessidades, com fim de mandato definido pelo autor.",
+          "risco_da_escolha": "Emergência tende a prolongar poderes.",
+          "modelo_xxv_id": "worldbuilding-xxv:modelos_de_governo:conselho-revogavel",
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:autoridade:templo-consultivo",
+          "rotulo": "Templo consultado, decisão civil",
+          "formulacao_autoral_possivel": "Rito e conselho se relacionariam sem transferir automaticamente a soberania.",
+          "risco_da_escolha": "Parecer técnico pode virar veto político.",
+          "modelo_xxv_id": "worldbuilding-xxv:modelos_de_governo:templo-consultivo",
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:autoridade:pactos",
+          "rotulo": "Pactos entre núcleos",
+          "formulacao_autoral_possivel": "Autoridade civil plural por acordos voluntários, sem centro definido de antemão.",
+          "risco_da_escolha": "Desigualdade de força pode tornar um pacto coercitivo.",
+          "modelo_xxv_id": "worldbuilding-xxv:modelos_de_governo:pactos-entre-vizinhos",
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:autoridade:outro",
+          "rotulo": "Modelo próprio ou ainda desconhecido",
+          "formulacao_autoral_possivel": "O autor pode propor uma quinta arquitetura ou manter a questão aberta.",
+          "risco_da_escolha": "Não deduzir instituições a partir da importância do templo.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvi:decisao:templo",
+      "ordem_editorial": 2,
+      "dominio": "templo",
+      "prioridade": "critica",
+      "pergunta": "O templo de Deméter possui poder político formal ou apenas autoridade ritual?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:templo",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:relacoes_sociais:sacerdotes",
+        "worldbuilding-xxv:relacoes_sociais:lavradores",
+        "worldbuilding-xxv:garantias_civis:testemunho",
+        "worldbuilding-xxv:garantias_civis:recusa"
+      ],
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:autoridade"
+      ],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:templo:autonomia-ritual",
+          "rotulo": "Autonomia ritual sem poder civil",
+          "formulacao_autoral_possivel": "O templo decide apenas assuntos internos do culto; distribuição e lei seguiriam outra autoridade escolhida.",
+          "risco_da_escolha": "Precisaria definir onde acaba competência ritual.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:templo:vinculo-civil",
+          "rotulo": "Autoridade religiosa e civil vinculadas",
+          "formulacao_autoral_possivel": "O autor poderia definir um vínculo institucional específico.",
+          "risco_da_escolha": "O vínculo pode gerar coação de fé e alimentação.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:templo:poder-informal",
+          "rotulo": "Prestígio sem título político",
+          "formulacao_autoral_possivel": "Influência social forte, ainda que sem cargo formal de governo.",
+          "risco_da_escolha": "Decisões podem ser controladas sem responsabilidade pública.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvi:decisao:agua-domestica",
+      "ordem_editorial": 3,
+      "dominio": "agua-domestica",
+      "prioridade": "critica",
+      "pergunta": "A água purificada do Mar de Sangue é adequada para beber?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:agua-domestica",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:etapas_de_trabalho:proveniencia",
+        "worldbuilding-xxv:etapas_de_trabalho:rito",
+        "worldbuilding-xxv:dilemas:colheita-futura",
+        "worldbuilding-xxv:dilemas:agua-impropria"
+      ],
+      "depende_de": [],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:agua-domestica:apenas-agricola",
+          "rotulo": "Sem potabilidade estabelecida",
+          "formulacao_autoral_possivel": "Confirmar apenas a finalidade agrícola que já está no manuscrito; outros usos permanecem abertos.",
+          "risco_da_escolha": "Não equivale a declarar que toda água purificada é imprópria.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:agua-domestica:potabilidade-a-definir",
+          "rotulo": "Potabilidade por regra autoral específica",
+          "formulacao_autoral_possivel": "O autor poderia criar critérios verificáveis para um uso doméstico definido.",
+          "risco_da_escolha": "Exige estabelecer limites e origem; não inventar litros ou segurança universal.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:agua-domestica:indecidido",
+          "rotulo": "Pesquisa pendente",
+          "formulacao_autoral_possivel": "Manter potabilidade sem resposta no atlas.",
+          "risco_da_escolha": "Não prometer abastecimento em mesa.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvi:decisao:responsaveis-rito",
+      "ordem_editorial": 4,
+      "dominio": "responsaveis-rito",
+      "prioridade": "alta",
+      "pergunta": "Quem realiza a purificação e como esse conhecimento é transmitido?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:sacerdotes",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:etapas_de_trabalho:proveniencia",
+        "worldbuilding-xxv:etapas_de_trabalho:rito",
+        "worldbuilding-xxv:relacoes_sociais:sacerdotes",
+        "worldbuilding-xxv:relacoes_sociais:lavradores"
+      ],
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:templo"
+      ],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:responsaveis-rito:coletivo",
+          "rotulo": "Tradição ritual compartilhada",
+          "formulacao_autoral_possivel": "A purificação poderia depender de um corpo de praticantes com tarefas diversas.",
+          "risco_da_escolha": "Precisa distinguir participantes de pessoas que apenas ajudam.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:responsaveis-rito:especialistas",
+          "rotulo": "Conhecimento concentrado em especialistas",
+          "formulacao_autoral_possivel": "A purificação poderia exigir especialistas reconhecidos pelo templo.",
+          "risco_da_escolha": "A dependência pode concentrar autoridade.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:responsaveis-rito:nao-definir",
+          "rotulo": "Identidade dos executantes ainda aberta",
+          "formulacao_autoral_possivel": "Não atribuir rito a uma profissão ou personagem.",
+          "risco_da_escolha": "O fato da purificação permanece, mas seus agentes não são nomeados.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvi:decisao:mecanismo",
+      "ordem_editorial": 5,
+      "dominio": "mecanismo",
+      "prioridade": "alta",
+      "pergunta": "Qual sequência efetiva de atos ou condições faz a purificação funcionar?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:processo",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:etapas_de_trabalho:proveniencia",
+        "worldbuilding-xxv:etapas_de_trabalho:rito"
+      ],
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:responsaveis-rito"
+      ],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:mecanismo:magia-recorrente",
+          "rotulo": "Rito mágico repetido em condições próprias",
+          "formulacao_autoral_possivel": "Propor etapas litúrgicas depois de definição autoral.",
+          "risco_da_escolha": "Não fixar duração ou custo.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:mecanismo:intervencao-singular",
+          "rotulo": "Processo dependente de intervenção específica",
+          "formulacao_autoral_possivel": "O autor poderia definir um requisito mágico particular.",
+          "risco_da_escolha": "Não inventar artefato nem limitação numérica.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:mecanismo:nao-descrever",
+          "rotulo": "Manter o mecanismo como mistério",
+          "formulacao_autoral_possivel": "O templo permanece capaz de purificar sem procedimento mecânico detalhado.",
+          "risco_da_escolha": "Mistério não autoriza onipotência.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvi:decisao:continuidade",
+      "ordem_editorial": 6,
+      "dominio": "continuidade",
+      "prioridade": "alta",
+      "pergunta": "A purificação funciona sempre ou exige condições e intervalos específicos?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:continuidade",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:etapas_de_trabalho:proveniencia",
+        "worldbuilding-xxv:etapas_de_trabalho:rito",
+        "worldbuilding-xxv:dilemas:colheita-futura",
+        "worldbuilding-xxv:dilemas:agua-impropria"
+      ],
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:mecanismo"
+      ],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:continuidade:condicionada",
+          "rotulo": "Pode falhar por condições definidas",
+          "formulacao_autoral_possivel": "Uma limitação explícita poderia criar decisões coletivas e problemas de trabalho.",
+          "risco_da_escolha": "Efeitos sobre alimento exigiriam observação posterior.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:continuidade:estavel",
+          "rotulo": "Funciona com estabilidade no contexto conhecido",
+          "formulacao_autoral_possivel": "O autor poderia decidir por uma continuidade ritual confiável.",
+          "risco_da_escolha": "Não corresponde a produção infinita.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:continuidade:indeterminada",
+          "rotulo": "Ritmo e interrupção desconhecidos",
+          "formulacao_autoral_possivel": "Não modelar falha ou produtividade sem bases.",
+          "risco_da_escolha": "Evitar gatilhos automáticos de fome.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvi:decisao:distribuicao",
+      "ordem_editorial": 7,
+      "dominio": "distribuicao",
+      "prioridade": "alta",
+      "pergunta": "Quem tem direito à produção agrícola e quais critérios valem?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:distribuicao",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:relacoes_sociais:sacerdotes",
+        "worldbuilding-xxv:relacoes_sociais:lavradores",
+        "worldbuilding-xxv:garantias_civis:testemunho",
+        "worldbuilding-xxv:garantias_civis:recusa"
+      ],
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:autoridade"
+      ],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:distribuicao:familias",
+          "rotulo": "Direitos definidos pelos produtores e famílias",
+          "formulacao_autoral_possivel": "Colheitas poderiam ser distribuídas por acordos de trabalho e cuidado.",
+          "risco_da_escolha": "Precisaria contemplar não produtores e visitantes.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:distribuicao:deliberacao",
+          "rotulo": "Regras de deliberação civil",
+          "formulacao_autoral_possivel": "Uma instituição civil escolhida pelo autor decidiria critérios de partilha.",
+          "risco_da_escolha": "Autoridade não implica direito de confiscar trabalho.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:distribuicao:templo",
+          "rotulo": "Distribuição delegada ao templo",
+          "formulacao_autoral_possivel": "Uma atribuição formal poderia ser concedida explicitamente.",
+          "risco_da_escolha": "Requer decidir legitimidade e direito de recusa.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvi:decisao:auxiliares",
+      "ordem_editorial": 8,
+      "dominio": "auxiliares",
+      "prioridade": "media",
+      "pergunta": "Existe trabalho não sacerdotal indispensável ao rito, e como é reconhecido?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:auxiliares",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:relacoes_sociais:sacerdotes",
+        "worldbuilding-xxv:relacoes_sociais:lavradores",
+        "worldbuilding-xxv:etapas_de_trabalho:proveniencia",
+        "worldbuilding-xxv:etapas_de_trabalho:rito"
+      ],
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:responsaveis-rito",
+        "worldbuilding-xxvi:decisao:mecanismo"
+      ],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:auxiliares:reconhecido",
+          "rotulo": "Funções auxiliares reconhecidas",
+          "formulacao_autoral_possivel": "O autor poderia detalhar responsabilidades não mágicas e sua remuneração.",
+          "risco_da_escolha": "Não converter ajuda em servidão obrigatória.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:auxiliares:rotativo",
+          "rotulo": "Cooperação de famílias e ofícios",
+          "formulacao_autoral_possivel": "Tarefas poderiam ser acordadas entre grupos sem criar emprego formal.",
+          "risco_da_escolha": "Rotação voluntária não garante igual esforço.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:auxiliares:em-aberto",
+          "rotulo": "Sem ofícios confirmados",
+          "formulacao_autoral_possivel": "Preservar a lacuna sem negar a existência de apoio.",
+          "risco_da_escolha": "Não batizar profissões sem fonte.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvi:decisao:cultivo",
+      "ordem_editorial": 9,
+      "dominio": "cultivo",
+      "prioridade": "media",
+      "pergunta": "Quais espécies, técnicas, safras e rendimentos agrícolas foram efetivamente observados?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:cultivo",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:etapas_de_trabalho:proveniencia",
+        "worldbuilding-xxv:etapas_de_trabalho:rito"
+      ],
+      "depende_de": [],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:cultivo:catalogar",
+          "rotulo": "Catalogar culturas mediante nova autoria",
+          "formulacao_autoral_possivel": "Estabelecer espécies e técnicas apenas mediante decisão e novo registro.",
+          "risco_da_escolha": "Não projetar rendimentos ou safras automáticas.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:cultivo:diverso",
+          "rotulo": "Agricultura plural sem espécies individualizadas",
+          "formulacao_autoral_possivel": "O autor pode definir diversidade sem uma lista restritiva de plantas.",
+          "risco_da_escolha": "Isso não confirma quantidades.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:cultivo:lacuna",
+          "rotulo": "Manter culturas e produção desconhecidas",
+          "formulacao_autoral_possivel": "O trabalho e a dependência existem; detalhes seguem nulos.",
+          "risco_da_escolha": "Balanços não recebem valores artificiais.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvi:decisao:instrumentos",
+      "ordem_editorial": 10,
+      "dominio": "instrumentos",
+      "prioridade": "media",
+      "pergunta": "Quais instrumentos, insumos e estruturas materiais são necessários?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:manutencao",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:etapas_de_trabalho:proveniencia",
+        "worldbuilding-xxv:etapas_de_trabalho:rito"
+      ],
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:mecanismo"
+      ],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:instrumentos:dependencias",
+          "rotulo": "Detalhar dependências comprovadas depois",
+          "formulacao_autoral_possivel": "Criar recursos e inventário somente após definir requisitos e evidências.",
+          "risco_da_escolha": "Não confundir decoração do templo com equipamento indispensável.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:instrumentos:minimo",
+          "rotulo": "Não formalizar materiais específicos",
+          "formulacao_autoral_possivel": "Foco na ação ritual, sem cadeia de insumos definida.",
+          "risco_da_escolha": "Não declarar que não exista manutenção.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:instrumentos:em-aberto",
+          "rotulo": "Pesquisar os materiais",
+          "formulacao_autoral_possivel": "Registrar lacuna antes de criar rotas de suprimento.",
+          "risco_da_escolha": "Não atribuir ferramentas, volume ou custo.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvi:decisao:comercio",
+      "ordem_editorial": 11,
+      "dominio": "comercio",
+      "prioridade": "baixa",
+      "pergunta": "Quanto da agricultura local circula no comércio costeiro, se houver excedente?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:comercio",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:dilemas:colheita-futura",
+        "worldbuilding-xxv:dilemas:agua-impropria"
+      ],
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:cultivo",
+        "worldbuilding-xxvi:decisao:distribuicao"
+      ],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:comercio:excedente",
+          "rotulo": "Excedentes negociados sob condições",
+          "formulacao_autoral_possivel": "O autor poderia estabelecer uma relação material entre lavoura e comércio.",
+          "risco_da_escolha": "Requer confirmar que há excedente, produtos e parceiros.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:comercio:consumo-local",
+          "rotulo": "Produção priorizada localmente",
+          "formulacao_autoral_possivel": "A agricultura poderia servir primariamente aos habitantes.",
+          "risco_da_escolha": "Não cancela comércio de outros bens.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:comercio:em-aberto",
+          "rotulo": "Nenhuma relação definida",
+          "formulacao_autoral_possivel": "Manter comércio confirmado e agricultura confirmada, mas sem declarar transação entre ambos.",
+          "risco_da_escolha": "Não nomear comprador ou mercadoria.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvi:decisao:responsabilidade",
+      "ordem_editorial": 12,
+      "dominio": "responsabilidade",
+      "prioridade": "alta",
+      "pergunta": "Quem responde quando o rito falha, e como se distingue culpa de incerteza?",
+      "origem_pergunta_id": "worldbuilding-xxv:pergunta:responsabilidade",
+      "referencias_de_proposta": [
+        "worldbuilding-xxv:garantias_civis:testemunho",
+        "worldbuilding-xxv:garantias_civis:recusa",
+        "worldbuilding-xxv:dilemas:colheita-futura",
+        "worldbuilding-xxv:dilemas:agua-impropria"
+      ],
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:autoridade",
+        "worldbuilding-xxvi:decisao:templo",
+        "worldbuilding-xxvi:decisao:continuidade"
+      ],
+      "nota_dependencias": "Dependência de sequência editorial e cruzamento de consequências; não presume causalidade canônica ou proibição de discussão em outra ordem.",
+      "opcoes": [
+        {
+          "id": "worldbuilding-xxvi:opcao:responsabilidade:prestacao-civil",
+          "rotulo": "Prestação de contas civil",
+          "formulacao_autoral_possivel": "O autor poderia estabelecer procedimento público para investigar danos.",
+          "risco_da_escolha": "Não presumir tribunal ou crime definido.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:responsabilidade:autoridade-ritual",
+          "rotulo": "Responsabilidade ritual delimitada",
+          "formulacao_autoral_possivel": "O templo responderia apenas pelo que realmente controla.",
+          "risco_da_escolha": "Não responsabilizar todos os praticantes por igual.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        },
+        {
+          "id": "worldbuilding-xxvi:opcao:responsabilidade:caso-a-caso",
+          "rotulo": "Conflitos tratados caso a caso",
+          "formulacao_autoral_possivel": "Sem sistema único declarado, acordos seriam negociados localmente.",
+          "risco_da_escolha": "Não implica justiça satisfatória ou ausência de violência.",
+          "modelo_xxv_id": null,
+          "estado": "candidata_nao_adotada",
+          "aprovacao_autoral": false,
+          "canon_aplicado": false
+        }
+      ],
+      "estado": "aguarda_decisao_expressa",
+      "opcao_escolhida_id": null,
+      "texto_autoral_aprovado": null,
+      "fonte_da_aprovacao": null,
+      "data_da_aprovacao": null,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "guardas": [
+    {
+      "id": "worldbuilding-xxvi:guarda:01",
+      "regra": "Nenhuma escolha sem declaração autoral explícita, identificada e revisável.",
+      "ativo": true
+    },
+    {
+      "id": "worldbuilding-xxvi:guarda:02",
+      "regra": "Silêncio ou ausência de correção nunca significam aprovação.",
+      "ativo": true
+    },
+    {
+      "id": "worldbuilding-xxvi:guarda:03",
+      "regra": "Cada decisão aponta para pergunta e propostas anteriores existentes.",
+      "ativo": true
+    },
+    {
+      "id": "worldbuilding-xxvi:guarda:04",
+      "regra": "Prioridade editorial não corresponde a preferência do autor.",
+      "ativo": true
+    },
+    {
+      "id": "worldbuilding-xxvi:guarda:05",
+      "regra": "Não inferir teocracia, forma jurídica, voto, imposto ou soberania a partir da purificação.",
+      "ativo": true
+    },
+    {
+      "id": "worldbuilding-xxvi:guarda:06",
+      "regra": "Uso agrícola não implica potabilidade nem toxicidade doméstica.",
+      "ativo": true
+    },
+    {
+      "id": "worldbuilding-xxvi:guarda:07",
+      "regra": "Não criar vazões, estoques, safras, excedentes ou capacidade ritual.",
+      "ativo": true
+    },
+    {
+      "id": "worldbuilding-xxvi:guarda:08",
+      "regra": "Risco hipotético não produz fome, morte, dano ou mudanças automáticas de Prosperidade DW.",
+      "ativo": true
+    },
+    {
+      "id": "worldbuilding-xxvi:guarda:09",
+      "regra": "Não atribuir a Portomonte governo de ilhas, Caatinga ou toda Costa Sul.",
+      "ativo": true
+    },
+    {
+      "id": "worldbuilding-xxvi:guarda:10",
+      "regra": "Não alterar as sete criaturas nem fichas, movimentos ou regras DW.",
+      "ativo": true
+    },
+    {
+      "id": "worldbuilding-xxvi:guarda:11",
+      "regra": "Uma aprovação futura exige verificar arquivos e separar novo cânone de afirmação antiga.",
+      "ativo": true
+    },
+    {
+      "id": "worldbuilding-xxvi:guarda:12",
+      "regra": "Mesmo após autorização, impactos no atlas requerem edição específica e testes, nunca mutação por consulta.",
+      "ativo": true
+    }
+  ],
+  "impactos_condicionais": [
+    {
+      "id": "worldbuilding-xxvi:impacto:governo",
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:autoridade",
+        "worldbuilding-xxvi:decisao:templo"
+      ],
+      "arquivo_alvo_condicional": "curadoria/assentamentos/portomonte.json",
+      "efeito_possivel_depois_de_aprovacao": "Poder civil e eventuais limites do templo poderão ser descritos.",
+      "inferencia_proibida": "Não criar órgão formal, título ou hierarquia automaticamente.",
+      "estado": "mapa_condicional_nao_executavel",
+      "aplicado": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:impacto:ritos",
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:responsaveis-rito",
+        "worldbuilding-xxvi:decisao:mecanismo"
+      ],
+      "arquivo_alvo_condicional": "data/fluxos_costa_sul.json",
+      "efeito_possivel_depois_de_aprovacao": "Somente um procedimento homologado poderia ampliar a descrição do fluxo ritual.",
+      "inferencia_proibida": "Não inventar insumo, intervalo, duração, lançamentos ou litros.",
+      "estado": "mapa_condicional_nao_executavel",
+      "aplicado": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:impacto:agua-domestica",
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:agua-domestica"
+      ],
+      "arquivo_alvo_condicional": "curadoria/assentamentos/portomonte.json",
+      "efeito_possivel_depois_de_aprovacao": "A seção de água poderia passar a distinguir usos agrícolas e domésticos aprovados.",
+      "inferencia_proibida": "Uso agrícola não comprova potabilidade; nenhuma medição automática.",
+      "estado": "mapa_condicional_nao_executavel",
+      "aplicado": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:impacto:continuidade",
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:continuidade",
+        "worldbuilding-xxvi:decisao:mecanismo"
+      ],
+      "arquivo_alvo_condicional": "data/dependencias_materiais_costa_sul.json",
+      "efeito_possivel_depois_de_aprovacao": "Poderiam ser descritas condições específicas de continuidade ou interrupção.",
+      "inferencia_proibida": "Não converter hipóteses em falhas ocorridas ou penalidades DW.",
+      "estado": "mapa_condicional_nao_executavel",
+      "aplicado": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:impacto:agricultura",
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:cultivo"
+      ],
+      "arquivo_alvo_condicional": "data/balancos_materiais_costa_sul.json",
+      "efeito_possivel_depois_de_aprovacao": "O balanço poderia ganhar categorias agrícolas identificadas.",
+      "inferencia_proibida": "Nunca preencher números sem medidas ou decisão expressa.",
+      "estado": "mapa_condicional_nao_executavel",
+      "aplicado": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:impacto:distribuicao",
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:autoridade",
+        "worldbuilding-xxvi:decisao:distribuicao"
+      ],
+      "arquivo_alvo_condicional": "curadoria/assentamentos/portomonte.json",
+      "efeito_possivel_depois_de_aprovacao": "Direitos e critérios aprovados poderiam ser descritos em campo apropriado.",
+      "inferencia_proibida": "Não presumir propriedade de toda produção pelo templo.",
+      "estado": "mapa_condicional_nao_executavel",
+      "aplicado": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:impacto:trabalho",
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:responsaveis-rito",
+        "worldbuilding-xxvi:decisao:auxiliares"
+      ],
+      "arquivo_alvo_condicional": "data/worldbuilding/portomonte-templo-governo-ciclo25.json",
+      "efeito_possivel_depois_de_aprovacao": "Uma revisão editorial posterior poderia qualificar funções e responsabilidades.",
+      "inferencia_proibida": "Não promover propostas de trabalhadores a pessoas reais.",
+      "estado": "mapa_condicional_nao_executavel",
+      "aplicado": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:impacto:infraestrutura",
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:instrumentos",
+        "worldbuilding-xxvi:decisao:mecanismo"
+      ],
+      "arquivo_alvo_condicional": "data/dependencias_materiais_costa_sul.json",
+      "efeito_possivel_depois_de_aprovacao": "Insumos comprovados poderiam ser modelados com dependências identificáveis.",
+      "inferencia_proibida": "Não criar automaticamente equipamentos, reservatórios, aquedutos ou templos adicionais.",
+      "estado": "mapa_condicional_nao_executavel",
+      "aplicado": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:impacto:comercio",
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:comercio",
+        "worldbuilding-xxvi:decisao:cultivo",
+        "worldbuilding-xxvi:decisao:distribuicao"
+      ],
+      "arquivo_alvo_condicional": "data/fluxos_costa_sul.json",
+      "efeito_possivel_depois_de_aprovacao": "Um fluxo comercial específico poderia ser registrado se os parceiros e bens forem definidos.",
+      "inferencia_proibida": "Não presumir comércio direto com Caatinga ou ilhas individualizadas.",
+      "estado": "mapa_condicional_nao_executavel",
+      "aplicado": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "worldbuilding-xxvi:impacto:responsabilizacao",
+      "depende_de": [
+        "worldbuilding-xxvi:decisao:responsabilidade",
+        "worldbuilding-xxvi:decisao:autoridade",
+        "worldbuilding-xxvi:decisao:templo"
+      ],
+      "arquivo_alvo_condicional": "curadoria/assentamentos/portomonte.json",
+      "efeito_possivel_depois_de_aprovacao": "Eventuais mecanismos de responsabilidade civil poderão ser descritos após decisão.",
+      "inferencia_proibida": "Não inventar lei, tribunal, pena, coerção religiosa ou evento histórico.",
+      "estado": "mapa_condicional_nao_executavel",
+      "aplicado": false,
+      "aprovacao_autoral": false
+    }
+  ],
+  "contagens": {
+    "etapas": 4,
+    "decisoes": 12,
+    "opcoes": 38,
+    "guardas": 12,
+    "impactos": 10,
+    "pendentes": 12,
+    "aprovadas": 0,
+    "impactos_aplicados": 0
+  }
+}
