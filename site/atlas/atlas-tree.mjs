@@ -46,7 +46,7 @@ const placeDefs={
  "boca-do-abismo":["foz","fortaleza"],"drakport":["rio","assentamento"],
  "garganta":["garganta","assentamento"],"grama-cortada":["grama","assentamento"],
  "gualapolis":["foz","ruina"],"ilhas-monasticas":["costa","assentamento"],
- "ironwood":["thargrid","fortaleza"],"mar-de-sangue":["costa","bioma"],
+ "ironwood":["thargrid","bioma"],"mar-de-sangue":["costa","bioma"],
  "portomonte":["costa","assentamento"],"reino-sob-montanha":["thargrid","fortaleza"],
  "rio-ancestral":["rio","rota"],"shadar-riverie":["shadar","assentamento"],
  "templo-da-lua":["rio","poder"],"templo-das-sombras":["foz","ruina"],
