@@ -808,3 +808,15 @@ Documentação: [ATLAS_CIRCULACAO_MATERIAL_CICLO41.md](docs/ATLAS_CIRCULACAO_MAT
 **Estado da auditoria anterior:** as classificações de 4 regiões com “base local suficiente”, 5 condicionadas e 2 bloqueadas continuam úteis apenas como **força temática das âncoras existentes**, não como indicador de conclusão macrorregional.
 
 [Plano em JSON](data/atlas/horizonte-povoamento-macro.json) · [Atlas com parecer revisado](https://pedromaintenance.github.io/monstros-carcaca/atlas/#audit-density).
+
+## Critério transversal — povoamento de criaturas e ecologia fantástica (2026-10-29)
+
+- [x] Registrar que **vilas goblins, cortes feéricas, colônias e demais comunidades organizadas de criaturas fantásticas** são assentamentos tão relevantes quanto os de humanoides.
+- [x] Inserir exigência de auditoria de habitações extraordinárias em todas as dez frentes de povoamento, com contagem por comunidade, não por espécie.
+- [x] Separar assentamentos coletivos e sazonais de covis individuais, habitats, áreas de reprodução, migrações, ninhos solitários, ruínas vazias e fenômenos ecológicos.
+- [x] Reconhecer relações ecológicas e sociais próprias (mutualismo, predação, convivência, conflito, magia, permanência) sem forçar toda espécie a possuir cidade.
+- [x] Proteger contra a canonização automática de goblins, fadas ou outras criaturas em setores ainda não documentados, inclusive quando aparecem no bestiário ou numa proposta de ecologia.
+- [ ] Inventariar assentamentos e habitats fantásticos já descritos no manuscrito, bestiários e propostas do repositório; referenciar as fontes de cada caso.
+- [ ] Criar, nas próximas frentes de povoamento, comunidades fantásticas diferenciadas e seus lugares ecológicos, garantindo diversidade sem cotas raciais.
+
+A faixa flexível de **145–205 assentamentos e ilhas** não é reservada a humanoides e **não deve ser aumentada artificialmente** contando como aldeias covis solitários ou habitats de fauna. Detalhamento: [horizonte-povoamento-macro.json](data/atlas/horizonte-povoamento-macro.json).
