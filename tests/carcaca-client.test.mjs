@@ -82,6 +82,8 @@ const fixtures={
     hack_artificer_movement_indexes:"hack-artificer-movement-indexes.json",
     hack_mercenary_movements:"hack-mercenary-movements.json",
     hack_mercenary_movement_indexes:"hack-mercenary-movement-indexes.json",
+    moon_temple_severina:"moon-temple-severina.json",
+    moon_temple_severina_indexes:"moon-temple-severina-indexes.json",
     river_drakport_social:"river-drakport-social.json",
     river_drakport_social_indexes:"river-drakport-social-indexes.json",
     foz_shadar_memory:"foz-shadar-memory.json",
@@ -194,6 +196,45 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "moon-temple-severina.json":{
+    "estado":"investigacao_ritual_nao_canonica",
+    "divindade_titular_confirmada":null,"alcance_ritual_confirmado":null,
+    "aprovacao_autoral":false,"efeito_canonico_automatico":false,
+    "revolta_drakport_ocorreu":false,
+    "fatos_documentados":[
+      {"id":"worldbuilding-xxix:fato:01","pagina":4,
+       "afirmacao_documentada":"O Templo da Lua ergue-se numa ilha do Rio Ancestral.",
+       "limite_de_inferencia":"Não há posição exata.","novo_canon":false},
+      {"id":"worldbuilding-xxix:fato:12","pagina":22,
+       "afirmacao_documentada":"A fé da Carcaça reúne panteões distintos.",
+       "limite_de_inferencia":"A divindade titular é desconhecida.","novo_canon":false}
+    ],
+    "modelos_do_rito":[
+      {"id":"worldbuilding-xxix:modelos_do_rito:ciclico","nome":"O calendário que não foi escrito",
+       "hipotese_condicional":"Um rito poderia depender de circunstâncias temporais.",
+       "limite_de_inferencia":"Templo lunar não prova ciclos lunares.",
+       "pergunta_de_mesa":"Qual observação seria necessária?",
+       "referencia_id":"rio-garganta:lugar:lua","escopo":"templo",
+       "estatuto":"alternativa_nao_adotada","ocorreu":false}
+    ],
+    "interfaces_civis":[
+      {"id":"worldbuilding-xxix:interfaces_civis:recusa","nome":"O direito de não embarcar",
+       "hipotese_condicional":"Uma pessoa decide não embarcar.",
+       "limite_de_inferencia":"Não prova existência da travessia.",
+       "pergunta_de_mesa":"Quem pode escolher?",
+       "referencia_id":"worldbuilding-xxviii:trabalho_cotidiano:navegantes",
+       "escopo":"rio","ocorreu":false}
+    ],
+    "provas_e_incerteza":[],"economia_e_movimento":[],"tensoes_de_poder":[],"vinhetas":[],
+    "perguntas_para_autor":[{"id":"worldbuilding-xxix:pergunta:divindade",
+      "resposta_aprovada":null}]
+  },
+  "moon-temple-severina-indexes.json":{
+     "by_categoria":{"modelos_do_rito":["worldbuilding-xxix:modelos_do_rito:ciclico"]},
+     "by_escopo":{"templo":["worldbuilding-xxix:modelos_do_rito:ciclico"]},
+     "by_referencia":{"rio-garganta:lugar:lua":["worldbuilding-xxix:modelos_do_rito:ciclico"]},
+     "by_pagina":{"22":["worldbuilding-xxix:fato:12"]}
+  },
   "river-drakport-social.json":{
      "estado":"expansao_social_nao_canonica","revolta_drakport_ocorreu":false,
      "balanco_de_pessoas_como_recurso":false,"regiao_normalizada_drakport":null,
@@ -2861,4 +2902,32 @@ test("Ciclo XXVIII: trabalho, rio e Revolta pendente sem novo cânone",async()=>
   assert.equal((await atlas.getRiverDrakportSocialEntry("worldbuilding-xxviii:pergunta:revolta")).resposta_aprovada,null);
   assert.equal((await atlas.getRiverDrakportSocialEntry("worldbuilding-xxviii:servidao_e_agencia:evasao")).ocorreu,false);
   assert.equal(await atlas.getRiverDrakportSocialEntry("worldbuilding-xxviii:nao-existe"),null);
+});
+
+test("Ciclo XXIX: Templo da Lua tem modelos não adotados e divindade desconhecida",async()=>{
+  const d=await atlas.getMoonTempleSeverina();
+  assert.equal(d.estado,"investigacao_ritual_nao_canonica");
+  assert.equal(d.divindade_titular_confirmada,null);
+  assert.equal(d.alcance_ritual_confirmado,null);
+  assert.equal(d.revolta_drakport_ocorreu,false);
+  const ix=await atlas.getMoonTempleSeverinaIndexes();
+  assert.equal(ix.by_pagina["22"].length,1);
+  const q=await atlas.searchMoonTempleSeverina({categoria:"modelos_do_rito",escopo:"templo"});
+  assert.equal(q.length,1);
+  assert.equal((await atlas.searchMoonTempleSeverina({referenciaId:"rio-garganta:lugar:lua"})).length,1);
+  assert.equal((await atlas.searchMoonTempleSeverina({query:"calendário"})).length,1);
+  assert.equal((await atlas.searchMoonTempleSeverina({query:"zz-inexistente"})).length,0);
+  assert.equal((await atlas.searchMoonTempleSeverina({pagina:22})).length,1);
+  const model="worldbuilding-xxix:modelos_do_rito:ciclico";
+  const preview=await atlas.previewMoonTempleRitualModel(model);
+  assert.equal(preview.aprovacao_autoral,false);
+  assert.equal(preview.modelo_adotado,false);
+  assert.equal(preview.efeito_mecanico,false);
+  assert.equal(preview.canon_alterado,false);
+  assert.deepEqual(preview.eventos_ocorridos,[]);
+  assert.equal((await atlas.getMoonTempleSeverinaEntry(model)).ocorreu,false);
+  assert.equal((await atlas.getMoonTempleSeverinaEntry("worldbuilding-xxix:pergunta:divindade")).resposta_aprovada,null);
+  assert.equal(await atlas.previewMoonTempleRitualModel("worldbuilding-xxix:modelos_do_rito:nenhum"),null);
+  assert.equal(await atlas.previewMoonTempleRitualModel("worldbuilding-xxix:interfaces_civis:recusa"),null);
+  assert.equal(await atlas.getMoonTempleSeverinaEntry("worldbuilding-xxix:inexistente"),null);
 });
