@@ -3984,6 +3984,73 @@ def validar_revisao_autoral_portomonte_xxvi():
             "Ciclo XXVI: não alterar criaturas ao organizar decisões.")
     print("Ciclo XXVI: 12 decisões, 38 opções, 12 guardas e 10 impactos pendentes.")
 
+
+def validar_foz_shadar_memoria_xxvii():
+    """Ciclo XXVII: proveniência, topologia aberta e propostas não aprovadas."""
+    d=load("data/worldbuilding/foz-shadar-memoria-ciclo27.json")
+    schema=load("schemas/foz-shadar-memoria-xxvii.schema.json")
+    Draft202012Validator.check_schema(schema)
+    issues=list(Draft202012Validator(schema).iter_errors(d))
+    require(not issues,f"Ciclo XXVII: schema inválido {issues[:2]}")
+    expected={"fatos":12,"referencias":12,"propostas":36,"perguntas":10,
+              "vida_sob_a_corte":8,"memoria_submersa":7,"rio_e_trabalho":6,
+              "pactos_de_frente":6,"dilemas_civis":5,"vinhetas":4}
+    require(d["contagens"]==expected,"Ciclo XXVII: contagens divergentes.")
+    require(d["estado"]=="expansao_sociocultural_nao_canonica"
+            and d["regiao_normalizada_foz"]=="regiao:foz-rio-ancestral"
+            and d["regiao_normalizada_shadar"] is None
+            and d["geometria_exata_gualapolis_boca_shadar"] is None
+            and d["populacao_sobrevivente_gualapolis_confirmada"] is None
+            and d["tratados_especificos_confirmados"] is None
+            and d["acesso_publico_arquivo_confirmado"] is None
+            and d["cronologia_individual_afogamento_confirmada"] is None,
+            "Ciclo XXVII: geometria ou fato não comprovado foi estabelecido.")
+    require(d["aprovacao_autoral"] is False
+            and d["efeito_canonico_automatico"] is False
+            and d["alteracao_atlas_factual"] is False
+            and d["alteracao_criaturas"] is False
+            and d["alteracao_regras_dw"] is False,
+            "Ciclo XXVII: tentativa de mutar cânone.")
+    require(d["regiao_normalizada_foz"] in
+        {r["id"] for r in load("data/regioes_carcaca.json")["regioes"]},
+        "Ciclo XXVII: região da foz inválida.")
+    paginas={p["pagina"] for p in load(d["fonte_manuscrito"])["paginas"]}
+    facts=d["fatos_documentados"]
+    require(len({f["id"] for f in facts})==12
+            and all(f["pagina"] in paginas and f["pagina"] in (4,5,6,9,10)
+                    and f["arquivo_fonte"]==d["fonte_manuscrito"]
+                    and f["canon_adicionado"] is False for f in facts),
+            "Ciclo XXVII: fato sem página ou marcação de origem.")
+    refs=d["referencias_rastreaveis"]
+    require(len({r["id"] for r in refs})==12,
+            "Ciclo XXVII: IDs de referência duplicados.")
+    for ref in refs:
+        require(any(x["id"]==ref["id"]
+                    for x in load(ref["arquivo"])[ref["colecao"]]),
+                "Ciclo XXVII: referência preexistente não localizada: "+ref["id"])
+    cats=("vida_sob_a_corte","memoria_submersa","rio_e_trabalho",
+          "pactos_de_frente","dilemas_civis","vinhetas")
+    rows=[e for cat in cats for e in d[cat]]
+    require(len(rows)==36 and len({e["id"] for e in rows})==36,
+            "Ciclo XXVII: propostas duplicadas ou ausentes.")
+    refs_ids={ref["id"] for ref in refs}
+    require(all(e["estado"]=="proposta_cultural_nao_canonica"
+                and e["referencia_id"] in refs_ids
+                and e["escopo"] in d["escopos"]
+                and e["situacao_documentada"] is False
+                and e["ocorreu"] is False
+                and e["aprovacao_autoral"] is False
+                and e["canon_aplicado"] is False for e in rows),
+            "Ciclo XXVII: proposta promovida a acontecimento.")
+    require(len({q["id"] for q in d["perguntas_para_autor"]})==10
+            and all(q["resposta_aprovada"] is None
+                    and q["estado"]=="pendente_de_autoria"
+                    for q in d["perguntas_para_autor"]),
+            "Ciclo XXVII: pergunta respondida sem manifestação autoral.")
+    require(len(load("dist/carcaca/creatures.json"))==7,
+            "Ciclo XXVII: sete criaturas canônicas devem permanecer intocadas.")
+    print("Ciclo XXVII: 12 fatos, 36 propostas, 12 referências e 10 perguntas; sem canonização.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -4122,6 +4189,7 @@ def main():
     validar_costa_sul_civil_xxiv()
     validar_portomonte_templo_governo_xxv()
     validar_revisao_autoral_portomonte_xxvi()
+    validar_foz_shadar_memoria_xxvii()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
