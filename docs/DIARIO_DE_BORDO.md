@@ -501,3 +501,10 @@ O [novo dossiê](CAATINGA_VIDA_CIVIL_CICLO23.md) separa doze afirmações docume
 O [JSON](../data/worldbuilding/caatinga-vida-civil-ciclo23.json) inclui **40 propostas** (12 domínios sociais, 6 circuitos materiais, 6 dilemas de justiça hídrica, 6 mobilidades, 5 relações interregionais, 5 vinhetas não ocorridas), **12 ponteiros de fonte existentes** e **10 perguntas autorais**. Integram-se schema, validador referencial, seis índices determinísticos, API ESM, testes Node/Python e atualização do roadmap. Nenhum lugar novo foi adicionado à `regiao:caatinga` e as sete criaturas canônicas permanecem intactas.
 
 O próximo horizonte sugerido é a **vida civil na Costa Sul e Portomonte**, com foco em agricultura sob bênção de Deméter, ofícios, instituições de vizinhança e relações com os povos insulares, evitando repetir os dossiês de pressão marinha e fronteira já existentes.
+
+
+## 2026-10-28 · Ciclo XXIV — Portomonte além da ameaça marinha
+
+O ciclo foi iniciado a partir da orientação do XXIII para explorar as condições civis da Costa Sul. Foram integrados dez fatos das páginas 5, 12, 14 e 15 do Hack e trinta e seis propostas sociais sobre famílias, cuidado, infância, trabalho, educação, circulação e crenças. A cada hipótese corresponde uma referência preexistente dentre treze IDs de propostas do litoral, da pressão do Mar de Sangue e da fronteira com a Caatinga. As dez perguntas do autor continuam sem respostas presumidas.
+
+A investigação evita equiparar o milagre agrícola de Deméter a potabilidade doméstica, bem como o comércio de Portomonte a poder administrativo sobre as ilhas. Os personagens, portos, estruturas civis e encontros anteriores continuam propostas. O ciclo insere JSON Schema, validador sem mutação, exportações/indexação determinísticas, cliente ESM e testes. Nenhuma ficha de monstro nem regra DW foi alterada.
