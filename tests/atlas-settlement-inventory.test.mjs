@@ -82,7 +82,7 @@ test("Povoamento: interface mostra 14 propostas, 7 equivalências e registro for
  } }});
  click("equivalencias");assert.equal((el.innerHTML.match(/class="settlement-equivalence"/g)||[]).length,7);
  click("inventario");assert.match(el.innerHTML,/Os três registros formais existentes/);
- assert.match(el.innerHTML,/não o total real de localidades/);
+ assert.match(el.innerHTML,/nunca o total real de localidades/);
 });
 test("Povoamento: HTML e workflows carregam dados e testes",()=>{
  const html=read("site/atlas/index.html");
