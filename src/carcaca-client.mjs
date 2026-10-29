@@ -97,7 +97,7 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
     if(!procedure||!consequence)return null;
     return {
       estado:"pacote_de_mesa_sem_execucao",
-      cena:{...scene},
+      cena:{...scene,evidencias_sugeridas:[...scene.evidencias_sugeridas]},
       procedimento:{...procedure},
       evidencias:evidence.map(x=>({...x})),
       consequencia_condicional:{...consequence},
