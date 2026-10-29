@@ -1,0 +1,420 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Matriz editorial XXVI — sem escolha autoral",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "regiao_id",
+    "assentamento_id",
+    "fonte_matriz",
+    "aprovacao_autoral",
+    "mutacao_canonica_automatica",
+    "modelo_governo_aprovado",
+    "agua_potavel_aprovada",
+    "operacao_ritual_aprovada",
+    "alterou_atlas",
+    "alterou_criaturas",
+    "alterou_regras_dw",
+    "politica_de_aprovacao",
+    "etapas_de_revisao",
+    "decisoes",
+    "guardas",
+    "impactos_condicionais",
+    "contagens"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 5
+    },
+    "estado": {
+      "const": "pauta_editorial_pendente"
+    },
+    "regiao_id": {
+      "const": "regiao:costa-sul"
+    },
+    "assentamento_id": {
+      "const": "assentamento:portomonte"
+    },
+    "fonte_matriz": {
+      "const": "data/worldbuilding/portomonte-templo-governo-ciclo25.json"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "mutacao_canonica_automatica": {
+      "const": false
+    },
+    "modelo_governo_aprovado": {
+      "type": "null"
+    },
+    "agua_potavel_aprovada": {
+      "type": "null"
+    },
+    "operacao_ritual_aprovada": {
+      "type": "null"
+    },
+    "alterou_atlas": {
+      "const": false
+    },
+    "alterou_criaturas": {
+      "const": false
+    },
+    "alterou_regras_dw": {
+      "const": false
+    },
+    "politica_de_aprovacao": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "condicao",
+        "proveniencia_exigida",
+        "silencio_significa_aprovacao",
+        "consulta_aplica_alteracao",
+        "simulacao_aplica_alteracao"
+      ],
+      "properties": {
+        "condicao": {
+          "type": "string",
+          "minLength": 30
+        },
+        "proveniencia_exigida": {
+          "type": "array",
+          "minItems": 6,
+          "maxItems": 6,
+          "items": {
+            "type": "string"
+          }
+        },
+        "silencio_significa_aprovacao": {
+          "const": false
+        },
+        "consulta_aplica_alteracao": {
+          "const": false
+        },
+        "simulacao_aplica_alteracao": {
+          "const": false
+        }
+      }
+    },
+    "etapas_de_revisao": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "escopo",
+          "decisoes",
+          "concluida",
+          "aprovacao_autoral"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvi:etapa:"
+          },
+          "nome": {
+            "type": "string"
+          },
+          "escopo": {
+            "type": "string"
+          },
+          "decisoes": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "concluida": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          }
+        }
+      }
+    },
+    "decisoes": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "ordem_editorial",
+          "dominio",
+          "prioridade",
+          "pergunta",
+          "origem_pergunta_id",
+          "referencias_de_proposta",
+          "depende_de",
+          "nota_dependencias",
+          "opcoes",
+          "estado",
+          "opcao_escolhida_id",
+          "texto_autoral_aprovado",
+          "fonte_da_aprovacao",
+          "data_da_aprovacao",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvi:decisao:"
+          },
+          "ordem_editorial": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 12
+          },
+          "dominio": {
+            "type": "string"
+          },
+          "prioridade": {
+            "enum": [
+              "critica",
+              "alta",
+              "media",
+              "baixa"
+            ]
+          },
+          "pergunta": {
+            "type": "string",
+            "minLength": 15
+          },
+          "origem_pergunta_id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxv:pergunta:"
+          },
+          "referencias_de_proposta": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^worldbuilding-xxv:"
+            }
+          },
+          "depende_de": {
+            "type": "array",
+            "uniqueItems": true,
+            "items": {
+              "type": "string",
+              "pattern": "^worldbuilding-xxvi:decisao:"
+            }
+          },
+          "nota_dependencias": {
+            "type": "string"
+          },
+          "opcoes": {
+            "type": "array",
+            "minItems": 3,
+            "maxItems": 5,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "id",
+                "rotulo",
+                "formulacao_autoral_possivel",
+                "risco_da_escolha",
+                "modelo_xxv_id",
+                "estado",
+                "aprovacao_autoral",
+                "canon_aplicado"
+              ],
+              "properties": {
+                "id": {
+                  "type": "string",
+                  "pattern": "^worldbuilding-xxvi:opcao:"
+                },
+                "rotulo": {
+                  "type": "string",
+                  "minLength": 5
+                },
+                "formulacao_autoral_possivel": {
+                  "type": "string",
+                  "minLength": 20
+                },
+                "risco_da_escolha": {
+                  "type": "string",
+                  "minLength": 15
+                },
+                "modelo_xxv_id": {
+                  "type": [
+                    "string",
+                    "null"
+                  ]
+                },
+                "estado": {
+                  "const": "candidata_nao_adotada"
+                },
+                "aprovacao_autoral": {
+                  "const": false
+                },
+                "canon_aplicado": {
+                  "const": false
+                }
+              }
+            }
+          },
+          "estado": {
+            "const": "aguarda_decisao_expressa"
+          },
+          "opcao_escolhida_id": {
+            "type": "null"
+          },
+          "texto_autoral_aprovado": {
+            "type": "null"
+          },
+          "fonte_da_aprovacao": {
+            "type": "null"
+          },
+          "data_da_aprovacao": {
+            "type": "null"
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "guardas": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "regra",
+          "ativo"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvi:guarda:"
+          },
+          "regra": {
+            "type": "string",
+            "minLength": 30
+          },
+          "ativo": {
+            "const": true
+          }
+        }
+      }
+    },
+    "impactos_condicionais": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "depende_de",
+          "arquivo_alvo_condicional",
+          "efeito_possivel_depois_de_aprovacao",
+          "inferencia_proibida",
+          "estado",
+          "aplicado",
+          "aprovacao_autoral"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvi:impacto:"
+          },
+          "depende_de": {
+            "type": "array",
+            "minItems": 1,
+            "uniqueItems": true,
+            "items": {
+              "type": "string"
+            }
+          },
+          "arquivo_alvo_condicional": {
+            "type": "string"
+          },
+          "efeito_possivel_depois_de_aprovacao": {
+            "type": "string",
+            "minLength": 30
+          },
+          "inferencia_proibida": {
+            "type": "string",
+            "minLength": 30
+          },
+          "estado": {
+            "const": "mapa_condicional_nao_executavel"
+          },
+          "aplicado": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          }
+        }
+      }
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "etapas",
+        "decisoes",
+        "opcoes",
+        "guardas",
+        "impactos",
+        "pendentes",
+        "aprovadas",
+        "impactos_aplicados"
+      ],
+      "properties": {
+        "etapas": {
+          "const": 4
+        },
+        "decisoes": {
+          "const": 12
+        },
+        "opcoes": {
+          "const": 38
+        },
+        "guardas": {
+          "const": 12
+        },
+        "impactos": {
+          "const": 10
+        },
+        "pendentes": {
+          "const": 12
+        },
+        "aprovadas": {
+          "const": 0
+        },
+        "impactos_aplicados": {
+          "const": 0
+        }
+      }
+    }
+  }
+}

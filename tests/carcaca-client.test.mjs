@@ -82,6 +82,8 @@ const fixtures={
     hack_artificer_movement_indexes:"hack-artificer-movement-indexes.json",
     hack_mercenary_movements:"hack-mercenary-movements.json",
     hack_mercenary_movement_indexes:"hack-mercenary-movement-indexes.json",
+    portomonte_authorial_review:"portomonte-authorial-review.json",
+    portomonte_authorial_review_indexes:"portomonte-authorial-review-indexes.json",
     portomonte_temple_civic:"portomonte-temple-civic.json",
     portomonte_temple_civic_indexes:"portomonte-temple-civic-indexes.json",
     costa_sul_civil_life:"costa-sul-civil-life.json",
@@ -188,6 +190,30 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "portomonte-authorial-review.json":{
+    "estado":"pauta_editorial_pendente","aprovacao_autoral":false,"mutacao_canonica_automatica":false,
+    "modelo_governo_aprovado":null,"agua_potavel_aprovada":null,"contagens":{"decisoes":12,"opcoes":38},
+    "decisoes":[
+      {"id":"worldbuilding-xxvi:decisao:autoridade","dominio":"autoridade","prioridade":"critica",
+       "pergunta":"Quem toma decisões civis em Portomonte?","origem_pergunta_id":"worldbuilding-xxv:pergunta:autoridade",
+       "depende_de":[],"opcao_escolhida_id":null,
+       "opcoes":[{"id":"worldbuilding-xxvi:opcao:autoridade:casas","rotulo":"Assembleia de casas e ofícios",
+       "formulacao_autoral_possivel":"O governo seria assemblear","risco_da_escolha":"Representatividade"}]},
+      {"id":"worldbuilding-xxvi:decisao:templo","dominio":"templo","prioridade":"critica",
+       "pergunta":"Templo de Deméter tem poder político?","origem_pergunta_id":"worldbuilding-xxv:pergunta:templo",
+       "depende_de":["worldbuilding-xxvi:decisao:autoridade"],
+       "opcoes":[{"id":"worldbuilding-xxvi:opcao:templo:autonomia-ritual","rotulo":"Autonomia ritual",
+       "formulacao_autoral_possivel":"Templo só atua no rito","risco_da_escolha":"O poder informal continua"}]}],
+    "impactos_condicionais":[{"id":"worldbuilding-xxvi:impacto:governo","depende_de":["worldbuilding-xxvi:decisao:autoridade","worldbuilding-xxvi:decisao:templo"],
+     "arquivo_alvo_condicional":"curadoria/assentamentos/portomonte.json",
+     "efeito_possivel_depois_de_aprovacao":"Somente após aprovação"},
+     {"id":"worldbuilding-xxvi:impacto:agua-domestica","depende_de":["worldbuilding-xxvi:decisao:agua-domestica"],
+     "arquivo_alvo_condicional":"curadoria/assentamentos/portomonte.json",
+     "efeito_possivel_depois_de_aprovacao":"Verificar água"}]},
+  "portomonte-authorial-review-indexes.json":{"by_prioridade":{"critica":["worldbuilding-xxvi:decisao:autoridade","worldbuilding-xxvi:decisao:templo"]},
+    "by_pergunta":{"worldbuilding-xxv:pergunta:autoridade":["worldbuilding-xxvi:decisao:autoridade"]},
+    "by_depende_de":{"worldbuilding-xxvi:decisao:autoridade":["worldbuilding-xxvi:decisao:templo"]},
+    "by_decisao":{"worldbuilding-xxvi:decisao:autoridade":["worldbuilding-xxvi:opcao:autoridade:casas"]}},
   "portomonte-temple-civic.json":{"regiao_id":"regiao:costa-sul","assentamento_id":"assentamento:portomonte","modelo_de_governo_adotado":null,"agua_domestica_potavel_confirmada":null,"aprovacao_autoral":false,"efeito_canonico_automatico":false,"contagens":{"fatos":8,"referencias":12,"perguntas":12,"modelos_de_governo":4,"etapas_de_trabalho":8,"relacoes_sociais":8,"garantias_civis":6,"dilemas":6,"vinhetas":4},"modelos_de_governo":[{"id":"worldbuilding-xxv:modelos_de_governo:templo-consultivo","nome_editorial":"Templo com voz, não trono","hipotese_condicional":"Um conselho civil consulta o templo sem delegar governo","contradicao_material":"Poder religioso e poder civil não são equivalentes","pergunta_critica":"Quem tem direito ao voto?","referencia_id":"xxiv:trabalhos:templo","pagina_contextual":5,"estatuto":"alternativa_nao_adotada","aprovacao_autoral":false,"ocorreu":false,"efeito_mecanico":false}],"etapas_de_trabalho":[{"id":"worldbuilding-xxv:etapas_de_trabalho:destinacao","nome_editorial":"Água agrícola não é água de beber","hipotese_condicional":"Separar usos","contradicao_material":"Risco público","pergunta_critica":"Potável?","referencia_id":"balanco:portomonte-agua-purificada","pagina_contextual":5}],"relacoes_sociais":[],"garantias_civis":[],"dilemas":[],"vinhetas":[],"fatos_documentados":[{"id":"worldbuilding-xxv:fato:02","novo_canon":false}],"perguntas_para_autor":[{"id":"worldbuilding-xxv:pergunta:autoridade","resposta_aprovada":null}]},
   "portomonte-temple-civic-indexes.json":{"by_categoria":{"modelos_de_governo":["worldbuilding-xxv:modelos_de_governo:templo-consultivo"]},"by_referencia":{"xxiv:trabalhos:templo":["worldbuilding-xxv:modelos_de_governo:templo-consultivo"]},"by_pagina":{"5":["worldbuilding-xxv:modelos_de_governo:templo-consultivo"]}},
   "costa-sul-civil-life.json":{"aprovacao_autoral":false,"efeito_canonico_automatico":false,"regiao_id":"regiao:costa-sul","contagens":{"propostas":36},"vida_domestica":[{"id":"xxiv:vida_domestica:cozinha","nome":"A cozinha que sustenta o porto","hipotese":"Tarefas domésticas compartilhadas","contradicao":"Trabalho invisível","pagina_contextual":5,"escopo":"portomonte","referencia_preexistente":"costa-sul:espaco:varal","ocorreu":false}],"trabalhos":[],"saberes":[],"circulacao":[],"tensoes_civis":[],"vinhetas":[],"fatos_documentados":[{"id":"xxiv:fato:1","canon_novo":false}],"perguntas_para_autor":[{"id":"xxiv:pergunta:1","resposta_aprovada":null}]},
@@ -2697,4 +2723,38 @@ test("Ciclo XXV: modelos alternativos não são governo adotado",async()=>{
   assert.equal((await atlas.getPortomonteTempleCivic()).modelo_de_governo_adotado,null);
   assert.equal(await atlas.previewPortomonteCivicModel("worldbuilding-xxv:modelos_de_governo:fake"),null);
   await assert.rejects(()=>atlas.previewPortomonteCivicModel(modelId,{observacoesDeMesa:"texto"}),TypeError);
+});
+
+test("Ciclo XXVI: simulações não homologam escolhas autorais",async()=>{
+  const d=await atlas.getPortomonteAuthorialReview();
+  assert.equal(d.estado,"pauta_editorial_pendente");
+  assert.equal(d.aprovacao_autoral,false);
+  assert.equal(d.modelo_governo_aprovado,null);
+  const indexes=await atlas.getPortomonteAuthorialReviewIndexes();
+  assert.equal(indexes.by_depende_de["worldbuilding-xxvi:decisao:autoridade"].length,1);
+  const governa=await atlas.searchPortomonteReview({dominio:"autoridade",prioridade:"critica"});
+  assert.equal(governa.length,1);
+  assert.equal((await atlas.searchPortomonteReview({dependeDe:"worldbuilding-xxvi:decisao:autoridade"})).length,1);
+  assert.equal((await atlas.searchPortomonteReview({perguntaId:"worldbuilding-xxv:pergunta:templo"})).length,1);
+  assert.equal((await atlas.searchPortomonteReview({query:"ofícios"})).length,1);
+  assert.equal((await atlas.searchPortomonteReview({query:"inexistente-zz"})).length,0);
+  const decId="worldbuilding-xxvi:decisao:autoridade";
+  const optId="worldbuilding-xxvi:opcao:autoridade:casas";
+  assert.equal((await atlas.getPortomonteReviewDecision(decId)).opcao_escolhida_id,null);
+  assert.equal((await atlas.getPortomonteReviewOption(optId)).decisao_id,decId);
+  assert.equal(await atlas.getPortomonteReviewDecision("worldbuilding-xxvi:decisao:inexistente"),null);
+  assert.equal(await atlas.getPortomonteReviewOption("worldbuilding-xxvi:opcao:inexistente"),null);
+  const preview=await atlas.previewPortomonteReviewOption(decId,optId,{observacoes:["Mesa discutiu conselho"]});
+  assert.equal(preview.estado,"simulacao_editorial_sem_mutacao");
+  assert.equal(preview.opcao_escolhida,false);
+  assert.equal(preview.aprovacao_autoral,false);
+  assert.equal(preview.canon_aplicado,false);
+  assert.equal(preview.impactos_aplicados.length,0);
+  assert.equal(preview.impacto_condicional_nao_executavel.length,1);
+  assert.equal(preview.impacto_condicional_nao_executavel[0].aplicado,false);
+  assert.equal(preview.observacoes_de_mesa_nao_verificadas.length,1);
+  assert.equal((await atlas.getPortomonteReviewDecision(decId)).opcao_escolhida_id,null);
+  assert.equal(await atlas.previewPortomonteReviewOption(decId,"invalid"),null);
+  assert.equal(await atlas.previewPortomonteReviewOption("invalid",optId),null);
+  await assert.rejects(()=>atlas.previewPortomonteReviewOption(decId,optId,{observacoes:"texto"}),TypeError);
 });

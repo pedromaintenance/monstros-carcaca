@@ -60,6 +60,58 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getPortomonteAuthorialReview(){return byKey("portomonte_authorial_review");}
+  async function getPortomonteAuthorialReviewIndexes(){return byKey("portomonte_authorial_review_indexes");}
+  async function getPortomonteReviewDecision(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xxvi:decisao:"))return null;
+    const d=await getPortomonteAuthorialReview();
+    return d.decisoes.find(q=>q.id===id)??null;
+  }
+  async function getPortomonteReviewOption(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xxvi:opcao:"))return null;
+    const d=await getPortomonteAuthorialReview();
+    for(const q of d.decisoes){
+      const opt=q.opcoes.find(o=>o.id===id);
+      if(opt)return {...opt,decisao_id:q.id};
+    }
+    return null;
+  }
+  async function searchPortomonteReview({prioridade,dominio,dependeDe,perguntaId,query}={}){
+    const d=await getPortomonteAuthorialReview();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return d.decisoes.filter(q=>
+      (!prioridade||q.prioridade===prioridade)&&
+      (!dominio||q.dominio===dominio)&&
+      (!dependeDe||q.depende_de.includes(dependeDe))&&
+      (!perguntaId||q.origem_pergunta_id===perguntaId)&&
+      (!query||norm([q.pergunta,q.dominio,q.id,
+        ...q.opcoes.map(o=>o.rotulo+" "+o.formulacao_autoral_possivel)].join(" ")).includes(norm(query))));
+  }
+  async function previewPortomonteReviewOption(decisaoId,opcaoId,{observacoes=[]}={}){
+    if(!Array.isArray(observacoes)||observacoes.some(x=>typeof x!=="string")){
+      throw new TypeError("observacoes deve ser um array de textos");
+    }
+    const d=await getPortomonteAuthorialReview();
+    const dec=d.decisoes.find(x=>x.id===decisaoId);
+    if(!dec)return null;
+    const option=dec.opcoes.find(x=>x.id===opcaoId);
+    if(!option)return null;
+    return {
+      estado:"simulacao_editorial_sem_mutacao",
+      decisao_id:dec.id,opcao_id:option.id,rotulo:option.rotulo,
+      hipotese:option.formulacao_autoral_possivel,
+      risco:option.risco_da_escolha,dependencias_editoriais:[...dec.depende_de],
+      impacto_condicional_nao_executavel:d.impactos_condicionais
+        .filter(i=>i.depende_de.includes(dec.id))
+        .map(i=>({id:i.id,arquivo_alvo_condicional:i.arquivo_alvo_condicional,
+                 efeito_possivel_depois_de_aprovacao:i.efeito_possivel_depois_de_aprovacao,
+                 aplicado:false})),
+      observacoes_de_mesa_nao_verificadas:[...observacoes],
+      opcao_escolhida:false,aprovacao_autoral:false,
+      canon_aplicado:false,impactos_aplicados:[],
+      nota:"Prévia de alternativa: não registra decisão, não altera atlas, regras ou campanha."
+    };
+  }
   async function getPortomonteTempleCivic(){return byKey("portomonte_temple_civic");}
   async function getPortomonteTempleCivicIndexes(){return byKey("portomonte_temple_civic_indexes");}
   async function getPortomonteTempleCivicEntry(id){
@@ -1657,6 +1709,9 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getPortomonteAuthorialReview,getPortomonteAuthorialReviewIndexes,
+          getPortomonteReviewDecision,getPortomonteReviewOption,
+          searchPortomonteReview,previewPortomonteReviewOption,
           getPortomonteTempleCivic,getPortomonteTempleCivicIndexes,
           getPortomonteTempleCivicEntry,searchPortomonteTempleCivic,
           previewPortomonteCivicModel,
