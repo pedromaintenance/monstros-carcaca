@@ -1,0 +1,336 @@
+{
+  "by_categoria": {
+    "economia_e_movimento": [
+      "worldbuilding-xxix:economia_e_movimento:carga",
+      "worldbuilding-xxix:economia_e_movimento:contrato",
+      "worldbuilding-xxix:economia_e_movimento:desvio",
+      "worldbuilding-xxix:economia_e_movimento:documento",
+      "worldbuilding-xxix:economia_e_movimento:pedagio",
+      "worldbuilding-xxix:economia_e_movimento:provisao"
+    ],
+    "interfaces_civis": [
+      "worldbuilding-xxix:interfaces_civis:acesso",
+      "worldbuilding-xxix:interfaces_civis:ferramentas",
+      "worldbuilding-xxix:interfaces_civis:origem",
+      "worldbuilding-xxix:interfaces_civis:promessa",
+      "worldbuilding-xxix:interfaces_civis:recusa",
+      "worldbuilding-xxix:interfaces_civis:refugio",
+      "worldbuilding-xxix:interfaces_civis:servico",
+      "worldbuilding-xxix:interfaces_civis:travessia"
+    ],
+    "modelos_do_rito": [
+      "worldbuilding-xxix:modelos_do_rito:ciclico",
+      "worldbuilding-xxix:modelos_do_rito:insular",
+      "worldbuilding-xxix:modelos_do_rito:mediado",
+      "worldbuilding-xxix:modelos_do_rito:simbolico"
+    ],
+    "provas_e_incerteza": [
+      "worldbuilding-xxix:provas_e_incerteza:boato",
+      "worldbuilding-xxix:provas_e_incerteza:coercao",
+      "worldbuilding-xxix:provas_e_incerteza:contraprova",
+      "worldbuilding-xxix:provas_e_incerteza:correlacao",
+      "worldbuilding-xxix:provas_e_incerteza:depoimento",
+      "worldbuilding-xxix:provas_e_incerteza:medicao",
+      "worldbuilding-xxix:provas_e_incerteza:observacao",
+      "worldbuilding-xxix:provas_e_incerteza:registro"
+    ],
+    "tensoes_de_poder": [
+      "worldbuilding-xxix:tensoes_de_poder:aliados",
+      "worldbuilding-xxix:tensoes_de_poder:lua-divindade",
+      "worldbuilding-xxix:tensoes_de_poder:poder",
+      "worldbuilding-xxix:tensoes_de_poder:protecao",
+      "worldbuilding-xxix:tensoes_de_poder:revolta",
+      "worldbuilding-xxix:tensoes_de_poder:severina-morwen"
+    ],
+    "vinhetas": [
+      "worldbuilding-xxix:vinhetas:reflexo",
+      "worldbuilding-xxix:vinhetas:remo",
+      "worldbuilding-xxix:vinhetas:selo",
+      "worldbuilding-xxix:vinhetas:silencio"
+    ]
+  },
+  "by_escopo": {
+    "interface": [
+      "worldbuilding-xxix:economia_e_movimento:pedagio",
+      "worldbuilding-xxix:economia_e_movimento:provisao",
+      "worldbuilding-xxix:interfaces_civis:origem",
+      "worldbuilding-xxix:interfaces_civis:promessa",
+      "worldbuilding-xxix:interfaces_civis:refugio",
+      "worldbuilding-xxix:modelos_do_rito:simbolico",
+      "worldbuilding-xxix:provas_e_incerteza:boato",
+      "worldbuilding-xxix:provas_e_incerteza:coercao",
+      "worldbuilding-xxix:provas_e_incerteza:depoimento",
+      "worldbuilding-xxix:tensoes_de_poder:aliados",
+      "worldbuilding-xxix:tensoes_de_poder:protecao",
+      "worldbuilding-xxix:tensoes_de_poder:revolta",
+      "worldbuilding-xxix:tensoes_de_poder:severina-morwen",
+      "worldbuilding-xxix:vinhetas:selo",
+      "worldbuilding-xxix:vinhetas:silencio"
+    ],
+    "rio": [
+      "worldbuilding-xxix:economia_e_movimento:carga",
+      "worldbuilding-xxix:economia_e_movimento:contrato",
+      "worldbuilding-xxix:economia_e_movimento:desvio",
+      "worldbuilding-xxix:economia_e_movimento:documento",
+      "worldbuilding-xxix:interfaces_civis:acesso",
+      "worldbuilding-xxix:interfaces_civis:ferramentas",
+      "worldbuilding-xxix:interfaces_civis:recusa",
+      "worldbuilding-xxix:interfaces_civis:travessia",
+      "worldbuilding-xxix:modelos_do_rito:mediado",
+      "worldbuilding-xxix:provas_e_incerteza:contraprova",
+      "worldbuilding-xxix:provas_e_incerteza:correlacao",
+      "worldbuilding-xxix:provas_e_incerteza:medicao",
+      "worldbuilding-xxix:tensoes_de_poder:poder",
+      "worldbuilding-xxix:vinhetas:remo"
+    ],
+    "templo": [
+      "worldbuilding-xxix:interfaces_civis:servico",
+      "worldbuilding-xxix:modelos_do_rito:ciclico",
+      "worldbuilding-xxix:modelos_do_rito:insular",
+      "worldbuilding-xxix:provas_e_incerteza:observacao",
+      "worldbuilding-xxix:provas_e_incerteza:registro",
+      "worldbuilding-xxix:tensoes_de_poder:lua-divindade",
+      "worldbuilding-xxix:vinhetas:reflexo"
+    ]
+  },
+  "by_referencia": {
+    "area-proposta:rio": [
+      "worldbuilding-xxix:economia_e_movimento:provisao",
+      "worldbuilding-xxix:tensoes_de_poder:severina-morwen"
+    ],
+    "faccao:corte-shadow-fey": [
+      "worldbuilding-xxix:interfaces_civis:servico",
+      "worldbuilding-xxix:modelos_do_rito:simbolico",
+      "worldbuilding-xxix:provas_e_incerteza:coercao",
+      "worldbuilding-xxix:tensoes_de_poder:protecao"
+    ],
+    "rio-garganta:circuito:barcas": [
+      "worldbuilding-xxix:economia_e_movimento:contrato",
+      "worldbuilding-xxix:interfaces_civis:ferramentas",
+      "worldbuilding-xxix:provas_e_incerteza:contraprova"
+    ],
+    "rio-garganta:lugar:balsa": [
+      "worldbuilding-xxix:economia_e_movimento:desvio",
+      "worldbuilding-xxix:interfaces_civis:travessia"
+    ],
+    "rio-garganta:lugar:lua": [
+      "worldbuilding-xxix:modelos_do_rito:ciclico",
+      "worldbuilding-xxix:provas_e_incerteza:depoimento",
+      "worldbuilding-xxix:tensoes_de_poder:lua-divindade",
+      "worldbuilding-xxix:vinhetas:reflexo"
+    ],
+    "worldbuilding-xxvii:rio_e_trabalho:barreiras": [
+      "worldbuilding-xxix:interfaces_civis:acesso",
+      "worldbuilding-xxix:tensoes_de_poder:poder"
+    ],
+    "worldbuilding-xxviii:informacao_e_ritos:boato": [
+      "worldbuilding-xxix:provas_e_incerteza:boato",
+      "worldbuilding-xxix:tensoes_de_poder:revolta",
+      "worldbuilding-xxix:vinhetas:silencio"
+    ],
+    "worldbuilding-xxviii:informacao_e_ritos:corrente": [
+      "worldbuilding-xxix:modelos_do_rito:mediado",
+      "worldbuilding-xxix:provas_e_incerteza:correlacao"
+    ],
+    "worldbuilding-xxviii:informacao_e_ritos:ritual": [
+      "worldbuilding-xxix:modelos_do_rito:insular",
+      "worldbuilding-xxix:provas_e_incerteza:observacao"
+    ],
+    "worldbuilding-xxviii:redes_de_resistencia:travessia": [
+      "worldbuilding-xxix:interfaces_civis:refugio",
+      "worldbuilding-xxix:tensoes_de_poder:aliados"
+    ],
+    "worldbuilding-xxviii:servidao_e_agencia:evasao": [
+      "worldbuilding-xxix:economia_e_movimento:carga"
+    ],
+    "worldbuilding-xxviii:trabalho_cotidiano:navegantes": [
+      "worldbuilding-xxix:interfaces_civis:recusa",
+      "worldbuilding-xxix:provas_e_incerteza:medicao",
+      "worldbuilding-xxix:vinhetas:remo"
+    ],
+    "worldbuilding-xxviii:tributos_e_passagens:cobranca": [
+      "worldbuilding-xxix:economia_e_movimento:pedagio",
+      "worldbuilding-xxix:interfaces_civis:promessa"
+    ],
+    "worldbuilding-xxviii:tributos_e_passagens:identidade": [
+      "worldbuilding-xxix:economia_e_movimento:documento",
+      "worldbuilding-xxix:interfaces_civis:origem",
+      "worldbuilding-xxix:provas_e_incerteza:registro",
+      "worldbuilding-xxix:vinhetas:selo"
+    ]
+  },
+  "by_estatuto": {
+    "alternativa_nao_adotada": [
+      "worldbuilding-xxix:economia_e_movimento:carga",
+      "worldbuilding-xxix:economia_e_movimento:contrato",
+      "worldbuilding-xxix:economia_e_movimento:desvio",
+      "worldbuilding-xxix:economia_e_movimento:documento",
+      "worldbuilding-xxix:economia_e_movimento:pedagio",
+      "worldbuilding-xxix:economia_e_movimento:provisao",
+      "worldbuilding-xxix:interfaces_civis:acesso",
+      "worldbuilding-xxix:interfaces_civis:ferramentas",
+      "worldbuilding-xxix:interfaces_civis:origem",
+      "worldbuilding-xxix:interfaces_civis:promessa",
+      "worldbuilding-xxix:interfaces_civis:recusa",
+      "worldbuilding-xxix:interfaces_civis:refugio",
+      "worldbuilding-xxix:interfaces_civis:servico",
+      "worldbuilding-xxix:interfaces_civis:travessia",
+      "worldbuilding-xxix:modelos_do_rito:ciclico",
+      "worldbuilding-xxix:modelos_do_rito:insular",
+      "worldbuilding-xxix:modelos_do_rito:mediado",
+      "worldbuilding-xxix:modelos_do_rito:simbolico",
+      "worldbuilding-xxix:provas_e_incerteza:boato",
+      "worldbuilding-xxix:provas_e_incerteza:coercao",
+      "worldbuilding-xxix:provas_e_incerteza:contraprova",
+      "worldbuilding-xxix:provas_e_incerteza:correlacao",
+      "worldbuilding-xxix:provas_e_incerteza:depoimento",
+      "worldbuilding-xxix:provas_e_incerteza:medicao",
+      "worldbuilding-xxix:provas_e_incerteza:observacao",
+      "worldbuilding-xxix:provas_e_incerteza:registro",
+      "worldbuilding-xxix:tensoes_de_poder:aliados",
+      "worldbuilding-xxix:tensoes_de_poder:lua-divindade",
+      "worldbuilding-xxix:tensoes_de_poder:poder",
+      "worldbuilding-xxix:tensoes_de_poder:protecao",
+      "worldbuilding-xxix:tensoes_de_poder:revolta",
+      "worldbuilding-xxix:tensoes_de_poder:severina-morwen",
+      "worldbuilding-xxix:vinhetas:reflexo",
+      "worldbuilding-xxix:vinhetas:remo",
+      "worldbuilding-xxix:vinhetas:selo",
+      "worldbuilding-xxix:vinhetas:silencio"
+    ]
+  },
+  "by_nome": {
+    "A corrente como condutora": [
+      "worldbuilding-xxix:modelos_do_rito:mediado"
+    ],
+    "A embarcação não é estoque de pessoas": [
+      "worldbuilding-xxix:economia_e_movimento:carga"
+    ],
+    "A ilha como limite ritual": [
+      "worldbuilding-xxix:modelos_do_rito:insular"
+    ],
+    "A lua não disse seu nome": [
+      "worldbuilding-xxix:tensoes_de_poder:lua-divindade"
+    ],
+    "A notícia que não desembarcou": [
+      "worldbuilding-xxix:vinhetas:silencio"
+    ],
+    "A obediência produzida pela crença": [
+      "worldbuilding-xxix:modelos_do_rito:simbolico"
+    ],
+    "A proteção que cobra obediência": [
+      "worldbuilding-xxix:tensoes_de_poder:protecao"
+    ],
+    "Comida antes de presságio": [
+      "worldbuilding-xxix:economia_e_movimento:provisao"
+    ],
+    "Depois não é por causa": [
+      "worldbuilding-xxix:provas_e_incerteza:correlacao"
+    ],
+    "Dois poderes, nenhuma cadeia definida": [
+      "worldbuilding-xxix:tensoes_de_poder:severina-morwen"
+    ],
+    "Duas testemunhas, duas margens": [
+      "worldbuilding-xxix:provas_e_incerteza:depoimento"
+    ],
+    "Governar o rio não é possuí-lo": [
+      "worldbuilding-xxix:tensoes_de_poder:poder"
+    ],
+    "Margem que não é templo": [
+      "worldbuilding-xxix:interfaces_civis:acesso"
+    ],
+    "Nenhuma vazão inventada": [
+      "worldbuilding-xxix:provas_e_incerteza:medicao"
+    ],
+    "Não antecipar Drakport": [
+      "worldbuilding-xxix:tensoes_de_poder:revolta"
+    ],
+    "O acordo sob ameaça": [
+      "worldbuilding-xxix:provas_e_incerteza:coercao"
+    ],
+    "O aliado que não endossa o culto": [
+      "worldbuilding-xxix:tensoes_de_poder:aliados"
+    ],
+    "O calendário que não foi escrito": [
+      "worldbuilding-xxix:modelos_do_rito:ciclico"
+    ],
+    "O direito de não embarcar": [
+      "worldbuilding-xxix:interfaces_civis:recusa"
+    ],
+    "O documento molhado": [
+      "worldbuilding-xxix:economia_e_movimento:documento"
+    ],
+    "O livro de condições ausentes": [
+      "worldbuilding-xxix:provas_e_incerteza:registro"
+    ],
+    "O peso do testemunho": [
+      "worldbuilding-xxix:interfaces_civis:travessia"
+    ],
+    "O preço da espera": [
+      "worldbuilding-xxix:economia_e_movimento:contrato"
+    ],
+    "O reflexo que todos discutem": [
+      "worldbuilding-xxix:vinhetas:reflexo"
+    ],
+    "O remo que parou": [
+      "worldbuilding-xxix:vinhetas:remo"
+    ],
+    "O reparo sem bênção": [
+      "worldbuilding-xxix:interfaces_civis:ferramentas"
+    ],
+    "O rumor de uma cheia": [
+      "worldbuilding-xxix:provas_e_incerteza:boato"
+    ],
+    "O selo da corrente": [
+      "worldbuilding-xxix:vinhetas:selo"
+    ],
+    "O serviço que ninguém mede": [
+      "worldbuilding-xxix:interfaces_civis:servico"
+    ],
+    "O êxito que não foi narrado": [
+      "worldbuilding-xxix:provas_e_incerteza:contraprova"
+    ],
+    "Prometer a corrente": [
+      "worldbuilding-xxix:interfaces_civis:promessa"
+    ],
+    "Sem rota desenhada": [
+      "worldbuilding-xxix:economia_e_movimento:desvio"
+    ],
+    "Uma bênção cobrada duas vezes": [
+      "worldbuilding-xxix:economia_e_movimento:pedagio"
+    ],
+    "Uma margem acolhe": [
+      "worldbuilding-xxix:interfaces_civis:refugio"
+    ],
+    "Ver a água mudar": [
+      "worldbuilding-xxix:provas_e_incerteza:observacao"
+    ],
+    "Água, medo e procedência": [
+      "worldbuilding-xxix:interfaces_civis:origem"
+    ]
+  },
+  "by_pagina": {
+    "11": [
+      "worldbuilding-xxix:fato:11"
+    ],
+    "22": [
+      "worldbuilding-xxix:fato:12"
+    ],
+    "4": [
+      "worldbuilding-xxix:fato:01",
+      "worldbuilding-xxix:fato:02",
+      "worldbuilding-xxix:fato:03",
+      "worldbuilding-xxix:fato:04",
+      "worldbuilding-xxix:fato:05",
+      "worldbuilding-xxix:fato:06",
+      "worldbuilding-xxix:fato:07"
+    ],
+    "7": [
+      "worldbuilding-xxix:fato:08",
+      "worldbuilding-xxix:fato:09"
+    ],
+    "9": [
+      "worldbuilding-xxix:fato:10"
+    ]
+  }
+}
