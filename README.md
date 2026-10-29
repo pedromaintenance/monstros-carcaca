@@ -104,6 +104,10 @@ A [cronocartografia continental](docs/ATLAS_CRONOCARTOGRAFIA_CICLO40.md) conecta
 
 O [dossiê de circulação material](docs/ATLAS_CIRCULACAO_MATERIAL_CICLO41.md) organiza **24 nós de atividades sociais**, **15 vínculos documentais** e **12 questões em aberto**. O [JSON](data/atlas/circulacao-material-ciclo41.json) cruza comércio e tributação do Rio Ancestral, trabalho forçado em Drakport, extração e forjas de Thargrid, refúgio, agricultura, circulação costeira, trocas subterrâneas e transmissão clandestina de informações. A [visão macro do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/) oferece filtros e inspetor de evidências. **Nenhuma rota, frequência, capacidade, volume de carga ou custo logístico foi inventado**; exigências e cobranças são distinguidas de transferências comprovadas.
 
+## Ciclo XLII — Dependências e vulnerabilidades continentais
+
+O [laboratório de vulnerabilidades](docs/ATLAS_DEPENDENCIAS_VULNERABILIDADES_CICLO42.md) apresenta **11 cenários hipotéticos**, reunidos em cinco sistemas e ancorados em **13 vínculos documentados** do Ciclo XLI. O painel do [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/) permite filtrar, inspecionar e **comparar duas hipóteses** sobre tributação, escravidão colonial, minas e forjas, depósitos, refúgio, comunicação clandestina, agricultura, comércio marítimo e autonomia local. O [JSON](data/atlas/dependencias-vulnerabilidades-ciclo42.json) mantém `ocorreu: false`, `adotado: false`, efeitos apenas condicionais e ausência de perda, probabilidade, duração ou geometria calculada. **Nenhum cenário altera o cânone.**
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
