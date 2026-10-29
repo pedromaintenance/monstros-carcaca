@@ -126,6 +126,10 @@ O [parecer revisado dentro do Atlas](https://pedromaintenance.github.io/monstros
 
 O [plano de povoamento](data/atlas/horizonte-povoamento-macro.json) define as formas de habitação, a política de contagem, os dados ecológicos mínimos e as salvaguardas. O [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#audit-creature-settlements) expõe a regra diretamente na auditoria de escala.
 
+## Ciclo XLIV — Primeiro recenseamento de povoamento e assentamentos de criaturas
+
+O [Inventário do Povoamento no Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#settlementInventory) diferencia **26 âncoras macro, 8 lugares catalogados, 3 registros formais de assentamento (dois são conjuntos coletivos), 16 sementes de cenas, 8 criaturas ecológicas propostas e 14 novos assentamentos fantásticos propostos**. Esses números **não podem ser somados**: identificamos [sete grupos de referências repetidas](docs/ATLAS_INVENTARIO_POVOAMENTO_CICLO44.md), incluindo Portomonte, cavernas Kuo-Toa e ilhas da Costa Sul. O primeiro lote inclui **goblins, fadas, sociedades vegetais, seres elementais, Kuo-Toa, Abissais marinhos, tritões, sereias, svirfneblin, kobolds e comunidades mistas**, cada um com vida, ecologia, autoridade e conflito próprios. **Nenhum dos 14 locais foi canonizado.** [Inventário JSON](data/atlas/inventario-povoamento-ciclo44.json) · [Lote proposto](data/propostas/povoamento-criaturas-lote01.json).
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
