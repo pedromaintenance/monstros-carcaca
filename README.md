@@ -596,3 +596,8 @@ O [dossiê do Templo da Lua](docs/TEMPLO_LUA_SEVERINA_CICLO29.md) aprofunda a di
 ### Ciclo XXX — Kit do Mestre: investigar sem decretar
 
 O [manual de mesa do Rio Ancestral](docs/KIT_MESTRE_RIO_ANCESTRAL_CICLO30.md) transforma os ciclos XXVII–XXIX em ferramentas **não canônicas e não executáveis automaticamente**: **6 procedimentos de investigação**, **12 cartões de evidência** com tipo epistemológico explícito, **8 enquadramentos de cena**, **6 consequências condicionais**, **4 salvaguardas** e **8 perguntas abertas**. A base [JSON](data/mesa/rio-ancestral-kit-mestre-ciclo30.json) preserva 6 fatos do Hack (pp. 4, 7, 11, 22), 16 IDs cruzados com propostas anteriores e a Revolta de Drakport não ocorrida. O arquivo é validado por JSON Schema e testes; seus índices cobrem tipo de evidência, referência, página e enlaces de cena. A API ESM expõe `getRiverGMToolkit`, `getRiverGMToolkitIndexes`, `getRiverGMToolkitEntry`, `searchRiverGMToolkit` e `buildRiverGMSessionPacket`. O pacote de cena é uma cópia de leitura: não aplica eventos, regras DW, conflitos, aprovação autoral ou resultados de campanha.
+
+
+### Atlas Hierárquico da Carcaça (protótipo Pages)
+
+Navegação visual de **Carcaça → setor → classe de lugar → lugar → categoria → registro → vínculos** em [site/atlas/index.html](site/atlas/index.html), com [regras e fontes do atlas](docs/ATLAS_HIERARQUICO_PAGES.md). O site separa referências ao Hack, dados estruturados, propostas não homologadas e lacunas; a publicação no Pages usa o workflow [publicar-atlas-pages.yml](.github/workflows/publicar-atlas-pages.yml). Endereço previsto, quando habilitado: **https://pedromaintenance.github.io/monstros-carcaca/atlas/**.
