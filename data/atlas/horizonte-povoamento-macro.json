@@ -176,7 +176,11 @@
       "criar_automaticamente": false,
       "inclui_assentamentos_de_criaturas": true,
       "auditar_habitats_magicos_e_ecologicos": true,
-      "meta_reservada_a_humanoides": false
+      "meta_reservada_a_humanoides": false,
+      "setores_possiveis": [
+        "costa",
+        "azuis"
+      ]
     },
     {
       "id": "frente:macro:cauda",
