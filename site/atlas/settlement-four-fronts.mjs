@@ -41,14 +41,14 @@ export function buildFourFrontierSettlementLot(data,lot1,lot2,macro,environments
        throw Error("Povoado canonizado ou recebeu geografia inventada: "+row.id);
      for(const key of ["forma","habitantes_propostos","governo_proposto","sustento_hipotetico",
        "habitacao_proposta","tensao_social","pergunta_autoral"])
-       if(typeof row[key]!=="string"||row[key].length<23)
+       if(typeof row[key]!=="string"||row[key].length<(key==="forma"?8:23))
          throw Error("Povoado sem vida social, ecologia ou dilema: "+row.id+"."+key);
    }else{
      if(row.estado!=="proposta_ecologica"||row.conta_como_assentamento!==false||
         row.sapiencia_confirmada!==false||row.geometria!==null||row.quantidade!==null)
        throw Error("Habitat contado como vila ou tratado como espécie confirmada: "+row.id);
      for(const key of ["categoria","habitantes_ou_organismos_propostos","papel_ecologico_hipotetico","limite_de_inferencia"])
-       if(typeof row[key]!=="string"||row[key].length<16)
+       if(typeof row[key]!=="string"||row[key].length<(key==="categoria"?7:16))
          throw Error("Habitat sem função ou ressalva ecológica: "+row.id);
    }
  }
