@@ -1,0 +1,695 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XXVIII — Rio e Drakport sem canonização",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "escopos",
+    "regiao_normalizada_drakport",
+    "regiao_normalizada_rio_medio",
+    "revolta_drakport_ocorreu",
+    "participacao_ironwood_na_revolta_confirmada",
+    "trajetos_e_postos_individualizados_confirmados",
+    "populacao_escravizada_quantificada",
+    "balanco_de_pessoas_como_recurso",
+    "ritual_templo_lua_mecanismo_confirmado",
+    "aprovacao_autoral",
+    "efeito_canonico_automatico",
+    "alteracao_criaturas",
+    "alteracao_atlas_factual",
+    "alteracao_regras_dw",
+    "fonte_manuscrito",
+    "limites_editoriais",
+    "fatos_documentados",
+    "referencias_rastreaveis",
+    "trabalho_cotidiano",
+    "servidao_e_agencia",
+    "tributos_e_passagens",
+    "informacao_e_ritos",
+    "redes_de_resistencia",
+    "vinhetas",
+    "perguntas_para_autor",
+    "contagens"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 10
+    },
+    "estado": {
+      "const": "expansao_social_nao_canonica"
+    },
+    "escopos": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "enum": [
+          "drakport",
+          "rio-medio",
+          "corte-interface",
+          "interfaces-nao-localizadas"
+        ]
+      }
+    },
+    "regiao_normalizada_drakport": {
+      "type": "null"
+    },
+    "regiao_normalizada_rio_medio": {
+      "type": "null"
+    },
+    "participacao_ironwood_na_revolta_confirmada": {
+      "type": "null"
+    },
+    "trajetos_e_postos_individualizados_confirmados": {
+      "type": "null"
+    },
+    "populacao_escravizada_quantificada": {
+      "type": "null"
+    },
+    "ritual_templo_lua_mecanismo_confirmado": {
+      "type": "null"
+    },
+    "revolta_drakport_ocorreu": {
+      "const": false
+    },
+    "balanco_de_pessoas_como_recurso": {
+      "const": false
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "efeito_canonico_automatico": {
+      "const": false
+    },
+    "alteracao_criaturas": {
+      "const": false
+    },
+    "alteracao_atlas_factual": {
+      "const": false
+    },
+    "alteracao_regras_dw": {
+      "const": false
+    },
+    "fonte_manuscrito": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "limites_editoriais": {
+      "type": "array",
+      "minItems": 14,
+      "maxItems": 14,
+      "items": {
+        "type": "string",
+        "minLength": 20
+      }
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "pagina",
+          "afirmacao_documentada",
+          "limite_de_inferencia",
+          "fonte",
+          "novo_canon"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxviii:fato:"
+          },
+          "pagina": {
+            "enum": [
+              4,
+              7,
+              9,
+              11
+            ]
+          },
+          "afirmacao_documentada": {
+            "type": "string",
+            "minLength": 20
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 20
+          },
+          "fonte": {
+            "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+          },
+          "novo_canon": {
+            "const": false
+          }
+        }
+      }
+    },
+    "referencias_rastreaveis": {
+      "type": "array",
+      "minItems": 14,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "arquivo",
+          "colecao",
+          "id",
+          "estatuto",
+          "precaucao"
+        ],
+        "properties": {
+          "arquivo": {
+            "type": "string"
+          },
+          "colecao": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "estatuto": {
+            "type": "string"
+          },
+          "precaucao": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "perguntas_para_autor": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "pergunta_autoral",
+          "resposta_aprovada",
+          "estado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxviii:pergunta:"
+          },
+          "pergunta_autoral": {
+            "type": "string"
+          },
+          "resposta_aprovada": {
+            "type": "null"
+          },
+          "estado": {
+            "const": "pendente_de_autoria"
+          }
+        }
+      }
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fatos",
+        "referencias",
+        "propostas",
+        "perguntas",
+        "trabalho_cotidiano",
+        "servidao_e_agencia",
+        "tributos_e_passagens",
+        "informacao_e_ritos",
+        "redes_de_resistencia",
+        "vinhetas"
+      ],
+      "properties": {
+        "fatos": {
+          "const": 12
+        },
+        "referencias": {
+          "const": 14
+        },
+        "propostas": {
+          "const": 40
+        },
+        "perguntas": {
+          "const": 10
+        },
+        "trabalho_cotidiano": {
+          "const": 10
+        },
+        "servidao_e_agencia": {
+          "const": 8
+        },
+        "tributos_e_passagens": {
+          "const": 7
+        },
+        "informacao_e_ritos": {
+          "const": 6
+        },
+        "redes_de_resistencia": {
+          "const": 5
+        },
+        "vinhetas": {
+          "const": 4
+        }
+      }
+    },
+    "trabalho_cotidiano": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxviii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 20
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 20
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 12
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "drakport",
+              "rio-medio",
+              "corte-interface",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "servidao_e_agencia": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxviii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 20
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 20
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 12
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "drakport",
+              "rio-medio",
+              "corte-interface",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "tributos_e_passagens": {
+      "type": "array",
+      "minItems": 7,
+      "maxItems": 7,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxviii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 20
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 20
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 12
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "drakport",
+              "rio-medio",
+              "corte-interface",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "informacao_e_ritos": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxviii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 20
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 20
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 12
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "drakport",
+              "rio-medio",
+              "corte-interface",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "redes_de_resistencia": {
+      "type": "array",
+      "minItems": 5,
+      "maxItems": 5,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxviii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 20
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 20
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 12
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "drakport",
+              "rio-medio",
+              "corte-interface",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "vinhetas": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxviii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 20
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 20
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 12
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "drakport",
+              "rio-medio",
+              "corte-interface",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    }
+  }
+}

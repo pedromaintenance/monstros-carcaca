@@ -82,6 +82,8 @@ const fixtures={
     hack_artificer_movement_indexes:"hack-artificer-movement-indexes.json",
     hack_mercenary_movements:"hack-mercenary-movements.json",
     hack_mercenary_movement_indexes:"hack-mercenary-movement-indexes.json",
+    river_drakport_social:"river-drakport-social.json",
+    river_drakport_social_indexes:"river-drakport-social-indexes.json",
     foz_shadar_memory:"foz-shadar-memory.json",
     foz_shadar_memory_indexes:"foz-shadar-memory-indexes.json",
     portomonte_authorial_review:"portomonte-authorial-review.json",
@@ -192,6 +194,31 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "river-drakport-social.json":{
+     "estado":"expansao_social_nao_canonica","revolta_drakport_ocorreu":false,
+     "balanco_de_pessoas_como_recurso":false,"regiao_normalizada_drakport":null,
+     "aprovacao_autoral":false,"efeito_canonico_automatico":false,
+     "fatos_documentados":[{"id":"worldbuilding-xxviii:fato:12","pagina":11,
+       "afirmacao_documentada":"A Revolta de Drakport ainda é uma pergunta histórica aberta.",
+       "limite_de_inferencia":"Não registrar como evento ocorrido.","novo_canon":false},
+       {"id":"worldbuilding-xxviii:fato:03","pagina":4,
+       "afirmacao_documentada":"Drakport é centro colonial de escravidão.",
+       "limite_de_inferencia":"Não inventar população.","novo_canon":false}],
+     "trabalho_cotidiano":[{"id":"worldbuilding-xxviii:trabalho_cotidiano:conta",
+       "nome":"Quem confere o esforço?","possibilidade_cotidiana":"Livro de trabalho hipotético",
+       "tensao_material":"Registros ocultam pessoas.","pergunta_de_mesa":"Quem pode conferir?",
+       "referencia_id":"rio-garganta:oficio:soldo","escopo":"drakport","ocorreu":false}],
+     "servidao_e_agencia":[{"id":"worldbuilding-xxviii:servidao_e_agencia:evasao",
+       "nome":"Fugir não é a revolta","possibilidade_cotidiana":"Pessoas podem fugir",
+       "tensao_material":"Fuga não prova levante","pergunta_de_mesa":"Como preservar agência?",
+       "referencia_id":"povoamento-proposto:balsa-dos-nomes","escopo":"rio-medio","ocorreu":false}],
+     "tributos_e_passagens":[],"informacao_e_ritos":[],"redes_de_resistencia":[],"vinhetas":[],
+     "perguntas_para_autor":[{"id":"worldbuilding-xxviii:pergunta:revolta","resposta_aprovada":null}]},
+  "river-drakport-social-indexes.json":{
+     "by_categoria":{"trabalho_cotidiano":["worldbuilding-xxviii:trabalho_cotidiano:conta"]},
+     "by_escopo":{"drakport":["worldbuilding-xxviii:trabalho_cotidiano:conta"]},
+     "by_referencia":{"rio-garganta:oficio:soldo":["worldbuilding-xxviii:trabalho_cotidiano:conta"]},
+     "by_pagina":{"11":["worldbuilding-xxviii:fato:12"]}},
   "foz-shadar-memory.json":{
    "schema_version":"0.1.0","estado":"expansao_sociocultural_nao_canonica",
    "regiao_normalizada_foz":"regiao:foz-rio-ancestral",
@@ -2813,4 +2840,25 @@ test("Ciclo XXVII: foz, Shadar e memória são consultáveis sem novo cânone",a
   assert.equal((await atlas.getFozShadarMemoryEntry("worldbuilding-xxvii:pergunta:geografia")).resposta_aprovada,null);
   assert.equal((await atlas.getFozShadarMemoryEntry("worldbuilding-xxvii:memoria_submersa:arquivo")).ocorreu,false);
   assert.equal(await atlas.getFozShadarMemoryEntry("worldbuilding-xxvii:inexistente"),null);
+});
+
+test("Ciclo XXVIII: trabalho, rio e Revolta pendente sem novo cânone",async()=>{
+  const d=await atlas.getRiverDrakportSocial();
+  assert.equal(d.estado,"expansao_social_nao_canonica");
+  assert.equal(d.revolta_drakport_ocorreu,false);
+  assert.equal(d.balanco_de_pessoas_como_recurso,false);
+  assert.equal(d.regiao_normalizada_drakport,null);
+  const ix=await atlas.getRiverDrakportSocialIndexes();
+  assert.equal(ix.by_pagina["11"][0],"worldbuilding-xxviii:fato:12");
+  assert.equal((await atlas.searchRiverDrakportSocial({categoria:"trabalho_cotidiano"})).length,1);
+  assert.equal((await atlas.searchRiverDrakportSocial({escopo:"rio-medio"})).length,1);
+  assert.equal((await atlas.searchRiverDrakportSocial({referenciaId:"rio-garganta:oficio:soldo"})).length,1);
+  assert.equal((await atlas.searchRiverDrakportSocial({query:"esforço"})).length,1);
+  assert.equal((await atlas.searchRiverDrakportSocial({query:"zz-inexistente"})).length,0);
+  const facts=await atlas.searchRiverDrakportSocial({pagina:11,query:"Revolta"});
+  assert.equal(facts.length,1);
+  assert.equal(facts[0].novo_canon,false);
+  assert.equal((await atlas.getRiverDrakportSocialEntry("worldbuilding-xxviii:pergunta:revolta")).resposta_aprovada,null);
+  assert.equal((await atlas.getRiverDrakportSocialEntry("worldbuilding-xxviii:servidao_e_agencia:evasao")).ocorreu,false);
+  assert.equal(await atlas.getRiverDrakportSocialEntry("worldbuilding-xxviii:nao-existe"),null);
 });

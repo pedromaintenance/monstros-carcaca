@@ -60,6 +60,34 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getRiverDrakportSocial(){return byKey("river_drakport_social");}
+  async function getRiverDrakportSocialIndexes(){return byKey("river_drakport_social_indexes");}
+  async function getRiverDrakportSocialEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xxviii:"))return null;
+    const d=await getRiverDrakportSocial();
+    for(const cat of ["trabalho_cotidiano","servidao_e_agencia",
+       "tributos_e_passagens","informacao_e_ritos","redes_de_resistencia",
+       "vinhetas","fatos_documentados","perguntas_para_autor"]){
+      const entry=d[cat].find(x=>x.id===id);
+      if(entry)return {...entry,categoria:cat};
+    }
+    return null;
+  }
+  async function searchRiverDrakportSocial({categoria,escopo,referenciaId,pagina,query}={}){
+    const d=await getRiverDrakportSocial();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    if(pagina!==undefined)
+      return d.fatos_documentados.filter(f=>f.pagina===Number(pagina)&&
+         (!query||norm(f.afirmacao_documentada+" "+f.limite_de_inferencia).includes(norm(query))))
+         .map(f=>({...f,categoria:"fatos_documentados"}));
+    return ["trabalho_cotidiano","servidao_e_agencia","tributos_e_passagens",
+      "informacao_e_ritos","redes_de_resistencia","vinhetas"]
+      .flatMap(cat=>d[cat].map(x=>({...x,categoria:cat})))
+      .filter(x=>(!categoria||x.categoria===categoria)&&
+          (!escopo||x.escopo===escopo)&&(!referenciaId||x.referencia_id===referenciaId)&&
+          (!query||norm([x.id,x.nome,x.possibilidade_cotidiana,
+             x.tensao_material,x.pergunta_de_mesa].join(" ")).includes(norm(query))));
+  }
   async function getFozShadarMemory(){return byKey("foz_shadar_memory");}
   async function getFozShadarMemoryIndexes(){return byKey("foz_shadar_memory_indexes");}
   async function getFozShadarMemoryEntry(id){
@@ -1740,6 +1768,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getRiverDrakportSocial,getRiverDrakportSocialIndexes,
+          getRiverDrakportSocialEntry,searchRiverDrakportSocial,
           getFozShadarMemory,getFozShadarMemoryIndexes,
           getFozShadarMemoryEntry,searchFozShadarMemory,
           getPortomonteAuthorialReview,getPortomonteAuthorialReviewIndexes,

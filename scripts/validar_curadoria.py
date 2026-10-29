@@ -4051,6 +4051,69 @@ def validar_foz_shadar_memoria_xxvii():
             "Ciclo XXVII: sete criaturas canônicas devem permanecer intocadas.")
     print("Ciclo XXVII: 12 fatos, 36 propostas, 12 referências e 10 perguntas; sem canonização.")
 
+
+def validar_rio_drakport_xxviii():
+    """O Rio Ancestral tem população e agência; propostas não decidem sua história."""
+    d=load("data/worldbuilding/rio-drakport-ciclo28.json")
+    schema=load("schemas/rio-drakport-xxviii.schema.json")
+    Draft202012Validator.check_schema(schema)
+    issues=list(Draft202012Validator(schema).iter_errors(d))
+    require(not issues,f"Ciclo XXVIII: JSON Schema inválido: {issues[:2]}")
+    counts={"fatos":12,"referencias":14,"propostas":40,"perguntas":10,
+            "trabalho_cotidiano":10,"servidao_e_agencia":8,
+            "tributos_e_passagens":7,"informacao_e_ritos":6,
+            "redes_de_resistencia":5,"vinhetas":4}
+    require(d["contagens"]==counts,"Ciclo XXVIII: contagens divergentes.")
+    require(d["estado"]=="expansao_social_nao_canonica"
+            and d["revolta_drakport_ocorreu"] is False
+            and d["balanco_de_pessoas_como_recurso"] is False
+            and d["regiao_normalizada_drakport"] is None
+            and d["regiao_normalizada_rio_medio"] is None
+            and d["participacao_ironwood_na_revolta_confirmada"] is None
+            and d["trajetos_e_postos_individualizados_confirmados"] is None
+            and d["populacao_escravizada_quantificada"] is None
+            and d["ritual_templo_lua_mecanismo_confirmado"] is None
+            and d["aprovacao_autoral"] is False
+            and d["efeito_canonico_automatico"] is False
+            and d["alteracao_criaturas"] is False
+            and d["alteracao_atlas_factual"] is False
+            and d["alteracao_regras_dw"] is False,
+            "Ciclo XXVIII: revolta, geografia ou mutação automática proibida.")
+    pages={p["pagina"] for p in load(d["fonte_manuscrito"])["paginas"]}
+    facts=d["fatos_documentados"]
+    require(len(facts)==12 and len({x["id"] for x in facts})==12
+            and all(x["pagina"] in pages and x["pagina"] in (4,7,9,11)
+                    and x["fonte"]==d["fonte_manuscrito"]
+                    and x["novo_canon"] is False for x in facts),
+            "Ciclo XXVIII: fatos sem fonte segura.")
+    refs=d["referencias_rastreaveis"]
+    require(len(refs)==len({r["id"] for r in refs})==14,
+            "Ciclo XXVIII: referências faltantes ou duplicadas.")
+    for r in refs:
+        require(any(x["id"]==r["id"] for x in load(r["arquivo"])[r["colecao"]]),
+                "Ciclo XXVIII: referência não existe: "+r["id"])
+    cats=("trabalho_cotidiano","servidao_e_agencia","tributos_e_passagens",
+          "informacao_e_ritos","redes_de_resistencia","vinhetas")
+    proposals=[x for cat in cats for x in d[cat]]
+    refids={r["id"] for r in refs}
+    require(len(proposals)==len({x["id"] for x in proposals})==40
+            and all(x["estado"]=="proposta_cultural_nao_canonica"
+                    and x["referencia_id"] in refids
+                    and x["escopo"] in d["escopos"]
+                    and x["ocorreu"] is False
+                    and x["situacao_documentada"] is False
+                    and x["aprovacao_autoral"] is False
+                    and x["canon_aplicado"] is False for x in proposals),
+            "Ciclo XXVIII: proposta duplicada ou tratada como fato.")
+    require(len({q["id"] for q in d["perguntas_para_autor"]})==10
+            and all(q["resposta_aprovada"] is None
+                    and q["estado"]=="pendente_de_autoria"
+                    for q in d["perguntas_para_autor"]),
+            "Ciclo XXVIII: pergunta autoral respondida indevidamente.")
+    require(len(load("dist/carcaca/creatures.json"))==7,
+            "Ciclo XXVIII: criaturas do Arquivo foram afetadas.")
+    print("Ciclo XXVIII: 12 fatos, 40 propostas, 14 referências; Revolta ainda aberta.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -4190,6 +4253,7 @@ def main():
     validar_portomonte_templo_governo_xxv()
     validar_revisao_autoral_portomonte_xxvi()
     validar_foz_shadar_memoria_xxvii()
+    validar_rio_drakport_xxviii()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
