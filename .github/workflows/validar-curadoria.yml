@@ -128,12 +128,12 @@ jobs:
         run: python scripts/validar_curadoria.py
       - name: Testar cliente de leitura
         run: node --test tests/carcaca-client.test.mjs
-      - name: Testar dossiês derivados contra curadoria real
-        run: python -m unittest discover -s tests -p 'test_*.py'
       - name: Gerar índices determinísticos
         run: |
           python scripts/gerar_indices_curadoria.py
           python scripts/gerar_indices_curadoria.py --check
+      - name: Testar dossiês derivados contra curadoria real
+        run: python -m unittest discover -s tests -p 'test_*.py'
       - name: Publicar snapshot sem sobrepor as fontes SRD
         if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         shell: bash
