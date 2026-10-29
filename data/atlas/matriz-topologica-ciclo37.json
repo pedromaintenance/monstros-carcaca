@@ -1,0 +1,639 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Matriz de alternativas topológicas — Ciclo XXXVII",
+  "estado": "oficina_de_decisoes_autorais",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "tipo": "topologia_conceitual_sem_projecao",
+  "aviso": "Os esquemas mostram interpretações concorrentes, não geometrias reais nem locais confirmados. Seleções feitas na interface são temporárias e não alteram o cânone.",
+  "fontes": [
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+    "data/atlas/geografia-fisica-ciclo34.json",
+    "data/atlas/interfaces-continentais-ciclo36.json",
+    "data/atlas/macrorregioes-carcaca.json"
+  ],
+  "grupos": [
+    {
+      "id": "oeste",
+      "nome": "Oeste, Abismo e Corte",
+      "descricao": "Estratos urbanos, deslocamento de poder e paisagem de Shadar-Riverie",
+      "setores": [
+        "foz",
+        "shadar",
+        "cauda"
+      ]
+    },
+    {
+      "id": "norte",
+      "nome": "Thargrid, Ironwood e Eldroth",
+      "descricao": "Transições entre florestas e verticalidade do subsolo",
+      "setores": [
+        "thargrid",
+        "eldroth"
+      ]
+    },
+    {
+      "id": "mar",
+      "nome": "Costa Sul e fronteira marítima",
+      "descricao": "Representação cartográfica de águas em movimento",
+      "setores": [
+        "costa",
+        "azuis"
+      ]
+    },
+    {
+      "id": "interior",
+      "nome": "Interior e bacia do Rio Ancestral",
+      "descricao": "Localização de Grama-Cortada e origem do curso fluvial",
+      "setores": [
+        "grama",
+        "rio",
+        "thargrid",
+        "garganta"
+      ]
+    }
+  ],
+  "decisoes": [
+    {
+      "id": "decisao:xxxvii:shadar",
+      "ref_questao": "questao:xxxvi:shadar",
+      "grupo": "oeste",
+      "titulo": "Qual a relação espacial entre Shadar-Riverie, Gualápolis e Boca do Abismo?",
+      "paginas": [
+        5,
+        6
+      ],
+      "ref_interfaces": [
+        "inter:xxxvi:foz-shadar"
+      ],
+      "ref_pontos_fisicos": [
+        "geo-xxxiv:shadar",
+        "geo-xxxiv:gualapolis",
+        "geo-xxxiv:boca-do-abismo"
+      ],
+      "setores": [
+        "foz",
+        "shadar"
+      ],
+      "documentado": "O manuscrito situa Gualápolis na margem sul e informa que a Boca foi erguida sobre ela; também situa Gualápolis sob Shadar-Riverie. A correspondência exata dos nomes permanece contraditória.",
+      "invariantes": [
+        "Gualápolis não pode ser deslocada da margem sul por hipótese.",
+        "Boca e Gualápolis possuem sobreposição histórica documentada."
+      ],
+      "alternativas": [
+        {
+          "id": "opt:xxxvii:shadar:duas-funcoes",
+          "titulo": "Cidade e fortaleza coexistentes",
+          "esquema": "Shadar-Riverie (núcleo civil) + Boca (fortaleza) sobre estratos de Gualápolis",
+          "hipotese": "A capital feérica e a fortaleza se distribuem numa mesma área urbana histórica, com papéis distintos.",
+          "implicacao_cartografica": "Ajustar a escala de cidade e cidadela, sem afirmar prédios ou distritos.",
+          "consequencia_material": "Define um polo de autoridade civil-militar na margem sul.",
+          "condicao_para_canonizar": "Exige explicitar como os dois nomes convivem politicamente.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:shadar:mesma-cidade",
+          "titulo": "Nomes políticos de um mesmo centro",
+          "esquema": "Gualápolis antiga → cidade reocupada / Shadar-Riverie + Boca como função militar",
+          "hipotese": "Os nomes se referem a camadas de um centro transformado por diferentes regimes.",
+          "implicacao_cartografica": "Trabalhar nomes conforme era histórica e tipo de referência.",
+          "consequencia_material": "Concentra tributo, defesa e memória histórica em um único núcleo.",
+          "condicao_para_canonizar": "Exige revisão de linguagem nas passagens que distinguem centro político e fortaleza.",
+          "custo_editorial": "alto",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:shadar:conjunto-distinto",
+          "titulo": "Complexo de localidades vizinhas",
+          "esquema": "Shadar-Riverie | Boca sobre Gualápolis | relação espacial ainda a fixar",
+          "hipotese": "Duas localidades distintas podem pertencer a uma mesma paisagem de poder; a frase 'sob Shadar' precisaria de nova leitura.",
+          "implicacao_cartografica": "Manter duas marcações separadas no futuro sem definir distância.",
+          "consequencia_material": "Permite disputa entre capital aristocrática e fortaleza da foz.",
+          "condicao_para_canonizar": "Precisa reconciliar a afirmação documental de Gualápolis sob Shadar-Riverie.",
+          "custo_editorial": "alto",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        }
+      ],
+      "opcao_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "decisao:xxxvii:abismo",
+      "ref_questao": "questao:xxxvi:abismo",
+      "grupo": "oeste",
+      "titulo": "Que tipo de acesso relaciona a margem da foz e a cauda?",
+      "paginas": [
+        5,
+        6,
+        8
+      ],
+      "ref_interfaces": [
+        "inter:xxxvi:foz-cauda"
+      ],
+      "ref_pontos_fisicos": [
+        "geo-xxxiv:foz",
+        "geo-xxxiv:cauda"
+      ],
+      "setores": [
+        "foz",
+        "cauda"
+      ],
+      "documentado": "A cauda está do outro lado do Abismo e recebeu o Templo do Crepúsculo; a passagem utilizada não foi descrita.",
+      "invariantes": [
+        "O Abismo continua sendo a ruptura ocidental do Rio Ancestral.",
+        "O Templo do Crepúsculo permanece na cauda além do Abismo."
+      ],
+      "alternativas": [
+        {
+          "id": "opt:xxxvii:abismo:sem-passagem",
+          "titulo": "Descontinuidade sem travessia conhecida",
+          "esquema": "Foz ║ Abismo ║ Cauda (acesso indefinido)",
+          "hipotese": "A cartografia não registra acesso terrestre e deixa o transporte sem explicação estabelecida.",
+          "implicacao_cartografica": "Nenhuma ponte ou estrada é desenhada; apenas a separação já descrita.",
+          "consequencia_material": "Impede tratar o Templo como extensão de um corredor comercial conhecido.",
+          "condicao_para_canonizar": "Fica pendente explicar deslocamentos efetivos da Corte.",
+          "custo_editorial": "baixo",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:abismo:passagem-ritual",
+          "titulo": "Acesso restrito por magia",
+          "esquema": "Foz ⋯ ritual hipotético ⋯ Cauda",
+          "hipotese": "Uma passagem de natureza ritual ou feérica permitiria acesso sem continuidade terrestre.",
+          "implicacao_cartografica": "Marcar somente possibilidade de ligação mágica, nunca rota factual.",
+          "consequencia_material": "Produz monopólio político do conhecimento de acesso.",
+          "condicao_para_canonizar": "Exige estabelecer custo, controle e risco da magia.",
+          "custo_editorial": "alto",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:abismo:passagem-fisica",
+          "titulo": "Acesso físico raro ou condicionado",
+          "esquema": "Foz ⋯ passagem física hipotética ⋯ Cauda",
+          "hipotese": "Um ponto raro de passagem material poderia ligar as duas margens sem tornar o Abismo trivial.",
+          "implicacao_cartografica": "Delimitar futuramente um único tipo de passagem após aprovação.",
+          "consequencia_material": "Cria gargalo militar e logístico de alta importância.",
+          "condicao_para_canonizar": "Exige decidir morfologia da ruptura e explicar segurança da passagem.",
+          "custo_editorial": "alto",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        }
+      ],
+      "opcao_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "decisao:xxxvii:shadar-bioma",
+      "ref_questao": "questao:xxxvi:shadar-bioma",
+      "grupo": "oeste",
+      "titulo": "Qual a grande paisagem natural de Shadar-Riverie?",
+      "paginas": [
+        5,
+        6
+      ],
+      "ref_interfaces": [
+        "inter:xxxvi:foz-shadar"
+      ],
+      "ref_pontos_fisicos": [
+        "geo-xxxiv:shadar"
+      ],
+      "setores": [
+        "shadar"
+      ],
+      "documentado": "A função política e o conflito histórico de Shadar-Riverie são documentados; seu bioma não é individualizado.",
+      "invariantes": [
+        "Nenhum clima, floresta ou relevo de Shadar-Riverie está confirmado.",
+        "A localização relativa à foz depende da revisão de sua topologia."
+      ],
+      "alternativas": [
+        {
+          "id": "opt:xxxvii:shadar-bioma:margem",
+          "titulo": "Paisagem ribeirinha",
+          "esquema": "Cidade hipoteticamente associada a margens úmidas",
+          "hipotese": "O poder aristocrático poderia se apoiar fisicamente na margem fluvial.",
+          "implicacao_cartografica": "Produz paisagem fluvial, condicionada à definição da cidade.",
+          "consequencia_material": "Favorece imaginário de controle de portos e tributos.",
+          "condicao_para_canonizar": "Não confundir a importância política do rio com uma posição ribeirinha confirmada.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:shadar-bioma:rocha",
+          "titulo": "Terraços e paredões rochosos",
+          "esquema": "Cidade hipoteticamente implantada em rocha alta",
+          "hipotese": "A aristocracia poderia dominar visualmente um relevo elevado próximo ao oeste.",
+          "implicacao_cartografica": "Permite verticalidade sem desenhar cotas de altitude.",
+          "consequencia_material": "Favorece defesas e estratificação espacial do poder.",
+          "condicao_para_canonizar": "Não pressupor que a área elevada seja uma margem do Abismo.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:shadar-bioma:bosque",
+          "titulo": "Mosaico de bosques e clareiras",
+          "esquema": "Centro aristocrático hipoteticamente cercado por vegetação",
+          "hipotese": "O tecido urbano poderia ocupar uma paisagem de bosque, sem identificá-la com Eldroth.",
+          "implicacao_cartografica": "Diferenciar vegetação local de florestas ocupadas já conhecidas.",
+          "consequencia_material": "Permite usos feéricos da paisagem sem declarar clima.",
+          "condicao_para_canonizar": "Evitar transplantar automaticamente a ecologia de Eldroth para Shadar.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        }
+      ],
+      "opcao_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "decisao:xxxvii:florestas",
+      "ref_questao": "questao:xxxvi:florestas",
+      "grupo": "norte",
+      "titulo": "Ironwood e Eldroth são fisicamente contíguas?",
+      "paginas": [
+        5,
+        6,
+        18
+      ],
+      "ref_interfaces": [
+        "inter:xxxvi:ironwood-eldroth",
+        "inter:xxxvi:thargrid-eldroth"
+      ],
+      "ref_pontos_fisicos": [
+        "geo-xxxiv:ironwood",
+        "geo-xxxiv:asa-direita",
+        "geo-xxxiv:montanhas-thargrid"
+      ],
+      "setores": [
+        "thargrid",
+        "eldroth"
+      ],
+      "documentado": "Ironwood fica ao sul de Thargrid; Eldroth ocupa a asa direita de Golzdov. Cooperação e migração não provam limite físico compartilhado.",
+      "invariantes": [
+        "Ironwood permanece ao sul das montanhas.",
+        "A asa direita não recebe automaticamente orientação cardeal leste."
+      ],
+      "alternativas": [
+        {
+          "id": "opt:xxxvii:florestas:continuidade",
+          "titulo": "Faixa florestal compartilhada",
+          "esquema": "Thargrid ↓ Ironwood — floresta contínua — Eldroth",
+          "hipotese": "Ambas as florestas fariam parte de um conjunto ecológico com domínios políticos distintos.",
+          "implicacao_cartografica": "Exigir ecótono e zona de ocupação definidos no futuro.",
+          "consequencia_material": "A fronteira da ocupação pode atravessar vegetação semelhante.",
+          "condicao_para_canonizar": "Implica criar conexão territorial ainda não demonstrada.",
+          "custo_editorial": "alto",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:florestas:separacao",
+          "titulo": "Territórios separados",
+          "esquema": "Thargrid ↓ Ironwood … terras intermediárias … Eldroth",
+          "hipotese": "Uma faixa não florestal ou outra área separaria as duas grandes florestas.",
+          "implicacao_cartografica": "Preservar lacuna de localização do espaço intermediário, sem batizá-lo.",
+          "consequencia_material": "Dá peso ao trabalho clandestino de atravessar regiões hostis.",
+          "condicao_para_canonizar": "Não criar uma nova região formal só para acomodar a distância.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:florestas:mosaico",
+          "titulo": "Manchas ecológicas descontínuas",
+          "esquema": "Ironwood — bosques isolados ⋯ Eldroth",
+          "hipotese": "Conjunto descontínuo de florestas menores poderia permitir ligações ecológicas sem fronteira contínua.",
+          "implicacao_cartografica": "Tratar pontos de bosque como hipóteses não localizadas.",
+          "consequencia_material": "Oferece possibilidades diferentes de refúgio e vigilância.",
+          "condicao_para_canonizar": "Precisa evitar presumir estradas ou rotas rangers específicas.",
+          "custo_editorial": "alto",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        }
+      ],
+      "opcao_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "decisao:xxxvii:subsolo",
+      "ref_questao": "questao:xxxvi:subsolo",
+      "grupo": "norte",
+      "titulo": "Qual a conectividade dos grandes sistemas subterrâneos?",
+      "paginas": [
+        2,
+        9,
+        12,
+        13,
+        20
+      ],
+      "ref_interfaces": [
+        "inter:xxxvi:thargrid-subsolo"
+      ],
+      "ref_pontos_fisicos": [
+        "geo-xxxiv:costelas",
+        "geo-xxxiv:coluna-dorsal",
+        "geo-xxxiv:montanhas-thargrid"
+      ],
+      "setores": [
+        "thargrid"
+      ],
+      "documentado": "Existem galerias, cavernas, cidades anãs e enclaves profundos; não se conhece uma rede que conecte todas as áreas ósseas do continente.",
+      "invariantes": [
+        "Não presumir rede subterrânea universal.",
+        "A fortaleza histórica de Voragar na coluna dorsal não possui localização setorial definida."
+      ],
+      "alternativas": [
+        {
+          "id": "opt:xxxvii:subsolo:isoladas",
+          "titulo": "Complexos subterrâneos independentes",
+          "esquema": "Thargrid [galerias] | costelas [cavidades sem vínculo]",
+          "hipotese": "Os grandes núcleos cavernosos operam sem ligação subterrânea conhecida.",
+          "implicacao_cartografica": "Não acrescentar arestas entre sistemas distantes.",
+          "consequencia_material": "Controle de superfície e travessias permanece essencial.",
+          "condicao_para_canonizar": "Precisa explicar relações econômicas sem túneis compartilhados.",
+          "custo_editorial": "baixo",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:subsolo:locais",
+          "titulo": "Passagens subterrâneas regionais",
+          "esquema": "Thargrid [galerias conectadas em alguns pontos] | demais ossos ?",
+          "hipotese": "Alguns níveis de Thargrid se conectariam localmente, sem malha continental.",
+          "implicacao_cartografica": "Exigir delimitação posterior de nós e profundidades.",
+          "consequencia_material": "A conexão limitada favorece troca e defesa regional.",
+          "condicao_para_canonizar": "Não expandir conexão local a todas as costelas.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:subsolo:fossil",
+          "titulo": "Rede ancestral de ossos parcialmente interligada",
+          "esquema": "Thargrid ⋯ ossatura antiga ⋯ interior não localizado",
+          "hipotese": "Estruturas fósseis poderiam formar uma rede antiga descontínua, parcialmente navegável.",
+          "implicacao_cartografica": "Registrar apenas hipótese até estudo anatômico e decisão autoral.",
+          "consequencia_material": "Introduz disputa sobre acesso e controle de estratos profundos.",
+          "condicao_para_canonizar": "Alto impacto: exige justificar segurança, profundidade e passagens concretas.",
+          "custo_editorial": "alto",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        }
+      ],
+      "opcao_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "decisao:xxxvii:mar",
+      "ref_questao": "questao:xxxvi:mar",
+      "grupo": "mar",
+      "titulo": "Como representar o limite variável do Mar de Sangue?",
+      "paginas": [
+        14,
+        15
+      ],
+      "ref_interfaces": [
+        "inter:xxxvi:sangue-azul"
+      ],
+      "ref_pontos_fisicos": [
+        "geo-xxxiv:mar-sangue",
+        "geo-xxxiv:aguas-azuis"
+      ],
+      "setores": [
+        "costa",
+        "azuis"
+      ],
+      "documentado": "As águas vermelhas e azuis não possuem linha estável; correntes, tempestades e magia alteram a área de transição.",
+      "invariantes": [
+        "Nenhuma fronteira marítima pode ser fixada como permanente.",
+        "A distinção entre Abissais marinhos e demônios ocidentais é preservada."
+      ],
+      "alternativas": [
+        {
+          "id": "opt:xxxvii:mar:faixa",
+          "titulo": "Faixa gradual de transição",
+          "esquema": "Mar de Sangue ≈ faixa variável ≈ Águas azuis",
+          "hipotese": "O mapa pode apresentar uma banda de indeterminação que cresce e se contrai.",
+          "implicacao_cartografica": "Usar simbologia móvel e não linha cadastral.",
+          "consequencia_material": "Favorece narrativas de patrulhas e zonas de risco.",
+          "condicao_para_canonizar": "O tamanho da faixa não tem medida confirmada.",
+          "custo_editorial": "baixo",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:mar:manchas",
+          "titulo": "Contaminação em bolsões",
+          "esquema": "Mar de Sangue · bolsões variáveis · Águas azuis",
+          "hipotese": "O limite seria irregular, com intrusões em águas azuis e ilhas temporárias de água menos corrompida.",
+          "implicacao_cartografica": "Representação não métrica por manchas de intensidade.",
+          "consequencia_material": "Complica jurisdição e defesa marítima.",
+          "condicao_para_canonizar": "Não transformar manchas exemplificativas em coordenadas canônicas.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:mar:temporal",
+          "titulo": "Cartas náuticas de momentos diferentes",
+          "esquema": "Carta A ≠ Carta B ≠ Carta C (todas provisórias)",
+          "hipotese": "A cartografia pode comparar estados sucessivos sem declarar um limite permanente.",
+          "implicacao_cartografica": "Sobreposição temporal de cartas esquemáticas.",
+          "consequencia_material": "Mostra a insuficiência política de uma fronteira fixa.",
+          "condicao_para_canonizar": "Exige definir a escala temporal no futuro, sem inventar ciclos de marés mágicas.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        }
+      ],
+      "opcao_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "decisao:xxxvii:grama",
+      "ref_questao": "questao:xxxvi:grama",
+      "grupo": "interior",
+      "titulo": "Onde Grama-Cortada se relaciona com a macrogeografia?",
+      "paginas": [
+        2,
+        18,
+        19
+      ],
+      "ref_interfaces": [],
+      "ref_pontos_fisicos": [
+        "geo-xxxiv:grama"
+      ],
+      "setores": [
+        "grama"
+      ],
+      "documentado": "O Condado de Grama-Cortada é conhecido por sua vida agrícola e social, mas a posição continental não foi definida.",
+      "invariantes": [
+        "Nenhuma localização documentada pode ser atribuída ao Condado.",
+        "A agricultura do Condado não demonstra clima ou fertilidade regional específicos."
+      ],
+      "alternativas": [
+        {
+          "id": "opt:xxxvii:grama:vale-fluvial",
+          "titulo": "Vizinhança hipotética do eixo fluvial",
+          "esquema": "Grama-Cortada ⋯ proximidade hipotética do Rio Ancestral",
+          "hipotese": "O Condado seria interiorano e relativamente próximo do principal circuito do rio.",
+          "implicacao_cartografica": "Comparar vulnerabilidade às rotas tributárias sem criar uma ligação.",
+          "consequencia_material": "Pode explicar tensões entre autonomia rural e comércio colonial.",
+          "condicao_para_canonizar": "A menção à vida agrícola não sustenta essa posição.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:grama:sopemontanha",
+          "titulo": "Vizinhança hipotética dos contrafortes setentrionais",
+          "esquema": "Grama-Cortada ⋯ proximidade hipotética de Thargrid",
+          "hipotese": "O Condado seria rural e próximo, mas não necessariamente dentro do reino montanhês.",
+          "implicacao_cartografica": "Distinguir planície agrícola e montanhas sem fixar fronteira.",
+          "consequencia_material": "Pode articular trocas com comunidades livres do norte.",
+          "condicao_para_canonizar": "Não supor aliança formal, clima ou acesso a galerias.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:grama:alem-sul",
+          "titulo": "Vizinhança hipotética das terras do Além Sul",
+          "esquema": "Grama-Cortada ⋯ proximidade hipotética de Caatinga / Costa Sul",
+          "hipotese": "O Condado estaria próximo de transições ecológicas sulinas, sem pertencer automaticamente à costa.",
+          "implicacao_cartografica": "Investigar comércio de alimentos e variações de relevo.",
+          "consequencia_material": "Amplia disputas por produção e abastecimento fora do eixo do rio.",
+          "condicao_para_canonizar": "Não atribuir automaticamente a escassez hídrica da Caatinga ao Condado.",
+          "custo_editorial": "alto",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        }
+      ],
+      "opcao_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "decisao:xxxvii:rio",
+      "ref_questao": "questao:xxxvi:rio",
+      "grupo": "interior",
+      "titulo": "De que sistema surgem as cabeceiras do Rio Ancestral?",
+      "paginas": [
+        4,
+        5,
+        9
+      ],
+      "ref_interfaces": [
+        "inter:xxxvi:rio-abismo"
+      ],
+      "ref_pontos_fisicos": [
+        "geo-xxxiv:rio",
+        "geo-xxxiv:cranio",
+        "geo-xxxiv:montanhas-thargrid",
+        "geo-xxxiv:costelas"
+      ],
+      "setores": [
+        "rio"
+      ],
+      "documentado": "O Rio Ancestral atravessa a Carcaça e termina no Abismo, mas nascentes e afluentes ainda não foram identificados.",
+      "invariantes": [
+        "O curso termina no Abismo ocidental.",
+        "Não atribuir direção completa de drenagem ou afluentes sem investigação."
+      ],
+      "alternativas": [
+        {
+          "id": "opt:xxxvii:rio:norte",
+          "titulo": "Cabeceiras hipotéticas nas altitudes setentrionais",
+          "esquema": "Thargrid ? → Rio Ancestral → Abismo",
+          "hipotese": "O rio nasceria nas altitudes do norte e depois atravessaria a massa continental.",
+          "implicacao_cartografica": "Exige identificar bacia e desnível sem desenhar afluentes.",
+          "consequencia_material": "Colocaria nascente sob influência potencial dos poderes do norte.",
+          "condicao_para_canonizar": "Não concluir que o Reino Sob a Montanha controla as águas.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:rio:leste",
+          "titulo": "Cabeceiras hipotéticas na região do crânio",
+          "esquema": "Garganta ? → Rio Ancestral → Abismo",
+          "hipotese": "O rio começaria nas terras orientais e teria longo curso até o oeste.",
+          "implicacao_cartografica": "Seria necessário separar nascimento do rio e a cidade de Garganta.",
+          "consequencia_material": "A exploração mineral oriental poderia afetar água a jusante.",
+          "condicao_para_canonizar": "Não inferir que o rio nasce dentro da cidade ou das minas.",
+          "custo_editorial": "medio",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        },
+        {
+          "id": "opt:xxxvii:rio:multipla",
+          "titulo": "Formação difusa a partir das entranhas de Golzdov",
+          "esquema": "nascentes dispersas ? → Rio Ancestral → Abismo",
+          "hipotese": "Fontes subterrâneas ou cursos diversos poderiam alimentar uma formação fluvial gradual.",
+          "implicacao_cartografica": "Exige definir apenas a lógica da bacia antes de nomear nascentes.",
+          "consequencia_material": "Abre disputa distribuída sobre usos da água.",
+          "condicao_para_canonizar": "Não afirmar que a ossatura é naturalmente um aquífero mágico.",
+          "custo_editorial": "alto",
+          "estado": "nao_adotada",
+          "aprovacao_autoral": false,
+          "geometria": null,
+          "cria_lugar": false
+        }
+      ],
+      "opcao_aprovada": null,
+      "estado": "pendente"
+    }
+  ]
+}
