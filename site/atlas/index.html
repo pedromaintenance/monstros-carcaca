@@ -107,7 +107,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 <section id="metrics" class="counters" aria-label="Resumo do atlas">
 <div class="counter"><strong>—</strong><span>Setores em análise</span></div><div class="counter"><strong>—</strong><span>Lugares no manuscrito</span></div><div class="counter"><strong>—</strong><span>Povos identificados</span></div><div class="counter"><strong>—</strong><span>Criaturas no catálogo</span></div><div class="counter"><strong>—</strong><span>Ecologia proposta</span></div><div class="counter"><strong>—</strong><span>Microespaços propostos</span></div>
 </section>
-<p class="notice" id="warning">Este atlas é uma estrutura de avaliação. Setores de navegação não são regiões políticas oficializadas; posições não documentadas permanecem sem coordenadas. Propostas, relatos e lacunas não são eventos canônicos.</p>
+<p class="notice" id="warning">Todos os lugares têm um espaço para localidades internas: vilas, bairros, câmaras ou passagens, conforme a natureza do lugar. Pastas de lacunas não são assentamentos existentes. Setores de navegação, propostas e relatos não se tornam cânone automaticamente.</p>
 <main class="workspace">
 <section class="panel" aria-labelledby="tree-title">
 <div class="panel-header"><div><h2 class="panel-title" id="tree-title">Árvore do continente</h2><div class="sub" id="tree-subtitle">Carregando fontes e relações...</div></div><button class="action" id="export" type="button" title="Exportar hierarquia JSON" disabled>Exportar ↓</button></div>
@@ -131,7 +131,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 <div class="legend"><div><i class="dot manuscrito"></i> Menção no manuscrito</div><div><i class="dot catalogado"></i> Catálogo estruturado</div><div><i class="dot proposta"></i> Hipótese não aprovada</div><div><i class="dot organizador"></i> Organização editorial</div><div>Pastas vazias = lacuna</div></div>
 <footer class="footer">
 <span>CARCAÇA · Índice territorial interpretativo. Nenhum item é canonizado por esta interface.</span>
-<span>Próximo nível: vínculos, cronologia, habitats, inventário e relações verificáveis.</span>
+<span>Atlas V1.2 · Todos os lugares podem conter sublugares e assentamentos.</span>
 </footer>
 </div>
 <script type="module">
@@ -147,7 +147,11 @@ const paths={
   seeds:"data/propostas/povoamento-regional-hack-carcaca.json",
   ecology:"data/propostas/eldroth-ecologia-monstruosa-dw.json",
   statblocks:"data/propostas/eldroth-fichas-dw-ciclo13.json",
-  ironwoodLocales:"data/propostas/ironwood-eldroth-resistencia-hack.json"
+  ironwoodLocales:"data/propostas/ironwood-eldroth-resistencia-hack.json",
+  thargridSocial:"data/propostas/thargrid-resistencia-cotidiano-hack.json",
+  gargantaSocial:"data/propostas/garganta-rio-ancestral-social-hack.json",
+  caatingaSocial:"data/propostas/caatinga-rede-social-hack.json",
+  hierarchy:"data/atlas/aninhamento-territorial.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -293,8 +297,18 @@ function detail(){
     html+='<p class="tiny">Povos não são automaticamente monstros. Culturas podem cruzar vários lugares, por isso o mesmo registro pode aparecer como referência mais de uma vez. O nó transversal não representa um território físico.</p></section>';
   }
   html+='<section class="detail-section"><h3>Estrutura e continuidade</h3><p class="tiny">A exploração aqui não altera nenhum dado do projeto. Para homologar propostas, revisar a autoria separadamente. Todo dado sem geografia comprovada é identificado como referência regional ou transversal.</p></section>';
-  if(n.id==="lugar-visual:ironwood"){
-    html+='<section class="detail-section"><h3>Dentro de Ironwood</h3><p class="tiny">O núcleo fortificado dos rangers é documentado. Duas propostas anteriores aparecem como microespaços NÃO confirmados. Ainda não há vilas ou cidades individualizadas; novas localidades poderão entrar como filhas de Ironwood sem alterar o modelo.</p></section>';
+  if(["lugar","localidade"].includes(n.kind)){
+    const direct=(state.children.get(n.id)||[]).filter(x=>x.kind==="localidade");
+    const confirmed=direct.filter(x=>x.status==="manuscrito"||x.status==="catalogado");
+    const proposals=direct.filter(x=>x.status==="proposta");
+    html+='<section class="detail-section"><h3>Localidades internas e próximos níveis</h3>';
+    html+='<p class="tiny">A estrutura de subdivisões está disponível para todos os lugares. Há <b>'+confirmed.length+'</b> vínculos documentados e <b>'+proposals.length+'</b> microespaços propostos diretamente abaixo deste lugar. A presença da pasta “a individualizar” não afirma que existam outras aldeias ou salas conhecidas.</p>';
+    if(direct.length){
+      html+='<div class="section-foot">';
+      for(const x of direct.slice(0,15))html+='<button class="jump" type="button" data-jump="'+esc(x.id)+'">'+esc(x.label)+' · '+esc(x.status==="proposta"?"proposta":"documentado")+'</button>';
+      html+='</div>';
+    }
+    html+='</section>';
   }
   $("details").innerHTML=html;
   $("details").querySelectorAll("[data-jump]").forEach(b=>b.addEventListener("click",()=>select(b.dataset.jump)));
