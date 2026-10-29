@@ -231,6 +231,51 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .phys-foot{border-top:1px solid #34423a;margin-top:14px;padding-top:12px;color:#8da396;font-size:10px}
 @media(max-width:1000px){.phys-main{grid-template-columns:1fr}.phys-inspector{position:static}}
 @media(max-width:620px){.phys-container{padding:12px}.phys-grid,.phys-anatomy,.phys-questions{grid-template-columns:1fr}.phys-wide{grid-column:span 1}.phys-head{gap:10px}.phys-count{padding:6px}}
+
+/* Índice macroambiental: tipologias, não mapa geográfico em escala. */
+.env-section{border:1px solid #35463d;border-radius:16px;padding:19px;margin:16px 0 21px;background:#121c19}
+.env-head{display:flex;justify-content:space-between;gap:15px}
+.env-head h3{font:500 21px Cinzel,serif;margin:3px 0 9px}
+.env-head p{max-width:680px;font-size:12px;color:var(--muted);line-height:1.6;margin:0}
+.env-metrics{text-align:center;border:1px solid #55634f;border-radius:9px;padding:7px 12px}
+.env-metrics b{font:500 23px Cinzel,serif;color:#e1caa0;display:block}
+.env-metrics span{color:#a3b2aa;font-size:10px}
+.env-tabs,.env-filters{display:flex;gap:6px;flex-wrap:wrap;margin:15px 0}
+.env-tab,.env-filter{border:1px solid #3a4c3d;border-radius:8px;background:#202c23;color:#b3c2b5;padding:8px 10px;text-align:left;font-size:11px}
+.env-tab.active,.env-filter.on,.env-tab:hover,.env-filter:hover{border-color:#b3a071;background:#403729;color:#f3e2c0}
+.env-filters{margin:0 0 14px}.env-filter{font-size:10px}
+.env-layout{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(260px,.8fr);gap:13px;align-items:start}
+.env-main{border:1px solid #354439;background:#141e19;border-radius:12px;padding:13px;min-height:200px}
+.env-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.env-card{text-align:left;border-radius:9px;background:#1f2b23;border:1px solid #405345;padding:12px;min-height:96px}
+.env-card:hover,.env-card.current{border-color:#bea677;background:#373326}
+.env-card span{display:block;font-size:9px;color:#afc1b0;margin-bottom:5px}
+.env-card b{font-size:12px;display:block;color:#e4e7d7}
+.env-card small{font-size:9px;display:block;margin-top:7px;color:#afad98}
+.env-inspector{border:1px solid #4b5847;border-radius:12px;padding:16px;background:#202923;position:sticky;top:13px}
+.env-inspector h4{font:500 16px Cinzel,serif;margin:5px 0 9px}
+.env-inspector p{font-size:11px;line-height:1.7;color:#bac8b9}
+.env-kicker{font-size:10px;color:#d0b98f;text-transform:uppercase;letter-spacing:1px}
+.env-citation{color:#c9b799!important;font-size:10px!important}
+.env-action{background:#4a3e2c;border:1px solid #a99a72;padding:8px 11px;border-radius:8px;font-size:11px}
+.env-dim{color:#a1aba2}
+.env-subhead{margin:15px 0 9px;border-top:1px solid #52604f;padding-top:12px;color:#ceb894;text-transform:uppercase;letter-spacing:1px;font-size:10px}
+.env-link{background:#29382d;border:1px solid #4d634c;padding:9px;border-radius:8px;margin-bottom:7px;text-align:left;width:100%}
+.env-link:hover{border-color:#d0ad7c}.env-link b{font-size:11px;display:block}.env-link small{display:block;font-size:10px;color:#b0bbac;line-height:1.5;margin-top:4px}
+.env-explain,.env-foot{font-size:11px;color:#a8b5a9;line-height:1.7}
+.env-foot{border-top:1px solid #34473a;margin:14px 0 0;padding-top:10px}
+.env-matrix{display:grid;gap:7px}.env-matrix-row{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(0,.8fr);gap:4px 10px;border:1px solid #37493a;padding:11px;border-radius:9px;background:#1d2920}
+.env-matrix-row strong{font-size:12px}.env-matrix-row span{color:#dbc39e;font-size:11px;text-align:right}
+.env-matrix-row small{font-size:10px;color:#a6b9a9}
+.env-relations,.env-gaps{display:grid;gap:8px}
+.env-relation,.env-gap{border:1px solid #425444;border-radius:8px;background:#1d2922;padding:11px}
+.env-relation button{background:none;border:0;color:#e5cb96;padding:0;text-decoration:underline;font-size:11px}
+.env-relation span,.env-relation small,.env-gap span{color:#abbcad;font-size:10px}
+.env-relation p,.env-gap p{font-size:11px;color:#bdc7b8;line-height:1.6;margin:7px 0}
+.env-gap{background:#292720;border-color:#615646}
+.env-gap b{font-size:12px;display:block;margin:5px 0}
+@media(max-width:980px){.env-layout{grid-template-columns:1fr}.env-inspector{position:static}}
+@media(max-width:580px){.env-section{padding:12px}.env-card-grid{grid-template-columns:1fr}.env-head{flex-direction:column}.env-matrix-row{grid-template-columns:1fr}.env-matrix-row span{text-align:left}}
 @media(max-width:1100px){.site{padding:0 18px 35px}.counters{grid-template-columns:repeat(3,1fr)}.workspace{grid-template-columns:minmax(290px,43%) minmax(300px,1fr)}.details{padding:19px 20px}}
 @media(max-width:760px){.hero{padding:25px 0}.hero .symbol{display:none}h1{font-size:34px}.counters{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.counter{padding:10px}.counter strong{font-size:20px}.counter span{font-size:9px}.workspace{grid-template-columns:1fr}.panel{min-height:0}.tree-scroll{height:390px;min-height:0}.details{max-height:none;min-height:360px}.topline{font-size:9px;gap:10px;letter-spacing:1px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
@@ -258,6 +303,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <button class="action" id="exportMacro" type="button" disabled>Exportar visão macro ↓</button></div>
   <div id="macroSummary" class="macro-summary"><span class="tiny">Consolidando os setores geográficos...</span></div>
   <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
+  <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
   <div class="macro-layout">
     <div id="macroCards" class="macro-grid"><div class="loader">Carregando as regiões documentadas...</div></div>
     <div id="macroDetails" class="macro-detail"><div class="loader">Selecione uma região para consultar seu território, suas âncoras e lacunas principais.</div></div>
@@ -300,6 +346,8 @@ import {buildMacroNetworks} from "./macro-networks.mjs";
 import {initMacroLayers} from "./macro-layers-ui.mjs";
 import {buildPhysicalGeography} from "./physical-geography.mjs";
 import {initPhysicalGeography} from "./physical-geography-ui.mjs";
+import {buildMacroEnvironments} from "./macro-environments.mjs";
+import {initMacroEnvironments} from "./macro-environments-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -318,7 +366,8 @@ const paths={
   hierarchy:"data/atlas/aninhamento-territorial.json",
   macro:"data/atlas/macrorregioes-carcaca.json",
   networks:"data/atlas/redes-historicas-ciclo33.json",
-  physical:"data/atlas/geografia-fisica-ciclo34.json"
+  physical:"data/atlas/geografia-fisica-ciclo34.json",
+  environments:"data/atlas/macroambientes-ciclo35.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -630,10 +679,12 @@ $("export").addEventListener("click",()=>{
     state.macro=buildMacroIndex(loaded.macro,state.atlas);
     state.networks=buildMacroNetworks(loaded.networks,state.macro);
     state.physical=buildPhysicalGeography(loaded.physical,state.macro,state.atlas);
+    state.environments=buildMacroEnvironments(loaded.environments,state.macro,state.atlas);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
     initPhysicalGeography($("physicalGeo"),state.physical,macroDiveInto);
+    initMacroEnvironments($("macroEnvironments"),state.environments,macroDiveInto);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
     $("export").disabled=false;
@@ -647,6 +698,7 @@ $("export").addEventListener("click",()=>{
     $("macroDetails").innerHTML='<div class="loader">'+esc(e.message)+'</div>';
     $("macroLayers").textContent="As redes históricas não puderam ser carregadas.";
     $("physicalGeo").textContent="A geografia física não pôde ser carregada.";
+    $("macroEnvironments").textContent="Os grandes ambientes naturais não puderam ser carregados.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
