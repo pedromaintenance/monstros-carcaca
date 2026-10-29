@@ -1,0 +1,164 @@
+{
+  "by_tipo_evidencia": {
+    "documentado": [
+      "mesa-xxx:evidencia:drakport-morwen",
+      "mesa-xxx:evidencia:mapa-tributos",
+      "mesa-xxx:evidencia:revolta-aberta",
+      "mesa-xxx:evidencia:templo-ilha"
+    ],
+    "lacuna": [
+      "mesa-xxx:evidencia:deusa-nomeada"
+    ],
+    "relato_hipotetico": [
+      "mesa-xxx:evidencia:cobrador",
+      "mesa-xxx:evidencia:duas-margens",
+      "mesa-xxx:evidencia:fugitiva",
+      "mesa-xxx:evidencia:navegante"
+    ],
+    "rumor_hipotetico": [
+      "mesa-xxx:evidencia:lua-cheia",
+      "mesa-xxx:evidencia:revolta-hoje",
+      "mesa-xxx:evidencia:taxa-dupla"
+    ]
+  },
+  "by_referencia": {
+    "worldbuilding-xxix:modelos_do_rito:ciclico": [
+      "mesa-xxx:evidencia:lua-cheia"
+    ],
+    "worldbuilding-xxix:provas_e_incerteza:coercao": [
+      "mesa-xxx:procedimento:consentimento"
+    ],
+    "worldbuilding-xxix:provas_e_incerteza:correlacao": [
+      "mesa-xxx:guarda:magia",
+      "mesa-xxx:procedimento:causalidade"
+    ],
+    "worldbuilding-xxix:provas_e_incerteza:depoimento": [
+      "mesa-xxx:evidencia:duas-margens",
+      "mesa-xxx:evidencia:navegante",
+      "mesa-xxx:procedimento:testemunhos"
+    ],
+    "worldbuilding-xxix:provas_e_incerteza:medicao": [
+      "mesa-xxx:consequencia:efeito"
+    ],
+    "worldbuilding-xxix:provas_e_incerteza:observacao": [
+      "mesa-xxx:evidencia:templo-ilha",
+      "mesa-xxx:guarda:canon",
+      "mesa-xxx:procedimento:origem"
+    ],
+    "worldbuilding-xxix:tensoes_de_poder:lua-divindade": [
+      "mesa-xxx:evidencia:deusa-nomeada"
+    ],
+    "worldbuilding-xxvii:pactos_de_frente:nao-e-paz": [
+      "mesa-xxx:consequencia:autonomia",
+      "mesa-xxx:procedimento:consequencias"
+    ],
+    "worldbuilding-xxvii:rio_e_trabalho:barreiras": [
+      "mesa-xxx:evidencia:taxa-dupla"
+    ],
+    "worldbuilding-xxviii:informacao_e_ritos:boato": [
+      "mesa-xxx:consequencia:rumor",
+      "mesa-xxx:evidencia:revolta-hoje"
+    ],
+    "worldbuilding-xxviii:redes_de_resistencia:ironwood": [
+      "mesa-xxx:consequencia:cronologia",
+      "mesa-xxx:evidencia:revolta-aberta",
+      "mesa-xxx:guarda:revolta",
+      "mesa-xxx:procedimento:lacuna"
+    ],
+    "worldbuilding-xxviii:servidao_e_agencia:evasao": [
+      "mesa-xxx:evidencia:drakport-morwen",
+      "mesa-xxx:guarda:pessoas"
+    ],
+    "worldbuilding-xxviii:tributos_e_passagens:cobranca": [
+      "mesa-xxx:consequencia:cobranca",
+      "mesa-xxx:evidencia:cobrador",
+      "mesa-xxx:evidencia:mapa-tributos"
+    ],
+    "worldbuilding-xxviii:tributos_e_passagens:identidade": [
+      "mesa-xxx:consequencia:exposicao",
+      "mesa-xxx:evidencia:fugitiva"
+    ]
+  },
+  "by_pagina": {
+    "11": [
+      "mesa-xxx:fato:05"
+    ],
+    "22": [
+      "mesa-xxx:fato:06"
+    ],
+    "4": [
+      "mesa-xxx:fato:01",
+      "mesa-xxx:fato:02",
+      "mesa-xxx:fato:03"
+    ],
+    "7": [
+      "mesa-xxx:fato:04"
+    ]
+  },
+  "by_cena": {
+    "mesa-xxx:cena:passagem-cobrada": {
+      "evidencias": [
+        "mesa-xxx:evidencia:cobrador",
+        "mesa-xxx:evidencia:mapa-tributos"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:consentimento",
+      "consequencia_id": "mesa-xxx:consequencia:cobranca"
+    },
+    "mesa-xxx:cena:aguas-contraditorias": {
+      "evidencias": [
+        "mesa-xxx:evidencia:navegante",
+        "mesa-xxx:evidencia:duas-margens"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:testemunhos",
+      "consequencia_id": "mesa-xxx:consequencia:efeito"
+    },
+    "mesa-xxx:cena:lua-anonima": {
+      "evidencias": [
+        "mesa-xxx:evidencia:deusa-nomeada",
+        "mesa-xxx:evidencia:templo-ilha"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:lacuna",
+      "consequencia_id": "mesa-xxx:consequencia:rumor"
+    },
+    "mesa-xxx:cena:nome-no-cadastro": {
+      "evidencias": [
+        "mesa-xxx:evidencia:fugitiva",
+        "mesa-xxx:evidencia:drakport-morwen"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:consentimento",
+      "consequencia_id": "mesa-xxx:consequencia:exposicao"
+    },
+    "mesa-xxx:cena:selo-duplo": {
+      "evidencias": [
+        "mesa-xxx:evidencia:taxa-dupla",
+        "mesa-xxx:evidencia:mapa-tributos"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:origem",
+      "consequencia_id": "mesa-xxx:consequencia:cobranca"
+    },
+    "mesa-xxx:cena:mare-falsa": {
+      "evidencias": [
+        "mesa-xxx:evidencia:lua-cheia",
+        "mesa-xxx:evidencia:templo-ilha"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:causalidade",
+      "consequencia_id": "mesa-xxx:consequencia:rumor"
+    },
+    "mesa-xxx:cena:levante-rumor": {
+      "evidencias": [
+        "mesa-xxx:evidencia:revolta-hoje",
+        "mesa-xxx:evidencia:revolta-aberta"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:origem",
+      "consequencia_id": "mesa-xxx:consequencia:cronologia"
+    },
+    "mesa-xxx:cena:refugio-sem-chefe": {
+      "evidencias": [
+        "mesa-xxx:evidencia:fugitiva",
+        "mesa-xxx:evidencia:revolta-aberta"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:consequencias",
+      "consequencia_id": "mesa-xxx:consequencia:autonomia"
+    }
+  }
+}
