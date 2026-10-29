@@ -49,7 +49,7 @@ export function buildSettlementInventory(inventory,lot,horizon,macro){
  const assigned=new Set();
  for(const x of lot.assentamentos||[]){
    if(!proposed.has(x.id)||assigned.has(x.id)||!fronts.has(x.frente_id)||
-      x.setor!==fronts.get(x.frente_id).macro_id||
+      !(fronts.get(x.frente_id).setores_possiveis||[fronts.get(x.frente_id).macro_id]).includes(x.setor)||
       x.aprovacao_autoral!==false||x.estado!=="proposta_nao_canonica"||
       x.proposta_de!=="assentamento_coletivo"||
       x.localizacao_exata!==null||x.rota_acesso!==null||x.geometria!==null||
