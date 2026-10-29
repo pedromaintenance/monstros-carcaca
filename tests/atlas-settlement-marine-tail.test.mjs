@@ -55,7 +55,7 @@ test("XLVII rejeita falsos povoamentos e falsa cartografia",()=>{
  reject("ilha vira vila",d=>d.ilhas[0].conta_como_assentamento=true,/Ilha fictícia/);
  reject("ilha localizada",d=>d.ilhas[0].coordenadas=[1,2],/Ilha fictícia/);
  reject("comunidade numa ilha inexistente",d=>d.comunidades_insulares[0].ilha_id="ilha:inexistente",/Comunidade insular/);
- reject("ilha vazia torna-se habitada",d=>d.ilhas[3].permite_comunidade_proposta=true,/assentamento\/ilha incompatível/);
+ reject("ilha vazia torna-se habitada",d=>d.ilhas[3].permite_comunidade_proposta=true,/Assentamento\/ilha incompatível/);
  reject("comunidade não consta da ilha",d=>d.ilhas[0].comunidades_associadas=[],/assentamento\/ilha incompatível/);
  reject("comunidade aprovada",d=>d.comunidades_cauda[0].aprovacao_autoral=true,/Assentamento canonizado/);
  reject("rota fictícia",d=>d.comunidades_cauda[0].rota="Boca do Abismo",/Assentamento canonizado/);
