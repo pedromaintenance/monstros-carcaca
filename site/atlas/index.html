@@ -372,6 +372,45 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .hydro-rule{border-left:3px solid #769b90;padding:10px 13px;background:#20302c;border-radius:4px;font-size:11px;line-height:1.7;color:#ced9d0}
 .hydro-mini-gap{border-left:2px solid #958b69;padding-left:10px}
 @media(max-width:650px){.hydro-cards{grid-template-columns:1fr}}
+
+/* Ciclo XL — uma cronologia de acontecimentos, não um mapa de soberanias. */
+.chrono-stats{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 8px}
+.chrono-stats span{font-size:10px;background:#252a22;border:1px solid #6b5d45;border-radius:8px;padding:6px 9px;color:#e0cfaa}
+.chrono-phases{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:7px;margin-top:15px}
+.chrono-phase{background:#1b2923;border:1px solid #455749;border-radius:10px;padding:10px;display:flex;flex-direction:column;gap:6px;min-height:76px;text-align:left;color:#e2dac8}
+.chrono-phase b{font-size:10px;line-height:1.4}.chrono-phase small{font-size:10px;color:#acbbaa}
+.chrono-phase.active,.chrono-phase:hover{background:#4b3b29;border-color:#d1b27f}
+.chrono-phase-description{font-size:11px;color:#c3cbbd;line-height:1.6;margin:12px 0 18px}
+.chrono-notice{color:#c5d0c4;font-size:11px;line-height:1.7;padding:10px 12px;border-left:3px solid #c2a77d;background:#282d24;border-radius:3px}
+.chrono-filter-line{display:flex;justify-content:space-between;gap:8px;align-items:center;flex-wrap:wrap;margin:13px 0}
+.chrono-filter-line label{font-size:10px;color:#e0d6c0}
+.chrono-filter-line select{margin-left:6px;background:#202c26;border:1px solid #526b5b;color:#e4eee1;font-size:11px;border-radius:6px;padding:6px;max-width:200px}
+.chrono-filter-line small{font-size:9px;color:#aabcab}
+.chrono-event-list{display:grid;gap:8px}
+.chrono-event{width:100%;display:grid;grid-template-columns:60px minmax(0,1fr);gap:5px 12px;padding:13px;border:1px solid #3b5141;border-radius:9px;background:#19261e;text-align:left;color:#e0e6d8}
+.chrono-event:hover,.chrono-event.active{border-color:#c8ae7b;background:#332e24}
+.chrono-event>b{grid-row:span 2;color:#e0c493;font-size:13px}
+.chrono-event>span{font-size:12px;font-weight:700;line-height:1.4}.chrono-event>small{font-size:9px;color:#b0c5b1}
+.chrono-empty{font-size:11px;color:#b3c2b2;border:1px dashed #536457;padding:12px;border-radius:8px}
+.chrono-roles{display:grid;gap:7px}
+.chrono-roles div{border:1px solid #50614c;border-radius:7px;padding:9px;background:#263126}
+.chrono-roles b{display:block;color:#dbc5a3;font-size:11px}
+.chrono-roles small{display:block;font-size:10px;color:#b9c9b9;margin-top:3px}
+.chrono-centers{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.chrono-center{background:#202a24;border:1px solid #4a5f4f;border-radius:10px;padding:13px}
+.chrono-center>small,.chrono-center-footer,.chrono-refs{font-size:10px;color:#a8bcae;line-height:1.6}
+.chrono-center h4{font:500 13px Cinzel,serif;color:#e4d4b5;margin:7px 0}
+.chrono-center p{font-size:11px;color:#b6c3b6;line-height:1.6}
+.chrono-center-footer{display:flex;flex-direction:column;border-top:1px solid #3e5142;padding-top:8px;gap:4px}
+.chrono-refs{margin-top:9px}
+.chrono-refs button{display:inline-block;border:1px solid #84745a;background:#342c22;color:#e3cfac;border-radius:5px;padding:3px 6px;font-size:10px;margin-left:3px}
+.chrono-future{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.chrono-future article{border:1px solid #67533e;background:#2b2921;padding:12px;border-radius:8px}
+.chrono-future small{font-size:9px;color:#ddbf8e}.chrono-future p{font-size:11px;color:#e1dfc8;line-height:1.6}
+.chrono-rules{display:grid;gap:9px}.chrono-rules p{font-size:11px;line-height:1.7;color:#d5d8bd}
+.chrono-rules div{border-left:3px solid #a69a7b;background:#2b3026;padding:11px;color:#c6d5c6;font-size:11px;line-height:1.7}
+@media(max-width:1060px){.chrono-phases{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media(max-width:660px){.chrono-phases{grid-template-columns:repeat(2,minmax(0,1fr))}.chrono-centers,.chrono-future{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -400,6 +439,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
   <section id="cartographicCharter" class="env-section" aria-label="Carta cartográfica continental"><p class="env-explain">Carregando leitura cartográfica do continente...</p></section>
   <section id="continentalHydrology" class="env-section" aria-label="Hidrografia continental"><p class="env-explain">Carregando águas e zonas hidrográficas da Carcaça...</p></section>
+  <section id="chronocartography" class="env-section" aria-label="Cronocartografia do poder"><p class="env-explain">Carregando os marcos e esferas de poder através dos séculos...</p></section>
   <section id="topologyChoices" class="env-section" aria-label="Oficina de alternativas topológicas"><p class="env-explain">Carregando matriz de decisões sobre o continente...</p></section>
   <div class="macro-layout">
     <div id="macroCards" class="macro-grid"><div class="loader">Carregando as regiões documentadas...</div></div>
@@ -453,6 +493,8 @@ import {buildCartographicCharter} from "./cartographic-charter.mjs";
 import {initCartographicCharter} from "./cartographic-charter-ui.mjs";
 import {buildContinentalHydrology} from "./continental-hydrology.mjs";
 import {initContinentalHydrology} from "./continental-hydrology-ui.mjs";
+import {buildChronocartography} from "./chronocartography.mjs";
+import {initChronocartography} from "./chronocartography-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -476,7 +518,8 @@ const paths={
   interfaces:"data/atlas/interfaces-continentais-ciclo36.json",
   topology:"data/atlas/matriz-topologica-ciclo37.json",
   charter:"data/atlas/carta-cartografica-ciclo38.json",
-  hydrology:"data/atlas/hidrografia-continental-ciclo39.json"
+  hydrology:"data/atlas/hidrografia-continental-ciclo39.json",
+  chrono:"data/atlas/cronocartografia-ciclo40.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -793,6 +836,7 @@ $("export").addEventListener("click",()=>{
     state.topology=buildTopologyChoices(loaded.topology,state.macro,state.interfaces,state.physical);
     state.charter=buildCartographicCharter(loaded.charter,state.physical,state.interfaces,state.topology);
     state.hydrology=buildContinentalHydrology(loaded.hydrology,state.physical,state.environments,state.interfaces,state.topology);
+    state.chrono=buildChronocartography(loaded.chrono,state.macro,state.networks,state.physical,state.topology);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -801,6 +845,7 @@ $("export").addEventListener("click",()=>{
     initContinentalInterfaces($("macroInterfaces"),state.interfaces);
     initCartographicCharter($("cartographicCharter"),state.charter,macroDiveInto);
     initContinentalHydrology($("continentalHydrology"),state.hydrology,macroDiveInto);
+    initChronocartography($("chronocartography"),state.chrono);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -820,6 +865,7 @@ $("export").addEventListener("click",()=>{
     $("topologyChoices").textContent="A matriz topológica não pôde ser carregada.";
     $("cartographicCharter").textContent="A carta cartográfica não pôde ser carregada.";
     $("continentalHydrology").textContent="A hidrografia continental não pôde ser carregada.";
+    $("chronocartography").textContent="A cronocartografia não pôde ser carregada.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
