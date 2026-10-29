@@ -1,0 +1,463 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Primeiro lote de assentamentos fantásticos — exploração regional",
+  "estado": "propostas_editoriais_de_povoamento_sem_canonizacao",
+  "altera_canon": false,
+  "aprovacao_autoral": false,
+  "criterio": "Comunidades coletivas propostas, não números reais de ocupação. Habitantes, formas sociais e ecologias são hipóteses para avaliação; a localização exata, a relação de vizinhança e as rotas seguem abertas.",
+  "escopo": "Primeiro lote transversal de 14 assentamentos com comunidades de criaturas fantásticas e humanoides, incluindo goblins, fadas, colônias e vida submarina. Nenhum lugar está aprovado.",
+  "assentamentos": [
+    {
+      "id": "povoamento:xlv:01",
+      "nome": "A Maré dos Rostos de Sal",
+      "frente_id": "frente:macro:costa",
+      "setor": "costa",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "comunidade_cavernicola_sazonal",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Kuo-Toa",
+        "organismos costeiros não especificados"
+      ],
+      "habitantes_descritos": "Kuo-Toa e outros moradores anfíbios sujeitos a acordo local",
+      "organizacao": "Conselho de vigias das marés que disputa autoridade com pregadores de Daegon",
+      "subsistencia_hipotetica": "Pesca em zonas de maré e coleta de invertebrados; toxicidade e potabilidade da água ainda indeterminadas",
+      "habitat_e_arquitetura": "Cavidades de pedra onde as marcas de inundação indicam lugares de dormir e de reunião",
+      "conflito_editorial": "Conflito entre ancestrais que desejam isolamento e agentes religiosos exigindo tributos",
+      "ancora_de_ambientacao": "A rede regional de cavernas kuo-toa é documentada; esta comunidade, nome, dissidência e cavidade específica são propostas",
+      "nao_inferir": "As marés podem impedir ocupação permanente; há um núcleo sazonal recorrente, não uma cidade à beira-mar",
+      "permanencia": "recorrente_sazonal_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:02",
+      "nome": "O Mosteiro das Tartarugas de Vidro",
+      "frente_id": "frente:macro:costa",
+      "setor": "ilhas",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "assentamento_insular_permanente",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Tortles",
+        "Tabaxis"
+      ],
+      "habitantes_descritos": "Tortles, tabaxis itinerantes e criaturas marinhas menores com convivência por definir",
+      "organizacao": "Comunidade monástica com decisão por assembleia, não sob governo universal das ilhas",
+      "subsistencia_hipotetica": "Coleta costeira, jardim de plantas tolerantes ao sal e conhecimento náutico; água doce por confirmar",
+      "habitat_e_arquitetura": "Pátios de concha e pedra reconstruídos após grandes marés; a ilha específica não foi nomeada no cânone",
+      "conflito_editorial": "O recolhimento de peregrinos e mercadores ameaça transformar acolhimento em dependência econômica",
+      "ancora_de_ambientacao": "O manuscrito documenta comunidades monásticas insulares; este mosteiro e sua ilha individual são propostas",
+      "nao_inferir": "É assentamento proposto em uma ilha proposta; as duas unidades devem ser contabilizadas separadamente",
+      "permanencia": "permanente_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:03",
+      "nome": "A Orla das Cestas Sussurrantes",
+      "frente_id": "frente:macro:rio",
+      "setor": "rio",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "assentamento_ribeirinho_permanente",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Goblins"
+      ],
+      "habitantes_descritos": "Goblins que organizam uma comuna de coletores e artesãos",
+      "organizacao": "Conselho de famílias e mestres de tecelagem; não necessariamente submissos à Corte",
+      "subsistencia_hipotetica": "Cestos de fibras e objetos recuperados do rio, comércio apenas hipotético e não medido",
+      "habitat_e_arquitetura": "Habitações sobre plataformas móveis presas à margem, posicionamento ao longo do rio não fixado",
+      "conflito_editorial": "Cobradores da Corte querem converter uma atividade comunitária em posto de arrecadação",
+      "ancora_de_ambientacao": "O Rio Ancestral tem tributação e comércio documentados; a comunidade goblin e a tecnologia das plataformas são propostas",
+      "nao_inferir": "Não afirmar travessia para Drakport nem posição em afluente inventado",
+      "permanencia": "permanente_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:04",
+      "nome": "Círculo das Lanternas D'Água",
+      "frente_id": "frente:macro:rio",
+      "setor": "rio",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "assentamento_flutuante_sazonal",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Fadas fluviais propostas",
+        "Viajantes ribeirinhos"
+      ],
+      "habitantes_descritos": "Fadas de água e moradores ribeirinhos convidados",
+      "organizacao": "Pacto coletivo de hospedagem com liderança rotativa; sem filiação automática aos Shadow Fey",
+      "subsistencia_hipotetica": "Remendos de embarcações, rituais de orientação e coleta; modo de alimentação feérica ainda aberto",
+      "habitat_e_arquitetura": "Plataformas temporárias e pequenas lanternas vinculadas a uma ocupação recorrente, sem coordenadas",
+      "conflito_editorial": "Barqueiros e cobradores discordam sobre quem pode exigir passagem num lugar que se move",
+      "ancora_de_ambientacao": "A magia e os cultos fluviais são documentados, mas esta sociedade feérica independente é hipótese editorial",
+      "nao_inferir": "O efeito das lanternas é ritual proposto, não navegação segura comprovada",
+      "permanencia": "recorrente_sazonal_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:05",
+      "nome": "Bolsa da Folha Gravada",
+      "frente_id": "frente:macro:eldroth",
+      "setor": "eldroth",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "assentamento_florestal_permanente",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Goblins",
+        "Refugiados de outros povos (proposta)"
+      ],
+      "habitantes_descritos": "Famílias goblins e outros moradores ocultos sob a ocupação",
+      "organizacao": "Conselho que preserva nomes dos desaparecidos; não é unidade militar ranger",
+      "subsistencia_hipotetica": "Cultivo de cogumelos não identificados, coleta e troca local; espécies comestíveis não confirmadas",
+      "habitat_e_arquitetura": "Moradias protegidas por casca morta e espaços de depósito entre raízes, sem um traçado de caminho",
+      "conflito_editorial": "Moradores discordam se devem dar abrigo a fugitivos procurados pela ocupação",
+      "ancora_de_ambientacao": "Eldroth possui resistência clandestina documentada; o povoado goblin é proposta e não está documentado como aliado",
+      "nao_inferir": "A existência de raízes não confirma o 'Correio das Raízes Molhadas' do ciclo de sementes",
+      "permanencia": "permanente_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:06",
+      "nome": "Jardim das Vozes Desatadas",
+      "frente_id": "frente:macro:eldroth",
+      "setor": "eldroth",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "dominio_feerico_habitado",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Fadas silvestres propostas"
+      ],
+      "habitantes_descritos": "Fadas silvestres de linhagens diversas e visitantes tolerados",
+      "organizacao": "Assembleia de guardiãs de pactos; não subordinada automaticamente a Sylara",
+      "subsistencia_hipotetica": "Cuidado de plantas extraordinárias e trocas de promessas, com sustento biológico não determinado",
+      "habitat_e_arquitetura": "Clareira habitada por construções mutáveis e pequenas câmaras em troncos; nada disso está confirmado no cânone",
+      "conflito_editorial": "Parte dos moradores deseja negociar com patrulhas de Sylara; outros se opõem à ocupação",
+      "ancora_de_ambientacao": "Há feéricos e ocupação em Eldroth, mas a clareira, os pactos e a facção interna são propostas",
+      "nao_inferir": "A presença de fadas não significa espionagem nem oposição automática à Corte",
+      "permanencia": "permanente_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:07",
+      "nome": "O Coral dos Troncos Acordados",
+      "frente_id": "frente:macro:ironwood",
+      "setor": "ironwood",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "colonia_senciente_enraizada",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Árvores conscientes propostas",
+        "Seres de casca associados"
+      ],
+      "habitantes_descritos": "Árvores conscientes e pequenos seres associados, espécies não estabelecidas",
+      "organizacao": "Deliberação coletiva lenta vinculada a esta comunidade vegetal proposta",
+      "subsistencia_hipotetica": "Fotossíntese, água, solo e trocas mutualísticas possíveis; não converter magia em fluxo medido",
+      "habitat_e_arquitetura": "Conjunto de árvores habitadas e espaços de raiz, assentamento sem casas de pedra",
+      "conflito_editorial": "Rangers desejam passagem discreta, mas a comunidade teme dano às raízes",
+      "ancora_de_ambientacao": "Ironwood e seus rangers são documentados; árvores conscientes e colônia não são",
+      "nao_inferir": "A ligação com Ironwood não cria contiguidade física com Eldroth",
+      "permanencia": "permanente_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:08",
+      "nome": "O Ninho das Cinquenta Cordas",
+      "frente_id": "frente:macro:ironwood",
+      "setor": "ironwood",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "assentamento_arboricola_sazonal",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Goblinoides arborícolas propostos"
+      ],
+      "habitantes_descritos": "Goblinoides escaladores e visitantes de outras linhagens",
+      "organizacao": "Coordenadores de tendas escolhidos conforme estação; nenhuma lealdade racial fixada",
+      "subsistencia_hipotetica": "Recuperação de fibras, pequenas presas e coleta; impacto sobre fauna deve ser revisto",
+      "habitat_e_arquitetura": "Ninhos e plataformas entre copas, montados e desmontados em ciclos não datados",
+      "conflito_editorial": "Os rangers consideram a presença útil para informação, mas disputam a captura de animais",
+      "ancora_de_ambientacao": "A atividade dos rangers em Ironwood é documentada; os goblinoides e o ninho coletivo são propostas",
+      "nao_inferir": "A mobilidade sazonal não estabelece itinerário geográfico nem número de ciclos",
+      "permanencia": "recorrente_sazonal_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:09",
+      "nome": "A Aldeia das Jarras Refeitas",
+      "frente_id": "frente:macro:caatinga",
+      "setor": "caatinga",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "assentamento_artesanal_permanente",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Goblins",
+        "Orcs"
+      ],
+      "habitantes_descritos": "Goblins ceramistas, famílias orcs e visitantes do Além Sul",
+      "organizacao": "Conselho de artesãos sem soberania comprovada sobre outras aldeias",
+      "subsistencia_hipotetica": "Barro, conserto de recipientes e coleta de água ainda não identificada; não criar uma nascente",
+      "habitat_e_arquitetura": "Abrigos semienterrados, pátios de secagem e oficinas de cerâmica em paisagem árida proposta",
+      "conflito_editorial": "Disputa sobre partilha de água durante acolhimento de exilados",
+      "ancora_de_ambientacao": "Orcs e exilados da Caatinga são documentados; goblins ceramistas, oficinas e localidade são propostas",
+      "nao_inferir": "Sem fonte de água definida, a viabilidade hídrica é questão autoral aberta",
+      "permanencia": "permanente_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:10",
+      "nome": "A Vigília do Barro que Anda",
+      "frente_id": "frente:macro:caatinga",
+      "setor": "caatinga",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "colonia_elemental_permanente",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Elementais de argila propostos"
+      ],
+      "habitantes_descritos": "Criaturas elementais de argila com organização comunitária proposta",
+      "organizacao": "Rodízio de guardiões para proteger locais de renovação mineral",
+      "subsistencia_hipotetica": "Nutrientes minerais e ciclos de umidade hipotéticos; mecanismo de reprodução desconhecido",
+      "habitat_e_arquitetura": "Corpos e abrigos moldados de barro, sem afirmar que a própria argila seja viva por todo o bioma",
+      "conflito_editorial": "Povos vizinhos procuram material para consertos, sem reconhecer sua possível condição de pessoa",
+      "ancora_de_ambientacao": "A geografia árida é documentada; elementais de argila e colonia organizada são totalmente propostos",
+      "nao_inferir": "Ocupação de um nicho não prova rio, chuva ou lençol subterrâneo",
+      "permanencia": "permanente_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:11",
+      "nome": "O Condado das Sementes de Quartzo",
+      "frente_id": "frente:macro:thargrid-montanhas",
+      "setor": "thargrid",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "assentamento_subterraneo_permanente",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Svirfneblin",
+        "Criaturas fúngicas sencientes propostas"
+      ],
+      "habitantes_descritos": "Svirfneblin e uma comunidade menor de criaturas fúngicas inteligentes propostas",
+      "organizacao": "Conselhos paralelos para gestão de galeria e fungicultura; não subordinados automaticamente ao Reino",
+      "subsistencia_hipotetica": "Troca de pedras trabalhadas e cultivo fúngico com energia, água e composição alimentar indeterminadas",
+      "habitat_e_arquitetura": "Câmaras habitadas e canteiros de fungos dentro de um complexo hipotético das montanhas",
+      "conflito_editorial": "A abertura de novas galerias pode ferir uma rede fúngica com possível sensibilidade",
+      "ancora_de_ambientacao": "O manuscrito documenta alguns enclaves svirfneblin em Thargrid e trocas com anões; esta comunidade e seus fungos são propostas",
+      "nao_inferir": "Não inventar ligação entre esta galeria e o Reino Sob a Montanha ou o Rio",
+      "permanencia": "permanente_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:12",
+      "nome": "Os Degraus da Escama Rachada",
+      "frente_id": "frente:macro:garganta-entorno",
+      "setor": "garganta",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "assentamento_de_escarpa_permanente",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Kobolds propostos"
+      ],
+      "habitantes_descritos": "Kobolds artesãos e moradores deslocados de identidade ainda não fixada",
+      "organizacao": "Organização de escavadores e cuidadores de ossos, independente da administração da cidade até definição",
+      "subsistencia_hipotetica": "Recuperação de peças, talhe e pequenas trocas hipotéticas; água e agricultura locais não determinadas",
+      "habitat_e_arquitetura": "Moradas escavadas em estruturas rochosas associadas ao entorno do crânio, sem coordenadas",
+      "conflito_editorial": "A Corte deseja controlar inscrições e vestígios aos quais os moradores atribuem valor",
+      "ancora_de_ambientacao": "Garganta e escavações são documentadas; kobolds e degraus habitados são proposta",
+      "nao_inferir": "Não colocar a comunidade dentro da Garganta automaticamente: a frente é seu entorno",
+      "permanencia": "permanente_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:13",
+      "nome": "A Sinfonia das Fendas Claras",
+      "frente_id": "frente:macro:submersos",
+      "setor": "azuis",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "assentamento_submarino_permanente",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Tritões",
+        "Sereias"
+      ],
+      "habitantes_descritos": "Tritões, sereias e criaturas recifais aliadas de estatuto ainda não confirmado",
+      "organizacao": "Conselho de patrulhas e guardiãs de memória, com autonomia local",
+      "subsistencia_hipotetica": "Cuidado de recifes, coleta marítima e comunicação musical proposta; nada mensurado",
+      "habitat_e_arquitetura": "Estruturas em recifes e fissuras sob água azul, posição e corrente exatas não definidas",
+      "conflito_editorial": "Um grupo propõe patrulhar o limite móvel do sangue; outro teme levar a corrupção ao assentamento",
+      "ancora_de_ambientacao": "Cidades tritãs e sereias nas águas azuis e patrulhas são documentadas; esta comunidade e suas estruturas individuais não",
+      "nao_inferir": "Não fixar a fronteira do Mar de Sangue ou tomar sua geografia como cidade real",
+      "permanencia": "permanente_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    },
+    {
+      "id": "povoamento:xlv:14",
+      "nome": "O Claustro das Marés Feridas",
+      "frente_id": "frente:macro:submersos",
+      "setor": "costa",
+      "proposta_de": "assentamento_coletivo",
+      "forma": "assentamento_submarino_permanente",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "criaturas_e_povos": [
+        "Abissais marinhos"
+      ],
+      "habitantes_descritos": "Abissais marinhos e moradores de outras linhagens sujeitos a pactos locais",
+      "organizacao": "Congregação anfíbia que disputa interpretação dos tributos exigidos para pesca e navegação",
+      "subsistencia_hipotetica": "Cultivo e coleta de fauna de grandes profundidades, métodos e pressão adaptativa ainda indeterminados",
+      "habitat_e_arquitetura": "Santuário e áreas de abrigo em águas corrompidas com forma arquitetônica hipotética",
+      "conflito_editorial": "Alguns sacerdotes defendem proteção mediante contribuição; outros defendem coerção irrestrita",
+      "ancora_de_ambientacao": "A sociedade Abissal marinha e exigências de tributos são documentadas; esta comunidade, disputa e cidade específica são propostas",
+      "nao_inferir": "Abissais marinhos não são demônios do Abismo e exigências não provam pagamentos",
+      "permanencia": "permanente_proposta",
+      "localizacao_exata": null,
+      "rota_acesso": null,
+      "populacao": null,
+      "distancia": null,
+      "geometria": null,
+      "fontes": [
+        "data/atlas/macrorregioes-carcaca.json",
+        "data/atlas/horizonte-povoamento-macro.json"
+      ],
+      "contagem_em_meta": "proposta_nao_aprovada"
+    }
+  ],
+  "guardrails": [
+    "Goblins e fadas não são por padrão hostis, subordinados ou moralmente uniformes.",
+    "Nada aqui estabelece a presença canônica dessas comunidades num setor.",
+    "Não confundir demônios do Abismo com Abissais marinhos.",
+    "Não presumir fontes de água na Caatinga nem rotas entre Ironwood e Eldroth.",
+    "Não fixar a fronteira rubro-azul e não atribuir uma ilha individual ao cânone.",
+    "Nenhuma dessas propostas representa uma instalação já registrada nas 16 sementes do ciclo anterior.",
+    "Um assentamento coletivo proposto não substitui o inventário de cidades e comunidades documentadas."
+  ],
+  "status_de_contagem": "Nao adicionar à contagem aprovada; apenas à lista de propostas até revisão de autoria."
+}
