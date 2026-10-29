@@ -1,0 +1,613 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Geografia física e anatomia de Golzdov — Ciclo XXXIV",
+  "estado": "indice_editorial_de_fontes",
+  "altera_canon": false,
+  "aprovacao_autoral": false,
+  "observacao": "Esquema qualitativo: leste/oeste, norte/sul e interioridade são somente relações explicitamente documentadas; nenhuma posição visual expressa coordenadas, distância ou forma do continente.",
+  "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "pontos": [
+    {
+      "id": "geo-xxxiv:cranio",
+      "titulo": "Crânio de Golzdov",
+      "tipo": "anatomia",
+      "orientacao": "leste",
+      "setores": [
+        "garganta"
+      ],
+      "lugar_id": "lugar-visual:garganta",
+      "paginas": [
+        2,
+        4
+      ],
+      "descricao": "Garganta ocupa os ossos do crânio, associados à cabeça submersa no extremo leste.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:asa-direita",
+      "titulo": "Asa direita de Golzdov",
+      "tipo": "anatomia",
+      "orientacao": "nao_fixado",
+      "setores": [
+        "eldroth"
+      ],
+      "lugar_id": "lugar-visual:floresta-eldroth",
+      "paginas": [
+        5
+      ],
+      "descricao": "A Floresta de Eldroth e Vandar aparecem na seção autoral da asa direita. O texto não transforma direita anatômica em leste cartográfico.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:coluna-dorsal",
+      "titulo": "Centro da coluna dorsal",
+      "tipo": "anatomia",
+      "orientacao": "nao_fixado",
+      "setores": [],
+      "lugar_id": null,
+      "paginas": [
+        9
+      ],
+      "descricao": "Em 886 EC, Voragar ergueu fortaleza no centro da coluna dorsal. O lugar histórico ainda não tem identificação territorial e sua situação atual não é definida pela fonte.",
+      "estado": "historico_sem_local_individual"
+    },
+    {
+      "id": "geo-xxxiv:costelas",
+      "titulo": "Costelas e cavernas de Golzdov",
+      "tipo": "anatomia",
+      "orientacao": "nao_fixado",
+      "setores": [],
+      "lugar_id": null,
+      "paginas": [
+        2,
+        9
+      ],
+      "descricao": "Desde cerca de 100 EC aparecem reinos erguidos em costelas e cavernas; nenhuma costela individual recebe coordenadas ou povoado no texto.",
+      "estado": "historico_sem_local_individual"
+    },
+    {
+      "id": "geo-xxxiv:cauda",
+      "titulo": "Cauda de Golzdov",
+      "tipo": "anatomia",
+      "orientacao": "alem_abismo",
+      "setores": [
+        "cauda"
+      ],
+      "lugar_id": "lugar-visual:templo-do-crepusculo",
+      "paginas": [
+        5,
+        6,
+        8
+      ],
+      "descricao": "A Rainha construiu o Templo do Crepúsculo sobre a cauda, do outro lado do Abismo. 'Do outro lado' não especifica ponte, estrada ou direção cardeal.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:montanhas-thargrid",
+      "titulo": "Montanhas de Thargrid",
+      "tipo": "relevo",
+      "orientacao": "norte",
+      "setores": [
+        "thargrid"
+      ],
+      "lugar_id": "lugar-visual:montanhas-thargrid",
+      "paginas": [
+        6
+      ],
+      "descricao": "O Reino Sob a Montanha fica nas montanhas do norte; o território é um dos polos da resistência.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:ironwood",
+      "titulo": "Ironwood, floresta e fortaleza",
+      "tipo": "relevo",
+      "orientacao": "sul-relativo",
+      "setores": [
+        "thargrid"
+      ],
+      "lugar_id": "lugar-visual:ironwood",
+      "paginas": [
+        6
+      ],
+      "descricao": "Ironwood fica ao sul das montanhas de Thargrid, oculta na floresta. Sul relativo não fornece o ponto ou distância exatos.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:caatinga",
+      "titulo": "Terras áridas da Caatinga",
+      "tipo": "relevo",
+      "orientacao": "sul",
+      "setores": [
+        "caatinga"
+      ],
+      "lugar_id": "lugar-visual:caatinga-bioma",
+      "paginas": [
+        5
+      ],
+      "descricao": "Caatinga ocupa as terras áridas do Além Sul, com extensão e fronteira costeira indefinidas.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:costa-sul",
+      "titulo": "Costa Sul e penhascos",
+      "tipo": "relevo",
+      "orientacao": "sul",
+      "setores": [
+        "costa"
+      ],
+      "lugar_id": "lugar-visual:portomonte",
+      "paginas": [
+        5
+      ],
+      "descricao": "Portomonte fica entre penhascos costeiros; pradarias agrícolas situam-se junto ao Mar de Sangue.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:rio",
+      "titulo": "Rio Ancestral",
+      "tipo": "hidrografia",
+      "orientacao": "atravessa",
+      "setores": [
+        "rio"
+      ],
+      "lugar_id": "lugar-visual:rio-ancestral",
+      "paginas": [
+        4,
+        5
+      ],
+      "descricao": "O grande rio atravessa o continente e termina no Abismo a oeste. A nascente e a localização de cada trecho não estão determinadas.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:foz",
+      "titulo": "O Abismo e a queda do rio",
+      "tipo": "hidrografia",
+      "orientacao": "oeste",
+      "setores": [
+        "foz"
+      ],
+      "lugar_id": "lugar-visual:abismo",
+      "paginas": [
+        5,
+        8
+      ],
+      "descricao": "O Rio Ancestral despenca no extremo oeste. O Abismo também é descrito como ruptura entre mundos.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:margem-norte",
+      "titulo": "Antigo Templo das Sombras",
+      "tipo": "margem",
+      "orientacao": "norte-relativo",
+      "setores": [
+        "foz"
+      ],
+      "lugar_id": "lugar-visual:templo-das-sombras",
+      "paginas": [
+        5,
+        9
+      ],
+      "descricao": "O antigo palácio da Rainha estava na margem norte do Abismo e foi destruído na invasão demoníaca.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:margem-sul",
+      "titulo": "Gualápolis e a Boca do Abismo",
+      "tipo": "margem",
+      "orientacao": "sul-relativo",
+      "setores": [
+        "foz"
+      ],
+      "lugar_id": "lugar-visual:gualapolis",
+      "paginas": [
+        5,
+        6,
+        10
+      ],
+      "descricao": "Gualápolis é descrita como antiga capital nativa na margem sul do Abismo; Ulorian fundou a Boca sobre a cidade. Sua relação com Shadar-Riverie exige revisão.",
+      "estado": "documentado_com_conflito"
+    },
+    {
+      "id": "geo-xxxiv:gualapolis",
+      "titulo": "Gualápolis, antiga capital nativa",
+      "tipo": "assentamento_historico",
+      "orientacao": "sul-relativo",
+      "setores": [
+        "foz"
+      ],
+      "lugar_id": "lugar-visual:gualapolis",
+      "paginas": [
+        5,
+        6,
+        10
+      ],
+      "descricao": "Capital nativa da margem sul do Abismo, tomada por Ulorian em 984 EC. O vínculo com Shadar-Riverie permanece sem resolução topográfica.",
+      "estado": "documentado_com_conflito"
+    },
+    {
+      "id": "geo-xxxiv:boca-do-abismo",
+      "titulo": "Boca do Abismo, fortaleza",
+      "tipo": "fortaleza",
+      "orientacao": "sul-relativo",
+      "setores": [
+        "foz"
+      ],
+      "lugar_id": "lugar-visual:boca-do-abismo",
+      "paginas": [
+        5,
+        6
+      ],
+      "descricao": "Fortaleza fundada por Ulorian sobre a antiga Gualápolis; não define a extensão do sítio ou sua relação com Shadar.",
+      "estado": "documentado_com_conflito"
+    },
+    {
+      "id": "geo-xxxiv:ilha-lunar",
+      "titulo": "Ilha do Templo da Lua",
+      "tipo": "hidrografia",
+      "orientacao": "nao_fixado",
+      "setores": [
+        "rio"
+      ],
+      "lugar_id": "lugar-visual:templo-da-lua",
+      "paginas": [
+        4
+      ],
+      "descricao": "Templo da Lua em ilha do Rio Ancestral, sem trecho do curso fluvial nomeado.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:mar-sangue",
+      "titulo": "Mar de Sangue",
+      "tipo": "maritimo",
+      "orientacao": "sul",
+      "setores": [
+        "costa"
+      ],
+      "lugar_id": "lugar-visual:mar-de-sangue",
+      "paginas": [
+        5,
+        14,
+        15
+      ],
+      "descricao": "Mar corrompido junto à Costa Sul, com arquipélagos, cavernas e comunidades marinhas.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:aguas-azuis",
+      "titulo": "Águas azuis além do Mar de Sangue",
+      "tipo": "maritimo",
+      "orientacao": "alem-mar",
+      "setores": [
+        "azuis"
+      ],
+      "lugar_id": "lugar-visual:aguas-azuis",
+      "paginas": [
+        15,
+        24
+      ],
+      "descricao": "Mar aberto e águas azuis além das águas corrompidas; limite exato não cartografado.",
+      "estado": "documentado"
+    },
+    {
+      "id": "geo-xxxiv:grama",
+      "titulo": "Condado de Grama-Cortada",
+      "tipo": "localizacao_pendente",
+      "orientacao": "nao_fixado",
+      "setores": [
+        "grama"
+      ],
+      "lugar_id": "lugar-visual:grama-cortada",
+      "paginas": [
+        2,
+        18,
+        19
+      ],
+      "descricao": "Comunidades hobbits documentadas, mas sem posição continental verificável.",
+      "estado": "documentado_sem_posicao"
+    },
+    {
+      "id": "geo-xxxiv:shadar",
+      "titulo": "Shadar-Riverie e a antiga Gualápolis",
+      "tipo": "localizacao_pendente",
+      "orientacao": "nao_fixado",
+      "setores": [
+        "shadar"
+      ],
+      "lugar_id": "lugar-visual:shadar-riverie",
+      "paginas": [
+        6
+      ],
+      "descricao": "O manuscrito situa Shadar-Riverie sobre a antiga Gualápolis e também descreve Boca do Abismo construída no mesmo sítio. A sobreposição não é resolvida.",
+      "estado": "documentado_com_conflito"
+    }
+  ],
+  "relacoes": [
+    {
+      "id": "rel-xxxiv:garganta-abismo",
+      "de": "geo-xxxiv:cranio",
+      "para": "geo-xxxiv:foz",
+      "tipo": "referencia_cardinal",
+      "orientacao": "leste_oeste",
+      "paginas": [
+        2,
+        5
+      ],
+      "descricao": "Garganta no extremo leste e Abismo no extremo oeste; sem indicar distância ou estrada.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "rel-xxxiv:rio-ancestral-abismo",
+      "de": "geo-xxxiv:rio",
+      "para": "geo-xxxiv:foz",
+      "tipo": "desagua",
+      "orientacao": "rio_queda",
+      "paginas": [
+        4,
+        5,
+        8
+      ],
+      "descricao": "Rio Ancestral se precipita no Abismo no extremo oeste.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "rel-xxxiv:templo-das-sombras-abismo",
+      "de": "geo-xxxiv:margem-norte",
+      "para": "geo-xxxiv:foz",
+      "tipo": "margem",
+      "orientacao": "norte",
+      "paginas": [
+        5
+      ],
+      "descricao": "Antigo templo da Rainha na margem norte do Abismo.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "rel-xxxiv:gualapolis-abismo",
+      "de": "geo-xxxiv:gualapolis",
+      "para": "geo-xxxiv:foz",
+      "tipo": "margem",
+      "orientacao": "sul",
+      "paginas": [
+        5,
+        6
+      ],
+      "descricao": "Gualápolis como capital nativa da margem sul do Abismo.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "rel-xxxiv:boca-do-abismo-gualapolis",
+      "de": "geo-xxxiv:boca-do-abismo",
+      "para": "geo-xxxiv:gualapolis",
+      "tipo": "sobreposicao_historica",
+      "orientacao": "sobre",
+      "paginas": [
+        5,
+        6
+      ],
+      "descricao": "Ulorian estabeleceu sua fortaleza sobre a cidade antiga.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "rel-xxxiv:ironwood-montanhas-thargrid",
+      "de": "geo-xxxiv:ironwood",
+      "para": "geo-xxxiv:montanhas-thargrid",
+      "tipo": "posicao_relativa",
+      "orientacao": "sul",
+      "paginas": [
+        6
+      ],
+      "descricao": "Ironwood está ao sul das Montanhas de Thargrid; não se presume mesma jurisdição.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "rel-xxxiv:templo-do-crepusculo-abismo",
+      "de": "geo-xxxiv:cauda",
+      "para": "geo-xxxiv:foz",
+      "tipo": "alem_de",
+      "orientacao": "nao_cardinal",
+      "paginas": [
+        6
+      ],
+      "descricao": "Templo do Crepúsculo fica sobre a cauda, do outro lado do Abismo.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "rel-xxxiv:templo-da-lua-rio-ancestral",
+      "de": "geo-xxxiv:ilha-lunar",
+      "para": "geo-xxxiv:rio",
+      "tipo": "ilha_no_rio",
+      "orientacao": "sem_trecho",
+      "paginas": [
+        4
+      ],
+      "descricao": "Templo da Lua em ilha do Rio Ancestral, trecho não identificado.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "rel-xxxiv:mar-de-sangue-costa-sul",
+      "de": "geo-xxxiv:mar-sangue",
+      "para": "geo-xxxiv:costa-sul",
+      "tipo": "litoral",
+      "orientacao": "sul",
+      "paginas": [
+        5,
+        15
+      ],
+      "descricao": "O Mar de Sangue banha o litoral do Além Sul.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "rel-xxxiv:aguas-azuis-mar-de-sangue",
+      "de": "geo-xxxiv:aguas-azuis",
+      "para": "geo-xxxiv:mar-sangue",
+      "tipo": "alem_de",
+      "orientacao": "sem_fronteira",
+      "paginas": [
+        15
+      ],
+      "descricao": "As águas azuis situam-se além do Mar de Sangue, sem linha divisória definida.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "rel-xxxiv:shadar-riverie-gualapolis",
+      "de": "geo-xxxiv:shadar",
+      "para": "geo-xxxiv:gualapolis",
+      "tipo": "topologia_contestada",
+      "orientacao": "sem_determinacao",
+      "paginas": [
+        6
+      ],
+      "descricao": "A descrição de Shadar-Riverie sobre Gualápolis requer conciliação com Boca do Abismo; não afirmar equivalência urbana.",
+      "estado": "revisao_autoral"
+    },
+    {
+      "id": "rel-xxxiv:costelas-coluna-dorsal",
+      "de": "geo-xxxiv:costelas",
+      "para": "geo-xxxiv:coluna-dorsal",
+      "tipo": "associacao_anatomica",
+      "orientacao": "sem_mapeamento",
+      "paginas": [
+        2,
+        9
+      ],
+      "descricao": "A anatomia de Golzdov sustenta reinos históricos, sem assentamentos individualizados nesta relação.",
+      "estado": "documentado_sem_geometria"
+    }
+  ],
+  "questoes": [
+    {
+      "id": "questao-xxxiv:anatomia-orientacao",
+      "pergunta": "A asa direita aponta para qual direção no mapa?",
+      "limite": "A designação 'asa direita' é anatômica; não basta para determinar leste, norte ou posição de Vandar em coordenadas.",
+      "setores": [
+        "eldroth"
+      ],
+      "paginas": [
+        5
+      ],
+      "resolvida": false,
+      "estado": "aguarda_decisao_autoral"
+    },
+    {
+      "id": "questao-xxxiv:esqueleto-dorsal",
+      "pergunta": "Onde fica a fortaleza de Voragar na coluna dorsal?",
+      "limite": "A cronologia diz 'centro da coluna dorsal', sem setor específico ou estado atual.",
+      "setores": [],
+      "paginas": [
+        9
+      ],
+      "resolvida": false,
+      "estado": "aguarda_decisao_autoral"
+    },
+    {
+      "id": "questao-xxxiv:grama",
+      "pergunta": "Onde fica o Condado de Grama-Cortada?",
+      "limite": "As fontes descrevem seus habitantes e cultos, mas não sua posição no território.",
+      "setores": [
+        "grama"
+      ],
+      "paginas": [
+        2,
+        18,
+        19
+      ],
+      "resolvida": false,
+      "estado": "aguarda_decisao_autoral"
+    },
+    {
+      "id": "questao-xxxiv:shadar-guala",
+      "pergunta": "Como conciliar Shadar-Riverie, Gualápolis e Boca do Abismo?",
+      "limite": "O texto sobrepõe três referências históricas e urbanas sem estabelecer uma cartografia única.",
+      "setores": [
+        "shadar",
+        "foz"
+      ],
+      "paginas": [
+        5,
+        6
+      ],
+      "resolvida": false,
+      "estado": "aguarda_decisao_autoral"
+    },
+    {
+      "id": "questao-xxxiv:rio-origem",
+      "pergunta": "Onde nasce o Rio Ancestral?",
+      "limite": "Conhece-se o eixo continental e seu desfecho no Abismo, mas não a nascente.",
+      "setores": [
+        "rio"
+      ],
+      "paginas": [
+        4,
+        5
+      ],
+      "resolvida": false,
+      "estado": "aguarda_decisao_autoral"
+    },
+    {
+      "id": "questao-xxxiv:ilha-templo",
+      "pergunta": "Em que trecho do rio se encontra a ilha do Templo da Lua?",
+      "limite": "Não há posição longitudinal ou relação segura com Drakport no recorte.",
+      "setores": [
+        "rio"
+      ],
+      "paginas": [
+        4
+      ],
+      "resolvida": false,
+      "estado": "aguarda_decisao_autoral"
+    },
+    {
+      "id": "questao-xxxiv:cauda-acesso",
+      "pergunta": "Como atravessar do Abismo até a cauda?",
+      "limite": "O templo fica do outro lado do Abismo, mas nenhuma ponte ou passagem física foi documentada.",
+      "setores": [
+        "cauda",
+        "foz"
+      ],
+      "paginas": [
+        5,
+        6
+      ],
+      "resolvida": false,
+      "estado": "aguarda_decisao_autoral"
+    },
+    {
+      "id": "questao-xxxiv:ironwood-limite",
+      "pergunta": "Como separar Ironwood, Thargrid e Eldroth no mapa?",
+      "limite": "A fonte situa Ironwood ao sul das montanhas; não fixa fronteira com Eldroth.",
+      "setores": [
+        "thargrid",
+        "eldroth"
+      ],
+      "paginas": [
+        5,
+        6
+      ],
+      "resolvida": false,
+      "estado": "aguarda_decisao_autoral"
+    },
+    {
+      "id": "questao-xxxiv:mar-fronteira",
+      "pergunta": "Onde termina o Mar de Sangue?",
+      "limite": "Há águas azuis além do mar, sem linha costeira ou marinha fixa.",
+      "setores": [
+        "costa",
+        "azuis"
+      ],
+      "paginas": [
+        15
+      ],
+      "resolvida": false,
+      "estado": "aguarda_decisao_autoral"
+    }
+  ],
+  "regras": [
+    "Direita anatômica não é leste cartográfico.",
+    "Outro lado do Abismo não prova uma ponte, trilha ou direção cardinal.",
+    "Margem norte e margem sul são relativas ao Abismo, não posições absolutas na página.",
+    "Sem área ou fronteiras em escala, sem cidades novas.",
+    "Locais históricos sem setor ficam sem localização regional inventada.",
+    "Shadar-Riverie e Gualápolis não são fundidas automaticamente.",
+    "Não há qualquer conexão ontológica entre demônios do Abismo e Abissais marinhos."
+  ]
+}

@@ -177,6 +177,60 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .time-event p{font-size:10px;color:#b6a992;margin:5px 0 0}
 @media(max-width:880px){.layer-layout{grid-template-columns:1fr}.layer-tag{display:none}}
 @media(max-width:650px){.layer-wrap{padding:13px}.time-head{display:block}.time-lim{margin-top:18px}.time-events{grid-template-columns:1fr}}
+
+/* Geografia física qualitativa: não usa coordenadas, métricas nem SVG cartográfico. */
+.phys-container{border:1px solid #3a4840;border-radius:16px;background:#121b18;margin:15px 0 20px;padding:19px}
+.phys-head{display:flex;justify-content:space-between;gap:20px;align-items:start}
+.phys-head h3{font:500 21px Cinzel,serif;margin:3px 0 8px}
+.phys-head p{max-width:640px;font-size:12px;color:#a3b2a6;line-height:1.6;margin:0}
+.phys-count{text-align:center;flex:0 0 auto;border:1px solid #4a5946;border-radius:10px;padding:8px 15px;background:#202923}
+.phys-count strong{font:500 22px Cinzel,serif;display:block;color:#e8d8b9}
+.phys-count span{font-size:10px;color:#b9c2b3}
+.phys-tabs{display:flex;gap:6px;flex-wrap:wrap;padding:17px 0}
+.phys-tab{border:1px solid #455247;background:#1e2821;color:#b2bcad;padding:8px 11px;border-radius:8px;font-size:11px}
+.phys-tab.active,.phys-tab:hover{background:#39352c;color:#f1dcaf;border-color:#a68e63}
+.phys-main{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,.95fr);gap:13px;align-items:start}
+.phys-board{background:#121a17;border:1px solid #303e34;border-radius:12px;padding:13px;min-height:290px}
+.phys-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.phys-card{background:#1a251e;border:1px solid #3d4e3e;border-radius:9px;padding:11px}
+.phys-card-title{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:baseline;gap:5px;padding-bottom:8px;border-bottom:1px solid #334535}
+.phys-card-title span{font:500 13px Cinzel,serif;color:#ddd3ba}
+.phys-card-title small{font-size:9px;color:#8ea193}
+.phys-wide{grid-column:span 2}
+.phys-list{display:flex;gap:6px;flex-wrap:wrap;padding-top:9px}
+.phys-place{background:#26332a;border:1px solid #52644e;color:#d3e0cf;border-radius:8px;padding:7px 10px;text-align:left;font-size:11px}
+.phys-place:hover,.phys-place.active{background:#4d402a;border-color:#baa171;color:#f2e4c9}
+.phys-inspector{border:1px solid #4c5947;border-radius:12px;padding:16px;background:#202720;position:sticky;top:12px}
+.phys-inspector h4{font:500 16px Cinzel,serif;margin:6px 0 12px;color:#e7dec6}
+.phys-inspector>p{font-size:11px;line-height:1.7;color:#bdcaba;margin:9px 0}
+.phys-kicker{font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#c9b07f}
+.phys-source{color:#c7aa84!important}
+.phys-jump{border:1px solid #9d8561;background:#3b3328;border-radius:8px;padding:9px 10px;font-size:11px;color:#f2debf}
+.phys-minititle{border-top:1px solid #4d5947;padding-top:15px;margin:16px 0 8px;color:#cfbd98;text-transform:uppercase;letter-spacing:1px;font-size:10px;font-weight:700}
+.phys-edge{width:100%;text-align:left;background:#27332c;border:1px solid #3c5042;border-radius:8px;margin:0 0 6px;padding:9px}
+.phys-edge:hover{border-color:#b7a173}
+.phys-edge span{display:block;font-size:11px;color:#e6e6d7}
+.phys-edge small{display:block;font-size:10px;color:#a4b7a7;line-height:1.5;margin-top:4px}
+.phys-unknown,.phys-note{font-size:11px;color:#c3b29c;line-height:1.7}
+.phys-note{padding:10px 12px;background:#342d2466;border-left:2px solid #a48c62;margin:0 0 12px}
+.phys-anatomy{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.phys-bone{padding:12px;background:#202924;border:1px solid #3a493d;border-radius:9px}
+.phys-bone small{font-size:9px;color:#b8a77f;display:block;margin-bottom:8px}
+.phys-bone p{font-size:11px;line-height:1.6;color:#a5b5a8}
+.phys-relations{display:grid;gap:8px}
+.phys-relationship{border:1px solid #34453b;border-radius:9px;padding:12px;background:#1c2820}
+.phys-relationship button{background:none;border:0;text-decoration:underline;text-underline-offset:3px;color:#decb9c;font-size:11px;padding:0}
+.phys-relationship span{font-size:10px;color:#9fb1a3}
+.phys-relationship p{font-size:11px;line-height:1.6;color:#adbfb0;margin:6px 0}
+.phys-relationship small{font-size:10px;color:#9d9f8d}
+.phys-questions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.phys-question{border:1px solid #5e5546;background:#2a2722;border-radius:9px;padding:12px}
+.phys-question small{font-size:10px;color:#be9e79;display:block}
+.phys-question strong{font-size:11px;display:block;margin:7px 0}
+.phys-question p{font-size:11px;line-height:1.6;color:#b5b2a8}
+.phys-foot{border-top:1px solid #34423a;margin-top:14px;padding-top:12px;color:#8da396;font-size:10px}
+@media(max-width:1000px){.phys-main{grid-template-columns:1fr}.phys-inspector{position:static}}
+@media(max-width:620px){.phys-container{padding:12px}.phys-grid,.phys-anatomy,.phys-questions{grid-template-columns:1fr}.phys-wide{grid-column:span 1}.phys-head{gap:10px}.phys-count{padding:6px}}
 @media(max-width:1100px){.site{padding:0 18px 35px}.counters{grid-template-columns:repeat(3,1fr)}.workspace{grid-template-columns:minmax(290px,43%) minmax(300px,1fr)}.details{padding:19px 20px}}
 @media(max-width:760px){.hero{padding:25px 0}.hero .symbol{display:none}h1{font-size:34px}.counters{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.counter{padding:10px}.counter strong{font-size:20px}.counter span{font-size:9px}.workspace{grid-template-columns:1fr}.panel{min-height:0}.tree-scroll{height:390px;min-height:0}.details{max-height:none;min-height:360px}.topline{font-size:9px;gap:10px;letter-spacing:1px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
@@ -203,6 +257,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <h2>Panorama macrorregional</h2><p>Territórios, núcleos habitados, centros de poder e relações continentais — antes de mapear vilas, criaturas ou câmaras uma a uma.</p></div>
   <button class="action" id="exportMacro" type="button" disabled>Exportar visão macro ↓</button></div>
   <div id="macroSummary" class="macro-summary"><span class="tiny">Consolidando os setores geográficos...</span></div>
+  <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
   <div class="macro-layout">
     <div id="macroCards" class="macro-grid"><div class="loader">Carregando as regiões documentadas...</div></div>
     <div id="macroDetails" class="macro-detail"><div class="loader">Selecione uma região para consultar seu território, suas âncoras e lacunas principais.</div></div>
@@ -243,6 +298,8 @@ import {buildAtlasTree,CONTENT_TYPES,PLACE_TYPES} from "./atlas-tree.mjs";
 import {buildMacroIndex} from "./macro-atlas.mjs";
 import {buildMacroNetworks} from "./macro-networks.mjs";
 import {initMacroLayers} from "./macro-layers-ui.mjs";
+import {buildPhysicalGeography} from "./physical-geography.mjs";
+import {initPhysicalGeography} from "./physical-geography-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -260,7 +317,8 @@ const paths={
   caatingaSocial:"data/propostas/caatinga-rede-social-hack.json",
   hierarchy:"data/atlas/aninhamento-territorial.json",
   macro:"data/atlas/macrorregioes-carcaca.json",
-  networks:"data/atlas/redes-historicas-ciclo33.json"
+  networks:"data/atlas/redes-historicas-ciclo33.json",
+  physical:"data/atlas/geografia-fisica-ciclo34.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -571,9 +629,11 @@ $("export").addEventListener("click",()=>{
     state.atlas=buildAtlasTree(loaded);
     state.macro=buildMacroIndex(loaded.macro,state.atlas);
     state.networks=buildMacroNetworks(loaded.networks,state.macro);
+    state.physical=buildPhysicalGeography(loaded.physical,state.macro,state.atlas);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
+    initPhysicalGeography($("physicalGeo"),state.physical,macroDiveInto);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
     $("export").disabled=false;
@@ -586,6 +646,7 @@ $("export").addEventListener("click",()=>{
     $("macroCards").innerHTML='<div class="loader">Não foi possível montar a visão macro. Consulte a execução do Pages.</div>';
     $("macroDetails").innerHTML='<div class="loader">'+esc(e.message)+'</div>';
     $("macroLayers").textContent="As redes históricas não puderam ser carregadas.";
+    $("physicalGeo").textContent="A geografia física não pôde ser carregada.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }

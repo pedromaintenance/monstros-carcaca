@@ -611,3 +611,8 @@ O [Atlas Hierárquico no GitHub Pages](https://pedromaintenance.github.io/monstr
 ### Atlas Macro — Redes de poder e cronologia (Ciclo XXXIII)
 
 Na [visão macrorregional do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/), sete redes documentais reúnem 14 esferas de influência, 17 marcos históricos entre 0–999 EC e oito dúvidas autorais. As redes não são mapas de estradas ou fronteiras. Consulte a [documentação do Ciclo XXXIII](docs/ATLAS_REDES_HISTORICAS_CICLO33.md) e o [JSON de fontes](data/atlas/redes-historicas-ciclo33.json). A expansão permanece macro e não altera regras DW ou fatos canônicos.
+
+
+### Atlas da Carcaça — Geografia física de Golzdov (Ciclo XXXIV)
+
+A [visão macro no Pages](https://pedromaintenance.github.io/monstros-carcaca/atlas/) inclui agora um painel de **orientação continental e anatomia do dragão**, com 20 marcos, 12 relações espaciais e nove decisões geográficas pendentes. A [documentação do ciclo](docs/ATLAS_GEOGRAFIA_FISICA_CICLO34.md) distingue direções cardeais, posições relativas e marcos sem localização, evitando falsa precisão. [Dados estruturados](data/atlas/geografia-fisica-ciclo34.json). A árvore e a cronologia continuam disponíveis, sem canonização automática.

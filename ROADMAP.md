@@ -668,3 +668,12 @@ Documentação: [ATLAS_MACROREGIONAL_CICLO32.md](docs/ATLAS_MACROREGIONAL_CICLO3
 - **Próxima prioridade macro:** revisar topologia histórica do Abismo/Gualápolis/Shadar, distinção Thargrid/Ironwood/Eldroth e posição de Grama-Cortada. Preparar parâmetros da futura escala meso depois da decisão autoral.
 
 Fontes: [ATLAS_REDES_HISTORICAS_CICLO33.md](docs/ATLAS_REDES_HISTORICAS_CICLO33.md).
+
+
+## Ciclo XXXIV — Geografia física e corpo de Golzdov
+
+- **Entregue:** 20 marcos físicos/históricos, 12 relações espaciais, nove questões abertas; navegação HTML por orientações, anatomia, relações e lacunas, com links para a árvore do atlas.
+- **Sem invenção cartográfica:** a asa direita não foi convertida em leste, a cauda além do Abismo não ganhou ponte, a nascente do rio não foi definida e a fortaleza de Voragar não foi atribuída a um setor.
+- **Próximo objetivo macro:** revisão da topologia Shadar/Gualápolis/Boca, posição de Grama-Cortada e limites relativos Ironwood/Thargrid/Eldroth; manter essas questões pendentes até decisão de autoria.
+
+Veja [ATLAS_GEOGRAFIA_FISICA_CICLO34.md](docs/ATLAS_GEOGRAFIA_FISICA_CICLO34.md).
