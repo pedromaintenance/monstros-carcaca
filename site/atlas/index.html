@@ -575,6 +575,34 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .expansion-rule{padding:10px 12px;border-left:3px solid #7a9d8a;background:#28372d;font-size:11px;line-height:1.65}
 @media(max-width:760px){.expansion-overview{grid-template-columns:repeat(2,minmax(0,1fr))}.expansion-card-grid{grid-template-columns:1fr}.expansion-filter label{flex-wrap:wrap}}
 
+
+/* Ciclo XLVI: povoamento macrorregional de quatro frentes e camada ecológica. */
+.four-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin:12px 0}
+.four-stats>div{padding:11px;background:#243026;border:1px solid #4a624e;border-radius:9px;display:grid;gap:4px}
+.four-stats b{font:500 23px Cinzel,serif;color:#e6d2a6}
+.four-stats span{font-size:10px;color:#c3d2c1;line-height:1.55}
+.four-warning{background:#302b23;border-left:3px solid #c2a878;color:#d5cab5;padding:10px 12px;font-size:11px;line-height:1.7}
+.four-fronts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px;margin:12px 0}
+.four-fronts>div{background:#202d27;border:1px solid #4d6152;border-radius:8px;padding:10px}
+.four-fronts b,.four-fronts span{display:block;line-height:1.6}
+.four-fronts b{font-size:11px;color:#e3d4b5}
+.four-fronts span{font-size:10px;color:#bbcbbd}
+.four-filter{display:flex;gap:12px;align-items:center;color:#d6dfd0;font-size:11px;margin:11px 0}
+.four-filter select{padding:7px;background:#1b2822;border:1px solid #567059;border-radius:7px;color:#d9e4d5;max-width:100%}
+.four-place-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.four-place-card{border:1px solid #486251;background:#1d2b22;border-radius:10px;padding:12px;text-align:left;display:flex;flex-direction:column;gap:6px;color:#e3e9dc}
+.four-place-card:hover,.four-place-card.active{background:#35372a;border-color:#d3b789}
+.four-place-card small{font-size:9px;color:#c2d2c2}
+.four-place-card b{font-size:12px;color:#e9d8b7;line-height:1.45}
+.four-place-card span{font-size:10px;color:#b9c8b8;line-height:1.65}
+.four-inspector p{font-size:11px;line-height:1.7}
+.four-inspector-refs{background:#26322b;border-left:2px solid #a8ad89;padding:9px}
+.four-method{display:grid;gap:7px}
+.four-method>p,.four-rule{font-size:11px;line-height:1.75;color:#ccd9c9}
+.four-method h4{font:500 13px Cinzel,serif;color:#e2d1af}
+.four-rule{background:#27352b;border-left:2px solid #82a592;padding:10px;margin:0}
+@media(max-width:760px){.four-place-grid,.four-fronts{grid-template-columns:1fr}.four-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.four-filter{flex-wrap:wrap}}
+
 </style>
 </head>
 <body>
@@ -665,6 +693,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 
   <section id="settlementInventory" class="env-section" aria-label="Inventário e propostas do povoamento fantástico"><p class="env-explain">Carregando inventário de assentamentos e comunidades fantásticas propostas...</p></section>
   <section id="settlementExpansion" class="env-section" aria-label="Expansão do povoamento do Rio Ancestral e Eldroth"><p class="env-explain">Carregando a expansão regional com comunidades e habitats...</p></section>
+  <section id="fourFrontSettlements" class="env-section" aria-label="Povoamento da Caatinga, Garganta, Thargrid e Ironwood"><p class="env-explain">Carregando comunidades e habitats das quatro frentes...</p></section>
   <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
   <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
   <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
@@ -736,6 +765,8 @@ import {buildSettlementInventory} from "./settlement-inventory.mjs";
 import {initSettlementInventory} from "./settlement-inventory-ui.mjs";
 import {buildSettlementExpansion} from "./settlement-expansion.mjs";
 import {initSettlementExpansion} from "./settlement-expansion-ui.mjs";
+import {buildFourFrontierSettlementLot} from "./settlement-four-fronts.mjs";
+import {initFourFrontierSettlements} from "./settlement-four-fronts-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -767,7 +798,8 @@ const paths={
   creatureSettlements:"data/propostas/povoamento-criaturas-lote01.json",
   settlementHorizon:"data/atlas/horizonte-povoamento-macro.json",
   settlementExpansion:"data/propostas/povoamento-regional-lote02-ciclo45.json",
-  authoredPages:"data/atlas/indice-paginas-fonte-ciclo45.json"
+  authoredPages:"data/atlas/indice-paginas-fonte-ciclo45.json",
+  fourFronts:"data/propostas/povoamento-quatro-frentes-ciclo46.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -1089,6 +1121,7 @@ $("export").addEventListener("click",()=>{
     state.vulnerabilities=buildContinentalVulnerabilities(loaded.vulnerabilities,state.material,state.chrono,state.hydrology);
     state.settlementInventory=buildSettlementInventory(loaded.settlementInventory,loaded.creatureSettlements,loaded.settlementHorizon,state.macro);
     state.settlementExpansion=buildSettlementExpansion(loaded.settlementExpansion,loaded.creatureSettlements,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
+    state.fourFronts=buildFourFrontierSettlementLot(loaded.fourFronts,loaded.creatureSettlements,loaded.settlementExpansion,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -1102,6 +1135,7 @@ $("export").addEventListener("click",()=>{
     initContinentalVulnerabilities($("continentalVulnerabilities"),state.vulnerabilities);
     initSettlementInventory($("settlementInventory"),state.settlementInventory);
     initSettlementExpansion($("settlementExpansion"),state.settlementExpansion);
+    initFourFrontierSettlements($("fourFrontSettlements"),state.fourFronts);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -1126,6 +1160,7 @@ $("export").addEventListener("click",()=>{
     $("continentalVulnerabilities").textContent="Os cenários de vulnerabilidade não puderam ser carregados.";
     $("settlementInventory").textContent="O inventário do povoamento não pôde ser carregado.";
     $("settlementExpansion").textContent="A expansão de povoamento do Rio e de Eldroth não pôde ser carregada.";
+    $("fourFrontSettlements").textContent="A expansão da Caatinga, Garganta, Thargrid e Ironwood não pôde ser carregada.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
