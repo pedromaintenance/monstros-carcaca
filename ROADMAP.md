@@ -764,3 +764,17 @@ Referência: [ATLAS_HIDROGRAFIA_CONTINENTAL_CICLO39.md](docs/ATLAS_HIDROGRAFIA_C
 **Ciclo XLII sugerido:** dependências e vulnerabilidades continentais com cenários hipotéticos não canônicos, distinguindo robustez de redes documentadas de inferências sobre gargalos, perdas, fome ou custos.
 
 Documentação: [ATLAS_CIRCULACAO_MATERIAL_CICLO41.md](docs/ATLAS_CIRCULACAO_MATERIAL_CICLO41.md).
+
+## Ciclo XLII — Laboratório de dependências continentais (2026-10-29)
+
+- [x] Criar 11 cenários não canônicos, ancorados em 13 vínculos distintos e cinco sistemas materiais.
+- [x] Distinguir vínculo documental diretamente examinado, relações apenas condicionais e contrapontos que não demonstram substituição.
+- [x] Preservar Revolta de Drakport, destino de Thargrid e condições marítimas como questões abertas.
+- [x] Não calcular probabilidades, perdas, duração, volumes, capacidades ou geometrias.
+- [x] Integrar ao Atlas comparador de hipóteses, filtros, inspetor de fontes e metodologia.
+- [x] Validar referências cruzadas dos Ciclos XXXIX, XL e XLI e inserir testes de regressão nos workflows.
+- [ ] Só construir cenários logísticos quantitativos com rotas, volumes, capacidades e decisões homologadas.
+
+**Ciclo XLIII recomendado:** auditoria e **matriz de prontidão cartográfica continental**: consolidar as decisões autorais bloqueantes dos ciclos XXXIV–XLII, estabelecer critérios mínimos de desenho e identificar quais macrorregiões podem avançar à mesoescala. Evitar novas camadas sobre topologia ainda indeterminada.
+
+[Documento do Ciclo XLII](docs/ATLAS_DEPENDENCIAS_VULNERABILIDADES_CICLO42.md).
