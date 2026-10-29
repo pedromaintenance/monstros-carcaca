@@ -1,0 +1,416 @@
+{
+  "by_categoria": {
+    "dilemas": [
+      "worldbuilding-xxv:dilemas:agua-impropria",
+      "worldbuilding-xxv:dilemas:colheita-futura",
+      "worldbuilding-xxv:dilemas:comercio-prioritario",
+      "worldbuilding-xxv:dilemas:indisponibilidade",
+      "worldbuilding-xxv:dilemas:templo-governo",
+      "worldbuilding-xxv:dilemas:trabalho-convocado"
+    ],
+    "etapas_de_trabalho": [
+      "worldbuilding-xxv:etapas_de_trabalho:cultivo",
+      "worldbuilding-xxv:etapas_de_trabalho:destinacao",
+      "worldbuilding-xxv:etapas_de_trabalho:interrupcao",
+      "worldbuilding-xxv:etapas_de_trabalho:preparo",
+      "worldbuilding-xxv:etapas_de_trabalho:proveniencia",
+      "worldbuilding-xxv:etapas_de_trabalho:registro",
+      "worldbuilding-xxv:etapas_de_trabalho:reparo",
+      "worldbuilding-xxv:etapas_de_trabalho:rito"
+    ],
+    "garantias_civis": [
+      "worldbuilding-xxv:garantias_civis:publicidade",
+      "worldbuilding-xxv:garantias_civis:recurso",
+      "worldbuilding-xxv:garantias_civis:recusa",
+      "worldbuilding-xxv:garantias_civis:separacao",
+      "worldbuilding-xxv:garantias_civis:temporariedade",
+      "worldbuilding-xxv:garantias_civis:testemunho"
+    ],
+    "modelos_de_governo": [
+      "worldbuilding-xxv:modelos_de_governo:casas-e-oficios",
+      "worldbuilding-xxv:modelos_de_governo:conselho-revogavel",
+      "worldbuilding-xxv:modelos_de_governo:pactos-entre-vizinhos",
+      "worldbuilding-xxv:modelos_de_governo:templo-consultivo"
+    ],
+    "relacoes_sociais": [
+      "worldbuilding-xxv:relacoes_sociais:ajudantes",
+      "worldbuilding-xxv:relacoes_sociais:comerciantes",
+      "worldbuilding-xxv:relacoes_sociais:familias",
+      "worldbuilding-xxv:relacoes_sociais:interlocutores",
+      "worldbuilding-xxv:relacoes_sociais:lavradores",
+      "worldbuilding-xxv:relacoes_sociais:reparadores",
+      "worldbuilding-xxv:relacoes_sociais:sacerdotes",
+      "worldbuilding-xxv:relacoes_sociais:viajantes"
+    ],
+    "vinhetas": [
+      "worldbuilding-xxv:vinhetas:a-bencao-e-o-voto",
+      "worldbuilding-xxv:vinhetas:copo-de-agua",
+      "worldbuilding-xxv:vinhetas:livro-vazio",
+      "worldbuilding-xxv:vinhetas:porta-aberta"
+    ]
+  },
+  "by_referencia": {
+    "balanco:portomonte-agua-purificada": [
+      "worldbuilding-xxv:dilemas:agua-impropria",
+      "worldbuilding-xxv:etapas_de_trabalho:destinacao",
+      "worldbuilding-xxv:garantias_civis:publicidade",
+      "worldbuilding-xxv:vinhetas:copo-de-agua"
+    ],
+    "balanco:portomonte-producao-agricola": [
+      "worldbuilding-xxv:dilemas:colheita-futura",
+      "worldbuilding-xxv:etapas_de_trabalho:registro",
+      "worldbuilding-xxv:relacoes_sociais:familias",
+      "worldbuilding-xxv:vinhetas:livro-vazio"
+    ],
+    "costa-sul:espaco:altares": [
+      "worldbuilding-xxv:relacoes_sociais:interlocutores",
+      "worldbuilding-xxv:vinhetas:porta-aberta"
+    ],
+    "costa-sul:espaco:contas-agua": [
+      "worldbuilding-xxv:garantias_civis:testemunho"
+    ],
+    "dependencia:portomonte-comercio": [
+      "worldbuilding-xxv:dilemas:comercio-prioritario",
+      "worldbuilding-xxv:modelos_de_governo:pactos-entre-vizinhos",
+      "worldbuilding-xxv:relacoes_sociais:comerciantes"
+    ],
+    "dependencia:portomonte-lavoura": [
+      "worldbuilding-xxv:etapas_de_trabalho:cultivo"
+    ],
+    "dependencia:portomonte-purificacao": [
+      "worldbuilding-xxv:dilemas:indisponibilidade",
+      "worldbuilding-xxv:etapas_de_trabalho:interrupcao",
+      "worldbuilding-xxv:etapas_de_trabalho:rito",
+      "worldbuilding-xxv:garantias_civis:temporariedade",
+      "worldbuilding-xxv:modelos_de_governo:conselho-revogavel"
+    ],
+    "fluxo:comercio-costeiro-portomonte": [
+      "worldbuilding-xxv:relacoes_sociais:viajantes"
+    ],
+    "fluxo:purificacao-agua-portomonte": [
+      "worldbuilding-xxv:etapas_de_trabalho:proveniencia"
+    ],
+    "xxiv:tensoes_civis:fe": [
+      "worldbuilding-xxv:dilemas:templo-governo",
+      "worldbuilding-xxv:garantias_civis:recusa",
+      "worldbuilding-xxv:garantias_civis:separacao",
+      "worldbuilding-xxv:modelos_de_governo:casas-e-oficios",
+      "worldbuilding-xxv:vinhetas:a-bencao-e-o-voto"
+    ],
+    "xxiv:trabalhos:lavoura": [
+      "worldbuilding-xxv:garantias_civis:recurso",
+      "worldbuilding-xxv:relacoes_sociais:lavradores"
+    ],
+    "xxiv:trabalhos:templo": [
+      "worldbuilding-xxv:dilemas:trabalho-convocado",
+      "worldbuilding-xxv:etapas_de_trabalho:preparo",
+      "worldbuilding-xxv:etapas_de_trabalho:reparo",
+      "worldbuilding-xxv:modelos_de_governo:templo-consultivo",
+      "worldbuilding-xxv:relacoes_sociais:ajudantes",
+      "worldbuilding-xxv:relacoes_sociais:reparadores",
+      "worldbuilding-xxv:relacoes_sociais:sacerdotes"
+    ]
+  },
+  "by_pagina": {
+    "12": [
+      "worldbuilding-xxv:dilemas:templo-governo",
+      "worldbuilding-xxv:garantias_civis:separacao",
+      "worldbuilding-xxv:modelos_de_governo:casas-e-oficios",
+      "worldbuilding-xxv:modelos_de_governo:pactos-entre-vizinhos",
+      "worldbuilding-xxv:vinhetas:a-bencao-e-o-voto"
+    ],
+    "5": [
+      "worldbuilding-xxv:dilemas:agua-impropria",
+      "worldbuilding-xxv:dilemas:colheita-futura",
+      "worldbuilding-xxv:dilemas:comercio-prioritario",
+      "worldbuilding-xxv:dilemas:indisponibilidade",
+      "worldbuilding-xxv:dilemas:trabalho-convocado",
+      "worldbuilding-xxv:etapas_de_trabalho:cultivo",
+      "worldbuilding-xxv:etapas_de_trabalho:destinacao",
+      "worldbuilding-xxv:etapas_de_trabalho:interrupcao",
+      "worldbuilding-xxv:etapas_de_trabalho:preparo",
+      "worldbuilding-xxv:etapas_de_trabalho:proveniencia",
+      "worldbuilding-xxv:etapas_de_trabalho:registro",
+      "worldbuilding-xxv:etapas_de_trabalho:reparo",
+      "worldbuilding-xxv:etapas_de_trabalho:rito",
+      "worldbuilding-xxv:garantias_civis:publicidade",
+      "worldbuilding-xxv:garantias_civis:recurso",
+      "worldbuilding-xxv:garantias_civis:recusa",
+      "worldbuilding-xxv:garantias_civis:temporariedade",
+      "worldbuilding-xxv:garantias_civis:testemunho",
+      "worldbuilding-xxv:modelos_de_governo:conselho-revogavel",
+      "worldbuilding-xxv:modelos_de_governo:templo-consultivo",
+      "worldbuilding-xxv:relacoes_sociais:ajudantes",
+      "worldbuilding-xxv:relacoes_sociais:comerciantes",
+      "worldbuilding-xxv:relacoes_sociais:familias",
+      "worldbuilding-xxv:relacoes_sociais:interlocutores",
+      "worldbuilding-xxv:relacoes_sociais:lavradores",
+      "worldbuilding-xxv:relacoes_sociais:reparadores",
+      "worldbuilding-xxv:relacoes_sociais:sacerdotes",
+      "worldbuilding-xxv:relacoes_sociais:viajantes",
+      "worldbuilding-xxv:vinhetas:copo-de-agua",
+      "worldbuilding-xxv:vinhetas:livro-vazio",
+      "worldbuilding-xxv:vinhetas:porta-aberta"
+    ]
+  },
+  "by_estado": {
+    "alternativa_nao_adotada": [
+      "worldbuilding-xxv:dilemas:agua-impropria",
+      "worldbuilding-xxv:dilemas:colheita-futura",
+      "worldbuilding-xxv:dilemas:comercio-prioritario",
+      "worldbuilding-xxv:dilemas:indisponibilidade",
+      "worldbuilding-xxv:dilemas:templo-governo",
+      "worldbuilding-xxv:dilemas:trabalho-convocado",
+      "worldbuilding-xxv:etapas_de_trabalho:cultivo",
+      "worldbuilding-xxv:etapas_de_trabalho:destinacao",
+      "worldbuilding-xxv:etapas_de_trabalho:interrupcao",
+      "worldbuilding-xxv:etapas_de_trabalho:preparo",
+      "worldbuilding-xxv:etapas_de_trabalho:proveniencia",
+      "worldbuilding-xxv:etapas_de_trabalho:registro",
+      "worldbuilding-xxv:etapas_de_trabalho:reparo",
+      "worldbuilding-xxv:etapas_de_trabalho:rito",
+      "worldbuilding-xxv:garantias_civis:publicidade",
+      "worldbuilding-xxv:garantias_civis:recurso",
+      "worldbuilding-xxv:garantias_civis:recusa",
+      "worldbuilding-xxv:garantias_civis:separacao",
+      "worldbuilding-xxv:garantias_civis:temporariedade",
+      "worldbuilding-xxv:garantias_civis:testemunho",
+      "worldbuilding-xxv:modelos_de_governo:casas-e-oficios",
+      "worldbuilding-xxv:modelos_de_governo:conselho-revogavel",
+      "worldbuilding-xxv:modelos_de_governo:pactos-entre-vizinhos",
+      "worldbuilding-xxv:modelos_de_governo:templo-consultivo",
+      "worldbuilding-xxv:relacoes_sociais:ajudantes",
+      "worldbuilding-xxv:relacoes_sociais:comerciantes",
+      "worldbuilding-xxv:relacoes_sociais:familias",
+      "worldbuilding-xxv:relacoes_sociais:interlocutores",
+      "worldbuilding-xxv:relacoes_sociais:lavradores",
+      "worldbuilding-xxv:relacoes_sociais:reparadores",
+      "worldbuilding-xxv:relacoes_sociais:sacerdotes",
+      "worldbuilding-xxv:relacoes_sociais:viajantes",
+      "worldbuilding-xxv:vinhetas:a-bencao-e-o-voto",
+      "worldbuilding-xxv:vinhetas:copo-de-agua",
+      "worldbuilding-xxv:vinhetas:livro-vazio",
+      "worldbuilding-xxv:vinhetas:porta-aberta"
+    ]
+  },
+  "by_nome": {
+    "A bênção não vota": [
+      "worldbuilding-xxv:vinhetas:a-bencao-e-o-voto"
+    ],
+    "A carga que não pode esperar": [
+      "worldbuilding-xxv:dilemas:comercio-prioritario"
+    ],
+    "A porta do rito e a rua": [
+      "worldbuilding-xxv:vinhetas:porta-aberta"
+    ],
+    "A taça antes do teste": [
+      "worldbuilding-xxv:vinhetas:copo-de-agua"
+    ],
+    "A água que alguém chama potável": [
+      "worldbuilding-xxv:dilemas:agua-impropria"
+    ],
+    "Assembléia de casas e ofícios": [
+      "worldbuilding-xxv:modelos_de_governo:casas-e-oficios"
+    ],
+    "Cobrar o que ainda não foi colhido": [
+      "worldbuilding-xxv:dilemas:colheita-futura"
+    ],
+    "Como o espaço é mantido?": [
+      "worldbuilding-xxv:etapas_de_trabalho:preparo"
+    ],
+    "Como saber o que foi produzido?": [
+      "worldbuilding-xxv:etapas_de_trabalho:registro"
+    ],
+    "Conselho temporário de necessidades": [
+      "worldbuilding-xxv:modelos_de_governo:conselho-revogavel"
+    ],
+    "Contas sem números inventados": [
+      "worldbuilding-xxv:garantias_civis:publicidade"
+    ],
+    "De onde chega a água?": [
+      "worldbuilding-xxv:etapas_de_trabalho:proveniencia"
+    ],
+    "Direito de discordar da bênção": [
+      "worldbuilding-xxv:garantias_civis:recusa"
+    ],
+    "E se o rito não acontecer?": [
+      "worldbuilding-xxv:etapas_de_trabalho:interrupcao"
+    ],
+    "Fim do mandato excepcional": [
+      "worldbuilding-xxv:garantias_civis:temporariedade"
+    ],
+    "O estrangeiro e a água desconhecida": [
+      "worldbuilding-xxv:relacoes_sociais:viajantes"
+    ],
+    "O interesse em converter alimento em poder": [
+      "worldbuilding-xxv:relacoes_sociais:comerciantes"
+    ],
+    "O limite de cada competência": [
+      "worldbuilding-xxv:garantias_civis:separacao"
+    ],
+    "O livro dos números nulos": [
+      "worldbuilding-xxv:vinhetas:livro-vazio"
+    ],
+    "O que ocorre nas lavouras?": [
+      "worldbuilding-xxv:etapas_de_trabalho:cultivo"
+    ],
+    "O trabalho além da bênção": [
+      "worldbuilding-xxv:relacoes_sociais:lavradores"
+    ],
+    "O turno obrigatório": [
+      "worldbuilding-xxv:dilemas:trabalho-convocado"
+    ],
+    "Pactos entre núcleos autônomos": [
+      "worldbuilding-xxv:modelos_de_governo:pactos-entre-vizinhos"
+    ],
+    "Prova antes do decreto": [
+      "worldbuilding-xxv:garantias_civis:testemunho"
+    ],
+    "Quando o serviço afeta o abastecimento": [
+      "worldbuilding-xxv:relacoes_sociais:reparadores"
+    ],
+    "Quem conserva ferramentas?": [
+      "worldbuilding-xxv:etapas_de_trabalho:reparo"
+    ],
+    "Quem escolhe o próximo turno?": [
+      "worldbuilding-xxv:dilemas:templo-governo"
+    ],
+    "Quem executa o ato mágico?": [
+      "worldbuilding-xxv:etapas_de_trabalho:rito"
+    ],
+    "Quem não cultiva também precisa viver": [
+      "worldbuilding-xxv:relacoes_sociais:familias"
+    ],
+    "Quem sabe purificar?": [
+      "worldbuilding-xxv:relacoes_sociais:sacerdotes"
+    ],
+    "Rever decisões de distribuição": [
+      "worldbuilding-xxv:garantias_civis:recurso"
+    ],
+    "Rito interrompido e culpa imediata": [
+      "worldbuilding-xxv:dilemas:indisponibilidade"
+    ],
+    "Templo com voz, não trono": [
+      "worldbuilding-xxv:modelos_de_governo:templo-consultivo"
+    ],
+    "Trabalhadores pouco visíveis": [
+      "worldbuilding-xxv:relacoes_sociais:ajudantes"
+    ],
+    "Traduzir fé em decisão comum": [
+      "worldbuilding-xxv:relacoes_sociais:interlocutores"
+    ],
+    "Água agrícola não é água de beber": [
+      "worldbuilding-xxv:etapas_de_trabalho:destinacao"
+    ]
+  },
+  "by_slug": {
+    "a-bencao-e-o-voto": [
+      "worldbuilding-xxv:vinhetas:a-bencao-e-o-voto"
+    ],
+    "agua-impropria": [
+      "worldbuilding-xxv:dilemas:agua-impropria"
+    ],
+    "ajudantes": [
+      "worldbuilding-xxv:relacoes_sociais:ajudantes"
+    ],
+    "casas-e-oficios": [
+      "worldbuilding-xxv:modelos_de_governo:casas-e-oficios"
+    ],
+    "colheita-futura": [
+      "worldbuilding-xxv:dilemas:colheita-futura"
+    ],
+    "comerciantes": [
+      "worldbuilding-xxv:relacoes_sociais:comerciantes"
+    ],
+    "comercio-prioritario": [
+      "worldbuilding-xxv:dilemas:comercio-prioritario"
+    ],
+    "conselho-revogavel": [
+      "worldbuilding-xxv:modelos_de_governo:conselho-revogavel"
+    ],
+    "copo-de-agua": [
+      "worldbuilding-xxv:vinhetas:copo-de-agua"
+    ],
+    "cultivo": [
+      "worldbuilding-xxv:etapas_de_trabalho:cultivo"
+    ],
+    "destinacao": [
+      "worldbuilding-xxv:etapas_de_trabalho:destinacao"
+    ],
+    "familias": [
+      "worldbuilding-xxv:relacoes_sociais:familias"
+    ],
+    "indisponibilidade": [
+      "worldbuilding-xxv:dilemas:indisponibilidade"
+    ],
+    "interlocutores": [
+      "worldbuilding-xxv:relacoes_sociais:interlocutores"
+    ],
+    "interrupcao": [
+      "worldbuilding-xxv:etapas_de_trabalho:interrupcao"
+    ],
+    "lavradores": [
+      "worldbuilding-xxv:relacoes_sociais:lavradores"
+    ],
+    "livro-vazio": [
+      "worldbuilding-xxv:vinhetas:livro-vazio"
+    ],
+    "pactos-entre-vizinhos": [
+      "worldbuilding-xxv:modelos_de_governo:pactos-entre-vizinhos"
+    ],
+    "porta-aberta": [
+      "worldbuilding-xxv:vinhetas:porta-aberta"
+    ],
+    "preparo": [
+      "worldbuilding-xxv:etapas_de_trabalho:preparo"
+    ],
+    "proveniencia": [
+      "worldbuilding-xxv:etapas_de_trabalho:proveniencia"
+    ],
+    "publicidade": [
+      "worldbuilding-xxv:garantias_civis:publicidade"
+    ],
+    "recurso": [
+      "worldbuilding-xxv:garantias_civis:recurso"
+    ],
+    "recusa": [
+      "worldbuilding-xxv:garantias_civis:recusa"
+    ],
+    "registro": [
+      "worldbuilding-xxv:etapas_de_trabalho:registro"
+    ],
+    "reparadores": [
+      "worldbuilding-xxv:relacoes_sociais:reparadores"
+    ],
+    "reparo": [
+      "worldbuilding-xxv:etapas_de_trabalho:reparo"
+    ],
+    "rito": [
+      "worldbuilding-xxv:etapas_de_trabalho:rito"
+    ],
+    "sacerdotes": [
+      "worldbuilding-xxv:relacoes_sociais:sacerdotes"
+    ],
+    "separacao": [
+      "worldbuilding-xxv:garantias_civis:separacao"
+    ],
+    "templo-consultivo": [
+      "worldbuilding-xxv:modelos_de_governo:templo-consultivo"
+    ],
+    "templo-governo": [
+      "worldbuilding-xxv:dilemas:templo-governo"
+    ],
+    "temporariedade": [
+      "worldbuilding-xxv:garantias_civis:temporariedade"
+    ],
+    "testemunho": [
+      "worldbuilding-xxv:garantias_civis:testemunho"
+    ],
+    "trabalho-convocado": [
+      "worldbuilding-xxv:dilemas:trabalho-convocado"
+    ],
+    "viajantes": [
+      "worldbuilding-xxv:relacoes_sociais:viajantes"
+    ]
+  }
+}
