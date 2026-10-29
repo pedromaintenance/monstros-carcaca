@@ -1,0 +1,720 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XXIX — Templo da Lua",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "fonte_manuscrito",
+    "escopos",
+    "localizacao_exata_ilha",
+    "divindade_titular_confirmada",
+    "mecanismo_ritual_confirmado",
+    "alcance_ritual_confirmado",
+    "calendario_lunar_ritual_confirmado",
+    "pessoal_de_culto_confirmado",
+    "capacidade_hidraulica_quantificada",
+    "instituicao_fiscal_do_templo_confirmada",
+    "revolta_drakport_ocorreu",
+    "aprovacao_autoral",
+    "efeito_canonico_automatico",
+    "alteracao_atlas_factual",
+    "alteracao_criaturas",
+    "alteracao_regras_dw",
+    "regras_de_uso",
+    "fatos_documentados",
+    "referencias_rastreaveis",
+    "modelos_do_rito",
+    "interfaces_civis",
+    "provas_e_incerteza",
+    "economia_e_movimento",
+    "tensoes_de_poder",
+    "vinhetas",
+    "perguntas_para_autor",
+    "contagens"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 10
+    },
+    "estado": {
+      "const": "investigacao_ritual_nao_canonica"
+    },
+    "fonte_manuscrito": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "escopos": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "uniqueItems": true,
+      "items": {
+        "enum": [
+          "templo",
+          "rio",
+          "interface"
+        ]
+      }
+    },
+    "localizacao_exata_ilha": {
+      "type": "null"
+    },
+    "divindade_titular_confirmada": {
+      "type": "null"
+    },
+    "mecanismo_ritual_confirmado": {
+      "type": "null"
+    },
+    "alcance_ritual_confirmado": {
+      "type": "null"
+    },
+    "calendario_lunar_ritual_confirmado": {
+      "type": "null"
+    },
+    "pessoal_de_culto_confirmado": {
+      "type": "null"
+    },
+    "capacidade_hidraulica_quantificada": {
+      "type": "null"
+    },
+    "instituicao_fiscal_do_templo_confirmada": {
+      "type": "null"
+    },
+    "revolta_drakport_ocorreu": {
+      "const": false
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "efeito_canonico_automatico": {
+      "const": false
+    },
+    "alteracao_atlas_factual": {
+      "const": false
+    },
+    "alteracao_criaturas": {
+      "const": false
+    },
+    "alteracao_regras_dw": {
+      "const": false
+    },
+    "regras_de_uso": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": {
+        "type": "string",
+        "minLength": 35
+      }
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "pagina",
+          "afirmacao_documentada",
+          "limite_de_inferencia",
+          "fonte",
+          "novo_canon"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxix:fato:"
+          },
+          "pagina": {
+            "enum": [
+              4,
+              7,
+              9,
+              11,
+              22
+            ]
+          },
+          "afirmacao_documentada": {
+            "type": "string",
+            "minLength": 30
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 30
+          },
+          "fonte": {
+            "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+          },
+          "novo_canon": {
+            "const": false
+          }
+        }
+      }
+    },
+    "referencias_rastreaveis": {
+      "type": "array",
+      "minItems": 14,
+      "maxItems": 14,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "arquivo",
+          "colecao",
+          "id",
+          "estatuto",
+          "nao_comprova"
+        ],
+        "properties": {
+          "arquivo": {
+            "type": "string"
+          },
+          "colecao": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "estatuto": {
+            "const": "ancora_anterior_verificavel"
+          },
+          "nao_comprova": {
+            "type": "string",
+            "minLength": 30
+          }
+        }
+      }
+    },
+    "perguntas_para_autor": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "pergunta_autoral",
+          "resposta_aprovada",
+          "estado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxix:pergunta:"
+          },
+          "pergunta_autoral": {
+            "type": "string",
+            "minLength": 25
+          },
+          "resposta_aprovada": {
+            "type": "null"
+          },
+          "estado": {
+            "const": "pendente_de_autoria"
+          }
+        }
+      }
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fatos",
+        "referencias",
+        "propostas",
+        "perguntas",
+        "modelos_do_rito",
+        "interfaces_civis",
+        "provas_e_incerteza",
+        "economia_e_movimento",
+        "tensoes_de_poder",
+        "vinhetas"
+      ],
+      "properties": {
+        "fatos": {
+          "const": 12
+        },
+        "referencias": {
+          "const": 14
+        },
+        "propostas": {
+          "const": 36
+        },
+        "perguntas": {
+          "const": 12
+        },
+        "modelos_do_rito": {
+          "const": 4
+        },
+        "interfaces_civis": {
+          "const": 8
+        },
+        "provas_e_incerteza": {
+          "const": 8
+        },
+        "economia_e_movimento": {
+          "const": 6
+        },
+        "tensoes_de_poder": {
+          "const": 6
+        },
+        "vinhetas": {
+          "const": 4
+        }
+      }
+    },
+    "modelos_do_rito": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "hipotese_condicional",
+          "limite_de_inferencia",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estatuto",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "efeito_mecanico",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxix:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 35
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 35
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "templo",
+              "rio",
+              "interface"
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "interfaces_civis": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "hipotese_condicional",
+          "limite_de_inferencia",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estatuto",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "efeito_mecanico",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxix:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 35
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 35
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "templo",
+              "rio",
+              "interface"
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "provas_e_incerteza": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "hipotese_condicional",
+          "limite_de_inferencia",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estatuto",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "efeito_mecanico",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxix:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 35
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 35
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "templo",
+              "rio",
+              "interface"
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "economia_e_movimento": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "hipotese_condicional",
+          "limite_de_inferencia",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estatuto",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "efeito_mecanico",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxix:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 35
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 35
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "templo",
+              "rio",
+              "interface"
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "tensoes_de_poder": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "hipotese_condicional",
+          "limite_de_inferencia",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estatuto",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "efeito_mecanico",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxix:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 35
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 35
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "templo",
+              "rio",
+              "interface"
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "vinhetas": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "hipotese_condicional",
+          "limite_de_inferencia",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estatuto",
+          "ocorreu",
+          "situacao_documentada",
+          "aprovacao_autoral",
+          "efeito_mecanico",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxix:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 6
+          },
+          "hipotese_condicional": {
+            "type": "string",
+            "minLength": 35
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 35
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 20
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "templo",
+              "rio",
+              "interface"
+            ]
+          },
+          "estatuto": {
+            "const": "alternativa_nao_adotada"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "efeito_mecanico": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      }
+    }
+  }
+}

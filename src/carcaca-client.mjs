@@ -60,6 +60,46 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getMoonTempleSeverina(){return byKey("moon_temple_severina");}
+  async function getMoonTempleSeverinaIndexes(){return byKey("moon_temple_severina_indexes");}
+  async function getMoonTempleSeverinaEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xxix:"))return null;
+    const d=await getMoonTempleSeverina();
+    for(const cat of ["modelos_do_rito","interfaces_civis","provas_e_incerteza",
+        "economia_e_movimento","tensoes_de_poder","vinhetas","fatos_documentados",
+        "perguntas_para_autor"]){
+      const found=d[cat].find(x=>x.id===id);
+      if(found)return {...found,categoria:cat};
+    }
+    return null;
+  }
+  async function searchMoonTempleSeverina({categoria,escopo,referenciaId,pagina,query}={}){
+    const d=await getMoonTempleSeverina();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    if(pagina!==undefined)
+      return d.fatos_documentados.filter(f=>f.pagina===Number(pagina)&&
+        (!query||norm(f.afirmacao_documentada+" "+f.limite_de_inferencia).includes(norm(query))))
+        .map(f=>({...f,categoria:"fatos_documentados"}));
+    return ["modelos_do_rito","interfaces_civis","provas_e_incerteza",
+      "economia_e_movimento","tensoes_de_poder","vinhetas"]
+      .flatMap(cat=>d[cat].map(x=>({...x,categoria:cat})))
+      .filter(x=>(!categoria||x.categoria===categoria)&&(!escopo||x.escopo===escopo)&&
+        (!referenciaId||x.referencia_id===referenciaId)&&
+        (!query||norm([x.id,x.nome,x.hipotese_condicional,
+           x.limite_de_inferencia,x.pergunta_de_mesa].join(" ")).includes(norm(query))));
+  }
+  async function previewMoonTempleRitualModel(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xxix:modelos_do_rito:"))return null;
+    const d=await getMoonTempleSeverina();
+    const option=d.modelos_do_rito.find(x=>x.id===id);
+    if(!option)return null;
+    return {id:option.id,nome:option.nome,hipotese:option.hipotese_condicional,
+      limite:option.limite_de_inferencia,pergunta:option.pergunta_de_mesa,
+      estado:"visualizacao_de_hipotese_sem_mutacao",aprovacao_autoral:false,
+      modelo_adotado:false,efeito_mecanico:false,
+      canon_alterado:false,eventos_ocorridos:[],
+      nota:"Prévia não prova rito, não aplica efeitos e não registra escolha de autoria."};
+  }
   async function getRiverDrakportSocial(){return byKey("river_drakport_social");}
   async function getRiverDrakportSocialIndexes(){return byKey("river_drakport_social_indexes");}
   async function getRiverDrakportSocialEntry(id){
@@ -1768,6 +1808,9 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getMoonTempleSeverina,getMoonTempleSeverinaIndexes,
+          getMoonTempleSeverinaEntry,searchMoonTempleSeverina,
+          previewMoonTempleRitualModel,
           getRiverDrakportSocial,getRiverDrakportSocialIndexes,
           getRiverDrakportSocialEntry,searchRiverDrakportSocial,
           getFozShadarMemory,getFozShadarMemoryIndexes,

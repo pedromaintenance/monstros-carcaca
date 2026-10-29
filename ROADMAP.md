@@ -620,4 +620,18 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Não fixar rotas, região normalizada de Drakport, número de habitantes, pessoas nomeadas, tratados, rito detalhado ou hierarquia da resistência.
 - [x] Integrar dossiê, JSON Schema, validador de proveniência, seis índices determinísticos, API ESM, testes Python/Node, README e diário.
 - [x] Preservar sete criaturas, cânone de Portomonte e da foz, frentes e regras DW.
-- [ ] **XXIX — próximo horizonte:** investigar os limites e implicações civis do Templo da Lua sob Severina Shadowbloom, sem inferir efeitos rituais específicos nem antecipar a Revolta de Drakport.
+- [x] **XXIX — executado:** rito do Templo da Lua investigado com modelos não adotados e incertezas preservadas.
+
+
+## Ciclo XXIX — Concluído: poder ritual e autoridade contestável do Templo da Lua
+
+- [x] Conferir Hack pp. 4, 7, 9, 11 e 22 e separar rito comprovado de explicações não documentadas.
+- [x] Preservar **12 fatos limitados**, **14 referências por ID**, **12 perguntas pendentes**.
+- [x] Construir **36 alternativas sem adoção**: 4 modelos do rito, 8 interfaces civis, 8 incertezas e práticas de verificação, 6 economia/navegação, 6 tensões de poder e 4 vinhetas.
+- [x] Distinguir poder de Severina sobre águas da legitimidade civil da Corte: eficácia mágica não implica direito de coerção, cobrança ou soberania.
+- [x] Manter nulos divindade titular, localização exata da ilha, fases lunares, mecanismo, alcance, duração, capacidade, quadro de praticantes e atribuições fiscais.
+- [x] Preservar fronteira entre rito e superstição: relatos, boatos e observações não geram efeitos mecânicos nem acontecimentos automáticos.
+- [x] Preservar Revolta de Drakport em aberto, evitar criação de rotas, tributos ou população e não tratar pessoas como carga.
+- [x] Integrar dados, dossiê, schema, validação de fontes e referências, seis índices determinísticos, ESM, testes Python/Node e documentação.
+- [x] Proteger sete criaturas do Arquivo, atlas factual, regras DW e decisões ainda não homologadas de Portomonte.
+- [ ] **XXX — próximo horizonte:** método de investigação de campo para o Rio Ancestral ou expansão cultural de outra comunidade ainda pouco estudada; somente registrar novos fatos mediante fonte e decisão autoral.

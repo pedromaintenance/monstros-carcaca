@@ -4114,6 +4114,65 @@ def validar_rio_drakport_xxviii():
             "Ciclo XXVIII: criaturas do Arquivo foram afetadas.")
     print("Ciclo XXVIII: 12 fatos, 40 propostas, 14 referências; Revolta ainda aberta.")
 
+
+def validar_templo_lua_severina_xxix():
+    """Ciclo XXIX: fonte, alternativas rituais não homologadas e revolta futura."""
+    d=load("data/worldbuilding/templo-lua-severina-ciclo29.json")
+    schema=load("schemas/templo-lua-xxix.schema.json")
+    Draft202012Validator.check_schema(schema)
+    issues=list(Draft202012Validator(schema).iter_errors(d))
+    require(not issues,f"Ciclo XXIX: JSON Schema inválido: {issues[:2]}")
+    expected={"fatos":12,"referencias":14,"propostas":36,"perguntas":12,
+              "modelos_do_rito":4,"interfaces_civis":8,"provas_e_incerteza":8,
+              "economia_e_movimento":6,"tensoes_de_poder":6,"vinhetas":4}
+    require(d["contagens"]==expected,"Ciclo XXIX: contagens inválidas.")
+    nulls=("localizacao_exata_ilha","divindade_titular_confirmada",
+           "mecanismo_ritual_confirmado","alcance_ritual_confirmado",
+           "calendario_lunar_ritual_confirmado","pessoal_de_culto_confirmado",
+           "capacidade_hidraulica_quantificada","instituicao_fiscal_do_templo_confirmada")
+    require(all(d[k] is None for k in nulls),"Ciclo XXIX: rito ou divindade inventados.")
+    require(d["estado"]=="investigacao_ritual_nao_canonica"
+            and all(d[k] is False for k in (
+                "revolta_drakport_ocorreu","aprovacao_autoral",
+                "efeito_canonico_automatico","alteracao_atlas_factual",
+                "alteracao_criaturas","alteracao_regras_dw")),
+            "Ciclo XXIX: hipótese transformada em fato ou revolta prematura.")
+    facts=d["fatos_documentados"]
+    pages={p["pagina"] for p in load(d["fonte_manuscrito"])["paginas"]}
+    require(len(facts)==len({x["id"] for x in facts})==12
+            and all(f["pagina"] in pages and f["pagina"] in (4,7,9,11,22)
+                    and f["fonte"]==d["fonte_manuscrito"]
+                    and f["novo_canon"] is False for f in facts),
+            "Ciclo XXIX: fato sem fonte confirmada.")
+    refs=d["referencias_rastreaveis"]
+    require(len(refs)==len({x["id"] for x in refs})==14,
+            "Ciclo XXIX: referências repetidas ou ausentes.")
+    for ref in refs:
+        require(any(x["id"]==ref["id"] for x in load(ref["arquivo"])[ref["colecao"]]),
+                "Ciclo XXIX: ID de referência não localizado: "+ref["id"])
+    cats=("modelos_do_rito","interfaces_civis","provas_e_incerteza",
+          "economia_e_movimento","tensoes_de_poder","vinhetas")
+    rows=[row for cat in cats for row in d[cat]]
+    ref_ids={r["id"] for r in refs}
+    require(len(rows)==len({r["id"] for r in rows})==36
+            and all(r["referencia_id"] in ref_ids and r["escopo"] in d["escopos"]
+                    and r["estatuto"]=="alternativa_nao_adotada"
+                    and all(r[k] is False for k in (
+                        "ocorreu","situacao_documentada","aprovacao_autoral",
+                        "efeito_mecanico","canon_aplicado"))
+                    for r in rows),
+            "Ciclo XXIX: hipótese sem âncora ou canonizada.")
+    require(len({q["id"] for q in d["perguntas_para_autor"]})==12
+            and all(q["resposta_aprovada"] is None
+                    and q["estado"]=="pendente_de_autoria"
+                    for q in d["perguntas_para_autor"]),
+            "Ciclo XXIX: resposta autoral presumida.")
+    require(load("data/worldbuilding/rio-drakport-ciclo28.json")["revolta_drakport_ocorreu"] is False,
+            "Ciclo XXIX: revolta deve seguir aberta.")
+    require(len(load("dist/carcaca/creatures.json"))==7,
+            "Ciclo XXIX: as sete criaturas seguem intactas.")
+    print("Ciclo XXIX: 12 fatos, 36 propostas, 14 referências e 12 perguntas; zero canonização.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -4254,6 +4313,7 @@ def main():
     validar_revisao_autoral_portomonte_xxvi()
     validar_foz_shadar_memoria_xxvii()
     validar_rio_drakport_xxviii()
+    validar_templo_lua_severina_xxix()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

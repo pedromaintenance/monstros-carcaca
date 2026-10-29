@@ -536,3 +536,10 @@ O dossiê oferece 12 fatos com limites inferenciais, 36 propostas de vida civil 
 O ciclo abriu a dimensão social do eixo médio do Rio Ancestral e de Drakport sob Lady Morwen Nightshade. O capítulo autoral (pp. 4, 7, 9, 11) sustenta a existência de escravidão, postos militares, tributos e controle ritual do Templo da Lua por Severina Shadowbloom, mas não quantifica pessoas, trabalho, rotas nem a operação do rito. A Revolta de Drakport continua anotada na fonte como evento futuro sem resolução; qualquer participação dos rangers de Ironwood também está em aberto.
 
 Foram produzidos 12 fatos com ressalvas, 40 propostas culturais não ocorridas, 14 referências existentes e 10 perguntas autorais sem resposta. A base bloqueia canonização automática, criação de geografia nova, tratamento de pessoas como estoques e mudança nas fichas e regras. O cliente e os índices permitem investigar sem mudar a campanha; o fluxo de validação testa a integridade e a origem das referências.
+
+
+## 2026-10-28 · Ciclo XXIX — O Templo da Lua: poder sobre águas, não sobre a verdade
+
+Foi investigado o papel do Templo da Lua e de Severina Shadowbloom no Rio Ancestral. O Hack documenta o templo insular transformado em centro sombrio e ritos de Severina ligados ao controle das águas e à influência das trevas (p. 4). A religião plural do cenário (p. 22) **não identifica automaticamente** a divindade titular nem prova fases lunares necessárias, calendário, alcance e autoridade fiscal.
+
+O Ciclo XXIX incluiu doze fatos delimitados, catorze referências a propostas preexistentes, trinta e seis hipóteses editoriais não adotadas e doze questões de autoria em aberto. Quatro modelos de rito concorrentes foram preservados sem seleção, com prévia de leitura imutável e observações epistemicamente cuidadosas. O gerador publica seis índices, o validador protege a proveniência e os testes mantêm a Revolta de Drakport futura e as sete criaturas intactas.

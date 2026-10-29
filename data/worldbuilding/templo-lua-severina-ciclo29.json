@@ -1,0 +1,879 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XXIX — Templo da Lua: poder sobre águas, não sobre a verdade",
+  "estado": "investigacao_ritual_nao_canonica",
+  "fonte_manuscrito": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "escopos": [
+    "templo",
+    "rio",
+    "interface"
+  ],
+  "localizacao_exata_ilha": null,
+  "divindade_titular_confirmada": null,
+  "mecanismo_ritual_confirmado": null,
+  "alcance_ritual_confirmado": null,
+  "calendario_lunar_ritual_confirmado": null,
+  "pessoal_de_culto_confirmado": null,
+  "capacidade_hidraulica_quantificada": null,
+  "instituicao_fiscal_do_templo_confirmada": null,
+  "revolta_drakport_ocorreu": false,
+  "aprovacao_autoral": false,
+  "efeito_canonico_automatico": false,
+  "alteracao_atlas_factual": false,
+  "alteracao_criaturas": false,
+  "alteracao_regras_dw": false,
+  "regras_de_uso": [
+    "Ritos existentes e efeitos gerais são fatos de manuscrito; formas de execução, custos e extensão são desconhecidos.",
+    "Nome Templo da Lua não define divindade cultuada, fases lunares necessárias ou calendário ritual.",
+    "Severina conduz ritos; a fonte não atribui a ela controle de toda navegação, tributos, pessoas ou hierarquia do Rio.",
+    "Um modelo hipotético não se combina automaticamente com outro, nem revela a verdade do rito.",
+    "A ilha do templo não tem posição exata, conexão terrestre, rota oficial ou mapa no atlas.",
+    "Uma indicação de risco não aciona automaticamente enchente, escassez, falta de alimentos ou modificador DW.",
+    "Testemunhos, relatos e rumores são propostas de cenas, não evidência de acontecimentos.",
+    "O poder mágico de afetar águas não demonstra direito legal ou legitimidade moral para governar pessoas.",
+    "Morwen de Drakport e Severina do Templo são pessoas distintas, sem cadeia hierárquica comprovada entre elas.",
+    "A Revolta de Drakport segue futura e indeterminada; Ironwood não recebe papel automaticamente.",
+    "Não modelar pessoas como carga, mercadoria, estoque ou recurso de controle.",
+    "Não inferir que a magia afete toda água, todo rio ou toda embarcação em qualquer instante.",
+    "Não confundir demônios do Abismo com abissais marinhos e não transplantar cultos de Daegon.",
+    "Não criar deuses, personagens, impostos, estruturas, ofícios ou encontros como fatos.",
+    "Fatos e opções estão em coleções diferentes; todas as propostas continuam sem autoria aprovada.",
+    "Nenhuma ficha de monstro, frente, mapa, campanha ou regra DW é alterada por estas consultas."
+  ],
+  "fatos_documentados": [
+    {
+      "id": "worldbuilding-xxix:fato:01",
+      "pagina": 4,
+      "afirmacao_documentada": "O Templo da Lua se ergue numa ilha do Rio Ancestral.",
+      "limite_de_inferencia": "Não se sabe em que ponto do rio fica a ilha nem seus acessos.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxix:fato:02",
+      "pagina": 4,
+      "afirmacao_documentada": "O Templo da Lua foi transformado em centro de poder sombrio.",
+      "limite_de_inferencia": "Não se sabe o culto original, a arquitetura nem a data exata da transformação.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxix:fato:03",
+      "pagina": 4,
+      "afirmacao_documentada": "Severina Shadowbloom conduz rituais no Templo da Lua.",
+      "limite_de_inferencia": "Não se sabe se age sozinha, em que horários, com que equipe ou custo.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxix:fato:04",
+      "pagina": 4,
+      "afirmacao_documentada": "Os rituais de Severina são associados ao controle das águas do rio.",
+      "limite_de_inferencia": "Não se conhece alcance, duração, mecanismo ou resultado hidráulico individual.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxix:fato:05",
+      "pagina": 4,
+      "afirmacao_documentada": "Os rituais também espalham a influência das trevas pelas margens.",
+      "limite_de_inferencia": "A influência não comprova possessão automática de pessoas nem efeito por distância.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxix:fato:06",
+      "pagina": 4,
+      "afirmacao_documentada": "O Rio Ancestral é eixo de circulação, comércio, poder e conquista.",
+      "limite_de_inferencia": "Não indica trajetos precisos, número de embarcações nem navegabilidade constante.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxix:fato:07",
+      "pagina": 4,
+      "afirmacao_documentada": "O domínio colonial junto ao rio envolve postos militares, tributos, centros administrativos e extração.",
+      "limite_de_inferencia": "Não prova que o templo fixe taxas ou comande todos os postos.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxix:fato:08",
+      "pagina": 7,
+      "afirmacao_documentada": "A Corte shadow fey controla rotas, tributos e circuitos de informação, com intensidade variável por região.",
+      "limite_de_inferencia": "Não implica coordenação total e uniforme nem identidade institucional entre templos e casas.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxix:fato:09",
+      "pagina": 7,
+      "afirmacao_documentada": "A resistência à Corte é descentralizada, incluindo redes de acolhimento e informação.",
+      "limite_de_inferencia": "Não comprova movimento insurrecional em torno da ilha do Templo.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxix:fato:10",
+      "pagina": 9,
+      "afirmacao_documentada": "A hegemonia colonial da Rainha sobre grande parte da Carcaça se consolida em 910 EC.",
+      "limite_de_inferencia": "Não data a transformação específica do Templo da Lua nem o início de cada rito.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxix:fato:11",
+      "pagina": 11,
+      "afirmacao_documentada": "A Revolta de Drakport permanece um espaço em branco da história da Carcaça.",
+      "limite_de_inferencia": "Rumores e cenas hipotéticas não equivalem ao evento ter ocorrido.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    },
+    {
+      "id": "worldbuilding-xxix:fato:12",
+      "pagina": 22,
+      "afirmacao_documentada": "A fé da Carcaça reúne panteões e cultos distintos, e a existência dos deuses não garante uma única autoridade.",
+      "limite_de_inferencia": "O nome Templo da Lua não identifica uma divindade lunar particular ou o patrono de Severina.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "novo_canon": false
+    }
+  ],
+  "referencias_rastreaveis": [
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "informacao_e_ritos",
+      "id": "worldbuilding-xxviii:informacao_e_ritos:ritual",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "informacao_e_ritos",
+      "id": "worldbuilding-xxviii:informacao_e_ritos:corrente",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "informacao_e_ritos",
+      "id": "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "tributos_e_passagens",
+      "id": "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "tributos_e_passagens",
+      "id": "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "servidao_e_agencia",
+      "id": "worldbuilding-xxviii:servidao_e_agencia:evasao",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "redes_de_resistencia",
+      "id": "worldbuilding-xxviii:redes_de_resistencia:travessia",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "trabalho_cotidiano",
+      "id": "worldbuilding-xxviii:trabalho_cotidiano:navegantes",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/propostas/garganta-rio-ancestral-social-hack.json",
+      "colecao": "lugares",
+      "id": "rio-garganta:lugar:lua",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/propostas/garganta-rio-ancestral-social-hack.json",
+      "colecao": "lugares",
+      "id": "rio-garganta:lugar:balsa",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/propostas/garganta-rio-ancestral-social-hack.json",
+      "colecao": "circuitos",
+      "id": "rio-garganta:circuito:barcas",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/worldbuilding/foz-shadar-memoria-ciclo27.json",
+      "colecao": "rio_e_trabalho",
+      "id": "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/faccoes_carcaca.json",
+      "colecao": "faccoes",
+      "id": "faccao:corte-shadow-fey",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    },
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "areas",
+      "id": "area-proposta:rio",
+      "estatuto": "ancora_anterior_verificavel",
+      "nao_comprova": "A referência anterior não confirma mecanismos de magia, locais de passagem ou rotas individuais."
+    }
+  ],
+  "modelos_do_rito": [
+    {
+      "id": "worldbuilding-xxix:modelos_do_rito:insular",
+      "nome": "A ilha como limite ritual",
+      "hipotese_condicional": "O rito poderia operar somente enquanto uma condição da ilha permanecesse satisfeita.",
+      "limite_de_inferencia": "A ausência de observação fora da ilha não demonstra que não exista alcance remoto.",
+      "pergunta_de_mesa": "Qual observação permitiria testar um limite sem inventar sua distância?",
+      "referencia_id": "worldbuilding-xxviii:informacao_e_ritos:ritual",
+      "escopo": "templo",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:modelos_do_rito:ciclico",
+      "nome": "O calendário que não foi escrito",
+      "hipotese_condicional": "O rito poderia responder a ciclos temporais ainda não especificados.",
+      "limite_de_inferencia": "O nome lunar do templo não prova dependência de fases da lua.",
+      "pergunta_de_mesa": "Que indício distingue repetição temporal de coincidência?",
+      "referencia_id": "rio-garganta:lugar:lua",
+      "escopo": "templo",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:modelos_do_rito:mediado",
+      "nome": "A corrente como condutora",
+      "hipotese_condicional": "O rito poderia propagar efeitos por um meio ou vínculo ritual ainda desconhecido.",
+      "limite_de_inferencia": "Não há dados sobre direção, extensão, volume ou identidade dos afetados.",
+      "pergunta_de_mesa": "Como reconhecer efeito sem alegar domínio de todo o rio?",
+      "referencia_id": "worldbuilding-xxviii:informacao_e_ritos:corrente",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:modelos_do_rito:simbolico",
+      "nome": "A obediência produzida pela crença",
+      "hipotese_condicional": "O templo poderia combinar ato mágico real e aparato de propaganda política.",
+      "limite_de_inferencia": "Sujeição social e coerção por magia não são a mesma coisa.",
+      "pergunta_de_mesa": "Quem pode contestar um decreto apresentado como milagre?",
+      "referencia_id": "faccao:corte-shadow-fey",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    }
+  ],
+  "interfaces_civis": [
+    {
+      "id": "worldbuilding-xxix:interfaces_civis:promessa",
+      "nome": "Prometer a corrente",
+      "hipotese_condicional": "Um representante hipotético promete passagem segura invocando o poder do templo.",
+      "limite_de_inferencia": "A promessa não prova capacidade real de mudar a água.",
+      "pergunta_de_mesa": "Que garantia o viajante pode exigir antes de entrar?",
+      "referencia_id": "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:interfaces_civis:recusa",
+      "nome": "O direito de não embarcar",
+      "hipotese_condicional": "Um condutor possível decide recusar travessia perigosa sem desafiar publicamente o culto.",
+      "limite_de_inferencia": "Autoridade religiosa alegada pode ser usada para punir prudência.",
+      "pergunta_de_mesa": "Quem verifica a segurança quando o sacerdote afirma que tudo está bem?",
+      "referencia_id": "worldbuilding-xxviii:trabalho_cotidiano:navegantes",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:interfaces_civis:acesso",
+      "nome": "Margem que não é templo",
+      "hipotese_condicional": "Moradores poderiam negociar acesso a margens sem que isso estabeleça um posto real.",
+      "limite_de_inferencia": "Confundir margem e templo desloca para Severina direitos civis não atribuídos na fonte.",
+      "pergunta_de_mesa": "Quem responde por um acesso negado?",
+      "referencia_id": "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:interfaces_civis:ferramentas",
+      "nome": "O reparo sem bênção",
+      "hipotese_condicional": "Artífices possíveis precisam reparar meios de deslocamento sem conhecer o rito.",
+      "limite_de_inferencia": "Trabalho necessário à navegação pode ser subordinado à aprovação ritual.",
+      "pergunta_de_mesa": "Pode haver manutenção independente do templo?",
+      "referencia_id": "rio-garganta:circuito:barcas",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:interfaces_civis:refugio",
+      "nome": "Uma margem acolhe",
+      "hipotese_condicional": "Famílias imaginadas buscam abrigo ao ouvir que as águas se tornaram perigosas.",
+      "limite_de_inferencia": "O perigo não permite inferir deslocamento real nem desastre atual.",
+      "pergunta_de_mesa": "Quem pode prestar socorro sem aceitar juramento?",
+      "referencia_id": "worldbuilding-xxviii:redes_de_resistencia:travessia",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:interfaces_civis:servico",
+      "nome": "O serviço que ninguém mede",
+      "hipotese_condicional": "Trabalhadores poderiam sustentar tarefas ritualizadas sem salário ou função definidos.",
+      "limite_de_inferencia": "Confundir trabalho auxiliar e obediência religiosa oculta coerção.",
+      "pergunta_de_mesa": "Quem tem direito de sair de uma tarefa?",
+      "referencia_id": "faccao:corte-shadow-fey",
+      "escopo": "templo",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:interfaces_civis:origem",
+      "nome": "Água, medo e procedência",
+      "hipotese_condicional": "Um vendedor hipotético usa o prestígio da ilha para divulgar origem de mercadoria.",
+      "limite_de_inferencia": "Proveniência comercial não é certificação mágica.",
+      "pergunta_de_mesa": "Quem pode contradizer um selo de procedência?",
+      "referencia_id": "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:interfaces_civis:travessia",
+      "nome": "O peso do testemunho",
+      "hipotese_condicional": "Um navegante descreveria uma travessia distinta da versão oficial.",
+      "limite_de_inferencia": "Recordação parcial não invalida experiência, mas não estabelece regra física.",
+      "pergunta_de_mesa": "Que perguntas tornam um testemunho verificável?",
+      "referencia_id": "rio-garganta:lugar:balsa",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    }
+  ],
+  "provas_e_incerteza": [
+    {
+      "id": "worldbuilding-xxix:provas_e_incerteza:observacao",
+      "nome": "Ver a água mudar",
+      "hipotese_condicional": "Uma hipótese de observação separa fato narrado de efeito diretamente percebido por personagens.",
+      "limite_de_inferencia": "Não transformar impressão em regra hidráulica universal.",
+      "pergunta_de_mesa": "O que foi observado, por quem e em qual circunstância?",
+      "referencia_id": "worldbuilding-xxviii:informacao_e_ritos:ritual",
+      "escopo": "templo",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:provas_e_incerteza:correlacao",
+      "nome": "Depois não é por causa",
+      "hipotese_condicional": "Uma alteração de corrente relatada após cerimônia poderia resultar de causas diversas.",
+      "limite_de_inferencia": "Sequência temporal não comprova causalidade ritual.",
+      "pergunta_de_mesa": "Que explicações concorrentes ainda são possíveis?",
+      "referencia_id": "worldbuilding-xxviii:informacao_e_ritos:corrente",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:provas_e_incerteza:depoimento",
+      "nome": "Duas testemunhas, duas margens",
+      "hipotese_condicional": "Depoimentos hipotéticos podem discordar sobre o mesmo momento.",
+      "limite_de_inferencia": "Conflito entre relatos não autoriza escolher o mais poderoso como verdadeiro.",
+      "pergunta_de_mesa": "Qual detalhe é independente do interesse de quem fala?",
+      "referencia_id": "rio-garganta:lugar:lua",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:provas_e_incerteza:medicao",
+      "nome": "Nenhuma vazão inventada",
+      "hipotese_condicional": "Uma investigação poderia procurar medidas reais antes de atribuir capacidade mágica.",
+      "limite_de_inferencia": "Sem instrumento e dado não existe volume comprovado.",
+      "pergunta_de_mesa": "Qual grandeza faria diferença para uma decisão da mesa?",
+      "referencia_id": "worldbuilding-xxviii:trabalho_cotidiano:navegantes",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:provas_e_incerteza:coercao",
+      "nome": "O acordo sob ameaça",
+      "hipotese_condicional": "Um juramento exigido em nome do templo poderia ser recusado por falta de consentimento.",
+      "limite_de_inferencia": "Poder político para compelir não é demonstração de rito bem-sucedido.",
+      "pergunta_de_mesa": "Quem pôde dizer não sem punição?",
+      "referencia_id": "faccao:corte-shadow-fey",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:provas_e_incerteza:contraprova",
+      "nome": "O êxito que não foi narrado",
+      "hipotese_condicional": "Uma travessia hipotética bem-sucedida sem rito suscitaria disputa de explicações.",
+      "limite_de_inferencia": "Um exemplo não refuta nem confirma a magia sem condições especificadas.",
+      "pergunta_de_mesa": "Que premissas faltam para concluir?",
+      "referencia_id": "rio-garganta:circuito:barcas",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:provas_e_incerteza:boato",
+      "nome": "O rumor de uma cheia",
+      "hipotese_condicional": "Uma notícia de enchente atribuída a Severina poderia circular sem qualquer inundação comprovada.",
+      "limite_de_inferencia": "Rumor não é acontecimento e não dispara efeitos de campanha.",
+      "pergunta_de_mesa": "Quem se beneficia do medo provocado pela notícia?",
+      "referencia_id": "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:provas_e_incerteza:registro",
+      "nome": "O livro de condições ausentes",
+      "hipotese_condicional": "Um registro hipotético de ocorrências distinguiria datas e observações de interpretações.",
+      "limite_de_inferencia": "Sem registro de falhas não se pode inferir infalibilidade.",
+      "pergunta_de_mesa": "O que uma autoridade se recusa a deixar anotar?",
+      "referencia_id": "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "escopo": "templo",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    }
+  ],
+  "economia_e_movimento": [
+    {
+      "id": "worldbuilding-xxix:economia_e_movimento:pedagio",
+      "nome": "Uma bênção cobrada duas vezes",
+      "hipotese_condicional": "Alegação de proteção religiosa pode ser combinada a taxa de trânsito hipotética.",
+      "limite_de_inferencia": "A fonte não atribui a Severina cobrança alguma.",
+      "pergunta_de_mesa": "A quem o valor é entregue, se houver cobrança?",
+      "referencia_id": "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:economia_e_movimento:contrato",
+      "nome": "O preço da espera",
+      "hipotese_condicional": "Um transportador possível cobra por aguardar uma autorização ritual incerta.",
+      "limite_de_inferencia": "Nenhuma tabela de tempo ou rito foi documentada.",
+      "pergunta_de_mesa": "Como distribuir o custo de uma demora não comprovada?",
+      "referencia_id": "rio-garganta:circuito:barcas",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:economia_e_movimento:carga",
+      "nome": "A embarcação não é estoque de pessoas",
+      "hipotese_condicional": "A logística hipotética distingue bens identificados de indivíduos submetidos à violência.",
+      "limite_de_inferencia": "Pessoas escravizadas não são recursos materiais para uma planilha.",
+      "pergunta_de_mesa": "Como descrever vítimas sem repetir a linguagem do opressor?",
+      "referencia_id": "worldbuilding-xxviii:servidao_e_agencia:evasao",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:economia_e_movimento:provisao",
+      "nome": "Comida antes de presságio",
+      "hipotese_condicional": "Famílias poderiam decidir prioridades de alimento diante de rumores sobre o rio.",
+      "limite_de_inferencia": "Rumores de alteração de fluxo não demonstram escassez real.",
+      "pergunta_de_mesa": "Qual dado sustenta uma mudança nas provisões?",
+      "referencia_id": "area-proposta:rio",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:economia_e_movimento:documento",
+      "nome": "O documento molhado",
+      "hipotese_condicional": "Um registro de passageiro hipotético se torna ilegível durante uma travessia.",
+      "limite_de_inferencia": "Falha burocrática não torna pessoa sem direitos.",
+      "pergunta_de_mesa": "Quem confirma uma identidade sem expor fugitivos?",
+      "referencia_id": "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:economia_e_movimento:desvio",
+      "nome": "Sem rota desenhada",
+      "hipotese_condicional": "Uma tripulação imaginada considera mudar seu itinerário por suspeita de perigo ritual.",
+      "limite_de_inferencia": "A hipótese não cria canal, atalho, porto ou navegação garantida.",
+      "pergunta_de_mesa": "Que informações são necessárias antes da escolha?",
+      "referencia_id": "rio-garganta:lugar:balsa",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    }
+  ],
+  "tensoes_de_poder": [
+    {
+      "id": "worldbuilding-xxix:tensoes_de_poder:severina-morwen",
+      "nome": "Dois poderes, nenhuma cadeia definida",
+      "hipotese_condicional": "Representantes de Morwen e do templo poderiam disputar interpretações do que o rio permite.",
+      "limite_de_inferencia": "O manuscrito não estabelece comando direto de Morwen sobre Severina ou o inverso.",
+      "pergunta_de_mesa": "Que ordem efetivamente se aplica a qual pessoa?",
+      "referencia_id": "area-proposta:rio",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:tensoes_de_poder:lua-divindade",
+      "nome": "A lua não disse seu nome",
+      "hipotese_condicional": "Um devoto hipotético atribui o templo a uma divindade específica.",
+      "limite_de_inferencia": "Nenhuma divindade titular foi nomeada para este templo na fonte.",
+      "pergunta_de_mesa": "Quem pode confirmar a tradição anterior?",
+      "referencia_id": "rio-garganta:lugar:lua",
+      "escopo": "templo",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:tensoes_de_poder:protecao",
+      "nome": "A proteção que cobra obediência",
+      "hipotese_condicional": "O poder ritual pode ser apresentado politicamente como uma garantia de travessia.",
+      "limite_de_inferencia": "A garantia não prova resultado ou legitimação da Corte.",
+      "pergunta_de_mesa": "Quando a proteção vira ameaça?",
+      "referencia_id": "faccao:corte-shadow-fey",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:tensoes_de_poder:revolta",
+      "nome": "Não antecipar Drakport",
+      "hipotese_condicional": "Uma cerimônia imaginada é descrita como pretexto para conter rumores de revolta.",
+      "limite_de_inferencia": "O futuro de Drakport está em aberto; não existe repressão a uma revolta ocorrida.",
+      "pergunta_de_mesa": "Como investigar sem transformar presságio em cronologia?",
+      "referencia_id": "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:tensoes_de_poder:poder",
+      "nome": "Governar o rio não é possuí-lo",
+      "hipotese_condicional": "O templo poderia alegar jurisdição sobre águas enquanto pessoas contestam a pretensão.",
+      "limite_de_inferencia": "Controle mágico narrado não comprova posse ou soberania legítima.",
+      "pergunta_de_mesa": "Que diferença há entre poder agir e ter direito de ordenar?",
+      "referencia_id": "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:tensoes_de_poder:aliados",
+      "nome": "O aliado que não endossa o culto",
+      "hipotese_condicional": "Grupos dissidentes podem cooperar pontualmente diante de uma ameaça sem ratificar o templo.",
+      "limite_de_inferencia": "A resistência é plural; ninguém fala por todos os fugitivos.",
+      "pergunta_de_mesa": "Quem autorizou uma pessoa a prometer apoio?",
+      "referencia_id": "worldbuilding-xxviii:redes_de_resistencia:travessia",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "worldbuilding-xxix:vinhetas:remo",
+      "nome": "O remo que parou",
+      "hipotese_condicional": "Um condutor hipotético interrompe a remada ao ouvir que a lua tornará a passagem segura.",
+      "limite_de_inferencia": "Nenhuma fase lunar nem alteração física foi confirmada.",
+      "pergunta_de_mesa": "Qual decisão depende de um testemunho real?",
+      "referencia_id": "worldbuilding-xxviii:trabalho_cotidiano:navegantes",
+      "escopo": "rio",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:vinhetas:selo",
+      "nome": "O selo da corrente",
+      "hipotese_condicional": "Uma viajante imaginada recebe um papel prometendo proteção do templo.",
+      "limite_de_inferencia": "O papel não possui autoridade pública canônica.",
+      "pergunta_de_mesa": "Quem responderia por essa promessa, se ela falhar?",
+      "referencia_id": "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:vinhetas:reflexo",
+      "nome": "O reflexo que todos discutem",
+      "hipotese_condicional": "Duas pessoas interpretam de modo oposto um brilho na água perto da ilha.",
+      "limite_de_inferencia": "A imagem não comprova que Severina esteja realizando um rito.",
+      "pergunta_de_mesa": "O que a cena revelou de fato?",
+      "referencia_id": "rio-garganta:lugar:lua",
+      "escopo": "templo",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxix:vinhetas:silencio",
+      "nome": "A notícia que não desembarcou",
+      "hipotese_condicional": "Um mensageiro imaginado omite o boato de uma revolta para evitar perseguição.",
+      "limite_de_inferencia": "O silêncio não prova que ocorreu revolta ou que o templo a suprimiu.",
+      "pergunta_de_mesa": "Quem pode decidir transmitir a mensagem?",
+      "referencia_id": "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "escopo": "interface",
+      "estatuto": "alternativa_nao_adotada",
+      "ocorreu": false,
+      "situacao_documentada": false,
+      "aprovacao_autoral": false,
+      "efeito_mecanico": false,
+      "canon_aplicado": false
+    }
+  ],
+  "perguntas_para_autor": [
+    {
+      "id": "worldbuilding-xxix:pergunta:divindade",
+      "pergunta_autoral": "A qual divindade, tradição ou culto o Templo da Lua era originalmente associado?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxix:pergunta:transformacao",
+      "pergunta_autoral": "Como e quando o templo se tornou centro de poder sombrio?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxix:pergunta:alcance",
+      "pergunta_autoral": "Qual é o alcance geográfico real dos rituais de Severina?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxix:pergunta:duracao",
+      "pergunta_autoral": "Os efeitos do rito são contínuos, pontuais ou condicionados?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxix:pergunta:condicoes",
+      "pergunta_autoral": "Quais materiais, participantes ou circunstâncias são indispensáveis ao rito?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxix:pergunta:lua",
+      "pergunta_autoral": "Existe qualquer relação factual com ciclos lunares?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxix:pergunta:efeitos",
+      "pergunta_autoral": "O que concretamente acontece com a água durante um rito?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxix:pergunta:testemunhas",
+      "pergunta_autoral": "Como moradores poderiam reconhecer ou contestar um efeito do templo?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxix:pergunta:jurisdicao",
+      "pergunta_autoral": "O templo tem alguma autoridade fiscal, militar ou jurídica formal?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxix:pergunta:morwen",
+      "pergunta_autoral": "Qual relação institucional existe entre Severina Shadowbloom e Lady Morwen Nightshade?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxix:pergunta:comercio",
+      "pergunta_autoral": "O controle da água interfere em rotas ou comércio de forma documentável?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxix:pergunta:autoridade",
+      "pergunta_autoral": "Que direitos de recusa e participação têm os habitantes do rio nas decisões sobre o uso da água?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    }
+  ],
+  "contagens": {
+    "fatos": 12,
+    "referencias": 14,
+    "propostas": 36,
+    "perguntas": 12,
+    "modelos_do_rito": 4,
+    "interfaces_civis": 8,
+    "provas_e_incerteza": 8,
+    "economia_e_movimento": 6,
+    "tensoes_de_poder": 6,
+    "vinhetas": 4
+  }
+}
