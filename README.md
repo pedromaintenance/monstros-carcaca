@@ -566,3 +566,8 @@ Fontes: `data/propostas/eldroth-fichas-dw-ciclo13.json`, `schemas/eldroth-fichas
 ### Ciclo XXIV — Cultura civil da Costa Sul
 
 O [dossiê de Portomonte e Costa Sul](docs/COSTA_SUL_VIDA_CIVIL_CICLO24.md) amplia a vida cotidiana do cenário em **36 hipóteses não canônicas**, sustentadas por 10 fatos do manuscrito e ligadas a 13 referências existentes. Dez perguntas seguem abertas ao autor. Exportação: `costa-sul-civil-life.json`, índices determinísticos e API ESM com `getCostaSulCivilLife`, `getCostaSulCivilLifeEntry` e `searchCostaSulCivilLife`. Não introduz leis, bairros, portos, água potável presumida nem novos monstros.
+
+
+### Ciclo XXV — O milagre e a cidade: Portomonte
+
+O [dossiê do templo de Deméter e da organização civil](docs/PORTOMONTE_TEMPLO_GOVERNO_CICLO25.md) preserva 8 afirmações documentadas e distingue **36 hipóteses estruturadas**: 4 modelos de governo não adotados, 8 interfaces de trabalho, 8 relações sociais, 6 garantias possíveis, 6 dilemas e 4 vinhetas. São 12 referências verificadas por ID e 12 perguntas autorais pendentes. Dados `data/worldbuilding/portomonte-templo-governo-ciclo25.json`, JSON Schema, validação cruzada, seis índices determinísticos e leitura ESM via `getPortomonteTempleCivic`, `searchPortomonteTempleCivic` e `previewPortomonteCivicModel` (simulação sem mutação). O ciclo não especifica método ritual, água para beber, regime político nem números de produção.
