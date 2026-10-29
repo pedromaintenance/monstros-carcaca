@@ -265,6 +265,24 @@ def build():
     grama_xx=load("data/worldbuilding/grama-cortada-cotidiano-ciclo20.json")
     gnomos_xxi=load("data/worldbuilding/culturas-gnomicas-ciclo21.json")
     meio_demonios_xxii=load("data/worldbuilding/meio-demonios-sociedades-ciclo22.json")
+    costa_sul_xxiv=load("data/worldbuilding/costa-sul-vida-civil-ciclo24.json")
+    cats_xxiv=("vida_domestica","trabalhos","saberes","circulacao","tensoes_civis","vinhetas")
+    rows_xxiv=[{**e,"categoria_indice":cat} for cat in cats_xxiv for e in costa_sul_xxiv[cat]]
+    if len(rows_xxiv)!=36: raise ValueError("Ciclo XXIV: esperadas 36 propostas.")
+    def indexar_costa_sul_xxiv(key):
+        out=defaultdict(set)
+        for item in rows_xxiv:
+            v=item[key]
+            if v is not None: out[str(v)].add(item["id"])
+        return {k:sorted(v) for k,v in sorted(out.items())}
+    indices_costa_sul_xxiv={
+        "by_categoria":indexar_costa_sul_xxiv("categoria_indice"),
+        "by_escopo":indexar_costa_sul_xxiv("escopo"),
+        "by_pagina":indexar_costa_sul_xxiv("pagina_contextual"),
+        "by_referencia":indexar_costa_sul_xxiv("referencia_preexistente"),
+        "by_estado":indexar_costa_sul_xxiv("estado"),
+        "by_nome":indexar_costa_sul_xxiv("nome")
+    }
     caatinga_xxiii=load("data/worldbuilding/caatinga-vida-civil-ciclo23.json")
     cats_caatinga_xxiii=("dominios_sociais","circuitos_materiais","etica_da_agua",
                          "mobilidades","relacoes_regionais","vinhetas")
@@ -1107,6 +1125,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "costa_sul_civil_life":"costa-sul-civil-life.json",
+        "costa_sul_civil_life_indexes":"costa-sul-civil-life-indexes.json",
         "caatinga_civil_life":"caatinga-civil-life.json",
         "caatinga_civil_life_indexes":"caatinga-civil-life-indexes.json",
         "half_demon_societies":"half-demon-societies.json",
@@ -1253,6 +1273,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_fatos_costa_sul_xxiv":len(costa_sul_xxiv["fatos_documentados"]),
+        "total_propostas_costa_sul_xxiv":len(rows_xxiv),
+        "total_referencias_costa_sul_xxiv":len(costa_sul_xxiv["referencias_existentes"]),
+        "total_perguntas_costa_sul_xxiv":len(costa_sul_xxiv["perguntas_para_autor"]),
         "total_fatos_caatinga_xxiii":len(caatinga_xxiii["fatos_documentados"]),
         "total_propostas_caatinga_xxiii":len(registros_caatinga_xxiii),
         "total_referencias_caatinga_xxiii":len(caatinga_xxiii["referencias_a_propostas_e_dados_existentes"]),
@@ -1428,6 +1452,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["costa_sul_civil_life"]:costa_sul_xxiv,
+           files["costa_sul_civil_life_indexes"]:indices_costa_sul_xxiv,
            files["caatinga_civil_life"]:caatinga_xxiii,
            files["caatinga_civil_life_indexes"]:indices_caatinga_xxiii,
            files["half_demon_societies"]:meio_demonios_xxii,
