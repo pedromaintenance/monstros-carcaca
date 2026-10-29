@@ -1,0 +1,356 @@
+{
+  "by_categoria": {
+    "circulacao": [
+      "xxiv:circulacao:autoria",
+      "xxiv:circulacao:avisos",
+      "xxiv:circulacao:ferragens",
+      "xxiv:circulacao:partida",
+      "xxiv:circulacao:porto",
+      "xxiv:circulacao:sementes"
+    ],
+    "saberes": [
+      "xxiv:saberes:cantos",
+      "xxiv:saberes:cultivo",
+      "xxiv:saberes:erro",
+      "xxiv:saberes:escrita",
+      "xxiv:saberes:memoria",
+      "xxiv:saberes:viagem"
+    ],
+    "tensoes_civis": [
+      "xxiv:tensoes_civis:autonomia",
+      "xxiv:tensoes_civis:fe",
+      "xxiv:tensoes_civis:pluralidade",
+      "xxiv:tensoes_civis:rumores"
+    ],
+    "trabalhos": [
+      "xxiv:trabalhos:aprendiz",
+      "xxiv:trabalhos:lavoura",
+      "xxiv:trabalhos:liberdade",
+      "xxiv:trabalhos:marinheiro",
+      "xxiv:trabalhos:reparo",
+      "xxiv:trabalhos:templo"
+    ],
+    "vida_domestica": [
+      "xxiv:vida_domestica:acolhimento",
+      "xxiv:vida_domestica:cozinha",
+      "xxiv:vida_domestica:cuidados",
+      "xxiv:vida_domestica:descanso",
+      "xxiv:vida_domestica:hospitalidade",
+      "xxiv:vida_domestica:infancia",
+      "xxiv:vida_domestica:lazer",
+      "xxiv:vida_domestica:moradia",
+      "xxiv:vida_domestica:tarefas",
+      "xxiv:vida_domestica:velhice"
+    ],
+    "vinhetas": [
+      "xxiv:vinhetas:caderno",
+      "xxiv:vinhetas:festa",
+      "xxiv:vinhetas:narrativa",
+      "xxiv:vinhetas:tigela"
+    ]
+  },
+  "by_escopo": {
+    "ilhas": [
+      "xxiv:circulacao:autoria",
+      "xxiv:saberes:memoria",
+      "xxiv:saberes:viagem",
+      "xxiv:trabalhos:marinheiro",
+      "xxiv:vida_domestica:velhice",
+      "xxiv:vinhetas:narrativa"
+    ],
+    "litoral_regional": [
+      "xxiv:circulacao:avisos",
+      "xxiv:circulacao:partida",
+      "xxiv:circulacao:porto",
+      "xxiv:saberes:cantos",
+      "xxiv:tensoes_civis:autonomia",
+      "xxiv:tensoes_civis:rumores",
+      "xxiv:trabalhos:liberdade",
+      "xxiv:vida_domestica:acolhimento",
+      "xxiv:vida_domestica:hospitalidade",
+      "xxiv:vida_domestica:infancia",
+      "xxiv:vida_domestica:lazer",
+      "xxiv:vinhetas:festa"
+    ],
+    "portomonte": [
+      "xxiv:circulacao:ferragens",
+      "xxiv:circulacao:sementes",
+      "xxiv:saberes:cultivo",
+      "xxiv:saberes:erro",
+      "xxiv:saberes:escrita",
+      "xxiv:tensoes_civis:fe",
+      "xxiv:tensoes_civis:pluralidade",
+      "xxiv:trabalhos:aprendiz",
+      "xxiv:trabalhos:lavoura",
+      "xxiv:trabalhos:reparo",
+      "xxiv:trabalhos:templo",
+      "xxiv:vida_domestica:cozinha",
+      "xxiv:vida_domestica:cuidados",
+      "xxiv:vida_domestica:descanso",
+      "xxiv:vida_domestica:moradia",
+      "xxiv:vida_domestica:tarefas",
+      "xxiv:vinhetas:caderno",
+      "xxiv:vinhetas:tigela"
+    ]
+  },
+  "by_pagina": {
+    "12": [
+      "xxiv:tensoes_civis:autonomia"
+    ],
+    "14": [
+      "xxiv:circulacao:autoria",
+      "xxiv:saberes:memoria",
+      "xxiv:saberes:viagem",
+      "xxiv:trabalhos:marinheiro",
+      "xxiv:vida_domestica:velhice",
+      "xxiv:vinhetas:narrativa"
+    ],
+    "15": [
+      "xxiv:circulacao:avisos",
+      "xxiv:saberes:cantos"
+    ],
+    "5": [
+      "xxiv:circulacao:ferragens",
+      "xxiv:circulacao:partida",
+      "xxiv:circulacao:porto",
+      "xxiv:circulacao:sementes",
+      "xxiv:saberes:cultivo",
+      "xxiv:saberes:erro",
+      "xxiv:saberes:escrita",
+      "xxiv:tensoes_civis:fe",
+      "xxiv:tensoes_civis:pluralidade",
+      "xxiv:tensoes_civis:rumores",
+      "xxiv:trabalhos:aprendiz",
+      "xxiv:trabalhos:lavoura",
+      "xxiv:trabalhos:liberdade",
+      "xxiv:trabalhos:reparo",
+      "xxiv:trabalhos:templo",
+      "xxiv:vida_domestica:acolhimento",
+      "xxiv:vida_domestica:cozinha",
+      "xxiv:vida_domestica:cuidados",
+      "xxiv:vida_domestica:descanso",
+      "xxiv:vida_domestica:hospitalidade",
+      "xxiv:vida_domestica:infancia",
+      "xxiv:vida_domestica:lazer",
+      "xxiv:vida_domestica:moradia",
+      "xxiv:vida_domestica:tarefas",
+      "xxiv:vinhetas:caderno",
+      "xxiv:vinhetas:festa",
+      "xxiv:vinhetas:tigela"
+    ]
+  },
+  "by_referencia": {
+    "costa-mar:impacto:promessa-agua": [
+      "xxiv:vida_domestica:cuidados"
+    ],
+    "costa-mar:oficio:contadores-da-lavoura": [
+      "xxiv:trabalhos:lavoura",
+      "xxiv:vinhetas:caderno"
+    ],
+    "costa-sul:espaco:altares": [
+      "xxiv:tensoes_civis:fe",
+      "xxiv:tensoes_civis:pluralidade",
+      "xxiv:trabalhos:templo",
+      "xxiv:vida_domestica:lazer"
+    ],
+    "costa-sul:espaco:cordas": [
+      "xxiv:circulacao:ferragens",
+      "xxiv:trabalhos:aprendiz",
+      "xxiv:trabalhos:reparo",
+      "xxiv:vinhetas:festa"
+    ],
+    "costa-sul:espaco:pedra-molhada": [
+      "xxiv:saberes:cultivo",
+      "xxiv:vida_domestica:moradia"
+    ],
+    "costa-sul:espaco:sino": [
+      "xxiv:tensoes_civis:rumores",
+      "xxiv:vida_domestica:infancia"
+    ],
+    "costa-sul:espaco:varal": [
+      "xxiv:circulacao:partida",
+      "xxiv:vida_domestica:acolhimento",
+      "xxiv:vida_domestica:cozinha"
+    ],
+    "costa-sul:pratica:lacre": [
+      "xxiv:circulacao:porto",
+      "xxiv:saberes:escrita",
+      "xxiv:tensoes_civis:autonomia"
+    ],
+    "costa-sul:pratica:turno": [
+      "xxiv:circulacao:sementes",
+      "xxiv:saberes:erro",
+      "xxiv:vida_domestica:descanso",
+      "xxiv:vida_domestica:tarefas"
+    ],
+    "costa-sul:rede:casco": [
+      "xxiv:circulacao:autoria",
+      "xxiv:saberes:memoria",
+      "xxiv:vida_domestica:velhice",
+      "xxiv:vinhetas:narrativa"
+    ],
+    "costa-sul:rede:volta": [
+      "xxiv:saberes:viagem",
+      "xxiv:trabalhos:marinheiro"
+    ],
+    "fronteira:acordo:primeira-tigela": [
+      "xxiv:trabalhos:liberdade",
+      "xxiv:vida_domestica:hospitalidade",
+      "xxiv:vinhetas:tigela"
+    ],
+    "fronteira:fluxo:noticias": [
+      "xxiv:circulacao:avisos",
+      "xxiv:saberes:cantos"
+    ]
+  },
+  "by_estado": {
+    "proposta_cultural_nao_canonica": [
+      "xxiv:circulacao:autoria",
+      "xxiv:circulacao:avisos",
+      "xxiv:circulacao:ferragens",
+      "xxiv:circulacao:partida",
+      "xxiv:circulacao:porto",
+      "xxiv:circulacao:sementes",
+      "xxiv:saberes:cantos",
+      "xxiv:saberes:cultivo",
+      "xxiv:saberes:erro",
+      "xxiv:saberes:escrita",
+      "xxiv:saberes:memoria",
+      "xxiv:saberes:viagem",
+      "xxiv:tensoes_civis:autonomia",
+      "xxiv:tensoes_civis:fe",
+      "xxiv:tensoes_civis:pluralidade",
+      "xxiv:tensoes_civis:rumores",
+      "xxiv:trabalhos:aprendiz",
+      "xxiv:trabalhos:lavoura",
+      "xxiv:trabalhos:liberdade",
+      "xxiv:trabalhos:marinheiro",
+      "xxiv:trabalhos:reparo",
+      "xxiv:trabalhos:templo",
+      "xxiv:vida_domestica:acolhimento",
+      "xxiv:vida_domestica:cozinha",
+      "xxiv:vida_domestica:cuidados",
+      "xxiv:vida_domestica:descanso",
+      "xxiv:vida_domestica:hospitalidade",
+      "xxiv:vida_domestica:infancia",
+      "xxiv:vida_domestica:lazer",
+      "xxiv:vida_domestica:moradia",
+      "xxiv:vida_domestica:tarefas",
+      "xxiv:vida_domestica:velhice",
+      "xxiv:vinhetas:caderno",
+      "xxiv:vinhetas:festa",
+      "xxiv:vinhetas:narrativa",
+      "xxiv:vinhetas:tigela"
+    ]
+  },
+  "by_nome": {
+    "A colheita que só existe no caderno": [
+      "xxiv:vinhetas:caderno"
+    ],
+    "A cozinha que sustenta o porto": [
+      "xxiv:vida_domestica:cozinha"
+    ],
+    "A festa dos que ainda trabalham": [
+      "xxiv:vinhetas:festa"
+    ],
+    "A refeição não assinada": [
+      "xxiv:vinhetas:tigela"
+    ],
+    "A safra ainda não colhida": [
+      "xxiv:trabalhos:lavoura"
+    ],
+    "A tigela sem dívida": [
+      "xxiv:vida_domestica:hospitalidade"
+    ],
+    "A travessia com duas versões": [
+      "xxiv:vinhetas:narrativa"
+    ],
+    "Aprender a reparar": [
+      "xxiv:trabalhos:aprendiz"
+    ],
+    "Aprender viajando": [
+      "xxiv:saberes:viagem"
+    ],
+    "Aprendizado e tolerância ao erro": [
+      "xxiv:saberes:erro"
+    ],
+    "Comércio sem inventar cais": [
+      "xxiv:circulacao:porto"
+    ],
+    "Conhecimento da pedra": [
+      "xxiv:saberes:cultivo"
+    ],
+    "Cuidar além da purificação": [
+      "xxiv:vida_domestica:cuidados"
+    ],
+    "Ensino sem escola documentada": [
+      "xxiv:saberes:escrita"
+    ],
+    "Ferramentas com muitos donos": [
+      "xxiv:trabalhos:reparo"
+    ],
+    "Festas que ainda não têm calendário": [
+      "xxiv:vida_domestica:lazer"
+    ],
+    "Histórias não são mercadorias automáticas": [
+      "xxiv:circulacao:autoria"
+    ],
+    "Histórias tortles em disputa": [
+      "xxiv:saberes:memoria"
+    ],
+    "Informar sem revelar rotas": [
+      "xxiv:saberes:cantos"
+    ],
+    "Infância antes da guerra": [
+      "xxiv:vida_domestica:infancia"
+    ],
+    "Notícia sem mapa completo": [
+      "xxiv:circulacao:avisos"
+    ],
+    "O abrigo entre penhascos": [
+      "xxiv:vida_domestica:moradia"
+    ],
+    "O dia sem serviço": [
+      "xxiv:vida_domestica:descanso"
+    ],
+    "O direito à memória e ao silêncio": [
+      "xxiv:vida_domestica:velhice"
+    ],
+    "O mar e a vida em casa": [
+      "xxiv:trabalhos:marinheiro"
+    ],
+    "O milagre não é soberania": [
+      "xxiv:tensoes_civis:fe"
+    ],
+    "O recém-chegado não é suspeito por origem": [
+      "xxiv:vida_domestica:acolhimento"
+    ],
+    "O rumor como violência": [
+      "xxiv:tensoes_civis:rumores"
+    ],
+    "O trabalho que não aparece em canções": [
+      "xxiv:vida_domestica:tarefas"
+    ],
+    "Portomonte não representa todo o litoral": [
+      "xxiv:tensoes_civis:autonomia"
+    ],
+    "Quem mantém o templo?": [
+      "xxiv:trabalhos:templo"
+    ],
+    "Sair e regressar": [
+      "xxiv:circulacao:partida"
+    ],
+    "Sementes sem excedente inventado": [
+      "xxiv:circulacao:sementes"
+    ],
+    "Trabalho não é servidão": [
+      "xxiv:trabalhos:liberdade"
+    ],
+    "Uma ferramenta com usos rivais": [
+      "xxiv:circulacao:ferragens"
+    ],
+    "Vizinhos de altares distintos": [
+      "xxiv:tensoes_civis:pluralidade"
+    ]
+  }
+}

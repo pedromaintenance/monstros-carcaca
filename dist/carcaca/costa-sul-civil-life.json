@@ -1,0 +1,721 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XXIV — Costa Sul civil e Portomonte",
+  "estado": "proposta_sem_canonizacao",
+  "aprovacao_autoral": false,
+  "efeito_canonico_automatico": false,
+  "regiao_id": "regiao:costa-sul",
+  "lugar_focal_id": "lugar:portomonte",
+  "lugares_canonicos_adicionados": 0,
+  "agua_potavel_domestica_confirmada": null,
+  "governo_confirmado": null,
+  "populacao_confirmada": null,
+  "comercio_direto_com_caatinga_confirmado": null,
+  "fonte_manuscrito": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "fatos_documentados": [
+    {
+      "id": "xxiv:fato:1",
+      "pagina": 5,
+      "afirmacao": "Portomonte é assentamento humano grande, escondido pelos penhascos.",
+      "limite": "Grande não determina população ou bairros.",
+      "canon_novo": false
+    },
+    {
+      "id": "xxiv:fato:2",
+      "pagina": 5,
+      "afirmacao": "Portomonte mantém comércio com outros assentamentos da costa.",
+      "limite": "As rotas e os parceiros não são individualizados.",
+      "canon_novo": false
+    },
+    {
+      "id": "xxiv:fato:3",
+      "pagina": 5,
+      "afirmacao": "Templo de Deméter purifica o Mar de Sangue para permitir cultivo sobre pedra.",
+      "limite": "Não comprova potabilidade doméstica.",
+      "canon_novo": false
+    },
+    {
+      "id": "xxiv:fato:4",
+      "pagina": 5,
+      "afirmacao": "Grupos da Caatinga e comunidades costeiras vivenciam pilhagens regionais.",
+      "limite": "Não comprova ataque particular a Portomonte.",
+      "canon_novo": false
+    },
+    {
+      "id": "xxiv:fato:5",
+      "pagina": 5,
+      "afirmacao": "Kuo-toa e abissais marinhos capturam pessoas para sacrifício.",
+      "limite": "Não implica culpa de indivíduos não identificados ou natureza demoníaca dos abissais.",
+      "canon_novo": false
+    },
+    {
+      "id": "xxiv:fato:6",
+      "pagina": 5,
+      "afirmacao": "Tortles e tabaxis vivem em ilhas, fazem viagens sazonais e podem trabalhar como marinheiros.",
+      "limite": "Não indica rota ou ilha específica.",
+      "canon_novo": false
+    },
+    {
+      "id": "xxiv:fato:7",
+      "pagina": 5,
+      "afirmacao": "Alguns refugiados de Eldroth estão nos maiores assentamentos da região.",
+      "limite": "Não comprova sua presença em Portomonte.",
+      "canon_novo": false
+    },
+    {
+      "id": "xxiv:fato:8",
+      "pagina": 12,
+      "afirmacao": "Portomonte é exemplo relevante de autonomia humana no sul.",
+      "limite": "Não define governo ou leis.",
+      "canon_novo": false
+    },
+    {
+      "id": "xxiv:fato:9",
+      "pagina": 14,
+      "afirmacao": "Mosteiros tortles preservam memória e a viagem forma tabaxis.",
+      "limite": "Não define uma escola portomontense.",
+      "canon_novo": false
+    },
+    {
+      "id": "xxiv:fato:10",
+      "pagina": 15,
+      "afirmacao": "Sereias preservam informações cantadas, e tritões defendem águas azuis.",
+      "limite": "Não estabelece acordo específico com Portomonte.",
+      "canon_novo": false
+    }
+  ],
+  "referencias_existentes": [
+    {
+      "arquivo": "data/propostas/portomonte-ilhas-costa-sul-hack.json",
+      "colecao": "espacos",
+      "id": "costa-sul:espaco:varal",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/portomonte-ilhas-costa-sul-hack.json",
+      "colecao": "espacos",
+      "id": "costa-sul:espaco:sino",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/portomonte-ilhas-costa-sul-hack.json",
+      "colecao": "espacos",
+      "id": "costa-sul:espaco:pedra-molhada",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/portomonte-ilhas-costa-sul-hack.json",
+      "colecao": "espacos",
+      "id": "costa-sul:espaco:cordas",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/portomonte-ilhas-costa-sul-hack.json",
+      "colecao": "espacos",
+      "id": "costa-sul:espaco:altares",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/portomonte-ilhas-costa-sul-hack.json",
+      "colecao": "redes",
+      "id": "costa-sul:rede:casco",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/portomonte-ilhas-costa-sul-hack.json",
+      "colecao": "redes",
+      "id": "costa-sul:rede:volta",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/portomonte-ilhas-costa-sul-hack.json",
+      "colecao": "praticas",
+      "id": "costa-sul:pratica:turno",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/portomonte-ilhas-costa-sul-hack.json",
+      "colecao": "praticas",
+      "id": "costa-sul:pratica:lacre",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/costa-sul-pressao-mar-sangue-hack.json",
+      "colecao": "oficios",
+      "id": "costa-mar:oficio:contadores-da-lavoura",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/costa-sul-pressao-mar-sangue-hack.json",
+      "colecao": "impactos",
+      "id": "costa-mar:impacto:promessa-agua",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/fronteira-caatinga-costa-sul-hack.json",
+      "colecao": "acordos",
+      "id": "fronteira:acordo:primeira-tigela",
+      "estado": "proposta_preexistente_nao_canonica"
+    },
+    {
+      "arquivo": "data/propostas/fronteira-caatinga-costa-sul-hack.json",
+      "colecao": "fluxos",
+      "id": "fronteira:fluxo:noticias",
+      "estado": "proposta_preexistente_nao_canonica"
+    }
+  ],
+  "vida_domestica": [
+    {
+      "id": "xxiv:vida_domestica:cozinha",
+      "nome": "A cozinha que sustenta o porto",
+      "hipotese": "O sustento comum pode depender de tarefas domésticas compartilhadas.",
+      "contradicao": "O trabalho de cozinhar pode ser invisibilizado por narrativas de heroísmo.",
+      "referencia_preexistente": "costa-sul:espaco:varal",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vida_domestica:infancia",
+      "nome": "Infância antes da guerra",
+      "hipotese": "Crianças podem aprender brincando sem treinamento militar obrigatório.",
+      "contradicao": "O medo de invasão pode legitimar recrutamento precoce.",
+      "referencia_preexistente": "costa-sul:espaco:sino",
+      "pagina_contextual": 5,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vida_domestica:velhice",
+      "nome": "O direito à memória e ao silêncio",
+      "hipotese": "Pessoas idosas podem transmitir tradições sem dever perpétuo de narrar.",
+      "contradicao": "A comunidade pode cobrar testemunhos que não deseja oferecer.",
+      "referencia_preexistente": "costa-sul:rede:casco",
+      "pagina_contextual": 14,
+      "escopo": "ilhas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vida_domestica:moradia",
+      "nome": "O abrigo entre penhascos",
+      "hipotese": "A topografia pode influenciar moradias sem definir bairros ou ruas.",
+      "contradicao": "Segurança geográfica pode dificultar acessibilidade.",
+      "referencia_preexistente": "costa-sul:espaco:pedra-molhada",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vida_domestica:hospitalidade",
+      "nome": "A tigela sem dívida",
+      "hipotese": "Acolhimento voluntário pode existir sem contrato de obediência.",
+      "contradicao": "Hospitalidade pode degenerar em trabalho compulsório.",
+      "referencia_preexistente": "fronteira:acordo:primeira-tigela",
+      "pagina_contextual": 5,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vida_domestica:descanso",
+      "nome": "O dia sem serviço",
+      "hipotese": "Ofícios podem organizar substituições para permitir descanso.",
+      "contradicao": "Quem parece indispensável pode ficar sem descanso.",
+      "referencia_preexistente": "costa-sul:pratica:turno",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vida_domestica:cuidados",
+      "nome": "Cuidar além da purificação",
+      "hipotese": "O rito agrícola não comprova cura de enfermidades ou água potável doméstica.",
+      "contradicao": "Prestígio ritual pode apagar outras formas de cuidado.",
+      "referencia_preexistente": "costa-mar:impacto:promessa-agua",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vida_domestica:acolhimento",
+      "nome": "O recém-chegado não é suspeito por origem",
+      "hipotese": "A convivência pode avaliar cada pessoa individualmente.",
+      "contradicao": "O medo pode converter procedência em culpa coletiva.",
+      "referencia_preexistente": "costa-sul:espaco:varal",
+      "pagina_contextual": 5,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vida_domestica:tarefas",
+      "nome": "O trabalho que não aparece em canções",
+      "hipotese": "Lavar, reparar, cozinhar e acolher são funções sociais essenciais.",
+      "contradicao": "Prestígio pode ser distribuído sem relação com trabalho real.",
+      "referencia_preexistente": "costa-sul:pratica:turno",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vida_domestica:lazer",
+      "nome": "Festas que ainda não têm calendário",
+      "hipotese": "Jogos e encontros podem existir sem feriado canônico.",
+      "contradicao": "Os preparadores do encontro podem ser excluídos da festa.",
+      "referencia_preexistente": "costa-sul:espaco:altares",
+      "pagina_contextual": 5,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    }
+  ],
+  "trabalhos": [
+    {
+      "id": "xxiv:trabalhos:reparo",
+      "nome": "Ferramentas com muitos donos",
+      "hipotese": "Empréstimos e reparos podem sustentar barcos e casas sem guilda formal.",
+      "contradicao": "Quem controla os instrumentos pode controlar a autonomia de artesãos.",
+      "referencia_preexistente": "costa-sul:espaco:cordas",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:trabalhos:lavoura",
+      "nome": "A safra ainda não colhida",
+      "hipotese": "O cultivo possível não demonstra excedentes nem volumes definidos.",
+      "contradicao": "Credores podem cobrar sobre produção futura inexistente.",
+      "referencia_preexistente": "costa-mar:oficio:contadores-da-lavoura",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:trabalhos:templo",
+      "nome": "Quem mantém o templo?",
+      "hipotese": "O rito de purificação exige atividade, mas seu regime de trabalho é desconhecido.",
+      "contradicao": "O prestígio sacerdotal pode encobrir trabalho coletivo.",
+      "referencia_preexistente": "costa-sul:espaco:altares",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:trabalhos:marinheiro",
+      "nome": "O mar e a vida em casa",
+      "hipotese": "Viagens sazonais podem afetar a distribuição de cuidados e tarefas.",
+      "contradicao": "A reputação da viagem pode ocultar custos domésticos.",
+      "referencia_preexistente": "costa-sul:rede:volta",
+      "pagina_contextual": 14,
+      "escopo": "ilhas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:trabalhos:aprendiz",
+      "nome": "Aprender a reparar",
+      "hipotese": "Ofícios podem ser transmitidos sem mestre exclusivo nem escola oficial.",
+      "contradicao": "Monopólio de conhecimento pode restringir aprendizes.",
+      "referencia_preexistente": "costa-sul:espaco:cordas",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:trabalhos:liberdade",
+      "nome": "Trabalho não é servidão",
+      "hipotese": "Assistência em emergência não estabelece obrigação vitalícia.",
+      "contradicao": "Dívidas de sobrevivência podem tornar-se coerção.",
+      "referencia_preexistente": "fronteira:acordo:primeira-tigela",
+      "pagina_contextual": 5,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    }
+  ],
+  "saberes": [
+    {
+      "id": "xxiv:saberes:escrita",
+      "nome": "Ensino sem escola documentada",
+      "hipotese": "Leitura e cálculo podem circular entre famílias e ofícios.",
+      "contradicao": "Quem controla registros pode monopolizar a interpretação de cargas.",
+      "referencia_preexistente": "costa-sul:pratica:lacre",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:saberes:memoria",
+      "nome": "Histórias tortles em disputa",
+      "hipotese": "Tradição oral pode comportar narrativas divergentes.",
+      "contradicao": "A autoridade de anciãos pode silenciar testemunhos novos.",
+      "referencia_preexistente": "costa-sul:rede:casco",
+      "pagina_contextual": 14,
+      "escopo": "ilhas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:saberes:viagem",
+      "nome": "Aprender viajando",
+      "hipotese": "A viagem formativa tabaxi pode gerar técnicas e relatos.",
+      "contradicao": "A exigência de prova pode expor caminhos de refúgio.",
+      "referencia_preexistente": "costa-sul:rede:volta",
+      "pagina_contextual": 14,
+      "escopo": "ilhas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:saberes:cultivo",
+      "nome": "Conhecimento da pedra",
+      "hipotese": "O cultivo pode envolver saber prático além do rito mágico.",
+      "contradicao": "Quem controla técnica pode reivindicar domínio sobre lavradores.",
+      "referencia_preexistente": "costa-sul:espaco:pedra-molhada",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:saberes:cantos",
+      "nome": "Informar sem revelar rotas",
+      "hipotese": "A tradição sereia de canto pode inspirar preservação de dados sensíveis.",
+      "contradicao": "Compradores de informação podem exigir detalhes que expõem refúgios.",
+      "referencia_preexistente": "fronteira:fluxo:noticias",
+      "pagina_contextual": 15,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:saberes:erro",
+      "nome": "Aprendizado e tolerância ao erro",
+      "hipotese": "O ensino pode reparar falhas sem punições perpétuas.",
+      "contradicao": "Danos materiais podem justificar exploração de aprendizes.",
+      "referencia_preexistente": "costa-sul:pratica:turno",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    }
+  ],
+  "circulacao": [
+    {
+      "id": "xxiv:circulacao:porto",
+      "nome": "Comércio sem inventar cais",
+      "hipotese": "Portomonte negocia com assentamentos costeiros ainda não individualizados.",
+      "contradicao": "Controlar acessos pode gerar monopólios oportunistas.",
+      "referencia_preexistente": "costa-sul:pratica:lacre",
+      "pagina_contextual": 5,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:circulacao:autoria",
+      "nome": "Histórias não são mercadorias automáticas",
+      "hipotese": "Viajantes podem compartilhar relatos sob consentimento.",
+      "contradicao": "Comprar objetos não significa adquirir direito de revelar origem.",
+      "referencia_preexistente": "costa-sul:rede:casco",
+      "pagina_contextual": 14,
+      "escopo": "ilhas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:circulacao:ferragens",
+      "nome": "Uma ferramenta com usos rivais",
+      "hipotese": "Reparo de moradias e barcos pode competir pelos mesmos materiais.",
+      "contradicao": "Demandas militares podem superar o sustento civil.",
+      "referencia_preexistente": "costa-sul:espaco:cordas",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:circulacao:sementes",
+      "nome": "Sementes sem excedente inventado",
+      "hipotese": "A circulação eventual de sementes não prova espécie nem safra.",
+      "contradicao": "Dívidas podem antecipar produção ainda não realizada.",
+      "referencia_preexistente": "costa-sul:pratica:turno",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:circulacao:avisos",
+      "nome": "Notícia sem mapa completo",
+      "hipotese": "A transmissão de alertas pode proteger a localização de refugiados.",
+      "contradicao": "Exigir trajetos completos pode expor comunidades.",
+      "referencia_preexistente": "fronteira:fluxo:noticias",
+      "pagina_contextual": 15,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:circulacao:partida",
+      "nome": "Sair e regressar",
+      "hipotese": "Viagens sazonais podem estimular reflexão sobre pertencimento livre.",
+      "contradicao": "Acolhimento pode transformar-se em restrição da partida.",
+      "referencia_preexistente": "costa-sul:espaco:varal",
+      "pagina_contextual": 5,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    }
+  ],
+  "tensoes_civis": [
+    {
+      "id": "xxiv:tensoes_civis:fe",
+      "nome": "O milagre não é soberania",
+      "hipotese": "A bênção agrícola não demonstra governo religioso.",
+      "contradicao": "Autoridade ritual pode tentar converter-se em mando civil.",
+      "referencia_preexistente": "costa-sul:espaco:altares",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:tensoes_civis:autonomia",
+      "nome": "Portomonte não representa todo o litoral",
+      "hipotese": "Comércio regional não implica jurisdição insular.",
+      "contradicao": "Mercadores podem se apresentar como voz de comunidades ausentes.",
+      "referencia_preexistente": "costa-sul:pratica:lacre",
+      "pagina_contextual": 12,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:tensoes_civis:pluralidade",
+      "nome": "Vizinhos de altares distintos",
+      "hipotese": "O templo de Deméter não torna a devoção obrigatória.",
+      "contradicao": "Gratidão agrícola pode ser exigida como conversão.",
+      "referencia_preexistente": "costa-sul:espaco:altares",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:tensoes_civis:rumores",
+      "nome": "O rumor como violência",
+      "hipotese": "Ataques regionais não comprovam culpa de cada indivíduo.",
+      "contradicao": "Acusações podem justificar expulsões e confisco.",
+      "referencia_preexistente": "costa-sul:espaco:sino",
+      "pagina_contextual": 5,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "xxiv:vinhetas:tigela",
+      "nome": "A refeição não assinada",
+      "hipotese": "Uma pessoa acolhida recusa dívida jamais acordada.",
+      "contradicao": "Um terceiro quer transformar a dádiva em mão de obra.",
+      "referencia_preexistente": "fronteira:acordo:primeira-tigela",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vinhetas:caderno",
+      "nome": "A colheita que só existe no caderno",
+      "hipotese": "Uma agricultora rejeita registrar produção que ainda não ocorreu.",
+      "contradicao": "Um credor precisa de números para executar cobranças.",
+      "referencia_preexistente": "costa-mar:oficio:contadores-da-lavoura",
+      "pagina_contextual": 5,
+      "escopo": "portomonte",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vinhetas:narrativa",
+      "nome": "A travessia com duas versões",
+      "hipotese": "Dois viajantes relatam o mesmo caminho com conclusões diferentes.",
+      "contradicao": "Uma prova pública pode revelar um refúgio.",
+      "referencia_preexistente": "costa-sul:rede:casco",
+      "pagina_contextual": 14,
+      "escopo": "ilhas",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    },
+    {
+      "id": "xxiv:vinhetas:festa",
+      "nome": "A festa dos que ainda trabalham",
+      "hipotese": "Uma reunião louva marinheiros enquanto reparadores permanecem em serviço.",
+      "contradicao": "Reconhecimento e esforço estão distribuídos desigualmente.",
+      "referencia_preexistente": "costa-sul:espaco:cordas",
+      "pagina_contextual": 5,
+      "escopo": "litoral_regional",
+      "estado": "proposta_cultural_nao_canonica",
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "situacao_documentada": false
+    }
+  ],
+  "perguntas_para_autor": [
+    {
+      "id": "xxiv:pergunta:1",
+      "pergunta": "De onde vem a água de consumo doméstico em Portomonte?",
+      "resposta_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "xxiv:pergunta:2",
+      "pergunta": "Quem decide a distribuição do produto agrícola?",
+      "resposta_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "xxiv:pergunta:3",
+      "pergunta": "Qual estrutura civil governa Portomonte, se alguma?",
+      "resposta_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "xxiv:pergunta:4",
+      "pergunta": "Que papéis sociais existem no templo de Deméter?",
+      "resposta_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "xxiv:pergunta:5",
+      "pergunta": "Quais relações concretas ligam a cidade às ilhas?",
+      "resposta_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "xxiv:pergunta:6",
+      "pergunta": "Como são formados trabalhadores e aprendizes?",
+      "resposta_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "xxiv:pergunta:7",
+      "pergunta": "Quais cultivos e técnicas são praticados?",
+      "resposta_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "xxiv:pergunta:8",
+      "pergunta": "Que assentamentos abrigam refugiados de Eldroth?",
+      "resposta_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "xxiv:pergunta:9",
+      "pergunta": "Que cultos convivem com Deméter?",
+      "resposta_aprovada": null,
+      "estado": "pendente"
+    },
+    {
+      "id": "xxiv:pergunta:10",
+      "pergunta": "Quais mercadorias e rotas foram documentadas?",
+      "resposta_aprovada": null,
+      "estado": "pendente"
+    }
+  ],
+  "contagens": {
+    "fatos": 10,
+    "referencias": 13,
+    "propostas": 36,
+    "perguntas": 10,
+    "vida_domestica": 10,
+    "trabalhos": 6,
+    "saberes": 6,
+    "circulacao": 6,
+    "tensoes_civis": 4,
+    "vinhetas": 4
+  }
+}
