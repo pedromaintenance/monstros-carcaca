@@ -4173,6 +4173,76 @@ def validar_templo_lua_severina_xxix():
             "Ciclo XXIX: as sete criaturas seguem intactas.")
     print("Ciclo XXIX: 12 fatos, 36 propostas, 14 referências e 12 perguntas; zero canonização.")
 
+
+def validar_kit_mestre_rio_xxx():
+    """O material da mesa não se torna evento histórico por consulta ou simulação."""
+    d=load("data/mesa/rio-ancestral-kit-mestre-ciclo30.json")
+    schema=load("schemas/rio-ancestral-kit-mestre-xxx.schema.json")
+    Draft202012Validator.check_schema(schema)
+    issues=list(Draft202012Validator(schema).iter_errors(d))
+    require(not issues,f"Ciclo XXX: erro no esquema de instrumentos: {issues[:2]}")
+    counts={"fatos":6,"referencias":16,"procedimentos":6,"evidencias":12,
+            "cenas":8,"consequencias":6,"guardas":4,"perguntas_abertas":8}
+    require(d["contagens"]==counts,"Ciclo XXX: contagens inválidas.")
+    require(d["estado"]=="ferramenta_mesa_nao_canonica"
+            and all(d[k] is False for k in (
+                "aprovacao_autoral","mutacao_canonica","modificacao_regras_dw",
+                "revolta_drakport_ocorreu","rito_lunar_definido"))
+            and d["eventos_ocorridos"]==[] and d["resultados_sessoes"]==[],
+            "Ciclo XXX: nenhum evento ou decisão deve vir pré-aplicado.")
+    pages={p["pagina"] for p in load(d["fonte_manuscrito"])["paginas"]}
+    facts=d["fatos_base"]
+    require(len(facts)==len({f["id"] for f in facts})==6
+            and all(f["pagina"] in pages and f["pagina"] in (4,7,11,22)
+                    and f["fonte"]==d["fonte_manuscrito"]
+                    and f["aplicou_novo_canon"] is False for f in facts),
+            "Ciclo XXX: fato sem página documentada.")
+    refs=d["referencias_rastreaveis"]
+    require(len(refs)==len({r["id"] for r in refs})==16,
+            "Ciclo XXX: referências repetidas ou ausentes.")
+    for r in refs:
+        require(any(x["id"]==r["id"] for x in load(r["arquivo"])[r["colecao"]]),
+                "Ciclo XXX: referência de proposta inexistente: "+r["id"])
+    ref_ids={r["id"] for r in refs}
+    collections=("procedimentos","evidencias","cenas","consequencias","guardas",
+                 "perguntas_abertas")
+    ids=[x["id"] for cat in collections for x in d[cat]]
+    require(len(ids)==len(set(ids)),"Ciclo XXX: IDs de instrumentos duplicados.")
+    for cat in ("procedimentos","evidencias","consequencias","guardas"):
+        require(all(x["referencia_id"] in ref_ids for x in d[cat]),
+                "Ciclo XXX: item sem âncora rastreável em "+cat)
+    proc_ids={x["id"] for x in d["procedimentos"]}
+    evidence_ids={x["id"] for x in d["evidencias"]}
+    impact_ids={x["id"] for x in d["consequencias"]}
+    require(all(x["procedimento_id"] in proc_ids
+                and x["consequencia_id"] in impact_ids
+                and len(x["evidencias_sugeridas"])==2
+                and all(e in evidence_ids for e in x["evidencias_sugeridas"])
+                and x["ocorreu"] is False and x["desfecho_fixo"] is False
+                for x in d["cenas"]),
+            "Ciclo XXX: cena contém vínculo quebrado ou desfecho pré-fixado.")
+    require(all(x["aconteceu_em_campanha"] is False
+                and (x["pagina"] in pages if x["tipo"]=="documentado"
+                     else x["pagina"] is None)
+                for x in d["evidencias"]),
+            "Ciclo XXX: rumor, relato ou lacuna apresentado como documento.")
+    require(all(x["gatilho_disparado"] is False and x["efeito_aplicado"] is False
+                for x in d["consequencias"]),
+            "Ciclo XXX: consequência executada automaticamente.")
+    require(all(x["sempre_ativa"] is True
+                and x["aprovacao_autoral_nao_suprida"] is True
+                for x in d["guardas"]),
+            "Ciclo XXX: proteção editorial desativada.")
+    require(all(x["resposta_autoral"] is None for x in d["perguntas_abertas"]),
+            "Ciclo XXX: pergunta autoral preenchida sem aprovação.")
+    require(load("data/worldbuilding/rio-drakport-ciclo28.json")["revolta_drakport_ocorreu"] is False,
+            "Ciclo XXX: revolta de Drakport não ocorreu.")
+    require(load("data/worldbuilding/templo-lua-severina-ciclo29.json")["divindade_titular_confirmada"] is None,
+            "Ciclo XXX: o Templo da Lua não tem divindade autoral nomeada.")
+    require(len(load("dist/carcaca/creatures.json"))==7,
+            "Ciclo XXX: preservar sete criaturas do Arquivo.")
+    print("Ciclo XXX: seis procedimentos, doze evidências e oito cenas sem efeitos automáticos.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -4314,6 +4384,7 @@ def main():
     validar_foz_shadar_memoria_xxvii()
     validar_rio_drakport_xxviii()
     validar_templo_lua_severina_xxix()
+    validar_kit_mestre_rio_xxx()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

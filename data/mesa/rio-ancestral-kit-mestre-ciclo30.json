@@ -1,0 +1,636 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XXX — Kit do Mestre: investigar sem decretar",
+  "estado": "ferramenta_mesa_nao_canonica",
+  "ambito": "eixo_do_rio_ancestral_e_interfaces",
+  "fonte_manuscrito": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "aprovacao_autoral": false,
+  "mutacao_canonica": false,
+  "modificacao_regras_dw": false,
+  "revolta_drakport_ocorreu": false,
+  "rito_lunar_definido": false,
+  "eventos_ocorridos": [],
+  "resultados_sessoes": [],
+  "fatos_base": [
+    {
+      "id": "mesa-xxx:fato:01",
+      "pagina": 4,
+      "afirmacao": "O Rio Ancestral estrutura circulação, comércio e conquista, com tributos e postos militares.",
+      "limite_de_inferencia": "Não se conhecem as taxas, horários ou postos individualizados.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "aplicou_novo_canon": false
+    },
+    {
+      "id": "mesa-xxx:fato:02",
+      "pagina": 4,
+      "afirmacao": "Drakport é centro de escravidão sob Lady Morwen Nightshade.",
+      "limite_de_inferencia": "Não inferir caso individual nem resultado de um conflito de campanha.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "aplicou_novo_canon": false
+    },
+    {
+      "id": "mesa-xxx:fato:03",
+      "pagina": 4,
+      "afirmacao": "O Templo da Lua fica numa ilha, onde Severina Shadowbloom conduz ritos associados ao controle da água.",
+      "limite_de_inferencia": "Não inferir mecanismo, divindade, magnitude ou rota de acesso.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "aplicou_novo_canon": false
+    },
+    {
+      "id": "mesa-xxx:fato:04",
+      "pagina": 7,
+      "afirmacao": "A resistência contra a Corte é descentralizada, com fugitivos de Drakport entre suas correntes.",
+      "limite_de_inferencia": "Não presumir comando único, objetivos uniformes nem revolta já realizada.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "aplicou_novo_canon": false
+    },
+    {
+      "id": "mesa-xxx:fato:05",
+      "pagina": 11,
+      "afirmacao": "A Revolta de Drakport e eventual papel de Ironwood são perguntas históricas sem resposta.",
+      "limite_de_inferencia": "Não antecipar data, vitória, fracasso ou participação obrigatória de rangers.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "aplicou_novo_canon": false
+    },
+    {
+      "id": "mesa-xxx:fato:06",
+      "pagina": 22,
+      "afirmacao": "Na Carcaça coexistem panteões e tradições, e a existência dos deuses não implica autoridade moral única.",
+      "limite_de_inferencia": "Não atribuir automaticamente uma divindade ao Templo da Lua.",
+      "fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "aplicou_novo_canon": false
+    }
+  ],
+  "referencias_rastreaveis": [
+    {
+      "arquivo": "data/worldbuilding/templo-lua-severina-ciclo29.json",
+      "colecao": "modelos_do_rito",
+      "id": "worldbuilding-xxix:modelos_do_rito:ciclico",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/templo-lua-severina-ciclo29.json",
+      "colecao": "provas_e_incerteza",
+      "id": "worldbuilding-xxix:provas_e_incerteza:observacao",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/templo-lua-severina-ciclo29.json",
+      "colecao": "provas_e_incerteza",
+      "id": "worldbuilding-xxix:provas_e_incerteza:correlacao",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/templo-lua-severina-ciclo29.json",
+      "colecao": "provas_e_incerteza",
+      "id": "worldbuilding-xxix:provas_e_incerteza:depoimento",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/templo-lua-severina-ciclo29.json",
+      "colecao": "provas_e_incerteza",
+      "id": "worldbuilding-xxix:provas_e_incerteza:coercao",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/templo-lua-severina-ciclo29.json",
+      "colecao": "provas_e_incerteza",
+      "id": "worldbuilding-xxix:provas_e_incerteza:medicao",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/templo-lua-severina-ciclo29.json",
+      "colecao": "tensoes_de_poder",
+      "id": "worldbuilding-xxix:tensoes_de_poder:severina-morwen",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/templo-lua-severina-ciclo29.json",
+      "colecao": "tensoes_de_poder",
+      "id": "worldbuilding-xxix:tensoes_de_poder:lua-divindade",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/templo-lua-severina-ciclo29.json",
+      "colecao": "interfaces_civis",
+      "id": "worldbuilding-xxix:interfaces_civis:recusa",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "tributos_e_passagens",
+      "id": "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "tributos_e_passagens",
+      "id": "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "servidao_e_agencia",
+      "id": "worldbuilding-xxviii:servidao_e_agencia:evasao",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "redes_de_resistencia",
+      "id": "worldbuilding-xxviii:redes_de_resistencia:ironwood",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/rio-drakport-ciclo28.json",
+      "colecao": "informacao_e_ritos",
+      "id": "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/foz-shadar-memoria-ciclo27.json",
+      "colecao": "pactos_de_frente",
+      "id": "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    },
+    {
+      "arquivo": "data/worldbuilding/foz-shadar-memoria-ciclo27.json",
+      "colecao": "rio_e_trabalho",
+      "id": "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "uso": "Ancora proposta anterior: direciona consulta editorial, nunca prova o novo instrumento ou evento."
+    }
+  ],
+  "procedimentos": [
+    {
+      "id": "mesa-xxx:procedimento:origem",
+      "nome": "Separar fonte de conjectura",
+      "quando_usar": "Na primeira alegação extraordinária",
+      "passos_de_mesa": "Escreva o que o manuscrito confirma, o que o personagem diz ter visto e o que a mesa ainda desconhece.",
+      "evitar": "Não converter a conclusão do narrador em verdade física.",
+      "referencia_id": "worldbuilding-xxix:provas_e_incerteza:observacao",
+      "estado": "procedimento_editorial_nao_canonico",
+      "executou": false
+    },
+    {
+      "id": "mesa-xxx:procedimento:testemunhos",
+      "nome": "Ouvir sem impor consenso",
+      "quando_usar": "Quando relatos discordarem",
+      "passos_de_mesa": "Peça circunstância, interesse, posição de observação e segunda fonte possível; mantenha versões separadas.",
+      "evitar": "Não tratar testemunha oprimida como necessariamente menos confiável.",
+      "referencia_id": "worldbuilding-xxix:provas_e_incerteza:depoimento",
+      "estado": "procedimento_editorial_nao_canonico",
+      "executou": false
+    },
+    {
+      "id": "mesa-xxx:procedimento:causalidade",
+      "nome": "Depois não é por causa",
+      "quando_usar": "Quando ligarem um fenômeno ao rito",
+      "passos_de_mesa": "Liste pelo menos duas causas concorrentes; peça ação observável que possa distingui-las.",
+      "evitar": "Não concluir calendário, alcance ou vazão a partir de uma cena.",
+      "referencia_id": "worldbuilding-xxix:provas_e_incerteza:correlacao",
+      "estado": "procedimento_editorial_nao_canonico",
+      "executou": false
+    },
+    {
+      "id": "mesa-xxx:procedimento:consentimento",
+      "nome": "Distinguir escolha e coerção",
+      "quando_usar": "Quando um juramento, cobrança ou contrato surgir",
+      "passos_de_mesa": "Identifique ameaça, possibilidade de recusa, testemunha e pessoa afetada; nunca assuma consentimento por obediência.",
+      "evitar": "Não tornar violência colonial em simples transação econômica.",
+      "referencia_id": "worldbuilding-xxix:provas_e_incerteza:coercao",
+      "estado": "procedimento_editorial_nao_canonico",
+      "executou": false
+    },
+    {
+      "id": "mesa-xxx:procedimento:consequencias",
+      "nome": "Consequências pertencem à mesa",
+      "quando_usar": "Depois de uma escolha efetiva dos personagens",
+      "passos_de_mesa": "Registre decisão e mudança concreta apenas no diário local daquela sessão, após mediação do mestre.",
+      "evitar": "Não editar atlas, cânone ou frente do Arquivo automaticamente.",
+      "referencia_id": "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "estado": "procedimento_editorial_nao_canonico",
+      "executou": false
+    },
+    {
+      "id": "mesa-xxx:procedimento:lacuna",
+      "nome": "Lacuna é ferramenta de suspense",
+      "quando_usar": "Quando o manuscrito não informar algo essencial",
+      "passos_de_mesa": "Formule uma pergunta em vez de completar um mapa, lei, rito ou cronologia; exponha escolhas verificáveis.",
+      "evitar": "Não resolver a Revolta de Drakport nem definir papel de Ironwood como condição prévia.",
+      "referencia_id": "worldbuilding-xxviii:redes_de_resistencia:ironwood",
+      "estado": "procedimento_editorial_nao_canonico",
+      "executou": false
+    }
+  ],
+  "evidencias": [
+    {
+      "id": "mesa-xxx:evidencia:mapa-tributos",
+      "nome": "mapa tributos",
+      "tipo": "documentado",
+      "pagina": 4,
+      "conteudo": "O manuscrito relaciona Rio Ancestral, postos militares, tributos e extração.",
+      "limite_de_inferencia": "Taxas e postos individuais não são especificados.",
+      "referencia_id": "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    },
+    {
+      "id": "mesa-xxx:evidencia:drakport-morwen",
+      "nome": "drakport morwen",
+      "tipo": "documentado",
+      "pagina": 4,
+      "conteudo": "Drakport é submetida a escravidão sob Lady Morwen Nightshade.",
+      "limite_de_inferencia": "O documento não descreve contrato, cadastro ou vítima específica.",
+      "referencia_id": "worldbuilding-xxviii:servidao_e_agencia:evasao",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    },
+    {
+      "id": "mesa-xxx:evidencia:templo-ilha",
+      "nome": "templo ilha",
+      "tipo": "documentado",
+      "pagina": 4,
+      "conteudo": "Templo da Lua insular e rito de Severina associados à água do rio.",
+      "limite_de_inferencia": "O manuscrito não demonstra efeito pontual sobre nenhuma embarcação.",
+      "referencia_id": "worldbuilding-xxix:provas_e_incerteza:observacao",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    },
+    {
+      "id": "mesa-xxx:evidencia:revolta-aberta",
+      "nome": "revolta aberta",
+      "tipo": "documentado",
+      "pagina": 11,
+      "conteudo": "A Revolta de Drakport e a eventual atuação de Ironwood não têm desfecho autoral.",
+      "limite_de_inferencia": "A resistência já existente não confirma que o levante começou.",
+      "referencia_id": "worldbuilding-xxviii:redes_de_resistencia:ironwood",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    },
+    {
+      "id": "mesa-xxx:evidencia:navegante",
+      "nome": "navegante",
+      "tipo": "relato_hipotetico",
+      "pagina": null,
+      "conteudo": "Um condutor imaginado afirma que a corrente mudou logo após um sino.",
+      "limite_de_inferencia": "Memória parcial não é medição, e o sino não está documentado como instrumento ritual.",
+      "referencia_id": "worldbuilding-xxix:provas_e_incerteza:depoimento",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    },
+    {
+      "id": "mesa-xxx:evidencia:cobrador",
+      "nome": "cobrador",
+      "tipo": "relato_hipotetico",
+      "pagina": null,
+      "conteudo": "Um cobrador fictício diz ter autorização do templo para exigir passagem.",
+      "limite_de_inferencia": "Não existe autorização fiscal desse tipo confirmada pelo manuscrito.",
+      "referencia_id": "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    },
+    {
+      "id": "mesa-xxx:evidencia:fugitiva",
+      "nome": "fugitiva",
+      "tipo": "relato_hipotetico",
+      "pagina": null,
+      "conteudo": "Uma fugitiva fictícia teme que um nome em um registro permita sua captura.",
+      "limite_de_inferencia": "Não inventar uma pessoa canônica nem forçar a revelação de sua identidade.",
+      "referencia_id": "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    },
+    {
+      "id": "mesa-xxx:evidencia:duas-margens",
+      "nome": "duas margens",
+      "tipo": "relato_hipotetico",
+      "pagina": null,
+      "conteudo": "Duas testemunhas imaginadas descrevem cores diferentes nas águas.",
+      "limite_de_inferencia": "Não assumir que qualquer das versões comprova magia ou mentira.",
+      "referencia_id": "worldbuilding-xxix:provas_e_incerteza:depoimento",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    },
+    {
+      "id": "mesa-xxx:evidencia:lua-cheia",
+      "nome": "lua cheia",
+      "tipo": "rumor_hipotetico",
+      "pagina": null,
+      "conteudo": "O boato diz que os ritos só funcionam em lua cheia.",
+      "limite_de_inferencia": "A fonte não vincula o rito a calendário lunar.",
+      "referencia_id": "worldbuilding-xxix:modelos_do_rito:ciclico",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    },
+    {
+      "id": "mesa-xxx:evidencia:revolta-hoje",
+      "nome": "revolta hoje",
+      "tipo": "rumor_hipotetico",
+      "pagina": null,
+      "conteudo": "Circula a notícia de que Drakport se libertou durante a noite.",
+      "limite_de_inferencia": "A Revolta continua em aberto; boato não altera cronologia.",
+      "referencia_id": "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    },
+    {
+      "id": "mesa-xxx:evidencia:taxa-dupla",
+      "nome": "taxa dupla",
+      "tipo": "rumor_hipotetico",
+      "pagina": null,
+      "conteudo": "Um anúncio não verificado ameaça cobrar tributo em duas margens.",
+      "limite_de_inferencia": "A fonte só confirma o sistema de tributos em geral.",
+      "referencia_id": "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    },
+    {
+      "id": "mesa-xxx:evidencia:deusa-nomeada",
+      "nome": "deusa nomeada",
+      "tipo": "lacuna",
+      "pagina": null,
+      "conteudo": "Ninguém consegue demonstrar qual divindade era originalmente cultuada no Templo da Lua.",
+      "limite_de_inferencia": "Não selecionar Selûne, Sehanine ou outra divindade por associação lexical.",
+      "referencia_id": "worldbuilding-xxix:tensoes_de_poder:lua-divindade",
+      "estado": "cartao_para_investigacao",
+      "aconteceu_em_campanha": false
+    }
+  ],
+  "cenas": [
+    {
+      "id": "mesa-xxx:cena:passagem-cobrada",
+      "nome": "O documento da travessia",
+      "abertura": "Uma pessoa oferece uma passagem supostamente segura mediante a apresentação de documento e pagamento.",
+      "pergunta_de_investigacao": "Qual obrigação é verificável?",
+      "decisao_aberta": "Quem decide mostrar a própria identidade?",
+      "evidencias_sugeridas": [
+        "mesa-xxx:evidencia:cobrador",
+        "mesa-xxx:evidencia:mapa-tributos"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:consentimento",
+      "consequencia_id": "mesa-xxx:consequencia:cobranca",
+      "estado": "cena_possivel_nao_ocorrida",
+      "ocorreu": false,
+      "desfecho_fixo": false
+    },
+    {
+      "id": "mesa-xxx:cena:aguas-contraditorias",
+      "nome": "O rio mudou ou disseram que mudou?",
+      "abertura": "Uma tripulação imaginada traz versões contraditórias sobre uma correnteza e um possível sino.",
+      "pergunta_de_investigacao": "O que cada testemunha observou efetivamente?",
+      "decisao_aberta": "Investigar, viajar ou registrar apenas a dúvida?",
+      "evidencias_sugeridas": [
+        "mesa-xxx:evidencia:navegante",
+        "mesa-xxx:evidencia:duas-margens"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:testemunhos",
+      "consequencia_id": "mesa-xxx:consequencia:efeito",
+      "estado": "cena_possivel_nao_ocorrida",
+      "ocorreu": false,
+      "desfecho_fixo": false
+    },
+    {
+      "id": "mesa-xxx:cena:lua-anonima",
+      "nome": "A deusa que ninguém nomeou",
+      "abertura": "Um visitante atribui solenemente o Templo da Lua a uma divindade não citada nas fontes.",
+      "pergunta_de_investigacao": "Quem se beneficia do nome proposto?",
+      "decisao_aberta": "Contestar, ouvir outras tradições ou suspender juízo?",
+      "evidencias_sugeridas": [
+        "mesa-xxx:evidencia:deusa-nomeada",
+        "mesa-xxx:evidencia:templo-ilha"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:lacuna",
+      "consequencia_id": "mesa-xxx:consequencia:rumor",
+      "estado": "cena_possivel_nao_ocorrida",
+      "ocorreu": false,
+      "desfecho_fixo": false
+    },
+    {
+      "id": "mesa-xxx:cena:nome-no-cadastro",
+      "nome": "O registro que pode matar",
+      "abertura": "Uma pessoa imaginada solicita a retirada do próprio nome de uma lista de viagem.",
+      "pergunta_de_investigacao": "Que riscos reais a divulgação traz?",
+      "decisao_aberta": "Guardar, corrigir, ocultar ou destruir a cópia?",
+      "evidencias_sugeridas": [
+        "mesa-xxx:evidencia:fugitiva",
+        "mesa-xxx:evidencia:drakport-morwen"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:consentimento",
+      "consequencia_id": "mesa-xxx:consequencia:exposicao",
+      "estado": "cena_possivel_nao_ocorrida",
+      "ocorreu": false,
+      "desfecho_fixo": false
+    },
+    {
+      "id": "mesa-xxx:cena:selo-duplo",
+      "nome": "Dois tributos, uma passagem",
+      "abertura": "Dois agentes fictícios apresentam selos rivais em uma cobrança de margem.",
+      "pergunta_de_investigacao": "Quem possui autoridade documentada?",
+      "decisao_aberta": "Pedir comprovação, negociar ou recusar a travessia?",
+      "evidencias_sugeridas": [
+        "mesa-xxx:evidencia:taxa-dupla",
+        "mesa-xxx:evidencia:mapa-tributos"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:origem",
+      "consequencia_id": "mesa-xxx:consequencia:cobranca",
+      "estado": "cena_possivel_nao_ocorrida",
+      "ocorreu": false,
+      "desfecho_fixo": false
+    },
+    {
+      "id": "mesa-xxx:cena:mare-falsa",
+      "nome": "O presságio sem evidência",
+      "abertura": "Uma notícia alarmante afirma que Severina lançará cheia no dia seguinte.",
+      "pergunta_de_investigacao": "O que separa previsão e intimidação?",
+      "decisao_aberta": "Avisar cautelosamente ou evitar pânico injustificado?",
+      "evidencias_sugeridas": [
+        "mesa-xxx:evidencia:lua-cheia",
+        "mesa-xxx:evidencia:templo-ilha"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:causalidade",
+      "consequencia_id": "mesa-xxx:consequencia:rumor",
+      "estado": "cena_possivel_nao_ocorrida",
+      "ocorreu": false,
+      "desfecho_fixo": false
+    },
+    {
+      "id": "mesa-xxx:cena:levante-rumor",
+      "nome": "Drakport foi libertada?",
+      "abertura": "Uma mensagem, ainda sem confirmação, afirma que houve revolta e vitória.",
+      "pergunta_de_investigacao": "Quais fontes independentes são acessíveis?",
+      "decisao_aberta": "Compartilhar como rumor, investigar ou não divulgar?",
+      "evidencias_sugeridas": [
+        "mesa-xxx:evidencia:revolta-hoje",
+        "mesa-xxx:evidencia:revolta-aberta"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:origem",
+      "consequencia_id": "mesa-xxx:consequencia:cronologia",
+      "estado": "cena_possivel_nao_ocorrida",
+      "ocorreu": false,
+      "desfecho_fixo": false
+    },
+    {
+      "id": "mesa-xxx:cena:refugio-sem-chefe",
+      "nome": "A ajuda que não exige juramento",
+      "abertura": "Uma comunidade hipotética oferece acolhimento, mas dois intermediários querem falar por todos.",
+      "pergunta_de_investigacao": "Quem pode oferecer consentimento pelo grupo?",
+      "decisao_aberta": "Preservar a autonomia das pessoas ou formalizar compromisso?",
+      "evidencias_sugeridas": [
+        "mesa-xxx:evidencia:fugitiva",
+        "mesa-xxx:evidencia:revolta-aberta"
+      ],
+      "procedimento_id": "mesa-xxx:procedimento:consequencias",
+      "consequencia_id": "mesa-xxx:consequencia:autonomia",
+      "estado": "cena_possivel_nao_ocorrida",
+      "ocorreu": false,
+      "desfecho_fixo": false
+    }
+  ],
+  "consequencias": [
+    {
+      "id": "mesa-xxx:consequencia:cobranca",
+      "condicao_de_mesa": "Caso o grupo realmente questione uma exigência de pagamento",
+      "possibilidade_condicional": "Uma autoridade fictícia poderia reagir, recuar ou pedir prova; o mestre decide conforme a ficção.",
+      "proibicao": "Não estabelecer nova tarifa oficial nem evento obrigatório.",
+      "referencia_id": "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "estado": "ramo_condicional_nao_executado",
+      "gatilho_disparado": false,
+      "efeito_aplicado": false
+    },
+    {
+      "id": "mesa-xxx:consequencia:efeito",
+      "condicao_de_mesa": "Caso personagens obtenham observação independente sobre a corrente",
+      "possibilidade_condicional": "Pode-se registrar o que foi visto, sem decidir o mecanismo do templo.",
+      "proibicao": "Não inferir alcance universal da magia.",
+      "referencia_id": "worldbuilding-xxix:provas_e_incerteza:medicao",
+      "estado": "ramo_condicional_nao_executado",
+      "gatilho_disparado": false,
+      "efeito_aplicado": false
+    },
+    {
+      "id": "mesa-xxx:consequencia:rumor",
+      "condicao_de_mesa": "Caso o grupo divulgue informação sem confirmação",
+      "possibilidade_condicional": "Pessoas da cena podem agir diante de incerteza, a critério do mestre.",
+      "proibicao": "Não declarar desastre, enchente ou rito ocorrido.",
+      "referencia_id": "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "estado": "ramo_condicional_nao_executado",
+      "gatilho_disparado": false,
+      "efeito_aplicado": false
+    },
+    {
+      "id": "mesa-xxx:consequencia:exposicao",
+      "condicao_de_mesa": "Caso um nome seja revelado em uma cena efetivamente jogada",
+      "possibilidade_condicional": "O mestre pode apresentar risco individual situado, assegurando agência do personagem.",
+      "proibicao": "Não transformar a existência de uma lista em sistema canônico de cadastro.",
+      "referencia_id": "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "estado": "ramo_condicional_nao_executado",
+      "gatilho_disparado": false,
+      "efeito_aplicado": false
+    },
+    {
+      "id": "mesa-xxx:consequencia:cronologia",
+      "condicao_de_mesa": "Caso a notícia da revolta chegue aos personagens",
+      "possibilidade_condicional": "A mesa pode investigar sua veracidade sem fechar a cronologia global.",
+      "proibicao": "Não registrar Revolta de Drakport como concluída.",
+      "referencia_id": "worldbuilding-xxviii:redes_de_resistencia:ironwood",
+      "estado": "ramo_condicional_nao_executado",
+      "gatilho_disparado": false,
+      "efeito_aplicado": false
+    },
+    {
+      "id": "mesa-xxx:consequencia:autonomia",
+      "condicao_de_mesa": "Caso um grupo peça abrigo recusando juramento",
+      "possibilidade_condicional": "Um interlocutor da cena pode oferecer ajuda sem impor fidelidade.",
+      "proibicao": "Não criar comando único da resistência.",
+      "referencia_id": "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "estado": "ramo_condicional_nao_executado",
+      "gatilho_disparado": false,
+      "efeito_aplicado": false
+    }
+  ],
+  "guardas": [
+    {
+      "id": "mesa-xxx:guarda:canon",
+      "nome": "Não substituir o manuscrito por escolhas hipotéticas",
+      "verificacao": "Confirme se a conclusão veio de página do Hack ou de opção de mesa.",
+      "referencia_id": "worldbuilding-xxix:provas_e_incerteza:observacao",
+      "sempre_ativa": true,
+      "aprovacao_autoral_nao_suprida": true
+    },
+    {
+      "id": "mesa-xxx:guarda:revolta",
+      "nome": "Não antecipar a Revolta de Drakport",
+      "verificacao": "Verifique que nenhuma cena, rumor ou nota declarou a revolta ocorrida.",
+      "referencia_id": "worldbuilding-xxviii:redes_de_resistencia:ironwood",
+      "sempre_ativa": true,
+      "aprovacao_autoral_nao_suprida": true
+    },
+    {
+      "id": "mesa-xxx:guarda:pessoas",
+      "nome": "Não transformar pessoas em recursos, provas forçadas ou mercadoria neutra",
+      "verificacao": "Descreva relações de coerção sem retirar agência nem quantificar pessoas como estoque.",
+      "referencia_id": "worldbuilding-xxviii:servidao_e_agencia:evasao",
+      "sempre_ativa": true,
+      "aprovacao_autoral_nao_suprida": true
+    },
+    {
+      "id": "mesa-xxx:guarda:magia",
+      "nome": "Não inferir rito, deusa, fase lunar, tempo ou vazão do templo",
+      "verificacao": "Diferencie efeito geral do manuscrito de causalidade e medição da sessão.",
+      "referencia_id": "worldbuilding-xxix:provas_e_incerteza:correlacao",
+      "sempre_ativa": true,
+      "aprovacao_autoral_nao_suprida": true
+    }
+  ],
+  "perguntas_abertas": [
+    {
+      "id": "mesa-xxx:pergunta:rio",
+      "pergunta": "Que parte do rio será objeto de investigação nesta sessão, sem fixar mapa de todo o continente?",
+      "resposta_autoral": null
+    },
+    {
+      "id": "mesa-xxx:pergunta:ritual",
+      "pergunta": "Que fenômeno foi efetivamente observado e que explicação continua incerta?",
+      "resposta_autoral": null
+    },
+    {
+      "id": "mesa-xxx:pergunta:autoridade",
+      "pergunta": "Quem afirma exercer autoridade e qual evidência sustenta sua alegação?",
+      "resposta_autoral": null
+    },
+    {
+      "id": "mesa-xxx:pergunta:pagamento",
+      "pergunta": "Foi demonstrado algum serviço correspondente a uma cobrança?",
+      "resposta_autoral": null
+    },
+    {
+      "id": "mesa-xxx:pergunta:pessoas",
+      "pergunta": "Quais pessoas podem consentir, negar ou preservar o anonimato?",
+      "resposta_autoral": null
+    },
+    {
+      "id": "mesa-xxx:pergunta:noticia",
+      "pergunta": "Qual a origem de uma informação sobre levante, água ou rota?",
+      "resposta_autoral": null
+    },
+    {
+      "id": "mesa-xxx:pergunta:consequencia",
+      "pergunta": "O que os personagens escolheram e o que mudou somente nesta sessão?",
+      "resposta_autoral": null
+    },
+    {
+      "id": "mesa-xxx:pergunta:limite",
+      "pergunta": "Que lacuna permanece para decisão futura do autor, não para improvisação canônica?",
+      "resposta_autoral": null
+    }
+  ],
+  "contagens": {
+    "fatos": 6,
+    "referencias": 16,
+    "procedimentos": 6,
+    "evidencias": 12,
+    "cenas": 8,
+    "consequencias": 6,
+    "guardas": 4,
+    "perguntas_abertas": 8
+  }
+}

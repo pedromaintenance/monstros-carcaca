@@ -634,4 +634,18 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Preservar Revolta de Drakport em aberto, evitar criação de rotas, tributos ou população e não tratar pessoas como carga.
 - [x] Integrar dados, dossiê, schema, validação de fontes e referências, seis índices determinísticos, ESM, testes Python/Node e documentação.
 - [x] Proteger sete criaturas do Arquivo, atlas factual, regras DW e decisões ainda não homologadas de Portomonte.
-- [ ] **XXX — próximo horizonte:** método de investigação de campo para o Rio Ancestral ou expansão cultural de outra comunidade ainda pouco estudada; somente registrar novos fatos mediante fonte e decisão autoral.
+- [x] **XXX — realizado:** kit do mestre e instrumentos de investigação do Rio Ancestral, sem eventos automáticos.
+
+
+## Ciclo XXX — Concluído: Kit do Mestre do Rio Ancestral
+
+- [x] Reunir as fontes verificadas dos Ciclos XXVII, XXVIII e XXIX e revisar Hack pp. 4, 7, 11 e 22.
+- [x] Selecionar **6 fatos documentados** com limites, **16 referências por ID** e **8 perguntas de investigação** sem resposta autoral.
+- [x] Produzir **6 procedimentos** para diferenciar observação, relato, causalidade, coerção, consequência de mesa e lacuna de autoria.
+- [x] Desenvolver **12 cartões de evidência**: 4 documentados, 4 relatos hipotéticos, 3 rumores hipotéticos e 1 lacuna; nenhum deles registra evento ocorrido.
+- [x] Preparar **8 cenas possíveis** com duas evidências vinculadas, um procedimento e uma consequência aberta; sem desfecho fixo.
+- [x] Construir **6 consequências condicionais** e **4 guardas** contra alteração automática do cânone, da Revolta, de pessoas e da magia do Templo.
+- [x] Publicar JSON, schema estrito, índices determinísticos de tipo/referência/página/cena, validador, testes Python/Node, manual de uso e API ESM.
+- [x] Expor `buildRiverGMSessionPacket` com cenário e evidências ligados por IDs, sem mutação do catálogo, sem log de campanha persistido e sem execução automática de consequência.
+- [x] Preservar sete criaturas, regras Dungeon World, Portomonte, o rito lunar desconhecido e a Revolta de Drakport ainda em aberto.
+- [ ] **XXXI — próximo horizonte:** construir interface interativa de mestre para usar o kit com filtros e registro de sessão **isolado do cânone**, ou expandir um território ainda pouco desenvolvido quando o kit estiver funcionalmente suficiente.

@@ -60,6 +60,56 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getRiverGMToolkit(){return byKey("river_gm_toolkit");}
+  async function getRiverGMToolkitIndexes(){return byKey("river_gm_toolkit_indexes");}
+  async function getRiverGMToolkitEntry(id){
+    if(typeof id!=="string"||!id.startsWith("mesa-xxx:"))return null;
+    const d=await getRiverGMToolkit();
+    for(const categoria of ["fatos_base","procedimentos","evidencias","cenas",
+       "consequencias","guardas","perguntas_abertas"]){
+      const x=d[categoria].find(a=>a.id===id);
+      if(x)return {...x,categoria};
+    }
+    return null;
+  }
+  async function searchRiverGMToolkit({categoria,tipo,query}={}){
+    const d=await getRiverGMToolkit();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return ["fatos_base","procedimentos","evidencias","cenas",
+      "consequencias","guardas","perguntas_abertas"]
+      .flatMap(cat=>d[cat].map(x=>({...x,categoria:cat})))
+      .filter(x=>(!categoria||x.categoria===categoria)&&
+          (!tipo||x.tipo===tipo)&&
+          (!query||norm(Object.values(x).filter(v=>typeof v==="string").join(" ")).includes(norm(query))));
+  }
+  async function buildRiverGMSessionPacket({sceneId,extraEvidenceIds=[]}={}){
+    if(typeof sceneId!=="string"||!sceneId.startsWith("mesa-xxx:cena:"))return null;
+    if(!Array.isArray(extraEvidenceIds)||extraEvidenceIds.some(x=>typeof x!=="string"))
+      throw new TypeError("extraEvidenceIds deve ser uma lista de IDs de cartões.");
+    const d=await getRiverGMToolkit();
+    const scene=d.cenas.find(s=>s.id===sceneId);
+    if(!scene)return null;
+    const requested=[...new Set([...scene.evidencias_sugeridas,...extraEvidenceIds])];
+    const evidence=requested.map(id=>d.evidencias.find(e=>e.id===id));
+    if(evidence.some(e=>!e))return null;
+    const procedure=d.procedimentos.find(p=>p.id===scene.procedimento_id);
+    const consequence=d.consequencias.find(x=>x.id===scene.consequencia_id);
+    if(!procedure||!consequence)return null;
+    return {
+      estado:"pacote_de_mesa_sem_execucao",
+      cena:{...scene,evidencias_sugeridas:[...scene.evidencias_sugeridas]},
+      procedimento:{...procedure},
+      evidencias:evidence.map(x=>({...x})),
+      consequencia_condicional:{...consequence},
+      guardas:d.guardas.map(x=>({...x})),
+      perguntas:d.perguntas_abertas.map(x=>({...x})),
+      ocorreu:false,desfecho_decidido:false,consequencia_aplicada:false,
+      revolta_drakport_ocorreu:false,
+      canon_alterado:false,regras_dw_alteradas:false,
+      registro_de_sessao:[],
+      nota:"O mestre decide e registra resultados no diário de sua campanha; este pacote não altera o atlas."
+    };
+  }
   async function getMoonTempleSeverina(){return byKey("moon_temple_severina");}
   async function getMoonTempleSeverinaIndexes(){return byKey("moon_temple_severina_indexes");}
   async function getMoonTempleSeverinaEntry(id){
@@ -1808,6 +1858,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getRiverGMToolkit,getRiverGMToolkitIndexes,
+          getRiverGMToolkitEntry,searchRiverGMToolkit,buildRiverGMSessionPacket,
           getMoonTempleSeverina,getMoonTempleSeverinaIndexes,
           getMoonTempleSeverinaEntry,searchMoonTempleSeverina,
           previewMoonTempleRitualModel,
