@@ -14,6 +14,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - **XIX — concluído como preparação editorial:** [Mesa de revisão autoral](docs/MESA_REVISAO_AUTORAL_CICLO19.md), com 103 candidatos, 20 decisões pendentes e zero canonizações. Nenhuma escolha tomada em nome do autor.
 - **XX — concluído como expansão cultural:** [Grama-Cortada e a vida cotidiana](docs/GRAMA_CORTADA_COTIDIANO_CICLO20.md): 35 propostas culturais, 12 fatos de fonte e 8 perguntas, sem cronologia ou instituições inventadas.
 - **XXI — concluído como expansão cultural:** [Culturas gnômicas](docs/CULTURAS_GNOMICAS_CICLO21.md): ética do conhecimento, nomes, cartografia, oficinas e vida subterrânea, sem uniformização política ou nova canonização.
+- **XXII — concluído como expansão cultural:** [Meio-Demônios e sociedades](docs/MEIO_DEMONIOS_SOCIEDADES_CICLO22.md): genealogia, corpo, memória, trabalho, religião e autonomia, sem universalização de identidade nem novos fatos canônicos.
 
 **Método dos próximos ciclos:** (1) localizar afirmações da ambientação; (2) apontar o que o manuscrito do Hack efetivamente acrescenta; (3) distinguir interpretações e lacunas; (4) produzir alternativas de worldbuilding materialmente diferentes; (5) pedir revisão autoral para qualquer promoção canônica. Evitar novas rodadas de dezenas de NPCs sem uma necessidade histórica ou social identificável.
 
@@ -532,4 +533,15 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Preservar a autonomia de comunidades florestais e dos Svirfneblin; não converter pactos locais com anões em vassalagem universal.
 - [x] Evitar estabelecer mapas de aldeias ocultas, calendário religioso ou efeito mágico uniforme dos nomes.
 - [x] Integrar dados, JSON Schema, índices determinísticos, API ESM, testes, README e diário.
-- [ ] **XXII — próximo horizonte proposto:** expandir culturas e vida civil de meio-demônios, considerando linhagem, família, escolha, estigma e pluralidade sem reduzi-los a categoria moral única. Grandes revisões canônicas ficam para depois.
+- [x] **XXII — concluído:** Meio-Demônios, sua vida civil, descendência plural, cosmologia compartilhada e direito à escolha; 14 fontes, 37 propostas e 9 perguntas, sem canonização.
+
+## Ciclo XXII — Concluído: a sociedade não nasce de uma linhagem
+
+- [x] Conferir manuscrito p. 21 e cronologia p. 9; preservar a natureza demoníaca comum de demônios, diabos, cambions e tieflings.
+- [x] Separar origens violentas, pactos, relações voluntárias e convivência histórica sem atribuir história universal a todos os descendentes.
+- [x] Aprofundar 11 eixos sociais, 6 contextos de convivência, 6 circuitos civis, 6 conflitos sociais, 4 costumes candidatos e 4 vinhetas não ocorridas.
+- [x] Registrar 14 fatos de fonte em revisão e 9 questões autorais com resposta nula.
+- [x] Não criar um reino, governo, localidade, rito, lei nem profissão de Meio-Demônios universal.
+- [x] Manter 983 EC como data da invasão documentada, sem declarar origem de todas as linhagens.
+- [x] Integrar dossiê, JSON, schema, export e índices, API ESM, testes e diário; preservar sete criaturas canônicas.
+- [ ] **XXIII — próximo horizonte:** investigar Caatinga do Além Sul e cotidianos de seus povos, geografia, água, trabalho, migrações e vida política própria, sem reduzir a região a pilhagem ou guerra.
