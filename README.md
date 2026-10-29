@@ -606,3 +606,8 @@ Navegação visual de **Carcaça → setor → classe de lugar → território �
 ### Atlas macrorregional — explorar o continente antes dos detalhes (Ciclo XXXII)
 
 O [Atlas Hierárquico no GitHub Pages](https://pedromaintenance.github.io/monstros-carcaca/atlas/) abre agora em **Visão geral do continente**: 11 setores, 26 âncoras documentais, 7 relações entre regiões e 33 lacunas/questões macro para decisão autoral. A árvore recursiva permanece acessível na segunda aba, sem alterações do cânone. Veja a [metodologia de expansão macro → meso → micro](docs/ATLAS_MACROREGIONAL_CICLO32.md) e as [fontes estruturadas](data/atlas/macrorregioes-carcaca.json).
+
+
+### Atlas Macro — Redes de poder e cronologia (Ciclo XXXIII)
+
+Na [visão macrorregional do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/), sete redes documentais reúnem 14 esferas de influência, 17 marcos históricos entre 0–999 EC e oito dúvidas autorais. As redes não são mapas de estradas ou fronteiras. Consulte a [documentação do Ciclo XXXIII](docs/ATLAS_REDES_HISTORICAS_CICLO33.md) e o [JSON de fontes](data/atlas/redes-historicas-ciclo33.json). A expansão permanece macro e não altera regras DW ou fatos canônicos.
