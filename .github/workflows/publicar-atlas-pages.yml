@@ -77,7 +77,8 @@ jobs:
             data/atlas/carta-cartografica-ciclo38.json \
             data/atlas/hidrografia-continental-ciclo39.json \
             data/atlas/cronocartografia-ciclo40.json \
-            data/atlas/circulacao-material-ciclo41.json
+            data/atlas/circulacao-material-ciclo41.json \
+            data/atlas/dependencias-vulnerabilidades-ciclo42.json
           do
             mkdir -p ".public-pages/atlas/dados/$(dirname "$file")"
             cp "$file" ".public-pages/atlas/dados/$file"
