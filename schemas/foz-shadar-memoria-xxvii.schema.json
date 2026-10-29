@@ -1,0 +1,687 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XXVII — Foz e Shadar, expansão sem canonização",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "escopos",
+    "regiao_normalizada_foz",
+    "regiao_normalizada_shadar",
+    "geometria_exata_gualapolis_boca_shadar",
+    "populacao_sobrevivente_gualapolis_confirmada",
+    "tratados_especificos_confirmados",
+    "acesso_publico_arquivo_confirmado",
+    "cronologia_individual_afogamento_confirmada",
+    "aprovacao_autoral",
+    "efeito_canonico_automatico",
+    "alteracao_atlas_factual",
+    "alteracao_criaturas",
+    "alteracao_regras_dw",
+    "fonte_manuscrito",
+    "limites_editoriais",
+    "fatos_documentados",
+    "referencias_rastreaveis",
+    "vida_sob_a_corte",
+    "memoria_submersa",
+    "rio_e_trabalho",
+    "pactos_de_frente",
+    "dilemas_civis",
+    "vinhetas",
+    "perguntas_para_autor",
+    "contagens"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 12
+    },
+    "estado": {
+      "const": "expansao_sociocultural_nao_canonica"
+    },
+    "escopos": {
+      "type": "array",
+      "minItems": 3,
+      "maxItems": 3,
+      "items": {
+        "enum": [
+          "foz",
+          "shadar-riverie",
+          "interfaces-nao-localizadas"
+        ]
+      }
+    },
+    "regiao_normalizada_foz": {
+      "const": "regiao:foz-rio-ancestral"
+    },
+    "regiao_normalizada_shadar": {
+      "type": "null"
+    },
+    "geometria_exata_gualapolis_boca_shadar": {
+      "type": "null"
+    },
+    "populacao_sobrevivente_gualapolis_confirmada": {
+      "type": "null"
+    },
+    "tratados_especificos_confirmados": {
+      "type": "null"
+    },
+    "acesso_publico_arquivo_confirmado": {
+      "type": "null"
+    },
+    "cronologia_individual_afogamento_confirmada": {
+      "type": "null"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "efeito_canonico_automatico": {
+      "const": false
+    },
+    "alteracao_atlas_factual": {
+      "const": false
+    },
+    "alteracao_criaturas": {
+      "const": false
+    },
+    "alteracao_regras_dw": {
+      "const": false
+    },
+    "fonte_manuscrito": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "limites_editoriais": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "string",
+        "minLength": 35
+      }
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "arquivo_fonte",
+          "pagina",
+          "afirmacao_documentada",
+          "limite_de_inferencia",
+          "canon_adicionado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvii:fato:"
+          },
+          "arquivo_fonte": {
+            "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+          },
+          "pagina": {
+            "enum": [
+              4,
+              5,
+              6,
+              9,
+              10
+            ]
+          },
+          "afirmacao_documentada": {
+            "type": "string",
+            "minLength": 25
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 25
+          },
+          "canon_adicionado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "referencias_rastreaveis": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "arquivo",
+          "colecao",
+          "id",
+          "tipo",
+          "limite_de_inferencia"
+        ],
+        "properties": {
+          "arquivo": {
+            "type": "string"
+          },
+          "colecao": {
+            "type": "string"
+          },
+          "id": {
+            "type": "string"
+          },
+          "tipo": {
+            "type": "string"
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 18
+          }
+        }
+      }
+    },
+    "perguntas_para_autor": {
+      "type": "array",
+      "minItems": 10,
+      "maxItems": 10,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "pergunta_autoral",
+          "resposta_aprovada",
+          "estado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvii:pergunta:"
+          },
+          "pergunta_autoral": {
+            "type": "string",
+            "minLength": 20
+          },
+          "resposta_aprovada": {
+            "type": "null"
+          },
+          "estado": {
+            "const": "pendente_de_autoria"
+          }
+        }
+      }
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fatos",
+        "referencias",
+        "propostas",
+        "perguntas",
+        "vida_sob_a_corte",
+        "memoria_submersa",
+        "rio_e_trabalho",
+        "pactos_de_frente",
+        "dilemas_civis",
+        "vinhetas"
+      ],
+      "properties": {
+        "fatos": {
+          "const": 12
+        },
+        "referencias": {
+          "const": 12
+        },
+        "propostas": {
+          "const": 36
+        },
+        "perguntas": {
+          "const": 10
+        },
+        "vida_sob_a_corte": {
+          "const": 8
+        },
+        "memoria_submersa": {
+          "const": 7
+        },
+        "rio_e_trabalho": {
+          "const": 6
+        },
+        "pactos_de_frente": {
+          "const": 6
+        },
+        "dilemas_civis": {
+          "const": 5
+        },
+        "vinhetas": {
+          "const": 4
+        }
+      }
+    },
+    "vida_sob_a_corte": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 25
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 25
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "foz",
+              "shadar-riverie",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      },
+      "minItems": 8,
+      "maxItems": 8
+    },
+    "memoria_submersa": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 25
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 25
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "foz",
+              "shadar-riverie",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      },
+      "minItems": 7,
+      "maxItems": 7
+    },
+    "rio_e_trabalho": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 25
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 25
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "foz",
+              "shadar-riverie",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "pactos_de_frente": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 25
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 25
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "foz",
+              "shadar-riverie",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "dilemas_civis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 25
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 25
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "foz",
+              "shadar-riverie",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "vinhetas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "possibilidade_cotidiana",
+          "tensao_material",
+          "pergunta_de_mesa",
+          "referencia_id",
+          "escopo",
+          "estado",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "canon_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxvii:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "possibilidade_cotidiana": {
+            "type": "string",
+            "minLength": 25
+          },
+          "tensao_material": {
+            "type": "string",
+            "minLength": 25
+          },
+          "pergunta_de_mesa": {
+            "type": "string",
+            "minLength": 15
+          },
+          "referencia_id": {
+            "type": "string"
+          },
+          "escopo": {
+            "enum": [
+              "foz",
+              "shadar-riverie",
+              "interfaces-nao-localizadas"
+            ]
+          },
+          "estado": {
+            "const": "proposta_cultural_nao_canonica"
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "canon_aplicado": {
+            "const": false
+          }
+        }
+      },
+      "minItems": 4,
+      "maxItems": 4
+    }
+  }
+}

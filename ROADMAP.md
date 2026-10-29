@@ -592,4 +592,18 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Manter doze guardas: proteção de fonte, água, quantificação, geografia, fauna, DW e aprovação explícita.
 - [x] Integrar JSON, schema, validador, oito índices determinísticos, ESM de consulta e prévia sem mutação, testes e documentação.
 - [x] Preservar sete criaturas, atlas factual, balanços com grandezas desconhecidas e hipóteses do XXV sem canonizar.
-- [ ] **XXVII — próximo horizonte:** homologação seletiva somente se o autor tomar decisões específicas; sem aprovação, pesquisar lacunas de fontes ou abrir novo território para expansão cultural.
+- [x] **XXVII — executado:** expansão de Shadar-Riverie/Gualápolis sem homologação de Portomonte.
+
+
+## Ciclo XXVII — Concluído: Shadar-Riverie e a memória de Gualápolis
+
+- [x] Escolher expansão cultural nova diante da **ausência de decisão autoral para homologar** qualquer alternativa de Portomonte.
+- [x] Conferir fontes autorais do Hack pp. 4–6 e 9–10, a geografia factual da foz e o dossiê ecológico do Arquivo.
+- [x] Preservar **12 fatos delimitados**, incluindo a distinção entre invasão demoníaca de 983 EC, tomada de Gualápolis de 984 EC e data não estabelecida de cada afogamento.
+- [x] Produzir **36 propostas não canônicas**: 8 vida sob a Corte, 7 memória submersa, 6 rio e trabalho, 6 pacto e frente, 5 dilemas civis e 4 vinhetas não ocorridas.
+- [x] Reutilizar 12 referências por ID a propostas e fatos anteriores, sem promover escrivania, feira, ateliê ou sala de protocolo a edifícios oficiais.
+- [x] Registrar 10 perguntas pendentes, incluindo a geografia de Shadar e o acesso ao Arquivo; não assumir sobreviventes, rotas ou governança dos mortos.
+- [x] Distinguir Ulorian de Birka Uln-Shayr, os demônios do Abismo de abissais marinhos e facção Yokai de indexação de ordem formal.
+- [x] Integrar JSON, schema, validador, seis índices determinísticos, consultas ESM, testes e dossiê narrativo.
+- [x] Preservar sete criaturas, frentes, lore factual, cânone de Portomonte e regras DW.
+- [ ] **XXVIII — próximo horizonte:** investigar o eixo fluvial entre Drakport, Corte e foz por meio de tributação, servidão, circulação de informação e cotidiano; ou preparar revisão da geografia de Shadar caso surja fonte nova.

@@ -82,6 +82,8 @@ const fixtures={
     hack_artificer_movement_indexes:"hack-artificer-movement-indexes.json",
     hack_mercenary_movements:"hack-mercenary-movements.json",
     hack_mercenary_movement_indexes:"hack-mercenary-movement-indexes.json",
+    foz_shadar_memory:"foz-shadar-memory.json",
+    foz_shadar_memory_indexes:"foz-shadar-memory-indexes.json",
     portomonte_authorial_review:"portomonte-authorial-review.json",
     portomonte_authorial_review_indexes:"portomonte-authorial-review-indexes.json",
     portomonte_temple_civic:"portomonte-temple-civic.json",
@@ -190,6 +192,39 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "foz-shadar-memory.json":{
+   "schema_version":"0.1.0","estado":"expansao_sociocultural_nao_canonica",
+   "regiao_normalizada_foz":"regiao:foz-rio-ancestral",
+   "regiao_normalizada_shadar":null,"geometria_exata_gualapolis_boca_shadar":null,
+   "aprovacao_autoral":false,"efeito_canonico_automatico":false,
+   "contagens":{"fatos":12,"referencias":12,"propostas":36,"perguntas":10},
+   "fatos_documentados":[{"id":"worldbuilding-xxvii:fato:01","pagina":5,
+       "afirmacao_documentada":"O Rio Ancestral termina no extremo oeste em uma queda chamada Abismo.",
+       "limite_de_inferencia":"Não localizar rotas ou portos.","canon_adicionado":false},
+     {"id":"worldbuilding-xxvii:fato:11","pagina":10,
+       "afirmacao_documentada":"Em 984 EC Gualápolis é tomada pelo Senhor do Rio.",
+       "limite_de_inferencia":"Não datar cada afogamento.","canon_adicionado":false}],
+   "vida_sob_a_corte":[{"id":"worldbuilding-xxvii:vida_sob_a_corte:favor",
+       "nome":"Favores no lugar de garantias","possibilidade_cotidiana":"Trabalho cotidiano na Corte",
+       "tensao_material":"Patronagem transforma favores em dívidas.",
+       "pergunta_de_mesa":"Quem pode recusar?","referencia_id":"povoamento-proposto:salas-de-protocolo",
+       "escopo":"shadar-riverie","estado":"proposta_cultural_nao_canonica",
+       "situacao_documentada":false,"ocorreu":false,"aprovacao_autoral":false}],
+   "memoria_submersa":[{"id":"worldbuilding-xxvii:memoria_submersa:arquivo",
+      "nome":"Um arquivo não é uma praça","possibilidade_cotidiana":"Biblioteca protegida",
+      "tensao_material":"Acesso limitado à memória.","pergunta_de_mesa":"Quem consulta?",
+      "referencia_id":"lugar:arquivo-dos-mortos-afogados","escopo":"foz",
+      "estado":"proposta_cultural_nao_canonica","situacao_documentada":false,"ocorreu":false,
+      "aprovacao_autoral":false}],
+   "rio_e_trabalho":[],"pactos_de_frente":[],"dilemas_civis":[],"vinhetas":[],
+   "perguntas_para_autor":[{"id":"worldbuilding-xxvii:pergunta:geografia","resposta_aprovada":null}]
+  },
+  "foz-shadar-memory-indexes.json":{"by_categoria":{"vida_sob_a_corte":["worldbuilding-xxvii:vida_sob_a_corte:favor"],
+    "memoria_submersa":["worldbuilding-xxvii:memoria_submersa:arquivo"]},
+    "by_escopo":{"foz":["worldbuilding-xxvii:memoria_submersa:arquivo"],
+      "shadar-riverie":["worldbuilding-xxvii:vida_sob_a_corte:favor"]},
+    "by_referencia":{"povoamento-proposto:salas-de-protocolo":["worldbuilding-xxvii:vida_sob_a_corte:favor"]},
+    "by_pagina":{"5":["worldbuilding-xxvii:fato:01"],"10":["worldbuilding-xxvii:fato:11"]}},
   "portomonte-authorial-review.json":{
     "estado":"pauta_editorial_pendente","aprovacao_autoral":false,"mutacao_canonica_automatica":false,
     "modelo_governo_aprovado":null,"agua_potavel_aprovada":null,"contagens":{"decisoes":12,"opcoes":38},
@@ -2757,4 +2792,25 @@ test("Ciclo XXVI: simulações não homologam escolhas autorais",async()=>{
   assert.equal(await atlas.previewPortomonteReviewOption(decId,"invalid"),null);
   assert.equal(await atlas.previewPortomonteReviewOption("invalid",optId),null);
   await assert.rejects(()=>atlas.previewPortomonteReviewOption(decId,optId,{observacoes:"texto"}),TypeError);
+});
+
+test("Ciclo XXVII: foz, Shadar e memória são consultáveis sem novo cânone",async()=>{
+  const d=await atlas.getFozShadarMemory();
+  assert.equal(d.estado,"expansao_sociocultural_nao_canonica");
+  assert.equal(d.aprovacao_autoral,false);
+  assert.equal(d.regiao_normalizada_shadar,null);
+  assert.equal(d.geometria_exata_gualapolis_boca_shadar,null);
+  const ix=await atlas.getFozShadarMemoryIndexes();
+  assert.equal(ix.by_pagina["10"][0],"worldbuilding-xxvii:fato:11");
+  assert.equal((await atlas.searchFozShadarMemory({categoria:"vida_sob_a_corte"})).length,1);
+  assert.equal((await atlas.searchFozShadarMemory({escopo:"foz"})).length,1);
+  assert.equal((await atlas.searchFozShadarMemory({referenciaId:"povoamento-proposto:salas-de-protocolo"})).length,1);
+  assert.equal((await atlas.searchFozShadarMemory({query:"dívidas"})).length,1);
+  assert.equal((await atlas.searchFozShadarMemory({query:"zz-nenhum"})).length,0);
+  const facts=await atlas.searchFozShadarMemory({pagina:10,query:"Gualápolis"});
+  assert.equal(facts.length,1);
+  assert.equal(facts[0].canon_adicionado,false);
+  assert.equal((await atlas.getFozShadarMemoryEntry("worldbuilding-xxvii:pergunta:geografia")).resposta_aprovada,null);
+  assert.equal((await atlas.getFozShadarMemoryEntry("worldbuilding-xxvii:memoria_submersa:arquivo")).ocorreu,false);
+  assert.equal(await atlas.getFozShadarMemoryEntry("worldbuilding-xxvii:inexistente"),null);
 });

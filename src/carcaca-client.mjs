@@ -60,6 +60,37 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getFozShadarMemory(){return byKey("foz_shadar_memory");}
+  async function getFozShadarMemoryIndexes(){return byKey("foz_shadar_memory_indexes");}
+  async function getFozShadarMemoryEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xxvii:"))return null;
+    const d=await getFozShadarMemory();
+    for(const cat of ["vida_sob_a_corte","memoria_submersa","rio_e_trabalho",
+       "pactos_de_frente","dilemas_civis","vinhetas","fatos_documentados",
+       "perguntas_para_autor"]){
+      const found=d[cat].find(x=>x.id===id);
+      if(found)return {...found,categoria:cat};
+    }
+    return null;
+  }
+  async function searchFozShadarMemory({categoria,escopo,referenciaId,pagina,query}={}){
+    const data=await getFozShadarMemory();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    if(pagina!==undefined){
+      return data.fatos_documentados
+        .filter(f=>f.pagina===Number(pagina)&&
+          (!query||norm(f.afirmacao_documentada+" "+f.limite_de_inferencia).includes(norm(query))))
+        .map(f=>({...f,categoria:"fatos_documentados"}));
+    }
+    const cats=["vida_sob_a_corte","memoria_submersa","rio_e_trabalho",
+      "pactos_de_frente","dilemas_civis","vinhetas"];
+    return cats.flatMap(cat=>data[cat].map(x=>({...x,categoria:cat})))
+      .filter(x=>(!categoria||x.categoria===categoria)&&
+        (!escopo||x.escopo===escopo)&&
+        (!referenciaId||x.referencia_id===referenciaId)&&
+        (!query||norm([x.id,x.nome,x.possibilidade_cotidiana,
+          x.tensao_material,x.pergunta_de_mesa].join(" ")).includes(norm(query))));
+  }
   async function getPortomonteAuthorialReview(){return byKey("portomonte_authorial_review");}
   async function getPortomonteAuthorialReviewIndexes(){return byKey("portomonte_authorial_review_indexes");}
   async function getPortomonteReviewDecision(id){
@@ -1709,6 +1740,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getFozShadarMemory,getFozShadarMemoryIndexes,
+          getFozShadarMemoryEntry,searchFozShadarMemory,
           getPortomonteAuthorialReview,getPortomonteAuthorialReviewIndexes,
           getPortomonteReviewDecision,getPortomonteReviewOption,
           searchPortomonteReview,previewPortomonteReviewOption,

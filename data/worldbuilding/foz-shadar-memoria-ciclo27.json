@@ -1,0 +1,811 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XXVII — A cidade sobre a memória afogada",
+  "estado": "expansao_sociocultural_nao_canonica",
+  "escopos": [
+    "foz",
+    "shadar-riverie",
+    "interfaces-nao-localizadas"
+  ],
+  "regiao_normalizada_foz": "regiao:foz-rio-ancestral",
+  "regiao_normalizada_shadar": null,
+  "geometria_exata_gualapolis_boca_shadar": null,
+  "populacao_sobrevivente_gualapolis_confirmada": null,
+  "tratados_especificos_confirmados": null,
+  "acesso_publico_arquivo_confirmado": null,
+  "cronologia_individual_afogamento_confirmada": null,
+  "aprovacao_autoral": false,
+  "efeito_canonico_automatico": false,
+  "alteracao_atlas_factual": false,
+  "alteracao_criaturas": false,
+  "alteracao_regras_dw": false,
+  "fonte_manuscrito": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "limites_editoriais": [
+    "Não fundir Shadar-Riverie, Gualápolis e Boca do Abismo numa única estrutura arquitetônica ou coordenada.",
+    "O enunciado 'sob Shadar-Riverie' não autoriza inventar profundidade, mapa, passagens ou região normalizada.",
+    "Não interpretar a aliança tensa com nativos como reconciliação política ou ausência de exploração colonial.",
+    "Não fundir Birka Uln-Shayr e Ulorian Uln-Shayr: indivíduos e funções distintos.",
+    "Não confundir o Senhor do Rio com monstro marinho abissal ou com demonologia do Abismo.",
+    "Não equiparar a tomada de 984 EC à data exata de cada afogamento ou da criação de cada estrutura.",
+    "Não estabelecer sobreviventes atuais, bairros habitados ou burocracias civis em Gualápolis submersa.",
+    "Não transformar guardiões Yokai indexados em uma ordem formal ou declarar o Arquivo aberto ao público.",
+    "Não supor que todo símbolo Yokai no Arquivo possa ser lido ou usado magicamente.",
+    "Não inventar rotas navegáveis, cobrança específica, política fundiária, moeda, população nem inventários.",
+    "Não duplicar personagens, feiras, escrivanias ou ateliês já propostos; vincular IDs prévios.",
+    "Não mutar criaturas, frentes, regras DW, cânone, locais existentes ou decisões pendentes de Portomonte."
+  ],
+  "fatos_documentados": [
+    {
+      "id": "worldbuilding-xxvii:fato:01",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 5,
+      "afirmacao_documentada": "O Rio Ancestral termina no extremo oeste em uma imensa queda conhecida como Abismo.",
+      "limite_de_inferencia": "A queda não fixa dimensões, travessias ou rotas navegáveis.",
+      "canon_adicionado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:fato:02",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 5,
+      "afirmacao_documentada": "O Templo das Sombras erguia-se na margem norte do Abismo antes de sua destruição.",
+      "limite_de_inferencia": "Não assumir que a atual Boca do Abismo ocupe esse mesmo templo.",
+      "canon_adicionado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:fato:03",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 6,
+      "afirmacao_documentada": "Ulorian Uln-Shayr instalou-se sobre Gualápolis e fundou a fortaleza da Boca do Abismo.",
+      "limite_de_inferencia": "Não deduzir planta, direitos de propriedade ou destino de cada morador antigo.",
+      "canon_adicionado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:fato:04",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 6,
+      "afirmacao_documentada": "Uma aliança tensa entre invasores e nativos foi formada para enfrentar os demônios.",
+      "limite_de_inferencia": "Aliança não é reconciliação, igualdade política, tratado universal ou fim da colonização.",
+      "canon_adicionado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:fato:05",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 6,
+      "afirmacao_documentada": "Ulorian integra a Corte e usa a mediação com os nativos como recurso de sua própria ambição.",
+      "limite_de_inferencia": "Não reduzir o personagem a salvador dos nativos nem atribuir-lhe um programa social.",
+      "canon_adicionado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:fato:06",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 6,
+      "afirmacao_documentada": "Shadar-Riverie é centro de poder shadow fey, capital aristocrática e base da Casa Shayr.",
+      "limite_de_inferencia": "Não fixar coordenadas ou atribuir-lhe a mesma região normalizada da Boca do Abismo.",
+      "canon_adicionado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:fato:07",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 6,
+      "afirmacao_documentada": "Birka Uln-Shayr é visconde da Casa Shayr em Shadar-Riverie.",
+      "limite_de_inferencia": "Não confundir a posição de Birka com a autoridade ou identidade de Ulorian.",
+      "canon_adicionado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:fato:08",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 6,
+      "afirmacao_documentada": "Shadar-Riverie é descrita como centro de mediação, negociação e comércio na borda do conflito abissal.",
+      "limite_de_inferencia": "Não inferir acordos específicos nem participação livre e equivalente de todos os envolvidos.",
+      "canon_adicionado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:fato:09",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 6,
+      "afirmacao_documentada": "Sob Shadar-Riverie está Gualápolis, com o Arquivo dos Mortos Afogados, biblioteca Yokai submersa.",
+      "limite_de_inferencia": "'Sob' documenta uma relação narrativa; não fornece profundidade, mapa ou acesso seguro.",
+      "canon_adicionado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:fato:10",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 9,
+      "afirmacao_documentada": "Em 983 EC, demônios invadem a Carcaça pelo Abismo e o Templo das Sombras é destruído.",
+      "limite_de_inferencia": "Não datar cada aliança ou cada deslocamento em decorrência desse evento.",
+      "canon_adicionado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:fato:11",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 10,
+      "afirmacao_documentada": "Em 984 EC, Gualápolis é tomada pelo golpe do Senhor do Rio.",
+      "limite_de_inferencia": "O enunciado não data individualmente o afogamento de cada estrutura ou arquivo.",
+      "canon_adicionado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:fato:12",
+      "arquivo_fonte": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "pagina": 4,
+      "afirmacao_documentada": "Inscrições e vestígios Yokai relacionam linguagem e autoridade de nomeação à Carcaça.",
+      "limite_de_inferencia": "Não assumir que toda inscrição no arquivo contém poder operável nem que seja publicamente traduzível.",
+      "canon_adicionado": false
+    }
+  ],
+  "referencias_rastreaveis": [
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "areas",
+      "id": "area-proposta:foz",
+      "tipo": "area",
+      "limite_de_inferencia": "A foz tem região normalizada; local não se confunde com Shadar."
+    },
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "areas",
+      "id": "area-proposta:shadar",
+      "tipo": "area",
+      "limite_de_inferencia": "Área editorial não equivale a região geográfica normalizada."
+    },
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "sementes",
+      "id": "povoamento-proposto:escrivania-da-foz",
+      "tipo": "povoamento_proposto",
+      "limite_de_inferencia": "A escrivania é hipótese prévia, nunca um cartório comprovado."
+    },
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "sementes",
+      "id": "povoamento-proposto:feira-da-tregua",
+      "tipo": "povoamento_proposto",
+      "limite_de_inferencia": "Feira e armistício específico não estão estabelecidos."
+    },
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "sementes",
+      "id": "povoamento-proposto:salas-de-protocolo",
+      "tipo": "povoamento_proposto",
+      "limite_de_inferencia": "Uma sala de protocolo não é edifício oficial."
+    },
+    {
+      "arquivo": "data/propostas/povoamento-regional-hack-carcaca.json",
+      "colecao": "sementes",
+      "id": "povoamento-proposto:ateliê-das-mascaras",
+      "tipo": "povoamento_proposto",
+      "limite_de_inferencia": "Oficina e participantes são propostas."
+    },
+    {
+      "arquivo": "data/lugares_carcaca.json",
+      "colecao": "lugares",
+      "id": "lugar:arquivo-dos-mortos-afogados",
+      "tipo": "lugar_documentado",
+      "limite_de_inferencia": "O arquivo é masmorra submersa, não biblioteca pública disponível."
+    },
+    {
+      "arquivo": "data/lugares_carcaca.json",
+      "colecao": "lugares",
+      "id": "lugar:gualapolis",
+      "tipo": "lugar_documentado",
+      "limite_de_inferencia": "Cidade antiga; não presumir bairro habitado nem arqueologia pública."
+    },
+    {
+      "arquivo": "data/lugares_carcaca.json",
+      "colecao": "lugares",
+      "id": "lugar:boca-do-abismo",
+      "tipo": "lugar_documentado",
+      "limite_de_inferencia": "Fortaleza; extensão administrativa e planta não conhecidas."
+    },
+    {
+      "arquivo": "data/regioes_carcaca.json",
+      "colecao": "regioes",
+      "id": "regiao:foz-rio-ancestral",
+      "tipo": "regiao_documentada",
+      "limite_de_inferencia": "Esta geografia normalizada não localiza Shadar automaticamente."
+    },
+    {
+      "arquivo": "data/faccoes_carcaca.json",
+      "colecao": "faccoes",
+      "id": "faccao:guardioes-yokai-da-foz",
+      "tipo": "indexacao_proposta",
+      "limite_de_inferencia": "ID coletivo é convenção da curadoria, não ordem yokai formal."
+    },
+    {
+      "arquivo": "data/faccoes_carcaca.json",
+      "colecao": "faccoes",
+      "id": "faccao:corte-shadow-fey",
+      "tipo": "faccao_documentada",
+      "limite_de_inferencia": "Autoridade da Corte não determina juramento individual de seus povos."
+    }
+  ],
+  "vida_sob_a_corte": [
+    {
+      "id": "worldbuilding-xxvii:vida_sob_a_corte:favor",
+      "nome": "Favores no lugar de garantias",
+      "possibilidade_cotidiana": "Funcionários hipotéticos podem trocar permissões incertas por serviços cotidianos.",
+      "tensao_material": "Uma cortesia aristocrática pode servir como dívida inescapável.",
+      "pergunta_de_mesa": "Quem pode recusar favor sem perder abrigo?",
+      "referencia_id": "povoamento-proposto:salas-de-protocolo",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:vida_sob_a_corte:vestuario",
+      "nome": "O preço de apresentar-se",
+      "possibilidade_cotidiana": "Costureiros possíveis sustentam os rituais sociais da elite, sem que uma oficina seja oficial.",
+      "tensao_material": "O trabalho que produz elegância pode não ter acesso aos salões.",
+      "pergunta_de_mesa": "Quem assina o resultado de um ofício invisível?",
+      "referencia_id": "povoamento-proposto:ateliê-das-mascaras",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:vida_sob_a_corte:traducao",
+      "nome": "A palavra que muda de dono",
+      "possibilidade_cotidiana": "Interlocutores de línguas diferentes poderiam intermediar acordos civis.",
+      "tensao_material": "Traduzir uma exigência é diferente de consentir com ela.",
+      "pergunta_de_mesa": "Quem responde por um termo adulterado?",
+      "referencia_id": "area-proposta:shadar",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:vida_sob_a_corte:limiar",
+      "nome": "Portas que não pertencem a todos",
+      "possibilidade_cotidiana": "Uma casa poderia acolher visitantes segundo regras privadas e etiqueta variável.",
+      "tensao_material": "A distinção entre hospitalidade e vigilância é politicamente negociada.",
+      "pergunta_de_mesa": "Quem controla a saída do hóspede?",
+      "referencia_id": "povoamento-proposto:salas-de-protocolo",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:vida_sob_a_corte:cuidado",
+      "nome": "Cuidar de quem não pode negociar",
+      "possibilidade_cotidiana": "Cuidadores possíveis procuram proteger parentes sem oferecer novas garantias ao patrono.",
+      "tensao_material": "A exigência de documentos pode excluir quem necessita ajuda.",
+      "pergunta_de_mesa": "Como uma criança pede abrigo sem título?",
+      "referencia_id": "area-proposta:shadar",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:vida_sob_a_corte:memoria-de-trabalho",
+      "nome": "Histórias nas costuras",
+      "possibilidade_cotidiana": "Trabalhadores poderiam recordar linhagens patronais pelos materiais que reparam.",
+      "tensao_material": "O conhecimento de quem fabrica a imagem oficial pode ser punido.",
+      "pergunta_de_mesa": "Que memória permanece quando uma Casa apaga o crédito?",
+      "referencia_id": "povoamento-proposto:ateliê-das-mascaras",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:vida_sob_a_corte:nome-de-familia",
+      "nome": "O sobrenome como instrumento",
+      "possibilidade_cotidiana": "Em um domínio aristocrático, uma família poderia disputar o direito de usar certos nomes.",
+      "tensao_material": "A semelhança entre nome e lealdade pode provocar suspeitas injustas.",
+      "pergunta_de_mesa": "Quem tem autoridade para exigir renúncia a um nome?",
+      "referencia_id": "faccao:corte-shadow-fey",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:vida_sob_a_corte:convivencia",
+      "nome": "Treguar sem reconciliar",
+      "possibilidade_cotidiana": "Pessoas de origens diversas poderiam dividir tarefas por necessidade em uma cidade mediadora.",
+      "tensao_material": "Uma coexistência de interesse não apaga opressão nem desigualdade.",
+      "pergunta_de_mesa": "Quem ganha e quem paga por uma negociação bem-sucedida?",
+      "referencia_id": "area-proposta:shadar",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "memoria_submersa": [
+    {
+      "id": "worldbuilding-xxvii:memoria_submersa:vestigios",
+      "nome": "Os nomes que não flutuaram",
+      "possibilidade_cotidiana": "Guardadores hipotéticos tentam preservar testemunhos de Gualápolis sem prometer resgate dos objetos.",
+      "tensao_material": "Conservar um nome pode expor seus descendentes à pressão política.",
+      "pergunta_de_mesa": "O que precisa permanecer secreto para continuar existindo?",
+      "referencia_id": "lugar:gualapolis",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:memoria_submersa:arquivo",
+      "nome": "Um arquivo não é uma praça",
+      "possibilidade_cotidiana": "A biblioteca Yokai submersa oferece um cenário de memória e perigo, não um serviço público aberto.",
+      "tensao_material": "A vontade de conhecer pode violar proteção ritual e segurança.",
+      "pergunta_de_mesa": "Quem pode consultar o que se protege de invasores?",
+      "referencia_id": "lugar:arquivo-dos-mortos-afogados",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:memoria_submersa:testemunhas",
+      "nome": "Testemunhos que discordam",
+      "possibilidade_cotidiana": "Sobrevivências documentais poderiam circular por versões conflitantes dos acontecimentos.",
+      "tensao_material": "A memória oficial pode silenciar relatos incompatíveis com o regime.",
+      "pergunta_de_mesa": "Divergência significa mentira ou experiência parcial?",
+      "referencia_id": "povoamento-proposto:escrivania-da-foz",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:memoria_submersa:marcas",
+      "nome": "As marcas não são propriedade",
+      "possibilidade_cotidiana": "Símbolos antigos podem ser estudados sem pressupor tradução mágica automática.",
+      "tensao_material": "A apropriação do registro pode tornar a Corte dona do nome alheio.",
+      "pergunta_de_mesa": "O que pode ser transcrito sem retirar contexto?",
+      "referencia_id": "faccao:guardioes-yokai-da-foz",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:memoria_submersa:objetos",
+      "nome": "O peso do objeto resgatado",
+      "possibilidade_cotidiana": "Um objeto hipotético retirado das águas suscita perguntas sobre proveniência.",
+      "tensao_material": "Resgatar para conservar pode também ser saque.",
+      "pergunta_de_mesa": "Quem tem legitimidade para decidir seu destino?",
+      "referencia_id": "lugar:arquivo-dos-mortos-afogados",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:memoria_submersa:pessoas",
+      "nome": "Não há população submersa confirmada",
+      "possibilidade_cotidiana": "Recordar a antiga cidade exige não inventar moradores atuais nas ruínas.",
+      "tensao_material": "Um narrador pode confundir os mortos nomeados com habitantes acessíveis.",
+      "pergunta_de_mesa": "Como investigar uma família sem torná-la personagem inventada?",
+      "referencia_id": "lugar:gualapolis",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:memoria_submersa:direito",
+      "nome": "Quem é dono de uma história perdida?",
+      "possibilidade_cotidiana": "Registros hipotéticos de propriedade antiga poderiam desafiar a legalidade da ocupação.",
+      "tensao_material": "Uma escritura recuperada pode ser usada para legitimar nova expropriação.",
+      "pergunta_de_mesa": "Como separar prova histórica de título vigente?",
+      "referencia_id": "povoamento-proposto:escrivania-da-foz",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "rio_e_trabalho": [
+    {
+      "id": "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "nome": "A passagem pode ser uma ordem",
+      "possibilidade_cotidiana": "Controle fluvial documentado inspira estudo de taxas sem criar portagem específica.",
+      "tensao_material": "O mesmo obstáculo pode ser apresentado como proteção e extração.",
+      "pergunta_de_mesa": "Como demonstrar que uma cobrança corresponde a serviço?",
+      "referencia_id": "regiao:foz-rio-ancestral",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:rio_e_trabalho:reparo",
+      "nome": "Reparar não é governar",
+      "possibilidade_cotidiana": "Artesãos possíveis consertam meios de travessia sem se tornarem agentes do regime.",
+      "tensao_material": "A requisição militar pode deslocar trabalho necessário à vida civil.",
+      "pergunta_de_mesa": "Quem decide a prioridade de um reparo?",
+      "referencia_id": "lugar:boca-do-abismo",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:rio_e_trabalho:avisos",
+      "nome": "A notícia que chega pela água",
+      "possibilidade_cotidiana": "Mensagens poderiam circular com viajantes entre zonas de tensão sem uma rota fixa.",
+      "tensao_material": "Quem controla uma notícia pode controlar quem recebe ajuda.",
+      "pergunta_de_mesa": "Que informação um mensageiro pode omitir para proteger alguém?",
+      "referencia_id": "regiao:foz-rio-ancestral",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:rio_e_trabalho:alimento",
+      "nome": "O sustento não tem números",
+      "possibilidade_cotidiana": "A região exige alimento e serviços, mas sua produção ou fontes de abastecimento não estão quantificadas.",
+      "tensao_material": "Promessas de suprimento podem mascarar dependência.",
+      "pergunta_de_mesa": "Qual alimento foi de fato recebido antes de cobrar uma dívida?",
+      "referencia_id": "povoamento-proposto:feira-da-tregua",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:rio_e_trabalho:trabalho-antigo",
+      "nome": "Construir sobre o que se perdeu",
+      "possibilidade_cotidiana": "Construções sobre Gualápolis poderiam demandar saberes de trabalhadores sem afirmar canteiro específico.",
+      "tensao_material": "A fortaleza atual pode apagar o trabalho que edificou a cidade anterior.",
+      "pergunta_de_mesa": "Quem registra as camadas destruídas numa reforma?",
+      "referencia_id": "lugar:boca-do-abismo",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:rio_e_trabalho:riscos",
+      "nome": "O limite da corrente",
+      "possibilidade_cotidiana": "Uma travessia hipotética exige conhecimento do perigo físico sem gerar coordenadas.",
+      "tensao_material": "A autoridade pode exigir uma travessia que não sabe ser viável.",
+      "pergunta_de_mesa": "Quem pode negar a travessia por segurança?",
+      "referencia_id": "regiao:foz-rio-ancestral",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "pactos_de_frente": [
+    {
+      "id": "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "nome": "Tolerância não é liberdade",
+      "possibilidade_cotidiana": "Comunidades poderiam cooperar contra demônios e disputar direitos em assuntos domésticos.",
+      "tensao_material": "A defesa comum pode dar legitimidade a abusos de ocupação.",
+      "pergunta_de_mesa": "Quem pode discordar do comandante sem virar inimigo?",
+      "referencia_id": "povoamento-proposto:feira-da-tregua",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:pactos_de_frente:dupla-conta",
+      "nome": "Pagar duas vezes",
+      "possibilidade_cotidiana": "Cobranças militares e civis hipotéticas poderiam competir sobre o mesmo trabalho.",
+      "tensao_material": "A emergência pode converter socorro em tributo duplicado.",
+      "pergunta_de_mesa": "Quem verifica quem realmente recebeu provisões?",
+      "referencia_id": "lugar:boca-do-abismo",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:pactos_de_frente:informante",
+      "nome": "O aviso que custa um nome",
+      "possibilidade_cotidiana": "Informantes possíveis alertam sobre ataques sem garantir identidade pública.",
+      "tensao_material": "Um nome divulgado pode levar à perseguição de um aliado.",
+      "pergunta_de_mesa": "Qual prova é suficiente sem revelar a fonte?",
+      "referencia_id": "faccao:corte-shadow-fey",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:pactos_de_frente:refugio",
+      "nome": "Refúgio sem juramento",
+      "possibilidade_cotidiana": "Um grupo imaginado procura abrigo sem aceitar lealdade à Casa Shayr.",
+      "tensao_material": "Proteção condicionada a fidelidade pode ser recrutamento coercitivo.",
+      "pergunta_de_mesa": "Há ajuda que não exija uma assinatura?",
+      "referencia_id": "area-proposta:shadar",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:pactos_de_frente:acesso",
+      "nome": "Quem entra na fortaleza?",
+      "possibilidade_cotidiana": "Civis poderiam negociar entrada temporária por razões de segurança.",
+      "tensao_material": "A segurança de uns pode ser usada para excluir outros.",
+      "pergunta_de_mesa": "Quem pode questionar a lista de acesso?",
+      "referencia_id": "lugar:boca-do-abismo",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:pactos_de_frente:responsabilidade",
+      "nome": "A guerra não apaga o registro",
+      "possibilidade_cotidiana": "A proteção contra demônios não encerra perguntas sobre a queda da cidade.",
+      "tensao_material": "Invocar um inimigo comum pode blindar responsáveis pelo golpe.",
+      "pergunta_de_mesa": "Quem registra o passado sem inventar um tribunal?",
+      "referencia_id": "lugar:gualapolis",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "dilemas_civis": [
+    {
+      "id": "worldbuilding-xxvii:dilemas_civis:emprestar-nome",
+      "nome": "Um nome em troca da passagem",
+      "possibilidade_cotidiana": "Um intermediário hipotético oferece passagem segura em troca do registro de uma identidade.",
+      "tensao_material": "A ajuda imediata pode permitir vigilância duradoura.",
+      "pergunta_de_mesa": "O que é consentimento quando a alternativa é o perigo?",
+      "referencia_id": "povoamento-proposto:salas-de-protocolo",
+      "escopo": "interfaces-nao-localizadas",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:dilemas_civis:exibir-peca",
+      "nome": "A peça que acusa",
+      "possibilidade_cotidiana": "Um suposto artefato da velha Gualápolis aparece para convencer alguém de uma reivindicação.",
+      "tensao_material": "A procedência pode ser impossível de comprovar em público.",
+      "pergunta_de_mesa": "Quem deve guardar a peça durante a disputa?",
+      "referencia_id": "lugar:gualapolis",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:dilemas_civis:troca",
+      "nome": "Roupas de gala, roupa de luto",
+      "possibilidade_cotidiana": "Um artesão hipotético precisa escolher qual encomenda atender primeiro.",
+      "tensao_material": "Poder de compra aristocrático e necessidades de cuidado competem.",
+      "pergunta_de_mesa": "Quem decide que trabalho é urgente?",
+      "referencia_id": "povoamento-proposto:ateliê-das-mascaras",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:dilemas_civis:coroa",
+      "nome": "O aliado que não é libertador",
+      "possibilidade_cotidiana": "Um mediador da Corte oferece proteção militar enquanto exige silêncio sobre a ocupação.",
+      "tensao_material": "Segurança real pode ser usada para obter impunidade.",
+      "pergunta_de_mesa": "Que concessão preserva a autonomia civil?",
+      "referencia_id": "povoamento-proposto:feira-da-tregua",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:dilemas_civis:segredo",
+      "nome": "O documento que não deve viajar",
+      "possibilidade_cotidiana": "Uma cópia de registro de Gualápolis permitiria um apelo, mas exporia terceiros.",
+      "tensao_material": "O direito de conhecer pode entrar em conflito com o dever de proteger.",
+      "pergunta_de_mesa": "Quem tem direito a censurar um nome próprio?",
+      "referencia_id": "povoamento-proposto:escrivania-da-foz",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "worldbuilding-xxvii:vinhetas:agulha",
+      "nome": "A linha que faltava",
+      "possibilidade_cotidiana": "No imaginado ateliê, uma aprendiz encontra marcas de reformas antigas na roupa de gala de um nobre.",
+      "tensao_material": "A peça identifica seu fabricante mas pode custar sua segurança.",
+      "pergunta_de_mesa": "Quem deve receber a descoberta?",
+      "referencia_id": "povoamento-proposto:ateliê-das-mascaras",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:vinhetas:assinatura",
+      "nome": "O favor sem recibo",
+      "possibilidade_cotidiana": "Um criado hipotético oferece ajuda a um viajante, mas lhe pedem reconhecimento público de uma Casa.",
+      "tensao_material": "A ajuda se converte em fidelidade exigível.",
+      "pergunta_de_mesa": "Há modo de agradecer sem se submeter?",
+      "referencia_id": "povoamento-proposto:salas-de-protocolo",
+      "escopo": "shadar-riverie",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:vinhetas:pagina",
+      "nome": "A página que não respira",
+      "possibilidade_cotidiana": "Uma pessoa imagina recuperar do arquivo um testemunho antigo que contradiz a versão oficial.",
+      "tensao_material": "O item pode estar protegido e ser inacessível.",
+      "pergunta_de_mesa": "É justo tentar alcançá-lo?",
+      "referencia_id": "lugar:arquivo-dos-mortos-afogados",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    },
+    {
+      "id": "worldbuilding-xxvii:vinhetas:travesia",
+      "nome": "A última travessia da trégua",
+      "possibilidade_cotidiana": "Uma embarcação hipotética recebe notícias de combate e pedidos civis simultâneos.",
+      "tensao_material": "Uma urgência não comprova quem tem direito ao transporte.",
+      "pergunta_de_mesa": "Que compromisso é possível antes de saber a rota?",
+      "referencia_id": "povoamento-proposto:feira-da-tregua",
+      "escopo": "foz",
+      "estado": "proposta_cultural_nao_canonica",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "canon_aplicado": false
+    }
+  ],
+  "perguntas_para_autor": [
+    {
+      "id": "worldbuilding-xxvii:pergunta:geografia",
+      "pergunta_autoral": "Qual é a relação espacial exata entre Shadar-Riverie, Gualápolis e a Boca do Abismo?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxvii:pergunta:moradores",
+      "pergunta_autoral": "Há sobreviventes de Gualápolis entre as populações atuais, e como se identificam?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxvii:pergunta:arquivo",
+      "pergunta_autoral": "Quem pode acessar o Arquivo dos Mortos Afogados e mediante que condições?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxvii:pergunta:afogamento",
+      "pergunta_autoral": "O afogamento da biblioteca ocorreu em qual momento da tomada de Gualápolis?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxvii:pergunta:direito",
+      "pergunta_autoral": "Como os antigos títulos de nome e propriedade Yokai se relacionam à autoridade colonial?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxvii:pergunta:trabalho",
+      "pergunta_autoral": "Quais trabalhos cotidianos existem em Shadar-Riverie e nos arredores da Boca do Abismo?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxvii:pergunta:tributos",
+      "pergunta_autoral": "Quais cobranças e obrigações concretas recaem sobre moradores e viajantes?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxvii:pergunta:alianca",
+      "pergunta_autoral": "Quais são os termos e a representatividade da aliança contra os demônios?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxvii:pergunta:identidade",
+      "pergunta_autoral": "Qual é a natureza da relação institucional entre Birka e Ulorian Uln-Shayr?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    },
+    {
+      "id": "worldbuilding-xxvii:pergunta:locais",
+      "pergunta_autoral": "Shadar-Riverie deve receber região/lugar/assentamento normalizado no atlas, com que fonte geográfica?",
+      "resposta_aprovada": null,
+      "estado": "pendente_de_autoria"
+    }
+  ],
+  "contagens": {
+    "fatos": 12,
+    "referencias": 12,
+    "propostas": 36,
+    "perguntas": 10,
+    "vida_sob_a_corte": 8,
+    "memoria_submersa": 7,
+    "rio_e_trabalho": 6,
+    "pactos_de_frente": 6,
+    "dilemas_civis": 5,
+    "vinhetas": 4
+  }
+}
