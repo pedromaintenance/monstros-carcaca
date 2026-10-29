@@ -697,3 +697,16 @@ Referência: [ATLAS_MACROAMBIENTES_CICLO35.md](docs/ATLAS_MACROAMBIENTES_CICLO35
 - [ ] Revisão autoral das oito questões; nenhuma promovida ao cânone.
 
 **Próximo ciclo macro recomendado (XXXVII):** matriz de alternativas topológicas, sem aprovação automática, para decidir as relações espaciais entre os grandes setores antes de qualquer desenho cartográfico em escala meso. Fonte: [ATLAS_INTERFACES_CONTINENTAIS_CICLO36.md](docs/ATLAS_INTERFACES_CONTINENTAIS_CICLO36.md).
+
+## Ciclo XXXVII — Oficina de decisões topológicas (2026-10-29)
+
+- [x] Dividir as grandes decisões espaciais em quatro conjuntos continentais: oeste, norte, mar e interior.
+- [x] Preservar oito questões pendentes do XXXVI e criar três modelos alternativos para cada uma, sem aprovar nenhum.
+- [x] Vincular cada modelo a documentos, limites de inferência, consequência material e custo editorial.
+- [x] Integrar à visão macro do Pages uma oficina de seleção apenas temporária, com quadro comparativo e opção de limpar simulações.
+- [x] Validar fontes cruzadas, incertezas e ausência de geometria; conectar testes aos workflows de publicação.
+- [ ] Revisão autoral para eventual escolha de qualquer alternativa. O algoritmo não toma decisões no lugar do autor.
+
+**Próximo objetivo macro (XXXVIII):** criar carta de restrições para o futuro mapa (desenhável/documentado, apenas relativo, desconhecido ou contraditório) e um sistema de símbolos cartográficos que não oculte as lacunas, mantendo os onze setores existentes.
+
+Documento de referência: [ATLAS_MATRIZ_TOPOLOGICA_CICLO37.md](docs/ATLAS_MATRIZ_TOPOLOGICA_CICLO37.md).
