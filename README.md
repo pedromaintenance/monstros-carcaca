@@ -561,3 +561,8 @@ Veja [dossiê do Ciclo XII](docs/ECOLOGIA_MONSTRUOSA_ELDROTH_CICLO12.md).
 As **oito criaturas hipotéticas do ciclo XII** ganharam fichas de Dungeon World com decisões individuais verificáveis: **7 com PV/armadura/dano** e **1 sem estatísticas físicas**, porque o Micélio das Vozes Partidas não oferece um corpo combatente. A calculadora `scripts/calcular_monstros_dw.py` aplica o procedimento de *Making Monsters* sem qualquer conversão de ND de D&D. Todos os valores são **propostas não aprovadas**, e o catálogo de **7 criaturas curadas** permanece separado.
 
 Fontes: `data/propostas/eldroth-fichas-dw-ciclo13.json`, `schemas/eldroth-fichas-dw-ciclo13.schema.json`. Saídas: `dist/carcaca/eldroth-dw-statblocks.json`, `eldroth-dw-statblock-indexes.json`. Métodos ESM: `getEldrothDWStatblocks`, `getEldrothDWStatblockIndexes`, `getEldrothDWStatblock`, `searchEldrothDWStatblocks`. [Dossiê do XIII](docs/FICHAS_DW_ELDROTH_CICLO13.md).
+
+
+### Ciclo XXIV — Cultura civil da Costa Sul
+
+O [dossiê de Portomonte e Costa Sul](docs/COSTA_SUL_VIDA_CIVIL_CICLO24.md) amplia a vida cotidiana do cenário em **36 hipóteses não canônicas**, sustentadas por 10 fatos do manuscrito e ligadas a 13 referências existentes. Dez perguntas seguem abertas ao autor. Exportação: `costa-sul-civil-life.json`, índices determinísticos e API ESM com `getCostaSulCivilLife`, `getCostaSulCivilLifeEntry` e `searchCostaSulCivilLife`. Não introduz leis, bairros, portos, água potável presumida nem novos monstros.
