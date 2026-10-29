@@ -265,6 +265,29 @@ def build():
     grama_xx=load("data/worldbuilding/grama-cortada-cotidiano-ciclo20.json")
     gnomos_xxi=load("data/worldbuilding/culturas-gnomicas-ciclo21.json")
     meio_demonios_xxii=load("data/worldbuilding/meio-demonios-sociedades-ciclo22.json")
+    rio_xxviii=load("data/worldbuilding/rio-drakport-ciclo28.json")
+    cats_rio_xxviii=("trabalho_cotidiano","servidao_e_agencia","tributos_e_passagens",
+                    "informacao_e_ritos","redes_de_resistencia","vinhetas")
+    rows_rio_xxviii=[{**row,"categoria_indice":cat}
+                     for cat in cats_rio_xxviii for row in rio_xxviii[cat]]
+    if len(rows_rio_xxviii)!=40:
+        raise ValueError("Ciclo XXVIII: quarenta propostas são necessárias.")
+    def indexar_rio_xxviii(field):
+        buckets=defaultdict(set)
+        for row in rows_rio_xxviii:
+            buckets[str(row[field])].add(row["id"])
+        return {k:sorted(v) for k,v in sorted(buckets.items())}
+    pages_rio_xxviii=defaultdict(set)
+    for fact in rio_xxviii["fatos_documentados"]:
+        pages_rio_xxviii[str(fact["pagina"])].add(fact["id"])
+    indices_rio_xxviii={
+        "by_categoria":indexar_rio_xxviii("categoria_indice"),
+        "by_escopo":indexar_rio_xxviii("escopo"),
+        "by_referencia":indexar_rio_xxviii("referencia_id"),
+        "by_estado":indexar_rio_xxviii("estado"),
+        "by_nome":indexar_rio_xxviii("nome"),
+        "by_pagina":{k:sorted(v) for k,v in sorted(pages_rio_xxviii.items())}
+    }
     foz_xxvii=load("data/worldbuilding/foz-shadar-memoria-ciclo27.json")
     cats_foz_xxvii=("vida_sob_a_corte","memoria_submersa","rio_e_trabalho",
                    "pactos_de_frente","dilemas_civis","vinhetas")
@@ -1209,6 +1232,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "river_drakport_social":"river-drakport-social.json",
+        "river_drakport_social_indexes":"river-drakport-social-indexes.json",
         "foz_shadar_memory":"foz-shadar-memory.json",
         "foz_shadar_memory_indexes":"foz-shadar-memory-indexes.json",
         "portomonte_authorial_review":"portomonte-authorial-review.json",
@@ -1363,6 +1388,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_fatos_rio_xxviii":len(rio_xxviii["fatos_documentados"]),
+        "total_propostas_rio_xxviii":len(rows_rio_xxviii),
+        "total_referencias_rio_xxviii":len(rio_xxviii["referencias_rastreaveis"]),
+        "total_perguntas_rio_xxviii":len(rio_xxviii["perguntas_para_autor"]),
         "total_fatos_foz_xxvii":len(foz_xxvii["fatos_documentados"]),
         "total_propostas_foz_xxvii":len(rows_foz_xxvii),
         "total_referencias_foz_xxvii":len(foz_xxvii["referencias_rastreaveis"]),
@@ -1554,6 +1583,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["river_drakport_social"]:rio_xxviii,
+           files["river_drakport_social_indexes"]:indices_rio_xxviii,
            files["foz_shadar_memory"]:foz_xxvii,
            files["foz_shadar_memory_indexes"]:indices_foz_xxvii,
            files["portomonte_authorial_review"]:portomonte_xxvi,
