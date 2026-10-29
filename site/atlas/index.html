@@ -279,6 +279,37 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 @media(max-width:1100px){.site{padding:0 18px 35px}.counters{grid-template-columns:repeat(3,1fr)}.workspace{grid-template-columns:minmax(290px,43%) minmax(300px,1fr)}.details{padding:19px 20px}}
 @media(max-width:760px){.hero{padding:25px 0}.hero .symbol{display:none}h1{font-size:34px}.counters{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.counter{padding:10px}.counter strong{font-size:20px}.counter span{font-size:9px}.workspace{grid-template-columns:1fr}.panel{min-height:0}.tree-scroll{height:390px;min-height:0}.details{max-height:none;min-height:360px}.topline{font-size:9px;gap:10px;letter-spacing:1px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+
+/* Oficina topológica: comparação conceitual, sem geometria ou aprovação automática */
+.topo-groups{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:8px;margin:18px 0}
+.topo-group{border:1px solid #465448;border-radius:10px;background:#1a251f;padding:12px;text-align:left;min-height:74px}
+.topo-group strong{display:block;color:#e0d7bf;font-size:11px}.topo-group small{display:block;font-size:10px;color:#a9b9aa;line-height:1.5;margin-top:5px}
+.topo-group.active,.topo-group:hover{border-color:#bca077;background:#352e23}
+.topo-selected-head{color:#bea987;font-size:11px;margin:14px 0}
+.topo-layout{display:grid;grid-template-columns:minmax(0,1.85fr) minmax(265px,.8fr);gap:15px;align-items:start}
+.topo-questions{display:grid;gap:14px}.topo-decision{background:#17221c;border:1px solid #3c5143;border-radius:12px;padding:16px}
+.topo-decision-top{display:flex;justify-content:space-between;gap:10px;align-items:start}.topo-decision-top span{font-size:9px;color:#ae9e84}
+.topo-decision h4{font:500 15px Cinzel,serif;margin:6px 0 12px;line-height:1.4}
+.topo-decision>p{font-size:11px;line-height:1.7;color:#c1c9bd}
+.topo-pending{white-space:nowrap;background:#342e25;border:1px solid #6b5c45;padding:4px 6px;border-radius:6px}
+.topo-invariants{margin:13px 0;padding:11px;background:#1c2922;border-left:2px solid #829e8a;font-size:11px}
+.topo-invariants strong{color:#c4d2bc}.topo-invariants ul{margin:6px 0 0 15px;padding:0;color:#acbcac}
+.topo-options{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:13px}
+.topo-option{border:1px solid #435144;background:#1d2922;border-radius:10px;padding:12px;text-align:left;display:flex;flex-direction:column;gap:7px;font-size:10px;color:#b8c4b6;line-height:1.55;min-height:250px;overflow-wrap:anywhere}
+.topo-option:hover,.topo-option.selected{border-color:#c5a477;background:#342d23}
+.topo-option-meta{color:#a8977b;font-size:9px;text-transform:uppercase;letter-spacing:.25px}
+.topo-option strong{font-size:12px;color:#e5dabe}.topo-option code{display:block;white-space:normal;overflow-wrap:anywhere;color:#a9ccba;background:#0d1713;padding:8px;border-radius:5px;font-size:10px}
+.topo-detail{color:#a7b5a8}.topo-choice-action{display:block;border-top:1px solid #5a5845;padding-top:9px;margin-top:auto;color:#e2c58f;font-weight:700}
+.topo-notebook{position:sticky;top:12px;border:1px solid #586248;border-radius:12px;padding:16px;background:#202820;max-height:85vh;overflow:auto}
+.topo-summary-head h4{font:500 16px Cinzel,serif}.topo-summary-head p,.topo-disclaimer{font-size:11px;color:#bac9b5;line-height:1.7}
+.topo-summary-actions button,.topo-summary-choice button{border:1px solid #6a6e59;border-radius:6px;padding:5px 8px;background:#2d3329;font-size:10px}
+.topo-summary-actions button:disabled{opacity:.45;cursor:default}.topo-summary-group{margin-top:13px;padding-top:12px;border-top:1px solid #465245}
+.topo-summary-group>strong{display:block;font-size:11px;color:#ddc79d}.topo-summary-group>small{font-size:9px;color:#a7b6a6}
+.topo-summary-choice{border-bottom:1px solid #374437;padding:8px 0;position:relative;min-height:43px;padding-right:25px}
+.topo-summary-choice span,.topo-summary-choice b{display:block;font-size:10px}.topo-summary-choice span{color:#a7b8a7}.topo-summary-choice b{color:#e0d9be;margin-top:4px}
+.topo-summary-choice button{position:absolute;right:0;bottom:7px}
+@media(max-width:1100px){.topo-groups{grid-template-columns:repeat(2,minmax(0,1fr))}.topo-layout{grid-template-columns:1fr}.topo-notebook{position:static;max-height:none}}
+@media(max-width:710px){.topo-options{grid-template-columns:1fr}.topo-group{min-height:0}.topo-option{min-height:0}}
 </style>
 </head>
 <body>
@@ -305,6 +336,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
   <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
   <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
+  <section id="topologyChoices" class="env-section" aria-label="Oficina de alternativas topológicas"><p class="env-explain">Carregando matriz de decisões sobre o continente...</p></section>
   <div class="macro-layout">
     <div id="macroCards" class="macro-grid"><div class="loader">Carregando as regiões documentadas...</div></div>
     <div id="macroDetails" class="macro-detail"><div class="loader">Selecione uma região para consultar seu território, suas âncoras e lacunas principais.</div></div>
@@ -351,6 +383,8 @@ import {buildMacroEnvironments} from "./macro-environments.mjs";
 import {initMacroEnvironments} from "./macro-environments-ui.mjs";
 import {buildContinentalInterfaces} from "./macro-interfaces.mjs";
 import {initContinentalInterfaces} from "./macro-interfaces-ui.mjs";
+import {buildTopologyChoices} from "./topology-choices.mjs";
+import {initTopologyChoices} from "./topology-choices-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -371,7 +405,8 @@ const paths={
   networks:"data/atlas/redes-historicas-ciclo33.json",
   physical:"data/atlas/geografia-fisica-ciclo34.json",
   environments:"data/atlas/macroambientes-ciclo35.json",
-  interfaces:"data/atlas/interfaces-continentais-ciclo36.json"
+  interfaces:"data/atlas/interfaces-continentais-ciclo36.json",
+  topology:"data/atlas/matriz-topologica-ciclo37.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -685,12 +720,14 @@ $("export").addEventListener("click",()=>{
     state.physical=buildPhysicalGeography(loaded.physical,state.macro,state.atlas);
     state.environments=buildMacroEnvironments(loaded.environments,state.macro,state.atlas);
     state.interfaces=buildContinentalInterfaces(loaded.interfaces,state.macro,state.networks,state.environments);
+    state.topology=buildTopologyChoices(loaded.topology,state.macro,state.interfaces,state.physical);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
     initPhysicalGeography($("physicalGeo"),state.physical,macroDiveInto);
     initMacroEnvironments($("macroEnvironments"),state.environments,macroDiveInto);
     initContinentalInterfaces($("macroInterfaces"),state.interfaces);
+    initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
     $("export").disabled=false;
@@ -706,6 +743,7 @@ $("export").addEventListener("click",()=>{
     $("physicalGeo").textContent="A geografia física não pôde ser carregada.";
     $("macroEnvironments").textContent="Os grandes ambientes naturais não puderam ser carregados.";
     $("macroInterfaces").textContent="As interfaces continentais não puderam ser carregadas.";
+    $("topologyChoices").textContent="A matriz topológica não pôde ser carregada.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
