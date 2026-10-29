@@ -91,7 +91,12 @@ test("XLV: Atlas, distribuição Pages e workflows de testes integrados",()=>{
  assert.match(html,/buildSettlementExpansion\(loaded\.settlementExpansion,loaded\.creatureSettlements,state\.macro,state\.environments,loaded\.settlementHorizon,loaded\.authoredPages\)/);
  assert.match(html,/initSettlementExpansion\(\$\("settlementExpansion"\),state\.settlementExpansion\)/);
  assert.match(pagesWorkflow,/data\/propostas\/povoamento-regional-lote02-ciclo45\.json/);
- assert.match(pagesWorkflow,/fontes\/autoria\/hack-carcaca-dw-capitulo-i\.paginas\.json/);
+ assert.match(pagesWorkflow,/data\/atlas\/indice-paginas-fonte-ciclo45\.json/);
+ assert.doesNotMatch(pagesWorkflow,/^\s+fontes\/autoria\/hack-carcaca-dw-capitulo-i\.paginas\.json\s*$/m);
+ assert.match(html,/authoredPages:"data\/atlas\/indice-paginas-fonte-ciclo45\.json"/);
+ const publicIndex=j("data/atlas/indice-paginas-fonte-ciclo45.json");
+ assert.equal(publicIndex.texto_autoral_incluido,false);
+ assert.deepEqual(publicIndex.paginas.map(x=>x.pagina),pages.paginas.map(x=>x.pagina));
  assert.match(pagesWorkflow,/tests\/atlas-settlement-expansion\.test\.mjs/);
  assert.match(ciWorkflow,/tests\/atlas-settlement-expansion\.test\.mjs/);
  const dir=mkdtempSync(join(tmpdir(),"atlas-xl-v-"));
