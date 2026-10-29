@@ -571,3 +571,8 @@ O [dossiê de Portomonte e Costa Sul](docs/COSTA_SUL_VIDA_CIVIL_CICLO24.md) ampl
 ### Ciclo XXV — O milagre e a cidade: Portomonte
 
 O [dossiê do templo de Deméter e da organização civil](docs/PORTOMONTE_TEMPLO_GOVERNO_CICLO25.md) preserva 8 afirmações documentadas e distingue **36 hipóteses estruturadas**: 4 modelos de governo não adotados, 8 interfaces de trabalho, 8 relações sociais, 6 garantias possíveis, 6 dilemas e 4 vinhetas. São 12 referências verificadas por ID e 12 perguntas autorais pendentes. Dados `data/worldbuilding/portomonte-templo-governo-ciclo25.json`, JSON Schema, validação cruzada, seis índices determinísticos e leitura ESM via `getPortomonteTempleCivic`, `searchPortomonteTempleCivic` e `previewPortomonteCivicModel` (simulação sem mutação). O ciclo não especifica método ritual, água para beber, regime político nem números de produção.
+
+
+### Ciclo XXVI — revisão autoral de Portomonte
+
+O [dossiê de decisões de Portomonte](docs/REVISAO_AUTORAL_PORTOMONTE_CICLO26.md) transforma as 12 perguntas do Ciclo XXV em **12 decisões pendentes**, com **38 respostas possíveis**, **12 guardas contra canonização automática**, **10 impactos condicionais não executáveis** e **4 etapas de revisão ainda não concluídas**. Inclui dependências editoriais em grafo acíclico e ponte verificável para os IDs das perguntas e hipóteses anteriores. Dados em `data/worldbuilding/revisao-autoral-portomonte-ciclo26.json`; JSON Schema, oito índices, validação e cliente ESM com `getPortomonteAuthorialReview`, `searchPortomonteReview` e `previewPortomonteReviewOption`. Nenhum governo, rito, água potável ou cronologia adicional foi aprovado; as sete criaturas e as regras DW seguem intactas.
