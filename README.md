@@ -118,6 +118,14 @@ O **[parecer editorial diretamente no HTML do Atlas](https://pedromaintenance.gi
 
 O [parecer revisado dentro do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#audit-density) agora estabelece que **nenhuma macrorregião está concluída em povoamento**. A prioridade é inventariar e deduplicar os registros atuais e, em seguida, elaborar núcleos com função, povo, subsistência, identidade, conflitos e relações interregionais — antes da produção ampla de mapas meso e micro. [Nota de revisão do Ciclo XLIII](docs/ATLAS_AUDITORIA_PRONTIDAO_CICLO43.md).
 
+## Diretriz transversal — assentamentos de criaturas fantásticas
+
+**A Carcaça não será povoada apenas por humanoides.** Na expansão de cada macrorregião, a mesma relevância deve ser dada a sociedades de goblins, fadas e demais seres extraordinários quando sua presença for documentada ou explicitamente proposta. Seus lugares podem assumir formas próprias: aldeias, enclaves feéricos, cortes, comunidades subterrâneas, colônias biológicas organizadas, complexos de ninhos, ocupações sazonais e assentamentos multiespécie. Não presumir automaticamente presença, hostilidade, lealdade à Corte ou uma cultura homogênea por espécie.
+
+**Ecologia não é sinônimo de assentamento.** Covis solitários, habitats, territórios, locais de reprodução, rotas migratórias, relações predador–presa e fenômenos mágicos devem ser registrados como lugares e interações ecológicas, mas não inflar a meta de comunidades efetivamente habitadas. A faixa flexível de **145–205 assentamentos e ilhas** **inclui assentamentos de criaturas**; não é uma meta exclusiva de humanos, elfos ou anões, nem uma contagem de criaturas ou covis já documentados. Um povoado multiespécie conta uma única vez.
+
+O [plano de povoamento](data/atlas/horizonte-povoamento-macro.json) define as formas de habitação, a política de contagem, os dados ecológicos mínimos e as salvaguardas. O [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#audit-creature-settlements) expõe a regra diretamente na auditoria de escala.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
