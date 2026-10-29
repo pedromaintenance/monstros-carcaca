@@ -1,0 +1,376 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Interfaces continentais da Carcaça — Ciclo XXXVI",
+  "estado": "sintese_editorial_de_transicoes",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "geometria": "nao_cartografada",
+  "fontes": [
+    "data/atlas/macrorregioes-carcaca.json",
+    "data/atlas/redes-historicas-ciclo33.json",
+    "data/atlas/macroambientes-ciclo35.json",
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+  ],
+  "criterio": "Uma relação histórica, militar ou ecológica não autoriza afirmar adjacência, fronteira, estrada ou travessia. A leitura analítica é proposta editorial, não acontecimento.",
+  "interfaces": [
+    {
+      "id": "inter:xxxvi:rio-abismo",
+      "nome": "Rio Ancestral → queda do Abismo",
+      "natureza": "hidrografia",
+      "estado": "documentado",
+      "setores": [
+        "rio",
+        "foz"
+      ],
+      "ref_macro": "macro-eixo:rio-foz-hidrografia",
+      "ref_ambiental": "ambr:rio-abismo",
+      "lacuna_id": null,
+      "paginas": [
+        4,
+        5
+      ],
+      "evidencia": "O término do rio no Abismo é descrito; a posição das nascentes e o percurso completo não estão cartografados.",
+      "leitura_analitica": "Concentrar circulação fluvial numa ruptura geográfica pode produzir uma zona de controle e disputa.",
+      "limite_de_inferencia": "Não traçar navegação, margem exata, largura ou travessia.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:caatinga-costa",
+      "nome": "Caatinga ↔ pradarias da Costa Sul",
+      "natureza": "pressao_territorial",
+      "estado": "documentado_sem_contato_fisico",
+      "setores": [
+        "caatinga",
+        "costa"
+      ],
+      "ref_macro": "macro-eixo:caatinga-costa-conflito_regional",
+      "ref_ambiental": "ambr:caatinga-pradarias",
+      "lacuna_id": null,
+      "paginas": [
+        5,
+        12
+      ],
+      "evidencia": "Há incursões oriundas das terras áridas sobre áreas agrícolas costeiras.",
+      "leitura_analitica": "A pressão sobre colheitas e deslocamentos é relevante para a organização da defesa e do abastecimento.",
+      "limite_de_inferencia": "Incursões não provam uma divisa contínua nem uma estrada.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:eldroth-costa",
+      "nome": "Eldroth → refúgios costeiros",
+      "natureza": "migracao",
+      "estado": "documentado_sem_contato_fisico",
+      "setores": [
+        "eldroth",
+        "costa"
+      ],
+      "ref_macro": "macro-eixo:eldroth-costa-deslocamento_humano",
+      "ref_ambiental": null,
+      "lacuna_id": null,
+      "paginas": [
+        5,
+        18
+      ],
+      "evidencia": "Refugiados de Eldroth são mencionados nos grandes assentamentos costeiros.",
+      "leitura_analitica": "O deslocamento conecta a ocupação florestal à vida civil da Costa Sul.",
+      "limite_de_inferencia": "Não inferir caminho, número de refugiados nem comunidades receptoras específicas.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:sangue-azul",
+      "nome": "Mar de Sangue ↔ águas azuis",
+      "natureza": "fronteira_movel",
+      "estado": "movel",
+      "setores": [
+        "costa",
+        "azuis"
+      ],
+      "ref_macro": "macro-eixo:costa-azuis-fronteira_maritima",
+      "ref_ambiental": "ambr:mar-rubro-azuis",
+      "lacuna_id": "amb-gap:fronteira",
+      "paginas": [
+        14,
+        15
+      ],
+      "evidencia": "A transição entre as águas rubras e azuis varia com correntes, tempestades e fenômenos mágicos.",
+      "leitura_analitica": "A interface variável afeta a ideia de domínio marítimo, perigo e circulação.",
+      "limite_de_inferencia": "Não produzir linha fixa, polígono, extensão nem direção da corrente.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:foz-cauda",
+      "nome": "Foz do Abismo ↔ cauda de Golzdov",
+      "natureza": "mudanca_de_poder",
+      "estado": "historico_sem_passagem",
+      "setores": [
+        "foz",
+        "cauda"
+      ],
+      "ref_macro": "macro-eixo:foz-cauda-mudanca_historica",
+      "ref_ambiental": null,
+      "lacuna_id": "amb-gap:passagem-abismo",
+      "paginas": [
+        5,
+        6,
+        9
+      ],
+      "evidencia": "O deslocamento da Corte após a invasão demoníaca conecta historicamente os dois lados do Abismo.",
+      "leitura_analitica": "A mudança de sede desloca o centro de poder sem estabelecer infraestrutura de passagem.",
+      "limite_de_inferencia": "Não inferir ponte, rota transitável nem continuidade terrestre.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:thargrid-eldroth",
+      "nome": "Thargrid ↔ Eldroth: resistência",
+      "natureza": "articulacao_politica",
+      "estado": "documentado_sem_contato_fisico",
+      "setores": [
+        "thargrid",
+        "eldroth"
+      ],
+      "ref_macro": "macro-eixo:thargrid-eldroth-cooperacao_resistencia",
+      "ref_ambiental": null,
+      "lacuna_id": "amb-gap:florestas",
+      "paginas": [
+        6,
+        7,
+        18
+      ],
+      "evidencia": "Há cooperação e redes de resistência nas montanhas e nas florestas.",
+      "leitura_analitica": "A articulação política não exige que os territórios sejam contíguos.",
+      "limite_de_inferencia": "Não desenhar um corredor, fronteira, comando unificado ou trajeto conhecido.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:foz-shadar",
+      "nome": "Foz ↔ Shadar-Riverie: topologia em revisão",
+      "natureza": "sobreposicao_historica",
+      "estado": "topologia_em_revisao",
+      "setores": [
+        "foz",
+        "shadar"
+      ],
+      "ref_macro": "macro-eixo:foz-shadar-topologia_em_revisao",
+      "ref_ambiental": null,
+      "lacuna_id": "amb-gap:shadar",
+      "paginas": [
+        5,
+        6
+      ],
+      "evidencia": "As descrições sobre a antiga Gualápolis, Boca do Abismo e Shadar-Riverie não estão reconciliadas.",
+      "leitura_analitica": "A incerteza impacta qualquer tentativa de mapa político do oeste.",
+      "limite_de_inferencia": "Não declarar que os três nomes designam o mesmo lugar ou lugares distintos.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:thargrid-ironwood",
+      "nome": "Montanhas de Thargrid → Ironwood",
+      "natureza": "relevo_relativo",
+      "estado": "documentado",
+      "setores": [
+        "thargrid"
+      ],
+      "ref_macro": null,
+      "ref_ambiental": "ambr:thargrid-ironwood",
+      "lacuna_id": null,
+      "paginas": [
+        6
+      ],
+      "evidencia": "Ironwood está ao sul das montanhas de Thargrid.",
+      "leitura_analitica": "A orientação relativa fundamenta a organização dos ambientes do norte.",
+      "limite_de_inferencia": "Não supor que exista fronteira política contínua entre montanha e floresta.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:thargrid-subsolo",
+      "nome": "Thargrid ↔ cidades anãs subterrâneas",
+      "natureza": "verticalidade",
+      "estado": "documentado",
+      "setores": [
+        "thargrid"
+      ],
+      "ref_macro": null,
+      "ref_ambiental": "ambr:thargrid-anões-subsolo",
+      "lacuna_id": "amb-gap:subsolo",
+      "paginas": [
+        12,
+        13
+      ],
+      "evidencia": "Há assentamentos anões em cavernas sob as montanhas e ossos fossilizados.",
+      "leitura_analitica": "A verticalidade permite diferenciar superfície, interior e profundidade sem fixar cotas.",
+      "limite_de_inferencia": "Não ligar todas as galerias numa rede subterrânea continental.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:kuotoa-mar",
+      "nome": "Cavernas costeiras Kuo-Toa ↔ Mar de Sangue",
+      "natureza": "contato_litoraneo",
+      "estado": "documentado",
+      "setores": [
+        "costa"
+      ],
+      "ref_macro": null,
+      "ref_ambiental": "ambr:cavernas-kuotoa-mar-rubro",
+      "lacuna_id": "amb-gap:cidades-kuotoa",
+      "paginas": [
+        5,
+        14
+      ],
+      "evidencia": "Cavernas Kuo-Toa situam-se na costa do mar corrompido.",
+      "leitura_analitica": "A costa estabelece uma interface entre espaços secos e marítimos.",
+      "limite_de_inferencia": "Não fundir cavernas costeiras e cidades submarinas em um único assentamento.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:abissais-mar",
+      "nome": "Profundezas dos Abissais marinhos ↔ Mar de Sangue",
+      "natureza": "profundidade_marinha",
+      "estado": "documentado",
+      "setores": [
+        "costa"
+      ],
+      "ref_macro": null,
+      "ref_ambiental": "ambr:abissais-mar-mar-rubro",
+      "lacuna_id": null,
+      "paginas": [
+        14
+      ],
+      "evidencia": "Os Abissais marinhos habitam profundezas oceânicas e possuem civilizações próprias.",
+      "leitura_analitica": "A organização subaquática deve ser estudada como sociedade, não como simples zona de monstros.",
+      "limite_de_inferencia": "Abissais marinhos não são automaticamente demônios do Abismo ocidental.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:ilhas-recifes",
+      "nome": "Ilhas monásticas ↔ recifes e cânions submarinos",
+      "natureza": "submersao_insular",
+      "estado": "documentado",
+      "setores": [
+        "costa",
+        "azuis"
+      ],
+      "ref_macro": null,
+      "ref_ambiental": "ambr:ilhas-recifes",
+      "lacuna_id": "amb-gap:mar-cidades",
+      "paginas": [
+        15
+      ],
+      "evidencia": "Algumas cidades submarinas situam-se abaixo das ilhas monásticas.",
+      "leitura_analitica": "A superfície insular e a profundidade marítima podem ser tratadas como escalas diferentes.",
+      "limite_de_inferencia": "Não assumir que toda ilha possui cidade submarina, nem identificar ilhas particulares.",
+      "geometria": null,
+      "rota_confirmada": false
+    },
+    {
+      "id": "inter:xxxvi:ironwood-eldroth",
+      "nome": "Ironwood ↔ Eldroth: limite florestal desconhecido",
+      "natureza": "limite_em_aberto",
+      "estado": "em_aberto",
+      "setores": [
+        "thargrid",
+        "eldroth"
+      ],
+      "ref_macro": null,
+      "ref_ambiental": null,
+      "lacuna_id": "amb-gap:florestas",
+      "paginas": [
+        6,
+        18
+      ],
+      "evidencia": "A relação física direta entre as duas florestas não foi estabelecida.",
+      "leitura_analitica": "A lacuna impede atribuir continuidade ecológica, fronteira militar ou ecótono.",
+      "limite_de_inferencia": "Não converter relações de resistência em adjacência cartográfica.",
+      "geometria": null,
+      "rota_confirmada": false
+    }
+  ],
+  "questoes": [
+    {
+      "id": "questao:xxxvi:shadar",
+      "pergunta": "Como reconciliar Shadar-Riverie, Gualápolis e Boca do Abismo?",
+      "setores": [
+        "foz",
+        "shadar"
+      ],
+      "ref_lacuna": null,
+      "pendente": true
+    },
+    {
+      "id": "questao:xxxvi:florestas",
+      "pergunta": "Ironwood e Eldroth têm contato físico, faixa de transição ou separação?",
+      "setores": [
+        "thargrid",
+        "eldroth"
+      ],
+      "ref_lacuna": "amb-gap:florestas",
+      "pendente": true
+    },
+    {
+      "id": "questao:xxxvi:abismo",
+      "pergunta": "Há qualquer passagem verificável entre a foz e a cauda?",
+      "setores": [
+        "foz",
+        "cauda"
+      ],
+      "ref_lacuna": "amb-gap:passagem-abismo",
+      "pendente": true
+    },
+    {
+      "id": "questao:xxxvi:mar",
+      "pergunta": "Como representar o limite móvel entre os dois mares sem estabilizá-lo?",
+      "setores": [
+        "costa",
+        "azuis"
+      ],
+      "ref_lacuna": "amb-gap:fronteira",
+      "pendente": true
+    },
+    {
+      "id": "questao:xxxvi:rio",
+      "pergunta": "Onde começam as nascentes e que afluentes alimentam o Rio Ancestral?",
+      "setores": [
+        "rio"
+      ],
+      "ref_lacuna": "amb-gap:nascente",
+      "pendente": true
+    },
+    {
+      "id": "questao:xxxvi:subsolo",
+      "pergunta": "Quais cavernas se conectam realmente entre si?",
+      "setores": [
+        "thargrid"
+      ],
+      "ref_lacuna": "amb-gap:subsolo",
+      "pendente": true
+    },
+    {
+      "id": "questao:xxxvi:grama",
+      "pergunta": "Onde está Grama-Cortada em relação aos demais setores?",
+      "setores": [
+        "grama"
+      ],
+      "ref_lacuna": "amb-gap:grama",
+      "pendente": true
+    },
+    {
+      "id": "questao:xxxvi:shadar-bioma",
+      "pergunta": "Qual paisagem natural envolve Shadar-Riverie?",
+      "setores": [
+        "shadar"
+      ],
+      "ref_lacuna": "amb-gap:shadar",
+      "pendente": true
+    }
+  ]
+}
