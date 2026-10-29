@@ -1,0 +1,497 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Dependências e vulnerabilidades da Carcaça — Ciclo XLII",
+  "estado": "laboratorio_hipotetico_nao_canonico",
+  "altera_canon": false,
+  "aprovacao_autoral": false,
+  "representacao": "cenarios_de_relacoes_sem_previsao",
+  "fontes": [
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+    "data/atlas/circulacao-material-ciclo41.json",
+    "data/atlas/cronocartografia-ciclo40.json",
+    "data/atlas/hidrografia-continental-ciclo39.json"
+  ],
+  "criterio": "Cenários hipotéticos testam a interrupção ou pressão sobre vínculos documentais. Não provam causalidade adicional, não projetam perdas e não simulam escoamento, capacidade ou substituição de rede.",
+  "grupos": [
+    {
+      "id": "colonial",
+      "titulo": "Extração e coerção",
+      "limite": "Distinguir poder político e tributos de transporte efetivo."
+    },
+    {
+      "id": "resistencia",
+      "titulo": "Sustentação da resistência",
+      "limite": "Não supor apoio integral, centralização ou substituição automática entre recursos."
+    },
+    {
+      "id": "mobilidade",
+      "titulo": "Refúgio e informação",
+      "limite": "Contato e deslocamento documentados não autorizam estrada."
+    },
+    {
+      "id": "litoral",
+      "titulo": "Alimentos, comércio e mar",
+      "limite": "Pressões econômicas não produzem crises quantificadas ou fronteiras fixas."
+    },
+    {
+      "id": "autonomia",
+      "titulo": "Autonomia local e subsolo",
+      "limite": "Produção local e pactos específicos não constituem rede continental completa."
+    }
+  ],
+  "cenarios": [
+    {
+      "id": "cenario:xlii:rio-tributacao",
+      "titulo": "Interrupção parcial da circulação tributária fluvial",
+      "grupo": "colonial",
+      "tipo": "interrupcao_hipotetica",
+      "estado": "hipotese_de_estudo",
+      "adotado": false,
+      "ocorreu": false,
+      "vinculos_foco": [
+        "vinculo:xli:tributos-rio"
+      ],
+      "vinculos_relacionados_apenas_condicionais": [
+        "vinculo:xli:drakport-coercao"
+      ],
+      "nodos_contextuais": [
+        "fluxo:xli:mercados-rio",
+        "fluxo:xli:corte-rio"
+      ],
+      "paginas": [
+        4,
+        7
+      ],
+      "premissa": "E se o aparelho tributário não conseguisse operar uma parte da circulação do Rio Ancestral?",
+      "efeito_direto": "O cenário testa apenas a relação documental entre centros fluviais e cobrança colonial; não o bloqueio de todo o rio.",
+      "repercussao_condicional": "A capacidade de arrecadação da Corte poderia depender das rotas e postos afetados, ainda não cartografados.",
+      "contrapeso_documentado": "O manuscrito descreve casas, postos e centros de extração ao longo do rio; sua distribuição espacial e substituição recíproca são desconhecidas.",
+      "nao_inferir": "Não projetar queda de receitas, libertação de Drakport, fome, colapso da Corte ou interrupção hidrológica.",
+      "perguntas": [
+        "Quais postos seriam alcançados?",
+        "Quais tributos passam efetivamente pelo trecho hipotético?",
+        "Existe substituição comprovada por outro centro?"
+      ],
+      "geometria": null,
+      "probabilidade": null,
+      "perda_calculada": null,
+      "duracao": null,
+      "impacto_medido": null,
+      "propagacao_automatica": false
+    },
+    {
+      "id": "cenario:xlii:drakport",
+      "titulo": "Ruptura de uma engrenagem coercitiva de Drakport",
+      "grupo": "colonial",
+      "tipo": "interrupcao_hipotetica",
+      "estado": "hipotese_de_estudo",
+      "adotado": false,
+      "ocorreu": false,
+      "vinculos_foco": [
+        "vinculo:xli:drakport-coercao"
+      ],
+      "vinculos_relacionados_apenas_condicionais": [
+        "vinculo:xli:tributos-rio"
+      ],
+      "nodos_contextuais": [
+        "fluxo:xli:drakport",
+        "fluxo:xli:corte-rio"
+      ],
+      "paginas": [
+        4,
+        9
+      ],
+      "premissa": "E se a estrutura coercitiva descrita em Drakport deixasse de abastecer parte do aparato colonial?",
+      "efeito_direto": "O vínculo de coerção que a fonte atribui a Drakport é o objeto isolado de análise.",
+      "repercussao_condicional": "As autoridades poderiam buscar outras formas de exploração ou perder capacidade de controle, sem dados para afirmar qual.",
+      "contrapeso_documentado": "A dominação da Corte reúne diferentes centros, famílias e mecanismos de tributação; isso não prova capacidade substitutiva.",
+      "nao_inferir": "Não declarar revolta de Drakport como ocorrida, nem libertação automática de pessoas escravizadas ou redistribuição para outra cidade.",
+      "perguntas": [
+        "Que dependências efetivas passam por Drakport?",
+        "A coerção é local ou alimenta outros centros específicos?",
+        "Quais resultados da possível revolta permanecem em aberto?"
+      ],
+      "geometria": null,
+      "probabilidade": null,
+      "perda_calculada": null,
+      "duracao": null,
+      "impacto_medido": null,
+      "propagacao_automatica": false
+    },
+    {
+      "id": "cenario:xlii:minerio-forja",
+      "titulo": "Ruptura da cadeia minério–forja de Thargrid",
+      "grupo": "resistencia",
+      "tipo": "interrupcao_hipotetica",
+      "estado": "hipotese_de_estudo",
+      "adotado": false,
+      "ocorreu": false,
+      "vinculos_foco": [
+        "vinculo:xli:minerio-forjas"
+      ],
+      "vinculos_relacionados_apenas_condicionais": [
+        "vinculo:xli:forjas-resistencia",
+        "vinculo:xli:armazens-resistencia"
+      ],
+      "nodos_contextuais": [
+        "fluxo:xli:minas-thargrid",
+        "fluxo:xli:forjas-thargrid",
+        "fluxo:xli:rede-resistencia"
+      ],
+      "paginas": [
+        7,
+        12
+      ],
+      "premissa": "E se a entrega de minério às forjas anãs fosse temporariamente interrompida?",
+      "efeito_direto": "A relação entre extração e transformação mineral ficaria indisponível apenas dentro deste exercício.",
+      "repercussao_condicional": "A provisão de armas e ferramentas à resistência poderia ser afetada, mas a fonte não estabelece reservas, substitutos ou ritmo de fabricação.",
+      "contrapeso_documentado": "Thargrid possui depósitos de provisões e uma rede de apoio descentralizada, recursos de natureza diferente do minério.",
+      "nao_inferir": "Não calcular escassez militar, produção zero, queda de Thargrid, preço do aço ou interrupção automática de alimentos.",
+      "perguntas": [
+        "Existem reservas específicas de minério?",
+        "Há forjas independentes ou fornecimento externo?",
+        "Que grupos recebem de fato o material produzido?"
+      ],
+      "geometria": null,
+      "probabilidade": null,
+      "perda_calculada": null,
+      "duracao": null,
+      "impacto_medido": null,
+      "propagacao_automatica": false
+    },
+    {
+      "id": "cenario:xlii:depositos-resistencia",
+      "titulo": "Restrição dos depósitos da resistência",
+      "grupo": "resistencia",
+      "tipo": "interrupcao_hipotetica",
+      "estado": "hipotese_de_estudo",
+      "adotado": false,
+      "ocorreu": false,
+      "vinculos_foco": [
+        "vinculo:xli:armazens-resistencia"
+      ],
+      "vinculos_relacionados_apenas_condicionais": [
+        "vinculo:xli:forjas-resistencia"
+      ],
+      "nodos_contextuais": [
+        "fluxo:xli:armazens-thargrid",
+        "fluxo:xli:rede-resistencia"
+      ],
+      "paginas": [
+        7,
+        12
+      ],
+      "premissa": "E se uma parcela dos depósitos anões não estivesse disponível para o apoio da resistência?",
+      "efeito_direto": "A relação de provisões entre depósitos e rede de resistência seria examinada como indisponível, sem mensurar uma perda.",
+      "repercussao_condicional": "A capacidade de sustentação de determinados grupos poderia mudar, mas não estão definidos locais, destinatários nem demanda.",
+      "contrapeso_documentado": "O manuscrito menciona comunidades livres que também fornecem abrigo, alimentos, informação e recrutas; não é comprovada substituição de um depósito por essas fontes.",
+      "nao_inferir": "Não inferir desabastecimento generalizado, fome ou número de combatentes afetados.",
+      "perguntas": [
+        "Os depósitos atendem quais grupos?",
+        "Há estoques descentralizados com uso comprovado?",
+        "Quanto tempo sustentariam uma interrupção?"
+      ],
+      "geometria": null,
+      "probabilidade": null,
+      "perda_calculada": null,
+      "duracao": null,
+      "impacto_medido": null,
+      "propagacao_automatica": false
+    },
+    {
+      "id": "cenario:xlii:eldroth-refugio",
+      "titulo": "Dois destinos de refúgio sob restrição",
+      "grupo": "mobilidade",
+      "tipo": "cenario_composto_independente",
+      "estado": "hipotese_de_estudo",
+      "adotado": false,
+      "ocorreu": false,
+      "vinculos_foco": [
+        "vinculo:xli:eldroth-costa",
+        "vinculo:xli:eldroth-thargrid"
+      ],
+      "vinculos_relacionados_apenas_condicionais": [
+        "vinculo:xli:ironwood-druidas"
+      ],
+      "nodos_contextuais": [
+        "fluxo:xli:eldroth-refugiados",
+        "fluxo:xli:costa-refugios",
+        "fluxo:xli:thargrid-refugios"
+      ],
+      "paginas": [
+        5,
+        6,
+        17
+      ],
+      "premissa": "E se as possibilidades de refúgio para deslocados de Eldroth fossem limitadas, separadamente, na Costa Sul e em Thargrid?",
+      "efeito_direto": "Dois destinos documentados são colocados sob restrições hipotéticas independentes; não se pressupõe que compartilhem a mesma passagem.",
+      "repercussao_condicional": "A procura por abrigo poderia mudar, mas a distribuição dos refugiados, percursos e capacidade de acolhimento são desconhecidos.",
+      "contrapeso_documentado": "O manuscrito cita outros destinos, como arquipélagos e pequenas comunidades, sem caracterizá-los como alternativas logísticas disponíveis.",
+      "nao_inferir": "Não desenhar estradas, cruzar duas florestas por corredor presumido, transferir toda a população para outro destino ou quantificar migração.",
+      "perguntas": [
+        "Quais trajetos efetivamente permitem alcançar cada destino?",
+        "Quais comunidades recebem pessoas em condições diferentes?",
+        "Há redes capazes de acolher deslocamentos adicionais?"
+      ],
+      "geometria": null,
+      "probabilidade": null,
+      "perda_calculada": null,
+      "duracao": null,
+      "impacto_medido": null,
+      "propagacao_automatica": false
+    },
+    {
+      "id": "cenario:xlii:contato-clandestino",
+      "titulo": "Falha de contato entre Ironwood e Eldroth",
+      "grupo": "mobilidade",
+      "tipo": "interrupcao_hipotetica",
+      "estado": "hipotese_de_estudo",
+      "adotado": false,
+      "ocorreu": false,
+      "vinculos_foco": [
+        "vinculo:xli:ironwood-druidas"
+      ],
+      "vinculos_relacionados_apenas_condicionais": [
+        "vinculo:xli:eldroth-costa",
+        "vinculo:xli:eldroth-thargrid"
+      ],
+      "nodos_contextuais": [
+        "fluxo:xli:ironwood",
+        "fluxo:xli:eldroth-druidas"
+      ],
+      "paginas": [
+        7,
+        18
+      ],
+      "premissa": "E se missões de contato clandestino com os círculos druídicos de Eldroth falhassem por um período?",
+      "efeito_direto": "O exercício incide sobre o vínculo de contato documentado, não sobre toda a resistência.",
+      "repercussao_condicional": "A coordenação local e o conhecimento da situação poderiam diminuir, sem estimativa de comunicação total.",
+      "contrapeso_documentado": "A resistência é descentralizada, mas isso não garante comunicação redundante nem acesso alternativo à floresta.",
+      "nao_inferir": "Não equiparar perda de comunicação a derrota militar nem inventar mensageiros, passagens ou espionagem em escala continental.",
+      "perguntas": [
+        "Quais missões e mensagens dependem desse contato?",
+        "Existem canais paralelos documentados?",
+        "Como o risco de isolamento se manifesta sem rota definida?"
+      ],
+      "geometria": null,
+      "probabilidade": null,
+      "perda_calculada": null,
+      "duracao": null,
+      "impacto_medido": null,
+      "propagacao_automatica": false
+    },
+    {
+      "id": "cenario:xlii:costa-comercio",
+      "titulo": "Perturbação de um elo comercial costeiro",
+      "grupo": "litoral",
+      "tipo": "interrupcao_hipotetica",
+      "estado": "hipotese_de_estudo",
+      "adotado": false,
+      "ocorreu": false,
+      "vinculos_foco": [
+        "vinculo:xli:portomonte-comercio"
+      ],
+      "vinculos_relacionados_apenas_condicionais": [
+        "vinculo:xli:ilhas-costa",
+        "vinculo:xli:abissais-costa"
+      ],
+      "nodos_contextuais": [
+        "fluxo:xli:portomonte",
+        "fluxo:xli:costa-refugios"
+      ],
+      "paginas": [
+        5,
+        14
+      ],
+      "premissa": "E se as trocas comerciais de Portomonte com parte dos assentamentos costeiros fossem dificultadas?",
+      "efeito_direto": "Uma articulação de comércio regional fica em questão; não há catálogo das mercadorias.",
+      "repercussao_condicional": "A vida econômica e o acesso a recursos externos poderiam ser afetados, com extensão indeterminada.",
+      "contrapeso_documentado": "Portomonte possui agricultura local favorecida por purificação ritual da água, mas isso não comprova autossuficiência total nem abastecimento de outros portos.",
+      "nao_inferir": "Não declarar bloqueio naval geral, falta de alimentos, preços elevados ou interrupção da purificação de Deméter.",
+      "perguntas": [
+        "Quais gêneros são importados ou exportados por Portomonte?",
+        "Que assentamentos mantêm comércio direto?",
+        "Como a fronteira móvel do Mar de Sangue alteraria essa hipótese?"
+      ],
+      "geometria": null,
+      "probabilidade": null,
+      "perda_calculada": null,
+      "duracao": null,
+      "impacto_medido": null,
+      "propagacao_automatica": false
+    },
+    {
+      "id": "cenario:xlii:pradarias-pilhagens",
+      "titulo": "Pressão sobre a produção agrícola da Costa Sul",
+      "grupo": "litoral",
+      "tipo": "pressao_hipotetica",
+      "estado": "hipotese_de_estudo",
+      "adotado": false,
+      "ocorreu": false,
+      "vinculos_foco": [
+        "vinculo:xli:caatinga-pradarias"
+      ],
+      "vinculos_relacionados_apenas_condicionais": [
+        "vinculo:xli:portomonte-comercio"
+      ],
+      "nodos_contextuais": [
+        "fluxo:xli:caatinga-grupos",
+        "fluxo:xli:fazendas-costa"
+      ],
+      "paginas": [
+        5,
+        12
+      ],
+      "premissa": "E se grupos que já realizam ataques às pradarias intensificassem sua pressão sobre agricultores locais?",
+      "efeito_direto": "A relação histórica de pilhagem é o objeto do cenário, sem transformar todos os habitantes das terras áridas em agressores.",
+      "repercussao_condicional": "Determinadas comunidades poderiam ter prejuízo na produção, mas não há extensão de lavouras, estoques ou população afetada.",
+      "contrapeso_documentado": "A Costa Sul possui áreas cultivadas e o centro comercial de Portomonte; não há prova de que um sistema substitua o outro.",
+      "nao_inferir": "Não afirmar crise alimentar em toda a Costa Sul, pilhagem por todos os orcs ou dependência de água de Portomonte por todas as pradarias.",
+      "perguntas": [
+        "Quais grupos e povoados participam desses conflitos?",
+        "Os agricultores possuem estoques próprios?",
+        "Quais produtos são realmente afetados?"
+      ],
+      "geometria": null,
+      "probabilidade": null,
+      "perda_calculada": null,
+      "duracao": null,
+      "impacto_medido": null,
+      "propagacao_automatica": false
+    },
+    {
+      "id": "cenario:xlii:grama-abrigo",
+      "titulo": "Restrição do abastecimento discreto de Grama-Cortada",
+      "grupo": "autonomia",
+      "tipo": "interrupcao_hipotetica",
+      "estado": "hipotese_de_estudo",
+      "adotado": false,
+      "ocorreu": false,
+      "vinculos_foco": [
+        "vinculo:xli:grama-fugitivos"
+      ],
+      "vinculos_relacionados_apenas_condicionais": [],
+      "nodos_contextuais": [
+        "fluxo:xli:grama-cultivos",
+        "fluxo:xli:grama-fugitivos"
+      ],
+      "paginas": [
+        18,
+        19
+      ],
+      "premissa": "E se as despensas destinadas a fugitivos não pudessem ser mobilizadas por um período?",
+      "efeito_direto": "A assistência alimentar documentada aos fugitivos ficaria indisponível nesta hipótese local.",
+      "repercussao_condicional": "O acolhimento comunitário poderia mudar, mas nenhum destino externo, grupo dependente ou total de pessoas é conhecido.",
+      "contrapeso_documentado": "O manuscrito registra cultivos diversificados e continuidade produtiva apesar de interrupções de grandes rotas; isso não garante acesso permanente às despensas.",
+      "nao_inferir": "Não localizar Grama-Cortada no continente, inventar exportações para Thargrid ou afirmar fome entre hobbits.",
+      "perguntas": [
+        "Quais reservas são separadas para refugiados?",
+        "A produção consegue responder a uma demanda adicional?",
+        "Quais redes permanecem estritamente locais?"
+      ],
+      "geometria": null,
+      "probabilidade": null,
+      "perda_calculada": null,
+      "duracao": null,
+      "impacto_medido": null,
+      "propagacao_automatica": false
+    },
+    {
+      "id": "cenario:xlii:subsolo-troca",
+      "titulo": "Desarticulação de trocas entre enclaves subterrâneos",
+      "grupo": "autonomia",
+      "tipo": "cenario_composto_independente",
+      "estado": "hipotese_de_estudo",
+      "adotado": false,
+      "ocorreu": false,
+      "vinculos_foco": [
+        "vinculo:xli:svirf-gemas",
+        "vinculo:xli:anoes-svirf"
+      ],
+      "vinculos_relacionados_apenas_condicionais": [
+        "vinculo:xli:minerio-forjas"
+      ],
+      "nodos_contextuais": [
+        "fluxo:xli:svirfneblin",
+        "fluxo:xli:claes-anoes"
+      ],
+      "paginas": [
+        20
+      ],
+      "premissa": "E se os dois sentidos da troca documentada entre certos enclaves svirfneblin e clãs anões deixassem de operar?",
+      "efeito_direto": "O cenário suspende duas transferências locais documentadas, sem assumir uma única rota ou comando subterrâneo.",
+      "repercussao_condicional": "A disponibilidade de gemas, informação, metal trabalhado, alimentos ou proteção poderia mudar entre os parceiros envolvidos.",
+      "contrapeso_documentado": "O texto reconhece enclaves svirfneblin independentes, porém isso não prova substitutos imediatos para parceiros afetados.",
+      "nao_inferir": "Não projetar crise de todas as minas, falência das forjas de Thargrid ou uma rede universal de túneis.",
+      "perguntas": [
+        "Quais enclaves fazem pactos e quais permanecem independentes?",
+        "Que bens são essenciais em cada sentido da troca?",
+        "Há alternativas documentadas entre os parceiros?"
+      ],
+      "geometria": null,
+      "probabilidade": null,
+      "perda_calculada": null,
+      "duracao": null,
+      "impacto_medido": null,
+      "propagacao_automatica": false
+    },
+    {
+      "id": "cenario:xlii:mar-tributo",
+      "titulo": "Pressão tributária marítima sobre comunidades costeiras",
+      "grupo": "litoral",
+      "tipo": "pressao_hipotetica",
+      "estado": "hipotese_de_estudo",
+      "adotado": false,
+      "ocorreu": false,
+      "vinculos_foco": [
+        "vinculo:xli:abissais-costa"
+      ],
+      "vinculos_relacionados_apenas_condicionais": [
+        "vinculo:xli:portomonte-comercio",
+        "vinculo:xli:ilhas-costa"
+      ],
+      "nodos_contextuais": [
+        "fluxo:xli:abissais-marinhos",
+        "fluxo:xli:comunidades-maritimas"
+      ],
+      "paginas": [
+        14,
+        15
+      ],
+      "premissa": "E se os Abissais marinhos ampliassem suas exigências de tributo para permitir pesca, navegação ou passagem?",
+      "efeito_direto": "A hipótese envolve uma exigência documentada como prática de coerção, não um tributo já comprovadamente pago.",
+      "repercussao_condicional": "As comunidades poderiam negociar, resistir ou mudar práticas de navegação; o manuscrito não escolhe um desfecho.",
+      "contrapeso_documentado": "Há comunidades marítimas, navegadores e poderes autônomos do oceano azul; suas capacidades efetivas de proteger cada costa não estão cartografadas.",
+      "nao_inferir": "Não criar arrecadação realizada, bloqueio uniforme do mar, fronteira fixa ou identidade demoníaca para os Abissais marinhos.",
+      "perguntas": [
+        "Quem efetivamente paga ou recusa essas exigências?",
+        "Quais águas são patrulhadas e em que condições variáveis?",
+        "Qual a relação real com o comércio de Portomonte?"
+      ],
+      "geometria": null,
+      "probabilidade": null,
+      "perda_calculada": null,
+      "duracao": null,
+      "impacto_medido": null,
+      "propagacao_automatica": false
+    }
+  ],
+  "invariantes": [
+    "Nenhum cenário ocorreu no cânone, mesmo quando o vínculo de referência é um fato documentado.",
+    "Uma relação impedida em hipótese não derruba automaticamente vínculos a jusante ou adjacentes.",
+    "Coerção e escravidão permanecem nomeadas; pessoas não são mercadorias neutras.",
+    "Tributos exigidos por Abissais marinhos não demonstram pagamento.",
+    "A produção local dos hobbits não demonstra capacidade de exportar para Thargrid.",
+    "Neve e galerias não demonstram hidrografia nem infraestrutura logística nova.",
+    "Uma hipótese envolvendo dois destinos ou dois sentidos de troca não estabelece a mesma rota para ambos.",
+    "Futuro aberto de Drakport e de Thargrid continua aberto.",
+    "Nenhuma simulação cria probabilidades, perdas, volumes, custos ou geometrias."
+  ],
+  "proximos_dados_necessarios": [
+    "Identificação dos trajetos, portos e postos efetivamente operacionais",
+    "Estoques, volumes, capacidade e duração dos suprimentos, se aprovados pela autoria",
+    "Dependência comprovada entre organizações e comunidades específicas",
+    "Decisões topológicas pendentes sobre florestas, subsolo, Rio e Mar",
+    "Periodicidade, eventos históricos e limites temporais das relações documentadas"
+  ]
+}
