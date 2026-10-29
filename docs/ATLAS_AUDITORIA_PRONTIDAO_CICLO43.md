@@ -2,6 +2,16 @@
 
 > **Natureza:** parecer editorial revisável, sem aprovação de opções topológicas ou alteração canônica. Este texto é a versão de leitura do parecer exibido diretamente no HTML do Atlas. Fonte: manuscrito do Hack Carcaça (capítulo I), macrorregiões e Ciclos XXXIV–XLII.
 
+## O critério de maturidade foi corrigido pela autoria
+
+**Revisão de 29/10/2026:** o parecer original abaixo avaliava a maturidade dos *núcleos já documentados*, e não a cobertura de povoamento do continente. A autoria esclareceu que a escala macro exige uma rede muito mais extensa: cerca de 15–20 assentamentos no Rio, 20–30 em Eldroth, 10–15 no entorno de Garganta, 20–25 nas montanhas de Thargrid, 10–15 em Ironwood, 15–20 na Caatinga, 20–30 na Costa do Mar de Sangue, 10–15 ilhas relevantes, 15–20 núcleos submersos e 10–15 assentamentos na cauda. São **referências flexíveis**, não uma lista pronta nem cotas obrigatórias; equivalem a uma ordem de grandeza de **145–205 localidades e ilhas**, antes de incluir metas próprias para Foz, Shadar-Riverie e Grama-Cortada.
+
+**Conclusão atual:** nenhuma das onze macrorregiões está concluída em densidade e diversidade de povoamento. Os quatro polos que apareciam abaixo como “base local suficiente” possuem apenas **âncoras temáticas mais fortes**, e isso não basta para encerrar a macroescala. Continuaremos estruturando a malha continental de comunidades, centros urbanos, assentamentos, ilhas e relações antes de iniciar uma campanha ampla de aprofundamento microterritorial. É permitido desenvolver um lugar-piloto para testar o método, mas isso não representa a maturidade do continente inteiro.
+
+A nova diretriz está registrada em [horizonte-povoamento-macro.json](../data/atlas/horizonte-povoamento-macro.json) e exposta no próprio [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#audit-density). As novas localidades devem permanecer propostas não canônicas até apreciação autoral.
+
+---
+
 A questão desta auditoria é se podemos passar da escala macrorregional ao aprofundamento de lugares, sociedades e mesorregiões. A resposta distingue **prontidão para aprofundamento local** de **prontidão para uma cartografia regional detalhada**.
 
 ## O Crânio e a Garganta
@@ -70,7 +80,9 @@ A cauda de Golzdov fica além do Abismo e acolhe o Templo do Crepúsculo, constr
 
 Além do Mar de Sangue, as águas azuis abrigam tritões e sereias, comunidades submarinas em recifes e cânions, alianças autônomas, rotas conhecidas por correntes e patrulhas contra forças marítimas corrompidas. Há material para aprofundar sociedades, templos, conflitos e navegação, sem inventar um reino oceânico unificado. Mas a faixa entre águas vermelhas e azuis muda com tempestades, correntes e magia; nem uma fronteira fixa nem a posição individual das cidades submarinas foram definidas. Desconhecemos batimetria, distâncias e extensão dos governos locais. **O aprofundamento cultural é viável; mapas de regiões submarinas dependem de um modelo cartográfico para a fronteira variável.**
 
-## Parecer geral
+## Parecer geral — leitura histórica anterior, superada pela revisão de densidade
+
+O texto do parecer abaixo foi preservado como registro do critério anterior de ancoragem temática. A **decisão editorial vigente** é continuar o povoamento macrorregional, não considerar essas regiões prontas para um aprofundamento continental.
 
 A Carcaça já sustenta aprofundamento localizado em **Garganta, Costa Sul, Eldroth e Thargrid**. O **Rio Ancestral, a Caatinga, a Foz, a Cauda e as Águas Azuis** permitem desenvolver núcleos sociais e lugares documentados, mas ainda não uma mesogeografia completa. **Shadar-Riverie e Grama-Cortada** exigem definições macro prioritárias. Assim, o caminho editorial mais seguro é começar por locais com âncoras firmes enquanto decidimos as relações espaciais que impedem um mapa continental confiável. As oito questões da oficina topológica permanecem abertas: sobreposição Shadar–Gualápolis–Boca, acesso foz–cauda, bioma de Shadar, continuidade Ironwood–Eldroth, conexão dos subterrâneos, representação da fronteira marítima móvel, posição de Grama-Cortada e nascentes do Rio Ancestral. **Este parecer não aprova nenhuma dessas alternativas.**
 
