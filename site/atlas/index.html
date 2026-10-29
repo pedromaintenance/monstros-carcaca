@@ -411,6 +411,40 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .chrono-rules div{border-left:3px solid #a69a7b;background:#2b3026;padding:11px;color:#c6d5c6;font-size:11px;line-height:1.7}
 @media(max-width:1060px){.chrono-phases{grid-template-columns:repeat(3,minmax(0,1fr))}}
 @media(max-width:660px){.chrono-phases{grid-template-columns:repeat(2,minmax(0,1fr))}.chrono-centers,.chrono-future{grid-template-columns:1fr}}
+
+/* Ciclo XLI — redes materiais documentais, nunca geometria ou volumes de carga */
+.material-stats{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 9px}
+.material-stats span{font-size:10px;background:#252b24;color:#decfae;border:1px solid #6a6048;padding:6px 9px;border-radius:8px}
+.material-filters{display:flex;flex-wrap:wrap;gap:12px;margin:13px 0}
+.material-filters label{color:#c8d6c7;font-size:10px}
+.material-filters select{background:#1e2923;color:#d9e4d6;border:1px solid #61745c;border-radius:6px;padding:6px;max-width:200px;font-size:11px;margin-left:5px}
+.material-context{font-size:11px;color:#bdcabb;line-height:1.75;padding:10px 12px;background:#263027;border-left:3px solid #a7ab80;border-radius:5px}
+.material-nodes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.material-node{background:#1a2820;border:1px solid #4b624f;border-radius:10px;padding:12px;text-align:left;min-height:104px;display:flex;flex-direction:column;gap:8px;color:#e3e9d8}
+.material-node.selected,.material-node:hover{border-color:#d2bc8c;background:#333426}
+.material-node span{color:#abbca8;font-size:10px}
+.material-node b{font-size:12px;line-height:1.45}
+.material-node small{font-size:9px;color:#a7bbaa;margin-top:auto}
+.material-relations,.material-gaps,.material-rules{display:grid;gap:10px}
+.material-relation{background:#1b2923;border:1px solid #4f6456;border-radius:10px;padding:13px}
+.material-relation-meta{font-size:10px;color:#b6d2c0;margin-bottom:9px;text-transform:capitalize}
+.material-relation-path{display:grid;grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr);align-items:center;gap:8px}
+.material-relation-path button{font:inherit;border:1px solid #526c59;border-radius:8px;padding:8px 9px;background:#2d3b2e;color:#e9d7ad;text-align:left;overflow-wrap:anywhere;font-size:11px;line-height:1.5}
+.material-relation-path span{text-align:center;font-size:17px;color:#c3ad81}
+.material-relation p{color:#cedacd;font-size:11px;line-height:1.7}
+.material-relation>small{font-size:10px;color:#a9bcae;line-height:1.6;display:block}
+.material-gaps{grid-template-columns:repeat(2,minmax(0,1fr))}
+.material-gaps article{border-radius:10px;border:1px solid #715e48;background:#302c23;padding:12px}
+.material-gaps small{font-size:9px;color:#dfbf90}
+.material-gaps p{font-size:11px;line-height:1.7;color:#e6dfc7}
+.material-gaps button{border:0;text-align:left;background:transparent;color:#dcbf88;text-decoration:underline;text-underline-offset:3px;padding:0;font-size:10px}
+.material-rules>p{font-size:11px;line-height:1.7;color:#d5d6c6}
+.material-rules>div{border-left:3px solid #9ba280;background:#253128;padding:10px 13px;font-size:11px;line-height:1.7;color:#c6d2c3}
+.material-inspector-link{display:block;width:100%;padding:9px;text-align:left;background:#28362b;border:1px solid #4a604c;border-radius:8px;margin:6px 0}
+.material-inspector-link b{display:block;color:#e8d1a6;font-size:10px}.material-inspector-link small{display:block;margin-top:5px;color:#b9c8b8;font-size:10px;line-height:1.5}
+.material-inspector-gap{border-left:2px solid #ac956b;padding-left:9px;font-size:11px}
+.material-empty{font-size:11px;color:#c6d5c6}
+@media(max-width:670px){.material-nodes,.material-gaps{grid-template-columns:1fr}.material-relation-path{grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr)}}
 </style>
 </head>
 <body>
@@ -440,6 +474,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <section id="cartographicCharter" class="env-section" aria-label="Carta cartográfica continental"><p class="env-explain">Carregando leitura cartográfica do continente...</p></section>
   <section id="continentalHydrology" class="env-section" aria-label="Hidrografia continental"><p class="env-explain">Carregando águas e zonas hidrográficas da Carcaça...</p></section>
   <section id="chronocartography" class="env-section" aria-label="Cronocartografia do poder"><p class="env-explain">Carregando os marcos e esferas de poder através dos séculos...</p></section>
+  <section id="materialCirculation" class="env-section" aria-label="Circulação material da Carcaça"><p class="env-explain">Carregando redes de produção, abastecimento, refúgio e informação...</p></section>
   <section id="topologyChoices" class="env-section" aria-label="Oficina de alternativas topológicas"><p class="env-explain">Carregando matriz de decisões sobre o continente...</p></section>
   <div class="macro-layout">
     <div id="macroCards" class="macro-grid"><div class="loader">Carregando as regiões documentadas...</div></div>
@@ -495,6 +530,8 @@ import {buildContinentalHydrology} from "./continental-hydrology.mjs";
 import {initContinentalHydrology} from "./continental-hydrology-ui.mjs";
 import {buildChronocartography} from "./chronocartography.mjs";
 import {initChronocartography} from "./chronocartography-ui.mjs";
+import {buildMaterialCirculation} from "./material-circulation.mjs";
+import {initMaterialCirculation} from "./material-circulation-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -519,7 +556,8 @@ const paths={
   topology:"data/atlas/matriz-topologica-ciclo37.json",
   charter:"data/atlas/carta-cartografica-ciclo38.json",
   hydrology:"data/atlas/hidrografia-continental-ciclo39.json",
-  chrono:"data/atlas/cronocartografia-ciclo40.json"
+  chrono:"data/atlas/cronocartografia-ciclo40.json",
+  material:"data/atlas/circulacao-material-ciclo41.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -837,6 +875,7 @@ $("export").addEventListener("click",()=>{
     state.charter=buildCartographicCharter(loaded.charter,state.physical,state.interfaces,state.topology);
     state.hydrology=buildContinentalHydrology(loaded.hydrology,state.physical,state.environments,state.interfaces,state.topology);
     state.chrono=buildChronocartography(loaded.chrono,state.macro,state.networks,state.physical,state.topology);
+    state.material=buildMaterialCirculation(loaded.material,state.macro,state.networks,state.chrono);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -846,6 +885,7 @@ $("export").addEventListener("click",()=>{
     initCartographicCharter($("cartographicCharter"),state.charter,macroDiveInto);
     initContinentalHydrology($("continentalHydrology"),state.hydrology,macroDiveInto);
     initChronocartography($("chronocartography"),state.chrono);
+    initMaterialCirculation($("materialCirculation"),state.material);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -866,6 +906,7 @@ $("export").addEventListener("click",()=>{
     $("cartographicCharter").textContent="A carta cartográfica não pôde ser carregada.";
     $("continentalHydrology").textContent="A hidrografia continental não pôde ser carregada.";
     $("chronocartography").textContent="A cronocartografia não pôde ser carregada.";
+    $("materialCirculation").textContent="A circulação material não pôde ser carregada.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
