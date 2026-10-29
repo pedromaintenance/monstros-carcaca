@@ -1,0 +1,81 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {readFileSync,mkdtempSync,writeFileSync,rmSync} from "node:fs";
+import {execFileSync} from "node:child_process";
+import {join} from "node:path";
+import {tmpdir} from "node:os";
+import {buildChronocartography} from "../site/atlas/chronocartography.mjs";
+const file=p=>JSON.parse(readFileSync(new URL("../"+p,import.meta.url),"utf8"));
+const source=file("data/atlas/cronocartografia-ciclo40.json");
+const macro=file("data/atlas/macrorregioes-carcaca.json");
+const networks=file("data/atlas/redes-historicas-ciclo33.json");
+const physical=file("data/atlas/geografia-fisica-ciclo34.json");
+const topology=file("data/atlas/matriz-topologica-ciclo37.json");
+const build=x=>buildChronocartography(x,macro,networks,physical,topology);
+const change=fn=>{const c=structuredClone(source);fn(c);return c};
+test("Atlas XL: 17 eventos, 14 esferas, 7 futuros em aberto, seis períodos sem fronteiras",()=>{
+ const x=build(source);
+ assert.deepEqual(x.totais,{fases:6,eventos:17,polos:14,futuros_em_aberto:7,fronteiras_confirmadas:0});
+ assert.equal(x.altera_canon,false);
+ assert.equal(source.aprovacao_autoral,false);
+ assert.deepEqual(x.fases.map(p=>[p.inicio_ec,p.fim_ec]),[[0,500],[501,874],[875,909],[910,982],[983,998],[999,999]]);
+ assert.ok(x.eventos.every(e=>e.geometria===null&&e.fronteira_confirmada===false&&e.rota_confirmada===false));
+ assert.ok(x.polos.every(p=>p.inicia_no_ano===null&&p.nao_retroprojetar===true));
+ assert.ok(x.futuros_em_aberto.every(p=>p.acontecimento_confirmado===false&&p.ano_ec===null));
+});
+test("Atlas XL: 910 EC mantém ocupação e resistência como papéis distintos",()=>{
+ const x=build(source),ev=x.eventos.find(e=>e.ano_ec===910);
+ assert.deepEqual(ev.leitura_por_setor,{rio:"ocupacao",thargrid:"resistencia"});
+ assert.equal(x.eventos.find(e=>e.ano_ec===0).setores.length,11);
+ assert.ok(Object.values(x.eventos.find(e=>e.ano_ec===0).leitura_por_setor).every(role=>role==="formacao"));
+ assert.equal(x.eventos.find(e=>e.ano_ec===886).ref_marco_fisico,"geo-xxxiv:coluna-dorsal");
+ assert.equal(x.eventos.find(e=>e.ano_ec===886).setores.length,0);
+});
+test("Atlas XL: 711, 983, 984 e 999 distinguem os sítios e não afirmam passagem",()=>{
+ const x=build(source),find=y=>x.eventos.find(e=>e.ano_ec===y);
+ assert.equal(find(711).leitura_por_setor.foz,"sede");
+ assert.equal(find(983).leitura_por_setor.foz,"destruicao");
+ assert.equal(find(984).ref_marco_fisico,"geo-xxxiv:gualapolis");
+ assert.equal(find(999).ref_marco_fisico,"geo-xxxiv:cauda");
+ assert.equal(find(999).ref_fase,"fase:xl:crepusculo");
+ assert.ok(find(983).leitura_editorial.includes("Demônios"));
+ assert.ok(find(999).leitura_editorial.includes("não deduzir ponte"));
+});
+test("Atlas XL: rejeita soberanias, eventos e polos retroprojetados ou inventados",()=>{
+ assert.throws(()=>build(change(x=>x.aprovacao_autoral=true)),/salvaguarda autoral/);
+ assert.throws(()=>build(change(x=>x.fases[0].geometria={lat:0})),/fronteiras ou datas/);
+ assert.throws(()=>build(change(x=>x.fases[1].inicio_ec=500)),/sobreposição ou lacuna/);
+ assert.throws(()=>build(change(x=>x.eventos[0].fronteira_confirmada=true)),/convertido em soberania/);
+ assert.throws(()=>build(change(x=>x.eventos[0].leitura_por_setor.garganta="ocupacao")),/0 EC não é/);
+ assert.throws(()=>build(change(x=>x.eventos[11].leitura_por_setor.thargrid="ocupacao")),/910 EC confundiu/);
+ assert.throws(()=>build(change(x=>x.eventos[0].ref_cronologia="tempo-xxxiii:inexistente")),/Evento cronocartográfico/);
+ assert.throws(()=>build(change(x=>x.eventos[4].ref_fase="fase:xl:dominio")),/período incorreto/);
+ assert.throws(()=>build(change(x=>x.eventos[9].ref_marco_fisico="geo-xxxiv:inexistente")),/Marco físico/);
+ assert.throws(()=>build(change(x=>x.polos[0].inicia_no_ano=875)),/projetado indevidamente/);
+ assert.throws(()=>build(change(x=>x.polos[0].fronteira_confirmada=true)),/projetado indevidamente/);
+ assert.throws(()=>build(change(x=>x.futuros_em_aberto[0].acontecimento_confirmado=true)),/futuro em aberto/);
+ assert.throws(()=>build(change(x=>x.futuros_em_aberto[0].ano_ec=1000)),/futuro em aberto/);
+ assert.throws(()=>build(change(x=>x.polos.pop())),/Panorama de polos incompleto/);
+});
+test("Atlas XL: painel e JSON integram-se ao Pages e scripts sintaticamente válidos",()=>{
+ const html=readFileSync(new URL("../site/atlas/index.html",import.meta.url),"utf8");
+ const ui=readFileSync(new URL("../site/atlas/chronocartography-ui.mjs",import.meta.url),"utf8");
+ const ci=readFileSync(new URL("../.github/workflows/publicar-atlas-pages.yml",import.meta.url),"utf8");
+ assert.match(html,/id="chronocartography"/);
+ assert.match(html,/chronocartography-ui\.mjs/);
+ assert.match(html,/buildChronocartography\(loaded\.chrono,state\.macro,state\.networks,state\.physical,state\.topology\)/);
+ assert.match(html,/initChronocartography\(\$\("chronocartography"\),state\.chrono\)/);
+ assert.match(ci,/data\/atlas\/cronocartografia-ciclo40\.json/);
+ assert.match(ui,/data-chrono-phase/);
+ assert.match(ui,/data-chrono-event/);
+ assert.match(ui,/data-chrono-tab/);
+ assert.doesNotMatch(ui,/(localStorage|sessionStorage|indexedDB)/);
+ const t=mkdtempSync(join(tmpdir(),"chronocarca-"));
+ try{
+   const script=html.match(/<script type="module">([\s\S]*?)<\/script>/);
+   assert.ok(script);
+   const p=join(t,"index.mjs");
+   writeFileSync(p,script[1],"utf8");
+   execFileSync(process.execPath,["--check",p],{stdio:"pipe"});
+ }finally{rmSync(t,{recursive:true,force:true})}
+});
