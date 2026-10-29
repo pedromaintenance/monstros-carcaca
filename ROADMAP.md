@@ -557,3 +557,13 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Não inventar comércio direto entre Caatinga e Portomonte nem declarar ataque histórico contra Portomonte.
 - [x] Adicionar dossiê, JSON, schema, validador com referências reais, seis índices, API ESM, testes e atualizações do diário.
 - [ ] **XXIV — próximo horizonte de expansão:** cotidiano de Portomonte e sociedades civis da Costa Sul (trabalho, alimento, crenças, educação, comércio marítimo), sem repetir ciclos de diplomacia, ataques costeiros ou revisão canônica.
+
+
+## Ciclo XXIV — Concluído: a vida civil da Costa Sul e de Portomonte
+
+- [x] Conferir fontes autorais do Hack (pp. 5, 12, 14, 15), separando o comércio documentado da cidade de rotas não verificadas.
+- [x] Produzir 36 hipóteses sociais não canônicas: 10 domésticas, 6 de trabalho, 6 de saberes, 6 de circulação, 4 tensões civis, 4 vinhetas.
+- [x] Preservar 10 fatos do manuscrito com limites de inferência, 13 vínculos a propostas antigas e 10 perguntas pendentes.
+- [x] Integrar esquema, validador, gerador de índices, API ESM, testes Python/Node e dossiê completo.
+- [x] Manter os fatos materiais: purificação agrícola não equivale a água potável; importância comercial não equivale a soberania sobre a Costa Sul.
+- [ ] **XXV — próximo ciclo:** investigação da organização civil de Portomonte e do trabalho que sustenta os ritos do templo de Deméter, preservando aprovação autoral explícita.
