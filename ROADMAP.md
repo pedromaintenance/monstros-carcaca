@@ -778,3 +778,16 @@ Documentação: [ATLAS_CIRCULACAO_MATERIAL_CICLO41.md](docs/ATLAS_CIRCULACAO_MAT
 **Ciclo XLIII recomendado:** auditoria e **matriz de prontidão cartográfica continental**: consolidar as decisões autorais bloqueantes dos ciclos XXXIV–XLII, estabelecer critérios mínimos de desenho e identificar quais macrorregiões podem avançar à mesoescala. Evitar novas camadas sobre topologia ainda indeterminada.
 
 [Documento do Ciclo XLII](docs/ATLAS_DEPENDENCIAS_VULNERABILIDADES_CICLO42.md).
+
+## Ciclo XLIII — Parecer regional e prontidão para mesoescala (2026-10-29)
+
+- [x] Auditar as 11 macrorregiões usando o manuscrito e os ciclos XXXIV–XLII.
+- [x] Apresentar um parágrafo completo por região **dentro do HTML** do Atlas, com fatos, lacunas e indicação de aprofundamento.
+- [x] Distinguir base local suficiente (4), aprofundamento condicionado (5) e decisão macro prioritária (2), como opinião editorial revisável.
+- [x] Incluir conclusão de prontidão continental e referência às oito decisões topológicas ainda pendentes.
+- [x] Manter os textos estáticos e legíveis, mesmo sem carregar o JavaScript ou o JSON do Atlas.
+- [x] Incluir CSS responsivo, navegação por região, versão documental e testes de integridade na CI/Pages.
+- [ ] **Aguardar decisão da autoria:** iniciar aprofundamento seletivo nas regiões com base suficiente ou continuar resolvendo a macrogeografia antes de qualquer subdivisão.
+- [ ] Nenhuma hipótese espacial do XXXVII foi adotada ou aprovada por esta auditoria.
+
+[Auditoria diretamente no Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#continentalAudit) · [Parecer em Markdown](docs/ATLAS_AUDITORIA_PRONTIDAO_CICLO43.md).
