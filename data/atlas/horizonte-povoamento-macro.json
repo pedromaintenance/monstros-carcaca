@@ -4,8 +4,8 @@
   "estado": "diretriz_editorial_autoral_ainda_nao_canonica",
   "altera_canon": false,
   "aprovacao_autoral": false,
-  "contexto": "Expectativa expressa pela autoria: o macro não estará suficientemente desenvolvido com apenas uma ou duas âncoras por região. O objetivo é uma rede continental diversa e conectada, não simples listagem de nomes.",
-  "metodo": "Os intervalos são referências de densidade flexíveis inferidas dos números aproximados expressos pela autoria, não metas rígidas nem dados presentes no cânone. Ainda é necessário inventariar e deduplicar âncoras existentes antes de aferir progresso.",
+  "contexto": "Expectativa expressa pela autoria: o macro não estará suficientemente desenvolvido com apenas uma ou duas âncoras por região. O objetivo é uma rede continental diversa e conectada, não simples listagem de nomes. A malha inclui assentamentos de criaturas fantásticas e de povos não humanoides, além de habitantes humanoides tradicionais.",
+  "metodo": "Os intervalos são referências de densidade flexíveis inferidas dos números aproximados expressos pela autoria, não metas rígidas nem dados presentes no cânone. Ainda é necessário inventariar e deduplicar âncoras existentes antes de aferir progresso. A unidade assentamento inclui habitações coletivas de criaturas extraordinárias; habitats não sociais e covis solitários são rastreados sem inflar os assentamentos.",
   "frentes": [
     {
       "id": "frente:macro:rio",
@@ -21,7 +21,10 @@
       "contagem_proposta": null,
       "contagem_aprovada": null,
       "auditoria_quantitativa_pendente": true,
-      "criar_automaticamente": false
+      "criar_automaticamente": false,
+      "inclui_assentamentos_de_criaturas": true,
+      "auditar_habitats_magicos_e_ecologicos": true,
+      "meta_reservada_a_humanoides": false
     },
     {
       "id": "frente:macro:eldroth",
@@ -37,7 +40,10 @@
       "contagem_proposta": null,
       "contagem_aprovada": null,
       "auditoria_quantitativa_pendente": true,
-      "criar_automaticamente": false
+      "criar_automaticamente": false,
+      "inclui_assentamentos_de_criaturas": true,
+      "auditar_habitats_magicos_e_ecologicos": true,
+      "meta_reservada_a_humanoides": false
     },
     {
       "id": "frente:macro:garganta-entorno",
@@ -53,7 +59,10 @@
       "contagem_proposta": null,
       "contagem_aprovada": null,
       "auditoria_quantitativa_pendente": true,
-      "criar_automaticamente": false
+      "criar_automaticamente": false,
+      "inclui_assentamentos_de_criaturas": true,
+      "auditar_habitats_magicos_e_ecologicos": true,
+      "meta_reservada_a_humanoides": false
     },
     {
       "id": "frente:macro:thargrid-montanhas",
@@ -69,7 +78,10 @@
       "contagem_proposta": null,
       "contagem_aprovada": null,
       "auditoria_quantitativa_pendente": true,
-      "criar_automaticamente": false
+      "criar_automaticamente": false,
+      "inclui_assentamentos_de_criaturas": true,
+      "auditar_habitats_magicos_e_ecologicos": true,
+      "meta_reservada_a_humanoides": false
     },
     {
       "id": "frente:macro:ironwood",
@@ -85,7 +97,10 @@
       "contagem_proposta": null,
       "contagem_aprovada": null,
       "auditoria_quantitativa_pendente": true,
-      "criar_automaticamente": false
+      "criar_automaticamente": false,
+      "inclui_assentamentos_de_criaturas": true,
+      "auditar_habitats_magicos_e_ecologicos": true,
+      "meta_reservada_a_humanoides": false
     },
     {
       "id": "frente:macro:caatinga",
@@ -101,7 +116,10 @@
       "contagem_proposta": null,
       "contagem_aprovada": null,
       "auditoria_quantitativa_pendente": true,
-      "criar_automaticamente": false
+      "criar_automaticamente": false,
+      "inclui_assentamentos_de_criaturas": true,
+      "auditar_habitats_magicos_e_ecologicos": true,
+      "meta_reservada_a_humanoides": false
     },
     {
       "id": "frente:macro:costa",
@@ -117,7 +135,10 @@
       "contagem_proposta": null,
       "contagem_aprovada": null,
       "auditoria_quantitativa_pendente": true,
-      "criar_automaticamente": false
+      "criar_automaticamente": false,
+      "inclui_assentamentos_de_criaturas": true,
+      "auditar_habitats_magicos_e_ecologicos": true,
+      "meta_reservada_a_humanoides": false
     },
     {
       "id": "frente:macro:ilhas",
@@ -133,7 +154,10 @@
       "contagem_proposta": null,
       "contagem_aprovada": null,
       "auditoria_quantitativa_pendente": true,
-      "criar_automaticamente": false
+      "criar_automaticamente": false,
+      "inclui_assentamentos_de_criaturas": true,
+      "auditar_habitats_magicos_e_ecologicos": true,
+      "meta_reservada_a_humanoides": false
     },
     {
       "id": "frente:macro:submersos",
@@ -149,7 +173,10 @@
       "contagem_proposta": null,
       "contagem_aprovada": null,
       "auditoria_quantitativa_pendente": true,
-      "criar_automaticamente": false
+      "criar_automaticamente": false,
+      "inclui_assentamentos_de_criaturas": true,
+      "auditar_habitats_magicos_e_ecologicos": true,
+      "meta_reservada_a_humanoides": false
     },
     {
       "id": "frente:macro:cauda",
@@ -165,7 +192,10 @@
       "contagem_proposta": null,
       "contagem_aprovada": null,
       "auditoria_quantitativa_pendente": true,
-      "criar_automaticamente": false
+      "criar_automaticamente": false,
+      "inclui_assentamentos_de_criaturas": true,
+      "auditar_habitats_magicos_e_ecologicos": true,
+      "meta_reservada_a_humanoides": false
     }
   ],
   "frentes_sem_meta_numerica": [
@@ -192,6 +222,9 @@
   ],
   "portoes_de_qualidade": [
     "Cada localidade proposta deve ter nome distintivo e função territorial; nomes genéricos em série não contam como povoamento realizado.",
+    "Assentamentos de goblins, fadas, criaturas coloniais e outros seres fantásticos entram em pé de igualdade com assentamentos de humanoides nas contagens; não há cota apenas humanoide.",
+    "Toda frente deve investigar locais de seres fantásticos e cadeias ecológicas; quando forem habitats, covis individuais, território de caça ou ruínas vazias, registrá-los separadamente para não inflar a quantidade de assentamentos.",
+    "Um núcleo coletivo multiespécie conta uma vez; não duplicar por povo ou por transformação mágica do habitat.",
     "Separar assentamento vivo, ruína, fortaleza ocupada, local sagrado, ilha geográfica e cidade submarina; cada frente conta apenas sua unidade.",
     "Registrar macrorregião, bioma, povo(s), escala relativa, autoridade, subsistência/atividade, relações com outras localidades, tensão histórica e estatuto da fonte.",
     "Uma localidade sem fonte deve permanecer proposta até revisão autoral; nenhuma contagem de meta aprova assentamentos automaticamente.",
@@ -206,7 +239,7 @@
     {
       "id": "inventariar",
       "titulo": "Inventariar e deduplicar",
-      "descricao": "Reconciliar nomes do manuscrito, lugares catalogados, propostas e assentamentos do repositório; separar continente, instituição, ruína e núcleo habitado.",
+      "descricao": "Reconciliar nomes do manuscrito, lugares catalogados, propostas e assentamentos do repositório; separar continente, instituição, ruína e núcleo habitado. Incluir povoados de goblins, enclaves feéricos, colônias organizadas, covis, habitats e outras formas de habitação extraordinária, distinguindo o que conta como assentamento.",
       "concluida": false
     },
     {
@@ -218,7 +251,7 @@
     {
       "id": "propor",
       "titulo": "Produzir núcleos diferenciados",
-      "descricao": "Construir assentamentos por frente regional em lotes pequenos, com identidade e vínculos sociais; submeter decisões e origens ao controle autoral.",
+      "descricao": "Construir assentamentos por frente regional em lotes pequenos, com identidade e vínculos sociais; submeter decisões e origens ao controle autoral. As séries devem conter propostas de assentamentos de criaturas, não só de humanoides, e respeitar biologia, cosmologia e relações ecológicas próprias.",
       "concluida": false
     },
     {
@@ -235,5 +268,72 @@
     }
   ],
   "fonte_de_metas": "feedback_direto_da_autoria_2026-10-29",
-  "observacao_soma": "As dez frentes representam aproximadamente 145 a 205 alvos de diferentes tipos (assentamentos e ilhas) nos intervalos propostos, antes de definir metas para Foz, Shadar-Riverie e Grama-Cortada. Não é contagem de localidades já existentes."
+  "observacao_soma": "As dez frentes representam aproximadamente 145 a 205 alvos de diferentes tipos (assentamentos e ilhas) nos intervalos propostos, antes de definir metas para Foz, Shadar-Riverie e Grama-Cortada. Não é contagem de localidades já existentes. Os alvos de assentamentos incluem comunidades de criaturas fantásticas; covis e habitats ecológicos individuais permanecem registros adicionais, não parte da soma de assentamentos.",
+  "povoamento_criaturas": {
+    "regra_central": "Criaturas fantásticas também habitam, fundam, constroem, ocupam, disputam ou transformam localidades. Assentamento não é categoria reservada a humanos, elfos, anões e outros humanoides convencionais.",
+    "inclusao_obrigatoria": true,
+    "exemplos_de_povos_a_considerar_sem_afirmar_presenca_em_cada_regiao": [
+      "goblins e outros goblinoides",
+      "fadas e cortes feéricas não necessariamente ligadas à Corte shadow fey",
+      "povos anfíbios ou submersos",
+      "miconídeos e coletivos fúngicos, se propostos e aprovados",
+      "criaturas coloniais ou sociais extraordinárias",
+      "mortos-vivos organizados, quando a organização for demonstrada",
+      "povos monstruosos, metamorfos ou não humanoides de distintas inteligências"
+    ],
+    "formas_possiveis_de_ocupacao": [
+      {
+        "tipo": "assentamento_permanente",
+        "criterio": "Comunidade que ocupa lugar duradouro, mesmo sem casas humanas ou forma urbana, com padrão de residência e interação coletiva."
+      },
+      {
+        "tipo": "assentamento_sazonal",
+        "criterio": "Núcleo coletivo de ocupação recorrente ou estação conhecida; registrar variação e não tratá-lo como cidade permanente."
+      },
+      {
+        "tipo": "colonia_organizada",
+        "criterio": "Organização persistente de seres fantásticos (colmeias, ninhos comunitários, micélios habitados, cidades recifais, complexos de túneis), com papel social/ecológico identificável."
+      },
+      {
+        "tipo": "dominio_feerico",
+        "criterio": "Corte, enclave, clareira habitada ou outro regime de habitação de fadas; não presumir alinhamento automático à aristocracia shadow fey."
+      },
+      {
+        "tipo": "covil_individual",
+        "criterio": "Morada ou território recorrente de ser singular; catalogar como covil, NÃO contar automaticamente como assentamento coletivo."
+      },
+      {
+        "tipo": "habitat_ecologico",
+        "criterio": "Área de alimentação, criação, reprodução, migração, decomposição, influência mágica ou disputa; catalogar no mapa ecológico, NÃO contar como assentamento por si só."
+      },
+      {
+        "tipo": "ruina_ou_local_desabitado",
+        "criterio": "Lugar que não comprova comunidade habitante atual; não contar automaticamente como núcleo povoado."
+      }
+    ],
+    "politica_de_contagem": "Um assentamento coletivo de goblins, fadas ou qualquer criatura fantástica tem o mesmo direito de entrar nas faixas regionais que um assentamento humanoide. Covis solitários, habitats, áreas de caça, rotas migratórias, ruínas vazias e ilhas apenas geográficas ficam registrados como lugares ecológicos ou físicos, fora da contagem de assentamentos, salvo evidência de comunidade habitante organizada. Um assentamento misto conta uma única vez, não uma por espécie.",
+    "ecologia_integral": "Além dos assentamentos, registrar refúgios, ninhos, colônias, territórios, locais de reprodução, alimentação, migração, predadores, presas, decompositores, mutualismos e fenômenos mágicos; não forçar fauna não social a formar cidades.",
+    "campos_minimos_da_localidade": [
+      "habitantes_especies_ou_coletivos_e_status_da_fonte",
+      "organizacao_social_ou_tipo_de_colonia",
+      "forma_de_habitar_e_arquitetura_biologica_magica_ou_material",
+      "permanencia_sazonalidade_ou_mobilidade",
+      "ecologia_sustento_e_ciclo_de_vida_quando_conhecidos",
+      "relacoes_de_coexistencia_troca_conflito_ou_mutualismo",
+      "autoridade_ou_relacao_com_poder_quando_existente",
+      "estatuto_documentado_proposto_ou_aprovado"
+    ],
+    "cuidados": [
+      "Não transformar toda criatura em monstro hostil ou toda espécie em uma facção única.",
+      "A existência de goblins, fadas ou outra espécie em D&D não prova presença automática na Carcaça nem num setor específico.",
+      "Espécies não implicam arquitetura, religião, idioma, tecnologia, organização política ou moralidade homogêneas.",
+      "Criaturas não sociais também têm papel ecológico e locais significativos, mas isso não significa fundar povoamentos.",
+      "Relações entre predador e presa, colônia e hospedeiro, seres feéricos e assentamentos humanos não são necessariamente guerras.",
+      "Evidências da ecologia proposta de Eldroth permanecem propostas; nenhuma nova criatura obtém assentamento canônico por associação.",
+      "Assentamentos de criaturas e dos humanoides podem coexistir, competir, compor comunidades mistas ou ocupar escalas espaciais diferentes sem deduzir coordenadas."
+    ],
+    "auditoria_regional": "Em cada frente regional, examinar assentamentos de humanoides, goblinoides, feéricos, seres não humanoides, mortos-vivos organizados e outras comunidades quando houver plausibilidade narrativa/ecológica; registrar também habitats e covis não contáveis. Não impor porcentagens raciais ou cotas artificiais.",
+    "nenhuma_especie_automaticamente_canonica": true,
+    "classificacoes_nao_sao_presenca_confirmada": true
+  }
 }
