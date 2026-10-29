@@ -72,7 +72,7 @@ test("XLV: interface alterna 18 comunidades e 10 habitats com inspeção e fonte
  const el={innerHTML:"",listeners:{},addEventListener(k,fn){this.listeners[k]=fn}};
  initSettlementExpansion(el,build());
  assert.equal((el.innerHTML.match(/class="expansion-card(?: active)?"/g)||[]).length,18);
- assert.match(el.innerHTML,/0 novos assentamentos canonizados/);
+ assert.match(el.innerHTML,/<b>0<\/b><span>novos assentamentos canonizados<\/span>/);
  assert.match(el.innerHTML,/Rio Ancestral e Eldroth/);
  el.listeners.click({target:{closest(k){return k==="[data-expansion-view]"?{dataset:{expansionView:"habitats"}}:null}}});
  assert.equal((el.innerHTML.match(/class="expansion-card(?: active)?"/g)||[]).length,10);
