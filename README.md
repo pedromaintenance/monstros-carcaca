@@ -72,6 +72,14 @@ A [base estruturada](data/worldbuilding/meio-demonios-sociedades-ciclo22.json), 
 
 Nenhuma pátria, lei, rito oficial, aldeia do Abismo, pacto familiar obrigatório ou NPC histórico foi criado. O material é disponibilizado em `dist/carcaca/half-demon-societies.json` com índices e funções ESM `getHalfDemonSocieties`, `getHalfDemonSocietiesIndexes`, `getHalfDemonSocietyEntry` e `searchHalfDemonSocieties`. As grandes revisões autorais continuam adiadas.
 
+## Ciclo XXIII — A Caatinga habitada: água, trabalho e memória
+
+O [dossiê histórico-cultural do Ciclo XXIII](docs/CAATINGA_VIDA_CIVIL_CICLO23.md) amplia a vida civil do Além Sul **sem repetir os povoados, clãs e NPCs já propostos** nos primeiros ciclos da Caatinga. Seus temas são família, cuidado, trabalho invisível, reparação de ferramentas, direitos de acesso à água, circulação de pessoas, diferentes memórias da aliança entre orcs e humanos em **351 EC**, e relações contraditórias com a Costa Sul.
+
+A [base estruturada](data/worldbuilding/caatinga-vida-civil-ciclo23.json) reúne **12 afirmações rastreáveis no manuscrito** (pp. 5, 9 e 12), **40 propostas socioculturais** (12 domínios, 6 circuitos materiais, 6 dilemas da água, 6 mobilidades, 5 relações regionais, 5 vinhetas hipotéticas), **12 referências a registros anteriores** e **10 perguntas ainda abertas**. O atlas permanece com `regiao:caatinga` e **nenhum lugar factual atribuído à região**.
+
+O export `dist/carcaca/caatinga-civil-life.json` e seus seis índices permitem leitura via `getCaatingaCivilLife`, `getCaatingaCivilLifeIndexes`, `getCaatingaCivilLifeEntry` e `searchCaatingaCivilLife`. A província não ganhou cidade, governo, fonte potável, rota, festival ou evento histórico inventados. O trabalho não transforma saques regionais em culpa étnica coletiva nem a água agrícola de Portomonte em água comprovadamente potável.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
