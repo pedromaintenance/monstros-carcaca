@@ -3823,6 +3823,70 @@ def validar_costa_sul_civil_xxiv():
     print("Ciclo XXIV: 10 fatos, 36 propostas, 13 referências; zero canonização.")
 
 
+
+def validar_portomonte_templo_governo_xxv():
+    """Validação histórica e material: decisões ficam abertas até aprovação autoral."""
+    d=load("data/worldbuilding/portomonte-templo-governo-ciclo25.json")
+    schema=load("schemas/portomonte-templo-governo-xxv.schema.json")
+    Draft202012Validator.check_schema(schema)
+    issues=list(Draft202012Validator(schema).iter_errors(d))
+    require(not issues,f"Ciclo XXV: schema inválido {issues[:2]}")
+    counts={"fatos":8,"referencias":12,"perguntas":12,"modelos_de_governo":4,
+            "etapas_de_trabalho":8,"relacoes_sociais":8,"garantias_civis":6,
+            "dilemas":6,"vinhetas":4}
+    require(d["contagens"]==counts,"Ciclo XXV: contagens divergentes.")
+    require(d["estado"]=="investigacao_de_modelos_nao_canonicos"
+            and d["aprovacao_autoral"] is False
+            and d["efeito_canonico_automatico"] is False
+            and d["nova_instituicao_canonica"] is False
+            and d["alteracao_mecanicas_dw"] is False
+            and d["criaturas_afetadas"]==0,
+            "Ciclo XXV: houve canonização ou aplicação mecânica.")
+    require(d["regiao_id"]=="regiao:costa-sul"
+            and d["assentamento_id"]=="assentamento:portomonte"
+            and all(d[k] is None for k in
+                ("modelo_de_governo_adotado","estrutura_do_templo_confirmada",
+                 "agua_domestica_potavel_confirmada",
+                 "capacidade_de_purificacao_confirmada",
+                 "producao_agricola_quantificada")),
+            "Ciclo XXV: governo, rito ou medidas preenchidos sem fontes.")
+    settle=load("curadoria/assentamentos/portomonte.json")
+    require(any(s["id"]=="assentamento:portomonte" for s in settle),
+            "Ciclo XXV: a cidade deve existir no atlas factual.")
+    paginas={x["pagina"] for x in load(d["fonte_manuscrito"])["paginas"]}
+    facts=d["fatos_documentados"]
+    require(all(f["novo_canon"] is False and (
+                (f["fonte_tipo"]=="manuscrito" and f["pagina_manuscrito"] in (5,12)
+                 and f["pagina_manuscrito"] in paginas) or
+                (f["fonte_tipo"]=="curadoria" and f["pagina_manuscrito"] is None))
+                for f in facts),"Ciclo XXV: fato mal ancorado.")
+    refs=d["referencias_rastreaveis"]
+    require(len({r["id"] for r in refs})==12,
+            "Ciclo XXV: referências repetidas.")
+    require(all(any(e["id"]==r["id"] for e in load(r["arquivo"])[r["colecao"]])
+                for r in refs),"Ciclo XXV: ponte para fonte/proposta inexistente.")
+    cats=("modelos_de_governo","etapas_de_trabalho","relacoes_sociais",
+          "garantias_civis","dilemas","vinhetas")
+    rows=[e for cat in cats for e in d[cat]]
+    require(len(rows)==36 and len({e["id"] for e in rows})==36,
+            "Ciclo XXV: propostas duplicadas ou ausentes.")
+    ref_ids={r["id"] for r in refs}
+    require(all(e["estatuto"]=="alternativa_nao_adotada"
+             and e["referencia_id"] in ref_ids
+             and e["pagina_contextual"] in (5,12)
+             and e["situacao_documentada"] is False
+             and e["ocorreu"] is False
+             and e["aprovacao_autoral"] is False
+             and e["efeito_mecanico"] is False
+             for e in rows),"Ciclo XXV: cenário/promessa convertido em realidade.")
+    require(all(q["resposta_aprovada"] is None
+                for q in d["perguntas_para_autor"]),
+            "Ciclo XXV: não atribuir escolhas ao autor.")
+    require(len(load("dist/carcaca/creatures.json"))==7,
+            "Ciclo XXV: sete criaturas canônicas devem permanecer intactas.")
+    print("Ciclo XXV: 8 fatos, 12 referências, 36 alternativas, 12 perguntas; zero canonização.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3959,6 +4023,7 @@ def main():
     validar_meio_demonios_sociedades_xxii()
     validar_caatinga_vida_civil_xxiii()
     validar_costa_sul_civil_xxiv()
+    validar_portomonte_templo_governo_xxv()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
