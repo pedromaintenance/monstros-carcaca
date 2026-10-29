@@ -131,7 +131,7 @@ jobs:
       - name: Testar cliente de leitura
         run: node --test tests/carcaca-client.test.mjs
       - name: Testar atlas hierárquico com fontes reais
-        run: node --test tests/atlas-hierarquia.test.mjs tests/atlas-macro.test.mjs tests/atlas-interfaces.test.mjs
+        run: node --test tests/atlas-hierarquia.test.mjs tests/atlas-macro.test.mjs tests/atlas-interfaces.test.mjs tests/atlas-topology.test.mjs
       - name: Gerar índices determinísticos
         run: |
           python scripts/gerar_indices_curadoria.py
