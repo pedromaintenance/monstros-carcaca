@@ -606,4 +606,18 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Distinguir Ulorian de Birka Uln-Shayr, os demônios do Abismo de abissais marinhos e facção Yokai de indexação de ordem formal.
 - [x] Integrar JSON, schema, validador, seis índices determinísticos, consultas ESM, testes e dossiê narrativo.
 - [x] Preservar sete criaturas, frentes, lore factual, cânone de Portomonte e regras DW.
-- [ ] **XXVIII — próximo horizonte:** investigar o eixo fluvial entre Drakport, Corte e foz por meio de tributação, servidão, circulação de informação e cotidiano; ou preparar revisão da geografia de Shadar caso surja fonte nova.
+- [x] **XXVIII — realizado:** o eixo Drakport–rio foi expandido socioculturalmente, sem criar rotas ou resolver a Revolta.
+
+
+## Ciclo XXVIII — Concluído: o rio que alimenta a tirania
+
+- [x] Conferir o Hack pp. 4, 7, 9 e 11, a expansão Garganta–Rio e o dossiê de Shadar e da foz do Ciclo XXVII.
+- [x] Identificar **12 âncoras documentadas** com limites de inferência, inclusive Morwen em Drakport, Severina no Templo da Lua e a natureza não consumada da Revolta.
+- [x] Elaborar **40 propostas não canônicas**: 10 trabalho e sobrevivência; 8 servidão e agência; 7 tributos e passagens; 6 informação e ritos; 5 solidariedades; 4 vinhetas.
+- [x] Relacionar 14 IDs verificados de propostas anteriores, sem promover balsas, pátios, oficiais ou redes hipotéticas ao atlas factual.
+- [x] Preservar **10 perguntas autorais** abertas sobre a revolta, participação de Ironwood, mecanismos coloniais, tributos e limites da magia do Templo da Lua.
+- [x] Não contabilizar pessoas escravizadas como recursos/estoques; separar a violência documentada da lógica de bens comerciais.
+- [x] Não fixar rotas, região normalizada de Drakport, número de habitantes, pessoas nomeadas, tratados, rito detalhado ou hierarquia da resistência.
+- [x] Integrar dossiê, JSON Schema, validador de proveniência, seis índices determinísticos, API ESM, testes Python/Node, README e diário.
+- [x] Preservar sete criaturas, cânone de Portomonte e da foz, frentes e regras DW.
+- [ ] **XXIX — próximo horizonte:** investigar os limites e implicações civis do Templo da Lua sob Severina Shadowbloom, sem inferir efeitos rituais específicos nem antecipar a Revolta de Drakport.
