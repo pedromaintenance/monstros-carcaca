@@ -60,6 +60,29 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getCostaSulCivilLife(){return byKey("costa_sul_civil_life");}
+  async function getCostaSulCivilLifeIndexes(){return byKey("costa_sul_civil_life_indexes");}
+  async function getCostaSulCivilLifeEntry(id){
+    if(typeof id!=="string"||!id.startsWith("xxiv:"))return null;
+    const d=await getCostaSulCivilLife();
+    for(const cat of ["vida_domestica","trabalhos","saberes","circulacao",
+      "tensoes_civis","vinhetas","fatos_documentados","perguntas_para_autor"]){
+      const item=d[cat].find(x=>x.id===id);
+      if(item)return {...item,categoria:cat};
+    }
+    return null;
+  }
+  async function searchCostaSulCivilLife({categoria,pagina,escopo,referenciaId,query}={}){
+    const d=await getCostaSulCivilLife();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return ["vida_domestica","trabalhos","saberes","circulacao","tensoes_civis","vinhetas"]
+      .flatMap(cat=>d[cat].map(e=>({...e,categoria:cat})))
+      .filter(e=>(!categoria||e.categoria===categoria)&&
+       (pagina===undefined||e.pagina_contextual===Number(pagina))&&
+       (!escopo||e.escopo===escopo)&&
+       (!referenciaId||e.referencia_preexistente===referenciaId)&&
+       (!query||norm([e.nome,e.hipotese,e.contradicao].join(" ")).includes(norm(query))));
+  }
   async function getCaatingaCivilLife(){return byKey("caatinga_civil_life");}
   async function getCaatingaCivilLifeIndexes(){return byKey("caatinga_civil_life_indexes");}
   async function getCaatingaCivilLifeEntry(id){
@@ -1591,6 +1614,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getCostaSulCivilLife,getCostaSulCivilLifeIndexes,
+          getCostaSulCivilLifeEntry,searchCostaSulCivilLife,
           getCaatingaCivilLife,getCaatingaCivilLifeIndexes,
           getCaatingaCivilLifeEntry,searchCaatingaCivilLife,
           getHalfDemonSocieties,getHalfDemonSocietiesIndexes,
