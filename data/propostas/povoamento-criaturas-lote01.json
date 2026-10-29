@@ -42,7 +42,7 @@
     {
       "id": "povoamento:xlv:02",
       "nome": "O Mosteiro das Tartarugas de Vidro",
-      "frente_id": "frente:macro:ilhas",
+      "frente_id": "frente:macro:costa",
       "setor": "costa",
       "proposta_de": "assentamento_coletivo",
       "forma": "assentamento_insular_permanente",
