@@ -81,7 +81,9 @@ jobs:
             data/atlas/dependencias-vulnerabilidades-ciclo42.json \
             data/atlas/horizonte-povoamento-macro.json \
             data/atlas/inventario-povoamento-ciclo44.json \
-            data/propostas/povoamento-criaturas-lote01.json
+            data/propostas/povoamento-criaturas-lote01.json \
+            data/propostas/povoamento-regional-lote02-ciclo45.json \
+            fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json
           do
             mkdir -p ".public-pages/atlas/dados/$(dirname "$file")"
             cp "$file" ".public-pages/atlas/dados/$file"
