@@ -1,0 +1,502 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Kit do Mestre para Rio Ancestral — Ciclo XXX",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "ambito",
+    "fonte_manuscrito",
+    "aprovacao_autoral",
+    "mutacao_canonica",
+    "modificacao_regras_dw",
+    "revolta_drakport_ocorreu",
+    "rito_lunar_definido",
+    "eventos_ocorridos",
+    "resultados_sessoes",
+    "fatos_base",
+    "referencias_rastreaveis",
+    "procedimentos",
+    "evidencias",
+    "cenas",
+    "consequencias",
+    "guardas",
+    "perguntas_abertas",
+    "contagens"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 10
+    },
+    "estado": {
+      "const": "ferramenta_mesa_nao_canonica"
+    },
+    "ambito": {
+      "const": "eixo_do_rio_ancestral_e_interfaces"
+    },
+    "fonte_manuscrito": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "mutacao_canonica": {
+      "const": false
+    },
+    "modificacao_regras_dw": {
+      "const": false
+    },
+    "revolta_drakport_ocorreu": {
+      "const": false
+    },
+    "rito_lunar_definido": {
+      "const": false
+    },
+    "eventos_ocorridos": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 0,
+      "items": {}
+    },
+    "resultados_sessoes": {
+      "type": "array",
+      "minItems": 0,
+      "maxItems": 0,
+      "items": {}
+    },
+    "fatos_base": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "pagina",
+          "afirmacao",
+          "limite_de_inferencia",
+          "fonte",
+          "aplicou_novo_canon"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^mesa-xxx:fato:"
+          },
+          "pagina": {
+            "enum": [
+              4,
+              7,
+              11,
+              22
+            ]
+          },
+          "afirmacao": {
+            "type": "string",
+            "minLength": 25
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 25
+          },
+          "fonte": {
+            "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+          },
+          "aplicou_novo_canon": {
+            "const": false
+          }
+        }
+      }
+    },
+    "referencias_rastreaveis": {
+      "type": "array",
+      "minItems": 16,
+      "maxItems": 16,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "arquivo",
+          "colecao",
+          "id",
+          "uso"
+        ],
+        "properties": {
+          "arquivo": {
+            "type": "string",
+            "minLength": 8
+          },
+          "colecao": {
+            "type": "string",
+            "minLength": 3
+          },
+          "id": {
+            "type": "string",
+            "minLength": 6
+          },
+          "uso": {
+            "type": "string",
+            "minLength": 30
+          }
+        }
+      }
+    },
+    "procedimentos": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "quando_usar",
+          "passos_de_mesa",
+          "evitar",
+          "referencia_id",
+          "estado",
+          "executou"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^mesa-xxx:procedimento:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "quando_usar": {
+            "type": "string",
+            "minLength": 8
+          },
+          "passos_de_mesa": {
+            "type": "string",
+            "minLength": 35
+          },
+          "evitar": {
+            "type": "string",
+            "minLength": 30
+          },
+          "referencia_id": {
+            "type": "string",
+            "minLength": 8
+          },
+          "estado": {
+            "const": "procedimento_editorial_nao_canonico"
+          },
+          "executou": {
+            "const": false
+          }
+        }
+      }
+    },
+    "evidencias": {
+      "type": "array",
+      "minItems": 12,
+      "maxItems": 12,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "tipo",
+          "pagina",
+          "conteudo",
+          "limite_de_inferencia",
+          "referencia_id",
+          "estado",
+          "aconteceu_em_campanha"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^mesa-xxx:evidencia:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 5
+          },
+          "tipo": {
+            "enum": [
+              "documentado",
+              "relato_hipotetico",
+              "rumor_hipotetico",
+              "lacuna"
+            ]
+          },
+          "pagina": {
+            "anyOf": [
+              {
+                "enum": [
+                  4,
+                  7,
+                  11,
+                  22
+                ]
+              },
+              {
+                "type": "null"
+              }
+            ]
+          },
+          "conteudo": {
+            "type": "string",
+            "minLength": 35
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 25
+          },
+          "referencia_id": {
+            "type": "string",
+            "minLength": 8
+          },
+          "estado": {
+            "const": "cartao_para_investigacao"
+          },
+          "aconteceu_em_campanha": {
+            "const": false
+          }
+        }
+      }
+    },
+    "cenas": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "abertura",
+          "pergunta_de_investigacao",
+          "decisao_aberta",
+          "evidencias_sugeridas",
+          "procedimento_id",
+          "consequencia_id",
+          "estado",
+          "ocorreu",
+          "desfecho_fixo"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^mesa-xxx:cena:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "abertura": {
+            "type": "string",
+            "minLength": 40
+          },
+          "pergunta_de_investigacao": {
+            "type": "string",
+            "minLength": 18
+          },
+          "decisao_aberta": {
+            "type": "string",
+            "minLength": 18
+          },
+          "evidencias_sugeridas": {
+            "type": "array",
+            "minItems": 2,
+            "maxItems": 2,
+            "items": {
+              "type": "string",
+              "pattern": "^mesa-xxx:evidencia:"
+            }
+          },
+          "procedimento_id": {
+            "type": "string",
+            "pattern": "^mesa-xxx:procedimento:"
+          },
+          "consequencia_id": {
+            "type": "string",
+            "pattern": "^mesa-xxx:consequencia:"
+          },
+          "estado": {
+            "const": "cena_possivel_nao_ocorrida"
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "desfecho_fixo": {
+            "const": false
+          }
+        }
+      }
+    },
+    "consequencias": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "condicao_de_mesa",
+          "possibilidade_condicional",
+          "proibicao",
+          "referencia_id",
+          "estado",
+          "gatilho_disparado",
+          "efeito_aplicado"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^mesa-xxx:consequencia:"
+          },
+          "condicao_de_mesa": {
+            "type": "string",
+            "minLength": 35
+          },
+          "possibilidade_condicional": {
+            "type": "string",
+            "minLength": 35
+          },
+          "proibicao": {
+            "type": "string",
+            "minLength": 30
+          },
+          "referencia_id": {
+            "type": "string",
+            "minLength": 8
+          },
+          "estado": {
+            "const": "ramo_condicional_nao_executado"
+          },
+          "gatilho_disparado": {
+            "const": false
+          },
+          "efeito_aplicado": {
+            "const": false
+          }
+        }
+      }
+    },
+    "guardas": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "nome",
+          "verificacao",
+          "referencia_id",
+          "sempre_ativa",
+          "aprovacao_autoral_nao_suprida"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^mesa-xxx:guarda:"
+          },
+          "nome": {
+            "type": "string",
+            "minLength": 8
+          },
+          "verificacao": {
+            "type": "string",
+            "minLength": 25
+          },
+          "referencia_id": {
+            "type": "string",
+            "minLength": 8
+          },
+          "sempre_ativa": {
+            "const": true
+          },
+          "aprovacao_autoral_nao_suprida": {
+            "const": true
+          }
+        }
+      }
+    },
+    "perguntas_abertas": {
+      "type": "array",
+      "minItems": 8,
+      "maxItems": 8,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "id",
+          "pergunta",
+          "resposta_autoral"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^mesa-xxx:pergunta:"
+          },
+          "pergunta": {
+            "type": "string",
+            "minLength": 30
+          },
+          "resposta_autoral": {
+            "type": "null"
+          }
+        }
+      }
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "fatos",
+        "referencias",
+        "procedimentos",
+        "evidencias",
+        "cenas",
+        "consequencias",
+        "guardas",
+        "perguntas_abertas"
+      ],
+      "properties": {
+        "fatos": {
+          "const": 6
+        },
+        "referencias": {
+          "const": 16
+        },
+        "procedimentos": {
+          "const": 6
+        },
+        "evidencias": {
+          "const": 12
+        },
+        "cenas": {
+          "const": 8
+        },
+        "consequencias": {
+          "const": 6
+        },
+        "guardas": {
+          "const": 4
+        },
+        "perguntas_abertas": {
+          "const": 8
+        }
+      }
+    }
+  }
+}
