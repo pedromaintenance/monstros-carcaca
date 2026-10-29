@@ -281,7 +281,7 @@ test("Atlas XXXV: fronteira marítima é móvel e os Abissais marinhos não são
   assert.ok(new Set([border.de,border.para]).has("amb:mar-rubro"));
   assert.ok(new Set([border.de,border.para]).has("amb:azuis"));
   const sea=environments.ambientes.find(x=>x.id==="amb:abissais-mar");
-  assert.match(sea.descricao,/NÃO demoníaco/);
+  assert.match(sea.descricao,/não demoníaco/i);
   const underground=environments.ambientes.find(x=>x.id==="amb:gnomos-subsolo");
   assert.match(underground.descricao,/sem rede continental demonstrada/);
   assert.ok(!JSON.stringify(environmentFile).match(/"latitude"\s*:|"longitude"\s*:/));
