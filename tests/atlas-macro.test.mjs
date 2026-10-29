@@ -6,6 +6,7 @@ import {join} from "node:path";
 import {tmpdir} from "node:os";
 import {buildAtlasTree} from "../site/atlas/atlas-tree.mjs";
 import {buildMacroIndex} from "../site/atlas/macro-atlas.mjs";
+import {buildMacroNetworks} from "../site/atlas/macro-networks.mjs";
 const file=p=>JSON.parse(readFileSync(new URL("../"+p,import.meta.url),"utf8"));
 const source={
   lore:file("data/lore/hack-carcaca-dw-indice-tematico.json"),
@@ -99,4 +100,74 @@ test("Atlas macro: os dados do mundo não sofrem mutação ao gerar a camada mac
   const m2=buildMacroIndex(macroFile,atlas);
   assert.equal(JSON.stringify(atlas.nodes),before);
   assert.deepEqual(m2.totais,macro.totais);
+});
+
+const networksFile=file("data/atlas/redes-historicas-ciclo33.json");
+const networks=buildMacroNetworks(networksFile,macro);
+test("Atlas XXXIII: camadas globais são sete redes, 14 esferas, 17 marcos e 8 lacunas",()=>{
+  assert.deepEqual(networks.totais,{redes:7,esferas:14,marcos:17,lacunas:8});
+  assert.equal(networks.altera_canon,false);
+  assert.equal(networksFile.aprovacao_autoral,false);
+  assert.equal(networksFile.alteracao_regras_dw,false);
+  assert.ok(networks.redes.every(n=>n.conexao_espacial_automatica===false));
+  assert.ok(networks.esferas.every(n=>n.fronteira_definida===false));
+  assert.ok(networks.lacunas_estruturais.every(n=>n.resolvida===false));
+});
+test("Atlas XXXIII: cada relação de rede vem de link existente no macroatlas",()=>{
+  const base=new Map(macro.conexoes.map(n=>[n.id,n]));
+  for(const net of networks.redes){
+    assert.ok(net.paginas.length>0);
+    for(const link of net.relacoes){
+      assert.deepEqual(base.get(link.id),link);
+      assert.ok(net.setores.includes(link.de));
+      assert.ok(net.setores.includes(link.para));
+    }
+  }
+  assert.ok(networks.redes.some(n=>n.relacoes.some(e=>e.estado==="indeterminado")));
+});
+test("Atlas XXXIII: fatos históricos preservam tempo e incertezas",()=>{
+  assert.equal(networks.cronologia[0].ano_ec,0);
+  assert.equal(networks.cronologia.at(-1).ano_ec,999);
+  assert.deepEqual(networks.cronologia.filter(e=>e.ano_ec===983).map(e=>e.titulo),
+    ["Invasão demoníaca destrói Templo das Sombras"]);
+  assert.ok(networks.cronologia.some(e=>e.ano_ec===984&&
+    e.setores.length===1&&e.setores[0]==="foz"));
+  assert.ok(!networks.cronologia.some(e=>/revolta de drakport/i.test(e.titulo)));
+  assert.ok(networks.lacunas_estruturais.some(e=>/drakport-futuro/.test(e.id)));
+  const voragar=networks.cronologia.find(e=>e.ano_ec===886);
+  assert.deepEqual(voragar.setores,[],"A fortaleza central não tem localização setorial documentada");
+});
+test("Atlas XXXIII: marinheiros abissais e demônios ocidentais permanecem distintos",()=>{
+  const sea=networks.redes.find(n=>n.id==="rede-xxxiii:mar");
+  assert.ok(sea.setores.includes("azuis")&&sea.setores.includes("costa"));
+  assert.match(sea.limite,/Abissais marinhos/);
+  const abyss=networks.redes.find(n=>n.id==="rede-xxxiii:abismo");
+  assert.ok(abyss.setores.includes("foz")&&abyss.setores.includes("cauda"));
+});
+test("Atlas XXXIII: validador recusa novas fronteiras, locais inexistentes ou revoltas homologadas",()=>{
+  const a=structuredClone(networksFile);
+  a.redes[0].relacao_ids.push("relacao:inexistente");
+  assert.throws(()=>buildMacroNetworks(a,macro),/Relação macro inexistente/);
+  const b=structuredClone(networksFile);
+  b.esferas[0].fronteira_definida=true;
+  assert.throws(()=>buildMacroNetworks(b,macro),/Esfera promove fronteira/);
+  const c=structuredClone(networksFile);
+  c.cronologia[0].setores=["setor:inventado"];
+  assert.throws(()=>buildMacroNetworks(c,macro),/Setor inexistente/);
+  const d=structuredClone(networksFile);
+  d.lacunas_estruturais[0].resolvida=true;
+  assert.throws(()=>buildMacroNetworks(d,macro),/Lacuna declarada resolvida/);
+});
+test("Atlas XXXIII: UI e artefato Pages carregam camadas e cronologia com JS válido",()=>{
+  const html=readFileSync(new URL("../site/atlas/index.html",import.meta.url),"utf8");
+  assert.match(html,/id="macroLayers"/);
+  assert.match(html,/macro-layers-ui\.mjs/);
+  assert.match(html,/buildMacroNetworks\(loaded\.networks,state\.macro\)/);
+  assert.match(html,/initMacroLayers\(\$\("macroLayers"\),state\.macro,state\.networks\)/);
+  const panels=readFileSync(new URL("../site/atlas/macro-layers-ui.mjs",import.meta.url),"utf8");
+  assert.match(panels,/atlasTime/);
+  assert.match(panels,/data-layer/);
+  const workflow=readFileSync(new URL("../.github/workflows/publicar-atlas-pages.yml",import.meta.url),"utf8");
+  assert.match(workflow,/data\/atlas\/redes-historicas-ciclo33\.json/);
+  assert.doesNotMatch(JSON.stringify(networksFile),/"latitude"\s*:|"longitude"\s*:/);
 });

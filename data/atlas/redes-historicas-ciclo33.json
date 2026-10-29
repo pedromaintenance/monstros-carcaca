@@ -1,0 +1,757 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Redes macro e camadas temporais da Carcaça — Ciclo XXXIII",
+  "estado": "instrumento_editorial_de_leitura",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "alteracao_regras_dw": false,
+  "fonte_principal": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "indice_base": "data/atlas/macrorregioes-carcaca.json",
+  "politica": "Redes são lentes documentais, não rotas ou fronteiras cartográficas. Agentes e eventos têm suporte em páginas; a projeção de cada evento em setores é interpretativa e pode não ser exaustiva.",
+  "redes": [
+    {
+      "id": "rede-xxxiii:rio",
+      "titulo": "O Rio Ancestral — circulação e controle",
+      "tipo": "hidrografia_e_comercio",
+      "setores": [
+        "rio",
+        "foz"
+      ],
+      "relacao_ids": [
+        "macro-eixo:rio-foz-hidrografia"
+      ],
+      "paginas": [
+        4,
+        5,
+        6
+      ],
+      "descricao": "Uma via continental de comércio, dominação e guerra; ilhas e margens locais ainda não cartografadas.",
+      "limite": "Não transformar o eixo de circulação em mapa de rotas secundárias.",
+      "estado": "sintese_documental",
+      "conexao_espacial_automatica": false
+    },
+    {
+      "id": "rede-xxxiii:corte",
+      "titulo": "Corte Feérica — centros de poder",
+      "tipo": "poder_politico",
+      "setores": [
+        "garganta",
+        "rio",
+        "eldroth",
+        "shadar",
+        "foz",
+        "cauda"
+      ],
+      "relacao_ids": [
+        "macro-eixo:foz-shadar-topologia_em_revisao",
+        "macro-eixo:foz-cauda-mudanca_historica"
+      ],
+      "paginas": [
+        2,
+        5,
+        6,
+        7,
+        8
+      ],
+      "descricao": "A aristocracia domina centros e rotas com intensidade desigual. O mapa de influência não é uma fronteira estadual.",
+      "limite": "Não supor governo homogêneo entre os domínios dos Lordes.",
+      "estado": "sintese_documental",
+      "conexao_espacial_automatica": false
+    },
+    {
+      "id": "rede-xxxiii:resistencia",
+      "titulo": "Resistência — polos sem comando único",
+      "tipo": "resistencia",
+      "setores": [
+        "thargrid",
+        "eldroth"
+      ],
+      "relacao_ids": [
+        "macro-eixo:thargrid-eldroth-cooperacao_resistencia"
+      ],
+      "paginas": [
+        6,
+        7
+      ],
+      "descricao": "Reino Sob a Montanha, Ironwood e núcleos clandestinos cooperam sem um comando central.",
+      "limite": "Não incluir Drakport como cidade libertada nem decidir o resultado futuro da revolta.",
+      "estado": "sintese_documental",
+      "conexao_espacial_automatica": false
+    },
+    {
+      "id": "rede-xxxiii:alem-sul",
+      "titulo": "Além Sul — disputa por subsistência",
+      "tipo": "conflito_regional",
+      "setores": [
+        "caatinga",
+        "costa"
+      ],
+      "relacao_ids": [
+        "macro-eixo:caatinga-costa-conflito_regional"
+      ],
+      "paginas": [
+        5,
+        12,
+        13
+      ],
+      "descricao": "Áreas áridas e pradarias costeiras se influenciam por migração, guerra e disputa de recursos.",
+      "limite": "Não atribuir pilhagens a todos os orcs ou colonização feérica direta à Caatinga.",
+      "estado": "sintese_documental",
+      "conexao_espacial_automatica": false
+    },
+    {
+      "id": "rede-xxxiii:mar",
+      "titulo": "Mar de Sangue — águas e fronteiras",
+      "tipo": "maritimo",
+      "setores": [
+        "costa",
+        "azuis"
+      ],
+      "relacao_ids": [
+        "macro-eixo:costa-azuis-fronteira_maritima"
+      ],
+      "paginas": [
+        5,
+        14,
+        15,
+        24
+      ],
+      "descricao": "As culturas costeiras e submersas convivem numa fronteira de águas corrompidas e mares azuis.",
+      "limite": "Não inventar um limite estático nem confundir Abissais marinhos com demônios.",
+      "estado": "sintese_documental",
+      "conexao_espacial_automatica": false
+    },
+    {
+      "id": "rede-xxxiii:abismo",
+      "titulo": "O Abismo — guerra e deslocamento da Corte",
+      "tipo": "ruptura_historica",
+      "setores": [
+        "foz",
+        "cauda"
+      ],
+      "relacao_ids": [
+        "macro-eixo:foz-cauda-mudanca_historica"
+      ],
+      "paginas": [
+        5,
+        6,
+        8,
+        9,
+        10
+      ],
+      "descricao": "A incursão demoníaca forçou a mudança da sede palaciana do Abismo para a cauda.",
+      "limite": "Deslocamento histórico não implica existência de ponte, trilha ou rota segura.",
+      "estado": "sintese_documental",
+      "conexao_espacial_automatica": false
+    },
+    {
+      "id": "rede-xxxiii:refugio",
+      "titulo": "Deslocamento forçado e refúgio",
+      "tipo": "migracao",
+      "setores": [
+        "eldroth",
+        "costa",
+        "thargrid"
+      ],
+      "relacao_ids": [
+        "macro-eixo:eldroth-costa-deslocamento_humano"
+      ],
+      "paginas": [
+        5,
+        6,
+        7,
+        12
+      ],
+      "descricao": "Há refugiados de Eldroth em maiores assentamentos costeiros e acolhimento de refugiados nas montanhas; não pressupõe rotas comuns.",
+      "limite": "Não definir cidade receptora, número de deslocados ou trajeto físico a partir da afirmação geral.",
+      "estado": "sintese_documental",
+      "conexao_espacial_automatica": false
+    }
+  ],
+  "esferas": [
+    {
+      "id": "esfera-xxxiii:01",
+      "setor": "garganta",
+      "titulo": "Ocupação feérica de Garganta",
+      "agente": "Varys Duskveil",
+      "forma": "ocupacao_militar",
+      "escala": "dominio_local",
+      "paginas": [
+        2
+      ],
+      "descricao": "Cidade-fortaleza ocupada, escavações e controle das passagens.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:02",
+      "setor": "rio",
+      "titulo": "Dominação ao longo do Rio Ancestral",
+      "agente": "Casas shadow fey",
+      "forma": "rede_de_tributos",
+      "escala": "influencia_ampla",
+      "paginas": [
+        4
+      ],
+      "descricao": "Tributo, postos e cidades ao longo do curso fluvial; não há mapa administrativo completo.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:03",
+      "setor": "rio",
+      "titulo": "Drakport submetida à Corte",
+      "agente": "Morwen Nightshade",
+      "forma": "escravidao_e_extracao",
+      "escala": "centro_nomeado",
+      "paginas": [
+        4
+      ],
+      "descricao": "Cidade de escravidão, vinculada a Lady Morwen; não descrever levante futuro como ocorrido.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:04",
+      "setor": "eldroth",
+      "titulo": "Ocupação de Eldroth",
+      "agente": "Sylara Nightwhisper",
+      "forma": "perseguicao_e_vigilancia",
+      "escala": "territorio_nomeado",
+      "paginas": [
+        5
+      ],
+      "descricao": "A floresta é vigiada por criaturas e forças de ocupação.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:05",
+      "setor": "eldroth",
+      "titulo": "Vandar e os mortos-vivos",
+      "agente": "Damaris Blackthorn",
+      "forma": "dominio_das_ruinas",
+      "escala": "sitio_nomeado",
+      "paginas": [
+        5
+      ],
+      "descricao": "As ruínas servem como base de forças mortas-vivas.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:06",
+      "setor": "thargrid",
+      "titulo": "Reino Sob a Montanha",
+      "agente": "Clãs anões e gigantes",
+      "forma": "resistencia_territorial",
+      "escala": "polo_nomeado",
+      "paginas": [
+        6
+      ],
+      "descricao": "Reino-refúgio que resiste ao regime; acolhe refugiados.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:07",
+      "setor": "thargrid",
+      "titulo": "Ironwood",
+      "agente": "Elara Stormoak e rangers",
+      "forma": "guerrilha",
+      "escala": "polo_nomeado",
+      "paginas": [
+        6
+      ],
+      "descricao": "Fortaleza dos rangers ao sul das montanhas; autonomia não confundida com o Reino.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:08",
+      "setor": "foz",
+      "titulo": "Boca do Abismo",
+      "agente": "Ulorian Uln-Shayr",
+      "forma": "alianca_defensiva",
+      "escala": "sitio_nomeado",
+      "paginas": [
+        5
+      ],
+      "descricao": "Aliança tensa contra incursões demoníacas; Ulorian continua sendo membro da Corte.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:09",
+      "setor": "shadar",
+      "titulo": "Capital aristocrática de Shadar-Riverie",
+      "agente": "Casa Shayr e Corte",
+      "forma": "autoridade_colonial",
+      "escala": "centro_nomeado",
+      "paginas": [
+        6
+      ],
+      "descricao": "Centro de diplomacia, informação e aristocracia, com topologia relativa a Gualápolis não resolvida.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:10",
+      "setor": "cauda",
+      "titulo": "Sede da Rainha no Templo do Crepúsculo",
+      "agente": "Sarastra Aestruum",
+      "forma": "sede_da_corte",
+      "escala": "sitio_nomeado",
+      "paginas": [
+        6
+      ],
+      "descricao": "Palácio erguido sobre a cauda após o abandono do Templo das Sombras.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:11",
+      "setor": "caatinga",
+      "titulo": "Caatinga não submetida à ocupação direta",
+      "agente": "Comunidades locais",
+      "forma": "ausencia_de_ocupacao_direta",
+      "escala": "regiao_descrita",
+      "paginas": [
+        5
+      ],
+      "descricao": "A ausência de domínio feérico direto não pressupõe paz nem unidade política.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:12",
+      "setor": "costa",
+      "titulo": "Costa Sul fora da colonização feérica direta",
+      "agente": "Comunidades costeiras",
+      "forma": "ausencia_de_ocupacao_direta",
+      "escala": "regiao_descrita",
+      "paginas": [
+        5
+      ],
+      "descricao": "Autonomias e conflitos locais; Portomonte é um centro humano comercial.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:13",
+      "setor": "costa",
+      "titulo": "Kuo-Toa e Abissais no Mar de Sangue",
+      "agente": "Cultos de Daegon",
+      "forma": "poder_religioso_maritimo",
+      "escala": "area_ampla",
+      "paginas": [
+        5
+      ],
+      "descricao": "Poder dos Kuo-Toa e dos Abissais marinhos em cavernas, águas e profundezas sem limites precisos.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    },
+    {
+      "id": "esfera-xxxiii:14",
+      "setor": "azuis",
+      "titulo": "Povos do mar não corrompido",
+      "agente": "Tritões e sereias",
+      "forma": "comunidades_autonomas",
+      "escala": "area_ampla",
+      "paginas": [
+        14
+      ],
+      "descricao": "Há cidades submarinas e práticas cultuais próprias, mas nenhuma jurisdição universal identificada.",
+      "estado": "sintese_de_fonte",
+      "fronteira_definida": false
+    }
+  ],
+  "cronologia": [
+    {
+      "id": "tempo-xxxiii:01",
+      "ano_ec": 0,
+      "titulo": "Morte de Golzdov e Era da Carcaça",
+      "setores": [
+        "garganta",
+        "rio",
+        "costa",
+        "caatinga",
+        "eldroth",
+        "thargrid",
+        "foz",
+        "shadar",
+        "grama",
+        "cauda",
+        "azuis"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:02",
+      "ano_ec": 211,
+      "titulo": "Garganta como cidade-estado livre",
+      "setores": [
+        "garganta",
+        "rio"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:03",
+      "ano_ec": 342,
+      "titulo": "Invasão Kuo-Toa pela Costa Sul",
+      "setores": [
+        "costa",
+        "garganta"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:04",
+      "ano_ec": 351,
+      "titulo": "Coalizão de orcs e humanos contra os Kuo-Toa",
+      "setores": [
+        "caatinga",
+        "garganta",
+        "costa"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": "O manuscrito menciona expulsão do Extremo Oeste em 351 EC, embora o confronto se estenda de Garganta; manter redação sem criar caminho."
+    },
+    {
+      "id": "tempo-xxxiii:05",
+      "ano_ec": 358,
+      "titulo": "Formação da Confederação dos Ossos",
+      "setores": [
+        "garganta"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:06",
+      "ano_ec": 501,
+      "titulo": "Fuga de feéricos para Eldroth e Ironwood",
+      "setores": [
+        "eldroth",
+        "thargrid"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:07",
+      "ano_ec": 666,
+      "titulo": "Mudança oficial dos Lordes para a Carcaça",
+      "setores": [],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:08",
+      "ano_ec": 711,
+      "titulo": "Instalação da Rainha na margem norte do Abismo",
+      "setores": [
+        "foz"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:09",
+      "ano_ec": 875,
+      "titulo": "Guerras de conquista e destruição da Confederação",
+      "setores": [
+        "garganta",
+        "foz"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:10",
+      "ano_ec": 886,
+      "titulo": "Traição de Voragar e fortaleza na coluna dorsal",
+      "setores": [],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": "A fortaleza de Voragar na coluna dorsal não tem região formalizada no atlas; não a posicionar por aproximação."
+    },
+    {
+      "id": "tempo-xxxiii:11",
+      "ano_ec": 888,
+      "titulo": "Rayquaza se refugia no Reino Sob a Montanha",
+      "setores": [
+        "thargrid"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:12",
+      "ano_ec": 910,
+      "titulo": "Consolidação da ocupação e Drakport como centro de escravidão",
+      "setores": [
+        "rio",
+        "thargrid"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:13",
+      "ano_ec": 912,
+      "titulo": "Reino Sob a Montanha como bastião da resistência",
+      "setores": [
+        "thargrid"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:14",
+      "ano_ec": 921,
+      "titulo": "Morte de Voragar e dos Dragões Ancestrais",
+      "setores": [],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:15",
+      "ano_ec": 983,
+      "titulo": "Invasão demoníaca destrói Templo das Sombras",
+      "setores": [
+        "foz"
+      ],
+      "paginas": [
+        9
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    },
+    {
+      "id": "tempo-xxxiii:16",
+      "ano_ec": 984,
+      "titulo": "Tomada de Gualápolis pelo Senhor do Rio",
+      "setores": [
+        "foz"
+      ],
+      "paginas": [
+        10
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": "Gualápolis é atribuída ao setor da foz neste índice, mas o vínculo com Shadar-Riverie permanece incerto no próprio manuscrito."
+    },
+    {
+      "id": "tempo-xxxiii:17",
+      "ano_ec": 999,
+      "titulo": "Construção do Templo do Crepúsculo",
+      "setores": [
+        "cauda"
+      ],
+      "paginas": [
+        10
+      ],
+      "estado": "cronologia_do_manuscrito",
+      "tipo": "fato_historico",
+      "nota": ""
+    }
+  ],
+  "lacunas_estruturais": [
+    {
+      "id": "lacuna-xxxiii:shadar-guala",
+      "setores": [
+        "foz",
+        "shadar"
+      ],
+      "pergunta": "Shadar-Riverie e Gualápolis compartilham a mesma topografia?",
+      "contexto": "O manuscrito diz tanto que Shadar está sobre a antiga Gualápolis quanto que Ulorian fundou a Boca sobre a capital antiga. Não há cartografia para compor essas afirmações.",
+      "paginas": [
+        6
+      ],
+      "restricao": "bloqueia_relacao_espacial",
+      "estado": "questao_autoral_aberta",
+      "resolvida": false
+    },
+    {
+      "id": "lacuna-xxxiii:grama-local",
+      "setores": [
+        "grama"
+      ],
+      "pergunta": "Onde fica Grama-Cortada?",
+      "contexto": "Não há posição cartográfica comprovada; posição hipotética não pode tornar-se geografia oficial.",
+      "paginas": [
+        2,
+        18,
+        19
+      ],
+      "restricao": "bloqueia_frontalidade",
+      "estado": "questao_autoral_aberta",
+      "resolvida": false
+    },
+    {
+      "id": "lacuna-xxxiii:ironwood-limites",
+      "setores": [
+        "thargrid",
+        "eldroth"
+      ],
+      "pergunta": "Quais os limites de Ironwood e das florestas próximas?",
+      "contexto": "O manuscrito coloca Ironwood ao sul das montanhas e Eldroth na asa direita; a cooperação da resistência não prova continuidade territorial.",
+      "paginas": [
+        5,
+        6,
+        7
+      ],
+      "restricao": "bloqueia_vizinhanca",
+      "estado": "questao_autoral_aberta",
+      "resolvida": false
+    },
+    {
+      "id": "lacuna-xxxiii:coluna-voragar",
+      "setores": [
+        "garganta",
+        "rio",
+        "thargrid"
+      ],
+      "pergunta": "Onde está a fortaleza histórica de Voragar?",
+      "contexto": "O texto cita centro da coluna dorsal, sem setor geográfico formal ou posição relativa comprovada.",
+      "paginas": [
+        9
+      ],
+      "restricao": "bloqueia_ancora",
+      "estado": "questao_autoral_aberta",
+      "resolvida": false
+    },
+    {
+      "id": "lacuna-xxxiii:templo-lua",
+      "setores": [
+        "rio"
+      ],
+      "pergunta": "Qual ilha abriga o Templo da Lua?",
+      "contexto": "Documentada em uma ilha do Rio Ancestral, mas sem o trecho do rio e margens localizadas.",
+      "paginas": [
+        4
+      ],
+      "restricao": "bloqueia_coordenada",
+      "estado": "questao_autoral_aberta",
+      "resolvida": false
+    },
+    {
+      "id": "lacuna-xxxiii:cidades-submersas",
+      "setores": [
+        "costa",
+        "azuis"
+      ],
+      "pergunta": "Quais são as cidades submarinas individuais?",
+      "contexto": "Os povos têm assentamentos, mas nomes, posições e fronteiras políticas não estão catalogados.",
+      "paginas": [
+        5,
+        14,
+        15
+      ],
+      "restricao": "bloqueia_povoamento",
+      "estado": "questao_autoral_aberta",
+      "resolvida": false
+    },
+    {
+      "id": "lacuna-xxxiii:invasao-kuotoa",
+      "setores": [
+        "garganta",
+        "costa",
+        "caatinga"
+      ],
+      "pergunta": "Qual foi o alcance da invasão Kuo-Toa entre 342 e 351 EC?",
+      "contexto": "O manuscrito documenta avanço até Garganta e expulsão do Extremo Oeste, sem reconciliar o percurso no mapa.",
+      "paginas": [
+        9
+      ],
+      "restricao": "bloqueia_linha_de_marcha",
+      "estado": "questao_autoral_aberta",
+      "resolvida": false
+    },
+    {
+      "id": "lacuna-xxxiii:drakport-futuro",
+      "setores": [
+        "rio",
+        "thargrid"
+      ],
+      "pergunta": "O que acontecerá na futura Revolta de Drakport?",
+      "contexto": "A fonte mantém em branco seu momento, desfecho e envolvimento de Ironwood; não é um evento ocorrido.",
+      "paginas": [
+        11
+      ],
+      "restricao": "nao_antecipar_canon",
+      "estado": "questao_autoral_aberta",
+      "resolvida": false
+    }
+  ],
+  "regras": [
+    "Apenas `macro-eixo` já verificado pode ser associado a uma rede; conexões políticas ou históricas não implicam estrada.",
+    "Sem coordenadas, distâncias, geometrias nem porcentagem de domínio.",
+    "Revolta de Drakport é futuro indefinido, não evento da cronologia.",
+    "A fortaleza histórica de Voragar não recebe localização inventada.",
+    "Oposição não forma governo unificado; não criar soberania de Ironwood pela associação a Thargrid.",
+    "Abissais marinhos são povo independente da natureza demoníaca do Abismo.",
+    "Esferas de poder são presenças e formas, não fronteiras territoriais."
+  ]
+}
