@@ -69,7 +69,8 @@ jobs:
             data/propostas/caatinga-rede-social-hack.json \
             data/atlas/aninhamento-territorial.json \
             data/atlas/macrorregioes-carcaca.json \
-            data/atlas/redes-historicas-ciclo33.json
+            data/atlas/redes-historicas-ciclo33.json \
+            data/atlas/geografia-fisica-ciclo34.json
           do
             mkdir -p ".public-pages/atlas/dados/$(dirname "$file")"
             cp "$file" ".public-pages/atlas/dados/$file"
