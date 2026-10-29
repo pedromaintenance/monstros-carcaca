@@ -1,0 +1,362 @@
+{
+  "by_categoria": {
+    "informacao_e_ritos": [
+      "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "worldbuilding-xxviii:informacao_e_ritos:cartas",
+      "worldbuilding-xxviii:informacao_e_ritos:corrente",
+      "worldbuilding-xxviii:informacao_e_ritos:memoria",
+      "worldbuilding-xxviii:informacao_e_ritos:ritual",
+      "worldbuilding-xxviii:informacao_e_ritos:selo"
+    ],
+    "redes_de_resistencia": [
+      "worldbuilding-xxviii:redes_de_resistencia:abrigo",
+      "worldbuilding-xxviii:redes_de_resistencia:custo",
+      "worldbuilding-xxviii:redes_de_resistencia:divergencia",
+      "worldbuilding-xxviii:redes_de_resistencia:ironwood",
+      "worldbuilding-xxviii:redes_de_resistencia:travessia"
+    ],
+    "servidao_e_agencia": [
+      "worldbuilding-xxviii:servidao_e_agencia:corpo",
+      "worldbuilding-xxviii:servidao_e_agencia:evasao",
+      "worldbuilding-xxviii:servidao_e_agencia:familia",
+      "worldbuilding-xxviii:servidao_e_agencia:futuro",
+      "worldbuilding-xxviii:servidao_e_agencia:renuncia",
+      "worldbuilding-xxviii:servidao_e_agencia:representacao",
+      "worldbuilding-xxviii:servidao_e_agencia:solidariedade",
+      "worldbuilding-xxviii:servidao_e_agencia:testemunho"
+    ],
+    "trabalho_cotidiano": [
+      "worldbuilding-xxviii:trabalho_cotidiano:aprendizagem",
+      "worldbuilding-xxviii:trabalho_cotidiano:comida",
+      "worldbuilding-xxviii:trabalho_cotidiano:conta",
+      "worldbuilding-xxviii:trabalho_cotidiano:cuidado",
+      "worldbuilding-xxviii:trabalho_cotidiano:navegantes",
+      "worldbuilding-xxviii:trabalho_cotidiano:noite",
+      "worldbuilding-xxviii:trabalho_cotidiano:remendo",
+      "worldbuilding-xxviii:trabalho_cotidiano:repouso",
+      "worldbuilding-xxviii:trabalho_cotidiano:revisao",
+      "worldbuilding-xxviii:trabalho_cotidiano:transporte"
+    ],
+    "tributos_e_passagens": [
+      "worldbuilding-xxviii:tributos_e_passagens:abastecimento",
+      "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "worldbuilding-xxviii:tributos_e_passagens:duplo",
+      "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "worldbuilding-xxviii:tributos_e_passagens:isencao",
+      "worldbuilding-xxviii:tributos_e_passagens:medida",
+      "worldbuilding-xxviii:tributos_e_passagens:tributo-ou-soldo"
+    ],
+    "vinhetas": [
+      "worldbuilding-xxviii:vinhetas:balsa",
+      "worldbuilding-xxviii:vinhetas:lua",
+      "worldbuilding-xxviii:vinhetas:mensagem",
+      "worldbuilding-xxviii:vinhetas:soldo"
+    ]
+  },
+  "by_escopo": {
+    "corte-interface": [
+      "worldbuilding-xxviii:informacao_e_ritos:selo",
+      "worldbuilding-xxviii:tributos_e_passagens:isencao"
+    ],
+    "drakport": [
+      "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "worldbuilding-xxviii:servidao_e_agencia:corpo",
+      "worldbuilding-xxviii:servidao_e_agencia:familia",
+      "worldbuilding-xxviii:servidao_e_agencia:renuncia",
+      "worldbuilding-xxviii:servidao_e_agencia:testemunho",
+      "worldbuilding-xxviii:trabalho_cotidiano:aprendizagem",
+      "worldbuilding-xxviii:trabalho_cotidiano:comida",
+      "worldbuilding-xxviii:trabalho_cotidiano:conta",
+      "worldbuilding-xxviii:trabalho_cotidiano:cuidado",
+      "worldbuilding-xxviii:trabalho_cotidiano:noite",
+      "worldbuilding-xxviii:trabalho_cotidiano:remendo",
+      "worldbuilding-xxviii:trabalho_cotidiano:repouso",
+      "worldbuilding-xxviii:trabalho_cotidiano:revisao",
+      "worldbuilding-xxviii:tributos_e_passagens:abastecimento",
+      "worldbuilding-xxviii:vinhetas:soldo"
+    ],
+    "interfaces-nao-localizadas": [
+      "worldbuilding-xxviii:informacao_e_ritos:cartas",
+      "worldbuilding-xxviii:informacao_e_ritos:corrente",
+      "worldbuilding-xxviii:redes_de_resistencia:abrigo",
+      "worldbuilding-xxviii:redes_de_resistencia:custo",
+      "worldbuilding-xxviii:redes_de_resistencia:divergencia",
+      "worldbuilding-xxviii:redes_de_resistencia:ironwood",
+      "worldbuilding-xxviii:servidao_e_agencia:futuro",
+      "worldbuilding-xxviii:servidao_e_agencia:representacao",
+      "worldbuilding-xxviii:servidao_e_agencia:solidariedade",
+      "worldbuilding-xxviii:tributos_e_passagens:duplo",
+      "worldbuilding-xxviii:vinhetas:mensagem"
+    ],
+    "rio-medio": [
+      "worldbuilding-xxviii:informacao_e_ritos:memoria",
+      "worldbuilding-xxviii:informacao_e_ritos:ritual",
+      "worldbuilding-xxviii:redes_de_resistencia:travessia",
+      "worldbuilding-xxviii:servidao_e_agencia:evasao",
+      "worldbuilding-xxviii:trabalho_cotidiano:navegantes",
+      "worldbuilding-xxviii:trabalho_cotidiano:transporte",
+      "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "worldbuilding-xxviii:tributos_e_passagens:medida",
+      "worldbuilding-xxviii:tributos_e_passagens:tributo-ou-soldo",
+      "worldbuilding-xxviii:vinhetas:balsa",
+      "worldbuilding-xxviii:vinhetas:lua"
+    ]
+  },
+  "by_referencia": {
+    "area-proposta:rio": [
+      "worldbuilding-xxviii:redes_de_resistencia:ironwood",
+      "worldbuilding-xxviii:servidao_e_agencia:futuro"
+    ],
+    "povoamento-proposto:balsa-dos-nomes": [
+      "worldbuilding-xxviii:informacao_e_ritos:memoria",
+      "worldbuilding-xxviii:redes_de_resistencia:abrigo",
+      "worldbuilding-xxviii:servidao_e_agencia:evasao",
+      "worldbuilding-xxviii:trabalho_cotidiano:navegantes",
+      "worldbuilding-xxviii:vinhetas:balsa"
+    ],
+    "povoamento-proposto:patio-do-soldo": [
+      "worldbuilding-xxviii:trabalho_cotidiano:comida",
+      "worldbuilding-xxviii:trabalho_cotidiano:cuidado",
+      "worldbuilding-xxviii:trabalho_cotidiano:noite",
+      "worldbuilding-xxviii:trabalho_cotidiano:repouso",
+      "worldbuilding-xxviii:tributos_e_passagens:abastecimento",
+      "worldbuilding-xxviii:vinhetas:soldo"
+    ],
+    "povoamento-proposto:salas-de-protocolo": [
+      "worldbuilding-xxviii:informacao_e_ritos:selo",
+      "worldbuilding-xxviii:tributos_e_passagens:isencao"
+    ],
+    "rio-garganta:acordo:rio": [
+      "worldbuilding-xxviii:servidao_e_agencia:corpo",
+      "worldbuilding-xxviii:servidao_e_agencia:renuncia",
+      "worldbuilding-xxviii:tributos_e_passagens:tributo-ou-soldo"
+    ],
+    "rio-garganta:circuito:barcas": [
+      "worldbuilding-xxviii:redes_de_resistencia:travessia",
+      "worldbuilding-xxviii:servidao_e_agencia:familia",
+      "worldbuilding-xxviii:trabalho_cotidiano:transporte"
+    ],
+    "rio-garganta:circuito:soldo": [
+      "worldbuilding-xxviii:trabalho_cotidiano:remendo",
+      "worldbuilding-xxviii:trabalho_cotidiano:revisao",
+      "worldbuilding-xxviii:tributos_e_passagens:medida"
+    ],
+    "rio-garganta:lugar:balsa": [
+      "worldbuilding-xxviii:informacao_e_ritos:ritual",
+      "worldbuilding-xxviii:vinhetas:lua"
+    ],
+    "rio-garganta:oficio:soldo": [
+      "worldbuilding-xxviii:trabalho_cotidiano:aprendizagem",
+      "worldbuilding-xxviii:trabalho_cotidiano:conta"
+    ],
+    "worldbuilding-xxvii:dilemas_civis:emprestar-nome": [
+      "worldbuilding-xxviii:servidao_e_agencia:representacao",
+      "worldbuilding-xxviii:tributos_e_passagens:identidade"
+    ],
+    "worldbuilding-xxvii:pactos_de_frente:informante": [
+      "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "worldbuilding-xxviii:informacao_e_ritos:cartas",
+      "worldbuilding-xxviii:servidao_e_agencia:testemunho",
+      "worldbuilding-xxviii:vinhetas:mensagem"
+    ],
+    "worldbuilding-xxvii:pactos_de_frente:nao-e-paz": [
+      "worldbuilding-xxviii:redes_de_resistencia:custo",
+      "worldbuilding-xxviii:redes_de_resistencia:divergencia",
+      "worldbuilding-xxviii:servidao_e_agencia:solidariedade"
+    ],
+    "worldbuilding-xxvii:rio_e_trabalho:barreiras": [
+      "worldbuilding-xxviii:informacao_e_ritos:corrente",
+      "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "worldbuilding-xxviii:tributos_e_passagens:duplo"
+    ]
+  },
+  "by_estado": {
+    "proposta_cultural_nao_canonica": [
+      "worldbuilding-xxviii:informacao_e_ritos:boato",
+      "worldbuilding-xxviii:informacao_e_ritos:cartas",
+      "worldbuilding-xxviii:informacao_e_ritos:corrente",
+      "worldbuilding-xxviii:informacao_e_ritos:memoria",
+      "worldbuilding-xxviii:informacao_e_ritos:ritual",
+      "worldbuilding-xxviii:informacao_e_ritos:selo",
+      "worldbuilding-xxviii:redes_de_resistencia:abrigo",
+      "worldbuilding-xxviii:redes_de_resistencia:custo",
+      "worldbuilding-xxviii:redes_de_resistencia:divergencia",
+      "worldbuilding-xxviii:redes_de_resistencia:ironwood",
+      "worldbuilding-xxviii:redes_de_resistencia:travessia",
+      "worldbuilding-xxviii:servidao_e_agencia:corpo",
+      "worldbuilding-xxviii:servidao_e_agencia:evasao",
+      "worldbuilding-xxviii:servidao_e_agencia:familia",
+      "worldbuilding-xxviii:servidao_e_agencia:futuro",
+      "worldbuilding-xxviii:servidao_e_agencia:renuncia",
+      "worldbuilding-xxviii:servidao_e_agencia:representacao",
+      "worldbuilding-xxviii:servidao_e_agencia:solidariedade",
+      "worldbuilding-xxviii:servidao_e_agencia:testemunho",
+      "worldbuilding-xxviii:trabalho_cotidiano:aprendizagem",
+      "worldbuilding-xxviii:trabalho_cotidiano:comida",
+      "worldbuilding-xxviii:trabalho_cotidiano:conta",
+      "worldbuilding-xxviii:trabalho_cotidiano:cuidado",
+      "worldbuilding-xxviii:trabalho_cotidiano:navegantes",
+      "worldbuilding-xxviii:trabalho_cotidiano:noite",
+      "worldbuilding-xxviii:trabalho_cotidiano:remendo",
+      "worldbuilding-xxviii:trabalho_cotidiano:repouso",
+      "worldbuilding-xxviii:trabalho_cotidiano:revisao",
+      "worldbuilding-xxviii:trabalho_cotidiano:transporte",
+      "worldbuilding-xxviii:tributos_e_passagens:abastecimento",
+      "worldbuilding-xxviii:tributos_e_passagens:cobranca",
+      "worldbuilding-xxviii:tributos_e_passagens:duplo",
+      "worldbuilding-xxviii:tributos_e_passagens:identidade",
+      "worldbuilding-xxviii:tributos_e_passagens:isencao",
+      "worldbuilding-xxviii:tributos_e_passagens:medida",
+      "worldbuilding-xxviii:tributos_e_passagens:tributo-ou-soldo",
+      "worldbuilding-xxviii:vinhetas:balsa",
+      "worldbuilding-xxviii:vinhetas:lua",
+      "worldbuilding-xxviii:vinhetas:mensagem",
+      "worldbuilding-xxviii:vinhetas:soldo"
+    ]
+  },
+  "by_nome": {
+    "A aliança sem quartel-general": [
+      "worldbuilding-xxviii:servidao_e_agencia:solidariedade"
+    ],
+    "A embarcação e o nome": [
+      "worldbuilding-xxviii:vinhetas:balsa"
+    ],
+    "A exceção que cobra lealdade": [
+      "worldbuilding-xxviii:tributos_e_passagens:isencao"
+    ],
+    "A notícia de uma revolta futura": [
+      "worldbuilding-xxviii:vinhetas:mensagem"
+    ],
+    "A pessoa que o contrato pretende possuir": [
+      "worldbuilding-xxviii:servidao_e_agencia:corpo"
+    ],
+    "A prova sem testemunha pública": [
+      "worldbuilding-xxviii:servidao_e_agencia:testemunho"
+    ],
+    "A provisão requisitada": [
+      "worldbuilding-xxviii:tributos_e_passagens:abastecimento"
+    ],
+    "A recusa de um pacto injusto": [
+      "worldbuilding-xxviii:servidao_e_agencia:renuncia"
+    ],
+    "A refeição sem contrato": [
+      "worldbuilding-xxviii:trabalho_cotidiano:comida"
+    ],
+    "A rota que não foi traçada": [
+      "worldbuilding-xxviii:redes_de_resistencia:travessia"
+    ],
+    "A vigília e o medo": [
+      "worldbuilding-xxviii:trabalho_cotidiano:noite"
+    ],
+    "A água não assinou o decreto": [
+      "worldbuilding-xxviii:vinhetas:lua"
+    ],
+    "A água sob Severina": [
+      "worldbuilding-xxviii:informacao_e_ritos:ritual"
+    ],
+    "Carta sem destino revelado": [
+      "worldbuilding-xxviii:informacao_e_ritos:cartas"
+    ],
+    "Casa aberta, saída preservada": [
+      "worldbuilding-xxviii:redes_de_resistencia:abrigo"
+    ],
+    "Descansar não é prêmio": [
+      "worldbuilding-xxviii:trabalho_cotidiano:repouso"
+    ],
+    "Discordar do libertador": [
+      "worldbuilding-xxviii:redes_de_resistencia:divergencia"
+    ],
+    "Famílias contra registros": [
+      "worldbuilding-xxviii:servidao_e_agencia:familia"
+    ],
+    "Ferramenta reparada, dívida mantida": [
+      "worldbuilding-xxviii:trabalho_cotidiano:remendo"
+    ],
+    "Fugir não é a revolta": [
+      "worldbuilding-xxviii:servidao_e_agencia:evasao"
+    ],
+    "O boato de uma revolta que não ocorreu": [
+      "worldbuilding-xxviii:informacao_e_ritos:boato"
+    ],
+    "O corpo não é carga": [
+      "worldbuilding-xxviii:trabalho_cotidiano:transporte"
+    ],
+    "O cuidado não pode virar dívida": [
+      "worldbuilding-xxviii:redes_de_resistencia:custo"
+    ],
+    "O erro que vira dívida": [
+      "worldbuilding-xxviii:trabalho_cotidiano:revisao"
+    ],
+    "O imposto de duas sombras": [
+      "worldbuilding-xxviii:tributos_e_passagens:duplo"
+    ],
+    "O nome na lista": [
+      "worldbuilding-xxviii:tributos_e_passagens:identidade"
+    ],
+    "O que as águas deixam saber": [
+      "worldbuilding-xxviii:informacao_e_ritos:corrente"
+    ],
+    "O que viria depois da libertação?": [
+      "worldbuilding-xxviii:servidao_e_agencia:futuro"
+    ],
+    "O saldo que não é salário": [
+      "worldbuilding-xxviii:vinhetas:soldo"
+    ],
+    "O selo que não é prova": [
+      "worldbuilding-xxviii:informacao_e_ritos:selo"
+    ],
+    "Pagamento pelo trabalho não é tributo": [
+      "worldbuilding-xxviii:tributos_e_passagens:tributo-ou-soldo"
+    ],
+    "Peso que não foi medido": [
+      "worldbuilding-xxviii:tributos_e_passagens:medida"
+    ],
+    "Quem cobra do rio?": [
+      "worldbuilding-xxviii:tributos_e_passagens:cobranca"
+    ],
+    "Quem confere o esforço?": [
+      "worldbuilding-xxviii:trabalho_cotidiano:conta"
+    ],
+    "Quem cuida quando o sino chama?": [
+      "worldbuilding-xxviii:trabalho_cotidiano:cuidado"
+    ],
+    "Quem fala pelo fugitivo?": [
+      "worldbuilding-xxviii:servidao_e_agencia:representacao"
+    ],
+    "Quem guarda os nomes apagados?": [
+      "worldbuilding-xxviii:informacao_e_ritos:memoria"
+    ],
+    "Rangers não são roteiro obrigatório": [
+      "worldbuilding-xxviii:redes_de_resistencia:ironwood"
+    ],
+    "Remar não implica aceitar o regime": [
+      "worldbuilding-xxviii:trabalho_cotidiano:navegantes"
+    ],
+    "Saber fazer é forma de autonomia": [
+      "worldbuilding-xxviii:trabalho_cotidiano:aprendizagem"
+    ]
+  },
+  "by_pagina": {
+    "11": [
+      "worldbuilding-xxviii:fato:12"
+    ],
+    "4": [
+      "worldbuilding-xxviii:fato:01",
+      "worldbuilding-xxviii:fato:02",
+      "worldbuilding-xxviii:fato:03",
+      "worldbuilding-xxviii:fato:04",
+      "worldbuilding-xxviii:fato:05",
+      "worldbuilding-xxviii:fato:06"
+    ],
+    "7": [
+      "worldbuilding-xxviii:fato:07",
+      "worldbuilding-xxviii:fato:08",
+      "worldbuilding-xxviii:fato:09",
+      "worldbuilding-xxviii:fato:10"
+    ],
+    "9": [
+      "worldbuilding-xxviii:fato:11"
+    ]
+  }
+}
