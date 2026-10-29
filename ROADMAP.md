@@ -686,3 +686,14 @@ Veja [ATLAS_GEOGRAFIA_FISICA_CICLO34.md](docs/ATLAS_GEOGRAFIA_FISICA_CICLO34.md)
 - **Próximo ciclo macro:** compilar relações entre fronteiras naturais e zonas de influência histórica sem inventar estradas, soberanias ou geometrias.
 
 Referência: [ATLAS_MACROAMBIENTES_CICLO35.md](docs/ATLAS_MACROAMBIENTES_CICLO35.md).
+
+## Ciclo XXXVI — Interfaces continentais e limites rastreados (2026-10-29)
+
+- [x] Registrar 13 interfaces sem coordenadas: físicas, históricas, políticas, verticais e dinâmicas.
+- [x] Cruzar os sete vínculos do macroatlas e oito relações dos macroambientes, sem produzir novas arestas cartográficas.
+- [x] Individualizar oito perguntas topológicas pendentes, da Foz/Shadar às nascentes e Grama-Cortada.
+- [x] Publicar painel de relações e incertezas na visão macro do Atlas, com distinção entre fonte, inferência e limite.
+- [x] Criar validação e testes de regressão para impedir rotas, fronteiras marítimas fixas e topologias falsamente resolvidas.
+- [ ] Revisão autoral das oito questões; nenhuma promovida ao cânone.
+
+**Próximo ciclo macro recomendado (XXXVII):** matriz de alternativas topológicas, sem aprovação automática, para decidir as relações espaciais entre os grandes setores antes de qualquer desenho cartográfico em escala meso. Fonte: [ATLAS_INTERFACES_CONTINENTAIS_CICLO36.md](docs/ATLAS_INTERFACES_CONTINENTAIS_CICLO36.md).
