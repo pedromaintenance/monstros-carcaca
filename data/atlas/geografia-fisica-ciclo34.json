@@ -208,6 +208,39 @@
       "estado": "documentado_com_conflito"
     },
     {
+      "id": "geo-xxxiv:gualapolis",
+      "titulo": "Gualápolis, antiga capital nativa",
+      "tipo": "assentamento_historico",
+      "orientacao": "sul-relativo",
+      "setores": [
+        "foz"
+      ],
+      "lugar_id": "lugar-visual:gualapolis",
+      "paginas": [
+        5,
+        6,
+        10
+      ],
+      "descricao": "Capital nativa da margem sul do Abismo, tomada por Ulorian em 984 EC. O vínculo com Shadar-Riverie permanece sem resolução topográfica.",
+      "estado": "documentado_com_conflito"
+    },
+    {
+      "id": "geo-xxxiv:boca-do-abismo",
+      "titulo": "Boca do Abismo, fortaleza",
+      "tipo": "fortaleza",
+      "orientacao": "sul-relativo",
+      "setores": [
+        "foz"
+      ],
+      "lugar_id": "lugar-visual:boca-do-abismo",
+      "paginas": [
+        5,
+        6
+      ],
+      "descricao": "Fortaleza fundada por Ulorian sobre a antiga Gualápolis; não define a extensão do sítio ou sua relação com Shadar.",
+      "estado": "documentado_com_conflito"
+    },
+    {
       "id": "geo-xxxiv:ilha-lunar",
       "titulo": "Ilha do Templo da Lua",
       "tipo": "hidrografia",
@@ -291,8 +324,8 @@
   "relacoes": [
     {
       "id": "rel-xxxiv:garganta-abismo",
-      "de": "geo-xxxiv:garganta",
-      "para": "geo-xxxiv:abismo",
+      "de": "geo-xxxiv:cranio",
+      "para": "geo-xxxiv:foz",
       "tipo": "referencia_cardinal",
       "orientacao": "leste_oeste",
       "paginas": [
@@ -304,8 +337,8 @@
     },
     {
       "id": "rel-xxxiv:rio-ancestral-abismo",
-      "de": "geo-xxxiv:rio-ancestral",
-      "para": "geo-xxxiv:abismo",
+      "de": "geo-xxxiv:rio",
+      "para": "geo-xxxiv:foz",
       "tipo": "desagua",
       "orientacao": "rio_queda",
       "paginas": [
@@ -318,8 +351,8 @@
     },
     {
       "id": "rel-xxxiv:templo-das-sombras-abismo",
-      "de": "geo-xxxiv:templo-das-sombras",
-      "para": "geo-xxxiv:abismo",
+      "de": "geo-xxxiv:margem-norte",
+      "para": "geo-xxxiv:foz",
       "tipo": "margem",
       "orientacao": "norte",
       "paginas": [
@@ -331,7 +364,7 @@
     {
       "id": "rel-xxxiv:gualapolis-abismo",
       "de": "geo-xxxiv:gualapolis",
-      "para": "geo-xxxiv:abismo",
+      "para": "geo-xxxiv:foz",
       "tipo": "margem",
       "orientacao": "sul",
       "paginas": [
@@ -367,21 +400,9 @@
       "estado": "documentado_sem_geometria"
     },
     {
-      "id": "rel-xxxiv:floresta-eldroth-asa-direita",
-      "de": "geo-xxxiv:floresta-eldroth",
-      "para": "geo-xxxiv:asa-direita",
-      "tipo": "associacao_anatomica",
-      "orientacao": "nao_cardinal",
-      "paginas": [
-        5
-      ],
-      "descricao": "Eldroth pertence ao domínio anatômico narrado como asa direita.",
-      "estado": "documentado_sem_geometria"
-    },
-    {
       "id": "rel-xxxiv:templo-do-crepusculo-abismo",
-      "de": "geo-xxxiv:templo-do-crepusculo",
-      "para": "geo-xxxiv:abismo",
+      "de": "geo-xxxiv:cauda",
+      "para": "geo-xxxiv:foz",
       "tipo": "alem_de",
       "orientacao": "nao_cardinal",
       "paginas": [
@@ -392,8 +413,8 @@
     },
     {
       "id": "rel-xxxiv:templo-da-lua-rio-ancestral",
-      "de": "geo-xxxiv:templo-da-lua",
-      "para": "geo-xxxiv:rio-ancestral",
+      "de": "geo-xxxiv:ilha-lunar",
+      "para": "geo-xxxiv:rio",
       "tipo": "ilha_no_rio",
       "orientacao": "sem_trecho",
       "paginas": [
@@ -404,7 +425,7 @@
     },
     {
       "id": "rel-xxxiv:mar-de-sangue-costa-sul",
-      "de": "geo-xxxiv:mar-de-sangue",
+      "de": "geo-xxxiv:mar-sangue",
       "para": "geo-xxxiv:costa-sul",
       "tipo": "litoral",
       "orientacao": "sul",
@@ -418,7 +439,7 @@
     {
       "id": "rel-xxxiv:aguas-azuis-mar-de-sangue",
       "de": "geo-xxxiv:aguas-azuis",
-      "para": "geo-xxxiv:mar-de-sangue",
+      "para": "geo-xxxiv:mar-sangue",
       "tipo": "alem_de",
       "orientacao": "sem_fronteira",
       "paginas": [
@@ -429,7 +450,7 @@
     },
     {
       "id": "rel-xxxiv:shadar-riverie-gualapolis",
-      "de": "geo-xxxiv:shadar-riverie",
+      "de": "geo-xxxiv:shadar",
       "para": "geo-xxxiv:gualapolis",
       "tipo": "topologia_contestada",
       "orientacao": "sem_determinacao",
