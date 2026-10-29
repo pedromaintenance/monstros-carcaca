@@ -791,3 +791,20 @@ Documentação: [ATLAS_CIRCULACAO_MATERIAL_CICLO41.md](docs/ATLAS_CIRCULACAO_MAT
 - [ ] Nenhuma hipótese espacial do XXXVII foi adotada ou aprovada por esta auditoria.
 
 [Auditoria diretamente no Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#continentalAudit) · [Parecer em Markdown](docs/ATLAS_AUDITORIA_PRONTIDAO_CICLO43.md).
+
+## Revisão autoral de alcance — povoamento macro (2026-10-29)
+
+**A decisão de transitar para aprofundamento amplo foi adiada.** O parecer XLIII usava o critério de “âncoras narrativas suficientes”, não a diversidade e quantidade de povoamento pretendidas para um continente vivo. Mesmo as regiões com melhor tradição documentada estão incompletas na escala macro.
+
+**Referências flexíveis de densidade autoral:** Rio Ancestral 15–20, Eldroth 20–30, entorno de Garganta 10–15, montanhas de Thargrid 20–25, Ironwood 10–15, Caatinga 15–20, costa do Mar de Sangue 20–30, ilhas relevantes 10–15, assentamentos submersos do Mar de Sangue e águas azuis próximas 15–20, e cauda próxima à fortaleza 10–15. **São 145–205 locais e ilhas como ordem de grandeza, não registros concluídos.** Foz, Shadar-Riverie e Grama-Cortada ainda necessitam de critérios próprios. Não tratar ilhas como assentamentos automaticamente nem confundir Ironwood com o Reino de Thargrid.
+
+**Novo fluxo prioritário:**
+1. [ ] Inventariar lugares do manuscrito, lugares catalogados, propostas de povoamento e registros de `dist/carcaca/settlements.json`, eliminando duplicidade e diferenciando ilha, ruína, fortaleza, instituição e assentamento efetivo.
+2. [ ] Elaborar distribuição de assentamentos por ecologia, anatomia de Golzdov, regimes políticos, história e subsistência, preservando todas as decisões topológicas não aprovadas.
+3. [ ] Criar lotes pequenos, distintos e verificáveis por frente regional, com nome, escala, função, povos, poder, subsistência, conflitos, relações regionais, fontes e estatuto proposto.
+4. [ ] Revisar conexões políticas, redes de resistência, comércio e refúgio sem converter relação narrada em estrada, rota ou fronteira fictícia.
+5. [ ] Repetir a auditoria de cobertura macro só depois de formar uma rede continental diversificada; aprofundamento localizado pode ser usado como piloto, não como substituto dessa etapa.
+
+**Estado da auditoria anterior:** as classificações de 4 regiões com “base local suficiente”, 5 condicionadas e 2 bloqueadas continuam úteis apenas como **força temática das âncoras existentes**, não como indicador de conclusão macrorregional.
+
+[Plano em JSON](data/atlas/horizonte-povoamento-macro.json) · [Atlas com parecer revisado](https://pedromaintenance.github.io/monstros-carcaca/atlas/#audit-density).
