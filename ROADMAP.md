@@ -750,3 +750,17 @@ Referência: [ATLAS_HIDROGRAFIA_CONTINENTAL_CICLO39.md](docs/ATLAS_HIDROGRAFIA_C
 **Próximo objetivo macro (XLI):** registrar circulação material e dependências continentais — alimentação, tributos, exploração, deslocamentos, circuitos de conhecimento e poder naval, cada vínculo com origem textual e sem distância, volume ou rota inventada.
 
 [Documento do Ciclo XL](docs/ATLAS_CRONOCARTOGRAFIA_CICLO40.md).
+
+## Ciclo XLI — Circulação material e reprodução social (2026-10-29)
+
+- [x] Inventariar 24 nós materiais e sociais sem criar novos assentamentos ou coordenadas.
+- [x] Verificar 15 vínculos de tributação, coerção, transformação, abastecimento, refúgio, trocas, informação e pressão marítima.
+- [x] Preservar 12 questões autorais abertas sobre produção, extração, portos, trocas e comunicação.
+- [x] Separar tributos exigidos de pagamentos realizados, refúgio de rotas, coerção de comércio e Grama-Cortada local de redes de exportação não comprovadas.
+- [x] Integrar lista filtrável e inspetor de evidências ao Atlas.
+- [x] Validar contra setores, esferas e redes XXXII/XXXIII/XL; proteger ausência de geometrias e volumes em testes e CI.
+- [ ] Definir volumes, rotas, especialização produtiva e fluxos reais apenas após fontes ou decisões autorais.
+
+**Ciclo XLII sugerido:** dependências e vulnerabilidades continentais com cenários hipotéticos não canônicos, distinguindo robustez de redes documentadas de inferências sobre gargalos, perdas, fome ou custos.
+
+Documentação: [ATLAS_CIRCULACAO_MATERIAL_CICLO41.md](docs/ATLAS_CIRCULACAO_MATERIAL_CICLO41.md).
