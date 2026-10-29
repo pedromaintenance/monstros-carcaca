@@ -722,3 +722,17 @@ Documento de referência: [ATLAS_MATRIZ_TOPOLOGICA_CICLO37.md](docs/ATLAS_MATRIZ
 - [ ] Desenhar um mapa topográfico em escala: bloqueado por falta de coordenadas, contiguidade e decisões de autoria.
 
 **Próximo ciclo macro (XXXIX):** montar uma matriz das grandes bacias e vertentes *documentadas ou desconhecidas*, sem inventar nascentes, afluentes, divisores e cursos d'água; em seguida cronocartografia do controle territorial. Fonte: [ATLAS_CARTA_CARTOGRAFICA_CICLO38.md](docs/ATLAS_CARTA_CARTOGRAFICA_CICLO38.md).
+
+## Ciclo XXXIX — Hidrografia continental e regimes desconhecidos (2026-10-29)
+
+- [x] Compilar 13 domínios hidrológicos sem transformá-los em bacias ou novos corpos d'água.
+- [x] Vincular 6 relações documentadas, incluindo a purificação ritual localizada em Portomonte.
+- [x] Inventariar 12 lacunas: nascentes, afluentes, vazão, pós-Abismo, ilha, Caatinga, purificação, pradarias, Grama-Cortada, neve, subsolo, faixa marítima.
+- [x] Distinguir regime hídrico não documentado de inexistência de água; separar neve de nascente, caverna de aquífero e agricultura de água potável.
+- [x] Adicionar painel e inspetor de fontes no Atlas e publicar o JSON no Pages.
+- [x] Incluir validação cruzada e testes de regressão no CI e no workflow Pages.
+- [ ] Definição autoral de cabeceiras, bacias e acesso à água; nenhuma lacuna fechada automaticamente.
+
+**Próxima etapa macro recomendada (XL):** cronocartografia dos centros de poder (controle e rupturas por período, sem limites políticos inferidos), seguida de matriz de circulação material e dependências por macrorregião, antes da escala meso.
+
+Referência: [ATLAS_HIDROGRAFIA_CONTINENTAL_CICLO39.md](docs/ATLAS_HIDROGRAFIA_CONTINENTAL_CICLO39.md).
