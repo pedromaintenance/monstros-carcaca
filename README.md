@@ -88,6 +88,10 @@ O [dossiê das interfaces](docs/ATLAS_INTERFACES_CONTINENTAIS_CICLO36.md) acresc
 
 O [dossiê do Ciclo XXXVII](docs/ATLAS_MATRIZ_TOPOLOGICA_CICLO37.md) apresenta uma **matriz de 8 decisões cartográficas e 24 alternativas não adotadas** em quatro conjuntos: Oeste/Abismo, Norte/asa direita, fronteira marítima e interior continental. O [JSON](data/atlas/matriz-topologica-ciclo37.json) cruza os registros dos ciclos XXXIV–XXXVI e preserva as referências do manuscrito. O [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/) oferece um painel de comparação com **simulações temporárias**, sem gravar escolhas nem canonizar as hipóteses.
 
+## Ciclo XXXVIII — Carta continental de Golzdov
+
+A [Carta Cartográfica Continental](docs/ATLAS_CARTA_CARTOGRAFICA_CICLO38.md) traz uma **bússola qualitativa** que diferencia seis âncoras cardeais, quatro referências relativas, um eixo atravessante, cinco referências sem orientação e quatro marcos com conflito topológico. O total é de **20 marcos físicos, 12 relações documentais e 8 decisões autorais pendentes**, sem coordenadas ou polígonos autorizados. O [JSON estruturado](data/atlas/carta-cartografica-ciclo38.json) cruza as fontes de geografia (XXXIV), interfaces (XXXVI) e oficina topológica (XXXVII). O [Atlas Pages](https://pedromaintenance.github.io/monstros-carcaca/atlas/) agora oferece uma bússola conceitual, documentação da fronteira marítima móvel, um inspetor de fontes e um manual para futuras cartas — **não um mapa em escala**.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
