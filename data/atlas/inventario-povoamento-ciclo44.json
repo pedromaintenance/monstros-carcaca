@@ -514,8 +514,8 @@
     {
       "id": "povoamento:xlv:02",
       "nome": "O Mosteiro das Tartarugas de Vidro",
-      "frente_id": "frente:macro:costa",
-      "setor": "ilhas",
+      "frente_id": "frente:macro:ilhas",
+      "setor": "costa",
       "categoria": "comunidade_coletiva_proposta",
       "status": "proposta_nao_canonica",
       "conta_como_aprovado": false
@@ -560,7 +560,7 @@
       "id": "povoamento:xlv:07",
       "nome": "O Coral dos Troncos Acordados",
       "frente_id": "frente:macro:ironwood",
-      "setor": "ironwood",
+      "setor": "thargrid",
       "categoria": "comunidade_coletiva_proposta",
       "status": "proposta_nao_canonica",
       "conta_como_aprovado": false
@@ -569,7 +569,7 @@
       "id": "povoamento:xlv:08",
       "nome": "O Ninho das Cinquenta Cordas",
       "frente_id": "frente:macro:ironwood",
-      "setor": "ironwood",
+      "setor": "thargrid",
       "categoria": "comunidade_coletiva_proposta",
       "status": "proposta_nao_canonica",
       "conta_como_aprovado": false
