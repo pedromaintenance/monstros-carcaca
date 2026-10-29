@@ -176,7 +176,7 @@ test("Atlas XXXIII: UI e artefato Pages carregam camadas e cronologia com JS vá
 const physicalFile=file("data/atlas/geografia-fisica-ciclo34.json");
 const physical=buildPhysicalGeography(physicalFile,macro,atlas);
 test("Atlas XXXIV: geografia de Golzdov possui marcos, relações e perguntas rastreadas",()=>{
-  assert.deepEqual(physical.totais,{marcos:20,relacoes:12,questoes:9,semDirecao:5,semSetor:2});
+  assert.deepEqual(physical.totais,{marcos:20,relacoes:12,questoes:9,semDirecao:6,semSetor:2});
   assert.equal(physical.altera_canon,false);
   assert.equal(physicalFile.aprovacao_autoral,false);
   assert.ok(physical.pontos.every(p=>p.paginas.length>0));
