@@ -80,6 +80,10 @@ A [base estruturada](data/worldbuilding/caatinga-vida-civil-ciclo23.json) reúne
 
 O export `dist/carcaca/caatinga-civil-life.json` e seus seis índices permitem leitura via `getCaatingaCivilLife`, `getCaatingaCivilLifeIndexes`, `getCaatingaCivilLifeEntry` e `searchCaatingaCivilLife`. A província não ganhou cidade, governo, fonte potável, rota, festival ou evento histórico inventados. O trabalho não transforma saques regionais em culpa étnica coletiva nem a água agrícola de Portomonte em água comprovadamente potável.
 
+## Ciclo XXXVI — Interfaces continentais, contatos e limites
+
+O [dossiê das interfaces](docs/ATLAS_INTERFACES_CONTINENTAIS_CICLO36.md) acrescenta **13 relações territoriais qualitativas** e **8 decisões autorais em aberto**. As relações distinguem hidrografia, relevo, profundidade, incursões, migração, política e topologias não reconciliadas; **não equivalem a estradas ou fronteiras**. A base [JSON](data/atlas/interfaces-continentais-ciclo36.json) cruza sete conexões macro existentes e oito vínculos ambientais já descritos, sem inventar lugares, coordenadas, travessias ou biomas. Um novo painel no [Atlas Pages](https://pedromaintenance.github.io/monstros-carcaca/atlas/) permite examinar fonte, inferência e o que continua desconhecido.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
