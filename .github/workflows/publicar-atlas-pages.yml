@@ -71,7 +71,8 @@ jobs:
             data/atlas/macrorregioes-carcaca.json \
             data/atlas/redes-historicas-ciclo33.json \
             data/atlas/geografia-fisica-ciclo34.json \
-            data/atlas/macroambientes-ciclo35.json
+            data/atlas/macroambientes-ciclo35.json \
+            data/atlas/interfaces-continentais-ciclo36.json
           do
             mkdir -p ".public-pages/atlas/dados/$(dirname "$file")"
             cp "$file" ".public-pages/atlas/dados/$file"
