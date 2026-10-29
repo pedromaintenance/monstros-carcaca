@@ -77,6 +77,30 @@ test("Revisão autoral: ancoragem temática não equivale a macro povoado",()=>{
  assert.equal((audit.match(/class="audit-density-grid"/g)||[]).length,1);
  assert.equal((audit.match(/class="audit-region" data-readiness=/g)||[]).length,11);
 });
+test("Povoamento macro: assentamentos de criaturas não são acessórios de humanoides",()=>{
+ const horizon=JSON.parse(read("data/atlas/horizonte-povoamento-macro.json"));
+ const policy=horizon.povoamento_criaturas;
+ assert.ok(policy);
+ assert.equal(policy.inclusao_obrigatoria,true);
+ assert.equal(policy.nenhuma_especie_automaticamente_canonica,true);
+ assert.equal(policy.classificacoes_nao_sao_presenca_confirmada,true);
+ assert.ok(policy.exemplos_de_povos_a_considerar_sem_afirmar_presenca_em_cada_regiao.some(s=>s.includes("goblins")));
+ assert.ok(policy.exemplos_de_povos_a_considerar_sem_afirmar_presenca_em_cada_regiao.some(s=>s.includes("fadas")));
+ assert.ok(policy.formas_possiveis_de_ocupacao.some(f=>f.tipo==="assentamento_permanente"));
+ assert.ok(policy.formas_possiveis_de_ocupacao.some(f=>f.tipo==="colonia_organizada"));
+ assert.ok(policy.formas_possiveis_de_ocupacao.some(f=>f.tipo==="habitat_ecologico"));
+ assert.ok(policy.formas_possiveis_de_ocupacao.some(f=>f.tipo==="covil_individual"));
+ assert.ok(policy.politica_de_contagem.includes("Um assentamento misto conta uma única vez"));
+ assert.ok(policy.ecologia_integral.includes("migração"));
+ assert.equal(horizon.frentes.length,10);
+ assert.ok(horizon.frentes.every(f=>f.inclui_assentamentos_de_criaturas===true&&
+   f.auditar_habitats_magicos_e_ecologicos===true&&f.meta_reservada_a_humanoides===false));
+ assert.ok(horizon.portoes_de_qualidade.some(s=>s.includes("goblins, fadas")));
+ assert.match(audit,/id="audit-creature-settlements"/);
+ assert.match(audit,/Assentamentos não são exclusividade de humanoides/);
+ assert.match(audit,/um covil solitário não é uma aldeia/);
+ assert.match(audit,/não devem inflar artificialmente a contagem/);
+});
 test("Atlas XLIII: responsividade e integridade da página preservadas",()=>{
  assert.match(html,/\.audit-region\{display:grid/);
  assert.match(html,/@media\(max-width:770px\)\{\.audit-section/);
