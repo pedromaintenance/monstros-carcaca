@@ -855,3 +855,20 @@ A faixa flexível de **145–205 assentamentos e ilhas** não é reservada a hum
 - [ ] Auditar biologia e relações materiais de cada assentamento aprovado antes de construir uma mesogeografia.
 
 [Documento XLV](docs/ATLAS_POVOAMENTO_RIO_ELDROTH_CICLO45.md) · [Atlas XLV](https://pedromaintenance.github.io/monstros-carcaca/atlas/#settlementExpansion).
+
+## Ciclo XLVI — Quatro frentes de povoamento continental (2026-10-29)
+
+- [x] Criar 24 comunidades coletivas diferenciadas em **Caatinga (6)**, **entorno de Garganta (6)**, **montanhas de Thargrid (6)** e **Ironwood (6)**.
+- [x] Criar 12 habitats, territórios de animais, covis individuais e fenômenos mágicos **sem incluí-los no total de povoados**.
+- [x] Distinguir comunidades de Garganta da própria cidade-fortaleza; não ressuscitar assentamentos Yokai contemporâneos por inferência.
+- [x] Preservar a diferença entre Ordenamento dos gigantes e governo multirracial do Reino Sob a Montanha.
+- [x] Propor diferentes respostas à guerra e à resistência, sem colocar todos os orcs, goblins, fadas ou gnomos sob um único poder.
+- [x] Verificar IDs e nomes contra os lotes anteriores, os quatro macroambientes e as páginas públicas de referência do capítulo I.
+- [x] Proibir coordenadas, rotas, populações e fronteiras como inferências não aprovadas; não transformar covis em aldeias.
+- [x] Integrar visualização filtrável e inspetor social/ecológico ao Atlas e incluir testes de regressão em CI e Pages.
+- [x] Atualizar o acumulado editorial: **32 + 24 = 56 propostas**, **10 + 12 = 22 habitats não contáveis**, **zero novas aprovações**.
+- [ ] Reavaliar cada proposta com a autoria antes de qualquer alteração de cânone ou divisão em microterritórios.
+- [ ] Inventariar outras comunidades previamente registradas no material autoral e em campanhas, sem somar bases duplicadas.
+- [ ] **Ciclo XLVII sugerido:** individualização hipotética de ilhas, expansão de assentamentos submersos, cauda e entorno do Templo do Crepúsculo sem inventar passagens pelo Abismo.
+
+[Documento XLVI](docs/ATLAS_POVOAMENTO_QUATRO_FRENTES_CICLO46.md) · [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#fourFrontSettlements).
