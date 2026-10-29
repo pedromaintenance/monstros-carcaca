@@ -710,3 +710,15 @@ Referência: [ATLAS_MACROAMBIENTES_CICLO35.md](docs/ATLAS_MACROAMBIENTES_CICLO35
 **Próximo objetivo macro (XXXVIII):** criar carta de restrições para o futuro mapa (desenhável/documentado, apenas relativo, desconhecido ou contraditório) e um sistema de símbolos cartográficos que não oculte as lacunas, mantendo os onze setores existentes.
 
 Documento de referência: [ATLAS_MATRIZ_TOPOLOGICA_CICLO37.md](docs/ATLAS_MATRIZ_TOPOLOGICA_CICLO37.md).
+
+## Ciclo XXXVIII — Carta de restrições cartográficas continentais (2026-10-29)
+
+- [x] Mapear os 20 marcos físicos do XXXIV em oito classes de representação, preservando a orientação documental.
+- [x] Inventariar as 12 relações físicas e impedir que arestas semânticas se tornem estradas, fronteiras ou curvas fictícias.
+- [x] Destacar o limite dinâmico do Mar de Sangue sem fixar faixa ou polígono, e manter os Abissais marinhos distintos dos demônios.
+- [x] Vincular as oito decisões autorais do XXXVII, mantendo as 24 alternativas não adotadas.
+- [x] Inserir uma carta-bússola qualitativa e guia de desenho no Atlas, com acesso à árvore e referência paginada.
+- [x] Criar validador e regressões contra geometrias falsas, orientações alteradas e canonização involuntária; incluir no CI.
+- [ ] Desenhar um mapa topográfico em escala: bloqueado por falta de coordenadas, contiguidade e decisões de autoria.
+
+**Próximo ciclo macro (XXXIX):** montar uma matriz das grandes bacias e vertentes *documentadas ou desconhecidas*, sem inventar nascentes, afluentes, divisores e cursos d'água; em seguida cronocartografia do controle territorial. Fonte: [ATLAS_CARTA_CARTOGRAFICA_CICLO38.md](docs/ATLAS_CARTA_CARTOGRAFICA_CICLO38.md).
