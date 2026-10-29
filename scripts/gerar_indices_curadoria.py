@@ -265,6 +265,29 @@ def build():
     grama_xx=load("data/worldbuilding/grama-cortada-cotidiano-ciclo20.json")
     gnomos_xxi=load("data/worldbuilding/culturas-gnomicas-ciclo21.json")
     meio_demonios_xxii=load("data/worldbuilding/meio-demonios-sociedades-ciclo22.json")
+    foz_xxvii=load("data/worldbuilding/foz-shadar-memoria-ciclo27.json")
+    cats_foz_xxvii=("vida_sob_a_corte","memoria_submersa","rio_e_trabalho",
+                   "pactos_de_frente","dilemas_civis","vinhetas")
+    rows_foz_xxvii=[{**row,"categoria_indice":cat}
+                    for cat in cats_foz_xxvii for row in foz_xxvii[cat]]
+    if len(rows_foz_xxvii)!=36:
+        raise ValueError("Ciclo XXVII: devem existir 36 propostas editoriais.")
+    def indexar_foz_xxvii(field):
+        buckets=defaultdict(set)
+        for row in rows_foz_xxvii:
+            buckets[str(row[field])].add(row["id"])
+        return {key:sorted(ids) for key,ids in sorted(buckets.items())}
+    index_pages_foz=defaultdict(set)
+    for fact in foz_xxvii["fatos_documentados"]:
+        index_pages_foz[str(fact["pagina"])].add(fact["id"])
+    indices_foz_xxvii={
+        "by_categoria":indexar_foz_xxvii("categoria_indice"),
+        "by_escopo":indexar_foz_xxvii("escopo"),
+        "by_referencia":indexar_foz_xxvii("referencia_id"),
+        "by_estado":indexar_foz_xxvii("estado"),
+        "by_nome":indexar_foz_xxvii("nome"),
+        "by_pagina":{key:sorted(ids) for key,ids in sorted(index_pages_foz.items())}
+    }
     portomonte_xxvi=load("data/worldbuilding/revisao-autoral-portomonte-ciclo26.json")
     decisoes_portomonte_xxvi=portomonte_xxvi["decisoes"]
     def index_xxvi(key,values):
@@ -1186,6 +1209,8 @@ def build():
         "hack_artificer_movement_indexes":"hack-artificer-movement-indexes.json",
         "hack_mercenary_movements":"hack-mercenary-movements.json",
         "hack_mercenary_movement_indexes":"hack-mercenary-movement-indexes.json",
+        "foz_shadar_memory":"foz-shadar-memory.json",
+        "foz_shadar_memory_indexes":"foz-shadar-memory-indexes.json",
         "portomonte_authorial_review":"portomonte-authorial-review.json",
         "portomonte_authorial_review_indexes":"portomonte-authorial-review-indexes.json",
         "portomonte_temple_civic":"portomonte-temple-civic.json",
@@ -1338,6 +1363,10 @@ def build():
         "total_movimentos_classe_pendentes":len(movimentos_classes)-len(integral_por_id),
         "total_areas_povoamento_propostas":len(areas_povoamento),
         "total_nucleos_povoamento_propostos":len(sementes_povoamento),
+        "total_fatos_foz_xxvii":len(foz_xxvii["fatos_documentados"]),
+        "total_propostas_foz_xxvii":len(rows_foz_xxvii),
+        "total_referencias_foz_xxvii":len(foz_xxvii["referencias_rastreaveis"]),
+        "total_perguntas_foz_xxvii":len(foz_xxvii["perguntas_para_autor"]),
         "total_decisoes_portomonte_xxvi":len(portomonte_xxvi["decisoes"]),
         "total_opcoes_portomonte_xxvi":sum(len(r["opcoes"]) for r in decisoes_portomonte_xxvi),
         "total_guardas_portomonte_xxvi":len(portomonte_xxvi["guardas"]),
@@ -1525,6 +1554,8 @@ def build():
            files["hack_artificer_movement_indexes"]:indice_artifice_docx,
            files["hack_mercenary_movements"]:mercenario_docx,
            files["hack_mercenary_movement_indexes"]:indice_mercenario_docx,
+           files["foz_shadar_memory"]:foz_xxvii,
+           files["foz_shadar_memory_indexes"]:indices_foz_xxvii,
            files["portomonte_authorial_review"]:portomonte_xxvi,
            files["portomonte_authorial_review_indexes"]:indices_portomonte_xxvi,
            files["portomonte_temple_civic"]:portomonte_xxv,
