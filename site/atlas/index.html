@@ -27,7 +27,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .hero p{max-width:720px;font-size:14px;line-height:1.8;color:var(--muted);margin:14px 0 0}
 .hero .symbol{flex-shrink:0;width:125px;height:125px;border:1px solid #574a42;border-radius:50%;display:grid;place-content:center;position:relative;color:var(--gold);background:radial-gradient(circle,#392d2444,transparent);font-size:56px}
 .symbol:after,.symbol:before{content:"";position:absolute;border:1px dashed #665347;border-radius:50%;inset:11px}.symbol:after{inset:25px;border-style:solid;opacity:.4}
-.counters{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:21px}
+.counters{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin-bottom:21px}
 .counter{padding:13px 15px;background:#121919c9;border:1px solid #2a3432;border-radius:12px}
 .counter strong{font:500 24px/1.1 Cinzel,serif;color:#eee5d1;display:block}.counter span{display:block;margin-top:5px;color:var(--muted);font-size:10px;letter-spacing:.3px}
 .notice{border-left:3px solid #a87466;background:linear-gradient(90deg,#31211d88,transparent);padding:10px 14px;margin:0 0 22px;color:#d6bcb4;font-size:12px}
@@ -92,7 +92,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .loader{padding:45px 23px;color:var(--muted);line-height:1.8}
 .hidden{display:none!important}
 @media(max-width:1100px){.site{padding:0 18px 35px}.counters{grid-template-columns:repeat(3,1fr)}.workspace{grid-template-columns:minmax(290px,43%) minmax(300px,1fr)}.details{padding:19px 20px}}
-@media(max-width:760px){.hero{padding:25px 0}.hero .symbol{display:none}h1{font-size:34px}.counters{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.counter{padding:10px}.counter strong{font-size:20px}.counter span{font-size:9px}.workspace{grid-template-columns:1fr}.panel{min-height:0}.tree-scroll{height:390px;min-height:0}.details{max-height:none;min-height:360px}.topline{font-size:9px;gap:10px;letter-spacing:1px}}
+@media(max-width:760px){.hero{padding:25px 0}.hero .symbol{display:none}h1{font-size:34px}.counters{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.counter{padding:10px}.counter strong{font-size:20px}.counter span{font-size:9px}.workspace{grid-template-columns:1fr}.panel{min-height:0}.tree-scroll{height:390px;min-height:0}.details{max-height:none;min-height:360px}.topline{font-size:9px;gap:10px;letter-spacing:1px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -105,7 +105,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 <div class="symbol" aria-hidden="true">☽</div>
 </section>
 <section id="metrics" class="counters" aria-label="Resumo do atlas">
-<div class="counter"><strong>—</strong><span>Setores em análise</span></div><div class="counter"><strong>—</strong><span>Lugares no manuscrito</span></div><div class="counter"><strong>—</strong><span>Povos identificados</span></div><div class="counter"><strong>—</strong><span>Criaturas no catálogo</span></div><div class="counter"><strong>—</strong><span>Ecologia proposta</span></div><div class="counter"><strong>—</strong><span>Microespaços propostos</span></div>
+<div class="counter"><strong>—</strong><span>Setores em análise</span></div><div class="counter"><strong>—</strong><span>Lugares no manuscrito</span></div><div class="counter"><strong>—</strong><span>Povos identificados</span></div><div class="counter"><strong>—</strong><span>Criaturas no catálogo</span></div><div class="counter"><strong>—</strong><span>Ecologia proposta</span></div><div class="counter"><strong>—</strong><span>Microespaços propostos</span></div><div class="counter"><strong>—</strong><span>Lugares e sublugares</span></div><div class="counter"><strong>—</strong><span>Lacunas de subdivisão</span></div>
 </section>
 <p class="notice" id="warning">Todos os lugares têm um espaço para localidades internas: vilas, bairros, câmaras ou passagens, conforme a natureza do lugar. Pastas de lacunas não são assentamentos existentes. Setores de navegação, propostas e relatos não se tornam cânone automaticamente.</p>
 <main class="workspace">
@@ -267,7 +267,7 @@ function detail(){
     const places=state.atlas.nodes.filter(x=>["lugar","localidade"].includes(x.kind)&&chain(x.id).some(a=>a.id===n.id));
     const catalog=places.filter(p=>p.status!=="proposta"&&p.placeType!=="ambito").length;
     const drafts=places.filter(p=>p.status==="proposta").length;
-    html+='<section class="detail-section"><h3>Território e cobertura</h3><p class="tiny">'+catalog+' lugares referenciados, '+drafts+' microespaços em proposta. Setores editoriais não confirmam fronteiras, posse nem localização exata.</p></section>';
+    html+='<section class="detail-section"><h3>Território e cobertura</h3><p class="tiny">'+catalog+' lugares referenciados, '+drafts+' localidades ou microespaços propostos. Cada lugar tem uma área própria de subdivisões a individualizar. Os setores editoriais não confirmam fronteiras, posse nem localização exata.</p></section>';
   }
   if(["categoria","lacuna_localidades"].includes(n.kind)&&n.empty){
     html+='<section class="detail-section"><h3>Área para pesquisa</h3><p class="tiny">Nenhum registro individualizado nesta categoria e neste lugar. Isso não prova ausência de '+esc(n.label.toLowerCase())+' no cenário — apenas que os arquivos consultados ainda não trazem dados suficientes para afirmar uma ocorrência.</p></section>';
@@ -326,7 +326,8 @@ function populateCounters(s){
   const stats=[
     [s.setoresGeograficos,"Setores geográficos"],[s.lugaresManuscrito,"Lugares no manuscrito"],
     [s.povosManuscrito,"Povos identificados"],[s.criaturasCatalogadas,"Criaturas catalogadas"],
-    [s.ecologiaProposta,"Ecologia proposta"],[s.microespacosPropostos,"Microespaços propostos"]
+    [s.ecologiaProposta,"Ecologia proposta"],[s.microespacosPropostos,"Sementes de povoamento"],
+    [s.localidadesTotais,"Lugares e sublugares"],[s.localidadesPendentes,"Lacunas de subdivisão"]
   ];
   $("metrics").innerHTML=stats.map(a=>'<div class="counter"><strong>'+esc(a[0])+'</strong><span>'+esc(a[1])+'</span></div>').join("");
 }
