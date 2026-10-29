@@ -2993,7 +2993,7 @@ test("Ciclo XXX: pacote de mestre preserva graus de prova e não executa cena",a
   assert.equal(ix.by_tipo_evidencia.documentado.length,1);
   assert.equal((await atlas.searchRiverGMToolkit({categoria:"evidencias"})).length,3);
   assert.equal((await atlas.searchRiverGMToolkit({categoria:"evidencias",tipo:"documentado"})).length,1);
-  assert.equal((await atlas.searchRiverGMToolkit({query:"testemunhos"})).length,1);
+  assert.equal((await atlas.searchRiverGMToolkit({categoria:"cenas",query:"testemunhos"})).length,1);
   assert.equal((await atlas.getRiverGMToolkitEntry("mesa-xxx:evidencia:navegante")).tipo,"relato_hipotetico");
   const p=await atlas.buildRiverGMSessionPacket({
     sceneId:"mesa-xxx:cena:aguas-contraditorias",
