@@ -1,0 +1,239 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Horizonte de densidade do povoamento macrorregional da Carcaça",
+  "estado": "diretriz_editorial_autoral_ainda_nao_canonica",
+  "altera_canon": false,
+  "aprovacao_autoral": false,
+  "contexto": "Expectativa expressa pela autoria: o macro não estará suficientemente desenvolvido com apenas uma ou duas âncoras por região. O objetivo é uma rede continental diversa e conectada, não simples listagem de nomes.",
+  "metodo": "Os intervalos são referências de densidade flexíveis inferidas dos números aproximados expressos pela autoria, não metas rígidas nem dados presentes no cânone. Ainda é necessário inventariar e deduplicar âncoras existentes antes de aferir progresso.",
+  "frentes": [
+    {
+      "id": "frente:macro:rio",
+      "titulo": "Rio Ancestral",
+      "macro_id": "rio",
+      "unidade": "assentamentos",
+      "referencia_inferior": 15,
+      "referencia_superior": 20,
+      "alvo_flexivel": true,
+      "estado": "intencao_autoral_de_densidade",
+      "criterio_diversidade": "Cidades ribeirinhas, vilas, entrepostos, fortalezas, centros religiosos, locais sob controle fiscal e comunidades autônomas; a ordem ao longo do curso depende de cartografia autoral.",
+      "contagem_documentada": null,
+      "contagem_proposta": null,
+      "contagem_aprovada": null,
+      "auditoria_quantitativa_pendente": true,
+      "criar_automaticamente": false
+    },
+    {
+      "id": "frente:macro:eldroth",
+      "titulo": "Eldroth",
+      "macro_id": "eldroth",
+      "unidade": "assentamentos",
+      "referencia_inferior": 20,
+      "referencia_superior": 30,
+      "alvo_flexivel": true,
+      "estado": "intencao_autoral_de_densidade",
+      "criterio_diversidade": "Aldeias élficas, comunidades clandestinas, refúgios, redutos feéricos, povoações arruinadas e lugares sob vigilância. Evitar equivalência entre ruínas, masmorras e assentamentos vivos.",
+      "contagem_documentada": null,
+      "contagem_proposta": null,
+      "contagem_aprovada": null,
+      "auditoria_quantitativa_pendente": true,
+      "criar_automaticamente": false
+    },
+    {
+      "id": "frente:macro:garganta-entorno",
+      "titulo": "Entorno da Garganta",
+      "macro_id": "garganta",
+      "unidade": "assentamentos",
+      "referencia_inferior": 10,
+      "referencia_superior": 15,
+      "alvo_flexivel": true,
+      "estado": "intencao_autoral_de_densidade",
+      "criterio_diversidade": "Assentamentos externos à cidade crânio, distintos de bairros internos; só posicionar no entorno quando a anatomia e o território de acesso sustentarem.",
+      "contagem_documentada": null,
+      "contagem_proposta": null,
+      "contagem_aprovada": null,
+      "auditoria_quantitativa_pendente": true,
+      "criar_automaticamente": false
+    },
+    {
+      "id": "frente:macro:thargrid-montanhas",
+      "titulo": "Thargrid — montanhas",
+      "macro_id": "thargrid",
+      "unidade": "assentamentos",
+      "referencia_inferior": 20,
+      "referencia_superior": 25,
+      "alvo_flexivel": true,
+      "estado": "intencao_autoral_de_densidade",
+      "criterio_diversidade": "Vilas e salões de clãs anões, postos de gigantes, fortalezas, enclaves mineiros e comunidades independentes. Não contar galerias vazias como assentamentos.",
+      "contagem_documentada": null,
+      "contagem_proposta": null,
+      "contagem_aprovada": null,
+      "auditoria_quantitativa_pendente": true,
+      "criar_automaticamente": false
+    },
+    {
+      "id": "frente:macro:ironwood",
+      "titulo": "Ironwood",
+      "macro_id": "thargrid",
+      "unidade": "assentamentos",
+      "referencia_inferior": 10,
+      "referencia_superior": 15,
+      "alvo_flexivel": true,
+      "estado": "intencao_autoral_de_densidade",
+      "criterio_diversidade": "Comunidades florestais, postos rangers, povoados protegidos e refúgios, diferenciados dos 20 núcleos de Thargrid; aliança não significa mesmo governo.",
+      "contagem_documentada": null,
+      "contagem_proposta": null,
+      "contagem_aprovada": null,
+      "auditoria_quantitativa_pendente": true,
+      "criar_automaticamente": false
+    },
+    {
+      "id": "frente:macro:caatinga",
+      "titulo": "Caatinga do Além Sul",
+      "macro_id": "caatinga",
+      "unidade": "assentamentos",
+      "referencia_inferior": 15,
+      "referencia_superior": 20,
+      "alvo_flexivel": true,
+      "estado": "intencao_autoral_de_densidade",
+      "criterio_diversidade": "Aldeias de clãs, zonas de encontro, comunidades itinerantes com presença recorrente, refúgios em terras áridas e núcleos de outros povos; não reduzir tudo a grupos saqueadores.",
+      "contagem_documentada": null,
+      "contagem_proposta": null,
+      "contagem_aprovada": null,
+      "auditoria_quantitativa_pendente": true,
+      "criar_automaticamente": false
+    },
+    {
+      "id": "frente:macro:costa",
+      "titulo": "Costa do Mar de Sangue",
+      "macro_id": "costa",
+      "unidade": "assentamentos",
+      "referencia_inferior": 20,
+      "referencia_superior": 30,
+      "alvo_flexivel": true,
+      "estado": "intencao_autoral_de_densidade",
+      "criterio_diversidade": "Portos, vilas agrícolas, comunidades de penhasco, cidades mercantis, santuários e zonas sob pressão marítima; discriminar terra firme de ilhas e submersos.",
+      "contagem_documentada": null,
+      "contagem_proposta": null,
+      "contagem_aprovada": null,
+      "auditoria_quantitativa_pendente": true,
+      "criar_automaticamente": false
+    },
+    {
+      "id": "frente:macro:ilhas",
+      "titulo": "Ilhas relevantes",
+      "macro_id": "costa",
+      "unidade": "ilhas",
+      "referencia_inferior": 10,
+      "referencia_superior": 15,
+      "alvo_flexivel": true,
+      "estado": "intencao_autoral_de_densidade",
+      "criterio_diversidade": "Dez ou mais ilhas com identidade, regime ambiental e função histórica próprios; uma ilha pode conter vários assentamentos, mas não deve ser contada como um assentamento por definição.",
+      "contagem_documentada": null,
+      "contagem_proposta": null,
+      "contagem_aprovada": null,
+      "auditoria_quantitativa_pendente": true,
+      "criar_automaticamente": false
+    },
+    {
+      "id": "frente:macro:submersos",
+      "titulo": "Assentamentos submersos — Mar de Sangue e azul próximo",
+      "macro_id": "azuis",
+      "unidade": "assentamentos",
+      "referencia_inferior": 15,
+      "referencia_superior": 20,
+      "alvo_flexivel": true,
+      "estado": "intencao_autoral_de_densidade",
+      "criterio_diversidade": "Núcleos kuo-toa, abissais marinhos, tritões, sereias e outros grupos conforme fontes e propostas; separar os mares, seus ambientes e suas autoridades.",
+      "contagem_documentada": null,
+      "contagem_proposta": null,
+      "contagem_aprovada": null,
+      "auditoria_quantitativa_pendente": true,
+      "criar_automaticamente": false
+    },
+    {
+      "id": "frente:macro:cauda",
+      "titulo": "Cauda próxima à fortaleza da Rainha",
+      "macro_id": "cauda",
+      "unidade": "assentamentos",
+      "referencia_inferior": 10,
+      "referencia_superior": 15,
+      "alvo_flexivel": true,
+      "estado": "intencao_autoral_de_densidade",
+      "criterio_diversidade": "Localidades próximas ao Templo do Crepúsculo ainda não confirmadas; criar rede plausível só após definir acesso, água, subsistência e a presença efetiva da Corte.",
+      "contagem_documentada": null,
+      "contagem_proposta": null,
+      "contagem_aprovada": null,
+      "auditoria_quantitativa_pendente": true,
+      "criar_automaticamente": false
+    }
+  ],
+  "frentes_sem_meta_numerica": [
+    {
+      "id": "foz",
+      "tema": "Assentamentos da Foz e margens do Abismo",
+      "motivo": "Não houve meta numérica; depende da topologia Gualápolis–Boca–Shadar e do destino da água."
+    },
+    {
+      "id": "shadar",
+      "tema": "Entorno de Shadar-Riverie",
+      "motivo": "Não houve meta numérica; localização/bioma e relação com Gualápolis permanecem contestados."
+    },
+    {
+      "id": "grama",
+      "tema": "Condado de Grama-Cortada",
+      "motivo": "Não houve meta numérica; depende de sua posição no continente e de sua ecologia local."
+    },
+    {
+      "id": "demais",
+      "tema": "Outros ambientes e núcleos transversais",
+      "motivo": "Povos do subterrâneo, comunidades migrantes e áreas ainda não especificadas não devem desaparecer do panorama."
+    }
+  ],
+  "portoes_de_qualidade": [
+    "Cada localidade proposta deve ter nome distintivo e função territorial; nomes genéricos em série não contam como povoamento realizado.",
+    "Separar assentamento vivo, ruína, fortaleza ocupada, local sagrado, ilha geográfica e cidade submarina; cada frente conta apenas sua unidade.",
+    "Registrar macrorregião, bioma, povo(s), escala relativa, autoridade, subsistência/atividade, relações com outras localidades, tensão histórica e estatuto da fonte.",
+    "Uma localidade sem fonte deve permanecer proposta até revisão autoral; nenhuma contagem de meta aprova assentamentos automaticamente.",
+    "Criar diversidade de alianças, conflito, religião, arquitetura e economia; não reduzir povo inteiro a facção ou cultura uniforme.",
+    "Não atribuir coordenadas, caminho, afluente, distância, acesso ou vizinhança não documentados; a topologia XXXVII continua aberta.",
+    "Diferenciar Ironwood das montanhas de Thargrid e assentamentos submersos de ilhas e povoados da costa, sem dupla contagem.",
+    "Documentar relações materiais e políticas plausíveis sem inventar fluxos mensurados ou rotas seguras.",
+    "Organizar a expansão em lotes coerentes e revisáveis, nunca gerar centenas de nomes sem contexto.",
+    "Somente após a rede de povoamento e as decisões topológicas avançarem, reavaliar a passagem ampla à meso e microescala."
+  ],
+  "etapas": [
+    {
+      "id": "inventariar",
+      "titulo": "Inventariar e deduplicar",
+      "descricao": "Reconciliar nomes do manuscrito, lugares catalogados, propostas e assentamentos do repositório; separar continente, instituição, ruína e núcleo habitado.",
+      "concluida": false
+    },
+    {
+      "id": "estruturar",
+      "titulo": "Modelar distribuição",
+      "descricao": "Planejar por macroambiente, recursos, densidade, barreiras e sistemas de poder, preservando geografia não aprovada.",
+      "concluida": false
+    },
+    {
+      "id": "propor",
+      "titulo": "Produzir núcleos diferenciados",
+      "descricao": "Construir assentamentos por frente regional em lotes pequenos, com identidade e vínculos sociais; submeter decisões e origens ao controle autoral.",
+      "concluida": false
+    },
+    {
+      "id": "amarrar",
+      "titulo": "Articular a rede continental",
+      "descricao": "Confrontar mobilidade, comércio, refúgio e política com nós reais, sem assumir rotas onde só há vínculo narrativo.",
+      "concluida": false
+    },
+    {
+      "id": "reavaliar",
+      "titulo": "Nova auditoria de maturidade",
+      "descricao": "Comparar cobertura e diversidade a expectativas flexíveis; só então discutir aprofundamento amplo da mesoescala.",
+      "concluida": false
+    }
+  ],
+  "fonte_de_metas": "feedback_direto_da_autoria_2026-10-29",
+  "observacao_soma": "As dez frentes representam aproximadamente 145 a 205 alvos de diferentes tipos (assentamentos e ilhas) nos intervalos propostos, antes de definir metas para Foz, Shadar-Riverie e Grama-Cortada. Não é contagem de localidades já existentes."
+}
