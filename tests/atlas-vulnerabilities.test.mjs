@@ -1,0 +1,111 @@
+import test from "node:test";
+import assert from "node:assert/strict";
+import {readFileSync,mkdtempSync,writeFileSync,rmSync} from "node:fs";
+import {execFileSync} from "node:child_process";
+import {join} from "node:path";
+import {tmpdir} from "node:os";
+import {buildContinentalVulnerabilities} from "../site/atlas/continental-vulnerabilities.mjs";
+import {initContinentalVulnerabilities} from "../site/atlas/continental-vulnerabilities-ui.mjs";
+const file=p=>JSON.parse(readFileSync(new URL("../"+p,import.meta.url),"utf8"));
+const source=file("data/atlas/dependencias-vulnerabilidades-ciclo42.json");
+const material=file("data/atlas/circulacao-material-ciclo41.json");
+const chronology=file("data/atlas/cronocartografia-ciclo40.json");
+const hydro=file("data/atlas/hidrografia-continental-ciclo39.json");
+const build=x=>buildContinentalVulnerabilities(x,material,chronology,hydro);
+const change=fn=>{const d=structuredClone(source);fn(d);return d};
+test("Atlas XLII: 11 exercícios em cinco sistemas, sem perdas, canonização ou previsão",()=>{
+ const x=build(source);
+ assert.deepEqual(x.totais,{cenarios:11,grupos:5,vinculos_foco_unicos:13,
+   eventos_canonizados:0,previsoes_numericas:0});
+ assert.deepEqual(x.por_grupo.map(g=>g.cenarios.length),[2,2,2,3,2]);
+ assert.equal(x.altera_canon,false);
+ assert.equal(source.aprovacao_autoral,false);
+ assert.ok(x.cenarios.every(s=>s.adotado===false&&s.ocorreu===false&&s.propagacao_automatica===false));
+ assert.ok(x.cenarios.every(s=>s.probabilidade===null&&s.perda_calculada===null&&s.impacto_medido===null));
+ assert.ok(x.cenarios.every(s=>s.duracao===null&&s.geometria===null));
+ assert.ok(x.cenarios.every(s=>s.perguntas.length>=2));
+});
+test("Atlas XLII: hipótese tem origem documental e vínculos relacionados permanecem condicionais",()=>{
+ const x=build(source);
+ const caseBy=s=>x.cenarios.find(c=>c.id==="cenario:xlii:"+s);
+ const rio=caseBy("rio-tributacao");
+ assert.deepEqual(rio.vinculos_foco,["vinculo:xli:tributos-rio"]);
+ assert.deepEqual(rio.vinculos_relacionados_apenas_condicionais,["vinculo:xli:drakport-coercao"]);
+ assert.match(rio.nao_inferir,/queda de receitas/i);
+ const mountain=caseBy("minerio-forja");
+ assert.deepEqual(mountain.vinculos_foco,["vinculo:xli:minerio-forjas"]);
+ assert.ok(mountain.vinculos_relacionados_apenas_condicionais.includes("vinculo:xli:forjas-resistencia"));
+ assert.match(mountain.contrapeso_documentado,/depósitos de provisões/i);
+ const refugee=caseBy("eldroth-refugio");
+ assert.equal(refugee.tipo,"cenario_composto_independente");
+ assert.deepEqual(refugee.vinculos_foco,["vinculo:xli:eldroth-costa","vinculo:xli:eldroth-thargrid"]);
+ assert.match(refugee.nao_inferir,/estradas/i);
+ const maritime=caseBy("mar-tributo");
+ assert.equal(maritime.tipo,"pressao_hipotetica");
+ assert.deepEqual(maritime.vinculos_foco,["vinculo:xli:abissais-costa"]);
+ assert.match(maritime.nao_inferir,/arrecadação realizada/i);
+ const grama=caseBy("grama-abrigo");
+ assert.equal(grama.nodos_expandidos[0].setor,"grama");
+ assert.match(grama.nao_inferir,/não localizar Grama-Cortada/i);
+});
+test("Atlas XLII: muda a hipótese, não a fonte material, os futuros ou o mar móvel",()=>{
+ const x=build(source);
+ assert.equal(material.vinculos.length,15);
+ assert.ok(chronology.futuros_em_aberto.some(q=>q.id==="futuro:xl:drakport"&&q.acontecimento_confirmado===false));
+ assert.ok(chronology.futuros_em_aberto.some(q=>q.id==="futuro:xl:thargrid"&&q.acontecimento_confirmado===false));
+ assert.ok(hydro.unidades.find(h=>h.id==="hidro:xxxix:limite-azul").estado==="documentado_variavel");
+ assert.ok(x.cenarios.every(s=>s.vinculos_foco_expandido.every(l=>l.geometria===null)));
+ assert.doesNotMatch(JSON.stringify(source),/"(?:latitude|longitude|lat|lng|coordinates|polygon|poligono|risco_calculado|resiliencia_calculada)"\s*:/i);
+});
+test("Atlas XLII: rejeita passado fictício, propagação, perdas, lacunas e rotas inventadas",()=>{
+ assert.throws(()=>build(change(x=>x.aprovacao_autoral=true)),/salvaguardas autorais/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].ocorreu=true)),/declarado acontecido/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].adotado=true)),/declarado acontecido/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].probabilidade=0.7)),/criou prognóstico/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].perda_calculada=500)),/criou prognóstico/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].duracao=10)),/criou prognóstico/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].geometria={lat:0})),/geometria|previsão/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].propagacao_automatica=true)),/efeito automático/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].vinculos_foco=["vinculo:xli:inexistente"])),/vínculo material direto/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].vinculos_relacionados_apenas_condicionais=["vinculo:xli:tributos-rio"])),/condicionais/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].nodos_contextuais=["fluxo:xli:inexistente"])),/contextuais/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].paginas=[])),/páginas/);
+ assert.throws(()=>build(change(x=>x.cenarios.find(s=>s.id.endsWith("eldroth-refugio")).vinculos_foco.pop())),/Hipótese composta/);
+ assert.throws(()=>build(change(x=>x.cenarios.find(s=>s.id.endsWith("mar-tributo")).tipo="interrupcao_hipotetica")),/Exigência marítima/);
+ assert.throws(()=>build(change(x=>x.cenarios.pop())),/onze exercícios/);
+ assert.throws(()=>build(change(x=>x.grupos.pop())),/cinco sistemas/);
+ assert.throws(()=>build(change(x=>x.cenarios[0].grupo="desconhecido")),/cenário duplicado|Cenário duplicado/);
+});
+test("Atlas XLII: painel lista onze hipóteses e compara sem inventar um placar de risco",()=>{
+ const model=build(source),el={innerHTML:"",callbacks:{},addEventListener(k,cb){this.callbacks[k]=cb}};
+ initContinentalVulnerabilities(el,model);
+ assert.equal((el.innerHTML.match(/class="vulnerability-card(?: active)?"/g)||[]).length,11);
+ assert.match(el.innerHTML,/0 previsões/);
+ el.callbacks.click({target:{closest(selector){
+  return selector==="[data-vuln-compare]"?{dataset:{vulnCompare:"cenario:xlii:mar-tributo"}}:null;
+ }}});
+ assert.equal((el.innerHTML.match(/class="vulnerability-compare-panel"/g)||[]).length,2);
+ assert.match(el.innerHTML,/Comparação/);
+ assert.doesNotMatch(el.innerHTML,/score de risco|probabilidade estimada/i);
+});
+test("Atlas XLII: integração HTML, arquivo Pages e testes em CI",()=>{
+ const html=readFileSync(new URL("../site/atlas/index.html",import.meta.url),"utf8");
+ const ui=readFileSync(new URL("../site/atlas/continental-vulnerabilities-ui.mjs",import.meta.url),"utf8");
+ const pages=readFileSync(new URL("../.github/workflows/publicar-atlas-pages.yml",import.meta.url),"utf8");
+ const ci=readFileSync(new URL("../.github/workflows/validar-curadoria.yml",import.meta.url),"utf8");
+ assert.match(html,/id="continentalVulnerabilities"/);
+ assert.match(html,/continental-vulnerabilities-ui\.mjs/);
+ assert.match(html,/buildContinentalVulnerabilities\(loaded\.vulnerabilities,state\.material,state\.chrono,state\.hydrology\)/);
+ assert.match(html,/initContinentalVulnerabilities\(\$\("continentalVulnerabilities"\),state\.vulnerabilities\)/);
+ assert.match(pages,/data\/atlas\/dependencias-vulnerabilidades-ciclo42\.json/);
+ assert.match(pages,/tests\/atlas-vulnerabilities\.test\.mjs/);
+ assert.match(ci,/tests\/atlas-vulnerabilities\.test\.mjs/);
+ assert.doesNotMatch(ui,/(localStorage|sessionStorage|indexedDB)/);
+ const dir=mkdtempSync(join(tmpdir(),"atlas-vulnerability-"));
+ try{
+  const match=html.match(/<script type="module">([\s\S]*?)<\/script>/);
+  assert.ok(match);
+  const p=join(dir,"index.mjs");writeFileSync(p,match[1],"utf8");
+  execFileSync(process.execPath,["--check",p],{stdio:"pipe"});
+ }finally{rmSync(dir,{recursive:true,force:true})}
+});
