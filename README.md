@@ -92,6 +92,10 @@ O [dossiê do Ciclo XXXVII](docs/ATLAS_MATRIZ_TOPOLOGICA_CICLO37.md) apresenta u
 
 A [Carta Cartográfica Continental](docs/ATLAS_CARTA_CARTOGRAFICA_CICLO38.md) traz uma **bússola qualitativa** que diferencia seis âncoras cardeais, quatro referências relativas, um eixo atravessante, cinco referências sem orientação e quatro marcos com conflito topológico. O total é de **20 marcos físicos, 12 relações documentais e 8 decisões autorais pendentes**, sem coordenadas ou polígonos autorizados. O [JSON estruturado](data/atlas/carta-cartografica-ciclo38.json) cruza as fontes de geografia (XXXIV), interfaces (XXXVI) e oficina topológica (XXXVII). O [Atlas Pages](https://pedromaintenance.github.io/monstros-carcaca/atlas/) agora oferece uma bússola conceitual, documentação da fronteira marítima móvel, um inspetor de fontes e um manual para futuras cartas — **não um mapa em escala**.
 
+## Ciclo XXXIX — Águas de Golzdov e hidrografia macro
+
+A [documentação hidrográfica](docs/ATLAS_HIDROGRAFIA_CONTINENTAL_CICLO39.md) reúne **13 domínios de estudo, 6 vínculos documentados e 12 questões ainda abertas** sobre Rio Ancestral, Abismo, ilha lunar, Caatinga, purificação de Deméter em Portomonte, cultivo costeiro, Mar de Sangue, fronteira móvel das águas azuis, relevo nevado, cavernas e Grama-Cortada. O [JSON](data/atlas/hidrografia-continental-ciclo39.json) cruza marcos e ambientes existentes e não canoniza bacias, nascentes, aquíferos, vazões ou potabilidade não comprovada. O [Atlas Pages](https://pedromaintenance.github.io/monstros-carcaca/atlas/) inclui o novo painel **Águas de Golzdov**, com evidências paginadas, relações, lacunas e limites de inferência.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
