@@ -1,0 +1,470 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XXII — meio-demônios, sociedades e autonomia",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estado": {
+      "const": "expansao_cultural_proposta"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "efeito_canonico_automatico": {
+      "const": false
+    },
+    "povo": {
+      "const": "Meio-Demônios"
+    },
+    "referencia_cosmologica": {
+      "type": "string",
+      "minLength": 1
+    },
+    "marco_cronologico_documentado": {
+      "type": "string",
+      "minLength": 1
+    },
+    "patria_unica_documentada": {
+      "type": "null"
+    },
+    "governo_comum_documentado": {
+      "type": "null"
+    },
+    "aparencia_uniforme_documentada": {
+      "type": "null"
+    },
+    "fonte_manuscrito": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxii:fato:"
+          },
+          "pagina": {
+            "type": "integer",
+            "enum": [
+              9,
+              21
+            ]
+          },
+          "afirmacao_de_fonte": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estatuto": {
+            "const": "manuscrito_em_revisao"
+          },
+          "novo_canon": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "pagina",
+          "afirmacao_de_fonte",
+          "estatuto",
+          "novo_canon"
+        ]
+      },
+      "minItems": 14,
+      "maxItems": 14
+    },
+    "limites": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 12,
+      "maxItems": 12
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fatos": {
+          "const": 14
+        },
+        "eixos_sociais": {
+          "const": 11
+        },
+        "contextos_de_convivencia": {
+          "const": 6
+        },
+        "circuitos_civis": {
+          "const": 6
+        },
+        "tensoes": {
+          "const": 6
+        },
+        "costumes_candidatos": {
+          "const": 4
+        },
+        "vinhetas": {
+          "const": 4
+        },
+        "perguntas": {
+          "const": 9
+        }
+      },
+      "required": [
+        "fatos",
+        "eixos_sociais",
+        "contextos_de_convivencia",
+        "circuitos_civis",
+        "tensoes",
+        "costumes_candidatos",
+        "vinhetas",
+        "perguntas"
+      ]
+    },
+    "eixos_sociais": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxii:eixo:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "hipotese_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detalhe_cotidiano": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_etica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "proposta_nao_canonica"
+          },
+          "lei_confirmada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "hipotese_social",
+          "detalhe_cotidiano",
+          "pergunta_etica",
+          "estado",
+          "lei_confirmada",
+          "ocorreu"
+        ]
+      },
+      "minItems": 11,
+      "maxItems": 11
+    },
+    "contextos_de_convivencia": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxii:contexto:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "configuracao_hipotetica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "detalhe": {
+            "type": "string",
+            "minLength": 1
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 1
+          },
+          "comunidade_canonica_nova": {
+            "const": false
+          },
+          "geografia_exata": {
+            "type": "null"
+          },
+          "estado": {
+            "const": "contexto_cultural_proposto"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "configuracao_hipotetica",
+          "detalhe",
+          "limite_de_inferencia",
+          "comunidade_canonica_nova",
+          "geografia_exata",
+          "estado"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "circuitos_civis": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxii:circuito:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "arranjo_possivel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "arranjo_material_hipotetico"
+          },
+          "instituicao_confirmada": {
+            "const": false
+          },
+          "volume_conhecido": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "arranjo_possivel",
+          "pergunta_social",
+          "estado",
+          "instituicao_confirmada",
+          "volume_conhecido"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "tensoes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxii:tensao:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "situacao_condicional": {
+            "type": "string",
+            "minLength": 1
+          },
+          "questao_central": {
+            "type": "string",
+            "minLength": 1
+          },
+          "aconteceu": {
+            "const": false
+          },
+          "desfecho_aprovado": {
+            "const": false
+          },
+          "estado": {
+            "const": "conflito_hipotetico"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "situacao_condicional",
+          "questao_central",
+          "aconteceu",
+          "desfecho_aprovado",
+          "estado"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "costumes_candidatos": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxii:costume:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pratica_possivel": {
+            "type": "string",
+            "minLength": 1
+          },
+          "risco_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ritual_confirmado": {
+            "const": false
+          },
+          "aconteceu": {
+            "const": false
+          },
+          "estado": {
+            "const": "costume_candidato_nao_adotado"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "pratica_possivel",
+          "risco_social",
+          "ritual_confirmado",
+          "aconteceu",
+          "estado"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "vinhetas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxii:vinheta:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "cena_condicional": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tema": {
+            "type": "string",
+            "minLength": 1
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "npc_canonico_criado": {
+            "const": false
+          },
+          "estado": {
+            "const": "ficcao_experimental"
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "cena_condicional",
+          "tema",
+          "ocorreu",
+          "npc_canonico_criado",
+          "estado"
+        ]
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "perguntas_para_autor": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxii:pergunta:"
+          },
+          "pergunta_autoral": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "pendente"
+          },
+          "resposta_aprovada": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "pergunta_autoral",
+          "estado",
+          "resposta_aprovada"
+        ]
+      },
+      "minItems": 9,
+      "maxItems": 9
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "efeito_canonico_automatico",
+    "povo",
+    "referencia_cosmologica",
+    "marco_cronologico_documentado",
+    "patria_unica_documentada",
+    "governo_comum_documentado",
+    "aparencia_uniforme_documentada",
+    "fonte_manuscrito",
+    "fatos_documentados",
+    "limites",
+    "contagens",
+    "eixos_sociais",
+    "contextos_de_convivencia",
+    "circuitos_civis",
+    "tensoes",
+    "costumes_candidatos",
+    "vinhetas",
+    "perguntas_para_autor"
+  ]
+}

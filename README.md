@@ -64,6 +64,14 @@ O manuscrito do Hack (pp. 19–21 e 23) sustenta **14 afirmações de referênci
 
 Exports: `dist/carcaca/gnomish-cultures.json`, `gnomish-cultures-indexes.json`; funções ESM `getGnomishCultures`, `getGnomishCulturesIndexes`, `getGnomishCultureEntry` e `searchGnomishCultures`. O ciclo mantém as revisões canônicas para depois e preserva as sete criaturas existentes.
 
+## Ciclo XXII — Meio-Demônios: famílias e escolhas além do sangue
+
+O [dossiê cultural dos Meio-Demônios](docs/MEIO_DEMONIOS_SOCIEDADES_CICLO22.md) desenvolve a vida de descendentes de ascendência demoníaca misturada aos povos mortais sem transformar hereditariedade em personalidade, poder ou fidelidade ao Abismo. No mundo da Carcaça, **demônios, diabos, cambions e tieflings não são naturezas cosmológicas separadas**.
+
+A [base estruturada](data/worldbuilding/meio-demonios-sociedades-ciclo22.json), ancorada no manuscrito do Hack (p. 21 e marco de 983 EC na p. 9), preserva **14 afirmações textuais** e explora **37 propostas sociais** (11 eixos de família e identidade, 6 contextos de convivência, 6 circuitos civis, 6 conflitos hipotéticos, 4 costumes candidatos e 4 vinhetas não ocorridas), além de **9 perguntas autorais pendentes**.
+
+Nenhuma pátria, lei, rito oficial, aldeia do Abismo, pacto familiar obrigatório ou NPC histórico foi criado. O material é disponibilizado em `dist/carcaca/half-demon-societies.json` com índices e funções ESM `getHalfDemonSocieties`, `getHalfDemonSocietiesIndexes`, `getHalfDemonSocietyEntry` e `searchHalfDemonSocieties`. As grandes revisões autorais continuam adiadas.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.

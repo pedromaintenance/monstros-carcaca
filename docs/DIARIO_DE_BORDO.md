@@ -483,3 +483,11 @@ O novo dossiê `docs/CULTURAS_GNOMICAS_CICLO21.md` trabalha o que significa **in
 O schema e a validação protegem as distinções: alguns pactos svirfneblin com anões não equivalem a vassalagem de todos; gnomos florestais não são súditos de Elara; habitantes de Shadar-Riverie não se tornam agentes da Corte por profissão; nenhum segredo cartográfico foi convertido em rota e nenhuma vinheta foi apresentada como episódio histórico. Exportados seis índices determinísticos e leituras ESM com testes.
 
 O **Ciclo XXII** pode expandir a vida e as culturas dos **meio-demônios** (manuscrito p. 21), sem moralizar a ascendência e sem antecipar a revisão canônica.
+
+## 2026-10-28 · Ciclo XXII — Meio-Demônios, corpos, famílias e autonomia
+
+A pesquisa do manuscrito (p. 21; cronologia p. 9) sustenta descendência demoníaca misturada, cosmologia sem separação essencial entre demônios, diabos, cambions e tieflings, e variação substancial de genealogia, aparência, afinidades e relação individual com o Abismo. A invasão registrada em 983 EC não é origem universal das linhagens, cuja presença aumentou após grandes invasões mas não ficou restrita a um único momento.
+
+O novo dossiê `docs/MEIO_DEMONIOS_SOCIEDADES_CICLO22.md` situa **família, trabalho, infância, adaptação corporal, cultura material, religião e vida urbana** no centro do mundo. A base `data/worldbuilding/meio-demonios-sociedades-ciclo22.json` separa **14 âncoras textuais** de **37 propostas não canônicas**: 11 eixos sociais, 6 contextos de convivência, 6 circuitos civis, 6 conflitos, 4 costumes candidatos e 4 vinhetas; 9 questões permanecem sem resposta.
+
+Schema, validador, cinco índices, API ESM e testes resguardam a diferença entre fonte, hipótese e aprovação. Não foram inventados município, aldeia, legislação, ritual, divindade obrigatória ou eventos de campanha. As sete criaturas canônicas permanecem intocadas. Próximo horizonte sugerido: estudo da vida civil da Caatinga do Além Sul, para ampliar povos e regiões além das culturas já exploradas.
