@@ -13,6 +13,10 @@ on:
       - 'data/propostas/eldroth-ecologia-monstruosa-dw.json'
       - 'data/propostas/eldroth-fichas-dw-ciclo13.json'
       - 'data/propostas/ironwood-eldroth-resistencia-hack.json'
+      - 'data/propostas/thargrid-resistencia-cotidiano-hack.json'
+      - 'data/propostas/garganta-rio-ancestral-social-hack.json'
+      - 'data/propostas/caatinga-rede-social-hack.json'
+      - 'data/atlas/**'
       - 'dist/carcaca/**'
       - 'curadoria/assentamentos/**'
       - 'curadoria/criaturas/**'
@@ -59,7 +63,11 @@ jobs:
             data/propostas/povoamento-regional-hack-carcaca.json \
             data/propostas/eldroth-ecologia-monstruosa-dw.json \
             data/propostas/eldroth-fichas-dw-ciclo13.json \
-            data/propostas/ironwood-eldroth-resistencia-hack.json
+            data/propostas/ironwood-eldroth-resistencia-hack.json \
+            data/propostas/thargrid-resistencia-cotidiano-hack.json \
+            data/propostas/garganta-rio-ancestral-social-hack.json \
+            data/propostas/caatinga-rede-social-hack.json \
+            data/atlas/aninhamento-territorial.json
           do
             mkdir -p ".public-pages/atlas/dados/$(dirname "$file")"
             cp "$file" ".public-pages/atlas/dados/$file"
