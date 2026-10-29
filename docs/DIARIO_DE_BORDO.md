@@ -529,3 +529,10 @@ Dez mapas de impacto apontam os arquivos passíveis de revisão futura, mas nenh
 Como o Ciclo XXVI manteve pendentes todas as doze decisões autorais de Portomonte, prosseguimos sem canonizá-las e deslocamos a expansão sociocultural para a foz e **Shadar-Riverie/Gualápolis**. O Hack pp. 4–6, 9 e 10 documenta a tomada de Gualápolis pelo Senhor do Rio, a fundação da Boca do Abismo, a posição aristocrática da Casa Shayr e a biblioteca Yokai submersa sob Shadar-Riverie. A narrativa não prova coordenadas, planta, acesso público ou cronologia individual do afogamento.
 
 O dossiê oferece 12 fatos com limites inferenciais, 36 propostas de vida civil e memória, doze IDs rastreados a atlas e propostas anteriores, dez perguntas sem resposta e proibições explícitas contra povoamento inventado. O gerador acrescenta seis índices determinísticos; a API ESM distingue buscas em fatos do manuscrito de buscas em propostas socioculturais. Nenhuma criatura, regra DW, lugar ou governo foi alterado automaticamente.
+
+
+## 2026-10-28 · Ciclo XXVIII — O rio que alimenta a tirania
+
+O ciclo abriu a dimensão social do eixo médio do Rio Ancestral e de Drakport sob Lady Morwen Nightshade. O capítulo autoral (pp. 4, 7, 9, 11) sustenta a existência de escravidão, postos militares, tributos e controle ritual do Templo da Lua por Severina Shadowbloom, mas não quantifica pessoas, trabalho, rotas nem a operação do rito. A Revolta de Drakport continua anotada na fonte como evento futuro sem resolução; qualquer participação dos rangers de Ironwood também está em aberto.
+
+Foram produzidos 12 fatos com ressalvas, 40 propostas culturais não ocorridas, 14 referências existentes e 10 perguntas autorais sem resposta. A base bloqueia canonização automática, criação de geografia nova, tratamento de pessoas como estoques e mudança nas fichas e regras. O cliente e os índices permitem investigar sem mudar a campanha; o fluxo de validação testa a integridade e a origem das referências.
