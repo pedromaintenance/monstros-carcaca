@@ -112,6 +112,12 @@ O [laboratório de vulnerabilidades](docs/ATLAS_DEPENDENCIAS_VULNERABILIDADES_CI
 
 O **[parecer editorial diretamente no HTML do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#continentalAudit)** apresenta **um parágrafo para cada uma das 11 macrorregiões**, fundamentado no manuscrito e nas camadas XXXIV–XLII. A leitura distingue **4 regiões com base suficiente para aprofundamento local** (Garganta, Costa Sul, Eldroth e Thargrid), **5 com aprofundamento condicionado** (Rio Ancestral, Caatinga, Foz, Cauda e Águas Azuis) e **2 que exigem decisão espacial prioritária** (Shadar-Riverie e Grama-Cortada). A recomendação é editorial, não canônica: **aprofundar seletivamente sem homologar geometria ou fechar automaticamente as oito decisões topológicas**. O conteúdo fica visível mesmo quando os dados interativos falham. [Versão em Markdown](docs/ATLAS_AUDITORIA_PRONTIDAO_CICLO43.md).
 
+## Revisão autoral da escala macro — horizonte de povoamento
+
+**A macrogeografia da Carcaça ainda não está pronta para encerrar a fase de expansão.** A auditoria do Ciclo XLIII identificou âncoras narrativas, mas a autoria esclareceu que isso não satisfaz a densidade continental desejada: são esperadas dezenas de assentamentos nas grandes regiões, comunidades distintas em Thargrid e Ironwood, múltiplos núcleos costeiros, ao menos dez ilhas relevantes e numerosos assentamentos submersos. A [diretriz estruturada](data/atlas/horizonte-povoamento-macro.json) registra dez frentes de povoamento, com referências **flexíveis** de cerca de **145–205 assentamentos e ilhas a estruturar**, ainda sem metas para Foz, Shadar e Grama-Cortada. Esse valor **não** mede localidades já existentes e não aprova nenhum lugar novo.
+
+O [parecer revisado dentro do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#audit-density) agora estabelece que **nenhuma macrorregião está concluída em povoamento**. A prioridade é inventariar e deduplicar os registros atuais e, em seguida, elaborar núcleos com função, povo, subsistência, identidade, conflitos e relações interregionais — antes da produção ampla de mapas meso e micro. [Nota de revisão do Ciclo XLIII](docs/ATLAS_AUDITORIA_PRONTIDAO_CICLO43.md).
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
