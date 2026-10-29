@@ -736,3 +736,17 @@ Documento de referência: [ATLAS_MATRIZ_TOPOLOGICA_CICLO37.md](docs/ATLAS_MATRIZ
 **Próxima etapa macro recomendada (XL):** cronocartografia dos centros de poder (controle e rupturas por período, sem limites políticos inferidos), seguida de matriz de circulação material e dependências por macrorregião, antes da escala meso.
 
 Referência: [ATLAS_HIDROGRAFIA_CONTINENTAL_CICLO39.md](docs/ATLAS_HIDROGRAFIA_CONTINENTAL_CICLO39.md).
+
+## Ciclo XL — Cronocartografia dos centros de poder (2026-10-29)
+
+- [x] Reutilizar os 17 eventos do manuscrito indexados no XXXIII e organizar seis recortes editoriais de consulta.
+- [x] Distinguir papéis de setores em cada evento, principalmente a coexistência de ocupação no Rio e resistência em Thargrid em 910 EC.
+- [x] Preservar a cronologia 711/983/984/999 sem inventar ponte no Abismo nem identidade definitiva entre Shadar, Gualápolis e Boca.
+- [x] Reunir 14 esferas de poder sem datas de início ou fronteiras definidas; eventos relacionados são apenas contextuais.
+- [x] Listar os sete futuros em aberto da p. 11 sem considerá-los ocorridos.
+- [x] Integrar UI, JSON e validação ao Atlas e workflows CI/Pages.
+- [ ] Eventual mapa político de época: depende de decisões autorais explícitas sobre topologia, extensão, rotas e periodização.
+
+**Próximo objetivo macro (XLI):** registrar circulação material e dependências continentais — alimentação, tributos, exploração, deslocamentos, circuitos de conhecimento e poder naval, cada vínculo com origem textual e sem distância, volume ou rota inventada.
+
+[Documento do Ciclo XL](docs/ATLAS_CRONOCARTOGRAFIA_CICLO40.md).
