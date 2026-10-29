@@ -3887,6 +3887,103 @@ def validar_portomonte_templo_governo_xxv():
     print("Ciclo XXV: 8 fatos, 12 referências, 36 alternativas, 12 perguntas; zero canonização.")
 
 
+
+def validar_revisao_autoral_portomonte_xxvi():
+    """Pauta editorial: todas as decisões e alternativas permanecem pendentes."""
+    d=load("data/worldbuilding/revisao-autoral-portomonte-ciclo26.json")
+    schema=load("schemas/revisao-autoral-portomonte-xxvi.schema.json")
+    Draft202012Validator.check_schema(schema)
+    issues=list(Draft202012Validator(schema).iter_errors(d))
+    require(not issues,f"Ciclo XXVI: schema inválido {issues[:2]}")
+    original=load(d["fonte_matriz"])
+    require(d["contagens"]=={"etapas":4,"decisoes":12,"opcoes":38,"guardas":12,
+            "impactos":10,"pendentes":12,"aprovadas":0,"impactos_aplicados":0},
+            "Ciclo XXVI: contagens incompatíveis.")
+    require(d["estado"]=="pauta_editorial_pendente"
+            and d["assentamento_id"]=="assentamento:portomonte"
+            and d["regiao_id"]=="regiao:costa-sul"
+            and d["aprovacao_autoral"] is False
+            and d["mutacao_canonica_automatica"] is False
+            and d["modelo_governo_aprovado"] is None
+            and d["agua_potavel_aprovada"] is None
+            and d["operacao_ritual_aprovada"] is None
+            and d["alterou_atlas"] is False
+            and d["alterou_criaturas"] is False
+            and d["alterou_regras_dw"] is False,
+            "Ciclo XXVI: proposta foi incorporada como fato.")
+    require(d["politica_de_aprovacao"]["silencio_significa_aprovacao"] is False
+            and d["politica_de_aprovacao"]["consulta_aplica_alteracao"] is False
+            and d["politica_de_aprovacao"]["simulacao_aplica_alteracao"] is False,
+            "Ciclo XXVI: aprovação não pode ser automática.")
+    entries=d["decisoes"]
+    ids={q["id"] for q in entries}
+    questions={x["id"]:x for x in original["perguntas_para_autor"]}
+    candidate_ids={x["id"] for cat in ("modelos_de_governo","etapas_de_trabalho",
+            "relacoes_sociais","garantias_civis","dilemas","vinhetas")
+            for x in original[cat]}
+    require(len(entries)==len(ids)==12
+            and {q["origem_pergunta_id"] for q in entries}==set(questions),
+            "Ciclo XXVI: cada pergunta do XXV precisa de uma única decisão.")
+    opts=[]
+    for q in entries:
+        require(q["pergunta"]==questions[q["origem_pergunta_id"]]["pergunta_autoral"]
+                and q["origem_pergunta_id"] in questions,
+                "Ciclo XXVI: pergunta de fonte alterada.")
+        require(q["estado"]=="aguarda_decisao_expressa"
+                and q["opcao_escolhida_id"] is None
+                and q["texto_autoral_aprovado"] is None
+                and q["fonte_da_aprovacao"] is None
+                and q["data_da_aprovacao"] is None
+                and q["aprovacao_autoral"] is False
+                and q["canon_aplicado"] is False,
+                "Ciclo XXVI: decisão homologada sem fonte.")
+        require(set(q["referencias_de_proposta"]) <= candidate_ids
+                and bool(q["referencias_de_proposta"]),
+                "Ciclo XXVI: referência de proposta inexistente.")
+        require(set(q["depende_de"]) <= ids and q["id"] not in q["depende_de"],
+                "Ciclo XXVI: dependência editorial inválida.")
+        for opt in q["opcoes"]:
+            require(opt["estado"]=="candidata_nao_adotada"
+                    and opt["aprovacao_autoral"] is False
+                    and opt["canon_aplicado"] is False
+                    and (opt["modelo_xxv_id"] is None or opt["modelo_xxv_id"] in candidate_ids),
+                    "Ciclo XXVI: opção tornada canônica ou desvinculada.")
+            opts.append(opt["id"])
+    require(len(opts)==len(set(opts))==38,"Ciclo XXVI: IDs de opção duplicados.")
+    by_id={q["id"]:q for q in entries}
+    explored=set()
+    def check_dag(did,stack):
+        require(did not in stack,"Ciclo XXVI: ciclos de dependência.")
+        if did in explored:
+            return
+        for parent in by_id[did]["depende_de"]:
+            check_dag(parent,stack|{did})
+        explored.add(did)
+    for did in ids:
+        check_dag(did,set())
+    require(len(d["etapas_de_revisao"])==4
+            and all(set(stage["decisoes"])<=ids
+                    and stage["aprovacao_autoral"] is False
+                    and stage["concluida"] is False
+                    for stage in d["etapas_de_revisao"]),
+            "Ciclo XXVI: etapa editorial não pode ser concluída automaticamente.")
+    require(len(d["guardas"])==12
+            and all(x["ativo"] is True for x in d["guardas"]),
+            "Ciclo XXVI: proteção editorial desativada.")
+    require(len(d["impactos_condicionais"])==10,"Ciclo XXVI: faltam impactos.")
+    for imp in d["impactos_condicionais"]:
+        require(set(imp["depende_de"])<=ids
+                and bool(imp["depende_de"])
+                and imp["estado"]=="mapa_condicional_nao_executavel"
+                and imp["aplicado"] is False
+                and imp["aprovacao_autoral"] is False,
+                "Ciclo XXVI: impacto executado sem decisão.")
+        require((ROOT/imp["arquivo_alvo_condicional"]).is_file(),
+                "Ciclo XXVI: arquivo de possível impacto inexistente.")
+    require(len(load("dist/carcaca/creatures.json"))==7,
+            "Ciclo XXVI: não alterar criaturas ao organizar decisões.")
+    print("Ciclo XXVI: 12 decisões, 38 opções, 12 guardas e 10 impactos pendentes.")
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -4024,6 +4121,7 @@ def main():
     validar_caatinga_vida_civil_xxiii()
     validar_costa_sul_civil_xxiv()
     validar_portomonte_templo_governo_xxv()
+    validar_revisao_autoral_portomonte_xxvi()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
