@@ -603,6 +603,25 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .four-rule{background:#27352b;border-left:2px solid #82a592;padding:10px;margin:0}
 @media(max-width:760px){.four-place-grid,.four-fronts{grid-template-columns:1fr}.four-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.four-filter{flex-wrap:wrap}}
 
+
+/* Ciclo XLVII: não confundir unidades insulares, comunidades e habitats. */
+.marine-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:12px 0}
+.marine-stats>div{padding:11px;background:#1d2c30;border:1px solid #436569;border-radius:9px;display:grid;gap:5px}
+.marine-stats b{font:500 22px Cinzel,serif;color:#ead4a7}.marine-stats span{font-size:10px;color:#bed5d0;line-height:1.6}
+.marine-warning{border-left:3px solid #b99373;background:#302a26;color:#e1d0b8;padding:12px;font-size:11px;line-height:1.75}
+.marine-filter{display:flex;align-items:center;gap:12px;font-size:11px;color:#d1e0d7;margin:10px 0 14px}
+.marine-filter select{max-width:100%;padding:8px;color:#e4e9dc;background:#1e2c2d;border:1px solid #5d7470;border-radius:7px}
+.marine-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.marine-place{padding:12px;border-radius:9px;border:1px solid #4d6465;background:#1b292a;color:#d2e5db;text-align:left;display:flex;flex-direction:column;gap:7px}
+.marine-place:hover,.marine-place.active{background:#33372f;border-color:#d8b986}
+.marine-place small{font-size:9px;color:#b0d0cf;text-transform:capitalize}
+.marine-place b{font-size:12px;color:#e6d5b8;line-height:1.5}
+.marine-place span{font-size:10px;color:#b6cec5;line-height:1.65}
+.marine-inspector p{font-size:11px;line-height:1.7}
+.marine-method>p{font-size:11px;line-height:1.8;border-left:2px solid #8caaa0;background:#233333;padding:10px;color:#d4e1d8}
+.marine-method h4{color:#e8d4b5;font:500 14px Cinzel,serif}
+.marine-empty{font-size:11px;color:#c1d1c4}
+@media(max-width:780px){.marine-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.marine-grid{grid-template-columns:1fr}.marine-filter{flex-wrap:wrap}}
 </style>
 </head>
 <body>
@@ -694,6 +713,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <section id="settlementInventory" class="env-section" aria-label="Inventário e propostas do povoamento fantástico"><p class="env-explain">Carregando inventário de assentamentos e comunidades fantásticas propostas...</p></section>
   <section id="settlementExpansion" class="env-section" aria-label="Expansão do povoamento do Rio Ancestral e Eldroth"><p class="env-explain">Carregando a expansão regional com comunidades e habitats...</p></section>
   <section id="fourFrontSettlements" class="env-section" aria-label="Povoamento da Caatinga, Garganta, Thargrid e Ironwood"><p class="env-explain">Carregando comunidades e habitats das quatro frentes...</p></section>
+  <section id="marineTailSettlements" class="env-section" aria-label="Arquipélagos, comunidades submersas e Cauda"><p class="env-explain">Carregando o novo povoamento marítimo e da Cauda...</p></section>
   <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
   <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
   <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
@@ -767,6 +787,8 @@ import {buildSettlementExpansion} from "./settlement-expansion.mjs";
 import {initSettlementExpansion} from "./settlement-expansion-ui.mjs";
 import {buildFourFrontierSettlementLot} from "./settlement-four-fronts.mjs";
 import {initFourFrontierSettlements} from "./settlement-four-fronts-ui.mjs";
+import {buildMarineTailSettlements} from "./settlement-marine-tail.mjs";
+import {initMarineTailSettlements} from "./settlement-marine-tail-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -799,7 +821,8 @@ const paths={
   settlementHorizon:"data/atlas/horizonte-povoamento-macro.json",
   settlementExpansion:"data/propostas/povoamento-regional-lote02-ciclo45.json",
   authoredPages:"data/atlas/indice-paginas-fonte-ciclo45.json",
-  fourFronts:"data/propostas/povoamento-quatro-frentes-ciclo46.json"
+  fourFronts:"data/propostas/povoamento-quatro-frentes-ciclo46.json",
+  marineTail:"data/propostas/povoamento-insular-submerso-cauda-ciclo47.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -1122,6 +1145,7 @@ $("export").addEventListener("click",()=>{
     state.settlementInventory=buildSettlementInventory(loaded.settlementInventory,loaded.creatureSettlements,loaded.settlementHorizon,state.macro);
     state.settlementExpansion=buildSettlementExpansion(loaded.settlementExpansion,loaded.creatureSettlements,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
     state.fourFronts=buildFourFrontierSettlementLot(loaded.fourFronts,loaded.creatureSettlements,loaded.settlementExpansion,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
+    state.marineTail=buildMarineTailSettlements(loaded.marineTail,loaded.creatureSettlements,loaded.settlementExpansion,loaded.fourFronts,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -1136,6 +1160,7 @@ $("export").addEventListener("click",()=>{
     initSettlementInventory($("settlementInventory"),state.settlementInventory);
     initSettlementExpansion($("settlementExpansion"),state.settlementExpansion);
     initFourFrontierSettlements($("fourFrontSettlements"),state.fourFronts);
+    initMarineTailSettlements($("marineTailSettlements"),state.marineTail);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -1161,6 +1186,7 @@ $("export").addEventListener("click",()=>{
     $("settlementInventory").textContent="O inventário do povoamento não pôde ser carregado.";
     $("settlementExpansion").textContent="A expansão de povoamento do Rio e de Eldroth não pôde ser carregada.";
     $("fourFrontSettlements").textContent="A expansão da Caatinga, Garganta, Thargrid e Ironwood não pôde ser carregada.";
+    $("marineTailSettlements").textContent="O povoamento marítimo e da Cauda não pôde ser carregado.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
