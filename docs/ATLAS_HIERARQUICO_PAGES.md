@@ -64,7 +64,7 @@ O site lê os dados do próprio repositório, copiados de forma estática para o
 - `data/propostas/eldroth-ecologia-monstruosa-dw.json`, `data/propostas/eldroth-fichas-dw-ciclo13.json` — ecologia e fichas propostas.
 - `data/propostas/ironwood-eldroth-resistencia-hack.json` — dois microespaços hipotéticos explicitamente ancorados em Ironwood.
 
-A página apresenta 12 pastas de alto nível (11 setores e a pasta transversal) e pode aninhar localidades recursivamente. Os dados são montados pelo módulo `site/atlas/atlas-tree.mjs`; os testes `tests/atlas-hierarquia.test.mjs` são executados na CI e no workflow de Pages. O deploy copia somente onze arquivos JSON públicos necessários; não publica arquivos privados ou integra fontes de D&D não destinadas à distribuição.
+A página apresenta 12 pastas de alto nível (11 setores e a pasta transversal) e pode aninhar localidades recursivamente. Os dados são montados pelo módulo `site/atlas/atlas-tree.mjs`; os testes `tests/atlas-hierarquia.test.mjs` são executados na CI e no workflow de Pages. O deploy copia somente quinze arquivos JSON públicos necessários; não publica arquivos privados ou integra fontes de D&D não destinadas à distribuição.
 
 ## Evolução futura
 
@@ -78,3 +78,24 @@ A página apresenta 12 pastas de alto nível (11 setores e a pasta transversal) 
 ## Publicação
 
 O workflow `.github/workflows/publicar-atlas-pages.yml` executa os testes Node, prepara `site/` e as cópias JSON, envia artefato e tenta publicar no ambiente `github-pages`. **O primeiro deploy exige que a fonte de Pages do repositório esteja habilitada como GitHub Actions.** Caso ainda não esteja, a implantação pode falhar após a etapa de testes; nesse caso o usuário precisa escolher a fonte uma única vez em Settings → Pages. É uma limitação de permissões da administração da conta, não um problema na geração do HTML.
+
+
+## V1.2 — A mesma estrutura para todos os lugares
+
+A expansão deixou de ser um caso especial de Ironwood. **Cada lugar físico**, do bioma à ruína, do rio ao templo, recebe um nó de lacuna adequado à sua natureza e pode conter localidades filhas recursivas, sem limite rígido de profundidade. Referências puramente regionais/abstratas (`ambito`) não são tratadas como territórios reais.
+
+O quinto nível é, sempre que a fonte o permitir, um **assentamento ou sublocal** dentro do território do quarto nível. Para uma cidade: bairros, oficinas, templos, praças e covis. Para uma floresta: comunidades, abrigos, ruínas, bosques e covis. Para uma masmorra: alas, câmaras, dependências e passagens. Nenhum nó de lacuna representa uma cidade existente, nem a árvore pressupõe que cada templo tenha vilas próprias.
+
+O novo [registro de aninhamento](../data/atlas/aninhamento-territorial.json) tem seis vínculos apoiados no manuscrito e a avaliação explícita de **todas as 16 sementes de povoamento**. Só entram como filhas de outro lugar as sementes com relação espacial de interioridade sustentada por seu próprio enunciado; `próximo de` permanece fora do pai e é apresentado apenas como associação regional. Isto vale para a escola próxima de Ironwood, as hortas próximas de Portomonte e os anexos hipotéticos próximos da Boca do Abismo.
+
+### Fontes adicionais aproveitadas
+
+- [Thargrid](../data/propostas/thargrid-resistencia-cotidiano-hack.json): seis microespaços propostos, dois vinculados ao Reino Sob a Montanha e quatro às montanhas de modo abrangente. Não passam a ser vilas canônicas.
+- [Garganta e Rio](../data/propostas/garganta-rio-ancestral-social-hack.json): seis microespaços; quatro associados diretamente ao lugar documentado, dois mantidos na região por não haver cadastro territorial inequívoco de Dunhaven/Harlowe nesta árvore.
+- [Caatinga](../data/propostas/caatinga-rede-social-hack.json): cinco comunidades propostas; duas aprofundam sementes já cadastradas e se tornam **informações adicionais no mesmo local**, não duas duplicatas físicas; três são novos microespaços propostos na Caatinga.
+- [Ironwood e Eldroth](../data/propostas/ironwood-eldroth-resistencia-hack.json): cinco microespaços hipotéticos. Os dois ancorados em Ironwood aparecem em Ironwood, os dois ancorados em Eldroth aparecem em Eldroth; o que está **perto de Vandar** permanece no ramo regional, sem fingir interioridade nas ruínas.
+- [Manuscrito](../data/lore/hack-carcaca-dw-indice-tematico.json): além dos cinco vínculos pré-existentes, a Boca do Abismo fica ligada à área histórica da antiga Gualápolis, com ressalva explícita sobre a relação urbana.
+
+**Modelagem:** `site/atlas/atlas-tree.mjs` monta os nós a partir das fontes, tipifica as lacunas segundo cada lugar e preserva o estatuto de cada microespaço. `site/atlas/index.html` fornece navegação e indicadores por lugar. O workflow copia os 15 arquivos JSON de apoio para o artefato estático e `tests/atlas-hierarquia.test.mjs` verifica que toda localidade tem subdivisões possíveis, todas as 16 sementes foram auditadas e nenhuma proximidade foi promovida a presença física confirmada.
+
+*Sem alteração de cânone, sem novo acontecimento, sem nova regra DW e sem local de poder definido por conveniência.*
