@@ -341,8 +341,7 @@ export function buildAtlasTree(d){
       if(n){n.curatedPlaceId=p.id;n.curatedStatus=p.estado||"documentado";}
     }
   }
-  // Sempre mostre todas as categorias dentro de cada lugar. Pastas vazias são lacunas, não dados inventados.
-  for(const key of placeNames)for(const [ct] of CONTENT_TYPES)getBucket(key,ct);
+  // Categorias serão criadas após TODOS os locais propostos e documentados.
   for(const x of lore){
     if(x.tipo==="povo")for(const key of peopleAssignments[x.id.slice(10)]||["povos-globais"])
       addEntry(key,"povos",fromLore(x));
@@ -474,6 +473,8 @@ export function buildAtlasTree(d){
       (nodeA.relations||=[]).push({to:nodeB.id,label});
     }
   }
+  // Uniformizar o mesmo esquema de conteúdo para TODOS os lugares, inclusive propostas.
+  for(const key of placeNames)for(const [ct] of CONTENT_TYPES)getBucket(key,ct);
   // Reordena filhos sem trocar IDs e prepara estatísticas e visibilidade dos vazios.
   const children=new Map();
   for(const n of list){if(n.parentId){const a=children.get(n.parentId)||[];a.push(n.id);children.set(n.parentId,a)}}
