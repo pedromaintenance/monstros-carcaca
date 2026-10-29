@@ -1,0 +1,330 @@
+{
+  "by_categoria": {
+    "dilemas_civis": [
+      "worldbuilding-xxvii:dilemas_civis:coroa",
+      "worldbuilding-xxvii:dilemas_civis:emprestar-nome",
+      "worldbuilding-xxvii:dilemas_civis:exibir-peca",
+      "worldbuilding-xxvii:dilemas_civis:segredo",
+      "worldbuilding-xxvii:dilemas_civis:troca"
+    ],
+    "memoria_submersa": [
+      "worldbuilding-xxvii:memoria_submersa:arquivo",
+      "worldbuilding-xxvii:memoria_submersa:direito",
+      "worldbuilding-xxvii:memoria_submersa:marcas",
+      "worldbuilding-xxvii:memoria_submersa:objetos",
+      "worldbuilding-xxvii:memoria_submersa:pessoas",
+      "worldbuilding-xxvii:memoria_submersa:testemunhas",
+      "worldbuilding-xxvii:memoria_submersa:vestigios"
+    ],
+    "pactos_de_frente": [
+      "worldbuilding-xxvii:pactos_de_frente:acesso",
+      "worldbuilding-xxvii:pactos_de_frente:dupla-conta",
+      "worldbuilding-xxvii:pactos_de_frente:informante",
+      "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "worldbuilding-xxvii:pactos_de_frente:refugio",
+      "worldbuilding-xxvii:pactos_de_frente:responsabilidade"
+    ],
+    "rio_e_trabalho": [
+      "worldbuilding-xxvii:rio_e_trabalho:alimento",
+      "worldbuilding-xxvii:rio_e_trabalho:avisos",
+      "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "worldbuilding-xxvii:rio_e_trabalho:reparo",
+      "worldbuilding-xxvii:rio_e_trabalho:riscos",
+      "worldbuilding-xxvii:rio_e_trabalho:trabalho-antigo"
+    ],
+    "vida_sob_a_corte": [
+      "worldbuilding-xxvii:vida_sob_a_corte:convivencia",
+      "worldbuilding-xxvii:vida_sob_a_corte:cuidado",
+      "worldbuilding-xxvii:vida_sob_a_corte:favor",
+      "worldbuilding-xxvii:vida_sob_a_corte:limiar",
+      "worldbuilding-xxvii:vida_sob_a_corte:memoria-de-trabalho",
+      "worldbuilding-xxvii:vida_sob_a_corte:nome-de-familia",
+      "worldbuilding-xxvii:vida_sob_a_corte:traducao",
+      "worldbuilding-xxvii:vida_sob_a_corte:vestuario"
+    ],
+    "vinhetas": [
+      "worldbuilding-xxvii:vinhetas:agulha",
+      "worldbuilding-xxvii:vinhetas:assinatura",
+      "worldbuilding-xxvii:vinhetas:pagina",
+      "worldbuilding-xxvii:vinhetas:travesia"
+    ]
+  },
+  "by_escopo": {
+    "foz": [
+      "worldbuilding-xxvii:dilemas_civis:coroa",
+      "worldbuilding-xxvii:dilemas_civis:exibir-peca",
+      "worldbuilding-xxvii:dilemas_civis:segredo",
+      "worldbuilding-xxvii:memoria_submersa:arquivo",
+      "worldbuilding-xxvii:memoria_submersa:direito",
+      "worldbuilding-xxvii:memoria_submersa:marcas",
+      "worldbuilding-xxvii:memoria_submersa:objetos",
+      "worldbuilding-xxvii:memoria_submersa:pessoas",
+      "worldbuilding-xxvii:memoria_submersa:testemunhas",
+      "worldbuilding-xxvii:memoria_submersa:vestigios",
+      "worldbuilding-xxvii:pactos_de_frente:acesso",
+      "worldbuilding-xxvii:pactos_de_frente:dupla-conta",
+      "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "worldbuilding-xxvii:pactos_de_frente:responsabilidade",
+      "worldbuilding-xxvii:rio_e_trabalho:alimento",
+      "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "worldbuilding-xxvii:rio_e_trabalho:reparo",
+      "worldbuilding-xxvii:rio_e_trabalho:riscos",
+      "worldbuilding-xxvii:rio_e_trabalho:trabalho-antigo",
+      "worldbuilding-xxvii:vinhetas:pagina",
+      "worldbuilding-xxvii:vinhetas:travesia"
+    ],
+    "interfaces-nao-localizadas": [
+      "worldbuilding-xxvii:dilemas_civis:emprestar-nome",
+      "worldbuilding-xxvii:pactos_de_frente:informante",
+      "worldbuilding-xxvii:rio_e_trabalho:avisos"
+    ],
+    "shadar-riverie": [
+      "worldbuilding-xxvii:dilemas_civis:troca",
+      "worldbuilding-xxvii:pactos_de_frente:refugio",
+      "worldbuilding-xxvii:vida_sob_a_corte:convivencia",
+      "worldbuilding-xxvii:vida_sob_a_corte:cuidado",
+      "worldbuilding-xxvii:vida_sob_a_corte:favor",
+      "worldbuilding-xxvii:vida_sob_a_corte:limiar",
+      "worldbuilding-xxvii:vida_sob_a_corte:memoria-de-trabalho",
+      "worldbuilding-xxvii:vida_sob_a_corte:nome-de-familia",
+      "worldbuilding-xxvii:vida_sob_a_corte:traducao",
+      "worldbuilding-xxvii:vida_sob_a_corte:vestuario",
+      "worldbuilding-xxvii:vinhetas:agulha",
+      "worldbuilding-xxvii:vinhetas:assinatura"
+    ]
+  },
+  "by_referencia": {
+    "area-proposta:shadar": [
+      "worldbuilding-xxvii:pactos_de_frente:refugio",
+      "worldbuilding-xxvii:vida_sob_a_corte:convivencia",
+      "worldbuilding-xxvii:vida_sob_a_corte:cuidado",
+      "worldbuilding-xxvii:vida_sob_a_corte:traducao"
+    ],
+    "faccao:corte-shadow-fey": [
+      "worldbuilding-xxvii:pactos_de_frente:informante",
+      "worldbuilding-xxvii:vida_sob_a_corte:nome-de-familia"
+    ],
+    "faccao:guardioes-yokai-da-foz": [
+      "worldbuilding-xxvii:memoria_submersa:marcas"
+    ],
+    "lugar:arquivo-dos-mortos-afogados": [
+      "worldbuilding-xxvii:memoria_submersa:arquivo",
+      "worldbuilding-xxvii:memoria_submersa:objetos",
+      "worldbuilding-xxvii:vinhetas:pagina"
+    ],
+    "lugar:boca-do-abismo": [
+      "worldbuilding-xxvii:pactos_de_frente:acesso",
+      "worldbuilding-xxvii:pactos_de_frente:dupla-conta",
+      "worldbuilding-xxvii:rio_e_trabalho:reparo",
+      "worldbuilding-xxvii:rio_e_trabalho:trabalho-antigo"
+    ],
+    "lugar:gualapolis": [
+      "worldbuilding-xxvii:dilemas_civis:exibir-peca",
+      "worldbuilding-xxvii:memoria_submersa:pessoas",
+      "worldbuilding-xxvii:memoria_submersa:vestigios",
+      "worldbuilding-xxvii:pactos_de_frente:responsabilidade"
+    ],
+    "povoamento-proposto:ateliê-das-mascaras": [
+      "worldbuilding-xxvii:dilemas_civis:troca",
+      "worldbuilding-xxvii:vida_sob_a_corte:memoria-de-trabalho",
+      "worldbuilding-xxvii:vida_sob_a_corte:vestuario",
+      "worldbuilding-xxvii:vinhetas:agulha"
+    ],
+    "povoamento-proposto:escrivania-da-foz": [
+      "worldbuilding-xxvii:dilemas_civis:segredo",
+      "worldbuilding-xxvii:memoria_submersa:direito",
+      "worldbuilding-xxvii:memoria_submersa:testemunhas"
+    ],
+    "povoamento-proposto:feira-da-tregua": [
+      "worldbuilding-xxvii:dilemas_civis:coroa",
+      "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "worldbuilding-xxvii:rio_e_trabalho:alimento",
+      "worldbuilding-xxvii:vinhetas:travesia"
+    ],
+    "povoamento-proposto:salas-de-protocolo": [
+      "worldbuilding-xxvii:dilemas_civis:emprestar-nome",
+      "worldbuilding-xxvii:vida_sob_a_corte:favor",
+      "worldbuilding-xxvii:vida_sob_a_corte:limiar",
+      "worldbuilding-xxvii:vinhetas:assinatura"
+    ],
+    "regiao:foz-rio-ancestral": [
+      "worldbuilding-xxvii:rio_e_trabalho:avisos",
+      "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "worldbuilding-xxvii:rio_e_trabalho:riscos"
+    ]
+  },
+  "by_estado": {
+    "proposta_cultural_nao_canonica": [
+      "worldbuilding-xxvii:dilemas_civis:coroa",
+      "worldbuilding-xxvii:dilemas_civis:emprestar-nome",
+      "worldbuilding-xxvii:dilemas_civis:exibir-peca",
+      "worldbuilding-xxvii:dilemas_civis:segredo",
+      "worldbuilding-xxvii:dilemas_civis:troca",
+      "worldbuilding-xxvii:memoria_submersa:arquivo",
+      "worldbuilding-xxvii:memoria_submersa:direito",
+      "worldbuilding-xxvii:memoria_submersa:marcas",
+      "worldbuilding-xxvii:memoria_submersa:objetos",
+      "worldbuilding-xxvii:memoria_submersa:pessoas",
+      "worldbuilding-xxvii:memoria_submersa:testemunhas",
+      "worldbuilding-xxvii:memoria_submersa:vestigios",
+      "worldbuilding-xxvii:pactos_de_frente:acesso",
+      "worldbuilding-xxvii:pactos_de_frente:dupla-conta",
+      "worldbuilding-xxvii:pactos_de_frente:informante",
+      "worldbuilding-xxvii:pactos_de_frente:nao-e-paz",
+      "worldbuilding-xxvii:pactos_de_frente:refugio",
+      "worldbuilding-xxvii:pactos_de_frente:responsabilidade",
+      "worldbuilding-xxvii:rio_e_trabalho:alimento",
+      "worldbuilding-xxvii:rio_e_trabalho:avisos",
+      "worldbuilding-xxvii:rio_e_trabalho:barreiras",
+      "worldbuilding-xxvii:rio_e_trabalho:reparo",
+      "worldbuilding-xxvii:rio_e_trabalho:riscos",
+      "worldbuilding-xxvii:rio_e_trabalho:trabalho-antigo",
+      "worldbuilding-xxvii:vida_sob_a_corte:convivencia",
+      "worldbuilding-xxvii:vida_sob_a_corte:cuidado",
+      "worldbuilding-xxvii:vida_sob_a_corte:favor",
+      "worldbuilding-xxvii:vida_sob_a_corte:limiar",
+      "worldbuilding-xxvii:vida_sob_a_corte:memoria-de-trabalho",
+      "worldbuilding-xxvii:vida_sob_a_corte:nome-de-familia",
+      "worldbuilding-xxvii:vida_sob_a_corte:traducao",
+      "worldbuilding-xxvii:vida_sob_a_corte:vestuario",
+      "worldbuilding-xxvii:vinhetas:agulha",
+      "worldbuilding-xxvii:vinhetas:assinatura",
+      "worldbuilding-xxvii:vinhetas:pagina",
+      "worldbuilding-xxvii:vinhetas:travesia"
+    ]
+  },
+  "by_nome": {
+    "A guerra não apaga o registro": [
+      "worldbuilding-xxvii:pactos_de_frente:responsabilidade"
+    ],
+    "A linha que faltava": [
+      "worldbuilding-xxvii:vinhetas:agulha"
+    ],
+    "A notícia que chega pela água": [
+      "worldbuilding-xxvii:rio_e_trabalho:avisos"
+    ],
+    "A palavra que muda de dono": [
+      "worldbuilding-xxvii:vida_sob_a_corte:traducao"
+    ],
+    "A passagem pode ser uma ordem": [
+      "worldbuilding-xxvii:rio_e_trabalho:barreiras"
+    ],
+    "A peça que acusa": [
+      "worldbuilding-xxvii:dilemas_civis:exibir-peca"
+    ],
+    "A página que não respira": [
+      "worldbuilding-xxvii:vinhetas:pagina"
+    ],
+    "A última travessia da trégua": [
+      "worldbuilding-xxvii:vinhetas:travesia"
+    ],
+    "As marcas não são propriedade": [
+      "worldbuilding-xxvii:memoria_submersa:marcas"
+    ],
+    "Construir sobre o que se perdeu": [
+      "worldbuilding-xxvii:rio_e_trabalho:trabalho-antigo"
+    ],
+    "Cuidar de quem não pode negociar": [
+      "worldbuilding-xxvii:vida_sob_a_corte:cuidado"
+    ],
+    "Favores no lugar de garantias": [
+      "worldbuilding-xxvii:vida_sob_a_corte:favor"
+    ],
+    "Histórias nas costuras": [
+      "worldbuilding-xxvii:vida_sob_a_corte:memoria-de-trabalho"
+    ],
+    "Não há população submersa confirmada": [
+      "worldbuilding-xxvii:memoria_submersa:pessoas"
+    ],
+    "O aliado que não é libertador": [
+      "worldbuilding-xxvii:dilemas_civis:coroa"
+    ],
+    "O aviso que custa um nome": [
+      "worldbuilding-xxvii:pactos_de_frente:informante"
+    ],
+    "O documento que não deve viajar": [
+      "worldbuilding-xxvii:dilemas_civis:segredo"
+    ],
+    "O favor sem recibo": [
+      "worldbuilding-xxvii:vinhetas:assinatura"
+    ],
+    "O limite da corrente": [
+      "worldbuilding-xxvii:rio_e_trabalho:riscos"
+    ],
+    "O peso do objeto resgatado": [
+      "worldbuilding-xxvii:memoria_submersa:objetos"
+    ],
+    "O preço de apresentar-se": [
+      "worldbuilding-xxvii:vida_sob_a_corte:vestuario"
+    ],
+    "O sobrenome como instrumento": [
+      "worldbuilding-xxvii:vida_sob_a_corte:nome-de-familia"
+    ],
+    "O sustento não tem números": [
+      "worldbuilding-xxvii:rio_e_trabalho:alimento"
+    ],
+    "Os nomes que não flutuaram": [
+      "worldbuilding-xxvii:memoria_submersa:vestigios"
+    ],
+    "Pagar duas vezes": [
+      "worldbuilding-xxvii:pactos_de_frente:dupla-conta"
+    ],
+    "Portas que não pertencem a todos": [
+      "worldbuilding-xxvii:vida_sob_a_corte:limiar"
+    ],
+    "Quem entra na fortaleza?": [
+      "worldbuilding-xxvii:pactos_de_frente:acesso"
+    ],
+    "Quem é dono de uma história perdida?": [
+      "worldbuilding-xxvii:memoria_submersa:direito"
+    ],
+    "Refúgio sem juramento": [
+      "worldbuilding-xxvii:pactos_de_frente:refugio"
+    ],
+    "Reparar não é governar": [
+      "worldbuilding-xxvii:rio_e_trabalho:reparo"
+    ],
+    "Roupas de gala, roupa de luto": [
+      "worldbuilding-xxvii:dilemas_civis:troca"
+    ],
+    "Testemunhos que discordam": [
+      "worldbuilding-xxvii:memoria_submersa:testemunhas"
+    ],
+    "Tolerância não é liberdade": [
+      "worldbuilding-xxvii:pactos_de_frente:nao-e-paz"
+    ],
+    "Treguar sem reconciliar": [
+      "worldbuilding-xxvii:vida_sob_a_corte:convivencia"
+    ],
+    "Um arquivo não é uma praça": [
+      "worldbuilding-xxvii:memoria_submersa:arquivo"
+    ],
+    "Um nome em troca da passagem": [
+      "worldbuilding-xxvii:dilemas_civis:emprestar-nome"
+    ]
+  },
+  "by_pagina": {
+    "10": [
+      "worldbuilding-xxvii:fato:11"
+    ],
+    "4": [
+      "worldbuilding-xxvii:fato:12"
+    ],
+    "5": [
+      "worldbuilding-xxvii:fato:01",
+      "worldbuilding-xxvii:fato:02"
+    ],
+    "6": [
+      "worldbuilding-xxvii:fato:03",
+      "worldbuilding-xxvii:fato:04",
+      "worldbuilding-xxvii:fato:05",
+      "worldbuilding-xxvii:fato:06",
+      "worldbuilding-xxvii:fato:07",
+      "worldbuilding-xxvii:fato:08",
+      "worldbuilding-xxvii:fato:09"
+    ],
+    "9": [
+      "worldbuilding-xxvii:fato:10"
+    ]
+  }
+}
