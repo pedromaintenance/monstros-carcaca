@@ -33,7 +33,7 @@ test("atlas: contém todas as menções de lugares e os quatro IDs regionais ofi
   assert.equal(t.stats.ecologiaProposta,8);
   assert.equal(t.stats.microespacosPropostos,16);
   assert.equal(t.nodes.filter(n=>n.kind==="regiao").length,12);
-  assert.equal(t.nodes.filter(n=>n.kind==="lugar"&&n.sourceId?.startsWith("lore-hack:")).length,20);
+  assert.equal(t.nodes.filter(n=>n.kind==="lugar"&&n.sourceId?.startsWith("lore-hack:")&&n.pages?.length>0).length,20);
   assert.equal(lookup.get("lugar-visual:shadar-riverie").regionKey,"shadar");
   assert.equal(lookup.get("lugar-visual:templo-do-crepusculo").regionKey,"cauda");
 });
