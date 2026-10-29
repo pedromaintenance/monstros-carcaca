@@ -1,6 +1,9 @@
 import test from "node:test";
 import assert from "node:assert/strict";
-import {readFileSync} from "node:fs";
+import {readFileSync,writeFileSync,mkdtempSync,rmSync} from "node:fs";
+import {execFileSync} from "node:child_process";
+import {tmpdir} from "node:os";
+import {join} from "node:path";
 import {buildAtlasTree,CONTENT_TYPES} from "../site/atlas/atlas-tree.mjs";
 const read=p=>JSON.parse(readFileSync(new URL("../"+p,import.meta.url),"utf-8"));
 const d={
@@ -212,4 +215,16 @@ test("atlas: relação documentada é citada, proposta não aplica o cânone",()
   assert.equal(s.approval,false);
   assert.equal(d.hierarchy.altera_canon,false);
   assert.equal(d.hierarchy.revisao_autoral_aplicada,false);
+});
+
+test("atlas: interface HTML e script de módulo têm sintaxe JavaScript válida",()=>{
+  const html=readFileSync(new URL("../site/atlas/index.html",import.meta.url),"utf8");
+  const script=html.match(/<script type="module">([\s\S]*?)<\/script>/);
+  assert.ok(script,"O HTML deve manter sua entrada modular.");
+  const dir=mkdtempSync(join(tmpdir(),"carcaca-atlas-"));
+  try{
+    const entry=join(dir,"app.mjs");
+    writeFileSync(entry,script[1],"utf8");
+    execFileSync(process.execPath,["--check",entry],{stdio:"pipe"});
+  }finally{rmSync(dir,{recursive:true,force:true})}
 });
