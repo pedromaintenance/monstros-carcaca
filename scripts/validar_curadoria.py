@@ -3771,6 +3771,58 @@ def validar_caatinga_vida_civil_xxiii():
     print("Ciclo XXIII: 12 fatos de fonte, 40 propostas, 12 referências e 10 perguntas; zero aprovação.")
 
 
+
+def validar_costa_sul_civil_xxiv():
+    """Assegura referência autoral e proíbe promover hipóteses a fatos."""
+    d=load("data/worldbuilding/costa-sul-vida-civil-ciclo24.json")
+    schema=load("schemas/costa-sul-vida-civil-xxiv.schema.json")
+    Draft202012Validator.check_schema(schema)
+    issues=list(Draft202012Validator(schema).iter_errors(d))
+    require(not issues,f"Ciclo XXIV: schema inválido: {issues[:2]}")
+    require(d["contagens"]=={"fatos":10,"referencias":13,"propostas":36,
+        "perguntas":10,"vida_domestica":10,"trabalhos":6,"saberes":6,
+        "circulacao":6,"tensoes_civis":4,"vinhetas":4},
+        "Ciclo XXIV: contagem divergente.")
+    require(d["aprovacao_autoral"] is False and
+        d["efeito_canonico_automatico"] is False and
+        d["lugares_canonicos_adicionados"]==0,
+        "Ciclo XXIV: houve promoção automática.")
+    require(all(d[k] is None for k in ("agua_potavel_domestica_confirmada",
+        "governo_confirmado","populacao_confirmada",
+        "comercio_direto_com_caatinga_confirmado")),
+        "Ciclo XXIV: lacuna preenchida sem fonte.")
+    region=next(x for x in load("data/regioes_carcaca.json")["regioes"]
+                if x["id"]=="regiao:costa-sul")
+    require("lugar:portomonte" in region["lugares"],
+            "Ciclo XXIV: foco territorial sem referência.")
+    pages={p["pagina"] for p in load(d["fonte_manuscrito"])["paginas"]}
+    require(all(f["pagina"] in pages and f["canon_novo"] is False
+                for f in d["fatos_documentados"]),
+            "Ciclo XXIV: página de fonte ou cânone inventados.")
+    refs=d["referencias_existentes"]
+    require(len({r["id"] for r in refs})==13,
+            "Ciclo XXIV: duplicidade em referências.")
+    require(all(any(x["id"]==r["id"] for x in load(r["arquivo"])[r["colecao"]])
+                for r in refs),"Ciclo XXIV: referência antiga inexistente.")
+    cats=("vida_domestica","trabalhos","saberes","circulacao",
+          "tensoes_civis","vinhetas")
+    props=[x for cat in cats for x in d[cat]]
+    ids={r["id"] for r in refs}
+    require(len(props)==36 and len({p["id"] for p in props})==36,
+            "Ciclo XXIV: propostas duplicadas ou ausentes.")
+    require(all(p["estado"]=="proposta_cultural_nao_canonica"
+                and p["ocorreu"] is False and
+                p["situacao_documentada"] is False and
+                p["aprovacao_autoral"] is False and
+                p["pagina_contextual"] in pages and
+                p["referencia_preexistente"] in ids for p in props),
+            "Ciclo XXIV: hipótese promovida ou referência inválida.")
+    require(all(q["resposta_aprovada"] is None
+                for q in d["perguntas_para_autor"]),
+            "Ciclo XXIV: resposta autoral inventada.")
+    print("Ciclo XXIV: 10 fatos, 36 propostas, 13 referências; zero canonização.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3906,6 +3958,7 @@ def main():
     validar_culturas_gnomicas_xxi()
     validar_meio_demonios_sociedades_xxii()
     validar_caatinga_vida_civil_xxiii()
+    validar_costa_sul_civil_xxiv()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")
