@@ -553,6 +553,28 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .settlement-equivalence p{font-size:11px;color:#ccdacb;line-height:1.65;margin:0 0 7px}
 .settlement-equivalence small{font-size:9px;color:#b0c5b0;overflow-wrap:anywhere}
 @media(max-width:760px){.settlement-seed-grid{grid-template-columns:1fr}.settlement-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.settlement-filter label{flex-wrap:wrap}}
+
+/* Ciclo XLV: expansão de comunidades fantásticas e habitats não contáveis. */
+.expansion-overview{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:13px 0}
+.expansion-overview>div{border:1px solid #526951;border-radius:9px;background:#253128;padding:11px;display:grid;gap:4px}
+.expansion-overview b{font:500 23px Cinzel,serif;color:#e4cd9b}.expansion-overview span{font-size:10px;color:#c0d4c0;line-height:1.5}
+.expansion-scope{border-left:3px solid #bda378;padding:10px 12px;background:#302b21;color:#d6cba9;font-size:11px;line-height:1.7}
+.expansion-note{color:#c4d5c4;font-size:11px;line-height:1.7;padding:10px;border-left:3px solid #80988b;background:#24312a}
+.expansion-filter{margin:12px 0}.expansion-filter label{display:flex;gap:8px;align-items:center;font-size:11px;color:#c6d3c4}
+.expansion-filter select{background:#1c2922;border:1px solid #526655;color:#dbe3d5;border-radius:7px;padding:8px}
+.expansion-card-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:11px}
+.expansion-card{background:#1e2a24;border:1px solid #435a4b;border-radius:9px;padding:12px;text-align:left;display:flex;flex-direction:column;gap:6px;color:#d9e7d8}
+.expansion-card.active,.expansion-card:hover{background:#35382d;border-color:#bb9f73}
+.expansion-card small{color:#b6c8ba;font-size:9px}.expansion-card b{font-size:12px;line-height:1.5;color:#ebdcbf}
+.expansion-card span{font-size:10px;line-height:1.6;color:#b9c7b9}.expansion-inspector p{font-size:11px;line-height:1.7}
+.expansion-method{display:grid;gap:8px}.expansion-method>p{font-size:11px;line-height:1.7;color:#cfddce}
+.expansion-method h4{font:500 14px Cinzel,serif;color:#ecd8b8}
+.expansion-method article{background:#213027;border:1px solid #4d6754;border-radius:9px;padding:12px}
+.expansion-method article b{display:block;color:#e6d3a5;font-size:11px;text-transform:capitalize}
+.expansion-method article small{font-size:9px;color:#b9c8b7}.expansion-method article p{font-size:11px;line-height:1.7}
+.expansion-rule{padding:10px 12px;border-left:3px solid #7a9d8a;background:#28372d;font-size:11px;line-height:1.65}
+@media(max-width:760px){.expansion-overview{grid-template-columns:repeat(2,minmax(0,1fr))}.expansion-card-grid{grid-template-columns:1fr}.expansion-filter label{flex-wrap:wrap}}
+
 </style>
 </head>
 <body>
@@ -642,6 +664,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   </section>
 
   <section id="settlementInventory" class="env-section" aria-label="Inventário e propostas do povoamento fantástico"><p class="env-explain">Carregando inventário de assentamentos e comunidades fantásticas propostas...</p></section>
+  <section id="settlementExpansion" class="env-section" aria-label="Expansão do povoamento do Rio Ancestral e Eldroth"><p class="env-explain">Carregando a expansão regional com comunidades e habitats...</p></section>
   <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
   <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
   <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
@@ -711,6 +734,8 @@ import {buildContinentalVulnerabilities} from "./continental-vulnerabilities.mjs
 import {initContinentalVulnerabilities} from "./continental-vulnerabilities-ui.mjs";
 import {buildSettlementInventory} from "./settlement-inventory.mjs";
 import {initSettlementInventory} from "./settlement-inventory-ui.mjs";
+import {buildSettlementExpansion} from "./settlement-expansion.mjs";
+import {initSettlementExpansion} from "./settlement-expansion-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -740,7 +765,9 @@ const paths={
   vulnerabilities:"data/atlas/dependencias-vulnerabilidades-ciclo42.json",
   settlementInventory:"data/atlas/inventario-povoamento-ciclo44.json",
   creatureSettlements:"data/propostas/povoamento-criaturas-lote01.json",
-  settlementHorizon:"data/atlas/horizonte-povoamento-macro.json"
+  settlementHorizon:"data/atlas/horizonte-povoamento-macro.json",
+  settlementExpansion:"data/propostas/povoamento-regional-lote02-ciclo45.json",
+  authoredPages:"fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -1061,6 +1088,7 @@ $("export").addEventListener("click",()=>{
     state.material=buildMaterialCirculation(loaded.material,state.macro,state.networks,state.chrono);
     state.vulnerabilities=buildContinentalVulnerabilities(loaded.vulnerabilities,state.material,state.chrono,state.hydrology);
     state.settlementInventory=buildSettlementInventory(loaded.settlementInventory,loaded.creatureSettlements,loaded.settlementHorizon,state.macro);
+    state.settlementExpansion=buildSettlementExpansion(loaded.settlementExpansion,loaded.creatureSettlements,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -1073,6 +1101,7 @@ $("export").addEventListener("click",()=>{
     initMaterialCirculation($("materialCirculation"),state.material);
     initContinentalVulnerabilities($("continentalVulnerabilities"),state.vulnerabilities);
     initSettlementInventory($("settlementInventory"),state.settlementInventory);
+    initSettlementExpansion($("settlementExpansion"),state.settlementExpansion);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -1096,6 +1125,7 @@ $("export").addEventListener("click",()=>{
     $("materialCirculation").textContent="A circulação material não pôde ser carregada.";
     $("continentalVulnerabilities").textContent="Os cenários de vulnerabilidade não puderam ser carregados.";
     $("settlementInventory").textContent="O inventário do povoamento não pôde ser carregado.";
+    $("settlementExpansion").textContent="A expansão de povoamento do Rio e de Eldroth não pôde ser carregada.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
