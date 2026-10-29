@@ -7,17 +7,30 @@ Quando GitHub Pages estiver habilitado e o deploy concluído, endereço padrão:
 
 No GitHub: **Settings → Pages → Build and deployment → Source → GitHub Actions** (configuração necessária apenas se o Pages ainda não estiver habilitado).
 
-## Modelo em sete níveis
+## Modelo em profundidade variável — assentamentos no quinto nível
 
-1. **Carcaça** — continente sobre o corpo de Golzdov.
-2. **Região / setor de leitura** — 11 setores geográficos de exploração editorial; apenas quatro já têm ID de região no catálogo formal. Uma pasta **transversal** agrupa dados sem localização.
-3. **Tipo de lugar** — assentamentos/comunidades, biomas, fortalezas, locais de poder, masmorras/covis, ruínas, rotas, microespaços propostos e referências sem local individualizado.
-4. **Lugar** — referência nomeada do manuscrito, núcleo do atlas ou microespaço proposto, com ID de origem e ressalvas.
-5. **Categoria de conteúdo** — povos, culturas, personagens, criaturas, fauna, flora, itens mágicos, facções, divindades e memória/conceitos.
-6. **Registro** — entidade individual documentada, estruturada ou proposta, com identificador estável.
-7. **Atributos e vínculos** — referência da fonte, páginas, habitat ou estatuto DW quando disponível; relações entre lugares sem converter vínculos narrativos em rotas cartográficas.
+A hierarquia não deve ter profundidade artificial fixa. Uma região pode conter um bioma, que contém vilas e cidades; uma cidade pode conter bairros, que contêm templos, casas, lojas e covis.
 
-Esta é uma **taxonomia de navegação**, não uma decisão sobre fronteiras, jurisdição, população, localização, genealogia ou física mágica.
+1. **Carcaça** — o continente inteiro.
+2. **Região / setor de leitura** — unidade geográfica, sem presumir limites ou soberania.
+3. **Tipo de lugar** — assentamento, bioma, fortaleza, ruína, rota, local de poder etc.
+4. **Lugar/território abrangente** — ex.: Ironwood, Montanhas de Thargrid, Garganta, Portomonte.
+5. **Localidades internas e assentamentos** — vilas, cidades, fortificações, refúgios, distritos e outras unidades explicitamente contidas no quarto nível.
+6. **Sublugares recursivos** — bairros, estabelecimentos, sítios sagrados, covis, arquivos ou outras subdivisões; repetíveis sem limite fixo.
+7. **Categorias de conteúdo** — povos, culturas, personagens, criaturas, fauna, flora, relíquias, facções, deuses e memórias.
+8. **Registros e atributos** — entidade individual, proveniência e vínculos verificados.
+
+**Importante:** se o quarto nível já for o lugar mais específico da fonte (por exemplo, um assentamento sem bairros documentados), suas categorias de conteúdo podem ficar diretamente nele. Não criamos um fictício "centro de Portomonte" apenas para preencher o nível cinco.
+
+### Ironwood como caso de referência
+
+- `Ironwood` é a âncora territorial original do manuscrito (floresta/fortaleza ranger).
+- `Fortaleza ranger — núcleo de Ironwood` é a representação **do núcleo fortificado documentado**, não uma cidade nova nem um governo adicional. Elara Stormoak e rangers ficam ligados a esse núcleo.
+- `Pouso das Bainhas Viradas` e `Pátio da Trilha Incompleta` são **dois microespaços não canonizados** dos dossiês anteriores, explicitamente ancorados em Ironwood; aparecem como localidades propostas.
+- `Outras vilas e cidades — ainda não individualizadas` é uma **pasta de lacuna**, não uma afirmação de que existem várias cidades documentadas.
+- `A Escola das Trilhas que Somem` continua **próxima de Ironwood**, e não dentro dele: proximidade não basta para criar parentesco geográfico.
+
+O mesmo mecanismo coloca `Reino Sob a Montanha` sob `Montanhas de Thargrid`, `Templo de Deméter` sob `Portomonte`, `Templo de Yolskaariin` sob `Garganta`, `Templo da Lua` sob `Rio Ancestral` e `Arquivo dos Mortos Afogados` sob `Gualápolis`, sem modificar identidades ou criar coordenadas.
 
 ## Estatutos e proveniência
 
@@ -49,8 +62,9 @@ O site lê os dados do próprio repositório, copiados de forma estática para o
 - `dist/carcaca/creatures.json` — sete criaturas do Arquivo.
 - `data/propostas/povoamento-regional-hack-carcaca.json` — dezesseis núcleos não canônicos.
 - `data/propostas/eldroth-ecologia-monstruosa-dw.json`, `data/propostas/eldroth-fichas-dw-ciclo13.json` — ecologia e fichas propostas.
+- `data/propostas/ironwood-eldroth-resistencia-hack.json` — dois microespaços hipotéticos explicitamente ancorados em Ironwood.
 
-A página apresenta 12 pastas de alto nível (11 setores e a pasta transversal). Os dados são montados pelo módulo `site/atlas/atlas-tree.mjs`; os testes `tests/atlas-hierarquia.test.mjs` são executados na CI e no workflow de Pages. O deploy copia somente dez arquivos JSON necessários; não publica arquivos privados ou integra fontes de D&D não destinadas à distribuição.
+A página apresenta 12 pastas de alto nível (11 setores e a pasta transversal) e pode aninhar localidades recursivamente. Os dados são montados pelo módulo `site/atlas/atlas-tree.mjs`; os testes `tests/atlas-hierarquia.test.mjs` são executados na CI e no workflow de Pages. O deploy copia somente onze arquivos JSON públicos necessários; não publica arquivos privados ou integra fontes de D&D não destinadas à distribuição.
 
 ## Evolução futura
 
