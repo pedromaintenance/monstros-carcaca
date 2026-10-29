@@ -134,6 +134,10 @@ O [Inventário do Povoamento no Atlas](https://pedromaintenance.github.io/monstr
 
 O [painel de expansão do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#settlementExpansion) apresenta **18 novas comunidades fantásticas propostas**, igualmente distribuídas entre Rio Ancestral e Eldroth, e **10 habitats, covis e fenômenos ecológicos** registrados separadamente, sem inflar a contagem de assentamentos. Em conjunto com o lote anterior, temos **32 comunidades propostas em todo o continente**, sendo **11 propostas no Rio e 11 em Eldroth**. Goblins, fadas, gnomos, miconídeos, comunidades aracnídeas e mortos-vivos hipoteticamente autônomos possuem sociedades, organização e ecologias próprias, sem serem automaticamente membros de uma facção. **Nenhuma localidade nova foi aprovada como cânone.** [Dossiê do ciclo](docs/ATLAS_POVOAMENTO_RIO_ELDROTH_CICLO45.md) · [Dados JSON](data/propostas/povoamento-regional-lote02-ciclo45.json).
 
+## Ciclo XLVI — Caatinga, Garganta, Thargrid e Ironwood
+
+O Atlas recebeu o [painel de quatro frentes de povoamento](https://pedromaintenance.github.io/monstros-carcaca/atlas/#fourFrontSettlements), com **24 comunidades coletivas propostas** (seis por frente) e **12 habitats não contáveis como assentamentos**. O povoamento acumulado nos três lotes é de **56 propostas**, todas sem aprovação canônica, mais **22 habitats ecológicos propostos** desde o Ciclo XLV. A expansão diferencia **Caatinga**, **comunidades exteriores à cidade de Garganta**, **montanhas de Thargrid** e **Ironwood**, preservando a autonomia de seus grupos e não inventando coordenadas nem estradas. O conteúdo inclui orcs, goblins, kobolds, gnomos, gigantes, draconatos, fadas, svirfneblin e espécies fantásticas inventadas, sem atribuir automaticamente hostilidade ou governo central a qualquer povo. [Dossiê editorial](docs/ATLAS_POVOAMENTO_QUATRO_FRENTES_CICLO46.md) · [Dados JSON](data/propostas/povoamento-quatro-frentes-ciclo46.json).
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
