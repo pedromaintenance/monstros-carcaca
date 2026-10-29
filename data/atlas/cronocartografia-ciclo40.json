@@ -1,0 +1,682 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Cronocartografia dos centros de poder — Ciclo XL",
+  "estado": "leitura_historica_sem_fronteiras",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "representacao": "periodos_e_marcos_qualitativos",
+  "fontes": [
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+    "data/atlas/redes-historicas-ciclo33.json",
+    "data/atlas/macrorregioes-carcaca.json",
+    "data/atlas/geografia-fisica-ciclo34.json",
+    "data/atlas/matriz-topologica-ciclo37.json"
+  ],
+  "criterio": "Acontecimentos, esferas políticas e mapa de soberania são categorias distintas. Selecionar uma época não pinta regiões de uma única cor nem retroprojeta a autoridade descrita no presente.",
+  "papeis_territoriais": [
+    {
+      "id": "formacao",
+      "nome": "Fundação geográfica (não governo)",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "autonomia",
+      "nome": "Autonomia ou cidade livre",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "circulacao",
+      "nome": "Circulação sem jurisdição",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "incursao",
+      "nome": "Incursão ou invasão",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "resistencia",
+      "nome": "Resistência ou coalizão",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "alianca",
+      "nome": "Aliança",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "refugio",
+      "nome": "Refúgio ou migração",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "sede",
+      "nome": "Sede política documentada",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "conquista",
+      "nome": "Guerra ou conquista",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "golpe",
+      "nome": "Golpe ou traição",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "ocupacao",
+      "nome": "Ocupação e exploração",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "destruicao",
+      "nome": "Destruição ou ruptura",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "marco",
+      "nome": "Marco institucional",
+      "implica_soberania_continua": false
+    },
+    {
+      "id": "sem_projecao",
+      "nome": "Relação contextual, sem domínio mapeado",
+      "implica_soberania_continua": false
+    }
+  ],
+  "fases": [
+    {
+      "id": "fase:xl:origens",
+      "titulo": "Origens e Primeiros Reinos",
+      "inicio_ec": 0,
+      "fim_ec": 500,
+      "leitura_editorial": "Recorte de leitura do período inicial; presença de cidades e confrontos não compõe um mapa de Estados homogêneos.",
+      "fronteira_retroativa": false,
+      "geometria": null
+    },
+    {
+      "id": "fase:xl:chegada",
+      "titulo": "Migração feérica e implantação da Corte",
+      "inicio_ec": 501,
+      "fim_ec": 874,
+      "leitura_editorial": "Refúgios de fadas, chegada formal dos lordes e estabelecimento da Rainha nas margens do Abismo.",
+      "fronteira_retroativa": false,
+      "geometria": null
+    },
+    {
+      "id": "fase:xl:conquista",
+      "titulo": "Conquista e traição",
+      "inicio_ec": 875,
+      "fim_ec": 909,
+      "leitura_editorial": "Guerras de subjugação, colapso da Confederação e golpe de Voragar; sem extensão cartografada de ocupação.",
+      "fronteira_retroativa": false,
+      "geometria": null
+    },
+    {
+      "id": "fase:xl:dominio",
+      "titulo": "Dominação e resistência",
+      "inicio_ec": 910,
+      "fim_ec": 982,
+      "leitura_editorial": "Predomínio militar e político da Corte coexistindo com resistência; esferas diferentes no mesmo período.",
+      "fronteira_retroativa": false,
+      "geometria": null
+    },
+    {
+      "id": "fase:xl:crise",
+      "titulo": "Crise do Abismo e Gualápolis",
+      "inicio_ec": 983,
+      "fim_ec": 998,
+      "leitura_editorial": "Invasão demoníaca, destruição do templo e tomada de Gualápolis, sem presumir construção do novo palácio antes de 999.",
+      "fronteira_retroativa": false,
+      "geometria": null
+    },
+    {
+      "id": "fase:xl:crepusculo",
+      "titulo": "Templo do Crepúsculo",
+      "inicio_ec": 999,
+      "fim_ec": 999,
+      "leitura_editorial": "Marco explícito da construção do templo na cauda; o manuscrito não fornece uma data final para a época.",
+      "fronteira_retroativa": false,
+      "geometria": null
+    }
+  ],
+  "eventos": [
+    {
+      "id": "evento:xl:01",
+      "ref_cronologia": "tempo-xxxiii:01",
+      "ref_fase": "fase:xl:origens",
+      "tipo": "formacao",
+      "leitura_editorial": "A morte de Golzdov inaugura a cronologia, mas não estabelece qualquer soberania.",
+      "leitura_por_setor": {
+        "garganta": "formacao",
+        "rio": "formacao",
+        "costa": "formacao",
+        "caatinga": "formacao",
+        "eldroth": "formacao",
+        "thargrid": "formacao",
+        "foz": "formacao",
+        "shadar": "formacao",
+        "grama": "formacao",
+        "cauda": "formacao",
+        "azuis": "formacao"
+      },
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:02",
+      "ref_cronologia": "tempo-xxxiii:02",
+      "ref_fase": "fase:xl:origens",
+      "tipo": "autonomia",
+      "leitura_editorial": "Garganta livre e eixo comercial do rio. Comércio não equivale a jurisdição territorial.",
+      "leitura_por_setor": {
+        "garganta": "autonomia",
+        "rio": "circulacao"
+      },
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:03",
+      "ref_cronologia": "tempo-xxxiii:03",
+      "ref_fase": "fase:xl:origens",
+      "tipo": "incursao",
+      "leitura_editorial": "Invasão Kuo-Toa pela Costa Sul e alcance até Garganta, sem trajetória militar determinada.",
+      "leitura_por_setor": {
+        "costa": "incursao",
+        "garganta": "incursao"
+      },
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:04",
+      "ref_cronologia": "tempo-xxxiii:04",
+      "ref_fase": "fase:xl:origens",
+      "tipo": "resistencia",
+      "leitura_editorial": "A coalizão enfrenta os Kuo-Toa; a referência ao Extremo Oeste não esclarece o percurso da campanha.",
+      "leitura_por_setor": {
+        "caatinga": "resistencia",
+        "garganta": "resistencia",
+        "costa": "sem_projecao"
+      },
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:05",
+      "ref_cronologia": "tempo-xxxiii:05",
+      "ref_fase": "fase:xl:origens",
+      "tipo": "alianca",
+      "leitura_editorial": "Confederação dos Ossos estabelecida junto a Garganta, não um polígono de todos os reinos associados.",
+      "leitura_por_setor": {
+        "garganta": "alianca"
+      },
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:06",
+      "ref_cronologia": "tempo-xxxiii:06",
+      "ref_fase": "fase:xl:chegada",
+      "tipo": "refugio",
+      "leitura_editorial": "Fadas refugiadas em Eldroth e Ironwood; presença feérica não deve ser confundida com conquista da Corte.",
+      "leitura_por_setor": {
+        "eldroth": "refugio",
+        "thargrid": "refugio"
+      },
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:07",
+      "ref_cronologia": "tempo-xxxiii:07",
+      "ref_fase": "fase:xl:chegada",
+      "tipo": "sem_projecao",
+      "leitura_editorial": "A instalação oficial dos Lordes na Carcaça não recebe localização setorial no índice.",
+      "leitura_por_setor": {},
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:08",
+      "ref_cronologia": "tempo-xxxiii:08",
+      "ref_fase": "fase:xl:chegada",
+      "tipo": "sede",
+      "leitura_editorial": "Sede inicial da Rainha e Templo das Sombras na margem norte do Abismo, não toda a região da foz.",
+      "leitura_por_setor": {
+        "foz": "sede"
+      },
+      "ref_marco_fisico": "geo-xxxiv:margem-norte",
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:09",
+      "ref_cronologia": "tempo-xxxiii:09",
+      "ref_fase": "fase:xl:conquista",
+      "tipo": "conquista",
+      "leitura_editorial": "Início das guerras de dominação e destruição da Confederação; a extensão da ocupação ainda é indeterminada.",
+      "leitura_por_setor": {
+        "garganta": "conquista",
+        "foz": "sem_projecao"
+      },
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:10",
+      "ref_cronologia": "tempo-xxxiii:10",
+      "ref_fase": "fase:xl:conquista",
+      "tipo": "golpe",
+      "leitura_editorial": "Voragar ergue fortaleza na coluna dorsal: o sítio anatômico não tem setor cartográfico definido.",
+      "leitura_por_setor": {},
+      "ref_marco_fisico": "geo-xxxiv:coluna-dorsal",
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:11",
+      "ref_cronologia": "tempo-xxxiii:11",
+      "ref_fase": "fase:xl:conquista",
+      "tipo": "refugio",
+      "leitura_editorial": "Rayquaza se refugia em Thargrid; presença individual não é alteração de soberania de toda a montanha.",
+      "leitura_por_setor": {
+        "thargrid": "refugio"
+      },
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:12",
+      "ref_cronologia": "tempo-xxxiii:12",
+      "ref_fase": "fase:xl:dominio",
+      "tipo": "ocupacao",
+      "leitura_editorial": "O mesmo evento registra domínio da Corte no rio e resistência de Thargrid: papéis territoriais diferentes.",
+      "leitura_por_setor": {
+        "rio": "ocupacao",
+        "thargrid": "resistencia"
+      },
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:13",
+      "ref_cronologia": "tempo-xxxiii:13",
+      "ref_fase": "fase:xl:dominio",
+      "tipo": "resistencia",
+      "leitura_editorial": "O Reino Sob a Montanha reafirma resistência; o manuscrito também descreve conquistas noutras regiões, mas sem polígonos.",
+      "leitura_por_setor": {
+        "thargrid": "resistencia"
+      },
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:14",
+      "ref_cronologia": "tempo-xxxiii:14",
+      "ref_fase": "fase:xl:dominio",
+      "tipo": "marco",
+      "leitura_editorial": "A morte de Voragar e dos Dragões Ancestrais não determina automaticamente queda da ocupação ou local da batalha.",
+      "leitura_por_setor": {},
+      "ref_marco_fisico": null,
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:15",
+      "ref_cronologia": "tempo-xxxiii:15",
+      "ref_fase": "fase:xl:crise",
+      "tipo": "destruicao",
+      "leitura_editorial": "Demônios vindos do Abismo destroem o Templo das Sombras em 983 EC; não equiparar a seres marinhos.",
+      "leitura_por_setor": {
+        "foz": "destruicao"
+      },
+      "ref_marco_fisico": "geo-xxxiv:margem-norte",
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:16",
+      "ref_cronologia": "tempo-xxxiii:16",
+      "ref_fase": "fase:xl:crise",
+      "tipo": "golpe",
+      "leitura_editorial": "Gualápolis é tomada em 984 EC; a relação entre Gualápolis, Boca e Shadar continua contestada.",
+      "leitura_por_setor": {
+        "foz": "golpe"
+      },
+      "ref_marco_fisico": "geo-xxxiv:gualapolis",
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    },
+    {
+      "id": "evento:xl:17",
+      "ref_cronologia": "tempo-xxxiii:17",
+      "ref_fase": "fase:xl:crepusculo",
+      "tipo": "marco",
+      "leitura_editorial": "O Templo do Crepúsculo é construído na cauda em 999 EC; não deduzir ponte nem estrada entre foz e cauda.",
+      "leitura_por_setor": {
+        "cauda": "marco"
+      },
+      "ref_marco_fisico": "geo-xxxiv:cauda",
+      "fronteira_confirmada": false,
+      "rota_confirmada": false,
+      "geometria": null,
+      "nao_aplicar_como_estado_territorial": true
+    }
+  ],
+  "polos": [
+    {
+      "id": "polo:xl:01",
+      "ref_esfera": "esfera-xxxiii:01",
+      "ref_eventos_contextuais": [
+        "tempo-xxxiii:13"
+      ],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:02",
+      "ref_esfera": "esfera-xxxiii:02",
+      "ref_eventos_contextuais": [
+        "tempo-xxxiii:12",
+        "tempo-xxxiii:13"
+      ],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:03",
+      "ref_esfera": "esfera-xxxiii:03",
+      "ref_eventos_contextuais": [
+        "tempo-xxxiii:12"
+      ],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:04",
+      "ref_esfera": "esfera-xxxiii:04",
+      "ref_eventos_contextuais": [
+        "tempo-xxxiii:13"
+      ],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:05",
+      "ref_esfera": "esfera-xxxiii:05",
+      "ref_eventos_contextuais": [],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:06",
+      "ref_esfera": "esfera-xxxiii:06",
+      "ref_eventos_contextuais": [
+        "tempo-xxxiii:11",
+        "tempo-xxxiii:13"
+      ],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:07",
+      "ref_esfera": "esfera-xxxiii:07",
+      "ref_eventos_contextuais": [
+        "tempo-xxxiii:12"
+      ],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:08",
+      "ref_esfera": "esfera-xxxiii:08",
+      "ref_eventos_contextuais": [
+        "tempo-xxxiii:16"
+      ],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:09",
+      "ref_esfera": "esfera-xxxiii:09",
+      "ref_eventos_contextuais": [],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:10",
+      "ref_esfera": "esfera-xxxiii:10",
+      "ref_eventos_contextuais": [
+        "tempo-xxxiii:17"
+      ],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:11",
+      "ref_esfera": "esfera-xxxiii:11",
+      "ref_eventos_contextuais": [
+        "tempo-xxxiii:04"
+      ],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:12",
+      "ref_esfera": "esfera-xxxiii:12",
+      "ref_eventos_contextuais": [
+        "tempo-xxxiii:03",
+        "tempo-xxxiii:04"
+      ],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:13",
+      "ref_esfera": "esfera-xxxiii:13",
+      "ref_eventos_contextuais": [
+        "tempo-xxxiii:03"
+      ],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    },
+    {
+      "id": "polo:xl:14",
+      "ref_esfera": "esfera-xxxiii:14",
+      "ref_eventos_contextuais": [],
+      "validade": "panorama_sem_data_inicial_confirmada",
+      "inicia_no_ano": null,
+      "termina_no_ano": null,
+      "nao_retroprojetar": true,
+      "fronteira_confirmada": false,
+      "geometria": null,
+      "nota": "Os eventos associados fornecem contexto histórico, não a data de início nem extensão da esfera."
+    }
+  ],
+  "futuros_em_aberto": [
+    {
+      "id": "futuro:xl:drakport",
+      "pergunta": "Quando e como os escravizados de Drakport se revoltarão?",
+      "pagina": 11,
+      "estado": "nao_acontecido_ou_indeterminado",
+      "ano_ec": null,
+      "acontecimento_confirmado": false,
+      "geometria": null
+    },
+    {
+      "id": "futuro:xl:thargrid",
+      "pergunta": "A resistência de Thargrid perdurará ou sucumbirá?",
+      "pagina": 11,
+      "estado": "nao_acontecido_ou_indeterminado",
+      "ano_ec": null,
+      "acontecimento_confirmado": false,
+      "geometria": null
+    },
+    {
+      "id": "futuro:xl:yokai",
+      "pergunta": "Qual foi o destino dos Yokai?",
+      "pagina": 11,
+      "estado": "nao_acontecido_ou_indeterminado",
+      "ano_ec": null,
+      "acontecimento_confirmado": false,
+      "geometria": null
+    },
+    {
+      "id": "futuro:xl:rayquaza",
+      "pergunta": "Qual foi o destino de Rayquaza?",
+      "pagina": 11,
+      "estado": "nao_acontecido_ou_indeterminado",
+      "ano_ec": null,
+      "acontecimento_confirmado": false,
+      "geometria": null
+    },
+    {
+      "id": "futuro:xl:golzdov",
+      "pergunta": "Qual a origem de Golzdov e a causa de sua morte?",
+      "pagina": 11,
+      "estado": "nao_acontecido_ou_indeterminado",
+      "ano_ec": null,
+      "acontecimento_confirmado": false,
+      "geometria": null
+    },
+    {
+      "id": "futuro:xl:corte",
+      "pergunta": "Como a guerra contra os demônios alterará a Corte?",
+      "pagina": 11,
+      "estado": "nao_acontecido_ou_indeterminado",
+      "ano_ec": null,
+      "acontecimento_confirmado": false,
+      "geometria": null
+    },
+    {
+      "id": "futuro:xl:mar",
+      "pergunta": "A corrupção do Mar de Sangue poderá ser revertida?",
+      "pagina": 11,
+      "estado": "nao_acontecido_ou_indeterminado",
+      "ano_ec": null,
+      "acontecimento_confirmado": false,
+      "geometria": null
+    }
+  ],
+  "restricoes": [
+    "A morte de Golzdov em 0 EC não cria governos para os onze setores.",
+    "O raio de atuação dos Kuo-Toa em 342 EC não representa uma fronteira estatal duradoura.",
+    "O episódio 910 EC distingue simultaneamente ocupação no rio e resistência em Thargrid.",
+    "O Templo das Sombras é destruído em 983 EC; o Templo do Crepúsculo é construído em 999 EC.",
+    "A tomada de Gualápolis em 984 EC não resolve a topologia Shadar-Riverie/Boca.",
+    "As esferas de poder do Ciclo XXXIII são um panorama sem datas de instalação homologadas.",
+    "Acontecimentos futuros em aberto (página 11) não podem ser classificados como ocorridos.",
+    "O Abismo demoníaco não é a origem da civilização dos Abissais marinhos."
+  ]
+}
