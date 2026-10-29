@@ -1,0 +1,834 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Macroambientes naturais da Carcaça — Ciclo XXXV",
+  "estado": "sintese_macroambiental",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "fonte_principal": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "politica": "As famílias e habitats são índices editoriais, não lugares novos. Interações entre regiões não provam estrada, fronteira, abundância ecológica ou coordenada.",
+  "familias": [
+    {
+      "id": "ossos",
+      "nome": "Ossatura e relevo"
+    },
+    {
+      "id": "montanha",
+      "nome": "Montanhas e altitudes"
+    },
+    {
+      "id": "floresta",
+      "nome": "Florestas e bosques"
+    },
+    {
+      "id": "seco",
+      "nome": "Caatinga e paisagens agrícolas"
+    },
+    {
+      "id": "rio",
+      "nome": "Rio e Abismo"
+    },
+    {
+      "id": "litoral",
+      "nome": "Litoral e ilhas"
+    },
+    {
+      "id": "oceano",
+      "nome": "Mares e profundezas"
+    },
+    {
+      "id": "subsolo",
+      "nome": "Cavernas e subsolo"
+    }
+  ],
+  "ambientes": [
+    {
+      "id": "amb:cranio",
+      "nome": "Crânio submerso e passagens de Garganta",
+      "familia": "ossos",
+      "setores": [
+        "garganta"
+      ],
+      "lugar_id": "lugar-visual:garganta",
+      "paginas": [
+        2,
+        4
+      ],
+      "descricao": "Cabeça no extremo leste, montanhas, passagens e escavações Yokai.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:asa",
+      "nome": "Asa direita e Eldroth",
+      "familia": "ossos",
+      "setores": [
+        "eldroth"
+      ],
+      "lugar_id": "lugar-visual:floresta-eldroth",
+      "paginas": [
+        5
+      ],
+      "descricao": "Eldroth e Vandar estão na asa direita; direita anatômica não é leste.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:coluna",
+      "nome": "Centro da coluna dorsal",
+      "familia": "ossos",
+      "setores": [],
+      "lugar_id": null,
+      "paginas": [
+        9
+      ],
+      "descricao": "Fortaleza erguida por Voragar em 886 EC, localização regional e estado atual não conhecidos.",
+      "estado": "historico_sem_local",
+      "precisao": "transversal_nao_localizado"
+    },
+    {
+      "id": "amb:costelas",
+      "nome": "Costelas e cavernas antigas",
+      "familia": "ossos",
+      "setores": [],
+      "lugar_id": null,
+      "paginas": [
+        2,
+        9
+      ],
+      "descricao": "Reinos ancestrais em ossos e cavernas; sem pontos individualizados.",
+      "estado": "historico_sem_local",
+      "precisao": "transversal_nao_localizado"
+    },
+    {
+      "id": "amb:cauda",
+      "nome": "Cauda além do Abismo",
+      "familia": "ossos",
+      "setores": [
+        "cauda"
+      ],
+      "lugar_id": "lugar-visual:templo-do-crepusculo",
+      "paginas": [
+        5,
+        6
+      ],
+      "descricao": "O Templo do Crepúsculo fica sobre a cauda, do outro lado do Abismo, sem passagem definida.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:thargrid",
+      "nome": "Maciço de Thargrid",
+      "familia": "montanha",
+      "setores": [
+        "thargrid"
+      ],
+      "lugar_id": "lugar-visual:montanhas-thargrid",
+      "paginas": [
+        6,
+        12,
+        13
+      ],
+      "descricao": "Cadeia setentrional com cavernas, picos, vales, platôs e passagens.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:picos-nevados",
+      "nome": "Picos nevados dos gigantes do gelo",
+      "familia": "montanha",
+      "setores": [
+        "thargrid"
+      ],
+      "lugar_id": "lugar-visual:montanhas-thargrid",
+      "paginas": [
+        13
+      ],
+      "descricao": "Alguns picos possuem neve durante quase todo o ano e vigias dos gigantes.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:falésias",
+      "nome": "Escarpas, desfiladeiros e cavernas altas",
+      "familia": "montanha",
+      "setores": [
+        "thargrid"
+      ],
+      "lugar_id": "lugar-visual:montanhas-thargrid",
+      "paginas": [
+        12,
+        13
+      ],
+      "descricao": "Transição entre altitudes gigantes e regiões subterrâneas anãs.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:eldroth",
+      "nome": "Floresta escurecida de Eldroth",
+      "familia": "floresta",
+      "setores": [
+        "eldroth"
+      ],
+      "lugar_id": "lugar-visual:floresta-eldroth",
+      "paginas": [
+        5,
+        18
+      ],
+      "descricao": "Floresta viva ocupada e vigiada por forças feéricas, com resistência clandestina.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:ironwood",
+      "nome": "Floresta ranger de Ironwood",
+      "familia": "floresta",
+      "setores": [
+        "thargrid"
+      ],
+      "lugar_id": "lugar-visual:ironwood",
+      "paginas": [
+        6,
+        18
+      ],
+      "descricao": "Floresta ao sul das montanhas, com resistência ranger; divisa com Eldroth não documentada.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:bosques-gnomicos",
+      "nome": "Bosques e refúgios gnômicos dispersos",
+      "familia": "floresta",
+      "setores": [],
+      "lugar_id": null,
+      "paginas": [
+        20
+      ],
+      "descricao": "Presença em Ironwood, limites de Eldroth e bosques remotos; sem área contínua identificada.",
+      "estado": "transversal",
+      "precisao": "transversal_nao_localizado"
+    },
+    {
+      "id": "amb:caatinga",
+      "nome": "Caatinga do Além Sul",
+      "familia": "seco",
+      "setores": [
+        "caatinga"
+      ],
+      "lugar_id": "lugar-visual:caatinga-bioma",
+      "paginas": [
+        5,
+        12
+      ],
+      "descricao": "Terras áridas e comunidades dispersas, sem fronteiras ou fontes de água individualizadas.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:pradarias",
+      "nome": "Pradarias agrícolas próximas ao mar",
+      "familia": "seco",
+      "setores": [
+        "costa"
+      ],
+      "lugar_id": "lugar-visual:portomonte",
+      "paginas": [
+        5
+      ],
+      "descricao": "Cultivos costeiros expostos a incursões vindas da Caatinga.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:grama",
+      "nome": "Campos agrícolas de Grama-Cortada",
+      "familia": "seco",
+      "setores": [
+        "grama"
+      ],
+      "lugar_id": "lugar-visual:grama-cortada",
+      "paginas": [
+        18,
+        19
+      ],
+      "descricao": "Cultivo e armazenagem hobbits documentados, clima e geolocalização não definidos.",
+      "estado": "clima_indeterminado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:rio",
+      "nome": "Curso continental do Rio Ancestral",
+      "familia": "rio",
+      "setores": [
+        "rio"
+      ],
+      "lugar_id": "lugar-visual:rio-ancestral",
+      "paginas": [
+        4,
+        5
+      ],
+      "descricao": "Principal rio de circulação, termina no Abismo; nascentes e tributários desconhecidos.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:ilha-lunar",
+      "nome": "Ilha do Templo da Lua",
+      "familia": "rio",
+      "setores": [
+        "rio"
+      ],
+      "lugar_id": "lugar-visual:templo-da-lua",
+      "paginas": [
+        4
+      ],
+      "descricao": "Ilha no Rio Ancestral, trecho do curso e margens não definidos.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:abismo",
+      "nome": "Queda e margens do Abismo",
+      "familia": "rio",
+      "setores": [
+        "foz"
+      ],
+      "lugar_id": "lugar-visual:abismo",
+      "paginas": [
+        5,
+        6,
+        8
+      ],
+      "descricao": "Queda colossal no oeste e ruptura entre mundos; sem acesso seguro documentado.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:penhascos",
+      "nome": "Penhascos de Portomonte",
+      "familia": "litoral",
+      "setores": [
+        "costa"
+      ],
+      "lugar_id": "lugar-visual:portomonte",
+      "paginas": [
+        5,
+        12
+      ],
+      "descricao": "Assentamento entre penhascos, com agricultura ligada à purificação ritual.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:ilhas",
+      "nome": "Arquipélagos monásticos",
+      "familia": "litoral",
+      "setores": [
+        "costa"
+      ],
+      "lugar_id": "lugar-visual:ilhas-monasticas",
+      "paginas": [
+        5,
+        14,
+        15
+      ],
+      "descricao": "Ilhas tortles e tabaxis com portos e comunidades, sem nomes individuais.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:cavernas-kuotoa",
+      "nome": "Cavernas costeiras Kuo-Toa",
+      "familia": "litoral",
+      "setores": [
+        "costa"
+      ],
+      "lugar_id": "lugar-visual:cavernas-kuo-toa",
+      "paginas": [
+        5,
+        14
+      ],
+      "descricao": "Habitat cavernoso costeiro; cidades submersas são referências separadas.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:mar-rubro",
+      "nome": "Mar de Sangue",
+      "familia": "oceano",
+      "setores": [
+        "costa"
+      ],
+      "lugar_id": "lugar-visual:mar-de-sangue",
+      "paginas": [
+        5,
+        14,
+        15
+      ],
+      "descricao": "Águas corrompidas, violentas, com limite variável para o oceano azul.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:abissais-mar",
+      "nome": "Profundezas oceânicas dos Abissais marinhos",
+      "familia": "oceano",
+      "setores": [
+        "costa"
+      ],
+      "lugar_id": "lugar-visual:mar-de-sangue",
+      "paginas": [
+        14
+      ],
+      "descricao": "Cavernas, santuários e cidades submarinas de um povo não demoníaco.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:azuis",
+      "nome": "Águas azuis do oceano aberto",
+      "familia": "oceano",
+      "setores": [
+        "azuis"
+      ],
+      "lugar_id": "lugar-visual:aguas-azuis",
+      "paginas": [
+        15,
+        24
+      ],
+      "descricao": "Habitat de tritões e sereias, situado além do mar corrompido.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:recifes",
+      "nome": "Recifes e cânions submarinos",
+      "familia": "oceano",
+      "setores": [
+        "azuis"
+      ],
+      "lugar_id": "lugar-visual:aguas-azuis",
+      "paginas": [
+        15
+      ],
+      "descricao": "Cidades não nomeadas entre recifes e cânions; algumas sob ilhas monásticas.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:anões-subsolo",
+      "nome": "Cavernas e ossos de Thargrid",
+      "familia": "subsolo",
+      "setores": [
+        "thargrid"
+      ],
+      "lugar_id": "lugar-visual:reino-sob-montanha",
+      "paginas": [
+        12,
+        13,
+        20
+      ],
+      "descricao": "Complexos subterrâneos de anões em cavernas naturais e ossos fossilizados.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:gnomos-subsolo",
+      "nome": "Enclaves dos gnomos das profundezas",
+      "familia": "subsolo",
+      "setores": [
+        "thargrid"
+      ],
+      "lugar_id": "lugar-visual:montanhas-thargrid",
+      "paginas": [
+        20
+      ],
+      "descricao": "Níveis mais profundos e túneis secretos, sem rede continental demonstrada.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:forjas",
+      "nome": "Profundezas quentes e forjas de gigantes",
+      "familia": "subsolo",
+      "setores": [
+        "thargrid"
+      ],
+      "lugar_id": "lugar-visual:montanhas-thargrid",
+      "paginas": [
+        13
+      ],
+      "descricao": "Algumas famílias de gigantes do fogo ocupam profundezas quentes de Thargrid.",
+      "estado": "documentado",
+      "precisao": "regiao_sem_coordenadas"
+    },
+    {
+      "id": "amb:fossil-interior",
+      "nome": "Cavernas ancestralmente profundas",
+      "familia": "subsolo",
+      "setores": [],
+      "lugar_id": null,
+      "paginas": [
+        9,
+        20
+      ],
+      "descricao": "Estratos desconhecidos nos ossos de Golzdov, sem cartografia contínua.",
+      "estado": "transversal",
+      "precisao": "transversal_nao_localizado"
+    }
+  ],
+  "relacoes": [
+    {
+      "id": "ambr:rio-abismo",
+      "de": "amb:rio",
+      "para": "amb:abismo",
+      "tipo": "termina_em",
+      "paginas": [
+        4,
+        5
+      ],
+      "descricao": "O Rio Ancestral se precipita no Abismo.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:thargrid-ironwood",
+      "de": "amb:thargrid",
+      "para": "amb:ironwood",
+      "tipo": "ao_norte_de",
+      "paginas": [
+        6
+      ],
+      "descricao": "Ironwood fica ao sul das montanhas; não se infere fronteira política.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:thargrid-picos-nevados",
+      "de": "amb:thargrid",
+      "para": "amb:picos-nevados",
+      "tipo": "inclui",
+      "paginas": [
+        13
+      ],
+      "descricao": "Picos nevados integram o maciço.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:thargrid-falésias",
+      "de": "amb:thargrid",
+      "para": "amb:falésias",
+      "tipo": "inclui",
+      "paginas": [
+        12,
+        13
+      ],
+      "descricao": "Falésias e desfiladeiros integram o maciço.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:thargrid-anões-subsolo",
+      "de": "amb:thargrid",
+      "para": "amb:anões-subsolo",
+      "tipo": "acima_de",
+      "paginas": [
+        12,
+        13
+      ],
+      "descricao": "Cidades anãs estão no subsolo das montanhas.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:anões-subsolo-gnomos-subsolo",
+      "de": "amb:anões-subsolo",
+      "para": "amb:gnomos-subsolo",
+      "tipo": "profundidade_relativa",
+      "paginas": [
+        20
+      ],
+      "descricao": "Enclaves svirfneblin existem abaixo de regiões anãs.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:anões-subsolo-forjas",
+      "de": "amb:anões-subsolo",
+      "para": "amb:forjas",
+      "tipo": "subambiente",
+      "paginas": [
+        13
+      ],
+      "descricao": "Forjas de gigantes do fogo ocupam profundezas quentes.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:caatinga-pradarias",
+      "de": "amb:caatinga",
+      "para": "amb:pradarias",
+      "tipo": "conflito_de_borda",
+      "paginas": [
+        5
+      ],
+      "descricao": "Incursões não implicam fronteira cartográfica conhecida.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:penhascos-pradarias",
+      "de": "amb:penhascos",
+      "para": "amb:pradarias",
+      "tipo": "paisagens_costeiras",
+      "paginas": [
+        5
+      ],
+      "descricao": "Ambientes do litoral, sem continuidade estabelecida.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:ilhas-recifes",
+      "de": "amb:ilhas",
+      "para": "amb:recifes",
+      "tipo": "abaixo_em_parte",
+      "paginas": [
+        15
+      ],
+      "descricao": "Algumas cidades marinhas situam-se sob as ilhas monásticas.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:cavernas-kuotoa-mar-rubro",
+      "de": "amb:cavernas-kuotoa",
+      "para": "amb:mar-rubro",
+      "tipo": "contato_costeiro",
+      "paginas": [
+        5,
+        14
+      ],
+      "descricao": "Cavernas de Kuo-Toa na costa do Mar de Sangue.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:abissais-mar-mar-rubro",
+      "de": "amb:abissais-mar",
+      "para": "amb:mar-rubro",
+      "tipo": "profundidades",
+      "paginas": [
+        14
+      ],
+      "descricao": "Abissais marinhos ocupam profundas águas ao sul.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:mar-rubro-azuis",
+      "de": "amb:mar-rubro",
+      "para": "amb:azuis",
+      "tipo": "fronteira_movel",
+      "paginas": [
+        15
+      ],
+      "descricao": "Limite varia com correntes, tempestades e fenômenos mágicos.",
+      "estado": "fronteira_sem_geometria"
+    },
+    {
+      "id": "ambr:azuis-recifes",
+      "de": "amb:azuis",
+      "para": "amb:recifes",
+      "tipo": "inclui",
+      "paginas": [
+        15
+      ],
+      "descricao": "Recifes e cânions marinhos nas águas azuis.",
+      "estado": "documentado_sem_geometria"
+    },
+    {
+      "id": "ambr:rio-ilha-lunar",
+      "de": "amb:rio",
+      "para": "amb:ilha-lunar",
+      "tipo": "contem",
+      "paginas": [
+        4
+      ],
+      "descricao": "Ilha do Templo da Lua no Rio Ancestral sem trecho definido.",
+      "estado": "documentado_sem_geometria"
+    }
+  ],
+  "lacunas": [
+    {
+      "id": "amb-gap:shadar",
+      "tema": "Bioma natural de Shadar-Riverie",
+      "setores": [
+        "shadar"
+      ],
+      "paginas": [
+        6
+      ],
+      "limite": "Centro político descrito sem paisagem física individualizada.",
+      "estado": "pendente",
+      "resolvida": false
+    },
+    {
+      "id": "amb-gap:grama",
+      "tema": "Clima e relevo do Condado de Grama-Cortada",
+      "setores": [
+        "grama"
+      ],
+      "paginas": [
+        18,
+        19
+      ],
+      "limite": "A agricultura não define a geografia ou clima.",
+      "estado": "pendente",
+      "resolvida": false
+    },
+    {
+      "id": "amb-gap:nascente",
+      "tema": "Nascentes e afluentes do Rio Ancestral",
+      "setores": [
+        "rio"
+      ],
+      "paginas": [
+        4,
+        5
+      ],
+      "limite": "Somente o eixo continental e a queda são conhecidos.",
+      "estado": "pendente",
+      "resolvida": false
+    },
+    {
+      "id": "amb-gap:florestas",
+      "tema": "Fronteira Ironwood–Eldroth",
+      "setores": [
+        "thargrid",
+        "eldroth"
+      ],
+      "paginas": [
+        5,
+        6,
+        18
+      ],
+      "limite": "Cooperação e parentesco não determinam contiguidade.",
+      "estado": "pendente",
+      "resolvida": false
+    },
+    {
+      "id": "amb-gap:subsolo",
+      "tema": "Continuidade dos sistemas subterrâneos",
+      "setores": [
+        "thargrid"
+      ],
+      "paginas": [
+        12,
+        20
+      ],
+      "limite": "Cavernas e túneis não formam necessariamente um único sistema.",
+      "estado": "pendente",
+      "resolvida": false
+    },
+    {
+      "id": "amb-gap:ilhas",
+      "tema": "Identificação das ilhas tortles/tabaxis",
+      "setores": [
+        "costa"
+      ],
+      "paginas": [
+        5,
+        14
+      ],
+      "limite": "Arquipélagos conhecidos apenas coletivamente.",
+      "estado": "pendente",
+      "resolvida": false
+    },
+    {
+      "id": "amb-gap:mar-cidades",
+      "tema": "Nomes e posição das cidades submarinas",
+      "setores": [
+        "azuis"
+      ],
+      "paginas": [
+        15
+      ],
+      "limite": "Cidades marinhas não individualizadas.",
+      "estado": "pendente",
+      "resolvida": false
+    },
+    {
+      "id": "amb-gap:fronteira",
+      "tema": "Linha móvel entre águas vermelhas e azuis",
+      "setores": [
+        "costa",
+        "azuis"
+      ],
+      "paginas": [
+        15
+      ],
+      "limite": "Não desenhar linha marítima fixa.",
+      "estado": "pendente",
+      "resolvida": false
+    },
+    {
+      "id": "amb-gap:agua-caatinga",
+      "tema": "Pontos de água e trajetos da Caatinga",
+      "setores": [
+        "caatinga"
+      ],
+      "paginas": [
+        5,
+        12
+      ],
+      "limite": "Nenhum ponto de água individual aprovado.",
+      "estado": "pendente",
+      "resolvida": false
+    },
+    {
+      "id": "amb-gap:passagem-abismo",
+      "tema": "Travessia Abismo–cauda",
+      "setores": [
+        "foz",
+        "cauda"
+      ],
+      "paginas": [
+        5,
+        6
+      ],
+      "limite": "Não há ponte ou caminho seguro descrito.",
+      "estado": "pendente",
+      "resolvida": false
+    },
+    {
+      "id": "amb-gap:cidades-kuotoa",
+      "tema": "Distinção entre cavernas e cidades submersas",
+      "setores": [
+        "costa"
+      ],
+      "paginas": [
+        5,
+        14
+      ],
+      "limite": "Não há posições, número ou ligações comprovadas.",
+      "estado": "pendente",
+      "resolvida": false
+    },
+    {
+      "id": "amb-gap:cranio",
+      "tema": "Profundidade da cabeça submersa",
+      "setores": [
+        "garganta"
+      ],
+      "paginas": [
+        2,
+        4
+      ],
+      "limite": "Cotas e câmaras não estão mapeadas.",
+      "estado": "pendente",
+      "resolvida": false
+    }
+  ],
+  "observacoes": [
+    "Shadar-Riverie permanece sem ambiente natural identificado.",
+    "A cauda possui marco anatômico, mas seu bioma específico não foi descrito.",
+    "Abissais marinhos não pertencem à natureza demoníaca do Abismo.",
+    "A divisão do Mar de Sangue e das águas azuis é móvel."
+  ],
+  "regras": [
+    "Não criar cidades, flora, fauna, recursos ou rotas neste nível.",
+    "Não transformar bosques distantes num bioma conectado.",
+    "Não atribuir clima nem altitude a Grama-Cortada.",
+    "Não inferir um túnel subterrâneo que atravessa o continente."
+  ]
+}

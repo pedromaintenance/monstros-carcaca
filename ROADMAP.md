@@ -677,3 +677,12 @@ Fontes: [ATLAS_REDES_HISTORICAS_CICLO33.md](docs/ATLAS_REDES_HISTORICAS_CICLO33.
 - **Próximo objetivo macro:** revisão da topologia Shadar/Gualápolis/Boca, posição de Grama-Cortada e limites relativos Ironwood/Thargrid/Eldroth; manter essas questões pendentes até decisão de autoria.
 
 Veja [ATLAS_GEOGRAFIA_FISICA_CICLO34.md](docs/ATLAS_GEOGRAFIA_FISICA_CICLO34.md).
+
+
+## Ciclo XXXV — Ambientes naturais do continente
+
+- **Implementado:** 8 famílias ambientais, 28 grandes ambientes, 15 relações entre paisagens, 12 lacunas territoriais e matriz de cobertura dos 11 setores.
+- **Salvaguardas:** subsolo gnômico não equivale a rede de túneis universal; fronteira mar vermelho/azul permanece variável; bioma de Shadar e clima de Grama-Cortada seguem desconhecidos; Abissais marinhos não são demônios.
+- **Próximo ciclo macro:** compilar relações entre fronteiras naturais e zonas de influência histórica sem inventar estradas, soberanias ou geometrias.
+
+Referência: [ATLAS_MACROAMBIENTES_CICLO35.md](docs/ATLAS_MACROAMBIENTES_CICLO35.md).

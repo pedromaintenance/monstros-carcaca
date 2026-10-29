@@ -8,6 +8,7 @@ import {buildAtlasTree} from "../site/atlas/atlas-tree.mjs";
 import {buildMacroIndex} from "../site/atlas/macro-atlas.mjs";
 import {buildMacroNetworks} from "../site/atlas/macro-networks.mjs";
 import {buildPhysicalGeography} from "../site/atlas/physical-geography.mjs";
+import {buildMacroEnvironments} from "../site/atlas/macro-environments.mjs";
 const file=p=>JSON.parse(readFileSync(new URL("../"+p,import.meta.url),"utf8"));
 const source={
   lore:file("data/lore/hack-carcaca-dw-indice-tematico.json"),
@@ -237,6 +238,82 @@ test("Atlas XXXIV: interface física do Pages é carregada e tem sintaxe de mód
   const dir=mkdtempSync(join(tmpdir(),"phys-carcaca-"));
   try{
     const path=join(dir,"interface.mjs");writeFileSync(path,frontend,"utf8");
+    execFileSync(process.execPath,["--check",path],{stdio:"pipe"});
+  }finally{rmSync(dir,{recursive:true,force:true})}
+});
+
+const environmentFile=file("data/atlas/macroambientes-ciclo35.json");
+const environments=buildMacroEnvironments(environmentFile,macro,atlas);
+test("Atlas XXXV: oito famílias e ambientes regionais com proveniência",()=>{
+  assert.equal(environments.totais.familias,8);
+  assert.equal(environments.totais.ambientes,28);
+  assert.equal(environments.totais.relacoes,15);
+  assert.equal(environments.totais.lacunas,12);
+  assert.equal(environments.totais.semLocalizacao,4);
+  assert.equal(environments.totais.setoresSemDescricao,1);
+  assert.equal(environmentFile.aprovacao_autoral,false);
+  assert.equal(environments.altera_canon,false);
+  assert.equal(environments.cobertura.length,11);
+  assert.ok(environments.ambientes.every(h=>h.paginas.length>0));
+});
+test("Atlas XXXV: Shadar permanece sem bioma inventado, Grama-Cortada sem clima inferido",()=>{
+  const shadar=environments.cobertura.find(x=>x.setor==="shadar");
+  assert.ok(shadar.semAmbienteDescrito);
+  assert.equal(shadar.ambientes,0);
+  const grama=environments.ambientes.find(x=>x.id==="amb:grama");
+  assert.equal(grama.estado,"clima_indeterminado");
+  assert.equal(grama.lugar_id,"lugar-visual:grama-cortada");
+  assert.ok(environments.lacunas.some(g=>g.id==="amb-gap:shadar"&&!g.resolvida));
+  assert.ok(environments.lacunas.some(g=>g.id==="amb-gap:grama"&&!g.resolvida));
+});
+test("Atlas XXXV: há ambientes em todos os grandes sistemas físicos documentados",()=>{
+  const families=new Set(environments.ambientes.map(h=>h.familia));
+  assert.equal(families.size,8);
+  const sectors=new Set(environments.ambientes.flatMap(h=>h.setores));
+  assert.equal(sectors.size,10);
+  assert.ok(sectors.has("garganta")&&sectors.has("rio")&&sectors.has("caatinga")&&
+    sectors.has("eldroth")&&sectors.has("foz")&&sectors.has("thargrid")&&
+    sectors.has("costa")&&sectors.has("azuis")&&sectors.has("grama")&&sectors.has("cauda"));
+});
+test("Atlas XXXV: fronteira marítima é móvel e os Abissais marinhos não são demônios",()=>{
+  const border=environments.relacoes.find(x=>x.tipo==="fronteira_movel");
+  assert.equal(border.estado,"fronteira_sem_geometria");
+  assert.ok(new Set([border.de,border.para]).has("amb:mar-rubro"));
+  assert.ok(new Set([border.de,border.para]).has("amb:azuis"));
+  const sea=environments.ambientes.find(x=>x.id==="amb:abissais-mar");
+  assert.match(sea.descricao,/não demoníaco/i);
+  const underground=environments.ambientes.find(x=>x.id==="amb:gnomos-subsolo");
+  assert.match(underground.descricao,/sem rede continental demonstrada/);
+  assert.ok(!JSON.stringify(environmentFile).match(/"latitude"\s*:|"longitude"\s*:/));
+});
+test("Atlas XXXV: nenhuma proposta vira lugar canônico ou relação inventada",()=>{
+  const bad=structuredClone(environmentFile);
+  bad.ambientes[0].lugar_id="lugar-visual:inexistente";
+  assert.throws(()=>buildMacroEnvironments(bad,macro,atlas),/Lugar associado inexistente/);
+  const bad2=structuredClone(environmentFile);
+  bad2.relacoes[0].para="amb:nao-cadastrado";
+  assert.throws(()=>buildMacroEnvironments(bad2,macro,atlas),/marco inválido/);
+  const bad3=structuredClone(environmentFile);
+  bad3.relacoes.find(e=>e.tipo==="fronteira_movel").estado="documentado_sem_geometria";
+  assert.throws(()=>buildMacroEnvironments(bad3,macro,atlas),/Fronteira móvel petrificada/);
+  const bad4=structuredClone(environmentFile);
+  bad4.lacunas[0].resolvida=true;
+  assert.throws(()=>buildMacroEnvironments(bad4,macro,atlas),/resolvida sem revisão/);
+});
+test("Atlas XXXV: interface e build Pages incluem fonte de macropaisagens",()=>{
+  const html=readFileSync(new URL("../site/atlas/index.html",import.meta.url),"utf8");
+  assert.match(html,/id="macroEnvironments"/);
+  assert.match(html,/macro-environments-ui\.mjs/);
+  assert.match(html,/buildMacroEnvironments\(loaded\.environments,state\.macro,state\.atlas\)/);
+  assert.match(html,/initMacroEnvironments\(\$\("macroEnvironments"\),state\.environments,macroDiveInto\)/);
+  const ui=readFileSync(new URL("../site/atlas/macro-environments-ui.mjs",import.meta.url),"utf8");
+  assert.match(ui,/data-env-family/);
+  assert.match(ui,/data-env-view/);
+  const wf=readFileSync(new URL("../.github/workflows/publicar-atlas-pages.yml",import.meta.url),"utf8");
+  assert.match(wf,/data\/atlas\/macroambientes-ciclo35\.json/);
+  const dir=mkdtempSync(join(tmpdir(),"environs-"));
+  try{
+    const path=join(dir,"env.mjs");writeFileSync(path,ui,"utf8");
     execFileSync(process.execPath,["--check",path],{stdio:"pipe"});
   }finally{rmSync(dir,{recursive:true,force:true})}
 });

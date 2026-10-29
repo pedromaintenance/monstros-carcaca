@@ -616,3 +616,8 @@ Na [visão macrorregional do Atlas](https://pedromaintenance.github.io/monstros-
 ### Atlas da Carcaça — Geografia física de Golzdov (Ciclo XXXIV)
 
 A [visão macro no Pages](https://pedromaintenance.github.io/monstros-carcaca/atlas/) inclui agora um painel de **orientação continental e anatomia do dragão**, com 20 marcos, 12 relações espaciais e nove decisões geográficas pendentes. A [documentação do ciclo](docs/ATLAS_GEOGRAFIA_FISICA_CICLO34.md) distingue direções cardeais, posições relativas e marcos sem localização, evitando falsa precisão. [Dados estruturados](data/atlas/geografia-fisica-ciclo34.json). A árvore e a cronologia continuam disponíveis, sem canonização automática.
+
+
+### Atlas Continental — Macropaisagens e habitats (Ciclo XXXV)
+
+O [Atlas no GitHub Pages](https://pedromaintenance.github.io/monstros-carcaca/atlas/) inclui agora um **inventário macroambiental**: oito famílias de paisagens, 28 grandes ambientes, 15 relações e 12 lacunas rastreáveis ao manuscrito. A [documentação](docs/ATLAS_MACROAMBIENTES_CICLO35.md) e os [dados estruturados](data/atlas/macroambientes-ciclo35.json) não aprovam novas cidades, rotas ou criaturas e não atribuem um bioma especulativo a Shadar-Riverie.
