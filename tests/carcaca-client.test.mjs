@@ -82,6 +82,8 @@ const fixtures={
     hack_artificer_movement_indexes:"hack-artificer-movement-indexes.json",
     hack_mercenary_movements:"hack-mercenary-movements.json",
     hack_mercenary_movement_indexes:"hack-mercenary-movement-indexes.json",
+    river_gm_toolkit:"river-gm-toolkit.json",
+    river_gm_toolkit_indexes:"river-gm-toolkit-indexes.json",
     moon_temple_severina:"moon-temple-severina.json",
     moon_temple_severina_indexes:"moon-temple-severina-indexes.json",
     river_drakport_social:"river-drakport-social.json",
@@ -196,6 +198,55 @@ const fixtures={
   ],
   "hack-people-movement-indexes.json":{by_grupo:{"HUMANOS":["movimento-povo:paragrafo-827"],
      "ANÕES DE THARGRID":["movimento-povo:paragrafo-849"]}},
+  "river-gm-toolkit.json":{
+    "estado":"ferramenta_mesa_nao_canonica","aprovacao_autoral":false,
+    "mutacao_canonica":false,"revolta_drakport_ocorreu":false,
+    "eventos_ocorridos":[],"resultados_sessoes":[],
+    "fatos_base":[{"id":"mesa-xxx:fato:01","pagina":4,"afirmacao":"O Rio Ancestral é eixo de conquista.","aplicou_novo_canon":false}],
+    "procedimentos":[{"id":"mesa-xxx:procedimento:testemunhos","nome":"Ouvir sem impor consenso",
+      "passos_de_mesa":"Recolha versões conflitantes","executou":false}],
+    "evidencias":[
+      {"id":"mesa-xxx:evidencia:navegante","nome":"navegante",
+       "tipo":"relato_hipotetico","pagina":null,
+       "conteudo":"Um condutor viu a corrente mudar após um sino.",
+       "aconteceu_em_campanha":false},
+      {"id":"mesa-xxx:evidencia:duas-margens","nome":"duas margens",
+       "tipo":"relato_hipotetico","pagina":null,
+       "conteudo":"Duas testemunhas discordam sobre a água.",
+       "aconteceu_em_campanha":false},
+      {"id":"mesa-xxx:evidencia:templo-ilha","nome":"templo ilha",
+       "tipo":"documentado","pagina":4,"conteudo":"O Templo da Lua está numa ilha.",
+       "aconteceu_em_campanha":false}
+    ],
+    "cenas":[{"id":"mesa-xxx:cena:aguas-contraditorias",
+      "nome":"O rio mudou ou disseram que mudou?",
+      "abertura":"Uma tripulação hipotética traz testemunhos diferentes.",
+      "pergunta_de_investigacao":"O que foi realmente visto?",
+      "decisao_aberta":"O grupo decide se investiga.",
+      "evidencias_sugeridas":["mesa-xxx:evidencia:navegante","mesa-xxx:evidencia:duas-margens"],
+      "procedimento_id":"mesa-xxx:procedimento:testemunhos",
+      "consequencia_id":"mesa-xxx:consequencia:efeito",
+      "estado":"cena_possivel_nao_ocorrida","ocorreu":false,"desfecho_fixo":false}],
+    "consequencias":[{"id":"mesa-xxx:consequencia:efeito",
+      "condicao_de_mesa":"Caso haja observação independente",
+      "possibilidade_condicional":"O mestre pode registrar o que aconteceu.",
+      "proibicao":"Não inferir regra de magia.",
+      "estado":"ramo_condicional_nao_executado","efeito_aplicado":false,
+      "gatilho_disparado":false}],
+    "guardas":[{"id":"mesa-xxx:guarda:canon","nome":"Não substituir manuscrito",
+      "sempre_ativa":true,"aprovacao_autoral_nao_suprida":true}],
+    "perguntas_abertas":[{"id":"mesa-xxx:pergunta:ritual",
+      "pergunta":"O que foi observado?","resposta_autoral":null}]
+  },
+  "river-gm-toolkit-indexes.json":{
+    "by_tipo_evidencia":{"documentado":["mesa-xxx:evidencia:templo-ilha"],
+      "relato_hipotetico":["mesa-xxx:evidencia:navegante","mesa-xxx:evidencia:duas-margens"]},
+    "by_cena":{"mesa-xxx:cena:aguas-contraditorias":{
+       "evidencias":["mesa-xxx:evidencia:navegante","mesa-xxx:evidencia:duas-margens"],
+       "procedimento_id":"mesa-xxx:procedimento:testemunhos",
+       "consequencia_id":"mesa-xxx:consequencia:efeito"}},
+    "by_pagina":{"4":["mesa-xxx:fato:01"]}
+  },
   "moon-temple-severina.json":{
     "estado":"investigacao_ritual_nao_canonica",
     "divindade_titular_confirmada":null,"alcance_ritual_confirmado":null,
@@ -2930,4 +2981,39 @@ test("Ciclo XXIX: Templo da Lua tem modelos não adotados e divindade desconheci
   assert.equal(await atlas.previewMoonTempleRitualModel("worldbuilding-xxix:modelos_do_rito:nenhum"),null);
   assert.equal(await atlas.previewMoonTempleRitualModel("worldbuilding-xxix:interfaces_civis:recusa"),null);
   assert.equal(await atlas.getMoonTempleSeverinaEntry("worldbuilding-xxix:inexistente"),null);
+});
+
+test("Ciclo XXX: pacote de mestre preserva graus de prova e não executa cena",async()=>{
+  const d=await atlas.getRiverGMToolkit();
+  assert.equal(d.estado,"ferramenta_mesa_nao_canonica");
+  assert.equal(d.revolta_drakport_ocorreu,false);
+  assert.equal(d.mutacao_canonica,false);
+  assert.deepEqual(d.eventos_ocorridos,[]);
+  const ix=await atlas.getRiverGMToolkitIndexes();
+  assert.equal(ix.by_tipo_evidencia.documentado.length,1);
+  assert.equal((await atlas.searchRiverGMToolkit({categoria:"evidencias"})).length,3);
+  assert.equal((await atlas.searchRiverGMToolkit({categoria:"evidencias",tipo:"documentado"})).length,1);
+  assert.equal((await atlas.searchRiverGMToolkit({query:"testemunhos"})).length,1);
+  assert.equal((await atlas.getRiverGMToolkitEntry("mesa-xxx:evidencia:navegante")).tipo,"relato_hipotetico");
+  const p=await atlas.buildRiverGMSessionPacket({
+    sceneId:"mesa-xxx:cena:aguas-contraditorias",
+    extraEvidenceIds:["mesa-xxx:evidencia:templo-ilha","mesa-xxx:evidencia:navegante"]
+  });
+  assert.equal(p.estado,"pacote_de_mesa_sem_execucao");
+  assert.equal(p.evidencias.length,3);
+  assert.equal(p.evidencias[2].tipo,"documentado");
+  assert.equal(p.cena.ocorreu,false);
+  assert.equal(p.consequencia_condicional.efeito_aplicado,false);
+  assert.equal(p.canon_alterado,false);
+  assert.equal(p.desfecho_decidido,false);
+  assert.deepEqual(p.registro_de_sessao,[]);
+  assert.equal(p.guardas[0].sempre_ativa,true);
+  p.cena.nome="Alterada apenas no pacote";
+  assert.notEqual(d.cenas[0].nome,p.cena.nome);
+  assert.equal(await atlas.buildRiverGMSessionPacket({sceneId:"mesa-xxx:cena:nao-existe"}),null);
+  assert.equal(await atlas.buildRiverGMSessionPacket({sceneId:"mesa-xxx:cena:aguas-contraditorias",
+    extraEvidenceIds:["mesa-xxx:evidencia:inexistente"]}),null);
+  await assert.rejects(()=>atlas.buildRiverGMSessionPacket({sceneId:"mesa-xxx:cena:aguas-contraditorias",
+    extraEvidenceIds:"não-lista"}),TypeError);
+  assert.equal(await atlas.getRiverGMToolkitEntry("mesa-xxx:inexistente"),null);
 });
