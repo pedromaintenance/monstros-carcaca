@@ -1,0 +1,745 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Circulação material e dependências continentais — Ciclo XLI",
+  "estado": "rede_material_documental_qualitativa",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "representacao": "relacoes_sem_rota_ou_volume",
+  "fontes": [
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+    "data/atlas/redes-historicas-ciclo33.json",
+    "data/atlas/macrorregioes-carcaca.json",
+    "data/atlas/cronocartografia-ciclo40.json",
+    "data/atlas/hidrografia-continental-ciclo39.json"
+  ],
+  "criterio": "Um vínculo registra relação documental, não uma via de transporte ou entrega universal. Demanda, extração coercitiva, apoio, migração e comércio são categorias diferentes. O verso de um vínculo não se deduz automaticamente.",
+  "nodos": [
+    {
+      "id": "fluxo:xli:mercados-rio",
+      "titulo": "Centros comerciais do Rio Ancestral",
+      "setor": "rio",
+      "funcao": "circulacao",
+      "ref_rede": "rede-xxxiii:rio",
+      "ref_esfera": null,
+      "paginas": [
+        4,
+        9
+      ],
+      "evidencia": "O Rio Ancestral sustenta comércio, cidades e circulação, mas não tem circuito de portos individualizado.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:corte-rio",
+      "titulo": "Aparelho tributário da Corte ao longo do rio",
+      "setor": "rio",
+      "funcao": "extracao",
+      "ref_rede": "rede-xxxiii:corte",
+      "ref_esfera": "esfera-xxxiii:02",
+      "paginas": [
+        4,
+        7
+      ],
+      "evidencia": "Casas shadow fey controlam postos, tributos e rotas de extração; não se conhece a repartição dos tributos.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:drakport",
+      "titulo": "Drakport e o trabalho escravizado",
+      "setor": "rio",
+      "funcao": "extracao",
+      "ref_rede": "rede-xxxiii:rio",
+      "ref_esfera": "esfera-xxxiii:03",
+      "paginas": [
+        4,
+        9
+      ],
+      "evidencia": "A cidade é descrita como centro de escravidão e abastecimento humano e espiritual do regime.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:minas-thargrid",
+      "titulo": "Minas dos clãs de Thargrid",
+      "setor": "thargrid",
+      "funcao": "producao",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "ref_esfera": "esfera-xxxiii:06",
+      "paginas": [
+        12
+      ],
+      "evidencia": "O manuscrito diz que as minas anãs fornecem minério.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:forjas-thargrid",
+      "titulo": "Forjas dos clãs de Thargrid",
+      "setor": "thargrid",
+      "funcao": "transformacao",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "ref_esfera": "esfera-xxxiii:06",
+      "paginas": [
+        12
+      ],
+      "evidencia": "As forjas transformam minério em armas e ferramentas.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:armazens-thargrid",
+      "titulo": "Depósitos e provisões da resistência",
+      "setor": "thargrid",
+      "funcao": "armazenagem",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "ref_esfera": "esfera-xxxiii:06",
+      "paginas": [
+        12
+      ],
+      "evidencia": "Os depósitos anões armazenam provisões para a manutenção da resistência.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:rede-resistencia",
+      "titulo": "Rede descentralizada da resistência",
+      "setor": "thargrid",
+      "funcao": "distribuicao",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "ref_esfera": "esfera-xxxiii:06",
+      "paginas": [
+        7,
+        12
+      ],
+      "evidencia": "A resistência não possui comando único; comunidades dão abrigo, alimento, notícias e recrutas.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:ironwood",
+      "titulo": "Rangers de Ironwood",
+      "setor": "thargrid",
+      "funcao": "informacao",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "ref_esfera": "esfera-xxxiii:07",
+      "paginas": [
+        7,
+        18
+      ],
+      "evidencia": "Rangers atuam em pequenas unidades, por guerrilha, vigilância, mensageria e missões clandestinas.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:eldroth-druidas",
+      "titulo": "Círculos druídicos clandestinos de Eldroth",
+      "setor": "eldroth",
+      "funcao": "resistencia",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "ref_esfera": null,
+      "paginas": [
+        17,
+        18
+      ],
+      "evidencia": "Há círculos druídicos escondidos em Eldroth e contato com rangers de Ironwood.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:eldroth-refugiados",
+      "titulo": "Refugiados originários de Eldroth",
+      "setor": "eldroth",
+      "funcao": "deslocamento",
+      "ref_rede": "rede-xxxiii:refugio",
+      "ref_esfera": null,
+      "paginas": [
+        5,
+        17
+      ],
+      "evidencia": "Parte da população de Eldroth deslocou-se para Portomonte, Thargrid, arquipélagos ou comunidades dispersas.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:costa-refugios",
+      "titulo": "Assentamentos e refúgios da Costa Sul",
+      "setor": "costa",
+      "funcao": "acolhimento",
+      "ref_rede": "rede-xxxiii:refugio",
+      "ref_esfera": "esfera-xxxiii:12",
+      "paginas": [
+        5,
+        17
+      ],
+      "evidencia": "Há refugiados de Eldroth nos maiores assentamentos costeiros, mas o manuscrito não identifica trajetos.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:thargrid-refugios",
+      "titulo": "Acolhimento no Reino Sob a Montanha",
+      "setor": "thargrid",
+      "funcao": "acolhimento",
+      "ref_rede": "rede-xxxiii:refugio",
+      "ref_esfera": "esfera-xxxiii:06",
+      "paginas": [
+        6,
+        17
+      ],
+      "evidencia": "O Reino Sob a Montanha acolhe refugiados e o texto menciona deslocados de Eldroth em Thargrid.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:portomonte",
+      "titulo": "Portomonte, comércio e agricultura",
+      "setor": "costa",
+      "funcao": "comercio",
+      "ref_rede": "rede-xxxiii:alem-sul",
+      "ref_esfera": "esfera-xxxiii:12",
+      "paginas": [
+        5,
+        23
+      ],
+      "evidencia": "Portomonte é centro de comércio costeiro; Deméter permite agricultura por purificação local da água.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:fazendas-costa",
+      "titulo": "Pradarias cultivadas da Costa Sul",
+      "setor": "costa",
+      "funcao": "producao",
+      "ref_rede": "rede-xxxiii:alem-sul",
+      "ref_esfera": null,
+      "paginas": [
+        5
+      ],
+      "evidencia": "O manuscrito descreve cultivo nas pradarias costeiras e pilhagens vindas das terras áridas.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:caatinga-grupos",
+      "titulo": "Grupos das terras áridas",
+      "setor": "caatinga",
+      "funcao": "conflito",
+      "ref_rede": "rede-xxxiii:alem-sul",
+      "ref_esfera": "esfera-xxxiii:11",
+      "paginas": [
+        5,
+        12
+      ],
+      "evidencia": "Há incursões e pilhagens de grupos das terras áridas; isso não caracteriza todos os seus habitantes.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:ilhas-monasticas",
+      "titulo": "Comunidades tortles e tabaxis das ilhas",
+      "setor": "costa",
+      "funcao": "cultura-marinha",
+      "ref_rede": "rede-xxxiii:mar",
+      "ref_esfera": null,
+      "paginas": [
+        5,
+        14
+      ],
+      "evidencia": "Viagens sazonais coletam histórias e recursos; alguns membros trabalham como marinheiros.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:marinheiros-costa",
+      "titulo": "Navegadores e assentamentos da costa",
+      "setor": "costa",
+      "funcao": "circulacao",
+      "ref_rede": "rede-xxxiii:mar",
+      "ref_esfera": null,
+      "paginas": [
+        5,
+        14
+      ],
+      "evidencia": "O texto identifica marinheiros, comércio costeiro e viagens sazonais dos povos insulares.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:grama-cultivos",
+      "titulo": "Cultivos e despensas de Grama-Cortada",
+      "setor": "grama",
+      "funcao": "autossuficiencia",
+      "ref_rede": "rede-xxxiii:refugio",
+      "ref_esfera": null,
+      "paginas": [
+        18,
+        19
+      ],
+      "evidencia": "Comunidades hobbits praticam cultivo diversificado e mantêm despensas, mesmo quando grandes rotas são interrompidas.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:grama-fugitivos",
+      "titulo": "Fugitivos abrigados por hobbits",
+      "setor": "grama",
+      "funcao": "acolhimento",
+      "ref_rede": "rede-xxxiii:refugio",
+      "ref_esfera": null,
+      "paginas": [
+        19
+      ],
+      "evidencia": "A resistência hobbit esconde comida para fugitivos, oferece quartos e transporta cartas em sacos de farinha.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:svirfneblin",
+      "titulo": "Enclaves svirfneblin no subsolo",
+      "setor": "thargrid",
+      "funcao": "comercio-subterraneo",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "ref_esfera": null,
+      "paginas": [
+        20
+      ],
+      "evidencia": "Alguns enclaves trocam gemas e conhecimento subterrâneo com clãs anões; outros são independentes.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:claes-anoes",
+      "titulo": "Clãs anões parceiros do subsolo",
+      "setor": "thargrid",
+      "funcao": "comercio-subterraneo",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "ref_esfera": "esfera-xxxiii:06",
+      "paginas": [
+        20
+      ],
+      "evidencia": "Alguns clãs trocam metal trabalhado, alimento ou proteção militar com enclaves svirfneblin.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:comunidades-maritimas",
+      "titulo": "Comunidades costeiras sob pressão ritual e marítima",
+      "setor": "costa",
+      "funcao": "pressao",
+      "ref_rede": "rede-xxxiii:mar",
+      "ref_esfera": null,
+      "paginas": [
+        14
+      ],
+      "evidencia": "Há exigências de tributo para permitir pesca, navegação e passagem; pagamento efetivo não é individualizado.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:abissais-marinhos",
+      "titulo": "Poder marítimo dos Abissais",
+      "setor": "costa",
+      "funcao": "pressao",
+      "ref_rede": "rede-xxxiii:mar",
+      "ref_esfera": "esfera-xxxiii:13",
+      "paginas": [
+        14
+      ],
+      "evidencia": "Os Abissais marítimos exigem tributo e negociam proteção, mas não são demônios do Abismo ocidental.",
+      "coordenadas": null,
+      "capacidade": null
+    },
+    {
+      "id": "fluxo:xli:gnomos-cartografos",
+      "titulo": "Cartógrafos e mensageiros gnomos",
+      "setor": "rio",
+      "funcao": "informacao",
+      "ref_rede": "rede-xxxiii:rio",
+      "ref_esfera": null,
+      "paginas": [
+        19,
+        20
+      ],
+      "evidencia": "Seu conhecimento geográfico é disputado por Corte, mercadores e resistência; não há lista de contratos de prestação de serviços.",
+      "coordenadas": null,
+      "capacidade": null
+    }
+  ],
+  "vinculos": [
+    {
+      "id": "vinculo:xli:tributos-rio",
+      "de": "fluxo:xli:mercados-rio",
+      "para": "fluxo:xli:corte-rio",
+      "tipo": "tributacao",
+      "modalidade": "cobranca_documentada",
+      "ref_rede": "rede-xxxiii:rio",
+      "paginas": [
+        4,
+        7
+      ],
+      "evidencia": "O rio concentra sistemas de tributos e controle colonial; origem exata de cada arrecadação não é conhecida.",
+      "limite": "A relação é institucional entre centros fluviais e aparelho tributário, não um lote de mercadorias. ",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:drakport-coercao",
+      "de": "fluxo:xli:drakport",
+      "para": "fluxo:xli:corte-rio",
+      "tipo": "trabalho_forcado",
+      "modalidade": "abastecimento_documentado",
+      "ref_rede": "rede-xxxiii:rio",
+      "paginas": [
+        4
+      ],
+      "evidencia": "Drakport alimenta a estrutura de dominação por escravidão e abastecimento humano e espiritual.",
+      "limite": "Não quantificar pessoas, destinos, trabalhos, trajetos ou o significado físico de abastecimento espiritual.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:minerio-forjas",
+      "de": "fluxo:xli:minas-thargrid",
+      "para": "fluxo:xli:forjas-thargrid",
+      "tipo": "transformacao_mineral",
+      "modalidade": "transferencia_documentada",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "paginas": [
+        12
+      ],
+      "evidencia": "As minas fornecem minério e as forjas o convertem em armas e ferramentas.",
+      "limite": "Não individualizar minério, quantidade, logística ou oficina.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:forjas-resistencia",
+      "de": "fluxo:xli:forjas-thargrid",
+      "para": "fluxo:xli:rede-resistencia",
+      "tipo": "provisao_de_ferramentas",
+      "modalidade": "contribuicao_documentada",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "paginas": [
+        12
+      ],
+      "evidencia": "A infraestrutura anã, incluindo forjas, sustenta a resistência.",
+      "limite": "Não deduzir distribuição entre facções, rota, volume ou liderança única.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:armazens-resistencia",
+      "de": "fluxo:xli:armazens-thargrid",
+      "para": "fluxo:xli:rede-resistencia",
+      "tipo": "abastecimento",
+      "modalidade": "contribuicao_documentada",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "paginas": [
+        7,
+        12
+      ],
+      "evidencia": "Depósitos anões e comunidades livres mantêm provisões e apoio à resistência.",
+      "limite": "Não inferir dependência exclusiva nem volume de abastecimento.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:eldroth-costa",
+      "de": "fluxo:xli:eldroth-refugiados",
+      "para": "fluxo:xli:costa-refugios",
+      "tipo": "refugio",
+      "modalidade": "deslocamento_documentado",
+      "ref_rede": "rede-xxxiii:refugio",
+      "paginas": [
+        5,
+        17
+      ],
+      "evidencia": "Refugiados de Eldroth encontram abrigo nos maiores assentamentos costeiros.",
+      "limite": "Não desenhar caminho direto ou presumir que todos chegam a Portomonte.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:eldroth-thargrid",
+      "de": "fluxo:xli:eldroth-refugiados",
+      "para": "fluxo:xli:thargrid-refugios",
+      "tipo": "refugio",
+      "modalidade": "deslocamento_documentado",
+      "ref_rede": "rede-xxxiii:refugio",
+      "paginas": [
+        6,
+        17
+      ],
+      "evidencia": "O manuscrito associa refugiados de Eldroth a Thargrid; há acolhimento montanhês.",
+      "limite": "Não determinar passagem física entre as florestas nem número de deslocados.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:portomonte-comercio",
+      "de": "fluxo:xli:portomonte",
+      "para": "fluxo:xli:costa-refugios",
+      "tipo": "comercio_costeiro",
+      "modalidade": "articulacao_documentada",
+      "ref_rede": "rede-xxxiii:alem-sul",
+      "paginas": [
+        5
+      ],
+      "evidencia": "Portomonte é centro de comércio entre assentamentos da costa.",
+      "limite": "Não inferir itens vendidos, saldo comercial, itinerários ou portos específicos.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:caatinga-pradarias",
+      "de": "fluxo:xli:caatinga-grupos",
+      "para": "fluxo:xli:fazendas-costa",
+      "tipo": "pilhagem",
+      "modalidade": "pressao_documentada",
+      "ref_rede": "rede-xxxiii:alem-sul",
+      "paginas": [
+        5,
+        12
+      ],
+      "evidencia": "Grupos das terras áridas realizam ataques e pilhagens contra agricultores da Costa Sul.",
+      "limite": "Não classificar todos os orcs ou habitantes da Caatinga como saqueadores.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:ilhas-costa",
+      "de": "fluxo:xli:ilhas-monasticas",
+      "para": "fluxo:xli:marinheiros-costa",
+      "tipo": "circulacao_sazonal",
+      "modalidade": "articulacao_documentada",
+      "ref_rede": "rede-xxxiii:mar",
+      "paginas": [
+        5,
+        14
+      ],
+      "evidencia": "Tortles e tabaxis viajam sazonalmente por recursos e histórias, e parte trabalha na navegação costeira.",
+      "limite": "Não atribuir embarcações, cargas, itinerários ou periodicidade exatos.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:grama-fugitivos",
+      "de": "fluxo:xli:grama-cultivos",
+      "para": "fluxo:xli:grama-fugitivos",
+      "tipo": "acolhimento_alimentar",
+      "modalidade": "transferencia_documentada",
+      "ref_rede": "rede-xxxiii:refugio",
+      "paginas": [
+        19
+      ],
+      "evidencia": "A resistência hobbit oferece comida escondida e abrigo a fugitivos.",
+      "limite": "Não afirmar uma rota de Grama-Cortada para outros centros de resistência.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:svirf-gemas",
+      "de": "fluxo:xli:svirfneblin",
+      "para": "fluxo:xli:claes-anoes",
+      "tipo": "troca_subterranea",
+      "modalidade": "transferencia_documentada",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "paginas": [
+        20
+      ],
+      "evidencia": "Alguns enclaves trocam gemas, informações e conhecimento de passagens com clãs anões.",
+      "limite": "Não generalizar o pacto a todos os svirfneblin ou a toda a rede subterrânea.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:anoes-svirf",
+      "de": "fluxo:xli:claes-anoes",
+      "para": "fluxo:xli:svirfneblin",
+      "tipo": "troca_subterranea",
+      "modalidade": "transferencia_documentada",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "paginas": [
+        20
+      ],
+      "evidencia": "Em contrapartida os clãs parceiros oferecem metal trabalhado, alimentos ou proteção militar.",
+      "limite": "Não pressupor preços, paridade, rotas, adesão universal ou fluxo contínuo.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:ironwood-druidas",
+      "de": "fluxo:xli:ironwood",
+      "para": "fluxo:xli:eldroth-druidas",
+      "tipo": "contato_clandestino",
+      "modalidade": "articulacao_documentada",
+      "ref_rede": "rede-xxxiii:resistencia",
+      "paginas": [
+        18
+      ],
+      "evidencia": "Rangers de Ironwood realizam missões clandestinas mantendo contato com círculos druídicos em Eldroth.",
+      "limite": "Contato documentado não confirma estrada direta, frequência ou cadeia de comando.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    },
+    {
+      "id": "vinculo:xli:abissais-costa",
+      "de": "fluxo:xli:abissais-marinhos",
+      "para": "fluxo:xli:comunidades-maritimas",
+      "tipo": "exigencia_tributaria",
+      "modalidade": "pressao_documentada",
+      "ref_rede": "rede-xxxiii:mar",
+      "paginas": [
+        14
+      ],
+      "evidencia": "Abissais exigem tributos e proteção negociada para acesso à pesca e navegação.",
+      "limite": "Exigência não prova pagamento efetivo de tributo por comunidades específicas.",
+      "geometria": null,
+      "rota_confirmada": false,
+      "volume": null,
+      "custo": null,
+      "frequencia": null
+    }
+  ],
+  "lacunas": [
+    {
+      "id": "lacuna:xli:rio-tributos",
+      "pergunta": "Quais bens e quantias são tributados e onde ficam os pontos de arrecadação?",
+      "ref_nodo": "fluxo:xli:mercados-rio",
+      "resolvida": false,
+      "rota_aferida": false
+    },
+    {
+      "id": "lacuna:xli:drakport",
+      "pergunta": "Qual a organização concreta da escravidão e do abastecimento humano e espiritual de Drakport?",
+      "ref_nodo": "fluxo:xli:drakport",
+      "resolvida": false,
+      "rota_aferida": false
+    },
+    {
+      "id": "lacuna:xli:resistencia",
+      "pergunta": "Quais entregas materiais são efetivamente compartilhadas entre as várias organizações da resistência?",
+      "ref_nodo": "fluxo:xli:rede-resistencia",
+      "resolvida": false,
+      "rota_aferida": false
+    },
+    {
+      "id": "lacuna:xli:ironwood",
+      "pergunta": "Como se organizam as missões clandestinas, sem presumir ligação física entre Ironwood e Eldroth?",
+      "ref_nodo": "fluxo:xli:ironwood",
+      "resolvida": false,
+      "rota_aferida": false
+    },
+    {
+      "id": "lacuna:xli:portomonte",
+      "pergunta": "Que mercadorias e parceiros participam do comércio costeiro de Portomonte?",
+      "ref_nodo": "fluxo:xli:portomonte",
+      "resolvida": false,
+      "rota_aferida": false
+    },
+    {
+      "id": "lacuna:xli:sul",
+      "pergunta": "Quais comunidades específicas participam das pilhagens e quais respostas agrícolas existem?",
+      "ref_nodo": "fluxo:xli:caatinga-grupos",
+      "resolvida": false,
+      "rota_aferida": false
+    },
+    {
+      "id": "lacuna:xli:ilhas",
+      "pergunta": "Quais viagens sazonais e portos são documentáveis entre as ilhas e a costa?",
+      "ref_nodo": "fluxo:xli:ilhas-monasticas",
+      "resolvida": false,
+      "rota_aferida": false
+    },
+    {
+      "id": "lacuna:xli:grama",
+      "pergunta": "O abastecimento de Grama-Cortada chega a algum polo externo ou é principalmente local?",
+      "ref_nodo": "fluxo:xli:grama-cultivos",
+      "resolvida": false,
+      "rota_aferida": false
+    },
+    {
+      "id": "lacuna:xli:subsolo",
+      "pergunta": "Em que galerias os pactos entre svirfneblin e clãs anões são realmente praticados?",
+      "ref_nodo": "fluxo:xli:svirfneblin",
+      "resolvida": false,
+      "rota_aferida": false
+    },
+    {
+      "id": "lacuna:xli:mar",
+      "pergunta": "Quem aceita, recusa ou paga as exigências de tributo dos Abissais marinhos?",
+      "ref_nodo": "fluxo:xli:abissais-marinhos",
+      "resolvida": false,
+      "rota_aferida": false
+    },
+    {
+      "id": "lacuna:xli:gnomos",
+      "pergunta": "Quais mapas e informações foram efetivamente entregues por cartógrafos gnomos a cada interessado?",
+      "ref_nodo": "fluxo:xli:gnomos-cartografos",
+      "resolvida": false,
+      "rota_aferida": false
+    },
+    {
+      "id": "lacuna:xli:tempo",
+      "pergunta": "Como o domínio material mudou entre a conquista da Corte e a crise demoníaca?",
+      "ref_nodo": "fluxo:xli:corte-rio",
+      "resolvida": false,
+      "rota_aferida": false
+    }
+  ],
+  "guardrails": [
+    "Não converter impostos exigidos em cargas efetivamente transportadas entre localidades específicas.",
+    "A transferência forçada de pessoas em Drakport é violência política, não mercadoria neutra.",
+    "Pilhagens das pradarias não descrevem todos os moradores ou povos da Caatinga.",
+    "Grama-Cortada oculta comida para fugitivos; não está comprovada uma rede de exportação para Thargrid.",
+    "Relações entre Ironwood e Eldroth não demonstram continuidade florestal nem estrada.",
+    "O comércio de Portomonte é regional, mas suas mercadorias e itinerários não foram nomeados.",
+    "Tributos exigidos pelos Abissais marinhos não equivalem a entregas comprovadas.",
+    "O conhecimento dos cartógrafos gnomos é disputado, mas não há contratos ou entregas individualizados.",
+    "As esferas do poder atual não têm data de implantação precisa para retroprojeção.",
+    "Demônios do Abismo ocidental e Abissais marinhos continuam naturezas distintas."
+  ]
+}
