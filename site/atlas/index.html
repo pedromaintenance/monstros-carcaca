@@ -91,6 +91,49 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .tag-link{display:inline-flex;padding:7px 10px;color:#dfd2af;border:1px solid #5a5240;border-radius:8px;text-decoration:none;font-size:11px}.tag-link:hover{background:#343024}
 .loader{padding:45px 23px;color:var(--muted);line-height:1.8}
 .hidden{display:none!important}
+
+/* Painel de orientação MACRO — deliberadamente menos granular que a árvore */
+.views{display:flex;gap:8px;align-items:center;margin:0 0 19px;flex-wrap:wrap}
+.mode-tab{padding:11px 16px;border:1px solid #3d4942;border-radius:10px;background:#131918;color:#aab8a9;font-size:12px;font-weight:600}
+.mode-tab.active{color:#f0e0c3;border-color:#a1855a;background:#332b214d}
+.macro-intro{display:flex;align-items:flex-start;justify-content:space-between;gap:18px;padding:0 0 18px}
+.macro-intro h2{font-size:21px}
+.macro-intro p{margin:7px 0 0;max-width:740px;color:var(--muted);font-size:12px}
+.macro-summary{display:flex;flex-wrap:wrap;gap:9px;margin:0 0 16px}
+.macro-stat{border:1px solid #34413a;padding:10px 14px;border-radius:10px;background:#141b19;color:#aebcaf;font-size:11px}
+.macro-stat strong{color:#e7d5b0;font:500 18px Cinzel,serif;margin-right:6px}
+.macro-layout{display:grid;grid-template-columns:minmax(0,58%) minmax(280px,1fr);gap:16px;align-items:start}
+.macro-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.macro-card{border:1px solid #344139;background:#141b19d6;border-radius:12px;padding:16px;min-height:132px;text-align:left;display:flex;flex-direction:column;gap:8px}
+.macro-card:hover,.macro-card.active{border-color:#b09a6a;background:#262821}
+.macro-card .kicker{color:#bd967d;font-size:9px;margin:0}
+.macro-card h3{font:500 14px Cinzel,serif;line-height:1.4}
+.macro-card .card-desc{font-size:11px;line-height:1.5;color:#a4b1a8}
+.macro-card .numbers{display:flex;gap:11px;flex-wrap:wrap;color:#a8b7ad;margin-top:auto;font-size:10px}
+.macro-card .numbers b{color:#e2d8c0}
+.macro-detail{border:1px solid #344139;border-radius:14px;background:#121a18;padding:19px 20px;position:sticky;top:15px;min-height:410px;max-height:calc(100vh - 35px);overflow:auto}
+.macro-detail h3{font-size:21px;margin:5px 0 11px}
+.macro-detail p{font-size:12px;color:#adbdaf;line-height:1.7}
+.macro-group{margin-top:19px;padding-top:14px;border-top:1px solid #2e3a33}
+.macro-group h4{margin:0 0 9px;text-transform:uppercase;letter-spacing:1.2px;font-size:10px;color:#d7bd8e}
+.macro-group ul{margin:0 0 0 17px;padding:0;color:#aabbb0;font-size:11px}
+.macro-group li{margin-bottom:7px}
+.macro-anchors{display:grid;grid-template-columns:1fr;gap:7px}
+.macro-anchor{text-align:left;background:#1b2521;border:1px solid #33463b;border-radius:9px;color:#e1e8d9;padding:10px 12px;font-size:12px}
+.macro-anchor:hover{border-color:var(--gold)}
+.macro-anchor small{color:#a2b2a5;display:block;font-size:10px;line-height:1.4;margin-top:3px}
+.macro-rel{display:flex;align-items:flex-start;flex-direction:column;gap:8px}
+.macro-link{border:1px dashed #4a5445;border-radius:8px;background:#1c231f;text-align:left;padding:9px 10px;width:100%;font-size:11px}
+.macro-link:hover{border-color:#ba9c71}
+.macro-link .rel-type{color:#c6a58a;display:block;font-size:10px;margin-bottom:3px}
+.macro-link .uncertain{color:#dfaa8a}
+.macro-axes{margin-top:15px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.axis{background:#171e1b;border:1px solid #303a31;border-radius:12px;padding:15px}
+.axis b{font:500 13px Cinzel,serif;color:#e1d3b2}
+.axis p{margin:9px 0 0;font-size:11px;line-height:1.6;color:#a4b2a8}
+.macro-scope{font-size:11px;color:#aeb7a8;border-left:2px solid #906f5f;padding-left:10px;margin:14px 0}
+@media(max-width:1050px){.macro-layout{grid-template-columns:1fr}.macro-detail{position:static;max-height:none}.macro-grid{grid-template-columns:repeat(2,1fr)}.macro-axes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:650px){.macro-grid{grid-template-columns:1fr}.macro-card{min-height:0}.macro-axes{grid-template-columns:1fr}.macro-intro{display:block}}
 @media(max-width:1100px){.site{padding:0 18px 35px}.counters{grid-template-columns:repeat(3,1fr)}.workspace{grid-template-columns:minmax(290px,43%) minmax(300px,1fr)}.details{padding:19px 20px}}
 @media(max-width:760px){.hero{padding:25px 0}.hero .symbol{display:none}h1{font-size:34px}.counters{grid-template-columns:repeat(2,minmax(0,1fr));gap:6px}.counter{padding:10px}.counter strong{font-size:20px}.counter span{font-size:9px}.workspace{grid-template-columns:1fr}.panel{min-height:0}.tree-scroll{height:390px;min-height:0}.details{max-height:none;min-height:360px}.topline{font-size:9px;gap:10px;letter-spacing:1px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
@@ -108,7 +151,24 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 <div class="counter"><strong>—</strong><span>Setores em análise</span></div><div class="counter"><strong>—</strong><span>Lugares no manuscrito</span></div><div class="counter"><strong>—</strong><span>Povos identificados</span></div><div class="counter"><strong>—</strong><span>Criaturas no catálogo</span></div><div class="counter"><strong>—</strong><span>Ecologia proposta</span></div><div class="counter"><strong>—</strong><span>Microespaços propostos</span></div><div class="counter"><strong>—</strong><span>Lugares e sublugares</span></div><div class="counter"><strong>—</strong><span>Lacunas de subdivisão</span></div>
 </section>
 <p class="notice" id="warning">Todos os lugares têm um espaço para localidades internas: vilas, bairros, câmaras ou passagens, conforme a natureza do lugar. Pastas de lacunas não são assentamentos existentes. Setores de navegação, propostas e relatos não se tornam cânone automaticamente.</p>
-<main class="workspace">
+<nav class="views" aria-label="Modo de exploração do atlas">
+  <button type="button" class="mode-tab active" data-mode="macro" aria-pressed="true">◈ Visão geral do continente</button>
+  <button type="button" class="mode-tab" data-mode="tree" aria-pressed="false">▤ Árvore de localidades e criaturas</button>
+</nav>
+<section id="macroView" aria-label="Atlas macrorregional">
+  <div class="macro-intro"><div><div class="eyebrow">Primeiro, a geografia inteira</div>
+  <h2>Panorama macrorregional</h2><p>Territórios, núcleos habitados, centros de poder e relações continentais — antes de mapear vilas, criaturas ou câmaras uma a uma.</p></div>
+  <button class="action" id="exportMacro" type="button" disabled>Exportar visão macro ↓</button></div>
+  <div id="macroSummary" class="macro-summary"><span class="tiny">Consolidando os setores geográficos...</span></div>
+  <div class="macro-layout">
+    <div id="macroCards" class="macro-grid"><div class="loader">Carregando as regiões documentadas...</div></div>
+    <div id="macroDetails" class="macro-detail"><div class="loader">Selecione uma região para consultar seu território, suas âncoras e lacunas principais.</div></div>
+  </div>
+  <div class="macro-group"><h3 style="font-size:18px;margin-bottom:12px">Eixos que atravessam o continente</h3>
+  <div id="macroAxes" class="macro-axes"></div></div>
+  <div class="macro-scope">A posição dos cartões não constitui um mapa geográfico nem indica distância. Cada âncora é uma referência rastreável. A falta de assentamentos individualizados é uma lacuna, não a prova de que não existem.</div>
+</section>
+<main class="workspace hidden" id="treeWorkspace">
 <section class="panel" aria-labelledby="tree-title">
 <div class="panel-header"><div><h2 class="panel-title" id="tree-title">Árvore do continente</h2><div class="sub" id="tree-subtitle">Carregando fontes e relações...</div></div><button class="action" id="export" type="button" title="Exportar hierarquia JSON" disabled>Exportar ↓</button></div>
 <div class="tools">
@@ -136,6 +196,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 </div>
 <script type="module">
 import {buildAtlasTree,CONTENT_TYPES,PLACE_TYPES} from "./atlas-tree.mjs";
+import {buildMacroIndex} from "./macro-atlas.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -151,11 +212,12 @@ const paths={
   thargridSocial:"data/propostas/thargrid-resistencia-cotidiano-hack.json",
   gargantaSocial:"data/propostas/garganta-rio-ancestral-social-hack.json",
   caatingaSocial:"data/propostas/caatinga-rede-social-hack.json",
-  hierarchy:"data/atlas/aninhamento-territorial.json"
+  hierarchy:"data/atlas/aninhamento-territorial.json",
+  macro:"data/atlas/macrorregioes-carcaca.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
-  query:"",showGaps:false};
+  query:"",showGaps:false,macro:null,macroSelected:"garganta",mode:"macro"};
 const $=id=>document.getElementById(id);
 const esc=v=>String(v??"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[x]));
 const norm=v=>String(v??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
@@ -322,6 +384,101 @@ function select(id){
 function selectDeep(id){
   select(id);document.querySelector(".details")?.scrollTo({top:0});
 }
+
+function setMode(mode){
+  state.mode=mode==="tree"?"tree":"macro";
+  $("macroView").classList.toggle("hidden",state.mode!=="macro");
+  $("treeWorkspace").classList.toggle("hidden",state.mode!=="tree");
+  document.querySelectorAll("[data-mode]").forEach(el=>{
+    const on=el.dataset.mode===state.mode;
+    el.classList.toggle("active",on);
+    el.setAttribute("aria-pressed",String(on));
+  });
+}
+function macroOpenRegion(id){
+  const region=state.macro?.setores.find(x=>x.id===id);
+  if(!region)return;
+  state.macroSelected=id;
+  renderMacro();
+  if(window.matchMedia?.("(max-width:1050px)")?.matches)
+    $("macroDetails").scrollIntoView({block:"start",behavior:"smooth"});
+}
+function macroDiveInto(id){
+  if(!state.byId.has(id))return;
+  state.query="";$("query").value="";
+  setMode("tree");selectDeep(id);
+}
+function renderMacro(){
+  if(!state.macro)return;
+  const macro=state.macro;
+  $("macroSummary").innerHTML=[
+    [macro.totais.setores,"setores geográficos"],
+    [macro.totais.ancoras,"lugares de referência"],
+    [macro.totais.conexoes,"relações macrorregionais"],
+    [macro.totais.lacunasRegioes,"questões abertas"]
+  ].map(([v,n])=>'<span class="macro-stat"><strong>'+esc(v)+'</strong>'+esc(n)+'</span>').join("");
+  $("macroCards").innerHTML=macro.setores.map((r,i)=>
+    '<button type="button" class="macro-card'+(r.id===state.macroSelected?" active":"")+
+    '" data-macro-region="'+esc(r.id)+'" aria-pressed="'+String(r.id===state.macroSelected)+'">'+
+    '<span class="kicker">SETOR '+String(i+1).padStart(2,"0")+' · '+esc(r.estado_cobertura)+'</span>'+
+    '<h3>'+esc(r.titulo)+'</h3><span class="card-desc">'+esc(r.anatomia)+'</span>'+
+    '<span class="numbers"><span><b>'+r.ancoras.length+'</b> lugares</span>'+
+    '<span><b>'+r.cobertura.microespacosPropostos+'</b> propostas</span>'+
+    '<span><b>'+r.macro_pendencias.length+'</b> questões</span></span></button>').join("");
+  const r=macro.setores.find(x=>x.id===state.macroSelected)||macro.setores[0];
+  const linkFrom=macro.conexoes.filter(e=>e.de===r.id||e.para===r.id);
+  let html='<div class="kicker">SETOR GEOGRÁFICO · '+esc(r.estado_cobertura)+'</div>';
+  html+='<h3>'+esc(r.titulo)+'</h3><p>'+esc(r.perfil)+'</p>';
+  html+='<div class="labels"><span class="label">'+esc(r.anatomia)+'</span>'+
+    '<span class="label doc">Hack p. '+esc(r.paginas.join(", "))+'</span></div>';
+  html+='<div class="macro-group"><h4>Poder e situação política</h4><p>'+esc(r.poder)+'</p></div>';
+  html+='<div class="macro-group"><h4>Locais de referência ('+r.ancoras.length+')</h4>'+
+    '<div class="macro-anchors">'+r.ancoras.map(a=>
+    '<button class="macro-anchor" data-macro-jump="'+esc(a.lugar_id)+'" type="button">'+
+    esc(a.label)+'<small>'+esc(a.funcao)+' · abrir na árvore ↗</small></button>').join("")+'</div></div>';
+  html+='<div class="macro-group"><h4>Povos e presença cultural</h4><ul>'+
+    r.povos.map(p=>'<li>'+esc(p)+'</li>').join("")+'</ul></div>';
+  html+='<div class="macro-group"><h4>O que falta decidir</h4><ul>'+
+    r.macro_pendencias.map(p=>'<li>'+esc(p)+'</li>').join("")+'</ul></div>';
+  if(linkFrom.length){
+    html+='<div class="macro-group"><h4>Relações com outras regiões</h4><div class="macro-rel">'+
+    linkFrom.map(e=>{
+      const dest=e.de===r.id?e.para:e.de;
+      const reg=macro.setores.find(x=>x.id===dest);
+      return '<button type="button" class="macro-link" data-macro-region="'+esc(dest)+'">'+
+        '<span class="rel-type'+(e.estado==="indeterminado"?" uncertain":"")+'">'+
+        esc(e.tipo.replaceAll("_"," "))+' · '+esc(e.estado)+'</span>'+
+        esc(reg?.titulo||dest)+'<span class="tiny" style="display:block;margin-top:5px">'+
+        esc(e.descricao)+'</span></button>';
+    }).join("")+'</div></div>';
+  }
+  html+='<div class="macro-group"><button type="button" class="jump" data-macro-jump="'+
+    esc(r.regionNodeId)+'">Explorar a hierarquia completa de '+esc(r.titulo)+' ↗</button></div>';
+  $("macroDetails").innerHTML=html;
+  $("macroAxes").innerHTML=macro.eixos.map(ax=>
+    '<div class="axis"><b>'+esc(ax.titulo)+'</b><p>'+esc(ax.descricao)+
+    '</p><p class="tiny">Fonte: Hack p. '+esc(ax.paginas.join(", "))+'</p></div>').join("");
+}
+$("macroCards").addEventListener("click",e=>{
+  const button=e.target.closest("[data-macro-region]");
+  if(button)macroOpenRegion(button.dataset.macroRegion);
+});
+$("macroDetails").addEventListener("click",e=>{
+  const go=e.target.closest("[data-macro-jump]");
+  if(go){macroDiveInto(go.dataset.macroJump);return}
+  const region=e.target.closest("[data-macro-region]");
+  if(region)macroOpenRegion(region.dataset.macroRegion);
+});
+document.querySelectorAll("[data-mode]").forEach(b=>b.addEventListener("click",()=>setMode(b.dataset.mode)));
+$("exportMacro").addEventListener("click",()=>{
+  if(!state.macro)return;
+  const blob=new Blob([JSON.stringify(state.macro,null,2)],{type:"application/json"});
+  const link=document.createElement("a");
+  link.href=URL.createObjectURL(blob);
+  link.download="atlas-macro-carcaca.json";
+  link.click();
+  URL.revokeObjectURL(link.href);
+});
 function populateCounters(s){
   const stats=[
     [s.setoresGeograficos,"Setores geográficos"],[s.lugaresManuscrito,"Lugares no manuscrito"],
@@ -363,16 +520,22 @@ $("export").addEventListener("click",()=>{
       if(!response.ok)throw new Error("Fonte indisponível: "+path+" ("+response.status+")");
       return [key,await response.json()];
     }));
-    state.atlas=buildAtlasTree(Object.fromEntries(entries));
+    const loaded=Object.fromEntries(entries);
+    state.atlas=buildAtlasTree(loaded);
+    state.macro=buildMacroIndex(loaded.macro,state.atlas);
     rebuildLookup();
     populateCounters(state.atlas.stats);
+    renderMacro();
+    $("exportMacro").disabled=false;
     $("export").disabled=false;
     const hash=decodeURIComponent(location.hash.slice(1));
-    if(hash&&state.byId.has(hash))select(hash);
-    else select("carcaca");
+    if(hash&&state.byId.has(hash)){setMode("tree");select(hash)}
+    else {state.selected="carcaca";renderTree();detail();setMode("macro") }
     $("tree-subtitle").textContent="Carregados "+state.atlas.stats.folhas+" registros de conteúdo (com referências repetidas).";
   }catch(e){
     $("tree").innerHTML='<div class="loader"><strong>Falha ao carregar o atlas.</strong><p>'+esc(e.message)+'</p><p>O arquivo HTML precisa ser servido pelo Pages com as fontes em <code>dados/</code>.</p></div>';
+    $("macroCards").innerHTML='<div class="loader">Não foi possível montar a visão macro. Consulte a execução do Pages.</div>';
+    $("macroDetails").innerHTML='<div class="loader">'+esc(e.message)+'</div>';
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
