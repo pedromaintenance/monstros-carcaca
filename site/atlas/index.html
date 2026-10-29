@@ -445,6 +445,49 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .material-inspector-gap{border-left:2px solid #ac956b;padding-left:9px;font-size:11px}
 .material-empty{font-size:11px;color:#c6d5c6}
 @media(max-width:670px){.material-nodes,.material-gaps{grid-template-columns:1fr}.material-relation-path{grid-template-columns:minmax(0,1fr) 20px minmax(0,1fr)}}
+
+/* Ciclo XLII — laboratório editorial, sem mapas quantitativos ou scores de risco */
+.vulnerability-metrics{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 9px}
+.vulnerability-metrics span{font-size:10px;padding:6px 9px;border:1px solid #72604a;color:#e0ccaa;background:#2d2923;border-radius:8px}
+.vulnerability-disclaimer{font-size:11px;line-height:1.7;color:#c4d2c5;background:#222e29;border-left:3px solid #c1a679;padding:11px 13px;border-radius:3px;margin:0 0 14px}
+.vulnerability-filter{margin:12px 0 16px;color:#d9e0cc;font-size:11px}
+.vulnerability-filter select,.vulnerability-picker select{background:#1c2a24;color:#dce6d9;border:1px solid #526d59;border-radius:7px;padding:7px 9px;font-size:11px;max-width:100%}
+.vulnerability-filter label{display:flex;align-items:center;gap:10px}
+.vulnerability-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.vulnerability-card{border:1px solid #445d4b;border-radius:10px;background:#1b2822;padding:12px;display:flex;flex-direction:column;gap:8px}
+.vulnerability-card.active{border-color:#d1ae7c;background:#302e25}
+.vulnerability-card-top{display:flex;gap:8px;flex-wrap:wrap;justify-content:space-between}
+.vulnerability-card-top small{font-size:9px;color:#b3c9b3}
+.vulnerability-card h4{margin:3px 0;font:500 12px Cinzel,serif;color:#e6d9bd;line-height:1.45}
+.vulnerability-card p{font-size:11px;color:#bccbbd;line-height:1.65;margin:0;flex:1}
+.vulnerability-actions{display:flex;flex-wrap:wrap;gap:7px;padding-top:7px}
+.vulnerability-actions button{padding:6px 9px;border:1px solid #8c7659;background:#332d24;border-radius:7px;color:#ead4aa;font-size:10px}
+.vulnerability-actions button:hover{background:#51402b}
+.vulnerability-edge{border:1px solid #526656;background:#253129;border-radius:8px;padding:9px;margin:7px 0}
+.vulnerability-edge small{display:block;color:#d5c298;font-size:9px;margin-bottom:8px}
+.vulnerability-edge>div{display:grid;grid-template-columns:minmax(0,1fr) 16px minmax(0,1fr);align-items:center;gap:5px}
+.vulnerability-edge span{font-size:10px;color:#deeadb;overflow-wrap:anywhere}
+.vulnerability-edge b{font-size:13px;color:#d6ba86;text-align:center}
+.vulnerability-edge p{font-size:10px;color:#bccbbd;line-height:1.5;margin:8px 0 0}
+.vulnerability-inspector p,.vulnerability-compare-panel p{font-size:11px;line-height:1.65}
+.vulnerability-related{display:grid;gap:6px}
+.vulnerability-related>div{border-left:2px dashed #868866;padding:7px 9px;background:#282f26}
+.vulnerability-related small,.vulnerability-related span{display:block;font-size:10px;color:#c5d2bf;line-height:1.6}
+.vulnerability-related small{color:#c4b38e}
+.vulnerability-questions{display:grid;gap:5px}.vulnerability-questions p{padding:8px;background:#2a2d24;border-left:2px solid #ba9b70;margin:0}
+.vulnerability-muted,.vulnerability-footnote{font-size:11px;line-height:1.7;color:#bfcbbd}
+.vulnerability-main-alone{width:100%}
+.vulnerability-picker{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:12px 0}
+.vulnerability-picker label{display:grid;gap:6px;font-size:10px;color:#ddd1b5}
+.vulnerability-compare{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.vulnerability-compare-panel{min-width:0;border:1px solid #53624f;background:#1f2b25;border-radius:11px;padding:14px}
+.vulnerability-compare-panel>small{font-size:9px;color:#c0a984}
+.vulnerability-compare-panel h4{font:500 13px Cinzel,serif;color:#e6d8b8;margin:8px 0 10px}
+.vulnerability-method{display:grid;gap:8px}.vulnerability-method>p{color:#d0d8c8;font-size:11px;line-height:1.7}
+.vulnerability-method>h4{font:500 14px Cinzel,serif;color:#e3d2ad;margin:15px 0 4px}
+.vulnerability-rule,.vulnerability-need{padding:10px 13px;border-left:3px solid #9ba987;background:#243228;color:#cedacc;font-size:11px;line-height:1.6}
+.vulnerability-need{border-left-color:#ae916d;background:#302b23}
+@media(max-width:760px){.vulnerability-cards,.vulnerability-compare,.vulnerability-picker{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -475,6 +518,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <section id="continentalHydrology" class="env-section" aria-label="Hidrografia continental"><p class="env-explain">Carregando águas e zonas hidrográficas da Carcaça...</p></section>
   <section id="chronocartography" class="env-section" aria-label="Cronocartografia do poder"><p class="env-explain">Carregando os marcos e esferas de poder através dos séculos...</p></section>
   <section id="materialCirculation" class="env-section" aria-label="Circulação material da Carcaça"><p class="env-explain">Carregando redes de produção, abastecimento, refúgio e informação...</p></section>
+  <section id="continentalVulnerabilities" class="env-section" aria-label="Laboratório de dependências continentais"><p class="env-explain">Carregando cenários hipotéticos de dependência e vulnerabilidade...</p></section>
   <section id="topologyChoices" class="env-section" aria-label="Oficina de alternativas topológicas"><p class="env-explain">Carregando matriz de decisões sobre o continente...</p></section>
   <div class="macro-layout">
     <div id="macroCards" class="macro-grid"><div class="loader">Carregando as regiões documentadas...</div></div>
@@ -532,6 +576,8 @@ import {buildChronocartography} from "./chronocartography.mjs";
 import {initChronocartography} from "./chronocartography-ui.mjs";
 import {buildMaterialCirculation} from "./material-circulation.mjs";
 import {initMaterialCirculation} from "./material-circulation-ui.mjs";
+import {buildContinentalVulnerabilities} from "./continental-vulnerabilities.mjs";
+import {initContinentalVulnerabilities} from "./continental-vulnerabilities-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -557,7 +603,8 @@ const paths={
   charter:"data/atlas/carta-cartografica-ciclo38.json",
   hydrology:"data/atlas/hidrografia-continental-ciclo39.json",
   chrono:"data/atlas/cronocartografia-ciclo40.json",
-  material:"data/atlas/circulacao-material-ciclo41.json"
+  material:"data/atlas/circulacao-material-ciclo41.json",
+  vulnerabilities:"data/atlas/dependencias-vulnerabilidades-ciclo42.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -876,6 +923,7 @@ $("export").addEventListener("click",()=>{
     state.hydrology=buildContinentalHydrology(loaded.hydrology,state.physical,state.environments,state.interfaces,state.topology);
     state.chrono=buildChronocartography(loaded.chrono,state.macro,state.networks,state.physical,state.topology);
     state.material=buildMaterialCirculation(loaded.material,state.macro,state.networks,state.chrono);
+    state.vulnerabilities=buildContinentalVulnerabilities(loaded.vulnerabilities,state.material,state.chrono,state.hydrology);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -886,6 +934,7 @@ $("export").addEventListener("click",()=>{
     initContinentalHydrology($("continentalHydrology"),state.hydrology,macroDiveInto);
     initChronocartography($("chronocartography"),state.chrono);
     initMaterialCirculation($("materialCirculation"),state.material);
+    initContinentalVulnerabilities($("continentalVulnerabilities"),state.vulnerabilities);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -907,6 +956,7 @@ $("export").addEventListener("click",()=>{
     $("continentalHydrology").textContent="A hidrografia continental não pôde ser carregada.";
     $("chronocartography").textContent="A cronocartografia não pôde ser carregada.";
     $("materialCirculation").textContent="A circulação material não pôde ser carregada.";
+    $("continentalVulnerabilities").textContent="Os cenários de vulnerabilidade não puderam ser carregados.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
