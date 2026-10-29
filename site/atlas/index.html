@@ -304,6 +304,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <div id="macroSummary" class="macro-summary"><span class="tiny">Consolidando os setores geográficos...</span></div>
   <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
   <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
+  <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
   <div class="macro-layout">
     <div id="macroCards" class="macro-grid"><div class="loader">Carregando as regiões documentadas...</div></div>
     <div id="macroDetails" class="macro-detail"><div class="loader">Selecione uma região para consultar seu território, suas âncoras e lacunas principais.</div></div>
@@ -348,6 +349,8 @@ import {buildPhysicalGeography} from "./physical-geography.mjs";
 import {initPhysicalGeography} from "./physical-geography-ui.mjs";
 import {buildMacroEnvironments} from "./macro-environments.mjs";
 import {initMacroEnvironments} from "./macro-environments-ui.mjs";
+import {buildContinentalInterfaces} from "./macro-interfaces.mjs";
+import {initContinentalInterfaces} from "./macro-interfaces-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -367,7 +370,8 @@ const paths={
   macro:"data/atlas/macrorregioes-carcaca.json",
   networks:"data/atlas/redes-historicas-ciclo33.json",
   physical:"data/atlas/geografia-fisica-ciclo34.json",
-  environments:"data/atlas/macroambientes-ciclo35.json"
+  environments:"data/atlas/macroambientes-ciclo35.json",
+  interfaces:"data/atlas/interfaces-continentais-ciclo36.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -680,11 +684,13 @@ $("export").addEventListener("click",()=>{
     state.networks=buildMacroNetworks(loaded.networks,state.macro);
     state.physical=buildPhysicalGeography(loaded.physical,state.macro,state.atlas);
     state.environments=buildMacroEnvironments(loaded.environments,state.macro,state.atlas);
+    state.interfaces=buildContinentalInterfaces(loaded.interfaces,state.macro,state.networks,state.environments);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
     initPhysicalGeography($("physicalGeo"),state.physical,macroDiveInto);
     initMacroEnvironments($("macroEnvironments"),state.environments,macroDiveInto);
+    initContinentalInterfaces($("macroInterfaces"),state.interfaces);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
     $("export").disabled=false;
@@ -699,6 +705,7 @@ $("export").addEventListener("click",()=>{
     $("macroLayers").textContent="As redes históricas não puderam ser carregadas.";
     $("physicalGeo").textContent="A geografia física não pôde ser carregada.";
     $("macroEnvironments").textContent="Os grandes ambientes naturais não puderam ser carregados.";
+    $("macroInterfaces").textContent="As interfaces continentais não puderam ser carregadas.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
