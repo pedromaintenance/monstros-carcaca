@@ -529,6 +529,30 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .audit-creature-policy p{color:#ccd9cd;font-size:12px;line-height:1.8;margin:8px 0}
 .audit-creature-policy strong{color:#e9d7aa}
 @media(max-width:770px){.audit-creature-policy{padding:14px}}
+
+/* Inventário do povoamento e primeiro lote de assentamentos de criaturas. */
+.settlement-header-note{margin:12px 0 15px;padding:11px;border-left:3px solid #95b29c;border-radius:5px;background:#203026;color:#d6e2cd;font-size:11px;line-height:1.7}
+.settlement-filter{display:flex;gap:8px;align-items:center;margin:11px 0}
+.settlement-filter label{display:flex;gap:9px;align-items:center;font-size:11px;color:#cdd9cc}
+.settlement-filter select{min-width:180px;max-width:100%;background:#1a2a21;border:1px solid #546952;color:#dce5d5;padding:8px;border-radius:7px}
+.settlement-note{padding:11px 12px;background:#263126;border-left:3px solid #a9aa81;color:#c9d5c7;font-size:11px;line-height:1.75}
+.settlement-seed-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.settlement-seed-card{padding:12px;background:#1e2c25;border:1px solid #47604c;color:#dfebdc;border-radius:9px;text-align:left;display:flex;gap:6px;flex-direction:column;min-height:106px}
+.settlement-seed-card.active,.settlement-seed-card:hover{background:#32352a;border-color:#d0b585}
+.settlement-seed-card small{font-size:10px;color:#bad2bd}
+.settlement-seed-card b{font-size:12px;line-height:1.45}
+.settlement-seed-card span{font-size:10px;color:#b9c6b8;line-height:1.5}
+.settlement-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:9px;margin:13px 0}
+.settlement-stats div{background:#253028;padding:11px;border:1px solid #4b6350;border-radius:9px}
+.settlement-stats b{display:block;font:500 22px Cinzel,serif;color:#e9d3a8}.settlement-stats span{font-size:10px;line-height:1.5;color:#bcd0bf}
+.settlement-baseline-row,.settlement-equivalence{border:1px solid #4b5d50;border-radius:9px;padding:11px;margin:8px 0;background:#202a23}
+.settlement-baseline-row b,.settlement-baseline-row span{display:block;font-size:11px;line-height:1.6}
+.settlement-baseline-row span{color:#b9caba}
+.settlement-rule{border-left:2px solid #a6a27f;padding:9px;background:#273128;font-size:11px;line-height:1.6}
+.settlement-equivalence h4{font-size:12px;text-transform:capitalize;color:#e1d2af;margin:0 0 8px}
+.settlement-equivalence p{font-size:11px;color:#ccdacb;line-height:1.65;margin:0 0 7px}
+.settlement-equivalence small{font-size:9px;color:#b0c5b0;overflow-wrap:anywhere}
+@media(max-width:760px){.settlement-seed-grid{grid-template-columns:1fr}.settlement-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.settlement-filter label{flex-wrap:wrap}}
 </style>
 </head>
 <body>
@@ -617,6 +641,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
     <p class="audit-source">Fontes: capítulo I do Hack da Carcaça (pp. 2–24); macrorregiões e ciclos XXXIV–XLII. Categorias de ancoragem temática descrevem apenas a riqueza da fonte, não conclusão do povoamento; o novo horizonte de densidade é editorial e flexível. O texto permanece visível mesmo se as camadas interativas não carregarem.</p>
   </section>
 
+  <section id="settlementInventory" class="env-section" aria-label="Inventário e propostas do povoamento fantástico"><p class="env-explain">Carregando inventário de assentamentos e comunidades fantásticas propostas...</p></section>
   <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
   <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
   <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
@@ -684,6 +709,8 @@ import {buildMaterialCirculation} from "./material-circulation.mjs";
 import {initMaterialCirculation} from "./material-circulation-ui.mjs";
 import {buildContinentalVulnerabilities} from "./continental-vulnerabilities.mjs";
 import {initContinentalVulnerabilities} from "./continental-vulnerabilities-ui.mjs";
+import {buildSettlementInventory} from "./settlement-inventory.mjs";
+import {initSettlementInventory} from "./settlement-inventory-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -710,7 +737,10 @@ const paths={
   hydrology:"data/atlas/hidrografia-continental-ciclo39.json",
   chrono:"data/atlas/cronocartografia-ciclo40.json",
   material:"data/atlas/circulacao-material-ciclo41.json",
-  vulnerabilities:"data/atlas/dependencias-vulnerabilidades-ciclo42.json"
+  vulnerabilities:"data/atlas/dependencias-vulnerabilidades-ciclo42.json",
+  settlementInventory:"data/atlas/inventario-povoamento-ciclo44.json",
+  creatureSettlements:"data/propostas/povoamento-criaturas-lote01.json",
+  settlementHorizon:"data/atlas/horizonte-povoamento-macro.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -1030,6 +1060,7 @@ $("export").addEventListener("click",()=>{
     state.chrono=buildChronocartography(loaded.chrono,state.macro,state.networks,state.physical,state.topology);
     state.material=buildMaterialCirculation(loaded.material,state.macro,state.networks,state.chrono);
     state.vulnerabilities=buildContinentalVulnerabilities(loaded.vulnerabilities,state.material,state.chrono,state.hydrology);
+    state.settlementInventory=buildSettlementInventory(loaded.settlementInventory,loaded.creatureSettlements,loaded.settlementHorizon,state.macro);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -1041,6 +1072,7 @@ $("export").addEventListener("click",()=>{
     initChronocartography($("chronocartography"),state.chrono);
     initMaterialCirculation($("materialCirculation"),state.material);
     initContinentalVulnerabilities($("continentalVulnerabilities"),state.vulnerabilities);
+    initSettlementInventory($("settlementInventory"),state.settlementInventory);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -1063,6 +1095,7 @@ $("export").addEventListener("click",()=>{
     $("chronocartography").textContent="A cronocartografia não pôde ser carregada.";
     $("materialCirculation").textContent="A circulação material não pôde ser carregada.";
     $("continentalVulnerabilities").textContent="Os cenários de vulnerabilidade não puderam ser carregados.";
+    $("settlementInventory").textContent="O inventário do povoamento não pôde ser carregado.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
