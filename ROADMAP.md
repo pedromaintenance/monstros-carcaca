@@ -579,4 +579,17 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Preservar 8 fatos com limites de inferência, 12 âncoras rastreáveis e 12 questões de autoria com respostas nulas.
 - [x] Incluir JSON, schema, validação de referências, seis índices, API ESM com prévia sem mutação, testes, README e diário.
 - [x] Proteger as 7 criaturas, as fichas DW, os balanços materiais desconhecidos e o atlas factual.
-- [ ] **XXVI — próximo horizonte:** revisar decisões autorais prioritárias sobre Portomonte; manter modelos em hipótese até homologação explícita e registrar consequências somente após escolha.
+- [x] **XXVI — revisão preparada:** decisões classificadas e impactos mapeados, aguardando homologação expressa.
+
+
+## Ciclo XXVI — Concluído: decisões de Portomonte, sem homologação
+
+- [x] Retomar as 12 perguntas autorais do Ciclo XXV, cada qual vinculada por ID à origem exata e a referências válidas.
+- [x] Sistematizar **38 opções editoriais** com formulações, trade-offs e vínculo aos quatro modelos políticos anteriores, sem assumir escolha.
+- [x] Priorizar as decisões e mapear dependências editoriais **acíclicas**, sem converter precedência em fato do cenário.
+- [x] Criar quatro fases de revisão ainda não realizadas e uma política que exige manifestação expressa do autor e trilha de proveniência.
+- [x] Registrar dez impactos condicionais sobre arquivos existentes, todos marcados como não executáveis e não aplicados.
+- [x] Manter doze guardas: proteção de fonte, água, quantificação, geografia, fauna, DW e aprovação explícita.
+- [x] Integrar JSON, schema, validador, oito índices determinísticos, ESM de consulta e prévia sem mutação, testes e documentação.
+- [x] Preservar sete criaturas, atlas factual, balanços com grandezas desconhecidas e hipóteses do XXV sem canonizar.
+- [ ] **XXVII — próximo horizonte:** homologação seletiva somente se o autor tomar decisões específicas; sem aprovação, pesquisar lacunas de fontes ou abrir novo território para expansão cultural.
