@@ -12,6 +12,7 @@ on:
       - 'data/propostas/povoamento-regional-hack-carcaca.json'
       - 'data/propostas/eldroth-ecologia-monstruosa-dw.json'
       - 'data/propostas/eldroth-fichas-dw-ciclo13.json'
+      - 'data/propostas/ironwood-eldroth-resistencia-hack.json'
       - 'dist/carcaca/**'
       - 'curadoria/assentamentos/**'
       - 'curadoria/criaturas/**'
@@ -58,6 +59,7 @@ jobs:
             data/propostas/povoamento-regional-hack-carcaca.json \
             data/propostas/eldroth-ecologia-monstruosa-dw.json \
             data/propostas/eldroth-fichas-dw-ciclo13.json
+            data/propostas/ironwood-eldroth-resistencia-hack.json
           do
             mkdir -p ".public-pages/atlas/dados/$(dirname "$file")"
             cp "$file" ".public-pages/atlas/dados/$file"
