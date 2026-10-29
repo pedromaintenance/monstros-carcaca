@@ -1,0 +1,444 @@
+{
+  "by_categoria": {
+    "circuitos_materiais": [
+      "worldbuilding-xxiii:circuitos_materiais:armazenagem-e-perdas",
+      "worldbuilding-xxiii:circuitos_materiais:cuidado-e-carga",
+      "worldbuilding-xxiii:circuitos_materiais:noticias-e-distancias",
+      "worldbuilding-xxiii:circuitos_materiais:reparo-de-recipientes",
+      "worldbuilding-xxiii:circuitos_materiais:sementes-e-reserva",
+      "worldbuilding-xxiii:circuitos_materiais:trocas-com-a-costa"
+    ],
+    "dominios_sociais": [
+      "worldbuilding-xxiii:dominios_sociais:autoridade-e-negociacao",
+      "worldbuilding-xxiii:dominios_sociais:comercio-sem-moeda-inventada",
+      "worldbuilding-xxiii:dominios_sociais:cozinha-e-memoria",
+      "worldbuilding-xxiii:dominios_sociais:cuidado-e-vizinhanca",
+      "worldbuilding-xxiii:dominios_sociais:ensino-de-sobrevivencia",
+      "worldbuilding-xxiii:dominios_sociais:familias-e-clas",
+      "worldbuilding-xxiii:dominios_sociais:habitar-sem-mapa",
+      "worldbuilding-xxiii:dominios_sociais:humor-e-hospitalidade",
+      "worldbuilding-xxiii:dominios_sociais:luto-e-reparacao",
+      "worldbuilding-xxiii:dominios_sociais:ritual-e-pluralidade",
+      "worldbuilding-xxiii:dominios_sociais:saude-e-calor",
+      "worldbuilding-xxiii:dominios_sociais:trabalho-das-mulheres-e-generos"
+    ],
+    "etica_da_agua": [
+      "worldbuilding-xxiii:etica_da_agua:agua-de-plantio",
+      "worldbuilding-xxiii:etica_da_agua:agua-e-solo",
+      "worldbuilding-xxiii:etica_da_agua:crise-e-excecao",
+      "worldbuilding-xxiii:etica_da_agua:manutencao-e-autoridade",
+      "worldbuilding-xxiii:etica_da_agua:medicao-e-verdade",
+      "worldbuilding-xxiii:etica_da_agua:primeira-necessidade"
+    ],
+    "mobilidades": [
+      "worldbuilding-xxiii:mobilidades:exilio-e-escolha",
+      "worldbuilding-xxiii:mobilidades:memoria-de-351",
+      "worldbuilding-xxiii:mobilidades:mensageiros-e-segredos",
+      "worldbuilding-xxiii:mobilidades:pastos-e-inferencias",
+      "worldbuilding-xxiii:mobilidades:refugio-e-recusa",
+      "worldbuilding-xxiii:mobilidades:vinculos-entre-costa-e-interior"
+    ],
+    "relacoes_regionais": [
+      "worldbuilding-xxiii:relacoes_regionais:agricultor-e-exilado",
+      "worldbuilding-xxiii:relacoes_regionais:corte-e-ausencia",
+      "worldbuilding-xxiii:relacoes_regionais:guerra-marinha",
+      "worldbuilding-xxiii:relacoes_regionais:interior-e-portomonte",
+      "worldbuilding-xxiii:relacoes_regionais:orc-e-humano"
+    ],
+    "vinhetas": [
+      "worldbuilding-xxiii:vinhetas:a-semente",
+      "worldbuilding-xxiii:vinhetas:a-sombra-do-cantaro",
+      "worldbuilding-xxiii:vinhetas:carta-sem-destino",
+      "worldbuilding-xxiii:vinhetas:o-nono-silencio",
+      "worldbuilding-xxiii:vinhetas:o-reparo"
+    ]
+  },
+  "by_estado": {
+    "proposta_cultural_sem_canon": [
+      "worldbuilding-xxiii:circuitos_materiais:armazenagem-e-perdas",
+      "worldbuilding-xxiii:circuitos_materiais:cuidado-e-carga",
+      "worldbuilding-xxiii:circuitos_materiais:noticias-e-distancias",
+      "worldbuilding-xxiii:circuitos_materiais:reparo-de-recipientes",
+      "worldbuilding-xxiii:circuitos_materiais:sementes-e-reserva",
+      "worldbuilding-xxiii:circuitos_materiais:trocas-com-a-costa",
+      "worldbuilding-xxiii:dominios_sociais:autoridade-e-negociacao",
+      "worldbuilding-xxiii:dominios_sociais:comercio-sem-moeda-inventada",
+      "worldbuilding-xxiii:dominios_sociais:cozinha-e-memoria",
+      "worldbuilding-xxiii:dominios_sociais:cuidado-e-vizinhanca",
+      "worldbuilding-xxiii:dominios_sociais:ensino-de-sobrevivencia",
+      "worldbuilding-xxiii:dominios_sociais:familias-e-clas",
+      "worldbuilding-xxiii:dominios_sociais:habitar-sem-mapa",
+      "worldbuilding-xxiii:dominios_sociais:humor-e-hospitalidade",
+      "worldbuilding-xxiii:dominios_sociais:luto-e-reparacao",
+      "worldbuilding-xxiii:dominios_sociais:ritual-e-pluralidade",
+      "worldbuilding-xxiii:dominios_sociais:saude-e-calor",
+      "worldbuilding-xxiii:dominios_sociais:trabalho-das-mulheres-e-generos",
+      "worldbuilding-xxiii:etica_da_agua:agua-de-plantio",
+      "worldbuilding-xxiii:etica_da_agua:agua-e-solo",
+      "worldbuilding-xxiii:etica_da_agua:crise-e-excecao",
+      "worldbuilding-xxiii:etica_da_agua:manutencao-e-autoridade",
+      "worldbuilding-xxiii:etica_da_agua:medicao-e-verdade",
+      "worldbuilding-xxiii:etica_da_agua:primeira-necessidade",
+      "worldbuilding-xxiii:mobilidades:exilio-e-escolha",
+      "worldbuilding-xxiii:mobilidades:memoria-de-351",
+      "worldbuilding-xxiii:mobilidades:mensageiros-e-segredos",
+      "worldbuilding-xxiii:mobilidades:pastos-e-inferencias",
+      "worldbuilding-xxiii:mobilidades:refugio-e-recusa",
+      "worldbuilding-xxiii:mobilidades:vinculos-entre-costa-e-interior",
+      "worldbuilding-xxiii:relacoes_regionais:agricultor-e-exilado",
+      "worldbuilding-xxiii:relacoes_regionais:corte-e-ausencia",
+      "worldbuilding-xxiii:relacoes_regionais:guerra-marinha",
+      "worldbuilding-xxiii:relacoes_regionais:interior-e-portomonte",
+      "worldbuilding-xxiii:relacoes_regionais:orc-e-humano",
+      "worldbuilding-xxiii:vinhetas:a-semente",
+      "worldbuilding-xxiii:vinhetas:a-sombra-do-cantaro",
+      "worldbuilding-xxiii:vinhetas:carta-sem-destino",
+      "worldbuilding-xxiii:vinhetas:o-nono-silencio",
+      "worldbuilding-xxiii:vinhetas:o-reparo"
+    ]
+  },
+  "by_referencia_preexistente": {
+    "caatinga:comunidade:baixio-sementes": [
+      "worldbuilding-xxiii:circuitos_materiais:sementes-e-reserva",
+      "worldbuilding-xxiii:vinhetas:a-semente"
+    ],
+    "caatinga:comunidade:feira-ferragens": [
+      "worldbuilding-xxiii:circuitos_materiais:reparo-de-recipientes",
+      "worldbuilding-xxiii:vinhetas:o-reparo"
+    ],
+    "caatinga:comunidade:patio-cabacas": [
+      "worldbuilding-xxiii:circuitos_materiais:armazenagem-e-perdas",
+      "worldbuilding-xxiii:etica_da_agua:medicao-e-verdade"
+    ],
+    "caatinga:comunidade:pedra-nove-silencios": [
+      "worldbuilding-xxiii:vinhetas:o-nono-silencio"
+    ],
+    "caatinga:comunidade:poco-sem-bandeira": [
+      "worldbuilding-xxiii:circuitos_materiais:cuidado-e-carga",
+      "worldbuilding-xxiii:circuitos_materiais:noticias-e-distancias",
+      "worldbuilding-xxiii:etica_da_agua:manutencao-e-autoridade",
+      "worldbuilding-xxiii:etica_da_agua:primeira-necessidade",
+      "worldbuilding-xxiii:vinhetas:a-sombra-do-cantaro"
+    ],
+    "caatinga:rota:barro-e-ferragem": [
+      "worldbuilding-xxiii:mobilidades:mensageiros-e-segredos"
+    ],
+    "dinamica:ataques-liturgicos-costa-ilhas": [
+      "worldbuilding-xxiii:relacoes_regionais:guerra-marinha"
+    ],
+    "dinamica:nao-ocupacao-direta-alem-sul": [
+      "worldbuilding-xxiii:relacoes_regionais:corte-e-ausencia"
+    ],
+    "dinamica:pilhagens-caatinga-pradarias": [
+      "worldbuilding-xxiii:relacoes_regionais:agricultor-e-exilado"
+    ],
+    "lugar:portomonte": [
+      "worldbuilding-xxiii:circuitos_materiais:trocas-com-a-costa",
+      "worldbuilding-xxiii:etica_da_agua:agua-de-plantio",
+      "worldbuilding-xxiii:relacoes_regionais:interior-e-portomonte"
+    ],
+    "regiao:caatinga": [
+      "worldbuilding-xxiii:etica_da_agua:agua-e-solo",
+      "worldbuilding-xxiii:etica_da_agua:crise-e-excecao",
+      "worldbuilding-xxiii:mobilidades:exilio-e-escolha",
+      "worldbuilding-xxiii:mobilidades:memoria-de-351",
+      "worldbuilding-xxiii:mobilidades:pastos-e-inferencias",
+      "worldbuilding-xxiii:mobilidades:refugio-e-recusa",
+      "worldbuilding-xxiii:relacoes_regionais:orc-e-humano"
+    ],
+    "regiao:costa-sul": [
+      "worldbuilding-xxiii:mobilidades:vinculos-entre-costa-e-interior",
+      "worldbuilding-xxiii:vinhetas:carta-sem-destino"
+    ]
+  },
+  "by_pagina_contextual": {
+    "12": [
+      "worldbuilding-xxiii:mobilidades:exilio-e-escolha",
+      "worldbuilding-xxiii:mobilidades:memoria-de-351",
+      "worldbuilding-xxiii:mobilidades:mensageiros-e-segredos",
+      "worldbuilding-xxiii:mobilidades:pastos-e-inferencias",
+      "worldbuilding-xxiii:mobilidades:refugio-e-recusa",
+      "worldbuilding-xxiii:mobilidades:vinculos-entre-costa-e-interior"
+    ],
+    "5": [
+      "worldbuilding-xxiii:circuitos_materiais:armazenagem-e-perdas",
+      "worldbuilding-xxiii:circuitos_materiais:cuidado-e-carga",
+      "worldbuilding-xxiii:circuitos_materiais:noticias-e-distancias",
+      "worldbuilding-xxiii:circuitos_materiais:reparo-de-recipientes",
+      "worldbuilding-xxiii:circuitos_materiais:sementes-e-reserva",
+      "worldbuilding-xxiii:circuitos_materiais:trocas-com-a-costa",
+      "worldbuilding-xxiii:dominios_sociais:autoridade-e-negociacao",
+      "worldbuilding-xxiii:dominios_sociais:comercio-sem-moeda-inventada",
+      "worldbuilding-xxiii:dominios_sociais:cozinha-e-memoria",
+      "worldbuilding-xxiii:dominios_sociais:cuidado-e-vizinhanca",
+      "worldbuilding-xxiii:dominios_sociais:ensino-de-sobrevivencia",
+      "worldbuilding-xxiii:dominios_sociais:familias-e-clas",
+      "worldbuilding-xxiii:dominios_sociais:habitar-sem-mapa",
+      "worldbuilding-xxiii:dominios_sociais:humor-e-hospitalidade",
+      "worldbuilding-xxiii:dominios_sociais:luto-e-reparacao",
+      "worldbuilding-xxiii:dominios_sociais:ritual-e-pluralidade",
+      "worldbuilding-xxiii:dominios_sociais:saude-e-calor",
+      "worldbuilding-xxiii:dominios_sociais:trabalho-das-mulheres-e-generos",
+      "worldbuilding-xxiii:etica_da_agua:agua-de-plantio",
+      "worldbuilding-xxiii:etica_da_agua:agua-e-solo",
+      "worldbuilding-xxiii:etica_da_agua:crise-e-excecao",
+      "worldbuilding-xxiii:etica_da_agua:manutencao-e-autoridade",
+      "worldbuilding-xxiii:etica_da_agua:medicao-e-verdade",
+      "worldbuilding-xxiii:etica_da_agua:primeira-necessidade",
+      "worldbuilding-xxiii:relacoes_regionais:agricultor-e-exilado",
+      "worldbuilding-xxiii:relacoes_regionais:corte-e-ausencia",
+      "worldbuilding-xxiii:relacoes_regionais:guerra-marinha",
+      "worldbuilding-xxiii:relacoes_regionais:interior-e-portomonte",
+      "worldbuilding-xxiii:relacoes_regionais:orc-e-humano",
+      "worldbuilding-xxiii:vinhetas:a-semente",
+      "worldbuilding-xxiii:vinhetas:a-sombra-do-cantaro",
+      "worldbuilding-xxiii:vinhetas:carta-sem-destino",
+      "worldbuilding-xxiii:vinhetas:o-nono-silencio",
+      "worldbuilding-xxiii:vinhetas:o-reparo"
+    ]
+  },
+  "by_nome": {
+    "A carta sem destino": [
+      "worldbuilding-xxiii:vinhetas:carta-sem-destino"
+    ],
+    "A escolha entre guardar e comer": [
+      "worldbuilding-xxiii:circuitos_materiais:sementes-e-reserva"
+    ],
+    "A exceção que não termina": [
+      "worldbuilding-xxiii:etica_da_agua:crise-e-excecao"
+    ],
+    "A ferramenta que não foi arma": [
+      "worldbuilding-xxiii:vinhetas:o-reparo"
+    ],
+    "A fé que não precisa de capital": [
+      "worldbuilding-xxiii:dominios_sociais:ritual-e-pluralidade"
+    ],
+    "A hospitalidade tem limites materiais": [
+      "worldbuilding-xxiii:mobilidades:refugio-e-recusa"
+    ],
+    "A memória não elege inocentes": [
+      "worldbuilding-xxiii:dominios_sociais:luto-e-reparacao"
+    ],
+    "A oficina vale tanto quanto a arma": [
+      "worldbuilding-xxiii:circuitos_materiais:reparo-de-recipientes"
+    ],
+    "A segurança de não revelar tudo": [
+      "worldbuilding-xxiii:mobilidades:mensageiros-e-segredos"
+    ],
+    "A sombra do cântaro": [
+      "worldbuilding-xxiii:vinhetas:a-sombra-do-cantaro"
+    ],
+    "A última semente": [
+      "worldbuilding-xxiii:vinhetas:a-semente"
+    ],
+    "Aliados que brigam depois": [
+      "worldbuilding-xxiii:mobilidades:memoria-de-351"
+    ],
+    "Casa temporária não é falta de cultura": [
+      "worldbuilding-xxiii:dominios_sociais:habitar-sem-mapa"
+    ],
+    "Clã, casa e escolha": [
+      "worldbuilding-xxiii:dominios_sociais:familias-e-clas"
+    ],
+    "Consertar dá direito de mandar?": [
+      "worldbuilding-xxiii:etica_da_agua:manutencao-e-autoridade"
+    ],
+    "Cooperar sem apagar a pilhagem": [
+      "worldbuilding-xxiii:circuitos_materiais:trocas-com-a-costa"
+    ],
+    "Dois territórios, múltiplas relações": [
+      "worldbuilding-xxiii:mobilidades:vinculos-entre-costa-e-interior"
+    ],
+    "Estoque não é sinônimo de abundância": [
+      "worldbuilding-xxiii:circuitos_materiais:armazenagem-e-perdas"
+    ],
+    "Ferramenta, confiança e reparo": [
+      "worldbuilding-xxiii:dominios_sociais:comercio-sem-moeda-inventada"
+    ],
+    "Inimigos num ano, aliados em outro": [
+      "worldbuilding-xxiii:relacoes_regionais:orc-e-humano"
+    ],
+    "Movimento não é nomadismo universal": [
+      "worldbuilding-xxiii:mobilidades:pastos-e-inferencias"
+    ],
+    "Nem toda partida é fuga": [
+      "worldbuilding-xxiii:mobilidades:exilio-e-escolha"
+    ],
+    "Não ocupado não é protegido": [
+      "worldbuilding-xxiii:relacoes_regionais:corte-e-ausencia"
+    ],
+    "O aprendizado que não é militar": [
+      "worldbuilding-xxiii:dominios_sociais:ensino-de-sobrevivencia"
+    ],
+    "O litoral possui outra ameaça": [
+      "worldbuilding-xxiii:relacoes_regionais:guerra-marinha"
+    ],
+    "O nono silêncio": [
+      "worldbuilding-xxiii:vinhetas:o-nono-silencio"
+    ],
+    "O peso que não entra na conta": [
+      "worldbuilding-xxiii:circuitos_materiais:cuidado-e-carga"
+    ],
+    "O recado que não comprova uma rota": [
+      "worldbuilding-xxiii:circuitos_materiais:noticias-e-distancias"
+    ],
+    "Prestígio não é soberania": [
+      "worldbuilding-xxiii:dominios_sociais:autoridade-e-negociacao"
+    ],
+    "Quem bebe antes de quem?": [
+      "worldbuilding-xxiii:etica_da_agua:primeira-necessidade"
+    ],
+    "Quem confere o que foi medido?": [
+      "worldbuilding-xxiii:etica_da_agua:medicao-e-verdade"
+    ],
+    "Quem cuida quando a viagem falha?": [
+      "worldbuilding-xxiii:dominios_sociais:cuidado-e-vizinhanca"
+    ],
+    "Quem tem direito de descansar?": [
+      "worldbuilding-xxiii:dominios_sociais:saude-e-calor"
+    ],
+    "Quem é visto apenas como invasor": [
+      "worldbuilding-xxiii:relacoes_regionais:agricultor-e-exilado"
+    ],
+    "Receitas sem inventário de espécies": [
+      "worldbuilding-xxiii:dominios_sociais:cozinha-e-memoria"
+    ],
+    "Reter água pode afetar outra família": [
+      "worldbuilding-xxiii:etica_da_agua:agua-e-solo"
+    ],
+    "Rir numa terra séria": [
+      "worldbuilding-xxiii:dominios_sociais:humor-e-hospitalidade"
+    ],
+    "Trabalhos que não cabem em epopeias": [
+      "worldbuilding-xxiii:dominios_sociais:trabalho-das-mulheres-e-generos"
+    ],
+    "Um nome conhecido não é um destino inevitável": [
+      "worldbuilding-xxiii:relacoes_regionais:interior-e-portomonte"
+    ],
+    "Água de lavoura não é água de beber": [
+      "worldbuilding-xxiii:etica_da_agua:agua-de-plantio"
+    ]
+  },
+  "by_slug": {
+    "a-semente": [
+      "worldbuilding-xxiii:vinhetas:a-semente"
+    ],
+    "a-sombra-do-cantaro": [
+      "worldbuilding-xxiii:vinhetas:a-sombra-do-cantaro"
+    ],
+    "agricultor-e-exilado": [
+      "worldbuilding-xxiii:relacoes_regionais:agricultor-e-exilado"
+    ],
+    "agua-de-plantio": [
+      "worldbuilding-xxiii:etica_da_agua:agua-de-plantio"
+    ],
+    "agua-e-solo": [
+      "worldbuilding-xxiii:etica_da_agua:agua-e-solo"
+    ],
+    "armazenagem-e-perdas": [
+      "worldbuilding-xxiii:circuitos_materiais:armazenagem-e-perdas"
+    ],
+    "autoridade-e-negociacao": [
+      "worldbuilding-xxiii:dominios_sociais:autoridade-e-negociacao"
+    ],
+    "carta-sem-destino": [
+      "worldbuilding-xxiii:vinhetas:carta-sem-destino"
+    ],
+    "comercio-sem-moeda-inventada": [
+      "worldbuilding-xxiii:dominios_sociais:comercio-sem-moeda-inventada"
+    ],
+    "corte-e-ausencia": [
+      "worldbuilding-xxiii:relacoes_regionais:corte-e-ausencia"
+    ],
+    "cozinha-e-memoria": [
+      "worldbuilding-xxiii:dominios_sociais:cozinha-e-memoria"
+    ],
+    "crise-e-excecao": [
+      "worldbuilding-xxiii:etica_da_agua:crise-e-excecao"
+    ],
+    "cuidado-e-carga": [
+      "worldbuilding-xxiii:circuitos_materiais:cuidado-e-carga"
+    ],
+    "cuidado-e-vizinhanca": [
+      "worldbuilding-xxiii:dominios_sociais:cuidado-e-vizinhanca"
+    ],
+    "ensino-de-sobrevivencia": [
+      "worldbuilding-xxiii:dominios_sociais:ensino-de-sobrevivencia"
+    ],
+    "exilio-e-escolha": [
+      "worldbuilding-xxiii:mobilidades:exilio-e-escolha"
+    ],
+    "familias-e-clas": [
+      "worldbuilding-xxiii:dominios_sociais:familias-e-clas"
+    ],
+    "guerra-marinha": [
+      "worldbuilding-xxiii:relacoes_regionais:guerra-marinha"
+    ],
+    "habitar-sem-mapa": [
+      "worldbuilding-xxiii:dominios_sociais:habitar-sem-mapa"
+    ],
+    "humor-e-hospitalidade": [
+      "worldbuilding-xxiii:dominios_sociais:humor-e-hospitalidade"
+    ],
+    "interior-e-portomonte": [
+      "worldbuilding-xxiii:relacoes_regionais:interior-e-portomonte"
+    ],
+    "luto-e-reparacao": [
+      "worldbuilding-xxiii:dominios_sociais:luto-e-reparacao"
+    ],
+    "manutencao-e-autoridade": [
+      "worldbuilding-xxiii:etica_da_agua:manutencao-e-autoridade"
+    ],
+    "medicao-e-verdade": [
+      "worldbuilding-xxiii:etica_da_agua:medicao-e-verdade"
+    ],
+    "memoria-de-351": [
+      "worldbuilding-xxiii:mobilidades:memoria-de-351"
+    ],
+    "mensageiros-e-segredos": [
+      "worldbuilding-xxiii:mobilidades:mensageiros-e-segredos"
+    ],
+    "noticias-e-distancias": [
+      "worldbuilding-xxiii:circuitos_materiais:noticias-e-distancias"
+    ],
+    "o-nono-silencio": [
+      "worldbuilding-xxiii:vinhetas:o-nono-silencio"
+    ],
+    "o-reparo": [
+      "worldbuilding-xxiii:vinhetas:o-reparo"
+    ],
+    "orc-e-humano": [
+      "worldbuilding-xxiii:relacoes_regionais:orc-e-humano"
+    ],
+    "pastos-e-inferencias": [
+      "worldbuilding-xxiii:mobilidades:pastos-e-inferencias"
+    ],
+    "primeira-necessidade": [
+      "worldbuilding-xxiii:etica_da_agua:primeira-necessidade"
+    ],
+    "refugio-e-recusa": [
+      "worldbuilding-xxiii:mobilidades:refugio-e-recusa"
+    ],
+    "reparo-de-recipientes": [
+      "worldbuilding-xxiii:circuitos_materiais:reparo-de-recipientes"
+    ],
+    "ritual-e-pluralidade": [
+      "worldbuilding-xxiii:dominios_sociais:ritual-e-pluralidade"
+    ],
+    "saude-e-calor": [
+      "worldbuilding-xxiii:dominios_sociais:saude-e-calor"
+    ],
+    "sementes-e-reserva": [
+      "worldbuilding-xxiii:circuitos_materiais:sementes-e-reserva"
+    ],
+    "trabalho-das-mulheres-e-generos": [
+      "worldbuilding-xxiii:dominios_sociais:trabalho-das-mulheres-e-generos"
+    ],
+    "trocas-com-a-costa": [
+      "worldbuilding-xxiii:circuitos_materiais:trocas-com-a-costa"
+    ],
+    "vinculos-entre-costa-e-interior": [
+      "worldbuilding-xxiii:mobilidades:vinculos-entre-costa-e-interior"
+    ]
+  }
+}
