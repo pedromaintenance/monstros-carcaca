@@ -1,0 +1,397 @@
+{
+  "by_categoria": {
+    "circuitos_civis": [
+      "worldbuilding-xxii:circuito:cultivo-e-casa",
+      "worldbuilding-xxii:circuito:ensino-e-aprendizado",
+      "worldbuilding-xxii:circuito:hospedagem-e-transito",
+      "worldbuilding-xxii:circuito:memoria-de-violencia",
+      "worldbuilding-xxii:circuito:registro-de-familia",
+      "worldbuilding-xxii:circuito:vestuario-adaptado"
+    ],
+    "contextos_de_convivencia": [
+      "worldbuilding-xxii:contexto:assentamentos-do-abismo",
+      "worldbuilding-xxii:contexto:cidades-cosmopolitas",
+      "worldbuilding-xxii:contexto:comunidades-refugiadas",
+      "worldbuilding-xxii:contexto:familias-multiancestrais",
+      "worldbuilding-xxii:contexto:linhagens-de-origem-obscura",
+      "worldbuilding-xxii:contexto:territorios-perifericos"
+    ],
+    "costumes_candidatos": [
+      "worldbuilding-xxii:costume:cuidado-das-marcas",
+      "worldbuilding-xxii:costume:memoria-sem-cobrar",
+      "worldbuilding-xxii:costume:mesa-das-familias",
+      "worldbuilding-xxii:costume:nome-escolhido"
+    ],
+    "eixos_sociais": [
+      "worldbuilding-xxii:eixo:arte-e-memoria",
+      "worldbuilding-xxii:eixo:corpo-e-acessibilidade",
+      "worldbuilding-xxii:eixo:deslocamento-e-regresso",
+      "worldbuilding-xxii:eixo:direito-e-coercao",
+      "worldbuilding-xxii:eixo:familias-plurais",
+      "worldbuilding-xxii:eixo:infancia-e-tracos",
+      "worldbuilding-xxii:eixo:linhagem-e-pertencimento",
+      "worldbuilding-xxii:eixo:moradia-e-vizinhanca",
+      "worldbuilding-xxii:eixo:nomes-e-identidade",
+      "worldbuilding-xxii:eixo:religioes-e-ancestrais",
+      "worldbuilding-xxii:eixo:trabalho-e-estigma"
+    ],
+    "tensoes": [
+      "worldbuilding-xxii:tensao:ancestral-e-culto",
+      "worldbuilding-xxii:tensao:aparencia-e-poder",
+      "worldbuilding-xxii:tensao:marcas-na-crianca",
+      "worldbuilding-xxii:tensao:parentes-sem-divida",
+      "worldbuilding-xxii:tensao:prova-de-linhagem",
+      "worldbuilding-xxii:tensao:reputacao-da-aldeia"
+    ],
+    "vinhetas": [
+      "worldbuilding-xxii:vinheta:a-mercearia",
+      "worldbuilding-xxii:vinheta:album-sem-nome",
+      "worldbuilding-xxii:vinheta:capacete-e-chifres",
+      "worldbuilding-xxii:vinheta:filhos-de-escolhas"
+    ]
+  },
+  "by_estado": {
+    "arranjo_material_hipotetico": [
+      "worldbuilding-xxii:circuito:cultivo-e-casa",
+      "worldbuilding-xxii:circuito:ensino-e-aprendizado",
+      "worldbuilding-xxii:circuito:hospedagem-e-transito",
+      "worldbuilding-xxii:circuito:memoria-de-violencia",
+      "worldbuilding-xxii:circuito:registro-de-familia",
+      "worldbuilding-xxii:circuito:vestuario-adaptado"
+    ],
+    "conflito_hipotetico": [
+      "worldbuilding-xxii:tensao:ancestral-e-culto",
+      "worldbuilding-xxii:tensao:aparencia-e-poder",
+      "worldbuilding-xxii:tensao:marcas-na-crianca",
+      "worldbuilding-xxii:tensao:parentes-sem-divida",
+      "worldbuilding-xxii:tensao:prova-de-linhagem",
+      "worldbuilding-xxii:tensao:reputacao-da-aldeia"
+    ],
+    "contexto_cultural_proposto": [
+      "worldbuilding-xxii:contexto:assentamentos-do-abismo",
+      "worldbuilding-xxii:contexto:cidades-cosmopolitas",
+      "worldbuilding-xxii:contexto:comunidades-refugiadas",
+      "worldbuilding-xxii:contexto:familias-multiancestrais",
+      "worldbuilding-xxii:contexto:linhagens-de-origem-obscura",
+      "worldbuilding-xxii:contexto:territorios-perifericos"
+    ],
+    "costume_candidato_nao_adotado": [
+      "worldbuilding-xxii:costume:cuidado-das-marcas",
+      "worldbuilding-xxii:costume:memoria-sem-cobrar",
+      "worldbuilding-xxii:costume:mesa-das-familias",
+      "worldbuilding-xxii:costume:nome-escolhido"
+    ],
+    "ficcao_experimental": [
+      "worldbuilding-xxii:vinheta:a-mercearia",
+      "worldbuilding-xxii:vinheta:album-sem-nome",
+      "worldbuilding-xxii:vinheta:capacete-e-chifres",
+      "worldbuilding-xxii:vinheta:filhos-de-escolhas"
+    ],
+    "proposta_nao_canonica": [
+      "worldbuilding-xxii:eixo:arte-e-memoria",
+      "worldbuilding-xxii:eixo:corpo-e-acessibilidade",
+      "worldbuilding-xxii:eixo:deslocamento-e-regresso",
+      "worldbuilding-xxii:eixo:direito-e-coercao",
+      "worldbuilding-xxii:eixo:familias-plurais",
+      "worldbuilding-xxii:eixo:infancia-e-tracos",
+      "worldbuilding-xxii:eixo:linhagem-e-pertencimento",
+      "worldbuilding-xxii:eixo:moradia-e-vizinhanca",
+      "worldbuilding-xxii:eixo:nomes-e-identidade",
+      "worldbuilding-xxii:eixo:religioes-e-ancestrais",
+      "worldbuilding-xxii:eixo:trabalho-e-estigma"
+    ]
+  },
+  "by_nome": {
+    "A aldeia que não é culto": [
+      "worldbuilding-xxii:tensao:reputacao-da-aldeia"
+    ],
+    "A cidade não foi feita para esta cauda": [
+      "worldbuilding-xxii:eixo:corpo-e-acessibilidade"
+    ],
+    "A coroa dos chifres": [
+      "worldbuilding-xxii:tensao:aparencia-e-poder"
+    ],
+    "A dívida que ninguém assumiu": [
+      "worldbuilding-xxii:eixo:direito-e-coercao"
+    ],
+    "A mercearia perto do Abismo": [
+      "worldbuilding-xxii:vinheta:a-mercearia"
+    ],
+    "A solidão de não ser exceção": [
+      "worldbuilding-xxii:contexto:territorios-perifericos"
+    ],
+    "Ancestral não é necessariamente divindade": [
+      "worldbuilding-xxii:eixo:religioes-e-ancestrais"
+    ],
+    "Aprender sem ser reduzido a magia": [
+      "worldbuilding-xxii:circuito:ensino-e-aprendizado"
+    ],
+    "Certidão de fogo": [
+      "worldbuilding-xxii:tensao:prova-de-linhagem"
+    ],
+    "Cidades de muitos nomes": [
+      "worldbuilding-xxii:contexto:cidades-cosmopolitas"
+    ],
+    "Cuidar do corpo sem profetizar": [
+      "worldbuilding-xxii:costume:cuidado-das-marcas"
+    ],
+    "De quem é uma história de família?": [
+      "worldbuilding-xxii:eixo:linhagem-e-pertencimento"
+    ],
+    "Famílias não redutíveis ao sangue": [
+      "worldbuilding-xxii:contexto:familias-multiancestrais"
+    ],
+    "Filhos de decisões diferentes": [
+      "worldbuilding-xxii:vinheta:filhos-de-escolhas"
+    ],
+    "Honrar não é obedecer": [
+      "worldbuilding-xxii:tensao:ancestral-e-culto"
+    ],
+    "Ir embora não apaga uma origem": [
+      "worldbuilding-xxii:eixo:deslocamento-e-regresso"
+    ],
+    "Lembrar sem herdar culpa": [
+      "worldbuilding-xxii:costume:memoria-sem-cobrar"
+    ],
+    "Memória escolhida, não extraída": [
+      "worldbuilding-xxii:circuito:registro-de-familia"
+    ],
+    "O ancestral que ninguém sabe nomear": [
+      "worldbuilding-xxii:contexto:linhagens-de-origem-obscura"
+    ],
+    "O corpo tornado profecia": [
+      "worldbuilding-xxii:tensao:marcas-na-crianca"
+    ],
+    "O dia de dizer o próprio nome": [
+      "worldbuilding-xxii:costume:nome-escolhido"
+    ],
+    "O emprego antes do sobrenome": [
+      "worldbuilding-xxii:eixo:trabalho-e-estigma"
+    ],
+    "O nome que a pessoa escolheu": [
+      "worldbuilding-xxii:eixo:nomes-e-identidade"
+    ],
+    "O pacto que não foi assinado": [
+      "worldbuilding-xxii:tensao:parentes-sem-divida"
+    ],
+    "O parentesco que não cabe em uma categoria": [
+      "worldbuilding-xxii:eixo:familias-plurais"
+    ],
+    "O álbum incompleto": [
+      "worldbuilding-xxii:vinheta:album-sem-nome"
+    ],
+    "Preservar o testemunho sem repetir o dano": [
+      "worldbuilding-xxii:circuito:memoria-de-violencia"
+    ],
+    "Refúgios de origens misturadas": [
+      "worldbuilding-xxii:contexto:comunidades-refugiadas"
+    ],
+    "Retratos sem caricatura": [
+      "worldbuilding-xxii:eixo:arte-e-memoria"
+    ],
+    "Tecidos que não transformam corpos em problemas": [
+      "worldbuilding-xxii:circuito:vestuario-adaptado"
+    ],
+    "Trabalho doméstico comum": [
+      "worldbuilding-xxii:circuito:cultivo-e-casa"
+    ],
+    "Um capacete para trabalhar": [
+      "worldbuilding-xxii:vinheta:capacete-e-chifres"
+    ],
+    "Um lugar para regressar": [
+      "worldbuilding-xxii:circuito:hospedagem-e-transito"
+    ],
+    "Uma criança não é um presságio": [
+      "worldbuilding-xxii:eixo:infancia-e-tracos"
+    ],
+    "Uma mesa para ramos distintos": [
+      "worldbuilding-xxii:costume:mesa-das-familias"
+    ],
+    "Viver perto do Abismo sem servir ao Abismo": [
+      "worldbuilding-xxii:eixo:moradia-e-vizinhanca"
+    ],
+    "Viver à sombra do limite": [
+      "worldbuilding-xxii:contexto:assentamentos-do-abismo"
+    ]
+  },
+  "by_slug": {
+    "a-mercearia": [
+      "worldbuilding-xxii:vinheta:a-mercearia"
+    ],
+    "album-sem-nome": [
+      "worldbuilding-xxii:vinheta:album-sem-nome"
+    ],
+    "ancestral-e-culto": [
+      "worldbuilding-xxii:tensao:ancestral-e-culto"
+    ],
+    "aparencia-e-poder": [
+      "worldbuilding-xxii:tensao:aparencia-e-poder"
+    ],
+    "arte-e-memoria": [
+      "worldbuilding-xxii:eixo:arte-e-memoria"
+    ],
+    "assentamentos-do-abismo": [
+      "worldbuilding-xxii:contexto:assentamentos-do-abismo"
+    ],
+    "capacete-e-chifres": [
+      "worldbuilding-xxii:vinheta:capacete-e-chifres"
+    ],
+    "cidades-cosmopolitas": [
+      "worldbuilding-xxii:contexto:cidades-cosmopolitas"
+    ],
+    "comunidades-refugiadas": [
+      "worldbuilding-xxii:contexto:comunidades-refugiadas"
+    ],
+    "corpo-e-acessibilidade": [
+      "worldbuilding-xxii:eixo:corpo-e-acessibilidade"
+    ],
+    "cuidado-das-marcas": [
+      "worldbuilding-xxii:costume:cuidado-das-marcas"
+    ],
+    "cultivo-e-casa": [
+      "worldbuilding-xxii:circuito:cultivo-e-casa"
+    ],
+    "deslocamento-e-regresso": [
+      "worldbuilding-xxii:eixo:deslocamento-e-regresso"
+    ],
+    "direito-e-coercao": [
+      "worldbuilding-xxii:eixo:direito-e-coercao"
+    ],
+    "ensino-e-aprendizado": [
+      "worldbuilding-xxii:circuito:ensino-e-aprendizado"
+    ],
+    "familias-multiancestrais": [
+      "worldbuilding-xxii:contexto:familias-multiancestrais"
+    ],
+    "familias-plurais": [
+      "worldbuilding-xxii:eixo:familias-plurais"
+    ],
+    "filhos-de-escolhas": [
+      "worldbuilding-xxii:vinheta:filhos-de-escolhas"
+    ],
+    "hospedagem-e-transito": [
+      "worldbuilding-xxii:circuito:hospedagem-e-transito"
+    ],
+    "infancia-e-tracos": [
+      "worldbuilding-xxii:eixo:infancia-e-tracos"
+    ],
+    "linhagem-e-pertencimento": [
+      "worldbuilding-xxii:eixo:linhagem-e-pertencimento"
+    ],
+    "linhagens-de-origem-obscura": [
+      "worldbuilding-xxii:contexto:linhagens-de-origem-obscura"
+    ],
+    "marcas-na-crianca": [
+      "worldbuilding-xxii:tensao:marcas-na-crianca"
+    ],
+    "memoria-de-violencia": [
+      "worldbuilding-xxii:circuito:memoria-de-violencia"
+    ],
+    "memoria-sem-cobrar": [
+      "worldbuilding-xxii:costume:memoria-sem-cobrar"
+    ],
+    "mesa-das-familias": [
+      "worldbuilding-xxii:costume:mesa-das-familias"
+    ],
+    "moradia-e-vizinhanca": [
+      "worldbuilding-xxii:eixo:moradia-e-vizinhanca"
+    ],
+    "nome-escolhido": [
+      "worldbuilding-xxii:costume:nome-escolhido"
+    ],
+    "nomes-e-identidade": [
+      "worldbuilding-xxii:eixo:nomes-e-identidade"
+    ],
+    "parentes-sem-divida": [
+      "worldbuilding-xxii:tensao:parentes-sem-divida"
+    ],
+    "prova-de-linhagem": [
+      "worldbuilding-xxii:tensao:prova-de-linhagem"
+    ],
+    "registro-de-familia": [
+      "worldbuilding-xxii:circuito:registro-de-familia"
+    ],
+    "religioes-e-ancestrais": [
+      "worldbuilding-xxii:eixo:religioes-e-ancestrais"
+    ],
+    "reputacao-da-aldeia": [
+      "worldbuilding-xxii:tensao:reputacao-da-aldeia"
+    ],
+    "territorios-perifericos": [
+      "worldbuilding-xxii:contexto:territorios-perifericos"
+    ],
+    "trabalho-e-estigma": [
+      "worldbuilding-xxii:eixo:trabalho-e-estigma"
+    ],
+    "vestuario-adaptado": [
+      "worldbuilding-xxii:circuito:vestuario-adaptado"
+    ]
+  },
+  "by_inicial": {
+    "A": [
+      "worldbuilding-xxii:circuito:ensino-e-aprendizado",
+      "worldbuilding-xxii:contexto:territorios-perifericos",
+      "worldbuilding-xxii:eixo:corpo-e-acessibilidade",
+      "worldbuilding-xxii:eixo:direito-e-coercao",
+      "worldbuilding-xxii:eixo:religioes-e-ancestrais",
+      "worldbuilding-xxii:tensao:aparencia-e-poder",
+      "worldbuilding-xxii:tensao:reputacao-da-aldeia",
+      "worldbuilding-xxii:vinheta:a-mercearia"
+    ],
+    "C": [
+      "worldbuilding-xxii:contexto:cidades-cosmopolitas",
+      "worldbuilding-xxii:costume:cuidado-das-marcas",
+      "worldbuilding-xxii:tensao:prova-de-linhagem"
+    ],
+    "D": [
+      "worldbuilding-xxii:eixo:linhagem-e-pertencimento"
+    ],
+    "F": [
+      "worldbuilding-xxii:contexto:familias-multiancestrais",
+      "worldbuilding-xxii:vinheta:filhos-de-escolhas"
+    ],
+    "H": [
+      "worldbuilding-xxii:tensao:ancestral-e-culto"
+    ],
+    "I": [
+      "worldbuilding-xxii:eixo:deslocamento-e-regresso"
+    ],
+    "L": [
+      "worldbuilding-xxii:costume:memoria-sem-cobrar"
+    ],
+    "M": [
+      "worldbuilding-xxii:circuito:registro-de-familia"
+    ],
+    "O": [
+      "worldbuilding-xxii:contexto:linhagens-de-origem-obscura",
+      "worldbuilding-xxii:costume:nome-escolhido",
+      "worldbuilding-xxii:eixo:familias-plurais",
+      "worldbuilding-xxii:eixo:nomes-e-identidade",
+      "worldbuilding-xxii:eixo:trabalho-e-estigma",
+      "worldbuilding-xxii:tensao:marcas-na-crianca",
+      "worldbuilding-xxii:tensao:parentes-sem-divida",
+      "worldbuilding-xxii:vinheta:album-sem-nome"
+    ],
+    "P": [
+      "worldbuilding-xxii:circuito:memoria-de-violencia"
+    ],
+    "R": [
+      "worldbuilding-xxii:contexto:comunidades-refugiadas",
+      "worldbuilding-xxii:eixo:arte-e-memoria"
+    ],
+    "T": [
+      "worldbuilding-xxii:circuito:cultivo-e-casa",
+      "worldbuilding-xxii:circuito:vestuario-adaptado"
+    ],
+    "U": [
+      "worldbuilding-xxii:circuito:hospedagem-e-transito",
+      "worldbuilding-xxii:costume:mesa-das-familias",
+      "worldbuilding-xxii:eixo:infancia-e-tracos",
+      "worldbuilding-xxii:vinheta:capacete-e-chifres"
+    ],
+    "V": [
+      "worldbuilding-xxii:contexto:assentamentos-do-abismo",
+      "worldbuilding-xxii:eixo:moradia-e-vizinhanca"
+    ]
+  }
+}
