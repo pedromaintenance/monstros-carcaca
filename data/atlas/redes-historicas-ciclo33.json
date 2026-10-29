@@ -470,11 +470,7 @@
       "id": "tempo-xxxiii:07",
       "ano_ec": 666,
       "titulo": "Mudança oficial dos Lordes para a Carcaça",
-      "setores": [
-        "foz",
-        "eldroth",
-        "thargrid"
-      ],
+      "setores": [],
       "paginas": [
         9
       ],
@@ -597,15 +593,14 @@
       "ano_ec": 984,
       "titulo": "Tomada de Gualápolis pelo Senhor do Rio",
       "setores": [
-        "foz",
-        "shadar"
+        "foz"
       ],
       "paginas": [
         10
       ],
       "estado": "cronologia_do_manuscrito",
       "tipo": "fato_historico",
-      "nota": "Conexão de Shadar-Riverie/Gualápolis precisa de revisão topológica."
+      "nota": "Gualápolis é atribuída ao setor da foz neste índice, mas o vínculo com Shadar-Riverie permanece incerto no próprio manuscrito."
     },
     {
       "id": "tempo-xxxiii:17",
