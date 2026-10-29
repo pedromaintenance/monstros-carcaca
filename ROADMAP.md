@@ -872,3 +872,21 @@ A faixa flexível de **145–205 assentamentos e ilhas** não é reservada a hum
 - [ ] **Ciclo XLVII sugerido:** individualização hipotética de ilhas, expansão de assentamentos submersos, cauda e entorno do Templo do Crepúsculo sem inventar passagens pelo Abismo.
 
 [Documento XLVI](docs/ATLAS_POVOAMENTO_QUATRO_FRENTES_CICLO46.md) · [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#fourFrontSettlements).
+
+## Ciclo XLVII — Ilhas, sociedades submarinas e Cauda (2026-10-29)
+
+- [x] Elaborar **10 ilhas individuais propostas** dentro do contexto coletivo dos arquipélagos tortles e tabaxis, sem tratá-las como ilhas já documentadas.
+- [x] Distinguir quatro ilhas **sem comunidade associada** e seis assentamentos insulares propostos, evitando contar uma ilha como vila.
+- [x] Criar **12 comunidades submarinas**, seis no Mar de Sangue e seis nas águas azuis, com regimes, economia e ecologia separados.
+- [x] Criar **8 comunidades propostas na Cauda**, sem confirmar ligação física com a Boca do Abismo ou abastecimento da Corte.
+- [x] Catalogar **12 habitats** adicionais (reprodução, migração, predadores, espécies bentônicas e fenómenos feéricos) fora das contagens de assentamentos.
+- [x] Respeitar que Abissais marinhos não são demônios e que Tritões e Sereias não formam um único Estado.
+- [x] Validar exclusividade dos nomes/IDs em relação aos três lotes anteriores, fontes, ambientes e status autoral.
+- [x] Publicar painel interativo no Atlas, arquivo de dados e testes em ambas as pipelines.
+- [x] Registrar balanço: **10 ilhas propostas, 26 comunidades novas, 12 habitats novos; 82 propostas de comunidades e 34 habitats acumulados; 0 aprovações**.
+- [ ] Revisar propostas das ilhas e comunidades uma a uma com a autoria para identificar quais merecem aprovação e quais permanecem alternativas.
+- [ ] Individualizar locais documentados genericamente no manuscrito sem impor-lhes nomes propostos.
+- [ ] Planejar um **painel transversal de densidade e diversidade** por região, criatura, tipo de localidade e status documental.
+- [ ] Continuar a expansão da **Costa Sul continental** e outras frentes ainda pouco diferenciadas antes de encerrar o macro.
+
+[Documento XLVII](docs/ATLAS_ARQUIPELAGOS_MARES_CAUDA_CICLO47.md) · [Atlas XLVII](https://pedromaintenance.github.io/monstros-carcaca/atlas/#marineTailSettlements).
