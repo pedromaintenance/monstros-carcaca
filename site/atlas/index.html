@@ -350,6 +350,28 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .charter-inspector{min-width:0}
 @media(max-width:820px){.charter-stacks{grid-template-columns:1fr}.charter-stack .charter-pin{width:auto}.charter-gaps{grid-template-columns:1fr}}
 @media(max-width:620px){.charter-compass{padding:9px}.charter-compass-middle{grid-template-columns:1fr}.charter-compass-cell{padding:10px}.charter-pin{width:auto}.charter-compass-middle .charter-pin{width:100%}}
+
+/* XXXIX — Águas de Golzdov, sem linhas de bacia inferidas */
+.hydro-counts{display:flex;gap:7px;flex-wrap:wrap;margin:14px 0 7px}
+.hydro-counts span{font-size:10px;color:#b9d5c9;border:1px solid #435950;background:#182922;padding:7px 10px;border-radius:8px}
+.hydro-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.hydro-card{background:#1e2c2a;border:1px solid #3f5c59;border-radius:10px;min-height:108px;text-align:left;padding:13px;color:#dfe9e3}
+.hydro-card.current,.hydro-card:hover{border-color:#d4b988;background:#333a32}
+.hydro-card span{font-size:9px;color:#b2c8c1;display:block;margin-bottom:8px}
+.hydro-card b{font-size:12px;display:block;line-height:1.4}
+.hydro-card small{color:#acbdb0;font-size:9px;display:block;margin-top:10px}
+.hydro-links,.hydro-gaps,.hydro-rules{display:grid;gap:10px}
+.hydro-link,.hydro-gap{border-radius:10px;padding:13px;background:#1f2b29;border:1px solid #38524d}
+.hydro-link small,.hydro-gap small{font-size:9px;display:block;color:#b1c6ba}
+.hydro-link div{margin:8px 0;font-size:11px;line-height:1.7}
+.hydro-link div button,.hydro-gap button{font:inherit;color:#ddc69a;text-decoration:underline;text-underline-offset:3px;border:0;background:transparent;padding:0;text-align:left}
+.hydro-link div span{color:#aac4b7}
+.hydro-link p{font-size:11px;line-height:1.7;color:#c1d0c5}
+.hydro-gap b{display:block;color:#e1dfca;font-size:12px;margin:9px 0}
+.hydro-gap button{font-size:10px}
+.hydro-rule{border-left:3px solid #769b90;padding:10px 13px;background:#20302c;border-radius:4px;font-size:11px;line-height:1.7;color:#ced9d0}
+.hydro-mini-gap{border-left:2px solid #958b69;padding-left:10px}
+@media(max-width:650px){.hydro-cards{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -377,6 +399,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
   <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
   <section id="cartographicCharter" class="env-section" aria-label="Carta cartográfica continental"><p class="env-explain">Carregando leitura cartográfica do continente...</p></section>
+  <section id="continentalHydrology" class="env-section" aria-label="Hidrografia continental"><p class="env-explain">Carregando águas e zonas hidrográficas da Carcaça...</p></section>
   <section id="topologyChoices" class="env-section" aria-label="Oficina de alternativas topológicas"><p class="env-explain">Carregando matriz de decisões sobre o continente...</p></section>
   <div class="macro-layout">
     <div id="macroCards" class="macro-grid"><div class="loader">Carregando as regiões documentadas...</div></div>
@@ -428,6 +451,8 @@ import {buildTopologyChoices} from "./topology-choices.mjs";
 import {initTopologyChoices} from "./topology-choices-ui.mjs";
 import {buildCartographicCharter} from "./cartographic-charter.mjs";
 import {initCartographicCharter} from "./cartographic-charter-ui.mjs";
+import {buildContinentalHydrology} from "./continental-hydrology.mjs";
+import {initContinentalHydrology} from "./continental-hydrology-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -450,7 +475,8 @@ const paths={
   environments:"data/atlas/macroambientes-ciclo35.json",
   interfaces:"data/atlas/interfaces-continentais-ciclo36.json",
   topology:"data/atlas/matriz-topologica-ciclo37.json",
-  charter:"data/atlas/carta-cartografica-ciclo38.json"
+  charter:"data/atlas/carta-cartografica-ciclo38.json",
+  hydrology:"data/atlas/hidrografia-continental-ciclo39.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -766,6 +792,7 @@ $("export").addEventListener("click",()=>{
     state.interfaces=buildContinentalInterfaces(loaded.interfaces,state.macro,state.networks,state.environments);
     state.topology=buildTopologyChoices(loaded.topology,state.macro,state.interfaces,state.physical);
     state.charter=buildCartographicCharter(loaded.charter,state.physical,state.interfaces,state.topology);
+    state.hydrology=buildContinentalHydrology(loaded.hydrology,state.physical,state.environments,state.interfaces,state.topology);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -773,6 +800,7 @@ $("export").addEventListener("click",()=>{
     initMacroEnvironments($("macroEnvironments"),state.environments,macroDiveInto);
     initContinentalInterfaces($("macroInterfaces"),state.interfaces);
     initCartographicCharter($("cartographicCharter"),state.charter,macroDiveInto);
+    initContinentalHydrology($("continentalHydrology"),state.hydrology,macroDiveInto);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -791,6 +819,7 @@ $("export").addEventListener("click",()=>{
     $("macroInterfaces").textContent="As interfaces continentais não puderam ser carregadas.";
     $("topologyChoices").textContent="A matriz topológica não pôde ser carregada.";
     $("cartographicCharter").textContent="A carta cartográfica não pôde ser carregada.";
+    $("continentalHydrology").textContent="A hidrografia continental não pôde ser carregada.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
