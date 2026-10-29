@@ -270,7 +270,7 @@
       "titulo": "Cultivos e despensas de Grama-Cortada",
       "setor": "grama",
       "funcao": "autossuficiencia",
-      "ref_rede": "rede-xxxiii:refugio",
+      "ref_rede": null,
       "ref_esfera": null,
       "paginas": [
         18,
@@ -285,7 +285,7 @@
       "titulo": "Fugitivos abrigados por hobbits",
       "setor": "grama",
       "funcao": "acolhimento",
-      "ref_rede": "rede-xxxiii:refugio",
+      "ref_rede": null,
       "ref_esfera": null,
       "paginas": [
         19
@@ -559,7 +559,7 @@
       "para": "fluxo:xli:grama-fugitivos",
       "tipo": "acolhimento_alimentar",
       "modalidade": "transferencia_documentada",
-      "ref_rede": "rede-xxxiii:refugio",
+      "ref_rede": null,
       "paginas": [
         19
       ],
