@@ -13,7 +13,7 @@ export function initMaterialCirculation(el,data){
    const n=nodes.get(selected);if(!n)return '<p>Selecione um nó material.</p>';
    const links=data.vinculos.filter(e=>e.de===n.id||e.para===n.id);
    const gaps=data.lacunas.filter(q=>q.ref_nodo===n.id);
-   return '<div class="env-kicker">'+esc(titles[n.setor])+' · '+esc(n.funcao.replaceAll("-"," "))+'</div>'+
+   return '<div class="env-kicker">'+esc(titles[n.setor])+' · '+esc(n.funcao.replaceAll("_"," "))+'</div>'+
     '<h4>'+esc(n.titulo)+'</h4><div class="env-subhead">Evidência no manuscrito</div><p>'+esc(n.evidencia)+'</p>'+
     '<p class="env-citation">Hack p. '+esc(n.paginas.join(", "))+' · '+esc(n.ref_rede||"sem rede temática confirmada")+'</p>'+
     '<div class="env-subhead">Relações documentadas ('+links.length+')</div>'+
@@ -25,7 +25,7 @@ export function initMaterialCirculation(el,data){
     '<p>Sem coordenadas, medidas de fluxo, custo logístico, frequência aferida ou trajeto homologado.</p>';
  }
  function nodesTab(){
-   return '<p class="material-context">Os nós representam **funções sociais, instituições ou coletividades** citadas no manuscrito. Não são necessariamente cidades nem pontos cartografáveis.</p>'+
+   return '<p class="material-context">Os nós representam <strong>funções sociais, instituições ou coletividades</strong> citadas no manuscrito. Não são necessariamente cidades nem pontos cartografáveis.</p>'+
     '<div class="material-nodes">'+data.nodos.filter(n=>sector==="todos"||n.setor===sector).map(n=>
       '<button class="material-node'+(selected===n.id?" selected":"")+'" type="button" data-material-node="'+esc(n.id)+'">'+
        '<span>'+esc(titles[n.setor])+' · '+esc(n.funcao.replaceAll("_"," "))+'</span>'+
