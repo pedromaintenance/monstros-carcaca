@@ -28,7 +28,7 @@ export function buildMarineTailSettlements(data,old1,old2,old3,macro,environment
      x.paginas_contexto.some(p=>!pages.has(p)))deny("Ambiente, setor ou páginas indevidas: "+x.id);
  }
  function prose(x,keys){
-  for(const k of keys)if(typeof x[k]!=="string"||x[k].length<16)
+  for(const k of keys)if(typeof x[k]!=="string"||x[k].length<(["categoria","forma"].includes(k)?7:16))
     deny("Identidade social/ecológica incompleta: "+x.id+"."+k);
  }
  const islands=new Map();
