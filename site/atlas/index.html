@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark">
+<meta name="description" content="Atlas hierárquico da Carcaça: fontes, assentamentos, biomas, locais de poder, culturas e monstros em uma árvore verificável.">
+<title>Atlas da Carcaça | Cartografia de um Mundo Morto</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=DM+Sans:wght@400;500;600;700&display=swap');
+:root {--bg:#0b0d0e;--panel:#121717;--panel2:#182020;--line:#283232;--text:#dfe6da;--muted:#93a19a;--ink:#c9ddd1;--red:#d76b61;--gold:#d6b577;--green:#85b3a0;--blue:#8caec7;--draft:#bd9ac6;--radius:16px;}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:radial-gradient(ellipse at 9% 0%,#1a2420 0,transparent 38%),radial-gradient(ellipse at 80% 16%,#261e1e 0,transparent 32%),var(--bg);color:var(--text);font:14px/1.55 'DM Sans',system-ui,sans-serif}
+body:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.08;background-image:repeating-linear-gradient(0deg,transparent,transparent 3px,#c7b395 3.5px,transparent 4px)}
+button,input,a{font:inherit}button{color:inherit;cursor:pointer}
+a{color:#c9b992;text-decoration:underline;text-underline-offset:3px}
+button:focus-visible,input:focus-visible,a:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+.site{max-width:1670px;margin:0 auto;padding:0 27px 50px}
+.topline{display:flex;gap:20px;align-items:center;justify-content:space-between;border-bottom:1px solid #34403b;padding:17px 0 14px;font-size:10px;letter-spacing:2.2px;font-weight:700;text-transform:uppercase;color:#aebdb1}
+.topline .brand{display:flex;gap:12px;align-items:center}.brandglyph{font-size:24px;color:var(--red);filter:drop-shadow(0 0 10px #b94d3c45)}
+.topline a{color:var(--muted);text-decoration:none}.topline a:hover{color:var(--text)}
+.hero{display:flex;gap:32px;align-items:end;justify-content:space-between;padding:34px 0 29px}
+.eyebrow{font-weight:700;text-transform:uppercase;font-size:10px;letter-spacing:2px;color:var(--red);margin-bottom:9px}
+h1,h2,h3{font-family:Cinzel,Georgia,serif;font-weight:500;margin:0;line-height:1.22}
+h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
+.hero p{max-width:720px;font-size:14px;line-height:1.8;color:var(--muted);margin:14px 0 0}
+.hero .symbol{flex-shrink:0;width:125px;height:125px;border:1px solid #574a42;border-radius:50%;display:grid;place-content:center;position:relative;color:var(--gold);background:radial-gradient(circle,#392d2444,transparent);font-size:56px}
+.symbol:after,.symbol:before{content:"";position:absolute;border:1px dashed #665347;border-radius:50%;inset:11px}.symbol:after{inset:25px;border-style:solid;opacity:.4}
+.counters{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:10px;margin-bottom:21px}
+.counter{padding:13px 15px;background:#121919c9;border:1px solid #2a3432;border-radius:12px}
+.counter strong{font:500 24px/1.1 Cinzel,serif;color:#eee5d1;display:block}.counter span{display:block;margin-top:5px;color:var(--muted);font-size:10px;letter-spacing:.3px}
+.notice{border-left:3px solid #a87466;background:linear-gradient(90deg,#31211d88,transparent);padding:10px 14px;margin:0 0 22px;color:#d6bcb4;font-size:12px}
+.workspace{display:grid;grid-template-columns:minmax(310px,44%) minmax(320px,1fr);gap:18px;align-items:start}
+.panel{border:1px solid var(--line);background:linear-gradient(170deg,#161d1cfa,#111615f5);border-radius:16px;overflow:hidden;min-height:560px;box-shadow:0 15px 50px #0005}
+.panel-header{padding:19px 20px 15px;border-bottom:1px solid var(--line);display:flex;align-items:start;justify-content:space-between;gap:12px}
+.panel-title{font:500 16px Cinzel,serif}.sub{font-size:11px;color:var(--muted);margin-top:5px}
+.tools{padding:14px 16px;border-bottom:1px solid var(--line);background:#151c1b}
+.search{display:flex;align-items:center;gap:10px;border:1px solid #374341;background:#0c1111;border-radius:10px;padding:0 13px}
+.search .ico{font-size:17px;color:var(--gold)}.search input{height:42px;min-width:0;width:100%;background:none;border:none;outline:none;color:var(--text);font-size:12px}
+.search input::placeholder{color:#7a8a82}
+.filters{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 6px}
+.chip{border:1px solid #46504a;background:#202826;color:var(--muted);padding:6px 10px;border-radius:30px;font-size:10px;transition:.15s}
+.chip.active{background:#32413b;color:#e7ecdf;border-color:#697a67}.chip:hover{border-color:var(--gold)}
+.actionbar{display:flex;align-items:center;flex-wrap:wrap;gap:8px;margin-top:10px}
+.action{border:0;background:transparent;color:#b1bdb3;font-size:11px;padding:4px 0;text-decoration:underline;text-underline-offset:4px}
+.action:hover{color:var(--gold)}
+.separator{width:1px;height:15px;background:var(--line);margin:0 3px}
+.tree-scroll{height:min(67vh,825px);min-height:420px;overflow:auto;scrollbar-color:#47574e transparent;scrollbar-width:thin;padding:12px 9px 18px 6px}
+.tree ul{list-style:none;margin:0;padding:0}
+.tree li{margin:1px 0}.tree li ul{padding-left:21px;margin-left:12px;border-left:1px solid #293631}
+.tree-row{display:flex;align-items:center;gap:5px;width:100%;min-height:33px;border-radius:7px}
+.tree-row:hover{background:#ffffff09}.tree-row.selected{background:#3f34264a;outline:1px solid #aa876049}
+.tree-expand{border:0;background:transparent;width:23px;flex:0 0 23px;font-size:10px;color:#9aab9d;transform:none}
+.tree-expand.empty{opacity:.12;pointer-events:none}
+.tree-select{border:0;background:transparent;display:flex;align-items:center;gap:8px;text-align:left;width:100%;min-width:0;padding:6px 5px 6px 0}
+.tree-symbol{display:inline-grid;place-items:center;width:21px;flex-shrink:0;color:#c5ab7c;font-size:14px}
+.tree-text{white-space:normal;min-width:0;line-height:1.25;overflow-wrap:anywhere;font-size:12px}
+.tree-row[data-kind="regiao"] .tree-text{font-size:13px;font-weight:700;color:#eee2cb}
+.tree-row[data-kind="tipo"] .tree-text{font-weight:600;color:#becbbe}
+.tree-row[data-kind="categoria"] .tree-text{color:#a8b6ad}
+.tree-row[data-kind="registro"] .tree-text{font-size:11.5px}
+.tree-count{margin-left:auto;font-size:10px;color:#74857d;padding-right:6px;white-space:nowrap}
+.dot{width:5px;height:5px;flex-shrink:0;border-radius:100%;background:var(--gold)}
+.dot.manuscrito{background:var(--blue)}.dot.catalogado{background:var(--green)}.dot.proposta{background:var(--draft)}.dot.organizador{background:#6b7670}
+.empty-row{color:#738178;font-style:italic;font-size:10px}
+.details{padding:25px 29px 30px;overflow:auto;max-height:calc(min(67vh,825px) + 112px);min-height:600px}
+.crumbs{display:flex;flex-wrap:wrap;gap:5px;align-items:center;margin-bottom:18px}
+.crumbs button{border:0;background:transparent;padding:3px 2px;color:var(--muted);font-size:11px}
+.crumbs button:hover{color:var(--gold)}.crumbs .slash{color:#536058}
+.kicker{text-transform:uppercase;letter-spacing:1.6px;font-size:10px;color:var(--gold);font-weight:700;margin-bottom:9px}
+.detail-title{font-size:clamp(23px,2.3vw,33px);letter-spacing:-.02em}
+.desc{font-size:13px;line-height:1.85;color:#aebbb1;max-width:790px;margin:13px 0 18px;white-space:pre-line}
+.labels{display:flex;flex-wrap:wrap;gap:6px;margin:14px 0 25px}
+.label{font-size:10px;color:#d9e2d9;border:1px solid #47514a;border-radius:7px;padding:5px 8px}
+.label.doc{border-color:#536c7d;color:#a9c6d9}.label.cur{border-color:#557a68;color:#a6d2bb}.label.prop{border-color:#745f80;color:#d9b9e3}.label.gap{border-color:#6e6253;color:#c5a680}
+.detail-section{border-top:1px solid var(--line);padding-top:20px;margin-top:20px}
+.detail-section h3{font-size:14px;margin-bottom:12px}
+.meta-list{display:grid;grid-template-columns:130px minmax(0,1fr);gap:11px 15px;margin-top:11px;font-size:12px}
+.meta-list dt{color:#7f9588}.meta-list dd{margin:0;overflow-wrap:anywhere}
+.detail-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin-top:13px}
+.detail-card{background:#1b2422;border:1px solid #35443c;border-radius:10px;padding:12px}
+.detail-card strong{font:500 24px Cinzel,serif;color:#e2dbc8;display:block}.detail-card span{font-size:11px;color:#91a297}
+.section-foot{display:flex;flex-wrap:wrap;gap:8px}
+.jump{border:1px solid #4d5a4c;background:#1e2824;padding:8px 11px;border-radius:8px;text-align:left;font-size:11px;color:#dce7d8}
+.jump:hover{border-color:var(--gold)}
+.tiny{font-size:11px;color:var(--muted)}
+.legend{display:flex;align-items:center;flex-wrap:wrap;gap:15px;margin:18px 0 0;color:#89998f;font-size:10px}
+.legend div{display:flex;align-items:center;gap:6px}
+.footer{margin-top:22px;color:#839184;font-size:11px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:15px;border-top:1px solid #28332c;padding:17px 0}
+.tag-link{display:inline-flex;padding:7px 10px;color:#dfd2af;border:1px solid #5a5240;border-radius:8px;text-decoration:none;font-size:11px}.tag-link:hover{background:#343024}
+.loader{padding:45px 23px;color:var(--muted);line-height:1.8}
+.hidden{display:none!important}
+@media(max-width:1100px){.site{padding:0 18px 35px}.counters{grid-template-columns:repeat(3,1fr)}.workspace{grid-template-columns:minmax(290px,43%) minmax(300px,1fr)}.details{padding:19px 20px}}
+@media(max-width:760px){.hero{padding:25px 0}.hero .symbol{display:none}h1{font-size:34px}.counters{grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.counter{padding:10px}.counter strong{font-size:20px}.counter span{font-size:9px}.workspace{grid-template-columns:1fr}.panel{min-height:0}.tree-scroll{height:390px;min-height:0}.details{max-height:none;min-height:360px}.topline{font-size:9px;gap:10px;letter-spacing:1px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<div class="site">
+<header class="topline"><div class="brand"><span class="brandglyph">✧</span><span>CARCAÇA <span style="color:#6c8f80">/</span> ATLAS AUTORAL</span></div><div>V1 · HIERARQUIA EXPLORATÓRIA &nbsp; <a href="https://github.com/pedromaintenance/monstros-carcaca" target="_blank" rel="noopener">REPOSITÓRIO ↗</a></div></header>
+<section class="hero">
+<div><div class="eyebrow">Cartografia de um mundo morto</div><h1>O Atlas da Carcaça</h1>
+<p>Um continente erguido sobre os ossos de Golzdov. Explore a hierarquia entre regiões, lugares, povos, culturas, criaturas, relíquias e memória — sem confundir o que a fonte afirma com aquilo que ainda estamos criando.</p></div>
+<div class="symbol" aria-hidden="true">☽</div>
+</section>
+<section id="metrics" class="counters" aria-label="Resumo do atlas">
+<div class="counter"><strong>—</strong><span>Setores em análise</span></div><div class="counter"><strong>—</strong><span>Lugares no manuscrito</span></div><div class="counter"><strong>—</strong><span>Povos identificados</span></div><div class="counter"><strong>—</strong><span>Criaturas no catálogo</span></div><div class="counter"><strong>—</strong><span>Ecologia proposta</span></div><div class="counter"><strong>—</strong><span>Microespaços propostos</span></div>
+</section>
+<p class="notice" id="warning">Este atlas é uma estrutura de avaliação. Setores de navegação não são regiões políticas oficializadas; posições não documentadas permanecem sem coordenadas. Propostas, relatos e lacunas não são eventos canônicos.</p>
+<main class="workspace">
+<section class="panel" aria-labelledby="tree-title">
+<div class="panel-header"><div><h2 class="panel-title" id="tree-title">Árvore do continente</h2><div class="sub" id="tree-subtitle">Carregando fontes e relações...</div></div><button class="action" id="export" type="button" title="Exportar hierarquia JSON" disabled>Exportar ↓</button></div>
+<div class="tools">
+<label class="search"><span class="ico">⌕</span><input id="query" placeholder="Buscar lugar, pessoa, criatura, cultura..." aria-label="Buscar no atlas" autocomplete="off"></label>
+<div class="filters" role="group" aria-label="Filtros de registro">
+<button class="chip active" data-filter="manuscrito" aria-pressed="true">Manuscrito</button>
+<button class="chip active" data-filter="catalogado" aria-pressed="true">Catalogado</button>
+<button class="chip active" data-filter="proposta" aria-pressed="true">Proposta</button>
+<button class="chip" data-filter="lacunas" aria-pressed="false">Exibir lacunas</button>
+</div>
+<div class="actionbar"><button class="action" id="expand" type="button">Expandir regiões</button><span class="separator"></span><button class="action" id="collapse" type="button">Recolher árvore</button><span class="separator"></span><button class="action" id="reset" type="button">Limpar filtros</button></div>
+</div>
+<div class="tree-scroll"><nav class="tree" id="tree" aria-label="Hierarquia do atlas"><div class="loader">Abrindo os arquivos do mundo...</div></nav></div>
+</section>
+<section class="panel" aria-label="Detalhe do registro">
+<div class="details" id="details">
+<div class="loader"><div class="eyebrow">Leitura do atlas</div><h2>Um mundo ainda em construção</h2><p>Selecione uma região, um lugar ou uma entidade na árvore para ver origem, classificação e relações.</p></div>
+</div></section>
+</main>
+<div class="legend"><div><i class="dot manuscrito"></i> Menção no manuscrito</div><div><i class="dot catalogado"></i> Catálogo estruturado</div><div><i class="dot proposta"></i> Hipótese não aprovada</div><div><i class="dot organizador"></i> Organização editorial</div><div>Pastas vazias = lacuna</div></div>
+<footer class="footer">
+<span>CARCAÇA · Índice territorial interpretativo. Nenhum item é canonizado por esta interface.</span>
+<span>Próximo nível: vínculos, cronologia, habitats, inventário e relações verificáveis.</span>
+</footer>
+</div>
+<script type="module">
+import {buildAtlasTree,CONTENT_TYPES,PLACE_TYPES} from "./atlas-tree.mjs";
+const paths={
+  lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
+  regions:"data/regioes_carcaca.json",
+  places:"data/lugares_carcaca.json",
+  peoples:"data/povos_carcaca.json",
+  factions:"data/faccoes_carcaca.json",
+  settlements:"dist/carcaca/settlements.json",
+  creatures:"dist/carcaca/creatures.json",
+  seeds:"data/propostas/povoamento-regional-hack-carcaca.json",
+  ecology:"data/propostas/eldroth-ecologia-monstruosa-dw.json",
+  statblocks:"data/propostas/eldroth-fichas-dw-ciclo13.json"
+};
+const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
+  expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
+  query:"",showGaps:false};
+const $=id=>document.getElementById(id);
+const esc=v=>String(v??"").replace(/[&<>"']/g,x=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[x]));
+const norm=v=>String(v??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+const icon={mundo:"✧",regiao:"◈",tipo:"▤",lugar:"⌂",categoria:"◇",registro:"✦"};
+const statusLabel={manuscrito:"Fonte / manuscrito",catalogado:"Catálogo formal",proposta:"Proposta não canonizada",organizador:"Pasta editorial"};
+const docLink=v=>v&&v.indexOf("data/")===0||v&&v.indexOf("curadoria/")===0?
+ "https://github.com/pedromaintenance/monstros-carcaca/blob/main/"+v:null;
+function rebuildLookup(){
+  state.byId=new Map(state.atlas.nodes.map(n=>[n.id,n]));
+  state.children=new Map();
+  for(const n of state.atlas.nodes){
+    if(!n.parentId)continue;
+    if(!state.children.has(n.parentId))state.children.set(n.parentId,[]);
+    state.children.get(n.parentId).push(n);
+  }
+  const sorter=new Intl.Collator("pt-BR",{sensitivity:"base"});
+  for(const arr of state.children.values())arr.sort((a,b)=>sorter.compare(a.label,b.label));
+}
+function chain(id){
+  const out=[];let item=state.byId.get(id);
+  while(item){out.unshift(item);item=state.byId.get(item.parentId)}
+  return out;
+}
+function isAllowed(n){
+  if(n.kind==="registro")return state.filters.has(n.status)&&(!state.query||norm([n.label,n.summary,n.sourceId].join(" ")).includes(norm(state.query)));
+  if(n.kind==="categoria"&&n.empty&&state.showGaps&&!state.query)return true;
+  if(n.kind==="categoria"&&n.empty&&!state.showGaps)return false;
+  return false;
+}
+function visible(id){
+  const n=state.byId.get(id);if(!n)return false;
+  if(isAllowed(n))return true;
+  if(n.kind==="registro")return false;
+  const kids=state.children.get(id)||[];
+  if(state.query&&norm([n.label,n.summary].join(" ")).includes(norm(state.query))){
+    return kids.some(k=>hasStatus(k))|| (n.kind==="categoria"&&n.empty&&state.showGaps);
+  }
+  return kids.some(k=>visible(k.id))||(!state.query&&n.kind==="regiao"||n.kind==="mundo");
+}
+function hasStatus(n){
+  if(n.kind==="registro")return state.filters.has(n.status);
+  if(n.empty&&n.kind==="categoria")return state.showGaps;
+  return (state.children.get(n.id)||[]).some(hasStatus);
+}
+function renderItem(n,depth=0){
+  if(depth>1&&!visible(n.id))return "";
+  if(depth===1&&!visible(n.id))return "";
+  const kids=state.children.get(n.id)||[];
+  const shown=kids.filter(k=>visible(k.id));
+  const isOpen=state.query?true:state.expanded.has(n.id);
+  const branch=kids.length>0;
+  const count=n.kind==="categoria"||n.kind==="lugar"||n.kind==="tipo"||n.kind==="regiao"?n.leafCount:0;
+  let result='<li><div class="tree-row'+(state.selected===n.id?' selected':'')+'" data-kind="'+esc(n.kind)+'">';
+  result+='<button type="button" class="tree-expand'+(!branch?" empty":"")+'" data-exp="'+esc(n.id)+'" aria-label="'+(isOpen?"Recolher":"Expandir")+'">'+(branch?(isOpen?"▾":"▸"):"·")+'</button>';
+  result+='<button type="button" class="tree-select" data-id="'+esc(n.id)+'"><span class="tree-symbol">'+(icon[n.kind]||"◇")+'</span>';
+  if(n.kind==="registro")result+='<i class="dot '+esc(n.status)+'"></i>';
+  result+='<span class="tree-text">'+esc(n.label)+'</span></button>';
+  if(count>0)result+='<span class="tree-count">'+count+'</span>';
+  if(n.kind==="categoria"&&n.empty)result+='<span class="tree-count">vazio</span>';
+  result+='</div>';
+  if(isOpen&&shown.length)result+='<ul>'+shown.map(k=>renderItem(k,depth+1)).join("")+'</ul>';
+  return result+'</li>';
+}
+function renderTree(){
+  if(!state.atlas)return;
+  const r=state.byId.get("carcaca");const html='<ul>'+renderItem(r)+'</ul>';
+  $("tree").innerHTML=html;
+  const hits=state.atlas.nodes.filter(n=>n.kind==="registro"&&visible(n.id)).length;
+  $("tree-subtitle").textContent=state.query?String(hits)+" registros correspondentes":"Fontes, propostas e referências por território";
+}
+function metric(label,value){return '<div class="detail-card"><strong>'+esc(value)+'</strong><span>'+esc(label)+'</span></div>'}
+function regionOf(n){let p=n;while(p&&p.kind!=="regiao")p=state.byId.get(p.parentId);return p}
+function descendRecords(node){
+  const results=[];const stack=[node];
+  while(stack.length){const n=stack.pop();if(n.kind==="registro")results.push(n);
+    else for(const k of state.children.get(n.id)||[])stack.push(k)}
+  return results;
+}
+function detail(){
+  if(!state.atlas)return;
+  const n=state.byId.get(state.selected)||state.byId.get("carcaca");
+  const path=chain(n.id);
+  const bc=path.map((p,i)=>'<button type="button" data-jump="'+esc(p.id)+'">'+esc(p.label)+'</button>'+(i<path.length-1?'<span class="slash">›</span>':"")).join("");
+  const label=({mundo:"Continente",regiao:"Setor de navegação",tipo:"Classe de lugar",lugar:"Lugar ou núcleo",categoria:"Classe de conteúdo",registro:"Registro"}[n.kind]||"Registro");
+  let html='<div class="crumbs">'+bc+'</div><div class="kicker">'+esc(label)+'</div>';
+  html+='<h2 class="detail-title">'+esc(n.label)+'</h2>';
+  html+='<p class="desc">'+esc(n.summary||"Registro ainda sem descrição específica.")+'</p>';
+  html+='<div class="labels"><span class="label '+(n.status==="proposta"?"prop":n.status==="catalogado"?"cur":n.status==="manuscrito"?"doc":"gap")+'">'+esc(statusLabel[n.status]||"Categoria")+'</span>';
+  if(n.pages?.length)html+='<span class="label">Hack p. '+esc(n.pages.join(", "))+'</span>';
+  if(n.canonicalRegionId)html+='<span class="label cur">ID oficial: '+esc(n.canonicalRegionId)+'</span>';
+  if(n.curatedPlaceId)html+='<span class="label cur">Lugar catalogado: '+esc(n.curatedPlaceId)+'</span>';
+  if(n.empty)html+='<span class="label gap">Lacuna editorial</span>';
+  html+='</div>';
+  const records=descendRecords(n);
+  if(n.kind!=="registro"){
+    const countKinds=(kind)=>records.filter(x=>x.recordType===kind).length;
+    const places=state.atlas.nodes.filter(x=>x.kind==="lugar"&&chain(x.id).some(a=>a.id===n.id)).length;
+    html+='<section class="detail-section"><h3>Conteúdo mapeado neste ramo</h3><div class="detail-cards">';
+    html+=metric("Lugares e microespaços",places)+metric("Povos e culturas",countKinds("povos")+countKinds("culturas"));
+    html+=metric("Criaturas, fauna e flora",countKinds("criaturas")+countKinds("fauna")+countKinds("flora"));
+    html+=metric("Personagens e facções",countKinds("personagens")+countKinds("faccoes"));
+    html+='</div></section>';
+  }
+  if(n.kind==="regiao"){
+    const places=(state.children.get(n.id)||[]).flatMap(t=>state.children.get(t.id)||[]);
+    const catalog=places.filter(p=>p.kind==="lugar"&&p.status!=="proposta"&&p.placeType!=="ambito").length;
+    const drafts=places.filter(p=>p.kind==="lugar"&&p.status==="proposta").length;
+    html+='<section class="detail-section"><h3>Território e cobertura</h3><p class="tiny">'+catalog+' lugares referenciados, '+drafts+' microespaços em proposta. Setores editoriais não confirmam fronteiras, posse nem localização exata.</p></section>';
+  }
+  if(n.kind==="categoria"&&n.empty){
+    html+='<section class="detail-section"><h3>Área para pesquisa</h3><p class="tiny">Nenhum registro individualizado nesta categoria e neste lugar. Isso não prova ausência de '+esc(n.label.toLowerCase())+' no cenário — apenas que os arquivos consultados ainda não trazem dados suficientes para afirmar uma ocorrência.</p></section>';
+  }
+  if(n.kind==="registro"||n.kind==="lugar"){
+    const source=n.source; const url=docLink(source);
+    html+='<section class="detail-section"><h3>Rastreabilidade</h3><dl class="meta-list">';
+    html+='<dt>ID de referência</dt><dd>'+esc(n.sourceId||n.id)+'</dd>';
+    html+='<dt>Origem</dt><dd>'+esc(source||"Categoria derivada")+'</dd>';
+    html+='<dt>Confiança</dt><dd>'+esc(statusLabel[n.status]||"A classificar")+'</dd>';
+    if(n.precisao)html+='<dt>Precisão</dt><dd>'+esc(n.precisao)+'</dd>';
+    if(n.dwStatus)html+='<dt>Dungeon World</dt><dd>'+esc(n.dwStatus)+'</dd>';
+    if(n.approval===false)html+='<dt>Aprovação</dt><dd>Não homologada</dd>';
+    html+='</dl>';
+    if(url)html+='<div style="margin-top:18px"><a class="tag-link" target="_blank" rel="noopener" href="'+esc(url)+'">Abrir fonte no GitHub ↗</a></div>';
+    html+='</section>';
+  }
+  if(n.relations?.length){
+    html+='<section class="detail-section"><h3>Relações documentais (não são rotas)</h3><div class="section-foot">';
+    for(const rel of n.relations){const to=state.byId.get(rel.to);if(to){
+      html+='<button type="button" class="jump" data-jump="'+esc(to.id)+'" title="'+esc(rel.label)+'">'+esc(to.label)+' ↗</button>';
+    }}html+='</div><p class="tiny">As relações são anotações editoriais; não estabelecem distâncias ou conexões cartográficas.</p></section>';
+  }
+  if(n.kind==="mundo"){
+    html+='<section class="detail-section"><h3>Sete níveis previstos</h3>';
+    html+='<p class="tiny"><b>1.</b> Continente → <b>2.</b> região ou setor → <b>3.</b> classe de lugar → <b>4.</b> local → <b>5.</b> categoria de conteúdo → <b>6.</b> registro individual → <b>7.</b> atributos, vínculos e proveniência (painel de detalhes).</p>';
+    html+='<p class="tiny">Povos não são automaticamente monstros. Culturas podem cruzar vários lugares, por isso o mesmo registro pode aparecer como referência mais de uma vez. O nó transversal não representa um território físico.</p></section>';
+  }
+  html+='<section class="detail-section"><h3>Estrutura e continuidade</h3><p class="tiny">A exploração aqui não altera nenhum dado do projeto. Para homologar propostas, revisar a autoria separadamente. Todo dado sem geografia comprovada é identificado como referência regional ou transversal.</p></section>';
+  $("details").innerHTML=html;
+  $("details").querySelectorAll("[data-jump]").forEach(b=>b.addEventListener("click",()=>select(b.dataset.jump)));
+}
+function select(id){
+  const n=state.byId.get(id);if(!n)return;
+  state.selected=id;for(const p of chain(id))state.expanded.add(p.id);
+  history.replaceState(null,"","#"+encodeURIComponent(id));
+  renderTree();detail();
+}
+function selectDeep(id){
+  select(id);document.querySelector(".details")?.scrollTo({top:0});
+}
+function populateCounters(s){
+  const stats=[
+    [s.setoresGeograficos,"Setores geográficos"],[s.lugaresManuscrito,"Lugares no manuscrito"],
+    [s.povosManuscrito,"Povos identificados"],[s.criaturasCatalogadas,"Criaturas catalogadas"],
+    [s.ecologiaProposta,"Ecologia proposta"],[s.microespacosPropostos,"Microespaços propostos"]
+  ];
+  $("metrics").innerHTML=stats.map(a=>'<div class="counter"><strong>'+esc(a[0])+'</strong><span>'+esc(a[1])+'</span></div>').join("");
+}
+$("query").addEventListener("input",e=>{state.query=e.target.value.trim();renderTree()});
+$("tree").addEventListener("click",e=>{
+  const exp=e.target.closest("[data-exp]");if(exp){const id=exp.dataset.exp;
+    if(state.expanded.has(id))state.expanded.delete(id);else state.expanded.add(id);
+    renderTree();return}
+  const pick=e.target.closest("[data-id]");if(pick)selectDeep(pick.dataset.id);
+});
+document.querySelectorAll("[data-filter]").forEach(el=>el.addEventListener("click",()=>{
+  const f=el.dataset.filter;
+  if(f==="lacunas")state.showGaps=!state.showGaps;
+  else if(state.filters.has(f))state.filters.delete(f);else state.filters.add(f);
+  const pressed=f==="lacunas"?state.showGaps:state.filters.has(f);
+  el.classList.toggle("active",pressed);el.setAttribute("aria-pressed",String(pressed));renderTree()
+}));
+$("expand").addEventListener("click",()=>{for(const n of state.atlas.nodes)if(["mundo","regiao","tipo"].includes(n.kind))state.expanded.add(n.id);renderTree()});
+$("collapse").addEventListener("click",()=>{state.expanded=new Set(["carcaca"]);state.query="";$("query").value="";renderTree()});
+$("reset").addEventListener("click",()=>{
+  state.query="";$("query").value="";state.filters=new Set(["manuscrito","catalogado","proposta"]);state.showGaps=false;
+  document.querySelectorAll("[data-filter]").forEach(el=>{const f=el.dataset.filter,p=f!=="lacunas";el.classList.toggle("active",p);el.setAttribute("aria-pressed",String(p))});
+  renderTree()
+});
+$("export").addEventListener("click",()=>{
+  const blob=new Blob([JSON.stringify(state.atlas,null,2)],{type:"application/json"});
+  const link=document.createElement("a");link.href=URL.createObjectURL(blob);link.download="atlas-hierarquico-carcaca.json";link.click();URL.revokeObjectURL(link.href);
+});
+(async()=>{
+  try{
+    const entries=await Promise.all(Object.entries(paths).map(async([key,path])=>{
+      const response=await fetch("./dados/"+path,{cache:"no-cache"});
+      if(!response.ok)throw new Error("Fonte indisponível: "+path+" ("+response.status+")");
+      return [key,await response.json()];
+    }));
+    state.atlas=buildAtlasTree(Object.fromEntries(entries));
+    rebuildLookup();
+    populateCounters(state.atlas.stats);
+    $("export").disabled=false;
+    const hash=decodeURIComponent(location.hash.slice(1));
+    if(hash&&state.byId.has(hash))select(hash);
+    else select("carcaca");
+    $("tree-subtitle").textContent="Carregados "+state.atlas.stats.folhas+" registros de conteúdo (com referências repetidas).";
+  }catch(e){
+    $("tree").innerHTML='<div class="loader"><strong>Falha ao carregar o atlas.</strong><p>'+esc(e.message)+'</p><p>O arquivo HTML precisa ser servido pelo Pages com as fontes em <code>dados/</code>.</p></div>';
+    $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
+    console.error(e);
+  }
+})();
+</script>
+</body></html>
