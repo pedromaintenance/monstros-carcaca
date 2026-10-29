@@ -659,3 +659,12 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - **Regra:** nenhuma ideia é canonizada, e relação política, histórica ou migratória não prova uma estrada ou coordenada.
 
 Documentação: [ATLAS_MACROREGIONAL_CICLO32.md](docs/ATLAS_MACROREGIONAL_CICLO32.md).
+
+
+## Ciclo XXXIII — Redes territoriais, política e cronologia continental
+
+- **Concluído na implementação:** sete redes de leitura do continente, 14 presenças/esferas de poder, 17 marcos históricos conforme o manuscrito (0–999 EC) e oito perguntas de geografia autoral.
+- **Sem extrapolações:** categorias sociais não viram estradas ou fronteiras; a revolta futura de Drakport não consta entre eventos ocorridos; Gualápolis/Shadar-Riverie não foi reconciliada à força.
+- **Próxima prioridade macro:** revisar topologia histórica do Abismo/Gualápolis/Shadar, distinção Thargrid/Ironwood/Eldroth e posição de Grama-Cortada. Preparar parâmetros da futura escala meso depois da decisão autoral.
+
+Fontes: [ATLAS_REDES_HISTORICAS_CICLO33.md](docs/ATLAS_REDES_HISTORICAS_CICLO33.md).
