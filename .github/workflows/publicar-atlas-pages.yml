@@ -1,0 +1,84 @@
+name: Publicar Atlas Hierárquico no GitHub Pages
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - 'data/lore/hack-carcaca-dw-indice-tematico.json'
+      - 'data/regioes_carcaca.json'
+      - 'data/lugares_carcaca.json'
+      - 'data/povos_carcaca.json'
+      - 'data/faccoes_carcaca.json'
+      - 'data/propostas/povoamento-regional-hack-carcaca.json'
+      - 'data/propostas/eldroth-ecologia-monstruosa-dw.json'
+      - 'data/propostas/eldroth-fichas-dw-ciclo13.json'
+      - 'dist/carcaca/**'
+      - 'curadoria/assentamentos/**'
+      - 'curadoria/criaturas/**'
+      - 'tests/atlas-hierarquia.test.mjs'
+      - '.github/workflows/publicar-atlas-pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: publicacao-atlas-carcaca-pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout da fonte
+        uses: actions/checkout@v5
+      - name: Preparar Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Testar hierarquia contra os dados reais
+        run: node --test tests/atlas-hierarquia.test.mjs
+      - name: Montar publicação estática
+        shell: bash
+        run: |
+          set -eu
+          mkdir -p .public-pages/atlas/dados
+          cp -r site/. .public-pages/
+          touch .public-pages/.nojekyll
+          for file in \
+            data/lore/hack-carcaca-dw-indice-tematico.json \
+            data/regioes_carcaca.json \
+            data/lugares_carcaca.json \
+            data/povos_carcaca.json \
+            data/faccoes_carcaca.json \
+            dist/carcaca/settlements.json \
+            dist/carcaca/creatures.json \
+            data/propostas/povoamento-regional-hack-carcaca.json \
+            data/propostas/eldroth-ecologia-monstruosa-dw.json \
+            data/propostas/eldroth-fichas-dw-ciclo13.json
+          do
+            mkdir -p ".public-pages/atlas/dados/$(dirname "$file")"
+            cp "$file" ".public-pages/atlas/dados/$file"
+          done
+          test -f .public-pages/atlas/index.html
+          test -f .public-pages/atlas/atlas-tree.mjs
+          echo "Arquivos de dados do Atlas:"
+          find .public-pages/atlas/dados -type f -name '*.json' | sort
+      - name: Enviar artefato do Pages
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: .public-pages
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Obter configuração do Pages
+        uses: actions/configure-pages@v5
+      - name: Publicar site estático
+        id: deployment
+        uses: actions/deploy-pages@v4

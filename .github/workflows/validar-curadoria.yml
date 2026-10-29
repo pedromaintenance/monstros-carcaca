@@ -47,6 +47,7 @@ on:
       - 'scripts/extrair_mercenario_docx.py'
       - 'scripts/extrair_classes_finais_docx.py'
       - 'scripts/extrair_movimentos_personagem_docx.py'
+      - 'site/**'
       - 'src/**'
       - 'tests/**'
       - '.github/workflows/validar-curadoria.yml'
@@ -97,6 +98,7 @@ on:
       - 'scripts/extrair_mercenario_docx.py'
       - 'scripts/extrair_classes_finais_docx.py'
       - 'scripts/extrair_movimentos_personagem_docx.py'
+      - 'site/**'
       - 'src/**'
       - 'tests/**'
   workflow_dispatch:
@@ -128,6 +130,8 @@ jobs:
         run: python scripts/validar_curadoria.py
       - name: Testar cliente de leitura
         run: node --test tests/carcaca-client.test.mjs
+      - name: Testar atlas hierárquico com fontes reais
+        run: node --test tests/atlas-hierarquia.test.mjs
       - name: Gerar índices determinísticos
         run: |
           python scripts/gerar_indices_curadoria.py
