@@ -514,7 +514,7 @@
     {
       "id": "povoamento:xlv:02",
       "nome": "O Mosteiro das Tartarugas de Vidro",
-      "frente_id": "frente:macro:ilhas",
+      "frente_id": "frente:macro:costa",
       "setor": "costa",
       "categoria": "comunidade_coletiva_proposta",
       "status": "proposta_nao_canonica",
