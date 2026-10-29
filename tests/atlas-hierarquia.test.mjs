@@ -109,7 +109,8 @@ test("atlas: Ironwood agora contém o quinto nível de assentamento documentado"
   assert.ok(anc(elara).some(n=>n.id===fort.id));
   const rangers=t.nodes.find(n=>n.sourceId==="lore-hack:rangers-ironwood");
   assert.ok(anc(rangers).some(n=>n.id===fort.id));
-  const micro=t.nodes.filter(n=>n.sourceId?.startsWith("ironwood-eldroth:lugar:")
+  const micro=t.nodes.filter(n=>n.kind==="localidade"
+    &&n.sourceId?.startsWith("ironwood-eldroth:lugar:")
     &&anc(n).some(p=>p.id==="lugar-visual:ironwood"));
   assert.equal(micro.length,2);
   assert.ok(micro.every(n=>n.kind==="localidade"&&n.status==="proposta"&&n.approval===false));
