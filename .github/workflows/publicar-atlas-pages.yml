@@ -44,7 +44,7 @@ jobs:
         with:
           node-version: '22'
       - name: Testar hierarquia contra os dados reais
-        run: node --test tests/atlas-hierarquia.test.mjs tests/atlas-macro.test.mjs tests/atlas-interfaces.test.mjs tests/atlas-topology.test.mjs tests/atlas-charter.test.mjs tests/atlas-hydrology.test.mjs tests/atlas-chronocartography.test.mjs tests/atlas-material.test.mjs tests/atlas-vulnerabilities.test.mjs tests/atlas-readiness.test.mjs
+        run: node --test tests/atlas-hierarquia.test.mjs tests/atlas-macro.test.mjs tests/atlas-interfaces.test.mjs tests/atlas-topology.test.mjs tests/atlas-charter.test.mjs tests/atlas-hydrology.test.mjs tests/atlas-chronocartography.test.mjs tests/atlas-material.test.mjs tests/atlas-vulnerabilities.test.mjs tests/atlas-readiness.test.mjs tests/atlas-settlement-inventory.test.mjs
       - name: Montar publicação estática
         shell: bash
         run: |
