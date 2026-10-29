@@ -84,6 +84,10 @@ O export `dist/carcaca/caatinga-civil-life.json` e seus seis índices permitem l
 
 O [dossiê das interfaces](docs/ATLAS_INTERFACES_CONTINENTAIS_CICLO36.md) acrescenta **13 relações territoriais qualitativas** e **8 decisões autorais em aberto**. As relações distinguem hidrografia, relevo, profundidade, incursões, migração, política e topologias não reconciliadas; **não equivalem a estradas ou fronteiras**. A base [JSON](data/atlas/interfaces-continentais-ciclo36.json) cruza sete conexões macro existentes e oito vínculos ambientais já descritos, sem inventar lugares, coordenadas, travessias ou biomas. Um novo painel no [Atlas Pages](https://pedromaintenance.github.io/monstros-carcaca/atlas/) permite examinar fonte, inferência e o que continua desconhecido.
 
+## Ciclo XXXVII — Oficina de topologia continental
+
+O [dossiê do Ciclo XXXVII](docs/ATLAS_MATRIZ_TOPOLOGICA_CICLO37.md) apresenta uma **matriz de 8 decisões cartográficas e 24 alternativas não adotadas** em quatro conjuntos: Oeste/Abismo, Norte/asa direita, fronteira marítima e interior continental. O [JSON](data/atlas/matriz-topologica-ciclo37.json) cruza os registros dos ciclos XXXIV–XXXVI e preserva as referências do manuscrito. O [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/) oferece um painel de comparação com **simulações temporárias**, sem gravar escolhas nem canonizar as hipóteses.
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
