@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Índice mínimo de páginas para validação pública do Atlas",
+  "fonte_autoral": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "aviso": "Publicar apenas números de páginas, não o texto integral do manuscrito original.",
+  "texto_autoral_incluido": false,
+  "paginas": [
+    {
+      "pagina": 2
+    },
+    {
+      "pagina": 3
+    },
+    {
+      "pagina": 4
+    },
+    {
+      "pagina": 5
+    },
+    {
+      "pagina": 6
+    },
+    {
+      "pagina": 7
+    },
+    {
+      "pagina": 8
+    },
+    {
+      "pagina": 9
+    },
+    {
+      "pagina": 10
+    },
+    {
+      "pagina": 11
+    },
+    {
+      "pagina": 12
+    },
+    {
+      "pagina": 13
+    },
+    {
+      "pagina": 14
+    },
+    {
+      "pagina": 15
+    },
+    {
+      "pagina": 16
+    },
+    {
+      "pagina": 17
+    },
+    {
+      "pagina": 18
+    },
+    {
+      "pagina": 19
+    },
+    {
+      "pagina": 20
+    },
+    {
+      "pagina": 21
+    },
+    {
+      "pagina": 22
+    },
+    {
+      "pagina": 23
+    },
+    {
+      "pagina": 24
+    },
+    {
+      "pagina": 25
+    }
+  ]
+}
