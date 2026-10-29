@@ -1,5 +1,5 @@
 /** Cronocartografia: cronologia interativa e papéis territoriais, nunca um mapa de domínio em escala. */
-const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const esc=x=>String(x??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 export function initChronocartography(el,data){
  if(!el||!data?.eventos?.length)throw new Error("Cronocartografia indisponível");
  const phases=new Map(data.fases.map(x=>[x.id,x]));
@@ -11,11 +11,7 @@ export function initChronocartography(el,data){
  const currentEvents=()=>data.eventos.filter(x=>x.ref_fase===phase&&
     (sector==="todos"||x.setores.includes(sector)));
  const labelYear=(y)=>y===null?"Sem data de início documentada":y+" EC";
- const eventCard=e=>'<button type="button" class="chrono-event'+(selected===e.id?" active":"")+
-   '" data-chrono-event="'+esc(e.id)+'">'+
-   '<span class="chrono-year">'+esc(e.ano_ec)+' EC</span>'+
-   '<span class="chrono-event-name">'+esc(e.titulo)+'</span>'+
-   '<small>'+e.setores.length?"" : ""+'</small></button>';
+
  function timeline(){
    const q=currentEvents();
    return '<p class="chrono-notice">Os acontecimentos de um mesmo período podem apontar para autoridades <strong>diferentes ou conflitantes</strong>. Marcadores por setor indicam referência histórica, nunca posse de todo o território.</p>'+
