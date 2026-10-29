@@ -3699,6 +3699,78 @@ def validar_meio_demonios_sociedades_xxii():
     print("Ciclo XXII: 14 fontes, 37 propostas, 9 perguntas; nenhum evento, lei ou cânone novo.")
 
 
+
+def validar_caatinga_vida_civil_xxiii():
+    """Expandir cultura civil do Além Sul sem repetir ou canonizar propostas antigas."""
+    d=load("data/worldbuilding/caatinga-vida-civil-ciclo23.json")
+    schema=load("schemas/caatinga-vida-civil-xxiii.schema.json")
+    Draft202012Validator.check_schema(schema)
+    errors=list(Draft202012Validator(schema).iter_errors(d))
+    require(not errors, f"Ciclo XXIII: schema inválido {errors[:2]}")
+    counts={"fatos":12,"dominios_sociais":12,"circuitos_materiais":6,
+            "etica_da_agua":6,"mobilidades":6,"relacoes_regionais":5,
+            "vinhetas":5,"referencias_existentes":12,"perguntas":10}
+    require(d["contagens"]==counts,"Ciclo XXIII: contagens divergentes.")
+    require(d["aprovacao_autoral"] is False and
+       d["efeito_canonico_automatico"] is False and
+       d["estado"]=="expansao_cultural_proposta_sem_canonizacao",
+       "Ciclo XXIII: homologação automática proibida.")
+    require(d["regiao_id"]=="regiao:caatinga" and
+       d["regiao_vizinha_id"]=="regiao:costa-sul" and
+       d["regiao_geografica_documentada"] is True and
+       d["lugares_canonicos_adicionados"]==0 and
+       all(d[key] is None for key in ("fronteira_exata_documentada",
+            "populacao_documentada","agua_potavel_confirmada",
+            "governo_regional_confirmado")),
+       "Ciclo XXIII: geografia, população, água ou governo inventados.")
+    regions=load("data/regioes_carcaca.json")["regioes"]
+    caatinga=next(r for r in regions if r["id"]=="regiao:caatinga")
+    require(caatinga["lugares"]==[],
+            "Ciclo XXIII: lugares canônicos devem permanecer vazios.")
+    manuscript=load("fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json")
+    manuscript_pages={p["pagina"] for p in manuscript["paginas"]}
+    require(all(e["pagina_manuscrito"] in (5,9,12) and
+        e["pagina_manuscrito"] in manuscript_pages and
+        e["canon_novo"] is False for e in d["fatos_documentados"]),
+        "Ciclo XXIII: fonte inexistente ou novo cânone silencioso.")
+    refs=d["referencias_a_propostas_e_dados_existentes"]
+    available={
+        "data/propostas/caatinga-rede-social-hack.json":
+           load("data/propostas/caatinga-rede-social-hack.json"),
+        "data/dinamicas_territoriais_alem_sul.json":
+           load("data/dinamicas_territoriais_alem_sul.json"),
+        "data/lugares_carcaca.json":load("data/lugares_carcaca.json"),
+        "data/regioes_carcaca.json":load("data/regioes_carcaca.json")
+    }
+    require(len({x["id"] for x in refs})==12,
+        "Ciclo XXIII: referência de origem duplicada.")
+    require(all(r["arquivo"] in available and
+        any(item["id"]==r["id"] for item in available[r["arquivo"]].get(r["colecao"],[]))
+        for r in refs),"Ciclo XXIII: referência aponta para item inexistente.")
+    cats=("dominios_sociais","circuitos_materiais","etica_da_agua",
+          "mobilidades","relacoes_regionais","vinhetas")
+    entries=[item for cat in cats for item in d[cat]]
+    ids={x["id"] for x in entries}
+    require(len(entries)==40 and len(ids)==40,
+            "Ciclo XXIII: proposta duplicada ou incompleta.")
+    refids={r["id"] for r in refs}
+    require(all(x["estado"]=="proposta_cultural_sem_canon" and
+        x["aprovacao_autoral"] is False and x["situacao_documentada"] is False
+        and x["ocorreu"] is False and x["pagina_contextual"] in (5,12)
+        and (x.get("referencia_preexistente") is None or
+             x["referencia_preexistente"] in refids)
+        for x in entries),"Ciclo XXIII: hipótese convertida em evento ou referência inválida.")
+    require(len(d["perguntas_para_autor"])==10 and all(
+        x["estado"]=="pendente_de_autoria" and x["resposta_aprovada"] is None
+        for x in d["perguntas_para_autor"]),
+        "Ciclo XXIII: respostas autorais pré-aprovadas.")
+    total_ids=ids|{r["id"] for r in d["fatos_documentados"]}|{
+        q["id"] for q in d["perguntas_para_autor"]}
+    require(len(total_ids)==62,
+            "Ciclo XXIII: IDs de propostas, fatos e perguntas colidem.")
+    print("Ciclo XXIII: 12 fatos de fonte, 40 propostas, 12 referências e 10 perguntas; zero aprovação.")
+
+
 def main():
     schema=load("schemas/criatura-carcaca.schema.json")
     Draft202012Validator.check_schema(schema)
@@ -3833,6 +3905,7 @@ def main():
     validar_grama_cortada_cotidiano_xx()
     validar_culturas_gnomicas_xxi()
     validar_meio_demonios_sociedades_xxii()
+    validar_caatinga_vida_civil_xxiii()
     print(f"Curadoria validada: {len(criaturas)} criaturas; {len(regioes)} regiões; "
           f"{len(lugares)} lugares; {len(faccoes)} facções; "
           f"{len(frentes)} frentes; {len(assentamentos)} assentamentos.")

@@ -15,6 +15,7 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - **XX — concluído como expansão cultural:** [Grama-Cortada e a vida cotidiana](docs/GRAMA_CORTADA_COTIDIANO_CICLO20.md): 35 propostas culturais, 12 fatos de fonte e 8 perguntas, sem cronologia ou instituições inventadas.
 - **XXI — concluído como expansão cultural:** [Culturas gnômicas](docs/CULTURAS_GNOMICAS_CICLO21.md): ética do conhecimento, nomes, cartografia, oficinas e vida subterrânea, sem uniformização política ou nova canonização.
 - **XXII — concluído como expansão cultural:** [Meio-Demônios e sociedades](docs/MEIO_DEMONIOS_SOCIEDADES_CICLO22.md): genealogia, corpo, memória, trabalho, religião e autonomia, sem universalização de identidade nem novos fatos canônicos.
+- **XXIII — concluído como expansão regional:** [Caatinga habitada](docs/CAATINGA_VIDA_CIVIL_CICLO23.md): vida comunitária, reparos, justiça da água, mobilidade e memória de 351 EC sem converter poços e feiras propostos em localidades reais.
 
 **Método dos próximos ciclos:** (1) localizar afirmações da ambientação; (2) apontar o que o manuscrito do Hack efetivamente acrescenta; (3) distinguir interpretações e lacunas; (4) produzir alternativas de worldbuilding materialmente diferentes; (5) pedir revisão autoral para qualquer promoção canônica. Evitar novas rodadas de dezenas de NPCs sem uma necessidade histórica ou social identificável.
 
@@ -544,4 +545,15 @@ Objetivo: preservar a taxonomia D&D como referência e criar o **Tipo de Criatur
 - [x] Não criar um reino, governo, localidade, rito, lei nem profissão de Meio-Demônios universal.
 - [x] Manter 983 EC como data da invasão documentada, sem declarar origem de todas as linhagens.
 - [x] Integrar dossiê, JSON, schema, export e índices, API ESM, testes e diário; preservar sete criaturas canônicas.
-- [ ] **XXIII — próximo horizonte:** investigar Caatinga do Além Sul e cotidianos de seus povos, geografia, água, trabalho, migrações e vida política própria, sem reduzir a região a pilhagem ou guerra.
+- [x] **XXIII — concluído como expansão civil:** Caatinga, 12 fatos, 40 propostas novas, 12 referências rastreáveis e 10 perguntas, preservando a geografia imprecisa.
+
+## Ciclo XXIII — Concluído: a Caatinga habitada
+
+- [x] Conferir Hack p. 5, 9 e 12, registro territorial `regiao:caatinga`, dinâmica Caatinga–Costa Sul e documentação prévia de povoamento, clãs, rotas e poços hipotéticos.
+- [x] **Não duplicar** propostas do Ciclo Caatinga 02 ou da Fronteira Caatinga–Costa Sul; relacionar 12 IDs preexistentes aos novos temas.
+- [x] Produzir 12 afirmações com fontes, 40 registros culturais (12 domínios sociais; 6 circuitos materiais; 6 questões de justiça da água; 6 mobilidades; 5 relações regionais; 5 vinhetas) e 10 perguntas abertas.
+- [x] Distinguir alianças de 351 EC, incursões terrestres de pilhagem, ataques sacrificiais marítimos e ausência de colonização shadow fey direta, sem generalizar comportamento de povos.
+- [x] Preservar sem confirmação: fontes de água potável, vazões, espécies de cultivo, população, clima numérico, rotas e limites cartográficos.
+- [x] Não inventar comércio direto entre Caatinga e Portomonte nem declarar ataque histórico contra Portomonte.
+- [x] Adicionar dossiê, JSON, schema, validador com referências reais, seis índices, API ESM, testes e atualizações do diário.
+- [ ] **XXIV — próximo horizonte de expansão:** cotidiano de Portomonte e sociedades civis da Costa Sul (trabalho, alimento, crenças, educação, comércio marítimo), sem repetir ciclos de diplomacia, ataques costeiros ou revisão canônica.

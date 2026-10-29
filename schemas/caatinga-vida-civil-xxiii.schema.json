@@ -1,0 +1,620 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Ciclo XXIII — Caatinga do Além Sul: vida social sem canonização",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema_version": {
+      "const": "0.1.0"
+    },
+    "titulo": {
+      "type": "string",
+      "minLength": 1
+    },
+    "estado": {
+      "const": "expansao_cultural_proposta_sem_canonizacao"
+    },
+    "aprovacao_autoral": {
+      "const": false
+    },
+    "efeito_canonico_automatico": {
+      "const": false
+    },
+    "regiao_id": {
+      "const": "regiao:caatinga"
+    },
+    "regiao_vizinha_id": {
+      "const": "regiao:costa-sul"
+    },
+    "regiao_geografica_documentada": {
+      "const": true
+    },
+    "lugares_canonicos_adicionados": {
+      "const": 0
+    },
+    "fronteira_exata_documentada": {
+      "type": "null"
+    },
+    "populacao_documentada": {
+      "type": "null"
+    },
+    "agua_potavel_confirmada": {
+      "type": "null"
+    },
+    "governo_regional_confirmado": {
+      "type": "null"
+    },
+    "fonte_manuscrito": {
+      "const": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+    },
+    "fontes_preexistentes": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 4,
+      "maxItems": 4
+    },
+    "metrica_editorial": {
+      "type": "string",
+      "minLength": 1
+    },
+    "limite_de_escopo": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "minItems": 12,
+      "maxItems": 12
+    },
+    "fatos_documentados": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxiii:fato:"
+          },
+          "afirmacao_de_fonte": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pagina_manuscrito": {
+            "enum": [
+              5,
+              9,
+              12
+            ]
+          },
+          "limite_de_inferencia": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "fonte_autoral_em_revisao"
+          },
+          "canon_novo": {
+            "const": false
+          }
+        },
+        "required": [
+          "id",
+          "afirmacao_de_fonte",
+          "pagina_manuscrito",
+          "limite_de_inferencia",
+          "estado",
+          "canon_novo"
+        ]
+      },
+      "minItems": 12,
+      "maxItems": 12
+    },
+    "referencias_a_propostas_e_dados_existentes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "arquivo": {
+            "type": "string",
+            "minLength": 1
+          },
+          "colecao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "precaucao": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "arquivo",
+          "colecao",
+          "precaucao"
+        ]
+      },
+      "minItems": 12,
+      "maxItems": 12
+    },
+    "dominios_sociais": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxiii:dominios_sociais:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "estado": {
+            "const": "proposta_cultural_sem_canon"
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "hipotese_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "situacao_experimental": {
+            "type": "string",
+            "minLength": 1
+          },
+          "contradicao": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "estado",
+          "pagina_contextual",
+          "hipotese_social",
+          "situacao_experimental",
+          "contradicao"
+        ]
+      },
+      "minItems": 12,
+      "maxItems": 12
+    },
+    "circuitos_materiais": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxiii:circuitos_materiais:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "estado": {
+            "const": "proposta_cultural_sem_canon"
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "producao_ou_troca_hipotetica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "situacao_experimental": {
+            "type": "string",
+            "minLength": 1
+          },
+          "referencia_preexistente": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "estado",
+          "pagina_contextual",
+          "producao_ou_troca_hipotetica",
+          "situacao_experimental",
+          "referencia_preexistente"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "etica_da_agua": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxiii:etica_da_agua:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "estado": {
+            "const": "proposta_cultural_sem_canon"
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "regra_para_investigar": {
+            "type": "string",
+            "minLength": 1
+          },
+          "pergunta_de_justica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "referencia_preexistente": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "estado",
+          "pagina_contextual",
+          "regra_para_investigar",
+          "pergunta_de_justica",
+          "referencia_preexistente"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "mobilidades": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxiii:mobilidades:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "estado": {
+            "const": "proposta_cultural_sem_canon"
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "contexto_hipotetico": {
+            "type": "string",
+            "minLength": 1
+          },
+          "situacao_experimental": {
+            "type": "string",
+            "minLength": 1
+          },
+          "referencia_preexistente": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "estado",
+          "pagina_contextual",
+          "contexto_hipotetico",
+          "situacao_experimental",
+          "referencia_preexistente"
+        ]
+      },
+      "minItems": 6,
+      "maxItems": 6
+    },
+    "relacoes_regionais": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxiii:relacoes_regionais:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "estado": {
+            "const": "proposta_cultural_sem_canon"
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "interpretacao_social": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tensao": {
+            "type": "string",
+            "minLength": 1
+          },
+          "referencia_preexistente": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "estado",
+          "pagina_contextual",
+          "interpretacao_social",
+          "tensao",
+          "referencia_preexistente"
+        ]
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "vinhetas": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxiii:vinhetas:"
+          },
+          "nome_editorial": {
+            "type": "string",
+            "minLength": 1
+          },
+          "situacao_documentada": {
+            "const": false
+          },
+          "ocorreu": {
+            "const": false
+          },
+          "aprovacao_autoral": {
+            "const": false
+          },
+          "estado": {
+            "const": "proposta_cultural_sem_canon"
+          },
+          "pagina_contextual": {
+            "enum": [
+              5,
+              12
+            ]
+          },
+          "cena_hipotetica": {
+            "type": "string",
+            "minLength": 1
+          },
+          "tema": {
+            "type": "string",
+            "minLength": 1
+          },
+          "referencia_preexistente": {
+            "type": "string",
+            "minLength": 1
+          }
+        },
+        "required": [
+          "id",
+          "nome_editorial",
+          "situacao_documentada",
+          "ocorreu",
+          "aprovacao_autoral",
+          "estado",
+          "pagina_contextual",
+          "cena_hipotetica",
+          "tema",
+          "referencia_preexistente"
+        ]
+      },
+      "minItems": 5,
+      "maxItems": 5
+    },
+    "perguntas_para_autor": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "^worldbuilding-xxiii:pergunta:"
+          },
+          "pergunta_autoral": {
+            "type": "string",
+            "minLength": 1
+          },
+          "estado": {
+            "const": "pendente_de_autoria"
+          },
+          "resposta_aprovada": {
+            "type": "null"
+          }
+        },
+        "required": [
+          "id",
+          "pergunta_autoral",
+          "estado",
+          "resposta_aprovada"
+        ]
+      },
+      "minItems": 10,
+      "maxItems": 10
+    },
+    "contagens": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fatos": {
+          "const": 12
+        },
+        "dominios_sociais": {
+          "const": 12
+        },
+        "circuitos_materiais": {
+          "const": 6
+        },
+        "etica_da_agua": {
+          "const": 6
+        },
+        "mobilidades": {
+          "const": 6
+        },
+        "relacoes_regionais": {
+          "const": 5
+        },
+        "vinhetas": {
+          "const": 5
+        },
+        "referencias_existentes": {
+          "const": 12
+        },
+        "perguntas": {
+          "const": 10
+        }
+      },
+      "required": [
+        "fatos",
+        "dominios_sociais",
+        "circuitos_materiais",
+        "etica_da_agua",
+        "mobilidades",
+        "relacoes_regionais",
+        "vinhetas",
+        "referencias_existentes",
+        "perguntas"
+      ]
+    }
+  },
+  "required": [
+    "schema_version",
+    "titulo",
+    "estado",
+    "aprovacao_autoral",
+    "efeito_canonico_automatico",
+    "regiao_id",
+    "regiao_vizinha_id",
+    "regiao_geografica_documentada",
+    "lugares_canonicos_adicionados",
+    "fronteira_exata_documentada",
+    "populacao_documentada",
+    "agua_potavel_confirmada",
+    "governo_regional_confirmado",
+    "fonte_manuscrito",
+    "fontes_preexistentes",
+    "metrica_editorial",
+    "limite_de_escopo",
+    "fatos_documentados",
+    "referencias_a_propostas_e_dados_existentes",
+    "dominios_sociais",
+    "circuitos_materiais",
+    "etica_da_agua",
+    "mobilidades",
+    "relacoes_regionais",
+    "vinhetas",
+    "perguntas_para_autor",
+    "contagens"
+  ]
+}

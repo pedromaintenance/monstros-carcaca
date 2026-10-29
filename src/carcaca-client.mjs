@@ -60,6 +60,35 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
       (comOpcoes===undefined||(m.opcoes.length>0)===comOpcoes)&&
       (paragrafo===undefined||m.paragrafo_docx===Number(paragrafo)));
   }
+  async function getCaatingaCivilLife(){return byKey("caatinga_civil_life");}
+  async function getCaatingaCivilLifeIndexes(){return byKey("caatinga_civil_life_indexes");}
+  async function getCaatingaCivilLifeEntry(id){
+    if(typeof id!=="string"||!id.startsWith("worldbuilding-xxiii:"))return null;
+    const d=await getCaatingaCivilLife();
+    for(const cat of ["dominios_sociais","circuitos_materiais","etica_da_agua",
+         "mobilidades","relacoes_regionais","vinhetas",
+         "fatos_documentados","perguntas_para_autor"]){
+      const entry=d[cat].find(x=>x.id===id);
+      if(entry)return {...entry,categoria:cat};
+    }
+    return null;
+  }
+  async function searchCaatingaCivilLife({categoria,pagina,referenciaId,query}={}){
+    const d=await getCaatingaCivilLife();
+    const norm=s=>String(s??"").normalize("NFD").replace(/[\u0300-\u036f]/g,"").toLowerCase();
+    return ["dominios_sociais","circuitos_materiais","etica_da_agua",
+            "mobilidades","relacoes_regionais","vinhetas"]
+       .flatMap(cat=>d[cat].map(x=>({...x,categoria:cat})))
+       .filter(x=>(!categoria||x.categoria===categoria)&&
+           (pagina===undefined||x.pagina_contextual===Number(pagina))&&
+           (!referenciaId||x.referencia_preexistente===referenciaId)&&
+           (!query||norm([
+             x.nome_editorial,x.hipotese_social,x.situacao_experimental,
+             x.contradicao,x.producao_ou_troca_hipotetica,x.regra_para_investigar,
+             x.pergunta_de_justica,x.contexto_hipotetico,
+             x.interpretacao_social,x.tensao,x.cena_hipotetica,x.tema
+           ].filter(Boolean).join(" ")).includes(norm(query))));
+  }
   async function getHalfDemonSocieties(){return byKey("half_demon_societies");}
   async function getHalfDemonSocietiesIndexes(){return byKey("half_demon_societies_indexes");}
   async function getHalfDemonSocietyEntry(id){
@@ -1562,6 +1591,8 @@ export function createCarcacaAtlas({baseUrl,fetchImpl=fetch}={}) {
           getCostaSulSeaPressureEntity,searchCostaSulSeaPressure,
           getGargantaRiverSocial,getGargantaRiverSocialIndexes,
           getGargantaRiverEntity,searchGargantaRiverSocial,
+          getCaatingaCivilLife,getCaatingaCivilLifeIndexes,
+          getCaatingaCivilLifeEntry,searchCaatingaCivilLife,
           getHalfDemonSocieties,getHalfDemonSocietiesIndexes,
           getHalfDemonSocietyEntry,searchHalfDemonSocieties,
           getGnomishCultures,getGnomishCulturesIndexes,

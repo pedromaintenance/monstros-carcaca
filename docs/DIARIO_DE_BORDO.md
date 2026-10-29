@@ -491,3 +491,13 @@ A pesquisa do manuscrito (p. 21; cronologia p. 9) sustenta descendência demoní
 O novo dossiê `docs/MEIO_DEMONIOS_SOCIEDADES_CICLO22.md` situa **família, trabalho, infância, adaptação corporal, cultura material, religião e vida urbana** no centro do mundo. A base `data/worldbuilding/meio-demonios-sociedades-ciclo22.json` separa **14 âncoras textuais** de **37 propostas não canônicas**: 11 eixos sociais, 6 contextos de convivência, 6 circuitos civis, 6 conflitos, 4 costumes candidatos e 4 vinhetas; 9 questões permanecem sem resposta.
 
 Schema, validador, cinco índices, API ESM e testes resguardam a diferença entre fonte, hipótese e aprovação. Não foram inventados município, aldeia, legislação, ritual, divindade obrigatória ou eventos de campanha. As sete criaturas canônicas permanecem intocadas. Próximo horizonte sugerido: estudo da vida civil da Caatinga do Além Sul, para ampliar povos e regiões além das culturas já exploradas.
+
+## 2026-10-28 · Ciclo XXIII — A Caatinga habitada além de guerra e poços
+
+Retomamos a Caatinga **depois** de descobrir que o repositório já continha propostas extensas de povoamento (Poço Sem Bandeira, Feira das Ferragens, Pátio das Cabaças, Pedra dos Nove Silêncios e Baixio das Sementes), dinâmicas territoriais e relações condicionais com Portomonte. Evitamos duplicá-las: elas permanecem **hipóteses anteriores**, agora ligadas por ID a perguntas culturais mais amplas.
+
+O [novo dossiê](CAATINGA_VIDA_CIVIL_CICLO23.md) separa doze afirmações documentadas do Hack (pp. 5, 9 e 12): ausência de ocupação shadow fey direta, aridez, populações dispersas, pilhagens regionais, comércio costeiro de Portomonte, purificação de água para agricultura, e aliança orc–humana contra os kuo-toa em 351 EC. Nenhuma pilhagem concreta foi atribuída a Portomonte ou a todos os orcs; nenhuma potabilidade, vazão, fronteira ou clima numérico foi inferido.
+
+O [JSON](../data/worldbuilding/caatinga-vida-civil-ciclo23.json) inclui **40 propostas** (12 domínios sociais, 6 circuitos materiais, 6 dilemas de justiça hídrica, 6 mobilidades, 5 relações interregionais, 5 vinhetas não ocorridas), **12 ponteiros de fonte existentes** e **10 perguntas autorais**. Integram-se schema, validador referencial, seis índices determinísticos, API ESM, testes Node/Python e atualização do roadmap. Nenhum lugar novo foi adicionado à `regiao:caatinga` e as sete criaturas canônicas permanecem intactas.
+
+O próximo horizonte sugerido é a **vida civil na Costa Sul e Portomonte**, com foco em agricultura sob bênção de Deméter, ofícios, instituições de vizinhança e relações com os povos insulares, evitando repetir os dossiês de pressão marinha e fronteira já existentes.
