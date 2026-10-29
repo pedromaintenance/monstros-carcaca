@@ -1,0 +1,774 @@
+{
+  "schema_version": "0.1.0",
+  "titulo": "Ciclo XXIII — A Caatinga habitada: água, trabalho, memória e vizinhança",
+  "estado": "expansao_cultural_proposta_sem_canonizacao",
+  "aprovacao_autoral": false,
+  "efeito_canonico_automatico": false,
+  "regiao_id": "regiao:caatinga",
+  "regiao_vizinha_id": "regiao:costa-sul",
+  "regiao_geografica_documentada": true,
+  "lugares_canonicos_adicionados": 0,
+  "fronteira_exata_documentada": null,
+  "populacao_documentada": null,
+  "agua_potavel_confirmada": null,
+  "governo_regional_confirmado": null,
+  "fonte_manuscrito": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "fontes_preexistentes": [
+    "data/regioes_carcaca.json",
+    "data/dinamicas_territoriais_alem_sul.json",
+    "data/propostas/caatinga-rede-social-hack.json",
+    "data/propostas/fronteira-caatinga-costa-sul-hack.json"
+  ],
+  "metrica_editorial": "12 pontos amparados em manuscrito e 40 propostas sociais novas; reaproveita referências hipotéticas existentes sem converter NPC, poço, mercado ou rota em cânone.",
+  "limite_de_escopo": [
+    "Os conflitos com pradarias são regionais; nenhum ataque individual a Portomonte foi documentado.",
+    "Orcs da Caatinga não são todos saqueadores; humanos também não são todos agricultores da costa.",
+    "Não criar povoado, fonte de água, clima, vazão, potabilidade, espécie agrícola, população nem coordenadas.",
+    "Não impor nomadismo, clã ou profissão militar como universal a orcs ou exilados da Caatinga.",
+    "Não atribuir comércio direto comprovado entre Portomonte e a Caatinga.",
+    "A purificação em Portomonte viabiliza agricultura; não demonstra água para beber nem abastecimento do interior.",
+    "Kuo-toa/abissais marinhos não são demônios do Abismo e suas incursões diferem de pilhagens terrestres.",
+    "A aliança de 351 EC não estabelece tratado ou autoridade presente.",
+    "A memória de guerra pode ser plural sem inventar memorial oficial.",
+    "Propostas prévias de poço, feira, NPCs e rota continuam apenas propostas; nenhum encontro de campanha ocorreu.",
+    "Não se deduz religião da Caatinga pela origem geográfica ou ancestralidade.",
+    "Não modificar fichas de criaturas, regras DW, arquivos factuais de regiões e lugares, nem a revisão XIX."
+  ],
+  "fatos_documentados": [
+    {
+      "id": "worldbuilding-xxiii:fato:caatinga-reconhecida",
+      "afirmacao_de_fonte": "O Além Sul inclui terras de Caatinga e uma costa associada ao Mar de Sangue.",
+      "pagina_manuscrito": 5,
+      "limite_de_inferencia": "Não fixar limite, cidade ou hidrografia.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    },
+    {
+      "id": "worldbuilding-xxiii:fato:sem-ocupacao-direta",
+      "afirmacao_de_fonte": "O Além Sul não está ocupado diretamente pelos elfos das sombras nos moldes descritos para outros territórios.",
+      "pagina_manuscrito": 5,
+      "limite_de_inferencia": "Não deduzir paz, autonomia legal universal nem imunidade a influência indireta.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    },
+    {
+      "id": "worldbuilding-xxiii:fato:grupos-dispersos",
+      "afirmacao_de_fonte": "O manuscrito descreve populações espalhadas por terras áridas e pela costa.",
+      "pagina_manuscrito": 5,
+      "limite_de_inferencia": "Não deduzir nomadismo universal.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    },
+    {
+      "id": "worldbuilding-xxiii:fato:conflitos-regionais",
+      "afirmacao_de_fonte": "Exilados das terras áridas e sobreviventes agrícolas das pradarias da Costa Sul entram em guerras e pilhagens frequentes.",
+      "pagina_manuscrito": 5,
+      "limite_de_inferencia": "Não atribuir uma incursão a Portomonte ou a uma pessoa.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    },
+    {
+      "id": "worldbuilding-xxiii:fato:grupos-plurais",
+      "afirmacao_de_fonte": "Orcs, humanos e criaturas do mar vivem no Além Sul, em contextos diferentes.",
+      "pagina_manuscrito": 5,
+      "limite_de_inferencia": "Não descrever todos como membros de um mesmo clã ou facção.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    },
+    {
+      "id": "worldbuilding-xxiii:fato:portomonte-comercio",
+      "afirmacao_de_fonte": "Portomonte é um grande assentamento humano costeiro, protegido por penhascos e importante para o comércio entre assentamentos da costa.",
+      "pagina_manuscrito": 5,
+      "limite_de_inferencia": "Não afirmar comércio direto com a Caatinga.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    },
+    {
+      "id": "worldbuilding-xxiii:fato:demeter-agricultura",
+      "afirmacao_de_fonte": "Em Portomonte, um templo de Deméter purifica o Mar de Sangue e possibilita agricultura sobre a pedra.",
+      "pagina_manuscrito": 5,
+      "limite_de_inferencia": "Não inferir água potável para beber nem infraestrutura de irrigação da Caatinga.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    },
+    {
+      "id": "worldbuilding-xxiii:fato:separar-ataques",
+      "afirmacao_de_fonte": "Kuo-toa e abissais marinhos praticam ataques de captura sacrificial na costa e ilhas, distintos das pilhagens terrestres.",
+      "pagina_manuscrito": 5,
+      "limite_de_inferencia": "Não confundir abissais marinhos com demônios do Abismo ocidental.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    },
+    {
+      "id": "worldbuilding-xxiii:fato:antiga-alianca",
+      "afirmacao_de_fonte": "Em 351 EC, clãs orcs se uniram a humanos de Garganta para derrotar a invasão kuo-toa.",
+      "pagina_manuscrito": 9,
+      "limite_de_inferencia": "Não transformar aliança de 351 em tratado vigente no presente.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    },
+    {
+      "id": "worldbuilding-xxiii:fato:presenca-humana",
+      "afirmacao_de_fonte": "Há humanos vivendo na Caatinga, no Rio Ancestral e especialmente na Costa Sul.",
+      "pagina_manuscrito": 12,
+      "limite_de_inferencia": "Não fixar proporções de população.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    },
+    {
+      "id": "worldbuilding-xxiii:fato:orcs-caatinga",
+      "afirmacao_de_fonte": "Orcs possuem longa presença nas terras áridas do Além Sul; grupos vivem pela Caatinga e perto da costa.",
+      "pagina_manuscrito": 12,
+      "limite_de_inferencia": "Não atribuir a todos os orcs a prática de pilhagem.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    },
+    {
+      "id": "worldbuilding-xxiii:fato:inimizades-e-aliancas",
+      "afirmacao_de_fonte": "Humanos e orcs podem estar em lados opostos de conflitos regionais ou colaborar diante de ameaças marítimas.",
+      "pagina_manuscrito": 12,
+      "limite_de_inferencia": "Não uniformizar a política de povos inteiros.",
+      "estado": "fonte_autoral_em_revisao",
+      "canon_novo": false
+    }
+  ],
+  "referencias_a_propostas_e_dados_existentes": [
+    {
+      "id": "caatinga:comunidade:poco-sem-bandeira",
+      "arquivo": "data/propostas/caatinga-rede-social-hack.json",
+      "colecao": "comunidades",
+      "precaucao": "Proposta de encontro em torno de poço, NÃO local no atlas factual."
+    },
+    {
+      "id": "caatinga:comunidade:feira-ferragens",
+      "arquivo": "data/propostas/caatinga-rede-social-hack.json",
+      "colecao": "comunidades",
+      "precaucao": "Feira hipotética; NÃO mercado confirmado."
+    },
+    {
+      "id": "caatinga:comunidade:patio-cabacas",
+      "arquivo": "data/propostas/caatinga-rede-social-hack.json",
+      "colecao": "comunidades",
+      "precaucao": "Hipótese de governança de recipientes; sem volume real."
+    },
+    {
+      "id": "caatinga:comunidade:baixio-sementes",
+      "arquivo": "data/propostas/caatinga-rede-social-hack.json",
+      "colecao": "comunidades",
+      "precaucao": "Estoque de sementes hipotético; sem cultivo confirmado."
+    },
+    {
+      "id": "caatinga:comunidade:pedra-nove-silencios",
+      "arquivo": "data/propostas/caatinga-rede-social-hack.json",
+      "colecao": "comunidades",
+      "precaucao": "Memorial hipotético sobre memória de guerra."
+    },
+    {
+      "id": "caatinga:rota:barro-e-ferragem",
+      "arquivo": "data/propostas/caatinga-rede-social-hack.json",
+      "colecao": "rotas",
+      "precaucao": "Rota hipotética sem coordenadas."
+    },
+    {
+      "id": "dinamica:pilhagens-caatinga-pradarias",
+      "arquivo": "data/dinamicas_territoriais_alem_sul.json",
+      "colecao": "dinamicas",
+      "precaucao": "Fato regional, sem perpetradores particulares."
+    },
+    {
+      "id": "dinamica:ataques-liturgicos-costa-ilhas",
+      "arquivo": "data/dinamicas_territoriais_alem_sul.json",
+      "colecao": "dinamicas",
+      "precaucao": "Ataques marítimos, não a mesma dinâmica das pilhagens terrestres."
+    },
+    {
+      "id": "dinamica:nao-ocupacao-direta-alem-sul",
+      "arquivo": "data/dinamicas_territoriais_alem_sul.json",
+      "colecao": "dinamicas",
+      "precaucao": "Sem ocupação direta não equivale a ausência de influência."
+    },
+    {
+      "id": "lugar:portomonte",
+      "arquivo": "data/lugares_carcaca.json",
+      "colecao": "lugares",
+      "precaucao": "Portomonte é lugar factual da Costa Sul, não da Caatinga."
+    },
+    {
+      "id": "regiao:caatinga",
+      "arquivo": "data/regioes_carcaca.json",
+      "colecao": "regioes",
+      "precaucao": "Âncora regional com limites imprecisos."
+    },
+    {
+      "id": "regiao:costa-sul",
+      "arquivo": "data/regioes_carcaca.json",
+      "colecao": "regioes",
+      "precaucao": "Região vizinha, sem linha fronteiriça conhecida."
+    }
+  ],
+  "dominios_sociais": [
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:cuidado-e-vizinhanca",
+      "nome_editorial": "Quem cuida quando a viagem falha?",
+      "hipotese_social": "Uma comunidade dispersa pode depender tanto de pessoas que cozinham, ensinam e protegem crianças quanto de guias e guerreiros. O trabalho de cuidado tem custo material.",
+      "situacao_experimental": "Um viajante quer levar os únicos adultos disponíveis para escoltar mercadoria; outra pessoa pergunta quem ficará com os doentes.",
+      "contradicao": "O prestígio de quem parte pode invisibilizar o trabalho de quem mantém o abrigo.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:familias-e-clas",
+      "nome_editorial": "Clã, casa e escolha",
+      "hipotese_social": "A presença documentada de clãs orcs não prova que toda família se organize igualmente. Parentesco pode envolver acolhimento, convivência, adoção e separação sem reduzir pessoa a combatente.",
+      "situacao_experimental": "Uma família deseja acolher alguém de outro grupo e vizinhos têm receio de promessas feitas pelos mais velhos.",
+      "contradicao": "Um clã pode proteger e também pressionar seus membros; nenhuma estrutura jurídica é dedutível.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:ensino-de-sobrevivencia",
+      "nome_editorial": "O aprendizado que não é militar",
+      "hipotese_social": "Lembrar locais perigosos, reconhecer instrumentos danificados e economizar recursos pode ser parte de uma educação cotidiana, sem transformar toda criança em batedor.",
+      "situacao_experimental": "Uma jovem conhece técnicas de reparo, mas não quer participar de disputas de prestígio guerreiro.",
+      "contradicao": "Ensinar prudência não equivale a legitimar violência nem a fixar currículo regional.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:trabalho-das-mulheres-e-generos",
+      "nome_editorial": "Trabalhos que não cabem em epopeias",
+      "hipotese_social": "Nenhum gênero ou ocupação foi definido como exclusivo; perguntar quem cuida, transporta, negocia e repara expõe divisão possível e disputas sobre reconhecimento.",
+      "situacao_experimental": "Uma pessoa exige representação em acordo de troca por ser responsável por todo o armazenamento, embora não carregue arma.",
+      "contradicao": "Não definir autoridade, tarefa ou papel familiar a partir de gênero.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:habitar-sem-mapa",
+      "nome_editorial": "Casa temporária não é falta de cultura",
+      "hipotese_social": "A dispersão territorial é documentada, mas a duração das moradias não. Um abrigo poderia ter múltiplas formas de permanência, ampliação e desmontagem conforme necessidades.",
+      "situacao_experimental": "Uma família deseja manter estruturas que outra considera temporárias.",
+      "contradicao": "Não afirmar nomadismo universal, material construtivo ou posição de assentamentos.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:cozinha-e-memoria",
+      "nome_editorial": "Receitas sem inventário de espécies",
+      "hipotese_social": "A alimentação pode expressar história familiar e desigualdade sem inventar dieta, espécies comestíveis, rendimentos agrícolas ou uma tradição única.",
+      "situacao_experimental": "Um convidado interpreta um alimento oferecido como luxo; os anfitriões o guardavam para uma criança enferma.",
+      "contradicao": "Não preencher flora, fauna ou calendário de colheitas por analogia automática com regiões reais.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:comercio-sem-moeda-inventada",
+      "nome_editorial": "Ferramenta, confiança e reparo",
+      "hipotese_social": "Trabalho material e trocas podem envolver conserto e circulação de recipientes, mas a fonte não dá moeda, tarifa ou preço.",
+      "situacao_experimental": "Um serviço que deveria quitar uma dívida não foi executado; ninguém possui o mesmo registro da promessa.",
+      "contradicao": "Não criar mercado regional canônico nem fechar trocas diretas Caatinga–Portomonte.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:saude-e-calor",
+      "nome_editorial": "Quem tem direito de descansar?",
+      "hipotese_social": "A aridez documentada torna relevante investigar saúde e proteção contra exposição, mas não permite inferir enfermidades endêmicas ou limites fisiológicos.",
+      "situacao_experimental": "O responsável pela tarefa exige partida imediata; outras pessoas contestam o risco para alguém já exausto.",
+      "contradicao": "Nenhum clima numérico, temperatura, enfermidade ou remédio específico é registrado.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:autoridade-e-negociacao",
+      "nome_editorial": "Prestígio não é soberania",
+      "hipotese_social": "A tradição de clãs e a coexistência de grupos não implicam um rei da Caatinga. Autoridade pode ser discutida como negociação entre responsabilidades.",
+      "situacao_experimental": "A pessoa que domina uma rota tenta decidir sobre um recurso que outras famílias utilizam.",
+      "contradicao": "Não criar conselho, chefe regional nem código de lei por conveniência.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:ritual-e-pluralidade",
+      "nome_editorial": "A fé que não precisa de capital",
+      "hipotese_social": "A Carcaça tem religiosidade plural. Orcs e humanos do Além Sul podem ter práticas distintas, sem que o manuscrito descreva um culto oficial para a região.",
+      "situacao_experimental": "Dois grupos agradecem por uma sobrevivência comum sem atribuir o feito à mesma divindade.",
+      "contradicao": "Não inventar divindade, calendário, rito obrigatório ou templo da Caatinga.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:humor-e-hospitalidade",
+      "nome_editorial": "Rir numa terra séria",
+      "hipotese_social": "Canções, brincadeiras e hospitalidade podem ser portas para pesquisar vida social além da violência, mas não são costumes já confirmados.",
+      "situacao_experimental": "Alguém tenta aliviar uma discussão com uma história; a pessoa ofendida considera a graça inadequada.",
+      "contradicao": "Não usar humor como traço racial obrigatório nem criar festival ocorrido.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:dominios_sociais:luto-e-reparacao",
+      "nome_editorial": "A memória não elege inocentes",
+      "hipotese_social": "A aliança de 351 EC e as guerras atuais podem produzir lembranças ambivalentes, inclusive entre comunidades que às vezes são aliadas e às vezes inimigas.",
+      "situacao_experimental": "Parentes de antigos aliados discordam sobre quem merece ser lembrado numa cerimônia futura.",
+      "contradicao": "Não converter toda memória regional em uma narrativa oficial nem inventar mausoléu.",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    }
+  ],
+  "circuitos_materiais": [
+    {
+      "id": "worldbuilding-xxiii:circuitos_materiais:reparo-de-recipientes",
+      "nome_editorial": "A oficina vale tanto quanto a arma",
+      "producao_ou_troca_hipotetica": "Recipientes, utensílios e consertos podem decidir se uma comunidade consegue transportar e guardar recursos. Isso dialoga com a Feira das Ferragens Trocadas, já proposta.",
+      "situacao_experimental": "A pessoa que repara um recipiente quer priorizar famílias; outra oferece mais por equipamento para uma escolta.",
+      "referencia_preexistente": "caatinga:comunidade:feira-ferragens",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:circuitos_materiais:armazenagem-e-perdas",
+      "nome_editorial": "Estoque não é sinônimo de abundância",
+      "producao_ou_troca_hipotetica": "A preservação e a verificação de provisões podem ser tão políticas quanto sua distribuição. A discussão sobre lacres no Pátio das Cabaças é proposta, não registro factual.",
+      "situacao_experimental": "Um recipiente lacrado chega vazio e uma acusação de roubo ameaça a confiança.",
+      "referencia_preexistente": "caatinga:comunidade:patio-cabacas",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:circuitos_materiais:cuidado-e-carga",
+      "nome_editorial": "O peso que não entra na conta",
+      "producao_ou_troca_hipotetica": "O transporte pode incluir bens, idosos, crianças e ferramentas, com custo de cuidado que não aparece na contagem de mercadorias.",
+      "situacao_experimental": "Uma escolta considera uma viagem bem-sucedida; os cuidadores apontam o custo do retorno.",
+      "referencia_preexistente": "caatinga:comunidade:poco-sem-bandeira",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:circuitos_materiais:sementes-e-reserva",
+      "nome_editorial": "A escolha entre guardar e comer",
+      "producao_ou_troca_hipotetica": "Guardar material de plantio pode constituir aposta no futuro, mas sem clima, espécie ou produtividade confirmados.",
+      "situacao_experimental": "Uma família precisa comer o que outra considera reserva para a próxima estação.",
+      "referencia_preexistente": "caatinga:comunidade:baixio-sementes",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:circuitos_materiais:noticias-e-distancias",
+      "nome_editorial": "O recado que não comprova uma rota",
+      "producao_ou_troca_hipotetica": "Mensagens entre grupos podem proteger gente dispersa, mas a existência de mensageiros propostos não documenta estrada, distância ou horário.",
+      "situacao_experimental": "Uma advertência chega tarde e ninguém sabe se o caminho falhou ou a interpretação.",
+      "referencia_preexistente": "caatinga:comunidade:poco-sem-bandeira",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:circuitos_materiais:trocas-com-a-costa",
+      "nome_editorial": "Cooperar sem apagar a pilhagem",
+      "producao_ou_troca_hipotetica": "A relação entre Caatinga e pradarias não se resume à agressão, mas o comércio direto com Portomonte não está confirmado. Troca pode ser objeto de negociação futura.",
+      "situacao_experimental": "Uma oferta de reparos é rejeitada porque outra comunidade sofreu uma pilhagem regional.",
+      "referencia_preexistente": "lugar:portomonte",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    }
+  ],
+  "etica_da_agua": [
+    {
+      "id": "worldbuilding-xxiii:etica_da_agua:primeira-necessidade",
+      "nome_editorial": "Quem bebe antes de quem?",
+      "regra_para_investigar": "Um protocolo possível de prioridade por necessidade pode ser testado com o Poço Sem Bandeira, proposta anterior, sem afirmar que exista uma lei real.",
+      "pergunta_de_justica": "Como equilibrar moradores, visitantes, crianças, animais e trabalho sem hierarquia universal?",
+      "referencia_preexistente": "caatinga:comunidade:poco-sem-bandeira",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:etica_da_agua:medicao-e-verdade",
+      "nome_editorial": "Quem confere o que foi medido?",
+      "regra_para_investigar": "Medir volume, perdas e qualidade pode ser matéria de confiança social; nenhuma medida, fonte permanente ou potabilidade foi comprovada.",
+      "pergunta_de_justica": "Quem pode contestar a pessoa encarregada de registrar uma reserva?",
+      "referencia_preexistente": "caatinga:comunidade:patio-cabacas",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:etica_da_agua:manutencao-e-autoridade",
+      "nome_editorial": "Consertar dá direito de mandar?",
+      "regra_para_investigar": "Quem realiza trabalho de manutenção pode reivindicar prioridade no uso de um bem, mas uma obrigação coletiva não cria posse automática.",
+      "pergunta_de_justica": "Pode o mantenedor cobrar uso de quem não tem condições de contribuir em trabalho?",
+      "referencia_preexistente": "caatinga:comunidade:poco-sem-bandeira",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:etica_da_agua:agua-e-solo",
+      "nome_editorial": "Reter água pode afetar outra família",
+      "regra_para_investigar": "Qualquer intervenção material hipotética precisa considerar vizinhos e recursos partilhados; não está demonstrada hidrografia local.",
+      "pergunta_de_justica": "Quem pode modificar uma passagem de água sem consultar pessoas que dependem dela?",
+      "referencia_preexistente": "regiao:caatinga",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:etica_da_agua:agua-de-plantio",
+      "nome_editorial": "Água de lavoura não é água de beber",
+      "regra_para_investigar": "Na Costa Sul, o texto sustenta a purificação do Mar de Sangue para agricultura em Portomonte; isso não prova água doméstica potável nem transporte para Caatinga.",
+      "pergunta_de_justica": "Como um acordo poderia especificar usos da água sem inventar potabilidade ou comércio?",
+      "referencia_preexistente": "lugar:portomonte",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:etica_da_agua:crise-e-excecao",
+      "nome_editorial": "A exceção que não termina",
+      "regra_para_investigar": "Uma decisão temporária de racionamento pode se tornar poder permanente caso ninguém discuta seu fim.",
+      "pergunta_de_justica": "Quem decide quando acaba a emergência e quem perdeu direitos durante ela?",
+      "referencia_preexistente": "regiao:caatinga",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    }
+  ],
+  "mobilidades": [
+    {
+      "id": "worldbuilding-xxiii:mobilidades:exilio-e-escolha",
+      "nome_editorial": "Nem toda partida é fuga",
+      "contexto_hipotetico": "O manuscrito fala em exilados, mas não afirma que todos os habitantes da Caatinga sejam exilados nem que toda mobilidade seja expulsão.",
+      "situacao_experimental": "Uma pessoa quer voltar à comunidade de origem e outra deseja permanecer no novo lugar.",
+      "referencia_preexistente": "regiao:caatinga",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 12
+    },
+    {
+      "id": "worldbuilding-xxiii:mobilidades:pastos-e-inferencias",
+      "nome_editorial": "Movimento não é nomadismo universal",
+      "contexto_hipotetico": "A região é descrita como dispersa; isso não basta para afirmar migração sazonal de todos os clãs nem animais de criação específicos.",
+      "situacao_experimental": "Uma família recebe pedido para abrir passagem num lugar que considera íntimo.",
+      "referencia_preexistente": "regiao:caatinga",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 12
+    },
+    {
+      "id": "worldbuilding-xxiii:mobilidades:vinculos-entre-costa-e-interior",
+      "nome_editorial": "Dois territórios, múltiplas relações",
+      "contexto_hipotetico": "Conflitos entre Caatinga e Costa Sul são documentados, mas podem existir pessoas com parentes nos dois lados; isso é hipótese, não genealogia comprovada.",
+      "situacao_experimental": "Um mediador é acusado de favorecer o lugar onde seus parentes cultivam.",
+      "referencia_preexistente": "regiao:costa-sul",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 12
+    },
+    {
+      "id": "worldbuilding-xxiii:mobilidades:memoria-de-351",
+      "nome_editorial": "Aliados que brigam depois",
+      "contexto_hipotetico": "A aliança de orcs e humanos de Garganta em 351 EC está documentada, sem comprovar continuidade de um tratado até o presente.",
+      "situacao_experimental": "Um descendente reivindica reconhecimento por serviços de ancestrais, enquanto outro lembra abusos posteriores.",
+      "referencia_preexistente": "regiao:caatinga",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 12
+    },
+    {
+      "id": "worldbuilding-xxiii:mobilidades:refugio-e-recusa",
+      "nome_editorial": "A hospitalidade tem limites materiais",
+      "contexto_hipotetico": "A circulação de refugiados é importante no Além Sul, mas o manuscrito não localiza recebimento individual de refugiados em cada povoado da Caatinga.",
+      "situacao_experimental": "Uma comunidade deseja ajudar, mas teme comprometer os recursos de crianças e doentes.",
+      "referencia_preexistente": "regiao:caatinga",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 12
+    },
+    {
+      "id": "worldbuilding-xxiii:mobilidades:mensageiros-e-segredos",
+      "nome_editorial": "A segurança de não revelar tudo",
+      "contexto_hipotetico": "Informação regional pode circular entre pessoas sem que mapa, caminho ou personagem específico seja canônico.",
+      "situacao_experimental": "Quem tem direito de divulgar uma passagem utilizada para abrigar pessoas?",
+      "referencia_preexistente": "caatinga:rota:barro-e-ferragem",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 12
+    }
+  ],
+  "relacoes_regionais": [
+    {
+      "id": "worldbuilding-xxiii:relacoes_regionais:orc-e-humano",
+      "nome_editorial": "Inimigos num ano, aliados em outro",
+      "interpretacao_social": "A aliança histórica contra kuo-toa e os conflitos entre interior e litoral documentam relações variáveis, não hostilidade racial perene.",
+      "tensao": "Uma lembrança de 351 EC pode fundamentar confiança sem apagar violências recentes.",
+      "referencia_preexistente": "regiao:caatinga",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:relacoes_regionais:agricultor-e-exilado",
+      "nome_editorial": "Quem é visto apenas como invasor",
+      "interpretacao_social": "A pilhagem regional é factual, mas não deve ser atribuída a cada pessoa ou clã; a ausência de fronteira precisa dificulta julgamentos automáticos.",
+      "tensao": "A pergunta sobre o autor de uma incursão deve exigir evidência particular.",
+      "referencia_preexistente": "dinamica:pilhagens-caatinga-pradarias",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:relacoes_regionais:interior-e-portomonte",
+      "nome_editorial": "Um nome conhecido não é um destino inevitável",
+      "interpretacao_social": "Portomonte é documentada na Costa Sul, porém o manuscrito não afirma ataques, comércio direto ou migração específica entre a cidade e a Caatinga.",
+      "tensao": "A cena da negociação pode ser possível sem datar, mapear nem assinar acordo.",
+      "referencia_preexistente": "lugar:portomonte",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:relacoes_regionais:guerra-marinha",
+      "nome_editorial": "O litoral possui outra ameaça",
+      "interpretacao_social": "Kuo-toa e abissais marinhos realizam ataques sacrificiais; não são a mesma campanha que incursões de pilhagem terrestre.",
+      "tensao": "Combater uma ameaça comum pode aproximar antigos rivais sem dissolver seus interesses.",
+      "referencia_preexistente": "dinamica:ataques-liturgicos-costa-ilhas",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:relacoes_regionais:corte-e-ausencia",
+      "nome_editorial": "Não ocupado não é protegido",
+      "interpretacao_social": "A Corte não ocupa diretamente a região da mesma forma que outras partes, mas isso não comprova neutralidade, paz ou ausência de influência indireta.",
+      "tensao": "Um poder distante pode preferir observar conflitos sem precisar governar um poço.",
+      "referencia_preexistente": "dinamica:nao-ocupacao-direta-alem-sul",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    }
+  ],
+  "vinhetas": [
+    {
+      "id": "worldbuilding-xxiii:vinhetas:a-sombra-do-cantaro",
+      "nome_editorial": "A sombra do cântaro",
+      "cena_hipotetica": "Na hipótese de um ponto de abastecimento, uma pessoa tenta cobrar pela fila que ela própria organizou; outra pergunta quem lhe concedeu esse direito.",
+      "tema": "Trabalho, autoridade e necessidade não são o mesmo.",
+      "referencia_preexistente": "caatinga:comunidade:poco-sem-bandeira",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:vinhetas:o-reparo",
+      "nome_editorial": "A ferramenta que não foi arma",
+      "cena_hipotetica": "Uma artesã de uma feira hipotética recusa transformar a última peça de metal em arma porque um recipiente quebrado impede a distribuição de água.",
+      "tema": "A oficina é política mesmo em tempo sem batalha.",
+      "referencia_preexistente": "caatinga:comunidade:feira-ferragens",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:vinhetas:o-nono-silencio",
+      "nome_editorial": "O nono silêncio",
+      "cena_hipotetica": "Na hipótese de um memorial, duas pessoas cantam versões diferentes da guerra contra os kuo-toa e divergem sobre quem foi salvo e quem foi abandonado.",
+      "tema": "Memória comum não equivale a história uniforme.",
+      "referencia_preexistente": "caatinga:comunidade:pedra-nove-silencios",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:vinhetas:a-semente",
+      "nome_editorial": "A última semente",
+      "cena_hipotetica": "Em um abrigo hipotético, pessoas discutem se devem consumir uma reserva desconhecida em vez de arriscar um futuro plantio igualmente incerto.",
+      "tema": "Guardar o amanhã pode custar o hoje.",
+      "referencia_preexistente": "caatinga:comunidade:baixio-sementes",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    },
+    {
+      "id": "worldbuilding-xxiii:vinhetas:carta-sem-destino",
+      "nome_editorial": "A carta sem destino",
+      "cena_hipotetica": "Uma mensagem pede auxílio às pradarias, mas quem a leva teme ser confundido com saqueador antes de conseguir falar.",
+      "tema": "As relações regionais não cabem em rótulo de inimigo.",
+      "referencia_preexistente": "regiao:costa-sul",
+      "situacao_documentada": false,
+      "ocorreu": false,
+      "aprovacao_autoral": false,
+      "estado": "proposta_cultural_sem_canon",
+      "pagina_contextual": 5
+    }
+  ],
+  "perguntas_para_autor": [
+    {
+      "id": "worldbuilding-xxiii:pergunta:territorio",
+      "pergunta_autoral": "Que limites geográficos são comprováveis entre a Caatinga, as pradarias e a Costa Sul?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxiii:pergunta:povos",
+      "pergunta_autoral": "Quais comunidades humanas, orcs e de outros povos possuem história cultural própria, não apenas militar?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxiii:pergunta:agua",
+      "pergunta_autoral": "Há fontes de água, regimes de uso, conservação e qualidade descritos por documentos autorais?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxiii:pergunta:agricultura",
+      "pergunta_autoral": "Que atividades de cultivo ou coleta existem realmente, sem transpor automaticamente a flora da Caatinga brasileira?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxiii:pergunta:habitar",
+      "pergunta_autoral": "Quais comunidades têm moradia estável, periódica ou itinerante e por quais razões?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxiii:pergunta:poder",
+      "pergunta_autoral": "Como decisões entre famílias e clãs se tornam legítimas sem pressupor um governo central?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxiii:pergunta:economia",
+      "pergunta_autoral": "Que trabalhos sustentam a região e que trocas efetivamente a ligam ao litoral?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxiii:pergunta:memoria",
+      "pergunta_autoral": "Como se contam a aliança de 351 EC, a Guerra de Nove Anos e conflitos posteriores sem história única?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxiii:pergunta:violencia",
+      "pergunta_autoral": "Quem participou de incursões específicas e quais mecanismos distinguem responsabilização coletiva de individual?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    },
+    {
+      "id": "worldbuilding-xxiii:pergunta:fe",
+      "pergunta_autoral": "Que cultos e práticas religiosas realmente existem na Caatinga?",
+      "estado": "pendente_de_autoria",
+      "resposta_aprovada": null
+    }
+  ],
+  "contagens": {
+    "fatos": 12,
+    "dominios_sociais": 12,
+    "circuitos_materiais": 6,
+    "etica_da_agua": 6,
+    "mobilidades": 6,
+    "relacoes_regionais": 5,
+    "vinhetas": 5,
+    "referencias_existentes": 12,
+    "perguntas": 10
+  }
+}
