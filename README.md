@@ -142,6 +142,10 @@ O Atlas recebeu o [painel de quatro frentes de povoamento](https://pedromaintena
 
 A [camada XLVII do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#marineTailSettlements) distingue **10 ilhas geográficas propostas** (das quais quatro não possuem comunidade associada), **6 comunidades insulares**, **12 comunidades submersas** divididas entre o Mar de Sangue e as águas azuis, **8 comunidades da Cauda** e **12 novos habitats ecológicos**. A contagem de comunidades propostas chega a **82 nos quatro lotes**, com **34 habitats adicionais desde o XLV e zero novas aprovações canônicas**. Tortles, Tabaxis, Kuo-Toa, Abissais marinhos, Tritões, Sereias, feéricos e outros seres recebem formas de habitar distintas. Nenhuma proposta fixa a fronteira móvel dos mares ou inventa uma travessia pelo Abismo. [Dossiê XLVII](docs/ATLAS_ARQUIPELAGOS_MARES_CAUDA_CICLO47.md) · [JSON de propostas](data/propostas/povoamento-insular-submerso-cauda-ciclo47.json).
 
+## Ciclo XLVIII — Auditoria transversal de densidade, diversidade e fontes
+
+A [auditoria interativa do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#settlementDensityAudit) cruza os quatro lotes de povoamento: **82 comunidades propostas**, **34 habitats ecológicos** e **10 ilhas geográficas propostas**, com **zero homologação canônica**. A principal lacuna editorial está na **Costa Sul continental**: das 8 propostas da frente Costa, **7 são insulares**, e a oitava é uma comunidade de cavernas costeiras sem localização continental confirmada. A leitura lexical também mostrou **43 comunidades** com referências a conselho, assembleia ou outras formas colegiadas de governo, sugerindo diversificar instituições, não apenas espécies. A auditoria não apresenta percentual de conclusão, não transforma menções de povos em censo e não declara vazias as regiões de Foz, Shadar ou Grama-Cortada. [Dossiê XLVIII](docs/ATLAS_AUDITORIA_DENSIDADE_CICLO48.md) · [Parâmetros e diagnóstico](data/atlas/auditoria-povoamento-transversal-ciclo48.json).
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
