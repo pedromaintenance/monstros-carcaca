@@ -718,6 +718,42 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .material-rule{border-left:2px solid #90a992;padding:10px;background:#28372d}
 @media(max-width:760px){.material-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.material-axis-list{grid-template-columns:1fr}.material-site-list{max-height:360px}}
 
+
+/* Ciclo LI: decisões autorais interativas, sem ações de homologação. */
+.demeter-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:12px 0}
+.demeter-stats>div{background:#27332b;border:1px solid #536654;border-radius:9px;padding:11px;display:grid;gap:5px}
+.demeter-stats b{font:500 23px Cinzel,serif;color:#e8d2a7}
+.demeter-stats span{font-size:10px;line-height:1.6;color:#c4d7c4}
+.demeter-warning{background:#342c23;border-left:3px solid #c8a47a;color:#dfd0ba;font-size:11px;line-height:1.75;padding:11px 13px}
+.demeter-select{display:grid;gap:8px;font-size:11px;color:#d5dfd2;margin:12px 0}
+.demeter-select select{padding:9px;border:1px solid #587260;border-radius:7px;background:#1e3025;color:#e4e8da;max-width:100%}
+.demeter-decision-cards{display:grid;gap:7px}
+.demeter-decision{display:grid;gap:5px;text-align:left;border:1px solid #47614c;border-radius:8px;background:#213127;color:#e2ebdf;padding:10px}
+.demeter-decision:hover,.demeter-decision.active{border-color:#d2b782;background:#34392d}
+.demeter-decision b{font-size:11px;color:#e4d5b4;line-height:1.5}
+.demeter-decision small{font-size:10px;color:#b9cbbd;line-height:1.5}
+.demeter-detail h4,.demeter-impact h4{font:500 14px Cinzel,serif;color:#e4d4b2}
+.demeter-detail p{font-size:11px;line-height:1.75}
+.demeter-options{display:grid;gap:8px}
+.demeter-option{border:1px solid #49634f;border-radius:8px;padding:12px;background:#233227}
+.demeter-option.active{border-color:#d5b57e;background:#33372b}
+.demeter-option b{font-size:12px;color:#e3d3b0}
+.demeter-option p{font-size:11px;line-height:1.75;color:#c7d6c7}
+.demeter-option small{font-size:10px;color:#b1c2b1;line-height:1.5}
+.demeter-fact,.demeter-impact{background:#24332b;border:1px solid #4d6655;border-radius:8px;padding:12px;margin:9px 0}
+.demeter-fact b,.demeter-impact b{font-size:12px;color:#e7d4b2;line-height:1.6;display:block}
+.demeter-fact small,.demeter-impact small{font-size:10px;color:#b8ceb9;display:block}
+.demeter-fact p,.demeter-impact p,.demeter-rule{font-size:11px;color:#c8d7c9;line-height:1.7}
+.demeter-impact-summary{display:grid;grid-template-columns:auto 1fr auto 1fr;align-items:center;gap:8px;padding:12px;background:#25352a;border-radius:8px}
+.demeter-impact-summary b{font:500 22px Cinzel,serif;color:#e4cfaa}
+.demeter-impact-summary span{font-size:10px;line-height:1.4;color:#b7cebe}
+.demeter-no-approval{border-left:3px solid #c3a37d;background:#332f26;padding:10px;font-size:11px}
+.demeter-rule{border-left:2px solid #92ad98;background:#27362e;padding:10px}
+.demeter-reset{border:1px solid #9daa91;background:#304532;color:#e8f1e4;border-radius:8px;padding:10px 12px;font-size:11px}
+.demeter-reset:hover{background:#3b573c}
+.demeter-empty{font-size:11px;color:#c0d1c2;line-height:1.7}
+@media(max-width:780px){.demeter-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.demeter-impact-summary{grid-template-columns:auto 1fr}}
+
 </style>
 </head>
 <body>
@@ -813,6 +849,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <section id="settlementDensityAudit" class="env-section" aria-label="Auditoria transversal do povoamento continental"><p class="env-explain">Carregando a auditoria de densidade, diversidade e proveniência...</p></section>
   <section id="continentalCoastSettlements" class="env-section" aria-label="Povoamento novo da Costa Sul continental"><p class="env-explain">Carregando comunidades, ecologias e vínculos costeiros...</p></section>
   <section id="coastMaterialViability" class="env-section" aria-label="Viabilidade material de Portomonte e da Costa continental"><p class="env-explain">Carregando diagnóstico de água, alimento, trabalho e acesso...</p></section>
+  <section id="demeterDecisionBook" class="env-section" aria-label="Decisões autorais sobre Deméter e Portomonte"><p class="env-explain">Carregando análise dos limites da bênção e alternativas de worldbuilding...</p></section>
   <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
   <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
   <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
@@ -894,6 +931,8 @@ import {buildContinentalCoastSettlementLot} from "./settlement-coast-mainland.mj
 import {initContinentalCoastSettlementLot} from "./settlement-coast-mainland-ui.mjs";
 import {buildCoastMaterialViability} from "./coast-material-viability.mjs";
 import {initCoastMaterialViability} from "./coast-material-viability-ui.mjs";
+import {buildDemeterDecisionBook,simulateDemeterDecisions} from "./portomonte-demeter-decisions.mjs";
+import {initDemeterDecisionBook} from "./portomonte-demeter-decisions-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -930,7 +969,8 @@ const paths={
   marineTail:"data/propostas/povoamento-insular-submerso-cauda-ciclo47.json",
   settlementDensity:"data/atlas/auditoria-povoamento-transversal-ciclo48.json",
   continentalCoast:"data/propostas/povoamento-costa-continental-ciclo49.json",
-  coastMaterial:"data/atlas/viabilidade-material-costa-ciclo50.json"
+  coastMaterial:"data/atlas/viabilidade-material-costa-ciclo50.json",
+  demeterBook:"data/atlas/portomonte-demeter-decisoes-ciclo51.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -1257,6 +1297,7 @@ $("export").addEventListener("click",()=>{
     state.settlementDensity=buildSettlementDensityAudit(loaded.settlementDensity,loaded.settlementHorizon,loaded.settlementInventory,loaded.creatureSettlements,loaded.settlementExpansion,loaded.fourFronts,loaded.marineTail);
     state.continentalCoast=buildContinentalCoastSettlementLot(loaded.continentalCoast,state.settlementDensity,state.environments,loaded.authoredPages,loaded.settlementHorizon);
     state.coastMaterial=buildCoastMaterialViability(loaded.coastMaterial,loaded.continentalCoast,loaded.places,loaded.authoredPages,state.settlementDensity);
+    state.demeterBook=buildDemeterDecisionBook(loaded.demeterBook,loaded.coastMaterial,loaded.places,loaded.authoredPages);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -1275,6 +1316,7 @@ $("export").addEventListener("click",()=>{
     initSettlementDensityAudit($("settlementDensityAudit"),state.settlementDensity);
     initContinentalCoastSettlementLot($("continentalCoastSettlements"),state.continentalCoast);
     initCoastMaterialViability($("coastMaterialViability"),state.coastMaterial);
+    initDemeterDecisionBook($("demeterDecisionBook"),state.demeterBook,simulateDemeterDecisions);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -1304,6 +1346,7 @@ $("export").addEventListener("click",()=>{
     $("settlementDensityAudit").textContent="A auditoria transversal de povoamento não pôde ser carregada.";
     $("continentalCoastSettlements").textContent="O povoamento da Costa Sul continental não pôde ser carregado.";
     $("coastMaterialViability").textContent="A matriz de viabilidade material da Costa Sul não pôde ser carregada.";
+    $("demeterDecisionBook").textContent="O caderno de decisões de Deméter não pôde ser carregado.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
