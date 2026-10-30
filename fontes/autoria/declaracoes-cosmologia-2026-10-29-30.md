@@ -71,4 +71,24 @@ O autor declarou também: corpo de Golzdov transformado em continente; consciên
 
 - As frases acima são **falas do autor**; o dossiê as sistematiza, sem reescrever retroativamente as demais fontes.
 - Perguntas, suposições, hipóteses e metáforas propostas pelo assistente durante a conversa não são decisões autorais.
-- A frase sobre Golzdov como continente e a frase sobre Kindau como o Tempo morto **não fecham por si sós** a equivalência nominal dos dois seres.
+- A equivalência **Golzdov = cadáver de Kindau** foi **explicitamente confirmada pelo autor na declaração posterior de 30/10**. A versão anterior mantinha essa questão em aberto; seu estado histórico é preservado no dossiê 0.1.0.
+
+## Complemento autoral de confirmação — 30/10/2026
+
+Transcrição literal da declaração que resolve a relação entre Golzdov e Kindau e diferencia as entidades primordiais dos deuses:
+
+```text
+Golzdov é dracônico pra Pedra-Dragão
+
+E é simplesmente o cadáver de Kindau
+
+O Sangue que jorra no oceano é eterno porque ele não está morto de verdade
+
+---
+
+Como eu disse, o povo não conhece essas verdades, e poucos iluminados chegam perto delas
+
+Kindau, Dialel e Corau não são deuses, são entidades que não se comunicam com os humanos do mesmo jeito que os deuses que Dialel criou fazem. Deméter realiza milagres, purifica, faz crescer, até fala com alguns sacerdotes. Bahamut gosta de viajar como um humano. Kindau não fala. Dialel não fala. Dialel cria. Kindau devora. E Corau canta e harmoniza o universo dentro de si.
+```
+
+**Efeito editorial:** a hipótese de equivalência nominal deixa de ser questão aberta; a identidade Golzdov/cadáver de Kindau, a causa da eternidade do sangue e a distinção entre entidades primordiais e deuses passam a ser afirmações autorais. A origem da corrupção do mar permanece em aberto.
