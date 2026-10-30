@@ -660,6 +660,29 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .density-source-stats span{font-size:10px;color:#c8d5c6;line-height:1.5}
 @media(max-width:770px){.density-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.density-matrix,.density-gap-list,.density-mentions{grid-template-columns:1fr}.density-source-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.density-filter{flex-wrap:wrap}}
 
+
+/* Ciclo XLIX: comunidades continentais sem cartografia e interações fantásticas. */
+.coast-stats{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:12px 0}
+.coast-stats>div{padding:11px;background:#26322b;border:1px solid #4d6656;border-radius:8px;display:grid;gap:5px}
+.coast-stats b{font:500 22px Cinzel,serif;color:#e8d0a5}
+.coast-stats span{color:#bcd2c0;font-size:10px;line-height:1.55}
+.coast-counter-warning{border-left:3px solid #bca581;background:#302e25;color:#e1d3b7;padding:11px 12px;font-size:11px;line-height:1.75}
+.coast-filter{display:flex;gap:12px;align-items:center;margin:12px 0;color:#cddfcf;font-size:11px}
+.coast-filter select{color:#e4e9df;border:1px solid #58735f;background:#1d2922;padding:8px;border-radius:7px;max-width:100%}
+.coast-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.coast-place{display:flex;flex-direction:column;gap:7px;border:1px solid #4d6554;background:#1c2922;padding:12px;border-radius:9px;color:#e6ebdf;text-align:left}
+.coast-place:hover,.coast-place.active{border-color:#c3aa79;background:#35362c}
+.coast-place small{font-size:9px;color:#b7cdbf;text-transform:capitalize}
+.coast-place b{font-size:12px;color:#e8d8b8}
+.coast-place span{font-size:10px;line-height:1.55;color:#c4d4c8}
+.coast-note{padding:11px;border-left:3px solid #88a18c;background:#26372c;color:#c8d8cd;font-size:11px;line-height:1.65}
+.coast-link{background:#213128;border:1px solid #536953;border-radius:9px;padding:12px;margin:9px 0}
+.coast-link b,.coast-link small{display:block}
+.coast-link b{font-size:12px;color:#e7d9b4}
+.coast-link small{font-size:10px;color:#b3c9b6;margin:5px 0}
+.coast-link p,.coast-inspector p{font-size:11px;line-height:1.7}
+.coast-rule{font-size:11px;line-height:1.7;background:#26362d;padding:10px;border-left:2px solid #83a58f}
+@media(max-width:780px){.coast-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.coast-cards{grid-template-columns:1fr}.coast-filter{flex-wrap:wrap}}
 </style>
 </head>
 <body>
@@ -753,6 +776,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <section id="fourFrontSettlements" class="env-section" aria-label="Povoamento da Caatinga, Garganta, Thargrid e Ironwood"><p class="env-explain">Carregando comunidades e habitats das quatro frentes...</p></section>
   <section id="marineTailSettlements" class="env-section" aria-label="Arquipélagos, comunidades submersas e Cauda"><p class="env-explain">Carregando o novo povoamento marítimo e da Cauda...</p></section>
   <section id="settlementDensityAudit" class="env-section" aria-label="Auditoria transversal do povoamento continental"><p class="env-explain">Carregando a auditoria de densidade, diversidade e proveniência...</p></section>
+  <section id="continentalCoastSettlements" class="env-section" aria-label="Povoamento novo da Costa Sul continental"><p class="env-explain">Carregando comunidades, ecologias e vínculos costeiros...</p></section>
   <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
   <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
   <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
@@ -830,6 +854,8 @@ import {buildMarineTailSettlements} from "./settlement-marine-tail.mjs";
 import {initMarineTailSettlements} from "./settlement-marine-tail-ui.mjs";
 import {buildSettlementDensityAudit} from "./settlement-density.mjs";
 import {initSettlementDensityAudit} from "./settlement-density-ui.mjs";
+import {buildContinentalCoastSettlementLot} from "./settlement-coast-mainland.mjs";
+import {initContinentalCoastSettlementLot} from "./settlement-coast-mainland-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -864,7 +890,8 @@ const paths={
   authoredPages:"data/atlas/indice-paginas-fonte-ciclo45.json",
   fourFronts:"data/propostas/povoamento-quatro-frentes-ciclo46.json",
   marineTail:"data/propostas/povoamento-insular-submerso-cauda-ciclo47.json",
-  settlementDensity:"data/atlas/auditoria-povoamento-transversal-ciclo48.json"
+  settlementDensity:"data/atlas/auditoria-povoamento-transversal-ciclo48.json",
+  continentalCoast:"data/propostas/povoamento-costa-continental-ciclo49.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -1189,6 +1216,7 @@ $("export").addEventListener("click",()=>{
     state.fourFronts=buildFourFrontierSettlementLot(loaded.fourFronts,loaded.creatureSettlements,loaded.settlementExpansion,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
     state.marineTail=buildMarineTailSettlements(loaded.marineTail,loaded.creatureSettlements,loaded.settlementExpansion,loaded.fourFronts,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
     state.settlementDensity=buildSettlementDensityAudit(loaded.settlementDensity,loaded.settlementHorizon,loaded.settlementInventory,loaded.creatureSettlements,loaded.settlementExpansion,loaded.fourFronts,loaded.marineTail);
+    state.continentalCoast=buildContinentalCoastSettlementLot(loaded.continentalCoast,state.settlementDensity,state.environments,loaded.authoredPages,loaded.settlementHorizon);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -1205,6 +1233,7 @@ $("export").addEventListener("click",()=>{
     initFourFrontierSettlements($("fourFrontSettlements"),state.fourFronts);
     initMarineTailSettlements($("marineTailSettlements"),state.marineTail);
     initSettlementDensityAudit($("settlementDensityAudit"),state.settlementDensity);
+    initContinentalCoastSettlementLot($("continentalCoastSettlements"),state.continentalCoast);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -1232,6 +1261,7 @@ $("export").addEventListener("click",()=>{
     $("fourFrontSettlements").textContent="A expansão da Caatinga, Garganta, Thargrid e Ironwood não pôde ser carregada.";
     $("marineTailSettlements").textContent="O povoamento marítimo e da Cauda não pôde ser carregado.";
     $("settlementDensityAudit").textContent="A auditoria transversal de povoamento não pôde ser carregada.";
+    $("continentalCoastSettlements").textContent="O povoamento da Costa Sul continental não pôde ser carregado.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
