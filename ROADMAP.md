@@ -890,3 +890,22 @@ A faixa flexível de **145–205 assentamentos e ilhas** não é reservada a hum
 - [ ] Continuar a expansão da **Costa Sul continental** e outras frentes ainda pouco diferenciadas antes de encerrar o macro.
 
 [Documento XLVII](docs/ATLAS_ARQUIPELAGOS_MARES_CAUDA_CICLO47.md) · [Atlas XLVII](https://pedromaintenance.github.io/monstros-carcaca/atlas/#marineTailSettlements).
+
+## Ciclo XLVIII — Auditoria de densidade, diversidade e canonicidade (2026-10-29)
+
+- [x] Consolidar os quatro lotes de povoamento com **82 comunidades**, **34 habitats** e **10 ilhas físicas**, preservando as unidades incompatíveis e as zero aprovações.
+- [x] Distinguir costa continental de comunidades insulares: **7 propostas insulares e 1 costeira não insular** na frente Costa, sem localizações confirmadas.
+- [x] Distinguir mar rubro e mar azul nas 14 propostas submarinas: **7 de cada ambiente**.
+- [x] Extrair menções lexicais a povos e criaturas fantásticas sem apresentá-las como população comprovada ou espécies canônicas.
+- [x] Detectar repetição de modelos de governo: **43 das 82 propostas** usam vocabulário de conselho, círculo ou assembleia.
+- [x] Separar texto de subsistência e arquitetura preenchido de **viabilidade material comprovada**, ainda não homologada em nenhum dos 82 casos.
+- [x] Reavaliar a matriz das dez frentes e manter **Foz, Shadar, Grama-Cortada e ocupações transversais** sem metas numéricas inventadas.
+- [x] Criar interface auditável em quatro modos: matriz regional, diversidade mencionada, lacunas prioritárias e proveniência.
+- [x] Integrar validação contra canonização, duplicidades, confusão ilha/vila e perdas de habitats aos workflows de CI e Pages.
+- [ ] **Próximo ciclo prioritário:** expandir comunidades **continentais** da Costa Sul com diversidade econômica, culturas costeiras próprias e consequências da guerra entre os povos do Além Sul.
+- [ ] Revisar fontes para individualizar cidades e conjuntos já documentados antes de homologar propostas.
+- [ ] Em novas propostas, exigir alternativas de instituições não colegiadas, viabilidade hídrica/alimentar e relações com habitats que não impliquem rotas inventadas.
+
+As faixas 145–205 são horizonte flexível de densidade, **não porcentagem de progresso** ou contagem canônica. O ritmo será determinado por identidade, localização plausível, ecologia e política, não simplesmente por cotas.
+
+[Auditoria XLVIII](docs/ATLAS_AUDITORIA_DENSIDADE_CICLO48.md) · [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#settlementDensityAudit).
