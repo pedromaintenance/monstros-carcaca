@@ -909,3 +909,22 @@ A faixa flexível de **145–205 assentamentos e ilhas** não é reservada a hum
 As faixas 145–205 são horizonte flexível de densidade, **não porcentagem de progresso** ou contagem canônica. O ritmo será determinado por identidade, localização plausível, ecologia e política, não simplesmente por cotas.
 
 [Auditoria XLVIII](docs/ATLAS_AUDITORIA_DENSIDADE_CICLO48.md) · [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#settlementDensityAudit).
+
+## Ciclo XLIX — Redes sociais e ecologia da Costa Sul continental (2026-10-29)
+
+- [x] Responder à auditoria XLVIII com **14 propostas de comunidades continentais**, sem misturá-las aos **7 núcleos insulares anteriores**.
+- [x] Diversificar os regimes sociais: parentesco, arrendamento, abadessa, comando de vigia, mestre de ofício, titular hereditário, estrutura biológica e pactos feéricos.
+- [x] Diferenciar humanos, orcs, goblins, tabaxis, tortles itinerantes, fadas, gastrópodes, crustáceos e minerais sapientes como moradores potenciais, não facções homogêneas.
+- [x] Criar **8 habitats** de polinizadores, decompositores, predadores, reprodução e fenômenos mágicos sem contabilizá-los como vilas.
+- [x] Registrar **8 vínculos sociais hipotéticos** entre assentamentos com IDs explícitos, **sem rotas, distâncias, fluxos ou acordos canônicos**.
+- [x] Ancorar contextos nas pp. 5, 12, 14–16, 20 e 23 do Hack, preservando que a bênção de Deméter pertence ao contexto agrícola de Portomonte, não garante água potável em toda a costa.
+- [x] Bloquear por validação água, alimento, coordenadas, população, relações confirmadas, dupla contagem e aprovação automática.
+- [x] Adicionar painel interativo de quatro modos ao Atlas, testes de regressão, manifesto Pages e documentação.
+- [x] Consolidar **96 comunidades propostas**, **42 habitats propostos** e **zero novos assentamentos aprovados**; a frente Costa passa de 8 para 22 propostas (incluindo 7 insulares), não 22 cidades existentes.
+- [ ] Ciclo L: estudo de **viabilidade material** do povoamento proposto e de Portomonte (água, alimento, energia, matéria-prima e riscos), sem criar fatos autorais por inferência.
+- [ ] Identificar por revisão do manuscrito os assentamentos costeiros previamente documentados em conjunto, antes de promover novas hipóteses.
+- [ ] Reconciliar posição relativa, acesso, rotas e comércio entre locais **somente** mediante decisões do autor e fontes suficientes.
+
+A camada XLVIII continua como fotografia da auditoria após os quatro primeiros lotes (**82 comunidades**). O XLIX é um acréscimo posterior e não reescreve retroativamente os resultados anteriores.
+
+[Dossiê XLIX](docs/ATLAS_COSTA_CONTINENTAL_CICLO49.md) · [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#continentalCoastSettlements).
