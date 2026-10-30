@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Ciclo XLVIII — Auditoria transversal de densidade e diversidade do povoamento",
+  "estado": "auditoria_editorial_sem_homologacao",
+  "altera_canon": false,
+  "aprovacao_autoral": false,
+  "auditoria_medida": "propostas_editoriais_nao_canonicas",
+  "proibe_percentual_de_conclusao": true,
+  "nota_epistemica": "A auditoria mede 82 propostas de comunidades, 10 propostas físicas de ilhas e 34 locais ecológicos propostos, não a população real ou a porcentagem de conclusão do continente. O inventário documental não é um censo completo.",
+  "meta": "Avaliar concentração e repetição temática, qualidade estrutural, viabilidade ainda indeterminada e lacunas de fontes; não premiar apenas quantidade de nomes.",
+  "referencia_horizonte": "data/atlas/horizonte-povoamento-macro.json",
+  "referencia_inventario": "data/atlas/inventario-povoamento-ciclo44.json",
+  "lotes": [
+    "data/propostas/povoamento-criaturas-lote01.json",
+    "data/propostas/povoamento-regional-lote02-ciclo45.json",
+    "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+    "data/propostas/povoamento-insular-submerso-cauda-ciclo47.json"
+  ],
+  "origens_tipos": [
+    "lote01",
+    "lote02",
+    "lote03",
+    "lote04_insular",
+    "lote04_submerso",
+    "lote04_cauda"
+  ],
+  "frentes": [
+    {
+      "id": "frente:macro:rio",
+      "nome": "Rio Ancestral",
+      "aviso_documental": "Percorrer os núcleos documentados antes de completar a lista de margens; evitar supor ordem do curso.",
+      "lacuna_ecologica": "Navegação, qualidade da água, hierarquia tributária e fontes de alimentos precisam de posição e materialidade.",
+      "risco_de_repeticao": "Muitas assembleias e conselhos de ofício propostos; diversificar regimes de dependência sem canonizar rotas.",
+      "proxima_acao": "fortalecer_fonte_e_economia"
+    },
+    {
+      "id": "frente:macro:eldroth",
+      "nome": "Eldroth",
+      "aviso_documental": "Diferenciar aldeias existentes sob ocupação de habitats livres e assentamentos apenas imaginados.",
+      "lacuna_ecologica": "Água, sustento de fugitivos e interferência ecológica de Sylara são pouco demonstrados por localidade.",
+      "risco_de_repeticao": "Comunidades propostas convergem em refúgio clandestino; evitar que todo morador seja resistente ou espião.",
+      "proxima_acao": "auditar_viabilidade_e_diversidade_politica"
+    },
+    {
+      "id": "frente:macro:garganta-entorno",
+      "nome": "Entorno de Garganta",
+      "aviso_documental": "Determinar o que é entorno exterior em vez de bairros da cidade ou antigas ruínas Yokai.",
+      "lacuna_ecologica": "A distribuição de água, energia e entradas de grutas não está delimitada.",
+      "risco_de_repeticao": "Não presumir povo Yokai contemporâneo nem transformar cada vestígio em aldeia.",
+      "proxima_acao": "diferenciar_ruinas_e_nucleos"
+    },
+    {
+      "id": "frente:macro:thargrid-montanhas",
+      "nome": "Montanhas de Thargrid",
+      "aviso_documental": "Individualizar salões anões e domínios de gigantes que o manuscrito cita como coletivos.",
+      "lacuna_ecologica": "Minas, forjas, calor, ventilação, alimentação e circulação entre níveis necessitam validação.",
+      "risco_de_repeticao": "Ordenamento gigante não equivale a soberania sobre todos os povos; distinguir infraestrutura do Reino e comunidades autônomas.",
+      "proxima_acao": "inventariar_assentamentos_documentados"
+    },
+    {
+      "id": "frente:macro:ironwood",
+      "nome": "Ironwood",
+      "aviso_documental": "Determinar quantos povoados florestais existem além das companhias ranger.",
+      "lacuna_ecologica": "Abastecimento de comunidades ocultas e rotas de socorro não podem ser deduzidos da guerrilha.",
+      "risco_de_repeticao": "A resistência não é o governo de todas as fadas, gnomos, animais inteligentes e famílias locais.",
+      "proxima_acao": "separar_povoados_de_patrulhas"
+    },
+    {
+      "id": "frente:macro:caatinga",
+      "nome": "Caatinga",
+      "aviso_documental": "As propostas crescem, mas precisam de diversidade além do conflito de água e exílio.",
+      "lacuna_ecologica": "Sem fontes hídricas e safras documentadas, a capacidade de suporte de toda comunidade proposta segue em aberto.",
+      "risco_de_repeticao": "Evitar retratar a cultura orc apenas por saque, ou transformar magia em fonte automática de água.",
+      "proxima_acao": "validar_agua_e_subsistencia"
+    },
+    {
+      "id": "frente:macro:costa",
+      "nome": "Costa do Mar de Sangue",
+      "aviso_documental": "Prioridade imediata: o atual conjunto de propostas costeiras está concentrado em ilhas e cavernas.",
+      "lacuna_ecologica": "As pradarias agrícolas, a purificação local de Deméter, tempestades e ataques marinhos precisam de distribuição plausível.",
+      "risco_de_repeticao": "O inventário formal contém Portomonte, duas referências coletivas e nenhuma malha continental individualizada comparável.",
+      "proxima_acao": "expandir_costa_continental"
+    },
+    {
+      "id": "frente:macro:ilhas",
+      "nome": "Arquipélagos",
+      "aviso_documental": "Dez ilhas possuem nomes editoriais, mas nenhuma foi cartograficamente aprovada.",
+      "lacuna_ecologica": "A água potável, a viabilidade dos portos, relevo e correntes não estão fixados.",
+      "risco_de_repeticao": "Quatro ilhas propostas são deliberadamente sem povoado; a contagem geográfica não equivale a comunidades.",
+      "proxima_acao": "revisar_geografia_insular"
+    },
+    {
+      "id": "frente:macro:submersos",
+      "nome": "Mares rubro e azul",
+      "aviso_documental": "Distinguir cidades Kuo-Toa, Abissais e núcleos de Tritões e Sereias como sociedades autônomas.",
+      "lacuna_ecologica": "Profundidade, pressão, luz, alimento e limites móveis das águas não estão localizados.",
+      "risco_de_repeticao": "Não confundir Abissais com demônios nem impor um império único aos povos do mar azul.",
+      "proxima_acao": "individualizar_cidades_existentes"
+    },
+    {
+      "id": "frente:macro:cauda",
+      "nome": "Cauda de Golzdov",
+      "aviso_documental": "O Templo do Crepúsculo é âncora histórica, não prova de oito cidades ao redor.",
+      "lacuna_ecologica": "Sem acesso confirmado pelo Abismo, cadeia de abastecimento, ocupação civil e tamanho populacional são questões centrais.",
+      "risco_de_repeticao": "Núcleos que serviriam a Rainha são propostas; não pressupor estrada nem obediência universal.",
+      "proxima_acao": "resolver_logistica_sem_inventar_passagem"
+    }
+  ],
+  "sem_faixa_numerica": [
+    {
+      "id": "foz",
+      "nome": "Foz e margens do Abismo",
+      "observacao": "A fonte documenta Gualápolis e Boca do Abismo, mas não fixa todo o povoamento. As relações entre as margens e Shadar exigem decisão topológica.",
+      "nao_inferir_zero_populacao": true
+    },
+    {
+      "id": "shadar",
+      "nome": "Shadar-Riverie",
+      "observacao": "Centro aristocrático documentado, porém zona territorial e sobreposição com Gualápolis–Boca continuam por resolver. Zero propostas deste ciclo não significa ausência de população.",
+      "nao_inferir_zero_populacao": true
+    },
+    {
+      "id": "grama",
+      "nome": "Condado de Grama-Cortada",
+      "observacao": "O Condado possui comunidades, famílias e cultura registradas; sua posição geográfica não está resolvida e não recebeu meta numérica.",
+      "nao_inferir_zero_populacao": true
+    },
+    {
+      "id": "demais",
+      "nome": "Outras áreas e ocupações móveis",
+      "observacao": "Redes subterrâneas, moradores nômades, criaturas migrantes e acampamentos precisam de classificação sem converter todos em povoado permanente.",
+      "nao_inferir_zero_populacao": true
+    }
+  ],
+  "eixos_qualidade": [
+    {
+      "id": "descricao_narrativa",
+      "nome": "Identidade social descrita",
+      "regra": "Habitantes, forma de habitar, governo, economia e conflito têm texto em cada proposta; isso não comprova viabilidade."
+    },
+    {
+      "id": "sustento_verificavel",
+      "nome": "Viabilidade material comprovada",
+      "regra": "Não presumir água, alimento, energia, combustível e capacidade de suporte sem dados geográficos e históricos."
+    },
+    {
+      "id": "topologia_verificada",
+      "nome": "Geografia e relações de acesso",
+      "regra": "Nenhuma proposta dos quatro lotes fornece coordenadas, distâncias ou travessias homologadas."
+    },
+    {
+      "id": "comunidades_nao_humanoides",
+      "nome": "Diversidade fantástica",
+      "regra": "Goblins, fadas e criaturas não humanoides podem formar comunidades sem papel obrigatório de antagonistas; menções a povos são índices lexicais, não censo de espécies."
+    },
+    {
+      "id": "permanencia_habitat",
+      "nome": "Comunidades versus habitats",
+      "regra": "Ilhas, covis, fenômenos mágicos e áreas migratórias não são automaticamente assentamentos."
+    },
+    {
+      "id": "proveniencia_status",
+      "nome": "Autoria e status",
+      "regra": "Referências ao capítulo I validam condições regionais, não os 82 nomes propostos. Nenhuma proposta é aprovada por cálculo."
+    }
+  ],
+  "prioridade_proximo_ciclo": [
+    "Inspecionar primeiro a Costa Sul continental: Portomonte documentada, mas a maior parte das propostas da frente Costa está em ilhas ou cavernas, não nas vilas e campos costeiros.",
+    "Separar nas quatro frentes centrais os assentamentos já descritos em conjunto de protótipos propostos, sem somá-los.",
+    "Antes de aprovar um povoado, exigir pelo menos condições plausíveis de alimento, água, autoridade, relações e posição relativa sem inventar topologia.",
+    "Revisar repetição de estruturas de conselho/assembleia e de conflitos políticos antes de expandir o catálogo.",
+    "Abordar Foz, Shadar e Grama-Cortada como pontos geográficos e autorais pendentes, não como desertos."
+  ],
+  "contagens_esperadas": {
+    "comunidades_4_lotes": 82,
+    "habitats_3_lotes": 34,
+    "ilhas_fisicas_propostas": 10,
+    "comunidades_vinculadas_a_ilhas_novas": 6,
+    "propostas_aprovadas": 0,
+    "registros_formais_inventario": 3,
+    "grupos_equivalencia": 7
+  },
+  "politica_numerica": "As faixas de referência são elásticas. A diferença aritmética entre propostas e faixa inferior é indicador de volume editorial, não de localidades que já existem nem de percentual de conclusão; o critério de prontidão depende de ecologia, política, geografia e canonicidade.",
+  "data": "2026-10-29"
+}
