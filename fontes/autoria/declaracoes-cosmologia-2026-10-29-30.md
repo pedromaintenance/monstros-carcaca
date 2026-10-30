@@ -92,3 +92,21 @@ Kindau, Dialel e Corau não são deuses, são entidades que não se comunicam co
 ```
 
 **Efeito editorial:** a hipótese de equivalência nominal deixa de ser questão aberta; a identidade Golzdov/cadáver de Kindau, a causa da eternidade do sangue e a distinção entre entidades primordiais e deuses passam a ser afirmações autorais. A origem da corrupção do mar permanece em aberto.
+
+## Complemento autoral — Corau, reflexos e corporeidade (30/10/2026)
+
+Transcrição literal:
+
+> É como Éris e Aneris.
+>
+> Toda criança que Éris pare, Aneris devora.
+>
+> É filosoficamente dificil de identificar o que levou Dialel a criar o espaço. Kindau estava destinado a devorar a si mesmo? É por isso que há o símbolo da serpente devorando a própria cauda?
+>
+> Corau é o oceano primordial onde Dialel criou tudo. As outras dimensões são somente reflexos da luz de Dialel refletindo nestas águas.
+>
+> A aparência de Dialel, Kindau e Corau é completamente ilusória, já que estas entidades não podem ser confinadas a um corpo físico.
+>
+> O que torna o crime de Ubiaca ainda mais inacreditável. O Medo é capaz de encontrar caminhos inimagináveis.
+
+**Classificação:** afirmações sobre Corau, dimensões, aparências e alcance do Medo; analogia filosófica Éris/Aneris; perguntas ainda abertas sobre motivo do Espaço, autodevoração e ouroboros.
