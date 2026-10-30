@@ -1,0 +1,207 @@
+{
+  "schema_version": "0.1.0",
+  "version": "0.1.0",
+  "id": "cosmologia-primordial-kindau-ubiaca-2026-10-30",
+  "titulo": "Cosmologia primordial — Kindau, Ubiaca, Corau e Dialel",
+  "data_registro": "2026-10-30",
+  "fonte_autoral": "fontes/autoria/declaracoes-cosmologia-2026-10-29-30.md",
+  "documento": "docs/COSMOLOGIA_PRIMORDIAL_KINDAU_UBIACA_V0_1.md",
+  "estado": "declaracoes_autorais_registradas_sem_integracao_canonica",
+  "autoria_confirmou_falas": true,
+  "integracao_canonica_automatica": false,
+  "revelado_a_personagens": false,
+  "modifica_fichas_dw": false,
+  "modifica_atlas": false,
+  "afirmacoes": [
+    {
+      "id": "cosmologia:kindau-tempo",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Kindau é o Tempo e existia antes de Ubiaca",
+      "origem": "autor_29_30"
+    },
+    {
+      "id": "cosmologia:biblioteca",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Kindau habitava Biblioteca infinita com histórias do passado, presente e futuro",
+      "origem": "autor_29"
+    },
+    {
+      "id": "cosmologia:dialel-espaco",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Dialel criou o Espaço por onde o Tempo poderia correr e seu canto cria o universo",
+      "origem": "autor_29"
+    },
+    {
+      "id": "cosmologia:finitude",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Dialel só cria seres finitos ao redor de Kindau; de outra forma, cria seres infinitos",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:humanos-medo",
+      "estado": "afirmado_pelo_autor",
+      "texto": "O Medo foi introduzido no conhecimento de Kindau pelas histórias humanas",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:gilgamesh",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Gilgamesh, rei de Uruk, é a primeira história do primeiro mundo a habitar a Biblioteca e buscava imortalidade",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:ubiaca-criado",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Kindau criou Ubiaca, feito de Medo, para perseguir Gilgamesh",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:perseguicao",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Kindau passou a punir aqueles que tentavam tornar-se infinitos e escapar dele",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:ubiaca-mestre",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Ubiaca acreditava que Kindau era seu mestre",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:ubiaca-morte",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Ubiaca descobriu o primeiro imortal, matou Kindau e chorou",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:kindau-cadaver",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Kindau não foi aniquilado: tornou-se cadáver eterno que sangra e morre sem fim",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:mente-biblioteca",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Mente de Kindau aprisionada no vazio da não-existência; sua Biblioteca afundada no infinito",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:corau",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Corau, irmão de Kindau e Dialel, tem corpo de oceano infinito e serve como caixão de Kindau",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:dialel-vida",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Dialel é pai dos deuses e civilizações que dão vida ao cadáver de Kindau; funeral continua",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:ubiaca-cresce",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Onde há Tempo há Medo; onde há Medo Ubiaca se fortalece",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:criatividade",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Medo imagina soluções impossíveis e enfraquece a imaginação de defesas impossíveis",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:paralisia",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Ubiaca paralisa, aprisiona e derrota, mas não é todo-poderoso",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:contrapesos",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Coragem, Certeza, Fé e Esperança são adversários formidáveis do Medo",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:vencer",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Quem vence o Medo é capaz de vencer Ubiaca",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:dependencia",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Kindau fortaleceu Ubiaca por dependência do Medo e não sabia usar Coragem, Certeza, Fé ou Esperança",
+      "origem": "autor_30"
+    },
+    {
+      "id": "cosmologia:golzdov",
+      "estado": "afirmado_pelo_autor",
+      "texto": "Golzdov é cadáver continental de consciência aprisionada; a Carcaça foi descrita pelo autor como Tempo derrotado",
+      "origem": "autor_29"
+    }
+  ],
+  "doutrinas_internas": [
+    {
+      "id": "cosmologia:doutrina:cronos",
+      "enunciado": "Ubiaca seria demônio enviado pela Morte para impedir imortais",
+      "emissor": "Apóstolo Cronos",
+      "verdade_objetiva_confirmada": false
+    },
+    {
+      "id": "cosmologia:doutrina:zeno",
+      "enunciado": "A luz torna o Tempo e o Espaço grandezas infinitas",
+      "emissor": "Zeno de Gualápolis",
+      "verdade_objetiva_confirmada": false
+    },
+    {
+      "id": "cosmologia:doutrina:draconatos",
+      "enunciado": "Alguns clãs afirmam descender diretamente de Golzdov",
+      "emissor": "Clãs draconatos",
+      "verdade_objetiva_confirmada": false
+    }
+  ],
+  "questoes_abertas": [
+    {
+      "id": "cosmologia:aberta:kindau-golzdov",
+      "pergunta": "Qual é a relação ontológica e nominal exata entre Kindau e Golzdov?"
+    },
+    {
+      "id": "cosmologia:aberta:sangue-corrupcao",
+      "pergunta": "Qual é a relação entre o sangue eterno da Carcaça e a corrupção do Mar de Sangue?"
+    },
+    {
+      "id": "cosmologia:aberta:finitude",
+      "pergunta": "Qual é o sentido de criar seres finitos ao redor de Kindau?"
+    },
+    {
+      "id": "cosmologia:aberta:luz",
+      "pergunta": "Como a luz tornaria Espaço e Tempo infinitos na afirmação de Zeno?"
+    },
+    {
+      "id": "cosmologia:aberta:biblioteca",
+      "pergunta": "Como a Biblioteca afundou no infinito e qual o estado da mente de Kindau?"
+    },
+    {
+      "id": "cosmologia:aberta:ubiaca-motivo",
+      "pergunta": "Qual o motivo imediato da decisão de Ubiaca de matar Kindau e o significado de seu choro?"
+    },
+    {
+      "id": "cosmologia:aberta:virtudes",
+      "pergunta": "Coragem, Certeza, Fé e Esperança são forças metafísicas personificadas ou apenas adversários conceituais do Medo?"
+    },
+    {
+      "id": "cosmologia:aberta:alem-blue",
+      "pergunta": "Qual a natureza do Além Blue e sua relação com a ausência de Tempo?"
+    }
+  ],
+  "inferencias_nao_homologadas": [
+    "Ubiaca seria onipotente ou onisciente",
+    "Ubiaca teria criado a Morte ou a finitude",
+    "A morte de Kindau teria criado os primeiros seres finitos",
+    "Coragem, Certeza, Fé e Esperança seriam divindades independentes",
+    "Kindau e Golzdov teriam identidade nominal exata confirmada",
+    "Ubiaca comandaria a Corte Feérica ou outras facções",
+    "O choro de Ubiaca comprovaria arrependimento",
+    "A corrupção do Mar de Sangue seria causada exclusivamente pelo sangue de Kindau"
+  ]
+}

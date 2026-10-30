@@ -4,6 +4,10 @@ Banco de criaturas compartilhado pelos jogos ambientados na **Carcaça**.
 
 **O projeto tem duas camadas independentes:** um acervo importado de fichas licenciadas de D&D e similares (`dist/`) e uma **curadoria autoral** (`curadoria/`) que dá às criaturas identidade, ecologia, regiões e movimentos inspirados em Dungeon World.
 
+## Cosmologia primordial — registro autoral de 29–30/10/2026
+
+As novas declarações sobre **Kindau (Tempo), Dialel (criação/Espaço), Corau (oceano infinito) e Ubiaca (Medo)** estão organizadas no [dossiê de cosmologia](docs/COSMOLOGIA_PRIMORDIAL_KINDAU_UBIACA_V0_1.md), com [dados estruturados](data/worldbuilding/cosmologia-primordial-kindau-ubiaca-v0.1.json) e [declarações originais](fontes/autoria/declaracoes-cosmologia-2026-10-29-30.md). O registro distingue decisões autorais, doutrinas de personagens e perguntas ainda abertas. **Não altera automaticamente fichas, atlas canônico, cronologia de campanhas nem a informação conhecida pelos habitantes.**
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
