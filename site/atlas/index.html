@@ -622,6 +622,44 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .marine-method h4{color:#e8d4b5;font:500 14px Cinzel,serif}
 .marine-empty{font-size:11px;color:#c1d1c4}
 @media(max-width:780px){.marine-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.marine-grid{grid-template-columns:1fr}.marine-filter{flex-wrap:wrap}}
+
+/* Ciclo XLVIII: auditoria de densidade sem percentuais de cobertura canônica. */
+.density-stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:12px 0}
+.density-stat-grid>div{padding:11px;background:#242f2a;border:1px solid #4b6356;border-radius:9px;display:grid;gap:5px}
+.density-stat-grid b{font:500 22px Cinzel,serif;color:#e9d5af}
+.density-stat-grid span{font-size:10px;line-height:1.6;color:#c9d8c9}
+.density-explain{font-size:11px;line-height:1.75;color:#c2d1c5;background:#25342c;border-left:3px solid #96b19d;padding:11px}
+.density-filter{display:flex;gap:10px;align-items:center;margin:10px 0;color:#dce5da;font-size:11px}
+.density-filter select{background:#1a2b23;border:1px solid #55715e;color:#e5eade;border-radius:7px;padding:8px;max-width:100%}
+.density-matrix{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px;margin:12px 0}
+.density-front{border:1px solid #49644f;border-radius:9px;background:#1d2e24;color:#e3e9d9;padding:12px;text-align:left;display:flex;gap:7px;flex-direction:column}
+.density-front:hover,.density-front.active{border-color:#c3ac7a;background:#35352a}
+.density-front>b{font-size:12px;line-height:1.45;color:#e9d7b7}
+.density-front>span{font-size:10px;line-height:1.55;color:#b8ccbf}
+.density-front>div{display:flex;gap:9px;align-items:center}
+.density-front strong{font:500 21px Cinzel,serif;color:#e4cea2}
+.density-front small{font-size:10px;line-height:1.4;color:#c1d1c0}
+.density-detail h4{font-size:15px;color:#e2d2b0}
+.density-detail p{font-size:11px;line-height:1.75}
+.density-critical{background:#3b2923;border-left:3px solid #cb9e7e;padding:10px}
+.density-mentions{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.density-mentions div,.density-example-list div{background:#202e25;border:1px solid #455f4d;border-radius:8px;padding:10px}
+.density-mentions b,.density-mentions span,.density-example-list b,.density-example-list span,.density-example-list small{display:block;line-height:1.55}
+.density-mentions b,.density-example-list b{font-size:11px;color:#e5d3b0}
+.density-mentions span,.density-example-list span{font-size:10px;color:#c6d2c6}
+.density-example-list{display:grid;gap:8px}
+.density-example-list small{font-size:9px;color:#abc6b2}
+.density-gap-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.density-gap-list article{border:1px solid #526855;background:#233126;border-radius:8px;padding:12px}
+.density-gap-list b{color:#e8d9b4;font-size:12px}.density-gap-list p{font-size:11px;line-height:1.75}
+.density-priority,.density-rule{font-size:11px;line-height:1.75;border-left:3px solid #729b84;background:#26372c;padding:10px}
+.density-rule b{color:#e2d2ae}
+.density-source-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+.density-source-stats div{padding:11px;border:1px solid #506452;background:#253127;border-radius:8px}
+.density-source-stats b{font:500 21px Cinzel,serif;color:#dfc89d;display:block}
+.density-source-stats span{font-size:10px;color:#c8d5c6;line-height:1.5}
+@media(max-width:770px){.density-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.density-matrix,.density-gap-list,.density-mentions{grid-template-columns:1fr}.density-source-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.density-filter{flex-wrap:wrap}}
+
 </style>
 </head>
 <body>
@@ -714,6 +752,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <section id="settlementExpansion" class="env-section" aria-label="Expansão do povoamento do Rio Ancestral e Eldroth"><p class="env-explain">Carregando a expansão regional com comunidades e habitats...</p></section>
   <section id="fourFrontSettlements" class="env-section" aria-label="Povoamento da Caatinga, Garganta, Thargrid e Ironwood"><p class="env-explain">Carregando comunidades e habitats das quatro frentes...</p></section>
   <section id="marineTailSettlements" class="env-section" aria-label="Arquipélagos, comunidades submersas e Cauda"><p class="env-explain">Carregando o novo povoamento marítimo e da Cauda...</p></section>
+  <section id="settlementDensityAudit" class="env-section" aria-label="Auditoria transversal do povoamento continental"><p class="env-explain">Carregando a auditoria de densidade, diversidade e proveniência...</p></section>
   <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
   <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
   <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
@@ -789,6 +828,8 @@ import {buildFourFrontierSettlementLot} from "./settlement-four-fronts.mjs";
 import {initFourFrontierSettlements} from "./settlement-four-fronts-ui.mjs";
 import {buildMarineTailSettlements} from "./settlement-marine-tail.mjs";
 import {initMarineTailSettlements} from "./settlement-marine-tail-ui.mjs";
+import {buildSettlementDensityAudit} from "./settlement-density.mjs";
+import {initSettlementDensityAudit} from "./settlement-density-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -822,7 +863,8 @@ const paths={
   settlementExpansion:"data/propostas/povoamento-regional-lote02-ciclo45.json",
   authoredPages:"data/atlas/indice-paginas-fonte-ciclo45.json",
   fourFronts:"data/propostas/povoamento-quatro-frentes-ciclo46.json",
-  marineTail:"data/propostas/povoamento-insular-submerso-cauda-ciclo47.json"
+  marineTail:"data/propostas/povoamento-insular-submerso-cauda-ciclo47.json",
+  settlementDensity:"data/atlas/auditoria-povoamento-transversal-ciclo48.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -1146,6 +1188,7 @@ $("export").addEventListener("click",()=>{
     state.settlementExpansion=buildSettlementExpansion(loaded.settlementExpansion,loaded.creatureSettlements,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
     state.fourFronts=buildFourFrontierSettlementLot(loaded.fourFronts,loaded.creatureSettlements,loaded.settlementExpansion,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
     state.marineTail=buildMarineTailSettlements(loaded.marineTail,loaded.creatureSettlements,loaded.settlementExpansion,loaded.fourFronts,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
+    state.settlementDensity=buildSettlementDensityAudit(loaded.settlementDensity,loaded.settlementHorizon,loaded.settlementInventory,loaded.creatureSettlements,loaded.settlementExpansion,loaded.fourFronts,loaded.marineTail);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -1161,6 +1204,7 @@ $("export").addEventListener("click",()=>{
     initSettlementExpansion($("settlementExpansion"),state.settlementExpansion);
     initFourFrontierSettlements($("fourFrontSettlements"),state.fourFronts);
     initMarineTailSettlements($("marineTailSettlements"),state.marineTail);
+    initSettlementDensityAudit($("settlementDensityAudit"),state.settlementDensity);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -1187,6 +1231,7 @@ $("export").addEventListener("click",()=>{
     $("settlementExpansion").textContent="A expansão de povoamento do Rio e de Eldroth não pôde ser carregada.";
     $("fourFrontSettlements").textContent="A expansão da Caatinga, Garganta, Thargrid e Ironwood não pôde ser carregada.";
     $("marineTailSettlements").textContent="O povoamento marítimo e da Cauda não pôde ser carregado.";
+    $("settlementDensityAudit").textContent="A auditoria transversal de povoamento não pôde ser carregada.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
