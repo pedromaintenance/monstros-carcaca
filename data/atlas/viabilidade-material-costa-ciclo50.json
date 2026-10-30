@@ -389,7 +389,7 @@
           "eixo": "materiais",
           "rotulo": "Matérias-primas e ferramentas",
           "estado": "necessidade_hipotetica_nao_verificada",
-          "analise": "Materiais de armas, refúgios e manutenção são desconhecidos.",
+          "analise": "Materiais de armas, refúgios e manutenção são desconhecidos; não há depósitos ou oficinas documentadas nesta vigia.",
           "demonstracao_material": false,
           "disponibilidade_garantida": false,
           "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
@@ -407,7 +407,7 @@
           "eixo": "acesso",
           "rotulo": "Acesso, logística e circulação",
           "estado": "necessidade_hipotetica_nao_verificada",
-          "analise": "Acesso a embarcações ou tempo de socorro não foi estabelecido.",
+          "analise": "Acesso a embarcações ou tempo de socorro não foi estabelecido; a condição da praia também é desconhecida.",
           "demonstracao_material": false,
           "disponibilidade_garantida": false,
           "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
@@ -1061,7 +1061,7 @@
           "eixo": "agua",
           "rotulo": "Água e condições biológicas",
           "estado": "necessidade_hipotetica_nao_verificada",
-          "analise": "Água para moradores e trabalho ainda não foi localizada.",
+          "analise": "Água para moradores e trabalho ainda não foi localizada; o abastecimento da oficina permanece hipótese.",
           "demonstracao_material": false,
           "disponibilidade_garantida": false,
           "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
