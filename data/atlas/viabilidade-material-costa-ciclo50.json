@@ -1239,7 +1239,7 @@
       "titulo": "Perda de colheita nas pradarias",
       "exposicao_primaria": "colheita",
       "mecanismo_condicional": "Cultivadores e dependentes de provisões poderiam enfrentar competição por alimentos e sementes.",
-      "limite": "Não inferir culturas ou capacidade real de estoque.",
+      "limite": "Não inferir espécies cultivadas, produção real, estoque disponível ou capacidade de resposta comunitária.",
       "tags_de_sensibilidade": [
         "colheita"
       ],
