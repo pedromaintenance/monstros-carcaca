@@ -107,7 +107,7 @@ export function buildCoastMaterialViability(config,coast,places,pageIndex,audit)
  if(!Array.isArray(config.advertencias)||config.advertencias.length<10||
     !config.advertencias.some(x=>x.includes("potabilidade"))||
     !config.advertencias.some(x=>x.includes("não são demônios"))||
-    !config.advertencias.some(x=>x.includes("não comprova"))) 
+    !config.advertencias.some(x=>x.includes("não prova"))) 
    fail("Salvaguardas da fonte ou dos povos foram retiradas");
  return {titulo:config.titulo,principio:config.principio,recorte:config.recorte,
    eixos:config.eixos,portomonte:p,comunidades:rows,cenarios:sims,
