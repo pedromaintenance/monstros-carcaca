@@ -110,3 +110,11 @@ Transcrição literal:
 > O que torna o crime de Ubiaca ainda mais inacreditável. O Medo é capaz de encontrar caminhos inimagináveis.
 
 **Classificação:** afirmações sobre Corau, dimensões, aparências e alcance do Medo; analogia filosófica Éris/Aneris; perguntas ainda abertas sobre motivo do Espaço, autodevoração e ouroboros.
+
+## Complemento autoral — Não-Existência (30/10/2026)
+
+> não precisamos de mais um dragão para a não-existência
+>
+> é simplesmente aquilo que está fora de Corau
+
+**Classificação:** a localização ontológica da Não-Existência **fora de Corau** é definição autoral. Não está autorizada a criação de uma criatura, deus, plano de campanha ou mecanismo adicional para personificá-la. A questão sobre como a mente de Kindau permanece ali **não foi resolvida**.
