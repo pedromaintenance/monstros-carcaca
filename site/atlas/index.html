@@ -683,6 +683,41 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
 .coast-link p,.coast-inspector p{font-size:11px;line-height:1.7}
 .coast-rule{font-size:11px;line-height:1.7;background:#26362d;padding:10px;border-left:2px solid #83a58f}
 @media(max-width:780px){.coast-stats{grid-template-columns:repeat(2,minmax(0,1fr))}.coast-cards{grid-template-columns:1fr}.coast-filter{flex-wrap:wrap}}
+
+/* Ciclo L: viabilidade material da Costa Sul sem resultados físicos inventados. */
+.material-stat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:13px 0}
+.material-stat-grid>div{padding:12px;border:1px solid #526556;border-radius:9px;background:#252f27;display:grid;gap:5px}
+.material-stat-grid b{font:500 22px Cinzel,serif;color:#e5d3a6}
+.material-stat-grid span{font-size:10px;line-height:1.6;color:#c3d2c2}
+.material-warning{font-size:11px;line-height:1.75;background:#353025;border-left:3px solid #b9a070;color:#e1d3b7;padding:11px 12px}
+.material-resource-intro{padding:8px 0}
+.material-resource-intro h4{color:#e6d1ab;font:500 15px Cinzel,serif}
+.material-resource-intro p{color:#bdcebe;font-size:11px;line-height:1.7}
+.material-axis-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.material-axis{background:#203027;border:1px solid #526957;border-radius:9px;padding:12px;text-align:left;color:#e2e6db}
+.material-axis:hover,.material-axis.active{background:#34382c;border-color:#d0ae7e}
+.material-axis b,.material-axis span{display:block;line-height:1.55}
+.material-axis b{font-size:11px;color:#e9d8b6}
+.material-axis span{font-size:10px;color:#aebfae;margin-top:5px;text-transform:capitalize}
+.material-axis-detail{background:#223129;border:1px solid #536a58;border-radius:8px;margin-top:12px;padding:13px}
+.material-axis-detail p,.material-rule,.material-scenario p{font-size:11px;line-height:1.75;color:#c9d9cb}
+.material-no-guarantee,.material-limit{background:#302b26;border-left:3px solid #bb9879;padding:10px}
+.material-site-label{color:#d3dfd0;font-size:11px;display:grid;gap:7px;margin:10px 0}
+.material-site-label select{max-width:100%;border-radius:7px;border:1px solid #627466;background:#1e2922;color:#e2e7dd;padding:9px}
+.material-site-list{display:grid;gap:7px;max-height:495px;overflow:auto}
+.material-site{background:#213027;border:1px solid #4a6652;border-radius:8px;padding:10px;text-align:left;color:#d2e2d3;display:grid;gap:4px}
+.material-site:hover,.material-site.active{border-color:#c7ad7c;background:#36382d}
+.material-site b{font-size:11px;color:#e8d5b4}
+.material-site small{font-size:10px;line-height:1.6;color:#b7ccb8}
+.material-scenario h4{color:#e9d6b2;font:500 15px Cinzel,serif}
+.material-exposed{display:flex;flex-wrap:wrap;gap:7px}
+.material-exposed button{background:#26382d;color:#d6e4d1;padding:7px 10px;border:1px solid #637764;border-radius:7px;font-size:11px}
+.material-exposed button:hover{background:#3c4331;border-color:#c9ad7c}
+.material-critical{padding:12px;background:#26352d;border:1px solid #58715c;border-radius:8px}
+.material-critical b{color:#e9d2af}.material-critical p{font-size:11px;line-height:1.75}
+.material-rule{border-left:2px solid #90a992;padding:10px;background:#28372d}
+@media(max-width:760px){.material-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.material-axis-list{grid-template-columns:1fr}.material-site-list{max-height:360px}}
+
 </style>
 </head>
 <body>
@@ -777,6 +812,7 @@ h1{font-size:clamp(31px,4.3vw,57px);letter-spacing:-.03em}
   <section id="marineTailSettlements" class="env-section" aria-label="Arquipélagos, comunidades submersas e Cauda"><p class="env-explain">Carregando o novo povoamento marítimo e da Cauda...</p></section>
   <section id="settlementDensityAudit" class="env-section" aria-label="Auditoria transversal do povoamento continental"><p class="env-explain">Carregando a auditoria de densidade, diversidade e proveniência...</p></section>
   <section id="continentalCoastSettlements" class="env-section" aria-label="Povoamento novo da Costa Sul continental"><p class="env-explain">Carregando comunidades, ecologias e vínculos costeiros...</p></section>
+  <section id="coastMaterialViability" class="env-section" aria-label="Viabilidade material de Portomonte e da Costa continental"><p class="env-explain">Carregando diagnóstico de água, alimento, trabalho e acesso...</p></section>
   <section id="physicalGeo" class="phys-container" aria-label="Geografia física e anatomia de Golzdov"><p class="tiny">Carregando a geografia continental...</p></section>
   <section id="macroEnvironments" class="env-section" aria-label="Ambientes naturais da Carcaça"><p class="env-explain">Carregando habitats regionais e paisagens...</p></section>
   <section id="macroInterfaces" class="env-section" aria-label="Interfaces e limites continentais"><p class="env-explain">Carregando interfaces entre os grandes ambientes...</p></section>
@@ -856,6 +892,8 @@ import {buildSettlementDensityAudit} from "./settlement-density.mjs";
 import {initSettlementDensityAudit} from "./settlement-density-ui.mjs";
 import {buildContinentalCoastSettlementLot} from "./settlement-coast-mainland.mjs";
 import {initContinentalCoastSettlementLot} from "./settlement-coast-mainland-ui.mjs";
+import {buildCoastMaterialViability} from "./coast-material-viability.mjs";
+import {initCoastMaterialViability} from "./coast-material-viability-ui.mjs";
 const paths={
   lore:"data/lore/hack-carcaca-dw-indice-tematico.json",
   regions:"data/regioes_carcaca.json",
@@ -891,7 +929,8 @@ const paths={
   fourFronts:"data/propostas/povoamento-quatro-frentes-ciclo46.json",
   marineTail:"data/propostas/povoamento-insular-submerso-cauda-ciclo47.json",
   settlementDensity:"data/atlas/auditoria-povoamento-transversal-ciclo48.json",
-  continentalCoast:"data/propostas/povoamento-costa-continental-ciclo49.json"
+  continentalCoast:"data/propostas/povoamento-costa-continental-ciclo49.json",
+  coastMaterial:"data/atlas/viabilidade-material-costa-ciclo50.json"
 };
 const state={atlas:null,byId:new Map(),children:new Map(),selected:"carcaca",
   expanded:new Set(["carcaca"]),filters:new Set(["manuscrito","catalogado","proposta"]),
@@ -1217,6 +1256,7 @@ $("export").addEventListener("click",()=>{
     state.marineTail=buildMarineTailSettlements(loaded.marineTail,loaded.creatureSettlements,loaded.settlementExpansion,loaded.fourFronts,state.macro,state.environments,loaded.settlementHorizon,loaded.authoredPages);
     state.settlementDensity=buildSettlementDensityAudit(loaded.settlementDensity,loaded.settlementHorizon,loaded.settlementInventory,loaded.creatureSettlements,loaded.settlementExpansion,loaded.fourFronts,loaded.marineTail);
     state.continentalCoast=buildContinentalCoastSettlementLot(loaded.continentalCoast,state.settlementDensity,state.environments,loaded.authoredPages,loaded.settlementHorizon);
+    state.coastMaterial=buildCoastMaterialViability(loaded.coastMaterial,loaded.continentalCoast,loaded.places,loaded.authoredPages,state.settlementDensity);
     rebuildLookup();
     populateCounters(state.atlas.stats);
     renderMacro();
@@ -1234,6 +1274,7 @@ $("export").addEventListener("click",()=>{
     initMarineTailSettlements($("marineTailSettlements"),state.marineTail);
     initSettlementDensityAudit($("settlementDensityAudit"),state.settlementDensity);
     initContinentalCoastSettlementLot($("continentalCoastSettlements"),state.continentalCoast);
+    initCoastMaterialViability($("coastMaterialViability"),state.coastMaterial);
     initTopologyChoices($("topologyChoices"),state.topology);
     initMacroLayers($("macroLayers"),state.macro,state.networks);
     $("exportMacro").disabled=false;
@@ -1262,6 +1303,7 @@ $("export").addEventListener("click",()=>{
     $("marineTailSettlements").textContent="O povoamento marítimo e da Cauda não pôde ser carregado.";
     $("settlementDensityAudit").textContent="A auditoria transversal de povoamento não pôde ser carregada.";
     $("continentalCoastSettlements").textContent="O povoamento da Costa Sul continental não pôde ser carregado.";
+    $("coastMaterialViability").textContent="A matriz de viabilidade material da Costa Sul não pôde ser carregada.";
     $("details").innerHTML='<div class="loader"><h2>Arquivos indisponíveis</h2><p>Verifique a execução da publicação no GitHub Actions.</p></div>';
     console.error(e);
   }
