@@ -1,0 +1,1326 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Ciclo L — Viabilidade material de Portomonte e da Costa Sul continental",
+  "estado": "auditoria_material_sem_viabilidade_homologada",
+  "altera_canon": false,
+  "aprovacao_autoral": false,
+  "principio": "Não converter agricultura documentada em Portomonte em água potável, produtividade, transporte ou autossuficiência comprovados.",
+  "recorte": "Uma âncora documentada (Portomonte) e 14 assentamentos continentais apenas propostos; seis eixos por local, seis cenários contrafactuais de sensibilidade.",
+  "fonte_primaria": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "pagina_indice_publico": "data/atlas/indice-paginas-fonte-ciclo45.json",
+  "base_propostas": "data/propostas/povoamento-costa-continental-ciclo49.json",
+  "eixos": [
+    {
+      "id": "agua",
+      "nome": "Água e condições biológicas"
+    },
+    {
+      "id": "alimento",
+      "nome": "Alimentação e reprodução"
+    },
+    {
+      "id": "energia",
+      "nome": "Energia, calor e conservação"
+    },
+    {
+      "id": "materiais",
+      "nome": "Matérias-primas e ferramentas"
+    },
+    {
+      "id": "trabalho",
+      "nome": "Trabalho e organização material"
+    },
+    {
+      "id": "acesso",
+      "nome": "Acesso, logística e circulação"
+    }
+  ],
+  "ancora_portomonte": {
+    "id": "viabilidade:l:portomonte",
+    "lugar_documentado_id": "lugar:portomonte",
+    "nome": "Portomonte",
+    "estado": "ancora_canonica_contextual_sem_balanco_material",
+    "revisao_autoral": "documentado_apenas_no_contexto",
+    "paginas_contexto": [
+      5,
+      12,
+      23
+    ],
+    "eixos": [
+      {
+        "eixo": "agua",
+        "rotulo": "Água e condições biológicas",
+        "estado": "efeito_local_documentado_sem_potabilidade",
+        "analise": "As águas próximas são purificadas pelo templo de Deméter para viabilizar agricultura local (cap. I, pp. 5 e 23). Potabilidade, volume, armazenagem e distribuição não são atestados.",
+        "demonstracao_material": false,
+        "disponibilidade_garantida": false,
+        "pergunta_a_resolver": "A água que sustenta o cultivo pode ser bebida? Qual seu limite espacial e temporal?"
+      },
+      {
+        "eixo": "alimento",
+        "rotulo": "Alimentação e reprodução",
+        "estado": "agricultura_local_documentada_sem_quantificacao",
+        "analise": "A agricultura em costa pedregosa é possível graças ao templo (pp. 5, 12 e 23). Culturas, volume de safra, calendário e autossuficiência não estão descritos.",
+        "demonstracao_material": false,
+        "disponibilidade_garantida": false,
+        "pergunta_a_resolver": "Quais são as culturas, estoques e oscilações de produção?"
+      },
+      {
+        "eixo": "energia",
+        "rotulo": "Energia, calor e conservação",
+        "estado": "pendente",
+        "analise": "A existência do templo não informa fonte de energia para secagem, bombeamento, iluminação ou manutenção de instalações.",
+        "demonstracao_material": false,
+        "disponibilidade_garantida": false,
+        "pergunta_a_resolver": "Qual o custo e a fonte de energia para conservação e trabalho?"
+      },
+      {
+        "eixo": "materiais",
+        "rotulo": "Matérias-primas e ferramentas",
+        "estado": "contexto_geologico_documentado_insumos_pendentes",
+        "analise": "Penhascos e costa pedregosa estão documentados; extração de pedra, madeira, metais e sua procedência não estão identificadas.",
+        "demonstracao_material": false,
+        "disponibilidade_garantida": false,
+        "pergunta_a_resolver": "Que materiais existem localmente e quais chegam por troca?"
+      },
+      {
+        "eixo": "trabalho",
+        "rotulo": "Trabalho e organização material",
+        "estado": "atividades_regionais_documentadas_sem_censo",
+        "analise": "A presença de agricultores, comerciantes e marinheiros deriva da economia descrita; número, especializações e regime de trabalho não estão quantificados.",
+        "demonstracao_material": false,
+        "disponibilidade_garantida": false,
+        "pergunta_a_resolver": "Quais grupos trabalham na produção, no comércio e na defesa?"
+      },
+      {
+        "eixo": "acesso",
+        "rotulo": "Acesso, logística e circulação",
+        "estado": "centralidade_comercial_documentada_sem_rotas",
+        "analise": "Portomonte é centro comercial costeiro (cap. I, pp. 5 e 12), mas nenhuma rota, navio, tempo de deslocamento, carga ou porto específico está individualizado.",
+        "demonstracao_material": false,
+        "disponibilidade_garantida": false,
+        "pergunta_a_resolver": "Quais ligações reais entre Portomonte e outros assentamentos são documentadas?"
+      }
+    ],
+    "exposicoes": [
+      "agua",
+      "colheita",
+      "demeter",
+      "acesso",
+      "incursoes"
+    ],
+    "perguntas_criticas": [
+      "Qual é a extensão exata e o limite da purificação de Deméter?",
+      "Quem distribui a colheita, e que capacidade logística existe?"
+    ],
+    "localizacao": null,
+    "capacidade_populacional": null,
+    "quantidade_recursos": null,
+    "dependencia_confirmada": false,
+    "viabilidade_comprovada": false
+  },
+  "comunidades": [
+    {
+      "id": "viabilidade:l:costa:01",
+      "comunidade_id": "povoamento:xlix:costa:01",
+      "nome": "Os Terraços do Sal Cego",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Não há captação confirmada para irrigação ou consumo; a bênção de Portomonte não se transfere automaticamente.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Sementes, rendimentos e conservação de cultivos em pedra ainda precisam de demonstração.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Ferramentas agrícolas e eventual bombeamento exigiriam energia e manutenção cuja origem é desconhecida.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Solo, pedra de contenção e madeira para cercas não foram identificados neste local.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Agricultores e reparadores são propostos, mas não há disponibilidade de trabalho documentada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Escoamento de safras e obtenção de sementes dependem de trajeto não definido.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "colheita",
+        "acesso"
+      ],
+      "perguntas_criticas": [
+        "Como cultivar sem declarar irrigação que não existe no cânone?",
+        "Quem suporta uma falha de colheita?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:02",
+      "comunidade_id": "povoamento:xlix:costa:02",
+      "nome": "A Casa dos Dois Sobrenomes",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Horticultura e animais pequenos exigem acesso à água ainda não localizado.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Sustento doméstico e forragem são hipóteses, sem estimativa de safra nem criação comprovada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Cozimento, conservação e iluminação não possuem fonte local de combustível identificada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Materiais de pátios e currais não têm jazida ou vegetação de origem comprovada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "O parentesco sugerido não comprova número de trabalhadores nem relações de propriedade.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Acolhimento entre familiares não autoriza inferir estrada para a Caatinga.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "colheita",
+        "conflito"
+      ],
+      "perguntas_criticas": [
+        "O parentesco atravessa o conflito sem depender de uma fronteira cartografada?",
+        "De onde viria a forragem?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:03",
+      "comunidade_id": "povoamento:xlix:costa:03",
+      "nome": "As Casas de Esteira Branca",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Tratamento e secagem de fibras podem requerer água; nenhuma fonte foi registrada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "O ofício não estabelece, por si só, fonte de alimentação dos artesãos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Secagem e beneficiamento necessitam calor ou ventilação ainda não descritos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "A espécie vegetal das fibras, seu ciclo e o direito de coleta são desconhecidos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Mestres e aprendizes constam da proposta; duração e formação da mão de obra não estão verificadas.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Compradores e circulação de cestos são imaginados, sem mercados ligados por rota.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "materiais",
+        "acesso"
+      ],
+      "perguntas_criticas": [
+        "Que fibra local poderia ser utilizada sem inventar uma floresta costeira?",
+        "Quem alimenta os artesãos durante a estação ruim?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:04",
+      "comunidade_id": "povoamento:xlix:costa:04",
+      "nome": "A Vigia da Praia Sem Sinos",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "A guarnição precisa beber e cozinhar; abastecimento da vigia não foi identificado.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Rancho, conservação e transporte de mantimentos são condições pendentes.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Sinais, fogueiras e reparos dependem de energia e combustíveis não comprovados.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Materiais de armas, refúgios e manutenção são desconhecidos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Efetivo e rodízio de guardas são propostas, não dados militares de fonte.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Acesso a embarcações ou tempo de socorro não foi estabelecido.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "acesso",
+        "incursoes",
+        "conflito"
+      ],
+      "perguntas_criticas": [
+        "Como uma guarnição não requisita o alimento que deveria proteger?",
+        "O que ocorre se a praia não admitir embarcações?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:05",
+      "comunidade_id": "povoamento:xlix:costa:05",
+      "nome": "Claustro das Três Sementes",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Sem irrigação ou água potável própria; a presença do culto não replica o milagre de Portomonte.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Um estoque de sementes não corresponde a comida disponível; colheitas dependem de solo e água.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Secagem e guarda de sementes requerem controle de umidade e energia ainda não estabelecidos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Recipientes e locais de guarda não têm cadeia de suprimentos confirmada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "A abadessa e aprendizes não representam uma ordem canônica individualizada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Recebimento e partilha de sementes dependem de conexões ainda imaginadas.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "colheita",
+        "acesso",
+        "demeter"
+      ],
+      "perguntas_criticas": [
+        "Como preservar sementes se a umidade e o calor são desconhecidos?",
+        "A fé pode coexistir com o racionamento sem magia automática?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:06",
+      "comunidade_id": "povoamento:xlix:costa:06",
+      "nome": "O Varadouro do Vento Preso",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Reparadores e embarcações em obra necessitam água sem abastecimento confirmado.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Os trabalhadores precisam de alimento; nenhuma rede de provisões foi validada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Calor, fornos e iluminação para reparos não possuem combustível documentado.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Madeira, cordame, resinas e peças de casco dependem de fontes ainda abertas.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Mestres e marinheiros aparecem apenas como papéis profissionais hipotéticos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Não está provado que exista praia navegável, calado seguro ou acesso terrestre ao varadouro.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "materiais",
+        "acesso",
+        "incursoes"
+      ],
+      "perguntas_criticas": [
+        "Um varadouro sazonal funciona se barcos não puderem chegar?",
+        "Que madeira poderia ser usada sem presumir a floresta Eldroth como fornecedor?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:07",
+      "comunidade_id": "povoamento:xlix:costa:07",
+      "nome": "A Fenda das Conchas Ocas",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Exigências de salinidade e umidade dos gastrópodes sapientes dependem da biologia a definir.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Raspagem de biofilme é hipótese; a produtividade biológica precisa de estudo.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Metabolismo e necessidade de calor ou luz da espécie não foram estabelecidos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Conchas e rocha são meios de vida, não recursos automaticamente disponíveis à extração.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Organização reprodutiva, faixas etárias e distribuição de trabalho exigem definição não antropomórfica.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Visitantes e comércio de conchas não comprovam acesso ou segurança do penhasco.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "ecologia",
+        "extracao"
+      ],
+      "perguntas_criticas": [
+        "A espécie consegue se reproduzir e alimentar sem colonizar rochas infinitas?",
+        "Quem possui as conchas abandonadas?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:08",
+      "comunidade_id": "povoamento:xlix:costa:08",
+      "nome": "O Refúgio do Vidro de Sal",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Necessidades de água das fadas e humanos não são equivalentes nem resolvidas por magia.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Plantas costeiras propostas não comprovam comida suficiente para hóspedes humanos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Luz, abrigo e possíveis práticas mágicas têm custo e limite ainda não definidos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Vegetação salina e abrigo efêmero carecem de base ecológica local.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Pactos feéricos não comprovam trabalho regular disponível para receber refugiados.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Relações com viajantes não fixam rota, área segura nem localização do refúgio.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "colheita",
+        "ecologia",
+        "acesso"
+      ],
+      "perguntas_criticas": [
+        "A hospitalidade termina quando falta sustento?",
+        "Qual o custo material dos pactos mágicos?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:09",
+      "comunidade_id": "povoamento:xlix:costa:09",
+      "nome": "A Casa do Tributo Contestado",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Água de bebida e cuidados com a Mudança do Oceano não foram especificados.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Secagem de redes não prova acesso a pescarias seguras ou peixes comestíveis.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Secagem e manutenção das redes exigem energia e clima cuja periodicidade é desconhecida.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Fibras e suportes de rede ainda dependem de abastecimento não definido.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Famílias e tabelião hipotéticos não demonstram capacidade de cobrança nem consenso jurídico.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Possíveis tributos marinhos não equivalem a rotas de pesca ou navegação comprovadas.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "acesso",
+        "incursoes",
+        "tributo"
+      ],
+      "perguntas_criticas": [
+        "Como a comunidade sobrevive quando proteger a pesca vira cobrança?",
+        "Como o parentesco anfíbio muda o custo do abrigo?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:10",
+      "comunidade_id": "povoamento:xlix:costa:10",
+      "nome": "O Terreiro dos Panos Virados",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Moradores temporários carecem de água; a admissão de mais refugiados amplia uma necessidade não dimensionada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Rações, hortas e estoque não têm origem material nem autonomia comprovadas.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Preparo de comida e iluminação exigem combustível ainda não conhecido.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Tecido, tendas e ferramentas de costura dependem de suprimento não identificado.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Moradores deslocados e guardiões de alojamento não são população fixa documentada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Fuga, acesso e evacuação não contam com corredores, estradas ou portos aprovados.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "colheita",
+        "acesso",
+        "conflito"
+      ],
+      "perguntas_criticas": [
+        "Quando acolher mais pessoas põe em risco os já acolhidos?",
+        "Como organizar ração sem criar um cadastro persecutório?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:11",
+      "comunidade_id": "povoamento:xlix:costa:11",
+      "nome": "O Lavrador de Cordas Vermelhas",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Lavagem e conservação de cordas podem demandar água de qualidade não documentada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "A confraria artesanal não possui produção alimentar própria comprovada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Beneficiamento de fibras e secagem podem exigir calor e instalações ainda hipotéticas.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Fibras, agulhas, ferramentas e cordame dependem de origem desconhecida.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "A confraria de artesãos representa uma organização possível, não trabalhadores contados.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Rede de clientes e transporte de cordas não demonstrados; pesca pode ser perigosa.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "materiais",
+        "acesso"
+      ],
+      "perguntas_criticas": [
+        "Quem produz as fibras e com quais direitos de coleta?",
+        "É possível sobreviver sem fornecer equipamentos a capturadores?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:12",
+      "comunidade_id": "povoamento:xlix:costa:12",
+      "nome": "O Abrigo da Muda Escarlate",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Condições de salinidade e de umidade adequadas aos crustáceos sapientes são desconhecidas.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Coleta bentônica proposta não possui cadeia alimentar comprovada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Reprodução e muda podem depender de temperatura e ciclos não estabelecidos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Exoesqueletos pertencem ao ciclo de vida dos moradores e não viram automaticamente insumo comercial.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "A organização por muda depende de uma biologia ainda não definida, não de números populacionais.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Contatos terrestres não demonstram trânsito entre as pedras úmidas e outros povoados.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "ecologia",
+        "extracao"
+      ],
+      "perguntas_criticas": [
+        "A muda exige quais recursos e abrigos?",
+        "A coleta de restos corporais afetaria a sobrevivência da colônia?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:13",
+      "comunidade_id": "povoamento:xlix:costa:13",
+      "nome": "Oficina das Trancas de Madeira",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Água para moradores e trabalho ainda não foi localizada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "A oficina não produz alimento comprovado e dependeria de provisões hipotéticas.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Metalurgia fina e trabalho em madeira requerem calor e ferramentas, sem fonte energética confirmada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Madeira, ferro e componentes de fechaduras carecem de cadeia de obtenção definida.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Mestre, aprendizes e visitantes tabaxis não têm salários ou contratos estabelecidos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Pedidos e transporte de produtos não estabelecem ligação segura com Portomonte.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "materiais",
+        "acesso"
+      ],
+      "perguntas_criticas": [
+        "Uma oficina pode prosperar sem mercado comprovado?",
+        "Como recusar ferramentas de cativeiro sem perder sustento?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    },
+    {
+      "id": "viabilidade:l:costa:14",
+      "comunidade_id": "povoamento:xlix:costa:14",
+      "nome": "O Santuário da Rocha que Responde",
+      "estado": "auditoria_de_proposta_nao_canonica",
+      "revisao_autoral": "pendente",
+      "eixos": [
+        {
+          "eixo": "agua",
+          "rotulo": "Água e condições biológicas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Necessidade de água dos seres minerais não pode ser presumida; humanos visitantes precisam de água.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Onde obter água compatível com os habitantes?"
+        },
+        {
+          "eixo": "alimento",
+          "rotulo": "Alimentação e reprodução",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Metabolismo e fontes de alimento dos habitantes minerais são inteiramente desconhecidos.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como sustentar a alimentação ou reprodução sem pressupor recursos infinitos?"
+        },
+        {
+          "eixo": "energia",
+          "rotulo": "Energia, calor e conservação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Energia biológica dos seres de rocha depende de uma definição fantástica ainda não homologada.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Como obter energia com tecnologia e clima ainda não localizados?"
+        },
+        {
+          "eixo": "materiais",
+          "rotulo": "Matérias-primas e ferramentas",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "O próprio substrato habitado poderia ser material vivo, não pedra de livre extração.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "De onde vêm matérias-primas sem inventar mineração e cadeias de transporte?"
+        },
+        {
+          "eixo": "trabalho",
+          "rotulo": "Trabalho e organização material",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Não há números de habitantes, operários ou disponibilidade de trabalho da comunidade.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "Quem executa, aprende e mantém o trabalho?"
+        },
+        {
+          "eixo": "acesso",
+          "rotulo": "Acesso, logística e circulação",
+          "estado": "necessidade_hipotetica_nao_verificada",
+          "analise": "Um serviço de alvenaria não prova pedreira, estrada nem abastecimento de outras vilas.",
+          "demonstracao_material": false,
+          "disponibilidade_garantida": false,
+          "pergunta_a_resolver": "O que é acessível sem presumir estradas ou portos?"
+        }
+      ],
+      "exposicoes": [
+        "agua",
+        "ecologia",
+        "extracao",
+        "acesso"
+      ],
+      "perguntas_criticas": [
+        "Um corpo mineral pode ser usado como material de construção?",
+        "Que metabolismo permitiria persistência comunitária?"
+      ],
+      "localizacao": null,
+      "capacidade_populacional": null,
+      "quantidade_recursos": null,
+      "dependencia_confirmada": false,
+      "viabilidade_comprovada": false
+    }
+  ],
+  "cenarios": [
+    {
+      "id": "cenario:l:01",
+      "titulo": "Estiagem prolongada",
+      "exposicao_primaria": "agua",
+      "mecanismo_condicional": "Se a água utilizável se tornar insuficiente, comunidades com exigência hídrica não demonstrada enfrentariam insegurança material.",
+      "limite": "Não supor que o cenário ocorre atualmente; ausência de fonte de água é lacuna, não prova de seca.",
+      "tags_de_sensibilidade": [
+        "agua"
+      ],
+      "probabilidade": null,
+      "impacto_quantificado": null,
+      "evento_confirmado": false
+    },
+    {
+      "id": "cenario:l:02",
+      "titulo": "Falha ou restrição local da bênção de Deméter",
+      "exposicao_primaria": "demeter",
+      "mecanismo_condicional": "Portomonte poderia sofrer uma redução da capacidade de cultivo, sem especificar escala, causa ou efeitos automáticos fora dela.",
+      "limite": "A falha é puramente contrafactual; o manuscrito não registra interrupção do templo.",
+      "tags_de_sensibilidade": [
+        "demeter",
+        "colheita"
+      ],
+      "probabilidade": null,
+      "impacto_quantificado": null,
+      "evento_confirmado": false
+    },
+    {
+      "id": "cenario:l:03",
+      "titulo": "Perda de colheita nas pradarias",
+      "exposicao_primaria": "colheita",
+      "mecanismo_condicional": "Cultivadores e dependentes de provisões poderiam enfrentar competição por alimentos e sementes.",
+      "limite": "Não inferir culturas ou capacidade real de estoque.",
+      "tags_de_sensibilidade": [
+        "colheita"
+      ],
+      "probabilidade": null,
+      "impacto_quantificado": null,
+      "evento_confirmado": false
+    },
+    {
+      "id": "cenario:l:04",
+      "titulo": "Ataques ou bloqueio de acesso costeiro",
+      "exposicao_primaria": "incursoes",
+      "mecanismo_condicional": "Serviços, vigia e oficinas dependentes de contatos marítimos poderiam ser afetados.",
+      "limite": "Incursões costeiras existem como contexto regional, mas nenhum bloqueio específico está atestado.",
+      "tags_de_sensibilidade": [
+        "incursoes",
+        "acesso"
+      ],
+      "probabilidade": null,
+      "impacto_quantificado": null,
+      "evento_confirmado": false
+    },
+    {
+      "id": "cenario:l:05",
+      "titulo": "Escassez de matérias-primas",
+      "exposicao_primaria": "materiais",
+      "mecanismo_condicional": "Oficinas e trabalho artesanal poderiam perder insumos cuja origem ainda precisa ser estabelecida.",
+      "limite": "Não postular comércio com Eldroth nem minas terrestres sem geografia verificada.",
+      "tags_de_sensibilidade": [
+        "materiais",
+        "extracao"
+      ],
+      "probabilidade": null,
+      "impacto_quantificado": null,
+      "evento_confirmado": false
+    },
+    {
+      "id": "cenario:l:06",
+      "titulo": "Ruptura de acesso ou circulação",
+      "exposicao_primaria": "acesso",
+      "mecanismo_condicional": "Comunidades propostas que dependem de contatos externos poderiam exigir medidas de contingência.",
+      "limite": "Rotas e vizinhanças não estão aprovadas; este cenário é ferramenta de pergunta, não previsão.",
+      "tags_de_sensibilidade": [
+        "acesso"
+      ],
+      "probabilidade": null,
+      "impacto_quantificado": null,
+      "evento_confirmado": false
+    }
+  ],
+  "balanco": {
+    "portomonte_ancora_documentada": 1,
+    "comunidades_propostas_analisadas": 14,
+    "eixos_por_local": 6,
+    "celulas_de_auditoria": 90,
+    "cenarios_qualitativos": 6,
+    "dependencias_canonicas_comprovadas": 0,
+    "recursos_quantificados": 0,
+    "locais_com_viabilidade_homologada": 0,
+    "comunidades_propostas_anteriores": 96,
+    "habitats_propostos_anteriores": 42,
+    "novos_assentamentos": 0,
+    "aprovacoes_novas": 0
+  },
+  "advertencias": [
+    "Portomonte é documentada, mas a auditoria não promove a cidade a fonte universal de suprimentos para o continente.",
+    "O templo de Deméter purifica águas próximas e possibilita agricultura: o manuscrito não atesta potabilidade, água armazenada, vazão ou alcance ilimitado.",
+    "A ausência de fontes de água ou alimento para uma comunidade proposta indica lacuna documental, não prova de impossibilidade física.",
+    "As quatorze comunidades de XLIX continuam propostas sem coordenadas, população ou relações comerciais homologadas.",
+    "Os cenários são contrafactuais e qualitativos; tags de exposição indicam assuntos a examinar, não risco estatístico.",
+    "Não converter as oito relações sociais hipotéticas de XLIX em fluxos de carga, rotas ou contratos factuais.",
+    "A demanda material de comunidades não humanoides exige biologia específica e não deve ser derivada automaticamente de necessidades humanas.",
+    "Kuo-Toa e Abissais marinhos são grupos distintos; os Abissais não são demônios do Abismo continental.",
+    "Nenhuma quantificação de colheita, pesca, reservatórios, energia, consumos ou trabalho consta deste módulo.",
+    "A auditoria não altera as 96 propostas acumuladas e os 42 habitats previamente registrados.",
+    "Dependências entre lugares só poderão ser estabelecidas por decisão autoral ou documentação apropriada."
+  ],
+  "proximo_ciclo": [
+    "Revisar com a autoria o alcance e as restrições reais da bênção de Deméter em Portomonte.",
+    "Investigar pela fonte já existente quais cultivos e práticas costeiras são documentados antes de escolher tecnologias e recursos novos.",
+    "Definir critérios mínimos para converter uma comunidade proposta em assentamento viável sem superestimar suprimentos.",
+    "Auditar interdependências por tipo de serviço, sem fabricar distâncias e rotas."
+  ],
+  "data": "2026-10-30"
+}
