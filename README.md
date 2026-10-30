@@ -150,6 +150,10 @@ A [auditoria interativa do Atlas](https://pedromaintenance.github.io/monstros-ca
 
 A [nova camada de povoamento da Costa continental](https://pedromaintenance.github.io/monstros-carcaca/atlas/#continentalCoastSettlements) adiciona **14 comunidades continentais propostas**, **8 habitats ecológicos não contáveis** e **8 relações sociais hipotéticas entre localidades**. A auditoria XLVIII mostrou que, das oito propostas anteriores da frente Costa, sete eram insulares. Neste ciclo avançamos com culturas agrícolas, ofícios goblins, comunidades orcs-humanas, vigias, mosteiros, tabaxis viajantes, fadas costeiras e espécies fantásticas sencientes, agora com **14 regimes de autoridade/ocupação diferenciados**. O acumulado é **96 propostas de comunidades e 42 habitats** nos cinco lotes, com **zero novas aprovações canônicas**. A água potável, a alimentação, as posições e as relações de acesso permanecem abertas; **Portomonte é canônica, os novos 14 lugares não**. [Dossiê XLIX](docs/ATLAS_COSTA_CONTINENTAL_CICLO49.md) · [JSON do lote](data/propostas/povoamento-costa-continental-ciclo49.json).
 
+## Ciclo L — Viabilidade material de Portomonte e da Costa Sul
+
+O [painel de viabilidade material do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#coastMaterialViability) examina **Portomonte (documentada)** e **14 comunidades continentais apenas propostas**, em seis dimensões: água, alimento, energia, matérias-primas, trabalho e acesso (**90 análises materiais**). A auditoria incorpora **seis cenários contrafactuais** e diferencia os efeitos agrícolas locais documentados do templo de Deméter de hipóteses ainda não demonstradas, especialmente **potabilidade, abundância de recursos e redes de comércio**. **Nenhum assentamento novo foi criado ou aprovado:** continuamos com **96 comunidades propostas e 42 habitats** dos ciclos anteriores. [Dossiê do Ciclo L](docs/ATLAS_VIABILIDADE_COSTA_CICLO50.md) · [Dados JSON](data/atlas/viabilidade-material-costa-ciclo50.json).
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
