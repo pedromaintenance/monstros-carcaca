@@ -154,6 +154,10 @@ A [nova camada de povoamento da Costa continental](https://pedromaintenance.gith
 
 O [painel de viabilidade material do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#coastMaterialViability) examina **Portomonte (documentada)** e **14 comunidades continentais apenas propostas**, em seis dimensões: água, alimento, energia, matérias-primas, trabalho e acesso (**90 análises materiais**). A auditoria incorpora **seis cenários contrafactuais** e diferencia os efeitos agrícolas locais documentados do templo de Deméter de hipóteses ainda não demonstradas, especialmente **potabilidade, abundância de recursos e redes de comércio**. **Nenhum assentamento novo foi criado ou aprovado:** continuamos com **96 comunidades propostas e 42 habitats** dos ciclos anteriores. [Dossiê do Ciclo L](docs/ATLAS_VIABILIDADE_COSTA_CICLO50.md) · [Dados JSON](data/atlas/viabilidade-material-costa-ciclo50.json).
 
+## Ciclo LI — Decisões autorais sobre Deméter e Portomonte
+
+O [caderno interativo do Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#demeterDecisionBook) separa **6 fatos documentados** do templo de Deméter em Portomonte de **7 perguntas autorais abertas**, com **21 alternativas hipotéticas** para comparar suas consequências sociais e materiais. As questões incluem alcance, mecanismo, duração, potabilidade, governo religioso, produção agrícola e circulação comercial. **Selecionar uma hipótese na interface não grava nem aprova lore.** A fonte sustenta a purificação de águas próximas e agricultura sobre a costa pedregosa, mas não define vazão, água potável, safras, comércio específico ou raio mágico. **Nenhum novo povoado ou habitat foi criado**; continuam **96 propostas de comunidades e 42 habitats**, com zero novas aprovações. [Dossiê LI](docs/ATLAS_DEMETER_PORTOMONTE_CICLO51.md) · [Caderno JSON](data/atlas/portomonte-demeter-decisoes-ciclo51.json).
+
 ## Comece por aqui
 
 - [ROADMAP.md](ROADMAP.md) — milestones e critérios de aceite, execução em lotes pequenos.
