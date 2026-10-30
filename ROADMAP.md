@@ -945,3 +945,19 @@ A camada XLVIII continua como fotografia da auditoria após os quatro primeiros 
 - [ ] Definir portões de aprovação por ecologia, sustento, posição relativa e autoridade antes de promover localidades propostas a cânone.
 
 [Relatório XL — Ciclo L](docs/ATLAS_VIABILIDADE_COSTA_CICLO50.md) · [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#coastMaterialViability).
+
+## Ciclo LI — Portomonte e Deméter: sete decisões autorais abertas (2026-10-30)
+
+- [x] Rever separadamente as pp. **5, 12 e 23** do manuscrito: templo de Deméter, purificação local, agricultura na costa pedregosa e centralidade comercial.
+- [x] Catalogar **6 fatos documentados**, cada qual com fonte e limites explícitos.
+- [x] Diferenciar **7 questões não resolvidas**: alcance, mecanismo, duração, potabilidade, gestão religiosa, produção e circulação.
+- [x] Criar **21 alternativas contrafactuais** (3 para cada pergunta), sem eleger respostas oficiais.
+- [x] Criar simulação combinatória em que alternativas são apenas seleções locais e um comando **limpa todas as escolhas**, preservando o estado canônico em aberto.
+- [x] Impedir que qualquer opção declare água potável comprovada, raio de efeito, produtividade, abastecimento, rotas comerciais ou novas cidades.
+- [x] Publicar painel HTML, livro de decisões em JSON, validador, regressões, workflow Pages e curadoria.
+- [x] Manter **96 comunidades propostas**, **42 habitats**, **zero novas aprovações e zero novas localidades**.
+- [ ] **Ciclo LII:** implementar uma revisão autoral estruturada com precedências e critérios de evidência por tema, sem aprovar automaticamente propostas.
+- [ ] Deliberar com a autoria, de forma explícita, quais opções são compatíveis com sua visão de Deméter e Portomonte.
+- [ ] Só depois da deliberação, registrar alterações canônicas em fontes apropriadas e reavaliar consequências na economia costeira.
+
+[Atlas — Deméter](https://pedromaintenance.github.io/monstros-carcaca/atlas/#demeterDecisionBook) · [Dossiê LI](docs/ATLAS_DEMETER_PORTOMONTE_CICLO51.md).
