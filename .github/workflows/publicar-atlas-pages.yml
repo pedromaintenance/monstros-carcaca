@@ -44,7 +44,7 @@ jobs:
         with:
           node-version: '22'
       - name: Testar hierarquia contra os dados reais
-        run: node --test tests/atlas-hierarquia.test.mjs tests/atlas-macro.test.mjs tests/atlas-interfaces.test.mjs tests/atlas-topology.test.mjs tests/atlas-charter.test.mjs tests/atlas-hydrology.test.mjs tests/atlas-chronocartography.test.mjs tests/atlas-material.test.mjs tests/atlas-vulnerabilities.test.mjs tests/atlas-readiness.test.mjs tests/atlas-settlement-inventory.test.mjs tests/atlas-settlement-expansion.test.mjs tests/atlas-settlement-four-fronts.test.mjs tests/atlas-settlement-marine-tail.test.mjs
+        run: node --test tests/atlas-hierarquia.test.mjs tests/atlas-macro.test.mjs tests/atlas-interfaces.test.mjs tests/atlas-topology.test.mjs tests/atlas-charter.test.mjs tests/atlas-hydrology.test.mjs tests/atlas-chronocartography.test.mjs tests/atlas-material.test.mjs tests/atlas-vulnerabilities.test.mjs tests/atlas-readiness.test.mjs tests/atlas-settlement-inventory.test.mjs tests/atlas-settlement-expansion.test.mjs tests/atlas-settlement-four-fronts.test.mjs tests/atlas-settlement-marine-tail.test.mjs tests/atlas-settlement-density.test.mjs
       - name: Montar publicação estática
         shell: bash
         run: |
@@ -85,7 +85,8 @@ jobs:
             data/propostas/povoamento-regional-lote02-ciclo45.json \
             data/atlas/indice-paginas-fonte-ciclo45.json \
             data/propostas/povoamento-quatro-frentes-ciclo46.json \
-            data/propostas/povoamento-insular-submerso-cauda-ciclo47.json
+            data/propostas/povoamento-insular-submerso-cauda-ciclo47.json \
+            data/atlas/auditoria-povoamento-transversal-ciclo48.json
           do
             mkdir -p ".public-pages/atlas/dados/$(dirname "$file")"
             cp "$file" ".public-pages/atlas/dados/$file"
