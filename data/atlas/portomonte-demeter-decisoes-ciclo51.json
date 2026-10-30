@@ -1,0 +1,555 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Ciclo LI — Portomonte, Deméter e os limites da prosperidade",
+  "estado": "caderno_de_decisao_autoral_nao_homologado",
+  "altera_canon": false,
+  "aprovacao_autoral": false,
+  "fonte_autoral": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+  "indice_publico": "data/atlas/indice-paginas-fonte-ciclo45.json",
+  "matriz_viabilidade_anterior": "data/atlas/viabilidade-material-costa-ciclo50.json",
+  "lote_continental_anterior": "data/propostas/povoamento-costa-continental-ciclo49.json",
+  "fundamento": "O manuscrito permite agricultura em Portomonte pela purificação das águas próximas, mas não determina alcance, potabilidade, duração, gestão, rendimento ou logística. Todas as alternativas são contrafactuais.",
+  "fatos_documentados": [
+    {
+      "id": "portomonte_documentada",
+      "afirmacao": "Portomonte é um assentamento humano na Costa Sul, protegido por penhascos.",
+      "paginas": [
+        5,
+        12
+      ],
+      "limite": "Portomonte é documentada como comunidade humana em ambiente costeiro; a distância a outros lugares não consta da fonte.",
+      "estado": "contexto_documentado_na_fonte",
+      "evidencia_quantitativa": false
+    },
+    {
+      "id": "templo_demeter",
+      "afirmacao": "Existe em Portomonte um templo de Deméter relacionado à purificação das águas próximas.",
+      "paginas": [
+        5,
+        23
+      ],
+      "limite": "A fonte não explica mecanismo, volume, fronteiras da área purificada ou efeitos em águas distantes.",
+      "estado": "contexto_documentado_na_fonte",
+      "evidencia_quantitativa": false
+    },
+    {
+      "id": "agricultura_documentada",
+      "afirmacao": "A atuação do templo permite agricultura sobre a costa pedregosa em Portomonte.",
+      "paginas": [
+        5,
+        12,
+        23
+      ],
+      "limite": "A fonte não nomeia cultivos, rendimentos, irrigação, estoques ou produção excedente.",
+      "estado": "contexto_documentado_na_fonte",
+      "evidencia_quantitativa": false
+    },
+    {
+      "id": "comercio_documentado",
+      "afirmacao": "Portomonte atua como centro de comércio e sobrevivência da Costa Sul.",
+      "paginas": [
+        5,
+        12
+      ],
+      "limite": "Não há informação sobre cargas, preços, distâncias, portos individualizados ou trajetos de suprimento.",
+      "estado": "contexto_documentado_na_fonte",
+      "evidencia_quantitativa": false
+    },
+    {
+      "id": "contexto_costeiro",
+      "afirmacao": "A região enfrenta incursões de Kuo-Toa e Abissais, com histórico de confronto e alianças humanas e orcs.",
+      "paginas": [
+        5,
+        12,
+        14
+      ],
+      "limite": "Não comprova bloqueio específico de Portomonte nem política local de proteção do templo.",
+      "estado": "contexto_documentado_na_fonte",
+      "evidencia_quantitativa": false
+    },
+    {
+      "id": "contexto_religioso",
+      "afirmacao": "Cultos gregos são comuns em antigas cidades humanas e na Costa Sul; Deméter ocupa posição central em Portomonte.",
+      "paginas": [
+        23
+      ],
+      "limite": "O manuscrito não descreve organograma do templo, vínculo ao governo civil nem monopólio político.",
+      "estado": "contexto_documentado_na_fonte",
+      "evidencia_quantitativa": false
+    }
+  ],
+  "decisoes": [
+    {
+      "id": "decisao:li:01",
+      "chave": "alcance",
+      "pergunta": "Até onde se estende a purificação?",
+      "eixo_narrativo": "geografia_e_influencia",
+      "limite_documental": "O manuscrito indica águas próximas ao templo, mas não delimita perímetro, costa protegida nem vias de acesso.",
+      "estado": "em_aberto",
+      "valor_canonico": null,
+      "alternativas": [
+        {
+          "id": "alcance:01",
+          "titulo": "Faixa de influência local",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se a purificação atuar em uma faixa local, Portomonte poderia ter setores agrícolas mais favorecidos, exigindo decidir seus limites sem desenhá-los agora.",
+          "eixos_potencialmente_afetados": [
+            "agua",
+            "alimento",
+            "acesso"
+          ],
+          "pergunta_de_consequencia": "Como identificar limites da faixa sem criar coordenadas nem assumir navegação segura?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "alcance:02",
+          "titulo": "Pontos de ação descontínuos",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se a bênção alcançar pontos rituais descontínuos, o cultivo poderia depender de espaços separados, com custos de manutenção e deslocamento ainda não demonstrados.",
+          "eixos_potencialmente_afetados": [
+            "agua",
+            "alimento",
+            "trabalho"
+          ],
+          "pergunta_de_consequencia": "Existiriam outros pontos rituais e por que não estariam identificados no manuscrito?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "alcance:03",
+          "titulo": "Abrangência variável",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se a área de ação variar, direitos de uso do solo e previsibilidade das colheitas poderiam ser disputados, sem alterar a agricultura já documentada.",
+          "eixos_potencialmente_afetados": [
+            "agua",
+            "alimento",
+            "trabalho"
+          ],
+          "pergunta_de_consequencia": "A variação dependeria de tempo, rituais ou da própria corrupção marítima?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        }
+      ]
+    },
+    {
+      "id": "decisao:li:02",
+      "chave": "mecanismo",
+      "pergunta": "O que a purificação transforma?",
+      "eixo_narrativo": "magia_e_ecologia",
+      "limite_documental": "A purificação de águas e o cultivo em rocha são documentados, mas seu mecanismo material e ritual é desconhecido.",
+      "estado": "em_aberto",
+      "valor_canonico": null,
+      "alternativas": [
+        {
+          "id": "mecanismo:01",
+          "titulo": "Redução local da corrupção marítima",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se o ritual reduzir propriedades nocivas do Mar de Sangue localmente, seria necessário definir o que permanece perigoso e quais espécies suportam essas condições.",
+          "eixos_potencialmente_afetados": [
+            "agua",
+            "alimento",
+            "materiais"
+          ],
+          "pergunta_de_consequencia": "Quais aspectos do mar são alterados sem declarar a água doce ou potável?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "mecanismo:02",
+          "titulo": "Proteção do cultivo contra a corrupção",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se o principal benefício agrícola for proteção de solo e plantas, a cidade ainda precisaria de explicação independente para consumo humano e irrigação.",
+          "eixos_potencialmente_afetados": [
+            "agua",
+            "alimento",
+            "energia"
+          ],
+          "pergunta_de_consequencia": "Como a proteção das plantas se relaciona ao efeito purificador das águas descrito no texto?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "mecanismo:03",
+          "titulo": "Efeitos combinados com limites",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se houver efeitos combinados sobre águas próximas e cultivo, eles poderiam ter limiares e custos diferentes, ainda não homologados.",
+          "eixos_potencialmente_afetados": [
+            "agua",
+            "alimento",
+            "trabalho"
+          ],
+          "pergunta_de_consequencia": "Que limites impediriam o templo de resolver automaticamente todos os problemas costeiros?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        }
+      ]
+    },
+    {
+      "id": "decisao:li:03",
+      "chave": "duracao",
+      "pergunta": "O efeito precisa ser renovado?",
+      "eixo_narrativo": "temporalidade_e_manutenção",
+      "limite_documental": "O texto não estabelece rituais periódicos, custo mágico, estabilidade nem dependência de devotos.",
+      "estado": "em_aberto",
+      "valor_canonico": null,
+      "alternativas": [
+        {
+          "id": "duracao:01",
+          "titulo": "Continuidade condicionada",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se o efeito persistir enquanto determinadas condições forem mantidas, sua conservação poderia exigir fiscalização e trabalho especializado.",
+          "eixos_potencialmente_afetados": [
+            "energia",
+            "trabalho",
+            "alimento"
+          ],
+          "pergunta_de_consequencia": "Quais condições precisam ser mantidas, e por quem?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "duracao:02",
+          "titulo": "Ciclos de renovação",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se a purificação depender de ciclos rituais, planejamento de cultivo e festividades poderiam ser afetados, sem calendário estabelecido.",
+          "eixos_potencialmente_afetados": [
+            "energia",
+            "alimento",
+            "trabalho"
+          ],
+          "pergunta_de_consequencia": "Que periodicidade existiria, se existir, sem inventar calendário?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "duracao:03",
+          "titulo": "Oscilação ambiental",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se a bênção responder a correntes ou tempestades, o impacto sobre a atividade rural poderia variar, sem presumir interrupções canônicas.",
+          "eixos_potencialmente_afetados": [
+            "agua",
+            "alimento",
+            "acesso"
+          ],
+          "pergunta_de_consequencia": "Como distinguir variação ritual de oscilação natural do Mar de Sangue?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        }
+      ]
+    },
+    {
+      "id": "decisao:li:04",
+      "chave": "potabilidade",
+      "pergunta": "É possível beber a água purificada?",
+      "eixo_narrativo": "saude_e_uso_humano",
+      "limite_documental": "Purificação é documentada; a potabilidade, a salinidade, a coleta e o armazenamento não são.",
+      "estado": "em_aberto",
+      "valor_canonico": null,
+      "alternativas": [
+        {
+          "id": "potabilidade:01",
+          "titulo": "Uso não potável",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se a água tratada continuar imprópria para beber, Portomonte precisaria de outras fontes de água de consumo, cuja existência não está documentada.",
+          "eixos_potencialmente_afetados": [
+            "agua",
+            "trabalho",
+            "acesso"
+          ],
+          "pergunta_de_consequencia": "Qual outro recurso de consumo existe sem deduzi-lo do templo?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "potabilidade:02",
+          "titulo": "Potabilidade após processamento",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se a água só se tornar potável após etapas adicionais, essas etapas poderiam gerar ofícios, custos e direitos de acesso próprios.",
+          "eixos_potencialmente_afetados": [
+            "agua",
+            "energia",
+            "trabalho"
+          ],
+          "pergunta_de_consequencia": "Qual processamento e custo seriam compatíveis com tecnologia e magia existentes?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "potabilidade:03",
+          "titulo": "Potabilidade em condições limitadas",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se a purificação permitir beber água sob condições específicas, seria preciso explicitar limites e evitar generalização para o litoral.",
+          "eixos_potencialmente_afetados": [
+            "agua",
+            "trabalho",
+            "alimento"
+          ],
+          "pergunta_de_consequencia": "As restrições seriam de uso, quantidade ou estado mágico, sem inventar valores?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        }
+      ]
+    },
+    {
+      "id": "decisao:li:05",
+      "chave": "governanca",
+      "pergunta": "Quem administra o recurso e o templo?",
+      "eixo_narrativo": "religiao_e_poder",
+      "limite_documental": "Deméter ocupa posição central em Portomonte, mas a fonte não descreve hierarquia sacerdotal, monopólio, tributos ou direito de acesso.",
+      "estado": "em_aberto",
+      "valor_canonico": null,
+      "alternativas": [
+        {
+          "id": "governanca:01",
+          "titulo": "Custódia religiosa local",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se sacerdotes administrarem diretamente os rituais, liturgia e direitos de acesso poderiam tornar-se instrumentos de autoridade, sem confirmar regime teocrático.",
+          "eixos_potencialmente_afetados": [
+            "trabalho",
+            "agua",
+            "acesso"
+          ],
+          "pergunta_de_consequencia": "Como essa autoridade se relacionaria ao governo civil ainda não detalhado?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "governanca:02",
+          "titulo": "Gestão civil e religiosa negociada",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se o templo e autoridades civis negociarem responsabilidades, conflitos sobre cultivos e manutenção poderiam ganhar mediação institucional.",
+          "eixos_potencialmente_afetados": [
+            "trabalho",
+            "alimento",
+            "acesso"
+          ],
+          "pergunta_de_consequencia": "Quem teria legitimidade para negociar sem pressupor uma assembleia?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "governanca:03",
+          "titulo": "Prática religiosa comunitária",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se diferentes devotos participarem da manutenção, a continuidade da bênção poderia depender de tarefas compartilhadas, não de instituição central.",
+          "eixos_potencialmente_afetados": [
+            "trabalho",
+            "energia",
+            "alimento"
+          ],
+          "pergunta_de_consequencia": "Quais funções exigiriam sacerdotes e quais poderiam ser comunitárias?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        }
+      ]
+    },
+    {
+      "id": "decisao:li:06",
+      "chave": "producao",
+      "pergunta": "Que tipo de produção a bênção permite?",
+      "eixo_narrativo": "agricultura_e_excedentes",
+      "limite_documental": "O manuscrito confirma agricultura sobre costa pedregosa, não culturas, safras, produtividade, irrigação ou exportações.",
+      "estado": "em_aberto",
+      "valor_canonico": null,
+      "alternativas": [
+        {
+          "id": "producao:01",
+          "titulo": "Cultivo de subsistência",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se os campos atenderem principalmente ao consumo local, Portomonte poderia negociar mercadorias não agrícolas, sem excedente de grãos presumido.",
+          "eixos_potencialmente_afetados": [
+            "alimento",
+            "trabalho",
+            "acesso"
+          ],
+          "pergunta_de_consequencia": "Que alimentos e técnicas poderiam sustentar a cidade em suas condições próprias?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "producao:02",
+          "titulo": "Produção especializada",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se a bênção favorecer determinadas culturas, mercados e formas de trabalho poderiam se organizar ao redor delas, sem espécies ou tonelagens definidas.",
+          "eixos_potencialmente_afetados": [
+            "alimento",
+            "materiais",
+            "trabalho"
+          ],
+          "pergunta_de_consequencia": "Quais culturas são viáveis e quem controla as sementes?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "producao:03",
+          "titulo": "Excedente irregular",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se algumas safras excederem necessidades locais, as trocas poderiam oscilar sem garantir provisões a povoados do litoral.",
+          "eixos_potencialmente_afetados": [
+            "alimento",
+            "acesso",
+            "trabalho"
+          ],
+          "pergunta_de_consequencia": "Como armazenar ou comercializar excedentes sem rotas ou depósitos conhecidos?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        }
+      ]
+    },
+    {
+      "id": "decisao:li:07",
+      "chave": "circulacao",
+      "pergunta": "Como a influência econômica sai de Portomonte?",
+      "eixo_narrativo": "trocas_e_segurança",
+      "limite_documental": "A cidade é centro de comércio regional; cargas, rotas, preços, segurança marítima e abastecimento de cada comunidade não foram individualizados.",
+      "estado": "em_aberto",
+      "valor_canonico": null,
+      "alternativas": [
+        {
+          "id": "circulacao:01",
+          "titulo": "Trocas por contatos locais",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se as trocas se concentrarem em contatos próximos, a influência poderia ser comercialmente relevante sem abastecer toda a costa.",
+          "eixos_potencialmente_afetados": [
+            "acesso",
+            "materiais",
+            "alimento"
+          ],
+          "pergunta_de_consequencia": "Quais parceiros realmente existem e como se acessam?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "circulacao:02",
+          "titulo": "Intermediários de comércio",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se mercadores intermediários conectarem localidades, poderiam surgir riscos de cobrança, conflito e interrupção, sem desenhar novas rotas.",
+          "eixos_potencialmente_afetados": [
+            "acesso",
+            "trabalho",
+            "materiais"
+          ],
+          "pergunta_de_consequencia": "Quem intermedeia sem presumir estradas ou portos específicos?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        },
+        {
+          "id": "circulacao:03",
+          "titulo": "Circulação sazonal",
+          "estado": "hipotese_autoral_nao_aprovada",
+          "condicao_explicita": "Se as trocas dependerem de janelas sazonais, reservas e reparos poderiam ganhar importância, sem calendário meteorológico aprovado.",
+          "eixos_potencialmente_afetados": [
+            "acesso",
+            "alimento",
+            "energia"
+          ],
+          "pergunta_de_consequencia": "Que fenômenos definem condições seguras e quem as conhece?",
+          "aprovada": false,
+          "rota_criada": false,
+          "agua_potavel_comprovada": false,
+          "excedente_comprovado": false,
+          "efeito_territorial_aprovado": false
+        }
+      ]
+    }
+  ],
+  "nao_inferir": [
+    "Não inferir que purificação significa dessalinização, água potável ou eliminação de todas as ameaças do Mar de Sangue.",
+    "Não inferir alcance regional, raio numérico, fronteira fixa, corrente marítima controlada ou acesso cartográfico.",
+    "Não inferir ritual periódico, fragilidade, interrupções passadas ou dependência obrigatória de sacerdotes.",
+    "Não inferir espécies cultivadas, produtividade, safras, capacidade de armazenamento ou excedentes.",
+    "Não inferir preço, tributação, rotas, navios específicos, mercados nomeados ou abastecimento das 14 localidades propostas.",
+    "Não transformar qualquer alternativa de decisão em fato do cânone sem manifestação expressa da autoria.",
+    "Não concluir que ausência de fonte hídrica documentada implica que Portomonte não dispõe de água para consumo.",
+    "Não criar outros templos de Deméter ou reproduções da bênção na Costa Sul sem fonte.",
+    "Não fazer todos os povos do litoral dependentes do mesmo credo, Estado ou mercado.",
+    "Não confundir o povo Abissal marinho com demônios do Abismo ocidental.",
+    "Não atribuir automaticamente liderança religiosa do templo à cidade ou ao continente.",
+    "Não publicar o texto integral do manuscrito pela interface pública do Atlas."
+  ],
+  "consequencias_sem_quantificacao": true,
+  "localizacao": null,
+  "raio_milhas": null,
+  "agua_potavel_confirmada": false,
+  "limite_bencao_aprovado": false,
+  "rotas_comerciais_aprovadas": false,
+  "produtividade_confirmada": false,
+  "balanco": {
+    "evidencias_documentadas": 6,
+    "decisoes_abertas": 7,
+    "alternativas_contrafactuais": 21,
+    "alternativas_aprovadas": 0,
+    "locais_novos": 0,
+    "comunidades_propostas_permanecem": 96,
+    "habitats_propostos_permanecem": 42,
+    "novas_aprovacoes": 0
+  },
+  "orientacao": "A interface serve para comparar consequências, não para aprovar escolhas. Um cenário visual selecionado não modifica arquivos, registros de cântone ou a ficha de Portomonte.",
+  "proximas_perguntas": [
+    "O que significa purificar águas de Mar de Sangue sem presumir potabilidade?",
+    "Que efeitos são diretamente agrícolas e quais ficam fora da bênção?",
+    "Que instituições administram o templo e quem define acesso às águas?",
+    "Qual é a natureza das relações comerciais já existentes antes de nomear rotas?"
+  ]
+}
