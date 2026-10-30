@@ -928,3 +928,20 @@ As faixas 145–205 são horizonte flexível de densidade, **não porcentagem de
 A camada XLVIII continua como fotografia da auditoria após os quatro primeiros lotes (**82 comunidades**). O XLIX é um acréscimo posterior e não reescreve retroativamente os resultados anteriores.
 
 [Dossiê XLIX](docs/ATLAS_COSTA_CONTINENTAL_CICLO49.md) · [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#continentalCoastSettlements).
+
+## Ciclo L — Viabilidade material da Costa Sul e Portomonte (2026-10-30)
+
+- [x] Separar Portomonte **documentada** das **14 comunidades não canônicas** propostas no XLIX.
+- [x] Auditar seis necessidades por local: **água**, **alimento**, **energia**, **matérias-primas**, **trabalho** e **circulação**: **90 células de análise**.
+- [x] Preservar a fonte sobre a purificação de águas próximas de Portomonte por Deméter, sem inferir **potabilidade, volume, abastecimento regional nem irrigação universal**.
+- [x] Auditar necessidades biológicas diferentes de gastrópodes, crustáceos e seres minerais sapientes, sem equipará-las automaticamente a humanos.
+- [x] Criar seis cenários **qualitativos e contrafactuais**, com seleção das comunidades por menções de dependências propostas, não cálculos de risco ou probabilidades.
+- [x] Impedir coordenadas, população, reserva de alimentos, volume de água, rotas, evento comprovado e viabilidade automática nos registros.
+- [x] Integrar três modos de exploração ao Atlas, incluindo inspeção por local/recurso, cenários e limites de fonte.
+- [x] Incluir documentação, matriz e testes em GitHub Pages e workflow de curadoria.
+- [x] Preservar a contagem anterior: **96 propostas de comunidades e 42 habitats**, **0 novos lugares, 0 recursos quantificados e 0 viabilidades homologadas**.
+- [ ] Delimitar com decisão autoral o alcance e a natureza da bênção de Deméter em Portomonte.
+- [ ] Identificar infraestrutura, ritmos agrícolas e caminhos documentados para diferenciar redes econômicas existentes de hipóteses criativas.
+- [ ] Definir portões de aprovação por ecologia, sustento, posição relativa e autoridade antes de promover localidades propostas a cânone.
+
+[Relatório XL — Ciclo L](docs/ATLAS_VIABILIDADE_COSTA_CICLO50.md) · [Atlas](https://pedromaintenance.github.io/monstros-carcaca/atlas/#coastMaterialViability).
