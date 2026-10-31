@@ -12,6 +12,10 @@ As novas declarações sobre **Kindau (Tempo), Dialel (criação/Espaço), Corau
 
 O [inventário de superfície v0.1](docs/ATLAS_BASE_REGIOES_ASSENTAMENTOS_CULTURAS_MONSTROS_V0_1.md) reúne os **11 setores de leitura** com lugares, povos, culturas, ameaças e lacunas. [JSON de consulta](data/atlas/atlas-base-superficie-v0.1.json). **Não cria assentamentos, espécies ou ocorrências automaticamente.**
 
+## Ciclo LII — Garganta, Rio Ancestral e Foz
+
+O [dossiê de povoamento e ecologia do eixo](docs/POVOAMENTO_ECOLOGIA_EIXO_GARGANTA_RIO_FOZ_CICLO52.md) desenvolve **8 comunidades já propostas** (sem duplicá-las), apresenta **3 novas candidatas na Foz**, **6 criaturas ecológicas** e **6 vínculos funcionais**. [Dados em JSON](data/propostas/povoamento-ecologia-eixo-garganta-rio-foz-ciclo52.json). Todas as novidades são **propostas rastreáveis**, não alterações automáticas do cânone nem do mapa.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
