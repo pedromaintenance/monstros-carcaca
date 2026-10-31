@@ -1,0 +1,472 @@
+{
+  "schema_version": "0.1.0",
+  "versao": "0.1.0",
+  "titulo": "Atlas básico de superfície da Carcaça",
+  "registro": "2026-10-30",
+  "estado": "inventario_editorial_sem_novas_aprovacoes",
+  "divulga_segredos_cosmologicos": false,
+  "altera_canon": false,
+  "cria_assentamentos": false,
+  "cria_especies": false,
+  "notas": [
+    "Setor de leitura não é automaticamente região formal, governo ou fronteira.",
+    "O catálogo principal possui quatro regiões formalizadas, mas a macroescala usa onze setores de leitura.",
+    "Três assentamentos formais: Portomonte e dois conjuntos regionais; não representam todas as cidades já documentadas.",
+    "Templos, ruínas, biomas e conjuntos insulares não são contabilizados como novas cidades.",
+    "Categorias sapientes não implicam hostilidade ou espécie de monstro."
+  ],
+  "fontes": [
+    "data/atlas/macrorregioes-carcaca.json",
+    "data/regioes_carcaca.json",
+    "data/lugares_carcaca.json",
+    "data/povos_carcaca.json",
+    "data/lore/hack-carcaca-dw-indice-tematico.json",
+    "dist/carcaca/settlements.json",
+    "dist/carcaca/creatures.json",
+    "docs/ATLAS_INVENTARIO_POVOAMENTO_CICLO44.md"
+  ],
+  "totais": {
+    "setores": 11,
+    "regioes_formalizadas": 4,
+    "registros_assentamento": 3,
+    "criaturas_individualizadas": 7
+  },
+  "setores": [
+    {
+      "id": "garganta",
+      "nome": "O Crânio e a Garganta",
+      "orientacao": "Crânio de Golzdov, no extremo leste",
+      "poder_referencia": "Ocupação shadow fey comandada por Varys Duskveil",
+      "regioes_formalizadas": [],
+      "ancoras": [
+        {
+          "id": "lugar-visual:garganta",
+          "papel": "Cidade-fortaleza e centro de extração",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:templo-yolskaariin",
+          "papel": "Templo solar corrompido",
+          "estado": "documentado"
+        }
+      ],
+      "povos_documentados": [
+        "Humanos da Garganta",
+        "Vestígios históricos Yokai",
+        "Shadow fey ocupantes"
+      ],
+      "cultura_de_referencia": "Humanos das escavações e da fortaleza; escrita e memória dos antigos Yokai; ocupação Shadow Fey sob Varys.",
+      "criaturas_e_ameacas": "Não há monstro individual com ocorrência fixada aqui.",
+      "proximo_vazio": "Assentamentos menores, minas e distribuição de vestígios Yokai.",
+      "estatuto": "sintese_de_fontes_nao_altera_canon"
+    },
+    {
+      "id": "rio",
+      "nome": "O Eixo do Rio Ancestral",
+      "orientacao": "Veia fluvial do continente",
+      "poder_referencia": "Cidades sob domínio da Corte; Drakport associada a Lady Morwen Nightshade",
+      "regioes_formalizadas": [],
+      "ancoras": [
+        {
+          "id": "lugar-visual:rio-ancestral",
+          "papel": "Eixo navegável continental",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:drakport",
+          "papel": "Cidade de escravidão e controle",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:templo-da-lua",
+          "papel": "Local de poder insular, posição precisa desconhecida",
+          "estado": "documentado"
+        }
+      ],
+      "povos_documentados": [
+        "Povos ribeirinhos não individualizados",
+        "Shadow fey ocupantes"
+      ],
+      "cultura_de_referencia": "Comunidades ribeirinhas não individualizadas; comércio, tributos e escravidão em Drakport; Corte Shadow Fey.",
+      "criaturas_e_ameacas": "Não há monstro individual com ocorrência fixada no eixo fluvial.",
+      "proximo_vazio": "Vilas do rio, passagens e posição longitudinal da ilha do Templo da Lua.",
+      "estatuto": "sintese_de_fontes_nao_altera_canon"
+    },
+    {
+      "id": "costa",
+      "nome": "Costa Sul e Mar de Sangue",
+      "orientacao": "Costa e arquipélagos do Além Sul",
+      "poder_referencia": "Fora da ocupação feérica direta; conflitos terrestres e ataques sacrificiais marítimos",
+      "regioes_formalizadas": [
+        "regiao:costa-sul"
+      ],
+      "ancoras": [
+        {
+          "id": "lugar-visual:portomonte",
+          "papel": "Assentamento costeiro e centro comercial",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:templo-demeter",
+          "papel": "Purificação ritual da água para agricultura",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:ilhas-monasticas",
+          "papel": "Conjunto insular de comunidades tortles e tabaxis",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:cavernas-kuo-toa",
+          "papel": "Conjunto de cavernas habitadas pelos kuo-toa",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:mar-de-sangue",
+          "papel": "Mar corrompido e frente marítima",
+          "estado": "documentado"
+        }
+      ],
+      "povos_documentados": [
+        "Humanos costeiros",
+        "Tortles e tabaxis das ilhas",
+        "Kuo-Toa",
+        "Abissais marinhos"
+      ],
+      "cultura_de_referencia": "Humanos costeiros e agrícolas; monasticismo insular tortle/tabaxi; comunidades Kuo-Toa; Abissais marinhos distintos de demônios.",
+      "criaturas_e_ameacas": "Kuo-Toa e Abissais marinhos são povos, não monstros coletivamente; não transferir os sete monstros do Arquivo para este mar.",
+      "proximo_vazio": "Individualizar ilhas, comunidades litorâneas e cidades submersas.",
+      "estatuto": "sintese_de_fontes_nao_altera_canon"
+    },
+    {
+      "id": "caatinga",
+      "nome": "Caatinga do Além Sul",
+      "orientacao": "Terras áridas do Além Sul",
+      "poder_referencia": "Sem colonização feérica direta documentada; conflitos próprios entre comunidades",
+      "regioes_formalizadas": [
+        "regiao:caatinga"
+      ],
+      "ancoras": [
+        {
+          "id": "lugar-visual:caatinga-bioma",
+          "papel": "Terras áridas e zonas de deslocamento",
+          "estado": "documentado"
+        }
+      ],
+      "povos_documentados": [
+        "Orcs da Caatinga",
+        "Humanos e outros exilados"
+      ],
+      "cultura_de_referencia": "Comunidades dispersas de orcs; exilados humanos; história de aliança orc-humana anti-Kuo-Toa.",
+      "criaturas_e_ameacas": "Nenhuma ocorrência local de monstro nomeado confirmada.",
+      "proximo_vazio": "Localidade habitada nomeada, fontes d'água e limites com Costa Sul.",
+      "estatuto": "sintese_de_fontes_nao_altera_canon"
+    },
+    {
+      "id": "eldroth",
+      "nome": "Eldroth e Vandar",
+      "orientacao": "Asa direita de Golzdov",
+      "poder_referencia": "Lady Sylara Nightwhisper vigia Eldroth; Lord Damaris Blackthorn ocupa Vandar",
+      "regioes_formalizadas": [
+        "regiao:eldroth"
+      ],
+      "ancoras": [
+        {
+          "id": "lugar-visual:floresta-eldroth",
+          "papel": "Bioma ocupado, com resistência clandestina",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:vandar",
+          "papel": "Cidade antiga em ruínas e base de mortos-vivos",
+          "estado": "documentado"
+        }
+      ],
+      "povos_documentados": [
+        "Elfos da Floresta",
+        "Druidas clandestinos",
+        "Ocupantes shadow fey"
+      ],
+      "cultura_de_referencia": "Elfos da Floresta e círculos druídicos; estratégias de sobrevivência sob Sylara; ruínas de Vandar sob Damaris.",
+      "criaturas_e_ameacas": "Mortos-vivos de Vandar documentados narrativamente; oito espécies/manifestações de Eldroth seguem propostas não aprovadas.",
+      "proximo_vazio": "Vilas, refúgios, covis e distinção entre cidade viva e ruína ocupada.",
+      "estatuto": "sintese_de_fontes_nao_altera_canon"
+    },
+    {
+      "id": "thargrid",
+      "nome": "Montanhas de Thargrid e Ironwood",
+      "orientacao": "Montanhas do norte e fortaleza florestal ao sul delas",
+      "poder_referencia": "Reino Sob a Montanha independente; Ironwood é principal força irregular sob Elara Stormoak",
+      "regioes_formalizadas": [],
+      "ancoras": [
+        {
+          "id": "lugar-visual:montanhas-thargrid",
+          "papel": "Bioma montanhoso e passagens",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:reino-sob-montanha",
+          "papel": "Reino-refúgio e principal polo militar da resistência",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:ironwood",
+          "papel": "Território florestal da resistência",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:fortaleza-ranger-ironwood",
+          "papel": "Fortaleza ranger dentro de Ironwood",
+          "estado": "documentado"
+        }
+      ],
+      "povos_documentados": [
+        "Anões de Thargrid",
+        "Gigantes e draconatos montanheses",
+        "Rangers de Ironwood"
+      ],
+      "cultura_de_referencia": "Clãs anões mineradores e ferreiros; gigantes com Ordenamento; draconatos de juramentos; rangers e refugiados de Ironwood.",
+      "criaturas_e_ameacas": "Gigantes e draconatos são povos, não monstros por padrão; nenhuma ocorrência individual fixada.",
+      "proximo_vazio": "Núcleos subterrâneos, aldeias de gigantes, refúgios e fronteiras de Ironwood.",
+      "estatuto": "sintese_de_fontes_nao_altera_canon"
+    },
+    {
+      "id": "foz",
+      "nome": "A Foz e o Abismo",
+      "orientacao": "Extremo oeste; queda colossal do Rio Ancestral",
+      "poder_referencia": "Ulorian Uln-Shayr ocupa a Boca do Abismo; antiga sede da Rainha destruída/abandonada",
+      "regioes_formalizadas": [
+        "regiao:foz-rio-ancestral"
+      ],
+      "ancoras": [
+        {
+          "id": "lugar-visual:abismo",
+          "papel": "Queda do rio e passagem de forças demoníacas",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:gualapolis",
+          "papel": "Antiga capital nativa, hoje sob estruturas posteriores",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:boca-do-abismo",
+          "papel": "Fortaleza e aliança militar tensa",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:arquivo-mortos-afogados",
+          "papel": "Biblioteca Yokai submersa",
+          "estado": "documentado"
+        },
+        {
+          "id": "lugar-visual:templo-das-sombras",
+          "papel": "Antigo palácio ritual arruinado",
+          "estado": "documentado"
+        }
+      ],
+      "povos_documentados": [
+        "Comunidades nativas ligadas à foz",
+        "Shadow fey do domínio de Ulorian",
+        "Ameaça demoníaca do Abismo"
+      ],
+      "cultura_de_referencia": "Memória Yokai ligada ao Arquivo; antiga Gualápolis; ocupação Shadow Fey de Ulorian.",
+      "criaturas_e_ameacas": "Sete criaturas individuais catalogadas no Arquivo dos Mortos Afogados; demônios do Abismo como ameaça distinta dos Abissais marinhos.",
+      "proximo_vazio": "Relação territorial exata entre Gualápolis, Boca do Abismo e Shadar-Riverie.",
+      "estatuto": "sintese_de_fontes_nao_altera_canon"
+    },
+    {
+      "id": "shadar",
+      "nome": "Shadar-Riverie e a aristocracia",
+      "orientacao": "Geografia precisa sob revisão, com vínculos à foz",
+      "poder_referencia": "Casa Shayr e aristocracia shadow fey",
+      "regioes_formalizadas": [],
+      "ancoras": [
+        {
+          "id": "lugar-visual:shadar-riverie",
+          "papel": "Centro de poder colonial e diplomático",
+          "estado": "documentado"
+        }
+      ],
+      "povos_documentados": [
+        "Shadow fey",
+        "Casas nobres e agentes da Corte",
+        "Comunidades mediadas por relações diplomáticas"
+      ],
+      "cultura_de_referencia": "Aristocracia Shadow Fey, diplomacia e casas nobres; não equiparar todos os feéricos à Corte.",
+      "criaturas_e_ameacas": "Nenhuma ocorrência individual catalogada.",
+      "proximo_vazio": "Topologia histórica com Gualápolis, bairros e comunidades civis.",
+      "estatuto": "sintese_de_fontes_nao_altera_canon"
+    },
+    {
+      "id": "grama",
+      "nome": "Condado de Grama-Cortada",
+      "orientacao": "Localização continental ainda não fixada em mapa",
+      "poder_referencia": "Autonomia comunitária descrita, sem governo territorial único confirmado",
+      "regioes_formalizadas": [],
+      "ancoras": [
+        {
+          "id": "lugar-visual:grama-cortada",
+          "papel": "Condado agrícola e conjunto de comunidades",
+          "estado": "documentado"
+        }
+      ],
+      "povos_documentados": [
+        "Hobbits e comunidades rurais"
+      ],
+      "cultura_de_referencia": "Hobbits de agricultura, despensas, memórias orais, hospitalidade e redes comunitárias.",
+      "criaturas_e_ameacas": "Nenhuma ocorrência individual catalogada.",
+      "proximo_vazio": "Localização continental e povoados nomeados do condado.",
+      "estatuto": "sintese_de_fontes_nao_altera_canon"
+    },
+    {
+      "id": "cauda",
+      "nome": "Cauda e Templo do Crepúsculo",
+      "orientacao": "Cauda de Golzdov, além do Abismo",
+      "poder_referencia": "Sarastra Aestruum, Rainha da Noite",
+      "regioes_formalizadas": [],
+      "ancoras": [
+        {
+          "id": "lugar-visual:templo-do-crepusculo",
+          "papel": "Palácio da Rainha da Noite",
+          "estado": "documentado"
+        }
+      ],
+      "povos_documentados": [
+        "Corte shadow fey e seus séquitos"
+      ],
+      "cultura_de_referencia": "Corte da Rainha da Noite e seus séquitos; palácio no Templo do Crepúsculo.",
+      "criaturas_e_ameacas": "Nenhuma ocorrência individual catalogada.",
+      "proximo_vazio": "Acesso ao outro lado do Abismo e outros espaços habitados.",
+      "estatuto": "sintese_de_fontes_nao_altera_canon"
+    },
+    {
+      "id": "azuis",
+      "nome": "Águas azuis e fronteira marítima",
+      "orientacao": "Mar aberto além das águas corrompidas",
+      "poder_referencia": "Autonomias dos povos do mar; distribuição de governos desconhecida",
+      "regioes_formalizadas": [],
+      "ancoras": [
+        {
+          "id": "lugar-visual:aguas-azuis",
+          "papel": "Zona marítima além do Mar de Sangue",
+          "estado": "documentado"
+        }
+      ],
+      "povos_documentados": [
+        "Tritões",
+        "Sereias"
+      ],
+      "cultura_de_referencia": "Tritões de patrulha marítima; Sereias de memória, genealogia e canto; sociedades submarinas autônomas.",
+      "criaturas_e_ameacas": "Tritões e Sereias são povos, não monstros por padrão; nenhuma espécie monstruosa local individual confirmada.",
+      "proximo_vazio": "Individualizar cidades submersas e a fronteira variável com o Mar de Sangue.",
+      "estatuto": "sintese_de_fontes_nao_altera_canon"
+    }
+  ],
+  "criaturas_catalogadas": [
+    {
+      "id": "carcaca:criatura:akaname-espelho-fundo",
+      "nome": "Akaname do Espelho Fundo",
+      "tipo_carcaca": "yokai",
+      "ocorrencias": [
+        {
+          "regiao_id": "regiao:foz-rio-ancestral",
+          "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+          "situacao": "Presença ritual no Arquivo",
+          "status": "documentado"
+        }
+      ]
+    },
+    {
+      "id": "carcaca:criatura:gharoz-sonho-podre",
+      "nome": "Gharoz, o Crocodilo Gordo do Sonho Podre",
+      "tipo_carcaca": "demonio",
+      "ocorrencias": [
+        {
+          "regiao_id": "regiao:foz-rio-ancestral",
+          "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+          "situacao": "disputa pela Lança da Perdição e pelo destino da foz",
+          "status": "documentado"
+        }
+      ]
+    },
+    {
+      "id": "carcaca:criatura:joro-sonhos-afogados",
+      "nome": "Jorō Aracne dos Sonhos Afogados",
+      "tipo_carcaca": "yokai",
+      "ocorrencias": [
+        {
+          "regiao_id": "regiao:foz-rio-ancestral",
+          "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+          "situacao": "guardia residente",
+          "status": "documentado"
+        }
+      ]
+    },
+    {
+      "id": "carcaca:criatura:kappa-escribas-afogados",
+      "nome": "Kappa-Escribas Afogados",
+      "tipo_carcaca": "yokai",
+      "ocorrencias": [
+        {
+          "regiao_id": "regiao:foz-rio-ancestral",
+          "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+          "situacao": "Presença ritual no Arquivo",
+          "status": "documentado"
+        }
+      ]
+    },
+    {
+      "id": "carcaca:criatura:lampreias-do-pavor-abissal",
+      "nome": "Lampreias do Pavor Abissal",
+      "tipo_carcaca": "demonio",
+      "ocorrencias": [
+        {
+          "regiao_id": "regiao:foz-rio-ancestral",
+          "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+          "situacao": "Predadores de infiltração e cerco nas águas e corredores alagados do Arquivo; não há evidência de presença genérica em todo o Mar de Sangue.",
+          "status": "documentado"
+        }
+      ]
+    },
+    {
+      "id": "carcaca:criatura:morgat-quebra-ancoras-do-vazio",
+      "nome": "Morgat, Quebra-Âncoras do Vazio",
+      "tipo_carcaca": "demonio",
+      "ocorrencias": [
+        {
+          "regiao_id": "regiao:foz-rio-ancestral",
+          "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+          "situacao": "Executor militar que rompe as defesas do Arquivo para abrir passagem a Gharoz",
+          "status": "documentado"
+        }
+      ]
+    },
+    {
+      "id": "carcaca:criatura:veren-mares-rubras",
+      "nome": "Veren Marés-Rubras",
+      "tipo_carcaca": "demonio",
+      "ocorrencias": [
+        {
+          "regiao_id": "regiao:foz-rio-ancestral",
+          "lugar_id": "lugar:arquivo-dos-mortos-afogados",
+          "situacao": "Operador de infiltração e tentação; busca a Lança da Perdição",
+          "status": "documentado"
+        }
+      ]
+    }
+  ],
+  "ordem_aprofundamento": [
+    "garganta",
+    "rio",
+    "foz",
+    "thargrid",
+    "eldroth",
+    "caatinga",
+    "costa",
+    "azuis",
+    "shadar",
+    "grama",
+    "cauda"
+  ]
+}

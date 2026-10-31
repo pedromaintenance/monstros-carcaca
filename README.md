@@ -8,6 +8,10 @@ Banco de criaturas compartilhado pelos jogos ambientados na **Carcaça**.
 
 As novas declarações sobre **Kindau (Tempo), Dialel (criação/Espaço), Corau (oceano infinito) e Ubiaca (Medo)** estão organizadas no [dossiê de cosmologia](docs/COSMOLOGIA_PRIMORDIAL_KINDAU_UBIACA_V0_3_1.md), com [dados estruturados](data/worldbuilding/cosmologia-primordial-kindau-ubiaca-v0.3.1.json) e [declarações originais](fontes/autoria/declaracoes-cosmologia-2026-10-29-30.md). O registro distingue decisões autorais, doutrinas de personagens e perguntas ainda abertas. A v0.2.0 resolve a identidade de Golzdov. A v0.3.0 acrescenta **Corau como oceano primordial**, as dimensões como **reflexos da luz de Dialel** e a **incorporeidade dos primordiais**, preservando como hipóteses a autodevoração do Tempo e a leitura do ouroboros. A v0.3.1 define a **Não-Existência como o que está fora de Corau**, sem outra entidade personificadora. São **segredos de mestre**. **Não altera automaticamente fichas, atlas canônico, cronologia de campanhas nem a informação conhecida pelos habitantes.**
 
+## Atlas básico — regiões, assentamentos, culturas e monstros
+
+O [inventário de superfície v0.1](docs/ATLAS_BASE_REGIOES_ASSENTAMENTOS_CULTURAS_MONSTROS_V0_1.md) reúne os **11 setores de leitura** com lugares, povos, culturas, ameaças e lacunas. [JSON de consulta](data/atlas/atlas-base-superficie-v0.1.json). **Não cria assentamentos, espécies ou ocorrências automaticamente.**
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
