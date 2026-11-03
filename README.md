@@ -16,6 +16,10 @@ O [inventário de superfície v0.1](docs/ATLAS_BASE_REGIOES_ASSENTAMENTOS_CULTUR
 
 O [dossiê de povoamento e ecologia do eixo](docs/POVOAMENTO_ECOLOGIA_EIXO_GARGANTA_RIO_FOZ_CICLO52.md) desenvolve **8 comunidades já propostas** (sem duplicá-las), apresenta **3 novas candidatas na Foz**, **6 criaturas ecológicas** e **6 vínculos funcionais**. [Dados em JSON](data/propostas/povoamento-ecologia-eixo-garganta-rio-foz-ciclo52.json). Todas as novidades são **propostas rastreáveis**, não alterações automáticas do cânone nem do mapa.
 
+## Ciclo LIII — Thargrid, Ironwood e Eldroth
+
+O [dossiê de povoamento e ecologia](docs/POVOAMENTO_ECOLOGIA_THARGRID_IRONWOOD_ELDROTH_CICLO53.md) aprofunda **12 comunidades já propostas**, registra **6 criaturas candidatas novas**, reutiliza **3 criaturas antigas** e aponta **8 vínculos hipotéticos**. [Dados estruturados](data/propostas/povoamento-ecologia-thargrid-ironwood-eldroth-ciclo53.json). Não há alteração do cânone ou mapa.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
