@@ -32,6 +32,10 @@ O [dossiê canônico sobre a destruição de Gualápolis](docs/SEGREDO_DE_MESTRE
 
 O [dossiê do Ciclo LV](docs/POVOAMENTO_SHADAR_GRAMA_CAUDA_CICLO55.md) desenvolve **10 comunidades** e **6 criaturas candidatas**, concluindo a primeira passagem editorial pelos onze setores, sem canonização automática. [Dados JSON](data/propostas/povoamento-shadar-grama-cauda-ciclo55.json). Não revela aos habitantes os segredos da campanha.
 
+## Ciclo LVI — Microterritórios de trabalho, água e ecologia
+
+O [dossiê de microterritórios](docs/MICROTERRITORIOS_OFICIOS_ECOLOGIA_CICLO56.md) aprofunda **4 comunidades já propostas**, cria **4 núcleos de serviço candidatos** (sem virar cidades), individualiza **8 moradores** e trabalha **8 criaturas** (4 retomadas dos ciclos anteriores e 4 inéditas), com [dados estruturados](data/propostas/microterritorios-oficios-ecologia-ciclo56.json). Registra recursos e dependências sem confirmar abastecimento, rotas, ocorrência monstruosa ou canonização automática.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
