@@ -20,6 +20,10 @@ O [dossiê de povoamento e ecologia do eixo](docs/POVOAMENTO_ECOLOGIA_EIXO_GARGA
 
 O [dossiê de povoamento e ecologia](docs/POVOAMENTO_ECOLOGIA_THARGRID_IRONWOOD_ELDROTH_CICLO53.md) aprofunda **12 comunidades já propostas**, registra **6 criaturas candidatas novas**, reutiliza **3 criaturas antigas** e aponta **8 vínculos hipotéticos**. [Dados estruturados](data/propostas/povoamento-ecologia-thargrid-ironwood-eldroth-ciclo53.json). Não há alteração do cânone ou mapa.
 
+## Ciclo LIV — Caatinga, Costa Sul e os dois mares
+
+O [dossiê do Além Sul](docs/POVOAMENTO_ECOLOGIA_ALEM_SUL_CICLO54.md) aprofunda **16 comunidades já propostas** da Caatinga, litoral, ilhas e cidades submersas. Também reúne **8 novas criaturas ecológicas candidatas** e **11 relações hipotéticas**. [JSON de consulta](data/propostas/povoamento-ecologia-alem-sul-ciclo54.json). Não aprova novos assentamentos, rotas ou monstros automaticamente.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
