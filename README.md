@@ -28,6 +28,10 @@ O [dossiê do Além Sul](docs/POVOAMENTO_ECOLOGIA_ALEM_SUL_CICLO54.md) aprofunda
 
 O [dossiê canônico sobre a destruição de Gualápolis](docs/SEGREDO_DE_MESTRE_GUALAPOLIS_LANCA_PERDICAO_V1.md) e o [JSON estruturado](data/worldbuilding/gualapolis-shadar-lanca-perdicao-v1.json) registram a origem de Shadar-Riverie, a guarda da Lança pela Jorou, a resistência do rei nativo e o limite de conhecimento de Ulorian. **Contém spoilers da campanha ativa e está em repositório acessível: o aviso não restringe leitura.** O destino futuro da Lança e de Ulorian permanece em aberto.
 
+## Ciclo LV — Shadar-Riverie, Grama-Cortada e a Cauda
+
+O [dossiê do Ciclo LV](docs/POVOAMENTO_SHADAR_GRAMA_CAUDA_CICLO55.md) desenvolve **10 comunidades** e **6 criaturas candidatas**, concluindo a primeira passagem editorial pelos onze setores, sem canonização automática. [Dados JSON](data/propostas/povoamento-shadar-grama-cauda-ciclo55.json). Não revela aos habitantes os segredos da campanha.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.

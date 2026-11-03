@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Ciclo LV — Shadar-Riverie, Grama-Cortada e Cauda",
+  "data_registro": "2026-11-03",
+  "estado": "propostas_nao_canonicas",
+  "aprovacao_autoral": false,
+  "alteracoes_automaticas": false,
+  "totais": {
+    "comunidades": 10,
+    "aprofundadas": 6,
+    "novas": 4,
+    "criaturas": 6
+  },
+  "comunidades": [
+    {
+      "id": "povoamento:lv:01",
+      "setor": "shadar",
+      "nome": "As Salas do Favor Não Pago",
+      "origem_id": "povoamento-proposto:salas-de-protocolo",
+      "habitantes_propostos": "Nobres shadow fey, servidores e requerentes",
+      "contradicao": "O cerimonial depende de trabalho subjugado. Concessões informais podem tornar-se dívidas impagáveis.",
+      "gancho_hipotetico": "Uma pessoa sem título apresenta promessa que contraria protocolo aristocrático.",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "populacao": null
+    },
+    {
+      "id": "povoamento:lv:02",
+      "setor": "shadar",
+      "nome": "O Ateliê das Máscaras Legíveis",
+      "origem_id": "povoamento-proposto:ateliê-das-mascaras",
+      "habitantes_propostos": "Costureiras subjugadas, figurinistas e especialistas em glamour",
+      "contradicao": "A elegância da Corte depende de artesãos que não podem usufruir dos próprios produtos.",
+      "gancho_hipotetico": "Uma máscara revela a marca de quem a costurou, expondo o trabalho oculto.",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "populacao": null
+    },
+    {
+      "id": "povoamento:lv:03",
+      "setor": "grama",
+      "nome": "Vila das Despensas Miúdas",
+      "origem_id": null,
+      "habitantes_propostos": "Hobbits agricultores, guardiões de estoques e reparadores",
+      "contradicao": "A variedade de cultivos não impede que famílias com reservas tenham mais poder que vizinhos sem sementes.",
+      "gancho_hipotetico": "Uma família pede sementes ao dono da única despensa cheia.",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "populacao": null
+    },
+    {
+      "id": "povoamento:lv:04",
+      "setor": "grama",
+      "nome": "Campos das Cercas Relutantes",
+      "origem_id": null,
+      "habitantes_propostos": "Hobbits herdeiros, agricultores e reparadores de cercas",
+      "contradicao": "Direitos hereditários de terra podem entrar em conflito com caminhos utilizados por toda a comunidade.",
+      "gancho_hipotetico": "Uma cerca muda de lugar e duas famílias apresentam histórias incompatíveis.",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "populacao": null
+    },
+    {
+      "id": "povoamento:lv:05",
+      "setor": "grama",
+      "nome": "Pouso da Panela Retornada",
+      "origem_id": null,
+      "habitantes_propostos": "Hobbits anfitriões, cozinheiros e viajantes ocasionais",
+      "contradicao": "A obrigação social de hospedar pode recair sobre quem não controla a comida ou as camas.",
+      "gancho_hipotetico": "Uma família se recusa a receber hóspedes, contrariando a reputação local de hospitalidade.",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "populacao": null
+    },
+    {
+      "id": "povoamento:lv:06",
+      "setor": "grama",
+      "nome": "Vila das Histórias Cruzadas",
+      "origem_id": null,
+      "habitantes_propostos": "Hobbits narradores, jovens aprendizes e famílias antigas",
+      "contradicao": "A memória oral protege costumes, mas pode também apagar as versões dos que partiram.",
+      "gancho_hipotetico": "Duas canções reivindicam a mesma horta para herdeiros diferentes.",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "populacao": null
+    },
+    {
+      "id": "povoamento:lv:07",
+      "setor": "cauda",
+      "nome": "O Pátio dos Servidores sem Sombra",
+      "origem_id": "comunidade:xlvii:cauda:01",
+      "habitantes_propostos": "Servidores shadow fey, humanos subjugados e pequenos seres",
+      "contradicao": "O palácio necessita de manutenção, mas as Casas tratam os trabalhadores como recursos transferíveis.",
+      "gancho_hipotetico": "Uma cerimônia começa sem roupas suficientes, e uma criança aprendiz é responsabilizada.",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "populacao": null
+    },
+    {
+      "id": "povoamento:lv:08",
+      "setor": "cauda",
+      "nome": "A Oficina das Costelas Negadas",
+      "origem_id": "comunidade:xlvii:cauda:02",
+      "habitantes_propostos": "Artesãos feéricos, gnomos e seres minerais propostos",
+      "contradicao": "Uma ordem de extração ameaça material que alguns moradores consideram corpo ou patrimônio.",
+      "gancho_hipotetico": "Um artífice recusa desmontar uma peça que outro afirma ser parte de um parente.",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "populacao": null
+    },
+    {
+      "id": "povoamento:lv:09",
+      "setor": "cauda",
+      "nome": "O Jardim das Flores que Escutam",
+      "origem_id": "comunidade:xlvii:cauda:06",
+      "habitantes_propostos": "Plantas conscientes e polinizadores inteligentes propostos",
+      "contradicao": "A Corte pode tratar habitantes vegetais como ornamento; iluminação, água e sustento não estão comprovados.",
+      "gancho_hipotetico": "Uma flor destinada a um baile recusa sair do jardim.",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "populacao": null
+    },
+    {
+      "id": "povoamento:lv:10",
+      "setor": "cauda",
+      "nome": "As Salas da Discórdia Azul",
+      "origem_id": "comunidade:xlvii:cauda:08",
+      "habitantes_propostos": "Famílias de meio-demônios, humanos e desertores feéricos",
+      "contradicao": "A ascendência é usada para acusar inocentes, enquanto a reparação por crimes reais continua disputada.",
+      "gancho_hipotetico": "Um ex-militar pede acolhida a parentes de alguém prejudicado por sua antiga guarnição.",
+      "estado": "proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "populacao": null
+    }
+  ],
+  "criaturas": [
+    {
+      "id": "ecologia:lv:01",
+      "setor": "shadar",
+      "nome": "Traça das Bainhas de Luto",
+      "nicho": "Insumos têxteis envelhecidos e figurinos guardados",
+      "perigo": "Perfura roupas e aumenta o trabalho de reparadores; não é espiã da Corte.",
+      "convivencia": "Ventilar depósitos e separar tecidos vulneráveis.",
+      "estado": "proposta_nao_canonica",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    },
+    {
+      "id": "ecologia:lv:02",
+      "setor": "shadar",
+      "nome": "Gárgula de Caliça Solta",
+      "nicho": "Argamassa e escultura descartada de obras urbanas",
+      "perigo": "Pode desestabilizar andaimes; não aponta para a localização de arquivos ocultos.",
+      "convivencia": "Isolar o canteiro e oferecer um suporte de pedra estável.",
+      "estado": "proposta_nao_canonica",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    },
+    {
+      "id": "ecologia:lv:03",
+      "setor": "grama",
+      "nome": "Rato dos Grãos Gêmeos",
+      "nicho": "Pequeno predador de sementes que cria duplicata ilusória momentânea",
+      "perigo": "Confunde os moradores, mas não duplica matéria ou alimentos.",
+      "convivencia": "Armazenar sementes e preservar predadores naturais.",
+      "estado": "proposta_nao_canonica",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    },
+    {
+      "id": "ecologia:lv:04",
+      "setor": "grama",
+      "nome": "Corça do Pasto Regressado",
+      "nicho": "Herbívoro com percursos circulares habituais ou magicamente influenciados",
+      "perigo": "Cruza cercas e danifica canteiros, sem ser inimiga política.",
+      "convivencia": "Abrir corredores de fauna.",
+      "estado": "proposta_nao_canonica",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    },
+    {
+      "id": "ecologia:lv:05",
+      "setor": "cauda",
+      "nome": "Mariposa do Vidro Fosco",
+      "nicho": "Inseto atraído por reflexos e calor de luminárias rituais",
+      "perigo": "Enxames encobrem luzes, sem ligação comprovada ao poder da Rainha.",
+      "convivencia": "Diminuir a iluminação junto a locais de postura.",
+      "estado": "proposta_nao_canonica",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    },
+    {
+      "id": "ecologia:lv:06",
+      "setor": "cauda",
+      "nome": "Rastejante dos Cortinados",
+      "nicho": "Tecido animado que busca sombra e calor",
+      "perigo": "Pode imobilizar visitantes por acidente; não é guarda de Sarastra comprovada.",
+      "convivencia": "Oferecer suporte fixo e afastar visitantes sem usar fogo.",
+      "estado": "proposta_nao_canonica",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    }
+  ],
+  "fontes": [
+    "data/propostas/povoamento-regional-hack-carcaca.json",
+    "data/propostas/povoamento-insular-submerso-cauda-ciclo47.json",
+    "data/worldbuilding/grama-cortada-cotidiano-ciclo20.json",
+    "docs/SEGREDO_DE_MESTRE_GUALAPOLIS_LANCA_PERDICAO_V1.md"
+  ],
+  "guardas": [
+    "Shadar foi erguida sobre Gualápolis destruída; não inferir cartografia ou acesso a ruínas afogadas.",
+    "A verdade da Lança e do Arquivo não é conhecimento de habitantes ou de Ulorian.",
+    "O desfecho da campanha em andamento não está definido.",
+    "Grama-Cortada não tem governo monárquico central, exército permanente ou arquitetura única.",
+    "Cauda não possui rota de travessia nem cidade comprovada ao redor do Templo.",
+    "Nenhuma nova vila ou criatura foi homologada."
+  ]
+}
