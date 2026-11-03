@@ -1,5 +1,7 @@
 # Ciclo XXVII — A cidade sobre a memória afogada
 
+> **RETIFICAÇÃO AUTORAL POSTERIOR — 03/11/2026, SEGREDO DO MESTRE (SPOILERS):** A incerteza sobre a relação histórica geral entre Shadar-Riverie e Gualápolis foi resolvida: **Shadar-Riverie foi construída sobre Gualápolis destruída**. O rei nativo afundou Gualápolis e o Arquivo, confiando a Lança da Perdição à Jorou, para impedir sua captura por Ulorian, contra quem morreu sem a arma. Ulorian **não conhece** a localização da Lança nem do Arquivo. Veja o [dossiê canônico atualizado](SEGREDO_DE_MESTRE_GUALAPOLIS_LANCA_PERDICAO_V1.md). O texto abaixo permanece preservado como registro do estado editorial **anterior** à confirmação. A geometria exata de Boca do Abismo, Shadar e Arquivo continua não cartografada.
+
 **Dossiê editorial de história social; não canônico.** Escopos: foz do Rio Ancestral e relações com Shadar-Riverie, cujo ID geográfico normalizado continua indefinido. Fontes autorais: Hack Carcaça, capítulo I, pp. 4–6, 9–10. Fontes de curadoria: os lugares e região da foz; povoamento regional proposto; facções documentadas e indexadas. Nenhuma nova entidade foi promovida ao atlas factual.
 
 > Uma fortaleza pode tomar uma cidade; isso não lhe entrega automaticamente os nomes de seus mortos.

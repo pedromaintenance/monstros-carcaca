@@ -1,0 +1,143 @@
+{
+  "schema_version": "1.0",
+  "id": "carcaca:canon:shadar-gualapolis-lanca",
+  "versao": "1.0.0",
+  "data_de_registro": "2026-11-03",
+  "estado": "confirmado_pelo_autor",
+  "camada": "segredo_de_mestre",
+  "spoiler_para_campanha_ativa": true,
+  "altera_canon_autoral": true,
+  "altera_mapa_fisico": false,
+  "altera_saves_da_campanha": false,
+  "titulo": "A queda de Gualápolis e o segredo da Lança da Perdição",
+  "afirmacoes": [
+    {
+      "id": "canon:gualapolis:cidade-sobre-ruinas",
+      "afirmacao": "Shadar-Riverie foi construída sobre Gualápolis destruída",
+      "estado": "afirmacao_autoral"
+    },
+    {
+      "id": "canon:gualapolis:rei-nativo-portador",
+      "afirmacao": "O rei de Gualápolis era portador da Lança da Perdição",
+      "estado": "afirmacao_autoral"
+    },
+    {
+      "id": "canon:gualapolis:rio-poder",
+      "afirmacao": "O rei possuía poder sobrenatural sobre o Rio Ancestral e o usava para combater o Abismo",
+      "estado": "afirmacao_autoral"
+    },
+    {
+      "id": "canon:gualapolis:templo",
+      "afirmacao": "O rei libertou o Abismo contra a Corte, causando a queda do Templo das Sombras",
+      "estado": "afirmacao_autoral"
+    },
+    {
+      "id": "canon:gualapolis:ataque",
+      "afirmacao": "O ataque de Ulorian forçou a decisão do rei de afundar Gualápolis",
+      "estado": "afirmacao_autoral"
+    },
+    {
+      "id": "canon:gualapolis:jorou",
+      "afirmacao": "O rei confiou a Lança da Perdição à Jorou (Jorō no arquivo da masmorra)",
+      "estado": "afirmacao_autoral"
+    },
+    {
+      "id": "canon:gualapolis:arquivo",
+      "afirmacao": "Gualápolis foi afundada com o Arquivo dos Mortos Afogados",
+      "estado": "afirmacao_autoral"
+    },
+    {
+      "id": "canon:gualapolis:morte-rei",
+      "afirmacao": "O rei de Gualápolis morreu em batalha contra Ulorian sem a Lança",
+      "estado": "afirmacao_autoral"
+    },
+    {
+      "id": "canon:gualapolis:privacao-corte",
+      "afirmacao": "A estratégia impediu que a Corte obtivesse grande poder sobre o Abismo e o Rio Ancestral",
+      "estado": "afirmacao_autoral"
+    },
+    {
+      "id": "canon:gualapolis:ulorian-nao-sabe-lanca",
+      "afirmacao": "Ulorian não conhece a localização da Lança",
+      "estado": "afirmacao_autoral"
+    },
+    {
+      "id": "canon:gualapolis:ulorian-nao-sabe-arquivo",
+      "afirmacao": "Ulorian não conhece a localização do Arquivo",
+      "estado": "afirmacao_autoral"
+    }
+  ],
+  "personagens": {
+    "rei_gualapolis": {
+      "papel": "Rei de Gualápolis, portador da Lança da Perdição",
+      "nome_pessoal": null,
+      "estado_no_passado": "morto_em_batalha_contra_ulorian_sem_a_lanca"
+    },
+    "ulorian": {
+      "nome": "Ulorian Uln-Shayr",
+      "titulo": "Senhor do Rio",
+      "mesma_pessoa_que_rei_nativo": false,
+      "conhecimento_canonico_atual": {
+        "sabe": [
+          "O antigo rei possuía poder sobrenatural sobre o Rio Ancestral",
+          "O antigo rei enfrentava o Abismo com esse poder"
+        ],
+        "desconhece": [
+          "Localização da Lança da Perdição",
+          "Localização do Arquivo dos Mortos Afogados"
+        ]
+      },
+      "destino_na_campanha": "em_aberto"
+    },
+    "jorou": {
+      "nome": "Jorou",
+      "grafia_alternativa": "Jorō",
+      "papel_no_passado": "guarda_da_lanca_entregue_pelo_rei",
+      "conhecimento_publico_confirmado": false
+    }
+  },
+  "lugares": {
+    "gualapolis": "capital_nativa_destruida_e_afundada",
+    "shadar_riverie": "cidade_posterior_construida_sobre_gualapolis",
+    "arquivo": "afundado_com_gualapolis",
+    "boca_do_abismo": "fortaleza_de_ulorian_cuja_geometria_fina_ante_outras_estruturas_nao_esta_definida",
+    "templo_das_sombras": "destruido_com_contribuicao_do_poder_do_rei"
+  },
+  "cronologia_documentada": [
+    {
+      "ano_ec": 983,
+      "evento": "destruicao_do_templo_das_sombras",
+      "data_pormenorizada": false
+    },
+    {
+      "ano_ec": 984,
+      "evento": "tomada_de_gualapolis_pelo_senhor_do_rio",
+      "data_pormenorizada": false
+    }
+  ],
+  "campanha_em_andamento": {
+    "assunto": "destino_da_lanca_e_de_ulorian",
+    "situacao": "a_descobrir_pelos_jogadores",
+    "resolucao_inventada": false
+  },
+  "nao_inferir": [
+    "Rei de Gualápolis e Ulorian seriam a mesma pessoa",
+    "Ulorian sabe onde estão a Lança ou o Arquivo",
+    "A Corte já tomou posse da Lança",
+    "A Jorou é conhecida pelos habitantes ou por Ulorian",
+    "A queda do Templo não teve relação com a ação do rei",
+    "O rei controlava todos os demônios do Abismo",
+    "Datas individuais do afundamento, entrega da Lança ou morte do rei",
+    "Existência de passagem acessível ou estrada até o Arquivo",
+    "Resultado de qualquer sessão da campanha atual"
+  ],
+  "fontes": [
+    "afirmacao_autoral_2026_11_03",
+    "Arquivo dos Mortos Afogados.docx",
+    "Ambientação - A Carcaça - Visão Geral.txt",
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+    "docs/FOZ_SHADAR_MEMORIA_CICLO27.md"
+  ],
+  "arquivo_md": "docs/SEGREDO_DE_MESTRE_GUALAPOLIS_LANCA_PERDICAO_V1.md",
+  "classe_de_acesso": "spoiler_aviso_apenas_sem_protecao_de_acesso"
+}
