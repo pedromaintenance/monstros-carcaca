@@ -44,6 +44,10 @@ O [dossiê de ecossistemas e sazonalidade](docs/CARCACA_SELVAGEM_HABITATS_SAZONA
 
 O [dossiê de três ecossistemas](docs/REDES_DE_VIDA_ECOSSISTEMAS_CICLO58.md) conecta **6 habitats** e **9 comunidades já propostas** por meio de **18 nexos funcionais**, **9 estados ambientais condicionais** e **6 personagens** (três reutilizados). [Dados em JSON](data/propostas/redes-de-vida-ecossistemas-ciclo58.json). **Sem novas cidades, espécies ou ocorrências canonizadas; nenhuma proximidade é inferida pela pertença ao mesmo setor.**
 
+## Ciclo LIX — Civilizações sob as Águas
+
+O [dossiê dos mares](docs/CIVILIZACOES_SUBMERSAS_MAR_SANGUE_AGUAS_AZUIS_CICLO59.md) aprofunda **12 assentamentos já propostos**, **6 habitats**, **8 criaturas**, **9 pessoas** e **14 relações hipotéticas**. [JSON do ciclo](data/propostas/civilizacoes-submersas-mar-sangue-aguas-azuis-ciclo59.json). Nenhuma cidade, espécie, relação ou rota foi automaticamente homologada.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
