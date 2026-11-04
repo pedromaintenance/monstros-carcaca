@@ -1,0 +1,424 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Ciclo LXI — Gigantes e seres minerais de Thargrid",
+  "data_registro": "2026-11-03",
+  "status": "proposta_nao_homologada",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "fundamento_autoral": {
+    "arquivo": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+    "paginas": [
+      12,
+      13
+    ],
+    "regra": "O Ordenamento governa os gigantes, mas não Thargrid. Gigantes de pedra canônicos não são equivalentes à colônia elemental hipotética."
+  },
+  "fontes": [
+    "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+    "data/propostas/povoamento-ecologia-thargrid-ironwood-eldroth-ciclo53.json",
+    "data/propostas/microterritorios-oficios-ecologia-ciclo56.json"
+  ],
+  "totais": {
+    "sociedades": 2,
+    "novos_assentamentos": 0,
+    "espacos": 8,
+    "instituicoes": 8,
+    "oficios": 8,
+    "costumes": 8,
+    "pessoas_candidatas": 8,
+    "conflitos": 6,
+    "criaturas_candidatas": 4,
+    "interfaces": 4
+  },
+  "sociedades": [
+    {
+      "id": "sociedade:lxi:gigantes",
+      "ref": "povoamento:xlvi:thargrid-montanhas:02",
+      "nome": "O Terraço dos Pés de Nuvem",
+      "titulo": "A altura não é jurisdição",
+      "origem": "O Ordenamento regula prestígio gigante mas não é lei imposta sobre Thargrid; o Terraço é assentamento proposto, não localização autoral.",
+      "sobrevivencia": "Rebanhos de altitude são hipotéticos. A comunidade não possui ainda produção de comida, pasto, fontes hídricas, estoque, estradas nem combustível demonstrados. Neve não equivale a água potável.",
+      "biologia": "Gigantes das nuvens e famílias de outras linhagens são habitantes propostos. Infância, crescimento, herança, gestação e dietas particulares não foram fixados; gigantes de pedra, fogo e gelo possuem tradições distintas no texto canônico, mas sua presença aqui não está comprovada.",
+      "arquitetura": "Platô hipotético com lugares de várias escalas; bancos, rampas e corrimãos permitem visitas, mas podem também materializar humilhações. Não existe mapa de acesso confirmado.",
+      "memoria": "Marcas de altura, instrumentos herdados e histórias de travessia poderiam conservar a memória, sem virar mapas meteorológicos ou títulos sobre outras comunidades.",
+      "espacos": [
+        [
+          "Pátio das Mesas Desniveladas",
+          "Refeições e audiências com apoios ajustáveis.",
+          "Remover o apoio do visitante vira imposição de inferioridade."
+        ],
+        [
+          "Salão do Degrau Emprestado",
+          "Recepção de representantes de outros povos, caso haja contatos.",
+          "O dono do salão quer escolher sozinho a altura de quem fala."
+        ],
+        [
+          "Jardim dos Ventos Pesados",
+          "Observação de vento e manutenção de coberturas.",
+          "Uma cerimônia de prestígio pode impedir o aviso de risco aos reparadores."
+        ],
+        [
+          "Terraço dos Passos Aprendizes",
+          "Aprendizagem de jovens gigantes e treino de segurança.",
+          "Famílias poderosas monopolizam materiais e instrutores."
+        ]
+      ],
+      "instituicoes": [
+        [
+          "Mesa dos Patamares",
+          "Media precedência e distribuição de trabalho entre famílias gigantes participantes.",
+          "Não governa anões, draconatos ou toda Thargrid."
+        ],
+        [
+          "Testemunhas do Degrau Móvel",
+          "Registram as condições de uma audiência.",
+          "A recusa a ajoelhar não impede apresentar uma petição."
+        ],
+        [
+          "Guarda das Medidas Comuns",
+          "Inspeciona estruturas utilizadas por pessoas de vários portes.",
+          "Relato de vítima ou aprendiz não é inferior ao de chefe."
+        ],
+        [
+          "Roda das Famílias em Crescimento",
+          "Discute acesso de jovens e cuidadores a provisões e ensino.",
+          "Prestígio não concede direito de retirar comida de crianças."
+        ]
+      ],
+      "oficios": [
+        [
+          "Ajustadores de medida",
+          "Reparar plataformas e ferragens multiescalares.",
+          "Um padrão único torna outros corpos inseguros."
+        ],
+        [
+          "Leitores de rajada",
+          "Observar vento e sinalizar perigo local.",
+          "Avisos podem ser censurados por superiores."
+        ],
+        [
+          "Guardadores de mantimentos",
+          "Registrar reservas e repartir alimentos possíveis.",
+          "O estoque pode ser usado para impor obediência."
+        ],
+        [
+          "Instrutores de travessia",
+          "Ensinar uso seguro de apoios e passagens.",
+          "Provas de força podem produzir acidentes evitáveis."
+        ]
+      ],
+      "costumes": [
+        [
+          "O degrau tem dois donos",
+          "Um encontro exige que as partes aceitem a altura e posição em que dialogam."
+        ],
+        [
+          "Prestígio não atravessa a porta",
+          "O Ordenamento não rebaixa cidadãos de outros povos."
+        ],
+        [
+          "A medida de quem caiu",
+          "Uma pessoa ferida tem direito de relatar defeitos estruturais."
+        ],
+        [
+          "Primeiro quem não atravessa",
+          "Quem não consegue cruzar uma estrutura gigante recebe prioridade em evacuação."
+        ]
+      ],
+      "pessoas": [
+        [
+          "Daurga Nuvem-Rasgada",
+          "Anciã intérprete do Ordenamento",
+          "Defender tradições gigantes",
+          "Confunde toda crítica à etiqueta com hostilidade ao seu povo."
+        ],
+        [
+          "Orrun Escala-Viva",
+          "Construtor gigante",
+          "Projetar acessos para todos",
+          "Sua maior obra pode ter defeito ainda não investigado."
+        ],
+        [
+          "Imei Sétimo-Degrau",
+          "Aprendiz gigante",
+          "Receber ensino fora de privilégios hereditários",
+          "Depende da proteção de um chefe que perpetua a exclusão."
+        ],
+        [
+          "Tavra Vento-Antigo",
+          "Guardadora de provisões",
+          "Garantir alimento aos vulneráveis",
+          "Seus registros podem servir à vigilância de famílias pobres."
+        ]
+      ],
+      "conflitos": [
+        [
+          "A audiência abaixo do joelho",
+          "Um enviado draconato recusa ajoelhar perante um chefe gigante.",
+          "Negociar ritual, encerrar encontro ou abrir audiência em nível comum."
+        ],
+        [
+          "Uma ponte, quatro medidas",
+          "Uma passarela projetada em escala equivocada fere visitantes.",
+          "Auditar, fechar ou operar sob risco declarado para atender refugiados."
+        ],
+        [
+          "O rebanho não inventariado",
+          "O conselho promete provisões com base em rebanhos que ninguém comprovou.",
+          "Reconhecer escassez, redistribuir reservas ou buscar acordo sem inventar rota."
+        ]
+      ],
+      "fontes_associadas": [
+        "povoamento:lvi:thar-terraço",
+        "povoamento:lvi:thar-rampa"
+      ],
+      "povos_preexistentes": "Gigantes das nuvens e famílias de outros gigantes, presença local proposta",
+      "governo_preexistente": "Hierarquia gigante sujeita ao Ordenamento, sem poder automático sobre outros povos",
+      "status": "aprovacao_pendente",
+      "aprovacao_autoral": false,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    },
+    {
+      "id": "sociedade:lxi:minerais",
+      "ref": "povoamento:xlvi:thargrid-montanhas:06",
+      "nome": "A Vila da Pedra que Respira",
+      "titulo": "Não se extrai uma parede que seja alguém",
+      "origem": "Gigantes de pedra do texto canônico são escultores e engenheiros, distintos dos elementais de pedra sapientes, cuja vila é proposta do ciclo XLVI e aprofundada no LIII.",
+      "sobrevivencia": "Metabolismo, reprodução e recursos vitais dos habitantes minerais são indeterminados. Não afirmar que comem rocha, absorvem magia infinita ou se reproduzem por fraturas. Escultores orgânicos ainda precisam de água, alimento e ferramentas.",
+      "biologia": "Uma gruta poderia integrar o corpo de um morador, mas nem toda parede é pessoa, nem todo movimento mineral demonstra consciência. Os ritmos de comunicação podem divergir dos humanoides; silêncio não é autorização de extração.",
+      "arquitetura": "Galerias habitadas podem ser moradia e corpo, exigindo consentimento específico para cortar, reforçar ou atravessar superfícies. Energia de trabalho, tipo de pedra e caminhos permanecem desconhecidos.",
+      "memoria": "Fissuras, veios e esculturas podem conservar memória; uma cicatriz pode ser reparada ou preservada conforme a vontade de quem a possui. Não equiparar marca natural a escrita secreta universal.",
+      "espacos": [
+        [
+          "Átrio das Fendas que Respondem",
+          "Audiência com tempo para mensagens lentas, visuais ou vibratórias.",
+          "O prazo humano pode converter a demora em consentimento forçado."
+        ],
+        [
+          "Galeria dos Corpos Não Extraíveis",
+          "Registro provisório de superfícies consideradas corpos conscientes.",
+          "Uma oficina pode tentar redesenhar limites corporais para obter minério."
+        ],
+        [
+          "Casa dos Veios Conservados",
+          "Guardar relatos de fraturas e reparos consentidos.",
+          "Apagar cicatrizes pode destruir memória de uma violência."
+        ],
+        [
+          "Oficina do Cinzel Recusado",
+          "Trabalhar apenas pedra comprovadamente inerte ou cedida.",
+          "Uma urgência militar pode reduzir o cuidado com a verificação."
+        ]
+      ],
+      "instituicoes": [
+        [
+          "Conselho dos Veios Presentes",
+          "Discute uso de espaços compartilhados e limites de corpos.",
+          "Não presume que toda rocha pensa ou que silêncio significa aceitação."
+        ],
+        [
+          "Escuta das Fraturas",
+          "Registra danos e desejos de reparo de indivíduos minerais.",
+          "Especialistas não substituem automaticamente a vontade da pessoa."
+        ],
+        [
+          "Ofício da Pedra Inerte",
+          "Revisa a origem de material para construções.",
+          "Classificação de inércia é revisável."
+        ],
+        [
+          "Mesa do Tempo Diferente",
+          "Negocia prazos entre habitantes com ritmos distintos.",
+          "Urgências reais exigem explicitação, não supressão de consentimento."
+        ]
+      ],
+      "oficios": [
+        [
+          "Leitores de veios",
+          "Investigar sinais de corpo consciente antes de cortar.",
+          "Erro de interpretação pode ferir alguém ou travar uma obra urgente."
+        ],
+        [
+          "Cuidadores de fissura",
+          "Estabilizar e reparar quando houver consentimento.",
+          "Corrigir uma rachadura também pode apagar sua história."
+        ],
+        [
+          "Escultores autorizados",
+          "Trabalhar pedra cuja origem e inércia sejam aceitas.",
+          "Custo da verificação pesa sobre artesãos sem outra renda."
+        ],
+        [
+          "Testemunhas de longa escuta",
+          "Aguardar e documentar sinais de moradores minerais.",
+          "A espera pode ser explorada por quem controla o tempo de trabalho."
+        ]
+      ],
+      "costumes": [
+        [
+          "A pedra não é silenciosa por decreto",
+          "Não considerar a ausência de fala humanoide prova de inércia."
+        ],
+        [
+          "Fissura não é fracasso",
+          "A pessoa decide se sua cicatriz é memória ou dano a reparar."
+        ],
+        [
+          "Cinzel com testemunha",
+          "Intervenções em pedra ambígua exigem registro e contestação."
+        ],
+        [
+          "Tempo da resposta inteira",
+          "A consulta respeita o ritmo dos afetados sem ignorar perigos imediatos."
+        ]
+      ],
+      "pessoas": [
+        [
+          "Vâr Muralha-Cedida",
+          "Habitante mineral cuja superfície poderia servir de passagem",
+          "Decidir como e quando alguém atravessa seu corpo",
+          "Fechar a passagem deixaria vizinhos sem auxílio."
+        ],
+        [
+          "Téssira Fratura-Antiga",
+          "Guardadora de memória mineral",
+          "Preservar cicatrizes históricas sem virar atração",
+          "Os registros podem revelar pontos vulneráveis a exploradores."
+        ],
+        [
+          "Borug Talho-Suspenso",
+          "Escultor gigante visitante proposto",
+          "Construir sem ferir habitantes minerais",
+          "Sua oficina depende de material de extração."
+        ],
+        [
+          "Nima Veio-Miúdo",
+          "Aprendiz de escuta mineral",
+          "Reconhecer diferentes expressões de consciência",
+          "Pode cometer erros de classificação perigosos."
+        ]
+      ],
+      "conflitos": [
+        [
+          "A parede que recusa a fortaleza",
+          "Um projeto militar pretende remover parte do corpo de Vâr.",
+          "Redesenhar, consultar ou obter material não consciente."
+        ],
+        [
+          "A fissura reparada à força",
+          "Téssira não deseja que preencham uma marca histórica.",
+          "Registrar recusa, oferecer reforço reversível ou acompanhar riscos."
+        ],
+        [
+          "Pedra morta, pedra viva",
+          "Refugiados precisam de abrigo onde a rocha aparenta responder.",
+          "Suspender a obra, investigar ou encontrar solução temporária."
+        ]
+      ],
+      "fontes_associadas": [
+        "povoamento:liii:04",
+        "povoamento:xlvi:thargrid-montanhas:01"
+      ],
+      "povos_preexistentes": "Elementais de pedra com organização própria e escultores gigantes propostos",
+      "governo_preexistente": "Conselho de memória mineral que não reconhece automaticamente jurisdição anã",
+      "status": "aprovacao_pendente",
+      "aprovacao_autoral": false,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    }
+  ],
+  "criaturas": [
+    {
+      "id": "criatura:lxi:01",
+      "nome": "Cabra das Cristas Serrilhadas",
+      "ambiente": "terraço",
+      "nicho": "Herbívora de encostas com pasto adequado, não comprovado.",
+      "risco": "Competição por forragem e queda de pedras ao fugir.",
+      "convivencia": "Proteger áreas de alimentação; não presumir domesticação.",
+      "estado": "criatura_candidata",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    },
+    {
+      "id": "criatura:lxi:02",
+      "nome": "Cigarra das Pedras Frias",
+      "ambiente": "terraço",
+      "nicho": "Inseto candidato de frestas, com vocalização sujeita a condições térmicas.",
+      "risco": "Seu canto pode ser confundido com alerta climático infalível.",
+      "convivencia": "Conservar áreas de postura, verificar o vento com instrumentos.",
+      "estado": "criatura_candidata",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    },
+    {
+      "id": "criatura:lxi:03",
+      "nome": "Fungo dos Veios Ocultos",
+      "ambiente": "minerais",
+      "nicho": "Fungo em fraturas úmidas onde haja matéria orgânica, sem extrair magia infinita.",
+      "risco": "A película pode ocultar rachaduras e confundir-se com sinal de consciência.",
+      "convivencia": "Observar antes de limpar material habitado.",
+      "estado": "criatura_candidata",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    },
+    {
+      "id": "criatura:lxi:04",
+      "nome": "Caracol da Junta Clara",
+      "ambiente": "minerais",
+      "nicho": "Pequeno detritívoro de juntas úmidas, sujeito à existência de água.",
+      "risco": "Rastro escorregadio pode ser tratado como defeito de engenharia.",
+      "convivencia": "Reduzir risco de queda preservando pequenos organismos.",
+      "estado": "criatura_candidata",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "interface:lxi:01",
+      "de": "sociedade:lxi:gigantes",
+      "para": "sociedade:lxi:minerais",
+      "hipotese": "Trabalho de fortificação pode competir com integridade de corpos minerais.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "interface:lxi:02",
+      "de": "sociedade:lxi:gigantes",
+      "para": "povoamento:xlvi:thargrid-montanhas:05",
+      "hipotese": "Mediação draconata pode arbitrar honra sem impor o Ordenamento.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "interface:lxi:03",
+      "de": "sociedade:lxi:minerais",
+      "para": "povoamento:xlvi:thargrid-montanhas:01",
+      "hipotese": "Engenharia anã pode negociar material e prazos de consulta.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "interface:lxi:04",
+      "de": "sociedade:lxi:gigantes",
+      "para": "povoamento:lvi:thar-rampa",
+      "hipotese": "Gabaritos da Rampa das Quatro Medidas podem inspirar acessibilidade.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    }
+  ],
+  "limites": [
+    "Não canonizar cidades, organismos ou eventos.",
+    "Não transformar a hierarquia gigante em governo sobre anões ou draconatos.",
+    "A Vila de elementais minerais ainda é proposta; nem toda pedra é senciente.",
+    "Alimentação e reprodução de seres minerais não estão definidas.",
+    "Água, pasto, energia, materiais e estradas não foram localizados.",
+    "Os conflitos são cenas possíveis, não fatos de campanhas.",
+    "Nenhuma rota ou contato das interfaces foi comprovado.",
+    "Não antecipar cosmologia oculta ou segredos de Gualápolis."
+  ]
+}

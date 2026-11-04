@@ -52,6 +52,10 @@ O [dossiê dos mares](docs/CIVILIZACOES_SUBMERSAS_MAR_SANGUE_AGUAS_AZUIS_CICLO59
 
 O [dossiê das duas sociedades sapientes](docs/SOCIEDADES_PINCAS_ONIX_TINTAS_POLVO_CICLO60.md) aprofunda duas comunidades submersas previamente propostas com **8 espaços sociais**, **8 instituições**, **8 ofícios**, **8 costumes**, **8 novos personagens** e **6 conflitos locais**, além de **4 organismos ecológicos candidatos**. [Base em JSON](data/propostas/sociedades-pincas-onix-tintas-polvo-ciclo60.json). **São culturas candidatas sem canonização automática de biologia, habitat, rota ou assentamento.**
 
+## Ciclo LXI — Gigantes e pedra senciente de Thargrid
+
+O [dossiê dos gigantes e seres minerais](docs/SOCIEDADES_GIGANTES_MINERAIS_THARGRID_CICLO61.md) aprofunda **2 comunidades existentes**, **8 espaços**, **8 instituições**, **8 ofícios**, **8 costumes**, **8 pessoas**, **6 conflitos** e **4 organismos ecológicos candidatos**, mantendo [dados estruturados em JSON](data/propostas/sociedades-gigantes-minerais-thargrid-ciclo61.json). Preserva o princípio canônico: o Ordenamento governa gigantes, não todos de Thargrid. Não canoniza assentamentos ou rotas.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
