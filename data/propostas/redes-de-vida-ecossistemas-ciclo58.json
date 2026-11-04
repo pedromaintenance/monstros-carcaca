@@ -1,0 +1,732 @@
+{
+  "schema_version": "1.0",
+  "id": "worldbuilding:ciclo58:redes-ecossistemicas",
+  "titulo": "Ciclo LVIII — Redes de Vida da Carcaça",
+  "data_de_registro": "2026-11-03",
+  "estado": "propostas_de_ecologia_e_sociedade_sem_homologacao",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "altera_bestiario": false,
+  "altera_campanhas": false,
+  "abordagem": "Três modelos regionais, cada um com nós materiais, relações ecológicas condicionais, estados ambientais qualitativos, comunidades existentes e conflitos sociais; nunca inferir proximidade por setor.",
+  "origem": [
+    "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+    "data/propostas/povoamento-regional-lote02-ciclo45.json",
+    "data/propostas/povoamento-ecologia-alem-sul-ciclo54.json",
+    "data/propostas/povoamento-ecologia-eixo-garganta-rio-foz-ciclo52.json",
+    "data/propostas/povoamento-ecologia-thargrid-ironwood-eldroth-ciclo53.json",
+    "data/propostas/carcaca-selvagem-habitats-sazonalidade-ciclo57.json"
+  ],
+  "totais": {
+    "ecossistemas_regionais": 3,
+    "habitats_preexistentes_referenciados": 6,
+    "comunidades_preexistentes_referenciadas": 9,
+    "nos_ecologicos_e_sociais": 18,
+    "nexos_ecologicos_e_sociais_hipoteticos": 18,
+    "estados_ambientais_condicionais": 9,
+    "personagens_trabalhados": 6,
+    "personagens_ineditos": 3,
+    "especies_ineditas": 0,
+    "novas_cidades": 0
+  },
+  "ecossistemas": [
+    {
+      "id": "caatinga",
+      "title": "Caatinga — O pacto entre escamas e lanternas",
+      "elevator": "Um território onde um brilho pode atrair polinizadores, comerciantes ou pessoas desesperadas. A sobrevivência depende de água obtida de verdade, alimento e confiança nos sinais.",
+      "source_habitats": [
+        "habitat:xlvi:01",
+        "habitat:xlvi:02"
+      ],
+      "source_communities": [
+        "povoamento:liv:01",
+        "povoamento:liv:03",
+        "povoamento:xlvi:caatinga:04"
+      ],
+      "landscape": "Mosaico hipotético de substrato pedregoso, abrigos secos e manchas vegetadas; a existência de um único lugar contendo os dois habitats não foi confirmada.",
+      "provenance_guard": "A florada não fornece água. As Cascavéis de Vidro não formam sociedade sapiente. As cactáceas inteligentes da Horta das Sombras Curtas não representam todas as plantas da Caatinga.",
+      "resources": [
+        {
+          "name": "Água e recipientes",
+          "input": "Fontes ou captação ainda desconhecidas, recipientes e tempo de transporte",
+          "use": "Beber, cuidar de pessoas e materiais conforme qualidade verificada",
+          "risk": "Promessas de nascente com base na florada e controle coercitivo da distribuição",
+          "check": "Distinguir origem, uso, disponibilidade real e perdas de água antes de narrar abundância"
+        },
+        {
+          "name": "Flores, sementes e polinizadores",
+          "input": "Plantas hospedeiras e visitantes entomológicos propostos",
+          "use": "Continuidade reprodutiva e observação de fenômeno luminoso",
+          "risk": "Coleta integral para venda de luzes que elimina a próxima geração de flores",
+          "check": "Registrar manchas de florada, visitantes e sementes sem impor estação fixa"
+        },
+        {
+          "name": "Escamas descartadas e presas",
+          "input": "Peles de cascavéis naturalmente abandonadas, lagartos e pequenos roedores hipotéticos",
+          "use": "Artefatos raros de baixo volume, apenas com coleta não lesiva",
+          "risk": "A demanda por escamas incentiva perseguição de serpentes e distúrbio de tocas",
+          "check": "Separar material abandonado de captura, verificar efeito sobre presas"
+        }
+      ],
+      "foodweb": [
+        {
+          "id": "flores",
+          "name": "Flores luminescentes",
+          "role": "produtor_fotossintetico",
+          "grounding": "habitat:xlvi:02",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "insetos",
+          "name": "Insetos visitantes não individualizados",
+          "role": "consumidor_primario_ou_polinizador",
+          "grounding": "habitat:xlvi:02",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "lagartos",
+          "name": "Pequenos lagartos candidatos",
+          "role": "consumidor_insetivoro",
+          "grounding": null,
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "cascavel",
+          "name": "Cascavel de Vidro",
+          "role": "predador",
+          "grounding": "criatura:lvii:01",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "vegetais_sapientes",
+          "name": "Cactáceas conscientes da Horta",
+          "role": "pessoas_vegetais_propostas_nao_recursos",
+          "grounding": "povoamento:liv:03",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "pessoas",
+          "name": "Coletores e famílias residentes",
+          "role": "agentes_sociais",
+          "grounding": "povoamento:liv:01",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        }
+      ],
+      "relations": [
+        {
+          "id": "nexo:lviii:caatinga:01",
+          "from": "flores",
+          "to": "insetos",
+          "detail": "fornece alimento ou sinal atrativo; visitantes podem polinizar",
+          "kind": "hipotese_ecologica",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:caatinga:02",
+          "from": "insetos",
+          "to": "lagartos",
+          "detail": "podem servir de alimento, dependendo de coocorrência",
+          "kind": "hipotese_ecologica",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:caatinga:03",
+          "from": "lagartos",
+          "to": "cascavel",
+          "detail": "podem servir de presa; dieta não é exclusiva",
+          "kind": "hipotese_ecologica",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:caatinga:04",
+          "from": "pessoas",
+          "to": "flores",
+          "detail": "colheita excessiva pode limitar próxima florada",
+          "kind": "tensao_de_uso",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:caatinga:05",
+          "from": "pessoas",
+          "to": "cascavel",
+          "detail": "coleta de escamas pode pressionar tocas",
+          "kind": "tensao_de_uso",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:caatinga:06",
+          "from": "pessoas",
+          "to": "vegetais_sapientes",
+          "detail": "direitos de mudas e necessidade de comida podem entrar em disputa",
+          "kind": "conflito_etico_condicional",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        }
+      ],
+      "states": [
+        {
+          "id": "observacao",
+          "name": "Manchas isoladas",
+          "trigger": "Poucas flores e visitantes identificados em observações locais",
+          "change": "A sobrevivência depende de provisões e da distinção entre água real e boato de fonte",
+          "witness": "Pólen escasso e marcas de caça sem sinal de produção hídrica"
+        },
+        {
+          "id": "florada",
+          "name": "Florada observável",
+          "trigger": "Aumento local de flores luminosas e insetos, se de fato ocorrer",
+          "change": "Coletores e comerciantes tentam orientar circulação; a predação acompanha visitantes",
+          "witness": "Pontos de brilho e insetos, sem que isso determine mês ou chuva"
+        },
+        {
+          "id": "pressao",
+          "name": "Coleta e desconfiança",
+          "trigger": "Remoção intensa de flores ou perseguição às serpentes, caso escolhidas na narrativa",
+          "change": "Diminui a disponibilidade de sementes ou abrigos e cresce conflito sobre apropriação",
+          "witness": "Casulos ausentes, tocas revolvidas e acusações públicas"
+        }
+      ],
+      "actors": [
+        {
+          "id": "pessoa:lviii:caatinga:tamar",
+          "name": "Tamar do Vento Baixo",
+          "source": "uso:lvii:01",
+          "identity": "Observador orc da Roda das Lanternas Apagadas",
+          "wants": "Divulgar quando o brilho não significa água",
+          "needs": "Receber alimento ou pagamento pelo tempo de observação",
+          "risk": "Vender registros a um intermediário que os converta em publicidade falsa",
+          "situacao": "proposta_nao_canonica"
+        },
+        {
+          "id": "pessoa:lviii:caatinga:akra",
+          "name": "Akra da Cerâmica Rachada",
+          "source": null,
+          "identity": "Oleira goblin proposta do Conselho das Sete Cumbucas",
+          "wants": "Criar marcas de proveniência para recipientes comunitários",
+          "needs": "Argila, combustível e proteção para aprendizes; fontes ainda indefinidas",
+          "risk": "Marcar recipientes pode abrir caminho a fiscalização coercitiva da distribuição",
+          "situacao": "proposta_nao_canonica"
+        }
+      ],
+      "pressure": {
+        "problem": "Uma promessa de água foi anunciada a partir de uma florada que nunca foi evidência de nascente.",
+        "winners_if_unchecked": "Intermediário que vende a falsa promessa e quem monopoliza recipientes",
+        "exposed": "Viajantes sem reserva, crianças, cuidadores e famílias que deixaram outros abrigos",
+        "response_choices": [
+          "Verificar água e publicar a incerteza com risco de perder remuneração",
+          "Criar gestão de recipientes sob controle comunitário com garantia de acesso",
+          "Proteger a florada sem proibir injustamente toda coleta de subsistência"
+        ],
+        "consequence_if_ignored": "Mais pessoas se deslocam confiando em sinais falsos, aumentando competição por recursos realmente disponíveis."
+      },
+      "scene": "Uma criança traz um punhado de pétalas luminosas ao Conselho. Um comerciante jura que isso prova a existência de um poço. Tamar nega, mas deve dinheiro a ele; Akra teme que a discussão termine com o confisco das cumbucas.",
+      "habitats": [
+        {
+          "id_fonte": "habitat:xlvi:01",
+          "nome": "Território das Cascavéis de Vidro",
+          "estado_original": "proposta_nao_homologada"
+        },
+        {
+          "id_fonte": "habitat:xlvi:02",
+          "nome": "Florada das Lanternas Secas",
+          "estado_original": "proposta_nao_homologada"
+        }
+      ],
+      "comunidades": [
+        {
+          "id_fonte": "povoamento:liv:01",
+          "nome": "Conselho das Sete Cumbucas",
+          "estado_original": "proposta_nao_homologada"
+        },
+        {
+          "id_fonte": "povoamento:liv:03",
+          "nome": "A Horta das Sombras Curtas",
+          "estado_original": "proposta_nao_homologada"
+        },
+        {
+          "id_fonte": "povoamento:xlvi:caatinga:04",
+          "nome": "Ferro e Capim Quebrado",
+          "estado_original": "proposta_nao_homologada"
+        }
+      ],
+      "status": "sistema_regional_hipotetico_nao_cartografado",
+      "coocorrencia_comprovada": false,
+      "cadeia_alimentar_observada": false,
+      "estacoes_e_datas_fixas": false
+    },
+    {
+      "id": "rio",
+      "title": "Rio Ancestral — O leito, o barro e as aves cegas",
+      "elevator": "A margem não é uma coisa só: conchas filtram partículas, garças ocupam espaços de cria, horticultores dependem do solo e autoridades tentam transformar riscos em tributos.",
+      "source_habitats": [
+        "ecologia:xlv:01",
+        "ecologia:xlv:02"
+      ],
+      "source_communities": [
+        "ciclo52:comunidade:r-greda",
+        "ciclo52:comunidade:r-toldas",
+        "ciclo52:comunidade:r-sinos"
+      ],
+      "landscape": "Possíveis micro-habitats distintos ao longo do Rio Ancestral; não está demonstrado que o leito de conchas, os ninhos e as comunidades citadas estejam próximos.",
+      "provenance_guard": "Filtração não implica potabilidade. Garças são aves propostas, não observadoras sobrenaturais infalíveis. A Assembleia da Greda Escura é povo sapiente, não um depósito de matéria-prima.",
+      "resources": [
+        {
+          "name": "Sedimentos e argila",
+          "input": "Depositos de margem de características não medidas",
+          "use": "Habitação e cerâmica condicionais, além de possível cultivo de margem",
+          "risk": "Extração degrada habitat de indivíduos da Greda e margens de outros seres",
+          "check": "Diferenciar corpo sapiente, área de habitat, material retirável e efeitos da escavação"
+        },
+        {
+          "name": "Água e alimentos de margem",
+          "input": "Água de qualidade desconhecida, solo disponível e sementes guardadas",
+          "use": "Horticultura e consumo apenas com tratamento ou verificação",
+          "risk": "Perda de safra ou alteração do leito vira cobrança de imposto sobre alimento inexistente",
+          "check": "Registrar nível observado, perdas e reservas de semente, não inventar vazão ou safra"
+        },
+        {
+          "name": "Conchas, aves e sinais",
+          "input": "Moluscos hipotéticos, aves e presas dependentes de habitats apropriados",
+          "use": "Observar mudança ecológica e alertar trabalhadores",
+          "risk": "Conchas como prova comercial de pureza; ninhos como justificativa de ocupação territorial",
+          "check": "Separar sinal de inferência e observar se os dois habitats de fato coexistem"
+        }
+      ],
+      "foodweb": [
+        {
+          "id": "particulas",
+          "name": "Partículas orgânicas suspensas",
+          "role": "materia_organica",
+          "grounding": null,
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "molusco",
+          "name": "Molusco de Vidro",
+          "role": "filtrador",
+          "grounding": "criatura:lvii:05",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "microfauna",
+          "name": "Pequenos consumidores aquáticos não definidos",
+          "role": "presa_possivel",
+          "grounding": null,
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "garca",
+          "name": "Garças Cegas",
+          "role": "predador_aereo_proposto",
+          "grounding": "ecologia:xlv:02",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "plantio",
+          "name": "Hortas e sementes das Toldas",
+          "role": "pratica_agricola_humana",
+          "grounding": "ciclo52:comunidade:r-toldas",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "greda",
+          "name": "Assembleia da Greda Escura",
+          "role": "comunidade_sapiente",
+          "grounding": "ciclo52:comunidade:r-greda",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        }
+      ],
+      "relations": [
+        {
+          "id": "nexo:lviii:rio:01",
+          "from": "particulas",
+          "to": "molusco",
+          "detail": "podem servir de substrato alimentar à filtração",
+          "kind": "hipotese_ecologica",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:rio:02",
+          "from": "microfauna",
+          "to": "garca",
+          "detail": "poderia servir de presa onde as aves de fato nidificam",
+          "kind": "hipotese_ecologica",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:rio:03",
+          "from": "molusco",
+          "to": "greda",
+          "detail": "retirada de conchas e alteração do leito pode provocar conflito de habitat se houver sobreposição",
+          "kind": "tensao_de_uso_condicional",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:rio:04",
+          "from": "plantio",
+          "to": "greda",
+          "detail": "horticultura e retirada de argila podem afetar o mesmo sedimento se forem vizinhas",
+          "kind": "hipotese_funcional_sem_vizinhanca",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:rio:05",
+          "from": "garca",
+          "to": "plantio",
+          "detail": "mudança dos ninhos pode ser observada, mas não é medidor comprovado do nível do rio",
+          "kind": "indicador_incerto",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:rio:06",
+          "from": "molusco",
+          "to": "plantio",
+          "detail": "chamar a água de pura por ver conchas pode expor famílias a riscos",
+          "kind": "risco_de_inferencia",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        }
+      ],
+      "states": [
+        {
+          "id": "margem_observavel",
+          "name": "Margem em observação",
+          "trigger": "Marcas de água, aves e conchas disponíveis para comparação local",
+          "change": "Cuidadores podem revisar uso de solo e água sem garantir travessias",
+          "witness": "Registros concordantes ou discordantes entre testemunhas"
+        },
+        {
+          "id": "alteracao",
+          "name": "Mudança no leito",
+          "trigger": "Variação observada de sedimento ou água; evento não necessariamente periódico",
+          "change": "Aumenta pressão sobre horticultura, tocas e ninhos onde se sobrepuserem",
+          "witness": "Conchas soterradas, barro deslocado ou ninhos inacessíveis apenas como possibilidades"
+        },
+        {
+          "id": "negociacao",
+          "name": "Disputa por recuperação",
+          "trigger": "Depois de perdas, caso ocorram, grupos negociam reconstrução e impostos",
+          "change": "É possível escolher entre restaurar margens e cobrar perdas como se fossem produção",
+          "witness": "Contabilidade divergente de sementes, sedimentos e equipamentos"
+        }
+      ],
+      "actors": [
+        {
+          "id": "pessoa:lviii:rio:mara",
+          "name": "Mara Concha-Opaca",
+          "source": "uso:lvii:04",
+          "identity": "Observadora humana da Mesa das Marcas do Leito",
+          "wants": "Manter registros que expressem incerteza sobre a água",
+          "needs": "Ferramentas de observação e reconhecimento de seu trabalho",
+          "risk": "Perder credibilidade ao recusar anunciar uma água milagrosamente pura",
+          "situacao": "proposta_nao_canonica"
+        },
+        {
+          "id": "pessoa:lviii:rio:delo",
+          "name": "Délo Barro-Contado",
+          "source": null,
+          "identity": "Horticultor goblin proposto das Toldas da Última Colheita",
+          "wants": "Guardar sementes antes de satisfazer fiscais",
+          "needs": "Um acordo de uso do solo que não destrua o habitat da Greda",
+          "risk": "Usar o registro de perdas para reivindicar sozinho uma margem comunitária",
+          "situacao": "proposta_nao_canonica"
+        }
+      ],
+      "pressure": {
+        "problem": "Uma cobrança é calculada sobre colheitas que não nasceram, enquanto agentes vendem água supostamente purificada pelas conchas.",
+        "winners_if_unchecked": "Fiscais e intermediários que transferem o risco ambiental para famílias sem reservas",
+        "exposed": "Famílias das Toldas, aprendizes de ofício, indivíduos da Greda e barqueiros sem capital",
+        "response_choices": [
+          "Registrar perdas com testemunhas sem expor listas de refugiados",
+          "Negociar retirada de sedimento com consentimento de possíveis moradores da Greda",
+          "Separar indicadores ecológicos de alegações sobre água potável"
+        ],
+        "consequence_if_ignored": "Sementes são tomadas para pagar imposto e danos ao leito tornam a próxima tentativa de cultivo mais incerta."
+      },
+      "scene": "Mara registra conchas opacas após uma alteração no leito. Délo mostra um saco de sementes reservado ao replantio. Um fiscal insiste que ambos comprovam uma safra escondida, enquanto representantes da Greda denunciam retirada de barro.",
+      "habitats": [
+        {
+          "id_fonte": "ecologia:xlv:01",
+          "nome": "Leito das Conchas de Vidro",
+          "estado_original": "proposta_nao_homologada"
+        },
+        {
+          "id_fonte": "ecologia:xlv:02",
+          "nome": "Ninhos de Barro das Garças Cegas",
+          "estado_original": "proposta_nao_homologada"
+        }
+      ],
+      "comunidades": [
+        {
+          "id_fonte": "ciclo52:comunidade:r-greda",
+          "nome": "Assembleia da Greda Escura",
+          "estado_original": "proposta_nao_homologada"
+        },
+        {
+          "id_fonte": "ciclo52:comunidade:r-toldas",
+          "nome": "As Toldas da Última Colheita",
+          "estado_original": "proposta_nao_homologada"
+        },
+        {
+          "id_fonte": "ciclo52:comunidade:r-sinos",
+          "nome": "Casa dos Sinos sem Badalo",
+          "estado_original": "proposta_nao_homologada"
+        }
+      ],
+      "status": "sistema_regional_hipotetico_nao_cartografado",
+      "coocorrencia_comprovada": false,
+      "cadeia_alimentar_observada": false,
+      "estacoes_e_datas_fixas": false
+    },
+    {
+      "id": "eldroth",
+      "title": "Eldroth — A memória que cresce nas cinzas",
+      "elevator": "Uma floresta ocupada em que madeira resistente a fogo, fungos, besouros e habitantes deslocados disputam os limites entre conservação, abrigo e exploração.",
+      "source_habitats": [
+        "ecologia:xlv:06",
+        "ecologia:xlv:09"
+      ],
+      "source_communities": [
+        "povoamento:liii:09",
+        "povoamento:liii:10",
+        "povoamento:liii:12"
+      ],
+      "landscape": "Manchas de mata em decomposição ou atingidas por fogo; não se presumem adjacentes às ruínas de Vandar, nem rotas seguras entre comunidades.",
+      "provenance_guard": "A Madeira que Recusa o Fogo não é imune a qualquer chama, nem espécie controlada por Sylara. Besouros que fazem marcas não escrevem língua Yokai. Miconídeos e aranhas sapientes possuem agência própria.",
+      "resources": [
+        {
+          "name": "Madeira morta, fungos e húmus",
+          "input": "Troncos caídos, umidade local e tempo de decomposição",
+          "use": "Reciclagem de matéria e possível cultivo, sujeito a consentimento das comunidades",
+          "risk": "Retirar madeira viva como combustível destrói ninhos e pode apagar lugares de memória",
+          "check": "Distinguir árvore viva, tronco caído, estrutura habitada e memorial antes de cortar"
+        },
+        {
+          "name": "Ervas e material de cuidado",
+          "input": "Plantas com eficácia desconhecida e trabalhadores de cura clandestina",
+          "use": "Tratamento condicional e observação de pacientes",
+          "risk": "Promessas de cura garantida; exposição de refúgios pela busca de plantas",
+          "check": "Registrar espécie, origem, efeitos observados e risco de recolha, sem poderes automáticos"
+        },
+        {
+          "name": "Registros e sinais na casca",
+          "input": "Marcas naturais de besouros, inscrições humanas antigas e memórias locais",
+          "use": "Distinguir sinais intencionais de atividade de decompositores",
+          "risk": "Patrulhas usam o padrão de besouros como acusação de resistência",
+          "check": "Comparar vários troncos com testemunhas sem revelar localização de famílias"
+        }
+      ],
+      "foodweb": [
+        {
+          "id": "madeira_morta",
+          "name": "Madeira morta e cascas",
+          "role": "materia_organica",
+          "grounding": "ecologia:xlv:06",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "besouro",
+          "name": "Besouro Escriba",
+          "role": "fragmentador_de_materia",
+          "grounding": "criatura:lvii:06",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "fungo",
+          "name": "Fungos e decompositores",
+          "role": "decompositor",
+          "grounding": "ecologia:xlv:06",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "solo",
+          "name": "Solo com matéria devolvida",
+          "role": "recurso_do_ambiente",
+          "grounding": null,
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "aracnideos",
+          "name": "Aranhas sapientes do Casulo",
+          "role": "comunidade_sapiente_nao_recurso",
+          "grounding": "povoamento:liii:09",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        },
+        {
+          "id": "miconideos",
+          "name": "Miconídeos da Horta dos Anéis de Cinza",
+          "role": "comunidade_sapiente_nao_recurso",
+          "grounding": "povoamento:liii:10",
+          "status": "modelo_funcional_nao_ocorrencia_confirmada"
+        }
+      ],
+      "relations": [
+        {
+          "id": "nexo:lviii:eldroth:01",
+          "from": "madeira_morta",
+          "to": "besouro",
+          "detail": "serve como substrato e possível recurso alimentar",
+          "kind": "hipotese_ecologica",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:eldroth:02",
+          "from": "besouro",
+          "to": "fungo",
+          "detail": "fragmentação pode facilitar decomposição",
+          "kind": "hipotese_ecologica",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:eldroth:03",
+          "from": "fungo",
+          "to": "solo",
+          "detail": "decomposição pode devolver nutrientes ao substrato",
+          "kind": "hipotese_ecologica",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:eldroth:04",
+          "from": "aracnideos",
+          "to": "besouro",
+          "detail": "poderia haver disputa ou observação de insetos, não caça estabelecida",
+          "kind": "hipotese_condicional",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:eldroth:05",
+          "from": "miconideos",
+          "to": "madeira_morta",
+          "detail": "cultivo e preservação de memória podem disputar madeira",
+          "kind": "conflito_de_uso",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        },
+        {
+          "id": "nexo:lviii:eldroth:06",
+          "from": "aracnideos",
+          "to": "miconideos",
+          "detail": "as duas sociedades não partilham necessariamente linguagem, valores ou localização",
+          "kind": "limite_de_inferencia",
+          "status": "interacao_condicional_nao_observada",
+          "implica_contato_geografico": false
+        }
+      ],
+      "states": [
+        {
+          "id": "cobertura",
+          "name": "Cobertura protegida",
+          "trigger": "Madeira caída e decompositores podem agir sem remoção intensa",
+          "change": "O solo recebe matéria e refugiados podem observar processos sem cortar tudo",
+          "witness": "Sulcos naturais e fungos em madeira caída"
+        },
+        {
+          "id": "ruptura",
+          "name": "Pressão de fogo ou extração",
+          "trigger": "Queimada, corte ou retirada de substrato caso ocorra na história",
+          "change": "Abrigos de insetos, memória material e materiais de cura podem ser perdidos",
+          "witness": "Troncos queimados, fuga de pequenos animais e marcas difíceis de ler"
+        },
+        {
+          "id": "retomada",
+          "name": "Regeneração disputada",
+          "trigger": "Após perturbação, se houver condições ambientais de recuperação",
+          "change": "Refugiados, miconídeos, aranhas e curadores disputam uso e preservação",
+          "witness": "Fungos em fragmentos, novos brotos onde possível e ausência de antigos suportes"
+        }
+      ],
+      "actors": [
+        {
+          "id": "pessoa:lviii:eldroth:selva",
+          "name": "Selva Nó-de-Cinza",
+          "source": "uso:lvii:05",
+          "identity": "Guardadora elfa do Marco das Cascas Não Queimadas",
+          "wants": "Preservar memória e recuperar habitats",
+          "needs": "Proteger testemunhas e evitar que registros tragam patrulhas",
+          "risk": "Esconder toda evidência e deixar que o poder da Corte reescreva o passado",
+          "situacao": "proposta_nao_canonica"
+        },
+        {
+          "id": "pessoa:lviii:eldroth:muer",
+          "name": "Muer do Anel Partido",
+          "source": null,
+          "identity": "Miconídeo proposto da Horta dos Anéis de Cinza",
+          "wants": "Reservar madeira caída à decomposição e a possíveis cultivos",
+          "needs": "Habitat adequado e consentimento para negociar com visitantes",
+          "risk": "Desconsiderar que uma viga em decomposição também pode ser abrigo ou memorial de alguém",
+          "situacao": "proposta_nao_canonica"
+        }
+      ],
+      "pressure": {
+        "problem": "Uma patrulha trata os sulcos produzidos por besouros como código de refugiados e exige destruir os troncos.",
+        "winners_if_unchecked": "Ocupantes que transformam indícios naturais em pretexto de vigilância",
+        "exposed": "Refugiados, curadores, miconídeos e animais decompositores sem defesa militar",
+        "response_choices": [
+          "Comparar cascas de árvores desabitadas para demonstrar padrão natural sem revelar refúgios",
+          "Salvar registros históricos sem sacrificar todo o substrato de decomposição",
+          "Negociar a retirada de madeira de construções ameaçadas com quem delas depende"
+        ],
+        "consequence_if_ignored": "Queimas e remoções reduzem habitat e multiplicam as suspeitas sobre quem tenta conservar a floresta."
+      },
+      "scene": "Uma árvore calcinada continua erguida. Soldados apontam suas marcas como prova de mensagem rebelde. Selva reconhece que os sulcos vieram de insetos; Muer afirma que a remoção do tronco destruirá parte do cultivo — mas nenhum dos dois deseja entregar a localização do outro.",
+      "habitats": [
+        {
+          "id_fonte": "ecologia:xlv:06",
+          "nome": "Raízes dos Besouros Escribas",
+          "estado_original": "proposta_nao_homologada"
+        },
+        {
+          "id_fonte": "ecologia:xlv:09",
+          "nome": "Madeira que Recusa o Fogo",
+          "estado_original": "proposta_nao_homologada"
+        }
+      ],
+      "comunidades": [
+        {
+          "id_fonte": "povoamento:liii:09",
+          "nome": "O Casulo das Sete Vigílias",
+          "estado_original": "proposta_nao_homologada"
+        },
+        {
+          "id_fonte": "povoamento:liii:10",
+          "nome": "Horta dos Anéis de Cinza",
+          "estado_original": "proposta_nao_homologada"
+        },
+        {
+          "id_fonte": "povoamento:liii:12",
+          "nome": "Sala de Vigília das Ervas sem Sombra",
+          "estado_original": "proposta_nao_homologada"
+        }
+      ],
+      "status": "sistema_regional_hipotetico_nao_cartografado",
+      "coocorrencia_comprovada": false,
+      "cadeia_alimentar_observada": false,
+      "estacoes_e_datas_fixas": false
+    }
+  ],
+  "avisos": [
+    "Os habitats e comunidades citados não têm coocorrência, vizinhança ou relação comercial geograficamente comprovada.",
+    "Um arco de interação é hipótese de funcionamento se os seres e lugares compartilharem um ambiente, não uma ocorrência canonizada.",
+    "Estados ambientais são transições possíveis, não calendários, previsões ou resultados obrigatórios.",
+    "A qualidade da água, a quantidade de alimentos, a distância e a população não foram fixadas.",
+    "Cactáceas e aranhas conscientes, miconídeos e povo anfíbio são pessoas propostas; não recursos ou monstros coletivos.",
+    "Nenhum organismo ou NPC revela segredos cosmológicos ou respostas da campanha de Shadar-Riverie.",
+    "Não criar espécies ou cidades novas só para completar a rede; os nós genéricos são grupos funcionais sem taxonomia aprovada."
+  ],
+  "proxima_decisao_editorial": "Selecionar uma região candidata para revisão de fontes e eventual aprovação de relações locais; homologar primeiro a paisagem e relações de recurso, depois espécies e assentamentos."
+}

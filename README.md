@@ -40,6 +40,10 @@ O [dossiê de microterritórios](docs/MICROTERRITORIOS_OFICIOS_ECOLOGIA_CICLO56.
 
 O [dossiê de ecossistemas e sazonalidade](docs/CARCACA_SELVAGEM_HABITATS_SAZONALIDADE_CICLO57.md) aprofunda **10 habitats preexistentes**, propõe **6 pontos temporários de observação e memória com 6 moradores candidatos** e detalha **8 organismos derivados de habitats anteriores**. [Base JSON](data/propostas/carcaca-selvagem-habitats-sazonalidade-ciclo57.json). Sem canonização automática, novas cidades ou rotas.
 
+## Ciclo LVIII — Redes de Vida: Caatinga, Rio Ancestral e Eldroth
+
+O [dossiê de três ecossistemas](docs/REDES_DE_VIDA_ECOSSISTEMAS_CICLO58.md) conecta **6 habitats** e **9 comunidades já propostas** por meio de **18 nexos funcionais**, **9 estados ambientais condicionais** e **6 personagens** (três reutilizados). [Dados em JSON](data/propostas/redes-de-vida-ecossistemas-ciclo58.json). **Sem novas cidades, espécies ou ocorrências canonizadas; nenhuma proximidade é inferida pela pertença ao mesmo setor.**
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
