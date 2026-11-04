@@ -1,0 +1,560 @@
+{
+  "schema_version": "1.0",
+  "id": "worldbuilding:ciclo60:duas-sociedades-nao-humanoides",
+  "titulo": "Ciclo LX — Berçário das Pinças de Ônix e Vila das Tintas de Polvo",
+  "registrado_em": "2026-11-03",
+  "estado": "propostas_nao_canonizadas",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "altera_campanhas": false,
+  "fontes": [
+    "data/propostas/povoamento-insular-submerso-cauda-ciclo47.json",
+    "data/propostas/povoamento-ecologia-alem-sul-ciclo54.json",
+    "data/propostas/civilizacoes-submersas-mar-sangue-aguas-azuis-ciclo59.json",
+    "data/propostas/mar-sangue-ecologia-politica-hack.json",
+    "data/propostas/mar-sangue-economia-hack.json",
+    "data/taxonomia_carcaca.json"
+  ],
+  "totais": {
+    "sociedades_aprofundadas": 2,
+    "assentamentos_novos": 0,
+    "espacos_sociais_candidatos": 8,
+    "instituicoes_candidatas": 8,
+    "oficios_aprofundados": 8,
+    "costumes_candidatos": 8,
+    "personagens_novos": 8,
+    "conflitos_sociais": 6,
+    "organismos_ecologicos_candidatos": 4,
+    "relacoes_comparativas_nao_confirmadas": 2
+  },
+  "sociedades": [
+    {
+      "id": "povo:lx:pinças",
+      "nome": "Povo das Pinças de Ônix",
+      "assentamento_id": "comunidade:xlvii:submersa:04",
+      "titulo": "A geração não é tributo",
+      "meio": "Mar de Sangue — habitat bentônico proposto, sem coordenadas nem profundidade",
+      "eixo": "As relações de cuidado com descendentes e de reparo dos abrigos organizam o poder. Quem garante a sobrevivência coletiva pode exigir voz, sem que toda liderança corresponda a idade, força ou tamanho da pinça.",
+      "biologia": {
+        "estado": "Hipóteses anatômicas de uma espécie inventada; nada homologado sobre reprodução ou duração da vida.",
+        "morfologia": "Corpo crustáceo com carapaça segmentada e apêndices capazes de manipular objetos delicados — proposta, não descrição canônica. Não obrigar a forma de caranguejo comum.",
+        "respiracao": "Regime de respiração aquática proposto; tolerância a ambientes emersos, profundidade e salinidade não definidas.",
+        "reproducao": "Há ovos e descendentes nos rascunhos, mas incubação, cuidado parental, larvas e desenvolvimento direto seguem alternativas abertas. A proteção comunitária existe como proposta cultural, não dedução automática da biologia.",
+        "crescimento": "Mudas de exoesqueleto são uma hipótese fértil: em vez de graduar cidadania por carapaça, a comunidade poderia tratar indivíduos em muda como pessoas temporariamente vulneráveis.",
+        "ciclo_vida": "Não assumir temporada anual de postura, taxa de mortalidade ou tamanho de ninhada.",
+        "alimentacao": "Detritos orgânicos, pequenos organismos bentônicos e coleta seletiva como possibilidades; nenhuma dessas opções garante produção alimentar suficiente."
+      },
+      "espacos": [
+        {
+          "id": "anel",
+          "nome": "Anel das Mudas",
+          "funcao": "Abrigo de convalescença e repouso para quem atravessa trocas de carapaça, se esse mecanismo for escolhido.",
+          "material": "Conchas abandonadas, suportes minerais e isolamento de correntes; origem dos suportes não confirmada.",
+          "custo": "Trabalho de reparação e disponibilidade de espaços sem sobrelotação."
+        },
+        {
+          "id": "conchas",
+          "nome": "Galeria das Conchas Cedidas",
+          "funcao": "Habitações comunais de cascos e conchas vazios, conforme proposta original.",
+          "material": "Estruturas recuperadas com procedência e sem retirada forçada de habitantes.",
+          "custo": "A demanda por abrigo pode incentivar expropriação de materiais de outras espécies."
+        },
+        {
+          "id": "vigia",
+          "nome": "Vão dos Ovos Guardados",
+          "funcao": "Área de cuidado e acompanhamento dos descendentes se a postura comunitária for homologada.",
+          "material": "Substrato adequado cuja composição, temperatura e circulação precisam ser definidos.",
+          "custo": "Quem presta cuidado perde tempo para coleta de alimento e reparos."
+        },
+        {
+          "id": "pedra",
+          "nome": "Pedra da Promessa Curta",
+          "funcao": "Espaço ritual de pactos temporários e registro público de consentimento.",
+          "material": "Pedra com marcas táteis propostas; comunicação inteligível para visitantes ainda não estabelecida.",
+          "custo": "Um registro pode ser manipulado pela autoridade que controla sua leitura."
+        }
+      ],
+      "instituicoes": [
+        {
+          "id": "assembleia",
+          "nome": "Conselho das Pinças Abertas",
+          "composicao": "Cuidadores, reparadores e representantes de descendentes; critério exato de participação ainda proposto.",
+          "competencia": "Revisar uso de abrigos e obrigações comunitárias sem soberania sobre todo o mar.",
+          "contrapeso": "Uma pessoa diretamente afetada pode requerer adiamento de pacto que comprometa o próprio corpo ou família."
+        },
+        {
+          "id": "cuidado",
+          "nome": "Roda dos Guardadores de Postura",
+          "composicao": "Pessoas que realizam o trabalho de cuidado, não necessariamente apenas progenitores.",
+          "competencia": "Definir repouso, proteção e escala de trabalho com descendentes.",
+          "contrapeso": "Não vender crias como tributo e não falar em nome de indivíduos que possam expressar vontade."
+        },
+        {
+          "id": "materiais",
+          "nome": "Ofício das Conchas Devolvidas",
+          "composicao": "Reparadores, coletores e observadores de procedência.",
+          "competencia": "Rastrear a reutilização de conchas vazias e peças de abrigo.",
+          "contrapeso": "Direito de contestação quando há suspeita de concha ainda ocupada."
+        },
+        {
+          "id": "pacto",
+          "nome": "Testemunhas do Prazo Quebrável",
+          "composicao": "Intérpretes e testemunhas escolhidas em cada acordo, como hipótese cultural.",
+          "competencia": "Diferenciar proteção real, taxa e dívida; permitir término explícito de contrato.",
+          "contrapeso": "Nenhum pacto coletivo transforma ovos, parentes ou descendentes em penhor."
+        }
+      ],
+      "oficios": [
+        {
+          "nome": "Cuidadores de muda",
+          "processo": "Limpar abrigo, acompanhar vulneráveis e registrar necessidades.",
+          "material": "Abrigo e tempo de cuidado.",
+          "risco": "Sobrecarga de quem não recebe provisões suficientes."
+        },
+        {
+          "nome": "Coletores bentônicos",
+          "processo": "Selecionar detritos, pequenos animais e recursos autorizados.",
+          "material": "Habitats de coleta não localizados.",
+          "risco": "Confundir organismos sapientes com fauna ou consumir estoques reprodutivos."
+        },
+        {
+          "nome": "Reparadores de casco",
+          "processo": "Fixar peças descartadas e testar estabilidade de casas.",
+          "material": "Conchas vazias, minerais, fixadores de origem desconhecida.",
+          "risco": "Propriedade das casas concentrar poder sobre moradores."
+        },
+        {
+          "nome": "Intérpretes de pacto",
+          "processo": "Registrar reciprocidade, prazo e consentimento na negociação entre povos.",
+          "material": "Marcas táteis e testemunhos, tradução ainda em aberto.",
+          "risco": "Serem coagidos a validar tributos sob ameaça."
+        }
+      ],
+      "costumes": [
+        {
+          "nome": "Pinça pousada",
+          "sentido": "Hipótese de sinal de suspensão de disputa: abaixar apêndices antes de discutir decisões sobre vulneráveis.",
+          "limite": "Não definir como reflexo instintivo universal."
+        },
+        {
+          "nome": "Concha com procedência",
+          "sentido": "Moradores poderiam preservar a história de um abrigo reaproveitado.",
+          "limite": "Inscrição não prova posse de todos os ocupantes anteriores."
+        },
+        {
+          "nome": "Muda não é dívida",
+          "sentido": "Uma pausa de trabalho durante mudança corporal não se converteria em dívida vitalícia.",
+          "limite": "Costume em disputa, não lei canônica."
+        },
+        {
+          "nome": "Ovos fora da negociação",
+          "sentido": "Em um pacto, descendentes não podem ser representados como mercadoria.",
+          "limite": "Princípio político candidato contestado por representantes de Daegon."
+        }
+      ],
+      "ecologia": [
+        {
+          "origem": "habitat:xlvii:06",
+          "nome": "Berçário das Ovas sem Lua",
+          "relacao": "Comparação ecológica, não a mesma creche: o habitat é de peixes e anfíbios não sapientes.",
+          "contato_confirmado": false
+        },
+        {
+          "origem": "criatura:lix:06",
+          "nome": "Camarão das Ovas Abandonadas",
+          "relacao": "Detritívoro candidato de ninhadas animais, não criatura que ataca por definição os ovos do povo.",
+          "contato_confirmado": false
+        }
+      ],
+      "personagens": [
+        {
+          "id": "mava",
+          "nome": "Mava Sete-Mudas",
+          "papel": "Cuidora de indivíduos em convalescença",
+          "quer": "Garantir repouso sem perder a capacidade de alimentar a comunidade",
+          "contradicao": "Aceita ajuda de uma autoridade que poderá exigir favores em troca."
+        },
+        {
+          "id": "orkel",
+          "nome": "Orkel Concha-Cedida",
+          "papel": "Reparador de habitações",
+          "quer": "Manter as conchas vazias disponíveis para todos",
+          "contradicao": "Defende marcas de propriedade para evitar saque, criando exclusão de recém-chegados."
+        },
+        {
+          "id": "draun",
+          "nome": "Draun do Prazo Curto",
+          "papel": "Testemunha de acordos",
+          "quer": "Impedir que proteção se torne cativeiro",
+          "contradicao": "Sua assinatura já aparece num pacto que não soube traduzir completamente."
+        },
+        {
+          "id": "sezri",
+          "nome": "Sezri Pinça-Fechada",
+          "papel": "Jovem cuidadora de posturas",
+          "quer": "Ser reconhecida como parte da decisão comunitária",
+          "contradicao": "Um conselho a considera inexperiente, mas depende de seu conhecimento cotidiano."
+        }
+      ],
+      "tensoes": [
+        {
+          "nome": "A próxima postura",
+          "problema": "Uma autoridade de Daegon exige ovos como proteção de dívida.",
+          "sujeitos": "Cuidadores, representantes de culto e habitantes que dependem de segurança.",
+          "desfecho_aberto": "Renegociar proteção, denunciar pacto ou assumir risco de enfrentar cobrança.",
+          "nao_ocorreu": true
+        },
+        {
+          "nome": "Conchas sem dono",
+          "problema": "Uma moradia é feita com concha cuja procedência é contestada.",
+          "sujeitos": "Reparadores, moradores e possíveis donos anteriores.",
+          "desfecho_aberto": "Restituir, compartilhar ou examinar a origem antes da obra.",
+          "nao_ocorreu": true
+        },
+        {
+          "nome": "Tempo de mudar",
+          "problema": "Cuidadores param de coletar alimento para proteger indivíduos em muda.",
+          "sujeitos": "Coletoras, jovens e vizinhos sem reserva.",
+          "desfecho_aberto": "Distribuir trabalho e recursos sem castigar pessoas biologicamente vulneráveis.",
+          "nao_ocorreu": true
+        }
+      ],
+      "perguntas_autorais": [
+        "Forma e diversidade anatômica concreta deste povo",
+        "Modo de respiração, profundidade e possível tolerância à emersão",
+        "Se muda e desenvolvimento larval estão presentes e quanto duram",
+        "Como uma pessoa jovem manifesta consentimento e quem cuida de ovos",
+        "Quais alimentos e materiais são efetivamente disponíveis"
+      ],
+      "horizonte": "A comunidade poderá ter disputas internas mesmo que nenhuma autoridade de Daegon a alcance fisicamente.",
+      "assentamento_nome": "O Berçário das Pinças de Ônix",
+      "fonte_ciclo59": "comunidade:lix:03",
+      "modo_de_habitar_anterior": "Conjunto de cascos e conchas habitados como casas comunitárias",
+      "tensao_politica_anterior": "Representantes de Daegon pretendem usar ovos como pagamento de proteção",
+      "status": "sociedade_proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_com_outra_sociedade_confirmado": false
+    },
+    {
+      "id": "povo:lx:tintas",
+      "nome": "Povo das Tintas de Polvo",
+      "assentamento_id": "comunidade:xlvii:submersa:10",
+      "titulo": "Uma língua não é uma arma de domínio público",
+      "meio": "Águas Azuis — zona recifal proposta, sem coordenadas e sem garantia de iluminação uniforme.",
+      "eixo": "A memória dos abrigos e a linguagem por mudança de cor podem formar a base de uma política do consentimento. A autonomia é coletiva e individual; um conselho não autoriza traduzir toda fala privada.",
+      "biologia": {
+        "estado": "Hipóteses para cefalópodes sapientes fictícios; não importar automaticamente ciclo de vida dos polvos reais.",
+        "morfologia": "Braços manipuladores, ventosas e mudança de cor e textura como possibilidades inspiradas em polvos; padrões de pele não equivalem necessariamente a letras.",
+        "respiracao": "Vida aquática proposta; temperatura, profundidade, salinidade e tempo em emersão não foram descritos.",
+        "reproducao": "Postura, parentesco e duração da infância continuam abertos. A eventual vida curta de certos polvos reais não fixa a longevidade desses seres fantásticos.",
+        "crescimento": "A aprendizagem pode associar gestos, textura, cor e memória espacial, sem uma escola idêntica à humana.",
+        "ciclo_vida": "Não assumir morte dos cuidadores após reprodução, idade adulta aos poucos anos nem tamanho de postura.",
+        "alimentacao": "Predação de pequenos animais não sapientes e eventual manejo de habitat como hipóteses; distinguir crustáceos sapientes de outros animais, sem pressupor contato entre as sociedades."
+      },
+      "espacos": [
+        {
+          "id": "abrigo",
+          "nome": "Tocas de Fresta Aberta",
+          "funcao": "Habitações pessoais ou compartilhadas com passagem adaptada à anatomia dos moradores.",
+          "material": "Fendas de recife, pedras e conchas vazias de origem rastreável.",
+          "custo": "Disputa por abrigos adequados e risco de danificar corais."
+        },
+        {
+          "id": "cor",
+          "nome": "Sala dos Contrastes Vivos",
+          "funcao": "Espaço de deliberação cromática com iluminação ou superfícies legíveis se as condições permitirem.",
+          "material": "Superfícies de contraste, luz ambiental e/ou tradução tátil.",
+          "custo": "Pessoas em água turva, com diferenças de percepção ou jovens aprendizes podem ser excluídos."
+        },
+        {
+          "id": "lembranca",
+          "nome": "Galeria dos Abrigos Lembrados",
+          "funcao": "Memória física das tocas abandonadas ou destruídas, sem armazenar nomes de refugiados sem autorização.",
+          "material": "Arranjos de pedras e texturas, não registros mágicos indestrutíveis.",
+          "custo": "Um memorial público pode entregar endereços antigos de sobreviventes."
+        },
+        {
+          "id": "ajuda",
+          "nome": "Fenda do Recado Suspenso",
+          "funcao": "Lugar candidato para deixar mensagens aguardando resposta, inclusive recusa.",
+          "material": "Sinais cromáticos quando visíveis e marca tátil redundante em outros contextos.",
+          "custo": "Patrulhas podem copiar mensagens privadas para fins de vigilância."
+        }
+      ],
+      "instituicoes": [
+        {
+          "id": "conselho",
+          "nome": "Conselho do Fundo Mutável",
+          "composicao": "Moradores envolvidos em decisões de abrigo e trabalho; mandato e elegibilidade não definidos.",
+          "competencia": "Resolver conflitos de uso e cuidado dos espaços sem governar outros povos.",
+          "contrapeso": "Um padrão de recusa exige pausa e não autoriza conversão automática em abstenção."
+        },
+        {
+          "id": "tradução",
+          "nome": "Intérpretes de Contraste",
+          "composicao": "Pessoas aceitas pelos autores de uma mensagem; participação de outras espécies por consentimento.",
+          "competencia": "Traduzir mensagens públicas e negociar limites da tradução.",
+          "contrapeso": "Proibição candidata de transformar confidências familiares em código militar."
+        },
+        {
+          "id": "memoria",
+          "nome": "Guardiões das Tocas Ausentes",
+          "composicao": "Memorialistas e pessoas que testemunharam perda de abrigo.",
+          "competencia": "Conservar histórias sem impor registro obrigatório de deslocados.",
+          "contrapeso": "Direito de omitir detalhes que permitam localizar sobreviventes."
+        },
+        {
+          "id": "sustento",
+          "nome": "Ofício das Presas Bastantes",
+          "composicao": "Forrageadores, cuidadores de recursos e reparadores.",
+          "competencia": "Discutir limites de coleta e proteção de presas/recifes.",
+          "contrapeso": "Nenhum grupo decide sozinho quem é pessoa sapiente ou alimento legítimo."
+        }
+      ],
+      "oficios": [
+        {
+          "nome": "Tecedores de textura",
+          "processo": "Dispor suportes táteis e superfícies de contraste para comunicar em águas de visibilidade limitada.",
+          "material": "Pedras, relevos e luz se disponível.",
+          "risco": "Padronização pode apagar dialetos e excluir leitores de outra idade."
+        },
+        {
+          "nome": "Guardiões de abrigo",
+          "processo": "Reparar frestas, proteger ovos quando apropriado e registrar deslocamentos consentidos.",
+          "material": "Substrato recifal não necessariamente extraível.",
+          "risco": "Reparo excessivo danifica coral e transforma tocas em recurso militar."
+        },
+        {
+          "nome": "Coletores de pequenas presas",
+          "processo": "Forragear sem sobreexplorar fauna local nem usar moradores sapientes como presas.",
+          "material": "Pequenos organismos cujo ciclo e distribuição ainda não foram fixados.",
+          "risco": "O governo tenta controlar alimento através da regulamentação das saídas."
+        },
+        {
+          "nome": "Testemunhas cromáticas",
+          "processo": "Verificar que um sinal público não foi adulterado ou retirado de contexto.",
+          "material": "Luz, transparência e repetição tátil quando necessário.",
+          "risco": "A própria verificação pode expor informação íntima."
+        }
+      ],
+      "costumes": [
+        {
+          "nome": "Cor que não se copia",
+          "sentido": "Padrão de memória privada não pode ser reutilizado como ordem pública sem consentimento.",
+          "limite": "Princípio proposto; não declarar lei universal de todos os polvos."
+        },
+        {
+          "nome": "Abrigo que se lembra",
+          "sentido": "Uma toca abandonada pode ganhar registro sensorial de sua história, sem revelar moradores atuais.",
+          "limite": "O efeito é cultural, não memória mágica permanente na pedra."
+        },
+        {
+          "nome": "Pausa de oito braços",
+          "sentido": "Sinal candidato para pedir interrupção de tradução ou negociação quando a luz é insuficiente.",
+          "limite": "Não pressupor exatamente oito apêndices em todos os cidadãos sem decisão anatômica."
+        },
+        {
+          "nome": "Textura antes da cor",
+          "sentido": "Uma decisão de interesse público deve poder ser examinada em modalidade não cromática quando necessário.",
+          "limite": "Princípio de acesso, sem técnica padronizada ou tecnologia definida."
+        }
+      ],
+      "ecologia": [
+        {
+          "origem": "habitat:xlvii:09",
+          "nome": "Bosque dos Ouriços de Âmbar",
+          "relacao": "Herbívoros bentônicos candidatos competem por substrato; não se presume vizinhança com tocas.",
+          "contato_confirmado": false
+        },
+        {
+          "origem": "criatura:lix:07",
+          "nome": "Ouriço de Âmbar Opaco",
+          "relacao": "Poderia indicar mudanças na cobertura de algas, não representar padrão cromático de linguagem.",
+          "contato_confirmado": false
+        },
+        {
+          "origem": "habitat:xlvii:07",
+          "nome": "Coral dos Dias sem Sangue",
+          "relacao": "Conservação de recife plausível, sem equivalência automática ao assentamento ou a toda a costa azul.",
+          "contato_confirmado": false
+        }
+      ],
+      "personagens": [
+        {
+          "id": "riel",
+          "nome": "Riel Sete-Contrastes",
+          "papel": "Intérprete de padrões públicos",
+          "quer": "Defender a tradução consentida em relações com tritões",
+          "contradicao": "Sua autoridade sobre tradução pode tornar-se monopólio de fala de outros."
+        },
+        {
+          "id": "voora",
+          "nome": "Voora da Toca Esquecida",
+          "papel": "Guardadora de memórias de abrigo",
+          "quer": "Preservar histórias de casas perdidas",
+          "contradicao": "Registrar detalhes públicos coloca deslocados em risco."
+        },
+        {
+          "id": "ossu",
+          "nome": "Ossu Matiz-Quebrado",
+          "papel": "Forrageador e observador de algas",
+          "quer": "Proteger alimento sem destruir a capacidade de recuperação do recife",
+          "contradicao": "Restringe coleta enquanto famílias sem reserva precisam comer."
+        },
+        {
+          "id": "tenna",
+          "nome": "Tenna da Tinta Recusada",
+          "papel": "Aprendiz de expressão cromática",
+          "quer": "Impedir que padrões familiares sejam usados como comandos militares",
+          "contradicao": "Um parente deseja vendê-los para financiar reparo de abrigos."
+        }
+      ],
+      "tensoes": [
+        {
+          "nome": "A ordem que era despedida",
+          "problema": "Uma guarnição tritã usa padrão doméstico como sinal de comando.",
+          "sujeitos": "Tradutores, famílias, comandantes e aprendizes.",
+          "desfecho_aberto": "Exigir restituição, construir código voluntário ou recusar comunicação com a guarnição.",
+          "nao_ocorreu": true
+        },
+        {
+          "nome": "A toca que não quer ser lembrada",
+          "problema": "Um memorial revela o último abrigo conhecido de refugiados.",
+          "sujeitos": "Memorialistas, famílias deslocadas e patrulheiros.",
+          "desfecho_aberto": "Anonimizar, apagar marcas específicas ou manter registro sob guarda restrita.",
+          "nao_ocorreu": true
+        },
+        {
+          "nome": "O recife como celeiro",
+          "problema": "A expansão de espaços de abrigo ameaça organismos que sustentam alimento e filtragem.",
+          "sujeitos": "Forrageadores, construtores e moradores de tocas insuficientes.",
+          "desfecho_aberto": "Reorganizar habitação, reduzir extração ou negociar perdas e trabalho de restauração.",
+          "nao_ocorreu": true
+        }
+      ],
+      "perguntas_autorais": [
+        "Limites e diversidade de mudança de cor e textura na linhagem fictícia",
+        "Como ver sinais em diferentes profundidades e com turvação",
+        "Duração da vida, reprodução e transmissão intergeracional da memória",
+        "Se a memória das tocas é oral, tátil, visual ou combinação variável",
+        "Qual comunidade tritã pressiona por códigos e se há contato comprovado"
+      ],
+      "horizonte": "Uma língua pode proteger a autonomia de uma cidade, mas também produzir desigualdade entre quem pode ou não ter sua mensagem traduzida.",
+      "assentamento_nome": "A Vila das Tintas de Polvo",
+      "fonte_ciclo59": "comunidade:lix:09",
+      "modo_de_habitar_anterior": "Tocas compartilhadas e espaços de escrita cromática propostos",
+      "tensao_politica_anterior": "Uma cidade tritã deseja controlar seus sinais como código militar",
+      "status": "sociedade_proposta_nao_canonica",
+      "aprovacao_autoral": false,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_com_outra_sociedade_confirmado": false
+    }
+  ],
+  "organismos_candidatos": [
+    {
+      "id": "isopode",
+      "nome": "Isópode das Cascas Deixadas",
+      "sociedade": "povo:lx:pinças",
+      "nicho": "Detritívoro candidato em matéria orgânica acumulada entre conchas vazias; não consome ovos de povos sapientes por definição.",
+      "risco": "A infestação em depósitos pode contaminar provisões.",
+      "coexistencia": "Separar armazenamento de alimento e áreas de reciclagem; sem extermínio indiscriminado.",
+      "id_catalogo_proposto": "ecologia:lx:01",
+      "status": "organismo_candidato",
+      "ocorrencia_confirmada": false
+    },
+    {
+      "id": "esponja",
+      "nome": "Esponja das Bordas Reparadas",
+      "sociedade": "povo:lx:pinças",
+      "nicho": "Filtradora candidata que ocupa superfícies estáveis sem gerar água potável ou energia gratuita.",
+      "risco": "Obras de reparo podem arrancar organismos fixos.",
+      "coexistencia": "Mapear ocupação de substratos antes de remover revestimentos.",
+      "id_catalogo_proposto": "ecologia:lx:02",
+      "status": "organismo_candidato",
+      "ocorrencia_confirmada": false
+    },
+    {
+      "id": "lesma",
+      "nome": "Lesma do Vidro Turvo",
+      "sociedade": "povo:lx:tintas",
+      "nicho": "Raspadora candidata de biofilme em pedra úmida de recife, onde esse alimento existir.",
+      "risco": "Sua abundância pode sinalizar alteração da superfície, mas não corrupção automaticamente.",
+      "coexistencia": "Observar cobertura sem converter o animal em sensor infalível.",
+      "id_catalogo_proposto": "ecologia:lx:03",
+      "status": "organismo_candidato",
+      "ocorrencia_confirmada": false
+    },
+    {
+      "id": "fita",
+      "nome": "Peixe da Fita Desbotada",
+      "sociedade": "povo:lx:tintas",
+      "nicho": "Peixe pequeno candidato cuja coloração muda com movimento e luz, sem falar a língua cromática dos polvos.",
+      "risco": "Forasteiros confundem seus flashes com sinais comunitários.",
+      "coexistencia": "Confirmar mensagens com intérpretes e outras modalidades antes de agir.",
+      "id_catalogo_proposto": "ecologia:lx:04",
+      "status": "organismo_candidato",
+      "ocorrencia_confirmada": false
+    }
+  ],
+  "comparacoes": [
+    {
+      "id": "cuidado",
+      "tema": "Descendentes e vulnerabilidade",
+      "pinças": "Cuidado compartilhado de posturas e possíveis mudas",
+      "tintas": "Memória dos abrigos e transmissão de uma linguagem em diferentes condições de percepção",
+      "limite": "Não supor estrutura biológica ou parentesco idênticos."
+    },
+    {
+      "id": "poder",
+      "tema": "Autoridade e representação",
+      "pinças": "Pactos devem prever prazo e não transformar crias em garantia",
+      "tintas": "Tradução precisa preservar consentimento e recusa",
+      "limite": "A analogia é política, não prova de aliança."
+    },
+    {
+      "id": "ambiente",
+      "tema": "Território e alimento",
+      "pinças": "Conchas habitadas, substratos bentônicos e recursos de coleta",
+      "tintas": "Fendas de recife, presas pequenas e suportes cromáticos/táteis",
+      "limite": "Não confirmar travessias entre Mares."
+    },
+    {
+      "id": "conflito",
+      "tema": "Poder externo",
+      "pinças": "Possíveis pressões de representantes de Daegon",
+      "tintas": "Possível apropriação de sinais por uma cidade tritã",
+      "limite": "Não alegar que esses representantes já visitaram as localidades."
+    }
+  ],
+  "relacoes_entre_sociedades": [
+    {
+      "nome": "O pacto que nunca houve",
+      "hipotese": "A vulnerabilidade de descendentes e a apropriação de uma linguagem sugerem conflitos comparáveis, não um acordo existente.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "nome": "O visitante de escamas",
+      "hipotese": "Uma eventual visita de um povo a outro exigiria verificação de pressão, respiração, segurança e comunicação, jamais presumida.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    }
+  ],
+  "limites": [
+    "As duas localidades já existiam no Ciclo XLVII e continuam propostas, não cidades canônicas.",
+    "Não decidir a anatomia reprodutiva ou a longevidade de espécies inventadas com base em animais reais.",
+    "Não declarar crustáceos ou cefalópodes animais quaisquer automaticamente sapientes.",
+    "Ovos e crias dos habitantes sapientes não são categoria econômica de alimento ou tributo.",
+    "A fala cromática exige condições perceptivas; cor no escuro não se torna legível por conveniência.",
+    "Quatro organismos ecológicos são novos candidatos sem ocorrência confirmada.",
+    "Habitats, passagens e proximidade entre os dois mares continuam não comprovados.",
+    "A atuação concreta de sacerdotes de Daegon e autoridades tritãs junto aos assentamentos não foi confirmada.",
+    "As aberturas dramáticas ainda não aconteceram na cronologia de campanhas.",
+    "Nenhum dado do dossiê expõe o destino de Ulorian, da Lança ou do Arquivo."
+  ],
+  "proxima_etapa": "Testar a subsistência e a arquitetura de cada sociedade com ambiente físico escolhido pelo autor; depois avaliar homologação de seus costumes antes de qualquer ficha de combate."
+}

@@ -48,6 +48,10 @@ O [dossiê de três ecossistemas](docs/REDES_DE_VIDA_ECOSSISTEMAS_CICLO58.md) co
 
 O [dossiê dos mares](docs/CIVILIZACOES_SUBMERSAS_MAR_SANGUE_AGUAS_AZUIS_CICLO59.md) aprofunda **12 assentamentos já propostos**, **6 habitats**, **8 criaturas**, **9 pessoas** e **14 relações hipotéticas**. [JSON do ciclo](data/propostas/civilizacoes-submersas-mar-sangue-aguas-azuis-ciclo59.json). Nenhuma cidade, espécie, relação ou rota foi automaticamente homologada.
 
+## Ciclo LX — Pinças de Ônix e Tintas de Polvo
+
+O [dossiê das duas sociedades sapientes](docs/SOCIEDADES_PINCAS_ONIX_TINTAS_POLVO_CICLO60.md) aprofunda duas comunidades submersas previamente propostas com **8 espaços sociais**, **8 instituições**, **8 ofícios**, **8 costumes**, **8 novos personagens** e **6 conflitos locais**, além de **4 organismos ecológicos candidatos**. [Base em JSON](data/propostas/sociedades-pincas-onix-tintas-polvo-ciclo60.json). **São culturas candidatas sem canonização automática de biologia, habitat, rota ou assentamento.**
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
