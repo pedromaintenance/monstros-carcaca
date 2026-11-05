@@ -1,0 +1,539 @@
+{
+  "schema_version": "1.0",
+  "id": "worldbuilding:ciclo62:forjas-juramentos",
+  "titulo": "Ciclo LXII — A política da forja e dos juramentos",
+  "data_registro": "2026-11-05",
+  "estado": "propostas_editoriais_nao_canonicas",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "altera_campanhas": false,
+  "fontes": [
+    {
+      "path": "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+      "paginas": [
+        7,
+        12,
+        13
+      ],
+      "tipo": "base_autoral"
+    },
+    {
+      "path": "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+      "tipo": "comunidades_propostas"
+    },
+    {
+      "path": "data/propostas/povoamento-ecologia-thargrid-ironwood-eldroth-ciclo53.json",
+      "tipo": "aprofundamento_previo"
+    },
+    {
+      "path": "data/propostas/sociedades-gigantes-minerais-thargrid-ciclo61.json",
+      "tipo": "sociedades_montanhesas_lxi"
+    }
+  ],
+  "distincao": "O texto autoral confirma clãs anões como base de infraestrutura e metalurgia do Reino, bem como famílias de gigantes do fogo metalurgistas em Thargrid; não fixa fontes de minério e combustível para as oficinas propostas.",
+  "totais": {
+    "comunidades_preexistentes_aprofundadas": 2,
+    "novos_assentamentos": 0,
+    "espacos_sociais_candidatos": 8,
+    "instituicoes_candidatas": 8,
+    "oficios_aprofundados": 8,
+    "personagens_candidatos": 8,
+    "conflitos_propostos": 6,
+    "etapas_cadeia_produtiva": 6,
+    "exemplos_de_demanda": 4,
+    "interfaces_hipoteticas": 5,
+    "reusos_ecologicos": 3,
+    "novas_especies": 0
+  },
+  "comunidades": [
+    {
+      "id": "sociedade:lxii:salao",
+      "source": "povoamento:xlvi:thargrid-montanhas:01",
+      "prior": "povoamento:liii:01",
+      "focus": "O juramento não substitui comida",
+      "concept": "Salão candidato de clãs anões, mediadores draconatos e aprendizes gigantes em que a ajuda a refugiados precisa ser deliberada sem exigir vassalagem. O juramento organiza responsabilidades, mas não transforma toda pessoa protegida em dependente de clã.",
+      "baseline": "Os clãs anões, seus salões, oficinas e juramentos estão na base autoral das páginas 12–13; este Salão específico ainda é proposta.",
+      "physical": "Câmaras de deliberação e reparos num interior montanhoso não localizado. Provisões, ventilação, água, fontes energéticas e acesso são pendências; não ligar automaticamente às Forjas de Cinza Fria.",
+      "governance": "Conselho de clãs com testemunhas draconatas proposto no ciclo XLVI; a participação de refugiados sem clã continua disputa aberta.",
+      "routine": "Ao receber ferramentas quebradas, pessoas da triagem escutam também quem usa o instrumento. A discussão entre 'arma da resistência' e 'enxada de sobrevivência' pode acontecer antes de qualquer ordem de serviço.",
+      "care": "Acolher deslocados exige comida, repouso e equipamentos de trabalho. Uma bancada de reparos não alimenta a comunidade; sem estoque confirmado, prometer auxílio ilimitado é potencial fraude.",
+      "heritage": "Os registros de clãs podem conservar direitos e ofensas por gerações; uma testemunha draconata observa o que foi jurado e não se torna juiz universal por sua origem.",
+      "spatial": [
+        [
+          "Mesa dos Compromissos Revogáveis",
+          "Área de acordo sobre auxílio, prazos e deveres sem juramento obrigatório de lealdade.",
+          "Contratos longos podem recriar dependência hereditária."
+        ],
+        [
+          "Balcão das Ferramentas Gastas",
+          "Recebimento proposto de ferramentas com descrição da falha e uso civil ou defensivo.",
+          "Uma categoria vaga de 'urgência militar' pode furar toda a fila."
+        ],
+        [
+          "Câmara das Provisões Contestadas",
+          "Sala eventual para registrar alimento e materiais de distribuição, se houver estoque.",
+          "A informação sobre reservas pode virar instrumento de chantagem política."
+        ],
+        [
+          "Pátio das Testemunhas",
+          "Espaço de audiência entre usuários, clãs, aprendizes e draconatos convidados.",
+          "A presença de testemunha não substitui consentimento do prejudicado."
+        ]
+      ],
+      "councils": [
+        [
+          "Mesa dos Clãs Responsáveis",
+          "Escolher prioridades de reparo e obrigações de quem fornece materiais.",
+          "Não impor juramento a pessoas acolhidas só para atender necessidades básicas."
+        ],
+        [
+          "Banca da Recusa Fundamentada",
+          "Receber objeções de quem perdeu ferramenta ou alimento por uma decisão.",
+          "A recusa precisa ser registrada mesmo quando a proposta vem de chefes."
+        ],
+        [
+          "Círculo das Testemunhas Draconatas",
+          "Aferir o que realmente foi prometido e se as partes consentiram.",
+          "Testemunho draconato não elimina autogoverno do clã nem a voz de refugiados."
+        ],
+        [
+          "Turno dos Aprendizes Ouvintes",
+          "Confrontar relato de usuário e diagnóstico de ferramenta durante triagem.",
+          "O aprendiz não é obrigado a aceitar risco por posição hierárquica."
+        ]
+      ],
+      "professions": [
+        [
+          "Escriturários de manutenção",
+          "Anotar sintomas, danos, material necessário e urgência de cada reparo.",
+          "Registros podem ser usados para negar ajuda a quem não tem clã."
+        ],
+        [
+          "Reparadores de ferramentas civis",
+          "Priorizar enxadas, utensílios de transporte e apoio material aos refugiados quando essenciais.",
+          "Desviar material para armas pode quebrar a cadeia de alimentos."
+        ],
+        [
+          "Conferentes de provisões",
+          "Distinguir alimento existente de promessa de fornecimento.",
+          "Controle de reservas pode se tornar nova aristocracia de distribuição."
+        ],
+        [
+          "Mediadores de juramento",
+          "Traduzir propostas, recusa e prazo para pactos entre povos e clãs.",
+          "A diferença entre apoio e obrigação hereditária é facilmente ocultada."
+        ]
+      ],
+      "people": [
+        [
+          "Hralda Coluna-Rachada",
+          "engenheira anã e mediadora de obras",
+          "não deixar um juramento impedir reparo seguro e acolhimento",
+          "aceita atrasar conserto militar importante e precisa explicar a escolha aos defensores"
+        ],
+        [
+          "Surn Mãos-de-Esmalte",
+          "mestre de oficina anão",
+          "proteger ferramentas de famílias sem clã",
+          "usa o nome ancestral da própria oficina para reivindicar mais voz que seus aprendizes"
+        ],
+        [
+          "Ivara Cinza-Morna",
+          "refugiada humana e reparadora de cestos",
+          "conseguir que reparos domésticos tenham prioridade reconhecida",
+          "tem medo de registrar suas necessidades e expor companheiros à vigilância"
+        ],
+        [
+          "Kaer Juramento-Exato",
+          "testemunha draconato",
+          "impedir que auxílio se converta em subordinação",
+          "já validou um pacto cuja linguagem ocultava um prazo abusivo"
+        ]
+      ],
+      "disputes": [
+        {
+          "id": "sem_juramento",
+          "name": "A enxada sem juramento",
+          "situation": "Um grupo sem clã solicita conserto de ferramenta agrícola, mas o conselho reserva material para armas entregues a famílias juramentadas.",
+          "material_stakes": "Falta de ferramentas de cultivo pode comprometer alimento futuro; a necessidade militar também é real.",
+          "choices": [
+            "Priorizar ferramenta civil com critério público",
+            "Reparar primeiro armas e documentar risco alimentar",
+            "Redistribuir material com consentimento de outras oficinas"
+          ],
+          "unresolved": true
+        },
+        {
+          "id": "estoque_invisivel",
+          "name": "O depósito que ninguém viu",
+          "situation": "Um enviado oferece provisões em nome de um clã ausente sem inventário ou confirmação de transporte.",
+          "material_stakes": "Refugiados podem deixar abrigo anterior contando com alimentos incertos.",
+          "choices": [
+            "Recusar promessa sem estoque",
+            "Aceitar condicionalmente com prazo e testemunhas",
+            "Anunciar publicamente a incerteza para evitar deslocamento"
+          ],
+          "unresolved": true
+        },
+        {
+          "id": "testemunha",
+          "name": "A palavra do aprendiz",
+          "situation": "Um defeito grave é atribuído ao usuário, embora o aprendiz tenha alertado sobre o material antes do reparo.",
+          "material_stakes": "O prestígio dos mestres pode prevalecer sobre segurança e reparação às vítimas.",
+          "choices": [
+            "Examinar a peça e ouvir todas as partes",
+            "Suspender a ferramenta imediatamente",
+            "Indenizar uso anterior e apurar responsabilidades"
+          ],
+          "unresolved": true
+        }
+      ],
+      "unresolved": [
+        "Onde estão os depósitos reais e seus abastecimentos?",
+        "Quais clãs participam e podem ser representados por aprendizes?",
+        "Quais insumos o Salão consegue fornecer sem depender de forja externa?",
+        "Como a ajuda a refugiados se dá sem juramento obrigatório?",
+        "Há relação física ou apenas política com As Forjas de Cinza Fria?"
+      ],
+      "nome": "Salão do Juramento de Cinza",
+      "moradores_anteriores": "Clãs anões, draconatos mediadores e aprendizes gigantes propostos",
+      "autoridade_anterior": "Conselho de clãs que submete disputas a testemunhas draconatas",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "rotas_confirmadas": [],
+      "ocorrencia_canonica": false
+    },
+    {
+      "id": "sociedade:lxii:forjas",
+      "source": "povoamento:xlvi:thargrid-montanhas:03",
+      "prior": "povoamento:liii:02",
+      "focus": "Toda espada consome o tempo de uma ferramenta",
+      "concept": "Núcleo industrial habitado proposto em que gigantes do fogo e anões metalúrgicos produzem e reparam objetos de múltiplas escalas. O prestígio dos mestres compete com ventilação, segurança, treinamento e manutenção cotidiana.",
+      "baseline": "A ambientação autoral reconhece famílias de gigantes do fogo como excelentes metalurgistas e engenheiros em regiões profundas de Thargrid, rivais de mestres anões. A oficina nomeada, sua presidência e sua economia permanecem propostas.",
+      "physical": "Oficinas grandes em cavidades rochosas hipotéticas; a presença de ambientes quentes no cânone não demonstra que esta forja esteja sobre fonte geotérmica nem que combustível e exaustão sejam ilimitados.",
+      "governance": "Câmara de mestres com presidência alternada e direito a dissenso, já proposta em XLVI; é governo da oficina candidata, não autoridade sobre todas as minas do Reino.",
+      "routine": "Antes da batida do martelo, alguém verifica ferramental, fixação, procedência de material, calor residual e acesso a saída utilizável por pessoas de diferentes tamanhos. Essas práticas são propostas culturais, não inspeções tecnológicas padronizadas do cenário.",
+      "care": "Aprendizes e fundidores dependem de repouso, alimentação, água adequada e proteção contra calor, fumaça e carga suspensa. A oficina não fica segura apenas porque um mestre gigante tolera altas temperaturas.",
+      "heritage": "A marca de fabricação poderia identificar quem projetou, executou, inspecionou e corrigiu uma peça, em vez de atribuir todo o mérito a uma família.",
+      "spatial": [
+        [
+          "Pátio da Escória Separada",
+          "Área de seleção de sobras, resíduos e materiais potencialmente reaproveitáveis.",
+          "Confundir escória com minério útil pode desperdiçar combustível e provocar falhas."
+        ],
+        [
+          "Poço da Fumaça Contestada",
+          "Canal ou espaço de ventilação proposto sujeito a inspeção, sem desenho de fluxo confirmado.",
+          "Um mestre pode considerar a fumaça custo aceitável para aprendizes e auxiliares."
+        ],
+        [
+          "Casa dos Moldes Emprestados",
+          "Guarda e empréstimo de gabaritos, medidas e moldes cuja origem precisa ser registrada.",
+          "Um clã tenta monopolizar molde essencial para reparar equipamentos comuns."
+        ],
+        [
+          "Bancada das Duas Escalas",
+          "Local de teste e reparo de objetos para diferentes tamanhos corporais.",
+          "Uma peça aprovada pelo usuário gigante pode falhar quando operada por anão."
+        ]
+      ],
+      "councils": [
+        [
+          "Câmara dos Mestres Alternados",
+          "Coordena trabalho e permite dissenso entre mestres de diferentes linhagens.",
+          "A presidência não transforma trabalhador sem título em pessoa sem voz."
+        ],
+        [
+          "Assembleia do Turno Quente",
+          "Discute exposição, paradas e condições de reparo com trabalhadores efetivos.",
+          "Quem suporta o risco pode requerer pausa mesmo quando o contrato é militar."
+        ],
+        [
+          "Guarda dos Moldes de Uso Comum",
+          "Registra moldes compartilhados e distingue direito de autoria de direito de uso.",
+          "A invenção de um mestre não deve impedir conserto indispensável à subsistência."
+        ],
+        [
+          "Círculo do Último Exame",
+          "Confronta marcas de projeto, fabricação e inspeção quando uma peça falha.",
+          "O prestígio do mestre não apaga a responsabilidade registrada."
+        ]
+      ],
+      "professions": [
+        [
+          "Fundidores e controladores de calor",
+          "Ajustar processo de metal, carga e resfriamento conforme matéria disponível.",
+          "Sem combustível, fluxo de ar e controle, o produto pode ser inseguro ou sequer fabricável."
+        ],
+        [
+          "Ferreiros de reparo",
+          "Recuperar ferramentas antes de consumir mais matéria-prima para peças novas.",
+          "Patronos preferem armaduras novas, de maior prestígio, a consertos discretos."
+        ],
+        [
+          "Moldistas multiescalares",
+          "Construir gabaritos e verificar adaptação ao corpo que usará o item.",
+          "Um molde exclusivo pode travar a manutenção de várias famílias."
+        ],
+        [
+          "Inspetores de fumaça e estrutura",
+          "Observar calor, circulação, apoios e risco de suspensão de carga.",
+          "Negligenciar condições de trabalho prejudica principalmente auxiliares sem status."
+        ]
+      ],
+      "people": [
+        [
+          "Hekta Brasa-Funda",
+          "gigante do fogo e mestra de fundição",
+          "garantir independência técnica de sua família",
+          "receia perder prestígio ao aceitar correções de um aprendiz anão"
+        ],
+        [
+          "Brann Martelo-Pequeno",
+          "moldista anão",
+          "manter moldes acessíveis para reparos de equipamentos civis",
+          "um molde que herdou é sua principal garantia material de sustento"
+        ],
+        [
+          "Sula Escória-Nova",
+          "auxiliar humana refugiada",
+          "aprender metalurgia e obter segurança no trabalho",
+          "não possui clã protetor para interromper o forno quando a fumaça se acumula"
+        ],
+        [
+          "Torvek Chama-Pálida",
+          "gigante do fogo responsável por ferramentas grandes",
+          "testar peças também nas mãos de usuários pequenos",
+          "trata a segurança como problema individual e ignora falhas de desenho"
+        ]
+      ],
+      "disputes": [
+        {
+          "id": "molde_restrito",
+          "name": "O molde sem licença",
+          "situation": "Um molde herdado por uma família pode consertar inúmeros instrumentos de trabalho, mas seu proprietário permite uso apenas para encomendas militares.",
+          "material_stakes": "A exclusividade concentra poder e reduz manutenção civil; a renda da família proprietária também depende do molde.",
+          "choices": [
+            "Negociar licença com remuneração",
+            "Criar outro molde com custos reais",
+            "Reparar instrumentos críticos e enfrentar disputa de propriedade"
+          ],
+          "unresolved": true
+        },
+        {
+          "id": "fornalha",
+          "name": "A fumaça antes da espada",
+          "situation": "A ventilação piora enquanto uma peça militar está perto de ser concluída; a auxiliar Sula pede parada.",
+          "material_stakes": "Continuar ameaça trabalhadores; parar pode atrasar defesa ou perder metal aquecido.",
+          "choices": [
+            "Parar e inspecionar",
+            "Redistribuir tarefas e suspender exposição",
+            "Assumir risco somente após acordo informado, sem obrigar vulneráveis"
+          ],
+          "unresolved": true
+        },
+        {
+          "id": "reparo_fundacao",
+          "name": "Rebites antes de elmos",
+          "situation": "Os rebites de uma estrutura de abrigo disputam material e calor com elmos de prestígio encomendados por um comandante.",
+          "material_stakes": "Uma decisão de fila muda segurança do abrigo e equipamento militar.",
+          "choices": [
+            "Priorizar estabilidade estrutural",
+            "Manter encomenda de guerra e registrar risco",
+            "Reavaliar estoques e reparar em vez de produzir peças novas"
+          ],
+          "unresolved": true
+        }
+      ],
+      "unresolved": [
+        "Qual o minério, combustível e água disponíveis para esta oficina?",
+        "Que ventilação e segurança a cavidade permite?",
+        "Qual escala produtiva é compatível com trabalhadores de corpos diferentes?",
+        "Como formalizar autoria, empréstimo e reparação de moldes?",
+        "A produção é destinada ao Reino, aos clãs ou a clientes diferentes?"
+      ],
+      "nome": "As Forjas de Cinza Fria",
+      "moradores_anteriores": "Gigantes do fogo e anões metalúrgicos propostos, trabalhadores de outras linhagens",
+      "autoridade_anterior": "Câmara de mestres com presidência alternada e direito a dissenso",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "rotas_confirmadas": [],
+      "ocorrencia_canonica": false
+    }
+  ],
+  "fluxo_producao": [
+    {
+      "id": "insumos",
+      "nome": "Origem e disponibilidade de insumos",
+      "entrada": "Minério, metal recuperado, combustível, água de processo e instrumentos ainda não quantificados.",
+      "verificacao": "Registrar procedência e propriedade; não declarar jazida, combustível ou rota conhecida.",
+      "falha": "A produção é prometida sem fonte material demonstrada.",
+      "sujeitos": "Coletores, guardadores de estoque, usuários e eventuais titulares da matéria."
+    },
+    {
+      "id": "triagem",
+      "nome": "Triagem da demanda",
+      "entrada": "Peça quebrada ou pedido, usuário, finalidade civil ou militar e consequência de falha.",
+      "verificacao": "Ouvir quem usa; separar reparo possível de peça nova; expor critérios de prioridade.",
+      "falha": "O prestígio do encomendante substitui a necessidade real.",
+      "sujeitos": "Reparadores, refugiados, mediadores, comandantes e clãs."
+    },
+    {
+      "id": "projeto",
+      "nome": "Desenho, medidas e molde",
+      "entrada": "Dimensões do usuário e projeto de ferramenta; molde próprio ou emprestado.",
+      "verificacao": "Confirmar compatibilidade de escala e direitos de acesso e reprodução do molde.",
+      "falha": "Peça grande demais ou monopolizada para uso indispensável.",
+      "sujeitos": "Moldistas anões, gigantes e aprendizes."
+    },
+    {
+      "id": "forja",
+      "nome": "Execução e condições de trabalho",
+      "entrada": "Metal e calor sob condições não definidas; pessoas de diferentes tolerâncias e alcances.",
+      "verificacao": "Avaliar calor, ventilação, estabilidade e possibilidade de interrupção por risco.",
+      "falha": "A pressa expõe auxiliares à fumaça ou torna a peça insegura.",
+      "sujeitos": "Fundidores gigantes, trabalhadores anões e ajudantes de outras origens."
+    },
+    {
+      "id": "inspecao",
+      "nome": "Inspeção e registro da peça",
+      "entrada": "Objeto concluído com sinais de origem, projeto, quem executou e quem testou.",
+      "verificacao": "Inspecionar danos, uso real e relato de quem sofreu falhas anteriores.",
+      "falha": "A marca de mestre substitui controle de qualidade.",
+      "sujeitos": "Mestres, inspetores, aprendizes e usuários."
+    },
+    {
+      "id": "destinacao",
+      "nome": "Entrega, manutenção e responsabilidade",
+      "entrada": "Peça aprovada, necessidade de transporte, manutenção e condição de devolução do molde.",
+      "verificacao": "Registrar destinatário, prazo e obrigações sem presumir passagem entre assentamentos.",
+      "falha": "Ferramentas civis se tornam dívida de fidelidade ou desaparecem no circuito militar.",
+      "sujeitos": "Conselhos de clã, solicitantes e possíveis transportadores."
+    }
+  ],
+  "demandas_ficticias": [
+    {
+      "id": "demanda:lxii:01",
+      "item": "Reparo de enxada",
+      "solicitante": "famílias acolhidas sem vínculo de clã",
+      "urgencia": "Ameaça à produção de alimentos se houver cultivo e estação adequados; ambos ainda exigem confirmação.",
+      "material": "Reaproveitamento antes de metal novo",
+      "risco": "Distribuição condicionada a juramento",
+      "estado": "exemplo_de_priorizacao_nao_ordem_real",
+      "executada": false
+    },
+    {
+      "id": "demanda:lxii:02",
+      "item": "Rebites de abrigo",
+      "solicitante": "grupo de construção de refúgio",
+      "urgencia": "Estrutura pode perder uso se a falha for verificada.",
+      "material": "Peças pequenas compatíveis com o projeto",
+      "risco": "Falha estrutural, perigo aos moradores",
+      "estado": "exemplo_de_priorizacao_nao_ordem_real",
+      "executada": false
+    },
+    {
+      "id": "demanda:lxii:03",
+      "item": "Reparo de arma de sentinela",
+      "solicitante": "defesa do Reino, sem unidade definida",
+      "urgencia": "Pode afetar defesa quando uma ameaça for confirmada.",
+      "material": "Metal, ferramentas e tempo de oficina",
+      "risco": "Retirar recursos de alimentação e abrigo",
+      "estado": "exemplo_de_priorizacao_nao_ordem_real",
+      "executada": false
+    },
+    {
+      "id": "demanda:lxii:04",
+      "item": "Novo elmo cerimonial",
+      "solicitante": "patrono militar não individualizado",
+      "urgencia": "Sem urgência material comprovada.",
+      "material": "Molde especializado e insumos de prestígio",
+      "risco": "Elevar status de chefes em detrimento de manutenção",
+      "estado": "exemplo_de_priorizacao_nao_ordem_real",
+      "executada": false
+    }
+  ],
+  "relacoes": [
+    {
+      "id": "relacao:lxii:01",
+      "de": "sociedade:lxii:salao",
+      "para": "sociedade:lxii:forjas",
+      "possibilidade": "Solicitações de reparo do Salão poderiam encontrar capacidade de fundição nas Forjas; nenhum contrato ou caminho foi demonstrado.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "relacao:lxii:02",
+      "de": "sociedade:lxii:salao",
+      "para": "povoamento:xlvi:thargrid-montanhas:05",
+      "possibilidade": "Testemunhas do Coro das Escamas Juradas poderiam discutir a validade de obrigações entre clãs.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "relacao:lxii:03",
+      "de": "sociedade:lxii:forjas",
+      "para": "povoamento:lvi:thar-rampa",
+      "possibilidade": "Gabaritos de medidas poderiam ser comparados, sem oficina conjunta comprovada.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "relacao:lxii:04",
+      "de": "sociedade:lxii:forjas",
+      "para": "sociedade:lxi:minerais",
+      "possibilidade": "Buscar matéria de obra pode suscitar objeção de habitantes minerais caso algum corpo consciente fosse afetado.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "relacao:lxii:05",
+      "de": "sociedade:lxii:salao",
+      "para": "sociedade:lxi:gigantes",
+      "possibilidade": "Necessidades de alimentos, reparos e abrigo podem produzir demandas comparáveis, não acordos verificados.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    }
+  ],
+  "ecologia_reaproveitada": [
+    {
+      "id": "eco:lxii:01",
+      "ref": "criatura:liii:01",
+      "nome": "Tatu-de-Escória",
+      "funcao": "Remexedor de resíduos minerais candidato; poderia afetar depósitos de material se a espécie ali ocorresse.",
+      "limite": "Não confirmar presença nas Forjas nem usar o animal como reciclador industrial automático.",
+      "coocorrencia_confirmada": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "eco:lxii:02",
+      "ref": "criatura:liii:02",
+      "nome": "Musgo do Fôlego Mineral",
+      "funcao": "Organismo de superfície mineral proposto que poderia servir de indício de micro-habitat apropriado.",
+      "limite": "Não usá-lo como medidor infalível de ventilação ou como purificador de ar industrial.",
+      "coocorrencia_confirmada": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "eco:lxii:03",
+      "ref": "criatura:lxi:02",
+      "nome": "Cigarra das Pedras Frias",
+      "funcao": "Inseto de fendas montanhosas candidato, cuja atividade poderia coexistir com ruídos de estrutura.",
+      "limite": "Não atribuir alarmes proféticos nem ocorrência em túneis específicos.",
+      "coocorrencia_confirmada": false,
+      "aprovacao_autoral": false
+    }
+  ],
+  "salvaguardas": [
+    "Os dois núcleos já existiam como propostas, sem localização ou rotas homologadas.",
+    "Não atribuir soberania de gigantes do fogo sobre oficinas anãs, nem do Conselho de clãs sobre todo o Reino.",
+    "O Ordenamento rege gigantes, não todos os habitantes de Thargrid.",
+    "Nenhuma jazida, nascente, fonte geotérmica, ventilação, rota de combustível ou volume produtivo foi inventado como fato.",
+    "A produção de armas não se confunde com a manutenção civil que sustenta alimentação e abrigo.",
+    "Amostras de demanda são exercícios narrativos, não acontecimentos canônicos.",
+    "Relações entre assentamentos são possibilidades; não comprovam distância, visita, comércio ou entrega.",
+    "Nenhuma espécie inédita foi criada; reuso ecológico não estabelece ocorrência.",
+    "Nenhuma ficha DW, rota, coordenada ou segredo cosmológico foi inserido."
+  ]
+}

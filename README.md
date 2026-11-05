@@ -56,6 +56,10 @@ O [dossiê das duas sociedades sapientes](docs/SOCIEDADES_PINCAS_ONIX_TINTAS_POL
 
 O [dossiê dos gigantes e seres minerais](docs/SOCIEDADES_GIGANTES_MINERAIS_THARGRID_CICLO61.md) aprofunda **2 comunidades existentes**, **8 espaços**, **8 instituições**, **8 ofícios**, **8 costumes**, **8 pessoas**, **6 conflitos** e **4 organismos ecológicos candidatos**, mantendo [dados estruturados em JSON](data/propostas/sociedades-gigantes-minerais-thargrid-ciclo61.json). Preserva o princípio canônico: o Ordenamento governa gigantes, não todos de Thargrid. Não canoniza assentamentos ou rotas.
 
+## Ciclo LXII — A política da forja e dos juramentos
+
+O [dossiê das Forjas de Cinza Fria e do Salão do Juramento de Cinza](docs/ENGENHARIA_POLITICA_DA_FORJA_THARGRID_CICLO62.md) aprofunda **duas comunidades propostas**, **8 espaços**, **8 instituições**, **8 ofícios**, **8 personagens** e **6 conflitos**, mais uma cadeia produtiva com **6 etapas**, **4 demandas fictícias**, **5 interfaces possíveis** e **3 reusos ecológicos**. [JSON estruturado](data/propostas/engenharia-politica-da-forja-thargrid-ciclo62.json). Nenhuma mina, rota, forja ou ocorrência é homologada automaticamente.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
