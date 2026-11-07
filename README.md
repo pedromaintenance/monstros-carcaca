@@ -68,6 +68,10 @@ O [dossiê de alimentação e abastecimento subterrâneo](docs/ABASTECIMENTO_SOB
 
 O [dossiê doméstico de Thargrid](docs/VIDA_DOMESTICA_CAVERNAS_THARGRID_CICLO64.md) desenvolve **4 comunidades antigas**, **8 espaços de vida**, **12 práticas sociais**, **8 personagens novos e 4 retomados**, **8 conflitos**, **5 sistemas de sustento**, **2 organismos candidatos** e **5 interfaces condicionais**. [JSON estruturado](data/propostas/vida-domestica-cavernas-thargrid-ciclo64.json). Mantém água, ventilação, população, vizinhança e metabolismo mineral em aberto; nada é automaticamente canonizado.
 
+## Ciclo LXV — Os filhos da montanha
+
+O [dossiê de infância, ofícios e aprendizagem em Thargrid](docs/FILHOS_DA_MONTANHA_APRENDIZAGEM_CICLO65.md) aprofunda **4 comunidades**, com **8 aprendizes candidatos**, **8 espaços de ensino**, **12 lições**, **4 brincadeiras**, **8 conflitos** e **6 dependências materiais**. Reutiliza personagens anteriores e preserva a autonomia de anões, gigantes, draconatos e svirfneblin. [JSON estruturado](data/propostas/filhos-da-montanha-aprendizagem-ciclo65.json). Nenhuma escola, rota ou personagem é canonizado automaticamente.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.

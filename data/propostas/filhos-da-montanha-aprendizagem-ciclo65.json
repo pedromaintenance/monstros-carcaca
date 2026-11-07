@@ -1,0 +1,451 @@
+{
+  "schema_version": "1.0",
+  "id": "worldbuilding:lxv:aprendizagem",
+  "titulo": "Ciclo LXV — Os filhos da montanha",
+  "data_registro": "2026-11-07",
+  "estado": "propostas_nao_homologadas",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "altera_campanhas": false,
+  "totais": {
+    "comunidades_aprofundadas": 4,
+    "assentamentos_novos": 0,
+    "aprendizes_ineditos": 8,
+    "mentores_reutilizados": 4,
+    "apoiadores_reutilizados": 4,
+    "espacos_de_aprendizagem": 8,
+    "modulos_de_ensino": 12,
+    "jogos": 4,
+    "conflitos_nao_ocorridos": 8,
+    "dependencias_materiais": 6,
+    "vinculos_hipoteticos": 5,
+    "especies_novas": 0
+  },
+  "comunidades": [
+    {
+      "key": "anões",
+      "place": "povoamento:xlvi:thargrid-montanhas:01",
+      "past": "sociedade:lxii:salao",
+      "thesis": "Clãs conservam técnicas, salões e obrigações ao longo de gerações. O peso desse legado pode excluir aprendizes sem sobrenome reconhecido ou punir quem escolhe outro ofício.",
+      "teacher": "Hralda Coluna-Rachada",
+      "assistant": "Ivara Cinza-Morna",
+      "pupils": [
+        {
+          "id": "pessoa:lxv:anões:01",
+          "nome": "Maro Ponta-Curta",
+          "identidade": "Aprendiz anão de família metalúrgica",
+          "conflito": "Prefere reparar recipientes de água a fabricar armas; parentes ameaçam retirar o apoio material.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxv:anões:02",
+          "nome": "Sena Sem-Selo",
+          "identidade": "Aprendiz humana sem clã",
+          "conflito": "Deseja projetar reparos; os mestres retêm moldes e podem omitir seu nome nas peças.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "places": [
+        [
+          "Bancada dos Erros Devolvidos",
+          "Peças de demonstração seguras para observar defeitos, com tempo e material de mestre.",
+          "O prestígio do fabricante pode impedir registrar falhas."
+        ],
+        [
+          "Sala das Mãos sem Selo",
+          "Espaço pedagógico candidato que permite ensinar pessoas fora dos clãs.",
+          "Taxas e acordos de serviço podem recriar a exclusão."
+        ]
+      ],
+      "lessons": [
+        [
+          "Diagnosticar antes de culpar",
+          "Ouvir o usuário e comparar danos de peça inerte, sem realizar teste perigoso.",
+          "Separar evidência, hipótese e autoridade de clã.",
+          "Requer peças, usuário e tempo de instrutor."
+        ],
+        [
+          "A mesma peça serve a dois mundos",
+          "Debater reparo de ferramenta civil e encomenda militar com metal hipotético limitado.",
+          "Justificar prioridade sem declarar civil ou militar automaticamente superior.",
+          "Sem estoque de metal ou ferramentas inventado."
+        ],
+        [
+          "O ofício tem saída",
+          "Negociar pacto de aprendizagem com duração, descanso e direito de mudança.",
+          "O compromisso não se converte em servidão hereditária.",
+          "Mentores também precisam de sustento."
+        ]
+      ],
+      "game": [
+        "A peça que volta",
+        "Um objeto inerte recebe diferentes funções imaginárias; a brincadeira avalia ideias, não produtividade."
+      ],
+      "problems": [
+        [
+          "A marca roubada",
+          "O desenho de Sena recebe o selo de um mestre que não participou do teste.",
+          "Reconhecer autoria, negociar acesso ao molde ou revisar segurança."
+        ],
+        [
+          "A moradia condicionada",
+          "Maro é ameaçado de perder cama e comida por querer mudar de ofício.",
+          "Separar moradia de trabalho, negociar transição e considerar o custo da família."
+        ]
+      ],
+      "id": "comunidade:lxv:anões",
+      "nome": "Salão do Juramento de Cinza",
+      "habitantes": "Clãs anões, draconatos mediadores e aprendizes gigantes propostos",
+      "professor_fonte": "sociedade:lxii:salao",
+      "colaborador_fonte": "sociedade:lxii:salao",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "contato_confirmado": false,
+      "escola_canonica": false
+    },
+    {
+      "key": "gigantes",
+      "place": "povoamento:xlvi:thargrid-montanhas:02",
+      "past": "sociedade:lxi:gigantes",
+      "thesis": "O Ordenamento organiza prestígio entre gigantes, mas não concede autoridade sobre outros povos. Jovens de linhagens menos influentes podem compreender melhor uma obra e ainda assim não receber direito de fala.",
+      "teacher": "Orrun Escala-Viva",
+      "assistant": "Imei Sétimo-Degrau",
+      "pupils": [
+        {
+          "id": "pessoa:lxv:gigantes:01",
+          "nome": "Vana Bruma-de-Baixo",
+          "identidade": "Aprendiz gigante das nuvens proposta",
+          "conflito": "Projeta passagens para seres menores; um chefe diz que ouvi-los é indigno.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxv:gigantes:02",
+          "nome": "Orrik Passo-Contado",
+          "identidade": "Aprendiz gigante de linhagem não estabelecida",
+          "conflito": "Recusa atravessar apoio suspeito para provar força e honra.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "places": [
+        [
+          "Jardim dos Degraus de Ensaio",
+          "Modelos leves de passagens para corpos de escala distinta, sem travessia real.",
+          "Necessita supervisão, suportes e critérios de estabilidade."
+        ],
+        [
+          "Mesa das Alturas Contadas",
+          "Espaço de escuta de acidentes e dimensões de usuários menores.",
+          "Um chefe pode rejeitar o depoimento de quem possui pouco prestígio."
+        ]
+      ],
+      "lessons": [
+        [
+          "Medir quem realmente usa",
+          "Comparar gabaritos de duas escalas sem transferir projeto diretamente.",
+          "Tamanho não substitui engenharia.",
+          "Peças e medidas reais continuam não determinadas."
+        ],
+        [
+          "Interromper é competência",
+          "Diante de uma falha simulada, suspender a prova em vez de atravessar.",
+          "Coragem não legitima risco imposto.",
+          "Pode gerar custo político ao líder."
+        ],
+        [
+          "Relato de quem caiu",
+          "Comparar depoimento de vítima e afirmação do construtor.",
+          "Escutar usuários de todos os portes.",
+          "O mestre pode ser responsável por falha."
+        ]
+      ],
+      "game": [
+        "A ponte de dedos",
+        "Criar passagem com pequenas peças sem colocar pessoas sobre uma estrutura real."
+      ],
+      "problems": [
+        [
+          "O projeto ignorado",
+          "Vana apresenta projeto seguro, mas um herdeiro de maior posto recebe os recursos.",
+          "Testar critérios públicos e escutar quem usaria a obra."
+        ],
+        [
+          "A prova insegura",
+          "Orrik se recusa a cruzar um apoio defeituoso diante de sua família.",
+          "Tratar prudência como virtude ou punir recusa, com custos abertos."
+        ]
+      ],
+      "id": "comunidade:lxv:gigantes",
+      "nome": "O Terraço dos Pés de Nuvem",
+      "habitantes": "Gigantes das nuvens e famílias de outros gigantes, presença local proposta",
+      "professor_fonte": "sociedade:lxi:gigantes",
+      "colaborador_fonte": "sociedade:lxi:gigantes",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "contato_confirmado": false,
+      "escola_canonica": false
+    },
+    {
+      "key": "draconatos",
+      "place": "povoamento:xlvi:thargrid-montanhas:05",
+      "past": "comunidade:lxiii:coro",
+      "thesis": "Entre draconatos, feitos pessoais importam mais que antiguidade. Mas promessas heroicas feitas sem meios de execução podem arriscar vidas e transformar jovens em soldados compulsórios.",
+      "teacher": "Myrra Juramento-Lido",
+      "assistant": "Eron Vale-de-Gelo",
+      "pupils": [
+        {
+          "id": "pessoa:lxv:draconatos:01",
+          "nome": "Kessa Escama-Sem-Eco",
+          "identidade": "Aprendiz draconata de família sentinela",
+          "conflito": "Quer trabalhar com mediação e socorro, não com patrulha armada.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxv:draconatos:02",
+          "nome": "Darven Promessa-Vazia",
+          "identidade": "Aprendiz draconato de família com reputação contestada",
+          "conflito": "É cobrado a renovar um juramento ancestral cujo texto ninguém possui inteiro.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "places": [
+        [
+          "Pátio dos Juramentos Condicionais",
+          "Exercícios sobre limite, prazo e consentimento em pactos fictícios.",
+          "Nenhuma escolta real é estabelecida."
+        ],
+        [
+          "Sala da Testemunha Contradita",
+          "Comparação voluntária de depoimentos de capitães e pessoas protegidas.",
+          "Não divulgar nomes ou rotas de deslocados."
+        ]
+      ],
+      "lessons": [
+        [
+          "Promessa que cabe",
+          "Ler pactos com dever, prazo e condição de suspensão.",
+          "Prometer mais não é ser mais honrado.",
+          "Depende de interpretação e testemunhos."
+        ],
+        [
+          "O retorno dos protegidos",
+          "Comparar registros e relatos fictícios sem expor pessoas reais.",
+          "Feito precisa de evidência além da fama.",
+          "Proteger dados de refugiados."
+        ],
+        [
+          "A coragem de não jurar",
+          "Responder a pedido impossível com compromisso menor, verificável.",
+          "Recusa fundamentada também pode ser serviço.",
+          "Pode desafiar parentes importantes."
+        ]
+      ],
+      "game": [
+        "O juramento que cabe",
+        "Em cartas imaginárias, ganha quem propõe dever claro e reconhece limites, sem premiar bravatas."
+      ],
+      "problems": [
+        [
+          "A filha sem lança",
+          "Kessa é pressionada a aceitar treino armado apesar de desejar atuar no cuidado.",
+          "Reconhecer serviço não militar e o direito à escolha."
+        ],
+        [
+          "Assinar pelos mortos",
+          "Darven recebe obrigação de repetir juramento cujo teor foi perdido.",
+          "Suspender, reconstruir fontes ou assumir novo pacto consentido."
+        ]
+      ],
+      "id": "comunidade:lxv:draconatos",
+      "nome": "O Coro das Escamas Juradas",
+      "habitantes": "Draconatos de clãs diferentes, familiares anões e outros moradores propostos",
+      "professor_fonte": "comunidade:lxiii:coro",
+      "colaborador_fonte": "comunidade:lxiii:coro",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "contato_confirmado": false,
+      "escola_canonica": false
+    },
+    {
+      "key": "svirfneblin",
+      "place": "povoamento:xlvi:thargrid-montanhas:04",
+      "past": "comunidade:lxiv:gemas",
+      "thesis": "A proteção de caminhos é importante para o enclave proposto, mas o segredo não deve substituir o ensino. Crianças podem aprender a enviar pedidos de socorro e distinguir água de cultivo sem revelar passagens.",
+      "teacher": "Runa Barro-de-Lua",
+      "assistant": "Miri Escama-de-Gema",
+      "pupils": [
+        {
+          "id": "pessoa:lxv:svirfneblin:01",
+          "nome": "Eli Gota-Parda",
+          "identidade": "Aprendiz svirfneblin guardador de recipientes",
+          "conflito": "Deseja classificar água por uso sem memorizar caminhos confidenciais.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxv:svirfneblin:02",
+          "nome": "Varek Semente-Velada",
+          "identidade": "Aprendiz svirfneblin de família lapidária",
+          "conflito": "Quer estudar cultivo de alimentos, não herdar profissão com gemas.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "places": [
+        [
+          "Tabuleiro do Mapa Incompleto",
+          "Mapas imaginários para aprender sigilo sem expor entradas reais.",
+          "Exige separar exercícios de registros autênticos."
+        ],
+        [
+          "Mesa das Reservas em Sombra",
+          "Cartões de classificação de água, alimento e material de propagação.",
+          "Não declara água potável nem fungos comestíveis."
+        ]
+      ],
+      "lessons": [
+        [
+          "Avisar sem revelar",
+          "Desenhar socorro em mapa fictício sem marcar endereço privado.",
+          "Privacidade e solidariedade podem coexistir.",
+          "Mapas reais continuam inacessíveis."
+        ],
+        [
+          "Gota, rótulo e destino",
+          "Classificar usos de água em recipientes simulados.",
+          "Aparência não comprova qualidade.",
+          "Necessidade de conferência e cuidado."
+        ],
+        [
+          "A colheita seguinte",
+          "Usar fichas para distinguir alimento de reserva de propagação.",
+          "Cultivo requer matéria orgânica e continuidade.",
+          "Não assumir produtividade ou espécie comestível."
+        ]
+      ],
+      "game": [
+        "A passagem que não se desenha",
+        "No tabuleiro imaginário, o grupo ajuda uma pessoa perdida sem divulgar uma moradia."
+      ],
+      "problems": [
+        [
+          "A prova que revela a casa",
+          "Eli recebe ordem de desenhar fonte ligada a entrada secreta.",
+          "Recusar sem abandonar o ensino e registrar somente o uso da água."
+        ],
+        [
+          "Lapidar ou alimentar",
+          "Varek procura mentoria de cultivo contra vontade dos parentes.",
+          "Proteger escolha sem inventar subsistência garantida."
+        ]
+      ],
+      "id": "comunidade:lxv:svirfneblin",
+      "nome": "Cidadela das Gemas Silenciosas",
+      "habitantes": "Svirfneblin, morcegos cavernícolas e possíveis fungos sensíveis propostos",
+      "professor_fonte": "comunidade:lxiv:gemas",
+      "colaborador_fonte": "comunidade:lxiii:gemas",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "contato_confirmado": false,
+      "escola_canonica": false
+    }
+  ],
+  "meios_materiais": [
+    {
+      "id": "base:lxv:1",
+      "nome": "Tempo de supervisão",
+      "regra": "Mentores, aprendizes e cuidadores precisam de repouso e alimento. Formar não é produção sem custo."
+    },
+    {
+      "id": "base:lxv:2",
+      "nome": "Ferramental e segurança",
+      "regra": "Uma peça para ensinar deve ser adequada e segura; moldes e fogo de forja não podem ser impostos a crianças."
+    },
+    {
+      "id": "base:lxv:3",
+      "nome": "O direito à saída",
+      "regra": "Aprendizagem não deve se converter em contrato vitalício por nascimento."
+    },
+    {
+      "id": "base:lxv:4",
+      "nome": "Sigilo e testemunho",
+      "regra": "Proteção de documentos e pessoas vulneráveis não deve impedir questionamentos legítimos."
+    },
+    {
+      "id": "base:lxv:5",
+      "nome": "Brincadeira e memória",
+      "regra": "Brincar e criar narrativas não precisam gerar peças ou recrutas."
+    },
+    {
+      "id": "base:lxv:6",
+      "nome": "Acesso sem patrono",
+      "regra": "Não possuir clã, título ou prestígio não equivale à falta de habilidade."
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "interface:lxv:1",
+      "de": "comunidade:lxv:anões",
+      "para": "comunidade:lxv:gigantes",
+      "possibilidade": "Gabaritos de tamanhos distintos podem inspirar respostas, sem garantir aula ou viagem.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "interface:lxv:2",
+      "de": "comunidade:lxv:anões",
+      "para": "comunidade:lxv:draconatos",
+      "possibilidade": "Contratos de aprendizagem e promessas de serviço podem ser comparados sem novo tribunal.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "interface:lxv:3",
+      "de": "comunidade:lxv:draconatos",
+      "para": "comunidade:lxv:svirfneblin",
+      "possibilidade": "Promessas de resgate não garantem acesso a mapas protegidos.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "interface:lxv:4",
+      "de": "comunidade:lxv:gigantes",
+      "para": "comunidade:lxv:svirfneblin",
+      "possibilidade": "Tamanho e sigilo geram dilemas de passagem, sem rota reconhecida.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "interface:lxv:5",
+      "de": "comunidade:lxv:anões",
+      "para": "comunidade:lxv:svirfneblin",
+      "possibilidade": "Ofício e cultivo poderiam trocar técnicas só após contato e consentimento.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    }
+  ],
+  "fontes": [
+    "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+    "data/propostas/sociedades-gigantes-minerais-thargrid-ciclo61.json",
+    "data/propostas/engenharia-politica-da-forja-thargrid-ciclo62.json",
+    "data/propostas/abastecimento-sob-a-montanha-ciclo63.json",
+    "data/propostas/vida-domestica-cavernas-thargrid-ciclo64.json",
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+  ],
+  "fundamento": "Clãs anões transmitem ofícios; Ordenamento rege gigantes, não todo Thargrid; serviço e reputação importam a draconatos. As instituições e práticas pedagógicas específicas são propostas.",
+  "limites": [
+    "Nenhuma escola oficial, idade adulta, duração de curso ou diploma é canonizado.",
+    "Os oito aprendizes ainda não participaram de eventos da campanha.",
+    "Não transformar filhos em trabalhadores e soldados compulsórios por nascimento.",
+    "Pessoas anteriormente propostas são reutilizadas sem residência adicional confirmada.",
+    "Nenhuma comunidade possui posição ou rota aqui estabelecida.",
+    "A Cidadela não entrega mapas reais por causa de uma aula fictícia.",
+    "Nenhuma espécie, ficha DW ou segredo cosmológico foi acrescentado."
+  ]
+}
