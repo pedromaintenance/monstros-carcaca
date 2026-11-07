@@ -64,6 +64,10 @@ O [dossiê das Forjas de Cinza Fria e do Salão do Juramento de Cinza](docs/ENGE
 
 O [dossiê de alimentação e abastecimento subterrâneo](docs/ABASTECIMENTO_SOB_A_MONTANHA_CICLO63.md) aprofunda **3 comunidades preexistentes**, **9 espaços**, **9 instituições**, **9 personagens**, **9 conflitos**, **6 etapas do ciclo material**, o habitat fúngico XLVI e **3 organismos candidatos**, com [JSON estruturado](data/propostas/abastecimento-sob-a-montanha-ciclo63.json). Não cria rotas, estoques, quantidades ou cultivos canônicos.
 
+## Ciclo LXIV — A vida dentro da montanha
+
+O [dossiê doméstico de Thargrid](docs/VIDA_DOMESTICA_CAVERNAS_THARGRID_CICLO64.md) desenvolve **4 comunidades antigas**, **8 espaços de vida**, **12 práticas sociais**, **8 personagens novos e 4 retomados**, **8 conflitos**, **5 sistemas de sustento**, **2 organismos candidatos** e **5 interfaces condicionais**. [JSON estruturado](data/propostas/vida-domestica-cavernas-thargrid-ciclo64.json). Mantém água, ventilação, população, vizinhança e metabolismo mineral em aberto; nada é automaticamente canonizado.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.

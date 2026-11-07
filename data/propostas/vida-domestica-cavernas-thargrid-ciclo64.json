@@ -1,0 +1,545 @@
+{
+  "schema_version": "1.0",
+  "id": "worldbuilding:ciclo64:vida-domestica-thargrid",
+  "titulo": "Ciclo LXIV — A vida dentro da montanha",
+  "data_registro": "2026-11-07",
+  "estado": "proposta_editorial_nao_homologada",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "altera_campanha": false,
+  "fontes": [
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+    "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+    "data/propostas/sociedades-gigantes-minerais-thargrid-ciclo61.json",
+    "data/propostas/engenharia-politica-da-forja-thargrid-ciclo62.json",
+    "data/propostas/abastecimento-sob-a-montanha-ciclo63.json",
+    "data/propostas/povoamento-ecologia-thargrid-ironwood-eldroth-ciclo53.json"
+  ],
+  "metodo": "Vida doméstica como dependência material e política, sem inferir infraestrutura, vizinhança ou anatomia não confirmadas.",
+  "totais": {
+    "comunidades_preexistentes_aprofundadas": 4,
+    "cidades_novas": 0,
+    "espacos_domesticos_candidatos": 8,
+    "costumes_domesticos_candidatos": 12,
+    "pessoas_ineditas": 8,
+    "pessoas_reutilizadas": 4,
+    "conflitos_nao_ocorridos": 8,
+    "sistemas_de_sustento": 5,
+    "especies_candidatas_novas": 2,
+    "fauna_reutilizada": 2,
+    "interfaces_hipoteticas": 5,
+    "estados_condicionais": 4
+  },
+  "comunidades": [
+    {
+      "id": "salão",
+      "source": "povoamento:xlvi:thargrid-montanhas:01",
+      "title": "Dormir sem pertencer a um clã",
+      "domestic_model": "Casas de parentesco anão dividem ambientes com abrigos voluntários para deslocados que não possuem clã. Nenhuma família precisa jurar fidelidade para ser considerada moradora provisória; a duração, o direito de uso e a proteção da intimidade continuam em disputa.",
+      "life_conditions": "A água para beber, lavar, cuidar dos feridos e limpar recipientes é um custo material que precisa ser comprovado. Câmaras profundas podem exigir verificação de ar e umidade, mas o Salão não recebe um sistema de ventilação milagroso.",
+      "child_care": "Aprendizes têm tempo de formação, mas crianças pequenas e pessoas doentes necessitam de cuidados não contabilizados na produção. A filiação a um clã não deve definir quem merece atenção.",
+      "memory": "Anciãos guardam relatos dos salões ancestrais; deslocados podem decidir quais nomes e histórias desejam registrar sem produzir listas para patrulhas.",
+      "source_refs": [
+        "sociedade:lxii:salao",
+        "comunidade:lxiii:salao"
+      ],
+      "spaces": [
+        [
+          "Casa das Soleiras Compartilhadas",
+          "Refúgio familiar candidato em câmaras já habitadas; exige autorização de ocupantes, espaço e acesso.",
+          "Clãs podem cobrar juramento em troca de abrigo."
+        ],
+        [
+          "Bacia das Águas Contadas",
+          "Área de limpeza e separação de água de uso e água de consumo, se houver recursos.",
+          "Uma fonte de água não comprovada é tratada como provisão inesgotável."
+        ]
+      ],
+      "practices": [
+        [
+          "Pano da visita",
+          "As famílias acolhidas podem marcar um espaço privado sem precisar divulgar a origem de todos os membros."
+        ],
+        [
+          "Vigília dos recipientes",
+          "Responsáveis conferem vazamentos e sujeira antes de redistribuir água; limpar compete com outros usos."
+        ],
+        [
+          "Conto sem sobrenome",
+          "Crianças e refugiados podem participar das memórias do Salão sem inscrição compulsória num clã."
+        ]
+      ],
+      "actors": [
+        {
+          "name": "Elae Pano-Remendado",
+          "role": "cuidadora humana candidata",
+          "aim": "obter abrigo seguro para crianças deslocadas sem divulgar seus esconderijos",
+          "dilemma": "a ausência de identificação torna mais difícil comprovar necessidades a um conselho"
+        },
+        {
+          "name": "Brum Talha-Respiro",
+          "role": "pedreiro anão candidato",
+          "aim": "investigar correntes de ar antes que se transformem câmaras em alojamentos",
+          "dilemma": "fechar uma passagem perigosa pode reduzir a capacidade de acolhimento"
+        }
+      ],
+      "reused": [
+        {
+          "name": "Ivara Cinza-Morna",
+          "from": "sociedade:lxii:salao",
+          "role": "refugiada e reparadora de cestos",
+          "continuity": "se preocupa com privacidade e com a fila de reparos, sem residência fixada para nova câmara"
+        }
+      ],
+      "conflicts": [
+        [
+          "O quarto que não tinha ar",
+          "Uma antiga despensa é oferecida como dormitório. A ventilação jamais foi verificada, e a urgência do acolhimento pressiona pela abertura imediata.",
+          "Abrir após avaliação; instalar abrigo provisório; reduzir ocupação e reconhecer o limite."
+        ],
+        [
+          "A água das mãos pequenas",
+          "Uma câmara necessita de água para higiene de crianças enquanto uma oficina reivindica todo o volume anunciado.",
+          "Conferir o volume real; separar usos essenciais; negociar a obrigação de fornecimento."
+        ]
+      ],
+      "nome": "Salão do Juramento de Cinza",
+      "id_ciclo": "comunidade:lxiv:salão",
+      "povos_anteriormente_propostos": "Clãs anões, draconatos mediadores e aprendizes gigantes propostos",
+      "autoridade_anteriormente_proposta": "Conselho de clãs que submete disputas a testemunhas draconatas",
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "aprovacao_autoral": false,
+      "espacos_novos_sem_cartografia": true,
+      "contato_com_outros_confirmado": false,
+      "estado": "proposta_nao_canonica"
+    },
+    {
+      "id": "forjas",
+      "source": "povoamento:xlvi:thargrid-montanhas:03",
+      "title": "A casa não deve respirar a fumaça do trabalho",
+      "domestic_model": "Oficinas de metalurgia têm trabalhadores e famílias de diferentes tamanhos; o lugar de trabalho não vira automaticamente dormitório de aprendizes. A distinção entre jornada, descanso e cuidado pode ser um direito disputado.",
+      "life_conditions": "Combustão, calor, fumaça, carga suspensa e resíduos tornam importante decidir onde as pessoas repousam e como entram e saem. A existência de forjas profundas não estabelece tiragem adequada, combustível infinito ou ausência de risco para gigantes.",
+      "child_care": "Aprendizes não são todos adultos. A formação só funciona com supervisão, descanso e possibilidade de recusar tarefas acima de suas capacidades. A tolerância térmica de um gigante do fogo não deve ser imposta a outros corpos.",
+      "memory": "A marca do artesão pode registrar também quem corrigiu falhas e quem sofreu exposição, não apenas o prestígio da família do mestre.",
+      "source_refs": [
+        "sociedade:lxii:forjas"
+      ],
+      "spaces": [
+        [
+          "Quarto do Turno Arrefecido",
+          "Espaço de repouso afastado da zona de trabalho, cuja existência e isolamento são propostas.",
+          "Mestres podem transformar descanso em favor cobrado aos ajudantes."
+        ],
+        [
+          "Pátio do Ar Devolvido",
+          "Ponto candidato para inspeção de tiragem e fumaça, sem garantir qualquer vazão.",
+          "O calor pode ser tolerável para um mestre e perigoso para os auxiliares."
+        ]
+      ],
+      "practices": [
+        [
+          "Martelo pousado",
+          "Uma pessoa ameaçada pelo ambiente solicita pausa e apresenta motivo, mesmo sem prestígio de clã."
+        ],
+        [
+          "Reparo antes do orgulho",
+          "A verificação de ferramenta defeituosa precede a atribuição de culpa por hierarquia."
+        ],
+        [
+          "Comida fora do forno",
+          "O descanso e as refeições não devem ser confundidos com tarefas cumpridas ao lado do metal quente."
+        ]
+      ],
+      "actors": [
+        {
+          "name": "Noira Fuligem-Clara",
+          "role": "ajudante anã candidata",
+          "aim": "organizar períodos de descanso reconhecidos como parte da produção",
+          "dilemma": "parar uma equipe pode atrasar reparo necessário a refugiados"
+        },
+        {
+          "name": "Kavrom Fole-Quebrado",
+          "role": "reparador gigante candidato",
+          "aim": "apresentar uma solução de ventilação compatível com diferentes trabalhadores",
+          "dilemma": "seu projeto requer materiais que já foram prometidos a uma obra civil"
+        }
+      ],
+      "reused": [
+        {
+          "name": "Sula Escória-Nova",
+          "from": "sociedade:lxii:forjas",
+          "role": "auxiliar refugiada",
+          "continuity": "questiona exposição à fumaça e o direito de interromper trabalho inseguro"
+        }
+      ],
+      "conflicts": [
+        [
+          "O leito na sala do forno",
+          "Jovens aprendizes passam a dormir junto de equipamentos quentes quando outra área é requisitada para material militar.",
+          "Readequar espaço; suspender tarefas; negociar o uso sem presumir dormitório seguro."
+        ],
+        [
+          "A fumaça sem dono",
+          "Uma inspeção identifica sinais de risco, mas a responsabilidade pela extração e manutenção é contestada.",
+          "Rever processo e fonte do problema; redistribuir custos; adiar encomenda perigosa."
+        ]
+      ],
+      "nome": "As Forjas de Cinza Fria",
+      "id_ciclo": "comunidade:lxiv:forjas",
+      "povos_anteriormente_propostos": "Gigantes do fogo e anões metalúrgicos propostos, trabalhadores de outras linhagens",
+      "autoridade_anteriormente_proposta": "Câmara de mestres com presidência alternada e direito a dissenso",
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "aprovacao_autoral": false,
+      "espacos_novos_sem_cartografia": true,
+      "contato_com_outros_confirmado": false,
+      "estado": "proposta_nao_canonica"
+    },
+    {
+      "id": "gemas",
+      "source": "povoamento:xlvi:thargrid-montanhas:04",
+      "title": "O cuidado de um enclave sem revelar a porta",
+      "domestic_model": "Pequenas câmaras svirfneblin podem acolher parentes, aprendizes e sobreviventes sem que o enclave tenha de divulgar a localização de seus acessos. Morar com sigilo não elimina disputas de espaço, privacidade e cuidado.",
+      "life_conditions": "A água usada no cultivo não é automaticamente potável, e a água potável não é automaticamente abundante. Crescimento de fungos requer matéria orgânica e condições apropriadas. Morcegos e insetos não são prova de ar respirável nem sistema sanitário.",
+      "child_care": "O ensino pode incluir cultivo, cartografia protegida e reconhecimento de ambientes sem obrigar crianças a entrar em galerias inseguras. Jovens têm direito a errar sem serem transformados em guardas compulsórios.",
+      "memory": "Relatos podem ser preservados com nomes omitidos e mapas parciais. O direito de esquecer uma passagem perigosa pode entrar em conflito com o dever de registrar um desastre.",
+      "source_refs": [
+        "comunidade:lxiii:gemas"
+      ],
+      "spaces": [
+        [
+          "Berço das Pedras Veladas",
+          "Área candidata de repouso e aprendizagem para crianças e cuidadores; não é incubadora mágica.",
+          "A proteção exige tempo e pode retirar trabalhadores da triagem de alimentos."
+        ],
+        [
+          "Tanque da Gota Separada",
+          "Ponto proposto para separar águas por origem e uso, sem declarar nascente ou potabilidade.",
+          "Quando a água falta, a pressão por usá-la sem verificação aumenta."
+        ]
+      ],
+      "practices": [
+        [
+          "Mapa incompleto por escolha",
+          "Uma família pode pedir socorro sem apresentar os nomes de todas as passagens que conhece."
+        ],
+        [
+          "Três gotas, três destinos",
+          "Água para beber, higienizar e cultivar é distinguida conforme qualidade verificada, não pela mesma aparência."
+        ],
+        [
+          "Aprender a devolver",
+          "Crianças recebem tarefas seguras e adequadas à capacidade, sem cobrança de trabalho adulto."
+        ]
+      ],
+      "actors": [
+        {
+          "name": "Runa Barro-de-Lua",
+          "role": "cuidadora svirfneblin candidata",
+          "aim": "ensinar crianças a reconhecer riscos sem expor as entradas",
+          "dilemma": "sua cautela pode restringir aprendizado necessário a futuras emergências"
+        },
+        {
+          "name": "Tevin Vela-Oculta",
+          "role": "guardador de águas svirfneblin candidato",
+          "aim": "documentar a origem de cada reservatório sem registrar passagens sensíveis",
+          "dilemma": "um pedido de prova externa pode obrigá-lo a expor o enclave"
+        }
+      ],
+      "reused": [
+        {
+          "name": "Onda Duas-Chaves",
+          "from": "comunidade:lxiii:gemas",
+          "role": "guardiã de mapas",
+          "continuity": "o dever de sigilo pode atrasar ajuda, mas não comprova uma rota até outro assentamento"
+        }
+      ],
+      "conflicts": [
+        [
+          "O pote de água com nome errado",
+          "Um registro apresenta como potável uma reserva destinada ao cultivo, sem exame de qualidade.",
+          "Separar lotes, revisar os registros e assumir publicamente a incerteza."
+        ],
+        [
+          "A saída que criança conhece",
+          "Uma criança recorda uma abertura desconhecida de adultos, mas revelá-la pode comprometer o refúgio.",
+          "Ouvir sem coagir; proteger a criança; buscar opções de segurança antes de divulgar."
+        ]
+      ],
+      "nome": "Cidadela das Gemas Silenciosas",
+      "id_ciclo": "comunidade:lxiv:gemas",
+      "povos_anteriormente_propostos": "Svirfneblin, morcegos cavernícolas e possíveis fungos sensíveis propostos",
+      "autoridade_anteriormente_proposta": "Autogoverno do enclave, sem vassalagem geral ao Reino Sob a Montanha",
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "aprovacao_autoral": false,
+      "espacos_novos_sem_cartografia": true,
+      "contato_com_outros_confirmado": false,
+      "estado": "proposta_nao_canonica"
+    },
+    {
+      "id": "minerais",
+      "source": "povoamento:xlvi:thargrid-montanhas:06",
+      "title": "Casa, corpo e vizinhança não são sinônimos",
+      "domestic_model": "Elementais minerais conscientes são hipótese de povoamento anterior, distintos dos gigantes de pedra do cânone. Uma parede poderia integrar um indivíduo e, ao mesmo tempo, abrigar outros. Moradia compartilhada não representa posse sobre o corpo de quem oferece a superfície.",
+      "life_conditions": "Necessidades de água, ar e metabolismo de cada elemental não foram estabelecidas; visitantes orgânicos, em compensação, dependem de condições próprias e não podem supor que a rocha que os acolhe é uma máquina de ventilação.",
+      "child_care": "A existência de indivíduos jovens minerais, filiação por fragmentação ou transmissão de memória por fissuras ainda é aberta. O cuidado pode ser definido por escuta e proteção, não por alegações de uma biologia que ninguém aprovou.",
+      "memory": "Reparar uma fratura pode estabilizar uma passagem, mas também modificar um registro de vida. O próprio afetado deve poder se manifestar conforme sua capacidade, inclusive com resposta demorada.",
+      "source_refs": [
+        "sociedade:lxi:minerais"
+      ],
+      "spaces": [
+        [
+          "Soleira de Consentimento Demorado",
+          "Área possível onde pessoas são ouvidas antes de usar passagens que podem ser parte de corpos.",
+          "Uma urgência externa tenta transformar demora na resposta em autorização."
+        ],
+        [
+          "Recanto dos Visitantes Respiráveis",
+          "Abrigo candidato para seres orgânicos, separado de corpos minerais quando necessário.",
+          "A presença de uma pessoa mineral não fornece oxigênio, água ou suporte vital por si só."
+        ]
+      ],
+      "practices": [
+        [
+          "Pedir antes de apoiar",
+          "Abrir moradia, fixar prateleiras ou apoiar carga exige distinguir parede inerte de corpo consciente."
+        ],
+        [
+          "Fratura escolhida",
+          "Uma pessoa decide se deseja reparo ou preservação de marca histórica, quando puder expressar vontade."
+        ],
+        [
+          "Escutar mais devagar",
+          "Uma audiência não encerra por simples diferença entre o ritmo de resposta mineral e o do visitante."
+        ]
+      ],
+      "actors": [
+        {
+          "name": "Urel Vão-Aberto",
+          "role": "morador mineral candidato",
+          "aim": "ajudar visitantes sem converter sua superfície em passagem pública permanente",
+          "dilemma": "fechar um acesso pode deixar uma família orgânica sem abrigo"
+        },
+        {
+          "name": "Larra Cinzel-Pousado",
+          "role": "escultora anã candidata",
+          "aim": "construir suportes sem ferir habitantes minerais",
+          "dilemma": "precisa de pedra para um reparo urgente e não conhece outra fonte"
+        }
+      ],
+      "reused": [
+        {
+          "name": "Vâr Muralha-Cedida",
+          "from": "sociedade:lxi:minerais",
+          "role": "habitante mineral proposto",
+          "continuity": "seu desejo de controlar o uso de sua superfície pode ser confundido com obstrução arbitrária"
+        }
+      ],
+      "conflicts": [
+        [
+          "O teto de alguém",
+          "Visitantes querem fixar suportes numa parede que um morador identifica como parte de seu corpo.",
+          "Aguardar resposta, reprojetar suportes ou buscar outro lugar de repouso."
+        ],
+        [
+          "A água que atravessa o testemunho",
+          "Uma fissura com história pessoal deixa passar umidade até o abrigo de seres orgânicos.",
+          "Negociar reforço reversível, mudar abrigos e preservar o direito de consentimento."
+        ]
+      ],
+      "nome": "A Vila da Pedra que Respira",
+      "id_ciclo": "comunidade:lxiv:minerais",
+      "povos_anteriormente_propostos": "Elementais de pedra com organização própria e escultores gigantes propostos",
+      "autoridade_anteriormente_proposta": "Conselho de memória mineral que não reconhece automaticamente jurisdição anã",
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "aprovacao_autoral": false,
+      "espacos_novos_sem_cartografia": true,
+      "contato_com_outros_confirmado": false,
+      "estado": "proposta_nao_canonica"
+    }
+  ],
+  "sistemas": [
+    {
+      "id": "agua",
+      "nome": "Água: beber não é cultivar",
+      "entrada": "Fonte, quantidade e qualidade por uso são desconhecidas nos quatro núcleos.",
+      "verificacao": "Registrar a origem e separar água de beber, higiene, oficina e cultivo conforme condições reais.",
+      "trabalho": "Observar recipientes e vazamentos, revisar rótulos e reconhecer incerteza antes de consumir.",
+      "falha": "Registros confusos fazem uma reserva insegura ser considerada adequada.",
+      "contradicao": "O uso industrial compete com cuidado doméstico; nenhuma necessidade se resolve inventando um poço.",
+      "consequencia": "Suspeita de água comprometida exige revisão do uso, não uma epidemia obrigatória."
+    },
+    {
+      "id": "ar",
+      "nome": "Ar: a caverna não é uma máquina de respirar",
+      "entrada": "Volumes de câmaras, entradas, saídas, combustão e taxas de renovação desconhecidos.",
+      "verificacao": "Inspecionar sinais físicos, avaliar locais de repouso e de trabalho sem declarar um fluxo seguro.",
+      "trabalho": "Verificar obstruções, condições de fumaça e adequação de abrigos para corpos diferentes.",
+      "falha": "Uma sala de estoque vira dormitório sem exame do ambiente.",
+      "contradicao": "Defesa exige manter entradas discretas; moradores dependem de condições habitáveis.",
+      "consequencia": "A falta de informação pode obrigar fechamento preventivo ou realocação, se a mesa escolher."
+    },
+    {
+      "id": "residuos",
+      "nome": "Resíduos: toda produção deixa restos",
+      "entrada": "Lixo de alimentos, substratos exauridos, águas usadas e escória precisam de destinos próprios.",
+      "verificacao": "Não presumir que todo resíduo orgânico pode voltar ao cultivo nem que escória alimenta uma colônia mineral.",
+      "trabalho": "Separar, conter, transportar e revisar riscos sem criar valas ou galerias cartográficas.",
+      "falha": "Misturar restos de oficina e de cozinha contamina ambientes de uso doméstico.",
+      "contradicao": "O trabalho de descarte é indispensável e pouco prestigiado; delegá-lo a refugiados não elimina risco.",
+      "consequencia": "Acúmulo cria disputa de espaço e manutenção, sem impacto ambiental medido."
+    },
+    {
+      "id": "cuidado",
+      "nome": "Cuidado: tempo de pessoas é recurso finito",
+      "entrada": "Crianças, feridos, trabalhadores exaustos e visitantes de outras espécies precisam de tempos e ambientes distintos.",
+      "verificacao": "Conferir quem pode cuidar, quais recursos existem e quais deveres são voluntários.",
+      "trabalho": "Organizar repouso, aprendizagem, cuidado de pessoas e manutenção dos espaços, com acordos revisáveis.",
+      "falha": "Quem cuida deixa de receber comida ou perde voz sobre a distribuição.",
+      "contradicao": "A resistência precisa de trabalho defensivo, mas não pode sobreviver se destruir sua reprodução social.",
+      "consequencia": "Sobrecarregar cuidadores diminui a capacidade futura de sustento, sem números inventados."
+    },
+    {
+      "id": "reparo",
+      "nome": "Manutenção: habitar também é consertar",
+      "entrada": "Portas, pisos, suportes, recipientes e estruturas possuem condições não inventariadas.",
+      "verificacao": "Distinguir defeito de projeto, desgaste e material que possa ser corpo consciente.",
+      "trabalho": "Registrar pedidos, ouvir usuários e separar urgência real de privilégio político.",
+      "falha": "Uma autoridade chama 'pedra disponível' a superfície de um morador mineral.",
+      "contradicao": "A pressa de reparar um abrigo pode exigir recursos e consentimentos que a defesa deseja ignorar.",
+      "consequencia": "Suspensão, adaptação ou negociação são saídas; não há colapso obrigatório."
+    }
+  ],
+  "fauna_candidata": [
+    {
+      "id": "criatura:lxiv:01",
+      "nome": "Traça do Tecido Morno",
+      "nicho": "Inseto candidato cujas larvas poderiam consumir fibras de origem orgânica armazenadas em ambientes adequados.",
+      "risco": "Deterioração de roupa de repouso; não indica que toda sala com roupas esteja infestada.",
+      "manejo": "Inspecionar tecidos e armazenamento, conservar parte da fauna sem espalhá-la para abrigos.",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    },
+    {
+      "id": "criatura:lxiv:02",
+      "nome": "Colêmbolo das Gotas Lentas",
+      "nicho": "Microartrópode candidato que consome fungos ou matéria em decomposição em áreas úmidas.",
+      "risco": "Sua presença pode acompanhar umidade, mas não mede potabilidade ou enfermidade.",
+      "manejo": "Investigar o substrato e a umidade antes de atribuir contaminação a uma espécie.",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null
+    }
+  ],
+  "fauna_retornada": [
+    {
+      "source": "criatura:liii:02",
+      "name": "Musgo do Fôlego Mineral",
+      "limite": "Ocorrência específica desconhecida; retração por secura não garante qualidade do ar.",
+      "ocorrencia_confirmada": false,
+      "coocorrencia_confirmada": false
+    },
+    {
+      "source": "criatura:lxiii:03",
+      "name": "Morcego da Fenda Lavrada",
+      "limite": "A presença de morcego não prova acesso seguro, nem origem de água ou fertilizante.",
+      "ocorrencia_confirmada": false,
+      "coocorrencia_confirmada": false
+    }
+  ],
+  "interfaces": [
+    {
+      "id": "interface:lxiv:01",
+      "de": "comunidade:lxiv:salão",
+      "para": "comunidade:lxiv:forjas",
+      "possibilidade": "Água, repouso e manutenção podem competir por recursos, sem que se confirme compartilhamento de fontes.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "fronteira_comum_confirmada": false
+    },
+    {
+      "id": "interface:lxiv:02",
+      "de": "comunidade:lxiv:gemas",
+      "para": "comunidade:lxiv:salão",
+      "possibilidade": "Possível acolhimento de deslocados exige contato real e proteção do sigilo svirfneblin.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "fronteira_comum_confirmada": false
+    },
+    {
+      "id": "interface:lxiv:03",
+      "de": "comunidade:lxiv:forjas",
+      "para": "comunidade:lxiv:minerais",
+      "possibilidade": "Extração de material e reparo de abrigo podem afetar seres minerais, mas nenhuma obra conjunta ocorreu.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "fronteira_comum_confirmada": false
+    },
+    {
+      "id": "interface:lxiv:04",
+      "de": "comunidade:lxiv:minerais",
+      "para": "comunidade:lxiv:salão",
+      "possibilidade": "Hospedagem de seres orgânicos exigiria condições próprias, consulta e eventual acesso desconhecido.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "fronteira_comum_confirmada": false
+    },
+    {
+      "id": "interface:lxiv:05",
+      "de": "comunidade:lxiv:gemas",
+      "para": "comunidade:lxiv:minerais",
+      "possibilidade": "Diferentes formas de comunicação e segredo podem ser comparadas sem afirmar visitas entre povos.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "fronteira_comum_confirmada": false
+    }
+  ],
+  "estados_possiveis": [
+    {
+      "nome": "A água muda de destino",
+      "gatilho": "Um recipiente tem origem ou uso rotulado de modo controverso.",
+      "sinal": "Diferença entre o registro e o material disponível.",
+      "escolhas": "Conferir, isolar, redistribuir ou alterar o projeto de uso.",
+      "estado": "nao_ocorrido"
+    },
+    {
+      "nome": "O repouso se torna urgente",
+      "gatilho": "Uma área de trabalho passa a ser usada como abrigo sem avaliação.",
+      "sinal": "Reclamações de trabalhadores e cuidadores sobre o ambiente.",
+      "escolhas": "Suspender, transferir moradores ou adaptar a proposta sem inventar capacidade.",
+      "estado": "nao_ocorrido"
+    },
+    {
+      "nome": "A manutenção encontra um corpo",
+      "gatilho": "Um reparador pretende intervir numa superfície que alguém reconhece como corpo.",
+      "sinal": "Recusa ou pedido de tempo para resposta.",
+      "escolhas": "Buscar outra técnica, aguardar consentimento ou deslocar o uso da sala.",
+      "estado": "nao_ocorrido"
+    },
+    {
+      "nome": "A criança sabe mais que a guarda",
+      "gatilho": "Uma jovem relata um risco ou passagem não conhecido pelos responsáveis.",
+      "sinal": "Testemunho divergente de adulto ou registro.",
+      "escolhas": "Ouvir sem coagir, verificar risco e proteger o sigilo.",
+      "estado": "nao_ocorrido"
+    }
+  ],
+  "salvaguardas": [
+    "A existência canônica de galerias, cidades e clãs anões não comprova qualquer infraestrutura particular aqui descrita.",
+    "Gigantes de pedra canônicos e elementais minerais propostos não são equivalentes.",
+    "Necessidades biológicas de elementais minerais ainda não são conhecidas; necessidades de visitantes orgânicos não são assumidas como iguais.",
+    "Não presumir que fonte de água é potável, que cavidade tem ventilação adequada ou que um fungo é comestível.",
+    "Nenhum cômodo candidato representa bairro novo ou coordenada no atlas.",
+    "Nenhum número de moradores, consumo, taxa de ar, incidência de doenças ou ciclo de vida foi inventado.",
+    "Trabalho de cuidado não implica submissão a clã, gênero, espécie ou juramento; papéis sociais são passíveis de disputa.",
+    "Nenhuma visita entre comunidades, transporte, passagem ou evento ocorreu.",
+    "Não revelar a história de Kindau ou os segredos de Gualápolis, Jorou, Ulorian e a Lança."
+  ]
+}
