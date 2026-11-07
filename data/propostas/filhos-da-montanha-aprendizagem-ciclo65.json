@@ -104,7 +104,8 @@
       "aprovacao_autoral": false,
       "localizacao": null,
       "contato_confirmado": false,
-      "escola_canonica": false
+      "escola_canonica": false,
+      "coordenadas": null
     },
     {
       "key": "gigantes",
@@ -187,7 +188,8 @@
       "aprovacao_autoral": false,
       "localizacao": null,
       "contato_confirmado": false,
-      "escola_canonica": false
+      "escola_canonica": false,
+      "coordenadas": null
     },
     {
       "key": "draconatos",
@@ -270,7 +272,8 @@
       "aprovacao_autoral": false,
       "localizacao": null,
       "contato_confirmado": false,
-      "escola_canonica": false
+      "escola_canonica": false,
+      "coordenadas": null
     },
     {
       "key": "svirfneblin",
@@ -353,7 +356,8 @@
       "aprovacao_autoral": false,
       "localizacao": null,
       "contato_confirmado": false,
-      "escola_canonica": false
+      "escola_canonica": false,
+      "coordenadas": null
     }
   ],
   "meios_materiais": [
