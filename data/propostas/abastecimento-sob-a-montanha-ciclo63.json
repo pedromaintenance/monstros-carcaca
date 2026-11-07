@@ -93,7 +93,9 @@
       "autoridade_original": "Autogoverno do enclave, sem vassalagem geral ao Reino Sob a Montanha",
       "localizacao": null,
       "rota_confirmada": false,
-      "aprovacao_autoral": false
+      "aprovacao_autoral": false,
+      "contato_confirmado": false,
+      "coordenadas": null
     },
     {
       "id": "povoamento:xlvi:thargrid-montanhas:01",
@@ -160,7 +162,9 @@
       "autoridade_original": "Conselho de clãs que submete disputas a testemunhas draconatas",
       "localizacao": null,
       "rota_confirmada": false,
-      "aprovacao_autoral": false
+      "aprovacao_autoral": false,
+      "contato_confirmado": false,
+      "coordenadas": null
     },
     {
       "id": "povoamento:xlvi:thargrid-montanhas:05",
@@ -227,7 +231,9 @@
       "autoridade_original": "Juízes por reputação, não por antiguidade hereditária",
       "localizacao": null,
       "rota_confirmada": false,
-      "aprovacao_autoral": false
+      "aprovacao_autoral": false,
+      "contato_confirmado": false,
+      "coordenadas": null
     }
   ],
   "habitat": {
