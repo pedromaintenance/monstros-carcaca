@@ -60,6 +60,10 @@ O [dossiê dos gigantes e seres minerais](docs/SOCIEDADES_GIGANTES_MINERAIS_THAR
 
 O [dossiê das Forjas de Cinza Fria e do Salão do Juramento de Cinza](docs/ENGENHARIA_POLITICA_DA_FORJA_THARGRID_CICLO62.md) aprofunda **duas comunidades propostas**, **8 espaços**, **8 instituições**, **8 ofícios**, **8 personagens** e **6 conflitos**, mais uma cadeia produtiva com **6 etapas**, **4 demandas fictícias**, **5 interfaces possíveis** e **3 reusos ecológicos**. [JSON estruturado](data/propostas/engenharia-politica-da-forja-thargrid-ciclo62.json). Nenhuma mina, rota, forja ou ocorrência é homologada automaticamente.
 
+## Ciclo LXIII — O pão sob a montanha
+
+O [dossiê de alimentação e abastecimento subterrâneo](docs/ABASTECIMENTO_SOB_A_MONTANHA_CICLO63.md) aprofunda **3 comunidades preexistentes**, **9 espaços**, **9 instituições**, **9 personagens**, **9 conflitos**, **6 etapas do ciclo material**, o habitat fúngico XLVI e **3 organismos candidatos**, com [JSON estruturado](data/propostas/abastecimento-sob-a-montanha-ciclo63.json). Não cria rotas, estoques, quantidades ou cultivos canônicos.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.

@@ -1,0 +1,400 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Ciclo LXIII — O pão sob a montanha",
+  "data_registro": "2026-11-07",
+  "status": "proposta_nao_homologada",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "altera_campanhas": false,
+  "fontes": [
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json",
+    "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+    "data/propostas/engenharia-politica-da-forja-thargrid-ciclo62.json",
+    "data/propostas/sociedades-gigantes-minerais-thargrid-ciclo61.json"
+  ],
+  "fundamento": "O texto autoral confirma produção alimentar em cavernas por certos clãs anões e depósitos de provisões, mas não identifica espécies, volumes ou relações entre estes assentamentos.",
+  "totais": {
+    "comunidades": 3,
+    "novas_cidades": 0,
+    "espacos": 9,
+    "instituicoes": 9,
+    "personagens": 9,
+    "personagens_reutilizados": 2,
+    "conflitos": 9,
+    "etapas_materiais": 6,
+    "habitats_aprofundados": 1,
+    "especies_novas_candidatas": 3,
+    "relacoes_possiveis": 5
+  },
+  "comunidades": [
+    {
+      "id": "povoamento:xlvi:thargrid-montanhas:04",
+      "key": "gemas",
+      "theme": "Produção sem expor o esconderijo",
+      "life": "Svirfneblin, morcegos cavernícolas e fungos sensíveis são habitantes e organismos propostos. Lapidar gemas não produz alimento. Cultivar fungos exige substrato orgânico renovável, água adequada, trabalho e espécies comprovadamente comestíveis; nada disso foi medido.",
+      "politics": "O mapa do enclave é guardado em pares; abrir todas as passagens a uma escolta poderia entregar os moradores. A autonomia não cancela a possibilidade de oferecer alimento, mas nenhum excedente foi demonstrado.",
+      "places": [
+        [
+          "Leiras das Três Procedências",
+          "Separar substrato conhecido, duvidoso e descartado.",
+          "Mistura pode perder a cultura e impedir próxima colheita."
+        ],
+        [
+          "Porta do Mapa Partido",
+          "Consultar caminhos sob testemunho de duas guardas.",
+          "O acesso ao mapa não equivale a direito de divulgação."
+        ],
+        [
+          "Mesa da Crosta Reservada",
+          "Distinguir fungos colhidos de inóculo para o próximo ciclo.",
+          "Uma promessa de doação pode destruir reserva reprodutiva."
+        ]
+      ],
+      "rules": [
+        "Roda dos Cultivadores: trabalhadores avaliam o substrato; mestre sem cultivar não inventaria safra.",
+        "Guarda Dupla: ninguém detém sozinho a passagem; nem toda demanda externa justifica revelar o mapa.",
+        "Mesa de Acolhimento: ouvir necessidades sem registrar compulsoriamente nomes de refugiados."
+      ],
+      "people": [
+        [
+          "Miri Escama-de-Gema",
+          "cultivadora svirfneblin",
+          "quer alimentar visitantes sem sacrificar a próxima cultura"
+        ],
+        [
+          "Onda Duas-Chaves",
+          "guardiã svirfneblin",
+          "teme que divulgar um caminho para salvar poucos exponha muitos"
+        ],
+        [
+          "Túrico Crosta-Mansa",
+          "aprendiz de depósito",
+          "descobre um lote suspeito e hesita em registrar a perda"
+        ]
+      ],
+      "conflicts": [
+        [
+          "A colheita que não nasceu",
+          "Uma delegação exige alimento ainda em crescimento; distribuir agora pode encerrar o próximo ciclo."
+        ],
+        [
+          "O mapa como pagamento",
+          "Um aliado oferece mantimentos em troca da rota sigilosa, sem comprovar que dispõe da carga."
+        ],
+        [
+          "O substrato sem nome",
+          "Material orgânico desconhecido melhora a aparência de um cultivo; segurança permanece incerta."
+        ]
+      ],
+      "id_ciclo": "comunidade:lxiii:gemas",
+      "nome": "Cidadela das Gemas Silenciosas",
+      "habitantes_originais": "Svirfneblin, morcegos cavernícolas e possíveis fungos sensíveis propostos",
+      "autoridade_original": "Autogoverno do enclave, sem vassalagem geral ao Reino Sob a Montanha",
+      "localizacao": null,
+      "rota_confirmada": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento:xlvi:thargrid-montanhas:01",
+      "key": "salao",
+      "theme": "O depósito não é de quem tem a chave",
+      "life": "O Salão tem clãs anões, aprendizes gigantes e mediadores draconatos propostos. Depósitos e provisões são possíveis, porém faltam inventários, métodos de conservação, água e procedência. Promessa jurada não é alimento recebido.",
+      "politics": "O conselho debate quem recebe primeiro: sentinelas, crianças, pessoas feridas ou deslocados sem clã. Juramentos organizam deveres entre quem os aceitou; não tornam o auxílio alimentar uma servidão hereditária.",
+      "places": [
+        [
+          "Câmara dos Recipientes Contestados",
+          "Separar alimentos efetivamente presentes de documentos de fornecimento.",
+          "O nome 'despensa' não prova conservação ou estoque."
+        ],
+        [
+          "Balança dos Sacos Prometidos",
+          "Confrontar contabilidade e volume recebido.",
+          "Chefes podem apresentar recibos como prova física."
+        ],
+        [
+          "Banco das Famílias sem Selo",
+          "Ouvir pessoas sem vínculo de clã.",
+          "Registrar necessidades pode expor nomes à perseguição."
+        ]
+      ],
+      "rules": [
+        "Conselho das Medidas: critérios públicos para repartir alimento sem inventar quantidades.",
+        "Testemunhas da Fome Não Jurada: não exigir vassalagem para socorrer vulneráveis.",
+        "Mesa das Contas Reparáveis: diferença no estoque exige investigação, não acusação automática."
+      ],
+      "people": [
+        [
+          "Ivara Cinza-Morna",
+          "refugiada humana reaproveitada do LXII",
+          "precisa de alimento sem divulgar companheiros"
+        ],
+        [
+          "Kaer Juramento-Exato",
+          "draconato mediador reaproveitado do LXII",
+          "um pacto que validou tinha prazo injusto"
+        ],
+        [
+          "Densa do Saco Vazio",
+          "conferente anã candidata",
+          "registrar escassez pode provocar retaliação dos chefes"
+        ]
+      ],
+      "conflicts": [
+        [
+          "A sopa do juramento",
+          "Famílias sem juramento são colocadas ao fim da distribuição, embora necessitem da comida."
+        ],
+        [
+          "O depósito fechado",
+          "Um conselho anuncia estoque que ninguém verificou."
+        ],
+        [
+          "O saco que não chegou",
+          "Documento aponta entrega, mas quem receberia a carga afirma que ela nunca chegou."
+        ]
+      ],
+      "id_ciclo": "comunidade:lxiii:salao",
+      "nome": "Salão do Juramento de Cinza",
+      "habitantes_originais": "Clãs anões, draconatos mediadores e aprendizes gigantes propostos",
+      "autoridade_original": "Conselho de clãs que submete disputas a testemunhas draconatas",
+      "localizacao": null,
+      "rota_confirmada": false,
+      "aprovacao_autoral": false
+    },
+    {
+      "id": "povoamento:xlvi:thargrid-montanhas:05",
+      "key": "coro",
+      "theme": "Honra é contar quem voltou vivo",
+      "life": "A comunidade draconata do Coro tem vigias, reparadores de arreios e mediadores. Nenhum desses ofícios gera alimento: turnos e resgates exigem provisões, repouso e acesso que não foram descritos.",
+      "politics": "Um juramento de escolta precisa indicar proteção, duração e limites. O prestígio do comandante não cria estrada nem subordina os moradores de um enclave svirfneblin que não aceitou a missão.",
+      "places": [
+        [
+          "Pátio do Retorno Contado",
+          "Conferir pessoas que voltaram de missões hipotéticas.",
+          "O chefe pode contar cargas e esquecer os desaparecidos."
+        ],
+        [
+          "Nicho da Carga Não Prometida",
+          "Conferir volumes reais, se houver expedição.",
+          "Uma etiqueta de destino não comprova entrega."
+        ],
+        [
+          "Sala do Juramento Percorrido",
+          "Ouvir escoltas e deslocados sobre o que foi prometido.",
+          "A fama de um capitão não substitui o testemunho civil."
+        ]
+      ],
+      "rules": [
+        "Júri do Percurso: só um compromisso cumprido pode gerar reputação por resgate.",
+        "Círculo de Testemunhas Civis: deslocados podem contestar relatos oficiais.",
+        "Roda do Repouso: sentinelas também precisam comer e descansar."
+      ],
+      "people": [
+        [
+          "Shara Escama-Muda",
+          "capitã draconata candidata",
+          "o prestígio pode levá-la a prometer uma escolta impossível"
+        ],
+        [
+          "Eron Vale-de-Gelo",
+          "cuidador draconato candidato",
+          "a fome de feridos concorre com o orgulho dos sentinelas"
+        ],
+        [
+          "Myrra Juramento-Lido",
+          "escrivã draconata candidata",
+          "seu clã exige validar uma carga que não foi comprovada"
+        ]
+      ],
+      "conflicts": [
+        [
+          "O resgate sem rota",
+          "Um capitão jura evacuar famílias por uma passagem ainda não verificada."
+        ],
+        [
+          "Uma carga, duas histórias",
+          "Um documento diz que a comida foi entregue; os receptores discordam."
+        ],
+        [
+          "Quando a guarda precisa comer",
+          "Sentinelas recusam repouso por honra, mas provisões e capacidade de trabalho diminuem."
+        ]
+      ],
+      "id_ciclo": "comunidade:lxiii:coro",
+      "nome": "O Coro das Escamas Juradas",
+      "habitantes_originais": "Draconatos de clãs diferentes, familiares anões e outros moradores propostos",
+      "autoridade_original": "Juízes por reputação, não por antiguidade hereditária",
+      "localizacao": null,
+      "rota_confirmada": false,
+      "aprovacao_autoral": false
+    }
+  ],
+  "habitat": {
+    "fonte": "habitat:xlvi:08",
+    "nome": "Colunas dos Fungos que Aquecem",
+    "funcao": "Fungos termogênicos hipotéticos de decomposição",
+    "calor_gratuito": false,
+    "alimento_confirmado": false,
+    "coocorrencia_confirmada": false,
+    "localizacao": null
+  },
+  "especies_candidatas": [
+    {
+      "id": "criatura:lxiii:01",
+      "nome": "Grilo da Crosta Velha",
+      "nicho": "Detritívoro que poderia consumir resíduos e competir com culturas.",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null,
+      "aprovada": false
+    },
+    {
+      "id": "criatura:lxiii:02",
+      "nome": "Ácaro do Micélio Pálido",
+      "nicho": "Microconsumidor candidato de fungos, sem doença humana automática.",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null,
+      "aprovada": false
+    },
+    {
+      "id": "criatura:lxiii:03",
+      "nome": "Morcego da Fenda Lavrada",
+      "nicho": "Insetívoro cavernícola dependente de presas; não fornece adubo infinito.",
+      "ocorrencia_confirmada": false,
+      "ficha_dw": null,
+      "aprovada": false
+    }
+  ],
+  "ciclo_material": [
+    {
+      "id": "etapa:lxiii:01",
+      "nome": "Matéria orgânica",
+      "regra": "Fungos precisam de matéria orgânica proveniente de produtores primários ou insumos externos ainda não localizados."
+    },
+    {
+      "id": "etapa:lxiii:02",
+      "nome": "Água",
+      "regra": "Umidade de caverna não equivale a água potável ou suficiente para cultivo."
+    },
+    {
+      "id": "etapa:lxiii:03",
+      "nome": "Cultivo",
+      "regra": "Espécies seguras, temperatura, mão de obra e materiais de propagação não estão especificados."
+    },
+    {
+      "id": "etapa:lxiii:04",
+      "nome": "Conservação",
+      "regra": "Reservas consumíveis, de reprodução e lotes deteriorados precisam ficar separados; não há fonte de sal comprovada."
+    },
+    {
+      "id": "etapa:lxiii:05",
+      "nome": "Distribuição",
+      "regra": "A entrega só entra na contabilidade quando ocorreu, não quando foi prometida."
+    },
+    {
+      "id": "etapa:lxiii:06",
+      "nome": "Renovação",
+      "regra": "Resíduos podem ser reaproveitados quando seguro, mas reciclar não recupera a energia integral gasta."
+    }
+  ],
+  "modelo_estoque": {
+    "status": "sem_valores_inventados",
+    "formula": "saldo_distribuivel_condicional = estoque_comestivel_verificado + entregas_fisicas_confirmadas - perdas - reserva_de_propagacao",
+    "variaveis": [
+      {
+        "nome": "estoque_comestivel_verificado",
+        "valor": null,
+        "unidade": null,
+        "periodo": null
+      },
+      {
+        "nome": "entregas_fisicas_confirmadas",
+        "valor": null,
+        "unidade": null,
+        "periodo": null
+      },
+      {
+        "nome": "perdas",
+        "valor": null,
+        "unidade": null,
+        "periodo": null
+      },
+      {
+        "nome": "reserva_de_propagacao",
+        "valor": null,
+        "unidade": null,
+        "periodo": null
+      },
+      {
+        "nome": "necessidade_dos_residentes",
+        "valor": null,
+        "unidade": null,
+        "periodo": null
+      },
+      {
+        "nome": "necessidade_de_refugiados",
+        "valor": null,
+        "unidade": null,
+        "periodo": null
+      },
+      {
+        "nome": "necessidade_de_vigias",
+        "valor": null,
+        "unidade": null,
+        "periodo": null
+      }
+    ],
+    "regra": "Definir qualidade, unidades e janela temporal antes do cálculo; não confundir recebimento real com promessa."
+  },
+  "relacoes": [
+    {
+      "id": "relacao:lxiii:01",
+      "de": "comunidade:lxiii:gemas",
+      "para": "comunidade:lxiii:salao",
+      "hipotese": "Produção e distribuição poderiam se conectar apenas com acordo, excedente e transporte confirmados.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "relacao:lxiii:02",
+      "de": "comunidade:lxiii:salao",
+      "para": "comunidade:lxiii:coro",
+      "hipotese": "Registros de escolta poderiam comprovar entregas caso haja trajeto.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "relacao:lxiii:03",
+      "de": "comunidade:lxiii:gemas",
+      "para": "comunidade:lxiii:coro",
+      "hipotese": "Uma possível evacuação dependeria de caminho verificável e consentimento svirfneblin.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "relacao:lxiii:04",
+      "de": "comunidade:lxiii:salao",
+      "para": "sociedade:lxii:forjas",
+      "hipotese": "Reparos de recipientes podem disputar metal e trabalhadores com armamentos.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "relacao:lxiii:05",
+      "de": "comunidade:lxiii:salao",
+      "para": "sociedade:lxi:gigantes",
+      "hipotese": "Alimentação de famílias gigantes demanda recursos e acesso não demonstrados.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    }
+  ],
+  "restricoes": [
+    "Não inventar capacidade produtiva, água, combustível, população ou rota.",
+    "Fungos e termogênese não criam energia ou comida ilimitadas.",
+    "A Cidadela conserva autonomia e seus mapas não são públicos por definição.",
+    "O depósito não comprova estoque, e juramento não comprova recebimento.",
+    "Cenas não ocorreram e NPCs são propostas, exceto os dois já propostos no LXII.",
+    "O Ordenamento dos gigantes não governa todos os habitantes de Thargrid.",
+    "Não revelar cosmologia ou segredos das campanhas."
+  ]
+}
