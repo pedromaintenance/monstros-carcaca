@@ -72,6 +72,10 @@ O [dossiê doméstico de Thargrid](docs/VIDA_DOMESTICA_CAVERNAS_THARGRID_CICLO64
 
 O [dossiê de infância, ofícios e aprendizagem em Thargrid](docs/FILHOS_DA_MONTANHA_APRENDIZAGEM_CICLO65.md) aprofunda **4 comunidades**, com **8 aprendizes candidatos**, **8 espaços de ensino**, **12 lições**, **4 brincadeiras**, **8 conflitos** e **6 dependências materiais**. Reutiliza personagens anteriores e preserva a autonomia de anões, gigantes, draconatos e svirfneblin. [JSON estruturado](data/propostas/filhos-da-montanha-aprendizagem-ciclo65.json). Nenhuma escola, rota ou personagem é canonizado automaticamente.
 
+## Ciclo LXVI — Os filhos do exílio
+
+O [dossiê de memória, refúgio e pertencimento](docs/FILHOS_DO_EXILIO_MEMORIA_PERTENCIMENTO_CICLO66.md) aprofunda **5 comunidades já propostas** de Eldroth, Costa Sul, Garganta e Ironwood: **15 personagens candidatos**, **15 práticas culturais**, **10 espaços**, **10 conflitos**, **6 bases materiais** e **7 relações analíticas sem contato confirmado**. [Dados em JSON](data/propostas/filhos-do-exilio-memoria-pertencimento-ciclo66.json). Não estabelece migrações, rotas nem fatos de campanha.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.

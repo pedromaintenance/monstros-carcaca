@@ -1,0 +1,608 @@
+{
+  "schema_version": "1.0",
+  "id": "worldbuilding:lxvi:exilio",
+  "titulo": "Ciclo LXVI — Os filhos do exílio",
+  "data_registro": "2026-11-07",
+  "estado": "proposta_nao_canonica",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "altera_campanhas": false,
+  "fontes": [
+    "data/propostas/povoamento-regional-lote02-ciclo45.json",
+    "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+    "data/propostas/povoamento-costa-continental-ciclo49.json",
+    "data/propostas/povoamento-ecologia-thargrid-ironwood-eldroth-ciclo53.json",
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+  ],
+  "totais": {
+    "comunidades_preexistentes": 5,
+    "novas_cidades": 0,
+    "pessoas_candidatas": 15,
+    "aprendizes_e_jovens_candidatos": 10,
+    "mentores_cuidadores_candidatos": 5,
+    "praticas_culturais": 15,
+    "espacos_sociais": 10,
+    "conflitos": 10,
+    "dependencias": 6,
+    "comparacoes_hipoteticas": 7,
+    "especies_novas": 0
+  },
+  "fatos_autorais": [
+    "O domínio shadow fey deslocou populações, sem que todas as fadas ou todos os shadow fey sejam seus partidários.",
+    "Há refugiados de Eldroth na Costa Sul, mas não foi estabelecida rota específica entre assentamentos propostos.",
+    "Yolskaariin é antigo culto solar; seu templo de Garganta foi corrompido.",
+    "Sangue demoníaco misturado não determina o caráter do descendente."
+  ],
+  "comunidades": [
+    {
+      "code": "ponte",
+      "source": "povoamento:xlv:28",
+      "region": "Eldroth",
+      "issue": "Lembrar uma casa sem denunciar seu esconderijo",
+      "premise": "Casas suspensas propostas de elfos da floresta, humanos exilados e feéricos não alinhados. A Ponte que Não É Ponte é nome alegórico, não uma travessia mapeada. A assembleia local candidata não exige juramento de guerra dos refugiados, mas pode divergir sobre preservar nomes e histórias diante da vigilância de Lady Sylara.",
+      "work": "Consertar cordames e abrigos exige fibras, ferramentas, alimento e tempo de cuidadores não quantificados. Crianças não se tornam mensageiras clandestinas por conhecerem histórias de família.",
+      "identity": "A língua ou a lembrança de origem pode ser ensinada junto da vida atual sem que toda pessoa seja obrigada a desejar o retorno. Um relato contraditório não comprova espionagem.",
+      "nome": "A Ponte que Não É Ponte",
+      "habitantes_preexistentes": "Elfos da floresta, humanos exilados e pequenos feéricos não alinhados",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "status": "aprofundamento_de_proposta",
+      "people": [
+        {
+          "id": "pessoa:lxvi:ponte:01",
+          "nome": "Sídhel Cordame-Oco",
+          "perfil": "Elfa adulta candidata, cuidadora e reparadora",
+          "quer": "Guardar lembranças sem gerar listas de perseguidos.",
+          "dilema": "Uma história incompleta também pode impedir reencontros.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxvi:ponte:02",
+          "nome": "Luma Nó-Devolvido",
+          "perfil": "Aprendiz humana exilada candidata, idade aberta",
+          "quer": "Mencionar um parente sem revelar seu abrigo.",
+          "dilema": "Sua lembrança contradiz uma narrativa prestigiada.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxvi:ponte:03",
+          "nome": "Neran Folha-Mesma",
+          "perfil": "Jovem elfo da floresta candidato",
+          "quer": "Aprender manutenção e viver no abrigo atual.",
+          "dilema": "Parentes consideram que não prometer retorno equivale a rendição.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "rituais": [
+        {
+          "nome": "Nó de memória consentido",
+          "pratica": "Um nó marca o trabalho de alguém; seu nome fica opcional no registro.",
+          "limite": "Não equivale a cifra infalível ou magia Yokai."
+        },
+        {
+          "nome": "História de duas testemunhas",
+          "pratica": "Dois relatos diferentes sobre a mesma partida são preservados com suas dúvidas.",
+          "limite": "Nenhuma versão vira verdade por antiguidade de quem narra."
+        },
+        {
+          "nome": "Ofício sem juramento",
+          "pratica": "Aprender reparos não exige alistamento nem declaração de lealdade.",
+          "limite": "Fibras e estruturas precisam ser verificadas antes do uso."
+        }
+      ],
+      "lugares": [
+        {
+          "nome": "Varanda dos Nomes Omitidos",
+          "uso": "Ouvir histórias sem exigir a lista de parentes e seus destinos.",
+          "problema": "Sem detalhes, uma família pode não localizar alguém querido.",
+          "localizacao": null
+        },
+        {
+          "nome": "Oficina do Cordame Devolvido",
+          "uso": "Aprender reparos com material identificado e sem uso estrutural até inspeção.",
+          "problema": "A urgência pode levar a usar corda incapaz de sustentar peso.",
+          "localizacao": null
+        }
+      ],
+      "cenas": [
+        {
+          "nome": "O nome escrito no cabo",
+          "situacao": "Uma ferramenta traz uma marca que pode identificar moradores.",
+          "saidas": "Ocultar a inscrição, pedir consentimento ou conservar memória em suporte restrito.",
+          "ocorreu": false
+        },
+        {
+          "nome": "A criança que não quer voltar",
+          "situacao": "Neran é pressionado a jurar retorno às terras ancestrais.",
+          "saidas": "Permitir recusa, reformular promessa ou reconhecer pertencimento presente.",
+          "ocorreu": false
+        }
+      ],
+      "id": "comunidade:lxvi:ponte"
+    },
+    {
+      "code": "ninho",
+      "source": "povoamento:xlv:31",
+      "region": "Eldroth",
+      "issue": "Cuidar do ninho não é convocar crianças para a guerra",
+      "premise": "A comunidade goblin e kobold deslocada conserva ninhos comunais de ramos ocultos por folhagem e liderança rotativa de caçadores e cuidadores. A relação com druidas é uma tensão proposta, não subordinação nem canal de mensageiros comprovado.",
+      "work": "Coleta, artesanato de casca e possível apicultura dependem de habitat e de recursos desconhecidos. Pequenos animais tolerados não são automaticamente espiões, falantes ou familiares mágicos.",
+      "identity": "Crianças de povos diferentes podem herdar canções, formas de reparar e lembranças de fuga sem que um único idioma ou passado seja imposto. Pequeno porte não é autorização para atribuir missões perigosas.",
+      "nome": "O Ninho da Folha Apagada",
+      "habitantes_preexistentes": "Goblins, kobolds deslocados e pequenos animais tolerados",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "status": "aprofundamento_de_proposta",
+      "people": [
+        {
+          "id": "pessoa:lxvi:ninho:01",
+          "nome": "Puri Casca-Mansa",
+          "perfil": "Goblin adulta candidata, cuidadora e reparadora",
+          "quer": "Distribuir manutenção sem recrutar jovens para patrulhas.",
+          "dilema": "Pode ser acusada de abandonar uma necessidade urgente de aviso.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxvi:ninho:02",
+          "nome": "Ikri Vela-Baixa",
+          "perfil": "Aprendiz kobold deslocado candidato",
+          "quer": "Construir abrigo adaptado ao próprio corpo.",
+          "dilema": "Adultos desejam enviá-lo por aberturas perigosas porque ele cabe.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxvi:ninho:03",
+          "nome": "Loka Ninho-Desfeito",
+          "perfil": "Jovem goblin candidata",
+          "quer": "Aprender a história de parentes sem revelar onde viviam.",
+          "dilema": "Recebe versões incompatíveis sobre o deslocamento.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "rituais": [
+        {
+          "nome": "Casca com procedência",
+          "pratica": "Ao refazer uma parede, o aprendiz registra onde obteve a matéria.",
+          "limite": "Recolher ramo não prova que podia retirá-lo de abrigo vivo."
+        },
+        {
+          "nome": "Cantiga sem caminho",
+          "pratica": "Famílias preservam palavras familiares sem revelar trajetos antigos.",
+          "limite": "Não presume língua goblin-kobold unificada."
+        },
+        {
+          "nome": "Turno de quem fica",
+          "pratica": "Cuidar de jovens e reparar ninhos recebe reconhecimento social.",
+          "limite": "Não transforma cuidado em servidão de uma espécie."
+        }
+      ],
+      "lugares": [
+        {
+          "nome": "Cesto das Cascas Cedidas",
+          "uso": "Materiais avaliados para reparo sem destruir outros abrigos.",
+          "problema": "A escassez pode pressionar a coleta indevida.",
+          "localizacao": null
+        },
+        {
+          "nome": "Ninho das Perguntas Baixas",
+          "uso": "Conversas sobre passado e segurança sem exigir itinerários.",
+          "problema": "Uma liderança pode chamar todo silêncio de desobediência.",
+          "localizacao": null
+        }
+      ],
+      "cenas": [
+        {
+          "nome": "O menor passa primeiro",
+          "situacao": "Um caçador quer enviar Ikri com uma mensagem por passagem arriscada.",
+          "saidas": "Recusar obrigação, procurar outro modo de avisar, consultar os afetados.",
+          "ocorreu": false
+        },
+        {
+          "nome": "A árvore não é dívida de guerra",
+          "situacao": "A comunidade quer cortar ramo habitado por outros seres para um reparo urgente.",
+          "saidas": "Reutilizar material, negociar, reduzir provisoriamente a construção.",
+          "ocorreu": false
+        }
+      ],
+      "id": "comunidade:lxvi:ninho"
+    },
+    {
+      "code": "terreiro",
+      "source": "povoamento:xlix:costa:10",
+      "region": "Costa Sul",
+      "issue": "Acolher sem transformar cada nome em registro de captura",
+      "premise": "Abrigos temporários de famílias orcs e humanas deslocadas, com alguns elfos de Eldroth apenas propostos, ocupam uma clareira não mapeada. A liderança por guardiões de alojamento não cria um Estado dos exilados, e nenhum caminho desde Eldroth ou Portomonte está estabelecido.",
+      "work": "Reparar roupas, panos de abrigo e recipientes pode dar sustento quando houver fibras, alimento e água; as provisões externas ainda não possuem origem. A purificação de água para irrigação em Portomonte não confere água potável a este refúgio.",
+      "identity": "Não exigir que famílias apaguem fala, histórias ou padrões têxteis de origem para receber auxílio. Orcs e humanos não precisam ignorar antigos conflitos para compartilhar provisões, mas podem negociar regras de convivência.",
+      "nome": "O Terreiro dos Panos Virados",
+      "habitantes_preexistentes": "famílias orcs e humanas deslocadas, com alguns elfos de Eldroth propostos",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "status": "aprofundamento_de_proposta",
+      "people": [
+        {
+          "id": "pessoa:lxvi:terreiro:01",
+          "nome": "Tessia Pano-Virado",
+          "perfil": "Humana adulta candidata, guardiã de alojamentos",
+          "quer": "Prestar auxílio sem expor nomes de famílias.",
+          "dilema": "Precisa encontrar formas de controlar estoques sem vigilância total.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxvi:terreiro:02",
+          "nome": "Maru Dois-Abrigos",
+          "perfil": "Aprendiz orc candidato de família deslocada",
+          "quer": "Preservar duas tradições de tecido da família.",
+          "dilema": "Uma liderança quer impor um padrão considerado local.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxvi:terreiro:03",
+          "nome": "Alma Folha-Salobra",
+          "perfil": "Aprendiz elfa de Eldroth candidata, presença individual não confirmada",
+          "quer": "Guardar uma história da floresta sem revelar o percurso da fuga.",
+          "dilema": "A lembrança é tratada como risco por pessoas do conflito costeiro.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "rituais": [
+        {
+          "nome": "Pano de dois lados",
+          "pratica": "Um padrão público identifica uso do tecido; outro, opcional, preserva memória familiar.",
+          "limite": "Tecido pode ser copiado e não oferece segredo absoluto."
+        },
+        {
+          "nome": "Mesa de muitas falas",
+          "pratica": "Uma instrução pode ser explicada de maneiras distintas com intérpretes consentidos.",
+          "limite": "Não presume que todos falam a mesma língua."
+        },
+        {
+          "nome": "Refeição sem juramento",
+          "pratica": "O acesso ao alimento, quando existe, é discutido por necessidade e disponibilidade real.",
+          "limite": "Não promete estoque ou ausência de disputas."
+        }
+      ],
+      "lugares": [
+        {
+          "nome": "Terreiro das Costuras Duplas",
+          "uso": "Reparo de vestuário e panos, com autoria e memória escolhidas.",
+          "problema": "Uma chefia tenta exigir marca nominal em todo objeto.",
+          "localizacao": null
+        },
+        {
+          "nome": "Mesa dos Pratos sem Lista",
+          "uso": "Contagem de necessidades sem cadastro público de todos os fugitivos.",
+          "problema": "Proteger identidade não dispensa verificar distribuição.",
+          "localizacao": null
+        }
+      ],
+      "cenas": [
+        {
+          "nome": "A lista que denuncia",
+          "situacao": "Para repartir uma carga ainda não recebida, exigem identificação completa de moradores.",
+          "saidas": "Conferir primeiro a entrega, contar necessidades sem publicar nomes, discutir controle.",
+          "ocorreu": false
+        },
+        {
+          "nome": "O pano de duas mães",
+          "situacao": "Maru cria padrão misto e recebe ordem para abandoná-lo.",
+          "saidas": "Reconhecer diferenças familiares ou separar marca pública e memória privada.",
+          "ocorreu": false
+        }
+      ],
+      "id": "comunidade:lxvi:terreiro"
+    },
+    {
+      "code": "chama",
+      "source": "povoamento:xlvi:garganta-entorno:05",
+      "region": "Garganta",
+      "issue": "Ninguém nasce culpado pelo templo corrompido",
+      "premise": "O refúgio candidato reúne humanos ex-devotos de Yolskaariin, meio-demônios e goblins em abrigos de pedra afastados do templo corrompido, mas sem posição comprovada. O antigo culto solar e a corrupção de seu templo não implicam culpa de todos os devotos.",
+      "work": "Cultivo protegido, reparo de utensílios, água e combustível ainda são hipóteses materiais. Não há ritual que os produza gratuitamente ou que apague danos de guerra por decreto.",
+      "identity": "A ascendência demoníaca não estabelece servidão ao Abismo ou maldade. Demônios, diabos, cambions e tieflings não são essências separadas neste mundo; meio-demônios pertencem a linhagens misturadas. A pessoa responde por atos, não pela aparência.",
+      "nome": "O Refúgio da Chama Apagada",
+      "habitantes_preexistentes": "Humanos ex-devotos de Yolskaariin, meio-demônios e goblins propostos",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "status": "aprofundamento_de_proposta",
+      "people": [
+        {
+          "id": "pessoa:lxvi:chama:01",
+          "nome": "Rosa Cinza-de-Altar",
+          "perfil": "Humana adulta candidata, ex-devota de Yolskaariin",
+          "quer": "Preservar memórias solidárias sem negar abusos do passado.",
+          "dilema": "Uma omissão sobre fato controverso ameaça confiança.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxvi:chama:02",
+          "nome": "Miril Chifre-Sereno",
+          "perfil": "Aprendiz meio-demônio candidato sem poderes definidos",
+          "quer": "Aprender reparos e ser julgado por ações próprias.",
+          "dilema": "Puristas querem expulsá-lo pela aparência.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxvi:chama:03",
+          "nome": "Zega Costura-Fria",
+          "perfil": "Aprendiz goblin candidata",
+          "quer": "Compreender por que parentes abandonaram o templo.",
+          "dilema": "Sobreviventes dão explicações incompletas por medo.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "rituais": [
+        {
+          "nome": "Chama sem dono",
+          "pratica": "Luz comum pode evocar memória e cuidado, com significado religioso facultativo.",
+          "limite": "Não cria novo culto obrigatório nem magia automática."
+        },
+        {
+          "nome": "Relato com responsabilidade",
+          "pratica": "Testemunhos distinguem crença, coerção e atos individuais.",
+          "limite": "Não apagar violência comprovada em nome de reconciliação fácil."
+        },
+        {
+          "nome": "Ofício antes da ascendência",
+          "pratica": "Acesso a reparos e cultivo sem classificação moral por linhagem.",
+          "limite": "Não pressupõe ferramenta ou provisão existente."
+        }
+      ],
+      "lugares": [
+        {
+          "nome": "Pátio da Chama Partilhável",
+          "uso": "Reuniões voluntárias em que famílias discordam sobre o passado.",
+          "problema": "Antigos líderes podem tentar impor nova autoridade cultual.",
+          "localizacao": null
+        },
+        {
+          "nome": "Banco dos Nomes não Julgados",
+          "uso": "Escuta sobre danos que pede fatos e consentimento.",
+          "problema": "Um culpado concreto também pode tentar esconder ações entre inocentes.",
+          "localizacao": null
+        }
+      ],
+      "cenas": [
+        {
+          "nome": "A marca na testa",
+          "situacao": "Uma família pede expulsão de Miril por sua ascendência.",
+          "saidas": "Pedir prova de atos, defender regras iguais, investigar danos sem punição coletiva.",
+          "ocorreu": false
+        },
+        {
+          "nome": "A canção que fere e acolhe",
+          "situacao": "Uma lembrança solar conforta alguns e assusta outros que associam o canto ao templo tomado.",
+          "saidas": "Escuta voluntária, espaço privado de memória, nenhum rito compulsório.",
+          "ocorreu": false
+        }
+      ],
+      "id": "comunidade:lxvi:chama"
+    },
+    {
+      "code": "bosque",
+      "source": "povoamento:xlvi:ironwood:01",
+      "region": "Ironwood",
+      "issue": "Hospitalidade não exige que uma criança vire batedora",
+      "premise": "Um enclave de gnomos da floresta, fadas refugiadas e famílias élficas propõe habitações ocultas por ilusões. O conselho cuida do sigilo; não é automaticamente subordinado a Elara. Fadas vindas do Shadowfade não são por definição partidárias da Corte Shadow Fey.",
+      "work": "Jardins, cuidado de animais e reparos de abrigo não têm produtividade definida. Ilusões não fornecem comida ou proteção infalível; suprimentos para novos acolhidos podem competir com os dos moradores.",
+      "identity": "Refugiados podem lembrar o Shadowfade e também conhecer tradições de Ironwood sem perder sua origem. Um nome de família, pacto antigo ou costume feérico não garante superioridade legal sobre quem os acolheu.",
+      "nome": "Bosque da Hospitalidade Estreita",
+      "habitantes_preexistentes": "Gnomos da floresta, fadas refugiadas e famílias élficas propostas",
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "status": "aprofundamento_de_proposta",
+      "people": [
+        {
+          "id": "pessoa:lxvi:bosque:01",
+          "nome": "Seli Flor-de-Bruma",
+          "perfil": "Fada refugiada adulta candidata, cuidadora de histórias",
+          "quer": "Preservar lembranças do Shadowfade respeitando novas alianças.",
+          "dilema": "Um pacto de parentes pode conflitar com a autonomia do abrigo.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxvi:bosque:02",
+          "nome": "Omi Folha-Remendada",
+          "perfil": "Aprendiz gnomo da floresta candidato",
+          "quer": "Aprender a acolher sem entregar localização do povoado.",
+          "dilema": "Um pedido de socorro contraria a ordem de silêncio do conselho.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxvi:bosque:03",
+          "nome": "Eyla Voto-Baixo",
+          "perfil": "Aprendiz feérica refugiada candidata",
+          "quer": "Escolher como usar seu nome e quais histórias contar.",
+          "dilema": "Parentes veem reserva de identidade como abandono dos mortos.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "rituais": [
+        {
+          "nome": "Porta que pode recusar",
+          "pratica": "Aprendizes discutem deveres reais de acolher e limites do estoque.",
+          "limite": "Sigilo não justifica hostilidade indiscriminada a desconhecidos."
+        },
+        {
+          "nome": "Canção de duas florestas",
+          "pratica": "Histórias de lugares distintos são preservadas sem obrigar uma síntese oficial.",
+          "limite": "Não revela cosmologia secreta ou passagem efetiva entre os lugares."
+        },
+        {
+          "nome": "Trilha só de imaginação",
+          "pratica": "Jogos com desenhos fictícios ensinam a não divulgar refúgios.",
+          "limite": "Crianças não são informantes ou patrulheiros obrigatórios."
+        }
+      ],
+      "lugares": [
+        {
+          "nome": "Jardim das Boas-Vindas Recusáveis",
+          "uso": "Escuta de hóspedes e discussão sobre recursos para acolher.",
+          "problema": "Segurança pode virar pretexto para negar toda diferença.",
+          "localizacao": null
+        },
+        {
+          "nome": "Sala das Folhas Inventadas",
+          "uso": "Aprender orientação com trilhas falsas e material seguro.",
+          "problema": "Um comandante deseja converter brincadeira em seleção de batedores.",
+          "localizacao": null
+        }
+      ],
+      "cenas": [
+        {
+          "nome": "Promessa antiga, porta nova",
+          "situacao": "Uma promessa de hospitalidade é invocada como direito de entrada sem consentimento dos moradores.",
+          "saidas": "Negociar auxílio exterior, revisar obrigação, acolher sob acordo claro.",
+          "ocorreu": false
+        },
+        {
+          "nome": "O mapa que era jogo",
+          "situacao": "Uma patrulha tenta usar o desenho fictício de Omi como rota verdadeira.",
+          "saidas": "Explicar limite, proteger aprendiz, investigar antes de partir.",
+          "ocorreu": false
+        }
+      ],
+      "id": "comunidade:lxvi:bosque"
+    }
+  ],
+  "bases_materiais": [
+    {
+      "id": "base:lxvi:1",
+      "nome": "Identidade sem exposição",
+      "recursos": "Registros de sobrenomes e itinerários podem reunir famílias e também entregar pessoas perseguidas.",
+      "regra": "Separar informação necessária ao cuidado de informação de risco."
+    },
+    {
+      "id": "base:lxvi:2",
+      "nome": "Comida e água",
+      "recursos": "Receber refugiados exige provisões e disponibilidade verificável, não promessas ou ilusões.",
+      "regra": "Não inventar capacidade alimentar nem potabilidade."
+    },
+    {
+      "id": "base:lxvi:3",
+      "nome": "Tempo de ensino",
+      "recursos": "Cuidadores deixam outras atividades ao ensinar e precisam de sustento e repouso.",
+      "regra": "Não converter jovens em força de trabalho gratuita."
+    },
+    {
+      "id": "base:lxvi:4",
+      "nome": "Tradução voluntária",
+      "recursos": "Memórias e instruções podem circular em mais de uma língua, mas alfabetização ou língua única não foram fixadas.",
+      "regra": "Deixar visível o que a tradução não resolve."
+    },
+    {
+      "id": "base:lxvi:5",
+      "nome": "Material de memória",
+      "recursos": "Tecidos, cascas, cordas e relatos são recursos perecíveis; registrá-los tem custos.",
+      "regra": "Respeitar a escolha de manter algo privado ou esquecer."
+    },
+    {
+      "id": "base:lxvi:6",
+      "nome": "Responsabilidade pessoal",
+      "recursos": "Culto anterior, sangue demoníaco, ascendência feérica ou espécie não bastam para atribuir culpa.",
+      "regra": "Investigar atos reais sem punição hereditária."
+    }
+  ],
+  "relacoes_tematica_nao_confirmadas": [
+    {
+      "id": "comparacao:lxvi:1",
+      "de": "comunidade:lxvi:ponte",
+      "para": "comunidade:lxvi:ninho",
+      "comparacao": "Histórias de Eldroth e proteção de crianças não implicam contato entre núcleos.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxvi:2",
+      "de": "comunidade:lxvi:ponte",
+      "para": "comunidade:lxvi:terreiro",
+      "comparacao": "Ter parentes do mesmo setor de origem não prova travessia entre essas casas.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxvi:3",
+      "de": "comunidade:lxvi:ninho",
+      "para": "comunidade:lxvi:bosque",
+      "comparacao": "A formação de pequenos guardiões de abrigo não demonstra vínculo entre Eldroth e Ironwood.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxvi:4",
+      "de": "comunidade:lxvi:terreiro",
+      "para": "comunidade:lxvi:chama",
+      "comparacao": "Acolhimento e estigma são questões comuns, sem trânsito comprovado.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxvi:5",
+      "de": "comunidade:lxvi:chama",
+      "para": "comunidade:lxvi:bosque",
+      "comparacao": "Antigas crenças e refúgio feérico enfrentam suspeita por origem, sem pacto.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxvi:6",
+      "de": "comunidade:lxvi:terreiro",
+      "para": "comunidade:lxvi:bosque",
+      "comparacao": "Reservas e hospitalidade têm dilemas comparáveis, não uma rota.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxvi:7",
+      "de": "comunidade:lxvi:ponte",
+      "para": "comunidade:lxvi:chama",
+      "comparacao": "Recusar culpa por ascendência e recusar revelar um nome não são a mesma questão, nem contato ocorrido.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    }
+  ],
+  "restricoes": [
+    "Não canonizar comunidades, pessoas, instituições, ritos ou eventos.",
+    "Não criar relação física ou migratória entre Eldroth, Ironwood, Costa Sul e Garganta.",
+    "A Ponte que Não É Ponte é nome alegórico; nenhuma passagem foi comprovada.",
+    "O refúgio de Garganta não é dependência do templo corrompido.",
+    "Demoníacos e meio-demônios seguem a taxonomia única da Carcaça; ascendência não é culpa.",
+    "A fada refugiada não é automaticamente apoiadora da Corte.",
+    "Não presumir religião obrigatória, língua uniforme, genealogia única ou memória infalível.",
+    "Não declarar água potável, alimentação, estoque, calendários, distâncias ou produtividade sem fonte.",
+    "Nenhuma criança ou aprendiz é recrutado automaticamente como mensageiro ou guerreiro.",
+    "A magia de nomes Yokai e os segredos sobre Ulorian e Gualápolis não são disseminados.",
+    "Nada modifica o atlas canônico, fichas DW ou a cronologia de campanhas."
+  ]
+}
