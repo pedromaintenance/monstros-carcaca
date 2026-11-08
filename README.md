@@ -76,6 +76,10 @@ O [dossiê de infância, ofícios e aprendizagem em Thargrid](docs/FILHOS_DA_MON
 
 O [dossiê de memória, refúgio e pertencimento](docs/FILHOS_DO_EXILIO_MEMORIA_PERTENCIMENTO_CICLO66.md) aprofunda **5 comunidades já propostas** de Eldroth, Costa Sul, Garganta e Ironwood: **15 personagens candidatos**, **15 práticas culturais**, **10 espaços**, **10 conflitos**, **6 bases materiais** e **7 relações analíticas sem contato confirmado**. [Dados em JSON](data/propostas/filhos-do-exilio-memoria-pertencimento-ciclo66.json). Não estabelece migrações, rotas nem fatos de campanha.
 
+## Ciclo LXVII — O direito de ter um lar
+
+O [dossiê de moradia, guarda, parentesco e herança](docs/DIREITO_DE_TER_UM_LAR_PERTENCIMENTO_CICLO67.md) aprofunda **6 comunidades preexistentes**, incluindo **A Casa dos Dois Sobrenomes**, com **12 arranjos domésticos**, **12 costumes**, **6 instâncias locais**, **8 pessoas inéditas e 10 retomadas**, **12 conflitos** e **7 sistemas materiais**. [JSON estruturado](data/propostas/direito-de-ter-um-lar-pertencimento-ciclo67.json). Não estabelece parentescos biológicos, propriedade fundiária, tutela ou rotas como cânone.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
