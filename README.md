@@ -80,6 +80,10 @@ O [dossiê de memória, refúgio e pertencimento](docs/FILHOS_DO_EXILIO_MEMORIA_
 
 O [dossiê de moradia, guarda, parentesco e herança](docs/DIREITO_DE_TER_UM_LAR_PERTENCIMENTO_CICLO67.md) aprofunda **6 comunidades preexistentes**, incluindo **A Casa dos Dois Sobrenomes**, com **12 arranjos domésticos**, **12 costumes**, **6 instâncias locais**, **8 pessoas inéditas e 10 retomadas**, **12 conflitos** e **7 sistemas materiais**. [JSON estruturado](data/propostas/direito-de-ter-um-lar-pertencimento-ciclo67.json). Não estabelece parentescos biológicos, propriedade fundiária, tutela ou rotas como cânone.
 
+## Ciclo LXVIII — Os que sustentam a vida
+
+O [dossiê da economia dos cuidados e da autonomia](docs/OS_QUE_SUSTENTAM_A_VIDA_CUIDADO_CICLO68.md) aprofunda **6 comunidades anteriores** de Eldroth, Rio Ancestral, Thargrid e Costa Sul, criando **12 pessoas candidatas**, retomando **6 personagens**, desenvolvendo **12 espaços**, **18 práticas**, **12 conflitos** e **7 etapas de cuidado**. [Dados estruturados](data/propostas/os-que-sustentam-a-vida-cuidado-ciclo68.json). Não estabelece curas automáticas, fisiologias universais, hospitais confirmados ou rotas.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.

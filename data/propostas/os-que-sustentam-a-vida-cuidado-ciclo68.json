@@ -1,0 +1,776 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Ciclo LXVIII — Os que sustentam a vida",
+  "data_registro": "2026-11-08",
+  "estado": "proposta_nao_homologada",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "altera_campanhas": false,
+  "altera_bestiario": false,
+  "fontes": [
+    "data/propostas/povoamento-regional-lote02-ciclo45.json",
+    "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+    "data/propostas/povoamento-costa-continental-ciclo49.json",
+    "data/propostas/povoamento-ecologia-thargrid-ironwood-eldroth-ciclo53.json",
+    "data/propostas/povoamento-ecologia-eixo-garganta-rio-foz-ciclo52.json",
+    "data/propostas/sociedades-gigantes-minerais-thargrid-ciclo61.json",
+    "data/propostas/direito-de-ter-um-lar-pertencimento-ciclo67.json",
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+  ],
+  "fundamento": "A ambientação contém ocupação, trabalho clandestino, povos de fisiologias distintas e comunidades de exilados. Instituições de cuidado, condições materiais e personagens específicos desenvolvidos neste ciclo não são homologados.",
+  "totais": {
+    "comunidades": 6,
+    "novos_assentamentos": 0,
+    "novos_personagens": 12,
+    "retomados": 6,
+    "espacos": 12,
+    "praticas": 18,
+    "conflitos": 12,
+    "etapas_de_cuidado": 7,
+    "comparacoes": 9,
+    "novas_especies": 0
+  },
+  "comunidades": [
+    {
+      "key": "vigilia",
+      "source": "povoamento:xlv:32",
+      "prior": "povoamento:liii:12",
+      "area": "Eldroth",
+      "heading": "Curar não é prometer um milagre",
+      "premise": "O colegiado clandestino de elfos, gnomos, humanos e fadas curadoras propostas cuida de pessoas perseguidas. Plantas medicinais ainda não possuem eficácia estabelecida, e um paciente pode decidir que não deseja um tratamento mesmo quando familiares insistem. Quem presta cuidado também precisa de repouso e segurança.",
+      "subsistence": "Ervas de origem e propriedades incertas, água apropriada, alimentação, repouso, leitos e materiais de limpeza precisariam ser verificados. A rede de druidas autoral não demonstra que esta enfermaria possua capacidade ilimitada.",
+      "open": [
+        "Local e capacidade efetiva da enfermaria",
+        "Eficácia e procedência das ervas",
+        "Relação entre cuidados, sigilo e vontade dos pacientes"
+      ],
+      "id": "comunidade:lxviii:vigilia",
+      "nome": "Sala de Vigília das Ervas sem Sombra",
+      "povos": "Elfos, gnomos, humanos e uma linhagem de fadas curadoras inventada",
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxviii:vigilia:1",
+          "nome": "Diona Folha-Seca",
+          "perfil": "Elfa adulta candidata com mobilidade reduzida, conhecedora de conservação de plantas",
+          "desejo": "Continuar registrando o uso de materiais e decidir como deseja se locomover.",
+          "contradicao": "Parentes insistem que só recuperar sua antiga mobilidade lhe devolveria valor.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxviii:vigilia:2",
+          "nome": "Eri Lume-Quase",
+          "perfil": "Gnomo candidato, cuidador com perda auditiva",
+          "desejo": "Estabelecer avisos de turno e consentimento compreensíveis aos pacientes.",
+          "contradicao": "Um sistema visual único pode falhar com pessoas que usam outras formas de comunicação.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        }
+      ],
+      "retorno": [],
+      "espacos": [
+        {
+          "id": "espaco:lxviii:vigilia:1",
+          "nome": "Quarto das Escolhas Abertas",
+          "uso": "Ambiente hipotético em que uma pessoa pode contestar e rever seu plano de cuidado.",
+          "risco": "Um comandante exige silêncio dos feridos por razões de sigilo.",
+          "ocorrencia_comprovada": false
+        },
+        {
+          "id": "espaco:lxviii:vigilia:2",
+          "nome": "Mesa das Ervas Identificadas",
+          "uso": "Separação de plantas reconhecidas, duvidosas e inutilizáveis sem receita clínica presumida.",
+          "risco": "Prestígio de um curador pode substituir a comprovação de efeito.",
+          "ocorrencia_comprovada": false
+        }
+      ],
+      "praticas": [
+        {
+          "nome": "Escolha antes do procedimento",
+          "acao": "Ouvir o paciente e oferecer alternativas com limites claros; silêncio involuntário não é consentimento.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "Vigília tem fim",
+          "acao": "Dividir turnos, repouso e alimentação; cuidado não depende de sacrifício infinito de um único curador.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "Uma erva não é certeza",
+          "acao": "Não atribuir potência curativa a planta sem aprovação autoral e condições materiais.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "conflitos": [
+        {
+          "id": "conflito:lxviii:vigilia:1",
+          "nome": "A escolha de Diona",
+          "situacao": "Uma família exige tratamento mágico desconhecido antes que Diona volte a trabalhar.",
+          "escolhas": "Escutar Diona, avaliar recursos e alternativas de adaptação, recusar promessa de cura garantida.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "conflito:lxviii:vigilia:2",
+          "nome": "O leito disputado",
+          "situacao": "Um ferido ligado às forças da Corte pede socorro quando pacientes do refúgio necessitam dos recursos existentes.",
+          "escolhas": "Avaliar capacidade, segurança, escolha dos envolvidos e opções limitadas sem determinar culpa coletiva.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    },
+    {
+      "key": "sinos",
+      "source": "povoamento:xlv:17",
+      "prior": "ciclo52:comunidade:r-sinos",
+      "area": "Rio Ancestral",
+      "heading": "Uma tecnologia só ajuda quando pode ser usada",
+      "premise": "Gnomos mecânicos e cuidadores de pequenos animais propõem avisos por pausas, vibrações e instrumentos ópticos. Esse trabalho permite tratar acessibilidade como escolha de projeto: um mecanismo pode avisar ou denunciar conforme quem o controla.",
+      "subsistence": "Ressonadores exigem matéria, manutenção, superfície apropriada e energia não descritas. Um sinal de toque não é compreendido universalmente, e a Oficina não possui rede intercomunitária comprovada.",
+      "open": [
+        "Disponibilidade de energia e materiais",
+        "Quem entende os sinais?",
+        "Como impedir que um alerta revele perseguido?"
+      ],
+      "id": "comunidade:lxviii:sinos",
+      "nome": "Casa dos Sinos sem Badalo",
+      "povos": "Gnomos mecânicos e cuidadores de pequenas criaturas sinantrópicas",
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxviii:sinos:1",
+          "nome": "Yeta Três-Paus",
+          "perfil": "Gnoma mecânica surda candidata",
+          "desejo": "Projetar sinais que funcionem para usuários com necessidades diferentes.",
+          "contradicao": "O contratante quer impor um padrão que exclui quem não compartilha sua linguagem.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxviii:sinos:2",
+          "nome": "Firim Eco-Torto",
+          "perfil": "Gnomo idoso com tremor nas mãos, antigo inspetor candidato",
+          "desejo": "Continuar ensinando diagnóstico sem executar tarefas manuais incompatíveis com sua precisão atual.",
+          "contradicao": "Mestres querem excluí-lo de qualquer função por causa de uma limitação específica.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        }
+      ],
+      "retorno": [],
+      "espacos": [
+        {
+          "id": "espaco:lxviii:sinos:1",
+          "nome": "Bancada das Três Respostas",
+          "uso": "Teste local de sinais visuais, táteis ou sonoros, conforme materiais e conhecimentos disponíveis.",
+          "risco": "A prova da oficina é confundida com cobertura garantida de um povoado inteiro.",
+          "ocorrencia_comprovada": false
+        },
+        {
+          "id": "espaco:lxviii:sinos:2",
+          "nome": "Sala da Pausa Consentida",
+          "uso": "Lugar candidato para repouso e comunicação sem pressão da bancada.",
+          "risco": "O prazo de uma encomenda pode tornar o descanso privilégio de mestres.",
+          "ocorrencia_comprovada": false
+        }
+      ],
+      "praticas": [
+        {
+          "nome": "Testar com quem percebe",
+          "acao": "O projetista escuta usuários com diferentes capacidades antes de afirmar que uma comunicação funciona.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "Pausa também é técnica",
+          "acao": "Tarefas de precisão podem ser reorganizadas segundo fadiga, tremor, audição e vontade sem afastar pessoas de toda decisão.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "Avisar não é vigiar",
+          "acao": "Registrar a finalidade de cada mecanismo, incluindo risco de revelar o abrigo de um perseguido.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "conflitos": [
+        {
+          "id": "conflito:lxviii:sinos:1",
+          "nome": "O aviso que só alguns recebem",
+          "situacao": "O protótipo de alerta não é compreendido por algumas pessoas que deveriam ser protegidas.",
+          "escolhas": "Testar com usuários, adaptar e admitir incerteza antes de instalar.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "conflito:lxviii:sinos:2",
+          "nome": "O sino tomado pela Corte",
+          "situacao": "Um encomendante deseja reaproveitar um aviso como mecanismo de identificação de fugitivos.",
+          "escolhas": "Negociar finalidade, recusar ou restringir o projeto; não pressupor contrato já ocorrido.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    },
+    {
+      "key": "velorio",
+      "source": "povoamento:xlv:30",
+      "prior": "povoamento:liii:11",
+      "area": "Eldroth",
+      "heading": "Um morto consciente não é propriedade",
+      "premise": "A comunidade de mortos-vivos conscientes é proposta e distinta do exército de Damaris até decisão do autor. O cuidado pode significar escuta, guarda de relíquias com consentimento e proteção contra aprisionamento; não se presume que os moradores necessitem de cura, alimento ou sono.",
+      "subsistence": "Conservação de objetos e acesso a abrigo exigem materiais, mas metabolismo, tempo de existência, necessidades fisiológicas e condições mágicas dos habitantes não foram definidos. Não inventar controle necromântico nem identidade jurídica intacta.",
+      "open": [
+        "Metabolismo e comunicação individual",
+        "Memória e personalidade ao longo do tempo",
+        "Qualquer poder efetivo de Damaris sobre estes habitantes"
+      ],
+      "id": "comunidade:lxviii:velorio",
+      "nome": "O Velório dos que Aprenderam a Falar",
+      "povos": "Mortos-vivos conscientes propostos, diferentes do exército de Damaris até decisão",
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxviii:velorio:1",
+          "nome": "Otheu Voz-Cinza",
+          "perfil": "Morto-vivo consciente candidato, conservador de objetos e relatos",
+          "desejo": "Escolher quais lembranças compartilhar e o que deseja manter privado.",
+          "contradicao": "Familiares vivos esperam relatos cuja lembrança pode não existir.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxviii:velorio:2",
+          "nome": "Fesma Restos-Lentos",
+          "perfil": "Morta-viva consciente candidata com comunicação em intervalos variáveis",
+          "desejo": "Participar das decisões do conselho sem ser desqualificada pelo tempo de resposta.",
+          "contradicao": "A assembleia encerra votações antes de ouvi-la.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        }
+      ],
+      "retorno": [],
+      "espacos": [
+        {
+          "id": "espaco:lxviii:velorio:1",
+          "nome": "Pátio das Escolhas Depois do Fim",
+          "uso": "Deliberação candidata sobre memória, integridade e permanência de indivíduos conscientes.",
+          "risco": "Um descendente vivo deseja decidir em nome do morto sem consultá-lo.",
+          "ocorrencia_comprovada": false
+        },
+        {
+          "id": "espaco:lxviii:velorio:2",
+          "nome": "Armário das Relíquias Devolvíveis",
+          "uso": "Guarda provisória com proveniência e restituição contestável.",
+          "risco": "Preservação pode virar apropriação definitiva.",
+          "ocorrencia_comprovada": false
+        }
+      ],
+      "praticas": [
+        {
+          "nome": "Uma voz descontínua continua voz",
+          "acao": "Escutar alguém que responde em intervalos variáveis sem presumir renúncia por demora.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "Relíquia não é dono",
+          "acao": "Guardar o objeto de uma pessoa não concede autoridade para comandar seu corpo.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "O alistamento não é herança da morte",
+          "acao": "Uma exigência militar não se torna legítima apenas porque o recrutado é morto-vivo consciente.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "conflitos": [
+        {
+          "id": "conflito:lxviii:velorio:1",
+          "nome": "A testemunha não pertence à sepultura",
+          "situacao": "Um parente vivo reivindica documentos e corpo de Otheu como parte de uma herança.",
+          "escolhas": "Separar objeto de pessoa, ouvir as partes e reconhecer incerteza sobre o passado.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "conflito:lxviii:velorio:2",
+          "nome": "O nome de Damaris num mandado",
+          "situacao": "Uma pessoa invoca Damaris para exigir serviço de moradores conscientes, sem comprovar comando sobre eles.",
+          "escolhas": "Investigar fundamento, recusar servidão e decidir defesas voluntárias sem tornar a autoridade real.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    },
+    {
+      "key": "minerais",
+      "source": "povoamento:xlvi:thargrid-montanhas:06",
+      "prior": "sociedade:lxi:minerais",
+      "area": "Thargrid",
+      "heading": "Reparar uma parede pode ferir alguém",
+      "premise": "Elementais minerais conscientes continuam proposta separada dos gigantes de pedra canônicos. Uma parede pode ser parte do corpo de uma pessoa; suporte estrutural, memória de fissura e segurança de visitantes podem entrar em conflito. A decisão não é tomada automaticamente pelos escultores.",
+      "subsistence": "Materiais inertes, engenheiros e soluções reversíveis não estão garantidos. As necessidades minerais de água, energia e metabolismo são desconhecidas; visitantes orgânicos precisam de condições de moradia específicas.",
+      "open": [
+        "Como cada indivíduo mineral comunica vontade?",
+        "Que pedras são seguramente inertes?",
+        "O abrigo orgânico pode ser protegido sem ferir moradores?"
+      ],
+      "id": "comunidade:lxviii:minerais",
+      "nome": "A Vila da Pedra que Respira",
+      "povos": "Elementais de pedra com organização própria e escultores gigantes propostos",
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxviii:minerais:1",
+          "nome": "Lurra Veio-Inteiro",
+          "perfil": "Indivíduo mineral consciente candidato",
+          "desejo": "Ter tempo de responder antes que mexam em sua superfície.",
+          "contradicao": "A espera pode ameaçar usuários orgânicos de um espaço instável.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxviii:minerais:2",
+          "nome": "Bela Torno-Leve",
+          "perfil": "Escultora anã candidata",
+          "desejo": "Projetar estruturas de apoio sem ferir habitantes minerais.",
+          "contradicao": "A matéria de obra disponível pode não estar comprovadamente inerte.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        }
+      ],
+      "retorno": [
+        {
+          "nome": "Téssira Fratura-Antiga",
+          "fonte": "sociedade:lxi:minerais",
+          "novo_evento_confirmado": false
+        },
+        {
+          "nome": "Vâr Muralha-Cedida",
+          "fonte": "sociedade:lxi:minerais",
+          "novo_evento_confirmado": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxviii:minerais:1",
+          "nome": "Oficina do Apoio Reversível",
+          "uso": "Avaliação de suportes que evitem cortar corpos, quando houver recursos e viabilidade.",
+          "risco": "Um reforço chamado reversível pode causar danos e consumir materiais incertos.",
+          "ocorrencia_comprovada": false
+        },
+        {
+          "id": "espaco:lxviii:minerais:2",
+          "nome": "Sala do Intervalo de Resposta",
+          "uso": "Ambiente proposto para escuta lenta e registros contestáveis.",
+          "risco": "Visitantes alegam urgência para ignorar recusa de um morador.",
+          "ocorrencia_comprovada": false
+        }
+      ],
+      "praticas": [
+        {
+          "nome": "A fratura é de quem a vive",
+          "acao": "Preservar ou reparar marca corporal requer a vontade do indivíduo, dentro de sua forma possível de expressão.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "Escuta com revisão",
+          "acao": "Traduções de vibrações ou intervalos não são provas infalíveis; decisões e interpretações podem ser contestadas.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "A obra não compra o corpo",
+          "acao": "Quem paga uma proteção não se torna proprietário da pessoa mineral nem de toda a galeria.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "conflitos": [
+        {
+          "id": "conflito:lxviii:minerais:1",
+          "nome": "O teto que também é corpo",
+          "situacao": "Uma cobertura precisa de reforço e o ponto de fixação atingiria Lurra.",
+          "escolhas": "Buscar método alternativo, realocar ocupantes, esclarecer riscos e consultar Lurra.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "conflito:lxviii:minerais:2",
+          "nome": "A cicatriz exposta",
+          "situacao": "Uma autoridade deseja usar a fratura histórica de Téssira como monumento público.",
+          "escolhas": "Pedir consentimento, proteger memória e avaliar se a exposição ameaça sua segurança.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    },
+    {
+      "key": "sobrenomes",
+      "source": "povoamento:xlix:costa:02",
+      "prior": "comunidade:lxvii:sobrenomes",
+      "area": "Costa Sul",
+      "heading": "Envelhecer não significa perder o direito de decidir",
+      "premise": "Uma família de parentesco orc-humano pode cuidar de idosos, crianças e pessoas com diferentes capacidades. A arbitragem por parentes mais velhos já é proposta, mas não substitui a voz de quem recebe apoio, nem torna jovens herdeiros compulsórios de profissão ou dívida.",
+      "subsistence": "Hortas, forragem, água, ferramentas e provisões não foram quantificadas ou homologadas. O trabalho de cuidado compete por tempo real com o plantio e o reparo, sem ser menos necessário.",
+      "open": [
+        "Quem já presta cuidado e com quais recursos?",
+        "Existe cultivo suficiente e água?",
+        "Quais vínculos familiares são realmente reconhecidos?"
+      ],
+      "id": "comunidade:lxviii:sobrenomes",
+      "nome": "A Casa dos Dois Sobrenomes",
+      "povos": "linhagens orcs e humanas de parentesco misto, com crianças de ambos os povos",
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxviii:sobrenomes:1",
+          "nome": "Udra Mãos-Duas",
+          "perfil": "Orc idosa candidata, conhecedora de horticultura e com baixa visão",
+          "desejo": "Continuar participando das decisões sobre cultivo e uso de instrumentos.",
+          "contradicao": "Parentes desejam transferir suas ferramentas antes de ouvi-la.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxviii:sobrenomes:2",
+          "nome": "Iren Mesa-Quieto",
+          "perfil": "Humano adulto candidato, organizador de turnos de cuidado",
+          "desejo": "Distribuir tarefas sem sobrecarregar uma pessoa.",
+          "contradicao": "Seu registro formal ignora trabalho que outros já fazem espontaneamente.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        }
+      ],
+      "retorno": [
+        {
+          "nome": "Zara Campo-Dobrado",
+          "fonte": "comunidade:lxvii:sobrenomes",
+          "novo_evento_confirmado": false
+        },
+        {
+          "nome": "Boro Dois-Rostos",
+          "fonte": "comunidade:lxvii:sobrenomes",
+          "novo_evento_confirmado": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxviii:sobrenomes:1",
+          "nome": "Banco das Sementes Não Gastas",
+          "uso": "Ensino de técnicas de cultivo em fichas ou material disponível, sem colheita inventada.",
+          "risco": "Uma memória de safra é contabilizada como produção certa.",
+          "ocorrencia_comprovada": false
+        },
+        {
+          "id": "espaco:lxviii:sobrenomes:2",
+          "nome": "Pátio do Trabalho que Não Aparece",
+          "uso": "Discussão do tempo gasto em cozinha, higiene, acolhimento e companhia.",
+          "risco": "Quem só valoriza ferramentas e frutos invisibiliza os cuidadores.",
+          "ocorrencia_comprovada": false
+        }
+      ],
+      "praticas": [
+        {
+          "nome": "Conselho ouve quem será cuidado",
+          "acao": "A família não toma a baixa visão de alguém como incapacidade geral ou perda automática de direitos.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "A jornada também tem limite",
+          "acao": "Quem organiza apoio deve negociar repouso e divisão de tarefas, sem exigir que um parente sempre esteja disponível.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "Saber não é dívida",
+          "acao": "A pessoa mais velha pode ensinar cultivo sem impor profissão ou culpa ancestral ao aprendiz.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "conflitos": [
+        {
+          "id": "conflito:lxviii:sobrenomes:1",
+          "nome": "A horta decidida sem Udra",
+          "situacao": "A família retira de Udra a palavra sobre instrumentos porque ela enxerga menos que antes.",
+          "escolhas": "Adaptar tarefas, ouvir Udra, discutir uso e responsabilidade por danos reais.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "conflito:lxviii:sobrenomes:2",
+          "nome": "O turno herdado por Boro",
+          "situacao": "Um parente exige que Boro preste serviço indefinido de cuidado como compensação por dívida ancestral.",
+          "escolhas": "Recusar coerção e distribuir tarefas conforme capacidade e consentimento.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    },
+    {
+      "key": "terreiro",
+      "source": "povoamento:xlix:costa:10",
+      "prior": "comunidade:lxvii:terreiro",
+      "area": "Costa Sul",
+      "heading": "Acolher não cria obrigação de trabalhar",
+      "premise": "O Terreiro dos Panos Virados pode organizar reparos, alimentação e apoio mútuo sem exigir cadastro público dos refugiados. Uma pessoa que necessita de adaptação não deve perder moradia por produzir menos peças; cuidar de outros tampouco é preço obrigatório de uma esteira.",
+      "subsistence": "Fibras, equipamentos, provisões e água são recursos ainda não medidos. Planilhas de turnos, marcas em panos ou livros de notas não podem comprovar comida que não chegou.",
+      "open": [
+        "Quais provisões estão fisicamente presentes?",
+        "Quais pessoas desejam prestar cuidado?",
+        "Como conferir turnos protegendo identidades?"
+      ],
+      "id": "comunidade:lxviii:terreiro",
+      "nome": "O Terreiro dos Panos Virados",
+      "povos": "famílias orcs e humanas deslocadas, com alguns elfos de Eldroth propostos",
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxviii:terreiro:1",
+          "nome": "Pera Recorte-Fino",
+          "perfil": "Humana idosa candidata, costureira com menor precisão manual",
+          "desejo": "Ensinar técnicas e adaptar instrumentos sem ser obrigada a atingir antigas metas.",
+          "contradicao": "Uma liderança mede sua contribuição apenas em roupas entregues.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxviii:terreiro:2",
+          "nome": "Kalem Cesto-de-Turno",
+          "perfil": "Orc adulto candidato, cuidador e organizador de turnos",
+          "desejo": "Repartir apoio entre alojamentos sem entregar nomes de refugiados.",
+          "contradicao": "Seu sistema de tarefas não vê o cuidado realizado fora das listas.",
+          "idade": null,
+          "parentesco_comprovado": false,
+          "aprovacao_autoral": false
+        }
+      ],
+      "retorno": [
+        {
+          "nome": "Tessia Pano-Virado",
+          "fonte": "comunidade:lxvii:terreiro",
+          "novo_evento_confirmado": false
+        },
+        {
+          "nome": "Maru Dois-Abrigos",
+          "fonte": "comunidade:lxvii:terreiro",
+          "novo_evento_confirmado": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxviii:terreiro:1",
+          "nome": "Roda das Costuras Interrompidas",
+          "uso": "Compartilhar métodos de adaptação de instrumentos e pausas, sem meta obrigatória de produção.",
+          "risco": "Guardiões podem equiparar lentidão a falta de vontade.",
+          "ocorrencia_comprovada": false
+        },
+        {
+          "id": "espaco:lxviii:terreiro:2",
+          "nome": "Mesa dos Turnos Sem Nome",
+          "uso": "Auditoria de tempos e necessidades de apoio por abrigo, preservando informações pessoais.",
+          "risco": "Uma conta fechada pode esconder o trabalho fora do alojamento.",
+          "ocorrencia_comprovada": false
+        }
+      ],
+      "praticas": [
+        {
+          "nome": "O ponto pode mudar",
+          "acao": "Uma costureira decide como adaptar o trabalho e se deseja ensinar outra pessoa.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "Hospedagem não é contrato de servidão",
+          "acao": "Acolhimento e obrigação de trabalhar são questões diferentes; contribuições podem ser negociadas sem coerção.",
+          "aprovacao_autoral": false
+        },
+        {
+          "nome": "Registro mínimo, escuta máxima",
+          "acao": "Conferir turnos e mantimentos sem expor nomes e roteiros de fugitivos.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "conflitos": [
+        {
+          "id": "conflito:lxviii:terreiro:1",
+          "nome": "A costureira que passou a ensinar",
+          "situacao": "Pera perde direito de usar a mesa por não entregar as mesmas quantidades de antes.",
+          "escolhas": "Negociar função docente, adaptar tarefas ou rever critérios de uso sem impor solução única.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "conflito:lxviii:terreiro:2",
+          "nome": "O turno cobrado pela esteira",
+          "situacao": "Uma autoridade pretende condicionar alimentação e alojamento à aceitação de turnos compulsórios.",
+          "escolhas": "Separar necessidade real, possibilidade de contribuição, negociação e segurança dos refugiados.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    }
+  ],
+  "circuito_de_cuidado": [
+    {
+      "id": "fase:lxviii:1",
+      "nome": "Escutar sem reduzir",
+      "acao": "A pessoa expressa sua necessidade, seus limites e sua vontade por meios possíveis.",
+      "limite": "Silêncio, demora ou limitação sensorial não comprovam falta de autonomia."
+    },
+    {
+      "id": "fase:lxviii:2",
+      "nome": "Conferir recursos",
+      "acao": "Alimento, água, ferramentas, material de apoio e tempo de cuidadores precisam existir de fato.",
+      "limite": "Caridade prometida não equivale a provisão."
+    },
+    {
+      "id": "fase:lxviii:3",
+      "nome": "Negociar responsabilidades",
+      "acao": "Turnos e tarefas podem ser acordados, recusados ou revistos quando o cuidado exige continuidade.",
+      "limite": "Acolhimento não concede direito de alistamento ou trabalho compulsório."
+    },
+    {
+      "id": "fase:lxviii:4",
+      "nome": "Adaptar técnicas e lugares",
+      "acao": "Ajustes no ambiente e nas ferramentas podem preservar capacidades e escolhas.",
+      "limite": "Não presumir instrumento mágico ou método clínico eficaz."
+    },
+    {
+      "id": "fase:lxviii:5",
+      "nome": "Garantir descanso de cuidadores",
+      "acao": "A carga de trabalho deve ser distribuída com revisão de risco e de possibilidades materiais.",
+      "limite": "Cuidadores não são inesgotáveis."
+    },
+    {
+      "id": "fase:lxviii:6",
+      "nome": "Proteger registros",
+      "acao": "Documentar recursos e decisões sem divulgar nomes, rotas e informações sensíveis desnecessariamente.",
+      "limite": "Sigilo não justifica descontrole de estoques."
+    },
+    {
+      "id": "fase:lxviii:7",
+      "nome": "Rever sem exigir cura",
+      "acao": "Uma pessoa pode mudar de preferência; nem todo objetivo é voltar a um estado corporal anterior.",
+      "limite": "Não prometer rejuvenescimento, restauração ou produtividade universal."
+    }
+  ],
+  "relacoes_analiticas": [
+    {
+      "id": "comparacao:lxviii:1",
+      "de": "comunidade:lxviii:vigilia",
+      "para": "comunidade:lxviii:sinos",
+      "comparacao": "Comunicação e escolha do paciente exigem formas adequadas a cada pessoa; não há oficina ou visita compartilhada.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxviii:2",
+      "de": "comunidade:lxviii:vigilia",
+      "para": "comunidade:lxviii:velorio",
+      "comparacao": "Consentimento e memória importam a corpos de naturezas diferentes, sem fisiologia comparável.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxviii:3",
+      "de": "comunidade:lxviii:sinos",
+      "para": "comunidade:lxviii:minerais",
+      "comparacao": "Vibração é tecnologia possível de aviso; não traduz automaticamente a fala de seres minerais.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxviii:4",
+      "de": "comunidade:lxviii:velorio",
+      "para": "comunidade:lxviii:minerais",
+      "comparacao": "Conservar objeto, cicatriz ou abrigo não concede propriedade sobre pessoa consciente.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxviii:5",
+      "de": "comunidade:lxviii:sobrenomes",
+      "para": "comunidade:lxviii:terreiro",
+      "comparacao": "Cuidar e repartir trabalho em famílias e refúgios são dilemas semelhantes, sem contato estabelecido.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxviii:6",
+      "de": "comunidade:lxviii:terreiro",
+      "para": "comunidade:lxviii:vigilia",
+      "comparacao": "Privacidade e distribuição de cuidado trazem escolhas comparáveis, não transferência de pacientes.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxviii:7",
+      "de": "comunidade:lxviii:sobrenomes",
+      "para": "comunidade:lxviii:sinos",
+      "comparacao": "Pessoas com limitações específicas podem continuar orientando técnicas, sem contrato entre as comunidades.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxviii:8",
+      "de": "comunidade:lxviii:velorio",
+      "para": "comunidade:lxviii:sobrenomes",
+      "comparacao": "Memória e ancestralidade não estabelecem autoridade de parentes vivos sobre mortos conscientes.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxviii:9",
+      "de": "comunidade:lxviii:minerais",
+      "para": "comunidade:lxviii:terreiro",
+      "comparacao": "Abrigos podem demandar manutenção e consentimento, mas não há rota geográfica.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    }
+  ],
+  "limites": [
+    "Não presumir que pessoas idosas, com deficiência ou com limitações de tarefas sejam incapazes de decidir ou desprovidas de ofício.",
+    "Não tratar cura, retorno à condição anterior ou efeito farmacológico de ervas como garantidos.",
+    "O Velório é comunidade proposta e não possui vínculo automático com as tropas de Damaris.",
+    "Não presumir alimentação, sono, respiração, metabolismo, controle necromântico ou imortalidade de mortos-vivos conscientes.",
+    "Seres minerais conscientes são proposta distinta dos gigantes de pedra autorais; nem toda rocha é pessoa.",
+    "Sinais ópticos, vibratórios ou sonoros não criam idioma universal e podem ser apropriados para vigilância.",
+    "Nenhuma pessoa foi atendida, transportada, internada, escravizada ou libertada por estas cenas que não aconteceram.",
+    "Nenhum hospital regional, rede de auxílio, rota, convênio ou comércio entre comunidades foi criado.",
+    "Não fixar idade, parentesco, localização, população, água potável ou capacidade de produção.",
+    "Cuidado não é tarifa de moradia, obrigação hereditária ou condição de cidadania.",
+    "Não divulgar segredos de Gualápolis, do Arquivo, de Jorou, de Ulorian ou da cosmologia primordial."
+  ]
+}
