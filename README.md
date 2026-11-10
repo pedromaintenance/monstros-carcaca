@@ -88,6 +88,10 @@ O [dossiê da economia dos cuidados e da autonomia](docs/OS_QUE_SUSTENTAM_A_VIDA
 
 O [dossiê de ritos, lembranças, morte consciente e herança](docs/MEMORIA_DOS_MORTOS_RITOS_E_HERANCA_CICLO69.md) aprofunda **6 comunidades preexistentes** de Eldroth, Rio Ancestral, Thargrid, Garganta e Costa Sul. Propõe **12 personagens inéditos e 8 reutilizados**, **6 instâncias de escuta**, **12 espaços**, **18 costumes**, **12 conflitos** e **7 condições materiais**. [JSON estruturado](data/propostas/memoria-dos-mortos-ritos-heranca-ciclo69.json). Não canoniza ritos, mortes, propriedade, rotas ou acontecimentos.
 
+## Ciclo LXX — A Carcaça também celebra
+
+O [dossiê de cultura popular, teatro, música, festas e sátira](docs/CULTURA_POPULAR_FESTAS_SATIRA_CICLO70.md) aprofunda **8 comunidades já propostas**, com **16 personagens inéditos, 4 retomados, 24 práticas culturais, 16 espaços, 16 conflitos, 9 condições materiais e 12 comparações sem contato confirmado**. [JSON estruturado](data/propostas/cultura-popular-festas-satira-ciclo70.json). Nenhuma apresentação, festa, rota, ilha ou contato foi canonizado automaticamente.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.

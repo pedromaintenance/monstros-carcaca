@@ -1,0 +1,1097 @@
+{
+  "schema_version": "1.0",
+  "id": "worldbuilding:ciclo70:cultura-popular",
+  "titulo": "Ciclo LXX — A Carcaça também celebra",
+  "data_registro": "2026-11-10",
+  "estado": "proposta_editorial_nao_homologada",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "altera_bestiario": false,
+  "altera_campanhas": false,
+  "criterio": "Culturas populares distintas, lazer como trabalho social e atividade criativa com agência, riscos, recursos e política próprios, sem inventar rotas ou calendários.",
+  "fontes": [
+    "data/propostas/povoamento-regional-lote02-ciclo45.json",
+    "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+    "data/propostas/povoamento-ecologia-alem-sul-ciclo54.json",
+    "data/propostas/povoamento-shadar-grama-cauda-ciclo55.json",
+    "data/propostas/povoamento-insular-submerso-cauda-ciclo47.json",
+    "data/propostas/filhos-do-exilio-memoria-pertencimento-ciclo66.json",
+    "data/propostas/filhos-da-montanha-aprendizagem-ciclo65.json",
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+  ],
+  "fatos_de_contexto": [
+    "A Corte shadow fey explora trabalho, tributos e informação; sua aristocracia é sustentada por relações materiais assimétricas.",
+    "O Rio Ancestral é eixo de controle e circulação, sem autorizar trajetos para uma trupe específica.",
+    "Grama-Cortada tem comunidades hobbits sem monarquia ou exército permanente estabelecidos.",
+    "Thargrid combina tradição de clãs e juramentos draconatos, sem que honra equivalha apenas a guerra.",
+    "O conflito entre Mar de Sangue e Águas Azuis afeta tritões, sereias e recifes; o Jardim e corais sapientes são propostas.",
+    "As ilhas individuais e os seus portos propostos não constam automaticamente do cânone."
+  ],
+  "totais": {
+    "comunidades_preexistentes_aprofundadas": 8,
+    "assentamentos_novos": 0,
+    "pessoas_ineditas": 16,
+    "pessoas_retomadas": 4,
+    "praticas_artisticas_candidatas": 24,
+    "espacos_candidatos": 16,
+    "conflitos_para_sessao_nao_ocorridos": 16,
+    "condicoes_materiais": 9,
+    "comparacoes_nao_confirmadas": 12,
+    "festivais_canonizados": 0,
+    "especies_novas": 0
+  },
+  "comunidades": [
+    {
+      "id": "comunidade:lxx:teatro",
+      "nome": "O Teatro das Duas Águas",
+      "origem": "povoamento:xlv:23",
+      "setor": "Rio Ancestral",
+      "povos_previamente_propostos": "Artistas gnômicos, músicos humanos e fadas de máscara proposta",
+      "eixo": "Uma peça pode criticar o poder e ainda ser apenas uma boa peça",
+      "vida_social": "Artistas gnômicos, músicos humanos e fadas de máscara compõem uma ocupação teatral itinerante, sem cidade-mãe ou rota verificada. Diretores por temporada são uma proposta anterior; trabalhadores de cenário e figurino precisam de espaço para discutir cachê e segurança.",
+      "dependencias_materiais": "Tecido, madeira, pigmentos, instrumentos, iluminação, descanso e alimentos dependem de fontes não comprovadas. Um palco desmontável não prova uma barca, uma travessia ou uma praça disponível.",
+      "contradicao_de_poder": "Censores da Corte podem tentar ditar qual guerra merece ser representada. Mas um diretor aliado da resistência também pode omitir o trabalho dos artistas ou exigir que toda peça seja propaganda; a crítica pode existir sem se tornar juramento político.",
+      "praticas_artisticas": [
+        {
+          "id": "pratica:lxx:teatro:1",
+          "nome": "A Comédia do Tributador Sem Bolsos",
+          "descricao": "Farsa candidata em que uma autoridade tenta contar até os próprios bolsos e sempre esquece quem os costurou.",
+          "participacao": "Músicos e atores alternam falas, truques de palco e pausas para improvisar.",
+          "insumos": "Máscaras, ensaio, alimento para a trupe e consentimento de quem é caricaturado como trabalhador.",
+          "risco": "Um censor pode reconhecer crítica aos tributos, mas a peça não revela automaticamente informações militares.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:teatro:2",
+          "nome": "O Palco de Duas Versões",
+          "descricao": "Uma mesma história de deslocamento é narrada em duas montagens contraditórias, sem declarar uma vencedora.",
+          "participacao": "O público pode comentar e oferecer relatos sem precisar identificar seu lugar de origem.",
+          "insumos": "Tempo de escuta, sinais de entrada e saída e proteção de nomes.",
+          "risco": "Uma plateia exige que os autores escolham uma versão oficial para evitar represália.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:teatro:3",
+          "nome": "Jogo do Autor Invisível",
+          "descricao": "Os espectadores tentam descobrir qual integrante de uma peça imaginou cada gesto, revelando as funções escondidas da equipe.",
+          "participacao": "Participação voluntária, sem atribuir trabalho real a uma pessoa por palpite.",
+          "insumos": "Objetos leves, tempo de descanso e espaço que permita escuta e observação.",
+          "risco": "Um diretor reivindica sozinho o mérito de uma obra coletiva.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxx:teatro:1",
+          "nome": "Tablado das Cortinas Reversíveis",
+          "uso": "Área candidata de ensaio onde cada cena pode ser revista por intérpretes e equipe técnica.",
+          "limite": "A desmontagem demanda trabalho; qualquer palco não é automaticamente seguro.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "espaco:lxx:teatro:2",
+          "nome": "Balcão do Pano e da Parte",
+          "uso": "Espaço de negociação de materiais e divisão de remuneração, quando existir pagamento.",
+          "limite": "O prestígio do diretor pode invisibilizar músicos, costureiros e carregadores.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxx:teatro:1",
+          "nome": "Rilia Palco-Seco",
+          "identidade": "Artista gnoma candidata, diretora eleita somente se uma temporada for aceita",
+          "desejo": "Construir teatro crítico sem monopolizar a interpretação dos demais.",
+          "contradicao": "Sua fama a tenta impor um texto único ao elenco.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxx:teatro:2",
+          "nome": "Tamon Três-Entradas",
+          "identidade": "Músico humano candidato e trabalhador de montagem",
+          "desejo": "Garantir que técnicos recebam repouso e parte dos ganhos.",
+          "contradicao": "Poderia suspender uma apresentação necessária à comunidade caso a equipe esteja exausta.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [],
+      "conflitos": [
+        {
+          "id": "cena:lxx:teatro:1",
+          "nome": "O riso tributável",
+          "premissa": "Um nobre pretende cobrar taxa sobre uma apresentação cujo palco e público ainda não foram confirmados.",
+          "possibilidades": "Negociar contrato, realizar ensaio privado, recusar palco ou expor contradição sem declarar revolta ocorrida.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxx:teatro:2",
+          "nome": "A fala que ninguém assinou",
+          "premissa": "O diretor atribui ao grupo uma frase provocadora que nenhum ator aprovou.",
+          "possibilidades": "Ouvir elenco e técnicos, refazer texto, preservar dissenso ou aceitar risco conscientemente.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "evento_canonizado": false
+    },
+    {
+      "id": "comunidade:lxx:mascaras",
+      "nome": "O Ateliê das Máscaras Legíveis",
+      "origem": "povoamento:lv:02",
+      "setor": "Shadar",
+      "povos_previamente_propostos": "Costureiras subjugadas, figurinistas e especialistas em glamour",
+      "eixo": "O luxo depende de mãos que não participam do baile",
+      "vida_social": "Costureiras subjugadas, figurinistas e especialistas em glamour candidatos produzem máscaras reconhecíveis socialmente. A festa aristocrática é possível, não acontecimento documentado; uma oficina pode desenvolver também jogos e formas de reconhecer o trabalho.",
+      "dependencias_materiais": "Máscaras, pigmentos, linha, luz e matéria de glamour exigem materiais e tempo. Um efeito feérico não permite apagar toda identidade, escapar da Corte ou tornar uma sátira invulnerável.",
+      "contradicao_de_poder": "Uma Casa nobre pode consumir o luxo e negar crédito aos artesãos. Os trabalhadores divergem entre reivindicar autoria em público — correndo riscos — e proteger pessoas mantendo marcas ocultas. Nem todos os shadow fey possuem o mesmo poder, e nem todo funcionário da Corte é nobre.",
+      "praticas_artisticas": [
+        {
+          "id": "pratica:lxx:mascaras:1",
+          "nome": "Baile do Rosto que Trabalha",
+          "descricao": "Performance candidata em que as máscaras dos patronos exibem sinais discretos dos muitos ofícios que as produziram.",
+          "participacao": "Pode incluir dança ou contemplação voluntária; não pressupor que todos dominem glamour.",
+          "insumos": "Tecido, costura, ajustes e consentimento de quem será identificado.",
+          "risco": "Uma Casa nobre chama a marca de ofício de ofensa à etiqueta.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:mascaras:2",
+          "nome": "Jogo das Máscaras Mal Interpretadas",
+          "descricao": "Duplas descrevem um papel teatral sem usar título de nobreza; os outros precisam deduzir a função real do personagem.",
+          "participacao": "Humor baseado em trabalho e confusões de etiqueta, não em ridicularizar castas subjugadas.",
+          "insumos": "Tempo fora da encomenda e peças de ensaio não vendáveis.",
+          "risco": "Uma administração deseja transformar o jogo em prova de lealdade dos servidores.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:mascaras:3",
+          "nome": "Desfile da Costura Vista",
+          "descricao": "Exposição de avesso, reparo e ponto de uma roupa, valorizando trabalho técnico em vez de ostentação.",
+          "participacao": "Criadores podem optar por mostrar o processo sem revelar o próprio nome.",
+          "insumos": "Retalhos, iluminação e autorização de quem produziu as peças.",
+          "risco": "Uma marquesa deseja assinar como autora todo o ateliê.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxx:mascaras:1",
+          "nome": "Bancada do Avesso Exibido",
+          "uso": "Espaço candidato para ensinar técnicas com peças de demonstração de origem conhecida.",
+          "limite": "A Casa pode confiscar os retalhos e chamar isso de propriedade aristocrática.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "espaco:lxx:mascaras:2",
+          "nome": "Saleta da Máscara Recusada",
+          "uso": "Lugar hipotético para artistas contestarem encomenda humilhante ou insegura.",
+          "limite": "Recusar uma Casa pode significar perder acesso a materiais e sustento.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxx:mascaras:1",
+          "nome": "Esvra Linha-Visível",
+          "identidade": "Costureira shadow fey subjugada candidata",
+          "desejo": "Ser reconhecida como autora sem expor colegas que desejam anonimato.",
+          "contradicao": "Seu próprio desejo de fama pode comprometer a segurança de quem trabalha.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxx:mascaras:2",
+          "nome": "Mael Veste-Dobrada",
+          "identidade": "Figurinista humano candidato sob dependência do ateliê",
+          "desejo": "Criar peças que possam ser consertadas em vez de descartadas após uma noite.",
+          "contradicao": "O patrono paga apenas por novidades e ameaça encerrar a encomenda.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [],
+      "conflitos": [
+        {
+          "id": "cena:lxx:mascaras:1",
+          "nome": "Assinatura no avesso",
+          "premissa": "A máscara de um nobre revela a marca de quem a costurou durante um baile hipotético.",
+          "possibilidades": "Ouvir artista, decidir reparo, negociar crédito ou preservar anonimato; a magia não garante proteção.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxx:mascaras:2",
+          "nome": "O festival das mãos vazias",
+          "premissa": "Artesãos recebem ordem de trabalhar durante uma comemoração sem alimento ou descanso previstos.",
+          "possibilidades": "Negociar turnos, recusar produção, encontrar soluções materiais reais ou reconhecer consequências.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "evento_canonizado": false
+    },
+    {
+      "id": "comunidade:lxx:panela",
+      "nome": "Pouso da Panela Retornada",
+      "origem": "povoamento:lv:05",
+      "setor": "Grama-Cortada",
+      "povos_previamente_propostos": "Hobbits anfitriões, cozinheiros e viajantes ocasionais",
+      "eixo": "Hospitalidade não é obrigação infinita de quem cozinha",
+      "vida_social": "Hobbits anfitriões, cozinheiros e viajantes formam um pouso proposto sem rei, fortaleza, exército permanente ou posição geográfica definida. Comer, contar casos e fazer pequenas competições pode reunir famílias sem tornar toda visita um tributo.",
+      "dependencias_materiais": "A panela depende de combustível, água adequada, ingredientes e pessoas que cultivam, transportam, cozinham e lavam. Não há colheita, banquete anual ou estoque garantido.",
+      "contradicao_de_poder": "A reputação comunitária pode pressionar famílias pobres a alimentar visitantes sem que disponham de alimento; uma celebração não é generosidade quando transfere todo o trabalho a quem tem menos poder.",
+      "praticas_artisticas": [
+        {
+          "id": "pratica:lxx:panela:1",
+          "nome": "O Concurso do Prato que Falta",
+          "descricao": "Jogo culinário candidato em que cada participante apresenta não apenas o prato imaginado, mas o ingrediente que falta e quem seria responsável por obtê-lo.",
+          "participacao": "Humor sobre promessas grandiosas de comida, sem obrigar alguém a cozinhar.",
+          "insumos": "Recipientes limpos, água, repouso e alimentos de fato disponíveis.",
+          "risco": "Um anfitrião transforma o jogo em disputa de prestígio e esconde o custo de sua refeição.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:panela:2",
+          "nome": "Roda das Histórias de Mesa",
+          "descricao": "Narradores voluntários apresentam versões curtas e exageradas de um mesmo convite para jantar.",
+          "participacao": "A graça está nas omissões, correções e interrupções afetuosas, sem forçar viajantes a revelar a própria origem.",
+          "insumos": "Tempo, espaço acessível e disposição para ouvir quem não domina a fala local.",
+          "risco": "Uma família usa o relato de um hóspede como prova de dívida de hospitalidade.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:panela:3",
+          "nome": "Dança dos Panos de Cozinha",
+          "descricao": "Brincadeira de coordenação com panos e utensílios inertes que permite participar sentado, em pé ou apenas marcando o ritmo.",
+          "participacao": "Não envolve fogo, facas nem alimento quente como teste de habilidade.",
+          "insumos": "Panos, chão seguro e tempo livre para quem terminou o serviço.",
+          "risco": "Quem lavou louça fica de fora porque sempre recebe mais tarefa.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxx:panela:1",
+          "nome": "Pátio do Convite Limitado",
+          "uso": "Lugar de encontro candidato em que se negociam quantos hóspedes podem ser acolhidos.",
+          "limite": "Fama de hospitalidade não comprova camas ou comida.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "espaco:lxx:panela:2",
+          "nome": "Banco dos Cozinheiros Sentados",
+          "uso": "Espaço para descanso e contação de histórias dos responsáveis por preparar e limpar.",
+          "limite": "Um organizador considera pausa falta de alegria comunitária.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxx:panela:1",
+          "nome": "Mina Pão-de-Vez",
+          "identidade": "Cozinheira hobbit candidata",
+          "desejo": "Criar celebrações em que o cuidado com convidados seja repartido.",
+          "contradicao": "Tem medo de negar um pedido e perder amizade de famílias antigas.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxx:panela:2",
+          "nome": "Loru Panela-Emendada",
+          "identidade": "Reparador hobbit candidato e contador de anedotas",
+          "desejo": "Consertar utensílios antes de inventar pratos extravagantes.",
+          "contradicao": "Sua sátira sobre anfitriões pode humilhar trabalhadores em vez de criticar a obrigação social.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [],
+      "conflitos": [
+        {
+          "id": "cena:lxx:panela:1",
+          "nome": "O jantar sem despensa",
+          "premissa": "Uma família anuncia um banquete sem consultar quem guarda as provisões.",
+          "possibilidades": "Conferir insumos, reduzir convite, mudar o formato ou reconhecer que o banquete não ocorrerá.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxx:panela:2",
+          "nome": "A visita que se tornou dívida",
+          "premissa": "Uma viajante é cobrada por histórias e serviço doméstico como preço da hospedagem já oferecida.",
+          "possibilidades": "Separar reciprocidade e coerção, revisar o acordo e proteger o direito de recusa.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "evento_canonizado": false
+    },
+    {
+      "id": "comunidade:lxx:cumbucas",
+      "nome": "Conselho das Sete Cumbucas",
+      "origem": "povoamento:liv:01",
+      "setor": "Caatinga",
+      "povos_previamente_propostos": "Orcs de clãs distintos, goblins oleiros e famílias humanas exiladas",
+      "eixo": "Cantar a partilha sem transformar água em espetáculo de abundância",
+      "vida_social": "O conselho candidato reúne orcs de diferentes clãs, goblins oleiros e famílias humanas exiladas. O revezamento de anciãos pode enfrentar preconceitos herdados e disputas de água, mas nenhum poço, nascente ou colheita está comprovado.",
+      "dependencias_materiais": "A argila exige matéria, água apropriada e energia para secagem ou queima. Recipientes e comida não aparecem porque foram cantados. Uma festividade depende da mesma água que pessoas precisam beber e cuidar da saúde.",
+      "contradicao_de_poder": "A cerimônia pode lembrar que ninguém deveria ser punido pela linhagem de clã, enquanto uma autoridade deseja negar cumbucas a rivais da costa. Celebrar um pacto não supre seu cumprimento material.",
+      "praticas_artisticas": [
+        {
+          "id": "pratica:lxx:cumbucas:1",
+          "nome": "Cantiga da Cumbuca Vazia",
+          "descricao": "Coro ou fala cadenciada candidata em que uma tigela vazia passa de mão em mão para lembrar obrigação de conferir a reserva real.",
+          "participacao": "Todos podem marcar pausa, gesto ou voz, sem exigir que bebam ou desperdicem água.",
+          "insumos": "Cumbuca segura, espaço de reunião e tempo de quem mantém os recipientes.",
+          "risco": "Um chefe usa a cantiga para fingir que uma reserva inexistente foi distribuída.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:cumbucas:2",
+          "nome": "Jogo dos Sete Usos",
+          "descricao": "Participantes propõem destinos diferentes para recipientes fictícios: guardar, transportar, reparar, ofertar ou reciclar.",
+          "participacao": "Vence a explicação das consequências, não a quantidade alegada de água.",
+          "insumos": "Cerâmica de ensaio e educadores disponíveis.",
+          "risco": "O jogo pode reproduzir a ordem dos clãs se só anciãos puderem decidir.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:cumbucas:3",
+          "nome": "Dança das Sombras Curtas",
+          "descricao": "Movimentos e batidas de pés em superfície segura interpretam calor, sombra e descanso sem marcar estação certa.",
+          "participacao": "Pode ser realizada com gestos de mãos, sem obrigar deslocamento corporal.",
+          "insumos": "Espaço apropriado, pausas e proteção de recursos.",
+          "risco": "Uma cerimônia se torna teste de resistência imposto a crianças.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxx:cumbucas:1",
+          "nome": "Terreiro dos Recipientes Conferidos",
+          "uso": "Área candidata de demonstração de reparo e leitura de marcas de cerâmica.",
+          "limite": "Uma peça usada para sustento é requisitada como ornamento de prestígio.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "espaco:lxx:cumbucas:2",
+          "nome": "Sombra da Cantiga Interrompível",
+          "uso": "Espaço de participação voluntária, com descanso e possibilidade de retirada.",
+          "limite": "Quem controla a sombra tenta controlar o direito de falar.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxx:cumbucas:1",
+          "nome": "Borka Quebra-Seca",
+          "identidade": "Oleira goblin candidata",
+          "desejo": "Ensinar reparo de vasilhas e reconhecer trabalho de quem conserva água.",
+          "contradicao": "Pode insistir em conservar peça insegura pelo seu valor artístico.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxx:cumbucas:2",
+          "nome": "Uru Sombra-Mansa",
+          "identidade": "Músico orc candidato sem clã dominante",
+          "desejo": "Criar uma cantiga que lembre a todos a igualdade da necessidade de beber.",
+          "contradicao": "A letra pode esconder diferenças reais de necessidade e responsabilidade.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [],
+      "conflitos": [
+        {
+          "id": "cena:lxx:cumbucas:1",
+          "nome": "A tigela da família rival",
+          "premissa": "Uma apresentação começa enquanto anciãos discutem negar recipiente a quem veio de clã inimigo.",
+          "possibilidades": "Reconhecer conflito, verificar reservas e retirar punição coletiva sem impor reconciliação pronta.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxx:cumbucas:2",
+          "nome": "A cerâmica feita troféu",
+          "premissa": "Uma cumbuca útil é retirada da circulação para premiar um patrono de festa.",
+          "possibilidades": "Devolver ao uso, reparar substituta se houver materiais, ou aceitar custo explicitado.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "evento_canonizado": false
+    },
+    {
+      "id": "comunidade:lxx:porto",
+      "nome": "Porto da Trégua Quebrada",
+      "origem": "povoamento:liv:09",
+      "setor": "Ilhas da Costa Sul",
+      "povos_previamente_propostos": "Tortles, Tabaxis e famílias de marinheiros sem lealdade única",
+      "eixo": "Uma festa de trégua não é perdão obrigatório",
+      "vida_social": "O porto insular candidato reúne tortles, tabaxis e famílias de marinheiros. A assembleia de reparadores e defensores tem direitos de veto locais; o nome da ilha e seus atracadouros permanecem propostas sem prova geográfica.",
+      "dependencias_materiais": "Instrumentos, madeiras, velas, proteção contra chuva e marés, comida e água doce precisam de comprovação. Dança de marinheiros não certifica rota segura nem retorno de tripulação desaparecida.",
+      "contradicao_de_poder": "Uma apresentação festiva pode aceitar visitantes sob trégua de socorro sem inocentar comandantes acusados de crimes de Daegon. Medo legítimo de captura não autoriza condenação de crianças por insígnias de adultos.",
+      "praticas_artisticas": [
+        {
+          "id": "pratica:lxx:porto:1",
+          "nome": "Baile das Velas Remendadas",
+          "descricao": "Performance candidata com retalhos de vela que representam consertos de tripulações diversas.",
+          "participacao": "Pode incluir passos que imitam o trabalho de navegar, sem exigir que ninguém vá ao mar.",
+          "insumos": "Retalhos autorizados e secos, lugar firme e tempo de reparadores.",
+          "risco": "Um capitão reivindica só para si o louvor de uma equipe de marinheiros.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:porto:2",
+          "nome": "Roda da História que Não Volta Igual",
+          "descricao": "Tortles e tabaxis podem contar versões diferentes de uma viagem sem estabelecer qual rota foi percorrida de verdade.",
+          "participacao": "Narradores explicitam imaginação, memória e documento quando existirem.",
+          "insumos": "Espaço de escuta e proteção de itinerários ainda sensíveis.",
+          "risco": "Um comerciante usa a narrativa como mapa seguro e provoca perigo.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:porto:3",
+          "nome": "Jogo da Trégua por Um Verso",
+          "descricao": "Duplas precisam criar um compromisso temporário que permita dividir uma canção sem pedir absolvição de crimes.",
+          "participacao": "É possível só assistir e sugerir alternativas de negociação.",
+          "insumos": "Tempo de mediação e confiança não garantida.",
+          "risco": "A autoridade tenta converter a brincadeira em anistia forçada de comandantes.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxx:porto:1",
+          "nome": "Convés de Madeira Não Garantida",
+          "uso": "Tablado de celebração candidato, apenas se puder ser montado com estabilidade.",
+          "limite": "Não criar porto operacional, embarcação ou doca por estilo narrativo.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "espaco:lxx:porto:2",
+          "nome": "Mesa do Acordo Cantável",
+          "uso": "Local de conciliação limitado aos participantes, sem substituir investigação.",
+          "limite": "Uma promessa de música vira cláusula de defesa militar.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxx:porto:1",
+          "nome": "Tara Casco-de-Pano",
+          "identidade": "Tortle adulta candidata, reparadora de velas e cantora",
+          "desejo": "Mostrar que manutenção também merece memória em canções.",
+          "contradicao": "Pode idealizar marinheiros e ocultar práticas perigosas de alguns.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxx:porto:2",
+          "nome": "Nima Sete-Retornos",
+          "identidade": "Tabaxi candidata, contadora de histórias de mar",
+          "desejo": "Ouvir relatos contraditórios sem fazer deles guias náuticos infalíveis.",
+          "contradicao": "Sua imaginação é confundida com testemunho de uma viagem real.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [],
+      "conflitos": [
+        {
+          "id": "cena:lxx:porto:1",
+          "nome": "O refrão de quem naufragou",
+          "premissa": "Um grupo acusado de servir Daegon pede para assistir a uma comemoração enquanto famílias temem captura.",
+          "possibilidades": "Avaliar segurança e ações concretas, manter trégua restrita, recusar acesso ou proteger crianças sem absolvição automática.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxx:porto:2",
+          "nome": "A vela que ainda salva",
+          "premissa": "O melhor pano da festa pode ser necessário para reparar equipamento de resgate.",
+          "possibilidades": "Interromper enfeite, negociar matéria alternativa ou reconhecer limite de abastecimento.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "evento_canonizado": false
+    },
+    {
+      "id": "comunidade:lxx:ponte",
+      "nome": "A Ponte que Não É Ponte",
+      "origem": "povoamento:xlv:28",
+      "setor": "Eldroth",
+      "povos_previamente_propostos": "Elfos da floresta, humanos exilados e pequenos feéricos não alinhados",
+      "eixo": "Uma canção precisa ser lembrada sem virar uma lista de denunciados",
+      "vida_social": "Elfos da floresta, humanos exilados e feéricos não alinhados habitam casas suspensas propostas. A assembleia noturna rejeita juramento de guerra obrigatório, e sua existência não prova ponte física nem passagem de resistência.",
+      "dependencias_materiais": "Cordas, cascas, instrumentos silenciosos, repouso e proteção de informações dependem de condições reais. A floresta vigiada por Lady Sylara torna algumas lembranças publicáveis e outras perigosas.",
+      "contradicao_de_poder": "O direito de cantar não obriga exilados a revelar suas antigas moradias. Uma canção pode criticar a ocupação e ainda falar de amores, animais ou saudade sem virar código militar infalível.",
+      "praticas_artisticas": [
+        {
+          "id": "pratica:lxx:ponte:1",
+          "nome": "Canto dos Nomes que Cabem",
+          "descricao": "As pessoas escolhem um nome público, som ou pausa para lembrar alguém sem entregar endereços de refugiados.",
+          "participacao": "Pode acontecer em roda pequena, não como transmissão automática pela floresta.",
+          "insumos": "Acordo sobre o que é privado e tempo de quem ensina versos.",
+          "risco": "Um organizador tenta exigir nomes verdadeiros para chamar a prática de autêntica.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:ponte:2",
+          "nome": "Teatro dos Galhos Emprestados",
+          "descricao": "Pequenas figuras inertes representam cenas de cotidiano e mal-entendidos entre moradores.",
+          "participacao": "Bonecos não substituem a voz de pessoas que foram representadas; críticas podem ser respondidas.",
+          "insumos": "Galhos cedidos sem afetar ninho vivo, fibras e lugar que suporte a apresentação.",
+          "risco": "Um personagem de patrulha é interpretado como informação secreta real.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:ponte:3",
+          "nome": "Brincadeira da Canção Errada",
+          "descricao": "Alguém começa um verso fictício e outra pessoa oferece desfecho diferente, valorizando invenção sobre repetição exata.",
+          "participacao": "Crianças, adultos e refugiados podem participar ou apenas ouvir.",
+          "insumos": "Tempo livre sem obrigação de vigia ou serviço militar.",
+          "risco": "Um ancião transforma jogo de improviso em exame de fidelidade aos antepassados.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxx:ponte:1",
+          "nome": "Varanda do Refrão Curto",
+          "uso": "Espaço candidato para reuniões que não permitam escuta indesejada, sem garantir isolamento acústico.",
+          "limite": "A segurança da apresentação depende de condições de vigilância desconhecidas.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "espaco:lxx:ponte:2",
+          "nome": "Oficina dos Bonecos Devolvíveis",
+          "uso": "Banco de reparo e empréstimo de objetos de cena, sem apropriar pertences de refugiados.",
+          "limite": "O material de abrigo é retirado para entretenimento.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxx:ponte:1",
+          "nome": "Elvi Folha-Emendada",
+          "identidade": "Artista élfica candidata e manipuladora de figuras",
+          "desejo": "Preservar humor sobre a vida diária sem comprometer identidades.",
+          "contradicao": "Às vezes transforma testemunhos alheios em piada antes de pedir permissão.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxx:ponte:2",
+          "nome": "Dorin Vento-Quebrado",
+          "identidade": "Músico humano exilado candidato",
+          "desejo": "Criar canções que não exijam reconstruir fielmente uma casa perdida.",
+          "contradicao": "Sua recusa de cantar hinos de guerra é interpretada como covardia.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Luma Nó-Devolvido",
+          "referencia": "pessoa:lxvi:ponte:02",
+          "encontro_com_outras_comunidades_confirmado": false
+        },
+        {
+          "nome": "Sídhel Cordame-Oco",
+          "referencia": "pessoa:lxvi:ponte:01",
+          "encontro_com_outras_comunidades_confirmado": false
+        }
+      ],
+      "conflitos": [
+        {
+          "id": "cena:lxx:ponte:1",
+          "nome": "O coro que diz a rua",
+          "premissa": "Um músico inclui numa letra um detalhe que pode permitir identificar a origem de uma família acolhida.",
+          "possibilidades": "Revisar, pedir consentimento, preservar versão privada ou cancelar apresentação.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxx:ponte:2",
+          "nome": "O teatro que não quer ser panfleto",
+          "premissa": "Uma assembleia exige que todos os bonecos ridicularizem a Corte, mesmo quando artistas desejam falar de amor e trabalho.",
+          "possibilidades": "Negociar programa, aceitar pluralidade ou reconhecer que não há obrigação artística de guerra.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "evento_canonizado": false
+    },
+    {
+      "id": "comunidade:lxx:coro",
+      "nome": "O Coro das Escamas Juradas",
+      "origem": "povoamento:xlvi:thargrid-montanhas:05",
+      "setor": "Thargrid",
+      "povos_previamente_propostos": "Draconatos de clãs diferentes, familiares anões e outros moradores propostos",
+      "eixo": "Uma canção de honra deve lembrar também quem recebeu auxílio",
+      "vida_social": "Draconatos de diferentes clãs, familiares anões e outros moradores propostos possuem tradição de juramentos e serviço público. O Coro das Escamas Juradas não é um conservatório comprovado; a cultura do prestígio pode produzir celebrações e ocultar o trabalho dos cuidadores.",
+      "dependencias_materiais": "Instrumentos, acústica de pátios, ar, alimento e tempo de músicos dependem de infraestrutura não descrita. Uma celebração em altura não estabelece estrada nem população.",
+      "contradicao_de_poder": "Entre draconatos o prestígio pessoal é relevante, mas um canto pode premiar apenas capitães enquanto quem cuidou dos feridos desaparece da memória. A crítica não exige negar todas as tradições de clã.",
+      "praticas_artisticas": [
+        {
+          "id": "pratica:lxx:coro:1",
+          "nome": "Balada dos que Voltaram Juntos",
+          "descricao": "Cantiga candidata de feitos em que testemunhas podem incluir sentinelas, cuidadores, reparadores e acolhidos.",
+          "participacao": "A pessoa homenageada pode recusar divulgação do próprio nome ou trajetória.",
+          "insumos": "Relatos consentidos, descanso de participantes e limites de divulgação.",
+          "risco": "Um capitão tenta retirar o verso sobre quem ofereceu água.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:coro:2",
+          "nome": "Jogo do Juramento Pequeno",
+          "descricao": "Participantes improvisam promessas fictícias que cabem nos recursos apresentados, em vez de competir por grandiosidade.",
+          "participacao": "A regra do jogo permite recusar desafios sem humilhação.",
+          "insumos": "Cartões ou marcas inertes e uma pessoa disposta a mediar.",
+          "risco": "Um juiz quer usar a brincadeira para avaliar recrutamento real.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:coro:3",
+          "nome": "Dança das Escamas Desiguais",
+          "descricao": "Pequenos grupos executam gestos ou marcações de ritmo adaptáveis a corpos e tamanhos distintos.",
+          "participacao": "Pode ser dança sentada, em pé ou só percussiva, conforme os presentes.",
+          "insumos": "Área de encontro segura, pausas e respeito à diferença de alcance.",
+          "risco": "Os clãs exigem que só quem empunha arma conduza a dança.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxx:coro:1",
+          "nome": "Pátio do Mérito Contestado",
+          "uso": "Área candidata para escuta e apresentações sem acesso predeterminado por hierarquia.",
+          "limite": "A fama de um clã impede testemunho de um refugiado.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "espaco:lxx:coro:2",
+          "nome": "Banco das Vozes Revezadas",
+          "uso": "Espaço de prática musical com turnos e repouso.",
+          "limite": "Um comandante transforma ensaio em jornada obrigatória dos vigias.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxx:coro:1",
+          "nome": "Sarenna Escama-de-Cobre",
+          "identidade": "Músico draconata candidato, autor de cantigas de serviço comunitário",
+          "desejo": "Compor sobre resgates sem exaltar apenas armas.",
+          "contradicao": "Sua própria família considera ofensa dividir honras com cuidadores.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxx:coro:2",
+          "nome": "Vek Ressonância-Mansa",
+          "identidade": "Draconata candidata, mediadora de dança e jogos",
+          "desejo": "Fazer práticas acessíveis a corpos de tamanhos diferentes.",
+          "contradicao": "Pode tentar impor um único ritmo a todos para evitar conflito.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Myrra Juramento-Lido",
+          "referencia": "pessoa-reuso:lxiii:coro:Myrra Juramento-Lido",
+          "encontro_com_outras_comunidades_confirmado": false
+        },
+        {
+          "nome": "Kessa Escama-Sem-Eco",
+          "referencia": "pessoa:lxv:draconatos:01",
+          "encontro_com_outras_comunidades_confirmado": false
+        }
+      ],
+      "conflitos": [
+        {
+          "id": "cena:lxx:coro:1",
+          "nome": "O verso que o capitão não comprou",
+          "premissa": "Um chefe exige retirar do canto a história de um cuidador sem patente.",
+          "possibilidades": "Ouvir testemunhas, revisar música por consentimento ou aceitar o conflito público.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxx:coro:2",
+          "nome": "A dança que vira alistamento",
+          "premissa": "Um concurso festivo é apresentado como teste para recrutar sentinelas.",
+          "possibilidades": "Distinguir participação voluntária de obrigação militar e revisar regras.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "evento_canonizado": false
+    },
+    {
+      "id": "comunidade:lxx:jardim",
+      "nome": "Jardim das Canções Recuperadas",
+      "origem": "povoamento:liv:16",
+      "setor": "Águas Azuis",
+      "povos_previamente_propostos": "Sereias, Tritões e cuidadores de corais sapientes propostos",
+      "eixo": "Uma canção pode proteger o recife sem reivindicar a voz dos corais",
+      "vida_social": "Sereias, tritões e cuidadores de corais sapientes são propostas no Jardim das Canções Recuperadas. Suas autoridades não pertencem apenas aos patrulheiros. A proximidade com o Mar de Sangue e a defesa dos oceanos são fatos amplos da lore, mas a posição deste jardim não é cartografada.",
+      "dependencias_materiais": "A produção de alimento, a acústica submersa, o crescimento de coral e a disponibilidade de uma área segura não foram medidos. O canto pode viajar pela água, mas alcance, inteligibilidade, efeitos mágicos e fronteiras sonoras não são universais.",
+      "contradicao_de_poder": "Patrulheiros pretendem usar coral vivo em barricadas; cuidadores discutem integridade de seres talvez conscientes. Uma apresentação sonora também pode afetar moradores que não desejam ouvi-la ou revelar uma área sensível.",
+      "praticas_artisticas": [
+        {
+          "id": "pratica:lxx:jardim:1",
+          "nome": "Coro das Correntes Incompletas",
+          "descricao": "Canto candidato de sereias e tritões que alterna sons e silêncio para representar corrente e abrigo, sem exigir um idioma musical único.",
+          "participacao": "Participantes podem responder por gestos e vibração, conforme capacidade efetiva.",
+          "insumos": "Tempo de ensaio, espaço seguro e respeito ao habitat.",
+          "risco": "Uma autoridade quer transformar o canto em sinal obrigatório de patrulha.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:jardim:2",
+          "nome": "Jogo dos Jardins Sem Dono",
+          "descricao": "Pequenos grupos descrevem como proteger um recife imaginário sem chamar qualquer coral sapiente de objeto.",
+          "participacao": "Não envolve tocar, cortar ou remover coral real; usa modelos inertes.",
+          "insumos": "Material de demonstração de origem conhecida e orientação de habitantes.",
+          "risco": "Um comandante exige que todo recife participe de uma defesa militar.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        },
+        {
+          "id": "pratica:lxx:jardim:3",
+          "nome": "Dança de Escuta do Recife",
+          "descricao": "Apresentação que privilegia pausas e formas não invasivas de observar seres do recife.",
+          "participacao": "Se os corais forem conscientes, sua forma de consentir precisa ser estabelecida antes de tratá-los como público.",
+          "insumos": "Conhecimento ecológico e espaço que não agrida organismos.",
+          "risco": "Uma coreografia é vendida como se o próprio recife a tivesse aprovado.",
+          "calendario_confirmado": false,
+          "realizacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxx:jardim:1",
+          "nome": "Átrio da Maré Não Confirmada",
+          "uso": "Área candidata de reunião sem profundidade, corrente ou posição inventadas.",
+          "limite": "A música poderia denunciar abrigo se seu alcance não for analisado.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "espaco:lxx:jardim:2",
+          "nome": "Jardim das Formas Intocadas",
+          "uso": "Espaço de observação e experimentos com modelos, sem extração de coral vivo.",
+          "limite": "A defesa pretende desmontar estruturas habitadas.",
+          "localizacao": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_ineditos": [
+        {
+          "id": "pessoa:lxx:jardim:1",
+          "nome": "Ilyra Onda-Suspensa",
+          "identidade": "Sereia candidata, compositora de coros com pausas",
+          "desejo": "Preservar a dimensão não militar da música submarina.",
+          "contradicao": "Uma patrulha pede que seu repertório vire alerta de fronteira.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxx:jardim:2",
+          "nome": "Talren Espuma-Serena",
+          "identidade": "Tritão candidato, cuidador de recife e artesão de instrumentos inertes",
+          "desejo": "Fazer participar quem não deseja cantar, sem impor voz aos corais.",
+          "contradicao": "Sua prudência impede até experiências de observação que não causariam dano.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [],
+      "conflitos": [
+        {
+          "id": "cena:lxx:jardim:1",
+          "nome": "O coral que não assinou",
+          "premissa": "Uma performance é anunciada como expressão de um coral sapiente sem comprovação de consentimento.",
+          "possibilidades": "Suspender atribuição, investigar formas de comunicação ou manter o coral fora do espetáculo.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxx:jardim:2",
+          "nome": "A partitura tomada por guarda",
+          "premissa": "Um patrulheiro exige transformar uma apresentação em sistema de alerta militar.",
+          "possibilidades": "Negociar finalidade, avaliar impacto acústico e preservar escolha dos artistas.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false,
+      "evento_canonizado": false
+    }
+  ],
+  "economia_da_cultura": [
+    {
+      "id": "material:lxx:1",
+      "nome": "Tempo de criação",
+      "necessidade": "Ensaios, manutenção de cenários, música e dança tomam horas da jornada dos artistas, de quem cozinha, limpa, cuida e transporta.",
+      "contradicao": "Um patrono deseja festa permanente sem remunerar ou alimentar quem a sustenta."
+    },
+    {
+      "id": "material:lxx:2",
+      "nome": "Alimento e água",
+      "necessidade": "Convidados e artistas comem e bebem, mas celebração não produz comida, água potável ou novas fontes.",
+      "contradicao": "Uma festa com banquete anunciado retira provisões do cuidado diário."
+    },
+    {
+      "id": "material:lxx:3",
+      "nome": "Matéria e manutenção",
+      "necessidade": "Tecidos, instrumentos, velas, seda, cerâmica, coral e madeira têm origem e desgaste; materiais sapientes exigem consentimento.",
+      "contradicao": "Usar um ninho, um coral ou ferramenta essencial como adorno pode destruir funções vitais."
+    },
+    {
+      "id": "material:lxx:4",
+      "nome": "Direito ao lazer",
+      "necessidade": "Pessoas podem desejar participar, assistir, criticar, sair ou não celebrar; crianças não são mão de obra obrigatória.",
+      "contradicao": "Organizadores impõem trabalho festivo aos mesmos cuidadores de sempre."
+    },
+    {
+      "id": "material:lxx:5",
+      "nome": "Acesso entre corpos",
+      "necessidade": "Sons, gestos, imagens e ritmos não são percebidos igualmente por todas as espécies e indivíduos.",
+      "contradicao": "Confundir uma forma dominante de percepção com capacidade universal."
+    },
+    {
+      "id": "material:lxx:6",
+      "nome": "Autoria e remuneração",
+      "necessidade": "Peças dependem de técnicos, fiandeiros, cozinheiros, artistas, aprendizes e anfitriões, não só do patrono.",
+      "contradicao": "O prestígio do diretor ou nobre apaga quem produziu."
+    },
+    {
+      "id": "material:lxx:7",
+      "nome": "Censura e risco",
+      "necessidade": "A sátira pode circular, ser mal interpretada ou expor pessoas; nenhuma música oferece sigilo perfeito.",
+      "contradicao": "A autoridade trata brincadeira como delito ou exige propaganda oposta."
+    },
+    {
+      "id": "material:lxx:8",
+      "nome": "Calendário e ecologia",
+      "necessidade": "Uma celebração exige condições climáticas e sociais possíveis; nenhuma data, estação ou maré foi fixada.",
+      "contradicao": "O nome de um festival vira falso registro de que ele já acontece."
+    },
+    {
+      "id": "material:lxx:9",
+      "nome": "Trocas sem rotas",
+      "necessidade": "Obras poderiam ser vistas por públicos diferentes apenas se existirem contato, permissão e meios de transporte.",
+      "contradicao": "A fama de uma trupe não prova estrada, porto, navio ou passagem pelo Abismo."
+    }
+  ],
+  "interfaces_editoriais": [
+    {
+      "id": "comparacao:lxx:1",
+      "de": "comunidade:lxx:teatro",
+      "para": "comunidade:lxx:mascaras",
+      "comparacao": "Sátira e máscaras podem ocultar ou expor autoria, sem confirmar circulação Rio-Shadar.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxx:2",
+      "de": "comunidade:lxx:teatro",
+      "para": "comunidade:lxx:ponte",
+      "comparacao": "Improviso crítico e canto de refugiados enfrentam censura, sem trupe viajando entre os locais.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxx:3",
+      "de": "comunidade:lxx:panela",
+      "para": "comunidade:lxx:cumbucas",
+      "comparacao": "Hospitalidade e distribuição de recipientes consomem recursos reais, não fartura prometida.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxx:4",
+      "de": "comunidade:lxx:panela",
+      "para": "comunidade:lxx:porto",
+      "comparacao": "Contar histórias de viajantes não é prova de viagem entre Grama-Cortada e uma ilha.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxx:5",
+      "de": "comunidade:lxx:cumbucas",
+      "para": "comunidade:lxx:porto",
+      "comparacao": "Trégua não significa anistia, nem celebrar a partilha implica água disponível.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxx:6",
+      "de": "comunidade:lxx:coro",
+      "para": "comunidade:lxx:teatro",
+      "comparacao": "Honra e fama podem ocultar trabalhadores, mas não formam circuito artístico comum.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxx:7",
+      "de": "comunidade:lxx:ponte",
+      "para": "comunidade:lxx:jardim",
+      "comparacao": "Canto e silêncio podem proteger identidades e habitats sem traduzir música terrestre em linguagem submarina.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxx:8",
+      "de": "comunidade:lxx:jardim",
+      "para": "comunidade:lxx:porto",
+      "comparacao": "Navegação e canto marinho têm riscos distintos; não confirmar porto, maré ou travessia até recife.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxx:9",
+      "de": "comunidade:lxx:mascaras",
+      "para": "comunidade:lxx:coro",
+      "comparacao": "Prestígio aristocrático e de clãs draconatos são estruturas diferentes, sem apresentações conjuntas.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxx:10",
+      "de": "comunidade:lxx:cumbucas",
+      "para": "comunidade:lxx:jardim",
+      "comparacao": "Água doce e habitat marinho são ecologias diferentes, não intercambiáveis.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxx:11",
+      "de": "comunidade:lxx:panela",
+      "para": "comunidade:lxx:mascaras",
+      "comparacao": "Serviço doméstico e costura subjugada podem ser invisibilizados por quem desfruta a festa.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxx:12",
+      "de": "comunidade:lxx:coro",
+      "para": "comunidade:lxx:jardim",
+      "comparacao": "Uma apresentação pode ser sequestrada como alerta militar, sem qualquer contato inter-regional.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "festival_compartilhado": false
+    }
+  ],
+  "protecoes": [
+    "Todos os oito núcleos já existiam como propostas; nenhum deles se tornou cânone por este ciclo.",
+    "Nenhuma performance, música ou festa é evento histórico ocorrido, periódico ou calendário já confirmado.",
+    "Não criar versos cifrados infalíveis, protocolo de espionagem, encantamento de glamour universal ou propaganda obrigatória.",
+    "A estética aristocrática depende do trabalho de servidores, sem atribuir nobreza a todos os shadow fey.",
+    "Grama-Cortada não possui rei, castelo real ou exército permanente no escopo verificado.",
+    "Não estabelecer quantidade de alimento, fontes de água potável, capacidade de palco, peso de palco ou taxa de produção de materiais.",
+    "A ilha, porto ou rota específica do Porto da Trégua Quebrada permanece não confirmada.",
+    "Não supor que sereias e tritões compartilham uma única linguagem acústica, nem que corais sapientes tenham sido identificados ou consentido.",
+    "Não transformar a sátira em prova de filiação política, nem alegar que todos os artistas são resistentes.",
+    "Pessoas com diferentes corpos e sentidos podem escolher como participar ou não participar.",
+    "Nenhum artista foi contratado, perseguido, censurado, pago, preso ou transportado por estas cenas.",
+    "Não fixar coordenadas, contato, viagem, estação, maré, distância ou existência de uma festa conjunta.",
+    "Os segredos de cosmologia, Gualápolis, Ulorian, Jorou e da Lança permanecem sem divulgação."
+  ]
+}
