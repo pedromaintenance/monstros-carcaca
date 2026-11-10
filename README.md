@@ -96,6 +96,10 @@ O [dossiê de cultura popular, teatro, música, festas e sátira](docs/CULTURA_P
 
 A [integração do calendário simbólico proposto no dossiê de Peren](docs/CALENDARIO_TAROTICO_PEREN_CARCACA_V0_1.md) registra **Arcano Maior para mês, Arcano Menor para dia e hora, sete astros de regência** e **cinco leituras de personagens**. [JSON consultável](data/worldbuilding/calendario-tarotico-peren-v0.1.json). A fonte o apresenta como **proposta interpretativa**, sem datas de nascimento ou calendário civil calculável; a cronologia **EC** preexistente não foi alterada.
 
+## Ciclo LXXI — As ruas têm seus próprios artistas
+
+O [dossiê sobre trabalho cultural e economia dos ofícios](docs/ARTISTAS_OFICIOS_MERCADOS_E_DESCANSO_CICLO71.md) aprofunda **10 comunidades previamente propostas**, com **20 personagens inéditos, 17 retomados, 30 ofícios candidatos, 20 situações jogáveis e 11 contradições materiais**. [Dados estruturados](data/propostas/artistas-oficios-mercados-descanso-ciclo71.json). Não fixa feiras, preços, moedas, vendas, rotas, calendário civil ou eventos como cânone.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
