@@ -53,6 +53,10 @@ A fé na Carcaça é plural: deuses reais de diferentes tradições convivem e u
 
 Tradições de Thargrid, cultos do Rio Ancestral, panteões gregos, nórdicos e egípcios, fés marítimas e cultos feéricos são indexados por divindades e conceitos. O **ateísmo arcano** não nega a existência de deuses: discute se seu poder lhes concede autoridade moral. Os **Meio-Demônios** compartilham a natureza demoníaca de seus ancestrais, sem distinção essencial entre demônios/diabos/cambions/tieflings — e a ascendência não determina caráter.
 
+## Proposta de calendário tarótico importada de Peren
+
+O repositório de Peren registra uma **linguagem temporal interpretativa** que associa mês a Arcano Maior, dia e hora a Arcanos Menores e regência a sete astros simbólicos. A [transcrição documentada e seus limites](CALENDARIO_TAROTICO_PEREN_CARCACA_V0_1.md) e o [JSON](../data/worldbuilding/calendario-tarotico-peren-v0.1.json) permitem consulta sem equiparar essa proposta à cronologia civil da Carcaça. **Não há regra completa de calendário, nem datas natais, nem conversão para EC.**
+
 ## Cronologia e espaços deliberadamente abertos
 
 **18 datas ou marcos aproximados** foram indexados em `data/lore/hack-carcaca-dw-cronologia.json` e **7 perguntas explicitamente abertas** foram mantidas separadas. Exemplos:

@@ -92,6 +92,10 @@ O [dossiê de ritos, lembranças, morte consciente e herança](docs/MEMORIA_DOS_
 
 O [dossiê de cultura popular, teatro, música, festas e sátira](docs/CULTURA_POPULAR_FESTAS_SATIRA_CICLO70.md) aprofunda **8 comunidades já propostas**, com **16 personagens inéditos, 4 retomados, 24 práticas culturais, 16 espaços, 16 conflitos, 9 condições materiais e 12 comparações sem contato confirmado**. [JSON estruturado](data/propostas/cultura-popular-festas-satira-ciclo70.json). Nenhuma apresentação, festa, rota, ilha ou contato foi canonizado automaticamente.
 
+## Calendário tarótico de Peren — referência de lore
+
+A [integração do calendário simbólico proposto no dossiê de Peren](docs/CALENDARIO_TAROTICO_PEREN_CARCACA_V0_1.md) registra **Arcano Maior para mês, Arcano Menor para dia e hora, sete astros de regência** e **cinco leituras de personagens**. [JSON consultável](data/worldbuilding/calendario-tarotico-peren-v0.1.json). A fonte o apresenta como **proposta interpretativa**, sem datas de nascimento ou calendário civil calculável; a cronologia **EC** preexistente não foi alterada.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.

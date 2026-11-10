@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "id": "worldbuilding:calendario-tarotico-peren-v0.1",
+  "titulo": "Calendário tarótico — referência interpretativa da campanha Peren",
+  "data_de_integracao": "2026-11-10",
+  "estado_da_fonte": "criação interpretativa proposta em conversa, sem calendário natal nem datas de nascimento definidas",
+  "estado_no_repositorio_principal": "transcricao_e_indexacao_de_lore_proposta_sem_promocao_a_canone",
+  "aprovacao_autoral_da_regra_civil_completa": false,
+  "importado_em_resposta_a_pedido_autoral": true,
+  "altera_canon": false,
+  "altera_calendario_civil": false,
+  "altera_cronologia_ec": false,
+  "altera_campanhas": false,
+  "fonte_primaria": {
+    "repositorio": "pedromaintenance/peren-o-bruxo",
+    "caminho": "lore/peren/Dossie_Peren_Kerrhylon_RPG_Carcaca.json",
+    "ref": "main",
+    "blob_sha": "14e6e391f1a02a4bbc123bf55902fd1bba7d345b",
+    "secao": "sistema_tarot_sugerido",
+    "versao_dossie": "1.0.0"
+  },
+  "fonte_cronologia_ja_existente": {
+    "repositorio": "pedromaintenance/monstros-carcaca",
+    "caminho": "data/lore/hack-carcaca-dw-cronologia.json",
+    "convencao": "EC",
+    "eventos_nao_modificados": 18
+  },
+  "regra_original": "um arcano maior representa o mês; um arcano menor representa o dia; outro arcano menor representa a hora; planeta colore a regência",
+  "observacao_da_fonte": "as cartas dos companheiros foram atribuídas por personalidade, NÃO derivadas de datas de nascimento",
+  "unidades_simbolicas": [
+    {
+      "unidade": "mes",
+      "categoria": "arcano_maior",
+      "texto": "um arcano maior representa o mês"
+    },
+    {
+      "unidade": "dia",
+      "categoria": "arcano_menor",
+      "texto": "um arcano menor representa o dia"
+    },
+    {
+      "unidade": "hora",
+      "categoria": "arcano_menor",
+      "texto": "outro arcano menor representa a hora"
+    }
+  ],
+  "astros_propostos": [
+    {
+      "id": "astro:peren:1",
+      "nome": "Lua Negra",
+      "significado": "sonhos, medo e memória",
+      "origem": "sistema_tarot_sugerido.astros_propostos"
+    },
+    {
+      "id": "astro:peren:2",
+      "nome": "Mercúrio-Corvo",
+      "significado": "linguagem, contrato e comércio",
+      "origem": "sistema_tarot_sugerido.astros_propostos"
+    },
+    {
+      "id": "astro:peren:3",
+      "nome": "Vênus de Osso",
+      "significado": "vínculos e lealdade",
+      "origem": "sistema_tarot_sugerido.astros_propostos"
+    },
+    {
+      "id": "astro:peren:4",
+      "nome": "Marte Rubro",
+      "significado": "violência e coragem",
+      "origem": "sistema_tarot_sugerido.astros_propostos"
+    },
+    {
+      "id": "astro:peren:5",
+      "nome": "Júpiter-Coroa",
+      "significado": "patronato e hierarquia",
+      "origem": "sistema_tarot_sugerido.astros_propostos"
+    },
+    {
+      "id": "astro:peren:6",
+      "nome": "Saturno-Ossário",
+      "significado": "dívida e limites",
+      "origem": "sistema_tarot_sugerido.astros_propostos"
+    },
+    {
+      "id": "astro:peren:7",
+      "nome": "Sol Pálido",
+      "significado": "exposição e identidade",
+      "origem": "sistema_tarot_sugerido.astros_propostos"
+    }
+  ],
+  "exemplos_de_atribuicao_interpretativa": [
+    {
+      "personagem": "Presas",
+      "origem": "familiar.tarot_interpretativo",
+      "cartas": {
+        "mes": "A Estrela",
+        "dia": "Pajem de Paus",
+        "hora": "Dois de Copas",
+        "regencia": "Sol Pálido em Vênus de Osso"
+      }
+    },
+    {
+      "personagem": "Veyra Sull",
+      "origem": "companhia.membros[].signo_tarot_interpretativo",
+      "cartas": {
+        "mes": "A Justiça",
+        "dia": "Rainha de Espadas",
+        "hora": "Dois de Ouros",
+        "regencia": "Mercúrio-Corvo em Saturno-Ossário"
+      }
+    },
+    {
+      "personagem": "Dren",
+      "origem": "companhia.membros[].signo_tarot_interpretativo",
+      "cartas": {
+        "mes": "O Carro",
+        "dia": "Sete de Paus",
+        "hora": "Cinco de Ouros",
+        "regencia": "Marte Rubro em Saturno-Ossário"
+      }
+    },
+    {
+      "personagem": "Orel",
+      "origem": "companhia.membros[].signo_tarot_interpretativo",
+      "cartas": {
+        "mes": "A Lua",
+        "dia": "Pajem de Copas",
+        "hora": "Nove de Copas",
+        "regencia": "Lua Negra em Vênus de Osso"
+      }
+    },
+    {
+      "personagem": "Tavin Rook",
+      "origem": "companhia.membros[].signo_tarot_interpretativo",
+      "cartas": {
+        "mes": "Temperança",
+        "dia": "Seis de Espadas",
+        "hora": "Oito de Ouros",
+        "regencia": "Mercúrio-Corvo em Júpiter-Coroa"
+      }
+    }
+  ],
+  "definicoes_em_aberto": [
+    {
+      "campo": "meses_por_ano",
+      "motivo": "O dossiê não fixa quantos meses compõem um ano nem distribui todos os Arcanos Maiores."
+    },
+    {
+      "campo": "ordem_dos_meses",
+      "motivo": "O dossiê não fixa sequência, nomes completos ou posição do primeiro mês."
+    },
+    {
+      "campo": "dias_por_mes",
+      "motivo": "Não há duração de cada mês nem atribuição completa de Arcanos Menores."
+    },
+    {
+      "campo": "horas_por_dia",
+      "motivo": "A hora simbólica não implica quantidade de horas ou duração física de uma hora."
+    },
+    {
+      "campo": "calculo_de_regencia",
+      "motivo": "Não há algoritmo para associar os sete astros aos arcanos, a datas ou aos pares de regência dos exemplos."
+    },
+    {
+      "campo": "calendario_natal",
+      "motivo": "As cartas dos companheiros foram atribuídas por interpretação da personalidade, não por nascimento."
+    },
+    {
+      "campo": "marco_epocal",
+      "motivo": "Não se define conversão entre esta linguagem simbólica e a contagem de anos EC."
+    },
+    {
+      "campo": "observabilidade",
+      "motivo": "Os astros são símbolos no dossiê, sem confirmação de que sejam corpos astronômicos observáveis, deuses ou entidades."
+    },
+    {
+      "campo": "adesao_social",
+      "motivo": "Não está estabelecido que todos os povos da Carcaça reconheçam ou utilizem esse sistema."
+    },
+    {
+      "campo": "efeitos_mecanicos",
+      "motivo": "Não existem regras de presságio, vantagem, magia, iniciativa, testes, feriados ou festivais derivadas automaticamente do calendário."
+    }
+  ],
+  "cuidados": [
+    "O uso da palavra mês ou hora não fixa unidades astronômicas ou calendário civil.",
+    "Os exemplos não podem ser convertidos em datas de aniversário.",
+    "Os sete astros são símbolos associados a temas; não atribuir existência física ou culto universal.",
+    "Este registro não reescreve nem recalcula os anos da Era da Carcaça (EC).",
+    "A associação de dois astros em uma regência exemplificativa não estabelece uma fórmula geral.",
+    "Não retroprojetar leituras de Peren como crença pública de todos os povos e regiões.",
+    "Não revelar segredos de campanhas ao tratar o sistema como ferramenta interpretativa."
+  ]
+}
