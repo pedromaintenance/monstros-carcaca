@@ -1,0 +1,1732 @@
+{
+  "schema_version": "1.0",
+  "id": "worldbuilding:ciclo72:servicos-invisiveis",
+  "titulo": "Ciclo LXXII — Quem mantém a Carcaça funcionando?",
+  "data_registro": "2026-11-10",
+  "estado": "proposta_editorial_nao_homologada",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "altera_bestiario": false,
+  "altera_campanhas": false,
+  "criterio": "O funcionamento e a manutenção são relações materiais, técnicas e políticas, situadas em corpos, ecologias e recursos diferentes.",
+  "fontes": [
+    "data/propostas/artistas-oficios-mercados-descanso-ciclo71.json",
+    "data/propostas/povoamento-regional-lote02-ciclo45.json",
+    "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+    "data/propostas/povoamento-costa-continental-ciclo49.json",
+    "data/propostas/povoamento-ecologia-alem-sul-ciclo54.json",
+    "data/propostas/povoamento-shadar-grama-cauda-ciclo55.json",
+    "data/propostas/povoamento-ecologia-eixo-garganta-rio-foz-ciclo52.json",
+    "data/propostas/povoamento-ecologia-thargrid-ironwood-eldroth-ciclo53.json",
+    "data/propostas/os-que-sustentam-a-vida-cuidado-ciclo68.json",
+    "data/propostas/filhos-do-exilio-memoria-pertencimento-ciclo66.json",
+    "data/propostas/redes-de-vida-ecossistemas-ciclo58.json",
+    "data/worldbuilding/calendario-tarotico-peren-v0.1.json"
+  ],
+  "totais": {
+    "comunidades_aprofundadas": 12,
+    "assentamentos_novos": 0,
+    "sistemas_de_manutencao_candidatos": 36,
+    "espacos_candidatos": 24,
+    "personagens_ineditos": 24,
+    "personagens_retornados": 21,
+    "cenas_nao_ocorridas": 24,
+    "principios_materiais": 12,
+    "perguntas_operacionais": 7,
+    "interfaces_hipoteticas": 18,
+    "novas_rotas": 0,
+    "novas_especies": 0
+  },
+  "comunidades": [
+    {
+      "id": "comunidade:lxxii:forjas",
+      "nome": "As Forjas de Cinza Fria",
+      "setor": "Thargrid",
+      "origem": "povoamento:xlvi:thargrid-montanhas:03",
+      "continuidade": "povoamento:liii:02",
+      "povos_propostos": "Gigantes do fogo e anões metalúrgicos propostos, trabalhadores de outras linhagens",
+      "eixo": "Calor, ar e acesso ao forno são questões de poder",
+      "situacao": "Forjas de gigantes do fogo, anões metalúrgicos e trabalhadores de outras linhagens, com bancadas em escalas corporais distintas. A câmara de mestres alternada e o dissenso são anteriores; a cavidade não tem coordenadas nem ventilação comprovada.",
+      "disputa": "A produção de armaduras prestigiosas pode competir com utensílios de sobrevivência. Uma pessoa que não suporta determinado calor não perde a palavra na decisão de manutenção.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:forjas:1",
+          "nome": "Vigilância de fumaça e ar",
+          "funcao": "Inspecionar rotas candidatas de retirada de gases e zonas de exposição antes de acionar bancadas.",
+          "dependencias": "Combustível, volume de ar, exaustão e tipo de fumaça desconhecidos; não declarar o ambiente respirável.",
+          "risco": "Mestres pressionam pela produção mesmo quando aprendizes pedem interrupção.",
+          "decisao": "Testar condições e suspender uso quando não houver avaliação segura.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:forjas:2",
+          "nome": "Oficina de escória e material rejeitado",
+          "funcao": "Separar metal reprocessável de resíduo nocivo somente após conhecer material e tratamento possíveis.",
+          "dependencias": "Não presumir composição química, descarte inocente ou recuperação total do minério.",
+          "risco": "O dono do molde exige que restos de liga também lhe pertençam.",
+          "decisao": "Registrar origem, proteção dos trabalhadores e destino provisório sem contaminar abrigos.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:forjas:3",
+          "nome": "Fila dos reparos necessários",
+          "funcao": "Comparar demandas de peças de defesa, utensílios domésticos e sustentação antes de reservar forno.",
+          "dependencias": "Sem inventário, capacidade térmica e horas de trabalho, não afirmar produtividade.",
+          "risco": "Patente tenta passar à frente de famílias sem clã.",
+          "decisao": "Abrir deliberação com quem depende da peça e quem trabalha na forja.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:forjas:1",
+          "nome": "Marcação do Ar Disputado",
+          "uso": "Zona candidata de inspeção de fumaça e circulação, sem dutos existentes comprovados.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:forjas:2",
+          "nome": "Banco da Escória com Origem",
+          "uso": "Área hipotética de quarentena de resíduos até que sua segurança seja conhecida.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:forjas:1",
+          "nome": "Dorma Cinza-da-Válvula",
+          "identidade": "Anã candidata, operadora de segurança de forja",
+          "objetivo": "Garantir que a decisão de parar não dependa da patente do mestre.",
+          "contradicao": "Seu próprio zelo pode paralisar reparos urgentes sem explorar alternativas.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:forjas:2",
+          "nome": "Havron Malha-Curta",
+          "identidade": "Gigante do fogo candidato, reparador de peças para pessoas menores",
+          "objetivo": "Fazer equipamentos de escalas diferentes caberem nos mesmos acordos de manutenção.",
+          "contradicao": "Foi formado num ofício em que o prestígio dos mestres vale mais que o cuidado.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [],
+      "cenas": [
+        {
+          "id": "cena:lxxii:forjas:1",
+          "nome": "A fumaça da encomenda de honra",
+          "situacao": "Uma bancada recebe pedido urgente de armadura cerimonial quando há reclamações sobre o ar disponível.",
+          "escolhas": "Conferir segurança, restringir forja, reordenar reparos ou confrontar o mestre sem resultado prévio.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:forjas:2",
+          "nome": "A escória ao lado do berço",
+          "situacao": "Alguém deseja depositar material rejeitado perto de habitação por falta de espaço reconhecido.",
+          "escolhas": "Investigar a composição, ouvir residentes e impedir descarte até haver alternativa viável.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    },
+    {
+      "id": "comunidade:lxxii:sinos",
+      "nome": "Casa dos Sinos sem Badalo",
+      "setor": "Rio Ancestral",
+      "origem": "povoamento:xlv:17",
+      "continuidade": "ciclo52:comunidade:r-sinos",
+      "povos_propostos": "Gnomos mecânicos e cuidadores de pequenas criaturas sinantrópicas",
+      "eixo": "Aviso de incêndio e vigilância usam peças parecidas",
+      "situacao": "Oficina colegiada de gnomos mecânicos com aparelhos ópticos e ressonadores candidatos. Alertas por vibração e pausa já foram propostos, mas sua cobertura, energia e transmissão real não foram demonstradas.",
+      "disputa": "Uma ordem aristocrática de usar sensores para controle pode transformar manutenção de segurança em vigilância. Pessoas surdas, pessoas que não falam e visitantes não compartilham automaticamente um mesmo código.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:sinos:1",
+          "nome": "Inspeção do alarme por vários sentidos",
+          "funcao": "Testar alertas locais com participantes que usam visão, toque ou som de modos diferentes.",
+          "dependencias": "Componentes, energia, posição e percepção precisam ser conhecidos; não há aviso universal.",
+          "risco": "A oficina anuncia proteção sem verificar quem percebe o sinal.",
+          "decisao": "Registrar falhas e explicitar o conjunto real de usuários atendidos.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:sinos:2",
+          "nome": "Triagem de fechaduras e ressonadores",
+          "funcao": "Separar manutenção civil de módulos capazes de registrar entradas ou revelar esconderijos.",
+          "dependencias": "Não assumir que todo dispositivo é seguro, nem criar rede técnica pela extensão do Rio.",
+          "risco": "Um cliente exige acesso aos registros de abrigos.",
+          "decisao": "Escutar moradores e condicionar encomenda à finalidade e privacidade.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:sinos:3",
+          "nome": "Área de peças recuperadas",
+          "funcao": "Inventariar componentes reaproveitáveis sem atribuir origem de mercado ou eficiência certa.",
+          "dependencias": "Metais, madeiras e mecanismos permanecem sujeitos a falha e disponibilidade.",
+          "risco": "Um patrono reserva peças para contrato de vigilância.",
+          "decisao": "Negociar prioridade a equipamentos de segurança local.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:sinos:1",
+          "nome": "Bancada dos Testes Não Concluídos",
+          "uso": "Lugar proposto para mostrar limites dos protótipos.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:sinos:2",
+          "nome": "Armário de Peças sem Destino",
+          "uso": "Armazenamento candidato separado de listas de moradores.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:sinos:1",
+          "nome": "Tessa Campânula-Rasa",
+          "identidade": "Gnoma candidata, inspetora de sinais táteis",
+          "objetivo": "Testar avisos com quem realmente irá recebê-los.",
+          "contradicao": "Pode supor que seu teste pessoal representa todos os usuários.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:sinos:2",
+          "nome": "Drel Chave-Quebrada",
+          "identidade": "Gnomo candidato, recuperador de fechaduras",
+          "objetivo": "Evitar que material civil seja comprado para perseguir refugiados.",
+          "contradicao": "Sua recusa de uma encomenda pode deixar um abrigo sem proteção.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Yeta Três-Paus",
+          "fonte": "pessoa:lxviii:sinos:1",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Firim Eco-Torto",
+          "fonte": "pessoa:lxviii:sinos:2",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxxii:sinos:1",
+          "nome": "O aviso que virou lista de presença",
+          "situacao": "Um protótipo de alerta é apresentado a um nobre como meio de identificar quem ocupa cada abrigo.",
+          "escolhas": "Separar funções, impedir captura de dados, testar segurança e discutir recusa.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:sinos:2",
+          "nome": "O ressonador que não alcança",
+          "situacao": "Um morador não reconhece o aviso de perigo que os fabricantes declararam universal.",
+          "escolhas": "Revisar linguagem, interromper uso inadequado e ouvir quem ficou excluído.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    },
+    {
+      "id": "comunidade:lxxii:horta",
+      "nome": "Horta dos Anéis de Cinza",
+      "setor": "Eldroth",
+      "origem": "povoamento:xlv:27",
+      "continuidade": "povoamento:liii:10",
+      "povos_propostos": "Miconídeos propostos e viajantes que não compartilham sua linguagem química",
+      "eixo": "Resíduo orgânico também pode ser moradia e memória",
+      "situacao": "Horta de miconídeos e viajantes com linguagem química não necessariamente compartilhada. A decomposição de madeira caída é parte possível da vida local, mas não há fungos específicos, produção de alimento ou taxa de crescimento homologados.",
+      "disputa": "O que para um visitante é lixo pode sustentar um ecossistema ou tocar um memorial. O direito de decompor, preservar e reparar não pertence automaticamente a quem é maior ou fala mais alto.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:horta:1",
+          "nome": "Seleção consensual do substrato",
+          "funcao": "Propor decomposição de madeira caída apenas depois de identificar se sustenta abrigo, habitat ou memória.",
+          "dependencias": "Umidade, composição e crescimento fúngico não estão dimensionados.",
+          "risco": "Um grupo exige que toda madeira antiga seja conservada intacta.",
+          "decisao": "Ouvir habitantes e guardiões dos memoriais antes de retirar ou preservar.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:horta:2",
+          "nome": "Ronda de suporte vivo",
+          "funcao": "Inspecionar se troncos usados como câmaras apresentam risco para moradores e viajantes.",
+          "dependencias": "Não assumir estruturas seguras, ventilação orgânica ou resistência mecânica do fungo.",
+          "risco": "Um curador usa o sigilo do bosque para não registrar deterioração.",
+          "decisao": "Priorizar segurança e autonomia dos seres ligados ao substrato.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:horta:3",
+          "nome": "Separação de material não conhecido",
+          "funcao": "Isolar resíduos de origem ou efeito incerto sem chamá-los fertilizante ou comida.",
+          "dependencias": "Não presumir que todo fungo transforma resíduos perigosos em solo seguro.",
+          "risco": "Um comprador quer descartar tinta de oficina na área fúngica.",
+          "decisao": "Recusar depósito até conhecer riscos e consentimento.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:horta:1",
+          "nome": "Marco da Madeira Ainda Habitável",
+          "uso": "Inspeção hipotética de estruturas e memórias ligadas à madeira.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:horta:2",
+          "nome": "Recanto do Substrato Não Escolhido",
+          "uso": "Área proposta de retenção provisória, sem descarte garantido.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:horta:1",
+          "nome": "Nessa Micélio-Entrelaçado",
+          "identidade": "Miconídea candidata, cuidadora de estruturas",
+          "objetivo": "Evitar que troncos sejam destruídos sem consulta a quem depende deles.",
+          "contradicao": "Pode ignorar a dor de quem preserva uma ruína familiar.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:horta:2",
+          "nome": "Darom Tábua-Guardada",
+          "identidade": "Humano candidato, restaurador de objetos e memoriais",
+          "objetivo": "Salvar inscrições sem esterilizar a floresta.",
+          "contradicao": "Sua pressa em conservar madeira pode retirar abrigo de outros seres.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Muer do Anel Partido",
+          "fonte": "pessoa:lviii:eldroth:muer",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxxii:horta:1",
+          "nome": "O tronco que era casa",
+          "situacao": "Viajantes chamam uma madeira caída de resíduo e pretendem levá-la, embora seja habitat.",
+          "escolhas": "Investigar ocupação e uso, negociar outro material ou deixar o tronco.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:horta:2",
+          "nome": "A tinta lançada ao húmus",
+          "situacao": "Uma oficina propõe descartar pigmentos desconhecidos na horta por presumir decomposição total.",
+          "escolhas": "Suspender, identificar composição e reconhecer ausência de solução pronta.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    },
+    {
+      "id": "comunidade:lxxii:chama",
+      "nome": "O Refúgio da Chama Apagada",
+      "setor": "Garganta",
+      "origem": "povoamento:xlvi:garganta-entorno:05",
+      "continuidade": "ciclo52:comunidade:g-refugio",
+      "povos_propostos": "Humanos ex-devotos de Yolskaariin, meio-demônios e goblins propostos",
+      "eixo": "Segurança contra fogo sem culto obrigatório",
+      "situacao": "Abrigos de pedra de ex-devotos de Yolskaariin, meio-demônios e goblins, sem água, posições e provisões comprovadas. A memória do templo solar corrompido não transforma toda chama em rito nem todo descendente demoníaco em suspeito.",
+      "disputa": "O círculo de famílias precisa decidir sobre calor, iluminação, fumaça e saída dos abrigos sem obrigar moradores a reverenciar a antiga fé. Quem mantém utensílios e limpa os espaços também participa.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:chama:1",
+          "nome": "Mapa interno de saídas possíveis",
+          "funcao": "Examinar passagens de abrigos propostos e locais a evitar caso haja fumaça.",
+          "dependencias": "Não criar corredor, capacidade de evacuação ou ventilação não verificados.",
+          "risco": "Uma família quer fechar uma saída para controlar recém-chegados.",
+          "decisao": "Registrar riscos e preservar mobilidade sem expor esconderijos.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:chama:2",
+          "nome": "Depósito de combustível sob acordo",
+          "funcao": "Avaliar guarda de madeira, brasas e material de iluminação sem supor acesso seguro a esses recursos.",
+          "dependencias": "Combustível, umidade e materiais inflamáveis não foram inventariados.",
+          "risco": "Antigos líderes tratam cada brasa como patrimônio religioso.",
+          "decisao": "Separar segurança, fé voluntária e distribuição de recursos.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:chama:3",
+          "nome": "Mutirão do utensílio frio",
+          "funcao": "Reparar recipientes e superfícies que permitem cozinhar e limpar sem impor serviço a refugiados.",
+          "dependencias": "Ferramentas e água adequadas são incertas; nenhuma técnica de purificação é prometida.",
+          "risco": "A chefia cobra reparos de Miril por sua ascendência.",
+          "decisao": "Distribuir trabalho por escolha e capacidade, não por linhagem.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:chama:1",
+          "nome": "Pátio da Brasa Vigiada",
+          "uso": "Área de discussão de prevenção de fogo sem altar obrigatório.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:chama:2",
+          "nome": "Banco das Saídas Não Expostas",
+          "uso": "Registro interno protegido de acessos reais, se houver.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:chama:1",
+          "nome": "Ferra Cinza-de-Guardião",
+          "identidade": "Humana ex-devota candidata, reparadora de abrigos",
+          "objetivo": "Separar prevenção e cuidado da memória religiosa.",
+          "contradicao": "Teme afrontar antigos líderes e aceita regras ruins por silêncio.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:chama:2",
+          "nome": "Piku Pote-Resfriado",
+          "identidade": "Goblin candidato, trabalhador de limpeza e manutenção",
+          "objetivo": "Conseguir tempo e material para cuidar dos espaços comuns.",
+          "contradicao": "Pode esconder uma falha para não sofrer punição coletiva.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Rosa Cinza-de-Altar",
+          "fonte": "pessoa:lxvi:chama:01",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Miril Chifre-Sereno",
+          "fonte": "pessoa:lxvi:chama:02",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxxii:chama:1",
+          "nome": "A única porta fechada",
+          "situacao": "Uma chefia quer bloquear uma passagem candidata por medo de infiltrados, mas ela também pode servir em emergência.",
+          "escolhas": "Examinar rotas internas sem divulgar localização e contestar autoridade unilateral.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:chama:2",
+          "nome": "O incêndio que exigem rezar",
+          "situacao": "Após incidente ainda hipotético, antigos devotos querem impor rito para recuperar autorização de uso de fogo.",
+          "escolhas": "Separar investigação técnica de fé e reconhecer vítimas sem culto obrigatório.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    },
+    {
+      "id": "comunidade:lxxii:cumbucas",
+      "nome": "Conselho das Sete Cumbucas",
+      "setor": "Caatinga",
+      "origem": "povoamento:liv:01",
+      "continuidade": "comunidade:lxxi:cumbucas",
+      "povos_propostos": "Orcs de clãs distintos, goblins oleiros e famílias humanas exiladas",
+      "eixo": "A reserva não existe porque foi contada em público",
+      "situacao": "Coletivo de orcs, goblins e humanos exilados com cerâmica e reservas apenas possíveis. Não há nascente identificada, cisterna construída, safra ou água potável demonstradas.",
+      "disputa": "Um recipiente pode ser essencial, mas o controle do inventário também pode servir ao preconceito de clã. A proteção da sombra e da água não deve depender de antigos saques atribuídos a descendentes.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:cumbucas:1",
+          "nome": "Controle de recipientes funcionais",
+          "funcao": "Distinguir cumbucas aptas, danificadas e ornamentais, sem confundir volume do vaso com água disponível.",
+          "dependencias": "Não presumir capacidade, qualidade microbiológica ou origem da água.",
+          "risco": "Ancião ordena que família rival receba peças inseguras.",
+          "decisao": "Permitir inspeção por quem usa e registrar defeitos.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:cumbucas:2",
+          "nome": "Abrigo de sombra e reparos",
+          "funcao": "Examinar cobertura, conforto e desgaste de locais candidatos de descanso.",
+          "dependencias": "Não há orientação solar ou produção de material estabelecida.",
+          "risco": "Patrocinador reserva sombra comum para sua feira.",
+          "decisao": "Negociar uso conforme necessidade e preservar acesso de vulneráveis.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:cumbucas:3",
+          "nome": "Triagem de resíduos de queima",
+          "funcao": "Separar cacos e cinzas do trabalho oleiro até avaliar riscos e reaproveitamento.",
+          "dependencias": "Energia, composição do barro, estabilidade de cacos e descarte seguro permanecem incógnitos.",
+          "risco": "Um clã despeja cinzas perto de possível área de captação.",
+          "decisao": "Suspender depósito, investigar contaminação e reduzir conflito entre famílias.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:cumbucas:1",
+          "nome": "Sombra da Contagem Contestável",
+          "uso": "Lugar hipotético onde se discutem inventários de recipientes.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:cumbucas:2",
+          "nome": "Recanto dos Cacos sem Destino",
+          "uso": "Área de retenção, sem transformá-la em aterro confirmado.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:cumbucas:1",
+          "nome": "Dura Poeira-Segura",
+          "identidade": "Orc candidata, inspetora de recipientes",
+          "objetivo": "Evitar distribuição de objetos defeituosos a famílias rivais.",
+          "contradicao": "A inspeção pode tornar-se veto de quem controla a fila.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:cumbucas:2",
+          "nome": "Meka Barro-Quente",
+          "identidade": "Goblin candidata, cuidadora dos fornos",
+          "objetivo": "Separar cinza de material útil sem contaminar locais de repouso.",
+          "contradicao": "Seu ateliê depende de combustível cujo acesso ainda é incerto.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Aru Caco-Leal",
+          "fonte": "pessoa:lxxi:cumbucas:1",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Tobel Areia-da-Voz",
+          "fonte": "pessoa:lxxi:cumbucas:2",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxxii:cumbucas:1",
+          "nome": "A jarra sem conteúdo",
+          "situacao": "Uma liderança apresenta sete recipientes vazios como comprovação da reserva de água.",
+          "escolhas": "Investigar disponibilidade real, contestar a contagem e discutir prioridades.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:cumbucas:2",
+          "nome": "Cinzas no lugar da sombra",
+          "situacao": "O único espaço fresco proposto é reivindicado como depósito de resíduos do forno.",
+          "escolhas": "Escolher local alternativo apenas se houver condições e não apagar a necessidade de produção.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    },
+    {
+      "id": "comunidade:lxxii:panela",
+      "nome": "Pouso da Panela Retornada",
+      "setor": "Grama-Cortada",
+      "origem": "povoamento:lv:05",
+      "continuidade": "comunidade:lxxi:panela",
+      "povos_propostos": "Hobbits anfitriões, cozinheiros e viajantes ocasionais",
+      "eixo": "Limpar e conservar é trabalho de hospitalidade",
+      "situacao": "O Pouso da Panela Retornada é comunidade hobbit anfitriã proposta. A fama de bons pratos não garante abastecimento, leitos ou instalações sanitárias; Grama-Cortada não tem rei ou exército permanente.",
+      "disputa": "A equipe de limpeza costuma ser cobrada quando a festa termina, apesar de não controlar convites. A manutenção de recipientes e restos alimentares depende de quem participou da refeição.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:panela:1",
+          "nome": "Conferência do alimento conservável",
+          "funcao": "Separar o que pode ser usado, o que necessita de condição especial e o que deve ser descartado com cuidado.",
+          "dependencias": "Sem quantidades, temperatura, água e técnicas autorizadas, não declarar prazo de conservação.",
+          "risco": "Anfitrião chama toda sobra de comida garantida para novos hóspedes.",
+          "decisao": "Conferir condições reais e evitar promessa de refeição inexistente.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:panela:2",
+          "nome": "Turno de lavagem e repouso",
+          "funcao": "Organizar limpeza de utensílios e locais comuns com provisão adequada de água e descanso.",
+          "dependencias": "Água, produtos de limpeza e destino das águas usadas seguem desconhecidos.",
+          "risco": "Convidados julgam que só cozinheiros devem limpar.",
+          "decisao": "Reconhecer a tarefa como trabalho e repartir contribuições voluntárias.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:panela:3",
+          "nome": "Conserto preventivo do pouso",
+          "funcao": "Examinar bancos, recipientes, coberturas e acessos antes de oferecer hospedagem.",
+          "dependencias": "Não presumir capacidade física ou número de camas.",
+          "risco": "Família prestigiosa requisita todas as peças de reposição.",
+          "decisao": "Priorizar segurança e necessidades de usuários reais.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:panela:1",
+          "nome": "Mesa do que Ainda Pode Ser Usado",
+          "uso": "Triagem de utensílios e alimentos sem estoque imaginário.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:panela:2",
+          "nome": "Pátio do Descanso dos Cozinheiros",
+          "uso": "Área candidata para pausa de quem recebeu os visitantes.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:panela:1",
+          "nome": "Lina Cesto-Lavado",
+          "identidade": "Hobbit candidata, organizadora da limpeza",
+          "objetivo": "Fazer convidados reconhecerem o trabalho após as refeições.",
+          "contradicao": "Tenta cobrar contribuição igual de quem possui condições muito distintas.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:panela:2",
+          "nome": "Nebo Banco-Torto",
+          "identidade": "Hobbit candidato, reparador de móveis",
+          "objetivo": "Evitar acidentes em encontros e descanso.",
+          "contradicao": "Sua fila de manutenção privilegia a família que mais elogia suas histórias.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Sina Pote-Descansado",
+          "fonte": "pessoa:lxxi:panela:1",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Bero Causo-Curto",
+          "fonte": "pessoa:lxxi:panela:2",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxxii:panela:1",
+          "nome": "A panela do dia seguinte",
+          "situacao": "Um anfitrião promete repetir um banquete usando sobras cuja segurança não se conhece.",
+          "escolhas": "Conferir alimento e técnica, oferecer alternativa ou não servir.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:panela:2",
+          "nome": "O último a sair limpa sozinho",
+          "situacao": "A festa termina e as mesmas pessoas são obrigadas a limpar sem ajuda nem repouso.",
+          "escolhas": "Repartir responsabilidades e preservar direito de não trabalhar compulsoriamente.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    },
+    {
+      "id": "comunidade:lxxii:bosque",
+      "nome": "Bosque da Hospitalidade Estreita",
+      "setor": "Ironwood",
+      "origem": "povoamento:xlvi:ironwood:01",
+      "continuidade": "comunidade:lxxi:bosque",
+      "povos_propostos": "Gnomos da floresta, fadas refugiadas e famílias élficas propostas",
+      "eixo": "O refúgio seguro depende do manejo da floresta",
+      "situacao": "Bosque de gnomos, fadas refugiadas e famílias élficas com moradias ocultas propostas. Ilusão não impede fogo, quedas, resíduos ou desabamento de material; nenhuma rota ou conexão com Eldroth foi homologada.",
+      "disputa": "A proteção ambiental não deve servir de desculpa para negar socorro, e limpar não autoriza destruir habitats de outros seres. O medo da Corte pode transformar qualquer trilha de retirada em suspeita de traição.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:bosque:1",
+          "nome": "Inspeção de abrigos e materiais caídos",
+          "funcao": "Avaliar galhos, coberturas, materiais de brinquedos e reparos sem destruir ninhos habitados.",
+          "dependencias": "Não declarar resistência das estruturas ou espécies de madeira pelo nome do bosque.",
+          "risco": "Conselho exige sigilo mesmo quando a moradia parece insegura.",
+          "decisao": "Permitir consulta sem revelar rotas a terceiros.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:bosque:2",
+          "nome": "Guarda de material combustível",
+          "funcao": "Examinar onde se concentram fibras secas, aparas e fontes de iluminação.",
+          "dependencias": "Chuva, vento, umidade, necessidade de combustível e risco de fogo ainda não foram medidos.",
+          "risco": "Guardiões querem queimar resíduo a qualquer custo para esconder vestígios.",
+          "decisao": "Evitar queimadas improvisadas e buscar destinação condicionada.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:bosque:3",
+          "nome": "Organização de saída e retorno",
+          "funcao": "Deliberar sobre caminhos internos candidatos para abandonar um abrigo inseguro sem expor outros esconderijos.",
+          "dependencias": "O sigilo não comprova rota de evacuação nem distância a uma aldeia vizinha.",
+          "risco": "Liderança tenta impedir toda saída por medo de patrulhas.",
+          "decisao": "Escutar moradores e manter incertezas visíveis.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:bosque:1",
+          "nome": "Varanda do Material Não Queimado",
+          "uso": "Inspeção de sobras e proteção de habitats antes de qualquer queima.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:bosque:2",
+          "nome": "Banco das Rotas Não Publicadas",
+          "uso": "Discussão privada de acessos possíveis sem mapa divulgado.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:bosque:1",
+          "nome": "Ero Folha-Cautelosa",
+          "identidade": "Gnomo candidato, avaliador de galhos e estruturas",
+          "objetivo": "Reduzir riscos de incêndio e queda sem expor a comunidade.",
+          "contradicao": "Propõe proibir quase toda atividade coletiva.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:bosque:2",
+          "nome": "Valira Bruma-Pequena",
+          "identidade": "Fada refugiada candidata, organizadora de abrigos",
+          "objetivo": "Garantir passagem acessível a quem necessita sair.",
+          "contradicao": "Um pacto antigo pode pressioná-la a esconder falhas de construção.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Evin Galho-Falso",
+          "fonte": "pessoa:lxxi:bosque:1",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Tila Flor-Reserva",
+          "fonte": "pessoa:lxxi:bosque:2",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxxii:bosque:1",
+          "nome": "A fogueira que apagaria rastros",
+          "situacao": "Um conselho quer queimar restos de bonecos e fibras sem conhecer o risco para árvores e ninhos.",
+          "escolhas": "Contestar queima, gerir sigilo por outro meio e investigar segurança.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:bosque:2",
+          "nome": "A trilha que não pode ser aberta",
+          "situacao": "Moradores precisam sair de abrigo inseguro, mas a liderança invoca sigilo absoluto.",
+          "escolhas": "Debater riscos, consentimento e alternativas sem revelar rota canônica.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    },
+    {
+      "id": "comunidade:lxxii:terreiro",
+      "nome": "O Terreiro dos Panos Virados",
+      "setor": "Costa Sul",
+      "origem": "povoamento:xlix:costa:10",
+      "continuidade": "comunidade:lxxi:terreiro",
+      "povos_propostos": "famílias orcs e humanas deslocadas, com alguns elfos de Eldroth propostos",
+      "eixo": "Abrigo provisório não dispensa saneamento nem privacidade",
+      "situacao": "Famílias orcs e humanas deslocadas, com alguns elfos de Eldroth apenas candidatos, vivem em alojamentos propostos. Não há abastecimento público, tratamento de esgoto ou fonte de água potável confirmados.",
+      "disputa": "Cuidar de roupas, recipientes, áreas de limpeza e resíduos reduz conflitos e trabalho repetido, mas um cadastro de necessidades pode tornar-se lista de perseguição.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:terreiro:1",
+          "nome": "Roda de limpeza dos panos de abrigo",
+          "funcao": "Avaliar necessidade de limpeza e secagem sem fixar água, combustível ou técnicas adequadas inexistentes.",
+          "dependencias": "Não prometer roupa limpa sem recursos de lavagem e lugar de secagem.",
+          "risco": "Guarda cobra taxa de trabalho das famílias recém-chegadas.",
+          "decisao": "Organizar turnos voluntários com descanso e prioridade a necessidades reais.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:terreiro:2",
+          "nome": "Separação entre água de uso e água segura",
+          "funcao": "Não equiparar água disponível para lavagens à água apropriada para beber ou preparar alimento.",
+          "dependencias": "Qualidade, origem, armazenamento e tratamento são perguntas abertas.",
+          "risco": "Um patrono declara que água do templo de Deméter serve de bebida por ser usada na irrigação.",
+          "decisao": "Exigir comprovação da adequação e não inventar logística até Portomonte.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:terreiro:3",
+          "nome": "Inventário sem nome de fugitivo",
+          "funcao": "Contabilizar recipientes, provisões e manutenção por necessidade sem publicar identidades.",
+          "dependencias": "Não presumir sistema contábil infalível ou estoques recebidos.",
+          "risco": "Um administrador exige sobrenomes completos antes de permitir auxílio.",
+          "decisao": "Separar auditoria material de dados que expõem pessoas.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:terreiro:1",
+          "nome": "Pátio do Pano Seco Condicional",
+          "uso": "Lugar hipotético de cuidados têxteis sem água ou ventilação asseguradas.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:terreiro:2",
+          "nome": "Mesa das Necessidades sem Lista Pública",
+          "uso": "Triagem de recursos e privacidade, sem cadastro universal.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:terreiro:1",
+          "nome": "Brana Linha-de-Água",
+          "identidade": "Orc candidata, organizadora de lavagem e reparo de abrigo",
+          "objetivo": "Evitar promessas de limpeza sem materiais.",
+          "contradicao": "Pode priorizar panos de maior visibilidade e esquecer necessidades privadas.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:terreiro:2",
+          "nome": "Demi Pote-Sem-Nome",
+          "identidade": "Humana candidata, registradora de necessidades de água",
+          "objetivo": "Conferir recursos sem tornar o refúgio localizável.",
+          "contradicao": "Seu cuidado com sigilo pode impedir que a comunidade detecte perdas reais.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Naru Ponto-Solto",
+          "fonte": "pessoa:lxxi:terreiro:1",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Lenis Tecido-Virado",
+          "fonte": "pessoa:lxxi:terreiro:2",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxxii:terreiro:1",
+          "nome": "A água limpa que não era potável",
+          "situacao": "Um conselheiro anuncia uma fonte para beber porque alguém a descreveu como própria para irrigar.",
+          "escolhas": "Suspender a promessa e verificar aptidão sem inventar tratamento.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:terreiro:2",
+          "nome": "A lista dos banhos",
+          "situacao": "Um chefe quer registrar sobrenomes e rotas de todos os usuários de uma área de limpeza.",
+          "escolhas": "Restringir dados, distribuir água por necessidade e proteger pessoas.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    },
+    {
+      "id": "comunidade:lxxii:porto",
+      "nome": "Porto da Trégua Quebrada",
+      "setor": "Ilhas da Costa Sul",
+      "origem": "povoamento:liv:09",
+      "continuidade": "comunidade:lxxi:porto",
+      "povos_propostos": "Tortles, Tabaxis e famílias de marinheiros sem lealdade única",
+      "eixo": "A trégua de socorro exige manutenção que ninguém celebra",
+      "situacao": "Comunidade insular proposta de tortles, tabaxis e famílias marinheiras. Nome de Porto não prova doca, maré favorável, navios existentes, áreas de reparo ou acesso a água doce.",
+      "disputa": "Uma manta, vela ou corda usada em resgate pode competir com decoração festiva ou carga comercial. Insígnias e suspeitas de lealdade a Daegon não justificam negar socorro por espécie ou origem.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:porto:1",
+          "nome": "Inspeção de fibras de emergência",
+          "funcao": "Examinar cabos, panos e materiais antes de designá-los a salvamento ou transporte.",
+          "dependencias": "Carga segura, embarcação, material e condições marítimas desconhecidos.",
+          "risco": "Capitão retira todo material para velas cerimoniais.",
+          "decisao": "Priorizar segurança de quem utiliza equipamento sem garantir missão.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:porto:2",
+          "nome": "Triagem de restos e detritos litorâneos",
+          "funcao": "Separar material de manutenção de objeto perigoso, sem declarar correntes, poluição ou coleta constante.",
+          "dependencias": "Não assumir que detrito marinho é recurso livre ou biologicamente inerte.",
+          "risco": "Comerciante deseja que se queime tudo para limpar o tablado.",
+          "decisao": "Proteger habitat e investigar perigos antes de descartar.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:porto:3",
+          "nome": "Refúgio de pouso condicionado",
+          "funcao": "Analisar capacidade de abrigo, água e alimentação antes de receber pessoas em emergência.",
+          "dependencias": "Não criar estoque, ferry, cais ou abastecimento de ilha.",
+          "risco": "Famílias querem julgar passageiros apenas por insígnias encontradas.",
+          "decisao": "Ouvir fatos individuais e definir acolhimento conforme recursos e segurança.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:porto:1",
+          "nome": "Bancada do Cabo que Ainda Serve",
+          "uso": "Avaliação local de estado de equipamento, sem padrões técnicos inventados.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:porto:2",
+          "nome": "Praça do Detrito Não Reclamado",
+          "uso": "Triagem hipotética que não autoriza aterro ou queima no litoral.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:porto:1",
+          "nome": "Nerka Vela-Curta",
+          "identidade": "Tortle candidata, zeladora de cabos de manutenção",
+          "objetivo": "Distinguir material de adorno de recurso de salvamento.",
+          "contradicao": "Seu inventário pode ignorar que há famílias sem pano para abrigo.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:porto:2",
+          "nome": "Liri Areia-Marcada",
+          "identidade": "Tabaxi candidata, organizadora de acolhimento em emergência",
+          "objetivo": "Atender necessidade sem absolver comandantes violentos.",
+          "contradicao": "Pode exigir informação demais de náufragos assustados.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Rema Vela-Minguada",
+          "fonte": "pessoa:lxxi:porto:1",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Quiru Mapa-de-Canto",
+          "fonte": "pessoa:lxxi:porto:2",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxxii:porto:1",
+          "nome": "O cabo usado no estandarte",
+          "situacao": "Um grupo reserva equipamento de possível socorro para enfeitar uma festa.",
+          "escolhas": "Debater uso real, inspeção e capacidade de substituição.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:porto:2",
+          "nome": "O lixo que era ninho",
+          "situacao": "Moradores querem remover material de costa onde pequenos seres poderiam abrigar-se.",
+          "escolhas": "Investigar ecologia, buscar alternativa e não fixar espécie ou abrigo sem confirmação.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    },
+    {
+      "id": "comunidade:lxxii:jardim",
+      "nome": "Jardim das Canções Recuperadas",
+      "setor": "Águas Azuis",
+      "origem": "povoamento:liv:16",
+      "continuidade": "comunidade:lxxi:jardim",
+      "povos_propostos": "Sereias, Tritões e cuidadores de corais sapientes propostos",
+      "eixo": "Uma cidade submersa também precisa proteger o habitat",
+      "situacao": "Jardim candidato de sereias, tritões e cuidadores de corais sapientes, sem corrente, profundidade, acústica ou biologia do coral definidas. Sons e barreiras podem afetar os habitantes, não apenas patrulhas.",
+      "disputa": "Uma patrulha quer extrair coral vivo para defesa e declarar toda matéria em deriva como lixo. Os cuidadores contestam a apropriação de um possível ser consciente e a interrupção de fluxos necessários a outros organismos.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:jardim:1",
+          "nome": "Vigilância de objetos e fluxos",
+          "funcao": "Observar detritos e materiais que poderiam alterar espaços habitados sem presumir corrente fixa.",
+          "dependencias": "Não há parâmetros de qualidade da água, profundidade ou vias de circulação estabelecidos.",
+          "risco": "Um comandante decide retirar organismos em vez de objetos inertes.",
+          "decisao": "Investigar o que é corpo, habitat ou obstáculo antes de intervir.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:jardim:2",
+          "nome": "Inspeção de barreiras não vivas",
+          "funcao": "Avaliar alternativas de proteção sem cortar corais conscientes ou fechar passagens ecológicas.",
+          "dependencias": "Não presumir engenharia, ancoragem ou sobrevivência de objetos no fundo.",
+          "risco": "Patrulha considera toda área de coral uma fortificação disponível.",
+          "decisao": "Submeter intervenção a consulta e viabilidade ambiental.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:jardim:3",
+          "nome": "Área de repouso sem ruído imposto",
+          "funcao": "Negociar apresentações e reparos barulhentos conforme capacidade dos habitantes afetados.",
+          "dependencias": "Alcance acústico, percepção e comunicação variam entre povos e indivíduos.",
+          "risco": "Organizador vende silêncio dos moradores como parte do espetáculo.",
+          "decisao": "Respeitar recusa e estudar efeitos antes de tocar.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:jardim:1",
+          "nome": "Recanto da Barreira Não Viva",
+          "uso": "Área candidata para avaliar materiais não sapientes, sem construção confirmada.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:jardim:2",
+          "nome": "Átrio do Fluxo Não Mapeado",
+          "uso": "Ponto hipotético de observação, sem dados hidrodinâmicos.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:jardim:1",
+          "nome": "Eriam Maré-Não-Dita",
+          "identidade": "Tritão candidato, observador de obstáculos submersos",
+          "objetivo": "Evitar que uma obra bloqueie habitat que ninguém mapeou.",
+          "contradicao": "Sua prudência pode impedir medidas urgentes de proteção.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:jardim:2",
+          "nome": "Lysha Coral-Contado",
+          "identidade": "Sereia candidata, mediadora de consulta ao recife",
+          "objetivo": "Não atribuir consentimento a corais sem comunicação estabelecida.",
+          "contradicao": "Pode interpretar silêncio de todo coral como veto universal.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Sairen Eco-Fundo",
+          "fonte": "pessoa:lxxi:jardim:1",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Varn Onda-Discreta",
+          "fonte": "pessoa:lxxi:jardim:2",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxxii:jardim:1",
+          "nome": "A muralha que era pessoa",
+          "situacao": "Uma patrulha deseja converter coral possivelmente sapiente em barreira sem consulta.",
+          "escolhas": "Verificar natureza e comunicação, propor objeto inerte ou suspender obra.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:jardim:2",
+          "nome": "O canto que encobre sinais",
+          "situacao": "Uma apresentação disputa espaço sonoro com possíveis avisos de emergência.",
+          "escolhas": "Delimitar usos e testar se sinais existem e são perceptíveis.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    },
+    {
+      "id": "comunidade:lxxii:tintas",
+      "nome": "A Vila das Tintas de Polvo",
+      "setor": "Águas Azuis",
+      "origem": "povoamento:liv:15",
+      "continuidade": "comunidade:lxxi:tintas",
+      "povos_propostos": "Polvos inteligentes de sociedade própria, espécie proposta",
+      "eixo": "Cor, descarga e armazenamento não são a mesma coisa",
+      "situacao": "Polvos inteligentes de sociedade própria, ainda candidata. Padrões cromáticos podem constituir expressão e deliberação, mas não são idioma universal. Tampouco foi estabelecido que suas mudanças de cor produzam pigmento removível.",
+      "disputa": "Uma administração deseja padronizar padrões e requisitar substâncias de origem corporal para pintar avisos. Artesãos defendem a separação entre comunicação voluntária, material inerte e descarte de procedência desconhecida.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:tintas:1",
+          "nome": "Triagem de pigmento e suporte inerte",
+          "funcao": "Classificar matéria para arte sem pressupor que veio do corpo de um morador.",
+          "dependencias": "Composição, solubilidade, luminosidade e estabilidade na água não estão determinadas.",
+          "risco": "Um comprador exige tinta corporal como taxa.",
+          "decisao": "Investigar procedência e consentimento antes de qualquer uso.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:tintas:2",
+          "nome": "Reparo de superfícies de exibição",
+          "funcao": "Examinar objetos candidatos usados para mostrar padrões sem afetar habitats.",
+          "dependencias": "Não presumir parede, substrato natural, fixação ou escrita universal.",
+          "risco": "Patrulha confisca suportes para emitir ordens militares.",
+          "decisao": "Distinguir propriedade do objeto de autonomia de seus criadores.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:tintas:3",
+          "nome": "Roda de descarte sem código obrigatório",
+          "funcao": "Discutir onde guardar material cujo efeito no ambiente ou em seres conscientes se desconhece.",
+          "dependencias": "Água do mar não elimina automaticamente riscos de descarte.",
+          "risco": "Uma liderança utiliza sinais cromáticos para ordenar despejos sem consulta.",
+          "decisao": "Suspender descarte e ouvir usuários de sistemas expressivos diferentes.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:tintas:1",
+          "nome": "Bancada da Origem Comprovável",
+          "uso": "Guarda candidata de informações de matéria-prima, sem exigir nomes públicos.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:tintas:2",
+          "nome": "Pátio da Cor Não Obrigatória",
+          "uso": "Área de convivência visual com escolha de participar ou não.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:tintas:1",
+          "nome": "Toru Mancha-Desfeita",
+          "identidade": "Polvo sapiente candidato, guardião de suportes",
+          "objetivo": "Distinguir corpo, arte e matéria reaproveitável.",
+          "contradicao": "Seu zelo quer proibir qualquer reprodução de padrões.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:tintas:2",
+          "nome": "Nema Oito-Silêncios",
+          "identidade": "Polva sapiente candidata, intérprete de desacordos cromáticos",
+          "objetivo": "Permitir que padrões não consensuais sejam revistos.",
+          "contradicao": "A interpretação pode impor um padrão que ninguém aprovou.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Oriv Oito-Pausas",
+          "fonte": "pessoa:lxxi:tintas:1",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Sema Mancha-Guardada",
+          "fonte": "pessoa:lxxi:tintas:2",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxxii:tintas:1",
+          "nome": "A tinta vendida como imposto",
+          "situacao": "Um agente deseja coletar pigmento do corpo de moradores em troca de permitir uma feira.",
+          "escolhas": "Distinguir corpo, material inerte e coerção, recusar imposto e buscar fontes reais.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:tintas:2",
+          "nome": "O despejo que ninguém entende",
+          "situacao": "Uma ordem cromática é tratada como autorização para descartar resíduo sem interpretação compartilhada.",
+          "escolhas": "Suspender, verificar consentimento e investigar impacto.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    },
+    {
+      "id": "comunidade:lxxii:mascaras",
+      "nome": "O Ateliê das Máscaras Legíveis",
+      "setor": "Shadar",
+      "origem": "povoamento:lv:02",
+      "continuidade": "comunidade:lxxi:mascaras",
+      "povos_propostos": "Costureiras subjugadas, figurinistas e especialistas em glamour",
+      "eixo": "O avesso do luxo acumula resíduos e jornadas",
+      "situacao": "Ateliê de costureiras subjugadas, figurinistas e glamour de origem não determinada. A aristocracia pode impor encomendas com materiais perigosos sem examinar condições de trabalho. Não há edifício, mercado ou ventilação confirmados.",
+      "disputa": "Uma limpeza de tinturas e retalhos pode proteger pessoas ou destruir marcas de autoria deliberadamente guardadas. O patrono exige brilho e sigilo, sem reconhecer custo de descarte, descanso ou reparo.",
+      "sistemas_candidatos": [
+        {
+          "id": "sistema:lxxii:mascaras:1",
+          "nome": "Triagem de pigmentos desconhecidos",
+          "funcao": "Separar matéria segura, duvidosa e imprópria para peça ou descarte, com evidências disponíveis.",
+          "dependencias": "Não declarar composição ou efeito de glamour na saúde e no ambiente.",
+          "risco": "Um nobre exige jogar sobras fora para esconder a autoria de costureiras.",
+          "decisao": "Preservar segurança e consentimento, sem descrever rota de descarte fictícia.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:mascaras:2",
+          "nome": "Manutenção de agulhas e iluminação",
+          "funcao": "Verificar ferramentas cortantes, iluminação e bancadas antes da encomenda.",
+          "dependencias": "Não presumir energia, luz mágica ilimitada, proteção ou ergonomia garantida.",
+          "risco": "Um patrão compra mais máscaras e recusa reparo dos instrumentos.",
+          "decisao": "Registrar defeitos e tempo de manutenção como parte do trabalho.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        },
+        {
+          "id": "sistema:lxxii:mascaras:3",
+          "nome": "Turno livre e autoria protegida",
+          "funcao": "Negociar tempo de limpeza e reparo, diferenciando direitos de quem está sob coerção.",
+          "dependencias": "A existência de conselho de artesãos não prova liberdade de associação.",
+          "risco": "Uma Casa obriga artistas a limpar durante o descanso sem remuneração.",
+          "decisao": "Tornar visível custo social e buscar espaços reais de contestação.",
+          "construido_confirmado": false,
+          "seguranca_comprovada": false,
+          "operacao_confirmada": false
+        }
+      ],
+      "espacos": [
+        {
+          "id": "espaco:lxxii:mascaras:1",
+          "nome": "Armário do Pigmento Não Testado",
+          "uso": "Quarentena candidata de material até conhecer efeitos.",
+          "existe_confirmado": false,
+          "localizacao": null
+        },
+        {
+          "id": "espaco:lxxii:mascaras:2",
+          "nome": "Bancada do Descanso Negado",
+          "uso": "Espaço hipotético para reivindicar manutenção e pausa.",
+          "existe_confirmado": false,
+          "localizacao": null
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxxii:mascaras:1",
+          "nome": "Ysra Poeira-de-Baile",
+          "identidade": "Costureira shadow fey subjugada candidata, responsável por tinturas",
+          "objetivo": "Conseguir condições seguras de material e descarte.",
+          "contradicao": "Tem medo de que um protesto aberto exponha colegas.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxxii:mascaras:2",
+          "nome": "Pavel Agulha-Lenta",
+          "identidade": "Humano candidato, reparador de ferramentas",
+          "objetivo": "Fazer limpeza e manutenção contarem como jornada.",
+          "contradicao": "Seu esforço individual encobre a necessidade de organização coletiva.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_retornados": [
+        {
+          "nome": "Nétra Agulha-Discreta",
+          "fonte": "pessoa:lxxi:mascaras:1",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Farlo Ponto-Contado",
+          "fonte": "pessoa:lxxi:mascaras:2",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxxii:mascaras:1",
+          "nome": "O brilho lançado no canal",
+          "situacao": "Um patrono ordena descartar sobras de pigmento num escoadouro cuja ligação não foi verificada.",
+          "escolhas": "Suspender, conferir composição e evitar afirmar canal ou contaminação já ocorridos.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxxii:mascaras:2",
+          "nome": "A limpeza como punição",
+          "situacao": "Uma Casa obriga artesãos a limpar sem descanso após um baile apenas hipotético.",
+          "escolhas": "Discutir coerção, proteção de pessoas e condições reais de trabalho.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "altera_canon": false,
+      "coordenadas": null,
+      "localizacao": null,
+      "populacao": null,
+      "contato_externo_confirmado": false
+    }
+  ],
+  "principios": [
+    {
+      "id": "principio:lxxii:1",
+      "nome": "Diagnóstico antes da obra",
+      "regra": "Local, material, necessidade e risco devem ser reconhecidos antes de prometer funcionamento.",
+      "tensao": "O prestígio da autoridade substitui a inspeção por decreto."
+    },
+    {
+      "id": "principio:lxxii:2",
+      "nome": "Segurança com consentimento",
+      "regra": "Toda intervenção que afeta moradia, corpo ou habitat exige escuta de quem convive com consequências.",
+      "tensao": "A urgência é invocada para retirar voz dos afetados."
+    },
+    {
+      "id": "principio:lxxii:3",
+      "nome": "Água não é intercambiável",
+      "regra": "Água para irrigação, lavagem, consumo e ambiente natural tem requisitos diferentes.",
+      "tensao": "A palavra purificada ou limpa é usada sem adequação ao uso."
+    },
+    {
+      "id": "principio:lxxii:4",
+      "nome": "Inventário sem miragem",
+      "regra": "Uma reserva só pode ser contabilizada quando houver recurso existente e verificável.",
+      "tensao": "Planejadores contam recipientes vazios como estoque."
+    },
+    {
+      "id": "principio:lxxii:5",
+      "nome": "Resíduo não some por descarte",
+      "regra": "Aterrar, queimar, dissolver e decompor não garantem neutralização de risco.",
+      "tensao": "O custo é empurrado para pessoas e habitats com menos poder."
+    },
+    {
+      "id": "principio:lxxii:6",
+      "nome": "Manutenção é trabalho",
+      "regra": "Inspeção, triagem, limpeza, reparo e repouso consomem horas e materiais.",
+      "tensao": "Mestres só reconhecem trabalho de produção vistosa."
+    },
+    {
+      "id": "principio:lxxii:7",
+      "nome": "Acessibilidade como requisito",
+      "regra": "Saídas, alertas e espaços devem considerar usuários com diferentes capacidades e formas de comunicação.",
+      "tensao": "Um teste com uma pessoa é anunciado como segurança universal."
+    },
+    {
+      "id": "principio:lxxii:8",
+      "nome": "Espécie não é matéria-prima",
+      "regra": "Coral, micélio e corpo sapiente não podem ser tratados como insumos por aparência.",
+      "tensao": "Necessidade defensiva é usada para justificar exploração."
+    },
+    {
+      "id": "principio:lxxii:9",
+      "nome": "Geografia sob verificação",
+      "regra": "Canais, docas, córregos, passagens, mercados e caminhos não nascem por semelhança de problemas.",
+      "tensao": "A análise regional inventa uma rede técnica."
+    },
+    {
+      "id": "principio:lxxii:10",
+      "nome": "Dissenso e prestação de contas",
+      "regra": "Quem executa e quem é atendido podem contestar prioridades de serviço.",
+      "tensao": "Conselhos transformam crítica de manutenção em deslealdade."
+    },
+    {
+      "id": "principio:lxxii:11",
+      "nome": "Segredo sem abandono",
+      "regra": "Proteger identidades de refugiados não dispensa inspeção de abrigos nem controle de recursos.",
+      "tensao": "O sigilo vira desculpa para aceitar riscos evitáveis."
+    },
+    {
+      "id": "principio:lxxii:12",
+      "nome": "Nenhum calendário mágico imposto",
+      "regra": "O sistema tarótico interpretativo de Peren não fixa inspeções, colheitas, marés ou datas de manutenção.",
+      "tensao": "Uma proposta simbólica vira planilha operacional sem autorização."
+    }
+  ],
+  "perguntas_de_preparacao": [
+    {
+      "id": "checagem:lxxii:1",
+      "nome": "Confirmar cenário",
+      "pergunta": "Qual lugar, recurso ou infraestrutura realmente existe na comunidade?"
+    },
+    {
+      "id": "checagem:lxxii:2",
+      "nome": "Nomear responsáveis",
+      "pergunta": "Quem pode inspecionar, manter, parar a operação e decidir o uso?"
+    },
+    {
+      "id": "checagem:lxxii:3",
+      "nome": "Reconhecer trabalho",
+      "pergunta": "Quem dedica horas a limpeza, transporte, observação e reparo?"
+    },
+    {
+      "id": "checagem:lxxii:4",
+      "nome": "Avaliar risco e alternativas",
+      "pergunta": "Quem sofrerá o dano caso a proposta falhe e que alternativas materiais há?"
+    },
+    {
+      "id": "checagem:lxxii:5",
+      "nome": "Pedir consentimento",
+      "pergunta": "Quem tem interesse direto, quais respostas foram compreendidas e que silêncio ainda é ambíguo?"
+    },
+    {
+      "id": "checagem:lxxii:6",
+      "nome": "Registrar incerteza",
+      "pergunta": "Que dados não existem e impedem declarar segurança, qualidade ou capacidade?"
+    },
+    {
+      "id": "checagem:lxxii:7",
+      "nome": "Revisar a decisão",
+      "pergunta": "Como contestar resultado e reavaliar uso quando materiais ou condições mudarem?"
+    }
+  ],
+  "interfaces_nao_comprovadas": [
+    {
+      "id": "comparacao:lxxii:1",
+      "de": "comunidade:lxxii:forjas",
+      "para": "comunidade:lxxii:sinos",
+      "tema": "Ventilação e alarme são riscos técnicos distintos, sem peça de fornecimento entre Thargrid e Rio.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:2",
+      "de": "comunidade:lxxii:horta",
+      "para": "comunidade:lxxii:bosque",
+      "tema": "Resíduo orgânico pode ser habitat ou combustível, sem conexão geográfica comprovada Eldroth-Ironwood.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:3",
+      "de": "comunidade:lxxii:chama",
+      "para": "comunidade:lxxii:terreiro",
+      "tema": "Refúgios buscam segurança e privacidade, mas não existe rota compartilhada entre Garganta e Costa Sul.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:4",
+      "de": "comunidade:lxxii:cumbucas",
+      "para": "comunidade:lxxii:panela",
+      "tema": "Alimentos e recipientes dependem de água e conservação, sem feira entre Caatinga e Grama-Cortada.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:5",
+      "de": "comunidade:lxxii:porto",
+      "para": "comunidade:lxxii:jardim",
+      "tema": "Manter equipamento em ilha e proteger habitat submarino são dilemas diferentes, sem operação marítima conjunta.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:6",
+      "de": "comunidade:lxxii:tintas",
+      "para": "comunidade:lxxii:jardim",
+      "tema": "Material corporal e coral sapiente requerem consentimento, sem idioma comum.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:7",
+      "de": "comunidade:lxxii:mascaras",
+      "para": "comunidade:lxxii:forjas",
+      "tema": "Oficinas luxuosas e metalúrgicas impõem custos de resíduos que não devem ser exportados a outros.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:8",
+      "de": "comunidade:lxxii:sinos",
+      "para": "comunidade:lxxii:chama",
+      "tema": "Alertas e rotas de saída podem proteger ou entregar refugiados, sem rede de sinais comum.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:9",
+      "de": "comunidade:lxxii:terreiro",
+      "para": "comunidade:lxxii:panela",
+      "tema": "Hospitalidade inclui limpeza e descanso, não comprovando abastecimento entre regiões.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:10",
+      "de": "comunidade:lxxii:tintas",
+      "para": "comunidade:lxxii:mascaras",
+      "tema": "Pigmentos de origem distinta não comprovam comércio submarino ou composição equivalente.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:11",
+      "de": "comunidade:lxxii:cumbucas",
+      "para": "comunidade:lxxii:chama",
+      "tema": "Fogo e combustível são discutidos sob escassez, mas não determinam tecnologia ou religião igual.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:12",
+      "de": "comunidade:lxxii:porto",
+      "para": "comunidade:lxxii:cumbucas",
+      "tema": "Inspeção de equipamento de resgate e recipientes de água têm modos de falha próprios.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:13",
+      "de": "comunidade:lxxii:horta",
+      "para": "comunidade:lxxii:tintas",
+      "tema": "Decomposição não autoriza despejo de pigmentos em ambientes vivos, sem troca material.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:14",
+      "de": "comunidade:lxxii:bosque",
+      "para": "comunidade:lxxii:porto",
+      "tema": "Detrito pode abrigar seres vivos; nenhum habitat ou tipo de resíduo é universal.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:15",
+      "de": "comunidade:lxxii:jardim",
+      "para": "comunidade:lxxii:sinos",
+      "tema": "Som e sinais de perigo dependem de percepção, sem transmissão entre terra e mar.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:16",
+      "de": "comunidade:lxxii:mascaras",
+      "para": "comunidade:lxxii:terreiro",
+      "tema": "Têxteis de luxo e de abrigo exigem reparo, mas condições de exploração são distintas.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:17",
+      "de": "comunidade:lxxii:forjas",
+      "para": "comunidade:lxxii:porto",
+      "tema": "Inspeção de resistência em metal e vela depende de materiais diferentes, sem contrato de manutenção cruzado.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    },
+    {
+      "id": "comparacao:lxxii:18",
+      "de": "comunidade:lxxii:horta",
+      "para": "comunidade:lxxii:terreiro",
+      "tema": "Resíduo orgânico e água de lavagem não garantem fertilização ou potabilidade, sem transferência de material.",
+      "contato_confirmado": false,
+      "rota_confirmada": false,
+      "servico_compartilhado": false
+    }
+  ],
+  "limites": [
+    "Não equiparar sistemas propostos a infraestrutura construída, funcional, segura, testada ou mantida.",
+    "Nenhum dado quantitativo de volume, capacidade, temperatura, potabilidade, corrente, qualidade ou durabilidade foi inferido.",
+    "Não criar dutos, redes de saneamento, energia, cais, cisternas, fontes, canais, galerias, rotas ou mercados por descrição.",
+    "Não tratar água de irrigação purificada em Portomonte como água adequada ao consumo.",
+    "Não atribuir efeitos de neutralização de contaminantes a fungos, água do mar, cinzas ou magia não documentada.",
+    "Não definir metabolismo, comunicação universal ou extração consentida de corais, polvos, miconídeos e demais seres sapientes.",
+    "Não confundir Abismo demoníaco com habitantes abissais marinhos ou outras cosmologias.",
+    "Nenhum incêndio, desastre, despejo, colapso, contaminação ou resgate ocorreu retroativamente.",
+    "Todas as comunidades e personagens continuam candidatos, sem alteração de mapa, cânone, criaturas ou campanhas.",
+    "Não expor identidades, rotas de refugiados nem segredos de Gualápolis, Ulorian, Jorou, Lança e Arquivo.",
+    "O Tarô temporal importado de Peren é interpretativo, não calendário de turnos, inspeções ou marés.",
+    "A priorização por necessidade não elimina consulta a trabalhadores, moradores e pessoas afetadas."
+  ]
+}

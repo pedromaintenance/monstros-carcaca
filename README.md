@@ -100,6 +100,10 @@ A [integração do calendário simbólico proposto no dossiê de Peren](docs/CAL
 
 O [dossiê sobre trabalho cultural e economia dos ofícios](docs/ARTISTAS_OFICIOS_MERCADOS_E_DESCANSO_CICLO71.md) aprofunda **10 comunidades previamente propostas**, com **20 personagens inéditos, 17 retomados, 30 ofícios candidatos, 20 situações jogáveis e 11 contradições materiais**. [Dados estruturados](data/propostas/artistas-oficios-mercados-descanso-ciclo71.json). Não fixa feiras, preços, moedas, vendas, rotas, calendário civil ou eventos como cânone.
 
+## Ciclo LXXII — Quem mantém a Carcaça funcionando?
+
+O [dossiê de serviços invisíveis, segurança e infraestrutura cotidiana](docs/SERVICOS_INVISIVEIS_INFRAESTRUTURA_CICLO72.md) aprofunda **12 comunidades preexistentes**, com **36 serviços candidatos, 24 espaços, 24 personagens inéditos, 21 retomados, 24 cenas, 12 princípios materiais e 18 comparações sem contato**. [Dados estruturados](data/propostas/servicos-invisiveis-infraestrutura-ciclo72.json). Nenhum serviço foi instalado ou declarado seguro; água, rotas, produção, engenharia local e cronologia continuam condicionais.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.
