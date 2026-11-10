@@ -84,6 +84,10 @@ O [dossiê de moradia, guarda, parentesco e herança](docs/DIREITO_DE_TER_UM_LAR
 
 O [dossiê da economia dos cuidados e da autonomia](docs/OS_QUE_SUSTENTAM_A_VIDA_CUIDADO_CICLO68.md) aprofunda **6 comunidades anteriores** de Eldroth, Rio Ancestral, Thargrid e Costa Sul, criando **12 pessoas candidatas**, retomando **6 personagens**, desenvolvendo **12 espaços**, **18 práticas**, **12 conflitos** e **7 etapas de cuidado**. [Dados estruturados](data/propostas/os-que-sustentam-a-vida-cuidado-ciclo68.json). Não estabelece curas automáticas, fisiologias universais, hospitais confirmados ou rotas.
 
+## Ciclo LXIX — A memória dos mortos
+
+O [dossiê de ritos, lembranças, morte consciente e herança](docs/MEMORIA_DOS_MORTOS_RITOS_E_HERANCA_CICLO69.md) aprofunda **6 comunidades preexistentes** de Eldroth, Rio Ancestral, Thargrid, Garganta e Costa Sul. Propõe **12 personagens inéditos e 8 reutilizados**, **6 instâncias de escuta**, **12 espaços**, **18 costumes**, **12 conflitos** e **7 condições materiais**. [JSON estruturado](data/propostas/memoria-dos-mortos-ritos-heranca-ciclo69.json). Não canoniza ritos, mortes, propriedade, rotas ou acontecimentos.
+
 ## Direção editorial atual — Worldbuilding primeiro
 
 A expansão do projeto foi **repriorizada**: antes de acrescentar mais monstros, números ou encontros mecânicos, desenvolveremos **história, geografia, costumes, religião, política, trabalho, migrações e relações entre povos**. O bestiário continua disponível, mas não deve dirigir sozinho a construção da Carcaça.

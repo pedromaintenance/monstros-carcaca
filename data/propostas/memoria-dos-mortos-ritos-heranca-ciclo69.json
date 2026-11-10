@@ -1,0 +1,825 @@
+{
+  "schema_version": "1.0",
+  "titulo": "Ciclo LXIX — A memória dos mortos",
+  "data_registro": "2026-11-09",
+  "estado": "proposta_nao_canonica",
+  "aprovacao_autoral": false,
+  "altera_canon": false,
+  "altera_mapa": false,
+  "altera_bestiario": false,
+  "altera_campanhas": false,
+  "fontes": [
+    "data/propostas/povoamento-regional-lote02-ciclo45.json",
+    "data/propostas/povoamento-quatro-frentes-ciclo46.json",
+    "data/propostas/povoamento-costa-continental-ciclo49.json",
+    "data/propostas/povoamento-ecologia-thargrid-ironwood-eldroth-ciclo53.json",
+    "data/propostas/engenharia-politica-da-forja-thargrid-ciclo62.json",
+    "data/propostas/direito-de-ter-um-lar-pertencimento-ciclo67.json",
+    "data/propostas/os-que-sustentam-a-vida-cuidado-ciclo68.json",
+    "data/propostas/filhos-do-exilio-memoria-pertencimento-ciclo66.json",
+    "fontes/autoria/hack-carcaca-dw-capitulo-i.paginas.json"
+  ],
+  "fundamento": "A lore original confirma salões ancestrais anões, culto ribeirinho de Bastet, antigo templo solar de Yolskaariin e exército de mortos-vivos de Damaris. Os seis povoados e suas propostas ritualísticas não são cânone.",
+  "totais": {
+    "comunidades": 6,
+    "cidades_novas": 0,
+    "personagens_novos": 12,
+    "personagens_reusados": 8,
+    "instituicoes": 6,
+    "espacos": 12,
+    "costumes": 18,
+    "cenas": 12,
+    "insumos_e_contradicoes": 7,
+    "comparacoes": 9,
+    "especies_novas": 0
+  },
+  "comunidades": [
+    {
+      "id": "comunidade:lxix:velorio",
+      "fonte": "povoamento:xlv:30",
+      "fonte_continuidade": "comunidade:lxviii:velorio",
+      "nome": "O Velório dos que Aprenderam a Falar",
+      "setor": "Eldroth",
+      "povos_previamente_propostos": "Mortos-vivos conscientes propostos, diferentes do exército de Damaris até decisão",
+      "eixo": "Como despedir-se de alguém que ainda pode responder?",
+      "materialidade": "Conservar objetos e câmaras exige materiais, mas não se conhece alimentação, sono, fisiologia, permanência da memória nem necessidade de magia desses mortos-vivos. O Velório dissidente não pertence automaticamente às tropas de Damaris.",
+      "politica": "Um conselho de testemunhas pode ouvir vivos e mortos conscientes, mas não pode inventar que identidade e direitos anteriores persistem sem mudanças. A reivindicação de comando feita em nome de Damaris não comprova poder sobre este povoado.",
+      "instituicao": {
+        "nome": "Mesa dos Testemunhos Interrompíveis",
+        "papel": "Escutar memórias, recusas e pedidos de privacidade com tempo adequado à expressão de cada pessoa.",
+        "limite": "Não tomar silêncio ou demora como concordância.",
+        "aprovacao_autoral": false
+      },
+      "espacos": [
+        {
+          "id": "espaco:lxix:velorio:1",
+          "nome": "Átrio das Palavras que Demoram",
+          "uso": "Lugar de escuta de indivíduos com formas e ritmos diferentes de comunicação.",
+          "risco": "Uma votação é encerrada antes da manifestação de Fesma.",
+          "localizacao": null,
+          "confirmado": false
+        },
+        {
+          "id": "espaco:lxix:velorio:2",
+          "nome": "Armário dos Bens Não Reivindicados",
+          "uso": "Guarda provisória de relíquias com procedência em aberto.",
+          "risco": "Parentes querem transformar guarda de objeto em propriedade de um morto consciente.",
+          "localizacao": null,
+          "confirmado": false
+        }
+      ],
+      "costumes": [
+        {
+          "id": "costume:lxix:velorio:1",
+          "nome": "Luto por relação transformada",
+          "pratica": "Permitir que vivos lamentem o passado sem negar a vontade presente da pessoa morta consciente.",
+          "limite": "Não há ressurreição ou memória uniforme garantida.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:velorio:2",
+          "nome": "A lembrança precisa de permissão",
+          "pratica": "Um testemunho pode permanecer restrito quando a pessoa ainda é capaz de consentir.",
+          "limite": "Uma memória ausente não deve ser inventada.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:velorio:3",
+          "nome": "Objeto não é pessoa",
+          "pratica": "Distinguir bens a restituir de corpo consciente capaz de escolha.",
+          "limite": "Não negar disputas legítimas por objetos materiais.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxix:velorio:1",
+          "nome": "Meris Selo-Apago",
+          "perfil": "Morta-viva consciente candidata, catalogadora de relíquias",
+          "desejo": "Restituir objetos sem ceder pessoas como patrimônio.",
+          "contradicao": "Receia devolver qualquer coisa por medo de exploração.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxix:velorio:2",
+          "nome": "Vaelen Voz-Entre-Pausas",
+          "perfil": "Morto-vivo consciente candidato, ouvinte de relatos",
+          "desejo": "Fazer respeitar o direito de parar uma narrativa.",
+          "contradicao": "Uma lembrança fragmentária é apresentada como prova contra terceiros.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_reutilizados": [
+        {
+          "nome": "Otheu Voz-Cinza",
+          "fonte": "pessoa:lxviii:velorio:1",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Fesma Restos-Lentos",
+          "fonte": "pessoa:lxviii:velorio:2",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxix:velorio:1",
+          "nome": "O funeral de alguém presente",
+          "situacao": "Uma família quer realizar despedida definitiva de pessoa que continua consciente e discorda.",
+          "escolhas": "Ouvir vivos e morto consciente, negociar rito ou reconhecer limites sem confiscar direitos.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxix:velorio:2",
+          "nome": "A caixa sob selo",
+          "situacao": "Um objeto guardado no Velório é exigido como herança, mas sua origem não foi demonstrada.",
+          "escolhas": "Investigar, custodiar provisoriamente ou negociar devolução condicionada.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    },
+    {
+      "id": "comunidade:lxix:casulo",
+      "fonte": "povoamento:xlv:26",
+      "fonte_continuidade": "povoamento:liii:09",
+      "nome": "O Casulo das Sete Vigílias",
+      "setor": "Eldroth",
+      "povos_previamente_propostos": "Aranhas inteligentes de linhagem inventada e poucos visitantes tolerados",
+      "eixo": "A seda de lembrança pertence a quem a fiou",
+      "materialidade": "A espécie de aranhas inteligentes e seus ninhos são propostas. Fios, cuidado dos ovos e alimentação dependem de trabalho e recursos não quantificados. Seda de memória não vira automaticamente cordame militar nem recurso livre de quem a encontra.",
+      "politica": "Matriarcas com cuidado rotativo e direitos de passagem são propostas, sem obrigação de que toda colônia compartilhe rito funerário. A ausência de membro não comprova morte; obter seda por ameaça viola autonomia de habitantes sapientes.",
+      "instituicao": {
+        "nome": "Roda da Seda Não Apropriada",
+        "papel": "Escutar fiandeiros, cuidadores e moradores antes de dispor de fios usados em lembranças.",
+        "limite": "Não converter seda protetora de ninho em propriedade de patrulha.",
+        "aprovacao_autoral": false
+      },
+      "espacos": [
+        {
+          "id": "espaco:lxix:casulo:1",
+          "nome": "Travessa dos Fios Sem Nome",
+          "uso": "Área de exibição de tramas que não revelam identidades por obrigação.",
+          "risco": "Uma patrulha interpreta uma trama como prova de rota.",
+          "localizacao": null,
+          "confirmado": false
+        },
+        {
+          "id": "espaco:lxix:casulo:2",
+          "nome": "Ninho que Não Pode Ser Desmanchado",
+          "uso": "Abrigo candidato preservado enquanto houver necessidade de cuidado.",
+          "risco": "Uma oferenda exige fio que protege ovos vivos.",
+          "localizacao": null,
+          "confirmado": false
+        }
+      ],
+      "costumes": [
+        {
+          "id": "costume:lxix:casulo:1",
+          "nome": "Trama cedida, nunca arrancada",
+          "pratica": "Fios de memória são oferecidos apenas com consentimento e recursos adequados.",
+          "limite": "Não tratar o corpo e o trabalho de aranhas sapientes como material gratuito.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:casulo:2",
+          "nome": "Vigília sem calendário imposto",
+          "pratica": "Encontros podem marcar ausências, sem fixar sete dias ou biologia de morte.",
+          "limite": "O nome do Casulo não determina rito universal.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:casulo:3",
+          "nome": "Ausência não é óbito",
+          "pratica": "Distinguir desaparecimento, partida e morte realmente testemunhada.",
+          "limite": "Não inventar destino de filhote ou adulto desaparecido.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxix:casulo:1",
+          "nome": "Seira Trama-Vigilante",
+          "perfil": "Aranha sapiente candidata, fiandeira de abrigos",
+          "desejo": "Conservar lembranças sem destruir ninhos.",
+          "contradicao": "Pode negar até trocas voluntárias de fios.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxix:casulo:2",
+          "nome": "Khevo Fio-Restituído",
+          "perfil": "Aranha sapiente candidato, cuidador de ovos",
+          "desejo": "Evitar que material de cuidado vire tributo funerário.",
+          "contradicao": "Uma oferta de troca pode suprir necessidade real da colônia.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_reutilizados": [],
+      "cenas": [
+        {
+          "id": "cena:lxix:casulo:1",
+          "nome": "Mortalha de seda viva",
+          "situacao": "O fio solicitado para recordação ainda sustenta o abrigo de ovos.",
+          "escolhas": "Adiar, substituir material ou deliberar sobre oferta voluntária.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxix:casulo:2",
+          "nome": "O ausente já foi chorado",
+          "situacao": "Uma autoridade deseja marcar como morto alguém cujo destino ninguém conhece.",
+          "escolhas": "Manter investigação possível e permitir luto sem certidão de morte fictícia.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    },
+    {
+      "id": "comunidade:lxix:bastet",
+      "fonte": "povoamento:xlv:18",
+      "fonte_continuidade": null,
+      "nome": "Pátio das Janelas de Bastet",
+      "setor": "Rio Ancestral",
+      "povos_previamente_propostos": "Famílias humanas e tabaxis propostas como moradores ribeirinhos",
+      "eixo": "A janela pode acolher quem volta sem exigir a fé de quem ficou",
+      "materialidade": "Famílias humanas e tabaxis ribeirinhas são propostas. Ritos domésticos exigem espaço, mantimentos e tempo de convivência. Bastet possui presença cultual autoral no Rio, mas esta comunidade e suas cerimônias não são fatos estabelecidos.",
+      "politica": "Guardiãs domésticas e círculos de parentesco não são sacerdócio único. Nomes em janelas e livros podem ajudar famílias e facilitar perseguição quando autoridades exigem listas de hóspedes.",
+      "instituicao": {
+        "nome": "Círculo das Janelas Consentidas",
+        "papel": "Decidir voluntariamente quais lembranças podem aparecer em espaço público.",
+        "limite": "Não tornar culto ou registro nominal condição de moradia.",
+        "aprovacao_autoral": false
+      },
+      "espacos": [
+        {
+          "id": "espaco:lxix:bastet:1",
+          "nome": "Pátio da Janela Aberta",
+          "uso": "Encontro de lembrança doméstica sem lista obrigatória de identidades.",
+          "risco": "Uma marca na janela expõe pessoa refugiada.",
+          "localizacao": null,
+          "confirmado": false
+        },
+        {
+          "id": "espaco:lxix:bastet:2",
+          "nome": "Mesa dos Lugares Reservados",
+          "uso": "Debate sobre guardar espaço simbólico para ausentes.",
+          "risco": "Lugar vazio é usado como declaração de morte ou de herança.",
+          "localizacao": null,
+          "confirmado": false
+        }
+      ],
+      "costumes": [
+        {
+          "id": "costume:lxix:bastet:1",
+          "nome": "Uma janela por escolha",
+          "pratica": "Sinal de memória exibido apenas quando sua publicidade não expuser quem vive.",
+          "limite": "Lembrança privada pode ter o mesmo valor.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:bastet:2",
+          "nome": "Ausente não é morto",
+          "pratica": "Não transformar rito de retorno em prova de óbito nem em ressurreição.",
+          "limite": "A cerimônia não substitui testemunho verificável.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:bastet:3",
+          "nome": "Hospedagem sem conversão",
+          "pratica": "Convidado pode estar presente sem aderir ao culto doméstico.",
+          "limite": "Não atribuir a Bastet liturgia obrigatória criada pelo cenário.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxix:bastet:1",
+          "nome": "Nefara Janela-Baixa",
+          "perfil": "Humana candidata, cuidadora de recordações",
+          "desejo": "Guardar histórias sem publicar nomes de perseguidos.",
+          "contradicao": "Ocultar tudo pode silenciar quem deseja reconhecimento.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxix:bastet:2",
+          "nome": "Saren Passo-Quieto",
+          "perfil": "Tabaxi candidato, reparador de janelas e testemunha",
+          "desejo": "Diferenciar retorno vivo, desaparecimento e falecimento.",
+          "contradicao": "É pressionado a atestar a morte de quem ninguém encontrou.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_reutilizados": [],
+      "cenas": [
+        {
+          "id": "cena:lxix:bastet:1",
+          "nome": "O nome de quem não morreu",
+          "situacao": "Um sinal colocado entre os falecidos pertence a alguém de paradeiro desconhecido.",
+          "escolhas": "Rever sinal, preservar hipótese de ausência ou registrar incerteza.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxix:bastet:2",
+          "nome": "O hóspede sem nome completo",
+          "situacao": "Um refugiado deseja participar de reunião, mas não publicar identidade.",
+          "escolhas": "Oferecer acolhimento sem rito compulsório e avaliar riscos de exposição.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    },
+    {
+      "id": "comunidade:lxix:sobrenomes",
+      "fonte": "povoamento:xlix:costa:02",
+      "fonte_continuidade": "comunidade:lxviii:sobrenomes",
+      "nome": "A Casa dos Dois Sobrenomes",
+      "setor": "Costa Sul",
+      "povos_previamente_propostos": "linhagens orcs e humanas de parentesco misto, com crianças de ambos os povos",
+      "eixo": "Dois sobrenomes podem carregar duas memórias incompatíveis",
+      "materialidade": "A horta, a água e o terreno do povoado orc-humano não foram medidos. Uma lápide ou marca ancestral exige material e lugar, sem tornar um marco de lembrança título territorial ou prova de safra.",
+      "politica": "A arbitragem por parentes idosos é proposta. Os descendentes não herdam culpa por saques; a regra não impede investigar violência real de pessoa específica. Udra tem direito de participar apesar da baixa visão.",
+      "instituicao": {
+        "nome": "Mesa das Duas Memórias",
+        "papel": "Ouvir relatos conflitantes de ambos os ramos familiares sem exigir um vencedor mítico.",
+        "limite": "Memorial não é escritura nem tribunal único da Costa Sul.",
+        "aprovacao_autoral": false
+      },
+      "espacos": [
+        {
+          "id": "espaco:lxix:sobrenomes:1",
+          "nome": "Pátio das Duas Pedras",
+          "uso": "Espaço possível para marcas distintas de recordação.",
+          "risco": "Uma inscrição é usada como prova de posse de uma terra sem mapa.",
+          "localizacao": null,
+          "confirmado": false
+        },
+        {
+          "id": "espaco:lxix:sobrenomes:2",
+          "nome": "Banco dos Relatos Incompletos",
+          "uso": "Escuta de jovens e idosos, com adaptações de comunicação.",
+          "risco": "O testemunho de Udra é descartado por dificuldade sensorial.",
+          "localizacao": null,
+          "confirmado": false
+        }
+      ],
+      "costumes": [
+        {
+          "id": "costume:lxix:sobrenomes:1",
+          "nome": "Duas versões abertas",
+          "pratica": "Registrar o que é lembrança, evidência e dúvida em cada ramo familiar.",
+          "limite": "A reconciliação não apaga vítimas nem eventos reais.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:sobrenomes:2",
+          "nome": "Nenhum filho paga o túmulo",
+          "pratica": "O luto não cria obrigações de trabalho vitalícias para descendentes.",
+          "limite": "Reparação por dano concreto exige responsabilidade apurada.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:sobrenomes:3",
+          "nome": "Ferramenta não é terreno",
+          "pratica": "Um objeto herdado não comprova a posse de toda horta.",
+          "limite": "Os meios de subsistência permanecem sem quantificação.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxix:sobrenomes:1",
+          "nome": "Oruva Cinza-de-Duas-Casas",
+          "perfil": "Orc adulta candidata, preservadora de histórias",
+          "desejo": "Permitir que os dois ramos lembrem o mesmo conflito.",
+          "contradicao": "Teme que reconhecer dano passado fragilize união presente.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxix:sobrenomes:2",
+          "nome": "Calen Pedra-Quieta",
+          "perfil": "Humano candidato, artesão de memoriais",
+          "desejo": "Produzir marcas sem transformá-las em documentos de posse.",
+          "contradicao": "Uma família rica deseja escolher nomes sozinha.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_reutilizados": [
+        {
+          "nome": "Udra Mãos-Duas",
+          "fonte": "pessoa:lxviii:sobrenomes:1",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Boro Dois-Rostos",
+          "fonte": "pessoa:lxvii:sobrenomes:3",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxix:sobrenomes:1",
+          "nome": "A pedra tomada por escritura",
+          "situacao": "Um marco memorial é apresentado como prova de propriedade exclusiva do pátio.",
+          "escolhas": "Separar símbolo de direito de uso e verificar reivindicações.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxix:sobrenomes:2",
+          "nome": "O luto cobrado de Boro",
+          "situacao": "Um adulto exige manutenção vitalícia de um marco em pagamento por ataque ancestral.",
+          "escolhas": "Negar culpa herdada e discutir colaboração voluntária e reparação legítima.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    },
+    {
+      "id": "comunidade:lxix:salao",
+      "fonte": "povoamento:xlvi:thargrid-montanhas:01",
+      "fonte_continuidade": "sociedade:lxii:salao",
+      "nome": "Salão do Juramento de Cinza",
+      "setor": "Thargrid",
+      "povos_previamente_propostos": "Clãs anões, draconatos mediadores e aprendizes gigantes propostos",
+      "eixo": "Os salões ancestrais não guardam apenas nomes de chefes",
+      "materialidade": "Os salões de clãs anões são parte autoral de Thargrid; este Salão é candidato e não possui pedra, metal ou oficina funerária garantidos. Preservar ferramentas ou inscrições exige materiais e pode competir com reparos da resistência.",
+      "politica": "Chefes podem escolher quais sobrenomes recebem destaque e apagar o trabalho de pessoas sem clã. Testemunhas draconatas podem contestar exclusões sem assumir jurisdição universal.",
+      "instituicao": {
+        "nome": "Tribuna dos Nomes Não Jurados",
+        "papel": "Ouvir propostas de homenagem de quem reparou, cultivou, defendeu e cuidou.",
+        "limite": "Uma inscrição não confere clã nem obrigação aos descendentes.",
+        "aprovacao_autoral": false
+      },
+      "espacos": [
+        {
+          "id": "espaco:lxix:salao:1",
+          "nome": "Mesa das Ferramentas Guardadas",
+          "uso": "Área de triagem entre objetos a devolver, reparar ou preservar.",
+          "risco": "Uma ferramenta necessária ao sustento é tomada como monumento.",
+          "localizacao": null,
+          "confirmado": false
+        },
+        {
+          "id": "espaco:lxix:salao:2",
+          "nome": "Pedra das Mãos sem Selo",
+          "uso": "Espaço hipotético de inscrição também para pessoas sem linhagem de prestígio.",
+          "risco": "O conselho exige juramento para admitir nome.",
+          "localizacao": null,
+          "confirmado": false
+        }
+      ],
+      "costumes": [
+        {
+          "id": "costume:lxix:salao:1",
+          "nome": "Uma obra tem muitas mãos",
+          "pratica": "Homenagear a quem trabalhou na peça, não só quem encomendou.",
+          "limite": "Não inventar autores de obra que não existe.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:salao:2",
+          "nome": "Promessa não obriga descendente",
+          "pratica": "O juramento de um falecido não cria servidão de seus filhos.",
+          "limite": "Deveres realmente assumidos em vida merecem exame, não suposição.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:salao:3",
+          "nome": "Memória custa material",
+          "pratica": "Conservar ferramenta e repará-la para uso são alternativas com consequências.",
+          "limite": "Não criar metal, mão de obra ou comida por prestígio.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxix:salao:1",
+          "nome": "Breda Cinzel-Sem-Selo",
+          "perfil": "Anã candidata, gravadora de marcas memoriais",
+          "desejo": "Incluir trabalhadores e refugiados na lembrança pública.",
+          "contradicao": "A pedra é requisitada para reparar defesas.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxix:salao:2",
+          "nome": "Kaiven Brasa-Baixa",
+          "perfil": "Draconato candidato, registrador de depoimentos",
+          "desejo": "Preservar testemunhos sem impor honra hereditária.",
+          "contradicao": "Um chefe exige omitir quem morreu sem jurar lealdade.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_reutilizados": [
+        {
+          "nome": "Hralda Coluna-Rachada",
+          "fonte": "sociedade:lxii:salao",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Kaer Juramento-Exato",
+          "fonte": "sociedade:lxii:salao",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxix:salao:1",
+          "nome": "O nome do reparador sem clã",
+          "situacao": "A assembleia rejeita homenagem a pessoa que realizou trabalho importante mas nunca jurou fidelidade.",
+          "escolhas": "Ouvir testemunhas e decidir critérios sem inventar lealdade.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxix:salao:2",
+          "nome": "A peça sob a lápide",
+          "situacao": "Um objeto útil é reclamado para selar uma cerimônia.",
+          "escolhas": "Preservar, substituir se houver recursos ou manter em uso, reconhecendo custos.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    },
+    {
+      "id": "comunidade:lxix:chama",
+      "fonte": "povoamento:xlvi:garganta-entorno:05",
+      "fonte_continuidade": "comunidade:lxvii:chama",
+      "nome": "O Refúgio da Chama Apagada",
+      "setor": "Garganta",
+      "povos_previamente_propostos": "Humanos ex-devotos de Yolskaariin, meio-demônios e goblins propostos",
+      "eixo": "A lembrança solar não precisa se tornar culto compulsório",
+      "materialidade": "O Refúgio da Chama Apagada tem humanos ex-devotos, goblins e meio-demônios propostos; combustível, água e abrigo não foram inventariados. O templo de Yolskaariin foi corrompido na ocupação, mas o refúgio não é dependência física dele.",
+      "politica": "Recordar a fé antiga não significa exigir rito de quem sofreu abuso. Sangue demoníaco misturado ou prática religiosa anterior não provam culpa por crimes de sacerdote ou soldado.",
+      "instituicao": {
+        "nome": "Círculo das Despedidas Facultativas",
+        "papel": "Negociar uso de espaço comum para lutos religiosos, familiares ou sem culto.",
+        "limite": "Não impor rito nem apagar relatos de violência.",
+        "aprovacao_autoral": false
+      },
+      "espacos": [
+        {
+          "id": "espaco:lxix:chama:1",
+          "nome": "Pátio da Luz Não Obrigatória",
+          "uso": "Lugar possível de lembrança voluntária, com combustível quando existir.",
+          "risco": "Uma chefia torna participação teste de pureza.",
+          "localizacao": null,
+          "confirmado": false
+        },
+        {
+          "id": "espaco:lxix:chama:2",
+          "nome": "Banco dos Nomes que Não Condenam",
+          "uso": "Escuta de perdas sem imputar culpa por ancestralidade.",
+          "risco": "Um abuso real é silenciado para preservar unidade.",
+          "localizacao": null,
+          "confirmado": false
+        }
+      ],
+      "costumes": [
+        {
+          "id": "costume:lxix:chama:1",
+          "nome": "Luz por vontade, não por medo",
+          "pratica": "Sinal de despedida opcional quando houver condições materiais.",
+          "limite": "Nenhuma chama ou cura milagrosa foi estabelecida.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:chama:2",
+          "nome": "O canto pode ser privado",
+          "pratica": "Uma canção conforta alguns e reabre trauma de outros.",
+          "limite": "Espaço comum exige consentimento e alternativa real.",
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "costume:lxix:chama:3",
+          "nome": "O filho não herda pecado",
+          "pratica": "Uma memória não transfere responsabilidade a meio-demônio ou filho de devoto.",
+          "limite": "Atos individuais seguem passíveis de investigação.",
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_novos": [
+        {
+          "id": "pessoa:lxix:chama:1",
+          "nome": "Dera Canto-Sem-Altar",
+          "perfil": "Humana candidata, preservadora de canções",
+          "desejo": "Manter lembranças sem impor fé.",
+          "contradicao": "Parentes querem suprimir um trecho desconfortável da história.",
+          "idade": null,
+          "aprovacao_autoral": false
+        },
+        {
+          "id": "pessoa:lxix:chama:2",
+          "nome": "Parka Vaso-Apagado",
+          "perfil": "Goblin candidato, cuidador de espaços",
+          "desejo": "Organizar despedidas que não excluam quem crê diferente.",
+          "contradicao": "Deseja impor horários sem ouvir usuários.",
+          "idade": null,
+          "aprovacao_autoral": false
+        }
+      ],
+      "personagens_reutilizados": [
+        {
+          "nome": "Rosa Cinza-de-Altar",
+          "fonte": "pessoa:lxvi:chama:01",
+          "acontecimento_novo_confirmado": false
+        },
+        {
+          "nome": "Miril Chifre-Sereno",
+          "fonte": "pessoa:lxvi:chama:02",
+          "acontecimento_novo_confirmado": false
+        }
+      ],
+      "cenas": [
+        {
+          "id": "cena:lxix:chama:1",
+          "nome": "O hino que divide o pátio",
+          "situacao": "Uma família deseja cantar durante uma despedida; outras pessoas associam o canto ao templo corrompido.",
+          "escolhas": "Oferecer participação livre, escuta de sobreviventes e espaços distintos.",
+          "ocorreu": false,
+          "desfecho": null
+        },
+        {
+          "id": "cena:lxix:chama:2",
+          "nome": "O funeral que acusa o filho",
+          "situacao": "Um antigo devoto é acusado sem apuração, e familiares querem punir Miril pela linhagem.",
+          "escolhas": "Distinguir luto e apuração, impedir culpa por sangue, preservar direitos de vítimas.",
+          "ocorreu": false,
+          "desfecho": null
+        }
+      ],
+      "aprovacao_autoral": false,
+      "localizacao": null,
+      "coordenadas": null,
+      "populacao": null,
+      "contato_confirmado": false
+    }
+  ],
+  "economia_material_do_luto": [
+    {
+      "id": "material:lxix:1",
+      "nome": "Lugar para lembrar",
+      "recurso": "Um rito ou marco ocupa um espaço que alguém utiliza e mantém.",
+      "risco": "Memória não equivale a escritura nem autoriza expulsão."
+    },
+    {
+      "id": "material:lxix:2",
+      "nome": "Material e trabalho",
+      "recurso": "Seda, pedra, ferramenta, combustível e tempo de quem os prepara não são gratuitos.",
+      "risco": "Povos sapientes não são matérias-primas por espécie."
+    },
+    {
+      "id": "material:lxix:3",
+      "nome": "Privacidade do testemunho",
+      "recurso": "Nome, origem e parentesco podem ajudar a recordar e também expor refugiados.",
+      "risco": "Registro integral não é sempre requisito de pertencimento."
+    },
+    {
+      "id": "material:lxix:4",
+      "nome": "Tempo do luto",
+      "recurso": "Preparar uma despedida pode competir com cuidado, alimento, reparos e vigília.",
+      "risco": "Não tratar essa atividade como trabalho sem valor."
+    },
+    {
+      "id": "material:lxix:5",
+      "nome": "Herança e agência",
+      "recurso": "Objeto, terra, corpo e pessoa consciente são categorias diferentes.",
+      "risco": "Parente não adquire propriedade sobre morto consciente."
+    },
+    {
+      "id": "material:lxix:6",
+      "nome": "Fé e incerteza",
+      "recurso": "Rito pode acompanhar morte, ausência ou relação transformada.",
+      "risco": "Cerimônia não prova morte, milagre ou ressurreição."
+    },
+    {
+      "id": "material:lxix:7",
+      "nome": "Responsabilidade individual",
+      "recurso": "Lembrar violência pode exigir apurar danos e reparar vítimas.",
+      "risco": "Filhos não herdam culpabilidade por sobrenome ou sangue."
+    }
+  ],
+  "relacoes_analiticas": [
+    {
+      "id": "comparacao:lxix:1",
+      "de": "comunidade:lxix:velorio",
+      "para": "comunidade:lxix:sobrenomes",
+      "hipotese": "Relíquias, heranças e memórias podem ser disputadas sem transferir propriedade de uma pessoa.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxix:2",
+      "de": "comunidade:lxix:casulo",
+      "para": "comunidade:lxix:salao",
+      "hipotese": "Seda e pedra usadas como memória competem com recursos de proteção e sobrevivência.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxix:3",
+      "de": "comunidade:lxix:bastet",
+      "para": "comunidade:lxix:chama",
+      "hipotese": "Cultos domésticos e lembranças solares são distintos e não impõem crença a hóspedes.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxix:4",
+      "de": "comunidade:lxix:velorio",
+      "para": "comunidade:lxix:salao",
+      "hipotese": "O nome de um ancestral não autoriza exigir obediência de descendentes ou mortos conscientes.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxix:5",
+      "de": "comunidade:lxix:bastet",
+      "para": "comunidade:lxix:sobrenomes",
+      "hipotese": "Ausência e luto não demonstram automaticamente morte ou propriedade.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxix:6",
+      "de": "comunidade:lxix:casulo",
+      "para": "comunidade:lxix:velorio",
+      "hipotese": "Desaparecido não é falecido confirmado; consciente pós-morte não é objeto.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxix:7",
+      "de": "comunidade:lxix:chama",
+      "para": "comunidade:lxix:salao",
+      "hipotese": "Juramentos e práticas devocionais podem produzir exclusão sem norma jurídica comum.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxix:8",
+      "de": "comunidade:lxix:casulo",
+      "para": "comunidade:lxix:bastet",
+      "hipotese": "Lembranças podem proteger ou expor nomes; não há rito ou biologia compartilhada.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    },
+    {
+      "id": "comparacao:lxix:9",
+      "de": "comunidade:lxix:sobrenomes",
+      "para": "comunidade:lxix:chama",
+      "hipotese": "Responsabilidade por violência não se transmite por culto, espécie ou sobrenome.",
+      "contato_confirmado": false,
+      "rota_confirmada": false
+    }
+  ],
+  "restricoes": [
+    "Nenhuma cerimônia é prática universal de espécie, povo ou religião.",
+    "O Velório dissidente não pertence automaticamente ao exército de Damaris.",
+    "Não pressupor fisiologia, memória intacta ou status jurídico contínuo dos mortos conscientes.",
+    "A seda e os ovos de aranhas sapientes não são recursos livres.",
+    "Bastet tem presença ribeirinha no cânone, não estes ritos locais.",
+    "Rito de retorno não é prova de morte ou ressurreição.",
+    "Marca memorial não comprova posse de território.",
+    "Ascendência demoníaca ou prática religiosa anterior não determinam culpa.",
+    "Não inventar água, alimento, pedra, seda, passagens, população ou rotas.",
+    "Não inserir eventos e mortes de personagens existentes nas campanhas.",
+    "Segredos cosmológicos, de Gualápolis, Ulorian, Jorou e Lança permanecem ocultos."
+  ]
+}
